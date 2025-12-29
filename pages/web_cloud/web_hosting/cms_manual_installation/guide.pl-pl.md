@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja CMS na hostingu"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS na Twoim hostingu"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
   
 ## Wprowadzenie
@@ -114,9 +114,9 @@ Aby zainstalować CMS na Twoim [hostingu](/links/web/hosting), potrzebne są jak
 
 #### 1.1 - Sprawdź zgłoszenie w katalogu głównym
 
-"Katalog główny" to katalog, w którym Twój przyszły CMS zostanie zainstalowany na Twoim hostingu. Zalecamy wybór pustego katalogu, aby uniknąć konfliktów z innymi potencjalnymi stronami podpiętymi w opcji MultiSite.
+"Katalog główny" odpowiada katalogowi, w którym zostanie zainstalowany Twój przyszły system CMS na Twoim serwisie internetowym. Zaleca się wybranie pustego katalogu, aby uniknąć konfliktów z Twoimi innymi potencjalnymi stronami internetowymi.
 
-Zapoznaj się z naszą dokumentacją [jak dodać stronę podpiętą w opcji MultiSite na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby zdefiniować katalog główny, z którego chcesz korzystać w systemie CMS.
+Zapoznaj się z naszą dokumentacją, która opisuje [jak utworzyć stronę internetową na swoim hosting web](/pages/web_cloud/web_hosting/multisites_configure_multisite), aby określić katalog główny do użycia z Twoim CMS.
 
 > [!primary]
 >

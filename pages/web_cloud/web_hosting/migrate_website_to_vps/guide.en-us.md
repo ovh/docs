@@ -1,7 +1,7 @@
 ---
 title: "How to migrate a website from a web hosting plan to a VPS"
 excerpt: "Find out how to migrate your website from a web hosting plan to an OVHcloud VPS"
-updated: 2024-11-06
+updated: 2025-10-23
 ---
 
 ## Objective
@@ -116,7 +116,61 @@ Follow our [guide on using FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla
 
 Once you are logged in to your VPS, the tree-view of your local files will appear on the left-hand side of the FileZilla interface, and the tree-view of your VPS on the right-hand side.
 
-Select the files from your website and the database that you downloaded in [step 1.2](#step1.2). Drag them to the web directory of your VPS on the right-hand side of the interface. The web directory is where your website files will be stored to be accessible on the internet. By default, this can be a folder named `/var/www/html`, or another directory configured during the installation of your web server in [step 2.2](#step2.2). Make sure that you put your files in the folder that is set up as the web root for your website to work properly.
+The web directory (or web root) is where your website files will be stored to be accessible on the internet. **By default, it may be a folder named `/var/www/html` or another directory configured during your web server installation in [step 2.2](#step2.2)**. Ensure your files are placed in the directory configured as the **web root** to ensure your site functions correctly.
+
+> [!warning]
+>
+> If you are connected via SFTP with a non-root user (e.g., `debian`), you will not have permission to write directly into `/var/www/html`.
+
+**Simple procedure: drop into `/home` then move with `sudo`**
+
+##### In FileZilla (SFTP)
+
+- On the "Remote Site" side (right panel), go to: `/home/debian/`
+- Drag and drop your database file (e.g., `backup.sql`) into `/home/debian/`. **Do not place this backup in the folder you will copy to the web root** (e.g., `/home/debian/site/`) **or in the web root** (e.g., `/var/www/html`), as it could be publicly downloadable.
+- Create a `site` folder in `/home/debian/` (right-click → `Create a directory`{.action}), then open it.
+- Select all your website files (the database file should no longer be there) and drag and drop them into `/home/debian/site/`. **Do not drop your SQL dumps into this folder**. Keep them outside the web root, (e.g., `/home/debian/backup.sql`).
+
+##### On your VPS
+
+Connect to the VPS via SSH by referring to the "Connect to your VPS" section of our guide "[Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+
+Run the following commands:
+
+> [!warning]
+>
+> In this example, the web root is `/var/www/html`. If your web root is different (configured in step 2.2), replace `/var/www/html` with your actual path.
+
+Create the web root if it does not exist:
+
+```bash
+sudo mkdir -p /var/www/html
+```
+
+Copy the contents of `/home/debian/site/` to the web root while preserving the directory structure and metadata:
+
+```bash
+sudo rsync -a /home/debian/site/ /var/www/html/
+```
+
+Alternative if `rsync` is not installed:
+
+```bash
+sudo cp -a /home/debian/site/. /var/www/html/
+```
+
+Assign ownership of the files to the web service (`www-data` for Nginx/Apache on Debian/Ubuntu):
+
+```bash
+sudo chown -R www-data:www-data /var/www/html
+```
+
+Set directory permissions to `755` (navigable) and file permissions to `644` (readable):
+
+```bash
+sudo find /var/www/html -type d -exec chmod 755 {} \;
+sudo find /var/www/html -type f -exec chmod 644 {} \;
+```
 
 ### Step 4 - Import the database onto your VPS (optional)
 
@@ -124,22 +178,36 @@ Select the files from your website and the database that you downloaded in [step
 >
 > If your database is already hosted on a Web Cloud Databases service, you do not need to migrate it to the VPS. You can keep the database on the Web Cloud Databases service and configure your VPS to connect to this database ([step 5](#step5)).
 
-If you would like to import the database onto your VPS, follow the steps below.
+#### Before you begin
 
-Log in to your VPS via SSH, by going to the "Log in to your VPS section" of our guide on "[How to get started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+- Your backup file (`.sql`) was placed in step 3.2 (e.g., `/home/debian/backup.sql`).
+- The **D**ata**B**ase **M**anagement **S**ystem (**DBMS**) (MySQL / MariaDB) and its command-line client were installed in [step 2.2](#step2.2).
+- The database **`db_name`** :
+    - **already exists** if you created it during step 2.2 (or via your admin panel).
+    - **can be created automatically** if your backup `.sql` contains `CREATE DATABASE`.
+    - **otherwise, create it before importing** :
 
-Once you have connected to your VPS via an SSH connection, use the commands below to import the database.
+    ```bash
+    sudo mysql -e "CREATE DATABASE db_name CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    ```
 
-In the example below, we use MySQL as a **D**ata**B**ase **M**anagement **S**ystem (**DBMS**). Use the official DBMS documentation that you installed in [step 2.2](#step2.2) to use the appropriate commands to import the database to your VPS.
+    (replace `db_name` with your desired name).
 
-```php
-<?php
-system("mysql -u user_name -p db_name < root/to/file.sql
-");
-?>
-```
+#### Import the database
 
-Replace `user_name` with your MySQL username, `db_name` with the name of the database to import, and `root/to/file.sql` with the path to the backed-up SQL file.
+1. Connect to the VPS via SSH by referring to the "Connect to your VPS" section of our guide "[Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
+2. Launch the import using the DBMS client:
+
+    In the example below, we use MySQL as the DBMS. Use the official documentation of the DBMS you installed during [step 2.2](#step2.2) to use the appropriate command for importing the database onto your VPS.
+
+    ```bash
+    mysql -u user_name -p db_name < /home/debian/backup.sql
+    ```
+
+    - Replace `user_name` with your MySQL (MySQL/MariaDB) username, not your SSH login.
+    - Replace `db_name` with the name of the database to import.
+
+3. Enter the DBMS user password when prompted and wait for the import to complete.
 
 ### Step 5 - Set up your website’s configuration files <a name="step5"></a>
 

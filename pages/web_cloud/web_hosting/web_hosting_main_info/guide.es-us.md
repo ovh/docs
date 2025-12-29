@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Versiones disponibles de los lenguajes"
 excerpt: "Descubra los detalles de las versiones de los lenguajes (Apache, PHP, Python, Perl) de los planes de hosting de OVHcloud"
-updated: 2025-04-29
+updated: 2025-12-15
 ---
 
 ## Objetivo
@@ -55,6 +55,7 @@ Esta guía explica las versiones de **PHP**, **Python**, **Perl** y **Apache** u
 <thead>
 <tr>
 <th>PHP</th>
+<th>8.5</th>
 <th>8.4</th>
 <th>8.3</th>
 <th>8.2</th>
@@ -68,12 +69,12 @@ Esta guía explica las versiones de **PHP**, **Python**, **Perl** y **Apache** u
 <th>5.6</th>
 <th>5.5</th>
 <th>5.4</th>
-<th>5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Stable64</td>
+<td><a href="https://phpfpm85.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
 <td><a href="https://phpfpm84.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
 <td><a href="https://phpfpm83.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
 <td><a href="https://phpfpm82.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
@@ -113,6 +114,7 @@ Esta guía explica las versiones de **PHP**, **Python**, **Perl** y **Apache** u
 
 | **Version** | **Principales fechas de la comunidad PHP** | **Versión disponible en OVHcloud** | **Fecha de fin de vida en OVHcloud** |
 |-------------|----------------------------------------------------------------------|----------------------------------|---------------------------------------------|
+| PHP 8.5     | Fin del soporte activo: 31/12/2027<br>Fin del soporte de seguridad: 31/12/2029<br>Fin de vida: 31/12/2029 | Disponible                           | 30/06/2030                              |
 | PHP 8.4     | Fin del soporte activo: 31/12/2026<br>Fin del soporte de seguridad: 31/12/2028<br>Fin de vida: 31/12/2028             | Disponible                        | 30/06/2029                              |
 | PHP 8.3     | Fin del soporte activo: 31/12/2025<br>Fin del soporte de seguridad: 31/12/2027<br>Fin de vida: 31/12/2027             | Disponible                        | Fecha de fin de vida por determinar         |
 | PHP 8.2     | Fin del soporte activo: <span style="color:red;">31/12/2024</span><br>Fin del soporte de seguridad: 31/12/2026<br>Fin de vida: 31/12/2026         | Disponible                        | Fecha de fin de vida por determinar         |

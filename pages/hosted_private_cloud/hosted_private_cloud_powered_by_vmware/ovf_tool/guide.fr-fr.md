@@ -6,7 +6,7 @@ updated: 2022-01-31
 
 ## Objectif
 
-[OVFTOOL](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest){.external-link} est un outil qui permet d'**exporter/importer** des machines virtuelles au format .OVF (compatible Windows, Linux et macOS).
+[OVFTOOL](https://developer.broadcom.com/tools/open-virtualization-format-ovf-tool/latest) est un outil qui permet d'**exporter/importer** des machines virtuelles au format .OVF (compatible Windows, Linux et macOS).
 
 **Ce guide est un cas d'étude de l'utilisation de cet outil**
 

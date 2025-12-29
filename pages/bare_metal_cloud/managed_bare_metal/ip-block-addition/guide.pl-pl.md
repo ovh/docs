@@ -40,7 +40,7 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 
 > [!primary]
 >
-> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network){.external-link}, aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
+> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network), aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
 >
 
 - Kraj bloku IP, ważny w niektórych przypadkach dla pozycjonowania Twoich witryn (strona internetowa skierowana do Polaków będzie lepiej pozycjonowana, jeśli ma polski adres IP).

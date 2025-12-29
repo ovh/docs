@@ -1,26 +1,54 @@
 ---
 title: "OVHcloud VPS FAQ"
 excerpt: "Find the answers to the most frequently asked questions about our VPS offers"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
-## VPS FAQ
-
-### General questions about VPS offers
+## General questions about VPS offers
 
 /// details | What is a VPS, and what is it used for?
 
@@ -98,8 +126,13 @@ No, our VPS solutions do not include a domain name or email service. These servi
 
 /// details | How do I choose between a VPS and a web hosting plan?
 
-- Web hosting plan: ideal for basic hosting needs with a pre-configured setup.
-- VPS: more flexibility and control, perfect for scaling projects with complex configuration needs.
+**Web hosting plan**
+
+- Ideal for basic hosting needs with a pre-configured setup.
+
+**VPS**
+
+- More flexibility and control, perfect for scaling projects with complex configuration needs.
 
 If you host web services on a VPS, you can install your preferred software, customize server settings, and host multiple websites with dedicated resources. Please note that a VPS needs to be configured in a way that suits your application requirements and is adapted to your business growth.
 
@@ -107,19 +140,42 @@ If you host web services on a VPS, you can install your preferred software, cust
 
 /// details | What is the difference between a VPS and Public Cloud solutions?
 
-- VPS: an optimized and dedicated virtual machine suitable for both pre-production and production, designed to host several web projects.
-- OVHcloud Public Cloud: offers a multi-server infrastructure with high availability and a private network (vRack), and is designed for complex, scalable architectures.
+**VPS**
+
+- An optimized and dedicated virtual machine suitable for both pre-production and production, designed to host several web projects.
+
+**OVHcloud Public Cloud**
+
+- Offers a multi-server infrastructure with high availability and a private network (vRack), and is designed for complex, scalable architectures.
 
 ///
 
 /// details | What are the advantages of a VPS, compared to a dedicated server?
 
-- VPS: offers simplified management without hardware maintenance, ideal for projects needing tight control. 
-- Dedicated server: recommended for complex infrastructure that require full hardware control and guaranteed performance. 
+**VPS**
+
+- Offers simplified management without hardware maintenance, ideal for projects needing tight control.
+ 
+**Dedicated server**
+
+- Recommended for complex infrastructure that require full hardware control and guaranteed performance. 
 
 A VPS eliminates the need to manage physical hardware such as storage, RAM, and CPU, making it well-suited for most web applications. As your business grows, you can upgrade your VPS, or migrate to a dedicated server or a Public Cloud solution for a more flexible and powerful infrastructure.
 
 ///
+
+/// details | What bandwidth is allocated to my VPS? Is it guaranteed?
+
+The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed. It is the minimum amount allocated to your service.
+
+///
+
+/// details | Which SLA is applied to my VPS?
+
+An OVHcloud VPS includes a 99.9% SLA.
+
+///
+<span class="smallish-gap"></span>
 
 /// details | What are the unique features of a Local Zone VPS?
 
@@ -149,19 +205,8 @@ If resilience against DDoS attacks is a critical factor for your project, we rec
 
 ///
 
-/// details | What bandwidth is allocated to my VPS? Is it guaranteed?
 
-The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed. It is the minimum amount allocated to your service.
-
-///
-
-/// details | Which SLA is applied to my VPS?
-
-An OVHcloud VPS includes a 99.9% SLA.
-
-///
-
-### Questions related to VPS administration
+## Questions related to VPS administration
 
 /// details | How do I connect to my VPS?
 
@@ -169,13 +214,6 @@ You can log in to your VPS remotely, using the credentials provided by email aft
 The connection method depends on which operating systems are in use.
 
 All the details are set out in our guide on [how to get started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | How do I secure my VPS?
-
-By default, the VPS is provided with only the selected operating system installed. The VPS administrator is responsible for applying an appropriate security configuration once the VPS is delivered.  
-To do this, please refer to our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -216,7 +254,6 @@ A VPS cannot be customized or modified at the hardware level.
 Select a [VPS model](/links/bare-metal/vps) in the order process that meets you minimum requirements, then you can upgrade it as required.  
 
 ///
-
 
 /// details | My VPS is too slow, can I move my VPS to another host?
 
@@ -315,16 +352,23 @@ If the destination IP is compatible with your license (`true`), you can use the 
 
 ///
 
+
+## Questions regarding security and backup
+
+/// details | How do I secure my VPS?
+
+By default, the VPS is provided with only the selected operating system installed. The VPS administrator is responsible for applying an appropriate security configuration once the VPS is delivered.  
+To do this, please refer to our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | How can I download my files or a backup of the VPS?
 
 There are several options available, for example:
 
 - Download via SFTP: Connect to your VPS with a software client capable of SFTP (for example [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), then transfer all files in the system's root directory.
-
 - Download via `rsync` (command line tool): Use the command `rsync -avz -e ssh username@vps_ip_address:/ /local_directory/` to download all files and folders from your VPS.
-
 - Download via the option **Automated Backup**: Follow our guide on [how to use automated backups on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) to download files from a backup.
-
 - Download via the option **Snapshot**: Follow our guide on [how to use snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps) to download a VPS snapshot.
 
 ///
@@ -377,15 +421,14 @@ To verify that your IP address is authorized, use the following call:
 >
 
 ///
+<span class="smallish-gap"></span>
 
 /// details | Is my VPS protected from external attacks?
 
 Although OVHcloud applies security measures to protect the entire infrastructure, the administrator of a VPS is responsible for the security of the applications and data hosted on it.
 
 - Follow our guide on [how to configure the OVHcloud Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) which is integrated in our Anti-DDoS infrastructure, limiting the exposure of your services to DDoS attacks.
-
 - In addition, you can use our guides on [how to configure your own firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) with `iptables` on Linux-based distributions and [how to enable the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - For Linux-based distributions on a VPS, you can follow the instructions in our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) to apply additional security measures.
 
 ///

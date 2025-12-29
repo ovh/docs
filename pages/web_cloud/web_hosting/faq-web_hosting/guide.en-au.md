@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting FAQ"
 excerpt: "Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans"
-updated: 2025-08-01
+updated: 2025-11-10
 ---
 
 <style>
@@ -187,8 +187,9 @@ To activate an SSL certificate on your Web Hosting plan for your website, follow
 
 1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 2. Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
-3. On the page that pops up, in the **Configuration** box, click the `...`{.action} button to the right of the **SSL certificate** comment, then `Order an SSL certificate`{.action}.
-4. [Choose the certificate you want from the list of available certificates](/pages/web_cloud/web_hosting/ssl_on_webhosting), then continue until the purchase order is finalized.
+3.  On the page that pops up, click on the `SSL certificates`{.action} tab.
+4. Choose the certificate you want from the [available certificates](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Continue until you have finished installing the SSL certificate (by confirming the purchase order beforehand, if you choose one of the Sectigo SSL certificates).
 
 > [!success]
 >

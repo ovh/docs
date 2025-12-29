@@ -1,20 +1,50 @@
 ---
 title: OVHcloud Support FAQ
 excerpt: Find the most frequently asked questions about the OVHcloud support
-updated: 2025-09-12
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 

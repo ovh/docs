@@ -1,8 +1,22 @@
 ---
 title: 'Configurare IPv6 sur un server dedicato'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2025-06-04
+updated: 2025-12-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 
@@ -54,31 +68,27 @@ Nei nostri esempi, utilizzeremo l’editor di testo `nano`. È possibile utilizz
 
 ### Gateway predefinito
 
-Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server. È possibile utilizzare due metodi. Prosegui nella lettura di questa guida in base alla modalità che intendi utilizzare.
+Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server.
 
-- [Ottenere informazioni sulla rete tramite lo Spazio Cliente OVHcloud](#viacontrolpanel).
-- [Ottenere informazioni sulla rete tramite API](#viaapi).
-
-#### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
-
-
-Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta copiata, proseguire con l'applicazione di configurazione IPv6.
-
-![configureipv6](images/ipv6_information.png){.thumbnail}
-
-#### Tramite le API OVHcloud <a name="viaapi"></a>
-
-Un altro modo per recuperare le informazioni di rete del tuo server è [utilizzare l’API OVHcloud](/pages/manage_and_operate/api/first-steps).
-
-
-Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
-
+> [!tabs]
+> **Dallo Spazio Cliente OVHcloud**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
+>>
+>> Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta copiata, proseguire con l'applicazione di configurazione IPv6.
+>>
+>> ![configureipv6](images/ipv6_information.png){.thumbnail}
+>>
+> Tramite le API OVHcloud <a name="viaapi"></a>
+>>
+>> Un altro modo per recuperare le informazioni di rete del tuo server è [utilizzare l’API OVHcloud](/pages/manage_and_operate/api/first-steps).
+>>
+>> Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>>
 
 Ti ricordiamo che gli "0" di testa possono essere eliminati in un gateway IPv6.
 
@@ -95,7 +105,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 > Alcuni sistemi operativi richiedono l'aggiunta di rotte IPv6 statiche al file di configurazione originale per impostazione predefinita. In questo caso, è sufficiente aggiungere la configurazione per IPv6 come indicato nella guida, senza modificare alcuna riga del file originale.
 >
 
-### Sistemi operativi Debian e basati su Debian (Debian 12 escluso)
+/// details | **Sistemi operativi Debian e basati su Debian (Debian 12 escluso)**
 
 La configurazione di esempio qui sotto è basata su Debian 11 (Bullseye).
 
@@ -210,30 +220,11 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 ```sh
 sudo /etc/init.d/networking restart
 ```
+///
 
-#### Step 5: Testa la connettività IPv6
+/// details | **Fedora 42 e versioni successive**
 
-Per testare la connettività IPv6, esegui il comando:
-
-```sh
-ping6 -c 4 2001:4860:4860::8888
-
-PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
-64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
-
---- 2001:4860:4860::8888 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3003ms
-rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
-```
-
-Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
-### Fedora 38 e versioni successive
-
-La configurazione di esempio qui sotto è basata su Fedora 39.
+La configurazione di esempio qui sotto è basata su Fedora 42.
 
 Fedora ora utilizza i file chiave (*keyfiles*).
 In precedenza Fedora utilizzava i profili di rete archiviati da NetworkManager in formato ifcfg nella directory `/etc/sysconfig/network-scripts/`.<br>
@@ -264,9 +255,9 @@ sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /
 
 Modificare il file aggiungendo le righe seguenti, senza modificare il file originale. Sostituire i valori generici (`YOUR_IPV6` e `IPv6_PREFIX`) con i valori specifici. Per evitare confusione, è stata omessa anche la configurazione IPv4, mentre la configurazione IPv6 viene eseguita nello stesso file di configurazione.
 
-```sh
+```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=YOUR_IPV6/IPv6_PREFIX
@@ -276,9 +267,9 @@ dns=2001:41d0:3:163::1;
 
 Se è necessario configurare più indirizzi IPv6, la configurazione dovrebbe essere simile alla seguente:
 
-```sh
+```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
@@ -293,11 +284,9 @@ dns=2001:41d0:3:163::1;
 sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
-In seguito modificheremo il file di configurazione:
-
-```sh
+```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -306,9 +295,9 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 Aggiunta di indirizzi IPv6 aggiuntivi:
 
-```sh
+```console
 [ipv6]
-method=auto
+method=manual
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=2607:5300:adce:f2cd::1/64
@@ -323,29 +312,9 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 ```sh
 sudo systemctl restart NetworkManager
 ```
+///
 
-#### Step 5: Testa la connettività IPv6
-
-Per testare la connettività IPv6, esegui il comando:
-
-```sh
-ping6 -c 4 2001:4860:4860::8888
-
-PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
-64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
-
---- 2001:4860:4860::8888 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3003ms
-rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
-```
-
-Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
-
-### Debian 12, Ubuntu 20.04 e versioni successive
+/// details | **Debian 12, Ubuntu 22.04 e versioni successive**
 
 La configurazione di esempio riportata di seguito si basa su Ubuntu 22.04 (Jammy Jellyfish).
 
@@ -413,8 +382,6 @@ network:
 sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
-In seguito modificheremo il file di configurazione:
-
 ```yaml
 network:
     version: 2
@@ -456,26 +423,9 @@ Se è corretta, applicala utilizzando il seguente comando:
 ```sh
 sudo netplan apply
 ```
+///
 
-#### Step 5: Testa la connettività IPv6
-
-Per testare la connettività IPv6, esegui il comando:
-
-```sh
-ping6 -c 4 2001:4860:4860::8888
-
-PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
-64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
-
---- 2001:4860:4860::8888 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3003ms
-rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
-```
-
-### CentOS 7, Alma Linux (8 & 9) e Rocky Linux (8 & 9)
+/// details | **CentOS 7, AlmaLinux (8/9/10) e Rocky Linux (8/9/10)**
 
 La configurazione di esempio qui sotto è basata su CentOS 7.
 
@@ -522,8 +472,6 @@ IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFI
 sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-In seguito modificheremo il file di configurazione:
-
 ```console
 IPV6INIT=yes
 IPV6ADDR=2607:5300:adce:f2cd::/64
@@ -547,7 +495,7 @@ Salvare le modifiche nel file e riavviare la rete con uno dei comandi seguenti:
 sudo systemctl restart network
 ```
 
-**Per Alma Linux e Rocky Linux**
+**Per AlmaLinux e Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
@@ -555,25 +503,9 @@ sudo systemctl restart NetworkManager
 
 È inoltre possibile riavviare il server per applicare le modifiche.
 
-#### Step 5: Testa la connettività IPv6
+///
 
-Per testare la connettività IPv6, esegui il comando:
-
-```sh
-ping6 -c 4 2001:4860:4860::8888
-
-PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
-64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
-64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
-
---- 2001:4860:4860::8888 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3003ms
-rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
-```
-
-### ### Windows Server 2016 e versioni successive 
+/// details | **Windows Server 2016 e versioni successive**
 
 #### Step 1: Utilizza l’RDP per connetterti al tuo server
 
@@ -602,6 +534,72 @@ Seleziona `Internet Protocol Versione 6`{.action}, quindi clicca su `Proprietà`
 Inserisci la configurazione IPv6 (`IPv6 address` e `Default gateway`), spunta la casella `Conferma le impostazioni all’uscita` e clicca sul pulsante `OK`{.action} per confermare le modifiche.
 
 ![Proprietà](images/ipv6_configuration.png){.thumbnail}
+
+///
+
+### Verifica la configurazione e prova la connessione.
+
+A seconda del sistema operativo, è possibile verificare la funzionalità tramite diversi comandi.
+
+- **Per un impianto GNU/Linux**, ecco due esempi per l'interfaccia **eth0** (da adattare se necessario):
+
+```bash
+ip -6 addr show eth0
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    altname enxa8a1598c6836
+    inet6 2607:5300:201:abcd::/64 scope global noprefixroute
+       valid_lft forever preferred_lft forever
+    inet6 2607:5300:201:abcd::1/64 scope global noprefixroute
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fec0:c336/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+```
+
+```bash
+ifconfig eth0
+eth0      Link encap:Ethernet  HWaddr ab:cd:ef:gf:ij:kl
+          inet addr:aa.bb.cc.dd  Bcast:aa.bb.cc.ee  Mask:255.255.255.255
+          inet6 addr: 2607:5300:201:abcd::/64
+          Scope:Global
+          inet6 addr: 2607:5300:201:abcd::1/64
+          Scope:Global
+          inet6 addr: fe80::f816:3eff:fec0:c336/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          [...]
+```
+
+Per verificare la connessione, utilizza il seguente comando:
+
+```bash
+ping6 -c 4 proof.ovh.net
+```
+
+- **Per un sistema Windows**, utilizza il comando:
+
+```powershell
+ipconfig
+
+Windows IP Configuration
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : openstacklocal
+   IPv6 Address. . . . . . . . . . . : 2607:5300:201:abcd::/64
+   IPv6 Address. . . . . . . . . . . : 2607:5300:201:abcd::1/64
+   Link-local IPv6 Address . . . . . : fe80::d928:7a00:5ba6:951b%3
+   IPv4 Address. . . . . . . . . . . : 51.xxx.xxx.xxx
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 2607:5300:201:abcd:ff:ff:ff:ff:ff
+                                       51.xxx.xxx.y
+```
+
+Per verificare la connessione, utilizza il seguente comando:
+
+```powershell
+ping -6 proof.ovh.net
+```
+
+Puoi anche testare la connessione a un altro server remoto. Per il corretto funzionamento dell'operazione è tuttavia necessario che l'IPv6 sia attivo sul server remoto.
 
 ### Diagnosi
 

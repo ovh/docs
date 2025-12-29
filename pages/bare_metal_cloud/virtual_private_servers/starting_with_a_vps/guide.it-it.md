@@ -128,7 +128,7 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi per il backup e il ripris
 Rispetto alle copie istantanee manuali, questa funzione aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
 >>
 
-Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backups).
+Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 #### Il mio servizio
 

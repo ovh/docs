@@ -13,11 +13,6 @@ updated: 2024-10-01
 }
 </style>
 
-> [!success]
-> Participate in our survey and help us improve this guide!<br>
-> Feel free to share your thoughts and ideas with us.<br>
-> [Go to the survey.](https://s.elq.fr/ovhext/RULMVWH)
-
 ## Objective
 
 You can configure MX Plan accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.

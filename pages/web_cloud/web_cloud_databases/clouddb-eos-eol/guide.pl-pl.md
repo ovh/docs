@@ -1,6 +1,6 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2025-09-02
+updated: 2025-12-02
 ---
 
 ## Wprowadzenie
@@ -16,12 +16,10 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |MariaDB 11.8|Do określenia|Do określenia|Do określenia|
 |MySQL 8.0|2025-03-17|2025-09-30|2026-04-01|
 |MySQL 8.4|Do określenia|Do określenia|Do określenia|
-|PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
 |PostgreSQL 14|2025-02-12|2026-05-13|2026-11-12|
 |PostgreSQL 15|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 16|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 17|Do określenia|Do określenia|Do określenia|
-|Redis 7.0|2025-06-12|2025-09-12|2025-12-12|
 |Valkey 7.2|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również

@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-09-08
+updated: 2025-10-31
 ---
 
 ## Objective
@@ -78,6 +78,8 @@ In the table, the following columns are present:
 - **Destination IP** - The IP that was the target of the attack
 - **Attack vectors** - Provides information about detected types of attacks, such as UDP or TCP attack, etc.
 
+**The data retention period for scrubbing centre logs is 1 year.**
+
 > [!warning]
 >
 > Please note that source IP addresses for detected events are not displayed because they are usually spoofed (DDoS attacks may point to other sources than the ones really comes from) and such information would be misleading or not usable.
@@ -88,6 +90,8 @@ In the **Traffic chart** tab, you can see a graph showing traffic to your IP add
 ![red-line-attack](images/nsd_graph_tab_blur.png)
 
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
+
+**The data retention period for the traffic chart is 2 months.**
 
 ## FAQ
 
@@ -108,7 +112,7 @@ Such data is available only for public IP addresses during automatic Anti-DDoS i
 
 ### The traffic chart for some positions in the scrubbing centre logs is not available.
 
-Traffic chart data is available only for the past two weeks, while log entries can be reviewed for the past year.
+Traffic chart data is available only for the past two months, while log entries can be reviewed for the past year.
 
 ### An attack on my service is persisting, how can I better protect my server?
 

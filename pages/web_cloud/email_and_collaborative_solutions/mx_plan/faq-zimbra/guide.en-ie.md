@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Here you will find the most frequently asked questions about the migration of OVHcloud MX Plan solution to Zimbra
-updated: 2024-11-15
+updated: 2025-12-05
 ---
 
 <style>
@@ -61,13 +61,39 @@ Visit our page “[Configuring your Zimbra email address in an email client](/pa
 
 ///
 
+/// details | How to change my Zimbra plan ?
+
+Your needs are changing: you want to benefit from more features on your Zimbra account, or, conversely, you no longer need it. Zimbra plans are flexible, so follow the instructions below according to your situation:
+
+**Want to upgrade to a higher plan?**
+
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Go to the `Web Cloud`{.action} section.
+1. Click on `Zimbra Mail`{.action}.
+1. Click on the `Email account`{.action} tab.
+1. To the right of the email account for which you want to switch to a higher offer, click on `⁝`{.action}.
+1. Click on `Change plan`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Would you like to downgrade?**
+
+The steps are the same as for upgrading (detailed above).
+
+> [!warning]
+>
+> Before switching to a lower plan, please ensure the following:
+>
+> - No files are stored on your "Briefcase" storage volume if you are switching to the Starter plan.
+> - The content of your email account must be less than 15 GB if you are switching to the Starter plan.
+
+///
+
 ### Questions on MX Plan migration to Zimbra solution
 
 As part of the MX Plan solution upgrade, a migration is planned from the current webmail using Outlook Web App (OWA) to the Zimbra solution's webmail.
 
 If you are affected by this migration, you will find the most frequently asked questions here.
-
-///
 
 /// details | What are the differences between Outlook Web App (OWA) and Zimbra webmail?
 
@@ -172,8 +198,9 @@ To cancel your solution in the "My services" section of the OVHcloud Control Pan
 |**Email account content**<br>(emails, folders, contacts)|Migrated|✅|
 |**Emails received during the migration process**|Delivered|✅|
 |**Automatic reply**|Maintained|✅|
-|**Inbox rule**|- The rules configured from your email client will not be changed.<br>- The rules configured from OWA webmail will be migrated to Zimbra webmail. Only a very small proportion of rules will not be migrated due to incompatibility. These will be sent as an email to the user's email account, and can be recreated manually.<br>- *Incompatible rule* : A rule that uses two types of conditions, such as AND and OR, simultaneously. For example, if the message is received from (**john@mydomain.ovh** OR **mary@mydomain.ovh**) AND the subject contains "invoice", then move to the "Important" folder.|⚠️|
+|**Inbox rule**|- The rules configured from your email client will not be changed.<br>- The rules configured from OWA webmail will be migrated to Zimbra webmail. Only a very small proportion of rules will not be migrated due to incompatibility.<br>- *Incompatible rule* : A rule that uses two types of conditions, such as AND and OR, simultaneously. For example, if the message is received from (**john@mydomain.ovh** OR **mary@mydomain.ovh**) AND the subject contains "invoice", then move to the "Important" folder.|⚠️|
 |**Personal signature**|- The signatures configured from your email software will not be changed.<br>- Signatures configured from OWA webmail will not be migrated due to formatting.|⚠️|
+|**External contacts**|This feature allows you to integrate an external email address into the email platform in your global address book. This feature will not be present on Zimbra.|❌|
 |**Block/Authorise**|This feature, which allows you to block emails from a specific domain name or email address, will not be present on Zimbra. However, this can be easily recreated via an inbox rule from Zimbra.|❌|
 |**Footer**<br>(domain name signature configurable via the Control Panel)|This feature will not be present in the new Zimbra infrastructure. However, you can still configure a signature at the email account level.|❌|
 |**Security Policy**|This Control Panel feature that allows you to change the password management policy will not be present on the Zimbra solution.<br>The default security policy for passwords requires a minimum of 10 alphanumeric characters, 1 special character, 1 upper-case letter.|❌|

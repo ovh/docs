@@ -1,7 +1,7 @@
 ---
 title: "Zmiana hasła do konta FTP"
 excerpt: "Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu"
-updated: 2025-09-19
+updated: 2025-10-14
 ---
 
 ## Wprowadzenie 
@@ -28,20 +28,41 @@ W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pag
 
 ## W praktyce
 
-### Etap 1: dostęp do zarządzania użytkownikami FTP
+### 1 - Dostęp do zarządzania użytkownikami FTP
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz odpowiednią nazwę hostingu. Wybierz kartę `FTP-SSH`{.action}.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-Tabela wyświetla *użytkowników FTP* utworzonych na Twoim hostingu. Użytkownicy ci umożliwiają dostęp do Twojej przestrzeni dyskowej FTP, aby umieścić w Internecie pliki z Twojej strony WWW. Użytkownik jest tworzony automatycznie podczas instalacji hostingu.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Tabela wyświetla *użytkowników FTP* utworzonych na Twoim hostingu. Użytkownicy ci umożliwiają dostęp do Twojej przestrzeni dyskowej FTP, aby umieścić w Internecie pliki z Twojej strony WWW. Użytkownik jest tworzony automatycznie podczas instalacji hostingu.
 
-### Etap 2: zmiana hasła użytkownika FTP
+### 2 - Zmiana hasła użytkownika FTP
 
 > [!primary]
 >
 > Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana hasła do konta FTP w zakładce `FTP-SSH`{.action} zostanie wykonana na dwie różne sposoby:
+W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana hasła do konta FTP w zakładce `FTP - SSH`{.action} zostanie wykonana na dwie różne sposoby:
 
 - **w przypadku pakietów, które nie pozwalają na utworzenie drugiego użytkownika FTP** (oferty *Darmowy hosting 100M* i *Perso*): kliknij *piktogram w formie ołówka* w kolumnie `Hasło`{.action} tabeli, która się wyświetla, wprowadź nowe hasło **zgodnie z polityką haseł**, a następnie potwierdź zmianę, klikając *zielony przycisk* do zatwierdzenia.
 
@@ -64,7 +85,7 @@ W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana has
 
 Następnie przejdź do zakładki `Zadania w realizacji`{.action} i odśwież stronę regularnie. Efekty modyfikacji to zaledwie kilka minut.
 
-### Etap 3: dostęp do Twojej przestrzeni dyskowej
+### 3 - Dostęp do Twojej przestrzeni dyskowej
 
 Aby uzyskać dostęp do przestrzeni FTP, zapoznaj się z naszym przewodnikiem "[Logowanie do przestrzeni dyskowej Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)".
 

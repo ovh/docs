@@ -135,7 +135,7 @@ Hub de contenu :
 
 ### Bibliothèques
 
-![Libraries Overview](images/VCD-libraries-overview.png){.thumbnail}
+![Libraries Overview](images/vcd-libraries-overview.png){.thumbnail}
 
 Libraries :
 

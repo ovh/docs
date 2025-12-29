@@ -1,7 +1,7 @@
 ---
 title: "Conectarse al espacio de almacenamiento FTP de un alojamiento web"
 excerpt: "Descubra cómo conectarse al espacio de almacenamiento FTP de un alojamiento web de OVHcloud"
-updated: 2025-06-10
+updated: 2025-06-15
 ---
 
 ## Objetivo
@@ -22,7 +22,7 @@ Los planes de hosting de OVHcloud proporcionan acceso a un espacio de almacenami
 
 ## Procedimiento
 
-### Etapa 1 - obtener la información necesaria para conectarse
+### 1 - Obtener la información necesaria para conectarse
 
 Para conectarse a su espacio de almacenamiento FTP, descargue los siguientes elementos:
 
@@ -35,23 +35,41 @@ Para conectarse a su espacio de almacenamiento FTP, descargue los siguientes ele
 >
 > Estos datos se le han comunicado en el email de notificación de la instalación de su alojamiento web durante la suscripción. Puede acceder a ellos desde el [área de cliente de OVHcloud](/links/manager).
 >
-> **Si ya tiene estos elementos**, vaya directamente al paso 2. "[Acceder a su espacio de almacenamiento](#ftp_storage_access)" de esta guía.
-> 
+> **Si ya tiene estos elementos**, vaya directamente en la parte 2. "[Acceder a su espacio de almacenamiento](#ftp_storage_access)" de esta guía.
 
-Si no dispone de estos datos, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en el apartado `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Si no dispone de estos datos, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
-
-![Conexión FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!primary]
->
-> Si desea crear un nuevo usuario FTP/SSH desde la misma página, haga clic en el botón `Crear usuario`{.action} situado a la derecha.
-> Indique la extensión del nombre de este nuevo `Usuario`{.action} y el `Carpeta raíz`{.action} en el que el usuario podrá realizar la acción correspondiente y haga clic en `Siguiente`{.action}.
-> Seleccione una contraseña para la nueva cuenta de usuario, haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
->
-
-Todos los elementos necesarios para conectarse al espacio de almacenamiento FTP están presentes en esta misma página.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+>>
+>> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
+>> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Si desea crear un nuevo usuario FTP/SSH desde la misma página, haga clic en el botón `Crear usuario`{.action} situado a la derecha.
+>> > Indique la extensión del nombre de este nuevo `Usuario`{.action} y el `Carpeta raíz`{.action} en el que el usuario podrá realizar la acción correspondiente y haga clic en `Siguiente`{.action}.
+>> > Seleccione una contraseña para la nueva cuenta de usuario, haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
+>>
+>> Todos los elementos necesarios para conectarse al espacio de almacenamiento FTP están presentes en esta misma página.
 
 A continuación se muestra una descripción de la información esencial que se muestra en la página `FTP - SSH`{.action}:
 
@@ -76,7 +94,7 @@ Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "
 
 En este punto, dispondrá de todos los elementos necesarios para conectarse a su espacio de almacenamiento FTP.
 
-### Etapa 2 - acceder al espacio de almacenamiento FTP <a name="ftp_storage_access"></a>
+### 2 - Acceder al espacio de almacenamiento FTP <a name="ftp_storage_access"></a>
 
 Existen diversas formas de conectarse al espacio de almacenamiento FTP. Continúe leyendo esta guía en el apartado correspondiente a la acción que quiera realizar.
 
@@ -130,7 +148,7 @@ ssh sshlogin@ssh.clusterXXX.hosting.ovh.net -p 22
 
 En el comando anterior, sustituya:
 
-- el valor `sshlogin` por su usuario FTP principal descrito en el [etapa 2.1](#ftpsoftware) (o por un usuario FTP que disponga de acceso SSH);
+- el valor `sshlogin` por su usuario FTP principal descrito en la [parte 2.1](#ftpsoftware) (o por un usuario FTP que disponga de acceso SSH);
 - los `XXX` por las cifras correspondientes al número del cluster en el que se encuentra su alojamiento web.
 
 Una vez enviado el comando, deberá introducir la contraseña del usuario SSH.

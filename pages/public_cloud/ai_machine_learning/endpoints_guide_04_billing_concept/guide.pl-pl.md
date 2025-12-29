@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Billing and lifecycle
 excerpt: Learn how we bill AI Endpoints
-updated: 2025-10-07
+updated: 2025-10-20
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ OVHcloud AI Endpoints follows a model lifecycle process to ensure a seamless exp
 - **Track model usage metrics**: We continuously monitor the usage of each model on our platform to identify underutilized or obsolete models that may no longer serve the needs of our customers.
 - **Decommissioning decision**: Once a model is identified as a candidate for decommissioning, we make a decision to retire the model. At this point, we communicate the decision to our customers through official deprecation notices on our website and the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud).
 - **Grace period**: After the deprecation notice is published, a grace period of 30 days is provided for all models except embedding models, which will have a grace period of 3 months. This period allows customers to transition to an alternative model. During this time, we offer guidance on recommended replacements and migration steps to ensure a smooth transition.
-- **Removal from active deployment**: Once the grace period ends, the model is removed from active deployment. However, to ensure continuity, we may redirect API calls to the replacement model (if applicable) with a 10-second delay before the decommissioned model responds, signaling to users that the model is no longer in active use.
+- **Removal from active deployment**: Once the grace period ends, the model is removed from active deployment.
 - **AI Endpoints changelog**: Decommissionings are highlighted in the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog), ensuring that customers are informed about the changes in the platform.
 
 By following this model lifecycle process, OVHcloud ensures that customers are well-informed and prepared for any changes, while also maintaining a lean and up-to-date selection of AI models.

@@ -56,7 +56,7 @@ Dieser Prozess wird in 4 Phasen unterteilt.
 
 Das Update für vCenter wird von OVHcloud durchgeführt. Der Patch für die ESXi-Hosts wird von Ihnen selbst durchgeführt und ist im [Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager) verfügbar.
 
-Die Liste mit den Patches für ESXi-Hosts finden Sie in [diesem Dokument](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Die Liste mit den Patches für ESXi-Hosts finden Sie in [diesem Dokument](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Nach dem Update der Hosts wird die folgende Warnung in der Zusammenfassung Ihres Hosts angezeigt:
 
@@ -66,7 +66,7 @@ Nach dem Update der Hosts wird die folgende Warnung in der Zusammenfassung Ihres
 
 Wenn die ESXi-Hosts aktualisiert wurden, ist der Patch noch nicht umgesetzt.
 
-Bevor Sie diesen jedoch ausführen, sollten Sie die möglichen Probleme, die in der bereits erwähnten [Knowledge Base](https://kb.vmware.com/s/article/55806){.external-link} aufgeführt werden, sowie die in einer anderen Knowledge Base aufgeführten Leistungseinschränkungen beachten: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767).
+Bevor Sie diesen jedoch ausführen, sollten Sie die möglichen Probleme, die in der bereits erwähnten [Knowledge Base](https://kb.vmware.com/s/article/55806) aufgeführt werden, sowie die in einer anderen Knowledge Base aufgeführten Leistungseinschränkungen beachten: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767).
 
 ### 3. Aktivierungsphase
 
@@ -78,11 +78,11 @@ In dem Fenster ist rechts oben ein Filter verfügbar.
 
 Dieser Vorgang muss für jeden Host durchgeführt werden.
 
-Weitere Informationen finden Sie in Schritt 3 im Bereich „Resolution“ in dieser [VMware Knowledge Base](https://kb.vmware.com/s/article/55806){.external-link}.
+Weitere Informationen finden Sie in Schritt 3 im Bereich „Resolution“ in dieser [VMware Knowledge Base](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Wenn Sie die verschiedenen Elemente überprüft haben und zu dem Schluss gekommen sind, dass Sie Hyperthreading nicht deaktivieren möchten, können Sie, wie in dieser [Knowledge Base](https://kb.vmware.com/s/article/57374){.external-link} beschrieben, die Warnung löschen.
+> Wenn Sie die verschiedenen Elemente überprüft haben und zu dem Schluss gekommen sind, dass Sie Hyperthreading nicht deaktivieren möchten, können Sie, wie in dieser [Knowledge Base](https://kb.vmware.com/s/article/57374) beschrieben, die Warnung löschen.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > Dies wird von OVHcloud keinesfalls empfohlen. OVHcloud kann daher nicht für mögliche Folgen verantwortlich gemacht werden.

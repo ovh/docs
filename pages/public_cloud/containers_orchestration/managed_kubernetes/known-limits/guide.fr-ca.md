@@ -1,7 +1,7 @@
 ---
-title: Known limits
-excerpt: 'Requirements and limits to respect'
-updated: 2025-04-30
+title: Limites connues
+excerpt: 'Exigences et limites à respecter'
+updated: 2025-12-02
 ---
 
 <style>
@@ -25,152 +25,236 @@ updated: 2025-04-30
  }
 </style>
 
-> [!primary]
-> This documentation covers the limitations of the Managed Kubernetes Service Free Plan. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
+## Nœuds, pods et limites d'etcd
 
-## Nodes and pods
+|Plan | Nombre maximum de nœuds par cluster |  Nombre maximum de pods par nœud |  Nombre maximum de nœuds par groupe d'anti-affinité | Taille maximale d'etcd |
+|---------|---|---|---|---|
+| Free    |100|110|5|400Mo|
+| Standard|500|110|5|8Go|
 
-We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node.
-While we are fairly sure it can go further, we advise you to keep under those limits.
+Nous avons testé nos plans du service OVHcloud Managed Kubernetes avec un nombre maximum de nœuds. Bien que des configurations plus élevées puissent fonctionner et qu'il n'y ait pas de limites strictes, nous recommandons de rester en dessous de ces limites pour une stabilité optimale.
 
-Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
-A node can run up to 110 pods. This limit does not depend on node flavor.
+Gardez à l'esprit que l'impact sur le plan de contrôle n'est pas uniquement déterminé par le nombre de nœuds. Ce qui définit réellement un « grand cluster » dépend de la combinaison des ressources déployées, des pods, des ressources personnalisées et d'autres objets qui contribuent tous à la charge du plan de contrôle. Un cluster avec moins de nœuds mais une utilisation intensive des ressources peut stresser davantage le plan de contrôle qu'un cluster avec de nombreux nœuds exécutant des charges de travail minimales. Dans de telles configurations, il est recommandé de passer au plan Standard afin de bénéficier de ressources de plan de contrôle plus élevées et dédiées.
 
-In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
+Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, veuillez noter que l'équipe OVHcloud déploie certains composants de gestion sur les nœuds (CNI, agents, Konnectivity, ...), qui sont considérés comme « obligatoires » pour le cluster et affecteront la capacité du nombre de pods par nœud pour les charges de travail des utilisateurs. Pour la même raison, ces composants de gestion étant obligatoires et nécessitant une petite quantité de ressources de nœud, en cas de surcharge du nœud, vous pourriez retrouver certains de vos pods dans l'état `Terminated` avec `Reason: OOMKilled` et `Exit Code: 137`. C'est pourquoi il est important de gérer proprement les ressources de votre charge de travail afin d'éviter la surcharge des nœuds et les instabilités.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.
+En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux nœuds. Toutes les mises à jour du système d'exploitation et des composants sont gérées par OVHcloud via des correctifs et des mises à jour mineures. Si vous avez besoin d'effectuer un **débogage au niveau du nœud**, vous pouvez utiliser les outils natifs Kubernetes avec [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node) pour inspecter ou diagnostiquer un nœud sans nécessiter d'accès SSH direct.
 
-Please note that any operation requested to our services, like node deletions or rolling updates, will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
+## Considérations sur les correctifs, mises à niveau et maintenances
 
-Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
+Toute opération demandée à nos services, telle que la suppression de nœuds, les correctifs ou les mises à jour de versions, suit une **procédure de vidage progressive** respectant les [Budgets de perturbation de pod](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) pendant une durée maximale de 10 minutes. Après cette période, les nœuds sont vidés de force pour permettre la poursuite des opérations. Les correctifs et les mises à niveau de version Kubernetes sont effectués à l'aide d'une procédure de mise à niveau *In Place*, ce qui signifie que les nœuds sont entièrement réinstallés un par un.
 
-Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH into your nodes.
-
-## Data persistence
-
-If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
-
-We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) for more information.
-
-## LoadBalancer
-
-Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer based on OpenStack Octavia.
-If the LoadBalancer has been created through a K8s service, the lifespan of the external Load Balancer (and thus the associated IP address if not explicity specified to keep it) is linked to the lifespan of this Kubernetes resource.
-
-To get more information about the deployment of a LoadBalancer deployment in a MKS cluster, consult our documentation to [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
-
-## OpenStack & Quota
-
-Our Managed Kubernetes service is based on OpenStack, and your nodes, persistent volumes and load balancers are built on it, using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](/links/manager). Though it doesn't mean that you can deal directly with these nodes and persistent volumes the same way you can do it for other Public Cloud instances.
-
-Also, MKS Cluster's quota relies on your project's quota. Consult [this documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) to increase your quota.
-
-The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
-Please refrain from manipulating them from the *OVHcloud Public Cloud Control Panel* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
-
-There is also a limit of __20__ Managed Kubernetes Services by Openstack project (also named Openstack tenant).
-
-### Node naming
-
-Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
-
-The usage of the __period (`.`)__ character is forbidden in node name. Please, prefer the __dash__ (`-`) character instead.
-
-## Ports
-
-In any case, there are some ports that you shouldn't block on your instances if you want to keep your OVHcloud Managed Kubernetes service running:
-
-### Ports to open from public network (INPUT)
-
-- TCP Port 22 (*ssh*): needed for nodes management by OVHcloud
-- TCP Ports from 30000 to 32767 (*NodePort* services port range): needed for [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) and [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) services
-- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
-
-### Ports to open from instances to public network (OUTPUT)
-
-- TCP Port 443 (*kubelet*): needed for communication between the kubelets and the Kubernetes API server
-- TCP Port 80 IP 169.254.169.254/32 (*init service*): needed for OpenStack metadata service
-- TCP Ports from 25000 to 31999 (*TLS tunnel*): needed to tunnel traffic between pods and the Kubernetes API server
-- TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
-- UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
-- TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
-- TCP Port 111 (*rpcbind*): needed only if you want to use the NFS client deployed on nodes managed by OVHcloud
-- TCP Port 4443 (metrics server): needed for communication between the metrics server and the Kubernetes API server
-
-### Ports to open from others worker nodes (INPUT/OUPUT)
-
-- UDP Port 8472 (*flannel*): needed for communication between pods
-- UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
-- TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
-
-### About OpenStack security groups
-
-In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/0` CIDR.
-
-> [!warning]
-> If you remove the default rules accepting all input and output when creating a new security group, make sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
->
+Les nœuds de travail (ajoutés manuellement ou via le Cluster Autoscaler) sont généralement prêts en quelques minutes.
 
 > [!primary]
-> In order to simplify your policy, you can add these rules which do not specify any port and will allow all internal traffic between pods and services within the cluster:
->> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
->> |---|---|---|---|---|---|
->> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Allow traffic from pods|
->> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Allow traffic from services|
 >
-> It allows you to trust the internal traffic between pods and services within the cluster.
-
-For more details, please refer to the [Creating and configuring a security group in Horizon documentation](/pages/public_cloud/compute/setup_security_group).
-
-## Private Networks
-
-The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
-
-To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
-
-> [!warning]
-> At the moment, MKS worker nodes cannot use provided Subnet's DNS nameservers.
+> Les nœuds de travail GPU (flavors t1 et t2) peuvent prendre plus d'une heure pour atteindre un état prêt.
 >
 
-> [!warning]
-> If your cluster has been created using an OpenStack Private Network, you should not change this private network's name nor the network's subnet name. <br>
-> Indeed, the OpenStack Cloud Controller Manager (CCM) is using the network name to create private network connectivity inside the cluster to link nodes to the private network.<br>
-> Changing either the private network name or the network's subnet name will have an impact on future nodes to be deployed as the CCM cannot find network information.<br>
-> The CCM cannot fetch private network information on OpenStack side in order to initialize networking on the freshly deployed nodes on Kubernetes side.<br>
-> Nodes will have a "uninitialized=true:NoSchedule" taint which prevents the [kube-scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) to deploy pods on those new uninitialized nodes. Nodes impacted by this use case don't have an External-IP as well.
+Si un incident est détecté par le monitoring OVHcloud, dans le cadre de l'auto-réparation, les nœuds peuvent être entièrement réinstallés après avoir été dans un état 'NotReady' pendant plus de 10 minutes.
+
+## Persistance des données & Volumes persistants
+
+Pour éviter la perte de données en cas de panne de nœud, de correctif ou de mise à jour, il est recommandé d'enregistrer vos données sur des Volumes persistants (PV) basés sur des classes de stockage persistant (comme Block ou File Storage), et non directement sur les nœuds (y compris les disques NVMe supplémentaires).
+Suivez notre [guide sur la configuration et la gestion des Volumes persistants sur OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) pour plus d'informations.
+
+Par défaut, OVHcloud fournit des [classes de stockage](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume/guide.en-gb.md#storage-classes) basées sur la solution de stockage en bloc Cinder via Cinder CSI.
+Un nœud de travail peut avoir un maximum de 100 volumes persistants Cinder attachés, et un volume persistant Cinder ne peut être attaché qu'à un seul nœud de travail.
+
+Vous pouvez manuellement [configurer des volumes persistants multi-attach avec NAS-HA](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha).
+
+### Déploiements sur plusieurs zones de disponibilité
+
+Les clusters MKS déployés sur des régions avec 3 zones de disponibilité peuvent utiliser des Volumes persistants Cinder provisionnés à l'aide de **classes de stockage spécifiques à la zone** :
+
+- `csi-cinder-high-speed`
+- `csi-cinder-high-speed-gen2`
+
+> [!primary]
+>
+> Un PVC provisionné dans une zone donnée ne sera accessible que depuis les nœuds de cette même zone.
+> Le multi-attach classique (`csi-cinder-classic-multiattach`) n'est **pas pris en charge** pour les clusters multi-AZ pour l'instant, car attacher des volumes à plusieurs instances dans différentes zones peut entraîner une corruption des données.
 >
 
-### Known not compliant IP ranges
+### Redimensionnement des volumes
 
-The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
+Le redimensionnement des `Persistent Volume Claims` Kubernetes ne permet que d'étendre les volumes, pas de réduire ceux-ci.  
 
-```text
-10.2.0.0/16 # Subnet used by pods
-10.3.0.0/16 # Subnet used by services
-172.17.0.0/16 # Subnet used by the Docker daemon
-```
-
-## Cluster health
-
-The command `kubectl get componentstatus` is reporting the scheduler, the controller manager and the etcd service as unhealthy. This is a limitation due to our implementation of the Kubernetes control plane as the endpoints needed to report the health of these components are not accesible.
-
-## Persistent Volumes
-
-Kubernetes `Persistent Volume Claims` resizing only allows to __expand__ volumes, not to __decrease__ them.  
-If you try to decrease the storage size, you will get a message like:
+Si vous essayez de réduire la taille de stockage, vous obtiendrez un message du type :
 
 ```bash
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
 
-For more details, please refer to the [Resizing Persistent Volumes documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
+Pour plus de détails, veuillez consulter la [documentation sur le redimensionnement des volumes persistants](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
 
-The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
-A worker node can have a maximum of 254 persistent volumes attached to it, and a persistent volume can only be attached to a single worker node.  
-You can manually [configure multi-attach persistent volumes with NAS-HA](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha).
+## LoadBalancer
 
-## Go further
+La création d'un service Kubernetes de type LoadBalancer déclenche la création d'un Load Balancer Public Cloud basé sur OpenStack Octavia.
+La durée de vie du Load Balancer externe (et de l'adresse IP associée, si elle n'est pas explicitement spécifiée pour la conserver) est liée à la durée de vie de la ressource Kubernetes.
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+Pour plus d'informations, consultez notre guide pour [exposer des services via un LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
-- Join our [community of users](/links/community).
+## Ressources & Quotas
+
+Les ressources du service Kubernetes managé comprenant les nœuds, les volumes persistants et les répartiteurs de charge sont basés sur des ressources Public Cloud standard déployées dans le projet utilisateur. Vous pouvez donc les voir dans l'[espace client Public Cloud d'OVHcloud](/links/manager) ou via les API. Cependant, cela ne signifie pas que vous pouvez interagir directement avec ces ressources de la même manière que vous le feriez avec d'autres instances Public Cloud. La partie *gérée* du service MKS d'OVHcloud signifie que nous avons configuré ces ressources pour qu'elles fassent partie de notre Kubernetes managé.
+
+Veuillez éviter de les manipuler « manuellement » (modifier les ports laissés ouverts, renommer, supprimer, redimensionner des volumes, etc.), car vous pourriez les endommager. Dans le cadre de notre processus d'auto-réparation, toute suppression ou modification peut entraîner la création ou la duplication d'une nouvelle ressource.
+
+Par défaut, il existe un quota de 20 clusters de plan 'Free' Managed Kubernetes par projet (également nommé 'tenant' OpenStack).
+
+Les quotas des clusters MKS reposent sur les quotas de votre projet. Si nécessaire, consultez [cette documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour augmenter votre quota.
+
+### Nommage des nœuds
+
+En raison des limitations connues actuellement présentes dans le service `Kubelet`, faites attention à attribuer __un nom unique__ à toutes vos instances OpenStack exécutées dans votre projet **y compris** vos nœuds « Managed Kubernetes Service » et les instances que vous démarrez directement sur OpenStack via l'espace client OVHcloud ou l'API.
+
+## Ports
+
+Pour assurer le bon fonctionnement de votre cluster Kubernetes Managé OVHcloud, certains ports doivent rester ouverts.
+
+### Plan Free
+
+#### Ports à ouvrir depuis le réseau public (INGRESS)
+
+| Port(s)       | Protocole | Usage |
+| ------------- | -------- | ----- |
+| 22            | TCP      | Accès SSH pour la gestion des nœuds par OVHcloud |
+| 30000–32767   | TCP      | Nécessaire pour les services [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) et [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) |
+| 111           | TCP      | rpcbind (uniquement si vous utilisez le client NFS) |
+
+#### Ports à ouvrir depuis les instances vers le réseau public (EGRESS)
+
+| Port(s)                 | Protocole | Usage                                                |
+| ----------------------- | -------- | ---------------------------------------------------- |
+| 443                     | TCP      | Communication du Kubelet avec le serveur API Kubernetes |
+| 80 (169.254.169.254/32) | TCP      | Service d'initialisation (OpenStack metadata)                    |
+| 25000–31999             | TCP      | Tunnel TLS entre les pods et le serveur API Kubernetes    |
+| 8090                    | TCP      | Service interne (gestion des nœuds OVHcloud)          |
+| 123                     | UDP      | Synchronisation des serveurs NTP (systemd-timesync)       |
+| 53                      | TCP/UDP  | Autoriser la résolution des noms de domaine (systemd-resolve)       |
+| 111                     | TCP      | rpcbind (uniquement si vous utilisez le client NFS)                   |
+| 4443                    | TCP      | Communication du serveur de métriques                         |
+
+#### Ports à ouvrir entre les autres nœuds de travail (INGRESS/EGRESS)
+
+| Port(s)       | Protocole | Usage |
+| ------------- | -------- | ----- |
+| 8472          | UDP      | Réseau overlay Flannel (pour la communication entre les pods) |
+| 4789          | UDP      | Utilisation interne Kubernetes DNS |
+| 10250         | TCP      | Nécessaire pour la [communication entre l'apiserver et les nœuds de travail](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet) (kubelet) |
+
+> [!warning]
+>
+> Bloquer l'un des ports ci-dessus peut entraîner un dysfonctionnement du cluster.
+>
+> Pour les clusters du plan Standard, les mêmes règles s'appliquent.
+>
+> Conservez le groupe de sécurité OpenStack par défaut inchangé pour éviter de déconnecter les nœuds ; ajoutez uniquement des règles spécifiques à l'application avec soin.
+>
+
+#### À propos des groupes de sécurité OpenStack
+
+Dans le cas où vous souhaitez appliquer des groupes de sécurité OpenStack à vos nœuds, il est obligatoire d'ajouter les ports ci-dessus dans un jeu de règles concernant le CIDR `0.0.0.0/0`.
+
+> [!warning]
+> Si vous supprimez les règles par défaut acceptant toutes les entrées et sorties lors de la création d'un nouveau groupe de sécurité, assurez-vous d'autoriser les ports nécessaires à votre application ainsi que les ports obligatoires mentionnés ci-dessus.
+>
+
+> [!primary]
+> Pour simplifier votre stratégie, vous pouvez ajouter ces règles qui ne spécifient aucun port et autoriseront tout le trafic interne entre les pods et les services au sein du cluster :
+>
+> | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
+> |---|---|---|---|---|---|
+> | Ingress | IPv4 | TCP | Any | 10.2.0.0/16 | Autoriser le trafic des pods|
+> | Ingress | IPv4 | TCP | Any | 10.3.0.0/16 | Autoriser le trafic des services|
+>
+> Cela vous permet de faire confiance au trafic interne entre les pods et les services au sein du cluster.
+
+Pour plus de détails, veuillez consulter la [documentation sur la création et la configuration d'un groupe de sécurité dans Horizon](/pages/public_cloud/compute/setup_security_group).
+
+### Plan Standard
+
+## Groupe de sécurité
+
+Le groupe de sécurité OpenStack pour les nœuds de travail est celui par défaut. Il autorise par défaut tout le trafic entrant et sortant sur votre réseau privé.
+
+```bash
+openstack security group rule list default
+```
+
+```bash
++--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
+| ID                                   | IP Protocol | Ethertype | IP Range  | Port Range | Direction | Remote Security Group | Remote Address Group |
++--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
+| 0b31c652-b463-4be2-b7e9-9ebb25d619f8 | None        | IPv4      | 0.0.0.0/0 |            | egress    | None                  | None                 |
+| 25628717-0339-4caa-bd23-b07376383dba | None        | IPv6      | ::/0      |            | ingress   | None                  | None                 |
+| 4b0b0ed2-ed16-4834-a5be-828906ce4f06 | None        | IPv4      | 0.0.0.0/0 |            | ingress   | None                  | None                 |
+| 9ac372e3-6a9f-4015-83df-998eec33b790 | None        | IPv6      | ::/0      |            | egress    | None                  | None                 |
++--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
+```
+
+Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leur configuration "par défaut" ou les nœuds pourraient être déconnectés du cluster.
+
+## Réseaux privés
+
+> [!warning]
+>
+> Si votre cluster a été créé en utilisant un réseau privé OpenStack, **ne modifiez pas** le nom du réseau privé ou le nom du sous-réseau.
+>
+> Le Cloud Controller Manager (CCM) OpenStack s'appuie sur ces noms pour créer la connectivité du réseau privé à l'intérieur du cluster et pour relier les nœuds au réseau privé.
+>
+> Modifier le nom du réseau ou du sous-réseau peut empêcher le déploiement correct des nouveaux nœuds. Les nœuds auront un taint `"uninitialized=true:NoSchedule"`, ce qui empêchera le kube-scheduler de déployer des pods sur ces nœuds.
+>
+> Les nœuds affectés de cette manière n'auront également pas d'External-IP.
+>
+
+### Plan Free
+
+### Plages d'adresses IP non conformes connues
+
+Les sous-réseaux suivants peuvent générer certains comportements incohérents avec nos réseaux overlay utilisés :
+
+```bash
+10.2.0.0/16 # Subnet used by pods
+10.3.0.0/16 # Subnet used by services
+172.17.0.0/16 # Subnet used by the Docker daemon
+```
+
+> [!primary]
+>
+> Ces sous-réseaux doivent être évités dans votre réseau privé afin d'éviter tout problème de mise en réseau.
+>
+
+Pour éviter les conflits réseau, il est recommandé de **maintenir le service DHCP en fonctionnement** dans votre réseau privé.
+
+> [!warning]
+>
+> Pour le moment, les nœuds de travail MKS ne peuvent pas utiliser les serveurs DNS des sous-réseaux fournis.
+>
+
+### Plan Standard
+
+#### Plages d'adresses IP réservées
+
+Les plages suivantes sont utilisées par le cluster et ne doivent pas être utilisées ailleurs sur le réseau privé connecté au cluster.
+
+```bash
+10.240.0.0/13 # Subnet used by pods
+10.3.0.0/16 # Subnet used by services
+```
+
+> [!warning]
+>
+> Ces plages sont fixes pour l'instant, mais seront configurables dans une prochaine version. Ne les utilisez pas ailleurs dans votre réseau privé.
+>
+
+## Santé du cluster
+
+La commande `kubectl get componentstatus` signale que le planificateur, le gestionnaire de contrôleurs et le service etcd ne sont pas en bon état. Il s'agit d'une limitation due à notre implémentation du plan de contrôle Kubernetes, car les points de terminaison nécessaires pour signaler l'état de ces composants ne sont pas accessibles.
+
+## Aller plus loin
+
+- Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services de vous aider dans le cadre de votre projet spécifique.
+
+- Rejoignez notre [communauté d'utilisateurs](/links/community).

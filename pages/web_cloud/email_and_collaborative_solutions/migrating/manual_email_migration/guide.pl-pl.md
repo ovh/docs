@@ -7,7 +7,7 @@ updated: 2025-04-28
 
 ## Wprowadzenie
 
-[Automatyczna](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) migracja konta e-mail jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/). Możesz również ręcznie przenieść Twoje konto e-mail za pomocą programu pocztowego.
+[Automatyczna](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) migracja konta e-mail jest możliwa przy użyciu narzędzia [OVHcloud Mail Migrator](/links/web/omm). Możesz również ręcznie przenieść Twoje konto e-mail za pomocą programu pocztowego.
 
 **Dowiedz się, jak przenieść ręcznie Twoje konto e-mail.**
 
@@ -27,7 +27,7 @@ updated: 2025-04-28
 ## W praktyce
 
 > [!primary]
-> Sprawdź najpierw, czy automatyczna migracja jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/). W tym celu skorzystaj z przewodnika [Migracja kont e-mail przez OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+> Sprawdź najpierw, czy automatyczna migracja jest możliwa przy użyciu narzędzia [OVHcloud Mail Migrator](/links/web/omm). W tym celu skorzystaj z przewodnika [Migracja kont e-mail przez OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 W tym przewodniku przeprowadziliśmy operacje na 3 najczęściej używanych programach pocztowych, **Outlook**, **Mail** na Mac OS i **Thunderbird**.
 
@@ -233,6 +233,6 @@ foldery i e-maile zapisane adresu e-mail znajdziesz w skrzynce odbiorczej oraz w
 
 ## Sprawdź również
 
-[Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+[Przeniesienie kont e-mail za pomocą OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 
 Dołącz do [grona naszych użytkowników](/links/community).

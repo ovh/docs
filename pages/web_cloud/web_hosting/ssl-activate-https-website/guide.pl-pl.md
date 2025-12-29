@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Ustaw HTTPS na stronie WWW"
 excerpt: "Dowiedz się, jak aktywować certyfikat SSL na Twojej stronie WWW poprzez HTTPS"
-updated: 2024-02-26
+updated: 2025-10-27
 ---
 
 ## Wprowadzenie
@@ -94,7 +94,7 @@ Pamiętaj, że jeśli używasz "strony WWW zbudowanej w oparciu o gotowy system"
 
 ### Etap 3 - Aktywacja HTTPS na Twojej stronie WWW <a name="https-enable"></a>
 
-Jeśli Twój hosting posiada aktywny certyfikat SSL, a Twoja strona WWW korzysta z aktywnego certyfikatu [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite), możesz go aktywować.
+Gdy tylko nazwa domeny posiada [aktywny certyfikat SSL za pośrednictwem hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting) i strona internetowa jest gotowa do przełączenia na *HTTPS*, można to zrobić.
 
 > [!warning]
 >

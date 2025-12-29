@@ -13,11 +13,6 @@ updated: 2024-10-01
 }
 </style>
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/RULMVWH)
-
 ## Ziel
 
 MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.

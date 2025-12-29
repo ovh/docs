@@ -1,7 +1,7 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-07-21
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -345,7 +345,11 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-Questo problema può essere risolto modificando il Registro di sistema di Windows: aprire l'utilità Windows *regedit* e cercare la voce `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Impostare il valore di `AllowInsecureGuestAuth` su "1". Per maggiori informazioni al riguardo, visitare le [pagine di supporto Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
+> [!primary]
+>
+> Per correggere questo errore, è necessario modificare il registro di sistema di Windows. A tal fine, aprire l'editor del registro (regedit), quindi accedere alla chiave `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Assegnare il valore "1" al parametro `AllowInsecureGuestAuth`.<br>
+> Trova ulteriori informazioni su questo argomento sulle [pagine di supporto Microsoft](https://learn.microsoft.com/it-it/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ##### Linux
 

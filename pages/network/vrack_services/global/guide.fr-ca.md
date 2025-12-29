@@ -1,7 +1,7 @@
 ---
 title: "vRack Services - Exposer un service managé sur votre vRack"
 excerpt: "Découvrez comment exposer votre service managé sur le vRack avec le produit vRack Services et la fonctionnalité Service Endpoint"
-updated: 2024-12-19
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -451,6 +451,10 @@ Retour de l'appel API :
 >
 
 ## Contraintes et limites
+
+> [!primary]
+> Veuillez noter que la création de vRack Services, de sous-réseaux ou de Service Endpoints sur un vRack en production **n'entraîne aucune interruption de service**.
+>
 
 ### vRack Services
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2025-08-01
+updated: 2025-11-10
 ---
 
 <style>
@@ -187,8 +187,9 @@ So aktivieren Sie ein SSL-Zertifikat auf Ihrem Webhosting für Ihre Website:
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite und in der Randleiste **Konfiguration** auf den Button `...`{.action} rechts neben **SSL-Zertifikat** und dann auf `SSL-Zertifikat bestellen`{.action}.
-4. [Wählen Sie das gewünschte Zertifikat aus der Liste der verfügbaren Zertifikate aus](/pages/web_cloud/web_hosting/ssl_on_webhosting) und fahren Sie fort, bis der Bestellschein abgeschlossen ist.
+3. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
+4. Wählen Sie das gewünschte Zertifikat aus den [verfügbaren Zertifikaten](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Fahren Sie fort, bis die Installation des SSL-Zertifikats abgeschlossen ist (nach vorheriger Validierung des Bestellscheins, wenn Sie eines der Sectigo SSL-Zertifikate auswählen).
 
 > [!success]
 >
@@ -619,7 +620,7 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 
 ///
 
-## Weiterführende Informationen <a name=“go-further“></a>
+## Weiterführende Informationen
 
 [FAQ - Webhosting E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

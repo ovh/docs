@@ -1,8 +1,21 @@
 ---
 title: "Automatische Backups auf einem VPS verwenden"
 excerpt: "Erfahren Sie, wie Sie im OVHcloud Kundencenter die Backup-Option verwenden, um Ihre Daten zu sichern"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
+
+<style>
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+</style>
 
 ## Ziel
 
@@ -41,7 +54,6 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/
         - [Redhat Distributionen](#red)
         - [Windows](#win)
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 Bei der Bestellung eines VPS ist ein tägliches automatisches Backup als kostenlose Service-Option inklusive. Mit dieser Standard-Option können Sie:
 
@@ -52,15 +64,23 @@ Für mehr Flexibilität bei Ihren Backups können Sie die Option "Automatisches 
 
 <a name="premium"></a>
 
-### Upgrade auf Automatisches Backup Premium
+### Automatisches Backup Premium abonnieren
 
-Mit einem Upgrade zu "Premium" erweitern Sie Ihre automatische Backup-Option auf ein tägliches Backup mit einer Verfügbarkeit von 7 Tagen. Dadurch können Sie im Vergleich zur 24-Stunden-Rotation der Standardoption auf ältere Backup-Versionen zurückgreifen.
+Die Option Automatisches Backup Premium erzeugt alle 24 Stunden zum ausgewählten Zeitpunkt ein Backup Ihres VPS.  
+Sie haben Zugriff auf alle täglichen Backups der letzten 7 Tage. Sobald 7 Backups erstellt wurden, ersetzt jedes neue Backup das älteste.
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, wählen Sie `Virtual Private Server`{.action} aus und klicken Sie auf Ihren VPS-Namen.
 
 Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
 
-Klicken Sie auf den Link `Premium Backup bestellen`{.action}.
+Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die seit dem 07.08.25 bestellt wurden) oder den Button `Automatisches Backup aktivieren`{.action}.
 
-![autobackupvps](images/backup_vps.png){.thumbnail}
+<div class="grid-gallery">
+  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
+  <img src="images/backup_vps_leg.png" alt="autobackup vps">
+</div>
+
+Beachten Sie im nächsten Schritt die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozesses geführt und erhalten eine E-Mail zur Bestätigung.
 
 <a name="time"></a>
 

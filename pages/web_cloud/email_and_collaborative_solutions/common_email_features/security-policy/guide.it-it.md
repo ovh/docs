@@ -31,7 +31,7 @@ Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [S
 |Clicca su `MX Plan`{.action} o `Email Pro`{.action} e seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona `Gestisci la politica di sicurezza`{.action}.|Clicca su `Microsoft`{.action} e poi su `Exchange`{.action}, quindi seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona`Gestisci la politica di sicurezza`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
-> ![primary]
+> [!primary]
 >
 > Se non vedi l'elemento `Plus`{.action} nel pannello di gestione della tua offerta `MX Plan`{.action}, significa che sei su un'offerta MX Plan storica. La politica di sicurezza non è gestita sulla soluzione MX Plan storica.
 

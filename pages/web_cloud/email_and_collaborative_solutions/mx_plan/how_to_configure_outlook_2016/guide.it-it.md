@@ -12,11 +12,7 @@ updated: 2024-10-01
   max-height:600px !important;
 }
 </style>
-
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/RULMVWH)
+ 
 
 ## Obiettivo
 

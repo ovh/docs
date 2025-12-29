@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla soluzione Zimbra OVHcloud
 excerpt: "Ritrova le domande relative alla migrazione a Zimbra per il servizio MX Plan di OVHcloud"
-updated: 2024-11-15
+updated: 2025-12-05
 ---
 
 <style>
@@ -61,13 +61,39 @@ Consulta la nostra pagina "[Configurare un indirizzo email Zimbra su un client d
 
 ///
 
+/// details | Come modificare la mia offerta Zimbra ?
+
+I tuoi bisogni cambiano: desideri disporre di funzionalità aggiuntive sul tuo account Zimbra, oppure non ne hai più bisogno. Le offerte Zimbra sono flessibili, segui le istruzioni seguenti in base alla tua situazione:
+
+**Desideri passare a un piano superiore?**
+
+1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
+1. Vai alla sezione `Web Cloud`{.action}.
+1. Clicca su `Zimbra Mail`{.action}.
+1. Clicca sulla scheda `Account email`{.action}.
+1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
+1. Clicca su `Modificare soluzione`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Desideri passare a un piano inferiore?**
+
+Le fasi sono le stesse del cambio a un piano superiore (dettagliate sopra).
+
+> [!warning]
+>
+> Prima di passare a un piano inferiore, assicurati dei seguenti punti:
+>
+> - Nessun file è archiviato sul tuo volume di archiviazione "Briefcase" se passi all'offerta Starter.
+> - Il contenuto del tuo account email deve essere inferiore a 15 Go se passi all'offerta Starter.
+
+///
+
 ### Domande sulla migrazione MX Plan verso la soluzione Zimbra
 
 Nell'ambito dell'evoluzione dell'offerta MX Plan, dall'attuale soluzione che utilizza la webmail Outlook Web Access (OWA) è prevista una migrazione verso la soluzione Zimbra e la sua webmail.
 
 Se sei interessato da questa migrazione, qui trovi le domande più frequenti al riguardo.
-
-///
 
 /// details | Quali sono le differenze tra le Webmail Outlook Web App (OWA) e Zimbra?
 
@@ -172,8 +198,9 @@ Per disattivare il servizio nella sezione "I tuoi servizi" dello spazio OVHcloud
 |**Contenuto dell'account email**<br>(email, cartelle, contatti)|Migrato|✅|
 |**Email ricevute durante il processo di migrazione**|Consegnate|✅|
 |**Risposta automatica / Segreteria**|Mantenuta|✅|
-|**Regola casella di posta in arrivo**|- Le regole configurate dal tuo client di posta saranno invariate.<br>- Le regole configurate dalla Webmail OWA saranno migrate verso la Webmail Zimbra. Solo una minima parte delle norme non potrà essere migrata a causa di incompatibilità. Le informazioni verranno inviate sotto forma di un’email sull’account email dell’utente e potranno essere ricreate manualmente.<br>- *Regola non compatibile*: regola che utilizza due tipi di condizioni, ad esempio AND e OR simultaneamente. Ad esempio, se il messaggio viene ricevuto da (**john@mydomain.ovh** O **mary@mydomain.ovh**) E l'oggetto contiene "fattura", sposta nella cartella "Importante"|⚠️|
+|**Regola casella di posta in arrivo**|- Le regole configurate dal tuo client di posta saranno invariate.<br>- Le regole configurate dalla Webmail OWA saranno migrate verso la Webmail Zimbra. Solo una minima parte delle norme non potrà essere migrata a causa di incompatibilità.<br>- *Regola non compatibile*: regola che utilizza due tipi di condizioni, ad esempio "O" e "E" simultaneamente. Ad esempio: se il messaggio viene ricevuto da (**john@mydomain.ovh** O **mary@mydomain.ovh**) E l'oggetto contiene "fattura", sposta nella cartella "Importante".|⚠️|
 |**Firma personale**|- Le firme configurate dal tuo client di posta non verranno modificate.<br>- Le firme configurate dalla Webmail OWA non verranno migrate a causa della formattazione.|⚠️|
+|**Contatti esterni**|Questa funzionalità permette di integrare un indirizzo email esterno alla piattaforma email nella sua rubrica globale. Questa funzione non sarà presente su Zimbra.|❌|
 |**Blocca/Autorizza**|Questa funzionalità, che permette di bloccare email provenienti da un dominio o indirizzo email specifico, non sarà presente su Zimbra. Tuttavia, questo comportamento può essere facilmente ricreato tramite una regola di posta in arrivo da Zimbra.|❌|
 |**Piè di pagina**<br>(firma di un dominio configurabile dallo Spazio Cliente)|Questa funzionalità non sarà presente sulla nuova infrastruttura Zimbra. È comunque possibile configurare una firma a livello di account email.|❌|
 |**Politica di Sicurezza**|Questa funzionalità dello Spazio Cliente che permette di modificare la politica di gestione delle password non sarà presente, in un primo momento, sulla soluzione Zimbra.<br>La politica di sicurezza applicata di default sulle password richiede almeno 10 caratteri alfanumerici, 1 carattere speciale, 1 maiuscolo.|❌|

@@ -1,7 +1,7 @@
 ---
 title: "Gestionar un alojamiento web con Visual Studio Code a través de SFTP"
 excerpt: "Administrar un sitio web en un alojamiento web con Visual Studio Code gracias a una extensión SFTP"
-updated: 2023-11-06
+updated: 2025-10-21
 ---
  
 
@@ -84,6 +84,8 @@ Este archivo se encuentra en la carpeta .vscode, que a su vez se sitúa en la ra
 ### Configurar archivo sftp.json
 
 Antes de trabajar en el proyecto, cárguelo en la carpeta local que creó anteriormente. No obstante, en primer lugar, asegúrese de que el archivo "sftp.json" está correctamente configurado. La información útil puede consultarse en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+
+![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 
 En el archivo "sftp.json", introduzca los valores para las siguientes entradas:
 

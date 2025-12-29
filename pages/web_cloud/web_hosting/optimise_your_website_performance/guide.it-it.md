@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2024-01-08
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -20,7 +20,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 ## Procedura
 
-### Step 1: Definisci il campo di applicazione
+### 1 - Definisci il campo di applicazione
 
 #### Domande da porsi in caso di rallentamenti:
 
@@ -50,7 +50,7 @@ Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS 
 
 Per maggiori informazioni clicca [qui](/links/web/hosting-best-web).
 
-### Step 2: Verifica la versione PHP
+### 2 - Verifica la versione PHP
 
 L’utilizzo dell’ultima versione php compatibile con il tuo sito può influenzare significativamente le performance del tuo sito.
 Per verificarne la compatibilità, consulta [la documentazione ufficiale di PHP](https://php.net/eol.php).
@@ -74,7 +74,7 @@ Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informaz
 
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
-### Step 3: Verifica i contenuti media (immagini, video, ecc.)
+### 3 - Verifica i contenuti media (immagini, video, ecc.)
 
 Quando si accede ad un sito web tutti i contenuti devono essere scaricati dal browser.
 
@@ -86,7 +86,7 @@ Spetta a te scegliere quelli che più si adattano alle tue esigenze.
 
 Puoi trovare maggiori informazioni più avanti, allo step 5.
 
-### Step 4: Ottimizza i tuoi script
+### 4 - Ottimizza i tuoi script
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
@@ -94,11 +94,32 @@ Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spa
 
 Come accedere alle statistiche e ai log:
 
-1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
-2. Clicca sulla scheda `Statistiche e log`{.action}.
-3. Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}.
+>>
+>> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
+>>
+>> ![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Come accedere ai grafici:
 
@@ -129,7 +150,7 @@ Ricordati di selezionare il nome del tuo database e il periodo che ti interessa.
 
 - **Richieste SQL**: mostra la quantità di richieste
 
-### Step 5: Controlla le richieste della rete
+### 5 - Controlla le richieste della rete
 
 Uno strumento utile di analisi è rappresentato dal [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor), che è direttamente integrato nel browser Mozilla Firefox e permette di analizzare nel dettaglio i tempi di caricamento di una pagina.
 
@@ -148,7 +169,7 @@ In questo modo, migliorano i tempi di risposta degli utenti finali in tutto il m
 
 Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/).
 
-### Step 6: Verifica i CMS (Content Management System) e i plugin utilizzati
+### 6 - Verifica i CMS (Content Management System) e i plugin utilizzati
 
 _Se non utilizzi un CMS, questo step è facoltativo_
 
@@ -158,7 +179,7 @@ Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo C
 
 - **Disattivazione o eliminazione dei plugin inutili:** Sempre al fine di migliorare le performance del tuo CMS, può essere utile disattivare o cancellare i plugin non utilizzati. In questo modo eviterai che il browser carichi gli elementi inutili.
 
-### Step 7: ottimizza il tuo database
+### 7 - Ottimizza il tuo database
 
 _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).

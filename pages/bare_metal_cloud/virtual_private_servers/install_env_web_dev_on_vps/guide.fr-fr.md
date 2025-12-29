@@ -1,7 +1,7 @@
 ---
 title: 'Installer un environnement de développement web sur un VPS ou un serveur dédié'
 excerpt: 'Découvrez comment installer un environnement de développement web sur un VPS ou un serveur dédié OVHcloud'
-updated: 2024-03-13
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -9,7 +9,7 @@ updated: 2024-03-13
 Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur votre VPS (comme WordPress par exemple), vous devez au préalable installer un environnement de développement web sur votre VPS ou votre serveur dédié. Les principaux services à installer sont :
 
 - **PHP** : PHP est l'un des langages les plus utilisés pour créer des sites web. Il est nécessaire d'installer PHP pour que votre site web puisse exécuter des scripts et des fonctionnalités dynamiques. Installez de préférence la version de PHP la plus récente.
-- **Serveur Web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance et de facilité de configuration.
+- **Serveur web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance et de facilité de configuration.
 - **SGBD** : Pour stocker, gérer, et récupérer vos données efficacement, vous aurez besoin d'un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées). MySQL, PostgreSQL ou encore MariaDB sont les SGBD les plus utilisés dans le développement web.
 
 **Découvrez comment installer manuellement un environnement de développement web sur un VPS ou un serveur dédié OVHcloud.**
@@ -30,18 +30,32 @@ Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur v
 
 Connectez-vous en SSH à votre VPS à l'aide de votre nom d'utilisateur et de votre mot de passe.
 
+### Mettre à jour l’index des paquets
+
+Avant d’installer les composants, mettez à jour la liste des paquets :
+
+```bash
+sudo apt update
+```
+
+Appliquez les mises à jour disponibles :
+
+```bash
+sudo apt -y upgrade
+```
+
 ### Installer PHP
 
 Installez PHP :
 
-```sh
-~$ sudo apt install php php-cli php-mysql php-xml php-gd php-curl -y
+```bash
+sudo apt install -y php php-cli php-fpm php-xml php-gd php-curl
 ```
 
 Pour vérifier que PHP est bien installé, entrez la commande suivante :
 
-```sh
-~$ sudo php -v
+```bash
+sudo php -v
 ```
 
 Si PHP est bien installé, un message de ce type doit apparaître :
@@ -57,14 +71,14 @@ Si PHP est bien installé, un message de ce type doit apparaître :
 
 Installez Nginx :
 
-```sh
-~$ sudo apt install nginx -y
+```bash
+sudo apt install nginx -y
 ```
 
 Pour vérifier que Nginx est bien installé, entrez la commande suivante :
 
-```sh
-~$ sudo nginx -v
+```bash
+sudo nginx -v
 ```
 
 Si Nginx est bien installé, un message de ce type doit apparaître :
@@ -77,28 +91,44 @@ En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https:
 
 > [!primary]
 >
-> Pour ce guide, nous choisissons MariaDB mais vous êtes libre d'installer le SGBD de votre choix.
->
+> Choisissez l’onglet correspondant au SGBD que vous souhaitez utiliser. L’extension PHP adéquate est installée dans chaque cas.
 
-Installez MariaDB :
-
-```sh
-~$ sudo apt install mariadb-server -y
-```
-
-Sécurisez et configurez MariaDB :
-
-```sh
-~$ sudo mysql_secure_installation
-```
-
-Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois l'installation de MariaDB terminée, le message suivant doit s'afficher :
-
-![env dev web](images/success_msg_mariadb.png){.thumbnail}
+> [!tabs]
+> MySQL / MariaDB
+>> Installez MariaDB (ou MySQL) et l’extension PHP associée :
+>> 
+>> ```bash
+>> sudo apt install -y mariadb-server php-mysql
+>> ```
+>> 
+>> Sécurisez l'installation :
+>> 
+>> ```bash
+>> sudo mysql_secure_installation
+>> ```
+>> 
+>> Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois l'installation de MariaDB (ou MySQL) terminée, le message suivant doit s'afficher :
+>> 
+>> ![env dev web](images/success_msg_mariadb.png){.thumbnail}
+>>
+> PostgreSQL
+>> Installez PostgreSQL et l’extension PHP correspondante :
+>> 
+>> ```bash
+>> sudo apt install -y postgresql postgresql-contrib php-pgsql
+>> ```
+>> 
+>> Créez une base et un utilisateur (exemple) :
+>> 
+>> ```bash
+>> sudo -u postgres psql -c "CREATE DATABASE db_name;"
+>> sudo -u postgres psql -c "CREATE USER db_user WITH ENCRYPTED PASSWORD 'mot_de_passe_fort';"
+>> sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE db_name TO db_user;"
+>> ```
 
 ### Conclusion
 
-Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant installer le CMS (**C**ontent **M**anagement **S**ystem) de votre choix, comme WordPress par exemple. Pour en savoir plus, consultez les guides « [Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) » et « [Installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps) ».
+Vous venez d'installer PHP, un serveur Nginx et un SGBD (MariaDB/MySQL ou PostgreSQL). Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant installer le CMS (**C**ontent **M**anagement **S**ystem) de votre choix, comme WordPress par exemple. Pour en savoir plus, consultez les guides « [Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) » et « [Installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps) ».
 
 Pour obtenir quelques conseils généraux pour sécuriser un serveur basé sur GNU/Linux, consultez nos guides :
 

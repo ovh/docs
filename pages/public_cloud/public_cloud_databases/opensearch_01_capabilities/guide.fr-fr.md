@@ -22,10 +22,11 @@ The Public Cloud Databases offer is available in the following regions:
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
 - `EU-WEST-PAR` (Paris, France)
+- `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Database nodes have to be in the same region. Multi-AZ is currently not supported.
+Database nodes have to be in the same region.
 
 ### OpenSearch versions
 

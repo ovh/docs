@@ -40,7 +40,7 @@ The next step allows you to define a name for the VM and choose a location. If y
 
 ![VM location](images/vm03.png){.thumbnail}
 
-You can then choose the cluster, host, [resource pool](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link}, or [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link} to place it.
+You can then choose the cluster, host, [resource pool](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html), or [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html) to place it.
 
 In this case, the VM will be deployed according to the configured DRS rules, and will be placed at the root of the cluster.
 

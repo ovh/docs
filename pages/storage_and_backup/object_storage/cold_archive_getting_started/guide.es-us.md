@@ -1,8 +1,23 @@
 ---
 title: Cold Archive - Getting started with Cold Archive (EN)
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2025-08-18
+updated: 2025-11-19
 ---
+
+> [!warning]
+>
+> **This page is only for existing customers of the OVHcloud standalone bucket-granular Cold Archive introduced in 2023.**
+>
+> **You're looking for S3<sup>1</sup>-compatible archiving solutions?**
+>
+> OVHcloud Object Storage now offers individual objects archiving feature rather than archiving the entire container thanks to the addition of the **Cold Archive** class in the Object Storage lifecycle. Indeed, the feature is now directly available in your Object Storage dashboard, from your existing Object Storage containers:
+>
+> - Upload your objects in the Cold Archive class,
+> - or use lifecycle transitions to move data to Cold Archive class.
+>
+> To learn more about this storage class, see our guide "[Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)".
+>
+> Moreover, the standalone bucket-granular Cold Archive won't be available from the Control Panel for new customers, with no impact to existing customers. APIs will continue to work and data will of course remain secure and available at any moment: we only modify the way users will access and manage objects.
 
 ## Objective
 

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Instalar un certificado SSL personalizado"
 excerpt: "Descubra cómo importar e instalar un certificado SSL personalizado en un alojamiento web de OVHcloud"
-updated: 2025-06-16
+updated: 2025-12-16
 ---
 
 ## Objetivo
@@ -17,7 +17,7 @@ En función de su situación, es posible que quiera instalar un certificado SSL 
 ## Requisitos
 
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
-- Contratar o disponer de un [alojamiento compartido OVHcloud](/links/web/hosting) en el que no haya ningún certificado SSL instalado.
+- Contratar o disponer de un [alojamiento compartido OVHcloud](/links/web/hosting).
 - Contratar o disponer de un [dominio](/links/web/domains) y disponer de derechos exclusivos sobre su uso. El nombre de dominio no debe estar ya asociado a un certificado SSL.
 - Tener OpenSSL o una aplicación compatible instalada localmente en su dispositivo.
 
@@ -28,13 +28,12 @@ En función de su situación, es posible que quiera instalar un certificado SSL 
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
 > Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). OVHcloud no podrá asistirle en **la instalación o contratación de un certificado SSL que no sea [los que ofrece OVHcloud](/links/web/hosting-options-ssl)**. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
->
 
-### Etapa 1 - Obtener una solicitud de firma de certificados (CSR) SSL <a name="step-1"></a>
+### 1 - Obtener una solicitud de firma de certificados (CSR) SSL <a name="step-1"></a>
 
 > [!primary]
 >
-> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL o si este último propone la generación del CSR durante el pedido del certificado SSL. En ese caso, vaya directamente al [etapa 2](#step-2).
+> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL o si este último propone la generación del CSR durante el pedido del certificado SSL. En ese caso, vaya directamente a la [parte 2](#step-2).
 
 #### 1.1 - Generar la clave privada y la CSR en línea de comandos <a name="step-1.1"></a>
 
@@ -72,7 +71,7 @@ Para recuperar la clave privada generada anteriormente y siempre desde su termin
 cat my_private.key
 ```
 
-Sustituya el término `my_private` por el nombre de archivo que haya elegido anteriormente en el [etapa 1.1](#step-1.1) de esta guía.
+Sustituya el término `my_private` por el nombre de archivo que haya elegido anteriormente en la [parte 1.1](#step-1.1) de esta guía.
 
 La clave privada se mostrará en su terminal de la siguiente forma:
 
@@ -96,7 +95,7 @@ Para recuperar el CSR generado anteriormente y siempre desde su terminal, ejecut
 cat your_file_name.csr
 ```
 
-Sustituya el término `your_file_name` por el nombre de archivo que haya elegido anteriormente en el [etapa 1.1](#step-1.1) de esta guía.
+Sustituya el término `your_file_name` por el nombre de archivo que haya elegido anteriormente en la [parte 1.1](#step-1.1) de esta guía.
 
 El CSR se mostrará en su terminal con el siguiente formato:
 
@@ -116,89 +115,91 @@ Guarde este archivo y guárdelo cuidadosamente para el resto de esta guía si su
 >
 > El archivo que contiene la clave privada y el archivo que contiene la CSR están vinculados y no son intercambiables. Si ha generado varias claves privadas o varios CSR, asegúrese de no mezclar las distintas claves privadas con los distintos CSR.
 
-### Etapa 2 - Contratar el certificado SSL con su proveedor SSL <a name="step-2"></a>
+### 2 - Contratar el certificado SSL con su proveedor SSL <a name="step-2"></a>
 
 > [!primary]
 >
-> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL. En ese caso, vaya directamente al [etapa 3](#step-3).
+> Este etapa es opcional si ya ha generado y recuperado el certificado SSL de su proveedor SSL. En ese caso, vaya directamente a la [parte 3](#step-3).
 
-Contrate el certificado SSL a su proveedor SSL. Si este último lo necesita, puede enviarle el contenido de la CSR generada en el [etapa 1](#step-1) de esta guía. Si le pide además la clave privada generada en el [etapa 1](#step-1), transmítala también.
+Contrate el certificado SSL a su proveedor SSL. Si este último lo necesita, puede enviarle el contenido de la CSR generada en la [parte 1](#step-1) de esta guía. Si le pide además la clave privada generada en la [parte 1](#step-1), transmítala también.
 
 Después de su pedido, el proveedor de certificado SSL debe proporcionarle 3 archivos:
 
-- el archivo `certificate.crt`;
-- el archivo `private.key`;
-- el archivo `ca_bundle.crt`.
+- El archivo `certificate.crt`.
+- El archivo `private.key`.
+- El archivo `ca_bundle.crt`.
 
-El contenido de cada uno de sus archivos será necesario para realizar el [etapa 3](#step-3) de esta guía.
+El contenido de cada uno de sus archivos será necesario para realizar la [parte 3](#step-3) de esta guía.
 
 <a name="3files"></a>
 
 > [!warning]
 >
-> Algunos proveedores SSL entregan el contenido de los ficheros `certificate.crt` y `ca_bundle.crt` en un solo fichero. Deberá separar el contenido de este archivo para poder reformar los archivos `certificate.crt` y `ca_bundle.crt`. Antes de realizar el [etapa 3](#step-3) de esta guía.
+> Algunos proveedores SSL entregan el contenido de los ficheros `certificate.crt` y `ca_bundle.crt` en un solo fichero. Deberá separar el contenido de este archivo para poder reformar los archivos `certificate.crt` y `ca_bundle.crt`. Antes de realizar la [parte 3](#step-3) de esta guía.
 >
-> Otros proveedores SSL entregan el fichero `ca_bundle.crt` en varias partes/ficheros. Deberá concatenar los contenidos de estos archivos para poder reformar un único archivo `ca_bundle.crt` y así seguir el [etapa 3](#step-3) de esta guía.
+> Otros proveedores SSL entregan el fichero `ca_bundle.crt` en varias partes/ficheros. Deberá concatenar los contenidos de estos archivos para poder reformar un único archivo `ca_bundle.crt` y así seguir la [parte 3](#step-3) de esta guía.
 >
 > Si esta situación le afecta y tiene dificultades para realizar estas operaciones, póngase en contacto con su proveedor SSL. Por favor, indique que todo el contenido que le ha entregado debe repartirse únicamente en 3 ficheros (`certificate.crt`, `ca_bundle.crt` y `private.key`) para que pueda proceder a la instalación del certificado SSL.
 
-### Etapa 3 - Instalar el certificado SSL personalizado en su alojamiento web <a name="step-3"></a>
+### 3 - Instalar el certificado SSL personalizado en su alojamiento web <a name="step-3"></a>
 
 Si empieza a leer esta guía en este etapa porque ya tiene un certificado SSL externo contratado a un proveedor SSL, compruebe que solo dispone de los 3 archivos siguientes: `certificate.crt`, `private.key` y `ca_bundle.crt`. En caso contrario, consulte la información [arriba](#3files).
 
 **Antes de finalizar la instalación del certificado SSL en su alojamiento web**, compruebe que **todos los dominios y/o subdominios** afectados por su certificado SSL:
 
 - apuntan a la dirección IP de su alojamiento web.
-- están declarados como multisitio en su alojamiento web.
+- estén declarados en uno de los sitios web de su alojamiento web.
+- no disponen ya de un certificado SSL activo.
 
-> [!primary]
->
-> **Información sobre la migración a la nueva interfaz de gestión de certificados SSL:**
->
-> El resto de esta guía se dirige a los clientes cuyos servicios de alojamiento web aún no hayan migrado a la nueva interfaz de gestión de certificados SSL.
-> Para consultar si se ha realizado la migración, conéctese al área de cliente de OVHcloud, y compruebe si la pestaña `Certificados SSL` está presente.
-> Si la pestaña `Certificados SSL` está presente, su servicio ya ha migrado a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_management) para gestionar su certificado SSL.
->
-> Por razones técnicas, todos los servicios de alojamiento web de todos nuestros clientes no pueden migrarse de una sola vez. Esta migración se realiza de forma automática, a lo largo de varias semanas, sin que afecte al funcionamiento de los servicios de alojamiento web y sin que usted tenga que realizar ninguna intervención o acción.
->
-> A largo plazo, todos los servicios de alojamiento web funcionarán con la nueva interfaz de gestión de certificados SSL.
+Para más información, consulte nuestras guías:
 
-Compruebe también lo siguiente:
-
-- La casilla `SSL` no debe estar marcada al añadir en multisitio un dominio o subdominio al que se refiera su certificado SSL externo.
-- El estado `Por generar` o `Activado` no debe estar ya presente en todos los dominios o subdominios a los que se refiera su certificado SSL externo.
-
-Para más información, consulte nuestras guías "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" y "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+- [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+- [Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Web hosting - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), parte **Desactivar un certificado SSL en un alojamiento web**.
 
 Una vez que haya cumplido todos estos requisitos, ya puede finalizar la instalación del certificado SSL personalizado en su alojamiento web.
 
-Para ello, lleve a cabo las siguientes acciones:
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. A continuación, siga en la pestaña `Información general`{.action}.
-6. Acceda al recuadro `Configuración`.
-7. A la derecha de la mención `Certificado SSL`, haga clic en el botón `...`{.action} y luego en `Contratar un certificado SSL`{.action}.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
-
-En la nueva ventana, seleccione `Importación de un certificado SSL`{.action} de la lista de opciones y haga clic en `Siguiente`{.action}.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-custom.png){.thumbnail}
-
-Se abrirá la siguiente ventana con 3 formularios para completar:
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom-empty.png){.thumbnail}
-
-- `Copiar el contenido de su certificado (solo RSA)`{.action}: introduzca el contenido del archivo **certificate.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes). El cifrado RSA corresponde al cifrado estándar de los certificados SSL.
-- `Copiar el contenido de su clave privada (no cifrada)`{.action}: introduzca el contenido del archivo **private.key** emitido por su proveedor SSL, incluidos los términos `-----BEGIN RSA PRIVATE KEY-----` y `-----END RSA PRIVATE KEY-----` (o sus equivalentes). La mención *no cifrada* significa que la clave privada no debe estar protegida con una contraseña o una contraseña. En caso contrario, la instalación del certificado no se realizará correctamente.
-- `Copiar el contenido de su cadena de certificados`{.action}: introduzca el contenido del archivo **ca_bundle.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes).
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom.png){.thumbnail}
-
-Una vez que haya completado los 3 formularios, haga clic en `Aceptar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca la pestaña, haga clic en el botón `Importación de su propio certificado SSL`{.action}.
+>>
+>> ![SSL personalizado](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la siguiente ventana se muestra un formulario con 3 campos para completar:
+>>
+>> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window.png){.thumbnail}
+>>
+>> - `Copiar el contenido de su certificado (solo RSA)`{.action}: introduzca el contenido del archivo **certificate.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes). El cifrado RSA corresponde al cifrado estándar de los certificados SSL.
+>> - `Copiar el contenido de su clave privada (no cifrada)`{.action}: introduzca el contenido del archivo **private.key** emitido por su proveedor SSL, incluidos los términos `-----BEGIN RSA PRIVATE KEY-----` y `-----END RSA PRIVATE KEY-----` (o sus equivalentes). La mención *no cifrada* significa que la clave privada no debe estar protegida con una contraseña o una contraseña. En caso contrario, la instalación del certificado no se realizará correctamente.
+>> - `Copiar el contenido de su cadena de certificados`{.action}: introduzca el contenido del archivo **ca_bundle.crt** emitido por su proveedor SSL, incluidos los términos `-----BEGIN CERTIFICATE-----` y `-----END CERTIFICATE-----` (o sus equivalentes).
+>>
+>> ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate-window-completed.png){.thumbnail}
+>>
+>> Una vez que haya completado los 3 formularios, haga clic en `Aceptar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
 
 Si el proveedor SSL ha generado el certificado SSL correctamente y se cumplen los requisitos, aparecerá un mensaje indicándole que la activación del certificado SSL en su alojamiento web está en curso.
 
@@ -207,24 +208,38 @@ Si el proveedor SSL ha generado el certificado SSL correctamente y se cumplen lo
 > Si encuentra el error `error check SAN from certificate`, se debe a al menos una de las dos situaciones siguientes:
 >
 > - al menos un dominio o subdominio declarado en su certificado SSL no apunta a la dirección IP de su alojamiento web;
-> - al menos un dominio o subdominio declarado en su certificado SSL no está declarado en la pestaña `Multisitio` de su alojamiento web.
+> - al menos un dominio o subdominio declarado en su certificado SSL no está asociado a ninguno de los sitios web de su alojamiento web.
 >
 > Consulte nuestras guías "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" y "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" para resolver esta situación.
 
 La instalación puede tardar varios minutos.
 
-Para comprobar que la instalación se ha completado, lleve a cabo los siguientes pasos:
+Para comprobar que la instalación se ha completado, haga clic en las fichas siguientes para ver cada uno de los **4** pasos:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. A continuación, siga en la pestaña `Información general`{.action}.
-6. Acceda al recuadro `Configuración`.
-
-Si todo ha terminado, debe encontrar un valor equivalente a este que aparece debajo de la mención `Certificado SSL`: `Sí - CUSTOM - CUSTOM`.
-
-![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-custom-enable.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Cuando aparezca el contenido de la pestaña, compruebe que cada dominio y/o subdominio correspondiente figura en la tabla con el tipo de certificado SSL `Custom`.
+>>
+>> ![Tabla de gestión de certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/tab-custom.png){.thumbnail}
 
 Su certificado SSL personalizado ya está instalado y activo. Ya puede utilizarlo con su sitio web pasando, por ejemplo, su [sitio web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 

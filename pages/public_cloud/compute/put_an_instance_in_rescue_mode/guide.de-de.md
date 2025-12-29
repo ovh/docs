@@ -43,7 +43,7 @@ Nach dem Neustart Ihrer Instanz im Rescue-Modus zeigt ein Hinweisfeld die verfü
 
 Ihr temporäres **Passwort für den Rescue-Modus** wird nur in der VNC-Konsole angezeigt. Klicken Sie auf Ihre Instanz in der Tabelle und anschließend auf `VNC-Konsole`{.action}, um es abzurufen.
 
-<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Schritt 2: Auf Ihre Daten zugreifen
 

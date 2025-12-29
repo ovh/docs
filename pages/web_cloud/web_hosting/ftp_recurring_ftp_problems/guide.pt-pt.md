@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros recorrentes durante a utilização de um programa FTP"
 excerpt: "Encontre aqui as anomalias mais frequentes associadas ao seu software FTP"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Objetivo
@@ -59,11 +59,28 @@ Se não conseguir autenticar-se, altere a sua palavra-passe FTP de acordo com as
 
 A falta de espaço no seu alojamento partilhado pode provocar disfunções no seu site quando o tenta alterar ou atualizar.
 
-Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
+Para verificar o espaço de armazenamento restante no alojamento, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
-A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
-
-![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> No marco **Informações gerais**, encontrará **Espaço de disco**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> O espaço de armazenamento utilizado aparece abaixo desta menção.
 
 ### Não consigo transferir os meus ficheiros para o servidor FTP.
 

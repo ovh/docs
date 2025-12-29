@@ -1,92 +1,179 @@
 ---
-title: 'Email Pro - Configure su cuenta de correo electrónico en Thunderbird para Windows'
-excerpt: 'Cómo configurar una cuenta Email Pro en Thunderbird para Windows'
-updated: 2025-04-28
+title: 'Email Pro - Configurar su dirección de correo electrónico en Thunderbird para Windows'
+excerpt: 'Descubra cómo configurar su dirección de correo electrónico Email Pro en Thunderbird para Windows'
+updated: 2025-09-19
 ---
+
+<style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
+</style>
 
 ## Objetivo
 
-Es posible configurar sus cuentas Email Pro en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos. Thunderbird es un cliente de correo libre y gratuito.
+Las cuentas de Email Pro se pueden configurar en diferentes clientes de correo electrónico compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
 
-**Esta guía explica cómo configurar una cuenta Email Pro en Thunderbird de Windows.**
-
-> [!warning]
->
-> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
-> 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+**Descubra cómo configurar su dirección de correo electrónico de Email Pro en Thunderbird para Windows.**
 
 ## Requisitos
 
-- Disponer de una cuenta [Email Pro](/links/web/email-pro).
-- Tener Thunderbird instalado en su Windows.
-- Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
- 
+- Debe tener una dirección de correo electrónico [Email Pro](/links/web/email-pro).
+- Debe tener el software Thunderbird instalado en su dispositivo con Windows.
+- Debe tener las credenciales para la dirección de correo electrónico que desea configurar.
+
+/// details | Información sobre la gestión y configuración de los servicios de OVHcloud
+
+Esta guía le muestra cómo utilizar soluciones de OVHcloud con herramientas externas y los cambios que debe realizar en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
+
+Si tiene dificultades para realizar estas operaciones, le recomendamos que contacte a un [proveedor de servicios especializado](/links/partner) y/o que discuta con nuestra comunidad. OVHcloud no puede proporcionarle asistencia técnica sobre el uso de herramientas externas. Más información en la sección [Más información](#go-further) de esta guía.
+
+///
+
 ## Procedimiento
+
+> [!warning]
+>
+> En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Debe reemplazar el "?" con el número que designa el servidor de su servicio de Email Pro.
+>
+> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
+> 1. Vaya a la sección `Web Cloud`{.action}.
+> 1. Haga clic en `Email Pro`{.action}.
+> 1. Seleccione la plataforma correspondiente.
+> 1. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
+
+### Agregar la cuenta
+
+- **Al iniciar la aplicación por primera vez**: Asistente de configuración se muestra y le pide que ingrese su dirección de correo electrónico.
+
+- **Si una cuenta ya está configurada en la aplicación**:
+
+    1. Haga clic en el menú `☰`{.action} en la barra horizontal superior.
+    2. Haga clic en `Nueva cuenta`{.action}.
+    3. Haga clic en `Dirección de correo electrónico`{.action}.
+
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
+
+Siga los pasos de configuración haciendo clic sucesivamente en las **5** pestañas a continuación:
+
+> [!tabs]
+> **Paso 1**
+>>
+>> En la ventana que aparece, ingrese las siguientes dos piezas de información:
+>>
+>>  - Su nombre completo (nombre de visualización).
+>>  - La dirección de correo electrónico que desea configurar.
+>>
+>> Haga clic en `Continuar`{.action} para completar la configuración.
+>>
+>> ![thunderbird](images/configuration-thunderbird-emp-02.png){.thumbnail .w-600}
+>>
+> **Paso 2**
+>>
+>> Cuando Thunderbird detecta un nombre de dominio de OVHcloud, se propone una configuración automática relacionada con la oferta de MX Plan. Haga clic en `MODIFICAR LA CONFIGURACIÓN`{.action}.
+>>
+>> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
+>>
+> **Paso 3**
+>>
+>> Configuración del servidor de recepción:
+>>
+>>  - **Protocolo**: IMAP
+>>  - **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+>>  - **Puerto**: 993
+>>  - **Seguridad de la conexión**: SSL/TLS
+>>  - **Método de autenticación**: Contraseña normal
+>>  - **Nombre de usuario**: Su dirección de correo electrónico completa
+>>
+>> ![thunderbird](images/configuration-thunderbird-emp-04.png){.thumbnail .w-600}
+>>
+> **Paso 4**
+>>
+>> Configuración del servidor de envío:
+>>
+>>  - **Protocolo**: SMTP
+>>  - **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+>>  - **Puerto**: 587
+>>  - **Seguridad de la conexión**: STARTTLS
+>>  - **Método de autenticación**: Contraseña normal
+>>  - **Nombre de usuario**: Su dirección de correo electrónico completa
+>> 
+>> 1. Haga clic en `Probar`{.action} para verificar la configuración ingresada.
+>> 2. Haga clic en `Continuar`{.action} para validar esta configuración.
+>>
+>> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
+>>
+> **Paso 5**
+>>
+>> Ingrese la contraseña asociada con la dirección de correo electrónico, luego haga clic en `Continuar`{.action} para finalizar la configuración.
+>>
+>> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
+>>
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
+> **Configuración POP**
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros de **paso 3** con los siguientes:
+>
+> Configuración del servidor de recepción:
+>
+> - **Protocolo**: POP3
+> - **Nombre de host**: pro?.mail.ovh.net (reemplace el "?" con el número de su servidor)
+> - **Puerto**: 995
+> - **Seguridad de la conexión**: SSL/TLS
+> - **Método de autenticación**: Contraseña normal
+> - **Nombre de usuario**: Su dirección de correo electrónico completa
 
-### Añadir la cuenta
+### Utilizar la dirección de correo electrónico
 
-- **Si es la primera vez que usa la aplicación**, aparecerá un asistente de configuración solicitándole su dirección de correo electrónico.
+Una vez que su dirección de correo electrónico esté configurada, puede comenzar a utilizarla. Ahora puede enviar y recibir correos electrónicos.
 
-- **Si ya ha configurado** una cuenta: haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla, luego en `Nuevo`{.action} y luego en `Obtener una nueva cuenta de correo..`{.action}.
+OVHcloud también ofrece una aplicación web que le permite acceder a su dirección de correo electrónico desde un navegador de Internet. Para acceder al Webmail de OVHcloud, haga clic en [este enlace](/links/web/email). Puede iniciar sesión utilizando las credenciales de su dirección de correo electrónico.
 
-| | |
-|---|---|
-|![Thunderbird](images/thunderbird-win-emailpro01.png){.thumbnail}|En la nueva ventana, introduzca los siguientes 3 datos: <br>- Su nombre completo (Nombre mostrado)<br>- Dirección de correo electrónico <br>- Contraseña.|
-|Haga clic en `Configurar manualmente...`{.action} para introducir la configuración del servidor **ENTRANT**: <br>- Protocolo **IMAP** <br>- Servidor **pro?.mail.ovh.net** (sustituya "?" por el número del servidor)<br>- Puerto **993** <br>- SSL **SSL/TLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**|![Thunderbird](images/thunderbird-win-emailpro02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-win-emailpro03.png){.thumbnail}|Introduzca la configuración del servidor **SALIENTE**: <br>- Protocolo **SMTP** <br>- Servidor **pro?.mail.ovh.net** (sustituya "?" por el número del servidor)<br>- Puerto **587** <br>- SSL **STARTTLS** <br>- Autenticación **Contraseña normal** <br>- Identificador de **su dirección de correo electrónico completa**<br><br>Para finalizar la configuración, haga clic en `Finalizado.`{.action}|
+### Recuperar una copia de seguridad de su dirección de correo electrónico
 
-En una configuración en **POP**, los valores son los siguientes:
-
-|Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
-|---|---|---|---|
-|Entrante|pro?.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
-|Saliente|pro?.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
-
-### Utilizar la dirección de correo
-
-Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
-
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
-
-### Obtener una copia de seguridad de su dirección de correo
-
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exportar).
+Si debe realizar una operación que pueda resultar en la pérdida de datos de su cuenta de correo electrónico, le recomendamos que cree una copia de seguridad de la cuenta de correo electrónico correspondiente antes de realizar la operación. Para hacer esto, consulte el párrafo "**Exportar**" en la parte "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar los parámetros existentes
 
-> [!primary]
->
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
->
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+Si su cuenta de correo electrónico ya está configurada y necesita acceder a los parámetros de la cuenta para modificarlos:
 
-Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
+1. Haga clic en el menú `☰`{.action} en la barra horizontal superior.
+2. Haga clic en `Configuración de cuentas`{.action}.
 
-- Vaya a `Herramientas`{.action} desde la barra de menú situada en la parte superior de su pantalla.
-- Haga clic en `Configuración de las cuentas`{.action}.
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
 
-![Thunderbird](images/thunderbird-win-emailpro04.png){.thumbnail}
+- Para modificar los parámetros relacionados con la **recepción** de sus correos electrónicos, haga clic en `Configuración del servidor`{.action} en la columna izquierda debajo de su dirección de correo electrónico.
 
-- Para cambiar los parámetros de **recepción** de los mensajes de correo, haga clic en `Configuración del servidor`{.action} en la columna izquierda, bajo su dirección de correo electrónico.
+![thunderbird](images/configuration-thunderbird-emp-win-08.png){.thumbnail .w-600}
 
-![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
+- Para modificar los parámetros relacionados con el **envío** de sus correos electrónicos, haga clic en `Servidor de envío (SMTP)`{.action} en la parte inferior de la columna izquierda.
+- Haga clic en la dirección de correo electrónico correspondiente en la lista, luego haga clic en `Modificar`{.action}.
 
-- Para cambiar la configuración **del envío** de mensajes de correo, haga clic en `Servidor de salida (SMTP)`{.action} situado en la columna izquierda.
-- Haga clic en la dirección de correo electrónico correspondiente en la lista y, seguidamente, en `Modificar`{.action}.
+![thunderbird](images/configuration-thunderbird-emp-win-09.png){.thumbnail .w-600}
 
-![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
-
-## Más información
+## Más información <a name="go-further"></a>
 
 > [!primary]
 >
-> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:win10:tb115).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico en el cliente de correo electrónico Thunderbird, visite el [centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
+
+[Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

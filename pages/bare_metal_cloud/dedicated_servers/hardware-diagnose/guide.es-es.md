@@ -1,15 +1,10 @@
 ---
 title: "Diagnosticar fallos de hardware en un servidor dedicado"
 excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
-updated: 2025-09-05
+updated: 2025-10-16
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
-
 
 En algún momento de la vida de su servidor, puede experimentar una avería debido a un problema de hardware. Cuando el servidor se inicia en modo de rescate de OVHcloud, dispone de varias herramientas de diagnóstico que permiten identificar los componentes de hardware defectuosos.
 
@@ -80,13 +75,7 @@ Para comprobar el sistema de archivos, ejecute el siguiente comando:
 fsck -fy
 ```
 
-Para una prueba de reproducción, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores.
-
-```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
-```
-
-Para una prueba de escritura, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores
+Para una prueba de lectura, ejecute el siguiente comando. Sustituya `sd(x)` por sus propios valores
 
 ```bash
 hdparm -t /dev/sd(x)

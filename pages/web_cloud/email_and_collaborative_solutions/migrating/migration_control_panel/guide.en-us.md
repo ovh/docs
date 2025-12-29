@@ -130,9 +130,9 @@ In the `Email accounts`{.action} tab for your Exchange platform, click the `...`
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Migrate** the MX Plan account to your new platform account using our [OMM](https://omm.ovh.net/) (OVH Mail Migrator) tool.
+3\. **Migrate** the MX Plan account to your new platform account using our [OMM](/links/web/omm) (OVHcloud Mail Migrator) tool.
 
-For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+For more information on OMM, please read our guide on [Migrating email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 

@@ -12,7 +12,6 @@ Public cloud database engines are managed services, which means that they are no
 >
 > Advanced configuration is available for the following Public Cloud Databases engines :
 >
-> - Cassandra
 > - MySQL
 > - PostgreSQL
 > - Valkey
@@ -85,11 +84,6 @@ From the resulting list, select and copy the service identifier corresponding to
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
->> >
 > MySQL
 >> > [!api]
 >> >
@@ -115,11 +109,6 @@ From the resulting list, select and copy the cluster ID, also known as clusterId
 Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >
@@ -143,11 +132,6 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >
@@ -171,11 +155,6 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 Open the following API call and paste the corresponding inputs (serviceName, clusterId)
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >

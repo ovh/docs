@@ -4,10 +4,6 @@ excerpt: Come sbloccare un indirizzo IP bloccato per SPAM
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Per ogni indirizzo IP disponibile sui prodotti e servizi OVHcloud, in qualità di provider di accesso a Internet, lo registriamo e lo prenotamo presso organizzazioni come [RIPE](https://www.ripe.net/) o [ARIN](https://www.arin.net/). In questo caso, sembriamo il contatto *abusivo* della proprietà intellettuale in caso di controversia nel database *WHOIS*.
@@ -180,7 +176,7 @@ Ecco un esempio di risultato:
 
 > [!alert]
 > IMPORTANTE!
-Non sbloccare in alcun caso l'IP senza aver sospeso l'invio delle email dal tuo server e svuotare la coda di attesa delle email. In caso contrario verrai bloccato per una seconda volta e per una durata più lunga. 
+> Non sbloccare in alcun caso l'IP senza aver sospeso l'invio delle email dal tuo server e svuotare la coda di attesa delle email. In caso contrario verrai bloccato per una seconda volta e per una durata più lunga. 
 >
 
 Per sbloccare il tuo indirizzo IP, utilizza questa chiamata:
@@ -216,4 +212,4 @@ In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete ver
 
 ## Per saperne di più
   
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

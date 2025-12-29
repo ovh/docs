@@ -1,7 +1,7 @@
 ---
 title: Analytics - Automated Backups
 excerpt: Discover the automated backup methods for each engine
-updated: 2025-02-03
+updated: 2025-11-27
 ---
 
 ## Objective
@@ -35,14 +35,17 @@ Backups are first prepared on-site and then replicated to another region. The on
 
 Analytics services provide a default configuration for remote backups based on the region where the service is running:
 
-| Service location            | Off-site default backup location |
-|-----------------------------|----------------------------------|
-| GRA (Gravelines, France)    | SBG (Strasbourg, France)         |
-| BHS (Beauharnois, Canada)   | SBG (Strasbourg, France)         |
-| DE (Frankfurt, Germany)     | GRA (Gravelines, France)         |
-| SBG (Strasbourg, France)    | GRA (Gravelines, France)         |
-| UK (London, United Kingdom) | GRA (Gravelines, France)         |
-| WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
+| Service location | Off-site default backup location |
+|---|---|
+| BHS (Beauharnois, Canada) | SBG (Strasbourg, France) |
+| DE (Frankfurt, Germany) | GRA (Gravelines, France) |
+| EU-WEST-PAR (Paris, France) | GRA (Gravelines, France) |
+| EU-SOUTH-MIL (Milan, Italia) | GRA (Gravelines, France) |
+| GRA (Gravelines, France) | SBG (Strasbourg, France) |
+| SBG (Strasbourg, France) | GRA (Gravelines, France) |
+| SGP (Singapore, Singapore) | BHS (Beauharnois, Canada) |
+| UK (London, United Kingdom) | GRA (Gravelines, France) |
+| WAW (Warsaw, Poland) | GRA (Gravelines, France) |
 
 ### Custom settings
 

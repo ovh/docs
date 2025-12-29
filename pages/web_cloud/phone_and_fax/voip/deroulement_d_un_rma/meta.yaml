@@ -1,4 +1,5 @@
 disable_languages:
 - fr-ca
 id: df95767d-5097-46ac-b478-5ca2eed8a4e2
-full_slug: voip-rma-details
+full_slug: voip-internet-acess-rma-details
+reference_category: web-cloud-phone-and-fax-voip-configuration-administration

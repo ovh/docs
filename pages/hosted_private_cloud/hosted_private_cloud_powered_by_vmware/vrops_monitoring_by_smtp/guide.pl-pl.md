@@ -54,7 +54,7 @@ The page shows a summary of all your Outbound Settings. Click on the `ADD`{.acti
 
 ![Add Button](images/vrops_add_button.png)
 
-In the `Plugin type` option, select `Standard Email Plugin`{. action}.
+In the `Plugin type` option, select `Standard Email Plugin`{.action}.
 A series of options will appear, just fill in the fields.
 
 | OPTION | DESCRIPTION |

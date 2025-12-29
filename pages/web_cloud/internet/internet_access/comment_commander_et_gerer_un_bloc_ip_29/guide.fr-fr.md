@@ -1,7 +1,7 @@
 ---
 title: 'Gérer et configurer un bloc IP /29'
 excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre box OVHcloud'
-updated: 2025-04-28
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ## En pratique
 
-### Étape 1 : retrouver les IP associées à votre accès
+### Étape 1 : retrouver les IP associées à votre accès <a name="trouver-ip-associees"></a>
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
@@ -37,7 +37,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
-- l'adresse IP initiale de votre accès à Internet associée à un bloc /32;
+- l'adresse IP initiale de votre accès à Internet suivie du masque /32;
 - une adresse IP associée à un bloc /29.
 
 Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant sur le bouton `Commander`{.action} puis en suivant les étapes.
@@ -46,7 +46,7 @@ Si vous ne possédez pas de bloc IP /29, vous pouvez en commander un en cliquant
 
 Collectez à présent les adresses IP qui serviront lors des étapes suivantes. Pour cela :
 
-- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du bloc /32;
+- **récupérez l'adresse initiale de votre accès à Internet** : elle apparaît à côté du masque /32;
 - **récupérez les huit adresses IP (dont cinq associables à vos équipements)** : aidez-vous du tableau ci-dessous pour les retrouver.
 
 |Types d'adresses|Description|Exemple|
@@ -56,13 +56,13 @@ Collectez à présent les adresses IP qui serviront lors des étapes suivantes. 
 |Adresse de passerelle (_gateway_)|Il s'agit de l'avant-dernière adresse de votre bloc IP /29. Elle n'est pas associable à l'un de vos équipements.|1.1.1.6|
 |Adresse de diffusion (_broadcast_)|Elle représente la dernière adresse de votre bloc IP /29. Celle-ci n'est pas associable à l'un de vos équipements.|1.1.1.7|
 
-Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à côté du bloc /32) et vos huit adresses du bloc /29.
+Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à côté du masque /32) et vos huit adresses du bloc /29.
 
 ### Étape 2 : désactiver la prise en main à distance de la box
 
 > [!primary]
 >
-> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs experts) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson) ».
+> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs experts) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](#conf-tecnhicolor) ».
 >
 
 Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](/links/manager) sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
@@ -73,10 +73,7 @@ Sur la page, dans la partie « Configuration générale », assurez-vous de déc
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
-Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez :
-
-- [3.1 Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson) (**excepté pour le modèle Technicolor TG799vac**).
-- [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel).
+Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez.
 
 > [!primary]
 >
@@ -85,100 +82,100 @@ Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configu
 > Si vous le possédez, vous pouvez utiliser votre propre routeur en adaptant les éléments de la documentation à votre situation.
 >
 
-#### 3.1 Configuration sur une box Technicolor ou Thomson
+#### 3.1 Configuration sur une box Technicolor ou Thomson **excepté pour le modèle Technicolor TG799vac** <a name="conf-tecnhicolor"></a>
 
-La configuration d'un bloc IP sur une box Technicolor ou Thomson est possible de deux manières.
+La configuration d'un bloc IP sur une box Technicolor ou Thomson est possible de deux manières :
 
-##### 3.1.1 Via les API OVHcloud
-
-Cette méthode s'adresse aux utilisateurs experts uniquement. Nous ne serons pas en mesure de vous fournir une assistance.
-
-Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les deux API ci-dessous afin de configurer le bloc IP /29.
-
-> [!api]
->
-> @api {v1} /xdsl GET /xdsl/{serviceName}/modem/blocIp
-> 
-
-Permet de récupérer l'état d'activation du bloc IP /29.
-
-> [!api]
->
-> @api {v1} /xdsl POST /xdsl/{serviceName}/modem/blocIp
-> 
-
-Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVHcloud Technicolor ou Thomson compatible.
-
-Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements) ».
-
-##### 3.1.2 Via un client Telnet
-
-Afin de réaliser cette configuration, un client Telnet doit être installé sur votre ordinateur. Par défaut, celui-ci n'est pas activé sur Windows. Sur macOS ou Linux, vous disposez déjà d'une application « Terminal » permettant de réaliser la manipulation. 
-
-Pour l'activer sur Windows 10, effectuez un clic droit sur l’image en bas à gauche représentant le logo Windows et cliquez sur `Applications et fonctionnalités`{.action}. Descendez en bas de la fenêtre qui apparaît et cliquez sur `Programmes et fonctionnalités`{.action}. Sélectionnez ensuite `Activer ou désactiver des fonctionnalités Windows`{.action}, puis assurez-vous de cocher la case à côté de `Client Telnet`. Validez en cliquant sur le bouton `OK`{.action}.
-
-Si vous utilisez une version antérieure à Windows 10, vous devriez pouvoir retrouver un équivalent depuis le « Panneau de configuration ».
-
-![blocip](images/blocip-step5.png){.thumbnail}
-
-Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVHcloud (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
-
-```console
-telnet 192.168.1.254
-```
-
-Renseignez alors l'identifiant et le mot de passe d'accès à votre box. Par défaut, l'identifiant est « Administrator » et il n'y a pas de mot de passe.
-
-![blocip](images/blocip-step6.png){.thumbnail}
-
-Une fois connecté, utilisez la commande suivante pour afficher des informations sur la configuration actuelle de votre box. 
-
-```console
-ip iflist
-```
-
-Relevez les correspondances entre la colonne « Interface » et « Group » du tableau qui apparaît. Notez les interfaces correspondant à **wan** et **lan**, elles vous seront utiles par la suite. Voici un exemple de résultat que vous pourriez obtenir :
-
-|Interface|Group|
-|---|---|
-|Internet|wan|
-|LocalNetwork|lan|
-
-![blocip](images/blocip-step7.png){.thumbnail}
-
-Désactivez le serveur DHCP grâce à la commande :
-
-```console
-dhcp server config state disabled
-```
-
-Supprimez ensuite les baux DHCP en cours :
-
-```console
-dhcp server lease flush
-```
-
-Configurez la passerelle (_gateway_) du bloc IP sur l'interface **lan**.
-
-Prenez soin de remplacer « LocalNetwork » par le nom de l'interface correspondant à **lan** récupéré précédemment. Changez également l'adresse « 1.1.1.6/29 » par celle de passerelle (_gateway_) récupérée lors de [l'étape 1](./#etape-1-retrouver-les-ip-associees-a-votre-acces).
-
-```console
-ip ipadd intf=LocalNetwork addr=1.1.1.6/29
-```
-
-Désactivez le NAT sur l'interface **wan**. Ici, prenez soin de remplacer « Internet » par le nom de l'interface correspondant à **wan** récupéré précédemment.
-
-```console
-nat ifconfig intf=Internet translation=disabled
-```
-
-Sauvegardez les changements réalisés. Cette configuration restera active même après un redémarrage de votre box. 
-
-```console
-saveall
-```
-
-Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements) ».
+> [!tabs]
+> Via les API OVHcloud
+>>
+>> Cette méthode s'adresse aux utilisateurs experts uniquement. Nous ne serons pas en mesure de vous fournir une assistance.
+>>
+>> Rendez-vous sur les [API OVHcloud](/links/console) puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les deux API ci-dessous afin de configurer le bloc IP /29.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /xdsl GET /xdsl/{serviceName}/modem/blocIp
+>> > 
+>> 
+>> Permet de récupérer l'état d'activation du bloc IP /29.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /xdsl POST /xdsl/{serviceName}/modem/blocIp
+>>
+>> Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVHcloud Technicolor ou Thomson compatible.
+>>
+>> Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](#conf-IP-equipements) ».
+>>
+> Via un client Telnet
+>>
+>> Afin de réaliser cette configuration, un client Telnet doit être installé sur votre ordinateur. Par défaut, celui-ci n'est pas activé sur Windows. Sur macOS ou Linux, vous disposez déjà d'une application « Terminal » permettant de réaliser la manipulation. 
+>>
+>> Pour l'activer sur Windows 10, effectuez un clic droit sur l’image en bas à gauche représentant le logo Windows et cliquez sur `Applications et fonctionnalités`{.action}. Descendez en bas de la fenêtre qui apparaît et cliquez sur `Programmes et fonctionnalités`{.action}. Sélectionnez ensuite `Activer ou désactiver des fonctionnalités Windows`{.action}, puis assurez-vous de cocher la case à côté de `Client Telnet`. Validez en cliquant sur le bouton `OK`{.action}.
+>>
+>> Si vous utilisez une version antérieure à Windows 10, vous devriez pouvoir retrouver un équivalent depuis le « Panneau de configuration ».
+>>
+>> ![blocip](images/blocip-step5.png){.thumbnail}
+>>
+>> Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVHcloud (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
+>>
+>> ```console
+>> telnet 192.168.1.254
+>> ```
+>>
+>> Renseignez alors l'identifiant et le mot de passe d'accès à votre box. Par défaut, l'identifiant est « Administrator » et il n'y a pas de mot de passe.
+>>
+>> ![blocip](images/blocip-step6.png){.thumbnail}
+>>
+>> Une fois connecté, utilisez la commande suivante pour afficher des informations sur la configuration actuelle de votre box. 
+>>
+>> ```console
+>> ip iflist
+>> ```
+>>
+>> Relevez les correspondances entre la colonne « Interface » et « Group » du tableau qui apparaît. Notez les interfaces correspondant à **wan** et **lan**, elles vous seront utiles par la suite. Voici un exemple de résultat que vous pourriez obtenir :
+>>
+>> |Interface|Group|
+>> |---|---|
+>> |Internet|wan|
+>> |LocalNetwork|lan|
+>>
+>> ![blocip](images/blocip-step7.png){.thumbnail}
+>>
+>> Désactivez le serveur DHCP grâce à la commande :
+>>
+>> ```console
+>> dhcp server config state disabled
+>> ```
+>>
+>> Supprimez ensuite les baux DHCP en cours :
+>>
+>> ```console
+>> dhcp server lease flush
+>> ```
+>>
+>> Configurez la passerelle (_gateway_) du bloc IP sur l'interface **lan**.
+>> 
+>> Prenez soin de remplacer « LocalNetwork » par le nom de l'interface correspondant à **lan** récupéré précédemment. Changez également l'adresse « 1.1.1.6/29 » par celle de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-ip-associees).
+>>
+>> ```console
+>> ip ipadd intf=LocalNetwork addr=1.1.1.6/29
+>> ```
+>>
+>> Désactivez le NAT sur l'interface **wan**. Ici, prenez soin de remplacer « Internet » par le nom de l'interface correspondant à **wan** récupéré précédemment.
+>>
+>> ```console
+>> nat ifconfig intf=Internet translation=disabled
+>> ```
+>>
+>> Sauvegardez les changements réalisés. Cette configuration restera active même après un redémarrage de votre box. 
+>>
+>> ```console
+>> saveall
+>> ```
+>>
+>> Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](#conf-IP-equipements) ».
 
 #### 3.2 Configuration sur une box Zyxel
 
@@ -193,7 +190,7 @@ Une fois connecté à l'interface, plusieurs manipulations sont nécessaires. La
 
 |Informations|Description|
 |---|---|
-|IPv4 Address|Renseignez l'adresse de passerelle (_gateway_) récupérée lors de [l'étape 1](./#etape-1-retrouver-les-ip-associees-a-votre-acces).|
+|IPv4 Address|Renseignez l'adresse de passerelle (_gateway_) récupérée lors de [l'étape 1](#trouver-ip-associees).|
 |Subnet Mask|Indiquez l'adresse `255.255.255.248` (qui correspond au bloc /29).|
 
 Cliquez ensuite sur le bouton `Apply`{.action}.
@@ -216,7 +213,7 @@ Complétez les informations demandées en vous aidant du tableau ci-dessous :
 |Type|Sélectionnez dans le menu déroulant `Many-to-One`.|
 |Local Start IP|Indiquez `192.168.1.2`. Il s'agit de l'adresse par défaut, sauf si vous l'avez changée dans la configuration de votre box.|
 |Local End IP|Indiquez `192.168.1.254`. Il s'agit de l'adresse par défaut, sauf si vous l'avez changée dans la configuration de votre box.|
-|Global Start IP|Indiquez l'adresse IPv4 initiale que vous avez récupérée lors de [l'étape 1](./#etape-1-retrouver-les-ip-associees-a-votre-acces) (celle mentionnée avec le bloc /32).|
+|Global Start IP|Indiquez l'adresse IPv4 initiale que vous avez récupérée lors de [l'étape 1](#trouver-ip-associees) (celle mentionnée avec le masque /32).|
 |WAN Interface|Sélectionnez le nom de l'interface récupéré précédemment (mentionné en dessous de « Connected Interface »).|
 
 Cliquez ensuite sur le bouton `OK`{.action}.
@@ -239,19 +236,23 @@ Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature
 
 ![blocip](images/blocip-step14.png){.thumbnail}
 
-### Étape 4 : configurer les adresses IP sur vos équipements
+### Étape 4 : configurer les adresses IP sur vos équipements <a name="conf-IP-equipements"></a>
 
 Votre bloc IP /29 étant à présent paramétré sur votre box OVHcloud, vous pouvez associer manuellement vos cinq adresses IP à vos équipements. À noter que le DHCP de votre box continue de fonctionner normalement, attribuant une adresse IP locale aux équipements reliés.
 
 Pour réaliser une configuration sur l'un de vos équipements, vous aurez besoin des trois informations suivantes :
 
-- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](./#etape-1-retrouver-les-ip-associees-a-votre-acces);
-- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](./#etape-1-retrouver-les-ip-associees-a-votre-acces);
+- **l'une des cinq adresses IP associables de votre bloc /29** : vous les avez récupérées lors de [l'étape 1](#trouver-ip-associees);
+- **l'adresse de passerelle de votre bloc /29** : vous l'avez récupérée lors de [l'étape 1](#trouver-ip-associees);
 - **le masque de sous-réseau** : vous l'avez configuré lors de l'étape précédente ; il doit correspondre à `255.255.255.248`.
 
 Une fois cette opération effectuée depuis un ordinateur, vous aurez la possibilité de tester l'attribution de nouvelles adresses IP en réalisant un test de débit depuis notre site <http://ovh.net/>. À la fin, celles-ci apparaîtront à côté de **IPv4** à gauche.
 
 ![blocip](images/blocip-step15.png){.thumbnail}
+
+### Résiliation du bloc IP /29
+
+Si vous souhaitez résilier votre bloc IP /29, suivez le cheminement décrit dans [l'étape 1](#trouver-ip-associees) puis cliquez sur l'icône `corbeille`{.action} à droite de votre bloc IP /29.
 
 ## Aller plus loin
 

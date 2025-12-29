@@ -35,7 +35,6 @@ Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.ac
 ![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
-
 > [!primary]
 >
 Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.

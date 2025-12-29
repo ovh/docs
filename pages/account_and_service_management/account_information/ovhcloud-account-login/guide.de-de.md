@@ -4,11 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verb
 updated: 2025-04-28
 ---
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/OiIwy54)
-
 ## Ziel
 
 Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencenter.

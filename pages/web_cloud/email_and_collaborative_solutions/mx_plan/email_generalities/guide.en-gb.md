@@ -21,11 +21,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participate in our survey and help us improve this guide!<br>
-> Feel free to share your thoughts and ideas with us.<br>
-> [Go to the survey.](https://s.elq.fr/ovhext/EsCB5sR)
-
 ## Objective
 
 If you have just purchased an MX Plan solution, this means you have email addresses that you can use to send and receive messages from a device of your choice.

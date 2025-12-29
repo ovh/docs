@@ -102,7 +102,7 @@ Si la etiqueta es roja:
     - Haga clic en la etiqueta roja `MX`, `SRV`, `SPF` y `DKIM` para ver los cambios que debe realizar. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel de administración del dominio.
     - En el marco de una etiqueta roja `CNAME`, consulte nuestra guía explicando cómo [crear un registro CNAME al añadir un dominio asociado](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

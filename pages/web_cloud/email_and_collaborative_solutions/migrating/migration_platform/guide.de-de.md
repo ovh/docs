@@ -79,11 +79,11 @@ Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer betreffenden Plattform auf `
 > - Externe Kontakte
 > - [Fußzeile](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
-Migrieren Sie den Quell-E-Mail-Account mithilfe unseres Tools [OMM](https://omm.ovh.net/) (OVH Mail Migrator) auf das Konto Ihrer neuen Plattform.
+Migrieren Sie den Quell-E-Mail-Account mithilfe unseres Tools [OMM](/links/web/omm) (OVHcloud Mail Migrator) auf das Konto Ihrer neuen Plattform.
 
-> Wenn Sie mehrere E-Mail-Accounts migrieren müssen, empfehlen wir Ihnen, den Modus [Projekt](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) über [OMM](https://omm.ovh.net/Project/Create) zu verwenden, damit Sie eine Tabelle im CSV-Format importieren können, die die Informationen der zu migrierenden E-Mail-Accounts enthält.
+> Wenn Sie mehrere E-Mail-Accounts migrieren müssen, empfehlen wir Ihnen, den Modus [Projekt](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) über [OMM](/links/web/omm) zu verwenden, damit Sie eine Tabelle im CSV-Format importieren können, die die Informationen der zu migrierenden E-Mail-Accounts enthält.
 
-Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
+Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 
@@ -119,7 +119,7 @@ Wenn Sie einen der migrierten Accounts auf einem lokalen E-Mail-Client eingerich
 
 > [!primary]
 >
-> Sie können auch externe E-Mail-Adressen zu OVHcloud migrieren, indem Sie unseren [OVH Mail Migrator (OMM)](https://omm.ovh.net/) verwenden. Hierzu benötigen Sie die Login-Daten (Benutzer, Passwort, Server) der Quell- und Ziel-Accounts.
+> Sie können auch externe E-Mail-Adressen zu OVHcloud migrieren, indem Sie unseren [OVHcloud Mail Migrator (OMM)](/links/web/omm) verwenden. Hierzu benötigen Sie die Login-Daten (Benutzer, Passwort, Server) der Quell- und Ziel-Accounts.
 >
 
 ## Weiterführende Informationen

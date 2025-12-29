@@ -176,7 +176,7 @@ Here is an example result:
 
 > [!alert]
 > IMPORTANT!
-Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
+> Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
 >
 
 To unblock your IP, use the following call:
@@ -279,4 +279,4 @@ Once the information is sent, our support team will communicate with Vade Secure
 
 ## Go further
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

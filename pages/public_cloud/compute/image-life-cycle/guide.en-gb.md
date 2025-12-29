@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud & VPS - Image and OS life cycle and end of life/support announcements'
 excerpt: Discover the lifecycle and end-of-life/end-of-support announcements for distributions and softwares for your VPS or Public Cloud instance
-updated: 2025-02-11
+updated: 2025-11-12
 ---
 
 ## Objective
@@ -70,7 +70,7 @@ OVHcloud follows the official life cycle of each distribution. All sources of in
 | Version | Code name | Distribution Release | End of Standard Support | End of life |
 | ------- | ------- | ------- | ------- | ------- |
 | 14 | [Forky](https://wiki.debian.org/DebianForky) | | | |
-| 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | | | |
+| 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | August 2025 | August 2028 | June 2030 |
 | 12 | [Bookworm](https://wiki.debian.org/DebianBookworm) | June 2023 | June 2026 | June 2028 |
 | 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | August 2021 | August 2024 | August 2026 |
 | 10 | [Buster](https://wiki.debian.org/DebianBuster) | July 2019 | September 2022 | June 2024 |

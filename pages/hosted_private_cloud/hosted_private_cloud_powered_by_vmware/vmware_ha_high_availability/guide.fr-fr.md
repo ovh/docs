@@ -102,11 +102,11 @@ Le contrôle d'admission impose des contraintes sur l'utilisation des ressources
 
 La base du contrôle d'admission vSphere HA est le nombre de défaillances d'hôte que le cluster est autorisé à tolérer et qui continue à garantir le basculement. La capacité de basculement des hôtes peut être définie de trois manières différentes :
 
-- [Pourcentage de ressources du cluster](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Pourcentage de ressources du cluster](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Stratégie d'emplacement](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Stratégie d'emplacement](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [Hôtes de basculement dédiés](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Hôtes de basculement dédiés](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Banques de données de signal de pulsation
 
@@ -116,7 +116,7 @@ Lorsque l'hôte principal d'un cluster HA ne peut pas communiquer avec un hôte 
 
 Plusieurs paramètres de configuration avancée peuvent être utilisés dans votre cluster.
 
-Vous pouvez retrouver des paramètres sur [cette page](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Vous pouvez retrouver des paramètres sur [cette page](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### Règle HA
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente un CMS en mi alojamiento"
 excerpt: "Descubra cómo instalar manualmente un CMS en un alojamiento"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -114,9 +114,9 @@ Para instalar un CMS en su [plan de hosting](/links/web/hosting), es necesario r
 
 #### 1.1 - Comprobar la declaración de la "carpeta raíz"
 
-La carpeta raíz corresponde al directorio en el que se instalará el futuro CMS en el alojamiento. Le recomendamos que elija un directorio vacío para evitar conflictos con otros posibles multisitios.
+La "carpeta raíz" corresponde al directorio en el que se instalará su futuro CMS en su alojamiento. Se recomienda elegir un directorio vacío para evitar conflictos con sus otros posibles sitios web.
 
-Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para determinar la carpeta raíz que debe utilizar con su CMS.
+Consulte nuestra documentación que describe [cómo crear un sitio web en su alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir el directorio raíz a utilizar con su CMS.
 
 > [!primary]
 >

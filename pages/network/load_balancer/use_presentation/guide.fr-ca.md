@@ -1,7 +1,7 @@
 ---
 title: Présentation du service OVHcloud Load Balancer
 excerpt: Découvrez la solution OVHcloud Load Balancer pour distribuer et sécuriser votre trafic
-updated: 2025-09-29
+updated: 2025-10-29
 ---
 
 
@@ -45,7 +45,7 @@ Le Load Balancer est constitué de trois composants principaux :
 | **Ferme** | Répartit le trafic en provenance du front-end entre les serveurs |
 | **Serveur** | Taite le trafic applicatif entrant et sortant |
 
-![Schéma général](images/diag_gen.png){.thumbnail}
+![Schéma général](images/diag_gen2025.png){.thumbnail}
 
 ## Avantages
 
@@ -53,19 +53,19 @@ Le Load Balancer est constitué de trois composants principaux :
 
 Répartissez les charges entre plusieurs serveurs et augmentez horizontalement vos ressources sans interruption de service.
 
-![Répartition de charge](images/distribute_load.png){.thumbnail}
+![Répartition de charge](images/distribute_load2025.png){.thumbnail}
 
 ### Haute disponibilité et continuité de service
 
 Des sondes automatiques détectent les serveurs non réactifs et redirigent instantanément le trafic, minimisant ainsi les interruptions.
 
-![Haute disponibilité](images/eliminate_downtimes.png){.thumbnail}
+![Haute disponibilité](images/eliminate_downtimes2025.png){.thumbnail}
 
 ### Maintenance simplifiée
 
 Mettez une ferme ou un serveur en mode maintenance sans impacter les utilisateurs, puis réintégrez-le facilement après intervention.
 
-![Maintenance simplifiée](images/scale_easily.png){.thumbnail}
+![Maintenance simplifiée](images/facilitate_maintenance2025.png){.thumbnail}
 
 ### Intégration avec les services OVHcloud
 
@@ -76,13 +76,13 @@ Combinez facilement le Load Balancer avec d’autres services OVHcloud :
 - Serveurs Dédiés
 - Réseau privé vRack
 
-![Combiner vos services](images/mix_and_match.png){.thumbnail}
+![Combiner vos services](images/mix_and_match2025.png){.thumbnail}
 
 ### Distribution géographique (Anycast)
 
 Fournissez un service à vos utilisateurs partout dans le monde avec une faible latence et un routage résilient.
 
-![Anycast](images/anycast.png){.thumbnail}
+![Anycast](images/anycast2025.png){.thumbnail}
 
 ### Cas d’usage variés
 
@@ -92,13 +92,13 @@ Prenez en charge de multiples services via du trafic HTTP(S), TCP et UDP.
 
 Équilibrez la charge entre vos serveurs de messagerie.
 
-![Mail](images/mail.png){.thumbnail}
+![Mail](images/mail2025.png){.thumbnail}
 
 #### Bases de données
 
 Équilibrez vos bases de données et rendez-les redondantes.
 
-![Bases de données](images/database.png){.thumbnail}
+![Bases de données](images/database2025.png){.thumbnail}
 
 ## Pour aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come gestire gli utenti FTP"
 excerpt: "Scopri come creare, modificare o eliminare utenti FTP sul tuo hosting Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-10-16
 ---
 
 ## Obiettivo
@@ -23,43 +23,62 @@ Le offerte di hosting Web OVHcloud danno accesso a uno spazio di storage FTP. Qu
 
 ### Creare un nuovo utente FTP sul tuo hosting Web <a name="create-ftp-user"></a>
 
-Per creare un nuovo utente FTP sull’hosting Web dallo Spazio Cliente OVHcloud, esegui queste operazioni:
+Per creare un nuovo utente FTP sull’hosting Web dallo Spazio Cliente OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** passi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
-3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
-4. Seleziona il tuo hosting Web.
-5. Clicca sulla scheda `FTP-SSH`{.action}.
-6. Per creare un nuovo utente FTP, clicca sul pulsante `Crea un utente`{.action} a destra. In base alla risoluzione dello schermo, il pulsante può trovarsi nella parte inferiore della pagina.
-
-![FTP-SSH create user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user.png){.thumbnail}
-
-Viene visualizzata la seguente finestra:
-
-![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
-
-Inserisci i parametri del nuovo utente FTP definendo gli elementi / moduli seguenti:
-
-- *Utente* : corrisponde al nome utente FTP completo che definisci per il tuo collaboratore. Dovrà utilizzarlo per connettersi allo spazio di storage FTP del tuo hosting Web. Qualunque sia il nuovo utente FTP creato sul tuo hosting Web, il nome scelto sarà sempre preceduto dal login FTP principale del tuo hosting Web, seguito da un trattino.
-- Ad esempio, se il tuo login FTP principale è `FTPLogin` e vuoi creare un nuovo utente FTP `user1`, il login FTP del tuo nuovo utente sarà `FTPLogin-user1`.
-
-- *Cartella di root* : corrisponde al nome della directory o sottodirectory nella quale l'utente FTP avrà il diritto di connettersi allo spazio di storage FTP.
-- Ad esempio, se il tuo collaboratore ha bisogno di accedere all’intero spazio di storage FTP del tuo hosting Web, lascia vuoto questo modulo. In caso contrario, indica il nome della directory a cui sarà autorizzato ad accedere (esempi: `www`, `blog`, `website1`, `wwww/development`, ecc...).
-
-- *Protocollo di connessione*: permette di definire il o i protocolli che l’utente FTP potrà utilizzare per connettersi allo spazio di storage FTP del tuo hosting Web.
-- Ad esempio, se scegli la terza scelta (i protocolli **FTP**, **SFTP** e **SSH**), l’utente FTP potrà connettersi con i tre protocolli. In questo modo, il collaboratore che utilizzerà questo utente FTP potrà, ad esempio, scegliere di connettersi da riga di comando tramite il protocollo **SSH** ma anche gestire il contenuto FTP a partire dallo stesso protocollo.
-
-Una volta definiti i parametri, clicca su `Continua`{.action} per accedere allo step 2 della creazione del nuovo utente FTP:
-
-![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
-
-In questo secondo step, è sufficiente impostare e confermare la password del nuovo utente FTP nei 2 moduli. Segui la politica delle password elencata subito sotto i 2 moduli per andare al passaggio 3.
-
-Una volta selezionata e confermata la password, clicca su `Continua`{.action} per accedere allo step 3 della creazione del nuovo utente FTP:
-
-![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
-
-In questo ultimo step vengono riepilogati i parametri scelti per il nuovo utente FTP. Se queste impostazioni corrispondono a quanto desideri, clicca su `Conferma`{.action} per completare la richiesta di creazione di un nuovo utente FTP sul tuo hosting Web.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
+>>
+>> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Per creare un nuovo utente FTP, clicca sul pulsante `Crea un utente`{.action} a destra. In base alla risoluzione dello schermo, il pulsante può trovarsi nella parte inferiore della pagina.
+>>
+>> ![FTP-SSH create user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Viene visualizzata la seguente finestra:
+>>
+>> ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
+>>
+>> Imposta i parametri del nuovo utente FTP compilando i seguenti campi:
+>>
+>> - *Utente* : Corrisponde al nome utente FTP completo che definisci per il tuo collaboratore. Dovrà utilizzarlo per connettersi allo spazio di storage FTP del tuo hosting Web. Qualunque sia il nuovo utente FTP creato sul tuo hosting Web, il nome scelto sarà sempre preceduto dal login FTP principale del tuo hosting Web, seguito da un trattino. Ad esempio, se il tuo login FTP principale è `FTPLogin` e vuoi creare un nuovo utente FTP `user1`, il login FTP del tuo nuovo utente sarà `FTPLogin-user1`.
+>>
+>> - *Cartella di root* : Corrisponde al nome della directory o sottodirectory nella quale l'utente FTP avrà il diritto di connettersi allo spazio di storage FTP. Ad esempio, se il tuo collaboratore ha bisogno di accedere all’intero spazio di storage FTP del tuo hosting Web, lascia vuoto questo campo. In caso contrario, indica il nome della directory a cui sarà autorizzato ad accedere (esempi: `www`, `blog`, `website1`, `wwww/development`, ecc.).
+>>
+>> - *Protocollo di connessione*: Permette di definire il o i protocolli che l’utente FTP potrà utilizzare per connettersi allo spazio di storage FTP del tuo hosting Web. Ad esempio, se scegli la terza scelta (i protocolli **FTP**, **SFTP** e **SSH**), l’utente FTP potrà connettersi con i tre protocolli. In questo modo, il collaboratore che utilizzerà questo utente FTP potrà, ad esempio, scegliere di connettersi da riga di comando tramite il protocollo **SSH** ma anche gestire il contenuto FTP a partire dallo stesso protocollo.
+>>
+Una volta definiti i parametri, clicca su `Continua`{.action}.
+>>
+> **Passaggio 6**
+>>
+>> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
+>>
+>> In questa seconda finestra, è sufficiente impostare e confermare la password del nuovo utente FTP nei 2 campi. Segui la politica delle password elencata subito sotto i 2 campi.
+>>
+>> Una volta selezionata e confermata la password, clicca su `Continua`{.action}.
+>>
+> **Passaggio 7**
+>>
+>> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
+>>
+>> In questa ultima finestra vengono riepilogati i parametri scelti per il nuovo utente FTP. Se queste impostazioni corrispondono a quanto desideri, clicca su `Conferma`{.action} per completare la richiesta di creazione di un nuovo utente FTP sul tuo hosting Web.
 
 > [!primary]
 >
@@ -69,26 +88,44 @@ In caso di necessità, prova il nuovo utente FTP consultando la nostra guida "[A
 
 ### Modificare un utente FTP
 
-Per modificare un utente FTP, effettuare le seguenti operazioni:
+Per modificare un utente FTP, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
-3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
-4. Seleziona il tuo hosting Web.
-5. Clicca sulla scheda `FTP-SSH`{.action}.
-6. Nella tabella in fondo alla pagina e nella parte destra della riga corrispondente all’utente FTP interessato, clicca sul pulsante `...`{.action} e poi su `Modifica`{.action}.
-
-![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
-
-Viene visualizzata la seguente finestra:
-
-![FTP-SSH edit user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-a-user-step1.png){.thumbnail}
-
-Ad eccezione del nome utente FTP e della password associata, qui è possibile modificare la *cartella di root* e i *protocolli di connessione* definiti per l'utente FTP. Se necessario, consulta la sezione "[Creare un nuovo utente FTP sul tuo hosting Web](#create-ftp-user)" situata più in alto in questa guida per maggiori informazioni sulla *cartella di root* e sui *protocolli di connessione*.
-
-Se necessario, è possibile disattivare l’utente* selezionando l’apposita casella di controllo. Questa opzione può essere utile per impedire ad un collaboratore di accedere al tuo spazio FTP senza eliminare i log FTP ed SSH ad esso associati. Questi log ti permetteranno di determinare quali operazioni sono state effettuate dal tuo collaboratore in caso di interventi indesiderati sul tuo hosting Web.
-
-Una volta effettuate le modifiche, clicca su `Continua`{.action} per accedere allo Step 2. Verifica le richieste di modifica e clicca su `Conferma`{.action} per completare la richiesta di modifica dell’utente FTP sul tuo hosting Web.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
+>>
+>> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nella tabella in fondo alla pagina e nella parte destra della riga corrispondente all’utente FTP interessato, clicca sul pulsante `...`{.action} e poi su `Modifica`{.action}.
+>>
+>> ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Viene visualizzata la seguente finestra:
+>>
+>> ![FTP-SSH edit user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-a-user-step1.png){.thumbnail}
+>>
+>> Ad eccezione del nome utente FTP e della password associata, qui è possibile modificare la *cartella di root* e i *protocolli di connessione* definiti per l'utente FTP. Se necessario, consulta la sezione "[Creare un nuovo utente FTP sul tuo hosting Web](#create-ftp-user)" situata più in alto in questa guida per maggiori informazioni sulla *cartella di root* e sui *protocolli di connessione*.
+>>
+>> Se necessario, è possibile disattivare l’utente* selezionando l’apposita casella di controllo. Questa opzione può essere utile per impedire ad un collaboratore di accedere al tuo spazio FTP senza eliminare i log FTP ed SSH ad esso associati. Questi log ti permetteranno di determinare quali operazioni sono state effettuate dal tuo collaboratore in caso di interventi indesiderati sul tuo hosting Web.
+>> 
+>> Una volta effettuate le modifiche, clicca su `Continua`{.action}. Verifica le richieste di modifica e clicca su `Conferma`{.action} per completare la richiesta di modifica dell’utente FTP sul tuo hosting Web.
 
 > [!primary]
 >
@@ -98,22 +135,40 @@ Una volta effettuate le modifiche, clicca su `Continua`{.action} per accedere al
 
 ### Eliminare un utente FTP <a name="delete-ftp-user"></a>
 
-Per eliminare un utente FTP, effettuare le seguenti operazioni:
+Per eliminare un utente FTP, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
-3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
-4. Seleziona il tuo hosting Web.
-5. Clicca sulla scheda `FTP-SSH`{.action}.
-6. Nella tabella in fondo alla pagina e nella parte destra della riga corrispondente all’utente FTP interessato, clicca sul pulsante `...`{.action} e poi su `Elimina`{.action}.
-
-![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
-
-Viene visualizzata la seguente finestra:
-
-![FTP-SSH delete user confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1-confirmation.png){.thumbnail}
-
-Clicca su `Conferma`{.action} per eliminare definitivamente l’utente FTP dal tuo hosting Web.
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
+>>
+>> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nella tabella in fondo alla pagina e nella parte destra della riga corrispondente all’utente FTP interessato, clicca sul pulsante `...`{.action} e poi su `Eliminare`{.action}.
+>>
+>> ![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
+>>
+> **Passaggio 5**
+>>
+>> Viene visualizzata la seguente finestra:
+>>
+>> ![FTP-SSH delete user confirmation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1-confirmation.png){.thumbnail}
+>>
+>> Clicca su `Conferma`{.action} per eliminare definitivamente l’utente FTP dal tuo hosting Web.
 
 ## Per saperne di più
 

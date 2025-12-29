@@ -1,8 +1,7 @@
 ---
 title: "Utiliser le Secret Manager avec l'API REST"
 excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API REST"
-updated: 2025-10-06
-flag: hidden
+updated: 2025-10-15
 ---
 
 ## Objectif
@@ -60,7 +59,7 @@ Vous êtes alors redirigé sur la version non authentifiée de l'interface utili
 
 Les étapes suivantes vous guideront sur la façon de vous authentifier.
 
-#### Importation de vos informations d'identification OKMS dans le navigateur
+#### Import de vos informations d'identification OKMS dans le navigateur
 
 Pour accéder à l'interface utilisateur Swagger authentifiée, vous devez charger votre [certificat d'accès OKMS](/pages/manage_and_operate/kms/okms-certificate-management) dans le gestionnaire de certificats du navigateur.
 

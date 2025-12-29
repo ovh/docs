@@ -35,22 +35,17 @@ See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_
 Valkey is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
 See our [Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
-### Cassandra
-
-Apache Cassandra is an open-source fully managed NoSQL database. It's highly fault-tolerant with asynchronous replication.<br>
-See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_cloud_databases/cassandra_01_capabilities) guide.
-
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Valkey | Cassandra |
-|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|-----------|
-| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |           |
-| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |           |
-| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     | ✓         |
-| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Valkey |
+|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|
+| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     |
+| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     |
+| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |
+| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |
+| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     |
+| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     |
+| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     |
 
 (1) depends on the plan
 

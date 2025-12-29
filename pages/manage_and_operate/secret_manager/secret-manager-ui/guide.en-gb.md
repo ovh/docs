@@ -1,8 +1,7 @@
 ---
 title: "Using the Secret Manager in the OVHcloud Control Panel"
 excerpt: "Discover how to use the Secret Manager with the graphical interface"
-updated: 2025-10-06
-flag: hidden
+updated: 2025-10-15
 ---
 
 > [!primary]

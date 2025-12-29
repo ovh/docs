@@ -112,7 +112,7 @@ Renseignez uniquement le proxy sortant de votre ligne SIP, puis cliquez sur le b
 > Android
 >> ![proxy zoiper](images/zoiper03-android-proxy.png){.thumbnail height="500"}
 
-//
+///
 
 Le logiciel testera ensuite les protocoles de transport possibles. Les lignes SIP OVHcloud utilisant uniquement le protocole UDP, veillez à ce qu'il soit sélectionné.
 

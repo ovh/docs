@@ -4,10 +4,6 @@ excerpt: Descubra nuestras buenas prácticas antispam y cómo desbloquear una di
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 Para cada dirección IP disponible en los productos y servicios de OVHcloud, como proveedor de acceso a internet, la registramos y la reservamos en organizaciones como [RIPE](https://www.ripe.net/) o [ARIN](https://www.arin.net/). En este caso, nos parece el contacto *abuse* de la propiedad intelectual en caso de litigio en la base de datos *WHOIS*.
@@ -179,7 +175,7 @@ A continuación le ofrecemos un ejemplo:
 
 > [!alert]
 > ¡IMPORTANTE!
-No desbloquee la IP sin haber suspendido el envío de los emails desde su servidor y vaciado la cola de emails. En caso contrario, será inmediatamente bloqueado una segunda vez, por un período de tiempo más largo. 
+> No desbloquee la IP sin haber suspendido el envío de los emails desde su servidor y vaciado la cola de emails. En caso contrario, será inmediatamente bloqueado una segunda vez, por un período de tiempo más largo. 
 >
 
 Para desbloquear su dirección IP, utilice la siguiente llamada:
@@ -215,4 +211,4 @@ En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobad
 
 ## Más información
   
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

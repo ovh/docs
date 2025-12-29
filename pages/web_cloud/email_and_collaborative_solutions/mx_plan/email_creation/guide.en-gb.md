@@ -246,7 +246,7 @@ Below are the **SMTP** settings to use when sending emails:
 
 **Have you used all of the email addresses included in your solution?**
 
-- Refer to [our email FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Refer to [our email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - See all of our email solutions, [Zimbra](/links/web/emails-zimbra) or [Exchange](/links/web/emails) to complete your MX Plan solution on the same domain name.
 
 ## Go further <a name="go-further"></a>

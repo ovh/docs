@@ -1,7 +1,7 @@
 ---
 title: "Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2025-07-08
+updated: 2025-10-22
 ---
 
 <style>
@@ -34,6 +34,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
  - [Tratamiento del correo](#email-management)
     - [Acción en un correo electrónico seleccionado](#email-action)
     - [Buscar un correo electrónico](#email-search)
+    - [Restaurar correos electrónicos eliminados](#restore)
 - [Redactar un email](#email-writing)
 - [Configurar las preferencias de la interfaz Zimbra](#settings)
 - [Contactos](#contacts)
@@ -47,6 +48,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 - [Filtros](#filters)
     - [Cómo configurar los filtros](#filters-howto)
     - [Crear un filtro](#filters-creation)
+    - [Crear una redirección](#filters-redirection)
 - [Delegaciones](#delegations)
 - [Firmas](#signatures)
 - [Respuestas automáticas / Respondedor](#auto-reply)
@@ -55,11 +57,11 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 Acceda a la página [Webmail](/links/web/email). Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
 
-![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
+![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail .w-600}
 
 Será redirigido a la interfaz Zimbra.
 
-![Zimbra - interface](images/zimbra-01.png){.thumbnail}
+![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-600}
 
 ### Interfaz general del webmail Zimbra <a name="general-interface"></a>
 
@@ -72,13 +74,13 @@ Una vez que se haya conectado a su cuenta de correo electrónico, podrá acceder
 >> - **(2)** Una barra de búsqueda le permite encontrar mensajes o contactos.
 >> - **(3)** El menú de gestión del perfil de su cuenta de correo y el botón de acceso a los ajustes **(4)**.
 >>
->> ![Zimbra - menú superior](images/zimbra-02.png){.thumbnail}
+>> ![Zimbra - menú superior](images/zimbra-02.png){.thumbnail .w-600}
 >>
 > **Columna izquierda**
 >>
 >> De forma predeterminada, es el árbol de su cuenta de correo, compuesto por carpetas y subcarpetas. La carpeta principal es `Recepción`.
 >>
->> ![Zimbra - arborescence](images/zimbra-03.png){.thumbnail}
+>> ![Zimbra - arborescence](images/zimbra-03.png){.thumbnail .w-600}
 >>
 > **Ventana central**
 >>
@@ -87,14 +89,14 @@ Una vez que se haya conectado a su cuenta de correo electrónico, podrá acceder
 >> - **(1)** la lista de elementos
 >> - **(2)** el contenido del elemento seleccionado
 >>
->> ![Zimbra - E-mails](images/zimbra-04.png){.thumbnail}
+>> ![Zimbra - E-mails](images/zimbra-04.png){.thumbnail .w-600}
 >>
 
 ### Gestión de las carpetas de su cuenta de correo (columna izquierda) <a name="folders-management"></a>
 
 En esta área aparecen las carpetas de su cuenta de correo. En ella encontrará las carpetas **especiales** que ya existen (en naranja) y las carpetas que usted haya **creado** (en verde).
 
-![Zimbra - dossiers](images/zimbra-05.png){.thumbnail}
+![Zimbra - dossiers](images/zimbra-05.png){.thumbnail .w-600}
 
 #### Los expedientes especiales <a name="folders-specials"></a>
 
@@ -127,11 +129,17 @@ También puede crear una subcarpeta haciendo clic derecho en la carpeta que dese
 
 Al seleccionar una carpeta o subcarpeta en la columna de la izquierda, la lista de mensajes de correo electrónico contenidos en ella se muestra en la columna del centro. A continuación, haga clic en el mensaje de correo electrónico que desee para ver su contenido en la ventana de la derecha.
 
+![Zimbra - Carpetas](images/zimbra-06.png){.thumbnail .w-600}
+
 > [!primary]
 >
 > **Tipo de visualización**
 >
 > La presentación de sus mensajes de correo se presenta de una forma que puede modificarse. Para ello, haga clic en el botón `Ver`{.action} situado en la esquina superior derecha de esta ventana.
+
+Es posible ordenar y mostrar correos electrónicos según ciertos criterios haciendo clic en el filtro existente (por defecto, `Fecha`{.action}) en la parte superior de la lista de correos electrónicos.
+
+![Zimbra - carpetas](images/zimbra-06-date.png){.thumbnail .w-600}
 
 #### Acción en un correo electrónico seleccionado <a name="email-action"></a>
 
@@ -140,7 +148,7 @@ Al seleccionar un mensaje de correo electrónico, podrá realizar diversas accio
 - 1.**Responder**: responder directamente al remitente.
 - 2.**Responder a todos**: responder directamente a todos los destinatarios de los campos "Para" y "CC".
 - 3.**Reenviar**: reenviar el correo electrónico seleccionado a uno o varios destinatarios.
-- 4.**Archivo** : Mover el correo a la carpeta "Archivo" de su cuenta de correo.
+- 4.**Archivo**: Mover el correo a la carpeta "Archivo" de su cuenta de correo.
 - 5.**Mover**: mover el correo a una de las carpetas de la cuenta de correo.
 - 6.**Eliminar**: Colocar el correo electrónico seleccionado en la papelera de reciclaje.
 - 7.**Basura**: Colocar el correo electrónico seleccionado directamente en la carpeta de correo no deseado (SPAM).
@@ -154,7 +162,7 @@ Al seleccionar un mensaje de correo electrónico, podrá realizar diversas accio
     - **Imprimir**: Imprimir la conversación o el mensaje de correo electrónico seleccionados.
 - 9.**Ver**: seleccione una de las 3 distribuciones para ver sus carpetas y mensajes de correo electrónico.
 
-![Zimbra - acciones](images/zimbra-07.png){.thumbnail}
+![Zimbra - acciones](images/zimbra-07.png){.thumbnail .w-600}
 
 Para acceder a estas opciones, haga clic derecho en cada uno de los mensajes de la columna central.
 
@@ -174,27 +182,41 @@ Si quiere encontrar un mensaje de correo electrónico, utilice la barra de búsq
 >>
 >> > Si sabe dónde buscar el elemento, puede escribir palabras clave (**from**, **to**, **cc**, **subject**, etc.) seguidas de dos puntos (`:`) y buscar el elemento en el cuadro de texto de búsqueda. Por ejemplo, si desea buscar rápidamente un remitente, puede escribir "from:" antes de la dirección de correo electrónico que desea buscar. Por ejemplo, "from: address@example.com".
 >>
->> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail}
+>> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail .w-600}
 >>
 > **Búsqueda avanzada**
 >>
 >> Para obtener una búsqueda más precisa, haga clic en la esquina superior derecha de la barra de búsqueda. De esta forma, podrá limitar la búsqueda a una carpeta, un intervalo de tiempo, el asunto o el cuerpo del mensaje, etc.
 >>
->> ![Zimbra - Búsqueda avanzada](images/zimbra-09.png){.thumbnail}
+>> ![Zimbra - Búsqueda avanzada](images/zimbra-09.png){.thumbnail .w-600}
 >>
+
+#### Recuperar correos electrónicos eliminados <a name="restore"></a>
+
+Cuando elimina correos electrónicos, estos se colocan por defecto en la papelera.<br>
+Si elimina correos electrónicos de su papelera o la vacía, estos se colocan en retención. Aún es posible recuperarlos durante 30 días.
+
+Veremos cómo recuperar un correo electrónico en retención revisando los pasos de su eliminación y restauración:
+
+1. **Eliminación de un correo electrónico**: Cuando visualiza un correo electrónico en la bandeja de entrada o en uno de los carpetas y hace clic en `eliminar`{.action}, este irá por defecto a la papelera.
+2. **Vaciar la papelera**: Cuando haga clic en `Vaciar la papelera`{.action} o elimine un correo electrónico desde allí, el correo electrónico ya no aparecerá en la papelera y entrará en su período de retención de 30 días.
+3. **Acceder a la restauración**: Para recuperar un correo electrónico eliminado de la papelera en menos de 30 días, haga clic derecho en `Papelera`{.action}, luego haga clic en `Recuperar correo eliminado`{.action}.
+4. **Elegir los correos electrónicos a restaurar**: Desde esta ventana, puede ver los correos electrónicos que han sido vaciados de la papelera. Seleccione el o los correos electrónicos que desea restaurar. Haga clic en `Siguiente`{.action}, elija la carpeta en la que desea restaurar los correos electrónicos y haga clic en `Guardar`{.action}.
+
+![Zimbra - búsqueda simple](images/zimbra-restore.png){.thumbnail .w-600}
 
 ### Redactar un email <a name="email-writing"></a>
 
 Para redactar un nuevo mensaje de correo electrónico, haga clic en el botón `Nuevo Mensaje`{.action} (1) situado en la parte superior izquierda de la ventana de Zimbra.
 
-![Zimbra - Redactar un email](images/zimbra-10.png){.thumbnail}
+![Zimbra - Redactar un email](images/zimbra-10.png){.thumbnail .w-600}
 
 > [!tabs]
 > **Encabezado**
 >>
 >> El encabezado permite completar los siguientes campos:
 >>
->> - **De** : la dirección desde la que se envía el correo. Por defecto, es su dirección de correo electrónico. Puede cambiar su dirección de correo electrónico haciendo clic en el paréntesis angular situado al final de la línea correspondiente a su dirección de correo electrónico, solo si se ha establecido una [delegación](#delegations).<br>
+>> - **De**: la dirección desde la que se envía el correo. Por defecto, es su dirección de correo electrónico. Puede cambiar su dirección de correo electrónico haciendo clic en el paréntesis angular situado al final de la línea correspondiente a su dirección de correo electrónico, solo si se ha establecido una [delegación](#delegations).<br>
 >> - **Para**: el/los destinatario/s de su correo electrónico. Haga clic en `Para`{.action} para acceder a su [agenda de contactos](#contacts) y seleccionar sus destinatarios.<br>
 >> - **CC**: Haga clic en `Cc/Cco`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia es un campo destinatario que permite enviar el correo en copia a las personas que desea integrar en un bucle sin que se consideren como destinatarios directos del correo (a diferencia de los destinatarios del campo "**Para**").<br>
 >> - **CCO**: Haga clic en `CCO`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia oculta es un campo de destinatario que permite transmitir un mensaje de correo electrónico sin que los otros destinatarios vean a la persona o personas en "**CCO**".<br>
@@ -204,18 +226,18 @@ Para redactar un nuevo mensaje de correo electrónico, haga clic en el botón `N
 >>    - Haga clic en `Solicitar confirmación de lectura` para solicitar confirmación de lectura del destinatario.<br>
 >>    - La función `Texto sin formato` desactivará las funciones de diseño HTML del correo electrónico. <br>
 >>
->> ![Zimbra - en-tête](images/zimbra-11.png){.thumbnail}
+>> ![Zimbra - en-tête](images/zimbra-11.png){.thumbnail .w-600}
 >>
 > **Cuerpo del mensaje**
 >>
 >> Para redactar el cuerpo de su mensaje, dispone de una barra de herramientas HTML en la parte inferior de su ventana. De este modo, podrá redactar sus mensajes de correo electrónico con el diseño de la página directamente desde su navegador. Además, el botón `< >`{.action} (situado al final de la línea correspondiente a la barra de herramientas) abre una ventana en la que puede pegar un mensaje de correo electrónico preescrito desde una herramienta externa.
 >>
->> ![Zimbra - cuerpo](images/zimbra-12.png){.thumbnail}
+>> ![Zimbra - cuerpo](images/zimbra-12.png){.thumbnail .w-600}
 >>
 
 Después de redactar el mensaje de correo electrónico, antes de hacer clic en `Enviar`{.action}, puede adjuntarlo haciendo clic en el icono de clip situado junto al botón `Enviar`{.action}.
 
-![Zimbra - archivo adjunto](images/zimbra-13.png){.thumbnail}
+![Zimbra - archivo adjunto](images/zimbra-13.png){.thumbnail .w-600}
 
 > [!success]
 > **Cancelar un envío**
@@ -223,13 +245,13 @@ Después de redactar el mensaje de correo electrónico, antes de hacer clic en `
 > Si ha activado la opción `Deshacer envío` en la sección "**Escribir un email**" de las preferencias de Zimbra, puede hacer clic en `DESHACER`{.action} para cancelar el envío.
 > Este botón permanece disponible durante unos 5 segundos.
 >
-> ![Zimbra - cancelar un envío](images/zimbra-cancel-email.png){.thumbnail .w-400}
+> ![Zimbra - cancelar un envío](images/zimbra-cancel-email.png){.thumbnail .w-600}
 
 ### Configurar las preferencias de la interfaz Zimbra <a name="settings"></a>
 
 Su interfaz Zimbra dispone de 2 menús de configuración:
 
-![Zimbra: preferencias](images/zimbra-14.png){.thumbnail}
+![Zimbra: preferencias](images/zimbra-14.png){.thumbnail .w-600}
 
 - **(1) Perfil**: haga clic en el nombre de su cuenta de correo en la parte superior derecha de su interfaz. Desde este menú, podrá "**Cambiar contraseña**" de su dirección de correo electrónico, "**Cambiar la imagen del perfil**" o desconectarse haciendo clic en "**Cerrar sesión**".
 
@@ -238,30 +260,33 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 > [!tabs]
 > **General**
 >>
->> Desde esta pestaña, puede consultar el espacio ocupado en su cuenta de correo y configurar el formato en el que quiere que se muestren la fecha y la hora de sus mensajes.
+>> Desde esta pestaña encontrará:
+>>
+>> - barra de progreso que indica el espacio ocupado en su cuenta de correo.
+>> - la posibilidad de definir el formato de visualización de la fecha y la hora de sus mensajes de correo.
 >>
 > **Ver mensajes**
 >>
 >> Consulte aquí los elementos asociados a la visualización de sus elementos en su cuenta de correo.
 >>
 >> - **Al ver la lista de mensajes**: estas opciones permiten organizar la lista de los mensajes de correo en grupos de conversaciones y mostrar más detalles en la vista previa.
->> - **Panel de vista previa** : seleccione una de las tres configuraciones para ver sus carpetas y mensajes de correo electrónico. Esta opción recoge las opciones que aparecen en el botón `Ver`{.action} cuando se visualizan los mensajes de correo.
+>> - **Panel de vista previa**: seleccione una de las tres configuraciones para ver sus carpetas y mensajes de correo electrónico. Esta opción recoge las opciones que aparecen en el botón `Ver`{.action} cuando se visualizan los mensajes de correo.
 >> - **Densidad de la lista de mensajes**
->> - **Marcar como leído** : Puede retrasar el cambio de estado de su correo electrónico a "leído" cuando haga clic en él o decidir no hacer nada y dejarlo como "no leído" sin que usted realice ninguna acción.
->> - **Revisar correo nuevo** : establezca la frecuencia de sincronización de los mensajes recibidos desde su interfaz Zimbra.
->> - **Confirmaciones de lectura** : permite definir el comportamiento de Zimbra al abrir un mensaje de correo electrónico con confirmación de lectura.
->> - **Notificaciones de correo nuevo** : habilite las notificaciones cuando se reciba un mensaje.
->> - **Mostrar imágenes en mensajes** : muestra o no las fotos al abrir un correo electrónico.
->> - **Ver correo como texto sin formato** : esta opción muestra el mensaje de correo electrónico en formato sin formato.
+>> - **Marcar como leído**: Puede retrasar el cambio de estado de su correo electrónico a "leído" cuando haga clic en él o decidir no hacer nada y dejarlo como "no leído" sin que usted realice ninguna acción.
+>> - **Revisar correo nuevo**: establezca la frecuencia de sincronización de los mensajes recibidos desde su interfaz Zimbra.
+>> - **Confirmaciones de lectura**: permite definir el comportamiento de Zimbra al abrir un mensaje de correo electrónico con confirmación de lectura.
+>> - **Notificaciones de correo nuevo**: habilite las notificaciones cuando se reciba un mensaje.
+>> - **Mostrar imágenes en mensajes**: muestra o no las fotos al abrir un correo electrónico.
+>> - **Ver correo como texto sin formato**: esta opción muestra el mensaje de correo electrónico en formato sin formato.
 >> - **Mostrar imágenes de forma predeterminada en el correo de estas direcciones o dominios de confianza**: defina las direcciones de correo electrónico de confianza para las que pueden mostrarse las imágenes al abrirlas.
 >>
 > **Redactar mensajes**
 >>
->> - **Deshacer envío** : Esta opción permite mostrar un banner, durante 5 segundos, que permite cancelar el envío de un email.
->> - **Solicitar notificación de lectura** : esta opción envía una solicitud de confirmación de lectura a los destinatarios cuando les envía un mensaje de correo electrónico.
->> - **Guardar una copia en la carpeta Enviados** : Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta "*Enviado" de su cuenta de correo.
->> - **Delegados** : consulte la sección [Delegaciones](#delegations) de esta guía para comprender su uso.
->> - **Delegar la configuración de envío** : consulte el tema [Delegaciones](#delegations) de esta guía para comprender cómo se utiliza.
+>> - **Deshacer envío**: Esta opción permite mostrar un banner, durante 5 segundos, que permite cancelar el envío de un email.
+>> - **Solicitar notificación de lectura**: esta opción envía una solicitud de confirmación de lectura a los destinatarios cuando les envía un mensaje de correo electrónico.
+>> - **Guardar una copia en la carpeta Enviados**: Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta "*Enviado" de su cuenta de correo.
+>> - **Delegados**: consulte la sección [Delegaciones](#delegations) de esta guía para comprender su uso.
+>> - **Delegar la configuración de envío**: consulte el tema [Delegaciones](#delegations) de esta guía para comprender cómo se utiliza.
 >> - **Redactor**: puede establecer su estilo de escritura predeterminado al iniciar la redacción de un mensaje de correo electrónico.
 >>
 > **Firmas**
@@ -285,21 +310,21 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 >>
 >> **Configuración general de agenda**
 >>
->> - **Agenda predeterminada** : permite definir el calendario que se utilizará por defecto al crear un evento en los calendarios.
->> - **Inicio de la semana** : el día que aparece en primer lugar en la cuadrícula del calendario.
->> - **Inicio del día laboral** : la hora que aparece en la parte superior de la amplitud horaria mostrada.
->> - **Final del día laboral** : la hora que aparece en la parte inferior de la amplitud horaria mostrada.
+>> - **Agenda predeterminada**: permite definir el calendario que se utilizará por defecto al crear un evento en los calendarios.
+>> - **Inicio de la semana**: el día que aparece en primer lugar en la cuadrícula del calendario.
+>> - **Inicio del día laboral**: la hora que aparece en la parte superior de la amplitud horaria mostrada.
+>> - **Final del día laboral**: la hora que aparece en la parte inferior de la amplitud horaria mostrada.
 >> - **zona horaria del día laboral** utilizada para los calendarios.
->> - **Cuando se crean o editan eventos** : mostrar las zonas horarias para las horas de inicio y finalización.
->> - **Compartir** : `Activar la delegación para los clientes CALDav`. Esta opción le permite administrar sus calendarios mediante un software compatible con el protocolo CALdav.
+>> - **Cuando se crean o editan eventos**: mostrar las zonas horarias para las horas de inicio y finalización.
+>> - **Compartir**: `Activar la delegación para los clientes CALDav`. Esta opción le permite administrar sus calendarios mediante un software compatible con el protocolo CALdav.
 >> - **Eventos rechazados**: mostrar un evento en el calendario, incluso si se ha rechazado.
 >>
 >> **Recordatorios de eventos**
 >>
->> - **Enviar recordatorios por correo electrónico a** : enviar recordatorios de eventos a una dirección de correo electrónico.
->> - **Mostrar notificaciones del navegador** : Recibir notificaciones de los eventos desde su navegador de internet.
->> - **Tiempo de recordatorio predeterminado** : Tiempo de aviso predeterminado que se aplica cuando se activa en un evento.
->> - **Mostrar recordatorios para eventos vencidos** : continuar enviando recordatorios después de un evento.
+>> - **Enviar recordatorios por correo electrónico a**: enviar recordatorios de eventos a una dirección de correo electrónico.
+>> - **Mostrar notificaciones del navegador**: Recibir notificaciones de los eventos desde su navegador de internet.
+>> - **Tiempo de recordatorio predeterminado**: Tiempo de aviso predeterminado que se aplica cuando se activa en un evento.
+>> - **Mostrar recordatorios para eventos vencidos**: continuar enviando recordatorios después de un evento.
 >>
 >> **Permiso Libre/Ocupado**
 >>
@@ -313,7 +338,7 @@ Haga clic en `Contactos` en la barra superior para acceder a la agenda de contac
 - **(2) Lista de contactos** (centro): vea los contactos de la libreta de direcciones o carpeta seleccionada.
 - **(3) Propiedades del contacto** o **Nuevo contacto** (derecha): esta ventana aparece cuando se selecciona un contacto o se está creando. Puede leer o editar la información de un contacto.
 
-![Zimbra - contactos](images/zimbra-15.png){.thumbnail}
+![Zimbra - contactos](images/zimbra-15.png){.thumbnail .w-600}
 
 Para crear un nuevo contacto, haga clic en el botón `Nuevo contacto`{.action} situado en la parte superior de la columna izquierda.
 
@@ -321,7 +346,7 @@ Rellene los campos según la información de contacto que tenga. Puede agregar u
 
 A continuación, haga clic en `Guardar`{.action}.
 
-![Zimbra: nuevo contacto](images/zimbra-16.png){.thumbnail}
+![Zimbra: nuevo contacto](images/zimbra-16.png){.thumbnail .w-600}
 
 #### Gestión de carpetas de contactos <a name="contacts-folders"></a>
 
@@ -339,7 +364,7 @@ También puede crear una subcarpeta haciendo clic derecho en la carpeta que dese
 
 Para mover un contacto a una de las carpetas, selecciónelo en la columna central y, en la ventana de contacto que aparece a la derecha, haga clic en el botón `Mover`{.action}. A continuación, seleccione la carpeta que desea asignar al contacto.
 
-![Zimbra - carpetas de contactos](images/zimbra-17.png){.thumbnail}
+![Zimbra - carpetas de contactos](images/zimbra-17.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -353,7 +378,7 @@ Para crear una lista, haga clic en el cuadro `Lista nueva` situado en la parte i
 
 Para asignar un contacto a una de las listas, selecciónelo en la columna central y, en la ventana que aparece a la derecha, haga clic en `Asignar a Listas`{.action}. Marque la lista o listas que desee asignar al contacto. También puede escribir el nombre de una nueva lista y hacer clic en `Agregar`{.action}.
 
-![Zimbra - listes](images/zimbra-list.png){.thumbnail}
+![Zimbra - listes](images/zimbra-list.png){.thumbnail .w-600}
 
 #### Importar y exportar contactos <a name="import-export"></a>
 
@@ -364,26 +389,26 @@ Seleccione una de las dos fichas siguientes:
 >>
 >> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje", que no permiten la importación y exportación de contactos.<br>
 >>
->> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato ".CSV" o ".vcf". <br><br>
->> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail}
+>> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato ".csv" o ".vcf". <br><br>
+>> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail .w-600}
 >>
 > **Exportar contactos**
 >>
 >> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje", que no permiten la importación y exportación de contactos.
 >>
 >> A continuación, haga clic en `Exportar`{.action} para abrir la ventana de exportación. Elija el tipo de archivo que desea exportar y haga clic en `Exportar ahora`{.action}.<br><br>
->> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
+>> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail .w-600}
 >>
 
 ### Calendario <a name="calendar"></a>
 
-Haga clic en el icono `Agenda` situado en la barra superior para acceder a la agenda de contactos. Dicho código se divide en **3 partes** :
+Haga clic en el icono `Agenda` situado en la barra superior para acceder a la agenda de contactos. Dicho código se divide en **3 partes**:
 
-- **(1) Lista de calendarios** (izquierda) : Gestione sus distintos calendarios y subcalendarios.
-- **(2) Contenido del calendario** (centro) : vea el contenido de los calendarios y subcalendarios seleccionados.
-- **(3) Lista de tareas** (derecha) : administre sus tareas y listas de tareas.
+- **(1) Lista de calendarios** (izquierda): Gestione sus distintos calendarios y subcalendarios.
+- **(2) Contenido del calendario** (centro): vea el contenido de los calendarios y subcalendarios seleccionados.
+- **(3) Lista de tareas** (derecha): administre sus tareas y listas de tareas.
 
-![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail .w-600}
 
 #### Gestión de calendarios <a name="calendar-management"></a>
 
@@ -391,35 +416,35 @@ Por defecto, en la lista `Mis agendas`, tiene un `Agenda` creado por defecto. Es
 
 ##### 1- Crear un calendario <a name="calendar-add-calendar"></a>
 
-- **(1)** : Para crear un calendario, sitúe el cursor sobre `Mis agendas` en la columna de la izquierda y haga clic en el botón `+`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
+- **(1)**: Para crear un calendario, sitúe el cursor sobre `Mis agendas` en la columna de la izquierda y haga clic en el botón `+`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
 
 También puede crear subcalendarios.
 
-- **(2)** : Para crear un subcalendario, coloque el cursor sobre el calendario para el que desea crear un subcalendario y haga clic derecho para ver el menú desplegable. Haga clic en `Añadir subcalendario`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
+- **(2)**: Para crear un subcalendario, coloque el cursor sobre el calendario para el que desea crear un subcalendario y haga clic derecho para ver el menú desplegable. Haga clic en `Añadir subcalendario`. Introduzca un nombre y defina un color y haga clic en `Guardar`{.action}
 
-![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-600}
 
 ##### 2- Añadir un evento <a name="calendar-add-event"></a>
 
-- **(1)** : Haga clic en `Nuevo evento`{.action} en la esquina superior izquierda.
-- **(2)** : Haga clic en la franja horaria de su calendario a la que desea agregar un evento. Para añadir fácilmente, solo tiene que definir un título y una ubicación para el evento y hacer clic en `Guardar`{.action}. Para añadir más detalles sobre su evento, haga clic en `Añadir más detalles`{.action}
+- **(1)**: Haga clic en `Nuevo evento`{.action} en la esquina superior izquierda.
+- **(2)**: Haga clic en la franja horaria de su calendario a la que desea agregar un evento. Para añadir fácilmente, solo tiene que definir un título y una ubicación para el evento y hacer clic en `Guardar`{.action}. Para añadir más detalles sobre su evento, haga clic en `Añadir más detalles`{.action}
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-600}
 
-- **Inicio** : fecha y hora de inicio del evento. Si marca `Todo el día`, no tendrá que introducir una hora de inicio y de finalización, ya que se tendrá en cuenta todo el día.
-- **Fin** : la fecha y la hora de finalización del evento.
-- **Repetir** : si se trata de un evento recurrente, defina su frecuencia.
-- **Ubicación** : el lugar en el que tendrá lugar el evento, como el nombre de una sala de reuniones.
-- **Equipo** : Al hacer clic en `Mostrar equipo`{.action}, aparece esta línea para definir un dispositivo compartido que va a utilizar para su evento.
-- **Invitados** : las direcciones de correo electrónico de los participantes del evento.
-- **Notas** : mensaje que se enviará a los invitados del evento.
-- **Recordar** : recibir una notificación antes de que comience el evento.
-- **Mostrar como** : definir si el evento hace que sus invitados estén disponibles o no durante su desarrollo
-- **Agenda** : definir a qué calendario está asociado el evento.
+- **Inicio**: fecha y hora de inicio del evento. Si marca `Todo el día`, no tendrá que introducir una hora de inicio y de finalización, ya que se tendrá en cuenta todo el día.
+- **Fin**: la fecha y la hora de finalización del evento.
+- **Repetir**: si se trata de un evento recurrente, defina su frecuencia.
+- **Ubicación**: el lugar en el que tendrá lugar el evento, como el nombre de una sala de reuniones.
+- **Equipo**: Al hacer clic en `Mostrar equipo`{.action}, aparece esta línea para definir un dispositivo compartido que va a utilizar para su evento.
+- **Invitados**: las direcciones de correo electrónico de los participantes del evento.
+- **Notas**: mensaje que se enviará a los invitados del evento.
+- **Recordar**: recibir una notificación antes de que comience el evento.
+- **Mostrar como**: definir si el evento hace que sus invitados estén disponibles o no durante su desarrollo
+- **Agenda**: definir a qué calendario está asociado el evento.
 
 Una vez definido el evento, haga clic en `Guardar`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-600}
 
 ##### 3- Modificar un evento <a name="calendar-modify-event"></a>
 
@@ -433,13 +458,13 @@ La lista "Tareas" existe de forma predeterminada y no se puede eliminar, pero pu
 
 - **(2)**: Para crear una nueva lista de tareas, haga clic en el botón `...`{.action} y, a continuación, en `Crear lista...`{.action}.
 
-![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-600}
 
 Al crear una tarea, puede establecer una fecha de vencimiento y una prioridad para clasificar la tarea según su importancia, así como un menú desplegable para seleccionar la lista de tareas correspondiente.
 
 A continuación, haga clic en `Guardar`{.action} para terminar de crear la tarea.
 
-![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-600}
 
 ### Almacenamiento <a name="storage"></a>
 
@@ -462,7 +487,7 @@ Haga clic en el icono `Maletín`{.action} situado en la barra superior para acce
 
 3. En la ventana de la derecha, según el tipo de archivo seleccionado en la columna central, se muestra una vista previa del contenido. La barra superior de la vista previa muestra las acciones que puede realizar en el archivo o archivos seleccionados.
 
-![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
 #### Añadir un archivo
 
@@ -472,7 +497,7 @@ Para añadir un archivo a su espacio de almacenamiento, siga estos pasos:
 2. En la ventana del explorador de archivos, seleccione el archivo o archivos que desea cargar en el espacio de almacenamiento.
 3. Haga clic en `Abrir`{.action} para cargar los elementos en su espacio de almacenamiento.
 
-![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
 #### Compartir un archivo o carpeta
 
@@ -491,7 +516,7 @@ El uso compartido le permite dar acceso a una carpeta o un archivo en su almacen
 >> 4. Elija los permisos que desea asignar al invitado.
 >> 5. Haga clic en `Guardar`{.action} para terminar de compartir.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail .w-600}
 >>
 > **Compartir una carpeta**
 >>
@@ -500,12 +525,12 @@ El uso compartido le permite dar acceso a una carpeta o un archivo en su almacen
 >> 3. Elija los permisos que desea asignar al invitado.
 >> 4. Haga clic en `Guardar`{.action} para terminar de compartir.
 >>
->> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail .w-600}
 >>
 
 El invitado recibirá un mensaje de correo electrónico invitándole a crear una cuenta Zimbra compuesta por un usuario y una contraseña. Esta cuenta permite acceder a una interfaz Zimbra limitada a lo que se ha compartido.
 
-![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
 
 ### Filtres <a name="filters"></a>
 
@@ -520,7 +545,7 @@ Una regla de filtrado en Zimbra consta de 4 elementos:
 3 - [Valor](#filters-value): qué palabras o elementos del correo electrónico serán el objetivo del filtro.<br>
 4 - [Acciones del filtro](#filters-action): qué va a hacer el filtro en el correo electrónico.<br>
 
-![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
+![Zimbra - filtres](images/zimbra-filters.png){.thumbnail .w-600}
 
 > Ejemplo: Si el campo **Asunto (1)** del mensaje de correo electrónico **contiene (2)** la palabra `factura`**(3)**, **transferir a (4)** la dirección de `contabilidad@example.com`.
 
@@ -530,12 +555,12 @@ En los subcapítulos siguientes, encontrará los detalles de cada uno de los ele
 
 El campo de comparación hace referencia a la sección del mensaje de correo electrónico que se debe comprobar para el operador de comparación. Los campos de comparación pueden incluir los siguientes:
 
-- **De** : especifique un remitente en el campo "De" del correo electrónico.
-- **Para** : buscar nombres de destinatarios en el campo "Para".
-- **CC** : buscar nombres de destinatarios en copia en el campo "CC".
-- **Asunto** : especificar elementos en el asunto del mensaje de correo electrónico.
-- **Cabecera con nombre** : cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar "De", "Para", "Asunto" u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
-- **Texto del mensaje** : se refiere a las palabras que aparecen o no en el cuerpo del mensaje de correo electrónico.
+- **De**: especifique un remitente en el campo "De" del correo electrónico.
+- **Para**: buscar nombres de destinatarios en el campo "Para".
+- **CC**: buscar nombres de destinatarios en copia en el campo "CC".
+- **Asunto**: especificar elementos en el asunto del mensaje de correo electrónico.
+- **Cabecera con nombre**: cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar "De", "Para", "Asunto" u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
+- **Texto del mensaje**: se refiere a las palabras que aparecen o no en el cuerpo del mensaje de correo electrónico.
 
 ##### 2. Operador de comparación <a name="filters-comp-operator"></a>
 
@@ -572,18 +597,18 @@ Una vez que haya seleccionado el campo y el operador de comparación, introduzca
 
 El campo `Entonces` define la acción que debe realizarse en el mensaje de correo electrónico que cumple las condiciones del filtro . Las acciones de filtrado pueden incluir la eliminación, clasificación e incluso marcación del correo electrónico entrante.
 
-- **Mantener en la bandeja de entrada** : guarda los mensajes de correo electrónico en la bandeja de entrada. Si ninguna de las reglas de filtrado coincide con un mensaje de correo electrónico, esta acción se realiza de forma predeterminada.
-- **Mover a la carpeta** : permite mover el mensaje de correo electrónico a una carpeta especificada.
-- **Borrar permanenteme** : elimina el mensaje de correo electrónico sin entregarlo. El mensaje no se encuentra en ninguna de las carpetas, incluida la papelera.
-- **Reenviar a** : reenvía el correo electrónico a la dirección que especifique.
+- **Mantener en la bandeja de entrada**: guarda los mensajes de correo electrónico en la bandeja de entrada. Si ninguna de las reglas de filtrado coincide con un mensaje de correo electrónico, esta acción se realiza de forma predeterminada.
+- **Mover a la carpeta**: permite mover el mensaje de correo electrónico a una carpeta especificada.
+- **Borrar permanenteme**: elimina el mensaje de correo electrónico sin entregarlo. El mensaje no se encuentra en ninguna de las carpetas, incluida la papelera.
+- **Reenviar a**: reenvía el correo electrónico a la dirección que especifique.
 - **Marcar como leído**
-- **Estrella** : marca el correo electrónico con una estrella.
+- **Estrella**: marca el correo electrónico con una estrella.
 
 #### Crear un filtro <a name="filters-creation"></a>
 
 Para acceder a la creación de filtros, haga clic en el icono con forma de rueda dentada situado en la esquina superior derecha de la interfaz de Zimbra, seleccione `Configuración`{.action} y, por último, haga clic en `Filtros`{.action} en la columna izquierda.
 
-![Zimbra - crear filtro](images/zimbra-21.png){.thumbnail}
+![Zimbra - crear filtro](images/zimbra-21.png){.thumbnail .w-600}
 
 Si existen filtros, la lista se muestra en el orden en que se aplican:
 
@@ -596,12 +621,37 @@ Haga clic en el botón `y Añadir un filtro`{.action} para empezar a crear el fi
 > [!tabs]
 > **Modo simple**
 >>
->> ![Zimbra - filtros - modo simple](images/zimbra-22.png){.thumbnail}
+>> ![Zimbra - filtros - modo simple](images/zimbra-22.png){.thumbnail .w-600}
 >>
 > **Modo avanzado**
 >>
->> ![Zimbra - filtros - modo avanzado](images/zimbra-23.png){.thumbnail}
+>> ![Zimbra - filtros - modo avanzado](images/zimbra-23.png){.thumbnail .w-600}
 >>
+
+#### Crear una redirección <a name="filters-redirection"></a>
+
+Es posible utilizar un filtro para redirigir los correos electrónicos recibidos a otra dirección mediante una regla de transferencia.
+
+> [!primary]
+>
+> En nuestro ejemplo siguiente, hemos decidido redirigir todos los correos electrónicos entrantes a otra dirección de correo. Para entender el ejemplo en las capturas de pantalla, estamos conectados en la dirección **zimbra@mydomain.ovh** y queremos redirigir los correos de esta cuenta a la dirección **address@example.com**.
+>
+
+Para acceder a los filtros y crear su redirección, siga estas instrucciones:
+
+- Haga clic en el botón `⚙`{.action} en la esquina superior derecha de su ventana de webmail.
+- Haga clic en `Configuración`{.action}.
+- Haga clic en la sección `Filtros`{.action} desde la ventana de configuración.
+- Haga clic en el botón `Añadir un filtro`{.action}.
+    - Primero, haga clic en <u>Modo avanzado</u> en la esquina superior derecha para configurar esta regla.
+    - Asigne un nombre a su filtro en el campo `Nombre del filtro`.
+    - Deje el menú desplegable en `todas` en la frase "Si un mensaje entrante cumple ... de estas condiciones".
+    - En la línea siguiente, elija `A`{.action} (To), deje `contiene`{.action} (contains), y escriba la dirección de correo en la que está conectado en el campo justo a la derecha.
+    - Bajo la etiqueta "Entonces" (Then), seleccione `Transferir a` (Forward to) en el menú desplegable y escriba la dirección de correo de destino.
+    - Haga clic en `+ Añadir una acción`{.action} (Add an action) más abajo, luego seleccione `Mantener en la bandeja de entrada` (Keep in Inbox).
+    - Haga clic en `Guardar`{.action} en la ventana de su filtro y también en la ventana de configuración.
+
+![zimbra](images/zimbra_redirection03.png){.thumbnail .w-600}
 
 ### Delegaciones <a name="delegations"></a>
 
@@ -613,18 +663,18 @@ Es posible delegar su cuenta de correo a otra cuenta de correo. que deben compar
 >
 > Una cuenta de correo con el mismo nombre de dominio pero en otra solución de correo no puede recibir la delegación.
 
-![Correo electrónico](images/zimbra-delegation.png){.thumbnail}
+![Correo electrónico](images/zimbra-delegation.png){.thumbnail .w-600}
 
 **(1) Delegados**. Para delegar su cuenta de correo electrónico en otra cuenta, haga clic en `Añadir delegados`{.action}.
 
-- **Enviar como"** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
-- **Enviar de parte de** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando "en nombre de" dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
+- **Enviar como"**: la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
+- **Enviar de parte de**: la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando "en nombre de" dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
 
 **(2) Delegar la configuración de envío**. Al delegar su dirección de correo electrónico a otra, puede:
 
-- **Guardar los mensajes enviados en mi carpeta Enviados** : Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta "Enviados".
-- **Guardar los mensajes enviados en la carpeta Enviados del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados".
-- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados" así como en su carpeta "Enviados".
+- **Guardar los mensajes enviados en mi carpeta Enviados**: Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta "Enviados".
+- **Guardar los mensajes enviados en la carpeta Enviados del delegado**: Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados".
+- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado**: Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados" así como en su carpeta "Enviados".
 - **No guardar los mensajes enviados**: si la persona delegada en su cuenta envía un email desde su dirección de correo electrónico, no habrá ninguna copia de hecho.
 
 ### Firma <a name="signatures"></a>

@@ -37,7 +37,7 @@ A continuación recordamos las distintas variantes de L1 Terminal Fault:
 
 En lo que respecta a la solución **Private Cloud**, la gama SDDC es la única que puede verse afectada por esta vulnerabilidad.
 
-En [este artículo](https://www.ovh.es/noticias/articulos/al516.l1-terminal-fault-l1tf-o-foreshadow-ultima-vulnerabilidad){.external-link} explicamos el fallo en profundidad.
+En [este artículo](https://www.ovh.es/noticias/articulos/al516.l1-terminal-fault-l1tf-o-foreshadow-ultima-vulnerabilidad) explicamos el fallo en profundidad.
 
 ## Mitigación de la vulnerabilidad
 
@@ -48,15 +48,15 @@ En [este artículo](https://www.ovh.es/noticias/articulos/al516.l1-terminal-faul
 > Debido a que la vulnerabilidad L1TF necesita el hyperthreading para poder funcionar, desactivarlo previene que el fallo sea explotado en su infraestructura.
 >
 
-El procedimiento de mitigación se describe en el siguiente artículo de VMware: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
+El procedimiento de mitigación se describe en el siguiente artículo de VMware: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806).
 
 Consta de tres fases, que se explican a continuación.
 
 ### 1. Actualización
 
-Aunque OVHcloud actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}.
+Aunque OVHcloud actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
-Puede consultar la lista de parches para los hosts ESXi en las [recomendaciones de seguridad de VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Puede consultar la lista de parches para los hosts ESXi en las [recomendaciones de seguridad de VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Tras la actualización, aparecerá el siguiente mensaje de alerta en el resumen del host:
 
@@ -66,7 +66,7 @@ Tras la actualización, aparecerá el siguiente mensaje de alerta en el resumen 
 
 Los hosts ESXi ya están actualizados, pero el parche todavía no se ha aplicado.
 
-Antes de hacerlo, debe considerar los posibles problemas que se explican en el [artículo de VMware](https://kb.vmware.com/s/article/55806){.external-link} anteriormente citado, así como la disminución del rendimiento observada, que se detalla en [este artículo](https://kb.vmware.com/s/article/55767){.external-link}.
+Antes de hacerlo, debe considerar los posibles problemas que se explican en el [artículo de VMware](https://kb.vmware.com/s/article/55806) anteriormente citado, así como la disminución del rendimiento observada, que se detalla en [este artículo](https://kb.vmware.com/s/article/55767).
 
 ### 3.  Activación
 
@@ -78,11 +78,11 @@ Puede utilizar el filtro situado en la parte superior derecha de la pantalla.
 
 Realice esta operación en cada host.
 
-Para más información, consulte el apartado «Resolution», punto 3, de [este artículo de VMware](https://kb.vmware.com/s/article/55806){.external-link}.
+Para más información, consulte el apartado «Resolution», punto 3, de [este artículo de VMware](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Si, teniendo en cuenta todo lo anterior, no desea desactivar el hyperthreading, puede eliminar el mensaje de alerta siguiendo los pasos que se indican en [este artículo](https://kb.vmware.com/s/article/57374){.external-link}.
+> Si, teniendo en cuenta todo lo anterior, no desea desactivar el hyperthreading, puede eliminar el mensaje de alerta siguiendo los pasos que se indican en [este artículo](https://kb.vmware.com/s/article/57374).
 > 
 > ![Borrar mensaje de alerta](images/deleteWarning.png){.thumbnail}
 > No obstante, OVHcloud no lo recomienda y no podrá ser considerada responsable de las consecuencias que de ello se deriven.

@@ -28,7 +28,7 @@ To successfully update your Kubernetes cluster plan within OVHcloud, ensure you 
 
 While this guide focuses on your current plan, it can be helpful to understand the differences between the Free and Standard plans. The Standard plan offers additional features such as cross-AZ resilience, higher availability SLA, dedicated etcd, and larger maximum cluster size.
 
-For a complete overview, including a detailed comparison table between Free and Standard, please refer to the **Free vs Standard comparison** part of our [MKS Standard Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium) guide. The table in that guide provides a clear side-by-side comparison of key features.
+For a complete overview, including a detailed comparison table between Free and Standard, please refer to the **Free vs Standard comparison** part of our guide [Choosing the right OVHcloud Managed Kubernetes Plan: Free or Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans) guide. The table in that guide provides a clear side-by-side comparison of key features.
 
 ## Instructions
 
@@ -73,7 +73,7 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 > [!primary]
 >
-> The Standard plan is currently available only in 3AZ regions (Paris). Make sure your migration targets a compatible region to avoid deployment issues.
+> The Standard plan is currently available only in 3AZ regions. Make sure your migration targets a compatible region to avoid deployment issues.
 >
 
 ### 4. Restore your backups onto the new cluster

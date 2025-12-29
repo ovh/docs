@@ -35,19 +35,23 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 /// details | Informations relatives à la gestion et configuration des services OVHcloud
 
-OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+Ce guide vous montre comment utiliser des solutions OVHcloud avec des outils externes ainsi que les modifications à apporter dans des contextes spécifiques. Il se peut que vous deviez adapter les instructions en fonction de votre situation.
 
-Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) et/ou d'en discuter avec notre communauté. OVHcloud ne peut pas vous fournir d’assistance technique sur l'utilisation d'outils externes. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ///
 
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager). Rendez-vous dans la rubrique `Web Cloud`{.action} puis cliquez sur `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
+> 1. Cliquez sur `Email Pro`{.action}.
+> 1. Sélectionnez la plateforme concernée.
+> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 
 ### Ajouter le compte
 
@@ -105,7 +109,7 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 >>  - **Méthode d'authentification** : Mot de passe normal
 >>  - **Nom d'utilisateur** : Votre adresse e-mail complète
 >> 
->> 1\. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.
+>> 1\. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.<br>
 >> 2\. Cliquez sur `Continuer`{.action} pour valider ces paramètres.
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
@@ -142,7 +146,7 @@ OVHcloud propose également une application web permettant d'accéder à votre a
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter) ».
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ».
 
 ### Modifier les paramètres existants
 

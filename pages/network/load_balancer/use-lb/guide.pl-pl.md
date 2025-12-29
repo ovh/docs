@@ -5,12 +5,13 @@ updated: 2025-07-30
 ---
 
 ## Wprowadzenie
+
 Niniejsza instrukcja ma na celu zapewnienie użytkownikowi pomocy we wdrożeniu usługi Load Balancer i przedstawienie jej głównych funkcji.
 
 ## Wymagania początkowe
 
-- Dostęp do Twojego Panelu klienta
-- Zamówienie rozwiązania [Load Balancer](/links/network/load-balancer)
+- Posiadanie usługi [OVHcloud Load Balancer](/links/network/load-balancer) na koncie OVHcloud.
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -96,7 +97,7 @@ Po utworzeniu farmy serwerów pozostaje dodać do niej serwery (poniżej przedst
 
 Do Load Balancera można dodać  certyfikatSSL w sekcji `Certyfikat SSL`{.action}. Tu dostępne są dwie możliwości – zamówienie certyfikatu SSL poprzez OVH lub dodanie certyfikatu zewnętrznego.
 
-#### Certyfikat SSL OVH
+#### Certyfikat SSL OVHcloud
 
 W celu zamówienia certyfikatu SSL wystarczy przejść do sekcji `Certyfikat SSL`{.action}, a następnie kliknąć `Zamów certyfikat SSL`{.action} i zastosować się do podanych instrukcji:
 

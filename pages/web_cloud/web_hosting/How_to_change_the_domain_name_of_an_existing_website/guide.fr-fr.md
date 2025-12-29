@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage - Comment changer le domaine d'un site existant"
 excerpt: "Découvrez comment changer le nom de domaine d'un site existant"
-updated: 2022-10-25
+updated: 2025-10-28
 ---
 
 ## Objectif
@@ -37,7 +37,7 @@ Pour changer le nom de domaine d'accès à votre site web, plusieurs étapes son
 
 ### Etape 1 - déclarer le nouveau domaine sur votre hébergement mutualisé <a name="step1"></a>
 
-Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un multisite sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
+Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un site web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
 
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
@@ -53,20 +53,11 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 > **Certificats SSL**
 >
-> Si le domaine initialement utilisé pour accéder à votre site dispose d'un certificat SSL, consultez nos deux guides afin d'effectuer ou de vérifier les actions décrites juste en dessous de ces deux liens :
+> Si le domaine initialement utilisé pour accéder à votre site web dispose d'un certificat SSL, consultez nos 2 guides :
 > - [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
->
-> Pour le certificat SSL *Let's Encrypt* gratuit, il vous suffit d'activer l'option `SSL` **dès à présent** pour votre nouveau domaine via l'onglet `Multisites`{.action} de votre hébergement. Cliquez ensuite sur le bouton `Actions`{.action} au dessus du tableau indiquant vos multistes puis sur `Régénérer le certificat SSL`{.action}. La régénération prendra au minimum 2 heures pour être réalisée.
->
-> Pour les certificats SSL payants *Sectigo DV* et *Sectigo EV* proposés par OVHcloud, ces derniers sont uniquement valables pour un seul nom de domaine et son sous-domaine en `www`.<br>
-> **Une fois arrivé à [l'étape 3](#step3) de ce guide**, vous devrez supprimer votre certificat SSL payant afin d'en souscrire un autre pour votre nouveau domaine.<br>
-> *Attention, la suppression est irréversible et aucun remboursement ne sera effectué pour le temps restant de votre ancien certificat SSL. Assurez-vous que les étapes 1 et 2 sont correctement réalisées.*
->
-> Pour les autres certificats SSL *custom* que vous auriez installés par vous-même, contactez votre fournisseur de certificats SSL afin de connaître les possibilités qui s'offrent à vous dans cette situation.
->
 
-Si l'ensemble des actions ont été correctement réalisées, les déclarations en multisites de vos domaines doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
+Si l'ensemble des actions ont été correctement réalisées, les déclarations de vos noms de domaine doivent être strictement identiques **sauf si vous utilisez un certificat SSL payant de type *Sectigo DV*, *Sectigo EV* ou *custom***.
 
 ![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -123,18 +114,18 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau domaine est pleinement opérationnel avec votre site, vous devrez supprimer la déclaration en multisites pour votre ancien domaine à l'aide du guide sur la gestion des [multisites sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau nom de domaine est pleinement opérationnel avec votre site web, vous devrez supprimer la déclaration de votre ancien nom de domaine sur votre site web à l'aide du guide sur la gestion des [sites web sur votre hébergement mutualisé](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > N'oubliez pas de vous occuper de votre certificat SSL *Sectigo EV*, *Sectigo DV* ou *Custom* comme précisé dans [l'étape 1](#step1).
 >
 
-Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
+Une fois votre ancien nom de domaine dissocié de votre site web présent sur votre hébergement web et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). Cela permettra à vos visiteurs d'être automatiquement redirigés vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Liste des IPs de nos hébergements mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+[Liste des adresses IP de nos hébergements mutualisés](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
 [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
@@ -142,7 +133,7 @@ Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregis
 
 [Rediriger un domaine](/pages/web_cloud/domains/redirect_domain_name)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

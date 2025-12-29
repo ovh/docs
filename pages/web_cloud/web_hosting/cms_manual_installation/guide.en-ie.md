@@ -1,7 +1,7 @@
 ---
-title: 'Installing a CMS manually on your Web Hosting plan'
-excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
-updated: 2024-03-28
+title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
+excerpt: "Find out more about some of the compatible CMS for Web Hostings"
+updated: 2025-10-28
 ---
 
 ## Objective
@@ -114,9 +114,9 @@ To install a CMS on your [web hosting plan](/links/web/hosting), you will need t
 
 #### 1.1 Check the root folder declaration
 
-The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
+The "root folder" corresponds to the directory in which your future CMS will be installed in your hosting. It is recommended to choose an empty directory to avoid conflicts with your other potential websites.
 
-Please refer to our documentation, which describes [how to add a multisite on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite), in order to define the root directory to use with your CMS.
+Refer to our documentation which describes [how to create a website on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) to define the root folder to use with your CMS.
 
 > [!primary]
 >

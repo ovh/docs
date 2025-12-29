@@ -1,4 +1,5 @@
 disable_languages:
+- de-de
 - fr-ca
 - en-ca
 - en-asia
@@ -6,5 +7,7 @@ disable_languages:
 - en-sg
 - en-us
 - es-us
+- pt-pt
 id: 6a591dad-2a0e-41a2-b817-5db045123170
 full_slug: sms-users
+translation_banner: true

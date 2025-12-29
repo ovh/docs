@@ -1,7 +1,7 @@
 ---
 title: "Mi sitio es lento. ¿Qué hacer?" 
 excerpt: "Identifique el origen de la lentitud de su sitio web y descubra cómo solucionar esta situación"
-updated: 2023-10-26
+updated: 2025-11-17
 ---
 
 ## Objetivo
@@ -32,7 +32,6 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 > Si necesita un servicio con una tasa de disponibilidad SLA superior al 99%, le recomendamos que considere la posibilidad de utilizar un [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) o un [Servidor Dedicado](/links/bare-metal/bare-metal).
 >
 > Por otro lado, el rendimiento de la infraestructura de alojamientos compartidos OVHcloud se monitoriza las 24 horas del día, los 7 días de la semana. Esto le garantiza un alto índice de disponibilidad y, en su caso, una rápida recuperación de sus servicios en caso de sobrecarga comprobada.*
->
 
 ## Requisitos
 
@@ -46,12 +45,10 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
 > Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.
->
 
 > [!success]
 >
 Le recomendamos que anote sus resultados de diagnóstico a medida que avance en esta guía. En efecto, estos resultados serán muy útiles para la resolución de su situación, independientemente del origen de la lentitud.
->
 
 ### Entender el concepto de Time To First Byte (TTFB)
 
@@ -69,13 +66,13 @@ ya que, para los sistemas de gestión de contenidos (CMS) como WordPress, Joomla
 >
 > Una vez que la solicitud llega al archivo "**index.php**", este será ejecutado por el servidor web de su alojamiento compartido. 
 >
->En su ejecución, el archivo "**index.php**" debe recuperar la información de los demás ficheros que componen su sitio web, o incluso de los elementos presentes en su base de datos. 
+> En su ejecución, el archivo "**index.php**" debe recuperar la información de los demás ficheros que componen su sitio web, o incluso de los elementos presentes en su base de datos. 
 >
->Cada una de estas solicitudes de información genera una petición interna al servicio de alojamiento. 
+> Cada una de estas solicitudes de información genera una petición interna al servicio de alojamiento. 
 >
->El archivo "**index.php**" esperará a tener el resultado de todas las peticiones internas que haya solicitado **antes** para devolver el primer byte de datos al navegador de internet.
+> El archivo "**index.php**" esperará a tener el resultado de todas las peticiones internas que haya solicitado **antes** para devolver el primer byte de datos al navegador de internet.
 >
->Si su archivo "**index.php**" genera peticiones "lentas" o pesadas para ejecutarse, el TTFB será elevado y su sitio web tardará varios segundos en mostrarse. En ese caso, el rendimiento de su plan de hosting no se verá afectado.
+> Si su archivo "**index.php**" genera peticiones "lentas" o pesadas para ejecutarse, el TTFB será elevado y su sitio web tardará varios segundos en mostrarse. En ese caso, el rendimiento de su plan de hosting no se verá afectado.
 
 Las herramientas de diagnóstico en línea le permiten recuperar el TTFB de su alojamiento. Sin embargo, la mayoría de ellos funcionan como navegadores de Internet y, por lo tanto, sus resultados deben ser relativistas.<br>
 ya que estas herramientas no son capaces de responder a las peticiones internas solicitadas por el archivo que ha llamado a través de su navegador, como en el ejemplo anterior con el archivo "**index.php**".
@@ -93,13 +90,7 @@ Todos los diagnósticos del etapa 1 deben realizarse **sin excepción** para det
 
 Para asegurarse de que sus servicios (alojamiento compartido **et** de la base de datos) no son objeto de mantenimiento o de incidente, consulte la información del cluster y el filer de su alojamiento compartido, así como la información general relativa a su base de datos. Compruebe su estado en [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
-
-![Obtener Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
-
-A continuación, abra la pestaña `Multisitios`{.action} para obtener el número del cluster en el que se encuentra el alojamiento compartido.
-
-![Obtener cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
+Para conocer el cluster y el filer donde se encuentra su alojamiento compartido, consulte nuestra guía "[Web hosting - Cómo conocer su cluster y su filer](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer)".
 
 > [!success]
 >
@@ -108,7 +99,6 @@ A continuación, abra la pestaña `Multisitios`{.action} para obtener el número
 > Puede suscribirse a la declaración de incidencia o mantenimiento con su dirección de correo electrónico para recibir una notificación por correo electrónico del progreso de las operaciones.
 >
 > Una vez que se haya marcado el estado de la incidencia o del mantenimiento como **resuelto**, la estabilización de la carga acumulada puede tardar un máximo de **3 horas** después de la notificación de resolución para resolverse por completo.
->
 
 Si no se reportan incidentes ni mantenimiento, prosiga sus diagnósticos.
 
@@ -135,7 +125,6 @@ phpinfo();
 > Las operaciones en un archivo "**.htaccess**" pueden afectar a la visualización de su sitio web. Si tiene dificultades para realizar lo siguiente, contacte con un [proveedor especializado](/links/partner).
 >
 > Si no aparece y **solo para usuarios avanzados**, renombre los archivos "**.htaccess**" en "***.htaccess_OLD**" para que el servidor no los ejecute durante el tiempo de prueba. Una vez realizado el diagnóstico, renombre correctamente.
->
 
 **Ejemplo**: si el dominio que permite el acceso a su sitio web es "domain.tld" y si el archivo "**phpinfo.php**" se encuentra en la raíz de su sitio web, podrá acceder a él a través de la siguiente URL: `http://domain.tld/phpinfo.php` (o `https://domain.tld/phpinfo.php`).
 
@@ -144,7 +133,6 @@ phpinfo();
 > Si la llamada del archivo "**phpinfo.php**" muestra un array de configuración **instantáneamente**, significa que la ralentización no proviene del alojamiento compartido en el que se encuentra su sitio web. De lo contrario, el archivo se mostraría tan lentamente como el resto de páginas. 
 >
 > En otras palabras, si la lentitud está presente únicamente en una parte de las páginas o del contenido de su sitio web, significa que el alojamiento compartido **no es la causa de la lentitud** encontrada en su sitio web.
->
 
 #### 1.4 - Pruebe la conectividad de su base de datos:
 
@@ -157,7 +145,6 @@ Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 > [!warning]
 >
 > Si se produce un error, consulte nuestra documentación sobre los [errores comunes encontrados con una base de datos](/pages/web_cloud/web_hosting/diagnosis_database_errors). A continuación, utilice la guía para corregir su situación e intente volver a conectarse a la base de datos.
->
 
 #### 1.5 - Interpretación de los diagnósticos efectuados
 
@@ -186,7 +173,6 @@ En este punto, ya sabrá que la ralentización es causada por las páginas, scri
 > [!warning]
 >
 > Si tiene dificultades para realizar las siguientes acciones, puede contactar con uno de nuestros [proveedores especializados](/links/partner). OVHcloud no ayudará en el desarrollo o la optimización del contenido de su sitio web.
->
 
 A continuación se indican las acciones que debe realizar para identificar las fuentes de la lentitud y optimizar su sitio web.
 
@@ -236,21 +222,18 @@ Cuanto menor sea el número de peticiones, menos se solicitarán los recursos de
 > Para ello, pulse la tecla `F12` cuando esté en su navegador Firefox y seleccione la pestaña `Red`. Recargue su página web con las teclas `Ctrl + Mayús + R` para que la herramienta muestre las peticiones que se ejecutan para cargar su página. Identifique los elementos más largos a cargar para luego optimizarlos.
 >
 >![Análisis de red Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
->
 
 Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, también puede crear una Content Delivery Network (CDN). que permite almacenar en caché el contenido estático de su sitio web. Su alojamiento web tendrá menos carga y dispondrá de más recursos para tratar el resto de las peticiones que no puedan ser puestas en caché.
 
 > [!primary]
 >
 > OVHcloud ofrece varios [productos CDN](/links/web/hosting-options). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
->
 
 #### 2.4 - Optimice su base de datos
 
 > [!warning]
 >
 > Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](/links/partner) si no está seguro de las acciones a realizar. 
->
 
 Compruebe si se realizan un número considerable de consultas a la base de datos.<br>
 De hecho, esta situación puede provocar una sobrecarga y provocar ralentizaciones, incluso a los códigos "504 Gateway Timeout".

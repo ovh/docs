@@ -4,11 +4,6 @@ excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
 updated: 2025-04-28
 ---
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/s9Kt5lG)
-
 ## Wprowadzenie
 
 Aby korzystać z usług OVHcloud, należy najpierw założyć konto.

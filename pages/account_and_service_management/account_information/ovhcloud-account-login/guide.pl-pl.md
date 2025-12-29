@@ -4,11 +4,6 @@ excerpt: 'Dowiedz się, jak zalogować się do Twojego konta OVHcloud'
 updated: 2025-04-28
 ---
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/OiIwy54)
-
 ## Wprowadzenie
 
 Zarządzanie usługami odbywa się głównie w Panelu klienta OVHcloud.

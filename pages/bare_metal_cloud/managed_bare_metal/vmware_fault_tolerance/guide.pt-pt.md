@@ -52,7 +52,7 @@ Estão disponíveis várias operações em função das suas necessidades.
 
 Numa máquina virtual com **Fault Tolerance** ativado, já não é possível efetuar certas ações, nem utilizar determinados periféricos.
 
-Consulte a lista das ações impossíveis [nesta página](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link} e a lista das incompatibilidades [aqui](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
+Consulte a lista das ações impossíveis [nesta página](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html) e a lista das incompatibilidades [aqui](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html).
 
 ## Quer saber mais?
 

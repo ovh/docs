@@ -1,7 +1,7 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2025-09-08
+updated: 2025-10-31
 ---
 
 ## Objectif
@@ -78,6 +78,8 @@ Dans le tableau, les colonnes suivantes sont présentes :
 - **IP de destination** - l'IP qui a été la cible de l'attaque.
 - **Vecteurs d’attaque** - gournit des informations sur les types d’attaques détectés, tels que les attaques UDP ou TCP, etc.
 
+**La durée de rétention des logs du centre de nettoyage est d'un an.**
+
 > [!warning]
 >
 > Veuillez noter que les adresses IP sources des événements détectés ne sont pas affichées. C'est intentionnel de notre part car, la plupart du temps, elles sont usurpées (*spoofed*) (les attaques DDoS peuvent pointer vers des sources autres que celles dont elles proviennent réellement) et ces informations seraient trompeuses ou inutilisables.
@@ -88,6 +90,8 @@ Dans l'onglet **Graphique du trafic**, vous pouvez voir un graphique illustrant 
 ![red-line-attack](images/nsd_graph_tab_blur.png)
 
 Il présente le trafic malveillant qui a été supprimé (**en rouge**) et le trafic « propre » livré à votre adresse IP (**en vert**). Des statistiques de mitigation de base sont également affichées, c'est-à-dire : combien d'attaques ont été détectées pour une IP sélectionnée, quel volume de trafic (ou de paquets) a été nettoyé pendant les attaques ou combien de fois les centres de nettoyage ont entrepris une action pour inspecter votre trafic (nombre d'événements) dans une période de temps sélectionnée.
+
+**La durée de rétention des données de trafic est de deux mois.**
 
 ## FAQ
 
@@ -108,7 +112,7 @@ Ces données ne sont disponibles que pour les adresses IP publiques lors des év
 
 ### Je ne peux pas afficher le graphique de trafic pour certains périodes dans les logs du centre de nettoyage
 
-Les données du Network Security Dashboard ne sont disponibles que pour les deux dernières semaines, tandis que les entrées du journal peuvent être examinées pour l'année écoulée.
+Le graphique de trafic n'est disponible que pour les deux derniers mois, tandis que les logs peuvent être examinés pour l'année écoulée.
 
 ### Je suis attaqué, comment protéger au mieux mon serveur ?
 

@@ -78,11 +78,11 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 > - External contacts
 > - [Footer](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
-Migrate the source email account to your new platform account using our [OMM](https://omm.ovh.net/) tool (OVH Mail Migrator).
+Migrate the source email account to your new platform account using our [OMM](/links/web/omm) tool (OVHcloud Mail Migrator).
 
-> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](https://omm.ovh.net/Project/Create). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
+> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](/links/web/omm). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
-For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+For more information on OMM, please read our guide on [Migrating email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 
@@ -118,7 +118,7 @@ If you have configured one of the migrated accounts on a local email client (e.g
 
 > [!primary]
 >
-> You can also manually migrate external email addresses to OVHcloud by using our [OVH Mail Migrator](https://omm.ovh.net/) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
+> You can also manually migrate external email addresses to OVHcloud by using our [OVHcloud Mail Migrator](/links/web/omm) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
 >
 
 ## Go further

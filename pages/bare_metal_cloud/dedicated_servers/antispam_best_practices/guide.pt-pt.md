@@ -4,10 +4,6 @@ excerpt: Descubra as nossas boas práticas antisspam e como desbloquear um ender
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Para cada endereço IP disponível nos produtos e serviços da OVHcloud, na qualidade de Fornecedor de Acesso à Internet, registá-lo-emos e reservá-lo-emos junto de organizações como a [RIPE](https://www.ripe.net/) ou a [ARIN](https://www.arin.net/). Neste caso, parecemos ser o contacto *abusivo* da propriedade intelectual em caso de litígio na base de dados *WHOIS*.
@@ -180,7 +176,7 @@ Eis um exemplo:
 
 > [!alert]
 > IMPORTANTE!
-Não desbloqueie de forma alguma o endereço IP sem ter suspendido o envio dos e-mails a partir do seu servidor e esvaziado a sua fila de espera de e-mails. Caso contrário, será imediatamente bloqueado uma segunda vez, por um período mais longo. 
+> Não desbloqueie de forma alguma o endereço IP sem ter suspendido o envio dos e-mails a partir do seu servidor e esvaziado a sua fila de espera de e-mails. Caso contrário, será imediatamente bloqueado uma segunda vez, por um período mais longo. 
 >
 
 Para desbloquear o seu endereço IP, utilize a seguinte chamada:
@@ -216,4 +212,4 @@ Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificad
 
 ## Quer saber mais?
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

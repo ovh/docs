@@ -63,7 +63,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}. 
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
@@ -102,7 +102,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}. 
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

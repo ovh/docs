@@ -28,7 +28,7 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 The Cross Service Integrations for Logs and Metrics allow you for example:
 
-- To send Valkey or MySQL metrics or Cassandra metrics in PostgreSQL.
+- To send Valkey or MySQL metrics in PostgreSQL.
 - To send PostgreSQL or MySQL metrics to OpenSearch.
 - To show metrics in Dashboards service.
 
@@ -150,11 +150,6 @@ From the resulting list, select and copy the service identifier corresponding to
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
->> >
 > Dashboards
 >> > [!api]
 >> >
@@ -203,10 +198,6 @@ Open the following API call, paste your service ID into the `serviceName` input 
 Get integration capabilities related to your Public Cloud Databases service:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/integration
->> >
 > Dashboards
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/grafana/{clusterId}/capabilities/integration
@@ -249,10 +240,6 @@ As a first step, you need to push your metrics or logs somewhere, in order to st
 For that, you need to create a new integration:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
->> >
 > Dashboards
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
@@ -305,10 +292,6 @@ Once done, get the `GrafanaDashboard` integration capability related to the dest
 Then create a second integration from your *Destination* service name:
 
 > [!tabs]
-> Cassandra
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
->> >
 > Dashboards
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration

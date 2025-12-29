@@ -1,14 +1,14 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of" ?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2023-05-04
+updated: 2025-10-28
 ---
 
 ## Objetivo
 
 En al menos uno de los siguientes casos aparece una página **"Index of"**:
 
-- La configuración [Multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su nombre de dominio no está correctamente configurada hacia su directorio de destino
+- La [configuración de su nombre de dominio con su sitio web](/pages/web_cloud/web_hosting/multisites_configure_multisite) no está correctamente configurada hacia su directorio objetivo.
 - La carpeta de destino a la que apunta su dominio no contiene archivos **"index.html"** o **"index.php"**
 
 ![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
@@ -42,11 +42,11 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`, que 
 >
 > Para asociar temporalmente su dominio a un `Carpeta raíz` que no contiene un archivo **index.php** o **index.html**, puede prohibir que se muestre la lista de carpetas de su sitio web siguiendo este [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
+> Le recomendamos que acuda a un [proveedor especializado](/links/partner) si tiene dificultades para configurar esta opción. De hecho, nuestros equipos de soporte no podrán ayudarle en cuanto a cualquier modificación del código interno de su sitio web.
 
 ### Solucionar el caso más común de una página "Index of"
 
-Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su alojamiento por [FTP](/pages/web_cloud/web_hosting/ftp_connection). Su dominio no está asociado a esta carpeta en la columna `Carpeta raíz` de su `Multisitio`{.action}.
+Ha importado los archivos de su sitio **mydomain.ovh** en la carpeta `www` de su alojamiento mediante [FTP](/pages/web_cloud/web_hosting/ftp_connection). Sin embargo, su nombre de dominio no está vinculado a esta carpeta en la columna `Carpeta raíz` de su sitio web.
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 

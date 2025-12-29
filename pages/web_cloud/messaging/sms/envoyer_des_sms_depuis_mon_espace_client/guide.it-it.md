@@ -1,7 +1,7 @@
 ---
 title: Inviare SMS dallo Spazio Cliente
 excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
-updated: 2024-10-10
+updated: 2025-10-28
 ---
 
 ## Obiettivo
@@ -24,6 +24,9 @@ Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
 ### Step 1: Configura il mittente e il destinatario
+
+> [!primary]
+> Per ulteriori informazioni sulla creazione e sull'utilizzo di un mittente, consultare la nostra guida "[Tutto ciò che devi sapere sui mittenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
 Una volta nella pagina di invio SMS, è necessario configurare tre distinti parametri per adattare al meglio l’invio di SMS alle tue esigenze.
 
@@ -68,48 +71,6 @@ Attenzione: l’utilizzo di caratteri non presenti in queste tabelle comporta il
 In questa sezione è possibile effettuare un invio immediato o differito (1).
 
 Sono disponibili tre formati di invio (Standard/Flash/Sim) (2) ma questa funzionalità è obsoleta.
-
-### Step 3: scegli il mittente del tuo SMS
-
-#### Breve numero che consente ai destinatari di inviare le risposte
-
-**Solo per gli account OVHcloud in Francia escluso DOM-TOM.**
-
-Consente di ricevere una risposta tramite la scheda SMS ricevuti.
-
-#### Numero mobile virtuale
-
-**Solo per gli account OVHcloud in Francia.**
-
-Se disponi di un’offerta SMS con numero di cellulare virtuale, puoi inserirlo come mittente. Per maggiori informazioni, consulta la nostra [pagina sui numeri di cellulare virtuali ](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
-
-> [!primary]
->
->Se disponi già di un account SMS, non è possibile creare un nuovo numero virtuale per questo account. Sarà infatti necessario ordinare un nuovo account SMS dalla pagina Web del numero di cellulare virtuale.
->
-
-#### Mittente alfanumerico
-
-È possibile personalizzare il mittente. Pertanto non è più possibile ricevere una risposta da parte del destinatario del tuo SMS. Per accedere alla gestione dei mittenti SMS, seleziona la scheda `Mittenti`{.action}(1) dell’account SMS interessato.
-
-![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
-
-Per aggiungere un ulteriore mittente SMS, clicca sul pulsante `Azioni`{.action} al centro e seleziona `Aggiungi`{.action} (2).
-
-![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
-
-Nella nuova pagina, sono disponibili diverse opzioni per configurare un nuovo mittente SMS (3): 
-
-- **Aggiungi manualmente i mittenti**: È necessario inserire il mittente, la descrizione e il motivo per cui si utilizza questo determinato mittente. È inoltre necessario un documento giustificativo (4).
-
-> [!primary]
->
-> Ti chiediamo un documento giustificativo per la nostra politica di sicurezza. Si tratta di una carta intestata della società o del marchio, che include l'autorizzazione di un responsabile con firma e timbro della stessa società, di una carta d'identità o di una visura camerale nel caso di marchi non depositati.
->
-
-- **Aggiungi mittenti a partire dai dati personali**: È possibile richiedere un mittente, basandosi sulle credenziali del tuo account OVHcloud. A questo punto, visualizzi un menu a tendina con la lista dei destinatari disponibili.
-
-- **Aggiungi mittenti a partire dai tuoi domini OVHcloud** : È possibile utilizzare un dominio disponibile nel tuo account OVHcloud in qualità di mittente. A questo punto, visualizzi un menu a tendina con la lista dei destinatari disponibili.
 
 ## Per saperne di più
 

@@ -1,7 +1,7 @@
 ---
 title: Repartitioning a VPS after a storage upgrade
 excerpt: Find out how to increase the usable disk space following an upgrade
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Objective
@@ -160,7 +160,19 @@ First sector (2048-41943039, default 2048): 2048
 Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039.
 ```
 
-On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down instead.
+On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down.
+
+If you see the following message:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Enter `n` and proceed.
+
+Answering `y` would mean overwriting the existing ext4 file system on Partition 1 and agreeing to destroy the data on it.
 
 #### Make the partition bootable
 
@@ -274,4 +286,4 @@ Enter your desired size and click `OK`{.action}. Your volume will now be extende
 
 ## Go further
 
-Join our community of users at <https://community.ovh.com/en/> .
+Join our [community of users](/links/community).

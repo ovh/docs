@@ -130,9 +130,9 @@ No separador `Contas de e-mail`{.action} da plataforma E-mail Pro ou Exchange, c
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Migre** a conta MX Plan para a sua nova plataforma com a nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+3\. **Migre** a conta MX Plan para a sua nova plataforma com a nossa ferramenta [OMM](/links/web/omm) (OVHcloud Mail Migrator).
 
-Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 

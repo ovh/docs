@@ -219,14 +219,14 @@ Para listar e revogar as chaves, é possível utilizar o [portal API](/links/api
 >>
 >> - Obtenha os detalhes de uma chave com a seguinte chamada:
 >>
->> [!api]
+>> > [!api]
 >> >
 >> > @api {v1} /me GET /me/api/application/{applicationId}
 >> >
 >>
 >> - Revogue uma chave com a seguinte chamada:
 >>
->> [!api]
+>> > [!api]
 >> >
 >> > @api {v1} /me DELETE /me/api/application/{applicationId}
 >> >

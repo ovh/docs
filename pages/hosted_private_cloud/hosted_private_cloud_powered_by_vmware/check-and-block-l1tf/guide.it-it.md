@@ -37,7 +37,7 @@ La vulnerabilità L1TF si presenta in tre varianti:
 
 Relativamente al servizio **Private Cloud**, le soluzioni SDDC sono le uniche che potrebbero essere affette da questa vulnerabilità.
 
-Per maggiori informazioni sul bug di sicurezza L1TF, leggi [questo articolo](https://www.ovh.com/world/news/articles/al479.ovh-l1-terminal-fault-l1tf-foreshadow-disclosure){.external-link}.
+Per maggiori informazioni sul bug di sicurezza L1TF, leggi [questo articolo](https://www.ovh.com/world/news/articles/al479.ovh-l1-terminal-fault-l1tf-foreshadow-disclosure).
 
 ## Processo di mitigazione
 
@@ -45,13 +45,13 @@ Per maggiori informazioni sul bug di sicurezza L1TF, leggi [questo articolo](htt
 >
 > Ti ricordiamo che le azioni descritte in questo paragrafo non permettono la correzione della falla di sicurezza, ma esclusivamente la disattivazione dell’Hyper-Threading sugli host ESXi. Per funzionare L1TF ha infatti bisogno di questa tecnologia e disabilitarla protegge pertanto l’infrastruttura dall’esposizione alla vulnerabilità.
 
-Il processo di mitigazione, descritto in [questo articolo](https://kb.vmware.com/s/article/55806){.external-link} di VMware, comprende 3 fasi distinte.
+Il processo di mitigazione, descritto in [questo articolo](https://kb.vmware.com/s/article/55806) di VMware, comprende 3 fasi distinte.
 
 ### 1. Aggiornamento
 
-OVHcloud si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}.
+OVHcloud si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
-Per visualizzare la lista completa delle patch rilasciate per gli host ESXi, consulta le [raccomandazioni sulla sicurezza di VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Per visualizzare la lista completa delle patch rilasciate per gli host ESXi, consulta le [raccomandazioni sulla sicurezza di VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Una volta completato l’aggiornamento, nel riepilogo dell’host compare questo messaggio di alert:
 
@@ -61,7 +61,7 @@ Una volta completato l’aggiornamento, nel riepilogo dell’host compare questo
 
 A questo punto gli host ESXi sono aggiornati, ma la patch non è stata ancora applicata.
 
-Prima di procedere con questa operazione è importante essere consapevoli dei potenziali problemi descritti nell’[articolo di VMware](https://kb.vmware.com/s/article/55806){.external-link} citato precedentemente, e della probabile diminuzione delle prestazioni constatata ed esposta in [questo altro articolo](https://kb.vmware.com/s/article/55767){.external-link}.
+Prima di procedere con questa operazione è importante essere consapevoli dei potenziali problemi descritti nell’[articolo di VMware](https://kb.vmware.com/s/article/55806) citato precedentemente, e della probabile diminuzione delle prestazioni constatata ed esposta in [questo altro articolo](https://kb.vmware.com/s/article/55767).
 
 ### 3. Attivazione
 
@@ -73,11 +73,11 @@ Se necessario, è possibile utilizzare il filtro disponibile in alto a destra ne
 
 L’operazione deve essere ripetuta su ogni host.
 
-Per maggiori informazioni, consulta il punto 3 del paragrafo “Resolution” di [questo articolo di VMware](https://kb.vmware.com/s/article/55806){.external-link}.
+Per maggiori informazioni, consulta il punto 3 del paragrafo “Resolution” di [questo articolo di VMware](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Se, dopo le opportune valutazioni, decidi di mantenere attivo l’Hyper-Threading, è possibile eliminare il messaggio di alert seguendo i passaggi descritti in [questo articolo](https://kb.vmware.com/s/article/57374){.external-link}.
+> Se, dopo le opportune valutazioni, decidi di mantenere attivo l’Hyper-Threading, è possibile eliminare il messaggio di alert seguendo i passaggi descritti in [questo articolo](https://kb.vmware.com/s/article/57374).
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > OVHcloud sconsiglia una soluzione di questo tipo e non potrà in nessun modo essere ritenuta responsabile delle eventuali conseguenze di questa scelta. 

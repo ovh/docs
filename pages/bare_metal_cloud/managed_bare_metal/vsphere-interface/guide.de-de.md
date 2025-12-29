@@ -23,7 +23,7 @@ Die Kennungen werden während der Erstellung der Public Cloud per E-Mail versand
 IP-Adresse/Name: pcc-xxx-xxx-xxx-xxx.ovh.com Nutzername: admin Passwort: xxxxxx
 ```
 
-Dieses Dokument von VMware führt die verschiedenen Ports auf, die Sie in Ihrer Firewall öffnen müssen, um z.B. Zugriff auf die Konsole zu haben: [Zugang zur Konsole](https://kb.vmware.com/s/article/1012382?lang=de){.external-link}
+Dieses Dokument von VMware führt die verschiedenen Ports auf, die Sie in Ihrer Firewall öffnen müssen, um z.B. Zugriff auf die Konsole zu haben: [Zugang zur Konsole](https://kb.vmware.com/s/article/1012382?lang=de)
 
 ### Verwendung des Webclients HTML5
 

@@ -37,7 +37,7 @@ Pour rappel :
 
 Concernant l'offre **Private Cloud**, seules les offres SDDC sont impactées par cette vulnérabilité.
 
-Vous retrouverez les informations de cette faille sur notre [article de blog](https://www.ovh.com/fr/blog/ovh-l1-terminal-fault-l1ft-foreshadow-disclosure/){.external-link}.
+Vous retrouverez les informations de cette faille sur notre [article de blog](https://www.ovh.com/fr/blog/ovh-l1-terminal-fault-l1ft-foreshadow-disclosure/).
 
 ## Processus de mitigation
 
@@ -48,15 +48,15 @@ Vous retrouverez les informations de cette faille sur notre [article de blog](ht
 > Les actions décrivent uniquement comment désactiver l'hyperthreading sur vos hôtes ESXi. Cependant, la faille L1TF nécesitant l'hyperthreading pour fonctionner, sa désactivation protège votre infrastructure de l'exploitation de cette vulnérabilité.
 >
 
-Le processus de mitigation est décrit dans cette base de connaissance VMware : [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
+Le processus de mitigation est décrit dans cette base de connaissance VMware : [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806).
 
 Cette procédure se divise en 3 phases distinctes.
 
 ### Étape 1: Phase de mise à jour
 
-La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}.
+La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
-Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 Suite à la phase de mise à jour des hôtes, le message d'alerte suivant sera présent dans le résumé de votre hôte :
 
@@ -66,7 +66,7 @@ Suite à la phase de mise à jour des hôtes, le message d'alerte suivant sera p
 
 Une fois les hôtes ESXi à jour, le correctif n'est pas encore appliqué.
 
-Il est important d'être conscient des potentiels problèmes listés dans la [base de connaissances](https://kb.vmware.com/s/article/55806){.external-link} mentionnée précedemment, ainsi que les baisses de performances constatées dans cette autre base de connaissance : [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767){.external-link}.
+Il est important d'être conscient des potentiels problèmes listés dans la [base de connaissances](https://kb.vmware.com/s/article/55806) mentionnée précedemment, ainsi que les baisses de performances constatées dans cette autre base de connaissance : [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767).
 
 ### Étape 3 : Phase d'activation
 
@@ -78,11 +78,11 @@ Un filtre est disponible en haut à droite de la fenêtre.
 
 Cette manipulation est à réaliser sur chaque hôte.
 
-Pour en savoir plus, vous pouvez vous rendre à l'étape 3 de la partie résolution présente dans [cette base de connaissance VMware](https://kb.vmware.com/s/article/55806){.external-link}.
+Pour en savoir plus, vous pouvez vous rendre à l'étape 3 de la partie résolution présente dans [cette base de connaissance VMware](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> Si, à la vue de ces différents éléments, vous ne souhaitez pas désactiver l'hyperthreading, vous pouvez supprimer le message d'alerte en suivant cette [base de connaissance](https://kb.vmware.com/s/article/57374){.external-link}.
+> Si, à la vue de ces différents éléments, vous ne souhaitez pas désactiver l'hyperthreading, vous pouvez supprimer le message d'alerte en suivant cette [base de connaissance](https://kb.vmware.com/s/article/57374).
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > OVHcloud ne recommande pas cette solution et se dégage de toute responsabilité concernant cette prise de risque.

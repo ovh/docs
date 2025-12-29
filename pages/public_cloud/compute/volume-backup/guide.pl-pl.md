@@ -1,12 +1,8 @@
 ---
 title: "Tworzenie kopii zapasowej wolumenu"
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
-updated: 2025-04-28
+updated: 2025-12-15
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -30,7 +26,7 @@ Wolumen Snapshot oraz Backup Wolumenu pozwalają na:
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
-- Wolumen [Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud)
+- Odłączony [wolumin Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud)
 
 ## W praktyce
 
@@ -38,11 +34,18 @@ Zaloguj się do Panelu [klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 Następnie otwórz menu `Block Storage`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
 
-Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}. Nie ma potrzeby odłączania najpierw wolumenu od instancji. Jeśli jednak chcesz odłączyć wolumen od instancji, sprawdź tę [sekcję](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#linux) odpowiedniego przewodnika dla systemu Linux i tę [sekcję](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#windows) dla systemu Windows.
+Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}.
+
+> [!primary]
+> 
+> **Aby utworzyć kopię zapasową, wolumin musi najpierw zostać odłączony od swojej instancji.**
+> 
+> - Dla środowiska Linux, zapoznaj się z sekcją **Linux** w przewodniku "[Zarządzanie wolumenem instancji Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Dla środowiska Windows, zapoznaj się z sekcją **Windows** w przewodniku "[Zarządzanie wolumenem instancji Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
 
 ![Backup - tworzenie](images/volumebackup01.png){.thumbnail}
 
-Jeśli wybrałeś opcję Block Storage, należy podać odpowiedni wolumen. W przeciwnym razie wybierz wolumen, który chcesz zapisać.
+Wybierz wolumin, z którego chcesz utworzyć kopię zapasową.
 
 Wybierz rodzaj kopii zapasowej, którą chcesz utworzyć: **Snapshot wolumenu** lub **Backup** wolumenu.
 
@@ -90,7 +93,5 @@ Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym two
 [Tworzenie i konfigurowanie dodatkowego dysku dla instancji](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
 [Zwiększ rozmiar dodatkowego dysku](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
-
-[Przenoszenie kopii zapasowej wolumenu z jednego regionu OpenStack do innego](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

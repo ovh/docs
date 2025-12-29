@@ -1,7 +1,7 @@
 ---
 title: "Tout savoir sur les enregistrements DNS"
 excerpt: "Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -173,8 +173,35 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> Le protocole DANE permet a un client (navigateur internet, client de messagerie e-mail, client FTP, client SSH, etc.) de consulter l'enregistrement TLSA. Ainsi, il s'assure qu'un certificat SSL/TLS utilisé pour un nom de domaine est bien celui certifiant ce même nom de domaine.
 >>
->> Si besoin, retrouvez plus de détails sur le site de l' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Cet enregistrement permet d'indiquer l'adresse e-mail de la personne responsable du nom de domaine. Cet enregistrement peut également être combiné à un enregistrement DNS de type TXT pour fournir de plus amples informations.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Cet enregistrement DNS peut regrouper plusieurs informations pour permettre une connexion plus rapide et plus efficace à votre site web. Il permet aussi, par exemple, d'indiquer directement au navigateur Internet que le site web est compatible HTTP 2 ou HTTP 3, qu'il doit prioriser l'utilisation d'une adresse IP (IPv4 et/ou IPv6) mentionnée en paramètre ou encore de passer par un port d'accès spécifique. Cela permet ainsi au navigateur Internet de récupérer plusieurs informations en une seule requête.
+>>
+>> Cet enregistrement dispose de **2** modes : 
+>>
+>> - **Mode Alias** : ce mode s'active lorsque vous précisez une priorité égale à 0. Contrairement aux enregistrements DNS de type CNAME, elle permet de rediriger un nom de domaine depuis sa propre zone DNS (apex) vers un autre nom de domaine ou sous-domaine.
+>> - **Mode Service** : ce mode s'active lorsque vous précisez une priorité différente de 0. C'est dans ce mode que vous pourrez définir les paramètres que vous souhaitez appliquer à votre nom de domaine (exemples de paramètres : *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En mode **Service**, vous pouvez appliquer ces paramètres directement pour votre nom de domaine, même si ce dernier n'est pas à utiliser comme alias d'un autre nom de domaine.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Cet enregistrement fonctionne comme l'enregistrement DNS de type SVCB mais, contrairement à celui-ci, il est plus spécifique au protocole HTTP. Il peut regrouper plusieurs informations pour permettre une connexion plus rapide et plus efficace à votre site web. Il permet aussi, par exemple, d'indiquer directement au navigateur Internet que le site web est compatible HTTP 2 ou HTTP 3, qu'il doit prioriser l'utilisation d'une adresse IP (IPv4 et/ou IPv6) mentionnée en paramètre ou encore de passer par un port d'accès spécifique. Cela permet ainsi au navigateur Internet de récupérer plusieurs informations en une seule requête.
+>>
+>> Cet enregistrement dispose de **2** modes : 
+>>
+>> - **Mode Alias** : ce mode s'active lorsque vous précisez une priorité égale à 0. Contrairement aux enregistrements DNS de type CNAME, elle permet de rediriger un nom de domaine depuis sa propre zone DNS (apex) vers un autre nom de domaine ou sous-domaine.
+>> - **Mode Service** : ce mode s'active lorsque vous précisez une priorité différente de 0. C'est dans ce mode que vous pourrez définir les paramètres que vous souhaitez appliquer à votre nom de domaine (exemples de paramètres : *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En mode **Service**, vous pouvez appliquer ces paramètres directement pour votre nom de domaine, même si ce dernier n'est pas à utiliser comme alias d'un autre nom de domaine.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="cnameusecase"></a>
 

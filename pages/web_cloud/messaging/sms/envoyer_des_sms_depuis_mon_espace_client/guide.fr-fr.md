@@ -1,7 +1,7 @@
 ---
 title: "Envoyer des SMS depuis l'espace client OVHcloud"
 excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
-updated: 2024-11-13
+updated: 2025-10-28
 ---
 
 ## Objectif
@@ -25,13 +25,19 @@ Le champ « Envoyer un SMS » est le premier élément disponible dans la liste 
 
 ### Étape 1 : configurer l’expéditeur et le destinataire
 
+> [!primary]
+> Pour plus de renseignements sur la création et l'utilisation d'un expéditeur, reportez-vous à notre guide « [Tout savoir sur les expéditeurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms) ».
+
 Une fois sur la page d'envoi de SMS, vous disposez de différents paramètres à renseigner pour adapter au mieux votre envoi de SMS à votre besoin.
 
 ![envoi sms manager](images/sms-send-control-panel02E.png){.thumbnail}
 
-Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique. 
-Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx). 
-Pour plus de renseignements sur la création d'un expéditeur, reportez-vous à l'[étape 3: choisir votre expéditeur SMS](#etape-3-choisir-votre-expediteur-sms).
+Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique.
+
+> [!primary]
+> Pour plus de renseignements sur les SMS permettant la réponse, référez-vous à notre guide « [Envoyer des SMS permettant la réponse](/pages/web_cloud/messaging/sms/gerer_les_sms_avec_reponse) ».
+
+Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx).
 
 Vous pouvez également envoyer des SMS à plusieurs destinataires. Deux méthodes sont disponibles pour y parvenir :
 
@@ -85,62 +91,6 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 Dans cette section vous avez la possibilité d’effectuer un envoi immédiat ou différé (1).
 
 Trois formats d’envoi (Standard / Flash / Sim) sont proposés (2) mais cette fonctionnalité est dépréciée.
-
-### Étape 3 : choisir votre expéditeur SMS
-
-> [!warning]
->
-> **Envoi de SMS contenant une URL**
->
-> Il n'est pas possible d'envoyer un SMS contenant une URL via un numéro court permettant la réponse. Tout envoi de ce type sera bloqué.
->
-> Si vous avez besoin d'envoyer des SMS contenant des URLs, vous devez utiliser un [expéditeur alphanumérique](#expediteur-alphanumerique).
-
-#### Numéro court permettant la réponse
-
-**Uniquement pour les comptes OVHcloud en France hors DOM-TOM.**
-
-Il permet de recevoir une réponse via l’onglet SMS reçus.
-
-#### Numéro mobile virtuel
-
-**Uniquement pour les comptes OVHcloud en France.**
-
-Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page sur le numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
-
-> [!primary]
->
->Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre [numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
->
-
-<a name="expediteur-alphanumerique"></a>
-
-#### Expéditeur alphanumérique
-
-Vous pouvez personnaliser votre expéditeur. Il n’est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez `Expéditeurs`{.action}(1) lorsque vous êtes sur le compte SMS concerné.
-
-![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
-
-Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bouton `Actions`{.action} au centre puis sur `Ajouter`{.action}(2).
-
-![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
-
-Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer un nouvel expéditeur SMS (3) :
-
-- **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). Une pièce justificative est également nécessaire.
-
-**Exemple:** si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
-
-La validation d'un expéditeur alphanumérique est effectuée en moyenne dans les 72 heures après sa création.
-
-> [!primary]
->
-> Nous vous demandons un justificatif dans le cadre de notre politique de sécurité. Il s'agit par défaut d'un papier à en-tête de la société ou de la marque, incluant l'autorisation d'un responsable avec signature et tampon de cette même société, d'un papier d'identité, ou extrait Kbis si ce n'est pas une marque déposée.
->
-
-- **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVHcloud. Une liste déroulante des expéditeurs disponibles s'affichera alors.
-
-- **Ajouter des expéditeurs à partir de vos noms de domaines OVHcloud** : Vous pouvez utiliser un nom de domaine disponible dans votre compte OVHcloud en tant qu'expéditeur. Une liste déroulante des expéditeurs disponibles s'affichera alors.
 
 ## Aller plus loin
 

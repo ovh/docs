@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare se il tuo sito è inaccessibile?"
 excerpt: "Diagnostica le cause dell'inaccessibilità del tuo sito"
-updated: 2022-08-02
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -32,7 +32,7 @@ Se il tuo sito non è raggiungibile, sul tuo browser potrebbero comparire divers
 
 ## Procedura
 
-### Step 1: verifica la validità del tuo dominio
+### 1: Verifica la validità del tuo dominio
 
 > [!warning]
 >
@@ -52,11 +52,11 @@ Rinnova il tuo dominio se necessario cliccando `...`{.action} a destra dello sch
 
 Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile entro 48 ore.
 
-### Step 2: verifica i server DNS
+### 2: Verifica i server DNS
 
 Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_edit), clicca in tuo [Spazio Cliente OVHcloud](/links/manager) sui `Domini`{.action} e poi sul dominio del tuo sito.
 
-#### Scenario 1: nessuna anomalia sui server DNS
+#### Scenario 1: Nessuna anomalia sui server DNS
 
 Verifica i server indicati nella scheda `Server DNS`{.action}:
 
@@ -66,7 +66,7 @@ Se sono identici agli obiettivi degli record di tipo `NS` nella `Zona DNS`{.acti
 
 ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
-#### Scenario 2: sulla zona DNS compare un avviso
+#### Scenario 2: Sulla zona DNS compare un avviso
 
 Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati dal tuo dominio non sono quelli indicati nella tua zona. Sono possibili due scenari:
 
@@ -89,7 +89,7 @@ Il tuo sito Web sarà disponibile entro 48 ore.
 > È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
 
-#### Scenario 3: nella zona DNS non sono presenti record di tipo NS
+#### Scenario 3: Nella zona DNS non sono presenti record di tipo NS
 
 La `Zona DNS`{.action} del tuo dominio non contiene alcun accesso di tipo `NS`:
 
@@ -107,17 +107,34 @@ Clicca su `Reinizializza la zona DNS`{.action} e seleziona `No, ma voglio reiniz
 
 Il tuo sito Web sarà disponibile entro 24 ore.
 
-### Step 3: verifica la zona DNS <a name="step3"></a>
+### 3: Verifica la zona DNS <a name="step3"></a>
 
 In questo step, visualizzerai l'indirizzo IP del tuo hosting e lo aggiungerai alla tua `Zona DNS`{.action}.
 
 Se il tuo sito non è ospitato sull'infrastruttura OVHcloud o se è gestito da un altro provider, contatta il supporto interessati.
 
-Se il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting), clicca sulla scheda `Hosting`{.action} e poi sull'offerta corrispondente.
+Se il tuo sito è ospitato su una delle nostre [soluzione di hosting Web](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 del tuo dominio.
-
-![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> Nel riquadro **Informazioni generali**, troverete le informazioni **IPv4** e **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Copia l'indirizzo IPV4 e/o IPV6 del tuo dominio.
 
 E riportala nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 

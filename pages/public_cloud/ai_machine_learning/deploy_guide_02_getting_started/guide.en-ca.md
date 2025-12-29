@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2025-07-01
+updated: 2025-12-17
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ Select where your AI Deploy app will be hosted, meaning the physical location.
 
 ![AI Deploy app location](images/step-2-select-location.png){.thumbnail}
 
-#### Step 3: Assign compute resources and specify scaling strategy
+#### Step 3: Assign compute resources
 
 To deploy an AI Deploy app, you must allocate compute resources. The app supports a range of resource configurations:
 
@@ -95,24 +95,15 @@ To use this demonstration OVHcloud docker image, enter the following name as the
 
 #### Step 5: Assign compute resources and specify scaling strategy
 
-Then you can modify the **Number of replicas** on which your AI Deploy app will be deployed, according to the selected **scaling strategy**.
+Then you can modify the **Number of replicas** on which your AI Deploy app will be deployed, according to a **scaling strategy**.
 
 ![AI Deploy app scaling strategies](images/step-5-scaling-strategies.png){.thumbnail}
 
-**When to choose static scaling?**
+The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**. This strategy is useful when your consumption or inference load is fixed. Moreover, it allows you to have fixed costs.
 
-The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**.
+With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
 
-- Static scaling can be used if you want to have fixed costs.
-- This scaling strategy is also useful when your consumption or inference load is fixed.
-
-**When to choose autoscaling?**
-
-With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. The monitored metric can either be `CPU` or `RAM` and the threshold is a percentage (integer between 1 and 100).
-
-- You can use autoscaling if you have irregular or sawtooth inference loads.
-
-More generally, a minimum of 2 instances are required to benefit from High Availability.
+For more detailed information about scaling strategies, please refer to our dedicated guide: [AI Deploy - Scaling strategies](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies).
 
 #### Step 6: HTTP default port
 
@@ -258,7 +249,7 @@ If you want to query this API with Python, this code sample with Python Request 
 
 ```bash
 export AI_APP_TOKEN=token_value
-``````
+```
 
 ``` python
 import requests

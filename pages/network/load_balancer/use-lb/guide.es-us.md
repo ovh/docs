@@ -10,8 +10,8 @@ Esta guía explica los primeros pasos con el servicio Load Balancer y presenta s
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](/links/manager).
-- Haber contratado un [Load Balancer](/links/network/load-balancer).
+- Tener el servicio [Load Balancer de OVHcloud](/links/network/load-balancer) en su cuenta de OVHcloud.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -64,6 +64,7 @@ En función de la configuración anterior, aparecerán algunas de las siguientes
 En función del protocolo seleccionado, también podrá activar el soporte de HTTP Strict Transport Security.
 
 ### Administrar las granjas
+
 Para añadir una granja de servidores, abra la pestaña `Granjas de servidores`{.action} y haga clic en `Añadir una granja de servidores`{.action}. Las opciones principales son las mismas que en la creación de frontends. Sin embargo, los parámetros avanzados son diferentes:
 
 ![Añadir una granja de servidores](images/iplb-cluster-adv.png){.thumbnail}
@@ -75,6 +76,7 @@ Para añadir una granja de servidores, abra la pestaña `Granjas de servidores`{
 |Sonda|Elección y activación de la sonda, y configuración de la misma|
 
 ### Administrar los servidores
+
 Una vez haya creado la granja, solo tendrá que añadir los servidores haciendo clic en `Añadir un servidor`{.action}. A continuación se explican en detalle los distintos elementos que deben indicarse, así como los parámetros avanzados:
 
 ![Añadir servidor](images/iplb-cluster-add-server.png){.thumbnail}
@@ -95,9 +97,11 @@ Una vez haya creado la granja, solo tendrá que añadir los servidores haciendo 
 |Versión del protocolo de PROXY|**Sólo si ya lo ha configurado**, elija la versión del protocolo de PROXY que desea utilizar en este servidor. </br> Encontrará más información sobre el protocolo PROXY y su uso con el servicio Load Balancer de OVHcloud en [esta guía](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Administrar los certificados SSL
+
 En la pestaña `Certificados SSL`{.action}, puede añadir un SSL al Load Balancer, eligiendo entre dos opciones: contratar un certificado SSL en OVH o añadir un certificado externo.
 
-#### Certificado SSL de OVH
+#### Certificado SSL de OVHcloud
+
 Para contratar un certificado SSL, abra la pestaña `Certificado SSL`{.action} y haga clic en `Contratar un certificado SSL`{.action}. Introduzca los datos solicitados en el formulario.
 
 ![Contratar un certificado SSL](images/iplb-order-ssl.png){.thumbnail}
@@ -110,6 +114,7 @@ Para contratar un certificado SSL, abra la pestaña `Certificado SSL`{.action} y
 Si opta por un certificado Comodo EV, también deberá introducir la información de contacto y jurisdiccional.
 
 #### Añadir un certificado SSL externo
+
 Si ya tiene su propio certificado SSL, puede añadirlo directamente:
 
 ![Añadir un certificado SSL](images/iplb-add-ssl.png){.thumbnail}

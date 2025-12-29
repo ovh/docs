@@ -1,6 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail Roundcube'
-updated: 2024-03-26
+updated: 2025-11-12
 ---
 
 
@@ -14,6 +14,22 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud **MX Plan**, zaproponowanego w naszej [ofercie hostingu www](/links/web/hosting), zawartego w [Darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówionego oddzielnie jako rozwiązanie autonomiczne.
 - Dane do logowania do konta e-mail MX Plan, które chcesz sprawdzić Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Twoje rozwiązanie e-mail w chmurze OVHcloud **MX Plan** musi korzystać z technologii webmaila **Roundcube**. Aby to zidentyfikować, postępuj zgodnie z poniższymi instrukcjami.
+
+> [!primary]
+> 
+> **Jak sprawdzić technologię używaną w ofercie MX Plan?**
+>
+> Technologia poczty elektronicznej używana w usłudze MX Plan jest scharakteryzowana przez interfejs jej interfejsu webmail. Aby ją zidentyfikować w Panelu klienta:
+>
+> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+> 1. Przejdź do sekcji `Web Cloud`{.action}.
+> 1. Kliknij opcję `MX Plan`{.action}.
+> 1. Wybierz odpowiednią domenę.
+> 1. Wybierz domyślnie w zakładce `Informacje ogólne`{.action}.
+> 1. Sprawdź technologię używaną pod napisem **Webmail**.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ## W praktyce
 

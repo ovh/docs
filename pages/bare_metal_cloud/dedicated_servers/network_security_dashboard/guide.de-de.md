@@ -1,7 +1,7 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2025-09-08
+updated: 2025-10-31
 ---
 
 ## Ziel
@@ -78,6 +78,8 @@ In der Tabelle sind die folgenden Spalten vorhanden:
 - **Ziel-IP** - Die IP, die Ziel des Angriffs war
 - **Angriffsvektoren** - Stellt Informationen über erkannte Angriffstypen bereit, wie UDP- oder TCP-Angriffe etc.
 
+**Die Aufbewahrungsfrist für die Log-Dateien des Scrubbing-Centers beträgt 1 Jahr.**
+
 > [!warning]
 >
 > Beachten Sie, dass Quell-IP-Adressen für erkannte Ereignisse nicht angezeigt werden, da sie in der Regel gefälscht sind (DDoS-Angriffe können auf Quellen verweisen, von denen Sie nicht stammen). Solche Informationen wären also irreführend oder nicht verwendbar.
@@ -88,6 +90,8 @@ Auf **Traffic Chart** sehen Sie ein Diagramm, das den Traffic zu Ihrer IP-Adress
 ![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Sie zeigt schädlichen Datenverkehr, der verworfen wurde (**in rot**) und gesäuberten Datenverkehr, der an Ihre IP-Adresse übertragen wurde (**in grün**).  Darüber hinaus werden grundlegende Abwehrstatistiken angezeigt, z.B. wie viele Angriffe für eine ausgewählte IP entdeckt wurden, wie viel Traffic (oder Pakete) während der Angriffe gesäubert wurde oder wie oft die Scrubbing Center in einem bestimmten Zeitraum eine Aktion zur Überprüfung Ihres Traffics (Anzahl der Ereignisse) durchgeführt haben.
+
+**Die Aufbewahrungsfrist für den Traffic-Chart beträgt 2 Monate.**
 
 ## FAQ
 
@@ -108,7 +112,7 @@ Solche Daten stehen nur für öffentliche IP-Adressen zur Verfügung, wenn autom
 
 ### Das Traffic-Diagramm ist für einige Positionen in den Scrubbing Center-Protokollen nicht verfügbar.
 
-Traffic-Chart-Daten sind nur für die letzten zwei Wochen verfügbar, während Log-Einträge für das vergangene Jahr überprüft werden können.
+Traffic-Chart-Daten sind nur für die letzten zwei Monate verfügbar, während Log-Einträge für das letzte Jahr überprüft werden können.
 
 ### Ein Angriff auf meinen Dienst hält an. Wie kann ich meinen Server besser schützen?
 

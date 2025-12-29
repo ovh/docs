@@ -10,8 +10,8 @@ Este guia tem como objetivo facilitar a primeira utilização do Load Balancer e
 
 ## Pré-requisitos
 
-- Ter acesso à Área de Cliente
-- Ter contratado um [Load Balancer](/links/network/load-balancer)
+- Dispor de uma oferta [Load Balancer OVHcloud](/links/network/load-balancer) na sua conta OVHcloud.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Questões práticas
 
@@ -62,6 +62,7 @@ A gestão dos Frontends tem opções de configuração avançada.
 |Cabeçalho HTTP|Adicionar cabeçalho HTTP|
 
 ### Gestão de Server Farms
+
 Para adicionar uma Server Farm, basta aceder a `Server Farms`{.action} e clicar em `Adicionar Server Farm`{.action}. Nesta secção, as opções básicas são iguais às dos Frontends. Já as opções avançadas são diferentes.
 
 ![Adicionar Farm](images/advanced_cluster.png){.thumbnail}
@@ -73,6 +74,7 @@ Para adicionar uma Server Farm, basta aceder a `Server Farms`{.action} e clicar 
 |Sonda|Seleção e ativação da sonda|
 
 ### Gestão dos Servidores
+
 Depois de criada a Server Farm, só falta adicionar os servidores (veja abaixo os detalhes das opções básicas e opções avançadas):
 
 ![Adicionar Servidor](images/add_server.png){.thumbnail}
@@ -92,9 +94,11 @@ Depois de criada a Server Farm, só falta adicionar os servidores (veja abaixo o
 |Versão do protocolo PROXY|**Unicamente se já o configurou**, escolha a versão do protocolo PROXY que pretende utilizar neste servidor. </br> Pode encontrar mais informações sobre o protocolo PROXY e sobre a sua utilização com o serviço OVHcloud Load Balancer em [este manual](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Gestão dos Certificados SSL
+
 Pode adicionar um SSL ao Load Balancer na secção `Certificado SSL`{.action}. Aqui tem duas opções: solicitar um certificado SSL da OVH ou adicionar um certificado externo.
 
-#### Certificado SSL OVH
+#### Certificado SSL OVHcloud
+
 Para solicitar um certificado SSL, basta aceder à secção `Certificado SSL`{.action}, clicar em `Encomendar um certificado SSL`{.action}, e seguir as instruções:
 
 ![Encomendar um certificado SSL](images/ordering_ssl.png){.thumbnail}
@@ -106,6 +110,7 @@ Para solicitar um certificado SSL, basta aceder à secção `Certificado SSL`{.a
 |Fully Qualified Domain Name (FQDN)|O(s) domínio(s) associados(s) ao serviço|
 
 #### Adicionar um certificado SSL externo
+
 Se já tem um certificado SSL, este pode ser associado ao serviço:
 
 ![Adicionar um Certificado SSL](images/external_ssl.png){.thumbnail}

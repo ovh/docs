@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Manuelle Installation eines CMS auf einem Webhosting"
 excerpt: "Diese Anleitung erklärt, wie Sie ein CMS manuell auf Ihrem Hosting installieren"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Ziel 
@@ -113,9 +113,9 @@ Um ein CMS auf Ihrem [Webhosting](/links/web/hosting) Angebot zu installieren si
 
 #### 1.1 Überprüfen Sie das Wurzelverzeichnis
 
-Das Wurzelverzeichnis entspricht dem Ordner, in dem Ihr CMS auf Ihrem Hosting installiert wird. Es wird empfohlen, ein leeres Verzeichnis zu wählen, um potenzielle Konflikte mit anderen Multisites zu vermeiden.
+Das Wurzelverzeichnis entspricht dem Ordner, in dem Ihr CMS auf Ihrem Hosting installiert wird. Es wird empfohlen, ein leeres Verzeichnis zu wählen, um potenzielle Konflikte mit anderen Webseiten zu vermeiden.
 
-In unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" erfahren Sie, wie Sie die Verzeichnisse für Ihre Websites bzw. CMS verwalten.
+Konsultieren Sie unsere Dokumentation, die beschreibt [wie Sie eine Website auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/multisites_configure_multisite), um das zu verwendende Wurzelverzeichnis für Ihr CMS zu definieren.
 
 > [!primary]
 >

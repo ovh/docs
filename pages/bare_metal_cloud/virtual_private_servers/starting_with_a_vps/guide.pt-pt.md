@@ -128,7 +128,7 @@ Estas opções referem-se a serviços VPS adicionais para backups e restauro do 
 Em comparação com instantâneos manuais, esta funcionalidade aumenta a segurança dos dados através da criação de vários pontos de restauro em intervalos regulares.
 >>
 
-Encontre todas as informações sobre as soluções de backup disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos nossos [guias respetivos](/products/bare-metal-cloud-virtual-private-servers-backups).
+Encontre todas as informações sobre as soluções de backup disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos nossos [guias respetivos](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 ### A minha oferta
 

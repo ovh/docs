@@ -176,7 +176,7 @@ Voici un exemple de résultat :
 
 > [!alert]
 > IMPORTANT !
-Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
+> Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
 >
 
 Pour débloquer votre adresse IP, utilisez l'appel suivant :
@@ -213,11 +213,11 @@ Dans certains cas, l'alerte antispam peut être un faux positif. Si vous avez v�
 #### RFC <a name="rfc"></a>
 
 Les RFC (Request For Comments) sont des documents destinés à décrire des aspects techniques d'Internet. Ces documents sont produits et publiés par l'IETF (Internet Engineering Task Force), un groupe qui produit et définit essentiellement des normes.
-Retrouvez plus d'informations sur les liens suivants : 
-<br>
-- [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)<br>
-- [IETF](https://www.ietf.org/)<br>
-- [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft)
+Retrouvez plus d'informations sur les liens suivants :
+
+- [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)
+- [IETF](https://www.ietf.org/)
+- [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).
 
 #### Bonnes pratiques <a name="bestpractices"></a>
 

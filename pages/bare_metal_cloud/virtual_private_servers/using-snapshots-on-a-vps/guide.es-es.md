@@ -1,7 +1,7 @@
 ---
 title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
 excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
-updated: 2025-09-11
+updated: 2025-10-17
 ---
 
 ## Objetivo
@@ -30,7 +30,7 @@ Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la
 
 ### Paso 1: Suscribirse a la opción "Snapshot"
 
-Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro **Resumen de opciones**  
+Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro **Copia de seguridad**  
 . Si el estado de "Snapshot" ya es "Activado", vaya directamente al paso 2. Si "Snapshot" todavía no está activado, haga clic en `...`{.action} junto a la opción "Snapshot" y, seguidamente, en `Contratar`{.action} (en el menú contextual).
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
@@ -43,7 +43,7 @@ Para dar de baja la opción de servicio, haga clic en el botón `...`{.action} s
 
 ### Paso 2: Tomar una instantánea
 
-Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). Puede escribir una descripción que se asociará al snapshot. El tiempo de creación del snapshot depende del espacio de almacenamiento utilizado. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
+Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). Puede escribir una descripción que se asociará al snapshot. El tiempo de creación del snapshot depende del espacio de almacenamiento utilizado. Después, aparecerá la fecha y hora de su creación en el cuadro «Copia de seguridad».
 
 ### Paso 3: Eliminar o restaurar una instantánea
 
@@ -103,7 +103,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > No obstante, para no consumir demasiado espacio de almacenamiento, le recomendamos que no descargue los snapshots directamente en el VPS.
 >
-> El archivo cargado puede importarse en un proyecto de Public Cloud como imagen (QCOW2) mediante [OpenStack](products/public-cloud-compute-instance-management). (Consulte un ejemplo de uso en [esta guía](/pages/public_cloud/compute/upload_own_image).)
+> El archivo cargado puede importarse en un proyecto de Public Cloud como imagen (QCOW2) mediante [OpenStack](/products/public-cloud-compute-instance-management). (Consulte un ejemplo de uso en [esta guía](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Buenas prácticas para la creación de un snapshot

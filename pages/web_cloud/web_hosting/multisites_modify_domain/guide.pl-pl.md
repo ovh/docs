@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem"
 excerpt: "Dowiedz się, jak zmienić parametry powiązania domeny/subdomeny zadeklarowanej wcześniej w Twojej usłudze hostingu"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Wprowadzenie
@@ -84,12 +84,6 @@ W związku z tym w formularzu należy zastąpić wstępnie wypełnioną nazwę f
 
 #### Więcej dostępnych opcji
 
-##### Opcja "SSL"
-
-Zaznacz/usuń zaznaczenie tego pola, jeśli chcesz włączyć/wyłączyć bezpłatny certyfikat SSL **Let's Encrypt** dla Twojej domeny/subdomeny. Nie musisz zaznaczać tego pola w przypadku innych ofert SSL oferowanych przez OVHcloud.
-
-Więcej informacji na temat opcji/ofert SSL znajdziesz w naszej dokumentacji "[Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
-
 ##### Opcja "Włącz CDN"
 
 Aby skorzystać z tej opcji, należy najpierw wykupić ofertę CDN OVHcloud lub wykupić hosting Performance.
@@ -128,7 +122,7 @@ Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, klikn
 
 W zależności od wybranych opcji wprowadzenie zmian może potrwać od kilku minut do kilku godzin.
 
-Jeśli w przypadku opcji **SSL**, **CDN**, **Geolokalizacja IP** i **Rozdzielone logi** nie zostaną wprowadzone zmiany po 24 godzinach, zapoznaj się z przewodnikami (i stronami) dla wszystkich opcji opisanych w [etap 1](#step1), aby upewnić się, że wszystkie wymagane warunki zostały spełnione.
+Jeśli w przypadku opcji **CDN**, **Geolokalizacja IP** i **Rozdzielone logi** nie zostaną wprowadzone zmiany po 24 godzinach, zapoznaj się z przewodnikami (i stronami) dla wszystkich opcji opisanych w [etap 1](#step1), aby upewnić się, że wszystkie wymagane warunki zostały spełnione.
 
 ## Sprawdź również
 

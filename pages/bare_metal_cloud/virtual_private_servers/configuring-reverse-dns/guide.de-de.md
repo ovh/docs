@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
-excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IP-Adresse über Ihr Kundencenter einrichten
-updated: 2025-09-18
+excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IPv4 oder IPv6-Adresse über Ihr Kundencenter einrichten
+updated: 2025-12-10
 ---
 
 ## Ziel
@@ -15,7 +15,7 @@ Die Konfiguration der umgekehrten DNS-Auflösung eines Servers ist besonders bei
 ## Voraussetzungen
 
 - Sie verfügen über eine mit Ihrem Dienst verbundene IP-Adresse in Ihrem OVHcloud Kunden-Account.
-- Sie haben einen Domainnamen, dessen `A`-Eintrag den Server als Ziel hat.
+- Sie haben einen Domainnamen, dessen `A`-Eintrag oder `AAAA`-Eintrag den Server als Ziel hat.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -37,7 +37,7 @@ Geben Sie Ihren Reverse-Pfad im neuen Fenster ein und klicken Sie auf `Bestätig
 Sie können den Reverse-Pfad auch direkt mithilfe des Stift-Icons in der Spalte "**Reverse**" der Tabelle editieren.
 
 > [!warning]
-> Wenn Sie Ihren Domainnamen als *Reverse* eingeben, wird sofort überprüft, ob der A-Eintrag auf dieselbe IP verweist. Anti-Spam-Verfahren verwenden diese Methode, daher muss Ihr A-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
+> Wenn Sie Ihren Domainnamen im Reverse eingeben, wird sofort überprüft, ob die `A`- und `AAAA`-Einträge den für diese Domain konfigurierten IP-Adressen entsprechen. Anti-Spam-Verfahren verwenden diese Methode, daher muss Ihr DNS-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
 >
 >  - Der *Reverse* darf nicht mit einem `-` beginnen.
 >  - Der *Reverse* darf höchstens 63 Zeichen enthalten.
@@ -45,14 +45,12 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Stift-Icons in der Spalte 
 >  - Der *Reverse* muss mit einem `.` enden.
 >
 > Beispiel: Für "domain.tld" wäre der *Reverse* `domain.tld.`
->
 
 > [!primary]
 >
-Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
+> Wenn die Änderung nicht wie vorgesehen funktioniert, überprüfen Sie, ob die `A`- und `AAAA`-Einträge in der DNS-Zone Ihrer Domain korrekt konfiguriert sind. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den Eintrag erst kürzlich bearbeitet haben.
 >
-Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie den Anweisungen in [unserer Anleitung zu DNS](/pages/web_cloud/domains/dns_zone_edit) folgen.
->
+> Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie den Anweisungen in [unserer Anleitung zu DNS](/pages/web_cloud/domains/dns_zone_edit) folgen.
 
 ## Weiterführende Informationen
 

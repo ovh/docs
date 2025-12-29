@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente um CMS no meu alojamento"
 excerpt: "Descubra como instalar manualmente um CMS no seu alojamento"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -114,9 +114,9 @@ Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é ne
 
 #### 1.1 - Verificar a declaração do "dossier raiz"
 
-A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se que escolha um diretório vazio para evitar conflitos com os seus outros potenciais multi-sites.
+A "pasta raiz" corresponde ao diretório no qual o seu futuro CMS será instalado no seu alojamento. Recomenda-se escolher um diretório vazio para evitar conflitos com os seus outros potenciais sites.
 
-Consulte o nosso manual que descreve [como adicionar um multi-site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
+Consulte a nossa documentação que descreve [como adicionar um site ao seu alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite) para definir a pasta raiz a utilizar com o seu CMS.
 
 > [!primary]
 >

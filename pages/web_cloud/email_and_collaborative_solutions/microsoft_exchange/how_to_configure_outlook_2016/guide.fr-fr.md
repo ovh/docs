@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Outlook pour Windows
 excerpt: Découvrez comment configurer un compte Exchange sur Outlook pour Windows
-updated: 2024-10-30
+updated: 2025-10-23
 ---
 
 ## Objectif
@@ -14,14 +14,14 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/zx7LAzmDrFw?si=DAWV56-E1or1Vgnr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prérequis
 
 - Disposer d'une offre [Exchange](/links/web/emails).
-- Disposer du logiciel Microsoft Outlook ou ultérieur, installé sur votre ordinateur.
+- Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -30,6 +30,16 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 > Vous utilisez Outlook et ultérieur pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 ## En pratique
+
+> [!warning]
+>
+> Avant de débuter votre configuration, il est important de noter que l'application Outlook incluse gratuitement avec Windows 11 est [incompatible](https://learn.microsoft.com/fr-fr/microsoft-365-apps/outlook/get-started/supported-account-types) avec les offres Exchange OVHcloud, dites *on-premises*. Vous devrez utiliser la version **Outlook classique**.
+>
+> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », et installez-le.
+>
+> Une fois l'installation terminée, pour distinguer les deux versions lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Ajouter le compte
 

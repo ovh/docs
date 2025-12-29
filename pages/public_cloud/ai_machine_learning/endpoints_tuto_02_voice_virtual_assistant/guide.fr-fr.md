@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer son assistant audio (EN)
 excerpt: "Créez un chatbot vocal en utilisant des APIs d'ASR, de LLM et de TTS en moins de 100 lignes de code"
-updated: 2025-10-01
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -44,9 +44,8 @@ All of this is done by connecting **AI Endpoints** like puzzle pieces—allowing
 In order to use AI Endpoints APIs easily, create a `.env` file to store environment variables:
 
 ```bash
-ASR_AI_ENDPOINT=https://whisper-large-v3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
 TTS_GRPC_ENDPOINT=nvr-tts-en-us.endpoints-grpc.kepler.ai.cloud.ovh.net:443
-LLM_AI_ENDPOINT=https://mixtral-8x7b-instruct-v01.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
 
@@ -92,17 +91,16 @@ After these lines, load and access the environnement variables of your `.env` fi
 # access the environment variables from the .env file
 load_dotenv()
 
-ASR_AI_ENDPOINT = os.environ.get('ASR_AI_ENDPOINT')
 TTS_GRPC_ENDPOINT = os.environ.get('TTS_GRPC_ENDPOINT')
-LLM_AI_ENDPOINT = os.environ.get('LLM_AI_ENDPOINT')
+OVH_AI_ENDPOINTS_URL = os.environ.get('OVH_AI_ENDPOINTS_URL')
 OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')
 ```
 
- Next, define the clients that will be used to interact with the models:
+Next, define the clients that will be used to interact with the models:
 
 ```python
-llm_client = OpenAI(
-    base_url=LLM_AI_ENDPOINT,
+oai_client = OpenAI(
+    base_url=OVH_AI_ENDPOINTS_URL,
     api_key=OVH_AI_ENDPOINTS_ACCESS_TOKEN
 )
 
@@ -113,11 +111,6 @@ tts_client = riva.client.SpeechSynthesisService(
         metadata_args=[["authorization", f"bearer {OVH_AI_ENDPOINTS_ACCESS_TOKEN}"]]
     )
 )
-
-asr_client = OpenAI(
-    base_url=ASR_AI_ENDPOINT,
-    api_key=OVH_AI_ENDPOINTS_ACCESS_TOKEN
-)
 ```
 
 💡 You are now ready to start coding your web app!
@@ -127,8 +120,8 @@ asr_client = OpenAI(
 First, create the **Automatic Speech Recognition (ASR)** function in order to transcribe microphone input into text:
 
 ```python
-def asr_transcription(question, asr_client):
-    return asr_client.audio.transcriptions.create(
+def asr_transcription(question, oai_client):
+    return oai_client.audio.transcriptions.create(
         model="whisper-large-v3",
         file=question
     ).text
@@ -147,8 +140,8 @@ def asr_transcription(question, asr_client):
 Now, create a function that calls the LLM client to provide responses to questions:
 
 ```python
-def llm_answer(input, llm_client):
-    response = llm_client.chat.completions.create(
+def llm_answer(input, oai_client):
+    response = oai_client.chat.completions.create(
                 model="Mixtral-8x7B-Instruct-v0.1", 
                 messages=input,
                 temperature=0,
@@ -228,12 +221,12 @@ with st.container():
         )
 
     if recording:  
-        user_question = asr_transcription(recording['bytes'], asr_client)
+        user_question = asr_transcription(recording['bytes'], oai_client)
 
         if prompt := user_question:
             st.session_state.messages.append({"role": "user", "content": prompt, "avatar":"👤"})
             messages.chat_message("user", avatar="👤").write(prompt)
-            msg = llm_answer(st.session_state.messages, llm_client)
+            msg = llm_answer(st.session_state.messages, oai_client)
             st.session_state.messages.append({"role": "assistant", "content": msg, "avatar": "🤖"})
             messages.chat_message("system", avatar="🤖").write(msg)
 

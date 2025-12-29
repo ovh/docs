@@ -20,13 +20,13 @@ VMware Tools verbessern die Performance einer virtuellen Maschine und ermöglich
 
 ## In der praktischen Anwendung
 
-Die Vorgehensweise zur Installation von VMware Tools variiert je nach Betriebssystem der virtuellen Maschine. Für Informationen zur genauen Vorgehensweise entsprechend dem Betriebssystem lesen Sie die [VMware-Dokumentation zu VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
+Die Vorgehensweise zur Installation von VMware Tools variiert je nach Betriebssystem der virtuellen Maschine. Für Informationen zur genauen Vorgehensweise entsprechend dem Betriebssystem lesen Sie die [VMware-Dokumentation zu VMware Tools](https://kb.vmware.com/s/article/1014294).
 
 ### Linux
 
 #### Neueste Versionen
 
-Bei den meisten Linux-Distributionen ist die Installation der VMware Tools über die Linux-Paketverwaltungssysteme unter dem Namen [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link} möglich.
+Bei den meisten Linux-Distributionen ist die Installation der VMware Tools über die Linux-Paketverwaltungssysteme unter dem Namen [*Open VM Tools*](https://kb.vmware.com/s/article/2073803) möglich.
 
 So können die VMware Tools genauso auf dem aktuellen Stand gehalten werden wie die anderen Betriebssystemkomponenten der virtuellen Maschine. 
 

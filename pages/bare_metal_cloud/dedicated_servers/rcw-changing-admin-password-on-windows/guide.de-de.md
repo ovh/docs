@@ -1,7 +1,7 @@
 ---
 title: "Administrator-Passwort eines Windows Servers mit dem Windows Customer Rescue System zurücksetzen"
 excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Windows-Rescue-Modus verwenden, um das Passwort des Administrator-Accounts auf einem Windows Dedicated Server zurückzusetzen"
-updated: 2025-03-06
+updated: 2025-10-22
 ---
 
 ## Ziel
@@ -11,6 +11,7 @@ Diese Anleitung erklärt, wie Sie das Passwort für den Administrator-Account mi
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem Microsoft Windows Server 2016 oder höher installiert ist.
+- Der Server verfügt über mindestens 16 GB RAM.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
-title: IAM for Logs Data Platform - Presentation and FAQ 
+title: IAM for Logs Data Platform - Presentation and FAQ
 excerpt: A presentation on how IAM works with Logs Data Platform
-updated: 2025-07-22
+updated: 2025-10-16
 ---
 
 > [!primary]
@@ -9,19 +9,19 @@ updated: 2025-07-22
 > The content of this documentation will be valid from this date.
 >
 
-## Objective 
+## Objective
 
-This guide explains the integration of Logs Data Platform with OVHcloud IAM. 
+This guide explains the integration of Logs Data Platform with OVHcloud IAM.
 
-## Requirements 
+## Requirements
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - A [Logs Data Platform service](/links/manage-operate/ldp)
 
-## Instructions 
+## Instructions
 
-### How is IAM useful for Logs Data Platform? 
+### How is IAM useful for Logs Data Platform?
 
 Enabling OVHcloud IAM on Logs Data Platform delegates authentication, access management, and permissions to OVHcloud IAM. There are several benefits to using IAM:
 
@@ -37,20 +37,20 @@ Enabling OVHcloud IAM on Logs Data Platform delegates authentication, access man
 If you have an existing service, follow these steps:
 
 - Replace all your **Roles** and permissions with [appropriate policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
-- Ensure you have no **Roles** declared in your service. 
+- Ensure you have no **Roles** declared in your service.
 - Ensure your service is not in any **Roles**.
 - Ensure you don't have any [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens).
-- Use the dedicated `Enable OVHcloud IAM`{.action} in the **Roles** sections of the Logs Data Platform Control Panel. 
+- Use the dedicated `Enable OVHcloud IAM`{.action} in the **Roles** sections of the Logs Data Platform Control Panel.
 
 ![Activate IAM](images/activate_iam_existing_service.png){.thumbnail}
 
-Once IAM is activated, a new **IAM Policies** section will replace the previous **Roles** section. 
+Once IAM is activated, a new **IAM Policies** section will replace the previous **Roles** section.
 
 ![Activated IAM](images/activated_iam.png){.thumbnail}
 
 ### How to enable OVHcloud IAM on a new service?
 
-When a new service is created, you can directly opt-in into using IAM directly and use [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) to handle access rights. 
+When a new service is created, you can directly opt-in into using IAM directly and use [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) to handle access rights.
 
 ![Activate IAM on a new service](images/activate_iam_new_service.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Once completed, you will be redirected back to the OpenSearch Dashboard instance
 ### How to connect to Grafana with IAM?
 
 - If your Identity Provider is the OVHcloud IAM, you can select the option **Forward OAuth identity** to forward the identity connected to the Logs Data Platform.
-- If you use another authentication provider, you can forge an *Authorization* header with an IAM compatible token. See the next section to see how to generate that kind of token. The content of the header must be `Bearer: <Your Token>`. Replace `<Your Token>` with the value of your token. 
+- If you use another authentication provider, you can forge an *Authorization* header with an IAM compatible token. See the next section to see how to generate that kind of token. The content of the header must be `Bearer: <Your Token>`. Replace `<Your Token>` with the value of your token.
 
 ![Grafana header](images/grafana_header.png){.thumbnail}
 
@@ -90,8 +90,8 @@ With IAM enabled, [tokens](/pages/manage_and_operate/observability/logs_data_pla
 
 For example if you are on gra1 cluster, curl can use these tokens in the following way:
 
-```bash 
-ldp@laptop curl -k -v -H 'content-type: application/json' --oauth2-bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c  -XGET 'https://gra1.logs.ovh.com:9200/_cluster/health?pretty' 
+```bash
+ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c  -XGET 'https://gra1.logs.ovh.com:9200/_cluster/health?pretty'
 ```
 
 ### How to create indices or aliases on Logs Data Platform backend APIs?
@@ -99,12 +99,12 @@ ldp@laptop curl -k -v -H 'content-type: application/json' --oauth2-bearer eyJhbG
 First, ensure the identity you want to use has permission to create indices and aliases for the service. If authorized, Personal Access Tokens or service account OAuth2 clients can perform creation/deletion operations.
 
 > [!warning]
-> The previous prefix for indices and aliases was the username. Now the prefix is the **service name**. You will find the service name on the homepage of the Logs Data Platform control panel. It is also the suffix of a Logs Data Platform service URN. For example: 
+> The previous prefix for indices and aliases was the username. Now the prefix is the **service name**. You will find the service name on the homepage of the Logs Data Platform control panel. It is also the suffix of a Logs Data Platform service URN. For example:
 >
 > urn:v1:eu:resource:ldp:**ldp-ab-56945**
 >
 
-The service is tied to a unique Logs Data Platform so you will be allowed to create items only on this cluster. For example if ldp-ab-56945 is on gra1: 
+The service is tied to a unique Logs Data Platform so you will be allowed to create items only on this cluster. For example if ldp-ab-56945 is on gra1:
 
 ```bash
 ldp@laptop curl -k -v -H 'content-type: application/json' --oauth2-bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c  -XPOST 'https://gra1.logs.ovh.com:9200/ldp-ab-56945-i-my-new-index/_doc' -d '{ "user" : "ldp" }'

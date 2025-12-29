@@ -1,7 +1,7 @@
 ---
 title: "Wszystko o rekordach DNS"
 excerpt: "Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie
@@ -25,7 +25,7 @@ Celem niniejszego przewodnika jest przedstawienie różnych typów rekordów DNS
 
 ### Rekordy DNS
 
-**[Edycja strefy DNS](/pages/web_cloud/domains/dns_zone_edit) jest operacją wymagającą odpowiedniej wiedzy** : omyłkowe działanie mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
+**[Edycja strefy DNS](/pages/web_cloud/domains/dns_zone_edit) jest operacją wymagającą odpowiedniej wiedzy**: omyłkowe działanie mogłoby na przykład uniemożliwić dostęp do Twojej strony WWW lub odbiór nowych wiadomości e-mail.
 
 Poniższa lista przedstawia cele i specyfikacje każdego rekordu. Pozwoli Ci to lepiej monitorować operacje wykonywane na usługach DNS.
 
@@ -175,6 +175,33 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> W razie potrzeby sprawdź więcej szczegółów na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Ten rekord pozwala określić adres e-mail osoby odpowiedzialnej za nazwę domeny. Ten rekord może również zostać połączony z rekordem DNS typu TXT, aby dostarczyć dodatkowych informacji.
+>>
+>> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Ten rekord DNS może łączyć wiele informacji, aby umożliwić szybsze i bardziej efektywne połączenie z Twoją stroną internetową. Pozwala również, na przykład, bezpośrednio poinformować przeglądarkę internetową, że strona internetowa jest kompatybilna z HTTP 2 lub HTTP 3, że powinna priorytetowo używać adresu IP (IPv4 i/lub IPv6) podanego jako parametr lub też, że powinna korzystać z konkretnego portu dostępu. Dzięki temu przeglądarka internetowa może pobrać wiele informacji w jednym zapytaniu.
+>>
+>> Ten rekord ma **2** tryby:
+>>
+>> - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+>> - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+>>
+>> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Ten rekord działa podobnie jak rekord DNS typu SVCB, ale w przeciwieństwie do niego, jest bardziej specyficzny dla protokołu HTTP. Może łączyć wiele informacji, aby umożliwić szybsze i bardziej efektywne połączenie z Twoją stroną internetową. Pozwala również, na przykład, bezpośrednio poinformować przeglądarkę internetową, że strona internetowa jest kompatybilna z HTTP 2 lub HTTP 3, że powinna priorytetowo używać adresu IP (IPv4 i/lub IPv6) podanego jako parametr lub też, że powinna korzystać z konkretnego portu dostępu. Dzięki temu przeglądarka internetowa może pobrać wiele informacji w jednym zapytaniu.
+>>
+>> Ten rekord ma **2** tryby:
+>>
+>> - **Tryb Aliasu**: ten tryb aktywuje się, gdy określisz priorytet równy 0. W przeciwieństwie do rekordów DNS typu CNAME, umożliwia on przekierowanie nazwy domeny z jej własnej strefy DNS (apex) na inną nazwę domeny lub poddomenę.
+>> - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
+>>
+>> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
 

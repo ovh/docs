@@ -17,18 +17,27 @@ account-and-service-management-managing-billing-payments-and-services-terminatin
 account-and-service-management-reversibility: Reversibilidade
 account-and-service-management-reversibility-reversibility-policies: Políticas de reversibilidade
 account-and-service-management-responsibility-sharing: Partilha de responsabilidades
+startup-program: Startup Program
+startup-program-general-information: General information
+startup-program-support-communication: Support & Communication
+startup-program-credits-billing: Credits & Billing
+startup-program-technical-resources: Technical resources
 bare-metal-cloud-dedicated-servers: Servidores dedicados
-bare-metal-cloud-dedicated-servers-advanced-usage: Utilização avançada
+bare-metal-cloud-dedicated-servers-key-concepts: Conceitos chave
 bare-metal-cloud-dedicated-servers-getting-started: Primeiros passos
-bare-metal-cloud-dedicated-servers-managing-servers: Gestão dos servidores
-bare-metal-cloud-dedicated-servers-backup-restore: Fazer backup e restaurar um servidor
-bare-metal-cloud-dedicated-servers-miscellaneous: Varie
-bare-metal-cloud-dedicated-servers-network-and-ip-management: Rede e IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID e discos
-bare-metal-cloud-dedicated-servers-security: Segurança
-bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-dedicated-servers-configuration: Configuração
+bare-metal-cloud-dedicated-servers-configuration-system: Sistema
+bare-metal-cloud-dedicated-servers-configuration-storage: Armazenamento
+bare-metal-cloud-dedicated-servers-configuration-network: Rede
+bare-metal-cloud-dedicated-servers-configuration-vrack: vRack
+bare-metal-cloud-dedicated-servers-configuration-deployments: Implantação
+bare-metal-cloud-dedicated-servers-migration: Migração
 bare-metal-cloud-dedicated-servers-tutorials: Tutoriais
-bare-metal-cloud-dedicated-servers-vrack: vRack
+bare-metal-cloud-dedicated-servers-security: Segurança
+bare-metal-cloud-dedicated-servers-security-hardening: Hardening
+bare-metal-cloud-dedicated-servers-security-backup: Backup
+bare-metal-cloud-dedicated-servers-security-network: Rede
+bare-metal-cloud-dedicated-servers-troubleshooting: Diagnóstico
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Primeiros passos
@@ -37,38 +46,68 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Serviços e opções da OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades VMware vSphere
 bare-metal-cloud-virtual-private-servers: Servidores privados virtuais
-bare-metal-cloud-virtual-private-servers-advanced-usage: Utilização avançada
-bare-metal-cloud-virtual-private-servers-backups: Backups
+bare-metal-cloud-virtual-private-servers-configuration-advanced-usage: Utilização avançada
+bare-metal-cloud-virtual-private-configuration-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Primeiros passos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Rede e IP
+bare-metal-cloud-virtual-private-servers-configuration: Configuração
+bare-metal-cloud-virtual-private-servers-configuration-network-and-ip-management: Rede e IP
+bare-metal-cloud-virtual-private-servers-security: Segurança
 bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnóstico
+bare-metal-cloud-virtual-private-servers-additional-resources: Recursos adicionais
+bare-metal-cloud-virtual-private-servers-migration: Migração
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriais
-hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
-hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Primeiros passos
-hosted-private-cloud-nutanix-on-ovhcloud-general-information: Informações gerais
-hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Sistemas de rede e segurança
-hosted-private-cloud-nutanix-on-ovhcloud-backup: Backups
-hosted-private-cloud-nutanix-on-ovhcloud-upgrade: Upgrade
-hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Utilização avançada
-hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnóstico
-hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recovery Plan
-hosted-private-cloud-nutanix-on-ovhcloud-raci: Partilha de responsabilidades (RACI)
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Primeiros passos
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd: Public VCF as-a-Service
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Acesso e segurança
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestão das máquinas virtuais
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Manutenção e monitorização
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Gestão dos recursos
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Funcionalidades e opções da OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: VMware vSphere
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: VMware NSX
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v: VMware NSX-v
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Cópias de segurança e Soluções para recuperação de desastres
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud: SecNumCloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migração
+hosted-private-cloud-public-VCF: Public VCF as-a-Service
+hosted-private-cloud-public-VCF-key-concepts: Conceitos-chave
+hosted-private-cloud-public-VCF-getting-started: Introdução
+hosted-private-cloud-public-VCF-configuration: Configuração
+hosted-private-cloud-public-VCF-migration: Migração
+hosted-private-cloud-public-VCF-tutorials: Tutoriais
+hosted-private-cloud-public-VCF-security: Segurança
+hosted-private-cloud-public-VCF-troubleshooting: Diagnóstico
+hosted-private-cloud-public-VCF-additional-resources: Recursos adicionais
+hosted-private-cloud-managed-vmware: Managed VMware
+hosted-private-cloud-managed-vmware-key-concepts: Conceitos-chave
+hosted-private-cloud-managed-vmware-getting-started: Introdução
+hosted-private-cloud-managed-vmware-configuration: Configuração
+hosted-private-cloud-managed-vmware-configuration-vm: Máquinas virtuais
+hosted-private-cloud-managed-vmware-configuration-storage: Armazenamento e recursos
+hosted-private-cloud-managed-vmware-configuration-network: Rede e conectividade
+hosted-private-cloud-managed-vmware-configuration-vsphere: Funcionalidades vSphere
+hosted-private-cloud-managed-vmware-configuration-backup: Cópias de segurança e replicação
+hosted-private-cloud-managed-vmware-migration: Migração
+hosted-private-cloud-managed-vmware-tutorials: Tutoriais
+hosted-private-cloud-managed-vmware-tutorials-vm: Máquinas virtuais
+hosted-private-cloud-managed-vmware-tutorials-storage: Armazenamento e replicação
+hosted-private-cloud-managed-vmware-tutorials-network: Rede e NSX
+hosted-private-cloud-managed-vmware-tutorials-vsphere: Funcionalidades vSphere
+hosted-private-cloud-managed-vmware-tutorials-ha: Alta disponibilidade e resiliência
+hosted-private-cloud-managed-vmware-security: Segurança
+hosted-private-cloud-managed-vmware-security-iam: Gestão de identidade e acesso
+hosted-private-cloud-managed-vmware-security-encryption: Encriptação e gestão de chaves
+hosted-private-cloud-managed-vmware-security-nsx: Segurança de rede (NSX)
+hosted-private-cloud-managed-vmware-security-hardening: Endurecimento do sistema e vulnerabilidades
+hosted-private-cloud-managed-vmware-security-secnumcloud: Conformidade e SecNumCloud
+hosted-private-cloud-managed-vmware-troubleshooting: Diagnóstico
+hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Manutenção e atualizações
+hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitorização e registos
+hosted-private-cloud-managed-vmware-troubleshooting-errors: Gestão de erros
+hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitorização da conformidade
+hosted-private-cloud-managed-vmware-additional-resources: Recursos adicionais
+hosted-private-cloud-nutanix: Nutanix on OVHcloud
+hosted-private-cloud-nutanix-key-concepts: Conceitos-chave
+hosted-private-cloud-nutanix-getting-started: Introdução
+hosted-private-cloud-nutanix-configuration: Configuração
+hosted-private-cloud-nutanix-migration: Migração
+hosted-private-cloud-nutanix-tutorials: Tutoriais
+hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Rede e segurança
+hosted-private-cloud-nutanix-security: Segurança
+hosted-private-cloud-nutanix-troubleshooting: Diagnóstico
+hosted-private-cloud-nutanix-additional-resources: Recursos adicionais
+hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
+hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Primeiros passos
+hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Recursos adicionais
+hosted-private-cloud-baremetal-pod: Bare Metal Pod
+hosted-private-cloud-baremetal-pod-getting-started: Primeiros passos
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Conceitos
 hosted-private-cloud-sap-ovhcloud-getting-started: Primeiros passos
@@ -104,116 +143,165 @@ public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
-public-cloud-quantum-computing-emulator: Quantum emulators
+public-cloud-quantum-computing-emulators: Quantum emulators
 public-cloud-quantum-computing-emulators-guides: Guides
+public-cloud-quantum-computing-qpu: Quantum QPUs
+public-cloud-quantum-computing-qpu-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts: Key concepts
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
-public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
-public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup, Restore and Migrate
-public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
-public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
-public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration: Configuration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-backup-and-restore: Backup and Restore
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-observability-monitoring: Monitoring & Observability
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-traffic-management: Traffic management
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-operators: Operators
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-cluster: Cluster
+public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-nodepools-and-nodes: Nodepools & Nodes
+public-cloud-containers-orchestration-managed-kubernetes-k8s-migration: Migration
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
-public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
-public-cloud-containers-orchestration-managed-kubernetes-k8s-general-information: General Information
-public-cloud-containers-orchestration-managed-kubernetes-k8s-cluster: Cluster
-public-cloud-containers-orchestration-managed-kubernetes-k8s-nodepools-and-nodes: Nodepools & Nodes
-public-cloud-containers-orchestration-managed-kubernetes-k8s-workloads: Workloads
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-kubernetes-k8s-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-private-registry-configuration: Configuration
+public-cloud-containers-orchestration-managed-private-registry-security: Security
+public-cloud-containers-orchestration-managed-private-registry-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-private-registry-additional-resources: Additional resources
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
-public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
-public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
-public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
+public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
+public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
+public-cloud-databases-common-configuration: Configuration
+public-cloud-databases-common-getting-started: Getting started
+public-cloud-databases-common-key-concepts: Key concepts
+public-cloud-databases-common-migration: Migration
+public-cloud-databases-common-security: Security
+public-cloud-databases-common-troubleshooting: Troubleshooting
+public-cloud-databases-common: Common
+public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
+public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
+public-cloud-databases-mongodb-guides: MongoDB - User guides
+public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb: MongoDB
+public-cloud-databases-mysql-guides: MySQL - Guides
+public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql: MySQL
+public-cloud-databases-postgresql-guides: PostgreSQL - Guides
+public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
+public-cloud-databases-postgresql: PostgreSQL
+public-cloud-databases-valkey-guides: Valkey - Guides
+public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey: Valkey
+public-cloud-databases: Public Cloud Databases
+public-cloud-data-analytics-common-configuration: Configuration
+public-cloud-data-analytics-common-getting-started: Getting started
+public-cloud-data-analytics-common-key-concepts: Key concepts
+public-cloud-data-analytics-common-migration: Migration
+public-cloud-data-analytics-common-security: Security
+public-cloud-data-analytics-common-troubleshooting: Troubleshooting
+public-cloud-data-analytics-common: Common
+public-cloud-data-analytics-grafana-guides: Dashboards - Guides
+public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
+public-cloud-data-analytics-grafana: Dashboards
+public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
+public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-data-analytics-kafka-connect: Kafka Connect
+public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
+public-cloud-data-analytics-kafka-guides: Kafka - User guides
+public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
+public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka: Kafka
+public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
+public-cloud-data-analytics-opensearch: OpenSearch
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: General information
 public-cloud-data-analytics-general-guides: General guides
-public-cloud-databases: Public Cloud Databases
-public-cloud-databases-general-information: General information
-public-cloud-databases-general-guides: General guides
-public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
-public-cloud-databases-mysql: MySQL
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
-public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-valkey: Valkey
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
-public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-grafana-guides: Dashboards - Guides
-public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
-public-cloud-data-analytics-kafka: Kafka
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
-public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
-public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
-public-cloud-databases-cassandra: Cassandra
-public-cloud-databases-cassandra-guides: Cassandra - Guides
-public-cloud-data-analytics-opensearch: OpenSearch
-public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
+public-cloud-compute-key-concepts: Conceitos-chave
 public-cloud-compute-getting-started: Introdução
-public-cloud-compute-general-information: Informações gerais
-public-cloud-compute-project-management: Gestão do projeto
-public-cloud-compute-instance-management: Gestão das instâncias
-public-cloud-compute-instance-management-getting-started: Gestão das instâncias - Introdução
-public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
-public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
-public-cloud-compute-instance-management-openstack: Gestão via OpenStack API
-public-cloud-compute-block-storage: Block Storage
+public-cloud-compute-configuration: Configuration
+public-cloud-compute-configuration-project-management: Gestão do projeto
+public-cloud-compute-configuration-instance-management: Gestão das instâncias
+public-cloud-compute-configuration-instance-management-horizon: Gestão a partir do Horizon
+public-cloud-compute-configuration-instance-management-openstack: Gestão via OpenStack API
 public-cloud-compute-tutorials: Tutoriais
+public-cloud-compute-migration: Migração
+public-cloud-compute-security: Segurança
+public-cloud-compute-Troubleshooting: Diagnóstico
+public-cloud-compute-additional-resources: Recursos adicionais
 public-cloud-cross-functional: Public Cloud - Informações gerais
 public-cloud-cross-functional-getting-started: Introdução
-public-cloud-cross-functional-general-information: Informações gerais
-public-cloud-cross-functional-project-management: Gestão de projectos Public Cloud
+public-cloud-cross-functional-key-concepts: Conceitos-chave
+public-cloud-cross-functional-configuration: Configuração
+public-cloud-cross-functional-configuration-billing-information: Informações de faturação
+public-cloud-cross-functional-configuration-project-management: Gestão de projectos Public Cloud
 public-cloud-cross-functional-migration: Migração
 public-cloud-cross-functional-tutorials: Tutoriais
-public-cloud-cross-functional-services-management: Gestão de serviços
-public-cloud-cross-functional-horizon: Gestão a partir do Horizon
-public-cloud-cross-functional-openstack: Gestão via OpenStack API
-public-cloud-cross-functional-infrastructure: Infraestrutura
-public-cloud-cross-functional-billing-information: Informações de faturação
+public-cloud-cross-functional-tutorials-horizon: Gestão a partir do Horizon
+public-cloud-cross-functional-tutorials-openstack: Gestão a partir do Openstack
+public-cloud-cross-functional-tutorials-terraform: Gestão a partir do Terraform
+public-cloud-cross-functional-security: Segurança
+public-cloud-cross-functional-troubleshooting: Diagnóstico
+public-cloud-cross-functional-additional-resources: Recursos adicionais
 public-cloud-storage: Storage and Backup
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-object-storage-s3: S3 compatible
+public-cloud-storage-object-storage-s3-key-concepts: Conceitos
+public-cloud-storage-object-storage-s3-getting-started: Introdução
+public-cloud-storage-object-storage-s3-configuration: Configuração
+public-cloud-storage-object-storage-s3-migration: Migração
+public-cloud-storage-object-storage-s3-tutorials: Tutoriais
+public-cloud-storage-object-storage-s3-security: Segurança
+public-cloud-storage-object-storage-s3-troubleshooting: Diagnóstico
+public-cloud-storage-object-storage-s3-additional-resources: Recursos adicionais
+public-cloud-storage-object-storage-swift: Swift
+public-cloud-storage-object-storage-swift-getting-started: Introdução
+public-cloud-storage-object-storage-swift-configuration: Configuração
+public-cloud-storage-object-storage-swift-migration: Migração
+public-cloud-storage-object-storage-swift-tutorials: Tutoriais
+public-cloud-storage-object-storage-swift-security: Segurança
+public-cloud-storage-object-storage-swift-troubleshooting: Diagnóstico
+public-cloud-storage-object-storage-swift-additional-resources: Recursos adicionais
 public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-block-storage-key-concepts: Conceitos-chave
+public-cloud-storage-block-storage-getting-started: Introdução
+public-cloud-storage-block-storage-configuration: Configuração
+public-cloud-storage-block-storage-migration: Migração
+public-cloud-storage-block-storage-additional-resources: Recursos adicionais
 public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-getting-started: Introdução
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
-public-cloud-network-concepts: Conceitos
+public-cloud-network-key-concepts: Conceitos-chave
 public-cloud-network-getting-started: Introdução
-public-cloud-network-additional-ip: Additional IP
+public-cloud-network-getting-started-private-network: Private Network
+public-cloud-network-getting-started-load-balancer: Load Balancer
+public-cloud-network-getting-started-public-ips: Public IPs
 public-cloud-network-configuration: Configuração
-public-cloud-network-technical-resources: Recursos Técnicos
+public-cloud-network-configuration-private-network: Private Network
+public-cloud-network-configuration-load-balancer: Load Balancer
+public-cloud-network-configuration-public-ips: Public IPs
+public-cloud-network-configuration-gateway: Gateway
 public-cloud-network-tutorials: Tutoriais
+public-cloud-network-tutorials-general: geral
+public-cloud-network-tutorials-private-network: Private Network
+public-cloud-network-tutorials-load-balancer: Load Balancer
+public-cloud-network-security: Segurança
+public-cloud-network-troubleshooting: Diagnóstico
+public-cloud-network-additional-resources: Recursos adicionais
 public-cloud-data-platform: Data Platform
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeiros passos
 web-cloud-clouddb-configuration: Configuração
-web-cloud-clouddb-technical-resources: Recursos técnicos
+web-cloud-clouddb-migration: Migração
+web-cloud-clouddb-additional-resources: Recursos adicionais
 web-cloud-email-collaborative-solutions: Soluções de e-mail e Ferramentas Colaborativas
 web-cloud-email-collaborative-solutions-common-email-features: Funcionalidades comuns às ofertas de e-mail
 web-cloud-email-collaborative-solutions-using-outlook-web-access-owa: Utilização do Outlook Web Application (OWA)
@@ -243,111 +331,185 @@ web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-c
 web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-domains: Domínios
 web-cloud-domains-api: API
-web-cloud-domains-api-frequent-tasks: Tarefas frequentes
+web-cloud-domains-api-key-concepts: Conceitos-chave
+web-cloud-domains-api-getting-started: Primeiros passos
+web-cloud-domains-api-configuration: Configuração
+web-cloud-domains-api-migration: Migração
 web-cloud-domains-dns: DNS (Domain Name System)
-web-cloud-domains-dns-dns-options: Opções DNS
-web-cloud-domains-dns-dns-records: Registos DNS
-web-cloud-domains-dns-dns-servers: Servidores DNS
-web-cloud-domains-dns-dns-tools: Ferramentas DNS
-web-cloud-domains-dns-dns-zone: Zona DNS
+web-cloud-domains-dns-configuration-dns-options: Opções DNS
+web-cloud-domains-dns-configuration-dns-records: Registos DNS
+web-cloud-domains-dns-configuration-dns-servers: Servidores DNS
+web-cloud-domains-dns-key-concepts: Conceitos-chave
+web-cloud-domains-dns-configuration: Configuração
+web-cloud-domains-dns-configuration-dns-zone: Zona DNS
+web-cloud-domains-dns-security: Segurança
+web-cloud-domains-dns-tutorials: Tutoriais
 web-cloud-domains-domain-names: Nomes de domínio
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
 web-cloud-domains-domain-names-getting-started: Primeiros passos
-web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
+web-cloud-domains-domain-names-configuration: Configuração
+web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
 web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transferência de saída a partir da OVHcloud
 web-cloud-domains-domain-names-troubleshooting: Diagnóstico
+web-cloud-domains-domain-names-migration: Migração
 web-cloud-domains-domain-names-tutorials: Tutoriais
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acesso Internet
-web-cloud-internet-internet-access-advanced-setup: Configuração avançada
+web-cloud-internet-internet-access-configuration-advanced-setup: Configuração avançada
+web-cloud-internet-internet-access-key-concepts: Conceitos-chave
 web-cloud-internet-internet-access-getting-started: Primeiros passos
-web-cloud-internet-internet-access-managing-your-offer: Gestão da oferta
-web-cloud-internet-internet-access-managing-your-options: Gestão das opções
-web-cloud-internet-internet-access-setting-up-your-access: Configuração do acesso
+web-cloud-internet-internet-access-configuration: Configuração
+web-cloud-internet-internet-access-configuration-managing-your-offer: Gestão da oferta
+web-cloud-internet-internet-access-configuration-managing-your-options: Gestão das opções
+web-cloud-internet-internet-access-configuration-setting-up-your-access: Configuração do acesso
 web-cloud-internet-internet-access-troubleshooting: Diagnóstico
 web-cloud-internet-overthebox: OverTheBox
-web-cloud-internet-overthebox-managing-your-offer: Gestão da oferta
+web-cloud-internet-overthebox-configuration-managing-your-offer: Gestão da oferta
+web-cloud-internet-overthebox-configuration-advanced-setup: Configuração Avançada
 web-cloud-internet-overthebox-getting-started: Primeiros passos
-web-cloud-internet-overthebox-initial-setup: Configuração inicial
+web-cloud-internet-overthebox-configuration: Configuração
+web-cloud-internet-overthebox-configuration-initial-setup: Configuração inicial
 web-cloud-messaging: Mensagens
 web-cloud-messaging-sms: SMS
-web-cloud-messaging-sms-advanced-usage: Utilização avançada
+web-cloud-messaging-sms-configuration-advanced-usage: Utilização avançada
 web-cloud-messaging-sms-getting-started: Primeiros passos
-web-cloud-messaging-sms-managing-your-solution: Gerir a oferta
-web-cloud-messaging-sms-sending-sms-messages: Envio de SMS
-web-cloud-messaging-sms-smpp: SMPP
+web-cloud-messaging-sms-configuration: Configuração
+web-cloud-messaging-sms-configuration-managing-your-solution: Gerir a oferta
+web-cloud-messaging-sms-configuration-sending-sms-messages: Envio de SMS
+web-cloud-messaging-sms-configuration-smpp: SMPP
 web-cloud-phone-and-fax: Telefone e Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeiros passos
-web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Envio e receção de faxes
+web-cloud-phone-and-fax-fax-configuration: Configuração
+web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Envio e receção de faxes
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Administrar
-web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
-web-cloud-phone-and-fax-voip-faq: FAQ
-web-cloud-phone-and-fax-voip-ipbx: IPBX
-web-cloud-phone-and-fax-voip-numbers-and-aliases: Números e alias
-web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Modelos de telefone anteriores
+web-cloud-phone-and-fax-voip-configuration-administration: Administrar
+web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
+web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
+web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Números e alias
+web-cloud-phone-and-fax-voip-configuration-popc: POPC
+web-cloud-phone-and-fax-voip-additional-resources: Recursos adicionais
 web-cloud-phone-and-fax-voip-security: Segurança
-web-cloud-phone-and-fax-voip-telephone-lines: Linhas telefónicas
+web-cloud-phone-and-fax-voip-getting-started: Introdução
+web-cloud-phone-and-fax-voip-configuration: Configuração
+web-cloud-phone-and-fax-voip-configuration-telephone-lines: Linhas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
 web-cloud-phone-and-fax-voip-tutorials: Tutoriais
 web-cloud-hosting: Alojamento partilhado
-web-cloud-hosting-automating-tasks-cron: Automatização de tarefas (cron)
-web-cloud-hosting-cloud-web-configuration: Configuração de um alojamento Cloud Web
-web-cloud-hosting-cms: CMS
-web-cloud-hosting-configuring-web-hosting-plan: Configurar o alojamento web Perso, Pro ou Performance
-web-cloud-hosting-databases: Bases de dados
-web-cloud-hosting-ftp-and-ssh: FTP e SSH
+web-cloud-hosting-tutorials-cms: CMS
+web-cloud-hosting-configuration-ftp-and-ssh: FTP e SSH
 web-cloud-hosting-getting-started: Primeiros passos
-web-cloud-hosting-general-information: Informações gerais
+web-cloud-hosting-configuration: Configuração
+web-cloud-hosting-configuration-databases: Bases de dados
+web-cloud-hosting-configuration-cms: CMS
+web-cloud-hosting-additional-resources: Recursos adicionais
 web-cloud-hosting-php: PHP
-web-cloud-hosting-redirection-and-authentication: Reencaminhamento e autenticação
-web-cloud-hosting-ssl: SSL
+web-cloud-hosting-tutorials-redirection-and-authentication: Reencaminhamento e autenticação
+web-cloud-hosting-security: Segurança
 web-cloud-hosting-troubleshooting: Diagnóstico
 web-cloud-hosting-tutorials: Tutoriais
+web-cloud-hosting-migration: Migração
 web-cloud-hosting-tutorials-wordpress: Tutoriais WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriais Cloud Web
-web-cloud-hosting-website-optimisation: Otimização site
-web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
 storage-object-storage: Object Storage
-storage-object-storage-general-information: General information
-storage-object-storage-general-guides-to-start: General guides to start
-storage-object-storage-tutorials: Tutorials
-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-object-storage-s3: S3 compatible
+storage-object-storage-s3-key-concepts: Conceitos
+storage-object-storage-s3-getting-started: Introdução
+storage-object-storage-s3-configuration: Configuração
+storage-object-storage-s3-migration: Migração
+storage-object-storage-s3-tutorials: Tutoriais
+storage-object-storage-s3-security: Segurança
+storage-object-storage-s3-troubleshooting: Diagnóstico
+storage-object-storage-s3-additional-resources: Recursos adicionais
+storage-object-storage-swift: Swift
+storage-object-storage-swift-getting-started: Introdução
+storage-object-storage-swift-configuration: Configuração
+storage-object-storage-swift-migration: Migração
+storage-object-storage-swift-tutorials: Tutoriais
+storage-object-storage-swift-security: Segurança
+storage-object-storage-swift-troubleshooting: Diagnóstico
+storage-object-storage-swift-additional-resources: Recursos adicionais
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-ha-nas: HA-NAS
+storage-file-storage-enterprise-file-storage-key-concepts: Conceitos-chave
+storage-file-storage-enterprise-file-storage-getting-started: Primeiros passos
+storage-file-storage-enterprise-file-storage-configuration: Configuração
+storage-file-storage-enterprise-file-storage-migration: Migração
+storage-file-storage-enterprise-file-storage-additional-resources: Recursos adicionais
+storage-file-storage-ha-nas: NAS-HA
+storage-file-storage-ha-nas-key-concepts: Conceitos-chave
+storage-file-storage-ha-nas-getting-started: Primeiros passos
+storage-file-storage-ha-nas-configuration: Configuração
+storage-file-storage-ha-nas-migration: Migração
+storage-file-storage-ha-nas-additional-resources: Recursos adicionais
+storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
+storage-file-storage-public-cloud-file-storage-getting-started: Primeiros passos
 storage-block-storage: Block Storage
+storage-block-storage-block-volume: Block volume
+storage-block-storage-block-volume-key-concepts: Conceitos-chave
+storage-block-storage-block-volume-getting-started: Primeiros passos
+storage-block-storage-block-volume-configuration: Configuração
+storage-block-storage-block-volume-migration: Migração
+storage-block-storage-block-volume-additional-resources: Recursos adicionais
 storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-block-storage-cloud-disk-array-key-concepts: Conceitos-chave
+storage-block-storage-cloud-disk-array-getting-started: Primeiros passos
+storage-block-storage-cloud-disk-array-configuration: Configuração
+storage-block-storage-cloud-disk-array-tutorials: Tutorials
+storage-block-storage-cloud-disk-array-additional-resources: Recursos adicionais
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-general-information: Informações gerais
 network-additional-ip: Additional IP
+network-additional-ip-key-concepts: Conceitos-chave
+network-additional-ip-configuration: Configuração
+network-additional-ip-products: Guias específicos de produto
+network-additional-ip-products-dedicated-servers: Servidores dedicados
+network-additional-ip-products-hosted-private-cloud: Hosted Private Cloud
+network-additional-ip-products-load-balancer: Load Balancer
+network-additional-ip-products-managed-bare-metal: Managed Bare Metal
+network-additional-ip-products-public-cloud: Public Cloud
+network-additional-ip-products-vps: Virtual Private Servers
+network-additional-ip-troubleshooting: Resolução de problemas
+network-additional-ip-byoip: Bring Your Own IP
 network-bgp: BGP Service
-network-security: Rede e Segurança
-network-ovhcloud-connect: OVHcloud Connect
-network-ovhcloud-connect-concepts: Conceitos
-network-ovhcloud-connect-configuration: Configuração
-network-ovhcloud-connect-getting-started: Primeiros passos
-network-ovhcloud-connect-technical-resources: Recursos técnicos
+network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 network-load-balancer: Load Balancer
-network-load-balancer-faq: FAQ
+network-load-balancer-key-concepts: Conceitos-chave
 network-load-balancer-getting-started: Primeiros passos
-network-load-balancer-setting-up: Início
-network-load-balancer-use-cases: Casos de uso
-network-load-balancer-viewing-statuses: Ver estados
+network-load-balancer-configuration: Configuração
+network-load-balancer-configuration-infrastructure: Infraestrutura
+network-load-balancer-configuration-administration: Tráfego
+network-load-balancer-configuration-deployments: Implementações
+network-load-balancer-additional-resources: Recursos adicionais
+network-load-balancer-troubleshooting: Resolução de problemas
+network-security: Segurança de rede
+network-ovhcloud-connect: OVHcloud Connect
+network-ovhcloud-connect-concepts: Conceitos-chave
+network-ovhcloud-connect-getting-started: Primeiros passos
+network-ovhcloud-connect-configuration: Configuração
+network-ovhcloud-connect-troubleshooting: Resolução de problemas
+network-ovhcloud-connect-technical-resources: Recursos adicionais
+network-secnumcloud-connectivity: SecNumCloud
+network-vrack: vRack Private Network
+network-vrack-configuration: Configuração
+network-vrack-use-cases: Guias específicos de produto
+network-vrack-products-dedicated-servers: Servidores dedicados
+network-vrack-products-hosted-private-cloud: Hosted Private Cloud
+network-vrack-products-hosted-private-cloud-nutanix: Nutanix on OVHcloud
+network-vrack-products-hosted-private-cloud-vmware: VMware on OVHcloud
+network-vrack-products-load-balancer: Load Balancer
+network-vrack-products-managed-bare-metal: Managed Bare Metal
+network-vrack-products-public-cloud: Public Cloud
+network-vrack-products-public-cloud-containers-orchestration: Contentores & Orquestração
+network-vrack-products-public-cloud-network-services: Public Cloud Network Services
 network-vrack-services: vRack Services
-network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
+network-troubleshooting: Resolução de problemas
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Primeiros passos
@@ -359,6 +521,7 @@ manage-operate-terraform: Terraform
 manage-operate-cli: CLI
 manage-operate-observability: Observability
 manage-operate-kms: KMS
+manage-operate-secret-manager: Secret Manager
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-iam: IAM

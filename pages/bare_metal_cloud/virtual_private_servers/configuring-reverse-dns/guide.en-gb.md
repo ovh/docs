@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for your server (PTR record)
-excerpt: Find out how to set up the reverse DNS resolution for your IP address in the OVHcloud Control Panel
-updated: 2025-09-18
+excerpt: Find out how to set up the reverse DNS resolution for your IPv4 or IPv6 address in the OVHcloud Control Panel
+updated: 2025-12-10
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 ## Requirements
 
 - An IP address attached to a service in your OVHcloud account
-- A domain name with its `A` record mapped to your service
+- A domain name with its `A` record or `AAAA` record mapped to your service
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -37,7 +37,7 @@ In the new window, enter your reverse path and click on `Validate`{.action}.
 You can also edit the reverse path directly via the pen icon in the **Reverse DNS** column of the table.
 
 > [!warning]
-> When you enter your domain name in the reverse, it double checks immediately if the A record is referring back to the same IP. This is used in anti-spam procedures, so your A record must be valid and propagated. There are certain rules to follow while entering the reverse:
+> When you enter your domain name in the reverse, it double checks immediately if the `A` and `AAAA` records match the configured IP addresses for this domain. This is used in anti-spam procedures, so your DNS record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
 >  - It cannot start with a `-`.
 >  - It cannot be longer than 63 characters.
@@ -45,14 +45,12 @@ You can also edit the reverse path directly via the pen icon in the **Reverse DN
 >  - It must end with a `.`.
 >
 > Example: "domain.tld" in the reverse record would be `domain.tld.`.
->
 
 > [!primary]
 >
-If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
+> If the change does not work as expected, check that the `A` and `AAAA` records are correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited a record.
 >
-If the domain name is managed by OVHcloud as its registrar **and it uses OVHcloud DNS servers**, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
->
+> If the domain name is managed by OVHcloud as its registrar **and it uses OVHcloud DNS servers**, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
 
 ## Go further
 

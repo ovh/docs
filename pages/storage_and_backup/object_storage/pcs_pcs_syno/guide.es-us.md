@@ -41,7 +41,7 @@ Para configurar la sincronización de su NAS Synology, debe tener las claves de 
 
 Para obtenerlos, descargue el archivo OpenRC mediante la primera parte de la siguiente guía:
 
-- [Cargar las variables de entorno OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#paso-1-obtener-las-variables){.ref}
+- [Cargar las variables de entorno OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables#paso-1-obtener-las-variables)
 
 #### Configuración del punto de sincronización con Cloud Sync
 

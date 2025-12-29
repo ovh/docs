@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installation et configuration de Cecil, un générateur de sites statiques (SSG) en PHP"
 excerpt: "Découvrez comment Cecil vous permet de créer votre site statique à l'aide d'un moteur de template moderne (Jamstack)"
-updated: 2023-12-08
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -17,14 +17,14 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
 - Être familiarisé à la saisie en ligne de commande.
 - Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-- Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs sites en [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web mutualisé.
+- Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs [sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web mutualisé.
 - Installer préalablement [Composer](https://getcomposer.org/) avec le fichier `composer.phar` à la racine de votre hébergement web mutualisé ou dans le dossier cible de votre nom de domaine.
 
 ## En pratique
 
-Les [hébergements web mutualisés](/links/web/hosting) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+Un [hébergement web mutualisé](/links/web/hosting) permet de déclarer des domaines ou sous-domaines sur les sites web qu'ils contient. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
 
-Pour vous aider à déclarer un domaine ou un sous-domaine en multisite sur votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+Pour vous aider à déclarer un domaine ou un sous-domaine sur l'un des sites web de votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 ### Créer le répertoire dans lequel seront vos fichiers
 
@@ -87,7 +87,7 @@ Vous pouvez maintenant voir le résultat en vous rendant sur votre nom de domain
 
 Pour visualiser le résultat de votre site sur votre navigateur, modifiez le pointage de votre nom de domaine ou de sous-domaine dans le répertoire `_site` créé précédemment lors de l'installation de **Cecil**.
 
-Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez nos guides relatifs à la [configuration DNS](/pages/web_cloud/domains/dns_zone_edit) et à la mise en place d'un [multisites sur votre hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez nos guides relatifs à la [configuration DNS](/pages/web_cloud/domains/dns_zone_edit) et à la mise en place d'un [site web sur votre hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Configurer son site
 

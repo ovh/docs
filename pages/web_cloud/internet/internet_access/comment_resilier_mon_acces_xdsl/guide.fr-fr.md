@@ -52,7 +52,7 @@ Pour cela, il vous suffit de cocher les cases correspondant aux services que vou
 
 Une fois vos choix effectués, cliquez sur le bouton `Résilier`{.action} en bas de page.
 
-Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le bon de retour de votre modem.
+Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le [bon de retour de votre modem](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma).
 
 ### Annuler la résiliation
 

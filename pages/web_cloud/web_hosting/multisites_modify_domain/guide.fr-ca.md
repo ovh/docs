@@ -1,7 +1,7 @@
 ---
 title: 'Hébergement web - Modifier un nom de domaine déjà associé à un hébergement'
 excerpt: "Découvrez comment modifier les paramètres d'association d'un nom de domaine/sous-domaine déjà déclaré sur votre offre d'hébergement web"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Objectif
@@ -84,12 +84,6 @@ C'est donc dans ce formulaire que vous devrez remplacer le nom du dossier pré-r
 
 #### Autres options disponibles
 
-##### L'option « SSL »
-
-Cochez/décochez cette case uniquement si vous souhaitez activer/désactiver le SSL gratuit **Let's Encrypt** pour votre nom de domaine/sous-domaine. Il n'est pas nécessaire de cocher cette case pour les autres offres SSL proposées chez OVHcloud.
-
-Retrouvez plus d'informations sur les options/offres SSL disponibles dans notre documentation dédiée « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
-
 ##### L'option « Activer CDN »
 
 Pour pouvoir utiliser cette option, vous devez avoir au préalable souscrit à une offre CDN OVHcloud ou disposer d'une offre d'hébergement web Performance.
@@ -122,7 +116,7 @@ Si l'ensemble des paramètres sont configurés selon vos souhaits, cliquez sur l
 
 En fonction des options sélectionnées, les modifications peuvent prendre de quelques minutes à quelques heures à être appliquées.
 
-Si, pour les options **SSL**, **CDN**, **IP du pays** et **logs séparés**, les modifications ne sont pas prises en compte au bout de 24 heures, nous vous invitons à consulter les guides (et pages) respectifs indiqués pour l'ensemble des options décrites dans l'[étape 1](#step1), afin de vérifier que toutes les conditions requises ont bien été suivies, respectées et réalisées.
+Si, pour les options **CDN** et **logs séparés**, les modifications ne sont pas prises en compte au bout de 24 heures, nous vous invitons à consulter les guides (et pages) respectifs indiqués pour l'ensemble des options décrites dans l'[étape 1](#step1), afin de vérifier que toutes les conditions requises ont bien été suivies, respectées et réalisées.
 
 ## Aller plus loin
 

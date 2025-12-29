@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Gestionar un certificado SSL"
 excerpt: "Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud"
-updated: 2025-06-16
+updated: 2025-12-16
 ---
 
 ## Objetivo
@@ -20,7 +20,7 @@ Los niveles de cifrado SSL son idénticos entre los tres tipos de certificado.
 
 La principal diferencia reside en el nivel de comprobaciones que realizará la Autoridad de Certificación (CA) que emite el certificado SSL y certifica su autenticidad.
 
-Para utilizar un certificado SSL en HTTPS, es imprescindible tener un certificado SSL en el sitio web.
+Disponer de un certificado SSL para su sitio web es imprescindible para utilizarlo en HTTPS.
 
 **Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud.**
 
@@ -34,16 +34,18 @@ Para utilizar un certificado SSL en HTTPS, es imprescindible tener un certificad
 
 > [!warning]
 >
-> **Antes de continuar**, asegúrese de que **el/los nombre/s de dominio y/o subdominio/s** correspondiente/s a su futuro certificado SSL:
+> **Antes de continuar**, verifica que **el o los nombres de dominio y/o subdominios** afectados por tu o tus futuros certificados SSL:
 >
-> - apunta(n) a la dirección IP de su alojamiento web;
-> - está(s) declarado(s) en multisitio en su alojamiento web.
+> - apunta/apuntan a la dirección IP de tu alojamiento web.
+> - está/están registrado/s en uno de los sitios web de tu alojamiento web.
+> - no dispone/disponen ya de un certificado SSL activo.
 >
 > Para más información, consulte nuestras guías:
 >
-> - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite);
-> - [Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> - [Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> - [Web hosting - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), parte **Desactivar un certificado SSL en un alojamiento web**.
 
 ### Activar un certificado SSL en un alojamiento web <a name="ssl-enable"></a>
 
@@ -51,56 +53,55 @@ OVHcloud ofrece 4 soluciones para activar/instalar un certificado SSL en un aloj
 
 Consulte a continuación los cuatro enlaces a nuestras guías dedicadas a estas cuatro soluciones:
 
-- [Activar el certificado SSL gratuito Let's Encrypt (DV)](/pages/web_cloud/web_hosting/ssl_letsencrypt): certificado que puede incluir hasta **99** nombres de dominio o subdominio declarados en un alojamiento web.
-- [Activar el certificado SSL de pago Sectigo (DV)](/pages/web_cloud/web_hosting/ssl_dv): certificado válido para un único dominio + su subdominio en "www" (por ejemplo, `domain.tld` y `www.domain.tld`) o **únicamente** un subdominio (por ejemplo, `sub.domain.tld`).
-- [Activar el certificado SSL de pago Sectigo (EV)](/pages/web_cloud/web_hosting/ssl_ev): certificado válido para un único dominio + su subdominio en "www" (por ejemplo, `domain.tld` y `www.domain.tld`) o **únicamente** un subdominio (por ejemplo, `sub.domain.tld`).
-- [Instalar un certificado SSL personalizado](/pages/web_cloud/web_hosting/ssl_custom): si tiene su propio certificado SSL o si ninguna de las 3 soluciones anteriores se ajusta a sus necesidades.
-
-> [!primary]
->
-> Solo es posible instalar un certificado SSL por alojamiento web (entre las 4 soluciones mencionadas anteriormente).
->
-> Si necesita activar un certificado SSL para varios dominios o subdominios declarados en su alojamiento web, puede instalar un [certificado SSL gratuito Let's Encrypt](/links/web/hosting-options-ssl) o instalar su propio [certificado SSL personalizado](/pages/web_cloud/web_hosting/ssl_custom).
+- [Web hosting - Activar un certificado SSL gratuito Let's Encrypt](/pages/web_cloud/web_hosting/ssl_letsencrypt): Certificado gratuito disponible con nuestros alojamientos web.
+- [Web hosting - Activar un certificado SSL Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv): Certificado válido para un único dominio + su subdominio en «www» (por ejemplo, `domain.tld` y `www.domain.tld`) o **únicamente** un subdominio (por ejemplo, `sub.domain.tld`).
+- [Web hosting - Activar un certificado SSL Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev): Certificado válido para un único dominio + su subdominio en «www» (por ejemplo, `domain.tld` y `www.domain.tld`) o **únicamente** un subdominio (por ejemplo, `sub.domain.tld`).
+- [Web hosting - Instalar un certificado SSL personalizado](/pages/web_cloud/web_hosting/ssl_custom): Si tiene su propio certificado SSL o si ninguna de las 3 soluciones anteriores se ajusta a sus necesidades.
 
 ### Eliminar un certificado SSL en un alojamiento web <a name="delete-ssl"></a>
 
 > [!warning]
 >
-> Si quiere eliminar un certificado SSL de su alojamiento web y **antes de continuar**, asegúrese de que la supresión del certificado SSL no hará que sus sitios web dejen de estar accesibles. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
-
-Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un proveedor de servicios especializado. No podremos asistirle.
-
-> [!primary]
+> La supresión de un certificado SSL de pago **Sectigo** (DV o EV) es definitiva, incluso si el certificado no ha expirado todavía. No se realizará ninguna devolución por la parte proporcional al tiempo restante. Si quiere reinstalar un certificado SSL **Sectigo** (DV o EV), deberá realizar obligatoriamente un nuevo pedido y abonar la totalidad del nuevo certificado SSL suscrito.
 >
-> **Información sobre la migración a la nueva interfaz de gestión de certificados SSL:**
+> Además, si desea desactivar definitivamente un certificado SSL de su alojamiento web, asegúrese **antes de continuar** de que la desactivación definitiva del certificado SSL no hará que sus sitios web dejen de estar accesibles. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
 >
-> El resto de esta guía se dirige a los clientes cuyos servicios de alojamiento web aún no hayan migrado a la nueva interfaz de gestión de certificados SSL.
-> Para consultar si se ha realizado la migración, conéctese al área de cliente de OVHcloud, y compruebe si la pestaña `Certificados SSL` está presente.
-> Si la pestaña `Certificados SSL` está presente, su servicio ya ha migrado a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_management) para gestionar su certificado SSL.
->
-> Por razones técnicas, todos los servicios de alojamiento web de todos nuestros clientes no pueden migrarse de una sola vez. Esta migración se realiza de forma automática, a lo largo de varias semanas, sin que afecte al funcionamiento de los servicios de alojamiento web y sin que usted tenga que realizar ninguna intervención o acción.
->
-> A largo plazo, todos los servicios de alojamiento web funcionarán con la nueva interfaz de gestión de certificados SSL.
+> Esta comprobación es inherente a la configuración de su sitio web. Si necesita ayuda, le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner). No podremos asistirle.
 
-Para eliminar el certificado SSL instalado en el alojamiento web, lleve a cabo los siguientes pasos:
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Acceda a la sección `Web Cloud`{.action} de la página.
-3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
-4. Seleccione el alojamiento web correspondiente.
-5. A continuación, siga en la pestaña `Información general`{.action}.
-6. Acceda al recuadro `Configuración`.
-7. A la derecha de la mención `Certificado SSL`, haga clic en el botón `...`{.action} y luego en `Eliminar el SSL`{.action}.
-8. En la nueva ventana, haga clic en `Aceptar`{.action} para confirmar la supresión del certificado SSL.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+>>
+>> ![Certificados SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece en la parte inferior de la nueva página, haga clic en el botón `⁝`{.action}, situado a la derecha de la línea correspondiente al dominio en cuestión, y seleccione `Desactivar SSL`{.action}.
+>>
+>> ![Desactivar SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/disable-ssl.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la nueva ventana, confirme la desactivación haciendo clic en `Confirmar`{.action}.
+>>
+>> ![Eliminar SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
 
-![Delete SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
-
-Esta será efectiva en un plazo máximo de unas horas.
-
-> [!warning]
->
-> La supresión de un certificado SSL de pago **Sectigo** (DV o EV) es definitiva, incluso si el certificado no había expirado todavía. No se realizará ninguna devolución por la parte proporcional al tiempo restante. Si quiere reinstalar un certificado SSL **Sectigo** (DV o EV), deberá realizar obligatoriamente un nuevo pedido y abonar la totalidad del nuevo certificado SSL suscrito.
->
+La desactivación del certificado SSL será efectiva en unas horas como máximo.
 
 ### Corregir los errores más frecuentes de los certificados SSL ofrecidos en los alojamientos web
 
@@ -108,9 +109,7 @@ Esta será efectiva en un plazo máximo de unas horas.
 
 Este mensaje indica que ya es propietario de un certificado SSL. Por lo tanto, no es necesario activar un nuevo certificado SSL en su alojamiento web.
 
-- 1: Si el certificado SSL instalado en su alojamiento web es un certificado SSL gratuito Let's Encrypt , consulte nuestra guía sobre el certificado SSL [Let's Encrypt (DV)](/pages/web_cloud/web_hosting/ssl_letsencrypt) para continuar sus acciones.
-
-- 2: Si el certificado SSL instalado en su alojamiento web no es el que desea utilizar, puede [suprimir su certificado SSL](#delete-ssl) actual y luego [activar un nuevo certificado SSL](#ssl-enable) en su alojamiento web.
+Si el certificado SSL instalado en su alojamiento web no es el que desea utilizar, puede [desactivar su certificado SSL](#delete-ssl) actual y, a continuación, [activar un nuevo certificado SSL](#ssl-enable) en su alojamiento web.
 
 #### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
 
@@ -129,10 +128,6 @@ Si ha activado una opción CDN en su alojamiento web, también puede utilizar la
 Para consultar la dirección IP de un alojamiento web, consulte nuestra guía "[Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 Para editar la zona DNS activa de su dominio, consulte nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-- 3: Ninguno de los dominios presentes en la pestaña "multisitio" dispone de una opción SSL "activa":
-
-Para solucionar este problema, active el certificado SSL para el dominio o dominios. Si lo necesita, consulte la sección "[Activar un certificado SSL](#ssl-enable)" de esta guía para continuar.
-
 #### Ha contratado un SSL Sectigo EV al mismo tiempo que su alojamiento web, pero el certificado todavía no está activo y el alojamiento web no funciona correctamente
 
 Esta situación está relacionada con los pasos que debe realizar para activar el SSL EV en su alojamiento web.
@@ -142,7 +137,6 @@ Si lo necesita, consulte nuestra guía "[Web hosting - Activar un certificado SS
 > [!primary]
 >
 > Si el certificado SSL EV no está totalmente activo, el pedido no se cerrará nunca y no generará ninguna factura. Como resultado, el servicio de alojamiento web no funcionará correctamente.
->
 
 #### Tras la expiración del certificado SSL Sectigo (DV o EV), se produce el error "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
 
@@ -167,7 +161,6 @@ Si lo necesita, consulte nuestro tutorial "[Web hosting - Habilitar HTTPS en un 
 > [!success]
 >
 > Los elementos afectados en la página web pueden ser vistos directamente desde la información SSL del navegador de internet, consultando los *detalles del certificado*.
->
 
 ## Más información
 

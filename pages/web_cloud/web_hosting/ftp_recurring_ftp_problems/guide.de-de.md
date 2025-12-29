@@ -1,7 +1,7 @@
 ---
 title: "Häufige FTP-Probleme beheben"
 excerpt: "Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben"
-updated: 2025-05-23
+updated: 2025-10-20
 ---
 
 ## Ziel 
@@ -56,13 +56,28 @@ Wenn Sie sich nicht authentifizieren können, ändern Sie Ihr FTP-Passwort entsp
 
 ### Auf meiner Website sind zufällige Fehler aufgetreten
 
-Wenn Sie den Speicherplatz auf Ihrem Shared Hosting überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
+Wenn Sie den Speicherplatz Ihres Webhostings überschreiten, kann es zu Fehlfunktionen auf Ihrer Seite kommen.
 
-Um den verbleibenden Speicherplatz auf Ihrem Hosting zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie auf `Web Cloud`{.action} und dann `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus.
+Um den verbleibenden Speicherplatz auf Ihrem Webhosting zu überprüfen, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Die auf Ihrem Hosting-Server gespeicherte Datenmenge (ausgenommen Datenbanken) erscheint im Bereich `Allgemeine Informationen`{.action} unter `Speicherplatz`.
-
-![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Die Speicherplatzauslastung Ihres Webhostings finden Sie im Feld **Allgemeine Informationen** unter **Speicherplatz**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### Ich kann meine Dateien nicht auf den FTP Server übertragen
 

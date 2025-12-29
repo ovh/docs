@@ -138,7 +138,7 @@ GnuPG needs to construct a user ID to identify your key.
 
 Real name: Roberto Cruz
 Email address: roberto@cruz.org
-Comment: 
+Comment:
 You selected this USER-ID:
     "Roberto Cruz <roberto@cruz.org>"
 
@@ -256,7 +256,7 @@ To decrypt a given archive, you can use `gpg` on a machine on which your private
 $ ls
 2022-11-15.zst.pgp
 
-$ gpg --output 2022-11-15.zst --decrypt 2022-11-15.zst.pgp 
+$ gpg --output 2022-11-15.zst --decrypt 2022-11-15.zst.pgp
 gpg: encrypted with 4096-bit RSA key, ID 97B70793B8270D80, created 2022-05-10
       "John Smith <john.smith@corp.acme.org>"
 

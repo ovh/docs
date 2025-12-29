@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-09-08
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -15,9 +15,9 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 > You can find more information on our Anti-DDoS solution on [our website](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Anti-DDoS infrastructure & game protection services diagram at OVHcloud |
+| Anti-DDoS infrastructure & Game protection services diagram at OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Requirements
 

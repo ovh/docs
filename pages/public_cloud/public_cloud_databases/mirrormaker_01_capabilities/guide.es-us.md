@@ -22,10 +22,11 @@ The Public Cloud Analytics offer is available in the following regions:
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
 - `EU-WEST-PAR` (Paris, France)
+- `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not supported.
+Kafka MirrorMaker nodes have to be in the same region.
 
 ### Kafka versions
 

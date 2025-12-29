@@ -233,7 +233,7 @@ sudo systemctl restart frr
 Vérifiez l'état de votre session BGP avec la commande suivante :
 
 ```bash
-TBD show protocols all
+show protocols all
 ```
 
 #### Étape 5: Vérifier la connectivité entrante et sortante
@@ -571,7 +571,7 @@ sudo systemctl restart frr
 Vérifiez l'état de votre session BGP avec la commande suivante :
 
 ```bash
-TBD show protocols all
+show protocols all
 ```
 
 #### Étape 5 : Vérifier la connectivité entrante et sortante

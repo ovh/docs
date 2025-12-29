@@ -12,7 +12,7 @@ Per iniziare a utilizzare il servizio Content Delivery Network (CDN) di OVH, è 
 
 ## Prerequisiti
 
-- Usufruire della [Content Delivery Network (CDN) OVH](https://www.ovh.it/cdn/)
+- Usufruire della [Content Delivery Network (CDN) OVH](/links/network/cdn-infrastructure).
 - Avere accesso alla gestione della zona DNS del dominio
 - Avere accesso allo [Spazio Cliente OVH](/links/manager).
 

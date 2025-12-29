@@ -1,8 +1,22 @@
 ---
 title: "Configurare IPv6 su un server VPS"
 excerpt: "Come configurare IPv6 sul tuo VPS OVHcloud"
-updated: 2025-09-30
+updated: 2025-12-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > Questo articolo riguarda la configurazione di indirizzi IPv6 principali su un'interfaccia pubblica. È inoltre possibile configurare gli indirizzi Additional IP sul VPS utilizzando [questa guida](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
@@ -47,41 +61,40 @@ Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contien
 
 ### Step 1: recupera le informazioni relative alla rete
 
-Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
+Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server.
 
-- [dallo Spazio Cliente OVHcloud](#viacontrolpanel)
-- [via API](#viaapi)
-
-#### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
-
-Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
-
-![configureipv6](images/vps_ipv6_information.png){.thumbnail}
-
-#### Tramite le API OVHcloud <a name="viaapi"></a>
-
-Accedi alla pagina delle [API OVHcloud](/links/console):
-
-- Clicca su `Autentication`{.action} in alto a sinistra.
-- Clicca su `Login with OVHcloud SSO`{.action}.
-- Inserisci le tue credenziali OVHcloud.
-- Clicca sul pulsante `Authorize`{.action} per autorizzare le chiamate alle API da questo sito.
-
-Per ottenere l’indirizzo IPv6 assegnato al VPS:
-
-> [!api]
->
-> @api {v1} /vps GET /vps/{serviceName}/ips
->
-
-Per ottenere il gateway IPv6 assegnato al VPS:
-
-> [!api]
->
-> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
->
+> [!tabs]
+> **Dallo Spazio Cliente OVHcloud**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+>>
+>> Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
+>>
+>> ![configureipv6](images/vps_ipv6_information.png){.thumbnail}
+>>
+> **Tramite le API OVHcloud**
+>>
+>> Accedi alla pagina delle [API OVHcloud](/links/console):
+>>
+>> - Clicca su `Autentication`{.action} in alto a sinistra.
+>> - Clicca su `Login with OVHcloud SSO`{.action}.
+>> - Inserisci le tue credenziali OVHcloud.
+>> - Clicca sul pulsante `Authorize`{.action} per autorizzare le chiamate alle API da questo sito.
+>>
+>> Per ottenere l’indirizzo IPv6 assegnato al VPS:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /vps GET /vps/{serviceName}/ips
+>> >
+>>
+>> Per ottenere il gateway IPv6 assegnato al VPS:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
+>> >
+>>
 
 Dopo aver recuperato gli indirizzi, continua allo Step 2: [Applica la configurazione IPv6](#applyipv6).
 
@@ -126,7 +139,7 @@ Esistono due metodi per configurare la tua rete in base al sistema operativo ins
 
 - **Per Debian 11**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
 
-- **Per Debian 12, Ubuntu 20.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
+- **Per Debian 12, Ubuntu 22.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
 In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopra. Verifica il metodo attivo nel tuo caso e, per verificarlo, accedi al tuo sistema. Se necessario, consulta il sito <https://netplan.io/> per maggiori informazioni.
 
@@ -135,7 +148,7 @@ In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopr
 > Presta particolare attenzione, i nomi esatti dei file possono variare.
 >
 
-##### Configurazione dei file *interfaces* <a name="interfaces"></a>
+/// details | **Configurazione dei file *interfaces*** <a name="interfaces"></a>
 
 Per impostazione predefinita, i file di configurazione si trovano in `/etc/network/interfaces.d/`.
 
@@ -163,7 +176,7 @@ pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 ```
 
-Ecco un esempio concreto:
+**Ecco un esempio concreto:**
 
 ```console
 auto eth0
@@ -204,8 +217,9 @@ Puoi annullare le modifiche utilizzando questi comandi:
 sudo rm -f /etc/network/interfaces
 sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
+///
 
-##### Configurazione tramite Netplan <a name="netplan"></a>
+/// details | **Configurazione tramite *Netplan*** <a name="netplan"></a>
 
 I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Di default, il file di configurazione principale è `50-cloud-init.yaml`. Prima di continuare, controllare il file per verificare se l'indirizzo IPv6 è già stato configurato. In questo caso, non è necessario configurare nuovamente l'indirizzo IPv6 in quanto con il server VPS è disponibile un solo indirizzo IPv6.
 
@@ -239,7 +253,7 @@ network:
                 via: IPv6_GATEWAY
 ```
 
-Ecco un esempio concreto (con prefisso /128):
+**Ecco un esempio concreto** (con prefisso /128):
 
 ```yaml
 network:
@@ -274,8 +288,9 @@ Se è corretta, applicala utilizzando il seguente comando:
 ```bash
 sudo netplan apply
 ```
+///
 
-#### Applicazione persistente su Red Hat e suoi derivati (CentOS, Rocky Linux, Alma Linux, ecc...) <a name="persistentredhat"></a>
+/// details | **Applicazione persistente su Red Hat e suoi derivati** (CentOS, Rocky Linux, Alma Linux, ecc...) <a name="persistentredhat"></a>
 
 I file di configurazione di rete si trovano nella directory `/etc/sysconfig/network-scripts/`. Ti consigliamo di iniziare effettuando un backup del file di configurazione più adatto. Ad esempio, copia il file `ifcfg-eth0` con i comandi seguenti. Ricordati di sostituire **eth0** con la tua interfaccia reale, se necessario.
 
@@ -300,7 +315,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Ecco un esempio concreto:
+**Ecco un esempio concreto:**
 
 ```console
 IPV6INIT=yes
@@ -323,7 +338,7 @@ IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
 
-Ecco un esempio concreto:
+**Ecco un esempio concreto:**
 
 ```console
 2607:5300:201:abcd::1 dev eth0
@@ -339,8 +354,9 @@ sudo service networking restart
 ```bash
 sudo systemctl restart networking
 ```
+///
 
-#### Applicazione persistente su Fedora 37 e versioni successive <a name="persistentfedora"></a>
+/// details | **Applicazione persistente su Fedora 42 e versioni successive** <a name="persistentfedora"></a>
 
 Il file di configurazione di rete si trova in `/etc/NetworkManager/system-connections/`. È consigliabile iniziare effettuando il backup del file di configurazione corrispondente. Nel nostro esempio, il nostro file si chiama `cloud-init-eth0.nmconnection`, quindi copiamo il file `cloud-init-eth0.nmconnection` utilizzando i seguenti comandi. Se necessario, sostituisci **eth0** con l’interfaccia corrente.
 
@@ -364,7 +380,7 @@ route1=::/0,IPV6_GATEWAY
 
 Per evitare confusione, non è stata specificata la configurazione IPv4, mentre la configurazione IPv6 viene eseguita nello stesso file di configurazione.
 
-Ecco un esempio concreto:
+**Ecco un esempio concreto:**
 
 ```console
 [ipv6]
@@ -373,8 +389,9 @@ may-fail=true
 address1=2607:5300:201:abcd::7c5/128
 route1=::/0,2607:5300:201:abcd::1
 ```
+///
 
-#### Applicazione persistente su Windows Server <a name="persistentwindows"></a>
+/// details | **Applicazione persistente su Windows Server** <a name="persistentwindows"></a>
 
 Di default, IPv6 non è configurato sui server Windows. Per attivarlo, apri il `Pannello di configurazione`{.action} e clicca su `Visualizza lo stato e le operazioni della rete`{.action}, poi su `Modifica le impostazioni della scheda`{.action}.
 
@@ -393,6 +410,8 @@ Puoi anche inserire le risoluzioni DNS IPv6 che preferisci `utilizzando questo` 
 Seleziona la casella `Conferma le impostazioni lasciando` e clicca su `OK`{.action} per confermare le modifiche. Se il gateway specificato non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), può essere visualizzato un messaggio di errore. Puoi ignorare questo messaggio e passare allo step successivo.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
+
+///
 
 ### Step 3: Verifica la configurazione e prova la connessione.
 
@@ -489,4 +508,4 @@ Per ripristinare la gestione automatica del server tramite cloud-Init, rimuovi i
 
 ## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

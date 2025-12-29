@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Als Anbieter von Internetdiensten registriert und reserviert OVHcloud jegliche IP-Adressen, die mit Dienstleistungen verwendet werden bei den entsprechenden Organisationen wie [RIPE](https://www.ripe.net/) oder [ARIN](https://www.arin.net/). Das bedeutet, OVHcloud ist als rechtlicher Kontakt für missbräuchliche Verwendung (*Abuse*) in der *WHOIS*-Datenbank hinterlegt.
@@ -180,7 +176,7 @@ Hier ein Beispiel:
 
 > [!alert]
 > WICHTIG!
-Entsperren Sie die IP unter keinen Umständen, bevor Sie den Versand von E-Mails von Ihrem Server aus unterbrochen und Ihre Warteschlange für E-Mails geleert haben. Andernfalls erfolgt unmittelbar eine weitere Sperre für einen längeren Zeitraum.
+> Entsperren Sie die IP unter keinen Umständen, bevor Sie den Versand von E-Mails von Ihrem Server aus unterbrochen und Ihre Warteschlange für E-Mails geleert haben. Andernfalls erfolgt unmittelbar eine weitere Sperre für einen längeren Zeitraum.
 >
 
 Um Ihre IP-Adresse zu entsperren, verwenden Sie folgenden Aufruf:
@@ -216,4 +212,4 @@ In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm han
 
 ## Weiterführende Informationen
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

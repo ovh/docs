@@ -144,7 +144,7 @@ OVHcloud IAM provides two predefined roles for managing access to your Managed P
 > **Standard** role: Be aware that users belonging to the Default group in the Identities section automatically inherit admin privileges on the registry. Assigning them the Standard role will not override these inherited rights. To ensure proper separation of roles, we recommend:
 > 
 > - Organizing users into clearly defined groups.
-> - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here](https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/){.external}.
+> - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here](https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/).
 >
 
 These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.

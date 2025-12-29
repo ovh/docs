@@ -1,26 +1,54 @@
 ---
 title: "OVHcloud VPS - często zadawane pytania"
 excerpt: "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące ofert VPS"
-updated: 2025-10-02
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
-## FAQ VPS
-
-### Ogólne pytania dotyczące oferty VPS
+## Ogólne pytania dotyczące oferty VPS
 
 /// details | Co to jest VPS i do czego służy?
 
@@ -98,8 +126,13 @@ Nie, nasze rozwiązania VPS nie obejmują nazwy domeny ani usługi poczty e-mail
 
 /// details | Jak wybrać między VPS a planem hostingu webowego?
 
-- Plan hostingu webowego: idealny dla podstawowych potrzeb hostingu z gotową konfiguracją.
-- VPS: większa elastyczność i kontrola, idealny do skalowania projektów z złożonymi potrzebami konfiguracji.
+**Plan hostingu webowego**
+
+- Idealny dla podstawowych potrzeb hostingu z gotową konfiguracją.
+
+**VPS**
+
+- Większa elastyczność i kontrola, idealny do skalowania projektów z złożonymi potrzebami konfiguracji.
 
 Hosting usług webowych na VPS pozwala Ci zainstalować preferowane oprogramowanie, dostosować ustawienia serwera i hostować wiele stron internetowych z dedykowanymi zasobami. Pamiętaj, że VPS należy skonfigurować w taki sposób, który odpowiada Twoim wymaganiom aplikacji i jest dostosowany do wzrostu Twojej działalności.
 
@@ -107,19 +140,42 @@ Hosting usług webowych na VPS pozwala Ci zainstalować preferowane oprogramowan
 
 /// details | Jakie jest różnice między VPS a rozwiązaniami Public Cloud?
 
-- VPS: zoptymalizowana i dedykowana maszyna wirtualna odpowiednia zarówno do preprodukcji, jak i produkcji, zaprojektowana do hostowania kilku projektów internetowych.
-- Public Cloud od OVHcloud: oferuje infrastrukturę wielu serwerów z wysoką dostępnością i prywatną siecią (vRack), zaprojektowaną do złożonych, skalowalnych architektur.
+**VPS**
+
+- Zoptymalizowana i dedykowana maszyna wirtualna odpowiednia zarówno do preprodukcji, jak i produkcji, zaprojektowana do hostowania kilku projektów internetowych.
+
+**Public Cloud od OVHcloud**
+
+- Oferuje infrastrukturę wielu serwerów z wysoką dostępnością i prywatną siecią (vRack), zaprojektowaną do złożonych, skalowalnych architektur.
 
 ///
 
 /// details | Jakie są zalety VPS w porównaniu do serwera dedykowanego?
 
-- VPS: oferuje uproszczone zarządzanie bez konserwacji sprzętu, idealny dla projektów wymagających ścisłej kontroli.
-- Serwer dedykowany: zalecany dla złożonej infrastruktury, która wymaga pełnej kontroli nad sprzętem i gwarantowanej wydajności.
+**VPS**
+
+- Oferuje uproszczone zarządzanie bez konserwacji sprzętu, idealny dla projektów wymagających ścisłej kontroli.
+
+**Serwer dedykowany**
+
+- Zalecany dla złożonej infrastruktury, która wymaga pełnej kontroli nad sprzętem i gwarantowanej wydajności.
 
 VPS eliminuje konieczność zarządzania sprzętem fizycznym, takim jak pamięć, RAM i CPU, co sprawia, że jest dobrze dopasowany do większości aplikacji internetowych. W miarę wzrostu Twojej działalności możesz uaktualnić swój VPS lub przenieść się na serwer dedykowany lub rozwiązanie Public Cloud, aby uzyskać bardziej elastyczną i potężną infrastrukturę.
 
 ///
+
+/// details | Jaka przepustowość jest przydzielona do mojego VPS? Czy jest ona gwarantowana?
+
+Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-metal/vps) jest gwarantowana. Jest to minimalna ilość przydzielona do Twojej usługi.
+
+///
+
+/// details | Który SLA jest stosowany do mojego VPS?
+
+VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
+
+///
+<span class="smallish-gap"></span>
 
 /// details | Jakie są unikalne cechy VPS z Local Zone?
 
@@ -149,19 +205,8 @@ Jeśli odporność na ataki DDoS jest kluczowym czynnikiem dla Twojego projektu,
 
 ///
 
-/// details | Jaka przepustowość jest przydzielona do mojego VPS? Czy jest ona gwarantowana?
 
-Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-metal/vps) jest gwarantowana. Jest to minimalna ilość przydzielona do Twojej usługi.
-
-///
-
-/// details | Który SLA jest stosowany do mojego VPS?
-
-VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
-
-///
-
-### Pytania dotyczące administrowania serwerem VPS
+## Pytania dotyczące administrowania serwerem VPS
 
 /// details | Jak się zalogować do mojego VPS?
 
@@ -169,13 +214,6 @@ Możesz zalogować się zdalnie do Twojego serwera VPS, korzystając z danych pr
 Metoda połączenia zależy od używanych systemów operacyjnych.
 
 Szczegóły znajdziesz w przewodniku [Jak rozpocząć pracę z VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | Jak zabezpieczyć serwer VPS?
-
-Domyślnie VPS jest dostarczany z zainstalowanym tylko wybranym systemem operacyjnym. Po dostarczeniu serwera VPS administrator serwera VPS wprowadził odpowiednią konfigurację zabezpieczeń.  
-W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -213,7 +251,7 @@ W przypadku problemów z konfiguracją i administracją zalecamy kontakt z nasz�
 /// details | Czy mogę wybrać odpowiedni sprzęt dla mojego VPS (GPU, CPU, itp.) i wykonać upgrade?
 
 Nie można spersonalizować ani zmodyfikować serwera VPS na poziomie sprzętowym.  
-Wybierz serwer [VPS model](/links/bare-metal/VPS) zgodnie z Twoimi minimalnymi potrzebami i zaktualizuj go zgodnie z Twoimi potrzebami.
+Wybierz serwer [VPS model](/links/bare-metal/vps) zgodnie z Twoimi minimalnymi potrzebami i zaktualizuj go zgodnie z Twoimi potrzebami.
 
 ///
 
@@ -314,16 +352,23 @@ Jeśli IP docelowe jest kompatybilne z Twoją licencją ('true`), możesz przeni
 
 ///
 
+
+## Pytania dotyczące bezpieczeństwa i kopii zapasowych
+
+/// details | Jak zabezpieczyć serwer VPS?
+
+Domyślnie VPS jest dostarczany z zainstalowanym tylko wybranym systemem operacyjnym. Po dostarczeniu serwera VPS administrator serwera VPS wprowadził odpowiednią konfigurację zabezpieczeń.  
+W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | Jak mogę pobrać pliki lub kopię danych z serwera VPS?
 
 Istnieje kilka możliwości, na przykład:
 
 - Pobranie przez SFTP: Połącz się z prywatnym serwerem wirtualnym za pomocą klienta programowego dysponującego dostępem SFTP (na przykład [FileZilla](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)), następnie prześlij wszystkie pliki z katalogu głównego systemu.
-
 - Pobierz za pomocą `rsync` (narzędzie wiersza poleceń): Wpisz polecenie `rsync -avz -e ssh nazwa użytkownika@vps_ip_address:/ /local_directory/`, aby pobrać z Twojego serwera VPS wszystkie pliki i foldery.
-
 - Pobierz za pomocą opcji **Automatyczne kopie zapasowe**: Zapoznaj się z przewodnikiem [Jak korzystać ze zautomatyzowanych kopii zapasowych na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps), aby pobrać pliki z kopii zapasowej.
-
 - Pobierz za pomocą opcji **Snapshot**: Zapoznaj się z przewodnikiem [Jak korzystać z Snapshotów na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps), aby pobrać snapshot z serwera VPS.
 
 ///
@@ -376,15 +421,14 @@ Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 >
 
 ///
+<span class="smallish-gap"></span>
 
 /// details | Czy mój VPS jest chroniony przed zewnętrznymi atakami?
 
 Chociaż OVHcloud stosuje środki bezpieczeństwa w celu ochrony całej infrastruktury, administrator serwera VPS jest odpowiedzialny za bezpieczeństwo aplikacji i danych na nim hostowanych.
 
 - Zapoznaj się z przewodnikiem [Aktywacja i konfiguracja Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), który jest zintegrowany z naszą infrastrukturą Anty-DDoS, ograniczając ekspozycję Twoich usług na ataki DDoS.
-
 - Ponadto, zapoznaj się z naszymi przewodnikami dotyczącymi [jak skonfigurować własny firewall](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable) z `iptable` dla dystrybucji opartych na systemie Linux oraz [jak włączyć firewall w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win).
-
 - W przypadku dystrybucji opartych na systemie Linux na serwerze VPS należy postępować zgodnie z instrukcjami zawartymi w przewodniku [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), aby zastosować dodatkowe środki bezpieczeństwa.
 
 ///

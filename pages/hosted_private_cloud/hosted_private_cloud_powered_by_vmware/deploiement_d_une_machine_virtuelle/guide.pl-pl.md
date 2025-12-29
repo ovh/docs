@@ -42,7 +42,7 @@ Następny etap umożliwia określenie nazwy Twojej maszyny wirtualnej i wybór j
 
 ![emplacement de la  machine virtuelle](images/vm03.png){.thumbnail}
 
-Następnie możesz wybrać klaster, hosta,[pulę zasobów](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external-link} lub [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html){.external-link}, w której chcesz ją umieścić.
+Następnie możesz wybrać klaster, hosta,[pulę zasobów](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html) lub [vApp](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-E6E9D2A9-D358-4996-9BC7-F8D9D9645290.html), w której chcesz ją umieścić.
 
 W takim przypadku maszyna wirtualna zostanie wdrożona zgodnie ze skonfigurowanymi regułami DRS i  umieszczona w katalogu głównym klastra.
 

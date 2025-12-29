@@ -40,7 +40,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 
 > [!primary]
 >
-> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network){.external-link} nachlesen.
+> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/pages/bare_metal_cloud/managed_bare_metal/plugin_ovh_network) nachlesen.
 >
 
 - Land des IP-Blocks. Dieses kann für das SEO-Ranking Ihrer Dienste von Bedeutung sein (zum Beispiel ist die Referenzierung einer deutschen Website in Deutschland besser, wenn auch ihre IP deutsch ist)

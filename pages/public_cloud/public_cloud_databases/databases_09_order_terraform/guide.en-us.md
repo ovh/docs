@@ -244,8 +244,6 @@ In this guide, we explained how to deploy a MongoDB service but you can find exa
 >> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world)
 > PostgreSQL
 >> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world)
-> Cassandra
->> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world)
 
 ## Go further
 

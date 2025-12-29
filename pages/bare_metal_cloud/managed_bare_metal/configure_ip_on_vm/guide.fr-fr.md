@@ -95,7 +95,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >> ncpa.cpl
 >> ```
 >>
->> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
+>> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action}. Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action} puis renseignez les informations de votre IP comme suit :
 >>
 >> ![Configuration Windows](images/config_ip_windows.png){.thumbnail}
 >>
@@ -138,7 +138,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 >> ncpa.cpl
 >> ```
 >>
->> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action). Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action) puis renseignez les informations de votre IP comme suit :
+>> Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et sélectionner `Propriétés`{.action}. Sélectionnez alors `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur `Properties`{.action} puis renseignez les informations de votre IP comme suit :
 >>
 >> ![Configuration Windows IPv6](images/config_ip_windows_v6.png){.thumbnail}
 >>
@@ -199,7 +199,7 @@ Pour aller plus vite, vous pouvez cliquer sur le champ de recherche Windows et �
 ncpa.cpl
 ```
 
-Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action). Sélectionnez ensuite `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
+Il faut ensuite effectuer un clic droit sur la carte réseau correspondant au VMNetwork et `Propriétés`{.action}. Sélectionnez ensuite `Protocole TCP/IP v4`{.action} et cliquez de nouveau sur 'Properties' puis renseignez les informations de votre IP comme suit :
 
 ![Configuration Windows IP publique](images/windows_private.PNG){.thumbnail}
 

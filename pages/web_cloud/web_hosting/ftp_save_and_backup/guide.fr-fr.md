@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2025-05-23
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -47,15 +47,31 @@ Définissez également la méthode de restauration que vous allez utiliser :
 > Par exemple, si vous disposez d'une offre d'hébergement **Performance**, 250 Go doivent encore être disponibles sur les 500 Go mis à disposition.
 >
 > En effet, nos robots installent la sauvegarde sur votre hébergement avant de supprimer le contenu FTP qui sera remplacé par la restauration.
->
-> Pour vérifier le quota utilisé sur votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l’hébergement concerné. 
->
-> Le quota utilisé apparaît sur la page qui s'affiche :
->
-> ![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
->
-> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
->
+
+Pour vérifier le quota utilisé sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le cadre **Informations générales**, vous trouverez la mention **Espace disque**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement web, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)).
+>>
+>> Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
@@ -81,29 +97,55 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > - Un e-mail est envoyé au [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
 > - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergements`{.action} puis sur l'onglet `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
->
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
-
-Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée dans le menu déroulant en vous aidant des informations ci-dessous :
-
-|Date affichée|Date technique de la sauvegarde|
-|---|---|
-|J-1|Le jour même, à 00 h 01 du matin.|
-|J-2|La veille, à 00 h 01 du matin.|
-|J-3|L’avant-veille, à 00 h 01 du matin.|
-|1 semaine|Le dimanche précédent, à 01 h 00 du matin.|
-|2 semaines|Le dimanche, deux semaines avant, à 01 h 00 du matin.|
-
-Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}. 
-
-![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
-
-Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
-
-Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
+>>
+>> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+>> 
+> **Étape 4**
+>>
+>> Sur la nouvelle page qui apparaît, cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée dans le menu déroulant en vous aidant des informations ci-dessous :
+>>
+>> |Date affichée|Date technique de la sauvegarde|
+>> |---|---|
+>> |J-1|Le jour même, à 00 h 01 du matin.|
+>> |J-2|La veille, à 00 h 01 du matin.|
+>> |J-3|L’avant-veille, à 00 h 01 du matin.|
+>> |1 semaine|Le dimanche précédent, à 01 h 00 du matin.|
+>> |2 semaines|Le dimanche, deux semaines avant, à 01 h 00 du matin.|
+>>
+>> Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}. 
+>>
+> **Étape 6**
+>>
+>> ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
+>>
+>> Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
+>>
+>> Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
 
 > [!primary]
 >
@@ -121,11 +163,11 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 #### Étape 1 : définir le logiciel ou l'interface à utiliser
 
-Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
+Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des deux solutions suivantes :
 
-- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation « [Utiliser le logiciel FileZilla avec son hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) », vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation « [Utiliser le logiciel Cyberduck avec son hébergement web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac) », vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
@@ -133,7 +175,11 @@ Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape
 
 Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
-Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
+Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement.
+
+![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
+
+Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 
 ![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
@@ -150,6 +196,10 @@ Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'
 Prenez soin de remplacer l’information générique « utilisateurftp » par votre propre nom d'utilisateur FTP principal. Conservez cependant le suffixe définissant la date de sauvegarde à laquelle vous souhaitez accéder.
 
 La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé.
+
+> [!primary]
+>
+> Les sauvegardes sont accessibles uniquement via une connexion FTP.
 
 #### Étape 3 : récupérer le ou les fichiers souhaités
 

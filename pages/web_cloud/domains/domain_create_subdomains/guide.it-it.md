@@ -1,7 +1,7 @@
 ---
 title: "Come creare un sottodominio?"
 excerpt: "Questa guida ti mostra la definizione di un sottodominio e come crearlo in OVHcloud"
-updated: 2025-02-05
+updated: 2025-10-27
 ---
 
 <style>
@@ -181,8 +181,8 @@ Per maggiori informazioni sulla configurazione di un dominio o sottodominio su u
 
 > [!warning]
 >
-> L’aggiunta di un dominio o sottodominio su più siti può richiedere l’utilizzo di un token di conferma. Per un sottodominio, lo stesso token non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il token come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
->
+> L'aggiunta di un nome di dominio o di un sottodominio su uno dei siti web del tuo hosting Web può richiedere l'attivazione di un **token di validazione**.
+> Per un sottodominio, lo stesso token non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il token come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
 
 #### Caso 2 - Crea indirizzi email Exchange con un sottodominio <a name="link-subdomain-case-2"></a>
 

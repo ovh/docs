@@ -20,6 +20,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
 - `EU-WEST-PAR` (Paris, France)
+- `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 

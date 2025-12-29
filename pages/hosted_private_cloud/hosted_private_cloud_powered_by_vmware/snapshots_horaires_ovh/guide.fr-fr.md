@@ -75,7 +75,7 @@ Il s'agit là d'une sécurité normalement à usage interne d'OVHcloud, les snap
 
 Il s'agit d'une sécurité supplémentaire à usage interne mise en place sur les datastores ne devant servir qu'en dernier recours afin de prévenir une perte de donnée éventuelle.
 
-Nous vous recommandons l'utilisation d'une solution complète de sauvegarde comme notre service [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external-link} ou tout autre système réalisant un backup complet de vos machines virtuelles.
+Nous vous recommandons l'utilisation d'une solution complète de sauvegarde comme notre service [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) ou tout autre système réalisant un backup complet de vos machines virtuelles.
 
 ## Aller plus loin
 

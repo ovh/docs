@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-07-10
+updated: 2025-12-02
 ---
 
 ## Objectif
@@ -19,9 +19,9 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | --- | --- | --- | --- |
 | **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.veeam.com/partners/alliance-partner-technical-programs.html) | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails disponibles sur la [page d’intégration Acronis S3](https://solutions.acronis.com/en-us/integrations/amazon-s3/) | À venir |
-| **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support) | A venir |
-| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup)  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
-| **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec) | A venir |
+| **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support) | À venir |
+| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup)  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | À venir |
+| **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec) | À venir |
 | **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf) | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
 | **Backint for SAP HANA™** | Compatible - Certifié | Officiellement pris en charge, détails sur le [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389) | [Guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/) |
 
@@ -40,15 +40,16 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | --- | --- | --- | --- |
 | **Rclone** | Compatible | Fournit une interface de ligne de commande pour gérer les objets et les buckets. Plus de détails sur [Rclone](https://rclone.org/) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) |
 | **s3cmd** | Compatible |  Fournit une interface de ligne de commande pour télécharger, récupérer et gérer les données. Plus de détails sur [s3cmd](https://s3tools.org/s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
-| **Restic** | Compatible | Fournit un outil de sauvegarde qui vous permet de sauvegarder vos machines Linux, Windows, Mac sur des référentiels de stockage. Plus de détails sur [Restic](https://restic.net/) | A venir |
-| **MinIO client** | Compatible | Fournit une alternative aux commandes UNIX et prend en charge les services de stockage cloud compatibles Amazon S3. Plus de détails sur [client MinIO](https://min.io/docs/minio/linux/reference/minio-mc.html?ref=docs-redirect) | A venir |
+| **Restic** | Compatible | Fournit un outil de sauvegarde qui vous permet de sauvegarder vos machines Linux, Windows, Mac sur des référentiels de stockage. Plus de détails sur [Restic](https://restic.net/) | À venir |
+| **MinIO client** | Compatible | Fournit une alternative aux commandes UNIX et prend en charge les services de stockage cloud compatibles Amazon S3. Plus de détails sur [client MinIO](https://min.io/docs/minio/linux/reference/minio-mc.html?ref=docs-redirect) | À venir |
 
 ### Gestion de fichiers
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
-| **Cyberduck** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [Cyberduck](https://docs.cyberduck.io/cyberduck/) | A venir |
-| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur  [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **Cyberduck** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [Cyberduck](https://docs.cyberduck.io/cyberduck/) | À venir |
+| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **FileZilla Pro** | Compatible | Permet des transferts de fichiers sécurisés et rapides vers le cloud et les serveurs dans une unique application. Plus de détails sur [FileZilla Pro](https://filezillapro.com/) | À venir |
 
 ### Partage de fichiers
 
@@ -62,9 +63,10 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
 | **Pure Storage FlashBlade** | Compatible - Certifié |  Officiellement pris en charge comme cible de réplication compatible S3. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
+| **Nasuni** | Compatible - Certifié | Officiellement pris en charge comme service object storage externe compatible S3. Plus de détails sur la page [Compatibility & Support](https://docs.nasuni.com/docs/compatibility-support) | À venir |
 
 ## Aller plus loin
- 
+
 Rejoignez notre [communauté d'utilisateurs](/links/community).
 
 <sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

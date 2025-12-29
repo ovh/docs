@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec la CLI OVHcloud
 excerpt: "Découvrez les ressources utiles pour utiliser l’interface en ligne de commande officielle OVHcloud"
-updated: 2025-09-29
+updated: 2025-10-13
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | 
 La CLI OVHcloud est également disponible via Homebrew :
 
 ```sh
-brew install ovh/tap/ovhcloud-cli
+brew install --cask ovh/tap/ovhcloud-cli
 ```
 
 Vous pouvez également télécharger la dernière version depuis le [dépôt GitHub](https://github.com/ovh/ovhcloud-cli) :

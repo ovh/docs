@@ -1,13 +1,18 @@
 <style>
-    details>summary {
-        color:rgb(33, 153, 232) !important;
-        cursor: pointer;
+    details.translation:hover {
+        border: 1px solid transparent;
+        transition: none;
     }
-    details>summary::before {
+    details.translation>summary {
+        color:rgb(33, 153, 232);
+        cursor: pointer;
+        list-style: none;
+    }
+    details.translation>summary::before {
         content:'\25B6';
         padding-right:1ch;
     }
-    details[open]>summary::before {
+    details.translation[open]>summary::before {
         content:'\25BC';
     }
     div#article-content article div.callout.note {
@@ -39,10 +44,14 @@
     }
 </style>
 
-/// details | Información sobre la traducción
-
-> [!note]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
-///
+<details class="translation">
+    <summary>Información sobre la traducción</summary>
+    <div class="callout note">
+        <p>
+            Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN.
+            En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos.
+            En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción,
+            por favor, utilice el botón «Contribuir» de esta página.
+        </p>
+    </div>
+</details>

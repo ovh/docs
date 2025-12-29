@@ -13,35 +13,37 @@ updated: 2024-10-01
 }
 </style>
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/RULMVWH)
-
+ 
 
 ## Objetivo
 
 Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos.
 
+**Esta guía explica cómo configurar una cuenta MX Plan en Outlook para Windows.**
+
 > [!warning]
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
-> 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
-> 
+>
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
+>
 
 ## Requisitos
 
 - Disponer de una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](/links/web/hosting)).
 - Tener Microsoft Outlook o posterior.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
- 
+
 > [!primary]
 >
-> Si utiliza Outlook para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
+>  ¿Utiliza Outlook para Mac? consulte nuestra guía [Configurar una dirección de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
 >
 
 ## Procedimiento
+
+> [!alert]
+>
+> Antes de comenzar la configuración con esta guía, asegúrese de que la bandera situada en la parte superior derecha de esta página corresponde a su país o región, ya que los parámetros dependen de su ubicación.
 
 ### Añadir la cuenta
 
@@ -124,7 +126,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor (entrante)|pop.mail.ovh.ca|
+|Servidor (entrante)|pop.mail.ovh.net **o** ssl0.ovh.net|
 |Puerto|995|
 |Tipo de seguridad|SSL/TLS|
 
@@ -134,7 +136,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor (entrante)|imap.mail.ovh.ca|
+|Servidor (entrante)|imap.mail.ovh.net **o** ssl0.ovh.net|
 |Puerto|993|
 |Tipo de seguridad|SSL/TLS|
 
@@ -146,7 +148,7 @@ Para el envío de mensajes de correo electrónico, si tiene que introducir manua
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor (saliente)|smtp.mail.ovh.ca|
+|Servidor (saliente)|smtp.mail.ovh.net **o** ssl0.ovh.net|
 |Puerto|465|
 |Tipo de seguridad|SSL/TLS|
 

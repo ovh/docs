@@ -1,7 +1,7 @@
 ---
 title: Introduction to the OVHcloud Load Balancer
 excerpt: Discover the OVHcloud Load Balancer solution for distributing and securing your traffic
-updated: 2025-09-29
+updated: 2025-10-29
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ The Load Balancer consists of three main components:
 | **Farm** | Distributes traffic from the front-end across servers |
 | **Server** | Handles inbound and outbound application traffic |
 
-![General diagram](images/diag_gen.png){.thumbnail}
+![General diagram](images/diag_gen2025.png){.thumbnail}
 
 ## Benefits
 
@@ -52,19 +52,19 @@ The Load Balancer consists of three main components:
 
 Distribute workloads across multiple servers and scale horizontally without service interruption.
 
-![Balance the load](images/distribute_load.png){.thumbnail}
+![Balance the load](images/distribute_load2025.png){.thumbnail}
 
 ### High Availability and Uptime
 
 Automatic health checks detect unresponsive servers and reroute traffic instantly, minimizing downtime.
 
-![Eliminate downtime](images/eliminate_downtimes.png){.thumbnail}
+![Eliminate downtime](images/eliminate_downtimes2025.png){.thumbnail}
 
 ### Simplified Maintenance
 
 Place a farm or server in downtime mode for maintenance without impacting users, then reintegrate it seamlessly.
 
-![Make maintenance easier](images/scale_easily.png){.thumbnail}
+![Make maintenance easier](images/facilitate_maintenance2025.png){.thumbnail}
 
 ### Service Integration
 
@@ -75,13 +75,13 @@ Easily combine with other OVHcloud services:
 - Dedicated Servers
 - vRack private networking
 
-![Combine your services](images/mix_and_match.png){.thumbnail}
+![Combine your services](images/mix_and_match2025.png){.thumbnail}
 
 ### Geographic Distribution (Anycast)
 
 Serve users worldwide with low latency and resilient routing.
 
-![Anycast](images/anycast.png){.thumbnail}
+![Anycast](images/anycast2025.png){.thumbnail}
 
 ### Versatile Use Cases
 
@@ -91,13 +91,13 @@ Support multiple services over HTTP(S), TCP, and UDP traffic.
 
 Balance the load between your email servers.
 
-![Mail](images/mail.png){.thumbnail}
+![Mail](images/mail2025.png){.thumbnail}
 
 #### Databases
 
 Balance your databases, and make them redundant.
 
-![Databases](images/database.png){.thumbnail}
+![Databases](images/database2025.png){.thumbnail}
 
 ## Go Further
 

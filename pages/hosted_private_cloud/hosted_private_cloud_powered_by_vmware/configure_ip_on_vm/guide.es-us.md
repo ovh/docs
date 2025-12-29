@@ -95,7 +95,7 @@ To configure a public IP address on your virtual machine, you must first choose 
 >> ncpa.cpl
 >> ```
 >>
->> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action}. Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action} and enter your IP information as follows:
 >>
 >> ![Windows Configuration](images/config_ip_windows.png){.thumbnail}
 >>
@@ -138,7 +138,7 @@ To configure a public IP address on your virtual machine, you must first choose 
 >> ncpa.cpl
 >> ```
 >>
->> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action}. Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action} and enter your IP information as follows:
 >>
 >> ![Windows IPv6 Configuration](images/config_ip_windows_v6.png){.thumbnail}
 >>

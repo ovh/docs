@@ -128,7 +128,7 @@ Opcje te odnoszą się do dodatkowych usług VPS służących do wykonywania kop
 W porównaniu z migawkami ręcznymi funkcja ta zwiększa bezpieczeństwo danych, tworząc kilka punktów przywracania w regularnych odstępach czasu.
 >>
 
-Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-servers-backups).
+Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 ### Moja oferta
 

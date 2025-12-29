@@ -102,11 +102,11 @@ Il controllo di ammissione impone restrizioni sull’utilizzo delle risorse. Le 
 
 La base del controllo di ammissione vSphere HA corrisponde al numero di guasti host che il cluster è autorizzato a tollerare e che continua a garantire il failover. La capacità di failover degli host può essere definito in tre diversi modi:
 
-- [Percentuale delle risorse del cluster](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Percentuale delle risorse del cluster](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Strategia di slot](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Strategia di slot](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [Host di failover dedicati](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Host di failover dedicati](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Database di segnale di impulso
 
@@ -116,7 +116,7 @@ Quando l’host principale di un cluster HA non è in grado di comunicare con un
 
 Nel cluster è possibile utilizzare diverse impostazioni di configurazione avanzata.
 
-Per consultare le impostazioni, clicca [qui](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}
+Per consultare le impostazioni, clicca [qui](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html)
 
 ### Regola HA
 

@@ -1,7 +1,7 @@
 ---
 title: Data - Concept and best practices
 excerpt: Learn the concept behind AI Tools data
-updated: 2022-04-11
+updated: 2025-11-17
 ---
 
 ## Definition
@@ -36,6 +36,8 @@ There are two ways to manage your data:
 1. Before the notebook start, data is synchronized **from** the object storage **into** an underlying filesystem volume. This synchronization is done during the `STARTING` phase.
 2. At the notebook start, the volume is attached inside the wanted directory. Data is then available inside the job as long as the `RUNNING` phase lasts.
 3. After the notebook stop, data is synchronized back **from** the underlying filesystem volume **into** the **OVHcloud Object Storage**. This synchronization is done during the `STOPPING` phase.
+
+This applies to your internal [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) and remote object storage volumes.
 
 ![image](images/data_phases_notebook.svg){.thumbnail}
 
@@ -97,7 +99,7 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 
 > [!warning]
 >
-> Unused volume data is regularly deleted. Users should not rely on this `cache` feature for long time persistence.
+> Unused volume data is deleted after 3 days. Users should not rely on this `cache` feature for long time persistence.
 
 ## Going further
 

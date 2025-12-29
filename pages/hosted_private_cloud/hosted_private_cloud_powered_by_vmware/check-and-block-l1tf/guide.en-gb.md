@@ -37,7 +37,7 @@ As a reminder:
 
 For **Private Cloud** solutions, only SDDC packs are affected by this vulnerability.
 
-For further information, you can refer to our [news article](https://www.ovh.co.uk/news/articles/al479.ovh-l1-terminal-fault-l1tf-foreshadow-disclosure){.external-link}.
+For further information, you can refer to our [news article](https://www.ovh.co.uk/news/articles/al479.ovh-l1-terminal-fault-l1tf-foreshadow-disclosure).
 
 ## Mitigation process
 
@@ -48,15 +48,15 @@ For further information, you can refer to our [news article](https://www.ovh.co.
 > The actions describe how to disable hyper-threading on your ESXi hosts. But since the L1TF vulnerability requires hyper-threading to work, disabling it protects your infrastructure from being exploited by this vulnerability.
 >
 
-The mitigation process is described in this VMware knowledge base: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806){.external-link}.
+The mitigation process is described in this VMware knowledge base: [https://kb.vmware.com/s/article/55806](https://kb.vmware.com/s/article/55806).
 
 This procedure is divided into three distinct steps.
 
 ### Step 1: Update.
 
-The vCenter update is managed by OVHcloud, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager){.external-link}.
+The vCenter update is managed by OVHcloud, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager).
 
-You will find the list of patches for ESXi hosts in [this document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
+You will find the list of patches for ESXi hosts in [this document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html).
 
 After the hosts have been updated, the following alert message will appear in your host summary:
 
@@ -66,7 +66,7 @@ After the hosts have been updated, the following alert message will appear in yo
 
 After the ESXi hosts have been updated, the patch has not yet been applied.
 
-It is important to be aware of the potential problems listed in the [knowledge base](https://kb.vmware.com/s/article/55806){.external-link} mentioned above, as well as the performance loss observed in this other knowledge base: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767){.external-link}.
+It is important to be aware of the potential problems listed in the [knowledge base](https://kb.vmware.com/s/article/55806) mentioned above, as well as the performance loss observed in this other knowledge base: [https://kb.vmware.com/s/article/55767](https://kb.vmware.com/s/article/55767).
 
 ### Step 3: Enable.
 
@@ -78,11 +78,11 @@ A filter is available in the top right-hand corner of the window.
 
 You will need to do this for each host.
 
-To find out more, you can go to step 3 in the ‘Resolution’ section of this [VMware knowledge base](https://kb.vmware.com/s/article/55806){.external-link}.
+To find out more, you can go to step 3 in the ‘Resolution’ section of this [VMware knowledge base](https://kb.vmware.com/s/article/55806).
 
 > [!warning]
 > 
-> If you do not want to disable hyper-threading on these elements, you can remove the alert message by following this [knowledge base](https://kb.vmware.com/s/article/57374){.external-link}.
+> If you do not want to disable hyper-threading on these elements, you can remove the alert message by following this [knowledge base](https://kb.vmware.com/s/article/57374).
 > 
 > ![](images/deleteWarning.png){.thumbnail}
 > OVHcloud does not recommend doing this, and cannot be held responsible for this risk or any resulting consequences.

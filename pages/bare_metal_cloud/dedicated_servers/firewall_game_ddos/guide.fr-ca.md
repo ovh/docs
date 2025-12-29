@@ -1,7 +1,7 @@
 ---
 title: "Protéger un serveur Game avec le firewall applicatif"
 excerpt: "Découvrez comment configurer le OVHcloud Game DDoS Protection firewall"
-updated: 2025-04-28
+updated: 2025-12-10
 ---
 
 <style>
@@ -28,7 +28,7 @@ L’objectif de ce guide est de vous aider à mieux comprendre notre protection 
 
 Nos serveurs dédiés Bare Metal gaming incluent une protection supplémentaire contre les attaques réseau spécialement conçue pour sécuriser les applications de jeu contre les attaques ciblées, garantissant ainsi la stabilité et l’accessibilité aux joueurs. Cette solution de protection dédiée est à la fois robuste et facile à utiliser, vous permettant de vous concentrer sur le développement de votre entreprise sans avoir à vous défendre contre la cybercriminalité.
 
-| ![global-schema](images/global_schema_focus_game.png) |
+| ![global-schema](images/global_schema_focus_game_new.png) |
 |:--:|
 | Schéma des services d’infrastructure et de protection des jeux anti-DDoS chez OVHcloud |
 
@@ -64,19 +64,19 @@ Pour configurer les règles de protection de jeu de votre serveur Bare Metal Gam
 - Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
 - Cliquez sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez filtrer les adresses IP en utilisant le menu déroulant `Tous les services`{.action}. Renseignez le nom ou la catégorie du serveur correspondant :
+Vous pouvez filtrer les adresses IP en utilisant le menu déroulant `Tous les types de services`{.action}, ou entrer directement l'adresse IP désirée dans la barre de recherche. Renseignez le nom ou la catégorie du serveur correspondant :
 
-| ![configure-game-firewall](images/ip_listing.png) |
+| ![configure-game-firewall](images/ip_listing_new.png) |
 |:--:|
 | Liste des IP : trouvez votre adresse IP par service correspondant |
 
 Accédez à la configuration du *Firewall Game* :
 
-| ![game-server](images/firewall_game_01_blur.png) |
+| ![game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
 | Cliquez sur le bouton `...`{.action} à côté de l’adresse IP de votre serveur Game. |
 
-| ![configure-game-firewall](images/firewall_game_02.png) |
+| ![configure-game-firewall](images/firewall_game_02_new.png) |
 |:--:|
 | Cliquez sur `Configurer le firewall GAME`{.action}. |
 
@@ -88,16 +88,16 @@ Vous pouvez maintenant configurer des règles de protection de jeu pour l'adress
 
 Pour activer la protection anti-DDoS Game, il vous suffit de définir les applications de jeu ainsi que la plage de ports réseau (ou port unique) qui leur est associée :
 
-| ![add-rule-btn](images/firewall_game_03.png) |
+| ![add-rule-btn](images/firewall_game_03_new.png) |
 |:--:|
 | Sur l'écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle au *Firewall Game*. |
 
 
-La protection anti-DDoS Game vous permet de configurer jusqu’à **100 règles par adresse IP** qui pointent vers un serveur de jeu Bare Metal de 3ème génération (2024, basé sur EPYC), ou jusqu’à **30 règles par adresse IP** pour les anciennes gammes de jeux Bare Metal (généralement identifiées comme RISE-GAME ou SYS-GAME).
+La protection anti-DDoS Game vous permet de configurer jusqu’à **100 règles par adresse IP** qui pointent vers un serveur Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024), ou jusqu’à **30 règles par adresse IP** pour les anciennes gammes de jeux Bare Metal (généralement identifiées comme RISE-GAME ou SYS-GAME).
 
 Veuillez noter que les protocoles de jeux pris en charge (titres et versions de jeux pouvant être protégés) peuvent changer au fil du temps. De plus, elles peuvent être différentes entre les anciennes gammes de serveurs Bare Metal Game et les plus récentes. La liste la plus récente des profils de jeux pris en charge est disponible [ici](/links/security/ddos).
 
-| ![confirm-new-rule](images/firewall_game_04.png) |
+| ![confirm-new-rule](images/firewall_game_04_new.png) |
 |:--:|
 | Configurez les protections du jeu en sélectionnant un **Protocole** dans la liste et en définissant la **plage de ports** sur laquelle votre application de jeu reçoit les connexions (reportez-vous à la documentation d'installation du jeu). Cliquez ensuite sur le bouton `Confirmer`{.action} pour enregistrer. La configuration des règles du *firewall game* est terminée. |
 
@@ -116,15 +116,15 @@ De plus, nous vous recommandons fortement de définir la règle **« Default pol
 #### Ark Survival Evolved
 
 - **Ark Survival Evolved** : Moteur de protection de base.
-- **Ark Survival Evolved v.311.78** : Moteur de protection mis à jour, ajouté dans la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **Ark Survival Evolved v.311.78** : Moteur de protection mis à jour, ajouté aux serveurs Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024).
 
 #### Counter Strike 2
 
-- **Counter Strike 2** : Nouveau moteur de protection ajouté dans la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **Counter Strike 2** : Nouveau moteur de protection ajouté aux serveurs Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024).
 
 #### FiveM
 
-- **FiveM** est un mod multijoueur Grand Theft Auto V de Cfx.re désormais reconnu par l’éditeur de jeux Rockstar. Nous avons ajouté la prise en charge de FiveM dans la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **FiveM** est un mod multijoueur Grand Theft Auto V de Cfx.re désormais reconnu par l’éditeur de jeux Rockstar. Nous avons ajouté la prise en charge de FiveM aux serveurs Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024).
 
 #### Rust
 
@@ -136,12 +136,12 @@ Minecraft est bien supporté par les profils suivants :
 
 - **Java Minecraft** : Devrait être la meilleure solution pour toutes les versions de Java Minecraft. Il protège le protocole Minecraft Query et est réglé pour le trafic TCP. Il a été ajouté en 2024, mais est également disponible pour les générations précédentes de serveurs Bare Metal Game. Attention si d'autres jeux UDP sont hébergés sur la même IP.
 - **Minecraft Query** : Protection générale du protocole Minecraft Query.
-- **Minecraft Bedrock** : Protection Minecraft Bedrock (avec prise en charge des cookies RakNet), ajoutée dans la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **Minecraft Bedrock** : Protection Minecraft Bedrock (avec prise en charge des cookies RakNet), ajoutée aux serveurs Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024).
 - **Minecraft Pocket Edition** : Protection PE/Bedrock Minecraft, identique à Bedrock, conservée pour des raisons de compatibilité.
 
 #### Valheim
 
-- **Valheim** : Nouveau moteur de protection, ajouté dans la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **Valheim** : Nouveau moteur de protection, ajouté aux serveurs Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024).
 
 > [!primary]
 > Si vous hébergez un service plus important avec l’un des jeux pris en charge, mais que vous observez tout de même des faux positifs provenant des systèmes d’infrastructure anti-DDoS, contactez notre assistance à l’aide du [Centre d’aide](https://help.ovhcloud.com/csm?id=csm_get_help) avec tous les détails nécessaires pour améliorer le profil de l’application.
@@ -164,7 +164,7 @@ Des différences peuvent être observées entre les serveurs Game les plus réce
 
 Tous les protocoles de protection anti-DDoS Game pris en charge pour un serveur spécifique sont visibles sur la page de configuration `GAME firewall`{.action} pour toute adresse IP pointant vers ce serveur, dans le menu déroulant `Game protocol`{.action} :
 
-| ![control-panel-game-protocols](images/game_protocols_list.png) |
+| ![control-panel-game-protocols](images/game_protocols_list_new.png) |
 |:--:|
 | Liste des protocoles de protection supportés |
 

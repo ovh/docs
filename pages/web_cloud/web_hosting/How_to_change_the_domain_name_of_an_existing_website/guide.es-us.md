@@ -1,7 +1,7 @@
 ---
 title: "Casos de uso - Cómo cambiar el dominio de un sitio existente"
 excerpt: "Descubra cómo cambiar el dominio de un sitio existente"
-updated: 2022-10-25
+updated: 2025-10-28
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Para cambiar el dominio de acceso al sitio web, deberá realizar diversas accion
 
 ### Etape 1 - declarar el nuevo dominio en su alojamiento compartido <a name="step1"></a>
 
-Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición de un multisitio a su alojamiento compartido](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare también su subdominio en `wwx` si desea, por ejemplo, que `www.NewDomain.tld` muestre también su sitio web además de `NewDomain.tld`.
+Declare su nuevo nombre de dominio utilizando nuestra documentación sobre la [adición de un sitio web en su alojamiento compartido](/pages/web_cloud/web_hosting/multisites_configure_multisite). Declare también su subdominio en `www` si desea, por ejemplo, que `www.NewDomain.tld` muestre también su sitio además de `NewDomain.tld`.
 
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
@@ -53,20 +53,11 @@ Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 > **Certificados SSL***
 >
-> Si el dominio inicialmente utilizado para acceder a su sitio web dispone de un certificado SSL, consulte nuestras dos guías para efectuar o verificar las acciones descritas justo debajo de estos dos enlaces :
+> Si el dominio inicialmente utilizado para acceder a su sitio web dispone de un certificado SSL, consulte nuestros 2 guías:
 > - [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Habilitar HTTPS en un sitio web con certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
->
-> Para el certificado SSL *Let's Encrypt* gratuito, solo tiene que activar la opción `SSL` **desde ahora** para su nuevo dominio a través de la pestaña `Multisitios`{.action} de su alojamiento. Haga clic en el botón `Acciones`{.action} situado sobre la tabla que muestra los multisitios y seleccione `Regenerar el certificado SSL`{.action}. La regeneración tardará al menos 2 horas en realizarse.
->
-> Para los certificados SSL de pago *Sectigo DV* y *Sectigo EV* propuestos por OVHcloud, estos últimos solo son válidos para un único nombre de dominio y su subdominio en `www`.<br>
-> **Cuando llegue al [paso 3](#step3) de esta guía**, deberá eliminar su certificado SSL de pago para contratar otro para su nuevo dominio.<br>
-> *Atención: La eliminación es irreversible y no se realizará ninguna devolución por el tiempo restante de su antiguo certificado SSL. Asegúrese de que los pasos 1 y 2 se han realizado correctamente.*
->
-> Para los demás certificados SSL *custom* que haya instalado usted mismo, contacte con su proveedor de certificados SSL para conocer las posibilidades que ofrece esta situación.
->
 
-Si todas las acciones se han realizado correctamente, las declaraciones en multisitio de sus dominios deben ser estrictamente idénticas **excepto si utiliza un certificado SSL de pago de tipo *Sectigo DV*, *Sectigo EV* o *custom***.
+Si todas las acciones se han realizado correctamente, las declaraciones de sus nombres de dominio deben ser estrictamente idénticas **a menos que esté utilizando un certificado SSL de pago de tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
 ![multisitios](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -123,14 +114,14 @@ Si ha contratado a un proveedor para que cree su sitio web, deberá ponerse en c
 
 ### Etape 3 - retirar el antiguo nombre de dominio <a name="step3"></a>
 
-Para evitar el "*Duplicate-content*" y cuando su nuevo dominio esté plenamente operativo con su sitio web, deberá eliminar la declaración en multisitio para su antiguo dominio utilizando la guía sobre la gestión de [multisitios en su alojamiento compartido](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Para evitar el "*Duplicate-content*" y cuando su nuevo nombre de dominio esté completamente operativo con su sitio web, deberá eliminar la declaración de su antiguo nombre de dominio en su sitio web utilizando el guía sobre la gestión de [sitios web en su alojamiento compartido](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > No olvide contratar su certificado SSL *Sectigo EV*, *Sectigo DV* o *Custom* como se especifica en [el paso 1](#step1).
 >
 
-Una vez que el antiguo dominio haya sido eliminado de la pestaña multisitio, y si está registrado en OVHcloud, podrá redirigirlo utilizando una [redirección visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). De este modo, sus visitas podrán ser automáticamente redirigidas hacia su sitio web visualizando su nuevo dominio en la barra de direcciones/URL de su navegador.
+Una vez que su antiguo nombre de dominio esté desvinculado del sitio web alojado en su alojamiento web y si está registrado en OVHcloud, podrá redirigirlo mediante una [redirección visible permanente 301](/pages/web_cloud/domains/redirect_domain_name). Esto permitirá que sus visitantes sean redirigidos automáticamente hacia su sitio web y visualicen su nuevo dominio en la barra de direcciones/URL de su navegador.
 
 ## Más información <a name="go-further"></a>
 

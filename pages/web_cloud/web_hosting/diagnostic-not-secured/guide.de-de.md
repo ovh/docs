@@ -1,7 +1,7 @@
 ---
 title: Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
-updated: 2025-04-28
+updated: 2025-10-28
 ---
 
 ## Ziel  <a name="objective"></a>
@@ -25,7 +25,7 @@ Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht errei
 
 ## Voraussetzungen
 
-- Sie haben die Berechtigung zur Verwaltung der [DNS Server](/pages/web_cloud/domains/dns_server_general_information) und der [DNS Zone](/pages/web_cloud/domains/dns_zone_general_information) Ihrer Domain
+- Sie haben die Berechtigung zur Verwaltung der [DNS-Server](/pages/web_cloud/domains/dns_server_general_information) und der [DNS-Zone](/pages/web_cloud/domains/dns_zone_general_information) Ihrer Domain.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -35,21 +35,38 @@ Um die Problemursache zu beheben müssen Sie:
 1. Das korrekte Hosting identifizieren, mit dem Ihre Domain verbunden ist.
 2. Auf dem betreffenden Hosting ein [SSL-Zertifikat](/pages/web_cloud/web_hosting/ssl_on_webhosting) für Ihre Domain erstellen, aktivieren oder verlängern.
 
-### Schritt 1: Überprüfen des Webhostings der betroffenen Domain
+### 1: Überprüfen des Webhostings der betroffenen Domain
 
 #### Die IP-Adresse des Hostings überprüfen
 
 Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](/links/web/hosting) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](/links/web/domains) verweist.
 
-Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action} und wählen Sie das betreffende Hosting unter `Hosting-Pakete`{.action} aus.
+Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse Ihres Hostings angezeigt.
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im Feld **Allgemeine Informationen** finden Sie die Adressen unter **IPv4** und **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> Notieren Sie die IPv4- und/oder IPv6-Adresse und folgen Sie der Anleitung weiter.
 
-![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+#### IP-Adresse in der DNS-Zone überprüfen
 
-#### IP-Adresse in der DNS Zone überprüfen
-
-Überprüfen Sie nun, ob die in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](/links/web/hosting) entspricht.
+Überprüfen Sie nun, ob die in der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](/links/web/hosting) entspricht.
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 
@@ -68,7 +85,7 @@ Notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 |Im Tab `DNS-Zone`{.action} gibt eine Nachricht an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit) verwendet, die nicht dem Format "ns **?** .ovh.net" oder "dns **?** .ovh.net" entsprechen :<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner) für mehr Informationen.|
 |Ihre Domain ist nicht im Bereich `Domainnamen`{.action} im [OVHcloud Kundencenter](/links/manager) aufgelistet.<br><br>Oder der Tab `DNS-Zone`{.action} Ihrer Domainname erscheint wie folgt:<br><br>![dns](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](/links/manager) verwaltet wird.<br><br>Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](/links/manager) gehört, falls Sie mehrere davon erstellt haben.<br><br>Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.<br><br>Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](/links/partner).|
 
-### Schritt 2: Das SSL-Zertifikat Ihres Hostings überprüfen <a name="step2"></a>
+### 2: Das SSL-Zertifikat Ihres Hostings überprüfen <a name="step2"></a>
 
 Überprüfen Sie im Tab `Allgemeine Informationen`{.action} Ihres OVHcloud Hostings den Abschnitt `SSL-Zertifikat`:
 
@@ -76,11 +93,11 @@ Notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 
 #### Szenario 1: Ihr Hosting enthält kein SSL-Zertifikat
 
-Aktivieren Sie ein [SSL-Zertifikat](/links/web/hosting-options-ssl) auf Ihrem Webhosting gemäß den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Aktivieren Sie ein [SSL-Zertifikat](/links/web/hosting-options-ssl) auf Ihrem Webhosting gemäß dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Szenario 2: Das SSL-Zertifikat Ihres Hostings funktioniert nicht
 
-Wenn Sie ein **"Let's Encrypt" SSL-Zertifikat** erstellt haben, aktivieren Sie die SSL-Option unter `Multisite`{.action} Ihres Hostings gemäß den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting#ssl-zertifikat-fur-eine-multisite-aktivieren).
+Wenn Sie ein **"Let's Encrypt" SSL-Zertifikat** generiert haben, aktivieren Sie die SSL-Option Ihres Hosting-Pakets, indem Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting) befolgen.
 
 Wenn Sie eines der **kostenpflichtigen SSL-Zertifikate** unseres Partners [SECTIGO](https://sectigo.com/) bestellt haben, kontaktieren Sie den [SECTIGO Support](https://sectigo.com/support).
 

@@ -130,9 +130,9 @@ Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer E-Mail Pro oder Exchange Pla
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Migrieren** des Accounts mithilfe unseres OMM-Tools ([OVH Mail Migrator](https://omm.ovh.net/)) auf das Konto Ihrer neuen Plattform.
+3\. **Migrieren** des Accounts mithilfe unseres OMM-Tools ([OVHcloud Mail Migrator](/links/web/omm)) auf das Konto Ihrer neuen Plattform.
 
-Weitere Informationen zu OMM finden Sie in unserer Anleitung [E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+Weitere Informationen zu OMM finden Sie in unserer Anleitung [E-Mail-Accounts über OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 

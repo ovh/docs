@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2024-03-28
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -114,9 +114,9 @@ Pour installer un CMS sur votre offre d'[hébergement web](/links/web/hosting), 
 
 #### 1.1 - Vérifier la déclaration du « dossier racine »
 
-Le « dossier racine » correspond au répertoire dans lequel votre futur CMS sera installé dans votre hébergement. Il est recommandé de choisir un répertoire vide pour éviter les conflits avec vos autres potentiels multisites.
+Le « dossier racine » correspond au répertoire dans lequel votre futur CMS sera installé dans votre hébergement. Il est recommandé de choisir un répertoire vide pour éviter les conflits avec vos autres potentiels sites web.
 
-Consultez notre documentation qui décrit [comment ajouter un multisite sur son hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite) pour définir le dossier racine à utiliser avec votre CMS.
+Consultez notre documentation qui décrit [comment créer un site web sur son hébergement web](/pages/web_cloud/web_hosting/multisites_configure_multisite) pour définir le dossier racine à utiliser avec votre CMS.
 
 > [!primary]
 >
@@ -406,7 +406,7 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

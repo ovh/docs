@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Partage des responsabilités (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-updated: 2021-09-28
+updated: 2025-11-04
 ---
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
@@ -18,7 +18,7 @@ This shared model can help relieve the customer’s operational burden.
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
-For your information, a **Service** is considered a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Valkey, Kafka, or Cassandra cluster.
+For your information, a **Service** is considered a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Valkey or Cassandra cluster.
 
 ### 1. Before subscription
 

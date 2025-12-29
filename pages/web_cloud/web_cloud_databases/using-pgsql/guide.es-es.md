@@ -38,7 +38,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente Web](/links/manager).
 
-Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ### Conexion en linea de comandos
 

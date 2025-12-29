@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie die Zuordnungseinstellungen von Domainnamen oder Subdomains ändern, die bereits auf Ihrem Webhosting deklariert sind"
-updated: 2025-02-20
+updated: 2025-11-05
 ---
 
 ## Ziel
@@ -84,12 +84,6 @@ In diesem Formular müssen Sie also den Namen des vorausgefüllten Ordners durch
 
 #### Weitere Optionen verfügbar
 
-##### Die Option "SSL"
-
-Aktivieren/deaktivieren Sie diese Option nur, wenn Sie das kostenlose **Let's Encrypt** SSL für Ihre Domain/Subdomain aktivieren/deaktivieren möchten. Bei anderen SSL-Angeboten von OVHcloud muss diese Option nicht aktiviert werden.
-
-Weitere Informationen zu den verfügbaren SSL-Optionen/-Angeboten finden Sie in unserer Dokumentation „[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)“.
-
 ##### Die Option "CDN aktivieren"
 
 Um diese Option nutzen zu können, müssen Sie zuerst ein CDN von OVHcloud abonniert haben oder über ein Performance Webhosting verfügen.
@@ -128,7 +122,7 @@ Wenn alle Einstellungen Ihren Wünschen entsprechen, klicken Sie auf `Bestätige
 
 Abhängig von den ausgewählten Optionen kann es einige Minuten bis zu einigen Stunden dauern, bis die Änderungen wirksam werden.
 
-Wenn die Änderungen für die Optionen **SSL**, **CDN**, **IP des Landes** und **Getrennte Logs** nach 24 Stunden nicht wirksam werden, nutzen Sie die entsprechenden Wissensressourcen für alle Optionen in [Schritt 1](#step1), um sicherzustellen, dass alle Anforderungen erfüllt wurden.
+Wenn die Änderungen für die Optionen **CDN**, **IP des Landes** und **Getrennte Logs** nach 24 Stunden nicht wirksam werden, nutzen Sie die entsprechenden Wissensressourcen für alle Optionen in [Schritt 1](#step1), um sicherzustellen, dass alle Anforderungen erfüllt wurden.
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-updated: 2024-11-08
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie
@@ -132,6 +132,24 @@ root@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_na
 ```
 
 Teraz możesz przejść do partycji zamontowanej w określonym folderze.
+
+### Microsoft Windows - Cechy szczególne
+
+Upewnij się, że użytkownik systemu Windows, który potrzebuje dostępu do urządzenia NAS-HA, ma niezbędne uprawnienia.
+
+Para UID/GID musi być ustawiona na „0” (uprawnienia administratora systemu UNIX).
+
+W przeciwnym razie podczas uzyskiwania dostępu do urządzenia NAS-HA mogą wystąpić błędy. Wynika to z faktu, że po włączeniu protokołu NFS na komputerze z systemem Windows automatycznie tworzony jest użytkownik systemu UNIX z domyślnymi wartościami UID i GID ustawionymi na „-2” (lub 4294967294), co ogranicza dostęp.
+
+Aby obejść ten problem, można wymusić ustawienie UID i GID na „0” na komputerze z systemem Windows uzyskującym dostęp do NAS-HA:
+
+1. Otwórz Edytor rejestru (regedit) na komputerze klienckim.
+1. Przejdź do następującego klucza: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Utwórz dwa następujące wpisy DWORD: **AnonymousUid** i **AnonymousGid**.
+1. Przypisz wartość „0” do każdego z tych wpisów.
+1. Uruchom ponownie usługę NFS na komputerze klienckim, aby zastosować zmiany.
+
+Wszystkie opcje montowania są dostępne na [stronie Microsoft](https://learn.microsoft.com/pl-pl/windows-server/administration/windows-commands/mount).
 
 ### Proxmox
 

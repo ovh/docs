@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer le reverse DNS de votre serveur (enregistrement PTR)"
-excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre adresse IP depuis votre espace client
-updated: 2025-09-18
+excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre adresse IPv4 ou IPv6 depuis votre espace client
+updated: 2025-12-10
 ---
 
 ## Objectif
@@ -15,7 +15,7 @@ La configuration du reverse DNS d'un serveur est particulièrement utile lors de
 ## Prérequis
 
 - Une adresse IP attachée à un service de votre compte OVHcloud
-- Un nom de domaine avec son enregistrement `A` relié à votre service
+- Un nom de domaine avec son enregistrement `A` ou `AAAA` relié à votre service
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -37,7 +37,7 @@ Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.ac
 Vous pouvez également éditer le reverse directement via l'icône en forme de plume dans la colonne **Reverse DNS** du tableau.
 
 > [!warning]
-> Lorsque vous entrez votre nom de domaine dans le *reverse*, il vérifie immédiatement si l'enregistrement A renvoie à la même IP. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement A doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :
+> Lorsque vous entrez votre nom de domaine dans le *reverse*, celui-ci vérifie immédiatement si les enregistrements `A` et `AAAA` correspondent bien aux adresses IP configurées pour ce domaine. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement DNS doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :
 >
 >  - le *reverse* ne peut pas commencer par un `-`
 >  - le *reverse* ne peut pas comporter plus de 63 caractères
@@ -45,14 +45,12 @@ Vous pouvez également éditer le reverse directement via l'icône en forme de p
 >  - le *reverse* doit se terminer par un `.`
 >
 > Exemple : « domain.tld » dans l'enregistrement *reverse* serait `domain.tld.`.
->
 
 > [!primary]
 >
-> Si la modification ne fonctionne pas comme prévu, vérifiez que l'enregistrement « A » est correctement configuré dans la zone DNS de votre nom de domaine. L'application des changements dans la zone DNS peut prendre jusqu'à 24 heures, dans le cas où vous venez de modifier l'enregistrement « A ».
+> Si la modification ne fonctionne pas comme prévu, vérifiez que les enregistrements `A` et `AAAA` sont correctement configurés dans la zone DNS de votre nom de domaine. L'application des changements dans la zone DNS peut prendre jusqu'à 24 heures, dans le cas où vous venez de modifier l'enregistrement.
 >
 > Si le nom de domaine est géré par OVHcloud en tant que bureau d’enregistrement **et qu’il utilise les serveurs DNS OVHcloud**, vous pouvez vous référer à [ce guide](/pages/web_cloud/domains/dns_zone_edit).
->
 
 ## Aller plus loin
 

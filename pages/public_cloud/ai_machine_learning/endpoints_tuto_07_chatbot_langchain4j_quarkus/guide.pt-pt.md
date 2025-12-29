@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own AI chatbot using LangChain4j and Quarkus
 excerpt: Learn how to build an AI-powered chatbot using LangChain4j, Quarkus, and OVHcloud AI Endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ Adapt and add the following configuration to your application.properties, to ena
 ```console
 ### Global configurations
 # Base URL for Mistral AI endpoints
-quarkus.langchain4j.mistralai.base-url=${OVH_AI_ENDPOINTS_MODEL_URL}
+quarkus.langchain4j.mistralai.base-url=${OVH_AI_ENDPOINTS_URL}
 # Activate or not the log during the request
 quarkus.langchain4j.mistralai.log-requests=true
 # Activate or not the log during the response
@@ -162,7 +162,7 @@ quarkus.langchain4j.mistralai.chat-model.max-tokens=1024
 You will also have to replace two other environments variables, related to the model you want to use. You can find these model-specific values in the `documentation` tab of each model. For example, if you want to add the `Mistral-7B-Instruct-v0.3` model, the expected environment variables will be:
 
 - `OVH_AI_ENDPOINTS_MODEL_NAME`: Mistral-7B-Instruct-v0.3
-- `OVH_AI_ENDPOINTS_MODEL_URL`: https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+- `OVH_AI_ENDPOINTS_URL`: https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 
 ### Build a REST API to interact with the chatbot
 

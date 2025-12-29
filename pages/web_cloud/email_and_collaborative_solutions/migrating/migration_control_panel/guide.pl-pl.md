@@ -130,9 +130,9 @@ W zakładce `Konta e-mail`{.action} na Twojej platformie E-mail Pro lub Exchange
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Przenieś** konto MX Plan na konto nowej platformy za pomocą narzędzia [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+3\. **Przenieś** konto MX Plan na konto nowej platformy za pomocą narzędzia [OMM](/links/web/omm) (OVHcloud Mail Migrator).
 
-Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 

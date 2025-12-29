@@ -1,7 +1,7 @@
 ---
 title: "Wie lösche ich eine OVHcloud DNS-Zone?"
 excerpt: "Diese Anleitung erklärt, wie Sie eine DNS-Zone für Ihre Domain über Ihr OVHcloud Kundencenter"
-updated: 2025-04-28
+updated: 2025-10-14
 ---
 
 ## Ziel
@@ -23,7 +23,6 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 > [!primary]
 >
 > Die Erstellung / Änderung / Löschung einer DNS-Zone in Ihrem [OVHcloud Kundencenter](/links/manager) ist kostenlos.
->
 
 **Diese Anleitung erklärt, wie Sie im OVHcloud Kundencenter eine OVHcloud DNS-Zone für Ihren Domainnamen löschen.**
 
@@ -36,7 +35,6 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 > [!primary]
 >
 > DNS-Zone löschen löscht nicht den zugehörigen Domainnamen. Sie verlieren Ihren Domainnamen also nicht, wenn Sie dessen DNS-Zone löschen.
->
 
 ## In der praktischen Anwendung
 
@@ -49,65 +47,36 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 > Überprüfen Sie mithilfe einer [WHOIS](/links/web/domains-whois)-Abfrage, ob die aktive DNS-Zone Ihrer Domain bei OVHcloud liegt.
 >
 > Wenn die aktive DNS-Zone für Ihre Domain bei OVHcloud liegt und Sie diese durch eine an einem anderen Standort gehostete DNS-Zone ersetzen möchten, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“, bevor Sie die Löschung der DNS-Zone vornehmen.
->
 
-### 1 - Löschen einer OVHcloud DNS-Zone initiieren
-
-Um eine OVHcloud DNS-Zone zu löschen, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen in der oberen rechten Ecke und dann auf `Meine Angebote und Dienste`{.action}.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie im Tabelle auf der angezeigten Seite auf den Button `...`{.action} rechts neben der DNS-Zone, die Sie kündigen möchten, und dann auf `Meinen Dienst kündigen`{.action}.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Kündigung](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf der rechten Seite (oder unter der Tabelle je nach Bildschirmauflösung) auf die Schaltfläche `Die DNS-Zone löschen`{.action}.
+>> Auf der neuen Seite geben Sie den Grund für Ihre Kündigung und Ihr Vorhaben an und klicken Sie dann auf `Bestätigen`{.action}.
 >>
->> ![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
+>> ![Dienst kündigen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
->> Überprüfen Sie im angezeigten Fenster die darin enthaltenen Meldungen.
+>> Die Kündigung Ihres Dienstes erfolgt am **Datum des Inkrafttretens**, das in der Tabelle "Meine Angebote und Dienste" angezeigt wird. Falls der Status "Kündigung geplant" nicht angezeigt wird, aktualisieren Sie die Seite.
 >>
->> ![delete the DNS zone validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone-confirmation.png){.thumbnail}
->>
->> Klicken Sie auf `Bestätigen`{.action}, um die erste Phase des Löschens der DNS-Zone abzuschließen.
-
-### 2 - Löschen einer OVHcloud DNS-Zone bestätigen
-
-Im vorherigen Schritt erhalten Sie eine E-Mail zur Bestätigung der Löschung der DNS-Zone an die E-Mail-Adresse des [Administrator-Kontakts](/pages/account_and_service_management/account_information/managing_contacts).
-
-> [!success]
->
-> Wenn Sie die E-Mail nicht erhalten, überprüfen Sie Ihre Spam-Mails.
->
-
-Diese E-Mail enthält zwei Links, die **72** Stunden ab dem Zeitpunkt gültig sind, an dem Sie Schritt 1 dieser Anleitung abgeschlossen haben.
-
-Klicken Sie auf den **Validierung-Link**, um mit der Löschung der OVHcloud DNS-Zone fortzufahren, oder auf den **Stornierung-Link**, um die Löschung der OVHcloud DNS-Zone abzubrechen.
-
-> [!primary]
->
-> Wenn die Weiterleitung der Links nicht funktioniert, **kopieren** Sie den Link in die Adresszeile Ihres Browsers. Verbinden Sie sich bei Bedarf erneut mit Ihrem [OVHcloud Kundencenter](/links/manager).
->
-
-Wenn Sie auf den Link zur Validierung klicken, werden Sie auf eine neue Seite weitergeleitet, auf der Sie nach den Gründen für die Löschung der OVHcloud DNS-Zone gefragt werden.
-
-![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
-
-Wenn Sie sicher sind, dass Sie die OVHcloud DNS-Zone dauerhaft löschen möchten, klicken Sie nach Ausfüllen des Formulars unten auf den Button `Bestätigen`{.action}.
-
-Eine E-Mail wird an die E-Mail-Adresse des „[Administrator-Kontakts](/pages/account_and_service_management/account_information/managing_contacts)“
-der OVHcloud DNS-Zone gesendet, um die Löschung zu bestätigen.
+>> > [!primary]
+>> >
+>> > Wenn Sie eine DNS-Zone sofort aus Ihrem [OVHcloud Kundencenter](/links/manager) löschen möchten, führen Sie die 4 Schritte aus, um die Kündigung zum Datum des Inkrafttretens zu beantragen, und kontaktieren Sie anschließend den OVHcloud Support, indem Sie ein Support-Ticket über das [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.  
+>> > Geben Sie im Ticket die betroffene DNS-Zone an und erklären Sie ausdrücklich, dass Sie diese sofort löschen möchten, ohne auf das Datum des Inkrafttretens zu warten.
 
 ## Weiterführende Informationen
 

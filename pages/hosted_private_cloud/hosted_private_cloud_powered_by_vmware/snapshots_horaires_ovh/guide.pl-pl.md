@@ -79,7 +79,7 @@ Jest to bezpieczeństwo normalnie używane przez OVHcloud. Snapshoty godzinowe n
 
 Jest to dodatkowy system bezpieczeństwa do użytku wewnętrznego wprowadzony w przypadku datastore, który ma być stosowany tylko w ostateczności, aby zapobiec utracie danych.
 
-Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external-link} lub inny system realizujący kopię zapasową wirtualnych maszyn.
+Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) lub inny system realizujący kopię zapasową wirtualnych maszyn.
 
 ## Sprawdź również
 

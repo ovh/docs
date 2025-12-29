@@ -14,7 +14,7 @@ Elle permet également d’automatiser certaines actions.
 
 ## Connexion à L’API
 
-Rendez-vous sur l’API [ovh.com](http://ovh.com){.external-link} : [http://api.ovh.com](http://api.ovh.com/){.external-link}
+Rendez-vous sur l’API [ovh.com](http://ovh.com) : [http://api.ovh.com](http://api.ovh.com/)
 
 ![](images/connection_api_1.jpg){.thumbnail}
 

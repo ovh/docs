@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-21
 ---
 
 ## Wprowadzenie
@@ -12,7 +12,7 @@ updated: 2025-10-09
 - więcej przestrzeni dyskowej FTP;
 - dodatkowych baz danych; 
 - dodatkowych adresów e-mail;
-- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
+- dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases) (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/)).
 
 **Dowiedz się, jak zmienić ofertę hostingową OVHcloud bez przerwy w działaniu usługi.**
 
@@ -38,13 +38,28 @@ updated: 2025-10-09
 
 ### Zmień ofertę hostingu <a name="modify"></a>
 
-Aby zmienić abonament, przejdź do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action} i wybierz odpowiedni hosting.
+Aby zmienić abonament, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W polu `Abonament` kliknij przycisk `...`{.action} po prawej stronie `Usługa`, a następnie `Zmień ofertę`{.action}.
-
-![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
-
-Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W polu **Abonament** kliknij przycisk `...`{.action} po prawej stronie **Usługa**, a następnie `Zmień ofertę`{.action}.
+>>
+>> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
+>>
+>> Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
 
 ### Sprawdź, czy Twój hosting jest kompatybilny z ofertą z niższej gamy <a name="checks"></a>
 
@@ -106,9 +121,27 @@ Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. Kliknij p
 #### 2 - Web Cloud Databases
 
 Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) zawartej w Twoim hostingu [Performance](/links/web/hosting-performance-offer) i chcesz przenieść swój hosting na ofertę [Pro](/links/web/hosting-professional-offer), musisz najpierw oddzielić ofertę Web Cloud Databases od hostingu.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}. W kolumnie środkowej `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie pozycji `Web Cloud Databases`{.action}, a następnie `Odłącz`{.action}.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W kolumnie środkowej **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie pozycji **Web Cloud Databases**, a następnie `Odłącz`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 Dzięki temu będziesz mógł zamówić ofertę Web Cloud Databases niezależną od abonamentu *Performance*. Dane z Twojego serwera zostaną zachowane.
 
@@ -121,9 +154,28 @@ Jeśli nie chcesz przechowywać tych danych, możesz usunąć Twoją usługę We
 
 Upewnij się, czy nowa oferta zawiera wystarczającą [przestrzeń dyskową FTP](/pages/web_cloud/web_hosting/ftp_connection), aby umożliwić import plików z Twojego aktualnego hostingu.
 
-Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla, znajdź limit w sekcji `Przestrzeń dyskowa`.
+Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Informacje ogólne** znajduje się wzmianka **Przestrzeń dyskowa**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+>>
+>> Pod tą informacją wyświetlana jest wykorzystana przestrzeń dyskowa.
 
 #### 4 - Adresy e-mail
 
@@ -185,17 +237,56 @@ Dzięki opcji [Boost](/links/web/hosting-options-boost), dostępnej w naszych pa
 
 Jeśli opcja **Boost** odpowiada Twoim potrzebom, poniżej znajdziesz instrukcje dotyczące **włączenia** lub **wyłączenia** tej opcji na Twoim hostingu.
 
+Aby **aktywować opcję Boost**, kliknij poniższe zakładki, aby wyświetlić kolejne **3** etapy.
+
 > [!tabs]
-> **Włącz opcję Boost**
+> **Etap 1**
 >>
->> Aby aktywować opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. W ramce `Informacje ogólne` na stronie, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie `Boost`, a następnie `Skorzystaj z opcji Boost`{.action}.<br><br>
->> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
-> **Wyłącz opcję Boost**
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
->> Aby wyłączyć opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Więcej` i kliknij `Skorzystaj z opcji Boost`{.action}.<br>
->> Pojawi się tabela wykorzystania opcji Boost. Kliknij `Wyłącz ofertę Boost`{.action}.<br><br>
->> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Informacje ogólne** na stronie, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie **Boost**, a następnie `Skorzystaj z opcji Boost`{.action}.
+>>
+>> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+
+
+Aby **wyłączyć opcję Boost**, kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę Na stronie, która się wyświetli przejdź do zakładki `Więcej`{.action} i kliknij `Skorzystaj z opcji Boost`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Pojawi się tabela wykorzystania opcji Boost. Kliknij `Wyłącz ofertę Boost`{.action}.
+>>
+>> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
 
 ### Płatności w przypadku zmiany oferty <a name="billing"></a>
 

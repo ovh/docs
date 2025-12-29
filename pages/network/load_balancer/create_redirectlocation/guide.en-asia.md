@@ -1,26 +1,26 @@
 ---
-title: 'Working with redirections'
-universe: cloud
-excerpt: 'Integrate your web services behind a Load Balancer with redirections'
-updated: 2021-02-05
+title: "Configuring an OVHcloud Load Balancer service with redirects"
+excerpt: Integrate your web services behind a Load Balancer with redirects
+updated: 2025-11-27
 ---
 
 ## Objective
 
-The OVH Load Balancer acts by default as a proxy. It can also be configured to redirect your customers to a third-party website, which is useful if you are changing your domain name, or want to redirect your customers to your website’s HTTPS version, for example. This is known as HTTP redirection.
+The **OVHcloud Load Balancer** operates by default as a proxy. It can also be configured to redirect client traffic to a third-party website. This functionality is essential for scenarios such as **domain name migration** or enforcing the **HTTPS version** of a website. This is known as **HTTP redirection**.
 
-**This guide will show you how to integrate your web services behind an OVH Load Balancer with redirections.**
+**This guide outlines the process for integrating your web services behind an OVHcloud Load Balancer utilizing HTTP redirections.**
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.com/asia/solutions/load-balancer/)
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/), or the [OVH API](/links/api)
+- Have an [OVHcloud Load Balancer](/links/network/load-balancer) offer in your OVHcloud account.
+- Have access to your [OVHcloud Control Panel](/links/manager).
+- Have access to the [OVHcloud API](/links/api).
 
 ## Instructions
 
-### Presentation
+### Overview
 
-A HTTP redirection is presented as follows:
+An HTTP redirect looks like this:
 
 ```bash
 HTTP/1.1 301 Moved Permanently
@@ -29,85 +29,88 @@ Content-Type: text/html
 Content-Length: 174
 ```
 
-Custom redirections should have the following form: `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. You can only specify one redirection per front-end.
+Custom redirects must be formatted as `<scheme>://<net_loc>/<path>;<params>?<query>#<fragment>`. Only one redirect can be specified per frontend.
 
-Custom redirections can be specified via the OVH Control Panel and via the API, both on new and existing `front-ends`{.action}.
+Custom redirects can be specified via the OVHcloud Control Panel or via the API, on a new or existing frontend.
 
-### Add a custom redirection via the OVH Control Panel.
+### Adding a custom redirect from the OVHcloud Control Panel
 
-You can define custom redirections from the [OVH Control Panel](https://ca.ovh.com/auth/) by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can define a custom redirect from the [OVHcloud Control Panel](/links/manager) in the `Bare Metal Cloud`{.action} section and then `Load Balancer`{.action}.
+This can be done either on a new frontend during its creation, or on an existing frontend.
 
-You can either do this on a new front-end as you create it, or on an existing front-end.
+#### Adding a new frontend
 
-* Add a new front-end.
+In the `Frontends`{.action} section, click on the `Add a frontend`{.action} button to create a new one.
 
-In the `Front-ends`{.action} section of the OVH Control Panel, click on `Add a front-end`{.action} to create a new one.
+In the frontend editing page, select the `HTTP`{.action} or `HTTPS`{.action} protocol.<br>
+Configure the information as usual. However, it is unnecessary to specify the `Default backend`{.action}, as it will not be used.
 
-In the editing page for a front-end, select `HTTP`{.action} or `HTTPS`{.action} protocol. Configure the information as requested. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+In the advanced settings, fill in the `HTTP redirect`{.action}.
 
-In the advanced settings, enter the `HTTP redirection`{.action}.
+#### Editing an existing frontend
 
-* Edit an existing front-end.
+In the `Frontends`{.action} section, click on the `...`{.action} button to the right of the relevant frontend and select `Edit`{.action}.<br>
+Make sure the selected frontend is of the `HTTP` or `HTTPS` protocol. Complete the configuration if necessary.
+However, it is unnecessary to specify the `Default backend`{.action}, as it will not be used.
 
-In the `Front-ends`{.action} section of the OVH Control Panel, select the front-end you would like to edit. To do this, click the `...`{.action} button, then select `Edit`{.action} in the menu that appears. Please ensure that the front-end you have chosen uses either `HTTP` or `HTTPS` protocol.
+In the advanced settings, fill in the `HTTP redirect`{.action}.
 
-In the editing page for the front-end, complete the configuration if needed. However, please note that there is no need to set a `Default farm`{.action}, as it will not be used.
+![Configuration of a Frontend Redirect](images/add_redirectlocation.png){.thumbnail}
 
-In the advanced settings, enter the `HTTP redirection`{.action}.
+Once the frontend is configured, click on `Add`{.action} or `Edit`{.action} depending on whether you are configuring a new frontend or an existing one.
+Do not forget to deploy the configuration.
 
-![Configure a front-end redirection](images/add_redirectlocation.png){.thumbnail}
+To do this, you can either:
 
-Once the front-end has been configured, click `Add`{.action} or `Edit`{.action}, depending on whether you are configuring a new or existing front-end. Please remember to deploy the configuration. There are two ways of doing this:
+- In the `Status` section of the `Home`{.action} tab, click on the `...`{.action} button of your Load Balancer and then click on `Apply the configuration`{.action}.
 
-- via the `Status`{.action} section of the OVH Control Panel, by clicking on your Load Balancer’s `...`{.action} button, then selecting `Apply configuration`{.action}
+- In the reminder banner informing you that the configuration is not applied, click on `Apply the configuration`{.action}.
 
-- via the reminder box in the OVH Control Panel, notifying you that the configuration has not been applied, by clicking `Apply configuration`{.action}
+![Application of a Load Balancer Configuration](images/apply_configuration.png){.thumbnail}
 
-![Apply a Load Balancer configuration](images/apply_configuration.png){.thumbnail}
+### Adding a custom redirect from the OVHcloud API
 
-### Add a custom redirection via the API.
+In the [OVHcloud API](/links/api), redirects are specified in the redirectLocation string:
 
-In the [OVH API](/links/api), redirections are specified in the redirectLocation character chain.
-
-* If you are creating a new front-end:
+**Creating a new frontend**
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
-|Setting|Meaning|
+|Parameter|Meaning|
 |---|---|
-|serviceName|Your Load Balancer service ID|
-|port|Front-end listening ports|
-|zone|Front-end deployment zones|
-|redirectLocation|HTTP redirection URL|
+|serviceName|Identifier of your Load Balancer service|
+|port|Port(s) of the frontend|
+|zone|Deployment zone of the frontend|
+|redirectLocation|HTTP redirect URL|
 
-* If you are updating an existing front-end:
+**Updating an existing frontend**
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
-|Setting|Meaning|
+|Parameter|Meaning|
 |---|---|
-|serviceName|Your Load Balancer service ID|
-|frontendId|ID of the front-end to be updated|
-|redirectLocation|HTTP redirection URL|
+|serviceName|Identifier of your Load Balancer service|
+|frontendId|Identifier of the frontend to update|
+|redirectLocation|HTTP redirect URL|
 
-Then apply the modifications:
+**Applying the changes**
 
 > [!api]
 >
 > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
-|Setting|Meaning|
+|Parameter|Meaning|
 |---|---|
-|serviceName|Your Load Balancer service ID|
-|zone|Front-end deployment zones|
+|serviceName|Identifier of your Load Balancer service|
+|zone|Deployment zone of the frontend|
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
-title:  Przenieś Additional IP
+title: Przenieś Additional IP
 excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprzez API OVHcloud
-updated: 2025-07-22
+updated: 2025-12-22
 ---
 
 > [!primary]
@@ -38,7 +38,6 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
->
 
 > [!warning]
 > Jeśli adres Additional IP lub jeden z adresów IP bloku, ma przypisany wirtualny adres MAC, serwer docelowy musi obsługiwać funkcje wirtualnych adresów MAC.
@@ -56,27 +55,39 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 > Jeśli blok IP zostanie przeniesiony/dodany do vRack, nie jest już związany z serwerem fizycznym. W tym przypadku każdy wirtualny adres MAC zostanie utracony podczas transferu.
 >
 
+### Bloki adresów IP geolokalizowane
+
+Geolokalizacja adresu IP jest niezależna od regionu, z którym jest on powiązany.
+
+Jeśli zamówisz dodatkowy blok adresów IP na serwerze, ale wybierzesz inną lokalizację (geolokalizację) dla tego bloku, nie będzie można przenieść go na inny serwer znajdujący się w tym samym kraju. Na przykład dodatkowy blok adresów IP geolokalizowany w Polsce (eu-central-war) i zamówiony na serwerze znajdującym się w francuskim centrum danych (eu-west-gra) nie może zostać przeniesiony na serwer znajdujący się w polskim centrum danych (eu-central-war). Blok adresów IP można przenieść wyłącznie na kwalifikujący się serwer znajdujący się we francuskim centrum danych.
+
 ### Przenieś IP w Panelu klienta OVHcloud
 
 > [!warning]
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
-Kliknij na zakładkę `Additional IP`{.action}.
+Następnie możesz użyć menu rozwijanego pod opcją **Moje publiczne adresy IP i usługi powiązane** i wybrać opcję **Wszystkie adresy Additional IP**, aby odpowiednio filtrować usługi, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Kliknij przycisk `...`{.action} po prawej stronie przenoszonego adresu IP, a następnie `Przenieś Additional IP`{.action} lub `Przypisz ten blok IP do innej usługi`{.action}.
+Następnie kliknij przycisk `⁝`{.action} po prawej stronie Addditional IP lub bloku adresów IP, który chcesz przenieść, i wybierz `Przenieś Additional IP`{.action}.
 
-![Panelu klienta](images/move_ip.png){.thumbnail}
+![move Additional](images/move_ip_1_new.png){.thumbnail}
 
-W menu, które się wyświetla wybierz usługę, do której chcesz przenieść adres IP.
+W wyskakującym okienku wybierz z menu usługę, do której chcesz przenieść adres IP.
+
+![move Additional](images/move_ip_2_new.png){.thumbnail}
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![Panelu klienta](images/moveadditionalIP2.png){.thumbnail}
+> [!warning]
+> Należy pamiętać, że w przypadku niektórych produktów adresy IP (lub bloki) muszą zostać najpierw przeniesione do parkingu IP (tymczasowej lokalizacji przechowywania), zanim będą mogły zostać przeniesione do żądanego produktu.
+>
+> Aby przenieść bloki adresów IP do określonej sieci vRack, należy skorzystać z **interfejsu zarządzania vRack**, do którego można uzyskać dostęp, otwierając menu `Sieć`{.action} w lewym pasku bocznym, a następnie wybierając opcję `Prywatna sieć vRack`{.action}. 
+>
 
 ### Przeniesienie IP przez API
 

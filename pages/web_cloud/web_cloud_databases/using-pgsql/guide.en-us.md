@@ -33,7 +33,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [Web Control Panel](/links/manager).
 
-There is also a guide here: [Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
+There is also a guide here: [Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ### Connect via the command line
 

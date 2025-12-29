@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Premiers pas (EN)
 excerpt: Découvrez comment lancer un AI Notebooks
-updated: 2025-07-01
+updated: 2025-11-17
 ---
 
 ## Introduction
@@ -445,7 +445,7 @@ To save your Notebook, click on the sub-menu `Save`{.action} of the `File` menu.
 
 ### Getting started with code examples
 
-To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook workspace when you launch it, so you can start exploring the examples right away.
+To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) when you launch it, so you can start exploring the examples right away.
 
 We currently provide a variety of tutorials, including for examples:
 
@@ -580,7 +580,7 @@ Once the Notebook has reached the `Stopped` state, you may be interested in rest
 >> Please replace `YOUR_AI_TOKEN` with your actual AI token and `YOUR_NOTEBOOK_UUID` with the `UUID` of the Notebook you want to stop.
 >>
 
-Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook. During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
+Restarting a Notebook will transition its state to `RUNNING`, once the Notebook is restarted. However, there will be a short waiting period while your data synchronizes back to your Notebook (internal workspace and remotely mounted volumes if any). During this data synchronization, the Notebook's state will display as `Pending` or `Starting` before entering the `RUNNING` state.
 
 ### Deleting a Notebook
 

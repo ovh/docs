@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2025-09-08
+updated: 2025-10-10
 ---
 
 ## Objectif
@@ -104,7 +104,7 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |      **VPS Exemple**       |       urn        |   :   |           v1           |   :   |            ca             |   :   |             resource              |   :   |                                                          vps                                                           |   :   |       vps-5b48d78b.vps.ovh.net       |
 | **Resource Group Exemple** |       urn        |   :   |           v1           |   :   |            us             |   :   |           resourceGroup           |       |                                                                                                                        |   :   | aa0713ab-ed13-4f1a-89a5-32aa0cb936d8 |
 
-Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
+Les actions et les URNs de ressources peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou actions en une seule ligne.
 
 *Exemple d'une URN avec un wildcard :*
 

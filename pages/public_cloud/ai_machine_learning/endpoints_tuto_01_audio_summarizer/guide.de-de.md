@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own audio summarizer
 excerpt: Summarize hours of meetings ASR and LLM AI endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -40,8 +40,7 @@ This tutorial will explore how AI APIs can be connected to create an advanced vi
 In order to use AI Endpoints APIs easily, create a `.env` file to store environment variables:
 
 ```bash
-ASR_AI_ENDPOINT=https://nvr-asr-en-gb.endpoints.kepler.ai.cloud.ovh.net/api/v1/asr/recognize
-LLM_AI_ENDPOINT=https://mixtral-8x22b-instruct-v01.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
 
@@ -76,6 +75,7 @@ import requests
 from pydub import AudioSegment
 from dotenv import load_dotenv
 from openai import OpenAI
+import functools
 ```
 
 After these lines, load and access the environnement variables of your `.env` file:
@@ -84,9 +84,17 @@ After these lines, load and access the environnement variables of your `.env` fi
 # access the environment variables from the .env file
 load_dotenv()
 
-asr_ai_endpoint_url = os.environ.get("ASR_AI_ENDPOINT") 
-llm_ai_endpoint_url = os.getenv("LLM_AI_ENDPOINT")
+ai_endpoint_url = os.getenv("OVH_AI_ENDPOINTS_URL")
 ai_endpoint_token = os.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
+```
+
+Then define the client that communicates with the APIs and authenticates your requests:
+
+```python
+oai_client = OpenAI(
+    base_url=ai_endpoint_url,
+    api_key=ai_endpoint_token
+)
 ```
 
 💡 You are now ready to start coding your web app.
@@ -96,7 +104,7 @@ ai_endpoint_token = os.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
 First, create the **Automatic Speech Recognition** function in order to transcribe audio files into text:
 
 ```python
-def asr_transcription(audio):
+def asr_transcription(oai_client, audio):
     
     if audio is None:
         return " "
@@ -109,42 +117,23 @@ def asr_transcription(audio):
         process_audio_to_wav = process_audio_to_wav.set_frame_rate(16000)
         process_audio_to_wav.export(processed_audio, format="wav")
     
-        # headers
-        headers = headers = {
-            'accept': 'application/json',
-            "Authorization": f"Bearer {ai_endpoint_token}",
-        }
-
-        # put processed audio file as endpoint input
-        files = [
-            ('audio', open(processed_audio, 'rb')),
-        ]
-
-        # get response from endpoint
-        response = requests.post(
-            asr_ai_endpoint_url, 
-            files=files, 
-            headers=headers
-        )
+        with open(processed_audio, "rb") as audio_file:
+            response = oai_client.audio.transcriptions.create(
+                model="whisper-large-v3",
+                file=audio_file,
+                response_format="verbose_json",
+                timestamp_granularities=["segment"]
+            )
 
         # return complete transcription
-        if response.status_code == 200:
-            # Handle response
-            response_data = response.json()
-            resp=''
-            for alternative in response_data:
-                resp+=alternative['alternatives'][0]['transcript']
-        else:
-            print("Error:", response.status_code)
-            
-        return resp
+        return response.text
 ```
 
 **In this function:**
 
 - The audio file is preprocessed as follows: `.wav` format, `1` channel, `16000` frame rate
 - The transformed audio `processed_audio` is read
-- An API call is made to the ASR endpoint named `nvr-asr-en-gb`
+- An API call is made to the ASR endpoint named `whisper-large-v3`
 - The full response is stored in `resp` variable and returned by the function
 
 🎉 Now that you have this function, you are ready to transcribe audio files.
@@ -153,7 +142,7 @@ Now it’s time to call an LLM to summarize the transcribed text.
 
 ### Summarize audio with LLM
 
-In this second step, create the `chat_completion` function to use `Mixtral8x22B` effectively (or any other model):
+In this second step, create the `chat_completion` function to use `Mixtral8x7B` effectively (or any other model):
 
 **What to do?**
 
@@ -163,23 +152,18 @@ In this second step, create the `chat_completion` function to use `Mixtral8x22B`
 - Return the audio summary
 
 ```python
-def chat_completion(new_message):
+def chat_completion(oai_client, new_message):
 
     if new_message==" ":
         return "Please, send an input audio to get its summary!"
     
     else:
-        # auth
-        client = OpenAI(
-            base_url=llm_ai_endpoint_url,
-            api_key=ai_endpoint_token
-        )
 
         # prompt
         history_openai_format = [{"role": "user", "content": f"Summarize the following text in a few words: {new_message}"}]
         # return summary
-        return client.chat.completions.create(
-            model="Mixtral-8x22B-Instruct-v0.1",
+        return oai_client.chat.completions.create(
+            model="Mixtral-8x7B-Instruct-v0.1",
             messages=history_openai_format,
             temperature=0,
             max_tokens=1024
@@ -204,6 +188,10 @@ Inside a Gradio Block, you can:
 - Add a clear button with gr.ClearButton() to reset the page of the web app
 
 ```python
+asr_transcribe_fn = functools.partial(asr_transcription, oai_client)
+chat_completion_fn = functools.partial(chat_completion, oai_client)
+
+# gradio
 with gr.Blocks(theme=gr.themes.Default(primary_hue="blue"), fill_height=True) as demo:
 
     # add title and description
@@ -247,12 +235,12 @@ with gr.Blocks(theme=gr.themes.Default(primary_hue="blue"), fill_height=True) as
   
     # update functions
     inp_audio.change(
-        fn = asr_transcription,
+        fn = asr_transcribe_fn,
         inputs = inp_audio,
         outputs = inp_text
       )
     inp_text.change(
-        fn = chat_completion,
+        fn = chat_completion_fn,
         inputs = inp_text,
         outputs = out_resp
       )

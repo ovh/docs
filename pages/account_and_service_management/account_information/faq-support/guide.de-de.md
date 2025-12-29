@@ -1,20 +1,50 @@
 ---
 title: OVHcloud Support FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zum OVHcloud Support
-updated: 2025-09-12
+updated: 2025-10-30
 ---
 
 <style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
     cursor: pointer;
+    list-style: none;
 }
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
 }
-details[open]>summary::before {
-    content:'\25BC';
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 </style>
 
@@ -94,7 +124,7 @@ Wenn das Problem weiterhin besteht, wenden Sie sich bitte an unser Support-Team.
 
 > [!success]
 >
-> **Tipps und Tricks**
+> **Regionen**
 >
 > Sollten Sie Probleme bei der Verbindung mit Ihrem Kundencenter haben, können Sie auch versuchen, sich über eines der folgenden Gateways anzumelden:
 >
@@ -141,7 +171,7 @@ Wenn Sie Dateien teilen müssen, können Sie sie direkt in Ihr Ticket über das 
 
 Wenn Sie uns ein Video senden möchten, beachten Sie, dass nur das Format gif akzeptiert wird und die Größe 1024 MB nicht überschreiten darf. Wenn Ihr Video in einem anderen Format ist oder größer ist, können Sie eine der folgenden Methoden wählen:
 
-- Antworten Sie per E-Mail (von der E-Mail-Adresse, die mit Ihrem OVHcloud-Konto verknüpft ist) auf das Support-Ticket und fügen Sie das Video als Anhang hinzu.
+- Antworten Sie per E-Mail (von der E-Mail-Adresse, die mit Ihrem OVHcloud Kunden-Account verknüpft ist) auf das Support-Ticket und fügen Sie das Video als Anhang hinzu.
 - Laden Sie das Video auf eine Plattform wie YouTube hoch und teilen Sie den Link im Ticket.
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2024-09-03
+updated: 2025-11-12
 ---
 
 <style>
@@ -26,7 +26,7 @@ Retrouvez ici les questions les plus fréquemment posées concernant les service
 
 /// details | Le tarif de la solution Load Balancer  varie en fonction de la capacité en bande passante. Comment cela peut-il être paramétré / modifié ?
 
-Le Load Balancer est proposé en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Load Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
+Le Load Balancer est proposé en différentes tailles (S/M/L/XL) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Load Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
 
 ///
 
@@ -51,7 +51,7 @@ Oui cette [fonctionnalité](https://docs.openstack.org/octavia/latest/user/guide
 
 /// details | Comment est mise en oeuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
 
-Oui, nous proposons le mode Active/Standby pour toutes les offres S/M/L.
+Oui, nous proposons le mode Active/Standby pour toutes les offres S/M/L/XL.
 
 ///
 

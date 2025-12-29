@@ -1,79 +1,111 @@
 ---
-title: "Configurer un service OVHcloud Load Balancer avec les zones"
-excerpt: "Utilisez les zones afin d'augmenter la disponibilité et diminuer la latence"
-updated: 2025-07-30
+title: Configurer le Load Balancer OVHcloud en plusieurs zones
+excerpt: Utilisez les zones pour augmenter la disponibilité et réduire la latence
+updated: 2025-12-02
 ---
 
 ## Objectif
 
-Le service OVHcloud Load Balancer est localisé dans une ou plusieurs zone(s) de disponibilité, définie(s) lors de la souscription au service.
+Le Load Balancer OVHcloud est un composant essentiel pour répartir le trafic réseau sur votre infrastructure. Pour garantir le meilleur niveau de service et une expérience utilisateur optimale, il est essentiel de déployer votre Load Balancer sur plusieurs zones de disponibilité (AZ). Lors de l'abonnement à un service Load Balancer OVHcloud, **vous pouvez choisir une ou plusieurs zones de disponibilité** dans lesquelles le service sera situé. Vous avez également la possibilité **d'ajouter des zones supplémentaires** à un service existant.
 
-Vous pouvez commander des zones supplémentaires pour votre service.
-Vous augmentez ainsi la disponibilité de votre service Load Balancer en cas d'indisponibilité d'une zone.
+La configuration de votre service Load Balancer OVHcloud sur plusieurs zones de disponibilité vous aidera à **accroître la fiabilité** de votre service Load Balancer en cas de panne d'une zone, ou à **réduire la latence** pour vos utilisateurs en dirigeant le trafic vers le service le plus proche d'eux.
 
-Via une configuration adéquate, vous pouvez également utiliser plusieurs zones afin de minimiser la latence pour vos visiteurs.
+Ce guide explique comment configurer et utiliser ces zones multiples afin d'obtenir des performances et une résilience améliorées.
 
-**Découvrez comment commander et gérer des zones supplémentaires.**
+> [!primary]
+>
+> En raison de restrictions techniques, lors de la configuration d'un Load Balancer OVHcloud avec deux zones, si l'une se trouve dans une région APAC et l'autre non, le trafic sera préférentiellement dirigé via la zone non APAC, même lorsque le Load Balancer est hors service dans cette zone.
+>
+> Ce comportement est spécifique aux configurations transcontinentales impliquant des zones APAC. Par conséquent, nous ne recommandons pas de configurer votre Load Balancer de cette manière.
+>
+> Vous pouvez trouver une liste des régions OVHcloud sur [notre site web](/links/infrareg).
+>
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être connecté à l'[API OVHcloud](/links/api).
+- Un service [Load Balancer OVHcloud](/links/network/load-balancer)
+- Accès à l'[espace client OVHcloud](/links/manager)
+
+## Introduction aux zones de disponibilité
+
+### Configuration multi-régions
+
+La répartition de charge entre plusieurs régions offre **une meilleure reprise après sinistre en cas de pannes à un niveau régional**, et permet des points d'entrée mondiaux qui **réduisent considérablement la latence** en dirigeant les utilisateurs vers le **serveur le plus proche**. La plupart des régions n'ont qu'une seule zone de disponibilité, ce qui signifie que travailler avec plusieurs zones implique généralement de travailler avec plusieurs régions.
+
+Grâce à un **réseau Anycast**, le Load Balancer OVHcloud peut rediriger les requêtes provenant d'une région spécifique vers des serveurs backend géographiquement proches.
+
+Pour cela, vous devez spécifier un frontend dans chaque zone utilisant une ferme dans la même zone. Cela vous permettra de déclarer des serveurs backend dans différentes fermes par zone et de contrôler lesquels sont utilisés dans chaque zone.
+
+![Fonctionnement avec plusieurs zones et plusieurs fermes](images/multi_zones_multi_backends.png){.thumbnail}
+*Diagramme représentant un Load Balancer répartissant le trafic sur deux régions*
+
+Par exemple, si vous avez des serveurs backend dans les régions Gravelines (GRA) et Beauharnois (BHS), vous pouvez commander un service Load Balancer dans les zones `GRA` et `BHS` et configurer :
+
+- Un frontend dans la zone GRA avec une ferme par défaut dans la zone GRA contenant des serveurs dans le datacenter de Gravelines.
+- Un frontend dans la zone BHS avec une ferme par défaut dans la zone BHS contenant des serveurs dans le datacenter de Beauharnois.
+
+### Régions multi-AZ
+
+OVHcloud déploie actuellement son plan stratégique pour les régions multi-zones de disponibilité (multi-AZ), débutant par le lancement de Paris 3-AZ en avril 2024 et Milan 3-AZ en novembre 2025.
+
+La répartition de charge entre plusieurs zones de disponibilité (AZ) au sein de la même région, à la différence d'une configuration multi-régions, garantit une **haute disponibilité**, une **haute performance** et une **résilience face aux pannes locales**, en utilisant des **connexions à faible latence** et **Anycast** pour distribuer le trafic de la manière la plus efficace.
+
+![Différence entre les déploiements multi-régions et multi-AZ](images/multi-az.png){.thumbnail}
+*Diagramme représentant un load balancer répartissant le trafic sur les zones d'une seule région multi-AZ*
 
 ## En pratique
 
-### Commander une zone supplémentaire
+### Ajouter une zone
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](/links/manager). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Network`{.action} puis sur `Load Balancer`{.action}.
+Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](/links/manager). Dans la section `Network`{.action}, sous `Services réseau`{.action} cliquez sur `Load Balancer`{.action}.
 
-Sélectionnez votre Load Balancer puis, dans l'onglet `Accueil`{.action} et le menu `Configuration`{.action}, cliquez sur `Ajouter`{.action} dans la partie « Zones de disponibilité ».
+Sélectionnez votre Load Balancer, puis dans l'onglet `Accueil`{.action}, section `Configuration`{.action}, cliquez sur le bouton `...`{.action} sur la droite de "Zones de disponibilité" et choisissez `Ajouter`{.action}.
 
-![Ajouter une zone load balancer depuis le manager](images/add_Zone_IPLB.png){.thumbnail}
+![Ajout d'une zone Load Balancer depuis le manager](images/add_Zone_IPLB.png){.thumbnail}
 
-Sélectionnez alors le(s) zone(s) que vous souhaitez commander et cliquez sur `Ajouter`{.action}.
- 
-![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB.png){.thumbnail}
+Ensuite, sélectionnez la (ou les) zone(s) que vous souhaitez commander et cliquez sur `Ajouter`{.action}.
 
-Un bon de commande est généré, il vous faudra le régler.
+![Sélection d'une zone Load Balancer depuis le manager](images/Select_Zone_IPLB.png){.thumbnail}
 
-![Payer la commande zone load balancer depuis le manager](images/Paybill_Zone_IPLB.png){.thumbnail}
+Une commande sera générée, que vous devrez régler.
+
+![Paiement de la commande de zone Load Balancer depuis le manager](images/Paybill_Zone_IPLB.png){.thumbnail}
 
 #### Depuis l'API OVHcloud
 
-Pour commander une zone via l'API, vous devez tout d'abord créer un panier (*cart*)
+Pour commander une zone via l'API, vous devez d'abord créer un panier ("cart").
 
 > [!api]
 >
 > @api {v1} /order POST /order/cart
 >
 
-Veuillez noter le numéro du panier (*cart*), il vous sera utile pour la suite.
+Veuillez noter l'ID du panier ("cart"), il sera utile plus tard dans le processus de commande.
 
-Assignez-vous le panier via l'appel suivant :
+Ensuite, attribuez le panier à votre compte OVHcloud via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
-Vous pouvez lister les options disponibles sur votre service Load Balancer via :
+Vous pouvez lister les options disponibles sur votre service Load Balancer via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Quand vous avez trouvé l'option correspondant à la zone souhaitée, vous pouvez l'ajouter à votre panier (*cart*) via :
+Lorsque vous avez trouvé l'option correspondant à la zone souhaitée, vous pouvez l'ajouter à votre panier ("cart") via l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
-Enfin, vous pouvez valider votre panier (*cart*) via :
+Enfin, vous pouvez valider votre panier ("cart") via l'appel suivant :
 
 > [!api]
 > @api {v1} /order POST /order/cart/{cartId}/checkout
@@ -81,47 +113,23 @@ Enfin, vous pouvez valider votre panier (*cart*) via :
 
 N'oubliez pas de régler le bon de commande ainsi généré.
 
-### Ajouter une zone
+### Configurer votre frontend
 
-Une fois que la commande de votre zone est finalisée, vous pouvez l'ajouter depuis votre espace client OVHcloud.
+Une fois votre commande de zone finalisée, vous pouvez l'ajouter à votre Load Balancer depuis l'espace client OVHcloud.
 
-Sélectionnez le Load Balancer que vous souhaitez modifier puis créez un nouveau frontend, ou éditez-en un existant, via l'onglet `Frontends`{.action}
+Sélectionnez le Load Balancer que vous souhaitez modifier, puis créez un nouveau frontend, ou modifiez-en un existant, via l'onglet `Frontends`{.action}.
 
-Dans le champ `Datacenter`{.action}, choisissez la zone que vous souhaitez associer à votre frontend.
+Dans le champ `Datacenter`{.action}, choisissez la zone que vous souhaitez associer à votre frontend. 
 
-![Choix de la zone](images/Select-Datacenter.png){.thumbnail}
+Si vous souhaitez utiliser plusieurs zones, vous pouvez choisir la zone spéciale `ALL`. Cette zone spéciale vous permettra de déployer la même configuration sur toutes les zones souscrites à votre service Load Balancer, ce qui vous épargne de dupliquer la configuration pour toutes les zones.
 
-Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Modifier`{.action} selon que vous configurez un nouveau frontend ou un frontend existant.
+![Sélection de la zone](images/Select-Datacenter.png){.thumbnail}
 
-N'oubliez pas de déployer la configuration. Pour ce faire, dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquez sur `Appliquer la configuration`{.action}.
+Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Modifier`{.action}, selon que vous configurez un nouveau frontend ou modifiez un existant.
 
-![Application d'une Configuration d'un Load Balancer](images/apply-configuration.PNG){.thumbnail}
+N'oubliez pas de déployer la configuration. Pour cela, cliquez sur `Appliquer la configuration`{.action} dans la bannière rappelant que la configuration n'est pas appliquée.
 
-### Utiliser plusieurs zones
-
-#### Pour la haute disponibilité
-
-Si vous voulez utiliser plusieurs zones afin d'obtenir une haute disponibilité, vous pouvez utiliser la valeur `Tous (ALL)` lorsque vous déclarez un frontend ou une ferme de serveurs.
-
-![utiliser plusieurs zones](images/Edit-frontend-All-iplb.png){.thumbnail}
-
-Cette valeur spéciale `Tous (ALL)` va permettre de déployer la même configuration sur toutes les zones souscrites sur votre service Load Balancer, et vous évite de dupliquer la configuration pour toutes les zones.
-
-#### Pour réduire la latence
-
-Si le but est de réduire la latence, vous pouvez diriger les requêtes venant depuis le load balancer de la zone1 vers des serveurs backends proches géographiquement de cette zone1.<br>
-De façon similaire, vous pouvez diriger les requêtes venant depuis le load balancer de la zone2 vers des serveurs backends proches de la zone2.
-
-Afin de réaliser cela, il vous faut spécifier un frontend dans chaque zone qui utilise une ferme dans la même zone.<br>
-Cela va vous permettre de déclarer les serveurs backends dans des fermes différentes par zone et de contrôler les serveurs backends utilisés en fonction de la zone.
-
-![Fonctionnement avec plusieurs zones et plusieurs fermes](images/multi_zones_multi_backends.png){.thumbnail}
-
-Par exemple, si vous avez des serveurs backends dans les datacentres de Gravelines (gra) et Beauharnois (bhs),
-vous pouvez commander un service Load Balancer dans les zones `gra` et `bhs` et configurer :
-
-- un frontend dans la zone gra avec une ferme (farm) par défaut dans la zone gra qui contient des serveurs dans le datacentre de Gravelines;
-- un frontend dans la zone bhs avec une ferme (farm) par défaut dans la zone bhs qui contient des serveurs dans le datacentre de Beauharnois.
+![Application d'une configuration Load Balancer](images/apply-configuration.PNG){.thumbnail}
 
 ## Aller plus loin
 

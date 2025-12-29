@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2025-08-27
+updated: 2025-10-27
 ---
 
 ## Objectif
@@ -61,8 +61,6 @@ Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont
 
 ### Gestion des politiques
 
-<a name="create-policy"></a>
-
 #### Créer une politique
 
 Cliquez sur le bouton `Créer une politique`{.action}.
@@ -77,15 +75,15 @@ Le formulaire suivant s'affiche :
 - **Ressources** : ajoutez des ressources ou des groupes de ressources à couvrir par la politique. Les ressources disponibles sont filtrées par type de produit préalablement sélectionné.
 - **Actions**.
 
-Il existe 4 façons d'ajouter des actions :
+**Il existe 4 façons d'ajouter des actions :**
 
-- En activant l'option `Autoriser toutes les actions`{.action}
+##### 1 - Activer l'option « Autoriser toutes les actions »
 
 ![Créer une politique](images/create_a_policy_02.png){.thumbnail}
 
 Lors de l'activation de cette option, vous autorisez toutes les actions liées aux produits sélectionnés. Cela inclut toutes les actions existantes ainsi que les actions ajoutées à l'avenir pour ces catégories de produits.
 
-- En sélectionnant un groupe de permissions managées
+##### 2 - Sélectionner un groupe de permissions managées
 
 Nous mettons à disposition des groupes de permissions préconfigurées et managées par OVHcloud.
 Vous pouuvez sélectionner un ou plusieurs groupes en les sélectionnant parmi la liste disponible.
@@ -96,7 +94,7 @@ Le détail du contenu des groupes de permissions managées est disponible dans l
 
 Il est possible d'utiliser les groupes d'actions managées en complément d'actions unitaires.
 
-- En ajoutant manuellement des actions
+##### 3 - Ajouter manuellement des actions
 
 Si vous connaissez le nom de l'action, vous pouvez l'ajouter manuellement.
 
@@ -110,7 +108,7 @@ Par exemple, l'ajout de `vps:apiovh:ips/*` accordera les droits suivants :
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- En sélectionnant des actions dans la liste
+##### 4 - Sélectionner des actions dans la liste
 
 Des actions peuvent être sélectionnées dans la liste.
 
@@ -127,7 +125,27 @@ Les actions disponibles dépendent du type de ressource et appartiennent à l'un
 Un champ de recherche est disponible pour vous aider à identifier une action spécifique dans la liste.
 
 > [!primary]
-> Les actions liées aux produits IP et vRack, ainsi que les actions liées à la commande et la facturation, ne sont pas encore disponibles dans l'IAM OVHcloud.
+> Les actions liées à la commande et la facturation ne sont pas encore disponibles dans l'IAM OVHcloud.
+
+#### Conditions sur les politiques
+
+Il est possible d'ajouter des conditions sur les politiques IAM.
+
+Une politique avec des conditions est valide lorsque toutes les conditions sont validées.
+
+Il est possible d'appliquer des conditions sur :
+
+- un tag de la ressource ;
+- le nom de la ressource ;
+- le type de produit ;
+- l'adresse IP de la requête ;
+- le jour de la semaine ;
+- la date ;
+- l'heure.
+
+![Créer une politique](images/conditions.png){.thumbnail}
+
+Une fois ajoutées, les conditions sont affichées avec la syntaxe [utilisée dans l'API](/pages/account_and_service_management/account_information/iam-policies-api)
 
 #### Modifier une politique
 

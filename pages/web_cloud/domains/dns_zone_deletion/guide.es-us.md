@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo eliminar una zona DNS OVHcloud?"
 excerpt: "Descubra cómo eliminar una zona DNS para un dominio desde el área de cliente de OVHcloud"
-updated: 2025-04-28
+updated: 2025-10-14
 ---
 
 ## Objetivo
@@ -23,7 +23,6 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 > [!primary]
 >
 > La creación, modificación o eliminación de una zona DNS en el [área de cliente de OVHcloud](/links/manager) es totalmente gratuita.
->
 
 **Descubra cómo eliminar una zona DNS en OVHcloud para un dominio desde el área de cliente de OVHcloud.**
 
@@ -36,7 +35,6 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 > [!primary]
 >
 > Eliminar una zona DNS no elimina el registro del nombre de dominio al que está asociada. Así pues, no perderá el dominio eliminando una zona DNS asociada al mismo.
->
 
 ## Procedimiento
 
@@ -49,64 +47,36 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 > Efectúe un [WHOIS](/links/web/domains-whois) de su dominio para saber si la zona DNS activa de su dominio es la que tiene en OVHcloud o no.
 >
 > Si la zona DNS activa para su dominio es la que tiene en OVHcloud y desea sustituirla por una zona DNS alojada en otro proveedor, consulte nuestra guía "[Modificar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)" antes de eliminar cualquier zona DNS.
->
-
-### 1 - Iniciar la eliminación de una zona DNS de OVHcloud
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y luego en `Mis soluciones y servicios`{.action}.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+>> En la tabla de la página que se muestra, haga clic en el botón `...`{.action} a la derecha de la zona DNS que desea cancelar, y luego en `Dar de baja mi servicio`{.action}.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> En la parte derecha (o debajo de la tabla, en función de la resolución de la pantalla), haga clic en el botón `Eliminar la zona DNS`{.action}.
+>> En la nueva página que aparece, indique la razón de su solicitud de cancelación y su proyecto, y luego haga clic en `Aceptar`{.action}.
 >>
->> ![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
+>> ![Cancelar el servicio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> En la nueva ventana, revise los mensajes que se muestran en el interior.
+>> La cancelación de su servicio tendrá lugar en la **Fecha de aplicación** indicada en la tabla "Gestión de mis ofertas y servicios". Si no ve aparecer el estado "Baja programada", actualice la página.
 >>
->> ![delete the DNS zone validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone-confirmation.png){.thumbnail}
->>
->> Haga clic en el botón `Aceptar`{.action} para finalizar la primera fase de eliminación de la zona DNS.
-
-### 2 - Confirmar la eliminación de una zona DNS de OVHcloud
-
-Después del paso anterior, se envía un mensaje de correo electrónico para confirmar la eliminación de la zona DNS a la dirección de correo electrónico del contacto "[Administrador](/pages/account_and_service_management/account_information/managing_contacts)" de la zona DNS de OVHcloud.
-
-> [!success]
->
-> Si no recibe el mensaje de correo electrónico, compruebe si hay mensajes de correo electrónico no deseado.
->
-
-Este mensaje de correo electrónico contiene dos enlaces válidos durante **72** horas desde el momento en que haya completado el paso 1 de esta guía.
-
-Haga clic en el **enlace de validación** para continuar con la eliminación de la zona DNS de OVHcloud o en el **enlace de cancelación** para detener la eliminación de la zona DNS de OVHcloud.
-
-> [!primary]
->
-> Si la redirección de vínculos no funciona, haga un **copiar/pegar** del vínculo en la barra de direcciones URL de su navegador de Internet. Si es necesario, vuelva a conectarse a su [área de cliente de OVHcloud](/links/manager).
->
-
-Si hace clic en el enlace de validación, será redirigido a una nueva página de OVHcloud en la que se le preguntará por qué quiere eliminar la zona DNS de OVHcloud.
-
-![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
-
-Una vez que haya completado el formulario y esté seguro de querer eliminar definitivamente la zona DNS de OVHcloud, haga clic en el botón `Aceptar`{.action} en la parte inferior de la página.
-
-Para confirmar la eliminación, se enviará un último mensaje de confirmación a la dirección de correo electrónico del contacto "[Administrador](/pages/account_and_service_management/account_information/managing_contacts)" de la zona DNS de OVHcloud.
+>> > [!primary]
+>> >
+>> > Si desea eliminar inmediatamente una zona DNS de su [área de cliente de OVHcloud](/links/manager), realice los 4 pasos para solicitar la cancelación en la fecha de aplicación, y luego contacte con el soporte de OVHcloud creando un ticket de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > En el ticket, indique la zona DNS afectada y exprese claramente su deseo de eliminarla inmediatamente sin esperar a la fecha de aplicación.
 
 ## Más información
 

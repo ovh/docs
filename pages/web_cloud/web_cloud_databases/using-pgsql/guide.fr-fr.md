@@ -33,7 +33,7 @@ Afin de vous connecter à votre base, assurez vous de ceci :
 
 Toutes ces informations sont disponibles dans votre [Espace Client Web](/links/manager).
 
-Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
+Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ### Connexion en ligne de commande
 

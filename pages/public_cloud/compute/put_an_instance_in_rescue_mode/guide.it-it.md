@@ -41,7 +41,7 @@ Una volta riavviato il Rescue mode, una casella di informazioni mostrerà i meto
 
 La tua **password della modalità Rescue** temporanea verrà visualizzata solo nella console VNC. Clicca sull'istanza nella tabella e poi accedi alla scheda `Console VNC`{.action} per recuperarla.
 
-<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Accedi ai tuoi dati
 

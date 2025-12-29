@@ -23,7 +23,7 @@ As credenciais são enviadas por e-mail durante a criação do Hosted Managed Ba
 endereço IP/Nome: pcc-xxx-xxx-xxx-xxx.ovh.com nome de utilizador: admin palavra-passe: xxxxxx
 ```
 
-Este documento da VMware especifica as diferentes portas que deve abrir na sua firewall para, por exemplo, aceder à consola: [Acesso consola](https://kb.vmware.com/kb/1012382){.external-link}
+Este documento da VMware especifica as diferentes portas que deve abrir na sua firewall para, por exemplo, aceder à consola: [Acesso consola](https://kb.vmware.com/kb/1012382)
 
 ### Utilização do web client HTML5
 

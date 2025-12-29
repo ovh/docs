@@ -1,7 +1,7 @@
 ---
 title: Comment déménager mon accès xDSL/Fibre
 excerpt: "Découvrez comment demander le déménagement de votre offre d'accès à Internet OVHcloud depuis votre espace client"
-updated: 2025-04-28
+updated: 2025-10-29
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse
 
 #### Choix de la nouvelle adresse
 
-##### ** Si vous disposez déjà du numéro de ligne à la nouvelle adresse**
+##### **Si vous disposez déjà du numéro de ligne à la nouvelle adresse**
 
 Cochez la case « Testez avec le numéro de téléphone correspondant à votre nouvelle adresse. » puis renseignez ce numéro dans le champ situé en dessous.
 <br>Cliquez ensuite sur le bouton `Valider`{.action}.
@@ -84,7 +84,7 @@ Lors de votre demande de déménagement, vous avez la possibilité de conserver 
 
 Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action} correspondant à l'offre souhaitée en bas du tableau.
 
-Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP supplémentaires, comptes Exchange, nom de domaine, etc...), prenez soin de vérifier qu'elles sont intégralement reprises à cette étape. 
+Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP supplémentaires, comptes Exchange, nom de domaine, etc.), prenez soin de vérifier qu'elles sont intégralement reprises à cette étape. 
 
 > [!primary]
 >
@@ -95,6 +95,10 @@ Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP su
 > - Compte(s) Exchange
 >
 > Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vous pourrez soit résilier ces options ou choisir de les conserver aux tarifs en vigueur.
+>
+> L'adresse IP publique de l'accès ne peut pas être conservée après le déménagement.
+>
+> Cependant, si un [bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) est actif sur l'offre actuelle, il sera automatiquement conservé. Vous recevrez un e-mail indiquant la date de migration des adresses IP du bloc vers le nouvel accès, et vous aurez la possibilité d'avancer cette migration via API si besoin.
 
 ![Choix de l'offre](images/move07-2022.png){.thumbnail}
 
@@ -147,5 +151,7 @@ L'accès à Internet de l'ancienne adresse est maintenu jusqu'à la livraison de
 C'est pourquoi, pendant une période, vous disposerez d'un accès à Internet fonctionnel aux deux adresses, ceci afin de vous assurer une continuité de service pendant la transition entre vos deux locaux ou logements.
 
 ## Aller plus loin
+
+[VoIP / Accès Internet - Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

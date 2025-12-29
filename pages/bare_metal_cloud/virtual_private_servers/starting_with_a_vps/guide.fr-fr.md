@@ -129,7 +129,7 @@ Ces options font référence à des services VPS supplémentaires pour les sauve
 >> Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
 >>
 
-Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-servers-backups).
+Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 #### Mon offre
 

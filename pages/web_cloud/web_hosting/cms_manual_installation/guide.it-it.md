@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installare manualmente un CMS sul tuo hosting"
 excerpt: "Questa guida ti mostra come installare manualmente un CMS sul tuo hosting"
-updated: 2024-03-28
+updated: 2025-10-28
 ---
 
 ## Obiettivo
@@ -114,9 +114,9 @@ Per installare un CMS sulla tua offerta di [hosting Web](/links/web/hosting), so
 
 #### 1.1 - Verifica la dichiarazione della "cartella di root"
 
-La "cartella di root" corrisponde alla directory in cui verrà installato il tuo futuro CMS sul tuo hosting. Ti consigliamo di scegliere una directory vuota per evitare conflitti con altri potenziali multisiti.
+La "cartella di root" corrisponde al percorso in cui verrà installato il tuo futuro CMS sull'hosting. Ti consigliamo di scegliere una directory vuota per evitare conflitti con i tuoi eventuali altri siti web.
 
-Consulta la nostra documentazione che descrive [come aggiungere un multisito su un hosting Web](/pages/web_cloud/web_hosting/multisites_configure_multisite) per definire la cartella di root da utilizzare con il tuo CMS.
+Consulta la nostra documentazione che descrive [come creare un sito web sull'hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) per definire la directory radice da utilizzare con il tuo CMS.
 
 > [!primary]
 >

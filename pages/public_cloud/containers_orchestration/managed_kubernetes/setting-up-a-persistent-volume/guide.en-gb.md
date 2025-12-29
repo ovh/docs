@@ -1,7 +1,7 @@
 ---
 title: Persistent Volumes on OVHcloud Managed Kubernetes Service
 excerpt: 'Learn how to create Persistent Volume Claims (PVCs) and Persistent Volumes (PVs), attach a Pod to a PVC, modify the PV reclaim policy, and delete the created objects.'
-updated: 2025-09-29
+updated: 2025-12-08
 ---
 
 This tutorial goes through the setup of a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on an OVHcloud Managed Kubernetes Service.
@@ -173,7 +173,7 @@ The following storage classes are currently supported on OVHcloud Managed Kubern
 
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size.
-* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not supported yet on [MKS Standard plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#storage-classes)).
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not yet supported on the MKS Standard plan. Please refer to the limitations described in the `Multi availability zones deployments` section of our [Known limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans) guide).
 * `*-luks` storage classes add a layer of encryption on top of the storage class. It is only available in specific regions: see the [related GitHub issue](https://github.com/ovh/public-cloud-roadmap/issues/307) for more information.
 
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.

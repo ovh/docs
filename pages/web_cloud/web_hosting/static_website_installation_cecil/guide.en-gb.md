@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installation and configuration of Cecil, a static site generator (SSG) in PHP"
 excerpt: "This tutorial explains how Cecil allows you to create your static website using a modern template engine (Jamstack)"
-updated: 2023-12-08
+updated: 2025-10-27
 ---
 
 ## Objective
@@ -24,14 +24,14 @@ A website essentially composed of static web pages guarantees a better loading t
 - Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-- Configure your DNS zone to point your domain name (or subdomain) to your web hosting plan. This is particularly useful if you would like to host several websites in [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your shared web hosting plan.
+- Configure your DNS zone to point your domain name (or subdomain) to your web hosting. This is particularly useful if you want to host multiple [websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your web hosting plan.
 - Install [Composer](https://getcomposer.org/) with the file `composer.phar` in the root of your web hosting or in the target folder of your domain name.
 
 ## Instructions
 
-You can use [shared web hosting](/links/web/hosting) to declare domains or subdomains on multiple websites. You need a domain or subdomain to deploy your website created with **Cecil**.
+A [shared web hosting](/links/web/hosting) allows you to declare domains or subdomains on the websites it contains. A domain or subdomain is required to deploy your website created with **Cecil**.
 
-To help you declare a domain or subdomain on multiple websites on your hosting plan, go to our page “[Hosting multiple websites on your hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+To help you declare a domain or subdomain on one of the websites on your hosting, see our page " [Sharing your hosting between multiple websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ".
 
 ### Create the directory where your files will be located
 
@@ -94,7 +94,7 @@ You can now see the result by going to your domain name:
 
 To view your website's results in your browser, change the way your domain or subdomain points to the `_site` directory you created when you installed **Cecil**.
 
-If your domain name or subdomain is hosted at OVHcloud, please refer to our guides for [DNS configuration](/pages/web_cloud/domains/dns_zone_edit) and setting up [multisites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+If your domain name or subdomain is hosted with OVHcloud, see our guides on [DNS configuration](/pages/web_cloud/domains/dns_zone_edit) and setting up a [website on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 ### Configure your website
 

@@ -1,150 +1,205 @@
 ---
-title: Migrating email accounts using OVH Mail Migrator
-excerpt: Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool
-updated: 2023-08-29
+title: 'Migrate email accounts via OVHcloud Mail Migrator'
+excerpt: 'Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool'
+updated: 2025-11-25
 ---
+
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.w-300 {
+  max-width:300px !important;
+}
+</style>
 
 ## Objective
 
-[OVH Mail Migrator](https://omm.ovh.net/) is a tool created by OVHcloud. You can use it to migrate your email accounts to your OVHcloud email accounts, or to an external email service. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email accounts.
+[OVHcloud Mail Migrator](/links/web/omm) is a tool created by OVHcloud to meet the need for reversibility. It allows you to migrate your email accounts to your OVHcloud email addresses or an external email service. The process supports different types of content, such as emails, contacts, calendars and tasks, as long as these are compatible with your email addresses.
 
-**Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool.**
+**Find out how to migrate your email accounts to OVHcloud using our OVHcloud Mail Migrator tool.**
 
 ## Requirements
 
-- An email service with OVHcloud: [Exchange](/links/web/emails) or MX Plan (via the MX Plan or included in an [OVHcloud Web Hosting](/links/web/hosting))
-- Login details for the email accounts you want to migrate (the source accounts)
-- Login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts)
+- An external email service or one from OVHcloud, such as a [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) offer, or MX Plan (via the MX Plan offer alone or included in a [OVHcloud web hosting offer](/links/web/hosting)).
+- Login details for the email accounts you want to migrate (the source accounts).
+- Login details for the destination email accounts.
 
 ## Instructions
 
-**OVH Mail Migrator** can be accessed from the page <https://omm.ovh.net/>. It handles 3 types of migrations:
+To access OMM, go to <https://omm.ovhcloud.com/>.
 
-- [Single migration](#standalone): To migrate an email account to another email account. This solution is recommended for migrating one or more email accounts (the steps must be repeated for each account).
-- [Migration by file](#file): To migrate the content of an email account, previously stored in a file, to another email account. This process is compatible with PST, ICS and VCF file formats.
-- [Multiple migrations (project mode)](#project): Is used to handle several migrations as part of a single project. This solution is aimed at people who are looking to migrate a large number of email accounts.
+![omm](images/omm-01.png){.thumbnail .w-600}
 
-### Single migration <a name="standalone"></a>
+### Create a migration project <a name="create-project"></a>
 
-#### Launching a migration
+Before starting a migration, it is necessary to create a project. This project will allow you to start one or more migrations and to follow them.
 
-On the home page <https://omm.ovh.net/>, click on `New Migration`{.action} in the horizontal `Migration`{.action} menu.
+Click on `New migration`{.action} to begin creating your project.
 
-![omm](images/omm-migration-create.png){.thumbnail}
+**Project contact email**: Enter an email address that will be used to receive the credentials and the tracking notifications of your migrations. It is not recommended to enter one of the email addresses that will be migrated in your project.
+**Project password**: Enter a password that will be used to connect to your project. It must contain at least 10 characters and include at least 1 special character, 1 digit, 1 uppercase and 1 lowercase letter.
 
-On the page that opens, you can now fill in the information for each section.
+Click on `Create my project`{.action} to start creating the project.
 
-- **Account:** Enter the information for the **source account** and the **destination account**. As a reminder, the contents of the **source account** will be migrated to the **destination account**.
+On the project contact email address, you will receive a confirmation email containing the unique project identifier and a link to access it.
 
-|Information|Description|
-|---|---|
-|Server type|Select the server type that matches your accounts. If one of them is an OVHcloud address, you can choose **Hosted by OVHcloud (Autodetect)**. The account information will be filled in automatically, excluding the password.|
-|Server URL|Enter the URL address of the server on which your accounts are hosted. This field may be filled in automatically when the server type is chosen.|
-|Login|Enter the full email address.|
-|Administrator account with delegation|This field appears for certain server types only.|
-|Password|Enter the password for your email address.|
-
-- **Options**: Select the elements you want to migrate. Some content may be unavailable, depending on the server type you have chosen.
-
-- **Information**: Enter an email address to receive notifications on the migration’s progress.
+![omm](images/omm-create-project-01.png){.thumbnail .w-600}
 
 > [!primary]
 >
-> The migration does not affect the source account, the data is not deleted. This is a copy of the source account in the state it was in when the migration was launched.
+> If there is no activity for 60 days, the migration project and all associated data will be automatically deleted.
 
-Click `Start Migration`{.action} once you have entered this information. If the information is correct, the process will begin.
+### Create a new migration <a name="create-migration"></a>
 
-In the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} shown, and to wait until the process is complete. The amount of time this will take varies depending on the number of elements to be migrated. If you want to return to this screen, please continue to the section on “Tracking a migration” below.
+Once your project is created, log in to it from the [OMM](/links/web/omm) homepage:
 
-#### Tracking a migration  
+- Click on `Track a migration`{.action}.
+- Enter the `Project ID` received by email.
+- Enter the `Project password` you set at its creation.
+- Click on `Connect to project`{.action} to complete.
 
-There are two ways you can track the progress of a single migration:
+![omm](images/omm-create-migration-01.png){.thumbnail .w-600}
 
-- You will be notified about the migration’s progress via email.
-- On the page <https://omm.ovh.net/>, click on `Track / Synchronise`{.action} in the horizontal `Migration`{.action} menu. You will need to enter the `Migration ID`{.action} and the `Source account`{.action} concerned.
+You are now on the project homepage, which will allow you to start your first migration.
 
-![omm](images/omm-migration-track.png){.thumbnail}
+- Click on `New migration`{.action} in the top left of the table.
 
-In the page that opens, you can track the progress of your migration. There will be a message stating that the process is yet to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
+![omm](images/omm-create-migration-02.png){.thumbnail .w-600}
 
-- `Stop the process`{.action}: This will stop the migration. Any elements already migrated will remain in the destination account.
-- `Delete migrated items`{.action}: This is used to delete any elements that have already been migrated to the destination account. You can delete elements from a specific synchronisation point onwards.
-- `Synchronise`{.action}: This allows new elements that were not migrated during a previous synchronisation to be recovered between the source account and the destination account. This action can be viewed as a migration of the missing elements from the source account to the destination account.
+On the new page that appears, enter the connection information of the source account and the destination account to schedule the migration or to start it immediately. To recall, the content of the **source account** will be migrated to the **destination account**.
 
-### Migration by file <a name="file"></a>
+Before starting your migration, it is important to know the 3 types of accounts that can be migrated and where you can migrate to:
 
-#### Launching a migration
+- **OVHcloud**: The `Autodetect` option is recommended if you need to migrate an account hosted on one of the OVHcloud email offers. If you have a large number of OVHcloud email accounts, select one of the following offers: `MX plan`, `Email Pro`, `Exchange` or `Zimbra`. You will be asked to connect to the OVHcloud account associated with the offer concerned by the migration. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
+- **Others**: They refer to email services outside of OVHcloud. You will find a non-exhaustive list of email services supported by OMM. If the type of service of your email account is not listed, use the `IMAP` or `POP` protocols, which are compatible with most email servers.
+- **Importing files**: It is possible to migrate the content of PST, ICS, CSV, and XML rules files via OMM to a destination email account. When this function is selected, simply drag and drop your document into the designated area or browse your files using the `Browse your files`{.action} button.
 
-On the home page <https://omm.ovh.net/>, click on `New PST/ICS/VCF migration`{.action} in the horizontal `PST/ICS/VCF`{.action} menu.
+![omm](images/omm-create-migration-03.png){.thumbnail .w-600}
 
-This method requires the file containing the content you want to migrate to the email account.
+Complete the information according to the type of account:
 
-![omm](images/omm-migration-files.png){.thumbnail}
+- **Source account**
+    - **Account type**: Select the type of source account.
+    - **E-mail**: Enter the source account email address.
+    - **Password**: Enter the source account password.
+    - **Server URL** / **Server domain** *(depending on the type)*: Enter the hostname of the email server associated with the email account you want to migrate.
+    - **OVHcloud Account ID** *(depending on the type)*: This field is automatically filled in when you are connected to an OVHcloud account. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
+    - **Organization** *(depending on the type)*: Select the organization associated with the source email account.
+    - **Platform** *(depending on the type)*: Select the platform associated with the source email account.
+    - **Service** *(depending on the type)*: Select the service associated with the source email account.
+    - **Advanced settings** > **Delegation account ID** *(depending on the type)*: When the email account you are migrating is a shared account, you must enter the email address of the administrator account on this delegation account.<br><br>
 
-On the page displayed, fill in the information for the **destination account** then click `Start migration`{.action}.
+- **Destination account**
+    - **Account type**: Select the type of destination account.
+    - **E-mail**: Enter the destination email address.
+    - **Password**: Enter the password associated with the destination account.
+    - **Server URL** / **Server domain** *(depending on the type)*: Enter the hostname of the email server associated with the destination email account.
+    - **OVHcloud Account ID** *(depending on the type)*: This field is automatically filled in when you are connected to an OVHcloud account. For more information, see the section "[Migrate via a connection to the OVHcloud customer account](#sso-migration)".
+    - **Organization** *(depending on the type)*: Select the organization associated with the destination email account.
+    - **Platform** *(depending on the type)*: Select the platform associated with the destination email account.
+    - **Service** *(depending on the type)*: Select the service associated with the destination email account.
+    - **Advanced settings** > **Delegation account ID** *(depending on the type)*: When the destination email account is a shared account, you must enter the email address of the administrator account on this delegation account.<br><br>
 
-If the information entered is correct, you will be asked to select the file from your computer. Next, click the `Upload`{.action} button and wait for the action to complete. This may take some time depending on the file size. You can view the progress of your uploads on this page.
+- **Start of transfer**: You can start the migration `Immediately` or check `Later` to postpone it. The deferred migration allows you to start it automatically at a date and time you define.
+- **Data to transfer**: Depending on the type of email account you are migrating and the destination account, this section will indicate the different types of data that are supported during the migration. This depends on the source account and the destination account.
 
-Once the file has been uploaded to OMM, re-enter the password for the **destination account**, then click `Start migration`{.action}. If the information entered is correct, you can launch the migration by clicking `Start migration`{.action}.
+![omm](images/omm-create-migration-04.png){.thumbnail .w-600}
 
-On the page that opens, you can track the migration progress. Remember to save the `Migration ID`{.action} displayed, and wait for the migration to complete. The time to completion depends on the number of elements to be migrated. If you would like to return to this screen, please continue with the section below.
+> [!warning]
+>
+> If you are migrating an account that has features the destination account does not have, **you will need to save by your means the items that cannot be migrated by OMM**. To help you, refer to our guide "[Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
-#### Tracking a migration
+Once the source and destination account settings are completed, click on:
 
-There are two ways you can track a migration by PST, ICS or VCF file:
+- `Migrate and add another account`{.action} if you want to add another migration to your project's list.
+- `Migrate my account`{.action} to start the configured migration and return to the project homepage.
 
-- You will be notified about the migration’s progress via email.
+### Migrate via a connection to the OVHcloud customer account <a name="sso-migration"></a>
 
-- On the page <https://omm.ovh.net/>, click on `Follow / Resume`{.action} in the horizontal `Migration`{.action} menu. You will need to enter the `Migration ID`{.action} and the `Destination account`{.action} concerned.
+When migrating to or from an OVHcloud account, you can select one of our offers `MX plan`, `Email Pro`, `Exchange` or `Zimbra`.
 
-![omm](images/omm-migration-track.png){.thumbnail}
+![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 
-In the page that opens, you can track the progress of your migration. There will be a message stating that the process is yet to start, is in progress, or has been completed. Depending on the status provided, several actions can be taken:
+When you select one of these offers, follow the steps below:
 
-- `Stop the process`{.action}: This will stop the migration. Any elements already migrated will remain in the destination account.
-- `Delete migrated items`{.action}: This is used to delete any elements that have already been migrated to the destination account.
+> [!tabs]
+> **Step 1**
+>>
+>> - Click on `Login`{.action} to display the OVHcloud Control Panel login window.
+>>
+>> ![omm](images/omm-migration-sso-01.png){.thumbnail .w-600}
+>>
+> **Step 2**
+>>
+>> Log in to the OVHcloud customer account:
+>>
+>> - Enter the identifier or email address associated with the OVHcloud account, enter the corresponding password and click on `Login`{.action};
+>> - or click on `Continue`{.action} if you were already identified.
+>>
+>> > [!primary]
+>> >
+>> > The OVHcloud customer account must be associated with the email offer that is the subject of the migration.
+>>
+>> ![omm](images/omm-migration-sso-02.png){.thumbnail .w-600}
+>>
+> **Step 3**
+>>
+>> - A new window appears. It allows you to authorize OMM to access the functions of your customer area, and to list the offers and email accounts present. By default, the validity of these rights is 24 hours. Set the validity period that suits you, then click on `Authorize`{.action}.
+>>
+>> ![omm](images/omm-migration-sso-03.png){.thumbnail .w-600}
+>>
+> **Step 4**
+>>
+>> - You will now be able to select your services and accounts using drop-down menus. This facilitates the search for items and avoids typing errors. It is nevertheless necessary to enter the password associated with the selected email account.
+>>
+>> Example with a Zimbra service:
+>>
+>> ![omm](images/omm-migration-sso-04.png){.thumbnail .w-600}
 
-### Carrying out and tracking multiple migrations (project mode) <a name="project"></a>
+> [!warning]
+>
+> It is possible to disconnect current accesses from an OVHcloud Control Panel by clicking on `Log out`{.action}, then under `OVHcloud account ID`, click on `Log out of the account`{.action}.
+>
+> ![omm](images/omm-migration-sso-05.png){.thumbnail .w-300}
 
-On the home page <https://omm.ovh.net/>, click on `New multiple migrations project`{.action} in the horizontal `Project`{.action} menu.
+### Follow a migration project <a name="follow-migration"></a>
 
-![omm](images/omm-migration-project.png){.thumbnail}
+There are two ways to access the migration project tracking:
 
-Fill in the information for the **New project**:
+- In the email received when you created your project, you will find a link that allows you to access the project login page with the `Project ID` pre-filled. Only the `Project password` needs to be entered.
+- From the [OMM](/links/web/omm) homepage, click on `Track a migration`{.action}. Then enter your `Project ID` and your `Project password`.
 
-- Give your migration project a name.
-- Enter a password to access the tracking interface for your migration project.
-- Enter an email address to receive notifications on the progress of your migration project.
+Click on `Connect to project`{.action} to access the project homepage and follow your migrations.
 
-Click on `Create Project`{.action}. On the next page, you can manage and track your migration project. Save the **project number** displayed.
+![omm](images/omm-create-migration-01.png){.thumbnail .w-600}
 
-![omm](images/omm-migration-project01.png){.thumbnail}
+From this page, you will find the list of ongoing or scheduled migrations. The project status also appears on the right.
 
-You can now start migrating your accounts. The interface has multiple tabs:
+Click on the `⋮`{.action} button to the right of a migration line to display the Options:
 
-- `Resume`: Used to track the progress of migrations for your project. There is a button you can click to pause and resume ongoing migrations.
+- `See more details`{.action}: You are redirected to a page allowing you to follow the progress of a migration and read the report once the migration is completed.
+- `Cancel migration`{.action}: Allows you to cancel the ongoing migration. The items already migrated will remain on the destination account.
+- `Delete migration data (GDPR)`{.action}: This option triggers the deletion of all data related to the migration of the account. You will still keep the information concerning the events that occurred during the migration.
 
-- `Multiple Import`: Used to add several migrations to the queue, by importing a file (CSV or Excel format). The file syntax must be accurate; we recommend using the templates provided. The file has this form:
+![omm](images/omm-migration-follow-02.png){.thumbnail .w-600}
 
-```
-"Source Type(IMAP/Exchange/POP)";Source Server url;Source Login/Mail;Source Password;Destination Type;"Destination Url(can be leaved empty if hosted by OVH)";Destination Mail;Destination Password;Source admin mail (delegation);Destination Admin Mail (delegation)
-IMAP;myimap.server.com;mywonderfulmail@myserver.com;My_password;Exchange;https://ex3.mail.ovh.net/ews/exchange.asmx;mygreatmailaddress@mydomain.ovh;My_password2;"";""
-```
+Example of migration tracking:
 
-It is best to open the file with a spreadsheet software to edit it.
+![omm](images/omm-migration-follow-03.png){.thumbnail .w-600}
 
-- `Add`: Used to add migrations to the queue, account by account. However, you can keep the source and destination servers as default values.
-
-![omm](images/omm-migration-project02.png){.thumbnail}
-
-- `Options`: Can be used to customise which elements the OVH Mail Migrator should migrate, and the number of concurrent requests that the tool can handle when carrying out migrations.
-
-![omm](images/omm-migration-project03.png){.thumbnail}
-
-- `Log out`: Used to log out of the project tracking page, with no effect on the migration process.
-
-To access your migration project's tracking again, click on `Manage your migration project`{.action} in the `Project`{.action} menu. You will need to enter the `Migration project ID`{.action}, and the associated `Password`{.action} in order to log in.
+> [!primary]
+>
+> If an error occurs during the migration, a link to the error log will be provided in the `See more details`{.action} window.
 
 ## Go further
-  
+
+[Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
+
+[Migrating an MX Plan email account to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
 Join our [community of users](/links/community).

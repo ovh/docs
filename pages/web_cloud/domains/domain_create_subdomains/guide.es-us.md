@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo crear un subdominio?"
 excerpt: "Descubra cómo crear un subdominio en OVHcloud"
-updated: 2025-02-05
+updated: 2025-10-27
 ---
 
 <style>
@@ -180,8 +180,8 @@ Para más información sobre la configuración de un dominio o subdominio en un 
 
 > [!warning]
 >
-> La adición de un dominio o subdominio en multisitio puede requerir la instalación de un token de validación. Para un subdominio, este mismo token no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el token como un registro DNS de tipo TXT para el dominio en la zona DNS activa del dominio.
->
+> La adición de un nombre de dominio o subdominio en uno de los sitios web de su alojamiento web puede requerir la configuración de un **token de validación**.
+> Para un subdominio, este mismo token no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el token como un registro DNS de tipo TXT para el dominio en la zona DNS activa del dominio.
 
 #### Caso 2 - Crear direcciones de correo Exchange con un subdominio <a name="link-subdomain-case-2"></a>
 

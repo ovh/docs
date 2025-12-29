@@ -128,7 +128,7 @@ These options refer to additional VPS services for backups and restoration of yo
 >> Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
 >>
 
-You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).
+You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
 
 #### My offer
 

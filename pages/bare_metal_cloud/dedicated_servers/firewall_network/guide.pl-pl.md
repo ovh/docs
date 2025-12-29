@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-09-08
+updated: 2025-12-22
 ---
 
 ## Wprowadzenie
@@ -15,9 +15,9 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 > Więcej informacji na temat rozwiązania Anty-DDoS znajdziesz na [naszej stronie WWW](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) |
+| Infrastruktura Anty-DDoS & usługi ochrony gier diagram w OVHcloud |
 |:--:|
-| Anty-DDoS - schemat infrastruktury i usług ochrony gier w OVHcloud |
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Wymagania początkowe
 
@@ -47,26 +47,15 @@ Edge Network Firewall zmniejsza ekspozycję na ataki DDoS, umożliwiając użytk
 > Edge Network Firewall chroni określony adres IP powiązany z serwerem (lub usługą). Jeśli posiadasz serwer z wieloma adresami IP, skonfiguruj każdy z nich oddzielnie.
 > 
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} na pasku bocznym po lewej stronie, następnie kliknij `Publiczne adresy IP`{.action}. Możesz skorzystać z menu rozwijanego pod **"Moje publiczne adresy IP i powiązane usługi"**, aby filtrować usługi według kategorii.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} na pasku bocznym po lewej stronie, następnie kliknij `Publiczne adresy IP`{.action}. Możesz skorzystać z menu rozwijanego pod **"Moje publiczne adresy IP i usługi powiązane"**, aby filtrować usługi według kategorii, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Następnie kliknij `...`{.action} Przycisk po prawej stronie odpowiedniego adresu IPv4 i najpierw wybierz `Utwórz Firewall`{.action}.
+Następnie kliknij `...`{.action} Przycisk po prawej stronie odpowiedniego adresu IPv4 i najpierw wybierz `Skonfiguruj Edge Network Firewall`{.action} (lub kliknij ikonę statusu w kolumnie **Edge Firewall**).
 
-![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-Następnie wymagane jest potwierdzenie. Firewall zostanie utworzony i będziesz mógł skonfigurować reguły.
-
-> [!primary]
-> Przycisk Utwórz firewall`{.action} będzie dostępny tylko dla adresów IP, które nigdy nie skonfigurowały firewalla. Jeśli nie pierwszy raz konfigurujesz firewall, możesz pominąć ten krok. 
->
-
-| ![Enabling the configuration](images/activationconfig.png) |
-|:--:|
-| Kliknij pozycję `Edge Network Firewall configuration`{.action}, aby rozpocząć konfigurację. |
-
-Na tej stronie można wybrać opcję **Aktywuj** lub **Wyłącz** zaporę za pomocą przycisku switch.
-Można to również zrobić w inny sposób wyjaśniony poniżej.
+Następnie zostaniesz przeniesiony do strony konfiguracji firewall.
 
 Dla każdego adresu IP można skonfigurować do **20 reguł**.
 
@@ -93,21 +82,21 @@ Dla każdego adresu IP można skonfigurować do **20 reguł**.
 > Więcej informacji znajdziesz w następujących przewodnikach: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) i [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**Aby dodać regułę:**
+**Aby dodać regułę**, kliknij przycisk `+ Dodaj reguła`{.action} w lewym górnym rogu:
 
-| ![add-rule-btn](images/enf_add_rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_new.png) |
 |:--:| 
-| Kliknij opcję `Dodaj regułę`{.action}. |
+| Kliknij opcję `+ Dodaj reguła`{.action}. |
 
 Dla każdej reguły (poza TCP) wybierz:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
 |:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) |
 
 Dla każdej reguły **TCP** należy wybrać:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) |
 |:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) <br>&bull; Port źródłowy (opcjonalnie) <br>&bull; Port docelowy (opcjonalnie) <br>&bull; Stan TCP (opcjonalnie) <br>&bull; Fragmenty (opcjonalnie)|
 
@@ -125,21 +114,13 @@ Dla każdej reguły **TCP** należy wybrać:
 > Konfiguracje firewalla zawierające tylko reguły trybu "Akceptuj" nie są w ogóle skuteczne. Instrukcja określająca, który ruch powinien zostać zrzucony przez zaporę. Jeśli nie zostanie utworzona taka reguła, wyświetli się ostrzeżenie.
 > 
 
-**Włącz firewall:**
+**Włączanie/wyłączanie firewall:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) |
+| ![activate-desactivate](images/enf_enable_disable_new.png) |
 |:--:|
 | `Włącz`{.action}, aby włączyć |
 
-Po potwierdzeniu firewall zostanie włączony.
-
-**Wyłącz firewall:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:--:|
-| `Włącz`{.action}, aby włączyć |
-
-Po potwierdzeniu konfiguracja firewalla zostanie wyłączona.
+Po potwierdzeniu zapora firewall włączona lub wyłączona.
 
 Reguły są dezaktywowane do momentu wykrycia ataku, a następnie zostają aktywowane. Ta logika może być używana dla reguł, które są aktywne tylko wtedy, gdy nadchodzi znany powtarzalny atak.
 

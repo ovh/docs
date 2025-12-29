@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook na urządzeniu z systemem Windows'
-updated: 2024-10-30
+updated: 2025-10-23
 ---
 
 ## Wprowadzenie
@@ -22,7 +22,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 ## Wymagania początkowe
 
 - Wykupienie usługi [Exchange](/links/web/emails).
-- Instalacja programu Microsoft Outlook lub nowszego oprogramowania na Twoim komputerze
+- Posiadanie aplikacji [klasyczny program Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) w systemie Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -31,6 +31,16 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 > Używasz programu Outlook i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 ## W praktyce
+
+> [!warning]
+>
+> Przed rozpoczęciem konfigurowania swojego konta ważne jest, aby zauważyć, że aplikacja Outlook, która jest dostarczana za darmo z Windows 11, jest [niekompatybilna](https://learn.microsoft.com/pl-pl/microsoft-365-apps/outlook/get-started/supported-account-types) z rozwiązaniami OVHcloud Exchange, znanymi jako lokalne. Będziesz musiał użyć **klasycznej wersjiOutlook**.
+>
+> Aby zainstalować klasyczną wersję Outlook na swoim komputerze z Windows, pobierz ją ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego programu Outlook na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", a następnie zainstaluj.
+>
+> Po zakończeniu instalacji, aby odróżnić dwie wersje, gdy są zainstalowane, wpisz „Outlook” w pasku wyszukiwania systemu Windows. Możesz następnie zobaczyć różnicę, jak poniżej.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Dodaj konto
 

@@ -16,7 +16,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 > Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
 >
 > Attention ! Si vos appelants connaissent un autre numéro que celui de votre ligne directe, vous disposez alors probablement d'un « numéro alias ».
-> Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip) et nos [guides de configuration des numéro alias](/products/web-cloud-phone-and-fax-voip-numbers-and-aliases).
+> Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip) et nos [guides de configuration des numéro alias](/products/web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases).
 >
 
 ## Prérequis

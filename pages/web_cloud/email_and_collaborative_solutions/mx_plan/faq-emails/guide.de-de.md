@@ -130,7 +130,7 @@ Im Folgenden finden Sie die wichtigsten Gründe für den fehlenden Empfang Ihrer
 1. **Störung oder Wartung**: Überprüfen Sie auf unserer Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), ob derzeit eine Operation auf Ihrem E-Mail-Dienst läuft.
 
 > [!primary]
-> **Tipps und Tricks**: Wenn Sie sich nicht bei Ihrem Webmail anmelden können, ist Ihr Passwort möglicherweise falsch. Bitte überprüfen Sie diese und ändern Sie sie bei Bedarf über Ihr [OVHcloud Kundencenter](/links/manager) und melden Sie sich erneut an.
+> Wenn Sie sich nicht bei Ihrem Webmail anmelden können, ist Ihr Passwort möglicherweise falsch. Bitte überprüfen Sie diese und ändern Sie sie bei Bedarf über Ihr [OVHcloud Kundencenter](/links/manager) und melden Sie sich erneut an.
 
 ///
 
@@ -293,8 +293,7 @@ Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um m
 - [MX Plan E-Mail-Account auf E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts von einer OVHcloud-E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
-- [E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
-- [Einen Google Mail-Account über den OVH Mail Migrator auf einen OVHcloud-E-Mail-Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+- [E-Mail-Accounts über OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 
 ///
 

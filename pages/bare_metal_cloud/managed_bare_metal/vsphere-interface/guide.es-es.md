@@ -23,7 +23,7 @@ Las claves de acceso se envían por correo electrónico al activar un servicio H
 Dirección IP/Nombre: pcc-xxx-xxx-xxx-xxx.ovh.com Nombre de usuario: admin Contraseña: xxxxxx
 ```
 
-El siguiente documento de VMware incluye los diferentes puertos que debe abrir en su firewall para, por ejemplo, acceder a la consola: [Acceso a la consola](https://kb.vmware.com/kb/1012382){.external-link}.
+El siguiente documento de VMware incluye los diferentes puertos que debe abrir en su firewall para, por ejemplo, acceder a la consola: [Acceso a la consola](https://kb.vmware.com/kb/1012382).
 
 ### Utilizar el cliente web HTML5
 

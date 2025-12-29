@@ -1,6 +1,6 @@
 ---
 title: Using Grafana with Logs Data Platform
-updated: 2024-11-28
+updated: 2025-10-16
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > To make the magic happen, please ensure to:
 >
 > - Set `https://<your_cluster>.logs.ovh.com:9200` as **URL** value
-> - Set your Logs Data Platform credentials for **Basic auth values**
+> - Set your [Logs Data Platform credentials](/pages/manage_and_operate/observability/logs_data_platform/security_tokens) for **Basic auth values**
 > - Set the **Index name** as the Logs Data Platform alias linked to Grafana
 > - Change default **Time field name** to timestamp
 > - Set the **Version** by clicking `Get Version and Save`{.action}.

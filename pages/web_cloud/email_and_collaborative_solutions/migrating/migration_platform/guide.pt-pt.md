@@ -79,11 +79,11 @@ No separador `Contas de e-mail`{.action} da sua plataforma, clique no botão `..
 > - Contactos externos
 > - [Posto de página](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
-Migre a conta de e-mail "source" para a sua nova plataforma com a ajuda da nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+Migre a conta de e-mail "source" para a sua nova plataforma com a ajuda da nossa ferramenta [OMM](/links/web/omm) (OVHcloud Mail Migrator).
 
-> Se tiver de migrar várias contas de e-mail, sugerimos que utilize o modo [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) via [OMM](https://omm.ovh.net/Project/Create), o que lhe permitirá importar uma tabela em formato CSV contendo as informações das contas de e-mail a migrar.
+> Se tiver de migrar várias contas de e-mail, sugerimos que utilize o modo [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) via [OMM](/links/web/omm), o que lhe permitirá importar uma tabela em formato CSV contendo as informações das contas de e-mail a migrar.
 
-Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![email-migração](images/migration_platform06.png){.thumbnail}
 
@@ -119,7 +119,7 @@ Se configurou uma das contas migradas num cliente de e-mail (exemplo: Outlook, T
 
 > [!primary]
 >
-> Também pode migrar manualmente endereços de e-mail para a OVHcloud utilizando a nossa ferramenta [OVH Mail Migrator (OMM)](https://omm.ovh.net/). Para isso, deverá dispor das informações (utilizador, palavra-passe, servidores) do e-mail de origem e do e-mail de destino.
+> Também pode migrar manualmente endereços de e-mail para a OVHcloud utilizando a nossa ferramenta [OVHcloud Mail Migrator (OMM)](/links/web/omm). Para isso, deverá dispor das informações (utilizador, palavra-passe, servidores) do e-mail de origem e do e-mail de destino.
 >
 
 ## Quer saber mais?

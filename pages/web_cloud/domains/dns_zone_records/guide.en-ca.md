@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about DNS records"
 excerpt: "Discover the different types of DNS records available in an OVHcloud DNS zone"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -175,6 +175,33 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> If you need further information, please visit the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) website.
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> This record allows you to specify the email address of the person responsible for the domain name. This record can also be combined with a TXT type DNS record to provide additional information.
+>>
+>> If needed, find more details on the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN) website.
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> This DNS record can group several pieces of information to allow a faster and more efficient connection to your website. It also allows, for example, to directly inform the web browser that the website is compatible with HTTP 2 or HTTP 3, that it should prioritise the use of an IP address (IPv4 and/or IPv6) mentioned as a parameter, or to use a specific access port. This allows the web browser to retrieve several pieces of information in a single request.
+>>
+>> This record has **2** modes:
+>>
+>> - **Alias Mode**: this mode is activated when you specify a priority equal to 0. Unlike CNAME type DNS records, it allows you to redirect a domain name from its own DNS zone (apex) to another domain name or subdomain.
+>> - **Service Mode**: this mode is activated when you specify a priority different from 0. It is in this mode that you can define the parameters you wish to apply to your domain name (example parameters: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). In **Service** mode, you can apply these parameters directly to your domain name, even if it is not to be used as an alias for another domain name.
+>>
+>> If needed, find more details on the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN) website.
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> This record works like the SVCB type DNS record, but unlike it, it is more specific to the HTTP protocol. It can group several pieces of information to allow a faster and more efficient connection to your website. It also allows, for example, to directly inform the web browser that the website is compatible with HTTP 2 or HTTP 3, that it should prioritise the use of an IP address (IPv4 and/or IPv6) mentioned as a parameter, or to use a specific access port. This allows the web browser to retrieve several pieces of information in a single request.
+>>
+>> This record has **2** modes:
+>>
+>> - **Alias Mode**: this mode is activated when you specify a priority equal to 0. Unlike CNAME type DNS records, it allows you to redirect a domain name from its own DNS zone (apex) to another domain name or subdomain.
+>> - **Service Mode**: this mode is activated when you specify a priority different from 0. It is in this mode that you can define the parameters you wish to apply to your domain name (example parameters: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). In **Service** mode, you can apply these parameters directly to your domain name, even if it is not to be used as an alias for another domain name.
+>>
+>> If needed, find more details on the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN) website.
 
 #### Special use case: CNAME records <a name="cnameusecase"></a>
 

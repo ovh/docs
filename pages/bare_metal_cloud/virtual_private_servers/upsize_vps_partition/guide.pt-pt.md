@@ -1,7 +1,7 @@
 ---
 title: Reparticionar um VPS após um upgrade de armazenamento
 excerpt: "Saiba como aumentar a quantidade de espaço útil no disco após uma atualização"
-updated: 2023-09-05
+updated: 2025-11-05
 ---
 
 ## Objetivo
@@ -165,6 +165,18 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 Na linha `First sector`, certifique-se que o valor predefinido é igual ao que foi anotado anteriormente. Se for diferente, use o valor que anotou antes.
 
+Se a seguinte mensagem for exibida:
+
+```console
+Partition #1 contains a ext4 signature.
+
+Do you want to remove the signature? [Y]es/[N]o:
+```
+
+Digite `n` e continue.
+
+Responder `y` significaria sobrescrever o sistema de ficheiros ext4 existente na partição 1 e aceitar destruir os dados nela contidos.
+
 ### Configurar uma partição de arranque (bootable)
 
 A seguir, certifique-se de que a partição seja de arranque (bootable). Para tal, utilize o comando `a`{.action}.
@@ -278,4 +290,4 @@ Introduza o tamanho pretendido e clique em `OK`{.action}. O seu volume será ent
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,13 +1,12 @@
 ---
-title: "Utiliser le Secret Manager avec l'API compatible Hashicorp Vault"
-excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API compatible Hashicorp Vault"
-updated: 2025-10-06
-flag: hidden
+title: "Utiliser le Secret Manager avec l'API compatible Hashicorp Vault KV2"
+excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API compatible Hashicorp Vault KV2"
+updated: 2025-10-15
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter l'usage de l'API compatible Hashicorp Vault pour le Secret Manager.
+L'objectif de ce guide est de présenter l'usage de l'API compatible Hashicorp Vault KV2 pour le Secret Manager.
 
 ## Prérequis
 
@@ -23,7 +22,7 @@ Le Secret Manager est un produit vous permettant de stocker de manière sécuris
 Un secret est une collection d'une ou plusieurs clés/valeurs regroupées au sein d'une version.
 Chaque modification d'un secret amène la création d'une nouvelle version de ce secret, permettant de remonter dans l'historique des modifications du secret.
 
-Les API compatibles Hashicorp Vault sont l'un des deux jeux d'API offerts par le Secret Manager avec les [API REST](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
+Les API compatibles Hashicorp Vault KV2 sont l'un des deux jeux d'API offerts par le Secret Manager avec les [API REST](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
 Elles sont conçues pour être similaires aux API Hashicorp Vault afin d'assurer une compatibilité avec les applications déjà compatibles avec Hashicorp Vault.
 
 ### Communiquer avec le domaine OKMS
@@ -52,7 +51,7 @@ Vous êtes alors redirigé sur la version non authentifiée de l'interface utili
 
 Les étapes suivantes vous guideront sur la façon de vous authentifier.
 
-#### Importation de vos informations d'identification OKMS dans le navigateur
+#### Import de vos informations d'identification OKMS dans le navigateur
 
 Pour accéder à l'interface utilisateur Swagger authentifiée, vous devez charger votre [certificat d'accès OKMS](/pages/manage_and_operate/kms/okms-certificate-management) dans le gestionnaire de certificats du navigateur.
 

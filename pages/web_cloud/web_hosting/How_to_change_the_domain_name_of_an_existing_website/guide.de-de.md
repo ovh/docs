@@ -1,7 +1,7 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-updated: 2022-10-25
+updated: 2025-10-28
 ---
 
 ## Ziel
@@ -28,7 +28,7 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 
 > [!warning]
 >
-> Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben. 
+> Die Änderung des Domainnamens, über den auf Ihre Website zugegriffen wird, kann Auswirkungen auf deren SEO haben.  
 > Achten Sie daher genau auf die Änderungen, die Sie vornehmen, und kontaktieren Sie bei Bedarf einen [spezialisierten Dienstleister](/links/partner) für SEO.
 >
 
@@ -36,7 +36,7 @@ Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere 
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-Melden Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Multisite auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+Registrieren Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Website auf Ihrem Webhosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
@@ -52,20 +52,11 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 > **SSL-Zertifikate**
 >
-> Wenn die aktuell für den Zugang zu Ihrer Website verwendete Domain über ein SSL Zertifikat verfügt, lesen Sie unsere beiden Anleitungen, um die nachfolgenden Aktionen durchzuführen:
+> Wenn der ursprünglich verwendete Domainname für den Zugriff auf Ihre Website über ein SSL-Zertifikat verfügt, konsultieren Sie diese Anleitungen:
 > - [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 > - [Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)
->
-> Für das kostenlose SSL *Let's Encrypt* Zertifikat genügt es, die Option `SSL` **ab sofort** für Ihre neue Domain zu aktivieren. Gehen Sie hierzu in den Tab `Multisite`{.action} Ihres Hostings. Klicken Sie anschließend auf den Button `Aktionen`{.action} und dann auf `SSL-Zertifikat neu erstellen`{.action}. Die Regenerierung dauert mindestens 2 Stunden.
->
-> Die über OVHcloud bestellbaren kostenpflichtigen SSL-Zertifikate *Sectigo DV* und *Sectigo EV*  sind nur für einen einzigen Domainnamen und deren Subdomain `www` gültig.<br>
-> **Wenn Sie [Schritt 3](#step3) dieser Anleitung erreicht haben**, müssen Sie Ihr kostenpflichtiges SSL-Zertifikat löschen, um dann ein neues für Ihren neuen Domainnamen zu bestellen<br>
-> *Achtung, die Löschung ist unwiderruflich und für die verbleibende Zeit Ihres alten SSL-Zertifikats erfolgt keine Rückerstattung. Stellen Sie sicher, dass die Schritte 1 und 2 korrekt durchgeführt werden.*
->
-> Im Fall eines selbst installierten Zertifikats (*Custom*), kontaktieren Sie Ihren Anbieter um zu erfahren, welche Möglichkeiten Sie in dieser Situation haben.
->
 
-Wenn alle Aktionen korrekt durchgeführt wurden, sind die Multisite-Einträge Ihrer Domains identisch, **außer Sie verwenden ein kostenpflichtiges SSL-Zertifikat vom Typ *Sectigo DV*, *Sectigo EV* oder *Custom***.
+Wenn alle Aktionen ordnungsgemäß durchgeführt wurden, sollten die Angaben zu Ihren Domainnamen exakt identisch sein **außer, Sie verwenden ein kostenpflichtiges SSL-Zertifikat des Typs *Sectigo DV*, *Sectigo EV* oder *Custom***.
 
 ![Multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
@@ -122,14 +113,14 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 
 ### Schritt 3: Den alten Domainnamen entfernen <a name="step3"></a>
 
-Um *duplicate content* zu vermeiden, muss der Multisite-Eintrag des alten Domainnamens entfernt werden. Sobald Ihre Website unter dem neuen Domainnamen funktionsfähig ist, verwenden Sie unsere Anleitung zur [Verwaltung von Multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite), um ihn zu löschen.
+Um „Duplicate-content“ zu vermeiden und sobald Ihr neuer Domainname vollständig mit Ihrer Website funktioniert, müssen Sie die Angabe Ihres alten Domainnamens auf Ihrer Website mithilfe des Leitfadens zur Verwaltung von [Websites auf Ihrem Hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) entfernen.
 
 > [!warning]
 >
 > Denken Sie daran, sich um Ihr SSL *Sectigo EV*, *Sectigo DV* oder *Custom* Zertifikat zu kümmern, wie in [Schritt 1](#step1) beschrieben.
 >
 
-Sofern der alte Domainname bei OVHcloud registriert ist, kann er nach dem Entfernen im Tab "Multisite" mithilfe einer [permanenten sichtbare Weiterleitung (301)](/pages/web_cloud/domains/redirect_domain_name) umgeleitet werden. So können Ihre Besucher automatisch auf Ihre Website weitergeleitet werden, wenn sie den alten Domainnamen über die Adresszeile eines Browsers aufrufen.
+Sobald Ihr alter Domainname von der Website getrennt ist, die auf Ihrem Webhosting-Service läuft, und falls er bei OVHcloud registriert ist, können Sie diesen mithilfe einer [sichtbaren dauerhaften 301-Weiterleitung](/pages/web_cloud/domains/redirect_domain_name) weiterleiten. Dies ermöglicht es Ihren Besuchern, automatisch zu Ihrer Website weitergeleitet zu werden, wobei Ihr neuer Domainname in der Adressleiste/URL ihres Browsers angezeigt wird.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

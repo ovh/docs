@@ -13,11 +13,6 @@ updated: 2024-10-01
 }
 </style>
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/RULMVWH)
-
 
 ## Objetivo
 
@@ -47,7 +42,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 > [!alert]
 >
-> Antes de empezar a configurar el VPS con esta guía, asegúrese de que la bandera situada en la parte superior derecha de esta página se corresponde con su país o región, ya que la configuración depende de su ubicación.
+> Antes de comenzar la configuración con esta guía, asegúrese de que la bandera situada en la parte superior derecha de esta página corresponde a su país o región, ya que los parámetros dependen de su ubicación.
 
 ### Añadir la cuenta
 

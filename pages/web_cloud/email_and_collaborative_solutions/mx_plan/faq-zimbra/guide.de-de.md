@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2024-11-15
+updated: 2025-12-05
 ---
 
 <style>
@@ -61,13 +61,39 @@ Besuchen Sie unsere Seite „[Zimbra-E-Mail-Adresse auf einem E-Mail-Client konf
 
 ///
 
+/// details | Wie kann ich mein Zimbra Angebot wechseln?
+
+Ihre Anforderungen ändern sich und Sie möchten mehr Funktionen für Ihr Zimbra nutzen oder benötigen sie nicht mehr. Die Zimbra Angebote sind flexibel. Folgen Sie den unten stehenden Anweisungen entsprechend Ihrer Situation:
+
+**Möchten Sie auf ein höheres Angebot wechseln?**
+
+1. Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an.
+1. Gehen Sie in den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `Zimbra Mail`{.action}.
+1. Klicken Sie auf `E-Mail-Konto`{.action}.
+1. Rechts neben dem E-Mail-Account, den Sie auf ein höheres Angebot wechseln möchten, klicken Sie auf `⁝`{.action}.
+1. Klicken Sie auf `Angebot wechseln`{.action}.
+
+![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
+
+**Möchten Sie auf ein niedrigeres Angebot wechseln?**
+
+Die Schritte sind dieselben wie für den Wechsel zu einem höheren Angebot (siehe oben).
+
+> [!warning]
+>
+> Bevor Sie auf ein niedrigeres Angebot wechseln, stellen Sie sicher, dass folgende Punkte erfüllt sind:
+>
+> - Keine Dateien sind auf Ihrem Speichervolumen "Briefcase" gespeichert, wenn Sie auf das Angebot Starter wechseln.
+> - Der Inhalt Ihres E-Mail-Accounts muss weniger als 15 GB sein, wenn Sie auf das Angebot Starter wechseln.
+
+///
+
 ### Fragen zur Migration von MX Plan auf Zimbra
 
 Im Rahmen der Weiterentwicklung des MX Plan Angebots wird eine Migration von der derzeitigen Lösung mit Outlook Web App (OWA) auf die Zimbra Lösung und deren Webmail geplant.
 
 Wenn Sie von dieser Migration betroffen sind, finden Sie hier die häufigsten Fragen zu diesem Thema.
-
-///
 
 /// details | Was sind die Unterschiede zwischen Outlook Web App (OWA) und Zimbra Webmail?
 
@@ -170,8 +196,9 @@ Um Ihr Angebot unter "Meine Dienste" im OVHcloud Kundencenter zu kündigen, folg
 |**Inhalt des E-Mail Accounts**<br>(E-Mails, Ordner, Kontakte)| Migriert|✅|
 |**Während des Migrationsprozesses empfangene E-Mails**| Zugestellt|✅|
 |**Automatische Antwort / Beantworter**| Beibehalten|✅|
-|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
+|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
 |**Persönliche Signatur**|- Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.<br>- Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.|⚠️|
+|**Externe Kontakte**|Mit dieser Funktion können Sie eine externe E-Mail-Adresse in das globale Adressbuch der E-Mail-Plattform integrieren. Diese Funktion ist in Zimbra nicht verfügbar.|❌|
 |**Blockieren / Erlauben**| Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen. Sie ist nicht kompatibel mit Zimbra, kann jedoch über Posteingangsregeln in Zimbra wiederhergestellt werden.|❌|
 |**Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar)| Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.|❌|
 |**Sicherheitseinstellungen**| Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.|❌|

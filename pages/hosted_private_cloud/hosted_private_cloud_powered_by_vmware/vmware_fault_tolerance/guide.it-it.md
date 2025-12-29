@@ -52,7 +52,7 @@ In base alle necessità, sono disponibili diverse operazioni:
 
 Su una macchina virtuale con **Fault Tolerance** attivo non è possibile effettuare determinate operazioni né utilizzare alcune periferiche.
 
-La lista delle azioni non supportate da questo servizio è disponibile in [questa pagina](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html){.external-link}. Per visualizzare invece funzionalità e dispositivi non compatibili, clicca [qui](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html){.external-link}.
+La lista delle azioni non supportate da questo servizio è disponibile in [questa pagina](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-F5264795-11DA-4242-B774-8C3450997033.html). Per visualizzare invece funzionalità e dispositivi non compatibili, clicca [qui](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-C1749AD4-70E2-406C-864C-719F54BF1BC1.html).
 
 ## Per saperne di più
 

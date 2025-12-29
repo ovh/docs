@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2025-08-01
+updated: 2025-11-10
 ---
 
 <style>
@@ -187,8 +187,9 @@ Para activar un certificado SSL en un alojamiento web para su sitio web, siga es
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la página que se abre y en el recuadro **Configuración**, haga clic en el botón `...`{.action} de la derecha de la indicación **Certificado SSL** y seleccione `Contratar un certificado SSL`{.action}.
-4. Seleccione el certificado que desee de la [lista de certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting) y continúe hasta finalizar la orden de pedido.
+3. En la nueva página, haga clic en la pestaña `Certificados SSL`{.action}.
+4. Elija el certificado que desee de entre los [certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+5. Continúe hasta finalizar la instalación del certificado SSL (habiendo validado previamente la orden de pedido si elige uno de los certificados SSL Sectigo).
 
 > [!success]
 >

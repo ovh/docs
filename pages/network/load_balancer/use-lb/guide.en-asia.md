@@ -10,8 +10,8 @@ This guide is designed to help you get started using the Load Balancer, by intro
 
 ## Requirements
 
-- You must have access to your OVH Control Panel.
-- You must have ordered a [Load Balancer](/links/network/load-balancer).
+- An [OVHcloud Load Balancer](/links/network/load-balancer) service
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -94,9 +94,11 @@ Once you have created your server cluster, you just need to add servers to it. D
 |PROXY Protocol version|**Only if you have configured it**, choose the version of the PROXY protocol you wish to use on the server. </br> You can find more information on the PROXY protocol and how to use it with the OVHcloud Load Balancer in [this guide](/pages/network/load_balancer/create_proxyprotocol/).|
 
 ### Managing SSL certificates
+
 You can add an SSL certificate to the Load Balancer in the `SSL Certificate`{.action} section. You have two options: you can order an SSL certificate from OVH, or add an external certificate.
 
-#### OVH SSL certificate
+#### OVHcloud SSL certificate
+
 To order an SSL certificate, simply go to the `SSL Certificate`{.action} section, then click `Order an SSL certificate`{.action} and browse the options available:
 
 ![Ordering an SSL certificate](images/ordering_ssl.png){.thumbnail}
@@ -108,6 +110,7 @@ To order an SSL certificate, simply go to the `SSL Certificate`{.action} section
 |Fully Qualified Domain Name (FQDN)|Domain(s) concerned|
 
 #### Adding an external SSL certificate
+
 If you already have your own SSL certificate, you can add it directly:
 
 ![Adding an SSL certificate](images/external_ssl.png){.thumbnail}

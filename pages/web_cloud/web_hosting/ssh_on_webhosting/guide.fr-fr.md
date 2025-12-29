@@ -63,7 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
 > **Etape 4**
 >>
@@ -102,7 +102,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
 > **Etape 4**
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Monitoraggio degli attacchi DDoS con il Network Security Dashboard"
 excerpt: "Scopri come navigare attraverso il dashboard di sicurezza di rete"
-updated: 2025-09-08
+updated: 2025-10-31
 ---
 
 ## Obiettivo
@@ -78,6 +78,8 @@ Nella tabella sono presenti le seguenti colonne:
 - **IP di destinazione** - L'IP che è stato l'obiettivo dell'attacco
 - **Vettori di attacco** - Fornisce informazioni sui tipi di attacco rilevati, ad esempio UDP, TCP e così via.
 
+**Il periodo di conservazione dei dati per i log del centro di pulizia è di 1 anno.**
+
 > [!warning]
 >
 > Si noti che gli indirizzi IP sorgente per gli eventi rilevati non vengono visualizzati perché sono solitamente falsificati (gli attacchi DDoS possono puntare a fonti diverse da quelle da cui provengono davvero) e che tali informazioni sono fuorvianti o inutilizzabili.
@@ -88,6 +90,8 @@ Nella scheda **Traffic chart**, è possibile visualizzare un grafico che mostra 
 ![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta il traffico malevolo che è caduto (**in rosso**) e il traffico pulito recapitato al tuo indirizzo IP (**in verde**). Vengono inoltre visualizzate le statistiche di base relative alla mitigazione, ad esempio il numero di attacchi rilevati per un IP selezionato, la quantità di traffico (o pacchetti) pulito durante gli attacchi o il numero di volte che i centri di pulitura hanno eseguito un'azione per ispezionare il traffico (il numero di eventi) in un determinato periodo di tempo.
+
+**Il periodo di conservazione dei dati per il grafico del traffico è di 2 mesi.**
 
 ## FAQ
 
@@ -108,7 +112,7 @@ Questi dati sono disponibili solo per gli indirizzi IP pubblici durante gli even
 
 ### Il grafico del traffico per alcune posizioni nei registri del centro di pulitura non è disponibile.
 
-I dati dei grafici del traffico sono disponibili solo per le ultime due settimane, mentre le voci dei log possono essere riviste per l'anno precedente.
+I dati del grafico del traffico sono disponibili solo per gli ultimi due mesi, mentre le voci dei log possono essere visionate per l'ultimo anno.
 
 ### Un attacco al mio servizio persiste, come posso proteggere meglio il mio server?
 

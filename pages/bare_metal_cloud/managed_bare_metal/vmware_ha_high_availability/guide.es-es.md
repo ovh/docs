@@ -102,11 +102,11 @@ El control de admisión impone restricciones sobre el uso de recursos. No se per
 
 El control de admisión de vSphere HA se basa en la cantidad de errores de host que el clúster puede tolerar sin perder la capacidad de conmutación por error. La capacidad de conmutación por error del host puede definirse de tres formas:
 
-- [Porcentaje de recursos del cluster](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Porcentaje de recursos del cluster](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Directiva de ranuras](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Directiva de ranuras](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [Hosts de conmutación por error dedicados](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Hosts de conmutación por error dedicados](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Almacén de datos de latidos
 
@@ -116,7 +116,7 @@ Cuando el host principal de un cluster HA no puede comunicarse con un host subor
 
 Es posible realizar varios ajustes de configuración avanzada en el cluster.
 
-Para ello, debe dirigirse a [esta página](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Para ello, debe dirigirse a [esta página](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### Regla HA
 

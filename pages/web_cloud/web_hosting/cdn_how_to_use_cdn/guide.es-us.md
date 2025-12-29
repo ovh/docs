@@ -1,7 +1,7 @@
 ---
 title: "Acelerar un sitio web utilizando la CDN"
 excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
-updated: 2025-05-22
+updated: 2025-10-27
 ---
 
 ## Objetivo
@@ -45,7 +45,7 @@ Se le redirigirá a la generación del pedido. Unos minutos después de haber ab
 
 #### Si la opción CDN ya está activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `Modificar`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha del dominio o subdominio correspondiente y luego haga clic en `Modificar el dominio`{.action}.
 
 Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguidamente, en `Validar`{.action}.
 
@@ -53,8 +53,8 @@ Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguida
 
 > [!warning]
 >
-> Si añade un nombre de dominio externo a OVHcloud en multisitio al alojamiento web, debe indicar la dirección IP de la CDN de su alojamiento en la zona DNS del nombre de dominio.
-
+> En el caso de un dominio externo a OVHcloud añadido en uno de los sitios web de su alojamiento web, debe especificar la dirección IP del CDN de su alojamiento en la zona DNS del dominio.
+>
 > Consulte la [lista de direcciones IP de los clústeres y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para saber qué dirección IP corresponde a la CDN de su clúster.
 
 **¿Por qué no puedo disfrutar de la IP geolocalizada con la opción CDN?**
@@ -66,15 +66,15 @@ En cuanto al SEO (posicionamiento en los motores de búsqueda), la velocidad de 
 
 #### Vaciar la caché del Shared CDN
 
-En ocasiones, resulta útil vaciar la caché de la CDN, principalmente cuando se actualizan los archivos estáticos. Por ejemplo, cuando pone en línea una nueva versión de su sitio web. Es posible vaciar la caché para cada registro multisitio.
+A veces es útil vaciar la memoria caché del CDN, especialmente cuando modifica sus archivos estáticos. Por ejemplo, al implementar una nueva versión de su sitio. Puede vaciar la memoria caché para cada uno de sus dominios y subdominios.
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Purgar la CDN`{.action}.
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Limpiar la CDN`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurar las opciones del Shared CDN
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}. 
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}. 
 
 > [!warning]
 >
@@ -98,7 +98,7 @@ Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuraci
 
 ##### **Crear una regla de almacenamiento en caché** <a name="cacherules"></a>
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
+Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Configurar la CDN`{.action}.
 
 Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 
@@ -126,7 +126,7 @@ Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la con
 
 #### Configurar las opciones de la CDN Security
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}. 
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}. 
 
 > [!primary]
 >
@@ -174,7 +174,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 #### Configurar las opciones de la CDN Advanced
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar la CDN`{.action}.
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en en `Modificar la CDN`{.action}.
 
 > [!primary]
 >
@@ -195,9 +195,9 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Móvil redirect**: Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
 
-- **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
+- **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada.
 
-	En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha de la entrada multisitio y, seguidamente, en `Purgar la CDN`{.action}.
+	En la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Limpiar la CDN`{.action}.
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
@@ -222,7 +222,7 @@ Una vez que haya seleccionado las opciones, haga clic en `Aplicar la configuraci
 
 ##### **Crear una regla de almacenamiento en caché avanzada** <a name="cacherulesadv"></a>
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
+Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Configurar la CDN`{.action}.
 
 Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 
@@ -278,7 +278,7 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 
 ### Desactivar la opción CDN para un sitio web
 
-Esta acción permite desactivar la CDN para uno o más de sus registros multisitio, sin eliminar la opción CDN de su alojamiento web.
+Esta acción permite desactivar el CDN para uno o varios de sus dominios o subdominios, sin eliminar la opción CDN de su alojamiento web.
 
 > [!warning]
 >
@@ -293,7 +293,7 @@ Esta acción permite desactivar la CDN para uno o más de sus registros multisit
 > La modificación de un registro en la zona DNS activa de un dominio conlleva un retraso de propagación de **4** a **24** horas para ser plenamente efectiva. Una página con el código **520** puede aparecer aleatoriamente hasta que se complete la propagación. Este fenómeno se debe a que determinadas partes de la red DNS redirigen aún las peticiones hacia la dirección IP de la CDN asociada a su alojamiento web.
 >
 
-Acceda al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Editar`{.action}.
+Acceda al [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha del dominio o subdominio correspondiente y luego en `Modificar el dominio`{.action}.
 
 Desmarque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 

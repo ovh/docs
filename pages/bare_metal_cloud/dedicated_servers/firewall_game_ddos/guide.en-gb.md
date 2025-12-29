@@ -93,7 +93,7 @@ To enable Game DDoS Protection, simply define game applications and their associ
 | On the following screen, click the `Add a rule`{.action} button to add a rule to the *Game firewall*. |
 
 
-Game DDoS Protection allows you to configure up to **100 rules per IP address** that points to a 3rd generation Bare Metal Game server (2024, EPYC based), or up to **30 rules per IP address** for the older Bare Metal game ranges (usually identified as RISE-GAME or SYS-GAME).
+Game DDoS Protection allows you to configure up to **100 rules per IP address** that points to a 3rd generation Bare Metal Game server (servers released in 2024 or later), or up to **30 rules per IP address** for the older Bare Metal game ranges (usually identified as RISE-GAME or SYS-GAME).
 
 Please note that supported gaming protocols (game titles and versions that can be protected) may change over time. Moreover, they can be different between older Bare Metal Game server ranges and the newer ones. The most recent list of supported game profiles can be found [here](/links/security/ddos).
 
@@ -116,19 +116,19 @@ Also, we strongly recommend to set the rule **"Default policy = DROP"** on every
 #### Ark Survival Evolved
 
 - **Ark Survival Evolved**: Basic protection engine
-- **Ark Survival Evolved v.311.78**: Updated protection engine, added in the 3rd gen. of Bare Metal Game servers (2024, EPYC based)
+- **Ark Survival Evolved v.311.78**: Updated protection engine, added in the 3rd gen. of Bare Metal Game servers (2024 release)
 
 #### Counter Strike 2
 
-- **Counter Strike 2**: New protection engine added in the 3rd gen. of Bare Metal Game servers (2024, EPYC based)
+- **Counter Strike 2**: New protection engine added in the 3rd gen. of Bare Metal Game servers (2024 release)
 
 #### FiveM
 
-- **FiveM** is a Grand Theft Auto V multiplayer mod by Cfx.re which is now recognized by the game publisher Rockstar. We added FiveM support in the 3rd gen. of Bare Metal Game servers (2024, EPYC based).
+- **FiveM** is a Grand Theft Auto V multiplayer mod by Cfx.re which is now recognized by the game publisher Rockstar. We added FiveM support in the 3rd gen. of Bare Metal Game servers (2024 release).
 
 #### Rust
 
-- **Rust** is supported with a dedicated protection profile on all generations of Bare Metal Game servers. Please note that we updated this protection profile (i.e. added RakNet cookies support) for the 3rd gen. of Bare Metal Game servers (2024, EPYC based).  
+- **Rust** is supported with a dedicated protection profile on all generations of Bare Metal Game servers. Please note that we updated this protection profile (i.e. added RakNet cookies support) for the 3rd gen. of Bare Metal Game servers (2024 release).  
 
 
 #### Minecraft
@@ -137,12 +137,12 @@ Minecraft is well supported by the following profiles:
 
 - **Minecraft Java**: Should be the best fit for all Minecraft Java versions. It protects the Minecraft Query protocol and is tuned for TCP traffic. It was added in 2024 but is also available for previous generations of Bare Metal Game servers. Use with caution if other UDP games are hosted on the same IP. 
 - **Minecraft Query**: General Minecraft Query protocol protection.
-- **Minecraft Bedrock**: Minecraft Bedrock protection (with RakNet cookies support), added in the 3rd gen. of Bare Metal Game servers (2024, EPYC based).
-- **Minecraft Pocket Edition**: Minecraft PE/Bedrock protection, the same as Bedrock, kept for compatibility reasons.
+- **Minecraft Bedrock**: Minecraft Bedrock protection (with RakNet cookies support), added in the 3rd gen. of Bare Metal Game servers (2024 release).
+- **Minecraft Pocket Edition**: Minecraft PE/Bedrock protection.
 
 #### Valheim
 
-- **Valheim**: New protecion engine, added in the 3rd gen. of Bare Metal Game servers (2024, EPYC based). 
+- **Valheim**: New protecion engine, added in the 3rd gen. of Bare Metal Game servers (2024 release). 
 
 > [!primary]
 > If you host a bigger service with one of the supported games, but still observe false positives from Anti-DDoS Infrastructure systems, please reach out to our support via the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to be able to tune up the application profile. 
@@ -159,7 +159,7 @@ While Additional IPs are enabling flexibility, there are situations that require
 To provide the most flexibility of configuration, different gaming protection rules can be set on different Additional IPs pointing to the same Bare Metal Game server.  
 The maximum number of rules and available protection settings are defined on a per-IP address basis, but are specific to the particular Bare Metal Game server generation behind the firewall.
 
-Differences may be observed between the newer Game servers (3rd gen. of Game Bare Metal servers - 2024, EPYC based) and the older Game servers (previous generations, usually identified as RISE-GAME or SYS-GAME).
+Differences may be observed between the newer Game servers (3rd gen. of Game Bare Metal servers, released in 2024) and the older Game servers (previous generations, usually identified as RISE-GAME or SYS-GAME).
 
 ##### Veryfying supported game protections
 

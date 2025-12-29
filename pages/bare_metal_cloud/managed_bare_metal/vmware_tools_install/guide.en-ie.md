@@ -16,13 +16,13 @@ VMware Tools improve the performance of a virtual machine and enable many of its
 
 ## Instructions
 
-The procedure for installing VMware Tools varies depending on the operating system of the virtual machine. For information about the specific procedure for each OS, see the VMware [documentation for VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
+The procedure for installing VMware Tools varies depending on the operating system of the virtual machine. For information about the specific procedure for each OS, see the VMware [documentation for VMware Tools](https://kb.vmware.com/s/article/1014294).
 
 ### Linux
 
 #### Recent versions
 
-Most recent Linux distributions offer the installation of VMware Tools via their package management systems, under the name [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link}.
+Most recent Linux distributions offer the installation of VMware Tools via their package management systems, under the name [*Open VM Tools*](https://kb.vmware.com/s/article/2073803).
 
 This allows VMware Tools to be kept up-to-date in the same way as other components of the VM's operating system. 
 

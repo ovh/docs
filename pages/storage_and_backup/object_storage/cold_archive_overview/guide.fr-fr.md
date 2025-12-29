@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2024-08-05
+updated: 2025-11-19
 ---
 
 <style>
@@ -9,6 +9,21 @@ updated: 2024-08-05
     width:100% !important;
 }
 </style>
+
+> [!warning]
+>
+> **Cette page est uniquement destinée aux clients existants du service Cold Archive standalone (granularité au niveau du bucket), introduit en 2023.**
+>
+> **Vous recherchez des solutions d'archivage compatibles S3<sup>1</sup> ?**
+>
+> OVHcloud Object Storage propose désormais d'archiver individuellement les objets plutôt que d'archiver l'ensemble du conteneur, grâce à l'ajout de la classe **Cold Archive** dans le cycle de vie Object Storage. En effet, la fonctionnalité est maintenant directement disponible dans votre dashboard Object Storage, depuis vos conteneurs Object Storage existants pour les régions éligibles :
+>
+> - Téléversez vos objets en choisissant la classe Cold Archive,
+> - ou utilisez les transitions de cycle de vie pour déplacer les données vers la classe Cold Archive.
+>
+> Pour en savoir plus sur cette classe de stockage, consultez notre guide « [Choisir la bonne classe de stockage pour vos besoins](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs) ».
+>
+> De plus, le service Cold Archive standalone (granularité au niveau du bucket) ne sera plus disponible à partir de l'espace client pour les nouveaux utilisateurs, sans impact pour les clients existants. Les API continueront à fonctionner et les données resteront bien sûr sécurisées et disponibles à tout moment. Nous modifions uniquement la manière dont les utilisateurs accéderont aux objets et les géreront.
 
 ## Objectif
 
@@ -43,7 +58,7 @@ Le service vous permet de vous concentrer sur la création et le déploiement d'
 
 ## Concepts
 
-Le service est entièrement géré par OVHcloud et accessible via l'API compatible S3 **\***.
+Le service est entièrement géré par OVHcloud et accessible via l'API compatible S3.
 
 ![Archive](images/restoring.PNG){.thumbnail}
 
@@ -82,7 +97,7 @@ Vous pouvez suivre les différentes étapes de vos données par le statut de vot
 | État de l'archive (=bucket) | Description | Permissions des objets | Durée | Tarification des données |
 | --- | --- | --- | --- | --- |
 | **`None`** | Aucune configuration Intelligent-Tiering appliquée au bucket pour l'instant. | Tous | illimité | Standard |
-| **`Archiving`** | Archivage en cours sur bandes. | Listing | <48h | Archive |
+| **`Archiving`** | Archivage en cours sur bandes. | Listing | N/A | Archive |
 | **`Archived`** | Objets archivés sur bandes uniquement. | Listing | illimité | Archive |
 | **`Restoring`** | Restauration en cours à partir des bandes. | Listing | <48h | Archive |
 | **`Restored`** | Objets restaurés et accessibles. | Lecture seule + Listing | 30 jours | Archive |
@@ -167,4 +182,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment faire évoluer son offre"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement web OVHcloud"
-updated: 2025-10-09
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -42,13 +42,28 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 > Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 > 
 
-Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
+Pour modifier votre abonnement, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
-Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
-
-![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
-
-Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans le cadre **Abonnement**, cliquez sur le bouton `...`{.action} à droite de **Offre** puis sur `Changer d'offre`{.action}.
+>>
+>> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
+>>
+>> Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
 
 ### Cas particuliers
 
@@ -62,17 +77,55 @@ Avec l'[option Boost](/links/web/hosting-options-boost), disponible sur nos offr
 
 Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
+Pour **activer l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+
 > [!tabs]
-> **Activer l'option Boost**
+> **Étape 1**
 >>
->> Pour activer l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Dans l'encadré `Informations générales` de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
->> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
-> **Désactiver l'option Boost**
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
->> Pour désactiver l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous dans l'onglet `Plus` puis cliquez sur `Booster mon offre`{.action}.<br>
->> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
->> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Dans l'encadré **Informations générales** de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de **Boost** puis sur `Booster mon offre`{.action}.
+>>
+>> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+
+Pour **désactiver l'option Boost**, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis cliquez sur `Booster mon offre`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}
+>>
+>> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 

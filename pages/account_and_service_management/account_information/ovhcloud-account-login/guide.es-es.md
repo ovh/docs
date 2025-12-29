@@ -4,11 +4,6 @@ excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
 updated: 2025-04-28
 ---
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/OiIwy54)
-
 ## Objetivo
 
 La gestión de sus servicios se realiza principalmente desde el área de cliente de OVHcloud.

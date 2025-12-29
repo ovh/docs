@@ -33,7 +33,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](/links/manager).
 
-Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
+Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ### Connessione da riga di comando
 

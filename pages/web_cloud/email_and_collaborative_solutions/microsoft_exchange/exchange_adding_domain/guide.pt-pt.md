@@ -102,7 +102,7 @@ No caso de a pastilha ser de cor vermelha:
     - Clique na etiqueta de cor vermelha `MX`, `SRV`, `SPF` e `DKIM` para ver as alterações que deve realizar. Se este domínio não utilizar a configuração da OVHcloud (ou seja, se não utilizar os seus servidores DNS), deverá realizar as modificações a partir da interface de gestão do seu domínio.
     - No âmbito de uma etiqueta `CNAME` vermelha, queira consultar o nosso guia explicando como [criar um registo CNAME ao adicionar um domínio associado](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

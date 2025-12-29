@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2025-08-27
+updated: 2025-10-27
 ---
 
 ## Wprowadzenie
@@ -77,15 +77,15 @@ Pojawi się następujący formularz:
 - **Zasoby**: dodaj zasoby lub grupy zasobów do pokrycia w ramach polityki. Dostępne zasoby są filtrowane według uprzednio wybranego typu produktu.
 - **Działania**.
 
-Istnieją 3 sposoby dodawania operacji:
+**Istnieją 4 sposoby dodawania operacji:**
 
-- Po włączeniu opcji `Zezwalaj na wykonywanie wszystkich operacji`{.action}
+##### 1 - Włącz opcję "Zezwalaj na wykonywanie wszystkich operacji"
 
 ![Tworzenie polityki](images/create_a_policy_02.png){.thumbnail}
 
 Podczas aktywacji tej opcji zatwierdzisz wszystkie operacje związane z wybranymi produktami. Obejmuje to wszystkie istniejące działania oraz przyszłe działania dodane do tych kategorii produktów.
 
-- Wybierając grupę uprawnień zarządzanych
+##### 2 - Wybierz grupę zarządzanych uprawnień
 
 Udostępniamy wstępnie skonfigurowane grupy uprawnień zarządzane przez OVHcloud.
 Możesz wybrać jedną lub kilka grup, wybierając je z dostępnej listy.
@@ -96,7 +96,7 @@ Szczegółowe informacje na temat zawartości grup uprawnień zarządzanych moż
 
 Zarządzane grupy akcji mogą być używane jako uzupełnienie akcji jednostkowych.
 
-- Ręcznie dodając operacje
+##### 3 - Dodaj działania ręcznie
 
 Jeśli znasz nazwę działania, możesz dodać ją ręcznie.
 
@@ -110,7 +110,7 @@ Na przykład, dodanie `vps:apiovh:ips/*` przyznaje następujące uprawnienia:
 - **vps:apiovh:ips/delete**
 - **vps:apiovh:ips/get**
 
-- Wybierając działania z listy
+##### 4 - Wybierz działania z listy
 
 Działania mogą być wybrane z listy.
 
@@ -127,7 +127,27 @@ Dostępne działania zależą od rodzaju zasobów i należą do jednej z pięciu
 Pole wyszukiwania jest dostępne, aby pomóc Ci zidentyfikować konkretne działanie na liście.
 
 > [!primary]
-> Operacje związane z produktami IP i vRack, jak również operacje związane z zamówieniem i płatnościami nie są jeszcze dostępne w IAM OVHcloud.
+> Działania związane z zamówieniami i fakturami nie są jeszcze dostępne w IAM OVHcloud.
+
+#### Warunki dla zasad
+
+Można dodać warunki do zasad IAM.
+
+Zasada z warunkami jest ważna tylko wtedy, gdy wszystkie warunki są zweryfikowane.
+
+Można dodać warunki dotyczące:
+
+- tagu zasobu;
+- nazwy zasobu;
+- typu produktu;
+- adresu IP żądania;
+- dnia tygodnia;
+- daty;
+- godziny.
+
+![Utwórz zasadę](images/conditions.png){.thumbnail}
+
+Po dodaniu warunki są wyświetlane zgodnie z [składnią używaną w API](/pages/account_and_service_management/account_information/iam-policies-api).
 
 #### Zmień politykę
 

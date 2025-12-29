@@ -1,6 +1,6 @@
 ---
 title: "Anúncios de fim de venda/vida Web Cloud Databases"
-updated: 2025-09-02
+updated: 2025-12-02
 ---
 
 ## Objetivo
@@ -16,12 +16,10 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 |MariaDB 11.8|A definir|A definir|A definir|
 |MySQL 8.0|2025-03-17|2025-09-30|2026-04-01|
 |MySQL 8.4|A definir|A definir|A definir|
-|PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
 |PostgreSQL 14|2025-02-12|2026-05-13|2026-11-12|
 |PostgreSQL 15|A definir|A definir|A definir|
 |PostgreSQL 16|A definir|A definir|A definir|
 |PostgreSQL 17|A definir|A definir|A definir|
-|Redis 7.0|2025-06-12|2025-09-12|2025-12-12|
 |Valkey 7.2|A definir|A definir|A definir|
 
 ## Quer saber mais?

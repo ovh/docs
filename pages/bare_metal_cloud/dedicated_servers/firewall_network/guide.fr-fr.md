@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2025-09-08
+updated: 2025-10-21
 ---
 
 ## Objectif
@@ -15,9 +15,9 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 > Pour plus d'informations sur notre solution Anti-DDoS, [cliquez ici](/links/security/antiddos).
 > 
 
-| ![global-schema](images/global_schema.png) | 
-|:--:| 
-| Comment DDoS mitigation est réalisée chez OVHcloud |
+| Infrastructure anti-DDoS et protection DDoS Game chez OVHcloud |
+|:--:|
+| ![global-schema](images/global_schema_2025.png) |
 
 ## Prérequis
 
@@ -41,6 +41,7 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 > [!primary]
 >
 > À date, cette fonctionnalité n'est disponible que pour les adresses IPv4.
+>
 
 > [!primary]
 >

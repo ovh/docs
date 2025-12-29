@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2025-10-09
+updated: 2025-10-21
 ---
 
 ## Objective
@@ -37,13 +37,28 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 
 ### Modifying your web hosting plan <a name="modify"></a>
 
-To modify your subscription, go to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
+To modify your subscription, click on the tabs below to view each of the **3** steps.
 
-In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
-
-![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
-
-Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the **Plan** box, click the `...`{.action} button to the right of **Solution**, then `Change plan`{.action}.
+>>
+>> ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
+>>
+>> Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
 ### Checking that your web hosting plan is compatible with a lower range solution <a name="checks"></a>
 
@@ -90,7 +105,7 @@ Once you have deleted data from your databases, recalculate the quota used. To d
 >>
 > **Step 5**
 >>
->> In the window that pops up, click the `Confirm`{.action} button directly.
+>> In the window that pops up, click the `Confirm`{.action} button.
 >>
 >> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
@@ -104,10 +119,27 @@ Once you have deleted data from your databases, recalculate the quota used. To d
 
 #### 2 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](/links/web/hosting-performance-offer), and you want to change your web hosting plan to a [Pro](/links/web/hosting-professional-offer) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.<br>
-To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, stay in the `General information`{.action} tab. In the central `Configuration` column, click the `...`{.action}' button to the right of the `Web Cloud Databases`{.action} heading, then `Detach`{.action}.
+If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](/links/web/hosting-performance-offer), and you want to change your web hosting plan to a [Pro](/links/web/hosting-professional-offer) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.
 
-![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
+To do this, click on the tabs below to view each of the **3** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> In the **Configuration** box, click the `...`{.action} button to the right of the **Web Cloud Databases** heading, then `Detach`{.action}.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 With this action, you can order a Web Cloud Databases solution that is independent of your *Performance* subscription. Your server data will be stored.
 
@@ -120,9 +152,26 @@ If you do not want to keep this data, you can also delete your Web Cloud Databas
 
 Make sure that the new solution offers enough [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) for you to be able to import files from your current hosting plan.
 
-To check the FTP storage space quota used on your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Web Hosting`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that pops up, you will find the quota under the heading `Disk space`.
+To check the FTP storage space quota used on your web hosting plan, click on the tabs below to view each of the **3** steps.
 
-![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> You can find the storage space utilization of your hosting in the **General information** box, under **Disk space**.
+>>
+>> ![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 #### 4 - Email accounts
 
@@ -184,17 +233,55 @@ With the [Boost option](/links/web/hosting-options-boost), available on our *Per
 
 If the **Boost** option is right for you, please find instructions below on how to **enable** or **disable** this option on your web hosting plan.
 
+To **enable the Boost option**, click on the tabs below to view each of the **3** steps.
+
 > [!tabs]
-> **Enable the Boost option**
+> **Step 1**
 >>
->> To enable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
->>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
-> **Disable the Boost option**
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
->> To disable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
->> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
->>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>>  In the **General information** box on the page that opens, click the `...`{.action} button to the right of **Boost**, then `Boost my hosting plan`{.action}.
+>>
+>> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
+
+To **disable the Boost option**, click on the tabs below to view each of the **4** steps.
+
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> On the page that pops up, click on the `More`{.action} tab, then click `Boost my hosting plan`{.action}.
+>>
+>> ![More tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more.png){.thumbnail}
+>>
+>> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
+>>
+> **Step 4**
+>>
+>> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.
+>>
+>> ![boost disable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}
 
 #### Billing when you change plans <a name="billing"></a>
 

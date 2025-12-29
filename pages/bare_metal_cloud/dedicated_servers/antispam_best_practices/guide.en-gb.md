@@ -279,4 +279,4 @@ Once the information is sent, our support team will communicate with Vade Secure
 
 ## Go further
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

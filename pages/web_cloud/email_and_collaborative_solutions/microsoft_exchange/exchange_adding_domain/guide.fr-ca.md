@@ -95,7 +95,7 @@ Dans le cas où la pastille est de couleur rouge :
     - Cliquez sur la pastille de couleur rouge `MX`, `SRV`, `SPF` et `DKIM` pour afficher les modifications que vous devez réaliser. Si ce nom de domaine n’utilise pas la configuration d’OVHcloud (ses serveurs DNS), vous devrez réaliser les modifications depuis l’interface de gestion de votre nom de domaine.
     - Dans le cadre d'une pastille `CNAME` rouge, veuillez vous référer à notre guide expliquant comment [créer un champ CNAME à l’ajout d’un domaine associé](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![exchange](images/add_domain_exchange_step4\.png){.thumbnail .w-600}
+![exchange](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >

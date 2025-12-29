@@ -79,7 +79,7 @@ Se trata de una seguridad normalmente de uso interno de OVHcloud, los snapshots 
 
 Se trata de una seguridad adicional de uso interno instalada en los datastores que solo debe servir como último recurso para evitar una posible pérdida de datos.
 
-Le recomendamos que utilice una solución de backup completa, como nuestro servicio [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service){.external-link} o cualquier otro sistema que realice un backup completo de sus máquinas virtuales.
+Le recomendamos que utilice una solución de backup completa, como nuestro servicio [Veeam Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) o cualquier otro sistema que realice un backup completo de sus máquinas virtuales.
 
 ## Más información
 
