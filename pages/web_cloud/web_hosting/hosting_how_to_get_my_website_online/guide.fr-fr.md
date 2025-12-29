@@ -126,7 +126,7 @@ Il se peut que vous trouviez sur votre espace de stockage un fichier intitulé �
 >
 > Cette partie est facultative si votre site web n'a pas besoin d'être relié à une base de données.
 
-Aujourd'hui, la plupart des systèmes de gestion de contenu (CMS), tels que WordPress et Joomla! utilisent une base de données pour y stocker des éléments dits dynamiques, comme des commentaires ou des articles. Une connexion entre les fichiers du site web et la base de données est donc essential afin que le site web puisse fonctionner correctement. Pour cela, il existe un fichier de configuration disposant des informations de la base qui permet cette connexion.
+Aujourd'hui, la plupart des systèmes de gestion de contenu (CMS), tels que WordPress et Joomla!, utilisent une base de données pour y stocker des éléments dits dynamiques, comme des commentaires ou des articles. Une connexion entre les fichiers du site web et la base de données est donc essentielle afin que le site web puisse fonctionner correctement. Pour cela, il existe un fichier de configuration disposant des informations de la base qui permet cette connexion.
 
 Selon le site web utilisé, ce lien doit être créé manuellement ou via une interface générée par le site web lui-même. Il est réalisé en différentes sous-étapes, dont certaines peuvent être facultatives.
 
