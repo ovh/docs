@@ -168,7 +168,7 @@ If you observe that it does not display properly, we recommend:
 
 - **Ensuring that no files are missing**: it is possible that during the upload of the files to your OVHcloud web hosting, you forgot some files or that an error occurred. Be careful during your operations to avoid breaking the link between the website files and the database (if it uses one).
 
-- **check that the website code does not contain errors**: this check is probably the most technical, but it is possible that the files you have uploaded contain errors and do not allow the server to display your website correctly, or not at all.
+- **Checking that the website code does not contain errors**: this check is probably the most technical, but it is possible that the files you have uploaded contain errors and do not allow the server to display your website correctly, or not at all.
 
 As a reminder, if you encounter any difficulties publishing your website, we recommend contacting a specialised provider and/or the publisher of the service (the CMS you have set up, for example).
 
