@@ -98,7 +98,7 @@ If needed, identify in advance in your web hosting the name of the root folder i
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Still connected to your storage space, you just need to download the files of your website by accessing the previously identified root folder.
+While still connected to your storage space, you just need to download the files of your website by accessing the previously identified root folder.
 
 ### 2 - Retrieve your database backup (optional)
 
