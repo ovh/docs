@@ -164,7 +164,7 @@ Once you have uploaded your files to your storage space and connected your datab
 
 If you observe that it does not display properly, we recommend:
 
-- **check the domain name configuration**: it is possible that the DNS configuration of the domain name does not allow it to display the website you have just uploaded to your OVHcloud web hosting. Make sure that the A record currently set in the DNS zone of your domain name corresponds to the IP address of your OVHcloud web hosting.
+- **Checking the domain name configuration**: it is possible that the DNS configuration of the domain name does not allow it to display the website you have just uploaded to your OVHcloud web hosting. Make sure that the A record currently set in the DNS zone of your domain name corresponds to the IP address of your OVHcloud web hosting.
 
 - **ensure that no files are missing**: it is possible that during the upload of the files to your OVHcloud web hosting, you forgot some files or an error occurred. Be careful during your operations to avoid breaking the link between the website files and the database (if it uses one).
 
