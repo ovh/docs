@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
-updated: 2025-04-07
+updated: 2025-12-19
 ---
 
 <style>
@@ -42,21 +42,22 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 
 ## Instruções
 
-### 1 - Associar o seu domínio ao alojamento web <a name="part-1"></a>
+### 1 - Atribuir o seu nome de domínio a um site na sua alojamento web <a name="part-1"></a>
 
 > [!success]
 >
 > Se subscreveu o seu nome de domínio e o seu alojamento web na mesma encomenda, estes dois serviços já estão associados. Passe diretamente para [Parte 2](#part-2) deste manual.
 
 1. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
-2. Selecione o separador `Multisite`{.action} quando posicionado no alojamento web em causa.
-3. Na página que vai aparecer, clique no botão `Ações`{.action} situado por cima da tabela com os nomes de domínio já declarados no alojamento web. A seguir, clique em `Adicionar um domínio ou subdomínio`{.action}.
-4. Na janela que se abrir, selecione e complete os elementos pedidos até à sua validação.
+2. Selecione o separador `Meus sites`{.action} quando posicionado no alojamento web em causa.
+3. No quadro que aparece, clique no botão `⁝`{.action} à direita do site criado automaticamente no momento da criação do seu alojamento web, e depois em `Adicionar um domínio`{.action}.
+4. Na nova página que se abre, selecione e preencha os elementos solicitados até à sua validação.
 
 /// details | Clique aqui para mais informações.
 
 Consulte os nossos guias detalhados:
 
+- [Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 

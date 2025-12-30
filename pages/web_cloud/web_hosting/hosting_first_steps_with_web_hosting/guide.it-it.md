@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2025-04-07
+updated: 2025-12-19
 ---
 
 <style>
@@ -42,21 +42,22 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 
 ## Procedura
 
-### 1 - Associare il dominio al tuo hosting Web <a name="part-1"></a>
+### 1 - Associare il tuo nome a dominio a un sito web sull'hosting web <a name="part-1"></a>
 
 > [!success]
 >
 > Se il dominio e l’hosting Web sono stati registrati con lo stesso ordine, i due servizi sono già associati. Consulta la [Parte 2](#part-2) di questa guida.
 
 1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
-2. Seleziona la scheda `Multisito`{.action} una volta posizionato sull’hosting Web interessato.
-3. Nella nuova pagina, clicca sul pulsante `Azioni`{.action} in alto nella tabella che elenca i domini già dichiarati sull’hosting Web. Clicca su `Aggiungi un dominio o un sottodominio`{.action}.
-4. Nella finestra che si apre, spunta e completa gli elementi richiesti fino alla loro convalida.
+2. Seleziona la scheda `I miei siti`{.action} una volta posizionato sull’hosting Web interessato.
+3. Nel tavolo che appare, clicca sul pulsante `⁝`{.action} a destra del sito web creato automaticamente al momento della creazione del tuo hosting web, quindi su `Aggiungi un dominio`{.action}.
+4. Nella nuova pagina che si apre, seleziona e completa gli elementi richiesti fino alla loro validazione.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
 Consulta le nostre guide dettagliate:
 
+- [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hosting Web - Modificare un dominio già associato a un hosting](/pages/web_cloud/web_hosting/multisites_modify_domain).
 

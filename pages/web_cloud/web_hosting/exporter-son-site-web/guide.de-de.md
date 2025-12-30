@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Ziel 
@@ -69,11 +69,36 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
-Nachdem Sie sich in Ihren Speicherplatz eingeloggt haben, können Sie die Dateien Ihrer Webseite herunterladen. **Wir empfehlen, besonders darauf zu achten, in welchem Verzeichnis die Website installiert ist.** Normalerweise befinden sich die Dateien der Website im Ordner "www". Wenn Sie jedoch Ihr Webhosting nutzen, um mehrere Websites zu hosten, haben Sie wahrscheinlich mehrere Ordner für die Websites deklariert.
+Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben und je nach Anzahl der darauf gehosteten Webseiten, können mehrere Ordner angezeigt werden.
 
-Um zu prüfen, in welchem Ordner Ihre Website gespeichert ist, wechseln Sie im OVHcloud Kundencenter zum Tab `Multisite`{.action}. Im angezeigten Tabellenbereich suchen Sie nach dem gewünschten Domainnamen und prüfen Sie das zugehörige `Wurzelverzeichnis`{.action}.
+Falls erforderlich, identifizieren Sie vorab im Webhosting den Namen des Stammordners, in dem Ihre Webseite gespeichert ist. Klicken Sie auf die nachfolgenden Tabs, um die **4** Schritte anzuzeigen.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Im angezeigten Tabelle für die gewünschte Webseite, beachten Sie den `Wurzelverzeichnis`{.action}, der angezeigt wird.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Solange Sie weiterhin bei Ihrem Speicherbereich angemeldet sind, müssen Sie lediglich die Dateien Ihrer Webseite herunterladen, indem Sie auf den zuvor identifizierten Stammordner zugreifen.
 
 ### 2 - Backup Ihrer Datenbank abrufen (optional)
 

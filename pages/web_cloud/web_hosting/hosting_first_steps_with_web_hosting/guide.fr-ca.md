@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2025-04-07
+updated: 2025-12-19
 ---
 
 <style>
@@ -41,21 +41,22 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 
 ## En pratique
 
-### 1 - Associer votre nom de domaine à votre hébergement web <a name="part-1"></a>
+### 1 - Associer votre nom de domaine à un site web sur votre hébergement web <a name="part-1"></a>
 
 > [!success]
 >
 > Si vous avez souscrit à votre nom de domaine et à votre hébergement web dans une même commande, ces deux services sont déjà associés. Passez directement à la [Partie 2](#part-2) de ce guide.
 
 1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-2. Sélectionnez l'onglet `Multisite`{.action} une fois positionné sur l'hébergement web concerné.
-3. Sur la page qui s'affiche, cliquez sur le bouton `Actions`{.action} situé au dessus du tableau listant les noms de domaine déjà déclarés sur l'hébergement web. Cliquez ensuite sur `Ajouter un domaine ou sous-domaine`{.action}.
-4. Dans la fenêtre qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
+2. Sélectionnez l'onglet `Mes sites`{.action} une fois positionné sur l'hébergement web concerné.
+3. Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web créé automatiquement lors de la création de votre hébergement web, puis sur `Ajouter un domaine`{.action}.
+4. Dans la nouvelle page qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
 
 /// details | Cliquez ici pour plus d'informations.
 
 Consultez nos guides détaillés :
 
+- [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain).
 

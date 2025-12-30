@@ -98,7 +98,7 @@ Si besoin, identifiez au préalable dans votre hébergement web le nom du dossie
 >>
 >> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-Toujours connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site web en accédant au dossier racine identifié précédemment. 
+Toujours connecté à votre espace de stockage, il ne vous reste plus qu’à télécharger les fichiers de votre site web en accédant au dossier racine identifié précédemment.
 
 ### 2 - Récupérer la sauvegarde de votre base de données (facultative)
 

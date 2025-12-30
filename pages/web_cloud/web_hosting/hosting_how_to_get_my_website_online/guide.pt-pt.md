@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Sumário
@@ -31,7 +31,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 - **Criar o seu próprio site**: esta solução é mais técnica e requer competências de programação, mas oferece a possibilidade de criar um projeto à medida.
 
-- **Migrar um site já existente para a OVHcloud**: esta solução pode revelar-se sensível se não desejar que se interrompa o acesso ao site. Se precisar de ajuda para o seu site, pode consultar o manual [“Como migrar um site e e-mails para a OVHcloud?”](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Migrar um site já existente para a OVHcloud**: esta solução pode revelar-se sensível se não desejar que se interrompa o acesso ao site. Para o ajudar nesta tarefa, convidamo-lo a consultar previamente esta documentação: [“Como migrar um site e e-mails para a OVHcloud?”](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Depois de ter avaliado as diferentes possibilidades descritas acima, pode escolher entre duas opções:
 
@@ -104,11 +104,17 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 #### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
-Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas carregar os ficheiros do seu site. **Convidamo-lo a prestar especial atenção ao diretório para o qual vai carregar os ficheiros**. Num cenário de utilização comum, o site deve ser carregado para a pasta "www". No entanto, se estiver a utilizar o seu alojamento para vários sítios Web, é muito provável que tenha declarado vários sítios Web.
+> [success]
+>
+> Se, a partir do seu [área de cliente OVHcloud](/links/manager), ainda não declarou o seu site no seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> Se, a partir do seu [área de cliente OVHcloud](/links/manager), ainda não associou o seu nome de domínio a um site web existente no seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVHcloud. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio correspondente. Esse é o diretório no qual deve colocar os ficheiros do site.
+Depois de ligado ao seu espaço de armazenamento, basta carregar os ficheiros do seu site. **Convidamo-lo a prestar especial atenção ao diretório em que vai carregar os ficheiros**, nomeadamente se declarou vários sites web no seu alojamento web.
 
-É possível que encontre no espaço de armazenamento um ficheiro intitulado “index.html”. Este último pode ter sido criado pela OVHcloud durante a instalação do seu alojamento para apresentar uma página predefinida no seu website. Se for esse o caso, não se esqueça de o eliminar quando publicar os seus ficheiros.
+Para verificar a pasta em que o site web deve ser publicado, posicione-se na aba `Meus sites`{.action} a partir do seu área de cliente OVHcloud. Na tabela que aparece, para o site web desejado, veja o `Pasta raiz`{.action} que aparece. Publique então os ficheiros do site web nessa pasta.
+
+Pode acontecer que encontre no seu espaço de armazenamento um ficheiro intitulado "index.html". Este pode ter sido criado pela OVHcloud durante a instalação do seu alojamento web para mostrar uma página predefinida no seu site web. Se for esse o caso, não se esqueça de o eliminar ao carregar os seus ficheiros.
 
 > [!primary]
 >
@@ -121,15 +127,14 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 > [!primary]
 >
 > Esta parte é opcional se o seu website não estiver associado a uma base de dados.
->
 
-Hoje em dia, praticamente todos os sistemas de gestão de conteúdos (CMS), como o WordPress e o Joomla!, usam uma base de dados para armazenar elementos ditos dinâmicos, como os comentários ou os artigos. Portanto, é indispensável uma ligação entre os ficheiros do site e a base de dados, de forma a que o site possa funcionar corretamente. Nesse sentido, existe um ficheiro de configuração que dispõe das informações da base e que permite essa ligação.
+Atualmente, a maioria dos sistemas de gestão de conteúdo (CMS), como WordPress e Joomla!, utilizam uma base de dados para armazenar elementos ditos dinâmicos, como comentários ou artigos. Uma ligação entre os ficheiros do site web e a base de dados é, portanto, essencial para que o site web possa funcionar corretamente. Para isso, existe um ficheiro de configuração que contém as informações da base que permite esta ligação.
 
-Em função do site utilizado, esta associação deve ser realizada manualmente ou através de uma interface de gestão própria do site. São precisas diferentes sub-etapas, algumas das quais são facultativas.
+Consoante o site web utilizado, esta ligação deve ser criada manualmente ou através de uma interface gerada pelo próprio site web. É realizada em diferentes sub-etapas, algumas das quais podem ser facultativas.
 
 #### 3.1. Obter a base de dados existente 
 
-Se estiver a migrar um site já existente, obtenha a base de dados junto do antigo fornecedor de alojamento. Se se trata de um novo site, prossiga para a etapa seguinte.
+Se está a migrar um site web, recupere a base de dados existente no seu antigo alojador. Se se trata de um novo site web, prossiga para a etapa seguinte.
 
 #### 3.2. Criar a base de dados na OVHcloud 
 
@@ -149,7 +154,7 @@ Se estiver a migrar um site, importe a base de dados existente para a que acabou
 
 A importação pode ser feita de várias formas. A OVHcloud disponibiliza uma através da Área de Cliente. Na Área de Cliente OVHcloud, clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Importar ficheiro`{.action}.
 
-#### 3.4. Associar o site à base de dados
+#### 3.4. Associar o site web à base de dados
 
 Quando a base de dados estiver disponível e os ficheiros tiverem sido carregados para o espaço de armazenamento, já só precisa de os associar. Certifique-se de que possui a informação necessária para se ligar à base de dados: o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
 
@@ -161,11 +166,11 @@ Uma vez os ficheiros descarregados para o espaço de armazenamento e a base de d
 
 Se constatar algum problema, sugerimos que:
 
-- **verifique a configuração do domínio**: é possível que a configuração DNS do domínio não esteja a permitir que este último apresente o site que acabou de descarregar para o alojamento web da OVHcloud. Certifique-se de que o registo A atualmente configurado na zona DNS do domínio corresponde ao endereço IP do seu alojamento web da OVHcloud;
+- **verificar a configuração do nome de domínio** : pode acontecer que a configuração DNS do nome de domínio não permita que este exiba o site web que acabou de carregar no seu alojamento web OVHcloud. Certifique-se de que o registo DNS do tipo A atualmente configurado na zona DNS do seu nome de domínio corresponde bem ao endereço IP do seu alojamento web OVHcloud.
 
-- **confirme se não há nenhum ficheiro em falta**: é possível que, durante o carregamento dos ficheiros para o alojamento web OVHcloud, se tenha esquecido de algum ou que tenha ocorrido um erro. Tenha cuidado durante as operações que realizar para não desfazer a associação entre os ficheiros do site e a base de dados (se utilizar alguma).
+- **certificar-se de que nenhum ficheiro está faltando** : pode acontecer que, durante o carregamento dos ficheiros no seu alojamento web OVHcloud, tenha esquecido alguns ficheiros ou que tenha ocorrido um erro. Mantenha-se atento durante as suas operações para não quebrar a ligação entre os ficheiros do site e a base de dados (se esta for utilizada).
 
-- **verifique se o código do site não contém erros**: esta verificação é seguramente a mais técnica, mas é possível que os ficheiros que carregou tenham erros e não permitam que o servidor apresente corretamente uma parte ou a integralidade do seu site.
+- **verificar que o código do site web não contém erros** : esta verificação é provavelmente a mais técnica, mas pode acontecer que os ficheiros que carregou contenham erros e não permitam ao servidor exibir corretamente, ou até mesmo não exibir, o seu site web.
 
 Relembramos que, se encontrar dificuldades durante a publicação do site, será melhor recorrer a um fornecedor especializado e/ou contactar o editor do serviço (do CMS instalado, por exemplo).
 

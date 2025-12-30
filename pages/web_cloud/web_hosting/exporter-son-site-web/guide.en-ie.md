@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2025-10-28
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -69,11 +69,36 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 #### 2.1 Download the files from your storage space
 
-Once connected to your storage space, you just need to download the files of your website. **We recommend that you pay particular attention to the directory in which you installed your website.** In a typical use case, the website should be located in the "www" folder. However, if you are using your hosting to host multiple websites, you have probably declared multiple websites.
+Once connected to your storage space and depending on the websites hosted on it, several folders may appear.
 
-To verify the folder in which your website is stored, go to the `Multisite`{.action} tab from your OVHcloud Control Panel. In the table that appears, for the desired domain, look at the `Root folder`{.action} that is displayed.
+If needed, identify in advance in your web hosting the name of the root folder in which your website is stored. To do this, click on the tabs below to view each of the **4** steps.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 4**
+>>
+>> In the table that appears, for the desired website, look at the `Root folder`{.action} that is displayed.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Still connected to your storage space, you just need to download the files of your website by accessing the previously identified root folder.
 
 ### 2 - Retrieve your database backup (optional)
 
