@@ -57,7 +57,7 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
-- [Jak powiązać nazwę domeny z istniejącą witryną internetową ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
+- [Jak powiązać nazwę domeny z istniejącą witryną internetową ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
@@ -130,8 +130,8 @@ Zapoznaj się z naszymi przewodnikami zawierającymi szczegółowe informacje na
 - [Logowanie do przestrzeni dyskowej FTP hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 - [Tworzenie automatycznych zadań (CRON) na twoim hostingu](/pages/web_cloud/web_hosting/cron_tasks).
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do [grona naszych użytkowników](/links/community).

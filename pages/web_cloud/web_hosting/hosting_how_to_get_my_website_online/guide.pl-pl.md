@@ -26,17 +26,17 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud ["Tworzenie strony internetowej z modułami za 1 kliknięciem"](/links/web/hosting-website). Możesz również zapoznać się z przewodnikiem ["Instalacja strony WWW za pomocą modułów 1 kliknięcia"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud "[Tworzenie strony internetowej z modułami za 1 kliknięciem](/links/web/hosting-website)". Możesz również zapoznać się z przewodnikiem "[Instalacja strony WWW za pomocą modułów 1 kliknięcia](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
 - **Samodzielna budowa strony WWW**: ta opcja wymaga kompetencji w zakresie programowania, ale daje możliwość stworzenia projektu na miarę.
 
-- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW. Aby ułatwić Ci tę procedurę, zachęcamy Cię, by wcześniej zapoznać się z tą dokumentacją: [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW. Aby ułatwić Ci tę procedurę, zachęcamy Cię, by wcześniej zapoznać się z tą dokumentacją: [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Po przeanalizowaniu powyższych opcji, masz dwie możliwości:
 
-- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules);
+- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)";
 
 - **nie chcesz użyć gotowego modułu OVHcloud**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVHcloud. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
  
@@ -92,9 +92,9 @@ Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Je
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web_cloud/web_hosting/ftp_connection).
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: "[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
->> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
+>> W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej dwa różnymi metodami:
 
@@ -166,11 +166,11 @@ Po zapisaniu plików na przestrzeni dyskowej i połączeniu z nią bazy danych (
 
 Jeśli nie wyświetla się, zalecamy następujące kroki:
 
-- **sprawdzić konfigurację nazwy domeny** : może się zdarzyć, że konfiguracja DNS nazwy domeny nie pozwala jej wyświetlić strony internetowej, którą właśnie przesłałeś na Twój hosting OVHcloud. Upewnij się, że obecnie skonfigurowany rekord DNS typu A w strefie DNS Twojej nazwy domeny odpowiada adresowi IP Twojego hostingu OVHcloud.
+- **sprawdzić konfigurację nazwy domeny**: może się zdarzyć, że konfiguracja DNS nazwy domeny nie pozwala jej wyświetlić strony internetowej, którą właśnie przesłałeś na Twój hosting OVHcloud. Upewnij się, że obecnie skonfigurowany rekord DNS typu A w strefie DNS Twojej nazwy domeny odpowiada adresowi IP Twojego hostingu OVHcloud.
 
-- **upewnić się, że nie brakuje żadnych plików** : może się zdarzyć, że podczas przesyłania plików na Twój hosting OVHcloud, zapomniałeś o niektórych plikach lub wystąpił błąd. Wciąż jednak zachowuj ostrożność podczas swoich działań, aby nie przerwać połączenia między plikami strony a bazą danych (jeśli taka istnieje).
+- **upewnić się, że nie brakuje żadnych plików**: może się zdarzyć, że podczas przesyłania plików na Twój hosting OVHcloud, zapomniałeś o niektórych plikach lub wystąpił błąd. Wciąż jednak zachowuj ostrożność podczas swoich działań, aby nie przerwać połączenia między plikami strony a bazą danych (jeśli taka istnieje).
 
-- **sprawdzić, czy kod strony internetowej nie zawiera błędów** : ta weryfikacja jest najbardziej techniczna, ale może się zdarzyć, że przesłane przez Ciebie pliki zawierają błędy i uniemożliwiają serwerowi poprawne, a nawet wcale wyświetlenie Twojej strony internetowej.
+- **sprawdzić, czy kod strony internetowej nie zawiera błędów**: ta weryfikacja jest najbardziej techniczna, ale może się zdarzyć, że przesłane przez Ciebie pliki zawierają błędy i uniemożliwiają serwerowi poprawne, a nawet wcale wyświetlenie Twojej strony internetowej.
 
 Przypominamy, że w przypadku trudności podczas uruchamiania Twojej strony na hostingu możesz skontaktować się z wyspecjalizowanym webmasterem lub administratorem usługi (np. zainstalowanego CMS).
 

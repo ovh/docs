@@ -24,17 +24,17 @@ Il existe une multitude de sites web. Qu'il s'agisse de blogs, de boutiques en l
 
 Avoir une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site web ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVHcloud.
 
-- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre, compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site web avec les modules en 1 clic »](/links/web/hosting-website). Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre, compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud « [Créer un site web avec les modules en 1 clic](/links/web/hosting-website) ». Vous pouvez également consulter le guide « [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVHcloud.
 
 - **Créer vous-même votre site web** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
-- **Migrer un site web déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons au préalable à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Migrer un site web déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons au préalable à consulter cette documentation : [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Après avoir évalué les différentes possibilités ci-dessus, deux choix s'offrent à vous :
 
-- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ;
+- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation « [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » ;
 
 - **vous ne souhaitez pas utiliser nos modules en 1 clic** : vous devrez réaliser l'installation de votre site manuellement sur votre hébergement. Pour cela, les informations présentes dans cette documentation pourront vous aider dans vos démarches, mais elles ne se substituent pas à l'aide d'un webmaster.
  
@@ -90,9 +90,9 @@ Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’in
 >>
 >> ![FTP - SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
->> Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection).
+>> Si nécessaire, nous vous invitons à consulter notre guide « [Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 >>
->> Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
+>> Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 
 Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de deux manières différentes :
 
@@ -162,7 +162,7 @@ Créer ce lien dépend du site web que vous êtes en train de mettre en ligne. C
 
 Une fois les fichiers téléchargés sur votre espace de stockage et la base de données liée à ce dernier (si votre site en utilise une), vous pouvez à présent accéder à votre site web. Celui-ci devrait ainsi s'afficher correctement par le biais de votre navigateur.
 
-Si vous constatez que celui-ci ne s'affiche pas correctement:
+Si vous constatez que celui-ci ne s'affiche pas correctement, nous vous recommandons de :
 
 - **vérifier la configuration du nom de domaine** : il se peut que la configuration DNS du nom de domaine ne permette pas à celui-ci d'afficher le site web que vous venez de télécharger sur votre hébergement web OVHcloud. Assurez-vous que l'enregistrement DNS de type A paramétré actuellement dans la zone DNS de votre nom de domaine correspond bien à l'adresse IP de votre hébergement web OVHcloud.
 

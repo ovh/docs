@@ -24,17 +24,17 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite "[Wie erstelle ich eine Website?](/links/web/hosting-website)" vorgestellt werden. Beachten Sie dazu auch die Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite „[Wie erstelle ich eine Website?](/links/web/hosting-website) vorgestellt werden. Beachten Sie dazu auch die Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
 - **Website selbst erstellen**: Hier sind sowohl technische als auch Programmierkenntnisse erforderlich. Aber Sie haben auch die größte Gestaltungsfreiheit für eine Website ganz nach Ihren Vorstellungen.
 
-- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, empfehlen wir Ihnen, vorab diese Dokumentation zu konsultieren: [„Migration Ihrer Website und E-Mails zu OVHcloud“](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, empfehlen wir Ihnen, vorab diese Dokumentation zu konsultieren: „[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“.
 
 Nachdem Sie eine der Möglichkeiten ausgewählt haben, ergeben sich die folgenden zwei Optionen:
 
-- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
 - **Sie möchten keine 1-Klick-Module verwenden**: Stellen Sie Ihre Website manuell auf Ihrem Hosting online. In dieser Anleitung geben wir Ihnen einige Informationen, die Ihnen hierbei helfen. Sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
  
@@ -164,11 +164,11 @@ Nachdem Sie die Dateien auf den Speicherplatz hochgeladen und die Datenbank mit 
 
 Ist das nicht der Fall, empfehlen wir Ihnen Folgendes:
 
-- **Prüfung der Domain-Konfiguration** : Es kann sein, dass die DNS-Konfiguration der Domain nicht erlaubt, dass diese die Website anzeigt, die Sie soeben auf Ihrem OVHcloud Webhosting heruntergeladen haben. Stellen Sie sicher, dass der aktuell in der DNS-Zone Ihrer Domain konfigurierte A-Eintrag tatsächlich der IP-Adresse Ihres OVHcloud Webhostings entspricht.
+- **Prüfung der Domain-Konfiguration**: Es kann sein, dass die DNS-Konfiguration der Domain nicht erlaubt, dass diese die Website anzeigt, die Sie soeben auf Ihrem OVHcloud Webhosting heruntergeladen haben. Stellen Sie sicher, dass der aktuell in der DNS-Zone Ihrer Domain konfigurierte A-Eintrag tatsächlich der IP-Adresse Ihres OVHcloud Webhostings entspricht.
 
-- **Stellen Sie sicher, dass keine Dateien fehlen** : Es kann vorkommen, dass Sie beim Hochladen der Dateien auf Ihr OVHcloud Webhosting Dateien vergessen haben oder ein Fehler aufgetreten ist. Seien Sie dennoch vorsichtig bei Ihren Handlungen, um den Link zwischen den Dateien der Website und der Datenbank (sofern diese verwendet wird) nicht zu zerstören.
+- **Stellen Sie sicher, dass keine Dateien fehlen**: Es kann vorkommen, dass Sie beim Hochladen der Dateien auf Ihr OVHcloud Webhosting Dateien vergessen haben oder ein Fehler aufgetreten ist. Seien Sie dennoch vorsichtig bei Ihren Handlungen, um den Link zwischen den Dateien der Website und der Datenbank (sofern diese verwendet wird) nicht zu zerstören.
 
-- **Überprüfen Sie, ob der Website-Code Fehler enthält** : Diese Prüfung ist vermutlich die technischste. Es kann sein, dass die von Ihnen heruntergeladenen Dateien Fehler enthalten und der Server Ihre Website nicht ordnungsgemäß, oder sogar gar nicht, anzeigt.
+- **Überprüfen Sie, ob der Website-Code Fehler enthält**: Diese Prüfung ist vermutlich die technischste. Es kann sein, dass die von Ihnen heruntergeladenen Dateien Fehler enthalten und der Server Ihre Website nicht ordnungsgemäß, oder sogar gar nicht, anzeigt.
 
 Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes (zum Beispiel des installierten CMS) zu kontaktieren.
 

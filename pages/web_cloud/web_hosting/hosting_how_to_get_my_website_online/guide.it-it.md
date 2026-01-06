@@ -24,17 +24,17 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVHcloud offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](/links/web/hosting-website). Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud "[Creare un sito Internet con i moduli in 1 click](/links/web/hosting-website)". Per maggiori informazioni, consulta la guida "[Installare il proprio sito con i moduli in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVHcloud.
 
 - **creare un sito Web in autonomia**: questa soluzione è più tecnica e richiede competenze di programmazione, ma offre la possibilità di realizzare un progetto totalmente personalizzato.
 
-- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per aiutarti in questa procedura, ti invitiamo a consultare in anticipo questa documentazione : [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per aiutarti in questa procedura, ti invitiamo a consultare in anticipo questa documentazione: [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 In base all’opzione scelta, hai quindi due possibilità: 
 
-- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida "[Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster.
  
@@ -165,11 +165,11 @@ Dopo aver caricato i file sullo spazio di storage e associato l’eventuale data
 
 Se riscontri problemi di visualizzazione, ti consigliamo di:
 
-- **verificare la configurazione del nome di dominio** : è possibile che la configurazione DNS del nome di dominio non permetta a quest'ultimo di visualizzare il sito web che hai appena scaricato sull'hosting web OVHcloud. Assicurati che l'attuale record DNS di tipo A configurato nella zona DNS del tuo nome di dominio corrisponda effettivamente all'indirizzo IP del tuo hosting web OVHcloud.
+- **verificare la configurazione del nome di dominio**: è possibile che la configurazione DNS del nome di dominio non permetta a quest'ultimo di visualizzare il sito web che hai appena scaricato sull'hosting web OVHcloud. Assicurati che l'attuale record DNS di tipo A configurato nella zona DNS del tuo nome di dominio corrisponda effettivamente all'indirizzo IP del tuo hosting web OVHcloud.
 
-- **assicurarsi che nessun file manchi** : è possibile che durante il caricamento dei file verso il tuo hosting web OVHcloud tu abbia dimenticato alcuni file o che si sia verificato un errore. Rimani comunque attento durante le tue operazioni per non rompere il collegamento tra i file del sito e il database (se lo utilizza).
+- **assicurarsi che nessun file manchi**: è possibile che durante il caricamento dei file verso il tuo hosting web OVHcloud tu abbia dimenticato alcuni file o che si sia verificato un errore. Rimani comunque attento durante le tue operazioni per non rompere il collegamento tra i file del sito e il database (se lo utilizza).
 
-- **verificare che il codice del sito web non presenti errori** : questa verifica è probabilmente la più tecnica, ma è possibile che i file che hai scaricato contengano errori e non permettano al server di visualizzare correttamente, se non addirittura affatto, il tuo sito web.
+- **verificare che il codice del sito web non presenti errori**: questa verifica è probabilmente la più tecnica, ma è possibile che i file che hai scaricato contengano errori e non permettano al server di visualizzare correttamente, se non addirittura affatto, il tuo sito web.
 
 In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consigliamo di rivolgerti a uno specialista del settore o contattare il fornitore del servizio (ad esempio, del CMS installato). 
 

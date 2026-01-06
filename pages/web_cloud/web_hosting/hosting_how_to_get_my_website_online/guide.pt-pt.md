@@ -25,7 +25,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 É primordial que tenha uma visão clara do seu objetivo para conduzir o projeto a bom porto. O que é que pretende fazer com o seu site? Como quer publicá-lo? Tem ao seu dispor várias possibilidades para concretizar o seu projeto num alojamento web da OVHcloud.
 
-- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud propõe quatro já compatíveis com as nossas infraestruturas com os seus módulos 1 clique a descobrir na página web da OVHcloud ["Criar um site Internet com os módulos 1 clique"](/links/web/hosting-website). Pode igualmente consultar o guia ["Instalar o seu site com os módulos 1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud propõe quatro já compatíveis com as nossas infraestruturas com os seus módulos 1 clique a descobrir na página web da OVHcloud "[Criar um site Internet com os módulos 1 clique](/links/web/hosting-website)". Pode igualmente consultar o guia "[Instalar o seu site com os módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Usar um site chave-na-mão de instalação manual**: esta solução permite beneficiar de uma estrutura de site pronta a ser usada e personalizável (tema, textos, etc.), que deverá instalar no seu alojamento web da OVHcloud.
 
@@ -35,7 +35,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 Depois de ter avaliado as diferentes possibilidades descritas acima, pode escolher entre duas opções:
 
-- **Pretende utilizar os módulos 1 clique**: siga as instruções do manual[”Como instalar um CMS para criar um site”](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Pretende utilizar os módulos 1 clique**: siga as instruções do manual "[Como instalar um CMS para criar um site](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Não pretende utilizar os módulos 1 clique**: terá de efetuar manualmente a instalação do site no alojamento. As informações presentes neste manual poderão ser úteis. No entanto, se precisar de ajuda, pode contactar um webmaster.
  
@@ -92,9 +92,9 @@ Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojam
 >>
 >> ![FTP -SSH tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 >>
->> Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection).
+>> Caso seja necessário, consulte o nosso manual: "[Aceder ao espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)".
 >>
->> Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
+>> Caso tenha perdido a palavra-passe, consulte o manual "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de dois formas:
 
@@ -166,11 +166,11 @@ Uma vez os ficheiros descarregados para o espaço de armazenamento e a base de d
 
 Se constatar algum problema, sugerimos que:
 
-- **verificar a configuração do nome de domínio** : pode acontecer que a configuração DNS do nome de domínio não permita que este exiba o site web que acabou de carregar no seu alojamento web OVHcloud. Certifique-se de que o registo DNS do tipo A atualmente configurado na zona DNS do seu nome de domínio corresponde bem ao endereço IP do seu alojamento web OVHcloud.
+- **verificar a configuração do nome de domínio**: pode acontecer que a configuração DNS do nome de domínio não permita que este exiba o site web que acabou de carregar no seu alojamento web OVHcloud. Certifique-se de que o registo DNS do tipo A atualmente configurado na zona DNS do seu nome de domínio corresponde bem ao endereço IP do seu alojamento web OVHcloud.
 
-- **certificar-se de que nenhum ficheiro está faltando** : pode acontecer que, durante o carregamento dos ficheiros no seu alojamento web OVHcloud, tenha esquecido alguns ficheiros ou que tenha ocorrido um erro. Mantenha-se atento durante as suas operações para não quebrar a ligação entre os ficheiros do site e a base de dados (se esta for utilizada).
+- **certificar-se de que nenhum ficheiro está faltando**: pode acontecer que, durante o carregamento dos ficheiros no seu alojamento web OVHcloud, tenha esquecido alguns ficheiros ou que tenha ocorrido um erro. Mantenha-se atento durante as suas operações para não quebrar a ligação entre os ficheiros do site e a base de dados (se esta for utilizada).
 
-- **verificar que o código do site web não contém erros** : esta verificação é provavelmente a mais técnica, mas pode acontecer que os ficheiros que carregou contenham erros e não permitam ao servidor exibir corretamente, ou até mesmo não exibir, o seu site web.
+- **verificar que o código do site web não contém erros**: esta verificação é provavelmente a mais técnica, mas pode acontecer que os ficheiros que carregou contenham erros e não permitam ao servidor exibir corretamente, ou até mesmo não exibir, o seu site web.
 
 Relembramos que, se encontrar dificuldades durante a publicação do site, será melhor recorrer a um fornecedor especializado e/ou contactar o editor do serviço (do CMS instalado, por exemplo).
 

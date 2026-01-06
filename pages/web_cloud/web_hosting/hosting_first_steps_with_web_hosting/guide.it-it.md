@@ -42,7 +42,7 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 
 ## Procedura
 
-### 1 - Associare il tuo nome a dominio a un sito web sull'hosting web <a name="part-1"></a>
+### 1 - Associare il tuo nome di dominio a un sito web sull'hosting web <a name="part-1"></a>
 
 > [!success]
 >
@@ -57,7 +57,7 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 
 Consulta le nostre guide dettagliate:
 
-- [Come associare un nome a dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
+- [Come associare un nome di dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hosting Web - Modificare un dominio già associato a un hosting](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
@@ -70,7 +70,7 @@ Negli hosting Web, OVHcloud propone di installare gratuitamente i CMS WordPress,
 1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 2. Seleziona la scheda `CMS in 1 click`{.action} una volta posizionato sull’hosting Web interessato.
 3. Clicca sul pulsante `Aggiungi un modulo`{.action}.
-4. Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome a dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
+4. Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome di dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -130,7 +130,7 @@ Consulta qui sotto una selezione delle nostre guide che descrivono le principali
 - [Accedi allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 - [Crea task automatizzati (CRON) sul tuo hosting Web](/pages/web_cloud/web_hosting/cron_tasks).
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

@@ -57,7 +57,7 @@ details[open]>summary::before {
 
 Consulte nuestras guías detalladas:
 
-- [¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
+- [¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Web hosting - Modificar un dominio ya asociado a un alojamiento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
