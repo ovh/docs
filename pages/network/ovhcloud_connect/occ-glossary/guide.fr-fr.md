@@ -30,6 +30,8 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 
 ### D
 
+**Datacenter (DC) :** Site physique regroupant les infrastructures informatiques où sont hébergés vos services OVHcloud . Dans le cadre d'OVHcloud Connect, le c'est la destination finale de vos données (EndPoint).
+
 **Direct :** Type de raccordement où vous (ou votre opérateur) tirez une fibre physique directement jusqu'à une baie OVHcloud.
 
 ### E
@@ -56,7 +58,7 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 
 ### P
 
-**PoP (Point of Presence) :** Lieu physique (centre de données tiers) où le réseau OVHcloud est disponible pour le raccordement. Les PoP accessibles sont listés sur [ce lien de notre site web](/links/network/ovhcloud-connect).
+**PoP (Point of Presence) :** Lieu physique (centre de données tiers) où le réseau OVHcloud est disponible pour le raccordement. Il s'agit aussi du point d'entrée de vos données dans le réseau privé d'OVHcloud. Les PoP accessibles sont listés sur [ce lien de notre site web](/links/network/ovhcloud-connect).
 
 **Provider (Partenaire) :** Connexion via un opérateur tiers qui possède déjà un lien physique vers les infrastructures OVHcloud.
 
