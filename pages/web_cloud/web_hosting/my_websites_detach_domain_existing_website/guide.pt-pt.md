@@ -19,7 +19,7 @@ Tem de alterar a pasta raiz associada ao seu site web e criar um novo site web n
 - Dispor de uma oferta de [alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
 - Dispor de um ou vários [nomes de domínio](/links/web/domains).
 - Poder modificar a configuração dos seus nomes de domínio a partir das [zonas DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Estar ligado à sua [área de cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
+- Estar ligado à sua [Área de Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
 
 ## Instruções
 
