@@ -10,7 +10,6 @@ Pode alojar vários sites web na mesma oferta de alojamento web, mesmo que os no
 
 Já não deseja utilizar um nome de domínio ou subdomínio para o seu site web? 
 Deseja associar o seu nome de domínio ou subdomínio a outro site web num dos seus alojamentos web? 
-Tem de alterar a pasta raiz associada ao seu site web e criar um novo site web no seu alojamento web para isso?
 
 **Descubra como desassociar um nome de domínio ou subdomínio de um site web já existente no seu alojamento web.**
 

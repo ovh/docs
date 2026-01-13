@@ -10,7 +10,6 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i n
 
 Non desideri più utilizzare un nome di dominio o un sottodominio per il tuo sito web?
 Vuoi associare il tuo nome di dominio o sottodominio a un altro sito web su uno dei tuoi hosting web?
-Devi modificare la cartella radice associata al tuo sito web e creare un nuovo sito web sul tuo hosting web per farlo?
 
 **Questa guida ti mostra come scollegare un nome di dominio o un sottodominio da un sito web già esistente sul tuo hosting web.**
 

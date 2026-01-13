@@ -10,7 +10,6 @@ Sie können mehrere Websites auf derselben Webhosting Angebot nutzen, selbst wen
 
 Möchten Sie einen Domainnamen oder eine Subdomain nicht länger für Ihre Website verwenden?  
 Möchten Sie Ihren Domainnamen oder Ihre Subdomain einer anderen Website auf einem Ihrer Webhostings zuordnen?  
-Müssen Sie den Root-Ordner ändern, der mit Ihrer Website verknüpft ist, und eine neue Website auf Ihrem Webhosting erstellen?
 
 **Diese Anleitung erklärt, wie Sie einen Domainnamen oder eine Subdomain von einer bereits existierenden Website auf Ihrem Webhosting trennen können.**
 

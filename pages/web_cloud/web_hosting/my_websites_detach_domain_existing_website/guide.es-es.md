@@ -10,7 +10,6 @@ Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si
 
 ¿Ya no quiere utilizar un nombre de dominio o subdominio para su sitio web?
 ¿Quiere asociar su nombre de dominio o subdominio a otro sitio web en uno de sus alojamientos web?
-¿Tiene que cambiar la carpeta raíz asociada a su sitio web y crear un nuevo sitio web en su alojamiento web para ello?
 
 **Descubra cómo desvincular un nombre de dominio o subdominio de un sitio web ya existente en su alojamiento web.**
 

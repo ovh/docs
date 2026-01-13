@@ -10,7 +10,6 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 
 Vous ne souhaitez plus utiliser un nom de domaine ou un sous-domaine pour votre site web ?
 Vous voulez associer votre nom de domaine ou votre sous-domaine à un autre site web sur l'un de vos hébergements web ?
-Vous devez changer le dossier racine associé à votre site web et créer un nouveau site web sur votre hébergement web pour cela ?
 
 **Découvrez comment détacher un nom de domaine ou un sous-domaine d'un site web déjà existant sur votre hébergement web.**
 

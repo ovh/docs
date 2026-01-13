@@ -10,7 +10,6 @@ Możesz hostować wiele stron internetowych na jednym pakiecie hostingu, nawet j
 
 Nie chcesz już używać nazwy domeny lub poddomeny dla swojej strony internetowej?
 Chcesz przypisać swoją nazwę domeny lub poddomenę do innej strony internetowej na jednym z Twoich hostingu?
-Musisz zmienić katalog główny przypisany do swojej strony internetowej i utworzyć nową stronę internetową na swoim hostingu?
 
 **Dowiedz się, jak odłączyć nazwę domeny lub poddomenę od istniejącej strony internetowej na Twoim hostingu.**
 

@@ -8,7 +8,8 @@ updated: 2025-12-19
 
 You can host multiple websites on the same web hosting plan, even if the domain names are not registered with OVHcloud. In addition, you can associate one or more domain names or subdomains with the same website.
 
-Do you no longer want to use a domain name or subdomain for your website? Do you want to associate your domain name or subdomain with another website on one of your web hosting plans? Do you need to change the root folder associated with your website and create a new website on your web hosting for this purpose?
+Do you no longer want to use a domain name or subdomain for your website?
+Do you want to associate your domain name or subdomain with another website on one of your web hosting plans?
 
 **Find out how to detach a domain name or subdomain from an existing website on your web hosting.**
 
