@@ -1,14 +1,25 @@
 ---
-title: "How to correct the contact details of a domain name owner"
-excerpt: "Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
-updated: 2025-05-21
+title: "Manage the contact details of a domain name owner"
+excerpt: "Find out how to verify, correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
+updated: 2026-01-13
 ---
 
 ## Objective
 
-Have you received an email from OVHcloud notifying you that an action is required for your domain name? Does the same email inform you that the contact details (contact information) relating to your domain name owner must be corrected or completed?
+Have you received an email from OVHcloud stating that action is required for your domain name? Does the same email indicate that the contact details (contact information) relating to your domain name owner must be corrected or completed?
 
 **Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud.**
+
+## Why did I receive a contact verification email from OVHcloud?
+
+ICANN, the organization responsible for governing domain names globally, or registries, organizations responsible for managing extensions, require the validation of owner information when a domain name is created, transferred, or whenever associated contacts are updated.
+
+Thus, each domain concerned must undergo verification of the owner's contact details within 15 days of purchase, transfer, or modification of the contact details.
+
+## What happens if the owner's email or contact information is not verified within the timeframe?
+
+If verification is not completed within the specified timeframe, the domain name is automatically suspended and becomes temporarily unavailable until verification is completed, potentially resulting in the deletion of the domain name.
+In this case, OVHcloud will not be able to provide any refund.
 
 ## Requirements
 
@@ -16,12 +27,36 @@ Have you received an email from OVHcloud notifying you that an action is require
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have received an email from OVHcloud stating that action is required regarding your domain name owner contact details.
 - Check the following points to ensure that this is not a fraudulent email:
-- The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
-- The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
+    - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
+    - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Instructions
 
-### 1 - Correct or complete the contact details of the domain name owner
+### 1 - Owner email verification after purchase or modification of the owner's contact email for a domain name
+
+Click on the tabs below to view each of the **2** steps.
+
+> [!tabs]
+> **Step 1**
+
+>> After the order, the domain name owner will receive an email from OVH to validate their email address and confirm it is reachable.
+
+> **Step 2**
+
+By clicking on "Confirm your email address", a new page will open with a link directly validating the owner's email address.
+
+>> ![Email address verification](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
+
+> **Step 2 bis**
+
+If step 2 does not work, the owner can manually validate their email address using the one-time code provided in the email and by clicking on "Email validation form"
+
+>> ![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
+
+>> ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
+
+
+### 2 - Correct or complete the contact details of the domain name owner as an administrator
 
 Click on the tabs below to view each of the **5** steps.
 
@@ -66,7 +101,23 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> Find more details on changing the owner in our guide: “[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)”.
 
-### 2 - Relaunch the operation to verify the contact details of the domain name owner
+### 3 - What to do if the owner contact's email address is no longer accessible?
+
+> **General case**
+
+If the email address associated with your domain name is incorrect or inaccessible (for example due to a typing error), we invite you to contact OVHcloud Support:
+
+https://help.ovhcloud.com/csm?id=contact_us_ovh
+
+Note that the domain owner will need to verify their identity again by providing the necessary documents according to their type (individual, business, association, etc.).
+
+Our team will help you with the next steps to verify your domain 😊
+
+> **Special case for .fr**
+
+For .fr extensions, the domain administrator can go directly to their Control Panel and modify the owner contact's email address by following the steps described in "Step 2" of this page.
+
+### 4 - Relaunch the operation to verify the contact details of the domain name owner
 
 > [!warning]
 >
