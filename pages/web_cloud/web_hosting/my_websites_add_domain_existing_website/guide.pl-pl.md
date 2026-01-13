@@ -82,11 +82,11 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >> > [!primary]
 >> > Aby dodać poddomenę, najpierw wybierz nazwę domeny z listy (np. domain.tld). Następnie zaznacz pole wyboru oznaczone `Utwórz subdomenę`{.action}. Pojawi się pole tekstowe, w którym możesz wpisać poddomenę (np. **sub**.domain.tld).
 >> >
->> > **Szczególny przypadek** : Poddomeny w formie `www` (np. **www**.domain.tld) są automatycznie dodawane wraz z nazwą domeny. Dlatego nie musisz podawać tej konkretnej poddomeny w polu tekstowym.
+>> > **Szczególny przypadek**: Poddomeny w formie `www` (np. **www**.domain.tld) są automatycznie dodawane wraz z nazwą domeny. Dlatego nie musisz podawać tej konkretnej poddomeny w polu tekstowym.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
->> Jeśli chcesz skorzystać z jednej z **Opcji zaawansowanych**, aktywuj przycisk `Konfiguracja zaawansowana`{.action} i przejdź bezpośrednio do **kroku 7**. W przeciwnym razie przejdź do **kroku 6**.
+>> Jeśli chcesz skorzystać z jednej z **opcji zaawansowanych**, aktywuj przycisk `Konfiguracja zaawansowana`{.action} i przejdź bezpośrednio do **kroku 7**. W przeciwnym razie przejdź do **kroku 6**.
 >>
 > **Krok 6**
 >>
@@ -96,7 +96,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >>
 >> Konfiguracja DNS zostanie automatycznie wykonana, jeśli aktywna strefa DNS Twojej nazwy domeny jest zarządzana w Twoim Panelu klienta OVHcloud.
 >>
->> W przeciwnym przypadku skorzystaj z poniższych przewodników, aby ręcznie skonfigurować swoją strefę DNS :
+>> W przeciwnym przypadku skorzystaj z poniższych przewodników, aby ręcznie skonfigurować swoją strefę DNS:
 >>
 >> - [Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
@@ -124,10 +124,10 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >> |Firewall|Umożliwia włączenie zapory (filtr i analiza żądań) dla wybranej nazwy domeny.<br> Dowiedz się więcej dzięki [tej stronie](/links/web/hosting-options).|
 >> |CDN|Umożliwia włączenie CDN (przechowywanie w pamięci podręcznej elementów statycznych Twojej strony internetowej, takich jak obrazy) dla wybranej nazwy domeny.<br> Dowiedz się więcej dzięki [naszej stronie CDN](/links/web/hosting-options-cdn).<br> Włączając SSL i CDN, możesz również skorzystać z protokołu **HTTP/2** (ten protokół jest domyślnie włączony w naszym centrum danych w Gravelines).|
 >>
->> Po aktywowaniu przycisku `Konfiguracja zaawansowana`{.action}, możesz również wybrać tryb konfiguracji DNS dla swojej nazwy domeny :
+>> Po aktywowaniu przycisku `Konfiguracja zaawansowana`{.action}, możesz również wybrać tryb konfiguracji DNS dla swojej nazwy domeny:
 >>
 >> - **Dla automatycznej konfiguracji DNS**, pozostaw zaznaczone pole `Konfiguracja automatyczna (Rekomendujemy)`{.action}.
->> - **Dla ręcznej konfiguracji DNS**, zaznacz pole `Konfiguracja ręczna`{.action}. Aby wykonać konfigurację, skorzystaj z poniższych przewodników :
+>> - **Dla ręcznej konfiguracji DNS**, zaznacz pole `Konfiguracja ręczna`{.action}. Aby wykonać konfigurację, skorzystaj z poniższych przewodników:
 >>     - [Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 >>
@@ -180,7 +180,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >>
 >> > [!success]
 >> >
->> > **Szczególny przypadek** : Poddomeny w formie `www` (np. **www**.domain.tld) są automatycznie dodawane wraz z nazwą domeny. Dlatego nie musisz podawać tej konkretnej poddomeny w polu tekstowym.
+>> > **Szczególny przypadek**: Poddomeny w formie `www` (np. **www**.domain.tld) są automatycznie dodawane wraz z nazwą domeny. Dlatego nie musisz podawać tej konkretnej poddomeny w polu tekstowym.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 >>
@@ -188,7 +188,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >>
 >> > [!primary]
 >> >
->> > W przeciwieństwie do nazw domen zarządzanych bezpośrednio z poziomu Twojego Panelu klienta OVHcloud, **Opcje zaawansowane** nie są bezpośrednio dostępne podczas dodawania zewnętrznej nazwy domeny lub poddomeny do Twojej strony internetowej.
+>> > W przeciwieństwie do nazw domen zarządzanych bezpośrednio z poziomu Twojego Panelu klienta OVHcloud, **opcje zaawansowane** nie są bezpośrednio dostępne podczas dodawania zewnętrznej nazwy domeny lub poddomeny do Twojej strony internetowej.
 >> >
 >> > Jednak **wszystkie te funkcje można włączyć później, po dodaniu zewnętrznej nazwy domeny lub poddomeny do Twojej strony internetowej.** Aby to zrobić, skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
@@ -275,7 +275,7 @@ Nie wahaj się skorzystać z [naszego dedykowanego przewodnika](/pages/web_cloud
 
 [Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

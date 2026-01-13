@@ -20,18 +20,18 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si los Dominios no están registrados en OVHcloud. Además, puede asociar uno o varios Dominios o subdominios al mismo sitio web.
+Puede alojar varios sitios web en la misma oferta de alojamiento web, incluso si los dominios no están registrados en OVHcloud. Además, puede asociar uno o varios dominios o subdominios al mismo sitio web.
 
 > [!primary]
-> Si aún no ha creado el sitio web correspondiente en su alojamiento web, consulte **directamente** [este guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> Si aún no ha creado el sitio web correspondiente en su alojamiento web, consulte **directamente** [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 **Descubra cómo asociar un nombre de dominio o un subdominio a un sitio web ya existente en su alojamiento web.**
 
 ## Requisitos
 
 - Disponer de una oferta de [alojamiento web OVHcloud](/links/web/hosting-multisite) compatible.
-- Disponer de uno o varios [Dominios](/links/web/domains).
-- Poder modificar la configuración de sus Dominios desde sus [zonas DNS](/pages/web_cloud/domains/dns_zone_edit).
+- Disponer de uno o varios [dominios](/links/web/domains).
+- Poder modificar la configuración de sus dominios desde sus [zonas DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager), parte `Web Cloud`{.action}.
 
 ## Procedimiento
@@ -82,11 +82,11 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >> > [!primary]
 >> > Para añadir un subdominio, seleccione primero el nombre de dominio en la lista (por ejemplo: domain.tld). Marque después la casilla titulada `Crear un subdominio`{.action}. Aparecerá un campo de entrada para que pueda introducir el subdominio (por ejemplo: **sub**.domain.tld).
 >> >
->> > **Caso particular** : Los subdominios en `www` (por ejemplo: **www**.domain.tld) se añaden automáticamente como complemento del nombre de dominio. Por lo tanto, no es necesario especificar este subdominio concreto en el campo de entrada.
+>> > **Caso particular**: Los subdominios en `www` (por ejemplo: **www**.domain.tld) se añaden automáticamente como complemento del nombre de dominio. Por lo tanto, no es necesario especificar este subdominio concreto en el campo de entrada.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
->> Si desea utilizar una de las **Opciones avanzadas** disponibles, active el botón `Configuración avanzada`{.action} y pase directamente a la **etapa 7**. En caso contrario, continúe con la **etapa 6**.
+>> Si desea utilizar una de las **opciones avanzadas** disponibles, active el botón `Configuración avanzada`{.action} y pase directamente a la **etapa 7**. En caso contrario, continúe con la **etapa 6**.
 >>
 > **Etapa 6**
 >>
@@ -96,7 +96,7 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >>
 >> La configuración DNS se realizará automáticamente si la zona DNS activa de su nombre de dominio está gestionada en su área de cliente de OVHcloud.
 >>
->> En caso contrario, consulte las siguientes guías para configurar manualmente su zona DNS :
+>> En caso contrario, consulte las siguientes guías para configurar manualmente su zona DNS:
 >>
 >> - [Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >> - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
@@ -110,9 +110,9 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >> >
 >> > Este paso es **opcional**. Se dirige únicamente a los clientes que desean activar ciertas funcionalidades disponibles mediante el botón `Configuración avanzada`{.action}.
 >> >
->> > **Todas estas funcionalidades pueden activarse posteriormente, una vez que el nombre de dominio se haya añadido a su sitio web.** En este caso concreto, consulte directamente [este guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Todas estas funcionalidades pueden activarse posteriormente, una vez que el nombre de dominio se haya añadido a su sitio web.** En este caso concreto, consulte directamente [esta guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >> >
->> > A continuación, encontrará una descripción de estas Opciones.
+>> > A continuación, encontrará una descripción de estas opciones.
 >> >
 >> > Según su oferta de [alojamiento web](/links/web/hosting), algunos elementos entre las opciones propuestas no podrán ser seleccionados.
 >>
@@ -124,10 +124,10 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >> |Firewall|Permite activar un firewall (filtrado y análisis de las solicitudes) en el nombre de dominio seleccionado.<br> Aprenda más gracias a [esta página](/links/web/hosting-options).|
 >> |CDN|Permite activar el CDN (caché de elementos estáticos de su sitio web, como las imágenes) en el nombre de dominio seleccionado.<br> Aprenda más gracias a [nuestra página CDN](/links/web/hosting-options-cdn).<br> Al activar el SSL y el CDN, también podrá beneficiarse del protocolo **HTTP/2** (este protocolo está activado por defecto en nuestro datacenter de Gravelines).|
 >>
->> Una vez activado el botón `Configuración avanzada`{.action}, también puede elegir el modo de configuración DNS de su nombre de dominio :
+>> Una vez activado el botón `Configuración avanzada`{.action}, también puede elegir el modo de configuración DNS de su nombre de dominio:
 >>
 >> - **Para una configuración DNS automática**, deje la casilla `Configuración automática (recomendado)`{.action} marcada.
->> - **Para una configuración DNS manual**, marque la casilla `Configuración manual`{.action}. Para realizar posteriormente la configuración, consulte las siguientes guías :
+>> - **Para una configuración DNS manual**, marque la casilla `Configuración manual`{.action}. Para realizar posteriormente la configuración, consulte las siguientes guías:
 >>     - [Web hosting - Lista de direcciones IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
@@ -180,7 +180,7 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >>
 >> > [!success]
 >> >
->> > **Caso particular** : Los subdominios en `www` (por ejemplo: **www**.domain.tld) se añaden automáticamente como complemento del nombre de dominio. Por lo tanto, no es necesario especificar este subdominio concreto en el campo de entrada.
+>> > **Caso particular**: Los subdominios en `www` (por ejemplo: **www**.domain.tld) se añaden automáticamente como complemento del nombre de dominio. Por lo tanto, no es necesario especificar este subdominio concreto en el campo de entrada.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 >>
@@ -188,9 +188,9 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 >>
 >> > [!primary]
 >> >
->> > A diferencia de los Dominios gestionados directamente desde su área de cliente de OVHcloud, las **Opciones avanzadas** no están disponibles directamente durante la adición de un nombre de dominio o de un subdominio externo a su sitio web.
+>> > A diferencia de los dominios gestionados directamente desde su área de cliente de OVHcloud, las **opciones avanzadas** no están disponibles directamente durante la adición de un nombre de dominio o de un subdominio externo a su sitio web.
 >> >
->> > Sin embargo, **todas estas funcionalidades pueden activarse posteriormente una vez que el nombre de dominio o el subdominio externo se haya añadido a su sitio web.** Para ello, consulte directamente [este guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > Sin embargo, **todas estas funcionalidades pueden activarse posteriormente una vez que el nombre de dominio o el subdominio externo se haya añadido a su sitio web.** Para ello, consulte directamente [esta guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 > **Etapa 7**
 >>
@@ -214,7 +214,7 @@ Haga clic en las fichas siguientes para ver cada una de las **7** etapas.
 
 /// details | Añadir un nuevo nombre de dominio que aún no ha sido registrado
 
-Esta parte se aplica únicamente si su nombre de dominio aún no ha sido registrado, ya sea en OVHcloud o en otro registrador. En otras palabras, concierne a los Dominios que aún no han sido adquiridos.
+Esta parte se aplica únicamente si su nombre de dominio aún no ha sido registrado, ya sea en OVHcloud o en otro registrador. En otras palabras, concierne a los dominios que aún no han sido adquiridos.
 
 Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
@@ -257,7 +257,7 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >>
 >> > [!primary]
 >> >
->> > Si, tras unas horas, observa que su nuevo nombre de dominio no se ha asociado correctamente a su sitio web, siga la parte « [Añadir un nombre de dominio gestionado desde su área de cliente de OVHcloud](#add-domain-ovhcloud) » de este guía.
+>> > Si, tras unas horas, observa que su nuevo nombre de dominio no se ha asociado correctamente a su sitio web, siga la parte "[Añadir un nombre de dominio gestionado desde su área de cliente de OVHcloud](#add-domain-ovhcloud)" de esta guía.
 
 ///
 
@@ -265,7 +265,7 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 La mayoría de las ofertas de [alojamiento web OVHcloud](/links/web/hosting) disponen de una opción incluida de creación de direcciones de correo electrónico personalizadas con su nombre de dominio.
 
-Esta opción de correo puede activarse para **un solo** nombre de dominio. Esto significa que si aloja varios sitios web con varios Dominios diferentes en su alojamiento web, solo podrá activar esta opción para uno de sus Dominios.
+Esta opción de correo puede activarse para **un solo** nombre de dominio. Esto significa que si aloja varios sitios web con varios dominios diferentes en su alojamiento web, solo podrá activar esta opción para uno de sus dominios.
 
 No dude en consultar [nuestra guía dedicada](/pages/web_cloud/web_hosting/activate-email-hosting) para más detalles sobre la activación de esta opción.
 

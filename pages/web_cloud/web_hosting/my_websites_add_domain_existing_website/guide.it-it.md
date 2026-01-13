@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i Domini non sono registrati su OVHcloud. Inoltre, puoi associare uno o più Domini o sottodomini allo stesso sito web.
+Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i domini non sono registrati su OVHcloud. Inoltre, puoi associare uno o più domini o sottodomini allo stesso sito web.
 
 > [!primary]
 > Se non hai ancora creato il sito web interessato sul tuo hosting web, consulta **direttamente** [questa guida](/pages/web_cloud/web_hosting/multisites_configure_multisite).
@@ -30,8 +30,8 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i D
 ## Prerequisiti
 
 - Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting-multisite) compatibile.
-- Disporre di uno o più [Domini](/links/web/domains).
-- Poter modificare la configurazione dei tuoi Domini dalle loro [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
+- Disporre di uno o più [domini](/links/web/domains).
+- Poter modificare la configurazione dei tuoi domini dalle loro [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Essere connesso al tuo [Spazio Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
 
 ## Procedura
@@ -82,11 +82,11 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >> > [!primary]
 >> > Per aggiungere un sottodominio, seleziona prima il nome di dominio nell'elenco (ad esempio: domain.tld). Seleziona quindi la casella intitolata `Crea un sottodominio`{.action}. Un campo di testo appare per permetterti di inserire il sottodominio (ad esempio: **sub**.domain.tld).
 >> >
->> > **Caso particolare** : I sottodomini in `www` (ad esempio: **www**.domain.tld) vengono automaticamente aggiunti in aggiunta al nome di dominio. Di conseguenza, non è necessario specificare questo sottodominio particolare nel campo di testo.
+>> > **Caso particolare**: I sottodomini in `www` (ad esempio: **www**.domain.tld) vengono automaticamente aggiunti in aggiunta al nome di dominio. Di conseguenza, non è necessario specificare questo sottodominio particolare nel campo di testo.
 >>
 >> ![Add domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 >>
->> Se desideri utilizzare una delle **Opzioni avanzate** disponibili, attiva il pulsante `Configurazione avanzata`{.action} e vai direttamente al **passagio 7**. Altrimenti, prosegui al **passagio 6**.
+>> Se desideri utilizzare una delle **opzioni avanzate** disponibili, attiva il pulsante `Configurazione avanzata`{.action} e vai direttamente al **passagio 7**. Altrimenti, prosegui al **passagio 6**.
 >>
 > **Passaggio 6**
 >>
@@ -96,7 +96,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> La configurazione DNS verrà realizzata automaticamente se la zona DNS attiva del tuo nome di dominio è gestita nel tuo Spazio Cliente OVHcloud.
 >>
->> Nel caso contrario, consulta le seguenti guide per configurare manualmente la tua zona DNS :
+>> Nel caso contrario, consulta le seguenti guide per configurare manualmente la tua zona DNS:
 >>
 >> - [Hosting Web - Lista degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >> - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
@@ -112,7 +112,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >> >
 >> > **Tutte queste funzionalità possono essere attivate in un secondo momento, una volta che il nome di dominio è stato aggiunto al tuo sito web.** In questo caso specifico, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >> >
->> > Di seguito troverai una descrizione di queste Opzioni.
+>> > Di seguito troverai una descrizione di queste opzioni.
 >> >
 >> > A seconda della tua offerta di [hosting web](/links/web/hosting), alcuni elementi tra le scelte proposte non potranno essere selezionati.
 >>
@@ -124,10 +124,10 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >> |Firewall|Permette di attivare un firewall (filtraggio e analisi delle richieste) sul nome di dominio selezionato.<br> Scopri di più grazie a [questa pagina](/links/web/hosting-options).|
 >> |CDN|Permette di attivare il CDN (caching degli elementi statici del tuo sito web, come le immagini) sul nome di dominio selezionato.<br> Scopri di più grazie alla [nostra pagina CDN](/links/web/hosting-options-cdn).<br> Attivando SSL e CDN, potrai beneficiare anche del protocollo **HTTP/2** (questo protocollo è attivato per default nel nostro datacenter di Gravelines).|
 >>
->> Una volta che il pulsante `Configurazione avanzata`{.action} è attivato, puoi anche scegliere la modalità di configurazione DNS del tuo nome di dominio :
+>> Una volta che il pulsante `Configurazione avanzata`{.action} è attivato, puoi anche scegliere la modalità di configurazione DNS del tuo nome di dominio:
 >>
 >> - **Per una configurazione DNS automatica**, lascia selezionata la casella `Configurazione automatica (Consigliato)`{.action}.
->> - **Per una configurazione DNS manuale**, seleziona la casella `Configurazione manuale`{.action}. Per effettuare quindi la configurazione, consulta le seguenti guide :
+>> - **Per una configurazione DNS manuale**, seleziona la casella `Configurazione manuale`{.action}. Per effettuare quindi la configurazione, consulta le seguenti guide:
 >>     - [Hosting Web - Lista degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
@@ -180,7 +180,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> > [!success]
 >> >
->> > **Caso particolare** : I sottodomini in `www` (ad esempio: **www**.domain.tld) vengono automaticamente aggiunti in aggiunta al nome di dominio. Di conseguenza, non è necessario specificare questo sottodominio particolare nel campo di testo.
+>> > **Caso particolare**: I sottodomini in `www` (ad esempio: **www**.domain.tld) vengono automaticamente aggiunti in aggiunta al nome di dominio. Di conseguenza, non è necessario specificare questo sottodominio particolare nel campo di testo.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 >>
@@ -188,7 +188,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> > [!primary]
 >> >
->> > A differenza dei Domini direttamente gestiti dal tuo Spazio Cliente OVHcloud, le **Opzioni avanzate** non sono direttamente disponibili durante l'aggiunta di un nome di dominio o di un sottodominio esterno al tuo sito web.
+>> > A differenza dei domini direttamente gestiti dal tuo Spazio Cliente OVHcloud, le **opzioni avanzate** non sono direttamente disponibili durante l'aggiunta di un nome di dominio o di un sottodominio esterno al tuo sito web.
 >> >
 >> > Tuttavia, **tutte queste funzionalità possono essere attivate in un secondo momento una volta che il nome di dominio o il sottodominio esterno è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
@@ -214,7 +214,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 
 /// details | Aggiungere un nuovo nome di dominio che non è ancora stato registrato
 
-Questa parte si applica esclusivamente se il tuo nome di dominio non è ancora stato registrato, né presso OVHcloud né presso un altro ufficio di registrazione. In altre parole, riguarda i Domini che non sono ancora stati sottoscritti.
+Questa parte si applica esclusivamente se il tuo nome di dominio non è ancora stato registrato, né presso OVHcloud né presso un altro ufficio di registrazione. In altre parole, riguarda i domini che non sono ancora stati sottoscritti.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passaggi.
 
@@ -257,7 +257,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 >>
 >> > [!primary]
 >> >
->> > Se, dopo alcune ore, noti che il tuo nuovo nome di dominio non si è correttamente associato al tuo sito web, segui la parte « [Aggiungere un nome di dominio gestito dal tuo Spazio Cliente OVHcloud](#add-domain-ovhcloud) » di questa guida.
+>> > Se, dopo alcune ore, noti che il tuo nuovo nome di dominio non si è correttamente associato al tuo sito web, segui la parte "[Aggiungere un nome di dominio gestito dal tuo Spazio Cliente OVHcloud](#add-domain-ovhcloud)" di questa guida.
 
 ///
 
@@ -265,7 +265,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** pa
 
 La maggior parte delle offerte di [hosting web OVHcloud](/links/web/hosting) dispone di un'opzione inclusa per la creazione di indirizzi email personalizzati con il tuo nome di dominio.
 
-Questa opzione email può essere attivata per **un solo** nome di dominio. Ciò significa che se ospiti diversi siti web con diversi Domini sul tuo hosting web, potrai attivare questa opzione solo per uno dei tuoi Domini.
+Questa opzione email può essere attivata per **un solo** nome di dominio. Ciò significa che se ospiti diversi siti web con diversi domini sul tuo hosting web, potrai attivare questa opzione solo per uno dei tuoi domini.
 
 Non esitare a consultare [la nostra guida dedicata](/pages/web_cloud/web_hosting/activate-email-hosting) per ulteriori dettagli sull'attivazione di questa opzione.
 
@@ -275,7 +275,7 @@ Non esitare a consultare [la nostra guida dedicata](/pages/web_cloud/web_hosting
 
 [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
