@@ -1,7 +1,7 @@
 ---
 title: "Configurer le reverse DNS d'une instance Public Cloud"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Le menu déroulant sous « **Mes adresses IP publiques et services associés** �
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
+Cliquez sur le bouton `⁝`{.action} sur la ligne de l'adresse IP concernée et sélectionnez `Configurer le reverse DNS`{.action}.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 

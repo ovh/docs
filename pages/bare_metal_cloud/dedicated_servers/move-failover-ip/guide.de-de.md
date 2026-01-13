@@ -1,7 +1,7 @@
 ---
 title: Eine Additional IP umziehen
 excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
-updated: 2025-07-22
+updated: 2026-01-06
 ---
 
 > [!primary]
@@ -22,6 +22,8 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 > Sie können Ihre IP-Adressblöcke jedem kompatiblen Dienst innerhalb einer Region zuweisen. IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Rechenzentrum in ein anderes verschoben werden, aber nicht aus dieser Region heraus.
 >
 > Eine Ausnahme bilden die Regionen eu-west-gra, eu-west-rbx und eu-west-sbg, da hier IP-Adressblöcke zwischen diesen 3 Regionen verschoben werden können.
+>
+> Eine Region ist ein geografisches Gebiet, das aus einem oder mehreren Rechenzentren besteht.
 >
 > Migrationen funktionieren nur für ganze Blöcke. Es ist nicht möglich, einzelne IPs innerhalb eines Blocks zu migrieren.
 
@@ -70,19 +72,25 @@ Beispielsweise kann ein in Polen geolokalisierter Additional IP Block (eu-centra
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
-Klicken Sie auf den Tab `Additional IP`{.action}.
+Anschließend können Sie das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden und `Alle Additional IP`{.action} auswählen, um Ihre Dienste entsprechend zu filtern, oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Verschieben Additional IP`{.action} oder `Diesen IP-Block mit einem anderen Dienst verbinden`{.action}.
+Klicken Sie anschließend auf die Schaltfläche `⁝`{.action} rechts neben der zusätzlichen IP-Adresse oder dem IP-Adressblock, den Sie verschieben möchten, und wählen Sie `Verschieben Additional IP`{.action}.
 
-![Kundencenter](images/move_ip.png){.thumbnail}
+![Kundencenter](images/move_ip_1_new.png){.thumbnail}
 
-Wählen Sie im angezeigten Kontextmenü den Dienst aus, auf den die IP-Adresse umgezogen werden soll.
+Wählen Sie im Popup-Fenster aus dem Menü den Dienst aus, zu dem die IP-Adresse verschoben werden soll.
+
+![Kundencenter](images/move_ip_2_new.png){.thumbnail}
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-![Kundencenter](images/moveadditionalIP2.png){.thumbnail}
+> [!warning]
+> Bitte beachten Sie, dass bei einigen Produkten IP-Adressen (oder Blöcke) zunächst in einen IP-Parkplatz (einen temporären Speicherort) verschoben werden müssen, bevor sie zum gewünschten Produkt verschoben werden können.
+>
+> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie bitte **die vRack-Verwaltungsschnittstelle**, auf die Sie zugreifen können, indem Sie das Menü „Netzwerk“{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
+>
 
 ### IP-Adresse über die API umziehen
 

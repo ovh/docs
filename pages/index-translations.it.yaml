@@ -96,6 +96,8 @@ hosted-private-cloud-managed-vmware-additional-resources: Risorse aggiuntive
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Per iniziare
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Risorse aggiuntive
+hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
+hosted-private-cloud-snc-cloud-platform-getting-started: Per iniziare
 hosted-private-cloud-baremetal-pod: Bare Metal Pod
 hosted-private-cloud-baremetal-pod-getting-started: Per iniziare
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
@@ -412,6 +414,8 @@ web-cloud-hosting-tutorials: Tutorial
 web-cloud-hosting-migration: Migrazione
 web-cloud-hosting-tutorials-wordpress: Tutorial WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutorial per Cloud Web
+web-cloud-managed-hosting-for-wordpress: Managed Hosting for WordPress
+web-cloud-managed-hosting-for-wordpress-getting-started: Per iniziare
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Per iniziare
 storage-object-storage: Object Storage
@@ -465,6 +469,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
+storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Concetti chiave
 network-additional-ip-configuration: Configurazione

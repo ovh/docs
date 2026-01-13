@@ -1,20 +1,34 @@
 ---
-title: Exchange - Configurer son compte e-mail sur Outlook pour Windows
-excerpt: Découvrez comment configurer un compte Exchange sur Outlook pour Windows
-updated: 2025-10-23
+title: Exchange - Configurer son compte e-mail sur Outlook classique pour Windows
+excerpt: Découvrez comment configurer un compte Exchange sur Outlook classique pour Windows
+updated: 2026-01-09
 ---
+
+<style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
+.h-500 {
+  max-width:500px !important;
+}
+</style>
 
 ## Objectif
 
 Les comptes Exchange peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d'utiliser votre adresse e-mail depuis l'appareil de votre choix. Microsoft Outlook est le logiciel recommandé pour utiliser une adresse e-mail Exchange avec ses fonctions collaboratives.
 
 **Découvrez comment configurer un compte Exchange sur Microsoft Outlook pour Windows.**
-
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
->
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/zx7LAzmDrFw?si=DAWV56-E1or1Vgnr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -24,6 +38,14 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
+/// details | Informations relatives à la gestion et la configuration des services OVHcloud
+
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+
+///
 
 > [!primary]
 >
@@ -41,40 +63,56 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-### Ajouter le compte
+### Ajouter le compte <a name="add-account"></a>
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
 - **Si un compte a déjà été paramétré** : cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran, puis sur `Ajouter un compte`{.action}.
 
-- Renseignez à présent votre adresse e-mail, puis appuyez sur `Options avancées`{.action}. Cochez la case à côté de `Configurer mon compte manuellement`{.action} qui vient d'apparaître, puis cliquez sur `Connexion`{.action}. 
+![Outlook](images/config-outlook-exchange01.png){.thumbnail .h-500}
 
-![exchange](images/config-outlook-exchange01.png){.thumbnail}
+- Laissez `Compte de courrier` coché et complétez les informations suivantes :
+    - **Nom** : définissez un nom d'affichage.
+    - **Adresse de courrier** : saisissez votre adresse e-mail complète.
+    - **Mot de passe** : saisissez le mot de passe associé à votre adresse e-mail.
+    - **Confirmer le mot de passe** : saisissez à nouveau le mot de passe associé à votre adresse e-mail.
+- Cliquez sur `Suivant`{.action} pour continuer.
 
-- Parmi les types de comptes, choisissez **Exchange**.
+![exchange](images/config-outlook-exchange02.png){.thumbnail .h-500}
 
-- Renseignez le mot de passe de votre adresse e-mail dans la fenêtre suivante, cochez la case pour le mémoriser puis cliquez sur `OK`{.action}.
+- Si la configuration de votre nom de domaine est valide, un message d'autorisation de connexion au serveur Exchange OVHcloud peut apparaître. Cliquez sur `Autoriser`{.action} **(1)** pour permettre la configuration automatique de votre compte Exchange.
+- Une seconde fenêtre d'authentification apparait, saisissez le mot de passe de votre adresse e-mail **(2)**.
 
-![exchange](images/config-outlook-exchange02.png){.thumbnail}
+![exchange](images/config-outlook-exchange03.png){.thumbnail .h-500}
 
-> [!primary]
-> 
-> Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
->
-> ![exchange](images/config-outlook-exchange03.png){.thumbnail}
->
-> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](/links/manager), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
-
-- Si la configuration de votre nom de domaine est valide, un message d'autorisation de connexion aux serveurs d'OVHcloud peut apparaître. Acceptez celui-ci pour permettre la configuration automatique de votre compte Exchange.
-- Déterminez ensuite la périodicité de conservation des éléments de vote compte Exchange, **en local sur votre ordinateur**. Cliquez sur `Suivant`{.action}, puis sur `Terminé`{.action}.
-
-![exchange](images/config-outlook-exchange04.png){.thumbnail}
+Après l'autorisation et l'authentification au serveur Exchange OVhcloud, la configuration sera terminée et votre compte opérationnel.
 
 ### Utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
 Votre adresse e-mail Exchange, ainsi que toutes ses fonctions collaboratives, sont également disponibles via l'interface [OWA](/links/web/email). Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+
+### Modifier les paramètres existants
+
+> [!warning]
+>
+> Il n'est pas possible de modifier les paramètres serveur d'un compte Exchange. Si vous rencontrez une anomalie liée à la synchronisation avec le serveur, il est nécessaire de supprimer le compte d'Outlook et de le reconfigurer. Pour effectuer cela, suivez les instructions ci-dessous.
+
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour le supprimer :
+
+- Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran.
+- Sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+- Cliquez sur `Paramètres du compte`{.action} **(2)** en dessous.
+- Cliquez sur `Paramètres du compte...`{.action} **(3)** pour accéder à la fenêtre de paramètres.
+
+![Outlook](images/config-outlook-exchange04.png){.thumbnail .h-500}
+
+- La fenêtre de paramètres des comptes s'affiche, sélectionnez le compte e-mail concerné et cliquez sur `Supprimer`{.action}.
+
+![Outlook](images/config-outlook-exchange05.png){.thumbnail .h-500}
+
+Une fois le compte Exchange supprimé, suivez la partie « [Ajouter le compte](#add-account) » de ce guide pour reconfigurer votre compte e-mail.
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 

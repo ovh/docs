@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un serveur vocal interactif (SVI)'
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
-updated: 2025-04-28
+updated: 2026-01-07
 ---
 
 ## Objectif
@@ -221,6 +221,14 @@ Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
 >
+
+##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
+
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+
+En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+
+![SVI - double condition](images/svi-double-condition.png){.thumbnail}
 
 ##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 

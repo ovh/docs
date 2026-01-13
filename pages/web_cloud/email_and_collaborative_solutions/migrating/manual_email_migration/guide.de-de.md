@@ -31,7 +31,7 @@ In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-
 
 Die folgenden Anweisungen sind in zwei Teile gegliedert:
 
-- **Export**: So können Sie ein vollständiges Backup Ihrer E-Mail-Adresse abrufen, um diese auf einen anderen Account, ein E-Mail-Programm oder einen anderen Account umzuziehen. Wenn Sie Elemente von einer E-Mail-Adresse auf eine andere Adresse verschieben müssen, die im gleichen E-Mail-Programm konfiguriert ist, können Sie diese kopieren/einfügen oder verschieben/ablegen. Es wird jedoch empfohlen, das von Ihnen verwendete Software-Exportsystem zu verwenden.
+- **Export**: So können Sie ein vollständiges Backup Ihres E-Mail-Accounts abrufen, um diese auf einen anderen Account, ein E-Mail-Programm oder einen anderen Account umzuziehen. Wenn Sie Elemente von einer E-Mail-Adresse auf eine andere Adresse verschieben müssen, die im gleichen E-Mail-Programm konfiguriert ist, können Sie diese kopieren/einfügen oder verschieben/ablegen. Es wird jedoch empfohlen, das von Ihnen verwendete Software-Exportsystem zu verwenden.
 
 - **Import**: So können Sie ein Backup, das Sie für Ihre neue Station oder Software erstellt haben, verwenden. Überprüfen Sie, ob die zu importierende Backup-Datei mit dem von Ihnen verwendeten E-Mail-Programm kompatibel ist.
 

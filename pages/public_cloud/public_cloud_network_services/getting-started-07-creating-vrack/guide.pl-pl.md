@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-[OVHcloud vRack](/links/network/vrack) to rozwiązanie prywatnej sieci, które umożliwia naszym klientom przekazywanie ruchu między Serwerami dedykowanymi OVHcloud, a także innymi usługami OVHcloud. W tym samym czasie pozwala na dodawanie instancji [Public Cloud](/links/public-cloud/Compute) do prywatnej sieci, tworząc infrastrukturę zasobów fizycznych i wirtualnych.
+[OVHcloud vRack](/links/network/vrack) to rozwiązanie prywatnej sieci, które umożliwia naszym klientom przekazywanie ruchu między Serwerami dedykowanymi OVHcloud, a także innymi usługami OVHcloud. W tym samym czasie pozwala na dodawanie instancji [Public Cloud](/links/public-cloud/compute) do prywatnej sieci, tworząc infrastrukturę zasobów fizycznych i wirtualnych.
 
 **Ten przewodnik wyjaśnia, jak skonfigurować instancje Public Cloud w ramach swojego vRacka.**
 

@@ -169,14 +169,6 @@ sudo systemctl daemon-reload
 Riavvia il servizio:
 
 ```bash
-sudo systemctl restart ssh.service
-```
-
-**Ubuntu 25.04**
-
-Riavvia il servizio:
-
-```bash
 sudo systemctl restart ssh.socket
 ```
 

@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
+title: 'MX Plan - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
-updated: 2025-09-26
+updated: 2026-01-09
 ---
 
 <style>
@@ -23,23 +23,17 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les adresses e-mail de l'offre **MX Plan** et [Zimbra Starter](/links/web/emails-zimbra) peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
+Les adresses e-mail de l'offre **MX Plan** peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
+Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/fr-fr/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ».
 
 **Apprenez à configurer votre adresse e-mail MX Plan sur le nouvel Outlook pour Windows.**
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
-    - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - [Zimbra](/links/web/emails-zimbra) Starter (uniquement).
-- Disposer de la [nouvelle version d'Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installée sur votre Windows.
+- Disposer d'une solution e-mail OVHcloud **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting).
+- Disposer du [nouvel Outlook](https://support.microsoft.com/fr-fr/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) pour Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
-
-> [!warning]
->
-> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
@@ -51,11 +45,23 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ## En pratique
 
+> [!warning]
+>
+> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
+>
+> Pour distinguer les deux versions d'Outlook lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous. Le nouvel Outlook n'a pas de mention spéciale.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Pour configurer votre adresse e-mail MX plan sur Outlook classique, consultez notre guide « [MX Plan - Configurer son adresse e-mail sur Outlook classique pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) ».
+
 ### Ajouter le compte <a name="add-account"></a>
 
 > [!warning]
 >
 > Il est nécessaire de choisir l'onglet de l'étape 3 correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**) pour obtenir les bonnes valeurs.
+
+Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
 > [!tabs]
 > **Etape 1**
@@ -109,7 +115,7 @@ L'application Outlook ne permet pas de modifier les paramètres serveur de votre
 
 Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
-- Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
+- Cliquez sur l'icöne de réglage `⛭`{.action} dans le bas de la colonne de gauche.
 - Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
@@ -172,11 +178,9 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/fr-fr/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
-
-[Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

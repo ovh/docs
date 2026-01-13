@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -259,13 +259,13 @@ For more information on the above services, please consult our guide on [Optimis
 
 - **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult the section **To a Microsoft server (Outlook, etc.)** of our guide "[How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)".
 
 - **To a Gmail server**
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563/).
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en) regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/mail/answer/81126/) regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 

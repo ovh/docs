@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2025-11-19
+updated: 2026-01-12
 ---
 
 > [!warning]
@@ -181,7 +181,8 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 >>
 
 - Bucket status changes to "Restoring".
-- Objects become accessible in read-only mode once restoration completes.
+- Once the restoration is complete, ojects become accessible in read-only mode for 30 days. After this period, a new restoration operation must be launched to access the archived objects.
+- Objects in the archived bucket can still be listed at any time.
 
 ### Delete an archive
 

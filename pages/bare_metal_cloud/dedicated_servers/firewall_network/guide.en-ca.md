@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-10-21
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -48,11 +48,13 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
+
+You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
 ![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
+Next, click the `⁝`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
 ![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
@@ -87,7 +89,7 @@ You can set up to **20 rules per IP**.
 
 | ![add-rule-btn](images/enf_add_rule_new.png) | 
 |:--:| 
-| Click on `Add a rule`{.action}. |
+| Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 

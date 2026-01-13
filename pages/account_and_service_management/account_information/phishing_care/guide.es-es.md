@@ -1,7 +1,7 @@
 ---
 title: 'Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing'
 excerpt: 'Cómo reconocer un email de phishing y qué hacer si ha hecho clic en un enlace fraudulento'
-updated: 2025-12-18
+updated: 2026-01-06
 ---
 
 <style>
@@ -49,7 +49,7 @@ Haga clic en la imagen para agrandarla. Encuentre los detalles y explicaciones e
 |---|---|---|
 |1 - Remitente|Compruebe que la dirección utilizada para el envío del correo termina con un nombre de dominio (o subdominio, por ejemplo `events.ovhcloud.com` ) perteneciente a OVHcloud (vea la lista que aparece a continuación)|El remitente del correo será muy probablemente una dirección que no proviene de OVHcloud.|
 |2 - Asunto|Compruebe que su identificador **(que suele comenzar por las iniciales de la persona que creó la cuenta de OVHcloud)** y/o la dirección de correo de su cuenta aparezcan en el asunto del mensaje.|Con frecuencia, el correo estará marcado como \[SPAM] y **su identificador no aparecerá o será incorrecto**.|
-|3 - Enlace|**Sin hacer clic en él, pase el puntero del ratón sobre el enlace o el botón** y verá directamente su destino (justo debajo o al final de su navegador). En nuestro ejemplo, el enlace lleva correctamente a una dirección https://www.ovh.com/.|En un correo de phishing, el enlace no será el de una página oficial de OVHcloud. **No haga clic en él.**|
+|3 - Enlace|**Sin hacer clic en él, pase el puntero del ratón sobre el enlace o el botón** y verá directamente su destino (justo debajo o al final de su navegador). En nuestro ejemplo, el enlace lleva correctamente a una dirección https://www.ovh.com/. Al hacer clic en un enlace, compruebe siempre la dirección en el navegador. OVHcloud utiliza un conjunto de nombres de dominio reconocibles, generalmente ovhcloud.com o ovh.com (ver la lista a continuación).|En un correo de phishing, el enlace no será el de una página oficial de OVHcloud. **No haga clic en él.**|
 |4 - Cabecera y pie del correo|OVHcloud envía correos en formatos TXT y HTML. La cabecera contendrá el logotipo de OVHcloud, el pie del correo contendrá información legal relacionada con OVHcloud|Es posible que la cabecera o el pie contengan enlaces que no tienen nada que ver con OVHcloud. **No haga clic en estos enlaces.**|
 
 /// details | **Lista de dominios legítimos de OVHcloud** (haga clic para mostrarla)

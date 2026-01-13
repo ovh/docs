@@ -1,35 +1,48 @@
 ---
 title: "Zimbra Pro - Configurare un account email con ActiveSync su Outlook per Windows"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro su Outlook per Windows tramite il protocollo ActiveSync"
-updated: 2025-07-03
+updated: 2025-12-31
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
 .h-500 {
-  max-height:500px !important;
+  max-width:500px !important;
 }
 </style>
 
 ## Obiettivo
 
-> [!primary]
-> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/emails-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
-
 Gli account Zimbra Pro possono essere configurati su Windows utilizzando il protocollo ActiveSync, per consentirti di configurare tutte le funzionalità collaborative del tuo indirizzo email in una sola volta. L’applicazione Outlook per Windows consente di visualizzare l’account email Zimbra Pro tramite il protocollo ActiveSync.
 
 **Questa guida ti mostra come configurare il tuo indirizzo e-mail Zimbra Pro su Outlook per Windows utilizzando il protocollo ActiveSync.**
-
-> [!warning]
->
-> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
->
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](/links/partner) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
 - Disporre di un indirizzo email [Zimbra Pro](/links/web/emails-zimbra).
 - Aver installato [Outlook classico](https://support.microsoft.com/it-it/office/installare-o-reinstallare-la-versione-classica-di-outlook-in-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) su Windows.
 - Disporre delle credenziali associate all’indirizzo email da configurare.
+
+/// details | Informazioni relative alla gestione e alla configurazione dei servizi OVHcloud
+
+OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
+
+Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](/links/partner) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
+
+///
 
 ## Procedura
 

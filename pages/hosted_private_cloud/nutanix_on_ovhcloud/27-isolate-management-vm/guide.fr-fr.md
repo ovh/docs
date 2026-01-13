@@ -8,8 +8,8 @@ updated: 2022-01-11
 
 Une fois livré, un cluster Nutanix contient deux différents types de machines de gestion :
 
-- VM, 1 CVM par noeud plus Prism Central
-- Serveurs physiques (noeuds)
+- VM, 1 CVM par nœud plus Prism Central
+- Serveurs physiques (nœuds)
 
 Afin d’augmenter la sécurité des machines de gestion, il est recommandé de les isoler de l’environnement de production.
 

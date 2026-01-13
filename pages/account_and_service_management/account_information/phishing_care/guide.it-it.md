@@ -1,7 +1,7 @@
 ---
 title: 'Proteggersi dalle truffe: come riconoscere email fraudolente e di phishing'
 excerpt: 'Come riconoscere un’email di phishing e cosa fare se si clicca su un link fraudolento'
-updated: 2025-12-18
+updated: 2026-01-06
 ---
 
 <style>
@@ -48,7 +48,7 @@ Clicca sull'immagine per ingrandirla. Troverai i dettagli e le spiegazioni nel t
 |---|---|---|
 |1 - Mittente|Verifica che l'indirizzo utilizzato per l'invio dell'e-mail termini con un nome di dominio (o un sottodominio, ad esempio `events.ovhcloud.com` ) appartenente a OVHcloud (vedi l'elenco qui sotto) |Il mittente dell'e-mail sarà molto probabilmente un indirizzo che non proviene da OVHcloud.|
 |2 - Oggetto|Verifica che il tuo identificativo **(che inizia generalmente con le iniziali della persona che ha creato il tuo account OVHcloud)** e/o l'indirizzo e-mail del tuo account siano presenti nell'oggetto del messaggio.|Molto spesso, l'e-mail sarà contrassegnata come \[SPAM] e **il tuo identificativo non apparirà o sarà errato**.|
-|3 - Link|**Senza cliccarci sopra, passa il puntatore del mouse sul link o sul pulsante** e vedrai direttamente il destinatario (sotto o in fondo al tuo browser). Nel nostro esempio, il link punta correttamente a un indirizzo https://www.ovh.com/.|In un'e-mail di phishing, il link non corrisponderà a una pagina ufficiale OVHcloud. **Non cliccarci sopra.**|
+|3 - Link|**Senza cliccarci sopra, passa il puntatore del mouse sul link o sul pulsante** e vedrai direttamente il destinatario (sotto o in fondo al tuo browser). Nel nostro esempio, il link punta correttamente a un indirizzo https://www.ovh.com/. Quando Lei clicca su un link, controlla sempre l'indirizzo nel browser. OVHcloud utilizza un insieme di domini riconoscibili, generalmente ovhcloud.com o ovh.com (vedi la lista qui sotto).|In un'e-mail di phishing, il link non corrisponderà a una pagina ufficiale OVHcloud. **Non cliccarci sopra.**|
 |4 - Intestazione e piè di pagina dell'e-mail|OVHcloud invia e-mail in formato TXT e HTML. L'intestazione conterrà il logo OVHcloud, il piè dell'e-mail conterrà informazioni legali relative a OVHcloud|L'intestazione o il piè potrebbero contenere link che non hanno nulla a che fare con OVHcloud. **Non cliccarci sopra.**|
 
 /// details | **Elenco dei domini OVHcloud legittimi** (clicca per visualizzarlo)

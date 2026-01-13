@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja Additional IP w trybie bridge na wirtualnych maszynach'
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-updated: 2025-12-22
+updated: 2026-01-06
 ---
 
 <style>
@@ -72,7 +72,7 @@ Następnie możesz użyć menu rozwijanego pod pozycją **Moje publiczne adresy 
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Kliknij `...`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
+Kliknij `⁝`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac_new.png){.thumbnail}
 

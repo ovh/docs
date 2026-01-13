@@ -260,7 +260,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ```
 >> ///
 >>
->> **3. Reiniciar la interfaz****
+>> **3. Reiniciar la interfaz**
 >>
 >> A continuación, reinicie la interfaz:
 >>
@@ -353,7 +353,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> **AlmaLinux (8/9) & Rocky Linux (8/9)**
+>> AlmaLinux (8/9) & Rocky Linux (8/9)
 >>
 >> El archivo de configuración principal se encuentra en `/etc/sysconfig/network-scripts/`. En nuestro ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre de archivo real en esta carpeta.
 >>
@@ -539,8 +539,8 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> ![Final configuration](images/final-ip-configuration.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **1. Acceder a la gestión de IP de Plesk**
 >>

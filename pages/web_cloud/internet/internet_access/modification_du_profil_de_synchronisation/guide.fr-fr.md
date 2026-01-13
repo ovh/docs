@@ -71,7 +71,7 @@ Cependant, si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignab
 
 En VDSL, d’autres modulations de fréquence sont disponibles :
 
-- **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés situés à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://order.isp.ovh.net/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
+- **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés situés à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://order.isp.ovhcloud.com/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
 - **8b**, pour les lignes plus longues : de manière générale, le profil 8b sera plus avantageux pour les abonnés situés à plus d’un kilomètre du nœud de raccordement téléphonique.
 
 ### Ligne non dégroupée OVHcloud

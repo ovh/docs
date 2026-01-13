@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for your server (PTR record)
-excerpt: Find out how to set up the reverse DNS resolution for your IPv4 or IPv6 address in the OVHcloud Control Panel
-updated: 2025-12-10
+excerpt: Find out how to set up the reverse DNS resolution for your IP address in the OVHcloud Control Panel
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -15,29 +15,29 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 ## Requirements
 
 - An IP address attached to a service in your OVHcloud account
-- A domain name with its `A` record or `AAAA` record mapped to your service
+- A domain name with its `A` record mapped to your service
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-The drop-down menus in the section **My public IP addresses and associated services** allow you to filter the table items for services and find your desired IP address quickly.
+The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
+Click the `⁝`{.action} button in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-In the new window, enter your reverse path and click on `Validate`{.action}.
+In the new window, enter your reverse path and click on `Confirm`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-You can also edit the reverse path directly via the pen icon in the **Reverse DNS** column of the table.
+You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
 
 > [!warning]
-> When you enter your domain name in the reverse, it double checks immediately if the `A` and `AAAA` records match the configured IP addresses for this domain. This is used in anti-spam procedures, so your DNS record must be valid and propagated. There are certain rules to follow while entering the reverse:
+> When you enter your domain name in the reverse, it double checks immediately if the A record is referring back to the same IP. This is used in anti-spam procedures, so your A record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
 >  - It cannot start with a `-`.
 >  - It cannot be longer than 63 characters.
@@ -45,12 +45,14 @@ You can also edit the reverse path directly via the pen icon in the **Reverse DN
 >  - It must end with a `.`.
 >
 > Example: "domain.tld" in the reverse record would be `domain.tld.`.
+>
 
 > [!primary]
 >
-> If the change does not work as expected, check that the `A` and `AAAA` records are correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited a record.
+> If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
 > If the domain name is managed by OVHcloud as its registrar **and it uses OVHcloud DNS servers**, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
+>
 
 ## Go further
 

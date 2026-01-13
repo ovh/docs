@@ -121,7 +121,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 > Étape 2
 >> **Vérifiez les informations sur l'outil d'éligibilité OVHcloud :**
 >>
->> Rendez-vous sur [notre outil d'éligibilité](https://order.isp.ovh.net/).
+>> Rendez-vous sur [notre outil d'éligibilité](https://order.isp.ovhcloud.com/).
 >>
 >> Cliquez sur l'onglet `Par référence d'immeuble`{.action} et renseignez l'**Identifiant immeuble IPE** préalablement noté sur le site de l'ARCEP. Cliquez alors sur `Vérifier mon éligibilité`{.action}.
 >>

@@ -1,13 +1,14 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 > [!primary]
 > This article is about moving Additional IPv4, which follows [specific regional limitations](#limitations).
 > 
 > Configuring Additional IP addresses in a vRack (private network) circumvents those regional restrictions by not being dependent on a single region, while facilitating interconnection over a wide range of OVHcloud services.
+>
 > Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) and [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
@@ -69,7 +70,7 @@ If you order an additional IP block on a server but choose a different location 
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
+Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select `All Additional IPs`{.action} to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2025-11-19
+updated: 2026-01-12
 ---
 
 > [!warning]
@@ -182,7 +182,8 @@ Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la co
 >>
 
 - Le statut du bucket passe à "Restauration".
-- Les objets deviennent accessibles en mode lecture-seule une fois la restauration terminée.
+- Une fois la restauration terminée, les objets deviennent accessibles en mode lecture seule pendant 30 jours. Passé ce délai, une nouvelle opération de restauration doit être lancée pour accéder aux objets archivés.
+- Les objets du bucket archivé peuvent toujours être listés à tout moment.
 
 ### Supprimer une archive
 

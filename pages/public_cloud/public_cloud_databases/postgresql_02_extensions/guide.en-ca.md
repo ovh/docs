@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Available extensions
 excerpt: List of available PostgreSQL extensions
-updated: 2025-05-05
+updated: 2026-01-08
 ---
 
 ## List of available extensions
@@ -38,7 +38,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `isn` | <https://www.postgresql.org/docs/current/isn.html> | Data types for international product numbering standards. |
 | `ltree` | <https://www.postgresql.org/docs/current/ltree.html> | Data type for hierarchical tree-like structures. |
 | `seg` | <https://www.postgresql.org/docs/current/seg.html> | Data type for representing line segments or floating-point intervals. |
-| `timescaledb` | <https://github.com/timescale/timescaledb> | Enables scalable inserts and complex queries for time-series data. |
+| `timescaledb` | <https://github.com/timescale/timescaledb> | Enables scalable inserts and complex queries for time-series data. `Not yet available on PG18` |
 | `unit` | <https://github.com/df7cb/postgresql-unit> | SI units extension. |
 | `uuid-ossp` | <https://www.postgresql.org/docs/current/uuid-ossp.html> | Generate universally unique identifiers (UUIDs). |
 

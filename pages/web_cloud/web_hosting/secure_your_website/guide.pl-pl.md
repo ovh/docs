@@ -1,7 +1,7 @@
 ---
 title: "Jak zabezpieczyć Twoją stronę WWW?"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Wprowadzenie 
@@ -75,9 +75,16 @@ Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów
 
 ### Etap 6 - Sprawdź, czy witryna sieci Web jest aktualna
 
-Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
+Upewnij się, że Twoja strona internetowa jest aktualizowana zarówno pod względem treści, jak i komponentów technicznych (CMS, rozszerzenia, wersje PHP i zależności).
 
-Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+Jeśli korzystasz z CMS, zapoznaj się z jego oficjalną dokumentacją dotyczącą aktualizacji:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/en)
+
+Ponadto upewnij się, że korzystasz z nowoczesnej wersji [języka programowania PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) na swoim planie Hosting.
 
 ### Etap 7 - Aktywuj HTTPS
 

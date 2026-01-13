@@ -26,7 +26,7 @@ Afin de déterminer la cause précise du dysfonctionnement affectant votre accè
 
 ### Étape 1 : vérifier l'existence d'un incident déclaré (**uniquement pour les accès FTTH**)
 
-Rendez-vous sur la page <https://status.isp.ovh.net/> et vérifiez si votre accès Internet fibre est affecté par un incident en cours.
+Rendez-vous sur la page <https://status.isp.ovhcloud.com/> et vérifiez si votre accès Internet fibre est affecté par un incident en cours.
 
 - **Si votre accès est affecté** : prenez connaissance des éléments renseignés sur la page, puis patientez le temps de la résolution de l'incident.
 

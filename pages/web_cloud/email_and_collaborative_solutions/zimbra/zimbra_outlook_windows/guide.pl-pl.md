@@ -1,35 +1,48 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w programie Outlook na urządzeniu z systemem Windows"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w programie Outlook na urządzeniu z systemem Windows przy użyciu protokołu ActiveSync"
-updated: 2025-07-03
+updated: 2025-12-31
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
 .h-500 {
-  max-height:500px !important;
+  max-width:500px !important;
 }
 </style>
 
 ## Wprowadzenie
 
-> [!primary]
-> Ten przewodnik jest przeznaczony dla klientów posiadających usługi e-mail [Zimbra Pro](/links/web/emails-zimbra). Usługa będzie dostępna w fazie beta od lipca 2025.
-
 Konta Zimbra Pro można skonfigurować w systemie Windows za pomocą protokołu ActiveSync, co pozwala na jednorazowe skonfigurowanie wszystkich funkcji pracy zespołowej dla konta e-mail. Aplikacja Outlook dla Windows umożliwia dostęp do konta e-mail Zimbra Pro przy użyciu protokołu ActiveSync.
 
 **Dowiedz się, jak skonfigurować konto e-mail Zimbra Pro w programie Outlook dla systemu Windows przy użyciu protokołu ActiveSync.**
-
-> [!warning]
->
-> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
->
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](/links/partner) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
 ## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Posiadanie aplikacji [klasyczny program Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) w systemie Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
+
+/// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
+
+OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
+
+Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](/links/partner) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
+
+///
 
 ## W praktyce
 
@@ -45,7 +58,7 @@ Konta Zimbra Pro można skonfigurować w systemie Windows za pomocą protokołu 
 
 ### Dodaj konto <a name="add-account"></a>
 
-Aby dodać konto Zimbra Pro w klasycznym programie Outlook, wykonaj poniższe czynności, klikając kolejno **7** w zakładkach poniżej:
+Aby dodać konto Zimbra Pro w klasycznym Outlooku, wykonaj poniższe kroki, klikając kolejno na odpowiednie karty:
 
 > [!tabs]
 > **Etap 1**

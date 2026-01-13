@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for your server (PTR record)
 excerpt: Find out how to set up the reverse DNS resolution for your IP address in the OVHcloud Control Panel
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 ## Objective

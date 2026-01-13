@@ -1,7 +1,7 @@
 ---
 title:  Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
-updated: 2025-07-22
+updated: 2026-01-06
 ---
 
 > [!primary]
@@ -19,12 +19,14 @@ Os Additional IP podem ser migrados entre os serviços que utiliza. O interesse 
 Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra em menos de um minuto, praticamente sem qualquer interrupção para os seus utilizadores. Pode ser utilizada durante as migrações de serviços (deslocação dos projetos do ambiente de desenvolvimento para o de produção, por exemplo) ou aquando da migração para um servidor de recurso em caso de falha.
 
 > [!primary]
-> Pode atribuir blocos de endereços IP a qualquer serviço compatível numa região.
-Os blocos de endereços IP numa região podem ser movidos de um datacenter para outro dentro dessa região, mas não podem ser movidos para fora dessa região.
+> Pode atribuir blocos de endereços IP a qualquer serviço compatível numa região. Os blocos de endereços IP numa região podem ser movidos de um datacenter para outro dentro dessa região, mas não podem ser movidos para fora dessa região.
 > 
 > Com exceção das 3 regiões eu-west-gra, eu-west-rbx e eu-west-sbg, entre as quais os blocos de endereços IP podem ser deslocados.
 >
+> Uma região é uma área geográfica composta por um ou mais centros de dados.
+>
 > A migração só funciona para blocos inteiros, não é possível migrar IPs individuais dentro de um bloco.
+>
 
 **Saiba como migrar um Additional IP a partir da Área de Cliente OVHcloud ou através das API OVHcloud**
 
@@ -52,6 +54,9 @@ Os blocos de endereços IP numa região podem ser movidos de um datacenter para 
 > Quando um bloco IP contendo endereços MAC virtuais únicos é movido entre dois servidores, esses endereços são temporariamente suspensos. Aparecerão no novo servidor uma vez que a mudança esteja completa.
 > 
 > Por outro lado, os blocos contendo endereços MAC virtuais duplicados não podem ser movidos. Deve primeiro apagar o endereço MAC virtual duplicado no bloco a ser movido.
+>
+> Se um bloco IP for movido/adicionado ao vRack, ele não estará mais vinculado a um servidor físico. Nesse caso, todos os endereços MAC virtuais serão perdidos durante a transferência.
+>
 
 ### Blocos IP geolocalizados
 
@@ -67,19 +72,25 @@ Se encomendar um bloco adicional IP num servidor, mas escolher uma localização
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
-Clique no separador `Additional IP`{.action}.
+Pode utilizar o menu suspenso em **Os meus endereços IP públicos e serviços associados** e selecionar `Todos os Additional IP`{.action} para filtrar os seus serviços, ou digitar diretamente o endereço IP desejado na barra de pesquisa.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![Área de Cliente](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Clique no botão `...`{.action} à direita do endereço IP a migrar e, a seguir, em `Mover Additional IP`{.action} ou em `Associar este bloco de IP a outro serviço`{.action}.
+Clique no botão `⁝`{.action} à direita do endereço IP a ser movido e, em seguida, em `Mover Additional IP`{.action}.
 
-![Área de Cliente](images/move_ip.png){.thumbnail}
+![Área de Cliente](images/move_ip_1_new.png){.thumbnail}
 
-No menu contextual que aparece, selecione o serviço para o qual mover o endereço IP.
+No menu contextual que aparece, selecione o serviço para o qual deseja mover o endereço IP.
 
-Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
+Clique em `Seguinte`{.action} e depois em `Confirmar`{.action}.
 
-![Área de Cliente](images/moveadditionalIP2.png){.thumbnail}
+![Área de Cliente](images/move_ip_2_new.png){.thumbnail}
+
+> [!warning]
+> Tenha em atenção que, para alguns produtos, os endereços IP (ou blocos) devem primeiro ser movidos para um **Parking IP** (um local de armazenamento temporário), antes de poderem ser movidos para o produto desejado.
+>
+> Para mover blocos IP para uma rede vRack específica, utilize **a interface de gestão vRack**, à qual pode aceder clicando em `Network`{.action} no menu à esquerda do ecrã e, em seguida, em `Rede privada vRack`{.action}.
+>
 
 ### Migrar um IP através das API
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntySpam - Dobre praktyki i odblokowanie adresu IP
 excerpt: Poznaj nasze dobre praktyki antyspamowe i sposoby odblokowania adresu IP zablokowanego przez SPAM
-updated: 2025-12-22
+updated: 2026-01-06
 ---
 
 ## Wprowadzenie
@@ -263,9 +263,9 @@ Microsoft stosuje zasadę listy białej. Oznacza to, że początkowo wszystko zn
 
 - **Do serwera Gmail**
 
-Jeśli Twoi odbiorcy korzystają z Gmaila, dodanie określonych rekordów (np. rekordu DMARC) może zagwarantować, że wiadomości trafią do nich. Oto artykuł Google, który może Ci w tym pomóc: [Dodaj rekord DMARC](https://support.google.com/a/answer/2466563?hl=en).
+Jeśli Twoi odbiorcy korzystają z Gmaila, dodanie określonych rekordów (np. rekordu DMARC) może zagwarantować, że wiadomości trafią do nich. Oto artykuł Google, który może Ci w tym pomóc: [Dodaj rekord DMARC](https://support.google.com/a/answer/2466563/).
 
-Google ma również [artykuł poświęcony](https://support.google.com/mail/answer/81126?hl=en) zapobieganiu spamowi dla użytkowników Gmail.
+Google ma również [artykuł poświęcony](https://support.google.com/mail/answer/81126/) zapobieganiu spamowi dla użytkowników Gmail.
 
 ### Zgłaszanie fałszywego pozytywu
 

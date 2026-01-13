@@ -1,7 +1,7 @@
 ---
 title: "Configura il reverse DNS di un'istanza Public Cloud"
 excerpt: Come impostare la risoluzione reverse DNS
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Obiettivo
@@ -22,19 +22,19 @@ Configurare la risoluzione **Reverse DNS** di un'istanza è particolarmente util
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Network`{.action} e clicca su `Indirizzi IP pubblici`{.action}.
 
-Il menu a tendina sotto **I miei indirizzi IP pubblici e servizi associati** permette di filtrare i tuoi servizi per categoria.
+Il menu a tendina sotto “**I tuoi indirizzi IP pubblici e servizi associati**” consente di filtrare i servizi per categoria. È inoltre possibile cercare un indirizzo IP specifico utilizzando la barra di ricerca situata a sinistra del menu a tendina.
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Clicca sui tre puntini `...`{.action} nella riga dell'indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
+Clicca su `⁝`{.action} nella riga dell'indirizzo IP interessato e seleziona `Configurare il reverse DNS`{.action}.
 
-![Reverse DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
+Nella nuova finestra, inserisci il tuo reverse e clicca su `Confermare`{.action}.
 
-![Reverse DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-Potrai anche modificare il reverse direttamente tramite l'icona della colonna **Reverse** della tabella.
+Puoi anche modificare il reverse direttamente tramite l'icona `matita`{.action} nella colonna **Reverse DNS** della tabella.
 
 > [!primary]
 >

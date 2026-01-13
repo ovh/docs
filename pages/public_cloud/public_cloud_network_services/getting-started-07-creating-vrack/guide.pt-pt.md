@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o endereçamento entre vários Servidores dedicados OVHcloud. Mas também lhe permite adicionar [instâncias Public Cloud](/links/public-cloud/Compute) à sua rede privada para criar uma infraestrutura de recursos físicos e virtuais.
+O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o endereçamento entre vários Servidores dedicados OVHcloud. Mas também lhe permite adicionar [instâncias Public Cloud](/links/public-cloud/compute) à sua rede privada para criar uma infraestrutura de recursos físicos e virtuais.
 
 **Este guia tem como objetivo acompanhá-lo na configuração das suas instâncias Public Cloud no seu vRack.**
 

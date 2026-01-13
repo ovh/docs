@@ -1,14 +1,15 @@
 ---
 title:  Mover una Additional IP
 excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
-updated: 2025-07-22
+updated: 2026-01-06
 ---
 
 > [!primary]
 > Este artículo se refiere al traslado de direcciones Additional IPv4, que está limitado según [restricciones regionales](#limitations).
 >
 > La configuración de Additional IP en un vRack (red privada) sortea estas restricciones regionales al perder la dependencia de una sola región, facilitando al mismo tiempo la interconexión en una amplia gama de servicios de OVHcloud.
-> Cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) y [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+> Descubra cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) y [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -18,12 +19,14 @@ Las Additional IP pueden moverse entre los servicios que utilice. El objetivo es
 Esta tecnología le permite mover las direcciones IP de un servidor a otro en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de respaldo en caso de fallo.
 
 > [!primary]
-> Es posible asignar los bloques de direcciones IP a cualquier servicio compatible dentro de una región.
-Los bloques de direcciones IP de una región pueden moverse de un datacenter a otro dentro de una misma región, pero no fuera de esa región.
+> Es posible asignar los bloques de direcciones IP a cualquier servicio compatible dentro de una región. Los bloques de direcciones IP de una región pueden moverse de un datacenter a otro dentro de una misma región, pero no fuera de esa región.
 >
 > Las regiones «eu-west-gra», «eu-west-rbx» y «eu-west-sbg» son una excepción, ya que sí es posible mover los bloques de direcciones IP entre estas tres regiones.
 >
+> Una región es una zona geográfica compuesta por uno o varios centros de datos.
+>
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
+>
 
 **Cómo mover una Additional IP desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
 
@@ -37,6 +40,7 @@ Los bloques de direcciones IP de una región pueden moverse de un datacenter a o
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
+>
 
 > [!warning]
 > Si la dirección Additional IP, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
@@ -68,19 +72,25 @@ Si contrata un bloque de IP adicional en un servidor, pero elige una localizaci�
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
-Haga clic en la pestaña `Additional IP`{.action}.
+Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicios asociados** y seleccionar `Todas las Additional IP`{.action} para filtrar sus servicios, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![área de cliente](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Trasladar Additional IP`{.action} o `Asociar este bloque de IP a otro servicio`{.action}.
+Haga clic en el botón `⁝`{.action} situado a la derecha de la dirección IP que desea mover y, a continuación, en `Trasladar Additional IP`{.action}.
 
-![área de cliente](images/move_ip.png){.thumbnail}
+![área de cliente](images/move_ip_1_new.png){.thumbnail}
 
-En el menú contextual, seleccione el servicio al que quiere mover la dirección IP.
+En el menú contextual que aparece, seleccione el servicio al que desea mover la dirección IP.
 
-Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
+Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 
-![área de cliente](images/moveadditionalIP2.png){.thumbnail}
+![área de cliente](images/move_ip_2_new.png){.thumbnail}
+
+> [!warning]
+> Tenga en cuenta que, para algunos productos, las direcciones IP (o bloques) deben trasladarse primero a un **aparcamiento de IP** (una ubicación de almacenamiento temporal) antes de poder trasladarse al producto deseado.
+>
+> Para mover bloques IP a una red vRack específica, utilice **la interfaz de gestión vRack**, a la que puede acceder haciendo clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y, a continuación, en `Red privada vRack`{.action}.
+>
 
 ### Mover una IP a través de las API
 

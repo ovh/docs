@@ -1,7 +1,7 @@
 ---
 title: "Jak skonfigurować rewers DNS Twojego serwera (rekord PTR)"
 excerpt: Dowiedz się, jak skonfigurować odwrotną rozpoznawalność DNS dla swojego adresu IP w Panelu klienta OVHcloud
-updated: 2025-12-22
+updated: 2026-01-06
 ---
 
 ## Wprowadzenie

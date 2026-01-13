@@ -1,8 +1,16 @@
 ---
 title: "Configurer son adresse e-mail sur l'interface en ligne de Gmail"
 excerpt: "Apprenez à configurer une adresse e-mail sur l'interface en ligne de Gmail"
-updated: 2025-02-17
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> A partir de janvier 2026, [Gmail ne sera plus compatible avec les fonctionnalités Gmailify et accès POP](https://support.google.com/mail/answer/16604719?hl) qui permettaient jusqu'à présent d'importer des e-mails de comptes e-mail tiers.
+>
+> Il ne sera donc plus possible de configurer vos adresses e-mail OVHcloud au sein de Gmail.
+>
+> Vos comptes e-mails OVHcloud sont toujours accessibles via notre [Webmail](/links/web/email).
 
 ## Objectif
 

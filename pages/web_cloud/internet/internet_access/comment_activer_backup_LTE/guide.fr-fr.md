@@ -47,8 +47,8 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 Par défaut, le modem Zyxel est déjà configuré pour supporter les liens de secours LTE, il suffit donc uniquement de brancher votre clé Huawei E3372 sur le port USB du modem.
 
-Des configurations plus avancées sont disponibles via l'interface locale. Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf) (en anglais) pour plus de détails.
-En complément, une liste des clés LTE compatibles avec Zyxel est disponible [ici](http://files.isp.ovh.net/zyxel/LTE_dongle_supportList.pdf).
+Des configurations plus avancées sont disponibles via l'interface locale. Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovhcloud.com/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf) (en anglais) pour plus de détails.
+En complément, une liste des clés LTE compatibles avec Zyxel est disponible [ici](http://files.isp.ovhcloud.com/zyxel/LTE_dongle_supportList.pdf).
 
 #### Modem Technicolor TG799vac
 

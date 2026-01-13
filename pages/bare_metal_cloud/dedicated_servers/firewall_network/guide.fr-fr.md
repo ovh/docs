@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2025-10-21
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -41,40 +41,32 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 > [!primary]
 >
 > À date, cette fonctionnalité n'est disponible que pour les adresses IPv4.
->
 
 > [!primary]
 >
 > Le Edge Network Firewall protège une IP spécifique associée à un serveur (ou service). Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP séparément.
 > 
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans la barre latérale de gauche puis cliquez sur `Adresses IP Publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans la barre latérale de gauche puis cliquez sur `Adresses IP Publiques`{.action}.
 
-![filtrer les service](images/selectservice_cut.png){.thumbnail}
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez d'abord `Créer un pare-feu`{.action}.
+![filtrer les services](images/selectservice_cut_new.png){.thumbnail}
 
-![Activation du Edge Network Firewall](images/firewallcreation2022.png){.thumbnail}
+Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'IPv4 concernée et sélectionnez `Configurer le Edge Network Firewall`{.action} (ou cliquez sur l'icône de statut dans la colonne **Edge Firewall**).
 
-Une confirmation vous sera alors demandée. Après confirmation, un pare-feu sera créé et disponible à la configuration.
+![Activation du Edge Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-> [!primary]
-> Le bouton `Créer un pare-feu`{.action} ne sera disponible que pour les IP n'ayant jamais eu de pare-feu configuré. Si ce n'est pas la première fois que vous configurez votre pare-feu, vous pouvez ignorer cette étape.
->
-
-| ![Activation de la configuration](images/activationconfig.png) |
-|:--:|
-| Cliquez ensuite sur `Edge Network Firewall Configuration`{.action} pour commencer à le configurer. |
-
-Sur cette page, vous pouvez choisir d'**activer** ou de **désactiver** le pare-feu à l'aide du bouton dédié.
-Il est également possible de le faire d'une autre manière expliquée ci-dessous.
+Vous serez amené vers la page de configuration du pare-feu.
 
 Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
 > [!warning]
 >
 > Le Edge Network Firewall est automatiquement activé lorsqu’une attaque DDoS est détectée et ne peut pas être désactivé tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
+>
 > Veuillez noter que vous devez configurer vos propres pare-feux locaux même si le Edge Network Firewall a été configuré, car son rôle principal est de gérer le trafic en dehors du réseau OVHcloud.
+>
 > Si vous avez configuré des règles, nous vous recommandons de les vérifier régulièrement ou lors de changements dans le fonctionnement de vos services. Comme évoqué précédemment, le Edge Network Firewall sera automatiquement activé en cas d’attaque DDoS, même s’il est désactivé dans vos paramètres IP.
 >
 
@@ -88,24 +80,25 @@ Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
 > [!warning]
 > Veuillez noter que le Edge Network Firewall d’OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.
+>
 > Pour plus d'informations, reportez-vous aux guides suivants : [Configuration du pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) et [Configuration du pare-feu sous Linux avec iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**Pour ajouter une règle :**
+**Pour ajouter une règle**, cliquez sur le bouton `+ Ajouter une règle`{.action}, en haut à gauche de la page.
 
-| ![add-rule-btn](images/enf_add_rule.png) |
+| ![add-rule-btn](images/enf_add_rule_new.png) |
 |:--:|
-| Cliquez sur `Ajouter une règle`{.action}. |
+| Cliquez sur `+ Ajouter une règle`{.action}. |
 
 Pour chaque règle (hors TCP), vous devez choisir :
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
 |:--| 
 | &bull; Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) |
 
 Pour chaque règle **TCP**, vous devez choisir :
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
 |:--| 
 | &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Le port source (facultatif) <br>&bull; Le port de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
 
@@ -123,21 +116,13 @@ Pour chaque règle **TCP**, vous devez choisir :
 > Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
 > 
 
-**Activer le pare-feu :**
+**Activer/désactiver le pare-feu :**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) |
+| ![activate-desactivate](images/enf_enable_disable_new.png) |
 |:--:| 
-| Utilisez le bouton `Activer`{.action} pour activer le pare-feu. |
+| Utilisez le bouton commutateur pour activer ou désactiver le pare-feu. |
 
-Après validation, le firewall sera activé.
-
-**Désactiver le pare-feu :**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:--:|
-| Utilisez le bouton `Désactiver`{.action} pour le désactiver. |
-
-Après validation, le firewall sera désactivé.
+Après validation, le firewall sera activé ou désactivé.
 
 Notez que les règles sont désactivées jusqu'au moment où une attaque est détectée, puis qu'elles sont activées. Cette logique peut être utilisée pour les règles qui ne sont actives que lorsqu'une attaque répétée connue arrive.
 
@@ -163,6 +148,7 @@ Toutes les adresses IP OVHcloud sont en mitigation automatique. Si un trafic mal
 
 > [!success]
 > **Astuces**
+>
 > Vous pouvez créer des règles de pare-feu dédiées aux attaques et qui ne s’appliquent qu’après la détection d’une attaque. Pour ce faire, des règles Edge Network Firewall doivent être créées mais désactivées.
 >
 

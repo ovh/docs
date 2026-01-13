@@ -1,7 +1,7 @@
 ---
 title: "Come configurare l'aggregazione di link con LACP in Debian 12 o Ubuntu 24.04 (EN)"
 excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
-updated: 2025-02-14
+updated: 2026-01-09
 ---
 
 <style>
@@ -22,7 +22,16 @@ details[open]>summary::before {
 
 Link Aggregation Control Protocol (LACP) technology is designed to increase your server’s availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
+**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 (*or newer*) / Ubuntu 24.04 (Netplan configuration).**
+
+> [!warning]
+> While Debian 12 and newer images provided by OVHcloud utilize Netplan by default, there are two key exceptions where `ifupdown` (/etc/network/interfaces) is used instead:
+>
+> - **Rescue mode**: Although based on Debian 12, the rescue environment relies on the `ifupdown` utility.
+> - **Custom images**: Debian installations performed using your own image may still use `ifupdown` for networking.
+>
+> If you wish to configure link aggregation in rescue mode, or on a custom OS relying on `ifupdown`, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) instead.
+>
 
 ## Requirements
 
@@ -43,7 +52,10 @@ Switch to the tab `Network Interfaces`{.action} and take note of the MAC address
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Please note that the MAC address of the **main** public interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:c6`.
+> Please note that the MAC address of the **main public** interface is the one receiving DHCP offers, both in the server's operating system and in rescue mode. This interface handles public connectivity in the default configuration.
+>
+> Additionally, the MAC address of the **main private** interface is the one with the lowest value. In the example image above, this is the address `a1:b2:c3:d4:e5:d6`.
+>
 
 Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
 
