@@ -1,7 +1,7 @@
 ---
-title: "Corriger les coordonnées du titulaire d'un nom de domaine"
-excerpt: "Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2025-05-21
+title: "Gérer les coordonnées du titulaire d'un nom de domaine"
+excerpt: "Découvrez comment vérifier, corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
+updated: 2026-01-13
 ---
 
 ## Objectif
@@ -10,8 +10,26 @@ Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une ac
 
 **Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud.**
 
-## Prérequis
 
+
+
+## Pourquoi ai-je reçu un e-mail de vérification de contact de la part d'OVHcloud ? 
+
+L'ICANN, l'organisme chargé de la gouvernance des noms de domaine au niveau mondial, ou les registres, organismes responsables de l'exploitation des extensions, imposent la validation des informations du titulaire lors de la création d'un nom de domaine, de son transfert ou de toute mise à jour des contacts associés.
+
+Ainsi, chaque domaine concerné doit faire l'objet d'une vérification des coordonnées de contact titulaire dans un délai de 15 jours après l'achat, le transfert ou la modification des coordonnées. 
+
+
+
+
+## Que se passe-t-il si l'e-mail du titulaire ou les informations de contact ne sont pas vérifiées dans les délais ?
+
+À défaut de validation dans les délais, le nom de domaine est automatiquement suspendu et devient temporairement indisponible jusqu'à la finalisation de la vérification, pouvant aller jusqu'à la suppression du nom de domaine. 
+Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHCloud.
+
+
+
+## Prérequis
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir reçu un e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
@@ -21,7 +39,31 @@ Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une ac
 
 ## En pratique
 
-### 1 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine
+### 1 - Vérification de l'e-mail du titulaire après la commande ou modification de l'e-mail de contact du titulaire d'un nom de domaine
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+
+> [!tabs]
+> **Étape 1**
+
+>> Après la commande, le titulaire du nom de domaine recevra un e-mail d'OVH afin de valider son adresse e-mail et confirmer sa bonne joignabilité.
+
+> **Étape 2**
+
+En cliquant sur "Confirmer votre adresse e-mail", une nouvelle page s'ouvrira sur un lien validant directement l'adresse e-mail du titulaire.
+
+>> ![Email address verification](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
+
+> **Étape 2 bis**
+
+SI l'étape 2 ne fonctionne pas, le titulaire peut valider manuellement son adresse e-mail grâce au code à usage unique présent dans l'e-mail et en cliquant sur "Formulaire de validation d'e-mail"
+
+>> ![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
+
+>> ![Validation email CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
+
+
+### 2 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine en tant qu'administrateur
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
@@ -66,7 +108,30 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Retrouvez plus de détails sur le changement de titulaire dans notre guide  : « [Nom de domaine - Comment changer le titulaire ?](/pages/web_cloud/domains/trade_domain) ».
 
-### 2 - Relancer l'opération de vérification des coordonnées/informations de contact du titulaire du nom de domaine
+
+
+
+### 3 - Que faire si l'adresse e-mail du contact titulaire n'est plus accessible ?
+
+>** Cas général**
+
+Si l'adresse e-mail associée à votre nom de domaine est incorrecte ou inaccessible (par exemple à cause d'une erreur de saisie), nous vous invitons à contacter le Support OVHcloud :
+
+https://help.ovhcloud.com/csm?id=contact_us_ovh
+
+A noter que le titulaire du domaine devra à nouveau justifier son identité en fournissant les documents requis selon son type (particulier, entreprise, association, etc.).
+
+Nos équipes vous aiderons dans les prochaines étapes pour vérifier votre domaine 😊
+
+
+> **Cas particulier du .fr**
+
+Pour les extensions en .fr, l'administrateur du domaine peut se rendre directement sur son espace client et modifier l'adresse du contact titulaire en suivant les étapes décrites en "Etape 2" de cette page.
+
+
+
+
+### 4 - Relancer l'opération de vérification des coordonnées/informations de contact du titulaire du nom de domaine
 
 > [!warning]
 >
