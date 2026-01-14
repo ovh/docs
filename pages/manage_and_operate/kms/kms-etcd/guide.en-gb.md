@@ -31,23 +31,25 @@ cd okms-k8s-encryption-provider
 go build -o okms-k8s-encryption-provider
 ```
 
-### OVHcloud KMS Configuration
+### OVHcloud KMS (OKMS) Configuration
 
 To use OVHcloud KMS as an encryption provider for Kubernetes, you will need the following:
 
-- An OVHcloud user and permissions to manage KMS KMIP keys.
-- An access certificate for your KMS domain.
-- A KMIP AES key in your KMS.
+- An OVHcloud user and permissions to manage OKMS KMIP keys.
+- An access certificate for your OKMS domain.
+- A KMIP AES key in your OKMS.
 
 #### User Creation and Access Rights
 
 Create a [IAM local user](/pages/account_and_service_management/account_information/ovhcloud-users-management) with access rights on your domain.
 
-The user should be a member of a group with the ADMIN role. If you are using [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) instead, the user should have at least the following rights on the OKMS domain:
+If you are using [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) instead, the user should have at least the following rights on the OKMS domain:
 
 - `okms:kmip:encrypt`
 - `okms:kmip:decrypt`
 - `okms:kmip:locate`
+
+Otherwise, the user should be a member of a group with the ADMIN role.
 
 Alternatively, it is possible to create a user using [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli):
 
@@ -63,13 +65,17 @@ Save the certificate `cert.pem` and the private key `key.pem` generated, as they
 
 #### KMIP AES Key Creation
 
-Create a KMIP AES key using [OKMS CLI](https://github.com/ovh/okms-cli):
+To create a KMIP key you can use the [OKMS CLI](https://github.com/ovh/okms-cli):
+Start by downloading the binary on the lastest release or building from the sources.
+Then you can create a key using :
 
 ```bash
-okms kmip create symmetric --alg aes --size 256
+okms-cli kmip create symmetric --alg aes --size 256
 ```
 
-Keep the Key ID of the key generated.
+Keep the Key ID of the key generated. For the rest of the guide we'll use the id **70001308-5674-43fe-93dd-6270ecac0710** as an example.
+
+For more details information on how to use the okms-cli refer to the Github repository."
 
 ### Encryption Provider Configuration
 
@@ -89,7 +95,7 @@ The encryption provider supports the following options:
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | `--client-cert` | Path to the client certificate file for OVHcloud KMS authentication.                                                                                      | `""` (required)                  |
 | `--client-key`  | Path to the private key file associated with the client certificate.                                                                                      | `""` (required)                  |
-| `--kmip-addr`   | Address of the KMIP server. Can be found in the [OVHcloud manager](https://www.ovh.com/manager) page of your KMS. (e.g., `eu-west-rbx.okms.ovh.net:5696`) | `""` (required)                  |
+| `--kmip-addr`   | Address of the KMIP server. Can be found in the [OVHcloud manager](https://www.ovh.com/manager) page of your OKMS. (e.g., `eu-west-rbx.okms.ovh.net:5696`) | `""` (required)                  |
 | `--kmip-key-id` | Identifier of the encryption key to use on the KMIP server.                                                                                               | `""` (required)                  |
 | `--sock`        | Path to the Unix socket the provider will listen on. Should be mounted inside the Kubernetes apiserver                                                    | `/var/run/okms_etcd_plugin.sock` |
 | `--timeout`     | Timeout for the gRPC server operations.                                                                                                                   | `10s`                            |
