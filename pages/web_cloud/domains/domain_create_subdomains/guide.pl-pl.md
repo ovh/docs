@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć subdomenę?"
 excerpt: "Dowiedz się, jak zdefiniować subdomenę i jak ją utworzyć w OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Comment associer un nom de domaine à un site web existant ?"
 excerpt: "Découvrez comment associer un nom de domaine ou un sous-domaine à un site web déjà existant sur votre hébergement web"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

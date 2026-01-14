@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich einen Domainnamen mit einer bestehenden Website verknüpfen?"
 excerpt: "Erfahren Sie, wie Sie einen Domainnamen oder eine Unterdomain mit einer bereits bestehenden Website auf Ihrem Webhosting verknüpfen können"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

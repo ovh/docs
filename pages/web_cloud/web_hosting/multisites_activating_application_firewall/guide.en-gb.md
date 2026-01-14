@@ -1,7 +1,7 @@
 ---
 title: "Activating the application firewall"
 excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

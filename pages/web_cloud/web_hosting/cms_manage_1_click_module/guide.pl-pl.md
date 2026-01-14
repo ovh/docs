@@ -1,7 +1,7 @@
 ---
 title: "Jak zarządzać modułem za 1 kliknięciem?"
 excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Wprowadzenie 

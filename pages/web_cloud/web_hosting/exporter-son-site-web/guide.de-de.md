@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseite exportieren"
 excerpt: "Eine OVHcloud Webseite exportieren"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Ziel 

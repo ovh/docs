@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo comprobar la asociación 'nombre de dominio / sitio web'?"
 excerpt: "Utilice nuestra herramienta de diagnóstico para comprobar que su nombre de dominio o subdominio está correctamente declarado con su sitio web en su alojamiento web"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

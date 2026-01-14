@@ -1,7 +1,7 @@
 ---
 title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 > [!success]

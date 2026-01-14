@@ -1,7 +1,7 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

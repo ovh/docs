@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

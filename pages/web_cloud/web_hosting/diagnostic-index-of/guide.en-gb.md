@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas de page « Index of » ?"
 excerpt: "Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objectif
@@ -50,11 +50,9 @@ Vous avez importé les fichiers de votre site **domain.tld** dans le dossier `ww
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Le `Dossier racine` n'est, à date, pas modifiable une fois le site web créé.
+Vous devrez modifier le `Dossier racine` déclaré initialement pour votre site web depuis votre [espace client OVHcloud](/links/manager).  Pour cela, consultez notre guide « [Comment modifier le dossier racine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) ».
 
-Vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action} de votre hébergement web. Pour cela, consultez notre guide « [Comment détacher un nom de domaine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
-
-Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **avant** de `Détacher le domaine`{.action}.
+Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » pour supprimer l'association avec Git **avant** de poursuivre. En effet, la modification du dossier racine déclaré pour un site web est indisponible si votre site web est configuré avec Git.
 
 Vérifiez que votre site web s'affiche correctement. Dans le cas contraire, redémarrez votre appareil et videz le cache de votre navigateur si nécessaire.
 

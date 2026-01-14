@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Ziel 

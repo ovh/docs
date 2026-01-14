@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites web sur votre offre d'hébergement web"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

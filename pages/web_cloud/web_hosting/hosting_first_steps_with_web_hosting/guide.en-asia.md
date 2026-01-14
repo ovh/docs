@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

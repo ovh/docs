@@ -1,7 +1,7 @@
 ---
 title: "Configurar e utilizar o Git com o seu alojamento web OVHcloud"
 excerpt: "Saiba como configurar e utilizar o Git com o seu alojamento web na sua Área de Cliente OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objetivo

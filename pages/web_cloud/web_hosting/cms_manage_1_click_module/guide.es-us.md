@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo gestionar su módulo en 1 clic?"
 excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objetivo

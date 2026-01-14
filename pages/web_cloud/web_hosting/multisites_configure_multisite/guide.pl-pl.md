@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Alterar a palavra-passe da base de dados de um alojamento web
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objetivo

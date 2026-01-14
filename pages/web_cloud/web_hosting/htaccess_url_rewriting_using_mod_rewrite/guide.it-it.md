@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - riscrivi l'URL di accesso al mio sito grazie al mod_rewrite tramite il file.htaccess"
 excerpt: "Questa tutorial ti mostra come riscrivere l'URL di accesso al tuo sito grazie al mod_rewrite tramite il file.htaccess"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Obiettivo

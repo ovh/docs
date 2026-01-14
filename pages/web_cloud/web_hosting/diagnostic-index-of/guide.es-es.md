@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hacer en caso de página del "Index of"?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página "Index of"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objetivo

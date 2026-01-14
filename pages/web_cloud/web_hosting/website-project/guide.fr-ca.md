@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un site web - Réaliser votre projet en 5 étapes"
 excerpt: "Découvrez comment définir votre projet, publier votre site internet et créer des adresses e-mail avec votre solution d'hébergement web"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

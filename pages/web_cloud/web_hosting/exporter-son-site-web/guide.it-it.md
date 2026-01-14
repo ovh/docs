@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Obiettivo

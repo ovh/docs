@@ -1,7 +1,7 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

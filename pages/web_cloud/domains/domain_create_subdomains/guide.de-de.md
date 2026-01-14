@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 <style>

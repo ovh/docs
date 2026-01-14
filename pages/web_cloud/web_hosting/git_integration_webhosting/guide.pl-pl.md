@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja i korzystanie z Git na hostingu OVHcloud"
 excerpt: "Dowiedz się, jak skonfigurować i korzystać z Git na Twoim hostingu w Panelu klienta OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Wprowadzenie

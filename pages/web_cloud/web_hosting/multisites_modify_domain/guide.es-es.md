@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Modificar un dominio ya asociado a un alojamiento"
 excerpt: "Descubra cómo modificar la configuración de asociación de un dominio o subdominio ya declarado en su plan de hosting"
-updated: 2025-12-19
+updated: 2026-02-01
 ---
 
 ## Objetivo
