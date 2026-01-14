@@ -31,23 +31,25 @@ cd okms-k8s-encryption-provider
 go build -o okms-k8s-encryption-provider
 ```
 
-### Configuration d'OVHcloud KMS
+### Configuration d'OVHcloud KMS (OKMS)
 
 Pour utiliser OVHcloud KMS en tant que fournisseur de chiffrement pour Kubernetes, vous aurez besoin des éléments suivants :
 
-- Un utilisateur OVHcloud et des droits pour gérer les clés KMS KMIP.
-- Un certificat d'accès pour votre domaine KMS.
-- Une clé KMIP AES dans votre KMS.
+- Un utilisateur OVHcloud et des droits pour gérer les clés OKMS KMIP.
+- Un certificat d'accès pour votre domaine OKMS.
+- Une clé KMIP AES dans votre OKMS.
 
 #### Création de l'utilisateur et des droits d'accès
 
 Créez un [utilisateur local IAM](/pages/account_and_service_management/account_information/ovhcloud-users-management) avec des droits d'accès sur votre domaine.
 
-L'utilisateur doit appartenir à un groupe avec le rôle ADMIN. Si vous utilisez des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui) à la place, l'utilisateur doit avoir au moins les droits suivants sur le domaine OKMS :
+Si vous utilisez des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui) à la place, l'utilisateur doit avoir au moins les droits suivants sur le domaine OKMS :
 
 - `okms:kmip:encrypt`
 - `okms:kmip:decrypt`
 - `okms:kmip:locate`
+
+Autrement, l'utilisateur doit appartenir à un groupe avec le rôle ADMIN.
 
 Sinon, il est possible de créer un utilisateur en utilisant [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
 
@@ -63,13 +65,17 @@ Sauvegardez le certificat `cert.pem` et la clé privée `key.pem` générés, ca
 
 #### Création de la clé KMIP AES
 
-Créez une clé KMIP AES en utilisant [OKMS CLI](https://github.com/ovh/okms-cli) :
+Pour créer une clé KMIP AES vous pouvez utiliser la [CLI OKMS](https://github.com/ovh/okms-cli) :
+Commencez par télécharger le binaire dans la dernière version ou construisez le depuis les sources.
+Ensuite vous pouvez créer une clé en utilisant :
 
 ```bash
-okms kmip create symmetric --alg aes --size 256
+okms-cli kmip create symmetric --alg aes --size 256
 ```
 
-Conservez l'ID de la clé générée.
+Conservez l'ID de la clé générée. Pour le reste du guide nous allons utiliser l'ID **70001308-5674-43fe-93dd-6270ecac0710** comme exemple.
+
+Pour plus de détail sur l'utilisation de okms-cli, veuillez vous référer au dépôt Github
 
 ### Configuration du fournisseur de chiffrement
 
@@ -89,7 +95,7 @@ Le fournisseur de chiffrement prend en charge les options suivantes :
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | `--client-cert` | Chemin vers le fichier de certificat client pour l'authentification sur OVHcloud KMS.                                                                       | `""` (obligatoire)               |
 | `--client-key`  | Chemin vers le fichier de clé privée associé au certificat client.                                                                                          | `""` (obligatoire)               |
-| `--kmip-addr`   | Adresse du serveur KMIP. Peut être trouvée dans la [page OVHcloud manager](https://www.ovh.com/manager) de votre KMS. (ex. `eu-west-rbx.okms.ovh.net:5696`) | `""` (obligatoire)               |
+| `--kmip-addr`   | Adresse du serveur KMIP. Peut être trouvée dans la [page OVHcloud manager](https://www.ovh.com/manager) de votre OKMS. (ex. `eu-west-rbx.okms.ovh.net:5696`) | `""` (obligatoire)               |
 | `--kmip-key-id` | Identifiant de la clé de chiffrement à utiliser sur le serveur KMIP.                                                                                        | `""` (obligatoire)               |
 | `--sock`        | Chemin vers le socket Unix sur lequel le fournisseur écoutera. Doit être monté à l'intérieur du serveur Kubernetes apiserver                                | `/var/run/okms_etcd_plugin.sock` |
 | `--timeout`     | Délai d'attente pour les opérations du serveur gRPC.                                                                                                        | `10s`                            |
