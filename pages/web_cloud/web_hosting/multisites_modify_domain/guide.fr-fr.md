@@ -76,11 +76,7 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 > Les champs `Nom du domaine`{.action} et `Dossier racine`{.action} ne sont pas modifiables, car il s'agit de paramètres relatifs au site web présent sur votre hébergement web.
 >
 > - Pour associer un nouveau nom de domaine ou sous-domaine à un site web présent sur votre hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
-> - Pour changer le dossier racine de votre site web, vous devrez détacher votre nom de domaine du site web existant depuis l'onglet `Mes sites`{.action}. Pour cela :
->     - Cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
->     - Cliquez ensuite sur le bouton `⁝`{.action} situé à droite du nom de domaine ou sous-domaine concerné, puis sur `Détacher le domaine`{.action}.
->
-> Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **avant** de `Détacher le domaine`{.action}.
+> - Pour changer le dossier racine de votre site web, consultez notre guide « [Comment modifier le dossier racine d'un site web existant ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) ».
 
 #### Option « Activer CDN »
 
