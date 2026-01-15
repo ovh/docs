@@ -2519,7 +2519,7 @@
         + [OKMS Architecture overview](manage_and_operate/kms/architecture-overview)
         + [OKMS - Shared responsibilities](manage_and_operate/kms/responsibility-model-kms)
         + [How to connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
-        + [How to encrypte Kubernetes ETCD with OVHcloud KMS](manage_and_operate/kms/kms-etcd)
+        + [How to encrypt Kubernetes ETCD with OVHcloud KMS](manage_and_operate/kms/kms-etcd)
         + [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting)
     + [Secret Manager](manage-operate-secret-manager)
         + [Getting started with Secret Manager](manage_and_operate/secret_manager/secret-manager-ui)
