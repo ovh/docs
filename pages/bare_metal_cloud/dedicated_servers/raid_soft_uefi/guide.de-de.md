@@ -1,7 +1,7 @@
 ---
 title: Verwalten und Neuaufbauen von Software-RAID auf Servern mit UEFI-Boot-Modus
 excerpt: Erfahren Sie, wie Sie Software-RAID nach einem Wechsel der Disk auf einem Server mit UEFI-Boot-Modus verwalten und neu aufbauen können
-updated: 2025-12-15
+updated: 2026-01-15
 ---
 
 <style>
@@ -49,7 +49,7 @@ Im Laufe dieser Anleitung verwenden wir die Begriffe **primäre Disk** und **sek
 
 ## In der praktischen Anwendung
 
-Wenn Sie einen neuen Server bestellt und installiert haben, können Sie vorab eine Reihe von Tests durchzuführen. Ein solcher Test könnte darin bestehen, einen Diskausfall zu simulieren, um den RAID-Wiederherstellungsprozess zu verstehen und sich darauf vorzubereiten, falls dies tatsächlich eintritt.
+Wenn Sie einen neuen Server bestellt und installiert haben, können Sie vorab eine Reihe von Tests durchzuführen. Ein solcher Test könnte darin bestehen, einen Diskausfall zu simulieren, um den RAID-Wiederherstellungsprozess zu verstehen.
 
 ### Inhaltsübersicht
 
@@ -57,18 +57,19 @@ Wenn Sie einen neuen Server bestellt und installiert haben, können Sie vorab ei
 - [Verständnis der EFI-Systempartition (ESP)](#efisystemparition)
 - [Simulieren eines Diskausfalls](#diskfailure)
     - [Entfernen der defekten Disk](#diskremove)
-- [Neuaufbau des RAIDs](#raidrebuild)
-    - [Neuaufbau des RAIDs nach Austausch der Disk (Rescue-Modus)](#rescuemode)
+- [Wiederherstellung des RAID (mit nicht gespiegeltem ESP)](#raidrebuildnonmirrored)
+    - [Neuaufbau des RAIDs nach Austausch der primären Disk (Rescue-Modus)](#nonmirroredrescuemode)
     - [Neuanlegen der EFI-Systempartition](#recreateesp)
-    - [Neuaufbau des RAIDs, wenn die EFI-Partitionen nach wichtigen Systemaktualisierungen (z. B. GRUB) nicht synchronisiert sind](#efiraidgrub)
-    - [Hinzufügen der Bezeichnung zur SWAP-Partition (falls zutreffend)](#swap-partition)
-    - [Neuaufbau des RAIDs im normalen Modus](#normalmode)
+    - [Wiederherstellung des RAID mit nicht synchronisierten ESPs nach größeren Systemaktualisierungen (z. B. GRUB)](#efiraidgrub)
+    - [Wiederherstellung des RAID nach Austausch der primären Disk0onormalen Modus)](#nonmirrorednormalmode)
+- [Wiederherstellung des RAID (mit gespiegeltem ESP)](#raidrebuildmirrored)
+- [Hinzufügen der Bezeichnung zur SWAP-Partition (falls zutreffend)](#swap-partition)
 
 <a name="basicinformation"></a>
 
 ### Grundlegende Informationen
 
-In einer Befehlszeilensitzung geben Sie den folgenden Code ein, um den aktuellen RAID-Status zu ermitteln:
+In einer Befehlszeilensitzung geben Sie den folgenden Code ein, um den RAID-Status zu ermitteln:
 
 ```sh
 [user@server_ip ~]# cat /proc/mdstat
@@ -83,9 +84,28 @@ md2 : active raid1 nvme1n1p2[1] nvme0n1p2[0]
 unused devices: <none>
 ```
 
-Dieser Befehl zeigt uns, dass wir derzeit zwei Disks im Software-RAID konfiguriert haben, **md2** und **md3**, wobei **md3** das größere der beiden ist. **md3** besteht aus zwei Partitionen, genannt **nvme1n1p3** und **nvme0n1p3**. 
+Den Ergebnissen zufolge sind derzeit zwei Software-RAID-Geräte konfiguriert, **md2** und **md3**, wobei **md3** das größere der beiden ist. **md3** besteht aus zwei Partitionen namens **nvme0n1p3** und **nvme1n1p3**.
 
 [UU] bedeutet, dass alle Disks normal funktionieren. Ein `_` würde stattdessen eine defekte Disk anzeigen.
+
+In anderen Fällen würden Sie die folgenden Ergebnisse erhalten:
+
+```sh
+Personalities : [raid1]
+md3 : active raid1 nvme0n1p3[1] nvme1n1p3[0]
+      497875968 blocks super 1.2 [2/2] [UU]
+      bitmap: 2/4 pages [8KB], 65536KB chunk
+
+md1 : active raid1 nvme0n1p1[1] nvme1n1p1[0]
+      523200 blocks [2/2] [UU]
+
+md2 : active raid1 nvme1n1p2[0] nvme0n1p2[1]
+      1046528 blocks super 1.2 [2/2] [UU]
+
+unused devices: <none>
+```
+
+Die Ergebnisse zeigen drei konfigurierte Software-RAID-Geräte, **md1**, **md2** und **md3**, wobei **md3** das größte der drei ist. **md3** besteht aus zwei Partitionen namens **nvme0n1p3** und **nvme1n1p3**.
 
 Wenn Sie einen Server mit SATA-Disks haben, erhalten Sie die folgenden Ergebnisse:
 
@@ -102,7 +122,9 @@ md2 : active raid1 sda2[0] sdb2[1]
 unused devices: <none>
 ```
 
-Obwohl dieser Befehl unsere RAID-Volumes zurückgibt, besagt er nichts zur Größe der Partitionen selbst. Wir können diese Informationen mit dem folgenden Befehl finden:
+Dieser Befehl zeigt unsere RAID-Volumes an, jedoch nicht die Partitionsgrößen. Diese Informationen können wir mit `fdisk -l` abrufen:
+
+/// details | **fdisk -l**
 
 ```sh
 [user@server_ip ~]# sudo fdisk -l
@@ -150,12 +172,14 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-Der Befehl `fdisk -l` erlaubt es Ihnen auch, den Typ Ihrer Partition zu identifizieren. Dies ist eine wichtige Information, wenn es darum geht, Ihr RAID bei einem Diskausfall wiederherzustellen.
+Dieser Befehl kann auch verwendet werden, um den Partitionstyp zu identifizieren.
 
 Für **GPT**-Partitionen wird in Zeile 6 Folgendes angezeigt: `Disklabel type: gpt`.  
 Diese Informationen sind nur sichtbar, wenn sich der Server im normalen Modus befindet.
 
-Basierend auf den Ergebnissen `fdisk -l` können wir sehen, dass `/dev/md2` aus 1022 MiB besteht und `/dev/md3` 474,81 GiB enthält. Wenn wir den Befehl `mount` ausführen, können wir auch die Struktur der Disk ermitteln.
+Den Ergebnissen zufolge sehen wir, dass `/dev/md2` aus 1022 MiB besteht und `/dev/md3` 474,81 GiB enthält. Wenn wir den Befehl `mount` ausführen, können wir auch das Layout der Festplatte herausfinden.
+
+///
 
 Alternativ bietet der Befehl `lsblk` eine andere Ansicht der Partitionen:
 
@@ -201,18 +225,18 @@ nvme0n1
 └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
 ```
 
-Notieren Sie sich die Geräte, Partitionen und ihre Mountpoints; dies ist besonders wichtig, nachdem Sie eine Disk ersetzt haben.
+Notieren Sie sich die Geräte, Partitionen und Einhängepunkte, da dies besonders nach dem Austausch einer Festplatte wichtig ist. So können Sie überprüfen, ob die Partitionen korrekt an ihren jeweiligen Einhängepunkten auf der neuen Festplatte eingehängt sind.
 
-Aus den oben genannten Befehlen und Ergebnissen haben wir:
+In unserem Beispiel haben wir:
 
 - Zwei RAID-Arrays: `/dev/md2` und `/dev/md3`.
-- Vier Partitionen, die zum RAID gehören: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2**, **nvme0n1p3** mit den Mountpoints `/boot` und `/`.
-- Zwei Partitionen, die nicht zum RAID gehören, mit Mountpoints: `/boot/efi` und [SWAP].
-- Eine Partition, die keinen Mountpoint hat: **nvme1n1p1**
-
-Die Partition **nvme0n1p5** ist eine Konfigurationspartition, d. h. ein schreibgeschütztes Volume, das mit dem Server verbunden ist und diesem die Konfigurationsdaten bereitstellt.
+- Partitionen, die Teil des RAID sind: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** und **nvme0n1p3** mit den Einhängepunkten `/boot` und `/`.
+- Partitionen, die nicht Teil des RAID sind: **nvem0n1p1**, **nvme0n1p4** und **nvme1n1p4** mit den Einhängepunkten `/boot/efi` und [SWAP].
+- Eine Partition hat keinen Einhängepunkt: **nvme1n1p1**.
 
 <a name="efisystempartition"></a>
+
+/// dtails | **Diesen Abschnitt aufklappen**
 
 ### Erklärung der EFI-Systempartition (ESP)
 
@@ -222,41 +246,78 @@ Eine EFI-Systempartition ist eine Partition, die die Bootloader, Bootmanager ode
 
 ***Wird die EFI-Systempartition in einem RAID gespiegelt?***
 
-Nein, wenn die Installation des Betriebssystems von OVHcloud durchgeführt wird, ist die ESP nicht im RAID enthalten. Wenn Sie unsere Betriebssystem-Templates verwenden, um Ihren Server mit Software-RAID zu installieren, werden mehrere EFI-Systempartitionen erstellt: eine pro Disk. Allerdings wird nur eine EFI-Partition gleichzeitig eingehängt. Alle ESPs, die zum Zeitpunkt der Installation erstellt wurden, enthalten die gleichen Dateien. (Stand August 2025)
+Ab Dezember 2025 spiegeln nur die folgenden Betriebssystemversionen die EFI-Systempartition in RAID für Neuinstallationen oder Neuinstallationen:
 
-Die EFI-Systempartition wird unter `/boot/efi` eingehängt und die Disk, auf der sie eingehängt ist, wird vom Linux-System beim Start ausgewählt.
+- Debian 13
+- Proxmox 9
+- Ubuntu 25.10
+- AlmaLinux und Rocky Linux 10
+- Fedora 43
 
-Beispiel:
+Bei früheren Versionen wird die EFI-Partition nicht in RAID gespiegelt; es werden mehrere ESPs erstellt, eines pro Festplatte. Es wird jedoch jeweils nur ein ESP gemountet. Das ESP wird unter `/boot/efi` gemountet, und die Festplatte, auf der es gemountet ist, wird beim Booten von Linux ausgewählt.
 
-```sh
-[user@server_ip ~]# sudo lsblk -f
-NAME        FSTYPE            FSVER            LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINT
-nvme1n1
-├─nvme1n1p1 vfat              FAT16            EFI_SYSPART    B493-9DFA
-├─nvme1n1p2 linux_raid_member 1.2              md2            baae988b-bef3-fc07-615f-6f9043cfd5ea
-│ └─md2     ext4              1.0              boot           96850c4e-e2b5-4048-8c39-525194e441aa  851.8M     7% /boot
-├─nvme1n1p3 linux_raid_member 1.2              md3            ce0c7fac-0032-054c-eef7-7463b2245519
-│ └─md3     ext4              1.0              root           6fea39e9-6297-4ea3-82f1-bf1a3e88106a  441.3G     0% /
-└─nvme1n1p4 swap              1                swap-nvme1n1p4 483b9b41-ada3-4143-8cac-5bff7afb73c7                [SWAP]
-nvme0n1
-├─nvme0n1p1 vfat              FAT16            EFI_SYSPART    B486-9781                             504.9M     1% /boot/efi
-├─nvme0n1p2 linux_raid_member 1.2              md2            baae988b-bef3-fc07-615f-6f9043cfd5ea
-│ └─md2     ext4              1.0              boot           96850c4e-e2b5-4048-8c39-525194e441aa  851.8M     7% /boot
-├─nvme0n1p3 linux_raid_member 1.2              md3            ce0c7fac-0032-054c-eef7-7463b2245519
-│ └─md3     ext4              1.0              root           6fea39e9-6297-4ea3-82f1-bf1a3e88106a  441.3G     0% /
-├─nvme0n1p4 swap              1                swap-nvme0n1p4 51e7172b-adb0-4729-b0f8-613e5dede38b                [SWAP]
-└─nvme0n1p5 iso9660           Joliet Extension config-2       2025-08-05-14-55-41-00
-```
+Mit dem Befehl `lsblk` können Sie überprüfen, ob Ihre Partition Teil einer RAID-Konfiguration ist.
 
-Aus den obigen Ergebnissen geht hervor, dass wir zwei identische EFI-Systempartitionen haben (nvme0n1p1 und nvme1n1p1), aber nur **nvme0n1p1** ist unter `/boot/efi` gemountet. Beide Partitionen haben die Bezeichnung: `EFI_SYSPART` (diese Bezeichnung ist spezifisch für OVHcloud).
+> [!tabs]
+> **ESP nicht gespiegelt**
+>>
+>> ```sh
+>> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+>> nvme0n1     259:0    0 476.9G  0 disk
+>> ├─nvme0n1p1 259:6    0   511M  0 part
+>> ├─nvme0n1p2 259:7    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme0n1p3 259:8    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> ├─nvme0n1p4 259:9    0   512M  0 part  [SWAP]
+>> └─nvme0n1p5 259:10   0     2M  0 part
+>> nvme1n1     259:1    0 476.9G  0 disk
+>> ├─nvme1n1p1 259:2    0   511M  0 part  /boot/efi
+>> ├─nvme1n1p2 259:3    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme1n1p3 259:4    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> └─nvme1n1p4 259:5    0   512M  0 part  [SWAP]
+>> ```
+>>
+>> Aus den obigen Ergebnissen geht hervor, dass nur eine EFI-Systempartition unter `/boot/efi` gemountet ist. Die ESPs sind daher nicht gespiegelt.
+>>
+> **ESP espiegelt**
+>>
+>> ```sh
+>> lsblk
+>> nvme0n1     259:0    0 476.9G  0 disk
+>> ├─nvme0n1p1 259:1    0   511M  0 part
+>> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
+>> ├─nvme0n1p2 259:2    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme0n1p3 259:3    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> └─nvme0n1p4 259:4    0   512M  0 part  [SWAP]
+>> nvme1n1     259:5    0 476.9G  0 disk
+>> ├─nvme1n1p1 259:6    0   511M  0 part
+>> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
+>> ├─nvme1n1p2 259:7    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1 /boot
+>> ├─nvme1n1p3 259:8    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1 /
+>> ├─nvme1n1p4 259:9    0   512M  0 part  [SWAP]
+>> └─nvme1n1p5 259:10   0     2M  0 part
+>> ```
+>>
+>> Aus den obigen Ergebnissen geht hervor, dass beide EFI-Systempartitionen unter `/boot/efi` gemountet sind. Sie sind daher in RAID gespiegelt.
+>>
 
 ***Ändert sich der Inhalt der EFI-Systempartition regelmäßig?***
 
 Im Allgemeinen ändert sich der Inhalt dieser Partition nicht wesentlich, er sollte sich nur bei Updates des Bootloaders ändern.
 
-Wir empfehlen jedoch, ein automatisches oder manuelles Skript auszuführen, um alle ESPs zu synchronisieren, damit sie alle die gleichen aktuellen Dateien enthalten. Auf diese Weise kann der Server, wenn die Disk, auf der diese Partition gemountet ist, ausfällt, auf der ESP einer der anderen Disks neu gestartet werden.
+Wenn Ihre EFI-Partition jedoch nicht gespiegelt ist, empfehlen wir Ihnen, ein automatisches oder manuelles Skript auszuführen, um alle ESPs zu synchronisieren, sodass sie alle die gleichen aktuellen Dateien enthalten. Auf diese Weise kann der Server bei einem Ausfall des Laufwerks, auf dem diese Partition gemountet ist, auf dem ESP eines der anderen Laufwerke neu gestartet werden.
 
-***Was passiert, wenn die unter `boot/efi` gemountete Disk ausfällt?***
+***Was passiert, wenn die primären estplatte (mit der gemounteten EFI-Systempartition) ausfällt?***
+
+Wenn Ihre ESP nicht gespiegelt ist, kann Folgendes passieren:
 
 > [!primary]
 > Beachten Sie, dass wir im Folgenden die häufigsten Fälle beispielhaft erläutern, es jedoch mehrere andere Gründe gibt, warum ein Server nach einem Diskaustausch nicht im normalen Modus startet.
