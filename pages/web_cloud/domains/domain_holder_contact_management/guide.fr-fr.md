@@ -1,7 +1,7 @@
 ---
-title: "Gérer les coordonnées du titulaire d'un nom de domaine"
+title: "Gestion du contact titulaire du nom de domaine"
 excerpt: "Découvrez comment vérifier, corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2026-01-13
+updated: 2026-01-15
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une ac
 
 L'ICANN, l'organisme chargé de la gouvernance des noms de domaine au niveau mondial, ou les registres, organismes responsables de l'exploitation des extensions, imposent la validation des informations du titulaire lors de la création d'un nom de domaine, de son transfert ou de toute mise à jour des contacts associés.
 
-Ainsi, chaque domaine concerné doit faire l'objet d'une vérification des coordonnées de contact titulaire dans un délai de 15 jours après l'achat, le transfert ou la modification des coordonnées. 
+Les vérifications des coordonnées de contact titulaire peuvent intervenir à tout moment dans la vie d'un nom de domaine, y compris pour des domaines achetés il y a plusieurs années. Ainsi, chaque domaine concerné doit faire l'objet d'une vérification des coordonnées de contact titulaire dans un délai de 15 jours après la réception de l'e-mail de vérification, que ce soit suite à un achat, un transfert, une modification des coordonnées ou une vérification périodique demandée par l'ICANN ou le registre. 
 
 
 
@@ -25,7 +25,7 @@ Ainsi, chaque domaine concerné doit faire l'objet d'une vérification des coord
 ## Que se passe-t-il si l'e-mail du titulaire ou les informations de contact ne sont pas vérifiées dans les délais ?
 
 À défaut de validation dans les délais, le nom de domaine est automatiquement suspendu et devient temporairement indisponible jusqu'à la finalisation de la vérification, pouvant aller jusqu'à la suppression du nom de domaine. 
-Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHCloud.
+Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHcloud.
 
 
 
@@ -56,7 +56,7 @@ En cliquant sur "Confirmer votre adresse e-mail", une nouvelle page s'ouvrira su
 
 > **Étape 2 bis**
 
-SI l'étape 2 ne fonctionne pas, le titulaire peut valider manuellement son adresse e-mail grâce au code à usage unique présent dans l'e-mail et en cliquant sur "Formulaire de validation d'e-mail"
+Si l'étape 2 ne fonctionne pas, le titulaire peut valider manuellement son adresse e-mail grâce au code à usage unique présent dans l'e-mail et en cliquant sur "Formulaire de validation d'e-mail"
 
 >> ![Holder contact email validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Sur la page qui s'affiche, vérifiez d'abord que votre nom de domaine est bien concerné par la procédure grâce à la présence d'un bandeau (jaune ou rouge) signalant l'opération à réaliser.
 >>
->> Vous trouverez ensuite la mention **Contacts**  dans le cadre **Abonnement**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
+>> Vous trouverez ensuite la mention **Contacts** dans le cadre **Abonnement**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
@@ -100,33 +100,55 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> >
 >> > Toute modification apportée au prénom, au nom, à l’organisation, au statut légal ou à l’adresse e-mail du titulaire est considérée comme un **changement de titulaire**.
 >> >
->> > Si vos modifications concernent **uniquement** des informations différentes de celles mentionnées ci-dessus, réalisez les directement, puis cliquez sur `Valider`{.action}. Dans ce cas précis, il ne sera pas nécessaire de lancer une demande de changement de titulaire. Pour cette opération, vous n'avez pas besoin de confirmer les modifications par e-mail.
+>> > Si vos modifications concernent **uniquement** des informations différentes de celles mentionnées ci-dessus, réalisez-les directement, puis cliquez sur `Valider`{.action}. Dans ce cas précis, il ne sera pas nécessaire de lancer une demande de changement de titulaire. Pour cette opération, vous n'avez pas besoin de confirmer les modifications par e-mail.
 >> >
 >> > Le cas échéant et pour initier la demande de changement de titulaire, cliquez sur le lien `Cliquez ici pour continuer`{.action} situé en bas de page.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Retrouvez plus de détails sur le changement de titulaire dans notre guide  : « [Nom de domaine - Comment changer le titulaire ?](/pages/web_cloud/domains/trade_domain) ».
+>> Retrouvez plus de détails sur le changement de titulaire dans notre guide : « [Nom de domaine - Comment changer le titulaire ?](/pages/web_cloud/domains/trade_domain) ».
 
 
 
 
 ### 3 - Que faire si l'adresse e-mail du contact titulaire n'est plus accessible ?
 
->** Cas général**
+> **Cas général**
 
 Si l'adresse e-mail associée à votre nom de domaine est incorrecte ou inaccessible (par exemple à cause d'une erreur de saisie), nous vous invitons à contacter le Support OVHcloud :
 
 https://help.ovhcloud.com/csm?id=contact_us_ovh
 
-A noter que le titulaire du domaine devra à nouveau justifier son identité en fournissant les documents requis selon son type (particulier, entreprise, association, etc.).
+À noter que le titulaire du domaine devra à nouveau justifier son identité en fournissant les documents requis selon son type (particulier, entreprise, association, etc.).
 
-Nos équipes vous aiderons dans les prochaines étapes pour vérifier votre domaine 😊
+> [!primary]
+>
+> La liste des documents ci-dessous n'est pas exhaustive. D'autres justificatifs peuvent être demandés selon votre situation ou les exigences du registre concerné.
+
+**Documents à fournir selon le type de titulaire :**
+
+**Particulier**
+- Pièce d'identité recto-verso en cours de validité : carte nationale d'identité, passeport (pages comportant la photographie et les informations personnelles ainsi que la page de signature), carte de séjour ou permis de conduire
+
+**Entreprise**
+- Justificatif d'existence de l'entité : extrait K-BIS datant de moins de 3 mois, extrait du registre du commerce et des sociétés, licence commerciale, ou tout document équivalent
+- Pièce d'identité recto-verso en cours de validité du représentant légal (chef d'entreprise, président ou directeur général) : carte nationale d'identité, passeport, carte de séjour ou permis de conduire
+
+**Association**
+- Pièce d'identité recto-verso en cours de validité du représentant légal (président, gérant ou directeur de l'association) : carte nationale d'identité, passeport, carte de séjour ou permis de conduire
+- Publication au Journal officiel
+- Procès-verbal de la dernière assemblée générale
+
+**Administration publique**
+- Attestation INSEE
+- Pièce d'identité recto-verso en cours de validité du responsable de l'administration publique : carte nationale d'identité, passeport, carte de séjour ou permis de conduire
+
+Nos équipes vous aideront dans les prochaines étapes pour vérifier votre domaine 😊
 
 
 > **Cas particulier du .fr**
 
-Pour les extensions en .fr, l'administrateur du domaine peut se rendre directement sur son espace client et modifier l'adresse du contact titulaire en suivant les étapes décrites en "Etape 2" de cette page.
+Pour les extensions en .fr, l'administrateur du domaine peut se rendre directement sur son espace client et modifier l'adresse du contact titulaire en suivant les étapes décrites à l'« Étape 2 » de cette page.
 
 
 
@@ -169,7 +191,7 @@ Quelques minutes sont nécessaires pour finaliser l'opération. Actualisez la pa
 
 Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus. 
 
-Le cas échéant, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez ce guide depuis le début pour corriger la situation.
+Dans le cas contraire, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez ce guide depuis le début pour corriger la situation.
 
 ## Aller plus loin
 

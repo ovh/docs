@@ -1,7 +1,7 @@
 ---
-title: "Manage the contact details of a domain name owner"
+title: "Domain name holder contact management"
 excerpt: "Find out how to verify, correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
-updated: 2026-01-13
+updated: 2026-01-15
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ Have you received an email from OVHcloud stating that action is required for you
 
 ICANN, the organization responsible for governing domain names globally, or registries, organizations responsible for managing extensions, require the validation of owner information when a domain name is created, transferred, or whenever associated contacts are updated.
 
-Thus, each domain concerned must undergo verification of the owner's contact details within 15 days of purchase, transfer, or modification of the contact details.
+Verification of owner contact details can occur at any time during a domain name's lifecycle, including for domain names purchased several years ago. Thus, each domain concerned must undergo verification of the owner's contact details within 15 days of receiving the verification email, whether following a purchase, transfer, modification of contact details, or a periodic verification requested by ICANN or the registry.
 
 ## What happens if the owner's email or contact information is not verified within the timeframe?
 
@@ -97,7 +97,7 @@ Click on the tabs below to view each of the **5** steps.
 >> >
 >> > If a change of owner is required, click on the link `Click here to continue`{.action} at the bottom of the page.
 >>
->> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
+>> ![Owner information](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 >> Find more details on changing the owner in our guide: “[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)”.
 
@@ -111,11 +111,33 @@ https://help.ovhcloud.com/csm?id=contact_us_ovh
 
 Note that the domain owner will need to verify their identity again by providing the necessary documents according to their type (individual, business, association, etc.).
 
+> [!primary]
+>
+> The list of documents below is not exhaustive. Other supporting documents may be required depending on your situation or the requirements of the relevant registry.
+
+**Documents to provide according to the owner type:**
+
+**Individual**
+- Valid identity document (front and back): national identity card, passport (pages containing the photograph and personal information as well as the signature page), residence permit or driving licence
+
+**Business**
+- Proof of entity existence: company registration extract (less than 3 months old), trade register extract, business licence, or any equivalent document
+- Valid identity document (front and back) of the legal representative (business owner, president or managing director): national identity card, passport, residence permit or driving licence
+
+**Association**
+- Valid identity document (front and back) of the legal representative (president, manager or director of the association): national identity card, passport, residence permit or driving licence
+- Publication in the official journal
+- Minutes of the last general assembly
+
+**Public administration**
+- Administrative certificate (or equivalent official document)
+- Valid identity document (front and back) of the public administration representative: national identity card, passport, residence permit or driving licence
+
 Our team will help you with the next steps to verify your domain 😊
 
 > **Special case for .fr**
 
-For .fr extensions, the domain administrator can go directly to their Control Panel and modify the owner contact's email address by following the steps described in "Step 2" of this page.
+For .fr extensions, the domain administrator can go directly to their Control Panel and modify the owner contact's email address by following the steps described in Step 2 of this page.
 
 ### 4 - Relaunch the operation to verify the contact details of the domain name owner
 
@@ -155,7 +177,7 @@ It will take a few minutes to complete the operation. Refresh the `Domain name o
 
 If the operation has completed successfully, the row for the processed operation no longer appears.
 
-If applicable, a correction is necessary in the domain name owner’s contact details. If this is the case, please follow this guide from the beginning to resolve the issue.
+If this is not the case, a correction is necessary in the domain name owner's contact details. In this case, please follow this guide from the beginning to resolve the issue.
 
 ## Go further
 

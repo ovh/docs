@@ -1542,7 +1542,7 @@
             + [Configuration](web-cloud-domains-domain-names-configuration)
                 + [Changing a domain name owner (trade)](web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade)
                     + [Changing the owner of a domain name](web_cloud/domains/trade_domain)
-                    + [How to edit a domain name holder’s contact details](web_cloud/domains/domain_verify_holder)
+                    + [How to edit a domain name holder's contact details](web_cloud/domains/domain_holder_contact_management)
                     + [Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)](web_cloud/domains/trade_doa)
             + [Troubleshooting](web-cloud-domains-domain-names-troubleshooting)
                 + [Troubleshooting a domain name error](web_cloud/domains/domain_errors)
