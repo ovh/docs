@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre VPS des attaques et des accès non autorisés"
-updated: 2025-11-04
+updated: 2026-01-15
 ---
 
 ## Objectif
@@ -16,6 +16,17 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
+
+## Sommaire
+
+- [Mettre à jour votre système d'exploitation](#mettre-a-jour-votre-systeme-dexploitation)
+- [Créer et utiliser une clé SSH](#sshkey)
+- [Modifier le port d'écoute SSH par défaut](#changesshport)
+- [Créer un utilisateur avec des droits restreints](#createuser)
+- [Configurer le pare-feu interne (iptables)](#iptables)
+- [Installer Fail2ban](#fail2ban)
+- [Configurer le Network Firewall OVHcloud](#networkfirewall)
+- [Sauvegarder votre système et vos données](#backup)
 
 ## Prérequis
 
@@ -73,7 +84,28 @@ Faire en sorte que votre distribution ou système d'exploitation est à jour est
 
 Cette opération doit être effectuée régulièrement afin de maintenir un système à jour.
 
+### Créer et utiliser une clé SSH <a name="sshkey"></a>
+
+L’authentification par clé SSH est l’une des méthodes les plus efficaces pour sécuriser l’accès à votre VPS.  
+Contrairement à l’authentification par mot de passe, elle repose sur une paire de clés cryptographiques et permet de réduire considérablement les risques d’attaques par force brute.
+
+Nous vous recommandons fortement de configurer une clé SSH dès la première connexion à votre serveur, puis de privilégier cette méthode pour vos accès administrateur.
+
+Selon votre environnement et l’outil utilisé pour vous connecter à votre VPS, consultez l’un des guides suivants :
+
+- [Comment créer et utiliser des clés pour l'authentification SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Comment créer et utiliser des clés pour l'authentification SSH avec PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+
+Ces guides détaillent les étapes pour :
+- générer une paire de clés SSH,
+- déployer la clé publique sur votre serveur,
+- et vous connecter en toute sécurité via SSH.
+
+Une fois l’authentification par clé SSH configurée et fonctionnelle, vous pouvez aller plus loin en renforçant la configuration du service SSH, par exemple en modifiant le port d’écoute ou en désactivant l’authentification par mot de passe.
+
 ### Modifier le port d'écoute SSH par défaut <a name="changesshport"></a>
+
+Avant toute modification du service SSH, assurez-vous de disposer d’un accès fonctionnel via une clé SSH afin d’éviter toute perte d’accès à votre serveur.
 
 > [!primary]
 >
