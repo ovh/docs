@@ -4,10 +4,6 @@ excerpt: Poznaj nasze dobre praktyki antyspamowe i sposoby odblokowania adresu I
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie
 
 Dla każdego adresu IP dostępnego w produktach i usługach OVHcloud, będącego Dostawcą dostępu do Internetu, zapisujemy go i zarezerwujemy dla organizacji takich jak [RIPE](https://www.ripe.net/) lub [ARIN](https://www.arin.net/). W tym przypadku, w przypadku sporów w bazie danych *WHOIS*, wydajemy się *nadużywać* prawa własności intelektualnej.

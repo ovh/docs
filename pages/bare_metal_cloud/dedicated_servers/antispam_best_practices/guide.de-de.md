@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Als Anbieter von Internetdiensten registriert und reserviert OVHcloud jegliche IP-Adressen, die mit Dienstleistungen verwendet werden bei den entsprechenden Organisationen wie [RIPE](https://www.ripe.net/) oder [ARIN](https://www.arin.net/). Das bedeutet, OVHcloud ist als rechtlicher Kontakt für missbräuchliche Verwendung (*Abuse*) in der *WHOIS*-Datenbank hinterlegt.
