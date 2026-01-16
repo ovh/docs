@@ -27,8 +27,8 @@ Pour comprendre l’interface de gestion de votre VPS et les actions disponibles
 ### Sommaire
 
 - [Étape 1 : Connexion initiale](#initial-connection)
-- - [Distribution GNU/Linux](#linuxconnect)
-- - [Distribution Windows](#winconnect)
+    - [Distribution GNU/Linux](#linuxconnect)
+    - [Distribution Windows](#winconnect)
 - [Étape 2 : Utilisation du compte root](#rootaccount)
 - [Étape 3 : Sécuriser votre VPS](#secure)
 - [Étape 4 : Lier un nom de domaine](#domain)
