@@ -1,6 +1,6 @@
 ---
-title: "VPS - Activation des logs de démarrage Windows"
-excerpt: "Apprenez à activer les logs de démarrage Windows afin de faciliter le diagnostic et le dépannage des problèmes de démarrage de votre VPS"
+title: "VPS - Activer les logs de démarrage Windows"
+excerpt: "Découvrez comment activer les logs de démarrage Windows afin de faciliter le diagnostic et le dépannage des problèmes de démarrage de votre VPS"
 updated: 2026-01-16
 ---
 
