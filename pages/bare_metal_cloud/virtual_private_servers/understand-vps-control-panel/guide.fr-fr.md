@@ -1,24 +1,24 @@
 ---
-title: Comprendre l’espace client OVHcloud pour les VPS
-excerpt: "Apprenez à utiliser l’espace client OVHcloud pour gérer votre VPS : tableau de bord, réinstallation, redémarrage, sauvegardes et configuration du service."
-updated: 2026-01-15
+title: "VPS - Gestion depuis l'espace client OVHcloud"
+excerpt: "Apprenez à utiliser l'espace client OVHcloud pour gérer votre VPS : tableau de bord, réinstallation, redémarrage, sauvegardes et configuration du service"
+updated: 2026-01-16
 ---
+
+## Objectif
+
+- Comprendre l'interface de gestion des VPS.
+- Identifier les informations essentielles.
+- Savoir où effectuer les principales actions.
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 > Certaines fonctionnalités VPS mentionnées sur cette page ne sont pas disponibles dans les Local Zones OVHcloud.
 >
 > Veuillez visiter notre [page Web des Local Zones](/links/bare-metal/vps-lz) pour obtenir plus d'informations.
-
-
-## Objectif
-- Comprendre l’interface de gestion des VPS
-- Identifier les informations essentielles
-- Savoir où effectuer les principales actions
 
 ### Sommaire
 
@@ -31,29 +31,37 @@ updated: 2026-01-15
 - [Réinstaller votre VPS](#reinstallvps)
 - [Redémarrer votre VPS](#rebootvps)
 
+## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
-Ce guide vous aide à **comprendre l’interface de gestion de votre VPS dans l’espace client OVHcloud**, à identifier les informations essentielles et à utiliser les principales actions disponibles (réinstallation, redémarrage, sauvegarde, configuration).
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs privés virtuels`{.action}.
+
+Ce guide vous aide à **comprendre l'interface de gestion de votre VPS dans l'espace client OVHcloud**, à identifier les informations essentielles et à utiliser les principales actions disponibles (réinstallation, redémarrage, sauvegarde, configuration).
 
 ### Tableau de bord <a name="controlpanel"></a>
 
-L’onglet Accueil{.action} constitue le **tableau de bord principal** de votre VPS.
+L'onglet `Accueil`{.action} constitue le **tableau de bord principal** de votre VPS.
+
 Il centralise les **informations clés sur le service** et donne accès aux **actions essentielles de gestion**.
 
 ![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Votre VPS <a name="myvps"></a>
 
-Retrouvez ci-dessous les informations de base sur votre VPS et l’état du service. Cliquez sur les onglets ci-dessous pour afficher les détails.
+Retrouvez ci-dessous les informations de base sur votre VPS et l'état du service. Cliquez sur les onglets ci-dessous pour afficher les détails.
 
 > [!tabs]
 > Nom
 >>
->> Pour personnaliser le nom de votre VPS, cliquez sur le bouton `...`{.action}, puis sélectionnez `Modifier le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
+>> Pour personnaliser le nom de votre VPS, cliquez sur le bouton `...`{.action} et sélectionnez `Modifier le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l'espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
 >>
 > Boot
 >>
->> Le mode de démarrage indiqué est soit en **mode normal**, où le serveur charge le système d'exploitation installé (*LOCAL*), soit en **mode rescue**, fourni par OVHcloud en cas de dépannage. Utilisez le bouton `...`{.action} pour [redémarrer le VPS](#reboot-current-range) ou démarrez-le en mode rescue si nécessaire.
+>> Le mode de démarrage indiqué est soit :
+>>
+>> - en **mode normal** (*LOCAL*), où le serveur charge le système d'exploitation installé.
+>> - en **mode rescue**, fourni par OVHcloud en cas de dépannage.
+>>
+>> Utilisez le bouton `...`{.action} pour [redémarrer le VPS](#rebootvps) ou démarrez-le en mode rescue si nécessaire.
 >>
 >> Si besoin, retrouvez plus d'informations dans notre guide sur le [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 >>
@@ -63,20 +71,19 @@ Retrouvez ci-dessous les informations de base sur votre VPS et l’état du serv
 >>
 >> > [!warning]
 >> >
->> > Une réinstallation entrainera l'effacement de toutes les données actuellement hébergées sur le VPS (à l'exception des disques additionnels).
+>> > Une réinstallation entraînera l'effacement de toutes les données actuellement hébergées sur le VPS (à l'exception des disques additionnels).
 >>
 >> > [!primary]
 >> >
->> > Si vous avez commandé un VPS **Windows**, vous ne pouvez choisir qu’un OS Windows pour la réinstallation. De même, si Windows n’a pas été sélectionné lors de la commande, il ne pourra pas être installé après la livraison du VPS.
+>> > Si vous avez commandé un VPS **Windows**, vous ne pouvez choisir qu'un OS Windows pour la réinstallation. De même, si Windows n'a pas été sélectionné lors de la commande, il ne pourra pas être installé après la livraison du VPS.
 >>
->>
->> Une fois le système installé, vous êtes responsable de l’application des mises à jour de sécurité du système d’exploitation. Vous trouverez plus d'informations [ci-dessous](#reinstallvps) ainsi que dans notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
+>> Une fois le système installé, vous êtes responsable de l'application des mises à jour de sécurité du système d'exploitation. Vous trouverez plus d'informations dans la partie « [Réinstaller votre VPS](#reinstallvps) » ainsi que dans notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
 >> 
 > Zone / Localisation
 >>
 >> Ces sections fournissent des informations sur la localisation de votre VPS. Cela peut être utile pour identifier et évaluer les éventuels impacts sur votre service, comme ceux mentionnés dans les [rapports d'incidents ou de maintenance](https://bare-metal-servers.status-ovhcloud.com/).
 >>
- 
+
 #### Votre configuration <a name="myconf"></a>
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BbyE52W7aBo?si=mmgSmaqIxx0zzGz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -86,11 +93,12 @@ Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 > [!tabs]
 > Modèle
 >>
->> Cet élément indique la référence commerciale identifiant le modèle de VPS correspondant aux [offres VPS sur notre site](/links/bare-metal/vps).
+>> Cet élément indique la référence commerciale identifiant le modèle de VPS, correspondant aux [offres VPS sur notre site](/links/bare-metal/vps).
 >>
 > vCores / Mémoire / Stockage
 >> 
->> Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](/links/bare-metal/vps).
+>> Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le lien correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](/links/bare-metal/vps).
+>>
 > Disques additionnels
 >> 
 >> Ajoutez des disques supplémentaires à votre VPS pour augmenter la capacité de stockage de votre serveur au-delà de celle incluse dans la configuration initiale. Vous pouvez par exemple y stocker des données de sauvegarde.
@@ -102,15 +110,15 @@ Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 > [!tabs]
 > IPv4
 >>
->> L’adresse IPv4 publique principale du VPS est configurée automatiquement à l’installation. Retrouvez plus d'informations sur la gestion des IP dans [ce guide](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>> L'adresse IPv4 publique principale du VPS est configurée automatiquement à l'installation. Retrouvez plus d'informations sur la gestion des IP dans notre guide « [Configurer une adresse IP en alias](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing) ».
 >>
 > IPv6 / Gateway
 >> 
->> Retrouvez ici l'adresse IPv6 publique et l'adresse de la passerelle associée. Celles-ci sont automatiquement attachées au VPS lors de l'installation. Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>> Retrouvez ici l'adresse IPv6 publique et l'adresse de la passerelle associée. Celles-ci sont automatiquement attachées au VPS lors de l'installation. Retrouvez plus d'informations dans notre guide « [Configurer l'IPv6 sur un serveur VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6) ».
 >> 
 > Secondary DNS
 >>
->> Cette fonctionnalité est utile pour héberger des services DNS. Consultez notre guide « [Configurer le DNS secondaire d’OVHcloud sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) » pour plus de détails à ce sujet.
+>> Cette fonctionnalité est utile pour héberger des services DNS. Consultez notre guide « [Configurer un DNS secondaire OVHcloud sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) » pour plus de détails à ce sujet.
 
 #### Sauvegarde <a name="save"></a>
 
@@ -127,15 +135,15 @@ Ces options font référence à des services VPS supplémentaires pour les sauve
 >> Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
 >>
 
-Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-configuration-servers-backups).
+Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans [nos guides respectifs](/products/bare-metal-cloud-virtual-private-servers-configuration).
 
 #### Mon offre <a name="myoffer"></a>
 
-Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
+Cette section présente les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans [nos guides respectifs](/products/account-and-service-management-managing-billing-payments-and-services).
 
 <a name="hometab"></a>
 
-### Fonctions VPS disponibles dans l’onglet « Accueil »
+### Fonctions VPS disponibles dans l'onglet « Accueil »
 
 > [!warning]
 >
@@ -146,7 +154,8 @@ Ces sections présentent les informations les plus importantes concernant la fac
 
 #### Réinstaller votre VPS <a name="reinstallvps"></a>
 
-La réinstallation de votre VPS peut être effectuée depuis votre espace client. Cette opération est généralement utilisée en cas de problème système, de changement d’environnement ou pour repartir d’une installation propre.
+La réinstallation de votre VPS peut être effectuée depuis votre espace client. Cette opération est généralement utilisée en cas de problème système, de changement d'environnement ou pour repartir d'une installation propre.
+
 Cliquez sur le bouton `...`{.action} à droite de `OS / Distribution`{.action}, puis sur `Réinstaller mon VPS`{.action}.
 
 ![Reinstall](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reinst.png){.thumbnail}
@@ -156,14 +165,14 @@ Dans la fenêtre qui apparaît, choisissez un système d'exploitation dans la li
 Si vous avez sélectionné un système d'exploitation compatible, vous pouvez fournir une **clé publique** à installer automatiquement. Deux possibilités s'offrent à vous :
 
 - Copiez manuellement la chaîne de clé et collez-la dans le champ `Votre clé SSH Publique`.
-- [Si vous avez précédemment stocké](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel) une clé publique dans votre [espace client OVHcloud](/links/manager), sélectionnez la clé souhaitée dans le menu déroulant `Clé SSH à pré-installer`.
+- Si vous avez précédemment [stocké une clé publique](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel) dans votre [espace client OVHcloud](/links/manager), sélectionnez la clé souhaitée dans le menu déroulant `Clé SSH à pré-installer`.
 
 ![VPSnewreinstallation](images/reinstall.png){.thumbnail}
 
 Pour en savoir plus sur ce sujet, consultez nos guides :
 
-- [Comment créer et utiliser des clés pour l'authentification SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
-- [Comment créer et utiliser des clés pour l'authentification SSH avec PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+- [Comment créer et utiliser des clés d'authentification pour les connexions SSH aux serveurs OVHcloud](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Tutoriel - Comment utiliser PuTTY pour les connexions SSH et l'authentification](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
 Si vous avez sélectionné une clé SSH et que vous n'avez pas besoin de mot de passe pour vous connecter, activez l'option `Je ne souhaite pas recevoir par e-mail les codes d'authentification de mon VPS`.
 
@@ -176,16 +185,16 @@ Si vous avez sélectionné une clé SSH et que vous n'avez pas besoin de mot de 
 >
 > **Licences**
 >
-> Certains systèmes d’exploitation ou plateformes propriétaires, comme Plesk ou cPanel, nécessitent des licences qui génèrent des frais supplémentaires. Les licences sont administrables depuis votre espace client : rendez-vous dans la section `Bare Metal Cloud`{.action}, puis cliquez sur `Licences`{.action} dans la barre de navigation à gauche.
+> Certains systèmes d'exploitation ou plateformes propriétaires, comme Plesk ou cPanel, nécessitent des licences qui génèrent des frais supplémentaires. Les licences sont administrables depuis votre espace client : rendez-vous dans la section `Bare Metal Cloud`{.action}, puis cliquez sur `Licences`{.action} dans la barre de navigation à gauche.
 >
-> Pour avoir un système d’exploitation **Windows** fonctionnant sur un VPS, il faut l'avoir préalablement choisi **dans le processus de commande**. Un VPS avec un autre OS installé ne peut pas être réinstallé avec Windows via la méthode décrite ci-dessus.
+> Pour avoir un système d'exploitation **Windows** fonctionnant sur un VPS, il faut l'avoir préalablement choisi **dans le processus de commande**. Un VPS avec un autre OS installé ne peut pas être réinstallé avec Windows via la méthode décrite ci-dessus.
 >
 
 Le processus de réinstallation peut prendre quelques minutes.
 
 #### Redémarrer votre VPS <a name="rebootvps"></a>
 
-Un redémarrage peut s'avérer nécessaire afin d'appliquer des configurations de mises à jour ou pour résoudre un dysfonctionnement. Dans la mesure du possible, effectuez un « redémarrage logiciel » à partir de l'interface graphique du serveur (Windows, Plesk, etc.) ou via la ligne de commande :
+Un redémarrage peut s'avérer nécessaire afin d'appliquer des mises à jour de configuration ou pour résoudre un dysfonctionnement. Dans la mesure du possible, effectuez un « redémarrage logiciel » à partir de l'interface graphique du serveur (Windows, Plesk, etc.) ou via la ligne de commande ci-dessous :
 
 ```bash
 sudo reboot
@@ -195,7 +204,6 @@ Cependant, vous pouvez effectuer un redémarrage forcé à tout moment dans votr
 
 ![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
 
-  
 ## Allez plus loin
 
 [VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)

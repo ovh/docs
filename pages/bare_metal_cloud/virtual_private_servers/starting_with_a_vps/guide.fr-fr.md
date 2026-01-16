@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2026-01-14
+updated: 2026-01-16
 ---
 
 ## Prérequis
@@ -9,43 +9,57 @@ updated: 2026-01-14
 - Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
-## Objectif 
-Un VPS (Virtual Private Server) est un serveur que vous administrez entièrement. 
-Contrairement à un hébergement web géré, vous êtes responsable de : 
-- Configuration : gérer et paramétrer votre serveur
-- Sécurité : protéger votre VPS contre les attaques
-- Maintenance : garder le serveur à jour et opérationnel
-- Backups : tester régulièrement vos sauvegardes pour garantir la restauration des données
+## Objectif
+
+Un VPS (Virtual Private Server) est un serveur que vous administrez entièrement.
+
+Contrairement à un hébergement web géré, vous êtes responsable des éléments suivants :
+
+- Configuration : gérer et paramétrer votre serveur.
+- Sécurité : protéger votre VPS contre les attaques.
+- Maintenance : garder le serveur à jour et opérationnel.
+- Backups : tester régulièrement vos sauvegardes pour garantir la restauration des données.
 
 ## En pratique
-Pour comprendre l’interface de gestion de votre VPS et les actions disponibles dans l’espace client OVHcloud, consultez notre [guide dédié à la prise en main de l’espace client pour les VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel) .
+
+Pour comprendre l’interface de gestion de votre VPS et les actions disponibles dans l’espace client OVHcloud, consultez notre [guide dédié à la prise en main de l’espace client pour les VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
 ### Sommaire
-- [Étape 1 : Connexion initiale](#connexioninitiale)
-- [Distribution GNU/Linux](#linuxconnect)
-- [Distribution Windows](#winconnect)
+
+- [Étape 1 : Connexion initiale](#initial-connection)
+- - [Distribution GNU/Linux](#linuxconnect)
+- - [Distribution Windows](#winconnect)
 - [Étape 2 : Utilisation du compte root](#rootaccount)
 - [Étape 3 : Sécuriser votre VPS](#secure)
 - [Étape 4 : Lier un nom de domaine](#domain)
 
-### Étape 1 : Connexion initiale <a name="connexioninitiale"></a>
-#### Linux : <a name="linuxconnect"></a>
-Lorsque vous vous connectez à votre VPS pour la première fois, notez que **le compte avec lequel vous vous connectez n’est pas root**.
-Chez OVHcloud, pour des raisons de sécurité et pour protéger les services de nos clients : 
-- Nous créons automatiquement un **nom d’utilisateur lié au système d’exploitation choisi** lors de votre commande.
-Le nom d’utilisateur exact à utiliser pour la connexion est clairement indiqué dans votre email de livraison du VPS.
-- Exemple : si vous avez choisi **Debian**, le username sera **debian**
-- Pour **Ubuntu** : **ubuntu**
-- Pour **Rocky Linux** : **rocky**
-- Le mot de passe temporaire associé à ce compte vous a été envoyé via le lien sécurisé dans votre email de livraison.
+### Étape 1 : Connexion initiale <a name="initial-connection"></a>
 
-**Note importante** : lors de votre **première connexion**, il vous sera demandé de **changer ce mot de passe temporaire**. Une fois le mot de passe modifié, **la session sera automatiquement fermée**. Il s’agit d’un comportement normal. Vous devrez alors **vous reconnecter avec votre nouveau mot de passe.**
+#### Linux : <a name="linuxconnect"></a>
+
+Lorsque vous vous connectez à votre VPS pour la première fois, notez que **le compte avec lequel vous vous connectez n’est pas root**.
+
+Chez OVHcloud, pour des raisons de sécurité et pour protéger les services de nos clients, nous créons automatiquement un **nom d’utilisateur lié au système d’exploitation choisi** lors de votre commande.
+
+Le nom d’utilisateur exact à utiliser pour la connexion est clairement indiqué dans votre e-mail de livraison du VPS.
+
+Par exemple :
+- Pour **Debian**, le nom d'utilisateur sera **debian**.
+- Pour **Ubuntu**, le nom d'utilisateur sera **ubuntu**.
+- Pour **Rocky Linux**, le nom d'utilisateur sera **rocky**.
+
+Le mot de passe temporaire associé à ce compte vous est envoyé via un lien sécurisé dans votre e-mail de livraison.
+
+> [!primary]
+> **Note importante** : lors de votre **première connexion**, il vous sera demandé de **changer ce mot de passe temporaire**.
+> Une fois le mot de passe modifié, **la session sera automatiquement fermée**. Il s’agit d’un comportement normal. Vous devrez alors **vous reconnecter avec votre nouveau mot de passe**.
 
 ```bash
 ssh username@IPv4_VPS
 ```
-- Remplacez "username" par l’utilisateur correspondant à votre OS
-- Remplacez "IPv4_de_votre_VPS" par l’adresse IP indiquée dans l’email de livraison
+
+- Remplacez "username" par l’utilisateur correspondant à votre OS.
+- Remplacez "IPv4_de_votre_VPS" par l’adresse IP indiquée dans l’e-mail de livraison.
 
 #### Windows : <a name="winconnect"></a>
 
@@ -98,35 +112,41 @@ Si vous rencontrez des difficultés avec cette procédure, vérifiez que les con
 
 Pour faciliter le diagnostic en cas de problème, nous vous recommandons **d’activer les journaux de démarrage Windows** en suivant notre [guide dédié](/pages/bare_metal_cloud/virtual_private_servers/Windows-boot-logs).
 
-### Étape 2 : Utilisation du compte root (facultatif mais recommandé) <a name="rootaccount"></a> 
-- L’utilisateur root est désactivé par défaut pour la sécurité de votre produit.
-- Pour les tâches d’administration, utilisez sudo depuis votre utilisateur principal :
+### Étape 2 : Utilisation du compte root (facultatif mais recommandé) <a name="rootaccount"></a>
+
+L’utilisateur root est désactivé par défaut pour la sécurité de votre produit.
+
+Pour les tâches d’administration, utilisez sudo depuis votre utilisateur principal :
+
 ```bash
 sudo commande
 ```
-- Si vous souhaitez activer root :
+
+Si vous souhaitez activer root :
+
 ```bash
 sudo passwd root
 ```
 
 ### Étape 3 : Sécuriser votre VPS <a name="secure"></a>
-Si vous souhaitez sécuriser votre VPS, nous vous invitons à suivre notre guide dédié [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
-Ce guide vous accompagne pas à pas et détaille notamment les actions suivantes :
-- Mettre à jour le système
-- Modifier le port d'écoute SSH par defaut
-- Configurer le pare-feu interne
-- Installez fail2ban pour bloquer les tentatives de connexion répétées
-- Sauvegarder votre système et vos données
 
+Si vous souhaitez sécuriser votre VPS, nous vous invitons à suivre notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ». Ce guide vous accompagne pas à pas et détaille notamment les actions suivantes :
+
+- Mettre à jour le système.
+- Modifier le port d'écoute SSH par defaut.
+- Configurer le pare-feu interne.
+- Installer fail2ban pour bloquer les tentatives de connexion répétées.
+- Sauvegarder votre système et vos données.
 
 ### Étape 4 : Lier un nom de domaine (facultatif mais recommandé) <a name="domain"></a>
 
 La mise en ligne de votre VPS passe généralement par l’utilisation et la configuration d’un nom de domaine. 
-Pour cela, nous vous conseillons de :
-- [Éditer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) en ajoutant les entrées nécessaires pour faire pointer le domaine vers l'adresse IPv4 de votre VPS
-- [Activer un certificat SSL gratuit (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) afin de sécuriser l'accès à vos sites web via HTTPS
 
-  
+Pour cela, nous vous conseillons d'effectuer les actions suivantes :
+
+- [Éditer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) en ajoutant les entrées nécessaires pour faire pointer le domaine vers l'adresse IPv4 de votre VPS.
+- [Activer un certificat SSL gratuit (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) afin de sécuriser l'accès à vos sites web via HTTPS.
+
 ## Allez plus loin
 
 [VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
