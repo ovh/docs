@@ -49,11 +49,9 @@ Zaimportowałeś pliki swojej strony **domain.tld** do katalogu `www` swojego ho
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-`Katalog główny` nie jest obecnie możliwy do zmiany po utworzeniu strony internetowej.
+Będziesz musiał zmienić pierwotnie zadeklarowany `Katalog główny` dla swojej strony internetowej w [Panelu klienta OVHcloud](/links/manager). Aby to zrobić, zapoznaj się z naszym przewodnikiem „[Jak zmienić katalog główny istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)”
 
-Musisz odłączyć swoją domenę od istniejącej strony internetowej z poziomu karty `Moje strony`{.action} swojego hostingu internetowego. Aby to zrobić, zapoznaj się z naszym przewodnikiem "[Jak odłączyć domenę od istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
-
-Następnie możesz dodać nową stronę internetową z użyciem swojej domeny, korzystając z naszego przewodnika "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Jeśli Twoja strona internetowa posiada konfigurację z użyciem Git, wcześniej zapoznaj się z naszym przewodnikiem "[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **przed** wykonaniem działania `Odłącz domenę`{.action}.
+Jeśli Twoja strona internetowa została skonfigurowana z użyciem Git, **przed** kontynuowaniem zapoznaj się z naszym przewodnikiem „[Konfiguracja i korzystanie z Git na hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)”, aby usunąć powiązanie z Git. Wynika to z faktu, że zmiana zadeklarowanego folderu głównego dla strony internetowej nie jest możliwa, jeśli Twoja strona internetowa została skonfigurowana z użyciem Git.
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
 

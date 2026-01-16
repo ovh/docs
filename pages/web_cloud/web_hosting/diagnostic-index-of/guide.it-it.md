@@ -49,11 +49,9 @@ Hai importato i file del tuo sito **domain.tld** nella cartella `www` del tuo sp
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-La `Cartella di root` non è, a oggi, modificabile una volta creato il sito web.
+Dovrai modificare la `Cartella di root` dichiarata inizialmente per il tuo sito web dal tuo [Spazio Cliente OVHcloud](/links/manager). Per farlo, consulta la nostra guida « [Come modificare la cartella di root di un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) »
 
-Dovrai staccare il tuo dominio dal sito web esistente dall'onghetta `I miei siti`{.action} del tuo hosting web. Per farlo, consulta la nostra guida « [Come staccare un dominio da un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website) ».
-
-Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida « [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida « [Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » **prima** di `Scollega il dominio`{.action}.
+Se il tuo sito web dispone di una configurazione con Git, consulta in precedenza la nostra guida « [Configurare e utilizzare Git con un hosting Web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) » per rimuovere l'associazione con Git **prima** di procedere. Infatti, la modifica della cartella di root dichiarata per un sito web non è disponibile se il tuo sito web è configurato con Git.
 
 e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
 

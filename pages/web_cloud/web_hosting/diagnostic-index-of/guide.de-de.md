@@ -49,11 +49,9 @@ Sie haben die Dateien Ihrer Website **domain.tld** in das Verzeichnis `www` übe
 
 ![index_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Das `Wurzelverzeichnis` ist nicht mehr änderbar, nachdem die Website erstellt wurde.
+Sie müssen den ursprünglich für Ihre Website angegebenen `Wurzelverzeichnis` über das [OVHcloud Kundencenter](/links/manager) ändern. Dazu konsultieren Sie bitte unseren Guide „[Wie ändere ich den Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)“.
 
-Sie müssen Ihren Domainnamen von der bestehenden Website trennen, indem Sie den Tab `Meine Seiten`{.action} Ihres Webhostings öffnen. Dazu konsultieren Sie die Anleitung „[Wie trenne ich einen Domainnamen von einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)“.
-
-Anschließend können Sie mithilfe dera Anleitung „[Teilen Sie Ihr Webhosting zwischen mehreren Websites auf](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ eine neue Website mit Ihrem Domainnamen hinzufügen. Falls Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorher die Anleitung „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“ **vor** dem Klick auf `Domain abtrennen`{.action}.
+Wenn Ihre Website eine Konfiguration mit Git verwendet, konsultieren Sie vorab unseren Guide „[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)“, um die Verknüpfung mit Git **vor** Fortsetzung zu entfernen. Tatsächlich ist die Änderung des für eine Website deklarierten Stammordners nicht möglich, wenn Ihre Website mit Git konfiguriert ist.
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 

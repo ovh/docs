@@ -49,11 +49,9 @@ You have imported the files of your site **domain.tld** into the `www` folder of
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-The `root folder` cannot be modified once the website has been created.
+You will need to modify the `root folder` initially declared for your website from your [OVHcloud Control Panel](/links/manager). To do this, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
 
-You will need to detach your domain name from the existing website from the `My sites`{.action} tab of your web hosting. To do this, refer to our guide "[How to detach a domain name from an existing website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
-
-You can then add a new website with your domain name using our guide "[Sharing your hosting between several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". If your website has a configuration with Git, please consult our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" **before** clicking `Detach domain`{.action}.
+If your website has a configuration with Git, please refer to our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" beforehand to remove the association with Git **before** continuing. Indeed, modifying the declared root folder for a website is unavailable if your website is configured with Git.
 
 Finally, check that your website appears correctly. Otherwise, reboot your device and clear your browser cache if necessary.
 

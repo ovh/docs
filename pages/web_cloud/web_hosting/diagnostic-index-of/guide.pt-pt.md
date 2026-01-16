@@ -50,11 +50,9 @@ Importou os ficheiros do seu site **domain.tld** para a pasta `www` do seu aloja
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-O `Pasta raiz` não é, atualmente, modificável uma vez que o site web foi criado.
+Terá de modificar a `Pasta raiz` inicialmente declarada para o seu site a partir do seu [área de cliente OVHcloud](/links/manager). Para isso, consulte o nosso guia "[Como modificar a pasta raiz de um site existente ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
 
-Terá de desassociar o seu nome de domínio do site web existente a partir do separador `Meus sites`{.action} do seu alojamento web. Para isso, consulte o nosso guia "[Como desligar um domínio de um site web existente?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
-
-Poderá, em seguida, adicionar um novo site web com o seu nome de domínio com a ajuda do nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Se o seu site web dispõe de uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" **antes** de `Desassociar o domínio`{.action}.
+Se o seu site tiver uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar a ligação com Git **antes** de continuar. De facto, a modificação da pasta raiz declarada para um site não está disponível se o seu site estiver configurado com Git.
 
 Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário, reinicie o seu dispositivo e esvazie a cache do seu browser, caso seja necessário.
 
