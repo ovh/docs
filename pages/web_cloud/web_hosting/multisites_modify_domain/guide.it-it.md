@@ -76,13 +76,9 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 > I campi `Dominio`{.action} e `Cartella di root`{.action} non sono modificabili, in quanto si tratta di parametri relativi al sito web presente sull'hosting web.
 >
 > - Per associare un nuovo dominio o sottodominio a un sito web presente sull'hosting web, consulta la nostra guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Per modificare la cartella di root del tuo sito web, dovrai staccare il tuo dominio dal sito web esistente tramite l'etichetta `I miei siti`{.action}. Per farlo:
->     - Clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
->     - Clicca quindi sul pulsante `⁝`{.action} a destra del nome del dominio o sottodominio desiderato, quindi su `Scollega il dominio`{.action}.
->
-> Potrai quindi aggiungere un nuovo sito web con il tuo dominio utilizzando la nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Se il tuo sito web dispone di una configurazione con Git, consulta preventivamente la nostra guida "[Configurare e utilizzare Git con l'hosting web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **prima** di `Scollega il dominio`{.action}.
+> - Per modificare la cartella di root del tuo sito web, consulta la nostra guida « [Come modificare la cartella di root di un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) »
 
-##### L'opzione "Attiva la CDN"
+#### L'opzione "Attiva la CDN"
 
 Per usufruire di questa opzione è necessario disporre di una soluzione CDN OVHcloud attiva o di un piano di hosting Web Performance attivo.
 
@@ -90,19 +86,19 @@ Seleziona o deseleziona questa casella di controllo per attivare o disattivare l
 
 Per maggiori informazioni sulle opzioni/offerte CDN disponibili nella nostra documentazione dedicata "[Aumentare la velocità di un sito Web con la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
-##### L'opzione "IP del Paese"
+#### L'opzione "IP del Paese"
 
 Questa opzione viene utilizzata principalmente per i siti Web il cui pubblico di destinazione si trova all'estero. Questo permette di migliorare il posizionamento SEO del sito Web nel paese scelto.
 
 Per maggiori informazioni su questa opzione, consulta la nostra documentazione dedicata "[Geolocalizzare il vostro sito web in un paese specifico](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
-##### L'opzione "Attiva il firewall"
+#### L'opzione "Attiva il firewall"
 
 Questa opzione permette di filtrare le richieste in entrata per proteggere l’hosting Web dagli attacchi più diffusi.
 
 Per maggiori informazioni su questa opzione, consulta la nostra documentazione dedicata "[Hosting condiviso: attiva un firewall applicativo](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### L'opzione "Log separati"
+#### L'opzione "Log separati"
 
 Seleziona e deseleziona questa opzione solo se vuoi separare i log del tuo dominio dagli altri domini dichiarati in parallelo sul tuo hosting Web.
 

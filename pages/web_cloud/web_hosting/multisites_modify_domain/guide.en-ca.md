@@ -77,11 +77,7 @@ To modify the association settings of a domain name or subdomain already declare
 > The `Domain name`{.action} and `Root folder`{.action} fields are not modifiable, as they are parameters related to the website on your web hosting plan.
 >
 > - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - To change the root folder of your website, you will need to detach your domain name from the existing website from the `My Websites`{.action} tab. To do this :
->     - Click on the `>`{.action} button to the left of the name of the website to display the associated domain names and subdomains.
->     - Then click on the `⁝`{.action} button to the right of the domain name or subdomain you want to modify, and then click on `Detach domain`{.action}.
->
-> You can then add a new website with your domain name using our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)". If your website has a configuration with Git, please refer to our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" **before** clicking on `Detach domain`{.action}.
+> - To change the root folder of your website, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
 
 ##### The "Activate the CDN" option
 

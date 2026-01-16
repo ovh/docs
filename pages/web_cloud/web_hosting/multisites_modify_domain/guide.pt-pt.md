@@ -76,11 +76,7 @@ Para modificar os parâmetros de associação de um nome de domínio ou subdomí
 > Os campos `Domínio`{.action} e `Pasta raiz`{.action} não são modificáveis, pois trata-se de parâmetros relativos ao site web no seu alojamento web.
 >
 > - Para associar um novo nome de domínio ou subdomínio a um site web no seu alojamento web, consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Para alterar a pasta raiz do seu site web, terá de desligar o seu nome de domínio do site web existente a partir da pestana `Meus sites`{.action}. Para isso:
->     - Clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
->     - Clique depois no botão `⁝`{.action} à direita do nome de domínio ou subdomínio relevante, depois em `Desassociar o domínio`{.action}.
->
-> Poderá depois adicionar um novo site web com o seu nome de domínio com a ajuda do nosso guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Se o seu site web tiver uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **antes** de `Desassociar o domínio`{.action}.
+> - Para alterar a pasta raiz do seu site, consulte o nosso guia « [Como alterar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) »
 
 ##### A opção "Ativar o CDN"
 

@@ -73,23 +73,12 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 
 > [!primary]
 >
-> Das Formular `Domainname`{.action} kann nicht bearbeitet werden, da es sich um eine Änderung der Einstellungen des dem Webhosting zugeordneten Domainnamens handelt. Wenn die gewünschte Aktion darin besteht, Ihrem Webhosting eine neue Domain/Subdomain zuzuordnen, lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
->
-
-#### Wurzelverzeichnis bearbeiten
-
-> [!primary]
->
 > Die Felder `Domainname`{.action} und `Wurzelverzeichnis`{.action} sind nicht änderbar, da es sich hierbei um Parameter handelt, die für die Website auf Ihrem Webhosting relevant sind.
 >
 > - Um eine neue Domain oder Subdomains mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Um den Stammordner Ihrer Website zu ändern, müssen Sie Ihre Domain von der bestehenden Website im Tab `Meine Seiten`{.action} trennen.
->     - Klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugeordneten Domains und Subdomain anzuzeigen.
->     - Klicken Sie anschließend auf den Button `⁝`{.action} rechts neben dem Namen der Domain oder Subdomains und dann auf `Domain abtrennen`{.action}.
->
-> Anschließend können Sie eine neue Website mit Ihrer Domain hinzufügen, indem Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" konsultieren. Falls Ihre Website eine Konfiguration mit Git besitzt, konsultieren Sie vorher unsere Anleitung "[Git mit Ihrem OVHcloud Webhosting konfigurieren und nutzen](/pages/web_cloud/web_hosting/git_integration_webhosting)", **bevor** Sie `Domain abtrennen`{.action} auswählen.
+> - Um das Wurzelverzeichnis Ihrer Website zu ändern, konsultieren Sie unser Handbuch „[Wie ändere ich das Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)“
 
-##### Die Option "CDN aktivieren"
+#### Die Option "CDN aktivieren"
 
 Um diese Option nutzen zu können, müssen Sie zuerst ein CDN von OVHcloud abonniert haben oder über ein Performance Webhosting verfügen.
 
@@ -97,19 +86,19 @@ Aktivieren/deaktivieren Sie diese Option, um die CDN-Option für Ihren Domainnam
 
 Weitere Informationen zu den verfügbaren CDN-Optionen/-Angeboten finden Sie in unserer Dokumentation "[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
-##### Die Option "IP des Landes"
+#### Die Option "IP des Landes"
 
 Diese Option wird hauptsächlich für Websites verwendet, deren Nutzer sich in einem anderen Land als das Hosting befinden. Es verbessert die SEO-Bewertung der Website im gewählten Land.
 
 Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Geolokalisierung Ihrer Website in einem bestimmten Land](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
-##### Die Option "Firewall aktivieren"
+#### Die Option "Firewall aktivieren"
 
 Mit dieser Option können Sie eingehende Anfragen filtern, um Ihr Webhosting vor den häufigsten Angriffen zu schützen.
 
 Weitere Informationen zu dieser Option finden Sie in unserer Dokumentation "[Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### Die Option "Getrennte Logs"
+#### Die Option "Getrennte Logs"
 
 Aktivieren/deaktivieren Sie diese Option nur, wenn Sie die Logs Ihres Domainnamens von den anderen Domainnamen trennen möchten, die auf Ihrem Webhosting deklariert sind.
 

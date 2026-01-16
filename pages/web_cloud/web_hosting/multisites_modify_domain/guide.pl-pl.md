@@ -76,11 +76,7 @@ Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na 
 > Pola `Nazwa domeny`{.action} i `Katalog główny`{.action} nie są modyfikowalne, ponieważ dotyczą one strony internetowej znajdującej się na Twoim hostingu.
 >
 > - Aby przypisać nową domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, zapoznaj się z naszym poradnikiem "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Aby zmienić katalog główny swojej strony internetowej, musisz odłączyć swoją domenę od istniejącej strony internetowej z karty `Moje strony`{.action}. Aby to zrobić:
->     - Kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny i poddomeny.
->     - Następnie kliknij przycisk `⁝`{.action} po prawej stronie nazwy domeny lub poddomeny, a następnie `Odłącz domenę`{.action}.
->
-> Następnie możesz dodać nową stronę internetową z Twoją domeną, korzystając z naszego poradnika "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Jeśli Twoja strona internetowa ma konfigurację z Git, przed `Odłącz domenę`{.action} zapoznaj się z naszym poradnikiem "[Konfigurowanie i korzystanie z Git z Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)".
+> - Aby zmienić katalog główny swojej strony internetowej, zapoznaj się z naszym przewodnikiem „[Jak zmienić katalog główny istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)”.
 
 ##### Opcja "Włącz CDN"
 

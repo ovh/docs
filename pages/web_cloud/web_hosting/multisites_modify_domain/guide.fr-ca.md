@@ -28,7 +28,7 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 > [!warning]
 >
-> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, entraîner une interruption d'accès à vos services (votre site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un prestataire spécialisé
+> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, entraîner une interruption d'accès à vos services (votre site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un prestataire spécialisé.
 
 Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-domaine déjà déclaré sur votre offre d'hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
@@ -82,7 +82,7 @@ Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-dom
 >
 > Vous pourrez ensuite ajouter un nouveau site web avec votre nom de domaine à l'aide de notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Si votre site web dispose d'une configuration avec Git, consultez préalablement notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) », **avant** de `Détacher le domaine`{.action}.
 
-##### Option « Activer CDN »
+#### Option « Activer CDN »
 
 Pour pouvoir utiliser cette option, vous devez avoir au préalable souscrit à une offre CDN OVHcloud ou disposer d'une offre d'hébergement web Performance.
 
@@ -90,13 +90,13 @@ Cochez/décochez cette case afin d'activer/désactiver l'option CDN pour votre n
 
 Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
-##### Option « Activer le firewall »
+#### Option « Activer le firewall »
 
 Cette option permet de filtrer les requêtes entrantes pour protéger votre hébergement web des attaques les plus courantes.
 
 Retrouvez plus d'informations sur cette option dans notre documentation dédiée « [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall) ».
 
-##### Option « Logs séparés »
+#### Option « Logs séparés »
 
 Cochez/décochez cette option uniquement si vous souhaitez séparer les logs de votre nom de domaine des autres noms de domaines déclarés en parallèle sur votre hébergement web.
 

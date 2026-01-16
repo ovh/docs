@@ -76,15 +76,9 @@ Para modificar los parámetros de asociación de un dominio o subdominio ya decl
 > Los campos `Dominio`{.action} y `carpeta raíz`{.action} no son modificables, ya que se trata de parámetros relativos al sitio web presente en su alojamiento web.
 >
 > - Para asociar un nuevo dominio o subdominio a un sitio web presente en su alojamiento web, consulte nuestra guía "[Cómo asociar un dominio a un sitio web existente](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Para cambiar la carpeta raíz de su sitio web, deberá desvincular su dominio del sitio web existente desde la pestaña `Mis sitios`{.action}. Para ello:
->     - Haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
->     - A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del nombre del dominio o subdominio correspondiente, y luego en `Desvincular el dominio`{.action}.
->
-> A continuación, podrá añadir un nuevo sitio web con su dominio mediante nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Si su sitio web dispone de una configuración con Git, consulte previamente nuestra guía "[Configurar y utilizar Git con su alojamiento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)", **antes** de `Desvincular el dominio`{.action}.
+> - Para cambiar la carpeta raíz de su sitio web, consulte nuestro guía "[¿Cómo modificar la carpeta raíz de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
 
-#### Otras opciones disponibles
-
-##### La opción "Activar la CDN"
+#### La opción "Activar la CDN"
 
 Para poder utilizar esta opción, es necesario haber contratado previamente un plan CDN de OVHcloud o disponer de un plan de hosting Performance.
 
@@ -92,13 +86,13 @@ Marque o desmarque esta casilla para activar o desactivar la opción CDN para su
 
 Para más información sobre las opciones/ofertas CDN, consulte nuestra documentación dedicada "[Acelerar un sitio web utilizando la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
-##### La opción "Activar el firewall"
+#### La opción "Activar el firewall"
 
 Esta opción permite filtrar las peticiones entrantes para proteger su alojamiento web de los ataques más habituales.
 
 Para más información sobre esta opción, consulte nuestra documentación dedicada "[Activación del firewall de aplicación](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### La opción "Logs separados"
+#### La opción "Logs separados"
 
 Marque o desmarque esta opción solo si quiere separar los logs de su dominio de los otros nombres de dominio declarados en paralelo en su alojamiento web.
 
