@@ -1,15 +1,15 @@
 ---
-title: "VPS - Activation des journaux de démarrage Windows"
-excerpt: "Apprenez à activer les journaux de démarrage Windows afin de faciliter le diagnostic et le dépannage des problèmes de démarrage de votre VPS"
+title: "VPS - Activation des logs de démarrage Windows"
+excerpt: "Apprenez à activer les logs de démarrage Windows afin de faciliter le diagnostic et le dépannage des problèmes de démarrage de votre VPS"
 updated: 2026-01-16
 ---
 
 ## Objectif
 
-Les journaux de démarrage Windows permettent d'identifier les pilotes et services chargés lors du démarrage du système.  
+Les logs de démarrage Windows permettent d'identifier les pilotes et services chargés lors du démarrage du système.  
 Ils sont particulièrement utiles pour le **diagnostic des problèmes de démarrage**, des **écrans bleus** ou des **blocages système**.
 
-Ce guide vous explique comment **activer les journaux de démarrage sur un serveur Windows** afin de faciliter l'analyse et le dépannage de votre VPS.
+Ce guide vous explique comment **activer les logs de démarrage sur un serveur Windows** afin de faciliter l'analyse et le dépannage de votre VPS.
 
 ## Prérequis
 
@@ -17,9 +17,9 @@ Ce guide vous explique comment **activer les journaux de démarrage sur un serve
 
 ## En pratique
 
-### Activation des journaux de démarrage Windows
+### Activation des logs de démarrage Windows
 
-Les journaux de démarrage de Windows peuvent être utiles pour les diagnostics d'erreur de serveur.
+Les logs de démarrage de Windows peuvent être utiles pour les diagnostics d'erreur de serveur.
 
 Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 

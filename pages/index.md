@@ -281,7 +281,7 @@
     + [Virtual Private Servers](products/bare-metal-cloud-virtual-private-servers)
         + [Getting started](bare-metal-cloud-virtual-private-servers-getting-started)
             + [How to get started with a VPS](bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
-            + [How to manage a VPS from the OVHcloud control panel](bare_metal_cloud/virtual_private_servers/understand-vps-control-panel)
+            + [How to manage a VPS from the OVHcloud Control Panel](bare_metal_cloud/virtual_private_servers/understand-vps-control-panel)
             + [VPS FAQ](bare_metal_cloud/virtual_private_servers/vps-faq)
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
             + [How to get started with SSH](bare_metal_cloud/dedicated_servers/ssh_introduction)

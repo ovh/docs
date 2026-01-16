@@ -110,7 +110,7 @@ Vous pouvez également utiliser une autre application tierce compatible avec RDP
 Si vous rencontrez des difficultés avec cette procédure, vérifiez que les connexions à distance (RDP) sont autorisées sur votre appareil en vérifiant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
 >
 
-Pour faciliter le diagnostic en cas de problème, nous vous recommandons **d’activer les journaux de démarrage Windows** en suivant notre [guide dédié](/pages/bare_metal_cloud/virtual_private_servers/Windows-boot-logs).
+Pour faciliter le diagnostic en cas de problème, nous vous recommandons **d’activer les logs de démarrage Windows** en suivant notre [guide dédié](/pages/bare_metal_cloud/virtual_private_servers/Windows-boot-logs).
 
 ### Étape 2 : Utilisation du compte root (facultatif mais recommandé) <a name="rootaccount"></a>
 
