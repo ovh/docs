@@ -1,17 +1,12 @@
 ---
 title: Premiers pas avec un VPS
-excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
+excerpt: "Découvrez comment gérer un VPS dans votre espace client OVHcloud et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
 updated: 2026-01-16
 ---
 
-## Prérequis
-
-- Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
-
 ## Objectif
 
-Un VPS (Virtual Private Server) est un serveur que vous administrez entièrement.
+Un serveur privé virtuel (VPS) est un serveur que vous administrez entièrement.
 
 Contrairement à un hébergement web géré, vous êtes responsable des éléments suivants :
 
@@ -20,9 +15,14 @@ Contrairement à un hébergement web géré, vous êtes responsable des élémen
 - Maintenance : garder le serveur à jour et opérationnel.
 - Backups : tester régulièrement vos sauvegardes pour garantir la restauration des données.
 
+## Prérequis
+
+- Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+
 ## En pratique
 
-Pour comprendre l’interface de gestion de votre VPS et les actions disponibles dans l’espace client OVHcloud, consultez notre [guide dédié à la prise en main de l’espace client pour les VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
+Pour comprendre l’interface de gestion de votre VPS et les actions disponibles dans l’espace client OVHcloud, consultez notre [guide dédié à la prise en main de l’espace client OVHcloud pour les VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
 ### Sommaire
 
@@ -44,6 +44,7 @@ Chez OVHcloud, pour des raisons de sécurité et pour protéger les services de 
 Le nom d’utilisateur exact à utiliser pour la connexion est clairement indiqué dans votre e-mail de livraison du VPS.
 
 Par exemple :
+
 - Pour **Debian**, le nom d'utilisateur sera **debian**.
 - Pour **Ubuntu**, le nom d'utilisateur sera **ubuntu**.
 - Pour **Rocky Linux**, le nom d'utilisateur sera **rocky**.
@@ -52,6 +53,7 @@ Le mot de passe temporaire associé à ce compte vous est envoyé via un lien s�
 
 > [!primary]
 > **Note importante** : lors de votre **première connexion**, il vous sera demandé de **changer ce mot de passe temporaire**.
+>
 > Une fois le mot de passe modifié, **la session sera automatiquement fermée**. Il s’agit d’un comportement normal. Vous devrez alors **vous reconnecter avec votre nouveau mot de passe**.
 
 ```bash
@@ -69,30 +71,40 @@ Une fois le système d'exploitation Windows installé, vous recevez un e-mail av
 
 Vous devrez ensuite terminer le processus d'installation de Windows en définissant votre langue d'affichage, votre disposition du clavier et votre mot de passe administrateur.
 
-Ceci se fait dans la console VPS KVM : cliquez sur le bouton `...`{.action} à côté du nom de votre VPS dans la section [Votre VPS](#yourvps) et sélectionnez `KVM`{.action}. Retrouvez plus d'informations sur cet outil dans notre « [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) ».
+Ceci se fait dans la console VPS KVM :
+
+1. Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans la section `Bare Metal Cloud`{.action}.
+1. Cliquez sur `Serveurs privés virtuels`{.action} et sélectionnez votre serveur.
+1. Dans l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} à côté du nom de votre VPS dans la section **Votre VPS** et sélectionnez `KVM`{.action}.
+
+Retrouvez plus d'informations sur cet outil dans notre « [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) ».
 
 Pour finaliser la configuration initiale de votre VPS Windows, suivez les étapes ci-dessous en parcourant les onglets :
 
 > [!tabs]
 > 1. **Paramètres régionaux**
 >>
->> Une fois la session KVM établie, terminez la configuration initiale de Windows en configurant votre **pays/région**, la **langue de Windows** préférée et votre **disposition de clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.<br><br>
->>![KVM](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
+>> Une fois la session KVM établie, terminez la configuration initiale de Windows en configurant votre **pays/région**, la **langue de Windows** préférée et votre **disposition de clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.
+>>
+>> ![KVM](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}
 >>
 > 2. **Mot de passe administrateur**
 >>
->> Définissez un mot de passe pour votre compte Windows `Administrator` / `admin`, confirmez-le, puis cliquez sur `Terminer`{.action}.<br><br>
->>![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
+>> Définissez un mot de passe pour votre compte Windows `Administrator` / `admin`, confirmez-le, puis cliquez sur `Terminer`{.action}.
+>>
+>> ![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}
 >>
 > 3. **Ecran de connexion**
 >>
->> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
->>![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
+>> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.
+>>
+>> ![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}
 >>
 > 4. **Login administrateur**
 >>
->> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur la `flèche`.<br><br>
->>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
+>> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur la `flèche`.
+>>
+>> ![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
 
 ##### Se connecter au serveur avec RDP
@@ -110,7 +122,7 @@ Vous pouvez également utiliser une autre application tierce compatible avec RDP
 Si vous rencontrez des difficultés avec cette procédure, vérifiez que les connexions à distance (RDP) sont autorisées sur votre appareil en vérifiant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
 >
 
-Pour faciliter le diagnostic en cas de problème, nous vous recommandons **d’activer les logs de démarrage Windows** en suivant notre [guide dédié](/pages/bare_metal_cloud/virtual_private_servers/Windows-boot-logs).
+Pour faciliter le diagnostic en cas de problème, nous vous recommandons **d’activer les logs de démarrage Windows** en suivant notre [guide dédié](/pages/bare_metal_cloud/virtual_private_servers/windows-boot-logs).
 
 ### Étape 2 : Utilisation du compte root (facultatif mais recommandé) <a name="rootaccount"></a>
 
@@ -158,7 +170,3 @@ Pour cela, nous vous conseillons d'effectuer les actions suivantes :
 [Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
-
-
-

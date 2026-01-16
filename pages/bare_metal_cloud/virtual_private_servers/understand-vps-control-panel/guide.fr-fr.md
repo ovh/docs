@@ -28,8 +28,8 @@ updated: 2026-01-16
 - [IP](#ip)
 - [Sauvegarde](#save)
 - [Mon offre](#myoffer)
-- [Réinstaller votre VPS](#reinstallvps)
 - [Redémarrer votre VPS](#rebootvps)
+- [Réinstaller votre VPS](#reinstallvps)
 
 ## En pratique
 
@@ -152,6 +152,18 @@ Cette section présente les informations les plus importantes concernant la fact
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter [notre communauté](/links/community) si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
 >
 
+#### Redémarrer votre VPS <a name="rebootvps"></a>
+
+Un redémarrage peut s'avérer nécessaire afin d'appliquer des mises à jour de configuration ou pour résoudre un dysfonctionnement. Dans la mesure du possible, effectuez un « redémarrage logiciel » à partir de l'interface graphique du serveur (Windows, Plesk, etc.) ou via la ligne de commande ci-dessous :
+
+```bash
+sudo reboot
+```
+
+Cependant, vous pouvez effectuer un redémarrage forcé à tout moment dans votre [espace client OVHcloud](/links/manager). Depuis l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} à côté de `Boot` dans la section **Votre VPS**. Sélectionnez `Redémarrer mon VPS`{.action} et cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche.
+
+![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
+
 #### Réinstaller votre VPS <a name="reinstallvps"></a>
 
 La réinstallation de votre VPS peut être effectuée depuis votre espace client. Cette opération est généralement utilisée en cas de problème système, de changement d'environnement ou pour repartir d'une installation propre.
@@ -191,18 +203,6 @@ Si vous avez sélectionné une clé SSH et que vous n'avez pas besoin de mot de 
 >
 
 Le processus de réinstallation peut prendre quelques minutes.
-
-#### Redémarrer votre VPS <a name="rebootvps"></a>
-
-Un redémarrage peut s'avérer nécessaire afin d'appliquer des mises à jour de configuration ou pour résoudre un dysfonctionnement. Dans la mesure du possible, effectuez un « redémarrage logiciel » à partir de l'interface graphique du serveur (Windows, Plesk, etc.) ou via la ligne de commande ci-dessous :
-
-```bash
-sudo reboot
-```
-
-Cependant, vous pouvez effectuer un redémarrage forcé à tout moment dans votre [espace client OVHcloud](/links/manager). Depuis l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} à côté de `Boot` dans la section **Votre VPS**. Sélectionnez `Redémarrer mon VPS`{.action} et cliquez sur `Valider`{.action} dans la fenêtre qui s'affiche.
-
-![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
 
 ## Allez plus loin
 
