@@ -49,7 +49,7 @@ You have imported the files of your site **domain.tld** into the `www` folder of
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-You will need to modify the `root folder` initially declared for your website from your [OVHcloud Control Panel](/links/manager). To do this, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
+You will need to modify the `root folder` initially declared for your website from your [OVHcloud Control Panel](/links/manager). To do this, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 If your website has a configuration with Git, please refer to our guide "[Configure and use Git with your OVHcloud web hosting](/pages/web_cloud/web_hosting/git_integration_webhosting)" beforehand to remove the association with Git **before** continuing. Indeed, modifying the declared root folder for a website is unavailable if your website is configured with Git.
 

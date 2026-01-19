@@ -76,7 +76,7 @@ Para modificar los parámetros de asociación de un dominio o subdominio ya decl
 > Los campos `Dominio`{.action} y `carpeta raíz`{.action} no son modificables, ya que se trata de parámetros relativos al sitio web presente en su alojamiento web.
 >
 > - Para asociar un nuevo dominio o subdominio a un sitio web presente en su alojamiento web, consulte nuestra guía "[Cómo asociar un dominio a un sitio web existente](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Para cambiar la carpeta raíz de su sitio web, consulte nuestro guía "[¿Cómo modificar la carpeta raíz de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
+> - Para cambiar la carpeta raíz de su sitio web, consulte nuestra guía "[¿Cómo modificar la carpeta raíz de un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 #### La opción "Activar la CDN"
 

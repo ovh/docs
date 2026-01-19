@@ -76,9 +76,9 @@ Para modificar os parâmetros de associação de um nome de domínio ou subdomí
 > Os campos `Domínio`{.action} e `Pasta raiz`{.action} não são modificáveis, pois trata-se de parâmetros relativos ao site web no seu alojamento web.
 >
 > - Para associar um novo nome de domínio ou subdomínio a um site web no seu alojamento web, consulte o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Para alterar a pasta raiz do seu site, consulte o nosso guia « [Como alterar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) »
+> - Para alterar a pasta raiz do seu site, consulte o nosso guia "[Como alterar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-##### A opção "Ativar o CDN"
+#### A opção "Ativar o CDN"
 
 Para poder utilizar esta opção, deve ter previamente subscrito uma oferta CDN da OVHcloud ou dispor de um serviço de alojamento web Performance.
 
@@ -86,19 +86,19 @@ Selecione/desmarque esta caixa de verificação para ativar/desativar a opção 
 
 Encontre mais informações sobre as opções/ofertas CDN disponíveis na nossa documentação dedicada "[Guia de utilização do acelerador CDN num alojamento web](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
-##### A opção "IP do país"
+#### A opção "IP do país"
 
 Esta opção é utilizada principalmente para os websites cujo público-alvo esteja situado no estrangeiro. Isto permite um melhor referenciamento SEO do website no país escolhido.
 
 Encontre mais informações sobre esta opção na nossa documentação dedicada "[Geolocalizar o seu website num país específico](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
-##### A opção "Ativar a firewall"
+#### A opção "Ativar a firewall"
 
 Esta opção permite filtrar os pedidos recebidos para proteger o seu alojamento web contra os ataques mais comuns.
 
 Encontre mais informações sobre esta opção na nossa documentação dedicada "[Partilhado: ativação da firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### A opção "Logs separados"
+#### A opção "Logs separados"
 
 Selecione/desmarque esta opção unicamente se deseja separar os logs do seu nome de domínio dos outros nomes de domínios declarados em paralelo no seu alojamento web.
 

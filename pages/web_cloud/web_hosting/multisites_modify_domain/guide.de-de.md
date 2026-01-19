@@ -76,7 +76,7 @@ Um die Zuordnungsparameter einer bereits deklarierten Domain oder Subdomain auf 
 > Die Felder `Domainname`{.action} und `Wurzelverzeichnis`{.action} sind nicht änderbar, da es sich hierbei um Parameter handelt, die für die Website auf Ihrem Webhosting relevant sind.
 >
 > - Um eine neue Domain oder Subdomains mit einer Website auf Ihrem Webhosting zu verknüpfen, konsultieren Sie unsere Anleitung "[Wie verknüpfe ich eine Domain mit einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Um das Wurzelverzeichnis Ihrer Website zu ändern, konsultieren Sie unser Handbuch „[Wie ändere ich das Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)“
+> - Um das Wurzelverzeichnis Ihrer Website zu ändern, konsultieren Sie unser Handbuch "[Wie ändere ich das Wurzelverzeichnis einer bestehenden Website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 #### Die Option "CDN aktivieren"
 

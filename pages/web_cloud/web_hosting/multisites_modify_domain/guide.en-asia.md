@@ -77,9 +77,9 @@ To modify the association settings of a domain name or subdomain already declare
 > The `Domain name`{.action} and `Root folder`{.action} fields are not modifiable, as they are parameters related to the website on your web hosting plan.
 >
 > - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - To change the root folder of your website, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
+> - To change the root folder of your website, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-##### The "Activate the CDN" option
+#### The "Activate the CDN" option
 
 To use this option, you must have already subscribed to an OVHcloud CDN solution, or have a Performance web hosting plan.
 
@@ -87,13 +87,13 @@ Tick/untick this box to enable/disable the CDN option for your domain name or su
 
 You can find more information on the CDN options/offers available in our dedicated documentation “[Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)”.
 
-##### The "Enable the firewall" option
+#### The "Enable the firewall" option
 
 This option filters incoming requests to protect your web hosting plan against the most common attacks.
 
 You can find more information on this option in our dedicated documentation "[Activating the application firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### The "Separate logs" option
+#### The "Separate logs" option
 
 Tick/untick this option only if you want to separate your domain name logs from other domain names declared on your web hosting plan.
 

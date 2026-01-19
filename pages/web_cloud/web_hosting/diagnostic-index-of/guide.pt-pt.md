@@ -50,7 +50,7 @@ Importou os ficheiros do seu site **domain.tld** para a pasta `www` do seu aloja
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Terá de modificar a `Pasta raiz` inicialmente declarada para o seu site a partir do seu [área de cliente OVHcloud](/links/manager). Para isso, consulte o nosso guia "[Como modificar a pasta raiz de um site existente ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)"
+Terá de modificar a `Pasta raiz` inicialmente declarada para o seu site a partir do seu [Área de Cliente OVHcloud](/links/manager). Para isso, consulte o nosso guia "[Como modificar a pasta raiz de um site existente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 Se o seu site tiver uma configuração com Git, consulte previamente o nosso guia "[Configurar e utilizar o Git com o seu alojamento web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar a ligação com Git **antes** de continuar. De facto, a modificação da pasta raiz declarada para um site não está disponível se o seu site estiver configurado com Git.
 

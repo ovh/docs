@@ -50,9 +50,9 @@ Ha importado los archivos de su sitio **domain.tld** en la carpeta `www` de su a
 
 ![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
-Deberá modificar la `Carpeta raíz` declarada inicialmente para su sitio web desde su [área de cliente de OVHcloud](/links/manager). Para ello, consulte nuestro guía "[Cómo modificar la carpeta raíz de un sitio web existente](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
+Deberá modificar la `Carpeta raíz` declarada inicialmente para su sitio web desde su [área de cliente de OVHcloud](/links/manager). Para ello, consulte nuestra guía "[Cómo modificar la carpeta raíz de un sitio web existente](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-Si su sitio web dispone de una configuración con Git, consulte previamente nuestro guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar la asociación con Git **antes** de continuar. De hecho, la modificación de la carpeta raíz declarada para un sitio web no está disponible si su sitio web está configurado con Git.
+Si su sitio web dispone de una configuración con Git, consulte previamente nuestra guía "[Configurar y utilizar Git con un alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting)" para eliminar la asociación con Git **antes** de continuar. De hecho, la modificación de la carpeta raíz declarada para un sitio web no está disponible si su sitio web está configurado con Git.
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
 

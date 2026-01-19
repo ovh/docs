@@ -76,9 +76,9 @@ Aby zmienić ustawienia przypisania już zadeklarowanej domeny lub poddomeny na 
 > Pola `Nazwa domeny`{.action} i `Katalog główny`{.action} nie są modyfikowalne, ponieważ dotyczą one strony internetowej znajdującej się na Twoim hostingu.
 >
 > - Aby przypisać nową domenę lub poddomenę do strony internetowej znajdującej się na Twoim hostingu, zapoznaj się z naszym poradnikiem "[Jak przypisać domenę do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Aby zmienić katalog główny swojej strony internetowej, zapoznaj się z naszym przewodnikiem „[Jak zmienić katalog główny istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)”.
+> - Aby zmienić katalog główny swojej strony internetowej, zapoznaj się z naszym przewodnikiem "[Jak zmienić katalog główny istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-##### Opcja "Włącz CDN"
+#### Opcja "Włącz CDN"
 
 Aby skorzystać z tej opcji, należy najpierw wykupić ofertę CDN OVHcloud lub wykupić hosting Performance.
 
@@ -86,19 +86,19 @@ Zaznacz/usuń zaznaczenie tego pola, aby włączyć/wyłączyć opcję GeoCache 
 
 Więcej informacji na temat opcji/ofert CDN znajdziesz w naszej dokumentacji "[Przewodnik dotyczący usługi CDN na hostingu www](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 
-##### Opcja "Geolokalizacja IP"
+#### Opcja "Geolokalizacja IP"
 
 Ta opcja jest używana głównie w przypadku stron WWW, których docelowi odbiorcy znajdują się za granicą. Pomaga to ulepszyć pozycjonowanie SEO strony internetowej w wybranym kraju.
 
 Więcej informacji na temat tej opcji znajdziesz w naszej dokumentacji "[Geolokalizacja strony WWW w danym kraju](/pages/web_cloud/web_hosting/multisites_geolocation)".
 
-##### Opcja "Włącz firewall"
+#### Opcja "Włącz firewall"
 
 Ta opcja pozwala na filtrowanie zapytań przychodzących w celu ochrony hostingu przed najczęstszymi atakami.
 
 Więcej informacji na temat tej opcji znajdziesz w naszej dokumentacji "[Aktywacja zapory systemowej](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### Opcja "Rozdzielone logi"
+#### Opcja "Rozdzielone logi"
 
 Zaznacz/usuń zaznaczenie tej opcji tylko wtedy, gdy chcesz oddzielić logi Twojej domeny od innych domen zadeklarowanych równolegle na Twoim hostingu.
 

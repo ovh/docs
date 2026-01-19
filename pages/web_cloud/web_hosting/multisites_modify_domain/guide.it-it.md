@@ -76,7 +76,7 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 > I campi `Dominio`{.action} e `Cartella di root`{.action} non sono modificabili, in quanto si tratta di parametri relativi al sito web presente sull'hosting web.
 >
 > - Per associare un nuovo dominio o sottodominio a un sito web presente sull'hosting web, consulta la nostra guida "[Come associare un dominio a un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
-> - Per modificare la cartella di root del tuo sito web, consulta la nostra guida « [Come modificare la cartella di root di un sito web esistente ?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder) »
+> - Per modificare la cartella di root del tuo sito web, consulta la nostra guida "[Come modificare la cartella di root di un sito web esistente?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
 #### L'opzione "Attiva la CDN"
 
