@@ -11,7 +11,7 @@ Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare M
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Serwer Bare Metal z zainstalowanym Backup Agent. Zapoznaj się z naszym przewodnikiem [Jak skonfigurować pierwszą kopię zapasową](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration), aby uzyskać więcej informacji.
+- Serwer Bare Metal z zainstalowanym Backup Agent. Zapoznaj się z naszym przewodnikiem "[Jak skonfigurować pierwszą kopię zapasową](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", aby uzyskać więcej informacji.
 
 ## W praktyce
 
@@ -19,27 +19,27 @@ Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare M
 
 W tym celu należy dodać serwer do Backup Agent, pobrać agenta i zainstalować go na serwerze.
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Backup Agent`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz `Agent kopii zapasowej`{.action}.
 
-![Backup Agent Menu](images/01-Backup-agent-menu.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
 
-Kliknij swój vspc-tenant w sekcji `Services`{.action}.
+Kliknij swój vspc-tenant w sekcji `Usługi`{.action}.
 
-![Backup Agent Services](images/01-Backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
-Przejdź do sekcji `Agents`{.action}.
+Przejdź do sekcji `Agenci`{.action}.
 
-![Backup Agent Tenant Infos](images/01-Backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Kliknij przycisk `Add a configuration`{.action}.
+Kliknij przycisk `Dodaj serwer`{.action}.
 
-![Backup Agent](images/01-Backup-agent-agent.png){.thumbnail}
+![Backup Agent](images/01-backup-agent-agent.png){.thumbnail}
 
 Wybierz swój serwer i system operacyjny.
 
-![Backup Agent Add Server 01](images/01-Backup-agent-add-server-01.png){.thumbnail}
+![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
 
-![Backup Agent Add Server 02](images/01-Backup-agent-add-server-02.png){.thumbnail}
+![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Kopia zapasowa
 
@@ -64,9 +64,9 @@ Możesz sprawdzić sukces tej kopii zapasowej za pomocą:
 - Codziennego raportu o kopii zapasowej.
 - Deski rozdzielczej "Backup Jobs" w konsoli Veeam Service Provider.
 
-![Backup Agent VSPC Backup Jobs](images/01-Backup-agent-vspc-Backup-jobs.png){.thumbnail}
+![Backup Agent VSPC Backup Jobs](images/01-backup-agent-vspc-backup-jobs.png){.thumbnail}
 
-![Backup Agent VSPC Job](images/01-Backup-agent-vspc-job.png){.thumbnail}
+![Backup Agent VSPC Job](images/01-backup-agent-vspc-job.png){.thumbnail}
 
 #### Ręczna kopia zapasowa
 
@@ -76,11 +76,11 @@ Będzie to również pełna kopia zapasowa serwera i zawsze zostanie wysłana do
 
 Aby utworzyć ręczną kopię zapasową, otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Kliknij przycisk `Backup Now`{.action}, aby uruchomić kopię zapasową:
 
-![Backup Agent BKP Agent](images/01-Backup-agent-bkpagent.png){.thumbnail}
+![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
 
 ### Przywracanie danych
 
@@ -93,23 +93,23 @@ Jeśli potrzebujesz przywrócić dane, masz dwie opcje:
 
 Aby użyć kreatora przywracania plików, otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Przejdź do menu i wybierz `Restore File`{.action}:
 
-![Backup Agent Restore Menu](images/01-Backup-agent-restore-menu.png){.thumbnail}
+![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
 
 Wybierz żądany punkt przywracania w kreatorze:
 
-![Backup Agent Restore Points](images/01-Backup-agent-restore-restore-points.png){.thumbnail}
+![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
 
 Następnie potwierdź:
 
-![Backup Agent Restore Point Summary](images/01-Backup-agent-restore-restore-point-summary.png){.thumbnail}
+![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
 
 Na koniec wyszukaj swój plik i wybierz opcję:
 
-![Backup Agent Restore Wizard](images/01-Backup-agent-restore-wizard.png){.thumbnail}
+![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
 
 - Przywracanie - Nadpisanie: Pozwala przywrócić plik, nadpisując ten obecnie znajdujący się na serwerze.
 - Przywracanie - Zachowanie: Pozwala przywrócić plik, zachowując ten obecnie znajdujący się na serwerze.
@@ -119,7 +119,7 @@ Na koniec wyszukaj swój plik i wybierz opcję:
 
 Uruchomienie przywracania spowoduje wyświetlenie końcowego okna, które pokaże transfer:
 
-![Backup Agent Restore Transfer](images/01-Backup-agent-restore-transfer.png){.thumbnail}
+![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
 
 #### Veeam Baremetal Recovery ISO
 

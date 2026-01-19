@@ -28,7 +28,7 @@ To install your agent on your Bare Metal server, follow the steps below accordin
 
 ### Windows
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Backup Agent`{.action} section.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select `Backup Agent`{.action}.
 
 ![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
 
@@ -76,7 +76,7 @@ By default, your backups are triggered between 10pm and 6am, but you can launch 
 
 ### Linux
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Backup Agent`{.action} section.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select `Backup Agent`{.action}.
 
 ![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
 

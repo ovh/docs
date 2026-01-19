@@ -11,7 +11,7 @@ Erfahren Sie, wie Sie Ihre Daten auf Bare Metal-Servern mit Backup Agent sichern
 ## Voraussetzungen
 
 - Zugriff auf das [OVHcloud Kundencenter](/links/manager).
-- Ein Bare Metal-Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung [So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration), um weitere Informationen zu erhalten.
+- Ein Bare Metal-Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
 
 ## In der praktischen Anwendung
 
@@ -19,27 +19,27 @@ Erfahren Sie, wie Sie Ihre Daten auf Bare Metal-Servern mit Backup Agent sichern
 
 Dies beinhaltet das Hinzufügen Ihres Servers zu Ihrem Backup Agent, das Herunterladen des Agents und die Installation auf Ihrem Server.
 
-Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und navigieren Sie zum Bereich `Backup Agent`{.action}.
+Melden Sie sich an bei dem [OVHcloud Kundencenter](/links/manager), gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
 
-![Backup Agent Menü](images/01-Backup-agent-menu.png){.thumbnail}
+![Backup Agent Menü](images/01-backup-agent-menu.png){.thumbnail}
 
-Klicken Sie auf Ihren vspc-tenant im Bereich `Services`{.action}.
+Klicken Sie auf Ihren vspc-tenant im Bereich `Dienste`{.action}.
 
-![Backup Agent Services](images/01-Backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
-Gehen Sie zum Bereich `Agents`{.action}.
+Gehen Sie zum Bereich `Agenten`{.action}.
 
-![Backup Agent Tenant Infos](images/01-Backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Klicken Sie auf die Schaltfläche `Add a configuration`{.action}.
+Klicken Sie auf die Schaltfläche `Einen Server hinzufügen`{.action}.
 
-![Backup Agent](images/01-Backup-agent-agent.png){.thumbnail}
+![Backup Agent](images/01-backup-agent-agent.png){.thumbnail}
 
 Wählen Sie Ihren Server und Ihr Betriebssystem aus.
 
-![Backup Agent Add Server 01](images/01-Backup-agent-add-server-01.png){.thumbnail}
+![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
 
-![Backup Agent Add Server 02](images/01-Backup-agent-add-server-02.png){.thumbnail}
+![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Backup
 
@@ -64,9 +64,9 @@ Sie können den Erfolg dieses Backups überprüfen anhand:
 - Des täglichen Backup-Berichts.
 - Des Dashboards "Backup Jobs" der Veeam Service Provider Console.
 
-![Backup Agent VSPC Backup Jobs](images/01-Backup-agent-vspc-Backup-jobs.png){.thumbnail}
+![Backup Agent VSPC Backup Jobs](images/01-backup-agent-vspc-backup-jobs.png){.thumbnail}
 
-![Backup Agent VSPC Job](images/01-Backup-agent-vspc-job.png){.thumbnail}
+![Backup Agent VSPC Job](images/01-backup-agent-vspc-job.png){.thumbnail}
 
 #### Manuelles Backup
 
@@ -76,11 +76,11 @@ Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es im
 
 Um ein manuelles Backup zu erstellen, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal-Server:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Klicken Sie auf die Schaltfläche `Backup Now`{.action}, um ein Backup zu starten:
 
-![Backup Agent BKP Agent](images/01-Backup-agent-bkpagent.png){.thumbnail}
+![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
 
 ### Wiederherstellung
 
@@ -93,23 +93,23 @@ Wenn Sie Daten wiederherstellen müssen, stehen Ihnen zwei Optionen zur Verfügu
 
 Um den Dateiwiederherstellung-Assistenten zu verwenden, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal-Server:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Gehen Sie zum Menü und wählen Sie `Restore File`{.action}:
 
-![Backup Agent Restore Menu](images/01-Backup-agent-restore-menu.png){.thumbnail}
+![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
 
 Wählen Sie im Assistenten den gewünschten Wiederherstellungspunkt aus:
 
-![Backup Agent Restore Points](images/01-Backup-agent-restore-restore-points.png){.thumbnail}
+![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
 
 Bestätigen Sie anschließend:
 
-![Backup Agent Restore Point Summary](images/01-Backup-agent-restore-restore-point-summary.png){.thumbnail}
+![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
 
 Suchen Sie abschließend nach der gewünschten Datei und wählen Sie eine Option:
 
-![Backup Agent Restore Wizard](images/01-Backup-agent-restore-wizard.png){.thumbnail}
+![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
 
 - Restore - Overwrite: Ermöglicht es Ihnen, die Datei zu restaurieren und die aktuelle Datei auf dem Server zu überschreiben.
 - Restore - Keep: Ermöglicht es Ihnen, die Datei zu restaurieren, ohne die aktuelle Datei auf dem Server zu überschreiben.
@@ -119,7 +119,7 @@ Suchen Sie abschließend nach der gewünschten Datei und wählen Sie eine Option
 
 Das Starten einer Wiederherstellung zeigt Ihnen ein letztes Fenster, das den Transfer anzeigt:
 
-![Backup Agent Restore Transfer](images/01-Backup-agent-restore-transfer.png){.thumbnail}
+![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
 
 #### Veeam Baremetal Recovery ISO
 

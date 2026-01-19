@@ -10,7 +10,7 @@ Learn about the periodic updates of Backup Agent and their impact on your servic
 
 ## Requirements
 
-- At least one Bare Metal server with the Backup Agent installed on it. Read our guide [How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) for more information.
+- At least one Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" for more information.
 
 ## Instructions
 

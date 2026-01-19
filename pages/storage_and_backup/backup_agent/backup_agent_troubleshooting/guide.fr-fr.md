@@ -55,8 +55,7 @@ Retrouvez sur cette page une liste de potentielles problématiques que vous pouv
 
 ## Prérequis
 
-- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) pour plus d'informations.
-
+- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
 ## Liste des possibles problématiques
 
@@ -97,7 +96,7 @@ Afin de régler ce défaut, augmentez la taille du snapshot via le fichier `/etc
 diffStorageMinimum = 2097152
 ```
 
-Remplacez la valeur en bytes par le nombre de GB voulu (GB divisé par 512, pour 3GB il faut mettre 3221225472 / 512 = 6 291 456)
+Remplacez la valeur en octets par le nombre de Go voulu (Go divisé par 512, pour 3 Go il faut mettre 3221225472 / 512 = 6 291 456)
 
 Enfin, redémarrez le service veeamservice.
 

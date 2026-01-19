@@ -10,8 +10,8 @@ Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal c
 
 ## Prerequisiti
 
-- Essere connessi al [Spazio Cliente OVHcloud](/links/manager)
-- Un server Bare Metal su cui è installato Backup Agent. Consulta la nostra guida [Come configurare il tuo primo backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) per ulteriori informazioni.
+- Essere connessi al [Spazio Cliente OVHcloud](/links/manager).
+- Un server Bare Metal su cui è installato Backup Agent. Consulta la nostra guida "[Come configurare il tuo primo backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" per ulteriori informazioni.
 
 ## Procedura
 
@@ -19,27 +19,27 @@ Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal c
 
 Questo consiste nell'aggiungere il tuo server al tuo Backup Agent, scaricare l'agente e installarlo sul tuo server.
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e vai nella sezione `Backup Agent`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Bare Metal Cloud`{.action} e seleziona `Agente di backup`{.action}. 
 
-![Backup Agent Menu](images/01-Backup-agent-menu.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
 
-Clicca sul tuo vspc-tenant, nella sezione `Services`{.action}.
+Clicca sul tuo vspc-tenant, nella sezione `Servizi`{.action}.
 
-![Backup Agent Services](images/01-Backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
-Vai nella sezione `Agents`{.action}.
+Vai nella sezione `Agenti`{.action}.
 
-![Backup Agent Tenant Infos](images/01-Backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
-Clicca sul pulsante `Aggiungi una configurazione`{.action}.
+Clicca sul pulsante `Aggiungere un server`{.action}.
 
-![Backup Agent Agent](images/01-Backup-agent-agent.png){.thumbnail}
+![Backup Agent Agent](images/01-backup-agent-agent.png){.thumbnail}
 
 Seleziona il tuo server e il sistema operativo.
 
-![Backup Agent Add Server 01](images/01-Backup-agent-add-server-01.png){.thumbnail}
+![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
 
-![Backup Agent Add Server 02](images/01-Backup-agent-add-server-02.png){.thumbnail}
+![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Backup
 
@@ -64,9 +64,9 @@ Potrai verificare il successo di questo backup tramite:
 - Il rapporto quotidiano sui backup.
 - Il pannello "Backup Jobs" della console Veeam Service Provider.
 
-![Backup Agent VSPC Backup Jobs](images/01-Backup-agent-vspc-Backup-jobs.png){.thumbnail}
+![Backup Agent VSPC Backup Jobs](images/01-backup-agent-vspc-backup-jobs.png){.thumbnail}
 
-![Backup Agent VSPC Job](images/01-Backup-agent-vspc-job.png){.thumbnail}
+![Backup Agent VSPC Job](images/01-backup-agent-vspc-job.png){.thumbnail}
 
 #### Backup manuale
 
@@ -76,11 +76,11 @@ Anche questo effettuerà un backup completo del tuo server, sempre inviato al tu
 
 Per creare un backup manuale, apri l'applicazione "Veeam Agent" sul server Bare Metal:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Clicca sul pulsante `Backup Now`{.action} per avviare un backup:
 
-![Backup Agent BKP Agent](images/01-Backup-agent-bkpagent.png){.thumbnail}
+![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
 
 ### Ripristino
 
@@ -93,23 +93,23 @@ In caso di necessità di ripristinare dati, hai due opzioni:
 
 Apri l'applicazione "Veeam Agent" sul tuo server Baremetal:
 
-![Backup Agent BKP Agent Search](images/01-Backup-agent-bkpagent-search.png){.thumbnail}
+![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
 Vai nel menu e seleziona `Restore File`{.action}:
 
-![Backup Agent Restore Menu](images/01-Backup-agent-restore-menu.png){.thumbnail}
+![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
 
 Seleziona il punto di ripristino desiderato nell'assistente:
 
-![Backup Agent Restore Points](images/01-Backup-agent-restore-restore-points.png){.thumbnail}
+![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
 
 Poi conferma:
 
-![Backup Agent Restore Point Summary](images/01-Backup-agent-restore-restore-point-summary.png){.thumbnail}
+![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
 
 Infine, cerca il tuo file e seleziona un'opzione:
 
-![Backup Agent Restore Wizard](images/01-Backup-agent-restore-wizard.png){.thumbnail}
+![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
 
 - Restore - Overwrite: ti permette di ripristinare il file sovrascrivendo quello attualmente presente sul server.
 - Restore - Keep: ti permette di ripristinare il file mantenendo quello attualmente presente sul server.
@@ -119,7 +119,7 @@ Infine, cerca il tuo file e seleziona un'opzione:
 
 Avviare un ripristino ti mostrerà un'ultima finestra che visualizzerà il trasferimento:
 
-![Backup Agent Restore Transfer](images/01-Backup-agent-restore-transfer.png){.thumbnail}
+![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
 
 ### ISO Veeam Baremetal Recovery
 

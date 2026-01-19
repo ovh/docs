@@ -55,7 +55,7 @@ Here is a list of potential issues you may encounter with the Backup Agent produ
 
 ## Requirements
 
-- At least one Bare Metal server with the Backup Agent installed on it. Read our guide [How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) for more information.
+- At least one Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" for more information.
 
 ## List of possible issues
 
@@ -117,6 +117,8 @@ We keep your data for 14 days following an agent deletion, storage usage will be
 /// details | I have uninstalled my Veeam Agent, how do I reinstall it?
 
 [Contact OVHcloud support](/links/support) to help you reinstall your agent.
+
+///
 
 /// details | I have reinstalled my server. How do I reinstall the Backup Agent?
 
