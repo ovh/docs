@@ -155,13 +155,13 @@ In general, it is sufficient to:
     "client-classes": [
         {
             "name": "iPXE script",
-            "test": "option[user-class].exists and substring(option[user-class].hex,0,4) == 'iPXE' and option[client-system].hex == 0x0007", # Détermine le type d'architecture, ici 64bits
+            "test": "option[user-class].exists and substring(option[user-class].hex,0,4) == 'iPXE' and option[client-system].hex == 0x0007", # Determines the type of architecture, in this case 64 bits
             "next-server": "192.168.1.1", # Determines the IP of your tftp server
             "boot-file-name": "refind.pxe",  # Determines the script loaded by the iPXE binary
         },
         {
             "name": "PXE UEFI",
-            "test": "not option[user-class].exists and option[client-system].hex == 0x0007", # Détermine le type d'architecture, ici 64bits
+            "test": "not option[user-class].exists and option[client-system].hex == 0x0007", # Determines the type of architecture, in this case 64 bits
             "next-server": "192.168.1.1", # Determines the IP of your tftp server
             "boot-file-name": "ipxe.efi" # Determines iPXE binary
         },
