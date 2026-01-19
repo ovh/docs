@@ -24,7 +24,7 @@ Unlike a managed web hosting service, you are responsible for the following:
 
 To understand the management interface of your VPS and the available actions in the OVHcloud Control Panel, refer to our [guide dedicated to getting started with the OVHcloud Control Panel for VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-### Table of contents
+**Table of Contents:**
 
 - [Step 1: Initial connection](#initial-connection)
     - [GNU/Linux distribution](#linuxconnect)

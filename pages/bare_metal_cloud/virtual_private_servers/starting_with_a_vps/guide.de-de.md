@@ -24,7 +24,7 @@ Im Gegensatz zu einem verwalteten Webhosting-Dienst sind Sie für folgende Aufga
 
 Um die Verwaltungsoberfläche Ihres VPS und die verfügbaren Aktionen im OVHcloud Kundencenter zu verstehen, konsultieren Sie unsere [Anleitung zur Einführung in das OVHcloud Kundencenter für VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-### Inhaltsverzeichnis
+**Inhaltsverzeichnis:**
 
 - [Schritt 1: Erste Verbindung](#initial-connection)
 	- [GNU/Linux-Distribution](#linuxconnect)

@@ -24,7 +24,7 @@ A differenza di un hosting web gestito, sei responsabile dei seguenti elementi:
 
 Per comprendere l'interfaccia di gestione del tuo VPS e le azioni disponibili nel tuo Spazio Cliente OVHcloud, consulta la nostra [guida dedicata all'utilizzo dello Spazio Cliente OVHcloud per i VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-### Sommario
+**Indice:**
 
 - [Passo 1: Connessione iniziale](#initial-connection)
     - [Distribuzione GNU/Linux](#linuxconnect)

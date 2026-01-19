@@ -24,7 +24,7 @@ Ao contrário de um alojamento web gerido, você é responsável pelos seguintes
 
 Para compreender a interface de gestão do seu VPS e as ações disponíveis na Área de Cliente OVHcloud, consulte o nosso [guia dedicado à utilização da Área de Cliente OVHcloud para VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-### Sumário
+**Índice:**
 
 - [Passo 1: Ligação inicial](#initial-connection)
     - [Distribuição GNU/Linux](#linuxconnect)

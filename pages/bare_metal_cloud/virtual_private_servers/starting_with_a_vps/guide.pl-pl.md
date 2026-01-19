@@ -24,7 +24,7 @@ W przeciwieństwie do usługi hostingu zarządzanego, odpowiedzialność za poni
 
 Aby zrozumieć interfejs zarządzania swoim VPS i dostępne działania w Panelu klienta OVHcloud, zapoznaj się z naszym [przewodnikiem po pierwszych krokach w Panelu klienta OVHcloud dla VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-### Spis treści
+**Spis treści:**
 
 - [Krok 1: Pierwsze połączenie](#initial-connection)
     - [Dystrybucja GNU/Linux](#linuxconnect)
