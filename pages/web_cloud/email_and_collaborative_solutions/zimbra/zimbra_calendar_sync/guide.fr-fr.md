@@ -15,7 +15,7 @@ updated: 2025-02-12
 
 ## Objectif
 
-Les comptes e-mail Zimbra peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Zimbra inclut un calendrier en ligne pouvant être synchronisé depuis un logiciel compatible avec le protocole CalDAV.
+Les comptes e-mail Zimbra peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Zimbra inclut la fonctionnalité de calendrier en ligne, synchronisable depuis un logiciel compatible avec le protocole CalDAV.
 
 **Découvrez comment ajouter un calendrier Zimbra sur une application via le protocole CalDAV.**
 
