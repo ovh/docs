@@ -326,7 +326,7 @@ Wenn Ihre ESP nicht gespiegelt ist, kann Folgendes passieren:
 **Fall 1** - Es gab keine Änderungen oder größeren Updates (z. B. GRUB) am Betriebssystem.
 
 - Der Server kann im normalen Modus starten, und Sie können mit der RAID-Wiederherstellung fortfahren.
-- Der Server kann nicht im normalen Modus starten. Verwenden Sie die Rescue-Mofdus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
+- Der Server kann nicht im normalen Modus starten. Verwenden Sie die Rescue-Modus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
 
 **Fall 2** - Es gab umfangreiche Systemaktualisierungen (z. B. GRUB) und die ESPs wurden synchronisiert.
 
@@ -826,7 +826,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 /// details | **Diesen Abschnitt ausklappen**
 
-> [!Warnung]
+> [!Warning]
 > Befolgen Sie die Schritte in diesem Abschnitt nur, wenn sie auf Ihren Fall zutreffen.
 > 
 
