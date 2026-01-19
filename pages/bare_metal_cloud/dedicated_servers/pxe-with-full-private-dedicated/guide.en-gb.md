@@ -260,9 +260,12 @@ iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
 :is_efi_x86_64
 echo EFI boot mode
+
+# Retrieve configuration file
 imgfetch --name refind.conf tftp://${next-server}/refind.conf
-imgfetch  --name refind tftp://${next-server}/refind_x64.efi
-sleep 5
+
+# Load rEFIND binary
+imgfetch --name refind tftp://${next-server}/refind_x64.efi
 chain refind
 
 :end
