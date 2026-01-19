@@ -41,7 +41,7 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako [użytkownik z du�
 - [Konfiguracja wewnętrznej zapory sieciowej (iptables)](#iptables)
 - [Zainstaluj Fail2ban](#fail2ban)
 - [Konfiguracja Network Firewall OVHcloud](#networkfirewall)
-- [Tworzenie kopii zapasowej systemu i danych](#Backup)
+- [Tworzenie kopii zapasowej systemu i danych](#backup)
 
 ### Aktualizacja systemu operacyjnego <a name="os-update"></a>
 

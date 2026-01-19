@@ -41,7 +41,7 @@ Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autoriz
 - [Configurar firewall interna (iptables)](#iptables)
 - [Instalar o Fail2ban](#fail2ban)
 - [Configuração da Network Firewall OVHcloud](#networkfirewall)
-- [Proteger o sistema e os dados](#Backup)
+- [Proteger o sistema e os dados](#backup)
 
 ### Atualizar o sistema operativo <a name="os-update"></a>
 

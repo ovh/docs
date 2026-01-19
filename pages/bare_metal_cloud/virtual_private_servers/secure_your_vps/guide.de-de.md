@@ -42,7 +42,7 @@ Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Bere
 - [Konfiguration der internen Firewall (iptables)](#iptables)
 - [Fail2ban installieren](#fail2ban)
 - [Konfiguration der OVHcloud Network Firewall](#networkfirewall)
-- [Ihr System und Ihre Daten sichern](#Backup)
+- [Ihr System und Ihre Daten sichern](#backup)
 
 ### Systemupdate <a name="os-update"></a>
 

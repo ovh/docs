@@ -24,7 +24,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 - [Configura il firewall interno (iptables)](#iptables)
 - [Installer Fail2ban](#fail2ban)
 - [Configurazione del Network Firewall OVHcloud](#networkfirewall)
-- [Proteggi il tuo sistema e i tuoi dati](#Backup)
+- [Proteggi il tuo sistema e i tuoi dati](#backup)
 
 ## Prerequisiti
 

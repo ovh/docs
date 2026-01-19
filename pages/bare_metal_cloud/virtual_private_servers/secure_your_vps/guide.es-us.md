@@ -42,7 +42,7 @@ Los siguientes ejemplos implican que está conectado como [usuario con permisos 
 - [Configurar el firewall interno (iptables)](#iptables)
 - [Instalar Fail2ban](#fail2ban)
 - [Configuración del firewall de red de OVHcloud](#networkfirewall)
-- [Guardar copia de seguridad del sistema y los datos](#Backup)
+- [Guardar copia de seguridad del sistema y los datos](#backup)
 
 ### Actualizar el sistema operativo <a name="os-update"></a>
 

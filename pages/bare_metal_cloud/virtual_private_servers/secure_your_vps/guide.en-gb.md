@@ -41,7 +41,7 @@ The following examples presume that you are logged in as a [user with elevated p
 - [Configuring the internal firewall (iptables)](#iptables)
 - [Installing Fail2ban](#fail2ban)
 - [Configuring the OVHcloud Network Firewall](#networkfirewall)
-- [Backing up your system and your data](#Backup)
+- [Backing up your system and your data](#backup)
 
 ### Updating your system <a name="os-update"></a>
 
