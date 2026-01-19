@@ -252,6 +252,7 @@ root@node_0:/srv/tftp# tree
 
 ```bash
 #!ipxe
+
 echo Boot to local disk
 
 iseq ${platform} efi && goto is_efi_x86_64 || goto end
