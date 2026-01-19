@@ -17,17 +17,6 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 > Más información en el apartado «Más información» de esta guía.
 >
 
-## Contenido
-
-- [Actualizar el sistema operativo](#os-update)
-- [Crear y utilizar una clave SSH](#sshkey)
-- [Cambiar el puerto de escucha SSH por defecto](#changesshport)
-- [Crear un usuario con permisos restringidos](#createuser)
-- [Configurar el firewall interno (iptables)](#iptables)
-- [Instalar Fail2ban](#fail2ban)
-- [Configuración del firewall de red de OVHcloud](#networkfirewall)
-- [Guardar copia de seguridad del sistema y los datos](#Backup)
-
 ## Requisitos
 
 - Un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
@@ -43,6 +32,17 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 >
 
 Los siguientes ejemplos implican que está conectado como [usuario con permisos muy exigentes](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+
+**Índice:**
+
+- [Actualizar el sistema operativo](#os-update)
+- [Crear y utilizar una clave SSH](#sshkey)
+- [Cambiar el puerto de escucha SSH por defecto](#changesshport)
+- [Crear un usuario con permisos restringidos](#createuser)
+- [Configurar el firewall interno (iptables)](#iptables)
+- [Instalar Fail2ban](#fail2ban)
+- [Configuración del firewall de red de OVHcloud](#networkfirewall)
+- [Guardar copia de seguridad del sistema y los datos](#Backup)
 
 ### Actualizar el sistema operativo <a name="os-update"></a>
 

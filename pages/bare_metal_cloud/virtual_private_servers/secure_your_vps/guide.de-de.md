@@ -17,17 +17,6 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 > Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
 >
 
-## Inhaltsverzeichnis
-
-- [Systemupdate](#os-update)
-- [Erstellen und verwenden Sie einen SSH-Schlüssel](#sshkey)
-- [Standard-SSH-Listening-Port ändern](#changesshport)
-- [Erstellen eines Benutzers mit eingeschränkten Rechten](#createuser)
-- [Konfiguration der internen Firewall (iptables)](#iptables)
-- [Fail2ban installieren](#fail2ban)
-- [Konfiguration der OVHcloud Network Firewall](#networkfirewall)
-- [Ihr System und Ihre Daten sichern](#Backup)
-
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
@@ -43,6 +32,17 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 >
 
 Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Berechtigungen](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) eingeloggt sind.
+
+**Inhaltsverzeichnis:**
+
+- [Systemupdate](#os-update)
+- [Erstellen und verwenden Sie einen SSH-Schlüssel](#sshkey)
+- [Standard-SSH-Listening-Port ändern](#changesshport)
+- [Erstellen eines Benutzers mit eingeschränkten Rechten](#createuser)
+- [Konfiguration der internen Firewall (iptables)](#iptables)
+- [Fail2ban installieren](#fail2ban)
+- [Konfiguration der OVHcloud Network Firewall](#networkfirewall)
+- [Ihr System und Ihre Daten sichern](#Backup)
 
 ### Systemupdate <a name="os-update"></a>
 

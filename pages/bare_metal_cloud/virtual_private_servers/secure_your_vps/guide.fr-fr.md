@@ -17,7 +17,7 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
-## Sommaire
+**Sommaire :**
 
 - [Mettre à jour votre système d'exploitation](#os-update)
 - [Créer et utiliser une clé SSH](#sshkey)

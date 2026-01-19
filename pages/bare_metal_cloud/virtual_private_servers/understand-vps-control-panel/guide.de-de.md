@@ -20,7 +20,13 @@ updated: 2026-01-16
 >
 > Weitere Informationen finden Sie auf unserer [Local Zones Seite](/links/bare-metal/vps-lz).
 
-### Inhaltsverzeichnis
+## In der praktischen Anwendung
+
+Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Abschnitt `Virtual Private Server`{.action} aus.
+
+Dieser Leitfaden hilft Ihnen dabei, **das VPS-Verwaltungsfenster im OVHcloud Kundencenter zu verstehen**, wesentliche Informationen zu identifizieren und die wichtigsten verfügbaren Aktionen (Neuinstallation, Neustart, Backup, Konfiguration) zu nutzen.
+
+**Inhaltsverzeichnis:**
 
 - [Dashboard](#controlpanel)
 - [Ihr VPS](#myvps)
@@ -30,12 +36,6 @@ updated: 2026-01-16
 - [Mein Angebot](#myoffer)
 - [Neustart Ihres VPS](#rebootvps)
 - [Neuinstallation Ihres VPS](#reinstallvps)
-
-## In der praktischen Anwendung
-
-Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, wechseln Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Abschnitt `Virtual Private Server`{.action} aus.
-
-Dieser Leitfaden hilft Ihnen dabei, **das VPS-Verwaltungsfenster im OVHcloud Kundencenter zu verstehen**, wesentliche Informationen zu identifizieren und die wichtigsten verfügbaren Aktionen (Neuinstallation, Neustart, Backup, Konfiguration) zu nutzen.
 
 ### Dashboard <a name="controlpanel"></a>
 

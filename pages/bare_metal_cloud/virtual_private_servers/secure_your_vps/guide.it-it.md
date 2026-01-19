@@ -15,7 +15,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 > OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
 
-## Indice
+**Indice:**
 
 - [Aggiorna il tuo sistema operativo](#os-update)
 - [Creare e utilizzare una chiave SSH](#sshkey)

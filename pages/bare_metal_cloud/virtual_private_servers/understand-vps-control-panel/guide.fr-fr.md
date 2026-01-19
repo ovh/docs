@@ -20,7 +20,13 @@ updated: 2026-01-16
 >
 > Veuillez visiter notre [page Web des Local Zones](/links/bare-metal/vps-lz) pour obtenir plus d'informations.
 
-### Sommaire
+## En pratique
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs privés virtuels`{.action}.
+
+Ce guide vous aide à **comprendre l'interface de gestion de votre VPS dans l'espace client OVHcloud**, à identifier les informations essentielles et à utiliser les principales actions disponibles (réinstallation, redémarrage, sauvegarde, configuration).
+
+**Sommaire :**
 
 - [Tableau de bord](#controlpanel)
 - [Votre VPS](#myvps)
@@ -30,12 +36,6 @@ updated: 2026-01-16
 - [Mon offre](#myoffer)
 - [Redémarrer votre VPS](#rebootvps)
 - [Réinstaller votre VPS](#reinstallvps)
-
-## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs privés virtuels`{.action}.
-
-Ce guide vous aide à **comprendre l'interface de gestion de votre VPS dans l'espace client OVHcloud**, à identifier les informations essentielles et à utiliser les principales actions disponibles (réinstallation, redémarrage, sauvegarde, configuration).
 
 ### Tableau de bord <a name="controlpanel"></a>
 

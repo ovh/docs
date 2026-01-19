@@ -16,18 +16,6 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 > Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
 >
 
-## Spis treści
-
-- [Aktualizacja systemu operacyjnego](#os-update)
-- [Utwórz i użyj klucza SSH](#sshkey)
-- [Zmień domyślny port SSH](#changesshport)
-- [Utworzenie użytkownika z ograniczonymi prawami](#createuser)
-- [Konfiguracja wewnętrznej zapory sieciowej (iptables)](#iptables)
-- [Zainstaluj Fail2ban](#fail2ban)
-- [Konfiguracja Network Firewall OVHcloud](#networkfirewall)
-- [Tworzenie kopii zapasowej systemu i danych](#Backup)
-
-
 ## Wymagania początkowe
 
 - Jeden [VPS](/links/bare-metal/vps) na Twoim koncie OVHcloud.
@@ -43,6 +31,17 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 >
 
 Poniższe przykłady zakładają, że jesteś zalogowany jako [użytkownik z dużymi uprawnieniami](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+
+**Spis treści:**
+
+- [Aktualizacja systemu operacyjnego](#os-update)
+- [Utwórz i użyj klucza SSH](#sshkey)
+- [Zmień domyślny port SSH](#changesshport)
+- [Utworzenie użytkownika z ograniczonymi prawami](#createuser)
+- [Konfiguracja wewnętrznej zapory sieciowej (iptables)](#iptables)
+- [Zainstaluj Fail2ban](#fail2ban)
+- [Konfiguracja Network Firewall OVHcloud](#networkfirewall)
+- [Tworzenie kopii zapasowej systemu i danych](#Backup)
 
 ### Aktualizacja systemu operacyjnego <a name="os-update"></a>
 

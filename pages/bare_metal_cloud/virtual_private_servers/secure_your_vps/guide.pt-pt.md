@@ -16,17 +16,6 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 > Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
 >
 
-## Conteúdo
-
-- [Atualizar o sistema operativo](#os-update)
-- [Criar e utilizar uma chave SSH](#sshkey)
-- [Modificar a porta de escuta SSH](#changesshport)
-- [Criar um utilizador com direitos restritos](#createuser)
-- [Configurar firewall interna (iptables)](#iptables)
-- [Instalar o Fail2ban](#fail2ban)
-- [Configuração da Network Firewall OVHcloud](#networkfirewall)
-- [Proteger o sistema e os dados](#Backup)
-
 ## Requisitos
 
 - Um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
@@ -42,6 +31,17 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 >
 
 Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autorizações elevadas](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+
+**Índice:**
+
+- [Atualizar o sistema operativo](#os-update)
+- [Criar e utilizar uma chave SSH](#sshkey)
+- [Modificar a porta de escuta SSH](#changesshport)
+- [Criar um utilizador com direitos restritos](#createuser)
+- [Configurar firewall interna (iptables)](#iptables)
+- [Instalar o Fail2ban](#fail2ban)
+- [Configuração da Network Firewall OVHcloud](#networkfirewall)
+- [Proteger o sistema e os dados](#Backup)
 
 ### Atualizar o sistema operativo <a name="os-update"></a>
 

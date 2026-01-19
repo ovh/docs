@@ -17,17 +17,6 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
-## Sommaire
-
-- [Mettre à jour votre système d'exploitation](#os-update)
-- [Créer et utiliser une clé SSH](#sshkey)
-- [Modifier le port d'écoute SSH par défaut](#changesshport)
-- [Créer un utilisateur avec des droits restreints](#createuser)
-- [Configurer le pare-feu interne (iptables)](#iptables)
-- [Installer Fail2ban](#fail2ban)
-- [Configurer le Network Firewall OVHcloud](#networkfirewall)
-- [Sauvegarder votre système et vos données](#backup)
-
 ## Prérequis
 
 - Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
@@ -43,6 +32,17 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 >
 
 Les exemples suivants supposent que vous êtes connecté en tant qu'[utilisateur avec des autorisations élevées](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+
+**Sommaire :**
+
+- [Mettre à jour votre système d'exploitation](#os-update)
+- [Créer et utiliser une clé SSH](#sshkey)
+- [Modifier le port d'écoute SSH par défaut](#changesshport)
+- [Créer un utilisateur avec des droits restreints](#createuser)
+- [Configurer le pare-feu interne (iptables)](#iptables)
+- [Installer Fail2ban](#fail2ban)
+- [Configurer le Network Firewall OVHcloud](#networkfirewall)
+- [Sauvegarder votre système et vos données](#backup)
 
 ### Mettre à jour votre système d'exploitation <a name="os-update"></a>
 

@@ -16,17 +16,6 @@ When you order your VPS, you can choose a distribution or operating system to in
 > This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
-## Contents
-
-- [Updating your system](#os-update)
-- [Create and use an SSH key](#sshkey)
-- [Changing the default SSH listening port](#changesshport)
-- [Creating a user with restricted rights](#createuser)
-- [Configuring the internal firewall (iptables)](#iptables)
-- [Installing Fail2ban](#fail2ban)
-- [Configuring the OVHcloud Network Firewall](#networkfirewall)
-- [Backing up your system and your data](#Backup)
-
 ## Requirements
 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
@@ -42,6 +31,17 @@ When you order your VPS, you can choose a distribution or operating system to in
 >
 
 The following examples presume that you are logged in as a [user with elevated permissions](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+
+**Table of Contents:**
+
+- [Updating your system](#os-update)
+- [Create and use an SSH key](#sshkey)
+- [Changing the default SSH listening port](#changesshport)
+- [Creating a user with restricted rights](#createuser)
+- [Configuring the internal firewall (iptables)](#iptables)
+- [Installing Fail2ban](#fail2ban)
+- [Configuring the OVHcloud Network Firewall](#networkfirewall)
+- [Backing up your system and your data](#Backup)
 
 ### Updating your system <a name="os-update"></a>
 
