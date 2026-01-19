@@ -95,9 +95,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **8** pa
 >> > Per impostazione predefinita, la **cartella di root** del tuo sito web viene creata automaticamente al momento dell'aggiunta del sito web al tuo hosting web. La stessa **cartella di root** viene inoltre generata nello spazio di archiviazione del tuo hosting web (accessibile in FTP, SFTP o SSH, a seconda della tua offerta).
 >> >
 >> > Se desideri personalizzare il nome della **cartella di root**, soprattutto se il contenuto del tuo sito web è già presente in una directory specifica del tuo spazio di archiviazione, puoi farlo attivando il pulsante `Configurazione avanzata`{.action}.
->> >
->> > **Il nome della cartella di root è personalizzabile solo al momento dell'aggiunta del sito web al tuo hosting web.** Ciò significa che, una volta che il tuo sito web è stato creato e aggiunto al tuo hosting web, non sarà più possibile modificarlo in seguito.
->> >
+>>
 >> Se desideri personalizzare il nome della cartella di root o utilizzare una delle **opzioni avanzate** disponibili, attiva il pulsante `Configurazione avanzata`{.action} e vai alla **passaggio 6**. Altrimenti, prosegui direttamente alla **passaggio 7**.
 >>
 > **Passaggio 6**
@@ -106,7 +104,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **8** pa
 >> >
 >> > Questa fase è **facoltativa**. Si rivolge esclusivamente ai clienti che desiderano personalizzare la cartella di root e/o attivare alcune funzionalità disponibili tramite il pulsante `Configurazione avanzata`{.action}.
 >> >
->> > **A eccezione della personalizzazione della cartella di root, tutte queste funzionalità possono essere attivate in un secondo momento una volta che il nome di dominio è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Tutte queste funzionalità possono essere attivate in un secondo momento una volta che il nome di dominio è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Per personalizzare il nome della cartella di root che sarà associata al tuo sito web e conterrà i suoi file, inserisci il nome desiderato nel campo **Cartella di root**.
 >>
@@ -207,8 +205,6 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **8** pa
 >> > [!warning]
 >> >
 >> > Per impostazione predefinita, la **cartella di root** del tuo sito web viene creata automaticamente al momento dell'aggiunta del sito web al tuo hosting web. La stessa **cartella di root** viene inoltre generata nello spazio di archiviazione del tuo hosting web (accessibile in FTP, SFTP o SSH, a seconda della tua offerta).
->> >
->> > **Il nome della cartella di root è personalizzabile solo al momento dell'aggiunta del sito web al tuo hosting web.** Ciò significa che, una volta che il tuo sito web è stato creato e aggiunto al tuo hosting web, non sarà più possibile modificarlo in seguito.
 >>
 >> Per personalizzare il nome della cartella di root che sarà associata al tuo sito web e conterrà i suoi file, inserisci il nome desiderato nel campo **Cartella di root**. Se non desideri personalizzarlo, lascia il campo vuoto.
 >>
@@ -220,7 +216,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **8** pa
 >> >
 >> > A differenza dei nomi di dominio gestiti direttamente dal tuo Spazio Cliente OVHcloud, le **opzioni avanzate** non sono direttamente disponibili durante l'aggiunta di un sito web con un nome di dominio o un sottodominio non gestito dal tuo account OVHcloud.
 >> >
->> > Tuttavia, ad eccezione della cartella di root, **tutte queste funzionalità possono essere attivate o modificate in seguito una volta che il nome del dominio o il sottodominio esterno è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > Tuttavia, **tutte queste funzionalità possono essere attivate o modificate in seguito una volta che il nome del dominio o il sottodominio esterno è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> L'aggiunta di un sito web con un nome di dominio esterno a OVHcloud richiede una validazione obbligatoria aggiuntiva. Ciò ci permette di verificare che l'aggiunta del nome di dominio esterno sia legittima. Ti verrà quindi chiesto di modificare la configurazione DNS del nome di dominio.
 >>

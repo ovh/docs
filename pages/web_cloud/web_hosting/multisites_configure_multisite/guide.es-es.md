@@ -95,8 +95,6 @@ Haga clic en las fichas siguientes para ver cada una de las **8** etapas.
 >> > Por defecto, la **carpeta raíz** de su sitio web se crea automáticamente al añadir el sitio web a su alojamiento web. Esta misma **carpeta raíz** también se genera en el espacio de almacenamiento de su alojamiento web (accesible mediante FTP, SFTP o SSH, según su oferta).
 >> >
 >> > Si desea personalizar el nombre de la **carpeta raíz**, especialmente si el contenido de su sitio web ya se encuentra en una carpeta específica de su espacio de almacenamiento, puede definirlo activando el botón `Configuración avanzada`{.action}.
->> >
->> > **El nombre de la carpeta raíz solo es personalizable en el momento de añadir el sitio web a su alojamiento web.** Esto significa que, una vez que su sitio web se haya creado y añadido a su alojamiento web, actualmente **no podrá modificarlo** posteriormente.
 >>
 >> Si desea personalizar el nombre de la carpeta raíz o utilizar una de las **opciones avanzadas** disponibles, active el botón `Configuración avanzada`{.action} y pase a **la etapa 6**. En caso contrario, continúe directamente a **la etapa 7**.
 >>
@@ -106,7 +104,7 @@ Haga clic en las fichas siguientes para ver cada una de las **8** etapas.
 >> >
 >> > Esta etapa es **opcional**. Solo se dirige a los clientes que desean personalizar la carpeta raíz y/o activar ciertas funcionalidades disponibles mediante el botón `Configuración avanzada`{.action}.
 >> >
->> > **A excepción de la personalización de la carpeta raíz, todas estas funcionalidades pueden activarse posteriormente una vez que el nombre de dominio se haya añadido a su sitio web.** Para ello, consulte directamente [esta guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Todas estas funcionalidades pueden activarse posteriormente una vez que el nombre de dominio se haya añadido a su sitio web.** Para ello, consulte directamente [esta guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Para personalizar el nombre de la carpeta raíz que se asociará a su sitio web y contendrá sus archivos, indique el nombre deseado en el campo **Carpeta raíz**.
 >>
@@ -207,8 +205,6 @@ Haga clic en las fichas siguientes para ver cada una de las **8** etapas.
 >> > [!warning]
 >> >
 >> > Por defecto, el **carpeta raíz** de su sitio web se crea automáticamente al añadir el sitio web a su alojamiento web. El mismo **carpeta raíz** también se genera en el espacio de almacenamiento de su alojamiento web (accesible mediante FTP, SFTP o SSH, según su oferta).
->> >
->> > **El nombre del carpeta raíz solo se puede personalizar en el momento de añadir el sitio web a su alojamiento web.** Esto significa que, una vez creado y añadido su sitio web en su alojamiento web, actualmente **no se podrá modificar** posteriormente.
 >>
 >> Para personalizar el nombre del carpeta raíz que se asociará a su sitio web y contendrá sus archivos, introduzca el nombre deseado en el campo **carpeta raíz**. Si no desea personalizarlo, deje el campo vacío.
 >>
@@ -220,7 +216,7 @@ Haga clic en las fichas siguientes para ver cada una de las **8** etapas.
 >> >
 >> > A diferencia de los nombres de dominio gestionados directamente desde su área de cliente de OVHcloud, las **opciones avanzadas** no están disponibles directamente al añadir un sitio web con un nombre de dominio o subdominio no gestionado desde su cuenta de OVHcloud.
 >> >
->> > Sin embargo, y a excepción del directorio raíz, **todas estas funcionalidades pueden activarse o modificarse posteriormente una vez que el nombre de dominio o subdominio externo se haya añadido a su sitio web.** Para ello, consulte directamente [este guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > Sin embargo, **todas estas funcionalidades pueden activarse o modificarse posteriormente una vez que el nombre de dominio o subdominio externo se haya añadido a su sitio web.** Para ello, consulte directamente [este guía](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Añadir un sitio web con un nombre de dominio externo a OVHcloud requiere una validación adicional obligatoria. Esto nos permite asegurarnos de que el nombre de dominio externo se añade de forma legítima. Se le mostrará un mensaje que le invitará a modificar la configuración DNS del nombre de dominio.
 >>

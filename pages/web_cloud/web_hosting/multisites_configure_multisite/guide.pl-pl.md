@@ -95,8 +95,6 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >> > Domyślnie **katalog główny** Twojej witryny internetowej jest tworzony automatycznie po dodaniu witryny do hostingu. Ten sam **katalog główny** jest również generowany w przestrzeni dyskowej Twojego hostingu (dostępnej przez FTP, SFTP lub SSH, w zależności od oferty).
 >> >
 >> > Jeśli chcesz dostosować nazwę **katalog główny**, zwłaszcza jeśli zawartość Twojej witryny internetowej znajduje się już w określonym folderze w przestrzeni dyskowej, możesz to zrobić, aktywując przycisk `Konfiguracja zaawansowana`{.action}.
->> >
->> > **Nazwę katalog główny można dostosować tylko w momencie dodawania strony internetowej do hostingu.**  Oznacza to, że po utworzeniu strony internetowej i dodaniu jej do hostingu nie będzie już można jej później **zmodyfikować**.
 >>
 >> Jeśli chcesz dostosować nazwę katalogu głównego lub skorzystać z jednej z **Zaawansowanych opcji**, dostępnych poprzez przycisk `Konfiguracja zaawansowana`{.action}, aktywuj ten przycisk i przejdź do **kroku 6**. W przeciwnym razie przejdź bezpośrednio do **kroku 7**.
 >>
@@ -106,7 +104,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >> >
 >> > Ten krok jest **opcjonalny**. Odnosi się tylko do klientów, którzy chcą dostosować katalog główny i/lub aktywować niektóre funkcje dostępne poprzez przycisk `Konfiguracja zaawansowana`{.action}.
 >> >
->> > **Z wyjątkiem dostosowania katalogu głównego, wszystkie te funkcje można aktywować później, gdy nazwa domeny zostanie dodana do Twojej witryny internetowej.** Aby to zrobić, skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Wszystkie te funkcje można aktywować później, gdy nazwa domeny zostanie dodana do Twojej witryny internetowej.** Aby to zrobić, skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Aby dostosować nazwę katalogu głównego, który będzie powiązany z Twoją witryną internetową i będzie zawierał jej pliki, wprowadź żądaną nazwę w polu **Katalog główny**.
 >>
@@ -207,8 +205,6 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >> > [!warning]
 >> >
 >> > Domyślnie **katalog główny** Twojej witryny internetowej jest tworzony automatycznie po dodaniu witryny do hostingu. Ten sam **katalog główny** jest również generowany w przestrzeni dyskowej Twojego hostingu (dostępnej przez FTP, SFTP lub SSH, w zależności od oferty).
->> >
->> > **Nazwę katalogu głównego można dostosować tylko w momencie dodawania strony internetowej do hostingu.** Oznacza to, że po utworzeniu strony internetowej i dodaniu jej do hostingu nie będzie już można jej **zmodyfikować**.
 >>
 >> Aby dostosować nazwę folderu głównego, który będzie powiązany z Twoją stroną internetową i będzie zawierał jej pliki, wprowadź żądaną nazwę w polu **Katalog główny**. Jeśli nie chcesz jej dostosowywać, pozostaw to pole puste.
 >>
@@ -220,7 +216,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >> >
 >> > W przeciwieństwie do nazw domen zarządzanych bezpośrednio z Panelu klienta OVHcloud, **Zaawansowane opcje** nie są bezpośrednio dostępne podczas dodawania strony internetowej z nazwą domeny lub subdomeną, która nie jest zarządzana z konta OVHcloud.
 >> >
->> > Jednakże, z wyjątkiem katalogu głównego, **wszystkie te funkcje można aktywować lub zmodyfikować później, po dodaniu nazwy domeny lub zewnętrznej subdomeny do strony internetowej.** W tym celu należy zapoznać się bezpośrednio z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > Jednakże, **wszystkie te funkcje można aktywować lub zmodyfikować później, po dodaniu nazwy domeny lub zewnętrznej subdomeny do strony internetowej.** W tym celu należy zapoznać się bezpośrednio z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Dodanie strony internetowej z zewnętrzną nazwą domeny do OVHcloud wymaga dodatkowej obowiązkowej weryfikacji. Pozwala nam to upewnić się, że dodanie zewnętrznej nazwy domeny jest zgodne z prawem. Następnie pojawi się komunikat z prośbą o zmodyfikowanie konfiguracji DNS nazwy domeny.
 >>

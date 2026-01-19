@@ -95,8 +95,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> > Par défaut, le **dossier racine** de votre site web est créé automatiquement lors de l’ajout du site web à votre hébergement web. Ce même **dossier racine** est également généré dans l’espace de stockage de votre hébergement web (accessible en FTP, SFTP ou SSH, selon votre offre).
 >> >
 >> > Si vous souhaitez personnaliser le nom du **dossier racine**, notamment si le contenu de votre site web est déjà présent dans un dossier spécifique de votre espace de stockage, vous pouvez le définir en activant le bouton `Configuration avancée`{.action}.
->> >
->> > **Le nom du dossier racine n’est personnalisable qu’au moment de l’ajout du site web à votre hébergement web.** Cela signifie qu'une fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
 >> Si vous souhaitez personnaliser le nom du dossier racine ou utiliser l'une des **options avancées** disponibles, activez le bouton `Configuration avancée`{.action} et passez à **l'étape 6**. Sinon, poursuivez directement à **l'étape 7**.
 >>
@@ -106,7 +104,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> >
 >> > Cette étape est **facultative**. Elle s'adresse uniquement aux clients souhaitant personnaliser le dossier racine et/ou activer certaines fonctionnalités disponibles via le bouton `Configuration avancée`{.action}.
 >> >
->> > **À l'exception de la personnalisation du dossier racine, toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Toutes ces fonctionnalités peuvent être activées ultérieurement une fois le nom de domaine ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**.
 >>
@@ -207,8 +205,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> > [!warning]
 >> >
 >> > Par défaut, le **dossier racine** de votre site web est créé automatiquement lors de l’ajout du site web à votre hébergement web. Ce même **dossier racine** est également généré dans l’espace de stockage de votre hébergement web (accessible en FTP, SFTP ou SSH, selon votre offre).
->> >
->> > **Le nom du dossier racine n’est personnalisable qu’au moment de l’ajout du site web à votre hébergement web.** Cela signifie qu'une fois votre site web créé et ajouté sur votre hébergement web, vous ne pourrez, à date, **plus le modifier** par la suite.
 >>
 >> Pour personnaliser le nom du dossier racine qui sera associé à votre site web et contiendra ses fichiers, saisissez le nom souhaité dans le champ **dossier racine**. Si vous ne souhaitez pas le personnaliser, laissez le champ vide.
 >>
@@ -220,7 +216,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> >
 >> > Contrairement aux noms de domaine directement gérés depuis votre espace client OVHcloud, les **options avancées** ne sont pas directement disponibles lors de l'ajout d'un site web avec un nom de domaine ou un sous-domaine non géré depuis votre compte OVHcloud.
 >> >
->> > Cependant et à l'exception du dossier racine, **toutes ces fonctionnalités peuvent être activées ou modifiées ultérieurement une fois le nom de domaine ou le sous-domaine externe ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > Cependant, **toutes ces fonctionnalités peuvent être activées ou modifiées ultérieurement une fois le nom de domaine ou le sous-domaine externe ajouté à votre site web.** Pour cela, consultez directement [ce guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> L'ajout d'un site web avec un nom de domaine externe à OVHcloud nécessite une validation supplémentaire obligatoire. Cela nous permet de nous assurer que l'ajout du nom de domaine externe est légitime. Un message vous invitera donc à modifier la configuration DNS du nom de domaine.
 >>

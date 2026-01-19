@@ -95,8 +95,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> > Standardmäßig wird der **Wurzelverzeichnis** Ihrer Website automatisch erstellt, sobald Sie diese zu Ihrem Hosting-Paket hinzufügen. Dieses **Wurzelverzeichnis** wird ebenfalls im Speicherbereich Ihres Hosting-Pakets (über FTP, SFTP oder SSH, je nach Angebot) erstellt.
 >> >
 >> > Wenn Sie den Namen des **Wurzelverzeichnis** anpassen möchten, insbesondere wenn der Inhalt Ihrer Website bereits in einem bestimmten Ordner Ihres Speicherbereichs vorhanden ist, können Sie dies tun, indem Sie die Schaltfläche `Erweiterte Konfiguration`{.action} aktivieren.
->> >
->> > **Der Name des Wurzelverzeichnisses kann nur zum Zeitpunkt des Hinzufügens der Website zu Ihrem Hosting-Paket angepasst werden.** Das bedeutet, dass Sie den Namen des Root-Ordners nach der Erstellung und dem Hinzufügen der Website zu Ihrem Hosting-Paket **nicht mehr ändern können**.
 >>
 >> Wenn Sie den Namen des Root-Ordners anpassen oder eine der **erweiterten Optionen** nutzen möchten, aktivieren Sie die Schaltfläche `Erweiterte Konfiguration`{.action} und wechseln Sie zu **Schritt 6**. Andernfalls können Sie direkt zu **Schritt 7** wechseln.
 >>
@@ -106,7 +104,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> >
 >> > Dieser Schritt ist **optional**. Er richtet sich ausschließlich an Kunden, die den Root-Ordner anpassen oder bestimmte Funktionen über die Schaltfläche `Erweiterte Konfiguration`{.action} aktivieren möchten.
 >> >
->> > **Mit Ausnahme der Anpassung des Wurzelverzeichnisses können alle diese Funktionen später aktiviert werden, sobald der Domainname zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diese Anleitung](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
+>> > **Alle diese Funktionen können später aktiviert werden, sobald der Domainname zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diese Anleitung](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
 >>
 >> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein.
 >>
@@ -208,8 +206,6 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> > [!warning]
 >> >
 >> > Standardmäßig wird das **Wurzelverzeichnis** Ihrer Website automatisch erstellt, sobald Sie diese zu Ihrem Hosting-Paket hinzufügen. Dieses **Wurzelverzeichnis** wird ebenfalls im Speicherbereich Ihres Hosting-Pakets (über FTP, SFTP oder SSH, je nach Angebot) erstellt.
->> >
->> > **Der Name des Wurzelverzeichnisses kann nur zum Zeitpunkt des Hinzufügens der Website zu Ihrem Hosting-Paket angepasst werden.** Das bedeutet, dass Sie den Namen des Root-Ordners nach der Erstellung und dem Hinzufügen der Website zu Ihrem Hosting-Paket **nicht mehr ändern können**.
 >>
 >> Um den Namen des Root-Ordners anzupassen, der mit Ihrer Website verknüpft und deren Dateien enthalten wird, geben Sie den gewünschten Namen im Feld **Wurzelverzeichnis** ein. Wenn Sie dies nicht tun möchten, lassen Sie das Feld leer.
 >>
@@ -221,7 +217,7 @@ Klicken Sie auf die nachfolgenden Tabs, um die **8** Schritte anzuzeigen.
 >> >
 >> > Im Gegensatz zu Domainnamen, die in Ihrem OVHcloud Kundencenter verwaltet werden, sind die **erweiterten Optionen** nicht direkt verfügbar, wenn Sie eine Website mit einem Domainnamen oder einer Subdomain hinzufügen, die nicht in Ihrem OVHcloud Kunden-Account verwaltet wird.
 >> >
->> > Mit Ausnahme des Root-Ordners können **alle diese Funktionen später aktiviert oder geändert werden, sobald der Domainnamen oder die externe Subdomain zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diese Anleitung](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
+>> > **Alle diese Funktionen später aktiviert oder geändert werden, sobald der Domainnamen oder die externe Subdomain zu Ihrer Website hinzugefügt wurde.** Dazu können Sie direkt [diese Anleitung](/pages/web_cloud/web_hosting/multisites_modify_domain) konsultieren.
 >>
 >> Die Hinzufügung einer Website mit einem Domainnamen, der nicht bei OVHcloud ist, erfordert eine obligatorische zusätzliche Validierung. Dies ermöglicht uns, sicherzustellen, dass die Hinzufügung des externen Domainnamens legitim ist. Sie werden daher aufgefordert, die DNS-Konfiguration des Domainnamens zu ändern.
 >>

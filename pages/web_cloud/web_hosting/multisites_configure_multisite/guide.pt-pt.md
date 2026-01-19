@@ -95,8 +95,6 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >> > Por defeito, a **pasta raiz** do seu website é criada automaticamente ao adicionar o website ao seu alojamento web. Esta mesma **pasta raiz** também é gerada no espaço de armazenamento do seu alojamento web (acessível via FTP, SFTP ou SSH, consoante a sua oferta).
 >> >
 >> > Se pretender personalizar o nome da **pasta raiz**, nomeadamente se o conteúdo do seu website já estiver presente numa pasta específica do seu espaço de armazenamento, pode defini-lo ao activar o botão `Configuração avançada`{.action}.
->> >
->> > **O nome da pasta raiz só é personalizável no momento da adição do website ao seu alojamento web.** Isto significa que, uma vez criado e adicionado o website ao seu alojamento web, não será possível, por enquanto, **modificá-lo** posteriormente.
 >>
 >> Se pretender personalizar o nome da pasta raiz ou utilizar uma das **opções avançadas** disponíveis, active o botão `Configuração avançada`{.action} e passe para a **etapa 6**. Caso contrário, continue directamente para a **etapa 7**.
 >>
@@ -106,7 +104,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >> >
 >> > Esta etapa é **opcional**. Destina-se apenas aos clientes que pretendem personalizar a pasta raiz e/ou activar algumas funcionalidades disponíveis através do botão `Configuração avançada`{.action}.
 >> >
->> > **Exceptuando a personalização da pasta raiz, todas estas funcionalidades podem ser activadas posteriormente, uma vez que o nome de domínio foi adicionado ao seu website.** Para isso, consulte directamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **Todas estas funcionalidades podem ser activadas posteriormente, uma vez que o nome de domínio foi adicionado ao seu website.** Para isso, consulte directamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Para personalizar o nome da pasta raiz que será associada ao seu website e que conterá os seus ficheiros, insira o nome pretendido no campo **pasta raiz**.
 >>
@@ -207,8 +205,6 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >> > [!warning]
 >> >
 >> > Por defeito, a **pasta raiz** do seu website é criada automaticamente ao adicionar o website ao seu alojamento web. Esta mesma **pasta raiz** também é gerada no espaço de armazenamento do seu alojamento web (acessível via FTP, SFTP ou SSH, consoante a sua oferta).
->> >
->> > **O nome da pasta raiz só é personalizável no momento da adição do website ao seu alojamento web.** Isto significa que, uma vez criado e adicionado o website ao seu alojamento web, não será possível, por enquanto, **modificá-lo** posteriormente.
 >>
 >> Para personalizar o nome da pasta raiz que será associada ao seu website e que conterá os seus ficheiros, insira o nome pretendido no campo **Pasta raiz**. Se não pretender personalizá-lo, deixe o campo vazio.
 >>
@@ -220,7 +216,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >> >
 >> > Ao contrário dos nomes de domínio geridos diretamente a partir do seu Área de cliente OVHcloud, as **opções avançadas** não estão diretamente disponíveis ao adicionar um site web com um nome de domínio ou subdomínio não gerido a partir do seu conta OVHcloud.
 >> >
->> > No entanto, e com exceção da pasta raiz, **todas estas funcionalidades podem ser ativadas ou modificadas posteriormente, uma vez que o nome de domínio ou subdomínio externo tenha sido adicionado ao seu site web.** Para isso, consulte diretamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > No entanto, **todas estas funcionalidades podem ser ativadas ou modificadas posteriormente, uma vez que o nome de domínio ou subdomínio externo tenha sido adicionado ao seu site web.** Para isso, consulte diretamente [este guia](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> A adição de um site web com um nome de domínio externo à OVHcloud exige uma validação adicional obrigatória. Isso permite-nos assegurar que a adição do nome de domínio externo é legítima. Um aviso solicitar-lhe-á, por isso, a modificação da configuração DNS do nome de domínio.
 >>

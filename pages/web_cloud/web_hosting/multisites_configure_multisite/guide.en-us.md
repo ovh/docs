@@ -95,8 +95,6 @@ Click on the tabs below to view each of the **8** steps.
 >> > By default, the **root folder** of your website is automatically created when you add the website to your web hosting. This same **root folder** is also generated in the storage space of your web hosting (accessible via FTP, SFTP or SSH, depending on your offer).
 >> >
 >> > If you want to customise the name of the **root folder**, especially if the content of your website is already present in a specific folder in your storage space, you can do so by activating the `Advanced configuration`{.action} button.
->> >
->> > **The name of the root folder can only be customised at the time of adding the website to your web hosting.** This means that once your website is created and added to your web hosting, you will no longer be able to **modify it** afterwards.
 >>
 >> If you wish to customise the name of the root folder or use one of the **Advanced options** available, activate the `Advanced configuration`{.action} button and proceed to **Step 6**. Otherwise, continue directly to **Step 7**.
 >>
@@ -106,7 +104,7 @@ Click on the tabs below to view each of the **8** steps.
 >> >
 >> > This step is **optional**. It is intended solely for customers wishing to customise the root folder and/or activate certain features available via the `Advanced configuration`{.action} button.
 >> >
->> > **With the exception of customising the root folder, all these features can be activated later once the domain name has been added to your website.** For this, please refer directly to [this guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > **All these features can be activated later once the domain name has been added to your website.** For this, please refer directly to [this guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> To customise the name of the root folder that will be associated with your website and will contain its files, enter the desired name in the **Root folder** field.
 >>
@@ -207,8 +205,6 @@ Click on the tabs below to view each of the **8** steps.
 >> > [!warning]
 >> >
 >> > By default, the **root folder** of your website is automatically created when you add the website to your web hosting. This same **root folder** is also generated in the storage space of your web hosting (accessible via FTP, SFTP or SSH, depending on your offer).
->> >
->> > **The name of the root folder can only be customised at the time of adding the website to your web hosting.** This means that once your website is created and added to your web hosting, you will no longer be able to **modify it** afterwards.
 >>
 >> To customise the name of the root folder that will be associated with your website and will contain its files, enter the desired name in the **Root folder** field. If you do not wish to customise it, leave the field empty.
 >>
@@ -220,7 +216,7 @@ Click on the tabs below to view each of the **8** steps.
 >> >
 >> > Unlike domain names directly managed from your OVHcloud Control Panel, the **Advanced options** are not directly available when adding a website with a domain name or subdomain not managed from your OVHcloud account.
 >> >
->> > However, with the exception of the root folder, **all these features can be activated or modified later once the domain name or external subdomain has been added to your website.** For this, please refer directly to [this guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
+>> > However, **all these features can be activated or modified later once the domain name or external subdomain has been added to your website.** For this, please refer directly to [this guide](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
 >> Adding a website with an external domain name to OVHcloud requires an additional mandatory validation. This allows us to ensure that the addition of the external domain name is legitimate. A message will then ask you to modify the DNS configuration of the domain name.
 >>
