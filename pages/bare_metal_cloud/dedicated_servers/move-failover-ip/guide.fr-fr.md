@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2026-01-19
+updated: 2026-01-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 >
 
-**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud, et comment déplacer déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud.**
+**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud. Découvrez également comment déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud.**
 
 ## Prérequis
 

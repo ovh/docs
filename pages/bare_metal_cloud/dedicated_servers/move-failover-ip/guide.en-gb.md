@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2026-01-19
+updated: 2026-01-20
 ---
 
 > [!primary]
@@ -27,7 +27,7 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
-**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API, and how to move an Additional IP from a So you Start account to an OVHcloud account**
+**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API. It also explains how to move an Additional IP from a So you Start account to an OVHcloud account.**
 
 ## Requirements
 
