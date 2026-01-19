@@ -252,11 +252,8 @@ root@node_0:/srv/tftp# tree
 - File contents `refind.pxe`:
 
 ```bash
-#!ipxe 
-#
+#!ipxe
 echo Boot to local disk
-
-#set ressources-url http://192.168.1.1
 
 iseq ${platform} efi && goto is_efi_x86_64 || goto end
 
