@@ -1,18 +1,18 @@
 ---
 title: "Backup Agent - So konfigurieren Sie Ihr erstes Backup"
-excerpt: "So konfigurieren Sie Ihr erstes Backup auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
+excerpt: "So konfigurieren Sie Ihr erstes Backup auf Ihrem Bare Metal Server mit dem Backup Agent"
 updated: 2026-01-09
 ---
 
 ## Ziel
 
-Sie haben gerade Ihre Backup Agent Lösung für Ihren Bare Metal Server bestellt. Erfahren Sie, wie Sie Ihre ersten Backups einrichten.
+Sie haben Ihre Backup Agent Lösung für Ihren Bare Metal Server bestellt. Erfahren Sie, wie Sie Ihre ersten Backups einrichten.
 
 ## Voraussetzungen
 
-- Zugriff auf das [OVHcloud Kundencenter](/links/manager). 
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Ein Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder nachträglich über das Menü `Backup-Agent`{.action} im OVHcloud Kundencenter.
-- Sie müssen ein Betriebssystem auf Ihrem Bare Metal Server installiert und konfiguriert haben.
+- Sie haben ein Betriebssystem auf Ihrem Bare Metal Server installiert und konfiguriert.
 
 ## In der praktischen Anwendung
 
@@ -28,7 +28,7 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, folgen Sie den unten
 
 ### Windows
 
-Melden Sie sich an bei dem [OVHcloud Kundencenter](/links/manager), gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
 
 ![Backup Agent Menü](images/01-backup-agent-step15.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Standardmäßig werden Ihre Backups zwischen 22:00 Uhr und 6:00 Uhr ausgelöst, 
 
 ### Linux
 
-Melden Sie sich an bei dem [OVHcloud Kundencenter](/links/manager), gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
 
 ![Backup Agent Menü](images/01-backup-agent-step15.png){.thumbnail}
 

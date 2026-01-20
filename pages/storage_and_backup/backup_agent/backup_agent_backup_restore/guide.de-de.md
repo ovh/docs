@@ -1,17 +1,17 @@
 ---
-title: "Backup Agent - Verwalten Sie Ihre Backups und Wiederherstellungen"
-excerpt: "Erfahren Sie, wie Sie Ihre Daten auf Bare Metal-Servern mit Backup Agent sichern und wiederherstellen können"
+title: "Backup Agent - Verwalten Ihrer Backups und Wiederherstellungen"
+excerpt: "Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können"
 updated: 2026-01-09
 ---
 
 ## Ziel
 
-Erfahren Sie, wie Sie Ihre Daten auf Bare Metal-Servern mit Backup Agent sichern und wiederherstellen können.
+Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können.
 
 ## Voraussetzungen
 
-- Zugriff auf das [OVHcloud Kundencenter](/links/manager).
-- Ein Bare Metal-Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Ein Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
 
 ## In der praktischen Anwendung
 
@@ -74,7 +74,7 @@ Falls erforderlich, können Sie ein manuelles Backup auslösen.
 
 Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage-Punkt.
 
-Um ein manuelles Backup zu erstellen, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal-Server:
+Um ein manuelles Backup zu erstellen, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal Server:
 
 ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Wenn Sie Daten wiederherstellen müssen, stehen Ihnen zwei Optionen zur Verfügu
 
 #### Dateiwiederherstellung-Assistent
 
-Um den Dateiwiederherstellung-Assistenten zu verwenden, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal-Server:
+Um den Dateiwiederherstellung-Assistenten zu verwenden, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal Server:
 
 ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 

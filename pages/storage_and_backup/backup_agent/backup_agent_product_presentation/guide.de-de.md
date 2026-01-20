@@ -1,21 +1,21 @@
 ---
 title: "Backup Agent - Produktübersicht"
-excerpt: "Übersicht der Backup Agent Produktfunktionen und -vorteile"
+excerpt: "Übersicht der Backup Agent Funktionen und Vorteile"
 updated: 2026-01-09
 ---
 
 ## Ziel
 
-Dieses Handbuch hilft Ihnen dabei, zu verstehen, wie der Backup Agent funktioniert und welche Vorteile er für Ihre Bare Metal-Dienste bietet.
+Diese Anleitung hilft Ihnen dabei, zu verstehen, wie der Backup Agent funktioniert und welche Vorteile er für Ihre Bare Metal-Dienste bietet.
 
 ## Produktvorstellung
 
-Das Backup Agent-Produkt ermöglicht es Ihnen, Ihre Bare Metal-Server mit einem Agenten zu sichern, der entsprechend einer von Ihnen ausgewählten Backup-Richtlinie Ihre Serverdaten an einen externen Speicherort sendet.
+Backup Agent ermöglicht es Ihnen, Ihre Bare Metal Server mit einem Agenten zu sichern, der entsprechend einer von Ihnen ausgewählten Backup-Richtlinie Ihre Serverdaten an einen externen Speicherort sendet.
 
-Das Backup Agent-Produkt basiert auf zwei Produkten des Softwareverlegers Veeam:
+Backup Agent basiert auf zwei Veeam Produkten:
 
-- Der Veeam Service Provider Console (VSPC).
-- Der Veeam Agent.
+- Veeam Service Provider Console (VSPC)
+- Veeam Agent
 
 Die VSPC ermöglicht es Ihnen, die Backup-Richtlinien an die darauf gespeicherten Agenten herunterzuladen und Ihnen ermöglicht es, jedem Agenten bei Start des Backups die Speicher- und Anmeldeinformationen zu geben.
 
@@ -27,8 +27,8 @@ Das grundlegende Diagramm sieht wie folgt aus:
 
 Beachten Sie:
 
-- Die VSPC-Infrastruktur wird in den OVHcloud-Datencentern gehostet und sendet keine Daten an Veeam-Server.
-- Die Speicherorte sind [OVHcloud Object Storage](/links/public-cloud/object-storage)-Buckets, die in den OVHcloud-Datencentern gehostet werden.
+- Die VSPC-Infrastruktur wird in OVHcloud Rechenzentren gehostet und sendet keine Daten an Veeam-Server.
+- Die Speicherorte sind [OVHcloud Object Storage](/links/public-cloud/object-storage) Buckets, die in den OVHcloud Rechenzentren gehostet werden.
 
 Es gibt mehrere entscheidende Vorteile dieser Lösung:
 
@@ -38,7 +38,7 @@ Es gibt mehrere entscheidende Vorteile dieser Lösung:
 - Der Zeitraum für automatische Backups liegt zwischen 22 Uhr und 6 Uhr (CET-Zeitzone für Europa - EST-Zeitzone für Kanada und Asien).
 - Verschlüsselung durch OVHcloud des Speichers, der Ihre Backup-Daten hostet.
 - Live-Übertragung der Backup-Daten in den Bucket, ohne eine Kopie auf unserer Infrastruktur zu platzieren.
-- Der Speicherort befindet sich immer an einem anderen Ort als die Lage Ihres Bare Metal-Servers (wenn Sie in Roubaix sind, befindet sich Ihr Speicherort in Gravelines).
+- Der Speicherort befindet sich immer an einem anderen Ort als die Lage Ihres Bare Metal Servers (wenn Sie in Roubaix sind, befindet sich Ihr Speicherort in Gravelines).
 
 ## Weitere Informationen
 

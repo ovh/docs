@@ -14,8 +14,8 @@ The Backup Agent product allows you to back up your Bare Metal servers using an 
 
 The Backup Agent product is based on two products from the Veeam software publisher:
 
-- The Veeam Service Provider Console (VSPC).
-- The Veeam Agent.
+- The Veeam Service Provider Console (VSPC)
+- The Veeam Agent
 
 The VSPC allows you to downgrade the backup policies to the agents stored on them, and allows you to give each agent the storage and credentials information when starting the backup.
 

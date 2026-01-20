@@ -51,7 +51,7 @@ details > :not(summary) {
 
 ## Ziel
 
-Hier ist eine Liste möglicher Probleme, die Sie mit dem Backup Agent-Produkt haben können, und wie Sie sie beheben können.
+Hier ist eine Liste möglicher Probleme, die Sie mit dem Backup Agent haben können, und wie Sie sie beheben können.
 
 ## Voraussetzungen
 
@@ -71,13 +71,13 @@ Sie finden Ihre Agent-Protokolle im Ordner: `C:\ProgramData\Veeam\` oder `/var/l
 
 /// details | Ihr Server kann den Backup Agent auf meinem Server nicht installieren.
 
-Der Backup Agent unterstützt Windows-Distributionen und native Linux-Kerne. Wenn Sie Änderungen an Ihrem Kernel vorgenommen haben, müssen Sie sicherstellen, dass Sie die richtigen Pakete zum Installieren des Agents haben. Sie finden die Liste der erforderlichen Parameter hier: <https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13>.
+Der Backup Agent unterstützt Windows-Distributionen und native Linux-Kernel. Wenn Sie Änderungen an Ihrem Kernel vorgenommen haben, müssen Sie sicherstellen, dass Sie die richtigen Pakete zum Installieren des Agents haben. Sie finden die Liste der erforderlichen Parameter hier: <https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13>.
 
 ///
 
 /// details | Mein Agent kann nicht sichern. Ich erhalte die Fehlermeldung: "Failed to perform Backup. Neither blksnap nor veeamsnap module was found."
 
-Der Agent unterstützt Windows-Distributionen und native Linux-Kerne. Wenn Sie Änderungen an Ihrem Kernel vorgenommen haben, müssen Sie sicherstellen, dass Sie die richtigen Pakete zum Installieren des Agents haben. Sie finden die Liste der erforderlichen Parameter hier: <https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13>
+Der Agent unterstützt Windows und native Linux-Kernel. Wenn Sie Änderungen an Ihrem Kernel vorgenommen haben, müssen Sie sicherstellen, dass Sie die richtigen Pakete zum Installieren des Agents haben. Sie finden die Liste der erforderlichen Parameter hier: <https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13>
 
 Zunächst benötigen Sie die Linux-Kernel-Header, und Sie können dann versuchen, Ihr veeamsnap- oder veeamblksnap- oder blksnap-Paket zu installieren oder neu zu konfigurieren, abhängig von Ihrem Betriebssystem.
 
@@ -96,7 +96,7 @@ Um das Problem zu beheben, können Sie die Größe des Snapshots über die Datei
 diffStorageMinimum = 2097152
 ```
 
-Ersetzen Sie den Wert durch die gewünschte Anzahl von Sektoren, indem Sie zunächst die gewünschte Größe von Gigabytes in Bytes umrechnen und anschließend diese Anzahl von Bytes durch 512 teilen.<br>
+Ersetzen Sie den Wert durch die gewünschte Anzahl von Sektoren, indem Sie zunächst die gewünschte Größe von Gigabytes in Bytes umrechnen und anschließend diese Anzahl von Bytes durch 512 teilen.  
 Zum Beispiel: Bei einer Größe von 3 GB (3.221.225.472 Bytes) ist der einzugebende Wert 6.291.456 (3.221.225.472 / 512).
 
 Starten Sie anschließend den veeamservice-Dienst neu.
@@ -133,7 +133,7 @@ Passwörter können über den Link "Passwort vergessen?" geändert werden, der i
 
 /// details | Ich habe meinen Server erneut installiert. Wie installiere ich den Backup Agent erneut?
 
-Sie müssen Ihren Agent im Agents-Bereich Ihres vspc-tenants löschen und anschließend den Agent auf Ihrem neuen Betriebssystem herunterladen und installieren.
+Sie müssen Ihren Agent im Agent-Bereich Ihres vspc-tenants löschen und anschließend den Agent auf Ihrem neuen Betriebssystem herunterladen und installieren.
 
 ///
 
