@@ -88,7 +88,7 @@ Den Ergebnissen zufolge sind derzeit zwei Software-RAID-Geräte konfiguriert, **
 
 [UU] bedeutet, dass alle Disks normal funktionieren. Ein `_` würde stattdessen eine defekte Disk anzeigen.
 
-In anderen Fällen würden Sie die folgenden Ergebnisse erhalten:
+In anderen Fällen erhielten Sie die folgenden Ergebnisse:
 
 ```sh
 Personalities : [raid1]
@@ -236,7 +236,7 @@ In unserem Beispiel haben wir:
 
 <a name="efisystempartition"></a>
 
-/// dtails | **Diesen Abschnitt aufklappen**
+/// details | **Diesen Abschnitt aufklappen**
 
 ### Erklärung der EFI-Systempartition (ESP)
 
@@ -246,7 +246,7 @@ Eine EFI-Systempartition ist eine Partition, die die Bootloader, Bootmanager ode
 
 ***Wird die EFI-Systempartition in einem RAID gespiegelt?***
 
-Ab Dezember 2025 spiegeln nur die folgenden Betriebssystemversionen die EFI-Systempartition in RAID für Neuinstallationen oder Neuinstallationen:
+Seit Dezember 2025 spiegeln nur die folgenden Betriebssystemversionen die EFI-Systempartition in RAID für Neuinstallationen oder Neuinstallationen:
 
 - Debian 13
 - Proxmox 9
@@ -315,7 +315,7 @@ Im Allgemeinen ändert sich der Inhalt dieser Partition nicht wesentlich, er sol
 
 Wenn Ihre EFI-Partition jedoch nicht gespiegelt ist, empfehlen wir Ihnen, ein automatisches oder manuelles Skript auszuführen, um alle ESPs zu synchronisieren, sodass sie alle die gleichen aktuellen Dateien enthalten. Auf diese Weise kann der Server bei einem Ausfall des Laufwerks, auf dem diese Partition gemountet ist, auf dem ESP eines der anderen Laufwerke neu gestartet werden.
 
-***Was passiert, wenn die primären estplatte (mit der gemounteten EFI-Systempartition) ausfällt?***
+***Was passiert, wenn die primäre Disk (mit der gemounteten EFI-Systempartition) ausfällt?***
 
 Wenn Ihre ESP nicht gespiegelt ist, kann Folgendes passieren:
 
@@ -345,7 +345,7 @@ In einigen Fällen kann das Booten von einem veralteten ESP fehlschlagen. Beispi
 Wenn Ihr ESP nicht gespiegelt ist, beachten Sie Folgendes:
 
 > [!primary]
-> Bitte beachten Sie, dass der Vorgang je nach Betriebssystem unterschiedlich sein kann. Ubuntu kann beispielsweise mehrere EFI-Systempartitionen bei jedem GRUB-Update synchronisieren, ist jedoch das einzige Betriebssystem, das dies tut. Wir empfehlen Ihnen, die offizielle Dokumentation Ihres Betriebssystems zu konsultieren, um zu erfahren, wie Sie ESPs verwalten können.
+> Der Vorgang kann je nach Betriebssystem unterschiedlich sein. Ubuntu kann beispielsweise mehrere EFI-Systempartitionen bei jedem GRUB-Update synchronisieren, ist jedoch das einzige Betriebssystem, das dies tut. Wir empfehlen Ihnen, die offizielle Dokumentation Ihres Betriebssystems zu konsultieren, um zu erfahren, wie Sie ESPs verwalten können.
 >
 > In dieser Anleitung wird das Betriebssystem Debian verwendet.
 
@@ -436,7 +436,7 @@ Nachdem wir nun über die erforderlichen Informationen verfügen, können wir ei
 
 Die bevorzugte Methode hierzu ist die Nutzung des OVHcloud Rescue-Modus.
 
-Starten Sie den Server im Rettungsmodus neu und melden Sie sich mit den bereitgestellten Anmeldedaten an.
+Starten Sie den Server im Rescue-Modus neu und melden Sie sich mit den bereitgestellten Anmeldedaten an.
 
 Um eine Disk aus dem RAID zu entfernen, markieren Sie sie zunächst als **Failed** (Ausgefallen) und entfernen Sie dann ihre Partitionen aus den RAID-Arrays.
 
@@ -724,7 +724,7 @@ Um die EFI-Systempartition auf der neuen Disk wiederherzustellen, müssen wir **
 Wir gehen davon aus, dass beide Partitionen synchronisiert wurden und aktuelle Dateien enthalten.
 
 > [!warning]
-> Wenn ein größeres System-Update wie Kernel oder Grub durchgeführt wurde und beide Partitionen nicht synchronisiert wurden, lesen Sie bitte [diesen Abschnitt](#efiraidgrub), sobald Sie die neue EFI-Systempartition erstellt haben.
+> Wenn ein größeres System-Update wie Kernel oder Grub durchgeführt wurde und beide Partitionen nicht synchronisiert wurden, lesen Sie [diesen Abschnitt](#efiraidgrub), sobald Sie die neue EFI-Systempartition erstellt haben.
 >
 
 Formatiere zuerst die Partition:
@@ -747,7 +747,7 @@ Beginnen Sie damit, zwei Ordner zu erstellen, in diesem Beispiel mit den Namen "
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkdir old new
 ```
 
-Mounten Sie **nvme1n1p1** im Ordner „old” und **nvme0n1p1** im Ordner "new", um die Unterscheidung zu treffen:
+Mounten Sie **nvme1n1p1** im Ordner "old” und **nvme0n1p1** im Ordner "new", um die Unterscheidung zu treffen:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme1n1p1 old
@@ -824,7 +824,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 #### RAID mit nicht synchronisierten ESPs nach größeren Systemaktualisierungen neu erstellen (GRUB) <a name="efiraidgrub"></a>
 
-/// details | **Diesen Abschnitt ausklappen**
+/// details | **Diesen Abschnitt aufklappen**
 
 > [!Warning]
 > Befolgen Sie die Schritte in diesem Abschnitt nur, wenn sie auf Ihren Fall zutreffen.
@@ -832,7 +832,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 Wenn die primäre Disk ausgetauscht wird, während sie EFI-Systempartitionen enthält, die nach größeren Systemaktualisierungen, die GRUB verändert haben, nicht synchronisiert wurden, kann das Booten von einer der sekundären Disks mit einer veralteten ESP fehlschlagen. 
 
-In diesem Fall müssen Sie neben dem Wiederherstellen des RAID und dem Neuerstellen der EFI-Systempartition im Rettungsmodus auch GRUB darauf neu installieren.
+In diesem Fall müssen Sie neben dem Wiederherstellen des RAID und dem Neuerstellen der EFI-Systempartition im Rescue-Modus auch GRUB darauf neu installieren.
 
 Sobald die ESP erstellt wurde (wie oben beschrieben) und das System beide Partitionen erkennt, erstellen Sie noch in der `choot`-Umgebung den Ordner /boot/efi, um die neue EFI-Systempartition **nvme0n1p1** zu mounten:
 
@@ -865,9 +865,9 @@ Lesen Sie anschließend [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 <a name="nonmirrorednormalmode"></a>
 
-#### Wiederherstellung des RAID nach Austausch der primären Disk (normalen Modus)
+#### Wiederherstellung des RAID nach Austausch der primären Disk (normaler Modus)
 
-/// details | **Diesen Abschnitt ausklappen**
+/// details | **Diesen Abschnitt aufklappen**
 
 Wenn Ihr Server nach dem Austausch der primären Disk im normalen Modus starten kann, führen Sie die folgenden Schritte aus, um das RAID neu aufzubauen.
 
@@ -965,7 +965,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 /// details | **Diesen Abschnitt ausklappen**
 
 > [!tabs]
-> **Im Rettungsmodus**
+> **Im Rescue-Modus**
 >>
 >> Der Wiederaufbau des RAID mit gespiegelten Partitionen ist einfacher: Kopieren Sie einfach die Daten von der fehlerfreien Disk auf die neue Disk und erstellen Sie die [SWAP]-Partition neu (falls zutreffend).
 >>
@@ -1165,7 +1165,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 /// Details | **Diesen Abschnitt aufklappen**
 
 > [!tabs]
-> **Verwendung des Rettungsmodus**
+> **Verwendung des Rescue-Modus**
 >>
 >> Erstellen Sie außerhalb der `chroot`-Umgebung die [SWAP]-Partition **nvme0n1p4** neu und fügen Sie die Bezeichnung `swap-nvmenxxx` hinzu:
 >>
