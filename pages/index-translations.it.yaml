@@ -90,7 +90,6 @@ hosted-private-cloud-managed-vmware-security-secnumcloud: Conformità e SecNumCl
 hosted-private-cloud-managed-vmware-troubleshooting: Diagnosi
 hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Manutenzione e aggiornamenti
 hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitoraggio e log
-hosted-private-cloud-managed-vmware-troubleshooting-errors: Gestione errori
 hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitoraggio della conformità
 hosted-private-cloud-managed-vmware-additional-resources: Risorse aggiuntive
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
@@ -347,7 +346,7 @@ web-cloud-domains-dns-configuration-dns-zone: Zona DNS
 web-cloud-domains-dns-security: Sicurezza
 web-cloud-domains-dns-tutorials: Tutorials
 web-cloud-domains-domain-names: Domini
-web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Modifica del proprietario di un dominio (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Gestione dei contatti dei domini
 web-cloud-domains-domain-names-getting-started: Per iniziare
 web-cloud-domains-domain-names-configuration: Configurazione
 web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Trasferimento in entrata verso OVHcloud

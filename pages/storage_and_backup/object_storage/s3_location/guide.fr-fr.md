@@ -69,14 +69,6 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>région 3-AZ</td>
         <td>Standard, Infrequent Access</td>
     </tr>
-    </tr>
-        <td>Milan</td>
-        <td>eu-south-mil</td>
-        <td>HTTPS</td>
-        <td>4</td>
-        <td>région 3-AZ</td>
-        <td>Standard uniquement</td>
-    </tr>
     <tr>
         <td>Francfort</td>
         <td>de</td>

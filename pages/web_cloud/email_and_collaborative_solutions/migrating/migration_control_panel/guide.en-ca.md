@@ -2,7 +2,7 @@
 title: 'Migrating an MX Plan email address to an Exchange account'
 excerpt: 'Find out how to migrate an MX Plan email address to an Exchange account'
 hidden: true
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -106,7 +106,7 @@ Finally, confirm the password for the source email address (the one you want to 
 >
 >Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that the word `OK` is in the `Status` column.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > To find out more about adding a domain name, follow [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 

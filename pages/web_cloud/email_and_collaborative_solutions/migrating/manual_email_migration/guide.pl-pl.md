@@ -1,7 +1,7 @@
 ---
 title: Ręczna migracja Twojego konta e-mail
 excerpt: Dowiedz się, jak ręcznie przenieść Twoje konto e-mail na inny adres e-mail
-updated: 2025-04-28
+updated: 2026-01-16
 ---
  
 
@@ -20,7 +20,7 @@ updated: 2025-04-28
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
+- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](/links/web/hosting))
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 

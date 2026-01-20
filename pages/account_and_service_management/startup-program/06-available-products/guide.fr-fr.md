@@ -1,7 +1,7 @@
 ---
 title: "Quels produits sont disponibles avec les crédits du Startup Program ?"
 excerpt: "Découvrez quelles solutions OVHcloud sont éligibles avec les crédits du Startup Program pour soutenir votre startup"
-updated: 2025-12-11
+updated: 2026-01-15
 ---
 
 ## Objectif
@@ -15,7 +15,6 @@ Dans le cadre du Startup Program d'OVHcloud, les crédits offerts permettent aux
 - **Solutions éligibles** : Les crédits du Startup Program sont principalement destinés aux solutions d’infrastructure serveur, tels que le Public Cloud et le Private Cloud.
 - **Solutions GPU éligibles** : Certaines solutions Public Cloud utilisant des GPU sont éligibles, notamment les solutions AI & Machine Learning et les instances GPU v100/v100s et RTX 5000.
 - **Solutions non-éligibles** : Les solutions Web et Télécom, ainsi que certaines solutions d’infrastructure spécifiques, ne sont pas couvertes par les crédits.
-- **Solutions GPU non-éligibles** : Certaines instances Public Cloud et solutions IA utilisant des GPU (A100, H100, H200, L4, L40S) ne sont pas éligibles avec les crédits.
 - **Gestion des erreurs de commande** : Si des solutions non-éligibles sont commandées par erreur, elles devront être arrêtées ou transférées vers un autre compte client ne faisant pas partie du Startup Program.
 
 ## En pratique

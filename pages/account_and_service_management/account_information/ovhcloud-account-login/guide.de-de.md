@@ -21,7 +21,7 @@ Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencen
 
 Gehen Sie auf die [Login-Seite von OVHcloud](/links/manager) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
-![Kundenkennung](images/log-in.png){.thumbnail}
+![Kundenkennung](images/account-log-in-EN.png){.thumbnail}
 
 Wenn Sie die [Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) aktiviert haben, bestätigen Sie den Login mit der gewählten Methode (SMS, Mobile App, U2F-Schlüssel).
 

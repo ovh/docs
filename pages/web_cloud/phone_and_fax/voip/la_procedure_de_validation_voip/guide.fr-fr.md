@@ -1,7 +1,7 @@
 ---
 title: "Valider votre identité pour l'utilisation des services VoIP"
 excerpt: 'Découvrez comment valider votre compte OVHcloud suite à votre première commande de services VoIP'
-updated: 2026-01-13
+updated: 2026-01-20
 ---
 
 > [!warning]
@@ -9,7 +9,7 @@ updated: 2026-01-13
 > Cette procédure n'est pas nécessaire si :
 >
 > - vous activez des services VoIP inclus avec une de [nos offres d'accès internet](/links/telecom/offre-internet). Dans ce cadre, consultez [cette procédure](/pages/web_cloud/internet/internet_access/comment_activer_mes_lignes_telephoniques_offre_adsl_vdsl).
-> - votre première commande a été payée avec [une carte bancaire déjà enregistrée sur votre compte OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods). Dans ce cas, la vérification bancaire **3D Secure** permet une validation automatique du compte OVHcloud pour les services VoIP.
+> - votre première commande VoIP a été payée avec [une carte bancaire déjà enregistrée en tant que moyen de paiement par défaut sur votre compte OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods). Dans ce cas, la vérification bancaire **3D Secure** permet une validation automatique du compte OVHcloud pour les services VoIP.
 
 ## Objectif
 

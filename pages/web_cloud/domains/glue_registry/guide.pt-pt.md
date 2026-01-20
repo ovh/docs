@@ -224,8 +224,8 @@ Se necessário, consulte as instruções descritas na nossa documentação «[Ed
 
 Deve modificar os servidores DNS do seu domínio substituindo os servidores DNS antigos pelos servidores DNS personalizados criados anteriormente.
 
-Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em ‘Nomes de domínio‘ {.action} e selecione *o nome do domínio para o qual pretende personalizar os servidores DNS*.
- 
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione *o nome do domínio para o qual pretende personalizar os servidores DNS*.
+
 Aceda ao separador `Servidores DNS`{.action} e clique em `Modificar os servidores DNS`{.action}. Substitua os seus servidores DNS atuais pelos que pretende utilizar como servidores DNS personalizados.
 
 > [!warning]

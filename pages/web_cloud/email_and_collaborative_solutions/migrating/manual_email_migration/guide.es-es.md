@@ -1,9 +1,8 @@
 ---
 title: Migrar manualmente una dirección de correo electrónico
 excerpt: Cómo migrar manualmente su dirección de correo a otra dirección de correo
-updated: 2025-04-28
+updated: 2026-01-16
 ---
- 
 
 ## Objetivo
 
@@ -20,7 +19,7 @@ updated: 2025-04-28
 
 ## Requisitos
 
-- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
+- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico que quiera migrar (las cuentas de origen).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico de OVHcloud que recibirán los datos que se migran (las cuentas de destino).
 

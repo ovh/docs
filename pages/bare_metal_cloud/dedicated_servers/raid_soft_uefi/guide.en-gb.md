@@ -63,11 +63,7 @@ When you purchase a new server, you may feel the need to perform a series of tes
     - [Rebuilding RAID with unsynchronised ESPs after major system updates (GRUB)](#efiraidgrub)
     - [Rebuilding the RAID after the primary disk is replaced (normal mode)](#nonmirrorednormalmode)
 - [Rebuilding the RAID (with mirrored ESP)](#raidrebuildmirrored)
-    - [In rescue mode](#mirrored-esp-rescue)
-    - [In normal mode](#mirrored-esp-normal)
 - [Adding the label to the SWAP partition (if applicable)](#swap-partition)
-    - [Using rescue mode](#swap-rescue)
-    - [Using normal mode](#swap-normal)
 
 <a name="basicinformation"></a>
 
@@ -616,9 +612,7 @@ We can now proceed with the disk replacement and RAID rebuild.
 > If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#mirrored-esp-normal) if your EFI system partition is mirrored.
 >
 
-<a name="nonmirroredrescuemode"></a>
-
-#### Rebuilding the RAID after the primary disk is replaced (rescue mode)
+#### Rebuilding the RAID after the primary disk is replaced (rescue mode) <a name="nonmirroredrescuemode"></a>
 
 Once the disk has been replaced, copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
 
@@ -826,11 +820,9 @@ Once done, exit the `chroot` environment:
 root@rescue12-customer-eu:/# exit
 ```
 
-Next, consult [this section](#swap-rescue) to recreate the SWAP partition (if applicable).
+Next, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 
-<a name="efiraidgrub"></a>
-
-#### Rebuilding RAID with unsynchronised ESPs after major system updates (GRUB)
+#### Rebuilding RAID with unsynchronised ESPs after major system updates (GRUB) <a name="efiraidgrub"></a>
 
 /// details | **Unfold this section**
 
@@ -867,7 +859,7 @@ Once done, exit the `chroot` environment:
 root@rescue12-customer-eu:/# exit
 ```
 
-Next, consult [this section](#swap-rescue) to recreate the SWAP partition (if applicable).
+Next, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 
 ///
 
@@ -962,7 +954,7 @@ Once done, synchronize both partitions using the script provided in this guide.
 /dev/nvme0n1p1: SEC_TYPE="msdos" LABEL_FATBOOT="EFI_SYSPART" LABEL="EFI_SYSPART" UUID="521F-300B" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="primary" PARTUUID="02bf2b2d-7ada-4461-ba50-07683519f65d"
 ```
 
-Next, consult [this section](#swap-normal) to recreate the SWAP partition (if applicable).
+Next, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 
 ///
 
@@ -972,197 +964,199 @@ Next, consult [this section](#swap-normal) to recreate the SWAP partition (if ap
 
 /// details | **Unfold this section**
 
-#### In rescue mode <a name="mirrored-esp-rescue"></a>
-
-Rebuilding the RAID with all partitions mirrored is easier; simply copy the data from the healthy disk to the new disk and recreate the [SWAP] partition (if applicable).
-
-From the illustrations above, the RAID status should like this after a disk failure:
-
-```sh
-Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
-md3 : active raid1 nvme1n1p3[2] nvme0n1p3[0](F)
-      497875968 blocks super 1.2 [2/1] [_U]
-      bitmap: 0/4 pages [0KB], 65536KB chunk
-
-md1 : active raid1 nvme0n1p1[2](F) nvme1n1p1[1]
-      523200 blocks [2/1] [_U]
-
-md2 : active raid1 nvme1n1p2[2] nvme0n1p2[0](F)
-      1046528 blocks super 1.2 [2/1] [_U]
-
-unused devices: <none>
-```
-
-After the disk is replaced, the first step is to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
-
-**For GPT partitions**
-
-The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
-
-In our example:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvme0n1 /dev/nvme1n1
-```
-
-Run `lsblk` to make sure the partition tables have been properly copied:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk
-
-NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
-nvme1n1     259:0    0 476.9G  0 disk
-├─nvme1n1p1 259:1    0   511M  0 part
-│ └─md1       9:1    0  510.9M 0 raid1
-├─nvme1n1p2 259:2    0     1G  0 part
-│ └─md2       9:2    0  1022M  0 raid1
-├─nvme1n1p3 259:3    0 474.9G  0 part
-│ └─md3       9:3    0 474.8G  0 raid1
-└─nvme1n1p4 259:4    0   512M  0 part
-nvme0n1     259:5    0 476.9G  0 disk
-├─nvme0n1p1 259:10   0   511M  0 part
-├─nvme0n1p2 259:11   0     1G  0 part
-├─nvme0n1p3 259:12   0 474.9G  0 part
-└─nvme0n1p4 259:13   0   512M  0 part
-```
-
-Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
-```
-
-If you receive the message below:
-
-```console
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-```
-
-Simply run the `partprobe` command.
-
-We can now rebuild the RAID array. The following code snippet shows how to add the new partitions (nvme0n1p1, nvme0n1p2 and nvme0n1p3) back in the RAID array.
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md1 /dev/nvme0n1p1
-# mdadm: added /dev/nvme0n1p1
-
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md2 /dev/nvme0n1p2
-# mdadm: added /dev/nvme0n1p2
-
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md3 /dev/nvme0n1p3
-# mdadm: added /dev/nvme0n1p3
-```
-
-To check the rebuild process:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
-Personalities : [raid1]
-md3 : active raid1 nvme0n1p3[2] nvme1n1p3[0]
-      497875968 blocks super 1.2 [2/1] [U_]
-      [=========>...........]  recovery = 47.0% (234461184/497875968) finish=21.
-      bitmap: 4/4 pages [16KB], 65536KB chunk
-
-md1 : active raid1 nvme0n1p1[1] nvme1n1p1[0]
-      523200 blocks [2/2] [UU]
-
-md2 : active raid1 nvme0n1p2[2] nvme1n1p2[0]
-      1046528 blocks super 1.2 [2/2] [UU]
-```
-
-Once the rebuild is complete, run the following command to make sure that the partitions have been properly added to the RAID:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
-NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-nvme1n1
-├─nvme1n1p1 linux_raid_member 0.90.0                          2043a004-0743-7bc6-37f2-12c43604630c
-│ └─md1     vfat              FAT16            EFI_SYSPART    D28D-6A4F
-├─nvme1n1p2 linux_raid_member 1.2              md2            0772556e-3f45-a551-ab32-c96e502dab22
-│ └─md2     xfs                                boot           0b22431a-7020-427c-aa31-324feec6ea84
-├─nvme1n1p3 linux_raid_member 1.2              md3            071571aa-1b36-9ef7-15b3-190ffdcf3a8b
-│ └─md3     xfs                                root           3a2cb95b-c142-4d72-835b-52fcce99a0c5
-├─nvme1n1p4 swap              1                swap-nvme1n1p4 0d502997-853d-4986-b40a-407d5f187e82
-└─nvme1n1p5
-nvme0n1
-├─nvme0n1p1 linux_raid_member 0.90.0                          2043a004-0743-7bc6-37f2-12c43604630c
-│ └─md1     vfat              FAT16            EFI_SYSPART    D28D-6A4F
-├─nvme0n1p2 linux_raid_member 1.2              md2            0772556e-3f45-a551-ab32-c96e502dab22
-│ └─md2     xfs                                boot           0b22431a-7020-427c-aa31-324feec6ea84
-├─nvme0n1p3 linux_raid_member 1.2              md3            071571aa-1b36-9ef7-15b3-190ffdcf3a8b
-│ └─md3     xfs                                root           3a2cb95b-c142-4d72-835b-52fcce99a0c5
-├─nvme0n1p4
-└─nvme0n1p5 iso9660           Joliet Extension config-2       2025-12-16-15-40-00-00
-```
-
-Once done, consult [this section](#swap-rescue) to reacreate the SWAP partition (if applicable).
-
-#### In normal mode <a name="mirrored-esp-normal"></a>
-
-From the illustrations above, the RAID status should look like this after a disk failure:
-
-```sh
-Personalities : [raid1]
-md3 : active raid1 nvme0n1p3[1](F) nvme1n1p3[0]
-      497875968 blocks super 1.2 [2/1] [U_]
-      bitmap: 4/4 pages [16KB], 65536KB chunk
-
-md1 : active raid1 nvme0n1p1[2](F) nvme1n1p1[0]
-      523200 blocks [2/1] [U_]
-
-md2 : active raid1 nvme1n1p2[0] nvme0n1p2[1](F)
-      1046528 blocks super 1.2 [2/1] [U_]
-```
-
-Once the disk is replaced, copy the partition table from the healthy disk (in this example, `nvme1n1`) to the new disk (`nvme0n1`).
-
-**For GPT partitions**
-
-```sh
-sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
-```
-
-The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
-
-Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
-
-```sh
-sudo sgdisk -G /dev/nvme0n1
-```
-
-If you receive the following message:
-
-```console
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you
-run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-```
-
-Simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
-
-Next, add the partitions to the RAID:
-
-```sh
-[user@server_ip ~]# sudo mdadm --add /dev/md1 /dev/nvme0n1p1
-# mdadm: added /dev/nvme0n1p1
-
-[user@server_ip ~]# sudo mdadm --add /dev/md2 /dev/nvme0n1p2
-# mdadm: added /dev/nvme0n1p2
-
-[user@server_ip ~]# sudo mdadm --add /dev/md3 /dev/nvme0n1p3
-# mdadm: added /dev/nvme0n1p3
-```
-
-Use the following command to monitor the RAID rebuild:
-
-```sh
-[user@server_ip ~]# cat /proc/mdstat
-```
-
-Once the raid rebuild is complete, consult [this section](#swap-normal) to recreate the SWAP partition (if applicable).
+> [!tabs]
+> **In rescue mode**
+>>
+>> Rebuilding the RAID with all partitions mirrored is easier; simply copy the data from the healthy disk to the new disk and recreate the [SWAP] partition (if applicable).
+>>
+>> From the illustrations above, the RAID status should like this after a disk failure:
+>>
+>> ```sh
+>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
+>> md3 : active raid1 nvme1n1p3[2] nvme0n1p3[0](F)
+>>      497875968 blocks super 1.2 [2/1] [_U]
+>>      bitmap: 0/4 pages [0KB], 65536KB chunk
+>>
+>> md1 : active raid1 nvme0n1p1[2](F) nvme1n1p1[1]
+>>      523200 blocks [2/1] [_U]
+>>
+>> md2 : active raid1 nvme1n1p2[2] nvme0n1p2[0](F)
+>>      1046528 blocks super 1.2 [2/1] [_U]
+>>
+>> unused devices: <none>
+>> ```
+>>
+>> After the disk is replaced, the first step is to copy the partition table from the healthy disk (in this example, nvme1n1) to the new one (nvme0n1).
+>>
+>> **For GPT partitions**
+>>
+>> The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
+>>
+>> In our example:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/nvme0n1 /dev/nvme1n1
+>> ```
+>>
+>> Run `lsblk` to make sure the partition tables have been properly copied:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk
+>>
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+>> nvme1n1     259:0    0 476.9G  0 disk
+>> ├─nvme1n1p1 259:1    0   511M  0 part
+>> │ └─md1       9:1    0  510.9M 0 raid1
+>> ├─nvme1n1p2 259:2    0     1G  0 part
+>> │ └─md2       9:2    0  1022M  0 raid1
+>> ├─nvme1n1p3 259:3    0 474.9G  0 part
+>> │ └─md3       9:3    0 474.8G  0 raid1
+>> └─nvme1n1p4 259:4    0   512M  0 part
+>> nvme0n1     259:5    0 476.9G  0 disk
+>> ├─nvme0n1p1 259:10   0   511M  0 part
+>> ├─nvme0n1p2 259:11   0     1G  0 part
+>> ├─nvme0n1p3 259:12   0 474.9G  0 part
+>> └─nvme0n1p4 259:13   0   512M  0 part
+>> ```
+>>
+>> Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
+>> ```
+>>
+>> If you receive the message below:
+>>
+>> ```console
+>> Warning: The kernel is still using the old partition table.
+>> The new table will be used at the next reboot or after you run partprobe(8) or kpartx(8)
+>> The operation has completed successfully.
+>> ```
+>>
+>> Simply run the `partprobe` command.
+>>
+>> We can now rebuild the RAID array. The following code snippet shows how to add the new partitions (nvme0n1p1, nvme0n1p2 and nvme0n1p3) back in the RAID array.
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md1 /dev/nvme0n1p1
+>> # mdadm: added /dev/nvme0n1p1
+>>
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md2 /dev/nvme0n1p2
+>> # mdadm: added /dev/nvme0n1p2
+>>
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md3 /dev/nvme0n1p3
+>> # mdadm: added /dev/nvme0n1p3
+>> ```
+>>
+>> To check the rebuild process:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
+>> Personalities : [raid1]
+>> md3 : active raid1 nvme0n1p3[2] nvme1n1p3[0]
+>>       497875968 blocks super 1.2 [2/1] [U_]
+>>       [=========>...........]  recovery = 47.0% (234461184/497875968) finish=21.
+>>       bitmap: 4/4 pages [16KB], 65536KB chunk
+>>
+>> md1 : active raid1 nvme0n1p1[1] nvme1n1p1[0]
+>>      523200 blocks [2/2] [UU]
+>>
+>> md2 : active raid1 nvme0n1p2[2] nvme1n1p2[0]
+>>      1046528 blocks super 1.2 [2/2] [UU]
+>> ```
+>>
+>> Once the rebuild is complete, run the following command to make sure that the partitions have been properly added to the RAID:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
+>> NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+>> nvme1n1
+>> ├─nvme1n1p1 linux_raid_member 0.90.0                          2043a004-0743-7bc6-37f2-12c43604630c
+>> │ └─md1     vfat              FAT16            EFI_SYSPART    D28D-6A4F
+>> ├─nvme1n1p2 linux_raid_member 1.2              md2            0772556e-3f45-a551-ab32-c96e502dab22
+>> │ └─md2     xfs                                boot           0b22431a-7020-427c-aa31-324feec6ea84
+>> ├─nvme1n1p3 linux_raid_member 1.2              md3            071571aa-1b36-9ef7-15b3-190ffdcf3a8b
+>> │ └─md3     xfs                                root           3a2cb95b-c142-4d72-835b-52fcce99a0c5
+>> ├─nvme1n1p4 swap              1                swap-nvme1n1p4 0d502997-853d-4986-b40a-407d5f187e82
+>> └─nvme1n1p5
+>> nvme0n1
+>> ├─nvme0n1p1 linux_raid_member 0.90.0                          2043a004-0743-7bc6-37f2-12c43604630c
+>> │ └─md1     vfat              FAT16            EFI_SYSPART    D28D-6A4F
+>> ├─nvme0n1p2 linux_raid_member 1.2              md2            0772556e-3f45-a551-ab32-c96e502dab22
+>> │ └─md2     xfs                                boot           0b22431a-7020-427c-aa31-324feec6ea84
+>> ├─nvme0n1p3 linux_raid_member 1.2              md3            071571aa-1b36-9ef7-15b3-190ffdcf3a8b
+>> │ └─md3     xfs                                root           3a2cb95b-c142-4d72-835b-52fcce99a0c5
+>> ├─nvme0n1p4
+>> └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-12-16-15-40-00-00
+>> ```
+>>
+>> Once done, consult [this section](#swap-partition) to reacreate the SWAP partition (if applicable).
+>>
+> **In normal mode**
+>>
+>> From the illustrations above, the RAID status should look like this after a disk failure:
+>>
+>> ```sh
+>> Personalities : [raid1]
+>> md3 : active raid1 nvme0n1p3[1](F) nvme1n1p3[0]
+>>       497875968 blocks super 1.2 [2/1] [U_]
+>>       bitmap: 4/4 pages [16KB], 65536KB chunk
+>>
+>> md1 : active raid1 nvme0n1p1[2](F) nvme1n1p1[0]
+>>       523200 blocks [2/1] [U_]
+>>
+>> md2 : active raid1 nvme1n1p2[0] nvme0n1p2[1](F)
+>>       1046528 blocks super 1.2 [2/1] [U_]
+>> ```
+>>
+>> Once the disk is replaced, copy the partition table from the healthy disk (in this example, `nvme1n1`) to the new disk (`nvme0n1`).
+>>
+>> **For GPT partitions**
+>>
+>> ```sh
+>> sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
+>> ```
+>>
+>> The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
+>>
+>> Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+>>
+>> ```sh
+>> sudo sgdisk -G /dev/nvme0n1
+>> ```
+>>
+>> If you receive the following message:
+>>
+>> ```console
+>> Warning: The kernel is still using the old partition table.
+>> The new table will be used at the next reboot or after you
+>> run partprobe(8) or kpartx(8)
+>> The operation has completed successfully.
+>> ```
+>>
+>> Simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+>>
+>> Next, add the partitions to the RAID:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo mdadm --add /dev/md1 /dev/nvme0n1p1
+>> # mdadm: added /dev/nvme0n1p1
+>>
+>> [user@server_ip ~]# sudo mdadm --add /dev/md2 /dev/nvme0n1p2
+>> # mdadm: added /dev/nvme0n1p2
+>>
+>> [user@server_ip ~]# sudo mdadm --add /dev/md3 /dev/nvme0n1p3
+>> # mdadm: added /dev/nvme0n1p3
+>> ```
+>>
+>> Use the following command to monitor the RAID rebuild:
+>>
+>> ```sh
+>> [user@server_ip ~]# cat /proc/mdstat
+>> ```
+>>
+>> Once the raid rebuild is complete, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
+>>
 
 ///
 
@@ -1170,164 +1164,166 @@ Once the raid rebuild is complete, consult [this section](#swap-normal) to recre
 
 /// details | **Unfold this section**
 
-#### Using rescue mode <a name="swap-rescue"></a>
-
-Outside the `chroot` environment, recreate the [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
-Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
-LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
-```
-
-Verify that the label has been properly applied:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
-NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-nvme1n1
-├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    B27E-16D2
-├─nvme1n1p2 linux_raid_member 1.2   md2            fb3c5180-526f-56ad-3a0a-3f7961f57684
-│ └─md2     xfs                     boot           ed3a4730-b3eb-4aa5-a550-dd6cd188c3a4
-├─nvme1n1p3 linux_raid_member 1.2   md3            a14af9ed-f791-46e5-4381-224e6d79088c
-│ └─md3     xfs                     root           5041d916-abb3-4dc8-acdc-baeb3977ce6d  469.6G     1% /mnt
-└─nvme1n1p4 swap              1     swap-nvme1n1p4 133ca9a3-1bd6-4519-9b5a-01b8ffa55ca4
-nvme0n1
-├─nvme0n1p1 vfat              FAT16 EFI_SYSPART    3557-B372
-├─nvme0n1p2 linux_raid_member 1.2   md2            fb3c5180-526f-56ad-3a0a-3f7961f57684
-│ └─md2     xfs                     boot           ed3a4730-b3eb-4aa5-a550-dd6cd188c3a4
-├─nvme0n1p3 linux_raid_member 1.2   md3            a14af9ed-f791-46e5-4381-224e6d79088c
-│ └─md3     xfs                     root           5041d916-abb3-4dc8-acdc-baeb3977ce6d  469.6G     1% /mnt
-└─nvme0n1p4 swap              1     swap-nvme0n1p4 dedd4d49-7d40-40c8-b529-41f251a7ff81
-```
-
-Access the `chroot` environment again:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
-```
-
-Retrieve the UUID of both SWAP partitions:
-
-```sh
-root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme0n1p4
-/dev/nvme0n1p4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-
-root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
-/dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
-```
-
-Next, replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in the `/etc/fstab` file:
-
-```sh
-root@rescue12-customer-eu:/# nano /etc/fstab
-```
-
-Example:
-
-```sh
-UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
-UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
-LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0     1
-UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
-UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
-```
-
-Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the correct UUID.
-
-Next, verify that everything is properly mounted with the following command:
-
-```sh
-root@rescue12-customer-eu:/# mount -av
-/                        : ignored
-/boot                    : successfully mounted
-/boot/efi                : successfully mounted
-swap                     : ignored
-swap                     : ignored
-```
-
-Activate the SWAP partition:
-
-```sh
-root@rescue12-customer-eu:/# swapon -av
-
-swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
-swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
-swapon /dev/nvme0n1p4
-swapon: /dev/nvme1n1p4: found signature [pagesize=4096, signature=swap]
-swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
-swapon /dev/nvme1n1p4
-```
-
-Exit the chroot environment with `exit` and reload the system:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
-```
-
-Umount all the disks:
-
-```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
-```
-
-#### Using normal mode <a name="swap-normal"></a>
-
-To recreate the SWAP partition, perform the following steps:
-
-- First, recreate the partition on **nvme0n1p4** and add the label **swap-nvme0n1p4**:
-
-```sh
-[user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
-```
-
-- Retrieve the UUIDs of both SWAP partitions:
-
-```sh
-[user@server_ip ~]# sudo blkid -s UUID blkid /dev/nvme0n1p4
-/dev/nvme0n1p4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-[user@server_ip ~]# sudo blkid -s UUID blkid /dev/nvme1n1p4
-/dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
-```
-
-- Replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in `/etc/fstab`:
-
-```sh
-[user@server_ip ~]# sudo nano /etc/fstab
-```
-
-Example:
-
-```sh
-[user@server_ip ~]# sudo nano /etc/fstab
-UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
-UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
-LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0     1
-UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
-UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
-```
-
-Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. 
-
-Make sure to replace the correct UUID.
-
-Next, run the following command to activate the SWAP partition:
-
-```sh
-[user@server_ip ~]# sudo swapon -av
-swapon: /dev/nvme1n1p4: already active -- ignored
-swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
-swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
-swapon /dev/nvme0n1p4
-```
-
-Next, reload the system:
-
-```sh
-[user@server_ip ~]# sudo systemctl daemon-reload
-```
-
-We have now completed the RAID rebuild.
+> [!tabs]
+> **Using rescue mode**
+>>
+>> Outside the `chroot` environment, recreate the [SWAP] partition **nvme0n1p4** and add the label `swap-nvmenxxx`:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
+>> Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
+>> LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
+>> ```
+>>
+>> Verify that the label has been properly applied:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk -f
+>> NAME        FSTYPE            FSVER LABEL          UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+>> nvme1n1
+>> ├─nvme1n1p1 vfat              FAT16 EFI_SYSPART    B27E-16D2
+>> ├─nvme1n1p2 linux_raid_member 1.2   md2            fb3c5180-526f-56ad-3a0a-3f7961f57684
+>> │ └─md2     xfs                     boot           ed3a4730-b3eb-4aa5-a550-dd6cd188c3a4
+>> ├─nvme1n1p3 linux_raid_member 1.2   md3            a14af9ed-f791-46e5-4381-224e6d79088c
+>> │ └─md3     xfs                     root           5041d916-abb3-4dc8-acdc-baeb3977ce6d  469.6G     1% /mnt
+>> └─nvme1n1p4 swap              1     swap-nvme1n1p4 133ca9a3-1bd6-4519-9b5a-01b8ffa55ca4
+>> nvme0n1
+>> ├─nvme0n1p1 vfat              FAT16 EFI_SYSPART    3557-B372
+>> ├─nvme0n1p2 linux_raid_member 1.2   md2            fb3c5180-526f-56ad-3a0a-3f7961f57684
+>> │ └─md2     xfs                     boot           ed3a4730-b3eb-4aa5-a550-dd6cd188c3a4
+>> ├─nvme0n1p3 linux_raid_member 1.2   md3            a14af9ed-f791-46e5-4381-224e6d79088c
+>> │ └─md3     xfs                     root           5041d916-abb3-4dc8-acdc-baeb3977ce6d  469.6G     1% /mnt
+>> └─nvme0n1p4 swap              1     swap-nvme0n1p4 dedd4d49-7d40-40c8-b529-41f251a7ff81
+>> ```
+>>
+>> Access the `chroot` environment again:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
+>> ```
+>>
+>> Retrieve the UUID of both SWAP partitions:
+>>
+>> ```sh
+>> root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme0n1p4
+>> /dev/nvme0n1p4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
+>>
+>> root@rescue12-customer-eu:/# blkid -s UUID blkid /dev/nvme1n1p4
+>> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
+>> ```
+>>
+>> Next, replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in the `/etc/fstab` file:
+>>
+>> ```sh
+>> root@rescue12-customer-eu:/# nano /etc/fstab
+>> ```
+>>
+>> Example:
+>>
+>> ```sh
+>> UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+>> UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
+>> LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0     1
+>> UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+>> UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
+>> ```
+>>
+>> Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Make sure you replace the correct UUID.
+>>
+>> Next, verify that everything is properly mounted with the following command:
+>>
+>> ```sh
+>> root@rescue12-customer-eu:/# mount -av
+>> /                        : ignored
+>> /boot                    : successfully mounted
+>> /boot/efi                : successfully mounted
+>> swap                     : ignored
+>> swap                     : ignored
+>> ```
+>>
+>> Activate the SWAP partition:
+>>
+>> ```sh
+>> root@rescue12-customer-eu:/# swapon -av
+>>
+>> swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
+>> swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
+>> swapon /dev/nvme0n1p4
+>> swapon: /dev/nvme1n1p4: found signature [pagesize=4096, signature=swap]
+>> swapon: /dev/nvme1n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
+>> swapon /dev/nvme1n1p4
+>> ```
+>>
+>> Exit the chroot environment with `exit` and reload the system:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
+>> ```
+>>
+>> Umount all the disks:
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
+>> ```
+>>
+> **Using normal mode**
+>>
+>> To recreate the SWAP partition, perform the following steps:
+>>
+>> - First, recreate the partition on **nvme0n1p4** and add the label **swap-nvme0n1p4**:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo mkswap /dev/nvme0n1p4 -L swap-nvme0n1p4
+>> ```
+>>
+>> - Retrieve the UUIDs of both SWAP partitions:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo blkid -s UUID blkid /dev/nvme0n1p4
+>> /dev/nvme0n1p4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
+>> [user@server_ip ~]# sudo blkid -s UUID blkid /dev/nvme1n1p4
+>> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
+>> ```
+>>
+>> - Replace the old UUID of the SWAP partition (**nvme0n1p4**) with the new one in `/etc/fstab`:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo nano /etc/fstab
+>> ```
+>>
+>> Example:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo nano /etc/fstab
+>> UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+>> UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
+>> LABEL=EFI_SYSPART       /boot/efi       vfat    defaults        0     1
+>> UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+>> UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
+>> ```
+>>
+>> Based on the above results, the old UUID is `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` and should be replaced with the new one `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. 
+>>
+>> Make sure to replace the correct UUID.
+>>
+>> Next, run the following command to activate the SWAP partition:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo swapon -av
+>> swapon: /dev/nvme1n1p4: already active -- ignored
+>> swapon: /dev/nvme0n1p4: found signature [pagesize=4096, signature=swap]
+>> swapon: /dev/nvme0n1p4: pagesize=4096, swapsize=536870912, devsize=536870912
+>> swapon /dev/nvme0n1p4
+>> ```
+>>
+>> Next, reload the system:
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo systemctl daemon-reload
+>> ```
+>>
+>> We have now completed the RAID rebuild.
+>>
 
 ///
 

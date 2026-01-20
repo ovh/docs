@@ -90,7 +90,6 @@ hosted-private-cloud-managed-vmware-security-secnumcloud: Compliance und SecNumC
 hosted-private-cloud-managed-vmware-troubleshooting: Diagnose
 hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Wartung und Updates
 hosted-private-cloud-managed-vmware-troubleshooting-logs: Überwachung und Protokolle
-hosted-private-cloud-managed-vmware-troubleshooting-errors: Fehlerbehebung
 hosted-private-cloud-managed-vmware-troubleshooting-compliance: Compliance-Überwachung
 hosted-private-cloud-managed-vmware-additional-resources: Zusätzliche Ressourcen
 hosted-private-cloud-nutanix: Nutanix on OVHcloud
@@ -347,7 +346,7 @@ web-cloud-domains-dns-configuration-dns-zone: DNS-Zone
 web-cloud-domains-dns-security: Sicherheit
 web-cloud-domains-dns-tutorials: Tutorials
 web-cloud-domains-domain-names: Domainnamen
-web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens (Trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Verwaltung der Kontakte für Domains
 web-cloud-domains-domain-names-getting-started: Erste Schritte
 web-cloud-domains-domain-names-configuration: Konfiguration
 web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Eingehender Transfer zu OVHcloud

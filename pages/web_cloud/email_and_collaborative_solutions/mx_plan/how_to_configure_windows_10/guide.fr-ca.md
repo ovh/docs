@@ -116,7 +116,7 @@ L'application Outlook ne permet pas de modifier les paramètres serveur de votre
 Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
 - Cliquez sur l'icöne de réglage `⛭`{.action} dans le bas de la colonne de gauche.
-- Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
+- Dans la section « Vos comptes » cliquez sur `Gérer`{.action} à droite de l'adresse e-mail concernée.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
 

@@ -124,7 +124,7 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 
 Aceda à página [Webmail](/links/web/email). Introduza o seu endereço de e-mail e a palavra-passe e clique em `Connection`{.action}.
 
-Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "Alterar a palavra-passe" {.action}.
+Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá `Alterar a palavra-passe`{.action}.
 
 ![Zimbra - preferências](images/zimbra-password.png){.thumbnail}
 

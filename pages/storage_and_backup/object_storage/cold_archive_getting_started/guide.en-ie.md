@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2026-01-12
+updated: 2026-01-19
 ---
 
 > [!warning]
@@ -24,7 +24,14 @@ updated: 2026-01-12
 Cold Archive provides long-term data storage by archiving bucket objects onto physical tapes.
 Restoration may take some time since data is read from tapes.
 
-**This guide explains how to set up and manage storage on tapes with Cold Archive, in coexistence with your Object Storage.**
+As explained in details in the [Cold Archive FAQ](/pages/storage_and_backup/object_storage/cold_archive_faq), there are two ways of consuming Cold Archive:
+
+- **Cold Archive v1, a standalone bucket-granular Cold Archive solution (legacy offering).**
+- **Cold Archive v2, an Object Storage class/tier that allows archiving individual objects within a container.**
+
+Although there are two underlying ways of consuming Cold Archive, we continue to refer to the solution as 'Cold Archive' in all customer-facing materials, including the product page and customer experience, without explicitly mentioning 'v1' or 'v2'.
+
+**This guide explains how to set up and manage storage on tapes with Cold Archive v1 (legacy offering), in coexistence with your Object Storage.**
 
 ## Requirements
 
@@ -35,10 +42,10 @@ Restoration may take some time since data is read from tapes.
 
 > [!primary]
 >
-> You can find the Cold Archive storage presentation and workflow [here](/pages/storage_and_backup/object_storage/cold_archive_overview).
+> You can find the Cold Archive v1 presentation and workflow [here](/pages/storage_and_backup/object_storage/cold_archive_overview).
 >
 
-This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive, in coexistence with your Object Storage.
+This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive v1, in coexistence with your Object Storage.
 
 In this tutorial, **awscli aliases** are used to simplify the commands.
 

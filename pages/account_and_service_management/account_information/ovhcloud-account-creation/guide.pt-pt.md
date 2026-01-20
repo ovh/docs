@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma conta OVHcloud'
 excerpt: 'Saiba como criar a sua conta OVHcloud'
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objetivo
@@ -19,19 +19,24 @@ A criação de uma conta pode ser realizada antes ou durante a encomenda do seu 
 
 ### Como criar a minha conta OVHcloud?
 
-Para criar uma conta OVHcloud, basta aceder a [esta página](/links/manager) e preencher o formulário online.
+Para criar uma conta OVHcloud, vá a [esta página](/links/manager) e clique em `Criar uma conta`{.action}.
 
-![formulário criação conta](images/account-creation.png){.thumbnail}
+![Criar uma conta](images/account-creation-EN-01.png){.thumbnail}
+
+Indique o seu país de residência fiscal, especifique a sua moeda e o idioma pretendido para gerir os seus serviços na Área de Cliente OVHcloud. A seguir, clique em `Validar`{.action}.
+
+![Criar uma conta](images/account-creation-EN-02.png){.thumbnail}
+
+De seguida, introduza o seu endereço de e-mail e crie uma palavra-passe de acesso à conta OVHcloud.
 
 |Informações|Descrição|
 |---|---|
-|Nome - Nome|Introduza **imperativamente** aqui um nome e um nome usuais.|
-|endereço de e-mail|Introduza um endereço de e-mail **válido e ao qual tem acesso**.<br><br>Não utilize um endereço de e-mail associado a um domínio gerido pela Área de Cliente. Se este domínio for interrompido, já não receberá as nossas notificações.|
+|Endereço de e-mail|Introduza um endereço de e-mail **válido e ao qual tem acesso**.<br><br>Não utilize um endereço de e-mail associado a um domínio gerido pela Área de Cliente. Se este domínio for interrompido, já não receberá as nossas notificações.|
 |Palavra-passe|A sua palavra-passe deve ser única (criada e utilizada apenas para a sua conta OVHcloud) e suficientemente complexa.<br><br>Para criar uma palavra-passe eficaz, consulte os conselhos do [nosso guia sobre a gestão da palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password#instrucoes).|
 
 Depois de preencher o primeiro formulário, ser-lhe-á enviado um código de utilização única para o endereço de e-mail que introduziu. Este código permitirá validar o seu endereço de e-mail. Introduza-o nas casas previstas para esse efeito.
 
-![código de utilização única](images/code.png){.thumbnail}
+![código de utilização única](images/code-EN.png){.thumbnail}
 
 > [!primary]
 > Se não recebeu o e-mail com o código, verifique as pastas "spam"/"correio indesejável" do seu endereço de e-mail.
@@ -42,8 +47,6 @@ Depois de preencher o primeiro formulário, ser-lhe-á enviado um código de uti
 >
 
 Uma vez o código introduzido e validado, preencha o formulário. Tenha o cuidado de definir corretamente o **tipo de conta** entre as opções propostas.
-
-![formulário criação conta](images/account-type.png){.thumbnail}
 
 A sua conta criada irá automaticamente ser ligada à página inicial, denominada "painel de controlo", da sua conta.
 

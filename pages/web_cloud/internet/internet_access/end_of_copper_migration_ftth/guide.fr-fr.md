@@ -1,7 +1,7 @@
 ---
 title: 'Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?'
 excerpt: 'Découvrez comment migrer votre connexion xDSL vers la fibre optique en raison de la fermeture progressive du réseau cuivre'
-updated: 2025-10-29
+updated: 2026-01-15
 ---
 
 ## Objectif
@@ -38,6 +38,9 @@ La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos 
 ![informations fermeture cuivre](images/info-fermeture-cuivre.png){.thumbnail}
 
 Vous pouvez dès lors choisir de migrer vers la [Fibre Pro OVHcloud](https://www.ovhcloud.com/fr/internet/fibre/) (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
+
+> [!success]
+> Retrouvez les offres et débits disponibles à votre adresse grâce à [notre outil d'éligibilité](https://order.isp.ovh.net/).
 
 ### Souscrire une offre fibre OVHcloud
 

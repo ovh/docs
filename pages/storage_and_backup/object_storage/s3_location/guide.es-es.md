@@ -67,14 +67,6 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>Milan</td>
-        <td>eu-south-mil</td>
-        <td>HTTPS</td>
-        <td>4</td>
-        <td>3-AZ region</td>
         <td>Standard only</td>
     </tr>
     <tr>

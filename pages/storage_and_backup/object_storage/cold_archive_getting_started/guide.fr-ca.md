@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2026-01-12
+updated: 2026-01-19
 ---
 
 > [!warning]
@@ -24,7 +24,14 @@ updated: 2026-01-12
 Cold Archive fournit un stockage de données à long terme en archivant des objets de type « bucket » sur des bandes physiques.
 La restauration peut prendre un certain temps car les données sont lues à partir des bandes.
 
-**Ce guide explique comment configurer et gérer le stockage sur bandes avec Cold Archive, en coexistence avec votre système de stockage d'objets.**
+Comme expliqué en détail dans la [FAQ Cold Archive](/pages/storage_and_backup/object_storage/cold_archive_faq), il existe deux manières de consommer Cold Archive :
+
+- **Cold Archive v1, une solution standalone (granularité au niveau du bucket)**.
+- **Cold Archive v2, une classe Object Storage permettant d'archiver des objets individuellement au sein d'un bucket**.
+
+Bien qu'il existe deux manières différentes de consommer Cold Archive, nous continuons à faire référence à la solution sous le nom de 'Cold Archive' dans tous les documents destinés aux utilisateurs, y compris la page produit et dans l'espace client, sans mentionner explicitement 'v1' ou 'v2'.
+
+**Ce guide explique comment configurer et gérer le stockage sur bandes avec Cold Archive v1 (offre legacy), en coexistence avec votre Object Storage.**
 
 ## Prérequis
 
@@ -35,10 +42,10 @@ La restauration peut prendre un certain temps car les données sont lues à part
 
 > [!primary]
 >
-> Vous pouvez retrouver la présentation du stockage Cold Archive ainsi que son workflow [ici](/pages/storage_and_backup/object_storage/cold_archive_overview).
+> Vous pouvez retrouver la présentation de Cold Archive v1 ainsi que son workflow [ici](/pages/storage_and_backup/object_storage/cold_archive_overview).
 >
 
-Cette section explique la procédure étape par étape pour configurer, archiver, restaurer et supprimer des buckets avec Cold Archive, en coexistence avec votre stockage d'objets.
+Cette section explique la procédure étape par étape pour configurer, archiver, restaurer et supprimer des buckets avec Cold Archive v1, en coexistence avec votre stockage d'objets.
 
 Dans ce guide, les **alias awscli** sont utilisés pour simplifier les commandes.
 

@@ -1,7 +1,7 @@
 ---
 title: Migrer manuellement votre adresse e-mail 
 excerpt: Découvrez comment migrer manuellement votre adresse e-mail vers une autre adresse e-mail
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ updated: 2025-04-28
 
 ## Prérequis
 
-- Disposer d'un service e-mail chez OVHcloud, tel qu'une offre [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d'un service e-mail chez OVHcloud, tel qu'une offre [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes source).
 - Disposer des identifiants relatifs aux comptes e-mail OVHcloud qui reçoivent les données migrées (les comptes de destination).
 

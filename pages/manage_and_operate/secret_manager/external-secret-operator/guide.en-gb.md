@@ -1,11 +1,8 @@
 ---
 title: "How to use Kubernetes External Secret Operator with Secret Manager"
 excerpt: "Configure External Secret Operator to store Kubernetes secrets on the OVHcloud Secret Manager"
-updated: 2026-01-07
+updated: 2026-01-15
 ---
-
-> [!primary]
-> Secret Manager is currently in Beta phase. This guide can be updated in the future with the advancements made by our teams in charge of this product.
 
 ## Objective
 

@@ -1,7 +1,7 @@
 ---
 title: Manually migrate your email address
 excerpt: How to migrate your email address manually to another email address
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -17,9 +17,9 @@ You can [migrate an email address automatically](/pages/web_cloud/email_and_coll
 
 ## Requirements
 
-- an email service with OVHcloud, such as an [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](/links/web/hosting))
-- access to the email accounts you want to migrate (the source accounts)
-- access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
+- An email service with OVHcloud, such as an [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](/links/web/hosting))
+- Access to the email accounts you want to migrate (the source accounts)
+- Access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
 ## Instructions
 
