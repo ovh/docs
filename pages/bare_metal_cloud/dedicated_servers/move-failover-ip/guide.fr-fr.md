@@ -147,7 +147,7 @@ Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à dr
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Une fenêtre contextuelle apparaîtra, entrez l'adresse IP supplémentaire (ou le bloc) et l'identifiant (récupéré dans le compte So you start). Ensuite, cliquez sur `Suivant`{.action}.
+Une fenêtre contextuelle apparaîtra, entrez l'adresse Additional IP (ou le bloc) et l'identifiant (récupéré dans le compte So you Start). Ensuite, cliquez sur `Suivant`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
