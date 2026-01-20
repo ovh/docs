@@ -177,12 +177,14 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: G
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
-public-cloud-databases-common-configuration: Configuration
-public-cloud-databases-common-getting-started: Getting started
-public-cloud-databases-common-key-concepts: Key concepts
-public-cloud-databases-common-migration: Migration
-public-cloud-databases-common-security: Security
-public-cloud-databases-common-troubleshooting: Troubleshooting
+public-cloud-databases-common-additional-resources: Dodatkowe zasoby
+public-cloud-databases-common-configuration: Konfiguracja
+public-cloud-databases-common-getting-started: Pierwsze kroki
+public-cloud-databases-common-key-concepts: Kluczowe pojęcia
+public-cloud-databases-common-migration: Migracja
+public-cloud-databases-common-security: Bezpieczeństwo
+public-cloud-databases-common-troubleshooting: Diagnostyka
+public-cloud-databases-common-tutorials: Tutorials
 public-cloud-databases-common: Common
 public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
 public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
@@ -192,19 +194,19 @@ public-cloud-databases-mongodb: MongoDB
 public-cloud-databases-mysql-guides: MySQL - Guides
 public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-mysql: MySQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-valkey-guides: Valkey - Guides
 public-cloud-databases-valkey-tutorials: Valkey - Tutorials
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Public Cloud Databases
-public-cloud-data-analytics-common-configuration: Configuration
-public-cloud-data-analytics-common-getting-started: Getting started
-public-cloud-data-analytics-common-key-concepts: Key concepts
-public-cloud-data-analytics-common-migration: Migration
-public-cloud-data-analytics-common-security: Security
-public-cloud-data-analytics-common-troubleshooting: Troubleshooting
+public-cloud-data-analytics-common-additional-resources: Dodatkowe zasoby
+public-cloud-data-analytics-common-configuration: Konfiguracja
+public-cloud-data-analytics-common-getting-started: Pierwsze kroki
+public-cloud-data-analytics-common-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-common-migration: Migracja
+public-cloud-data-analytics-common-security: Bezpieczeństwo
+public-cloud-data-analytics-common-troubleshooting: Diagnostyka
+public-cloud-data-analytics-common-tutorials: Tutorials
 public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
