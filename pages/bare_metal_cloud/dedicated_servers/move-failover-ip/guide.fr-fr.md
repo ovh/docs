@@ -129,7 +129,7 @@ Pour commencer, connectez-vous à votre compte So you Start et cliquez sur `IP`{
 
 ![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
 
-Cliquez sur le bouton de paramètres (en forme de roue crantée) à côté de l'adresse IP correspondante et sélectionnez `Déplacer l'IP FO`{.action}.
+Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à côté de l'adresse IP correspondante et sélectionnez `Déplacer l'IP FO`{.action}.
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
