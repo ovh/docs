@@ -1,5 +1,5 @@
 ---
-title: "Aplikacja Backup - Rozwiązywanie problemów"
+title: "Backup Agent - Rozwiązywanie problemów"
 excerpt: "Dowiedz się, jak rozwiązać potencjalne problemy związane z Aplikacją Backup"
 updated: 2026-01-09
 ---
@@ -111,6 +111,16 @@ Następnie uruchom ponownie usługę veeamservice.
 /// details | Użycie mojego magazynu nie zostało zaktualizowane po usunięciu agenta.
 
 Trzymamy Twoje dane przez 14 dni po usunięciu agenta, użycie magazynu zostanie zaktualizowane po 14 dniach i usunięciu danych.
+
+///
+
+/// details | Chcę zmienić hasło do logowania się do Veeam Service Provider Console (VSPC).
+
+Hasła można zmienić, korzystając z linku "Zapomniałeś hasła?", który jest dostępny w konsoli VSPC.
+
+![Reset password 1](images/reset_password_1.png)
+
+![Reset password 2](images/reset_password_2.png)
 
 ///
 

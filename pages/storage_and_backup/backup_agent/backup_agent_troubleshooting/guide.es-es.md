@@ -114,6 +114,16 @@ Conservamos sus datos durante 14 días tras la eliminación de un agente, el uso
 
 ///
 
+/// details | Quiero cambiar la contraseña de acceso a la Veeam Service Provider Console (VSPC).
+
+El cambio de contraseña se realiza a través del enlace "¿Olvidó su contraseña?" disponible en la consola VSPC.
+
+![Reset password 1](images/reset_password_1.png)
+
+![Reset password 2](images/reset_password_2.png)
+
+///
+
 /// details | He desinstalado mi Veeam Agent, ¿cómo volver a instalarlo?
 
 [Contacte con el soporte de OVHcloud](/links/support) para que nuestro equipo pueda ayudarle a reinstalar su agente.

@@ -114,6 +114,16 @@ Nous gardons vos données durant 14 jours à la suite d'une suppression d'un age
 
 ///
 
+/// details | Je souhaite modifier le mot de passe d’accès à la Veeam Service Provider Console (VSPC).
+
+Le changement de mot de passe s’effectue via le lien « Mot de passe oublié ? » disponible sur la console VSPC.
+
+![Reset password 1](images/reset_password_1.png)
+
+![Reset password 2](images/reset_password_2.png)
+
+///
+
 /// details | J'ai désinstallé mon Veeam Agent, comment le réinstaller ?
 
 [Contactez le support OVHcloud](/links/support) afin que notr équipe puisse vous aider à réinstaller votre agent.
