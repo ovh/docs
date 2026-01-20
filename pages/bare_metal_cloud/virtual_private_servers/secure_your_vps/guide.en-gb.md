@@ -32,7 +32,7 @@ When you order your VPS, you can choose a distribution or operating system to in
 
 The following examples presume that you are logged in as a [user with elevated permissions](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-**Table of Contents:**
+**Content overview**
 
 - [Updating your system](#os-update)
 - [Create and use an SSH key](#sshkey)
@@ -84,7 +84,7 @@ This operation needs to be performed regularly to keep a system up-to-date.
 
 ### Create and use an SSH key <a name="sshkey"></a>
 
-SSH key authentication is one of the most effective methods for securing access to your VPS.<br>
+SSH key authentication is one of the most effective methods for securing access to your VPS.  
 Unlike password authentication, it relies on a pair of cryptographic keys and significantly reduces the risk of brute-force attacks.
 
 We strongly recommend setting up an SSH key during your first connection to your server, and then prioritising this method for your administrative access.
@@ -96,9 +96,9 @@ Depending on your environment and the tool you use to connect to your VPS, refer
 
 These guides detail the steps to:
 
-- generate an SSH key pair;
-- deploy the public key on your server;
-- securely connect via SSH.
+- Generate an SSH key pair.
+- Deploy the public key on your server.
+- Securely connect via SSH.
 
 Once SSH key authentication is configured and working, you can go further by enhancing the SSH service configuration, for example by changing the listening port or disabling password authentication.
 

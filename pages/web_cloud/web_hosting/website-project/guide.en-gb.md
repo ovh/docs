@@ -57,7 +57,7 @@ You can use this guide as a "repository" of possible actions when you subscribe 
 > For the purposes of this guide, the term “website” will refer to all types of website (website, blog, CMS, online store, etc.) mentioned previously in this guide.
 >
 
-**Contents:**
+**Content overview**
 
 - [Step 1 - Define your project](#project-delimitation)
 - [Step 2 - Install your website](#website-installation)

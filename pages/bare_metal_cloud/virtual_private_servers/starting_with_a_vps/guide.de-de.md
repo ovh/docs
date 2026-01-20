@@ -17,31 +17,31 @@ Im Gegensatz zu einem verwalteten Webhosting-Dienst sind Sie für folgende Aufga
 
 ## Voraussetzungen
 
-- Ein aktives [VPS](/links/bare-metal/vps)-Angebot in Ihrem OVHcloud Kundencenter.
-- Ein angemeldetes Konto in Ihrem [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 Um die Verwaltungsoberfläche Ihres VPS und die verfügbaren Aktionen im OVHcloud Kundencenter zu verstehen, konsultieren Sie unsere [Anleitung zur Einführung in das OVHcloud Kundencenter für VPS](/pages/bare_metal_cloud/virtual_private_servers/understand-vps-control-panel).
 
-**Inhaltsverzeichnis:**
+**Inhaltsübersicht**
 
 - [Schritt 1: Erste Verbindung](#initial-connection)
 	- [GNU/Linux-Distribution](#linuxconnect)
 	- [Windows-Distribution](#winconnect)
-- [Schritt 2: Verwenden des root-Kontos](#rootaccount)
+- [Schritt 2: Verwenden des Root Account](#rootaccount)
 - [Schritt 3: Sicherung Ihres VPS](#secure)
-- [Schritt 4: Verknüpfen eines Domänennamens](#domain)
+- [Schritt 4: Verknüpfen eines Domainnamens](#domain)
 
 ### Schritt 1: Erste Verbindung <a name="initial-connection"></a>
 
 #### Linux: <a name="linuxconnect"></a>
 
-Wenn Sie sich zum ersten Mal mit Ihrem VPS verbinden, beachten Sie, dass **das Konto, mit dem Sie sich verbinden, nicht root ist**.
+Wenn Sie sich zum ersten Mal mit Ihrem VPS verbinden, beachten Sie, dass **das Account, mit dem Sie sich verbinden, nicht `root` ist**.
 
-Bei OVHcloud erstellen wir aus Sicherheitsgründen und zum Schutz der Dienste unserer Kunden automatisch **einen Benutzernamen, der mit dem von Ihnen ausgewählten Betriebssystem verknüpft ist**, sobald Sie Ihre Bestellung abgeschlossen haben.
+Wir erstellen aus Sicherheitsgründen und zum Schutz der Dienste unserer Kunden automatisch **einen Benutzernamen, der mit dem von Ihnen ausgewählten Betriebssystem verknüpft ist**, sobald Sie Ihre Bestellung abgeschlossen haben.
 
-Der genaue Benutzername, den Sie für die Verbindung verwenden müssen, ist klar in der E-Mail angegeben, die Sie bei der Lieferung Ihres VPS erhalten.
+Der Benutzername, den Sie für die Verbindung verwenden müssen, ist in der E-Mail angegeben, die Sie bei der Lieferung Ihres VPS erhalten.
 
 Zum Beispiel:
 
@@ -49,7 +49,7 @@ Zum Beispiel:
 - Für **Ubuntu** ist der Benutzername **ubuntu**.
 - Für **Rocky Linux** ist der Benutzername **rocky**.
 
-Das vorübergehende Passwort für dieses Konto wird Ihnen über einen sicheren Link in der Liefer-E-Mail gesendet.
+Das vorübergehende Passwort für dieses Account wird Ihnen über einen sicheren Link in der Liefer-E-Mail gesendet.
 
 > [!primary]
 > **Wichtige Hinweis**: bei Ihrer **ersten Verbindung** werden Sie aufgefordert, **dieses vorübergehende Passwort zu ändern**.
@@ -61,7 +61,7 @@ ssh username@IPv4_VPS
 ```
 
 - Ersetzen Sie "username" durch den Benutzer, der Ihrem Betriebssystem entspricht.
-- Ersetzen Sie "IPv4_de_votre_VPS" durch die IP-Adresse, die in Ihrer Liefer-E-Mail angezeigt wird.
+- Ersetzen Sie "IPv4_VPS" durch die IP-Adresse, die in Ihrer Liefer-E-Mail angezeigt wird.
 
 #### Windows: <a name="winconnect"></a>
 
@@ -75,7 +75,7 @@ Dies erfolgt über die VPS-KVM-Konsole:
 
 1. Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wechseln Sie in den Bereich `Bare Metal Cloud`{.action}.
 1. Klicken Sie auf `Virtual Private Server`{.action} und wählen Sie Ihren Server aus.
-1. Gehen Sie auf die Registerkarte `Start`{.action}, klicken Sie auf den `...`{.action}-Button neben dem Namen Ihres VPS in der **Ihr VPS**-Sektion und wählen Sie `KVM`{.action}.
+1. Gehen Sie auf den Tab `Start`{.action}, klicken Sie auf den `...`{.action}-Button neben dem Namen Ihres VPS in der **Ihr VPS**-Sektion und wählen Sie `KVM`{.action}.
 
 Weitere Informationen zu diesem Tool finden Sie in unserer "[KVM-Anleitung](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)".
 
@@ -90,7 +90,7 @@ Um die Anfangskonfiguration Ihres Windows VPS abzuschließen, folgen Sie den unt
 >>
 > 2. **Administratorpasswort**
 >>
->> Legen Sie ein Passwort für Ihr Windows `Administrator`/`admin`-Konto fest, bestätigen Sie es und klicken Sie anschließend auf `Fertig`{.action}.
+>> Legen Sie ein Passwort für Ihr Windows `Administrator`/`admin`-Account fest, bestätigen Sie es und klicken Sie anschließend auf `Fertig`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}
 >>
@@ -100,7 +100,7 @@ Um die Anfangskonfiguration Ihres Windows VPS abzuschließen, folgen Sie den unt
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}
 >>
-> 4. **Administratoranmeldung**
+> 4. **Administrator-Login**
 >>
 >> Geben Sie das `Administrator`-Passwort ein, das Sie im vorherigen Schritt erstellt haben, und klicken Sie auf das `Pfeil`-Symbol.
 >>
@@ -115,18 +115,18 @@ Auf Ihrem lokalen Windows-Gerät können Sie die Anwendung "Remote Desktop Conne
 
 Geben Sie die IPv4-Adresse Ihres VPS, Ihren Benutzernamen und Ihr Passwort ein. Normalerweise erscheint eine Warnung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich zu verbinden.
 
-Sie können auch eine andere drittanbieterkompatible Anwendung verwenden, die mit RDP kompatibel ist. Dies ist erforderlich, wenn Windows nicht auf Ihrem lokalen Gerät installiert ist.
+Sie können auch jede RDP-kompatible Anwendung eines Drittanbieters verwenden. Dies ist erforderlich, wenn Windows nicht auf Ihrem lokalen Gerät installiert ist.
 
 > [!primary]
 >
-Falls Sie bei diesem Verfahren Probleme haben, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät erlaubt sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen prüfen.
+Wenn bei diesem Verfahren Probleme auftreten, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät zugelassen sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen überprüfen.
 >
 
-Um bei Problemen die Fehlerbehebung zu erleichtern, empfehlen wir Ihnen, **Windows-Bootprotokolle zu aktivieren**, indem Sie unsere [dazugehörige Anleitung](/pages/bare_metal_cloud/virtual_private_servers/windows-boot-logs) befolgen.
+Um bei Problemen die Fehlerbehebung zu erleichtern, empfehlen wir Ihnen, **Windows Boot Logs zu aktivieren**, indem Sie unsere [dazugehörige Anleitung](/pages/bare_metal_cloud/virtual_private_servers/windows-boot-logs) befolgen.
 
-### Schritt 2: Verwenden des root-Kontos (optional, aber empfohlen) <a name="rootaccount"></a>
+### Schritt 2: Verwenden des root-Accounts (optional, aber empfohlen) <a name="rootaccount"></a>
 
-Der root-Benutzer ist standardmäßig deaktiviert, um die Sicherheit Ihres Produkts zu gewährleisten.
+Der Benutzer "root" ist standardmäßig deaktiviert, um die Sicherheit Ihres Produkts zu gewährleisten.
 
 Für administrative Aufgaben verwenden Sie sudo von Ihrem Hauptbenutzer aus:
 
@@ -150,13 +150,13 @@ Wenn Sie Ihren VPS sichern möchten, empfehlen wir Ihnen, unsere Anleitung "[Sic
 - Installation von fail2ban, um wiederholte Anmeldeversuche zu blockieren.
 - Sicherung Ihres Systems und Ihrer Daten.
 
-### Schritt 4: Verknüpfen eines Domänennamens (optional, aber empfohlen) <a name="domain"></a>
+### Schritt 4: Verknüpfen eines Domainnamens (optional, aber empfohlen) <a name="domain"></a>
 
-Um Ihren VPS online zu stellen, ist es üblicherweise erforderlich, einen Domänennamen zu verwenden und zu konfigurieren.
+Um einen VPS über das Web erreichbar zu machen, wird ihm in der Regel ein Domainname über die DNS-Konfiguration zugewiesen.
 
 Dazu empfehlen wir Ihnen, folgende Aktionen auszuführen:
 
-- [Bearbeiten Sie die DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), indem Sie die erforderlichen Einträge hinzufügen, um den Domänennamen auf die IPv4-Adresse Ihres VPS zu verweisen.
+- [Bearbeiten Sie die DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), indem Sie die erforderlichen Einträge hinzufügen, um den Domainnamen auf die IPv4-Adresse Ihres VPS zu verweisen.
 - [Aktivieren Sie ein kostenloses SSL-Zertifikat (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt), um den Zugriff auf Ihre Webseiten über HTTPS zu sichern.
 
 ## Weiterführende Informationen

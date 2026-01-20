@@ -12,8 +12,8 @@ updated: 2026-01-16
 
 ## Requirements
 
-- An active [VPS](/links/bare-metal/vps) offer in your OVHcloud Control Panel.
-- Access to the [OVHcloud Control Panel](/links/manager).
+- An active [VPS](/links/bare-metal/vps) offer in your OVHcloud Control Panel
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > Some VPS features mentioned on this page are not available in OVHcloud Local Zones.
@@ -26,7 +26,7 @@ Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal C
 
 This guide helps you **understand the VPS management interface in the OVHcloud Control Panel**, identify essential information and use the main available actions (reinstallation, reboot, backup, configuration).
 
-**Table of Contents:**
+**Content overview**
 
 - [Dashboard](#controlpanel)
 - [Your VPS](#myvps)
@@ -58,8 +58,8 @@ Find below the basic information about your VPS and the service status. Click on
 >>
 >> The boot mode indicated is either:
 >>
->> - in **normal mode** (*LOCAL*), where the server loads the installed operating system.
->> - in **rescue mode**, provided by OVHcloud for troubleshooting.
+>> - In **normal mode** (*LOCAL*), where the server loads the installed operating system.
+>> - In **rescue mode**, provided by OVHcloud for troubleshooting.
 >>
 >> Use the `...`{.action} button to [reboot the VPS](#rebootvps) or boot it in rescue mode if necessary.
 >>

@@ -6,15 +6,14 @@ updated: 2026-01-16
 
 ## Ziel
 
-Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssystem auswählen, das Sie vorinstallieren möchten. Der Server kann also nach der Lieferung direkt verwendet werden. Es ist jedoch Ihre Aufgabe als Administrator, Maßnahmen umzusetzen, die die Sicherheit und Stabilität Ihres Systems gewährleisten.
+Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssystem auswählen, das Sie vorinstallieren möchten. Der Server kann also nach der Auslieferung direkt verwendet werden. Es ist jedoch Ihre Aufgabe als Administrator, Maßnahmen umzusetzen, die die Sicherheit und Stabilität Ihres Systems gewährleisten.
 
 **In dieser Anleitung werden allgemeine Hinweise zur Absicherung eines GNU/Linux-basierten Servers erläutert.**
 
 > [!warning]
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. 
+>Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie bei der Administration Ihres Systems Hilfe benötigen. Zusätzliche Informationen finden Sie im am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
@@ -33,7 +32,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 
 Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Berechtigungen](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) eingeloggt sind.
 
-**Inhaltsverzeichnis:**
+**Inhaltsübersicht**
 
 - [Systemupdate](#os-update)
 - [Erstellen und verwenden Sie einen SSH-Schlüssel](#sshkey)
@@ -46,7 +45,7 @@ Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Bere
 
 ### Systemupdate <a name="os-update"></a>
 
-Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.  
+Entwickler von Distributionen und Betriebssystemen veröffentlichen regulär Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.  
 Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren VPS zu sichern. 
 
 > [!tabs]
@@ -84,9 +83,9 @@ Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mitte
 
 Dieser Vorgang muss regelmäßig durchgeführt werden, um ein System auf dem neuesten Stand zu halten.
 
-### Erstellen und verwenden Sie einen SSH-Schlüssel <a name="sshkey"></a>
+### Erstellen und verwenden eines SSH-Schlüssels <a name="sshkey"></a>
 
-Die Authentifizierung mit SSH-Schlüsseln ist eine der effektivsten Methoden, um den Zugriff auf Ihren VPS zu sichern.<br>
+Die Authentifizierung mit SSH-Schlüsseln ist eine der effektivsten Methoden, um den Zugriff auf Ihren VPS zu sichern.  
 Im Gegensatz zur Passwortauthentifizierung basiert sie auf einem Paar kryptografischer Schlüssel und reduziert erheblich das Risiko von Brute-Force-Angriffen.
 
 Wir empfehlen Ihnen dringend, einen SSH-Schlüssel bei Ihrer ersten Verbindung zu Ihrem Server einzurichten und anschließend diese Methode für Ihren administrativen Zugriff zu priorisieren.
@@ -98,11 +97,11 @@ Abhängig von Ihrem Umfeld und dem Tool, das Sie verwenden, um sich mit Ihrem VP
 
 Diese Anleitungen beschreiben die Schritte, um:
 
-- ein SSH-Schlüsselpaar zu generieren;
-- den öffentlichen Schlüssel auf Ihrem Server bereitzustellen;
-- sich über SSH sicher zu verbinden.
+- Ein SSH-Schlüsselpaar zu generieren.
+- Den öffentlichen Schlüssel auf Ihrem Server bereitzustellen.
+- Sich über SSH sicher zu verbinden.
 
-Sobald die SSH-Schlüsselauthentifizierung eingerichtet und funktioniert, können Sie weitergehen und die SSH-Dienstkonfiguration verbessern, z. B. durch Ändern des Port oder durch Deaktivieren der Passwortauthentifizierung.
+Sobald die SSH-Schlüsselauthentifizierung eingerichtet ist, können Sie weitergehen und die SSH-Dienstkonfiguration verbessern, z. B. durch Ändern des Port oder durch Deaktivieren der Passwortauthentifizierung.
 
 ### Standard-SSH-Listening-Port ändern <a name="changesshport"></a>
 
@@ -129,7 +128,7 @@ Sie sollten diese oder ähnliche Zeilen vorfinden:
 #ListenAddress 0.0.0.0
 ```
 
-Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
+Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.  
 **Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535.
 
 Sie können die Ihrem System zugewiesenen Ports auch mit dem folgenden Befehl anzeigen:
@@ -162,7 +161,7 @@ Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ de
 
 **Für Ubuntu 24.04 und höher**
 
-Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `ssh.socket` verwaltet.
+Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration in der Datei `ssh.socket` verwaltet.
 
 Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `ListenStream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
 
