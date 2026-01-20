@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2025-08-12
+updated: 2026-01-20
 ---
 
 ## Objectif
