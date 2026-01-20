@@ -133,7 +133,7 @@ Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à c�
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant NIC et cliquez sur `Suivant`{.action}.
+Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant client OVHcloud et cliquez sur `Suivant`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
