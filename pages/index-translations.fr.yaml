@@ -178,12 +178,14 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: P
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutoriels
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Ressources additionnelles
+public-cloud-databases-common-additional-resources: Ressources additionnelles
 public-cloud-databases-common-configuration: Configuration
 public-cloud-databases-common-getting-started: Premiers pas
 public-cloud-databases-common-key-concepts: Concepts clés
 public-cloud-databases-common-migration: Migration
 public-cloud-databases-common-security: Sécurité
 public-cloud-databases-common-troubleshooting: Diagnostic
+public-cloud-databases-common-tutorials: Tutoriels
 public-cloud-databases-common: Commun
 public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
 public-cloud-databases-mongodb-getting-started: MongoDB - Premiers pas
@@ -193,19 +195,19 @@ public-cloud-databases-mongodb: MongoDB
 public-cloud-databases-mysql-guides: MySQL - Guides
 public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-mysql: MySQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-valkey-guides: Valkey - Guides
 public-cloud-databases-valkey-tutorials: Valkey - Tutoriels
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Bases de données Public Cloud
+public-cloud-data-analytics-common-additional-resources: Ressources additionnelles
 public-cloud-data-analytics-common-configuration: Configuration
 public-cloud-data-analytics-common-getting-started: Premiers pas
 public-cloud-data-analytics-common-key-concepts: Concepts clés
 public-cloud-data-analytics-common-migration: Migration
 public-cloud-data-analytics-common-security: Sécurité
 public-cloud-data-analytics-common-troubleshooting: Diagnostic
+public-cloud-data-analytics-common-tutorials: Tutoriels
 public-cloud-data-analytics-common: Commun
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
