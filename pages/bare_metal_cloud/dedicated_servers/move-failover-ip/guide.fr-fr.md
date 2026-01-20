@@ -143,7 +143,7 @@ Cela générera un identifiant unique (token ID), sauvegardez-le.
 
 Ensuite, [connectez-vous à votre compte OVHcloud](/links/ovhcloud), cliquez sur `Network`{.action} dans le menu de gauche, puis sur `IP`{.action}.
 
-Cliquez sur le bouton de paramètres (en forme de roue crantée) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
+Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
