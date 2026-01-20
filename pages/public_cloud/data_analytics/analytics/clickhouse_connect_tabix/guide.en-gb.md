@@ -1,6 +1,6 @@
 ---
 title: ClickHouse - Connect with Tabix
-excerpt: Connect to your Analytics for ClickHouse using Tabix
+excerpt: Find out how to connect to your Analytics for ClickHouse using Tabix
 updated: 2026-01-10
 ---
 
@@ -8,14 +8,14 @@ updated: 2026-01-10
 
 Analytics engines allow you to focus on building and analyzing data while OVHcloud handles the database infrastructure and ensures it operates under proper conditions.
 
-**This guide explains how to connect to a ClickHouse analytics instance using Tabix, a lightweight and user-friendly SQL client for ClickHouse.**
+**This guide explains how to connect to a ClickHouse Analytics instance using Tabix, a lightweight and user-friendly SQL client for ClickHouse.**
 
 ## Requirements
 
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
-- A ClickHouse service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement)
-- [Configure your ClickHouse instance](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections) to accept incoming connections
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A ClickHouse service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement).
+- [Configure your ClickHouse instance](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections) to accept incoming connections.
 - A stable version of Tabix installed and public network connectivity (Internet). This guide was created using Tabix version 22.05.25.
 
 ## Concept
@@ -30,13 +30,13 @@ To do so, we will install Tabix, configure your Analytics service for ClickHouse
 
 ## Instructions
 
-### Installation
+### Installing Tabix
 
 Please follow the [official Tabix documentation](https://tabix.io/doc/Install/) to install Tabix.
 
 We are now ready to learn how to connect to our ClickHouse instance.
 
-### Connect with Tabix
+### Connecing with Tabix
 
 In Tabix, create a new connection and fill in the required fields (name, port, login, password, and SSL certificate if applicable):
 
@@ -44,11 +44,11 @@ In Tabix, create a new connection and fill in the required fields (name, port, l
 
 You are now ready to interact with your Analytics service for ClickHouse.
 
-### Insert and Query Data
+### Inserting and querying data
 
 You can use the SQL editor integrated in Tabix to create your first database and table, and insert sample data. Below is an example that creates the database **company** and table **customer**, then inserts a sample row.
 
-#### Load Data into ClickHouse
+#### Loading data into ClickHouse
 
 To load 100 random rows into a table called `customer`, you can use the SQL editor in Tabix with the following script:
 
@@ -86,7 +86,7 @@ SELECT '100 random rows inserted into the customer table.' AS message;
 
 ![Compass Shell](images/tabixshell.png){.thumbnail}
 
-#### Query Data with the Aggregation Framework
+#### Querying data with the aggregation framework
 
 You can use SQL `GROUP BY` queries in ClickHouse to aggregate your data. For example, to count the number of customers for each age:
 
@@ -103,7 +103,7 @@ This query provides a summary of customers by age in your ClickHouse service.
 
 ## Go further
 
-Explore the [Tabix documentation](https://tabix.io/doc/){.external} to view all the features and learn how to interact with your ClickHouse data.
+Explore the [Tabix documentation](https://tabix.io/doc/) to view all the features and learn how to interact with your ClickHouse data.
 
 [ClickHouse service capabilities](/pages/public_cloud/data_analytics/analytics/clickhouse_capabilities_limitations)
 
@@ -116,4 +116,5 @@ Join our [community of users](/links/community).
 We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our databases service!
