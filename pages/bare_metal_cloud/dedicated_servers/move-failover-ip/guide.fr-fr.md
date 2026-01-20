@@ -137,7 +137,7 @@ Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Cela générera un identifiant unique (token ID), enregistrez-le.
+Cela générera un identifiant unique (token ID), sauvegardez-le.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
