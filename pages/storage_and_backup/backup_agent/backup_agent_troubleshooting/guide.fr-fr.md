@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnostic et dépannage"
 excerpt: "Découvrez comment résoudre les problèmes potentiels liés à Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -96,7 +96,8 @@ Afin de régler ce défaut, augmentez la taille du snapshot via le fichier `/etc
 diffStorageMinimum = 2097152
 ```
 
-Remplacez la valeur en octets par le nombre de Go voulu (Go divisé par 512, pour 3 Go il faut mettre 3221225472 / 512 = 6 291 456)
+Remplacez la valeur par le nombre secteurs souhaité en convertissant d’abord la taille voulue de gigaoctets en octets, puis en divisant ce nombre d'octets par 512.<br>
+Par exemple, pour une taille de 3 Go (3 221 225 472 octets), la valeur à indiquer est 6 291 456 (3 221 225 472 / 512).
 
 Enfin, redémarrez le service veeamservice.
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnóstico e resolução de problemas"
 excerpt: "Descubra como resolver problemas potenciais relacionados ao Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -96,7 +96,8 @@ Para resolver este problema, aumente o tamanho do snapshot através do ficheiro 
 diffStorageMinimum = 2097152
 ```
 
-Substitua o valor em bytes pelo número de GB desejado (GB dividido por 512, para 3 GB é preciso colocar 3221225472 / 512 = 6 291 456)
+Substitua o valor pelo número de setores desejado convertendo primeiro o tamanho desejado de gigabytes para bytes e depois dividindo esse número de bytes por 512.<br>
+Por exemplo, para um tamanho de 3 GB (3.221.225.472 bytes), o valor a especificar é 6.291.456 (3.221.225.472 / 512).
 
 Por fim, reinicie o serviço veeamservice.
 

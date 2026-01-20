@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Rozwiązywanie problemów"
 excerpt: "Dowiedz się, jak rozwiązać potencjalne problemy związane z Aplikacją Backup"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -96,7 +96,8 @@ Aby rozwiązać problem, możesz zwiększyć rozmiar migawki za pomocą pliku `/
 diffStorageMinimum = 2097152
 ```
 
-Zastąp wartość w bajtach pożądaną liczbą GB (GB podzielone przez 512, dla 3 GB musisz wpisać 3221225472 / 512 = 6 291 456)
+Zastąp wartość żądaną liczbą sektorów, zamieniając najpierw żądaną wielkość z gigabajtów na bajty, a następnie dzieląc tę liczbę bajtów przez 512.<br>
+Na przykład: Dla wielkości 3 GB (3 221 225 472 bajtów) wartość do podania to 6 291 456 (3 221 225 472 / 512).
 
 Następnie uruchom ponownie usługę veeamservice.
 

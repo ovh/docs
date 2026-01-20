@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Troubleshooting"
 excerpt: "Learn how to solve potential issues related to Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-20
 ---
 
 <style>
@@ -96,9 +96,8 @@ To resolve the issue, you can increase the size of the snapshot via the `/etc/ve
 diffStorageMinimum = 2097152
 ```
 
-Replace the value in bytes with the desired number of GB (GB divided by 512, for 3GB you must put 3221225472 / 512 = 6 291 456)
-
-Then restart the veeamservice service.
+Replace the value with the desired number of sectors by first converting the desired size from gigabytes to bytes, then dividing this number of bytes by 512.<br>
+For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6,291,456 (3,221,225,472 / 512).
 
 ///
 
