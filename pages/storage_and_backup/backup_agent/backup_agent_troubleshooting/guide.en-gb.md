@@ -55,7 +55,7 @@ Here is a list of potential issues you may encounter with the Backup Agent produ
 
 ## Requirements
 
-- At least one Bare Metal server with the Backup Agent installed on it. Read our guide [How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) for more information.
+- At least one Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" for more information.
 
 ## List of possible issues
 
@@ -96,9 +96,8 @@ To resolve the issue, you can increase the size of the snapshot via the `/etc/ve
 diffStorageMinimum = 2097152
 ```
 
-Replace the value in bytes with the desired number of GB (GB divided by 512, for 3GB you must put 3221225472 / 512 = 6 291 456)
-
-Then restart the veeamservice service.
+Replace the value with the desired number of sectors by first converting the desired size from gigabytes to bytes, then dividing this number of bytes by 512.  
+For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6,291,456 (3,221,225,472 / 512).
 
 ///
 
@@ -116,7 +115,7 @@ We keep your data for 14 days following an agent deletion, storage usage will be
 
 /// details | I want to change the password for accessing the Veeam Service Provider Console (VSPC).
 
-Passwords can be changed via the “Forgot password?” link available on the VSPC console.
+Passwords can be changed via the "Forgot password?" link available on the VSPC console.
 
 ![Reset password 1](images/reset_password_1.png)
 
@@ -127,6 +126,8 @@ Passwords can be changed via the “Forgot password?” link available on the VS
 /// details | I have uninstalled my Veeam Agent, how do I reinstall it?
 
 [Contact OVHcloud support](/links/support) to help you reinstall your agent.
+
+///
 
 /// details | I have reinstalled my server. How do I reinstall the Backup Agent?
 

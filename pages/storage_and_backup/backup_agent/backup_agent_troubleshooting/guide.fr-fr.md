@@ -55,8 +55,7 @@ Retrouvez sur cette page une liste de potentielles problématiques que vous pouv
 
 ## Prérequis
 
-- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) pour plus d'informations.
-
+- Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
 ## Liste des possibles problématiques
 
@@ -97,7 +96,8 @@ Afin de régler ce défaut, augmentez la taille du snapshot via le fichier `/etc
 diffStorageMinimum = 2097152
 ```
 
-Remplacez la valeur en bytes par le nombre de GB voulu (GB divisé par 512, pour 3GB il faut mettre 3221225472 / 512 = 6 291 456)
+Remplacez la valeur par le nombre secteurs souhaité en convertissant d’abord la taille voulue de gigaoctets en octets, puis en divisant ce nombre d'octets par 512.<br>
+Par exemple, pour une taille de 3 Go (3 221 225 472 octets), la valeur à indiquer est 6 291 456 (3 221 225 472 / 512).
 
 Enfin, redémarrez le service veeamservice.
 
@@ -117,7 +117,7 @@ Nous gardons vos données durant 14 jours à la suite d'une suppression d'un age
 
 /// details | Je souhaite modifier le mot de passe d’accès à la Veeam Service Provider Console (VSPC).
 
-Le changement de mot de passe s’effectue via le lien « Forgot password? » disponible sur la console VSPC.
+Le changement de mot de passe s’effectue via le lien « Mot de passe oublié ? » disponible sur la console VSPC.
 
 ![Reset password 1](images/reset_password_1.png)
 
