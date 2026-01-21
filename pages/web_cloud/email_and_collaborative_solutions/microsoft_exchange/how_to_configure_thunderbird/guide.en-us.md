@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Thunderbird for Windows'
 excerpt: 'Find out how to configure your Exchange email address on Thunderbird for Windows'
-updated: 2025-09-19
+updated: 2026-01-21
 ---
 
 <style>
@@ -46,7 +46,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!primary]
 >
-> In our example, we use the server reference: ex?.mail.ovh.net. The "?" must be replaced with the number corresponding to your Exchange service's server.
+> In our example, we use the server reference: ex.mail.ovh.ca
 >
 > To find the server name:
 >
@@ -93,7 +93,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >> Incoming server settings:
 >>
 >>  - **Protocol**: IMAP
->>  - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+>>  - **Hostname**: ex.mail.ovh.ca
 >>  - **Port**: 993
 >>  - **Connection security**: SSL/TLS
 >>  - **Authentication method**: Normal password
@@ -106,7 +106,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >> Outgoing server settings:
 >>
 >>  - **Protocol**: SMTP 
->>  - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+>>  - **Hostname**: ex.mail.ovh.ca
 >>  - **Port**: 587
 >>  - **Connection security**: STARTTLS
 >>  - **Authentication method**: Normal password
@@ -133,7 +133,7 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 > Incoming server settings:
 >
 > - **Protocol**: POP3
-> - **Hostname**: ex?.mail.ovh.net (replace the "?" with your server number)
+> - **Hostname**: ex.mail.ovh.ca
 > - **Port**: 995
 > - **Connection security**: SSL/TLS
 > - **Authentication method**: Normal password
