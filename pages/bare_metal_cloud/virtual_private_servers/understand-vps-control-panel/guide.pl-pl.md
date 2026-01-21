@@ -135,7 +135,7 @@ Te opcje odnoszą się do dodatkowych usług VPS do tworzenia kopii zapasowych i
 >> W porównaniu do ręcznych zrzutów, ta funkcja zwiększa bezpieczeństwo danych, tworząc wiele punktów przywracania w regularnych odstępach czasu.
 >>
 
-Znajdź wszystkie informacje na temat dostępnych rozwiązań kopii zapasowych dla Twojej usługi na [stronie produktu VPS](/links/bare-metal/vps-opcje) i w [naszych odpowiednich przewodnikach](/products/bare-metal-cloud-virtual-private-servers-configuration).
+Znajdź wszystkie informacje na temat dostępnych rozwiązań kopii zapasowych dla Twojej usługi na [stronie produktu VPS](/links/bare-metal/vps-options) i w [naszych odpowiednich przewodnikach](/products/bare-metal-cloud-virtual-private-servers-configuration).
 
 #### Moja oferta <a name="myoffer"></a>
 

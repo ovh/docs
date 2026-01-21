@@ -135,7 +135,7 @@ Queste Opzioni fanno riferimento a servizi VPS supplementari per i backup e il r
 >> Rispetto agli snapshot manuali, questa funzionalità aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
 >>
 
-Troverai tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio sulla [pagina prodotto VPS](/links/bare-metal/vps-opzioni) e nei [nostri manuali corrispondenti](/products/bare-metal-cloud-virtual-private-servers-configuration).
+Troverai tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio sulla [pagina prodotto VPS](/links/bare-metal/vps-options) e nei [nostri manuali corrispondenti](/products/bare-metal-cloud-virtual-private-servers-configuration).
 
 #### Il mio servizio <a name="myoffer"></a>
 
