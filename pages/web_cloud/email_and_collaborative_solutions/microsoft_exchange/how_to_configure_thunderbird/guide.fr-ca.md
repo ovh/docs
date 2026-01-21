@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour Windows'
-updated: 2025-09-19
+updated: 2026-01-21
 ---
 
 <style>
@@ -45,7 +45,7 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+> Dans notre exemple, nous utilisons la mention serveur : ex.mail.ovh.ca
 >
 > Pour retrouver le nom du serveur :
 >
@@ -92,7 +92,7 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 >> Paramètres du serveur de réception :
 >>
 >>  - **Protocole** : IMAP
->>  - **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+>>  - **Nom d'hôte** : ex.mail.ovh.ca
 >>  - **Port** : 993
 >>  - **Sécurité de la connexion** : SSL/TLS
 >>  - **Méthode d'authentification** : Mot de passe normal
@@ -105,7 +105,7 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 >> Paramètres du serveur d'envoi :
 >>
 >>  - **Protocole** : SMTP 
->>  - **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+>>  - **Nom d'hôte** : ex.mail.ovh.ca
 >>  - **Port** : 587
 >>  - **Sécurité de la connexion** : STARTTLS
 >>  - **Méthode d'authentification** : Mot de passe normal
@@ -132,7 +132,7 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 > Paramètres du serveur de réception :
 >
 > - **Protocole** : POP3
-> - **Nom d'hôte** : ex?.mail.ovh.net (remplacez le « ? » par le numéro de votre serveur)
+> - **Nom d'hôte** : ex.mail.ovh.ca
 > - **Port** : 995
 > - **Sécurité de la connexion** : SSL/TLS
 > - **Méthode d'authentification** : Mot de passe normal
