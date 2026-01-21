@@ -1,6 +1,6 @@
 ---
 title: ClickHouse - How to configure your ClickHouse cluster to accept incoming connections
-excerpt: Learn how to configure your ClickHouse cluster to accept incoming connections
+excerpt: Find out how to configure your ClickHouse cluster to accept incoming connections
 updated: 2026-01-10
 ---
 
@@ -12,13 +12,13 @@ This guide explains how to configure your ClickHouse cluster to accept incoming 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud.
 
 ## Instructions
 
-### Configure the ClickHouse  service
+### Configuring the ClickHouse service
 
 Once your ClickHouse service is up and running, you will have to define at least one user and one authorised IP (if not already provided during the order) in order to fully connect to the service (as producer or consumer).
 
@@ -26,7 +26,7 @@ The `Dashboard`{.action} tab automatically updates when your service is ready.
 
 ![ClickHouse General information](images/clickhouse_cluster_ready_to_configure.png){.thumbnail}
 
-#### Set up a user
+#### Setting up a user
 
 Switch to the `Users`{.action} tab. An admin user name `avnadmin` is preconfigured during the service installation. 
 
@@ -42,12 +42,12 @@ Passwords need to be reset from the `Users`{.action} table.
 
 ![Password reset](images/clickhouse_user_password_reset1.png){.thumbnail}
 
-#### Configure authorised IPs
+#### Configuring authorised IPs
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical to authorize the suitable IP addresses in order to successfully access your ClickHouse cluster.
+> For security reasons, the default network configuration doesn't allow any incoming connections. It is therefore critical to authorise the suitable IP addresses in order to successfully access your ClickHouse cluster.
 
-If you did not define the authorised IPs during the order you can do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
+If you did not define the authorised IPs during the order, you can do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
 
 ![Authorised IP](images/clickhouse_authorized_ip.png){.thumbnail}
 
