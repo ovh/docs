@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Mail for macOS'
 excerpt: Find out how to configure your Exchange account on macOS Mail
-updated: 2025-04-28
+updated: 2026-01-21
 ---
 
 <style>
@@ -38,7 +38,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> In this guide, we use as the hostname: ex?.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we use as the hostname: ex.mail.ovh.ca.
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Open the `Web Cloud`{.action} section.
@@ -69,7 +69,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >>
 > **Step 4**
 >>
->> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br><br>
+>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex.mail.ovh.ca**<br>- External URL: **ex.mail.ovh.ca**<br><br>
 >>
 >> > [!warning]
 >> >
