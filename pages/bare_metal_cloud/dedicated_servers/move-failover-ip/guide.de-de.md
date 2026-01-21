@@ -1,6 +1,6 @@
 ---
 title: Eine Additional IP umziehen
-excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
+excerpt: Erfahren Sie, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
 updated: 2026-01-21
 ---
 
@@ -27,7 +27,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 >
 > Migrationen funktionieren nur für ganze Blöcke. Es ist nicht möglich, einzelne IPs innerhalb eines Blocks zu migrieren.
 
-**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen. Außerdem wird erklärt, wie Sie eine zusätzliche Additional IP von einem So You Start Kundencenter auf ein OOVHcloud Kundenceter übertragen können.**
+**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen. Außerdem wird erklärt, wie Sie eine Additional IP von einem So You Start Kundencenter in ein OVHcloud Kundencenter übertragen können.**
 
 ## Voraussetzungen
 
@@ -87,9 +87,9 @@ Wählen Sie im Popup-Fenster aus dem Menü den Dienst aus, zu dem die IP-Adresse
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
 > [!warning]
-> Bitte beachten Sie, dass bei einigen Produkten IP-Adressen (oder Blöcke) zunächst in einen IP-Parkplatz (einen temporären Speicherort) verschoben werden müssen, bevor sie zum gewünschten Produkt verschoben werden können.
+> Beachten Sie, dass bei einigen Produkten IP-Adressen (oder Blöcke) zunächst in einen IP-Parkplatz (einen temporären Speicherort) verschoben werden müssen, bevor sie zum gewünschten Produkt verschoben werden können.
 >
-> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie bitte **die vRack-Verwaltungsschnittstelle**, auf die Sie zugreifen können, indem Sie das Menü `Netzwerk`{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
+> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie die **vRack-Verwaltung**, auf die Sie zugreifen können, indem Sie das Menü `Netzwerk`{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
 >
 
 ### Additional IP über die API umziehen
@@ -117,7 +117,7 @@ Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 - `serviceName`: die Referenz des Zielservers
 - `ip`: die umzuziehende Additional IP
 
-### Verschieben einer zusätzlichen Additional IP von einem So You Start Kundencenter zu einem OVHcloud Kundencenter.
+### Verschieben einer Additional IP von einem So You Start Kundencenter zu einem OVHcloud Kundencenter
 
 Um eine Additional IP von einem SYS Kundencenter zu einem OVHcloud Kundencenter zu transferieren gibt es einige Dinge, die Sie beachten sollten:
 
@@ -133,7 +133,7 @@ Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failove
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Wählen Sie `Auf eine OVH-Dienstleistung umziehen`, geben Sie Ihren NIC-Handle ein und klicken Sie auf `Weiter`{.action}.
+Wählen Sie `Auf eine OVH-Dienstleistung umziehen`, geben Sie Ihre NIC-Handle ein und klicken Sie auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
@@ -146,10 +146,6 @@ Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), Klicken Sie im
 Klicken Sie auf das Zahnrad auf der rechten Seite und wählen Sie `Meine IP-Adressen von SyS bei OVHcloud importieren`{.action}.
 
 ![SoYouStart to ovh](images/import-ip-to-ovh.png){.thumbnail}
-
-Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token-ID (die im Konto So you start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
-
-![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
 Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token-ID (die im Konto So you start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
 
@@ -166,11 +162,11 @@ Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr ange
 
 ![soyoustart to ovh](images/Step-3.png){.thumbnail}
 
-Markieren Sie das Kästchen `Ich akzeptiere die Verträge`{.action} um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
+Markieren Sie `Ich akzeptiere die Verträge`{.action} um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/Step-4.png){.thumbnail}
 
-Notieren Sie sich die Bestellübersicht und klicken Sie auf `Bestätigen`{.action}, um sie zu bestätigen.
+Beachten Sie die Bestellübersicht und klicken Sie auf `Bestätigen`{.action}.
 
 ![soyoustart to ovh](images/Step-5.png){.thumbnail}
 
