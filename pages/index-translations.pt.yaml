@@ -194,6 +194,14 @@ public-cloud-databases-mongodb: MongoDB
 public-cloud-databases-mysql-guides: MySQL - Guides
 public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-mysql: MySQL
+public-cloud-databases-postgresql-additional-resources: Recursos adicionais
+public-cloud-databases-postgresql-configuration: Configuração
+public-cloud-databases-postgresql-getting-started: Introdução
+public-cloud-databases-postgresql-key-concepts: Conceitos-chave
+public-cloud-databases-postgresql-migration: Migração
+public-cloud-databases-postgresql-security: Segurança
+public-cloud-databases-postgresql-troubleshooting: Diagnóstico
+public-cloud-databases-postgresql-tutorials: Tutoriais
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-valkey-guides: Valkey - Guides
 public-cloud-databases-valkey-tutorials: Valkey - Tutorials
