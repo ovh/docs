@@ -1,7 +1,7 @@
 ---
 title: "How to secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
-updated: 2025-11-04
+updated: 2026-01-21
 ---
 
 ## Objective
@@ -32,7 +32,18 @@ When you order your VPS, you can choose a distribution or operating system to in
 
 The following examples presume that you are logged in as a [user with elevated permissions](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Updating your system
+**Table of Contents:**
+
+- [Updating your system](#os-update)
+- [Create and use an SSH key](#sshkey)
+- [Changing the default SSH listening port](#changesshport)
+- [Creating a user with restricted rights](#createuser)
+- [Configuring the internal firewall (iptables)](#iptables)
+- [Installing Fail2ban](#fail2ban)
+- [Configuring the OVHcloud Network Firewall](#networkfirewall)
+- [Backing up your system and your data](#backup)
+
+### Updating your system <a name="os-update"></a>
 
 Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
 
@@ -71,7 +82,29 @@ Developers of distributions and operating systems offer frequent software packag
 
 This operation needs to be performed regularly to keep a system up-to-date.
 
+### Create and use an SSH key <a name="sshkey"></a>
+
+SSH key authentication is one of the most effective methods for securing access to your VPS.<br>
+Unlike password authentication, it relies on a pair of cryptographic keys and significantly reduces the risk of brute-force attacks.
+
+We strongly recommend setting up an SSH key during your first connection to your server, and then prioritising this method for your administrative access.
+
+Depending on your environment and the tool you use to connect to your VPS, refer to one of the following guides:
+
+- [How to create and use authentication keys for SSH connections to OVHcloud servers](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Tutorial - How to use PuTTY for SSH connections and authentication](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+
+These guides detail the steps to:
+
+- generate an SSH key pair;
+- deploy the public key on your server;
+- securely connect via SSH.
+
+Once SSH key authentication is configured and working, you can go further by enhancing the SSH service configuration, for example by changing the listening port or disabling password authentication.
+
 ### Changing the default SSH listening port <a name="changesshport"></a>
+
+Before making any changes to the SSH service, ensure you have a working SSH key access to avoid losing access to your server.
 
 > [!primary]
 >
@@ -183,7 +216,7 @@ If you are locked out of your system, you can use our [rescue mode](/pages/bare_
 
 In general, tasks that do not require root privileges should be performed via a standard user. Please refer to the information in [this guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) for details.
 
-### Configuring the internal firewall (iptables)
+### Configuring the internal firewall (iptables) <a name="iptables"></a>
 
 Common GNU/Linux distributions come with a firewall service named iptables. By default, this service does not have any active rules. You can verify this by typing the following command:
 
@@ -195,7 +228,7 @@ You can learn more about iptables in our [Firewall guide](/pages/bare_metal_clou
 
 It is recommended that you create and adjust firewall rules according to your needs. For more detailed information on the variety of manipulations that are possible, please refer to the relevant section in the official documentation of the distribution used.
 
-### Installing Fail2ban
+### Installing Fail2ban <a name="fail2ban"></a>
 
 Fail2ban is an intrusion prevention software framework designed to block IP addresses from which bots or attackers try to penetrate your system. This software package is recommended, even essential in some cases, to guard your server against "Brute Force" or "Denial of Service" attacks.
 
@@ -286,13 +319,13 @@ Fail2ban has many settings and filters for customization as well as preset optio
 
 For any additional information and recommendations concerning Fail2ban, please refer to the [official documentation](https://www.fail2ban.org/wiki/index.php/Main_Page) of this tool.
 
-### Configuring the OVHcloud Network Firewall 
+### Configuring the OVHcloud Network Firewall <a name="networkfirewall"></a>
 
 OVHcloud solutions include the option of enabling a firewall at the entry point to the infrastructure, called the Network Firewall. Configuring it correctly allows connections to be blocked before they even arrive on your server.
 
 Please refer to the [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network) if you would like to activate it.
 
-### Backing up your system and your data
+### Backing up your system and your data <a name="backup"></a>
 
 The concept of security is not limited to protecting a system against attacks.
 

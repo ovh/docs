@@ -1,12 +1,8 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Come impostare misure di sicurezza di base per proteggere il VPS da attacchi e accessi non autorizzati"
-updated: 2025-11-04
+updated: 2026-01-21
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -18,6 +14,17 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 >
 > OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
+
+**Indice:**
+
+- [Aggiorna il tuo sistema operativo](#os-update)
+- [Creare e utilizzare una chiave SSH](#sshkey)
+- [Modifica la porta di default SSH](#changesshport)
+- [Crea un account con diritti utente limitati](#createuser)
+- [Configura il firewall interno (iptables)](#iptables)
+- [Installer Fail2ban](#fail2ban)
+- [Configurazione del Network Firewall OVHcloud](#networkfirewall)
+- [Proteggi il tuo sistema e i tuoi dati](#backup)
 
 ## Prerequisiti
 
@@ -35,7 +42,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 
 Questi esempi presuppongono la connessione come [utente con elevate autorizzazioni](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Aggiorna il tuo sistema operativo
+### Aggiorna il tuo sistema operativo <a name="os-update"></a>
 
 Gli sviluppatori di distribuzioni e di sistemi operativi propongono frequenti aggiornamenti di pacchetti, molto spesso per ragioni di sicurezza.<br>
 Garantire l'aggiornamento della distribuzione o del sistema operativo è un elemento essenziale per proteggere il VPS.
@@ -75,7 +82,29 @@ Garantire l'aggiornamento della distribuzione o del sistema operativo è un elem
 
 Questa operazione deve essere effettuata regolarmente per mantenere un sistema aggiornato.
 
+### Creare e utilizzare una chiave SSH <a name="sshkey"></a>
+
+L'autenticazione tramite chiave SSH è uno dei metodi più efficaci per proteggere l'accesso al tuo VPS.<br>
+A differenza dell'autenticazione tramite password, si basa su una coppia di chiavi crittografiche e permette di ridurre notevolmente i rischi di attacchi per forza bruta.
+
+Ti consigliamo vivamente di configurare una chiave SSH già alla prima connessione al tuo server, e di privilegiare questo metodo per gli accessi amministrativi.
+
+A seconda del tuo ambiente e dello strumento utilizzato per connettersi al tuo VPS, consulta uno dei seguenti guide:
+
+- [Come creare e utilizzare chiavi di autenticazione per le connessioni SSH ai server OVHcloud](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Guida - Come utilizzare PuTTY per le connessioni SSH e l'autenticazione](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+
+Queste guide dettagliano i passaggi per:
+
+- generare una coppia di chiavi SSH;
+- distribuire la chiave pubblica sul tuo server;
+- connettersi in modo sicuro tramite SSH.
+
+Una volta che l'autenticazione tramite chiave SSH è configurata e funzionante, puoi andare oltre rafforzando la configurazione del servizio SSH, ad esempio modificando la porta di ascolto o disattivando l'autenticazione tramite password.
+
 ### Modifica la porta di default SSH <a name="changesshport"></a>
+
+Prima di apportare qualsiasi modifica al servizio SSH, assicurati di disporre di un accesso funzionante tramite una chiave SSH per evitare di perdere l'accesso al tuo server.
 
 > [!primary]
 >
@@ -190,7 +219,7 @@ Se sei bloccato fuori dal tuo sistema, puoi utilizzare il nostro ambiente [Rescu
 
 In genere, i compiti che non richiedono privilegi root devono essere eseguiti tramite un utente standard. Per maggiori informazioni, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Configura il firewall interno (iptables)
+### Configura il firewall interno (iptables) <a name="iptables"></a>
 
 Le distribuzioni GNU/Linux correnti sono fornite con un servizio di firewall chiamato iptables, che di default non dispone di regole attive. Per verificarlo, esegui il comando:
 
@@ -202,7 +231,7 @@ Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](/page
 
 Ti consigliamo di creare e adattare le regole del firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni, consulta la documentazione ufficiale della distribuzione utilizzata.
 
-### Installer Fail2ban
+### Installer Fail2ban <a name="fail2ban"></a>
 
 Fail2ban è un framework di prevenzione contro le intrusioni il cui scopo è bloccare gli indirizzi IP da cui i robot o gli aggressori cercano di accedere al tuo sistema.<br>
 Questo pacchetto è indispensabile, in alcuni casi, per proteggere il tuo server dagli attacchi di tipo *Brute Force* o *Denial of Service*.
@@ -294,13 +323,13 @@ Fail2ban dispone di numerosi parametri e filtri di personalizzazione e di opzion
 
 Per maggiori informazioni e raccomandazioni su Fail2ban, consulta [la documentazione ufficiale](https://www.fail2ban.org/wiki/index.php/Main_Page) di questo tool.
 
-### Configurazione del Network Firewall OVHcloud 
+### Configurazione del Network Firewall OVHcloud <a name="networkfirewall"></a>
 
 Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Network Firewall. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
 
 Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
-### Proteggi il tuo sistema e i tuoi dati
+### Proteggi il tuo sistema e i tuoi dati <a name="backup"></a>
 
 Il concetto di sicurezza non si limita alla protezione di un sistema dagli attacchi.
 

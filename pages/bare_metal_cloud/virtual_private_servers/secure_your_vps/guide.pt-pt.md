@@ -1,12 +1,8 @@
 ---
 title: "Proteger um VPS"
 excerpt: "Saiba como implementar medidas básicas de segurança para proteger o seu VPS de ataques e acessos não autorizados"
-updated: 2025-11-04
+updated: 2026-01-21
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -36,7 +32,18 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 
 Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autorizações elevadas](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Atualizar o sistema operativo
+**Índice:**
+
+- [Atualizar o sistema operativo](#os-update)
+- [Criar e utilizar uma chave SSH](#sshkey)
+- [Modificar a porta de escuta SSH](#changesshport)
+- [Criar um utilizador com direitos restritos](#createuser)
+- [Configurar firewall interna (iptables)](#iptables)
+- [Instalar o Fail2ban](#fail2ban)
+- [Configuração da Network Firewall OVHcloud](#networkfirewall)
+- [Proteger o sistema e os dados](#backup)
+
+### Atualizar o sistema operativo <a name="os-update"></a>
 
 Os programadores de distribuições e de sistemas operativos propõem atualizações frequentes de pacotes, muitas vezes por razões de segurança.<br>
 Assegurar a atualização da sua distribuição ou sistema operativo é um ponto essencial para proteger o seu VPS.
@@ -76,7 +83,29 @@ Assegurar a atualização da sua distribuição ou sistema operativo é um ponto
 
 Esta operação deve ser efetuada regularmente para manter um sistema atualizado.
 
+### Criar e utilizar uma chave SSH <a name="sshkey"></a>
+
+A autenticação com chave SSH é uma das formas mais eficazes de proteger o acesso ao seu VPS.<br>
+Ao contrário da autenticação com palavra-passe, esta baseia-se num par de chaves criptográficas e permite reduzir significativamente os riscos de ataques por força bruta.
+
+Recomendamos vivamente que configure uma chave SSH logo na primeira ligação ao seu servidor e que depois prefira esta metodologia para os seus acessos de administrador.
+
+Consoante o seu ambiente e a ferramenta utilizada para se ligar ao seu VPS, consulte um dos seguintes guias:
+
+- [Como criar e utilizar chaves de autenticação para ligações SSH aos servidores OVHcloud](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+- [Tutorial - Como utilizar o PuTTY para ligações SSH e autenticação](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
+
+Estes guias detalham as etapas para:
+
+- gerar um par de chaves SSH;
+- implementar a chave pública no seu servidor;
+- ligar-se de forma segura através de SSH.
+
+Depois de configurada e funcional a autenticação com chave SSH, pode ir mais longe reforçando a configuração do serviço SSH, por exemplo alterando a porta de escuta ou desativando a autenticação com palavra-passe.
+
 ### Modificar a porta de escuta SSH <a name="changesshport"></a>
+
+Antes de qualquer modificação do serviço SSH, certifique-se de ter um acesso funcional através de uma chave SSH para evitar a perda de acesso ao seu servidor.
 
 > [!primary]
 >
@@ -192,7 +221,7 @@ Se você estiver bloqueado fora do seu sistema, pode usar o nosso ambiente [modo
 
 Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para mais informações consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-### Configurar firewall interna (iptables)
+### Configurar firewall interna (iptables) <a name="iptables"></a>
 
 As distribuições GNU/Linux comuns são fornecidas com um serviço de firewall designado iptables. A configuração inicial não tem nenhuma regra predefinida (ativa). Para confirmar o tipo de configuração, deverá executar o comando:
 
@@ -204,7 +233,7 @@ Para mais informações sobre iptables, consulte o nosso [guia dedicado](/pages/
 
 Recomendamos que crie e adapte regras de firewall à sua utilização. Para mais informações sobre as várias operações, consulte a documentação oficial da distribuição utilizada.
 
-### Instalar o Fail2ban
+### Instalar o Fail2ban <a name="fail2ban"></a>
 
 Fail2ban é um framework de prevenção contra as intrusões cujo objetivo é bloquear os endereços IP a partir dos quais bots ou atacantes tentam penetrar no seu sistema.<br>
 Este pacote é recomendado, ou mesmo indispensável em certos casos, para proteger o seu servidor contra ataques do tipo *Brute Force* ou *Denial of Service*.
@@ -296,13 +325,13 @@ Fail2ban dispõe de numerosos parâmetros e filtros de personalização, bem com
 
 Para mais informações e recomendações sobre o Fail2ban, não hesite em consultar [a documentação oficial](https://www.fail2ban.org/wiki/index.php/Main_Page) desta ferramenta.
 
-### Configuração da Network Firewall OVHcloud 
+### Configuração da Network Firewall OVHcloud <a name="networkfirewall"></a>
 
 As soluções da OVHcloud incluem a possibilidade de ativar uma firewall no ponto de entrada da infraestrutura, designada Network Firewall. Uma configuração correta desta firewall permite bloquear as ligações antes mesmo que estas cheguem ao seu servidor.
 
 Consulte o guia "[Configurar a Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)" se desejar ativá-la.
 
-### Proteger o sistema e os dados
+### Proteger o sistema e os dados <a name="backup"></a>
 
 O conceito de segurança não se limita à proteção de um sistema contra ataques.
 
