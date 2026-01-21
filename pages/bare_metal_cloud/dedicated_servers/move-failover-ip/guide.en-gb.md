@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2026-01-20
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -139,7 +139,7 @@ This will generate a token ID, save it.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Next, log into your OVHcloud account, click on `Network`{.action} in the left menu and then on `IP`{.action}.
+Next, [log into your OVHcloud account](/links/manager), click on `Network`{.action} in the left menu and then on `IP`{.action}.
 
 Click on the cogwheel on the right side and select `Import IP addresses from SyS to OVHcloud`{.action}.
 

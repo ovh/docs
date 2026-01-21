@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2026-01-20
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -141,7 +141,7 @@ Cela générera un identifiant unique (token ID), sauvegardez-le.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Ensuite, [connectez-vous à votre compte OVHcloud](/links/ovhcloud), cliquez sur `Network`{.action} dans le menu de gauche, puis sur `IP`{.action}.
+Ensuite, [connectez-vous à votre compte OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu de gauche, puis sur `IP`{.action}.
 
 Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
 
@@ -170,7 +170,7 @@ Prenez note du récapitulatif de la commande et cliquez sur ` Confirmer`{.action
 
 Vous serez redirigé vers une nouvelle page pour effectuer le paiement.
 
-Une fois le paiement effectué, votre Additional IP sera transférée vers votre compte OVHcloud et associée au serveur sélectionné. Ce processus peut prendre un certain temps.
+Une fois le paiement effectué, votre Additional IP sera transférée vers votre compte OVHcloud et associée au serveur sélectionné. Ce processus peut prendre du temps.
 
 ### Restrictions <a name="limitations"></a>
 
