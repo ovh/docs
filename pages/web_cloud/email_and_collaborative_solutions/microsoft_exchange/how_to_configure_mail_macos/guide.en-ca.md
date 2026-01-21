@@ -69,7 +69,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >>
 > **Step 4**
 >>
->> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex.mail.ovh.ca**(#addaccount))<br>- External URL: **ex.mail.ovh.ca** (#addaccount))<br><br>
+>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex.mail.ovh.ca**<br>- External URL: **ex.mail.ovh.ca**<br><br>
 >>
 >> > [!warning]
 >> >
