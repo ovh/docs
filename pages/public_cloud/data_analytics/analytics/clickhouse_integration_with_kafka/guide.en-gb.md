@@ -1,5 +1,5 @@
 ---
-title: ClickHouse – Real-Time Analytics with Kafka Integration
+title: ClickHouse – Real-time Analytics with Kafka integration
 excerpt: Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange
 updated: 2026-01-15
 ---
