@@ -135,7 +135,7 @@ Estas Opções referem-se a serviços VPS adicionais para cópias de segurança 
 >> Relativamente aos snapshots manuais, esta funcionalidade aumenta a segurança dos dados ao criar vários pontos de restauração em intervalos regulares.
 >>
 
-Encontre todas as informações sobre as soluções de cópia de segurança disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-opções) e nos [nossos guias respetivos](/products/bare-metal-cloud-virtual-private-servers-configuration).
+Encontre todas as informações sobre as soluções de cópia de segurança disponíveis para o seu serviço na [página do produto VPS](/links/bare-metal/vps-options) e nos [nossos guias respetivos](/products/bare-metal-cloud-virtual-private-servers-configuration).
 
 #### A minha oferta <a name="myoffer"></a>
 

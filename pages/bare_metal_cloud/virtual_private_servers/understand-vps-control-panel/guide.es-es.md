@@ -135,7 +135,7 @@ Estas opciones se refieren a servicios VPS adicionales para las copias de seguri
 >> En comparación con las instantáneas manuales, esta funcionalidad aumenta la seguridad de los datos al crear varios puntos de restauración a intervalos regulares.
 >>
 
-Encuentre toda la información sobre las soluciones de copia de seguridad disponibles para su servicio en la [página del producto VPS](/links/bare-metal/vps-opciones) y en [nuestras guías correspondientes](/products/bare-metal-cloud-virtual-private-servers-configuration).
+Encuentre toda la información sobre las soluciones de copia de seguridad disponibles para su servicio en la [página del producto VPS](/links/bare-metal/vps-options) y en [nuestras guías correspondientes](/products/bare-metal-cloud-virtual-private-servers-configuration).
 
 #### Mi solución <a name="myoffer"></a>
 
