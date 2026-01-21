@@ -26,9 +26,9 @@ This guide explains how to connect to a ClickHouse cluster using the CLI.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- A [ClickHouse cluster running](/pages/public_cloud/data_analytics/analytics/clickhouse_create_cluster) on OVHcloud Public Cloud and [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections).
 
 ## Instructions
 
@@ -39,13 +39,13 @@ This guide explains how to connect to a ClickHouse cluster using the CLI.
 >
 > Check also that the user has granted ACLs for the target topics.
 
-#### Download server and user certificates
+#### Downloading server and user certificates
 
 In order to connect to the ClickHouse service, it is required to use server and user certificates.
 
 ##### Server certificate
 
-The server CA (*Certificate Authority*) certificate can be downloaded from the `Dashboard`{.action} tab:
+The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab:
 
 ![ClickHouse server certificate](images/clickhouse_get_server_certificate.png){.thumbnail}
 
@@ -55,9 +55,9 @@ The user certificate and the user access key can be downloaded from the `Users`{
 
 ![User informations](images/clickhouse_user_certificate_and_access_key.png){.thumbnail}
 
-#### Install a ClickHouse CLI
+#### Installing the ClickHouse CLI
 
-As part of the official ClickHouse installation, you will have access to several tools, including the standard `clickhouse-client` CLI. You can refer to the official guide here: [ClickHouse Client official](https://clickhouse.com/docs/interfaces/cli){.external}.
+As part of the official ClickHouse installation, you will have access to several tools, including the standard `clickhouse-client` CLI. You can refer to the official guide: [ClickHouse Client official](https://clickhouse.com/docs/interfaces/cli).
 
 We recommend using the lightweight `clickhouse-client` CLI instead, which does not require a JVM and provides a simple way to execute queries and manage your ClickHouse cluster.
 
@@ -67,13 +67,13 @@ You can create a configuration file to simplify connecting to your ClickHouse se
 
 The ClickHouse Client can be configured using an XML or YAML file. The client searches for configuration files in the following order:
 
-1. A file specified with `-c` / `--config` / `--config-file`
-2. `./clickhouse-client.[xml|yaml|yml]`
-3. `$XDG_CONFIG_HOME/clickhouse/config.[xml|yaml|yml]` (or `~/.config/clickhouse/config.[xml|yaml|yml]` if XDG_CONFIG_HOME is not set)
-4. `~/.clickhouse-client/config.[xml|yaml|yml]`
-5. `/etc/clickhouse-client/config.[xml|yaml|yml]`
+1. A file specified with `-c` / `--config` / `--config-file`.
+2. `./clickhouse-client.[xml|yaml|yml]`.
+3. `$XDG_CONFIG_HOME/clickhouse/config.[xml|yaml|yml]` (or `~/.config/clickhouse/config.[xml|yaml|yml]` if XDG_CONFIG_HOME is not set).
+4. `~/.clickhouse-client/config.[xml|yaml|yml]`.
+5. `/etc/clickhouse-client/config.[xml|yaml|yml]`.
 
-/// details | **Example XML Configuration**
+/// details | **Example XML configuration**
 
 Create a file named `clickhouse-client.xml` with the following content:
 
@@ -99,11 +99,11 @@ Create a file named `clickhouse-client.xml` with the following content:
 </config>
 ```
 
-For more information, see the [sample official configuration file](https://github.com/ClickHouse/ClickHouse/blob/master/programs/client/clickhouse-client.xml){.external}
+For more information, see the [sample official configuration file](https://github.com/ClickHouse/ClickHouse/blob/master/programs/client/clickhouse-client.xml).
 
 ///
 
-/// details | **Example YAML Configuration**
+/// details | **Example YAML configuration**
 
 Create a file named `clickhouse-client.yml` with the following minimal content:
 
@@ -120,7 +120,7 @@ openSSL:
 
 Change these values according to your own cluster configuration.
 
-##### **Insert data into ClickHouse**
+##### **Inserting data into ClickHouse**
 
 For this first example, let's insert a test row into the `my_table` table in the `test_db` database.
 
@@ -128,7 +128,7 @@ For this first example, let's insert a test row into the `my_table` table in the
 clickhouse-client --query "INSERT INTO test_db.my_table (id, message) VALUES (1, 'test-message-content')"
 ```
 
-##### **Query data into ClickHouse**
+##### **Querying data into ClickHouse**
 
 Retrieve all the data from the `my_table` table in the `test_db` database:
 
