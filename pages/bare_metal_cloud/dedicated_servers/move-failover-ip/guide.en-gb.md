@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2026-01-06
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -27,7 +27,7 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
-**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API.**
+**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API. It also explains how to move an Additional IP from a So you Start account to an OVHcloud account.**
 
 ## Requirements
 
@@ -62,7 +62,7 @@ The geolocation of an IP address is independent of its region of attachment.
 
 If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland (eu-central-war) and ordered on a server located in a French datacentre (eu-west-gra) cannot be moved to a server located in a Polish datacentre (eu-central-war). The IP block can only be moved to an eligible server located in a French datacentre.
 
-### Moving an IP from the OVHcloud Control Panel
+### Moving an Additional IP from the OVHcloud Control Panel
 
 > [!warning]
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
@@ -90,7 +90,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 > To move IP blocks to a specific vRack network, please use **the vRack management interface**, which you can access by opening the `Network`{.action} menu in the left-hand sidebar, then selecting `vRack private network`{.action}.
 >
 
-### Moving an IP via the API
+### Moving an Additional IP via the API
 
 Log in to the OVHcloud [API webpage](/links/api).
 
@@ -114,6 +114,63 @@ To move the IP address, use the following call:
 
 - `serviceName`: the destination dedicated server reference
 - `ip`: the Additional IP address to move
+
+### Moving an Additional IP from a So you Start account to an OVHcloud account
+
+To move an Additional IP from a SYS account to an OVHcloud account, there are a few things you need to consider:
+
+- Moving an Additional IP incurs an installation fee. The IP address will not be moved if the invoice remains unpaid.
+- It is not possible to move an Additional IP from an OVHcloud account to a So you Start account.
+- Ensure that the server to which you are moving the Additional IP is in the same compatible region as the IP. See the ‘Limitations’ section below.
+
+To begin, log into your So you Start account and click on `IP`{.action} in the main dashboard.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Click on the cogwheel next to the corresponding IP and select `Move the failover IP`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Select `move to an OVH service`, enter your NIC handle and click on `Next`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+This will generate a token ID, save it.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+Next, [log into your OVHcloud account](/links/manager), click on `Network`{.action} in the left menu and then on `IP`{.action}.
+
+Click on the cogwheel on the right side and select `Import IP addresses from SyS to OVHcloud`{.action}.
+
+![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+A pop up window will appear, enter the Additional IP (or block) and the token ID (retrieved in the So you start account). Then, click on `Next`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Select the destination server and click on `Next`{.action}. If the dedicated server is compatible with the IP, a green message will appear. If it is not, you will receive an error message.
+
+Click on `Next`{.action}.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+In the next window, the duration is be automatically selected and the fee is displayed, click on `Next`{.action} to proceed.
+
+![soyoustart to ovh](images/Step-3.png){.thumbnail}
+
+Check the box `Accept the contracts`{.action} to agree to the terms of the service once you have read them. Then, click on `Next`{.action}.
+
+![soyoustart to ovh](images/Step-4.png){.thumbnail}
+
+Take note of the order summary and click on `Confirm`{.action} to confirm it.
+
+![soyoustart to ovh](images/Step-5.png){.thumbnail}
+
+You will be redirected to a new page to make the payment.
+
+Once the payment is done, your Addtional IP will be transferred to your OVHcloud account and linked to the selected server. This process can take some time.
 
 ### Limitations <a name="limitations"></a>
 
