@@ -1,7 +1,7 @@
 ---
 title: "Proteger un VPS"
 excerpt: "Esta guía explica cómo aplicar medidas de seguridad básicas para proteger su VPS de ataques y accesos no autorizados"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objetivo

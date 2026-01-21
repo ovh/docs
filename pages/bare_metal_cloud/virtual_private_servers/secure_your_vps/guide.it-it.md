@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Come impostare misure di sicurezza di base per proteggere il VPS da attacchi e accessi non autorizzati"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Obiettivo

@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un VPS
 excerpt: "Descubra cómo gestionar un VPS en su área de cliente de OVHcloud y descubra los primeros pasos para su uso, incluyendo las conexiones remotas y las medidas de seguridad"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objetivo
@@ -157,7 +157,7 @@ La puesta en marcha de su VPS pasa generalmente por el uso y la configuración d
 Para ello, le recomendamos realizar las siguientes acciones:
 
 - [Editar la zona DNS](/pages/web_cloud/domains/dns_zone_edit) añadiendo las entradas necesarias para que el dominio apunte a la dirección IPv4 de su VPS.
-- [Activar un certificado SSL gratuito (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) para asegurar el acceso a sus sitios web a través de HTTPS.
+- [Activar un certificado SSL gratuito (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate) para asegurar el acceso a sus sitios web a través de HTTPS.
 
 ## Más información
 

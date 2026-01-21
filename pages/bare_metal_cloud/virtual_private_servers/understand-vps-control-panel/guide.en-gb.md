@@ -1,7 +1,7 @@
 ---
 title: "VPS - Management from the OVHcloud Control Panel"
 excerpt: "Find out how to use the OVHcloud Control Panel to manage your VPS: dashboard, reinstallation, reboot, backups and service configuration"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objective

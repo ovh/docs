@@ -1,7 +1,7 @@
 ---
 title: "VPS - Activar los registros de inicio de Windows"
 excerpt: "Descubra cómo activar los registros de inicio de Windows para facilitar el diagnóstico y la resolución de problemas de inicio de su VPS"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objetivo

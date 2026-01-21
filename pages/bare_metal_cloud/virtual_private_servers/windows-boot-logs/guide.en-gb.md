@@ -1,7 +1,7 @@
 ---
 title: "VPS - Enable Windows boot logs"
 excerpt: "Find out how to enable Windows boot logs to help with diagnosing and troubleshooting your VPS boot issues"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objective

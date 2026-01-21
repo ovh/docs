@@ -1,7 +1,7 @@
 ---
 title: "VPS - Ativar os registos de arranque do Windows"
 excerpt: "Descubra como ativar os registos de arranque do Windows para facilitar o diagnóstico e a resolução de problemas de arranque do seu VPS"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objetivo

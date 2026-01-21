@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić Twój serwer VPS przed atakami i nieautoryzowanym dostępem"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Wprowadzenie

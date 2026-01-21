@@ -1,7 +1,7 @@
 ---
 title: "Einen VPS absichern"
 excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren VPS vor Angriffen und unbefugtem Zugriff zu schützen"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Ziel

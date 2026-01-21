@@ -1,7 +1,7 @@
 ---
 title: Getting started with a VPS
 excerpt: "Find out how to manage a VPS in your OVHcloud Control Panel and discover the first steps of its use, including remote connections and security measures"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objective
@@ -157,7 +157,7 @@ Putting your VPS online usually involves using and configuring a domain name.
 For this, we recommend performing the following actions:
 
 - [Edit the DNS zone](/pages/web_cloud/domains/dns_zone_edit) by adding the necessary entries to point the domain to the IPv4 address of your VPS.
-- [Enable a free SSL certificate (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) to secure access to your websites via HTTPS.
+- [Enable a free SSL certificate (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate) to secure access to your websites via HTTPS.
 
 ## Go further
 

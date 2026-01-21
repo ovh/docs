@@ -1,7 +1,7 @@
 ---
 title: "VPS - Attivare i log di avvio Windows"
 excerpt: "Scopri come attivare i log di avvio Windows per facilitare la diagnostica e la risoluzione dei problemi di avvio del tuo VPS"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Obiettivo

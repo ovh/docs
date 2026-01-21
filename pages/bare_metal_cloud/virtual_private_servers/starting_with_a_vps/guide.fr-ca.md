@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Découvrez comment gérer un VPS dans votre espace client OVHcloud et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objectif
@@ -157,7 +157,7 @@ La mise en ligne de votre VPS passe généralement par l’utilisation et la con
 Pour cela, nous vous conseillons d'effectuer les actions suivantes :
 
 - [Éditer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) en ajoutant les entrées nécessaires pour faire pointer le domaine vers l'adresse IPv4 de votre VPS.
-- [Activer un certificat SSL gratuit (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) afin de sécuriser l'accès à vos sites web via HTTPS.
+- [Activer un certificat SSL gratuit (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate) afin de sécuriser l'accès à vos sites web via HTTPS.
 
 ## Allez plus loin
 

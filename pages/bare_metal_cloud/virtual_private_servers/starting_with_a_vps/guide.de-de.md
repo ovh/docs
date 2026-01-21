@@ -1,7 +1,7 @@
 ---
 title: Einstieg in einen VPS
 excerpt: "Erfahren Sie, wie Sie einen VPS in Ihrem OVHcloud Kundencenter verwalten und die ersten Schritte seiner Nutzung entdecken, einschließlich Fernverbindungen und Sicherheitsmaßnahmen"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Ziel
@@ -157,7 +157,7 @@ Um einen VPS über das Web erreichbar zu machen, wird ihm in der Regel ein Domai
 Dazu empfehlen wir Ihnen, folgende Aktionen auszuführen:
 
 - [Bearbeiten Sie die DNS-Zone](/pages/web_cloud/domains/dns_zone_edit), indem Sie die erforderlichen Einträge hinzufügen, um den Domainnamen auf die IPv4-Adresse Ihres VPS zu verweisen.
-- [Aktivieren Sie ein kostenloses SSL-Zertifikat (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt), um den Zugriff auf Ihre Webseiten über HTTPS zu sichern.
+- [Aktivieren Sie ein kostenloses SSL-Zertifikat (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate), um den Zugriff auf Ihre Webseiten über HTTPS zu sichern.
 
 ## Weiterführende Informationen
 

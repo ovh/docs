@@ -1,7 +1,7 @@
 ---
 title: Prime attivazione di un VPS
 excerpt: "Scopri come gestire un VPS nel tuo Spazio Cliente OVHcloud e scopri le prime operazioni da effettuare, tra cui le connessioni remote e le misure di sicurezza"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Obiettivo
@@ -157,7 +157,7 @@ L'attivazione del tuo VPS passa generalmente attraverso l'utilizzo e la configur
 A tale scopo, ti consigliamo di effettuare le seguenti azioni:
 
 - [Modificare la zona DNS](/pages/web_cloud/domains/dns_zone_edit) aggiungendo le voci necessarie per indirizzare il dominio all'indirizzo IPv4 del tuo VPS.
-- [Attivare un certificato SSL gratuito (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt) per proteggere l'accesso ai tuoi siti web tramite HTTPS.
+- [Attivare un certificato SSL gratuito (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate) per proteggere l'accesso ai tuoi siti web tramite HTTPS.
 
 ## Per saperne di più
 

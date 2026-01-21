@@ -1,7 +1,7 @@
 ---
 title: "VPS - Verwaltung über das OVHcloud Kundencenter"
 excerpt: "Erfahren Sie, wie Sie das OVHcloud Kundencenter nutzen, um Ihren VPS zu verwalten: Dashboard, Neuinstallation, Neustart, Backups und Dienstkonfiguration"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Ziel

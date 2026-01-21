@@ -1,7 +1,7 @@
 ---
 title: "VPS - Zarządzanie z Panelu klienta OVHcloud"
 excerpt: "Dowiedz się, jak korzystać z Panelu klienta OVHcloud do zarządzania swoim VPS: pulpit, reinstalacja, restart, kopie zapasowe i konfiguracja usługi"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Wprowadzenie

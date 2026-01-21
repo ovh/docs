@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie do VPS
 excerpt: "Dowiedz się, jak zarządzać VPS w Panelu klienta OVHcloud i odkryj pierwsze kroki w jego użyciu, w tym połączenia zdalne i środki bezpieczeństwa"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Wprowadzenie
@@ -157,7 +157,7 @@ Umieszczenie swojego VPS online zazwyczaj wymaga użycia i skonfigurowania nazwy
 Do tego zalecamy wykonanie poniższych działań:
 
 - [Edytuj strefę DNS](/pages/web_cloud/domains/dns_zone_edit), dodając odpowiednie wpisy, aby wskazać domenę na adres IPv4 swojego VPS.
-- [Włącz bezpłatny certyfikat SSL (Let's Encrypt)](/pages/web_cloud/web_hosting/ssl_letsencrypt), aby zabezpieczyć dostęp do swoich stron internetowych za pośrednictwem HTTPS.
+- [Włącz bezpłatny certyfikat SSL (Let's Encrypt)](/pages/bare_metal_cloud/virtual_private_servers/install-ssl-certificate), aby zabezpieczyć dostęp do swoich stron internetowych za pośrednictwem HTTPS.
 
 ## Sprawdź również
 

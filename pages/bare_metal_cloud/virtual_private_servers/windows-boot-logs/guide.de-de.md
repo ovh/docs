@@ -1,7 +1,7 @@
 ---
 title: "VPS - Windows-Startprotokolle aktivieren"
 excerpt: "Erfahren Sie, wie Sie Windows-Startprotokolle aktivieren, um bei der Diagnose und Fehlerbehebung von Startproblemen Ihres VPS zu helfen"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Ziel

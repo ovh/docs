@@ -1,7 +1,7 @@
 ---
 title: "VPS - Gestion depuis l'espace client OVHcloud"
 excerpt: "Découvrez comment utiliser l'espace client OVHcloud pour gérer votre VPS : tableau de bord, réinstallation, redémarrage, sauvegardes et configuration du service"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objectif

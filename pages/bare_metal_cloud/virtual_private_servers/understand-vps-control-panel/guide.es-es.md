@@ -1,7 +1,7 @@
 ---
 title: "VPS - Gestión desde el área de cliente de OVHcloud"
 excerpt: "Descubra cómo utilizar el área de cliente de OVHcloud para gestionar su VPS: panel de control, reinicio, respaldos y configuración del servicio"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Objetivo

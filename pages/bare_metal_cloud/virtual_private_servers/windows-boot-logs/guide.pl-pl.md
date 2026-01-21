@@ -1,7 +1,7 @@
 ---
 title: "VPS - Włączanie logów uruchamiania Windows"
 excerpt: "Dowiedz się, jak włączyć logi uruchamiania Windows, aby pomóc w diagnozowaniu i rozwiązywaniu problemów z uruchamianiem VPS"
-updated: 2026-01-16
+updated: 2026-01-21
 ---
 
 ## Wprowadzenie
