@@ -4,7 +4,7 @@ contact_links:
     url: https://discord.gg/ovhcloud
     about: Ask questions, provide feedback and interact directly with the team that builds our services.
   - name: OVHcloud Community
-    url: https://community.ovhcloud.com/community/en
+    url: https://community.ovhcloud.com/community/
     about: Ask questions, search for information, post content, and interact with other OVHcloud Community members.
   - name: Cloud Roadmap & Changelog
     url: https://github.com/orgs/ovh/projects/16
