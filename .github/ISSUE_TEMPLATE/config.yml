@@ -2,7 +2,7 @@ blank_issues_enabled: true
 contact_links:
   - name: Visit our dedicated Discord channel
     url: https://discord.gg/ovhcloud
-    about: Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+    about: Ask questions, provide feedback and interact directly with the team that builds our services.
   - name: OVHcloud Community
     url: https://community.ovhcloud.com/community/en
     about: Ask questions, search for information, post content, and interact with other OVHcloud Community members.
