@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
 excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
-updated: 2025-09-19
+updated: 2026-01-21
 ---
 
 <style>
@@ -45,7 +45,7 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos la referencia del servidor: ex?.mail.ovh.net. Deberá reemplazar el "?" por el número que identifica su servidor de Exchange.
+> En nuestro ejemplo, utilizamos la referencia del servidor: ex.mail.ovh.ca
 >
 > Para encontrar el nombre del servidor:
 >
@@ -92,7 +92,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de recepción:
 >>
 >>  - **Protocolo**: IMAP
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 993
 >>  - **Seguridad de la conexión**: SSL/TLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -105,7 +105,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de envío:
 >>
 >>  - **Protocolo**: SMTP 
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 587
 >>  - **Seguridad de la conexión**: STARTTLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -132,7 +132,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 > Configuración del servidor de recepción:
 >
 > - **Protocolo**: POP3
-> - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+> - **Nombre de host**: ex.mail.ovh.ca
 > - **Puerto**: 995
 > - **Seguridad de la conexión**: SSL/TLS
 > - **Método de autenticación**: Contraseña normal
