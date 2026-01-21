@@ -1,5 +1,5 @@
 ---
-title: ClickHouse - Capabilities and Limitations
+title: ClickHouse - Capabilities and limitations
 excerpt: Discover the capabilities and limitations of Analytics for ClickHouse
 updated: 2026-01-10
 ---
@@ -16,8 +16,8 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 The Analytics offer is available in the following regions:
 
-- `EU-WEST-PAR` (Paris, France)
-- `EU-SOUTH-MIL` (Milan, France)
+- `EU-WEST-PAR` (Paris, France).
+- `EU-SOUTH-MIL` (Milan, Italia).
 
 Analytics nodes have to be in the same region.
 
@@ -37,10 +37,10 @@ You can use any of the [ClickHouse-recommended drivers and interfaces](https://c
 
 Different plans are available:
 
-- *Production*
-- *Discovery* (Soon)
+- *Production*.
+- *Discovery* (Soon).
 
-Here is an overview of the various plans' capabilities:
+Here is an overview of the various plans capabilities:
 
 | Plan                  | Number of nodes by default | Read replicas |
 | --------------------- | -------------------------- | ------------- |
@@ -65,11 +65,11 @@ More information on <https://github.com/ClickHouse/ClickHouse/blob/master/LICENS
 
 ### Hardware resources
 
-For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/#adefinir).
+For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
 
 #### Flexible storage
 
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage) for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the "[Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage)" for more information.
 
 #### Node template upgrade
 
@@ -77,7 +77,7 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 #### Disk type
 
-The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](/links/public-cloud/regions-pci) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
+The type of storage available may vary according to the region your cluster lives in: see our page "[Availability of Public Cloud products](/links/public-cloud/regions-pci)" for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
 Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See the [Block Storage page](/links/public-cloud/block-storage) for more information about those performance characteristics.
 
@@ -93,13 +93,13 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling) for more information.
+See the "[Handling 'Disk Full' situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling)" for more information.
 
 ### Features
 
 #### Network
 
-ClickHouse clusters are reachable on a customized port available through the Control Panel and the API.
+ClickHouse clusters are reachable on a customized port available through the OVHcloud Control Panel and the OVHcloud API.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -112,7 +112,7 @@ The analytics service's IP address is subject to change periodically. Thus, it i
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Analytics services first.
-- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Analytci service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the OpenStack IP gateway must be enabled in the subnet used for the ANalytics service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 - OpenStack subnets routes announcement will not be applied to your services.
 - You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
@@ -132,7 +132,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 <!-- Voir si guide créer sinon delete -->
 
-You can further customise your ClickHouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/Clickhouse_advanced_parameters_references) for more information on the supported parameters.  
+You can further customise your ClickHouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/clickhouse_advanced_parameters_references) for more information on the supported parameters.  
 
 #### Backups
 
@@ -142,16 +142,16 @@ See the [Automated Backups guide](/pages/public_cloud/data_analytics/analytics/i
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer).
+Logs and metrics are available through the OVHcloud Control Panel, the OVHcloud API and can be forwarded to Logs Data Platform. For setup instructions, see the guide "[Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer)".
 
-- **Logs retention**: 1000 lines of logs
-- **Metrics retention**: 1 calendar month
+- **Logs retention**: 1000 lines of logs.
+- **Metrics retention**: 1 calendar month.
 
 Please note that if the analytics instance is deleted, logs and metrics are also automatically deleted.
 
 #### Users and roles
 
-Creation of users is allowed via the Control Panel and API with default admin roles and privileges.
+Creation of users is allowed via the OVHcloud Control Panel and the OVHcloud API with default admin roles and privileges.
 The only specific privilege you can set is `replication`.
 
 ## We want your feedback!
