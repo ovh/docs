@@ -105,7 +105,7 @@ Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
-The analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
+The Analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 
@@ -147,7 +147,7 @@ Logs and metrics are available through the OVHcloud Control Panel, the OVHcloud 
 - **Logs retention**: 1000 lines of logs.
 - **Metrics retention**: 1 calendar month.
 
-Please note that if the analytics instance is deleted, logs and metrics are also automatically deleted.
+Please note that if the Analytics instance is deleted, logs and metrics are also automatically deleted.
 
 #### Users and roles
 
@@ -160,4 +160,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our Analytics service!
