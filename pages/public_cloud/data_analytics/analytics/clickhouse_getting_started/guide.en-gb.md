@@ -1,10 +1,10 @@
 ---
-title: ClickHouse - First Steps
+title: ClickHouse - Getting started
 excerpt: Discover ClickHouse on OVHcloud Public Cloud
 updated: 2026-01-10
 ---
 
-ClickHouse on OVHcloud is a fully managed, high-performance analytical column-store database designed to handle massive data volumes with extremely low latency. Built on the open-source ClickHouse engine, the service is tailored for real-time analytics, large-scale reporting, modern BI workloads, and any application that requires ultra-fast queries over large datasets. Your data is stored in a columnar, partitioned, and distributed format, enabling OVHcloud to deliver highly parallel processing, high-throughput ingestion, and excellent compression efficiency. With intuitive management through the OVHcloud Control Panel (or API/Terraform), you can deploy and configure ClickHouse clusters within minutes, offloading infrastructure operations such as maintenance, scaling, and high availability. This lets you focus entirely on extracting value from your data rather than managing backend systems.
+ClickHouse on OVHcloud is a fully managed, high-performance analytical column-store database designed to handle massive data volumes with extremely low latency. Built on the open-source ClickHouse engine, the service is tailored for real-time Analytics, large-scale reporting, modern BI workloads, and any application that requires ultra-fast queries over large datasets. Your data is stored in a columnar, partitioned, and distributed format, enabling OVHcloud to deliver highly parallel processing, high-throughput ingestion, and excellent compression efficiency. With intuitive management through the OVHcloud Control Panel (or API/Terraform), you can deploy and configure ClickHouse clusters within minutes, offloading infrastructure operations such as maintenance, scaling, and high availability. This lets you focus entirely on extracting value from your data rather than managing backend systems.
 
 ## Most viewed resources
 
@@ -14,7 +14,7 @@ Discover how OVHcloud’s Managed ClickHouse® service enables you to deploy and
 
 ### Pricing
 
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, and analytics solutions—including plans for ClickHouse on the [ClickHouse pricing page](/links/public-cloud/prices-clickhouse).
+Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, and Analytics solutions—including plans for ClickHouse on the [ClickHouse pricing page](/links/public-cloud/prices-clickhouse).
 
 ### Capabilities
 
