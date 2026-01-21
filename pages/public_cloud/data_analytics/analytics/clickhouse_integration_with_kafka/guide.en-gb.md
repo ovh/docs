@@ -1,14 +1,14 @@
 ---
-title: ClickHouse – Real-time analytics with Kafka integration
+title: ClickHouse – Real-Time Analytics with Kafka Integration
 excerpt: Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange
 updated: 2026-01-15
 ---
 
 ## Objective
 
-This guide aims to help users integrate ClickHouse with Kafka using Aiven. You will learn how to set up the connection, manage supported data formats, and enable efficient real-time data ingestion for analytics. By the end of this guide, you will be able to build reliable, high-performance data pipelines between ClickHouse and Kafka.
+This guide aims to help users integrate ClickHouse with Kafka using Aiven. You will learn how to set up the connection, manage supported data formats, and enable efficient real-time data ingestion for Analytics. By the end of this guide, you will be able to build reliable, high-performance data pipelines between ClickHouse and Kafka.
 
-**Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange. Learn which data formats are supported for input and output to ensure smooth analytics workflows.**
+**Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange. Learn which data formats are supported for input and output to ensure smooth Analytics workflows.**
 
 ## Requirements
 
@@ -83,7 +83,7 @@ SELECT *
 FROM kafka_events;
 ```
 
-This ensures real-time ingestion into a permanent ClickHouse table for analytics queries. Materialized views allow decoupling ingestion from querying, improving performance.
+This ensures real-time ingestion into a permanent ClickHouse table for Analytics queries. Materialized views allow decoupling ingestion from querying, improving performance.
 
 ### Validating the integration
 
