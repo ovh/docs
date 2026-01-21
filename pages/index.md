@@ -1317,7 +1317,7 @@
                 + [OpenSearch - Advanced parameters references](public_cloud/public_cloud_databases/opensearch_03_advanced_parameters_references)
         + [ClickHouse](products/public-cloud-data-analytics-clickhouse)
             + [Key concepts](public-cloud-data-analytics-clickhouse-key-concepts)
-                + [ClickHouse - Capabilities and Limitations](public_cloud/data_analytics/analytics/clickouse_key_concepts) 
+                + [ClickHouse - Capabilities and Limitations](public_cloud/data_analytics/analytics/clickhouse_capabilities_limitations) 
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)

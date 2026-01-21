@@ -1,5 +1,5 @@
 ---
-title: ClickHouse - Capabilities and limitations
+title: ClickHouse - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Analytics for ClickHouse
 updated: 2026-01-10
 ---
