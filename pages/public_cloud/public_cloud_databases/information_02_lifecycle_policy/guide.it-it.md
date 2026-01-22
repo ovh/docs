@@ -1,7 +1,7 @@
 ---
-title: DBMS lifecycle policy
+title: Lifecycle policy for Public Cloud Databases
 excerpt: Lifecycle policy for Public Cloud Databases engines
-updated: 2025-07-31
+updated: 2026-01-22
 ---
 
 ## Objective
