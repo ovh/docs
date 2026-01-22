@@ -1129,7 +1129,7 @@
                 + [Connect using the CLI for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_03_connect_cli)
                 + [Connect using PHP for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_04_connect_php)
                 + [Connect using Python for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_05_connect_python)
-                + [PostgreSQL - Connect with pgAdmin](public_cloud/public_cloud_databases/postgresql_06_connect_pgadmin)
+                + [Connect using PgAdmin for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_06_connect_pgadmin)
             + [Configuration](public-cloud-databases-postgresql-configuration)
                 + [PostgreSQL - Create and use connection pools](public_cloud/public_cloud_databases/postgresql_08_pool)
                 + [Public Cloud Databases - Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
