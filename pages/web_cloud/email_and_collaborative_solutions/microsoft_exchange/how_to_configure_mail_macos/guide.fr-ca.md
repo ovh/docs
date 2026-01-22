@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Mail de macOS
 excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
@@ -35,17 +35,6 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 ## En pratique
 
 ### Ajouter le compte <a name="addaccount"></a>
-
-> [!warning]
->
-> Dans notre exemple, nous utilisons la mention serveur : `ex.mail.ovh.ca`
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-> 1. Sélectionnez la plateforme concernée.
-> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 

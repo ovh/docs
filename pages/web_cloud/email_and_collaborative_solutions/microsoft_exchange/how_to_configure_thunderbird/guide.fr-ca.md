@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour Windows'
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
@@ -42,18 +42,6 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 ///
 
 ## En pratique
-
-> [!primary]
->
-> Dans notre exemple, nous utilisons la mention serveur : `ex.mail.ovh.ca`
->
-> Pour retrouver le nom du serveur :
->
-> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-> 2. Rendez-vous dans la partie `Web Cloud`{.action}.
-> 3. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-> 4. Sélectionnez la plateforme concernée.
-> 5. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 
 ### Ajouter le compte
 

@@ -1,7 +1,7 @@
 ---
 title: Uso del diagnóstico de errores Exchange
 excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuentas Exchange'
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 
@@ -86,18 +86,6 @@ En función del uso de su servicio Exchange, son válidos los siguientes servido
 - Exchange + Correo POP/IMAP alojado en OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
 - Exchange + Correo POP/IMAP no alojado en OVHcloud: `ex.mail.ovh.ca`
 
-<a name="hostname"></a>
-
-> [!warning]
-> En nuestras guías utilizamos como nombre de servidor: `ex.mail.ovh.ca` Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
-> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
->
-
-> [!primary]
->
-> El nombre técnico de un servicio Exchange de OVHcloud se compone de un prefijo (**hosted-** o **private-**), una parte de su "identificador de cliente" y un número incremental que indica el número de servicios Exchange alojados o privados registrados en su cuenta de cliente.
->
-
 ### El registro SRV del dominio no es válido
 
 El registro SRV sirve para la configuración automática de su cuenta Exchange con un cliente de correo compatible, como Microsoft Outlook.
@@ -112,8 +100,7 @@ Subdominio | _autodiscover._tcp
 Prioridad | 0
 Peso | 0
 Puerto | 443
-Destino | [ex.mail.ovh.ca](#hostname) (sustituya "?" por el número correspondiente al servidor de su servicio Exchange)
-
+Destino | [ex.mail.ovh.ca](#hostname)
 ### El mensaje de correo de prueba no se ha podido enviar desde la cuenta
 
 Este error indica un error general al enviar mensajes de correo que pueden tener varias causas:

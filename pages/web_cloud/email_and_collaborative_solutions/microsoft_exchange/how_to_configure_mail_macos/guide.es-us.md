@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurar una cuenta de correo en Mail de macOS
 excerpt: Cómo configurar una cuenta Exchange en Mail de macOS
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
@@ -35,17 +35,6 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 ## Procedimiento
 
 ### Añadir la cuenta <a name="addaccount"></a>
-
-> [!warning]
->
-> En nuestro ejemplo, utilizamos el nombre del servidor: `ex.mail.ovh.ca`
->
-> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-> 1. Acceda al apartado `Web Cloud`{.action}.
-> 1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-> 1. Seleccione la plataforma correspondiente.
-> 1. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
->
 
 - **La primera vez que inicie la aplicación**, aparecerá un asistente de configuración que le pedirá que seleccione su tipo de cuenta.
 

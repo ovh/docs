@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Thunderbird for macOS'
 excerpt: 'Discover how to configure your Exchange email address on Thunderbird for macOS'
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
@@ -42,18 +42,6 @@ If you experience any difficulties carrying out these operations, we recommend t
 ///
 
 ## Instructions
-
-> [!primary]
->
-> In our example, we use the server reference: `ex.mail.ovh.ca`
->
-> To find the server name:
->
-> 1. Log in to your [OVHcloud Control Panel](/links/manager).
-> 2. Go to the `Web Cloud`{.action} section.
-> 3. In the `MICROSOFT` section, click on `Exchange`{.action}.
-> 4. Select the relevant platform.
-> 5. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
 
 ### Add the account
 

@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
 excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
@@ -42,18 +42,6 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 ///
 
 ## Procedimiento
-
-> [!primary]
->
-> En nuestro ejemplo, utilizamos la referencia del servidor: `ex.mail.ovh.ca`
->
-> Para encontrar el nombre del servidor:
->
-> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-> 2. Vaya a la sección `Web Cloud`{.action}.
-> 3. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-> 4. Seleccione la plataforma correspondiente.
-> 5. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
 
 ### Añadir la cuenta
 
