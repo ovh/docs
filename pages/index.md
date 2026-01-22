@@ -1127,7 +1127,7 @@
                 + [Getting started with Terraform for Public Cloud Databases](public_cloud/public_cloud_databases/databases_09_order_terraform)
                 + [Configure incoming connections of a Public Cloud Databases for PostgreSQL service](public_cloud/public_cloud_databases/postgresql_07_prepare_for_incoming_connections)
                 + [Connect using the CLI for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_03_connect_cli)
-                + [PostgreSQL - Connect with PHP](public_cloud/public_cloud_databases/postgresql_04_connect_php)
+                + [Connect using PHP for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_04_connect_php)
                 + [PostgreSQL - Connect with Python](public_cloud/public_cloud_databases/postgresql_05_connect_python)
                 + [PostgreSQL - Connect with pgAdmin](public_cloud/public_cloud_databases/postgresql_06_connect_pgadmin)
             + [Configuration](public-cloud-databases-postgresql-configuration)
