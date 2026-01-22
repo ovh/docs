@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2026-01-16
+updated: 2026-02-01
 ---
 
 ## Wprowadzenie
@@ -46,7 +46,16 @@ Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres 
 > Jeśli podany przez Ciebie adres e-mail jest nieprawidłowy lub dostępny, kliknij przycisk `Zmień adres e-mail`{.action}.
 >
 
-Po wpisaniu i zatwierdzeniu kodu uzupełnij formularz. W szczególności należy dokładnie zdefiniować **rodzaj konta** spośród proponowanych opcji.
+Po wpisaniu i potwierdzeniu kodu należy zdefiniować **typ konta** jako jeden z dostępnych modeli:
+
+- **Stowarzyszenie**: Utwórz konto dla stowarzyszenia, jeśli jest ono wpisane do krajowego rejestru firm i instytucji. Jeśli nie masz jeszcze konta, utwórz konto jako osoba prywatna.
+- **Administracja publiczna**: Utwórz konto dla instytucji publicznej, jeśli reprezentujesz organ państwowy, jednostkę terytorialną lub organizację czy instytucję międzynarodową.
+- **Firma**: Utwórz konto firmowe, jeśli prowadzisz zarejestrowaną działalność, także jednoosobową.
+- **Osoba fizyczna**: Utwórz konto jako osoba prywatna, jeśli nie prowadzisz zarejestrowanej działalności albo dopiero zakładasz firmę.
+
+![wybór typu konta](images/account-type-2025.png){.thumbnail}
+
+Następnie zostaniesz poproszony o podanie swoich danych. Upewnij się, że wprowadzone informacje są poprawne.
 
 Twoje konto zostało utworzone, po zalogowaniu się do strony głównej konta, zwanego "Dashboardem".
 
@@ -63,8 +72,15 @@ Ten identyfikator klienta pozwala na:
 - zalogować się do panelu klienta, aby zarządzać wszystkimi Twoimi usługami;
 - zalogować się podczas kontaktu z zespołem obsługi klienta OVHcloud, co ułatwia rozpatrywanie pytań.
 
-> [!warning]
+> [!success]
 > Zapisz się na swój identyfikator klienta, ponieważ będziesz potrzebował go przy każdym logowaniu do konta.
+>
+> **Porada: Użyj managera haseł**
+>
+> Specjalne oprogramowanie do zapisywania i zabezpieczania danych dostępowych do konta OVHcloud (login i hasło).<br>
+> Można na przykład użyć managera haseł **KeePass**. Jest to bezpłatne i otwarte oprogramowanie rekomendowane przez francuską Agencją ds. Cyberbezpieczeństwa (ANSSI).<br>
+> Jego zasada jest prosta: hasło główne - które musi być silne, ale które powinieneś zapamiętać - umożliwia dostęp do bazy danych zawierającej wszystkie identyfikatory i hasła. Identyfikatory i hasła mogą być bardzo złożone, ponieważ zostaną one zapisane w oprogramowaniu.<br>
+> Oprogramowanie to pozwala również na generowanie złożonych, losowych haseł, które zostaną zapisane dla każdej z Twoich stron WWW lub aplikacji.
 
 ## Sprawdź również
 

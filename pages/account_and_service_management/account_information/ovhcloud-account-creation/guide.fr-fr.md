@@ -1,7 +1,7 @@
 ---
 title: 'Créer un compte OVHcloud'
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-updated: 2026-01-16
+updated: 2026-02-01
 ---
 
 ## Objectif
@@ -46,7 +46,16 @@ Une fois ce premier formulaire complété, un code à usage unique vous sera env
 > Si l'adresse e-mail que vous avez renseignée n'est pas valide ou disponible, cliquez sur le bouton `Changer l'adresse e-mail`{.action}.
 >
 
-Une fois le code saisi et validé, complétez la suite du formulaire. Veillez notamment à bien définir le **type de compte** parmi les choix proposés.
+Une fois le code saisi et validé, vous devez définir le **type de compte** parmi les choix proposés :
+
+- **Association** : Créez un compte pour votre association si elle est inscrite au répertoire national des entreprises et des établissements. Si ce n'est pas le cas, veuillez créer un compte en tant que particulier.
+- **Administration publique** : Créez un compte pour votre organisation publique si vous représentez un État, une collectivité territoriale, une organisation ou institution internationale.
+- **Entreprise** : Créez un compte pour votre entreprise si vous avez une activité immatriculée, y compris les entreprises unipersonnelles.
+- **Particulier** : Créez un compte en tant que particulier si vous n'avez pas d'entreprise immatriculée ou si vous êtes en train de créer votre entreprise.
+
+![choix du type de compte](images/account-type-2025.png){.thumbnail}
+
+Vous serez ensuite invité à renseigner vos coordonnées. Assurez-vous que les informations que vous avez entrées sont correctes.
 
 Une fois votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelée « Tableau de bord », de votre compte.
 
@@ -63,8 +72,15 @@ Cet identifiant client vous permet :
 - de vous connecter à votre espace client pour gérer l'ensemble de vos services ;
 - de vous identifier lors de votre prise de contact avec le support OVHcloud et ainsi faciliter le traitement de vos questions.
 
-> [!warning]
+> [!success]
 > Prenez bien note de votre identifiant car vous en aurez besoin pour chaque connexion à votre compte.
+>
+> **Astuce : Utilisez un gestionnaire de mots de passe**
+>
+> Des logiciels spécifiques permettent de sauvegarder et sécuriser vos identifiants d'accès (identifiant et mot de passe) au compte OVHcloud.<br>
+> Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **KeePass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).<br>
+> Son principe est simple : un mot de passe maître – qui doit être suffisamment complexe, mais que vous devez mémoriser – permet d'accéder à une base de données regroupant tous vos identifiants et mots de passe. Ces derniers peuvent être très complexes, car le logiciel pourra les retenir.<br>
+> Ce logiciel permet également de générer des mots de passe complexes aléatoires qu'il sauvegardera pour chacun de vos sites ou applications.
 
 ## Aller plus loin
 

@@ -1,7 +1,7 @@
 ---
 title: Creare un account OVHcloud
 excerpt: Come creare un account OVHcloud
-updated: 2026-01-16
+updated: 2026-02-01
 ---
 
 ## Obiettivo
@@ -46,7 +46,16 @@ Una volta completato il primo form, ricevi un codice monouso all'indirizzo email
 > Se l'indirizzo email inserito non è valido o disponibile, clicca sul pulsante `Modifica l'indirizzo email`{.action}.
 >
 
-Una volta inserito e convalidato il codice, completa il form Ricordati di definire correttamente il **tipo di account** tra le opzioni proposte.
+Una volta inserito e convalidato il codice, Lei deve definire il **tipo di conto** tra le scelte proposte:
+
+- **Associazione**: Crea un account per la tua associazione se sei iscritto al Registro nazionale delle imprese. Se non sei iscritto, crea un account come privato.
+- **Pubblica amministrazione**: Crea un account per la tua organizzazione pubblica se rappresenti uno Stato, una collettività territoriale, un'organizzazione o un'istituzione internazionale.
+- **Società**: Crea un account per la tua azienda se disponi di un'attività registrata, incluse le imprese unipersonali.
+- **Privato**: Crea un account come privato se non disponi di un'azienda registrata o se stai creando la tua impresa.
+
+![scelta del tipo di account](images/account-type-2025.png){.thumbnail}
+
+In seguito, Lei verrà invitato a fornire i Suoi dati. Si assicuri che le informazioni inserite siano corrette.
 
 Il tuo account creato sarà automaticamente connesso alla home page, chiamata "Dashboard", del tuo account.
 
@@ -63,8 +72,14 @@ Questo identificativo cliente ti permette di:
 - accedere al tuo Spazio Cliente per gestire tutti i tuoi servizi
 - identificarti durante il contatto con il supporto OVHcloud e semplificare la gestione delle tue richieste.
 
-> [!warning]
+> [!success]
 > Annota il tuo identificativo perché ne hai bisogno per ogni connessione al tuo account.
+>
+> **Suggerimento: Utilizza un gestore di password**
+>
+> Per proteggere e rendere sicure le Sue credenziali di accesso (identificativo e password) all’account OVHcloud sono necessari programmi specifici.<br>
+> **KeePass**, ad esempio, è un software libero e gratuito che funziona secondo un semplice principio: una password principale – sufficientemente complessa, ma che è necessario memorizzare – permette di accedere a un database che raggruppa tutti gli identificativi e le relative password. Utilizzare questo sistema consente di scegliere password anche molto complesse: essendo memorizzate sul software non è necessario ricordarle a memoria.<br>
+> KeePass permette inoltre di generare password casuali complesse che memorizzerà per ogni sito o applicazione.
 
 ## Per saperne di più
 
