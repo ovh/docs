@@ -1,7 +1,7 @@
 ---
-title: Public Cloud Databases - Getting started with Terraform
+title: Getting started with Terraform for Public Cloud Databases
 excerpt: Find out how to order and manage your Public Cloud managed database service using Terraform
-updated: 2022-10-19
+updated: 2026-01-22
 ---
 
 ## Objective
