@@ -1,7 +1,7 @@
 ---
-title: PostgreSQL - Concepts - High availability and failure scenarios
+title: High availability and failure scenarios for Public Cloud Databases for PostgreSQL
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-updated: 2025-07-31
+updated: 2026-01-22
 ---
 
 ## Objective
