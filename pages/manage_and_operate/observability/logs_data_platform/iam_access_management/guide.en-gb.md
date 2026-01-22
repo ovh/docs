@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Configuring Access Rights
 excerpt: A comprehensive guide to managing access rights for Logs Data Platform using OVHcloud IAM
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 <style>
