@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un Contact Center Solution'
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-updated: 2026-01-07
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -11,11 +11,6 @@ Le Contact Center Solution (CCS) est la configuration la plus complète applicab
 Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
 
 **Apprenez à configurer un CCS sur votre numéro alias depuis votre espace client OVHcloud.**
-
-> [!warning]
->
-> La configuration Contact Center Solution est une offre en version bêta. Son fonctionnement ne peut donc être garanti par les équipes de OVHcloud. De même, en cas de difficulté, nos équipes du support vous inviteront à appliquer une configuration de type « File d'appels » ou « Serveur vocal interactif » sur votre numéro.
->
 
 ## Prérequis
 
@@ -35,19 +30,37 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ## En pratique
 
-### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
-
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
 1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-1. Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**.
-1. Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.
 
-![contact-center-solution](images/ccs-config-2022.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
-Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
+### Étape 1 : Appliquer la configuration « Contact Center Solution » <a name="appliquer-CCS"></a>
 
-Une fois la configuration appliquée, cliquez sur l'onglet `Paramétrer la configuration`{.action}.
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Contact Center Solution`{.action} puis cliquez sur `Paramétrer`{.action}.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Contact Center Solution`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+![contact-center-solution](images/ccs-config-2026.png){.thumbnail}
+
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+### Étape 2 : Accéder à la configuration du Contact Center Solution
+
+Une fois la configuration de Contact Center Solution appliquée, la page de configuration du CCS vous est présentée.
+
+![contact-center-solution](images/2026-VoIP-CCS-01.png){.thumbnail}
+
+Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![contact-center-solution](images/ccs-step1-1b.png){.thumbnail}
 
@@ -66,7 +79,7 @@ Le plan de configuration contient différents menus.
 
 Les étapes décrites dans ce guide permettent d'aboutir à la création d'une configuration complète.
 
-### Étape 2 : gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
+### Étape 2 : Gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
 
 L'accueil téléphonique de vos appelants peut être amélioré grâce à l'ajout d'un ou plusieurs fichiers-sons, préalablement créés par vos soins ou définis via des Text-To-Speech (TTS) depuis l'espace client.
 
@@ -94,7 +107,7 @@ Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles 
 
 ![gérer les TTS](images/gerer-tts2021b.png){.thumbnail}
 
-### Étape 3 : créer les files <a name="creer-files"></a>
+### Étape 3 : Créer les files <a name="creer-files"></a>
 
 Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
 
@@ -185,7 +198,7 @@ Vous pouvez créer autant de files que nécessaire pour répondre à votre besoi
 > Pour supprimer une file, celle-ci ne doit plus faire partie d'aucun menu interactif ou d'aucune étape du plan de configuration.
 >
 
-### Étape 4 : créer les menus interactifs (facultatif) <a name="creer-svi"></a>
+### Étape 4 : Créer les menus interactifs (facultatif) <a name="creer-svi"></a>
 
 À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif), le CCS permet d'associer une file d'appels entière (et non plus une simple ligne) à une touche de téléphone composée par un appelant.
 
@@ -225,7 +238,7 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Répétez
 
 Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pouvez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple proposer plusieurs choix successifs à vos appelants.
 
-### Étape 5 : configurer votre CCS <a name="configurer-CCS"></a>
+### Étape 5 : Configurer votre CCS <a name="configurer-CCS"></a>
 
 Une fois vos files et menus interactifs créés, il faut maintenant les articuler dans le CCS.
 <br>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créés.
