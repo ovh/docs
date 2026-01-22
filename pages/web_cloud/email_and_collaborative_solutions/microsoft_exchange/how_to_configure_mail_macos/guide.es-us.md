@@ -38,7 +38,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex.mail.ovh.ca.
+> En nuestro ejemplo, utilizamos el nombre del servidor: `ex.mail.ovh.ca`
 >
 > 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
 > 1. Acceda al apartado `Web Cloud`{.action}.

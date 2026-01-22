@@ -45,7 +45,7 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex.mail.ovh.ca
+> Dans notre exemple, nous utilisons la mention serveur : `ex.mail.ovh.ca`
 >
 > Pour retrouver le nom du serveur :
 >

@@ -45,7 +45,7 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos la referencia del servidor: ex.mail.ovh.ca.
+> En nuestro ejemplo, utilizamos la referencia del servidor: 
 >
 > Para encontrar el nombre del servidor:
 >

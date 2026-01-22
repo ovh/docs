@@ -46,7 +46,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!primary]
 >
-> In our example, we use the server reference: ex.mail.ovh.ca
+> In our example, we use the server reference: `ex.mail.ovh.ca`
 >
 > To find the server name:
 >

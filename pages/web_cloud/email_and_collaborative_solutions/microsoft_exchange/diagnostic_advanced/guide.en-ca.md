@@ -83,11 +83,11 @@ Depending on your Exchange service usage, the following MX servers are valid:
 
 - Exchange only: mx0.mail.ovh.ca, mx1.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
 - Exchange & POP/IMAP email hosted by OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca mx2.mail.ovh.ca, mx3.mail.ovh.ca & mx4.mail.ovh.ca
-- Exchange & POP/IMAP email not hosted by OVHcloud: ex<b>?</b>.mail.ovh.ca
+- Exchange & POP/IMAP email not hosted by OVHcloud: `ex.mail.ovh.ca`
 <a name="hostname"></a>
 
 > [!warning]
-> In our guides, we use as the server name: ex<b>?</b>.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
+> In our guides, we use as the server name: `ex.mail.ovh.ca` You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
 > You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} >
 
@@ -105,7 +105,7 @@ Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | [Your hostname](#hostname) (ex<b>?</b>.mail.ovh.ca)
+Target       | [Your hostname](#hostname) (ex.mail.ovh.ca)
 
 ### The test email could not be sent from this account 
 

@@ -38,7 +38,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex.mail.ovh.ca.
+> Dans notre exemple, nous utilisons la mention serveur : `ex.mail.ovh.ca`
 >
 > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 > 1. Rendez-vous dans la partie `Web Cloud`{.action}.

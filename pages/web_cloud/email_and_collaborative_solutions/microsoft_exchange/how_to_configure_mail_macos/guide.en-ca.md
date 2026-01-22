@@ -38,7 +38,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> In this guide, we use as the hostname: ex.mail.ovh.ca.
+> In this guide, we use as the hostname: `ex.mail.ovh.ca`
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Open the `Web Cloud`{.action} section.

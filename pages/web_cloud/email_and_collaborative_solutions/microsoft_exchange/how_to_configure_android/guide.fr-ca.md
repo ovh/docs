@@ -41,7 +41,7 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+> Dans notre exemple, nous utilisons la mention serveur : `ex.mail.ovh.ca` Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 >
 > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 > 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -85,7 +85,7 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 >> ![exchange android](images/exchange-android-03.png){.thumbnail .h-600 .w-600}
 >>
 > **Etape 4**
->> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : ex?.mail.ovh.ca ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br>
+>> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : ex.mail.ovh.ca ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br>
 >> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600 .w-600}
 >>
 > **Etape 5**
