@@ -99,7 +99,7 @@ Sous domaine | _autodiscover._tcp
 Priorité | 0
 Poids | 0
 Port | 443
-Cible | [ex.mail.ovh.ca ](#hostname)
+Cible | ex.mail.ovh.ca
 
 ### L'email de test n'a pas pu être envoyé à partir du compte
 

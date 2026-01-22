@@ -100,7 +100,7 @@ Subdominio | _autodiscover._tcp
 Prioridad | 0
 Peso | 0
 Puerto | 443
-Destino | [ex.mail.ovh.ca](#hostname)
+Destino | ex.mail.ovh.ca
 ### El mensaje de correo de prueba no se ha podido enviar desde la cuenta
 
 Este error indica un error general al enviar mensajes de correo que pueden tener varias causas:
