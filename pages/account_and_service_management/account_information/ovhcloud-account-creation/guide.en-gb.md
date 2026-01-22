@@ -71,7 +71,7 @@ Your NIC-handle is what you will need to use in order to:
 - manage all of your services easily via the OVHcloud Control Panel
 - identify your customer account when you contact OVHcloud support, so that they can answer your queries.
 
-> [!tips]
+> [!success]
 > 
 > Make a note of your NIC handle, as you will need it for each time you log in to your account.
 >
