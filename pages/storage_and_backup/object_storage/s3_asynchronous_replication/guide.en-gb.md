@@ -250,7 +250,7 @@ You can get started with Batch Replication by creating a new Batch replication j
 
 Before creating your first job, please take into account following considerations:
 * your source bucket and destination(s) bucket(s) must have versioning enabled
-* your source bucket must have an existing replication configuration set up as a Batch Replication will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet
+* your source bucket must have an existing replication configuration set up as a Batch Replication job will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet
 * if you have a Lifecycle policy configured for your bucket, we recommend disabling your lifecycle rules while the Batch Replication job is active to ensure maximum consistency between buckets and data synchronization
 * you cannot create another Batch Replication job there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses
 * Batch replication does NOT support objects that are stored in the Cold Archive storage class
