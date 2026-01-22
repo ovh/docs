@@ -31,6 +31,7 @@ OVHcloud propose 3 classes de stockages compatibles S3 :
 - **High Performance** pour vos applications exigeantes en termes de latence et de consommation de bande passante.
 - **Standard** pour vos stockages volumineux pour lesquels vous recherchez un meilleur ratio prix/performance, comme par exemple pour des sites web, des librairies de partage d'images ou des sauvegardes.
 - **Infrequent Access** pour vos données plus rarement consultées, aussi appelées données « froides », nécessitant toutefois une récupération rapide : stockage de données à long terme, sauvegardes, PRA.
+- **Active Archive** pour des données que vous ne consultez quasiment jamais (1 à 3 fois par an), mais qui exigent une disponibilité immédiate (en millisecondes) lorsque vous en avez besoin.
 - **Cold Archive** pour vos archives.
 
 Retrouvez la description des classes des stockage sur [cette page](/links/public-cloud/storage).
