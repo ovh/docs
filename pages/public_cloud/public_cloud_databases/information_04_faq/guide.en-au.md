@@ -1,7 +1,7 @@
 ---
-title: Public Cloud Databases - FAQ
+title: FAQ for Public Cloud Databases
 excerpt: Public Cloud Databases Frequently Asked Questions
-updated: 2025-07-31
+updated: 2026-01-22
 ---
 
 ## Objective
