@@ -252,9 +252,9 @@ Before creating your first job, please take into account following consideration
 * your source bucket and destination(s) bucket(s) must have versioning enabled
 * your source bucket must have an existing replication configuration set up as a Batch Replication job will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet
 * if you have a Lifecycle policy configured for your bucket, we recommend disabling your lifecycle rules while the Batch Replication job is active to ensure maximum consistency between buckets and data synchronization
-* you cannot create another Batch Replication job there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses
+* you cannot create another Batch Replication job while there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses
 * Batch replication does NOT support objects that are stored in the Cold Archive storage class
-* there is no SLAs on the time to completion of job
+* there is no SLAs on the job time to completion
 
 
 #### Checking the Batch Replication job status
