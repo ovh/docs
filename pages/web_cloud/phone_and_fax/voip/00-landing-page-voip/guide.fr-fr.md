@@ -1,11 +1,11 @@
 ---
 title: "VoIP - Présentation de la documentation"
-updated: 2026-01-21
+updated: 2026-01-22
 ---
 
 ## Guides VoIP OVHcloud
 
-Bienvenue dans la documentation dédiée à la téléphonie VoIP (Voice over IP) d’OVHcloud.
+Bienvenue dans la documentation dédiée à la [téléphonie VoIP (Voice over IP) d’OVHcloud](/links/telecom/telephonie).
 La VoIP permet de passer et recevoir des appels téléphoniques via Internet plutôt que par un réseau téléphonique traditionnel. Vous trouverez ici tous les guides disponibles pour configurer, utiliser et administrer vos services VoIP.
 
 ## Qu’est‑ce que la VoIP chez OVHcloud ?
@@ -44,15 +44,20 @@ Avec les services VoIP d’OVHcloud, vous pouvez :
 
 ### Configuration
 
+> [!primary]
+> **Quelle est la différence entre une ligne VoIP et un numéro alias ?**<br>
+> Retrouvez les questions les plus fréquemment posées sur les services VoIP OVHcloud dans notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip).
+
 > [!tabs]
 > Lignes VoIP
 >>
+>> - [Installer et configurer Softcall](/pages/web_cloud/phone_and_fax/voip/installer_configurer_softcall)
 >> - [Gérer le téléphone Plug & Phone d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone)
 >> - [Configurer et consulter le répondeur de sa ligne](/pages/web_cloud/phone_and_fax/voip/configurer-consulter-repondeur-ligne-ovh)
 >> - [Configurer la présentation de son numéro](/pages/web_cloud/phone_and_fax/voip/gerer_la_presentation_du_numero_sur_votre_ligne_sip)
 >> - [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels)
 >> - [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)
->> - [Installer et configurer Softcall](/pages/web_cloud/phone_and_fax/voip/installer_configurer_softcall)
+>>
 >> - [Gérer un carnet de contacts sur une ligne SIP](/pages/web_cloud/phone_and_fax/voip/importer_un_carnet_de_contacts)
 >> - [Gérer des numéros abrégés sur une ligne SIP](/pages/web_cloud/phone_and_fax/voip/gerer-numeros-abreges-ligne-sip)
 >> - [Modifier les musiques et sonneries de votre ligne](/pages/web_cloud/phone_and_fax/voip/modifier-musiques-sonneries-ligne)
@@ -65,6 +70,7 @@ Avec les services VoIP d’OVHcloud, vous pouvez :
 >>
 >> - [Demander et suivre une portabilité de numéro](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero)
 >> - [Demander et suivre une portabilité de numéro belge](/pages/web_cloud/phone_and_fax/voip/portabilite-numero-belge)
+>>
 >> - [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins)
 >> - [Configurer une redirection d'appels](/pages/web_cloud/phone_and_fax/voip/redirection_avec_presentation)
 >> - [Configurer une file d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels)
