@@ -1,4 +1,4 @@
-ens35---
+---
 title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
 updated: 2025-07-22
