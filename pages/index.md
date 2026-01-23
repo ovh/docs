@@ -1131,7 +1131,7 @@
                 + [Connect using Python for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_05_connect_python)
                 + [Connect using PgAdmin for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_06_connect_pgadmin)
             + [Configuration](public-cloud-databases-postgresql-configuration)
-                + [PostgreSQL - Create and use connection pools](public_cloud/public_cloud_databases/postgresql_08_pool)
+                + [Create and use connection pools in Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_08_pool)
                 + [Public Cloud Databases - Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
                 + [Public Cloud Databases - How to configure your Private Network](public_cloud/public_cloud_databases/databases_08_vrack)
                 + [Public Cloud Databases - How to configure your advanced parameters](public_cloud/public_cloud_databases/databases_03_advanced_configuration)
