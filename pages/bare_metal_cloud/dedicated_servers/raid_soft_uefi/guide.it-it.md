@@ -60,8 +60,8 @@ Quando acquisti un nuovo server, potresti sentire il bisogno di effettuare una s
 - [Ricostruzione del RAID (con ESP non mirror)](#raidrebuildnonmirrored)
     - [Ricostruzione del RAID dopo il ripristino del disco principale (modalità rescue)](#nonmirroredrescuemode)
     - [Ricreazione della partizione di sistema EFI](#recreateesp)
-    - [Ricostruzione del RAID con ESP non sincronizzati dopo aggiornamenti principali del sistema (GRUB)](#efiraidgrub)
-    - [Ricostruzione del RAID dopo il ripristino del disco principale (modalità normale)](#nonmirrorednormalmode)
+    - [Ricostruzione del RAID con ESP non sincronizzati dopo aggiornamenti importanti del sistema (GRUB)](#efiraidgrub)
+    - [Ricostruzione del RAID dopo la sostituzione del disco principale (modalità normale)](#nonmirrorednormalmode)
 - [Ricostruzione del RAID (con ESP in mirror)](#raidrebuildmirrored)
 - [Aggiunta dell'etichetta alla partizione SWAP (se applicabile)](#swap-partition)
 
@@ -610,7 +610,7 @@ Possiamo ora procedere alla sostituzione del disco e alla ricostruzione del RAID
 > Se il tuo server può avviarsi in modalità normale dopo la sostituzione del disco, procedi semplicemente seguendo le istruzioni descritte in [questa sezione](#nonmirrorednormalmode) se la tua partizione EFI non è in mirror o [questa sezione](#mirrored-esp-normal) se la tua partizione EFI è in mirror.
 >
 
-#### Ricostruzione del RAID dopo la sostituzione del disco principale (modalità rescue) <a name="nonmirroredrescuemode"></a>
+#### Ricostruzione del RAID dopo il ripristino del disco principale (modalità rescue) <a name="nonmirroredrescuemode"></a>
 
 Una volta sostituito il disco, copia la tabella delle partizioni del disco sano (in questo esempio, nvme1n1) verso il nuovo disco (nvme0n1).
 
@@ -715,7 +715,7 @@ In base ai risultati sopra riportati, le partizioni del nuovo disco sono state c
 
 <a name="recreateesp"></a>
 
-#### Ricostruzione della partizione EFI System
+#### Ricreazione della partizione del sistema EFI
 
 Per ricostruire la partizione EFI System sul nuovo disco, dobbiamo formattare **nvme0n1p1** e replicare il contenuto della partizione EFI System sana (nel nostro esempio: nvme1n1p1) su questa.
 
@@ -954,7 +954,7 @@ Successivamente, consulta [questa sezione](#swap-partition) per ricostruire la p
 
 <a name="raidrebuildmirrored"></a>
 
-### Ricostruzione del RAID (con ESP in specchio)
+### Ricostruzione del RAID (con ESP in mirror)
 
 /// details | **Espandi questa sezione**
 
