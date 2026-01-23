@@ -265,7 +265,7 @@ Cette configuration est plus souple car il n'est pas nécessaire d'associer une 
 
 #### Schéma de la configuration cible
 
-![schema vrack](images/schema_vrack.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explications
 
