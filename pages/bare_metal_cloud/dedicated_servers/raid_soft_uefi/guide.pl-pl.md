@@ -55,14 +55,14 @@ Kiedy zakupisz nowy serwer, możesz poczuć potrzebę wykonania szeregu testów 
 
 - [Podstawowe informacje](#basicinformation)
 - [Zrozumienie partycji systemu EFI (ESP)](#efisystemparition)
-- [Symulacja awarii dysku](#diskfailure)
-    - [Usunięcie uszkodzonego dysku](#diskremove)
-- [Odbudowanie RAID (bez zwierciadlonego ESP)](#raidrebuildnonmirrored)
-    - [Odbudowanie RAID po wymianie głównego dysku (trybu Rescue)](#nonmirroredrescuemode)
-    - [Zrekonfigurowanie partycji systemu EFI](#recreateesp)
-    - [Odbudowanie RAID z niezsynchronizowanymi ESP po dużych aktualizacjach systemu (GRUB)](#efiraidgrub)
-    - [Odbudowanie RAID po wymianie głównego dysku (normalny trybu)](#nonmirrorednormalmode)
-- [Odbudowanie RAID (z zwierciadlanym ESP)](#raidrebuildmirrored)
+- [Symulowanie awarii dysku](#diskfailure)
+    - [Usuwanie uszkodzonego dysku](#removedisk)
+- [Odbudowa macierzy RAID (z ESP bez dublowania)](#raidrebuildnonmirrored)
+    - [Odbudowanie tablicy RAID po wymianie głównego dysku (trybu Rescue)](#nonmirroredrescuemode)
+    - [Odbudowanie partycji systemu EFI](#recreateesp)
+    - [Odbudowanie tablicy RAID z niezsynchronizowanymi partycjami ESP po znaczących uaktualnieniach systemu (GRUB)](#efiraidgrub)
+    - [Odbudowanie tablicy RAID po wymianie głównego dysku (trybu normalny)](#nonmirrorednormalmode)
+- [Odbudowa macierzy RAID (z dublowaniem ESP)](#raidrebuildmirrored)
 - [Dodanie etykiety do partycji SWAP (jeśli dotyczy)](#swap-partition)
 
 <a name="basicinformation"></a>

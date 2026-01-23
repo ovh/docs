@@ -56,7 +56,7 @@ Quando acquisti un nuovo server, potresti sentire il bisogno di effettuare una s
 - [Informazioni di base](#basicinformation)
 - [Comprendere la partizione di sistema EFI (ESP)](#efisystemparition)
 - [Simulazione di un guasto del disco](#diskfailure)
-    - [Rimozione del disco guasto](#diskremove)
+    - [Rimozione del disco guasto](#removedisk)
 - [Ricostruzione del RAID (con ESP non mirror)](#raidrebuildnonmirrored)
     - [Ricostruzione del RAID dopo il ripristino del disco principale (modalità rescue)](#nonmirroredrescuemode)
     - [Ricreazione della partizione di sistema EFI](#recreateesp)

@@ -56,14 +56,14 @@ Quando compra um novo servidor, pode sentir a necessidade de realizar uma série
 - [Informações básicas](#basicinformation)
 - [Compreensão da partição do sistema EFI (ESP)](#efisystemparition)
 - [Simulação de falha de disco](#diskfailure)
-    - [Remover o disco defeituoso](#diskremove)
+    - [Remoção do disco defeituoso](#removedisk)
 - [Reconstrução do RAID (com ESP não espelhadas)](#raidrebuildnonmirrored)
     - [Reconstrução do RAID após a substituição do disco principal (modo rescue)](#nonmirroredrescuemode)
-    - [Recriação da partição do sistema EFI](#recreateesp)
-    - [Reconstrução do RAID com ESP não sincronizadas após atualizações maiores do sistema (GRUB)](#efiraidgrub)
+    - [Recriação da partição EFI System](#recreateesp)
+    - [Reconstrução do RAID com ESP não sincronizados após actualizações importantes do sistema (GRUB)](#efiraidgrub)
     - [Reconstrução do RAID após a substituição do disco principal (modo normal)](#nonmirrorednormalmode)
 - [Reconstrução do RAID (com ESP em espelho)](#raidrebuildmirrored)
-- [Adicionar a etiqueta à partição SWAP (se aplicável)](#swap-partition)
+- [Adição da etiqueta à partição SWAP (se aplicável)](#swap-partition)
 
 <a name="basicinformation"></a>
 

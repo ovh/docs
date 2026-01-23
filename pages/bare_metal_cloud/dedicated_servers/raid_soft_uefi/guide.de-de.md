@@ -56,14 +56,14 @@ Wenn Sie einen neuen Server bestellt und installiert haben, können Sie vorab ei
 - [Grundlegende Informationen](#basicinformation)
 - [Verständnis der EFI-Systempartition (ESP)](#efisystemparition)
 - [Simulieren eines Diskausfalls](#diskfailure)
-    - [Entfernen der defekten Disk](#diskremove)
+    - [Entfernen der defekten Disk](#removedisk)
 - [Wiederherstellung des RAID (mit nicht gespiegeltem ESP)](#raidrebuildnonmirrored)
-    - [Neuaufbau des RAIDs nach Austausch der primären Disk (Rescue-Modus)](#nonmirroredrescuemode)
-    - [Neuanlegen der EFI-Systempartition](#recreateesp)
-    - [Wiederherstellung des RAID mit nicht synchronisierten ESPs nach größeren Systemaktualisierungen (z. B. GRUB)](#efiraidgrub)
+    - [Wiederherstellung des RAIDs nach Austausch der primären Disk (Rescue-Modus)](#nonmirroredrescuemode)
+    - [Wiederherstellen der EFI-Systempartition](#recreateesp)
+    - [RAID mit nicht synchronisierten ESPs nach größeren Systemaktualisierungen neu erstellen (GRUB)](#efiraidgrub)
     - [Wiederherstellung des RAID nach Austausch der primären Disk (normalen Modus)](#nonmirrorednormalmode)
 - [Wiederherstellung des RAID (mit gespiegeltem ESP)](#raidrebuildmirrored)
-- [Hinzufügen der Bezeichnung zur SWAP-Partition (falls zutreffend)](#swap-partition)
+- [Label zur SWAP-Partition hinzufügen (falls zutreffend)](#swap-partition)
 
 <a name="basicinformation"></a>
 
@@ -236,7 +236,7 @@ In unserem Beispiel haben wir:
 
 <a name="efisystempartition"></a>
 
-### Erklärung der EFI-Systempartition (ESP)
+### Verständnis der EFI-Systempartition (ESP)
 
 /// details | **Diesen Abschnitt aufklappen**
 
@@ -459,7 +459,7 @@ Aus der obigen Ausgabe ergibt sich, dass `nvme0n1` aus zwei Partitionen besteht,
 
 <a name="removedisk"></a>
 
-#### Entfernen der fehlerhaften Disk
+#### Entfernen der defekten Disk
 
 Zunächst markieren wir die Partitionen **nvme0n1p2** und **nvme0n1p3** als ausgefallen:
 
@@ -611,7 +611,7 @@ Wir können nun mit dem Austausch der Disk und der Wiederherstellung des RAID-Ve
 > Wenn Ihr Server nach dem Austausch der Disk im normalen Modus starten kann, fahren Sie einfach mit den Schritten aus [diesem Abschnitt](#nonmirrorednormalmode) fort, wenn Ihre EFI-Systempartition nicht gespiegelt ist, oder mit den Schritten aus [diesem Abschnitt](#mirrored-esp-normal), wenn Ihre EFI-Systempartition gespiegelt ist.
 >
 
-#### Wiederherstellung des RAID nach Austausch der primären Disk (Rescue-Modus) <a name="nonmirroredrescuemode"></a>
+#### Wiederherstellung des RAIDs nach Austausch der primären Disk (Rescue-Modus) <a name="nonmirroredrescuemode"></a>
 
 Nachdem die Disk ersetzt wurde, ist der nächste Schritt, die Partitionstabelle von der intakten Disk (in diesem Beispiel `nvme1n1`) auf die neue (`nvme0n1`) zu kopieren.
 
