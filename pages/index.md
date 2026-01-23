@@ -1133,7 +1133,7 @@
             + [Configuration](public-cloud-databases-postgresql-configuration)
                 + [Create and use connection pools in Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_08_pool)
                 + [Maintenance operations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_15_maintenances)
-                + [Public Cloud Databases - How to configure your Private Network](public_cloud/public_cloud_databases/databases_08_vrack)
+                + [Configure the private network for Public Cloud Databases](public_cloud/public_cloud_databases/databases_08_vrack)
                 + [Public Cloud Databases - How to configure your advanced parameters](public_cloud/public_cloud_databases/databases_03_advanced_configuration)
                 + [PostgreSQL - Advanced parameters references](public_cloud/public_cloud_databases/postgresql_10_advanced_parameters_references)
                 + [Public Cloud Databases - How to restore a backup](public_cloud/public_cloud_databases/databases_06_restore_backup)
