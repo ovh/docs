@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to setup a service integration
+title: Setup service integration for Public Cloud Databases
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
 updated: 2025-04-15
 ---
