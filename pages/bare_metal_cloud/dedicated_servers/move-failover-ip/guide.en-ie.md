@@ -131,21 +131,21 @@ Click on the cogwheel next to the corresponding IP and select `Move the failover
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Select `move to an OVH service`, enter your NIC handle and click on `Next`{.action}.
+Select `Move to an OVH service`, enter your OVHcloud NIC handle and click on `Next`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-This will generate a token ID, save it.
+This will generate a code (token), save it.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Next, [log into your OVHcloud account](/links/manager), click on `Network`{.action} in the left menu and then on `IP`{.action}.
+Next, [log into your OVHcloud account](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click on the cogwheel on the right side and select `Import IP addresses from SyS to OVHcloud`{.action}.
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-A pop up window will appear, enter the Additional IP (or block) and the token ID (retrieved in the So you start account). Then, click on `Next`{.action}.
+A pop up window will appear, enter the Additional IP (or block) and the token (retrieved in the So you Start account). Then, click on `Next`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
@@ -156,7 +156,7 @@ Click on `Next`{.action}.
 ![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
 ![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
 
-In the next window, the duration is be automatically selected and the fee is displayed, click on `Next`{.action} to proceed.
+In the next window, the duration is automatically selected and the fee is displayed, click on `Next`{.action} to proceed.
 
 ![soyoustart to ovh](images/Step-3.png){.thumbnail}
 
