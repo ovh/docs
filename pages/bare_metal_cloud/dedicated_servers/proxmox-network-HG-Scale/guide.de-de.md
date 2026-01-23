@@ -267,7 +267,7 @@ This configuration is more flexible as you do not need to associate an Additiona
 
 #### Target configuration schema
 
-![schema vrack](images/schema_vrack.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explanations
 
