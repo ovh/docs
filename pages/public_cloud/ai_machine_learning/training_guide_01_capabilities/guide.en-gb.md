@@ -1,7 +1,7 @@
 ---
 title: AI Training - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Training
-updated: 2023-11-21
+updated: 2026-01-23
 ---
 
 > [!primary]
