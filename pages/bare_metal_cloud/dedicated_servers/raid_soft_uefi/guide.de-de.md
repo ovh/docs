@@ -1,7 +1,7 @@
 ---
 title: Verwalten und Neuaufbauen von Software-RAID auf Servern mit UEFI-Boot-Modus
 excerpt: Erfahren Sie, wie Sie Software-RAID nach einem Wechsel der Disk auf einem Server mit UEFI-Boot-Modus verwalten und neu aufbauen können
-updated: 2026-01-20
+updated: 2026-01-26
 ---
 
 <style>
@@ -236,9 +236,9 @@ In unserem Beispiel haben wir:
 
 <a name="efisystempartition"></a>
 
-/// details | **Diesen Abschnitt aufklappen**
-
 ### Erklärung der EFI-Systempartition (ESP)
+
+/// details | **Diesen Abschnitt aufklappen**
 
 ***Was ist eine EFI-Systempartition?***
 
@@ -283,7 +283,7 @@ Mit dem Befehl `lsblk` können Sie überprüfen, ob Ihre Partition Teil einer RA
 >>
 >> Aus den obigen Ergebnissen geht hervor, dass nur eine EFI-Systempartition unter `/boot/efi` gemountet ist. Die ESPs sind daher nicht gespiegelt.
 >>
-> **ESP espiegelt**
+> **ESP gespiegelt**
 >>
 >> ```sh
 >> lsblk
@@ -476,7 +476,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 Als Nächstes führen wir den Befehl `cat /proc/mdstat` aus:
 
 ```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
 md3 : active raid1 nvme0n1p3[0](F) nvme1n1p3[1]
       497875968 blocks super 1.2 [2/1] [_U]
@@ -527,7 +527,6 @@ shred -s10M -n1 /dev/nvme0n1p1
 shred -s10M -n1 /dev/nvme0n1p2
 shred -s10M -n1 /dev/nvme0n1p3
 shred -s10M -n1 /dev/nvme0n1p4
-shred -s10M -n1 /dev/nvme0n1p5
 shred -s10M -n1 /dev/nvme0n1
 ```
 
@@ -768,8 +767,8 @@ EFI/debian/grubx64.efi
 EFI/debian/mmx64.efi
 EFI/debian/shimx64.efi
 
-sent 6.099.848 bytes  received 165 bytes  12.200.026,00 bytes/sec
-total size is 6.097.843  speedup is 1,00
+sent 6,099,848 bytes  received 165 bytes  12,200,026.00 bytes/sec
+total size is 6,097,843  speedup is 1.00
 ```
 
 Sobald dies erledigt ist, hängen Sie beide Partitionen aus:
@@ -834,7 +833,7 @@ Wenn die primäre Disk ausgetauscht wird, während sie EFI-Systempartitionen ent
 
 In diesem Fall müssen Sie neben dem Wiederherstellen des RAID und dem Neuerstellen der EFI-Systempartition im Rescue-Modus auch GRUB darauf neu installieren.
 
-Sobald die ESP erstellt wurde (wie oben beschrieben) und das System beide Partitionen erkennt, erstellen Sie noch in der `choot`-Umgebung den Ordner /boot/efi, um die neue EFI-Systempartition **nvme0n1p1** zu mounten:
+Sobald die ESP erstellt wurde (wie oben beschrieben) und das System beide Partitionen erkennt, erstellen Sie noch in der `choot`-Umgebung den Ordner `/boot/efi`, um die neue EFI-Systempartition **nvme0n1p1** zu mounten:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -962,7 +961,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 ### Wiederherstellung des RAID (mit gespiegeltem ESP)
 
-/// details | **Diesen Abschnitt ausklappen**
+/// details | **Diesen Abschnitt aufklappen**
 
 > [!tabs]
 > **Im Rescue-Modus**
@@ -990,7 +989,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >>
 >> **Für GPT-Partitionen**
 >>
->> Der Befehl sollte folgendes Format haben: `sgdisk -R /dev/neue Disk /dev/fehlerfreie Disk`.
+>> Der Befehl muss folgendes Format haben: `sgdisk -R /dev/neue Disk /dev/intakte Disk`.
 >>
 >> In unserem Beispiel:
 >>
@@ -1117,7 +1116,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >> sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 >> ```
 >>
->> Der Befehl sollte folgendes Format haben: `sgdisk -R /dev/neue Disk /dev/intakteste Disk`.
+>> Der Befehl muss folgendes Format haben: `sgdisk -R /dev/neue Disk /dev/intakte Disk`.
 >>
 >> Als nächstes sollten Sie die GUID der neuen Disk randomisieren, um GUID-Konflikte mit anderen Disks zu vermeiden:
 >>
@@ -1162,7 +1161,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 #### Label zur SWAP-Partition hinzufügen (falls zutreffend) <a name="swap-partition"></a>
 
-/// Details | **Diesen Abschnitt aufklappen**
+/// details | **Diesen Abschnitt aufklappen**
 
 > [!tabs]
 > **Verwendung des Rescue-Modus**
@@ -1324,6 +1323,8 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >>
 >> Damit ist die RAID-Wiederherstellung abgeschlossen.
 >>
+
+///
 
 ## Weiterführende Informationen
 
