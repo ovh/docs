@@ -1135,7 +1135,7 @@
                 + [Maintenance operations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_15_maintenances)
                 + [Configure the private network for Public Cloud Databases](public_cloud/public_cloud_databases/databases_08_vrack)
                 + [Configure the advanced parameters for Public Cloud Databases](public_cloud/public_cloud_databases/databases_03_advanced_configuration)
-                + [PostgreSQL - Advanced parameters references](public_cloud/public_cloud_databases/postgresql_10_advanced_parameters_references)
+                + [Advanced parameters for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_10_advanced_parameters_references)
                 + [Public Cloud Databases - How to restore a backup](public_cloud/public_cloud_databases/databases_06_restore_backup)
                 + [PostgreSQL - Detect and terminate long-running queries](public_cloud/public_cloud_databases/postgresql_11_terminate_queries)
                 + [Public Cloud Databases - How to resize your service storage](public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage)
