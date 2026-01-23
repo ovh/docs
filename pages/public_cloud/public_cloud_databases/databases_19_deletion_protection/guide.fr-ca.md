@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to enable deletion protection
+title: Activer la protection contre la suppression des bases de données Public Cloud (EN)
 excerpt: Find out how to setup a deletion protection for your Public Cloud databases service
 updated: 2025-08-15
 ---
