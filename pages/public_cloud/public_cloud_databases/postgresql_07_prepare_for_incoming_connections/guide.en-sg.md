@@ -1,7 +1,7 @@
 ---
 title: Configure incoming connections of a Public Cloud Databases for PostgreSQL service
 excerpt: Find out how to configure your PostgreSQL instance to accept incoming connections
-updated: 2026-10-22
+updated: 2022-04-04
 ---
 
 ## Objective

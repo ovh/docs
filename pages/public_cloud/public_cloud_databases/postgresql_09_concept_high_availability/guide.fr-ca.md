@@ -1,7 +1,7 @@
 ---
 title: Haute disponibilité et scénarios de panne de Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-updated: 2026-01-22
+updated: 2025-07-31
 ---
 
 ## Objective

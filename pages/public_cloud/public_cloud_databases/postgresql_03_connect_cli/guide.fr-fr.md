@@ -1,7 +1,7 @@
 ---
 title: Se connecter avec la CLI au service Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
-updated: 2026-01-22
+updated: 2024-02-29
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Politique de cycle de vie des bases de données Public Cloud (EN)
 excerpt: Lifecycle policy for Public Cloud Databases engines
-updated: 2026-01-22
+updated: 2025-07-31
 ---
 
 ## Objective
