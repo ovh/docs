@@ -33,7 +33,7 @@ $ s3cmd mb s3://backup
 
 > [!primary]
 >
-> Afin de pouvoir récupérer différentes versions d'un fichier envoyé sur ce bucket, vous pouvez activer le versioning des objets de ce bucket.
+> Afin de pouvoir récupérer différentes versions d'un fichier envoyé sur ce bucket, vous pouvez activer le [versioning des objets](/pages/storage_and_backup/object_storage/s3_versioning) de ce bucket.
 
 ### Configurer la source et la destination de Rclone
 
