@@ -1148,7 +1148,7 @@
                 + [Enable deletion protection for Public Cloud Databases](public_cloud/public_cloud_databases/databases_19_deletion_protection)
             + [Migration](public-cloud-databases-postgresql-migration)
                 + [Public Cloud Databases - How to migrate to OVHcloud Database as a Service (DBaaS)](public_cloud/public_cloud_databases/databases_20_move_to_cloud)
-                + [Public Cloud Databases - How to migrate a database service from Gen 2 to Gen 3](public_cloud/public_cloud_databases/databases_20_migrate_from_gen2_to_gen3)
+                + [Migrate from Gen 2 to Gen 3 for Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_migrate_from_gen2_to_gen3)
                 + [How to move a database service from a single AZ region to a 3-AZ region](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
                 + [Reversibility Policy for Managed Relational Database product](account_and_service_management/reversibility/07-rdb_mysql_postgre)
             + [Tutorials](public-cloud-databases-postgresql-tutorials)
