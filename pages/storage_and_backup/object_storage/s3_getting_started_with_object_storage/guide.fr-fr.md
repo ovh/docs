@@ -235,7 +235,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> La gestion des versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité permet de **préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets**, ce qui facilite la récupération en cas d'actions involontaires de l'utilisateur ou de défaillances de l'application. Par défaut, la gestion des versions est désactivée sur les buckets, et vous devez l'activer explicitement. Vous trouverez plus d'informations sur la gestion des versions dans notre [guide dédié](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
->> Vous pouvez également activer l’Object Lock pour stocker vos objets en mode WORM (Write Once, Read Many) et garantir leur immutabilité pendant une période de rétention définie.
+>> Vous pouvez également activer l’[Object Lock](/pages/storage_and_backup/object_storage/s3_managing_object_lock) pour stocker vos objets en mode WORM (Write Once, Read Many) et garantir leur immutabilité pendant une période de rétention définie.
 >>
 >> > [!primary]
 >> >
@@ -346,7 +346,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> ///
 >>
 > Via l'espace client OVHcloud
-Cliquez sur l’icône de téléchargement (flèche vers le bas dans un socle bleu) sur la ligne de l’objet.
+>> Cliquez sur l’icône de téléchargement (flèche vers le bas dans un socle bleu) sur la ligne de l’objet.
 >>
 
 #### Synchronisation des buckets
