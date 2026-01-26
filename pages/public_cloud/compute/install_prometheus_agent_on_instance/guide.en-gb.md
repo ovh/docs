@@ -12,7 +12,7 @@ Prometheus is a monitoring system and time series database. You can install and 
 
 > [!warning]
 > 
-> OVHcloud provides services which you are responsible for. In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
+> OVHcloud provides services for which you are responsible. In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
 >
 > We have provided you with this guide in order to help you with common tasks. However, we advise contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts about administration, usage or server security. Feel free to visit our [community forum](/links/community) to interact with other users.
 >
@@ -20,7 +20,7 @@ Prometheus is a monitoring system and time series database. You can install and 
 ## Requirements
 
 - [An instance created via the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [An administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+- [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 - A Prometheus server running and reachable from the instance.
 
 ## Instructions
@@ -39,7 +39,7 @@ Replace `<INSTANCE_IP>` with the public IP address of your instance.
 
 > [primary]
 >
-> For Windows, use PowerShell with SSH or an SSH client like [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) if you prefer command line.
+> For Windows, use PowerShell with SSH or an SSH client like [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) if you prefer using the command line.
 >
 > For Windows Server with GUI, you can also use RDP (Remote Desktop).
 >
@@ -134,7 +134,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 > For Windows (via SSH/PowerShell on the VM)
 >> > [!primary]
 >> >
->> > `Invoke-WebRequest` require PowerShell 3.0+.
+>> > `Invoke-WebRequest` require PowerShell 3.0 or later.
 >> >
 >>
 >> ```powershell
@@ -179,9 +179,9 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 
 > [!primary]
 >
-> Node Exporter listen on 9100 port by default.
+> Node Exporter listens on port 9100 by default.
 >
-> Windows Exporter listen on port 9182 by default
+> Windows Exporter listens on port 9182 by default
 >
 > Replace <PORT> with 9100 for Linux/macOS or 9182 for Windows.
 >
@@ -259,9 +259,24 @@ scrape_configs:
 
 2\. Reload Prometheus:
 
-```bash
-sudo systemctl reload prometheus
-```
+> [!tabs]
+> For Linux
+>> ```bash
+>> sudo systemctl reload prometheus
+>> ```
+>>
+> For macOS
+>> ```bash
+>> brew services reload prometheus
+>> ```
+>>
+> For Windows
+>>
+>> ```powershell
+>> sc stop prometheus
+>> sc start prometheus
+>> ```
+>>
 
 3\. Node Exporter metrics from your OVHcloud instance should now appear in Prometheus.
 

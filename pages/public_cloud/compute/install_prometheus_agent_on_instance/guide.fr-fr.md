@@ -49,7 +49,7 @@ Remplacez `<INSTANCE_IP>` par l’adresse IP publique de votre instance.
 Assurez-vous que les paquets de votre système sont à jour :
 
 > [!tabs]
-> Pour Debian/Ubuntu
+> Pour Debian/Ubuntuw
 >> ```bash
 >> sudo apt update && sudo apt upgrade -y
 >> ```
@@ -260,15 +260,30 @@ scrape_configs:
 
 2\. Rechargez Prometheus :
 
-```bash
-sudo systemctl reload prometheus
-```
+> [!tabs]
+> Pour Linux
+>> ```bash
+>> sudo systemctl reload prometheus
+>> ```
+>>
+> Pour macOS
+>> ```bash
+>> brew services reload prometheus
+>> ```
+>>
+> Pour Windows
+>>
+>> ```powershell
+>> sc stop prometheus
+>> sc start prometheus
+>> ```
+>>
 
 3\. Les métriques Node Exporter de votre instance OVHcloud devraient maintenant apparaître dans Prometheus.
 
 ## Aller plus loin
 
-[Documentation officielle de Node Exporter](https://github.com/prometheus/node_exporter){.external}.
+[Documentation officielle de Node Exporter](https://github.com/prometheus/node_exporter).
 
 [Créer et configurer un groupe de sécurité dans Horizon](/pages/public_cloud/compute/setup_security_group)
 
