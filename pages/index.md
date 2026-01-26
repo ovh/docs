@@ -1159,7 +1159,7 @@
                 + [Security Overview for Public Cloud Databases](public_cloud/public_cloud_databases/information_01_security_overview)
                 + [Responsibility model for Public Cloud Databases](public_cloud/public_cloud_databases/information_03_shared_responsibility)
             + [Troubleshooting](public-cloud-databases-postgresql-troubleshooting)
-                + [Public Cloud Databases - How to troubleshoot your service](public_cloud/public_cloud_databases/databases_04_troubleshooting)
+                + [Troubleshoot your Public Cloud Databases](public_cloud/public_cloud_databases/databases_04_troubleshooting)
                 + [Public Cloud Databases - How to handle 'Disk Full' situations](public_cloud/public_cloud_databases/databases_10_full_disk_handling)
             + [Additional resources](public-cloud-databases-postgresql-additional-resources)
                 + [PostgreSQL - Available extensions](public_cloud/public_cloud_databases/postgresql_02_extensions)
