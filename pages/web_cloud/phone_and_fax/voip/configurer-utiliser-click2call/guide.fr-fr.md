@@ -71,7 +71,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>
 >> Une fois connecté, utilisez les appels ci-dessous pour créer et gérer un identifiant Click2Call.
 >>
->> **Créer un nouvel identifiant Click2Call et définir son mot de passe.**
+>> **Créez un nouvel identifiant Click2Call et définissez son mot de passe :**
 >>
 >> > [!api]
 >> >
@@ -85,7 +85,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>     - **password** : mot de passe de l'utilisateur Click2Call.
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
->> **Récupérer l'*id* des identifiants Click2Call créés sur une ligne SIP.**
+>> **Récupérez l'*id* des identifiants Click2Call créés sur une ligne SIP :**
 >>
 >> > [!api]
 >> >
@@ -97,7 +97,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>     - **serviceName** : ligne SIP concernée au format international.
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
->> **Récupérer les informations relatives à un identifiant Click2Call, excepté son mot de passe.**
+>> **Récupérez les informations relatives à un identifiant Click2Call, excepté son mot de passe :**
 >>
 >> > [!api]
 >> >
@@ -110,7 +110,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>     - **serviceName** : ligne SIP concernée au format international.
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
->> **Modifier le mot de passe d'un identifiant Click2Call.**
+>> **Modifiez le mot de passe d'un identifiant Click2Call :**
 >>
 >> > [!api]
 >> >
@@ -124,7 +124,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >>     - **password** : nouveau mot de passe de l'utilisateur.
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
->> **Supprimer un identifiant Click2Call.**
+>> **Supprimez un identifiant Click2Call :**
 >>
 >> > [!api]
 >> >
@@ -138,7 +138,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 >> - Cliquez sur `EXECUTE`{.action}.
 >>
 
-### Utiliser la fonctionnalité Click2Call depuis les API OVHcloud <a name="utiliser-la-fonctionnalite-click2call"></a>
+### Utilisez la fonctionnalité Click2Call depuis les API OVHcloud <a name="utiliser-la-fonctionnalite-click2call"></a>
 
 Muni d'un identifiant Click2Call et de son mot de passe, vous pouvez à présent utiliser la fonctionnalité Click2Call.
 
@@ -149,9 +149,9 @@ Connectez-vous aux [API OVHcloud](/links/console) :
 1. Saisissez vos identifiants OVHcloud.
 1. Cliquez sur le bouton `Authorize`{.action} pour autoriser les appels aux API depuis ce site.
 
->> > [!primary]
->> >
->> > Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
+> [!primary]
+>
+> Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 Les appels API renseignés ci-dessous vous permettront d'utiliser la fonctionnalité Click2Call. Vous pourrez par exemple intégrer ces derniers au code de votre site Internet afin de générer un rappel automatique depuis un formulaire.
 
