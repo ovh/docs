@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to update your service plan
+title: Update the plan of Public Cloud Databases
 excerpt: Find out how to upgrade the service plan of your cluster
 updated: 2025-07-31
 ---

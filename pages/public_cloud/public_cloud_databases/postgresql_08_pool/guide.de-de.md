@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Create and use connection pools
+title: Create and use connection pools in Public Cloud Databases for PostgreSQL
 excerpt: Create and use connection pools in your Public Cloud Databases for PostgreSQL
 updated: 2022-04-08
 ---
