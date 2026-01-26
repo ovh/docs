@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Product Overview"
 excerpt: "Overview of the Backup Agent product features and benefits"
-updated: 2026-01-09
+updated: 2026-01-26
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ The basic diagram is as follows:
 Please note that:
 
 - The VSPC infrastructure is hosted in OVHcloud datacenters and does not send data to Veeam servers.
-- Storage points are [OVHcloud Object Storage](/links/public-cloud/object-storage) buckets that are hosted in OVHcloud datacenters.
+- Storage is based on [OVHcloud Object Storage](/links/public-cloud/object-storage) technology, which is hosted in OVHcloud datacenters.
 
 There are several key advantages to this solution:
 
@@ -39,6 +39,27 @@ There are several key advantages to this solution:
 - Encryption managed by OVHcloud of the storage hosting your backup data.
 - Live sending of backup data to the bucket without placing a copy on our infrastructure.
 - Storage point always distant from the location of your Bare Metal server (if you are in Roubaix, your storage point will be in Gravelines).
+
+## Anti-affinity
+
+Backups are performed offsite, via the default Vault configuration, with a storage location in a geographically separate area from the Bare Metal server. This anti-affinity mechanism enhances the resilience of backup data.
+
+Mapping of backup areas:
+
+| Bare Metal Localisation | Vault Affinity |
+| ----------------------- | -------------- |
+| BHS                     | TOR            |
+| SGP                     | SYD            |
+| MUM                     | SGP            |
+| SYD                     | SGP            |
+| RBX                     | SBG            |
+| GRA                     | SBG            |
+| LIM                     | SBG            |
+| PAR                     | RBX            |
+| ERI                     | LIM            |
+| WAR                     | LIM            |
+| SBG                     | GRA            |
+| TOR                     | BHS            |
 
 ## Go further
 

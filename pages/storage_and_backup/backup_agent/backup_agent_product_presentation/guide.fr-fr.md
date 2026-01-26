@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Présentation de l'offre"
 excerpt: "Présentation des fonctionnalités et avantages du produit Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-26
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Le schéma de principe est le suivant :
 Il est à noter que :
 
 - L'infrastructure VSPC est hébergée dans les datacenters OVHcloud et n'envoie pas de données vers les serveurs de Veeam.
-- Les points de stockage sont des buckets [OVHcloud Object Storage](/links/public-cloud/object-storage) qui sont hébergés dans les datacenters OVHcloud.
+- Le stockage repose sur la technologie [OVHcloud Object Storage](/links/public-cloud/object-storage) qui est hébergée dans les datacenters OVHcloud.
 
 Plusieurs points forts sont présents dans cette offre :
 
@@ -39,6 +39,27 @@ Plusieurs points forts sont présents dans cette offre :
 - Chiffrement géré par OVHcloud du stockage hébergeant vos données de sauvegardes.
 - Envoi en direct de la donnée de sauvegarde vers le bucket sans mettre de copie sur notre infrastructure.
 - Point de stockage toujours distant de la localisation de votre serveur Bare Metal (si vous êtes à Roubaix, votre point de stockage sera à Gravelines).
+
+## Anti-affinité
+
+Les sauvegardes sont réalisées offsite, via la configuration Vault par défaut, avec un point de stockage situé dans une zone géographiquement distincte de celle du serveur Bare Metal. Ce mécanisme d’anti-affinité renforce la résilience des données de sauvegarde.
+
+Mapping des zones de sauvegarde :
+
+| Localisation Bare Metal | Vault Affinity |
+| ----------------------- | -------------- |
+| BHS                     | TOR            |
+| SGP                     | SYD            |
+| MUM                     | SGP            |
+| SYD                     | SGP            |
+| RBX                     | SBG            |
+| GRA                     | SBG            |
+| LIM                     | SBG            |
+| PAR                     | RBX            |
+| ERI                     | LIM            |
+| WAR                     | LIM            |
+| SBG                     | GRA            |
+| TOR                     | BHS            |
 
 ## Aller plus loin
 
