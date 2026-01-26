@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Comment ajuster le stockage de votre service (EN)
+title: Ajuster le stockage de Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Find out how to adjust the storage space of your cluster
 updated: 2024-12-30
 ---

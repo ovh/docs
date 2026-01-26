@@ -137,17 +137,17 @@ Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Cela générera un identifiant unique (token ID), sauvegardez-le.
+Cela générera un code, sauvegardez-le.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Ensuite, [connectez-vous à votre compte OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu de gauche, puis sur `IP`{.action}.
+Ensuite, [connectez-vous à votre compte OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
 Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Une fenêtre contextuelle apparaîtra, entrez l'adresse Additional IP (ou le bloc) et l'identifiant (récupéré dans le compte So you Start). Ensuite, cliquez sur `Suivant`{.action}.
+Une fenêtre contextuelle apparaîtra, entrez l'adresse Additional IP (ou le bloc) et le code récupéré dans le compte So you Start dans le champ `Token`. Ensuite, cliquez sur `Suivant`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 

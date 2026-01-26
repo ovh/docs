@@ -130,21 +130,21 @@ Kliknij koło zębate obok odpowiedniego adresu IP i wybierz `Przenieś IP FO`{.
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Wybierz opcję `przeniesienia na usługę OVH`, wprowadź identyfikator karty sieciowej i kliknij `Dalej`{.action}.
+Wybierz opcję `Przeniesienia na usługę OVH`, wprowadź identyfikator karty sieciowej i kliknij `Dalej`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Spowoduje to wygenerowanie identyfikatora tokenu (token ID). Zapisz go.
+Spowoduje to wygenerowanie kodu (tokenu), który należy zapisać.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Następnie [zaloguj się na swoje konto OVHcloud](/links/manager), kliknij opcję `Sieć`{.action} w menu po lewej stronie, a następnie opcję `Adres IP`{.action}.
+Następnie [zaloguj się na swoje konto OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Kliknij na koło zębate po prawej stronie i wybierz `Importuj adresy IP SYS do OVHcloud`{.action}.
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Pojawi się okno pop-up, wprowadź dodatkowy adres IP (lub blok) oraz identyfikator tokenu (uzyskany na koncie So you start). Następnie kliknij „Dalej”{.action}.
+Pojawi się okno pop-up, wprowadź dodatkowy adres IP (lub blok) oraz identyfikator tokenu (uzyskany na koncie So you start). Następnie kliknij `Dalej`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 

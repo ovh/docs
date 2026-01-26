@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Comment mettre en place une intégration interservices (EN)
+title: Configurer une intégration interservices pour les bases de données Public Cloud (EN)
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
 updated: 2025-04-15
 ---

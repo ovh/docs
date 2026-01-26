@@ -137,17 +137,17 @@ Wählen Sie `Auf eine OVH-Dienstleistung umziehen`, geben Sie Ihre NIC-Handle ei
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Dadurch wird eine Token-ID generiert und gespeichert.
+Dadurch wird eine Code (Token) generiert und gespeichert.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), Klicken Sie im linken Menü auf `Network`{.action} und dann auf `IP`{.action}.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Klicken Sie auf das Zahnrad auf der rechten Seite und wählen Sie `Meine IP-Adressen von SyS bei OVHcloud importieren`{.action}.
 
 ![SoYouStart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token-ID (die im Konto So you start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
+Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token (die im Konto So you Start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
