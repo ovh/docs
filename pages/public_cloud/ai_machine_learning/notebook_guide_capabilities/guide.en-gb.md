@@ -139,7 +139,11 @@ When attaching data volumes to your AI Notebooks, you can use storage from Publi
 
 #### Maximum execution time
 
-There is no duration limitation on AI Notebooks execution.
+> [!warning]
+>
+> There is no duration limitation on AI Notebooks execution.
+>
+> However, by default, your AI Notebook will automatically shut down after **7 consecutive running days**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this period to **28 days**.
 
 ### Live-code editors
 

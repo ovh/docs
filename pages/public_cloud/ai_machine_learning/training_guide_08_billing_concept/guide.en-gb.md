@@ -14,6 +14,9 @@ AI Training jobs are linked to a Public Cloud project. The whole project is bill
 
 ## AI Training job lifecycle
 
+> [!warning]
+> By default, your AI Training job will automatically shut down after **7 consecutive running days**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this period to **28 days**.
+
 During its lifetime, the [AI Training job](/pages/public_cloud/ai_machine_learning/training_guide_03_concepts_jobs) will go through the following statuses:
 
 - `QUEUED`: The job run request is about to be processed.
@@ -28,7 +31,7 @@ During its lifetime, the [AI Training job](/pages/public_cloud/ai_machine_learni
 - `FAILED`: The job ended with an error, e.g. the process in the job finished with a non 0 exit code, Docker image could not be pulled. For more information, refer to [this section](/pages/public_cloud/ai_machine_learning/training_guide_07_troubleshooting#why-has-my-job-failed) of our [Troubleshooting documentation](/pages/public_cloud/ai_machine_learning/training_guide_07_troubleshooting).
 - `ERROR`: The job ended due to a backend error. You may contact our support.
 
-![lifecycle](images/ai.training.lifecycle.png){.thumbnail}
+![lifecycle](images/ai_training_lifecycle.png){.thumbnail}
 
 ## Billing principles
 

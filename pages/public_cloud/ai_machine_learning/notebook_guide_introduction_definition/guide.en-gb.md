@@ -127,7 +127,7 @@ This also allows us to address host-located incidents, e.g. when a single GPU fa
 >> 
 >> **8\. Advanced configuration**
 >>
->> *This step is optional.* 
+>> *This step is optional.*
 >>
 >> By default, your AI Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your AI Notebook, to easily access your remote data.
 >>

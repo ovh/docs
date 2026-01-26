@@ -133,7 +133,11 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 #### Maximum execution time
 
-There is no duration limitation on AI Training job execution.
+> [!warning]
+>
+> There is no duration limitation on AI Training job execution.
+>
+> However, by default, your AI Training job will automatically shut down after **7 consecutive running days**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this period to **28 days**.
 
 ### Pre-installed AI environments
 
