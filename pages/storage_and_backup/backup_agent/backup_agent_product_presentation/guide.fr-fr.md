@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Présentation de l'offre"
 excerpt: "Présentation des fonctionnalités et avantages du produit Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-26
 ---
 
 ## Objectif
@@ -40,13 +40,13 @@ Plusieurs points forts sont présents dans cette offre :
 - Envoi en direct de la donnée de sauvegarde vers le bucket sans mettre de copie sur notre infrastructure.
 - Point de stockage toujours distant de la localisation de votre serveur Bare Metal (si vous êtes à Roubaix, votre point de stockage sera à Gravelines).
 
-## Anti-affinity
+## Anti-affinité
 
 Les sauvegardes sont réalisées offsite, via la configuration Vault par défaut, avec un point de stockage situé dans une zone géographiquement distincte de celle du serveur Bare Metal. Ce mécanisme d’anti-affinité renforce la résilience des données de sauvegarde.
 
 Mapping des zones de sauvegarde :
 
-| Bare Metal Localisation | Vault Affinity |
+| Localisation Bare Metal | Vault Affinity |
 | ----------------------- | -------------- |
 | BHS                     | TOR            |
 | SGP                     | SYD            |
