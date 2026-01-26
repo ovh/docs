@@ -45,7 +45,7 @@ Pour plus d'informations sur l'UEFI, consultez l'article suivant : [https://uefi
 Au cours de ce guide, nous utilisons les termes **disque principal** et **disque secondaire**. Dans ce contexte :
 
 - Le disque principal est le disque dont l'ESP (EFI System Partition) est monté par Linux.
-- Les disques secondaires sont tous les autres disques du RAID.
+- Le ou les disques secondaires sont tous les autres disques du RAID.
 
 ## En pratique
 
@@ -312,7 +312,7 @@ Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait 
 
 ***Le contenu de la partition système EFI change-t-il régulièrement ?***
 
-En général, le contenu de cette partition ne change pas beaucoup, son contenu ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*).
+En général, le contenu de cette partition ne change pas beaucoup, son contenu ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*) (par exemple GRUB).
 
 Cependant, si votre partition EFI n'est pas en miroir, nous vous recommandons d'exécuter un script automatique ou manuel pour synchroniser toutes les ESP, afin qu'elles contiennent toutes les mêmes fichiers à jour. Ainsi, si le disque sur lequel cette partition est montée tombe en panne, le serveur pourra redémarrer sur l'ESP de l'un des autres disques.
 
@@ -439,7 +439,7 @@ La méthode préférée pour le faire est via le mode rescue d'OVHcloud.
 
 Redémarrez le serveur en mode rescue et connectez-vous avec les identifiants fournis.
 
-Pour retirer un disque du RAID, la première étape est de le marquer comme **Failed** et de retirer les partitions de leurs tableaux RAID respectifs.
+Pour retirer un disque du RAID, la première étape est de le marquer comme **Failed**  (défectueux) et de retirer les partitions de leurs tableaux RAID respectifs.
 
 **Remarque** : il s'agit uniquement d'une illustration ; adaptez les commandes à votre propre configuration.
 
@@ -477,7 +477,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 Ensuite, nous exécutons la commande `cat /proc/mdstat` :
 
 ```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
 md3 : active raid1 nvme0n1p3[0](F) nvme1n1p3[1]
       497875968 blocks super 1.2 [2/1] [_U]
@@ -739,7 +739,7 @@ Ensuite, nommez la partition « EFI_SYSPART » (ce nom est spécifique à OVHclo
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Dupliquez ensuite le contenu de nvme1n1p1 vers nvme0n1p1. 
+Dupliquez ensuite le contenu de nvme1n1p1 vers nvme0n1p1.
 
 Commencez par créer deux dossiers, nommés « old » et « new » dans cet exemple :
 
@@ -828,7 +828,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 > [!warning]
 > Veuillez suivre les étapes de cette section uniquement si cela s'applique à votre cas.
-> 
+>
 
 Si le disque principal est remplacé alors qu'il contient des partitions système EFI qui n'ont pas été synchronisées après des mises à jour majeures du système ayant modifié le GRUB, le démarrage à partir d'un des disques secondaires avec une ESP obsolète peut échouer.
 
