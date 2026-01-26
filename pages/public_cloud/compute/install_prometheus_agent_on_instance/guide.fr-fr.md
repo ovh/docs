@@ -1,14 +1,14 @@
 ---
 title: "Installer l’agent Prometheus sur une instance"
-excerpt: "Découvrez comment installer un agent Prometheus sur une instance OVHcloud Public Cloud pour collecter des métriques"
+excerpt: "Découvrez comment installer un agent Prometheus sur une instance Public Cloud OVHcloud pour collecter des métriques"
 updated: 2026-01-26
 ---
 
 ## Objectif
 
-Prometheus est un système de supervision et une base de données de séries temporelles. Vous pouvez installer et utiliser son agent sur des instances OVHcloud Public Cloud pour collecter des métriques depuis vos serveurs et applications.
+Prometheus est un système de supervision et une base de données de séries temporelles. Vous pouvez installer et utiliser son agent sur des instances Public Cloud OVHcloud pour collecter des métriques depuis vos serveurs et applications.
 
-**Découvrez comment installer un agent Prometheus sur une instance OVHcloud Public Cloud.**
+**Découvrez comment installer un agent Prometheus sur une instance Public Cloud OVHcloud.**
 
 > [!warning]
 > 
@@ -25,7 +25,7 @@ Prometheus est un système de supervision et une base de données de séries tem
 
 ## En pratique
 
-Suivez ces étapes pour installer un agent Prometheus (**Node Exporter** ou **Windows Exporter**) sur votre instance OVHcloud Public Cloud afin de collecter des métriques.
+Suivez ces étapes pour installer un agent Prometheus (**Node Exporter** ou **Windows Exporter**) sur votre instance Public Cloud OVHcloud afin de collecter des métriques.
 
 ### Étape 1 : Se connecter à votre instance
 
@@ -49,17 +49,20 @@ Remplacez `<INSTANCE_IP>` par l’adresse IP publique de votre instance.
 Assurez-vous que les paquets de votre système sont à jour :
 
 > [!tabs]
-> Pour Debian/Ubuntuw
+> Pour Debian / Ubuntu
+>>
 >> ```bash
 >> sudo apt update && sudo apt upgrade -y
 >> ```
 >>
-> Pour CentOS/RHEL
+> Pour CentOS / RHEL
+>>
 >> ```bash
 >> sudo yum update -y
 >> ```
 >>
 > Pour macOS
+>>
 >> Utilisez [Homebrew](https://brew.sh/) pour mettre à jour les paquets :
 >>
 >> ```bash
@@ -68,6 +71,7 @@ Assurez-vous que les paquets de votre système sont à jour :
 >> ```
 >>
 > Pour Windows
+>>
 >> Aucune mise à jour spécifique n’est requise pour Node Exporter. Vous pouvez éventuellement vous assurer que le système est à jour via Windows Update.
 >>
 
@@ -77,6 +81,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 
 > [!tabs]
 > Pour Linux
+>>
 >> ```bash
 >> sudo useradd --no-create-home --shell /bin/false prometheus
 >> ```
@@ -86,6 +91,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> - Vous pouvez ensuite lancer Node Exporter sous cet utilisateur via systemd.
 >>
 > Pour macOS
+>>
 >> ```bash
 >> sudo dscl . -create /Users/prometheus
 >> sudo dscl . -create /Users/prometheus UserShell /usr/bin/false
@@ -96,6 +102,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> - La création d’un utilisateur dédié n’est nécessaire que pour une stricte séparation.
 >>
 > Pour Windows
+>>
 >> > [!primary]
 >> >
 >> > **Note** : Exécutez ces commandes PowerShell à l’intérieur de la VM via SSH.
@@ -114,6 +121,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 
 > [!tabs]
 > Pour Linux
+>>
 >> ```bash
 >> # Remplacez VERSION par la dernière version, par exemple 1.10.2
 >> VERSION="1.10.2"
@@ -123,6 +131,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> ```
 >>
 > Pour macOS
+>>
 >> ```bash
 >> # Remplacez VERSION par la version souhaitée, par exemple 1.10.2
 >> VERSION="1.10.2"
@@ -132,6 +141,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> ```
 >>
 > Pour Windows (via SSH / PowerShell sur la VM)
+>>
 >> > [!primary]
 >> >
 >> > `Invoke-WebRequest` nécessite PowerShell 3.0 ou supérieur.
@@ -151,6 +161,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 
 > [!tabs]
 > Pour Linux
+>>
 >> ```bash
 >> ./node_exporter
 >> ```
@@ -159,6 +170,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> - Si vous utilisez l’utilisateur dédié prometheus, assurez-vous que le service s’exécute sous ce compte.
 >>
 > Pour macOS
+>>
 >> ```bash
 >> ./node_exporter
 >> ```
@@ -166,6 +178,7 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> - **Optionnel** : vous pouvez l’exécuter sous un utilisateur dédié pour une séparation stricte, mais l’utilisateur actuel fonctionne parfaitement.
 >>
 > Pour Windows (via SSH / PowerShell)
+>>
 >> ```powershell
 >> msiexec /i windows_exporter.msi ENABLED_COLLECTORS=cpu,cs,logical_disk,net,os,service,system,textfile /qn
 >> ```
@@ -205,6 +218,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 
 > [!tabs]
 > Pour Linux (Debian / Ubuntu avec UFW)
+>>
 >> ```bash
 >> sudo ufw allow 9100/tcp
 >> sudo ufw status
@@ -223,6 +237,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 >> ```
 >>
 > Pour macOS
+>>
 >> macOS n’active pas le firewall par défaut.
 >>
 >> Si vous utilisez le firewall intégré, ouvrez le port 9100 :
@@ -233,6 +248,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 >> ```
 >>
 > Pour Windows
+>>
 >> Ouvrez le port 9182 dans le firewall Windows :
 >>
 >> ```powershell
@@ -261,11 +277,13 @@ scrape_configs:
 
 > [!tabs]
 > Pour Linux
+>>
 >> ```bash
 >> sudo systemctl reload prometheus
 >> ```
 >>
 > Pour macOS
+>>
 >> ```bash
 >> brew services reload prometheus
 >> ```
@@ -282,7 +300,7 @@ scrape_configs:
 
 ## Aller plus loin
 
-[Documentation officielle de Node Exporter](https://github.com/prometheus/node_exporter).
+[Documentation officielle de Node Exporter](https://github.com/prometheus/node_exporter)
 
 [Créer et configurer un groupe de sécurité dans Horizon](/pages/public_cloud/compute/setup_security_group)
 

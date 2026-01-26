@@ -50,16 +50,19 @@ Make sure your system packages are up to date:
 
 > [!tabs]
 > For Debian/Ubuntu
+>>
 >> ```bash
 >> sudo apt update && sudo apt upgrade -y
 >> ```
 >>
 > For CentOS/RHEL
+>>
 >> ```bash
 >> sudo yum update -y
 >> ```
 >>
 > For macOS
+>>
 >> Use [Homebrew](https://brew.sh/) to update packages:
 >>
 >> ```bash
@@ -68,6 +71,7 @@ Make sure your system packages are up to date:
 >> ```
 >>
 > For Windows
+>>
 >> No system update is required specifically for Node Exporter. Optionally, ensure your system is up to date via Windows Update.
 >>
 
@@ -77,6 +81,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 
 > [!tabs]
 > For Linux
+>>
 >> ```bash
 >> sudo useradd --no-create-home --shell /bin/false prometheus
 >> ```
@@ -86,6 +91,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> - You can then start Node Exporter under this user via systemd
 >>
 > For macOS
+>>
 >> ```bash
 >> sudo dscl . -create /Users/prometheus
 >> sudo dscl . -create /Users/prometheus UserShell /usr/bin/false
@@ -96,6 +102,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> - Creating a dedicated user is only for stricter separation, not required.
 >>
 > For Windows
+>>
 >> > [!primary]
 >> >
 >> > **Note**: Run these PowerShell commands inside the VM via SSH.
@@ -114,6 +121,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 
 > [!tabs]
 > For Linux
+>>
 >> ```bash
 >> # Replace VERSION with the latest release, e.g., 1.10.2
 >> VERSION="1.10.2"
@@ -123,6 +131,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> ```
 >>
 > For macOS
+>>
 >> ```bash
 >> # Replace VERSION with the latest release, e.g., 1.10.2
 >> VERSION="1.10.2"
@@ -132,6 +141,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> ```
 >>
 > For Windows (via SSH/PowerShell on the VM)
+>>
 >> > [!primary]
 >> >
 >> > `Invoke-WebRequest` require PowerShell 3.0 or later.
@@ -151,6 +161,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 
 > [!tabs]
 > For Linux
+>>
 >> ```bash
 >> ./node_exporter
 >> ```
@@ -159,6 +170,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> - If using the dedicated prometheus user, ensure the service runs under this account.
 >>
 > For macOS
+>>
 >> ```bash
 >> ./node_exporter
 >> ```
@@ -166,6 +178,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> **Optional**: run under a dedicated user for stricter separation, but current user works fine.
 >>
 > For Windows (via SSH/PowerShell)
+>>
 >> ```powershell
 >> msiexec /i windows_exporter.msi ENABLED_COLLECTORS=cpu,cs,logical_disk,net,os,service,system,textfile /qn
 >> ```
@@ -205,6 +218,7 @@ Restrict access to only your Prometheus server for security.
 
 > [!tabs]
 > For Linux (Debian/Ubuntu with UFW)
+>>
 >> ```bash
 >> sudo ufw allow 9100/tcp
 >> sudo ufw status
@@ -223,6 +237,7 @@ Restrict access to only your Prometheus server for security.
 >> ```
 >>
 > For macOS
+>>
 >> macOS does not enable a firewall by default.
 >>
 >> If you are using the built-in firewall, open port 9100:
@@ -233,6 +248,7 @@ Restrict access to only your Prometheus server for security.
 >> ```
 >>
 > For Windows
+>>
 >> Open port 9182 in Windows Firewall:
 >>
 >> ```powershell
@@ -261,11 +277,13 @@ scrape_configs:
 
 > [!tabs]
 > For Linux
+>>
 >> ```bash
 >> sudo systemctl reload prometheus
 >> ```
 >>
 > For macOS
+>>
 >> ```bash
 >> brew services reload prometheus
 >> ```
@@ -282,7 +300,7 @@ scrape_configs:
 
 ## Go further
 
-[Official Node Exporter documentation](https://github.com/prometheus/node_exporter).
+[Official Node Exporter documentation](https://github.com/prometheus/node_exporter)
 
 [Creating and configuring a security group in Horizon](/pages/public_cloud/compute/setup_security_group)
 
