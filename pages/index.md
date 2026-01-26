@@ -1154,7 +1154,7 @@
             + [Tutorials](public-cloud-databases-postgresql-tutorials)
                 + [Build a Strapi app connected to Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_tuto_01_connect_strapi_to_managed_postgresql)
                 + [Install and connect Wagtail to Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_tuto_02_connect_wagtail_to_managed_postgresql)
-                + [PostgreSQL - Tutorial - How to migrate an on-premises database to Public Cloud Databases](public_cloud/public_cloud_databases/postgresql_tuto_03_migrate_ecdb)
+                + [Migrate an on-premises database to Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_tuto_03_migrate_ecdb)
             + [Security](public-cloud-databases-postgresql-security)
                 + [Public Cloud Databases Concepts - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
                 + [Responsibility model](public_cloud/public_cloud_databases/information_03_shared_responsibility)
