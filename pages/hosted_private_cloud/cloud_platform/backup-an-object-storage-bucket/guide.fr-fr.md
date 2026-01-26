@@ -10,7 +10,7 @@ Vous pouvez mettre en œuvre un outil comme [Rclone](https://rclone.org/) afin d
 
 ## Prérequis
 
-- Avoir un bucket Object Storage
+- Avoir un [bucket Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 - Avoir généré des Access Keys pour les stockages objets source et destination
 - Avoir installé **Rclone**
 - Avoir installé **S3cmd** et configuré celui-ci avec les Access Keys
