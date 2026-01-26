@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Product Overview"
 excerpt: "Overview of the Backup Agent product features and benefits"
-updated: 2026-01-09
+updated: 2026-01-23
 ---
 
 ## Objective
@@ -17,7 +17,12 @@ The Backup Agent product is based on two products from the Veeam software publis
 - The Veeam Service Provider Console (VSPC)
 - The Veeam Agent
 
+The Veeam Agent is a software created by Veeam, which installs on your operating system on Linux and Windows, and allows you to back up your system.
+
 The VSPC allows you to downgrade the backup policies to the agents stored on them, and allows you to give each agent the storage and credentials information when starting the backup.
+Here is the [guide](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation) that explains how to navigate the VSPC.
+
+When you order the product, you will receive an email confirming delivery with credentials allowing you to connect to your tenant in the VSPC. This account is read-only and allows you to access visualizations to view your backups and agents.
 
 Once the agent obtains the information, it sends the data directly to the storage point without ever transitioning through the VSPC infrastructure.
 
@@ -34,11 +39,18 @@ There are several key advantages to this solution:
 
 - First automatic backup policy with 14 days retention.
 - Possibility to increase to 30 days of retention.
+- The policy makes a full backup of your server.
 - 14 days of immutability on our buckets.
 - The period for automatic backups is between 10 p.m. and 6 a.m. (CET time zone for Europe - EST time zone for Canada and Asia).
 - Encryption managed by OVHcloud of the storage hosting your backup data.
 - Live sending of backup data to the bucket without placing a copy on our infrastructure.
 - Storage point always distant from the location of your Bare Metal server (if you are in Roubaix, your storage point will be in Gravelines).
+
+It is also important to keep in mind that:
+
+- The backup policy is restricted, you cannot modify them.
+- You cannot configure a backup only on a list of files or folders.
+- You cannot modify the date and time of backup triggers (this is considered as an improvement in the future).
 
 ## Go further
 

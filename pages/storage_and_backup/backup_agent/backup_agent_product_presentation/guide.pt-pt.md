@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Apresentação da oferta"
 excerpt: "Apresentação das funcionalidades e vantagens do produto Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-23
 ---
 
 ## Objetivo
@@ -17,7 +17,12 @@ O produto Backup Agent baseia-se em dois produtos do editor de software Veeam:
 - A Veeam Service Provider Console (VSPC).
 - O Veeam Agent.
 
+O Veeam Agent é um software criado pela Veeam, que se instala no seu sistema operativo em Linux e Windows, e permite fazer cópias de segurança do seu sistema.
+
 A VSPC permite repassar as políticas de backup aos agentes registrados nela, e permite fornecer as informações de armazenamento e as credenciais a cada agente no início do seu backup.
+Aqui está o [guia](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation) que explica como navegar na VSPC.
+
+Quando encomendar o produto, receberá um e-mail a confirmar a entrega com credenciais que permitem ligar-se ao seu tenant na VSPC. Esta conta é só de leitura e permite aceder a visualizações para ver as suas cópias de segurança e os seus agentes.
 
 Uma vez que o agente obtenha as informações, ele envia diretamente os dados para o ponto de armazenamento, sem nunca passar pela infraestrutura VSPC.
 
@@ -34,11 +39,18 @@ Vários pontos fortes estão presentes nesta oferta:
 
 - Primeira política de backup automático com 14 dias de retenção.
 - Possibilidade de passar para 30 dias de retenção.
+- A política faz uma cópia de segurança completa do seu servidor.
 - 14 dias de imutabilidade nos nossos buckets.
 - O período dos backups automáticos é entre 22h00 e 06h00 (fuso horário CET para a Europa - fuso horário EST para o Canadá e a Ásia).
 - Criptografia gerenciada pela OVHcloud do armazenamento que aloja os seus dados de backup.
 - Envio direto dos dados de backup para o bucket sem fazer cópia na nossa infraestrutura.
 - O ponto de armazenamento está sempre distante da localização do seu servidor Bare Metal (se estiver em Roubaix, o seu ponto de armazenamento será em Gravelines).
+
+É também importante ter em mente que:
+
+- A política de cópia de segurança está restrita, não pode modificá-la.
+- Não pode configurar uma cópia de segurança apenas numa lista de ficheiros ou pastas.
+- Não pode modificar a data e hora de ativação das cópias de segurança (isto é considerado como uma melhoria no futuro).
 
 ## Quer saber mais?
 

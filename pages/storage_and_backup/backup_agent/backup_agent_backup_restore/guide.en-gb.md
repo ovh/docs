@@ -1,12 +1,16 @@
 ---
 title: "Backup Agent - Managing your backups and restores"
 excerpt: "Learn how to back up and restore your data on your Bare Metal servers with Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-23
 ---
 
 ## Objective
 
 Learn how to back up and restore your data on your Bare Metal servers with Backup Agent.
+
+> [!primary]
+> 
+> If you would like information about the Backup Agent product, you can find it on this [page](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Requirements
 
@@ -14,32 +18,6 @@ Learn how to back up and restore your data on your Bare Metal servers with Backu
 - A Bare Metal server with the Backup Agent installed on it. Read our guide "[How to configure your first backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) for more information".
 
 ## Instructions
-
-### Create a backup for your server
-
-This involves adding your server to your Backup Agent, downloading the agent and installing it on your server.
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select `Backup Agent`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
-
-Click on your vspc-tenant, in the `Services`{.action} section.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Go to the `Agents`{.action} section.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Click the `Add a server`{.action} button.
-
-![Backup Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Select your server and operating system.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Backup
 
@@ -58,6 +36,7 @@ This backup will make a full backup of your server, which will be sent to your r
 > [!primary]
 >
 > You cannot change or disable this automatic backup.
+> Currently, you cannot modify the policy that backs up your entire server, we are working to improve this configuration in the future.
 
 You can view the success of this backup via:
 

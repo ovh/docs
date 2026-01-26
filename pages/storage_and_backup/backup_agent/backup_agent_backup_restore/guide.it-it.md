@@ -1,12 +1,16 @@
 ---
 title: "Backup Agent - Gestisci i tuoi backup e le tue ripristini"
 excerpt: "Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal con Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-23
 ---
 
 ## Obiettivo
 
 Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal con Backup Agent.
+
+> [!primary]
+> 
+> Se desideri informazioni sul prodotto Backup Agent, puoi trovarle su questa [pagina](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Prerequisiti
 
@@ -14,32 +18,6 @@ Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal c
 - Un server Bare Metal su cui è installato Backup Agent. Consulta la nostra guida "[Come configurare il tuo primo backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" per ulteriori informazioni.
 
 ## Procedura
-
-### Creare un backup per il tuo server
-
-Questo consiste nell'aggiungere il tuo server al tuo Backup Agent, scaricare l'agente e installarlo sul tuo server.
-
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Bare Metal Cloud`{.action} e seleziona `Agente di backup`{.action}. 
-
-![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
-
-Clicca sul tuo vspc-tenant, nella sezione `Servizi`{.action}.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Vai nella sezione `Agenti`{.action}.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Clicca sul pulsante `Aggiungere un server`{.action}.
-
-![Backup Agent Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Seleziona il tuo server e il sistema operativo.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Backup
 
@@ -58,6 +36,7 @@ Si tratta di un backup completo del tuo server, che verrà inviato al tuo punto 
 > [!primary]
 > 
 > Non è possibile modificare o disattivare questo backup automatico.
+> Attualmente, non è possibile modificare la politica che esegue il backup dell'intero server, stiamo lavorando per migliorare questa configurazione in futuro.
 
 Potrai verificare il successo di questo backup tramite:
 

@@ -1,12 +1,16 @@
 ---
 title: "Backup Agent - Gérer vos sauvegardes et vos restaurations"
 excerpt: "Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-23
 ---
 
 ## Objectif
 
 Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent.
+
+> [!primary]
+> 
+> Si vous souhaitez des informations sur le produit Backup Agent, vous pouvez les retrouver sur cette [page](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Prérequis
 
@@ -14,32 +18,6 @@ Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare M
 - Un serveur Bare Metal sur lequel Backup Agent est installé. Consultez notre guide « [Comment configurer votre première sauvegarde](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration) » pour plus d'informations.
 
 ## En pratique
-
-### Créer une sauvegarde pour votre serveur
-
-Cela consiste à ajouter votre serveur dans votre Backup Agent, télécharger l'agent et l'installer sur votre serveur.
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Backup Agent`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
-
-Cliquez sur votre vspc-tenant, dans la partie `Services`{.action}.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Allez dans la partie `Agents`{.action}.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Cliquez sur le bouton `Ajouter un serveur`{.action}.
-
-![Backup Agent Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Sélectionnez votre serveur et le système d'exploitation.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Sauvegarde
 
@@ -58,6 +36,7 @@ Il s'agit d'une sauvegarde complète de votre serveur, qui sera envoyée vers vo
 > [!primary]
 > 
 > Vous n'avez pas de possibilité de modifier ou désactiver cette sauvegarde automatique.
+> À l'heure actuelle, vous ne pouvez pas modifier la politique qui sauvegarde tout votre serveur, nous travaillons à améliorer cette configuration dans l'avenir.
 
 Vous pourrez voir le succès de cette sauvegarde via :
 
