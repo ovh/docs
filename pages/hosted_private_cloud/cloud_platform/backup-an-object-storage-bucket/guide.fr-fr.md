@@ -1,16 +1,16 @@
 ---
-title: 'Comment sauvegarder un bucket de stockage objet SNC Cloud Platform'
-excerpt: 'Découvrez comment sauvegarder un bucket de stockage objet SNC Cloud Platform sur un stockage objet distant'
-updated: 2026-01-23
+title: 'Comment sauvegarder un bucket Object Storage SNC Cloud Platform'
+excerpt: 'Découvrez comment sauvegarder un bucket Object Storage SNC Cloud Platform sur un Object Storage distant'
+updated: 2026-01-26
 ---
 
 ## Objectif
 
-Vous pouvez mettre en œuvre un outil comme [Rclone](https://rclone.org/) afin d'automatiser les sauvegardes des données de vos buckets vers un stockage objet distant. Les sauvegardes peuvent être utilisées pour restaurer vos données en cas de problème.
+Vous pouvez mettre en œuvre un outil comme [Rclone](https://rclone.org/) afin d'automatiser les sauvegardes des données de vos buckets vers un Object Storage distant. Les sauvegardes peuvent être utilisées pour restaurer vos données en cas de problème.
 
 ## Prérequis
 
-- Avoir un bucket
+- Avoir un bucket Object Storage
 - Avoir généré des Access Keys pour les stockages objets source et destination
 - Avoir installé **Rclone**
 - Avoir installé **S3cmd** et configuré celui-ci avec les Access Keys
@@ -25,17 +25,19 @@ Vous pouvez mettre en œuvre un outil comme [Rclone](https://rclone.org/) afin d
 
 ### Créer un bucket pour stocker les sauvegardes
 
-Renseignez la commande suivante :
+Saisissez la commande suivante :
 
 ```bash
 $ s3cmd mb s3://backup
 ```
 
-Note : afin de pouvoir récupérer différentes versions d'un fichier envoyé sur ce bucket, vous pouvez activer le versioning des objets de ce bucket.
+> [!primary]
+>
+> Afin de pouvoir récupérer différentes versions d'un fichier envoyé sur ce bucket, vous pouvez activer le versioning des objets de ce bucket.
 
 ### Configurer la source et la destination de Rclone
 
-Créer un fichier de configuration ~/.config/rclone/rclone.conf :
+Créez un fichier de configuration `~/.config/rclone/rclone.conf` :
 
 ```bash
 [source-s3]
@@ -61,7 +63,7 @@ acl = private
 force_path_style = true
 ```
 
-Configurer le source-s3 et le target-s3 si possible entre 2 régions SNC Cloud Platform.
+Configurez le `source-s3` et le `target-s3` si possible entre 2 régions SNC Cloud Platform.
 
 Une fois l'environnement configuré, la commande rclone suivante peut être utilisée pour valider la confifguration avant une sauvegarde :
 
@@ -75,64 +77,64 @@ $ rclone sync source-s3:source-bucket target-s3:backup \
 
 ### Planifier une tâche récurrente
 
-Une fois la commande testée, il est possible de planifier une tâche récurrente :
+Une fois la commande testée, il est possible de planifier une tâche récurrente.
 
-1. Créer de l'unité de service systemd :
+1\. Créez l'unité de service systemd :
 
-  ```bash
-  sudo tee /etc/systemd/system/rclone-backup.service > /dev/null <<'EOF'
-  [Unit]
-  Description=Rclone backup
-  Wants=network-online.target
-  After=network-online.target
+```bash
+sudo tee /etc/systemd/system/rclone-backup.service > /dev/null <<'EOF'
+[Unit]
+Description=Rclone backup
+Wants=network-online.target
+After=network-online.target
 
-  [Service]
-  User=YOUR_USER
-  Group=YOUR_GROUP
-  Environment=RCLONE_CONFIG=PATH_TO_RCLONE_CONFIG/rclone.conf
-  Type=oneshot
-  ExecStart=/usr/bin/rclone sync \
-    source-s3:source-bucket \
-    target-s3:backup \
-    --log-file=/var/log/rclone-backup.log \
-    --log-level=INFO \
-    --transfers=16 \
-    --checkers=32
-  EOF
-  ```
+[Service]
+User=YOUR_USER
+Group=YOUR_GROUP
+Environment=RCLONE_CONFIG=PATH_TO_RCLONE_CONFIG/rclone.conf
+Type=oneshot
+ExecStart=/usr/bin/rclone sync \
+  source-s3:source-bucket \
+  target-s3:backup \
+  --log-file=/var/log/rclone-backup.log \
+  --log-level=INFO \
+  --transfers=16 \
+  --checkers=32
+EOF
+```
 
-2. Créer l'unité de timer systemd :
+2\. Créez l'unité de timer systemd :
 
-  ```bash
-  sudo tee /etc/systemd/system/rclone-backup.timer > /dev/null <<'EOF'
-  [Unit]
-  Description=Run Rclone backup daily
+```bash
+sudo tee /etc/systemd/system/rclone-backup.timer > /dev/null <<'EOF'
+[Unit]
+Description=Run Rclone backup daily
 
-  [Timer]
-  OnCalendar=daily
-  Persistent=true
-  RandomizedDelaySec=15m
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=15m
 
-  [Install]
-  WantedBy=timers.target
-  EOF
-  ```
+[Install]
+WantedBy=timers.target
+EOF
+```
 
-3. Recharger la configuration systemd et activer le timer :
+3\. Rechargez la configuration systemd et activez le timer :
 
-  ```bash
-  sudo systemctl daemon-reload
-  sudo systemctl enable --now rclone-backup.timer
-  ```
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now rclone-backup.timer
+```
 
-4. Vérifier la configuration :
+4\. Vérifiez la configuration :
 
-  ```bash
-  systemctl list-timers --all | grep rclone
-  sudo systemctl enable --now rclone-backup.service
-  systemctl status rclone-backup.service
-  journalctl -u rclone-backup.service
-  ```
+```bash
+systemctl list-timers --all | grep rclone
+sudo systemctl enable --now rclone-backup.service
+systemctl status rclone-backup.service
+journalctl -u rclone-backup.service
+```
 
 ## Aller plus loin
 
