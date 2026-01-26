@@ -123,7 +123,6 @@ La création d’un utilisateur dédié pour Node Exporter améliore la sécurit
 >> ```
 >>
 > Pour macOS
->> **macOS Intel**
 >> ```bash
 >> # Remplacez VERSION par la version souhaitée, par exemple 1.10.2
 >> VERSION="1.10.2"
