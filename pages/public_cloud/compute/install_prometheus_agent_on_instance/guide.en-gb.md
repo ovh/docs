@@ -1,5 +1,5 @@
 ---
-title: 'Installing Prometheus Agent on an instance'
+title: 'Installing Prometheus Agent on a Public Cloud instance'
 excerpt: 'Find out how to install a Prometheus agent on an OVHcloud Public Cloud instance to gather metrics'
 updated: 2026-01-26
 ---

@@ -724,7 +724,7 @@
             + [How to install ownCloud on a Public Cloud instance](public_cloud/compute/install-owncloud-on-a-public-cloud-instance)
             + [Installing Plesk on an instance](public_cloud/compute/install_plesk_on_an_instance)
             + [Installing WordPress on an instance](public_cloud/compute/install_wordpress_on_an_instance)
-            + [Installing Prometheus Agent on an instance](public_cloud/compute/install_prometheus_agent_on_instance)
+            + [Installing Prometheus Agent on a Public Cloud instance](public_cloud/compute/install_prometheus_agent_on_instance)
             + [How to deploy the 3CX IPBX automatically on OVHcloud Public Cloud](web_cloud/phone_and_fax/voip/deployer_3cx_sur_public_cloud)
             + [Repairing the GRUB bootloader](public_cloud/compute/repairing_the_grub_bootloader)
             + [How to retrieve databases in rescue mode](bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
