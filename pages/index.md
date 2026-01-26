@@ -1162,7 +1162,7 @@
                 + [Troubleshoot your Public Cloud Databases](public_cloud/public_cloud_databases/databases_04_troubleshooting)
                 + [Handle 'Disk Full' situations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_10_full_disk_handling)
             + [Additional resources](public-cloud-databases-postgresql-additional-resources)
-                + [PostgreSQL - Available extensions](public_cloud/public_cloud_databases/postgresql_02_extensions)
+                + [Available extensions for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_02_extensions)
         + [MySQL](products/public-cloud-databases-mysql)
             + [Guides](public-cloud-databases-mysql-guides)
                 + [MySQL - Capabilities and Limitations](public_cloud/public_cloud_databases/mysql_01_capabilities)
