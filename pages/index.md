@@ -1149,7 +1149,7 @@
             + [Migration](public-cloud-databases-postgresql-migration)
                 + [Migrate to OVHcloud Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_move_to_cloud)
                 + [Migrate from Gen 2 to Gen 3 for Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_migrate_from_gen2_to_gen3)
-                + [How to move a database service from a single AZ region to a 3-AZ region](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
+                + [Migrate from a Single AZ to a 3-AZ region for Public Cloud Databases](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
                 + [Reversibility Policy for Managed Relational Database product](account_and_service_management/reversibility/07-rdb_mysql_postgre)
             + [Tutorials](public-cloud-databases-postgresql-tutorials)
                 + [PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service](public_cloud/public_cloud_databases/postgresql_tuto_01_connect_strapi_to_managed_postgresql)
