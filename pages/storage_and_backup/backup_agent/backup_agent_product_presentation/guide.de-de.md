@@ -1,56 +1,89 @@
 ---
 title: "Backup Agent - Produktübersicht"
-excerpt: "Übersicht der Backup Agent Funktionen und Vorteile"
-updated: 2026-01-23
+excerpt: "Übersicht über die Funktionen und Vorteile des Backup Agent Produkts"
+updated: 2026-01-27
 ---
 
 ## Ziel
 
-Diese Anleitung hilft Ihnen dabei, zu verstehen, wie der Backup Agent funktioniert und welche Vorteile er für Ihre Bare Metal-Dienste bietet.
+Dieses Handbuch hilft Ihnen dabei, zu verstehen, wie der Backup Agent funktioniert und welche Vorteile er für Ihre Bare Metal Dienste bietet.
 
 ## Produktvorstellung
 
-Backup Agent ermöglicht es Ihnen, Ihre Bare Metal Server mit einem Agenten zu sichern, der entsprechend einer von Ihnen ausgewählten Backup-Richtlinie Ihre Serverdaten an einen externen Speicherort sendet.
+Das Backup Agent Produkt ermöglicht es Ihnen, Ihre Bare Metal Server mit einem Agenten zu sichern, der entsprechend einer von Ihnen gewählten Backup-Richtlinie Ihre Serverdaten an einen externen Speicherort sendet.
 
-Backup Agent basiert auf zwei Veeam Produkten:
+Das Backup Agent Produkt basiert auf zwei Produkten des Softwareherstellers Veeam:
 
-- Veeam Service Provider Console (VSPC)
-- Veeam Agent
+- Der Veeam Service Provider Console (VSPC)
+- Der Veeam Agent
 
-Der Veeam Agent ist eine von Veeam erstellte Software, die auf Ihrem Betriebssystem unter Linux und Windows installiert wird und es Ihnen ermöglicht, Ihr System zu sichern.
+Der Veeam Agent ist eine von Veeam entwickelte Software, die auf Ihrem Betriebssystem unter Linux und Windows installiert wird und Ihnen ermöglicht, Ihr System zu sichern.
 
-Die VSPC ermöglicht es Ihnen, die Backup-Richtlinien an die darauf gespeicherten Agenten herunterzuladen und Ihnen ermöglicht es, jedem Agenten bei Start des Backups die Speicher- und Anmeldeinformationen zu geben.
-Hier ist die [Anleitung](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation), die erklärt, wie Sie in der VSPC navigieren.
+Die VSPC ermöglicht es Ihnen, die Backup-Richtlinien an die darauf gespeicherten Agenten weiterzugeben und jedem Agenten die Speicher- und Anmeldeinformationen bei Start des Backups zu geben.
+Erfahren Sie, wie Sie die VSPC-Oberfläche durchsuchen können, über [dieses Handbuch](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation).
 
-Wenn Sie das Produkt bestellen, erhalten Sie eine E-Mail zur Bestätigung der Lieferung mit Anmeldeinformationen, die es Ihnen ermöglichen, sich mit Ihrem Tenant in der VSPC zu verbinden. Dieses Konto ist schreibgeschützt und ermöglicht es Ihnen, auf Visualisierungen zuzugreifen, um Ihre Backups und Agenten anzuzeigen.
+Wenn Sie das Produkt bestellen, erhalten Sie eine E-Mail, die bestätigt, dass der Dienst geliefert wurde, sowie die Zugangsdaten zu Ihrem Mandanten in der VSPC. Dieses Konto ist schreibgeschützt und gewährt Ihnen Zugriff auf Ansichten Ihrer Backups und Agenten.
 
 Sobald der Agent die Informationen erhält, sendet er die Daten direkt an den Speicherort, ohne dass sie jemals über die VSPC-Infrastruktur laufen.
 
-Das grundlegende Diagramm sieht wie folgt aus:
-
-![Backup Agent Funktionsdiagramm](images/01-backup-agent-diagram.png){.thumbnail}
-
-Beachten Sie:
-
-- Die VSPC-Infrastruktur wird in OVHcloud Rechenzentren gehostet und sendet keine Daten an Veeam-Server.
-- Die Speicherorte sind [OVHcloud Object Storage](/links/public-cloud/object-storage) Buckets, die in den OVHcloud Rechenzentren gehostet werden.
+## Wichtige Aspekte
 
 Es gibt mehrere entscheidende Vorteile dieser Lösung:
 
-- Erste automatische Backup-Richtlinie mit 14 Tagen Retention.
-- Möglichkeit, die Retention auf 30 Tage zu erhöhen.
-- Die Richtlinie erstellt ein vollständiges Backup Ihres Servers.
+- Erster automatischer Backup-Plan mit 14 Tagen Retention.
+- Möglichkeit, auf 30 Tage Retention zu erhöhen.
+- Der Plan erstellt ein vollständiges Backup Ihres Servers.
 - 14 Tage Unveränderlichkeit auf unseren Buckets.
-- Der Zeitraum für automatische Backups liegt zwischen 22 Uhr und 6 Uhr (CET-Zeitzone für Europa - EST-Zeitzone für Kanada und Asien).
+- Der Zeitraum für automatische Backups liegt zwischen 22 Uhr und 6 Uhr (MESZ Zeitzone für Europa - EST Zeitzone für Kanada und Asien).
 - Verschlüsselung durch OVHcloud des Speichers, der Ihre Backup-Daten hostet.
-- Live-Übertragung der Backup-Daten in den Bucket, ohne eine Kopie auf unserer Infrastruktur zu platzieren.
-- Der Speicherort befindet sich immer an einem anderen Ort als die Lage Ihres Bare Metal Servers (wenn Sie in Roubaix sind, befindet sich Ihr Speicherort in Gravelines).
+- Live-Übertragung der Backup-Daten zum Bucket, ohne eine Kopie auf unserer Infrastruktur zu platzieren.
+- Der Speicherort befindet sich immer an einem anderen Ort als der Standort Ihres Bare Metal Servers (wenn Sie sich in Roubaix befinden, wird Ihr Speicherort in Gravelines sein).
 
 Es ist auch wichtig zu beachten, dass:
 
-- Die Backup-Richtlinie ist eingeschränkt, Sie können sie nicht ändern.
-- Sie können kein Backup nur für eine Liste von Dateien oder Ordnern konfigurieren.
-- Sie können das Datum und die Uhrzeit der Backup-Auslöser nicht ändern (dies wird als Verbesserung in der Zukunft betrachtet).
+- Die Backup-Richtlinien eingeschränkt sind, Sie können sie nicht ändern.
+- Sie können keinen Backup nur auf eine Liste von Dateien oder Ordnern konfigurieren.
+- Sie können das Datum und die Uhrzeit der Backup-Auslöser nicht ändern (dies gilt als zukünftige Verbesserung).
+
+## Infrastruktur
+
+Das grundlegende Diagramm ist wie folgt:
+
+![Backup Agent Funktionsdiagramm](images/01-backup-agent-diagram.png){.thumbnail}
+
+Beachten Sie, dass:
+
+- Die VSPC-Infrastruktur in den OVHcloud-Datencentern gehostet wird und keine Daten an Veeam-Server sendet.
+- Der Speicher basiert auf der [OVHcloud Object Storage](/links/public-cloud/object-storage) Technologie, die in den OVHcloud-Datencentern gehostet wird.
+
+Bei der Lieferung erhalten Sie:
+
+- Einen Backup-Mandanten, normalerweise mit dem Namen `Backup-tenant-xxxx`, der ein virtuelles Container ist, der verwendet werden kann, um alle Ihre Backup-Dienste zu gruppieren.
+- Einen VSPC-Mandanten, normalerweise mit dem Namen `vspc-tenant-xxxx`, der Ihr „Unternehmen“ in der VSPC ist und den Zugriff auf Ihre Dashboards und die Verbindung Ihrer Agenten ermöglicht.
+- Ein Vault, normalerweise mit dem Namen `Backup-vault-xxxx`, das Ihr Speicherbereich ist, in den Ihre Backup-Daten bei jedem Backup gesendet werden.
+
+Wir empfehlen Ihnen, unsere anderen Handbücher zu lesen, um mehr über das Produkt zu erfahren.
+
+## Anti-Affinität
+
+Backups werden über die Standard-Vault-Konfiguration an einem geografisch getrennten Ort durchgeführt, sodass der Speicherort vom Bare Metal Server getrennt ist. Dieses Anti-Affinitäts-Mechanismus erhöht die Ausfallsicherheit der Backup-Daten.
+
+Zuordnung der Backup-Regionen:
+
+| Bare Metal Lokalisierung | Vault Affinität |
+| ------------------------- | --------------- |
+| BHS                       | TOR             |
+| SGP                       | SYD             |
+| MUM                       | SGP             |
+| SYD                       | SGP             |
+| RBX                       | SBG             |
+| GRA                       | SBG             |
+| LIM                       | SBG             |
+| PAR                       | RBX             |
+| ERI                       | LIM             |
+| WAR                       | LIM             |
+| SBG                       | GRA             |
+| TOR                       | BHS             |
 
 ## Weitere Informationen
 

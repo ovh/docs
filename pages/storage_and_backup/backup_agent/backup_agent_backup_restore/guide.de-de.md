@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Verwalten Ihrer Backups und Wiederherstellungen"
 excerpt: "Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Ziel
@@ -10,7 +10,7 @@ Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern
 
 > [!primary]
 > 
-> Wenn Sie Informationen zum Backup Agent Produkt wünschen, finden Sie diese auf dieser [Seite](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+> Weitere Informationen zum Produkt Backup Agent finden Sie auf [dieser Seite](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Voraussetzungen
 

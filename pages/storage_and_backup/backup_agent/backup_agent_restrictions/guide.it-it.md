@@ -1,39 +1,38 @@
 ---
-title: "Backup Agent - Restrizioni note"
-excerpt: "Scopri le restrizioni e le limitazioni del prodotto Backup Agent"
-updated: 2026-01-23
+title: "Backup Agent - Limitazioni note"
+excerpt: "Scopri le restrizioni e limitazioni del prodotto Backup Agent"
+updated: 2026-01-27
 ---
 
 ## Obiettivo
 
-Questa guida dettaglia le restrizioni e limitazioni note del prodotto Backup Agent che dovete conoscere prima di utilizzare il servizio.
+Questo manuale dettaglia le restrizioni e limitazioni note del prodotto Backup Agent che devi conoscere prima di utilizzare il servizio.
 
-## Restrizioni note
+## Limitazioni note
 
 ### Politica di backup
 
-- La politica di backup è limitata, non potete modificarla.
-- Non potete configurare un backup solo su un elenco di file o cartelle.
-- Non potete modificare la data e l'ora di attivazione dei backup (questo è considerato come un miglioramento in futuro).
+- La politica di backup è limitata, non è possibile modificarla.
+- Non è possibile configurare un backup su una lista di file o cartelle.
+- Non è possibile modificare la data e l'ora di attivazione dei backup (questa funzionalità sarà migliorata in futuro).
 
 ### Accesso VSPC
 
-- L'utente che ricevete è in sola lettura, non potete fare modifiche direttamente nella VSPC.
+- L'utente che ricevi ha accesso in sola lettura, non è possibile apportare modifiche direttamente sulla VSPC.
 
 ### Vault
 
-- Non potete creare vault aggiuntivi, verranno creati automaticamente per assicurare che i vostri dati non siano ospitati nello stesso datacenter dove si trova il vostro server Bare Metal.
-- Non potete cambiare il vault di un agente.
+- Non è possibile creare vault aggiuntive, verranno create automaticamente per garantire che i tuoi dati non siano ospitati nello stesso datacenter in cui si trova il tuo server Bare Metal.
+- Non è possibile cambiare vault su un agente.
 
-### Limitazioni OS
+### Limitazioni del sistema operativo
 
-- Potete trovare l'elenco dei sistemi operativi compatibili per l'agente Veeam qui <https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1>
+- È possibile trovare l'elenco dei sistemi operativi compatibili con Veeam Agent a [questo indirizzo](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
 
 ### Compatibilità con altri prodotti OVHcloud
 
-- Attualmente, il prodotto Backup Agent è compatibile solo con i Server Dedicati, non potete utilizzare il vostro agente su altri prodotti.
+- Al momento il prodotto Backup Agent è compatibile solo con i Server dedicati, non è possibile utilizzare l'agente su altri prodotti.
 
 ## Per saperne di più
 
 Contatta la nostra [Community di utenti](/links/community).
-

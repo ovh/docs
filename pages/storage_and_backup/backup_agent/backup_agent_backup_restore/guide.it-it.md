@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gestisci i tuoi backup e le tue ripristini"
 excerpt: "Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal con Backup Agent"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Obiettivo
@@ -10,7 +10,8 @@ Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal c
 
 > [!primary]
 > 
-> Se desideri informazioni sul prodotto Backup Agent, puoi trovarle su questa [pagina](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+> Ulteriori informazioni sul prodotto Backup Agent sono disponibili su [questa pagina](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+>
 
 ## Prerequisiti
 
@@ -36,7 +37,7 @@ Si tratta di un backup completo del tuo server, che verrà inviato al tuo punto 
 > [!primary]
 > 
 > Non è possibile modificare o disattivare questo backup automatico.
-> Attualmente, non è possibile modificare la politica che esegue il backup dell'intero server, stiamo lavorando per migliorare questa configurazione in futuro.
+> Al momento Lei non può modificare la politica di backup di tutto il Suo server, stiamo lavorando per migliorare questa configurazione in futuro.
 
 Potrai verificare il successo di questo backup tramite:
 

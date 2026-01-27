@@ -2,6 +2,7 @@
 title: Backup Agent - Premiers pas avec VSPC
 excerpt: Découvrez Veeam Service Provider Console (VSPC), une plateforme cloud fournie par Veeam qui vous aide à gérer les sauvegardes et la protection des données
 updated: 2025-04-29
+flag: hidden
 ---
 
 > [!primary]

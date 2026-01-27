@@ -1,17 +1,17 @@
 ---
-title: "Backup Agent - Połączenie z VSPC"
+title: "Aplikacja Backup - Połączenie z VSPC"
 excerpt: "Dowiedz się, jak połączyć się z Veeam Service Provider Console, aby wyświetlić swoje kopie zapasowe i agenty"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Wprowadzenie
 
-Ten przewodnik wyjaśnia, jak połączyć się z Veeam Service Provider Console (VSPC), aby wyświetlić swoje kopie zapasowe, agenty i sprawdzić raporty zadań kopii zapasowej.
+Ten przewodnik wyjaśnia, jak połączyć się z Veeam Service Provider Console (VSPC), aby wyświetlić swoje kopie zapasowe, agenty i sprawdzić raporty zadań Backup.
 
 ## Wymagania początkowe
 
-- Otrzymanie danych logowania do VSPC pocztą elektroniczną po zamówieniu usługi Backup Agent.
-- Posiadanie kompatybilnej przeglądarki internetowej.
+- Musisz otrzymać poświadczenia do połączenia z VSPC e-mailem po zamówieniu usługi Backup Agent.
+- Kompatybilny z przeglądarka internetowa.
 
 ## W praktyce
 
@@ -23,27 +23,27 @@ Przejdź do adresu URL VSPC: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.co
 
 ### Logowanie
 
-Zaloguj się używając danych logowania, które zostały Ci dostarczone pocztą elektroniczną. Format loginu to zazwyczaj `vspc-tenant-XXXXXX\user-XXXXXX`.
+Zaloguj się przy użyciu poświadczeń dostarczonych Ci e-mailem. Format logowania jest zazwyczaj `vspc-tenant-XXXXXX\user-XXXXXX`.
 
 > [!primary]
 >
-> Jeśli nie masz już swoich danych logowania, możesz je wygenerować ponownie, kontaktując wsparcie.
+> Jeśli nie masz już swoich poświadczeń, możesz je ponownie wygenerować, [skontaktowując się z obsługą](/links/support).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 > [!primary]
 >
-> To konto jest tylko do odczytu i pozwala na dostęp do wizualizacji w celu wyświetlenia kopii zapasowych i agentów.
+> To konto jest tylko do odczytu i umożliwia dostęp do wizualizacji Twoich kopii zapasowych i agentów.
 
-### Wyświetlanie zadań kopii zapasowej
+### Wyświetlanie zadań kopii zapasowych
 
-Po zalogowaniu kliknij na `Backup Jobs`{.action} w menu po lewej stronie.
+Po zalogowaniu kliknij `Backup Jobs`{.action} w lewym menu.
 
 ![Backup Agent Backup Jobs](images/01-backup-agent-backup-jobs.png){.thumbnail}
 
-### Wyświetlanie pomyślnych zadań
+### Wyświetlanie udanych zadań
 
-Kliknij na `Successful Jobs`{.action} dla Twojego najemcy.
+Kliknij `Successful Jobs`{.action} dla swojego tenant.
 
 ![Backup Agent Successful Jobs](images/01-backup-agent-successful-jobs.png){.thumbnail}
 
@@ -61,23 +61,22 @@ Aby zobaczyć listę zainstalowanych agentów, przejdź do `Managed Computers`{.
 
 ### Wyświetlanie raportów
 
-Przejdź do sekcji `Reports`{.action}, aby wyświetlić raporty kopii zapasowych.
+Przejdź do sekcji `Reports`{.action}, aby wyświetlić swoje raporty Backup.
 
 ![Backup Agent Reports](images/01-backup-agent-reports.png){.thumbnail}
 
-### Otwieranie ostatniego raportu
+### Otwarcie ostatniego raportu
 
-Otwórz ostatni dostępny raport, aby wyświetlić szczegóły najnowszych kopii zapasowych.
+Otwórz ostatni dostępny raport, aby wyświetlić szczegóły Twoich najnowszych kopii zapasowych.
 
 ![Backup Agent Last Report](images/01-backup-agent-last-report.png){.thumbnail}
 
 ### Wyświetlanie najnowszych alarmów
 
-Możesz wyświetlić najnowsze alarmy dotyczące swoich agentów i kopii zapasowych w sekcji "Alarm Management".
+Możesz wyświetlić najnowsze alerty dotyczące swoich agentów i kopii zapasowych w sekcji `Alarm Management`{.action}.
 
 ![Backup Agent Alarm Management](images/01-backup-agent-alarm.png){.thumbnail}
 
 ## Sprawdź również
 
 Dołącz do [grona naszych użytkowników](/links/community).
-

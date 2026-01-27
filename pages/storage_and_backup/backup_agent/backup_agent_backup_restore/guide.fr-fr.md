@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gérer vos sauvegardes et vos restaurations"
 excerpt: "Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare M
 
 > [!primary]
 > 
-> Si vous souhaitez des informations sur le produit Backup Agent, vous pouvez les retrouver sur cette [page](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+> Retrouvez plus d'informations sur le produit Backup Agent sur [cette page](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Prérequis
 
@@ -36,7 +36,7 @@ Il s'agit d'une sauvegarde complète de votre serveur, qui sera envoyée vers vo
 > [!primary]
 > 
 > Vous n'avez pas de possibilité de modifier ou désactiver cette sauvegarde automatique.
-> À l'heure actuelle, vous ne pouvez pas modifier la politique qui sauvegarde tout votre serveur, nous travaillons à améliorer cette configuration dans l'avenir.
+> À l'heure actuelle, vous ne pouvez pas modifier la politique qui sauvegarde tout votre serveur, nous travaillons à améliorer cette configuration à l'avenir.
 
 Vous pourrez voir le succès de cette sauvegarde via :
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gerir as suas cópias de segurança e restaurações"
 excerpt: "Descubra como fazer cópias de segurança e restaurar os seus dados nos seus servidores Bare Metal com Backup Agent"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objetivo
@@ -10,7 +10,9 @@ Descubra como fazer cópias de segurança e restaurar os seus dados nos seus ser
 
 > [!primary]
 > 
-> Se desejar informações sobre o produto Backup Agent, pode encontrá-las nesta [página](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+> Encontre mais informações sobre o produto Backup Agent em [esta página](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+
+
 
 ## Requisitos
 
@@ -36,7 +38,7 @@ Trata-se de uma cópia de segurança completa do seu servidor, que será enviada
 > [!primary]
 > 
 > Não tem possibilidade de modificar ou desativar esta cópia de segurança automática.
-> Atualmente, não pode modificar a política que faz cópia de segurança de todo o seu servidor, estamos a trabalhar para melhorar esta configuração no futuro.
+> Neste momento, não pode modificar a política que salvaguarda todo o seu servidor. Estamos a trabalhar para melhorar esta configuração no futuro.
 
 Poderá ver o sucesso desta cópia de segurança através de:
 

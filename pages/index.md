@@ -2224,8 +2224,8 @@
             + [Backup Agent - Billing](storage_and_backup/backup_agent/backup_agent_billing)
             + [Backup Agent - Service updates](storage_and_backup/backup_agent/backup_agent_update)
             + [Backup Agent - Troubleshooting](storage_and_backup/backup_agent/backup_agent_troubleshooting)
+            + [Backup Agent - Getting started with VSPC](storage_and_backup/backup_and_disaster_recovery_solutions/veeam/VSPC_first_steps)
             + [Backup Agent - Bare Metal recovery with Veeam Backup Agent](storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_agent_bare_metal_recovery)
-
         + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
             + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)
             + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa)

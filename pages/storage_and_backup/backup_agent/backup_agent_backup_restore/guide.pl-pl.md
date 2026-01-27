@@ -1,16 +1,16 @@
 ---
 title: "Backup Agent - Zarządzanie kopiami zapasowymi i przywracaniem danych"
 excerpt: "Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Wprowadzenie
 
 Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent.
 
-> [!primary]
-> 
-> Jeśli chcesz uzyskać informacje o produkcie Backup Agent, możesz je znaleźć na tej [stronie](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+> [!primary] 
+> Więcej informacji o produkcie Backup Agent można znaleźć na [tej stronie](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+>
 
 ## Wymagania początkowe
 
@@ -36,7 +36,7 @@ Ta kopia zapasowa wykona pełną kopię zapasową serwera, która zostanie wysł
 > [!primary]
 >
 > Nie możesz zmienić ani wyłączyć tej automatycznej kopii zapasowej.
-> Obecnie nie możesz modyfikować polityki, która tworzy kopię zapasową całego serwera, pracujemy nad ulepszeniem tej konfiguracji w przyszłości.
+> W tej chwili nie możesz zmienić polityki, która tworzy kopie zapasowe całego serwera. Pracujemy nad ulepszeniem tej konfiguracji w przyszłości.
 
 Możesz sprawdzić sukces tej kopii zapasowej za pomocą:
 

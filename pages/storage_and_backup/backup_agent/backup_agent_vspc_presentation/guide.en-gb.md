@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Connect to VSPC"
 excerpt: "Learn how to connect to the Veeam Service Provider Console to view your backups and agents"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -10,8 +10,8 @@ This guide explains how to connect to the Veeam Service Provider Console (VSPC) 
 
 ## Requirements
 
-- Have received VSPC connection credentials by email after ordering your Backup Agent service.
-- Have a compatible web browser.
+- You must have received VSPC connection credentials by email after ordering your Backup Agent service.
+- A compatible web browser.
 
 ## Instructions
 
@@ -27,13 +27,13 @@ Log in using the credentials that were provided to you by email. The login forma
 
 > [!primary]
 >
-> If you no longer have your credentials, you can regenerate them by contacting support.
+> If you no longer have your credentials, you can regenerate them by [contacting support](/links/support).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 > [!primary]
 >
-> This account is read-only and allows you to access visualizations to view your backups and agents.
+> This account is read-only and allows you to access visualizations of your backups and agents.
 
 ### View Backup Jobs
 
@@ -73,7 +73,7 @@ Open the last available report to view the details of your latest backups.
 
 ### View latest alarms
 
-You can view the latest alarms on your agents and backups in the "Alarm Management" section.
+You can view the latest alarms on your agents and backups in the `Alarm Management`{.action} section.
 
 ![Backup Agent Alarm Management](images/01-backup-agent-alarm.png){.thumbnail}
 

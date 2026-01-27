@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Fonctionnement du Vault"
 excerpt: "Découvrez comment fonctionne le système de Vault et la localisation de vos données de sauvegarde"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objectif
@@ -9,16 +9,19 @@ updated: 2026-01-23
 Ce guide vous explique comment fonctionne le système de Vault dans le produit Backup Agent et comment vos données sont localisées et stockées selon l'emplacement de vos serveurs Bare Metal.
 
 ## Prérequis
+
 - Avoir commandé un service Backup Agent au moment de la commande de votre serveur Bare Metal ou ultérieurement via le menu `Backup Agent`{.action} de votre espace client.
 
 ## En pratique
+
 ### Présentation du Vault
 
 Un Vault est votre espace de stockage où vos données de sauvegarde sont envoyées à chaque sauvegarde. Les Vaults sont créés automatiquement par OVHcloud pour garantir que vos données ne soient pas hébergées dans le même datacenter que votre serveur Bare Metal.
 
-Cela se base sur nos buckets Object Storage, que vous pouvez retrouver sur ce [lien](/links/public-cloud/object-storage)
+Cela se base sur nos buckets Object Storage, que vous pouvez retrouver sur [ce lien](/links/public-cloud/object-storage).
 
-Vous pouvez retrouver vos Vaults dans votre Manager, dans le partie Vaults.
+Pour retrouver vos Vaults, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Bare Metal Cloud`{.action} puis `Backup Agent`{.action}. Cliquez alors sur l'onglet `Vaults`{.action}.
+
 ![Backup Agent Vault List](images/01-backup-agent-vault-list.png){.thumbnail}
 
 ### Principe de localisation

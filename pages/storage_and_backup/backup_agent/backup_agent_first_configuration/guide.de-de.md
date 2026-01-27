@@ -1,118 +1,121 @@
 ---
-title: "Backup Agent - So konfigurieren Sie Ihr erstes Backup"
-excerpt: "So konfigurieren Sie Ihr erstes Backup auf Ihrem Bare Metal Server mit dem Backup Agent"
-updated: 2026-01-23
+title: "Backup Agent - So konfigurieren Sie Ihre erste Sicherung"
+excerpt: "So konfigurieren Sie Ihre erste Sicherung auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
+updated: 2026-01-27
 ---
 
 ## Ziel
 
-Sie haben Ihre Backup Agent Lösung für Ihren Bare Metal Server bestellt. Erfahren Sie, wie Sie Ihre ersten Backups einrichten.
+Sie haben gerade Ihr Backup Agent Angebot für Ihren Bare Metal Server bestellt. Erfahren Sie, wie Sie Ihre ersten Sicherungen einrichten.
+
+> [!primary]
+> 
+> Weitere Informationen zum Backup Agent Produkt finden Sie auf [dieser Seite](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Ein Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder nachträglich über das Menü `Backup-Agent`{.action} im OVHcloud Kundencenter.
-- Sie haben ein Betriebssystem auf Ihrem Bare Metal Server installiert und konfiguriert.
+- Zugriff auf das [OVHcloud Kundencenter](/links/manager). 
+- Ein Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder danach über das Menü `Backup Agent`{.action} im OVHcloud Kundencenter.
+- Sie müssen ein Betriebssystem auf Ihrem Bare Metal Server installiert und eingerichtet haben.
 
 ## In der praktischen Anwendung
 
-Wenn Sie mehr Informationen über die Funktionsweise des Backup Agent Produkts wünschen, lesen Sie unsere Anleitung "[Backup Agent - Produktpräsentation](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation)" für weitere Informationen.
+Die Schritte, um eine Sicherung für Ihren Server zu erstellen, sind wie folgt:
 
-Um ein Backup für Ihren Server zu erstellen, besteht dies aus:
-* Hinzufügen Ihres Servers zu Ihrem Backup Agent.
-* Herunterladen des Agents.
-* Installieren des Agents auf Ihrem Server.
+- Hinzufügen Ihres Servers zu Ihrem Backup Agent.
+- Herunterladen des Agents.
+- Installation des Agents auf Ihrem Server.
 
-Nach der Installation des Agents erhält dieser die Backup-Richtlinie und ermöglicht die Durchführung von Backups.
+Sobald der Agent installiert ist, erhält er die Sicherungspolitik und kann Sicherungen durchführen.
 
-Sobald alle diese Schritte abgeschlossen sind, wird Ihr erstes Backup durchgeführt.
+Sobald alle diese Schritte abgeschlossen sind, wird Ihre erste Sicherung durchgeführt.
 
-## Fügen Sie Ihren Server zu Ihrem Backup Agent hinzu
+### Fügen Sie Ihren Server Ihrem Backup Agent hinzu
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
+Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und navigieren Sie zum Abschnitt `Backup Agent`{.action}.
 
 ![Backup Agent Menü](images/01-backup-agent-step15.png){.thumbnail}
 
-Klicken Sie auf Ihren vspc-tenant im Bereich `Dienste`{.action}.
+Klicken Sie auf Ihren vspc-tenant im Abschnitt `Dienste`{.action}.
 
 ![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
-Gehen Sie in den Bereich `Agenten`{.action}.
+Gehen Sie zum Abschnitt `Agenten`{.action}.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
 
 > [!primary]
 >
-> Sie sollten den Bare Metal Server, den Sie in Ihrer Bestellung ausgewählt haben, in der Tabelle mit dem Status "not_installed" finden. Dies ist normal, Sie müssen nur den Agent auf Ihrem Server installieren.
+> Sie sollten den Bare Metal Server sehen, den Sie in Ihrer Bestellung ausgewählt haben, in der Tabelle mit dem Status `not_installed`. Dies ist in diesem Stadium normal; Sie müssen nun den Agent auf Ihrem Server installieren.
 >
 
-Klicken Sie auf die Schaltfläche `Herunterladen`{.action} oben in der Tabelle, in der Ihre Agents gelistet sind.
+Klicken Sie auf die Schaltfläche `Herunterladen`{.action} oben in der Tabelle, in der Ihre Agents aufgelistet sind.
 
 ![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
 
 Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder eine der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
 
-![Backup Agent Download Windows](images/01-backup-agent-download-windows-en.png){.thumbnail}
+![Backup Agent Schritt 13](images/01-backup-agent-step13.png){.thumbnail}
 
-Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, folgen Sie den unten stehenden Schritten entsprechend Ihres Betriebssystems:
+Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
 
 > [!tabs]
-> ### Windows
+> Windows
 >>
->> Sobald die Installationsdatei auf Ihrem Bare Metal Server ist, können Sie sie ausführen und den Vorgang des Programms befolgen:
-
-![Backup Agent Schritt 01](images/01-backup-agent-step01.png){.thumbnail}
-
-![Backup Agent Schritt 02](images/01-backup-agent-step02.png){.thumbnail}
-
-![Backup Agent Schritt 03](images/01-backup-agent-step03.png){.thumbnail}
-
-![Backup Agent Schritt 04](images/01-backup-agent-step04.png){.thumbnail}
-
-![Backup Agent Schritt 05](images/01-backup-agent-step05.png){.thumbnail}
-
-Nachdem Sie alles eingerichtet haben, können Sie beobachten, wie Ihr Agent sich mit unserer Infrastruktur verbindet, um Ihre Backup-Richtlinie wiederherzustellen:
-
-![Backup Agent Schritt 06](images/01-backup-agent-step06.png){.thumbnail}
-
-![Backup Agent Schritt 07](images/01-backup-agent-step07.png){.thumbnail}
-
-Schließlich, nachdem Sie zurückgekehrt sind, können Sie Ihren konfigurierten Backup-Agent auf Ihrem Bare Metal Server sehen:
-
-![Backup Agent Schritt 08](images/01-backup-agent-step08.png){.thumbnail}
-
+>> Sobald die Installationsdatei auf Ihrem Bare Metal Server ist, können Sie sie ausführen und dem Software-Verfahren folgen:
+>>
+>> ![Backup Agent Schritt 01](images/01-backup-agent-step01.png){.thumbnail}
+>>
+>> ![Backup Agent Schritt 02](images/01-backup-agent-step02.png){.thumbnail}
+>>
+>> ![Backup Agent Schritt 03](images/01-backup-agent-step03.png){.thumbnail}
+>>
+>> ![Backup Agent Schritt 04](images/01-backup-agent-step04.png){.thumbnail}
+>>
+>> ![Backup Agent Schritt 05](images/01-backup-agent-step05.png){.thumbnail}
+>>
+>> Nach der Installation sehen Sie, dass Ihr Agent sich mit unserer Infrastruktur verbindet, um Ihre Sicherungspolitik abzurufen:
+>>
+>> ![Backup Agent Schritt 06](images/01-backup-agent-step06.png){.thumbnail}
+>>
+>> ![Backup Agent Schritt 07](images/01-backup-agent-step07.png){.thumbnail}
+>>
+>> Schließlich, nachdem die Sicherungspolitik angewendet wurde, sehen Sie, dass Ihr Backup Agent konfiguriert und auf Ihrem Bare Metal Server installiert ist:
+>>
+>> ![Backup Agent Schritt 08](images/01-backup-agent-step08.png){.thumbnail}
+>>
 >> ![Backup Agent Schritt 09](images/01-backup-agent-step09.png){.thumbnail}
 >>
-> ### Linux
->> Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder eine der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
+> Linux
+>> Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder einen der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
 >>
->> ![Backup Agent Download Linux](images/01-backup-agent-download-linux-en.png){.thumbnail}
+>> ![Backup Agent Schritt 14](images/01-backup-agent-step14.png){.thumbnail}
 >>
->> Sobald die Installationsdatei auf Ihrem Server ist, navigieren Sie zu ihrem Verzeichnis und führen Sie sie wie folgt aus:
-
-```bash
-sudo ./LinuxAgentPackages.<YOURCOMPANYNAME>.sh
-```
-
-Nach Abschluss der Installation können Sie dies mit dem folgenden Befehl überprüfen:
-
+>> Sobald die Installationsdatei auf Ihrem Server ist, navigieren Sie zum Ordner, in dem sie sich befindet, und führen Sie die Datei wie folgt aus:
+>>
+>> ```bash
+>> sudo ./LinuxAgentPackages.<YOURCOMPANYNAME>.sh
+>> ```
+>>
+>> Nach Abschluss der Installation können Sie sie mit diesem Befehl überprüfen:
+>>
 >> ```bash
 >> sudo veeamconsoleconfig -s
 >>
 >> Management agent
 >>     Connection state       : Connected
 >>     Cloud gateway          : <OVHDOMAIN>:6180
->>     Connection account     : <UTILISATEUR>
+>>     Connection account     : <USER>
 >> ```
 >> 
->> Möglicherweise sehen Sie, dass ein Element noch nicht installiert ist:
+>> Sie können dann sehen, dass ein Element noch nicht installiert ist:
 >>
 >> ```bash
 >> Backup agent
 >>    Status                 : Not installed
 >> ```
 >>
->> Dies ist völlig normal, wir werden eine Konfiguration anwenden, die es ermöglicht, den Backup Agent mit einer Backup-Richtlinie bereitzustellen.
+>> Dies ist in diesem Stadium normal, wir werden eine Konfiguration anwenden, die es dem Backup Agent ermöglicht, mit einer Sicherungspolitik bereitgestellt zu werden.
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Se connecter à la VSPC"
 excerpt: "Découvrez comment vous connecter à la Veeam Service Provider Console pour visualiser vos sauvegardes et vos agents"
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide vous explique comment vous connecter à la Veeam Service Provider Conso
 
 ## Prérequis
 
-- Avoir reçu les identifiants de connexion à la VSPC par email après la commande de votre service Backup Agent.
+- Avoir reçu les identifiants de connexion à la VSPC par e-mail après la commande de votre service Backup Agent.
 - Avoir un navigateur web compatible.
 
 ## En pratique
@@ -23,17 +23,17 @@ Accédez à l'URL de la VSPC : `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.
 
 ### Se connecter
 
-Connectez-vous en utilisant les identifiants qui vous ont été fournis par email. Le format du login est généralement `vspc-tenant-XXXXXX\user-XXXXXX`.
+Connectez-vous en utilisant les identifiants qui vous ont été fournis par e-mail. Le format du login est généralement `vspc-tenant-XXXXXX\user-XXXXXX`.
 
 > [!primary]
 >
-> Si vous n'avez plus vos identifiants, vous pouvez les regénérer en contactant le support.
+> Si vous n'avez plus vos identifiants, vous pouvez les regénérer en [contactant le support](/links/support).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 > [!primary]
 >
-> Ce compte est en lecture seule et vous permet d'accéder à des visualisations pour voir vos sauvegardes et vos agents.
+> Ce compte est en lecture-seule et vous donne accès à des visualisations de vos sauvegardes et de vos agents.
 
 ### Consulter les Backup Jobs
 
@@ -73,7 +73,7 @@ Ouvrez le dernier rapport disponible pour consulter les détails de vos dernièr
 
 ### Voir les dernières alarmes
 
-Vous pouvez voir les dernières alarmes sur vos agents et sauvegardes dans la partie "Alarm Management".
+Vous pouvez voir les dernières alarmes sur vos agents et sauvegardes dans la partie `Alarm Management`{.action}.
 
 ![Backup Agent Alarm Management](images/01-backup-agent-alarm.png){.thumbnail}
 

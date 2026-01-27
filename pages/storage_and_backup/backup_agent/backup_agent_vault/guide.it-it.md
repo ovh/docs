@@ -1,77 +1,79 @@
 ---
 title: "Backup Agent - Funzionamento del Vault"
-excerpt: "Scopri come funziona il sistema di Vault e la localizzazione dei tuoi dati di backup"
-updated: 2026-01-23
+excerpt: "Scopri come funziona il sistema del Vault e dove vengono localizzati i tuoi dati di backup"
+updated: 2026-01-27
 ---
 
 ## Obiettivo
 
-Questa guida ti spiega come funziona il sistema di Vault nel prodotto Backup Agent e come i tuoi dati sono localizzati e memorizzati in base alla posizione dei tuoi server Bare Metal.
+Questo manuale ti spiega come funziona il sistema del Vault nel prodotto Backup Agent e come i tuoi dati vengono localizzati e archiviati in base alla posizione dei tuoi server Bare Metal.
 
 ## Prerequisiti
-- Aver acquistato un servizio Backup Agent al momento dell'acquisto del vostro server Bare Metal o in un momento successivo tramite il menu `Agente di backup`{.action} del vostro spazio client.
+
+- Avere ordinato un servizio Backup Agent al momento dell'acquisto del tuo server Bare Metal o in seguito tramite il menu `Backup Agent`{.action} del tuo Spazio Cliente.
 
 ## Procedura
+
 ### Presentazione del Vault
 
-Un Vault è il vostro spazio di archiviazione dove i vostri dati di backup vengono inviati ad ogni backup. I Vault vengono creati automaticamente da OVHcloud per garantire che i vostri dati non siano ospitati nello stesso datacenter del vostro server Bare Metal.
+Un Vault è lo spazio di archiviazione dove i tuoi dati di backup vengono inviati ad ogni backup. I Vaults vengono creati automaticamente da OVHcloud per garantire che i tuoi dati non siano ospitati nello stesso datacenter del tuo server Bare Metal.
 
-Questo si basa sui nostri bucket Object Storage, che potete trovare a questo [link](/links/public-cloud/object-storage)
+Questo si basa sui nostri bucket Object Storage, che puoi trovare a [questo link](/links/public-cloud/object-storage).
 
-Potete trovare i vostri Vault nel vostro Spazio Cliente, nella sezione Vaults.
+Per trovare i tuoi Vaults, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), vai su `Bare Metal Cloud`{.action} e poi su `Backup Agent`{.action}. Clicca quindi sull'etichetta `Vaults`{.action}.
+
 ![Backup Agent Vault List](images/01-backup-agent-vault-list.png){.thumbnail}
 
 ### Principio di localizzazione
 
-**Regola importante:** I dati di backup vengono sempre inviati a un Vault situato in un datacenter diverso da quello in cui si trova il vostro server Bare Metal. Questo garantisce la resilienza e la sicurezza dei vostri dati.
+**Regola importante :** I dati di backup vengono sempre inviati verso un Vault situato in un datacenter diverso da quello dove si trova il tuo server Bare Metal. Questo garantisce la resilienza e la sicurezza dei tuoi dati.
 
-### Casi d'uso
+### Caso d'uso
 
-Ecco diversi scenari che illustrano il funzionamento del sistema di Vault:
+Ecco diversi scenari che illustrano il funzionamento del sistema del Vault :
 
 ![Backup Agent Vault Use Cases](images/01-backup-agent-vault-use-cases.png){.thumbnail}
 
-### Caso d'uso 1: Un server Bare Metal in RBX
+### Caso d'uso 1 : Un server Bare Metal a RBX
 
-Se avete un server Bare Metal localizzato a **Roubaix (RBX)** e ordinate il Backup Agent:
+Se hai un server Bare Metal localizzato a **Roubaix (RBX)** e ordini il Backup Agent :
 
-- Il vostro server Bare Metal con il Backup Agent installato si trova a **RBX**.
-- I vostri dati di backup vengono automaticamente inviati a un Vault creato a **Gravelines (GRA)**, denominato **backup-vault-gra1**.
-- Questo garantisce che i vostri dati siano memorizzati in un datacenter diverso dal vostro server.
+- Il tuo server Bare Metal con Backup Agent installato si trova a **RBX**.
+- I tuoi dati di backup vengono automaticamente inviati verso un Vault creato a **Gravelines (GRA)**, chiamato **backup-vault-gra1**.
+- Questo garantisce che i tuoi dati siano archiviati in un datacenter diverso da quello del tuo server.
 
-### Caso d'uso 2: Due server Bare Metal in RBX e GRA
+### Caso d'uso 2 : Due server Bare Metal a RBX e GRA
 
-Se avete due server Bare Metal, uno a **Roubaix (RBX)** e l'altro a **Gravelines (GRA)**:
+Se hai due server Bare Metal, uno a **Roubaix (RBX)** e l'altro a **Gravelines (GRA)** :
 
-- Il server Bare Metal a **RBX** invia i suoi dati a **backup-vault-sbg-1** a **Gravelines**.
-- Il server Bare Metal a **GRA** invia i suoi dati a **backup-vault-gra-1** a **Strasburgo (SBG)**.
+- Il server Bare Metal a **RBX** invia i suoi dati verso **backup-vault-sbg-1** a **Gravelines**.
+- Il server Bare Metal a **GRA** invia i suoi dati verso **backup-vault-gra-1** a **Strasbourg (SBG)**.
 - Ogni server utilizza un Vault in un datacenter diverso dal proprio.
 
-### Caso d'uso 3: Tre server Bare Metal in RBX, GRA e LIM
+### Caso d'uso 3 : Tre server Bare Metal a RBX, GRA e LIM
 
-Se avete tre server Bare Metal in diversi datacenter:
+Se hai tre server Bare Metal in diversi datacenter :
 
-- Il server a **RBX** invia i suoi dati a **backup-vault-gra-1** a **GRA**.
-- Il server a **GRA** invia i suoi dati a **backup-vault-sbg-1** a **SBG**.
-- Il server a **Limburg (LIM)** invia i suoi dati a **backup-vault-sbg-1** a **SBG**.
-- Ogni server garantisce che i suoi dati siano memorizzati in un datacenter distante.
+- Il server a **RBX** invia i suoi dati verso **backup-vault-gra-1** a **GRA**.
+- Il server a **GRA** invia i suoi dati verso **backup-vault-sbg-1** a **SBG**.
+- Il server a **Limburg (LIM)** invia i suoi dati verso **backup-vault-sbg-1** a **SBG**.
+- Ogni server garantisce che i suoi dati siano archiviati in un datacenter distante.
 
-### Caso d'uso 4: Server Bare Metal in BHS con NIC EU
+### Caso d'uso 4 : Server Bare Metal a BHS con NIC EU
 
-Se avete un server Bare Metal a **Beauharnois (BHS)** con un'interfaccia di rete europea:
+Se hai un server Bare Metal a **Beauharnois (BHS)** con una interfaccia di rete europea :
 
-- Il vostro server Bare Metal si trova a **BHS**.
-- I vostri dati di backup vengono inviati a **backup-vault-tor-1** a **Toronto (TOR)**.
-- La localizzazione del Vault è determinata in base alla configurazione di rete del vostro server.
+- Il tuo server Bare Metal si trova a **BHS**.
+- I tuoi dati di backup vengono inviati verso **backup-vault-tor-1** a **Toronto (TOR)**.
+- La localizzazione del Vault è determinata in base alla configurazione di rete del tuo server.
 
 ## Punti importanti
 
-- I Vault vengono creati automaticamente da OVHcloud, non potete crearli manualmente.
-- Non potete cambiare il Vault di un agente una volta che è configurato.
-- La localizzazione del Vault è sempre diversa da quella del vostro server Bare Metal per garantire la resilienza.
-- Il nome del Vault segue generalmente la convenzione: `backup-vault-<localizzazione>-<numero>`.
+- I Vaults vengono creati automaticamente da OVHcloud, non puoi crearli manualmente.
+- Non puoi cambiare Vault per un agente una volta che è configurato.
+- La localizzazione del Vault è sempre diversa da quella del tuo server Bare Metal per garantire la resilienza.
+- Il nome del Vault segue generalmente la convenzione : `backup-vault-<location>-<number>`.
 
 ## Per saperne di più
 
 Contatta la nostra [Community di utenti](/links/community).
-

@@ -1,16 +1,16 @@
 ---
-title: "Backup Agent - Ligar à VSPC"
-excerpt: "Saiba como ligar à Veeam Service Provider Console para ver as suas cópias de segurança e agentes"
-updated: 2026-01-23
+title: "Backup Agent - Conectar-se à VSPC"
+excerpt: "Descubra como se conectar à Veeam Service Provider Console para visualizar as suas cópias de segurança e os seus agentes"
+updated: 2026-01-27
 ---
 
 ## Objetivo
 
-Este guia explica-lhe como ligar à Veeam Service Provider Console (VSPC) para ver as suas cópias de segurança, agentes e consultar os relatórios dos seus trabalhos de cópia de segurança.
+Este guia explica-lhe como se conectar à Veeam Service Provider Console (VSPC) para visualizar as suas cópias de segurança, os seus agentes e consultar os relatórios dos seus jobs de cópia de segurança.
 
 ## Requisitos
 
-- Ter recebido as credenciais de ligação à VSPC por correio eletrónico após a encomenda do seu serviço Backup Agent.
+- Ter recebido as credenciais de acesso à VSPC por e-mail após a encomenda do seu serviço Backup Agent.
 - Ter um navegador web compatível.
 
 ## Instruções
@@ -21,35 +21,35 @@ Aceda ao URL da VSPC: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
 
 ![Backup Agent Navigate VSPC](images/01-backup-agent-navigate-vspc.png){.thumbnail}
 
-### Ligar-se
+### Conectar-se
 
-Ligue-se utilizando as credenciais que lhe foram fornecidas por correio eletrónico. O formato do login é geralmente `vspc-tenant-XXXXXX\user-XXXXXX`.
+Conecte-se utilizando as credenciais fornecidas por e-mail. O formato do login é geralmente `vspc-tenant-XXXXXX\user-XXXXXX`.
 
 > [!primary]
 >
-> Se já não tiver as suas credenciais, pode regenerá-las contactando o suporte.
+> Se já não tiver as suas credenciais, pode regenerá-las ao [contactar o suporte](/links/support).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 > [!primary]
 >
-> Esta conta é só de leitura e permite-lhe aceder a visualizações para ver as suas cópias de segurança e agentes.
+> Esta conta é apenas de leitura e permite-lhe aceder a visualizações das suas cópias de segurança e dos seus agentes.
 
 ### Consultar os Backup Jobs
 
-Uma vez ligado, clique em `Backup Jobs`{.action} no menu à esquerda.
+Depois de se conectar, clique em `Backup Jobs`{.action} no menu à esquerda.
 
 ![Backup Agent Backup Jobs](images/01-backup-agent-backup-jobs.png){.thumbnail}
 
-### Mostrar os trabalhos bem-sucedidos
+### Visualizar jobs bem-sucedidos
 
 Clique em `Successful Jobs`{.action} para o seu tenant.
 
 ![Backup Agent Successful Jobs](images/01-backup-agent-successful-jobs.png){.thumbnail}
 
-### Mostrar os pontos de restauração
+### Visualizar pontos de restauro
 
-Pode consultar os pontos de restauração disponíveis para as suas cópias de segurança.
+Pode consultar os pontos de restauro disponíveis para as suas cópias de segurança.
 
 ![Backup Agent Restore Points](images/01-backup-agent-restore-points.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Para ver a lista dos seus agentes instalados, vá a `Managed Computers`{.action}
 
 ![Backup Agent Managed Computers](images/01-backup-agent-managed-computers.png){.thumbnail}
 
-### Consultar os relatórios
+### Consultar relatórios
 
 Aceda à secção `Reports`{.action} para visualizar os relatórios das suas cópias de segurança.
 
@@ -71,13 +71,12 @@ Abra o último relatório disponível para consultar os detalhes das suas últim
 
 ![Backup Agent Last Report](images/01-backup-agent-last-report.png){.thumbnail}
 
-### Ver os últimos alarmes
+### Ver as últimas alarmes
 
-Pode ver os últimos alarmes sobre os seus agentes e cópias de segurança na secção "Alarm Management".
+Pode ver as últimas alarmes nos seus agentes e cópias de segurança na secção `Alarm Management`{.action}.
 
 ![Backup Agent Alarm Management](images/01-backup-agent-alarm.png){.thumbnail}
 
 ## Quer saber mais?
 
 Fale com a nossa [comunidade de utilizadores](/links/community).
-

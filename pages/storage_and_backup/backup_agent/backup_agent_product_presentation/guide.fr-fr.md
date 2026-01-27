@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Présentation de l'offre"
 excerpt: "Présentation des fonctionnalités et avantages du produit Backup Agent"
-updated: 2026-01-26
+updated: 2026-01-27
 ---
 
 ## Objectif
@@ -20,13 +20,13 @@ Le produit Backup Agent s'appuie sur deux produits de l'éditeur logiciel Veeam 
 Le Veeam Agent est un logiciel créé par Veeam, qui s'installe sur votre système d'exploitation sous Linux et Windows, et vous permet de faire des sauvegardes de votre système.
 
 La VSPC permet de redescendre les politiques de sauvegardes aux agents enregistrés dessus, et permet de donner les informations du stockage et des identifiants à chaque agent lors du démarrage de sa sauvegarde.
-Voici le [guide](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation) qui vous explique comment naviguer dans la VSPC. 
+Découvez comment naviguer dans la VSPC via [ce guide](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation).
 
-Quand vous commandez le produit, vous recevrez un mail vous confirmant la livraison avec des identifiants vous permettant de vous connecter à votre tenant dans la VSPC. Ce compte est en lecture seule et vous permettra d'accéder à des visualisations vous permettant de voir vos sauvegardes et vos agents.
+Quand vous commandez le produit, vous recevez un e-mail vous confirmant la livraison du service ainsi que des identifiants d'accès à votre tenant dans la VSPC. Ce compte est en lecture-seule et vous donnera accès à des visualisations de vos sauvegardes et de vos agents.
 
 Une fois que l'agent obtient les informations, il envoie directement les données vers le point de stockage sans jamais transitionner par l'infrastructure VSPC.
 
-### Points clés
+## Points clés
 
 Plusieurs points forts sont présents dans cette offre :
 
@@ -39,7 +39,13 @@ Plusieurs points forts sont présents dans cette offre :
 - Envoi en direct de la donnée de sauvegarde vers le bucket sans mettre de copie sur notre infrastructure.
 - Point de stockage toujours distant de la localisation de votre serveur Bare Metal (si vous êtes à Roubaix, votre point de stockage sera à Gravelines).
 
-### L'infrastructure
+Il est également important de garder à l'esprit que :
+
+- La politique de sauvegarde est restreinte, vous ne pouvez pas la modifier.
+- Vous ne pouvez pas configurer une sauvegarde uniquement sur une liste de fichiers ou de dossiers.
+- Vous ne pouvez pas modifier la date et l'heure des déclencheurs de sauvegarde (cela fera l'objet d'une amélioration à venir).
+
+## L'infrastructure
 
 Le schéma de principe est le suivant :
 
@@ -51,9 +57,10 @@ Il est à noter que :
 - Le stockage repose sur la technologie [OVHcloud Object Storage](/links/public-cloud/object-storage) qui est hébergée dans les datacenters OVHcloud.
 
 Lors de votre livraison, vous recevez :
-- Un Backup Tenant qui est un containeur virtuel permettant de regrouper tous vos services Backup, en général nommé "backup-tenant-xxxx".
-- Un VSPC Tenant qui est votre "compagnie" dans la VSPC permettant d'accéder à vos dashboards et connecter vos agents, en général nommé "vspc-tenant-xxxx".
-- Un Vault qui est votre espace de stockage où vos données de sauvegarde sont envoyées à chaque sauvegarde, en général nommé "backup-vault-xxxx".
+
+- Un Backup Tenant, en général nommé `backup-tenant-xxxx`, qui est un containeur virtuel permettant de regrouper tous vos services Backup.
+- Un VSPC Tenant, en général nommé `vspc-tenant-xxxx`, qui est votre « compagnie » dans la VSPC, permettant d'accéder à vos dashboards et de connecter vos agents.
+- Un Vault, en général nommé `backup-vault-xxxx`, qui est votre espace de stockage où vos données de sauvegarde sont envoyées à chaque sauvegarde.
 
 Nous vous invitons à lire nos autres guides afin de découvrir le produit.
 

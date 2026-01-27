@@ -1,30 +1,51 @@
 ---
-title: "Backup Agent - Przegląd produktu"
-excerpt: "Omówienie funkcji i zalet produktu Backup Agent"
-updated: 2026-01-23
+title: "Backup Agent - Omówienie produktu"
+excerpt: "Omówienie funkcji i korzyści z wykorzystania produktu Backup Agent"
+updated: 2026-01-27
 ---
 
 ## Wprowadzenie
 
-Przewodnik ten pomoże Ci zrozumieć, jak działa Backup Agent i jakie są jego zalety dla usług Bare Metal.
+Przewodnik ten pomoże Ci zrozumieć, jak działa Backup Agent i jakie korzyści oferuje dla usług Bare Metal.
 
-## Przedstawienie produktu
+## Prezentacja produktu
 
-Produkt Backup Agent umożliwia Ci wykonanie kopii zapasowych serwerów Bare Metal przy użyciu agenta, który zgodnie z wybraną przez Ciebie zasadą kopii zapasowych, wysyła dane serwera do zewnętrznego punktu przechowywania.
+Produkt Backup Agent umożliwia wykonanie kopii zapasowych Twoich serwerów Bare Metal przy użyciu agenta, który, zgodnie z wybraną przez Ciebie zasadą kopii zapasowych, przesyła dane serwera do zewnętrznego punktu przechowywania.
 
 Produkt Backup Agent opiera się na dwóch produktach wydawcy oprogramowania Veeam:
 
-- Konsoli dostępnego dla dostawców usług Veeam (VSPC).
-- Veeam Agent.
+- Konsoli dostawcy usług Veeam (VSPC)
+- Veeam Agent
 
-Veeam Agent to oprogramowanie stworzone przez Veeam, które instaluje się w Twoim systemie operacyjnym w systemach Linux i Windows, i umożliwia tworzenie kopii zapasowych Twojego systemu.
+Veeam Agent to oprogramowanie stworzone przez Veeam, które instaluje się na Twoim systemie operacyjnym na Linuxie i Windowsie i umożliwia wykonanie kopii zapasowej Twojego systemu.
 
-VSPC umożliwia przekazanie zasad kopii zapasowych agentom przechowywanym na nich i umożliwia przekazanie każdemu agentowi informacji o punkcie przechowywania i poświadczeniach podczas uruchamiania kopii zapasowej.
-Oto [przewodnik](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation), który wyjaśnia, jak nawigować w VSPC.
+VSPC umożliwia przesyłanie zasad kopii zapasowych do agentów przechowywanych w nim oraz umożliwia przekazanie każdemu agentowi informacji o przechowywaniu i danych uwierzytelniania podczas uruchamiania kopii zapasowej.
+Dowiedz się, jak przeglądać interfejs VSPC, korzystając z [tego przewodnika](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation).
 
-Po zamówieniu produktu otrzymasz e-mail potwierdzający dostawę z poświadczeniami umożliwiającymi połączenie z Twoim tenantem w VSPC. To konto jest tylko do odczytu i umożliwia dostęp do wizualizacji, aby zobaczyć Twoje kopie zapasowe i agentów.
+Po zamówieniu produktu otrzymasz e-mail potwierdzający dostarczenie usługi oraz dane logowania do Twojego konta w VSPC. To konto jest tylko do odczytu i umożliwia dostęp do widoków Twoich kopii zapasowych i agentów.
 
-Po otrzymaniu informacji agent wysyła dane bezpośrednio do punktu przechowywania, bez przechodzenia nigdy przez infrastrukturę VSPC.
+Po otrzymaniu przez agenta informacji, dane są wysyłane bezpośrednio do punktu przechowywania, bez przechodzenia nigdy przez infrastrukturę VSPC.
+
+## Kluczowe aspekty
+
+Istnieje kilka kluczowych zalet tej oferty:
+
+- Pierwsza automatyczna zasada kopii zapasowych z 14-dniowym okresem przechowywania.
+- Możliwość zwiększenia do 30 dni przechowywania.
+- Zasada wykonuje pełną kopię zapasową Twojego serwera.
+- 14 dni niezmienności na naszych kubełkach.
+- Okres automatycznych kopii zapasowych to od 22:00 do 6:00 (strefa czasowa CET dla Europy - strefa czasowa EST dla Kanady i Azji).
+- Szyfrowanie zarządzane przez OVHcloud przechowywania danych kopii zapasowych.
+- Przesyłanie danych kopii zapasowych do kubełka w czasie rzeczywistym bez umieszczania kopii na naszej infrastrukturze.
+- Punkt przechowywania zawsze oddalony od lokalizacji Twojego serwera Bare Metal (jeśli jesteś w Roubaix, Twój punkt przechowywania będzie w Gravelines).
+
+Warto również pamiętać, że:
+
+- Zasady kopii zapasowych są ograniczone, nie możesz ich modyfikować.
+- Nie możesz skonfigurować kopii zapasowej tylko na liście plików lub folderów.
+- Nie możesz zmienić daty i godziny wyzwalania kopii zapasowych (to uznane zostało za poprawkę w przyszłości).
+
+## Infrastruktura
 
 Podstawowy diagram wygląda następująco:
 
@@ -32,25 +53,37 @@ Podstawowy diagram wygląda następująco:
 
 Zwróć uwagę, że:
 
-- Infrastruktura VSPC jest hostowana w centrach danych OVHcloud i nie wysyła danych do serwerów Veeam.
-- Punkty przechowywania to [OVHcloud Object Storage](/links/public-cloud/object-storage) buckety, które są hostowane w centrach danych OVHcloud.
+- Infrastruktura VSPC znajduje się w centrach danych OVHcloud i nie przesyła danych do serwerów Veeam.
+- Przechowywanie opiera się na technologii [OVHcloud Object Storage](/links/public-cloud/object-storage), która znajduje się w centrach danych OVHcloud.
 
-Istnieje kilka kluczowych zalet tej usługi:
+Po dostarczeniu otrzymujesz:
 
-- Pierwsza automatyczna zasada kopii zapasowej z 14-dniowym okresem przechowywania.
-- Możliwość zwiększenia do 30 dni przechowywania.
-- Zasada wykonuje pełną kopię zapasową Twojego serwera.
-- 14 dni niezmienności naszych buckety.
-- Okres automatycznych kopii zapasowych to od 22:00 do 6:00 (strefa czasowa CET dla Europy - strefa czasowa EST dla Kanady i Azji).
-- Szyfrowanie zarządzane przez OVHcloud punktu przechowywania danych kopii zapasowych.
-- Natychmiastowe przesyłanie danych kopii zapasowych do buckety bez umieszczania kopii na naszej infrastrukturze.
-- Punkt przechowywania zawsze oddalony od lokalizacji Twojego serwera Bare Metal (jeśli jesteś w Roubaix, Twój punkt przechowywania będzie w Gravelines).
+- Wirtualny kontener kopii zapasowych, zazwyczaj nazwany `Backup-tenant-xxxx`, który może być używany do grupowania wszystkich Twoich usług kopii zapasowych.
+- Wirtualny kontener VSPC, zazwyczaj nazwany `vspc-tenant-xxxx`, który jest Twoją „firmą” w VSPC, umożliwia dostęp do Twoich pulpitów i łączy Twoje agenty.
+- Vault, zazwyczaj nazwany `Backup-vault-xxxx`, który jest Twoim miejscem przechowywania, gdzie dane kopii zapasowej są wysyłane z każdą kopią zapasową.
 
-Ważne jest również, aby pamiętać, że:
+Zalecamy przeczytanie naszych innych przewodników, aby dowiedzieć się więcej o produkcie.
 
-- Zasada kopii zapasowej jest ograniczona, nie możesz jej modyfikować.
-- Nie możesz skonfigurować kopii zapasowej tylko dla listy plików lub folderów.
-- Nie możesz modyfikować daty i godziny wyzwalania kopii zapasowych (jest to uważane za ulepszenie w przyszłości).
+## Antyafinity
+
+Kopie zapasowe są wykonywane poza lokalizacją, za pomocą domyślnej konfiguracji Vault, z lokalizacją magazynu w geograficznie oddzielnym miejscu od serwera Bare Metal. Ten mechanizm antyafinity zwiększa odporność danych kopii zapasowych.
+
+Mapowanie obszarów kopii zapasowych:
+
+| Lokalizacja Bare Metal | Vault Affinity |
+| ----------------------- | -------------- |
+| BHS                     | TOR            |
+| SGP                     | SYD            |
+| MUM                     | SGP            |
+| SYD                     | SGP            |
+| RBX                     | SBG            |
+| GRA                     | SBG            |
+| LIM                     | SBG            |
+| PAR                     | RBX            |
+| ERI                     | LIM            |
+| WAR                     | LIM            |
+| SBG                     | GRA            |
+| TOR                     | BHS            |
 
 ## Sprawdź również
 
