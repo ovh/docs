@@ -6,18 +6,18 @@ updated: 2026-01-27
 
 ## Ziel
 
-Dieses Handbuch erklärt, wie Sie sich bei der Veeam Service Provider Console (VSPC) anmelden, um Ihre Sicherungen, Agents und Ihre Sicherungsauftragsberichte anzuzeigen.
+Diese Anleitung erklärt, wie Sie sich bei der Veeam Service Provider Console (VSPC) anmelden, um Ihre Sicherungen, Agents und Ihre Sicherungsauftragsberichte anzuzeigen.
 
 ## Voraussetzungen
 
-- Sie müssen Ihre VSPC-Anmeldeinformationen per E-Mail erhalten haben, nachdem Sie Ihren Backup Agent-Service bestellt haben.
-- Ein kompatibler Webbrowser.
+- Sie haben die Anmeldedaten für die VSPC per E-Mail erhalten, nachdem Sie den Backup Agent Dienst bestellt haben.
+- Sie haben einen kompatiblen Webbrowser.
 
 ## In der praktischen Anwendung
 
 ### Zugriff auf VSPC
 
-Gehen Sie zur VSPC-URL: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
+Rufen Sie die VSPC-URL auf: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
@@ -33,7 +33,7 @@ Melden Sie sich mit den Anmeldeinformationen an, die Ihnen per E-Mail übermitte
 
 > [!primary]
 >
-> Dieses Konto ist schreibgeschützt und ermöglicht Ihnen den Zugriff auf Visualisierungen Ihrer Sicherungen und Agents.
+> Dieser Account ist schreibgeschützt und ermöglicht Ihnen den Zugriff auf Visualisierungen Ihrer Sicherungen und Agents.
 
 ### Sicherungsaufträge anzeigen
 
@@ -43,7 +43,7 @@ Nachdem Sie sich angemeldet haben, klicken Sie auf `Backup Jobs`{.action} im lin
 
 ### Erfolgreiche Aufträge anzeigen
 
-Klicken Sie auf `Successful Jobs`{.action} für Ihren Mandanten.
+Klicken Sie auf `Successful Jobs`{.action} für Ihren Tenant.
 
 ![Backup Agent Successful Jobs](images/01-backup-agent-successful-jobs.png){.thumbnail}
 

@@ -15,7 +15,7 @@ Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Ein Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
+- Sie haben einen Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
 
 ## In der praktischen Anwendung
 
@@ -27,7 +27,7 @@ Sie haben zwei Optionen, um Backups zu erstellen: Automatisches Backup und Manue
 
 Das automatische Backup ist in die Backup-Richtlinie integriert, die wir für Ihren Backup Agent anwenden.
 
-Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Remote-Storage-Punkt gesendet wird.
+Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Remote-Storage gesendet wird.
 
 > [!warning]
 >
@@ -35,7 +35,7 @@ Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Rem
 
 > [!primary]
 >
-> Sie können dieses automatische Backup weder ändern noch deaktivieren.
+> Sie können dieses automatische Backup weder ändern noch deaktivieren.  
 > Derzeit können Sie die Richtlinie, die Ihren gesamten Server sichert, nicht ändern. Wir arbeiten daran, diese Konfiguration in Zukunft zu verbessern.
 
 Sie können den Erfolg dieses Backups überprüfen anhand:
@@ -51,7 +51,7 @@ Sie können den Erfolg dieses Backups überprüfen anhand:
 
 Falls erforderlich, können Sie ein manuelles Backup auslösen.
 
-Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage-Punkt.
+Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage.
 
 Um ein manuelles Backup zu erstellen, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal Server:
 

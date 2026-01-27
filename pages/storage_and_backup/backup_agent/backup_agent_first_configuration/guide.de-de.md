@@ -1,5 +1,5 @@
 ---
-title: "Backup Agent - So konfigurieren Sie Ihre erste Sicherung"
+title: "Backup Agent - Konfigurieren einer ersten Sicherung"
 excerpt: "So konfigurieren Sie Ihre erste Sicherung auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
 updated: 2026-01-27
 ---
@@ -14,9 +14,10 @@ Sie haben gerade Ihr Backup Agent Angebot für Ihren Bare Metal Server bestellt.
 
 ## Voraussetzungen
 
-- Zugriff auf das [OVHcloud Kundencenter](/links/manager). 
-- Ein Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder danach über das Menü `Backup Agent`{.action} im OVHcloud Kundencenter.
-- Sie müssen ein Betriebssystem auf Ihrem Bare Metal Server installiert und eingerichtet haben.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager). 
+- Sie haben einen Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder danach über das Menü `Backup Agent`{.action} im OVHcloud Kundencenter.
+- Sie haben ein Betriebssystem auf Ihrem Bare Metal Server installiert und konfiguriert.
+
 
 ## In der praktischen Anwendung
 
@@ -26,7 +27,7 @@ Die Schritte, um eine Sicherung für Ihren Server zu erstellen, sind wie folgt:
 - Herunterladen des Agents.
 - Installation des Agents auf Ihrem Server.
 
-Sobald der Agent installiert ist, erhält er die Sicherungspolitik und kann Sicherungen durchführen.
+Sobald der Agent installiert ist, erhält er die Backup-Richtlinie und kann Sicherungen durchführen.
 
 Sobald alle diese Schritte abgeschlossen sind, wird Ihre erste Sicherung durchgeführt.
 
@@ -53,7 +54,7 @@ Klicken Sie auf die Schaltfläche `Herunterladen`{.action} oben in der Tabelle, 
 
 ![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
-Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder eine der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
+Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder einen der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
 
 ![Backup Agent Schritt 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
@@ -74,13 +75,13 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den 
 >>
 >> ![Backup Agent Schritt 05](images/01-backup-agent-step05.png){.thumbnail}
 >>
->> Nach der Installation sehen Sie, dass Ihr Agent sich mit unserer Infrastruktur verbindet, um Ihre Sicherungspolitik abzurufen:
+>> Nach der Installation sehen Sie, dass Ihr Agent sich mit unserer Infrastruktur verbindet, um Ihre Backup-Richtlinie abzurufen:
 >>
 >> ![Backup Agent Schritt 06](images/01-backup-agent-step06.png){.thumbnail}
 >>
 >> ![Backup Agent Schritt 07](images/01-backup-agent-step07.png){.thumbnail}
 >>
->> Schließlich, nachdem die Sicherungspolitik angewendet wurde, sehen Sie, dass Ihr Backup Agent konfiguriert und auf Ihrem Bare Metal Server installiert ist:
+>> Schließlich, nachdem die Backup-Richtlinie angewendet wurde, sehen Sie, dass Ihr Backup Agent konfiguriert und auf Ihrem Bare Metal Server installiert ist:
 >>
 >> ![Backup Agent Schritt 08](images/01-backup-agent-step08.png){.thumbnail}
 >>
@@ -115,7 +116,7 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den 
 >>    Status                 : Not installed
 >> ```
 >>
->> Dies ist in diesem Stadium normal, wir werden eine Konfiguration anwenden, die es dem Backup Agent ermöglicht, mit einer Sicherungspolitik bereitgestellt zu werden.
+>> Dies ist in diesem Stadium normal, wir werden eine Konfiguration anwenden, die es dem Backup Agent ermöglicht, mit einer Backup-Richtlinie bereitgestellt zu werden.
 
 ## Weiterführende Informationen
 

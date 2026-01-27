@@ -6,7 +6,7 @@ updated: 2026-01-27
 
 ## Ziel
 
-Dieses Handbuch beschreibt die bekannten Einschränkungen und Grenzen des Backup Agent Produkts, die Sie vor der Nutzung des Dienstes kennen sollten.
+Diese Anleitung beschreibt die bekannten Einschränkungen und Grenzen des Backup Agent Produkts, die Sie vor der Nutzung des Dienstes kennen sollten.
 
 ## Bekannte Einschränkungen
 
@@ -22,8 +22,8 @@ Dieses Handbuch beschreibt die bekannten Einschränkungen und Grenzen des Backup
 
 ### Vault
 
-- Sie können keine zusätzlichen Vault erstellen, diese werden automatisch erstellt, um sicherzustellen, dass Ihre Daten nicht im gleichen Rechenzentrum wie Ihr Bare Metal Server gehostet werden.
-- Sie können den Vault an einem Agent nicht ändern.
+- Sie können keine zusätzlichen Vaults erstellen. Diese werden automatisch erstellt, um sicherzustellen, dass Ihre Daten nicht im gleichen Rechenzentrum wie Ihr Bare Metal Server gehostet werden.
+- Sie können den Vault eines Agents nicht ändern.
 
 ### Betriebssystemeinschränkungen
 
@@ -31,7 +31,7 @@ Dieses Handbuch beschreibt die bekannten Einschränkungen und Grenzen des Backup
 
 ### Kompatibilität mit anderen OVHcloud Produkten
 
-- Derzeit ist das Backup Agent Produkt nur mit Dedicated Servern kompatibel, Sie können Ihren Agent nicht auf anderen Produkten nutzen.
+- Derzeit ist das Backup Agent Produkt nur mit Dedicated Servern kompatibel. Sie können Ihren Agent nicht auf anderen Produkten nutzen.
 
 ## Weitere Informationen
 
