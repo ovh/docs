@@ -1,6 +1,6 @@
 ---
 title: 'Installing Prometheus Agent on a Public Cloud instance'
-excerpt: 'Find out how to install a Prometheus agent on an OVHcloud Public Cloud instance to gather metrics'
+excerpt: 'Find out how to install install the Prometheus Node Exporter or Windows Exporter agent on an OVHcloud Public Cloud instance to gather metrics'
 updated: 2026-01-26
 ---
 
@@ -8,7 +8,7 @@ updated: 2026-01-26
 
 Prometheus is a monitoring system and time series database. You can install and use its agent on OVHcloud Public Cloud instances to gather metrics from your servers and applications.
 
-**Find out how to install a Prometheus agent on an OVHcloud Public Cloud instance.**
+**Find out how to install the Prometheus Node Exporter or Windows Exporter agent on an OVHcloud Public Cloud instance.**
 
 > [!warning]
 > 
@@ -25,7 +25,7 @@ Prometheus is a monitoring system and time series database. You can install and 
 
 ## Instructions
 
-Follow these steps to install a Prometheus agent (**Node Exporter** or **Windows Exporter**) on your OVHcloud Public Cloud instance to collect metrics.
+Follow these steps to install the Prometheus Node Exporter or Windows Exporter agent on your OVHcloud Public Cloud instance to collect metrics.
 
 ### Step 1: Connecting to your instance
 
@@ -39,7 +39,7 @@ Replace `<INSTANCE_IP>` with the public IP address of your instance.
 
 > [primary]
 >
-> For Windows, use PowerShell with SSH or an SSH client like [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) if you prefer using the command line.
+> On Windows, use PowerShell with SSH or an SSH client such as [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) if you prefer using a command-line interface.
 >
 > For Windows Server with GUI, you can also use RDP (Remote Desktop).
 >
@@ -61,23 +61,14 @@ Make sure your system packages are up to date:
 >> sudo yum update -y
 >> ```
 >>
-> For macOS
->>
->> Use [Homebrew](https://brew.sh/) to update packages:
->>
->> ```bash
->> brew update
->> brew upgrade
->> ```
->>
 > For Windows
 >>
->> No system update is required specifically for Node Exporter. Optionally, ensure your system is up to date via Windows Update.
+>> No system update is required specifically for Windows Exporter. Optionally, ensure your system is up to date via Windows Update.
 >>
 
-### Step 3: Creating a Prometheus User (Optional)
+### Step 3: Creating a Prometheus user (Optional)
 
-Creating a dedicated user for Node Exporter improves security on Linux, but is optional on macOS and Windows.
+Creating a dedicated user for Node Exporter improves security on Linux, but is optional for Windows Exporter on Windows.
 
 > [!tabs]
 > For Linux
@@ -89,17 +80,6 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> - This creates a user with limited permissions to run Node Exporter.
 >> - Recommended for production to reduce security risks.
 >> - You can then start Node Exporter under this user via systemd
->>
-> For macOS
->>
->> ```bash
->> sudo dscl . -create /Users/prometheus
->> sudo dscl . -create /Users/prometheus UserShell /usr/bin/false
->> sudo dscl . -create /Users/prometheus NFSHomeDirectory /var/empty
->> ```
->>
->> - **Optional**: Node Exporter can run under your current user without issues.
->> - Creating a dedicated user is only for stricter separation, not required.
 >>
 > For Windows
 >>
@@ -114,10 +94,10 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> Add-LocalGroupMember -Group "Users" -Member "prometheus"
 >> ```
 >>
->> **Note**: Node Exporter/Windows Exporter can run under the current user; creating a dedicated user is optional for stricter access control.
+>> **Note**: Windows Exporter can run under the current user. Creating a dedicated user is optional for stricter access control.
 >>
 
-### Step 4: Downloading Node Exporter
+### Step 4: Downloading Node Exporter / Windows Exporter
 
 > [!tabs]
 > For Linux
@@ -128,16 +108,6 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> wget https://github.com/prometheus/node_exporter/releases/download/v$VERSION/node_exporter-$VERSION.linux-amd64.tar.gz
 >> tar xvf node_exporter-$VERSION.linux-amd64.tar.gz
 >> cd node_exporter-$VERSION.linux-amd64
->> ```
->>
-> For macOS
->>
->> ```bash
->> # Replace VERSION with the latest release, e.g., 1.10.2
->> VERSION="1.10.2"
->> curl -LO https://github.com/prometheus/node_exporter/releases/download/v$VERSION/node_exporter-$VERSION.darwin-arm64.tar.gz
->> tar xvf node_exporter-$VERSION.darwin-arm64.tar.gz
->> cd node_exporter-$VERSION.darwin-arm64
 >> ```
 >>
 > For Windows (via SSH/PowerShell on the VM)
@@ -157,7 +127,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> Everything is done directly inside the VM, no need to transfer files from your local machine.
 >>
 
-### Step 5: Running Node Exporter
+### Step 5: Running Node Exporter / Windows Exporter
 
 > [!tabs]
 > For Linux
@@ -169,14 +139,6 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> - **Optional**: set up a systemd service to run Node Exporter automatically.
 >> - If using the dedicated prometheus user, ensure the service runs under this account.
 >>
-> For macOS
->>
->> ```bash
->> ./node_exporter
->> ```
->>
->> **Optional**: run under a dedicated user for stricter separation, but current user works fine.
->>
 > For Windows (via SSH/PowerShell)
 >>
 >> ```powershell
@@ -185,10 +147,10 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >>
 >> - On Desktop or Core, you can run it directly in PowerShell or configure as a Windows service.
 >>
->> It is possible to customize collectors; see the [official documentation](https://github.com/prometheus-community/windows_exporter#collectors) for the list.
+>> It is possible to customize collectors; see the [official documentation](https://github.com/prometheus-community/windows_exporter#collectors) for the full list.
 >>
 
-### Step 6: Verifying Node Exporter
+### Step 6: Verifying Node Exporter / Windows Exporter
 
 > [!primary]
 >
@@ -196,10 +158,10 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >
 > Windows Exporter listens on port 9182 by default
 >
-> Replace <PORT> with 9100 for Linux/macOS or 9182 for Windows.
+> Replace <PORT> with 9100 for Linux or 9182 for Windows.
 >
 
-You should see metrics such as CPU, memory, disk, and network usage using this curl command:
+The command below allows you to monitor metrics such as CPU, memory, disk, and network usage:
 
 ```bash
 curl http://<INSTANCE_IP>:<PORT>/metrics
@@ -207,10 +169,10 @@ curl http://<INSTANCE_IP>:<PORT>/metrics
 
 > [!primary]
 >
-> On Windows Desktop, you could also open a browser if desired, but via SSH/PowerShell, use `curl` or `Invoke-WebRequest`.
+> On Windows Desktop, you can also open a browser to check. However, via SSH/PowerShell, use `curl` or `Invoke-WebRequest`.
 >
 
-### Step 7: Firewall/Security Rules (OVHcloud)
+### Step 7: Firewall/Security rules (OVHcloud)
 
 Ensure that the port used by the exporter is open in both the VM firewall and your OVHcloud Security Group.
 
@@ -236,17 +198,6 @@ Restrict access to only your Prometheus server for security.
 >> sudo ufw status
 >> ```
 >>
-> For macOS
->>
->> macOS does not enable a firewall by default.
->>
->> If you are using the built-in firewall, open port 9100:
->>
->> ```bash
->> sudo /usr/libexec/ApplicationFirewall/socketfilterfw --add ./node_exporter
->> sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp ./node_exporter
->> ```
->>
 > For Windows
 >>
 >> Open port 9182 in Windows Firewall:
@@ -262,7 +213,7 @@ Restrict access to only your Prometheus server for security.
 >> ```
 >>
 
-### Step 8: Connecting Node Exporter to Prometheus
+### Step 8: Connecting Node Exporter / Windows Exporter to Prometheus
 
 1\. Edit Prometheus config on your Prometheus server (prometheus.yml):
 
@@ -282,12 +233,6 @@ scrape_configs:
 >> sudo systemctl reload prometheus
 >> ```
 >>
-> For macOS
->>
->> ```bash
->> brew services reload prometheus
->> ```
->>
 > For Windows
 >>
 >> ```powershell
@@ -296,7 +241,7 @@ scrape_configs:
 >> ```
 >>
 
-3\. Node Exporter metrics from your OVHcloud instance should now appear in Prometheus.
+3\. Node Exporter / Windows Exporter metrics from your OVHcloud instance should now appear in Prometheus.
 
 ## Go further
 
