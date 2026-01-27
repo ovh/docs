@@ -1,7 +1,7 @@
 ---
 title: AI Training - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Training
-updated: 2023-11-21
+updated: 2026-01-27
 ---
 
 > [!primary]
@@ -137,7 +137,7 @@ Attached storage allows you to work on several TB of data, while being persisten
 >
 > There is no duration limitation on AI Training job execution.
 >
-> However, by default, your AI Training job will automatically shut down after **7 consecutive running days**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this period to **28 days**.
+> However, by default, your AI Training job will automatically shut down after **7 consecutive running days**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support) to extend this period to **28 days**.
 
 ### Pre-installed AI environments
 

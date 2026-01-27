@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-updated: 2025-10-07
+updated: 2026-01-27
 ---
 
 > [!primary]

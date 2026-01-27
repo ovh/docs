@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2026-01-26
+updated: 2026-01-27
 ---
 
 ## Introduction
@@ -16,7 +16,7 @@ The advantage compared to doing your own setup is that everything is already ins
 
 This guide demonstrates how to create, configure, access, stop, restart and delete AI Notebooks from multiple interfaces:
 
-- The **OVHcloud Control Panel (UI)**, is user-friendly and ideal for beginners.
+- The **OVHcloud Control Panel (UI)** is user-friendly and ideal for beginners.
 - The **ovhai** command-line interface (CLI)
 - The **AI API** 
 - The **ovhai** Python SDK
@@ -119,9 +119,9 @@ To create an AI Notebook, follow these steps:
 >> > [!warning]
 >> >
 >> > Actually our main motivation is to keep the plateform up-to-date, in matter of security patches and new features alignment, so we need to update and restart hosts from time to time, which requires to get them free from any customer workload.
-This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
+>> > This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
 >> 
->> By default, your AI notebook will automatically shut down after 7 consecutive running days, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this automatic restart period from 7 to 28 days.
+>> By default, your AI notebook will automatically shut down after 7 consecutive running days, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
 >> 
 >> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
 >> 
@@ -133,7 +133,7 @@ This also allows us to address host-located incidents, e.g. when a single GPU fa
 >>
 >> If you want to learn more about configuring containers and Git repositories in the Notebook, you can refer to this [documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui). For now, we will launch a classic Notebook without any external volumes added to it.
 >>
->> After that, you have the option to set labels. This allows to specify one of yours AI tokens and apply it to this new AI Notebook. This AI token can then be shared with anyone who should have access to the Notebook, allowing them to access it without requiring your own Public Cloud project credentials. This is useful if you want to provide access to the AI Notebook outside your Public Cloud project. More information [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
+>> After that, you have the option to set labels. This allows to specify one of your AI tokens and apply it to this new AI Notebook. This AI token can then be shared with anyone who should have access to the Notebook, allowing them to access it without requiring your own Public Cloud project credentials. This is useful if you want to provide access to the AI Notebook outside your Public Cloud project. More information [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
 >>
 >> Finally, **SSH public keys** allow you to access your Notebook remotely. 
 >>
@@ -586,7 +586,7 @@ When your Notebook is in the `RUNNING` state, you may want to restart it to refr
 
 The restart operation **will not trigger a datasync process**, which means your notebook's data and settings will be preserved without requiring the time consuming process of copying data.
 
-If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](https://help.ovhcloud.com/csm?id=csm_get_help).
+If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](/links/support).
 
 > [!tabs]
 > **Using the Control Panel (UI)**

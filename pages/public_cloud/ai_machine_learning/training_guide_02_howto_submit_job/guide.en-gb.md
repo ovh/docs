@@ -1,7 +1,7 @@
 ---
 title: AI Training - Getting started
 excerpt: Learn how to submit an AI Training job via UI
-updated: 2023-11-21
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -34,7 +34,8 @@ From the **jobs** list in the dashboard you can start the job submission by clic
 
 Give a name to your job. This will make it easier to manage when you have multiple jobs running.
 
-Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
+Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information, see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
+
 Select the desired region and click `Next`{.action}.
 
 ![image](images/02_name_job.png){.thumbnail}
@@ -45,7 +46,7 @@ Select the desired region and click `Next`{.action}.
 
 In this step you can either select the amount of GPUs or CPUs you need for your training workload.
 
-The max amount of GPUs or CPUs you can select for your **job** is region dependent. If you choose a GPU a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
+The max amount of GPUs or CPUs you can select for your **job** is region-dependent. If you choose a GPU, a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities).
 
 Once the amount of resources is set you can see a preview of the billing rate. Click `Next`{.action}.
 
@@ -73,7 +74,7 @@ Next, select your privacy settings.
 
 > [!warning]
 >
-> *Public access* will expose your data and code to anyone getting the AI Training job link. Be careful and don't use it with sensitive data. On the other hand, *Restricted access* will ask a user and password combination or an AI token to access the job content, ensuring ecure environment.
+> *Public access* will expose your data and code to anyone getting the AI Training job link. Be careful and don't use it with sensitive data. On the other hand, *Restricted access* will ask a user and password combination or an AI token to access the job content, ensuring a secure environment.
 >
 
 ![image](images/06_job_privacy_settings.png){.thumbnail}
@@ -83,9 +84,9 @@ Next, select your privacy settings.
 > [!warning]
 >
 > Actually our main motivation is to keep the plateform up-to-date, in matter of security patches and new features alignment, so we need to update and restart hosts from time to time, which requires to get them free from any customer workload.
-This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
+> This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
 
-By default, your job will automatically shut down after 7 consecutive running days, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your job back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this automatic restart period from 7 to 28 days.
+By default, your job will automatically shut down after 7 consecutive running days, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your job back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
 
 ![image](images/07_job_lifecycle.png){.thumbnail}
 
@@ -97,9 +98,9 @@ First, the Docker image you provided in Step 6 includes an entrypoint for your c
 
 Then, by default, your AI Training job comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your job, either as input for your training workload or as output for your results (e.g. model weights).
 
-If you want to learn more about configuring containers and Git repositories in the job, you can refer to this [model training exemple](/pages/public_cloud/ai_machine_learning/training_tuto_01_train_your_first_model). For now, we will launch a classic job without any external volumes added to it.
+If you want to learn more about configuring containers and Git repositories in the job, you can refer to this [model training example](/pages/public_cloud/ai_machine_learning/training_tuto_01_train_your_first_model). For now, we will launch a classic job without any external volumes added to it.
 
-Finally, **SSH public keys** allow you to access your job remotely. 
+Finally, **SSH public keys** allow you to access your job remotely.
 
 ![image](images/08_job_advanced_config.png){.thumbnail}
 
