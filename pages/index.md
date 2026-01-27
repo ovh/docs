@@ -1198,7 +1198,7 @@
                 + [Migrate to OVHcloud Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_move_to_cloud)
                 + [Migrate from Gen 2 to Gen 3 for Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_migrate_from_gen2_to_gen3)
                 + [Migrate from a Single AZ to a 3-AZ region for Public Cloud Databases](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
-                + [MySQL - External database migration](public_cloud/public_cloud_databases/mysql_09_external_database_migration)
+                + [Migrate to OVHcloud Public Cloud Databases for MySQL](public_cloud/public_cloud_databases/mysql_09_external_database_migration)
                 + [Reversibility Policy for Managed Relational Database product](account_and_service_management/reversibility/07-rdb_mysql_postgre)
             + [Tutorials](public-cloud-databases-mysql-tutorials)
                 + [Connect Managed Kubernetes to Public Cloud Databases for MySQL](public_cloud/public_cloud_databases/mysql_tuto_01_connect-k8s-to-managed-mysql)
