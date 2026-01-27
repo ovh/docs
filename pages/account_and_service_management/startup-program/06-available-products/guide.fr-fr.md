@@ -1,7 +1,7 @@
 ---
 title: "Quels produits sont disponibles avec les crédits du Startup Program ?"
 excerpt: "Découvrez quelles solutions OVHcloud sont éligibles avec les crédits du Startup Program pour soutenir votre startup"
-updated: 2026-01-15
+updated: 2026-01-27
 ---
 
 ## Objectif
