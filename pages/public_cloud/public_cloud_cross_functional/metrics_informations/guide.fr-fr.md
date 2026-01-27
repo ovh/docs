@@ -67,7 +67,37 @@ Les Métriques sont des indicateurs quantitatifs de performance et d’utilisati
 
 ### Explorer les Métrique par service
 
-#### Compute
+/// details | Compute
+
+Les Métriques Compute permettent de suivre la performance et l’utilisation des instances cloud. Elles fournissent des informations précises sur le CPU, la mémoire, le stockage et le réseau, permettant d’optimiser les performances et d’anticiper les besoins opérationnels.
+
+**Stockage – Disques**
+
+- **Disk read Bytes (KiB/s) :** volume moyen de données lues depuis tous les volumes attachés à l’instance. Permet de mesurer la vitesse de lecture des applications.
+- **Disk read IOPS :** nombre moyen d’opérations de lecture complétées par seconde. Permet de suivre l’intensité des lectures sur les volumes de l’instance.
+- **Disk write Bytes (KiB/s) :** volume moyen de données écrites sur tous les volumes attachés à l’instance. Permet de mesurer la vitesse d’écriture des applications.
+- **Disk write IOPS :** nombre moyen d’opérations d’écriture complétées par seconde. Suivi de l’intensité des écritures sur les volumes de l’instance.
+
+**CPU**
+
+- **CPU utilization (%) :** pourcentage de ressources CPU utilisées par l’instance sur une période donnée. Permet d’identifier les pics de charge et les éventuels goulots d’étranglement.
+
+**Réseau**
+
+- **Network in (bytes/s) :** trafic entrant de l’instance en octets par seconde. Permet de détecter les pics ou anomalies dans les flux entrants.
+- **Network out (bytes/s) :** trafic sortant de l’instance en octets par seconde. Suivi des flux sortants et détection de volumes anormaux.
+- **Network packets in (packets/s) :** nombre de paquets entrants par seconde. Utile pour analyser l’intensité du trafic réseau.
+- **Network packets out (packets/s) :** nombre de paquets sortants par seconde. Permet de surveiller les flux sortants et détecter des anomalies.
+
+**Mémoire**
+
+- **Memory utilization (%) :** pourcentage de mémoire utilisée par l’instance. Permet d’identifier les pressions mémoire, fuites ou contraintes de capacité.
+
+**Volumes attachés**
+
+- **Number of attached volumes :** nombre de volumes attachés à l’instance, pour suivre la configuration de stockage disponible.
+
+///
 
 ## Disponibilité des Métriques par région
 
@@ -75,14 +105,15 @@ OVHcloud déploie les Métriques progressivement sur toutes ses régions afin d�
 
 Le tableau ci-dessous présente l’état de disponibilité des Métriques ainsi que les dates de sortie prévues pour chaque région.
 
-| Région | Dashboard (M4M) | Abonnements (M2C) | Date de sortie |
-| ------ | --------------- | ----------------- | -------------- |
-| GRA    | Disponible      | Disponible        |                |
-| GRA    | Disponible      | Disponible        |                |
-| GRA    | Disponible      | Disponible        |                |
-| GRA    | Disponible      | Disponible        |                |
-| GRA    | Disponible      | Disponible        |                |
-| GRA    | Disponible      | Disponible        |                |
+| Région         | Disponibilité des Métriques      | Date de sortie |
+| -------------- | -------------------------------- | -------------- |
+| GRA            | Available                        |                |
+| SBG            | Non disponible                   | Q2 2026        |
+| EU-WEST-PAR    | Non disponible                   | Q2 2026        |
+| EU-WEST-MIL    | Non disponible                   | Q3 2026        |
+| BHS            | Non disponible                   | Q4 2026        |
+| GRA            | Non disponible                   | Q4 2026        |
+| Autres régions | Non disponible                   | À venir        |
 
 ## Go further
 

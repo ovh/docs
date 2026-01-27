@@ -67,7 +67,37 @@ Metrics are quantitative indicators of cloud resource performance and usage: CPU
 
 ### Explore Metrics by service
 
-#### Compute
+/// details | Compute
+
+Compute metrics allow you to track the performance and usage of cloud instances. They provide accurate information on CPU, memory, storage, and network, enabling you to optimize performance and anticipate operational needs.
+
+**Storage – Disks**
+
+- **Disk read Bytes (KiB/s):** average volume of data read from all volumes attached to the instance. Used to measure application read speed.
+- **Disk read IOPS:** average number of read operations completed per second. Used to track read intensity on instance volumes.
+- **Disk write Bytes (KiB/s):** average volume of data written to all volumes attached to the instance. Used to measure the write speed of applications.
+- **Disk write IOPS:** average number of write operations completed per second. Used to monitor the intensity of writes to the instance's volumes.
+
+**CPU**
+
+- **CPU utilization (%):** percentage of CPU resources used by the instance over a given period. Allows you to identify load peaks and potential bottlenecks.
+
+**Network**
+
+- **Network in (bytes/s):** incoming traffic to the instance in bytes per second. This allows you to detect peaks or anomalies in incoming flows.
+- **Network out (bytes/s):** outgoing traffic from the instance in bytes per second. This allows you to monitor outgoing flows and detect abnormal volumes.
+- **Network packets in (packets/s):** number of incoming packets per second. Useful for analyzing network traffic intensity.
+- **Network packets out (packets/s):** number of outgoing packets per second. Allows you to monitor outgoing flows and detect anomalies.
+
+**Memory**
+
+- **Memory utilization (%):** percentage of memory used by the instance. Allows you to identify memory pressure, leaks, or capacity constraints.
+
+**Attached volumes**
+
+- **Number of attached volumes:** number of volumes attached to the instance, to track the available storage configuration.
+
+///
 
 ## Metrics availability by region
 
@@ -75,14 +105,15 @@ OVHcloud is gradually rolling out Metrics across all its regions to ensure high 
 
 The table below shows the availability status of metrics and the planned release dates for each region.
 
-| Region | Dashboard (M4M) | Subscriptions (M2C) | Release date |
-| ------ | --------------- | ------------------- | ------------ |
-| GRA    | Available       | Available           |              |
-| GRA    | Available       | Available           |              |
-| GRA    | Available       | Available           |              |
-| GRA    | Available       | Available           |              |
-| GRA    | Available       | Available           |              |
-| GRA    | Available       | Available           |              |
+| Region        | Metrics Availability | Release Date |
+| ------------- | -------------------- | ------------ |
+| GRA           | Available            |              |
+| SBG           | Not available        | Q2 2026      |
+| EU-WEST-PAR   | Not available        | Q2 2026      |
+| EU-WEST-MIL   | Not available        | Q3 2026      |
+| BHS           | Not available        | Q4 2026      |
+| GRA           | Not available        | Q4 2026      |
+| Other regions | Not available        | Coming soon  |
 
 ## Go further
 
