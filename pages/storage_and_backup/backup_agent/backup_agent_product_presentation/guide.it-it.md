@@ -42,7 +42,7 @@ Numerosi punti di forza sono presenti in questa offerta:
 È anche importante tener presente che:
 
 - La politica di backup è vincolata, non potete modificarla.
-- Non potete configurare un backup solo su una lista di file o cartelle.
+- Non potete configurare un backup unicamente su una lista di file o cartelle.
 - Non potete modificare la data e l'ora dei trigger di backup (questo sarà oggetto di un miglioramento in arrivo).
 
 ## L'infrastruttura
@@ -76,13 +76,13 @@ Mapping delle zone di backup:
 | SGP                       | SYD            |
 | MUM                       | SGP            |
 | SYD                       | SGP            |
-| RBX                       | SBG            |
+| RBX                       | GRA            |
 | GRA                       | SBG            |
 | LIM                       | SBG            |
 | PAR                       | RBX            |
 | ERI                       | LIM            |
 | WAR                       | LIM            |
-| SBG                       | GRA            |
+| SBG                       | RBX            |
 | TOR                       | BHS            |
 
 ## Per saperne di più

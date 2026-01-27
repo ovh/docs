@@ -59,7 +59,7 @@ Il est à noter que :
 Lors de votre livraison, vous recevez :
 
 - Un Backup Tenant, en général nommé `backup-tenant-xxxx`, qui est un containeur virtuel permettant de regrouper tous vos services Backup.
-- Un VSPC Tenant, en général nommé `vspc-tenant-xxxx`, qui est votre « compagnie » dans la VSPC, permettant d'accéder à vos dashboards et de connecter vos agents.
+- Un VSPC Tenant, en général nommé `vspc-tenant-xxxx`, qui est votre « company » dans la VSPC, permettant d'accéder à vos dashboards et de connecter vos agents.
 - Un Vault, en général nommé `backup-vault-xxxx`, qui est votre espace de stockage où vos données de sauvegarde sont envoyées à chaque sauvegarde.
 
 Nous vous invitons à lire nos autres guides afin de découvrir le produit.
@@ -76,13 +76,13 @@ Mapping des zones de sauvegarde :
 | SGP                     | SYD            |
 | MUM                     | SGP            |
 | SYD                     | SGP            |
-| RBX                     | SBG            |
+| RBX                     | GRA            |
 | GRA                     | SBG            |
 | LIM                     | SBG            |
 | PAR                     | RBX            |
 | ERI                     | LIM            |
 | WAR                     | LIM            |
-| SBG                     | GRA            |
+| SBG                     | RBX            |
 | TOR                     | BHS            |
 
 ## Aller plus loin

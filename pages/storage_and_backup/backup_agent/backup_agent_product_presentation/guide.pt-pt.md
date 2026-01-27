@@ -42,7 +42,7 @@ Vários pontos fortes estão presentes nesta oferta:
 Também é importante ter em mente que:
 
 - A política de cópia de segurança é restrita, não pode modificá-la.
-- Não pode configurar uma cópia de segurança apenas com uma lista de ficheiros ou pastas.
+- Não pode configurar uma cópia de segurança unicamente com uma lista de ficheiros ou pastas.
 - Não pode modificar a data e a hora dos gatilhos de cópia de segurança (isso será objeto de uma melhoria futura).
 
 ## A infraestrutura
@@ -76,13 +76,13 @@ Mapeamento das zonas de cópia de segurança:
 | SGP                     | SYD            |
 | MUM                     | SGP            |
 | SYD                     | SGP            |
-| RBX                     | SBG            |
+| RBX                     | GRA            |
 | GRA                     | SBG            |
 | LIM                     | SBG            |
 | PAR                     | RBX            |
 | ERI                     | LIM            |
 | WAR                     | LIM            |
-| SBG                     | GRA            |
+| SBG                     | RBX            |
 | TOR                     | BHS            |
 
 ## Quer saber mais?

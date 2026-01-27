@@ -42,7 +42,7 @@ Varios puntos fuertes están presentes en esta oferta:
 También es importante tener en cuenta que:
 
 - La política de copia de seguridad es restringida, no puede modificarla.
-- No puede configurar una copia de seguridad solo sobre una lista de archivos o carpetas.
+- No puede configurar una copia de seguridad únicamente sobre una lista de archivos o carpetas.
 - No puede modificar la fecha y la hora de los desencadenadores de copia de seguridad (esto será objeto de una mejora futura).
 
 ## La infraestructura
@@ -76,13 +76,13 @@ Mapeo de zonas de copia de seguridad:
 | SGP                     | SYD            |
 | MUM                     | SGP            |
 | SYD                     | SGP            |
-| RBX                     | SBG            |
+| RBX                     | GRA            |
 | GRA                     | SBG            |
 | LIM                     | SBG            |
 | PAR                     | RBX            |
 | ERI                     | LIM            |
 | WAR                     | LIM            |
-| SBG                     | GRA            |
+| SBG                     | RBX            |
 | TOR                     | BHS            |
 
 ## Más información

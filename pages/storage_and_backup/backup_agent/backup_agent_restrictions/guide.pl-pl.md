@@ -14,7 +14,7 @@ Przewodnik ten zawiera informacje o znanych ograniczeniach i wadach produktu Bac
 
 - Polityka kopii zapasowych jest ograniczona, nie można jej modyfikować.
 - Nie można skonfigurować kopii zapasowej tylko dla listy plików lub folderów.
-- Nie można zmienić daty i godziny wyzwalania kopii zapasowych (to uznawane jest za poprawkę w przyszłości).
+- Nie można zmienić daty i godziny wyzwalania kopii zapasowych (to będzie przedmiotem przyszłej poprawki).
 
 ### Dostęp do VSPC
 
@@ -27,7 +27,7 @@ Przewodnik ten zawiera informacje o znanych ograniczeniach i wadach produktu Bac
 
 ### Ograniczenia systemu operacyjnego
 
-- Listę kompatybilnych systemów operacyjnych dla Veeam Agent można znaleźć [tutaj](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- Listę kompatybilnych systemów operacyjnych dla Veeam Agent można znaleźć [tutaj](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Kompatybilność z innymi produktami OVHcloud
 

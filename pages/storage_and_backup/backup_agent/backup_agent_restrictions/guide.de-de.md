@@ -14,7 +14,7 @@ Dieses Handbuch beschreibt die bekannten Einschränkungen und Grenzen des Backup
 
 - Die Backup-Richtlinie ist eingeschränkt, Sie können sie nicht ändern.
 - Sie können keinen Backup nur auf eine Liste von Dateien oder Ordnern konfigurieren.
-- Sie können das Datum und die Uhrzeit der Backup-Auslöser nicht ändern (dies gilt als Verbesserung für die Zukunft).
+- Sie können das Datum und die Uhrzeit der Backup-Auslöser nicht ändern (dies wird Gegenstand einer zukünftigen Verbesserung sein).
 
 ### VSPC-Zugriff
 
@@ -27,7 +27,7 @@ Dieses Handbuch beschreibt die bekannten Einschränkungen und Grenzen des Backup
 
 ### Betriebssystemeinschränkungen
 
-- Sie finden die Liste der kompatiblen Betriebssysteme für den Veeam Agent [hier](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- Sie finden die Liste der kompatiblen Betriebssysteme für den Veeam Agent [hier](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Kompatibilität mit anderen OVHcloud Produkten
 

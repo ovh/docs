@@ -41,8 +41,8 @@ Istnieje kilka kluczowych zalet tej oferty:
 
 Warto również pamiętać, że:
 
-- Zasady kopii zapasowych są ograniczone, nie możesz ich modyfikować.
-- Nie możesz skonfigurować kopii zapasowej tylko na liście plików lub folderów.
+- Zasada kopii zapasowych jest ograniczona, nie możesz jej modyfikować.
+- Nie możesz skonfigurować kopii zapasowej wyłącznie na liście plików lub folderów.
 - Nie możesz zmienić daty i godziny wyzwalania kopii zapasowych (to uznane zostało za poprawkę w przyszłości).
 
 ## Infrastruktura
@@ -76,13 +76,13 @@ Mapowanie obszarów kopii zapasowych:
 | SGP                     | SYD            |
 | MUM                     | SGP            |
 | SYD                     | SGP            |
-| RBX                     | SBG            |
+| RBX                     | GRA            |
 | GRA                     | SBG            |
 | LIM                     | SBG            |
 | PAR                     | RBX            |
 | ERI                     | LIM            |
 | WAR                     | LIM            |
-| SBG                     | GRA            |
+| SBG                     | RBX            |
 | TOR                     | BHS            |
 
 ## Sprawdź również

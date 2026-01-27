@@ -34,15 +34,15 @@ Po wykonaniu wszystkich tych kroków zostanie wykonana Twoja pierwsza kopia zapa
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Backup Agent`{.action}.
 
-![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
 
 Kliknij swój vspc-tenant w sekcji `Services`{.action}.
 
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
 Przejdź do sekcji `Agents`{.action}.
 
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,11 +51,11 @@ Przejdź do sekcji `Agents`{.action}.
 
 Kliknij przycisk `Download`{.action} w górnym pasku tabeli wyświetlającej listę agentów.
 
-![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
 Wybierz swój system operacyjny i wybierz opcję pobrania pliku instalacyjnego lub użycia jednej z dostarczonych komend, aby go pobrać.
 
-![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
+![Backup Agent Step 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
 Aby zainstalować agenta na swoim serwerze Bare Metal, kliknij na kartę odpowiadającą Twojemu systemowi operacyjnemu:
 
@@ -89,7 +89,7 @@ Aby zainstalować agenta na swoim serwerze Bare Metal, kliknij na kartę odpowia
 > Linux
 >> Wybierz swój system operacyjny i wybierz opcję pobrania pliku instalacyjnego lub użycia jednej z dostarczonych komend, aby go pobrać.
 >>
->> ![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
+>> ![Backup Agent Step 14](images/01-backup-agent-download-linux-en.png){.thumbnail}
 >>
 >> Po tym, jak plik instalacyjny znajdzie się na Twoim serwerze, przejdź do folderu, w którym się znajduje, i uruchom go w następujący sposób:
 >>

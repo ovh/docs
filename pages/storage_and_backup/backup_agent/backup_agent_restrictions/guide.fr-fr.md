@@ -27,7 +27,7 @@ Ce guide détaille les restrictions et limitations connues du produit Backup Age
 
 ### Limitations des OS
 
-- Vous pouvez retrouver la liste des OS compatibles pour le Veeam Agent à [cette adresse](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- Vous pouvez retrouver la liste des OS compatibles pour le Veeam Agent à [cette adresse](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Compatibilité avec d'autres produits OVHcloud
 

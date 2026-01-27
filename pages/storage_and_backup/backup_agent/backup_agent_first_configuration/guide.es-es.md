@@ -34,15 +34,15 @@ Una vez que todas estas etapas se hayan realizado, su primera copia de seguridad
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y vaya a la sección `Backup Agent`{.action}.
 
-![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
 
 Haga clic en su vspc-tenant, en la sección `Servicios`{.action}.
 
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
 Vaya a la sección `Agentes`{.action}.
 
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,11 +51,11 @@ Vaya a la sección `Agentes`{.action}.
 
 Haga clic en el botón `Descargar`{.action} en la parte superior de la tabla que enumera sus agentes.
 
-![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
 Seleccione su sistema operativo y elija si quiere descargar el archivo de instalación o usar una de las comandas propuestas para recuperarlo.
 
-![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
+![Backup Agent Step 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
 Para instalar su agente en su servidor Bare Metal, haga clic en la pestaña correspondiente a su sistema operativo:
 
@@ -89,7 +89,7 @@ Para instalar su agente en su servidor Bare Metal, haga clic en la pestaña corr
 > Linux
 >> Seleccione su sistema operativo y elija si quiere descargar el archivo de instalación o usar una de las comandas propuestas para recuperarlo.
 >>
->> ![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
+>> ![Backup Agent Step 14](images/01-backup-agent-download-linux-en.png){.thumbnail}
 >>
 >> Una vez que el archivo de instalación esté en su servidor, vaya al directorio que lo contiene y ejecute el archivo de la siguiente manera:
 >>

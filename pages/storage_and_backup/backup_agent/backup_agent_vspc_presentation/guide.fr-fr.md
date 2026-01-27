@@ -19,7 +19,7 @@ Ce guide vous explique comment vous connecter à la Veeam Service Provider Conso
 
 Accédez à l'URL de la VSPC : `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
 
-![Backup Agent Navigate VSPC](images/01-backup-agent-navigate-vspc.png){.thumbnail}
+![Backup Agent Navigate VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 ### Se connecter
 

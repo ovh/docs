@@ -14,7 +14,7 @@ This guide details the known restrictions and limitations of the Backup Agent pr
 
 - The backup policy is restricted, you cannot modify it.
 - You cannot configure a backup only on a list of files or folders.
-- You cannot modify the date and time of backup triggers (this is considered as an improvement in the future).
+- You cannot modify the date and time of backup triggers (this will be the subject of a future improvement).
 
 ### VSPC Access
 
@@ -27,7 +27,7 @@ This guide details the known restrictions and limitations of the Backup Agent pr
 
 ### OS Limitations
 
-- You can find the list of compatible OS for the Veeam Agent [here](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- You can find the list of compatible OS for the Veeam Agent [here](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Compatibility with other OVHcloud products
 

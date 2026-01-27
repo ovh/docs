@@ -34,15 +34,15 @@ Una volta completate tutte queste fasi, la tua prima copia di backup sarà esegu
 
 Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e vai nella sezione `Backup Agent`{.action}.
 
-![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
 
 Clicca sul tuo vspc-tenant, nella sezione `Servizi`{.action}.
 
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
 Vai nella sezione `Agents`{.action}.
 
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,11 +51,11 @@ Vai nella sezione `Agents`{.action}.
 
 Clicca sul pulsante `Scarica`{.action} in alto nella tabella che elenca i tuoi agenti.
 
-![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
 Seleziona il tuo sistema operativo e scegli di scaricare il file di installazione o di utilizzare uno dei comandi proposti per recuperarlo.
 
-![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
+![Backup Agent Step 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
 Per installare il tuo agente sul tuo server Bare Metal, clicca sul tab corrispondente al tuo sistema operativo:
 
@@ -89,7 +89,7 @@ Per installare il tuo agente sul tuo server Bare Metal, clicca sul tab corrispon
 > Linux
 >> Seleziona il tuo sistema operativo e scegli di scaricare il file di installazione o di utilizzare uno dei comandi proposti per recuperarlo.
 >>
->> ![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
+>> ![Backup Agent Step 14](images/01-backup-agent-download-linux-en.png){.thumbnail}
 >>
 >> Una volta che il file di installazione è sul tuo server, vai nella directory che lo contiene ed esegui il file come segue:
 >>

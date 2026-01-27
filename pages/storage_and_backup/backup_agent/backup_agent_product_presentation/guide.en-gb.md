@@ -41,7 +41,7 @@ There are several key advantages to this solution:
 
 It is also important to keep in mind that:
 
-- The backup policy is restricted, you cannot modify them.
+- The backup policy is restricted, you cannot modify it.
 - You cannot configure a backup only on a list of files or folders.
 - You cannot modify the date and time of backup triggers (this is considered as an improvement in the future).
 
@@ -76,13 +76,13 @@ Mapping of backup areas:
 | SGP                     | SYD            |
 | MUM                     | SGP            |
 | SYD                     | SGP            |
-| RBX                     | SBG            |
+| RBX                     | GRA            |
 | GRA                     | SBG            |
 | LIM                     | SBG            |
 | PAR                     | RBX            |
 | ERI                     | LIM            |
 | WAR                     | LIM            |
-| SBG                     | GRA            |
+| SBG                     | RBX            |
 | TOR                     | BHS            |
 
 ## Go further

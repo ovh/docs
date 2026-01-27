@@ -14,7 +14,7 @@ Este guia detalha as restrições e limitações conhecidas do produto Backup Ag
 
 - A política de cópia de segurança é restrita, não é possível modificá-la.
 - Não é possível configurar uma cópia de segurança apenas com uma lista de ficheiros ou pastas.
-- Não é possível modificar a data e hora de ativação das cópias de segurança (esta funcionalidade será melhorada em breve).
+- Não é possível modificar a data e hora de ativação das cópias de segurança (isto será objeto de uma melhoria futura).
 
 ### Acesso VSPC
 
@@ -27,7 +27,7 @@ Este guia detalha as restrições e limitações conhecidas do produto Backup Ag
 
 ### Limitações dos SO
 
-- Pode encontrar a lista de SO compatíveis para o Veeam Agent no [seguinte endereço](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- Pode encontrar a lista de SO compatíveis para o Veeam Agent no [seguinte endereço](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Compatibilidade com outros produtos OVHcloud
 

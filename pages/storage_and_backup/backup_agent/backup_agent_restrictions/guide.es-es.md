@@ -27,7 +27,7 @@ Este guía detalla las restricciones y limitaciones conocidas del producto Backu
 
 ### Limitaciones de los sistemas operativos
 
-- Puede encontrar la lista de sistemas operativos compatibles para el Veeam Agent en [esta dirección](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- Puede encontrar la lista de sistemas operativos compatibles para el Veeam Agent en [esta dirección](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Compatibilidad con otros productos de OVHcloud
 

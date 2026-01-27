@@ -34,15 +34,15 @@ Sobald alle diese Schritte abgeschlossen sind, wird Ihre erste Sicherung durchge
 
 Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und navigieren Sie zum Abschnitt `Backup Agent`{.action}.
 
-![Backup Agent Menü](images/01-backup-agent-step15.png){.thumbnail}
+![Backup Agent Menü](images/01-backup-agent-menu-en.png){.thumbnail}
 
 Klicken Sie auf Ihren vspc-tenant im Abschnitt `Dienste`{.action}.
 
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
 Gehen Sie zum Abschnitt `Agenten`{.action}.
 
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,11 +51,11 @@ Gehen Sie zum Abschnitt `Agenten`{.action}.
 
 Klicken Sie auf die Schaltfläche `Herunterladen`{.action} oben in der Tabelle, in der Ihre Agents aufgelistet sind.
 
-![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
 Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder eine der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
 
-![Backup Agent Schritt 13](images/01-backup-agent-step13.png){.thumbnail}
+![Backup Agent Schritt 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
 Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
 
@@ -89,7 +89,7 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den 
 > Linux
 >> Wählen Sie Ihr Betriebssystem aus und entscheiden Sie, ob Sie die Installationsdatei herunterladen oder einen der bereitgestellten Befehle verwenden möchten, um sie abzurufen.
 >>
->> ![Backup Agent Schritt 14](images/01-backup-agent-step14.png){.thumbnail}
+>> ![Backup Agent Schritt 14](images/01-backup-agent-download-linux-en.png){.thumbnail}
 >>
 >> Sobald die Installationsdatei auf Ihrem Server ist, navigieren Sie zum Ordner, in dem sie sich befindet, und führen Sie die Datei wie folgt aus:
 >>

@@ -34,15 +34,15 @@ Assim que todas estas etapas forem concluídas, a sua primeira cópia de seguran
 
 Inicie sessão no seu [área de cliente OVHcloud](/links/manager) e dirija-se à secção `Backup Agent`{.action}.
 
-![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
+![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
 
 Clique no seu vspc-tenant, na secção `Services`{.action}.
 
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
+![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
 Vá à secção `Agents`{.action}.
 
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
+![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,11 +51,11 @@ Vá à secção `Agents`{.action}.
 
 Clique no botão `Télécharger`{.action} no topo da tabela que lista os seus agentes.
 
-![Backup Agent Agents](images/01-backup-agent-agent.png){.thumbnail}
+![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
 Selecione o seu sistema operativo e escolha se deseja transferir o ficheiro de instalação ou utilizar uma das comandos propostos para o obter.
 
-![Backup Agent Step 13](images/01-backup-agent-step13.png){.thumbnail}
+![Backup Agent Step 13](images/01-backup-agent-download-windows-en.png){.thumbnail}
 
 Para instalar o seu agente no seu servidor Bare Metal, clique no separador correspondente ao seu sistema operativo:
 
@@ -89,7 +89,7 @@ Para instalar o seu agente no seu servidor Bare Metal, clique no separador corre
 > Linux
 >> Selecione o seu sistema operativo e escolha se deseja transferir o ficheiro de instalação ou utilizar uma das comandos propostos para o obter.
 >>
->> ![Backup Agent Step 14](images/01-backup-agent-step14.png){.thumbnail}
+>> ![Backup Agent Step 14](images/01-backup-agent-download-linux-en.png){.thumbnail}
 >>
 >> Uma vez o ficheiro de instalação no seu servidor, aceda à pasta que o contém e execute o ficheiro da seguinte forma:
 >>

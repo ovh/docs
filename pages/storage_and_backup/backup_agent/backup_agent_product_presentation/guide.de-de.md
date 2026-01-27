@@ -41,7 +41,7 @@ Es gibt mehrere entscheidende Vorteile dieser Lösung:
 
 Es ist auch wichtig zu beachten, dass:
 
-- Die Backup-Richtlinien eingeschränkt sind, Sie können sie nicht ändern.
+- Die Backup-Richtlinie eingeschränkt ist, Sie können sie nicht ändern.
 - Sie können keinen Backup nur auf eine Liste von Dateien oder Ordnern konfigurieren.
 - Sie können das Datum und die Uhrzeit der Backup-Auslöser nicht ändern (dies gilt als zukünftige Verbesserung).
 
@@ -76,13 +76,13 @@ Zuordnung der Backup-Regionen:
 | SGP                       | SYD             |
 | MUM                       | SGP             |
 | SYD                       | SGP             |
-| RBX                       | SBG             |
+| RBX                       | GRA             |
 | GRA                       | SBG             |
 | LIM                       | SBG             |
 | PAR                       | RBX             |
 | ERI                       | LIM             |
 | WAR                       | LIM             |
-| SBG                       | GRA             |
+| SBG                       | RBX             |
 | TOR                       | BHS             |
 
 ## Weitere Informationen

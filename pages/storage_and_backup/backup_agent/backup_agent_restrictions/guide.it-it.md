@@ -14,7 +14,7 @@ Questo manuale dettaglia le restrizioni e limitazioni note del prodotto Backup A
 
 - La politica di backup è limitata, non è possibile modificarla.
 - Non è possibile configurare un backup su una lista di file o cartelle.
-- Non è possibile modificare la data e l'ora di attivazione dei backup (questa funzionalità sarà migliorata in futuro).
+- Non è possibile modificare la data e l'ora di attivazione dei backup (questo sarà oggetto di un miglioramento futuro).
 
 ### Accesso VSPC
 
@@ -27,7 +27,7 @@ Questo manuale dettaglia le restrizioni e limitazioni note del prodotto Backup A
 
 ### Limitazioni del sistema operativo
 
-- È possibile trovare l'elenco dei sistemi operativi compatibili con Veeam Agent a [questo indirizzo](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=1).
+- È possibile trovare l'elenco dei sistemi operativi compatibili con Veeam Agent a [questo indirizzo](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
 
 ### Compatibilità con altri prodotti OVHcloud
 
