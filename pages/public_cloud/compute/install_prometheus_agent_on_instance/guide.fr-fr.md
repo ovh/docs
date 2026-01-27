@@ -20,7 +20,7 @@ Prometheus est un système de supervision et une base de données de séries tem
 ## Prérequis
 
 - [Avoir créé une instance depuis l’espace client OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [Disposer d’un accès administrateur](/pages/public_cloud/compute/public-cloud-first-steps).
+- [Disposer d’un accès administrateur à l'instance](/pages/public_cloud/compute/public-cloud-first-steps).
 - Un serveur Prometheus en fonctionnement et accessible depuis l’instance.
 
 ## En pratique
