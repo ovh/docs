@@ -1,5 +1,5 @@
 ---
-title: MySQL - Tutorial - Connect an OVHcloud Managed Kubernetes service to an OVHcloud Managed MySQL service
+title: Connect Managed Kubernetes to Public Cloud Databases for MySQL
 excerpt: "Find out how to connect OVHcloud Managed Kubernetes to an OVHcloud Managed MySQL database"
 updated: 2021-12-30
 ---
