@@ -18,10 +18,9 @@ Each service may offer different types of logs, known as "kinds" (e.g., access, 
 
 - Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-
 - A [Logs Data Platform](/links/manage-operate/ldp) account
 - [At least one Stream](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) created inside this account
-- At least one instance of a product compatible with OVHcloud Service Logs (see the [list below](#compatible-ovhcloud-products)).
+- At least one instance of a product compatible with Public Cloud logs (see the [list below](#compatible-ovhcloud-products)).
 
 ### Use cases
 
@@ -31,44 +30,32 @@ Public Cloud logs help you troubleshoot application and infrastructure issues by
 
 #### Security and data compliance
 
-OVHcloud Service Logs helps you to detect security threats early, comply with certifications and regulations, and efficiently archive your logs for years in a cost-effective way.
+Public Cloud logs help you detect security incidents, track administrative actions, and support compliance with certifications and regulatory requirements. By keeping a record of operations and access events, logs provide essential evidence for audits and security investigations.
 
-Combined with fine-grained access policies, you get precise control over who accesses specific data streams. Having this detailed level of control strengthens your security framework and improves your data management strategies.
+Depending on the service and the log destination you choose, access to logs can be restricted using fine-grained permissions. This allows you to control who can view or manage specific logs, strengthening your security posture and improving overall data governance.
 
 #### Infrastructure monitoring
 
-With OVHcloud Service Logs, you can closely monitor the overall health and performance of your infrastructure. You can set up alerts to automatically notify you when any anomalies are detected in your logs, allowing you to take proactive or even automatic measures to address them before they impact your users.
+Public Cloud logs provide valuable insights into the health and behavior of your infrastructure. By analyzing service and system logs, you can detect abnormal patterns, errors, or performance issues and react before they impact your workloads or users.
 
-Get the most out of the Graylog UI and OpenSearch Dashboards by building easy-to-understand dashboards that can be shared across your teams.
+Depending on the tools and destinations you use to consume your logs, you can build monitoring workflows such as alerts or visualizations to better understand the activity of your Public Cloud services and share this information across your teams.
 
-## Compatible OVHcloud products
+## Compatible Public Cloud services
 
-Here is the list of compatible products with OVHcloud Service Logs so far.
-Our ambition is to make all OVHcloud products compatible with OVHcloud Service Logs. We will endeavor to update this table as new availability evolves.
+The following table lists the Public Cloud services that currently provide logs and explains where to find the corresponding guides to enable or retrieve them.
+Availability and capabilities may vary depending on the service. This list will be updated as new services become compatible.
 
 | Product name | Availability | Guide link |
 | :----------- | :----------- | :--------- |
-| Security & Identity - OVHcloud Account - Activity | OVHcloud Control Panel & API | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
-| Security & Identity - OVHcloud Account - Audit | OVHcloud Control Panel & API | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
-| Security & Identity - OVHcloud Account - IAM | OVHcloud Control Panel & API | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
-| Security & Identity - Key Management Service | OVHcloud Control Panel & API | [Pushing logs from OVHcloud KMS to Logs Data Platform](/pages/manage_and_operate/kms/kms-troubleshooting) |
 | Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
 | Public Cloud - Load Balancer | OVHcloud Control Panel & API | [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers) |
 | Public Cloud - Managed Databases | OVHcloud Control Panel & API | [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) |
-| Hosted Private Cloud - Managed VMware vSphere | OVHcloud Control Panel & API | [Hosted Private Cloud - Collect VMware on OVHcloud logs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp) |
-| Hosting & Collaboration - Web Cloud Databases | OVHcloud Control Panel & API | [Web Cloud Databases - How to manage logs](/pages/web_cloud/web_cloud_databases/retrieve-logs) |
-| Hosting & Collaboration - Microsoft Private Exchange | OVHcloud Control Panel & API | [Exchange - How to manage logs](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_manage_logs) |
-| Hosting & Collaboration - Microsoft Trusted Exchange | OVHcloud Control Panel & API | [Exchange - How to manage logs](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_manage_logs) |
-| Infrastructure solutions - OVHcloud Connect | OVHcloud Control Panel & API | [OVHcloud Connect Logs Forwarding](/pages/network/ovhcloud_connect/occ-logs-2-customers) |
-| Infrastructure solutions - OVHcloud Load Balancer | OVHcloud Control Panel & API | [OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/network/load_balancer/use_api_logs_2_customers) |
-| Telecom - Internet Access | API only | - |
-| Telecom - OverTheBox | API only | - |
 
 ## Instructions
 
 ### On the product side
 
-On every product compatible with OVHcloud Service Logs you will find a `Logs`{.action} tab in the OVHcloud Control Panel. Once you click this tab, you will see the two main components of OVHcloud Service Logs: a **live-tail** panel and a **subscription** panel.
+On Public Cloud services that provide logging capabilities, you can access logs from the OVHcloud Control Panel through a dedicated `Logs`{.action} tab. This section allows you to view available logs and configure how they are collected or forwarded. Once you click this tab, you will see the two main components of Public Cloud logs: a **live-tail** panel and a **subscription** panel.
 
 ![live-tail](images/logs_tab.png){.thumbnail}
 
@@ -102,7 +89,7 @@ You can choose to create multiple subscriptions for a given service, to have its
 
 #### Logs kinds
 
-A given OVHcloud product can offer different types of logs you can subscribe to. These different types of logs are named "`kinds`". When a product has more than one log kind, the live-tail & subscriptions panels become contextualized to the selected kind:
+A given Public Cloud can offer different types of logs you can subscribe to. These different types of logs are named "`kinds`". When a product has more than one log kind, the live-tail & subscriptions panels become contextualized to the selected kind:
 
 ![manager-with-kind](images/multiple_kind.png){.thumbnail}
 
@@ -124,7 +111,7 @@ All the possible ways to consume your logs are summarized in the [Introduction t
 
 > [!primary]
 >
-> In the case of OVHcloud Service Logs, all the "Log Generation" and "Log Ingestion" are managed by OVHcloud. You only have to care about the "Storage" and "Query and visualization" parts.
+> In the case of Public Cloud logs, all the "Log Generation" and "Log Ingestion" are managed by OVHcloud. You only have to care about the "Storage" and "Query and visualization" parts.
 
 You can also manage your logs subscription from a data stream point of view. To do so, go to the Logs Data Platform section of the [OVHcloud Control Panel](/links/manager), select a service and click on the `Data stream`{.action} tab. In the table listing your streams you can see a `Subscriptions` column displaying how many logs subscriptions target a given stream.
 
@@ -138,7 +125,7 @@ You can also delete a logs subscription from this view by clicking the correspon
 
 ### Working with the API
 
-To ease your integration jobs with OVHcloud Service Logs, we made the related API endpoints consistent across all OVHcloud products. This means all compatible products expose the **same** set of API endpoints, with the **same** suffixes, the **same** payloads and the **same** responses. The available endpoints are the following:
+To ease your integration jobs with Public Cloud logs, we made the related API endpoints consistent across all Public Cloud. This means all compatible products expose the **same** set of API endpoints, with the **same** suffixes, the **same** payloads and the **same** responses. The available endpoints are the following:
 
 | **Method** | **Path**                                               | **Description**                                                   |
 | :--------: | :----------------------------------------------------- | :---------------------------------------------------------------- |
@@ -150,11 +137,11 @@ To ease your integration jobs with OVHcloud Service Logs, we made the related AP
 | `DELETE`   | `/xxx/{serviceName}/log/subscription/{subscriptionId}` | Delete a log subscription                                         |
 | `POST`     | `/xxx/{serviceName}/log/url`                           | Generate a temporary URL to retrieve logs (used by the live-tail) |
 
-#### OVHcloud Service Logs and the IAM cross-identity service delegation
+#### Public Cloud logs and the IAM cross-identity service delegation
 
 You can face use cases where the product you want logs from and the Logs Data Platform service are not owned by the same OVHcloud account. Example:
 
-- Alice is the  owner of a Managed Kubernetes Service instance.
+- Alice is the owner of a Managed Kubernetes Service instance.
 - Bob is the owner of a Logs Data Platform instance.
 - Alice wants her Managed Kubernetes Services logs to be available in Bob's Logs Data Platform data stream.
 
@@ -167,11 +154,11 @@ You can find more information about IAM policies in the [How to use IAM policies
 
 ### Interesting strategies
 
-As explained earlier, the model of OVHcloud Service Logs gives you a lot of flexibility regarding how you want to gather/isolate/consume your logs. In this section we will see some common patterns. These are just examples, they aren't an exhaustive list of all the OVHcloud Service Logs configuration possibilities.
+As explained earlier, the model of Public Cloud logs gives you a lot of flexibility regarding how you want to gather/isolate/consume your logs. In this section we will see some common patterns. These are just examples, they aren't an exhaustive list of all the Public Cloud logs configuration possibilities.
 
 #### Many products to One data stream, per environment
 
-In this example let say you have a tech stack composed of many OVHcloud products. This stack is deployed on multiple environments (development, production). One interesting strategy could be to send each environment's logs to a different data stream, and configure these 2 data streams in a different way:
+In this example let say you have a tech stack composed of many Public Cloud. This stack is deployed on multiple environments (development, production). One interesting strategy could be to send each environment's logs to a different data stream, and configure these 2 data streams in a different way:
 
 ![many-to-one-per-env](images/many_to_one_per_env.png){.thumbnail}
 
@@ -187,7 +174,7 @@ This means that:
 
 ### Many products to Many data streams
 
-Lets take the same example again, where you have a tech stack made of several OVHcloud products. But in this case you have multiple teams, each one working on a different component. For security reasons you want the team `A` to access the Load Balancer logs but not the Managed Databases logs.
+Lets take the same example again, where you have a tech stack made of several Public Cloud. But in this case you have multiple teams, each one working on a different component. For security reasons you want the team `A` to access the Load Balancer logs but not the Managed Databases logs.
 Also you have a Security team that needs to access all the audit logs of each component. We can imagine a setup such as the following one:
 
 ![many-to-many](images/many_to_many.png){.thumbnail}
