@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-09-30
+updated: 2026-01-27
 ---
 
 <style>
@@ -71,7 +71,7 @@ user@host:~$ aws --version
 
 #### Où trouver l'endpoint d'un bucket ?
 
-Cliquez sur le nom de votre bucket, pour en afficher les détails rendez vous sur l'onglet `informations générales` :
+Cliquez sur le nom de votre bucket et retrouvez ses détails dans l'onglet `Informations générales`{.action} :
 
 ![détails du bucket](images/object_storage_information_panel.png){.thumbnail}
 
@@ -206,9 +206,9 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> ![Créer votre bucket partie 1](images/object-storage-bucket-creation-1.png){.thumbnail}
 >>
->> vous pouvez inscrire le nom de votre bucket ( optionel ) puis **sélectionnez votre offre**.
+>> Vous pouvez saisir le nom de votre bucket (optionnel), puis **sélectionner votre offre**.
 >>
->> **Ensuite sélectionnez un mode de déploiement.**
+>> **Sélectionnez un mode de déploiement.**
 >>
 >> > [!primary]
 >> >
@@ -239,7 +239,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> > [!primary]
 >> >
->> > **Note :** cette option doit impérativement être activée à la création d'un bucket et ne peut pas être activé ultérieurement
+>> > **Note :** cette option doit impérativement être activée à la création d'un bucket, elle ne peut pas être activée ultérieurement.
 >> >
 >>
 >> Vous devez associer un utilisateur au bucket.
@@ -297,9 +297,9 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> ///
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur le `nom de votre conteneur`{.action} puis cliquez sur `Ajouter des objets`{.action} dans l'onglet **Objets**.
+>> Cliquez sur le `nom de votre conteneur`{.action}, puis cliquez sur le bouton `Ajouter des objets`{.action} dans l'onglet **Objets**.
 >>
->> Une fenêtre apparait, vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
+>> Une fenêtre apparaît, vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez le fichier que vous souhaitez téléverser et cliquez sur le bouton `Importer`{.action}.
 >>
 
 #### Téléchargement d'un objet à partir d'un bucket
@@ -450,7 +450,9 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> **Suppression d'objets**
 >>
->> Accédez au bucket, cliquez sur l’icône de suppression (poubelle) de l’objet, puis confirmez avec `Supprimer`{.action}.
+>> Accédez au bucket et ouvrez l'onglet `Objets`{.action}.
+>>
+>> Cliquez sur l’icône de suppression (poubelle) sur la ligne de l’objet, saisissez `PERMANENTLY DELETE` pour confirmer la suppression définitive, puis cliquez sur `Supprimer`{.action}.
 >>
 
 #### Gérer les tags

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-09-30
+updated: 2026-01-27
 ---
 
 <style>
@@ -71,7 +71,7 @@ user@host:~$ aws --version
 
 #### Where to find the Endpoint URL of a bucket?
 
-Click on the name of your bucket to view its details. Go to the `General Information` tab:
+Click on the name of your bucket and view its details in the `General information`{.action} tab:
 
 ![Bucket details](images/object_storage_information_panel.png){.thumbnail}
 
@@ -208,7 +208,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> You can enter the name of your bucket (optional) and then **select your offer**.
 >>
->> **Next, select a deployment mode.**
+>> **Select a deployment mode.**
 >>
 >> > [!primary]
 >> >
@@ -239,7 +239,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> > [!primary]
 >> >
->> > **Note:** this option must be enabled when creating a bucket and cannot be enabled later.
+>> > **Note:** this option must be enabled when creating a bucket, it cannot be enabled later.
 >> >
 >>
 >> You must link a user to the bucket.
@@ -303,9 +303,9 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> ```
 >>
 > Via the OVHcloud Control Panel
->> Click on the `name of your container`{.action} then click on `Add objects`{.action} in the **Objects** tab.
+>> Click on the `name of your container`{.action}, then click the `Add objects`{.action} button in the **Objects** tab.
 >>
->> A window will appear where you can add a prefix to your object's name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to upload and click on the `Import`{.action} button.
+>> A window will appear where you can add a prefix to your object's name (the object name is the same as the file name). Select the file you are about to upload and click the `Import`{.action} button.
 >>
 
 #### Downloading an object from a bucket
@@ -454,7 +454,9 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> **Deleting objects**
 >>
->> Go to the bucket, click the delete icon (trash can) for the object, then confirm with `Delete`{.action}.
+>> Go to the bucket and open the `Objects`{.action} tab.
+>>
+>> Click the delete icon (trash can) on the object line, type `PERMANENTLY DELETE`to confirm permanent deletion, then click `Delete`{.action}.
 >>
 
 #### Manage tags

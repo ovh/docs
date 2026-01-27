@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-09-30
+updated: 2026-01-27
 ---
 
 <style>
@@ -71,7 +71,7 @@ user@host:~$ aws --version
 
 #### Où trouver l'endpoint d'un bucket ?
 
-Cliquez sur le nom de votre bucket pour en afficher les détails et le contenu :
+Cliquez sur le nom de votre bucket et retrouvez ses détails dans l'onglet `Informations générales`{.action} :
 
 ![détails du bucket](images/object_storage_information_panel.png){.thumbnail}
 
@@ -178,7 +178,6 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 > Via l'espace client OVHcloud
 >> Cliquez sur `Object Storage`{.action} dans la barre de navigation, puis sur l'onglet `Mes conteneurs`{.action}.
 >>
->> ![My Dashboard containers](images/object_storage_list.png){.thumbnail}
 
 #### Créer un bucket
 
@@ -203,44 +202,47 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> ///
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur `Créer un conteneur d'objets`{.action} et sélectionnez votre offre :
+>> Cliquez sur `Créer un conteneur d'objets`{.action}.
 >>
->> ![Sélectionner votre offre](images/object-storage-bucket-creation-step1.png){.thumbnail}
+>> ![Créer votre bucket partie 1](images/object-storage-bucket-creation-1.png){.thumbnail}
 >>
->> Sélectionnez un mode de déploiement :
+>> Vous pouvez saisir le nom de votre bucket (optionnel), puis **sélectionner votre offre**.
+>>
+>> **Sélectionnez un mode de déploiement.**
 >>
 >> > [!primary]
 >> >
 >> > OVHcloud propose plusieurs modes de déploiement pour répondre à différents besoins en termes de résilience, de disponibilité et de performance. Chaque mode est optimisé pour des cas d'utilisation spécifiques et offre différents niveaux de redondance et de tolérance aux pannes.
 >> >
 >>
->> ![Sélectionner un mode de déploiement](images/object-storage-bucket-creation-step2.png){.thumbnail}
->>
->> Sélectionnez une région :
+>> **Sélectionnez une région.**
 >>
 >> > [!primary]
 >> >
 >> > Les régions peuvent varier en fonction du mode de déploiement choisi.
 >> >
 >>
->> ![Sélectionner une région](images/object-storage-bucket-creation-step3.png){.thumbnail}
+>> Vous pouvez ensuite définir les paramètres de configuration de votre bucket.
+>>
+>> ![Créer votre bucket partie 2](images/object-storage-bucket-creation-2.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
->> > Si vous avez choisi le mode de déploiement 3AZ, une étape supplémentaire apparaît pour configurer la réplication offsite.
->> >
->> > ![enabling offsite replication](images/object-storage-creation-step-offsite-replication.png){.thumbnail}
+>> > Si vous avez choisi le mode de déploiement 3AZ, une option supplémentaire apparaît pour **configurer la réplication offsite.**
 >> >
 >>
 >> À ce stade, vous pouvez décider d'activer ou non la **gestion des versions**.
 >>
 >> La gestion des versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité permet de **préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets**, ce qui facilite la récupération en cas d'actions involontaires de l'utilisateur ou de défaillances de l'application. Par défaut, la gestion des versions est désactivée sur les buckets, et vous devez l'activer explicitement. Vous trouverez plus d'informations sur la gestion des versions dans notre [guide dédié](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
->> ![Enabling versioning](images/object-storage-bucket-creation-step4.png){.thumbnail}
+>> Vous pouvez également activer l’[Object Lock](/pages/storage_and_backup/object_storage/s3_managing_object_lock) pour stocker vos objets en mode WORM (Write Once, Read Many) et garantir leur immutabilité pendant une période de rétention définie.
 >>
->> Vous devez associer un utilisateur au bucket :
+>> > [!primary]
+>> >
+>> > **Note :** cette option doit impérativement être activée à la création d'un bucket, elle ne peut pas être activée ultérieurement.
+>> >
 >>
->> ![Link to user](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>> Vous devez associer un utilisateur au bucket.
 >>
 >> Pour cela, vous pouvez :
 >>
@@ -249,20 +251,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> Vous pouvez alors décider si vous souhaitez **chiffrer vos données** en utilisant [SSE-OMK (chiffrement côté serveur avec OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 >>
->> ![chiffrer les données](images/object-storage-bucket-creation-step6.png){.thumbnail}
->>
->> Enfin, donnez un nom à votre bucket :
->>
->> > [!primary]
->> >
->> > Les noms des buckets sont globaux. Il n'est pas possible de donner le même nom à deux buckets différents dans toutes les régions d'OVHcloud.
->> >
->>
->> ![Nom du container](images/object-storage-bucket-creation-step7.png){.thumbnail}
->>
->> Félicitations, votre bucket est créé :
->>
->> ![Result](images/object_storage_list.png){.thumbnail}
+>> Une fois la configuration de votre bucket terminée, cliquez sur `Créer`{.action}.
 >>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
@@ -308,17 +297,10 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> ///
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur le `nom de votre conteneur`{.action} :
+>> Cliquez sur le `nom de votre conteneur`{.action}, puis cliquez sur le bouton `Ajouter des objets`{.action} dans l'onglet **Objets**.
 >>
->> ![Conteneur](images/object_storage_list_selection.png){.thumbnail}
+>> Une fenêtre apparaît, vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez le fichier que vous souhaitez téléverser et cliquez sur le bouton `Importer`{.action}.
 >>
->> Cliquez sur `Ajouter des objets`{.action} :
->>
->> ![Ajout de fichiers](images/object_storage_add_object.png){.thumbnail}
->>
->> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
->>
->> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Téléchargement d'un objet à partir d'un bucket
 
@@ -364,9 +346,8 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> ///
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur le bouton `...`{.action} sur la ligne d'objet, puis sur `Télécharger`{.action}.
+>> Cliquez sur l’icône de téléchargement (flèche vers le bas dans un socle bleu) sur la ligne de l’objet.
 >>
->> ![Télécharger un fichier depuis un bucket](images/object_storage_items_download.png){.thumbnail}
 
 #### Synchronisation des buckets
 
@@ -465,17 +446,13 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
 >>
->> ![Delete bucket](images/object_storage_list_delete.png){.thumbnail}
->>
 >> Cliquez sur `Confirmer`{.action}.
 >>
 >> **Suppression d'objets**
 >>
->> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
+>> Accédez au bucket et ouvrez l'onglet `Objets`{.action}.
 >>
->> ![Delete file](images/object_storage_items_delete.png){.thumbnail}
->>
->> Cliquez sur `Confirmer`{.action}.
+>> Cliquez sur l’icône de suppression (poubelle) sur la ligne de l’objet, saisissez `PERMANENTLY DELETE` pour confirmer la suppression définitive, puis cliquez sur `Supprimer`{.action}.
 >>
 
 #### Gérer les tags
