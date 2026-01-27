@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases Concepts - Security overview
+title: Security Overview for Public Cloud Databases
 excerpt: Public Cloud Databases security overview
 updated: 2025-07-31
 ---

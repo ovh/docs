@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutoriel - Installer Wagtail et le connecter au service OVHcloud Managed PostgreSQL (EN)
+title: Installer et connecter Wagtail à Public Cloud Databases pour PostgreSQL (EN)
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
 updated: 2022-02-11
 ---
