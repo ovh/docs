@@ -477,7 +477,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 Next, we run the `cat /proc/mdstat` command:
 
 ```sh
-root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
 md3 : active raid1 nvme0n1p3[0](F) nvme1n1p3[1]
       497875968 blocks super 1.2 [2/1] [_U]
@@ -834,7 +834,7 @@ If the primary disk is replaced while it contains EFI system partitions that hav
 
 In this case, along with rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
 
-Once the ESP has been created (as explained above) and the system recognises both partitions, still in the `choot` environment, create the /boot/efi folder to mount the new EFI system partition **nvme0n1p1**:
+Once the ESP has been created (as explained above) and the system recognises both partitions, still in the `choot` environment, create the `/boot/efi` folder to mount the new EFI system partition **nvme0n1p1**:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
