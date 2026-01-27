@@ -1,6 +1,6 @@
 ---
 title: "Installer l’agent Prometheus sur une instance Public Cloud"
-excerpt: "Découvrez comment installer l'agent Prometheus Node Exporter ou Windows Exporter sur une instance Public Cloud OVHcloud pour collecter des métriques"
+excerpt: "Découvrez comment installer Prometheus Node Exporter ou Windows Exporter sur une instance Public Cloud OVHcloud pour collecter des métriques"
 updated: 2026-01-26
 ---
 
@@ -8,7 +8,7 @@ updated: 2026-01-26
 
 Prometheus est un système de supervision et une base de données de séries temporelles. Vous pouvez installer et utiliser son agent sur des instances Public Cloud OVHcloud pour collecter des métriques depuis vos serveurs et applications.
 
-**Découvrez comment installer l'agent Prometheus Node Exporter ou Windows Exporter sur une instance Public Cloud OVHcloud.**
+**Découvrez comment installer Prometheus Node Exporter ou Windows Exporter sur une instance Public Cloud OVHcloud.**
 
 > [!warning]
 > 
@@ -200,7 +200,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 >>
 > Pour Windows
 >>
->> Ouvrez le port 9182 dans le firewall Windows :
+>> Ouvrez le port 9182 dans le pare-feu Windows :
 >>
 >> ```powershell
 >> netsh advfirewall firewall add rule name="Windows Exporter" dir=in action=allow protocol=TCP localport=9182
