@@ -20,7 +20,7 @@ Prometheus est un système de supervision et une base de données de séries tem
 ## Prérequis
 
 - [Avoir créé une instance depuis l’espace client OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [Disposer d’un accès administrateur](/pages/public_cloud/compute/public-cloud-first-Étapes#connect-instance).
+- [Disposer d’un accès administrateur](/pages/public_cloud/compute/public-cloud-first-steps).
 - Un serveur Prometheus en fonctionnement et accessible depuis l’instance.
 
 ## En pratique
@@ -172,9 +172,9 @@ curl http://<INSTANCE_IP>:<PORT>/metrics
 > Sur Windows Desktop, vous pouvez également ouvrir un navigateur pour vérifier. Cependant, via SSH / PowerShell, utilisez `curl` ou `Invoke-WebRequest`.
 >
 
-### Étape 7 : Règles Firewall / Sécurité (OVHcloud)
+### Étape 7 : Règles de pare-feu / sécurité (OVHcloud)
 
-Assurez-vous que le port utilisé par l’exporter est ouvert à la fois dans le firewall de la VM et dans votre Security Group OVHcloud.
+Assurez-vous que le port utilisé par l’exporter est ouvert à la fois dans le pare-feu de la VM et dans votre Security Group OVHcloud.
 
 Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 
@@ -186,7 +186,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 >> sudo ufw status
 >> ```
 >>
->> **Note** : si UFW indique **Status: inactive**, cela signifie que le firewall n’est pas activé sur la VM. La règle de port est ajoutée mais non appliquée.
+>> **Note** : si UFW indique **Status: inactive**, cela signifie que le pare-feu n’est pas activé sur la VM. La règle de port est ajoutée mais pas appliquée.
 >>
 >> La sécurité est principalement gérée par votre Security Group OVHcloud.
 >>
@@ -221,7 +221,7 @@ Limitez l’accès uniquement au serveur Prometheus pour plus de sécurité.
 scrape_configs:
   - job_name: 'node_exporter' # ou 'windows_exporter'
     static_configs:
-      - targets: ['<INSTANCE_IP>:9100'] # ou 9182 pour windows exporter
+      - targets: ['<INSTANCE_IP>:9100'] # ou 9182 pour Windows Exporter
 ```
 
 2\. Rechargez Prometheus :

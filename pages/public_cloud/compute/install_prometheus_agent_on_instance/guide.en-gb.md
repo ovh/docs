@@ -1,6 +1,6 @@
 ---
 title: 'Installing Prometheus Agent on a Public Cloud instance'
-excerpt: 'Find out how to install install the Prometheus Node Exporter or Windows Exporter agent on an OVHcloud Public Cloud instance to gather metrics'
+excerpt: 'Find out how to install the Prometheus Node Exporter or Windows Exporter agent on an OVHcloud Public Cloud instance to gather metrics'
 updated: 2026-01-26
 ---
 
@@ -20,7 +20,7 @@ Prometheus is a monitoring system and time series database. You can install and 
 ## Requirements
 
 - [An instance created via the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+- [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps).
 - A Prometheus server running and reachable from the instance.
 
 ## Instructions
@@ -79,7 +79,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >>
 >> - This creates a user with limited permissions to run Node Exporter.
 >> - Recommended for production to reduce security risks.
->> - You can then start Node Exporter under this user via systemd
+>> - You can then start Node Exporter under this user via systemd.
 >>
 > For Windows
 >>
@@ -114,7 +114,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >>
 >> > [!primary]
 >> >
->> > `Invoke-WebRequest` require PowerShell 3.0 or later.
+>> > `Invoke-WebRequest` requires PowerShell 3.0 or later.
 >> >
 >>
 >> ```powershell
@@ -145,7 +145,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >> msiexec /i windows_exporter.msi ENABLED_COLLECTORS=cpu,cs,logical_disk,net,os,service,system,textfile /qn
 >> ```
 >>
->> - On Desktop or Core, you can run it directly in PowerShell or configure as a Windows service.
+>> - On Desktop or Core, you can run it directly in PowerShell or configure it as a Windows service.
 >>
 >> It is possible to customize collectors; see the [official documentation](https://github.com/prometheus-community/windows_exporter#collectors) for the full list.
 >>
@@ -156,7 +156,7 @@ Creating a dedicated user for Node Exporter improves security on Linux, but is o
 >
 > Node Exporter listens on port 9100 by default.
 >
-> Windows Exporter listens on port 9182 by default
+> Windows Exporter listens on port 9182 by default.
 >
 > Replace <PORT> with 9100 for Linux or 9182 for Windows.
 >
@@ -221,7 +221,7 @@ Restrict access to only your Prometheus server for security.
 scrape_configs:
   - job_name: 'node_exporter' # or 'windows_exporter'
     static_configs:
-      - targets: ['<INSTANCE_IP>:9100'] # or 9182 for windows exporter
+      - targets: ['<INSTANCE_IP>:9100'] # or 9182 for Windows Exporter
 ```
 
 2\. Reload Prometheus:
