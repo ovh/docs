@@ -1184,7 +1184,7 @@
                 + [Maintenance operations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_15_maintenances)
                 + [Configure the private network for Public Cloud Databases](public_cloud/public_cloud_databases/databases_08_vrack)
                 + [Configure the advanced parameters for Public Cloud Databases](public_cloud/public_cloud_databases/databases_03_advanced_configuration)
-                + [MySQL - Advanced parameters references](public_cloud/public_cloud_databases/mysql_08_advanced_parameters_references)
+                + [Advanced parameters for Public Cloud Databases for MySQL](public_cloud/public_cloud_databases/mysql_08_advanced_parameters_references)
                 + [Restore a backup of Public Cloud Databases](public_cloud/public_cloud_databases/databases_06_restore_backup)
                 + [Resize the storage of Public Cloud Databases](public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage)
                 + [Update the flavor of Public Cloud Databases](public_cloud/public_cloud_databases/databases_13_update_your_cluster_flavor)
