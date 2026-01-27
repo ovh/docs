@@ -19,7 +19,7 @@ Este tutorial le explica cómo conectarse a la Veeam Service Provider Console (V
 
 Acceda a la URL de la VSPC: `https://vspc.prod01.eu-west-rbx.backup.ovhcloud.com`
 
-![Backup Agent Navigate VSPC](images/01-backup-agent-navigate-vspc.png){.thumbnail}
+![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
 ### Conexión
 
