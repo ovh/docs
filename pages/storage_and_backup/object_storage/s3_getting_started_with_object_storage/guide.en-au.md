@@ -450,7 +450,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> In the list of Object Storage containers, click the `...`{.action} button on the container line, then click `Delete`{.action}.
 >>
->> Click `Confirm`{.action}.
+>> Enter `TERMINATE` to confirm your choice and click `Confirm`{.action}.
 >>
 >> **Deleting objects**
 >>

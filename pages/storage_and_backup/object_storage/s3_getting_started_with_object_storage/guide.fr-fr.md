@@ -446,7 +446,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
 >>
->> Cliquez sur `Confirmer`{.action}.
+>> Saisissez `TERMINATE` pour confirmer votre choix et cliquez sur `Confirmer`{.action}.
 >>
 >> **Suppression d'objets**
 >>
