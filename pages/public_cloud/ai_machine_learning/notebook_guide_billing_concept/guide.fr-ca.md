@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Facturation et cycle de vie (EN)
 excerpt: Découvrez comment sont facturés les AI Notebooks
-updated: 2025-11-17
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -13,6 +13,9 @@ updated: 2025-11-17
 AI Notebooks are linked to a Public Cloud project. The whole project is billed at the end of the month, with **pay-as-you-go**. It means you will only pay for what you consume, based on the compute resources you use (CPUs and GPUs), their running time and data.
 
 ## AI Notebooks lifecycle
+
+> [!warning]
+> By default, your AI Notebook will automatically shut down after **7 consecutive running days**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend this period to **28 days**.
 
 During its lifetime, the notebook will go through the following statuses:
 

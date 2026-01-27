@@ -1,6 +1,6 @@
 ---
 title: FAQ - AI Tools
-updated: 2026-01-23
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -98,6 +98,9 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > > For more information about the failure of an AI task, you should consult the `Info Url` of your task, or its logs, in the case of a job or an app: `ovhai <task> logs <task-id>` which is very useful to see your prints and error messages.
 > >
+> Why did my notebook or job stop after 7 consecutive running days?
+> > To keep the platform secure and up‑to‑date, hosts are periodically restarted. Any AI Notebook and AI Training job that runs continuously for more than 7 days is automatically stopped. If you need a longer runtime, you can contact [our support](https://help.ovhcloud.com/csm?id=csm_get_help) to extend the limit up to **28 days**.
+>
 > My job or my app is blocked in `QUEUED` or `PENDING` state, what does it mean?
 > > Your AI Task might be in this state for 2 main reasons:
 > >
