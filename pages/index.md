@@ -1117,7 +1117,7 @@
                 + [Lifecycle policy for Public Cloud Databases](public_cloud/public_cloud_databases/information_02_lifecycle_policy)
                 + [FAQ for Public Cloud Databases](public_cloud/public_cloud_databases/information_04_faq)
                 + [Capabilities and Limitations of Public Cloud Databases](public_cloud/public_cloud_databases/information_05_capabilities)
-                + [PostgreSQL - Capabilities and Limitations](public_cloud/public_cloud_databases/postgresql_01_capabilities)
+                + [Capabilities and Limitations of Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_01_capabilities)
                 + [Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ](public_cloud/public_cloud_databases/databases_18_regions_comparison)
                 + [Automated Backups for Public Cloud Databases](public_cloud/public_cloud_databases/databases_05_automated_backups)
                 + [High availability and failure scenarios for Public Cloud Databases for PostgreSQL](public_cloud/public_cloud_databases/postgresql_09_concept_high_availability)
