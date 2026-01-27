@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products ISO27k certifications"
-updated: 2024-02-20
+updated: 2026-01-27
 ---
 
 ## Objective
