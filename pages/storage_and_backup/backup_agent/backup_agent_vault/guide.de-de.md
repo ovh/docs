@@ -18,7 +18,7 @@ Diese Anleitung erklärt, wie das Vault-System im Backup Agent-Produkt funktioni
 
 Ein Vault ist Ihr Speicherort, an den Ihre Backup-Daten bei jedem Backup gesendet werden. Vaults werden automatisch von OVHcloud erstellt, um sicherzustellen, dass Ihre Daten nicht im gleichen Rechenzentrum wie Ihr Bare Metal Server gehostet werden.
 
-Dies basiert auf unseren Object Storage-Buckets, die Sie [hier](/links/public-cloud/object-Storage) finden können.
+Dies basiert auf unseren Object Storage-Buckets, die Sie [hier](/links/public-cloud/object-storage) finden können.
 
 Um Ihre Vaults zu finden, melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, gehen Sie zu `Bare Metal Cloud`{.action} und dann zu `Backup Agent`{.action}. Klicken Sie auf den Tab `Vaults`{.action}.
 
