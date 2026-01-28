@@ -1,5 +1,5 @@
 ---
-title: ClickHouse - Getting started
+title: Getting started with Public Cloud Analytics with ClickHouse
 excerpt: Discover ClickHouse on OVHcloud Public Cloud
 updated: 2026-01-10
 ---
@@ -10,7 +10,7 @@ ClickHouse on OVHcloud is a fully managed, high-performance analytical column-st
 
 ### Product page
 
-Discover how OVHcloud’s Managed ClickHouse® service enables you to deploy and operate fully managed, high-performance analytical clusters in the Public Cloud, complete with distributed storage, column-oriented processing, real-time ingestion, advanced compression, and effortless scalability. Benefit from built-in high availability, seamless integration with OVHcloud networking options, Terraform support for automated provisioning, and competitive pay-as-you-go pricing on the [ClickHouse product page](/links/public-cloud/analytics-clickhouse).
+Discover how OVHcloud’s Managed ClickHouse service enables you to deploy and operate fully managed, high-performance analytical clusters in the Public Cloud, complete with distributed storage, column-oriented processing, real-time ingestion, advanced compression, and effortless scalability. Benefit from built-in high availability, seamless integration with OVHcloud networking options, Terraform support for automated provisioning, and competitive pay-as-you-go pricing on the [ClickHouse product page](/links/public-cloud/analytics-clickhouse).
 
 ### Pricing
 
