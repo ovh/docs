@@ -1231,7 +1231,7 @@
                 + [Connect using PHP for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_04_connect_php)
                 + [Connect using Python for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_05_connect_python)
                 + [Connect using Compass for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_07_connect_compass)
-                + [MongoDB - Developer Tools](public_cloud/public_cloud_databases/mongodb_27_developer_tools)
+                + [Developer Tools for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_27_developer_tools)
                 + [MongoDB - Monitoring a MongoDB cluster](public_cloud/public_cloud_databases/mongodb_15_monitoring)
             + [Configuration](public-cloud-databases-mongodb-configuration)
                 + [Maintenance operations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_15_maintenances)
