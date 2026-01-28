@@ -1,5 +1,5 @@
 ---
-title: Valkey - Capabilities and Limitations
+title: Capabilities and Limitations of Public Cloud Databases for Valkey
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
 updated: 2026-01-26
 ---
