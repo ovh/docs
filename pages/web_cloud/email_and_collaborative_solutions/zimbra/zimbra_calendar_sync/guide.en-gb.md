@@ -47,7 +47,7 @@ CalDAV calendar configuration is similar to email account configuration and requ
 
 To generate an ICS file link, follow the steps below:
 
-- Log in to your Zimbra email address via the [webmail](/links/web/mail).
+- Log in to your Zimbra email address via the [webmail](/links/web/email).
 - Go to the `Calendar`{.action} tab.
 - Right-click on the relevant calendar and click on `Share...`{.action}.
 - Click on the `Make public`{.action} tab.
@@ -67,7 +67,7 @@ Unlike ICS file sharing, sharing by email invitation allows you to dynamically s
 
 To initiate a sharing on another email address:
 
-- Log in to your Zimbra email address via the [webmail](/links/web/mail).
+- Log in to your Zimbra email address via the [webmail](/links/web/email).
 - Go to the `Calendar`{.action} tab.
 - Right-click on the relevant calendar and click on `Share...`{.action}.
 - Click on the `Invite by email`{.action} tab.
@@ -107,7 +107,7 @@ Follow the steps below to share a calendar with one or more email accounts:
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 
-### Configuring the CalDAV Calendar on compatible software
+### Configuring the CalDAV calendar on compatible software
 
 We have selected stable applications that are compatible with the CalDAV protocol.
 

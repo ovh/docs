@@ -47,7 +47,7 @@ La configuration de calendrier CalDAV est similaire à celle d'une adresse e-mai
 
 Pour générer un lien de fichier ICS, suivez les étapes ci-dessous :
 
-- Connectez-vous à votre adresse e-mail Zimbra via le [webmail](/links/web/mail).
+- Connectez-vous à votre adresse e-mail Zimbra via le [webmail](/links/web/email).
 - Dirigez-vous vers l'onglet `Calendrier`{.action}.
 - Faites un clic droit sur le calendrier concerné et cliquez sur `Partager...`{.action}.
 - Cliquez sur l'onglet `Rendre publique`{.action}.
@@ -67,7 +67,7 @@ Contrairement au partage de fichier ICS, le partage sur invitation par e-mail pe
 
 Pour initier un partage sur une autre adresse e-mail:
 
-- Connectez-vous à votre adresse e-mail Zimbra via le [webmail](/links/web/mail).
+- Connectez-vous à votre adresse e-mail Zimbra via le [webmail](/links/web/email).
 - Dirigez-vous vers l'onglet `Calendrier`{.action}.
 - Faites un clic droit sur le calendrier concerné et cliquez sur `Partager...`{.action}.
 - Cliquez sur l'onglet `Inviter par e-mail`{.action}.
@@ -107,7 +107,7 @@ Suivez les étapes suivantes pour partager un calendrier avec un ou plusieurs co
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 
-### Configurer le Calendrier CalDAV sur un logiciel compatible
+### Configurer le calendrier CalDAV sur un logiciel compatible
 
 Nous avons sélectionné des applications stables et compatibles avec le protocole CalDAV.
 

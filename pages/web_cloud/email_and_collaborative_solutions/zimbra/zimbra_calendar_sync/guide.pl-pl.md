@@ -22,7 +22,7 @@ Konta e-mail Zimbra mogą być skonfigurowane w różnych kompatybilnych z nimi 
 ## Wymagania początkowe
 
 - Posiadanie adresu e-mail Zimbra OVHcloud.
-- Zainstalowanie aplikacji obsługującej protokół kalendarza CalDAV
+- Zainstalowanie aplikacji obsługującej protokół kalendarza CalDAV.
 - Dane do logowania do adresu e-mail przypisanego do kalendarza, który chcesz skonfigurować.
 
 ## W praktyce
@@ -47,11 +47,11 @@ Konfiguracja kalendarza CalDAV jest podobna do konfiguracji adresu e-mail i wyma
 
 Aby wygenerować link do pliku ICS, wykonaj poniższe kroki:
 
-- Zaloguj się do swojego adresu e-mail Zimbra za pomocą [webmaila](/links/web/mail).
+- Zaloguj się do swojego adresu e-mail Zimbra za pomocą [webmaila](/links/web/email).
 - Przejdź do zakładki `Kalendarz`{.action}.
 - Kliknij prawym przyciskiem myszy na kalendarz i kliknij `Udostępnij...`{.action}.
-- Kliknij na zakładkę `Zrób publiczny`{.action}.
-- Zaznacz pole `Wygeneruj publiczny link`{.action}, skopiuj lub otwórz link w nowej karcie i pobierz plik ICS.
+- Kliknij na zakładkę `Upublicznij`{.action}.
+- Zaznacz pole `Wygeneruj łącze publiczne`{.action}, skopiuj lub otwórz link w nowej karcie i pobierz plik ICS.
 
 ![zimbra_app](images/zimbra-calendar-webmail-01.png){.thumbnail .w-600 .h-600}
 
@@ -67,10 +67,10 @@ W przeciwieństwie do udostępniania pliku ICS, udostępnianie za pomocą zapros
 
 Aby rozpocząć udostępnianie innemu adresowi e-mail:
 
-- Zaloguj się do swojego adresu e-mail Zimbra za pomocą [webmaila](/links/web/mail).
+- Zaloguj się do swojego adresu e-mail Zimbra za pomocą [webmaila](/links/web/email).
 - Przejdź do zakładki `Kalendarz`{.action}.
 - Kliknij prawym przyciskiem myszy na kalendarz i kliknij `Udostępnij...`{.action}.
-- Kliknij na zakładkę `Zaproś przez e-mail`{.action}.
+- Kliknij na zakładkę `Zaprosić przez email`{.action}.
 
 ![zimbra_app](images/zimbra-calendar-webmail-02.png){.thumbnail .w-600 .h-600}
 
@@ -103,7 +103,7 @@ Wykonaj poniższe kroki, aby udostępnić kalendarz jednemu lub wielu adresom e-
 
 > [!primary]
 >
-> Jeśli udostępniasz swój kalendarz innemu adresowi e-mail w tej samej domenie, który korzysta z webmaila Roundcube (oferta MX Plan) lub OWA (oferty E-mail Pro i Exchange), adres e-mail odbiorcy otrzymuje link do webmaila Zimbra, który umożliwia utworzenie konta „gościa” do przeglądania kalendarza.
+> Jeśli udostępniasz swój kalendarz innemu adresowi e-mail w tej samej domenie, który korzysta z webmaila Roundcube (oferta MX Plan) lub OWA (oferty E-mail Pro i Exchange), adres e-mail odbiorcy otrzymuje link do webmaila Zimbra, który umożliwia utworzenie konta "gościa" do przeglądania kalendarza.
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 

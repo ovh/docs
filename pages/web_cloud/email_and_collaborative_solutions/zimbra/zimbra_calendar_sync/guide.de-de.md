@@ -47,7 +47,7 @@ Die Konfiguration des CalDAV-Kalenders entspricht der einer E-Mail-Adresse und e
 
 Um einen ICS-Datei-Link zu generieren, folgen Sie den unten stehenden Schritten:
 
-- Melden Sie sich bei Ihrem Zimbra-E-Mail-Konto über den [Webmail](/links/web/mail) an.
+- Melden Sie sich bei Ihrem Zimbra-E-Mail-Konto über den [Webmail](/links/web/email) an.
 - Gehen Sie zum Tab `Kalender`{.action}.
 - Klicken Sie mit der rechten Maustaste auf den betreffenden Kalender und klicken Sie auf `Teilen...`{.action}.
 - Klicken Sie auf den Tab `Öffentlich machen`{.action}.
@@ -67,7 +67,7 @@ Im Gegensatz zum Teilen der ICS-Datei ermöglicht das Teilen per E-Mail-Einladun
 
 Um ein Teilen mit einer anderen E-Mail-Adresse zu starten:
 
-- Melden Sie sich bei Ihrem Zimbra-E-Mail-Konto über den [Webmail](/links/web/mail) an.
+- Melden Sie sich bei Ihrem Zimbra-E-Mail-Konto über den [Webmail](/links/web/email) an.
 - Gehen Sie zum Tab `Kalender`{.action}.
 - Klicken Sie mit der rechten Maustaste auf den betreffenden Kalender und klicken Sie auf `Teilen...`{.action}.
 - Klicken Sie auf den Tab `Per E-Mail einladen`{.action}.

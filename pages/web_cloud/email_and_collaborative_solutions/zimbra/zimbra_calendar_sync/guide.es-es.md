@@ -1,5 +1,5 @@
 ---
-title: "Sincronizar un calendario CalDAV Zimbra en una aplicación"
+title: "Zimbra - Sincronizar un calendario CalDAV en una aplicación"
 excerpt: "Descubra cómo añadir un calendario Zimbra a una aplicación a través del protocolo CalDAV"
 updated: 2025-02-12
 ---
@@ -22,7 +22,7 @@ Las cuentas de correo electrónico Zimbra pueden configurarse en diferentes prog
 ## Requisitos
 
 - Disponer de una dirección de correo electrónico Zimbra OVHcloud.
-- Haber instalado una aplicación compatible con el protocolo de calendario CalDAV
+- Haber instalado una aplicación compatible con el protocolo de calendario CalDAV.
 - Disponer del nombre de usuario y la contraseña de la dirección de correo electrónico asociada al calendario que quiera configurar.
 
 ## Procedimiento
@@ -47,11 +47,11 @@ La configuración del calendario CalDAV es similar a la de una dirección de cor
 
 Para generar un enlace de archivo ICS, siga los pasos siguientes:
 
-- Inicie sesión en su dirección de correo Zimbra a través del [webmail](/links/web/mail).
+- Inicie sesión en su dirección de correo Zimbra a través del [webmail](/links/web/email).
 - Vaya a la pestaña `Calendario`{.action}.
 - Haga clic derecho en el calendario correspondiente y haga clic en `Compartir...`{.action}.
-- Haga clic en la pestaña `Hacerlo público`{.action}.
-- Marque la casilla `Genere un enlace público`{.action}, copie o abra el enlace en una nueva pestaña y descargue el archivo ICS.
+- Haga clic en la pestaña `Hacer público`{.action}.
+- Marque la casilla `Genera un enlace público`{.action}, copie o abra el enlace en una nueva pestaña y descargue el archivo ICS.
 
 ![zimbra_app](images/zimbra-calendar-webmail-01.png){.thumbnail .w-600 .h-600}
 
@@ -67,7 +67,7 @@ A diferencia de la compartición de archivos ICS, la compartición mediante invi
 
 Para iniciar una compartición en otra dirección de correo:
 
-- Inicie sesión en su dirección de correo Zimbra a través del [webmail](/links/web/mail).
+- Inicie sesión en su dirección de correo Zimbra a través del [webmail](/links/web/email).
 - Vaya a la pestaña `Calendario`{.action}.
 - Haga clic derecho en el calendario correspondiente y haga clic en `Compartir...`{.action}.
 - Haga clic en la pestaña `Invitar por correo electrónico`{.action}.
@@ -103,19 +103,19 @@ Siga los pasos siguientes para compartir un calendario con uno o varios correos 
 
 > [!primary]
 >
-> Si comparte su calendario con una cuenta de correo del mismo nombre de dominio que utiliza el webmail Roundcube (oferta MX Plan) u OWA (ofertas E-mail Pro y Exchange), la dirección de correo destinataria recibe un enlace de acceso al webmail Zimbra, permitiendo crear una cuenta « invitada » para consultar el calendario.
+> Si comparte su calendario con una cuenta de correo del mismo nombre de dominio que utiliza el webmail Roundcube (oferta MX Plan) u OWA (ofertas Email Pro y Exchange), la dirección de correo destinataria recibe un enlace de acceso al webmail Zimbra, permitiendo crear una cuenta "invitada" para consultar el calendario.
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 
-### Configurar el Calendario de CalDAV en un software compatible
+### Configurar el calendario de CalDAV en un software compatible
 
 Hemos seleccionado aplicaciones estables compatibles con CalDAV.
 
-- **Para Windows** : Siga el capítulo [Añadir un calendario en Thunderbird](#thunderbird)
-- **Para macOS** : Siga el capítulo [Añadir un calendario en macOS](#apple-macos) o [Añadir un calendario en Thunderbird](#thunderbird)
-- **Para Linux** : Siga el capítulo [Añadir un calendario en Thunderbird](#thunderbird)
-- **Para iPhone e iPad** : Siga el capítulo [Añadir un calendario en iOS e iPad](#apple-ios)
-- **Para Android** : Siga la guía [Zimbra - Configurar su cuenta de correo electrónico en la aplicación móvil Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios).
+- **Para Windows**: Siga el capítulo [Añadir un calendario en Thunderbird](#thunderbird)
+- **Para macOS**: Siga el capítulo [Añadir un calendario en macOS](#apple-macos) o [Añadir un calendario en Thunderbird](#thunderbird)
+- **Para Linux**: Siga el capítulo [Añadir un calendario en Thunderbird](#thunderbird)
+- **Para iPhone e iPad**: Siga el capítulo [Añadir un calendario en iOS e iPad](#apple-ios)
+- **Para Android**: Siga la guía [Zimbra - Configurar su cuenta de correo electrónico en la aplicación móvil Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios).
 
 > [!warning]
 >
@@ -127,9 +127,9 @@ Hemos seleccionado aplicaciones estables compatibles con CalDAV.
 
 Si utiliza una aplicación compatible con CalDAV, debe tener en cuenta los siguientes parámetros generales para configurar un calendario de CalDAV Zimbra:
 
-- **Servidor / Dirección / URL** : introduzca el valor `zimbra1.mail.ovh.net`. Para algunos programas de software es necesario añadir el protocolo «https» en la dirección, introduzca el valor `https://zimbra1.mail.ovh.net`.
-- **Nombre de usuario** : introduzca la dirección de correo electrónico completa asociada al calendario.
-- **Contraseña** : introduzca la contraseña de la dirección de correo electrónico asociada al calendario.
+- **Servidor / Dirección / URL**: introduzca el valor `zimbra1.mail.ovh.net`. Para algunos programas de software es necesario añadir el protocolo "https" en la dirección, introduzca el valor `https://zimbra1.mail.ovh.net`.
+- **Nombre de usuario**: introduzca la dirección de correo electrónico completa asociada al calendario.
+- **Contraseña**: introduzca la contraseña de la dirección de correo electrónico asociada al calendario.
 
 #### Agregar un calendario en Thunderbird <a name="thunderbird"></a>
 
@@ -153,10 +153,10 @@ Siga los etapas de instalación haciendo clic en las fichas siguientes:
 >>
 >> Introduzca la información de conexión al calendario:
 >>
->> - **Nombre de usuario** : introduzca la dirección de correo electrónico completa asociada al calendario.
->> - **Dirección** : introduzca el valor `zimbra1.mail.ovh.net`.
->> - **Esta dirección no solicita un usuario de conexión** : Deje esta casilla desmarcada, se le pedirá que introduzca la contraseña asociada a la dirección de correo electrónico indicada anteriormente.
->> - **Compatibilidad con el modo sin conexión** : puede dejar esta opción marcada.
+>> - **Nombre de usuario**: introduzca la dirección de correo electrónico completa asociada al calendario.
+>> - **Dirección**: introduzca el valor `zimbra1.mail.ovh.net`.
+>> - **Esta dirección no solicita un usuario de conexión**: Deje esta casilla desmarcada, se le pedirá que introduzca la contraseña asociada a la dirección de correo electrónico indicada anteriormente.
+>> - **Compatibilidad con el modo sin conexión**: puede dejar esta opción marcada.
 >>
 >> Haga clic en `Buscar calendarios`{.action} para iniciar la sincronización del calendario. Introduzca la contraseña de la dirección de correo electrónico asociada al nombre de usuario en la ventana que aparece y acepte.
 >>
@@ -180,7 +180,7 @@ Para añadir un calendario CalDAV a la aplicación Apple `Calendrier` de tu iPho
 > [!tabs]
 > **Etapa 1**
 >>
->> Acceda a los `Ajustes`{.action} de su iPhone o iPad. Consulte `Calendario`{.action} desplazándose por el menú o introduciendo «Calendario» en la barra de búsqueda de ajustes.
+>> Acceda a los `Ajustes`{.action} de su iPhone o iPad. Consulte `Calendario`{.action} desplazándose por el menú o introduciendo "Calendario" en la barra de búsqueda de ajustes.
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios01.png){.thumbnail .w-600 .h-600}
 >>
@@ -200,10 +200,10 @@ Para añadir un calendario CalDAV a la aplicación Apple `Calendrier` de tu iPho
 >>
 >> Introduzca la información de conexión al calendario:
 >>
->> - **Servidor** : introduzca el valor `zimbra1.mail.ovh.net`.
->> - **Nombre de usuario** : introduzca la dirección de correo electrónico completa asociada al calendario.
->> - **Contraseña** : introduzca la contraseña de la dirección de correo electrónico.
->> - **Descripción** : agregue una descripción al calendario.
+>> - **Servidor**: introduzca el valor `zimbra1.mail.ovh.net`.
+>> - **Nombre de usuario**: introduzca la dirección de correo electrónico completa asociada al calendario.
+>> - **Contraseña**: introduzca la contraseña de la dirección de correo electrónico.
+>> - **Descripción**: agregue una descripción al calendario.
 >>
 >> Acepte con el botón `Siguiente`{.action}.
 >>
@@ -227,10 +227,10 @@ Para añadir un calendario CalDAV a la aplicación Apple `Calendrier` de tu Mac,
 >>
 >> Desde la ventana de configuración, introduzca la siguiente información:
 >>
->> - **Tipo de cuenta** : seleccione `Manuel` en el menú desplegable.
->> - **Nombre de usuario** : introduzca la dirección de correo electrónico completa asociada al calendario.
->> - **Contraseña** : introduzca la contraseña de la dirección de correo electrónico.
->> - **Dirección del servidor** : introduzca el valor `zimbra1.mail.ovh.net`.
+>> - **Tipo de cuenta**: seleccione `Manuel` en el menú desplegable.
+>> - **Nombre de usuario**: introduzca la dirección de correo electrónico completa asociada al calendario.
+>> - **Contraseña**: introduzca la contraseña de la dirección de correo electrónico.
+>> - **Dirección del servidor**: introduzca el valor `zimbra1.mail.ovh.net`.
 >>
 >> Para finalizar, haga clic en `Iniciar sesión`{.action}.
 >>

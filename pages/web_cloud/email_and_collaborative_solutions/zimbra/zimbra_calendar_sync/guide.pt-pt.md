@@ -22,7 +22,7 @@ As contas de correio eletrónico Zimbra podem ser configuradas em diferentes sof
 ## Requisitos
 
 - Ter um endereço de e-mail Zimbra OVHcloud.
-- Ter instalado uma aplicação que suporte o protocolo de calendário CalDAV
+- Ter instalado uma aplicação que suporte o protocolo de calendário CalDAV.
 - Dispor das credenciais relativas ao endereço de e-mail associado ao calendário que pretende configurar.
 
 ## Instruções
@@ -47,9 +47,9 @@ A configuração do calendário CalDAV é semelhante à de um endereço de e-mai
 
 Para gerar um link de ficheiro ICS, siga os passos abaixo:
 
-- Inicie sessão no seu endereço de correio eletrónico Zimbra através do [webmail](/links/web/mail).
+- Inicie sessão no seu endereço de correio eletrónico Zimbra através do [webmail](/links/web/email).
 - Dirija-se ao separador `Calendário`{.action}.
-- Clique com o botão direito no calendário em questão e clique em `Partilhar...`{.action}.
+- Clique com o botão direito no calendário em questão e clique em `Compartilhar...`{.action}.
 - Clique no separador `Tornar público`{.action}.
 - Marque a caixa `Gere um link público`{.action}, copie ou abra o link numa nova aba e descarregue o ficheiro ICS.
 
@@ -67,10 +67,10 @@ Ao contrário da partilha de ficheiro ICS, a partilha por convite por correio el
 
 Para iniciar uma partilha noutra conta de correio eletrónico:
 
-- Inicie sessão no seu endereço de correio eletrónico Zimbra através do [webmail](/links/web/mail).
+- Inicie sessão no seu endereço de correio eletrónico Zimbra através do [webmail](/links/web/email).
 - Dirija-se ao separador `Calendário`{.action}.
-- Clique com o botão direito no calendário em questão e clique em `Partilhar...`{.action}.
-- Clique no separador `Convidar por correio eletrónico`{.action}.
+- Clique com o botão direito no calendário em questão e clique em `Compartilhar...`{.action}.
+- Clique no separador `Convidar por email`{.action}.
 
 ![zimbra_app](images/zimbra-calendar-webmail-02.png){.thumbnail .w-600 .h-600}
 
@@ -103,19 +103,19 @@ Siga os passos seguintes para partilhar um calendário com uma ou mais contas de
 
 > [!primary]
 >
-> Se partilhar o seu calendário com uma conta de correio eletrónico do mesmo nome de domínio que utiliza o webmail Roundcube (oferta MX Plan) ou OWA (ofertas E-mail Pro e Exchange), o destinatário do correio eletrónico recebe um link de acesso ao webmail Zimbra, permitindo criar uma conta « convidado » para consultar o calendário.
+> Se partilhar o seu calendário com uma conta de correio eletrónico do mesmo nome de domínio que utiliza o webmail Roundcube (oferta MX Plan) ou OWA (ofertas E-mail Pro e Exchange), o destinatário do correio eletrónico recebe um link de acesso ao webmail Zimbra, permitindo criar uma conta "convidado" para consultar o calendário.
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 
-### Configurar o Calendário CalDAV num software compatível
+### Configurar o calendário CalDAV num software compatível
 
 Selecionámos aplicações estáveis e compatíveis com o protocolo CalDAV.
 
-- **Para Windows** : Siga o capítulo [Adicionar um calendário ao Thunderbird](#thunderbird)
-- **Para macOS** : Siga o capítulo [Adicionar um calendário no macOS](#apple-macos) ou [Adicionar um calendário no Thunderbird](#thunderbird)
-- **Para Linux** : Siga o capítulo [Adicionar um calendário ao Thunderbird](#thunderbird)
-- **Para iPhone e iPad** : Siga o capítulo [Adicionar um calendário para iOS e ipadOS](#apple-ios)
-- **Para Android** : Convidamo-lo a seguir o guia [Zimbra - Configurar a sua conta de e-mail na aplicação móvel Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios).
+- **Para Windows**: Siga o capítulo [Adicionar um calendário ao Thunderbird](#thunderbird)
+- **Para macOS**: Siga o capítulo [Adicionar um calendário no macOS](#apple-macos) ou [Adicionar um calendário no Thunderbird](#thunderbird)
+- **Para Linux**: Siga o capítulo [Adicionar um calendário ao Thunderbird](#thunderbird)
+- **Para iPhone e iPad**: Siga o capítulo [Adicionar um calendário para iOS e ipadOS](#apple-ios)
+- **Para Android**: Convidamo-lo a seguir o guia [Zimbra - Configurar a sua conta de e-mail na aplicação móvel Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios).
 
 > [!warning]
 >
@@ -127,9 +127,9 @@ Selecionámos aplicações estáveis e compatíveis com o protocolo CalDAV.
 
 Se utilizar uma aplicação compatível com o protocolo CalDAV, deverá utilizar os seguintes parâmetros gerais para configurar um calendário CalDAV Zimbra:
 
-- **Servidor / Endereço / URL** : introduza o valor `zimbra1.mail.ovh.net`. Para alguns softwares, é necessário adicionar o protocolo "https" no endereço, introduza então o valor `https://zimbra1.mail.ovh.net`.
-- **Nome de utilizador** : introduza o endereço de correio eletrónico completo associado ao calendário.
-- **Palavra-passe** : introduza a palavra-passe do endereço de e-mail associado ao calendário.
+- **Servidor / Endereço / URL**: introduza o valor `zimbra1.mail.ovh.net`. Para alguns softwares, é necessário adicionar o protocolo "https" no endereço, introduza então o valor `https://zimbra1.mail.ovh.net`.
+- **Nome de utilizador**: introduza o endereço de correio eletrónico completo associado ao calendário.
+- **Palavra-passe**: introduza a palavra-passe do endereço de e-mail associado ao calendário.
 
 #### Adicionar um calendário no Thunderbird <a name="thunderbird"></a>
 
@@ -153,10 +153,10 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >>
 >> Digite as credenciais de login no calendário:
 >>
->> - **Nome de utilizador** : introduza o endereço de correio eletrónico completo associado ao calendário.
->> - **Endereço** : introduza o valor `zimbra1.mail.ovh.net`.
->> - **Este endereço não pede um identificador de ligação** : deixe esta caixa de verificação desmarcada e ser-lhe-á pedido que introduza a palavra-passe associada ao endereço de e-mail indicado acima.
->> - **Suporte do modo offline** : pode deixar esta opção selecionada.
+>> - **Nome de utilizador**: introduza o endereço de correio eletrónico completo associado ao calendário.
+>> - **Endereço**: introduza o valor `zimbra1.mail.ovh.net`.
+>> - **Este endereço não pede um identificador de ligação**: deixe esta caixa de verificação desmarcada e ser-lhe-á pedido que introduza a palavra-passe associada ao endereço de e-mail indicado acima.
+>> - **Suporte do modo offline**: pode deixar esta opção selecionada.
 >>
 >> Clique em `Procurar agendas`{.action} para iniciar a sincronização do calendário. Introduza a palavra-passe do endereço de e-mail associado ao nome de utilizador na janela que surgir e valide a sua introdução.
 >>
@@ -200,10 +200,10 @@ Para adicionar um calendário CalDAV no aplicativo Apple `Calendar` do seu iPhon
 >>
 >> Digite as credenciais de login no calendário:
 >>
->> - **Servidor** : introduza o valor `zimbra1.mail.ovh.net`.
->> - **Nome de utilizador** : introduza o endereço de correio eletrónico completo associado ao calendário.
->> - **Palavra-passe** : introduza a palavra-passe do endereço de e-mail.
->> - **Description** : adicione uma descrição ao calendário.
+>> - **Servidor**: introduza o valor `zimbra1.mail.ovh.net`.
+>> - **Nome de utilizador**: introduza o endereço de correio eletrónico completo associado ao calendário.
+>> - **Palavra-passe**: introduza a palavra-passe do endereço de e-mail.
+>> - **Description**: adicione uma descrição ao calendário.
 >>
 >> Valide com o botão `Seguinte`{.action}.
 >>
@@ -227,9 +227,9 @@ Para adicionar um calendário CalDAV no aplicativo Apple `Calendar` do seu Mac, 
 >>
 >> A partir da janela de configuração, preencha as seguintes informações:
 >>
->> - **Tipo de conta** : escolha `Manual`" no menu pendente.
->> - **Nome de utilizador** : introduza o endereço de correio eletrónico completo associado ao calendário.
->> - **Palavra-passe** : introduza a palavra-passe do endereço de e-mail.
+>> - **Tipo de conta**: escolha `Manual`" no menu pendente.
+>> - **Nome de utilizador**: introduza o endereço de correio eletrónico completo associado ao calendário.
+>> - **Palavra-passe**: introduza a palavra-passe do endereço de e-mail.
 >> - **Endereço do servidor**: introduza o valor `zimbra1.mail.ovh.net`.
 >>
 >> Clique em `Ligar`{.action} para finalizar.
