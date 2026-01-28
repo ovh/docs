@@ -1211,7 +1211,7 @@
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Key concepts](public-cloud-databases-mongodb-key-concepts)
                 + [Why choose MongoDB?](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
-                + [MongoDB - Cluster Sizing](public_cloud/public_cloud_databases/mongodb_18_cluster_sizing)
+                + [Cluster sizing for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_18_cluster_sizing)
                 + [MongoDB - Developer Best Practices](public_cloud/public_cloud_databases/mongodb_26_developer_best_practices)
                 + [MongoDB - Operational Best Practices](public_cloud/public_cloud_databases/mongodb_21_operational_best_practices)
                 + [Lifecycle policy for Public Cloud Databases](public_cloud/public_cloud_databases/information_02_lifecycle_policy)
