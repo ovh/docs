@@ -1,45 +1,23 @@
 ---
 title: "Backup Agent - Verwalten Ihrer Backups und Wiederherstellungen"
 excerpt: "Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können"
-updated: 2026-01-09
+updated: 2026-01-28
 ---
 
 ## Ziel
 
 Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können.
 
+> [!primary]
+> 
+> Weitere Informationen zum Produkt Backup Agent finden Sie auf [dieser Seite](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Ein Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
+- Sie haben einen Bare Metal Server mit installiertem Backup Agent. Lesen Sie unsere Anleitung "[So konfigurieren Sie Ihr erstes Backup](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", um weitere Informationen zu erhalten.
 
 ## In der praktischen Anwendung
-
-### Erstellen Sie ein Backup für Ihren Server
-
-Dies beinhaltet das Hinzufügen Ihres Servers zu Ihrem Backup Agent, das Herunterladen des Agents und die Installation auf Ihrem Server.
-
-Melden Sie sich an bei dem [OVHcloud Kundencenter](/links/manager), gehen Sie zur `Bare Metal Cloud`{.action} Bereich und wählen Sie `Backup-Agent`{.action}.  
-
-![Backup Agent Menü](images/01-backup-agent-menu.png){.thumbnail}
-
-Klicken Sie auf Ihren vspc-tenant im Bereich `Dienste`{.action}.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Gehen Sie zum Bereich `Agenten`{.action}.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Klicken Sie auf die Schaltfläche `Einen Server hinzufügen`{.action}.
-
-![Backup Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Wählen Sie Ihren Server und Ihr Betriebssystem aus.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Backup
 
@@ -49,7 +27,7 @@ Sie haben zwei Optionen, um Backups zu erstellen: Automatisches Backup und Manue
 
 Das automatische Backup ist in die Backup-Richtlinie integriert, die wir für Ihren Backup Agent anwenden.
 
-Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Remote-Storage-Punkt gesendet wird.
+Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Remote-Storage gesendet wird.
 
 > [!warning]
 >
@@ -57,7 +35,8 @@ Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Rem
 
 > [!primary]
 >
-> Sie können dieses automatische Backup weder ändern noch deaktivieren.
+> Sie können dieses automatische Backup weder ändern noch deaktivieren.  
+> Derzeit können Sie die Richtlinie, die Ihren gesamten Server sichert, nicht ändern. Wir arbeiten daran, diese Konfiguration in Zukunft zu verbessern.
 
 Sie können den Erfolg dieses Backups überprüfen anhand:
 
@@ -72,7 +51,7 @@ Sie können den Erfolg dieses Backups überprüfen anhand:
 
 Falls erforderlich, können Sie ein manuelles Backup auslösen.
 
-Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage-Punkt.
+Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage.
 
 Um ein manuelles Backup zu erstellen, öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal Server:
 

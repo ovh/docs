@@ -59,7 +59,7 @@ Hier ist eine Liste möglicher Probleme, die Sie mit dem Backup Agent haben kön
 
 ## Liste möglicher Probleme
 
-/// details | Mein Backup Agent kann nicht auf Ihren Server verbinden.
+/// details | Mein Backup Agent kann sich nicht mit dem Server verbinden.
 
 Stellen Sie sicher, dass Ihre Firewall die Kommunikation mit unserem Server `vspc-cgw1.prod01.eu-west-rbx.Backup.ovhcloud.com` (137.74.125.230) in Europa über TCP-Port und UDP 6180 erlaubt.
 
