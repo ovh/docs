@@ -1252,7 +1252,7 @@
                 + [Migrate from Gen 2 to Gen 3 for Public Cloud Databases](public_cloud/public_cloud_databases/databases_20_migrate_from_gen2_to_gen3)
                 + [Migrate from a Single AZ to a 3-AZ region for Public Cloud Databases](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
                 + [Migrate to OVHcloud Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_19_migrate_to_ovhcloud)
-                + [MongoDB - Relation Migrator](public_cloud/public_cloud_databases/mongodb_20_relational_migrator)
+                + [Relational Migrator for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_20_relational_migrator)
                 + [Reversibility Policy for Managed Document Database product](account_and_service_management/reversibility/06-ddb_mongo)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
                 + [MongoDB - Tutorial - How to build and connect a Node.js Application to MongoDB](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
