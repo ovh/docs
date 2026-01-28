@@ -1,7 +1,7 @@
 ---
 title: "Aplikacja Backup - Połączenie z VSPC"
 excerpt: "Dowiedz się, jak połączyć się z Veeam Service Provider Console, aby wyświetlić swoje kopie zapasowe i agenty"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

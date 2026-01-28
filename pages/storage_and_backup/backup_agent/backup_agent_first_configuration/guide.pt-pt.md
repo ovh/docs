@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Como configurar a sua primeira cópia de segurança"
 excerpt: "Como configurar a sua primeira cópia de segurança no seu servidor Bare Metal com o produto Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo

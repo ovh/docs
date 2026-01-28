@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Zarządzanie kopiami zapasowymi i przywracaniem danych"
 excerpt: "Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - So funktionieren Vaults"
 excerpt: "Erfahren Sie, wie das Vault-System funktioniert und wo Ihre Backup-Daten gespeichert werden"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Ziel

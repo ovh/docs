@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Konfigurieren einer ersten Sicherung"
 excerpt: "So konfigurieren Sie Ihre erste Sicherung auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Ziel

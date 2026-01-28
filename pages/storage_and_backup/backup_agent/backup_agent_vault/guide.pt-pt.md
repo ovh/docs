@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Funcionamento do Vault"
 excerpt: "Descubra como funciona o sistema de Vault e a localização dos seus dados de backup"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo

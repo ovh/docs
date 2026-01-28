@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Jak skonfigurować pierwszą kopię zapasową"
 excerpt: "Jak skonfigurować pierwszą kopię zapasową na serwerze Bare Metal przy użyciu produktu Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

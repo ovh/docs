@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gestisci i tuoi backup e le tue ripristini"
 excerpt: "Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal con Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Obiettivo

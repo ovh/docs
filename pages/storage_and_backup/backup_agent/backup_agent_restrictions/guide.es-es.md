@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Restricciones conocidas"
 excerpt: "Descubra las restricciones y limitaciones del producto Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo

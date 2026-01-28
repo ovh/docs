@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Jak działają Vault"
 excerpt: "Dowiedz się, jak działa system Vault i gdzie przechowywane są Twoje dane kopii zapasowych"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

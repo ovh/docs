@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Présentation de l'offre"
 excerpt: "Présentation des fonctionnalités et avantages du produit Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objectif

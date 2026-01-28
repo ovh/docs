@@ -1,7 +1,7 @@
 ---
 title: "Agente de copia de seguridad - Funcionamiento del Vault"
 excerpt: "Descubra cómo funciona el sistema de Vault y la ubicación de sus datos de copia de seguridad"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo

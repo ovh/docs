@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Verwalten Ihrer Backups und Wiederherstellungen"
 excerpt: "Erfahren Sie, wie Sie Ihre Daten auf Bare Metal Servern mit Backup Agent sichern und wiederherstellen können"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Ziel

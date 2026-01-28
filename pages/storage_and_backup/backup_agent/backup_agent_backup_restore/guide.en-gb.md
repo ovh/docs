@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Managing your backups and restores"
 excerpt: "Learn how to back up and restore your data on your Bare Metal servers with Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - How to configure your first backup"
 excerpt: "How to configure your first backup on your Bare Metal server using the Backup Agent product"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objective

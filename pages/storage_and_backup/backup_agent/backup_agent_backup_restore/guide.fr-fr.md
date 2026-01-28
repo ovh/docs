@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gérer vos sauvegardes et vos restaurations"
 excerpt: "Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objectif

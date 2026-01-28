@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Omówienie produktu"
 excerpt: "Omówienie funkcji i korzyści z wykorzystania produktu Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

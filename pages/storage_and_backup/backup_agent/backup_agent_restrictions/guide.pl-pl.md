@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - znane ograniczenia"
 excerpt: "Odkryj ograniczenia i wady aplikacji Backup"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie

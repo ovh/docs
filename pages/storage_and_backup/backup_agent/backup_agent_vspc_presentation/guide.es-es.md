@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Conexión a la VSPC"
 excerpt: "Descubra cómo conectarse a la Veeam Service Provider Console para visualizar sus copias de seguridad y sus agentes"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo

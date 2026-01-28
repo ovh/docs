@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Administre tus copias de seguridad y restauraciones"
 excerpt: "Descubre cómo hacer copias de seguridad y restaurar tus datos en tus servidores Bare Metal con Backup Agent"
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Objetivo
