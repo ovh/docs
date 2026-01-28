@@ -1292,7 +1292,7 @@
                 + [Maintenance operations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_15_maintenances)
                 + [Configure the private network for Public Cloud Databases](public_cloud/public_cloud_databases/databases_08_vrack)
                 + [Configure the advanced parameters for Public Cloud Databases](public_cloud/public_cloud_databases/databases_03_advanced_configuration)
-                + [Valkey - Advanced parameters references](public_cloud/public_cloud_databases/redis_09_advanced_parameters_references)
+                + [Advanced parameters for Public Cloud Databases for Valkey](public_cloud/public_cloud_databases/redis_09_advanced_parameters_references)
                 + [Restore a backup of Public Cloud Databases](public_cloud/public_cloud_databases/databases_06_restore_backup)
                 + [Update the flavor of Public Cloud Databases](public_cloud/public_cloud_databases/databases_13_update_your_cluster_flavor)
                 + [Update the plan of Public Cloud Databases](public_cloud/public_cloud_databases/databases_14_upgrade_your_cluster_plan)
