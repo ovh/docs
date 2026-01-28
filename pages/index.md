@@ -1210,7 +1210,7 @@
                 + [Handle 'Disk Full' situations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_10_full_disk_handling)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Key concepts](public-cloud-databases-mongodb-key-concepts)
-                + [MongoDB - Why MongoDB](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
+                + [Why choose MongoDB?](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
                 + [MongoDB - Cluster Sizing](public_cloud/public_cloud_databases/mongodb_18_cluster_sizing)
                 + [MongoDB - Developer Best Practices](public_cloud/public_cloud_databases/mongodb_26_developer_best_practices)
                 + [MongoDB - Operational Best Practices](public_cloud/public_cloud_databases/mongodb_21_operational_best_practices)
