@@ -186,10 +186,14 @@ public-cloud-databases-common-security: Seguridad
 public-cloud-databases-common-troubleshooting: Diagnóstico
 public-cloud-databases-common-tutorials: Tutoriales
 public-cloud-databases-common: Common
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb-additional-resources: Recursos adicionales
+public-cloud-databases-mongodb-configuration: Configuración
+public-cloud-databases-mongodb-getting-started: Primeros pasos
+public-cloud-databases-mongodb-key-concepts: Conceptos clave
+public-cloud-databases-mongodb-migration: Migración
+public-cloud-databases-mongodb-security: Seguridad
+public-cloud-databases-mongodb-troubleshooting: Diagnóstico
+public-cloud-databases-mongodb-tutorials: Tutoriales
 public-cloud-databases-mongodb: MongoDB
 public-cloud-databases-mysql-additional-resources: Recursos adicionales
 public-cloud-databases-mysql-configuration: Configuración
