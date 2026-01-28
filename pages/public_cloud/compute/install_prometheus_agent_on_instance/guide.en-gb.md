@@ -11,17 +11,16 @@ Prometheus is a monitoring system and time series database. You can install and 
 **Find out how to install the Prometheus Node Exporter or Windows Exporter agent on an OVHcloud Public Cloud instance.**
 
 > [!warning]
-> 
-> OVHcloud provides services for which you are responsible. In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. However, we advise contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts about administration, usage or server security. Feel free to visit our [community forum](/links/community) to interact with other users.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](/links/community) if you experience any issues.
 >
 
 ## Requirements
 
-- [An instance created via the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps).
-- A Prometheus server running and reachable from the instance.
+- [An instance created via the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+- [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps)
+- A Prometheus server running and reachable from the instance
 
 ## Instructions
 

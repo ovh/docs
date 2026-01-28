@@ -1,31 +1,30 @@
 ---
-title: 'Prometheus Agent auf einer Public Cloud-Instanz installieren'
-excerpt: 'Erfahren Sie, wie Sie den Prometheus Node Exporter- oder Windows Exporter-Agent auf einer OVHcloud Public Cloud-Instanz installieren, um Metriken zu sammeln'
+title: 'Prometheus Agent auf einer Public Cloud Instanz installieren'
+excerpt: 'Erfahren Sie, wie Sie den Prometheus Node Exporter- oder Windows Exporter-Agent auf einer OVHcloud Public Cloud Instanz installieren, um Metriken zu sammeln'
 updated: 2026-01-27
 ---
 
 ## Ziel
 
-Prometheus ist ein Monitoring-System und eine Zeitreihendatenbank. Sie können den Agenten auf einer OVHcloud Public Cloud-Instanz installieren und verwenden, um Metriken von Ihren Servern und Anwendungen zu sammeln.
+Prometheus ist ein Monitoring-System und eine Zeitreihendatenbank. Sie können den Agenten auf einer OVHcloud Public Cloud Instanz installieren und verwenden, um Metriken von Ihren Servern und Anwendungen zu sammeln.
 
-**Erfahren Sie, wie Sie den Prometheus Node Exporter- oder Windows Exporter-Agent auf einer OVHcloud Public Cloud-Instanz installieren.**
+**Diese Anleitung erklärt, wie Sie den Prometheus Node Exporter- oder Windows Exporter-Agent auf einer OVHcloud Public Cloud Instanz installieren.**
 
 > [!warning]
-> 
-> OVHcloud bietet Dienste an, für die Sie selbst verantwortlich sind. Tatsächlich haben wir keinen Administratorzugriff auf diese Maschinen, weshalb wir keine Administratorfunktionen übernehmen und Ihnen keine Unterstützung anbieten können. Dies bedeutet, dass Sie selbst für die tägliche Verwaltung der Software und der Sicherheit verantwortlich sind.
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir haben Ihnen diesen Leitfaden bereitgestellt, um Ihnen bei alltäglichen Aufgaben zu helfen. Wenn Sie jedoch Schwierigkeiten oder Unsicherheiten bei der Administration, dem Einsatz oder der Sicherheit Ihres Servers haben, empfehlen wir Ihnen, einen [Spezialist](/links/partner) zu kontaktieren. Besuchen Sie gerne unser [Community-Forum](/links/community), um mit anderen Nutzern zu interagieren.
+>Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen.
 >
 
 ## Voraussetzungen
 
-- [Eine Instanz, die über das OVHcloud Kundencenter erstellt wurde](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
-- [Administrativer Zugriff auf die Instanz](/pages/public_cloud/compute/public-cloud-first-steps).
-- Ein laufender Prometheus-Server, der von der Instanz aus erreichbar ist.
+- Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+- Sie haben [administrativen Zugriff auf die Instanz](/pages/public_cloud/compute/public-cloud-first-steps).
+- Sie haben einen Prometheus-Server, der von der Instanz aus erreichbar ist.
 
 ## In der praktischen Anwendung
 
-Folgen Sie diesen Schritten, um den Prometheus Node Exporter- oder Windows Exporter-Agent auf Ihrer OVHcloud Public Cloud-Instanz zu installieren, um Metriken zu sammeln.
+Folgen Sie diesen Schritten, um den Prometheus Node Exporter- oder Windows Exporter-Agent auf Ihrer OVHcloud Public Cloud Instanz zu installieren, um Metriken zu sammeln.
 
 ### Schritt 1: Verbindung mit Ihrer Instanz herstellen
 
@@ -39,7 +38,7 @@ Ersetzen Sie `<INSTANCE_IP>` durch die öffentliche IP-Adresse Ihrer Instanz.
 
 > [primary]
 >
-> Auf Windows können Sie PowerShell mit SSH oder einen SSH-Client wie [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) verwenden, wenn Sie lieber eine Befehlszeilenschnittstelle nutzen.
+> Auf Windows können Sie PowerShell mit SSH oder einen SSH-Client wie [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) verwenden, wenn Sie eine Befehlszeile bevorzugen.
 >
 > Bei Windows Server mit GUI können Sie auch RDP (Remote Desktop) verwenden.
 >
@@ -137,7 +136,7 @@ Die Erstellung eines dedizierten Benutzers für Node Exporter verbessert die Sic
 >> ```
 >>
 >> - **Optional**: Richten Sie einen systemd-Dienst ein, um Node Exporter automatisch auszuführen.
->> - Wenn Sie den dedizierten prometheus-Benutzer verwenden, stellen Sie sicher, dass der Dienst unter diesem Konto läuft.
+>> - Wenn Sie den dedizierten prometheus-Benutzer verwenden, stellen Sie sicher, dass der Dienst unter diesem Account läuft.
 >>
 > Für Windows (über SSH/PowerShell)
 >>
@@ -161,7 +160,7 @@ Die Erstellung eines dedizierten Benutzers für Node Exporter verbessert die Sic
 > Ersetzen Sie <PORT> durch 9100 für Linux oder 9182 für Windows.
 >
 
-Der folgende Befehl ermöglicht es Ihnen, Metriken wie CPU, Arbeitsspeicher, Festplatten- und Netzwerkverwendung zu überwachen:
+Der folgende Befehl ermöglicht es Ihnen, Metriken wie CPU, Arbeitsspeicher, Disks- und Netzwerkverwendung zu überwachen:
 
 ```bash
 curl http://<INSTANCE_IP>:<PORT>/metrics
@@ -174,7 +173,7 @@ curl http://<INSTANCE_IP>:<PORT>/metrics
 
 ### Schritt 7: Firewall-/Sicherheitsregeln (OVHcloud)
 
-Stellen Sie sicher, dass der von dem Exporter verwendete Port sowohl in der VM-Firewall als auch in Ihrer OVHcloud-Sicherheitsgruppe geöffnet ist.
+Stellen Sie sicher, dass der von dem Exporter verwendete Port sowohl in der VM-Firewall als auch in Ihrer OVHcloud Sicherheitsgruppe geöffnet ist.
 
 Beschränken Sie den Zugriff auf Ihren Prometheus-Server, um die Sicherheit zu gewährleisten.
 
@@ -186,9 +185,9 @@ Beschränken Sie den Zugriff auf Ihren Prometheus-Server, um die Sicherheit zu g
 >> sudo ufw status
 >> ```
 >>
->> **Hinweis**: Wenn UFW den Status **inaktiv** anzeigt, bedeutet dies, dass die Firewall auf der VM nicht aktiviert ist. Die Portregel ist hinzugefügt, aber nicht erzwungen.
+>> **Hinweis**: Wenn UFW **Status: inactive** anzeigt, bedeutet dies, dass die Firewall auf der VM nicht aktiviert ist. Die Portregel ist hinzugefügt, aber nicht erzwungen.
 >>
->> Die Sicherheit wird hauptsächlich über Ihre OVHcloud-Sicherheitsgruppe verwaltet.
+>> Die Sicherheit wird hauptsächlich über Ihre OVHcloud Sicherheitsgruppe verwaltet.
 >>
 >> Wenn Sie UFW aktivieren möchten, erlauben Sie zunächst SSH, um nicht ausgeschlossen zu werden:
 >>
