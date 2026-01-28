@@ -1,25 +1,25 @@
 ---
 title: AI Endpoints - Integration with Apache Airflow
-excerpt: Learn how to orchestrate AI workloads on OVHcloud AI Endpoints using Apache Airflow
-updated: 2026-01-21
+excerpt: Find out how to orchestrate AI workloads on OVHcloud AI Endpoints using Apache Airflow
+updated: 2026-01-28
 ---
 
 > [!primary]
 >
-> AI Endpoints is covered by the [OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
+> AI Endpoints is covered by the [OVHcloud AI Endpoints conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud special conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-🎉 **New Integration Available!** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Apache Airflow](https://airflow.apache.org/). This integration allows you to seamlessly orchestrate AI workloads on OVHcloud infrastructure directly from your Airflow DAGs, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+**New integration available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Apache Airflow](https://airflow.apache.org/). This integration allows you to seamlessly orchestrate AI workloads on OVHcloud infrastructure directly from your Airflow DAGs, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day to day developments.
+OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
 
 In this guide, we will show how to use [Apache Airflow](https://airflow.apache.org/) to integrate OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) into your workflow orchestration pipelines.
 
 With Apache Airflow's powerful workflow management capabilities and OVHcloud's scalable AI infrastructure, you can programmatically author, schedule, and monitor AI-powered workflows with ease.
 
-![Apache Airflow](images/hero.png){.thumbnail}
+![Apache Airflow](images/header-airflow.png){.thumbnail}
 
 ## Definition
 
@@ -30,21 +30,21 @@ With Apache Airflow's powerful workflow management capabilities and OVHcloud's s
 
 This new integration offers you several advantages:
 
-- **Workflow Orchestration**: Schedule and monitor AI tasks as part of your data pipelines
-- **Scalability**: Leverage Airflow's distributed architecture for parallel AI processing
-- **Reliability**: Built-in retry mechanisms and error handling for production workflows
-- **Flexibility**: Combine AI tasks with other data operations in unified workflows
-- **Observability**: Monitor AI task execution through Airflow's rich UI and logging
-- **Models**: All of our models are available through the Airflow provider!
+- **Workflow Orchestration**: Schedule and monitor AI tasks as part of your data pipelines.
+- **Scalability**: Leverage Airflow's distributed architecture for parallel AI processing.
+- **Reliability**: Built-in retry mechanisms and error handling for production workflows.
+- **Flexibility**: Combine AI tasks with other data operations in unified workflows.
+- **Observability**: Monitor AI task execution through Airflow's rich UI and logging.
+- **Models**: All of our models are available through the Airflow provider.
 
 ## Requirements
 
 Before getting started, make sure you have:
 
-1. An OVHcloud account with access to AI Endpoints
-2. Python 3.8 or higher installed
-3. Apache Airflow 2.3.0 or higher installed
-4. An API key generated from the [OVHcloud Control Panel](/links/manager), in `Public Cloud`{.action} > `AI Endpoints` > `API keys`{.action}
+- An OVHcloud account with access to AI Endpoints.
+- Python 3.8 or higher installed.
+- Apache Airflow 2.3.0 or higher installed.
+- An API key generated from the [OVHcloud Control Panel](/links/manager), in the `Public Cloud`{.action} section > `AI Endpoints` > `API keys`{.action}.
 
 ![Generate an API key](images/generate_an_api_key.png){.thumbnail}
 
@@ -52,24 +52,24 @@ Before getting started, make sure you have:
 
 ### Installation
 
-Install the OVHcloud AI Endpoints provider for Apache Airflow via pip:
+Install the OVHcloud AI Endpoints provider for Apache Airflow using pip:
 
 ```bash
 pip install apache-airflow-provider-ovhcloud-ai
 ```
 
-And that's all, you are ready to go! 🎉
+You are now ready to get started.
 
-### Basic Configuration
+### Basic configuration
 
-#### Setting up Airflow Connection
+#### Setting up Airflow connection
 
 The recommended method to configure your API key is using Airflow connections. You can create a connection through the Airflow UI or CLI.
 
 **Using Airflow UI:**
 
-1. Go to **Admin** > **Connections**
-2. Click the **+** button to add a new connection
+1. Go to **Admin** > **Connections**.
+2. Click the **+** button to add a new connection.
 3. Fill in the details:
 
 | Attribute       | Value                              |
@@ -86,7 +86,7 @@ airflow connections add ovh_ai_endpoints_default \
     --conn-password your-api-key-here
 ```
 
-### Basic Usage
+### Basic usage
 
 Here's a simple usage example for generating text with Large Language Models:
 
@@ -116,9 +116,9 @@ with DAG(
     )
 ```
 
-### Advanced Features
+### Advanced features
 
-#### Dynamic Content with Jinja Templating
+#### Dynamic content with Jinja templating
 
 Use Airflow's Jinja templating for dynamic content in your AI tasks:
 
@@ -186,7 +186,7 @@ with DAG(
     )
 ```
 
-#### Batch Embeddings
+#### Batch embeddings
 
 Process multiple texts in a single operation:
 
@@ -215,7 +215,7 @@ with DAG(
     )
 ```
 
-#### Task Output and XCom
+#### Task output and XCom
 
 Access operator outputs in downstream tasks using Airflow's XCom feature:
 
@@ -259,7 +259,7 @@ with DAG(
     generate >> process
 ```
 
-#### Error Handling and Retries
+#### Error handling and retries
 
 Configure retries and error handling for production workflows:
 
@@ -297,7 +297,7 @@ with DAG(
     )
 ```
 
-#### Parallel Processing
+#### Parallel processing
 
 Run multiple AI tasks in parallel to maximize throughput:
 
@@ -346,6 +346,6 @@ If you need training or technical assistance to implement our solutions, contact
 
 Please feel free to send us your questions, feedback, and suggestions regarding AI Endpoints and its features:
 
-- In the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
+- In the #ai-endpoints channel of the [OVHcloud Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
 - On the [GitHub repository](https://github.com/ovh/apache-airflow-provider-ovhcloud-ai) for bug reports and contributions.
-- In [GitHub Discussions](https://github.com/ovh/apache-airflow-provider-ovhcloud-ai/discussions) for questions and discussions.
+- In [GitHub discussions](https://github.com/ovh/apache-airflow-provider-ovhcloud-ai/discussions) for questions and discussions.
