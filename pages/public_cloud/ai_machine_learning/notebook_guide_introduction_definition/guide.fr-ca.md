@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Premiers pas (EN)
 excerpt: Découvrez comment lancer un AI Notebooks
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Introduction
@@ -118,10 +118,9 @@ To create an AI Notebook, follow these steps:
 >> 
 >> > [!warning]
 >> >
->> > Actually our main motivation is to keep the plateform up-to-date, in matter of security patches and new features alignment, so we need to update and restart hosts from time to time, which requires to get them free from any customer workload.
->> > This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
+>> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
 >> 
->> By default, your AI notebook will automatically shut down after 7 consecutive running days, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of running. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
 >> 
 >> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
 >> 

@@ -1,7 +1,7 @@
 ---
 title: Quantum computing - Getting started with QPUs Notebooks
 excerpt: Learn how to set up a Quantum QPUs Notebook
-updated: 2025-11-06
+updated: 2026-01-28
 ---
 
 > [!warning]
@@ -97,7 +97,17 @@ To create a Quantum Notebook, follow these steps:
 >> 
 >> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-06.png){.thumbnail}
 >> 
->> **7\. Advanced configuration**
+>> **7\. Notebook lifecycle**
+>> 
+>> > [!warning]
+>> >
+>> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
+>> 
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of running. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+>>
+>> ![Create a Notebook Control Panel manager 06](images/creating-a-notebook-using-UI-expiry.png){.thumbnail}
+>> 
+>> **8\. Advanced configuration**
 >> 
 >> By default, your Quantum Notebook comes with **ephemeral storage** (local storage). But in this step, you can also link Object Storage containers and Git repositories to your notebook to easily access your remote data.
 >> 
