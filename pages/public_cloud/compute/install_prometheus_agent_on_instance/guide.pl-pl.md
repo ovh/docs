@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja agenta Prometheus na instancji Public Cloud'
 excerpt: 'Dowiedz się, jak zainstalować Prometheus Node Exporter lub Windows Exporter na instancji OVHcloud Public Cloud, aby zbierać metryki'
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie
