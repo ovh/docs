@@ -150,7 +150,7 @@ When using AI Endpoints, the **following rate limits apply**:
 
 If you exceed this limit, a **429 error code** will be returned.
 
-If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
+If you require higher usage, please **[get in touch with us](/links/support)** to discuss increasing your rate limits.
 
 ### Billing and usage
 
