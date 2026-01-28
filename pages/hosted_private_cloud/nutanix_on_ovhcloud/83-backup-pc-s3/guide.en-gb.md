@@ -16,7 +16,7 @@ The solution relies on:
 
 ### Overview & Benefits
 
-#### Main Features
+#### Main features
 
 - Point-in-Time backup of Prism Central to an OVHcloud S3 bucket.
 - Automatic creation of **periodic restore points (RPO)**.
@@ -38,9 +38,9 @@ The solution relies on:
 
 ## Instructions
 
-### Preparing the Environment
+### Preparing the environment
 
-#### Creating the Object Storage Container (Bucket)
+#### Creating the Object Storage container (bucket)
 
 To create the container, you must first create a Public Cloud project. Refer to our guide: [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 

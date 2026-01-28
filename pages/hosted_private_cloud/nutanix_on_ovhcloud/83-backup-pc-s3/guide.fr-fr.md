@@ -159,7 +159,7 @@ aws s3api put-bucket-lifecycle-configuration \
 >
 > Si une sauvegarde Point-in-Time est déjà configurée, le bouton **Protect Now** n’apparaît pas.
 
-#### Configurer la cible de sauvegarde
+#### Configurer la cible de la sauvegarde
 
 5\. La fenêtre **Protect Prism Central** s’affiche et indique :
 
