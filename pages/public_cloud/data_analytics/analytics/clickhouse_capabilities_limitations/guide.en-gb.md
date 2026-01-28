@@ -1,7 +1,7 @@
 ---
-title: ClickHouse - Capabilities and Limitations
+title: Capabilities and Limitations of Public Cloud Analytics with ClickHouse
 excerpt: Discover the capabilities and limitations of Analytics for ClickHouse
-updated: 2026-01-10
+updated: 2026-01-28
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ The Analytics offer supports the following ClickHouse versions:
 
 - ClickHouse 25
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for ClickHouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
+Please refer to the [Analytics services lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for ClickHouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
 
 ### ClickHouse connectors
 
@@ -37,26 +37,21 @@ You can use any of the [ClickHouse-recommended drivers and interfaces](https://c
 
 Different plans are available:
 
-- *Production*.
 - *Discovery* (Soon).
+- *Production*.
 
 Here is an overview of the various plans capabilities:
 
-| Plan                  | Number of nodes by default | Read replicas |
-| --------------------- | -------------------------- | ------------- |
-| *Production*          | 3                          | Planned       |
-| *Discovery*           | Soon                       | Soon          |
+| Plan                  | Number of nodes by default |
+| --------------------- | -------------------------- |
+| *Discovery*           | 1                          |
+| *Production*          | 3                          |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
-> [!primary]
->
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
->
-
 #### Nodes and replicas
 
-- **Production**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Production**: the cluster is delivered with 3 nodes by default.
 
 #### License type
 
@@ -127,12 +122,6 @@ The number of simultaneous connections in Public Cloud Analytcis for ClickHouse 
 We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
 
 So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
-
-#### Advanced parameters
-
-<!-- Voir si guide créer sinon delete -->
-
-You can further customise your ClickHouse by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/data_analytics/analytics/clickhouse_advanced_parameters_references) for more information on the supported parameters.  
 
 #### Backups
 
