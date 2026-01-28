@@ -1226,7 +1226,7 @@
                 + [Getting started with Public Cloud Databases](public_cloud/public_cloud_databases/databases_01_order_control_panel)
                 + [Getting started with Public Cloud Databases APIs](public_cloud/public_cloud_databases/databases_02_order_api)
                 + [Getting started with Terraform for Public Cloud Databases](public_cloud/public_cloud_databases/databases_09_order_terraform)
-                + [MongoDB - Managing a database service from the OVHcloud Control Panel](public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
+                + [Configure incoming connections of a Public Cloud Databases for MongoDB service](public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
                 + [MongoDB - Connect with CLI](public_cloud/public_cloud_databases/mongodb_03_connect_cli)
                 + [MongoDB - Connect with Python](public_cloud/public_cloud_databases/mongodb_05_connect_python)
                 + [MongoDB - Connect with PHP](public_cloud/public_cloud_databases/mongodb_04_connect_php)
