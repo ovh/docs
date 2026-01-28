@@ -645,6 +645,7 @@
             + [Advanced replication with Leap](hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
             + [Configuring Disaster Recovery with Metro](hosted_private_cloud/nutanix_on_ovhcloud/48-metro-availability)
             + [Setting up Multicloud Snapshot Technology (MST) on a Nutanix on OVHcloud infrastructure](hosted_private_cloud/nutanix_on_ovhcloud/81-multi-snapshot-technologie)
+            + [Configuring Prism Central Point-in-Time Backup to OVHcloud S3-compatible Object Storage](hosted_private_cloud/nutanix_on_ovhcloud/83-backup-pc-s3)
     + [SAP on OVHcloud](products/hosted-private-cloud-sap-ovhcloud)
         + [Concepts](hosted-private-cloud-sap-ovhcloud-concepts)
             + [SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud](hosted_private_cloud/sap_on_ovhcloud/concept_dedicated_server_and_hpc)
