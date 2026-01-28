@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Premiers pas (EN)
 excerpt: Découvrez comment lancer un AI Notebooks
-updated: 2026-01-27
+updated: 2026-01-28
 ---
 
 ## Introduction
