@@ -1222,7 +1222,7 @@
                 + [Automated Backups for Public Cloud Databases](public_cloud/public_cloud_databases/databases_05_automated_backups)
                 + [Understand the connection strings URI format of Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_10_connection_strings)
             + [Getting started](public-cloud-databases-mongodb-getting-started)
-                + [MongoDB - Getting Started](public_cloud/public_cloud_databases/mongodb_13_getting_started)
+                + [Getting started with Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_13_getting_started)
                 + [Getting started with Public Cloud Databases](public_cloud/public_cloud_databases/databases_01_order_control_panel)
                 + [Getting started with Public Cloud Databases APIs](public_cloud/public_cloud_databases/databases_02_order_api)
                 + [Getting started with Terraform for Public Cloud Databases](public_cloud/public_cloud_databases/databases_09_order_terraform)
