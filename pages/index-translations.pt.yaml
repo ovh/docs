@@ -191,8 +191,14 @@ public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
 public-cloud-databases-mongodb-guides: MongoDB - User guides
 public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
 public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql-additional-resources: Recursos adicionais
+public-cloud-databases-mysql-configuration: Configuração
+public-cloud-databases-mysql-getting-started: Introdução
+public-cloud-databases-mysql-key-concepts: Conceitos-chave
+public-cloud-databases-mysql-migration: Migração
+public-cloud-databases-mysql-security: Segurança
+public-cloud-databases-mysql-troubleshooting: Diagnóstico
+public-cloud-databases-mysql-tutorials: Tutoriais
 public-cloud-databases-mysql: MySQL
 public-cloud-databases-postgresql-additional-resources: Recursos adicionais
 public-cloud-databases-postgresql-configuration: Configuração
