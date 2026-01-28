@@ -74,7 +74,68 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail .h-500}
 
-Para configurar o seu endereço de correio eletrónico, siga os passos clicando nos separadores abaixo.
+**Em Windows 11, a interface do Outlook clássico pode variar quando adiciona uma conta.**
+
+Consoante o histórico de utilização do Outlook no computador em questão, uma configuração específica pode levar à exibição de uma interface diferente. Em alguns casos, a interface dita « moderna » (**interface 1**) pode ser desativada a favor da interface clássica (**interface 2**).
+
+Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibida no seu ecrã.
+
+#### Configuração com a interface 1 <a name="add-account-int1"></a>
+
+Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.
+
+> **Etapa 1**
+>>
+>> Preencha o seu endereço de e-mail, depois clique em `Opções avançadas`{.action}.
+>>
+>> Marque a caixa `Configurar a minha conta manualmente`{.action} e clique em `Conexão`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro02.png){.thumbnail .h-500}
+>>
+> **Etapa 2**
+>>
+>> Entre os tipos de contas propostos, escolha IMAP ou POP.
+>>
+>> Recomendamos a utilização do protocolo IMAP.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro03.png){.thumbnail .h-500}
+>>
+> **Etapa 3**
+>>
+>> Introduza a palavra-passe do seu endereço de e-mail, depois clique em `Conectar`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro04.png){.thumbnail .h-500}
+>>
+> **Etapa 4**
+>>
+>> Se o Outlook não conseguir configurar automaticamente a conta, aparece a janela seguinte.
+>>
+>> Clique em `Modificar os parâmetros da conta`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro05.png){.thumbnail .h-500}
+>>
+> **Etapa 5**
+>>
+>> Na secção **Correio de entrada**, preencha :
+>> 
+>> - Servidor : **pro**?**.mail.ovh.net** (substitua bem o «**?**» pelo número do seu servidor)
+>> - Porta : **993**
+>> - Método de encriptação : **SSL/TLS**
+>>
+>> Na secção **Correio de saída**, preencha :
+>>
+>> - Servidor : **pro**?**.mail.ovh.net** (substitua bem o «**?**» pelo número do seu servidor)
+>> - Porta : **587**
+>> - Método de encriptação : **STARTTLS**
+>>
+>> Clique em `Seguinte`{.action} para validar.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro06.png){.thumbnail .h-500}
+>>
+
+#### Configuração com a interface 2 <a name="add-account-int2"></a>
+
+Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.
 
 > **Passo 1**
 >>
@@ -140,20 +201,48 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 ### Modificar os parâmetros existentes
 
-Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
+**Em Windows 11, a interface do Outlook clássico pode variar quando modifica uma conta.**
 
-- Vá a `Ficheiro`{.action} a partir da barra de menu no topo do seu ecrã.
-- Selecione a conta a modificar no menu suspenso **(1)**.
-- Clique em `Definições da conta`{.action} **(2)** em baixo.
-- Clique em `Definições da conta...`{.action} **(3)** para aceder à janela de definições.
+Consoante o histórico de utilização do Outlook no computador em questão, uma configuração específica pode levar à exibição de uma interface diferente. Em alguns casos, a interface dita « moderna » (**interface 1**) pode ser desativada a favor da interface clássica (**interface 2**).
 
-![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibida no seu ecrã.
 
-- A janela de definições das contas aparece, selecione a conta de e-mail em questão e clique em `Modificar...`{.action}.
-
-![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
-
-Para configurar a sua conta, siga as instruções a partir do **passo 2** na secção [Adicionar a conta](#add-account) deste guia.
+> **Interface 1**
+>>
+>> Se a sua conta de e-mail já estiver configurada e tiver de aceder aos seus parâmetros para os modificar :
+>>
+>> - Clique em `Ficheiro`{.action} na barra de menu no topo do ecrã, depois selecione a conta a modificar no menu suspenso **(1)**.
+>> - Clique em `Definições da conta`{.action } **(2)** em baixo.
+>> - Selecione `Definições do servidor`{.action} **(3)** para mostrar a janela de configuração.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro07.png){.thumbnail}
+>>
+>> A janela está dividida em duas partes, **Correio de entrada** e **Correio de saída**. Clique na parte que pretende modificar.
+>>
+>> > [!primary]
+>> >
+>> > No nosso exemplo, o nome do servidor utilizado é « pro**?**.mail.ovh.net ». Terá de substituir o carácter « ? » pelo número correspondente ao servidor do seu serviço E-mail Pro.
+>> >
+>> > Encontre este número no seu [espaço cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} depois `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Conexão** do separador `Informações Gerais`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> Se a sua conta de e-mail já estiver configurada e tiver de aceder aos seus parâmetros para os modificar :
+>>
+>> - Clique em `Ficheiro`{.action} na barra de menu no topo do ecrã, depois selecione a conta a modificar no menu suspenso **(1)**.
+>> - Clique em `Definições da conta`{.action} **(2)** em baixo.
+>> - Clique em `Definições da conta...`{.action} **(3)** para aceder à janela de configuração.
+>>
+>> ![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+>>
+>> - A janela de definições de contas aparece: selecione a conta de e-mail em questão, depois clique em `Modificar...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
+>>
+>> Para configurar a sua conta, siga as instruções a partir da **etapa 2** na secção « [Adicionar a conta - Configuração com a interface 2](#add-account-int2) » deste guia.
+>>
 
 ### Definições gerais de envio e receção <a name="settings-account"></a>
 

@@ -79,7 +79,76 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die untenstehenden Tabs klicken.
+**Unter Windows 11 kann die klassische Outlook-Benutzeroberfläche anders aussehen, wenn Sie ein Konto hinzufügen.**
+
+Je nach Verwendungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Benutzeroberfläche angezeigt wird. In einigen Fällen kann die sogenannte „moderne“ Benutzeroberfläche (**Schnittstelle 1**) deaktiviert sein zugunsten der klassischen Benutzeroberfläche (**Schnittstelle 2**).
+
+Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+
+#### Konfiguration mit der Schnittstelle 1 <a name="add-account-int1"></a>
+
+> [!warning]
+>
+> Sie müssen den Wert entsprechend Ihrer Region (**EUROPE** oder **AMERIKA / ASIEN-PACIFIK**) eingeben.
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die Registerkarten unten klicken.
+
+> **Schritt 1**
+>>
+>> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.
+>>
+>> Aktivieren Sie anschließend das Feld `Konto manuell konfigurieren`{.action} und klicken Sie auf `Verbindung herstellen`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan02.png){.thumbnail .h-500}
+>>
+> **Schritt 2**
+>>
+>> Wählen Sie unter den angebotenen Kontentypen IMAP oder POP aus.
+>>
+>> Wir empfehlen, das IMAP-Protokoll zu verwenden.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan03.png){.thumbnail .h-500}
+>>
+> **Schritt 3**
+>>
+>> Geben Sie das Passwort für Ihre E-Mail-Adresse ein und klicken Sie auf `Anmelden`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan04.png){.thumbnail .h-500}
+>>
+> **Schritt 4**
+>>
+>> Wenn Outlook das Konto nicht automatisch konfigurieren kann, wird folgendes Fenster angezeigt.
+>>
+>> Klicken Sie auf `Kontoeinstellungen ändern`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan05.png){.thumbnail .h-500}
+>>
+> **Schritt 5**
+>>
+>> Im Abschnitt **Eingehender Posteingang**, geben Sie Folgendes ein :
+>>
+>> - Server :
+>>     - **EUROPA** : imap.mail.ovh.net **oder** ssl0.ovh.net
+>>     - **AMERIKA/ASIE-PACIFIK** : imap.mail.ovh.ca
+>> - Port : **993**
+>> - Verschlüsselungsmethode : **SSL/TLS**
+>>
+>> Im Abschnitt **Ausgehender Postausgang**, geben Sie Folgendes ein :
+>>
+>> - Server :
+>>     - **EUROPA** : smtp.mail.ovh.net **oder** ssl0.ovh.net
+>>     - **AMERIKA/ASIE-PACIFIK** : smtp.mail.ovh.ca
+>> - Port : **465**
+>> - Verschlüsselungsmethode : **SSL/TLS**
+>>
+>> Klicken Sie auf `Weiter`{.action}, um fortzufahren.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan06.png){.thumbnail .h-500}
+>>
+
+#### Konfiguration mit der Schnittstelle 2 <a name="add-account-int2"></a>
+
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die Registerkarten unten klicken.
 
 > [!warning]
 >
@@ -154,18 +223,48 @@ Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accoun
 
 ### Bestehende Einstellungen ändern
 
-Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf die Accounteinstellungen zugreifen müssen, um sie zu ändern:
+**Unter Windows 11 kann die klassische Outlook-Benutzeroberfläche anders aussehen, wenn Sie ein Konto bearbeiten.**
 
-- Gehen Sie zu `Datei`{.action} in der Menüleiste oben auf Ihrem Bildschirm.
-- Wählen Sie das zu ändernde Account im Dropdown-Menü **(1)** aus.
-- Klicken Sie auf `Accounteinstellungen`{.action} **(2)** darunter.
-- Klicken Sie auf `Accounteinstellungen...`{.action} **(3)**, um zum Einstellungsfenster zu gelangen.
+Je nach Verwendungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Benutzeroberfläche angezeigt wird. In einigen Fällen kann die sogenannte „moderne“ Benutzeroberfläche (**Schnittstelle 1**) deaktiviert sein zugunsten der klassischen Benutzeroberfläche (**Schnittstelle 2**).
 
-![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
-- Das Accounteinstellungsfenster wird angezeigt. Wählen Sie das betroffene E-Mail-Account aus und klicken Sie auf `Ändern...`{.action}.
-
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+> **Schnittstelle 1**
+>>
+>> Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern :
+>>
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie anschließend das zu ändernde Konto im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Kontoeinstellungen`{.action } **(2)** darunter.
+>> - Wählen Sie `Servereinstellungen`{.action} **(3)** aus, um das Konfigurationsfenster anzuzeigen.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
+>>
+>> Das Fenster ist in zwei Abschnitte unterteilt, **Eingehender Posteingang** und **Ausgehender Postausgang**. Klicken Sie auf den Abschnitt, den Sie ändern möchten.
+>>
+>> > [!primary]
+>> >
+>> > In unserem Beispiel wird der Servername „pro**?**.mail.ovh.net“ verwendet. Sie müssen das Zeichen „?“ durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
+>> >
+>> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
+>>
+> **Schnittstelle 2**
+>>
+>> Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern :
+>>
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie anschließend das zu ändernde Konto im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Kontoeinstellungen`{.action} **(2)** darunter.
+>> - Klicken Sie auf `Kontoeinstellungen...`{.action} **(3)**, um zum Konfigurationsfenster zu gelangen.
+>>
+>> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+>>
+>> - Das Kontoeinstellungenfenster wird angezeigt: Wählen Sie das betreffende E-Mail-Konto aus und klicken Sie auf `Ändern...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+>>
+>> Um Ihr Konto zu konfigurieren, folgen Sie den Anweisungen ab **Schritt 2** im Abschnitt „[Konto hinzufügen - Konfiguration mit der Schnittstelle 2](#add-account-int2)“ in diesem Leitfaden.
+>>
 
 ### Allgemeine Einstellungen zum Senden und Empfangen <a name="settings-account"></a>
 

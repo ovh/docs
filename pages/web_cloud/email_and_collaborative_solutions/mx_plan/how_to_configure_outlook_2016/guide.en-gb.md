@@ -79,6 +79,75 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
+**On Windows 11, the classic Outlook interface may differ when you add an account.**
+
+Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
+
+This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
+
+#### Configuration with interface 1 <a name="add-account-int1"></a>
+
+To configure your email address, follow the steps by clicking on the tabs below.
+
+> [!warning]
+>
+> It is essential to correctly enter the value corresponding to your location (**EUROPE** or **AMERICA / ASIA-PACIFIC**).
+
+> **Step 1**
+>>
+>> Enter your email address, then click on `Advanced options`{.action}.
+>>
+>> Then check the box `Configure my account manually`{.action} and click on `Connect`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan02.png){.thumbnail .h-500}
+>>
+> **Step 2**
+>>
+>> From the available account types, choose IMAP or POP.
+>>
+>> We recommend using the IMAP protocol.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan03.png){.thumbnail .h-500}
+>>
+> **Step 3**
+>>
+>> Enter the password for your email address, then click on `Connect`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan04.png){.thumbnail .h-500}
+>>
+> **Step 4**
+>>
+>> If Outlook is unable to automatically configure the account, the following window appears.
+>>
+>> Click on `Modify account settings`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan05.png){.thumbnail .h-500}
+>>
+> **Step 5**
+>>
+>> In the **Incoming mail** section, enter the following:
+>>
+>> - Server:
+>>     - **EUROPE** : imap.mail.ovh.net **or** ssl0.ovh.net
+>>     - **AMERICA/PACIFIC ASIA** : imap.mail.ovh.ca
+>> - Port : **993**
+>> - Encryption method : **SSL/TLS**
+>>
+>> In the **Outgoing mail** section, enter the following:
+>>
+>> - Server:
+>>     - **EUROPE** : smtp.mail.ovh.net **or** ssl0.ovh.net
+>>     - **AMERICA/PACIFIC ASIA** : smtp.mail.ovh.ca
+>> - Port : **465**
+>> - Encryption method : **SSL/TLS**
+>>
+>> Click on `Next`{.action} to validate.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan06.png){.thumbnail .h-500}
+>>
+
+#### Configuration with interface 2 <a name="add-account-int2"></a>
+
 To configure your email address, follow the steps by clicking on the tabs below.
 
 > [!warning]
@@ -154,18 +223,48 @@ If you need to perform an operation that could result in the loss of your e-mail
 
 ### Modify existing settings <a name="modify-settings"></a>
 
-If your e-mail account is already set up and you need to access the account settings to modify them:
+**On Windows 11, the classic Outlook interface may differ when you modify an account.**
 
-- Go to `File`{.action} from the menu bar at the top of your screen.
-- Select the account to modify in the drop-down menu **(1)**.
-- Click on `Account Settings`{.action} **(2)** below.
-- Click on `Account Settings...`{.action} **(3)** to access the settings window.
+Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
 
-![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
-- The account settings window appears, select the concerned e-mail account and click on `Change...`{.action}.
-
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+> **Interface 1**
+>>
+>> If your email account is already configured and you need to access its settings to modify them :
+>>
+>> - Click on `File`{.action} in the menu bar at the top of the screen, then select the account to modify from the drop-down menu **(1)**.
+>> - Click on `Account settings`{.action } **(2)** below.
+>> - Select `Server settings`{.action} **(3)** to display the configuration window.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
+>>
+>> The window is divided into two parts, **Incoming mail** and **Outgoing mail**. Click on the part you wish to modify.
+>>
+>> > [!primary]
+>> >
+>> > In our example, the server name used is "pro**?**.mail.ovh.net". You will need to replace the character "?" with the number corresponding to the server of your E-mail Pro service.
+>> >
+>> > Find this number in your [OVHcloud customer account](/links/manager), in the `Web Cloud`{.action} section then `E-mail Pro`{.action}. The server name is visible in the **Connection** box of the `General Information`{.action} tab.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> If your email account is already configured and you need to access its settings to modify them :
+>>
+>> - Click on `File`{.action} in the menu bar at the top of the screen, then select the account to modify from the drop-down menu **(1)**.
+>> - Click on `Account settings`{.action} **(2)** below.
+>> - Click on `Account settings...`{.action} **(3)** to access the configuration window.
+>>
+>> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+>>
+>> - The account settings window appears: select the concerned email account, then click on `Modify...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+>>
+>> To configure your account, follow the instructions from **step 2** in the section "[Add the account - Configuration with interface 2](#add-account-int2)" of this guide.
+>>
 
 ### General sending and receiving settings <a name="settings-account"></a>
 
@@ -242,9 +341,5 @@ To understand the difference between using the POP and IMAP protocols, we will d
 [Configuring your Email Pro account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 [Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
-
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
-
-If you wish to benefit from assistance with the use and configuration of your OVHcloud solutions, we invite you to consult our various [support offers](/links/support).
 
 Join our [community of users](/links/community).

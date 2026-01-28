@@ -89,6 +89,10 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
+> [!warning]
+>
+> Il est nécessaire de bien relever la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
+
 > **Étape 1**
 >>
 >> Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
@@ -145,6 +149,10 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 #### Configuration avec l'interface 2 <a name="add-account-int2"></a>
 
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
+
+> [!warning]
+>
+> Il est nécessaire de bien relever la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
 > [!tabs]
 > **Étape 1**

@@ -79,9 +79,8 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 
 > **Interface 1**
 >>
->> Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
->>
->> Cochez ensuite la case `Configurer mon compte manuellement`{.action} et cliquez sur `Connexion`{.action}.
+>> - Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
+>> - Cochez ensuite la case `Configurer mon compte manuellement`{.action} et cliquez sur `Connexion`{.action}.
 >>
 >> ![exchange](images/config-outlook-legacy-exchange02.png){.thumbnail}
 >>
