@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Connect with MongoDB Compass
+title: Connect using Compass for Public Cloud Databases for MongoDB
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
 updated: 2025-01-06
 ---
