@@ -113,7 +113,7 @@ Ci-dessous un exemple d'infrastructure privée basique (schéma layer 2) :
 
 #### Le service DHCP
 
-Retrouvez ci-dessous un exemple de fichier de configuration pour votre service **DHCP** (.<br>
+Retrouvez ci-dessous un exemple de fichier de configuration pour votre service **DHCP**.<br>
 Selon votre distribution, l'arborescence peut être différente (`kea-dhcp4.conf`).
 
 En règle générale, il suffit de :

@@ -27,7 +27,7 @@ During its lifetime, the notebook will go through the following statuses:
 - `ERROR`: The notebook ended due to a backend error. You may reach our support.
 - `DELETING`: The notebook is being removed. When it is deleted, you will no longer see it, and it will no longer exist. Its internal [/workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) data will not be deleted automatically after notebook deletion. If you are sure you want to delete it, you can find and delete it in the `notebooks_workspace` container of your Object Storage, under the notebook ID directory.
 
-![image](images/ai.notebooks.lifecycle.png){.thumbnail}
+![image](images/ai_notebooks_lifecycle.png){.thumbnail}
 
 ## Billing principles
 
