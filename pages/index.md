@@ -1213,7 +1213,7 @@
                 + [Why choose MongoDB?](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
                 + [Cluster sizing for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_18_cluster_sizing)
                 + [Developer Best Practices with Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_26_developer_best_practices)
-                + [MongoDB - Operational Best Practices](public_cloud/public_cloud_databases/mongodb_21_operational_best_practices)
+                + [Operational Best Practices with Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_21_operational_best_practices)
                 + [Lifecycle policy for Public Cloud Databases](public_cloud/public_cloud_databases/information_02_lifecycle_policy)
                 + [FAQ for Public Cloud databases](public_cloud/public_cloud_databases/information_04_faq)
                 + [Capabilities and Limitations of Public Cloud Databases](public_cloud/public_cloud_databases/information_05_capabilities)
