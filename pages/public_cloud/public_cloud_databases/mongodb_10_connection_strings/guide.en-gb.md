@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Understand the connection strings URI format
+title: Understand the connection strings URI format of Public Cloud Databases for MongoDB
 excerpt: Find out how connections syntax work for MongoDB
 updated: 2023-03-02
 ---
