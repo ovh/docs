@@ -1264,7 +1264,7 @@
                 + [Troubleshoot your Public Cloud Databases](public_cloud/public_cloud_databases/databases_04_troubleshooting)
                 + [Handle 'Disk Full' situations for Public Cloud Databases](public_cloud/public_cloud_databases/databases_10_full_disk_handling)
             + [Additional resources](public-cloud-databases-mongodb-additional-resources)
-                + [MongoDB - BI Connector](public_cloud/public_cloud_databases/mongodb_25_bi_connector)
+                + [Setup BI Connector for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_25_bi_connector)
                 + [MongoDB - Configure an Analytics node](public_cloud/public_cloud_databases/mongodb_08_analytics)
                 + [MongoDB - Kafka Connector](public_cloud/public_cloud_databases/mongodb_23_kafka_connector)
                 + [MongoDB - Read Preference and Write Concern](public_cloud/public_cloud_databases/mongodb_24_read_preference_and_write_concern)
