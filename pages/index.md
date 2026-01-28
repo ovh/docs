@@ -1255,7 +1255,7 @@
                 + [Relational Migrator for Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_20_relational_migrator)
                 + [Reversibility Policy for Managed Document Database product](account_and_service_management/reversibility/06-ddb_mongo)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
-                + [MongoDB - Tutorial - How to build and connect a Node.js Application to MongoDB](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
+                + [Build and connect a Node.js application to Public Cloud Databases for MongoDB](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
                 + [MongoDB - Tutorial - How to deploy a database with Terraform](public_cloud/public_cloud_databases/mongodb_14_deploy_with_terraform)
                 + [MongoDB - Tutorial - How to benchmark MongoDB instances](public_cloud/public_cloud_databases/mongodb_22_benchmark)
             + [Security](public-cloud-databases-mongodb-security)
