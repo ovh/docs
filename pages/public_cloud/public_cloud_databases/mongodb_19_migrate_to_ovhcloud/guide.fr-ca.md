@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Migrate From MongoDB to OVHcloud managed MongoDB
+title: Migrer vers OVHcloud Public Cloud Databases pour MongoDB (EN)
 excerpt: Best practices to move from an existing MongoDB instance to an OVHcloud managed MongoDB
 updated: 2025-01-06
 ---
