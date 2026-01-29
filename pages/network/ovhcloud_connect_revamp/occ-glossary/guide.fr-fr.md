@@ -18,7 +18,7 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 
 **ASN (Autonomous System Number) :** Numéro d'identification unique de votre réseau nécessaire pour les échanges BGP.
 
-**AZ (Availability Zone) :** Zones isolées au sein d'une région cloud pour garantir que si une zone tombe, l'autre prend le relais.
+**AZ (Availability Zone) :** Zone de disponibilité au sein d'une région, qui contient le ou les datacenters hébergeant vos services. Les AZ sont à la fois suffisamment distantes géographiquement entre elles pour être isolées en cas de sinistre, et suffisamment proches pour assurer une faible latence.
 
 ### B
 
@@ -29,8 +29,6 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 **BGP-ECMP (Equal-Cost Multi-Path) :** Technique de routage permettant de répartir le trafic sur plusieurs liens physiques actifs simultanément, optimisant ainsi la charge et la redondance.
 
 ### D
-
-**Datacenter (DC) :** Site physique regroupant les infrastructures informatiques où sont hébergés vos services OVHcloud . Dans le cadre d'OVHcloud Connect, le c'est la destination finale de vos données (EndPoint).
 
 **Direct :** Type de raccordement où vous (ou votre opérateur) tirez une fibre physique directement jusqu'à une baie OVHcloud.
 
@@ -64,7 +62,7 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 
 ### R
 
-**Région :** Emplacement physique dans le monde, composé d'un ou de plusieurs datacenters où les services OVHcloud sont hébergés. Les régions OVHcloud sont déployées à travers le monde, notamment en Europe, en Amérique du Nord et en Asie-Pacifique.
+**Région :** Emplacement physique dans le monde, composé d'une ou de plusieurs AZ où les services OVHcloud sont hébergés. Les régions OVHcloud sont déployées à travers le monde, notamment en Europe, en Amérique du Nord et en Asie-Pacifique.
 
 ### S
 
@@ -74,9 +72,10 @@ Ce guide a été conçu comme une ressource de référence pour vous aider à as
 
 ### V
 
-**VLAN (Virtual LAN) :** Réseau local virtuel permettant de séparer les flux (ex: flux Backup vs flux Production) sur une même liaison physique.
+**VLAN (Virtual Local Area Network) :** Réseau logique indépendant créé sur une infrastructure physique partagée, permettant de segmenter un réseau local en plusieurs groupes isolés pour améliorer la sécurité et les performances.
 
-**vRack :** Réseau privé virtuel d'OVHcloud. C'est le "socle" sur lequel OCC se branche pour distribuer la connexion à vos serveurs.
+**vRack :** Réseau privé virtuel isolé qui permet d'interconnecter vos services OVHcloud, quel que soit leur localisation. C'estr lui qui assure la distribution finale de la connexion vers vos services. Pour plus d'informations, vous pouvez consulter la [page produit sur notre site web](/links/network/vrack).
+
 
 ## Aller plus loin
 
