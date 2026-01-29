@@ -84,6 +84,7 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
+> [!tabs]
 > **Étape 1**
 >>
 >> Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
@@ -137,6 +138,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
+> [!tabs]
 > **Étape 1**
 >>
 >> - Depuis la fenêtre **Ajouter un compte**, sélectionnez `Configuration manuelle ou types de serveurs supplémentaires`{.action}.
@@ -207,6 +209,7 @@ Selon l’historique d’utilisation d’Outlook sur le poste concerné, une con
 
 C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
 
+> [!tabs]
 > **Interface 1**
 >>
 >> Si votre compte e-mail est déjà configuré et que vous devez accéder à ses paramètres pour les modifier :

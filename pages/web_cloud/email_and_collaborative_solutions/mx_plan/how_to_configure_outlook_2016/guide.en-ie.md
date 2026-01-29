@@ -93,6 +93,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >
 > It is essential to correctly enter the value corresponding to your location (**EUROPE** or **AMERICA / ASIA-PACIFIC**).
 
+> [!tabs]
 > **Step 1**
 >>
 >> Enter your email address, then click on `Advanced options`{.action}.
@@ -229,6 +230,7 @@ Depending on the usage history of Outlook on the concerned computer, a specific 
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
+> [!tabs]
 > **Interface 1**
 >>
 >> If your email account is already configured and you need to access its settings to modify them :

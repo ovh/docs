@@ -91,8 +91,9 @@ Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając na odp
 
 > [!warning]
 >
-> Należy dokładnie wpisać wartość odpowiadającą Twojej lokalizacji (**EUROPE** lub **AMERIQUE / ASIE-PACIFIQUE**).
+> Należy dokładnie wpisać wartość odpowiadającą Twojej lokalizacji (**EUROPA** lub **AMERYKA/STOPIEŃ PACYFIKU**).
 
+> [!tabs]
 > **Krok 1**
 >>
 >> Wpisz swój adres e-mail, a następnie kliknij `Zaawansowane opcje`{.action}.
@@ -127,19 +128,19 @@ Aby skonfigurować swój adres e-mail, wykonaj poniższe kroki, klikając na odp
 >>
 >> W sekcji **Poczta przychodząca**, wprowadź:
 >>
->> - Serwer :
->>     - **EUROPA** : imap.mail.ovh.net **lub** ssl0.ovh.net
->>     - **AMERYKA/STOPIEŃ PACYFIKU** : imap.mail.ovh.ca
->> - Port : **993**
->> - Metoda szyfrowania : **SSL/TLS**
+>> - Serwer:
+>>     - **EUROPA**: imap.mail.ovh.net **lub** ssl0.ovh.net
+>>     - **AMERYKA/STOPIEŃ PACYFIKU**: imap.mail.ovh.ca
+>> - Port: **993**
+>> - Metoda szyfrowania: **SSL/TLS**
 >>
 >> W sekcji **Poczta wychodząca**, wprowadź:
 >>
->> - Serwer :
->>     - **EUROPA** : smtp.mail.ovh.net **lub** ssl0.ovh.net
->>     - **AMERYKA/STOPIEŃ PACYFIKU** : smtp.mail.ovh.ca
->> - Port : **465**
->> - Metoda szyfrowania : **SSL/TLS**
+>> - Serwer:
+>>     - **EUROPA**: smtp.mail.ovh.net **lub** ssl0.ovh.net
+>>     - **AMERYKA/STOPIEŃ PACYFIKU**: smtp.mail.ovh.ca
+>> - Port: **465**
+>> - Metoda szyfrowania: **SSL/TLS**
 >>
 >> Kliknij `Dalej`{.action}, aby potwierdzić.
 >>
@@ -229,9 +230,10 @@ W zależności od historii użycia Outlooka na danym komputerze, konkretna konfi
 
 Dlatego zachęcamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym interfejsu wyświetlonego na Twoim ekranie.
 
+> [!tabs]
 > **Interfejs 1**
 >>
->> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić :
+>> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
 >>
 >> - Kliknij `Plik`{.action} w górnym pasku menu, a następnie wybierz konto do zmiany w rozwijanej liście **(1)**.
 >> - Kliknij `Ustawienia konta`{.action } **(2)** poniżej.
@@ -243,15 +245,15 @@ Dlatego zachęcamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym int
 >>
 >> > [!primary]
 >> >
->> > W naszym przykładzie użyto nazwy serwera „pro**?**.mail.ovh.net”. Musisz zastąpić znak „?” cyfrą odpowiadającą serwerowi Twojej usługi E-mail Pro.
+>> > W naszym przykładzie użyto nazwy serwera "pro**?**.mail.ovh.net". Musisz zastąpić znak "?" cyfrą odpowiadającą serwerowi Twojej usługi E-mail Pro.
 >> >
->> > Znajdź tę cyfrę w [Twoim kliencie OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** zakładki `Ogólne informacje`{.action}.
+>> > Znajdź tę cyfrę w Twoim [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce **Logowanie** zakładki `Informacje ogólne`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
 > **Interfejs 2**
 >>
->> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić :
+>> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
 >>
 >> - Kliknij `Plik`{.action} w górnym pasku menu, a następnie wybierz konto do zmiany w rozwijanej liście **(1)**.
 >> - Kliknij `Ustawienia konta`{.action} **(2)** poniżej.
@@ -263,7 +265,7 @@ Dlatego zachęcamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym int
 >>
 >> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 >>
->> Aby skonfigurować swoje konto, wykonaj instrukcje od **kroku 2** w sekcji „[Dodawanie konta - Konfiguracja z interfejsem 2](#add-account-int2)” tego przewodnika.
+>> Aby skonfigurować swoje konto, wykonaj instrukcje od **kroku 2** w sekcji "[Dodaj konto - Konfiguracja z interfejsem 2](#add-account-int2)" tego przewodnika.
 >>
 
 ### Ogólne ustawienia wysyłania i odbierania <a name="settings-account"></a>

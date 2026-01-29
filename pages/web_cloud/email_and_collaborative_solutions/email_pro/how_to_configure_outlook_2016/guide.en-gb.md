@@ -84,6 +84,7 @@ This is why we invite you to consult the chapter corresponding to the interface 
 
 To configure your email address, follow the steps by clicking on the tabs below.
 
+> [!tabs]
 > **Step 1**
 >>
 >> Enter your email address, then click on `Advanced options`{.action}.
@@ -137,6 +138,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 To configure your email address, follow the steps by clicking on the tabs below.
 
+> [!tabs]
 > **Step 1**
 >>
 >> - From the **Add an account** window, select `Manual setup or additional server types`{.action}.
@@ -207,6 +209,7 @@ Depending on the usage history of Outlook on the concerned computer, a specific 
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
+> [!tabs]
 > **Interface 1**
 >>
 >> If your email account is already configured and you need to access its settings to modify them:

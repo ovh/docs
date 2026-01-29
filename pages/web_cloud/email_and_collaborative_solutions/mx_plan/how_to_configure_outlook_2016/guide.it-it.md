@@ -93,6 +93,7 @@ Per configurare il tuo indirizzo e-mail, segui le tappe cliccando sui tab sottos
 >
 > È necessario inserire correttamente il valore corrispondente alla tua localizzazione (**EUROPA** o **AMERICA / PACIFICO**).
 
+> [!tabs]
 > **Passo 1**
 >>
 >> Inserisci il tuo indirizzo e-mail, quindi clicca su `Opzioni avanzate`{.action}.
@@ -125,21 +126,21 @@ Per configurare il tuo indirizzo e-mail, segui le tappe cliccando sui tab sottos
 >>
 > **Passo 5**
 >>
->> Nella sezione **Posta in arrivo**, inserisci :
+>> Nella sezione **Posta in arrivo**, inserisci:
 >>
->> - Server :
->>     - **EUROPA** : imap.mail.ovh.net **o** ssl0.ovh.net
->>     - **AMERICA/ASIA-PACIFICO** : imap.mail.ovh.ca
->> - Porta : **993**
->> - Metodo di crittografia : **SSL/TLS**
+>> - Server:
+>>     - **EUROPA**: imap.mail.ovh.net **o** ssl0.ovh.net
+>>     - **AMERICA/ASIA-PACIFICO**: imap.mail.ovh.ca
+>> - Porta: **993**
+>> - Metodo di crittografia: **SSL/TLS**
 >>
->> Nella sezione **Posta in uscita**, inserisci :
+>> Nella sezione **Posta in uscita**, inserisci:
 >>
->> - Server :
->>     - **EUROPA** : smtp.mail.ovh.net **o** ssl0.ovh.net
->>     - **AMERICA/ASIA-PACIFICO** : smtp.mail.ovh.ca
->> - Porta : **465**
->> - Metodo di crittografia : **SSL/TLS**
+>> - Server:
+>>     - **EUROPA**: smtp.mail.ovh.net **o** ssl0.ovh.net
+>>     - **AMERICA/ASIA-PACIFICO**: smtp.mail.ovh.ca
+>> - Porta: **465**
+>> - Metodo di crittografia: **SSL/TLS**
 >>
 >> Clicca su `Avanti`{.action} per confermare.
 >>
@@ -155,7 +156,7 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 > È necessario inserire correttamente il valore corrispondente alla tua localizzazione (**EUROPA** o **AMERICA / PACIFICO**).
 
 > [!tabs]
-> **Fase 1**
+> **Passo 1**
 >>
 >> - Dalla finestra **Aggiungi un account**, seleziona `Configurazione manuale o tipi di server aggiuntivi`{.action}.
 >> - Clicca su `Avanti`{.action} per proseguire.
@@ -164,7 +165,7 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 >>
 >> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail .h-500}
 >>
-> **Fase 2**
+> **Passo 2**
 >>
 >> Inserisci le informazioni di accesso al tuo account **(1)**:
 >>
@@ -185,11 +186,11 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 >> **Nome utente**: inserisci il tuo indirizzo e-mail completo.<br>
 >> **Password**: inserisci la password associata al tuo indirizzo e-mail.<br>
 >>
->> Clicca su `Impostazioni aggiuntive...`{.action} **(2)** e passa alla fase successiva
+>> Clicca su `Impostazioni aggiuntive...`{.action} **(2)** e passa al passo successiva
 >>
 >> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail .h-500}
 >>
-> **Fase 3**
+> **Passo 3**
 >>
 >> Dal tab `Server in uscita`, seleziona `Il mio server in uscita (SMTP) richiede l'autenticazione`{.action} e lascia selezionato `Utilizza gli stessi parametri del mio server di posta in entrata`{.action}.
 >>
@@ -204,7 +205,7 @@ Per configurare il tuo indirizzo email, segui gli step cliccando sulle schede qu
 >>
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail .h-500}
 >>
-> **Fase 4**
+> **Passo 4**
 >>
 >> Clicca su `Avanti`{.action} per avviare la configurazione dell'account. Se i parametri sono validi, otterrai la finestra sottostante.
 >>
@@ -229,9 +230,10 @@ A seconda della cronologia d'uso di Outlook sul computer in questione, una confi
 
 Per questo motivo ti invitiamo a consultare il capitolo corrispondente all'interfaccia visualizzata sul tuo schermo.
 
+> [!tabs]
 > **Interfaccia 1**
 >>
->> Se il tuo account e-mail è già configurato e devi accedere ai suoi parametri per modificarli :
+>> Se il tuo account e-mail è già configurato e devi accedere ai suoi parametri per modificarli:
 >>
 >> - Clicca su `File`{.action} nella barra del menu in alto sullo schermo, quindi seleziona l'account da modificare nel menu a discesa **(1)**.
 >> - Clicca su `Impostazioni account`{.action } **(2)** in basso.
@@ -243,15 +245,15 @@ Per questo motivo ti invitiamo a consultare il capitolo corrispondente all'inter
 >>
 >> > [!primary]
 >> >
->> > Nel nostro esempio, il nome del server utilizzato è « pro**?**.mail.ovh.net ». Dovrai sostituire il carattere « ? » con il numero corrispondente al server del tuo servizio E-mail Pro.
+>> > Nel nostro esempio, il nome del server utilizzato è "pro**?**.mail.ovh.net". Dovrai sostituire il carattere "?" con il numero corrispondente al server del tuo servizio Email Pro.
 >> >
->> > Trova questo numero nel tuo [spazio client OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} quindi `E-mail Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}.
+>> > Trova questo numero nel tuo [Spazio Cliente OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} quindi `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
 > **Interfaccia 2**
 >>
->> Se il tuo account e-mail è già configurato e devi accedere ai suoi parametri per modificarli :
+>> Se il tuo account e-mail è già configurato e devi accedere ai suoi parametri per modificarli:
 >>
 >> - Clicca su `File`{.action} nella barra del menu in alto sullo schermo, quindi seleziona l'account da modificare nel menu a discesa **(1)**.
 >> - Clicca su `Impostazioni account`{.action} **(2)** in basso.
@@ -259,11 +261,11 @@ Per questo motivo ti invitiamo a consultare il capitolo corrispondente all'inter
 >>
 >> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
 >>
->> - La finestra delle impostazioni degli account appare : seleziona l'account e-mail interessato, quindi clicca su `Modifica...`{.action}.
+>> - La finestra delle impostazioni degli account appare: seleziona l'account e-mail interessato, quindi clicca su `Modifica...`{.action}.
 >>
 >> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 >>
->> Per configurare il tuo account, segui le istruzioni a partire dal **passo 2** nella sezione « [Aggiungere l'account - Configurazione con l'interfaccia 2](#add-account-int2) » di questa guida.
+>> Per configurare il tuo account, segui le istruzioni a partire dal **passo 2** nella sezione "[Aggiungi l'account - Configurazione con l'interfaccia 2](#add-account-int2)" di questa guida.
 >>
 
 ### Parametri generali di invio e ricezione <a name="settings-account"></a>

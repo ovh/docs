@@ -77,6 +77,7 @@ A seconda della storia d'uso di Outlook sul computer in questione, una configura
 
 Per questo motivo ti invitiamo a consultare il capitolo corrispondente all'interfaccia visualizzata sul tuo schermo.
 
+> [!tabs]
 > **Interfaccia 1**
 >>
 >> - Inserisci il tuo indirizzo email, quindi clicca su `Opzioni avanzate`{.action}.
@@ -95,7 +96,7 @@ Per questo motivo ti invitiamo a consultare il capitolo corrispondente all'inter
 >> >
 >> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
 >> >
->> > Ti consigliamo di verificare la configurazione del nome di dominio configurato sul tuo servizio Exchange nel tuo [spazio client OVHcloud](/links/manager), scheda `Domini associati`{.action}, quindi colonna `Diagnostica`{.action} della tabella.
+>> > Ti consigliamo di verificare la configurazione del nome di dominio configurato sul tuo servizio Exchange nel tuo [Spazio Cliente OVHcloud](/links/manager), scheda `Domini associati`{.action}, quindi colonna `Diagnostica`{.action} della tabella.
 >> 
 >> - Se la configurazione del tuo nome di dominio è corretta, può apparire un messaggio di autorizzazione alla connessione ai server di OVHcloud. Accettalo per permettere la configurazione automatica del tuo account Exchange.
 >> - Definisci quindi il periodo di conservazione degli elementi del tuo account Exchange, **localmente sul tuo computer**. Clicca su `Avanti`{.action}, quindi su `Fine`{.action}.

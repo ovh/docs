@@ -77,6 +77,7 @@ Depending on the Outlook usage history on the concerned computer, a specific con
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
+> [!tabs]
 > **Interface 1**
 >>
 >> - Enter your email address, then click `Advanced options`{.action}.

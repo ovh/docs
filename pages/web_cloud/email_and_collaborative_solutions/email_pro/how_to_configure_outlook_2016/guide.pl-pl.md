@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Skonfigurowanie konta e-mail w klasycznym Outlooku dla Windows'
+title: 'E-mail Pro - Skonfigurowanie konta e-mail w klasycznym Outlooku dla Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w klasycznym programie Outlook na urządzeniu z systemem Windows'
 updated: 2026-01-09
 ---
@@ -64,7 +64,7 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 >
 > 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
+> 1. Kliknij `E-mail Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
 > 1. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 
@@ -84,6 +84,7 @@ Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym inter
 
 Aby skonfigurować adres e-mail, kliknij odpowiednie karty poniżej.
 
+> [!tabs]
 > **Krok 1**
 >>
 >> Wpisz swój adres e-mail, a następnie kliknij `Zaawansowane opcje`{.action}.
@@ -118,13 +119,13 @@ Aby skonfigurować adres e-mail, kliknij odpowiednie karty poniżej.
 >>
 >> W sekcji **Poczta przychodząca**, wpisz:
 >> 
->> - Serwer: **pro**?**.mail.ovh.net** (upewnij się, że zastąpiłeś „**?**” numerem swojego serwera)
+>> - Serwer: **pro**?**.mail.ovh.net** (upewnij się, że zastąpiłeś "**?**" numerem swojego serwera)
 >> - Port: **993**
 >> - Metoda szyfrowania: **SSL/TLS**
 >>
 >> W sekcji **Poczta wychodząca**, wpisz:
 >>
->> - Serwer: **pro**?**.mail.ovh.net** (upewnij się, że zastąpiłeś „**?**” numerem swojego serwera)
+>> - Serwer: **pro**?**.mail.ovh.net** (upewnij się, że zastąpiłeś "**?**" numerem swojego serwera)
 >> - Port: **587**
 >> - Metoda szyfrowania: **STARTTLS**
 >>
@@ -137,6 +138,7 @@ Aby skonfigurować adres e-mail, kliknij odpowiednie karty poniżej.
 
 Aby skonfigurować adres e-mail, kliknij odpowiednie karty poniżej.
 
+> [!tabs]
 > **Krok 1**
 >>
 >> - Z okna **Dodawanie konta**, wybierz `Konfiguracja ręczna lub dodatkowe typy serwerów`{.action}.
@@ -156,8 +158,8 @@ Aby skonfigurować adres e-mail, kliknij odpowiednie karty poniżej.
 >>
 >> Dane serwera <br>
 >> **Typ konta**: wybierz IMAP.<br>
->> **Serwer poczty przychodzącej**: pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera).<br>
->> **Serwer poczty wychodzącej (SMTP)**: pro?.mail.ovh.net (znak **«?»** należy zastąpić numerem swojego serwera).<br>
+>> **Serwer poczty przychodzącej**: pro?.mail.ovh.net (znak **"?"** należy zastąpić numerem swojego serwera).<br>
+>> **Serwer poczty wychodzącej (SMTP)**: pro?.mail.ovh.net (znak **"?"** należy zastąpić numerem swojego serwera).<br>
 >>
 >> Dane logowania <br>
 >> **Nazwa użytkownika**: Wprowadź pełny adres e-mail.<br>
@@ -207,9 +209,10 @@ W zależności od historii korzystania z Outlooka na danym komputerze, konkretna
 
 Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym interfejsu wyświetlonego na Twoim ekranie.
 
+> [!tabs]
 > **Interfejs 1**
 >>
->> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić :
+>> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
 >>
 >> - Kliknij `Plik`{.action} w górnym pasku menu, a następnie wybierz konto do modyfikacji z rozwijanej listy **(1)**.
 >> - Kliknij `Ustawienia konta`{.action } **(2)** poniżej.
@@ -221,15 +224,15 @@ Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym inter
 >>
 >> > [!primary]
 >> >
->> > W naszym przykładzie używana jest nazwa serwera „pro**?**.mail.ovh.net”. Musisz zastąpić znak „?”, cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
+>> > W naszym przykładzie używana jest nazwa serwera "pro**?**.mail.ovh.net". Musisz zastąpić znak "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >> >
->> > Znajdź tę cyfrę w [panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera znajduje się w ramce **Połączenie** na karcie `Informacje ogólne`{.action}.
+>> > Znajdź tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera znajduje się w ramce **Logowanie** na karcie `Informacje ogólne`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>
 > **Interfejs 2**
 >>
->> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić :
+>> Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do jego ustawień, aby je zmienić:
 >>
 >> - Kliknij `Plik`{.action} w górnym pasku menu, a następnie wybierz konto do modyfikacji z rozwijanej listy **(1)**.
 >> - Kliknij `Ustawienia konta`{.action} **(2)** poniżej.
@@ -241,7 +244,7 @@ Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym inter
 >>
 >> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
 >>
->> Aby skonfigurować konto, postępuj zgodnie z instrukcjami od **kroku 2** w sekcji « [Dodawanie konta - Konfiguracja z interfejsem 2](#add-account-int2) » tego przewodnika.
+>> Aby skonfigurować konto, postępuj zgodnie z instrukcjami od **kroku 2** w sekcji "[Dodaj konto - Konfiguracja z interfejsem 2](#add-account-int2)" tego przewodnika.
 >>
 
 ### Ogólne ustawienia wysyłania i odbierania <a name="settings-account"></a>

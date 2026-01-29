@@ -73,10 +73,11 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 
 **En Windows 11, la interfaz de Outlook clásico puede diferir cuando se añade una cuenta.**
 
-Según el historial de uso de Outlook en el equipo en cuestión, una configuración específica puede provocar la visualización de una interfaz diferente. En algunos casos, la interfaz denominada « moderna » (**interfaz 1**) puede desactivarse a favor de la interfaz histórica (**interfaz 2**).
+Según el historial de uso de Outlook en el equipo en cuestión, una configuración específica puede provocar la visualización de una interfaz diferente. En algunos casos, la interfaz denominada "moderna" (**interfaz 1**) puede desactivarse a favor de la interfaz histórica (**interfaz 2**).
 
 Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que se muestra en su pantalla.
 
+> [!tabs]
 > **Interfaz 1**
 >>
 >> - Introduzca su dirección de correo electrónico y haga clic en `Opciones avanzadas`{.action}.
@@ -95,7 +96,7 @@ Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que
 >> >
 >> > ![exchange](images/config-outlook-legacy-exchange04.png){.thumbnail}
 >> >
->> > Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](/links/manager), en la pestaña `Dominios asociados`{.action}, en la columna "`Diagnóstico`{.action}" de la tabla.
+>> > Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](/links/manager), en la pestaña `Dominios asociados`{.action}, en la columna `Diagnóstico`{.action} de la tabla.
 >>
 >> - Si la configuración del dominio es válida, puede aparecer un mensaje de autorización de conexión a los servidores de OVHcloud. Acepte la configuración automática de su cuenta Exchange.
 >> - Determine la frecuencia de conservación de los elementos de su cuenta Exchange, **en local en su ordenador**. Haga clic en `Siguiente`{.action} y, a continuación, en `Finalizado`{.action}.
