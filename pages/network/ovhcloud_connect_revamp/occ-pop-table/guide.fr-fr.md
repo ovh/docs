@@ -54,10 +54,10 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >> 
 >> | Ville | PoP | Région de moindre latence OVHcloud | Bande passante OCC Direct (Gbps) |
 >> | :--- | :--- | :--- | :--- |
->> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) |
->> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) |
->> | **Ashburn** | Equinix - DC10 | Vint Hill (`us-east-vin`) |
->> | **Seattle** | Digital Realty - SEA10 | Hillsboro (`us-west-hil`) |
+>> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) | 1/10 |
+>> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) | 1/10 |
+>> | **Ashburn** | Equinix - DC10 | Vint Hill (`us-east-vin`) | 1/10 |
+>> | **Seattle** | Digital Realty - SEA10 | Hillsboro (`us-west-hil`) | 1/10 |
 >>
 > Asie-Pacifique
 >>
@@ -70,8 +70,8 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >> 
 >> | Ville | PoP | Région de moindre latence OVHcloud | Bande passante OCC Direct (Gbps) |
 >> | :--- | :--- | :--- | :--- |
->> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) |
->> | **Singapore** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) |
+>> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) | 1/10 |
+>> | **Singapore** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) | 1/10 |
 
 ## Aller plus loin
 
