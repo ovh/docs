@@ -279,11 +279,11 @@ print(result.output)
 
 ### Available models
 
-OVHcloud AI Endpoints offers a wide range of models accessible via Pydantic AI. For the complete and up-to-date list, visit our [model catalog](/links/public-cloud/ai-endpointscatalog/).
+OVHcloud AI Endpoints offers a wide range of models accessible via Pydantic AI. For the complete and up-to-date list, visit our [model catalog](/links/public-cloud/ai-endpoints-catalog).
 
 ## Go further
 
-You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also browse the [AI Endpoints catalog](/links/public-cloud/ai-endpointscatalog/) to explore the models that are available through Pydantic AI.
+You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also browse the [AI Endpoints catalog](/links/public-cloud/ai-endpoints-catalog) to explore the models that are available through Pydantic AI.
 
 For detailed information about Pydantic AI features, including advanced agent patterns and best practices, visit the [Pydantic AI documentation](https://ai.pydantic.dev/).
 
