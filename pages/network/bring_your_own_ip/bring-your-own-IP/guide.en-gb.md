@@ -166,7 +166,7 @@ To merge back a block into a parent block, use this API call:
 
 Use the following parameters:
 
-- ip: the IP block you want to slice, in CIDR notation.
+- ip: the IP block you want to merge, in CIDR notation.
 - aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
@@ -189,14 +189,11 @@ This call returns a list of possible aggregated blocks and, for each one of them
 
 **Limitations**:
 
-- This feature is currently available via API only. It will be added to the OVHcloud Control Panel in the near future.
 - Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
 - Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
 - The listing of IP addresses and blocks returned by API is ordered by network prefix size. We are working to provide a solution to list IPs by numerical order.
 - Once sliced, smaller blocks are not movable outside the region chosen during the order of the product.
-- Moving a /24 block across french regions won't work if:
-    - It has been reaggregated from a previous slicing.
-    - The /24 block was imported from a bigger block (/23 to /19).
+- Moving a /24 block across french regions won't work if it has been reaggregated from a previous slicing.
 
 ## FAQ
 
@@ -226,7 +223,7 @@ No, an IP range must be used in only one region.
 
 ### Is changing the region of an imported IP range possible?
 
-It is not possible to change the region of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen Gravelines, Roubaix or Strasbourg region at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across those 3 regions (and only those 3 ones).
+It is not possible to change the region of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen Gravelines, Roubaix or Strasbourg region at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your /24 IP blocks across those 3 regions (and only those 3 ones).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 
