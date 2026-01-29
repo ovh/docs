@@ -84,6 +84,7 @@ Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bi
 
 Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
 
+> [!tabs]
 > **Schritt 1**
 >>
 >> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.
@@ -137,6 +138,7 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritte
 
 Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
 
+> [!tabs]
 > **Schritt 1**
 >>
 >> - Wählen Sie in dem Fenster **Account hinzufügen** die Option `Manuelle Konfiguration oder zusätzliche Servertypen`{.action} aus.
@@ -207,6 +209,7 @@ Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine s
 
 Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
+> [!tabs]
 > **Oberfläche 1**
 >>
 >> Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:

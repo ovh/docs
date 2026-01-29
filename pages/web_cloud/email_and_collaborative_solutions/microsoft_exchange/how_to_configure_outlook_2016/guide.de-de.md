@@ -77,6 +77,7 @@ Je nach Verwendungsverlauf von Outlook auf der betreffenden Arbeitsstation kann 
 
 Sehen Sie sich deshalb das Kapitel für das Interface auf Ihrem Bildschirm an.
 
+> [!tabs]
 > **Interface 1**
 >>
 >> - Geben Sie nun Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.

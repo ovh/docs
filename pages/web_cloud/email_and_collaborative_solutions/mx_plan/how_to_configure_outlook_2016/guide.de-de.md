@@ -93,6 +93,7 @@ Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfl�
 
 Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Schritten, indem Sie auf die Tabs unten klicken.
 
+> [!tabs]
 > **Schritt 1**
 >>
 >> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.
@@ -229,6 +230,7 @@ Je nach Verwendungsgeschichte von Outlook auf dem betreffenden Computer kann ein
 
 Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
+> [!tabs]
 > **Oberfläche 1**
 >>
 >> Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
