@@ -19,8 +19,8 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >>
 >> Liste des régions accessibles :
 >>
->> | &nbsp; | &nbsp; |
->> | :--- | :--- |
+>> | &nbsp; |
+>> | :--- |
 >> | Erith (`eu-west-eri`) |
 >> | Gravelines (`eu-west-gra`) |
 >> | Limburg (`eu-west-lim`) |
@@ -47,8 +47,8 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >>
 >> Liste des régions accessibles :
 >>
->> | &nbsp; | &nbsp; |
->> | :--- | :--- |
+>> | &nbsp; |
+>> | :--- |
 >> | Canada - Est - Beauharnois (`ca-east-bhs`) |
 >> | Canada - Est - Toronto (`ca-east-tor`) |
 >> | Etats Unis - Est - Vint Hill (`us-east-vin`) |
@@ -67,8 +67,8 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >>
 >> Liste des régions accessibles :
 >> 
->> | &nbsp; | &nbsp; |
->> | :--- | :--- |
+>> | &nbsp; |
+>> | :--- |
 >> | Singapour - Singapour (`ap-southeast-sgp`) |
 >> | Inde - Mumbai (`ap-south-mum`) |
 >> 
