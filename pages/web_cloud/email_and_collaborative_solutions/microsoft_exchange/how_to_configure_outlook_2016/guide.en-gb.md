@@ -73,7 +73,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 **On Windows 11, the Outlook classic interface may differ when you add an account.**
 
-Depending on the Outlook usage history on the concerned computer, a specific configuration may lead to the display of a different interface. In some cases, the so-called « modern » interface (**interface 1**) may be disabled in favour of the historical interface (**interface 2**).
+Depending on the Outlook usage history on the concerned computer, a specific configuration may lead to the display of a different interface. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favour of the historical interface (**interface 2**).
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 

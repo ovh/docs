@@ -60,13 +60,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!primary]
 >
-> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your E-mail Pro service server.
+> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your Email Pro service server.
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Go to the `Web Cloud`{.action} section.
 > 1. Click on `Email Pro`{.action}.
 > 1. Select the relevant platform.
-> 1. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> 1. The server name is visible in the **Connection** section of the `General information`{.action} tab.
 
 - **When you start the application for the first time**: a setup wizard will appear and prompt you to enter your email address.
 
@@ -76,7 +76,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 **On Windows 11, the interface of Outlook classic may differ when adding an account.**
 
-Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called « modern » interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
+Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
@@ -119,13 +119,13 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >>
 >> In the **Incoming mail** section, enter:
 >> 
->> - Server: **pro**?**.mail.ovh.net** (make sure to replace «**?**» with your server number)
+>> - Server: **pro**?**.mail.ovh.net** (make sure to replace "**?**" with your server number)
 >> - Port: **993**
 >> - Encryption method: **SSL/TLS**
 >>
 >> In the **Outgoing mail** section, enter:
 >>
->> - Server: **pro**?**.mail.ovh.net** (make sure to replace «**?**» with your server number)
+>> - Server: **pro**?**.mail.ovh.net** (make sure to replace "**?**" with your server number)
 >> - Port: **587**
 >> - Encryption method: **STARTTLS**
 >>
@@ -205,7 +205,7 @@ If you need to make a change that could lead to the loss of your email account d
 
 **On Windows 11, the interface of Outlook classic may differ when you modify an account.**
 
-Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called « modern » interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
+Depending on the usage history of Outlook on the concerned computer, a specific configuration may result in a different interface being displayed. In some cases, the so-called "modern" interface (**interface 1**) may be disabled in favor of the classic interface (**interface 2**).
 
 This is why we invite you to consult the chapter corresponding to the interface displayed on your screen.
 
@@ -224,9 +224,9 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> > [!primary]
 >> >
->> > In our example, the server name used is « pro**?**.mail.ovh.net ». You must replace the character « ? » with the number corresponding to your E-mail Pro service server.
+>> > In our example, the server name used is "pro**?**.mail.ovh.net". You must replace the character "?" with the number corresponding to your Email Pro service server.
 >> >
->> > Find this number in your [OVHcloud control panel](/links/manager), in the `Web Cloud`{.action} section then `E-mail Pro`{.action}. The server name is visible in the **Connection** box on the `General Information`{.action} tab.
+>> > Find this number in your [OVHcloud control panel](/links/manager), in the `Web Cloud`{.action} section then `Email Pro`{.action}. The server name is visible in the **Connection** box on the `General information`{.action} tab.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>
@@ -244,7 +244,7 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
 >>
->> To configure your account, follow the instructions from **step 2** in the section « [Add the account - Configuration with interface 2](#add-account-int2) » of this guide.
+>> To configure your account, follow the instructions from **step 2** in the section "[Add the account - Configuration with interface 2](#add-account-int2)" of this guide.
 >>
 
 ### General send and receive settings <a name="settings-account"></a>

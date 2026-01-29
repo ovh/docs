@@ -245,9 +245,9 @@ This is why we invite you to consult the chapter corresponding to the interface 
 >>
 >> > [!primary]
 >> >
->> > In our example, the server name used is "pro**?**.mail.ovh.net". You will need to replace the character "?" with the number corresponding to the server of your E-mail Pro service.
+>> > In our example, the server name used is "pro**?**.mail.ovh.net". You will need to replace the character "?" with the number corresponding to the server of your Email Pro service.
 >> >
->> > Find this number in your [OVHcloud customer account](/links/manager), in the `Web Cloud`{.action} section then `E-mail Pro`{.action}. The server name is visible in the **Connection** box of the `General Information`{.action} tab.
+>> > Find this number in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section then `Email Pro`{.action}. The server name is visible in the **Connection** box of the `General information`{.action} tab.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
