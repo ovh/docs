@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Integration with Apache Airflow
 excerpt: Find out how to orchestrate AI workloads on OVHcloud AI Endpoints using Apache Airflow
-updated: 2026-01-28
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -348,4 +348,3 @@ Please feel free to send us your questions, feedback, and suggestions regarding 
 
 - In the #ai-endpoints channel of the [OVHcloud Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
 - On the [GitHub repository](https://github.com/ovh/apache-airflow-provider-ovhcloud-ai) for bug reports and contributions.
-- In [GitHub discussions](https://github.com/ovh/apache-airflow-provider-ovhcloud-ai/discussions) for questions and discussions.
