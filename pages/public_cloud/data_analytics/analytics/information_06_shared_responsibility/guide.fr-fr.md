@@ -1,5 +1,5 @@
 ---
-title: Analytics - Partage des responsabilités (EN)
+title: Partage des responsabilités des services Analytics (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2025-12-04
 ---
