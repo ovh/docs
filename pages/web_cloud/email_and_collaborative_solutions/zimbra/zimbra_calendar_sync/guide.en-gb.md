@@ -67,7 +67,7 @@ Unlike ICS file sharing, sharing by email invitation allows you to dynamically s
 
 To initiate a sharing on another email address:
 
-- Log in to your Zimbra email address via the [webmail](/links/web/email).
+- Log in to your Zimbra email account via the [webmail](/links/web/email).
 - Go to the `Calendar`{.action} tab.
 - Right-click on the relevant calendar and click on `Share...`{.action}.
 - Click on the `Invite by email`{.action} tab.
