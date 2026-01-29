@@ -1,19 +1,19 @@
 ---
 title: AI Endpoints - Integration with Pydantic AI
-excerpt: Learn how to build production-grade AI applications with Pydantic AI and OVHcloud AI Endpoints
-updated: 2026-01-21
+excerpt: Find out how to build production-grade AI applications with Pydantic AI and OVHcloud AI Endpoints
+updated: 2026-01-29
 ---
 
 > [!primary]
 >
-> AI Endpoints is covered by the [OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
+> AI Endpoints is covered by the [OVHcloud AI Endpoints conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud special conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-🎉 **New Integration Available!** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Pydantic AI](https://ai.pydantic.dev/). This integration allows you to build production-grade applications with Generative AI using Pydantic's data validation and type safety, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+**New integration available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Pydantic AI](https://ai.pydantic.dev/). This integration allows you to build production-grade applications with Generative AI using Pydantic's data validation and type safety, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day to day developments.
+OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
 
 In this guide, we will show how to use [Pydantic AI](https://ai.pydantic.dev/) to integrate OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) into your Python applications for building type-safe, production-ready AI agents.
 
@@ -30,19 +30,19 @@ With Pydantic AI's agent framework and OVHcloud's scalable AI infrastructure, yo
 
 This new integration offers you several advantages:
 
-- **Type Safety**: Leverage Pydantic's validation to ensure structured, validated outputs from LLMs
-- **Production-Ready**: Built-in error handling, retry logic, and validation for reliable applications
-- **Simplicity**: Create AI agents in just a few lines of code
-- **Flexibility**: Use any OVHcloud AI model in your Pydantic AI applications
-- **Models**: All of our models are available through Pydantic AI!
+- **Type Safety**: Leverage Pydantic's validation to ensure structured, validated outputs from LLMs.
+- **Production-Ready**: Built-in error handling, retry logic, and validation for reliable applications.
+- **Simplicity**: Create AI agents in just a few lines of code.
+- **Flexibility**: Use any OVHcloud AI model in your Pydantic AI applications.
+- **Models**: All of our models are available through Pydantic AI.
 
 ## Requirements
 
 Before getting started, make sure you have:
 
-1. An OVHcloud account with access to AI Endpoints
-2. Python 3.8 or higher installed
-3. An API key generated from the [OVHcloud Control Panel](/links/manager), in `Public Cloud`{.action} > `AI Endpoints` > `API keys`{.action}
+- An OVHcloud account with access to AI Endpoints.
+- Python 3.8 or higher installed.
+- An API key generated from the [OVHcloud Control Panel](/links/manager), in the `Public Cloud`{.action} section > `AI Endpoints` > `API keys`{.action}.
 
 ![Generate an API key](images/generate_an_api_key.png){.thumbnail}
 
@@ -62,11 +62,11 @@ Or using uv:
 uv add pydantic-ai
 ```
 
-And that's all, you are ready to go! 🎉
+You are now ready to get started.
 
-### Basic Configuration
+### Basic configuration
 
-#### Environment Variables
+#### Environment variables
 
 The recommended method to configure your API key is using environment variables:
 
@@ -80,7 +80,7 @@ Or use a `.env` file:
 OVHCLOUD_API_KEY=your-api-key
 ```
 
-### Basic Usage
+### Basic usage
 
 Here's a simple usage example - you're ready in less than 5 lines of code:
 
@@ -92,7 +92,7 @@ result = agent.run_sync('What is the capital of France?')
 print(result.output)
 ```
 
-#### Using Custom Provider Configuration
+#### Using custom provider configuration
 
 If you need to configure the provider explicitly, you can use the `OVHcloudProvider` class:
 
@@ -110,9 +110,9 @@ result = agent.run_sync('What is the capital of France?')
 print(result.output)
 ```
 
-### Advanced Features
+### Advanced features
 
-#### Structured Output with Pydantic Models
+#### Structured output with Pydantic models
 
 Use Pydantic models to get validated, structured outputs:
 
@@ -136,7 +136,7 @@ print(result.data)
 # LocationInfo(city='Paris', country='France', population=2100000, capital=True)
 ```
 
-#### System Prompts and Context
+#### System prompts and context
 
 Add system prompts and context to guide your agent:
 
@@ -159,7 +159,7 @@ result = agent.run_sync(
 print(result.output)
 ```
 
-#### Async Operations
+#### Async operations
 
 Use async/await for better performance in concurrent applications:
 
@@ -186,7 +186,7 @@ async def main():
 asyncio.run(main())
 ```
 
-#### Function Calling / Tool Use
+#### Function calling / tool use
 
 Enable agents to call functions for extended capabilities:
 
@@ -217,7 +217,7 @@ result = agent.run_sync('What is the weather like in Paris?')
 print(result.output)
 ```
 
-#### Streaming Responses
+#### Streaming responses
 
 Stream responses for real-time user experience:
 
@@ -233,7 +233,7 @@ for event in agent.run_stream('Write a short story about a robot learning to coo
         print(event.data, end='', flush=True)
 ```
 
-#### Error Handling and Retries
+#### Error handling and retries
 
 Configure error handling and retry logic:
 
@@ -254,7 +254,7 @@ except PydanticAIError as e:
     print(f"Error: {e}")
 ```
 
-#### Custom Model Configuration
+#### Custom model configuration
 
 Configure model parameters for fine-tuned behavior:
 
@@ -277,13 +277,13 @@ result = agent.run_sync('Generate three creative business ideas for sustainable 
 print(result.output)
 ```
 
-### Available Models
+### Available models
 
 OVHcloud AI Endpoints offers a wide range of models accessible via Pydantic AI. For the complete and up-to-date list, visit our [model catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/).
 
 ## Go further
 
-You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also navigate in the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through Pydantic AI.
+You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also browse the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through Pydantic AI.
 
 For detailed information about Pydantic AI features, including advanced agent patterns and best practices, visit the [Pydantic AI documentation](https://ai.pydantic.dev/).
 
