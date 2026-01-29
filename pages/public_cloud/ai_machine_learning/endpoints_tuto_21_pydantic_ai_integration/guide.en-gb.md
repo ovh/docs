@@ -9,13 +9,13 @@ updated: 2026-01-29
 > AI Endpoints is covered by the [OVHcloud AI Endpoints conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud special conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-**New integration available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Pydantic AI](https://ai.pydantic.dev/). This integration allows you to build production-grade applications with Generative AI using Pydantic's data validation and type safety, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+**New integration available:** We're excited to announce a new integration for [AI Endpoints](/links/public-cloud/ai-endpoints) with [Pydantic AI](https://ai.pydantic.dev/). This integration allows you to build production-grade applications with Generative AI using Pydantic's data validation and type safety, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
+OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) allows developers to easily add AI features to their day-to-day developments.
 
-In this guide, we will show how to use [Pydantic AI](https://ai.pydantic.dev/) to integrate OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) into your Python applications for building type-safe, production-ready AI agents.
+In this guide, we will show how to use [Pydantic AI](https://ai.pydantic.dev/) to integrate OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) into your Python applications for building type-safe, production-ready AI agents.
 
 With Pydantic AI's agent framework and OVHcloud's scalable AI infrastructure, you can quickly build reliable applications that leverage Pydantic's validation capabilities to ensure structured and type-safe interactions with LLMs.
 
@@ -24,7 +24,7 @@ With Pydantic AI's agent framework and OVHcloud's scalable AI infrastructure, yo
 ## Definition
 
 - [Pydantic AI](https://ai.pydantic.dev/): A Python agent framework designed to build production-grade applications with Generative AI. It leverages Pydantic for data validation and type safety, ensuring structured and reliable interactions with LLMs. Pydantic AI provides a simple yet powerful API for creating AI agents with built-in validation, error handling, and type checking.
-- [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+- [AI Endpoints](/links/public-cloud/ai-endpoints): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ### Why is this integration important?
 
@@ -279,11 +279,11 @@ print(result.output)
 
 ### Available models
 
-OVHcloud AI Endpoints offers a wide range of models accessible via Pydantic AI. For the complete and up-to-date list, visit our [model catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/).
+OVHcloud AI Endpoints offers a wide range of models accessible via Pydantic AI. For the complete and up-to-date list, visit our [model catalog](/links/public-cloud/ai-endpointscatalog/).
 
 ## Go further
 
-You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also browse the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through Pydantic AI.
+You can find more information about Pydantic AI on their [official documentation](https://ai.pydantic.dev/). You can also browse the [AI Endpoints catalog](/links/public-cloud/ai-endpointscatalog/) to explore the models that are available through Pydantic AI.
 
 For detailed information about Pydantic AI features, including advanced agent patterns and best practices, visit the [Pydantic AI documentation](https://ai.pydantic.dev/).
 
