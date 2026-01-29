@@ -1,7 +1,7 @@
 ---
 title: Présentation des concepts
 excerpt: Présentation des concepts nécessaires à la compréhension de l’offre OVHcloud Connect
-updated: 2025-10-29
+updated: 2026-01-21
 ---
 
 ## Qu'est-ce que OVHcloud Connect ?
@@ -10,62 +10,43 @@ OVHcloud Connect est une connexion privée et dédiée entre votre réseau sur s
 
 ![OVHcloud Connect](images/VrackConnectDedicated2025.png){.thumbnail}
 
+> [!primary]
+> Pour des définitions techniques détaillées, reportez-vous au [Glossaire OVHcloud Connect](/pages/network/ovhcloud_connect/occ-glossary).
+>
+
 ## Avantages de l'offre
 
-### Dédié
+### Performance et Isolation
+Le mode dédié offre une connexion dont la bande passante (1 Gbps ou 10 Gbps) vous est exclusivement réservée. Votre trafic est totalement isolé d'Internet, vous permettant de gérer vos propres VLAN et vos plans d'adressage IP en toute sécurité.
 
-Le mode dédié est une connexion directe avec les services OVHcloud. Vous pouvez gérer différentes configurations, d'une connexion unique à une connexion multiple à l'aide de LACP (L2) ou BGP-ECMP (L3) avec une vitesse de port de 1 Gbps ou 10 Gbps. L'interface et la bande-passante ne sont pas partagées avec d'autres clients.
-
-### Privé
-
-Votre trafic est isolé d'Internet, vous gérez vos propres VLAN (L2) et/ou vos propres adresses IP (L3). Même les instances BGP sont privées et vous pouvez configurer l'ASN de votre choix.
-OVHcloud Connect est connecté à votre vRack avec tous les services compatibles.
-
-### Extension réseau
-
-OVHcloud Connect peut être connecté à votre réseau WAN ou à votre réseau de Datacentres. permettant une extension transparente vers le cloud. Ceci facilite les stratégies de cloud hybride et les migrations en conservant la topologie de vos VLAN existants ou vos adresses IP.
+### Extension réseau et Hybridation
+OVHcloud Connect permet une extension transparente de votre WAN ou de vos datacentres locaux vers le cloud. Cette approche facilite les stratégies de cloud hybride et les migrations en conservant votre topologie réseau existante.
 
 ### Haute disponibilité
+Le service permet d'interconnecter votre réseau via plusieurs points de présence (PoP) pour atteindre plusieurs datacentres OVHcloud. En utilisant des protocoles de routage dynamique, vous assurez une résilience maximale à vos services distribués.
 
-Grâce à BGP, vous pouvez interconnecter votre réseau via plusieurs PoP et atteindre plusieurs Datacentres OVHcloud. À partir du vRack, configurez BGP pour permettre une résilience maximale avec les services distribués.
+## Architecture du service
 
-## Composants
+Le fonctionnement d'OVHcloud Connect repose sur la création d'une liaison entre plusieurs composants clés :
 
-### PoP - EntryPoint
+- **EntryPoint (PoP) :** Le point de présence physique où votre réseau se raccorde à celui d'OVHcloud.
+- **Interconnexion (Cross-connect) :** La liaison fibre physique établie au sein du PoP pour lier vos équipements aux nôtres.
+- **EndPoint (DC) :** Le datacentre de destination hébergeant vos ressources.
+- **vRack :** Le réseau privé qui assure la distribution finale de la connexion vers vos services.
 
-Les points de présence (PoP) sont des installations comme Equinix, InterXion, Telehouse ou Global Switch. Le PoP est l'entrée de service d'OVHcloud Connect: nous l'appelons EntryPoint.
+## Principes de fonctionnement
 
-### DC - EndPoint
-
-Le Datacentre (DC) OVHcloud est la terminaison du service, le EndPoint.
-
-### Interconnexion
-
-Une interconnexion (Cross-connect) est une liaison physique (fibre monomode) gérée par les équipes d'installation dans le PoP. L'interconnexion est établie dans la MMR (Meet-Me-Room) entre la position donnée par OVHcloud et la position détenue par le client. Dans le cas d'une offre OVHcloud Connect Direct, le client doit commander et gérer l'interconnexion. 
-
-### vRack
-
-Réseau privé OVHcloud, disponible sur les ressources Cloud entre tous les Datacentres OVHcloud.
-
-### BGP
-
-Protocole de routage à utiliser lors de l'utilisation du mode de L3.
-
-## Principes
-
-OVHcloud Connect est basé sur une liaison virtuelle entre un EntryPoint et un EndPoint. Le EntryPoint est là où vous voulez établir l'interconnexion avec OVHcloud. Le EndPoint est le Datacentre OVHcloud où sont situés vos services. Vous pouvez choisir n'importe quel Datacentre de la même région que le PoP. 
+OVHcloud Connect est basé sur une liaison virtuelle entre un EntryPoint et un EndPoint. Vous pouvez choisir n'importe quel datacentre de la même région que le PoP. 
 
 ### Layer 2 (L2)
-
-La liaison virtuelle est un tunnel L2 pour OVHcloud Connect L2. Seul un PoP/EntryPoint avec 1 DC/EndPoint peut être configuré.
+La liaison virtuelle fonctionne comme un tunnel Ethernet (mode pont). Dans cette configuration, un **EntryPoint** est lié à **un seul EndPoint** spécifique.
 
 ### Layer 3 (L3)
+La liaison virtuelle s'appuie sur un routage IP dynamique (BGP). Elle crée un réseau à maillage complet permettant d'atteindre **n'importe quel EndPoint** d'une région depuis n'importe quel **EntryPoint** de cette même région.
 
-La liaison virtuelle est un réseau IP à maillage complet entre tout PoP/EntryPoint et tout DC/EndPoint de la même région.
+## PoP accessibles par fournisseur de service
 
-## PoPs accessibles par fournisseur de service
-
-La liste disponible sur [ce lien de notre site web](/links/network/ovhcloud-connect) présente les PoPs d'OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
+La liste disponible sur [ce lien de notre site web](/links/network/ovhcloud-connect) présente les PoP OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
 
 ## Régions accessibles par PoP
 
@@ -73,7 +54,7 @@ Lorsque vous établissez une connexion à OVHcloud Connect, votre trafic entre d
 
 Le tableau suivant répertorie les régions accessibles depuis chaque PoP :
 
-| Zone | PoPs OVHcloud Connect | Régions OVHcloud accessibles |
+| Zone | PoP OVHcloud Connect | Régions OVHcloud accessibles |
 | :--- | :--- | :--- |
 | **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
 | **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
