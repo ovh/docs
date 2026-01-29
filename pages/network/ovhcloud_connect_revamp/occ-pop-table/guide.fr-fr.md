@@ -38,7 +38,7 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >> | **Madrid** | Digital Realty - MAD2 | - | 1/10 |
 >> | **Paris** | Equinix - PA3 | Paris (`eu-west-par`) | 1/10/100 |
 >> | **Paris** | GlobalSwitch | Paris (`eu-west-par`) | 1/10 |
->> | **Paris** | Telehouse - TH2 | Paris (`eu-west-par`) | | 1/10/100 |
+>> | **Paris** | Telehouse - TH2 | Paris (`eu-west-par`) | 1/10/100 |
 >> | **Warsaw** | Equinix - WA2 | Warsaw (`eu-central-waw`) | 1/10 |
 >>
 > Amérique du Nord
