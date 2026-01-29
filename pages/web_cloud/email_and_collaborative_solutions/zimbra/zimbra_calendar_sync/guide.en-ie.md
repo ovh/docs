@@ -1,7 +1,7 @@
 ---
 title: "Zimbra - Synchronise a CalDAV calendar in an application"
 excerpt: "Find out how to add a Zimbra calendar to an application via the CalDAV protocol"
-updated: 2025-02-12
+updated: 2026-01-29
 ---
 
 <style>
@@ -67,7 +67,7 @@ Unlike ICS file sharing, sharing by email invitation allows you to dynamically s
 
 To initiate a sharing on another email address:
 
-- Log in to your Zimbra email address via the [webmail](/links/web/email).
+- Log in to your Zimbra email account via the [webmail](/links/web/email).
 - Go to the `Calendar`{.action} tab.
 - Right-click on the relevant calendar and click on `Share...`{.action}.
 - Click on the `Invite by email`{.action} tab.
