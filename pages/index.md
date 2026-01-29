@@ -576,6 +576,7 @@
         + [Getting started](hosted-private-cloud-snc-cloud-platform-getting-started)
             + [Mise en route de votre SNC Cloud Platform](hosted_private_cloud/cloud_platform/getting-started)
             + [Comment sauvegarder une instance SNC Cloud Platform](hosted_private_cloud/cloud_platform/save-an-instance)
+            + [Comment sauvegarder un bucket Object Storage SNC Cloud Platform](hosted_private_cloud/cloud_platform/backup-an-object-storage-bucket)
     + [Bare Metal Pod](hosted-private-cloud-baremetal-pod)
         + [Getting started](hosted-private-cloud-baremetal-pod-getting-started)
             + [Mise en route de votre Bare Metal POD SecNumCloud](hosted_private_cloud/baremetal_pod/snc_getting_started)
