@@ -74,27 +74,27 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail .h-500}
 
-**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Konto hinzufügen.**
+**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Account hinzufügen.**
 
-Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte „moderne“ Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
+Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
 
-Aus diesem Grund bitten wir Sie, den Abschnitt zu konsultieren, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
 #### Konfiguration mit der Oberfläche 1 <a name="add-account-int1"></a>
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Registerkarten klicken.
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
 
 > **Schritt 1**
 >>
 >> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf `Erweiterte Optionen`{.action}.
 >>
->> Aktivieren Sie anschließend das Feld `Mein Konto manuell konfigurieren`{.action} und klicken Sie auf `Verbindung`{.action}.
+>> Aktivieren Sie anschließend das Feld `Meinen Account manuell konfigurieren`{.action} und klicken Sie auf `Verbindung`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro02.png){.thumbnail .h-500}
 >>
 > **Schritt 2**
 >>
->> Wählen Sie unter den angebotenen Konto-Typen IMAP oder POP aus.
+>> Wählen Sie unter den angebotenen Account-Typen IMAP oder POP aus.
 >>
 >> Wir empfehlen, das IMAP-Protokoll zu verwenden.
 >>
@@ -102,29 +102,29 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritte
 >>
 > **Schritt 3**
 >>
->> Geben Sie das Passwort für Ihre E-Mail-Adresse ein und klicken Sie auf `Verbinden`{.action}.
+>> Geben Sie das Passwort des E-Mail-Accounts ein und klicken Sie auf `Verbinden`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro04.png){.thumbnail .h-500}
 >>
 > **Schritt 4**
 >>
->> Falls Outlook das Konto nicht automatisch konfigurieren kann, wird folgendes Fenster angezeigt.
+>> Falls Outlook den Account nicht automatisch konfigurieren kann, wird folgendes Fenster angezeigt.
 >>
->> Klicken Sie auf `Kontoeinstellungen ändern`{.action}.
+>> Klicken Sie auf `Accounteinstellungen ändern`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro05.png){.thumbnail .h-500}
 >>
 > **Schritt 5**
 >>
->> Im Abschnitt **Eingehender Posteingang**, tragen Sie ein:
+>> Im Abschnitt **Posteingang**, tragen Sie ein:
 >> 
->> - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das „**?**“ durch die Nummer Ihres Servers)
+>> - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das "**?**" durch die Nummer Ihres Servers)
 >> - Port: **993**
 >> - Verschlüsselungsmethode: **SSL/TLS**
 >>
->> Im Abschnitt **Ausgehender Postausgang**, tragen Sie ein:
+>> Im Abschnitt **Postausgang**, tragen Sie ein:
 >>
->> - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das „**?**“ durch die Nummer Ihres Servers)
+>> - Server: **pro**?**.mail.ovh.net** (ersetzen Sie das "**?**" durch die Nummer Ihres Servers)
 >> - Port: **587**
 >> - Verschlüsselungsmethode: **STARTTLS**
 >>
@@ -135,7 +135,7 @@ Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritte
 
 #### Konfiguration mit der Oberfläche 2 <a name="add-account-int2"></a>
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Registerkarten klicken.
+Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den unten stehenden Schritten, indem Sie auf die Tabs klicken.
 
 > **Schritt 1**
 >>
@@ -201,47 +201,47 @@ Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accoun
 
 ### Bestehende Einstellungen ändern
 
-**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Konto bearbeiten.**
+**Bei Windows 11 kann die Oberfläche von Outlook Classic variieren, wenn Sie ein Account bearbeiten.**
 
-Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte „moderne“ Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
+Je nach Nutzungsgeschichte von Outlook auf dem betreffenden Computer kann eine spezifische Konfiguration dazu führen, dass eine andere Oberfläche angezeigt wird. In einigen Fällen kann die sogenannte "moderne" Oberfläche (**Oberfläche 1**) deaktiviert werden zugunsten der klassischen Oberfläche (**Oberfläche 2**).
 
-Aus diesem Grund bitten wir Sie, den Abschnitt zu konsultieren, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
+Folgen Sie daher dem Abschnitt, der der Oberfläche entspricht, die auf Ihrem Bildschirm angezeigt wird.
 
 > **Oberfläche 1**
 >>
->> Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern :
+>> Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
 >>
->> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Konto im Dropdown-Menü **(1)** aus.
->> - Klicken Sie auf `Kontoeinstellungen`{.action } **(2)** darunter.
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Account im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Accounteinstellungen`{.action } **(2)** darunter.
 >> - Wählen Sie `Servereinstellungen`{.action} **(3)** aus, um das Konfigurationsfenster anzuzeigen.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro07.png){.thumbnail}
 >>
->> Das Fenster ist in zwei Teile unterteilt, **Eingehender Posteingang** und **Ausgehender Postausgang**. Klicken Sie auf den Teil, den Sie ändern möchten.
+>> Das Fenster ist in zwei Teile unterteilt, **Posteingang** und **Postausgang**. Klicken Sie auf den Teil, den Sie ändern möchten.
 >>
 >> > [!primary]
 >> >
->> > In unserem Beispiel wird der Servername „pro**?**.mail.ovh.net“ verwendet. Sie müssen das Zeichen „?“ durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
+>> > In unserem Beispiel wird der Servername "pro**?**.mail.ovh.net" verwendet. Sie müssen das Zeichen "?" durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
 >> >
->> > Sie können diese Zahl in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action} und dann `E-mail Pro`{.action} finden. Der Servername ist im Feld **Verbindung** des Reiters `Allgemeine Informationen`{.action} sichtbar.
+>> > Sie können diese Zahl in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action} und dann `E-mail Pro`{.action} finden. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>
 > **Oberfläche 2**
 >>
->> Wenn Ihr E-Mail-Konto bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern :
+>> Wenn Ihren E-Mail-Account bereits konfiguriert ist und Sie auf seine Einstellungen zugreifen müssen, um sie zu ändern:
 >>
->> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Konto im Dropdown-Menü **(1)** aus.
->> - Klicken Sie auf `Kontoeinstellungen`{.action} **(2)** darunter.
->> - Klicken Sie auf `Kontoeinstellungen...`{.action} **(3)**, um zum Konfigurationsfenster zu gelangen.
+>> - Klicken Sie auf `Datei`{.action} in der Menüleiste oben auf dem Bildschirm und wählen Sie das zu bearbeitende Account im Dropdown-Menü **(1)** aus.
+>> - Klicken Sie auf `Accounteinstellungen`{.action} **(2)**.
+>> - Klicken Sie auf `Accounteinstellungen...`{.action} **(3)**, um zum Konfigurationsfenster zu gelangen.
 >>
 >> ![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
 >>
->> - Das Kontoeinstellungenfenster wird angezeigt: Wählen Sie das betreffende E-Mail-Konto aus und klicken Sie auf `Ändern...`{.action}.
+>> - Das Accounteinstellungenfenster wird angezeigt: Wählen Sie den betreffenden E-Mail-Account aus und klicken Sie auf `Ändern...`{.action}.
 >>
 >> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
 >>
->> Um Ihr Konto zu konfigurieren, folgen Sie den Anweisungen ab **Schritt 2** im Abschnitt „[Konto hinzufügen - Konfiguration mit der Oberfläche 2](#add-account-int2)“ dieses Leitfadens.
+>> Um Ihren Account zu konfigurieren, folgen Sie den Anweisungen ab **Schritt 2** im Abschnitt "[Account hinzufügen - Konfiguration mit der Oberfläche 2](#add-account-int2)" dieser Anleitung.
 >>
 
 ### Allgemeine Einstellungen zum Senden und Empfangen <a name="settings-account"></a>
