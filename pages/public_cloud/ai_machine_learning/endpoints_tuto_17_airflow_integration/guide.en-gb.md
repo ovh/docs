@@ -9,13 +9,13 @@ updated: 2026-01-28
 > AI Endpoints is covered by the [OVHcloud AI Endpoints conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud special conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-**New integration available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Apache Airflow](https://airflow.apache.org/). This integration allows you to seamlessly orchestrate AI workloads on OVHcloud infrastructure directly from your Airflow DAGs, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+**New integration available:** We're excited to announce a new integration for [AI Endpoints](/links/public-cloud/ai-endpoints) with [Apache Airflow](https://airflow.apache.org/). This integration allows you to seamlessly orchestrate AI workloads on OVHcloud infrastructure directly from your Airflow DAGs, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
+OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) allows developers to easily add AI features to their day-to-day developments.
 
-In this guide, we will show how to use [Apache Airflow](https://airflow.apache.org/) to integrate OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) into your workflow orchestration pipelines.
+In this guide, we will show how to use [Apache Airflow](https://airflow.apache.org/) to integrate OVHcloud [AI Endpoints](/links/public-cloud/ai-endpoints) into your workflow orchestration pipelines.
 
 With Apache Airflow's powerful workflow management capabilities and OVHcloud's scalable AI infrastructure, you can programmatically author, schedule, and monitor AI-powered workflows with ease.
 
@@ -24,7 +24,7 @@ With Apache Airflow's powerful workflow management capabilities and OVHcloud's s
 ## Definition
 
 - [Apache Airflow](https://airflow.apache.org/): An open-source platform to programmatically author, schedule, and monitor workflows. Airflow allows you to define complex workflows as Directed Acyclic Graphs (DAGs) using Python, making it ideal for orchestrating data pipelines, AI workloads, and automated tasks.
-- [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+- [AI Endpoints](/links/public-cloud/ai-endpoints): A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ### Why is this integration important?
 
@@ -334,7 +334,7 @@ with DAG(
 
 ## Go further
 
-You can find more information about Apache Airflow on their [official documentation](https://airflow.apache.org/docs/). You can also browse the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through the Airflow provider.
+You can find more information about Apache Airflow on their [official documentation](https://airflow.apache.org/docs/). You can also browse the [AI Endpoints catalog](/links/public-cloud/ai-endpointscatalog/) to explore the models that are available through the Airflow provider.
 
 For detailed information about the provider, including additional operators and advanced features, visit the [OVHcloud Apache Airflow Provider documentation](https://ovh.github.io/apache-airflow-provider-ovhcloud-ai/).
 
