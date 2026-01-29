@@ -1,7 +1,7 @@
 ---
 title: 'Comment sauvegarder un bucket Object Storage SNC Cloud Platform'
 excerpt: 'Découvrez comment sauvegarder un bucket Object Storage SNC Cloud Platform sur un Object Storage distant'
-updated: 2026-01-26
+updated: 2026-01-29
 ---
 
 ## Objectif
