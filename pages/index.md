@@ -1550,6 +1550,7 @@
                 + [AI Endpoints - Using Function Calling with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_14_function_calling_langchain4j)
                 + [AI Endpoints - Model Context Protocol (MCP) with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_15_mcp_langchain4j)
                 + [AI Endpoints - Integration in Python with LiteLLM](public_cloud/ai_machine_learning/endpoints_tuto_16_litellm_integration)
+                + [AI Endpoints - Integration with Apache Airflow](public_cloud/ai_machine_learning/endpoints_tuto_17_airflow_integration)
         + [AI Partners Ecosystem](products/public-cloud-ai-and-machine-learning-ai-ecosystem)
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_01_lettria_billing_features_capabilities)
