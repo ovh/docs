@@ -213,8 +213,13 @@ public-cloud-databases-postgresql-security: Sécurité
 public-cloud-databases-postgresql-troubleshooting: Diagnostic
 public-cloud-databases-postgresql-tutorials: Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutoriels
+public-cloud-databases-valkey-configuration: Configuration
+public-cloud-databases-valkey-getting-started: Premiers pas
+public-cloud-databases-valkey-key-concepts: Concepts clés
+public-cloud-databases-valkey-migration: Migration
+public-cloud-databases-valkey-security: Sécurité
+public-cloud-databases-valkey-troubleshooting: Diagnostic
+public-cloud-databases-valkey-tutorials: Tutoriels
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Bases de données Public Cloud
 public-cloud-data-analytics-common-additional-resources: Ressources additionnelles
