@@ -45,6 +45,10 @@ Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](/l
 
 ### Otwórz KVM za pomocą apletu Java <a name="applet-java"></a>
 
+> [!primary]
+> Zalecamy zainstalowanie najnowszej wersji Java.
+>
+
 Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/).
 
 W sekcji `Remote KVM`{.action} Panelu klienta OVHcloud kliknij `Z apletu Java (KVM)`{.action}:
