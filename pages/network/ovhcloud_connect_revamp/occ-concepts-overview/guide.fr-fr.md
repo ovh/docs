@@ -29,20 +29,21 @@ Le service permet d'interconnecter votre réseau via plusieurs points de présen
 
 Le fonctionnement d'OVHcloud Connect repose sur la création d'une liaison entre plusieurs composants clés :
 
-- **EntryPoint (PoP) :** Le point de présence physique où votre réseau se raccorde à celui d'OVHcloud.
+- **Point of Presence (PoP) :** Le point de présence physique où votre réseau se raccorde à celui d'OVHcloud.
 - **Interconnexion (Cross-connect) :** La liaison fibre physique établie au sein du PoP pour lier vos équipements aux nôtres.
-- **EndPoint (DC) :** Le datacentre de destination hébergeant vos ressources.
-- **vRack :** Le réseau privé qui assure la distribution finale de la connexion vers vos services.
+- **Région :** Entité locale constituée d'une ou plusieurs zones de disponibilité (AZ), hébergeant les infrastructures d'OVHcloud.
+- **Availability Zone (AZ) :** La zone de disponibilité au sein d'une région qui contient le ou les datacenters hébergeant vos ressources.
+- **vRack :** Le réseau privé virtuel qui assure la distribution finale de la connexion vers vos services.
 
 ## Principes de fonctionnement
 
-OVHcloud Connect est basé sur une liaison virtuelle entre un EntryPoint et un EndPoint. Vous pouvez choisir n'importe quel datacentre de la même région que le PoP. 
+OVHcloud Connect est basé sur une liaison virtuelle entre un PoP et une AZ OVHcloud. Vous pouvez choisir n'importe quelle AZ de la même région que le PoP. 
 
 ### Layer 2 (L2)
-La liaison virtuelle fonctionne comme un tunnel Ethernet (mode pont). Dans cette configuration, un **EntryPoint** est lié à **un seul EndPoint** spécifique.
+La liaison virtuelle fonctionne comme un tunnel Ethernet (mode pont). Dans cette configuration, un **PoP** est lié à **une seule région** spécifique.
 
 ### Layer 3 (L3)
-La liaison virtuelle s'appuie sur un routage IP dynamique (BGP). Elle crée un réseau à maillage complet permettant d'atteindre **n'importe quel EndPoint** d'une région depuis n'importe quel **EntryPoint** de cette même région.
+La liaison virtuelle s'appuie sur un routage IP dynamique (BGP). Elle crée un réseau à maillage complet permettant d'atteindre **n'importe quelle région** d'une zone géographique donnée (EU, CA, US ou APAC) depuis n'importe quel **PoP** de cette même région.
 
 ## PoP accessibles par fournisseur de service
 
