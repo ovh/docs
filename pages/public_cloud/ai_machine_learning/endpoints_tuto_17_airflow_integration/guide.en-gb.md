@@ -334,7 +334,7 @@ with DAG(
 
 ## Go further
 
-You can find more information about Apache Airflow on their [official documentation](https://airflow.apache.org/docs/). You can also navigate in the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through the Airflow provider.
+You can find more information about Apache Airflow on their [official documentation](https://airflow.apache.org/docs/). You can also browse the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) to explore the models that are available through the Airflow provider.
 
 For detailed information about the provider, including additional operators and advanced features, visit the [OVHcloud Apache Airflow Provider documentation](https://ovh.github.io/apache-airflow-provider-ovhcloud-ai/).
 
