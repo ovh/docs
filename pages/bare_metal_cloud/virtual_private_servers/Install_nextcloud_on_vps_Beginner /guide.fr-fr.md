@@ -162,7 +162,7 @@ Pour un usage durable, nous recommandons :
 
 ## Allez plus loin
 Ce guide vous a permis de déployer rapidement Nextcloud sur un VPS à l’aide de Docker, sans configuration complexe.
-Si vous souhaitez aller plus loin - notamment en ajoutant le **HTTPS automatique**, un **reverse-proxy**, ou en hébergeant **plusieurs services** sur le même VPS - nous vous recommandons de consulter le **guide avancé**, qui présente une architecture plus robuste basée sur Docker et un reverse-proxy moderne.
+Si vous souhaitez aller plus loin - notamment en ajoutant le **HTTPS automatique**, un **reverse-proxy**, ou en hébergeant **plusieurs services** sur le même VPS - nous vous recommandons de consulter le [**guide avancé**](/pages/bare_metal_cloud/virtual_private_servers/Install_nextcloud_on_vps_Advanced), qui présente une architecture plus robuste basée sur Docker et un reverse-proxy moderne.
 
 Pour approfondir certains aspects ou renforcer la sécurité et la fiabilité de votre installation, vous pouvez également consulter les ressources suivantes :
 * [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
