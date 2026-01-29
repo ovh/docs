@@ -287,6 +287,7 @@ Mit dem Befehl `lsblk` können Sie überprüfen, ob Ihre Partition Teil einer RA
 >>
 >> ```sh
 >> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
 >> nvme0n1     259:0    0 476.9G  0 disk
 >> ├─nvme0n1p1 259:1    0   511M  0 part
 >> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
@@ -723,7 +724,7 @@ Um die EFI-Systempartition auf der neuen Disk wiederherzustellen, müssen wir **
 Wir gehen davon aus, dass beide Partitionen synchronisiert wurden und aktuelle Dateien enthalten.
 
 > [!warning]
-> Wenn ein größeres System-Update wie Kernel oder Grub durchgeführt wurde und beide Partitionen nicht synchronisiert wurden, lesen Sie [diesen Abschnitt](#efiraidgrub), sobald Sie die neue EFI-Systempartition erstellt haben.
+> Wenn ein größeres System-Update wie Kernel oder GRUB durchgeführt wurde und beide Partitionen nicht synchronisiert wurden, lesen Sie [diesen Abschnitt](#efiraidgrub), sobald Sie die neue EFI-Systempartition erstellt haben.
 >
 
 Formatiere zuerst die Partition:
@@ -825,7 +826,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 
 /// details | **Diesen Abschnitt aufklappen**
 
-> [!Warning]
+> [!warning]
 > Befolgen Sie die Schritte in diesem Abschnitt nur, wenn sie auf Ihren Fall zutreffen.
 > 
 
@@ -1164,7 +1165,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 /// details | **Diesen Abschnitt aufklappen**
 
 > [!tabs]
-> **Verwendung des Rescue-Modus**
+> **Im Rescue-Modus**
 >>
 >> Erstellen Sie außerhalb der `chroot`-Umgebung die [SWAP]-Partition **nvme0n1p4** neu und fügen Sie die Bezeichnung `swap-nvmenxxx` hinzu:
 >>
