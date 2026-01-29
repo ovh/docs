@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar la consola IPMI con un servidor dedicado"
 excerpt: "Cómo conectarse a un servidor desde el área de cliente sin utilizar software externo"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]

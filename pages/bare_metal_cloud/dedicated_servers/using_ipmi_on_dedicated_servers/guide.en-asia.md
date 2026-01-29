@@ -1,7 +1,7 @@
 ---
 title: "How to use the IPMI console with a dedicated server"
 excerpt: "Find out how to log on to your server from the OVHcloud Control Panel without the use of external software"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 ## Objective

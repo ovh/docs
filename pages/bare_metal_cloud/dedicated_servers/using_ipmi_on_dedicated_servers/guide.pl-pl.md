@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z konsoli IPMI na serwerze dedykowanym"
 excerpt: "Dowiedz się, jak zalogować się do serwera z poziomu panelu klienta bez korzystania z zewnętrznego oprogramowania"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]

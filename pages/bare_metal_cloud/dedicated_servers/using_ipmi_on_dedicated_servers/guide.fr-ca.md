@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser la console IPMI avec un serveur dédié"
 excerpt: "Découvrez comment vous connecter à votre serveur depuis votre espace client sans utiliser de logiciel externe"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 ## Objectif

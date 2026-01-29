@@ -1,7 +1,7 @@
 ---
 title: "Verwendung der IPMI-Konsole für Dedicated Server"
 excerpt: "Erfahren Sie hier, wie Sie sich über das OVHcloud Kundencenter auf Ihrem Server einloggen können, ohne externe Software zu verwenden"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]

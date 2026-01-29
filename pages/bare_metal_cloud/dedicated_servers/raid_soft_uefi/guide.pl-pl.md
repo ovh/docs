@@ -288,6 +288,7 @@ Możesz użyć komendy `lsblk`, aby potwierdzić, czy Twoja partycja jest częś
 >>
 >> ```sh
 >> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
 >> nvme0n1     259:0    0 476.9G  0 disk
 >> ├─nvme0n1p1 259:1    0   511M  0 part
 >> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
@@ -328,8 +329,6 @@ Jeśli twój ESP nie jest dublowany, mogą wystąpić następujące problemy:
 
 - Serwer może uruchomić się w normalnym trybu i można kontynuować odbudowę RAID.
 - Serwer nie może uruchomić się w normalnym trybie, użyj środowiska trybu rescue, aby odbudować RAID i zrekonfigurować partycję systemu EFI na nowym dysku.
-
-**Studium przypadku 2** - Wprowadzono istotne aktualizacje systemu (np. GRUB) i zsynchronizowano ESP.
 
 **Przypadek 2** – Były duże aktualizacje systemu (np. GRUB), a partycje ESP są zsynchronizowane.
 

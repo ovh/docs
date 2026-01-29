@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar IPMI en un servidor dedicado'
 excerpt: 'Cómo conectarse a un servidor mediante IPMI, sin necesidad de utilizar software externo'
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]
