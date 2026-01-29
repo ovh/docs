@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Databases - Comment gérer des situations de 'Full Disk' (EN)"
+title: "Gérer des situations de 'Full Disk' pour les bases de données Public Cloud (EN)"
 excerpt: Découvrez comment éviter, analyser et réparer un service Public Cloud Databases atteignant sa pleine capacité de disque
 updated: 2025-08-18
 ---

@@ -1,0 +1,20 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Visit our dedicated Discord channel
+    url: https://discord.gg/ovhcloud
+    about: Ask questions, provide feedback and interact directly with the team that builds our services.
+  - name: OVHcloud Community
+    url: https://community.ovhcloud.com/community/
+    about: Ask questions, search for information, post content, and interact with other OVHcloud Community members.
+  - name: Cloud Roadmap & Changelog
+    url: https://github.com/orgs/ovh/projects/16
+    about: All products and features for OVHcloud Cloud products.
+  - name: Hosting, Telco and Collaboration Roadmap & Changelog
+    url: https://github.com/orgs/ovh/projects/18
+    about: All products and features for OVHcloud related to Hosting and Collaboration solutions
+#  - name: GitHub Community Support
+#    url: https://github.com/orgs/community/discussions
+#    about: Please ask and answer questions here.
+#  - name: GitHub Security Bug Bounty
+#    url: https://bounty.github.com/
+#    about: Please report security vulnerabilities here.

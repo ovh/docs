@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Configurez votre instance MongoDB pour accepter les connexions entrantes (EN)
+title: Configurez les connexions entrantes d'un service Public Cloud Databases pour MongoDB (EN)
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
 updated: 2025-10-08
 ---

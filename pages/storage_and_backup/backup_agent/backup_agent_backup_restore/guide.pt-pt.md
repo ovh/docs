@@ -1,12 +1,18 @@
 ---
 title: "Backup Agent - Gerir as suas cópias de segurança e restaurações"
 excerpt: "Descubra como fazer cópias de segurança e restaurar os seus dados nos seus servidores Bare Metal com Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-28
 ---
 
 ## Objetivo
 
 Descubra como fazer cópias de segurança e restaurar os seus dados nos seus servidores Bare Metal com Backup Agent.
+
+> [!primary]
+> 
+> Encontre mais informações sobre o produto Backup Agent em [esta página](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+
+
 
 ## Requisitos
 
@@ -14,32 +20,6 @@ Descubra como fazer cópias de segurança e restaurar os seus dados nos seus ser
 - Um servidor Bare Metal com o Backup Agent instalado. Consulte o nosso guia "[Como configurar a sua primeira cópia de segurança](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)" para mais informações.
 
 ## Instruções
-
-### Criar uma cópia de segurança para o seu servidor
-
-Isto consiste em adicionar o seu servidor ao seu Backup Agent, transferir o agente e instalá-lo no seu servidor.
-
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá para a seção `Bare Metal Cloud`{.action} e selecione `Agente de Backup`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
-
-Clique no seu vspc-tenant, na secção `Serviços`{.action}.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Dirija-se à secção `Agentes`{.action}.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Clique no botão `Adicionar um servidor`{.action}.
-
-![Backup Agent Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Selecione o seu servidor e o sistema operativo.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Cópia de segurança
 
@@ -58,6 +38,7 @@ Trata-se de uma cópia de segurança completa do seu servidor, que será enviada
 > [!primary]
 > 
 > Não tem possibilidade de modificar ou desativar esta cópia de segurança automática.
+> Neste momento, não pode modificar a política que salvaguarda todo o seu servidor. Estamos a trabalhar para melhorar esta configuração no futuro.
 
 Poderá ver o sucesso desta cópia de segurança através de:
 

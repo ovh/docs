@@ -36,7 +36,7 @@ $ s3cmd mb s3://backup
 Commencez par choisir un mot de passe pour chiffrer vos sauvegardes. Dans ce guide, GPG est utilisé à cette fin :
 
 ```bash
-$ gpg --gen-random --armor 1 16
+$ gpg --gen-random --armor 1 20
 ```
 
 Notez ce mot de passe dans un endroit sûr, avec vos informations d’identification S3<sup>1</sup>. Ensuite, la configuration de Restic sera placée dans des variables d'environnement. Cela inclut des informations sensibles, comme votre secret S3 et le mot de passe du dépôt. Par conséquent, assurez-vous que les commandes suivantes **n’apparaissent pas** dans le fichier d'historique de votre shell. Ajustez le contenu des variables d'environnement en fonction du nom de votre bucket, de la région et des informations d'identification API de votre utilisateur.

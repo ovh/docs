@@ -1,12 +1,16 @@
 ---
 title: "Backup Agent - Zarządzanie kopiami zapasowymi i przywracaniem danych"
 excerpt: "Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent"
-updated: 2026-01-09
+updated: 2026-01-28
 ---
 
 ## Wprowadzenie
 
 Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent.
+
+> [!primary] 
+> Więcej informacji o produkcie Backup Agent można znaleźć na [tej stronie](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
+>
 
 ## Wymagania początkowe
 
@@ -14,32 +18,6 @@ Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare M
 - Serwer Bare Metal z zainstalowanym Backup Agent. Zapoznaj się z naszym przewodnikiem "[Jak skonfigurować pierwszą kopię zapasową](/pages/storage_and_backup/backup_agent/backup_agent_first_configuration)", aby uzyskać więcej informacji.
 
 ## W praktyce
-
-### Tworzenie kopii zapasowej dla serwera
-
-W tym celu należy dodać serwer do Backup Agent, pobrać agenta i zainstalować go na serwerze.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz `Agent kopii zapasowej`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-menu.png){.thumbnail}
-
-Kliknij swój vspc-tenant w sekcji `Usługi`{.action}.
-
-![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
-
-Przejdź do sekcji `Agenci`{.action}.
-
-![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos.png){.thumbnail}
-
-Kliknij przycisk `Dodaj serwer`{.action}.
-
-![Backup Agent](images/01-backup-agent-agent.png){.thumbnail}
-
-Wybierz swój serwer i system operacyjny.
-
-![Backup Agent Add Server 01](images/01-backup-agent-add-server-01.png){.thumbnail}
-
-![Backup Agent Add Server 02](images/01-backup-agent-add-server-02.png){.thumbnail}
 
 ### Kopia zapasowa
 
@@ -58,6 +36,7 @@ Ta kopia zapasowa wykona pełną kopię zapasową serwera, która zostanie wysł
 > [!primary]
 >
 > Nie możesz zmienić ani wyłączyć tej automatycznej kopii zapasowej.
+> W tej chwili nie możesz zmienić polityki, która tworzy kopie zapasowe całego serwera. Pracujemy nad ulepszeniem tej konfiguracji w przyszłości.
 
 Możesz sprawdzić sukces tej kopii zapasowej za pomocą:
 

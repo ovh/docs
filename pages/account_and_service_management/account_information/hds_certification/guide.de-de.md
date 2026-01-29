@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products HDS certification"
-updated: 2024-10-24
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -21,30 +21,37 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 
 | **Product** | **Certified** | 
 | --- | ---  | 
-| Dedicated Server | yes excluding Eco ranges | 
-| Nutanix on OVHcloud | yes | 
-| Enterprise File Storage | yes | 
+| Dedicated Server | yes | 
+| Dedicated Server - 3AZ | yes |
+| Dedicated Pod - SecNumCloud | yes |
+| File Storage | yes | 
 | Block Storage | yes | 
-| VMware on OVHcloud | yes excluding VMware Managed Bare Metal | 
-| Private Cloud SecNumCloud | yes | 
-| NAS-HA | yes | 
-| OpenStack Instances | yes excluding VPS | 
-| AI Deploy | yes | 
-| AI Notebooks | yes | 
-| AI Training | yes | 
-| Kubernetes | yes |
-| Search engine software platform | yes excluding Essential and Discovery plans | 
-| Timeseries | yes excluding Essential and Discovery plans |
-| NoSQL Database | yes excluding Essential and Discovery plans | 
-| Relational Database | yes excluding Essential and Discovery plans | 
-| Message broker | yes excluding Essential and Discovery plans | 
+| Managed Mutualized Virtualization | No | 
+| Managed Dedicated Cloud | yes | 
+| Managed Dedicated Cloud - SecNumCloud | yes | 
+| Public Cloud Instances | yes | 
+| Public Cloud Instances-3AZ | yes | 
+| Managed Containers | yes |
+| Notebooks Interface | yes | 
+| Managed Distributed Computing Cluster | yes |
+| Managed Orchestration | yes |
+| Managed Search engine software platform | yes | 
+| Managed Timeseries | yes | 
+| Managed In Memory Database | yes|
+| Managed Document Database | yes| 
+| Managed Relational Database | yes |
+| Managed Column-Oriented Database | yes | 
+| Managed Message broker | yes | 
 | Object Storage | yes | 
-| Private Registry | yes | 
-| Cold Storage |  yes | 
-| Logs Data Platform | yes | 
-| Grafana | yes excluding Essential and Discovery plans | 
-| Web Hosting | no | 
-| Emails on mutualized infrastructures | no |
-| Emails on private infrastructures | yes | 
-| Web Cloud Private Database | no | 
-| Domain Name | no | 
+| Object Storage-3AZ | yes | 
+| Managed OCI artifact Registry | yes | 
+| Cold Storage | yes  | 
+| Managed Log Manager | yes | 
+| Managed Data Visualization | yes | 
+| Managed Web Hosting | yes | 
+| Hosted Mailbox | No | 
+| Managed E-mail Server on Mutualized Infrastructure | no |
+| Managed Dedicated E-mail Infrastructure | yes | 
+| Managed Database System for Web Hosting | no | 
+| Domain Name | yes | 
+| Unified Data Platform | yes | 

@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2026-01-16
+updated: 2026-01-22
 ---
 
 ## Objective
@@ -46,7 +46,15 @@ Once you have completed this first form, a one-time code will be sent to the ema
 > If the email address you have entered is not valid or available, click `Change email address`{.action}.
 >
 
-Once you have entered and validated the code, fill in the rest of the form. Please ensure that you have set the **account type** among the choices offered.
+Once you have entered and validated the code, you have to define the **type of account** among the choices offered:
+
+- **Non-profit**: Set up an account for your nonprofit if you are registered in the national directory of companies and establishments. If you are not registered, please set up an individual account.
+- **Company**: Set up an account for your business, whether you are a registered business or a sole trader.
+- **Private individual**: Create an account as a private individual if you do not yet have a registered business or are in the process of getting your business set up.
+
+![account type choice](images/account-type-2025.png){.thumbnail}
+
+You will then be asked to enter your details. Make sure the information you have entered is correct.
 
 Once you have created your account, you will automatically be logged in to your account’s dashboard.
 
@@ -63,8 +71,16 @@ Your NIC-handle is what you will need to use in order to:
 - manage all of your services easily via the OVHcloud Control Panel
 - identify your customer account when you contact OVHcloud support, so that they can answer your queries.
 
-> [!warning]
+> [!success]
+> 
 > Make a note of your NIC handle, as you will need it for each time you log in to your account.
+>
+> **Tips: Use a password manager**
+>
+> You can use specific software programs to save and secure your OVHcloud account credentials (NIC handle and password).<br>
+> For example, you can use the password manager **KeePass**. It is a free, open-source, popular password manager.<br>
+> It is simple to use, and involves setting a master password — which must meet a complexity requirement — then using the master password to access a database containing all of your usernames and passwords. You can make the passwords stored in the database highly complex, because the software program will store them.<br>
+> The software can also generate random complex passwords, which it will save for all of the websites and applications you use.
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2026-01-19
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -150,13 +150,15 @@ When using AI Endpoints, the **following rate limits apply**:
 
 If you exceed this limit, a **429 error code** will be returned.
 
-If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
+If you require higher usage, please **[get in touch with us](/links/support)** to discuss increasing your rate limits.
 
 ### Billing and usage
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
-For your convenience, you can monitor your estimated consumption and resource usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+For your convenience, you can monitor your estimated consumption and model usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+
+![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
 
 ## Going further
 

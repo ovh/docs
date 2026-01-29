@@ -186,13 +186,23 @@ public-cloud-databases-common-security: Segurança
 public-cloud-databases-common-troubleshooting: Diagnóstico
 public-cloud-databases-common-tutorials: Tutoriais
 public-cloud-databases-common: Common
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb-additional-resources: Recursos adicionais
+public-cloud-databases-mongodb-configuration: Configuração
+public-cloud-databases-mongodb-getting-started: Introdução
+public-cloud-databases-mongodb-key-concepts: Conceitos-chave
+public-cloud-databases-mongodb-migration: Migração
+public-cloud-databases-mongodb-security: Segurança
+public-cloud-databases-mongodb-troubleshooting: Diagnóstico
+public-cloud-databases-mongodb-tutorials: Tutoriais
 public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql-additional-resources: Recursos adicionais
+public-cloud-databases-mysql-configuration: Configuração
+public-cloud-databases-mysql-getting-started: Introdução
+public-cloud-databases-mysql-key-concepts: Conceitos-chave
+public-cloud-databases-mysql-migration: Migração
+public-cloud-databases-mysql-security: Segurança
+public-cloud-databases-mysql-troubleshooting: Diagnóstico
+public-cloud-databases-mysql-tutorials: Tutoriais
 public-cloud-databases-mysql: MySQL
 public-cloud-databases-postgresql-additional-resources: Recursos adicionais
 public-cloud-databases-postgresql-configuration: Configuração
@@ -203,8 +213,13 @@ public-cloud-databases-postgresql-security: Segurança
 public-cloud-databases-postgresql-troubleshooting: Diagnóstico
 public-cloud-databases-postgresql-tutorials: Tutoriais
 public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey-configuration: Configuração
+public-cloud-databases-valkey-getting-started: Introdução
+public-cloud-databases-valkey-key-concepts: Conceitos-chave
+public-cloud-databases-valkey-migration: Migração
+public-cloud-databases-valkey-security: Segurança
+public-cloud-databases-valkey-troubleshooting: Diagnóstico
+public-cloud-databases-valkey-tutorials: Tutoriais
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Public Cloud Databases
 public-cloud-data-analytics-common-additional-resources: Recursos adicionais
@@ -394,8 +409,7 @@ web-cloud-phone-and-fax-fax-getting-started: Primeiros passos
 web-cloud-phone-and-fax-fax-configuration: Configuração
 web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Envio e receção de faxes
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-configuration-administration: Administrar
-web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-getting-started-administration: Administrar
 web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
 web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
 web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Números e alias

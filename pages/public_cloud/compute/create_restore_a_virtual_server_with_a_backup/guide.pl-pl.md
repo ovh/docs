@@ -163,7 +163,7 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 >> >
 >>
 > Przez OVHcloud API
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
 >> >

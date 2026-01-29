@@ -212,21 +212,21 @@ Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](/links/api) 
 >>
 >> - Wyświetl identyfikatory kluczy, korzystając z następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me GET /me/api/application
 >> >
 >>
 >> - Uzyskaj szczegóły klucza za pomocą następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me GET /me/api/application/{applicationId}
 >> >
 >>
 >> - Unieważnij klucz za pomocą następującego wywołania:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /me DELETE /me/api/application/{applicationId}
 >> >

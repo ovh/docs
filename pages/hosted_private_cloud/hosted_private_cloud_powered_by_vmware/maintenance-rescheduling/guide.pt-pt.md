@@ -42,7 +42,7 @@ A seguir, clique no botão `...`{.action} e em `Modificar a data de tratamento`{
 ![alteração horária](images/maintenance-date-edition01.png){.thumbnail}
 
 > [!primary]
-> Se o botão `Modificar a data de tratamento` {.ação} estiver cinzento, isto significa que esta manutenção não pode ser adiada.
+> Se o botão `Modificar a data de tratamento`{.action} estiver cinzento, isto significa que esta manutenção não pode ser adiada.
 
 Selecione uma data no calendário que lhe é apresentado. Apenas as datas não cinzentas podem ser selecionadas.<br>
 Introduza manualmente uma nova hora para esta manutenção ou deixe inalterado o horário inicialmente previsto. Se ultrapassar a última hora autorizada, a última hora de programação possível será automaticamente proposta.<br>

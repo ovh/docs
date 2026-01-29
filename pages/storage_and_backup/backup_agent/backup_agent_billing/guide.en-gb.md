@@ -19,7 +19,7 @@ We do not charge for the Backup Agent on your servers, i.e. you can deploy it on
 
 However, you will be billed per GB per month for using OVHcloud Object Storage. You will be billed at the beginning of each month for your usage during the previous month.
 
-Find the price per GB per month on our [website](/links/public-cloud/prices-object-storage).
+Find the price per GB per month on our [website](/links/storage/backup-agent).
 
 You can use the `Billing`{.action} dashboard in your [OVHcloud Control Panel](/links/manager) to view your current usage, and thus predict the final bill at the end of the month.
 
