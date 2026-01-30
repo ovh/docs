@@ -3,16 +3,15 @@ title: Available and planned features
 excerpt: ''
 slug: available-upcoming-features
 section: Technical resources
-updated: 2022-08-11
+updated: 2026-01-30
 ---
 
-**Last updated August 11th, 2022.**
 
 We list here the most frequently requested OVHcloud Managed Kubernetes features that are currently available or planned in the upcoming year.
 
 ### Available features
 
-- **Persistent Volumes**: Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. Details in the [working with persistent volumes](../ovh-kubernetes-persistent-volumes/) guide.
+- **Persistent Volumes**: Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. LUKS encrypted volumes using OVHcloud Managed Keys (OMK) are supported for enhanced data security at rest. Details in the [working with persistent volumes](../ovh-kubernetes-persistent-volumes/) guide. For a complete tutorial on encrypted volumes, see [Create encrypted Persistent Volumes with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/). For storage class availability: [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
 - **Load Balancer**: Use the integrated External Load Balancers to expose your services on any port of a dedicated public IPv4. Details available in the [exposing your services](../using-lb/) guide.
 - **Private Network**: Deploy your Kubernetes in an OVHcloud Public Cloud private network to consume and expose applications on our multiregion and multiproduct private network (vRack). Note : You can still leverage integrated External Load Balancers to expose some services on a public Internet IPv4.
 - **New versions**: We support the last 3 stable K8s versions and offer the latest one during the quarter following its official release. We also propose managed version upgrades.

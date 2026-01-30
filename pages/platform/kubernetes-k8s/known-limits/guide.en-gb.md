@@ -3,11 +3,10 @@ title: Known limits
 excerpt: 'Requirements and limits to respect'
 slug: known-limits
 section: Technical resources
-updated: 2023-03-03
+updated: 2026-01-30
 ---
 
 
-**Last updated 3rd March 2023.**
 
 <style>
  pre {
@@ -173,3 +172,30 @@ For more details, please refer to the [Resizing Persistent Volumes documentation
 The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
 A worker node can have a maximum of 254 persistent volumes attached to it, and a persistent volume can only be attached to a single worker node.  
 You can manually [configure multi-attach persistent volumes with NAS-HA](../configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
+
+### LUKS Encrypted Persistent Volumes
+
+OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK).
+
+> [!primary]
+> **Regional availability**
+>
+> LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+> - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), Paris
+> - **Germany**: DE1
+> - **Italy**: Milan
+> - **Canada**: BHS5
+> - **United States**: US-WEST-OR-1, US-EAST-VA-1
+>
+> Additional regions will be supported in the coming months.
+>
+> If your cluster is deployed in a supported region but the encrypted storage classes are not yet visible, they will be automatically deployed when you update your cluster.
+
+The following encrypted storage classes are available in supported regions:
+- `csi-cinder-high-speed-luks`
+- `csi-cinder-classic-luks`
+- `csi-cinder-high-speed-gen2-luks`
+
+For more information:
+- [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+- [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)

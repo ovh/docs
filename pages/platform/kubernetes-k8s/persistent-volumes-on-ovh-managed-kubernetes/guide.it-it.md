@@ -5,7 +5,7 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 section: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/ovh-kubernetes-persistent-volumes/'
-updated: 2022-10-17
+updated: 2026-01-30
 ---
 
 <style>
@@ -30,7 +30,6 @@ updated: 2022-10-17
  }
 </style>
 
-**Last updated 17th October 2022**
 
 ## Before you begin
 
@@ -91,6 +90,60 @@ The difference between them is the associated physical storage device. The `csi-
 When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](https://www.ovhcloud.com/it/public-cloud/block-storage/){.external}.
 
 Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](../resizing-persistent-volumes/) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
+
+### LUKS Encrypted Storage Classes
+
+In addition to the standard storage classes, OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). This provides encryption at rest for your persistent data with keys managed by OVHcloud.
+
+The following encrypted storage classes are available in supported regions:
+
+- `csi-cinder-high-speed-luks`
+- `csi-cinder-classic-luks`
+- `csi-cinder-high-speed-gen2-luks`
+
+These encrypted storage classes work similarly to their non-encrypted counterparts but provide an additional layer of security through LUKS encryption.
+
+> [!primary]
+> **Automatic deployment on cluster updates**
+>
+> If LUKS encrypted volumes are available in your region but the LUKS storage classes are not yet visible in your cluster, updating your cluster will automatically deploy the encrypted storage classes transparently.
+
+> [!warning]
+> LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+> - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), Paris
+> - **Germany**: DE1
+> - **Italy**: Milan
+> - **Canada**: BHS5
+> - **United States**: US-WEST-OR-1, US-EAST-VA-1
+>
+> Additional regions will be supported in the coming months.
+
+For detailed information about available storage classes and regional availability, please refer to:
+- [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+
+#### Creating encrypted Persistent Volumes
+
+To use LUKS encrypted volumes, specify the encrypted storage class in your PersistentVolumeClaim:
+
+```yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: encrypted-pvc
+  namespace: my-app
+spec:
+  storageClassName: csi-cinder-high-speed-gen2-luks
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+```
+
+> [!primary]
+> **Want to learn more?**
+>
+> For a complete step-by-step tutorial on creating and using encrypted Persistent Volumes with LUKS on OVHcloud Managed Kubernetes, including manual Storage Class creation and practical examples, please visit our blog post: [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/)
 
 ## Setting up a PersistentVolume
 

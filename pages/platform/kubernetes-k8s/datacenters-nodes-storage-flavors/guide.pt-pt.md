@@ -5,10 +5,9 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/datacenters-nodes-storage-flavors/'
-updated: 2022-02-16
+updated: 2026-01-30
 ---
 
-**Last updated February 16th, 2022.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
@@ -48,11 +47,39 @@ GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU
 
 ### Available persistent Storage Classes
 
-When adding a persistent volume though Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following Storage Classes:
+When adding a persistent volume through Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following Storage Classes:
 
+**Standard Storage Classes:**
 * `csi-cinder-high-speed` compliant with Managed Kubernetes Service after `1.18.*` release
 * `csi-cinder-classic` compliant with Managed Kubernetes Service after `1.18.*` release
 
-All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, and the fact that `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+**Encrypted Storage Classes (LUKS):**
+* `csi-cinder-high-speed-luks`
+* `csi-cinder-classic-luks`
+* `csi-cinder-high-speed-gen2-luks`
+
+All these Storage Classes are based on Cinder, the OpenStack block storage service. The difference between standard classes is the associated physical storage device: `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. Both are distributed transparently across three physical local replicas.
+
+The encrypted storage classes (`*-luks`) provide the same performance characteristics as their non-encrypted counterparts but with additional LUKS encryption using OVHcloud Managed Keys (OMK), protecting your data at rest.
+
+> [!primary]
+> **LUKS encrypted storage classes availability**
+>
+> LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+> - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), Paris
+> - **Germany**: DE1
+> - **Italy**: Milan
+> - **Canada**: BHS5
+> - **United States**: US-WEST-OR-1, US-EAST-VA-1
+>
+> Additional regions will be supported in the coming months.
+> 
+> If your cluster is deployed in a supported region but the encrypted storage classes are not yet available, they will be automatically deployed when you update your cluster.
+
+For a complete guide on using encrypted Persistent Volumes, visit: [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/)
+
+For more information about storage classes and their regional availability, please refer to: [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+
+This is detailed in the [Persistent Volumes](../ovh-kubernetes-persistent-volumes/) guide.
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.

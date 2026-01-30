@@ -4,10 +4,9 @@ slug: setting-up-a-persistent-volume
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
 section: Storage
 order: 0
-updated: 2022-11-28
+updated: 2026-01-30
 ---
 
-**Last updated 28th November 2022.**
 
 <style>
  pre {
@@ -320,6 +319,39 @@ ovh-managed-kubernetes-btw8lc-pvc-LONG-ID  10Gi      RWO           Retain       
 
 In the preceding output, you can see that the volume bound to PVC `default/test-pvc` has reclaim policy `Retain`.  
 It will not be automatically deleted when a user deletes PVC `default/test-pvc`
+
+## Using encrypted Persistent Volumes
+
+For enhanced security, you can use LUKS-encrypted Persistent Volumes. Simply replace the `storageClassName` in your PVC with an encrypted storage class:
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: test-pvc-encrypted
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: csi-cinder-high-speed-gen2-luks
+```
+
+The encrypted storage classes provide LUKS encryption using OVHcloud Managed Keys (OMK), protecting your data at rest without requiring any changes to your application code.
+
+> [!primary]
+> For a comprehensive guide on using encrypted volumes, including manual Storage Class creation and complete examples, see our blog post: [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/)
+
+> [!warning]
+> LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+> - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), Paris
+> - **Germany**: DE1
+> - **Italy**: Milan
+> - **Canada**: BHS5
+> - **United States**: US-WEST-OR-1, US-EAST-VA-1
+>
+> Additional regions will be supported in the coming months. Check the [Block Storage class guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119) for the latest regional availability.
 
 ## Go further
 

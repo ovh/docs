@@ -6,7 +6,7 @@ section: Storage
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/resizing-persistent-volumes/'
-updated: 2021-10-19
+updated: 2026-01-30
 ---
 
 <style>
@@ -31,7 +31,6 @@ updated: 2021-10-19
  }
 </style>
 
-**Last updated 19<sup>th</sup> October 2021.**
 
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
 
@@ -51,7 +50,12 @@ You also need to know how PVs are handled on OVHcloud Managed Kubernetes service
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
 > This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/de/public-cloud/prices/#storage)
-> 
+
+> [!primary]
+> **LUKS encrypted volumes support**
+>
+> Volume resizing works with both standard and LUKS encrypted storage classes (`csi-cinder-high-speed-luks`, `csi-cinder-classic-luks`, `csi-cinder-high-speed-gen2-luks`). The resizing process is identical for encrypted and non-encrypted volumes.
+ 
 ## Let's make a Persistent Volume Claim
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
