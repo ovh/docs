@@ -1,5 +1,5 @@
 ---
-title: Mettre à jour la flavor d'un service Analytics (EN)
+title: "Mettre à jour la flavor d'un service Analytics (EN)"
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2025-02-03
 ---
