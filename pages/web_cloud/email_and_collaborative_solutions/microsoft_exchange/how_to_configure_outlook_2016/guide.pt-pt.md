@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar uma conta de e-mail no Outlook clássico para Windows'
 excerpt: 'Descubra como configurar uma conta Exchange no Outlook clássico para Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

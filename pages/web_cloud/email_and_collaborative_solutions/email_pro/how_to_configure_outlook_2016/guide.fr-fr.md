@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook classique pour Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

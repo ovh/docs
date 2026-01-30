@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Skonfigurowanie konta e-mail w klasycznym Outlooku dla Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w klasycznym programie Outlook na urządzeniu z systemem Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

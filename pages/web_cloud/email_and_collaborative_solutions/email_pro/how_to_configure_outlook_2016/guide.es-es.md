@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configurar una cuenta de correo en Outlook clásico para Windows'
 excerpt: 'Cómo configurar una cuenta Email Pro en Outlook clásico para Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan / Zimbra Starter - Setting up your e-mail address on Classic Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan or Zimbra Starter email address in Classic Outlook for Windows"
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -55,13 +55,13 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!warning]
 >
-> This documentation applies only to the **new Outlook** and not to the "[classic Outlook](https://support.microsoft.com/en-gb/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" available in the Microsoft 365 suite or previously installed on your computer.
+> This documentation applies only to **Outlook classic** available in the Microsoft 365 suite. If you are using the new Outlook, please refer to our guide "[MX plan - Configure your MX plan account on the New Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)".
 >
-> To distinguish between the two Outlook versions when both are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below. The new Outlook has no special mention.
+> To install Outlook classic on your Windows computer, download it from the Microsoft page "[Install or reinstall classic Outlook on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)" and install it.
+>
+> Once the installation is complete, to distinguish the two versions when they are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below.
 >
 > ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
->
-> To configure your MX Plan or Zimbra Starter email address on classic Outlook, refer to our guide "[MX Plan / Zimbra Starter - Configure your email address on classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)".
 
 ### Add the account <a name="add-account"></a>
 

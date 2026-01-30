@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure your email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

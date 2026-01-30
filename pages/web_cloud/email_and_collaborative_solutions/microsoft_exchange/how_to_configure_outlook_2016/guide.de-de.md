@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - E-Mail-Account auf klassischem Outlook für Windows einrichten'
 excerpt: 'Informationen zum Konfigurieren eines Exchange Accounts in einem klassischen Outlook für Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>

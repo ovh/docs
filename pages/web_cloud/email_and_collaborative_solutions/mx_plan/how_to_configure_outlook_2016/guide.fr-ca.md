@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurer son adresse e-mail sur Outlook classique pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook classique pour Windows"
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -40,7 +40,7 @@ Les adresses e-mail de l'offre **MX Plan** peuvent être configurées sur un log
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 
-Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](/links/transversal/marketplace-support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 
 ///
 
@@ -77,11 +77,81 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ![Outlook](images/config-outlook-mxplan01.png){.thumbnail .h-500}
 
+**Sur Windows 11, l'interface d'Outlook classique peut différer lorsque vous ajoutez un compte.**
+
+Selon l’historique d’utilisation d’Outlook sur le poste concerné, une configuration spécifique peut entraîner l’affichage d’une interface différente. Dans certains cas, l’interface dite « moderne » (**interface 1**) peut être désactivée au profit de l’interface historique (**interface 2**).
+
+C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
+
+#### Configuration avec l'interface 1 <a name="add-account-int1"></a>
+
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
 
 > [!warning]
 >
-> Il est nécessaire de bien renseigner la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
+> Il est nécessaire de bien relever la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Renseignez votre adresse e-mail, puis cliquez sur `Options avancées`{.action}.
+>>
+>> Cochez ensuite la case `Configurer mon compte manuellement`{.action} et cliquez sur `Connexion`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan02.png){.thumbnail .h-500}
+>>
+> **Étape 2**
+>>
+>> Parmi les types de comptes proposés, choisissez IMAP ou POP.
+>>
+>> Nous recommandons l’utilisation du protocole IMAP.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan03.png){.thumbnail .h-500}
+>>
+> **Étape 3**
+>>
+>> Saisissez le mot de passe de votre adresse e-mail, puis cliquez sur `Se connecter`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan04.png){.thumbnail .h-500}
+>>
+> **Étape 4**
+>>
+>> Si Outlook ne parvient pas à configurer automatiquement le compte, la fenêtre suivante s’affiche.
+>>
+>> Cliquez sur `Modifier les paramètres du compte`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan05.png){.thumbnail .h-500}
+>>
+> **Étape 5**
+>>
+>> Dans la section **Courrier entrant**, renseignez :
+>>
+>> - Serveur :
+>>     - **EUROPE** : imap.mail.ovh.net **ou** ssl0.ovh.net
+>>     - **AMERIQUE/ASIE-PACIFIQUE** : imap.mail.ovh.ca
+>> - Port : **993**
+>> - Méthode de chiffrement : **SSL/TLS**
+>>
+>> Dans la section **Courrier sortant**, renseignez :
+>>
+>> - Serveur :
+>>     - **EUROPE** : smtp.mail.ovh.net **ou** ssl0.ovh.net
+>>     - **AMERIQUE/ASIE-PACIFIQUE** : smtp.mail.ovh.ca
+>> - Port : **465**
+>> - Méthode de chiffrement : **SSL/TLS**
+>>
+>> Cliquez sur `Suivant`{.action} pour valider.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan06.png){.thumbnail .h-500}
+>>
+
+#### Configuration avec l'interface 2 <a name="add-account-int2"></a>
+
+Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
+
+> [!warning]
+>
+> Il est nécessaire de bien relever la valeur correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
 > [!tabs]
 > **Étape 1**
@@ -152,18 +222,49 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 ### Modifier les paramètres existants
 
-Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
+**Sur Windows 11, l'interface d'Outlook classique peut différer lorsque vous modifiez un compte.**
 
-- Allez dans `Fichier`{.action} depuis la barre de menu en haut de votre écran.
-- Sélectionnez le compte à modifier dans le menu déroulant **(1)**.
-- Cliquez sur `Paramètres du compte`{.action} **(2)** en dessous.
-- Cliquez sur `Paramètres du compte...`{.action} **(3)** pour accéder à la fenêtre de paramètres.
+Selon l’historique d’utilisation d’Outlook sur le poste concerné, une configuration spécifique peut entraîner l’affichage d’une interface différente. Dans certains cas, l’interface dite « moderne » (**interface 1**) peut être désactivée au profit de l’interface historique (**interface 2**).
 
-![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l’interface affichée sur votre écran.
 
-- La fenêtre de paramètres des comptes s'affiche, sélectionnez le compte e-mail concerné et cliquez sur `Modifier...`{.action}.
-
-![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+> [!tabs]
+> **Interface 1**
+>>
+>> Si votre compte e-mail est déjà configuré et que vous devez accéder à ses paramètres pour les modifier :
+>>
+>> - Cliquez sur `Fichier`{.action} dans la barre de menu en haut de l’écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+>> - Cliquez sur `Paramètres du compte`{.action } **(2)** en dessous.
+>> - Sélectionnez `Paramètres du serveur`{.action} **(3)** pour afficher la fenêtre de configuration.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
+>>
+>> La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur la partie que vous souhaitez modifier.
+>>
+>> > [!primary]
+>> >
+>> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service E-mail Pro.
+>> >
+>> > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
+>>
+> **Interface 2**
+>>
+>> Si votre compte e-mail est déjà configuré et que vous devez accéder à ses paramètres pour les modifier :
+>>
+>> - Cliquez sur `Fichier`{.action} dans la barre de menu en haut de l’écran, puis sélectionnez le compte à modifier dans le menu déroulant **(1)**.
+>> - Cliquez sur `Paramètres du compte`{.action} **(2)** en dessous.
+>> - Cliquez sur `Paramètres du compte...`{.action} **(3)** pour accéder à la fenêtre de configuration.
+>>
+>> ![Outlook](images/config-outlook-mxplan06.png){.thumbnail}
+>>
+>> - La fenêtre de paramètres de comptes s'affiche : sélectionnez le compte e-mail concerné, puis cliquez sur `Modifier...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
+>>
+>> Pour configurer votre compte, suivez les instructions à partir de **l'étape 2** dans la partie « [Ajouter le compte - Configuration avec l'interface 2](#add-account-int2) » de ce guide.
+>>
 
 ### Paramètre généraux d'envoi et de réception <a name="settings-account"></a>
 
