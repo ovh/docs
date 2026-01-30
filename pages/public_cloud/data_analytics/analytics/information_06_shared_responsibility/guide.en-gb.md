@@ -1,5 +1,5 @@
 ---
-title: Analytics - Responsibility model
+title: Responsibility model for Analytics
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2025-12-04
 ---
