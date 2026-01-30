@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2026-01-23
+updated: 2026-01-30
 ---
 
 > [!primary]
@@ -86,7 +86,7 @@ Once you have selected the category of model you want to use, you will be presen
 
 For example, if you select the `Code LLM` category, you will see a list of available code assistant models.
 
-To access one of them, simply click the name of the model you want to use. Let's take the `Qwen2.5-​Coder-​32B-​Instruct` code assistant as our example.
+To access one of them, simply click the name of the model you want to use. Let's take the `gpt-oss-120b` code assistant as our example.
 
 This will take you to a dedicated page with several options for interacting with the chosen model, including the ability to view its specifications. Here is an overview of the available options:
 
@@ -96,6 +96,22 @@ This will take you to a dedicated page with several options for interacting with
 >> This option provides a user-friendly interface to test and explore the model's capabilities, giving you a chance to see how it works before making an API call. Please note that Large Language Models (LLMs) in the playground are **currently limited to 1024 output tokens** for testing purposes. This means that LLMs will not generate responses longer than 1024 tokens in the playground, allowing you to test and validate their behavior.
 >>
 >> ![AI Endpoints playground overview](images/playground_demo.png){.thumbnail}
+>>
+> **API**
+>>
+>> The API section provides access to POST routes that you can use to send a request to the model and receive an output.
+>>
+>> ![AI Endpoints API overview](images/api_demo.png){.thumbnail}
+>>
+>> For LLMs, two POST routes are available: `Chat Completions` and `Completions`. Here's an example of how to use the `Chat Completions` API:
+>>
+>> Click the `Chat Completions`{.action} endpoint in the API section. Once there, select one of the available input schemas.
+>>
+>> Here you can also find information on how to send a correct request to the model (existing parameters). Examples of usage are provided. You will also find there the output schema example. You can modify the input schema if needed to customize the request you are sending. When you are ready, click `TRY`{.action} to send your request.
+>>
+>> Upon executing the request, a cURL command will be displayed, representing the request you just sent. This can be useful for re-sending the command using a terminal. Additionally, the server's response body will also be provided, displaying the output of the model.
+>>
+>> You can follow similar steps for using the `Completions` API.
 >>
 > **Documentation**
 >>
@@ -110,22 +126,6 @@ This will take you to a dedicated page with several options for interacting with
 >> There, you will find guides related to AI Endpoints that you may find helpful in learning how to use the model more effectively. Whether you're building a chatbot with Langchain and JavaScript or creating a video translator app, we provide step-by-step guidance to support your AI projects.
 >>
 >> ![AI Endpoints tutorials overview](images/tutorials_demo.png){.thumbnail}
->>
-> **API**
->>
->> The API section provides access to POST routes that you can use to send a request to the model and receive an output.
->>
->> ![AI Endpoints API overview](images/api_demo.png){.thumbnail}
->>
->> For LLMs, two POST routes are available: `Chat Completions` and `Completions`. Here's an example of how to use the `Chat Completions` API:
->>
->> Click the `Chat Completions`{.action} endpoint in the API section. Once there, select one of the available input schemas.
->>
->> Here you can also find information on how to send a correct request to the model (existing parameters). Examples of usage are provided. You will also find there the output schema example. Click `Try it out`{.action} to prepare the request. There, you can modify the input schema if needed to customize the request you are sending. When you are ready, click `Execute`{.action} to send your modified request.
->>
->> Upon executing the request, a cURL command will be displayed, representing the request you just sent. This can be useful for re-sending the command using a terminal. Additionally, the server's response body will also be provided, displaying the output of the model.
->>
->> You can follow similar steps for using the `Completions` API.
 
 ### Revoke your API access key
 
