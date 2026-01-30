@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Zarządzanie kopiami zapasowymi i przywracaniem danych"
 excerpt: "Dowiedz się, jak tworzyć kopie zapasowe i przywracać dane na serwerach Bare Metal za pomocą Backup Agent"
-updated: 2026-01-28
+updated: 2026-01-30
 ---
 
 ## Wprowadzenie
@@ -53,13 +53,52 @@ Jeśli to konieczne, możesz uruchomić ręczną kopię zapasową.
 
 Będzie to również pełna kopia zapasowa serwera i zawsze zostanie wysłana do zdalnego punktu przechowywania.
 
-Aby utworzyć ręczną kopię zapasową, otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
+Aby utworzyć ręczną kopię zapasową, kliknij na kartę odpowiadającą Twojemu systemowi operacyjnemu:
 
-![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
-
-Kliknij przycisk `Backup Now`{.action}, aby uruchomić kopię zapasową:
-
-![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
+> [!tabs]
+> Windows
+>>
+>> Otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
+>>
+>> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
+>>
+>> Kliknij przycisk `Backup Now`{.action}, aby uruchomić kopię zapasową:
+>>
+>> ![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
+>
+> Linux
+>>
+>> Aby uruchomić ręczną kopię zapasową w systemie Linux, możesz użyć wiersza poleceń.
+>>
+>> Połącz się z serwerem Bare Metal przez SSH i wykonaj następujące polecenie, aby wyświetlić listę zadań kopii zapasowej:
+>>
+>> ```bash
+>> sudo veeamconfig job list
+>> ```
+>>
+>> Aby uruchomić ręczną kopię zapasową, użyj następującego polecenia, zastępując `<nazwa_zadania>` nazwą zadania kopii zapasowej:
+>>
+>> ```bash
+>> sudo veeamconfig job start <nazwa_zadania>
+>> ```
+>>
+>> Jeśli chcesz uruchomić wszystkie zadania kopii zapasowej, użyj:
+>>
+>> ```bash
+>> sudo veeamconfig job start --all
+>> ```
+>>
+>> Możesz śledzić postęp kopii zapasowej, przeglądając aktywne sesje:
+>>
+>> ```bash
+>> sudo veeamconfig session list
+>> ```
+>>
+>> Możesz również uzyskać dostęp do interfejsu do interakcji z produktem, wpisując to polecenie:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
 
 ### Przywracanie danych
 
@@ -70,35 +109,95 @@ Jeśli potrzebujesz przywrócić dane, masz dwie opcje:
 
 #### Kreator przywracania plików
 
-Aby użyć kreatora przywracania plików, otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
+Aby przywrócić pliki i foldery, kliknij na kartę odpowiadającą Twojemu systemowi operacyjnemu:
 
-![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
-
-Przejdź do menu i wybierz `Restore File`{.action}:
-
-![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
-
-Wybierz żądany punkt przywracania w kreatorze:
-
-![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
-
-Następnie potwierdź:
-
-![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
-
-Na koniec wyszukaj swój plik i wybierz opcję:
-
-![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
-
-- Przywracanie - Nadpisanie: Pozwala przywrócić plik, nadpisując ten obecnie znajdujący się na serwerze.
-- Przywracanie - Zachowanie: Pozwala przywrócić plik, zachowując ten obecnie znajdujący się na serwerze.
-- Kopiowanie do: Pozwala skopiować plik do lokalizacji na Twoim serwerze.
-- Eksploracja: Pozwala eksplorować kopię zapasową.
-- Właściwości: Pozwala wyświetlić właściwości pliku.
-
-Uruchomienie przywracania spowoduje wyświetlenie końcowego okna, które pokaże transfer:
-
-![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
+> [!tabs]
+> Windows
+>>
+>> Otwórz aplikację "Veeam Agent" na swoim serwerze Bare Metal:
+>>
+>> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
+>>
+>> Przejdź do menu i wybierz `Restore File`{.action}:
+>>
+>> ![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
+>>
+>> Wybierz żądany punkt przywracania w kreatorze:
+>>
+>> ![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
+>>
+>> Następnie potwierdź:
+>>
+>> ![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
+>>
+>> Na koniec wyszukaj swój plik i wybierz opcję:
+>>
+>> ![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
+>>
+>> - Przywracanie - Nadpisanie: Pozwala przywrócić plik, nadpisując ten obecnie znajdujący się na serwerze.
+>> - Przywracanie - Zachowanie: Pozwala przywrócić plik, zachowując ten obecnie znajdujący się na serwerze.
+>> - Kopiowanie do: Pozwala skopiować plik do lokalizacji na Twoim serwerze.
+>> - Eksploracja: Pozwala eksplorować kopię zapasową.
+>> - Właściwości: Pozwala wyświetlić właściwości pliku.
+>>
+>> Uruchomienie przywracania spowoduje wyświetlenie końcowego okna, które pokaże transfer:
+>>
+>> ![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
+>
+> Linux
+>>
+>> Aby przywrócić pliki i foldery w systemie Linux, masz dwie opcje: przez interfejs graficzny lub przez wiersz poleceń.
+>>
+>> #### Przez interfejs graficzny
+>>
+>> 1. Połącz się ze swoim serwerem Bare Metal przez SSH.
+>> 2. Uruchom interfejs Veeam, wpisując następujące polecenie:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
+>>
+>> 3. W interfejsie wybierz opcję przywracania plików.
+>> 4. Wybierz kopię zapasową i żądany punkt przywracania.
+>> 5. Przejrzyj kopię zapasową, aby znaleźć pliki lub foldery do przywrócenia.
+>> 6. Wybierz pliki i wybierz akcję przywracania:
+>>    - Przywróć do oryginalnej lokalizacji
+>>    - Kopiuj do nowej lokalizacji
+>>    - Przeglądaj kopię zapasową
+>>
+>> #### Przez wiersz poleceń
+>>
+>> Aby przywrócić pliki przez wiersz poleceń, musisz najpierw zamontować kopię zapasową:
+>>
+>> 1. Wyświetl listę dostępnych kopii zapasowych:
+>>
+>> ```bash
+>> sudo veeamconfig backup list
+>> ```
+>>
+>> 2. Wyświetl listę punktów przywracania kopii zapasowej:
+>>
+>> ```bash
+>> sudo veeamconfig restore list --backup <nazwa_kopii>
+>> ```
+>>
+>> 3. Zamontuj punkt przywracania:
+>>
+>> ```bash
+>> sudo veeamconfig mount --backup <nazwa_kopii> --restorepoint <nazwa_punktu>
+>> ```
+>>
+>> 4. Po zamontowaniu możesz uzyskać dostęp do plików przez punkt montowania (zwykle w `/mnt/veeam/`).
+>>
+>> 5. Skopiuj żądane pliki z punktu montowania do ich miejsca docelowego.
+>>
+>> 6. Po zakończeniu przywracania odmontuj kopię zapasową:
+>>
+>> ```bash
+>> sudo veeamconfig unmount --backup <nazwa_kopii>
+>> ```
+>>
+>> Więcej informacji można znaleźć w [dokumentacji Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_gui.html?ver=13) i [dokumentacji dotyczącej przywracania z wiersza poleceń](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_cmd.html?ver=13).
 
 #### Veeam Baremetal Recovery ISO
 
