@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2025-12-02
+updated: 2026-01-30
 ---
 
 <style>
@@ -87,6 +87,24 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 ```
 
 For more details, please refer to the [Resizing Persistent Volumes documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
+
+### LUKS Encrypted Persistent Volumes
+
+OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK).
+
+> [!primary]
+> This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
+
+The following encrypted storage classes are available:
+
+- `csi-cinder-high-speed-luks`
+- `csi-cinder-classic-luks`
+- `csi-cinder-high-speed-gen2-luks`
+
+For more information:
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
+- [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 ## LoadBalancer
 

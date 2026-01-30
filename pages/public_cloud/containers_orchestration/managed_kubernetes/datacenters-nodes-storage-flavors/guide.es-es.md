@@ -1,7 +1,7 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2024-08-14
+updated: 2026-01-30
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
@@ -63,5 +63,33 @@ All these `Storage Classes` are based on Cinder, the OpenStack block storage ser
 
 High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
 This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) guide.
+
+#### LUKS Encrypted Storage Classes
+
+OVHcloud Managed Kubernetes also supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). The following encrypted storage classes are available in supported regions:
+
+* `csi-cinder-high-speed-gen2-luks` - Encrypted version of High Speed Gen2 (progressive performance, SSD NVMe)
+* `csi-cinder-high-speed-luks` - Encrypted version of High Speed (fixed 3,000 IOPS)
+* `csi-cinder-classic-luks` - Encrypted version of Classic (spinning disks, 200 IOPS)
+
+> [!primary]
+> **Regional availability**
+>
+> LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+>
+> - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), EU-WEST-PAR
+> - **Germany**: DE1
+> - **Italy**: EU-SOUTH-MIL
+> - **Canada**: BHS5
+> - **United States**: US-WEST-OR-1, US-EAST-VA-1
+>
+> Additional regions will be supported in the coming months.
+>
+> If your cluster is deployed in a supported region but the encrypted storage classes are not yet visible, they will be automatically deployed when you update your cluster.
+
+For more information:
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
+- [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.
