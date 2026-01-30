@@ -109,7 +109,7 @@ A version deleted by the **Maximum number of versions** parameter no longer appe
 The OKMS domain of the Secret Manager is shared with the OKMS domain of the Key Management Service.
 Creating or deleting an OKMS domain therefore has consequences for both products.
 
-In the context of the Secret Manager beta, it is not yet possible to modify the OKMS domain configuration via the graphical interface.
+It is not yet possible to modify the OKMS domain configuration via the graphical interface.
 
 #### Multi-OKMS Domain Case
 
@@ -121,7 +121,7 @@ Furthermore, in the list of secrets, if a region contains multiple OKMS domains,
 
 ![Secret Manager](images/Secret-multi-domaine-2.png){.thumbnail}
 
-In the context of the Secret Manager beta, it is not yet possible to add an OKMS domain in a region via the graphical interface.
+It is not yet possible to add an OKMS domain in a region via the graphical interface.
 
 ### Using the Secret Manager via API
 
