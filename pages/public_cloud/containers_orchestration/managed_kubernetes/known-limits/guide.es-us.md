@@ -40,6 +40,17 @@ While 110 pods per node is the default value defined by Kubernetes, please note 
 
 As a fully managed service, you will **not have SSH access** to the nodes. All OS and component updates are handled by OVHcloud through patches and minor updates. If you need to perform **node-level debugging**, you can use the Kubernetes native tooling with [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node)to inspect or troubleshoot a node without requiring direct SSH access.
 
+## Regional Availability by Plan
+
+The availability of OVHcloud Managed Kubernetes varies depending on your chosen plan (Free or Standard). Each plan supports different regions and deployment architectures (single or multi-availability zone).
+
+For detailed information about regional availability, deployment architecture (1-AZ vs 3-AZ), and plan-specific features, see the [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan) section.
+
+> [!primary]
+> **Standard Plan Exclusive Features:**
+>
+> The Standard plan includes advanced features not available on the Free plan, such as Floating IPs per node, cross-AZ resilience, production-grade SLA (99.9% for 1-AZ, 99.99% for 3-AZ), dedicated etcd storage, and support for up to 500 nodes. For more information, see the [MKS Plans comparison guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+
 ## Patch, Upgrades & Maintenances considerations
 
 Any operation requested to our services, such as node deletions, patches or versions updates, follows a **graceful draining procedure** respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this period, nodes are forcefully drained to allow operations to continue. Patch and Kubernetes version upgrade are performed using an In Place upgrade procedure, meaning the nodes are fully reinstalled one by one.

@@ -1007,6 +1007,7 @@
                     + [Using a custom gateway on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/vrack-k8s-custom-gateway)
                     + [Working with vRack example - Managed Kubernetes and Public Cloud instances](public_cloud/containers_orchestration/managed_kubernetes/vrack-example-k8s-and-pci)
                     + [Working with vRack example - Communicating between different private networks](public_cloud/containers_orchestration/managed_kubernetes/vrack-example-between-private-networks)
+                    + [Using Floating IPs on Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips)
                     + [Customizing Kube-proxy on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-kubeproxy)
                     + [Customizing CoreDNS on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-coredns)
                     + [Customizing Cilium on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-cilium)

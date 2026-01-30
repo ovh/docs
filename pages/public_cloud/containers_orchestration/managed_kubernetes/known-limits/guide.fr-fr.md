@@ -40,6 +40,17 @@ Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, 
 
 En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux nœuds. Toutes les mises à jour du système d'exploitation et des composants sont gérées par OVHcloud via des correctifs et des mises à jour mineures. Si vous avez besoin d'effectuer un **débogage au niveau du nœud**, vous pouvez utiliser les outils natifs Kubernetes avec [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node) pour inspecter ou diagnostiquer un nœud sans nécessiter d'accès SSH direct.
 
+## Disponibilité régionale par plan
+
+La disponibilité d'OVHcloud Managed Kubernetes varie selon le plan choisi (Free ou Standard). Chaque plan prend en charge différentes régions et architectures de déploiement (mono ou multi-zone de disponibilité).
+
+Pour des informations détaillées sur la disponibilité régionale, l'architecture de déploiement (1-AZ vs 3-AZ) et les fonctionnalités spécifiques au plan, consultez la section [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan).
+
+> [!primary]
+> **Fonctionnalités exclusives du plan Standard :**
+>
+> Le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free, telles que les Floating IPs par nœud, la résilience cross-AZ, un SLA de niveau production (99,9% pour 1-AZ, 99,99% pour 3-AZ), un stockage etcd dédié et la prise en charge de jusqu'à 500 nœuds. Pour plus d'informations, consultez le guide [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+
 ## Considérations sur les correctifs, mises à niveau et maintenances
 
 Toute opération demandée à nos services, telle que la suppression de nœuds, les correctifs ou les mises à jour de versions, suit une **procédure de vidage progressive** respectant les [Budgets de perturbation de pod](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) pendant une durée maximale de 10 minutes. Après cette période, les nœuds sont vidés de force pour permettre la poursuite des opérations. Les correctifs et les mises à niveau de version Kubernetes sont effectués à l'aide d'une procédure de mise à niveau *In Place*, ce qui signifie que les nœuds sont entièrement réinstallés un par un.
@@ -87,24 +98,6 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 ```
 
 Pour plus de détails, veuillez consulter la [documentation sur le redimensionnement des volumes persistants](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
-
-### LUKS Encrypted Persistent Volumes
-
-OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK).
-
-> [!primary]
-> This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
-
-The following encrypted storage classes are available:
-
-- `csi-cinder-high-speed-luks`
-- `csi-cinder-classic-luks`
-- `csi-cinder-high-speed-gen2-luks`
-
-For more information:
-
-- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
-- [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 ## LoadBalancer
 

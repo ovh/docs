@@ -16,6 +16,51 @@ Note that projects with older regions (such as SBG1 or GRA1 for example) will be
 
 OVHcloud US customers can also deploy the service in both our East and West American datacenters.
 
+### Regional Availability by MKS Plan
+
+OVHcloud Managed Kubernetes Service availability varies depending on your chosen plan (Free or Standard). The table below shows which regions support each plan and their deployment architecture:
+
+| Region | Free Plan | Standard Plan | Deployment Architecture |
+|--------|-----------|---------------|-------------------------|
+| **Europe** | | | |
+| GRA5 (Gravelines) | ✅ | ❌ | 1-AZ |
+| GRA7 (Gravelines) | ✅ | ❌ | 1-AZ |
+| GRA9 (Gravelines) | ✅ | ❌ | 1-AZ |
+| GRA11 (Gravelines) | ✅ | ❌ | 1-AZ |
+| SBG5 (Strasbourg) | ✅ | ❌ | 1-AZ |
+| DE1 (Frankfurt) | ✅ | ❌ | 1-AZ |
+| UK1 (London) | ✅ | ❌ | 1-AZ |
+| WAW1 (Warsaw) | ✅ | ❌ | 1-AZ |
+| EU-WEST-RBX (Roubaix) | ❌ | ✅ | 1-AZ |
+| EU-WEST-PAR (Paris) | ❌ | ✅ | 3-AZ |
+| EU-SOUTH-MIL (Milan) | ❌ | ✅ | 3-AZ |
+| **Asia Pacific** | | | |
+| SGP1 (Singapore) | ✅ | ❌ | 1-AZ |
+| SYD1 (Sydney) | ✅ | ❌ | 1-AZ |
+| AP-SOUTH-MUM (Mumbai) | ❌ | ✅ | 1-AZ |
+| **Americas** | | | |
+| BHS5 (Montreal) | ✅ | ❌ | 1-AZ |
+| US-WEST-OR-1 (Oregon) | ✅ | ❌ | 1-AZ |
+| US-EAST-VA-1 (Virginia) | ✅ | ❌ | 1-AZ |
+
+> [!primary]
+> **Deployment Architecture:**
+>
+> - **1-AZ (Single Availability Zone)**: Cluster deployed in a single availability zone. Suitable for development, testing, and non-critical workloads.
+> - **3-AZ (Multi Availability Zone)**: Cluster deployed across three availability zones for enhanced resilience. Available exclusively on Standard plan. Provides high availability and fault tolerance for production workloads.
+>
+> For more information about MKS plans and their features, see the [MKS Plans comparison guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+
+> [!primary]
+> **Standard Plan Exclusive Features:**
+>
+> The Standard plan includes advanced features not available on the Free plan, such as:
+> - **Floating IPs per node**: Automatically assign public Floating IPs to worker nodes for direct public access and node bandwidth usage. See the [Using Floating IPs on MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips) guide for more information.
+> - **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions)
+> - **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions
+> - **Dedicated etcd storage**: Up to 8GB for larger clusters
+> - **Up to 500 nodes**: Support for large-scale production deployments
+
 ### Available worker nodes flavors
 
 When adding a worker node, Managed Kubernetes Service will deploy a managed Public Cloud instance in the same region/datacenter. The worker nodes types correspond to the standard OVHcloud Public Cloud catalog offered in this region and are billed at standard price.
