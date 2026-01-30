@@ -196,7 +196,8 @@ OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using 
 > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
 
 For more information:
-- [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
 - [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 ```console

@@ -96,12 +96,14 @@ OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using 
 > This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
 
 The following encrypted storage classes are available:
+
 - `csi-cinder-high-speed-luks`
 - `csi-cinder-classic-luks`
 - `csi-cinder-high-speed-gen2-luks`
 
 For more information:
-- [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
 - [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 ## LoadBalancer

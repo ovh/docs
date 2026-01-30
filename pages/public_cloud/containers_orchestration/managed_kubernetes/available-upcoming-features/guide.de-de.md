@@ -19,6 +19,7 @@ The roadmap and changelog of OVHcloud Managed Kubernetes and all our Public Clou
 OVHcloud Managed Kubernetes now supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). This feature is available in specific regions.
 
 For more information, see:
+
 - [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes)
 - [LUKS encrypted volumes documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits#luks-encrypted-persistent-volumes)
 - [Complete tutorial on creating encrypted Persistent Volumes](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/)

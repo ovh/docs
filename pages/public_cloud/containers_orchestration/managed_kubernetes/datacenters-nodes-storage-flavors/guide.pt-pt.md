@@ -76,6 +76,7 @@ OVHcloud Managed Kubernetes also supports LUKS encrypted block storage volumes u
 > **Regional availability**
 >
 > LUKS encrypted storage is currently available in the following OVHcloud Public Cloud regions:
+>
 > - **France**: RBX, SBG, GRA (GRA5, GRA7, GRA9, GRA11), EU-WEST-PAR
 > - **Germany**: DE1
 > - **Italy**: EU-SOUTH-MIL
@@ -87,7 +88,8 @@ OVHcloud Managed Kubernetes also supports LUKS encrypted block storage volumes u
 > If your cluster is deployed in a supported region but the encrypted storage classes are not yet visible, they will be automatically deployed when you update your cluster.
 
 For more information:
-- [Choosing the right Block Storage class](https://help.ovhcloud.com/csm/en-gb-public-cloud-block-storage-choosing-right-storage-class?id=kb_article_view&sysparm_article=KB0074119)
+
+- [Choosing the right Block Storage class](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
 - [Create encrypted Persistent Volumes on OVHcloud Managed Kubernetes clusters with LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Complete tutorial)
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.
