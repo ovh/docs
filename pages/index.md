@@ -2458,6 +2458,7 @@
         + [Logs Data Platform](products/observability-logs-data-platform)
             + [Getting started](observability-logs-data-platform-getting-started)
                 + [Introduction to Logs Data Platform](manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
+                + [Logs Data Platform - NodeJS](manage_and_operate/observability/logs_data_platform/getting_started_nodejs)
                 + [Quick start for Logs Data Platform](manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
                 + [Logs Data Platform - Responsibility model](manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model)
                 + [Reversibility Policy for the Managed Log Manager product](account_and_service_management/reversibility/18-logs-data-platform-reversibility)
