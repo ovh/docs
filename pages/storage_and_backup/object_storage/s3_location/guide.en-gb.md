@@ -257,11 +257,10 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER</td>
-         <td rowspan=1>Active Archive</td>
+         <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
@@ -289,10 +288,6 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     <tr>
         <td>GLACIER</td>
         <td>Active Archive</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
