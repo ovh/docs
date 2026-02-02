@@ -88,9 +88,10 @@ Lors de la création d'un nouveau cluster MKS Standard via l'API OVHcloud, vous 
 
 **Endpoint API :**
 
-```
-POST /cloud/project/{serviceName}/kube
-```
+> [!api]
+>
+> @api {v1} /cloud/project/ POST /cloud/project/{serviceName}/kube
+>
 
 **Exemple de payload JSON** (partiel, focus sur le node pool avec Floating IP) :
 
@@ -129,9 +130,10 @@ Pour activer les Floating IP sur un nouveau node pool dans un cluster existant, 
 
 **Endpoint API :**
 
-```
-POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
-```
+> [!api]
+>
+> @api {v1} /cloud/project/ POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+>
 
 **Exemple de payload JSON :**
 
@@ -160,9 +162,10 @@ Vous pouvez activer ou désactiver les Floating IP sur un node pool existant en 
 
 **Endpoint API :**
 
-```
-PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
-```
+> [!api]
+>
+> @api {v1} /cloud/project/ PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+>
 
 **Exemple de payload JSON** (pour activer) :
 
@@ -268,9 +271,10 @@ La colonne `EXTERNAL-IP` affiche la Floating IP assignée à chaque nœud.
 
 Vous pouvez également interroger la configuration du node pool via l'API OVHcloud pour vérifier que les Floating IP sont activées :
 
-```
-GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
-```
+> [!api]
+>
+> @api {v1} /cloud/project/ GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+>
 
 La réponse inclura :
 
