@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Managing your backups and restores"
 excerpt: "Learn how to back up and restore your data on your Bare Metal servers with Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Objective
@@ -53,7 +53,7 @@ If necessary, you can trigger a manual backup.
 
 It will also create a full backup of your server and will always be sent to your remote storage point.
 
-To create a manual backup, click on the tab corresponding to your operating system:
+To create a manual backup, click on the tab corresponding to your Operating System:
 
 > [!tabs]
 > Windows
@@ -109,7 +109,7 @@ If you need to restore data, you have two options:
 
 #### File Restore Wizard
 
-To restore files and folders, click on the tab corresponding to your operating system:
+To restore files and folders, click on the tab corresponding to your Operating System:
 
 > [!tabs]
 > Windows
@@ -150,17 +150,17 @@ To restore files and folders, click on the tab corresponding to your operating s
 >>
 >> #### Via the graphical interface
 >>
->> 1. Connect to your Bare Metal server via SSH.
->> 2. Launch the Veeam interface by typing the following command:
+>> 1\. Connect to your Bare Metal server via SSH.
+>> 2\. Launch the Veeam interface by typing the following command:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. In the interface, select the file restore option.
->> 4. Select the backup and the desired restore point.
->> 5. Navigate through the backup to find the files or folders to restore.
->> 6. Select the files and choose the restore action:
+>> 3\. In the interface, select the file restore option.
+>> 4\. Select the backup and the desired restore point.
+>> 5\. Navigate through the backup to find the files or folders to restore.
+>> 6\. Select the files and choose the restore action:
 >>    - Restore to original location
 >>    - Copy to a new location
 >>    - Explore the backup
@@ -169,29 +169,29 @@ To restore files and folders, click on the tab corresponding to your operating s
 >>
 >> To restore files via the command line, you must first mount the backup:
 >>
->> 1. List your available backups:
+>> 1\. List your available backups:
 >>
 >> ```bash
 >> sudo veeamconfig backup list
 >> ```
 >>
->> 2. List the restore points of a backup:
+>> 2\. List the restore points of a backup:
 >>
 >> ```bash
 >> sudo veeamconfig restore list --backup <backup_name>
 >> ```
 >>
->> 3. Mount a restore point:
+>> 3\. Mount a restore point:
 >>
 >> ```bash
 >> sudo veeamconfig mount --backup <backup_name> --restorepoint <point_name>
 >> ```
 >>
->> 4. Once mounted, you can access the files via the mount point (usually in `/mnt/veeam/`).
+>> 4\. Once mounted, you can access the files via the mount point (usually in `/mnt/veeam/`).
 >>
->> 5. Copy the desired files from the mount point to their destination.
+>> 5\. Copy the desired files from the mount point to their destination.
 >>
->> 6. Once the restore is complete, unmount the backup:
+>> 6\. Once the restore is complete, unmount the backup:
 >>
 >> ```bash
 >> sudo veeamconfig unmount --backup <backup_name>

@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Come configurare la tua prima copia di backup"
 excerpt: "Come configurare la tua prima copia di backup sul tuo server Bare Metal utilizzando il prodotto Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Obiettivo
@@ -22,8 +22,9 @@ Hai appena acquistato l'offerta Backup Agent per il tuo server Bare Metal, scopr
 >
 > Devi assicurarti che il tuo server possa essere raggiunto dalla nostra infrastruttura Veeam.
 > Ecco le informazioni da autorizzare sul tuo server Bare Metal:
-> IP/DNS del server: vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net
-> Porta: 6180
+>
+> - IP/DNS del server: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Porta: 6180
 >
 > Ti consigliamo vivamente di permettere anche al tuo server di raggiungere altri indirizzi esterni per poter inviare i tuoi dati al Vault. Non è necessario autorizzare un flusso in entrata in questo contesto.
 

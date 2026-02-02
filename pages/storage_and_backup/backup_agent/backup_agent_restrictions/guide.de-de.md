@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Bekannte Einschränkungen"
 excerpt: "Erfahren Sie die Einschränkungen und Grenzen des Backup Agent Produkts"
-updated: 2026-01-28
+updated: 2026-02-03
 ---
 
 ## Ziel
@@ -28,10 +28,20 @@ Diese Anleitung beschreibt die bekannten Einschränkungen und Grenzen des Backup
 ### Betriebssystemeinschränkungen
 
 - Sie finden die Liste der kompatiblen Betriebssysteme für den Veeam Agent [hier](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
+- Das Produkt ist nicht kompatibel für die Sicherung von Hypervisoren (Proxmox, ESXi usw.).
 
 ### Kompatibilität mit anderen OVHcloud Produkten
 
 - Derzeit ist das Backup Agent Produkt nur mit Dedicated Servern kompatibel. Sie können Ihren Agent nicht auf anderen Produkten nutzen.
+
+### Netzwerkeinschränkungen
+
+- Das Produkt ist nur mit Servern kompatibel, die mit der öffentlichen IP kommunizieren, die OVHcloud den Servern zugewiesen hat. Ab sofort ist es nicht mehr mit Additional IP Adressen oder dem vRack kompatibel.
+
+### Virtuelle Maschinen (Proxmox, ESXi usw.)
+
+- Das Produkt gestattet nur die öffentliche IP-Adresse des Servers, mit der Veeam-Infrastruktur zu kommunizieren. Wenn Sie beispielsweise eine Proxmox Virtual Machine (VM) auf Ihrem Server ausführen und diese die öffentliche IP-Adresse des Servers verwendet, kann der Agent funktionieren.
+Dieser Anwendungsfall kann jedoch nicht als unterstützt betrachtet werden. Es können zu viele spezifische Fälle im Zusammenhang mit dieser Konfiguration auftreten, die derzeit nicht vom Produkt abgedeckt werden.
 
 ## Weitere Informationen
 

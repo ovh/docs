@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Konfigurieren einer ersten Sicherung"
 excerpt: "So konfigurieren Sie Ihre erste Sicherung auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Ziel
@@ -22,8 +22,9 @@ Sie haben gerade Ihr Backup Agent Angebot für Ihren Bare Metal Server bestellt.
 >
 > Sie müssen sicherstellen, dass Ihr Server von unserer Veeam-Infrastruktur erreicht werden kann.
 > Hier sind die Informationen, die Sie auf Ihrem Bare Metal Server zulassen müssen:
-> IP/DNS des Servers: vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net
-> Port: 6180
+>
+> - IP/DNS des Servers: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Port: 6180
 >
 > Wir empfehlen Ihnen dringend, dass Sie Ihrem Server auch erlauben, andere externe Adressen zu erreichen, damit er Ihre Daten an den Vault senden kann. In diesem Zusammenhang ist es nicht erforderlich, eingehenden Datenverkehr zuzulassen.
 

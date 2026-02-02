@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gestisci i tuoi backup e le tue ripristini"
 excerpt: "Scopri come effettuare backup e ripristinare i tuoi dati sui server Bare Metal con Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Obiettivo
@@ -50,16 +50,16 @@ Potrai verificare il successo di questo backup tramite:
 
 #### Backup manuale
 
-In caso di necessità, puoi avviare un backup manuale.
+In caso di necessità, puoi attivare un backup manuale.
 
-Anche questo effettuerà un backup completo del tuo server, sempre inviato al tuo punto di archiviazione remoto.
+Questo effettuerà un backup completo del tuo server, che verrà inoltre inviato al tuo punto di archiviazione remoto.
 
-Per creare un backup manuale, clicca sulla scheda corrispondente al tuo sistema operativo:
+Clicca sull'opzione corrispondente al tuo sistema operativo:
 
 > [!tabs]
 > Windows
 >>
->> Apri l'applicazione "Veeam Agent" sul server Bare Metal:
+>> Apri l'applicazione "Veeam Agent" sul tuo server Bare Metal:
 >>
 >> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 >>
@@ -71,16 +71,16 @@ Per creare un backup manuale, clicca sulla scheda corrispondente al tuo sistema 
 >>
 >> Per avviare un backup manuale su Linux, puoi utilizzare la riga di comando.
 >>
->> Connettiti al tuo server Bare Metal tramite SSH ed esegui il seguente comando per elencare i tuoi job di backup:
+>> Connetti al tuo server Bare Metal tramite SSH e esegui il comando seguente per elencare i tuoi job di backup:
 >>
 >> ```bash
 >> sudo veeamconfig job list
 >> ```
 >>
->> Per avviare un backup manuale, utilizza il seguente comando, sostituendo `<nome_job>` con il nome del tuo job di backup:
+>> Per avviare un backup manuale, utilizza il comando seguente sostituendo `<nom_du_job>` con il nome del tuo job di backup:
 >>
 >> ```bash
->> sudo veeamconfig job start <nome_job>
+>> sudo veeamconfig job start <nom_du_job>
 >> ```
 >>
 >> Se desideri avviare tutti i job di backup, utilizza:
@@ -89,13 +89,13 @@ Per creare un backup manuale, clicca sulla scheda corrispondente al tuo sistema 
 >> sudo veeamconfig job start --all
 >> ```
 >>
->> Puoi monitorare lo stato di avanzamento del backup consultando le sessioni attive:
+>> Puoi seguire l'andamento del backup consultando le sessioni attive:
 >>
 >> ```bash
 >> sudo veeamconfig session list
 >> ```
 >>
->> Puoi anche accedere a un'interfaccia per interagire con il prodotto digitando questo comando:
+>> Puoi anche disporre di un'interfaccia per interagire con il prodotto digitando questo comando:
 >>
 >> ```bash
 >> sudo veeam
@@ -108,14 +108,14 @@ In caso di necessità di ripristinare dati, hai due opzioni:
 - tramite l'assistente di ripristino file;
 - tramite l'ISO Veeam Baremetal Recovery.
 
-#### Assistente di ripristino file
+#### Assistant di ripristino file
 
-Per ripristinare file e cartelle, clicca sulla scheda corrispondente al tuo sistema operativo:
+Per ripristinare file e cartelle, clicca sull'opzione corrispondente al tuo sistema operativo:
 
 > [!tabs]
 > Windows
 >>
->> Apri l'applicazione "Veeam Agent" sul tuo server Bare Metal:
+>> Apri l'applicazione "Veeam Agent" sul tuo server Baremetal:
 >>
 >> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
 >>
@@ -141,7 +141,7 @@ Per ripristinare file e cartelle, clicca sulla scheda corrispondente al tuo sist
 >> - Explore: ti permette di esplorare il backup.
 >> - Properties: ti permette di visualizzare le proprietà del file.
 >>
->> Avviare un ripristino ti mostrerà un'ultima finestra che visualizzerà il trasferimento:
+>> Avviare un ripristino ti permetterà di ottenere un'ultima finestra che mostrerà il trasferimento:
 >>
 >> ![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
 >
@@ -151,18 +151,18 @@ Per ripristinare file e cartelle, clicca sulla scheda corrispondente al tuo sist
 >>
 >> #### Tramite l'interfaccia grafica
 >>
->> 1. Connettiti al tuo server Bare Metal tramite SSH.
->> 2. Avvia l'interfaccia Veeam digitando il seguente comando:
+>> 1\. Connetti al tuo server Bare Metal tramite SSH.
+>> 2\. Avvia l'interfaccia Veeam digitando il comando seguente:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Nell'interfaccia, seleziona l'opzione di ripristino file.
->> 4. Seleziona il backup e il punto di ripristino desiderato.
->> 5. Naviga nel backup per trovare i file o le cartelle da ripristinare.
->> 6. Seleziona i file e scegli l'azione di ripristino:
->>    - Ripristina nella posizione originale
+>> 3\. Nell'interfaccia, seleziona l'opzione di ripristino file.
+>> 4\. Seleziona il Backup e il punto di ripristino desiderato.
+>> 5\. Naviga nel backup per trovare i file o le cartelle da ripristinare.
+>> 6\. Seleziona i file e scegli l'azione di ripristino:
+>>    - Ripristina alla posizione originale
 >>    - Copia in una nuova posizione
 >>    - Esplora il backup
 >>
@@ -170,35 +170,35 @@ Per ripristinare file e cartelle, clicca sulla scheda corrispondente al tuo sist
 >>
 >> Per ripristinare file tramite la riga di comando, devi prima montare il backup:
 >>
->> 1. Elenca i tuoi backup disponibili:
+>> 1\. Elenca i tuoi backup disponibili:
 >>
 >> ```bash
 >> sudo veeamconfig backup list
 >> ```
 >>
->> 2. Elenca i punti di ripristino di un backup:
+>> 2\. Elenca i punti di ripristino di un Backup:
 >>
 >> ```bash
->> sudo veeamconfig restore list --backup <nome_backup>
+>> sudo veeamconfig restore list --backup <backup_name>
 >> ```
 >>
->> 3. Monta un punto di ripristino:
+>> 3\. Monta un punto di ripristino:
 >>
 >> ```bash
->> sudo veeamconfig mount --backup <nome_backup> --restorepoint <nome_punto>
+>> sudo veeamconfig mount --backup <backup_name> --restorepoint <point_name>
 >> ```
 >>
->> 4. Una volta montato, puoi accedere ai file tramite il punto di montaggio (generalmente in `/mnt/veeam/`).
+>> 4\. Una volta montato, puoi accedere ai file tramite il punto di montaggio (di norma in `/mnt/veeam/`).
 >>
->> 5. Copia i file desiderati dal punto di montaggio alla loro destinazione.
+>> 5\. Copia i file desiderati dal punto di montaggio alla destinazione.
 >>
->> 6. Una volta completato il ripristino, smonta il backup:
+>> 6\. Una volta completato il ripristino, smonta il backup:
 >>
 >> ```bash
->> sudo veeamconfig unmount --backup <nome_backup>
+>> sudo veeamconfig unmount --backup <backup_name>
 >> ```
 >>
->> Per ulteriori informazioni, consulta la [documentazione Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_gui.html?ver=13) e la [documentazione sul ripristino da riga di comando](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_cmd.html?ver=13).
+>> Per ulteriori informazioni, consulta la [documentazione Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_gui.html?ver=13) e la [documentazione sul ripristino tramite riga di comando](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_cmd.html?ver=13).
 
 ### ISO Veeam Baremetal Recovery
 

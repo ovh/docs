@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Gérer vos sauvegardes et vos restaurations"
 excerpt: "Découvrez comment sauvegarder et restaurer vos données sur vos serveurs Bare Metal avec Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Objectif
@@ -51,9 +51,9 @@ Vous pourrez voir le succès de cette sauvegarde via :
 
 En cas de besoin, vous pouvez déclencher une sauvegarde manuelle.
 
-Celle-ci fera également une sauvegarde complète de votre serveur, toujours envoyée vers votre point de stockage distant.
+Celle-ci fera également une sauvegarde complète de votre serveur, également envoyée vers votre point de stockage distant.
 
-Pour créer une sauvegarde manuelle, cliquez sur l'onglet correspondant à votre système d'exploitation :
+Cliquez sur l'onglet correspondant à votre système d'exploitation :
 
 > [!tabs]
 > Windows
@@ -150,17 +150,17 @@ Pour restaurer des fichiers et dossiers, cliquez sur l'onglet correspondant à v
 >>
 >> #### Via l'interface graphique
 >>
->> 1. Connectez-vous à votre serveur Bare Metal en SSH.
->> 2. Lancez l'interface Veeam en tapant la commande suivante :
+>> 1\. Connectez-vous à votre serveur Bare Metal en SSH.
+>> 2\. Lancez l'interface Veeam en tapant la commande suivante :
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Dans l'interface, sélectionnez l'option de restauration de fichiers.
->> 4. Sélectionnez le backup et le point de restauration souhaité.
->> 5. Naviguez dans la sauvegarde pour trouver les fichiers ou dossiers à restaurer.
->> 6. Sélectionnez les fichiers et choisissez l'action de restauration :
+>> 3\. Dans l'interface, sélectionnez l'option de restauration de fichiers.
+>> 4\. Sélectionnez le backup et le point de restauration souhaité.
+>> 5\. Naviguez dans la sauvegarde pour trouver les fichiers ou dossiers à restaurer.
+>> 6\. Sélectionnez les fichiers et choisissez l'action de restauration :
 >>    - Restaurer à l'emplacement d'origine
 >>    - Copier vers un nouvel emplacement
 >>    - Explorer la sauvegarde
@@ -169,29 +169,29 @@ Pour restaurer des fichiers et dossiers, cliquez sur l'onglet correspondant à v
 >>
 >> Pour restaurer des fichiers via la ligne de commande, vous devez d'abord monter la sauvegarde :
 >>
->> 1. Listez vos backups disponibles :
+>> 1\. Listez vos backups disponibles :
 >>
 >> ```bash
 >> sudo veeamconfig backup list
 >> ```
 >>
->> 2. Listez les points de restauration d'un backup :
+>> 2\. Listez les points de restauration d'un backup :
 >>
 >> ```bash
 >> sudo veeamconfig restore list --backup <nom_du_backup>
 >> ```
 >>
->> 3. Montez un point de restauration :
+>> 3\. Montez un point de restauration :
 >>
 >> ```bash
 >> sudo veeamconfig mount --backup <nom_du_backup> --restorepoint <nom_du_point>
 >> ```
 >>
->> 4. Une fois monté, vous pouvez accéder aux fichiers via le point de montage (généralement dans `/mnt/veeam/`).
+>> 4\. Une fois monté, vous pouvez accéder aux fichiers via le point de montage (généralement dans `/mnt/veeam/`).
 >>
->> 5. Copiez les fichiers souhaités depuis le point de montage vers leur destination.
+>> 5\. Copiez les fichiers souhaités depuis le point de montage vers leur destination.
 >>
->> 6. Une fois la restauration terminée, démontez la sauvegarde :
+>> 6\. Une fois la restauration terminée, démontez la sauvegarde :
 >>
 >> ```bash
 >> sudo veeamconfig unmount --backup <nom_du_backup>

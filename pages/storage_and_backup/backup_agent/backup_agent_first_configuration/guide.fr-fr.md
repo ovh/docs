@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Comment configurer votre première sauvegarde"
 excerpt: "Comment configurer votre première sauvegarde sur votre serveur Bare Metal avec le produit Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 ## Objectif
@@ -22,11 +22,11 @@ Vous venez de commander votre offre Backup Agent pour votre serveur Bare Metal, 
 >
 > Vous devez vous assurer de pouvoir rendre votre serveur joignable par notre infrastructure Veeam.
 > Voici les informations à autoriser sur votre serveur Bare Metal :
-> IP/DNS du serveur: vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net
-> Port: 6180
 >
-> Nous vous conseillons fortement également de laisser votre serveur capable de joindre d'autres adresses vers l'extérieur afin de pouvoir envoyer vos données vers le Vault. Il n'y pas besoin d'autoriser un flux entrant dans ce cadre.
-
+> - IP/DNS du serveur: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Port: 6180
+>
+> Nous vous conseillons également vivement de laisser votre serveur en capacité de joindre d'autres adresses vers l'extérieur afin de pouvoir envoyer vos données vers le Vault. Il n'y pas besoin d'autoriser un flux entrant dans ce cadre.
 
 ## En pratique
 

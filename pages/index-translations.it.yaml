@@ -492,6 +492,10 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Concetti chiave
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Per iniziare
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Risoluzione dei problemi
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Risorse aggiuntive
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Concetti chiave
 network-additional-ip-configuration: Configurazione

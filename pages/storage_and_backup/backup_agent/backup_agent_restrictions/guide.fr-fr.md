@@ -28,7 +28,7 @@ Ce guide détaille les restrictions et limitations connues du produit Backup Age
 ### Limitations des OS
 
 - Vous pouvez retrouver la liste des OS compatibles pour le Veeam Agent à [cette adresse](https://helpcenter.veeam.com/docs/agentforlinux/userguide/system_requirements.html?ver=13).
-- Le produit n'est pas compatible pour sauvegarder des hyperviseurs (Proxmox, ESXi, ...)
+- Le produit n'est pas compatible pour sauvegarder des hyperviseurs (Proxmox, ESXi, etc.)
 
 ### Compatibilité avec d'autres produits OVHcloud
 
@@ -36,12 +36,12 @@ Ce guide détaille les restrictions et limitations connues du produit Backup Age
 
 ### Restrictions réseau
 
-- Le produit n'est compatible qu'avec des serveurs communiquant avec l'IP publique assignée par OVHcloud aux serveurs. Il ne peut pas être compatible avec les IP failover ou le vRack, pour le moment.
+- Le produit n'est compatible qu'avec des serveurs communiquant avec l'IP publique assignée par OVHcloud aux serveurs. A date, il est incompatible avec les adresses Additional IP ou le vRack.
 
 ### Machines virtuelles (Proxmox, ESXi, etc.)
 
-- Le produit n'autorise que l'IP publique du serveur à communiquer avec l'infrastructure Veeam. De ce fait, par exemple, si vous avez une machine virtuelle (VM) Proxmox qui opère sur votre serveur et qu'elle utilise l'IP publique du serveur, l'agent peut fonctionner.
-- Cependant, ce cas d'usage ne peut pas être considéré comme supporté. Trop de cas spécifiques liés à cette configuration peuvent émerger et cela n'est pas couvert par le produit actuellement.
+- Le produit autorise uniquement l'IP publique du serveur à communiquer avec l'infrastructure Veeam. De ce fait, par exemple, si vous avez une machine virtuelle (VM) Proxmox qui opère sur votre serveur et qu'elle utilise l'IP publique du serveur, l'agent peut fonctionner.
+Cependant, ce cas d'usage ne peut pas être considéré comme supporté. Trop de cas spécifiques liés à cette configuration peuvent émerger et cela n'est pas couvert par le produit actuellement.
 
 ## Aller plus loin
 
