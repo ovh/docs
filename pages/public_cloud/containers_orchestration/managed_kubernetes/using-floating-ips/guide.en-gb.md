@@ -122,8 +122,6 @@ When creating a new MKS Standard cluster via the OVHcloud API, you can enable Fl
 
 - `attachFloatingIps.enabled`: Set to `true` to enable Floating IPs on the node pool.
 
-For complete API documentation, see "[OVHcloud API console - Create cluster](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube)".
-
 ### Method 2: Enable Floating IPs when creating a new node pool
 
 To enable Floating IPs on a new node pool in an existing cluster, use the following API endpoint.
@@ -153,8 +151,6 @@ To enable Floating IPs on a new node pool in an existing cluster, use the follow
   "monthlyBilled": false
 }
 ```
-
-For complete API documentation, see "[OVHcloud API console - Create node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube/-kubeId-/nodepool)".
 
 ### Method 3: Enable/disable Floating IPs on an existing node pool
 
@@ -191,8 +187,6 @@ You can enable or disable Floating IPs on an existing node pool using the PUT en
 > **Disabling Floating IPs.**
 >
 > When you disable Floating IPs on a node pool, **all Floating IPs attached to nodes in that pool will be immediately deleted**. This will interrupt any connections relying on those public IP addresses.
-
-For complete API documentation, see "[OVHcloud API console - Update node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#put-/cloud/project/-serviceName-/kube/-kubeId-/nodepool/-nodePoolId-)".
 
 ### Using OVHcloud CLI
 

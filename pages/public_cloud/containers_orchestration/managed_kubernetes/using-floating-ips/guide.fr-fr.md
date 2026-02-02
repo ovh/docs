@@ -122,8 +122,6 @@ Lors de la création d'un nouveau cluster MKS Standard via l'API OVHcloud, vous 
 
 - `attachFloatingIps.enabled` : Définir à `true` pour activer les Floating IP sur le node pool.
 
-Pour la documentation API complète, consultez : [Console API OVHcloud - Créer un cluster](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
-
 ### Méthode 2 : Activer les Floating IP lors de la création d'un nouveau node pool
 
 Pour activer les Floating IP sur un nouveau node pool dans un cluster existant, utilisez l'endpoint API suivant.
@@ -153,8 +151,6 @@ Pour activer les Floating IP sur un nouveau node pool dans un cluster existant, 
   "monthlyBilled": false
 }
 ```
-
-Pour la documentation API complète, consultez : [Console API OVHcloud - Créer un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube/-kubeId-/nodepool).
 
 ### Méthode 3 : Activer / désactiver les Floating IP sur un node pool existant
 
@@ -191,8 +187,6 @@ Vous pouvez activer ou désactiver les Floating IP sur un node pool existant en 
 > **Désactivation des Floating IP.**
 >
 > Lorsque vous désactivez les Floating IP sur un node pool, **toutes les Floating IP attachées aux nœuds de ce pool seront immédiatement supprimées**. Cela interrompra toutes les connexions dépendant de ces adresses IP publiques.
-
-Pour la documentation API complète, consultez : [Console API OVHcloud - Mettre à jour un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#put-/cloud/project/-serviceName-/kube/-kubeId-/nodepool/-nodePoolId-).
 
 ### Utilisation de la CLI OVHcloud
 
