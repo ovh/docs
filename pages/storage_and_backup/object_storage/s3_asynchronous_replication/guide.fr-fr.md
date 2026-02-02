@@ -89,15 +89,13 @@ _<sup>2</sup>: Découvrez comment activer la réplication des marqueurs de suppr
 ### Configuration de la réplication
 
 Une configuration de réplication est définie via un ensemble de règles dans un fichier JSON. Ce fichier est téléchargé et appliqué au bucket source, en détaillant la façon dont les objets doivent être répliqués.
-
-### Chaque règle de réplication définit :
-
+Chaque règle de réplication définit :
 - Un **ID de règle unique** pour identifier la règle.
 - Une **priorité de règle** pour déterminer l'ordre d'exécution lorsque plusieurs règles existent.
 - Un **bucket de destination** où seront stockés les objets répliqués.
 - Les **objets à répliquer** : par défaut, tous les objets sont éligibles à la réplication. Toutefois, vous pouvez spécifier un sous-ensemble d'objets en les filtrant avec un préfixe et/ou des tags.
 
-### Structure des règles de réplication
+#### Structure des règles de réplication
 
 La structure de base d'une règle de réplication dans le fichier JSON de configuration est la suivante :
 
