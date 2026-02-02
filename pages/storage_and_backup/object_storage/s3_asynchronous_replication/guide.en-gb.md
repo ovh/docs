@@ -90,15 +90,13 @@ _<sup>2</sup>: Learn how to activate the replication of delete markers at [Delet
 ### Replication configuration
 
 A replication configuration is defined through a set of rules within a JSON file. This file is uploaded and applied to the source bucket, detailing how objects are to be replicated.
-
-### Each replication rule defines:
-
+Each replication rule defines:
 - A **unique rule ID** to identify the rule.
 - **Rule priority** to determine the order of execution when multiple rules exist.
 - **Destination bucket** where the replicated objects will be stored.
 - **Objects to be replicated**: By default, all objects are eligible for replication. However, you can specify a subset of objects by filtering them with a prefix and/or tags.
 
-### Replication rule structure
+#### Replication rule structure
 
 The basic structure of a replication rule within the configuration JSON file is as follows:
 
