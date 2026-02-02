@@ -257,11 +257,10 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER</td>
-        <td rowspan=1>Active Archive</td>
+        <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
@@ -289,11 +288,6 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     <tr>
         <td>GLACIER</td>
         <td>Active Archive</td>
-    </tr>
-    <tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
