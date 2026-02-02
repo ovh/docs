@@ -178,7 +178,7 @@ Notieren Sie sich die Geräte, Partitionen und ihre Mountpoints. Aus den oben ge
 
 ### Simulieren eines Diskausfalls
 
-Nachdem wir nun alle erforderlichen Informationen haben, können wir eine Festplatte simulieren. In diesem Beispiel lassen wir die Festplatte `sda` ausfallen.
+Nachdem wir nun alle notwendigen Informationen haben, können wir einen Disksfehler simulieren und die Tests durchführen. In diesem Beispiel simulieren wir den Ausfall der Disk `sda`.
 
 Die bevorzugte Methode hierzu ist die Nutzung des OVHcloud Rescue-Modus.
 
@@ -307,7 +307,7 @@ md4 : active raid1 sdb4[1]
 unused devices: <none>
 ```
 
-Aus den obigen Ergebnissen geht hervor, dass nun nur noch zwei Partitionen in den RAID-Arrays angezeigt werden. Wir haben die Festplatte **sda** erfolgreich ausgefallen lassen und können nun mit dem Austausch der Festplatte fortfahren.
+Aus den oben genannten Ergebnissen können wir sehen, dass nun nur noch zwei Partitionen in den RAID-Arrays erscheinen. Wir haben die Disk **sda** erfolgreich simuliert und können nun mit dem Diskaustausch fortfahren.
 
 Für weitere Informationen dazu, wie Sie einen Diskaustausch vorbereiten und anfordern können, konsultieren Sie diese [Anleitung](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
@@ -363,9 +363,9 @@ Consistency Policy : bitmap
 
 #### Neuaufbau des RAID im normalen Modus
 
-In unserem Beispiel haben wir die Festplatte **sda** ersetzt.
+In unserem Beispiel haben wir die Disk **sda** ersetzt.
 
-Nach dem Austausch müssen Sie als Nächstes die Partitionstabelle von der intakten Festplatte (in diesem Beispiel sdb) auf die neue Festplatte (sda) kopieren.
+Nachdem die Disk ersetzt wurde, müssen wir die Partitionstabelle von der gesunden Disk (in diesem Beispiel sdb) auf die neue (sda) kopieren
 
 > [!tabs]
 > **Für GPT-Partitionen**
