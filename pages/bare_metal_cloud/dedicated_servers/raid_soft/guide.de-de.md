@@ -1,7 +1,7 @@
 ---
 title: Verwalten und Neuaufbauen von Software-RAID auf Servern im Legacy-Boot-Modus (BIOS)
 excerpt: Erfahren Sie, wie Sie Software-RAID nach einem Diskaustausch auf Ihrem Server im Legacy-Boot-Modus (BIOS) verwalten und neu aufbauen können
-updated: 2025-12-11
+updated: 2026-02-02
 ---
 
 <style>

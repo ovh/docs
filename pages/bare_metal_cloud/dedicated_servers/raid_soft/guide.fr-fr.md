@@ -1,7 +1,7 @@
 ---
 title: Gestion et reconstruction du RAID logiciel sur les serveurs en mode legacy boot (BIOS)
 excerpt: "Découvrez comment gérer et reconstruire le RAID logiciel après un remplacement de disque sur votre serveur en mode legacy boot (BIOS)"
-updated: 2025-12-11
+updated: 2026-02-02
 ---
 
 <style>

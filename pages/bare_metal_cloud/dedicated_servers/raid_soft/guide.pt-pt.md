@@ -1,7 +1,7 @@
 ---
 title: Gestão e reconstrução do RAID software nos servidores em modo de arranque legado (BIOS)
 excerpt: "Aprenda a gerir e reconstruir o RAID software após a substituição de um disco no seu servidor em modo de arranque legado (BIOS)"
-updated: 2025-12-15
+updated: 2026-02-02
 ---
 
 <style>
