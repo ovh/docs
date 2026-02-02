@@ -1,18 +1,18 @@
 ---
 title: "Choosing the right OVHcloud Managed Kubernetes Plan: Free or Standard"
 excerpt: "Explore OVHcloud Managed Kubernetes plans: Free and Standard. Discover which plan suits your cloud projects and get started quickly."
-updated: 2026-01-30
+updated: 2026-02-02
 ---
 
 ## Objective
 
 This guide provides an overview of OVHcloud Managed Kubernetes Service (MKS) plans, aiming to present the available plan options **Free** and **Standard** and their primary characteristics. It is intended to help readers understand the purpose of each plan and navigate the differences without making recommendations.
 
-## Free vs Standard Plan Comparison
+## Free vs Standard plan comparison
 
 OVHcloud Managed Kubernetes Service (MKS) offers two plans, **Free Plan** and **Standard Plan**, designed to address different workloads and use cases. This section highlights their key differences, focusing on architecture, availability, and scalability.
 
-### Control Plane
+### Control plane
 
 The control plane orchestrates the Kubernetes cluster, handling scheduling, scaling, and API requests. The Free plan provides a single zone managed control plane suitable for development or small projects. In contrast, the Standard plan includes cross-availability-zone (AZ) resilience, ensuring the cluster continues to operate even if one AZ experiences an outage.
 
@@ -24,11 +24,11 @@ Availability measures the expected uptime of the service. The Free plan offers a
 
 Example: A Free plan cluster may experience roughly 43 minutes of downtime per month, while a Standard plan cluster reduces this to about 4 minutes.
 
-### etcd Storage
+### etcd storage
 
 etcd maintains cluster state and configuration. The Free plan uses a shared etcd storage with a maximum capacity of 400 MB, which suffices for small deployments. The Standard plan uses dedicated etcd storage up to 8 GB, supporting larger clusters and heavier workloads.
 
-### Maximum Cluster Size
+### Maximum cluster size
 
 Cluster size defines the number of worker nodes in the Kubernetes cluster. The Free plan supports up to 100 nodes, suitable for learning, testing, or small-scale projects. The Standard plan scales up to 500 nodes, enabling medium to large production deployments.
 
@@ -38,21 +38,21 @@ Regional availability determines the number of zones on which the cluster is dep
 
 Example: A cluster with the Standard plan deployed in a 3-AZ region can maintain application continuity if a zone goes down, while a cluster with the Free plan would go down.
 
-#### Supported Regions by Plan
+#### Supported regions by plan
 
 The availability of OVHcloud Managed Kubernetes varies by plan. The Free plan is available in multiple single-zone regions worldwide, while the Standard plan is available in both single-zone and multi-zone regions for enhanced resilience.
 
-For a complete list of supported regions by plan and their deployment architecture (1-AZ vs 3-AZ), see the [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan) section.
+For a complete list of supported regions by plan and their deployment architecture (1-AZ vs 3-AZ), see the following guide: [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
 
-#### Standard Plan Exclusive Features
+#### Standard plan exclusive features
 
 In addition to multi-zone deployment, the Standard plan includes advanced features not available on the Free plan:
 
 - **Floating IPs per node**: Automatically assign public Floating IPs to worker nodes in a node pool for direct public access and node bandwidth usage. This feature is exclusively available on the Standard plan. For more information, see the [Using Floating IPs on MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips) guide.
-- **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions)
-- **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions
-- **Dedicated etcd storage**: Up to 8GB for larger clusters
-- **Up to 500 nodes**: Support for large-scale production deployments
+- **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions).
+- **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions.
+- **Dedicated etcd storage**: Up to 8GB for larger clusters.
+- **Up to 500 nodes**: Support for large-scale production deployments.
 
 ### Summary
 

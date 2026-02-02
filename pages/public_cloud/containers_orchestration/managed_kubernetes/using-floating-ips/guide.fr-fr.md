@@ -1,90 +1,90 @@
 ---
-title: Utilisation des Floating IPs sur Managed Kubernetes Service
-excerpt: Découvrez comment activer et gérer les Floating IPs sur les nœuds workers pour les clusters Managed Kubernetes Service
-updated: 2026-01-30
+title: Utilisation des Floating IP sur Managed Kubernetes Service
+excerpt: Découvrez comment activer et gérer les Floating IP sur les nœuds workers pour les clusters Managed Kubernetes Service
+updated: 2026-02-02
 ---
 
 ## Objectif
 
-Ce guide explique comment utiliser les Floating IPs sur le service OVHcloud Managed Kubernetes (MKS) avec le plan Standard. Les Floating IPs vous permettent d'assigner automatiquement des adresses IP publiques aux nœuds workers d'un node pool, permettant un accès public direct aux nœuds et l'utilisation de la bande passante du nœud plutôt que celle de la Managed Gateway.
+Ce guide explique comment utiliser les Floating IP sur le service OVHcloud Managed Kubernetes (MKS) avec le plan Standard. Les Floating IP vous permettent d'assigner automatiquement des adresses IP publiques aux nœuds workers d'un node pool, permettant un accès public direct aux nœuds et l'utilisation de la bande passante du nœud plutôt que celle de la Managed Gateway.
 
 ## Avant de commencer
 
 Ce tutoriel suppose que vous disposez déjà d'un cluster OVHcloud Managed Kubernetes fonctionnel avec le **plan Standard** et des connaissances de base sur son utilisation.
 
 > [!primary]
-> **Prérequis : Plan Standard**
+> **Plan Standard requis.**
 >
-> Les Floating IPs par nœud sont une fonctionnalité exclusive du **plan Standard d'OVHcloud Managed Kubernetes**. Cette fonctionnalité n'est pas disponible sur le plan Free.
+> Les Floating IP par nœud sont une fonctionnalité exclusive du **plan Standard d'OVHcloud Managed Kubernetes Service**. Cette fonctionnalité n'est pas disponible sur le plan Free.
 >
 > Pour plus d'informations sur les plans MKS et leurs différences, consultez le [guide de comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
 
 > [!primary]
-> **Disponibilité régionale**
+> **Disponibilité régionale.**
 >
-> Le plan Standard avec support des Floating IPs est disponible dans les régions suivantes :
+> Le plan Standard avec support des Floating IP est disponible dans les régions suivantes :
+>
 > - **Régions 1-AZ** : EU-WEST-RBX (Roubaix), AP-SOUTH-MUM (Mumbai)
 > - **Régions 3-AZ** : EU-WEST-PAR (Paris), EU-SOUTH-MIL (Milan)
 >
-> Pour une liste complète des régions disponibles par plan, consultez la section [Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan).
+> Pour une liste complète des régions disponibles par plan, consultez le guide « [Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors) ».
 
-## Qu'est-ce que les Floating IPs pour MKS ?
+## Que sont les Floating IP pour MKS ?
 
-Les Floating IPs pour OVHcloud Managed Kubernetes vous permettent d'assigner automatiquement une adresse IP publique Floating à chaque nœud worker d'un node pool, y compris les nœuds gérés par l'autoscaler.
+Les Floating IP pour OVHcloud Managed Kubernetes Service vous permettent d'assigner automatiquement une adresse Floating IP publique à chaque nœud worker d'un node pool, y compris les nœuds gérés par l'autoscaler.
 
 ### Avantages clés
 
-- **Accès public direct** : Chaque nœud obtient sa propre adresse IP publique, permettant une connectivité externe directe
-- **Utilisation de la bande passante du nœud** : Exploite la bande passante publique du nœud (1 Gbps, 10 Gbps ou plus selon le flavor d'instance) au lieu de celle de la Managed Gateway
-- **Assignment automatique** : Les Floating IPs sont automatiquement assignées aux nœuds lorsque la fonctionnalité est activée, y compris pour les nœuds créés par l'autoscaler
-- **Architecture simplifiée** : Exposition directe des nœuds sans couches de load balancing supplémentaires pour des cas d'usage spécifiques
+- **Accès public direct** : Chaque nœud obtient sa propre adresse IP publique, permettant une connectivité externe directe.
+- **Utilisation de la bande passante du nœud** : Exploite la bande passante publique du nœud (1 Gbps, 10 Gbps ou plus selon le flavor d'instance) au lieu de celle de la Managed Gateway.
+- **Affectation automatique** : Les Floating IP sont automatiquement assignées aux nœuds lorsque la fonctionnalité est activée, y compris pour les nœuds créés par l'autoscaler.
+- **Architecture simplifiée** : Exposition directe des nœuds sans couches de load balancing supplémentaires pour des cas d'usage spécifiques.
 
 ### Gestion du cycle de vie
 
 Le cycle de vie d'une Floating IP est étroitement lié au nœud auquel elle est attachée :
 
-- **Création du nœud** : Une Floating IP est automatiquement assignée lors de la création du nœud
-- **Suppression du nœud** : La Floating IP est automatiquement supprimée lors de la suppression du nœud
-- **Scale down de l'autoscaler** : Les Floating IPs sont supprimées lorsque les nœuds sont réduits
-- **Désactivation de la fonctionnalité** : Toutes les Floating IPs du node pool sont supprimées lorsque la fonctionnalité est désactivée
+- **Création du nœud** : Une Floating IP est automatiquement assignée lors de la création du nœud.
+- **Suppression du nœud** : La Floating IP est automatiquement supprimée lors de la suppression du nœud.
+- **Scale down de l'autoscaler** : Les Floating IP sont supprimées lorsque les nœuds sont réduits.
+- **Désactivation de la fonctionnalité** : Toutes les Floating IP du node pool sont supprimées lorsque la fonctionnalité est désactivée.
 
 > [!warning]
-> **Mises à jour du cluster et persistance des Floating IPs**
+> **Mises à jour du cluster et persistance des Floating IP.**
 >
-> **Comportement actuel** : La stratégie de mise à jour et de patch du cluster est actuellement le **rolling upgrade**. Durant ce processus, les nœuds sont remplacés un par un, ainsi que leurs Floating IPs associées. Cela signifie que **les Floating IPs changeront** pendant les mises à jour du cluster.
+> **Comportement actuel** : La stratégie de mise à niveau et de patch du cluster est actuellement **rolling upgrade**. Durant ce processus, les nœuds sont remplacés un par un, ainsi que leurs Floating IP associées. Cela signifie que **les Floating IP changeront** pendant les mises à jour du cluster.
 >
-> **Amélioration future** : Une future stratégie de mise à jour **In Place** préservera les Floating IPs durant les mises à jour du cluster, maintenant la continuité des adresses IP.
+> **Amélioration future** : Une future stratégie de mise à jour **In Place** préservera les Floating IP durant les mises à jour du cluster, maintenant la continuité des adresses IP.
 
 ## Cas d'usage
 
-Les Floating IPs sont particulièrement utiles pour les scénarios suivants :
+Les Floating IP sont particulièrement utiles pour les scénarios suivants :
 
-- **Applications haute bande passante** : Applications nécessitant un accès direct à la bande passante du nœud (streaming vidéo, transferts de fichiers volumineux)
-- **Services NodePort** : Exposition de services via NodePort avec accès direct au nœud
-- **Contournement de la bande passante Gateway** : Éviter les limitations de bande passante de la Managed Gateway pour des charges de travail spécifiques
-- **Accès direct aux nœuds** : Scénarios nécessitant un accès public direct aux nœuds (monitoring, debugging, protocoles personnalisés)
+- **Applications à haute bande passante** : Applications nécessitant un accès direct à la bande passante du nœud (streaming vidéo, transferts de fichiers volumineux).
+- **Services NodePort** : Exposition de services via NodePort avec accès direct au nœud.
+- **Contournement de la bande passante de la Gateway** : Éviter les limitations de bande passante de la Managed Gateway pour des charges de travail spécifiques.
+- **Accès direct aux nœuds** : Scénarios nécessitant un accès public direct aux nœuds (monitoring, debugging, protocoles personnalisés).
 
 ## Tarification
 
-Les Floating IPs sont facturées à l'heure selon la tarification d'OVHcloud Public Cloud.
+Les Floating IP sont facturées à l'heure selon la tarification d'OVHcloud Public Cloud.
 
-Pour des informations détaillées sur la tarification, veuillez consulter :
-- [Tarifs OVHcloud Public Cloud](https://www.ovhcloud.com/fr/public-cloud/prices/#compute) (section Floating IP)
+Pour des informations détaillées sur la tarification, veuillez consulter les [tarifs OVHcloud Public Cloud](/links/public-cloud/prices-compute) (section Floating IP).
 
 > [!primary]
-> Les Floating IPs sont facturées par adresse IP par heure tant qu'elles sont assignées à un nœud. Elles sont automatiquement supprimées (et la facturation s'arrête) lors de la suppression des nœuds.
+> Les Floating IP sont facturées par adresse IP par heure tant qu'elles sont assignées à un nœud. Elles sont automatiquement supprimées (et la facturation s'arrête) lors de la suppression des nœuds.
 
-## Comment activer les Floating IPs
+## Comment activer les Floating IP
 
-Vous pouvez activer les Floating IPs sur un node pool de trois manières :
+Vous pouvez activer les Floating IP sur un node pool de trois manières :
 
-1. Lors de la création d'un nouveau cluster avec un node pool
-2. Lors de la création d'un nouveau node pool dans un cluster existant
-3. En mettant à jour un node pool existant
+1. Lors de la création d'un nouveau cluster avec un node pool.
+2. Lors de la création d'un nouveau node pool dans un cluster existant.
+3. En mettant à jour un node pool existant.
 
-### Méthode 1 : Activer les Floating IPs lors de la création d'un cluster
+### Méthode 1 : Activer les Floating IP lors de la création d'un cluster
 
-Lors de la création d'un nouveau cluster MKS Standard via l'API OVHcloud, vous pouvez activer les Floating IPs directement dans la configuration du node pool initial.
+Lors de la création d'un nouveau cluster MKS Standard via l'API OVHcloud, vous pouvez activer les Floating IP directement dans la configuration du node pool initial.
 
 **Endpoint API :**
 
@@ -92,7 +92,7 @@ Lors de la création d'un nouveau cluster MKS Standard via l'API OVHcloud, vous 
 POST /cloud/project/{serviceName}/kube
 ```
 
-**Exemple de payload JSON** (partiel, focus sur le node pool avec Floating IPs) :
+**Exemple de payload JSON** (partiel, focus sur le node pool avec Floating IP) :
 
 ```json
 {
@@ -119,14 +119,13 @@ POST /cloud/project/{serviceName}/kube
 
 **Paramètre clé :**
 
-- `attachFloatingIps.enabled` : Définir à `true` pour activer les Floating IPs sur le node pool
+- `attachFloatingIps.enabled` : Définir à `true` pour activer les Floating IP sur le node pool.
 
-Pour la documentation API complète, consultez :
-- [Console API OVHcloud - Créer un cluster](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube)
+Pour la documentation API complète, consultez : [Console API OVHcloud - Créer un cluster](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
 
-### Méthode 2 : Activer les Floating IPs lors de la création d'un nouveau node pool
+### Méthode 2 : Activer les Floating IP lors de la création d'un nouveau node pool
 
-Pour activer les Floating IPs sur un nouveau node pool dans un cluster existant, utilisez l'endpoint API suivant.
+Pour activer les Floating IP sur un nouveau node pool dans un cluster existant, utilisez l'endpoint API suivant.
 
 **Endpoint API :**
 
@@ -153,12 +152,11 @@ POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 }
 ```
 
-Pour la documentation API complète, consultez :
-- [Console API OVHcloud - Créer un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube/-kubeId-/nodepool)
+Pour la documentation API complète, consultez : [Console API OVHcloud - Créer un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube/-kubeId-/nodepool).
 
-### Méthode 3 : Activer/Désactiver les Floating IPs sur un node pool existant
+### Méthode 3 : Activer / désactiver les Floating IP sur un node pool existant
 
-Vous pouvez activer ou désactiver les Floating IPs sur un node pool existant en utilisant l'endpoint PUT.
+Vous pouvez activer ou désactiver les Floating IP sur un node pool existant en utilisant l'endpoint PUT.
 
 **Endpoint API :**
 
@@ -187,18 +185,17 @@ PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 ```
 
 > [!warning]
-> **Désactivation des Floating IPs**
+> **Désactivation des Floating IP.**
 >
-> Lorsque vous désactivez les Floating IPs sur un node pool, **toutes les Floating IPs attachées aux nœuds de ce pool seront immédiatement supprimées**. Cela interrompra toutes les connexions dépendant de ces adresses IP publiques.
+> Lorsque vous désactivez les Floating IP sur un node pool, **toutes les Floating IP attachées aux nœuds de ce pool seront immédiatement supprimées**. Cela interrompra toutes les connexions dépendant de ces adresses IP publiques.
 
-Pour la documentation API complète, consultez :
-- [Console API OVHcloud - Mettre à jour un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#put-/cloud/project/-serviceName-/kube/-kubeId-/nodepool/-nodePoolId-)
+Pour la documentation API complète, consultez : [Console API OVHcloud - Mettre à jour un node pool](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#put-/cloud/project/-serviceName-/kube/-kubeId-/nodepool/-nodePoolId-).
 
-### Utilisation du CLI OVHcloud
+### Utilisation de la CLI OVHcloud
 
-Vous pouvez également gérer les Floating IPs en utilisant le [CLI OVHcloud](https://github.com/ovh/ovhcloud-cli).
+Vous pouvez également gérer les Floating IP en utilisant la [CLI OVHcloud](https://github.com/ovh/ovhcloud-cli).
 
-**Exemple : Créer un node pool avec les Floating IPs activées**
+**Exemple : Créer un node pool avec les Floating IP activées.**
 
 ```bash
 ovhcloud cloud kube nodepool create <cluster_id> \
@@ -212,7 +209,7 @@ ovhcloud cloud kube nodepool create <cluster_id> \
   --anti-affinity
 ```
 
-**Exemple : Créer un node pool avec Floating IPs en utilisant un fichier de configuration**
+**Exemple : Créer un node pool avec Floating IP en utilisant un fichier de configuration.**
 
 D'abord, générez un exemple de fichier de configuration :
 
@@ -220,7 +217,7 @@ D'abord, générez un exemple de fichier de configuration :
 ovhcloud cloud kube nodepool create <cluster_id> --init-file ./nodepool-params.json
 ```
 
-Éditez le fichier `nodepool-params.json` pour activer les Floating IPs :
+Éditez le fichier `nodepool-params.json` pour activer les Floating IP :
 
 ```json
 {
@@ -244,14 +241,13 @@ Puis créez le node pool :
 ovhcloud cloud kube nodepool create <cluster_id> --from-file ./nodepool-params.json
 ```
 
-Pour plus d'informations sur le CLI OVHcloud, consultez :
-- [CLI OVHcloud - Créer un node pool](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud_cloud_kube_nodepool_create.md)
+Pour plus d'informations sur la CLI OVHcloud, consultez : [CLI OVHcloud - Créer un node pool](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud_cloud_kube_nodepool_create.md)
 
-## Vérifier l'assignation des Floating IPs
+## Vérifier l'assignation des Floating IP
 
 ### Avec Kubernetes kubectl
 
-Vous pouvez vérifier que les nœuds ont des Floating IPs assignées en consultant l'IP externe du nœud :
+Vous pouvez vérifier que les nœuds ont des Floating IP assignées en consultant l'IP externe du nœud :
 
 ```bash
 kubectl get nodes -o wide
@@ -270,7 +266,7 @@ La colonne `EXTERNAL-IP` affiche la Floating IP assignée à chaque nœud.
 
 ### Avec l'API OVHcloud
 
-Vous pouvez également interroger la configuration du node pool via l'API OVHcloud pour vérifier que les Floating IPs sont activées :
+Vous pouvez également interroger la configuration du node pool via l'API OVHcloud pour vérifier que les Floating IP sont activées :
 
 ```
 GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
@@ -289,52 +285,51 @@ La réponse inclura :
 }
 ```
 
-### Avec OpenStack CLI (Avancé)
+### Avec la CLI OpenStack (Avancé)
 
-Pour les utilisateurs avancés, vous pouvez utiliser OpenStack CLI pour lister les Floating IPs et leurs associations :
+Pour les utilisateurs avancés, il est possible d'utiliser la CLI OpenStack pour lister les Floating IP et leurs associations :
 
 ```bash
 openstack floating ip list
 ```
 
-Pour plus d'informations sur la gestion des Floating IPs avec OpenStack, consultez :
-- [KB OVHcloud : Additional IP vs Floating IP](https://help.ovhcloud.com/csm/fr-public-cloud-network-additional-ip-vs-floating-ip?id=kb_article_view&sysparm_article=KB0050159)
+Pour plus d'informations sur la gestion des Floating IP avec OpenStack, consultez notre guide « [Concepts - Additional IP ou Floating IP](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) ».
 
 ## Bonnes pratiques
 
 ### Considérations de sécurité
 
-Lorsque vous utilisez des Floating IPs, chaque nœud est directement exposé à Internet. Suivez ces bonnes pratiques de sécurité :
+Lorsque vous utilisez des Floating IP, chaque nœud est directement exposé à Internet. Suivez ces bonnes pratiques de sécurité :
 
-- **Network Policies** : Implémentez des Network Policies Kubernetes pour restreindre le trafic pod-à-pod
-- **Security Groups** : Configurez les security groups OVHcloud pour limiter le trafic entrant aux ports nécessaires uniquement
-- **Durcissement des nœuds** : Assurez-vous que les nœuds sont correctement durcis et suivent les bonnes pratiques de sécurité
-- **Monitoring** : Activez le monitoring et les alertes pour détecter les activités suspectes sur les IPs publiques
+- **Network Policies** : Implémentez des Network Policies Kubernetes pour restreindre le trafic pod-à-pod.
+- **Security Groups** : Configurez les Security Groups OVHcloud pour limiter le trafic entrant aux ports nécessaires uniquement.
+- **Durcissement des nœuds** : Assurez-vous que les nœuds sont correctement durcis et suivent les bonnes pratiques de sécurité.
+- **Monitoring** : Activez le monitoring et les alertes pour détecter les activités suspectes sur les IP publiques.
 
 ### Gestion de la bande passante
 
-- **Sélection du flavor d'instance** : Choisissez des flavors d'instance avec une bande passante adéquate pour votre charge de travail (les flavors B3, C3, R3 offrent 10 Gbps de bande passante)
-- **Distribution du trafic** : Distribuez les charges de travail gourmandes en trafic sur plusieurs nœuds pour éviter les goulots d'étranglement
+- **Sélection du flavor d'instance** : Choisissez des flavors d'instance avec une bande passante adéquate pour votre charge de travail (les flavors B3, C3 et R3 offrent 10 Gbps de bande passante).
+- **Distribution du trafic** : Distribuez les charges de travail gourmandes en trafic sur plusieurs nœuds pour éviter les goulots d'étranglement.
 
 ### Optimisation des coûts
 
-- **Configuration de l'autoscaler** : Configurez l'autoscaler de manière appropriée pour éviter l'allocation inutile de Floating IPs lors des scale-up
-- **Ciblage de la fonctionnalité** : N'activez les Floating IPs que sur les node pools qui nécessitent réellement un accès public direct
-- **Révision régulière** : Révisez périodiquement l'utilisation des Floating IPs et désactivez la fonctionnalité sur les node pools qui n'en ont plus besoin
+- **Configuration de l'autoscaler** : Configurez l'autoscaler de manière appropriée pour éviter l'allocation inutile de Floating IP lors des scale-up.
+- **Ciblage de la fonctionnalité** : N'activez les Floating IP que sur les node pools qui nécessitent réellement un accès public direct.
+- **Révision régulière** : Révisez périodiquement l'utilisation des Floating IP et désactivez la fonctionnalité sur les node pools qui n'en ont plus besoin.
 
 ## Limitations et problèmes connus
 
-- **Rolling upgrades** : Durant les mises à jour et patches du cluster, les Floating IPs sont remplacées avec les nœuds. Une future stratégie de mise à jour In Place résoudra cette limitation.
-- **Plan Standard uniquement** : Les Floating IPs sont exclusivement disponibles sur le plan Standard
-- **Disponibilité régionale** : Actuellement disponible uniquement dans certaines régions (EU-WEST-RBX, AP-SOUTH-MUM, EU-WEST-PAR, EU-SOUTH-MIL)
-- **Pas de gestion manuelle des IPs** : Vous ne pouvez pas assigner manuellement des adresses Floating IP spécifiques ; elles sont automatiquement allouées par la plateforme
+- **Rolling upgrades** : Durant les mises à jour et patches du cluster, les Floating IP sont remplacées avec les nœuds. Une future stratégie de mise à jour In Place résoudra cette limitation.
+- **Plan Standard uniquement** : Les Floating IP sont exclusivement disponibles sur le plan Standard.
+- **Disponibilité régionale** : Actuellement disponible uniquement dans certaines régions (EU-WEST-RBX, AP-SOUTH-MUM, EU-WEST-PAR, EU-SOUTH-MIL).
+- **Pas de gestion manuelle des IP** : Vous ne pouvez pas assigner manuellement des adresses Floating IP spécifiques ; elles sont automatiquement allouées par la plateforme.
 
 ## Aller plus loin
 
-- [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans) : En savoir plus sur les différences entre les plans Free et Standard
-- [Disponibilité régionale](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan) : Consulter les régions disponibles pour chaque plan
-- [Console API OVHcloud](https://eu.api.ovh.com/console/) : Explorer l'API OVHcloud complète
-- [Additional IP vs Floating IP (KB)](https://help.ovhcloud.com/csm/fr-public-cloud-network-additional-ip-vs-floating-ip?id=kb_article_view&sysparm_article=KB0050159) : Comprendre la différence entre Additional IP et Floating IP
-- [Tarifs OVHcloud Public Cloud](https://www.ovhcloud.com/fr/public-cloud/prices/#compute) : Consulter les tarifs des Floating IPs
+- [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans) : En savoir plus sur les différences entre les plans Free et Standard.
+- [Disponibilité régionale](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors) : Consulter les régions disponibles pour chaque plan.
+- [Console API OVHcloud](https://eu.api.ovh.com/console/) : Explorer l'API OVHcloud complète.
+- [Concepts - Additional IP ou Floating IP](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip) : Comprendre la différence entre Additional IP et Floating IP.
+- [Tarifs OVHcloud Public Cloud](/links/public-cloud/prices-compute) : Consulter les tarifs des Floating IP.
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

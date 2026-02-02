@@ -1,12 +1,12 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2026-01-30
+updated: 2026-02-02
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
-### Available regions / Datacenters available
+### Available regions / datacenters
 
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
@@ -16,11 +16,11 @@ Note that projects with older regions (such as SBG1 or GRA1 for example) will be
 
 OVHcloud US customers can also deploy the service in both our East and West American datacenters.
 
-### Regional Availability by MKS Plan
+### Regional availability by MKS plan
 
 OVHcloud Managed Kubernetes Service availability varies depending on your chosen plan (Free or Standard). The table below shows which regions support each plan and their deployment architecture:
 
-| Region | Free Plan | Standard Plan | Deployment Architecture |
+| Region | Free plan | Standard plan | Deployment architecture |
 |--------|-----------|---------------|-------------------------|
 | **Europe** | | | |
 | GRA5 (Gravelines) | ✅ | ❌ | 1-AZ |
@@ -44,22 +44,23 @@ OVHcloud Managed Kubernetes Service availability varies depending on your chosen
 | US-EAST-VA-1 (Virginia) | ✅ | ❌ | 1-AZ |
 
 > [!primary]
-> **Deployment Architecture:**
+> **Deployment architecture:**
 >
 > - **1-AZ (Single Availability Zone)**: Cluster deployed in a single availability zone. Suitable for development, testing, and non-critical workloads.
-> - **3-AZ (Multi Availability Zone)**: Cluster deployed across three availability zones for enhanced resilience. Available exclusively on Standard plan. Provides high availability and fault tolerance for production workloads.
+> - **3-AZ (Multi Availability Zones)**: Cluster deployed across three availability zones for enhanced resilience. Available exclusively on the Standard plan. Provides high availability and fault tolerance for production workloads.
 >
 > For more information about MKS plans and their features, see the [MKS Plans comparison guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
 
 > [!primary]
-> **Standard Plan Exclusive Features:**
+> **Standard plan exclusive features:**
 >
 > The Standard plan includes advanced features not available on the Free plan, such as:
-> - **Floating IPs per node**: Automatically assign public Floating IPs to worker nodes for direct public access and node bandwidth usage. See the [Using Floating IPs on MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips) guide for more information.
-> - **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions)
-> - **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions
-> - **Dedicated etcd storage**: Up to 8GB for larger clusters
-> - **Up to 500 nodes**: Support for large-scale production deployments
+>
+> - **Floating IPs per node**: Automatically assign public Floating IPs to worker nodes for direct public access and node bandwidth usage. See the "[Using Floating IPs on MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips)" guide for more information.
+> - **Cross-AZ resilience**: Enhanced cluster availability across multiple availability zones (in 3-AZ regions).
+> - **Production-grade SLA**: 99.9% SLA for 1-AZ regions, 99.99% SLA for 3-AZ regions.
+> - **Dedicated etcd storage**: Up to 8GB for larger clusters.
+> - **Up to 500 nodes**: Support for large-scale production deployments.
 
 ### Available worker nodes flavors
 
@@ -84,6 +85,7 @@ Here is a comparative table of flavours available by region:
 | `L40s-*` | GRA11 | | | | | | |
 | `T1-*`   | BHS5 / GRA5 / GRA7 / GRA11 | | | | | | |
 | `T2-*`   | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | | | | | |
+
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
 For more information, please refer to the following page: [OVHcloud Public Cloud instances](/links/public-cloud/prices)
 
@@ -95,9 +97,9 @@ This is detailed in the [quickstart with OVH API](/pages/public_cloud/containers
 
 GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU applications on Kubernetes Managed Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-gpu-application), please read our tutorial.
 
-### Available persistent Storage Classes
+### Available persistent storage classes
 
-When adding a persistent volume though Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following Storage Classes:
+When adding a persistent volume though Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following storage classes:
 
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as you scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size.
@@ -108,7 +110,7 @@ All these `Storage Classes` are based on Cinder, the OpenStack block storage ser
 High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
 This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) guide.
 
-#### LUKS Encrypted Storage Classes
+#### LUKS encrypted storage classes
 
 OVHcloud Managed Kubernetes also supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK). The following encrypted storage classes are available in supported regions:
 

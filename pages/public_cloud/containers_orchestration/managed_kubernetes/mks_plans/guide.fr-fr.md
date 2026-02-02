@@ -1,7 +1,7 @@
 ---
 title: "Choisir le bon plan OVHcloud Managed Kubernetes : Free ou Standard"
 excerpt: "Découvrez les plans OVHcloud Managed Kubernetes : Free et Standard. Découvrez le plan qui convient à vos projets cloud et commencez rapidement."
-updated: 2026-01-30
+updated: 2026-02-02
 ---
 
 ## Objectif
@@ -40,19 +40,19 @@ Exemple : Un cluster au plan Standard déployé dans une région 3-AZ peut maint
 
 #### Régions supportées par plan
 
-La disponibilité d'OVHcloud Managed Kubernetes varie selon le plan. Le plan Free est disponible dans plusieurs régions à zone unique dans le monde, tandis que le plan Standard est disponible dans des régions à zone unique et multi-zones pour une résilience accrue.
+La disponibilité d'OVHcloud Managed Kubernetes Service varie selon le plan. Le plan Free est disponible dans plusieurs régions à zone unique dans le monde, tandis que le plan Standard est disponible dans des régions à zone unique et multi-zones pour une résilience accrue.
 
-Pour une liste complète des régions supportées par plan et leur architecture de déploiement (1-AZ vs 3-AZ), consultez la section [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan).
+Pour une liste complète des régions supportées par plan et leur architecture de déploiement (1-AZ vs 3-AZ), consultez le guide « [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors) ».
 
 #### Fonctionnalités exclusives du plan Standard
 
 En plus du déploiement multi-zones, le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free :
 
-- **Floating IPs par nœud** : Assignez automatiquement des Floating IPs publiques aux nœuds workers d'un node pool pour un accès public direct et l'utilisation de la bande passante du nœud. Cette fonctionnalité est exclusivement disponible sur le plan Standard. Pour plus d'informations, consultez le guide [Utilisation des Floating IPs sur MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips).
-- **Résilience Cross-AZ** : Disponibilité du cluster améliorée sur plusieurs zones de disponibilité (dans les régions 3-AZ)
-- **SLA production** : 99,9% SLA pour les régions 1-AZ, 99,99% SLA pour les régions 3-AZ
-- **Stockage etcd dédié** : Jusqu'à 8 Go pour des clusters plus grands
-- **Jusqu'à 500 nœuds** : Support de déploiements de production à grande échelle
+- **Floating IP par nœud** : Assignez automatiquement des Floating IP publiques aux nœuds workers d'un node pool pour un accès public direct et l'utilisation de la bande passante du nœud. Cette fonctionnalité est exclusivement disponible sur le plan Standard. Pour plus d'informations, consultez le guide « [Utilisation des Floating IP sur MKS Standard](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-floating-ips) ».
+- **Résilience Cross-AZ** : Disponibilité du cluster améliorée sur plusieurs zones de disponibilité (dans les régions 3-AZ).
+- **SLA production** : 99,9% SLA pour les régions 1-AZ, 99,99% SLA pour les régions 3-AZ.
+- **Stockage etcd dédié** : Jusqu'à 8 Go pour des clusters plus grands.
+- **Jusqu'à 500 nœuds** : Support de déploiements de production à grande échelle.
 
 ### Résumé
 

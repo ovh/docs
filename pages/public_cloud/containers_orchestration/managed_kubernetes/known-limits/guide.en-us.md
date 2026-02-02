@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-01-30
+updated: 2026-02-02
 ---
 
 <style>
@@ -42,9 +42,9 @@ As a fully managed service, you will **not have SSH access** to the nodes. All O
 
 ## Regional Availability by Plan
 
-The availability of OVHcloud Managed Kubernetes varies depending on your chosen plan (Free or Standard). Each plan supports different regions and deployment architectures (single or multi-availability zone).
+The availability of OVHcloud Managed Kubernetes Service varies depending on your chosen plan (Free or Standard). Each plan supports different regions and deployment architectures (Single or Multi-Availability Zones).
 
-For detailed information about regional availability, deployment architecture (1-AZ vs 3-AZ), and plan-specific features, see the [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan) section.
+For detailed information about regional availability, deployment architecture (1-AZ vs 3-AZ), and plan-specific features, see the following guide: [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
 
 > [!primary]
 > **Standard Plan Exclusive Features:**
@@ -101,10 +101,10 @@ For more details, please refer to the [Resizing Persistent Volumes documentation
 
 ### LUKS Encrypted Persistent Volumes
 
-OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK).
+OVHcloud Managed Kubernetes supports LUKS encrypted Block Storage volumes using OVHcloud Managed Keys (OMK).
 
 > [!primary]
-> This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
+> This feature is available in specific regions. For detailed regional availability and storage class specifications, see: "[Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors)".
 
 The following encrypted storage classes are available:
 

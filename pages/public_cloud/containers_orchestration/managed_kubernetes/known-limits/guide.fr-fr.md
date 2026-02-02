@@ -1,7 +1,7 @@
 ---
 title: Limites connues
 excerpt: 'Exigences et limites à respecter'
-updated: 2026-01-30
+updated: 2026-02-02
 ---
 
 <style>
@@ -42,14 +42,14 @@ En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux n
 
 ## Disponibilité régionale par plan
 
-La disponibilité d'OVHcloud Managed Kubernetes varie selon le plan choisi (Free ou Standard). Chaque plan prend en charge différentes régions et architectures de déploiement (mono ou multi-zone de disponibilité).
+La disponibilité d'OVHcloud Managed Kubernetes Service varie selon le plan choisi (Free ou Standard). Chaque plan prend en charge différentes régions et architectures de déploiement (mono ou multi zones de disponibilité).
 
-Pour des informations détaillées sur la disponibilité régionale, l'architecture de déploiement (1-AZ vs 3-AZ) et les fonctionnalités spécifiques au plan, consultez la section [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan).
+Pour des informations détaillées sur la disponibilité régionale, l'architecture de déploiement (1-AZ vs 3-AZ) et les fonctionnalités spécifiques au plan, consultez le guide « [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors) ».
 
 > [!primary]
 > **Fonctionnalités exclusives du plan Standard :**
 >
-> Le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free, telles que les Floating IPs par nœud, la résilience cross-AZ, un SLA de niveau production (99,9% pour 1-AZ, 99,99% pour 3-AZ), un stockage etcd dédié et la prise en charge de jusqu'à 500 nœuds. Pour plus d'informations, consultez le guide [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+> Le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free, telles que les Floating IP par nœud, la résilience cross-AZ, un SLA de niveau production (99,9% pour 1-AZ, 99,99% pour 3-AZ), un stockage etcd dédié et la prise en charge de jusqu'à 500 nœuds. Pour plus d'informations, consultez le guide [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
 
 ## Considérations sur les correctifs, mises à niveau et maintenances
 
@@ -98,6 +98,24 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 ```
 
 Pour plus de détails, veuillez consulter la [documentation sur le redimensionnement des volumes persistants](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
+
+### Volumes persistants chiffrés LUKS
+
+OVHcloud Managed Kubernetes prend en charge les volumes Block Storage chiffrés LUKS à l'aide d'OVHcloud Managed Keys (OMK).
+
+> [!primary]
+> Cette fonctionnalité est disponible dans des régions spécifiques. Pour obtenir des informations détaillées sur la disponibilité régionale et les spécifications des classes de stockage, consultez ce guide : [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
+
+Les classes de stockage chiffrées suivantes sont disponibles :
+
+- `csi-cinder-high-speed-luks`
+- `csi-cinder-classic-luks`
+- `csi-cinder-high-speed-gen2-luks`
+
+Pour plus d'informations :
+
+- [Choisir la bonne classe Block Storage](/pages/storage_and_backup/block_storage/block_storage_the_right_storage_class)
+- [Créer des volumes persistants chiffrés sur les clusters OVHcloud Managed Kubernetes avec LUKS](https://blog.ovhcloud.com/create-encrypted-persistent-volumes-on-ovhcloud-managed-kubernetes-clusters-with-luks/) (Tutoriel complet)
 
 ## LoadBalancer
 
