@@ -20,8 +20,8 @@ You have just ordered your Backup Agent offer for your Bare Metal server. Discov
 
 > [!warning]
 >
-> You must ensure that your server can be reached by our Veeam infrastructure.
-> Here is the information to allow on your Bare Metal server:
+> You must ensure that your server can be reached by our Veeam infrastructure.  
+> Here is the information to allow access on your Bare Metal server:
 >
 > - IP/DNS of the server: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
 > - Port: 6180

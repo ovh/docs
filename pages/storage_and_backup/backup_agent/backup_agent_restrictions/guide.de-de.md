@@ -36,13 +36,13 @@ Diese Anleitung beschreibt die bekannten Einschränkungen und Grenzen des Backup
 
 ### Netzwerkeinschränkungen
 
-- Das Produkt ist nur mit Servern kompatibel, die mit der öffentlichen IP kommunizieren, die OVHcloud den Servern zugewiesen hat. Ab sofort ist es nicht mehr mit Additional IP Adressen oder dem vRack kompatibel.
+- Das Produkt ist nur mit Servern kompatibel, die mit der öffentlichen IP kommunizieren, die OVHcloud den Servern zugewiesen hat. Es nicht mit Additional IP Adressen oder dem vRack kompatibel.
 
 ### Virtuelle Maschinen (Proxmox, ESXi usw.)
 
-- Das Produkt gestattet nur die öffentliche IP-Adresse des Servers, mit der Veeam-Infrastruktur zu kommunizieren. Wenn Sie beispielsweise eine Proxmox Virtual Machine (VM) auf Ihrem Server ausführen und diese die öffentliche IP-Adresse des Servers verwendet, kann der Agent funktionieren.
+- Das Produkt gestattet nur die öffentliche IP-Adresse des Servers, mit der Veeam-Infrastruktur zu kommunizieren. Wenn Sie beispielsweise eine Proxmox Virtual Machine (VM) auf Ihrem Server ausführen und diese die öffentliche IP-Adresse des Servers verwendet, kann der Agent funktionieren.  
 Dieser Anwendungsfall kann jedoch nicht als unterstützt betrachtet werden. Es können zu viele spezifische Fälle im Zusammenhang mit dieser Konfiguration auftreten, die derzeit nicht vom Produkt abgedeckt werden.
 
-## Weitere Informationen
+## Weiterführende Informationen
 
 Treten Sie unserer [User Community](/links/community) bei.

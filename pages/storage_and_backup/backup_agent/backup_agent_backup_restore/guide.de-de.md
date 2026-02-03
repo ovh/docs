@@ -36,7 +36,7 @@ Dieses Backup erstellt ein vollständiges Backup Ihres Servers, das an Ihren Rem
 > [!primary]
 >
 > Sie können dieses automatische Backup weder ändern noch deaktivieren.  
-> Derzeit können Sie die Richtlinie, die Ihren gesamten Server sichert, nicht ändern. Wir arbeiten daran, diese Konfiguration in Zukunft zu verbessern.
+> Derzeit können Sie die Richtlinie, die Ihren gesamten Server sichert, nicht ändern. Wir arbeiten daran, diese Konfiguration zu verbessern.
 
 Sie können den Erfolg dieses Backups überprüfen anhand:
 
@@ -49,11 +49,11 @@ Sie können den Erfolg dieses Backups überprüfen anhand:
 
 #### Manuelles Backup
 
-Wenn erforderlich, können Sie ein manuelles Backup auslösen.
+Falls erforderlich, können Sie ein manuelles Backup auslösen.
 
-Es erstellt ebenfalls ein vollständiges Backup Ihres Servers und wird immer an Ihren Remote-Storage-Punkt gesendet.
+Dies erstellt ebenfalls ein vollständiges Backup Ihres Servers und sendet es immer an Ihren Remote-Storage.
 
-Um ein manuelles Backup zu erstellen, klicken Sie auf die Registerkarte, die Ihrem Betriebssystem entspricht:
+Um ein manuelles Backup zu erstellen, klicken Sie auf den Tab für Ihr Betriebssystem:
 
 > [!tabs]
 > Windows
@@ -134,8 +134,8 @@ Um Dateien und Ordner wiederherzustellen, klicken Sie auf die Registerkarte, die
 >>
 >> ![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
 >>
->> - Restore - Overwrite: Ermöglicht Ihnen, die Datei zu wiederherstellen und die aktuelle Datei auf dem Server zu überschreiben.
->> - Restore - Keep: Ermöglicht Ihnen, die Datei zu wiederherzustellen, ohne die aktuelle Datei auf dem Server zu überschreiben.
+>> - Restore - Overwrite: Ermöglicht Ihnen, die Datei wiederherzustellen und die aktuelle Datei auf dem Server zu überschreiben.
+>> - Restore - Keep: Ermöglicht Ihnen, die Datei wiederherzustellen, ohne die aktuelle Datei auf dem Server zu überschreiben.
 >> - Copy To: Ermöglicht Ihnen, die Datei an einen Speicherort auf Ihrem Server zu kopieren.
 >> - Explore: Ermöglicht Ihnen, das Backup zu durchsuchen.
 >> - Properties: Ermöglicht Ihnen, die Dateieigenschaften anzuzeigen.

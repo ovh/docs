@@ -20,8 +20,8 @@ Sie haben gerade Ihr Backup Agent Angebot für Ihren Bare Metal Server bestellt.
 
 > [!warning]
 >
-> Sie müssen sicherstellen, dass Ihr Server von unserer Veeam-Infrastruktur erreicht werden kann.
-> Hier sind die Informationen, die Sie auf Ihrem Bare Metal Server zulassen müssen:
+> Sie müssen sicherstellen, dass Ihr Server von unserer Veeam-Infrastruktur erreicht werden kann.  
+> Hier sind die Informationen, um den Zugriff auf Ihrem Bare Metal Server zu erlauben:
 >
 > - IP/DNS des Servers: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
 > - Port: 6180

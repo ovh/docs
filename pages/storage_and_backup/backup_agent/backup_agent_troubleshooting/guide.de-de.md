@@ -165,15 +165,15 @@ Passwörter können über den Link "Passwort vergessen?" geändert werden, der i
 
 ///
 
-/// details | Ich habe meinen Server erneut installiert. Wie installiere ich den Backup Agent erneut?
+/// details | Ich habe meinen Server reinstalliert. Wie installiere ich den Backup Agent erneut?
 
 Sie müssen den Agent von Ihrem [OVHcloud Kundencenter](/links/manager) herunterladen und auf Ihrem neuen Betriebssystem installieren.
 
 ///
 
-## Protokolle finden und exportieren
+### Protokolle finden und exportieren
 
-Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktprotokolle einzusehen und zu exportieren. Klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
+Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Protokolle einzusehen und zu exportieren. Klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
 
 > [!tabs]
 > Windows
@@ -233,9 +233,9 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 >> sudo veeamconfig log export --path /pfad/zum/ziel
 >> ```
 >>
->> 2\. Über das Bedienfeld
+>> 2\. Über das Veeam Control Panel
 >>
->> Wenn Sie Zugriff auf eine grafische Benutzeroberfläche haben, können Sie Protokolle über das Bedienfeld von Veeam Agent exportieren, indem Sie das Zielverzeichnis angeben.
+>> Wenn Sie Zugriff auf eine grafische Benutzeroberfläche haben, können Sie Protokolle über das Control Panel von Veeam Agent exportieren, indem Sie das Zielverzeichnis angeben.
 >>
 >> Das Archiv wird im Format `.tar.gz` erstellt und enthält alle Protokolle und Konfigurationsdateien, die für die Diagnose erforderlich sind.
 >>
