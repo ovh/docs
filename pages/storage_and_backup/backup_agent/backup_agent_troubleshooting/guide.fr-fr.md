@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Guide de diagnostic et dépannage"
 excerpt: "Découvrez comment résoudre les problèmes potentiels liés à Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -129,15 +129,15 @@ Si votre backup est en erreur, vous pouvez diagnostiquer le problème directemen
 >>
 >> Pour voir les détails d'une erreur de backup sur Linux, vous pouvez utiliser l'interface utilisateur :
 >>
->> 1. Connectez-vous à votre serveur Bare Metal en SSH.
->> 2. Lancez l'interface Veeam en tapant la commande suivante :
+>> 1\. Connectez-vous à votre serveur Bare Metal en SSH.
+>> 2\. Lancez l'interface Veeam en tapant la commande suivante :
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Dans l'interface, naviguez vers la section des backups pour voir l'état de vos jobs.
->> 4. Sélectionnez le backup en erreur pour consulter les détails de l'erreur.
+>> 3\. Dans l'interface, naviguez vers la section des backups pour voir l'état de vos jobs.
+>> 4\. Sélectionnez le backup en erreur pour consulter les détails de l'erreur.
 >>
 >> Vous pouvez également consulter les logs directement via la ligne de commande :
 >>
@@ -159,15 +159,15 @@ Nous gardons vos données durant 14 jours à la suite d'une suppression d'un age
 
 Le changement de mot de passe s’effectue via le lien « Mot de passe oublié ? » disponible sur la console VSPC.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | J'ai réinstallé mon serveur, comment réinstaller Backup Agent ?
 
-Vous devez télécharger l'agent à partir de votre Manager et l'installer sur votre nouveau système d'exploitation.
+Vous devez télécharger l'agent à partir de votre [espace client OVHcloud](/links/manager) et l'installer sur votre nouveau système d'exploitation.
 
 ///
 
@@ -178,7 +178,7 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 > [!tabs]
 > Windows
 >>
->> ### Localiser les logs
+>> **Localiser les logs**
 >>
 >> Les logs de Veeam Agent pour Windows sont stockés dans le répertoire suivant :
 >>
@@ -186,14 +186,14 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Exporter les logs
+>> **Exporter les logs**
 >>
 >> Pour exporter les logs sur Windows, vous pouvez utiliser l'interface graphique de Veeam Agent :
 >>
 >> 1. Ouvrez l'application "Veeam Agent" sur votre serveur.
->> 2. Allez dans le menu **Help** > **Export Logs**.
+>> 2. Allez dans le menu `Help`{.action} > `Export Logs`{.action}.
 >> 3. Sélectionnez le répertoire de destination pour l'archive des logs.
->> 4. Cliquez sur **Export** pour générer l'archive.
+>> 4. Cliquez sur `Export`{.action} pour générer l'archive.
 >>
 >> L'archive sera créée au format `.zip` et contiendra tous les logs et fichiers de configuration nécessaires pour le diagnostic.
 >>
@@ -201,7 +201,7 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 >
 > Linux
 >>
->> ### Localiser les logs
+>> **Localiser les logs**
 >>
 >> Les logs de Veeam Agent pour Linux sont stockés dans le répertoire suivant :
 >>
@@ -215,11 +215,11 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Exporter les logs
+>> **Exporter les logs**
 >>
 >> Pour exporter les logs sur Linux, vous avez deux options :
 >>
->> #### Via la ligne de commande
+>> 1\. Via la ligne de commande
 >>
 >> Utilisez la commande suivante pour exporter les logs. L'archive sera sauvegardée dans le répertoire de travail actuel :
 >>
@@ -233,7 +233,7 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 >> sudo veeamconfig log export --path /chemin/vers/destination
 >> ```
 >>
->> #### Via le panneau de contrôle
+>> 2\. Via le panneau de contrôle
 >>
 >> Si vous avez accès à une interface graphique, vous pouvez exporter les logs via le panneau de contrôle de Veeam Agent en spécifiant le répertoire de destination.
 >>

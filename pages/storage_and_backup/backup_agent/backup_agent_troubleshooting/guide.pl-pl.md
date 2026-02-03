@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Rozwiązywanie problemów"
 excerpt: "Dowiedz się, jak rozwiązać potencjalne problemy związane z Aplikacją Backup"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -129,15 +129,15 @@ Jeśli Twoja kopia zapasowa jest w błędzie, możesz zdiagnozować problem bezp
 >>
 >> Aby zobaczyć szczegóły błędu kopii zapasowej w systemie Linux, możesz użyć interfejsu użytkownika:
 >>
->> 1. Połącz się ze swoim serwerem Bare Metal przez SSH.
->> 2. Uruchom interfejs Veeam, wpisując następujące polecenie:
+>> 1\. Połącz się ze swoim serwerem Bare Metal przez SSH.
+>> 2\. Uruchom interfejs Veeam, wpisując następujące polecenie:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. W interfejsie przejdź do sekcji kopii zapasowych, aby zobaczyć status swoich zadań.
->> 4. Wybierz kopię zapasową w błędzie, aby wyświetlić szczegóły błędu.
+>> 3\. W interfejsie przejdź do sekcji kopii zapasowych, aby zobaczyć status swoich zadań.
+>> 4\. Wybierz kopię zapasową w błędzie, aby wyświetlić szczegóły błędu.
 >>
 >> Możesz również sprawdzić dzienniki bezpośrednio przez wiersz poleceń:
 >>
@@ -159,15 +159,15 @@ Trzymamy Twoje dane przez 14 dni po usunięciu agenta, użycie magazynu zostanie
 
 Hasła można zmienić, korzystając z linku "Zapomniałeś hasła?", który jest dostępny w konsoli VSPC.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | Ponownie zainstalowałem swój serwer. Jak zainstalować ponownie Aplikację Backup?
 
-Musisz pobrać agenta ze swojego Managera i zainstalować go na swoim nowym systemie operacyjnym.
+Musisz pobrać agenta ze swojego [Panelu klienta OVHcloud](/links/manager) i zainstalować go na swoim nowym systemie operacyjnym.
 
 ///
 
@@ -178,7 +178,7 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 > [!tabs]
 > Windows
 >>
->> ### Lokalizowanie dzienników
+>> **Lokalizowanie dzienników**
 >>
 >> Dzienniki Veeam Agent dla systemu Windows są przechowywane w następującym katalogu:
 >>
@@ -186,7 +186,7 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Eksportowanie dzienników
+>> **Eksportowanie dzienników**
 >>
 >> Aby wyeksportować dzienniki w systemie Windows, możesz użyć interfejsu graficznego Veeam Agent:
 >>
@@ -201,7 +201,7 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 >
 > Linux
 >>
->> ### Lokalizowanie dzienników
+>> **Lokalizowanie dzienników**
 >>
 >> Dzienniki Veeam Agent dla systemu Linux są przechowywane w następującym katalogu:
 >>
@@ -215,11 +215,11 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Eksportowanie dzienników
+>> **Eksportowanie dzienników**
 >>
 >> Aby wyeksportować dzienniki w systemie Linux, masz dwie opcje:
 >>
->> #### Przez wiersz poleceń
+>> 1\. Przez wiersz poleceń
 >>
 >> Użyj następującego polecenia, aby wyeksportować dzienniki. Archiwum zostanie zapisane w bieżącym katalogu roboczym:
 >>
@@ -233,7 +233,7 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 >> sudo veeamconfig log export --path /ścieżka/do/destynacji
 >> ```
 >>
->> #### Przez panel sterowania
+>> 2\. Przez panel sterowania
 >>
 >> Jeśli masz dostęp do interfejsu graficznego, możesz wyeksportować dzienniki przez panel sterowania Veeam Agent, określając katalog docelowy.
 >>

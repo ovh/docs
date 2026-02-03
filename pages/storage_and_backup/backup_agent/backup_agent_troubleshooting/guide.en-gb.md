@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Troubleshooting"
 excerpt: "Learn how to solve potential issues related to Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -109,7 +109,7 @@ For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6
 
 /// details | My backup is in error, how can I see the problem?
 
-If your backup is in error, you can diagnose the problem directly from the agent. Click on the tab corresponding to your operating system:
+If your backup is in error, you can diagnose the problem directly from the agent. Click the tab corresponding to your Operating System:
 
 > [!tabs]
 > Windows
@@ -121,21 +121,21 @@ If your backup is in error, you can diagnose the problem directly from the agent
 >> 3. Click on the backup in error to see the error details.
 >> 4. Check the **History** or **Last Session** section to see detailed error messages.
 >>
->> The interface will display precise information about the cause of the error, which will allow you to quickly identify the problem.
+>> The interface will display precise information about the cause of the error, which will allow you to quickly identify the issue.
 >
 > Linux
 >>
 >> To see the details of a backup error on Linux, you can use the user interface:
 >>
->> 1. Connect to your Bare Metal server via SSH.
->> 2. Launch the Veeam interface by typing the following command:
+>> 1\. Connect to your Bare Metal server via SSH.
+>> 2\. Launch the Veeam interface by typing the following command:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. In the interface, navigate to the backups section to see the status of your jobs.
->> 4. Select the backup in error to view the error details.
+>> 3\. In the interface, navigate to the backups section to see the status of your jobs.
+>> 4\. Select the backup in error to view the error details.
 >>
 >> You can also check the logs directly via the command line:
 >>
@@ -143,7 +143,7 @@ If your backup is in error, you can diagnose the problem directly from the agent
 >> sudo veeamconfig session list
 >> ```
 >>
->> This command will display the list of backup sessions with their status and details of any errors.
+>> This command will display the list of backup sessions with their status and details of any error.
 
 ///
 
@@ -157,26 +157,26 @@ We keep your data for 14 days following an agent deletion, storage usage will be
 
 Passwords can be changed via the "Forgot password?" link available on the VSPC console.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | I have reinstalled my server. How do I reinstall the Backup Agent?
 
-You must download the agent from your Manager and install it on your new operating system.
+You must download the agent from your [OVHcloud Control Panel](/links/manager) and install it on your new Operating System.
 
 ///
 
 ## Finding and exporting logs
 
-To troubleshoot issues with Backup Agent, it is often necessary to view and export the product logs. Click on the tab corresponding to your operating system:
+To troubleshoot issues with Backup Agent, it is often necessary to view and export the product logs. Click the tab corresponding to your Operating System:
 
 > [!tabs]
 > Windows
 >>
->> ### Locating logs
+>> **Locating logs**
 >>
 >> Veeam Agent for Windows logs are stored in the following directory:
 >>
@@ -184,14 +184,14 @@ To troubleshoot issues with Backup Agent, it is often necessary to view and expo
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Exporting logs
+>> **Exporting logs**
 >>
 >> To export logs on Windows, you can use the Veeam Agent graphical interface:
 >>
 >> 1. Open the "Veeam Agent" application on your server.
->> 2. Go to the **Help** > **Export Logs** menu.
+>> 2. Go to the `Help`{.action} > `Export Logs`{.action} menu.
 >> 3. Select the destination directory for the log archive.
->> 4. Click **Export** to generate the archive.
+>> 4. Click `Export`{.action} to generate the archive.
 >>
 >> The archive will be created in `.zip` format and will contain all the logs and configuration files necessary for diagnosis.
 >>
@@ -199,7 +199,7 @@ To troubleshoot issues with Backup Agent, it is often necessary to view and expo
 >
 > Linux
 >>
->> ### Locating logs
+>> **Locating logs**
 >>
 >> Veeam Agent for Linux logs are stored in the following directory:
 >>
@@ -213,11 +213,11 @@ To troubleshoot issues with Backup Agent, it is often necessary to view and expo
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Exporting logs
+>> **Exporting logs**
 >>
 >> To export logs on Linux, you have two options:
 >>
->> #### Via command line
+>>  1\. Via command line
 >>
 >> Use the following command to export logs. The archive will be saved in the current working directory:
 >>
@@ -231,7 +231,7 @@ To troubleshoot issues with Backup Agent, it is often necessary to view and expo
 >> sudo veeamconfig log export --path /path/to/destination
 >> ```
 >>
->> #### Via control panel
+>> 2\. Via The Veeam control panel
 >>
 >> If you have access to a graphical interface, you can export logs via the Veeam Agent control panel by specifying the destination directory.
 >>

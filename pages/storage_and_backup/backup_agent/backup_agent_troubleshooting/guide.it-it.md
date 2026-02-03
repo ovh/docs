@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnosi e risoluzione dei problemi"
 excerpt: "Scopri come risolvere i potenziali problemi legati a Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -128,15 +128,15 @@ Se il tuo backup è in errore, puoi diagnosticare il problema direttamente dall'
 >>
 >> Per vedere i dettagli di un errore di backup su Linux, puoi utilizzare l'interfaccia utente:
 >>
->> 1. Connettiti al tuo server Bare Metal tramite SSH.
->> 2. Avvia l'interfaccia Veeam digitando il seguente comando:
+>> 1\. Connettiti al tuo server Bare Metal tramite SSH.
+>> 2\. Avvia l'interfaccia Veeam digitando il seguente comando:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Nell'interfaccia, naviga verso la sezione dei backup per vedere lo stato dei tuoi job.
->> 4. Seleziona il backup in errore per consultare i dettagli dell'errore.
+>> 3\. Nell'interfaccia, naviga verso la sezione dei backup per vedere lo stato dei tuoi job.
+>> 4\. Seleziona il backup in errore per consultare i dettagli dell'errore.
 >>
 >> Puoi anche consultare i log direttamente tramite la riga di comando:
 >>
@@ -158,15 +158,15 @@ Conserviamo i tuoi dati per 14 giorni dopo l'eliminazione di un agente, l'utiliz
 
 Il cambio della password avviene tramite il link "Password dimenticata?" disponibile sulla console VSPC.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | Ho reinstallato il mio server, come reinstallare Backup Agent?
 
-Devi scaricare l'agente dal tuo Manager e installarlo sul tuo nuovo sistema operativo.
+Devi scaricare l'agente dal tuo [Spazio Cliente OVHcloud](/links/manager) e installarlo sul tuo nuovo sistema operativo.
 
 ///
 
@@ -177,7 +177,7 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 > [!tabs]
 > Windows
 >>
->> ### Localizzare i log
+>> **Localizzare i log**
 >>
 >> I log di Veeam Agent per Windows sono memorizzati nella seguente directory:
 >>
@@ -185,7 +185,7 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Esportare i log
+>> **Esportare i log**
 >>
 >> Per esportare i log su Windows, puoi utilizzare l'interfaccia grafica di Veeam Agent:
 >>
@@ -200,7 +200,7 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 >
 > Linux
 >>
->> ### Localizzare i log
+>> **Localizzare i log**
 >>
 >> I log di Veeam Agent per Linux sono memorizzati nella seguente directory:
 >>
@@ -214,11 +214,11 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Esportare i log
+>> **Esportare i log**
 >>
 >> Per esportare i log su Linux, hai due opzioni:
 >>
->> #### Tramite la riga di comando
+>> 1\. Tramite la riga di comando
 >>
 >> Usa il seguente comando per esportare i log. L'archivio sarà salvato nella directory di lavoro corrente:
 >>
@@ -232,7 +232,7 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 >> sudo veeamconfig log export --path /percorso/verso/destinazione
 >> ```
 >>
->> #### Tramite il pannello di controllo
+>> 2\. Tramite il pannello di controllo
 >>
 >> Se hai accesso a un'interfaccia grafica, puoi esportare i log tramite il pannello di controllo di Veeam Agent specificando la directory di destinazione.
 >>

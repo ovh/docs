@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Problembehandlung"
 excerpt: "Erfahren Sie, wie Sie potenzielle Probleme im Zusammenhang mit dem Backup Agent beheben können"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -129,15 +129,15 @@ Wenn Ihr Backup fehlerhaft ist, können Sie das Problem direkt vom Agent aus dia
 >>
 >> Um die Details eines Backup-Fehlers unter Linux zu sehen, können Sie die Benutzeroberfläche verwenden:
 >>
->> 1. Verbinden Sie sich per SSH mit Ihrem Bare Metal Server.
->> 2. Starten Sie die Veeam-Oberfläche, indem Sie den folgenden Befehl eingeben:
+>> 1\. Verbinden Sie sich per SSH mit Ihrem Bare Metal Server.
+>> 2\. Starten Sie die Veeam-Oberfläche, indem Sie den folgenden Befehl eingeben:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Navigieren Sie in der Oberfläche zum Abschnitt Backups, um den Status Ihrer Jobs zu sehen.
->> 4. Wählen Sie das fehlerhafte Backup aus, um die Fehlerdetails anzuzeigen.
+>> 3\. Navigieren Sie in der Oberfläche zum Abschnitt Backups, um den Status Ihrer Jobs zu sehen.
+>> 4\. Wählen Sie das fehlerhafte Backup aus, um die Fehlerdetails anzuzeigen.
 >>
 >> Sie können die Protokolle auch direkt über die Befehlszeile einsehen:
 >>
@@ -159,15 +159,15 @@ Wir bewahren Ihre Daten 14 Tage nach dem Löschen eines Agents auf. Die Speicher
 
 Passwörter können über den Link "Passwort vergessen?" geändert werden, der in der VSPC-Konsole verfügbar ist.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | Ich habe meinen Server erneut installiert. Wie installiere ich den Backup Agent erneut?
 
-Sie müssen den Agent von Ihrem Manager herunterladen und auf Ihrem neuen Betriebssystem installieren.
+Sie müssen den Agent von Ihrem [OVHcloud Kundencenter](/links/manager) herunterladen und auf Ihrem neuen Betriebssystem installieren.
 
 ///
 
@@ -178,7 +178,7 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 > [!tabs]
 > Windows
 >>
->> ### Protokolle lokalisieren
+>> **Protokolle lokalisieren**
 >>
 >> Die Protokolle von Veeam Agent für Windows werden im folgenden Verzeichnis gespeichert:
 >>
@@ -186,14 +186,14 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Protokolle exportieren
+>> **Protokolle exportieren**
 >>
 >> Um Protokolle unter Windows zu exportieren, können Sie die grafische Benutzeroberfläche von Veeam Agent verwenden:
 >>
 >> 1. Öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Server.
->> 2. Gehen Sie zum Menü **Help** > **Export Logs**.
+>> 2. Gehen Sie zum Menü `Help`{.action} > `Export Logs`{.action}.
 >> 3. Wählen Sie das Zielverzeichnis für das Protokollarchiv aus.
->> 4. Klicken Sie auf **Export**, um das Archiv zu erstellen.
+>> 4. Klicken Sie auf `Export`{.action}, um das Archiv zu erstellen.
 >>
 >> Das Archiv wird im Format `.zip` erstellt und enthält alle Protokolle und Konfigurationsdateien, die für die Diagnose erforderlich sind.
 >>
@@ -201,7 +201,7 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 >
 > Linux
 >>
->> ### Protokolle lokalisieren
+>> **Protokolle lokalisieren**
 >>
 >> Die Protokolle von Veeam Agent für Linux werden im folgenden Verzeichnis gespeichert:
 >>
@@ -215,11 +215,11 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Protokolle exportieren
+>> **Protokolle exportieren**
 >>
 >> Um Protokolle unter Linux zu exportieren, haben Sie zwei Optionen:
 >>
->> #### Über die Befehlszeile
+>> 1\. Über die Befehlszeile
 >>
 >> Verwenden Sie den folgenden Befehl, um Protokolle zu exportieren. Das Archiv wird im aktuellen Arbeitsverzeichnis gespeichert:
 >>
@@ -233,7 +233,7 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Produktpr
 >> sudo veeamconfig log export --path /pfad/zum/ziel
 >> ```
 >>
->> #### Über das Bedienfeld
+>> 2\. Über das Bedienfeld
 >>
 >> Wenn Sie Zugriff auf eine grafische Benutzeroberfläche haben, können Sie Protokolle über das Bedienfeld von Veeam Agent exportieren, indem Sie das Zielverzeichnis angeben.
 >>

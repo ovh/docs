@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnóstico e resolução de problemas"
 excerpt: "Descubra como resolver problemas potenciais relacionados ao Backup Agent"
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -129,15 +129,15 @@ Se a sua cópia de segurança está em erro, pode diagnosticar o problema direta
 >>
 >> Para ver os detalhes de um erro de cópia de segurança no Linux, pode utilizar a interface de utilizador:
 >>
->> 1. Ligue-se ao seu servidor Bare Metal por SSH.
->> 2. Lance a interface Veeam escrevendo o seguinte comando:
+>> 1\. Ligue-se ao seu servidor Bare Metal por SSH.
+>> 2\. Lance a interface Veeam escrevendo o seguinte comando:
 >>
 >> ```bash
 >> sudo veeam
 >> ```
 >>
->> 3. Na interface, navegue para a secção das cópias de segurança para ver o estado dos seus trabalhos.
->> 4. Selecione a cópia de segurança em erro para consultar os detalhes do erro.
+>> 3\. Na interface, navegue para a secção das cópias de segurança para ver o estado dos seus trabalhos.
+>> 4\. Selecione a cópia de segurança em erro para consultar os detalhes do erro.
 >>
 >> Também pode consultar os registos diretamente através da linha de comandos:
 >>
@@ -159,15 +159,15 @@ Conservamos os seus dados durante 14 dias após a eliminação de um agente, a u
 
 A alteração da senha é feita por meio do link "Esqueceu a palavra-passe?" disponível na console VSPC.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | Reinstalei o meu servidor, como reinstalo o Backup Agent?
 
-Tem de transferir o agente a partir do seu Manager e instalá-lo no seu novo sistema operativo.
+Tem de transferir o agente a partir do seu [área de cliente OVHcloud](/links/manager) e instalá-lo no seu novo sistema operativo.
 
 ///
 
@@ -178,7 +178,7 @@ Para resolver problemas com o Backup Agent, é frequentemente necessário consul
 > [!tabs]
 > Windows
 >>
->> ### Localizar os registos
+>> **Localizar os registos**
 >>
 >> Os registos do Veeam Agent para Windows são armazenados no seguinte diretório:
 >>
@@ -186,14 +186,14 @@ Para resolver problemas com o Backup Agent, é frequentemente necessário consul
 >> C:\ProgramData\Veeam\Endpoint\Logs
 >> ```
 >>
->> ### Exportar os registos
+>> **Exportar os registos**
 >>
 >> Para exportar os registos no Windows, pode utilizar a interface gráfica do Veeam Agent:
 >>
 >> 1. Abra a aplicação "Veeam Agent" no seu servidor.
->> 2. Vá ao menu **Help** > **Export Logs**.
+>> 2. Vá ao menu `Help`{.action} > `Export Logs`{.action}.
 >> 3. Selecione o diretório de destino para o arquivo de registos.
->> 4. Clique em **Export** para gerar o arquivo.
+>> 4. Clique em `Export`{.action} para gerar o arquivo.
 >>
 >> O arquivo será criado no formato `.zip` e conterá todos os registos e ficheiros de configuração necessários para o diagnóstico.
 >>
@@ -201,7 +201,7 @@ Para resolver problemas com o Backup Agent, é frequentemente necessário consul
 >
 > Linux
 >>
->> ### Localizar os registos
+>> **Localizar os registos**
 >>
 >> Os registos do Veeam Agent para Linux são armazenados no seguinte diretório:
 >>
@@ -215,11 +215,11 @@ Para resolver problemas com o Backup Agent, é frequentemente necessário consul
 >> /var/log/veeam/veeamservice.log
 >> ```
 >>
->> ### Exportar os registos
+>> **Exportar os registos**
 >>
 >> Para exportar os registos no Linux, tem duas opções:
 >>
->> #### Via linha de comandos
+>> 1\. Via linha de comandos
 >>
 >> Utilize o seguinte comando para exportar os registos. O arquivo será guardado no diretório de trabalho atual:
 >>
@@ -233,7 +233,7 @@ Para resolver problemas com o Backup Agent, é frequentemente necessário consul
 >> sudo veeamconfig log export --path /caminho/para/destino
 >> ```
 >>
->> #### Via painel de controlo
+>> 2\. Via painel de controlo
 >>
 >> Se tiver acesso a uma interface gráfica, pode exportar os registos via painel de controlo do Veeam Agent especificando o diretório de destino.
 >>
