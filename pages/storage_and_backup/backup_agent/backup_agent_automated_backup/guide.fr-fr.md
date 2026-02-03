@@ -270,7 +270,7 @@ Les alias d'hôte SSH simplifient les commandes et centralisent la configuration
 
 Cela rend les commandes Plakar plus propres et réduit le risque d’erreurs.
 
-Ajoutez un alias d'hôte dans ~/.ssh/config :
+Ajoutez un alias d'hôte dans `~/.ssh/config` :
 
 ```bash
 cat >> ~/.ssh/config << 'EOF'
@@ -288,7 +288,7 @@ Host source-2
 EOF
 ```
 
-Vérifiez que l’alias fonctionne : :
+Vérifiez que l’alias fonctionne :
 
 ```bash
 ssh source-1 'echo "Alias fonctionne"'
@@ -558,7 +558,7 @@ Copiez le token depuis l’URL et ouvrez l’UI : `http://your-vps-ip:8080`. S
 
 > [!warning]
 >
-> For production use, configure a firewall to restrict access to port 8080 to only your IP addresses, or set up a reverse proxy with SSL.
+> Pour une utilisation en production, configurez un pare-feu afin de restreindre l'accès au port 8080 à vos adresses IP uniquement, ou configurez un proxy inverse avec SSL.
 >
 
 ///
