@@ -12,9 +12,9 @@ The objective of this guide is to run a **persistent OpenClaw Gateway** on an OV
 
 ## Requirements
 
-- Have an active [OVHcloud VPS](/links/bare-metal/vps) offer.
-- Be connected via SSH to your server using the default user (`ubuntu`, `debian`, etc.).
-- Have an API key (Anthropic or OpenAI).
+- An active [OVHcloud VPS](/links/bare-metal/vps) offer.
+- Access via SSH to your server using the default user (`ubuntu`, `debian`, etc.).
+- An API key (Anthropic or OpenAI).
 
 ## Instructions
 

@@ -26,11 +26,11 @@ At the end of this guide, you will have:
 
 ## Requirements
 
-- Have an [OVHcloud VPS](/links/bare-metal/vps) offer under **Ubuntu 22.04 LTS**
-- Be connected via SSH with sudo rights
-- Have a domain name (e.g., `cloud.example.com`) pointing to the VPS IP
+- An [OVHcloud VPS](/links/bare-metal/vps) offer under **Ubuntu 22.04 LTS**
+- Access via SSH with sudo rights
+- A domain name (e.g., `cloud.example.com`) pointing to the VPS IP
 - Ports **80** and **443** must be open
-- Have a valid email address for Let’s Encrypt
+- A valid email address for Let’s Encrypt
 
 ## Instructions
 
@@ -217,7 +217,7 @@ Traefik is **not mandatory**, but it is an **excellent practice** for:
 - Automating Let’s Encrypt certificates
 - Centralising routing and security
 
-For a first deployment or personal use, the **[≈](/pages/bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_beginner)** is sufficient.
+For a first deployment or personal use, the **[guide for beginner users](/pages/bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_beginner)** is sufficient.
 
 For advanced or multi-service use, this guide is recommended.
 

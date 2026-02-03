@@ -76,7 +76,7 @@ Suivez les instructions à l'écran. Lors du choix de la **Gateway**, sélection
 
 ### Étape 5 : Persistance et daemon <a name="daemon"></a>
 
-Pour que votre agent reste en ligne 24 heures sur 24 même après la fermeture de votre terminal ou un redémarrage du VPS, vous devez installer le service "daemon".
+Pour que votre agent reste en ligne 24 heures sur 24 même après la fermeture de votre terminal ou un redémarrage du VPS, vous devez installer le service « daemon ».
 
 **Installation du service système**
 

@@ -18,9 +18,9 @@ At the end of this guide, you will have:
 
 ## Requirements
 
-- Have an [OVHcloud VPS](/links/bare-metal/vps) offer under **Ubuntu 22.04 LTS** (or equivalent)
-- Be connected via SSH to your VPS
-- Have a domain name (optional but recommended)
+- An [OVHcloud VPS](/links/bare-metal/vps) offer under **Ubuntu 22.04 LTS** (or equivalent)
+- Access via SSH to your VPS
+- A domain name (optional but recommended)
 
 ## Instructions
 
