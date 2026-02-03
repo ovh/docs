@@ -33,7 +33,7 @@ Il s’adresse aux **utilisateurs débutants** souhaitant une installation simpl
 - [Étape 5 : Accéder à Nextcloud](#step5)
 - [Étape 6 : Bonnes pratiques après installation](#step6)
 
-## Étape 1 : Connexion au VPS <a name="step1"></a>
+### Étape 1 : Connexion au VPS <a name="step1"></a>
 
 Connectez-vous à votre VPS via SSH avec l’utilisateur fourni par OVHcloud (par exemple `ubuntu`).
 
@@ -41,7 +41,7 @@ Connectez-vous à votre VPS via SSH avec l’utilisateur fourni par OVHcloud (pa
 ssh ubuntu@IPv4_DE_VOTRE_VPS
 ```
 
-## Étape 2 : Préparer le système <a name="step2"></a>
+### Étape 2 : Préparer le système <a name="step2"></a>
 
 Mettez à jour le système :
 
@@ -55,7 +55,7 @@ Installez les dépendances nécessaires :
 sudo apt install -y ca-certificates curl gnupg
 ```
 
-## Étape 3 : Installer Docker et Docker Compose <a name="step3"></a>
+### Étape 3 : Installer Docker et Docker Compose <a name="step3"></a>
 
 Installez Docker :
 
@@ -77,7 +77,7 @@ docker --version
 docker compose version
 ```
 
-## Étape 4 : Déployer Nextcloud <a name="step4"></a>
+### Étape 4 : Déployer Nextcloud <a name="step4"></a>
 
 Créez un dossier de travail :
 
@@ -122,7 +122,7 @@ Lancez Nextcloud :
 docker compose up -d
 ```
 
-## Étape 5 : Accéder à Nextcloud <a name="step5"></a>
+### Étape 5 : Accéder à Nextcloud <a name="step5"></a>
 
 Dans votre navigateur, ouvrez <http://IPv4_DE_VOTRE_VPS:8080>.
 
@@ -131,7 +131,7 @@ Lors du premier accès :
 - Créez un **compte administrateur**
 - Laissez Nextcloud détecter automatiquement la base de données
 
-## Étape 6 : Bonnes pratiques après installation <a name="step6"></a>
+### Étape 6 : Bonnes pratiques après installation <a name="step6"></a>
 
 Pour un usage durable, nous recommandons :
 
@@ -144,7 +144,8 @@ Pour un usage durable, nous recommandons :
 ## Aller plus loin
 
 Ce guide vous a permis de déployer rapidement Nextcloud sur un VPS à l’aide de Docker, sans configuration complexe.
-Si vous souhaitez aller plus loin - notamment en ajoutant le **HTTPS automatique**, un **reverse-proxy**, ou en hébergeant **plusieurs services** sur le même VPS - nous vous recommandons de consulter le **[guide avancé](/pages/bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_advanced)**, qui présente une architecture plus robuste basée sur Docker et un reverse-proxy moderne.
+
+Si vous souhaitez aller plus loin - notamment en ajoutant le **HTTPS automatique**, un **reverse-proxy**, ou en hébergeant **plusieurs services** sur le même VPS - nous vous recommandons de consulter le **[guide pour utilisateurs avancés](/pages/bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_advanced)**, qui présente une architecture plus robuste basée sur Docker et un reverse-proxy moderne.
 
 Pour approfondir certains aspects ou renforcer la sécurité et la fiabilité de votre installation, vous pouvez également consulter les ressources suivantes :
 

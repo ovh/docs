@@ -42,7 +42,7 @@ Ce guide s’adresse aux **utilisateurs intermédiaires à avancés** souhaitant
 - [Étape 4 : Déployer Nextcloud](#step4)
 - [Étape 5 : Vérifications et post-installation](#step5)
 
-## Étape 1 : Préparer le VPS <a name="step1"></a>
+### Étape 1 : Préparer le VPS <a name="step1"></a>
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -58,7 +58,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
-## Étape 2 : Installer Docker <a name="step2"></a>
+### Étape 2 : Installer Docker <a name="step2"></a>
 
 ```bash
 curl -fsSL https://get.docker.com | sudo sh
@@ -66,7 +66,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-## Étape 3 : Déployer Traefik <a name="step3"></a>
+### Étape 3 : Déployer Traefik <a name="step3"></a>
 
 Créez l’arborescence :
 
@@ -124,7 +124,7 @@ docker network create proxy
 docker compose up -d
 ```
 
-## Étape 4 : Déployer Nextcloud <a name="step4"></a>
+### Étape 4 : Déployer Nextcloud <a name="step4"></a>
 
 ```bash
 sudo mkdir -p /opt/stack/nextcloud
@@ -202,14 +202,14 @@ networks:
 docker compose up -d
 ```
 
-## Étape 5 : Vérifications post-installation <a name="step5"></a>
+### Étape 5 : Vérifications post-installation <a name="step5"></a>
 
-- Accédez à : `https://cloud.exemple.com`
+- Accédez à <https://cloud.exemple.com>
 - Vérifiez le certificat HTTPS
 - Activez le mode **Cron** dans les paramètres Nextcloud
 - Vérifiez Redis dans l'interface d’administration
 
-## Conclusion
+### Conclusion
 
 Traefik n’est **pas obligatoire**, mais il constitue une **excellente pratique** pour :
 

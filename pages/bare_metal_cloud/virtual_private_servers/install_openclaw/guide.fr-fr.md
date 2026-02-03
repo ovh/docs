@@ -93,17 +93,17 @@ openclaw status
 
 Par sécurité, la Gateway OpenClaw écoute sur l'interface locale (127.0.0.1). Pour accéder à l'interface graphique (Dashboard) depuis votre ordinateur personnel :
 
-1. Ouvrez un terminal sur votre machine locale.
+1\. Ouvrez un terminal sur votre machine locale.
 
-2. Créez un tunnel SSH sécurisé :
+2\. Créez un tunnel SSH sécurisé :
 
 ```bash
 ssh -L 18789:127.0.0.1:18789 utilisateur@IP_DE_VOTRE_VPS
 ```
 
-3. Ouvrez votre navigateur et accédez à : <http://127.0.0.1:18789>.
+3\. Ouvrez votre navigateur et accédez à : <http://127.0.0.1:18789>.
 
-4. La suite se passe dans le menu **Overview** : saisissez votre **Gateway Token** pour vous connecter.
+4\. La suite se passe dans le menu **Overview** : saisissez votre **Gateway Token** pour vous connecter.
 
 Vous pouvez retrouver votre **Gateway Token** sur votre VPS avec :
 
@@ -115,7 +115,7 @@ grep -oP '"password":\s*"\K[^"]+' ~/.openclaw/openclaw.json
 nano openclaw.json
 ```
 
-## Ce qui persiste (source de vérité)
+### Ce qui persiste (source de vérité)
 
 Toutes vos données critiques sont stockées dans le répertoire personnel de l'utilisateur sur le VPS. Cela garantit que votre agent conserve sa mémoire et ses accès même après une mise à jour.
 
@@ -126,7 +126,7 @@ Toutes vos données critiques sont stockées dans le répertoire personnel de l'
 | **Canaux (WhatsApp)** | `~/.openclaw/credentials/` | Contient les données d'authentification pour éviter de scanner le QR Code à chaque fois. |
 | **Mémoire et travail** | `~/.openclaw/workspace/` | Répertoire où l'IA génère des fichiers, du code ou stocke ses documents. |
 
-## Commandes essentielles
+### Commandes essentielles
 
 Voici les commandes à connaître pour piloter votre instance directement depuis le terminal du VPS :
 
