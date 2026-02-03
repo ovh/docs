@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2025-08-05
+updated: 2026-02-03
 ---
 
 ## General questions

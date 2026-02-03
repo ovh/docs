@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-09-30
+updated: 2026-02-03
 ---
 
 ## Introduction
@@ -246,50 +246,61 @@ You can get started with Batch Replication by creating a new Batch replication j
 
 #### Special considerations
 
-Before creating your first job, please take into account following considerations:
-* your source bucket and destination(s) bucket(s) must have versioning enabled
-* your source bucket must have an existing replication configuration set up as Batch Replication will create a job that will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet
-* if you have a Lifecycle policy configured for your bucket, we recommend disabling your lifecycle rules while the Batch Replication job is active to ensure maximum consistency between buckets and data synchronization
-* you cannot create another Batch Replication job when there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses
-* Batch replication does NOT support objects that are stored in the Cold Archive storage class
-* there is no SLAs on the job time to completion
+Before creating your first job, please take into account the following considerations:
 
+- Your source bucket and destination(s) bucket(s) must have versioning enabled.
+- Your source bucket must have an existing replication configuration set up, as Batch Replication will create a job that will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet.
+- If you have a Lifecycle policy configured for your bucket, we recommend disabling your lifecycle rules while the Batch Replication job is active to ensure maximum consistency between buckets and data synchronization.
+- You cannot create another Batch Replication job when there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses.
+- Batch replication does NOT support objects that are stored in the Cold Archive storage class.
+- There are no SLAs on the job time to completion.
 
 #### Checking the Batch Replication job status
 
-> [!important]
+> [!warning]
 > Currently, there is no way to check or monitor the execution status of a job. We are actively working to implement this feature and deploy it very soon.
 >
 
 #### Getting started with Batch Replication
 
 > [!tabs]
-> Via the OVHclous API
+> Via the OVHcloud API
 >> Use the following API route to initiate job creation:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication
+>> >
+>>
 >> ```
 >> POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication HTTP/1.1
 >> -H "accept: application/json"\
 >> -H "authorization: Bearer {auth_token}"
 >> ```
+>>
 >> Where:
->> * _serviceName_ is the public cloud project id
->> * _regionName_ is the region where your source bucket is located
->> * _name_ is the name of your source bucket
+>>
+>> - `serviceName` is the public cloud project id
+>> - `regionName` is the region where your source bucket is located
+>> - `name` is the name of your source bucket
 >>
 >> The API should return:
+>>
 >> ```json
 >> {
 >>     "id": "{job_id}"
 >> }
 >> ```
+>>
 >> Where:
->> * _id_ is the unique identifier of the newly created Batch Replication job 
+>>
+>> - `id` is the unique identifier of the newly created Batch Replication job 
 >> 
 > Via the OVHcloud Control Panel
->> In the Control Panel:
->> * click on your source bucket and go to the Replication tab
->> * click on the 'Replicate existing objects' button, you will be asked to confirm that you want to create of a replication job
->> * click on 'Confirm'
+>> 
+>> 1. Click on your source bucket and go to the `Replication`{.action} tab.
+>> 2. Click on the `Replicate existing objects`{.action} button, you will be asked to confirm that you want to create of a replication job.
+>> 3. Click on `Confirm`{.action}.
 
 
 ### Examples of replication configurations

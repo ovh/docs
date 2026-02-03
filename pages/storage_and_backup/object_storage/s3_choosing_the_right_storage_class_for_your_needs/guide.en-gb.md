@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Choosing the right storage class for your needs
 excerpt: Discover the different OVHcloud Object Storage classes and choose the one that best suits your needs
-updated: 2026-02-02
+updated: 2026-02-03
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -95,7 +95,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>90 days</td>
         <td>Yes</td>
         <td>Object-level, lifecycle management support</td>
-    </tr>        
+    </tr>
     <tr>
         <td><strong>Cold Archive*<strong></td>
         <td>Very long-term storage, backups, disaster recovery</td>

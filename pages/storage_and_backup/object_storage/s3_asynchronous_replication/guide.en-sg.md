@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-09-30
+updated: 2026-02-03
 ---
 
 ## Introduction
@@ -81,21 +81,22 @@ The following table provides the **default** behavior of the OVHcloud Object Sto
 
 | What is replicated                                           | What is not replicated                                       |
 |--------------------------------------------------------------|--------------------------------------------------------------|
-| - Objects created *after* the upload of the replication configuration<br> - Unencrypted objects and objects encrypted with SSE-OMK (OVHcloud managed keys)<br> - Objects in the source bucket for which the bucket owner has permissions to read and access ACLs<br> - Object metadata from the source objects to the replicas<br> - Object Lock retention configuration<br> - Object ACL updates<br> - Object tags <br><br><br><br>| - Objects created *before* the upload of the replication configuration<br> - Objects that have already been replicated to a previous destination<br> - Object replicas i.e. objects that are the result of a previous replication operation<br> - Objects encrypted with SSE-C (customer provided keys)<br> - Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc.<br> - Actions resulting from Lifecycle Configuration actions<br> - Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket<br> - Objects that are stored in the Cold Archive temporary storage<br> - Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
+| - Objects created *after* the upload of the replication configuration<br> - Unencrypted objects and objects encrypted with SSE-OMK (OVHcloud managed keys)<br> - Objects in the source bucket for which the bucket owner has permissions to read and access ACLs<br> - Object metadata from the source objects to the replicas<br> - Object Lock retention configuration<br> - Object ACL updates<br> - Object tags <br><br><br><br>| - Objects created *before* the upload of the replication configuration<sup>1</sup><br> - Objects that have already been replicated to a previous destination<br> - Object replicas i.e. objects that are the result of a previous replication operation<br> - Objects encrypted with SSE-C (customer provided keys)<br> - Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc.<br> - Actions resulting from Lifecycle Configuration actions<br> - Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket<sup>2</sup><br> - Objects that are stored in the Cold Archive v1 temporary storage<br> - You cannot replicate objects that are stored in the Cold Archive v2 storage class until you restore them and copy them to a different storage class <br> - Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
 
+_<sup>1</sup>: To replicate objects that were uploaded before the creation of the replication configuration, use Batch Replication. Learn more about configuring Batch Replication at [Replicating existing objects](#batchReplication)._
+
+_<sup>2</sup>: Learn how to activate the replication of delete markers at [Delete marker replication](#deleteMarkerReplication)._
 
 ### Replication configuration
 
 A replication configuration is defined through a set of rules within a JSON file. This file is uploaded and applied to the source bucket, detailing how objects are to be replicated.
-
-### Each replication rule defines:
-
+Each replication rule defines:
 - A **unique rule ID** to identify the rule.
 - **Rule priority** to determine the order of execution when multiple rules exist.
 - **Destination bucket** where the replicated objects will be stored.
 - **Objects to be replicated**: By default, all objects are eligible for replication. However, you can specify a subset of objects by filtering them with a prefix and/or tags.
 
-### Replication rule structure
+#### Replication rule structure
 
 The basic structure of a replication rule within the configuration JSON file is as follows:
 
@@ -150,7 +151,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 | StorageClass | The destination storage class. By default, OVHcloud Object Storage uses the storage class of the source object to create the object replica.<br><br> Please note that **not all storage classes are available in all regions** i.e some storage classes are not supported in some regions such as EXPRESS_ONEZONE which is not supported in 3AZ regions. To learn more about the available storage classes in each region check [our documentation](/pages/storage_and_backup/object_storage/s3_location). | Yes |
 | And                     | You can apply multiple selection criteria in the filter.                                                                 | No       |
 
-### Delete marker replication
+### Delete marker replication <a name="deleteMarkerReplication"></a>
 
 > [!warning]
 > **IMPORTANT**
@@ -158,7 +159,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 > If you specify a `Filter` in your replication configuration, you **must** also include a `DeleteMarkerReplication` element. If your `Filter` includes a `Tag` element, the `DeleteMarkerReplication` Status **must be set to _Disabled_**.
 >
 
-### Understanding delete markers
+#### Understanding delete markers
 
 When a delete object operation is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version ID.
 
@@ -173,6 +174,8 @@ To permanently delete an object, you have to specify the version ID in your `DEL
 
 > [!warning]
 > By default, OVHcloud Object Storage does not replicate delete markers nor replicate the permanent deletion to destination buckets. This behavior protects your data from unauthorized or unintentional deletions.
+
+#### Replicate delete markers
 
 However, you can still replicate delete markers by adding the `DeleteMarkerReplication` element to your replication configuration rule. `DeleteMarkerReplication` specifies if delete markers should or should not be replicated (when versioning is enabled, a delete operation is performed on an object it does not actually delete the object but it flags it with a delete marker).
 
@@ -235,9 +238,74 @@ Object Lock can be used with replication to enable automatic copying of locked o
 > - Object Lock must be enabled on both source and destination buckets.
 >
 
-#### Example of replication configuration
+### Replicating existing objects<a name="batchReplication"></a>
 
-Simple replication between 2 buckets:
+By default, the Asynchronous Replication feature does not replicate objects uploaded **before** the setup of a replication configuration i.e existing objects. While Asynchronous Replication continuously and automatically replicates **new** objects across OVHcloud Object Storage buckets, Batch Replication occurs on demand on existing objects.
+
+You can get started with Batch Replication by creating a new Batch replication job that will get executed on your source bucket.
+
+#### Special considerations
+
+Before creating your first job, please take into account the following considerations:
+
+- Your source bucket and destination(s) bucket(s) must have versioning enabled.
+- Your source bucket must have an existing replication configuration set up, as Batch Replication will create a job that will try to apply the existing replication configuration to ALL objects of the source bucket that have NOT been replicated yet.
+- If you have a Lifecycle policy configured for your bucket, we recommend disabling your lifecycle rules while the Batch Replication job is active to ensure maximum consistency between buckets and data synchronization.
+- You cannot create another Batch Replication job when there is a running job, this limitation helps us to protect our infrastructures from malicious and/or abusive uses.
+- Batch replication does NOT support objects that are stored in the Cold Archive storage class.
+- There are no SLAs on the job time to completion.
+
+#### Checking the Batch Replication job status
+
+> [!warning]
+> Currently, there is no way to check or monitor the execution status of a job. We are actively working to implement this feature and deploy it very soon.
+>
+
+#### Getting started with Batch Replication
+
+> [!tabs]
+> Via the OVHcloud API
+>> Use the following API route to initiate job creation:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication
+>> >
+>>
+>> ```
+>> POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication HTTP/1.1
+>> -H "accept: application/json"\
+>> -H "authorization: Bearer {auth_token}"
+>> ```
+>>
+>> Where:
+>>
+>> - `serviceName` is the public cloud project id
+>> - `regionName` is the region where your source bucket is located
+>> - `name` is the name of your source bucket
+>>
+>> The API should return:
+>>
+>> ```json
+>> {
+>>     "id": "{job_id}"
+>> }
+>> ```
+>>
+>> Where:
+>>
+>> - `id` is the unique identifier of the newly created Batch Replication job 
+>> 
+> Via the OVHcloud Control Panel
+>> 
+>> 1. Click on your source bucket and go to the `Replication`{.action} tab.
+>> 2. Click on the `Replicate existing objects`{.action} button, you will be asked to confirm that you want to create of a replication job.
+>> 3. Click on `Confirm`{.action}.
+
+
+### Examples of replication configurations
+
+#### Simple replication between 2 buckets
 
 ```json
 {

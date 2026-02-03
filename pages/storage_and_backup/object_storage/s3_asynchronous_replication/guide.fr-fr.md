@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-09-30
+updated: 2026-02-03
 ---
 
 ## Introduction
@@ -80,7 +80,7 @@ Le tableau suivant présente le comportement **par défaut** de la fonctionnalit
 
 | Ce qui est répliqué                                       | Ce qui n'est pas répliqué                                    |
 |-----------------------------------------------------------|--------------------------------------------------------------|
-| - Objets créés *après* l'application de la configuration de réplication<br> - Objets non chiffrés et objets chiffrés avec SSE-OMK (clés managées par OVHcloud)<br> - Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL<br> - Métadonnées d'objet des objets sources vers les réplicas<br> - Configuration de la rétention des verrous d'objet<br> - Mises à jour de la liste de contrôle d'accès des objets<br> - Tags d'objets<br><br><br><br>| - Objets créés *avant* l'upload de la configuration de réplication<sup>1</sup><br> - Objets déjà répliqués vers une destination précédente<br> - Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente<br> - Objets chiffrés avec SSE-C (clés fournies par le client)<br> - Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc.<br> - Actions résultant des actions de configuration du cycle de vie<br> - Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire<sup>2</sup><br> - Objets stockés dans le stockage temporaire Cold Archive<br> - Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
+| - Objets créés *après* l'application de la configuration de réplication<br> - Objets non chiffrés et objets chiffrés avec SSE-OMK (clés managées par OVHcloud)<br> - Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL<br> - Métadonnées d'objet des objets sources vers les réplicas<br> - Configuration de la rétention des verrous d'objet<br> - Mises à jour de la liste de contrôle d'accès des objets<br> - Tags d'objets<br><br><br><br>| - Objets créés *avant* l'upload de la configuration de réplication<sup>1</sup><br> - Objets déjà répliqués vers une destination précédente<br> - Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente<br> - Objets chiffrés avec SSE-C (clés fournies par le client)<br> - Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc.<br> - Actions résultant des actions de configuration du cycle de vie<br> - Les marqueurs de suppression, ce qui veut dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire<sup>2</sup><br> - Objets stockés dans le stockage temporaire Cold Archive<br> - Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 _<sup>1</sup>: Pour répliquer des objets qui ont été téléversés avant la création de la configuration de réplication, utilisez Batch Replication. Pour en savoir plus sur la configuration de Batch Replication, consultez [Réplication des objets existants](#bacthReplication)._
 
@@ -90,6 +90,7 @@ _<sup>2</sup>: Découvrez comment activer la réplication des marqueurs de suppr
 
 Une configuration de réplication est définie via un ensemble de règles dans un fichier JSON. Ce fichier est téléchargé et appliqué au bucket source, en détaillant la façon dont les objets doivent être répliqués.
 Chaque règle de réplication définit :
+
 - Un **ID de règle unique** pour identifier la règle.
 - Une **priorité de règle** pour déterminer l'ordre d'exécution lorsque plusieurs règles existent.
 - Un **bucket de destination** où seront stockés les objets répliqués.
@@ -232,32 +233,32 @@ L'attribut `ReplicationStatus` peut avoir les valeurs suivantes :
 Le verrouillage d'objet peut être utilisé avec la réplication pour permettre la copie automatique d'objets verrouillés entre les buckets. Pour les objets répliqués, la configuration du verrouillage d'objet du bucket source sera utilisée dans le bucket de destination. Cependant, si vous téléversez un objet directement dans le bucket de destination (en dehors du processus de réplication), il utilisera la configuration de verrouillage du bucket de destination.
 
 > [!warning]
-> Pour répliquer des données dans des buckets avec un verrouillage d'objet, vous devez disposer des prérequis suivants :
+> Pour répliquer des données dans des buckets avec un verrouillage d'objet, vous devez respecter les prérequis suivants :
 >
 > - Le versioning doit être activé sur le bucket source et le bucket de destination.
 > - Le verrouillage d'objet doit être activé sur les buckets source et de destination.
 >
 
-
 ### Réplication des objets existants<a name="batchReplication"></a>
 
-Par défaut, la fonctionnalité de réplication asynchrone ne réplique pas les objets téléchargés **avant** la configuration d'une réplication, c'est-à-dire les objets existants. Alors que la réplication asynchrone réplique en continu et automatiquement les **nouveaux** objets à travers les buckets OVHcloud Object Storage, Batch Replication s'effectue à la demande sur les objets existants.
+Par défaut, la fonctionnalité de réplication asynchrone ne réplique pas les objets téléversés **avant** la configuration d'une réplication, c'est-à-dire les objets existants. Alors que la réplication asynchrone réplique en continu et automatiquement les **nouveaux** objets à travers les buckets OVHcloud Object Storage, Batch Replication s'effectue à la demande sur les objets existants.
 
 Vous pouvez commencer à utiliser Batch Replication en créant une nouvelle tâche de réplication par lots qui sera exécutée sur votre bucket source.
 
 #### Considérations particulières
 
 Avant de créer votre première tâche, veuillez tenir compte des considérations suivantes :
-* votre bucket source et votre(vos) bucket(s) de destination doivent avoir activé la gestion des versions
-* votre bucket source doit disposer d'une configuration de réplication existante, car Batch Replication créera une tâche qui tentera d'appliquer la configuration de réplication existante à TOUS les objets du bucket source qui n'ont PAS encore été répliqués
-* si vous avez configuré une politique de cycle de vie pour votre bucket, nous vous recommandons de désactiver vos règles de cycle de vie pendant que la tâche de réplication par lots est active afin de garantir une cohérence maximale entre les buckets et la synchronisation des données
-* vous ne pouvez pas créer une autre tâche de réplication par lots lorsqu'une tâche est en cours d'exécution. Cette limitation nous aide à protéger nos infrastructures contre les utilisations malveillantes et/ou abusives
-* Batch replication ne prend PAS en charge les objets stockés dans la classe de stockage Cold Archive.
-* Il n'y a pas de SLAs concernant le temps nécessaire à l'exécution de la tâche.
+
+- Votre bucket source et votre(vos) bucket(s) de destination doivent avoir activé la gestion des versions.
+- Votre bucket source doit disposer d'une configuration de réplication existante, car Batch Replication créera une tâche qui tentera d'appliquer la configuration de réplication existante à TOUS les objets du bucket source qui n'ont PAS encore été répliqués.
+- Si vous avez configuré une politique de cycle de vie pour votre bucket, nous vous recommandons de désactiver vos règles de cycle de vie pendant que la tâche de réplication par lots est active afin de garantir une cohérence maximale entre les buckets et la synchronisation des données.
+- Vous ne pouvez pas créer une autre tâche de réplication par lots lorsqu'une tâche est en cours d'exécution. Cette limitation nous aide à protéger nos infrastructures contre les utilisations malveillantes et/ou abusives.
+- Batch replication ne prend PAS en charge les objets stockés dans la classe de stockage Cold Archive.
+- Il n'y a pas de SLAs concernant le temps nécessaire à l'exécution de la tâche.
 
 #### Vérifier le status d'une tâche
 
-> [!important]
+> [!warning]
 > Actuellement, il n'existe aucun moyen de vérifier ou de surveiller l'état d'exécution d'une tâche. Nous travaillons activement à la mise en œuvre de cette fonctionnalité et la déploierons très prochainement.
 >
 
@@ -266,33 +267,44 @@ Avant de créer votre première tâche, veuillez tenir compte des considération
 > [!tabs]
 > Via l'API OVHcloud
 >> Utilisez la route API suivante pour lancer la création d'une tâche :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication
+>> >
+>>
 >> ```
 >> POST /cloud/project/{serviceName}/region/{regionName}/storage/{name}/job/replication HTTP/1.1
 >> -H « accept: application/json »\
 >> -H « authorization: Bearer {auth_token} »
 >> ```
+>>
 >> Où :
->> * _serviceName_ est l'identifiant du projet public cloud
->> * _regionName_ est la région où se trouve votre bucket source
->> * _name_ est le nom de votre bucket source
+>>
+>> - `serviceName` est l'identifiant du projet public cloud
+>> - `regionName` est la région où se trouve votre bucket source
+>> - `name` est le nom de votre bucket source
 >>
 >> L'API devrait renvoyer :
+>>
 >> ```json
 >> {
->>     « id »: « {job_id} »
+>>     "id": "{job_id}"
 >> }
 >> ```
+>>
 >> Où :
->> * _id_ est l'identifiant unique de la tâche de réplication par lots nouvellement créée 
+>>
+>> - `id` est l'identifiant unique de la tâche de réplication par lots nouvellement créée 
 >>
 > Via l'espace client OVHcloud
->> Dans l'espace client :
->> * cliquez sur votre bucket source et accédez à l'onglet Réplication
->> * cliquez sur le bouton « Répliquer les objets existants », vous serez invité à confirmer que vous souhaitez créer une tâche de réplication
->> * cliquez sur « Confirmer »
+>>
+>> 1. Cliquez sur votre bucket source et accédez à l'onglet `Réplication`{.action}.
+>> 2. Cliquez sur le bouton `R.épliquer les objets existants`{.action}, vous serez invité à confirmer que vous souhaitez créer une tâche de réplication
+>> 3. Cliquez sur `Confirmer`{.action}.
 
 
-### Exemple de configuration de réplication
+### Exemples de configuration de réplication
 
 #### Réplication simple entre 2 buckets :
 
