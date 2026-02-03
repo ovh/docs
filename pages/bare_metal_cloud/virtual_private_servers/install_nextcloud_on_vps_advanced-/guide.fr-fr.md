@@ -1,7 +1,7 @@
 ---
-title: Installer Nextcloud sur un VPS OVHcloud avec Docker et Traefik (guide avancé)
-excerpt: "Guide avancé pour déployer Nextcloud sur un VPS OVHcloud avec HTTPS automatique via Traefik, MariaDB et Redis."
-updated: 2026-01-29
+title: Installer Nextcloud sur un VPS OVHcloud avec Docker et Traefik
+excerpt: "Découvrez comment déployer Nextcloud sur un VPS OVHcloud avec HTTPS automatique via Traefik, MariaDB et Redis"
+updated: 2026-02-03
 ---
 
 ## Objectif
@@ -10,39 +10,37 @@ Ce guide s’adresse aux **utilisateurs intermédiaires à avancés** souhaitant
 
 À la fin de ce guide, vous disposerez :
 
-* D’un Nextcloud accessible en **HTTPS**
-* De certificats **Let’s Encrypt automatiques**
-* D’une stack Docker persistante (Nextcloud + MariaDB + Redis)
-* D’un reverse-proxy **Traefik v2**
+- D’un Nextcloud accessible en **HTTPS**
+- De certificats **Let’s Encrypt automatiques**
+- D’une stack Docker persistante (Nextcloud + MariaDB + Redis)
+- D’un reverse-proxy **Traefik v2**
 
-## Architecture cible (simplifiée)
+### Architecture cible (simplifiée)
 
-* VPS OVHcloud (Ubuntu)
-* Docker & Docker Compose
-* Traefik v2 (reverse-proxy HTTPS)
-* Nextcloud (Apache)
-* MariaDB (base de données)
-* Redis (cache & verrous)
+- VPS OVHcloud (Ubuntu)
+- Docker et Docker Compose
+- Traefik v2 (reverse-proxy HTTPS)
+- Nextcloud (Apache)
+- MariaDB (base de données)
+- Redis (cache et verrous)
 
 ## Prérequis
 
-* VPS OVHcloud sous **Ubuntu 22.04 LTS**
-* Accès SSH avec droits sudo
-* Un nom de domaine (ex : `cloud.exemple.com`) pointant vers l’IP du VPS
-* Ports **80** et **443** ouverts
-* Une adresse e-mail valide pour Let’s Encrypt
+- Disposer d'une offre [VPS OVHcloud](/links/bare-metal/vps) sous **Ubuntu 22.04 LTS**
+- Être connecté en SSH avec les droits sudo
+- Disposer d'un nom de domaine (par exemple : `cloud.exemple.com`) pointant vers l’IP du VPS
+- Les ports **80** et **443** doivent être ouverts
+- Disposer d'une adresse e-mail valide pour Let’s Encrypt
 
 ## En pratique
 
 **Sommaire :**
 
-* [Étape 1 : Préparer le VPS](#step1)
-* [Étape 2 : Installer Docker](#step2)
-* [Étape 3 : Déployer Traefik](#step3)
-* [Étape 4 : Déployer Nextcloud](#step4)
-* [Étape 5 : Vérifications et post-installation](#step5)
-
----
+- [Étape 1 : Préparer le VPS](#step1)
+- [Étape 2 : Installer Docker](#step2)
+- [Étape 3 : Déployer Traefik](#step3)
+- [Étape 4 : Déployer Nextcloud](#step4)
+- [Étape 5 : Vérifications et post-installation](#step5)
 
 ## Étape 1 : Préparer le VPS <a name="step1"></a>
 
@@ -60,8 +58,6 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
----
-
 ## Étape 2 : Installer Docker <a name="step2"></a>
 
 ```bash
@@ -69,8 +65,6 @@ curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-
----
 
 ## Étape 3 : Déployer Traefik <a name="step3"></a>
 
@@ -130,8 +124,6 @@ docker network create proxy
 docker compose up -d
 ```
 
----
-
 ## Étape 4 : Déployer Nextcloud <a name="step4"></a>
 
 ```bash
@@ -141,7 +133,7 @@ cd /opt/stack/nextcloud
 
 Créez un fichier `.env` :
 
-```env
+```console
 NC_DOMAIN=cloud.exemple.com
 NC_ADMIN_USER=admin
 NC_ADMIN_PASSWORD=change-admin-password
@@ -210,32 +202,29 @@ networks:
 docker compose up -d
 ```
 
----
+## Étape 5 : Vérifications post-installation <a name="step5"></a>
 
-## Étape 5 : Vérifications et post-installation <a name="step5"></a>
-
-* Accédez à : `https://cloud.exemple.com`
-* Vérifiez le certificat HTTPS
-* Activez le mode **Cron** dans les paramètres Nextcloud
-* Vérifiez Redis dans l’overview d’administration
-
----
+- Accédez à : `https://cloud.exemple.com`
+- Vérifiez le certificat HTTPS
+- Activez le mode **Cron** dans les paramètres Nextcloud
+- Vérifiez Redis dans l'interface d’administration
 
 ## Conclusion
 
 Traefik n’est **pas obligatoire**, mais il constitue une **excellente pratique** pour :
 
-* Gérer plusieurs services HTTPS sur un même VPS
-* Automatiser les certificats Let’s Encrypt
-* Centraliser le routage et la sécurité
+- Gérer plusieurs services HTTPS sur un même VPS
+- Automatiser les certificats Let’s Encrypt
+- Centraliser le routage et la sécurité
 
-Pour un premier déploiement ou un usage personnel, le **guide débutant** est suffisant.
+Pour un premier déploiement ou un usage personnel, le **[guide pour utilisateurs débutants](/pages/bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_beginner)** est suffisant.
+
 Pour un usage avancé ou multi-services, ce guide est recommandé.
 
----
+## Aller plus loin
 
-## Allez plus loin
+- [Documentation Traefik](https://doc.traefik.io/traefik/)
+- [Documentation Nextcloud](https://docs.nextcloud.com)
+- [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-* [Documentation Traefik](https://doc.traefik.io/traefik/)
-* [Documentation Nextcloud](https://docs.nextcloud.com)
-* [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+Échangez avec notre [communauté d'utilisateurs](/links/community).
