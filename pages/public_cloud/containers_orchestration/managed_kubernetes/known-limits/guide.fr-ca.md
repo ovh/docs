@@ -124,7 +124,7 @@ La durée de vie du Load Balancer externe (et de l'adresse IP associée, si elle
 
 Pour plus d'informations, consultez notre guide pour [exposer des services via un LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
-## Ressources & Quotas
+## Ressources & quotas
 
 Les ressources du service Kubernetes managé comprenant les nœuds, les volumes persistants et les répartiteurs de charge sont basés sur des ressources Public Cloud standard déployées dans le projet utilisateur. Vous pouvez donc les voir dans l'[espace client Public Cloud d'OVHcloud](/links/manager) ou via les API. Cependant, cela ne signifie pas que vous pouvez interagir directement avec ces ressources de la même manière que vous le feriez avec d'autres instances Public Cloud. La partie *gérée* du service MKS d'OVHcloud signifie que nous avons configuré ces ressources pour qu'elles fassent partie de notre Kubernetes managé.
 

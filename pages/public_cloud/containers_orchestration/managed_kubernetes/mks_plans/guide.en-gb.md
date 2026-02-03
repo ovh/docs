@@ -42,7 +42,7 @@ Example: A cluster with the Standard plan deployed in a 3-AZ region can maintain
 
 The availability of OVHcloud Managed Kubernetes varies by plan. The Free plan is available in multiple single-zone regions worldwide, while the Standard plan is available in both single-zone and multi-zone regions for enhanced resilience.
 
-For a complete list of supported regions by plan and their deployment architecture (1-AZ vs 3-AZ), see the following guide: [Datacenters, nodes and storage flavors - Regional Availability by MKS Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
+For a complete list of supported regions by plan and their deployment architecture (1-AZ vs 3-AZ), see the following guide: [Datacenters, nodes and storage flavors - Regional availability by MKS plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
 
 #### Standard plan exclusive features
 

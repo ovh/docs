@@ -13,7 +13,7 @@ This guide explains how to use Floating IPs on the OVHcloud Managed Kubernetes S
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster with the **Standard plan** and some basic knowledge of how to operate it.
 
 > [!primary]
-> **Standard Plan required.**
+> **Standard plan required.**
 >
 > Floating IPs per node are an exclusive feature of the **Managed Kubernetes Service Standard plan**. This feature is not available on the Free plan.
 >
@@ -324,10 +324,10 @@ When using Floating IPs, each node is directly exposed to the internet. Follow t
 
 ## Go Further
 
-- [MKS Plans Comparison](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans): Learn more about Free vs Standard plan differences.
-- [Regional Availability](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#regional-availability-by-mks-plan): Check available regions for each plan.
+- [MKS Plans comparison](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans): Learn more about Free vs Standard plan differences.
+- [Regional availability](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors): Check available regions for each plan.
 - [OVHcloud API console](https://eu.api.ovh.com/console/): Explore the full OVHcloud API.
 - [Concepts - Additional IP or Floating IP](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip): Understand the difference between Additional IP and Floating IP.
-- [OVHcloud Public Cloud Prices](/links/public-cloud/prices-compute): Check Floating IP pricing.
+- [OVHcloud Public Cloud prices](/links/public-cloud/prices-compute): Check Floating IP pricing.
 
 Join our [community of users](/links/community).

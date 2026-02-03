@@ -238,7 +238,7 @@ Puis créez le node pool :
 ovhcloud cloud kube nodepool create <cluster_id> --from-file ./nodepool-params.json
 ```
 
-Pour plus d'informations sur la CLI OVHcloud, consultez : [CLI OVHcloud - Créer un node pool](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud_cloud_kube_nodepool_create.md)
+Pour plus d'informations sur la CLI OVHcloud, consultez la documentation suivante : [CLI OVHcloud - Créer un node pool](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud_cloud_kube_nodepool_create.md).
 
 ## Vérifier l'assignation des Floating IP
 
@@ -283,7 +283,7 @@ La réponse inclura :
 }
 ```
 
-### Avec la CLI OpenStack (Avancé)
+### Avec la CLI OpenStack (avancé)
 
 Pour les utilisateurs avancés, il est possible d'utiliser la CLI OpenStack pour lister les Floating IP et leurs associations :
 
