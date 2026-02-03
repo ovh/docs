@@ -150,6 +150,7 @@ If you want to go further - notably by adding **automatic HTTPS**, a **reverse-p
 To deepen certain aspects or strengthen the security and reliability of your installation, you can also consult the following resources:
 
 [Secure an OVHcloud VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
 [Official Nextcloud documentation](https://docs.nextcloud.com)
 
 Join our [community of users](/links/community).

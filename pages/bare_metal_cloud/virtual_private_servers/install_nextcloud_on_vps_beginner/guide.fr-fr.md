@@ -150,6 +150,7 @@ Si vous souhaitez aller plus loin - notamment en ajoutant le **HTTPS automatique
 Pour approfondir certains aspects ou renforcer la sécurité et la fiabilité de votre installation, vous pouvez également consulter les ressources suivantes :
 
 [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
 [Documentation officielle Nextcloud](https://docs.nextcloud.com)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -223,8 +223,10 @@ Pour un usage avancé ou multi-services, ce guide est recommandé.
 
 ## Aller plus loin
 
-- [Documentation Traefik](https://doc.traefik.io/traefik/)
-- [Documentation Nextcloud](https://docs.nextcloud.com)
-- [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+[Documentation Traefik](https://doc.traefik.io/traefik/)
+
+[Documentation Nextcloud](https://docs.nextcloud.com)
+
+[Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

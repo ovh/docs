@@ -142,4 +142,6 @@ Voici les commandes à connaître pour piloter votre instance directement depuis
 
 [Sécuriser un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
+[Documentation officielle OpenClaw](https://docs.openclaw.ai/)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
