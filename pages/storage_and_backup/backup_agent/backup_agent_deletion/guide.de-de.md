@@ -56,7 +56,7 @@ Wählen Sie Ihren Tenant aus und klicken Sie auf die Löschschaltfläche.
 
 Bestätigen Sie die Löschung im erscheinenden Fenster.
 
-![Backup Agent Tenant löschen](images/01-backup-agent-delete-Tenant.png){.thumbnail}
+![Backup Agent Tenant löschen](images/01-backup-agent-delete-tenant.png){.thumbnail}
 
 ## Weiterführende Informationen
 
