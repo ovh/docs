@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for a Public Cloud instance
 excerpt: Find out how to set up the reverse DNS resolution of your OVHcloud Public Cloud instance
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -22,19 +22,19 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `Public IP Addresses`{.action}.
 
-The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category.
+The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar to the left of the drop-down menu. 
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
+Click the `⁝`{.action} button in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
 
-![Reverse DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-In the new window, enter your reverse path and click on `Validate`{.action}.
+In the new window, enter your reverse path and click on `Confirm`{.action}.
 
-![Reverse DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-You can also edit the reverse path directly via the icon in the **Reverse DNS** column of the table.
+You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
 
 > [!primary]
 >

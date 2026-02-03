@@ -1,7 +1,7 @@
 ---
 title: "How to protect a Game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud Game DDoS Protection firewall"
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 <style>
@@ -28,7 +28,7 @@ This guide's objective is to help you better understand our Game DDoS Protection
 
 Our dedicated Bare Metal gaming servers include an additional network attack protection specifically designed to secure gaming applications against targeted attacks, ensuring stability and accessibility for gamers. This dedicated protection solution is both robust and easy to use, allowing you to focus on developing your business without the distraction of defending against cybercrime.
 
-| ![global-schema](images/global_schema_focus_game.png) |
+| ![global-schema](images/global_schema_focus_game_new.png) |
 |:--:|
 | Anti-DDoS infrastructure & game protection services diagram at OVHcloud |
 
@@ -64,19 +64,19 @@ To configure game protection rules for your Bare Metal Game server, log in to th
 - Open `Network`{.action} in the left-hand sidebar.
 - Open `Public IP Addresses`{.action}.
 
-You can filter IP addresses by using the `All services`{.action} drop-down menu. Enter the name or category of the corresponding server:
+You can filter IP addresses by using the `All service types`{.action} drop-down menu, or directly enter the desired IP address in the search bar. Enter the name or category of the corresponding server:
 
-| ![configure-game-firewall](images/ip_listing.png) |
+| ![configure-game-firewall](images/ip_listing_new.png) |
 |:--:|
 | IP listing: Find your IP address by corresponding service |
 
 Navigate to the *Game firewall* configuration:
 
-| ![game-server](images/firewall_game_01_blur.png) |
+| ![game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Click on the `...`{.action} button next to the IP address of your Game server. |
+| Click on the `⁝`{.action} button next to the IP address of your Game server. |
 
-| ![configure-game-firewall](images/firewall_game_02.png) |
+| ![configure-game-firewall](images/firewall_game_02_new.png) |
 |:--:|
 | Click on `Configure the GAME firewall`{.action}. |
 
@@ -88,16 +88,16 @@ Now you can configure game protection rules for the selected IP address.
 
 To enable Game DDoS Protection, simply define game applications and their associated network port range (or single port):
 
-| ![add-rule-btn](images/firewall_game_03.png) |
+| ![add-rule-btn](images/firewall_game_03_new.png) |
 |:--:|
 | On the following screen, click the `Add a rule`{.action} button to add a rule to the *Game firewall*. |
 
 
-Game DDoS Protection allows you to configure up to **100 rules per IP address** that points to a 3rd generation Bare Metal Game server (servers released in 2024 or later), or up to **30 rules per IP address** for the older Bare Metal game ranges (usually identified as RISE-GAME or SYS-GAME).
+Game DDoS Protection allows you to configure up to **100 rules per IP address** that points to the recent GAME-1 and GAME-2 Bare Metal Game servers (2024 and later), or up to **30 rules per IP address** for the older Bare Metal game ranges (usually identified as RISE-GAME or SYS-GAME).
 
 Please note that supported gaming protocols (game titles and versions that can be protected) may change over time. Moreover, they can be different between older Bare Metal Game server ranges and the newer ones. The most recent list of supported game profiles can be found [here](/links/security/ddos).
 
-| ![confirm-new-rule](images/firewall_game_04.png) |
+| ![confirm-new-rule](images/firewall_game_04_new.png) |
 |:--:|
 | Configure game protections by selecting a **Protocol** from the list and defining the **port-range** on which your gaming application is receiving connections (please refer to the game's setup documentation). Then click on the `Confirm`{.action} button to save. You have now successfully configured *Game firewall* rules. |
 
@@ -115,20 +115,20 @@ Also, we strongly recommend to set the rule **"Default policy = DROP"** on every
 
 #### Ark Survival Evolved
 
-- **Ark Survival Evolved**: Basic protection engine
-- **Ark Survival Evolved v.311.78**: Updated protection engine, added in the 3rd gen. of Bare Metal Game servers (2024 release)
+- **Ark Survival Evolved**: Basic protection engine.
+- **Ark Survival Evolved v.311.78**: Updated protection engine, added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later).
 
 #### Counter Strike 2
 
-- **Counter Strike 2**: New protection engine added in the 3rd gen. of Bare Metal Game servers (2024 release)
+- **Counter Strike 2**: New protection engine added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later).
 
 #### FiveM
 
-- **FiveM** is a Grand Theft Auto V multiplayer mod by Cfx.re which is now recognized by the game publisher Rockstar. We added FiveM support in the 3rd gen. of Bare Metal Game servers (2024 release).
+- **FiveM** is a Grand Theft Auto V multiplayer mod by Cfx.re which is now recognized by the game publisher Rockstar. We added FiveM support to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later).
 
 #### Rust
 
-- **Rust** is supported with a dedicated protection profile on all generations of Bare Metal Game servers. Please note that we updated this protection profile (i.e. added RakNet cookies support) for the 3rd gen. of Bare Metal Game servers (2024 release).  
+- **Rust** is supported with a dedicated protection profile on all generations of Bare Metal Game servers. Please note that we updated this protection profile (i.e. added RakNet cookies support) for the 3rd gen. of Bare Metal Game servers (2024, EPYC based).  
 
 
 #### Minecraft
@@ -137,12 +137,12 @@ Minecraft is well supported by the following profiles:
 
 - **Minecraft Java**: Should be the best fit for all Minecraft Java versions. It protects the Minecraft Query protocol and is tuned for TCP traffic. It was added in 2024 but is also available for previous generations of Bare Metal Game servers. Use with caution if other UDP games are hosted on the same IP. 
 - **Minecraft Query**: General Minecraft Query protocol protection.
-- **Minecraft Bedrock**: Minecraft Bedrock protection (with RakNet cookies support), added in the 3rd gen. of Bare Metal Game servers (2024 release).
-- **Minecraft Pocket Edition**: Minecraft PE/Bedrock protection.
+- **Minecraft Bedrock**: Minecraft Bedrock protection (with RakNet cookies support), added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later).
+- **Minecraft Pocket Edition**: Minecraft PE/Bedrock protection, the same as Bedrock, kept for compatibility reasons.
 
 #### Valheim
 
-- **Valheim**: New protecion engine, added in the 3rd gen. of Bare Metal Game servers (2024 release). 
+- **Valheim**: New protecion engine, added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later). 
 
 > [!primary]
 > If you host a bigger service with one of the supported games, but still observe false positives from Anti-DDoS Infrastructure systems, please reach out to our support via the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to be able to tune up the application profile. 
@@ -159,13 +159,13 @@ While Additional IPs are enabling flexibility, there are situations that require
 To provide the most flexibility of configuration, different gaming protection rules can be set on different Additional IPs pointing to the same Bare Metal Game server.  
 The maximum number of rules and available protection settings are defined on a per-IP address basis, but are specific to the particular Bare Metal Game server generation behind the firewall.
 
-Differences may be observed between the newer Game servers (3rd gen. of Game Bare Metal servers, released in 2024) and the older Game servers (previous generations, usually identified as RISE-GAME or SYS-GAME).
+Differences may be observed between the newer Game servers (3rd gen. of Game Bare Metal servers - 2024, EPYC based) and the older Game servers (previous generations, usually identified as RISE-GAME or SYS-GAME).
 
 ##### Veryfying supported game protections
 
 All supported Game DDoS Protection protocols for a specific server are visible on the `GAME firewall`{.action} configuration page for any IP address pointing to that server, in the `Game protocol`{.action} drop-down menu:
 
-| ![control-panel-game-protocols](images/game_protocols_list.png) |
+| ![control-panel-game-protocols](images/game_protocols_list_new.png) |
 |:--:|
 | List of supported protection protocols |
 

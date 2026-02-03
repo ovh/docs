@@ -34,11 +34,11 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
     ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
 
-2. Dans l’onglet **Informations générales**, la section **Nombre de noeuds** est visible. Cliquez sur `Gérer mes noeuds`{.action}.
+2. Dans l’onglet **Informations générales**, la section **Nombre de nœuds** est visible. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Nombre de nœuds](images/manage-nodes.png){.thumbnail}
 
-3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des noeuds`{.action}.
+3. Dans l’onglet **Noeuds**, sélectionnez `Ajouter des nœuds`{.action}.
 
     ![Ajouter des nœuds](images/adding-nodes-03.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 Une fois le nœud livré, son statut s’affiche dans l’onglet **Informations générales**.
 
-La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être installé.
+La zone **Nombre de nœuds** indiquera qu’un nouveau nœud est prêt à être installé.
 
 ![Nouveau nœud à installer](images/adding-nodes-05.png){.thumbnail}
 
@@ -56,7 +56,7 @@ La zone **Nombre de noeuds** indiquera qu’un nouveau nœud est prêt à être 
 
 > [!tabs]
 > Espace client OVHcloud
->> Si vous cliquez à nouveau sur `Gérer mes noeuds`{.action}, vous verrez la liste des nœuds. Pour tout nœud avec le statut **OS not installed**, cliquez sur le bouton `...`{.action} et sélectionnez `Installer`{.action}.
+>> Si vous cliquez à nouveau sur `Gérer mes nœuds`{.action}, vous verrez la liste des nœuds. Pour tout nœud avec le statut **OS not installed**, cliquez sur le bouton `...`{.action} et sélectionnez `Installer`{.action}.
 >>
 >> ![Statut du nœud](images/install-os-01.png){.thumbnail}
 >>
@@ -93,7 +93,7 @@ Consultez la documentation suivante :
 
     ![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
 
-2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes noeuds`{.action}.
+2. Dans l’onglet **General information**, vous pouvez voir le nombre de nœuds. Cliquez sur `Gérer mes nœuds`{.action}.
 
     ![Manage my nodes](images/manage-nodes.png){.thumbnail}
 

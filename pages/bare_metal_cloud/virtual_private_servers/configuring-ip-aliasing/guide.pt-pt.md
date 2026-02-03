@@ -66,8 +66,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> **Etapa 1: desativar a configuração automática da rede**
 >>
@@ -155,8 +155,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo systemctl restart networking
 >> ```
 >>
-> Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 e posteriores**
+> **Debian 12+, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 e posteriores
 >>
 >> O ficheiro de configuração dos seus endereços Additional IP encontra-se no ficheiro `/etc/netplan/`. Neste exemplo, chama-se `50-cloud-init.yaml`.
 >>
@@ -243,10 +243,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo netplan apply
 >> ```
 >>
->> Repita este procedimento para cada endereço Additional IP.
->>
-> AlmaLinux / Rocky Linux
->> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> O ficheiro de configuração principal está situado na pasta `/etc/sysconfig/network-scripts/`. Neste exemplo, é chamado `ifcfg-eth0`. Antes de fazer qualquer alteração, verifique o nome real do arquivo nessa pasta.
 >>
@@ -294,17 +292,17 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> **Etapa 3: reiniciar a interface**
 >>
 >> ```bash
->> sudo systemctl restart network
->> ```
->>
->> Para AlmaLinux e Rocky Linux
->>
->> ```bash
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> Fedora 42
->> **Fedora 42**
+>> CentOS
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> O Fedora utiliza agora ficheiros-chave. Antes, o NetworkManager armazenava os perfis de rede em formato ifcfg nesse diretório: `/etc/sysconfig/network-scripts/`. No entanto, o formato ifcfg tornou-se obsoleto. Por predefinição, o NetworkManager não cria novos perfis neste formato. O ficheiro de configuração encontra-se agora em `/etc/NetworkManager/system-connections/`.
 >>
@@ -368,8 +366,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
 >> **Etapa 1: aceder à secção de gestão dos IP do WHM**
 >>
@@ -396,8 +394,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **Etapa 1: aceder à gestão do IP do Plesk**
 >>
@@ -423,8 +421,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >>
 >> ![current IP configuration](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> **Windows Server**
+>> Windows Server
 >>
 >> **Etapa 1: verificar a configuração de rede**
 >>
@@ -519,4 +517,4 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

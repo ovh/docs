@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Intégration en Python avec LiteLLM (EN)
 excerpt: Apprenez à utiliser facilement OVHcloud AI Endpoints en Python avec LiteLLM
-updated: 2025-09-23
+updated: 2026-01-05
 ---
 
 > [!primary]
@@ -407,6 +407,8 @@ In this article, we explored how to integrate OVHcloud AI Endpoints with LiteLLM
 ## Go further
 
 You can find more informations about LiteLLM on their [official documentation](https://docs.litellm.ai). You can also navigate in the [AI Endpoints catalog](https://endpoints.ai.cloud.ovh.net/catalog) to explore the models that are available through LiteLLM.
+
+To take your use of LiteLLM even further and get the most out of **OVHcloud AI Endpoints**, you can easily implement intelligent request routing. LiteLLM allows you to manage the **routing** and **load balancing** of incoming requests. Refer to this [tutorial](https://github.com/ovh/public-cloud-examples/blob/main/ai/ai-endpoints/litellm-router-loadbalancing/tutorial_litellm_routing_ai_endpoints.ipynb).
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
 

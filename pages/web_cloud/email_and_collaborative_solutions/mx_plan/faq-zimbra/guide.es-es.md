@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre la solución Zimbra OVHcloud
 excerpt: "Encuentre las preguntas sobre la migración a Zimbra para la solución MX Plan de OVHcloud"
-updated: 2025-11-04
+updated: 2025-12-05
 ---
 
 <style>
@@ -198,8 +198,9 @@ Para dar de baja un servicio en la sección « Mis servicios » de su área de O
 |**Contenido de la cuenta de correo**<br>(correo, carpetas, contactos)|Migrado|✅|
 |**Mensajes recibidos durante el proceso de migración**|Entregados|✅|
 |**Respuesta automática / Contestador**|Mantenida|✅|
-|**Regla de la bandeja de entrada**|- Las reglas configuradas desde su cliente de correo no se modificarán.<br>- Las reglas configuradas desde el webmail OWA serán migradas al webmail Zimbra. Sólo una proporción muy pequeña de reglas no podrá migrarse debido a incompatibilidades. Estas direcciones se enviarán en forma de mensaje de correo electrónico a la cuenta de correo del usuario y podrán volver a crearse manualmente.<br>- *Regla incompatible*: Regla que utiliza dos tipos de condiciones, como Y y O, al mismo tiempo. Por ejemplo, si el mensaje se recibe de (**john@mydomain.ovh** O **mary@mydomain.ovh**) Y el asunto contiene "factura", muévase a la carpeta "Importante"|⚠️|
+|**Regla de la bandeja de entrada**|- Las reglas configuradas desde su cliente de correo no se modificarán.<br>- Las reglas configuradas desde el webmail OWA serán migradas al webmail Zimbra. Sólo una proporción muy pequeña de reglas no podrá migrarse debido a incompatibilidades.<br>- *Regla incompatible*: Regla que utiliza dos tipos de condiciones, como "Y" y "O", al mismo tiempo. Por ejemplo: si el mensaje se recibe de (**john@mydomain.ovh** O **mary@mydomain.ovh**) Y el asunto contiene "factura", muévase a la carpeta "Importante".|⚠️|
 |**Firma personal**|- Las firmas configuradas desde su cliente de correo no se modificarán.<br>- Las firmas configuradas desde el webmail OWA no se migrarán debido al formato.|⚠️|
+|**Contactos externos**|Esta función permite integrar una dirección de correo electrónico externa a la plataforma de correo en su libreta de direcciones global. Esta función no estará presente en Zimbra.|❌|
 |**Bloquear / Autorizar**|Esta funcionalidad, que permite bloquear los emails procedentes de un nombre de dominio o de una dirección de correo electrónico específicos, no estará presente en Zimbra. Sin embargo, este comportamiento se puede volver a crear fácilmente a través de una regla de la Bandeja de entrada de Zimbra.|❌|
 |**Pie de página**<br>(firma de nombre de dominio que puede configurarse desde el área de cliente)|Esta funcionalidad no estará presente en la nueva infraestructura Zimbra. Sin embargo, todavía es posible configurar una firma en el nivel de la cuenta de correo.|❌|
 |**Política de seguridad**|Esta funcionalidad del área de cliente que permite cambiar la política de gestión de las contraseñas no estará presente, en un primer momento, en la solución Zimbra.<br>La política de seguridad aplicada por defecto a las contraseñas requiere un mínimo de 10 caracteres alfanuméricos, 1 carácter especial, 1 mayúscula.|❌|

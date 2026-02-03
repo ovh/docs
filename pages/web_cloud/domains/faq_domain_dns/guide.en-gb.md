@@ -1,7 +1,7 @@
 ---
 title: "Domain names & DNS FAQ"
 excerpt: "Find the answers to the most frequently asked questions on domain names, DNS servers and DNS zones"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ DNS records are used, for example, to:
 Many DNS records exist. They all have a specific purpose in DNS resolution. At OVHcloud, they are categorized into three parts:
 
 - **Pointer records**: `A`, `AAAA`, `NS`, `CNAME`, and `DNAME`.
-- **Extended records**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, and `TLSA`.
+- **Extended records**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB`, and `HTTPS`.
 - **Mail records**: `MX`, `SPF`, `DKIM`, and `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ Here, you will see all the DNS records you can add via the OVHcloud configuratio
 Using this assistant, you can add the following types of DNS records:
 
 - **Pointer fields**: `A`, `AAAA`, `NS`, `CNAME`, and `DNAME`.
-- **Extended fields**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, and `TLSA`.
+- **Extended fields**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB`, and `HTTPS`.
 - **Email fields**: `MX`, `SPF`, `DKIM`, and `DMARC`.
 
 > [!primary]

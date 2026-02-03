@@ -1,8 +1,16 @@
 ---
 title: 'MX Plan - Konfiguracja konta e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan w interfejsie online programu pocztowego Gmail'
-updated: 2025-02-17
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> Od stycznia 2026 r. usługa [Gmail nie będzie już kompatybilna z funkcjami Gmailify i dostępem do kont POP](https://support.google.com/mail/answer/16604719?hl), które do tej pory umożliwiały importowanie e-maili z kont e-mail innych firm.
+>
+> Nie będzie już można konfigurować Twoich adresów e-mail OVHcloud w Gmailu.
+>
+> Twoje konta e-mail OVHcloud są zawsze dostępne poprzez [Webmail](/links/web/email).
 
 ## Wprowadzenie
 

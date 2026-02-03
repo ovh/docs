@@ -1,5 +1,5 @@
 ---
-title: "Restaurer un serveur Bare Metal avec Veeam Backup Agent"
+title: "Backup Agent - Restaurer un serveur Bare Metal avec Veeam Backup Agent"
 excerpt: "Découvrez comment restaurer l'intégralité de votre système - en ligne ou sur site - grâce à une image ISO de récupération et des sauvegardes Veeam hébergées chez OVHcloud"
 updated: 2025-09-30
 ---

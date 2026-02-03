@@ -55,7 +55,7 @@ A 429 error code typically indicates that you have exceeded the rate limit for t
 
 If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. 
 
-Alternatively, please **[reach out to us to discuss increasing your limits](https://help.ovhcloud.com/csm?id=csm_get_help )** if you require higher usage.
+Alternatively, please **[reach out to us to discuss increasing your limits](/links/support )** if you require higher usage.
 
 ### When using AI Endpoints, I am facing "Resource tag 'discovery' is forbidden"
 

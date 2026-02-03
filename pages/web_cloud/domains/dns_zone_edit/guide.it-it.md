@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/8NwNKiG)
-
 ## Obiettivo
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

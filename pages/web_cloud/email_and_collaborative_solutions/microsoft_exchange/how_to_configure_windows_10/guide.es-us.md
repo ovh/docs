@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 Abra la aplicación Correo en su dispositivo. Puede añadir una cuenta de dos formas distintas:
 
 - **Si es la primera vez que usa la aplicación**, haga clic en el botón `Agregar cuenta`{.action}.
-- **Si ya tiene una cuenta configurada**, haga clic en `Cuentas`{.action} en el menú izquierdo y, en el menú que aparecerá a la derecha, haga clic en `Agregar cuenta`{.action}.
+-  **Si ya tiene una cuenta configurada**, haga clic en `Cuentas`{.action} en el menú izquierdo y, en el menú que aparecerá a la derecha, haga clic en `Agregar cuenta`{.action}.
 
 ![exchange](images/configuration-mail-windows-step1.png){.thumbnail}
 
@@ -62,5 +62,7 @@ OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/w
 > Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo de Windows, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/config-l-mail-en-l-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurar una cuenta de correo electrónico en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configurar una cuenta Email Pro en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

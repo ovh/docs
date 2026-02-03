@@ -166,7 +166,7 @@ Jeśli chcesz wysyłać wiadomości e-mail, wprowadź ręcznie ustawienia **SMTP
 
 - **Nazwa użytkownika** : Wpisz pełny adres e-mail **complete**
 - **Hasło** : Wprowadź hasło przypisane do konta e-mail
-- **Serwer (przychodzący)** : pro?.mail.ovh.net
+- **Serwer (wychodzący)** : pro?.mail.ovh.net
 - **Port** : 587
 - **Typ zabezpieczeń** : STARTTLS
 

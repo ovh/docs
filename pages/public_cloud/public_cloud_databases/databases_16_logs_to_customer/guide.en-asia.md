@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to set up logs forwarding
+title: Set up logs forwarding for Public Cloud Databases
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
 updated: 2024-10-28
 ---

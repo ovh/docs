@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar las direcciones de correo incluidas"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Objetivo
@@ -20,10 +20,12 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 > [!warning]
 >
-> Si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](/links/manager) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para consultar su gestión.
+> La opción "dirección(es) de correo electrónico incluida(s) con su alojamiento web" no está disponible para un nombre de dominio externo (no registrado en OVHcloud o registrado en una cuenta de OVHcloud diferente a la suya).
 >
-> Por último, si su dominio ya está asociado a la opción "dirección(s) de correo incluida(s) con su alojamiento web" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Para más información, consulte esta guía.
+> Para migrar un dominio externo a OVHcloud, siga [esta guía](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> Si su nombre de dominio ya está registrado en OVHcloud o si ya existe una zona DNS para este en otra cuenta de OVHcloud que no sea la suya, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar su gestión.
 >
+> Finalmente, si su nombre de dominio ya está vinculado a la opción "dirección(es) de correo electrónico incluida(s)" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Póngase en contacto con el actual administrador del alojamiento web con la ayuda de esta guía.
 
 ## Procedimiento
 

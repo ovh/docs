@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący rozwiązania Zimbra OVHcloud
 excerpt: "Poszukaj odpowiedzi na pytania dotyczące migracji do Zimbry w ofercie MX Plan OVHcloud"
-updated: 2025-11-04
+updated: 2025-12-05
 ---
 
 <style>
@@ -167,7 +167,7 @@ Nie przewiduje się żadnych zmian w przetwarzaniu i wykorzystywaniu danych. Zna
 
 /// details | Jak mogę pozostać na bieżącym interfejsie webmail (OWA)?
 
-Jeśli chcesz, możesz w każdej chwili przejść na ofertę korzystającą z poczty internetowej OWA, a mianowicie E-mail Pro lub Exchange. W tym celu zapraszamy do zapoznania się z naszym przewodnikiem „[Migracja adresu e-mail w planie MX na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)”.
+Jeśli chcesz, możesz w każdej chwili przejść na ofertę korzystającą z poczty internetowej OWA, a mianowicie E-mail Pro lub Exchange. W tym celu zapraszamy do zapoznania się z naszym przewodnikiem "[Migracja adresu e-mail w planie MX na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)".
 
 ///
 
@@ -181,7 +181,7 @@ Można jednak nadal korzystać z interfejsu OWA [poprzez migrację kont e-mail d
 
 /// details | Czy mogę zrezygnować z usługi MX Plan?
 
-Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHcloud, zapoznaj się z sekcją Plan MX w naszym przewodniku „[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)”.
+Aby anulować ofertę w sekcji "Moje usługi" w przestrzeni OVHcloud, zapoznaj się z sekcją Plan MX w naszym przewodniku "[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)".
 
 ///
 
@@ -198,8 +198,9 @@ Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHcloud, zapozn
 |**Zawartość konta e-mail**<br>(e-maile, foldery, kontakty)|Przeniesiono|✅|
 |**E-maile otrzymane podczas procesu migracji**|Dostarczone|✅|
 |**Odpowiedź automatyczna / Skrzynka głosowa**|Kontynuacja|✅|
-|**Reguła skrzynki odbiorczej**|- Reguły skonfigurowane w programie pocztowym nie ulegną zmianie.<br>- Reguły skonfigurowane z poziomu webmail OWA zostaną przeniesione do webmaila Zimbra. Niewielka część reguł nie może zostać migrowana z powodu niezgodności. Zostaną one wysłane jako wiadomość e-mail na konto e-mail użytkownika i będą mogły zostać utworzone ręcznie.<br>- *Niekompatybilna reguła*: Reguła używa dwóch typów warunków, takich jak I i LUB jednocześnie. Na przykład, jeśli wiadomość została odebrana od (**john@mydomain.ovh** LUB **mary@mydomain.ovh**) A temat zawiera "fakturę", przenieś do folderu "Ważne"|⚠️|
+|**Reguła skrzynki odbiorczej**|- Reguły skonfigurowane w programie pocztowym nie ulegną zmianie.<br>- Reguły skonfigurowane z poziomu webmail OWA zostaną przeniesione do webmaila Zimbra. Niewielka część reguł nie może zostać migrowana z powodu niezgodności.<br>- *Niekompatybilna reguła*: Reguła wykorzystująca jednocześnie dwa typy warunków, takie jak "ORAZ" i "LUB". Na przykład: jeśli wiadomość została otrzymana od (john@mydomain.ovh LUB mary@mydomain.ovh) ORAZ temat zawiera "fakturę", to przenieś ją do folderu "Ważne".|⚠️|
 |**Podpis osobisty**|- Podpisy skonfigurowane w programie pocztowym nie ulegną zmianie.<br>- Podpisy skonfigurowane z poziomu interfejsu Webmail OWA nie zostaną zmigrowane z powodu formatowania.|⚠️|
+|**Kontakty zewnętrzne**|Ta funkcja umożliwia zintegrowanie zewnętrznego adresu e-mail z platformą e-mail w globalnej książce adresowej. Ta funkcja nie będzie obecna na Zimbra.|❌|
 |**Zablokuj / Zezwól**|Funkcja ta, pozwalająca na zablokowanie e-maili wysyłanych z określonej domeny lub adresu e-mail, nie będzie dostępna w witrynie Zimbra. Zachowanie to można jednak łatwo odtworzyć za pomocą reguły skrzynki odbiorczej w interfejsie Zimbra.|❌|
 |**Stopka**<br>(podpis domeny konfigurowalny w Panelu klienta)|Ta funkcja nie będzie dostępna w nowej infrastrukturze Zimbra. Nadal można jednak skonfigurować podpis na poziomie konta e-mail.|❌|
 |**Polityka bezpieczeństwa**|Funkcja Panelu klienta umożliwiająca zmianę polityki zarządzania hasłami nie będzie początkowo dostępna w przypadku rozwiązania Zimbra.<br>Domyślna polityka bezpieczeństwa dotycząca haseł wymaga minimum 10 znaków alfanumerycznych, 1 znaku specjalnego, 1 wielkiej litery.|❌|

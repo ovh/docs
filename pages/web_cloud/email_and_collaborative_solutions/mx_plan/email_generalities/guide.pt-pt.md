@@ -21,11 +21,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
-> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
-> [Aceda ao inquérito.](https://s.elq.fr/ovhext/EsCB5sR)
-
 ## Objetivo
 
 Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail, com os quais poderá enviar e receber mensagens no dispositivo que preferir.

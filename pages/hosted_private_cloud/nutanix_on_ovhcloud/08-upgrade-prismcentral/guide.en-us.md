@@ -190,7 +190,7 @@ Click `Apply N Updates`{.action}.
 
 ## Go further
 
-[OVHcloud documentation](/products/hosted-private-cloud-nutanix-on-ovhcloud)
+[OVHcloud documentation](/products/hosted-private-cloud-nutanix)
 
 [Nutanix official documentation](https://www.nutanix.com/)
 

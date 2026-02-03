@@ -1,5 +1,5 @@
 ---
-title: Bare Metal recovery with Veeam Backup Agent
+title: Backup Agent - Bare Metal recovery with Veeam Backup Agent
 excerpt: Learn how to restore your entire system using a recovery ISO and Veeam backups stored at OVHcloud, whether hosted or on-premise
 updated: 2025-09-30
 ---

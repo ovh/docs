@@ -41,9 +41,9 @@ Selon vos besoins, il est possible de personnaliser le nom des serveurs DNS de v
 
 ### 1 - Récupérer les serveurs DNS actuellement utilisés par votre nom de domaine <a name="step1"></a>
 
-Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.net/fr/run-test).
+Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.net/fr).
 
-Pour cela, rendez-vous sur le lien [https://zonemaster.net](https://zonemaster.net/fr/run-test), saisissez votre nom de domaine sans les *www* (exemple : *domain.tld*) puis cochez le bouton `Options`{.action} situé juste en dessous du formulaire de saisie du nom de domaine.
+Pour cela, rendez-vous sur le lien [https://zonemaster.net](https://zonemaster.net/fr), saisissez votre nom de domaine sans les *www* (exemple : *domain.tld*) puis cochez le bouton `Options`{.action} situé juste en dessous du formulaire de saisie du nom de domaine.
 
 Dans les options disponibles, cliquez directement sur le bouton `Récupérer les NS depuis la zone parente`{.action}.
 

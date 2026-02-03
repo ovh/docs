@@ -1,7 +1,7 @@
 ---
 title: "Todo sobre los registros DNS"
 excerpt: "Descubra los diferentes tipos de registro DNS disponibles en una zona DNS de OVHcloud"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -175,6 +175,33 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >>
 >> Si lo necesita, puede consultar más información en la página web del [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Este registro permite indicar la dirección de correo electrónico de la persona responsable del nombre de dominio. Este registro también puede combinarse con un registro DNS de tipo TXT para proporcionar más información.
+>>
+>> Si es necesario, puede encontrar más detalles en el sitio web de la [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Este registro DNS puede agrupar varias informaciones para permitir una conexión más rápida y eficiente a su sitio web. También permite, por ejemplo, indicar directamente al navegador que el sitio web es compatible con HTTP 2 o HTTP 3, que debe priorizar el uso de una dirección IP (IPv4 y/o IPv6) mencionada como parámetro o incluso pasar por un puerto de acceso específico. Esto permite al navegador recuperar varias informaciones en una sola solicitud.
+>>
+>> Este registro dispone de **2** modos:
+>>
+>> - **Modo Alias**: este modo se activa cuando especifica una prioridad igual a 0. A diferencia de los registros DNS de tipo CNAME, permite redirigir un nombre de dominio desde su propia zona DNS (apex) hacia otro nombre de dominio o subdominio.
+>> - **Modo Servicio**: este modo se activa cuando especifica una prioridad distinta de 0. Es en este modo donde podrá definir los parámetros que desee aplicar a su nombre de dominio (ejemplos de parámetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En modo **Servicio**, puede aplicar estos parámetros directamente a su nombre de dominio, incluso si este no se utiliza como alias de otro nombre de dominio.
+>>
+>> Si es necesario, puede encontrar más detalles en el sitio web de la [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Este registro funciona como el registro DNS de tipo SVCB, pero, a diferencia de este, es más específico para el protocolo HTTP. Puede agrupar varias informaciones para permitir una conexión más rápida y eficiente a su sitio web. También permite, por ejemplo, indicar directamente al navegador que el sitio web es compatible con HTTP 2 o HTTP 3, que debe priorizar el uso de una dirección IP (IPv4 y/o IPv6) mencionada como parámetro o incluso pasar por un puerto de acceso específico. Esto permite al navegador recuperar varias informaciones en una sola solicitud.
+>>
+>> Este registro dispone de **2** modos:
+>>
+>> - **Modo Alias**: este modo se activa cuando especifica una prioridad igual a 0. A diferencia de los registros DNS de tipo CNAME, permite redirigir un nombre de dominio desde su propia zona DNS (apex) hacia otro nombre de dominio o subdominio.
+>> - **Modo Servicio**: este modo se activa cuando especifica una prioridad distinta de 0. Es en este modo donde podrá definir los parámetros que desee aplicar a su nombre de dominio (ejemplos de parámetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En modo **Servicio**, puede aplicar estos parámetros directamente a su nombre de dominio, incluso si este no se utiliza como alias de otro nombre de dominio.
+>>
+>> Si es necesario, puede encontrar más detalles en el sitio web de la [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
 

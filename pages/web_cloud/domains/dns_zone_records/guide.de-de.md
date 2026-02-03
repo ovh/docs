@@ -1,7 +1,7 @@
 ---
 title: "Alle Informationen zu DNS-Einträgen"
 excerpt: "Entdecken Sie die verschiedenen Arten von DNS-Einträgen, die in einer OVHcloud DNS-Zone verfügbar sind"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Ziel
@@ -175,6 +175,33 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 >> Weitere Informationen finden Sie bei Bedarf auf der Website der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Dieser Eintrag dient dazu, die E-Mail-Adresse der für den Domainnamen verantwortlichen Person anzugeben. Dieser Eintrag kann auch mit einem TXT-DNSEintrag kombiniert werden, um weitere Informationen bereitzustellen.
+>>
+>> Weitere Informationen finden Sie bei der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Dieser DNS-Eintrag kann mehrere Informationen zusammenfassen, um eine schnellere und effizientere Verbindung zu Ihrer Website zu ermöglichen. Er kann beispielsweise direkt dem Webbrowser mitteilen, dass die Website HTTP 2 oder HTTP 3 unterstützt, dass sie die Verwendung einer bestimmten IP-Adresse (IPv4 und/oder IPv6) priorisieren soll oder dass sie über einen bestimmten Zugangsport laufen soll. Dadurch kann der Webbrowser mehrere Informationen in einer einzigen Anfrage abrufen.
+>>
+>> Dieser Eintrag verfügt über **2** Modi:
+>>
+>> - **Alias-Modus**: Dieser Modus wird aktiviert, wenn Sie eine Priorität von 0 angeben. Im Gegensatz zu CNAME-DNSEinträgen ermöglicht er es, einen Domainnamen von seiner eigenen DNS-Zone (Apex) zu einem anderen Domainnamen oder Subdomain zu leiten.
+>> - **Service-Modus**: Dieser Modus wird aktiviert, wenn Sie eine Priorität ungleich 0 angeben. In diesem Modus können Sie die Parameter definieren, die Sie für Ihren Domainnamen anwenden möchten (Beispiele für Parameter: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, usw.). Im **Service-Modus** können Sie diese Parameter direkt für Ihren Domainnamen anwenden, selbst wenn dieser nicht als Alias für einen anderen Domainnamen verwendet wird.
+>>
+>> Weitere Informationen finden Sie bei der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Dieser Eintrag funktioniert wie der SVCB-DNSEintrag, unterscheidet sich jedoch davon, dass er spezifischer für den HTTP-Protokoll ist. Er kann mehrere Informationen zusammenfassen, um eine schnellere und effizientere Verbindung zu Ihrer Website zu ermöglichen. Er kann beispielsweise direkt dem Webbrowser mitteilen, dass die Website HTTP 2 oder HTTP 3 unterstützt, dass sie die Verwendung einer bestimmten IP-Adresse (IPv4 und/oder IPv6) priorisieren soll oder dass sie über einen bestimmten Zugangsport laufen soll. Dadurch kann der Webbrowser mehrere Informationen in einer einzigen Anfrage abrufen.
+>>
+>> Dieser Eintrag verfügt über **2** Modi:
+>>
+>> - **Alias-Modus**: Dieser Modus wird aktiviert, wenn Sie eine Priorität von 0 angeben. Im Gegensatz zu CNAME-DNSEinträgen ermöglicht er es, einen Domainnamen von seiner eigenen DNS-Zone (Apex) zu einem anderen Domainnamen oder Subdomain zu leiten.
+>> - **Service-Modus**: Dieser Modus wird aktiviert, wenn Sie eine Priorität ungleich 0 angeben. In diesem Modus können Sie die Parameter definieren, die Sie für Ihren Domainnamen anwenden möchten (Beispiele für Parameter: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, usw.). Im **Service-Modus** können Sie diese Parameter direkt für Ihren Domainnamen anwenden, selbst wenn dieser nicht als Alias für einen anderen Domainnamen verwendet wird.
+>>
+>> Weitere Informationen finden Sie bei der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre a solução Zimbra OVHcloud
 excerpt: "Encontre as questões relativas à migração para Zimbra para a oferta MX Plan da OVHcloud"
-updated: 2025-11-04
+updated: 2025-12-05
 ---
 
 <style>
@@ -198,8 +198,9 @@ Para rescindir a sua oferta na secção « Serviços » do seu espaço OVHcloud,
 |**Conteúdo da conta de e-mail**<br>(e-mails, pastas, contactos)|Migrado|✅|
 |**E-mails recebidos durante o processo de migração**|Entregues|✅|
 |**Resposta automática / Resposta automática**|Mantida|✅|
-|**Regra da caixa de entrada**|- As regras configuradas a partir do seu software de e-mail não serão alteradas.<br>- As regras configuradas a partir do webmail OWA serão migradas para o webmail Zimbra. Apenas uma percentagem muito reduzida de regras não poderá ser migrada devido à incompatibilidade. Estas serão enviadas como e-mail na conta de e-mail do utilizador, e poderão ser recriadas manualmente.<br>- *Regra incompatível*: Regra que utiliza dois tipos de condições, como E e OU, simultaneamente. Por exemplo, se a mensagem for recebida de (**john@mydomain.ovh** OU **mary@mydomain.ovh**) E o assumpto contiver « fatura », então mover para a pasta « importante »|⚠️|
+|**Regra da caixa de entrada**|- As regras configuradas a partir do seu software de e-mail não serão alteradas.<br>- As regras configuradas a partir do webmail OWA serão migradas para o webmail Zimbra. Apenas uma percentagem muito reduzida de regras não poderá ser migrada devido à incompatibilidade.<br>- *Regra incompatível*: Regra que utiliza dois tipos de condições, como "E" e "OU", simultaneamente. Por exemplo: se a mensagem for recebida de (**john@mydomain.ovh** OU **mary@mydomain.ovh**) E o assumpto contiver « fatura », então mover para a pasta « importante ».|⚠️|
 |**Assinatura pessoal**|- As assinaturas configuradas a partir do seu software de e-mail não serão alteradas.<br>- As assinaturas configuradas a partir do webmail OWA não serão migradas devido à formatação.|⚠️|
+|**Contactos externos**|Esta funcionalidade permite integrar um endereço de correio eletrónico externo à plataforma de correio eletrónico no seu livro de endereços global. Esta função não estará presente em Zimbra.|❌|
 |**Bloquear / Permitir**|Esta funcionalidade, que permite bloquear e-mails provenientes de um nome de domínio específico ou de um endereço de e-mail específico, não estará presente no Zimbra. Este comportamento pode ser facilmente recriado através de uma regra da caixa de entrada a partir de Zimbra.|❌|
 |**Rodapé**<br>(assinatura de domínio configurável através da Área de Cliente)|Esta funcionalidade não estará presente para a nova infraestrutura Zimbra. No entanto, é sempre possível configurar uma assinatura ao nível da conta de e-mail.|❌|
 |**Política de Segurança**|Esta funcionalidade da Área de Cliente, que permite alterar a política de gestão das palavras-passe, não estará presente numa primeira fase na solução Zimbra.<br>A política de segurança aplicada por predefinição nas palavras-passe requer um mínimo de 10 caracteres alfanuméricos, 1 caráter especial, 1 maiúscula.|❌|

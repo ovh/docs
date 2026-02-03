@@ -124,7 +124,7 @@ Wenn das Problem weiterhin besteht, wenden Sie sich bitte an unser Support-Team.
 
 > [!success]
 >
-> **Tipps und Tricks**
+> **Regionen**
 >
 > Sollten Sie Probleme bei der Verbindung mit Ihrem Kundencenter haben, können Sie auch versuchen, sich über eines der folgenden Gateways anzumelden:
 >

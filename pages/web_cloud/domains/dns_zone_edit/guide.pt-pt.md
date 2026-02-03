@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
-> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
-> [Aceda ao inquérito.](https://s.elq.fr/ovhext/8NwNKiG)
-
 ## Objetivo
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

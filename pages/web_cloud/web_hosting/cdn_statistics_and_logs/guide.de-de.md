@@ -99,7 +99,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> > [!primary]
 >> >
->> > Die CDN Logs sind am selben Tag, an dem sie erstellt wurden, nicht verfügbar, sodass Sie sich am nächsten Tag gedulden müssen, um sie einzusehen.
+>> > CDN Logs sind erst nach einem Tag Verzögerung verfügbar. Sie können also neu erstellte Logs nicht direkt einsehen.
 >> >
 >>
 >> ![OSL-CDN - Generierte Logs](/pages/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png){.thumbnail}

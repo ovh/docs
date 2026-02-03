@@ -1,5 +1,5 @@
 ---
-title: MySQL - Se connecter avec CLI (EN)
+title: Se connecter avec la CLI au service Public Cloud Databases pour MySQL (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the Command Line Interface (CLI)
 updated: 2022-03-08
 ---

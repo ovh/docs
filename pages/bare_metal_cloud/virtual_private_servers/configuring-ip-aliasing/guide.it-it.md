@@ -66,8 +66,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> **Step 1: disattiva la configurazione automatica della rete**
 >>
@@ -155,8 +155,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo systemctl restart networking
 >> ```
 >>
-> Debian 12, Ubuntu 20.04
->> **Debian 12, Ubuntu 20.04 e versioni successive**
+> **Debian 12+, Ubuntu 22.04**
+>> Debian 12, Ubuntu 22.04 e versioni successive
 >>
 >> Il file di configurazione degli indirizzi Additional IP si trova nel file `/etc/netplan/`. In questo esempio, si chiama `50-cloud-init.yaml`.
 >>
@@ -243,10 +243,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> sudo netplan apply
 >> ```
 >>
->> Ripeti questa procedura per ogni indirizzo Additional IP.
->>
-> AlmaLinux / Rocky Linux
->> **AlmaLinux (8/9), Rocky Linux (8/9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Il file di configurazione principale si trova nella cartella `/etc/sysconfig/network-scripts/`. In questo esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome effettivo del file nella cartella.
 >>
@@ -294,17 +292,17 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> **Step 3: riavvia l’interfaccia**
 >>
 >> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
+>> CentOS
+>>
+>> ```bash
 >> sudo systemctl restart network
 >> ```
 >>
->> Per AlmaLinux e Rocky Linux
->>
->> ```bash
->> sudo systemctl restart Network Manager
->> ```
->>
-> Fedora 42
->> **Fedora 42**
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora ora utilizza i file chiave. In precedenza NetworkManager memorizzava i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg è ora obsoleto. Per impostazione predefinita, NetworkManager non crea più nuovi profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
 >>
@@ -367,11 +365,11 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >> Riavvia l’interfaccia:
 >>
 >> ```bash
->> sudo systemctl restart Network Manager
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
 >> **Step 1: accedi alla sezione di gestione degli IP del WHM**
 >>
@@ -379,7 +377,7 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 >>
->> Step 2: aggiungi le informazioni degli Additional IP
+>> **Step 2: aggiungi le informazioni degli Additional IP**
 >>
 >> Inserisci il tuo indirizzo Additional IP nel campo "New IP or IP range to add" nel formato "xxx.xxx.xxx.xxx".
 >>
@@ -398,8 +396,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **Step 1: accedere alla gestione IP di Plesk**
 >>
@@ -425,8 +423,8 @@ Negli esempi riportati di seguito utilizzeremo l'editor di testo `nano`. Su alcu
 >>
 >> ![configurazione IP attuale](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> **Windows Server**
+>> Windows Server
 >>
 >> **Step 1: verifica la configurazione di rete**
 >>

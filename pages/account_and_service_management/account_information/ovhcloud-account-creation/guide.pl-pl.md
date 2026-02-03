@@ -1,13 +1,8 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2025-04-28
+updated: 2026-01-16
 ---
-
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/s9Kt5lG)
 
 ## Wprowadzenie
 
@@ -24,19 +19,24 @@ Konto może zostać utworzone przed lub podczas składania zamówienia na pierws
 
 ### Jak założyć konto OVHcloud?
 
-Aby utworzyć konto OVHcloud, wystarczy przejść na [tę stronę](/links/manager) i wypełnić formularz online.
+Aby utworzyć konto OVHcloud, przejdź do [this page](/links/manager) i kliknij `Utwórz konto`{.action}.
 
-![formularz tworzenia konta](images/account-creation.png){.thumbnail}
+![Załóż konto](images/account-creation-EN-01.png){.thumbnail}
+
+Wprowadź w Panelu klienta kraj rezydencji podatkowej, walutę i język do zarządzania usługami. Następnie kliknij przycisk `Potwierdź`{.action}.
+
+![Załóż konto](images/account-creation-EN-02.png){.thumbnail}
+
+Następnie wpisz adres e-mail i utwórz hasło dostępu do konta OVHcloud.
 
 |Informacje|Opis|
 |---|---|
-|Imię - Nazwisko|Wpisz **tutaj zwyczajowe** imię i nazwisko.|
-|Konto e-mail|Wpisz **prawidłowy adres e-mail, do którego aktualnie masz dostęp**.<br><br>Unikaj korzystania z konta e-mail powiązanego z domeną, którą zarządzasz w Panelu klienta. W przypadku awarii tej domeny nie otrzymasz już naszych powiadomień.|
+|Konto e-mail|Wpisz **prawidłowy adres e-mail, do którego aktualnie masz dostęp**.<br><br>Nie używaj adresu e-mail powiązanego z domeną, którą będziesz zarządzał z poziomu tego konta OVHcloud. W przypadku awarii tej domeny nie otrzymasz już naszych powiadomień.|
 |Hasło|Hasło musi być unikalne (utworzone i używane tylko dla Twojego konta OVHcloud) i wystarczająco złożone.<br><br>Aby utworzyć skuteczne hasło, zapoznaj się z [przewodnikiem dotyczącym zarządzania hasłem](/pages/account_and_service_management/account_information/manage-ovh-password#w-praktyce).|
 
 Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres e-mail. Ten kod pozwoli na potwierdzenie Twojego konta e-mail. Wprowadź go w polach przewidzianych do tego celu.
 
-![jednorazowy kod](images/code.png){.thumbnail}
+![jednorazowy kod](images/code-EN.png){.thumbnail}
 
 > [!primary]
 > Jeśli nie otrzymałeś e-maila zawierającego kod, sprawdź foldery "spam" / "niechciane wiadomości" Twojego konta e-mail.
@@ -47,8 +47,6 @@ Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres 
 >
 
 Po wpisaniu i zatwierdzeniu kodu uzupełnij formularz. W szczególności należy dokładnie zdefiniować **rodzaj konta** spośród proponowanych opcji.
-
-![formularz tworzenia konta](images/account-type.png){.thumbnail}
 
 Twoje konto zostało utworzone, po zalogowaniu się do strony głównej konta, zwanego "Dashboardem".
 

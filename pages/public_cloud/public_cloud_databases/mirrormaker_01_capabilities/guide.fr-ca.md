@@ -26,7 +26,7 @@ The Public Cloud Analytics offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not supported.
+Kafka MirrorMaker nodes have to be in the same region.
 
 ### Kafka versions
 

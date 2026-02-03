@@ -1,7 +1,7 @@
 ---
 title: "FAQ zu Domainnamen & DNS"
 excerpt: "Hier finden Sie Antworten auf die wichtigsten Fragen zu Domainnamen, DNS-Servern und DNS-Zonen"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ DNS-Einträge werden unter anderem verwendet, um:
 Es gibt zahlreiche DNS-Einträge. Jeder hat einen spezifischen Zweck bei der DNS-Auflösung. Bei OVHcloud werden sie in drei Kategorien unterteilt:
 
 - **Verweiseinträge**: `A`, `AAAA`, `NS`, `CNAME` und `DNAME`.
-- **Erweiterte Einträge**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` und `TLSA`.
+- **Erweiterte Einträge**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` und `HTTPS`.
 - **Mail-Einträge**: `MX`, `SPF`, `DKIM` und `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ An dieser Stelle sehen Sie alle DNS-Einträge, die Sie über den OVHcloud Konfig
 Mit diesem Assistenten können Sie folgende DNS-Eintrag-Typen hinzufügen:
 
 - **Verweiseinträge**: `A`, `AAAA`, `NS`, `CNAME` und `DNAME`.
-- **Erweiterte Einträge**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` und `TLSA`.
+- **Erweiterte Einträge**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` und `HTTPS`.
 - **E-Mail-Einträge**: `MX`, `SPF`, `DKIM` und `DMARC`.
 
 > [!primary]

@@ -1,53 +1,105 @@
 ---
-title: Configuração e reconstrução do software RAID
-excerpt: "Descubra como verificar o estado do RAID software do seu servidor e reconstruí-lo após uma substituição de disco"
-updated: 2023-08-21
+title: Gestão e reconstrução do RAID software nos servidores em modo de arranque legado (BIOS)
+excerpt: "Aprenda a gerir e reconstruir o RAID software após a substituição de um disco no seu servidor em modo de arranque legado (BIOS)"
+updated: 2025-12-15
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 
 ## Objetivo
 
-O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas concebidas para atenuar a perda de dados num servidor através da replicação dos dados em vários discos.
+O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas concebidas para mitigar a perda de dados num servidor replicando-os em vários discos.
 
-O nível de RAID predefinido nos servidores da OVHcloud é RAID 1, ou seja, o dobro do espaço ocupado pelos dados, reduzindo assim para metade o espaço de disco utilizável.
+O nível RAID predefinido para as instalações de servidores OVHcloud é o RAID 1, o que duplica o espaço ocupado pelos seus dados, reduzindo assim metade do espaço de disco utilizável.
 
-**Este manual explica-lhe como configurar a matriz RAID de um servidor em caso de ter de ser reconstruída por motivos de corrupção ou de avaria de disco.**
+**Este guia explica como gerir e reconstruir um RAID software em caso de substituição de um disco no seu servidor em modo de arranque legado (BIOS).**
+
+Antes de começar, note que este guia se concentra nos servidores dedicados que utilizam o modo de arranque legado (BIOS). Se o seu servidor utiliza o modo UEFI (placas-mãe mais recentes), consulte este guia [Gestão e reconstrução do RAID software nos servidores em modo de arranque UEFI](/pages/bare_metal_cloud/dedicated_servers/raid_soft_uefi).
+
+Para verificar se um servidor está a executar em modo BIOS ou em modo UEFI, execute o seguinte comando:
+
+```sh
+[user@server_ip ~]# [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
+```
 
 ## Requisitos
 
-- Dispor de um [servidor dedicado](/links/bare-metal/bare-metal) com uma configuração RAID por software.
-- Ter acesso ao servidor através de SSH enquanto administrador (sudo).
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) com uma configuração de RAID software.
+- Ter acesso ao seu servidor via SSH com privilégios de administrador (sudo).
+- Conhecimento de RAID e partições
 
 ## Instruções
 
-### Retirada do disco
+### Apresentação do conteúdo
 
-A verificação do estado atual do RAID pode ser efetuado através do seguinte comando:
+- [Informações básicas](#basicinformation)
+- [Simular uma falha de disco](#diskfailure)
+    - [Remover o disco defeituoso](#diskremove)
+- [Reconstrução do RAID](#raidrebuild)
+    - [Reconstrução do RAID em modo rescue](#rescuemode)
+    - [Adicionar o rótulo à partição SWAP (se aplicável)](#swap-partition)
+    - [Reconstrução do RAID em modo normal](#normalmode)
+
+
+<a name="basicinformation"></a>
+
+### Informações básicas
+
+Numa sessão de linha de comandos, introduza o seguinte código para determinar o estado atual do RAID.
 
 ```sh
-cat /proc/mdstat
+[user@server_ip ~]# cat /proc/mdstat
 
-Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md2 : active raid1 sda2[1] sdb2[0]
+Personalities: [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2: active raid1 nvme0n1p2[1] nvme0n1p20]
       931954688 blocks super 1.2 [2/2] [UU]
       bitmap: 2/7 pages [8KB], 65536KB chunk
 
-md4 : active raid1 sda4[0] sdb4[1]
+md4: active raid1 nvme0n1p4[0] nvme1n1p4[1]
       1020767232 blocks super 1.2 [2/2] [UU]
       bitmap: 0/8 pages [0KB], 65536KB chunk
       
 unused devices: <none>
 ```
 
-Este comando mostra as duas matrizes RAID que estão configuradas, sendo que “md4” é a maior partição. Uma partição é composta dois discos, chamados “sda4” e ”sdb4”. `[UU]` significa que todos os discos funcionam normalmente. Um “`_`” indicará um disco defeituoso.
+Este comando indica-nos que dois dispositivos RAID software estão atualmente configurados, sendo **md4** o maior. O dispositivo RAID **md4** é composto por duas partições, denominadas **nvme1n1p4** e **nvme0n1p4**.
 
-Embora este comando mostre os volumes RAID, este não indica o tamanho das próprias partições. Para obter esta informação, utilize o seguinte comando:
+O [UU] significa que todos os discos estão a funcionar normalmente. Um `_` indica um disco defeituoso.
+
+Se tiver um servidor com discos SATA, obterá os seguintes resultados:
 
 ```sh
-fdisk -l
+[user@server_ip ~]# cat /proc/mdstat
+
+Personalities: [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2: active raid1 sda2[1] sdb2[0]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
+
+md4: active raid1 sda4[0] sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+      
+unused devices: <none>
+```
+
+Embora este comando nos devolva os nossos volumes RAID, não nos indica o tamanho das próprias partições. Podemos encontrar esta informação com o seguinte comando:
+
+```sh
+[user@server_ip ~]# sudo fdisk -l
 
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Disk model: HGST HUS724020AL
@@ -89,73 +141,16 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-O comando `fdisk -l` permite-lhe também identificar o seu tipo de partição. Esta é uma informação importante para saber quando se trata de reconstruir o seu RAID em caso de falha de um disco.
+O comando `fdisk -l` permite-nos também identificar o tipo de partição. Esta é uma informação importante para reconstruir o seu RAID em caso de falha de um disco.
 
-Para as partições **GPT**, o comando voltará: `Disklabel type: gpt`.
+Para as partições **GPT**, a linha 6 mostrará: `Disklabel type: gpt`. Estas informações só são visíveis quando o servidor está em modo normal.
 
-```sh
-Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
-Disk model: HGST HUS724020AL
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-'Disklabel type: gpt'
-Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
-```
+Ainda com base nos resultados de `fdisk -l`, podemos ver que `/dev/md2` é composto por 888.8GB e `/dev/md4` contém 973.5GB.
 
-Para as partições **MBR**, o comando voltará: `Disklabel type: dos`.
+Alternativamente, o comando `lsblk` oferece uma visão diferente das partições:
 
 ```sh
-Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
-Disk model: QEMU HARDDISK
-Units: sectors of 1 * 512 = 512 bytes
-Sector size (logical/physical): 512 bytes / 512 bytes
-I/O size (minimum/optimal): 512 bytes / 512 bytes
-'Disklabel type: dos'             
-Disk identifier: 0x150f6797
-```
-
-Este comando mostra que `/dev/md2` é composto por 888,8 GB e `/dev/md4` contém 973,5 GB. Para mostrar a disposição do disco, execute o comando “mount”.
-
-```sh
-mount
-
-sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
-proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
-devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
-tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=3266556k,mode=755)
-/dev/md2 on / type ext4 (rw,relatime)
-securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
-tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
-tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
-tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
-cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
-cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
-pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
-bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
-cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
-cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
-cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
-cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
-cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
-cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
-cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
-cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
-cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
-cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
-debugfs on /sys/kernel/debug type debugfs (rw,relatime)
-hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
-mqueue on /dev/mqueue type mqueue (rw,relatime)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10340)
-/dev/md4 on /home type ext3 (rw,relatime)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
-```
-
-Alternativamente, a encomenda `lsblk` oferece uma visão diferente das partições:
-
-```sh
-lsblk
+[user@server_ip ~]# lsblk
 
 NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda       8:0    0   1.8T  0 disk
@@ -175,91 +170,152 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-Os discos estão montados por predefinição. Para retirar um disco, em primeiro lugar deve desmontar o disco e, a seguir, simular uma falha para o poder eliminar.
-De seguida, elimine `/dev/sda4` do RAID com o seguinte comando:
+Temos em conta os dispositivos, as partições e os seus pontos de montagem. A partir dos comandos e resultados acima, temos:
+
+- Dois arrays RAID: `/dev/md2` e `/dev/md4`.
+- Quatro partições fazem parte do RAID com os pontos de montagem: `/` e `/home`.
+
+<a name="diskfailure"></a>
+
+### Simular uma falha de disco
+
+Agora que dispomos de todas as informações necessárias, podemos simular uma falha de disco e continuar com os testes. Neste exemplo, vamos fazer falhar o disco `sda`.
+
+O meio preferido para isso é o ambiente em modo rescue da OVHcloud.
+
+Reinicie primeiro o servidor em modo rescue e faça login com as credenciais fornecidas.
+
+Para remover um disco do RAID, o primeiro passo é marcá-lo como **Failed** e remover as partições dos seus arrays RAID respetivos.
 
 ```sh
-umount /dev/md4
-```
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
 
-> [!warning]
-> Atenção: se estiver conectado como utilizador `root`, pode obter a seguinte mensagem quando estiver a tentar desmontar a partição (no nosso caso, em que a nossa partição md4 está montada em /home):
->
-> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
->
-> Neste caso, deve desligar-se enquanto utilizador root e ligar-se como utilizador local (no nosso caso, `debian`) e utilizar o seguinte comando:
->
-> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
->
-> Se não dispõe de um utilizador local, [deve criar um](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
-O resultado deverá ser este:
-
-```sh
-sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
-proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
-devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
-tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=3266556k,mode=755)
-/dev/md2 on / type ext4 (rw,relatime)
-securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
-tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
-tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
-tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
-cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
-cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
-pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
-bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
-cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
-cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
-cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
-cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
-cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
-cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
-cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
-cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
-cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
-cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
-debugfs on /sys/kernel/debug type debugfs (rw,relatime)
-hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
-mqueue on /dev/mqueue type mqueue (rw,relatime)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=10340)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
-```
-
-A entrada de `/dev/md4` já não está montada. No entanto, o RAID ainda está ativo. Assim, é necessário simular uma falha para retirar o disco, o que pode ser efetuado graças ao seguinte comando:
-
-```sh
-sudo mdadm --fail /dev/md4 /dev/sda4
-```
-
-Uma vez simulada a falha no RAID, pode eliminar a partição com o seguinte comando:
-
-```sh
-sudo mdadm --remove /dev/md4 /dev/sda4
-```
-
-Poderá verificar que a partição foi eliminada com o seguinte comando:
-
-```sh
-cat /proc/mdstat 
-
-Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md2 : active raid1 sda2[1] sdb2[0]
+Personalities: [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2: active raid1 sda2[1] sdb2[0]
       931954688 blocks super 1.2 [2/2] [UU]
-      bitmap: 4/7 pages [16KB], 65536KB chunk
+      bitmap: 2/7 pages [8KB], 65536KB chunk
 
-md4 : active raid1 sdb4[1]
-      1020767232 blocks super 1.2 [2/1] [_U]
+md4: active raid1 sda4[0] sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [UU]
       bitmap: 0/8 pages [0KB], 65536KB chunk
       
 unused devices: <none>
 ```
 
-O comando abaixo verifica que a partição foi eliminada:
+A partir da saída acima, sda é composto por duas partições em RAID que são **sda2** e **sda4**.
+
+<a name="diskremove"></a>
+
+#### Remover o disco defeituoso
+
+Começamos por marcar as partições **sda2** e **sda4** como **Failed**.
 
 ```sh
-mdadm --detail /dev/md4
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md2 --fail /dev/sda2
+# mdadm: set /dev/sda2 faulty in /dev/md2
+```
+
+```sh
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md4 --fail /dev/sda4
+# mdadm: set /dev/sda4 faulty in /dev/md4
+```
+
+Agora simulámos uma falha do RAID, quando executamos o comando `cat /proc/mdstat`, obtemos o seguinte resultado:
+
+```sh
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat 
+
+Personalities: [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2: active raid1 sda2[1](F) sdb2[0]
+      931954688 blocks super 1.2 [2/2] [_U]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
+
+md4: active raid1 sda4[0](F) sdb4[1]
+      1020767232 blocks super 1.2 [2/2] [_U]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+unused devices: <none>
+```
+
+Como podemos ver acima, o [F] ao lado das partições indica que o disco está defeituoso ou com falha.
+
+Em seguida, removemos estas partições dos arrays RAID.
+
+```sh
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/md2 --remove /dev/sda2
+# mdadm: hot removed /dev/sda2 from /dev/md2
+```
+
+```sh
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/md4 --remove /dev/sda4
+# mdadm: hot removed /dev/sda4 from /dev/md4
+```
+
+Para nos certificarmos de que obtemos um disco semelhante a um disco vazio, utilizamos o seguinte comando. Substitua **sda** pelos seus próprios valores:
+
+```sh
+shred -s10M -n1 /dev/sda1
+shred -s10M -n1 /dev/sda2
+shred -s10M -n1 /dev/sda3
+shred -s10M -n1 /dev/sda4
+shred -s10M -n1 /dev/sda
+```
+
+O disco aparece agora como um disco novo e vazio:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # lsblk 
+NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sda       8:0    0   1.8T  0 disk
+sdb       8:16   0   1.8T  0 disk
+├─sdb1    8:17   0     1M  0 part
+├─sdb2    8:18   0 888.9G  0 part
+│ └─md2   9:2    0 888.8G  0 raid1 /
+├─sdb3    8:19   0   512M  0 part  [SWAP]
+└─sdb4    8:20   0 973.6G  0 part
+  └─md4   9:4    0 973.5G  0 raid1 /home
+```
+
+Se executarmos o seguinte comando, vemos que o nosso disco foi corretamente «apagado»:
+
+```sh
+parted /dev/sda
+GNU Parted 3.5
+Using /dev/sda
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) p
+Error: /dev/sda: unrecognised disk label
+Model: HGST HUS724020AL (SATA)
+Disk /dev/sda: 1.8T
+Sector size (logical/physical): 512B/512B
+Partition Table: unknown
+Disk Flags:
+```
+
+O estado do nosso RAID deve agora ser semelhante a isto:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat 
+
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2 : active raid1 sdb2[0]
+      931954688 blocks super 1.2 [1/2] [_U]
+      bitmap: 2/7 pages [8KB], 65536KB chunk
+
+md4 : active raid1 sdb4[1]
+      1020767232 blocks super 1.2 [1/2] [_U]
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+unused devices: <none>
+```
+
+Os resultados acima mostram que agora apenas duas partições aparecem nas matrizes RAID. Conseguimos fazer com que o disco **sda** falhasse e agora podemos proceder à substituição do disco.
+
+Para obter mais informações sobre como preparar e solicitar a substituição de um disco, consulte este [guia](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
+
+
+O comando seguinte permite obter mais detalhes sobre a(s) matriz(es) RAID:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md4
 
 /dev/md4:
            Version : 1.2
@@ -291,56 +347,231 @@ Consistency Policy : bitmap
        1       8       20        1      active sync   /dev/sdb4
 ```
 
-### Reconstrução do RAID
+<a name="raidrebuild"></a>
 
-Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sdb” neste exemplo) para a nova (“sda”), com o seguinte comando:
+### Reconstruir o RAID
 
-**Para as partições GPT**
+> [!primary]
+> Este processo pode variar dependendo do sistema operativo instalado no seu servidor. Recomendamos que consulte a documentação oficial do seu sistema operativo para obter os comandos apropriados.
+>
+
+> [!warning]
+>
+> Para a maioria dos servidores em RAID de software, após a substituição de um disco, o servidor é capaz de iniciar em modo normal (no disco saudável) para reconstruir o RAID. No entanto, se o servidor não conseguir iniciar em modo normal, ele será reiniciado em modo de recuperação para prosseguir com a reconstrução do RAID.
+>
+
+<a name="normalmode"></a>
+
+#### Reconstruir o RAID no modo normal
+
+As etapas a seguir são realizadas no modo normal. No nosso exemplo, substituímos o disco **sda**.
+
+Depois de substituir o disco, precisamos copiar a tabela de partições do disco saudável (neste exemplo, sdb) para o novo (sda).
+
+> [!tabs]
+> **Para partições GPT**
+>>
+>> ```sh
+>> sudo sgdisk -R /dev/sdX /dev/sdX
+>> ```
+>>
+>> O comando deve ter o seguinte formato: `sgdisk -R /dev/novo disco /dev/disco saudável`.
+>>
+>> Depois de concluir esta operação, o próximo passo é atribuir um GUID aleatório ao novo disco para evitar conflitos com os GUIDs de outros discos:
+>>
+>> ```sh
+>> sudo sgdisk -G /dev/sdX
+>> ```
+>>
+>> Se a seguinte mensagem for exibida:
+>>
+>> ```console
+>> Warning: The kernel is still using the old partition table.
+>> The new table will be used at the next reboot or after you
+>> run partprobe(8) or kpartx(8)
+>> The operation has completed successfully.
+>> ```
+>>
+>> Pode simplesmente executar o comando `partprobe`. Se ainda não conseguir ver as partições recém-criadas (por exemplo, com `lsblk`), deve reiniciar o servidor antes de continuar.
+>>
+> **Para partições MBR**
+>>
+>> ```sh
+>> [user@server_ip ~]# sudo sfdisk -d /dev/sdX | sfdisk /dev/sdX
+>> ```
+>>
+>> O comando deve ter o seguinte formato: `sfdisk -d /dev/disco saudável | sfdisk /dev/novo disco`.
+>>
+
+Em seguida, adicionamos as partições ao RAID:
 
 ```sh
-sgdisk -R /dev/sda /dev/sdb 
+[user@server_ip ~]# sudo mdadm --add /dev/md2 /dev/sda2
+# mdadm: added /dev/sda2
+
+[user@server_ip ~]# sudo mdadm --add /dev/md4 /dev/sda4
+# mdadm: re-added /dev/sda4
 ```
 
-O comando deve ter o seguinte formato: `sgdisk -R /dev/newdisk /dev/healthydisk`.
-
-Uma vez efetuada esta operação, o passo seguinte consiste em tornar aleatório o GUID do novo disco, a fim de evitar qualquer conflito do GUID com os outros discos:
+Utilize o seguinte comando para monitorizar a reconstrução do RAID:
 
 ```sh
-sgdisk -G /dev/sda
-```
-
-**Para as partições MBR**
-
-Uma vez substituído o disco, copie a tabela de partição a partir de um disco são (“sdb” neste exemplo) para a nova (“sda”), com o seguinte comando:
-
-```sh
-sfdisk -d /dev/sdb | sfdisk /dev/sda 
-```
-
-O comando deve ter o seguinte formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
-
-Já pode reconstruir a matriz RAID. O seguinte extrato do código mostra como reconstruir a disposição da partição `/dev/md4` com a tabela de partição “sda” que acaba de copiar:
-
-```sh
-mdadm --add /dev/md4 /dev/sda4
-cat /proc/mdstat
+[user@server_ip ~]# cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
-md2 : active raid1 sda2[1] sdb2[0]
+md2 : active raid1 sda2[0] sdb2[1]
       931954688 blocks super 1.2 [2/2] [UU]
-      bitmap: 1/7 pages [4KB], 65536KB chunk
+      bitmap: 4/4 pages [16KB], 65536KB chunk
 
-md4 : active raid1 sda4[0] sdb4[1]
-      1020767232 blocks super 1.2 [2/2] [UU]
+md4 : active raid1 sda4[0](F) sdb4[1]
+      1020767232 blocks super 1.2 [2/1] [UU]
+      [============>........]  recovery = 64.8% (822969856/1020767232) finish=7.2min speed=401664K/sec
       bitmap: 0/8 pages [0KB], 65536KB chunk
-
 unused devices: <none>
 ```
 
-Verifique os detalhes do RAID com o seguinte comando:
+Por fim, adicionamos um rótulo e montamos a partição [SWAP] (se aplicável).
+
+Para adicionar um rótulo à partição SWAP:
 
 ```sh
-mdadm --detail /dev/md4
+[user@server_ip ~]# sudo mkswap /dev/sda4 -L swap-sda4
+```
+
+Em seguida, recupere os UUID das duas partições SWAP:
+
+```sh
+[user@server_ip ~]# sudo blkid -s UUID /dev/sda4
+/dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
+[user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+/dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
+```
+
+Substituímos o antigo UUID da partição swap (**sda4**) pelo novo em `/etc/fstab`.
+
+Exemplo:
+
+```sh
+[user@server_ip ~]# sudo nano etc/fstab
+
+UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
+LABEL=BIOS       /boot       vfat    defaults        0     1
+UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
+```
+
+De acordo com os resultados acima, o UUID antigo é `b7b5dd38-9b51-4282-8f2d-26c65e8d58ec` e deve ser substituído pelo novo `b3c9e03a-52f5-4683-81b6-cc10091fcd15`.
+
+Certifique-se de substituir o UUID correto.
+
+Em seguida, verificamos se tudo está montado corretamente usando o seguinte comando:
+
+```sh
+[user@server_ip ~]# sudo mount -av
+/                        : ignored
+/boot                    : successfully mounted
+/boot/efi                : successfully mounted
+swap                     : ignored
+swap                     : ignored
+```
+
+Execute o seguinte comando para ativar a partição SWAP:
+
+```sh
+[user@server_ip ~]# sudo swapon -av
+```
+
+Em seguida, reinicie o sistema usando o seguinte comando:
+
+```sh
+[user@server_ip ~]# sudo systemctl daemon-reload
+```
+
+A reconstrução do RAID está agora concluída.
+
+<a name="rescuemode"></a>
+
+/// details | **Reconstrução do RAID no modo rescue**
+
+Se o seu servidor não conseguir reiniciar no modo normal após a substituição do disco, ele será reiniciado no modo de recuperação pela nossa equipa do datacenter.
+
+Neste exemplo, substituímos o disco `sdb`.
+
+Depois de substituir o disco, devemos copiar a tabela de partições do disco saudável (neste exemplo, sda) para o novo (sdb).
+
+> [!tabs]
+> **Para as partições GPT**
+>>
+>> ```sh
+>> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -R /dev/sdX /dev/sdX
+>> ```
+>>
+>> O comando deve estar no seguinte formato: `sgdisk -R /dev/novo disco /dev/disco saudável`
+>>
+>> Exemplo:
+>>
+>> ```sh
+>> sudo sgdisk -R /dev/sdb /dev/sda
+>> ```
+>>
+>> Depois de realizar esta operação, o passo seguinte consiste em atribuir um GUID aleatório ao novo disco para evitar quaisquer conflitos com os GUID de outros discos:
+>>
+>> ```sh
+>> sudo sgdisk -G /dev/sdb
+>> ```
+>>
+>> Se aparecer a seguinte mensagem:
+>>
+>> ```console
+>> Warning: The kernel is still using the old partition table.
+>> The new table will be used at the next reboot or after you
+>> run partprobe(8) or kpartx(8)
+>> The operation has completed successfully.
+>> ```
+>>
+>> Pode simplesmente executar o comando `partprobe`.
+>>
+> **Para as partições MBR**
+>>
+>> ```sh
+>> sudo sfdisk -d /dev/sda | sfdisk /dev/sdb
+>> ```
+>>
+>> O comando deve estar no seguinte formato: `sfdisk -d /dev/disco saudável | sfdisk /dev/novo disco`
+>>
+
+Agora podemos reconstruir a matriz RAID. O seguinte código mostra como adicionar as novas partições (sdb2 e sdb4) na matriz RAID.
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md2 /dev/sdb2
+# mdadm: added /dev/sdb2
+
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md4 /dev/sdb4
+# mdadm: re-added /dev/sdb4
+```
+
+Utilize o comando `cat /proc/mdstat` para monitorizar a reconstrução do RAID:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
+
+Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
+md2 : active raid1 sda2[0] sdb2[1]
+      931954688 blocks super 1.2 [2/2] [UU]
+      bitmap: 4/4 pages [16KB], 65536KB chunk
+
+md4 : active raid1 sda4[0](F) sdb4[1]
+      1020767232 blocks super 1.2 [2/1] [UU]
+      [============>........]  recovery = 64.8% (822969856/1020767232) finish=7.2min speed=401664K/sec
+      bitmap: 0/8 pages [0KB], 65536KB chunk
+unused devices: <none>
+```
+
+Para mais detalhes sobre a(s) baia(s) RAID:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --detail /dev/md4
 
 /dev/md4:
         Version : 1.2
@@ -371,20 +602,128 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-O RAID foi reconstruído. Para montar a partição (`/dev/md4`, no exemplo), utilize o seguinte comando:
+<a name="swap-partition"></a>
+
+#### Adição do rótulo à partição SWAP (se aplicável)
+
+Depois de concluir a reconstrução do RAID, montamos a partição que contém a raiz do nosso sistema operativo em `/mnt`. No nosso exemplo, esta partição é `md4`.
 
 ```sh
-mount /dev/md4 /home
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
 ```
+
+Adicionamos o rótulo à nossa partição swap com o seguinte comando:
+
+```sh
+root@rescue12-customer-ca (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sda4 -L swap-sda4
+mkswap: /dev/sda4: warning: wiping old swap signature.
+Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
+LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
+```
+
+Em seguida, montamos os seguintes diretórios para garantir que todas as operações que realizamos no ambiente chroot funcionem corretamente:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
+mount --types proc /proc /mnt/proc
+mount --rbind /sys /mnt/sys
+mount --make-rslave /mnt/sys
+mount --rbind /dev /mnt/dev
+mount --make-rslave /mnt/dev
+mount --bind /run /mnt/run
+mount --make-slave /mnt/run
+```
+
+Agora, acedemos ao ambiente `chroot`:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
+```
+
+Recuperamos os UUID das duas partições SWAP:
+
+```sh
+root@rescue12-customer-eu:/# blkid -s UUID /dev/sda4
+root@rescue12-customer-eu:/# blkid -s UUID /dev/sdb4
+```
+
+Exemplo:
+
+```sh
+blkid /dev/sda4
+/dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
+blkid /dev/sdb4
+/dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
+```
+
+Em seguida, substituímos o antigo UUID da partição SWAP (**sdb4**) pelo novo em `/etc/fstab`:
+
+```sh
+root@rescue12-customer-eu:/# nano etc/fstab
+```
+
+Exemplo:
+
+```sh
+UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
+UUID=f925a033-0087-40ec-817e-44efab0351ac       /home   ext4    defaults       0       0
+UUID=b7b5dd38-9b51-4282-8f2d-26c65e8d58ec       swap    swap    defaults       0       0
+UUID=d6af33cf-fc15-4060-a43c-cb3b5537f58a       swap    swap    defaults       0       0
+```
+
+Certifique-se de substituir o UUID correto. No nosso exemplo acima, o UUID a substituir é `d6af33cf-fc15-4060-a43c-cb3b5537f58a` pelo novo `b3c9e03a-52f5-4683-81b6-cc10091fcd15`. Certifique-se de substituir o UUID correto.
+
+Em seguida, verificamos que tudo está corretamente montado:
+
+```sh
+root@rescue12-customer-eu:/# mount -av
+/boot                   : successfully mounted
+/boot/efi               : successfully mounted
+swap                    : ignored
+swap                    : ignored
+```
+
+Ative a partição swap com o seguinte comando:
+
+```sh
+root@rescue12-customer-eu:/# swapon -av
+
+swapon: /dev/sda4: found signature [pagesize=4096, signature=swap]
+swapon: /dev/sda4: pagesize=4096, swapsize=536870912, devsize=536870912
+swapon /dev/sda4
+swapon: /dev/sdb4: found signature [pagesize=4096, signature=swap]
+swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
+swapon /dev/sdb4
+```
+
+Saímos do ambiente `chroot` com exit e reiniciamos o sistema:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
+```
+
+Desmontamos todos os discos:
+
+```sh
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
+```
+///
+
 
 ## Quer saber mais?
 
-[Hot Swap – RAID por hardware (EN)](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
+[Remplacement à chaud - RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud e Armazenamento](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Substituir um disco a quente num servidor com RAID por software](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
+[Gestão do RAID físico](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-[RAID por hardware (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
+[Remplacement à chaud - RAID Matériel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referênciação, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se desejar beneficiar de assistência no uso e configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Se precisar de formação ou assistência técnica para a implementação das nossas soluções, contacte o seu contacto comercial ou clique [neste link](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto aos nossos especialistas da equipa Professional Services.
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

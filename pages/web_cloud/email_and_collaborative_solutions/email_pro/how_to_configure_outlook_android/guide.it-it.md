@@ -166,7 +166,7 @@ Per l’invio delle email, se hai necessità di inserire manualmente le impostaz
 
 - **Nome utente**: Inserisci l'indirizzo email **completo**
 - **Password**: Inserisci la password dell’indirizzo email
-- **Server (in entrata)**: pro?.mail.ovh.net
+- **Server (in uscita)**: pro?.mail.ovh.net
 - **Porta**: 587
 - **Tipo di sicurezza**: STARTTLS
 

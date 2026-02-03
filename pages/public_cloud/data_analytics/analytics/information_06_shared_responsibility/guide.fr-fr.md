@@ -1,12 +1,12 @@
 ---
 title: Analytics - Partage des responsabilités (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-updated: 2025-11-04
+updated: 2025-12-04
 ---
 
 Public Cloud Analytics allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-The RACI below details shared responsibilities between OVHcloud and the customer for Public Cloud Analytics services.
+The RACI below details shared responsibilities between OVHcloud and the customer for Public Cloud Analytics services.  
 This shared model can help relieve the customer’s operational burden.
 
 ## RACI definition
@@ -161,4 +161,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

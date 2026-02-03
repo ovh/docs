@@ -66,8 +66,8 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> **Etap 1: wyłącz automatyczną konfigurację sieci**
 >>
@@ -155,10 +155,10 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> sudo systemctl restart networking
 >> ```
 >>
-> Debian 12, Ubuntu 20.04 
->> **Debian 12, Ubuntu 20.04 i późniejsze wersje**
+> **Debian 12+, Ubuntu 22.04**
+>> Debian 12, Ubuntu 22.04 i późniejsze wersje
 >>
->> Plik konfiguracyjny adresów Additional IP znajduje się w pliku`/etc/netplan/`. W tym przykładzie nazywa się `50-cloud-init.yaml`.
+>> Plik konfiguracyjny adresów Additional IP znajduje się w pliku `/etc/netplan/`. W tym przykładzie nazywa się `50-cloud-init.yaml`.
 >>
 >> Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w celu zdefiniowania adresów Additional IP. W przypadku błędu można łatwo przywrócić modyfikacje.
 >>
@@ -243,10 +243,8 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> sudo netplan apply
 >> ```
 >>
->> Powtórz tę procedurę dla każdego adresu Additional IP.
->>
-> AlmaLinux / Rocky Linux
->> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Główny plik konfiguracyjny znajduje się w folderze `/etc/sysconfig/network-scripts/`. W tym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
 >>
@@ -296,17 +294,17 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> Zastosuj zmiany za pomocą polecenia:
 >>
 >> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
+>> CentOS
+>>
+>> ```bash
 >> sudo systemctl restart network
 >> ```
 >>
->> Dla AlmaLinux i Rocky Linux
->>
->> ```bash
->> sudo systemctl restart Network Manager
->> ```
->>
-> Fedora 42
->> **Fedora 42**
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora używa teraz kluczowych plików. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu: `/etc/sysconfig/network-scripts/`. Jednak format ifcfg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już nowych profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
 >>
@@ -369,11 +367,11 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> Uruchom ponownie interfejs:
 >>
 >> ```bash
->> systemctl restart Network Manager
+>> systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
 >> **Etap 1: dostęp do sekcji zarządzania adresami IP w usłudze WHM**
 >>
@@ -400,8 +398,8 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **Etap 1: dostęp do interfejsu zarządzania IP Plesk**
 >>
@@ -427,8 +425,8 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> ![current IP configuration](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> **Windows Server**
+>> Windows Server
 >>
 >> **Etap 1: sprawdź konfigurację sieci**
 >>

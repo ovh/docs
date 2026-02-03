@@ -154,8 +154,8 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> sudo systemctl restart networking
 >> ```
 >>
-> Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 and following**
+> **Debian 12+, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 and following
 >> 
 >> The configuration file for your Additional IP addresses is located in the folder `/etc/netplan/`. In this example it is called `50-cloud-init.yaml`. 
 >>
@@ -242,8 +242,8 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> sudo netplan apply
 >> ```
 >>
-> **AlmaLinux / Rocky Linux (8/9)**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 >> 
@@ -289,17 +289,17 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >> **Step 3: Restart the interface**
 >>
 >> ```bash
->> sudo systemctl restart network
->> ```
->>
->> For AlmaLinux and Rocky Linux
->>
->> ```bash
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Fedora 42**
->> Fedora 42
+>> CentOS
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 >>
@@ -466,7 +466,7 @@ In the examples below, we will use the `nano` text editor. With some operating s
 >>
 >> Once done, click on `Advanced`{.action}.
 >>
->> Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"
+>> **Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"**
 >>
 >> In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 >>

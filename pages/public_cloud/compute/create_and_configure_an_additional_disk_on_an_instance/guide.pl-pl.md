@@ -101,7 +101,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 >>
 >> > [!warning]
 >> >
->> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której chcesz go przypisać. Jeśli utworzysz ją w innym regionie, możesz ją usunąć i odtworzyć we właściwej lokalizacji lub możesz przenieść ją ponownie, postępując zgodnie z [tym przewodnikiem](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Uwaga: Wolumen musi być utworzony w tym samym regionie, co instancja, do której ma zostać przypisany. Jeśli utworzysz ją w innym regionie, możesz ją usunąć i odtworzyć w odpowiednim regionie.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}

@@ -1,12 +1,12 @@
 ---
 title: Analytics Concepts - Présentation de la sécurité (EN)
 excerpt: Analytics  security overview
-updated: 2025-11-04
+updated: 2025-12-04
 ---
 
 ## Objective
 
-In addition to [the responsibility model for Analytics services](/pages/public_cloud/data_analytics/analytics/information_06_shared_responsibility/), this security fact sheet aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their services.
+In addition to [the responsibility model for Analytics services](/pages/public_cloud/data_analytics/analytics/information_06_shared_responsibility), this security fact sheet aims at describing security features and functions associated to the service. It describes also best practices that customers can adopt to secure their services.
 
 ## 1.Certifications
 
@@ -22,7 +22,7 @@ In addition to [the responsibility model for Analytics services](/pages/public_c
 
 ## 2.Best pratices to be deployed on the service
 
-### 2.1 Recommandations once the service is delivered
+### 2.1 Recommendations once the service is delivered
 
 Once you have followed [these first steps to subscribe your service](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) and reset the default password communicated to access to the service, you must filter connections by using iptables.<br>
 You can also activate a private connection by using the vRack option.

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-12-02
+updated: 2026-01-14
 ---
 
 ## Objectif
@@ -24,6 +24,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec) | À venir |
 | **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf) | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
 | **Backint for SAP HANA™** | Compatible - Certifié | Officiellement pris en charge, détails sur le [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389) | [Guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/) |
+| **Nutanix Prism Central Backup Restore™** | Compatible - Certifié | Officiellement pris en charge, détails sur la [documentation Prism Central Backup Restore HCL](https://portal.nutanix.com/page/compatibility-interoperability-matrix/software?partnerName=OVHcloud&solutionType=all&componentVersion=all&hypervisor=all&validationType=all) | À venir |
 
 ### Protection des données - Sauvegarde Kubernetes
 

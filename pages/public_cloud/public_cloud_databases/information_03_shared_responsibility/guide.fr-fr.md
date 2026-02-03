@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Partage des responsabilités (EN)
+title: Partage des responsabilités des bases de données Public Cloud (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2025-11-04
 ---

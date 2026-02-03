@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Activer la mémoire de conversation dans votre chatbot avec LangChain (EN)
 excerpt: Intégrez la mémoire de conversation à votre chatbot en utilisant AI Endpoints et LangChain
-updated: 2025-07-31
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -54,7 +54,7 @@ LangChain provides several memory modules that can be used within a **Conversati
 In order to use **AI Endpoints APIs** easily, create a `.env` file to store environment variables:
 
 ```bash
-LLM_AI_ENDPOINT=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+LLM_AI_ENDPOINT=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
 
@@ -97,7 +97,7 @@ After these lines, load and access the environnement variables of your `.env` fi
 load_dotenv()
 
 ai_endpoint_token = os.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
-ai_endpoint_mistral7b = os.getenv("LLM_AI_ENDPOINT")
+ai_endpoint_url = os.getenv("LLM_AI_ENDPOINT")
 ```
 
 💡 You are now ready to test your LLM without conversational memory!
@@ -111,7 +111,7 @@ Test the model in a basic way and see what happens with the context:
 llm = ChatOpenAI(
         model_name="Mistral-7B-Instruct-v0.3", 
         openai_api_key=ai_endpoint_token,
-        openai_api_base=ai_endpoint_mistral7b, 
+        openai_api_base=ai_endpoint_url, 
         max_tokens=512,
         temperature=0.0
 )
@@ -179,7 +179,7 @@ which gives the following code:
 llm = ChatOpenAI(
         model_name="Mistral-7B-Instruct-v0.3", 
         openai_api_key=ai_endpoint_token,
-        openai_api_base=ai_endpoint_mistral7b,
+        openai_api_base=ai_endpoint_url,
         max_tokens=512,
         temperature=0.0
 )

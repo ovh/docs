@@ -150,7 +150,7 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Debian 12, Ubuntu 22.04+**
+> **Debian 12+, Ubuntu 22.04+**
 >> Debian 12, Ubuntu 22.04 und höher
 >>
 >> Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie `50-cloud-init.yaml`. 
@@ -238,10 +238,8 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> sudo netplan apply
 >> ```
 >>
->> Wiederholen Sie diesen Vorgang für jede Additional IP-Adresse.
->>
 > **AlmaLinux / Rocky Linux**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Die Hauptkonfigurationsdatei befindet sich im Ordner `/etc/sysconfig/network-scripts/`. In diesem Beispiel ist es `ifcfg-eth0`. Überprüfen Sie den Dateinamen in Ihrem Ordner, bevor Sie Änderungen vornehmen.
 >>
@@ -291,17 +289,17 @@ In den folgenden Beispielen verwenden wir den Texteditor `nano`. Auf einigen Bet
 >> Wenden Sie die Änderungen mit folgendem Befehl an:
 >>
 >> ```bash
->> sudo systemctl restart network
->> ```
->>
->> AlmaLinux und Rocky Linux
->>
->> ```bash
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Fedora 42**
->> Fedora 42
+>> CentOS
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora verwendet Schlüsseldateien. NetworkManager hat zuvor Netzwerkprofile im Format ifcfg in diesem Verzeichnis gespeichert: `/etc/sysconfig/network-scripts/`. Da ifcfg nicht mehr unterstützt wird, erstellt NetworkManager keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
 >>

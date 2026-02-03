@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connectez-vous avec MySQL Workbench (EN)
+title: Se connecter depuis Workbench au service Public Cloud Databases pour MySQL (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using MySQL Workbench
 updated: 2022-03-08
 ---

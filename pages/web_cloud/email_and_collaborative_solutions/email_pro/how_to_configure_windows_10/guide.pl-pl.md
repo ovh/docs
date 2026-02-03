@@ -1,7 +1,7 @@
 ---
 title: "E-Mail Pro - Konfiguracja konta E-Mail Pro w nowej aplikacji Outlook na Windows"
 excerpt: "Dowiedz się, jak skonfigurować swoją adres E-Mail Pro w nowej aplikacji Outlook na Windows"
-updated: 2025-09-02
+updated: 2026-01-09
 ---
 
 <style>
@@ -19,13 +19,16 @@ details[open]>summary::before {
 .w-600 {
   max-width:600px !important;
 }
+.h-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Wprowadzenie
 
 Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konfigurowane na kompatybilnym kliencie pocztowym. Umożliwia to wysyłanie i odbieranie wiadomości z wybranej aplikacji.
 
-**Nowa aplikacja Outlook** zastępuje od dnia 1 stycznia 2025 roku aplikację **Poczta** w systemie Windows. Więcej informacji na ten temat można znaleźć na oficjalnej stronie Microsoft "[Outlook dla systemu Windows: przyszłość poczty, kalendarza i Osoby na Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+**Nowa aplikacja Outlook** zastępuje od dnia 1 stycznia 2025 roku aplikację **Poczta** w systemie Windows. Więcej informacji na ten temat można znaleźć na oficjalnej stronie Microsoft "[Outlook dla systemu Windows: przyszłość poczty, kalendarza i Osoby na Windows 11](https://support.microsoft.com/pl-pl/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
 **Dowiedz się, jak skonfigurować swoją adresę E-Mail Pro w nowej aplikacji Outlook na Windows.**
 
@@ -34,10 +37,6 @@ Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konf
 - Posiadanie adresu [E-Mail Pro](/links/web/email-pro).
 - Posiadanie [nowej aplikacji Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) na system Windows.
 - Posiadanie danych dostępowych do konfigurowanego adresu e-mail.
-
-> [!warning]
->
-> Ta dokumentacja dotyczy wyłącznie **nowej aplikacji Outlook** i nie obejmuje "[klasycznego Outlook](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", dostępnego w pakiecie Microsoft 365 lub wcześniej zainstalowanego na komputerze.
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
@@ -48,6 +47,16 @@ Zapewniamy tę dokumentację, aby ułatwić Ci wykonywanie typowych zadań. W pr
 ///
 
 ## W praktyce
+
+> [!warning]
+>
+> Ta dokumentacja dotyczy wyłącznie **nowego Outlooka** i nie dotyczy "[klasycznego Outlooka](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", dostępnego w pakiecie Microsoft 365 lub wcześniej zainstalowanego na Twoim komputerze.
+>
+> Aby odróżnić obie wersje Outlooka, gdy są zainstalowane, wpisz "Outlook" w pasku wyszukiwania Windows. Możesz wtedy zauważyć różnicę, jak poniżej. Nowy Outlook nie ma specjalnej oznaki.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Aby skonfigurować adres e-mail Pro w klasycznym Outlooku, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Skonfigurowanie konta e-mail w klasycznym Outlooku dla Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### Dodanie konta <a name="add-account"></a>
 
@@ -61,6 +70,8 @@ Zapewniamy tę dokumentację, aby ułatwić Ci wykonywanie typowych zadań. W pr
 > 1. Wybierz odpowiednią platformę.
 > 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
+
+Aby skonfigurować adres e-mail, wykonaj poniższe kroki, klikając odpowiednie karty poniżej.
 
 > [!tabs]
 > **Krok 1**

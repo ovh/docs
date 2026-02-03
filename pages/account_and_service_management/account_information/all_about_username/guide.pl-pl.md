@@ -4,11 +4,6 @@ excerpt: 'Dowiedz się, jak zoptymalizować bezpieczeństwo konta OVHcloud, zarz
 updated: 2025-05-22
 ---
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Wprowadzenie
 
 Zarządzanie usługami i danymi odbywa się głównie w Panelu klienta OVHcloud.

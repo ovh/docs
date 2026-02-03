@@ -4,11 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Dienstleistungen und deren Verlängerun
 updated: 2025-01-28
 ---
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/FFBTC2m)
-
 ## Ziel
 
 Das Menü **Meine Angebote und Dienste** in Ihrem OVHcloud Kundencenter ermöglicht es Ihnen, den Status Ihrer Dienstleistungen zu überprüfen, diese zu verlängern, den Verlängerungstyp zu ändern, Rechnungen zu begleichen oder deren Zahlung im Voraus zu planen.

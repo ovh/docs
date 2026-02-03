@@ -1,7 +1,7 @@
 ---
-title: Changing a Windows Server product key
+title: 'How to change a Windows Server product key'
 excerpt: Find out how to modify your Windows Server product key
-updated: 2022-07-07
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ When you install a Windows Server operating system, the product key – also kno
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/os/server-windows/) with Windows installed in your OVHcloud account
+- An OVHcloud [dedicated server](/links/bare-metal/os) running Windows Server, or a virtual machine running Windows Server on a [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses) service.
 - A Windows SPLA licence in your OVHcloud account
 - Administrative access to your server via remote desktop connection
 
@@ -20,9 +20,7 @@ When you install a Windows Server operating system, the product key – also kno
 
 ### Uninstall the default product key
 
-When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box (Windows key + `R`{.action}):
-
-![Run dialogue box activation](images/executer.png){.thumbnail}
+When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box by pressing the Windows key on your keyboard + `R`{.action}.
 
 ![Run](images/executer2.png){.thumbnail}
 
@@ -47,7 +45,7 @@ You can find the product keys for supported versions of Windows Server in the ta
 > Core versions use the same product keys as non-core versions.
 > 
 
-### Go to kms.ovh.net
+### Associate your product key
 
 To associate your key with our automated activation system, enter the command below in the `Run`{.action} dialogue box:
 

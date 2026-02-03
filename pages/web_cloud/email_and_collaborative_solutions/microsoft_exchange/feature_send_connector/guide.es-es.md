@@ -102,7 +102,7 @@ En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, rellene los campos c
 - `smartHostAuthMechanism`: mecanismo de autenticación utilizado para el conector de envío.
 - `user`: usuario asociado al conector de envío.
 
-> [!principal]
+> [!primary]
 >
 > El botón `Only required fields` (Sólo campos obligatorios) situado debajo del cuadro de entrada muestra sólo los campos obligatorios.
 

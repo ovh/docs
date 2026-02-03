@@ -35,7 +35,7 @@ Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [págin
 >
 > Para se familiarizar com a interface **Roundcube**, consulte o nosso guia [Webmail: Guia de utilização do Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em ‘Guardar‘ {.action} para continuar.
+Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em `Guardar`{.action} para continuar.
 
 > [!primary]
 >

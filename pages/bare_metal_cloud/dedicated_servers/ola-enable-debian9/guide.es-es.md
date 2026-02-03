@@ -1,14 +1,14 @@
 ---
 title: 'Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a 11'
 excerpt: 'Activar el servicio OVHcloud Link Aggregation en un servidor Debian 9 a 11'
-updated: 2024-11-26
+updated: 2026-01-09
 ---
 
 ## Objetivo
 
 La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red. En solo unos clics, es posible añadir sus tarjetas de red y hacer que sus enlaces de red sean redundantes. De este modo, si un enlace se cae, el tráfico se redirige automáticamente hacia otro enlace disponible.
 
-**Esta guía explica cómo conectar sus NIC (Network Interface Controller) para utilizarlos con el servicio OLA en Debian 9 a 11.**
+**Descubra cómo agrupar sus NIC (controladores de interfaz de red) para utilizarlos con el servicio OLA en Debian (versiones 9 a 11).**
 
 ## Requisitos
 
@@ -22,6 +22,13 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la 
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> Esta guía proporciona instrucciones para configurar la agregación de interfaces de red específicamente con `ifupdown`, cuyo archivo de configuración es `/etc/network/interfaces`. También es aplicable al modo de rescate.
+>
+> Si la configuración de red de su sistema utiliza `Netplan`, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## Procedimiento
@@ -58,6 +65,7 @@ Se abrirá un archivo de texto vacío. Para configurar la interfaz de enlace, in
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> Para el parámetro `hwaddress`, recomendamos utilizar la menor de las dos direcciones MAC de sus NIC, ya que pertenece a la interfaz de respaldo (fallback) LACP.
+>
 
 > [!primary]
 >
@@ -85,6 +98,6 @@ Este reinicio puede tardar unos segundos ya que se está creando la interfaz de 
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

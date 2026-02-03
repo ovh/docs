@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to fetch service metrics with Prometheus
+title: Récupérez les métriques de service avec Prometheus pour les bases de données Public Cloud (EN)
 excerpt: Find out how to setup a Prometheus exporter for your Public Cloud databases service
 updated: 2024-12-11
 ---
@@ -87,7 +87,6 @@ scrape_configs:
 Public Cloud Databases offer service metrics via Prometheus for the following engines:
 
 - Valkey
-- Cassandra
 - MongoDB
 - MySQL
 - PostgreSQL

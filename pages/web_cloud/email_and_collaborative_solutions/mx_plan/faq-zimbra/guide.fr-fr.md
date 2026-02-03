@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la solution Zimbra OVHcloud
 excerpt: "Retrouvez les questions concernant la migration vers Zimbra pour l'offre MX Plan OVHcloud"
-updated: 2025-11-05
+updated: 2025-12-05
 ---
 
 <style>
@@ -198,8 +198,9 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 |**Contenu du compte e-mail**<br>(e-mails, dossiers, contacts)|Migré|✅|
 |**E-mails reçus durant le processus de migration**|Délivrés|✅|
 |**Réponse automatique / Répondeur**|Maintenue|✅|
-|**Règle de boites de réception**|- Les règles configurées depuis votre logiciel de messagerie seront inchangées.<br>- Les règles configurées depuis le webmail OWA seront quant à elles migrées vers le webmail Zimbra. Seule une très faible proportion de règles ne pourront pas être migrées pour cause d'incompatibilité. Celles-ci seront envoyées sous la forme d'un e-mail sur le compte e-mail de l'utilisateur et pourront être recréées manuellement.<br>- *Règle incompatible* : Règle utilisant deux types de conditions comme ET et OU simultanément. Par exemple, si le message est reçu de (**john@mydomain.ovh** OU **mary@mydomain.ovh**) ET le sujet contient « facture », alors déplacer dans le dossier « Important »|⚠️|
+|**Règles de boite de réception**|- Les règles configurées depuis votre logiciel de messagerie seront inchangées.<br>- Les règles configurées depuis le webmail OWA seront quant à elles migrées vers le webmail Zimbra. Seule une très faible proportion de règles ne pourront pas être migrées pour cause d'incompatibilité.<br>- *Règle incompatible* : Règle utilisant deux types de conditions comme « ET » et « OU » simultanément. Par exemple : si le message est reçu de (**john@mydomain.ovh** OU **mary@mydomain.ovh**) ET le sujet contient « facture », alors déplacer dans le dossier « Important ».|⚠️|
 |**Signature personnelle**|- Les signatures configurées depuis votre logiciel de messagerie seront inchangées.<br>- Les signatures configurées depuis le webmail OWA ne seront pas migrées en raison du formatage.|⚠️|
+|**Contacts externes**|Cette fonctionnalité permet d'intégrer une adresse e-mail externe à la plateforme e-mail dans son carnet d'adresses global. Cette fonction ne sera pas présente sur Zimbra.|❌|
 |**Bloquer / Autoriser**|Cette fonctionnalité, permettant de bloquer des e-mails venant d'un nom de domaine particulier ou d'une adresse e-mail spécifique, ne sera pas présente sur Zimbra. Ce comportement peut cependant être facilement recréé via une règle de boite de réception depuis Zimbra.|❌|
 |**Pied de page**<br>(signature de nom de domaine configurable via l'espace client)|Cette fonctionnalité ne sera pas présente vers la nouvelle infrastructure Zimbra. Il est cependant toujours possible de configurer une signature au niveau du compte e-mail.|❌|
 |**Politique de Sécurité**|Cette fonctionnalité de l'espace client permettant de changer la politique de gestion des mots de passe ne sera pas présente, dans un premier temps, sur la solution Zimbra.<br> La politique de sécurité appliquée par défaut sur les mots de passe requiert un minimum de 10 caractères alphanumeriques, 1 caractère spécial, 1 majuscule.|❌|

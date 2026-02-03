@@ -39,9 +39,9 @@ Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainname
 
 ### 1 - Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
 
-Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.net/en/run-test) abrufen.
+Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.net/en) abrufen.
 
-Gehen Sie hierzu auf [https://zonemaster.net](https://zonemaster.net/en/run-test), geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
+Gehen Sie hierzu auf [https://zonemaster.net](https://zonemaster.net/en), geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
 
 Klicken Sie in den Optionen auf `Fetch NS from parent zone`{.action}.
 

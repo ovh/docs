@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2025-10-27
+updated: 2025-12-15
 ---
 
 ## Objetivo
@@ -93,7 +93,7 @@ Certas versões de PHP só funcionam com certos ambientes de execução. Encontr
 |---|---| 
 |5.4, 5.5, 5.6 e 7.0|Legacy, Stable|
 |7.1, 7.2 e 7.3|Stable|
-|7.4, 8.0, 8.1,8.2 e 8.3|stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 e 8.5|stable64|
 
 > [!primary]
 >

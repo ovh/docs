@@ -1,7 +1,7 @@
 ---
 title: "Saber tudo sobre os registos DNS"
 excerpt: "Descubra os diferentes tipos de registos DNS disponíveis numa zona DNS da OVHcloud"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -175,6 +175,33 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 >> Se necessário, pode consultar mais pormenores no website da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF***)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Este registo permite indicar o endereço de correio electrónico da pessoa responsável pelo nome de domínio. Este registo pode também ser combinado com um registo DNS do tipo TXT para fornecer informações adicionais.
+>>
+>> Se necessário, encontre mais detalhes no site da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Este registo DNS pode reunir várias informações para permitir uma ligação mais rápida e eficaz ao seu site web. Permite também, por exemplo, indicar diretamente ao navegador que o site web é compatível com HTTP 2 ou HTTP 3, que deve priorizar a utilização de um endereço IP (IPv4 e/ou IPv6) mencionado em parâmetro ou ainda passar por uma porta de acesso específica. Isto permite ao navegador obter várias informações numa única consulta.
+>>
+>> Este registo dispõe de **2** modos:
+>>
+>> - **Modo Alias**: este modo ativa-se quando especifica uma prioridade igual a 0. Ao contrário dos registos DNS do tipo CNAME, permite redirecionar um nome de domínio a partir da sua própria zona DNS (apex) para outro nome de domínio ou subdomínio.
+>> - **Modo Serviço**: este modo ativa-se quando especifica uma prioridade diferente de 0. É neste modo que poderá definir os parâmetros que deseja aplicar ao seu nome de domínio (exemplos de parâmetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). Em modo **Serviço**, pode aplicar estes parâmetros diretamente ao seu nome de domínio, mesmo que este último não seja utilizado como alias de outro nome de domínio.
+>>
+>> Se necessário, encontre mais detalhes no site da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Este registo funciona como o registo DNS do tipo SVCB, mas, ao contrário deste, é mais específico ao protocolo HTTP. Pode reunir várias informações para permitir uma ligação mais rápida e eficaz ao seu site web. Permite também, por exemplo, indicar diretamente ao navegador que o site web é compatível com HTTP 2 ou HTTP 3, que deve priorizar a utilização de um endereço IP (IPv4 e/ou IPv6) mencionado em parâmetro ou ainda passar por uma porta de acesso específica. Isto permite ao navegador obter várias informações numa única consulta.
+>>
+>> Este registo dispõe de **2** modos:
+>>
+>> - **Modo Alias**: este modo ativa-se quando especifica uma prioridade igual a 0. Ao contrário dos registos DNS do tipo CNAME, permite redirecionar um nome de domínio a partir da sua própria zona DNS (apex) para outro nome de domínio ou subdomínio.
+>> - **Modo Serviço**: este modo ativa-se quando especifica uma prioridade diferente de 0. É neste modo que poderá definir os parâmetros que deseja aplicar ao seu nome de domínio (exemplos de parâmetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). Em modo **Serviço**, pode aplicar estes parâmetros diretamente ao seu nome de domínio, mesmo que este último não seja utilizado como alias de outro nome de domínio.
+>>
+>> Se necessário, encontre mais detalhes no site da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Casos particulares de utilização: a utilização dos registos CNAME <a name="cnameusecase"></a>
 

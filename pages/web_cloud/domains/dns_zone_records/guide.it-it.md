@@ -1,7 +1,7 @@
 ---
 title: "Scopri tutto sui record DNS"
 excerpt: "Questa guida ti mostra i diversi tipi di record DNS disponibili in una zona DNS di OVHcloud"
-updated: 2024-07-17
+updated: 2025-12-19
 ---
 
 ## Obiettivo
@@ -25,7 +25,7 @@ Questa guida ti mostra i diversi tipi di record DNS disponibili in una zona DNS 
 
 ### I record DNS
 
-**Modificare [una zona DNS](/pages/web_cloud/domains/dns_zone_edit) è un’operazione delicata** : se non viene eseguita correttamente, potrebbe risultare impossibile raggiungere il sito o ricevere nuovi messaggi nella casella di posta.
+**Modificare [una zona DNS](/pages/web_cloud/domains/dns_zone_edit) è un’operazione delicata**: se non viene eseguita correttamente, potrebbe risultare impossibile raggiungere il sito o ricevere nuovi messaggi nella casella di posta.
 
 Di seguito sono elencati gli obiettivi e le specifiche di ogni record. Questa guida ti mostra come modificare al meglio i tuoi servizi DNS.
 
@@ -173,8 +173,35 @@ Selezionare il record desiderato facendo clic su ognuna delle schede seguenti.
 >>
 >> Il protocollo DANE permette a un cliente (browser Internet, client di posta, client FTP, client SSH, ecc.) di consultare il record TLSA. In questo modo, si assicura che un certificato SSL/TLS utilizzato per un dominio sia effettivamente quello che certifica lo stesso dominio.
 >>
->> Se necessario, consulta i dettagli sul sito dell' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
+>> Se necessario, consulta i dettagli sul sito dell'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Questo record permette di indicare l'indirizzo e-mail della persona responsabile del nome di dominio. Questo record può anche essere combinato con un record DNS di tipo TXT per fornire informazioni aggiuntive.
+>>
+>> Se necessario, trova ulteriori dettagli sul sito dell'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Questo record DNS può raggruppare diverse informazioni per permettere una connessione più rapida ed efficiente al tuo sito web. Permette anche, ad esempio, di indicare direttamente al browser che il sito web è compatibile con HTTP 2 o HTTP 3, che deve dare la priorità all'utilizzo di un indirizzo IP (IPv4 e/o IPv6) menzionato come parametro o ancora di passare attraverso una porta specifica. Questo permette quindi al browser di recuperare diverse informazioni in una sola richiesta.
+>>
+>> Questo record dispone di **2** modi:
+>>
+>> - **Modalità Alias**: questa modalità si attiva quando specifichi una priorità uguale a 0. A differenza dei record DNS di tipo CNAME, permette di reindirizzare un nome di dominio dalla propria zona DNS (apex) verso un altro nome di dominio o sottodominio.
+>> - **Modalità Servizio**: questa modalità si attiva quando specifichi una priorità diversa da 0. È in questa modalità che potrai definire i parametri che desideri applicare al tuo nome di dominio (esempi di parametri: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, ecc.). In modalità **Servizio**, puoi applicare direttamente questi parametri al tuo nome di dominio, anche se quest'ultimo non deve essere utilizzato come alias di un altro nome di dominio.
+>>
+>> Se necessario, trova ulteriori dettagli sul sito dell'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Questo record funziona come il record DNS di tipo SVCB, ma, a differenza di quest'ultimo, è più specifico del protocollo HTTP. Può raggruppare diverse informazioni per permettere una connessione più rapida ed efficiente al tuo sito web. Permette anche, ad esempio, di indicare direttamente al browser che il sito web è compatibile con HTTP 2 o HTTP 3, che deve dare la priorità all'utilizzo di un indirizzo IP (IPv4 e/o IPv6) menzionato come parametro o ancora di passare attraverso una porta specifica. Questo permette quindi al browser di recuperare diverse informazioni in una sola richiesta.
+>>
+>> Questo record dispone di **2** modi:
+>>
+>> - **Modalità Alias**: questa modalità si attiva quando specifichi una priorità uguale a 0. A differenza dei record DNS di tipo CNAME, permette di reindirizzare un nome di dominio dalla propria zona DNS (apex) verso un altro nome di dominio o sottodominio.
+>> - **Modalità Servizio**: questa modalità si attiva quando specifichi una priorità diversa da 0. È in questa modalità che potrai definire i parametri che desideri applicare al tuo nome di dominio (esempi di parametri: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, ecc.). In modalità **Servizio**, puoi applicare direttamente questi parametri al tuo nome di dominio, anche se quest'ultimo non deve essere utilizzato come alias di un altro nome di dominio.
+>>
+>> Se necessario, trova ulteriori dettagli sul sito dell'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Casi d'uso particolari: l'utilizzo dei record CNAME <a name="cnameusecase"></a>
 

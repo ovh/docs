@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
-> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
-> [Accédez à l'enquête.](https://s.elq.fr/ovhext/EX64dmm)
-
 ## Objectif
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

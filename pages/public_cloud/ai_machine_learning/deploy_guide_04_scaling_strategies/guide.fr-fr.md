@@ -1,7 +1,7 @@
 ---
 title: "AI Deploy - Stratégies de mise à l'échelle (EN)"
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy and learn how to use them
-updated: 2025-10-08
+updated: 2025-12-17
 ---
 
 > [!primary]
@@ -19,7 +19,7 @@ This guide provides a comprehensive understanding of the different scaling strat
 
 ## Scaling principles
 
-When creating an application via the [OVHcloud Control Panel*** (UI) or the `ovhai` CLI, you can choose one of two scaling strategies:
+When creating an application via the `OVHcloud Control Panel (UI)` or the `ovhai` CLI, you can choose one of two scaling strategies:
 
 - **[Static Scaling](#static-scaling)**: Fixed number of running replicas.
 - **[Autoscaling](#autoscaling)**: Dynamic replicas based on usage metrics (CPU/RAM or custom metrics).
@@ -114,60 +114,110 @@ Using this strategy, it is possible to choose:
 
 ## Advanced: Custom Metrics for Autoscaling
 
-**Custom metrics are recommended for workloads such as GPU based inference where CPU and RAM usage provide an incomplete picture of the system’s performance or request load.**
+For advanced scenarios, you can define **custom metrics** to drive autoscaling decisions. This is **recommended for workloads such as GPU based inference where CPU and RAM usage provide an incomplete picture of the system's performance or request load**.
 
-For advanced scenarios, you can define **custom metrics** to drive autoscaling decisions. This requires an API endpoint to fetch metrics from.
+This feature can be used through the UI and CLI, and requires an API endpoint to fetch metrics from.
 
-### Required Parameter
-
-- `--auto-custom-api-url`: URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself.
-
-### Optional Parameters
-
-| Parameter                        | Description                                                                 |
-|--------------------------------|-----------------------------------------------------------------------------|
-| `--auto-custom-value-location` | Specifies where the metric value is located in the API response payload. This value is format-specific. See the valueLocation from the parameters list in the [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details. |
-| `--auto-custom-target-value`   | Target value for metric to scale on.                                          |
-| `--auto-custom-metric-format`  | Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.          |
-
-**Example**:
-
-Scaling based on a custom metric from an internal endpoint: 
-
-```bash
-ovhai app run <registry-address>/<image-identifier>:<tag-name> \
-    --auto-custom-api-url http://<SELF>:6000/metrics \
-    --auto-custom-value-location foo.bar \
-    --auto-custom-target-value 42 \
-    --auto-custom-metric-format JSON
-```
+> [!tabs]
+> **Using the Control Panel (UI)**
+>>
+>> To enable custom autoscaling, select **CUSTOM** as the monitored metric in the UI, during the `Scaling` step. Then, you will need to fill several fields:
+>>
+>> - **Metric URL**: URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself.
+>> - **Data format**: Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.
+>> - **Data location**: Location of the metric value in the response payload. This value is format-specific. See the valueLocation from the parameters list in the [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details.
+>> - **Target value of the metric**: Target value for metric to scale on. When the metric provided by the API is equal to or greater than this value, scaling occurs upwards. If the metric is less than or equal to 0, scaling is brought back to 0. This value can be a decimal number.
+>> - **Aggregation type**: Type of aggregation to perform before comparing the aggregated metric value to the target value. For example, if you choose AVERAGE, the value compared to the target value for scaling will be the average of the metric values from each replica of your AI Deploy app. Options are (`AVERAGE`, `MIN`, `MAX`, `SUM`). Default is `AVERAGE`.
+>>
+>> ![Enable custom autoscaling on AI Deploy via UI](images/set-custom-autoscaling.png){.thumbnail}
+>>
+> **Using ovhai CLI**
+>>
+>> Use the `ovhai app run` command with the following parameters:
+>>
+>> | Parameter | Description |
+>> |--------|-------------|
+>> | `--auto-custom-api-url`          | URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself. |
+>> | `--auto-custom-metric-format`    | Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.          |
+>> | `--auto-custom-value-location`   | Location of the metric value in the response payload. This value is format-specific. See the valueLocation from the parameters list in the [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details. |
+>> | `--auto-custom-target-value`     | Target value for metric to scale on. When the metric provided by the API is equal to or greater than this value, scaling occurs upwards. If the metric is less than or equal to 0, scaling is brought back to 0. This value can be a decimal number. |
+>> | `--auto-custom-metric-aggregation-type` | Type of aggregation to perform before comparing the aggregated metric value to the target value. For example, if you choose AVERAGE, the value compared to the target value for scaling will be the average of the metric values from each replica of your AI Deploy app. Options are (`AVERAGE`, `MIN`, `MAX`, `SUM`). Default is `AVERAGE`. |
+>>
+>> **Example**:
+>>
+>> Scaling based on a custom metric from an internal endpoint:
+>>
+>> ```bash
+>> ovhai app run <registry-address>/<image-identifier>:<tag-name> \
+>>     --auto-custom-api-url http://<SELF>:6000/metrics \
+>>     --auto-custom-metric-format JSON \
+>>     --auto-custom-value-location foo.bar \
+>>     --auto-custom-target-value 42 \
+>>     --auto-custom-metric-aggregation-type AVERAGE
+>> ```
 
 ## Modifying Scaling Strategies Post-Deployment
 
-You can also modify the scaling strategy after the app has been created using the `ovhai app scale` CLI command. This feature is not available on the UI.
+You can also modify the scaling strategy after the app has been created using the Control Panel UI or the `ovhai app scale` CLI command.
 
-### Updating Static Scaling
+> [!tabs]
+> **Using the Control Panel (UI)**
+>>
+>> To modify scaling strategies through the UI, navigate to your application details page by clicking on its name in the AI Deploy section. On this page, you will find general information about your application, including a **Resources** section.
+>>
+>> ![image](images/update-autoscaling-1.png)
+>> 
+>> In this window, click the `Edit`{.action} button to access scaling configuration options. This will open an **Update application scaling** window where you can:
+>> - Switch between auto scaling and static scaling
+>> - Change replica values
+>> - Modify monitored metric and associated values
+>>
+>> ![Update application scaling step 2](images/update-autoscaling-2.png){.thumbnail}
+>>
+> **Using ovhai CLI**
+>>
+>> To modify scaling strategies through the CLI, use the `ovhai app scale` command with appropriate parameters:
+>>
+>> ```bash
+>> ovhai app scale [OPTIONS] <ID>
+>> ```
+>>
+>> **Updating Static Scaling**
+>>
+>> To change the number of replicas for a static scaling strategy, use the `ovhai app scale` command with the `--replicas` parameter:
+>>
+>> ```bash
+>> ovhai app scale --replicas <new-replicas-number> <app-id>
+>> ```
+>>
+>> **Updating Autoscaling**
+>>
+>> To change the autoscaling parameters, use the `ovhai app scale` command with the following parameters:
+>> 
+>> ```bash
+>> ovhai app scale \
+>>     --auto-min-replicas <min> \
+>>     --auto-max-replicas <max> \
+>>     --auto-resource-type <CPU/RAM> \
+>>     --auto-resource-usage-threshold <percent> \
+>>     <app-id>
+>> ```
+>>
+>> **Updating Autoscaling using a custom metric**
+>>
+>> Available options for **Fixed Scaling Strategy**:
+>>
+>> ```bash
+>> ovhai app scale \
+>>     --auto-custom-api-url <API URL> \
+>>     --auto-custom-value-location <METRIC VALUE LOCATION> \
+>>     --auto-custom-target-value <METRIC TARGET VALUE> \
+>>     --auto-custom-metric-format <METRIC FORMAT> \
+>>     --auto-custom-metric-aggregation-type <METRIC AGGREGATION TYPE> \
+>>     <app-id>
+>> ```
 
-To change the number of replicas for a static scaling strategy, use the `ovhai app scale` command with the `--replicas` parameter:
-
-```bash
-ovhai app scale --replicas <new-replicas-number> <app-id>
-```
-
-### Updating Autoscaling
-
-To change the autoscaling parameters, use the `ovhai app scale` command with the appropriate autoscaling parameters:
-
-```bash
-ovhai app scale \
-    --auto-min-replicas <min> \
-    --auto-max-replicas <max> \
-    --auto-resource-type <CPU/RAM> \
-    --auto-resource-usage-threshold <percent> \
-    <app-id>
-```
-
-## Scaling example
+## Scaling examples
 
 We will use the following example:
 

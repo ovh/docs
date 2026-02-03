@@ -1,12 +1,8 @@
 ---
 title: "Utiliser le Secret Manager dans l'espace client OVHcloud"
 excerpt: "Découvrez comment utiliser le Secret Manager avec l'interface graphique"
-updated: 2025-10-15
+updated: 2025-01-15
 ---
-
-> [!primary]
-> Le Secret Manager est actuellement en phase bêta. Ce guide est susceptible d’être mis à jour ultérieurement avec les avancées de nos équipes en charge de ce produit.
->
 
 ## Objectif
 

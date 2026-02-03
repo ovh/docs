@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Getting started
 excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
-updated: 2025-06-19
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -75,15 +75,12 @@ Once your API key has been generated, you can navigate to the [Catalog page](htt
 AI Endpoints offers a variety of world-renowned AI models to choose from, including:
 
 - **Large Language Models (LLM)**: Use models like LLaMa 3, Mistral and more, for conversations and RAG use cases.
-- **Reasoning LLM**: Use reasoning models like DeepSeek-R1 distillations for maths, coding or complex tasks.
-- **Code LLM**: Code generation and code completion from an IDE with models like Qwen Coder or Codestral.
-- **Visual LLM**: Multimodal models such as LLaVa-Next, that are able to process images and text inputs, for image understanding or OCR use cases.
-- **Embeddings**: Generate embeddings for use in machine learning applications (BGE Base, BGE Multilingual Gemma2, ...).
-- **Natural Language Processing**: Use models like RoBERTa, Bert, and T5 for NLP tasks like sentiment analysis, entity recognition, and text summarization.
+- **Reasoning LLM**: Use reasoning models like GPT-OSS for maths, coding or complex tasks.
+- **Code LLM**: Code generation and code completion from an IDE with models like Qwen Coder.
+- **Visual LLM**: Multimodal models such as Qwen VL, that are able to process images and text inputs, for image understanding or OCR use cases.
+- **Embeddings**: Generate embeddings for use in machine learning applications, such as BGE.
 - **Image Generation**: Generate images using Stable Diffusion XL.
-- **Audio Analysis**: Automatic Speech Recognition and Text to Speech using NVIDIA models.
-- **Translation**: Translate text using NVIDIA Neural Machine Translation or T5 large.
-- **Computer Vision**: Object detection and segmentation with YOLO models.
+- **Audio Analysis**: Automatic Speech Recognition with models like Whisper.
 
 Once you have selected the category of model you want to use, you will be presented with a list of models to choose from.
 
@@ -153,13 +150,15 @@ When using AI Endpoints, the **following rate limits apply**:
 
 If you exceed this limit, a **429 error code** will be returned.
 
-If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
+If you require higher usage, please **[get in touch with us](/links/support)** to discuss increasing your rate limits.
 
 ### Billing and usage
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
-For your convenience, you can monitor your estimated consumption and resource usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+For your convenience, you can monitor your estimated consumption and model usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+
+![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
 
 ## Going further
 

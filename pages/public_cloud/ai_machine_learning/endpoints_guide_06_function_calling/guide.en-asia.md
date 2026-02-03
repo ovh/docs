@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Function Calling
 excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
-updated: 2025-08-06
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -617,58 +617,58 @@ It is possible to use Function Calling in streaming mode, by setting `stream` to
 Let's see an example with cURL and the LLaMa 3.1 8B model:
 
 ```bash
-curl -X 'POST'
-        'https://llama-3-1-8b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions'
-        -H 'accept: application/json'
-           -H 'Content-Type: application/json'
-              -d '{
-"max_tokens": 100,
-"messages": [
-    {
-        "content": "What is the current weather in Paris?",
-        "role": "user"
-    }
-],
-"model": null,
-"seed": null,
-"stream": true,
-"temperature": 0.1,
-"tool_choice": "auto",
-"tools": [
-    {
-        "function": {
-            "description": "Get the current weather in a given location",
-            "name": "get_current_weather",
-            "parameters": {
-                "properties": {
-                    "country": {
-                        "description": "The two-letters country code",
-                        "type": "string"
+curl -X 'POST' \
+        'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions' \
+        -H 'accept: application/json' \
+        -H 'Content-Type: application/json' \
+        -d '{ 
+            "max_tokens": 100,
+            "messages": [
+                {
+                    "content": "What is the current weather in Paris?",
+                    "role": "user"
+                }
+            ],
+            "model": "Llama-3.1-8B-Instruct",
+            "seed": null,
+            "stream": true,
+            "temperature": 0.1,
+            "tool_choice": "auto",
+            "tools": [
+                {
+                    "function": {
+                        "description": "Get the current weather in a given location",
+                        "name": "get_current_weather",
+                        "parameters": {
+                            "properties": {
+                                "country": {
+                                    "description": "The two-letters country code",
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "description": "The city",
+                                    "type": "string"
+                                },
+                                "unit": {
+                                    "enum": [
+                                        "celsius",
+                                        "fahrenheit"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "location",
+                                "country"
+                            ],
+                            "type": "object"
+                        }
                     },
-                    "location": {
-                        "description": "The city",
-                        "type": "string"
-                    },
-                    "unit": {
-                        "enum": [
-                            "celsius",
-                            "fahrenheit"
-                        ],
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "location",
-                    "country"
-                ],
-                "type": "object"
-            }
-        },
-        "type": "function"
-    }
-],
-"top_p": 1
-}'
+                    "type": "function"
+                }
+            ],
+            "top_p": 1
+        }'
 ```
 
 You will get tool call deltas in the server-side events chunks, with this format:

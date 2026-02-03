@@ -1,7 +1,7 @@
 ---
 title: "FAQ sobre los dominios y DNS"
 excerpt: "Encuentre las principales preguntas formuladas sobre los nombres de dominio, los servidores DNS y las zonas DNS"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ Los registros DNS se utilizan, por ejemplo, para:
 Existen muchos tipos de registros DNS. Cada uno tiene un propósito específico en la resolución DNS. En OVHcloud, se distinguen en tres categorías:
 
 - **Campos de puntero**: `A`, `AAAA`, `NS`, `CNAME` y `DNAME`.
-- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` y `TLSA`.
+- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` y `HTTPS`.
 - **Campos de correo**: `MX`, `SPF`, `DKIM` y `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ En este punto, visualizará todos los registros DNS que podrá agregar mediante 
 Gracias a este asistente de configuración, podrá añadir los siguientes tipos de registros DNS:
 
 - **Campos de puntero**: `A`, `AAAA`, `NS`, `CNAME` y `DNAME`.
-- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` y `TLSA`.
+- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` y `HTTPS`.
 - **Campos de correo**: `MX`, `SPF`, `DKIM` y `DMARC`.
 
 > [!primary]

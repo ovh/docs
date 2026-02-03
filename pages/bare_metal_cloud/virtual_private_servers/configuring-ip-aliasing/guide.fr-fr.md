@@ -66,8 +66,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> **Étape 1 : désactiver la configuration automatique du réseau**
 >>
@@ -137,7 +137,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> netmask 255.255.255.255
 >> ```
 >>
->> /// details | **Exemple**
+>> /// details | **Exemple de configuration**
 >>
 >> ```console
 >> auto eth0:0
@@ -155,8 +155,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo systemctl restart networking
 >> ```
 >>
-> Debian 12, Ubuntu 20.04+
->> **Debian 12, Ubuntu 20.04 et versions ultérieures**
+> **Debian 12+, Ubuntu 22.04+**
+>> Debian 12, Ubuntu 22.04 et versions ultérieures
 >>
 >> Le fichier de configuration de vos adresses Additional IP se trouve dans le fichier `/etc/netplan/`. Dans cet exemple, il s'appelle `50-cloud-init.yaml`.
 >>
@@ -213,7 +213,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement.
 >> >
 >>
->> /// details | **Exemple**
+>> /// details | **Exemple de configuration**
 >>
 >> ```yaml
 >> network:
@@ -242,10 +242,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo netplan apply
 >> ```
 >>
->> Répétez cette procédure pour chaque adresse Additional IP.
->>
-> AlmaLinux / Rocky Linux (8/9)
->> **AlmaLinux (8/9), Rocky Linux (8/9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Le fichier de configuration principal est situé dans le dossier `/etc/sysconfig/network-scripts/`. Dans cet exemple, il est appelé `ifcfg-eth0`. Avant de faire des changements, vérifiez le nom réel du fichier dans ce dossier.
 >>
@@ -278,7 +276,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> BROADCAST=ADDITIONAL_IP
 >> ```
 >>
->> /// details | **Exemple**
+>> /// details | **Exemple de configuration**
 >>
 >> ```console
 >> DEVICE=eth0:0
@@ -293,17 +291,17 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> **Étape 3 : redémarrer l'interface**
 >>
 >> ```bash
->> sudo systemctl restart network
->> ```
->>
->> Pour AlmaLinux et Rocky Linux
->>
->> ```bash
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> Fedora 42
->> **Fedora 42**
+>> Pour CentOS
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> Fedora utilise maintenant des fichiers clés. NetworkManager stockait auparavant les profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est maintenant obsolète. Par défaut, NetworkManager ne crée plus de nouveaux profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
 >>
@@ -351,7 +349,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> address2=ADDITIONAL_IP2/32
 >> ```
 >>
->> /// details | **Exemple**
+>> /// details | **Exemple de configuration**
 >> 
 >> ```console
 >> [ipv4]
@@ -369,8 +367,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
 >> **Étape 1 : accéder à la section de gestion des IP du WHM.**
 >>
@@ -396,8 +394,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **Étape 1 : accéder à la gestion d'IP de Plesk**
 >>
@@ -423,8 +421,8 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> ![configuration IP actuelle](images/plesk-final-configuration.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> **Windows Server**
+>> Windows Server
 >>
 >> **Étape 1 : vérifier la configuration réseau**
 >>
@@ -465,7 +463,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> > Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous serez alors obligé d’effectuer les corrections via le KVM.
 >> > 
 >>
->> Étape 3 : ajouter l'adresse Additional IP dans les Paramètres TCP/IP avancés
+>> **Étape 3 : ajouter l'adresse Additional IP dans les Paramètres TCP/IP avancés**
 >>
 >> Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP ». Entrez votre adresse Additional IP et le masque de sous-réseau (255.255.255.255).
 >>

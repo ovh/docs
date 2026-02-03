@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les noms de domaine & DNS"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs DNS et les zones DNS"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ Les enregistrements DNS sont utilisés, par exemple pour :
 De nombreux enregistrements DNS existent. Ils ont tous un but spécifique dans la résolution DNS. Chez OVHcloud, ils sont distingués en trois parties : 
 
 - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
-- **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` et `TLSA`.
+- **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
 - **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ Suivez ces étapes :
 Grâce à cet assistant de configuration, vous pourrez ajouter les types d'enregistrements DNS suivants :
 
 - **Champs de pointage** : `A`, `AAAA`, `NS`, `CNAME` et `DNAME`.
-- **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` et `TLSA`.
+- **Champs étendus** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` et `HTTPS`.
 - **Champs mail** : `MX`, `SPF`, `DKIM` et `DMARC`.
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Sorties structurées
 excerpt: Découvrez comment utiliser les sorties structurées avec OVHcloud AI Endpoints
-updated: 2025-08-06
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -114,7 +114,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> # Initialise the client
 >> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> openai_client = openai.OpenAI(
->>     base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+>>     base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
 >>     api_key=api_key
 >> )
 >> 
@@ -151,7 +151,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> Input query:
 >>
 >> ```sh
->> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
+>> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions" \
 >>     -H 'accept: application/json'\
 >>     -H 'content-type: application/json' \
 >>     -d '{
@@ -160,6 +160,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>             { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
 >>             { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
 >>         ],
+>>         "model": "Meta-Llama-3_3-70B-Instruct",
 >>         "response_format": {
 >>             "type":"json_schema",
 >>             "json_schema": {
@@ -258,7 +259,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> // Initialise the client
 >> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> const options = {
->>     url: 'https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions',
+>>     url: 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions',
 >>     headers: {
 >>         'Content-Type': 'application/json',
 >>         'Authorization': `Bearer ${apiKey}`
@@ -266,6 +267,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>     json: true,
 >>     body: {
 >>         messages: messages,
+>>         model: 'Meta-Llama-3_3-70B-Instruct',
 >>         response_format: {
 >>             type: 'json_schema',
 >>             json_schema: jsonSchema
@@ -327,7 +329,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> # Initialise the client
 >> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> openai_client = openai.OpenAI(
->>     base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+>>     base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
 >>     api_key=api_key
 >> )
 >> 
@@ -375,7 +377,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> Input query:
 >>
 >> ```sh
->> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
+>> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions" \
 >>     -H 'accept: application/json' \
 >>     -H 'content-type: application/json' \
 >>     -d '{
@@ -413,7 +415,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >> // Initialise the client
 >> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> const options = {
->>     url: 'https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions',
+>>     url: 'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions',
 >>     headers: {
 >>         'Content-Type': 'application/json',
 >>         'Authorization': `Bearer ${apiKey}`
@@ -421,6 +423,7 @@ The following code samples provide a simple example on how to use the legacy JSO
 >>     json: true,
 >>     body: {
 >>         messages: messages,
+>>         model: 'Meta-Llama-3_3-70B-Instruct',
 >>         response_format: {
 >>             type: 'json_object',
 >>         },
@@ -487,7 +490,7 @@ class LanguageRankings(BaseModel):
 # Initialise the client
 api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 openai_client = openai.OpenAI(
-    base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+    base_url='https://oai.endpoints.kepler.ai.cloud.ovh.net/v1',
     api_key=api_key
 )
 

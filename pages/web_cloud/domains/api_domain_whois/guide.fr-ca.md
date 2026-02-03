@@ -97,7 +97,7 @@ La réponse ci-dessus indique les trois types de règles qu'il est possible de r
 
 -   Le contact `admin` est absent de la réponse, ce qui signifie qu'il n'est pas possible de configurer la divulgation des données Whois le concernant.
 -   La présence du contact `tech` avec un tableau de `field` vide signifie qu'il est possible de divulguer les informations. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
--   Concernant le contact `owner`, c'est la règle la plus personnalisable. La présence des champs dans le noeud `field` indique qu'il est possible de choisir quels champs seront divulgués dans le Whois.
+-   Concernant le contact `owner`, c'est la règle la plus personnalisable. La présence des champs dans le nœud `field` indique qu'il est possible de choisir quels champs seront divulgués dans le Whois.
 
 ### Récupération de la configuration d'optin d'un nom de domaine
 

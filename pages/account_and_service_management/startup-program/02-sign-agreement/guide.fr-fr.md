@@ -1,29 +1,25 @@
 ---
 title: "Comment signer votre contrat du Startup Program"
 excerpt: "Découvrez comment signer votre contrat du Startup Program d'OVHcloud pour activer vos crédits rapidement"
-updated: 2025-10-14
+updated: 2025-12-11
 ---
 
 ## Objectif
 
-Pour participer au Startup Program d'OVHcloud, la signature du contrat est une étape indispensable. Une fois votre candidature acceptée, vous recevrez un e-mail contenant un lien direct pour signer le contrat. Il est également possible de retrouver le contrat dans votre espace client OVHcloud.
+Pour participer au Startup Program d'OVHcloud, la signature du contrat est une étape indispensable. Une fois votre candidature acceptée, vous recevrez un e-mail vous demandant de signer le contrat dans votre espace client OVHcloud.
 
 **Ce guide vous explique comment accéder à ce contrat et le signer pour que vos crédits soient activés rapidement**
 
 ## Prérequis
 
 - Votre candidature au Startup Program doit avoir été validée. Retrouvez plus d'informations dans notre guide « [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application) ».
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
 
 ## En pratique
 
-### Signer le contrat via l’e-mail
-
-Vérifiez votre boîte de réception : Après l'acceptation de votre candidature au Startup Program, un e-mail sera envoyé à l'adresse liée à votre compte OVHcloud. Cet e-mail contient un lien direct pour signer le contrat. Cliquez sur le lien et suivez les instructions pour finaliser la signature.
-
 ### Signer le contrat via l’espace client OVHcloud
 
-Si vous ne trouvez pas l'e-mail, vous pouvez accéder au contrat directement dans votre [espace client OVHcloud](/links/manager).
+Vous devez accéder au contrat directement dans votre espace client.
 
 Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Depuis la page d’accueil, cliquez sur votre nom en haut à droite puis cliquez sur `Mes offres & services`{.action}.
 

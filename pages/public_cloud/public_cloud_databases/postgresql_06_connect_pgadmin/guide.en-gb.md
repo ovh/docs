@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Connect with pgAdmin
+title: Connect using PgAdmin for Public Cloud Databases for PostgreSQL
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using pgAdmin
 updated: 2025-10-30
 ---

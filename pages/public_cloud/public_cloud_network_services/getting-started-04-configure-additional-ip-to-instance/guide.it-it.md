@@ -1,7 +1,7 @@
 ---
 title: Configura un Additional IP
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-updated: 2025-11-12
+updated: 2025-12-17
 ---
 
 > [!primary]
@@ -65,9 +65,9 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 
 > [!tabs]
 > **Debian 11**
->> Debian
+>> Debian 11
 >>
->> Step 1: disattiva la configurazione automatica della rete
+>> **Step 1: disattiva la configurazione automatica della rete**
 >>
 >> Apri il percorso per accedere al file seguente con un editor di testo:
 >>
@@ -83,7 +83,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> La creazione di questo file di configurazione impedisce l'esecuzione automatica delle modifiche apportate alla configurazione della tua rete.
 >>
->> Step 2: modifica il file di configurazione di rete
+>> **Step 2: modifica il file di configurazione di rete**
 >>
 >> Per verificare il nome della tua interfaccia di rete, esegui questo comando:
 >>
@@ -106,7 +106,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >> netmask 255.255.255.255
 >> ```
 >>
->> Step 3: riavvia l'interfaccia
+>> **Step 3: riavvia l'interfaccia**
 >>
 >> Applica le modifiche utilizzando il seguente comando:
 >>
@@ -114,12 +114,13 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Debian 12, Ubuntu 22.04+**
+> **Debian 12+, Ubuntu 22.04+**
 >> Debian 12, Ubuntu 22.04 e versioni successive
 >>
->> Il file di configurazione dei tuoi indirizzi Additional IP si trova in `/etc/netplan/`. In questo esempio, si chiama "50-cloud-init.yaml". Prima di apportare modifiche, verifica il nome del file effettivo in questa cartella. Ogni indirizzo Additional IP richiede la propria linea nel file.
+>> Il file di configurazione dei tuoi indirizzi Additional IP si trova in `/etc/netplan/`. 
+>> In questo esempio, si chiama "50-cloud-init.yaml". Prima di apportare modifiche, verifica il nome del file effettivo in questa cartella. Ogni indirizzo Additional IP richiede la propria linea nel file.
 >>
->> Step 1: disattiva la configurazione automatica della rete
+>> **Step 1: disattiva la configurazione automatica della rete**
 >>
 >> Apri il percorso per accedere al file seguente con un editor di testo:
 >>
@@ -135,7 +136,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> La creazione di questo file di configurazione impedisce l'esecuzione automatica delle modifiche apportate alla configurazione della tua rete.
 >>
->> Step 2: modifica il file di configurazione
+>> **Step 2: modifica il file di configurazione**
 >>
 >> Per verificare il nome della tua interfaccia di rete, esegui questo comando:
 >>
@@ -171,7 +172,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Salva e chiudi il file.
 >>
->> Step 3: applicare la nuova configurazione di rete
+>> **Step 3: applicare la nuova configurazione di rete**
 >>
 >> Per testare la tua configurazione utilizza questo comando:
 >>
@@ -187,10 +188,10 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Ripeti questa procedura per ogni indirizzo Additional IP.
 >>
-> **CentOS 7 / derivati Red Hat**
->> CentOS 7 / derivati Red Hat
+> **AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)**
+>> AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)
 >>
->> Step 1: modifica il file di configurazione di rete
+>> **Step 1: modifica il file di configurazione di rete**
 >>
 >> Per verificare il nome della tua interfaccia di rete, esegui questo comando:
 >>
@@ -215,7 +216,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >> ONBOOT=yes
 >> ```
 >>
->> Step 2: riavvia l'interfaccia
+>> **Step 2: riavvia l'interfaccia**
 >>
 >> Applica le modifiche utilizzando il seguente comando:
 >>
@@ -223,10 +224,52 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >> sudo systemctl restart networking
 >> ```
 >>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora, AlmaLinux 10 & Rocky Linux 10
+>>
+>> Questi sistemi utilizzano file chiave. NetworkManager ha precedentemente archiviato i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg non è più consigliato. Per impostazione predefinita, NetworkManager non crea più profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
+>>
+>> **Step 1: modifica il file di configurazione**
+>>
+>> > [!primary]
+>> > Ti ricordiamo che il nome del file di rete nel nostro esempio potrebbe essere diverso dal tuo. Adatta i comandi al tuo nome di file.
+>> >
+>>
+>> ```bash
+>> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> ```
+>>
+>> Non modificare le righe esistenti nel file di configurazione, aggiungi l’Additional IP al file come segue, sostituendo `ADDITIONAL_IP/32` con i tuoi valori:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP/32
+>> ```
+>>
+>> Se avete due Additional IP da configurare, la configurazione dovrebbe essere questa:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP1/32
+>> address2=ADDITIONAL_IP2/32
+>> ```
+>>
+>> **Step 2: riavvia l’interfaccia**
+>>
+>> Riavvia l’interfaccia:
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
 > **Plesk**
 >> Plesk
 >>
->> Step 1: accedere alla gestione IP di Plesk
+>> **Step 1: accedere alla gestione IP di Plesk**
 >>
 >> Nel pannello di configurazione Plesk, seleziona `Tools & Settings`{.action} nella barra laterale sinistra.
 >>
@@ -234,7 +277,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Clicca su `IP Indirizzi`{.action} con **Tools & Settings**.
 >>
->> Step 2: aggiungi le informazioni IP supplementari
+>> **Step 2: aggiungi le informazioni IP supplementari**
 >>
 >> In questa sezione, clicca sul pulsante `Add IP Address`{.action}.
 >>
@@ -244,7 +287,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![aggiungi informazioni IP](images/pleskip3-3.png){.thumbnail}
 >>
->> Step 3: verifica la configurazione IP corrente
+>> **Step 3: verifica la configurazione IP corrente**
 >>
 >> Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "Indirizzi IP".
 >>
@@ -253,11 +296,9 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 > **Windows Server**
 >> Windows Server
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto.
+>> Dallo spazio Public Cloud, apri `Instances`{.action} nel menu a sinistra e clicca sul nome dell’istanza. Accedi alla scheda `Console VNC`{.action}.
 >>
->> Apri `Istanze`{.action} nel menu a sinistra. Clicca sul nome della tua istanza. Accedi alla scheda `Console VNC`{.action}.
->>
->> Step 1: verifica la configurazione di rete
+>> **Step 1: verifica la configurazione di rete**
 >>
 >> Clicca con il tasto destro sul pulsante `Menu Inizia`{.action} e apri `Esegui`{.action}.
 >>
@@ -269,7 +310,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![verifica la configurazione IP principale](images/image1-1.png){.thumbnail}
 >>
->> Step 2: modifica le proprietà IPv4
+>> **Step 2: modifica le proprietà IPv4**
 >>
 >> A questo punto è necessario modificare le proprietà IP in una configurazione statica.
 >>
@@ -279,7 +320,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Nella finestra Proprietà IPv4, seleziona `Utilizza questo indirizzo IP`{.action}. Inserisci l'indirizzo IP recuperato nel primo step e poi clicca su `Avanti`{.action}.
 >>
->> Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate
+>> **Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate**
 >>
 >> Nella nuova finestra, clicca su `Aggiungi...`{.action} sotto "Indirizzi IP". Inserisci il tuo indirizzo Additional IP e la subnet mask (255.255.255.255).
 >>
@@ -289,7 +330,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![Configurazione del trasferimento IP](images/image5-5.png){.thumbnail}
 >>
->> Step 4: riavvia l'interfaccia di rete
+>> **Step 4: riavvia l'interfaccia di rete**
 >>
 >> Di ritorno al pannello di configurazione (`Connessioni di rete`{.action}), clicca con il tasto destro sulla tua interfaccia di rete e seleziona `Disattivare`{.action}.
 >>
@@ -299,7 +340,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![attivazione della rete](images/image7.png){.thumbnail}
 >>
->> Step 5: verifica la nuova configurazione di rete
+>> **Step 5: verifica la nuova configurazione di rete**
 >>
 >> Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
 >>

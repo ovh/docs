@@ -124,7 +124,7 @@ W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zat
 
 Przejdź do strony [Webmail](/links/web/email). Wpisz swój adres e-mail i hasło, a następnie kliknij `Logowanie`{.action}.
 
-Kliknij nazwę konta e-mail w prawym górnym rogu. Z poziomu tego menu możesz również zmienić hasło {.action}.
+Kliknij nazwę konta e-mail w prawym górnym rogu interfejsu. W tym menu możesz `Zmienić hasło`{.action}.
 
 ![Zimbra - preferencje](images/zimbra-password.png){.thumbnail}
 

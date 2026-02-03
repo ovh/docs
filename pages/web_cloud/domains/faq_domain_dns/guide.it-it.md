@@ -1,7 +1,7 @@
 ---
 title: "FAQ sui domini & DNS"
 excerpt: "Ritrova le principali domande su nomi di dominio, server DNS e zone DNS"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ I record DNS vengono utilizzati, ad esempio, per:
 Esistono molti tipi di record DNS. Ogni tipo ha uno scopo specifico nella risoluzione DNS. Su OVHcloud, vengono distinti in tre parti:
 
 - **Campi di puntamento**: `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
-- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
+- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` e `HTTPS`.
 - **Campi e-mail**: `MX`, `SPF`, `DKIM` e `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ A questo punto, visualizzerai l'intera lista dei record DNS che puoi aggiungere 
 Grazie a questo assistant di configurazione, potrai aggiungere i seguenti tipi di record DNS:
 
 - **Campi di puntamento**: `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
-- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
+- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` e `HTTPS`.
 - **Campi e-mail**: `MX`, `SPF`, `DKIM` e `DMARC`.
 
 > [!primary]

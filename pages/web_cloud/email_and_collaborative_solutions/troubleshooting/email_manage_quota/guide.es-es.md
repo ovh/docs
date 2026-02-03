@@ -63,7 +63,7 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 >>
 > **Email Pro**
 >>
->> Haga clic en `E-mail Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña «Cuentas de correo» de {.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Tamaño` puede ver el consumo actual del almacenamiento de su dirección de correo electrónico.<br><br>
+>> Haga clic en `E-mail Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Tamaño` puede ver el consumo actual del almacenamiento de su dirección de correo electrónico.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**

@@ -1,12 +1,8 @@
 ---
-title: 'Correggere la Product Key di Windows Server'
+title: 'Come cambiare la Product Key di Windows Server'
 excerpt: 'Scopri come modificare il codice Product Key di Windows Server'
-updated: 2022-07-07
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -16,7 +12,7 @@ Quando installi Windows Server, la Product Key (ovvero il codice di attivazione 
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/os/server-windows/) con Windows installato sul tuo account OVHcloud
+- Disporre di un [server dedicato OVHcloud](/links/bare-metal/os) che esegue Windows Server o di una macchina virtuale che esegue Windows Server su un servizio [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses).
 - Avere una licenza Windows SPLA sul tuo account OVHcloud
 - Avere un accesso amministrativo al tuo server tramite una connessione desktop remoto
 
@@ -41,7 +37,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -upk
 Da questo momento puoi inserire il codice definitivo ritornando alla finestra di dialogo `Esegui`{.action} e utilizzando questo comando:
 
 ```bash
-cscript.exe c:\windows\system32\slmgr.vbs -ipk CLEF KMS
+cscript.exe c:\windows\system32\slmgr.vbs -ipk CHIAVE KMS
 ```
 
 I codici Product Key per le versioni di Windows Server supportate sono disponibili nella tabella [pagina ufficiale di Microsoft](https://learn.microsoft.com/en-gb/windows-server/get-started/kms-client-activation-keys).
@@ -74,4 +70,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

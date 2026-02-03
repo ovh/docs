@@ -1,7 +1,7 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-updated: 2025-09-15
+updated: 2026-01-09
 ---
 
 ## Objectif
@@ -83,14 +83,14 @@ Toutes ces informations sont également disponibles à travers l'interface d'adm
 
 ![interface](images/gui_logs_.png){.thumbnail}
 
-### La solution Network Firewall
+### La solution Edge Network Firewall
 
 > [!primary]
 >
-> Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
+> Pour rappel, le Edge Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
 >
 
-Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 Cette solution vous permettra de gérer facilement les accès légitimes, en complément de ceux que vous aurez mis en place à travers votre système ESXi.
 
 Elle vous évitera aussi de verrouiller inopinément votre compte administrateur en cas d'attaque.
@@ -100,7 +100,14 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 - La règle 1 (Priority 0) autorise des réseaux externes de confiance à accèder à votre système ESXi.
 - La règle 2 (Priority 1) bloque tout le reste.
 
-![Network_Firewall](images/firewall_network_.png){.thumbnail}
+Vous pouvez accéder aux paramètres du Edge Network Firewall depuis l'espace client OVHcloud, en sélectionnant `Network`{.action}, puis en choisissant `Adresses IP publiques`{.action} sous "Réseau public". Vous pouvez retrouver votre serveur dédié en recherchant son adresse IP.
+
+![Edge_Network_Firewall](images/firewall_network_1.png){.thumbnail}
+
+Sur la droite du tableau, cliquez sur le bouton `...`{.action} correspondant à votre serveur dédié, puis sélectionnez `Configurer le Edge Network Firewall`{.action}.
+
+![Edge_Network_Firewall](images/firewall_network_2.png){.thumbnail}
+
 
 ### Le filtrage sous ESXi
 

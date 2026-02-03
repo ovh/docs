@@ -1,7 +1,7 @@
 ---
 title: Configurare un Alias IP
 excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
-updated: 2025-11-12
+updated: 2025-12-04
 ---
 
 <style>
@@ -74,12 +74,12 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >
 
 > [!tabs]
-> Debian 11
->> **Debian 11**
+> **Debian 11**
+>> Debian 11
 >>
 >> Per impostazione predefinita, il file di configurazione si trova in `/etc/network/interfaces.d/`. È consigliabile iniziare effettuando il backup del file di configurazione corrispondente.
 >>
->> Step 1: crea un backup
+>> **Step 1: crea un backup**
 >>
 >> Nel nostro esempio, il nostro file si chiama `50-cloud-init`, quindi copiamo il file `50-cloud-init` utilizzando il seguente comando:
 >>
@@ -94,7 +94,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
->> Step 2: modifica il file di configurazione
+>> **Step 2: modifica il file di configurazione**
 >>
 >> > [!primary]
 >> >
@@ -183,7 +183,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> ```
 >> ///
 >>
->> Step 3: riavvia l’interfaccia
+>> **Step 3: riavvia l’interfaccia**
 >>
 >> Per riavviare l’interfaccia esegui il comando:
 >>
@@ -191,14 +191,14 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> Fedora 41+
->> **Fedora 41 e versioni successive**
+> **Fedora 42+ / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42 e versioni successive. AlmaLinux e Rocky Linux (10)
 >>
 >> Da questo momento, Fedora utilizza file chiave (*keyfiles*).
 >> In precedenza Fedora utilizzava profili di rete memorizzati da NetworkManager in formato ifcfg nella directory `/etc/sysconfig/network-scripts/`.<br>
 >> Poiché l'ifcfg ha subito una riduzione di valore, NetworkManager non crea di default i nuovi profili in questo formato. Il file di configurazione è disponibile in `/etc/NetworkManager/system-connections/`.
 >>
->> Step 1: crea un backup
+>> **Step 1: crea un backup**
 >>
 >> > [!primary]
 >> >
@@ -218,7 +218,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 >> ```
 >>
->> Step 2: modifica il file sorgente
+>> **Step 2: modifica il file sorgente**
 >>
 >> > [!primary]
 >> >
@@ -268,7 +268,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> ```
 >> ///
 >>
->> Step 3: riavvia l’interfaccia
+>> **Step 3: riavvia l’interfaccia**
 >>
 >> Per riavviare l’interfaccia esegui il comando:
 >>
@@ -276,14 +276,14 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> Debian 12 e Ubuntu 20.04+ 
->> **Debian 12, Ubuntu 20.04 e versioni successive**
+> **Debian 12+ e Ubuntu 20.04+**
+>> Debian 12, Ubuntu 20.04 e versioni successive
 >>
 >> Per impostazione predefinita, i file di configurazione si trovano nella directory `/etc/netplan`.
 >>
 >> L’approccio migliore consiste nel creare un file di configurazione separato per configurare gli indirizzi Additional IP. Questo permette di tornare facilmente indietro in caso di errore.
 >>
->> Step 1: determina l’interfaccia
+>> **Step 1: determina l’interfaccia**
 >>
 >> ```sh
 >> ip a
@@ -291,7 +291,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> Annota il nome dell’interfaccia (quella su cui è configurato l’indirizzo IP principale del tuo server).
 >>
->> Step 2: crea il file di configurazione
+>> **Step 2: crea il file di configurazione**
 >>
 >> Creare quindi un file di configurazione con l'estensione `.yaml`. Nel nostro esempio, il nome del nostro file è `51-cloud-init.yaml`.
 >>
@@ -348,7 +348,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo netplan try
 >> ```
 >>
->> Step 3: applica la configurazione
+>> **Step 3: applica la configurazione**
 >>
 >> Se è corretta, applicala utilizzando il comando seguente:
 >>
@@ -360,14 +360,14 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> > Quando si utilizza il comando `netplan try`, è possibile che il sistema restituisca un messaggio di avviso, ad esempio `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Significa semplicemente che il file non dispone di autorizzazioni restrittive. e la configurazione dell’Additional IP resta invariata. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >> >
 >>
-> AlmaLinux / Rocky Linux
->> **AlmaLinux (8 & 9), Rocky Linux (8 & 9)**
+> **AlmaLinux / Rocky Linux**
+>> AlmaLinux (8/9) & Rocky Linux (8/9)
 >> 
 >> Il file di configurazione principale si trova in `/etc/sysconfig/network-scripts/`. Nel nostro esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome file effettivo nella cartella.
 >> 
 >>  Per ogni Additional IP da configurare, creiamo un file di configurazione separato con i seguenti parametri: `ifcfg-NETWORK_INTERFACE:ID`. Dove `NETWORK_INTERFACE` rappresenta l’interfaccia fisica e `ID` è l’interfaccia di rete virtuale o l’alias ethernet che inizia con un valore di 0. Ad esempio, per la nostra interfaccia chiamata `eth0`, il primo alias è `eth0:0`, il secondo alias è `eth0:1`, ecc...
 >> 
->> Step 1: determina l’interfaccia
+>> **Step 1: determina l’interfaccia**
 >> 
 >> ```sh
 >> ip a
@@ -375,13 +375,13 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> 
 >> Annota il nome dell’interfaccia (quella su cui è configurato l’indirizzo IP principale del tuo server).
 >> 
->> Step 2: crea il file di configurazione
+>> **Step 2: crea il file di configurazione**
 >> 
 >> Iniziare creando il file di configurazione. Sostituisci `NETWORK_INTERFACE:ID` con i tuoi valori.
 >> 
->>  ```sh
->>  sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
->>  ```
+>> ```sh
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+>> ```
 >> 
 >> Successivamente, modifica il file con il contenuto seguente, sostituendo `NETWORK_INTERFACE:ID` e `ADDITIONAL_IP` con i tuoi valori:
 >> 
@@ -406,7 +406,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> ```
 >> ///
 >>
->> Step 3: riavvia l’interfaccia
+>> **Step 3: riavvia l’interfaccia**
 >>
 >> Per riavviare l’interfaccia esegui il comando:
 >>
@@ -414,16 +414,16 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> cPanel
->> **cPanel**
+> **cPanel**
+>> cPanel
 >>
->> Step 1: accedi alla gestione IP di WHM
+>> **Step 1: accedi alla gestione IP di WHM**
 >>
 >> Nello Spazio Cliente WHM, clicca su `IP Functions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
 >>
 >> ![Aggiungere un nuovo indirizzo IP](images/Cpanel-1.png){.thumbnail}
 >>
->> Step 2: aggiungi le informazioni degli Additional IP
+>> **Step 2: aggiungi le informazioni degli Additional IP**
 >>
 >> Inserisci il tuo indirizzo Additional IP nella forma `xxx.xxx.xxx.xxx` nel campo "New IP or IP range to add".
 >>
@@ -436,14 +436,14 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> > Attenzione: se si hanno più IP da configurare sullo stesso blocco e li si aggiunge tutti insieme, il sistema WHM obbliga a utilizzare la subnet mask `255.255.255.0`. Non si consiglia di utilizzare questa configurazione; è necessario aggiungere ogni IP singolarmente per utilizzare la subnet mask `255.255.255.255` appropriata.
 >> >
 >>
->> Step 3: verifica la configurazione IP corrente
+>> **Step 3: verifica la configurazione IP corrente**
 >>
 >> Di ritorno alla sezione `IP Functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente.
 >>
 >> ![check configured IP](images/Cpanel-2024-1.png){.thumbnail}
 >>
-> Windows Server
->> **Windows Server**
+> **Windows Server**
+>> Windows Server
 >>
 >> I server Windows vengono forniti solitamente con una configurazione di rete con DHCP abilitato di default. Se hai già aggiunto un Additional IP o modificato la tua configurazione per utilizzare un IP statico, passa direttamente allo step successivo.
 >>
@@ -506,15 +506,15 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> /// details | **Da interfaccia grafica**
 >>
->> 1\. Accedi al menu `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (nel menu a sinistra)
+>> 1. Accedi al menu `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (nel menu a sinistra)
 >>
->> 2\. Clicca con il tasto destro su Connessione alla rete local, nel nostro esempio `Ethernet 2`{.action}
+>> 2. Clicca con il tasto destro su Connessione alla rete local, nel nostro esempio `Ethernet 2`{.action}
 >>
->> 3\. Clicca su `Properties`{.action}
+>> 3. Clicca su `Properties`{.action}
 >>
->> 4\. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action}
+>> 4. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action}
 >>
->> 5\. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto precedentemente con il comando `ipconfig`{.action} . In `Preferred DNS Server`, inserisci 213.186.33.99.
+>> 5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto precedentemente con il comando `ipconfig`{.action} . In `Preferred DNS Server`, inserisci 213.186.33.99.
 >>
 >> ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
 >>
@@ -549,10 +549,10 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >> 
 >> ///
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
->> Step 1: accedi alla sezione Gestione di Plesk IP
+>> **Step 1: accedi alla sezione Gestione di Plesk IP**
 >>
 >> Nel pannello di configurazione Plesk, seleziona `Tools & Settings`{.action} nella barra laterale sinistra.
 >>
@@ -560,7 +560,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> Clicca su `IP Indirizzi`{.action} con **Tools & Settings**.
 >>
->> Step 2: aggiungi le informazioni IP supplementari
+>> **Step 2: aggiungi le informazioni IP supplementari**
 >>
 >> In questa sezione, clicca sul pulsante `Add IP Address`{.action}.
 >>
@@ -570,7 +570,7 @@ Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni si
 >>
 >> ![aggiungi informazioni IP](images/Plesk-2024-1.png){.thumbnail}
 >>
->> Step 3: verifica la configurazione IP corrente
+>> **Step 3: verifica la configurazione IP corrente**
 >>
 >> Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "Indirizzi IP".
 >>

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2025-11-04
+updated: 2025-12-05
 ---
 
 <style>
@@ -196,8 +196,9 @@ Um Ihr Angebot unter "Meine Dienste" im OVHcloud Kundencenter zu kündigen, folg
 |**Inhalt des E-Mail Accounts**<br>(E-Mails, Ordner, Kontakte)| Migriert|✅|
 |**Während des Migrationsprozesses empfangene E-Mails**| Zugestellt|✅|
 |**Automatische Antwort / Beantworter**| Beibehalten|✅|
-|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
+|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
 |**Persönliche Signatur**|- Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.<br>- Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.|⚠️|
+|**Externe Kontakte**|Mit dieser Funktion können Sie eine externe E-Mail-Adresse in das globale Adressbuch der E-Mail-Plattform integrieren. Diese Funktion ist in Zimbra nicht verfügbar.|❌|
 |**Blockieren / Erlauben**| Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen. Sie ist nicht kompatibel mit Zimbra, kann jedoch über Posteingangsregeln in Zimbra wiederhergestellt werden.|❌|
 |**Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar)| Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.|❌|
 |**Sicherheitseinstellungen**| Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.|❌|

@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2025-11-04
+updated: 2025-12-09
 ---
 
 <style>
@@ -187,6 +187,12 @@ Możesz wybrać instancję do zapisania.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **Nazwa** 
+
+Wprowadź nazwę do automatycznego planowania tworzenia kopii zapasowych. Zapoznaj się z informacjami na temat cennika i utwórz harmonogram, klikając przycisk `Utwórz`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
 #### **Harmonogram** 
 
 Możesz zdefiniować spersonalizowane planowanie kopii zapasowych lub wybrać jedną z domyślnych częstotliwości:
@@ -194,13 +200,16 @@ Możesz zdefiniować spersonalizowane planowanie kopii zapasowych lub wybrać je
 - Codzienna kopia zapasowa z retencją ostatnich 7 kopii zapasowych
 - Codzienna kopia zapasowa z retencją ostatnich 14 kopii zapasowych
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Nazwa** 
-
-Wprowadź nazwę do automatycznego planowania tworzenia kopii zapasowych. Zapoznaj się z informacjami na temat cennika i utwórz harmonogram, klikając przycisk `Utwórz`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Dodawanie kopia zapasowej w oddalonym miejscu**
+
+Kliknij przycisk `Dodaj zdalny backup`{.action}, wybierz lokalizację, przejrzyj informacje o cenie i kliknij przycisk `Utwórz`{.action}.
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
+
 
 ### Zarządzanie kopiami zapasowymi i planami
 

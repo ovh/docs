@@ -1,7 +1,7 @@
 ---
 title: "FAQ dotyczący domen & DNS"
 excerpt: "Znajdź najważniejsze pytania dotyczące domen, serwerów DNS i stref DNS"
-updated: 2025-10-10
+updated: 2025-12-16
 ---
 
 <style>
@@ -358,7 +358,7 @@ Rekordy DNS są używane, m.in. do:
 Istnieje wiele rekordów DNS. Każdy z nich ma określony cel w rozwiązywaniu DNS. W OVHcloud są one podzielone na trzy części:
 
 - **Pola wskazujące**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
-- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` i `TLSA`.
+- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
 - **Pola pocztowe**: `MX`, `SPF`, `DKIM` i `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ W tym miejscu zobaczysz wszystkie rekordy DNS, które możesz dodać za pomocą 
 Dzięki temu asystentowi konfiguracji możesz dodać następujące typy rekordów DNS:
 
 - **Pola wskazujące**: `A`, `AAAA`, `NS`, `CNAME` i `DNAME`.
-- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` i `TLSA`.
+- **Pola rozszerzone**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` i `HTTPS`.
 - **Pola pocztowe**: `MX`, `SPF`, `DKIM` i `DMARC`.
 
 > [!primary]

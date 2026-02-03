@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Wprowadzenie 
@@ -196,6 +196,10 @@ Uzupełnij Twoją nazwę głównego użytkownika („login”) FTP sufiksem wska
 Pamiętaj, aby zastąpić informację ogólną „uzytkownikftp” Twoją nazwą głównego użytkownika FTP. Zachowaj natomiast sufiks określający datę kopii zapasowej, do której chcesz uzyskać dostęp.
 
 Metoda logowania do Twojej przestrzeni dyskowej jest różna w zależności od używanego interfejsu lub programu.
+
+> [!primary]
+>
+> Kopie zapasowe są dostępne wyłącznie za pośrednictwem połączenia FTP.
 
 #### Etap 3: pobieranie wybranego pliku lub plików
 

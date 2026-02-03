@@ -206,7 +206,7 @@ print("Welcome", client.get('/me')['firstname'])
 
 Um Schlüssel aufzulisten und zu widerrufen, können Sie die [API-Konsole](/links/api) oder das [OVHcloud Kundencenter](/links/manager) verwenden:
 
-> [!tab]
+> [!tabs]
 > API-Konsole
 >>
 >> - Auflisten der Schlüssel-IDs mit dem folgenden Aufruf:
