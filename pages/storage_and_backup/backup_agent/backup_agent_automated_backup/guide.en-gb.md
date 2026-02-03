@@ -1,6 +1,6 @@
 ---
-title: "Backup Agent – Sauvegardes Sécurisées et Automatisées avec Plakar"
-excerpt: "Configurez un serveur dédié avec Plakar pour automatiser, chiffrer et superviser les backups de vos serveurs en toute sécurité."
+title: "Backup Agent – Secure and Automated Backups with Plakar"
+excerpt: "Set up a dedicated server with Plakar to automate, encrypt, and monitor your server backups securely."
 updated: 2026-02-04
 ---
 
@@ -19,69 +19,69 @@ details[open]>summary::before {
 </style>
 
 
-## Objectif
+## Objective
 
-Ce guide a pour objectif de vous montrer comment :
+This guide aims to show you how to:
 
-- Mettre en place un serveur dédié de backup capable de protéger vos serveurs automatiquement.
-- Configurer Plakar pour gérer vos backups de manière sécurisée, chiffrée et dédupliquée.
-- Planifier des backups automatiques et suivre leur état via une interface web intuitive.
-- Centraliser vos données dans un stockage objet résilient, garantissant leur disponibilité en cas de panne.
+- Set up a dedicated backup server capable of automatically protecting your servers.
+- Configure Plakar to manage backups in a secure, encrypted, and deduplicated way.
+- Schedule automated backups and monitor their status through an intuitive web interface.
+- Centralise your data in resilient Object Storage, ensuring availability in case of failure.
 
-À la fin, vous disposerez d’un système de backup fiable et entièrement automatisé, prêt pour une infrastructure professionnelle.
+By the end of this guide, you will have a reliable, fully automated backup system ready for a professional infrastructure.
 
-## Prérequis
+## Requirements
 
-- Un serveur [VPS](/links/bare-metal/vps) ou un [serveur dédié](/links/bare-metal/bare-metal).
-- Disposer d'un accès administrateur (sudo) via SSH à votre serveur
-- [Plakar](https://www.plakar.io/){.external} installé sur le serveur de backup (ou la possibilité de l’installer).
-- Un stockage objet compatible S3 pour héberger vos backups.
-- Avoir une compréhension basique de l'administration GNU/Linux
+- Un [VPS server](/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal).
+- Administrative (sudo) access to your server via SSH.
+- [Plakar](https://www.plakar.io/){.external} installed on the backup server (or the ability to install it).
+- An S3-compatible Object Storage service to host your backups.
+- A basic understanding of GNU/Linux system administration.
 
-## Aperçu de l'architecture
+## Architecture Overview
 
-Le système de backup automatisé repose sur trois composants principaux.
+The automated backup system is built around three main components.
 
-1. **Backup Server (VPS dédié) :**
-   
-- Exécute Plakar, qui gère la planification, la déduplication et le chiffrement des backups.
-- Supervise toutes les opérations via une interface web intuitive.
+1. **Backup Server (Dedicated VPS):**
 
-2. **Serveurs Sources :**
+- Runs Plakar, which handles backup scheduling, deduplication, and encryption.
+- Monitors all operations through an intuitive web interface.
 
-- Les serveurs dont les données doivent être sauvegardées.
-- Connectés au Backup Server via SSH/SFTP sécurisé, permettant des backups automatisés sans intervention manuelle.
+2. **Source Servers:**
 
-3. **Stockage Objet (S3-compatible) :**
+- The servers whose data needs to be backed up.
+- Connected to the Backup Server via secure SSH/SFTP, enabling fully automated backups without manual intervention.
 
-- Reçoit et stocke les backups de manière résiliente et sécurisée.
-- Permet de conserver des snapshots chiffrés et dédupliqués, garantissant la disponibilité des données en cas de panne.
+3. **Object Storage (S3-compatible):**
+
+- Receives and stores backups in a resilient and secure manner.
+- Keeps encrypted and deduplicated snapshots, ensuring data availability in the event of a failure.
 
 ![Architecture overview](images/architecture_overview.png){.thumbnail}
 
 ## Instructions
 
-### Étape 1: Configurer l'Object Storage
+### Step 1: Set Up Object Storage
 
-Avant d’exécuter le moindre backup, vous devez disposer d’un Object Storage compatible S3 pour stocker vos données de manière sécurisée et indépendante du serveur de backup.
+Before performing any backups, you need an S3-compatible Object Storage to store your data securely and independently from the backup server.
 
-L’utilisation d’Object Storage garantit que vos backups restent disponibles même en cas de perte ou de panne du serveur de backup.
+Using Object Storage ensures your backups remain available even if the backup server is lost or fails.
 
-**Accéder à Object Storage**
+**Access Object Storage**
 
-1. Connectez-vous à l'[espace client OVHcloud](/links/manager).
-2. Accédez à l'univers `Public Cloud`{.action}.
-3. Si aucun projet n’existe, créez un projet Public Cloud.
-4. Dans le menu de gauche, allez dans `Object Storage`{.action}.
+1. Log in to the [OVHcloud Control Panel](/links/manager).
+2. Navigate to the `Public Cloud`{.action}.
+3. If no project exists, create a new Public Cloud project.
+4. In the left-hand menu, go to `Object Storage`{.action}.
 
-**Créer un utilisateur Object Storage**
+**Create an Object Storage User**
 
-1. Ouvrez l’onglet `Users`{.action}.
-2. Cliquez sur `Create user`{.action}.
+1. Open the `Users`{.action} tab.
+2. Click `Create user`{.action}.
 
 ![Create Object Storage user](images/create_os_user.png){.thumbnail}
 
-3. Donnez une description au user (ex. plakar-backup).
+3. Give the user a description (e.g. plakar-backup).
 4. Téléchargez et conservez les credentials S3 :
    - Access Key
    - Secret Key
