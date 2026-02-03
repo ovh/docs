@@ -1,14 +1,14 @@
 ---
 title: Installer un agent OpenClaw sur un VPS OVHcloud
-excerpt: "Découvrez comment déployer une instance OpenClaw 24 h/24 sur votre VPS OVHcloud en utilisant le script d'installation officiel et le mode daemon"
+excerpt: "Découvrez comment déployer une instance OpenClaw 24 h/24 sur votre VPS OVHcloud en utilisant Docker Compose pour une isolation et une stabilité maximales."
 updated: 2026-02-03
 ---
 
-**OpenClaw** (successeur de Moltbot et Clawdbot) est la nouvelle version évoluée de l'assistant IA autonome. Ce guide vous accompagne dans l'installation de la Gateway sur l'infrastructure OVHcloud.
+**OpenClaw** (successeur de Moltbot et Clawdbot) est la nouvelle version évoluée de l'assistant IA autonome. Ce guide utilise **Docker** pour protéger votre système hôte tout en assurant que votre assistant reste en ligne 24h/24.
 
 ## Objectif
 
-L'objectif de ce guide est de faire fonctionner une **Gateway OpenClaw** persistante sur un VPS OVHcloud. Contrairement aux anciennes versions, OpenClaw s'installe désormais directement sur le système pour des performances accrues et une gestion simplifiée via son propre gestionnaire de processus (daemon).
+L'objectif est de déployer OpenClaw dans un conteneur. Cela permet d'isoler l'agent du reste du VPS (sécurité) et de simplifier les mises à jour (une seule commande pour changer de version).
 
 ## Prérequis
 
@@ -20,123 +20,86 @@ L'objectif de ce guide est de faire fonctionner une **Gateway OpenClaw** persist
 
 **Sommaire :**
 
-- [Étape 1 : Préparation du système](#prepare)
-- [Étape 2 : Installation de Node.js 22](#node-install)
-- [Étape 3 : Installation d'OpenClaw](#openclaw-install)
-- [Étape 4 : Configuration (onboarding)](#config)
-- [Étape 5 : Persistance et daemon](#daemon)
-- [Étape 6 : Accès sécurisé via tunnel SSH](#access)
+- [Étape 1 : Installation de Docker](#docker-install)
+- [Étape 2 : Préparation des répertoires](#prepare)
+- [Étape 3 : Configuration du déploiement (Docker Compose)](#config)
+- [Étape 4 : Lancement de l'agent](#launch)
+- [Étape 5 : Accès sécurisé via tunnel SSH](#access)
 
-### Étape 1 : Préparation du système <a name="prepare"></a>
+### Étape 1 : Installation de Docker <a name="docker-install"></a>
 
-Connectez-vous à votre VPS. Chez OVHcloud, utilisez l'utilisateur indiqué dans votre e-mail de livraison (par exemple, `debian` ou `ubuntu`).
+Sur votre VPS, installez Docker et son plugin Compose :
 
 ```bash
-# Mise à jour du système
-sudo apt-get update && sudo apt-get install -y git curl ca-certificates
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+```
+*Note : Déconnectez-vous et reconnectez-vous en SSH pour que l'ajout au groupe Docker soit effectif.*
+
+### Étape 2 : Préparation des répertoires <a name="prepare"></a>
+
+Docker a besoin de dossiers sur votre VPS pour stocker les données de manière permanente (sessions WhatsApp, mémoire).
+
+```bash
+mkdir -p ~/openclaw/data
+cd ~/openclaw
 ```
 
-### Étape 2 : Installation de Node.js 22 <a name="node-install"></a>
+### Étape 3 : Configuration du déploiement <a name="config"></a>
 
-OpenClaw nécessite Node.js version 22 ou supérieure pour fonctionner.
+Créez un fichier nommé docker-compose.yml dans ce dossier :
 
 ```bash
-# Installation de Node.js 22 via le dépôt officiel Nodesource
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt-get install -y nodejs
+nano docker-compose.yml
 ```
-
-### Étape 3 : Installation d'OpenClaw <a name="openclaw-install"></a>
-
-Nous utilisons l'installateur scripté recommandé, qui configure automatiquement l'environnement.
+Copiez-y la configuration suivante :
 
 ```bash
-# Lancement de l'installation officielle
-curl -fsSL https://openclaw.ai/install.sh | bash
+services:
+  openclaw:
+    image: openclaw/openclaw:latest
+    container_name: openclaw-gateway
+    restart: always
+    ports:
+      - "127.0.0.1:18789:18789"
+    volumes:
+      - ./data:/home/node/.openclaw
+    environment:
+      - NODE_ENV=production
 ```
 
 > [!warning]
 >
-> Si la commande openclaw n'est pas reconnue après l'installation, ajoutez manuellement le chemin des binaires npm à votre système :
->
-> ```bash
-> echo 'export PATH="$(npm prefix -g)/bin:$PATH"' >> ~/.bashrc
-> source ~/.bashrc
-> ```
+> Sécurité : En utilisant 127.0.0.1:18789:18789, le port est exposé uniquement à l'intérieur du VPS. Personne ne peut y accéder depuis l'extérieur sans le tunnel SSH.
 
-### Étape 4 : Configuration (onboarding) <a name="config"></a>
-
-Lancez l'assistant interactif pour configurer vos clés API et vos canaux de communication (WhatsApp, etc.).
+### Étape 4 : Lancement <a name="launch"></a>
+Démarrez votre agent :
 
 ```bash
-openclaw onboard
+docker compose up -d
 ```
 
-Suivez les instructions à l'écran. Lors du choix de la **Gateway**, sélectionnez *Local* pour restreindre l'accès au serveur lui-même (recommandé pour la sécurité).
+### Étape 5 : Accès sécurisé via tunnel SSH <a name="access"></a>
 
-### Étape 5 : Persistance et daemon <a name="daemon"></a>
-
-Pour que votre agent reste en ligne 24 heures sur 24 même après la fermeture de votre terminal ou un redémarrage du VPS, vous devez installer le service « daemon ».
-
-**Installation du service système**
-
-```bash
-openclaw onboard --install-daemon
-```
-
-**Vérifiez que le service est actif :**
-```bash
-openclaw status
-```
-
-### Étape 6 : Accès sécurisé via tunnel SSH <a name="access"></a>
-
-Par sécurité, la Gateway OpenClaw écoute sur l'interface locale (127.0.0.1). Pour accéder à l'interface graphique (Dashboard) depuis votre ordinateur personnel :
-
-1\. Ouvrez un terminal sur votre machine locale.
-
-2\. Créez un tunnel SSH sécurisé :
+1. **Sur votre ordinateur personnel** : Créez le tunnel
+La méthode reste identique, depuis votre ordinateur personnel, ouvrez un terminal : 
+- Windows : PowerShell ou Invite de commande (cmd).
+- Linux / macOS : Terminal.
 
 ```bash
 ssh -L 18789:127.0.0.1:18789 utilisateur@IP_DE_VOTRE_VPS
 ```
+*Laissez cette fenêtre de terminal ouverte pendant toute la durée de votre utilisation.*
 
-3\. Ouvrez votre navigateur et accédez à : <http://127.0.0.1:18789>.
-
-4\. La suite se passe dans le menu **Overview** : saisissez votre **Gateway Token** pour vous connecter.
-
-Vous pouvez retrouver votre **Gateway Token** sur votre VPS avec :
-
+2. **Sur votre VPS (autre fenêtre terminal)** : Récupérez votre Token d'accès : 
 ```bash
-grep -oP '"token":\s*"\K[^"]+' ~/.openclaw/openclaw.json
-grep -oP '"password":\s*"\K[^"]+' ~/.openclaw/openclaw.json
-
-# ou alors en allant directement dans le fichier où ils sont stockés
-nano openclaw.json
+cat ~/openclaw/data/openclaw.json | grep '"token":'
 ```
 
-### Ce qui persiste (source de vérité)
+Ouvrez votre navigateur et accédez à : <http://127.0.0.1:18789>.
+*Astuce : Si l'interface reste déconnectée, vous pouvez forcer la connexion en utilisant votre token directement dans l'URL : http://127.0.0.1:18789/?token=VOTRE_GATEWAY_TOKEN*
 
-Toutes vos données critiques sont stockées dans le répertoire personnel de l'utilisateur sur le VPS. Cela garantit que votre agent conserve sa mémoire et ses accès même après une mise à jour.
-
-| Composant | Emplacement par défaut | Notes |
-| :--- | :--- | :--- |
-| **Configurations** | `~/.openclaw/openclaw.json` | Contient les réglages réseau (bind, port) et l'état des services. |
-| **Secrets et clés** | `~/.openclaw/.env` | Stocke vos clés API et votre token de Gateway. | |
-| **Canaux (WhatsApp)** | `~/.openclaw/credentials/` | Contient les données d'authentification pour éviter de scanner le QR Code à chaque fois. |
-| **Mémoire et travail** | `~/.openclaw/workspace/` | Répertoire où l'IA génère des fichiers, du code ou stocke ses documents. |
-
-### Commandes essentielles
-
-Voici les commandes à connaître pour piloter votre instance directement depuis le terminal du VPS :
-
-| Commande | Action |
-| :--- | :--- |
-| `openclaw status` | Vérifie si la Gateway est active et liste les canaux (WhatsApp, etc.) connectés. |
-| `openclaw logs --follow` | Affiche l'activité de l'IA en temps réel (pratique pour déboguer un crash). |
-| `openclaw doctor` | Analyse votre installation et répare automatiquement les erreurs de configuration. |
-| `openclaw daemon restart` | Relance le service en arrière-plan (nécessaire après modification du fichier JSON). |
-| `openclaw update` | Télécharge et installe la toute dernière version d'OpenClaw sans perdre vos données. |
+La suite se passe dans le menu **Overview** : saisissez votre **Gateway Token** pour vous connecter.
 
 ## Aller plus loin
 
