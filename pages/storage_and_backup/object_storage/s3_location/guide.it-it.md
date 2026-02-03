@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoint e Object Storage geoavailability (EN)
 excerpt: Discover OVHcloud Object Storage endpoints and regions
-updated: 2025-11-19
+updated: 2026-02-03
 ---
 
 <style>
@@ -59,7 +59,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access, Cold Archive</td>
+        <td>Standard, Infrequent Access, Active Archive and Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
@@ -67,7 +67,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
         <td>HTTPS</td>
         <td>4</td>
         <td>3-AZ region</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Standard, Infrequent Access and Active Archive</td>
     </tr>
     <tr>
         <td>Frankfurt</td>
@@ -164,13 +164,14 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=4>Standard, Infrequent Access</td>
+        <td rowspan=2>Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
     </tr>
     <tr>
         <td>GLACIER_IR</td>
+        <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -200,7 +201,11 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Infrequent Access</td>
+    </tr>
+     <tr>
+        <td>GLACIER_IR</td>
+        <td>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
@@ -248,14 +253,14 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard, Infrequent Access</td>
+        <td rowspan=1>Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
+         <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
@@ -278,11 +283,11 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Infrequent Access</td>
     </tr>
     <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
+        <td>GLACIER</td>
+        <td>Active Archive</td>
     </tr>
 </table>
 

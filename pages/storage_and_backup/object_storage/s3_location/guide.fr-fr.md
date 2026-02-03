@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 excerpt: Découvrez les points de terminaison et régions de l'Object Storage OVHcloud
-updated: 2025-11-19
+updated: 2026-02-03
 ---
 
 <style>
@@ -59,7 +59,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 3-AZ</td>
-        <td>Standard, Infrequent Access, Cold Archive</td>
+        <td>Standard, Infrequent Access, Active Archive, Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
@@ -67,7 +67,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 3-AZ</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Standard, Infrequent Access, Active Archive</td>
     </tr>
     <tr>
         <td>Francfort</td>
@@ -164,13 +164,14 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=4>Standard, Infrequent Access</td>
+        <td rowspan=2>Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
     </tr>
     <tr>
         <td>GLACIER_IR</td>
+        <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -200,7 +201,11 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Infrequent Access</td>
+    </tr>
+     <tr>
+        <td>GLACIER_IR</td>
+        <td>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
@@ -248,14 +253,14 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard, Infrequent Access</td>
+        <td rowspan=1>Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
+        <td rowspan=2>Active Archive</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
@@ -278,11 +283,11 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard, Infrequent Access</td>
+        <td>Infrequent Access</td>
     </tr>
     <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
+        <td>GLACIER</td>
+        <td>Active Archive</td>
     </tr>
 </table>
 
