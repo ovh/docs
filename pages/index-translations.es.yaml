@@ -461,22 +461,22 @@ storage-object-storage-swift-troubleshooting: Resolución de problemas
 storage-object-storage-swift-additional-resources: Recursos adicionales
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-enterprise-file-storage-key-concepts: Primeros pasos
-storage-file-storage-enterprise-file-storage-getting-started: Premiers pas
+storage-file-storage-enterprise-file-storage-key-concepts: Conceptos clave
+storage-file-storage-enterprise-file-storage-getting-started: Primeros pasos
 storage-file-storage-enterprise-file-storage-configuration: Configuración
 storage-file-storage-enterprise-file-storage-migration: Migración
 storage-file-storage-enterprise-file-storage-additional-resources: Recursos adicionales
 storage-file-storage-ha-nas: NAS-HA
-storage-file-storage-ha-nas-key-concepts: Primeros pasos
-storage-file-storage-ha-nas-getting-started: Premiers pas
+storage-file-storage-ha-nas-key-concepts: Conceptos clave
+storage-file-storage-ha-nas-getting-started: Primeros pasos
 storage-file-storage-ha-nas-configuration: Configuración
 storage-file-storage-ha-nas-migration: Migración
 storage-file-storage-ha-nas-additional-resources: Recursos adicionales
 storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
-storage-file-storage-public-cloud-file-storage-getting-started: Premiers pas
+storage-file-storage-public-cloud-file-storage-getting-started: Primeros pasos
 storage-block-storage: Block Storage
 storage-block-storage-block-volume: Block volume
-storage-block-storage-block-volume-key-concepts: Primeros pasos
+storage-block-storage-block-volume-key-concepts: Conceptos clave
 storage-block-storage-block-volume-getting-started: Primeros pasos
 storage-block-storage-block-volume-configuration: Configuración
 storage-block-storage-block-volume-migration: Migración
@@ -492,6 +492,10 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Conceptos clave
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Primeros pasos
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Resolución de problemas
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Recursos adicionales
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Conceptos clave
 network-additional-ip-configuration: Configuración

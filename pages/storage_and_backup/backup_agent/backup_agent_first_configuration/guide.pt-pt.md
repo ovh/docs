@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Como configurar a sua primeira cópia de segurança"
 excerpt: "Como configurar a sua primeira cópia de segurança no seu servidor Bare Metal com o produto Backup Agent"
-updated: 2026-01-28
+updated: 2026-02-03
 ---
 
 ## Objetivo
@@ -17,6 +17,17 @@ Acabou de encomendar a sua oferta Backup Agent para o seu servidor Bare Metal, d
 - Estar ligado ao [área de cliente OVHcloud](/links/manager).
 - Ter encomendado um serviço Backup Agent no momento da encomenda do seu servidor Bare Metal ou posteriormente através do menu `Backup Agent`{.action} do seu espaço cliente.
 - Ter iniciado e configurado um sistema operativo no seu servidor Bare Metal.
+
+> [!warning]
+>
+> Deve garantir que o seu servidor possa ser alcançado pela nossa infraestrutura Veeam.
+> Aqui estão as informações a autorizar no seu servidor Bare Metal:
+>
+> - IP/DNS do servidor: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Porta: 6180
+>
+> Recomendamos vivamente que permita também que o seu servidor possa alcançar outros endereços externos para poder enviar os seus dados para o Vault. Não é necessário autorizar um fluxo de entrada neste contexto.
+
 
 ## Instruções
 

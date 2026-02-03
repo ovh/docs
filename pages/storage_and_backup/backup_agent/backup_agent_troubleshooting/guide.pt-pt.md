@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnóstico e resolução de problemas"
 excerpt: "Descubra como resolver problemas potenciais relacionados ao Backup Agent"
-updated: 2026-01-20
+updated: 2026-02-03
 ---
 
 <style>
@@ -109,6 +109,46 @@ Por fim, reinicie o serviço veeamservice.
 
 ///
 
+/// details | A minha cópia de segurança está em erro, como posso ver o problema?
+
+Se a sua cópia de segurança está em erro, pode diagnosticar o problema diretamente a partir do agente. Clique no separador correspondente ao seu sistema operativo:
+
+> [!tabs]
+> Windows
+>>
+>> Para ver os detalhes de um erro de cópia de segurança no Windows:
+>>
+>> 1. Abra a aplicação "Veeam Agent" no seu servidor Bare Metal.
+>> 2. Na interface principal, verá o estado das suas cópias de segurança.
+>> 3. Clique na cópia de segurança em erro para ver os detalhes do erro.
+>> 4. Consulte a secção **History** ou **Last Session** para ver as mensagens de erro detalhadas.
+>>
+>> A interface mostrar-lhe-á informações precisas sobre a causa do erro, permitindo-lhe identificar rapidamente o problema.
+>
+> Linux
+>>
+>> Para ver os detalhes de um erro de cópia de segurança no Linux, pode utilizar a interface de utilizador:
+>>
+>> 1\. Ligue-se ao seu servidor Bare Metal por SSH.
+>> 2\. Lance a interface Veeam escrevendo o seguinte comando:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
+>>
+>> 3\. Na interface, navegue para a secção das cópias de segurança para ver o estado dos seus trabalhos.
+>> 4\. Selecione a cópia de segurança em erro para consultar os detalhes do erro.
+>>
+>> Também pode consultar os registos diretamente através da linha de comandos:
+>>
+>> ```bash
+>> sudo veeamconfig session list
+>> ```
+>>
+>> Este comando mostrar-lhe-á a lista das sessões de cópia de segurança com o seu estado e os detalhes dos erros eventuais.
+
+///
+
 /// details | A minha utilização do armazenamento não atualizou-se após a eliminação de um agente.
 
 Conservamos os seus dados durante 14 dias após a eliminação de um agente, a utilização do armazenamento atualizar-se-á após os 14 dias e a eliminação dos dados.
@@ -119,23 +159,87 @@ Conservamos os seus dados durante 14 dias após a eliminação de um agente, a u
 
 A alteração da senha é feita por meio do link "Esqueceu a palavra-passe?" disponível na console VSPC.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
-
-///
-
-/// details | Desinstalei o meu Veeam Agent, como o reinstalo?
-
-[Contacte o suporte OVHcloud](/links/support) para que a nossa equipa possa ajudá-lo a reinstalar o seu agente.
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
 /// details | Reinstalei o meu servidor, como reinstalo o Backup Agent?
 
-Tem de eliminar o seu agente na secção Agents do seu vspc-tenant e, em seguida, transferir e instalar o agente no seu novo sistema operativo.
+Tem de transferir o agente a partir do seu [área de cliente OVHcloud](/links/manager) e instalá-lo no seu novo sistema operativo.
 
 ///
+
+## Encontrar e exportar os registos
+
+Para resolver problemas com o Backup Agent, é frequentemente necessário consultar e exportar os registos do produto. Clique no separador correspondente ao seu sistema operativo:
+
+> [!tabs]
+> Windows
+>>
+>> **Localizar os registos**
+>>
+>> Os registos do Veeam Agent para Windows são armazenados no seguinte diretório:
+>>
+>> ```
+>> C:\ProgramData\Veeam\Endpoint\Logs
+>> ```
+>>
+>> **Exportar os registos**
+>>
+>> Para exportar os registos no Windows, pode utilizar a interface gráfica do Veeam Agent:
+>>
+>> 1. Abra a aplicação "Veeam Agent" no seu servidor.
+>> 2. Vá ao menu `Help`{.action} > `Export Logs`{.action}.
+>> 3. Selecione o diretório de destino para o arquivo de registos.
+>> 4. Clique em `Export`{.action} para gerar o arquivo.
+>>
+>> O arquivo será criado no formato `.zip` e conterá todos os registos e ficheiros de configuração necessários para o diagnóstico.
+>>
+>> Para mais informações, consulte o artigo [Veeam KB2404](https://www.veeam.com/kb2404).
+>
+> Linux
+>>
+>> **Localizar os registos**
+>>
+>> Os registos do Veeam Agent para Linux são armazenados no seguinte diretório:
+>>
+>> ```bash
+>> /var/log/veeam/
+>> ```
+>>
+>> Também pode consultar os registos do serviço Veeam:
+>>
+>> ```bash
+>> /var/log/veeam/veeamservice.log
+>> ```
+>>
+>> **Exportar os registos**
+>>
+>> Para exportar os registos no Linux, tem duas opções:
+>>
+>> 1\. Via linha de comandos
+>>
+>> Utilize o seguinte comando para exportar os registos. O arquivo será guardado no diretório de trabalho atual:
+>>
+>> ```bash
+>> sudo veeamconfig log export
+>> ```
+>>
+>> Para especificar um diretório de destino, utilize:
+>>
+>> ```bash
+>> sudo veeamconfig log export --path /caminho/para/destino
+>> ```
+>>
+>> 2\. Via painel de controlo
+>>
+>> Se tiver acesso a uma interface gráfica, pode exportar os registos via painel de controlo do Veeam Agent especificando o diretório de destino.
+>>
+>> O arquivo será criado no formato `.tar.gz` e conterá todos os registos e ficheiros de configuração necessários para o diagnóstico.
+>>
+>> Para mais informações, consulte a [documentação Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/logs_export.html?ver=13).
 
 ## Quer saber mais?
 
