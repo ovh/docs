@@ -1,7 +1,7 @@
 ---
 title: Limites connues
 excerpt: 'Exigences et limites à respecter'
-updated: 2026-02-02
+updated: 2026-02-03
 ---
 
 <style>

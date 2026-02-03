@@ -1,7 +1,7 @@
 ---
 title: Utilisation des Floating IP sur Managed Kubernetes Service
 excerpt: Découvrez comment activer et gérer les Floating IP sur les nœuds workers pour les clusters Managed Kubernetes Service
-updated: 2026-02-02
+updated: 2026-02-03
 ---
 
 ## Objectif

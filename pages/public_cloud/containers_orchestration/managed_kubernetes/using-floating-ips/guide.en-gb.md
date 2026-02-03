@@ -1,7 +1,7 @@
 ---
 title: Using Floating IPs on Managed Kubernetes Service
 excerpt: Find out how to enable and manage Floating IPs on worker nodes for Managed Kubernetes Service clusters
-updated: 2026-02-02
+updated: 2026-02-03
 ---
 
 ## Objective

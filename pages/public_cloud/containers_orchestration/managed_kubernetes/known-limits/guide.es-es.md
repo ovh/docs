@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-02-02
+updated: 2026-02-03
 ---
 
 <style>
