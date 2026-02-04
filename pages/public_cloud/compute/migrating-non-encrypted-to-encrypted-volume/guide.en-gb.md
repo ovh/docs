@@ -36,31 +36,31 @@ In your [OVHcloud Control Panel](/links/manager), create a new Block Storage vol
 
 2. Verify that both volumes are visible on your instance:
 
-    ```bash
-    lsblk
-    ```
+```bash
+lsblk
+```
 
     Example output:
 
-    ```bash
-    /dev/vdb # source volume 
-    /dev/vdc # target LUKS volume
-    ```
+```bash
+/dev/vdb # volume source
+/dev/vdc # volume cible LUKS
+```
 
 ### Step 3: Prepare the LUKS (encrypted) volume
 
 1. Format the LUKS volume with the filesystem of your choice (for example, ext4):
 
-    ```bash
-    sudo mkfs.ext4 /dev/vdc
-    ```
+```bash
+sudo mkfs.ext4 /dev/vdc
+```
 
 2. Mount the target volume:
 
-    ```bash
-    sudo mkdir -p /mnt/luks_target
-    sudo mount /dev/vdc /mnt/luks_target
-    ```
+```bash
+sudo mkdir -p /mnt/luks_target
+sudo mount /dev/vdc /mnt/luks_target
+```
 
 ### Step 4: Mount the source volume
 
@@ -89,10 +89,10 @@ sudo rsync -aAXHv --progress /mnt/source_volume/ /mnt/luks_target/
 
 2. Unmount both volumes:
 
-    ```bash
-    sudo umount /mnt/source_volume
-    sudo umount /mnt/luks_target
-    ```
+```bash
+sudo umount /mnt/source_volume
+sudo umount /mnt/luks_target
+```
 
 3. Detach the source volume if it is no longer needed.
 
