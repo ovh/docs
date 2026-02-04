@@ -63,7 +63,7 @@ services:
     ports:
       - "127.0.0.1:18789:18789"
     volumes:
-      - ./data:/home/node/.openclaw
+      - ~/openclaw/data:/home/node/.openclaw
     environment:
       - NODE_ENV=production
 ```
