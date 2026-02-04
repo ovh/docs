@@ -46,7 +46,7 @@ Ces informations sont indispensables pour maintenir votre compte conforme et **a
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
 
-Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur l'onglet `Commande de numéros`{.action} ou sur `Commander un numéro`{.action} dans le menu « Je veux... ».
+Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le menu « Je veux... ».
 
 ![commande de numéro](images/sva-commande.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Cochez la case :
 
 ![ajout bénéficiaires](images/sva-beneficiaire2.png){.thumbnail}
 
-Cliquez sur `Etape suivante`{.action}.
+Cliquez sur `Étape suivante`{.action}.
 
 Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis saisissez `CONFIRMER` dans le champ prévu à cet effet et cliquez sur `Valider mes informations`{.action}.
 
@@ -90,19 +90,19 @@ Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis 
 
 ### Téléverser les documents justificatifs
 
-Une fois vos informations saisies, la liste des documents justificatifs à fournir apparaît. Cliquez sur le bouton `...`{.action} puis sur `Télécharger`{.action} à droite de chaque document à fournir. 
+Une fois vos informations saisies, vous devrez fournir des documents justificatifs sur l'interface **Lemonway**.
 
-Cliquez sur `Sélectionner un fichier`{.action}, sélectionnez le document correspondant sur votre poste de travail puis cliquez sur `Valider le document`{.action}.
+![confirmation](images/sva-lemonway01.png){.thumbnail}
 
-> [!warning]
-> **Choix de la pièce d'identité :**
+Cliquez sur `C'est parti`{.action} pour fournir vos documents.
+
+![confirmation](images/sva-lemonway02.png){.thumbnail}
+
+> [!primary]
 >
-> Veillez à bien sélectionner, via le menu déroulant prévu à cet effet, le type de pièce d'identité que vous souhaitez ajouter **avant** de la téléverser.
+> Si vous ne pouvez pas fournir tous vos documents en une fois, cliquez sur `Enregistrer et finir plus tard`{.action}.
 >
-
-![ajout des documents](images/sva-documents-v2.png){.thumbnail}
-
-Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`{.action}.
+> Pour accéder par la suite à la plateforme Lemonway : dans le `Tableau de bord`{.action} du groupe de facturation VoIP, cliquez sur `Voir mon profil SVA`{.action}.
 
 ### Liste des documents requis
 
@@ -250,23 +250,12 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Les **statuts datés et signés** au nom de l'association diocésaine ou du diocèse.
 - Un **Relevé d'Identité Bancaire**.
 
-### Vérifier le statut de mes documents
+### Vérifier le statut de mes documents <a name="statut-docs"></a>
 
-Dans votre `Tableau de bord`{.action}, cliquez sur `Voir mon profil SVA`{.action} dans la partie `Profil SVA`.
+Dans votre `Tableau de bord`{.action}, vérifiez le statut de votre **Profil SVA** :
 
-Vous aurez alors accès aux coordonnées précédemment renseignées ainsi qu'au tableau récapitulatif de vos documents.
-
-La colonne `Statut` du tableau vous indique le statut de validation du document. Le bouton `...`{.action} à droite de chaque document vous permet d'interagir en conséquence.
-
-Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez également les mettre à jour depuis votre espace client OVHcloud.
-
-|Statut|Description|Action possible|
-|---|---|---|
-|Valide|Votre document a été validé par nos équipes|Pas d'action possible|
-|Attente de validation|Votre document a bien été réceptionne et va être vérifié par nos équipes|Pas d'action possible avant la vérification du document|
-|Non valide|Votre document a été vérifié mais n'est pas conforme|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif|
-|Arrivé à expiration le XX/XX/XXXX|La date de fin de validité sera bientôt atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
-|Expiré|La date de fin de validité du document est atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
+- **En attente de validation** : vos documents ne sont pas encore intégralement fournis ou validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway.
+- **Valide** : vos documents sont validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à vos informations et les modifier si nécessaire.
 
 ## Aller plus loin
 
