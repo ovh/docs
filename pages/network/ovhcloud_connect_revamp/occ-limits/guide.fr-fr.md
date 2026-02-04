@@ -1,14 +1,21 @@
 ---
-title: Capacités et limites techniques
+title: Capacités fonctionnelles et limites techniques
 excerpt: 'Découvrez les capacités et limites techniques de l offre OVHcloud Connect'
 updated: 2025-10-03
 ---
 
-## Objectif
+# Capacités fonctionnelles et limites techniques
 
-**Découvrez les capacités et limitations techniques de l'offre OVHcloud Connect.**
+## Général
 
-## En pratique
+### Produits OVHcloud compatibles
+
+Via OVHcloud Connect, vous pouvez atteindre l'ensemble des services OVHcloud intégrables à un vRack:
+- Bare Metal Servers
+- Public Cloud Instances
+- Hosted Private Cloud (VMware)
+
+## Caractéristiques spécifiques d'OVHcloud Connect Direct
 
 ### Capacités de la connexion
 
@@ -27,6 +34,7 @@ updated: 2025-10-03
 
 #### Mode Layer-3
 
+[comment]: mettre à jour pour supprimer la notion d'entry point
 * Chaque EntryPoint/POP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
 * Chaque EndPoint/DC prend en charge jusqu’à 4 peers BGP
 * Jusqu’à 100 préfixes peuvent être annoncés par session BGP
@@ -56,6 +64,7 @@ updated: 2025-10-03
 
 ### Problèmes connus
 
+[comment]:ne peux pas être formulé comme ça >> soit c'est dans la FAQ, soit on crée une section Debug
 Les problèmes suivants sont présents sur OVHcloud Connect.
 
 | Problème | Détail | Cause | Contournement | Sites impactés |
