@@ -1,14 +1,21 @@
 ---
-title: Capacités et limites techniques
+title: Capacités fontionnelles et limites techniques
 excerpt: 'Découvrez les capacités et limites techniques de l offre OVHcloud Connect'
 updated: 2025-10-03
 ---
 
-## Objectif
+# Capacités fontionnelles et limites techniques
 
-**Découvrez les capacités et limitations techniques de l'offre OVHcloud Connect.**
+## Général
 
-## En pratique
+### Produits OVHcloud compatibles
+
+Au travers d'OVHcloud Connect, vous pourrez atteindre l'ensembles de vos services pouvant être intégré à un vRack:
+- Bare Metal Servers
+- Public Cloud Instances
+- Hosted Private Cloud (VMware)
+
+## Caractéristiques spécifiques d'OVHcloud Connect Direct
 
 ### Capacités de la connexion
 
@@ -56,6 +63,7 @@ updated: 2025-10-03
 
 ### Problèmes connus
 
+[comment]:ne peux pas être formulé comme ça >> soit c'est dans la FAQ, soit on crée une section Debug
 Les problèmes suivants sont présents sur OVHcloud Connect.
 
 | Problème | Détail | Cause | Contournement | Sites impactés |
