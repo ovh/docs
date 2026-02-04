@@ -1,18 +1,18 @@
 ---
 title: How to install an OpenClaw agent on an OVHcloud VPS
-excerpt: "Find out how to deploy an OpenClaw instance 24/7 on your OVHcloud VPS using the official installation script and daemon mode"
-updated: 2026-02-03
+excerpt: "Discover how to deploy a 24/7 OpenClaw instance on your OVHcloud VPS using Docker Compose for maximum isolation and stability"
+updated: 2026-02-04
 ---
 
-**OpenClaw** (successor to Moltbot and Clawdbot) is the new evolved version of the autonomous AI assistant. This guide will guide you through the installation of the Gateway on the OVHcloud infrastructure.
+**OpenClaw** (successor to Moltbot and Clawdbot) is the new evolved version of the autonomous AI assistant. This guide uses **Docker** to protect your host system while ensuring your assistant remains online 24/7.
 
 ## Objective
 
-The objective of this guide is to run a **persistent OpenClaw Gateway** on an OVHcloud VPS. Unlike previous versions, OpenClaw is now installed directly on the system for improved performance and simplified management via its own process manager (daemon).
+The objective is to deploy OpenClaw in a container. This allows the agent to be isolated from the rest of the VPS (which is a good security practice) and simplifies updates (only one command is needed to change versions).
 
 ## Requirements
 
-- An active [OVHcloud VPS](/links/bare-metal/vps) offer.
+- An active [OVHcloud VPS](/links/bare-metal/vps).
 - Access via SSH to your server using the default user (`ubuntu`, `debian`, etc.).
 - An API key (Anthropic or OpenAI).
 
@@ -20,123 +20,94 @@ The objective of this guide is to run a **persistent OpenClaw Gateway** on an OV
 
 **Table of contents:**
 
-- [Step 1: System preparation](#prepare)
-- [Step 2: Install Node.js 22](#node-install)
-- [Step 3: Install OpenClaw](#openclaw-install)
-- [Step 4: Configuration (onboarding)](#config)
-- [Step 5: Persistence and daemon](#daemon)
-- [Step 6: Secure access via SSH tunnel](#access)
+- [Step 1 - Install Docker](#docker-install)
+- [Step 2 - Prepare directories](#prepare)
+- [Step 3 - Deployment configuration (Docker Compose)](#config)
+- [Step 4 - Launch the agent](#launch)
+- [Step 5 - Secure access via an SSH tunnel](#access)
 
-### Step 1: System preparation <a name="prepare"></a>
+### Step 1 - Install Docker <a name="docker-install"></a>
 
-Log in to your VPS. With OVHcloud, use the user indicated in your delivery email (e.g., `debian` or `ubuntu`).
+On your VPS, install Docker and its Compose plugin:
 
 ```bash
-# System update
-sudo apt-get update && sudo apt-get install -y git curl ca-certificates
+curl -fsSL https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
 ```
 
-### Step 2: Installing Node.js 22 <a name="node-install"></a>
+*Note: Log out and log back in via SSH for the Docker group addition to take effect.*
 
-OpenClaw requires Node.js version 22 or higher to function.
+### Step 2 - Prepare directories <a name="prepare"></a>
+
+Docker needs folders on your VPS to store data permanently (WhatsApp sessions, memory).
 
 ```bash
-# Install Node.js 22 via the official Nodesource repository
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt-get install -y nodejs
+mkdir -p ~/openclaw/data
+cd ~/openclaw
 ```
 
-### Step 3: Installing OpenClaw <a name="openclaw-install"></a>
+### Step 3 - Deployment configuration <a name="config"></a>
 
-We use the recommended scripted installer, which automatically configures the environment.
+Create a file named docker-compose.yml in this folder:
 
 ```bash
-# Launch the official installation
-curl -fsSL https://openclaw.ai/install.sh | bash
+nano docker-compose.yml
+```
+
+Copy the following configuration into it:
+
+```bash
+services:
+  openclaw:
+    image: openclaw/openclaw:latest
+    container_name: openclaw-gateway
+    restart: always
+    ports:
+      - "127.0.0.1:18789:18789"
+    volumes:
+      - ~/openclaw/data:/home/node/.openclaw
+    environment:
+      - NODE_ENV=production
 ```
 
 > [!warning]
 >
-> If the `openclaw` command is not recognized after installation, manually add the npm binaries path to your system:
->
-> ```bash
-> echo 'export PATH="$(npm prefix -g)/bin:$PATH"' >> ~/.bashrc
-> source ~/.bashrc
-> ```
+> Security: By using 127.0.0.1:18789:18789, the port is exposed only within the VPS. No one can access it from the outside without the SSH tunnel.
 
-### Step 4: Configuration (onboarding) <a name="config"></a>
+### Step 4 - Launch <a name="launch"></a>
 
-Launch the interactive assistant to configure your API keys and communication channels (WhatsApp, etc.).
+Start your agent:
 
 ```bash
-openclaw onboard
+docker compose up -d
 ```
 
-Follow the on-screen instructions. When choosing the **Gateway**, select *Local* to restrict access to the server itself (recommended for security).
+### Step 5 - Secure access via an SSH tunnel <a name="access"></a>
 
-### Step 5: Persistence and daemon <a name="daemon"></a>
+1\. **On your personal computer**, create the tunnel.
 
-To keep your agent online 24/7 even after closing your terminal or rebooting the VPS, you must install the "daemon" service.
+The method remains the same. From your personal computer, open a terminal:
 
-**Install the system service**
+- Windows: PowerShell or Command Prompt (cmd).
+- Linux / macOS: Terminal.
 
 ```bash
-openclaw onboard --install-daemon
+ssh -L 18789:127.0.0.1:18789 user@YOUR_VPS_IP
 ```
 
-**Check that the service is active:**
-```bash
-openclaw status
-```
+*Keep this terminal window open for the entire duration of your use.*
 
-### Step 6: Securing access via SSH tunnel <a name="access"></a>
-
-For security, the OpenClaw Gateway listens on the local interface (127.0.0.1). To access the graphical interface (Dashboard) from your personal computer:
-
-1\. Open a terminal on your local machine.
-
-2\. Create a secure SSH tunnel:
+2\. **On your VPS (another terminal window)**, retrieve your access token:
 
 ```bash
-ssh -L 18789:127.0.0.1:18789 utilisateur@IP_DE_VOTRE_VPS
+cat ~/openclaw/data/openclaw.json | grep '"token":'
 ```
 
-3\. Open your browser and go to: <http://127.0.0.1:18789>.
+Open your browser and go to: <http://127.0.0.1:18789>.
 
-4\. The next steps take place in the **Overview** menu: enter your **Gateway Token** to log in.
+*Tip: If the interface remains disconnected, you can force the connection by using your token directly in the URL: http://127.0.0.1:18789/?token=VOTRE_GATEWAY_TOKEN*
 
-You can find your **Gateway Token** on your VPS with:
-
-```bash
-grep -oP '"token":\s*"\K[^"]+' ~/.openclaw/openclaw.json
-grep -oP '"password":\s*"\K[^"]+' ~/.openclaw/openclaw.json
-
-# or by directly accessing the file where they are stored
-nano openclaw.json
-```
-
-### What persists (source of truth)
-
-All your critical data is stored in the user's home directory on the VPS. This ensures that your agent retains its memory and access even after an update.
-
-| Component | Default location | Notes |
-| :--- | :--- | :--- |
-| **Configurations** | `~/.openclaw/openclaw.json` | Contains network settings (bind, port) and service status. |
-| **Secrets and keys** | `~/.openclaw/.env` | Stores your API keys and Gateway token. | |
-| **Channels (WhatsApp)** | `~/.openclaw/credentials/` | Contains authentication data to avoid scanning the QR Code each time. |
-| **Memory and work** | `~/.openclaw/workspace/` | Directory where the AI generates files, code, or stores documents. |
-
-### Essential commands
-
-Here are the commands you should know to manage your instance directly from the VPS terminal:
-
-| Command | Action |
-| :--- | :--- |
-| `openclaw status` | Checks if the Gateway is active and lists connected channels (WhatsApp, etc.). |
-| `openclaw logs --follow` | Displays the AI's activity in real time (useful for debugging a crash). |
-| `openclaw doctor` | Analyzes your installation and automatically fixes configuration errors. |
-| `openclaw daemon restart` | Restarts the background service (required after modifying the JSON file). |
-| `openclaw update` | Downloads and installs the latest version of OpenClaw without losing your data. |
+The rest takes place in the **Overview** menu: enter your **Gateway Token** to log in.
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: How to install Nextcloud on an OVHcloud VPS with Docker
 excerpt: "Find out how to easily install Nextcloud on an OVHcloud VPS using Docker and Docker Compose, to have a functional personal cloud"
-updated: 2026-02-03
+updated: 2026-02-04
 ---
 
 ## Objective

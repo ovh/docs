@@ -1,7 +1,7 @@
 ---
 title: Installer Nextcloud sur un VPS OVHcloud avec Docker et Traefik
 excerpt: "Découvrez comment déployer Nextcloud sur un VPS OVHcloud avec HTTPS automatique via Traefik, MariaDB et Redis"
-updated: 2026-02-03
+updated: 2026-02-04
 ---
 
 ## Objectif
