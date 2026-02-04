@@ -8,7 +8,7 @@ updated: 2026-01-29
 
 OVHcloud Connect est un service de connectivité réseau qui permet de relier directement votre infrastructure (datacenter, site on-premise, réseau opérateur ou WAN d’entreprise) au réseau privé d’OVHcloud (vRack) sans passer par Internet.
 
-[//]: <> (changement de schema pour davantage d'informations, on a travaillé un autre design avec Grégoire cf ci-dessous, à adapter pour vue horizontale)
+> changement de schema pour davantage d'informations, on a travaillé un autre design avec Grégoire cf ci-dessous, à adapter pour vue horizontale
 <img width="606" height="1230" alt="image" src="https://github.com/user-attachments/assets/dccd1a94-3981-4254-a84f-9ccacd6b1ea9" />
 
 
