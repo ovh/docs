@@ -38,7 +38,7 @@ At the end of this guide, you will have:
 Connect to your VPS via SSH with the user provided by OVHcloud (e.g. `ubuntu`).
 
 ```bash
-ssh ubuntu@IPv4_DE_VOTRE_VPS
+ssh ubuntu@IPv4_OF_YOUR_VPS
 ```
 
 ### Step 2: Preparing the system <a name="step2"></a>
