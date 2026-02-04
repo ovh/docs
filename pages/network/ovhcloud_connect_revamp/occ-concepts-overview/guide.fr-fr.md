@@ -8,11 +8,21 @@ updated: 2026-01-29
 
 OVHcloud Connect est un service de connectivité réseau qui permet de relier votre infrastructure (datacenter, site on-premise, réseau opérateur ou WAN d’entreprise) directement au réseau privé d’OVHcloud (vRack) sans passer par Internet.
 
-![OVHcloud Connect](images/VrackConnectDedicated2025.png){.thumbnail}
+> changement de schema pour davantage d'informations, on a travaillé un autre design avec Grégoire cf ci-dessous, à adapter pour vue horizontale 
+<img width="606" height="1230" alt="image" src="https://github.com/user-attachments/assets/8279e1c4-c7d3-400f-853c-2a2647273da4" />
+
 
 > [!primary]
 > Pour des définitions techniques détaillées, reportez-vous au [Glossaire OVHcloud Connect](/pages/network/ovhcloud_connect_revamp/occ-glossary).
 >
+
+La solution est taillée pour les architectures cloud hybride et multi-cloud nécessitant :
+- des performances réseau garanties,
+- une faible latence,
+- un haut niveau de sécurité,
+- une disponibilité élevée.
+
+OVHcloud Connect fournit un lien physique (OVHcloud Connect Direct) ou logique (OVHcloud Connect Provider) dédié entre le réseau client et OVHcloud, avec des débits garantis allant de 50 Mbit/s à 100 Gbit/s.
 
 ### Avantages de l'offre
 
@@ -29,7 +39,7 @@ Le service permet d'interconnecter votre réseau via plusieurs points de présen
 
 Le fonctionnement d'OVHcloud Connect repose sur la création d'une liaison entre plusieurs composants clés :
 
-- **Point of Presence (PoP) :** Le point de présence physique où votre réseau se raccorde à celui d'OVHcloud.
+- **Point of Presence (PoP) :** Le point de présence physique où votre réseau se raccorde à celui d'OVHcloud, directement ou [via un Provider](LIEN A RENSEIGNER VERS PAGE PROVIDERS).
 - **Interconnexion (Cross-connect) :** La liaison fibre physique établie au sein du PoP pour lier vos équipements aux nôtres.
 - **Région :** Entité locale constituée d'une ou plusieurs zones de disponibilité (AZ), hébergeant les infrastructures d'OVHcloud.
 - **Availability Zone (AZ) :** Zone de disponibilité au sein d'une région, qui contient le ou les datacenters hébergeant vos services. Les AZ sont à la fois suffisamment distantes géographiquement entre elles pour être isolées en cas de sinistre, et suffisamment proches pour assurer une faible latence.
@@ -53,10 +63,10 @@ Afin de choisir le PoP le plus approprié pour votre infrastructure, veuillez vo
 
 ## Prérequis et limites
 
-Pour vérifier que votre cas d'usage permet bien l'utilisation d'OVHcloud Connect, ou pour mieux connaître les prérequis et limites opérationnelles de ce produit, veuillez consulter [ce guide](/pages/network/ovhcloud_connect_revamp/occ-limits).
+Pour vérifier qu'OVHcloud Connect adresse bien votre cas d'usage et pour mieux connaître les prérequis et limites opérationnelles de ce produit, veuillez consulter [ce guide](/pages/network/ovhcloud_connect_revamp/occ-limits).
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si souhaitez une formation ou une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
