@@ -34,6 +34,7 @@ Via OVHcloud Connect, vous pouvez atteindre l'ensemble des services OVHcloud int
 
 #### Mode Layer-3
 
+[comment]: mettre à jour pour supprimer la notion d'entry point
 * Chaque EntryPoint/POP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
 * Chaque EndPoint/DC prend en charge jusqu’à 4 peers BGP
 * Jusqu’à 100 préfixes peuvent être annoncés par session BGP
