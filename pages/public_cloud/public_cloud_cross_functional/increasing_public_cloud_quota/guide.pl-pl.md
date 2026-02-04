@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Wprowadzenie
@@ -93,6 +93,8 @@ Po wybraniu wolumenu kliknij przycisk `Zatwierdź`{.action}. Twoja płatność z
 >
 > Po kliknięciu przycisku `Confirm`{.action} zamówienie zostaje automatycznie utworzone, a kwota zostanie odliczona z domyślnej metody płatności.
 >
+
+Bardziej szczegółowy przegląd zasobów można uzyskać w [interfejsie Horizon](https://horizon.cloud.ovh.net/auth/login/). Po zalogowaniu się kliknij opcję `Project`{.action}, a następnie `Overview`{.action}.
 
 ### Zwiększanie limitu projektów Public Cloud
 
