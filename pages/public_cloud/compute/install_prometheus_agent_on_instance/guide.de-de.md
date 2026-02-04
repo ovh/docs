@@ -11,9 +11,9 @@ Prometheus ist ein Monitoring-System und eine Zeitreihendatenbank. Sie können d
 **Diese Anleitung erklärt, wie Sie den Prometheus Node Exporter- oder Windows Exporter-Agent auf einer OVHcloud Public Cloud Instanz installieren.**
 
 > [!warning]
->OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
->Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen jedoch, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten, wenn Sie auf Schwierigkeiten stoßen.
 >
 
 ## Voraussetzungen
@@ -36,7 +36,7 @@ ssh root@<INSTANCE_IP>
 
 Ersetzen Sie `<INSTANCE_IP>` durch die öffentliche IP-Adresse Ihrer Instanz.
 
-> [primary]
+> [!primary]
 >
 > Auf Windows können Sie PowerShell mit SSH oder einen SSH-Client wie [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) verwenden, wenn Sie eine Befehlszeile bevorzugen.
 >
