@@ -93,7 +93,7 @@ The simplest request is a single text `input`.
 >> )
 >>
 >> response = client.responses.create(
->>     model="Mistral-7B-Instruct-v0.3",
+>>     model="gpt-oss-20b",
 >>     input="Explain RAG in one paragraph.",
 >>     store=False,
 >> )
@@ -112,7 +112,7 @@ The simplest request is a single text `input`.
 >> });
 >>
 >> const response = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   input: "Explain RAG in one paragraph.",
 >>   store: false,
 >> });
@@ -125,7 +125,7 @@ The simplest request is a single text `input`.
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "input": "Explain RAG in one paragraph.",
 >>     "store": false
 >>   }'
@@ -155,7 +155,7 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >> )
 >>
 >> resp = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   store=False,
 >>   input=[
 >>     {"role": "user", "content": "My name is Stéphane."},
@@ -177,7 +177,7 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >> });
 >>
 >> const resp = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   store: false,
 >>   input: [
 >>     { role: "user", content: "My name is Stéphane." },
@@ -194,7 +194,7 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "store": false,
 >>     "input": [
 >>       {"role": "user", "content": "My name is Stéphane."},
@@ -225,7 +225,7 @@ You can provide system-level instructions in two ways:
 >> )
 >>
 >> resp = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   instructions="You are a technical writer. Answer in British English.",
 >>   input="Write a short definition of embeddings.",
 >>   store=False,
@@ -245,7 +245,7 @@ You can provide system-level instructions in two ways:
 >> });
 >>
 >> const resp = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   instructions: "You are a technical writer. Answer in British English.",
 >>   input: "Write a short definition of embeddings.",
 >>   store: false,
@@ -260,7 +260,7 @@ You can provide system-level instructions in two ways:
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "instructions": "You are a technical writer. Answer in British English.",
 >>     "input": "Write a short definition of embeddings.",
 >>     "store": false
@@ -281,7 +281,7 @@ You can provide system-level instructions in two ways:
 >> )
 >>
 >> resp = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   store=False,
 >>   input=[
 >>     {"role": "system", "content": "You are a technical writer. Answer in British English."},
@@ -303,7 +303,7 @@ You can provide system-level instructions in two ways:
 >> });
 >>
 >> const resp = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   store: false,
 >>   input: [
 >>     { role: "system", content: "You are a technical writer. Answer in British English." },
@@ -320,7 +320,7 @@ You can provide system-level instructions in two ways:
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "store": false,
 >>     "input": [
 >>       {"role": "system", "content": "You are a technical writer. Answer in British English."},
@@ -347,7 +347,7 @@ This is useful for chat UIs and CLIs.
 >> )
 >>
 >> stream = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   input="Write a haiku about cloud computing.",
 >>   stream=True,
 >>   store=False,
@@ -372,7 +372,7 @@ This is useful for chat UIs and CLIs.
 >> });
 >>
 >> const stream = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   input: "Write a haiku about cloud computing.",
 >>   stream: true,
 >>   store: false,
@@ -389,7 +389,7 @@ This is useful for chat UIs and CLIs.
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "input": "Write a haiku about cloud computing.",
 >>     "stream": true,
 >>     "store": false
@@ -432,7 +432,7 @@ The `response_format` object can be used in three modes (model permitting):
 >> )
 >>
 >> resp = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   input="Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>   store=False,
 >>   response_format={
@@ -467,7 +467,7 @@ The `response_format` object can be used in three modes (model permitting):
 >> });
 >>
 >> const resp = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   input:
 >>     "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>   store: false,
@@ -497,7 +497,7 @@ The `response_format` object can be used in three modes (model permitting):
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "input": "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>     "store": false,
 >>     "response_format": {
@@ -535,7 +535,7 @@ Use this when you only need *valid JSON* but you do not want to (or cannot) prov
 >> )
 >>
 >> resp = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   input="Return a JSON object with keys: name (string) and version (number), describing Python.",
 >>   store=False,
 >>   response_format={"type": "json_object"},
@@ -554,7 +554,7 @@ Use this when you only need *valid JSON* but you do not want to (or cannot) prov
 >> });
 >>
 >> const resp = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   input: "Return a JSON object with keys: name (string) and version (number), describing Python.",
 >>   store: false,
 >>   response_format: { type: "json_object" },
@@ -568,7 +568,7 @@ Use this when you only need *valid JSON* but you do not want to (or cannot) prov
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "input": "Return a JSON object with keys: name (string) and version (number), describing Python.",
 >>     "store": false,
 >>     "response_format": {
@@ -639,7 +639,7 @@ Below is a minimal end-to-end example.
 >> ]
 >>
 >> first = client.responses.create(
->>   model="Mistral-7B-Instruct-v0.3",
+>>   model="gpt-oss-20b",
 >>   store=False,
 >>   input=input_items,
 >>   tools=TOOLS,
@@ -672,7 +672,7 @@ Below is a minimal end-to-end example.
 >>   ])
 >>
 >>   final = client.responses.create(
->>     model="Mistral-7B-Instruct-v0.3",
+>>     model="gpt-oss-20b",
 >>     store=False,
 >>     input=input_items,
 >>     tools=TOOLS,
@@ -721,7 +721,7 @@ Below is a minimal end-to-end example.
 >> ];
 >>
 >> const first = await client.responses.create({
->>   model: "Mistral-7B-Instruct-v0.3",
+>>   model: "gpt-oss-20b",
 >>   store: false,
 >>   input,
 >>   tools,
@@ -753,7 +753,7 @@ Below is a minimal end-to-end example.
 >>   );
 >>
 >>   const final = await client.responses.create({
->>     model: "Mistral-7B-Instruct-v0.3",
+>>     model: "gpt-oss-20b",
 >>     store: false,
 >>     input,
 >>     tools,
@@ -771,7 +771,7 @@ Below is a minimal end-to-end example.
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
 >>   -d '{
->>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "model": "gpt-oss-20b",
 >>     "store": false,
 >>     "input": "What is the VAT rate in France? If needed, call the tool.",
 >>     "tools": [
@@ -797,10 +797,18 @@ Below is a minimal end-to-end example.
 Some models accept image inputs.
 When supported, you can pass an `input` array containing a mix of text and image parts.
 
+> [!warning]
+>
+> OVHcloud AI Endpoints currently does **not** support fetching images from remote URLs for `input_image`.
+> Provide images as a **base64-encoded data URL** (for example: `data:image/png;base64,...`).
+>
+
 > [!tabs]
 > **Python**
 >>
 >> ```python
+>> import base64
+>> import mimetypes
 >> from openai import OpenAI
 >>
 >> client = OpenAI(
@@ -808,15 +816,25 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>   api_key="",  # Anonymous authentication
 >> )
 >>
+>> def to_data_url(image_path: str) -> str:
+>>   mime_type, _ = mimetypes.guess_type(image_path)
+>>   if mime_type is None:
+>>     mime_type = "image/jpeg"
+>>
+>>   with open(image_path, "rb") as f:
+>>     b64 = base64.b64encode(f.read()).decode("utf-8")
+>>
+>>   return f"data:{mime_type};base64,{b64}"
+>>
 >> resp = client.responses.create(
->>   model="<your-vlm-model>",
+>>   model="Qwen2.5-VL-72B-Instruct",
 >>   store=False,
 >>   input=[
 >>     {
 >>       "role": "user",
 >>       "content": [
 >>         {"type": "input_text", "text": "Describe this image."},
->>         {"type": "input_image", "image_url": "https://example.com/image.png"},
+>>         {"type": "input_image", "image_url": to_data_url("sample.jpg")},
 >>       ],
 >>     }
 >>   ],
@@ -828,6 +846,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 > **JavaScript**
 >>
 >> ```javascript
+>> import fs from "node:fs";
 >> import OpenAI from "openai";
 >>
 >> const client = new OpenAI({
@@ -835,15 +854,20 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>   apiKey: "", // Anonymous authentication
 >> });
 >>
+>> function toDataUrl(filePath, mimeType = "image/jpeg") {
+>>   const b64 = fs.readFileSync(filePath, { encoding: "base64" });
+>>   return `data:${mimeType};base64,${b64}`;
+>> }
+>>
 >> const resp = await client.responses.create({
->>   model: "<your-vlm-model>",
+>>   model: "Qwen2.5-VL-72B-Instruct",
 >>   store: false,
 >>   input: [
 >>     {
 >>       role: "user",
 >>       content: [
 >>         { type: "input_text", text: "Describe this image." },
->>         { type: "input_image", image_url: "https://example.com/image.png" },
+>>         { type: "input_image", image_url: toDataUrl("sample.jpg") },
 >>       ],
 >>     },
 >>   ],
@@ -854,21 +878,22 @@ When supported, you can pass an `input` array containing a mix of text and image
 > **cURL**
 >>
 >> ```sh
+>> IMAGE_B64=$(base64 -i sample.jpg | tr -d '\n')
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
->>   -d '{
->>     "model": "<your-vlm-model>",
->>     "store": false,
->>     "input": [
->>       {
->>         "role": "user",
->>         "content": [
->>           {"type": "input_text", "text": "Describe this image."},
->>           {"type": "input_image", "image_url": "https://example.com/image.png"}
->>         ]
->>       }
->>     ]
->>   }'
+>>   -d "{\
+>>     \"model\": \"Qwen2.5-VL-72B-Instruct\",\
+>>     \"store\": false,\
+>>     \"input\": [\
+>>       {\
+>>         \"role\": \"user\",\
+>>         \"content\": [\
+>>           {\"type\": \"input_text\", \"text\": \"Describe this image.\"},\
+>>           {\"type\": \"input_image\", \"image_url\": \"data:image/jpeg;base64,$IMAGE_B64\"}\
+>>         ]\
+>>       }\
+>>     ]\
+>>   }"
 >> ```
 
 > [!warning]
