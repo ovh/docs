@@ -83,11 +83,14 @@ The simplest request is a single text `input`.
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>     base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>     api_key="",  # Anonymous authentication
+>>     api_key=api_key,
 >> )
 >>
 >> response = client.responses.create(
@@ -145,11 +148,14 @@ To create a multi-turn conversation, keep the full conversation history on your 
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> resp = client.responses.create(
@@ -215,11 +221,14 @@ You can provide system-level instructions in two ways:
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> resp = client.responses.create(
@@ -271,11 +280,14 @@ You can provide system-level instructions in two ways:
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> resp = client.responses.create(
@@ -337,11 +349,14 @@ This is useful for chat UIs and CLIs.
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> stream = client.responses.create(
@@ -394,26 +409,18 @@ This is useful for chat UIs and CLIs.
 >>   }'
 >> ```
 
-### Structured outputs (`response_format`)
+### Structured outputs (`text.format`)
 
-Some models support enforcing a JSON output format.
+Some models support enforcing a structured output format.
 This is useful when you need predictable, machine-readable responses.
 
-The `response_format` object can be used in three modes (model permitting):
+The `text.format` object can be used in these modes (model permitting):
 
 - `{"type": "text"}`
-  Default textual format (equivalent to omitting `response_format`).
+  Default textual format.
 
-- `{"type": "json_object"}`
-  Legacy JSON mode: the model returns a valid JSON object, but there is **no schema enforcement**.
-
-- `{"type": "json_schema", "json_schema": ... }`
-  Schema-enforced mode: the model returns JSON that **matches your JSON Schema**.
-
-> [!primary]
->
-> Prefer `json_schema` when possible: it is the most reliable way to get deterministic, strictly structured output.
->
+- `{"type": "json_schema", "name": "...", "schema": { ... }}`
+  Schema-enforced mode: the model returns JSON that matches your JSON Schema.
 
 #### Example: JSON schema extraction
 
@@ -422,21 +429,36 @@ The `response_format` object can be used in three modes (model permitting):
 >>
 >> ```python
 >> import json
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> resp = client.responses.create(
 >>   model="gpt-oss-20b",
->>   input="Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>   store=False,
->>   response_format={
->>     "type": "json_schema",
->>     "json_schema": {
+>>   input=[
+>>     {
+>>       "type": "message",
+>>       "role": "system",
+>>       "content": "You are a helpful extractor. Return only valid JSON.",
+>>     },
+>>     {
+>>       "type": "message",
+>>       "role": "user",
+>>       "content": "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
+>>     },
+>>   ],
+>>   text={
+>>     "format": {
+>>       "type": "json_schema",
 >>       "name": "contract_data",
+>>       "description": "Extract contract fields",
 >>       "schema": {
 >>         "type": "object",
 >>         "properties": {
@@ -446,7 +468,8 @@ The `response_format` object can be used in three modes (model permitting):
 >>         "required": ["company", "start_date"],
 >>         "additionalProperties": False,
 >>       },
->>     },
+>>       "strict": False,
+>>     }
 >>   },
 >> )
 >>
@@ -466,13 +489,25 @@ The `response_format` object can be used in three modes (model permitting):
 >>
 >> const resp = await client.responses.create({
 >>   model: "gpt-oss-20b",
->>   input:
->>     "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>   store: false,
->>   response_format: {
->>     type: "json_schema",
->>     json_schema: {
+>>   input: [
+>>     {
+>>       type: "message",
+>>       role: "system",
+>>       content: "You are a helpful extractor. Return only valid JSON.",
+>>     },
+>>     {
+>>       type: "message",
+>>       role: "user",
+>>       content:
+>>         "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
+>>     },
+>>   ],
+>>   text: {
+>>     format: {
+>>       type: "json_schema",
 >>       name: "contract_data",
+>>       description: "Extract contract fields",
 >>       schema: {
 >>         type: "object",
 >>         properties: {
@@ -482,6 +517,7 @@ The `response_format` object can be used in three modes (model permitting):
 >>         required: ["company", "start_date"],
 >>         additionalProperties: false,
 >>       },
+>>       strict: false,
 >>     },
 >>   },
 >> });
@@ -496,12 +532,24 @@ The `response_format` object can be used in three modes (model permitting):
 >>   -H "Content-Type: application/json" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
->>     "input": "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
 >>     "store": false,
->>     "response_format": {
->>       "type": "json_schema",
->>       "json_schema": {
+>>     "input": [
+>>       {
+>>         "type": "message",
+>>         "role": "system",
+>>         "content": "You are a helpful extractor. Return only valid JSON."
+>>       },
+>>       {
+>>         "type": "message",
+>>         "role": "user",
+>>         "content": "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud."
+>>       }
+>>     ],
+>>     "text": {
+>>       "format": {
+>>         "type": "json_schema",
 >>         "name": "contract_data",
+>>         "description": "Extract contract fields",
 >>         "schema": {
 >>           "type": "object",
 >>           "properties": {
@@ -510,71 +558,12 @@ The `response_format` object can be used in three modes (model permitting):
 >>           },
 >>           "required": ["company", "start_date"],
 >>           "additionalProperties": false
->>         }
+>>         },
+>>         "strict": false
 >>       }
 >>     }
 >>   }'
 >> ```
-
-#### Example: JSON object mode (`json_object`)
-
-Use this when you only need *valid JSON* but you do not want to (or cannot) provide a JSON Schema.
-
-> [!tabs]
-> **Python**
->>
->> ```python
->> import json
->> from openai import OpenAI
->>
->> client = OpenAI(
->>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
->> )
->>
->> resp = client.responses.create(
->>   model="gpt-oss-20b",
->>   input="Return a JSON object with keys: name (string) and version (number), describing Python.",
->>   store=False,
->>   response_format={"type": "json_object"},
->> )
->>
->> print(json.dumps(json.loads(resp.output_text), indent=2))
->> ```
-> **JavaScript**
->>
->> ```javascript
->> import OpenAI from "openai";
->>
->> const client = new OpenAI({
->>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
->> });
->>
->> const resp = await client.responses.create({
->>   model: "gpt-oss-20b",
->>   input: "Return a JSON object with keys: name (string) and version (number), describing Python.",
->>   store: false,
->>   response_format: { type: "json_object" },
->> });
->>
->> console.log(JSON.parse(resp.output_text));
->> ```
-> **cURL**
->>
->> ```sh
->> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
->>   -H "Content-Type: application/json" \
->>   -d '{
->>     "model": "gpt-oss-20b",
->>     "input": "Return a JSON object with keys: name (string) and version (number), describing Python.",
->>     "store": false,
->>     "response_format": {
->>       "type": "json_object"
->>     }
->>   }'
->> ```
-
 
 ### Function calling (`tools`)
 
@@ -602,11 +591,14 @@ Below is a minimal end-to-end example.
 >>
 >> ```python
 >> import json
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> # 1) Tool implementation (your code)
@@ -619,6 +611,7 @@ Below is a minimal end-to-end example.
 >>   {
 >>     "type": "function",
 >>     "name": "get_vat_rate",
+>>     "strict": False,
 >>     "description": "Return the VAT rate for a given country.",
 >>     "parameters": {
 >>       "type": "object",
@@ -702,6 +695,7 @@ Below is a minimal end-to-end example.
 >>     type: "function",
 >>     name: "get_vat_rate",
 >>     description: "Return the VAT rate for a given country.",
+>>     strict: false,
 >>     parameters: {
 >>       type: "object",
 >>       properties: { country: { type: "string" } },
@@ -777,6 +771,7 @@ Below is a minimal end-to-end example.
 >>         "type": "function",
 >>         "name": "get_vat_rate",
 >>         "description": "Return the VAT rate for a given country.",
+>>         "strict": false,
 >>         "parameters": {
 >>           "type": "object",
 >>           "properties": {"country": {"type": "string"}},
@@ -805,11 +800,14 @@ When supported, you can pass an `input` array containing a mix of text and image
 >> ```python
 >> import base64
 >> import mimetypes
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> def to_data_url(image_path: str) -> str:
@@ -915,11 +913,14 @@ When supported, a `reasoning` object can be used to tune the reasoning effort an
 > **Python**
 >>
 >> ```python
+>> import os
 >> from openai import OpenAI
+>>
+>> api_key = os.environ["AI_ENDPOINT_API_KEY"]  # export AI_ENDPOINT_API_KEY='your_api_key'
 >>
 >> client = OpenAI(
 >>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   api_key="",  # Anonymous authentication
+>>   api_key=api_key,
 >> )
 >>
 >> resp = client.responses.create(
