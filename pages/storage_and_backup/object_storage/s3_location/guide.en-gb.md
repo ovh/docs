@@ -184,8 +184,8 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 >>     </tr>
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
->>         <td>Cold Archive<sup>4</sup></td>
->> 		   <td>Cold Archive<sup>4</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>> 		   <td>Cold Archive<sup>3</sup></td>
 >>    </tr>
 >> </table>
 > 1-AZ regions
@@ -260,8 +260,8 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 >>     </tr>
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
->>         <td>Cold Archive<sup>4</sup></td>
->> 		   <td>Cold Archive<sup>4</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>> 		   <td>Cold Archive<sup>3</sup></td>
 >>     </tr>
 >> </table>
 > 1-AZ regions
@@ -285,7 +285,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 >> </table>
 
 
-_<sup>4</sup>: The Cold Archive storage class in only available in Paris (EU-WEST-PAR)
+_<sup>3</sup>: The Cold Archive storage class in only available in Paris (EU-WEST-PAR)
 
 > [!warning]
 > Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
@@ -312,7 +312,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
         <td>STANDARD</td>
     </tr>
     <tr>
-        <td>default<sup>3</sup></td>
+        <td>default<sup>4</sup></td>
     </tr>
     <tr>
         <td>STANDARD_IA</td>
@@ -336,7 +336,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
 </table>
 
-_<sup>3</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
+_<sup>4</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 
