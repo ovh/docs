@@ -141,8 +141,6 @@ The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh
 
 ### Mapping from AWS S3 tiers to OVHcloud Storage tiers
 
-#### 3-AZ regions
-
 The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
 
 > [!tabs]
