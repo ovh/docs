@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux) (EN)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-09-30
+updated: 2026-02-06
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
-- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
 
 > [!warning]
 >
@@ -148,7 +148,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
-³ Examples of Efi bootloader path:
+³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
 | Operating System | efiBootloaderPath |
 |-|-|
@@ -191,5 +191,7 @@ See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/de
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Join our user community on <https://community.ovh.com/en/>.
