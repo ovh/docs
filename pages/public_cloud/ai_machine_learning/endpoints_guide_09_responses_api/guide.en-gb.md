@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Responses API
-excerpt: Learn how to use OVHcloud AI Endpoints with the /responses API
+excerpt: Learn how to use OVHcloud AI Endpoints with the Responses API
 updated: 2026-02-03
 ---
 
@@ -16,8 +16,7 @@ updated: 2026-02-03
 The **Responses API** (`/v1/responses`) is the most recent OpenAI-compatible route.
 Like `v1/chat/completions`, it can be used for **text generation**, **multi-turn conversations**, **tool/function calling**, **structured outputs**, and **vision inputs** (on compatible models).
 
-The key difference is that `/v1/responses` is intended as the **foundation for newer capabilities** such as **statefulness** and **built-in tools**.
-On OVHcloud AI Endpoints, some of these advanced behaviours are not available yet on `v1/responses`.
+The key difference is that `/v1/responses` is intended as the **foundation for newer capabilities and agentic behaviour**, introducing advanced features such as **statefulness** and **built-in tools**.
 
 > [!warning]
 >
@@ -33,7 +32,6 @@ This documentation provides an overview of the `v1/responses` route on [AI Endpo
 - Usage examples in **Python**, **JavaScript**, and **cURL**
 - A detailed explanation of the most important parameters
 - Known limitations on the platform
-
 
 ## Requirements
 
@@ -158,9 +156,9 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >>   model="gpt-oss-20b",
 >>   store=False,
 >>   input=[
->>     {"role": "user", "content": "My name is Stéphane."},
->>     {"role": "assistant", "content": "Hello Stéphane! How can I help?"},
->>     {"role": "user", "content": "What is my name?"},
+>>     {"type": "message", "role": "user", "content": "My name is Stéphane."},
+>>     {"type": "message", "role": "assistant", "content": "Hello Stéphane! How can I help?"},
+>>     {"type": "message", "role": "user", "content": "What is my name?"},
 >>   ],
 >> )
 >>
@@ -180,9 +178,9 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >>   model: "gpt-oss-20b",
 >>   store: false,
 >>   input: [
->>     { role: "user", content: "My name is Stéphane." },
->>     { role: "assistant", content: "Hello Stéphane! How can I help?" },
->>     { role: "user", content: "What is my name?" },
+>>     { type: "message", role: "user", content: "My name is Stéphane." },
+>>     { type: "message", role: "assistant", content: "Hello Stéphane! How can I help?" },
+>>     { type: "message", role: "user", content: "What is my name?" },
 >>   ],
 >> });
 >>
@@ -197,9 +195,9 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
 >>     "input": [
->>       {"role": "user", "content": "My name is Stéphane."},
->>       {"role": "assistant", "content": "Hello Stéphane! How can I help?"},
->>       {"role": "user", "content": "What is my name?"}
+>>       {"type": "message", "role": "user", "content": "My name is Stéphane."},
+>>       {"type": "message", "role": "assistant", "content": "Hello Stéphane! How can I help?"},
+>>       {"type": "message", "role": "user", "content": "What is my name?"}
 >>     ]
 >>   }'
 >> ```
@@ -284,8 +282,8 @@ You can provide system-level instructions in two ways:
 >>   model="gpt-oss-20b",
 >>   store=False,
 >>   input=[
->>     {"role": "system", "content": "You are a technical writer. Answer in British English."},
->>     {"role": "user", "content": "Write a short definition of embeddings."}
+>>     {"type": "message", "role": "system", "content": "You are a technical writer. Answer in British English."},
+>>     {"type": "message", "role": "user", "content": "Write a short definition of embeddings."}
 >>   ],
 >> )
 >>
@@ -306,8 +304,8 @@ You can provide system-level instructions in two ways:
 >>   model: "gpt-oss-20b",
 >>   store: false,
 >>   input: [
->>     { role: "system", content: "You are a technical writer. Answer in British English." },
->>     { role: "user", content: "Write a short definition of embeddings." },
+>>     { type: "message", role: "system", content: "You are a technical writer. Answer in British English." },
+>>     { type: "message", role: "user", content: "Write a short definition of embeddings." },
 >>   ],
 >> });
 >>
@@ -323,8 +321,8 @@ You can provide system-level instructions in two ways:
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
 >>     "input": [
->>       {"role": "system", "content": "You are a technical writer. Answer in British English."},
->>       {"role": "user", "content": "Write a short definition of embeddings."}
+>>       {"type": "message", "role": "system", "content": "You are a technical writer. Answer in British English."},
+>>       {"type": "message", "role": "user", "content": "Write a short definition of embeddings."}
 >>     ]
 >>   }'
 >> ```
@@ -620,22 +618,20 @@ Below is a minimal end-to-end example.
 >> TOOLS = [
 >>   {
 >>     "type": "function",
->>     "function": {
->>       "name": "get_vat_rate",
->>       "description": "Return the VAT rate for a given country.",
->>       "parameters": {
->>         "type": "object",
->>         "properties": {"country": {"type": "string"}},
->>         "required": ["country"],
->>         "additionalProperties": False,
->>       },
+>>     "name": "get_vat_rate",
+>>     "description": "Return the VAT rate for a given country.",
+>>     "parameters": {
+>>       "type": "object",
+>>       "properties": {"country": {"type": "string"}},
+>>       "required": ["country"],
+>>       "additionalProperties": False,
 >>     },
 >>   }
 >> ]
 >>
 >> # 2) First call: let the model decide whether to call the tool
 >> input_items = [
->>   {"role": "user", "content": "What is the VAT rate in France? If needed, call the tool."}
+>>   {"type": "message", "role": "user", "content": "What is the VAT rate in France? If needed, call the tool."}
 >> ]
 >>
 >> first = client.responses.create(
@@ -654,6 +650,7 @@ Below is a minimal end-to-end example.
 >>
 >>   input_items.extend([
 >>     {
+>>       "type": "message",
 >>       "role": "assistant",
 >>       "tool_calls": [
 >>         {
@@ -664,6 +661,7 @@ Below is a minimal end-to-end example.
 >>       ],
 >>     },
 >>     {
+>>       "type": "message",
 >>       "role": "tool",
 >>       "tool_call_id": call.id,
 >>       "name": call.function.name,
@@ -702,22 +700,20 @@ Below is a minimal end-to-end example.
 >> const tools = [
 >>   {
 >>     type: "function",
->>     function: {
->>       name: "get_vat_rate",
->>       description: "Return the VAT rate for a given country.",
->>       parameters: {
->>         type: "object",
->>         properties: { country: { type: "string" } },
->>         required: ["country"],
->>         additionalProperties: false,
->>       },
+>>     name: "get_vat_rate",
+>>     description: "Return the VAT rate for a given country.",
+>>     parameters: {
+>>       type: "object",
+>>       properties: { country: { type: "string" } },
+>>       required: ["country"],
+>>       additionalProperties: false,
 >>     },
 >>   },
 >> ];
 >>
 >> // 2) First call
 >> const input = [
->>   { role: "user", content: "What is the VAT rate in France? If needed, call the tool." },
+>>   { type: "message", role: "user", content: "What is the VAT rate in France? If needed, call the tool." },
 >> ];
 >>
 >> const first = await client.responses.create({
@@ -735,6 +731,7 @@ Below is a minimal end-to-end example.
 >>
 >>   input.push(
 >>     {
+>>       type: "message",
 >>       role: "assistant",
 >>       tool_calls: [
 >>         {
@@ -745,6 +742,7 @@ Below is a minimal end-to-end example.
 >>       ],
 >>     },
 >>     {
+>>       type: "message",
 >>       role: "tool",
 >>       tool_call_id: call.id,
 >>       name: call.function.name,
@@ -777,15 +775,13 @@ Below is a minimal end-to-end example.
 >>     "tools": [
 >>       {
 >>         "type": "function",
->>         "function": {
->>           "name": "get_vat_rate",
->>           "description": "Return the VAT rate for a given country.",
->>           "parameters": {
->>             "type": "object",
->>             "properties": {"country": {"type": "string"}},
->>             "required": ["country"],
->>             "additionalProperties": false
->>           }
+>>         "name": "get_vat_rate",
+>>         "description": "Return the VAT rate for a given country.",
+>>         "parameters": {
+>>           "type": "object",
+>>           "properties": {"country": {"type": "string"}},
+>>           "required": ["country"],
+>>           "additionalProperties": false
 >>         }
 >>       }
 >>     ]
@@ -831,6 +827,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>   store=False,
 >>   input=[
 >>     {
+>>       "type": "message",
 >>       "role": "user",
 >>       "content": [
 >>         {"type": "input_text", "text": "Describe this image."},
@@ -864,6 +861,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>   store: false,
 >>   input: [
 >>     {
+>>       type: "message",
 >>       role: "user",
 >>       content: [
 >>         { type: "input_text", text: "Describe this image." },
@@ -886,6 +884,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>     \"store\": false,\
 >>     \"input\": [\
 >>       {\
+>>         \"type\": \"message\",\
 >>         \"role\": \"user\",\
 >>         \"content\": [\
 >>           {\"type\": \"input_text\", \"text\": \"Describe this image.\"},\
@@ -994,6 +993,7 @@ The following parameters may be unsupported, ignored, or inconsistently implemen
 - `include`
 - `max_tool_calls`
 - `prompt_cache_key`
+- `truncation`
 - Reusable prompts (`prompt` parameter)
 - `safety_identifier`
 - `service_tier`
