@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Responses API
 excerpt: Learn how to use OVHcloud AI Endpoints with the /responses API
-updated: 2025-10-03
+updated: 2026-02-03
 ---
 
 > [!primary]
@@ -11,304 +11,996 @@ updated: 2025-10-03
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models.
 
-The **Responses API** is an newer alternative to the `v1/chat/completion` route that features a few differences in the way our users interact with LLM models.
+The **Responses API** (`/v1/responses`) is the most recent OpenAI-compatible route.
+Like `v1/chat/completions`, it can be used for **text generation**, **multi-turn conversations**, **tool/function calling**, **structured outputs**, and **vision inputs** (on compatible models).
 
-Most clients and integrations still rely on the `v1/chat/completion` features but newer products may be updated to use the `v1/responses` when possible.
+The key difference is that `/v1/responses` is intended as the **foundation for newer capabilities** such as **statefulness** and **built-in tools**.
+On OVHcloud AI Endpoints, some of these advanced behaviours are not available yet on `v1/responses`.
 
-Keep in mind that the `v1/responses` route was recently added and you may encounter unexpected behavior as it undergoes a stabilisation period.
-For more information about current limitations and known issues, refer to the [Endpoint Limitations section](#endpoint-limitations) section.
+> [!warning]
+>
+> The `v1/responses` route was added recently. Some parameters and behaviours may differ between models.
+> For up-to-date limitations, refer to [Endpoint Limitations](#endpoint-limitations) and check model capabilities in the [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog).
+>
 
 ## Objective
 
-This documentation provides an overview of the `v1/responses` route on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
+This documentation provides an overview of the `v1/responses` route on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints), including:
 
-Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with this route.
+- Basic requests and common response fields
+- Usage examples in **Python**, **JavaScript**, and **cURL**
+- A detailed explanation of the most important parameters
+- Known limitations on the platform
+
+
+## Requirements
 
 The examples provided during this guide can be used with one of the following environments:
 
 > [!tabs]
 > **Python**
 >> 
->> A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
+>> A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/).
 >>
 >> ```sh
->> pip install openai pydantic
+>> pip install openai
 >> ```
->> 
+>>
 > **JavaScript**
 >> 
->> A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
->> Request can be installed using [NPM](https://www.npmjs.com/):
->> 
+>> A [Node.js](https://nodejs.org/en) environment with the official [openai](https://www.npmjs.com/package/openai) SDK.
+>>
 >> ```sh
->> npm install request
+>> npm install openai
 >> ```
->> 
+>>
 > **cURL**
 >> 
->> A standard terminal, with [cURL](https://cURL.se/) installed on the system.
->> 
+>> A standard terminal, with [cURL](https://curl.se/) installed on the system.
+>>
 
 ## Authentication & Rate Limiting
 
-All the examples provided in this guide use anonymous authentication, which makes it simpler to use but may cause rate limiting issues. If you wish to enable authentication using your own token, simply specify your API key within the requests.
+All the examples provided in this guide use anonymous authentication, which makes it simpler to use but may cause rate limiting issues.
+If you wish to enable authentication using your own token, specify your API key in the `Authorization` header.
 
 Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
 
-## Request Body
 
-### Parameters Overview
+## Quickstart
 
-The request body for the audio transcription endpoint is of type `multipart/form-data` and includes the following fields:
+> [!warning]
+>
+> On AI Endpoints, statefulness for `v1/responses` is currently **not managed**.
+> To avoid unexpected behaviour and to match the current platform implementation, always send `store: false`.
+>
 
-| Parameter                | Required | Type          | Allowed Values / Format                                                                 | Default | Description                                                                                                                                                                                                 |
-|--------------------------|----------|---------------|---------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **file**                     | Yes      | binary        | `mp3`, `mp4`, `aac`, `m4a`, `wav`, `flac`, `ogg`, `opus`, `webm`, `mpeg`, `mpga`                                    | -       | The **audio file object (not file name)** to transcribe.                                                                                                                                                      |
-| **chunking_strategy**        | No       | `string`/`server_vad object`/`null`   | -                                                                                     | null    | Strategy for dividing the audio into chunks. More details [here](#chunking-strategy).                                                                                                                                                     |
-| **diarize**                  | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | Enables speaker separation in the transcript. When set to true, the system separates the audio into segments based on speakers, by adding labels like "Speaker 1" and "Speaker 2", so you can see who said what in conversations such as interviews, meetings, or phone calls. More details [here](#diarization).                                                                                                                                           |
-| **language**                 | No       | `string`/`null`   | [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)                                                                      | -       | The language parameter specifies the language spoken in the input audio. Providing it can improve transcription accuracy and reduce latency (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...). If not provided, the system will attempt automatic language detection, which may be slightly slower and less accurate in some cases. [More details on language compatibility and performance](#language-compatibility-and-performances).                                                                                                                                           |
-| **model**                    | No       | `string`/`null`   | ID of the model to use                                                                | -       | Specifies the model to use for transcription. Useful when using our [unified endpoint](/pages/public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models).                                                                                                                                                            |
-| **prompt**                   | No       | `string`/`null`   | -                                                                                     | -       | Text to guide the model's style, translate transcript to english or continue a previous audio segment. The language in which you write the prompt must match the audio's one. More details about prompt usage [here](#prompt).                                                                                         |
-| **response_format**          | No       | `enum`/`null`     | `json`, `text`, `srt`, `verbose_json`, `vtt`                                                | `verbose_json`    | Determines how the transcription data is returned. For detailed examples of each output type, visit the [Response Formats](#response-formats) section.                                                                                                                                                        |
-| **stream**                   | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | If set to true, the model response data will be streamed to the client. Currently not supported for Whisper models. |
-| **temperature**              | No       | `number`/`null`   | From `0.0` to `1.0`                                                                                | 0       | Controls randomness in the output. Higher values make the output more random, while lower values make it more focused and deterministic.                                                                   |
-| **timestamp_granularities**  | No       | `array`/`null`    | `["segment"]`, `["word"]`, `["word", "segment"]`                                        | `["segment"]` | Controls the level of detail in the timestamps provided in the transcription. More details [here](#timestamp-granularities).                                                              |
+### Basic request (text input)
 
-### Example Usage
-
-Now that you know which parameters are available, let’s look at how to put them into practice. Below are sample requests in **Python**, **cURL** and **JavaScript**:
+The simplest request is a single text `input`.
 
 > [!tabs]
-> **Python (using requests)**
->> 
->> ```python
->> import os
->> import requests
+> **Python**
 >>
->> url = "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/audio/transcriptions"
->> 
->> audio_file_path = "my_audio.mp3"
->> 
->> headers = {
->>    "accept": "application/json",
->> #   "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
->> }
->> 
->> files = {"file": open(audio_file_path, "rb")}
->> 
->> data = {
->>     "model": "whisper-large-v3",
->>     "language": "en",
->>     "temperature": "0",
->>     "prompt": "<|transcribe|>",
->>     "diarize": "false",
->>     "timestamp_granularities": ["segment"],
->>     "response_format": "verbose_json"
->> }
->> 
->> response = requests.post(url, headers=headers, files=files, data=data)
->> 
->> if response.status_code == 200:
->>     # Handle response
->>     print(response.json())
->> else:
->>     print("Error:", response.status_code, response.text)
->> ```
->> 
-> **Python (using OpenAI client)**
->> 
 >> ```python
 >> from openai import OpenAI
->> import os
->> 
->> url = "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/"
->> audio_file_path = "my_audio.mp3"
->> 
+>>
 >> client = OpenAI(
->>     base_url=url,
->> #    api_key=os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN'),
->>     )
->> 
->> with open(audio_file_path, "rb") as f:
->>     transcript = client.audio.transcriptions.create(
->>         file=f,
->>         model="whisper-large-v3",
->>         language="en",
->>         temperature=0,
->>         prompt="<|transcribe|>",
->>         timestamp_granularities=["segment"],
->>         response_format="verbose_json"
->>     )
->> 
->> print(transcript)
+>>     base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>     api_key="",  # Anonymous authentication
+>> )
+>>
+>> response = client.responses.create(
+>>     model="Mistral-7B-Instruct-v0.3",
+>>     input="Explain RAG in one paragraph.",
+>>     store=False,
+>> )
+>>
+>> print(response.output_text)
 >> ```
 >>
->> > [!warning]
->> >
->> > **Warning**: The `diarize` parameter is not supported when using the OpenAI client library.
->> >
->> > To use diarization, you must make a direct HTTP request using `requests` or `cURL` with `diarize` set to `true`.
->> >
->>
-> **cURL**
->> 
->> ```sh
->> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/audio/transcriptions" \
->> -F "file=@my_audio.mp3" \
->> -F "model=whisper-large-v3" \
->> -F "language=en" \
->> -F "temperature=0" \
->> -F "prompt==<|transcribe|>" \
->> -F "diarize=false" \
->> -F "timestamp_granularities[]=segment" \
->> -F "response_format=verbose_json"
->> ```
->>
->> To [**authenticate with your API key**](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started), add an Authorization header:
->>
->> ```sh
->> `-H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \`
->> ```
->>
-> **JavaScript (using OpenAI client)**
+> **JavaScript**
 >>
 >> ```javascript
 >> import OpenAI from "openai";
->> import fs from "fs";
->> 
->> const openai = new OpenAI({
->>  baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/",
->>  // apiKey: process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN,
->> });
->> 
->> const transcript = await openai.audio.>> transcriptions.create({
->>   file: fs.createReadStream("my_audio.mp3"),
->>   model: "whisper-large-v3",
->>   language: "en",
->>   temperature: 0,
->>   prompt: "<|transcribe|>",
->>   timestamp_granularities: ["segment"],
->>   response_format: "verbose_json"
->> });
->> 
->> console.log(transcript);
->> ```
 >>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const response = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   input: "Explain RAG in one paragraph.",
+>>   store: false,
+>> });
+>>
+>> console.log(response.output_text);
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "input": "Explain RAG in one paragraph.",
+>>     "store": false
+>>   }'
+>> ```
 
-**Output example**
+### Multi-turn conversations
 
-By default, the transcription endpoint returns output in `verbose_json` format.
+To create a multi-turn conversation, keep the full conversation history on your side and send it as an `input` **list** at each request.
 
-This includes detailed metadata such as language, segments, tokens, and diarization information:
+> [!primary]
+>
+> On AI Endpoints, statefulness for `v1/responses` is currently unavailable.
+> This means you must always send the full history as part of `input`.
+>
 
-```json
-{
-  "task": "transcribe",
-  "success": true,
-  "language": "en",
-  "duration": 4.46975,
-  "text": "My name is Octave and I am working at OVHcloud",
-  "words": [],
-  "segments": [
-    {
-      "id": 1,
-      "seek": 0,
-      "start": 0,
-      "end": 3.48,
-      "text": "My name is Octave and I am working at OVHcloud",
-      "tokens": [
-        50365,
-        2588,
-        275,
-        ...
-      ],
-      "temperature": 0,
-      "avg_logprob": -0.38066408,
-      "compression_ratio": 0.9,
-      "no_speech_prob": 0
-    }
-  ],
-  "diarization": [],
-  "usage": {
-    "type": "duration",
-    "duration": 5
-  }
-}
-```
+#### Client-managed conversation (`input` list)
 
-For **detailed examples** of each available output type, see the [Response Formats section](#response-formats) section.
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   store=False,
+>>   input=[
+>>     {"role": "user", "content": "My name is Stéphane."},
+>>     {"role": "assistant", "content": "Hello Stéphane! How can I help?"},
+>>     {"role": "user", "content": "What is my name?"},
+>>   ],
+>> )
+>>
+>> print(resp.output_text)
+>> ```
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   store: false,
+>>   input: [
+>>     { role: "user", content: "My name is Stéphane." },
+>>     { role: "assistant", content: "Hello Stéphane! How can I help?" },
+>>     { role: "user", content: "What is my name?" },
+>>   ],
+>> });
+>>
+>> console.log(resp.output_text);
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "store": false,
+>>     "input": [
+>>       {"role": "user", "content": "My name is Stéphane."},
+>>       {"role": "assistant", "content": "Hello Stéphane! How can I help?"},
+>>       {"role": "user", "content": "What is my name?"}
+>>     ]
+>>   }'
+>> ```
 
-### Parameters Details
+### Providing a system prompt
 
-While the previous overview gives a quick reference, certain parameters require more context to understand how and when to use them.
+You can provide system-level instructions in two ways:
 
-#### Multi turn conversation
+- `instructions` (simple and compact)
+- A `role: "system"` item inside an `input` list (useful when you already send a list for multi-turn)
 
-#### Providing a system prompt
+#### Option 1: `instructions`
 
-#### Streaming
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   instructions="You are a technical writer. Answer in British English.",
+>>   input="Write a short definition of embeddings.",
+>>   store=False,
+>> )
+>>
+>> print(resp.output_text)
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   instructions: "You are a technical writer. Answer in British English.",
+>>   input: "Write a short definition of embeddings.",
+>>   store: false,
+>> });
+>>
+>> console.log(resp.output_text);
+>> ```
+>
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "instructions": "You are a technical writer. Answer in British English.",
+>>     "input": "Write a short definition of embeddings.",
+>>     "store": false
+>>   }'
+>> ```
 
-#### Structured outputs
+#### Option 2: `role: "system"` in an `input` list
 
-#### Function calling
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   store=False,
+>>   input=[
+>>     {"role": "system", "content": "You are a technical writer. Answer in British English."},
+>>     {"role": "user", "content": "Write a short definition of embeddings."}
+>>   ],
+>> )
+>>
+>> print(resp.output_text)
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   store: false,
+>>   input: [
+>>     { role: "system", content: "You are a technical writer. Answer in British English." },
+>>     { role: "user", content: "Write a short definition of embeddings." },
+>>   ],
+>> });
+>>
+>> console.log(resp.output_text);
+>> ```
+>
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "store": false,
+>>     "input": [
+>>       {"role": "system", "content": "You are a technical writer. Answer in British English."},
+>>       {"role": "user", "content": "Write a short definition of embeddings."}
+>>     ]
+>>   }'
+>> ```
 
-#### Vision Language Models
 
-pass image as input
+### Streaming (`stream: true`)
 
-#### Reasoning models
+If `stream` is enabled, the API returns **Server-Sent Events (SSE)** with incremental output.
+This is useful for chat UIs and CLIs.
 
-reasoning effort, reasoning content, reasoning usage
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> stream = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   input="Write a haiku about cloud computing.",
+>>   stream=True,
+>>   store=False,
+>> )
+>>
+>> for event in stream:
+>>   # The exact event fields can vary by SDK version.
+>>   # A common approach is to print any incremental output text.
+>>   delta = getattr(event, "delta", None)
+>>   if delta:
+>>     print(delta, end="", flush=True)
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const stream = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   input: "Write a haiku about cloud computing.",
+>>   stream: true,
+>>   store: false,
+>> });
+>>
+>> for await (const event of stream) {
+>>   const delta = event?.delta;
+>>   if (delta) process.stdout.write(delta);
+>> }
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "input": "Write a haiku about cloud computing.",
+>>     "stream": true,
+>>     "store": false
+>>   }'
+>> ```
 
-## Endpoint Limitations
+### Structured outputs (`response_format`)
+
+Some models support enforcing a JSON output format.
+This is useful when you need predictable, machine-readable responses.
+
+The `response_format` object can be used in three modes (model permitting):
+
+- `{"type": "text"}`
+  Default textual format (equivalent to omitting `response_format`).
+
+- `{"type": "json_object"}`
+  Legacy JSON mode: the model returns a valid JSON object, but there is **no schema enforcement**.
+
+- `{"type": "json_schema", "json_schema": ... }`
+  Schema-enforced mode: the model returns JSON that **matches your JSON Schema**.
+
+> [!primary]
+>
+> Prefer `json_schema` when possible: it is the most reliable way to get deterministic, strictly structured output.
+>
+
+#### Example: JSON schema extraction
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> import json
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   input="Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
+>>   store=False,
+>>   response_format={
+>>     "type": "json_schema",
+>>     "json_schema": {
+>>       "name": "contract_data",
+>>       "schema": {
+>>         "type": "object",
+>>         "properties": {
+>>           "company": {"type": "string"},
+>>           "start_date": {"type": "string"},
+>>         },
+>>         "required": ["company", "start_date"],
+>>         "additionalProperties": False,
+>>       },
+>>     },
+>>   },
+>> )
+>>
+>> # `output_text` is typically the JSON string generated by the model.
+>> data = json.loads(resp.output_text)
+>> print(json.dumps(data, indent=2))
+>> ```
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   input:
+>>     "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
+>>   store: false,
+>>   response_format: {
+>>     type: "json_schema",
+>>     json_schema: {
+>>       name: "contract_data",
+>>       schema: {
+>>         type: "object",
+>>         properties: {
+>>           company: { type: "string" },
+>>           start_date: { type: "string" },
+>>         },
+>>         required: ["company", "start_date"],
+>>         additionalProperties: false,
+>>       },
+>>     },
+>>   },
+>> });
+>>
+>> const data = JSON.parse(resp.output_text);
+>> console.log(data);
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "input": "Extract the company name and the contract start date from: Contract starts on 2026-01-12 with OVHcloud.",
+>>     "store": false,
+>>     "response_format": {
+>>       "type": "json_schema",
+>>       "json_schema": {
+>>         "name": "contract_data",
+>>         "schema": {
+>>           "type": "object",
+>>           "properties": {
+>>             "company": {"type": "string"},
+>>             "start_date": {"type": "string"}
+>>           },
+>>           "required": ["company", "start_date"],
+>>           "additionalProperties": false
+>>         }
+>>       }
+>>     }
+>>   }'
+>> ```
+
+#### Example: JSON object mode (`json_object`)
+
+Use this when you only need *valid JSON* but you do not want to (or cannot) provide a JSON Schema.
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> import json
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   input="Return a JSON object with keys: name (string) and version (number), describing Python.",
+>>   store=False,
+>>   response_format={"type": "json_object"},
+>> )
+>>
+>> print(json.dumps(json.loads(resp.output_text), indent=2))
+>> ```
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   input: "Return a JSON object with keys: name (string) and version (number), describing Python.",
+>>   store: false,
+>>   response_format: { type: "json_object" },
+>> });
+>>
+>> console.log(JSON.parse(resp.output_text));
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "input": "Return a JSON object with keys: name (string) and version (number), describing Python.",
+>>     "store": false,
+>>     "response_format": {
+>>       "type": "json_object"
+>>     }
+>>   }'
+>> ```
+
+
+### Function calling (`tools`)
+
+Function calling (tool calling) lets the model request that your application runs a function.
+You declare the function signature in `tools`, the model may emit tool calls, then you execute them and provide the results back so the model can produce a final answer.
+
+> [!primary]
+>
+> On OVHcloud AI Endpoints for `v1/responses`, **built-in tools are not supported** (e.g. `web_search`, `file_search`, `computer_use`, `code_execution`, ...).
+> Only **custom function tools** are supported.
+>
+
+#### End-to-end workflow (recommended)
+
+The flow is similar to the `v1/chat/completions` function calling guide:
+
+1. Call the model with `tools`.
+2. If the model returns a tool call: execute the tool in your application.
+3. Send a follow-up request that includes the **tool result** in `input`, then read the final answer.
+
+Below is a minimal end-to-end example.
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> import json
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> # 1) Tool implementation (your code)
+>> def get_vat_rate(country: str) -> float:
+>>   if country.lower() in ["france", "fr"]:
+>>     return 0.20
+>>   raise ValueError("Unsupported country")
+>>
+>> TOOLS = [
+>>   {
+>>     "type": "function",
+>>     "function": {
+>>       "name": "get_vat_rate",
+>>       "description": "Return the VAT rate for a given country.",
+>>       "parameters": {
+>>         "type": "object",
+>>         "properties": {"country": {"type": "string"}},
+>>         "required": ["country"],
+>>         "additionalProperties": False,
+>>       },
+>>     },
+>>   }
+>> ]
+>>
+>> # 2) First call: let the model decide whether to call the tool
+>> input_items = [
+>>   {"role": "user", "content": "What is the VAT rate in France? If needed, call the tool."}
+>> ]
+>>
+>> first = client.responses.create(
+>>   model="Mistral-7B-Instruct-v0.3",
+>>   store=False,
+>>   input=input_items,
+>>   tools=TOOLS,
+>> )
+>>
+>> # 3) If a tool call is present, execute it and send the tool result back
+>> tool_calls = getattr(first, "tool_calls", None) or []
+>> if tool_calls:
+>>   call = tool_calls[0]
+>>   args = json.loads(call.function.arguments)
+>>   result = get_vat_rate(**args)
+>>
+>>   input_items.extend([
+>>     {
+>>       "role": "assistant",
+>>       "tool_calls": [
+>>         {
+>>           "id": call.id,
+>>           "type": "function",
+>>           "function": {"name": call.function.name, "arguments": call.function.arguments},
+>>         }
+>>       ],
+>>     },
+>>     {
+>>       "role": "tool",
+>>       "tool_call_id": call.id,
+>>       "name": call.function.name,
+>>       "content": json.dumps({"vat_rate": result}),
+>>     },
+>>   ])
+>>
+>>   final = client.responses.create(
+>>     model="Mistral-7B-Instruct-v0.3",
+>>     store=False,
+>>     input=input_items,
+>>     tools=TOOLS,
+>>   )
+>>
+>>   print(final.output_text)
+>> else:
+>>   # The model might answer directly without calling a tool.
+>>   print(first.output_text)
+>> ```
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> // 1) Tool implementation (your code)
+>> function getVatRate(country) {
+>>   if (["france", "fr"].includes(country.toLowerCase())) return 0.2;
+>>   throw new Error("Unsupported country");
+>> }
+>>
+>> const tools = [
+>>   {
+>>     type: "function",
+>>     function: {
+>>       name: "get_vat_rate",
+>>       description: "Return the VAT rate for a given country.",
+>>       parameters: {
+>>         type: "object",
+>>         properties: { country: { type: "string" } },
+>>         required: ["country"],
+>>         additionalProperties: false,
+>>       },
+>>     },
+>>   },
+>> ];
+>>
+>> // 2) First call
+>> const input = [
+>>   { role: "user", content: "What is the VAT rate in France? If needed, call the tool." },
+>> ];
+>>
+>> const first = await client.responses.create({
+>>   model: "Mistral-7B-Instruct-v0.3",
+>>   store: false,
+>>   input,
+>>   tools,
+>> });
+>>
+>> const toolCalls = first.tool_calls ?? [];
+>> if (toolCalls.length > 0) {
+>>   const call = toolCalls[0];
+>>   const args = JSON.parse(call.function.arguments);
+>>   const result = getVatRate(args.country);
+>>
+>>   input.push(
+>>     {
+>>       role: "assistant",
+>>       tool_calls: [
+>>         {
+>>           id: call.id,
+>>           type: "function",
+>>           function: { name: call.function.name, arguments: call.function.arguments },
+>>         },
+>>       ],
+>>     },
+>>     {
+>>       role: "tool",
+>>       tool_call_id: call.id,
+>>       name: call.function.name,
+>>       content: JSON.stringify({ vat_rate: result }),
+>>     },
+>>   );
+>>
+>>   const final = await client.responses.create({
+>>     model: "Mistral-7B-Instruct-v0.3",
+>>     store: false,
+>>     input,
+>>     tools,
+>>   });
+>>
+>>   console.log(final.output_text);
+>> } else {
+>>   console.log(first.output_text);
+>> }
+>> ```
+> **cURL (Tool definition only)**
+>>
+>> cURL is convenient to **declare tools**, but executing tools and sending tool results back requires application-side logic.
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "Mistral-7B-Instruct-v0.3",
+>>     "store": false,
+>>     "input": "What is the VAT rate in France? If needed, call the tool.",
+>>     "tools": [
+>>       {
+>>         "type": "function",
+>>         "function": {
+>>           "name": "get_vat_rate",
+>>           "description": "Return the VAT rate for a given country.",
+>>           "parameters": {
+>>             "type": "object",
+>>             "properties": {"country": {"type": "string"}},
+>>             "required": ["country"],
+>>             "additionalProperties": false
+>>           }
+>>         }
+>>       }
+>>     ]
+>>   }'
+>> ```
+
+### Vision language models (image inputs)
+
+Some models accept image inputs.
+When supported, you can pass an `input` array containing a mix of text and image parts.
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="<your-vlm-model>",
+>>   store=False,
+>>   input=[
+>>     {
+>>       "role": "user",
+>>       "content": [
+>>         {"type": "input_text", "text": "Describe this image."},
+>>         {"type": "input_image", "image_url": "https://example.com/image.png"},
+>>       ],
+>>     }
+>>   ],
+>> )
+>>
+>> print(resp.output_text)
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "<your-vlm-model>",
+>>   store: false,
+>>   input: [
+>>     {
+>>       role: "user",
+>>       content: [
+>>         { type: "input_text", text: "Describe this image." },
+>>         { type: "input_image", image_url: "https://example.com/image.png" },
+>>       ],
+>>     },
+>>   ],
+>> });
+>>
+>> console.log(resp.output_text);
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "<your-vlm-model>",
+>>     "store": false,
+>>     "input": [
+>>       {
+>>         "role": "user",
+>>         "content": [
+>>           {"type": "input_text", "text": "Describe this image."},
+>>           {"type": "input_image", "image_url": "https://example.com/image.png"}
+>>         ]
+>>       }
+>>     ]
+>>   }'
+>> ```
+
+> [!warning]
+>
+> Image inputs are supported only by vision-capable models.
+> Refer to the [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog) and model pages for supported content types.
+>
+
+### Reasoning models (`reasoning`)
+
+Some models expose reasoning-related controls.
+When supported, a `reasoning` object can be used to tune the reasoning effort and/or retrieve reasoning metadata.
+
+> [!primary]
+>
+> Reasoning parameters are model-specific. If you get validation errors, either remove `reasoning` or switch to a reasoning-capable model.
+>
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> from openai import OpenAI
+>>
+>> client = OpenAI(
+>>   base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   api_key="",  # Anonymous authentication
+>> )
+>>
+>> resp = client.responses.create(
+>>   model="gpt-oss-20b",
+>>   store=False,
+>>   input="Compute 17*23 and explain the steps.",
+>>   reasoning={"effort": "medium"},
+>> )
+>>
+>> print(resp.output_text)
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> import OpenAI from "openai";
+>>
+>> const client = new OpenAI({
+>>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+>>   apiKey: "", // Anonymous authentication
+>> });
+>>
+>> const resp = await client.responses.create({
+>>   model: "gpt-oss-20b",
+>>   store: false,
+>>   input: "Compute 17*23 and explain the steps.",
+>>   reasoning: { effort: "medium" },
+>> });
+>>
+>> console.log(resp.output_text);
+>> ```
+> **cURL**
+>>
+>> ```sh
+>> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
+>>   -H "Content-Type: application/json" \
+>>   -d '{
+>>     "model": "gpt-oss-20b",
+>>     "store": false,
+>>     "input": "Compute 17*23 and explain the steps.",
+>>     "reasoning": {"effort": "medium"}
+>>   }'
+>> ```
+
+
+## Endpoint limitations
+
+The `v1/responses` endpoint is still undergoing development and all features may not be available.
+If you are interested in specific features that would like us to prioritize, don't hesitate to let us know on the OVHcloud [Discord server](https://discord.gg/ovhcloud).
 
 ### Statefulness
 
-- conversation 
-- store != false
-- previous_response_id
+Statefulness is currently **not managed** on AI Endpoints for the `v1/responses` route.
+
+- Always send `store: false` to avoid unexpected behaviour (the OpenAI specification defaults to `store: true`).
+- `previous_response_id` is currently not supported.
+- To implement multi-turn, send the full history in the `input` list.
 
 ### Built-in tools
 
-### Known issues
+OpenAI-compatible **built-in tools are currently not supported** on OVHcloud AI Endpoints for `v1/responses` (for example: `web_search`, `file_search`, `computer_use`, `code_execution`, remote tools with `type: "mcp"`, etc.).
 
-General limitations:
-- reasoning summary
-- background
-- include
-- max_tool_calls
-- prompt_cache_key
-- reusable prompts (prompt param)
-- safety_identifier
-- service_tier
-- stream_options
-- user
-- verbosity
+If you need tool calling, only **custom function tools** are supported: declare them explicitly in the `tools` array (see [Function calling (`tools`)](#function-calling-tools)).
 
-Some models may:
-- Not be compatible with the `v1/responses` route
-- Not all support json object mode
-- Not support tool calls
-- Not support system prompts
-- Have issues with multi-turn conversations, mostly when using structured outputs, system prompts, or reasoning parameters.
-- Not handle structured output with streaming
-- tool_choice != auto 
-- logprobs -> at least gpt-oss models  https://github.com/vllm-project/vllm/issues/23225 
-- parallel tool calls -> at least gpt-oss
-- Image inputs (some VLMs)
+### Known issues / unsupported parameters
 
+The following parameters may be unsupported, ignored, or inconsistently implemented depending on the model/backend:
+
+- Reasoning *summaries* and some reasoning metadata fields
+- `background`
+- `include`
+- `max_tool_calls`
+- `prompt_cache_key`
+- Reusable prompts (`prompt` parameter)
+- `safety_identifier`
+- `service_tier`
+- `stream_options`
+- `user`
+- `verbosity`
+
+Model-specific limitations you may encounter:
+
+- Some models are not compatible with the `v1/responses` route
+- JSON object / JSON schema support varies (structured outputs)
+- Tool calling may be unsupported, or `tool_choice` values may be restricted (for example: not supporting non-`auto` modes)
+- Some models do not support system prompts / `instructions`
+- Multi-turn conversations may behave unexpectedly when combining **structured outputs**, **system instructions**, or **reasoning parameters**
+- Structured outputs with streaming may be unsupported
+- `logprobs` may not be supported on some models
+- Parallel tool calls may be unsupported on some models
+- Image inputs are supported only by vision-capable models
 
 ## Conclusion
 
-In this guide, we have explained how to use Speech to Text models available on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of model for your own application.
+The **Responses API** provides a unified way to interact with LLMs on OVHcloud **AI Endpoints**, covering basic text generation as well as advanced use cases such as **multi-turn conversations**, **streaming**, **structured outputs**, **function calling**, and **vision inputs** (model permitting).
 
-## Go Further
+To maximise compatibility, always verify supported features for your chosen model in the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog), and consider falling back to `v1/chat/completions` when a feature is not available on `v1/responses`.
 
-Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
+
+## Go further
+
+Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to explore other guides and tutorials.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 
 ## Feedback
 
