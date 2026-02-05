@@ -1,87 +1,87 @@
 ---
-title: Concepts overview
-excerpt: 'Concepts overview - OVHcloud Connect'
-updated: 2025-10-29
+title: Introduction to OVHcloud Connect
+excerpt: Overview of the concepts required to understand the OVHcloud Connect offer
+updated: 2026-01-29
 ---
 
-## What is OVHcloud Connect?
+## What is OVHcloud Connect ?
 
-OVHcloud Connect is a private, dedicated connection between your on-premises network and your OVHcloud vRack. It is designed to extend your network and securely connect to your cloud resources, bypassing the public internet.
+OVHcloud Connect is a network connectivity service that allows you to connect your infrastructure (datacenter, on-premise site, operator network or enterprise WAN) directly to an OVHcloud private network (vRack), without going through the internet.
 
 ![OVHcloud Connect](images/VrackConnectDedicated2025.png){.thumbnail}
 
-## Benefits of OVHcloud Connect
+The solution is designed for hybrid and multi-cloud architectures requiring :
+- guaranteed network performance,
+- low latency,
+- a high level of security,
+- high availability.
 
-### Dedicated service
+OVHcloud Connect provides a physical (OVHcloud Connect Direct) or logical (OVHcloud Connect Provider) dedicated link between the customer network and OVHcloud, with guaranteed bandwidth ranging from 50 Mbit/s to 100 Gbit/s.
 
-Dedicated Mode is a direct connection with OVHcloud devices. You can manage different configurations, from a single connection to a multiple one using LACP (Layer 2) or BGP-ECMP (Layer 3) with port speed at 1Gb or 10Gb. Interface and bandwidth are not shared with other customers.
+> [!primary]
+> For detailed technical definitions, refer to the [OVHcloud Connect Glossary](/pages/network/ovhcloud_connect_revamp/occ-glossary).
+>
 
-### Private connection
+### Benefits of the offer
 
-Your traffic is isolated from the Internet. You manage your own VLANs (Layer 2) and/or your own IP addresses (Layer 3). BGP instances are private, and you can configure the ASN you want.
+#### Performance and high availability
+OVHcloud Connect offers a guaranteed bandwidth ranging from 50 Mbps up to 100 Gbps, with improved latency and stability compared to traditional internet connections.
 
-OVHcloud Connect is connected to your vRack with all compatible services.
+#### Security
+Your network traffic flows outside the public internet, thus reducing exposure to external threats.
 
-### Network extension
+#### Flexibility and automation
+The service allows for quick deployment and configuration via [the OVHcloud Control Panel](/links/manager), [the OVHcloud API](/links/api), or via [our Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
 
-OVHcloud Connect can be connected either to your WAN or your data centre network, allowing seamless extension to the cloud. This eases hybrid cloud strategies and migrations by keeping your existing VLAN topology or IP addresses.
+#### Global reach
+OVHcloud Connect allows you to interconnect your infrastructures via a vast network of Points of Presence (PoPs) around the world, thanks to OVHcloud and its partners. By using dynamic routing protocols, you ensure maximum resilience for your distributed services.
 
-### High availability
+#### Hybrid & Multi-Cloud
+Our offering seamlessly and privately interconnects enterprise WAN networks with OVHcloud resources and those of our partners.
 
-Using BGP, you can interconnect your network through multiple Points-of-Presence (PoPs) and reach several OVHcloud data centres. From your vRack, you can configure BGP to enable maximum resiliency with distributed services.
+### Service architecture
 
-## Components of OVHcloud Connect
+The operation of OVHcloud Connect is based on the creation of a link between several key components :
 
-### PoP - EntryPoint
+- **Point of Presence (PoP) :** The physical point of presence where your network connects to OVHcloud's network, directly or [via a Provider](/links/network/ovhcloud-connect).
+- **Region :** A local entity composed of one or more availability zones (AZ), hosting OVHcloud infrastructures.
+- **Availability Zone (AZ) :** An availability zone within a region, which contains the one or more datacenters hosting your services. AZs are both sufficiently geographically distant from each other to be isolated in case of a disaster, and sufficiently close to ensure low latency.
+- **vRack :** A private virtual network that allows you to interconnect your OVHcloud services, regardless of their location. It is this network that ensures the final distribution of the connection to your services. For more information, you can consult the [product page on our website](/links/network/vrack).
 
-Points of Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
+In the case of the OVHcloud Connect Direct offer, an additional component comes into play: the **Cross-connect**, which is a physical fiber link established within the PoP to connect your equipment to ours.
 
-### DC - EndPoint
+### Operating principles
 
-The OVHcloud data centre is the service *EndPoint* of OVHcloud Connect.
+OVHcloud Connect connects a PoP to at least one OVHcloud AZ.
 
-### Cross-connect
+#### Layer 2 (L2)
 
-A cross-connection is a physical link (monomode fiber) managed by the local facility team in the PoP. The cross-connection is established in the MMR (Meet-Me Room) between the position given by OVHcloud and the position owned by the customer. The customer must order and manage the cross-connect for OVHcloud Connect Direct. 
+The virtual link operates like an Ethernet tunnel (bridge mode) :
+- Direct extension of your local network.
+- Strict point-to-point link (**one PoP** and **one AZ** only).
+- Redundancy possible via link aggregation (LACP) on the same PoP.
+- Use case: simple hybrid topologies, "Lift & Shift" migrations without IP changes, applications requiring L2 adjacency or VLAN transparency.
 
-### vRack
+#### Layer 3 (L3)
 
-The OVHcloud Private Network, available on compute resources between all OVHcloud data centres. It allows you to connect compatible services into a single private network.
+The virtual link relies on dynamic IP routing (BGP) :
+- Routing by IP subnets.
+- Full Mesh architecture allowing multiple PoPs and availability zones (AZ) to be interconnected within a region.
+- Network resilience via BGP sessions (multi-peers) and ECMP, with the possibility of automatic failover between multiple PoPs.
+- Use case: Enterprise WAN integration (Cloud as a Branch), critical multi-PoP architectures and large-scale complex deployments.
 
-### BGP
+## Providers, PoP and Regions
 
-BGP (Border Gateway Protocol) is the routing protocol used in Layer 3 mode to manage routes between your network and the OVHcloud vRack.
+To offer OVHcloud Connect, we collaborate with many cloud service providers. You will find the list of PoPs accessible via our partners on [the OVHcloud Connect product page](/links/network/ovhcloud-connect).
 
-## Principles of OVHcloud Connect
+To choose the most appropriate PoP for your infrastructure, please refer to our [PoP and regions mapping table](/pages/network/ovhcloud_connect_revamp/occ-pop-table).
 
-OVHcloud Connect is based on a virtual link between an *EntryPoint* and an *EndPoint*. The *EntryPoint* is where you want to make the interconnection with OVHcloud. The *EndPoint* is the OVHcloud data centre with your services. You can choose any data centre in the same region as the PoP. 
+## Requirements and limitations
 
-### Layer 2 Mode (L2)
-
-The virtual link is a L2 tunnel for OVHcloud Connect L2. Only one PoP/*EntryPoint* with one DC/*EndPoint* can be configured.
-
-### Layer 3 Mode (L3)
-
-The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any DC/*EndPoint* of the same region.
-
-## Accessible PoPs per provider
-
-The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](/links/network/ovhcloud-connect).
-
-## Accessible Regions per PoP
-
-When you establish a connection to OVHcloud Connect, your traffic enters the OVHcloud network through a specific PoP. Each PoP is associated with a geographic zone, and the OVHcloud regions that can be reached from that PoP are limited to the zone in which it is located. Depending on the PoP you select, only a defined set of regions will be available for interconnection.
-
-The following table lists regions that can be accessed from each PoP location:
-
-| Zone | OVHcloud Connect PoPs | Accessible OVHcloud Regions |
-| :--- | :--- | :--- |
-| **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
-| **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
-| **Asia-Pacific** | &bull;Singapore: Equinix - SG1<br>&bull;Mumbai: Equinix - MB2 | &bull;Singapore (`ap-southeast-sgp`),<br>&bull;Mumbai (`ap-south-mum`) |
+To check whether OVHcloud Connect meets your use case and to better understand the operational requirements and limitations of this product, please refer to [this guide](/pages/network/ovhcloud_connect_revamp/occ-limits).
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
