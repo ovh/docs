@@ -11,7 +11,7 @@ updated: 2025-05-05
 
 ## Objective
 
-This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/).
 
 ## Common questions
 
@@ -21,7 +21,7 @@ All steps for starting with AI Endpoints are described in the [AI Endpoints - Ge
 
 ### How can I stay up-to-date on changes to the AI Endpoints platform?
 
-To stay informed about changes to the AI Endpoints platform, you can consult the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog). This page is accessible from the AI Endpoints website and provides a comprehensive overview of all modifications to the platform, including new features, models, quantization, documentation improvements, decommissioned models, and bug fixes.
+To stay informed about changes to the AI Endpoints platform, you can consult the [AI Endpoints Changelog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/changelog). This page is accessible from the AI Endpoints website and provides a comprehensive overview of all modifications to the platform, including new features, models, quantization, documentation improvements, decommissioned models, and bug fixes.
 
 ### What parameters can I customize for the Large Language Model (LLM) endpoints in AI Endpoints?
 

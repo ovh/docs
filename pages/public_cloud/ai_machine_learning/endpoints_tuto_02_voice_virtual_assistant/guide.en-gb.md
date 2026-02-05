@@ -11,7 +11,7 @@ updated: 2025-12-19
 
 ## Introduction
 
-Imagine having a virtual assistant that listens to your voice, understands your questions, and responds with spoken answers, in under 100 lines of code. Thanks to [AI Endpoints](https://endpoints.ai.cloud.ovh.net/), this is now easily achievable.
+Imagine having a virtual assistant that listens to your voice, understands your questions, and responds with spoken answers, in under 100 lines of code. Thanks to [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/), this is now easily achievable.
 
 ## Objective
 

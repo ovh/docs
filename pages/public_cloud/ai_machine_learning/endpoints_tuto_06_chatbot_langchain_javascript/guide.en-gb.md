@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 **[LangChain](https://github.com/langchain-ai/langchain)** is a leading framework for building applications powered by Large Language Models (LLMs). While it's well-known for Python, LangChain also provides support for JavaScript/TypeScript—ideal for frontend and fullstack applications.
 
-In this tutorial, we'll show you how to build a simple command-line chatbot using LangChain and OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**, first in **blocking mode**, and then with **streaming** for real-time responses.
+In this tutorial, we'll show you how to build a simple command-line chatbot using LangChain and OVHcloud **[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/)**, first in **blocking mode**, and then with **streaming** for real-time responses.
 
 ## Objective
 

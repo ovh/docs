@@ -11,11 +11,11 @@ updated: 2025-10-20
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 ## Objective
 
-This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including model decommissioning and redirecting, ensuring that you have all the necessary information to effectively manage your AI Endpoints.
+This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including model decommissioning and redirecting, ensuring that you have all the necessary information to effectively manage your AI Endpoints.
 
 ## AI Endpoints model lifecycle
 
@@ -25,7 +25,7 @@ OVHcloud AI Endpoints follows a model lifecycle process to ensure a seamless exp
 - **Decommissioning decision**: Once a model is identified as a candidate for decommissioning, we make a decision to retire the model. At this point, we communicate the decision to our customers through official deprecation notices on our website and the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud).
 - **Grace period**: After the deprecation notice is published, a grace period of 30 days is provided for all models except embedding models, which will have a grace period of 3 months. This period allows customers to transition to an alternative model. During this time, we offer guidance on recommended replacements and migration steps to ensure a smooth transition.
 - **Removal from active deployment**: Once the grace period ends, the model is removed from active deployment.
-- **AI Endpoints changelog**: Decommissionings are highlighted in the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog), ensuring that customers are informed about the changes in the platform.
+- **AI Endpoints changelog**: Decommissionings are highlighted in the [AI Endpoints Changelog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/changelog), ensuring that customers are informed about the changes in the platform.
 
 By following this model lifecycle process, OVHcloud ensures that customers are well-informed and prepared for any changes, while also maintaining a lean and up-to-date selection of AI models.
 
