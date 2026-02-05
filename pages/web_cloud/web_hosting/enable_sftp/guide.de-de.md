@@ -1,5 +1,5 @@
 ---
-title: "Webhosting – So aktivieren Sie den SFTP-Zugriff"
+title: "Webhosting – Aktivieren des Zugriffs über SFTP"
 excerpt: "Erfahren Sie, wie Sie den SFTP-Zugriff auf Ihrem OVHcloud Webhosting aktivieren"
 updated: 2026-02-04
 ---
@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 Die Webhosting-Angebote von OVHcloud bieten Zugriff auf einen Speicherplatz, auf dem Sie die Dateien Ihrer Webseiten oder Anwendungen hochladen können. Der Zugriff auf diesen Speicherplatz ist über einen FTP- oder SSH-Benutzer mit den zugehörigen Passwörtern möglich.
 
-Genauso wie der **F**ile **T**ransfer **P**rotocol (**FTP**) ermöglicht es auch der **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**), Daten von Ihrem Gerät auf den Speicherplatz Ihres Webhostings zu übertragen.
+Wie **F**ile **T**ransfer **P**rotocol (**FTP**) ermöglicht es **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**), Daten von Ihrem Gerät auf den Speicherplatz Ihres Webhostings zu übertragen.
 
 Der einzige Unterschied besteht darin, dass SFTP einen sicheren Kanal zum Austausch von Daten verwendet. Die über diesen Protokoll übertragenen Daten werden automatisch verschlüsselt.
 
@@ -30,14 +30,14 @@ Der einzige Unterschied besteht darin, dass SFTP einen sicheren Kanal zum Austau
 
 ## Voraussetzungen
 
-- Ein [OVHcloud Webhosting](/links/web/hosting) Angebot besitzen.
-- Angemeldet sein in Ihrem [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
 ### SFTP-Zugriff für einen FTP-Benutzer Ihres Webhostings aktivieren
 
-**Klicken Sie auf eine der beiden folgenden Zeilen, abhängig von Ihrem Webhosting-Angebot, um die Erklärungen anzuzeigen.**
+**Öffnen Sie den Abschnitt, der Ihrem Webhosting-Angebot entspricht, um die Erklärungen anzuzeigen.**
 
 /// details | SFTP auf einem Webhosting-Angebot **Kostenloses Hosting 100M**, **Starter** oder **Basic** aktivieren
 
@@ -100,8 +100,8 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Im Tabelle am unteren Rand der Seite prüfen Sie den Status in der Spalte **SFTP** des gewünschten FTP-Benutzers :
 >>
->> - **Aktiviert** : Der SFTP-Protokoll ist bereits für diesen Benutzer aktiv.
->> - **Deaktiviert** : Klicken Sie auf die Schaltfläche `...`{.action} rechts neben der entsprechenden Zeile, und dann auf `Ändern`{.action}.
+>> - **Aktiviert**: SFTP ist bereits für diesen Benutzer aktiv.
+>> - **Deaktiviert**: Klicken Sie auf die Schaltfläche `...`{.action} rechts neben der entsprechenden Zeile, und dann auf `Ändern`{.action}.
 >>
 >> ![FTP - SSH Pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 >>

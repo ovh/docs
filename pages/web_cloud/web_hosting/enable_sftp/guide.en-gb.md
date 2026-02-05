@@ -30,8 +30,8 @@ The only difference is that SFTP uses a secure channel to exchange data. The dat
 
 ## Requirements
 
-- Have an [OVHcloud web hosting](/links/web/hosting) offer.
-- Be logged in to your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
+- An [OVHcloud web hosting plan](/links/web/hosting-multisite)
+- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
 
 ## Instructions
 
@@ -98,10 +98,10 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 4**
 >>
->> At the bottom of the page, in the table, check the status in the **SFTP** column for the relevant FTP user :
+>> At the bottom of the page, in the table, check the status in the **SFTP** column for the relevant FTP user:
 >>
->> - **Enabled** : the SFTP protocol is already active for this user.
->> - **Disabled** : click on the `...`{.action} button to the right of the relevant line, then on `Edit`{.action}.
+>> - **Enabled**: The SFTP protocol is already active for this user.
+>> - **Disabled**: Click on the `...`{.action} button to the right of the relevant line, then on `Edit`{.action}.
 >>
 >> ![FTP - SSH Pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 >>
