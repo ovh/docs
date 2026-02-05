@@ -172,7 +172,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 >>     <tr>
 >>         <td>STANDARD_IA</td>
 >>         <td rowspan=4>Infrequent Access</td>
->> 		<td rowspan=2>Infrequent Access</td>
+>> 		   <td rowspan=2>Infrequent Access</td>
 >>     </tr>
 >>     <tr>
 >>         <td>ONEZONE_IA</td>
@@ -186,8 +186,8 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 >>     </tr>
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
->>         <td>Cold Archive</td>
->> 		<td>Cold Archive</td>
+>>         <td>Cold Archive<sup>4</sup></td>
+>> 		   <td>Cold Archive<sup>4</sup></td>
 >>    </tr>
 >> </table>
 > 1-AZ regions
@@ -262,8 +262,8 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 >>     </tr>
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
->>         <td>Cold Archive</td>
->> 		<td>Cold Archive</td>
+>>         <td>Cold Archive<sup>4</sup></td>
+>> 		   <td>Cold Archive<sup>4</sup></td>
 >>     </tr>
 >> </table>
 > 1-AZ regions
@@ -286,6 +286,8 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 >>     </tr>
 >> </table>
 
+
+_<sup>4</sup>: The Cold Archive storage class in only available in Paris (EU-WEST-PAR)
 
 > [!warning]
 > Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
@@ -299,134 +301,66 @@ Although the **io** endpoint is be the preferred endpoint to access the OVHcloud
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
-> [!tabs]
-> 3-AZ regions
->> <table>
->>     <tr>
->>         <th>AWS</th>
->>         <th>OVHcloud before 2026-01-03</th>
->> 		<th>OVHcloud from 2026-01-03</th>
->>     </tr>
->>     <tr>
->>         <td>EXPRESS_ONEZONE</td> 
->>         <td rowspan=3>High Performance</td>
->> 		<td rowspan=3>High Performance</td>
->>     </tr>
->>     <tr>
->>         <td>STANDARD</td>
->>     </tr>
->>     <tr>
->>         <td>default<sup>3</sup></td>
->>     </tr>
->>     <tr>
->>          <td>STANDARD_IA</td>
->>        <td rowspan=3>Standard</td>
->> 		<td rowspan=3>Standard</td>
->>     </tr>
->>     <tr>
->>        <td>INTELLIGENT_TIERING</td>
->>     </tr>
->>     <tr>
->>         <td>ONEZONE_IA</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER_IR</td>
->>         <td rowspan=3>Infrequent Access</td>
->> 		   <td>Infrequent Access</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER</td>
->> 		<td rowspan="2">Active Archive</td>
->>     </tr>
->>     <tr>
->>         <td>DEEP_ARCHIVE</td>
->>     </tr>
->> </table>
-> 1-AZ regions
->> <table>
->>     <tr>
->>         <th>AWS</th>
->>         <th>OVHcloud</th>
->>     </tr>
->>     <tr>
->>         <td>EXPRESS_ONEZONE</td> 
->>         <td rowspan=3>High Performance</td>
->>     </tr>
->>     <tr>
->>         <td>STANDARD</td>
->>     </tr>
->>     <tr>
->>         <td>default<sup>3</sup></td>
->>     </tr>
->>     <tr>
->>          <td>STANDARD_IA</td>
->>         <td rowspan=3>Standard</td>
->>     </tr>
->>     <tr>
->>         <td>INTELLIGENT_TIERING</td>
->>     </tr>
->>     <tr>
->>         <td>ONEZONE_IA</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER_IR</td>
->>         <td rowspan=3>Infrequent Access</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER</td>
->>     </tr>
->>     <tr>
->>         <td>DEEP_ARCHIVE</td>
->>     </tr>
->> </table>
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud</th>
+    </tr>
+    <tr>
+        <td>EXPRESS_ONEZONE</td> 
+        <td rowspan=3>High Performance</td>
+    </tr>
+    <tr>
+        <td>STANDARD</td>
+    </tr>
+    <tr>
+        <td>default<sup>3</sup></td>
+    </tr>
+    <tr>
+        <td>STANDARD_IA</td>
+        <td rowspan=3>Standard</td>
+    </tr>
+    <tr>
+        <td>INTELLIGENT_TIERING</td>
+    </tr>
+    <tr>
+        <td>ONEZONE_IA</td>
+    </tr>
+    <tr>
+        <td>GLACIER_IR</td>
+        <td rowspan=3>Infrequent Access</td>
+    </tr>
+    <tr>
+        <td>GLACIER</td>
+    </tr>
+    <tr>
+        <td>DEEP_ARCHIVE</td>
+    </tr>
+</table>
 
 _<sup>3</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 
-> [!tabs]
-> 3-AZ regions
->> <table>
->>     <tr>
->>         <th>AWS</th>
->>         <th>OVHcloud</th>
->>     </tr>
->>     <tr>
->>         <td>STANDARD</td> 
->>         <td>High Performance</td>
->>     </tr>
->>     <tr>
->>         <td>STANDARD_IA</td>
->>         <td>Standard</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER_IR</td>
->>         <td>Infrequent Access</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER</td>
->>         <td>Active Archive</td>
->>     </tr>
->> </table>
-> 1-AZ regions
->> <table>
->>     <tr>
->>         <th>AWS</th>
->>         <th>OVHcloud</th>
->>     </tr>
->>     <tr>
->>         <td>STANDARD</td> 
->>         <td>High Performance</td>
->>     </tr>
->>     <tr>
->>         <td>STANDARD_IA</td>
->>         <td>Standard</td>
->>     </tr>
->>     <tr>
->>         <td>GLACIER_IR</td>
->>         <td>Infrequent Access</td>
->>     </tr>
->> </table>
+<table>
+    <tr>
+        <th>AWS</th>
+        <th>OVHcloud</th>
+    </tr>
+    <tr>
+        <td>STANDARD</td> 
+        <td>High Performance</td>
+    </tr>
+    <tr>
+        <td>STANDARD_IA</td>
+        <td>Standard</td>
+    </tr>
+    <tr>
+        <td>GLACIER_IR</td>
+        <td>Infrequent Access</td>
+    </tr>
+</table>
+
 
 ## Object Storage Swift
 
