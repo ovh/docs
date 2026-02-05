@@ -1,6 +1,6 @@
 ---
-title: How to install an OpenClaw agent on an OVHcloud VPS
-excerpt: "Discover how to deploy a 24/7 OpenClaw instance on your OVHcloud VPS using Docker Compose for maximum isolation and stability"
+title: "How to install an OpenClaw agent on a VPS"
+excerpt: "Find out how to deploy a 24/7 OpenClaw (ex Clawdbot / Moltbot) agent on a VPS, using Docker Compose for maximum isolation and stability"
 updated: 2026-02-04
 ---
 
