@@ -27,8 +27,8 @@ updated: 2025-10-03
 
 #### Layer 3 mode
 
-- Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
-- Each EndPoint/DC supports up to 4 BGP peers
+- Each POP supports only one BGP session (no eBGP Multihop)
+- Each AZ supports up to 4 BGP peers
 - Up to 100 prefixes can be announced per BGP session
 
 ### Unsupported features
@@ -55,7 +55,7 @@ updated: 2025-10-03
 
 ### Known issues
 
-| Description | Detail | Cause | Workaround | Affected sites |
+| Description | Detail | Cause | Solution | Affected sites |
 |:-----:|:------:|:-----:|:----------:|:--------------:|
 | DC routes not propagated to PoP | When using AS65501, routes announced using BGP in vRack are not propagated to PoP | OVHcloud internal configuration | Do not use AS65501 | ALL |
 | Light received but port is down | Device fails to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL PoPs |

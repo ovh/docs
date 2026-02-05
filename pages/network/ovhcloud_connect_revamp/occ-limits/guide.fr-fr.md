@@ -27,8 +27,8 @@ updated: 2025-10-03
 
 #### Mode Layer-3
 
-* Chaque EntryPoint/POP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
-* Chaque EndPoint/DC prend en charge jusqu’à 4 peers BGP
+* Chaque PoP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
+* Chaque AZ prend en charge jusqu’à 4 peers BGP
 * Jusqu’à 100 préfixes peuvent être annoncés par session BGP
 
 ### Fonctionnalités non supportées
@@ -58,7 +58,7 @@ updated: 2025-10-03
 
 Les problèmes suivants sont présents sur OVHcloud Connect.
 
-| Problème | Détail | Cause | Contournement | Sites impactés |
+| Problème | Détail | Cause | Solution | Sites impactés |
 |:--------:|:------:|:-----:|:-------------:|:--------------:|
 | Routes du EndPoint/DC non propagées jusqu'au EntryPoint/POP | En utilisant l'AS65501, les routes annoncées en BGP depuis le vRack ne remontent pas | Configuration OVHcloud interne | Ne pas utiliser AS65501 | Tous |
 | Lumière en réception mais absence de lien | L'équipement échoue à activer le lien malgré des valeurs optiques en réception correctes | L'auto-négociation est configurée | Désactiver l'auto-négociation | Tous les POP |

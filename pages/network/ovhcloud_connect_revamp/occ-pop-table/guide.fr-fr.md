@@ -12,52 +12,48 @@ Lorsque vous établissez une connexion à OVHcloud Connect, votre trafic entre d
 
 La liste disponible sur [ce lien de notre site web](/links/network/ovhcloud-connect) présente les PoP OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
 
-Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, ainsi que la région OVHcloud correspondante accessible avec le moins de latence, par zone géographique :
+Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, la région OVHcloud correspondante accessible avec le moins de latence, et la bande passante OCC Direct disponible, par zone géographique :
 
 > [!tabs]
 > Europe
 >>
 >> | Liste des régions accessibles |
 >> | :--- |
->> | Erith (`eu-west-eri`) |
->> | Gravelines (`eu-west-gra`) |
->> | Limburg (`eu-west-lim`) |
->> | Paris (`eu-west-par`) |
->> | Roubaix (`eu-west-rbx`) |
->> | Strasbourg (`eu-west-sbg`) |
->> | Warsaw (`eu-central-waw`) |
+>> | Allemagne - Limburg (`eu-west-lim`) |
+>> | Angleterre - Erith (`eu-west-eri`) |
+>> | France - Gravelines (`eu-west-gra`) |
+>> | France - Paris (`eu-west-par`) |
+>> | France - Roubaix (`eu-west-rbx`) |
+>> | France - Strasbourg (`eu-west-sbg`) |
+>> | Pologne - Warsaw (`eu-central-waw`) |
 >> 
->> Tableau des correspondances PoP / Régions de moindre latence
+>> Tableau des correspondances PoP / Régions de faible latence
 >> 
->> | Ville | PoP | Région de moindre latence OVHcloud | Bande passante OCC Direct (Gbps) |
->> | :--- | :--- | :--- | :--- |
->> | **Frankfurt** | Equinix - FR5 | Limburg (`eu-west-lim`) | 1/10/100 |
->> | **Lille** | ETIX - ETX2 | Roubaix (`eu-west-rbx`) | 1/10 |
->> | **London** | Equinix - LD5 | Erith (`eu-west-eri`) | 1/10 |
->> | **London** | Telehouse - West | Erith (`eu-west-eri`) | 1/10 |
->> | **Madrid** | Digital Realty - MAD2 | - | 1/10 |
->> | **Paris** | Equinix - PA3 | Paris (`eu-west-par`) | 1/10/100 |
->> | **Paris** | GlobalSwitch | Paris (`eu-west-par`) | 1/10 |
->> | **Paris** | Telehouse - TH2 | Paris (`eu-west-par`) | 1/10/100 |
->> | **Warsaw** | Equinix - WA2 | Warsaw (`eu-central-waw`) | 1/10 |
+>> | Ville | PoP | Région de faible latence OVHcloud | 1 Gbps | 10 Gbps | 100 Gbps |
+>> | :--- | :--- | :--- | :--- | :--- | :--- |
+>> | **Frankfurt** | Equinix - FR5 | Limburg (`eu-west-lim`) | X | X | X |
+>> | **Lille** | ETIX - ETX2 | Roubaix (`eu-west-rbx`) | X | X | |
+>> | **London** | Equinix - LD5 | Erith (`eu-west-eri`) | X | X | |
+>> | **London** | Telehouse - West | Erith (`eu-west-eri`) | X | X | |
+>> | **Madrid** | Digital Realty - MAD2 | - | X | X | |
+>> | **Paris** | Equinix - PA3 | Paris (`eu-west-par`) | X | X | X |
+>> | **Paris** | GlobalSwitch | Paris (`eu-west-par`) | X | X | |
+>> | **Paris** | Telehouse - TH2 | Paris (`eu-west-par`) | X | X | X |
+>> | **Warsaw** | Equinix - WA2 | Warsaw (`eu-central-waw`) | X | X | |
 >>
 > Amérique du Nord
 >>
 >> | Liste des régions accessibles |
 >> | :--- |
->> | Canada - Est - Beauharnois (`ca-east-bhs`) |
->> | Canada - Est - Toronto (`ca-east-tor`) |
->> | Etats Unis - Est - Vint Hill (`us-east-vin`) |
->> | Etats Unis - Ouest - Hillsboro (`us-east-hil`) |
+>> | Canada - Beauharnois (`ca-east-bhs`) |
+>> | Canada - Toronto (`ca-east-tor`) |
 >> 
->> Tableau des correspondances PoP / Régions de moindre latence
+>> Tableau des correspondances PoP / Régions de faible latence
 >> 
->> | Ville | PoP | Région de moindre latence OVHcloud | Bande passante OCC Direct (Gbps) |
->> | :--- | :--- | :--- | :--- |
->> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) | 1/10 |
->> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) | 1/10 |
->> | **Ashburn** | Equinix - DC10 | Vint Hill (`us-east-vin`) | 1/10 |
->> | **Seattle** | Digital Realty - SEA10 | Hillsboro (`us-west-hil`) | 1/10 |
+>> | Ville | PoP | Région de faible latence OVHcloud | Bande passante OCC Direct (Gbps) |
+>> | :--- | :--- | :--- | :--- | :--- | :--- |
+>> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) | X | X | |
+>> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) | X | X | |
 >>
 > Asie-Pacifique
 >>
@@ -66,12 +62,12 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, a
 >> | Singapour - Singapour (`ap-southeast-sgp`) |
 >> | Inde - Mumbai (`ap-south-mum`) |
 >> 
->> Tableau des correspondances PoP / Régions de moindre latence
+>> Tableau des correspondances PoP / Régions de faible latence
 >> 
->> | Ville | PoP | Région de moindre latence OVHcloud | Bande passante OCC Direct (Gbps) |
->> | :--- | :--- | :--- | :--- |
->> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) | 1/10 |
->> | **Singapore** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) | 1/10 |
+>> | Ville | PoP | Région de faible latence OVHcloud | Bande passante OCC Direct (Gbps) |
+>> | :--- | :--- | :--- | :--- | :--- | :--- |
+>> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) | X | X | |
+>> | **Singapour** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) | X | X | |
 
 ## Aller plus loin
 
