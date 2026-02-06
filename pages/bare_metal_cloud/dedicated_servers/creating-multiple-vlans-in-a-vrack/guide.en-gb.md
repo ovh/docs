@@ -1,7 +1,7 @@
 ---
 title: Creating multiple vLANs in a vRack
 excerpt: This guide will show you how to create multiple vLANs within the vRack
-updated: 2023-09-12
+updated: 2026-XX-XX
 ---
 
 ## Objective
@@ -115,9 +115,14 @@ ip a
 First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
 
 ```sh
-# sudo apt-get install vlan
+sudo apt-get install vlan
 ```
 
+Next, retrieve your interface names and identify the private interface:
+
+```sh
+ip a
+```
 Next, we need to create a vLAN tag. The tag is an identifier that allows you differentiate between multiple vLANs:
 
 ```sh
