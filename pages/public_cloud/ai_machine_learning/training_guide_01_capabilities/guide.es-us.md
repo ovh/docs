@@ -137,7 +137,7 @@ Attached storage allows you to work on several TB of data, while being persisten
 >
 > There is no duration limitation on AI Training job execution.
 >
-> However, by default, your AI Training job will automatically shut down after **7 consecutive running days**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support) to extend this period to **28 days**.
+> However, by default, your AI Training job will automatically shut down after **7 consecutive days of being in a RUNNING state**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support) to extend this period to **28 days**.
 
 ### Pre-installed AI environments
 

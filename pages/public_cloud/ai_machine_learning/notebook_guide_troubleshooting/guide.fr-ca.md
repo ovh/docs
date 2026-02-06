@@ -182,7 +182,7 @@ You will know if the `failed` status is related to data synchronization and whic
 
 ### How long can I use my AI Notebook?
 
-An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project. Alternatively, you can contact [our support](/links/support) to extend the automatic restart period from **7** to **28 days**, ensuring minimal disruption to your workflow.
+An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 consecutive days of being in a RUNNING state**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project. Alternatively, you can contact [our support](/links/support) to extend the automatic restart period from **7** to **28 days**, ensuring minimal disruption to your workflow.
 
 ### My notebook shut down unexpectedly
 
