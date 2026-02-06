@@ -21,7 +21,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
-- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
 
 > [!warning]
 >
@@ -37,6 +37,7 @@ There are some technical limitations linked to the use of physical products such
 - Boot type: **UEFI** or **legacy** (depending on the boot type of your server)
 - Image format: **qcow2**
 - Only one partition in the qcow2 image
+- Partition filesystem: **ext4**, **XFS**, or **BTRFS** (without subvolumes)
 
 **Deployment methods:**
 

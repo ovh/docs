@@ -21,7 +21,7 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 - Être connecté à l'[espace client OVHcloud](/links/manager) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
-- Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh). Ce script ne doit pas modifier l'ordre de boot NVRAM (par exemple, utilisez `grub-install --no-nvram`). Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ».
+- Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). Ce script ne doit pas modifier l'ordre de boot NVRAM (par exemple, utilisez `grub-install --no-nvram`). Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ».
 
 > [!warning]
 >
@@ -37,6 +37,7 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 - Type de démarrage : **UEFI** ou **legacy** (en fonction du type de démarrage de votre serveur)
 - Format de l'image : **qcow2**
 - Une seule partition dans l'image qcow2
+- Système de fichiers de la partition : **ext4**, **XFS** ou **BTRFS** (sans sous-volumes)
 
 **Méthodes de déploiement :**
 
