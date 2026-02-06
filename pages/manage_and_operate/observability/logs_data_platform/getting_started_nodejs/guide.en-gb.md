@@ -39,7 +39,7 @@ You need to:
 1.  Configure the transport to point to your LDP cluster.
 2.  Add your `X-OVH-TOKEN` to every log message so LDP accepts and routes them. In GELF, custom fields generally start with an underscore `_`.
 
-```typescript
+```javascript
 import { pino } from 'pino'
 import { PinoGraylogTransport } from '@alex-michaud/pino-graylog-transport'
 
@@ -97,6 +97,8 @@ const logger = pino({ level: 'info' }, pinoGraylogTransport);
 ```
 
 > **Note**: For security, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them.
+
+> **Note**: In your `package.json`, make sure to set `"type": "module"` to use ES modules syntax.
 
 ### Run and Verify
 
