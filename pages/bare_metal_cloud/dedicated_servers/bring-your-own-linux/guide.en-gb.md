@@ -11,7 +11,7 @@ The Bring Your Own Linux feature (BYOLinux) enables you to deploy *cloudready* L
 **What does *cloudready* mean?**
 
 The *cloudready* standard generally means being agnostic of the infrastructure on which the image is deployed.
-In addition to the requirement and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
+In addition to the requirements and limitations mentioned below, you must ensure that the image (downloaded or generated) meets the technical expectations of a cloudready image.
 
 **This guide explains how to use Bring Your Own Linux (BYOLinux) on your OVHcloud dedicated server.**
 
@@ -20,8 +20,8 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
-- Your image must be smaller than the Server RAM minus 3GiB
-- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
+- Your image must be smaller than the server RAM minus 3GiB
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will install and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
 
 > [!warning]
 >
@@ -130,7 +130,7 @@ packages:
 final_message: The system is finally up, after $UPTIME seconds
 ```
 
-Once you completed the fields, start the deployment by clicking `Execute`{.action}.
+Once you have filled in the fields, start the deployment by clicking `Execute`{.action}.
 
 #### Deployment options <a name="options"></a>
 
@@ -178,7 +178,7 @@ The following table gives an overview of well known customer errors and how to f
 |Error message|Details|Solution(s)|
 |---|---|---|
 |Please provide checkSum AND checkSumType or none of them|You have specified only one of the arguments `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
-|image provided format is `x` which does not match expected qcow2 format|Not matter what the file extension is, the real format has to be qcow2.|- Change value of `imageType` to `raw`.<br />- Convert your image to qcow2 format.|
+|image provided format is `x` which does not match expected qcow2 format|No matter what the file extension is, the real format has to be qcow2.|Convert your image to qcow2 format.|
 |image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
 |Can't write qcow2 on disk|Impossible to write qcow2 image on disk.|Modify your image so that the command `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` works.|
 |Could not download, qcow2 image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
