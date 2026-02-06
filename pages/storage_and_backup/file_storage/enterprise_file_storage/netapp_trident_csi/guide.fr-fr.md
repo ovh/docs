@@ -92,8 +92,8 @@ Créez un fichier `trident-values.yaml` afin de référencer les images héberg�
 
 ```bash
 tridentSilenceAutosupport: true
-operatorImage: "<registry_url>/netapp/trident-operator:25.02.1-custom"
-tridentImage: "<registry_url>/netapp/trident:25.02.1-custom"
+operatorImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
+tridentImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
 ```
 
 Lancez l'installation :
@@ -123,12 +123,12 @@ Le backend permet de connecter NetApp Trident au service OVHcloud Enterprise Fil
 
 1. **Fichier de configuration du backend**
 
-Créez un fichier nommé `backend-netapp.yaml`. Le driver de stockage `ovh-netapp` doit impérativement être utilisé.
+Créez un fichier nommé `backend-netapp.yaml`. Le driver de stockage `ovh-efs` doit impérativement être utilisé.
 
 ```yaml
 version: 1
-storageDriverName: ovh-netapp
-backendName: backend-ovh-netapp-rbx
+storageDriverName: ovh-efs
+backendName: backend-ovh-efs-rbx
 location: eu-west-rbx          # Your service Region
 clientLocation: ovh-eu
 clientID: "EU.XXX"             # Your IAM ClientID
@@ -158,10 +158,11 @@ Définissez une `StorageClass` pour activer le provisionnement dynamique via le 
 ```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
-metadata:   name: netapp-rbx-test
+metadata:  
+  name: efs-rbx-test
 provisioner: csi.trident.netapp.io
-volumeBindingMode: WaitForFirstConsumer
-parameters:   backendType: "ovh-netapp"
+parameters:   
+  backendType: "ovh-efs"
   fsType: "nfs"
 allowVolumeExpansion: true   # Important for resizing
 ```
@@ -183,7 +184,7 @@ spec:
   resources:
     requests:
       storage: 100Gi
-  storageClassName: netapp-rbx-test
+  storageClassName: efs-rbx-test
 ```
 
 Une fois qu’un Pod utilise ce PVC, le volume est automatiquement provisionné et monté via NFS.
@@ -199,7 +200,8 @@ NetApp Trident permet de créer des snapshots de volumes à la demande sur Enter
 ```yaml
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshotClass
-metadata:   name: csi-snapclass
+metadata:   
+  name: csi-snapclass
 driver: csi.trident.netapp.io
 deletionPolicy: Delete
 ```

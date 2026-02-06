@@ -123,12 +123,12 @@ The backend connects NetApp Trident to the OVHcloud Enterprise File Storage serv
 
 1. **Backend Configuration File**
 
-Create a file named `backend-netapp.yaml`. The `ovh-netapp` storage driver must be used.
+Create a file named `backend-netapp.yaml`. The `ovh-efs` storage driver must be used.
 
 ```yaml
 version: 1
-storageDriverName: ovh-netapp
-backendName: backend-ovh-netapp-rbx
+storageDriverName: ovh-efs
+backendName: backend-ovh-efs-rbx
 location: eu-west-rbx          # Your service Region
 clientLocation: ovh-eu
 clientID: "EU.XXX"             # Your IAM ClientID
@@ -158,9 +158,11 @@ Define a `StorageClass` to enable dynamic provisioning via the Trident CSI drive
 ```yaml
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
-metadata:   name: netapp-rbx-test
+metadata:   
+  name: efs-rbx-test
 provisioner: csi.trident.netapp.io
-parameters:   backendType: "ovh-netapp"
+parameters:   
+  backendType: "ovh-efs"
   fsType: "nfs"
 allowVolumeExpansion: true   # Important for resizing
 ```
@@ -182,7 +184,7 @@ spec:
   resources:
     requests:
       storage: 100Gi
-  storageClassName: netapp-rbx-test
+  storageClassName: efs-rbx-test
 ```
 
 Once a Pod is scheduled using this PVC, the volume is automatically provisioned and mounted via NFS.
@@ -198,7 +200,8 @@ NetApp Trident supports on-demand volume snapshots for Enterprise File Storage.
 ```yaml
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshotClass
-metadata:   name: csi-snapclass
+metadata:   
+  name: csi-snapclass
 driver: csi.trident.netapp.io
 deletionPolicy: Delete
 ```
