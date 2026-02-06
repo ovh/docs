@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI) (EN)
 excerpt: Find out how to easily deploy your own images on dedicated servers
-updated: 2025-04-29
+updated: 2026-02-06
 ---
 
 ## Objective
@@ -153,7 +153,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
-³ Examples of Efi bootloader path:
+³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
 | Operating System | efiBootloaderPath |
 |-|-|
@@ -191,5 +191,7 @@ The following table gives an overview of well known customer errors and how to f
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
 [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Join our user community on <https://community.ovh.com/en/>.
