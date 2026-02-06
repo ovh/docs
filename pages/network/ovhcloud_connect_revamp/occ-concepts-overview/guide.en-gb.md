@@ -3,85 +3,92 @@ title: Concepts overview
 excerpt: 'Concepts overview - OVHcloud Connect'
 updated: 2025-10-29
 ---
+# What is OVHcloud Connect?
 
-## What is OVHcloud Connect?
+OVHcloud Connect is a **dedicated, private network connection** between your infrastructure and OVHcloud. Instead of routing traffic over the public internet, OVHcloud Connect establishes a direct link that offers better security, lower latency, and guaranteed bandwidth.
 
-OVHcloud Connect is a private, dedicated connection between your on-premises network and your OVHcloud vRack. It is designed to extend your network and securely connect to your cloud resources, bypassing the public internet.
+## Who is it for?
 
-![OVHcloud Connect](images/VrackConnectDedicated2025.png){.thumbnail}
+OVHcloud Connect is designed for organisations that need:
 
-## Benefits of OVHcloud Connect
+- **Reliable connectivity** for business-critical applications (ERP, databases, backups)
+- **Enhanced security** by keeping traffic off the public internet
+- **Predictable performance** with dedicated bandwidth (no shared bottlenecks)
+- **Multi-cloud or hybrid-cloud** architectures connecting on-premises data centres, AWS, Azure, GCP, or WAN networks to OVHcloud
 
-### Dedicated service
+## How does it work?
 
-Dedicated Mode is a direct connection with OVHcloud devices. You can manage different configurations, from a single connection to a multiple one using LACP (Layer 2) or BGP-ECMP (Layer 3) with port speed at 1Gb or 10Gb. Interface and bandwidth are not shared with other customers.
+OVHcloud Connect links your network to OVHcloud through a **Point of Presence (PoP)** — a physical location where OVHcloud has networking equipment. You can establish this link in two ways:
 
-### Private connection
+| Connection type | How it works | Best for |
+|---|---|---|
+| **OVHcloud Connect Direct** | You manage a physical cable (cross-connect) between your equipment and OVHcloud's equipment in a shared data centre. | Organisations already present in an OVHcloud PoP data centre. |
+| **OVHcloud Connect Provider** | A third-party network provider (e.g. Megaport, Equinix Fabric, Console Connect) handles the physical connection on your behalf. | Organisations that are not co-located with OVHcloud or prefer a managed connectivity service. |
 
-Your traffic is isolated from the Internet. You manage your own VLANs (Layer 2) and/or your own IP addresses (Layer 3). BGP instances are private, and you can configure the ASN you want.
+Once the physical link is established, routing is configured using **BGP (Border Gateway Protocol)**, and the connection is associated with your **vRack** — OVHcloud's virtual private network — so your OVHcloud resources can communicate privately with your external infrastructure.
 
-OVHcloud Connect is connected to your vRack with all compatible services.
+## Architecture overview
 
-### Network extension
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" font-family="Arial, sans-serif" font-size="13">
+  <!-- Background -->
+  <rect width="800" height="320" fill="#f8f9fa" rx="8"/>
 
-OVHcloud Connect can be connected either to your WAN or your data centre network, allowing seamless extension to the cloud. This eases hybrid cloud strategies and migrations by keeping your existing VLAN topology or IP addresses.
+  <!-- Your Infrastructure -->
+  <rect x="30" y="40" width="200" height="240" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="130" y="70" text-anchor="middle" font-weight="bold" fill="#1565c0">Your Infrastructure</text>
+  <rect x="55" y="90" width="150" height="40" rx="5" fill="#fff" stroke="#90caf9"/>
+  <text x="130" y="115" text-anchor="middle" fill="#333">On-Premises DC</text>
+  <rect x="55" y="145" width="150" height="40" rx="5" fill="#fff" stroke="#90caf9"/>
+  <text x="130" y="170" text-anchor="middle" fill="#333">WAN / SD-WAN</text>
+  <rect x="55" y="200" width="150" height="40" rx="5" fill="#fff" stroke="#90caf9"/>
+  <text x="130" y="225" text-anchor="middle" fill="#333">AWS / Azure / GCP</text>
 
-### High availability
+  <!-- PoP -->
+  <rect x="300" y="80" width="200" height="160" rx="8" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+  <text x="400" y="110" text-anchor="middle" font-weight="bold" fill="#e65100">PoP (Point of Presence)</text>
+  <rect x="325" y="125" width="150" height="35" rx="5" fill="#fff" stroke="#ffcc80"/>
+  <text x="400" y="148" text-anchor="middle" fill="#333">Cross-Connect</text>
+  <rect x="325" y="175" width="150" height="35" rx="5" fill="#fff" stroke="#ffcc80"/>
+  <text x="400" y="198" text-anchor="middle" fill="#333">BGP Session</text>
 
-Using BGP, you can interconnect your network through multiple Points-of-Presence (PoPs) and reach several OVHcloud data centres. From your vRack, you can configure BGP to enable maximum resiliency with distributed services.
+  <!-- OVHcloud -->
+  <rect x="570" y="40" width="200" height="240" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="670" y="70" text-anchor="middle" font-weight="bold" fill="#2e7d32">OVHcloud</text>
+  <rect x="595" y="90" width="150" height="40" rx="5" fill="#fff" stroke="#a5d6a7"/>
+  <text x="670" y="115" text-anchor="middle" fill="#333">vRack</text>
+  <rect x="595" y="145" width="150" height="40" rx="5" fill="#fff" stroke="#a5d6a7"/>
+  <text x="670" y="170" text-anchor="middle" fill="#333">Bare Metal Servers</text>
+  <rect x="595" y="200" width="150" height="40" rx="5" fill="#fff" stroke="#a5d6a7"/>
+  <text x="670" y="225" text-anchor="middle" fill="#333">Public Cloud VMs</text>
 
-## Components of OVHcloud Connect
+  <!-- Arrows -->
+  <line x1="230" y1="160" x2="300" y2="160" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="160" x2="570" y2="160" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="265" y="150" text-anchor="middle" fill="#555" font-size="11">Direct or</text>
+  <text x="265" y="165" text-anchor="middle" fill="#555" font-size="11">Provider</text>
+  <text x="535" y="150" text-anchor="middle" fill="#555" font-size="11">Private</text>
+  <text x="535" y="165" text-anchor="middle" fill="#555" font-size="11">Link</text>
 
-### PoP - EntryPoint
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+</svg>
+```
 
-Points of Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
+## Key benefits
 
-### DC - EndPoint
+- **Security** — Traffic stays on a private link, reducing exposure to internet-based threats.
+- **Performance** — Dedicated bandwidth means no congestion from other users.
+- **Reliability** — SLA-backed uptime with options for redundant, multi-path architectures.
+- **Flexibility** — Works with on-premises, WAN, and major public cloud providers (AWS, Azure, GCP).
+- **Integration** — Connects seamlessly with OVHcloud's vRack private networking and all vRack-compatible services (Bare Metal, Hosted Private Cloud, Public Cloud).
 
-The OVHcloud data centre is the service *EndPoint* of OVHcloud Connect.
+## What's next?
 
-### Cross-connect
-
-A cross-connection is a physical link (monomode fiber) managed by the local facility team in the PoP. The cross-connection is established in the MMR (Meet-Me Room) between the position given by OVHcloud and the position owned by the customer. The customer must order and manage the cross-connect for OVHcloud Connect Direct. 
-
-### vRack
-
-The OVHcloud Private Network, available on compute resources between all OVHcloud data centres. It allows you to connect compatible services into a single private network.
-
-### BGP
-
-BGP (Border Gateway Protocol) is the routing protocol used in Layer 3 mode to manage routes between your network and the OVHcloud vRack.
-
-## Principles of OVHcloud Connect
-
-OVHcloud Connect is based on a virtual link between an *EntryPoint* and an *EndPoint*. The *EntryPoint* is where you want to make the interconnection with OVHcloud. The *EndPoint* is the OVHcloud data centre with your services. You can choose any data centre in the same region as the PoP. 
-
-### Layer 2 Mode (L2)
-
-The virtual link is a L2 tunnel for OVHcloud Connect L2. Only one PoP/*EntryPoint* with one DC/*EndPoint* can be configured.
-
-### Layer 3 Mode (L3)
-
-The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any DC/*EndPoint* of the same region.
-
-## Accessible PoPs per provider
-
-The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](/links/network/ovhcloud-connect).
-
-## Accessible Regions per PoP
-
-When you establish a connection to OVHcloud Connect, your traffic enters the OVHcloud network through a specific PoP. Each PoP is associated with a geographic zone, and the OVHcloud regions that can be reached from that PoP are limited to the zone in which it is located. Depending on the PoP you select, only a defined set of regions will be available for interconnection.
-
-The following table lists regions that can be accessed from each PoP location:
-
-| Zone | OVHcloud Connect PoPs | Accessible OVHcloud Regions |
-| :--- | :--- | :--- |
-| **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
-| **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
-| **Asia-Pacific** | &bull;Singapore: Equinix - SG1<br>&bull;Mumbai: Equinix - MB2 | &bull;Singapore (`ap-southeast-sgp`),<br>&bull;Mumbai (`ap-south-mum`) |
-
-## Go further
-
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
-
-Join our community of users on <https://community.ovh.com/en/>.
+- Review the [Glossary](1.2_glossary.md) to understand key terms
+- See the list of [Providers](1.3_providers.md) available for managed connectivity
+- Jump to the [Quick Start guides](../docs_opus46/2.1_quick_start_direct.md) to get connected
