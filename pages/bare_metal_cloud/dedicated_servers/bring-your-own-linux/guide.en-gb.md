@@ -41,7 +41,7 @@ There are some technical limitations linked to the use of physical products such
 
 **Deployment methods:**
 
-- [Deployment via the Control Panel](#viacontrolpanel): allows you to simply deploy your image using the OVHcloud Control Panel.
+- [Deployment via the Control Panel](#viacontrolpanel): allows you to deploy your image using the OVHcloud Control Panel.
 - [Deployment via API](#viaapi): you can use the OVHcloud API to integrate images into your own scripts to automate deployments.
 
 ### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
@@ -64,7 +64,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
 
-### Deploy your image via the APIs <a name="viaapi"></a>
+### Deploy your image via the API <a name="viaapi"></a>
 
 Log in to the [API console](/links/api) and go to the `/dedicated/server`{.action} section.
 
@@ -147,7 +147,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
+¹ Can either be a `#cloud-config` or a script. It must be on a single line with `\n` for line breaks<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
@@ -173,13 +173,13 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 
 #### Common customer errors <a name="errors"></a>
 
-The following table gives an overview of well known customer errors and how to fix them.
+The following table gives an overview of well-known customer errors and how to fix them.
 
 |Error message|Details|Solution(s)|
 |---|---|---|
 |Please provide checkSum AND checkSumType or none of them|You have specified only one of the arguments `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
 |image provided format is `x` which does not match expected qcow2 format|No matter what the file extension is, the real format has to be qcow2.|Convert your image to qcow2 format.|
-|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|The image is larger than the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
 |Could not download, qcow2 image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
 |Could not download image: `<error message>`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can provide them with the `httpHeaders` argument.|
 |Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
