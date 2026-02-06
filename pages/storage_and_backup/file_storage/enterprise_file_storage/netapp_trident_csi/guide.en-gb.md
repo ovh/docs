@@ -93,7 +93,7 @@ Create a `trident-values.yaml` file to reference the OVHcloud-hosted images:
 ```bash
 tridentSilenceAutosupport: true
 operatorImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
-tridentImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
+tridentImage: "ovhcom/trident:25.02.1-linux-amd64"
 ```
 
 Run the installation:

@@ -93,7 +93,7 @@ Créez un fichier `trident-values.yaml` afin de référencer les images héberg�
 ```bash
 tridentSilenceAutosupport: true
 operatorImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
-tridentImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
+tridentImage: "ovhcom/trident:25.02.1-linux-amd64"
 ```
 
 Lancez l'installation :
