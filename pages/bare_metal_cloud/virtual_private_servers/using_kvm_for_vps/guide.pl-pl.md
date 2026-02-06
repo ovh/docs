@@ -87,6 +87,8 @@ Możesz włączyć żądaną konfigurację klawiatury, aby ułatwić korzystanie
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+W razie potrzeby zainstaluj pakiet najpierw w interfejsie zarządzania pakietami Twojej dystrybucji (`sudo dnf install keyboard-configuration` lub `sudo apt install keyboard-configuration`).
+
 Otworzy się menu graficzne, w którym można wybrać szablon klawiatury.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}
