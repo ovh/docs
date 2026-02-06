@@ -38,7 +38,7 @@ Confirme la eliminación del agente en la ventana que aparece.
 
 > [!warning]
 >
-> Un vault no puede eliminarse si contiene datos. Si desea eliminar un vault, debe [contactar al soporte](/links/support), quien realizará comprobaciones con usted antes de iniciar la eliminación.
+> Un vault no puede eliminarse si contiene datos. Si desea eliminar un vault, debe [contactar al soporte](/links/support-contact), quien realizará comprobaciones con usted antes de iniciar la eliminación.
 
 Vaya a la sección `Vaults`{.action} y haga clic en el botón de eliminación para el vault correspondiente.
 
@@ -50,7 +50,7 @@ Confirme la eliminación en la ventana que aparece.
 
 > [!warning]
 >
-> Por el momento, un tenant no puede eliminarse de forma autónoma. Si desea eliminar un tenant, debe [contactar al soporte](/links/support). Tomaremos en cuenta su solicitud.
+> Por el momento, un tenant no puede eliminarse de forma autónoma. Si desea eliminar un tenant, debe [contactar al soporte](/links/support-contact). Tomaremos en cuenta su solicitud.
 
 Seleccione su tenant y haga clic en el botón de eliminación.
 

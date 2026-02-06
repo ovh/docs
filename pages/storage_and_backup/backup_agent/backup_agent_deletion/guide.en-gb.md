@@ -38,7 +38,7 @@ Confirm the agent deletion in the window that appears.
 
 > [!warning]
 >
-> A vault cannot be deleted if it contains data. If you wish to delete a vault, you must [contact support](/links/support), who will perform checks with you before initiating the deletion.
+> A vault cannot be deleted if it contains data. If you wish to delete a vault, you must [contact support](/links/support-contact), who will perform checks with you before initiating the deletion.
 
 Go to the `Vaults`{.action} section and click on the delete button for the relevant vault.
 
@@ -50,7 +50,7 @@ Confirm the deletion in the window that appears.
 
 > [!warning]
 >
-> At the moment, a tenant cannot be deleted autonomously. If you wish to delete a tenant, you must [contact support](/links/support). We will process your request.
+> At the moment, a tenant cannot be deleted autonomously. If you wish to delete a tenant, you must [contact support](/links/support-contact). We will process your request.
 
 Select your tenant and click on the delete button.
 

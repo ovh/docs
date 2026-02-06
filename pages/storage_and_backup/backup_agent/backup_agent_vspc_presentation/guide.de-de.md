@@ -27,7 +27,7 @@ Melden Sie sich mit den Anmeldeinformationen an, die Ihnen per E-Mail übermitte
 
 > [!primary]
 >
-> Falls Sie Ihre Anmeldeinformationen nicht mehr haben, können Sie diese durch [Kontakt mit dem Support](/links/support) erneut generieren.
+> Falls Sie Ihre Anmeldeinformationen nicht mehr haben, können Sie diese durch [Kontakt mit dem Support](/links/support-contact) erneut generieren.
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

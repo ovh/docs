@@ -38,7 +38,7 @@ Bestätigen Sie die Agentenlöschung im erscheinenden Fenster.
 
 > [!warning]
 >
-> Ein Vault kann nicht gelöscht werden, wenn er Daten enthält. Wenn Sie einen Vault löschen möchten, müssen Sie [Kundendienst kontaktieren](/links/support), der vor der Löschung mit Ihnen Prüfungen durchführt.
+> Ein Vault kann nicht gelöscht werden, wenn er Daten enthält. Wenn Sie einen Vault löschen möchten, müssen Sie [Kundendienst kontaktieren](/links/support-contact), der vor der Löschung mit Ihnen Prüfungen durchführt.
 
 Gehen Sie in den Bereich `Vaults`{.action} und klicken Sie auf die Löschschaltfläche für den entsprechenden Vault.
 
@@ -50,7 +50,7 @@ Bestätigen Sie die Löschung im erscheinenden Fenster.
 
 > [!warning]
 >
-> Derzeit kann ein Tenant nicht eigenständig gelöscht werden. Wenn Sie einen Tenant löschen möchten, müssen Sie [Kundendienst kontaktieren](/links/support). Wir werden Ihre Anfrage bearbeiten.
+> Derzeit kann ein Tenant nicht eigenständig gelöscht werden. Wenn Sie einen Tenant löschen möchten, müssen Sie [Kundendienst kontaktieren](/links/support-contact). Wir werden Ihre Anfrage bearbeiten.
 
 Wählen Sie Ihren Tenant aus und klicken Sie auf die Löschschaltfläche.
 

@@ -15,7 +15,7 @@ AI Notebooks are linked to a Public Cloud project. The whole project is billed a
 ## AI Notebooks lifecycle
 
 > [!warning]
-> By default, your AI Notebook will automatically shut down after **7 consecutive days of being in a RUNNING state**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support) to extend this period to **28 days**.
+> By default, your AI Notebook will automatically shut down after **7 consecutive days of being in a RUNNING state**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support-contact) to extend this period to **28 days**.
 
 During its lifetime, the notebook will go through the following statuses:
 

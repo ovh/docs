@@ -105,7 +105,7 @@ Finalmente, reinicie el servicio veeamservice.
 
 /// details | No puedo iniciar una copia de seguridad manual.
 
-[Contacte con el soporte de OVHcloud](/links/support) que podrá investigar. Asegúrese de proporcionarnos registros y capturas de pantalla.
+[Contacte con el soporte de OVHcloud](/links/support-contact) que podrá investigar. Asegúrese de proporcionarnos registros y capturas de pantalla.
 
 ///
 

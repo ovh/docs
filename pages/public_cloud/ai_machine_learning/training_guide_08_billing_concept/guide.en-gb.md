@@ -15,7 +15,7 @@ AI Training jobs are linked to a Public Cloud project. The whole project is bill
 ## AI Training job lifecycle
 
 > [!warning]
-> By default, your AI Training job will automatically shut down after **7 consecutive days of being in RUNNING status**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support) to extend this period to **28 days**.
+> By default, your AI Training job will automatically shut down after **7 consecutive days of being in RUNNING status**. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support-contact) to extend this period to **28 days**.
 
 During its lifetime, the [AI Training job](/pages/public_cloud/ai_machine_learning/training_guide_03_concepts_jobs) will go through the following statuses:
 
