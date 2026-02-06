@@ -26,76 +26,73 @@ This lifecycle policy is provided to help clients understand the underlying reas
 
 ### Commercial range concerned
 
-**Hosted Private Cloud VMware on OVHcloud**:
-
-- SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell). 
-- SDDC2018 (Intel Broadwell, Intel Haswell).
-- Essentials (Intel Broadwell).
-- Premier (Intel Xeon Gold).
+**Hosted Private Cloud VMware on OVHcloud Products**:
+- Public VMware Cloud Foundation as-a-Service
+- Managed VMware vSphere
+- Managed VMware Cloud Foundation - Stretched Cluster 3AZ
 
 ## Lifecycle timeframe and definitions
 
 ### Definitions
 
-#### End of Sales
+#### Maintenance Mode
 
-This refers to the date when the sales of new service for a commercial range or version is discontinued. Past this date, clients will not be able to start a service on the discontinued commercial range or version anymore.
+As we continue to innovate and improve our offerings, we've made the decision to focus our development efforts on newer, more advanced solutions. As a result, the following services and capabilities will be transitioning to a Maintenance mode. What this means for you:
+- Existing customers who are currently using these capabilities will continue to receive support, including critical security and availability updates, and can rest assured that we'll keep them running smoothly.
+- However, we won't be adding new features or enhancements to these services.
+- New customers will no longer be able to sign up for these specific services.
 
-After the End of Sales for a specific commercial range, the Client will still be able to use and grow existing instances of the Service and add additional individual Host Servers. The Packs from that previous commercial range or any other commercial range before it will not be available anymore for ordering new instances of the Service. The Packs will be sold for the new commercial range launched on the market only.
+Our team is committed to helping you navigate this transition and ensuring a seamless experience.
 
-The End of Sales is usually announced with a thirty (30) days minimum warning.
+#### Sunset Mode
 
-A commercial range or version will typically reach its End of Sales three (3) years after the beginning of the General Availability phase.
+Sunset mode is a phase in the product lifecycle where a service or feature is nearing the end of its supported life. At this stage, the service or feature is still available for use, but it will no longer receive regular updates, new features, or significant bug fixes.
+During this phase, OVHcloud will provide support to help customers migrate to alternative services or solutions that meet their evolving needs. Our goal is to ensure a seamless transition and minimize disruption to your business.
 
-#### End of Growth
+While the service or feature is in the Sunset mode phase, customers can expect:
+- Continued access to the service or feature, but with limited support and no new development
+- Assistance from OVHcloud in migrating to other services or solutions
+- Regular communication about the upcoming Support Expiration date and recommended next steps
+- Access to documentation and resources to help with the migration process
+- Existing customers for these specifics services will no longer be able to add host
 
-This refers to the date when the growth for a commercial range or version is discontinued. Past this date, clients will not be able to order the discontinued commercial range or version anymore.
+#### End of Support 
 
-The End of Sales is usually announced with a thirty (30) days minimum warning.
+The following services and features have reached end of support and are no longer available.
 
-A commercial range or version will typically reach its End of Growth five (5) years after the beginning of the General Availability phase.
+## OVHcloud Commercial status
 
-#### End of Life 
+### Products (platform)
+**Hosted Private Cloud VMware on OVHcloud Products**:
+- Public VMware Cloud Foundation as-a-Service
+- Managed VMware vSphere
+- Private VMware Cloud Foundation - Stretched Cluster 3AZ
 
-This refers to the date when a commercial range or version is being shut down.
-
-The End of Life may involve the inapplicability of SLAs, the absence of support services, and the absence of spares.
-
-Following the End of Life, the servers concerned will be shut down definitively. OVHcloud may offer a grace period of a few months to allow for the last clients using servers of this range to move onto newer ranges.
-
-Clients should anticipate the range change by testing in advance and making sure their configuration and software are compatible with the range they are upgrading to.
-
-### Timeframe
-
-![Typical lifecycle](images/01_lifecycle_pcc.png){.thumbnail}
-
-### Summary
-
-This table presents a summary of the different phases of the lifecycle of the service. The impact for each commercial range may differ.
-
-|              Phases              | General Availability | General Support | Grace Period / Decommissioning |
-|:--------------------------------:|:--------------------:|:---------------:|:-------------------------------:|
-|    Sales (start new services)    |          X           |                 |                                 |
-|    Growth (existing services)    |          X           |        X        |                                 |
-| Maintenance updates and upgrades |          X           |        X        |                                 |
-|             Support              |          X           |        X        |                                 |
-|               SLA                |          X           |        X        |                                 |
-|            bug fixes             |          X           |        X        |                                 |
-|    Hardware support (spares)     |          X           |        X        |                                 |
-|         Security patches         |          X           |        X        |                X                |
-|          Knowledge Base          |          X           |        X        |                X                |
-
-## OVHcloud Commercial Range status
-
-### Hosts (compute)
-
-|                   Commercial Range                    | General Availability | End of Sales | End of Growth | End of Life |
+|                   Products                            | General Availability | Maintenance Mode | Sunset Mode | End of Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-30   | 2027-07-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-30   | 2027-07-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-02-28  |  2026-03-30   | 2027-07-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-02-28  |  2027-03-31   | 2028-10-31  |
-|           Gen2 hardware (Intel Emerald Rapids)        |          2026        |              |               |             |
+|  Managed VMware vSphere                               |          2016        |  2027-05-31  |  2027-10-31   | 2028-10-31  |
+|  Public VMware Cloud Foundation as-a-Service          |          2025        |              |               |             |
+|Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
+
+### Managed VMware vSphere Hosts (compute)
+
+For Managed VMware vSphere Product, specific hardware lifecycle apply :
+- **Sales** refers to the date when new cluster creation is discontinued. Past this date, clients will not be able to start a service on the discontinued Hardware.
+- **Growth** refers to the date when the growth for an existing cluster is discontinued. Past this date, clients will not be able to order this hardware generation anymore. However, this does not affect contractual service commitments for running clusters as the product still supported (updates, spares, SLA).
+
+|                   Hardware Generation                 | General Availability |     Sales    |    Growth     | End of Support |
+|:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-31   | 2028-05-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-31   | 2028-05-31  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-03-31  |  2026-10-31   | 2028-05-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2027-03-31   | 2028-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |              |               | 2028-10-31  |
+
+### Managed VMware Cloud Foundation - Stretched Cluster 3AZ Hosts (compute)
+
+|                   Hardware Generation                 | General Availability |    Sales     |     Growth    |End of Support|
+|:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
+|                 AMD Epyc Turin                        |          2027        |              |               |             |
 
 ## Integrated Software
 
@@ -104,13 +101,6 @@ This table presents a summary of the different phases of the lifecycle of the se
 To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
 
 - [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
-
-#### NSX Datacenter for vSphere (NSX-v)
-
-You can check your version of NSX-v in the "Networking and security" section of vSphere, in the "about NSX" tab.<br>
-If your version is earlier than 6.4.12, please reach out to the support teams to plan an upgrade.
-
-VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastructures until 31/07/2024. If you are using NSX, you have to plan your migration to NSX (NSX-T) before this date (31/07/2024).
 
 ### Veeam Backup & Replication lifecycle policy
 
