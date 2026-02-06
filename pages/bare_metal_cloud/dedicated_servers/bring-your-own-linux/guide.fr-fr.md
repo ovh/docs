@@ -150,6 +150,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
 ³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
+> [!primary]
+>
+> Les chemins ci-dessous utilisent l'échappement JSON : `\\` représente un seul antislash. Par exemple, `\\efi\\debian\\grubx64.efi` correspond au chemin `\efi\debian\grubx64.efi`.
+>
+
 | Système d'exploitation | efiBootloaderPath |
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |

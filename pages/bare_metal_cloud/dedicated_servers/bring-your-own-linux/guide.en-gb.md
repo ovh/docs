@@ -150,6 +150,11 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 
+> [!primary]
+>
+> The paths below use JSON escaping: `\\` represents a single backslash. For example, `\\efi\\debian\\grubx64.efi` is the path `\efi\debian\grubx64.efi`.
+>
+
 | Operating System | efiBootloaderPath |
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
