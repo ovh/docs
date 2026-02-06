@@ -70,7 +70,7 @@ Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consulte
 
 ![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
 
-### Déploiement de votre image via les API <a name="viaapi"></a>
+### Déploiement de votre image via l'API <a name="viaapi"></a>
 
 Connectez-vous sur [https://api.ovh.com/](/links/api) puis rendez-vous dans la section `/dedicated/server`{.action}.
 
