@@ -133,13 +133,6 @@ Once the configuration file has been created, apply it to the node:
 openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
 ```
 
-> [!primary]
-> The RAID configuration is applied during the next *cleaning* cycle or deployment. If automatic cleaning is disabled, trigger a manual cleaning before setting the node back to `available`:
->
-> ```bash
-> openstack baremetal node clean <node-id>
-> ```
-
 #### 4.4. Check the RAID configuration
 
 To check the RAID configuration applied on a node:
