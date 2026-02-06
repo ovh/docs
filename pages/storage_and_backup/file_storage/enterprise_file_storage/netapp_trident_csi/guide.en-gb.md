@@ -64,7 +64,7 @@ Associate the service account (created in 2.1) with the IAM policy by adding the
 > @api {v1} /iam PUT /iam/policy/{policyId}
 >
 
-Account URN can be retrieved the account using this call with the saved client ID:
+Account URN can be retrieved using this call with the saved client ID:
 
 > [!api]
 >
@@ -86,34 +86,17 @@ Ensure the policy grants all actions needed by Trident:
 
 ### Trident CSI Installation
 
-NetApp Trident is deployed using Helm and relies on container images hosted in the OVHcloud private registry.
-
-1. **Private Registry Secret**
-
-Create the `trident` namespace and a registry secret to allow Kubernetes to pull images from the private registry:
-
-```bash
-kubectl create namespace trident
-
-kubectl -n trident create secret docker-registry regcred \
-  --docker-server=<registry_url> \
-  --docker-username=<user> \
-  --docker-password=<password> \
-  --docker-email=<email>
-```
-
-2. **Installation via Helm**
+The installation uses Helm with specific images hosted on the OVHcloud private registry to support the driver.
 
 Create a `trident-values.yaml` file to reference the OVHcloud-hosted images:
 
 ```bash
 tridentSilenceAutosupport: true
-imagePullSecrets: ["regcred"]
-operatorImage: "<registry_url>/netapp/trident-operator:25.02.1-custom"
-tridentImage: "<registry_url>/netapp/trident:25.02.1-custom"
+operatorImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
+tridentImage: "ovhcom/trident-operator:25.02.1-linux-amd64"
 ```
 
-Add the NetApp Trident Helm repository and install the operator:
+Run the installation:
 
 ```bash
 helm repo add netapp-trident https://netapp.github.io/trident-helm-chart
@@ -124,6 +107,15 @@ helm install trident-operator netapp-trident/trident-operator \
 ```
 
 Once the installation is complete, verify that all Trident pods are operational in the trident namespace before proceeding.
+
+Install Tridentctl:
+
+```bash
+mkdir 25.02.1 && cd 25.02.1
+wget https://github.com/NetApp/trident/releases/download/v25.02.1/trident-installer-25.02.1.tar.gz
+tar -xf trident-installer-25.02.1.tar.gz
+ln -sf /root/25.02.1/trident-installer/tridentctl /usr/local/bin/tridentctl
+```
 
 ### Backend Configuration (Provisioner)
 
@@ -137,22 +129,13 @@ Create a file named `backend-netapp.yaml`. The `ovh-netapp` storage driver must 
 version: 1
 storageDriverName: ovh-netapp
 backendName: backend-ovh-netapp-rbx
-storagePrefix: netapp-
 location: eu-west-rbx          # Your service Region
 clientLocation: ovh-eu
 clientID: "EU.XXX"             # Your IAM ClientID
 clientSecret: "XXX"            # Your IAM ClientSecret
-storagePools:   - "fcba6e21-..."             # Your service ID
 defaults:   exportRule: 10.235.0.0/24    # CIDR of your nodes for ACL
-  serviceLevel: Premium
-  size: 50Gi                  # Minimum size
 nfsMountOptions: rw,hard,rsize=65536,wsize=65536,nfsvers=3,tcp
 ```
-
-Ensure that:
-
-- The `storagePools` value matches your Enterprise File Storage service ID.
-- The `exportRule` covers the CIDR range of your Kubernetes worker nodes.
 
 2. **Backend Creation**
 
@@ -177,7 +160,6 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:   name: netapp-rbx-test
 provisioner: csi.trident.netapp.io
-volumeBindingMode: WaitForFirstConsumer
 parameters:   backendType: "ovh-netapp"
   fsType: "nfs"
 allowVolumeExpansion: true   # Important for resizing
