@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 excerpt: Découvrez les points de terminaison et régions de l'Object Storage OVHcloud
-updated: 2026-02-03
+updated: 2026-02-06
 ---
 
 <style>
@@ -170,11 +170,11 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 >>     <tr>
 >>         <td>STANDARD_IA</td>
 >>         <td rowspan=4>Infrequent Access</td>
->> 		   <td rowspan=2>Infrequent Access</td>
+>>         <td rowspan=2>Infrequent Access</td>
 >>     </tr>
 >>     <tr>
 >>         <td>ONEZONE_IA</td>
->>    </tr>
+>>     </tr>
 >>     <tr>
 >>         <td>GLACIER_IR</td>
 >>         <td rowspan=2>Active Archive</td>
@@ -185,8 +185,8 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
 >>         <td>Cold Archive<sup>3</sup></td>
->> 		   <td>Cold Archive<sup>3</sup></td>
->>    </tr>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>     </tr>
 >> </table>
 > 1-AZ regions
 >> <table>
@@ -236,32 +236,32 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 >>     <tr>
 >>         <th>AWS</th>
 >>         <th>OVHcloud avant 2026-01-03</th>
->> 		<th>OVHcloud depuis 2026-01-03</th>
+>>         <th>OVHcloud depuis 2026-01-03</th>
 >>     </tr>
 >>     <tr>
 >>         <td>EXPRESS_ONEZONE</td> 
 >>         <td>High Performance</td>
->> 		<td>High Performance</td>
+>>         <td>High Performance</td>
 >>     </tr>
 >>     <tr>
 >>         <td>STANDARD</td>
 >>         <td>Standard</td>
->>		<td>Standard</td>
+>>         <td>Standard</td>
 >>     </tr>
 >>     <tr>
 >>         <td>STANDARD_IA</td>
 >>         <td>Infrequent Access</td>
->> 		<td>Infrequent Access</td>
+>>         <td>Infrequent Access</td>
 >>     </tr>
->>      <tr>
+>>     <tr>
 >>         <td>GLACIER_IR</td>
->> 		<td>-</td>
+>>         <td>-</td>
 >>         <td>Active Archive</td>
 >>     </tr>
 >>     <tr>
 >>         <td>DEEP_ARCHIVE</td>
 >>         <td>Cold Archive<sup>3</sup></td>
->> 		   <td>Cold Archive<sup>3</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
 >>     </tr>
 >> </table>
 > 1-AZ regions
