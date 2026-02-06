@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Billing and lifecycle
 excerpt: Learn how we bill AI Endpoints
-updated: 2025-10-20
+updated: 2025-02-06
 ---
 
 > [!primary]
@@ -22,12 +22,19 @@ This documentation provides an overview of the billing and lifecycle management 
 OVHcloud AI Endpoints follows a model lifecycle process to ensure a seamless experience for our customers. This process includes the following steps:
 
 - **Track model usage metrics**: We continuously monitor the usage of each model on our platform to identify underutilized or obsolete models that may no longer serve the needs of our customers.
-- **Decommissioning decision**: Once a model is identified as a candidate for decommissioning, we make a decision to retire the model. At this point, we communicate the decision to our customers through official deprecation notices on our website and the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud).
-- **Grace period**: After the deprecation notice is published, a grace period of 30 days is provided for all models except embedding models, which will have a grace period of 3 months. This period allows customers to transition to an alternative model. During this time, we offer guidance on recommended replacements and migration steps to ensure a smooth transition.
-- **Removal from active deployment**: Once the grace period ends, the model is removed from active deployment.
-- **AI Endpoints changelog**: Decommissionings are highlighted in the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog), ensuring that customers are informed about the changes in the platform.
+- **Decommissioning decision**: Once a model is identified as a candidate for decommissioning, we make a decision to retire the model. At this point, we communicate the decision to our customers via email and the [#ai-news channel](https://discord.com/channels/850031577277792286/1045441414521180281) of the OVHcloud [Discord server](https://discord.gg/ovhcloud). The email is only sent to customers who have been **using the model in the last 3 months** and informs them that the model **will be removed in 3 months** to ensure a smooth transition.
+- **Grace period**: After the decommissioning decision is made, a grace period of 3 months is provided for the model we communicated about. This period allows customers to transition to an alternative model, which is provided in our communications. During this time, the model remains accessible via the API but is hidden from our website catalog.
+- **Removal from active deployment**: Once the grace period ends, the model is completely removed from our APIs and returns a 404 error for any new requests.
 
-By following this model lifecycle process, OVHcloud ensures that customers are well-informed and prepared for any changes, while also maintaining a lean and up-to-date selection of AI models.
+By following this model lifecycle process, OVHcloud ensures that customers are well informed and prepared for any changes, while also maintaining a lean and up to date selection of AI models.
+
+> [!warning]
+>
+> Our email communications are sent to the Billing NIC related to your account. If your team is using a different NIC than the billing one, they might not receive our communications. To ensure every collaborator receives these notifications, follow these steps:
+>
+> - [Via the manager](https://manager.eu.ovhcloud.com/#/communication/contacts) and using your billing NIC, add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
+>
+> - Once added, [configure a new rule](https://manager.eu.ovhcloud.com/#/communication/routing) (if the category is `Product` and if the priority is `Medium`), then send the message to <one of the mail added previously>. You can add a new condition to your delivery rule for each colleague that should receive the notification, following the same process.
 
 ## Billing principles
 
