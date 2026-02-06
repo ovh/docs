@@ -189,7 +189,7 @@ Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicat
 
 ## Aller plus loin
 
-[Bring Your Own Linux (BYOLinux) - Version détaillée](https://github.com/ovh/BringYourOwnLinux)
+[BYOLinux sur GitHub - Exemples et documentation approfondie](https://github.com/ovh/bringyourownlinux)
 
 [API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 

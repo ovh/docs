@@ -189,7 +189,7 @@ See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/de
 
 ## Go further
 
-[Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)
+[BYOLinux on GitHub - Examples and in-depth documentation](https://github.com/ovh/bringyourownlinux)
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
