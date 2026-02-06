@@ -120,7 +120,7 @@ To create an AI Notebook, follow these steps:
 >> >
 >> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
 >>
->> By default, your AI notebook will automatically shut down after 7 consecutive days of being in a RUNNING state. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of being in a RUNNING state. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support-contact) to extend this automatic restart period from 7 to 28 days.
 >>
 >> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
 >> 
@@ -585,7 +585,7 @@ When your Notebook is in the `RUNNING` state, you may want to restart it to refr
 
 The restart operation **will not trigger a datasync process**, which means your notebook's data and settings will be preserved without requiring the time consuming process of copying data.
 
-If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](/links/support).
+If you have enabled the Automatic Restart feature, your Notebook will automatically restart every 7 days without requiring manual intervention. You also have the option to extend this period to 28 days by contacting our [support](/links/support-contact).
 
 > [!tabs]
 > **Using the Control Panel (UI)**

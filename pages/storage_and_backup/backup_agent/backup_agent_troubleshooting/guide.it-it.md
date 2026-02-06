@@ -104,7 +104,7 @@ Infine, riavvia il servizio veeamservice.
 
 /// details | Non riesco a lanciare un backup manuale.
 
-[Contatta il supporto OVHcloud](/links/support) che potrà investigare. Assicurati di fornirci i log e delle schermate.
+[Contatta il supporto OVHcloud](/links/support-contact) che potrà investigare. Assicurati di fornirci i log e delle schermate.
 
 ///
 

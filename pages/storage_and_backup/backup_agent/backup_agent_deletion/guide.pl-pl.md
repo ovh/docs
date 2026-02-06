@@ -38,7 +38,7 @@ Potwierdź usunięcie agenta w oknie, które się pojawi.
 
 > [!warning]
 >
-> Skarbonkę nie można usunąć, jeśli zawiera dane. Jeśli chcesz usunąć skarbonkę, musisz [skontaktować się z obsługą](/links/support), która przeprowadzi z Tobą sprawdzenia przed uruchomieniem usunięcia.
+> Skarbonkę nie można usunąć, jeśli zawiera dane. Jeśli chcesz usunąć skarbonkę, musisz [skontaktować się z obsługą](/links/support-contact), która przeprowadzi z Tobą sprawdzenia przed uruchomieniem usunięcia.
 
 Przejdź do sekcji `Skarbonki`{.action} i kliknij przycisk usuwania dla odpowiedniej skarbonki.
 
@@ -50,7 +50,7 @@ Potwierdź usunięcie w oknie, które się pojawi.
 
 > [!warning]
 >
-> Obecnie dzierżawcę nie można usunąć samodzielnie. Jeśli chcesz usunąć dzierżawcę, musisz [skontaktować się z obsługą](/links/support). Przetworzymy Twoją prośbę.
+> Obecnie dzierżawcę nie można usunąć samodzielnie. Jeśli chcesz usunąć dzierżawcę, musisz [skontaktować się z obsługą](/links/support-contact). Przetworzymy Twoją prośbę.
 
 Wybierz swojego dzierżawcę i kliknij przycisk usuwania.
 

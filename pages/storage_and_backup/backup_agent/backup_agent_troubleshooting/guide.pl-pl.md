@@ -105,7 +105,7 @@ Następnie uruchom ponownie usługę veeamservice.
 
 /// details | Nie mogę uruchomić ręcznej kopii zapasowej.
 
-[Skontaktuj się z obsługą OVHcloud](/links/support), aby przeprowadzić analizę. Upewnij się, że dostarczysz dzienniki i zrzuty ekranu.
+[Skontaktuj się z obsługą OVHcloud](/links/support-contact), aby przeprowadzić analizę. Upewnij się, że dostarczysz dzienniki i zrzuty ekranu.
 
 ///
 

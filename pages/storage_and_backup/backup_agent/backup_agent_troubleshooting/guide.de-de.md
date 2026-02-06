@@ -105,7 +105,7 @@ Starten Sie anschließend den veeamservice-Dienst neu.
 
 /// details | Ich kann keine manuelle Sicherung starten.
 
-[Setzen Sie sich mit dem OVHcloud Support in Verbindung](/links/support), um dies zu untersuchen. Stellen Sie sicher, dass Sie Protokolle und Screenshots bereitstellen.
+[Setzen Sie sich mit dem OVHcloud Support in Verbindung](/links/support-contact), um dies zu untersuchen. Stellen Sie sicher, dass Sie Protokolle und Screenshots bereitstellen.
 
 ///
 

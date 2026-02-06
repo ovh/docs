@@ -86,7 +86,7 @@ Next, select your privacy settings.
 > Actually our main motivation is to keep the plateform up-to-date, in matter of security patches and new features alignment, so we need to update and restart hosts from time to time, which requires to get them free from any customer workload.
 > This also allows us to address host-located incidents, e.g. when a single GPU fails due to faulty hardware (only 1 customer impacted, but we still need to stop the host for bringing it to PCI maintenance, so every remaining workload must be evicted or rescheduled elsewhere).
 
-By default, your job will automatically shut down after 7 consecutive days of being in a RUNNING state, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your job back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+By default, your job will automatically shut down after 7 consecutive days of being in a RUNNING state, Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your job back on every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support-contact) to extend this automatic restart period from 7 to 28 days.
 
 ![image](images/07_job_lifecycle.png){.thumbnail}
 

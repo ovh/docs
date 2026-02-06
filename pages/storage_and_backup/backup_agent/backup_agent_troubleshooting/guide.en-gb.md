@@ -103,7 +103,7 @@ For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6
 
 /// details | I cannot start a manual backup.
 
-[Contact OVHcloud support](/links/support) to investigate. Make sure to provide logs and screenshots.
+[Contact OVHcloud support](/links/support-contact) to investigate. Make sure to provide logs and screenshots.
 
 ///
 

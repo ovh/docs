@@ -105,7 +105,7 @@ Enfin, redémarrez le service veeamservice.
 
 /// details | Je n'arrive pas à lancer une sauvegarde manuelle.
 
-[Contactez le support OVHcloud](/links/support) qui pourra investiguer. Veillez à nous fournir des logs et des captures d'écrans.
+[Contactez le support OVHcloud](/links/support-contact) qui pourra investiguer. Veillez à nous fournir des logs et des captures d'écrans.
 
 ///
 

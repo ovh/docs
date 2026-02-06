@@ -27,7 +27,7 @@ Zaloguj się przy użyciu poświadczeń dostarczonych Ci e-mailem. Format logowa
 
 > [!primary]
 >
-> Jeśli nie masz już swoich poświadczeń, możesz je ponownie wygenerować, [skontaktowując się z obsługą](/links/support).
+> Jeśli nie masz już swoich poświadczeń, możesz je ponownie wygenerować, [skontaktowując się z obsługą](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 
