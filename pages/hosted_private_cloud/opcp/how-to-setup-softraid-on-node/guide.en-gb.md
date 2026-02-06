@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to configure a software RAID on a node"
 excerpt: "Find out how to configure and manage a software RAID on an OpenStack Ironic node in OPCP"
-updated: 2026-01-13
+updated: 2026-02-06
 ---
 
 ## Objective
