@@ -30,11 +30,11 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 
 > [!warning]
 >
-> Our email communications are sent to the Billing NIC related to your account. If your team is using a different NIC than the billing one, they might not receive our communications. To ensure every collaborator receives these notifications, follow these steps:
+> Our email communications are sent to the billing contact related to your OVHcloud account. If your team is using a different OVHcloud account than the billing one, they might not receive our communications. To ensure every collaborator receives these notifications, follow the steps from [this guide](/pages/account_and_service_management/account_information/manage-messages):
 >
-> - [Via the manager](https://manager.eu.ovhcloud.com/#/communication/contacts) and using your billing NIC, add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
+> - Log in to the [OVHcloud Control Panel](/links/) using your billing OVHcloud account, click on your name in the top right corner, then click on `My messages`{.action}. Add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
 >
-> - Once added, [configure a new rule](https://manager.eu.ovhcloud.com/#/communication/routing) (if the category is `Product` and if the priority is `Medium`), then send the message to <one of the mail added previously>. You can add a new condition to your delivery rule for each colleague that should receive the notification, following the same process.
+> - Once the email addresses are added, go to the `Delivery settings`{.action} tab and configure a new rule (category: `Product` and priority: `Medium`). You can add a new condition to your delivery rule for each colleague that should receive the notification, following the same process.
 
 ## Billing principles
 

@@ -35,7 +35,7 @@ A **404** error typically indicates that the model you're trying to access canno
 
 ### Why can't I use my model anymore? I am facing 404 now.
 
-If you are now unable to use a model you were using, it might have been decommissioned. OVHcloud AI Endpoints follows a [model lifecycle process](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) to ensure a seamless experience for our customers. As stated in previous documentation, we notify you of our decision to retire a model three months in advance, giving you time to prepare for migration.
+If you are now unable to use a model you were previously using, it might have been decommissioned. OVHcloud AI Endpoints follows a [model lifecycle process](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) to ensure a seamless experience for our customers. As stated in the documentation linked above, we notify you of our decision to retire a model three months in advance, giving you time to prepare for migration.
 
 ### I am trying to use the AI Endpoints models, but I keep getting a 429 error code. What does it mean?
 
