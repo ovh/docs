@@ -159,7 +159,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
@@ -191,5 +191,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
 [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

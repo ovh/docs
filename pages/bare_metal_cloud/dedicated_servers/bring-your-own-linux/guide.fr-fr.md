@@ -148,13 +148,13 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
-³ Exemples de chemin EFI :
+³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
 | Système d'exploitation | efiBootloaderPath |
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
@@ -191,5 +191,7 @@ Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicat
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

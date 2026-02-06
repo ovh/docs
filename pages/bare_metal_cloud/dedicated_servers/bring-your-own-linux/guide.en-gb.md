@@ -154,7 +154,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
