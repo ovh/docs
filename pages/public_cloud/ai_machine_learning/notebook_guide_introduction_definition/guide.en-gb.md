@@ -119,9 +119,9 @@ To create an AI Notebook, follow these steps:
 >> > [!warning]
 >> >
 >> > Our main motivation is to keep the platform up-to-date in terms of security patches and new feature alignment. To achieve this, we need to update and restart hosts from time to time, which requires them to be free from any customer workload.
->> 
->> By default, your AI notebook will automatically shut down after 7 consecutive days of running. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
->> 
+>>
+>> By default, your AI notebook will automatically shut down after 7 consecutive days of being in a RUNNING state. Rest assured that all your settings and data will be preserved. You have the option to enable Automatic Restart, which will automatically restart your notebook every 7 days, ensuring minimal disruption to your workflow. Alternatively, you can also contact [our support](/links/support) to extend this automatic restart period from 7 to 28 days.
+>>
 >> ![Create a Notebook Control Panel manager 08](images/creating-a-notebook-using-UI-08.png){.thumbnail}
 >> 
 >> **8\. Advanced configuration**
