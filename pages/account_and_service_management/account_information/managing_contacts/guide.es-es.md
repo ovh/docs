@@ -58,7 +58,7 @@ Se mostrará una tabla con todos los servicios en los que su identificador de cl
 
 ### Cambiar los contactos de un servicio
 
-Una vez haya accedido a la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servidor que quiere modificar, y a continuación haga clic en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
+Una vez haya accedido a la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar, y a continuación haga clic en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
 
 ![Gestión de contactos](images/managing_contacts_03.png){.thumbnail}
 
