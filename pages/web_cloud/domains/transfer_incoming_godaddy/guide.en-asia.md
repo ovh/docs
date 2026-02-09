@@ -1,7 +1,7 @@
 ---
 title: "Transferring a GoDaddy domain name to OVHcloud"
 excerpt: "Find out how to transfer a GoDaddy domain name to OVHcloud"
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Configurer les DNS de son nom de domaine"
 excerpt: "Utiliser l'API publique OVHcloud pour configurer les DNS de votre nom de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->

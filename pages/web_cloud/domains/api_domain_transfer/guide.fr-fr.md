@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine"
 excerpt: "Utilisez l'API publique OVHcloud pour transférer vos noms de domaine"
-updated: 2022-07-21
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->

@@ -1,7 +1,7 @@
 ---
 title: "Gestion des contacts d'un nom de domaine"
 excerpt: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -35,7 +35,7 @@ Pour la majorité des extensions, il y a 3 contacts différents configurables ch
 
 - **Administrateur** : contact qui gère le nom de domaine dans sa globalité (gestion du contact titulaire, contact technique). Il est le principal interlocuteur du registrar.
 - **Technique** : contact qui gère la partie technique du nom de domaine (gestion de la zone notamment).
-- **Titulaire** : personne physique ou morale détentrice du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules). Il est celui qui est légalement responsable du nom de domaine.
+- **Titulaire** : personne physique ou morale titulaire du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules). Il est celui qui est légalement responsable du nom de domaine.
 
 Par exemple, John contacte une agence web afin de créer son site web vitrine pour sa petite entreprise. Dans ce cas-là, l'agence web organisera les contacts de cette manière :
 

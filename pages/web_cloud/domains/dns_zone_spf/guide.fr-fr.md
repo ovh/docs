@@ -1,7 +1,7 @@
 ---
 title: Améliorer la sécurité des e-mails via un enregistrement SPF
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine afin d'améliorer la sécurité de vos e-mails
-updated: 2024-09-05
+updated: 2026-02-10
 ---
 
 <style>
@@ -109,7 +109,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 ### Configurer l'enregistrement SPF
 
-Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le nom de domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
@@ -165,7 +165,7 @@ Nous allons les aborder progressivement.
 - **ptr** : renseignez ici des noms d'hôtes dont le *reverse* est fonctionnel (grâce à un enregistrement PTR dans la zone DNS). Ils seront ainsi identifiés comme une source d'envoi légitime.
 - **ip4** : indiquez les IP ou les plages d'IP (IPv4) autorisées à envoyer des e-mails avec vos adresses.
 - **ip6** : indiquez les IP ou les plages d'IP (IPv6) autorisées à envoyer des e-mails avec vos adresses.
-- **include** : renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF :  "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.
+- **include** : renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre nom de domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF : "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.
 
 ///
 
@@ -199,7 +199,7 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 
 ### Modifier un enregistrement SPF <a name="modifyspf"></a>
 
-Pour modifier le SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour modifier le SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le nom de domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton `...`{.action} afin d'éditer l'entrée.
 

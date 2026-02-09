@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine .uk vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert sortant d’un nom de domaine UK vers un autre registrar"
-updated: 2022-10-19
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les nom
 
 > [!warning]
 >
-> Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
+> Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de titularité, un transfert sortant de nom de domaine n'est pas la procédure appropriée.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
@@ -54,7 +54,7 @@ Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les
 
 Cliquez sur le lien `Tag de transfert sortant`{.action} dans la section intitulée **Configuration**.
 
-![transfert sortant](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
+![transfert sortant](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, renseignez le TAG de votre nouveau bureau d'enregistrement puis cliquez sur `Confirmer`{.action}.
 
@@ -72,6 +72,6 @@ Contactez dès lors votre nouveau fournisseur pour obtenir davantage de détails
 
 [Transférer un nom de domaine vers un autre bureau d’enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

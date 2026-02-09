@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'affichage de ses données dans le Whois"
 excerpt: "Utilisez l'API publique OVHcloud pour configurer l'affichage de vos données dans le Whois"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -42,7 +42,7 @@ aux contacts d'un nom de domaine dans le Whois et le RDAP.
 
 ## Divulgation des informations (optin)
 
-Depuis la mise en place du RGPD, les données du Whois concernant les contacts `admin`, `tech`, `billing` et titulaire (`owner`) sont cachées par défaut
+Depuis la mise en place du RGPD, les données du Whois concernant les contacts `admin`, `tech`, `billing` et `owner` (titulaire) sont cachées par défaut
 si ce sont des personnes physiques.
 Cependant, si l'utilisateur le souhaite, il est possible de divulguer l'intégralité des données en fonction de
 ce qui est permis par les règles d'optin appliquées sur le nom de domaine.
@@ -90,9 +90,9 @@ L'API suivante permet de connaître les règles de divulgation applicables sur u
 
 La réponse ci-dessus indique les trois types de règles qu'il est possible de rencontrer :
 
--   Le contact `admin` est absent de la réponse, ce qui signifie qu'il n'est pas possible de configurer la divulgation des données Whois le concernant.
--   La présence du contact `tech` avec un tableau de `field` vide signifie qu'il est possible de divulguer les informations. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
--   Concernant le contact `holder`. La présence des champs dans le nœud `field` signifie que les informations sont masquées. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
+- Le contact `admin` est absent de la réponse, ce qui signifie qu'il n'est pas possible de configurer la divulgation des données Whois le concernant.
+- La présence du contact `tech` avec un tableau de `field` vide signifie qu'il est possible de divulguer les informations. Le choix des informations divulguées n'est cependant pas personnalisable (c'est tout ou rien).
+- Concernant le contact `owner`, la présence des champs dans le nœud `field` signifie que les informations sont masquées. Le choix des informations divulguées n'est cependant pas personnalisable : l’affichage est soit intégral, soit inexistant.
 
 ### Récupération de la configuration d'optin d'un nom de domaine
 

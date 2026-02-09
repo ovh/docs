@@ -1,6 +1,6 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -11,7 +11,7 @@ La création d'un nom de domaine, son transfert, son changement de titulaire son
 
 ## Prérequis
 
-- Être titulaire d'un ou plusieurs noms de domaine.
+- Être titulaire d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
 

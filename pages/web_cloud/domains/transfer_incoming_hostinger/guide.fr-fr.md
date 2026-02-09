@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de Hostinger vers OVHcloud'
 excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis Hostinger vers OVHcloud'
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -93,7 +93,7 @@ Pour vous familiariser avec le changement de titulaire d'un nom de domaine, nous
 
 Pour obtenir un code **EPP** ou **Auth** chez Hostinger, suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/1583203-comment-obtenir-un-code-epp-ou-auth-pour-le-transfert-d-un-nom-de-domaine-chez-hostinger).
 
-### Initier le transfert de domaine chez OVHcloud
+### Initier le transfert de nom de domaine chez OVHcloud
 
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
@@ -103,7 +103,7 @@ Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de vo
 
 [Migrer son site Web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

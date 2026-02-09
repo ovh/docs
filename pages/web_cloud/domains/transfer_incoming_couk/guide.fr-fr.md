@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine .uk vers OVHcloud'
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud'
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 > [!warning]
 >
-> Si le nom de domaine en cours de modification est actuellement enregistré chez OVHcloud, le transfert entrant de domaine n'est pas la procédure appropriée. Cette procédure s’applique uniquement au changement de nom de domaine enregistré (OVHcloud).
+> Si le nom de domaine en cours de modification est actuellement enregistré chez OVHcloud, le transfert entrant de nom de domaine n'est pas la procédure appropriée. Cette procédure s’applique uniquement au changement de nom de domaine enregistré (OVHcloud).
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
@@ -34,14 +34,14 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 ## Prérequis
 
-- votre nom de domaine ne doit pas être en période de **rédemption** ou de suppression.
-- Le domaine ne doit pas être bloqué chez votre registrar.
+- Votre nom de domaine ne doit pas être en période de **rédemption** ou de suppression.
+- Le nom de domaine ne doit pas être bloqué chez votre registrar.
 - Les coordonnées du titulaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/) du nom de domaine.
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du titulaire.
 
 > [!primary]
 >
-> La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le domaine et ainsi débloquer la possibilité de le transférer.
+> La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le nom de domaine et ainsi débloquer la possibilité de le transférer.
 
 ## Extensions concernées
 
@@ -84,7 +84,7 @@ votre nom de domaine sera ensuite présent dans votre [espace client OVHcloud](/
 
 ### Informations utiles
 
-#### Cout d'un transfert de domaine en .uk (ou assimilé)
+#### Cout d'un transfert de nom de domaine en .uk (ou assimilé)
 
 Le transfert est gratuit.
 

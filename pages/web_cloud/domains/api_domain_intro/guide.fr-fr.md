@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 excerpt: "Présentation générale de l'API publique OVHcloud pour les noms de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Begin TOC -->

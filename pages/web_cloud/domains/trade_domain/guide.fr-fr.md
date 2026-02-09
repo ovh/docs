@@ -1,12 +1,12 @@
 ---
 title: "Nom de domaine - Comment changer le titulaire ?"
 excerpt: "Découvrez comment changer le titulaire d'un nom de domaine ou mettre à jour les informations qui lui sont associées"
-updated: 2025-06-11
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-En dehors de la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au titulaire de celui-ci. Dans ce contexte, le **titulaire** désigne une personne, une société, une organisation ou encore une association détenant les droits sur ce nom de domaine. **Le changement de titulaire** fait référence au transfert des droits de propriété d'une personne ou entreprise vers une autre. Les informations du **titulaire** ont une valeur juridique. Ce processus est notamment obligatoire si une société change de nom.
+En dehors de la [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au titulaire de celui-ci. Dans ce contexte, le **titulaire** désigne une personne, une société, une organisation ou encore une association détenant les droits sur ce nom de domaine. **Le changement de titulaire** fait référence au transfert des droits d'utilisation d'une personne ou entreprise vers une autre. Les informations du **titulaire** ont une valeur juridique. Ce processus est notamment obligatoire si une société change de nom.
 
 > [!primary]
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.

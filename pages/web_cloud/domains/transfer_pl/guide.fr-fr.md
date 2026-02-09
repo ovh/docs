@@ -2,7 +2,7 @@
 title: 'Transférer son nom de domaine en .pl vers OVHcloud'
 hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -114,7 +114,7 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 - Le titulaire du nom de domaine reçoit un e-mail sur l'adresse qu'il a renseignée, présente dans le Whois (si elle est n'est pas masquée).
 - Cet e-mail provient du registre des noms de domaine « .pl », depuis l'adresse « automat@dns.pl» .
 - Cliquez sur le lien de validation présent dans cet e-mail pour finaliser le transfert.
-- Une fois la validation effectuée, le domaine sera accessible depuis votre [espace client OVHcloud](/links/manager) dans les 24 heures.
+- Une fois la validation effectuée, le nom de domaine sera accessible depuis votre [espace client OVHcloud](/links/manager) dans les 24 heures.
 
 > [!warning]
 >
@@ -123,7 +123,7 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 
 #### Que faire si vous n'avez pas reçu l'e-mail de validation du transfert ?
 
-Vérifiez l'adresse e-mail du titulaire du nom de domaine chez votre fournisseur de domaine actuel.<br>
+Vérifiez l'adresse e-mail du titulaire du nom de domaine chez votre fournisseur de nom de domaine actuel.<br>
 Vérifiez également et en priorité les dossiers « SPAM » / « courrier indésirable » des adresses e-mail concernées.
 
 Si l'e-mail de validation reste introuvable, contactez le support OVHcloud via la création d'un ticket d'assistance. Nos services pourront alors annuler le transfert. Une fois l'annulation effectuée, modifiez l'adresse e-mail du titulaire du nom de domaine, en privilégiant un autre fournisseur e-mail (tel que, par exemple, Gmail, Yahoo, Onet, wp.pl, etc.).<br>
@@ -137,7 +137,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 [Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

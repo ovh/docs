@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les noms de domaine & DNS"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs DNS et les zones DNS"
-updated: 2025-12-16
+updated: 2026-02-10
 ---
 
 <style>
@@ -31,7 +31,7 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services auxquels vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine ainsi que l’installation des services et options auxquels vous avez souscrit en complément.
@@ -54,7 +54,7 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services auxquels vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine ainsi que l’installation des services et options auxquels vous avez souscrit en complément.
@@ -146,7 +146,7 @@ Suivez ces étapes :
 3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
 4. Sur la page qui s'affiche, sélectionnez le mode de résiliation (immédiatement ou à la date d'expiration du service) puis cliquez en bas sur le bouton `Oui, résilier`{.action}.
 
-Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre titulaire/titulaire.
+Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre titulaire.
 
 > [!primary]
 >
@@ -162,7 +162,7 @@ Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compt
 
 Tout d'abord, si vous avez un doute sur la légitimité de l'e-mail reçu, consultez notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
-Conformément à une directive de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) du 01/09/2014, les bureaux d'enregistrement (par exemple : OVHcloud) sont tenus de vérifier la validité des coordonnées des titulaires/titulaires de noms de domaine. OVHcloud envoie alors un e-mail aux titulaires/titulaires du nom de domaine enregistré à l'adresse e-mail de contact déclarée chez OVHcloud.
+Conformément à une directive de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) du 01/09/2014, les bureaux d'enregistrement (par exemple : OVHcloud) sont tenus de vérifier la validité des coordonnées des titulaires de noms de domaine. OVHcloud envoie alors un e-mail aux titulaires du nom de domaine enregistré à l'adresse e-mail de contact déclarée chez OVHcloud.
 
 Vous recevrez cet e-mail lorsque vous effectuerez l'une des actions suivantes :
 
@@ -170,16 +170,16 @@ Vous recevrez cet e-mail lorsque vous effectuerez l'une des actions suivantes :
 - Transfert d'un nom de domaine.
 - Modification des coordonnées associées à votre nom de domaine.
 
-Cet e-mail contient un lien permettant de vérifier rapidement vos coordonnées en tant que titulaire/titulaire légal du nom de domaine.
+Cet e-mail contient un lien permettant de vérifier rapidement vos coordonnées en tant que titulaire légal du nom de domaine.
 
 Attention : Cette vérification doit être faite dans un délai de 15 jours. Passé ce délai, le nom de domaine sera suspendu techniquement. Il restera contractuellement à votre nom mais il ne sera plus accessible sur Internet. Un message d'erreur s'affichera pour les visiteurs de votre site web.
 
 Vous pouvez recevoir les e-mails suivants durant les 15 premiers jours :
 
-- **Jour 0** : Immédiatement après avoir commandé le nom de domaine ou modifié ses coordonnées, vous (ou la personne enregistrée en tant que titulaire/titulaire du nom de domaine) recevrez le premier e-mail avec un lien de vérification.
+- **Jour 0** : Immédiatement après avoir commandé le nom de domaine ou modifié ses coordonnées, vous (ou la personne enregistrée en tant que titulaire du nom de domaine) recevrez le premier e-mail avec un lien de vérification.
 - **Jours 4, 9 et 13 (e-mails de relance)** : Si vous n'avez pas encore vérifié le nom de domaine, vous recevrez à nouveau l'e-mail.
 - **Jour 14** : Si vous n'avez toujours pas vérifié le nom de domaine, l'e-mail est envoyé une nouvelle fois. De plus, un e-mail est également envoyé à l'adresse e-mail de l'administrateur/titulaire du nom de domaine pour l'informer que les coordonnées de ce dernier n'ont pas été confirmées.
-- **Jour 15** : Si le titulaire/titulaire du nom de domaine n'a pas encore répondu, nous envoyons un e-mail l'administrateur du nom de domaine pour l'informer de la situation et de la désactivation du nom de domaine.
+- **Jour 15** : Si le titulaire du nom de domaine n'a pas encore répondu, nous envoyons un e-mail l'administrateur du nom de domaine pour l'informer de la situation et de la désactivation du nom de domaine.
 
 Au-delà de ces 15 jours, le système envoie des e-mails supplémentaires (jusqu'à 9 e-mails) avant de supprimer votre nom de domaine. Cette suppression sera effectuée après 60 jours à compter du jour 0.
 

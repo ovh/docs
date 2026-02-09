@@ -1,7 +1,7 @@
 ---
 title: "Changer le titulaire d’un nom de domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2024-10-10
+updated: 2026-02-10
 ---
 
 ## Objectif

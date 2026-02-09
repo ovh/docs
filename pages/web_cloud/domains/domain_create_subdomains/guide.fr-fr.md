@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un sous-domaine ?"
 excerpt: "Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -58,7 +58,7 @@ Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de dom
 
 Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes généralement séparés par un point `.` (à l'exception de certaines **extensions** du premier niveau comme *.co.uk*, *.gouv.fr* ou encore *.notaires.fr*):
 
-- **T**op **L**evel **D**omain (**TLD**) représente les noms de domaine de premier niveau. Nous les appelons plus communément les **extensions**. Il existe actuellement 4 types de domaine de premier niveau :
+- **T**op **L**evel **D**omain (**TLD**) représente les noms de domaine de premier niveau. Nous les appelons plus communément les **extensions**. Il existe actuellement 4 types de domaines de premier niveau :
     - Les **c**ountry **c**ode **T**op **L**evel **D**omains (**ccTLDs**), composés de deux caractères. Ils correspondent aux différents pays du globe. Par exemple, les extensions *.fr*, *.es*, *.it* ou encore *.pl* sont des ccTLDs.
     - Les **g**eneric **T**op **L**evel **D**omains (**gTLDs**), composés d'au moins trois caractères. Ils représentent des thèmes ou des secteurs d'activité plus généraux. Par exemple, les extensions *.com*, *.net*, *.org* ou encore *.info* sont des gTLDs.
     - Les **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**), nouvelles extensions créées à partir de 2012 par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin de répondre à la forte hausse des demandes de création de noms de domaine. Elles peuvent correspondre à des thèmes génériques, des marques, des régions ou des villes. Par exemple, les extensions *.love*, *.ovh* ou encore *.paris* sont des new gTLDs.
@@ -194,7 +194,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 #### Cas 3 - Créer des adresses E-mail Pro avec un sous-domaine <a name="link-subdomain-case-3"></a>
 
-Pour débloquer la création d'adresses E-mail Pro personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action} puis sélectionnez la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un nom de domaine`{.action} à droite.
+Pour débloquer la création d'adresses E-mail Pro personnalisées avec un sous-domaine, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action} puis sélectionnez la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme E-mail Pro.
 

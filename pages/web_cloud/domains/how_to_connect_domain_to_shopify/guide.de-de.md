@@ -1,12 +1,12 @@
 ---
 title: Verbinden eines OVHcloud Domainnamens mit einem Shopify Hosting
 excerpt: Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem Shopify Hosting zu verwenden
-updated: 2024-04-09
+updated: 2026-02-10
 ---
 
 ## Ziel
 
-Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify Hostings zu ermöglichen.
+Sie sind der Inhaber eines Domainnamens bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Shopify Hosting verbinden.**
 

@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'affichage du WHOIS d'un nom de domaine ?"
 excerpt: "Découvrez comment afficher ou masquer certaines informations contenues dans le WHOIS d'un nom de domaine depuis votre espace client OVHcloud"
-updated: 2025-06-23
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -59,11 +59,9 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Sur la nouvelle page qui apparaît, vous pourrez choisir d'`Afficher` ou de `Masquer` les informations relatives aux contacts titulaire, administrateur et technique du nom de domaine, dans la limite des actions autorisées par le registre gestionnaire de l'extension.
 >>
->> Pour chacun des 3 contacts, cochez la case `Gérer l'affichage champ par champ`{.action} pour obtenir plus d'options.
->>
 >> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> Une fois vos choix effectués, cliquez sur le bouton `Enregistrer les modifications`{.action}.
+>> Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
 >>
 >> La prise en compte des modifications peut nécessiter jusqu'à **48** heures. Ces modifications seront appliquées **uniquement si elles sont autorisées par le registre gérant l'extension de votre nom de domaine**.
 

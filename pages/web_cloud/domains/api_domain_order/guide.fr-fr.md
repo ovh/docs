@@ -1,7 +1,7 @@
 ---
 title: "Commander un nom de domaine"
 excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour commander vos noms de domaine"
-updated: 2023-08-29
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -189,8 +189,8 @@ La seconde étape consiste à récupérer les offres accessibles pour un nom de 
 
 Il y a 4 valeurs à retenir ici :
 
-1. `action` : celle réalisable sur le domaine, ça peut être un `create` ou un `transfer`
-2. `duration` : ce champ représente l'unité de période sur laquelle il est possible de commander le domaine, au format ISO 8601. Pour un nom de domaine, P1Y (**P**eriod **1** **Y**ear) équivaut à une période d'un an, P2Y une période de deux ans, etc.
+1. `action` : action réalisable sur le nom de domaine, cela peut être un `create` ou un `transfer`
+2. `duration` : ce champ représente l'unité de période sur laquelle il est possible de commander le nom de domaine, au format ISO 8601. Pour un nom de domaine, P1Y (**P**eriod **1** **Y**ear) équivaut à une période d'un an, P2Y une période de deux ans, etc.
 3. `offerId` : c'est le nom de l'offre qu'il faudra mettre lors de l'ajout du nom de domaine dans le panier
 4. `pricing-mode` : c'est le détail de l'offre qu'il faudra également mettre lors de l'ajout du nom de domaine dans le panier
 

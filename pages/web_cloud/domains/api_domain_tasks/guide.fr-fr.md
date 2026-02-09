@@ -1,7 +1,7 @@
 ---
 title: "Gestion des tâches"
 excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->

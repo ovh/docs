@@ -1,7 +1,7 @@
 ---
 title: "Gestion des règles d'éligibilité"
 excerpt: "Description du format technique des règles d'éligibilité aux noms de domaine"
-updated: 2022-05-05
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->

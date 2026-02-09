@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de O2Switch vers OVHcloud'
 excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis O2Switch vers OVHcloud'
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -70,7 +70,7 @@ Vous devez aussi :
 
 Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert).
 
-### Initier le transfert de domaine chez OVHcloud
+### Initier le transfert de nom de domaine chez OVHcloud
 
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
@@ -80,7 +80,7 @@ Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de vo
 
 [Migrer son site Web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
