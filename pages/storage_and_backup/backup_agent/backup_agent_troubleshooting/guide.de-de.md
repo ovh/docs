@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Problembehandlung"
 excerpt: "Erfahren Sie, wie Sie potenzielle Probleme im Zusammenhang mit dem Backup Agent beheben können"
-updated: 2026-02-03
+updated: 2026-02-09
 ---
 
 <style>
@@ -224,16 +224,10 @@ Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Protokoll
 >> Verwenden Sie den folgenden Befehl, um Protokolle zu exportieren. Das Archiv wird im aktuellen Arbeitsverzeichnis gespeichert:
 >>
 >> ```bash
->> sudo veeamconfig log export
+>> sudo veeamconfig grablogs
 >> ```
 >>
->> Um ein Zielverzeichnis anzugeben, verwenden Sie:
->>
->> ```bash
->> sudo veeamconfig log export --path /pfad/zum/ziel
->> ```
->>
->> 2\. Über das Veeam Control Panel
+>> 2\. Über das control panel
 >>
 >> Wenn Sie Zugriff auf eine grafische Benutzeroberfläche haben, können Sie Protokolle über das Control Panel von Veeam Agent exportieren, indem Sie das Zielverzeichnis angeben.
 >>
