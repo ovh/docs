@@ -18,7 +18,7 @@ If you are using a **Provider**, the provider handles the physical connectivity 
 
 ## How to choose a PoP
 
-When selecting a PoP for your OVHcloud Connect service, consider:
+When selecting a PoP for your OVHcloud Connect service, please consider the following:
 
 ### 1. Proximity (latency)
 
@@ -45,7 +45,9 @@ Some industries or countries require data to stay within a specific geography. C
 
 To ensure the best performance, your OVHcloud Connect service should terminate in the region where your OVHcloud workloads are running (or will run). Verify that the PoP serves the region you need.
 
+## Regions & PoPs table
 
+> Copier ici la table en Anglais
 
 ## What's next?
 
