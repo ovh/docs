@@ -59,7 +59,7 @@ Copiez-y la configuration suivante :
 ```bash
 services:
   openclaw:
-    image: openclaw/openclaw:latest
+    image: ghcr.io/openclaw/openclaw:latest
     container_name: openclaw-gateway
     restart: always
     ports:
