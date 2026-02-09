@@ -1,7 +1,7 @@
 ---
 title: "Comment installer un agent OpenClaw sur un VPS"
 excerpt: "Découvrez comment déployer OpenClaw (ex Clawdbot / Moltbot) 24h/24 sur un VPS, à l’aide de Docker Compose pour une isolation et une stabilité maximales"
-updated: 2026-02-04
+updated: 2026-02-09
 ---
 
 **OpenClaw** (successeur de Moltbot et Clawdbot) est la nouvelle version évoluée de l'assistant IA autonome. Ce guide utilise **Docker** afin de protéger votre système hôte tout en vous assurant que votre assistant reste en ligne 24h/24.
@@ -59,7 +59,7 @@ Copiez-y la configuration suivante :
 ```bash
 services:
   openclaw:
-    image: openclaw/openclaw:latest
+    image: ghcr.io/openclaw/openclaw:latest
     container_name: openclaw-gateway
     restart: always
     ports:
