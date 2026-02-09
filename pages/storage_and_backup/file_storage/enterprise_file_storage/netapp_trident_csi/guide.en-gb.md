@@ -1,18 +1,19 @@
 ---
-title: Enterprise File Storage - Trident CSI Getting Started
+title: Enterprise File Storage - Getting started with Trident CSI
 excerpt: Deploy NetApp Trident CSI on OVHcloud Enterprise File Storage to manage volumes and snapshots in Kubernetes.
-updated: 2026-02-05
+updated: 2026-02-09
 ---
 
 ## Objective
-  
-Provide a clear, step-by-step reference for deploying and configuring NetApp Trident CSI on OVHcloud Managed Kubernetes (MKS), enabling seamless access to Enterprise File Storage through the vRack. This guide consolidates best practices, prerequisites, IAM setup, backend configuration, and advanced features such as snapshots and volume management.
-  
+
+The guide will provide a clear, step-by-step reference for deploying and configuring NetApp Trident CSI on OVHcloud Managed Kubernetes (MKS), enabling seamless access to Enterprise File Storage through the vRack. This guide consolidates best practices, prerequisites, IAM setup, backend configuration, and advanced features such as snapshots and volume management.
+
 ## Requirements
+
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 Before beginning, ensure your environment meets the following criteria:
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Kubernetes Cluster: A fully deployed and operational cluster.
 - Network (vRack):
     - The Public Cloud project and vRack services must reside on the same vRack.
@@ -25,7 +26,7 @@ Before beginning, ensure your environment meets the following criteria:
 
 Trident requires a dedicated service account to interact with the OVHcloud API and manage Enterprise File Storage volumes. Follow these steps to configure IAM properly.
 
-1. **Service Account Creation (OAuth2)**
+#### 1. Service Account Creation (OAuth2)
 
 Create an OAuth2 client using the OVHcloud API with the `CLIENT_CREDENTIALS` flow.
 
@@ -49,13 +50,13 @@ Example payload:
 > **Note:** Save the `clientId` and `clientSecret` securely, they are required for backend configuration.
 >
 
-2. **IAM Policy Creation**
+#### 2. IAM Policy Creation
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Identity, Security & Operations`{.action} in the top navigation bar. Open `Policies`{.action} and click `Create a policy`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and go to `Identity, Security & Operations`{.action}. Open `Policies`{.action} and click `Create a policy`{.action}.
 
 Configure your policy, then select `Enterprise File Storage` in the `product types` section and the ID of the relevant file storage in the `Resources` section.
 
-3. **Account–Policy Association**
+#### 3. Account–Policy Association
 
 Associate the service account (created in 2.1) with the IAM policy by adding the account’s URN to the `identities` field:
 
@@ -64,14 +65,14 @@ Associate the service account (created in 2.1) with the IAM policy by adding the
 > @api {v1} /iam PUT /iam/policy/{policyId}
 >
 
-Account URN can be retrieved using this call with the saved client ID:
+The account URN can be retrieved using this call with the saved client ID:
 
 > [!api]
 >
 > @api {v1} /me GET /me/api/oauth2/client/{clientId}
 >
 
-4. **Assign Required Permissions**
+#### 4. Assign Required Permissions
 
 Ensure the policy grants all actions needed by Trident:
 
@@ -119,9 +120,9 @@ ln -sf /root/25.02.1/trident-installer/tridentctl /usr/local/bin/tridentctl
 
 ### Backend Configuration (Provisioner)
 
-The backend connects NetApp Trident to the OVHcloud Enterprise File Storage service using the IAM credentials created earlier.
+The backend connects NetApp Trident to the OVHcloud Enterprise File Storage service using the IAM credentials previously created.
 
-1. **Backend Configuration File**
+#### 1. Backend Configuration File
 
 Create a file named `backend-netapp.yaml`. The `ovh-efs` storage driver must be used.
 
@@ -137,7 +138,7 @@ defaults:   exportRule: 10.235.0.0/24    # CIDR of your nodes for ACL
 nfsMountOptions: rw,hard,rsize=65536,wsize=65536,nfsvers=3,tcp
 ```
 
-2. **Backend Creation**
+#### 2. Backend Creation
 
 Create the backend using `tridentctl`:
 
@@ -151,7 +152,7 @@ Verify that the backend status is Online before continuing.
 
 This section describes how to expose Enterprise File Storage to Kubernetes workloads using Trident.
 
-1. **StorageClass**
+#### 1. StorageClass
 
 Define a `StorageClass` to enable dynamic provisioning via the Trident CSI driver:
 
@@ -169,7 +170,7 @@ allowVolumeExpansion: true   # Important for resizing
 
 This StorageClass allows volumes to be provisioned on demand and expanded dynamically.
 
-2. **Volume Creation (PVC)**
+#### 2. Volume Creation (PVC)
 
 Request a volume by creating a `PersistentVolumeClaim` with `ReadWriteMany` (RWX) access mode:
 
@@ -191,7 +192,7 @@ Once a Pod is scheduled using this PVC, the volume is automatically provisioned 
 
 ### Advanced Features
 
-1. **Snapshot Management**
+#### Snapshot Management
 
 NetApp Trident supports on-demand volume snapshots for Enterprise File Storage.
 
@@ -226,4 +227,4 @@ The snapshot is created on the Enterprise File Storage service and can be used f
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
