@@ -17,7 +17,7 @@ Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie mögli
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über eine der E-Mail-Lösungen [Exchange](/links/web/emails) oder [E-Mail Pro](/links/web/email-pro).
+- Sie verfügen über eine der E-Mail-Lösungen [Exchange](/links/web/emails-exchange) oder [E-Mail Pro](/links/web/email-pro).
 - Sie haben einen Domainnamen zu Ihrem Dienst hinzugefügt, wie in [unserer Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) beschrieben.
 - Sie sind berechtigt die zugehörige [DNS-Zone zu konfigurieren](/pages/web_cloud/domains/dns_zone_edit) (im OVHcloud Kundencenter oder einem externen Verwaltungsinterface).
 
@@ -29,7 +29,7 @@ Der CNAME-Eintrag wird hier als Alias verwendet. Er verweist auf ein Ziel, das w
 
 Der CNAME-Eintrag dient als Validierungscode (Token) für unsere Lösungen [**Hosted Exchange**](/links/web/emails-hosted-exchange) und [**Email Pro**](/links/web/email-pro). Er wird zur DNS-Zone des Domainnamens hinzugefügt, die Sie für die Verwendung mit Ihren E-Mails nutzen möchten. Damit soll überprüft werden, ob der Benutzer des E-Mail-Dienstes berechtigt ist, den hinzuzufügenden Domainnamen zu verwenden.
 
-In der folgenden Abbildung wird Ihr E-Mail-Dienst ([Exchange](/links/web/emails) oder [Email Pro](/links/web/email-pro)) als 
+In der folgenden Abbildung wird Ihr E-Mail-Dienst ([Exchange](/links/web/emails-exchange) oder [Email Pro](/links/web/email-pro)) als 
 grün umrahmtes Feld dargestellt.<br>
 Sie haben Accounts hinzugefügt (**contact**, **john.smith**, **mary.johnson** in diesem Beispiel), für die E-Mail-Adressen erstellt werden sollen.<br>
 Der Domainname **mydomain.ovh** wurde zum E-Mail-Dienst hinzugefügt (siehe Anleitung „[Domainnamen zu Ihrem Exchange Dienst hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)“).<br>

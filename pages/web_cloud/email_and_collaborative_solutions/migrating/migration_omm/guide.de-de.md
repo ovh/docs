@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Voraussetzungen
 
-- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
+- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
 - Sie verfügen über die Login-Daten für die Quell-Accounts, die Sie migrieren möchten.
 - Sie verfügen über die Login-Daten der Ziel-Accounts.
 

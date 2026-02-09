@@ -181,7 +181,7 @@ Odbiorca **recipient@otherdomain.ovh** będzie mógł odszyfrować ten podpis kl
 Automatyczna konfiguracja DKIM jest dostępna dla wszystkich naszych ofert e-mail:
 
 - MX Plan wchodzący w skład [hostingu Web Cloud](/links/web/hosting), [darmowego 100M hostingu](/links/web/domains-free-hosting) lub zamówiony osobno.
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 - [E-mail Pro](/links/web/email-pro).
 - [Zimbra](/links/web/zimbra).
 

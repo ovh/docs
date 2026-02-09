@@ -178,7 +178,7 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 La configuration automatique du DKIM est accessible pour toutes nos offres e-mail :
 
 - MX Plan incluse avec un [hébergement Web Cloud](/links/web/hosting).
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 
 Lorsque vous configurez votre nom de domaine sur une solution e-mail OVHcloud, la configuration automatique du DKIM est proposée et réalisée par défaut si vous ne la désactivez pas.
 

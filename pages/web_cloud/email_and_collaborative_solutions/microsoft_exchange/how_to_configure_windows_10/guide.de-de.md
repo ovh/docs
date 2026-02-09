@@ -12,7 +12,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](/links/web/emails) Angebot.
+- Sie besitzen ein [Exchange](/links/web/emails-exchange) Angebot.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
