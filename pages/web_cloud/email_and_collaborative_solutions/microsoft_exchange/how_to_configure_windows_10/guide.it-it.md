@@ -12,7 +12,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 ## Prerequisiti
 
-- Disporre di un’offerta [Exchange](/links/web/emails)
+- Disporre di un’offerta [Exchange](/links/web/emails-exchange)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
 

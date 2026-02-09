@@ -178,7 +178,7 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 Automatic DKIM configuration is available for all our email offers:
 
 - MX Plan included with a [Cloud Web Hosting](/links/web/hosting), a [free 100M hosting](/links/web/domains-free-hosting) or ordered separately
-- [Exchange](/links/web/emails)
+- [Exchange](/links/web/emails-exchange)
 
 When you configure your domain name on an OVHcloud email solution, automatic DKIM configuration is proposed and performed by default if you do not disable it.
 

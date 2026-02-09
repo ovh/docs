@@ -181,7 +181,7 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 La configuration automatique du DKIM est accessible pour toutes nos offres e-mail :
 
 - MX Plan incluse avec un [hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément.
-- [Exchange](/links/web/emails).
+- [Exchange](/links/web/emails-exchange).
 - [E-mail Pro](/links/web/email-pro).
 - [Zimbra](/links/web/zimbra).
 

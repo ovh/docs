@@ -49,7 +49,7 @@ Pode configurar vários registos MX para o mesmo domínio. É então necessário
 
 ### Valores da configuração MX da OVHcloud <a name="mxovhcloud"></a>
 
-Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro) e [Exchange](/links/web/emails). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
+Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro) e [Exchange](/links/web/emails-exchange). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
 
 Estes valores são comuns a todas estas ofertas, à exceção de [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) e Dedicated Exchange.
 
