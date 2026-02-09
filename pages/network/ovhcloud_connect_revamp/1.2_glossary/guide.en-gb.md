@@ -21,7 +21,7 @@ An active connection between two BGP routers (called "peers") that allows them t
 ## C
 
 **Cross-Connect**
-A physical cable that connects your equipment (or your provider's equipment) to OVHcloud's equipment inside a shared data centre. Cross-connects are typically fibre-optic cables.
+A physical cable that connects your equipment (or your provider's equipment) to OVHcloud's equipment inside a Point of Presence. Cross-connects are typically fibre-optic cables.
 
 ## D
 
@@ -50,12 +50,12 @@ A deployment strategy that spreads your resources and connections across multipl
 A physical location (usually inside a major data centre campus) where OVHcloud has networking equipment that you can connect to. The PoP is where the hand-off between your network and OVHcloud happens.
 
 **Provider (OVHcloud Connect Provider)**
-A third-party network operator (such as Megaport, Equinix Fabric, or Console Connect) that facilitates the physical connectivity between your network and OVHcloud's PoP. Using a provider means you do not need to be physically present in the same data centre as OVHcloud.
+A third-party network operator (such as Megaport, Equinix Fabric, or Console Connect) that facilitates the physical connectivity between your network and OVHcloud's network. Using a provider means you do not need to be physically present in the same data centre as OVHcloud.
 
 ## R
 
 **Region**
-A geographical area where OVHcloud operates one or more data centres and Availability Zones. Examples include Gravelines (GRA), Strasbourg (SBG), Beauharnois (BHS), and others.
+A geographical area where OVHcloud operates one or more data centres and Availability Zones. Find out more on [OVHcloud regions](https://www.ovhcloud.com/en/about-us/global-infrastructure/expansion-regions-az/) .
 
 ## S
 
