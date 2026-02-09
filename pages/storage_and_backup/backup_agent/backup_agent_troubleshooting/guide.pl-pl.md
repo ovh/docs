@@ -224,13 +224,7 @@ Aby rozwiązać problemy z Aplikacją Backup, często konieczne jest przeglądan
 >> Użyj następującego polecenia, aby wyeksportować dzienniki. Archiwum zostanie zapisane w bieżącym katalogu roboczym:
 >>
 >> ```bash
->> sudo veeamconfig log export
->> ```
->>
->> Aby określić katalog docelowy, użyj:
->>
->> ```bash
->> sudo veeamconfig log export --path /ścieżka/do/destynacji
+>> sudo veeamconfig grabLogs
 >> ```
 >>
 >> 2\. Przez panel sterowania

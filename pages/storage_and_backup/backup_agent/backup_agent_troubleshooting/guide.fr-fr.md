@@ -224,14 +224,9 @@ Pour résoudre les problèmes avec Backup Agent, il est souvent nécessaire de c
 >> Utilisez la commande suivante pour exporter les logs. L'archive sera sauvegardée dans le répertoire de travail actuel :
 >>
 >> ```bash
->> sudo veeamconfig log export
+>> sudo veeamconfig grabLogs
 >> ```
 >>
->> Pour spécifier un répertoire de destination, utilisez :
->>
->> ```bash
->> sudo veeamconfig log export --path /chemin/vers/destination
->> ```
 >>
 >> 2\. Via le panneau de contrôle
 >>
