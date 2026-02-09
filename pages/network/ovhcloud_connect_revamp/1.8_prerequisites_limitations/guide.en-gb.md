@@ -20,6 +20,7 @@ Before ordering OVHcloud Connect, review the requirements below to ensure your e
 #### Supported interfaces & features
 
 | Bandwidth | Interface Type |
+|---|---|
 | 1 Gb | 1000Base-LX/LH | 
 | 10 Gb | 10GBase-LR | 
 | 100 Gb | 100GBase-LR4 | 
