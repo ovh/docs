@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Troubleshooting"
 excerpt: "Learn how to solve potential issues related to Backup Agent"
-updated: 2026-02-03
+updated: 2026-02-09
 ---
 
 <style>
@@ -98,6 +98,8 @@ diffStorageMinimum = 2097152
 
 Replace the value with the desired number of sectors by first converting the desired size from gigabytes to bytes, then dividing this number of bytes by 512.  
 For example, for a size of 3 GB (3,221,225,472 bytes), the value to specify is 6,291,456 (3,221,225,472 / 512).
+
+Finally, restart the veeamservice service.
 
 ///
 
@@ -222,16 +224,10 @@ To troubleshoot issues with Backup Agent, it is often necessary to view and expo
 >> Use the following command to export logs. The archive will be saved in the current working directory:
 >>
 >> ```bash
->> sudo veeamconfig log export
+>> sudo veeamconfig grabLogs
 >> ```
 >>
->> To specify a destination directory, use:
->>
->> ```bash
->> sudo veeamconfig log export --path /path/to/destination
->> ```
->>
->> 2\. Via The Veeam control panel
+>> 2\. Via the control panel
 >>
 >> If you have access to a graphical interface, you can export logs via the Veeam Agent control panel by specifying the destination directory.
 >>
