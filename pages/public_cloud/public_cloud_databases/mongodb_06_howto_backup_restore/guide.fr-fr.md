@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Sauvegardes et restaurations avec la CLI (EN)
+title: Sauvegarder et restaurer un service avec la CLI pour Public Cloud Databases pour MongoDB (EN)
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
 updated: 2022-07-27
 ---

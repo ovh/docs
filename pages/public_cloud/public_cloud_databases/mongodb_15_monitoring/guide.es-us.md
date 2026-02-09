@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Monitoring a MongoDB cluster
+title: Cluster monitoring for Public Cloud Databases for MongoDB
 excerpt: Learn how to monitor your databases via the OVHcloud Control Panel, using a CLI or a GUI
 updated: 2024-01-31
 ---

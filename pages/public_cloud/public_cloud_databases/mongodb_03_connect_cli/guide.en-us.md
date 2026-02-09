@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Connect with CLI
+title: Connect using the CLI for Public Cloud Databases for MongoDB
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Line Interface (CLI)
 updated: 2022-07-27
 ---

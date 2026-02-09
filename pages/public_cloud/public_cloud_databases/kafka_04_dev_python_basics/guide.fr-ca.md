@@ -1,5 +1,5 @@
 ---
-title: Kafka - Create publisher and consumer applications
+title: "Créer des applications 'publisher' et 'consumer' avec Analytics avec Kafka (EN)"
 excerpt: Develop your first Python applications using Kafka
 updated: 2025-08-25
 ---

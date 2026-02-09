@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to troubleshoot your service
+title: Troubleshoot your Analytics
 excerpt: Troubleshooting tips for Analytics services
 updated: 2025-02-03
 ---

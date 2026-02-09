@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configurar una cuenta de correo en Outlook clásico para Windows'
 excerpt: 'Cómo configurar una cuenta Email Pro en Outlook clásico para Windows'
-updated: 2026-01-09
+updated: 2026-01-30
 ---
 
 <style>
@@ -48,7 +48,7 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 
 > [!warning]
 >
-> Esta documentación se aplica únicamente a **Outlook clásico** disponible en la suite Microsoft 365. Si utiliza el nuevo Outlook, consulte nuestro guía "[E-mail Pro - Configurar su cuenta de E-mail Pro en el nuevo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Esta documentación se aplica únicamente a **Outlook clásico** disponible en la suite Microsoft 365. Si utiliza el nuevo Outlook, consulte nuestro guía "[Email Pro - Configurar su cuenta de Email Pro en el nuevo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Para instalar Outlook clásico en su ordenador Windows, descárguelo desde la página de Microsoft "[Instalar o reinstalar la versión clásica de Outlook en un equipo PC con Windows](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instálelo.
 >
@@ -60,7 +60,7 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Deberá sustituir el "?" por el número que designa el servidor de su servicio E-mail Pro.
+> En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Deberá sustituir el "?" por el número que designa el servidor de su servicio Email Pro.
 >
 > 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 > 1. Vaya a la sección `Web Cloud`{.action}.
@@ -74,8 +74,71 @@ Esta guía le ayudará a realizar las operaciones más habituales. No obstante, 
 
 ![Outlook](images/config-outlook-emailpro01.png){.thumbnail}
 
-Para configurar su dirección de correo electrónico, siga los pasos haciendo clic en las pestañas que se muestran a continuación.
+**En Windows 11, la interfaz de Outlook clásico puede diferir cuando se añade una cuenta.**
 
+Según el historial de uso de Outlook en el equipo en cuestión, una configuración específica puede provocar la visualización de una interfaz diferente. En algunos casos, la interfaz denominada "moderna" (**interfaz 1**) puede desactivarse a favor de la interfaz histórica (**interfaz 2**).
+
+Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que aparece en su pantalla.
+
+#### Configuración con la interfaz 1 <a name="add-account-int1"></a>
+
+Para configurar su dirección de correo electrónico, siga los pasos pinchando en las pestañas siguientes.
+
+> [!tabs]
+> **Paso 1**
+>>
+>> Introduzca su dirección de correo electrónico y haga clic en `Opciones avanzadas`{.action}.
+>>
+>> Marque la casilla `Configurar mi cuenta manualmente`{.action} y haga clic en `Conexión`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro02.png){.thumbnail .h-500}
+>>
+> **Paso 2**
+>>
+>> Entre los tipos de cuenta propuestos, elija IMAP o POP.
+>>
+>> Recomendamos utilizar el protocolo IMAP.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro03.png){.thumbnail .h-500}
+>>
+> **Paso 3**
+>>
+>> Introduzca la contraseña de su dirección de correo electrónico y haga clic en `Conectar`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro04.png){.thumbnail .h-500}
+>>
+> **Paso 4**
+>>
+>> Si Outlook no puede configurar automáticamente la cuenta, aparecerá la ventana siguiente.
+>>
+>> Haga clic en `Modificar los parámetros de la cuenta`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro05.png){.thumbnail .h-500}
+>>
+> **Paso 5**
+>>
+>> En la sección **Correo entrante**, introduzca:
+>> 
+>> - Servidor: **pro**?**.mail.ovh.net** (reemplace bien el "**?**" por el número de su servidor)
+>> - Puerto: **993**
+>> - Método de cifrado: **SSL/TLS**
+>>
+>> En la sección **Correo saliente**, introduzca:
+>>
+>> - Servidor: **pro**?**.mail.ovh.net** (reemplace bien el "**?**" por el número de su servidor)
+>> - Puerto: **587**
+>> - Método de cifrado: **STARTTLS**
+>>
+>> Haga clic en `Siguiente`{.action} para validar.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro06.png){.thumbnail .h-500}
+>>
+
+#### Configuración con la interfaz 2 <a name="add-account-int2"></a>
+
+Para configurar su dirección de correo electrónico, siga los pasos pinchando en las pestañas siguientes.
+
+> [!tabs]
 > **Paso 1**
 >>
 >> - Desde la ventana **Añadir una cuenta**, seleccione `Configuración manual o tipos de servidores adicionales`{.action}.
@@ -140,20 +203,49 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 ### Modificar los parámetros existentes
 
-Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
+**En Windows 11, la interfaz de Outlook clásico puede diferir cuando modifica una cuenta.**
 
-- Vaya a `Archivo`{.action} desde la barra de menú superior de su pantalla.
-- Seleccione la cuenta a modificar en el menú desplegable **(1)**.
-- Haga clic en `Configuración de la cuenta`{.action} **(2)** debajo.
-- Haga clic en `Configuración de la cuenta...`{.action} **(3)** para acceder a la ventana de configuración.
+Según el historial de uso de Outlook en el equipo en cuestión, una configuración específica puede provocar la visualización de una interfaz diferente. En algunos casos, la interfaz denominada "moderna" (**interfaz 1**) puede desactivarse a favor de la interfaz histórica (**interfaz 2**).
 
-![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que aparece en su pantalla.
 
-- Se mostrará la ventana de configuración de cuentas, seleccione la cuenta de correo electrónico correspondiente y haga clic en `Modificar...`{.action}.
-
-![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
-
-Para configurar su cuenta, siga las instrucciones a partir de **la etapa 2** en la sección [Añadir la cuenta](#add-account) de este guía.
+> [!tabs]
+> **Interfaz 1**
+>>
+>> Si su cuenta de correo electrónico ya está configurada y debe acceder a sus parámetros para modificarlos:
+>>
+>> - Haga clic en `Archivo`{.action} en la barra de menú superior de la pantalla, y luego seleccione la cuenta a modificar en el menú desplegable **(1)**.
+>> - Haga clic en `Configuración de la cuenta`{.action } **(2)** debajo.
+>> - Seleccione `Configuración del servidor`{.action} **(3)** para mostrar la ventana de configuración.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro07.png){.thumbnail}
+>>
+>> La ventana se divide en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en la parte que desee modificar.
+>>
+>> > [!primary]
+>> >
+>> > En nuestro ejemplo, el nombre del servidor utilizado es "pro**?**.mail.ovh.net". Deberá reemplazar el carácter "?" por el número correspondiente al servidor de su servicio Email Pro.
+>> >
+>> > Encuentre este número en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Email Pro`{.action}. El nombre del servidor se muestra en el cuadro **Conexión** de la pestaña `Información general`{.action}.
+>>
+>> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
+>>
+> **Interfaz 2**
+>>
+>> Si su cuenta de correo electrónico ya está configurada y debe acceder a sus parámetros para modificarlos:
+>>
+>> - Haga clic en `Archivo`{.action} en la barra de menú superior de la pantalla, y luego seleccione la cuenta a modificar en el menú desplegable **(1)**.
+>> - Haga clic en `Configuración de la cuenta`{.action} **(2)** debajo.
+>> - Haga clic en `Configuración de la cuenta...`{.action} **(3)** para acceder a la ventana de configuración.
+>>
+>> ![Outlook](images/config-outlook-emailpro06.png){.thumbnail .h-500}
+>>
+>> - Se muestra la ventana de configuración de cuentas: seleccione la cuenta de correo electrónico correspondiente y haga clic en `Modificar...`{.action}.
+>>
+>> ![Outlook](images/config-outlook-emailpro07.png){.thumbnail .h-500}
+>>
+>> Para configurar su cuenta, siga las instrucciones desde el **paso 2** en la sección "[Añadir la cuenta - Configuración con la interfaz 2](#add-account-int2)" de esta guía.
+>>
 
 ### Parámetros generales de envío y recepción <a name="settings-account"></a>
 

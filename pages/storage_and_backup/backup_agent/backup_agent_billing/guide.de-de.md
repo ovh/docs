@@ -19,7 +19,7 @@ Wir berechnen Ihnen den Backup Agent auf Ihren Servern nicht, d.h., Sie können 
 
 Allerdings wird Ihnen pro GB und Monat die Nutzung von OVHcloud Object Storage berechnet. Sie werden am Anfang jedes Monats für die Nutzung des vorherigen Monats berechnet.
 
-Finden Sie den Preis pro GB und Monat auf unserer [Website](/links/public-cloud/prices-object-storage).
+Finden Sie den Preis pro GB und Monat auf unserer [Website](/links/storage/backup-agent).
 
 Sie können das Dashboard `Abrechnung`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) nutzen, um Ihre aktuelle Nutzung anzuzeigen und somit die finale Rechnung am Ende des Monats vorherzusagen.
 

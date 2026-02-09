@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Connectez-vous avec PHP (EN)
+title: Se connecter depuis PHP au service Public Cloud Databases pour MongoDB (EN)
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
 updated: 2022-07-27
 ---

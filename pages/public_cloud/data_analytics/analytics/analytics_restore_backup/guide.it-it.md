@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to restore a backup
+title: Restore a backup of Analytics
 excerpt: Find out how to restore a backup
 updated: 2025-02-03
 ---

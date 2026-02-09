@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2025-04-29
+updated: 2026-02-06
 ---
 
 ## Objectif
@@ -153,7 +153,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
-³ Exemples de chemin EFI :
+³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
 | Système d'exploitation | efiBootloaderPath | 
 |-|-|

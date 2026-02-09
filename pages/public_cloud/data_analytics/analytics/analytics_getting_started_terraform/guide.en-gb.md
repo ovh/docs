@@ -1,5 +1,5 @@
 ---
-title: Analytics - Getting started with Terraform
+title: Getting started with Terraform for Analytics
 excerpt: Find out how to order and manage your Analytics service using Terraform
 updated: 2025-02-03
 ---

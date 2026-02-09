@@ -19,7 +19,7 @@ Não faturamos o Backup Agent nos seus servidores, ou seja, pode implementá-lo 
 
 No entanto, a utilização do OVHcloud Object Storage é faturada, à escala do GB por mês. Será, portanto, faturado no início de cada mês pela utilização do mês anterior.
 
-Encontrará o preço do GB por mês no nosso [site web](/links/public-cloud/prices-object-storage).
+Encontrará o preço do GB por mês no nosso [site web](/links/storage/backup-agent).
 
 Tem à sua disposição um painel de `Faturação` no seu [Área de Cliente OVHcloud](/links/manager) para visualizar a sua utilização atual e assim prever o valor da fatura final no final do mês.
 

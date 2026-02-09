@@ -1,7 +1,7 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: 'Come aumentare la quota Public Cloud'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Obiettivo
@@ -93,6 +93,8 @@ Una volta selezionato il tuo volume, fai clic su `Conferma`{.action}. Il pagamen
 >
 > Dopo aver cliccato sul pulsante `Conferma`{.action}, l'ordine viene automaticamente creato e l'importo viene addebitato sul tuo metodo di pagamento predefinito.
 >
+
+È possibile ottenere una visione più dettagliata delle risorse nell'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Una volta effettuato l'accesso, fare clic su `Project`{.action} e poi su `Overview`{.action}.
 
 ### Aumentare la quota dei progetti Public Cloud
 

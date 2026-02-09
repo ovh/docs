@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-12-29
+updated: 2026-02-03
 ---
 
 <style>
@@ -396,12 +396,13 @@ In a versioned bucket, the following configuration does the following actions:
 
 The following are the currently supported transitions:
 
-| from/to          | High Performance | Standard  | Infrequent Access |Cold Archive |
-| ---------------- | ---------------- | --------- | ----------------- |------------ |
-| High Performance |        -         | yes       |    yes            | yes          |
-| Standard         | forbidden        | -         |    yes            | yes          |
-| Infrequent Access| forbidden        | forbidden |    -              | yes          |
-| Cold Archive     | forbidden        | forbidden |    forbidden      | -           |
+| from/to          | High Performance | Standard  | Infrequent Access |Active Archive | Cold Archive |
+| ---------------- | ---------------- | --------- | ----------------- |------------   | -------------|
+| High Performance |        -         | yes       |    yes            | yes           | yes          |
+| Standard         | forbidden        | -         |    yes            | yes           | yes          |
+| Infrequent Access| forbidden        | forbidden |    -              | yes           | yes          |
+| Active Archive   | forbidden        | forbidden |    forbidden      | -             | yes          |
+| Cold Archive     | forbidden        | forbidden |    forbidden      | forbidden     | -            | 
 
 ### Minimum object size
 

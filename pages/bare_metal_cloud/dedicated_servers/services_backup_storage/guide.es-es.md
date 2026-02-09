@@ -84,24 +84,24 @@ para así poder recuperar los backups desde un servicio de otra localización.
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Accedi alla [console API OVHcloud](/links/api) con le credenziali del tuo account cliente e utilizza la chiamata seguente:
+Conéctese a la [consola API de OVHcloud](/links/api) con las claves de su cuenta de cliente y utilice la siguiente llamada:
 
 > [!api]
 >
 > @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
-Modificare le impostazioni come indicato di seguito:
+Cambie la configuración de la siguiente manera:
 
-- `serviceName`: inserisci il nome interno del tuo server (`ns1111111.ip-203-0-113.eu`).
-- `cifs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
-- `ftp`: se utilizzate questo protocollo, impostate questo parametro su `true`.
-- `ipBlock`: inserisci l’indirizzo IP che vi avrà accesso, nella forma `203.0.113.100/32`.
-- `nfs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
+- `serviceName`: introduzca el nombre interno del servidor (`ns11111111.ip-203-0-113.eu`).
+- `cifs`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ftp`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ipBlock`: introduzca la dirección IP que tendrá acceso, con el formato `203.0.113.100/32`.
+- `nfs`: establezca este parámetro en `true` si utiliza este protocolo.
 
-Clicca sul pulsante `EXECUTE`{.action}.
+Pulse el botón `EXECUTE`{.action}.
 
-Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata:
+Para comprobar que su dirección IP está autorizada, utilice la siguiente llamada:
 
 > [!api]
 >

@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer un RAID logiciel sur un nœud"
 excerpt: "Apprenez à configurer et gérer un RAID logiciel sur un nœud OpenStack Ironic dans OPCP"
-updated: 2026-01-13
+updated: 2026-02-06
 ---
 
 ## Objectif
@@ -132,13 +132,6 @@ Une fois le fichier de configuration créé, appliquez-le au nœud :
 ```bash
 openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
 ```
-
-> [!primary]
-> La configuration RAID est appliquée lors du prochain cycle de *cleaning* ou de déploiement. Si le *cleaning* automatique est désactivé, déclenchez un nettoyage manuel avant de remettre le nœud en `available` :
->
-> ```bash
-> openstack baremetal node clean <node-id>
-> ```
 
 #### 4.4. Vérifier la configuration RAID
 

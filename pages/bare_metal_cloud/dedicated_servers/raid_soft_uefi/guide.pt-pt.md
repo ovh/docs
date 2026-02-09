@@ -289,6 +289,7 @@ Pode utilizar o comando `lsblk` para verificar se a sua partição faz parte de 
 >>
 >> ```sh
 >> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
 >> nvme0n1     259:0    0 476.9G  0 disk
 >> ├─nvme0n1p1 259:1    0   511M  0 part
 >> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi

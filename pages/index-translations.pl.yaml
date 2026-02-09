@@ -186,13 +186,23 @@ public-cloud-databases-common-security: Bezpieczeństwo
 public-cloud-databases-common-troubleshooting: Diagnostyka
 public-cloud-databases-common-tutorials: Tutorials
 public-cloud-databases-common: Common
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mongodb-configuration: Konfiguracja
+public-cloud-databases-mongodb-getting-started: Pierwsze kroki
+public-cloud-databases-mongodb-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mongodb-migration: Migracja
+public-cloud-databases-mongodb-security: Bezpieczeństwo
+public-cloud-databases-mongodb-troubleshooting: Diagnostyka
+public-cloud-databases-mongodb-tutorials: Tutorials
 public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mysql-configuration: Konfiguracja
+public-cloud-databases-mysql-getting-started: Pierwsze kroki
+public-cloud-databases-mysql-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mysql-migration: Migracja
+public-cloud-databases-mysql-security: Bezpieczeństwo
+public-cloud-databases-mysql-troubleshooting: Diagnostyka
+public-cloud-databases-mysql-tutorials: Tutorials
 public-cloud-databases-mysql: MySQL
 public-cloud-databases-postgresql-additional-resources: Dodatkowe zasoby
 public-cloud-databases-postgresql-configuration: Konfiguracja
@@ -203,8 +213,13 @@ public-cloud-databases-postgresql-security: Bezpieczeństwo
 public-cloud-databases-postgresql-troubleshooting: Diagnostyka
 public-cloud-databases-postgresql-tutorials: Tutorials
 public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey-configuration: Konfiguracja
+public-cloud-databases-valkey-getting-started: Pierwsze kroki
+public-cloud-databases-valkey-key-concepts: Kluczowe pojęcia
+public-cloud-databases-valkey-migration: Migracja
+public-cloud-databases-valkey-security: Bezpieczeństwo
+public-cloud-databases-valkey-troubleshooting: Diagnostyka
+public-cloud-databases-valkey-tutorials: Tutorials
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Public Cloud Databases
 public-cloud-data-analytics-common-additional-resources: Dodatkowe zasoby
@@ -219,14 +234,17 @@ public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
 public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
 public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka-configuration: Konfiguracja
+public-cloud-data-analytics-kafka-getting-started: Pierwsze kroki
+public-cloud-data-analytics-kafka-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-kafka-migration: Migracja
+public-cloud-data-analytics-kafka-security: Bezpieczeństwo
+public-cloud-data-analytics-kafka-troubleshooting: Diagnostyka
+public-cloud-data-analytics-kafka-tutorials: Tutorials
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
@@ -477,6 +495,10 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Kluczowe pojęcia
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Pierwsze kroki
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Rozwiązywanie problemów
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Dodatkowe zasoby
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Kluczowe pojęcia
 network-additional-ip-configuration: Konfiguracja
