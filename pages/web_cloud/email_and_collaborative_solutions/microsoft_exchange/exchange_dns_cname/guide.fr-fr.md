@@ -17,7 +17,7 @@ Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configura
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
-- Disposer d'une solution [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro).
+- Disposer d'une solution [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Avoir ajouté un nom de domaine sur votre plateforme e-mail. Vous pouvez vous aider du guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) » si nécessaire.
 - Être en mesure de [configurer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) du nom de domaine concerné, depuis l'espace client OVHcloud ou depuis l'interface de gestion où il est enregistré.
 
@@ -29,7 +29,7 @@ L'enregistrement CNAME est utilisé ici en temps qu'alias, il pointe vers une ci
 
 Dans le cadre de nos offres [**Hosted Exchange**](/links/web/emails-hosted-exchange) et [**Email Pro**](/links/web/email-pro), cet enregistrement CNAME est utilisé comme code de validation (token) qui sera visible dans la zone DNS du nom de domaine à valider. Le but est de vérifier que l'utilisateur de la plateforme e-mail est bien le gestionnaire du nom de domaine qu'il ajoute.
 
-Dans le schéma ci-dessous, la plateforme e-mail ([Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro)) est représentée par le cadre vert.<br>
+Dans le schéma ci-dessous, la plateforme e-mail ([Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro)) est représentée par le cadre vert.<br>
 Pour former les adresses e-mail vous ajoutez des comptes (ici représentés par « **contact** », « **john.smith** » et « **mary.johnson** »).<br>
 Le nom de domaine **mydomain.ovh** a été ajouté à la plateforme e-mail (référez-vous au guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) »).<br>
 Un code de validation est généré par la plateforme (sous la forme « **abcd1-check** » dans notre exemple).<br>

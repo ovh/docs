@@ -18,7 +18,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 - W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](/links/web/email).
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 

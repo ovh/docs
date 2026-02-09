@@ -109,7 +109,7 @@ In the `Email accounts`{.action} tab, click the `...`{.action} button to the rig
 **Have you used all of the email addresses included in your solution?**
 
 - Refer to [our email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Consult our [Exchange](/links/web/emails) email offer to complete your MX Plan offer on the same domain name.
+- Consult our [Exchange](/links/web/emails-exchange) email offer to complete your MX Plan offer on the same domain name.
 
 
 ## Go further <a name="go-further"></a>

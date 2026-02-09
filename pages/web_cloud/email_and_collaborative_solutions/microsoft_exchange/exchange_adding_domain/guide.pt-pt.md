@@ -21,7 +21,7 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 ## Requisitos
 
-- Dispor de uma solução [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro).
+- Dispor de uma solução [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Dispor de um ou vários domínios.
 - Ter a possibilidade de alterar a configuração do domínio [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
@@ -142,7 +142,7 @@ Relembramos que todos os endereços criados no serviço poderão ver no diretór
 
 Depois de configurar as contas, pode começar a utilizá-las. Para isso, a OVHcloud disponibiliza-lhe o **webmail**, acessível [aqui](/links/web/email). Para uma utilização ótima do seu endereço num software, certifique-se de que é compatível com o serviço.
 
-Se pretender configurar o seu endereço de e-mail num software de mensagens ou num dispositivo como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte a nossa documentação, acessível a partir das páginas [Exchange](/links/web/emails) e [E-mail Pro](/links/web/email-pro).
+Se pretender configurar o seu endereço de e-mail num software de mensagens ou num dispositivo como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte a nossa documentação, acessível a partir das páginas [Exchange](/links/web/emails-exchange) e [E-mail Pro](/links/web/email-pro).
 
 Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](/links/manager) e licenças Office 365 na página [Microsoft 365](/links/web/ms365). Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
