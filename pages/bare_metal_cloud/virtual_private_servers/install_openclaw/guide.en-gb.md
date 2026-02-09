@@ -1,7 +1,7 @@
 ---
 title: "How to install an OpenClaw agent on a VPS"
 excerpt: "Find out how to deploy a 24/7 OpenClaw (ex Clawdbot / Moltbot) agent on a VPS, using Docker Compose for maximum isolation and stability"
-updated: 2026-02-04
+updated: 2026-02-09
 ---
 
 **OpenClaw** (successor to Moltbot and Clawdbot) is the new evolved version of the autonomous AI assistant. This guide uses **Docker** to protect your host system while ensuring your assistant remains online 24/7.
