@@ -2582,6 +2582,7 @@
                 + [Mutualized input - OpenSearch API](manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input)
                 + [Pushing logs with a logging library - Python 2.x - Djehouty](manage_and_operate/observability/logs_data_platform/ingestion_python_2_djehouty)
                 + [Pushing logs with a logging library - Python 3.x - logging-ldp](manage_and_operate/observability/logs_data_platform/ingestion_python_3_logging_ldp)
+                + [Logs Data Platform - Getting started with Node.js](manage_and_operate/observability/logs_data_platform/getting_started_nodejs)
                 + [Pushing logs with a logging library - Rust - gelf_logger and log4rs-gelf](manage_and_operate/observability/logs_data_platform/ingestion_rust_loggers)
                 + [Pushing logs with a forwarder - Filebeat (Linux)](manage_and_operate/observability/logs_data_platform/ingestion_filebeat)
                 + [Pushing logs with a forwarder - Syslog-ng 3.8+ (Linux)](manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng)
