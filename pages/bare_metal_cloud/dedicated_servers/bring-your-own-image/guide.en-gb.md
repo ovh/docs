@@ -151,7 +151,7 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. It must be on a single line with `\n` for line breaks<br />
+¹ Can either be a `#cloud-config` or a script. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
 

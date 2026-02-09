@@ -147,7 +147,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 | userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
-¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une seule ligne avec `\n` pour les retours à la ligne.<br />
+¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Sa représentation JSON doit être sur une seule ligne avec `\n` pour les retours à la ligne, car les chaînes JSON ne peuvent pas contenir de retours à la ligne littéraux.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
 ³ Le chemin du bootloader EFI est utilisé par iPXE pour démarrer votre système d'exploitation. Pour plus d'informations, consultez notre guide « [Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process) ». Exemples :
 
