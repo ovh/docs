@@ -54,8 +54,8 @@ To illustrate the use of function calling and progressively introduce the import
 
 The assistant will be able to:
 
- * log time spent on a task
- * generate a time report
+* log time spent on a task
+* generate a time report
 
 Each task has a name, category and total duration in minutes. Categories are a fixed list of strings, for example "Code" or "Meetings". A time report can be generated for a category of task.
 
@@ -384,8 +384,8 @@ The assistant has generated a response acknowledging the creation of the task.
 
 To make our assistant more robust and powerful, it can be useful to add a system prompt that:
 
- * explains what is expected from the model.
- * provides useful information to the model, such as the current existing tasks and categories.
+* explains what is expected from the model.
+* provides useful information to the model, such as the current existing tasks and categories.
 
 ```python
 SYSTEM_PROMPT = \
@@ -614,6 +614,7 @@ Here are the available values for this parameter and the impact on the output.
 It is possible to use Function Calling in streaming mode, by setting `stream` to `true` in your request.
 
 Below are two cURL examples showing how to make such a request, using the LLaMa 3.1 8B model:
+
 - One using **anonymous access**, which is subject to rate limits.
 - One using **AI Endpoints token authentication**, which avoids rate limiting.
 
