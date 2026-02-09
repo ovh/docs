@@ -1,7 +1,7 @@
 ---
-title: Getting started with Node.js
+title: Logs Data Platform - Getting started with Node.js
 excerpt: How to send logs from a Node.js application to Logs Data Platform
-updated: 2026-01-30
+updated: 2026-02-09
 ---
 
 ## Objective
@@ -22,6 +22,7 @@ It's also possible to use **Winston** logger with a GELF transport, instructions
 ### Install Dependencies
 
 We need two packages:
+
 - `pino`: Encodes logs to JSON.
 - `@alex-michaud/pino-graylog-transport`: Sends the logs to the LDP endpoint using GELF.
 
@@ -36,6 +37,7 @@ npm install pino @alex-michaud/pino-graylog-transport
 Create a file named `logger.js` (or `index.js`) and configure the logger.
 
 You need to:
+
 1.  Configure the transport to point to your LDP cluster.
 2.  Add your `X-OVH-TOKEN` to every log message so LDP accepts and routes them. In GELF, custom fields generally start with an underscore `_`.
 
@@ -96,9 +98,11 @@ const logger = pino({ level: 'info' }, pinoGraylogTransport);
 })();
 ```
 
-> **Note**: For security, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them.
-
-> **Note**: In your `package.json`, make sure to set `"type": "module"` to use ES modules syntax.
+> [!primary]
+>
+> - **Note**: For security reasons, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them.
+>
+> - **Note**: In your `package.json`, make sure to set `"type": "module"` to use ES modules syntax.
 
 ### Run and Verify
 
@@ -108,7 +112,7 @@ Run your application:
 node logger.js
 ```
 
-Then, go to your **Graylog** interface (access via the OVHcloud Control Panel) and define a relative search time (e.g., "Last 5 minutes"). You should see your messages appearing in the stream.
+Then, go to your **Graylog** interface (access via the OVHcloud Control Panel]) and define a relative search time (e.g., "Last 5 minutes"). You should see your messages appearing in the stream.
 
 ## Go further
 
@@ -122,6 +126,7 @@ Then, go to your **Graylog** interface (access via the OVHcloud Control Panel) a
 ### Install Dependencies
 
 We need two packages:
+
 - `winston`: A versatile logging library for Node.js.
 - `winston-log2gelf`: A transport for Winston to send logs in GELF format.
 
@@ -136,6 +141,7 @@ npm install winston winston-log2gelf
 Create a file named `logger.js` (or `index.js`) and configure the logger.
 
 You need to:
+
 1.  Configure the transport to point to your LDP cluster.
 2.  Add your `X-OVH-TOKEN` to every log message so LDP accepts and routes them. In GELF, custom fields generally start with an underscore `_`.
 3.  Set the log level as needed.
@@ -191,7 +197,9 @@ logger.on('error', (error) => {
 })();
 ```
 
-> **Note**: For security, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them. 
+> [!primary]
+> 
+> **Note**: For security reasons, we recommend using environment variables to store your Token and Cluster address instead of hardcoding them. 
 
 ### Run and Verify
 
@@ -202,7 +210,15 @@ node logger.js
 ```
 
 Then, go to your **Graylog** interface (access via the OVHcloud Control Panel) and define a relative search time (e.g., "Last 5 minutes"). You should see your messages appearing in the stream.
+
 - [Winston Documentation](https://www.npmjs.com/package/winston)
 - [Winston-log2gelf Documentation](https://www.npmjs.com/package/winston-log2gelf)
 - [Graylog Extended Log Format (GELF)](https://go2docs.graylog.org/5-0/getting_in_log_data/gelf.html)
 
+## Go further
+
+- Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+- Documentation: [Guides](/products/observability-logs-data-platform)
+- Create an account: [Try it!](/links/manage-operate/ldp)
+
+Join our [community of users](/links/community).
