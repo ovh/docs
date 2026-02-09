@@ -2263,6 +2263,7 @@
                 + [Managing Enterprise File Storage from the OVHcloud Control Panel](storage_and_backup/file_storage/enterprise_file_storage/netapp_control_panel)
                 + [Managing Enterprise File Storage with OVHcloud Terraform provider](storage_and_backup/file_storage/enterprise_file_storage/netapp_terraform)
                 + [Enterprise File Storage - API Quickstart](storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
+                + [Enterprise File Storage - Getting started with Trident CSI](storage_and_backup/file_storage/enterprise_file_storage/netapp_trident_csi)
             + [Configuration](storage-file-storage-enterprise-file-storage-configuration)
                 + [Enterprise File Storage - Manage your snapshot policies](storage_and_backup/file_storage/enterprise_file_storage/netapp_snapshot_policy)
                 + [Enterprise File Storage - Hold an automatic snapshot](storage_and_backup/file_storage/enterprise_file_storage/netapp_hold_automatic_snapshot)
