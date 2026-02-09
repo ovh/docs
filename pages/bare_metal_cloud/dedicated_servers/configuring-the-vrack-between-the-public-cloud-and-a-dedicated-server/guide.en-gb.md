@@ -98,9 +98,11 @@ This section offers several configuration options. For the purpose of this guide
 >> 
 >> > [!primary]
 >> > It is possible to use the same VLAN ID for more than one private network; however, this requires careful management of private IP addresses. Using non-overlapping DHCP pool allocations is one way to address this issue.
+>> >
 >>
 >> > [!primary]
 >> > Unlike dedicated servers (when using a VLAN ID other than 0), there is no need to include the VLAN ID directly in the network configuration file of the Public Cloud instance once it is set in the OVHcloud Control Panel.
+>> >
 >>
 >> An example: If your instance private network is tagged with VLAN 2, this VLAN ID should be included in the network configuration of the dedicated server only. For more information consult the following guide: [Create multiple VLANs in the vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).<br>
 >>
@@ -108,12 +110,10 @@ This section offers several configuration options. For the purpose of this guide
 >>
 >> You can keep the default private IP range or use a different one.
 >>
->> If you tick the box `Enable DHCP for this private network`{.action}. A random private IP will be assigned to your instance.
->>
 
 Once done, click on `Configure your private network`{.action}. This will take a few minutes.
 
-In the corresponding instance dashboard, click on the `...`{.action} button in the box "Networks", next to "Private networks", and select `Attach a network`{.action}.
+In the corresponding instance dashboard, locate the "Networks" section and click on the `...`{.action} button next to "Private networks". Select `Attach a network`{.action}.
 
 ![attach network](images/vrack2021-01.png){.thumbnail}
 
@@ -130,7 +130,7 @@ Next, configure the network interfaces on your Dedicated Server.
 >>
 >> The configuration below is based on Debian 11 (Bullseye).
 >>
->> - Before you begin, establish an SSH connection to your servser and run the following command to install the VLAN package:
+>> - Before you begin, establish an SSH connection to your server and run the following command to install the VLAN package:
 >>
 >> ```sh
 >> sudo apt-get install vlan
@@ -142,7 +142,7 @@ Next, configure the network interfaces on your Dedicated Server.
 >> sudo modprobe 8021q
 >> ```
 >>
->> - To verify that the model is loaded:
+>> - To verify that the module is loaded:
 >>
 >> ```sh
 >> user@server:~$ lsmod | grep 8021q
@@ -202,15 +202,17 @@ Next, configure the network interfaces on your Dedicated Server.
 >> sudo su -c 'echo "8021q" >> /etc/modules'
 >> ```
 >>
->> - Restart the network to applt the changes
+>> - Restart the network to apply the changes
 >>
 >> ```sh
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Ubuntu 20.04+ and Debian 12**
+> **Ubuntu 20.04+ and Debian 12+**
 >>
->> - Before you begin, establish an SSH connection to your servser and run the following command to install the VLAN package:
+>> The configuration below is based on Ubuntu 25.10.
+>>
+>> - Before you begin, establish an SSH connection to your server and run the following command to install the VLAN package:
 >>
 >> ```sh
 >> sudo apt-get install vlan
@@ -222,9 +224,9 @@ Next, configure the network interfaces on your Dedicated Server.
 >> sudo modprobe 8021q
 >> ```
 >>
->> - To verify that the model is loaded:
+>> - To verify that the module is loaded:
 >>
->> ```console
+>> ```sh
 >> user@server:~$ lsmod | grep 8021q
 >> 8021q                  40960  0
 >> garp                   16384  1 8021q
@@ -242,6 +244,8 @@ Next, configure the network interfaces on your Dedicated Server.
 >> ```sh
 >> network: {config: disabled}
 >> ```
+>>
+>> Save and exit the file.
 >>
 >> - To obtain the network interface name and it's MAC address:
 >>
@@ -292,7 +296,7 @@ Next, configure the network interfaces on your Dedicated Server.
 >>
 >> You can fix that by installing the following package:
 >>
->> ```bash
+>> ```sh
 >> sudo apt install openvswitch-switch
 >> ```
 >>
@@ -312,13 +316,15 @@ Next, configure the network interfaces on your Dedicated Server.
 >>
 > **AlmaLinux and Rocky Linux (8/9)**
 >>
->> - Before you begin, establish an SSH connection to your servser and run the following command to load the 8021q kernel module:
+>> The configuration below is based on Almalinux 9.
+>>
+>> - Before you begin, establish an SSH connection to your server and run the following command to load the 8021q kernel module:
 >>
 >> ```sh
 >> sudo modprobe 8021q
 >> ```
 >>
->> - To verify that the model is loaded:
+>> - To verify that the module is loaded:
 >>
 >> ```sh
 >> user@server:~$ lsmod | grep 8021q
@@ -332,10 +338,8 @@ Next, configure the network interfaces on your Dedicated Server.
 >> ```sh
 >> ip  a
 >> ```
-
-- Here, the interface we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
 >>
->> ![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
+>> In our example, our interface is called `eno2`.
 >>
 >> - Next, create a sub-interface configuration file for the VLAN in the main network configuration file. In our example, our file name is ifcfg-eno2.10. With `eno2` being the private network interface and `10` the VLAN ID.
 >>
@@ -371,6 +375,84 @@ Next, configure the network interfaces on your Dedicated Server.
 >> ```sh
 >> sudo systemctl restart NetworkManager
 >> ```
+>>
+> **Fedora 42+, AlmaLinux & Rocky Linux (10)**
+>>
+>> The configuration below is based on Fedora 43.
+>>
+>> - Before you begin, establish an SSH connection to your server and run the following command to load the 8021q kernel module:
+>>
+>> ```sh
+>> sudo modprobe 8021q
+>> ```
+>>
+>> - To verify that the module is loaded:
+>>
+>> ```sh
+>> user@server:~$ lsmod | grep 8021q
+>> 8021q                  40960  0
+>> garp                   16384  1 8021q
+>> mrp                    20480  1 8021q
+>> ```
+>>
+>> - To obtain the network interface name and it's MAC address:
+>>
+>> ```sh
+>> ip  a
+>> ```
+>>
+>> In our example, our interface is called `enp1s0f1`. We will need to create a VLAN sub-interface before assigning a private IP address to it.
+>>
+>> - Use the following command to create the VLAN interface:
+>>
+>> ```sh
+>> sudo nmcli con add type vlan con-name <vlan-name> dev <parent-iface> id <vlan-id>.
+>> ```
+>>
+>> Replace `vlan-name` with the name of the VLAN sub-interface, `parent-iface` with the name of the private interface and `vlan-id` with the VLAN ID.
+>>
+>> In our example:
+>>
+>> ```sh
+>> sudo nmcli con add type vlan con-name enp1s0f1.10 dev enp1s0f1 id 10
+>> Connection 'enp1s0f1.10' (5953ab93-sddg-dfe9-dfg4-adfae79a911) successfully added.
+>> ```
+>>
+>> - Assign a private IP address to your VLAN sub-interface:
+>>
+>> ```sh
+>> sudo nmcli con mod <vlan-name> ipv4.addresses <ip/prefix> ipv4.method manual
+>> ```
+>>
+>> In our example:
+>>
+>> ```sh
+>> sudo nmcli con mod enp1s0f1.10 ipv4.addresses 192.168.0.14/16 ipv4.method manual
+>> ```
+>>
+>> - Run the following command to ensure the modules are permanently loaded at boot:
+>>
+>> ```sh
+>> sudo su -c 'echo "8021q" >> /etc/modules'
+>> ```
+>>
+>> - Next, bring the interface up:
+>>
+>> ```sh
+>> sudo nmcli con up <vlan-name>.
+>> ```
+>>
+>> In our example:
+>>
+>> ```sh
+>> sudo nmcli con up enp1s0f1.10
+>>
+>> # Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/9)
+>> ```
+>>
+>> The steps above create a configuration file for the VLAN interface. This file is located at `/etc/NetworkManager/system-connections/` and follows the naming format `vlan_interface_name.nmconnection`.
+>>
+>> In our example, the file is called `enp1s0f1.10.nmconnection`.
 >>
 
 ## Go further
