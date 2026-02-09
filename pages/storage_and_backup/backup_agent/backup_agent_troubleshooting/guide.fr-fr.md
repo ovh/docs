@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Guide de diagnostic et dépannage"
 excerpt: "Découvrez comment résoudre les problèmes potentiels liés à Backup Agent"
-updated: 2026-02-03
+updated: 2026-02-09
 ---
 
 <style>

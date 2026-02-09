@@ -8,7 +8,7 @@ updated: 2026-02-09
 
 Découvrez comment restaurer l’intégralité de votre système à l’aide de la fonctionnalité Bare Metal Recovery de Veeam, en utilisant les sauvegardes stockées sur votre Vault.
 
-Vous apprendrez à :
+Ce guide détaille comment :
 
 - Créer une **image ISO de récupération** : ce fichier permet de démarrer votre machine en cas de dysfonctionnement au lancement du système.
 - Utiliser votre image ISO pour accéder à votre dernière sauvegarde et la restaurer depuis l’infrastructure OVHcloud.
@@ -21,7 +21,7 @@ Vous apprendrez à :
 
 Avant de commencer, assurez-vous de disposer des éléments suivants :
 
-- Un [Serveur Bare Metal](/links/bare-metal/bare-metal) sous Windows ou Linux avec Backup Agent d'installé.
+- Un [Serveur Bare Metal](/links/bare-metal/bare-metal) sous Windows ou Linux et sur lequel [Backup Agent](/links/storage/backup-agent) est installé.
 - Au moins une sauvegarde a été effectuée.
 - Un moyen de démarrer à partir de l’ISO de récupération :
     - Utilisez l'IPMI de votre serveur Bare Metal pour charger l'ISO.
@@ -68,9 +68,10 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 1\. Montez l’ISO dans la console de votre serveur, puis démarrez la machine à partir de celui-ci.
 
-> [!primary]
+> [!success]
 >
-> **Vous ne savez pas comment démarrer depuis un ISO ?**  
+> **Vous ne savez pas comment démarrer depuis un ISO ?**
+>
 > Redémarrez votre machine physique et appuyez sur la touche indiquée (généralement F2, F12, ESC ou DEL) pour accéder au menu de démarrage.
 
 2\. Une fois le système lancé, l’assistant de restauration Veeam s’ouvrira. Cliquez sur `Bare Metal Recovery`{.action}.
@@ -91,9 +92,6 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 5\. Saisissez l’adresse suivante lorsqu’il vous est demandé de renseigner le fournisseur de service :
 
-> [!warning]
->
-> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez contacter le support qui vous les fournira.
 
 ![Renseigner les DNS](images/step2_04.png){.thumbnail}
 
@@ -103,7 +101,7 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 > [!warning]
 >
-> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez contacter le support qui vous les fournira.
+> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez [contacter le support](/links/support-contact) qui vous les fournira.
 
 7\. Sélectionnez le `serveur`{.action} que vous souhaitez restaurer.
 

@@ -8,7 +8,7 @@ updated: 2026-02-09
 
 Learn how to restore your entire system using Veeam's Bare Metal Recovery feature, with your backups stored on your Vault.
 
-You will learn how to:
+The guide will detail how to:
 
 - Create a **recovery ISO image**: this file allows you to start your machine if the system fails to boot.
 - Use your ISO image to access your latest backup and restore it from the OVHcloud infrastructure.
@@ -21,7 +21,7 @@ You will learn how to:
 
 Before you begin, make sure you have:
 
-- A [Bare Metal server](/links/bare-metal/bare-metal) running Windows or Linux with Backup Agent installed.
+- A [Bare Metal server](/links/bare-metal/bare-metal) running Windows or Linux with [Backup Agent](/links/storage/backup-agent) installed.
 - At least one backup has been performed.
 - A way to boot from the recovery ISO:
     - Use your Bare Metal server's IPMI to load the ISO.
@@ -54,7 +54,7 @@ Here is how to create it:
 
 ![Set ISO location and name](images/bare_metal_recovery_03.png){.thumbnail}
 
-4\. Wait until the operation completes; the ISO file will be generated.
+4\. Wait until the operation completes. The ISO file will be generated.
 
 ![Recovery ISO created](images/bare_metal_recovery_04.png){.thumbnail}
 
@@ -68,9 +68,10 @@ If your system no longer boots and you need to restore it:
 
 1\. Mount the ISO in your server console, then boot the machine from it.
 
-> [!primary]
+> [!success]
 >
-> **Not sure how to boot from an ISO?**  
+> **Not sure how to boot from an ISO?**
+>
 > Restart your physical machine and press the key indicated (usually F2, F12, ESC or DEL) to access the boot menu.
 
 2\. Once the system has started, the Veeam recovery wizard will open. Click `Bare Metal Recovery`{.action}.
@@ -93,9 +94,6 @@ If your system no longer boots and you need to restore it:
 
 ![Enter DNS](images/step2_04.png){.thumbnail}
 
-> [!warning]
->
-> At this time, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can contact our support team who will provide it to you.
 
 6\. Enter your username and password to log in.
 
@@ -103,7 +101,7 @@ If your system no longer boots and you need to restore it:
 
 > [!warning]
 >
-> At this time, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can contact our support team who will provide it to you.
+> At this stage, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can [contact our support team](/links/support-contact) who will provide them to you.
 
 7\. Select the `server`{.action} you want to restore.
 

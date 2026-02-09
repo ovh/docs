@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Rozwiązywanie problemów"
 excerpt: "Dowiedz się, jak rozwiązać potencjalne problemy związane z Aplikacją Backup"
-updated: 2026-02-03
+updated: 2026-02-09
 ---
 
 <style>
