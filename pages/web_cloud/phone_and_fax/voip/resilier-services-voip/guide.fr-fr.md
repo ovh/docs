@@ -34,7 +34,7 @@ En fonction de votre service, référez-vous à la partie correspondante.
 
 La portabilité d'un numéro OVHcloud vers un autre opérateur entraîne sa résiliation technique et commerciale chez OVHcloud à la date effective de la portabilité.
 
-Tout numéro associé à une ligne Fax ou à un service VoIP est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
+Tout numéro associé à un service VoIP ou à une ligne Fax est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
 
 Récupérez le RIO d'un service VoIP ou Fax depuis les informations générales du service dans votre [espace client OVHcloud](/links/manager).
 
