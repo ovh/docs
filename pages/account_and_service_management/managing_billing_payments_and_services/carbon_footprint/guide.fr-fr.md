@@ -35,20 +35,21 @@ Plusieurs points sont à prendre en compte :
 - Aucun bilan ne peut être généré au delà des 24 derniers mois.
 - Aucun bilan ne peut être généré pour la période précédant la date de mise en place de la fonctionnalité pour chaque service OVHcloud (voir le tableau ci-dessous).
 
-| Service                    | Statut      |
-| -------------------------- | ----------- |
-| Serveur Dédié              | Disponible  |
-| Serveur Dédié Eco          | Disponible  |
-| VMware on OVHcloud         | Disponible  |
-| Instances Public Cloud     | Disponible  |
-| Block Storage              | Disponible  |
-| Object Storage S3          | À venir     |
-| File Storage               | À venir     |
-| Network                    | À venir     |
-| Managed Kubernetes Service | À venir     |
-| Public Cloud Databases     | À venir     |
-| AI                         | À venir     |
-| Data Platform              | À venir     |
+| Services OVHCloud    | Produits                           | Statut     |
+| -------------------- | ---------------------------------- | ---------- |
+| Serveurs dédiées     | Serveur Dédié                      | Disponible |
+|                      | Serveur Dédié Eco                  | Disponible |
+| Hosted Private Cloud | VMware on OVHcloud                 | Disponible |
+| Public Cloud         | Instances Public Cloud             | Disponible |
+|                      | Block Storage                      | Disponible |
+|                      | Object Storage S3                  | À venir    |
+|                      | File Storage                       | À venir    |
+|                      | Network                            | À venir    |
+|                      | Managed Kubernetes Service         | À venir    |
+|                      | Public Cloud Databases / Analytics | À venir    |
+|                      | Quantum                            | À venir    |
+|                      | AI                                 | À venir    |
+|                      | Data Platform                      | À venir    |
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 

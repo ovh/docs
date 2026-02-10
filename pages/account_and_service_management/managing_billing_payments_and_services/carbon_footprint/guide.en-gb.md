@@ -35,20 +35,21 @@ Please note the following information:
 - No carbon footprint report can be generated for more than the last 24 months.
 - No carbon footprint can be generated before the date of implementation of the feature for each OVHcloud service (see table below).
 
-| Service                    | Statut      |
-| -------------------------- | ----------- |
-| Serveur Dédié              | Available   |
-| Serveur Dédié Eco          | Available   |
-| VMware on OVHcloud         | Available   |
-| Instances Public Cloud     | Available   |
-| Block Storage              | Available   |
-| Object Storage S3          | Coming soon |
-| File Storage               | Coming soon |
-| Network                    | Coming soon |
-| Managed Kubernetes Service | Coming Soon |
-| Public Cloud Databases     | Coming Soon |
-| AI                         | Coming Soon |
-| Data Platform              | Coming Soon |
+| OVHcloud Services    | Product                            | Statut      |
+| -------------------- | ---------------------------------- | ----------  |
+| Dedicated servers    | Dedicated servers                  | Available   |
+|                      | Eco Dedicated servers              | Available   |
+| Hosted Private Cloud | VMware on OVHcloud                 | Available   |
+| Public Cloud         | Instances Public Cloud             | Available   |
+|                      | Block Storage                      | Available   |
+|                      | Object Storage S3                  | Coming soon |
+|                      | File Storage                       | Coming soon |
+|                      | Network                            | Coming soon |
+|                      | Managed Kubernetes Service         | Coming soon |
+|                      | Public Cloud Databases / Analytics | Coming soon |
+|                      | Quantum                            | Coming soon |
+|                      | AI                                 | Coming soon |
+|                      | Data Platform                      | Coming soon |
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 
