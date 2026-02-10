@@ -1,7 +1,7 @@
 ---
-title: "Zimbra - Configurer un dossier Webdav sur ordinateur "
-excerpt: "Découvrez comment monter un dossier WebDAV Zimbra sur votre ordinateur"
-updated: 2026-02-09
+title: "Zimbra - Configurer un dossier WebDAV sur votre ordinateur"
+excerpt: "Configurez l’accès WebDAV à la Malette Zimbra sur votre ordinateur pour gérer et partager vos fichiers directement depuis votre système."
+updated: 2026-02-10
 ---
 
 <style>

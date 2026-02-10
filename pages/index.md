@@ -1966,7 +1966,7 @@
                 + [How to migrate an MX Plan email address to a Zimbra account](web_cloud/email_and_collaborative_solutions/zimbra/migrate_mxplan_to_zimbra)
                 + [How to configure a Zimbra email account on the Zimbra mobile application](web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios)
                 + [Synchronize a Zimbra CalDAV calendar in an application](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_calendar_sync)
-                + [Mount a Zimbra WebDAV folder in an OS](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_webdav_mount)
+                + [How to mount a Zimbra WebDAV folder in an OS](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_webdav_mount)
             + [Setting up an email application on your computer](web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer)
                 + [Configuring your ActiveSync Zimbra account in Outlook for Windows](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)
                 + [Configuring your ActiveSync Zimbra account in Outlook for macOS](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)
