@@ -93,7 +93,7 @@ For the Managed VMware vSphere product, a specific hardware lifecycle applies:
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-31   | 2028-05-31  |
 |              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-31   | 2028-05-31  |
 |             Essentials (Intel Broadwell)              |          2020        |  2026-03-31  |  2026-10-31   | 2028-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2027-03-31   | 2028-10-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-03-31   | 2028-10-31  |
 |           Premier2026 (Intel Emerald Rapids)          |          2026        |              |               | 2028-10-31  |
 
 ### Managed VMware Cloud Foundation - Stretched Cluster 3AZ Hosts (compute)
