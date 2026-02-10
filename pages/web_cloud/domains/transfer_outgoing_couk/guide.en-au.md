@@ -1,7 +1,7 @@
 ---
 title: Transferring a .uk domain name to another registrar
 excerpt: Find out how to move UK domain names from OVHcloud to a provider of your choice
-updated: 2022-10-19
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -22,11 +22,11 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 
 > [!warning]
 >
-> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
+> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or holder information, an outgoing domain transfer is not the appropriate procedure.
 >
 > To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web_cloud/domains/trade_domain) instructions.
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [instructions for changing the holder of a domain name](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requirements
@@ -49,7 +49,7 @@ In case you do not know the required TAG yet, you can request it at your new pro
 
 ### Step 1: Verify the necessary information
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Domain names`{.action} , then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
 In the `General information`{.action} tab, you can verify that the requirements for the transfer process are met.
 
@@ -57,11 +57,11 @@ In the `General information`{.action} tab, you can verify that the requirements 
 
 Click on the `Outgoing transfer tag`{.action} link in the section labelled **Security**.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
 
 In the popup window, enter the TAG of your future registrar, then click on `Confirm`{.action}.
 
-![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
 
 If you are unable to modify your domain name's TAG in the OVHcloud Control Panel, you can request at the registry to modify it on your behalf. You can find more information on the official [Nominet website](https://www.nominet.uk/domain-support/).  
 

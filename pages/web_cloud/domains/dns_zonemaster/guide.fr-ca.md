@@ -1,6 +1,6 @@
 ---
 title: 'Tutoriel - Utilisation de Zonemaster'
-updated: 2024-06-18
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -39,7 +39,7 @@ Pour vérifier une configuration DNS que vous avez préparée mais pas encore ap
 
 Vous pouvez également forcer les vérifications sur un protocole IP spécifique, via les cases `Désactiver IPv6` et `Désactiver IPv4`
 
-> **Exemple**:<br><br> Vous possédez le nom de domaine « domain.tld » qui utilise actuellement les serveurs DNS « dnsXX.ovh.net » et  « nsXX.ovh.net ».
+> **Exemple**:<br><br> Vous êtes titulaire du nom de domaine « domain.tld », qui utilise actuellement les serveurs DNS « dnsXX.ovh.net » et  « nsXX.ovh.net ».
 >
 >Vous avez configuré une zone DNS pour ce nom domaine sur les serveurs DNS « dns1.test.tld » et « dns2.test.tld ».<br>
 > Avant de changer les serveurs DNS, vous pouvez effectuer une recherche avancée à la l'aide de la case `Options`{.action} en saisissant « dns1.test.tld » et « dns2.test.tld » dans les cases `Serveurs DNS`.<br>
@@ -75,7 +75,7 @@ Si vous avez des questions supplémentaires au sujet de Zonemaster, consultez la
 
 [Modification d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec).
+[Protégez votre nom de domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

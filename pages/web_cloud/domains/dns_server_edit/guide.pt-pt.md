@@ -1,30 +1,30 @@
 ---
 title: "Alterar os servidores DNS de um nome de domínio OVHcloud"
-excerpt: "Saiba como alterar os servidores DNS do seu domínio registado na OVHcloud"
+excerpt: "Saiba como alterar os servidores DNS do seu nome de domínio registado na OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objetivo
 
-A sigla **DNS** (**D**omain **N**ame **S**ystem), é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um domínio a um endereço IP.
+A sigla **DNS** (**D**omain **N**ame **S**ystem), é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um nome de domínio a um endereço IP.
 
 Consulte os nossos manuais "[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" para mais informações.
 
-**Saiba como alterar os servidores DNS do seu domínio OVHcloud em 3 etapas.**
+**Saiba como alterar os servidores DNS do seu nome de domínio OVHcloud em 3 etapas.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
+- Ser o titular de um [nome de domínio](/links/web/domains) registado na OVHcloud.
 - Ter as permissões [adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da [Área de Cliente OVHcloud](/links/manager).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!primary]
 >
-> Um **agente de registo** é uma organização com permissão para vender domínios. A OVHcloud faz parte destes **agentes de registo**.
+> Um **agente de registo** é uma organização com permissão para vender nomes de domínio. A OVHcloud faz parte destes **agentes de registo**.
 >
-> Se o domínio não estiver registado na OVHcloud, terá de modificar os servidores DNS no **agente de registo**, onde está atualmente registado o seu domínio.
+> Se o nome de domínio não estiver registado na OVHcloud, terá de modificar os servidores DNS no **agente de registo**, onde está atualmente registado o seu nome de domínio.
 >
 
 ## Instruções
@@ -231,4 +231,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com nossa [comunidade de utilizadores](/links/community). 

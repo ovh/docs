@@ -1,7 +1,7 @@
 ---
 title: 'Editing an OVHcloud DNS zone'
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -50,7 +50,7 @@ For further explanation, please refer to our guides “[Everything you need to k
 
 > [!primary]
 >
-> Unlike domain names, a DNS zone has no "owner", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+> Unlike domain names, a DNS zone has no "holder", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 To manage an OVHcloud DNS zone, click on the tabs below to view each of the **3** steps.
 
