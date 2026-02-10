@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Primeiros passos com Trident CSI
 excerpt: "Implemente o NetApp Trident CSI no OVHcloud Enterprise File Storage para gerir volumes e snapshots no Kubernetes"
-updated: 2026-02-09
+updated: 2026-02-10
 ---
 
 ## Objetivo
@@ -76,18 +76,29 @@ A URN da conta pode ser obtida através deste chamada com o ID do cliente regist
 
 Certifique-se de que a política concede todas as ações necessárias para o bom funcionamento do Trident:
 
-| Action                                     | Description         |
-| ------------------------------------------ | ------------------- |
-| storageNetApp:apiovh:share/create          | Create shares       |
-| storageNetApp:apiovh:share/delete          | Delete shares       |
-| storageNetApp:apiovh:share/edit            | Modify shares       |
-| storageNetApp:apiovh:share/acl/*           | Access management   |
-| storageNetApp:apiovh:share/snapshot/*      | Snapshot management |
-| storageNetApp:apiovh:share/extend & shrink | Resizing            |
+| Action                                      | Description                             |
+| ------------------------------------------- | --------------------------------------- |
+| storageNetApp:apiovh:get                    | Listar os serviços                      |
+| storageNetApp:apiovh:serviceInfos/get       | Obter as informações de um serviço      |
+| storageNetApp:apiovh:share/accessPath/get   | Obter o ponto de montagem de um share   |
+| storageNetApp:apiovh:share/acl/create       | Criar uma ACL                           |
+| storageNetApp:apiovh:share/acl/delete       | Eliminar uma ACL                        |
+| storageNetApp:apiovh:share/acl/get          | Listar as ACLs                          |
+| storageNetApp:apiovh:share/create           | Criar um share                          |
+| storageNetApp:apiovh:share/delete           | Eliminar um share                       |
+| storageNetApp:apiovh:share/edit             | Modificar um share                      |
+| storageNetApp:apiovh:share/extend           | Estender um share                       |
+| storageNetApp:apiovh:share/get              | Listar os shares                        |
+| storageNetApp:apiovh:share/revertToSnapshot | Restaurar um snapshot                   |
+| storageNetApp:apiovh:share/snapshot/create  | Criar um snapshot                       |
+| storageNetApp:apiovh:share/snapshot/delete  | Eliminar um snapshot                    |
+| storageNetApp:apiovh:share/snapshot/edit    | Editar um snapshot                      |
+| storageNetApp:apiovh:share/snapshot/get     | Listar os snapshots                     |
 
 ### Instalação do Trident CSI
 
-A instalação utiliza o Helm com imagens específicas hospedadas no registo privado OVHcloud para suportar o driver.
+A instalação utiliza o Helm com imagens personalizadas alojadas no Docker Hub.
+Estas imagens incluem um driver adicional adicionado pela OVHcloud que permite a utilização de armazenamento persistente a partir da oferta OVHcloud Enterprise File Storage.
 
 Crie um ficheiro `trident-values.yaml` para referenciar as imagens hospedadas pela OVHcloud:
 
