@@ -97,7 +97,7 @@ Assurez-vous que la policy accorde l’ensemble des actions nécessaires au bon 
 
 ### Installation de Trident CSI
 
-L'installation utilise Helm avec des images spécifiques hébergées sur Docker Hub.
+L'installation utilise Helm avec des images personnalisées hébergées sur Docker Hub.
 Ces images incluent un driver ajouté par OVHcloud pour piloter les ressources de l'offre Enterprise File Storage.
 
 Créez un fichier `trident-values.yaml` afin de référencer les images hébergées par OVHcloud :
