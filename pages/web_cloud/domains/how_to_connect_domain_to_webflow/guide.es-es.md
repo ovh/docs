@@ -1,18 +1,18 @@
 ---
-title: Cómo conectar un dominio de OVHcloud a un alojamiento Webflow
-excerpt: Prepare y configure la zona DNS de su dominio OVHcloud para conectarla a un alojamiento Webflow
-updated: 2024-06-13
+title: Cómo conectar un nombre de dominio de OVHcloud a un alojamiento Webflow
+excerpt: Prepare y configure la zona DNS de su nombre de dominio OVHcloud para conectarla a un alojamiento Webflow
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Webflow, Esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud con el fin de permitir la configuración de un alojamiento Webflow.
+Si es titular de un nombre de dominio con OVHcloud y quiere conectarlo a un alojamiento Webflow, esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud con el fin de permitir la configuración de un alojamiento Webflow.
 
-**Cómo conectar un dominio de OVHcloud a un alojamiento Webflow**
+**Cómo conectar un nombre de dominio de OVHcloud a un alojamiento Webflow**
 
 > [!warning]
 >
-> - El servicio de asistencia Webflow no tiene acceso a los parámetros de su dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
+> - El servicio de asistencia Webflow no tiene acceso a los parámetros de su nombre de dominio de OVHcloud y, por lo tanto, no puede aconsejarle sobre la información que deba proporcionarle.
 >
 > - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#gofurther) información de esta guía.
 >
@@ -20,8 +20,8 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Webflow, E
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener un [dominio](/links/web/domains) registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager).
+- Tener un [nombre de dominio](/links/web/domains) registrado con OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un plan de hosting con Webflow.
 - Tener acceso a la gestión de este alojamiento en Webflow.
 
@@ -31,11 +31,11 @@ Antes de seguir los dos pasos de esta guía, le recomendamos que se familiarice 
 
 > [!warning]
 >
-> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. Esta guía explica cómo identificar cada registro DNS necesario para conectarse al alojamiento Webflow. Es necesario eliminar algunos registros para evitar conflictos con los registros DNS necesarios en esta configuración. Otros se pueden editar o crear fácilmente. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustituya el dominio por su nombre de dominio durante la configuración.
+> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. Esta guía explica cómo identificar cada registro DNS necesario para conectarse al alojamiento Webflow. Es necesario eliminar algunos registros para evitar conflictos con los registros DNS necesarios en esta configuración. Otros se pueden editar o crear fácilmente. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustituya el nombre de dominio por su nombre de dominio durante la configuración.
 
 ### 1. Configurar el alojamiento Webflow
 
-Si utiliza un alojamiento web con un dominio de OVHcloud, deberá preparar el alojamiento siguiendo las instrucciones de la sección **How to connect your custom domain** de [**esta página de la documentación de Webflow*](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export#how-to-connect-your-custom-domain).
+Si utiliza un alojamiento web con un nombre de dominio de OVHcloud, deberá preparar el alojamiento siguiendo las instrucciones de la sección **How to connect your custom domain** de [**esta página de la documentación de Webflow*](https://university.webflow.com/lesson/manually-connect-a-custom-domain?topics=hosting-code-export#how-to-connect-your-custom-domain).
 
 ### 2. Configurar los registros DNS en su cuenta de OVHcloud
 
@@ -48,9 +48,9 @@ Si utiliza un alojamiento web con un dominio de OVHcloud, deberá preparar el al
 > - Acceda a la sección "**How to set your DNS records**" de la documentación Webflow.<br>
 > Las siguientes instrucciones le ayudarán a configurar más fácilmente su zona DNS de OVHcloud.
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el nombre de dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
+Se mostrará una tabla con todos los registros DNS del nombre de dominio seleccionado.
 
 ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde únicamente a su nombre de dominio, sin subdominio (p. ej.: `mydomain.ovh.`) y, a continuación, en `Modificar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www" (por ejemplo, "www.mydomain.ovh."), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
+>> - Si hay un registro para el subdominio "www" (por ejemplo, "www.mydomain.ovh."), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Registro de direccionamiento" `A`{.action}<br><br>
 >> Debe crear dos registros de tipo "A" sucesivamente para rellenar las dos direcciones IPv4 relativas a Webflow.
 >> Deje el campo **Subdominio** vacío e introduzca la primera dirección IPv4 de Webflow `75.2.70.75` en el campo **Destino**.
@@ -76,14 +76,14 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 >>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde únicamente a su nombre de dominio, sin subdominio (por ejemplo, `mydomain.ovh.`) y seleccione `Eliminar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www" (p. ej.: `www.mydomain.ovh.`), elimínelo también para que no entre en conflicto con el registro CNAME que va a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
+>> - Si hay un registro para el subdominio "www" (p. ej.: `www.mydomain.ovh.`), elimínelo también para que no entre en conflicto con el registro CNAME que va a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "AAAA" existente, vaya al paso 3.
 > **Paso 3**
 >> **Registro TXT**<br><br>
 >> Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione "TXT".<br>
 >>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio en "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
+>> - Si existen registros "TXT" para el nombre de dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio en "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www" y seleccione "`Eliminar el registro`{.action}.<br>
 >> - Debe crear un registro de tipo TXT. Haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de la pantalla y seleccione el "Registro de direccionamiento" `TXT`{.action}.
 >> Complete el campo **Subdominio** con el valor `_webflow` e introduzca en el campo **Destino** el valor presente en la sección `Site settings > Publishing tab > Production`{.action} de su cuenta Webflow, de tipo `one-time-verification=XXXXXXXX`. Sustituya `XXXXXXXX` por el valor de su cuenta de Webflow.<br>
 >>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
@@ -103,19 +103,19 @@ La zona DNS ya está configurada para asociarse a un alojamiento Webflow.
 
 > [!primary]
 >
-> La comprobación del dominio puede tardar hasta 48 horas.
+> La comprobación del nombre de dominio puede tardar hasta 48 horas.
 
 Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+[Crear una zona DNS de OVHcloud para un nombre de dominio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para cambiar la gestión de un dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
+Para cambiar la gestión de un nombre de dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

@@ -1,12 +1,12 @@
 ---
 title: "Verbinden eines OVHcloud Domainnamens mit einer Google Site"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einer Google Site zu verwenden"
-updated: 2024-10-03
+updated: 2026-02-10
 ---
 
 ## Ziel
 
-Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einer Google Site verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration von Google Sites zu ermöglichen.
+Sie sind der Inhaber eines Domainnamens bei OVHcloud und möchten ihn mit einer Google Site verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration von Google Sites zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einer Google Site verbinden.**
 

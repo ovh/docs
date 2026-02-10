@@ -1,17 +1,17 @@
 ---
 title: Troubleshooting a domain name error
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objective
 
-Creating a domain name, transfering it, or changing its owner are technical operations which may produce errors. A manual intervention may then be necessary.
+Creating a domain name, transfering it, or changing its holder are technical operations which may produce errors. A manual intervention may then be necessary.
 
 **Find out what to do when an error occurs on a domain name.**
 
 ## Requirements
 
-- One or more domain names 
+- You are the holder of one or more [domain names](/links/web/domains)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 

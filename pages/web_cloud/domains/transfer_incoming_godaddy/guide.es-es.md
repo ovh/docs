@@ -1,39 +1,39 @@
 ---
-title: 'Transferir un dominio GoDaddy a OVHcloud'
-excerpt: 'Descubra diferentes datos relativos a la transferencia de un dominio GoDaddy a OVHcloud'
-updated: 2024-06-28
+title: 'Transferir un nombre de dominio GoDaddy a OVHcloud'
+excerpt: 'Descubra diferentes datos relativos a la transferencia de un nombre de dominio GoDaddy a OVHcloud'
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Para transferir un dominio GoDaddy es necesario seguir un procedimiento específico.
+Para transferir un nombre de dominio GoDaddy es necesario seguir un procedimiento específico.
 
-**Descubra cómo transferir un dominio GoDaddy a OVHcloud**
+**Descubra cómo transferir un nombre de dominio GoDaddy a OVHcloud**
 
 > [!warning]
 >
-> El [agente registrador](/links/web/domains-what-is-registrar) de un dominio representa la organización/proveedor autorizado con el que el dominio está registrado o suscrito por un particular, una asociación o una organización. Renueve la suscripción de su dominio (generalmente una vez al año) con este mismo agente registrador.
+> El [agente registrador](/links/web/domains-what-is-registrar) de un nombre de dominio representa la organización/proveedor autorizado con el que el nombre de dominio está registrado o suscrito por un particular, una asociación o una organización. Renueve la suscripción de su nombre de dominio (generalmente una vez al año) con este mismo agente registrador.
 >
-> Si OVHcloud ya es el agente registrador del dominio **antes** de iniciar el procedimiento que se indica a continuación, la transferencia entrante del dominio no es el procedimiento adecuado. El procedimiento de transferencia entrante del dominio se aplica **únicamente** a los dominios registrados en un agente registrador que no sea OVHcloud.
+> Si OVHcloud ya es el agente registrador del nombre de dominio **antes** de iniciar el procedimiento que se indica a continuación, la transferencia entrante del nombre de dominio no es el procedimiento adecuado. El procedimiento de transferencia entrante del nombre de dominio se aplica **únicamente** a los nombres de dominio registrados en un agente registrador que no sea OVHcloud.
 >
-> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un **cambio de contactos**. El procedimiento se describe en [esta guía](/pages/account_and_service_management/account_information/managing_contacts).
-> Si también debe cambiar el **propietario** del dominio, deberá hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las instrucciones de la guía relativa al [cambio de propietario de los dominios](/pages/web_cloud/domains/trade_domain).
+> Para transferir la gestión de su nombre de dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un **cambio de contactos**. El procedimiento se describe en [esta guía](/pages/account_and_service_management/account_information/managing_contacts).
+> Si también debe cambiar el **titular** del nombre de dominio, deberá hacerlo **antes** de cambiar los contactos del nombre de dominio. Para ello, siga las instrucciones de la guía relativa al [cambio de titular de los nombres de dominio](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requisitos
 
-- El dominio está registrado en el agente registrador GoDaddy.
-- El dominio existe desde hace más de 60 días.
-- El dominio no ha sido transferido o no ha cambiado de propietario en los últimos 60 días.
-- El estado del dominio es "OK" o "Transferible".
+- El nombre de dominio está registrado en el agente registrador GoDaddy.
+- El nombre de dominio existe desde hace más de 60 días.
+- El nombre de dominio no ha sido transferido o no ha cambiado de titular en los últimos 60 días.
+- El estado del nombre de dominio es "OK" o "Transferible".
 - El nombre de dominio no ha expirado y tiene una fecha de expiración que permite finalizar el proceso de transferencia en el plazo indicado (recomendado: más de 60 días).
 
 También debe:
 
-- Estar en condiciones de desbloquear el dominio.
+- Estar en condiciones de desbloquear el nombre de dominio.
 - Tener el código de transferencia o estar en condiciones de recuperarlo.
-- Estar facultado para solicitar la transferencia del dominio.
-- Haber informado al propietario del dominio y/o a sus administradores de la solicitud de transferencia.
+- Estar facultado para solicitar la transferencia del nombre de dominio.
+- Haber informado al titular del nombre de dominio y/o a sus administradores de la solicitud de transferencia.
 
 > [!warning]
 >
@@ -46,46 +46,46 @@ También debe:
 
 > [!primary]
 >
-> La zona DNS activa de un dominio contiene la configuración DNS aplicada al dominio. Es la que asocia el dominio a servicios como las direcciones de correo o el sitio web.
+> La zona DNS activa de un nombre de dominio contiene la configuración DNS aplicada al nombre de dominio. Es la que asocia el nombre de dominio a servicios como las direcciones de correo o el sitio web.
 >
-> Si, además del dominio, dispone de una zona DNS activa para el mismo en su actual agente registrador, compruebe con sus servicios que la zona DNS aplicada al dominio no se eliminará una vez realizada la transferencia.
+> Si, además del nombre de dominio, dispone de una zona DNS activa para el mismo en su actual agente registrador, compruebe con sus servicios que la zona DNS aplicada al nombre de dominio no se eliminará una vez realizada la transferencia.
 >
-> Algunos agentes registradores eliminan la zona DNS que se encuentra en ellos una vez finalizada la transferencia del dominio. En ese caso, vuelva a crear su zona DNS en OVHcloud antes de iniciar las acciones asociadas a la transferencia del dominio.
+> Algunos agentes registradores eliminan la zona DNS que se encuentra en ellos una vez finalizada la transferencia del nombre de dominio. En ese caso, vuelva a crear su zona DNS en OVHcloud antes de iniciar las acciones asociadas a la transferencia del nombre de dominio.
 >
 > Para ello, consulte las siguientes guías:
 >
 > - [Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
-> Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al dominio.
+> Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al nombre de dominio.
 >
-> Si, además de la transferencia del dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico...), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
+> Si, además de la transferencia del nombre de dominio, quiere migrar los servicios asociados al mismo (sitio web, correo electrónico, etc.), consulte en primer lugar nuestra guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de continuar.
 > Esta guía explica en detalle cómo migrar todos sus servicios sin cortes del servicio.
 >
-> Si solo va a transferir su dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
-> De este modo, no tendrá que interrumpir la asociación entre su dominio y los servicios externos asociados.
+> Si solo va a transferir su nombre de dominio sin trasladar los demás servicios, deberá obtener los servidores DNS activos para su nombre de dominio de su actual **registrar** para informarlos directamente en el paso 3 de la guía "[Transferir su nombre de dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+> De este modo, no tendrá que interrumpir la asociación entre su nombre de dominio y los servicios externos asociados.
 >
 
-### Etapa 1 - Desbloquear el dominio en GoDaddy
+### Etapa 1 - Desbloquear el nombre de dominio en GoDaddy
 
-El bloqueo de un dominio lo protege contra los intentos de transferencia no autorizados.
-GoDaddy habilita esta protección de forma predeterminada. Para transferir su dominio a OVHcloud, deberá desactivar esta opción.
+El bloqueo de un nombre de dominio lo protege contra los intentos de transferencia no autorizados.
+GoDaddy habilita esta protección de forma predeterminada. Para transferir su nombre de dominio a OVHcloud, deberá desactivar esta opción.
 
 Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/bloquear-o-desbloquear-mi-dominio-410).
 
 ### Etapa 2 - Obtener el código de autorización 
 
-OVHcloud le solicitará el código de autorización o «Auth code» antes de iniciar el procedimiento de transferencia del dominio. Puede obtenerlo abriendo la página de su cartera de dominios`{.action} en GoDaddy.
+OVHcloud le solicitará el código de autorización o «Auth code» antes de iniciar el procedimiento de transferencia del nombre de dominio. Puede obtenerlo abriendo la página de su cartera de nombres de dominio`{.action} en GoDaddy.
 
 Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/transferir-mi-dominio-fuera-de-godaddy-3560).
 
-### Etapa 3 - Iniciar la transferencia del dominio a OVHcloud
+### Etapa 3 - Iniciar la transferencia del nombre de dominio a OVHcloud
 
-Una vez obtenido el código de autorización, puede proceder a la transferencia del dominio siguiendo las etapas de la guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
+Una vez obtenido el código de autorización, puede proceder a la transferencia del nombre de dominio siguiendo las etapas de la guía "[Transferir un nombre de dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 
 ## Más información <a name="go-further"></a>
 
-[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
+[Transferir un nombre de dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
 [Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 

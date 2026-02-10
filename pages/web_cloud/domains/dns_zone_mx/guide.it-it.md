@@ -1,27 +1,27 @@
 ---
 title: "Configurare un record MX per la gestione delle email"
-excerpt: "Come configurare un record MX su un dominio in OVHcloud"
-updated: 2025-04-28
+excerpt: "Come configurare un record MX su un nome di dominio in OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Obiettivo
 
-Il record MX permette di collegare un dominio al server della sua piattaforma di posta. È indispensabile perché il servizio email del mittente possa raggiungere quello del destinatario.
+Il record MX permette di collegare un nome di dominio al server della sua piattaforma di posta. È indispensabile perché il servizio email del mittente possa raggiungere quello del destinatario.
 
-**Questa guida ti mostra come configurare un record MX per un dominio in OVHcloud.**
+**Questa guida ti mostra come configurare un record MX per un nome di dominio in OVHcloud.**
 
 ## Prerequisiti
 
-- Avere accesso alla gestione della zona DNS del dominio dallo [Spazio Cliente OVHcloud](/links/manager).
+- Avere accesso alla gestione della zona DNS del nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Il dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
+- Il nome di dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
 - Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](/links/web/domains-free-hosting) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](/links/web/emails) o un servizio di posta esterna.
 
 > [!primary]
 >
-> - Se il dominio non utilizza i server DNS di OVHcloud, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che gestisce la configurazione del dominio.
+> - Se il nome di dominio non utilizza i server DNS di OVHcloud, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che gestisce la configurazione del nome di dominio.
 >
-> - Se il dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente OVHcloud](/links/manager). Una volta effettuato il login sul dominio interessato, accedi alla sezione `Informazioni Generali`{.action} della scheda `Server DNS`{.action} e clicca su `Attivo` in "**server DNS**" per utilizzare i server DNS di OVHcloud.
+> - Se il nome di dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente OVHcloud](/links/manager). Una volta effettuato il login sul nome di dominio interessato, accedi alla sezione `Informazioni Generali`{.action} della scheda `Server DNS`{.action} e clicca su `Standard` in "**server DNS**" per utilizzare i server DNS di OVHcloud.
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
@@ -29,22 +29,22 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 
 ### Informazioni sul ruolo dei record MX 
 
-I record MX (**M**ail **e**Xchange) permettono di collegare il dominio ai server di posta associati al servizio di posta. Ci baseremo su un esempio.
+I record MX (**M**ail **e**Xchange) permettono di collegare il nome di dominio ai server di posta associati al servizio di posta. Ci baseremo su un esempio.
 
 Quando l'indirizzo **sender@otherdomain.ovh** invia un’email a **contact@mydomain.ovh**, il server di invio delle email (**Outgoing mail server**):
 
-- **(1)** interrogare la zona DNS del dominio **mydomain.ovh** e leggere i record **MX**.
+- **(1)** interrogare la zona DNS del nome di dominio **mydomain.ovh** e leggere i record **MX**.
 - **(2)** trasmettere l’email verso l’URL del record **MX** letto.
 
 ![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta dal valore **0**. Questo valore viene denominato priorità. Il valore più basso viene interrogato per primo e il valore più alto per ultimo. Ciò significa che la presenza di più record consente di compensare un'assenza di risposta da parte del record MX con la priorità più bassa.
 
-È possibile configurare più record MX per uno stesso dominio. È quindi necessario definire un numero di priorità per ciascuno di essi. I record MX vengono interrogati in ordine crescente, dal numero più basso a quello più alto, fino a ottenere una risposta dal server di posta in arrivo.
+È possibile configurare più record MX per uno stesso nome di dominio. È quindi necessario definire un numero di priorità per ciascuno di essi. I record MX vengono interrogati in ordine crescente, dal numero più basso a quello più alto, fino a ottenere una risposta dal server di posta in arrivo.
 
 > [!warning]
 >
-> In generale, **modificare i record MX nella zona DNS del dominio è un’operazione delicata**: un’azione errata potrebbe rendere impossibile la ricezione delle email sugli indirizzi. Ti consigliamo di prestare la massima attenzione durante questa operazione.
+> In generale, **modificare i record MX nella zona DNS del nome di dominio è un’operazione delicata**: un’azione errata potrebbe rendere impossibile la ricezione delle email sugli indirizzi. Ti consigliamo di prestare la massima attenzione durante questa operazione.
 > In caso di dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner).
 
 ### Valori della configurazione MX di OVHcloud <a name="mxovhcloud"></a>
@@ -61,15 +61,15 @@ Questi valori sono comuni a tutte le soluzioni, ad eccezione di [Private Exchang
 |*Lasciare il campo vuoto*|3600|MX|100|mx3.mail.ovh.net.|
 |*Lasciare il campo vuoto*|3600|MX|200|mx4.mail.ovh.net.|
 
-Questi record MX devono essere configurati nella zona DNS del dominio.
+Questi record MX devono essere configurati nella zona DNS del nome di dominio.
 
 ### Configurare un record MX in una zona DNS OVHcloud
 
-Per creare o modificare i record MX nella configurazione OVHcloud del dominio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
+Per creare o modificare i record MX nella configurazione OVHcloud del nome di dominio, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca sul menu `Zone DNS`{.action} e seleziona il nome di dominio interessato.
 
-Visualizzi una tabella con la configurazione OVHcloud del tuo dominio. ogni riga corrisponde a un diverso record DNS.
+Visualizzi una tabella con la configurazione OVHcloud del tuo nome di dominio. ogni riga corrisponde a un diverso record DNS.
 
-Per prima cosa, è necessario verificare se esistono record MX nella configurazione DNS OVHcloud del dominio utilizzando l’elenco di filtri disponibile sopra la tabella della zona DNS.<br>
+Per prima cosa, è necessario verificare se esistono record MX nella configurazione DNS OVHcloud del nome di dominio utilizzando l’elenco di filtri disponibile sopra la tabella della zona DNS.<br>
 Seleziona il tipo **MX** e poi conferma per visualizzare solo i record MX DNS della zona DNS. Consulta lo screenshot qui sotto.
 
 ![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
@@ -100,8 +100,8 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

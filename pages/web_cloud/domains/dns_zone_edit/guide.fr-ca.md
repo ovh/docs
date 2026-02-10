@@ -1,7 +1,7 @@
 ---
 title: "Éditer une zone DNS OVHcloud"
 excerpt: "Découvrez comment éditer une zone DNS OVHcloud via votre espace client OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -50,7 +50,7 @@ Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs 
 
 > [!primary]
 >
-> Contrairement au nom de domaine, il n'y a pas de notion de propriétaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+> Contrairement au nom de domaine, il n'y a pas de notion de titulaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
 Pour accéder à la gestion d'une zone DNS OVHcloud, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **3** étapes.
 
@@ -317,7 +317,7 @@ Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
+[Protégez votre nom de domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 

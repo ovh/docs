@@ -1,12 +1,12 @@
 ---
 title: "Comment connecter un nom de domaine OVHcloud à un Google Site"
 excerpt: "Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour le connecter à un Google Site"
-updated: 2024-09-26
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Retrouvez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Retrouvez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un Google Site.**
 
