@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Diagnosi e risoluzione dei problemi"
 excerpt: "Scopri come risolvere i potenziali problemi legati a Backup Agent"
-updated: 2026-02-03
+updated: 2026-02-09
 ---
 
 <style>
@@ -104,7 +104,7 @@ Infine, riavvia il servizio veeamservice.
 
 /// details | Non riesco a lanciare un backup manuale.
 
-[Contatta il supporto OVHcloud](/links/support) che potrà investigare. Assicurati di fornirci i log e delle schermate.
+[Contatta il supporto OVHcloud](/links/support-contact) che potrà investigare. Assicurati di fornirci i log e delle schermate.
 
 ///
 
@@ -223,13 +223,7 @@ Per risolvere i problemi con Backup Agent, è spesso necessario consultare ed es
 >> Usa il seguente comando per esportare i log. L'archivio sarà salvato nella directory di lavoro corrente:
 >>
 >> ```bash
->> sudo veeamconfig log export
->> ```
->>
->> Per specificare una directory di destinazione, usa:
->>
->> ```bash
->> sudo veeamconfig log export --path /percorso/verso/destinazione
+>> sudo veeamconfig grabLogs
 >> ```
 >>
 >> 2\. Tramite il pannello di controllo

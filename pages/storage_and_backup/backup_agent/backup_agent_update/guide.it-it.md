@@ -24,7 +24,7 @@ In pratica, al momento dell'attivazione dell'aggiornamento il giorno stabilito, 
 
 Durante questo aggiornamento, le operazioni di backup e ripristino saranno non disponibili. Per questa ragione, applicheremo gli aggiornamenti durante la fascia oraria della giornata (fusi orari CET o EST in base alla vostra posizione) per evitare di interferire con i vostri [backup automatici](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
-Se avete richieste specifiche, non esitate a [contattare l'assistenza OVHcloud](/links/support).
+Se avete richieste specifiche, non esitate a [contattare l'assistenza OVHcloud](/links/support-contact).
 
 ## Per saperne di più
 

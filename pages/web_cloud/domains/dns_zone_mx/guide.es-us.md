@@ -15,7 +15,7 @@ El registro MX permite asociar un nombre de dominio al servidor de su plataforma
 - Tener acceso a la gestión de la zona DNS del nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - El nombre de dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
-- Tener una solución MX Plan (incluida en el plan de [alojamiento web](/links/web/hosting)), [Exchange](/links/web/emails), o un servicio de correo externo.
+- Tener una solución MX Plan (incluida en el plan de [alojamiento web](/links/web/hosting)), [Exchange](/links/web/emails-exchange), o un servicio de correo externo.
 
 > [!primary]
 >
@@ -49,7 +49,7 @@ Puede configurar varios registros MX para un mismo nombre de dominio. Es necesar
 
 ### Valores de la configuración MX de OVHcloud <a name="mxovhcloud"></a>
 
-A continuación ofrecemos la configuración MX de OVHcloud que deberá utilizar para nuestros MX Plan (incluido en un plan de [hosting de OVHcloud](/links/web/hosting)) y [Exchange](/links/web/emails). Nuestros servidores de correo disponen de antispam y antivirus integrado.
+A continuación ofrecemos la configuración MX de OVHcloud que deberá utilizar para nuestros MX Plan (incluido en un plan de [hosting de OVHcloud](/links/web/hosting)) y [Exchange](/links/web/emails-exchange). Nuestros servidores de correo disponen de antispam y antivirus integrado.
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|

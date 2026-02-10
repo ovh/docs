@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Ziel
@@ -93,6 +93,8 @@ Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}.
 >
 > Nachdem Sie auf die Schaltfläche `Bestätigen`{.action} geklickt haben, wird die Bestellung automatisch erstellt und der Betrag wird von Ihrer Standardzahlungsmethode abgebucht.
 >
+
+Eine detailliertere Übersicht über Ihre Ressourcen erhalten Sie in der [Horizon-Oberfläche](https://horizon.cloud.ovh.net/auth/login/). Klicken Sie nach der Anmeldung auf `Project`{.action} und dann auf `Overview`{.action}.
 
 ### Erhöhung der Quoten Ihres Public Cloud Projekts
 

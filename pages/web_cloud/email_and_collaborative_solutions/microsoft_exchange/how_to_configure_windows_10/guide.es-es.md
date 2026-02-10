@@ -12,7 +12,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Tener un servicio [Exchange](/links/web/emails).
+- Tener un servicio [Exchange](/links/web/emails-exchange).
 - Tener la aplicación Correo instalada en su dispositivo.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 

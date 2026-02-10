@@ -27,7 +27,7 @@ Conéctese utilizando los datos de acceso facilitados por correo electrónico. E
 
 > [!primary]
 >
-> Si ya no dispone de sus datos de acceso, puede generarlos de nuevo [contactando con el soporte](/links/support).
+> Si ya no dispone de sus datos de acceso, puede generarlos de nuevo [contactando con el soporte](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

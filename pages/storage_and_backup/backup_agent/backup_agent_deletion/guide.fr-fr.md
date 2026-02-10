@@ -38,7 +38,7 @@ Confirmez la suppression de l'agent dans la fenêtre qui s'affiche.
 
 > [!warning]
 >
-> Un vault ne peut pas être supprimé s'il contient des données. Si vous souhaitez supprimer un vault, vous devez [contacter le support](/links/support), qui effectuera des vérifications avec vous avant de lancer la suppression.
+> Un vault ne peut pas être supprimé s'il contient des données. Si vous souhaitez supprimer un vault, vous devez [contacter le support](/links/support-contact), qui effectuera des vérifications avec vous avant de lancer la suppression.
 
 Rendez-vous dans la section `Vaults`{.action} et cliquez sur le bouton de suppression pour le vault concerné.
 
@@ -50,7 +50,7 @@ Confirmez la suppression dans la fenêtre qui s'affiche..
 
 > [!warning]
 >
-> Pour le moment, un tenant ne peut pas être supprimé de manière autonome. Si vous souhaitez supprimer un tenant, vous devez [contacter le support](/links/support). Nous prendrons votre demande en compte.
+> Pour le moment, un tenant ne peut pas être supprimé de manière autonome. Si vous souhaitez supprimer un tenant, vous devez [contacter le support](/links/support-contact). Nous prendrons votre demande en compte.
 
 Sélectionnez votre tenant et cliquez sur le bouton de suppression.
 

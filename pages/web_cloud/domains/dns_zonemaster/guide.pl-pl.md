@@ -12,7 +12,7 @@ updated: 2026-02-10
 
 ## Wprowadzenie
 
-[Zonemaster](https://zonemaster.net/en/run-test) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/en/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) nazwy domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
+[Zonemaster](https://zonemaster.net/en/) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/en/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) nazwy domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
 
 > [!primary]
 >

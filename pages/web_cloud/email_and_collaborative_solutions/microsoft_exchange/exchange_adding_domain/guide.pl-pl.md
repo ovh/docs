@@ -21,7 +21,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Exchange](/links/web/emails) lub [Email Pro](/links/web/email-pro).
+- Posiadanie rozwiązania [Exchange](/links/web/emails-exchange) lub [Email Pro](/links/web/email-pro).
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
@@ -142,7 +142,7 @@ Wszystkie konta e-mail utworzone w ramach twojej usługi będą mogły wyświetl
 
 Po skonfigurowaniu wszystkich kont możesz zacząć ich używać. W tym celu OVHcloud oddaje do twojej dyspozycji **webmail**, dostępny [tutaj](/links/web/email). Abyś mógł korzystać z adresu w sposób optymalny, upewnij się, czy jest on kompatybilny z twoim programem pocztowym.
 
-Jeśli chcesz skonfigurować twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/links/web/emails) i [E-mail Pro](/links/web/email-pro).
+Jeśli chcesz skonfigurować twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/links/web/emails-exchange) i [E-mail Pro](/links/web/email-pro).
 
 Licencje Outlook możesz wykupić w [Panelu klienta OVHcloud](/links/manager), a licencje Office 365 — na stronie [Microsoft 365](/links/web/ms365). Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
