@@ -46,6 +46,8 @@ Analytics services provide a default configuration for remote backups based on t
 | SGP (Singapore, Singapore) | BHS (Beauharnois, Canada) |
 | UK (London, United Kingdom) | GRA (Gravelines, France) |
 | WAW (Warsaw, Poland) | GRA (Gravelines, France) |
+| RBX (Roubaix, France) | GRA (Gravelines, France) |
+| AP-SOUTH-MUM (Mumbai, Inde) | BHS (Beauharnois, Canada) |
 
 ### Custom settings
 
