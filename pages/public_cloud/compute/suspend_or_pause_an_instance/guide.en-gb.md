@@ -23,9 +23,11 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 > [!alert]
 >
-> This guide only applies to instances on **hourly billing**. If your instances are on **monthly billing**, standard billing will continue regardless of the status of the service.
-> 
-> Whether your instance is suspended (*shelved*), turned off (*suspend*) or paused, you will **still be billed for it**. If you do not wish to be billed, you **must delete** the instance.
+> **Scope:** This guide applies to all public cloud instances, regardless of their billing model (hourly or monthly).
+>
+> **Monthly billing:** An instance that remains shelved for the entire month will not be billed. As soon as the instance is unshelved, even briefly, the full month’s billing applies.
+>
+> **Note:** As long as the instance is not deleted, any operation will continue to incur instance charges.
 >
 
 The table below allows you to differentiate the options available on your instances. Continue reading this guide by clicking on the option of your choice. We put the terminology used in the **Horizon interface** in brackets.
@@ -38,21 +40,26 @@ The table below allows you to differentiate the options available on your instan
 
 ### Content overview
 
-- [Suspend (*shelve*) an instance](#shelve-instance)
-    - [From the OVHcloud Control Panel](#control-panel)
-    - [From the Horizon Interface](#horizon)
-    - [Using Openstack/Nova APIs](#openstack-nova)
-- [Reactivate (*unshelve*) an instance](#unshelve-instance)
-    - [From the OVHcloud Control Panel](#control-panel-unshelve)
-    - [From the Horizon Interface](#horizon-unshelve)
-    - [Using Openstack/Nova APIs](#openstack-nova-unshelve)
-- [Turn off (*suspend*) an instance](#stop-suspend-instance)
-    - [From the OVHcloud Control Panel](#stop-control-panel)
-    - [From the Horizon Interface](#stop-horizon)
-    - [Using Openstack/Nova APIs](#stop-openstack-nova)
-- [Pause an instance](#pause-instance)
-    - [From the Horizon Interface](#pause-horizon)
-    - [Using Openstack/Nova APIs](#pause-openstack-nova)
+- [Objective](#objective)
+- [Requirements](#requirements)
+- [Instructions](#instructions)
+  - [Content overview](#content-overview)
+  - [Suspend (*shelve*) an instance](#suspend-shelve-an-instance)
+    - [From the OVHcloud Control Panel](#from-the-ovhcloud-control-panel)
+    - [From the Horizon Interface](#from-the-horizon-interface)
+    - [Using Openstack/Nova APIs](#using-openstacknova-apis)
+  - [Reactivate (*unshelve*) an instance](#reactivate-unshelve-an-instance)
+    - [From the OVHcloud Control Panel](#from-the-ovhcloud-control-panel-1)
+    - [From the Horizon interface](#from-the-horizon-interface-1)
+    - [Using Openstack/Nova APIs](#using-openstacknova-apis-1)
+  - [Turn off (*suspend*) an instance](#turn-off-suspend-an-instance)
+    - [From the OVHcloud Control Panel](#from-the-ovhcloud-control-panel-2)
+    - [From the Horizon interface](#from-the-horizon-interface-2)
+    - [Using Openstack/Nova API](#using-openstacknova-api)
+  - [Pause an instance](#pause-an-instance)
+    - [From the Horizon Interface](#from-the-horizon-interface-3)
+    - [Using Openstack/Nova APIs](#using-openstacknova-apis-2)
+- [Go further](#go-further)
 
 <a name="shelve-instance"></a>
 

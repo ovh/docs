@@ -23,9 +23,11 @@ Dans le cadre de la configuration d’une infrastructure hautement disponible, v
 
 > [!alert]
 >
-> Ce guide ne s'applique qu'aux instances avec une **facturation horaire**. Si vos instances sont ont une **facturation mensuelle**, la facturation classique continuera tout de même, quelque soit le statut du service.
+> **Applicabilité :** ce guide concerne toutes les instances publiques cloud, quelle que soit leur modalité de facturation (horaire ou mensuelle).
 >
-> Ces manipulations entraînent toujours une **facturation de l’instance** tant que celle-ci n’est pas **supprimée**.
+> **Facturation mensuelle :** une instance shelved pendant l’intégralité du mois n’est pas facturée. Dès que l’instance est unshelved, même ponctuellement, la facturation du mois complet est appliquée.
+>
+> **Attention :** tant que l’instance n’est pas supprimée, toute manipulation entraîne la facturation continue de l’instance.
 >
 
 Le tableau ci-dessous vous permet de différencier les options disponibles sur vos instances. Poursuivez la lecture de ce guide en cliquant sur l'option de votre choix. Nous mettons entre parenthèses la terminologie utilisée dans l'interface de Horizon.
@@ -38,21 +40,26 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 
 ### Sommaire
 
-- [Suspendre (shelve) une instance](#shelve-instance)
-    - [Depuis l’espace client OVHcloud](#control-panel)
-    - [Depuis l’interface Horizon](#horizon)
-    - [Depuis les API Openstack/Nova](#openstack-nova)
-- [Réactiver (*unshelve*) une instance](#unshelve-instance)
-    - [Depuis l’espace client OVHcloud](#control-panel-unshelve)
-    - [Depuis l’interface Horizon](#horizon-unshelve)
-    - [Depuis les API Openstack/Nova](#openstack-nova-unshelve)
-- [Éteindre (suspend) une instance](#stop-suspend-instance)
-    - [Depuis l’espace client OVHcloud](#stop-control-panel)
-    - [Depuis l’interface Horizon](#stop-horizon)
-    - [Depuis les API Openstack/Nova](#stop-openstack-nova)
-- [Mettre en pause une instance](#pause-instance)
-    - [Depuis l’interface Horizon](#pause-horizon)
-    - [Depuis les API Openstack/Nova](#pause-openstack-nova)
+- [Objectif](#objectif)
+- [Prérequis](#prérequis)
+- [En pratique](#en-pratique)
+  - [Sommaire](#sommaire)
+  - [Suspendre (shelve) une instance](#suspendre-shelve-une-instance)
+    - [Depuis l’espace client OVHcloud](#depuis-lespace-client-ovhcloud)
+    - [Depuis l’interface Horizon](#depuis-linterface-horizon)
+    - [Depuis les API Openstack/Nova](#depuis-les-api-openstacknova)
+  - [Réactiver (*unshelve*) une instance](#réactiver-unshelve-une-instance)
+    - [Depuis l’espace client OVHcloud](#depuis-lespace-client-ovhcloud-1)
+    - [Depuis l’interface Horizon](#depuis-linterface-horizon-1)
+    - [Depuis les API Openstack/Nova](#depuis-les-api-openstacknova-1)
+  - [Éteindre (suspend) une instance](#éteindre-suspend-une-instance)
+    - [Depuis l’espace client OVHcloud](#depuis-lespace-client-ovhcloud-2)
+    - [Depuis l’interface Horizon](#depuis-linterface-horizon-2)
+    - [Depuis les API Openstack/Nova](#depuis-les-api-openstacknova-2)
+  - [Mettre en pause une instance](#mettre-en-pause-une-instance)
+    - [Depuis l’interface Horizon](#depuis-linterface-horizon-3)
+    - [Depuis les API Openstack/Nova](#depuis-les-api-openstacknova-3)
+- [Aller plus loin](#aller-plus-loin)
 
 <a name="shelve-instance"></a>
 
