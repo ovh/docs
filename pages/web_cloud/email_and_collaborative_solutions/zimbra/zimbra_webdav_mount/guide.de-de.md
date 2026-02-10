@@ -44,7 +44,7 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >>
 >> - Öffnen Sie `Dienste`{.action} über das Windows-Startmenü.
 >>
->> ![MX plan](images/windows-services01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-01.png){.thumbnail .w-600}
 >>
 > **Schritt 2**
 >>
@@ -53,7 +53,7 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >> 3. Ändern Sie den *Starttyp* auf **Automatisch**.
 >> 4. Klicken Sie auf `Starten`{.action}, um den Dienst zu starten, und dann auf `OK`{.action}, um die Änderungen zu bestätigen.
 >>
->> ![MX plan](images/windows-services02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-02.png){.thumbnail .w-600}
 
 #### 2. WebClient-Registrierungsschlüssel ändern
 
@@ -62,7 +62,7 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >>
 >> - Öffnen Sie den `Registrierungs-Editor`{.action} über das Windows-Startmenü.
 >>
->> ![MX plan](images/windows-regedit01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-01.png){.thumbnail .w-600}
 >>
 > **Schritt 2**
 >>
@@ -70,7 +70,7 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >> 2. Doppelklicken Sie auf den Registrierungsschlüssel `BasicAuthLevel`.
 >> 3. Ändern Sie den *Wert*: Standardmäßig auf `1` gesetzt, ersetzen Sie ihn durch den Wert `2` und klicken Sie dann auf `OK`{.action}, um die Änderungen zu bestätigen.
 >>
->> ![MX plan](images/windows-regedit02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-02.png){.thumbnail .w-600}
 
 #### 3. SSL-Zertifikat des Zimbra-Servers importieren
 
@@ -85,20 +85,20 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >> 2. Klicken Sie auf `Verbindung ist sicher`{.action}.
 >> 3. Klicken Sie auf `Weitere Informationen`{.action}.
 >>
->> ![MX plan](images/windows-ssl01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-01.png){.thumbnail .w-600}
 >>
 > **Schritt 2**
 >>
 >> 1. Klicken Sie auf `Zertifikat anzeigen`{.action}.
 >> 2. Öffnen Sie das Fenster, bleiben Sie auf dem Tab `zimbra1.mail.ovh.net` und klicken Sie auf `PEM (cert)`{.action}, um das SSL-Zertifikat herunterzuladen.
 >>
->> ![MX plan](images/windows-ssl02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-02.png){.thumbnail .w-600}
 >>
 > **Schritt 3**
 >>
 >> - Ändern Sie die Dateierweiterung von `.pem` in `.cer`.
 >>
->> ![MX plan](images/windows-ssl03.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-03.png){.thumbnail .w-600}
 >>
 > **Schritt 4**
 >>
@@ -107,7 +107,7 @@ Bevor Sie sich von dem Windows Explorer mit Ihrem WebDAV-Ordner verbinden könne
 >> 3. Aktivieren Sie `Alle Zertifikate in folgendem Speicher platzieren`, dann klicken Sie auf `Durchsuchen…`{.action}.
 >> 4. Wählen Sie den Ordner `Vertrauenswürdige Stammzertifizierungsstellen` aus, dann klicken Sie auf `OK`{.action}.
 >>
->> ![MX plan](images/windows-ssl04.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-04.png){.thumbnail .w-600}
 
 #### 4. Das Laufwerk mounten
 
@@ -118,11 +118,11 @@ In unserem Beispiel verwenden wir die Zimbra-E-Mail-Adresse `john.smith@mydomain
 3. Geben Sie im erscheinenden Fenster den Ordnerpfad ein. Laut unserem Beispiel ist der Pfad `\\zimbra1.mail.ovh.net@SSL\dav\john.smith@mydomain.ovh\Briefcase`. Klicken Sie auf `Fertig`{.action}.
 4. Ein Authentifizierungsfenster öffnet sich, geben Sie den `Benutzername` ein, der der vollständigen E-Mail-Adresse entspricht, und das zugehörige `Passwort`. Klicken Sie auf `OK`{.action}.
 
-![MX plan](images/windows-mount01.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-01.png){.thumbnail .w-600}
 
 Ihr Netzlaufwerk wird nun angezeigt. Sie können Ihre Dateien darin platzieren, bis zu einer Grenze von 100 MB pro Datei.
 
-![MX plan](images/windows-mount02.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-02.png){.thumbnail .w-600}
 
 ### Ein Ordner von macOS mounten
 
@@ -135,7 +135,7 @@ Unter macOS ist es nicht notwendig, einen Dienst zu aktivieren oder das SSL-Zert
 >> - Klicken Sie in der oberen Leiste auf das Menü `Gehe zu`{.action}.
 >> - Klicken Sie auf `Zum Server verbinden`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-01.png){.thumbnail .w-600}
 >>
 > **Schritt 2**
 >>
@@ -146,18 +146,18 @@ Unter macOS ist es nicht notwendig, einen Dienst zu aktivieren oder das SSL-Zert
 >> - Geben Sie im erscheinenden Fenster den Verbindungspfad ein, der für Ihre E-Mail-Adresse und den Ordner, den Sie verbinden möchten, geeignet ist. Laut unserem Beispiel ist der Pfad `https://zimbra1.mail.ovh.net/dav/john.smith%40mydomain.ovh/Briefcase`.
 >> - Klicken Sie auf `Verbinden`{.action}.
 >>
->> ![MX plan](images/macos-mount02.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-02.png){.thumbnail .w-600}
 >> 
 > **Schritt 3**
 >>
 >> 1. Ein Validierungsfenster für den Server `zimbra1.mail.ovh.net` erscheint, klicken Sie auf `Verbinden`{.action}.
 >> 2. Ein neues Fenster fragt Sie nach dem `Namen`, der Ihrer vollständigen E-Mail-Adresse entspricht, und dem zugehörigen `Passwort`. Aktivieren Sie `Dieses Passwort in meinem Schlüsselbund speichern`, wenn Sie es für eine zukünftige Verbindung zu einem anderen Ordner speichern möchten. Klicken Sie auf `Verbinden`{.action}, um das Laufwerk zu mounten.
 >>
->> ![MX plan](images/macos-mount03.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-03.png){.thumbnail .w-600}
 
 Sie haben nun Zugriff auf Ihren Zimbra Briefcase-Speicherbereich. Sie können darin jede Art von Datei platzieren, die nicht 100 MB überschreitet.
 
-![MX plan](images/macos-mount04.png){.thumbnail .w-600}
+![MX plan](images/macos-mount-04.png){.thumbnail .w-600}
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

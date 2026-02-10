@@ -44,7 +44,7 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >>
 >> - Apri `Servizi`{.action} dal menu Start di Windows.
 >>
->> ![MX plan](images/windows-services01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-01.png){.thumbnail .w-600}
 >>
 > **Passo 2**
 >>
@@ -53,7 +53,7 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >> 3. Cambia il *Tipo di avvio* in **Automatico**.
 >> 4. Clicca su `Avvia`{.action} per avviare il servizio, quindi clicca su `OK`{.action} per confermare le modifiche.
 >>
->> ![MX plan](images/windows-services02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-02.png){.thumbnail .w-600}
 
 #### 2. Modificare la chiave di registro WebClient
 
@@ -62,7 +62,7 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >>
 >> - Apri l'`Editor del Registro`{.action} dal menu Start di Windows.
 >>
->> ![MX plan](images/windows-regedit01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-01.png){.thumbnail .w-600}
 >>
 > **Passo 2**
 >>
@@ -70,7 +70,7 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >> 2. Fai doppio clic sulla chiave del registro `BasicAuthLevel`.
 >> 3. Cambia il *Valore dati*: di default impostato su `1`, sostituiscilo con il valore `2` e clicca su `OK`{.action} per confermare le modifiche.
 >>
->> ![MX plan](images/windows-regedit02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-02.png){.thumbnail .w-600}
 
 #### 3. Importare il certificato SSL del server Zimbra
 
@@ -85,20 +85,20 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >> 2. Clicca su `Connessione sicura`{.action}.
 >> 3. Clicca su `Ulteriori informazioni`{.action}.
 >>
->> ![MX plan](images/windows-ssl01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-01.png){.thumbnail .w-600}
 >>
 > **Passo 2**
 >>
 >> 1. Clicca su `Mostra certificato`{.action}.
 >> 2. Dalla finestra che appare, rimani sull'etichetta `zimbra1.mail.ovh.net` e clicca su `PEM (cert)`{.action} per scaricare il certificato SSL.
 >>
->> ![MX plan](images/windows-ssl02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-02.png){.thumbnail .w-600}
 >>
 > **Passo 3**
 >>
 >> - Modifica l'estensione del file da `.pem` a `.cer`.
 >>
->> ![MX plan](images/windows-ssl03.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-03.png){.thumbnail .w-600}
 >>
 > **Passo 4**
 >>
@@ -107,7 +107,7 @@ Prima di poterti connettere alla tua cartella WebDAV dal file manager di Windows
 >> 3. Seleziona `Inserisci tutti i certificati nel seguente archivio`, quindi clicca su `Sfoglia…`{.action}.
 >> 4. Seleziona la cartella `Autorità di certificazione radice attendibili`, quindi clicca su `OK`{.action}.
 >>
->> ![MX plan](images/windows-ssl04.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-04.png){.thumbnail .w-600}
 
 #### 4. Montare il volume
 
@@ -118,11 +118,11 @@ Nel nostro esempio, utilizziamo l'indirizzo e-mail del conto Zimbra `john.smith@
 3. Nella finestra che appare, inserisci il percorso della cartella. Secondo il nostro esempio, il percorso è `\\zimbra1.mail.ovh.net@SSL\dav\john.smith@mydomain.ovh\Briefcase`. Clicca su `Fine`{.action}.
 4. Una finestra di autenticazione si apre, inserisci il `Nome utente` che corrisponde all'indirizzo e-mail completo e la `Password` associata. Clicca su `OK`{.action}.
 
-![MX plan](images/windows-mount01.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-01.png){.thumbnail .w-600}
 
 Il tuo volume di rete appare ora. Puoi depositarvi i tuoi file, entro il limite di 100 MB per file.
 
-![MX plan](images/windows-mount02.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-02.png){.thumbnail .w-600}
 
 ### Montare una cartella da macOS
 
@@ -135,7 +135,7 @@ Su macOS, non è necessario abilitare un servizio o registrare il certificato SS
 >> - Nella barra superiore, clicca sul menu `Vai`{.action}.
 >> - Clicca su `Connetti al server`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-01.png){.thumbnail .w-600}
 >>
 > **Passo 2**
 >>
@@ -146,18 +146,18 @@ Su macOS, non è necessario abilitare un servizio o registrare il certificato SS
 >> - Dalla finestra che appare, inserisci il percorso di connessione adatto al tuo indirizzo e-mail e alla cartella che desideri collegare. Secondo il nostro esempio, il percorso è `https://zimbra1.mail.ovh.net/dav/john.smith%40mydomain.ovh/Briefcase`.
 >> - Clicca su `Connetti`{.action}.
 >>
->> ![MX plan](images/macos-mount02.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-02.png){.thumbnail .w-600}
 >> 
 > **Passo 3**
 >>
 >> 1. Una finestra di validazione del server `zimbra1.mail.ovh.net` appare, clicca su `Connetti`{.action}.
 >> 2. Una finestra ti chiederà di inserire il `Nome` che corrisponde al tuo indirizzo e-mail completo e la `Password` associata. Seleziona `Mantieni questa password nel mio portachiavi` se desideri conservarla per una futura connessione ad un'altra cartella. Clicca su `Connetti`{.action} per montare il volume.
 >>
->> ![MX plan](images/macos-mount03.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-03.png){.thumbnail .w-600}
 
 Hai ora accesso allo spazio di archiviazione della tua Malette Zimbra. Puoi depositarvi qualsiasi tipo di file non superiore a 100 MB.
 
-![MX plan](images/macos-mount04.png){.thumbnail .w-600}
+![MX plan](images/macos-mount-04.png){.thumbnail .w-600}
 
 ## Per saperne di più <a name="go-further"></a>
 
