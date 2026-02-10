@@ -1,12 +1,12 @@
 ---
-title: Vérification de la version du firmware BMC sur un serveur dédié
+title: 'Vérification de la version du firmware BMC sur un serveur dédié'
 excerpt: "Découvrez comment verifier la version du firmware BMC sur un serveur dédié."
 updated: 2026-02-11
 ---
 
 ## Objectif
 
-Afin d'améliorer la stabilité des serveurs dédiés et d'éviter les dysfonctionnements du système d'exploitation pouvant entraîner des pannes, la mise à jour du firmware BMC est la solution.
+Les mises à jour régulières du firmware jouent un rôle essentiel dans le maintien des performances, de la stabilité et de la sécurité de vos disques. Ces mises à jour comprennent souvent des corrections de bogues critiques, une compatibilité améliorée et des fonctionnalités de sécurité avancées indispensables pour préserver l'intégrité de vos données et maintenir une efficacité opérationnelle optimale.
 
 **Ce guide vous indique les étapes à suivre pour vérifier la version du firmware BMC sur un serveur dédié.**
 
@@ -14,11 +14,11 @@ Afin d'améliorer la stabilité des serveurs dédiés et d'éviter les dysfoncti
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
 - Droits administrateur (sudo).
-- Connexion Internet (uniquement si `ipmitool` n’est pas déjà installé).
+- Connexion Internet (uniquement si l'outil `ipmitool` n’est pas déjà installé).
 
 ### Sur un Serveur Linux
 
-Tout d'abord, vous devez installer le paquet `ipmitool`. Cette outil permet d’interroger le BMC via l’interface IPMI. Voici la documentation officielle : <https://linux.die.net/man/1/ipmitool>
+Tout d'abord, vous devez installer l'outil `ipmitool`. Cette outil permet d’interroger le BMC via l’interface IPMI. Voici la documentation officielle : <https://linux.die.net/man/1/ipmitool>
 
 Selon la distribution Linux, la commande peut varier :
 
@@ -48,11 +48,11 @@ Si la version du firmware est inférieure à 1.14, veuillez contacter notre supp
 
 ### Sur un Serveur Windows
 
-Pour l'instant, nous ne pouvons fournir la procédure que pour les serveurs utilisant les systèmes d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version. La commande fonctionne également en mode rescue.
+Actuellement, nous ne pouvons fournir la procédure que pour les serveurs fonctionnant sous le système d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version. La commande fonctionne également en mode rescue.
 
 ### Sur un Serveur en mode rescue
 
-Une fois votre serveur redémarré en [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode), installez le paquet `ipmitool`.
+Une fois votre serveur redémarré en [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode), installez l'outil `ipmitool`.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
@@ -63,6 +63,8 @@ Ensuite, vérifiez la version du firmware :
 ```sh
 impitool mc info
 ```
+
+Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
 
 ## Aller plus loin
 

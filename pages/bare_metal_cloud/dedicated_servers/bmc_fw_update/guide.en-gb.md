@@ -1,12 +1,12 @@
 ---
-title: Checking the BMC firmware version on a dedicated server
+title: Verifying the BMC firmware version on a dedicated server
 excerpt: "Discover how to check the BMC firmware version on a dedicated server."
 updated: 2026-02-11
 ---
 
 ## Objective
 
-To improve the stability of dedicated servers and avoid operating system malfunctions that could lead to failures, BMC firmware updates are the solution.
+Routine firmware updates play a pivotal role in upholding your drives performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
 
 **This guide outlines the steps to check the BMC firmware version on a dedicated server.**
 
@@ -14,7 +14,7 @@ To improve the stability of dedicated servers and avoid operating system malfunc
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account.
 - Administrator rights (sudo).
-- Internet connection (only if `ipmitool` is not already installed).
+- Internet connection (only if the `ipmitool` package is not already installed on the server).
 
 ### On a Linux Server
 
@@ -48,7 +48,7 @@ If the firmware version is lower than 1.14, please contact our support team by c
 
 ### On a Windows Server
 
-At the moment, we can only provide the procedure for servers using Linux operating systems. We recommend that you restart your Windows server in our [rescue mode](pages/bare_metal_cloud/dedicated_servers/rescue_mode) environment to check the version. The command also works in rescue mode.
+Currently, we are only able to provide the procedure for servers running Linux operating systems. We recommend that you restart your Windows server in our [rescue mode](pages/bare_metal_cloud/dedicated_servers/rescue_mode) environment to check the version. The command also works in rescue mode.
 
 ### On a Server in Rescue Mode
 
@@ -58,13 +58,15 @@ Once your server is restarted in [rescue mode](pages/bare_metal_cloud/dedicated_
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
 ```
 
-Then, check the firmware version:
+Next, check the firmware version:
 
 ```sh
 ipmitool mc info
 ```
 
-![bmc](images/ipmi_tool_rescu){.thumbnail} 
+![bmc](images/ipmi_tool_rescu){.thumbnail}
+
+If the firmware version is lower than 1.14, please contact our support team by creating a [support ticket via the OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to request a firmware update. However, if the version is higher than 1.14, no action is required.
 
 ## Go further
 
