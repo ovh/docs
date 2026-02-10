@@ -44,7 +44,7 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >>
 >> - Open `Services`{.action} from the Windows Start menu.
 >>
->> ![MX plan](images/windows-services01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-01.png){.thumbnail .w-600}
 >>
 > **Step 2**
 >>
@@ -53,7 +53,7 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >> 3. Switch the *Startup type* to **Automatic**.
 >> 4. Click on `Start`{.action} to start the service, then click on `OK`{.action} to confirm the changes.
 >>
->> ![MX plan](images/windows-services02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-services-02.png){.thumbnail .w-600}
 
 #### 2. Modify the WebClient registry key
 
@@ -62,7 +62,7 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >>
 >> - Open the `Registry Editor`{.action} from the Windows Start menu.
 >>
->> ![MX plan](images/windows-regedit01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-01.png){.thumbnail .w-600}
 >>
 > **Step 2**
 >>
@@ -70,7 +70,7 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >> 2. Double-click on the registry key `BasicAuthLevel`.
 >> 3. Change the *Value data*: by default set to `1`, replace it with the value `2` and then click on `OK`{.action} to confirm the changes.
 >>
->> ![MX plan](images/windows-regedit02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-regedit-02.png){.thumbnail .w-600}
 
 #### 3. Import the Zimbra server SSL certificate
 
@@ -85,20 +85,20 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >> 2. Click on `Secure Connection`{.action}.
 >> 3. Click on `More information`{.action}.
 >>
->> ![MX plan](images/windows-ssl01.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-01.png){.thumbnail .w-600}
 >>
 > **Step 2**
 >>
 >> 1. Click on `View Certificate`{.action}.
 >> 2. From the window that appears, stay on the `zimbra1.mail.ovh.net` tab and click on `PEM (cert)`{.action} to download the SSL certificate.
 >>
->> ![MX plan](images/windows-ssl02.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-02.png){.thumbnail .w-600}
 >>
 > **Step 3**
 >>
 >> - Change the file extension from `.pem` to `.cer`.
 >>
->> ![MX plan](images/windows-ssl03.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-03.png){.thumbnail .w-600}
 >>
 > **Step 4**
 >>
@@ -107,7 +107,7 @@ Before you can connect to your WebDAV folder from the Windows Explorer, you need
 >> 3. Check `Place all certificates in the following store`, then click on `Browse…`{.action}.
 >> 4. Select the `Trusted Root Certification Authorities` folder, then click on `OK`{.action}.
 >>
->> ![MX plan](images/windows-ssl04.png){.thumbnail .w-600}
+>> ![MX plan](images/windows-ssl-04.png){.thumbnail .w-600}
 
 #### 4. Mount the volume
 
@@ -118,11 +118,11 @@ In our example, we are using the Zimbra account email address `john.smith@mydoma
 3. In the window that appears, enter the folder path. According to our example, the path is `\\zimbra1.mail.ovh.net@SSL\dav\john.smith@mydomain.ovh\Briefcase`. Click on `Finish`{.action}.
 4. An authentication window opens, enter the `Username` corresponding to the full email address and the `Password` associated with it. Click on `OK`{.action}.
 
-![MX plan](images/windows-mount01.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-01.png){.thumbnail .w-600}
 
 Your network volume is now displayed. You can place your files in it, up to a limit of 100 MB per file.
 
-![MX plan](images/windows-mount02.png){.thumbnail .w-600}
+![MX plan](images/windows-mount-02.png){.thumbnail .w-600}
 
 ### Mount a folder from macOS
 
@@ -135,7 +135,7 @@ On macOS, it is not necessary to enable a service or register the SSL certificat
 >> - In the top bar, click on the `Go`{.action} menu.
 >> - Click on `Connect to Server`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-01.png){.thumbnail .w-600}
 >>
 > **Step 2**
 >>
@@ -146,18 +146,18 @@ On macOS, it is not necessary to enable a service or register the SSL certificat
 >> - From the window that appears, enter the connection path suitable for your email address and the folder you want to connect. According to our example, the path is `https://zimbra1.mail.ovh.net/dav/john.smith%40mydomain.ovh/Briefcase`.
 >> - Click on `Connect`{.action}.
 >>
->> ![MX plan](images/macos-mount02.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-02.png){.thumbnail .w-600}
 >> 
 > **Step 3**
 >>
 >> 1. A server validation window for `zimbra1.mail.ovh.net` appears, click on `Connect`{.action}.
 >> 2. A new window will ask you to enter the `Name` corresponding to your full email address and the `Password` associated with it. Check `Remember this password in my keychain` if you want to keep it for a future connection to another folder. Click on `Connect`{.action} to mount the volume.
 >>
->> ![MX plan](images/macos-mount03.png){.thumbnail .w-600}
+>> ![MX plan](images/macos-mount-03.png){.thumbnail .w-600}
 
 You now have access to your Zimbra Briefcase storage space. You can place any type of file in it that does not exceed 100 MB.
 
-![MX plan](images/macos-mount04.png){.thumbnail .w-600}
+![MX plan](images/macos-mount-04.png){.thumbnail .w-600}
 
 ## Go further <a name="go-further"></a>
 
