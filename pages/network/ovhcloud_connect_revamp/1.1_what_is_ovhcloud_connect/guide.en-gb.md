@@ -20,11 +20,11 @@ OVHcloud Connect links your network to OVHcloud through a **Point of Presence (P
 | **OVHcloud Connect Direct** | You manage a physical cable (cross-connect) between your equipment and OVHcloud's equipment in a common Point of Presence. | Organisations already present in an OVHcloud PoP data centre. |
 | **OVHcloud Connect Provider** | A third-party network provider (e.g. Megaport, Equinix Fabric, Console Connect) handles the physical connection on your behalf. | Organisations that are not co-located with OVHcloud or prefer a managed connectivity service. |
 
-### Layer 2 service - OVHcloud Connect Direct only
+### Layer 2 (L2) service - OVHcloud Connect Direct only
 
 OVHcloud Connect L2 links your infrastructure to OVHcloud services at the data link layer (Layer 2). It allows you to extend your private network to OVHcloud datacenters, creating a seamless bridge between your local network and cloud resources, no routing involved. As opposed to Layer 3 service, it is transparent to VLANs (802.1q).
 
-### Layer 3 service
+### Layer 3 (L3) service
 
 OVHcloud Connect L3 links your infrastructure to OVHcloud services at the network layer (Layer 3). It allows routing and requires routes exchange.
 
