@@ -23,6 +23,11 @@ As part of your professional activities or out of interest on the subject, you m
 
 ## Instructions
 
+> [!primary]
+>
+> Carbon footprint data is not yet available for 3AZ architectures and Local Zones.
+>
+
 Please note the following information:
 
 - You cannot generate a carbon footprint report for the current month.
@@ -30,12 +35,20 @@ Please note the following information:
 - No carbon footprint report can be generated for more than the last 24 months.
 - No carbon footprint can be generated before the date of implementation of the feature for each OVHcloud service (see table below).
 
-| Service                | Date of commissioning of the carbon footprint calculator |
-|------------------------|----------------------------------------------------------|
-| Dedicated Server       | 2023/05/01 |
-| Eco Dedicated Server   | 2023/05/01 |
-| VMware on OVHcloud     | 2023/08/01 |
-| Public Cloud Instances | 2025/01/01 |
+| Service                    | Statut      |
+| -------------------------- | ----------- |
+| Serveur Dédié              | Available   |
+| Serveur Dédié Eco          | Available   |
+| VMware on OVHcloud         | Available   |
+| Instances Public Cloud     | Available   |
+| Block Storage              | Available   |
+| Object Storage S3          | Coming soon |
+| File Storage               | Coming soon |
+| Network                    | Coming soon |
+| Managed Kubernetes Service | Coming Soon |
+| Public Cloud Databases     | Coming Soon |
+| AI                         | Coming Soon |
+| Data Platform              | Coming Soon |
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 

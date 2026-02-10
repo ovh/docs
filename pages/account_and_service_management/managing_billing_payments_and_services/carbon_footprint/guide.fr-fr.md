@@ -23,6 +23,11 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 
 ## En pratique
 
+> [!primary]
+>
+> Les données d’empreinte carbone ne sont pas encore disponibles pour les architectures 3AZ et les Local Zones.
+>
+
 Plusieurs points sont à prendre en compte :
 
 - Vous ne pouvez pas générer de bilan pour le mois en cours.
@@ -30,12 +35,20 @@ Plusieurs points sont à prendre en compte :
 - Aucun bilan ne peut être généré au delà des 24 derniers mois.
 - Aucun bilan ne peut être généré pour la période précédant la date de mise en place de la fonctionnalité pour chaque service OVHcloud (voir le tableau ci-dessous).
 
-| Service                | Date de mise en service de la calculatrice d'empreinte carbone |
-|------------------------|----------------------------------------------------------------|
-| Serveur Dédié          | 2023/05/01 |
-| Serveur Dédié Eco      | 2023/05/01 |
-| VMware on OVHcloud     | 2023/08/01 |
-| Instances Public Cloud | 2025/01/01 |
+| Service                    | Statut      |
+| -------------------------- | ----------- |
+| Serveur Dédié              | Disponible  |
+| Serveur Dédié Eco          | Disponible  |
+| VMware on OVHcloud         | Disponible  |
+| Instances Public Cloud     | Disponible  |
+| Block Storage              | Disponible  |
+| Object Storage S3          | À venir     |
+| File Storage               | À venir     |
+| Network                    | À venir     |
+| Managed Kubernetes Service | À venir     |
+| Public Cloud Databases     | À venir     |
+| AI                         | À venir     |
+| Data Platform              | À venir     |
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
