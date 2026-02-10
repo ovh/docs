@@ -65,6 +65,61 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 ![vrack](images/addIPblock.png){.thumbnail}
 
+### Managing public IP bandwidth on vRack
+
+By default, Additional IP blocks routed via a vRack benefit from a standard public bandwidth of 100 Mbps. As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services. 
+
+While the complimentary 100 Mbps option remains the default standard, OVHcloud provides paid bandwidth options for users requiring higher throughput. It is important to note that bandwidth options are applied **per-vRack and per-Region**. Since Additional IP services are regional, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular Region.
+
+/// details | During the Additional IP ordering process
+
+### Choosing bandwidth during an Additional IP order
+
+You can define your bandwidth requirements at the time of purchasing a new IP block.
+
+To order a new Additional IPv6 block:
+- Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager).
+- Go to the `Bare Metal Cloud`{.action} section (or `Public Cloud`{.action}).
+- Click on `Network`{.action} then `IP`{.action} in the left-hand sidebar.
+- Click on the `Order`{.action} button and select `Additional IP`{.action}.
+- In the configuration drop-down menus, select your **Service** (the vRack) and the desired **Region**.
+
+Once the vRack and Region are selected, the bandwidth options become available:
+1. Click the `Modify bandwidth`{.action} button.
+2. A new window will open on the right-hand side of your screen, listing all the available bandwidth options.
+3. Select the desired bandwidth option, then click `Proceed to order`{.action} to apply the selected bandwidth to your vRack.
+
+![Ordering bandwidth selection](images/placeholder){.thumbnail}
+
+///
+
+/// details | From the vRack management page
+
+### Choosing bandwidth via the vRack management page
+
+For IP blocks already attached to a vRack, bandwidth can be managed directly through the service configuration page.
+
+To access the management interface:
+- Open `Network`{.action} in the left-hand sidebar of your Control Panel.
+- Open `vRack private network`{.action}.
+- Select the vRack you wish to configure.
+
+The management page is organized into two tabs:
+* **All attached services**: Lists the products (Servers, Cloud Projects, etc.) currently linked to the vRack.
+* **Public IP routing**: Manages the public routing and performance of your Additional IPs.
+
+To modify the bandwidth:
+1. Navigate to the `Public IP routing`{.action} tab.
+2. The interface displays individual management windows for each Region (e.g., `eu-west-par`) associated with the vRack, listing all IP addresses attached to that specific region.
+3. Within the window for the relevant region, click the `Modify bandwidth`{.action} button.
+4. Select the desired bandwidth option in the panel that appears on the right-hand side, then click `Proceed to order`{.action} to apply the selected bandwidth to your vRack.
+
+![vRack bandwidth management](images/placeholder){.thumbnail}
+
+The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
+
+///
+
 ### Configure a usable IP address
 
 For [vRack](/links/network/vrack) purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
