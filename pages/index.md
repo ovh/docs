@@ -2353,7 +2353,6 @@
             + [Getting started](storage-backup-and-disaster-recovery-solution-backup-agent-getting-started)
                 + [Backup Agent - How to configure your first backup](storage_and_backup/backup_agent/backup_agent_first_configuration)
                 + [Backup Agent - Managing your backups and restores](storage_and_backup/backup_agent/backup_agent_backup_restore)
-                + [Backup Agent - First steps with VSPC](storage_and_backup/backup_agent/backup_agent_vspc_presentation)
             + [Troubleshooting](storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting)
                 + [Backup Agent - Troubleshooting Guide](storage_and_backup/backup_agent/backup_agent_troubleshooting)
                 + [Backup Agent - Bare Metal recovery with Veeam Backup Agent](storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_agent_bare_metal_recovery)

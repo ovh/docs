@@ -20,7 +20,6 @@ Das Backup Agent Produkt basiert auf zwei Produkten des Softwareherstellers Veea
 Der Veeam Agent ist eine von Veeam entwickelte Software, die auf Ihrem Betriebssystem unter Linux und Windows installiert wird und Ihnen ermöglicht, Ihr System zu sichern.
 
 Die VSPC ermöglicht es Ihnen, die Backup-Richtlinien an die darauf gespeicherten Agenten weiterzugeben und jedem Agenten die Speicher- und Anmeldeinformationen bei Start des Backups zu geben.  
-Erfahren Sie, wie Sie die VSPC-Oberfläche durchsuchen können in [dieser Anleitung](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation).
 
 Wenn Sie das Produkt bestellen, erhalten Sie eine E-Mail, die bestätigt, dass der Dienst geliefert wurde, sowie die Zugangsdaten zu Ihrem Tenant in der VSPC. Dieser Account ist schreibgeschützt und gewährt Ihnen Zugriff auf Ansichten Ihrer Backups und Agenten.
 

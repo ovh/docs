@@ -20,7 +20,6 @@ Produkt Backup Agent opiera się na dwóch produktach wydawcy oprogramowania Vee
 Veeam Agent to oprogramowanie stworzone przez Veeam, które instaluje się na Twoim systemie operacyjnym na Linuxie i Windowsie i umożliwia wykonanie kopii zapasowej Twojego systemu.
 
 VSPC umożliwia przesyłanie zasad kopii zapasowych do agentów przechowywanych w nim oraz umożliwia przekazanie każdemu agentowi informacji o przechowywaniu i danych uwierzytelniania podczas uruchamiania kopii zapasowej.
-Dowiedz się, jak przeglądać interfejs VSPC, korzystając z [tego przewodnika](/pages/storage_and_backup/backup_agent/backup_agent_vspc_presentation).
 
 Po zamówieniu produktu otrzymasz e-mail potwierdzający dostarczenie usługi oraz dane logowania do Twojego konta w VSPC. To konto jest tylko do odczytu i umożliwia dostęp do widoków Twoich kopii zapasowych i agentów.
 
