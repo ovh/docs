@@ -128,6 +128,7 @@ Ihr Netzlaufwerk wird nun angezeigt. Sie können Ihre Dateien darin platzieren, 
 
 Unter macOS ist es nicht notwendig, einen Dienst zu aktivieren oder das SSL-Zertifikat zu registrieren, Sie müssen lediglich das Laufwerk direkt über den **Finder** mounten.
 
+> [!tabs]
 > **Schritt 1**
 >>
 >> - Öffnen Sie den **Finder**.

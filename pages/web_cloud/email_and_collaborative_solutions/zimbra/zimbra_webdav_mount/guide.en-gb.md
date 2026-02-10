@@ -128,13 +128,14 @@ Your network volume is now displayed. You can place your files in it, up to a li
 
 On macOS, it is not necessary to enable a service or register the SSL certificate, you just need to mount the volume directly from the **Finder**.
 
+> [!tabs]
 > **Step 1**
 >>
 >> - Open the **Finder**.
 >> - In the top bar, click on the `Go`{.action} menu.
 >> - Click on `Connect to Server`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}{.action}
+>> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
 >>
 > **Step 2**
 >>

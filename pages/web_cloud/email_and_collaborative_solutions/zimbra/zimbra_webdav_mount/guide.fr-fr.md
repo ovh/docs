@@ -128,13 +128,14 @@ Votre volume réseau s'affiche désormais. Vous pouvez y déposer vos fichiers, 
 
 Sur macOS, il n'est pas nécessaire d'activer un service ou d'enregistrer le certificat SSL, il suffit de monter le volume directement depuis le **Finder**.
 
+> [!tabs]
 > **Étape 1**
 >>
 >> - Ouvrez le **Finder**.
 >> - Dans la barre supérieure, cliquez sur le menu `Aller`{.action}.
 >> - Cliquez sur `Se connecter au serveur`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}{.action}
+>> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
 >>
 > **Étape 2**
 >>
