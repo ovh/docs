@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux bases de données"
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
-updated: 2024-09-26
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -40,7 +40,7 @@ Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-
 > - Pour retrouver le `Datacentre` de votre hébergement web, choisissez `Hébergements`{.action}, puis l'hébergement web concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs et le **filer** (serveur de fichier) sur lequel se trouve votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Pour retrouver le nom de votre serveur **Web Cloud Databases**, cliquez sur `Web Cloud Databases`{.action} puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
-> - Pour retrouver le serveur sur lequel se trouve votre base de données incluse avec votre hébergement web, choisissez `Hébergements`{.action}, puis l'hébergement web concerné. Sélectionnez l'onglet
+> - Pour retrouver le serveur sur lequel se trouve votre base de données incluse ou commandée en complément via votre [hébergement web](/links/web/hosting), consultez [ce guide](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
