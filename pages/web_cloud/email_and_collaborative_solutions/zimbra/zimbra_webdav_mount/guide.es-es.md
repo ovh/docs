@@ -128,13 +128,14 @@ Su volumen de red ahora se muestra. Puede depositar sus archivos en él, dentro 
 
 En macOS, no es necesario activar un servicio ni registrar el certificado SSL, basta con montar el volumen directamente desde el **Finder**.
 
+> [!tabs]
 > **Paso 1**
 >>
 >> - Abra el **Finder**.
 >> - En la barra superior, haga clic en el menú `Ir a`{.action}.
 >> - Haga clic en `Conectar al servidor`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}{.action}
+>> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
 >>
 > **Paso 2**
 >>
@@ -146,7 +147,7 @@ En macOS, no es necesario activar un servicio ni registrar el certificado SSL, b
 >> - Haga clic en `Conectar`{.action}.
 >>
 >> ![MX plan](images/macos-mount02.png){.thumbnail .w-600}
->> 
+>>
 > **Paso 3**
 >>
 >> 1. Se muestra una ventana de validación del servidor `zimbra1.mail.ovh.net`, haga clic en `Conectar`{.action}.

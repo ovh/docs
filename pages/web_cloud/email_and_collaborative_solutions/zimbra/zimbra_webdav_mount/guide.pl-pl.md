@@ -128,6 +128,7 @@ Twój wolumin sieciowy jest teraz wyświetlany. Możesz w niego umieszczać swoj
 
 Na macOS nie jest konieczne włączenie usługi ani rejestracja certyfikatu SSL, wystarczy zamontować wolumin bezpośrednio z **Finder**.
 
+> [!tabs]
 > **Krok 1**
 >>
 >> - Otwórz **Finder**.
