@@ -106,7 +106,7 @@ The contact change will take effect a few minutes after both contacts have valid
 
 ### Example: Providing access for a website's technical administration to your webmaster
 
-You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](/links/web/hosting-ecommerce-website). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >
@@ -123,9 +123,9 @@ You cannot change a service’s admin or billing contacts when logged in as "[te
 
 When you ordered an OVHcloud service, you defined a holder for it. If the domain name holder has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain name to a third-party holder, or obtain domain administration, via the following procedures:
 
-[Change the holder of a service](https://www.ovh.com/cgi-bin/en/procedure/procedureChangeOwner.cgi)
+[Change the holder of a service](/links/transversal/procedure-change-owner)
 
-[Change your domain contacts](https://www.ovh.de/cgi-bin/en/procedure/procedureChangeContacts.cgi)
+[Change your domain contacts](/links/transversal/procedure-contact-change)
 
 Each procedure is carried out by email and an identity check will be required. Detailed instructions will be provided throughout each procedure.
 

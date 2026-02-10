@@ -16,7 +16,7 @@ Refer to our guides “[Everything you need to know about DNS servers](/pages/we
 
 ## Requirements
 
-- Be the holder of a [domain name](/links/web/domains) registered with OVHcloud
+- You are the holder of a [domain name](/links/web/domains) registered with OVHcloud
 - The [appropriate permissions to manage](/pages/account_and_service_management/account_information/managing_contacts) the domain name in your [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud Control Panel](/links/manager)
 

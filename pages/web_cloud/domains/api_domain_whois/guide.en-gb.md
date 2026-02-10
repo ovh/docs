@@ -106,7 +106,7 @@ The following API is used to retrieve the disclosure configuration applied to a 
 
 <!-- prettier-ignore -->
 > [!tabs]
-> Exemple de réponse
+> Response example
 >> ```js
 >> [
 >>   {
@@ -154,7 +154,7 @@ The following API allows you to update the disclosure configuration applied to a
 
 <!-- prettier-ignore -->
 > [!tabs]
-> Exemple de requête
+> Request example
 >> ```js
 >> [
 >>   {
@@ -178,7 +178,7 @@ The following API allows you to update the disclosure configuration applied to a
 >>   }
 >> ]
 >> ```
-> Exemple de réponse
+> Response example
 >> ```js
 >> [
 >>   {

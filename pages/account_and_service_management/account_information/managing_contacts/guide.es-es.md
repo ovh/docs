@@ -107,7 +107,7 @@ El cambio de contacto será efectivo unos minutos después de que los dos contac
 
 ### Ejemplo: dar la gestión técnica de su sitio web a su webmaster
 
-Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
+Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](/links/web/hosting-ecommerce-website). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
 
 > [!warning]
 >
@@ -126,9 +126,9 @@ En cualquier momento, como [contacto administrador](#administrateur), podrá obt
 
 Al contratar un servicio de OVHcloud, ha establecido un titular para este. Si el titular no tiene acceso a la(s) cuenta(s) de OVHcloud asociadas al servicio que quiere recuperar, podrá ceder la titularidad de un nombre de dominio a un tercero o recuperar la administración del nombre de dominio mediante los siguientes procedimientos:
 
-[Cambiar el titular de un servicio](https://www.ovh.com/cgi-bin/es/procedure/procedureChangeOwner.cgi)
+[Cambiar el titular de un servicio](/links/transversal/procedure-change-owner)
 
-[Cambiar los contactos administrativo, de facturación y técnico de un nombre de dominio](https://www.ovh.com/fr/cgi-bin/es/procedure/procedureChangeContacts.cgi)
+[Cambiar los contactos administrativo, de facturación y técnico de un nombre de dominio](/links/transversal/procedure-contact-change)
 
 El seguimiento de cada procedimiento se efectúa por e-mail y será necesaria una verificación de identidad. A lo largo de cada procedimiento recibirá instrucciones detalladas.
 

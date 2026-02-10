@@ -105,7 +105,7 @@ Die Kontaktänderung wird einige Minuten nach Bestätigung der Anfrage durch die
 
 ### Beispiel: Ihrem Webmaster die technische Verwaltung Ihrer Website erlauben
 
-Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](https://www.ovhcloud.com/de/web-hosting/ecommerce-website/). Sie haben einen unserer [Partner kontaktiert](/links/partner) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
+Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop zu hosten](/links/web/hosting-ecommerce-website). Sie haben einen unserer [Partner kontaktiert](/links/partner) und Sie werden um Zugriffsrechte auf Ihre OVHcloud Dienste gebeten, um Ihre Website erstellen zu können.
 
 > [!warning]
 >
@@ -124,9 +124,9 @@ Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste
 
 Bei der Bestellung eines OVHcloud-Dienstes haben Sie einen Inhaber dafür festgelegt. Der Inhaber hat die Berechtigung, die Inhaberrechte einer Domain an Dritte zu übertragen oder die Verwaltung der Domain einzufordern, wenn der Zugang zu dem OVHcloud Kunden-Account, der mit dem Dienst verbunden ist, nicht besteht (es kann sich um mehrere Accounts handeln).
 
-[Vorgang zur Änderung des Inhabers einer Dienstleistung](https://www.ovh.com/cgi-bin/de/procedure/procedureChangeOwner.cgi)
+[Vorgang zur Änderung des Inhabers einer Dienstleistung](/links/transversal/procedure-change-owner)
 
-[Die Kontakte Ihrer Domain ändern](https://www.ovh.com/fr/cgi-bin/de/procedure/procedureChangeContacts.cgi)
+[Die Kontakte Ihrer Domain ändern](/links/transversal/procedure-contact-change)
 
 Die Weiterverfolgung jedes Vorgangs erfolgt per E-Mail, und es ist eine Identitätsüberprüfung erforderlich. Die detaillierten Anweisungen werden Ihnen während jedes Vorgangs mitgeteilt.
 

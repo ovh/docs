@@ -107,7 +107,7 @@ Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez ob
 
 ### Przykład: zarządzanie stroną www na webmasterze
 
-Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
+Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](/links/web/hosting-ecommerce-website). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
 
 > [!warning]
 >
@@ -126,9 +126,9 @@ Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momen
 
 Podczas zamawiania usługi OVHcloud zdefiniowałeś dla niej abonenta. Abonent może, jeśli nie ma dostępu do kont OVHcloud powiązanych z usługą, którą chce odzyskać, przekazać abonenta nazwy domeny innej osobie lub odzyskać administrację nazwy domeny, stosując następujące procedury:
 
-[Zmiana abonenta usługi](https://www.ovh.com/cgi-bin/pl/procedure/procedureChangeOwner.cgi)
+[Zmiana abonenta usługi](/links/transversal/procedure-change-owner)
 
-[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa nazwy domeny](https://www.ovh.com/fr/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa nazwy domeny](/links/transversal/procedure-contact-change)
 
 Każda procedura jest monitorowana za pomocą wiadomości e-mail i konieczna będzie weryfikacja tożsamości. Szczegółowe instrukcje będą udzielane przez cały czas trwania procedury.
 

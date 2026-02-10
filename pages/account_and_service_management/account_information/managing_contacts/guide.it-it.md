@@ -108,7 +108,7 @@ La modifica del contatto diventerà effettiva entro pochi minuti dalla conferma 
 
 ### Esempio: assegna la gestione tecnica del tuo sito al tuo webmaster
 
-Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](https://www.ovhcloud.com/it/web-hosting/ecommerce-website/). Hai contattato uno dei nostri [partner](/links/partner) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
+Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [negozio online](/links/web/hosting-ecommerce-website). Hai contattato uno dei nostri [partner](/links/partner) e ti chiede i diritti di accesso ai tuoi servizi OVHcloud per iniziare a creare il tuo sito.
 
 > [!warning]
 >
@@ -127,9 +127,9 @@ In quanto [contatto amministratore](#administrateur), potrai recuperare in quals
 
 Al momento dell'ordine di un servizio OVHcloud, hai definito un intestatario per questo servizio. Se l'intestatario non ha accesso all'account OVHcloud associati al servizio che desidera recuperare, ha la possibilità di trasferire l'intestatario di un nome di dominio a un terzo o di recuperare l'amministrazione del nome di dominio, seguendo le seguenti procedure:
 
-[Modifica l'intestatario di un servizio](https://www.ovh.com/cgi-bin/it/procedure/procedureChangeOwner.cgi)
+[Modifica l'intestatario di un servizio](/links/transversal/procedure-change-owner)
 
-[Modificare il contatto amministratore, tecnico di fatturazione del tuo servizio](https://www.ovh.com/fr/cgi-bin/it/procedure/procedureChangeContacts.cgi)
+[Modificare il contatto amministratore, tecnico di fatturazione del tuo servizio](/links/transversal/procedure-contact-change)
 
 Il controllo di ogni procedura viene effettuato via email e sarà necessario verificare l'identità. Le istruzioni dettagliate ti verranno fornite durante ogni procedura.
 

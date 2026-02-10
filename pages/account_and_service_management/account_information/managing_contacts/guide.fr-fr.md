@@ -112,7 +112,7 @@ Le changement de contact sera effectif quelques minutes après que les deux cont
 
 ### Exemple de cas concret : confier la gestion technique de votre site à votre webmaster <a name="use-case"></a>
 
-Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](https://www.ovhcloud.com/fr/web-hosting/ecommerce-website/).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
+Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre propre [boutique en ligne](/links/web/hosting-ecommerce-website).<br>Vous avez fait appel à l'un de nos [partenaires](/links/partner) et celui-ci vous demande les droits d'accès à vos services OVHcloud, afin de commencer à créer votre site.
 
 > [!warning]
 >
@@ -134,9 +134,9 @@ En tant que [contact administrateur](#administrateur), vous pourrez enfin à tou
 
 Lors de la commande d'un service OVHcloud, vous avez défini un titulaire pour celui-ci. Le titulaire a la possibilité, s'il n'a aucun accès au(x) compte(s) OVHcloud associés au service qu'il souhaite récupérer, de céder la titularité d'un nom de domaine à un tiers ou de récupérer l'administration du nom de domaine, via les procédures suivantes :
 
-[Changer le titulaire d'un service](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi)
+[Changer le titulaire d'un service](/links/transversal/procedure-change-owner)
 
-[Modifier les contacts de votre nom de domaine](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
+[Modifier les contacts de votre nom de domaine](/links/transversal/procedure-contact-change)
 
 Le suivi de chaque procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous seront fournies tout au long de chaque procédure.
 
