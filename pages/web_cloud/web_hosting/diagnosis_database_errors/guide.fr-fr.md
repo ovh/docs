@@ -31,16 +31,16 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 #### Vérifier les incidents en cours
 
-Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement, votre serveur Web Cloud Databases ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
+Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement web, votre serveur Web Cloud Databases ou votre base de données n'est pas concerné par un incident sur l'infrastructure OVHcloud.
 
 > [!primary]
 >
 > Pour retrouver ces informations, connectez-vous à votre [espace client OVHcloud](/links/manager), dans la partie `Web Cloud`{.action} :
 >
-> - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action}, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
-> - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
+> - Pour retrouver le `Datacentre` de votre hébergement web, choisissez `Hébergements`{.action}, puis l'hébergement web concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
+> - Pour retrouver le **cluster** de serveurs et le **filer** (serveur de fichier) sur lequel se trouve votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Pour retrouver le nom de votre serveur **Web Cloud Databases**, cliquez sur `Web Cloud Databases`{.action} puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
->
+> - Pour retrouver le serveur sur lequel se trouve votre base de données incluse avec votre hébergement web, choisissez `Hébergements`{.action}, puis l'hébergement web concerné. Sélectionnez l'onglet
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
