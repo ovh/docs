@@ -19,7 +19,7 @@ As part of your professional activities or out of interest on the subject, you m
 - [Dedicated Server](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Eco Dedicated Server](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Public Cloud Instances (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Instructions
 
@@ -46,10 +46,10 @@ Please note the following information:
 |                      | File Storage                       | Coming soon |
 |                      | Network                            | Coming soon |
 |                      | Managed Kubernetes Service         | Coming soon |
-|                      | Public Cloud Databases / Analytics | Coming soon |
-|                      | Quantum                            | Coming soon |
-|                      | AI                                 | Coming soon |
+|                      | Public Cloud Databases/Analytics   | Coming soon |
 |                      | Data Platform                      | Coming soon |
+|                      | AI                                 | Coming soon |
+|                      | Quantum                            | Coming soon |
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 

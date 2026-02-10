@@ -19,7 +19,7 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 - [Serveur Dédié](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Serveur Dédié Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Instances Public Cloud (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## En pratique
 
@@ -47,9 +47,9 @@ Plusieurs points sont à prendre en compte :
 |                      | Network                            | À venir    |
 |                      | Managed Kubernetes Service         | À venir    |
 |                      | Public Cloud Databases / Analytics | À venir    |
-|                      | Quantum                            | À venir    |
-|                      | AI                                 | À venir    |
 |                      | Data Platform                      | À venir    |
+|                      | AI                                 | À venir    |
+|                      | Quantum                            | À venir    |
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
