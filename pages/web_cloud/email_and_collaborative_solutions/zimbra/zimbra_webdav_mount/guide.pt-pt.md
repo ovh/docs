@@ -128,13 +128,14 @@ O seu volume de rede aparece agora. Pode depositar os seus ficheiros, até 100 M
 
 No macOS, não é necessário ativar um serviço ou registar o certificado SSL, basta montar o volume diretamente a partir do **Finder**.
 
+> [!tabs]
 > **Passo 1**
 >>
 >> - Abra o **Finder**.
 >> - Na barra superior, clique no menu `Ir`{.action}.
 >> - Clique em `Ligar ao servidor`{.action} (`⌘ + K`).
 >>
->> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}{.action}
+>> ![MX plan](images/macos-mount01.png){.thumbnail .w-600}
 >>
 > **Passo 2**
 >>
