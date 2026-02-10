@@ -1,6 +1,6 @@
 ---
 title: FAQ VoIP OVHcloud
-updated: 2025-08-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -200,6 +200,24 @@ Les relevés de consommation des mois précédents vous sont alors proposés. Cl
 > **Trucs et astuces**
 >
 > Vous pouvez également consulter, pour chaque ligne SIP, les appels émis et reçus du mois en cours en la sélectionnant depuis l'onglet `Services`{.action} puis en vous rendant dans l'onglet `Consommation`{.action}.
+
+///
+
+/// details | Comment retrouver le RIO de mes services de téléphonie ou Fax ?
+
+Tout numéro associé à un service VoIP ou à une ligne Fax est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
+
+Pour récupérer le RIO, connectez-vous à votre [espace client OVHcloud](/links/manager), sélectionnez la rubrique `Télécom`{.action} puis cliquez sur `VoIP & Fax`{.action}.<br>
+Cliquez sur le groupe de facturation souhaité puis sur le service VoIP ou Fax concerné.<br>
+Le RIO est affiché dans la rubrique `Informations générales`{.action}.
+
+![rio manager](images/rio.png){.thumbnail}
+
+**La portabilité d'un numéro OVHcloud vers un autre opérateur entraîne sa résiliation technique et commerciale chez OVHcloud à la date effective de la portabilité.**
+
+> [!success]
+>
+> Autre méthode pour une ligne SIP : composez le **3179** depuis la ligne SIP concernée.
 
 ///
 
