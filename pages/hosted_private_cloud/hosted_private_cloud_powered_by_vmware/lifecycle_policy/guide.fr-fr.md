@@ -72,7 +72,7 @@ Les services et fonctionnalités suivants ont atteint leur fin de support et ne 
 
 |                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-|     Managed VMware vSphere                            |          2016        |  2015-02-28  |  2027-10-31   | 2028-10-31  |
+|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2028-10-31  |
 |     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
 |Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
 
