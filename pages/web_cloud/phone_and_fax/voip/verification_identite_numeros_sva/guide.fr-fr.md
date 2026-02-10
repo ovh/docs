@@ -1,7 +1,7 @@
 ---
 title: "Valider votre identité pour l'exploitation d'un numéro spécial SVA"
 excerpt: "Découvrez comment valider votre identité depuis l'espace client OVHcloud afin d'exploiter un numéro spécial SVA"
-updated: 2025-09-05
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ Ces informations sont indispensables pour maintenir votre compte conforme et **a
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
 
-Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le menu « Je veux... ».
+Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le cadre « Je veux... » du `Tableau de bord`{.action}.
 
 ![commande de numéro](images/sva-commande.png){.thumbnail}
 
@@ -66,21 +66,21 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 
 Si vous êtes le seul bénéficiaire, cochez la case « Mon représentant est bénéficiaire ». 
 
-![représentant bénéficiairs](images/beneficiaire.png){.thumbnail}
+![représentant bénéficiairs](images/sva-beneficiaire01.png){.thumbnail}
 
 Dans le cas contraire, cliquez sur `+ Ajouter un bénéficiaire`{.action} et renseignez les coordonnées du bénéficiaire.
+
+![ajout bénéficiaires](images/sva-beneficiaire02.png){.thumbnail}
 
 > [!primary]
 > Vous pouvez ajouter jusqu'à 4 bénéficiaires.
 
-![ajout bénéficiaires](images/sva-beneficiaire1.png){.thumbnail}
+![ajout bénéficiaires](images/sva-beneficiaire03.png){.thumbnail}
 
 Cochez la case :
 
 - « Je certifie être l'éditeur des contenus des numéros SVA » (si vous avez choisi le type de compte « Professionnel »);
-- « Je certifie être revendeur de numéro SVA et certifie connaître et appliquer les obligations à mes propres clients »  (si vous avez choisi le type de compte « Professionnel revendeur »).
-
-![ajout bénéficiaires](images/sva-beneficiaire2.png){.thumbnail}
+- « Je certifie être revendeur de numéro SVA et certifie connaître et appliquer les obligations à mes propres clients » (si vous avez choisi le type de compte « Professionnel revendeur »).
 
 Cliquez sur `Étape suivante`{.action}.
 
@@ -102,7 +102,7 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 >
 > Si vous ne pouvez pas fournir tous vos documents en une fois, cliquez sur `Enregistrer et finir plus tard`{.action}.
 >
-> Pour accéder par la suite à la plateforme Lemonway : dans le `Tableau de bord`{.action} du groupe de facturation VoIP, cliquez sur `Voir mon profil SVA`{.action}.
+> Pour accéder par la suite à la plateforme Lemonway : depuis le `Tableau de bord`{.action} du groupe de facturation VoIP, cliquez sur `Voir mon profil SVA`{.action}.
 
 ### Liste des documents requis
 
@@ -113,6 +113,7 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 >
 > Si votre compte OVHcloud correspond à **un projet de financement participatif (*crowdfunding*)**, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
 >
+> **Note** : Un selfie sera également demandé à des fins de vérification d'identité.
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
 
@@ -257,8 +258,12 @@ Dans votre `Tableau de bord`{.action}, vérifiez le statut de votre **Profil SVA
 - **En attente de validation** : vos documents ne sont pas encore intégralement fournis ou validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway.
 - **Valide** : vos documents sont validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à vos informations et les modifier si nécessaire.
 
+![vérification SVA](images/sva-check-profile.png){.thumbnail}
+
 ## Aller plus loin
 
-[Les recommandations déontologiques applicables aux services à valeur ajoutée téléphoniques](https://www.ovh.com/fr/support/documents_legaux/conditions%20particulieres%20deontologie%20numeros%20SVA%20Fr.pdf).
+[Les recommandations déontologiques applicables aux services à valeur ajoutée téléphoniques](https://www.ovh.com/fr/support/documents_legaux/conditions%20particulieres%20deontologie%20numeros%20SVA%20Fr.pdf)
+
+[Lemonway : notice d’information relative à la protection des données à caractère personnel](https://www.lemonway.com/protection-des-donnees)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
