@@ -1,7 +1,7 @@
 ---
 title: "Jak uzyskać ślad węglowy Twoich usług OVHcloud"
 excerpt: "Dowiedz się, jak odzyskać miesięczny ślad węglowy usług OVHcloud za pomocą naszego kalkulatora emisji dwutlenku węgla"
-updated: 2025-06-17
+updated: 2026-02-10
 ---
 
 ## Wprowadzenie

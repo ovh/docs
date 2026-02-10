@@ -1,7 +1,7 @@
 ---
 title: "CO2-Fußabdruck Ihrer OVHcloud Dienste einsehen"
 excerpt: "Erfahren Sie, wie Sie den monatlichen CO2-Fußabdruck der OVHcloud Dienste mit unserem CO2-Rechner abrufen"
-updated: 2025-06-17
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -35,21 +35,24 @@ Dabei sind mehrere Punkte zu beachten:
 - Nach Ablauf der letzten 24 Monate kann keine Bilanz erstellt werden.
 - Für jeden OVHcloud Dienst kann vor der Bereitstellung der Funktion keine Bilanz erstellt werden (siehe nachstehende Tabelle).
 
-| OVHcloud Services    | Produkt                            | Status              |
-| -------------------- | ---------------------------------- | ------------------- |
-| Dedizierte Server    | Dedizierte Server                  | Verfügbar           |
-|                      | Eco-Dedizierte Server              | Verfügbar           |
-| Hosted Private Cloud | VMware on OVHcloud                 | Verfügbar           |
-| Public Cloud         | Public Cloud-Instanzen             | Verfügbar           |
-|                      | Block Storage                      | Verfügbar           |
-|                      | Object Storage S3                  | Demnächst verfügbar |
-|                      | File Storage                       | Demnächst verfügbar |
-|                      | Network                            | Demnächst verfügbar |
-|                      | Managed Kubernetes Service         | Demnächst verfügbar |
-|                      | Public Cloud Databases/Analytics   | Demnächst verfügbar |
-|                      | Data Platform                      | Demnächst verfügbar |
-|                      | AI                                 | Demnächst verfügbar |
-|                      | Quantum                            | Demnächst verfügbar |
+**Verfügbarkeit von CO₂-Fußabdruck-Daten:**
+
+| OVHcloud-Dienste    | Produkt                             | Status              | Datum der Inbetriebnahme des CO₂-Fußabdruck-Rechners |
+| -------------------- | ---------------------------------- | ------------------- | ---------------------------------------------------- |
+| Dedicated Server    | Dedicated Server                    | Verfügbar           | 2023/05/01 |
+|                      | Eco Dedicated Server               | Verfügbar           | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Verfügbar           | 2023/08/01 |
+| Public Cloud         | Public Cloud Instanzen             | Verfügbar           | 2025/01/01 |
+|                      | Block Storage                      | Verfügbar           |            |
+|                      | Object Storage S3                  | Demnächst verfügbar |            |
+|                      | File Storage                       | Demnächst verfügbar |            |
+|                      | Network                            | Demnächst verfügbar |            |
+|                      | Managed Kubernetes Service         | Demnächst verfügbar |            |
+|                      | Public Cloud Databases/Analytics   | Demnächst verfügbar |            |
+|                      | Data Platform                      | Demnächst verfügbar |            |
+|                      | AI                                 | Demnächst verfügbar |            |
+|                      | Quantum                            | Demnächst verfügbar |            |
+
 
 ### Abrufen der monatlichen Bilanz des Vormonats über das OVHcloud Kundencenter
 

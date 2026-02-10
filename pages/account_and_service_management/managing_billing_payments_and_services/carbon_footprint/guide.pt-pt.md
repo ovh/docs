@@ -1,7 +1,7 @@
 ---
 title: "Como obter a pegada de carbono dos seus serviços OVHcloud"
 excerpt: "Saiba como recuperar a pegada de carbono mensal dos serviços OVHcloud graças à nossa calculadora de carbono"
-updated: 2025-06-17
+updated: 2026-02-10
 ---
 
 ## Objetivo
