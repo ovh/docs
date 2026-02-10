@@ -19,9 +19,14 @@ W związku z Twoją działalnością lub zainteresowaniem tym tematem może być
 - [Serwer dedykowany](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Serwer dedykowany Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Instancje Public Cloud (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## W praktyce
+
+> [!primary]
+>
+> Dane dotyczące śladu węglowego nie są jeszcze dostępne dla architektur 3AZ i stref lokalnych.
+>
 
 Należy wziąć pod uwagę kilka kwestii:
 
@@ -30,12 +35,23 @@ Należy wziąć pod uwagę kilka kwestii:
 - Bilans nie może być generowany dłużej niż ostatnie 24 miesiące.
 - Brak bilansu za okres przed datą wdrożenia funkcji dla każdej usługi OVHcloud (patrz tabela poniżej).
 
-| Usługa | Data uruchomienia kalkulatora śladu węglowego |
-|---|---|
-| Serwer Dedykowany | 2023/05/01 |
-| Serwer Dedykowany Eco | 2023/05/01 |
-| VMware on OVHcloud | 2023/08/01 |
-| Instancje Public Cloud | 2025/01/01 |
+**Dostępność danych o śladzie węglowym:**
+
+| Usługi OVHcloud      | Produkt                            | Status      | Data uruchomienia kalkulatora śladu węglowego |
+| -------------------- | ---------------------------------- | ----------  | --------------------------------------------- |
+| Serwery dedykowane   | Serwery dedykowane                 | Dostępne    | 2023/05/01 |
+|                      | Serwery dedykowane Eco             | Dostępne    | 2023/05/01 |
+| Hosted Private Cloud | VMware na OVHcloud                 | Dostępne    | 2023/08/01 |
+| Public Cloud         | Instancje Public Cloud             | Dostępne    | 2025/01/01 |
+|                      | Block Storage                      | Dostępne    |            |
+|                      | Object Storage S3                  | Wkrótce     |            |
+|                      | File Storage                       | Wkrótce     |            |
+|                      | Sieć                               | Wkrótce     |            |
+|                      | Kubernetes zarządzane              | Wkrótce     |            |
+|                      | Bazy danych/Analiza Public Cloud   | Wkrótce     |            |
+|                      | Platforma danych                   | Wkrótce     |            |
+|                      | AI                                 | Wkrótce     |            |
+|                      | Kwantowe                           | Wkrótce     |            |
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud
 

@@ -35,21 +35,23 @@ Please note the following information:
 - No carbon footprint report can be generated for more than the last 24 months.
 - No carbon footprint can be generated before the date of implementation of the feature for each OVHcloud service (see table below).
 
-| OVHcloud Services    | Product                            | Statut      |
-| -------------------- | ---------------------------------- | ----------  |
-| Dedicated servers    | Dedicated servers                  | Available   |
-|                      | Eco Dedicated servers              | Available   |
-| Hosted Private Cloud | VMware on OVHcloud                 | Available   |
-| Public Cloud         | Instances Public Cloud             | Available   |
-|                      | Block Storage                      | Available   |
-|                      | Object Storage S3                  | Coming soon |
-|                      | File Storage                       | Coming soon |
-|                      | Network                            | Coming soon |
-|                      | Managed Kubernetes Service         | Coming soon |
-|                      | Public Cloud Databases/Analytics   | Coming soon |
-|                      | Data Platform                      | Coming soon |
-|                      | AI                                 | Coming soon |
-|                      | Quantum                            | Coming soon |
+**Availability of carbon footprint data:**
+
+| OVHcloud Services    | Product                            | Status      | Date of commissioning of the carbon footprint calculator |
+| -------------------- | ---------------------------------- | ----------  | -------------------------------------------------------- |
+| Dedicated servers    | Dedicated servers                  | Available   | 2023/05/01 |
+|                      | Eco Dedicated servers              | Available   | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Available   | 2023/08/01 |
+| Public Cloud         | Instances Public Cloud             | Available   | 2025/01/01 |
+|                      | Block Storage                      | Available   |            |
+|                      | Object Storage S3                  | Coming soon |            |
+|                      | File Storage                       | Coming soon |            |
+|                      | Network                            | Coming soon |            |
+|                      | Managed Kubernetes Service         | Coming soon |            |
+|                      | Public Cloud Databases/Analytics   | Coming soon |            |
+|                      | Data Platform                      | Coming soon |            |
+|                      | AI                                 | Coming soon |            |
+|                      | Quantum                            | Coming soon |            |
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 

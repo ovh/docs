@@ -35,21 +35,23 @@ Plusieurs points sont à prendre en compte :
 - Aucun bilan ne peut être généré au delà des 24 derniers mois.
 - Aucun bilan ne peut être généré pour la période précédant la date de mise en place de la fonctionnalité pour chaque service OVHcloud (voir le tableau ci-dessous).
 
-| Services OVHCloud    | Produits                           | Statut     |
-| -------------------- | ---------------------------------- | ---------- |
-| Serveurs dédiées     | Serveur Dédié                      | Disponible |
-|                      | Serveur Dédié Eco                  | Disponible |
-| Hosted Private Cloud | VMware on OVHcloud                 | Disponible |
-| Public Cloud         | Instances Public Cloud             | Disponible |
-|                      | Block Storage                      | Disponible |
-|                      | Object Storage S3                  | À venir    |
-|                      | File Storage                       | À venir    |
-|                      | Network                            | À venir    |
-|                      | Managed Kubernetes Service         | À venir    |
-|                      | Public Cloud Databases / Analytics | À venir    |
-|                      | Data Platform                      | À venir    |
-|                      | AI                                 | À venir    |
-|                      | Quantum                            | À venir    |
+**Disponibilité des données d'empreinte carbone :**
+
+| Services OVHcloud    | Produits                           | Statut      | Date de mise en service de la calculatrice d'empreinte carbone |
+| -------------------- | ---------------------------------- | ----------  | -------------------------------------------------------------- |
+| Serveurs Dédiés      | Serveur Dédié                      | Disponible  | 2023/05/01 |
+|                      | Serveur Dédié Eco                  | Disponible  | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Disponible  | 2023/08/01 |
+| Public Cloud         | Instances Public Cloud             | Disponible  | 2025/01/01 |
+|                      | Block Storage                      | Disponible  |            |
+|                      | Object Storage S3                  | À venir     |            |
+|                      | File Storage                       | À venir     |            |
+|                      | Network                            | À venir     |            |
+|                      | Managed Kubernetes Service         | À venir     |            |
+|                      | Public Cloud Databases/Analytics   | À venir     |            |
+|                      | Data Platform                      | À venir     |            |
+|                      | AI                                 | À venir     |            |
+|                      | Quantum                            | À venir     |            |
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
