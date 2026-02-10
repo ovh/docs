@@ -22,37 +22,39 @@ Tout d'abord, vous devez installer l'outil `ipmitool`. Cette outil permet d’in
 
 Selon la distribution Linux, la commande peut varier :
 
-**Debian / Ubuntu**
+> [!tabs]
+> **Debian / Ubuntu**
+>>
+>> ```sh
+>> sudo apt update
+>> sudo apt install ipmitool -y
+>> ```
+>>
+> **RHEL / CentOS / AlmaLinux / Rocky Linux**
+>>
+>> ```sh
+>> sudo dnf install epel-release -y
+>> sudo dnf install ipmitool -y
+>> ```
+>>
 
-```sh
-sudo apt update
-sudo apt install ipmitool -y
-```
-
-**RHEL / CentOS / AlmaLinux / Rocky Linux**
-
-```sh
-sudo dnf install epel-release -y
-sudo dnf install ipmitool -y
-```
-
-Vérifier la version du firmware BMC avec la command suivante :
+Vérifier la version du firmware BMC avec la commande suivante :
 
 ```sh
 sudo ipmitool mc info
 ```
 
-![bmc](images/windowsps.png){.thumbnail} 
+![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
+Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
 
 ### Sur un Serveur Windows
 
-Actuellement, nous ne pouvons fournir la procédure que pour les serveurs fonctionnant sous le système d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version. La commande fonctionne également en mode rescue.
+Actuellement, nous ne pouvons fournir la procédure que pour les serveurs fonctionnant sous le système d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version. La commande fonctionne également en mode rescue.
 
 ### Sur un Serveur en mode rescue
 
-Une fois votre serveur redémarré en [mode rescue](pages/bare_metal_cloud/dedicated_servers/rescue_mode), installez l'outil `ipmitool`.
+Une fois votre serveur redémarré en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode), installez l'outil `ipmitool`.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
@@ -61,10 +63,12 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
 Ensuite, vérifiez la version du firmware :
 
 ```sh
-impitool mc info
+ipmitool mc info
 ```
 
-Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
+![bmc](images/ipmi_tool_rescue.png){.thumbnail}
+
+Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
 
 ## Aller plus loin
 
