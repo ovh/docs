@@ -30,6 +30,20 @@ Retrouvez dans ce guide les explications pour résilier unitairement un service 
 
 En fonction de votre service, référez-vous à la partie correspondante.
 
+### Cas de portabilité sortante
+
+La portabilité d'un numéro OVHcloud vers un autre opérateur entraîne sa résiliation technique et commerciale chez OVHcloud à la date effective de la portabilité.
+
+Tout numéro associé à une ligne Fax ou à un service VoIP est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
+
+> [!primary]
+>
+> Récupérez le RIO d'un service VoIP ou Fax depuis les informations générales du service dans votre [espace client OVHcloud](/links/manager).
+>
+> ![rio manager](images/rio.png){.thumbnail}
+>
+> Autre méthode pour une ligne SIP : composez le **3179** depuis la ligne SIP concernée.
+
 ### Résilier une ligne SIP / Trunk
 
 Pour résilier une ligne **SIP** ou **Trunk** OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}.
