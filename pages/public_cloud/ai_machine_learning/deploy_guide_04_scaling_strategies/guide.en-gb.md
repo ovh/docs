@@ -81,7 +81,7 @@ Using this strategy, it is possible to choose:
 | **Minimum Replicas**       | Lowest number of running replicas. When set to 0, the number of replicas will be reduced to 0 when your application no longer receives calls during the defined period, limiting costs of your app. |
 | **Maximum Replicas**       | Upper bound for replica count (define based on usage expectations).                           |
 | **Time before scaling down (s)** | Number of seconds before scaling from N to N-1 replicas. Default value is 300s. Must be greater than or equal to 0 and less than or equal to 3600 (one hour).                                      |
-| **Time before scaling to 0 (s)** | Number of seconds before reducing from 1 to 0 replica. **Only applies** when minimum replicas is set to 0.      |
+| **Time before scaling to 0 (s)** | Number of seconds before reducing from 1 to 0 replica. **Only applies** when minimum replicas is set to 0. When enabled, this time must be considered in addition to the `Time before scaling down` parameter.      |
 | **Time before scaling up (s)**   | Number of seconds before scaling from N to N+1 replicas. Default value is 0s. Must be greater than or equal to 0 and less than or equal to 3600 (one hour).                                    |
 | **Monitored Metric**       | The metric to be monitored. Choose between `CPU`, `RAM` or a custom metric for triggering autoscaling actions. |
 | **Trigger Threshold (%)**  | Average usage percentage used to trigger scaling up or down. Range: 1–100%.                   |
@@ -97,6 +97,8 @@ Using this strategy, it is possible to choose:
 > - **Cold start latency**: If a request comes in while no replicas are serving your app, there will be a cold start delay before the app starts serving requests again, varying from 30 seconds to several minutes depending on your image and volume weight.
 >
 > - **Resource availability risk**: If you use a popular flavor, then there is a risk that your app will NOT be able to scale up again, if flavor is unavailable, preventing your app from handling incoming requests.
+>
+> - **Parameter interaction**: The time before scaling to 0 is applied in addition to the time before scaling down. This means the total time before an app scales down to 0 is the sum of both parameters.
 
 ### When to Choose Autoscaling?
 
