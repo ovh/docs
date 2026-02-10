@@ -1,6 +1,6 @@
 ---
 title: 'OVHcloud API and Storage'
-excerpt: 'Find out what the OVHcloud API provides in order to customize the disks, hardware/software RAID and partitioning configuration during the server OS reinstallation'
+excerpt: 'Find out what the OVHcloud API provides in order to customise the disks, hardware/software RAID and partitioning configuration during the server OS reinstallation'
 updated: 2025-06-04
 ---
 
@@ -11,7 +11,7 @@ updated: 2025-06-04
 > This article is intended for experienced users with basic Linux knowledge, and more importantly, deeper technical knowledge of storage—particularly hardware and software RAID, as well as Logical Volume Management (LVM).
 >
 
-With [OVHcloud Dedicated Servers](/links/bare-metal/bare-metal), you can configure Disks, [hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard), Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS reinstallation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](/links/api) as well as the [OVHcloud Control Panel](/links/manager). In this article, we will focus on the [OVHcloud API](/links/api). This will give us more details about the engine that is running in the background in order to create the storage customization on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](/links/bare-metal/bare-metal), you can configure Disks, [hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard), Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS reinstallation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](/links/api) as well as the [OVHcloud Control Panel](/links/manager). In this article, we will focus on the [OVHcloud API](/links/api). This will give us more details about the engine that is running in the background in order to create the storage customisation on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about storage configuration can help customers understand why:
 
@@ -32,9 +32,9 @@ Providing in-depth details about storage configuration can help customers unders
 
 During the default OS installation, the user is interactively prompted by the OS installer (provided by the software editor) to specify on which disks the Operating System will be installed, the partitioning layout, etc. Once the OS is installed, it is possible to change the partitioning layout but it can be very tricky and risky, especially for partitions that are currently used by the system. For that reason, storage is a very important subject that needs to be considered **before** installing an Operating System.
 
-Apart from the simplicity offered by an API, the main advantage is the possibility to fully customize the disks and partitions on which the OS will be installed.
+Apart from the simplicity offered by an API, the main advantage is the possibility to fully customise the disks and partitions on which the OS will be installed.
 
-In this page we are focusing only on the `storage` sub-hash of the API call used to reinstall an OS on a dedicated server. For other customizations not related to storage, please read [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) for more details.
+In this page we are focusing only on the `storage` sub-hash of the API call used to reinstall an OS on a dedicated server. For other customisations not related to storage, please read [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) for more details.
 
 > [!api]
 >
@@ -169,7 +169,7 @@ Example of Debian 12 (Bookworm) OS installation on the diskGroup 2:
 
 > [!warning]
 >
-> For the moment, the API only supports OS installation and storage customization on 1 single disk group. From 1 up to all disks of the selected disk group can be involved in the storage customization. Nevertheless, all other disks will be erased but they will still be visible in the freshly new installed OS and can be used/configured afterwards for data.
+> For the moment, the API only supports OS installation and storage customisation on 1 single disk group. From 1 up to all disks of the selected disk group can be involved in the storage customisation. Nevertheless, all other disks will be erased but they will still be visible in the freshly new installed OS and can be used/configured afterwards for data.
 >
 
 ### Hardware RAID <a name="hard-raid"></a>
@@ -233,7 +233,7 @@ Example of reply for a server with a hardware RAID controller:
 
 > [!warning]
 >
-> For the moment, the API only supports hardware RAID customization for 1 single hardware RAID controller. If your server has multiple hardware RAID controllers whose configuration you want to customize, you can configure the controllers other than the one in the disk group targeted for OS reinstallation **before** the OS reinstallation (you can also do it after OS reinstallation is finished, but we recommend doing it **before** to avoid any risk of accidental data loss).
+> For the moment, the API only supports hardware RAID customisation for 1 single hardware RAID controller. If your server has multiple hardware RAID controllers whose configuration you want to customise, you can configure the controllers other than the one in the disk group targeted for OS reinstallation **before** the OS reinstallation (you can also do it after OS reinstallation is finished, but we recommend doing it **before** to avoid any risk of accidental data loss).
 >
 
 Example of OS installation with a hardware RAID 1 between the 2 first disks of the disk group:
@@ -295,7 +295,7 @@ This means that if you have included all disks of the target disk group in a har
 
 ### Partitioning <a name="partitioning"></a>
 
-Partitioning layout is about how your data will be organized and seen by the OS, i.e everything that comes on top of your physical disks (or virtual disk if you have configured hardware RAID), up to the filesystem that is mounted, from the lowest to the highest layer:
+Partitioning layout is about how your data will be organised and seen by the OS, i.e everything that comes on top of your physical disks (or virtual disk if you have configured hardware RAID), up to the filesystem that is mounted, from the lowest to the highest layer:
 
 - disk (physical/virtual disk, PD),
 - partition (physical partition, PP),
@@ -315,7 +315,7 @@ The following table provides an overview of the different partitioning component
 
 #### OS & Partitioning Compatibility <a name="os-partitioning-compatibility"></a>
 
-Since partitioning configuration will be visible by the OS, the chosen OS for reinstallation has an impact on the possibilities you have in your partitioning customization.
+Since partitioning configuration will be visible by the OS, the chosen OS for reinstallation has an impact on the possibilities you have in your partitioning customisation.
 
 In the `/dedicated/installationTemplate`{.action} section, you can display storage details such as LVM compatibility and filesystem availability for a specific OS:
 
@@ -356,7 +356,7 @@ The following API call can be used to list the different operating system's part
 > @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}/partitionScheme
 >
 
-The following API calls can be used to know which partitioning will be applied by default, if not customized or not customizable by OS.
+The following API calls can be used to know which partitioning will be applied by default, if not customised or not customisable by OS.
 
 > [!api]
 >
