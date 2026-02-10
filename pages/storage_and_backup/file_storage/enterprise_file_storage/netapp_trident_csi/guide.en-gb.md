@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Getting started with Trident CSI
 excerpt: Deploy NetApp Trident CSI on OVHcloud Enterprise File Storage to manage volumes and snapshots in Kubernetes
-updated: 2026-02-09
+updated: 2026-02-10
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Premiers pas avec Trident CSI
 excerpt: "Déployez NetApp Trident CSI sur OVHcloud Enterprise File Storage pour gérer les volumes et les snapshots dans Kubernetes"
-updated: 2026-02-09
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -79,13 +79,13 @@ Assurez-vous que la policy accorde l’ensemble des actions nécessaires au bon 
 | Action                                      | Description                             |
 | ------------------------------------------- | --------------------------------------- |
 | storageNetApp:apiovh:get                    | Lister les services                     |
-| storageNetApp:apiovh:serviceInfos/get       | Récuperer les informations d'un service |
+| storageNetApp:apiovh:serviceInfos/get       | Récupérer les informations d'un service |
 | storageNetApp:apiovh:share/accessPath/get   | Obtenir le point de montage d'un share  |
 | storageNetApp:apiovh:share/acl/create       | Création d'une ACL                      |
 | storageNetApp:apiovh:share/acl/delete       | Supprimer une ACL                       |
 | storageNetApp:apiovh:share/acl/get          | Lister les ACLs                         |
 | storageNetApp:apiovh:share/create           | Création d'un share                     |
-| storageNetApp:apiovh:share/delete           | Suppresion d'un share                   |
+| storageNetApp:apiovh:share/delete           | Suppression d'un share                  |
 | storageNetApp:apiovh:share/edit             | Modification d'un share                 |
 | storageNetApp:apiovh:share/extend           | Etendre un share                        |
 | storageNetApp:apiovh:share/get              | Lister les shares                       |
