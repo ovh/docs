@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Premiers pas avec Trident CSI
 excerpt: "Déployez NetApp Trident CSI sur OVHcloud Enterprise File Storage pour gérer les volumes et les snapshots dans Kubernetes"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -16,9 +16,9 @@ Avant de commencer, assurez-vous que votre environnement répond aux critères s
 
 - Cluster Kubernetes : Un cluster entièrement déployé et opérationnel.
 - Réseau (vRack) :
-    - Le projet Public Cloud et les services vRack doivent être connectés au même vRack.
-    - Le subnet et le VLAN doivent correspondre entre les services vRack et le réseau privé MKS.
-    - **Important :** L’IP du Service Endpoint doit être unique et non utilisée dans le subnet.
+  - Le projet Public Cloud et les services vRack doivent être connectés au même vRack.
+  - Le subnet et le VLAN doivent correspondre entre les services vRack et le réseau privé MKS.
+  - **Important :** L’IP du Service Endpoint doit être unique et non utilisée dans le subnet.
 
 ## En pratique
 
@@ -28,22 +28,48 @@ Trident nécessite un compte de service dédié pour interagir avec l’API OVHc
 
 #### 1. Création du compte de service (OAuth2)
 
-Créez un client OAuth2 via l’API OVHcloud en utilisant le flux `CLIENT_CREDENTIALS`.
+Créez un client OAuth2 avec l’API ou la CLI OVHcloud en utilisant le flux `CLIENT_CREDENTIALS`.
 
-> [!api]
->
-> @api {v1} /me POST /me/api/oauth2/client
->
-
-Exemple de payload :
-
-```json
-{
-  "description": "csi test",
-  "flow": "CLIENT_CREDENTIALS",
-  "name": "CSI-TEST"
-}
-```
+> [!tabs]
+> Via l'API
+>> Utilisez l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me POST /me/api/oauth2/client
+>>
+>> Avec le contenu de la requête suivant:
+>>
+>> ```json
+>> {
+>>   "description": "Service Account for Trident CSI",
+>>   "flow": "CLIENT_CREDENTIALS",
+>>   "name": "TRIDENT-CSI"
+>> }
+>> ```
+>>
+>> L'API répondra avec :
+>>
+>> ```json
+>> {
+>>   "clientId": "EU.xxxxxxxxxxxxxxxx",
+>>   "clientSecret": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+>> }
+>> ```
+>>
+> Via la CLI
+>> Le Service account peut être créé avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) et la commande suivante (complétez-la avec vos valeurs) :
+>>
+>> ```bash
+>> ovhcloud account api oauth2 client create --name "TRIDENT-CSI" --description "Service Account for Trident CSI" --flow "CLIENT_CREDENTIALS"
+>> ```
+>>
+>> La CLI répondra avec les valeurs `client ID` et `client secret` :
+>>
+>> ```bash
+>> ✅ OAuth2 client created successfully (client ID: EU.xxxxxxxxxxxxxxxx, client secret: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+>> ```
+>>
 
 > [!primary]
 >
@@ -52,29 +78,7 @@ Exemple de payload :
 
 #### 2. Création de la politique IAM
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et cliquez sur `Identité, Sécurité & Opérations`{.action}. Ouvrez le menu `Politiques`{.action} et cliquez sur `Créer une politique`{.action}.
-
-Configurez la politique en sélectionnant `Enterprise File Storage` dans la section `Types de produits` puis l’ID du service de stockage de fichiers concerné dans la section `Ressources`.
-
-#### 3. Association du compte à la politique
-
-Associez le compte de service (créé à l’étape 1) à la politique IAM en ajoutant l’URN du compte dans le champ `identities` :
-
-> [!api]
->
-> @api {v1} /iam PUT /iam/policy/{policyId}
->
-
-L'URN du compte peut être récupéré à l'aide de cet appel avec l'ID client enregistré :
-
-> [!api]
->
-> @api {v1} /me GET /me/api/oauth2/client/{clientId}
->
-
-#### 4. Attribution des permissions requises
-
-Assurez-vous que la policy accorde l’ensemble des actions nécessaires au bon fonctionnement de Trident :
+Configurez une politique IAM qui devra contenir les éléments suivants: le service account à authoriser, le ou les services `Enterprise File Storage` à inclure ainsi que les actions à accorder qui sont résumés dans le tableau ci-dessous:  
 
 | Action                                      | Description                             |
 | ------------------------------------------- | --------------------------------------- |
@@ -86,14 +90,171 @@ Assurez-vous que la policy accorde l’ensemble des actions nécessaires au bon 
 | storageNetApp:apiovh:share/acl/get          | Lister les ACLs                         |
 | storageNetApp:apiovh:share/create           | Création d'un share                     |
 | storageNetApp:apiovh:share/delete           | Suppression d'un share                  |
+| storageNetApp:apiovh:share/delete           | Suppression d'un share                  |
 | storageNetApp:apiovh:share/edit             | Modification d'un share                 |
 | storageNetApp:apiovh:share/extend           | Etendre un share                        |
 | storageNetApp:apiovh:share/get              | Lister les shares                       |
 | storageNetApp:apiovh:share/revertToSnapshot | Restaurer un snapshot                   |
 | storageNetApp:apiovh:share/snapshot/create  | Création d'un snapshot                  |
-| storageNetApp:apiovh:share/snapshot/delete  | Suppresion d'un snapshot                |
+| storageNetApp:apiovh:share/snapshot/delete  | Suppression d'un snapshot               |
 | storageNetApp:apiovh:share/snapshot/edit    | Editer un snapshot                      |
 | storageNetApp:apiovh:share/snapshot/get     | Lister les snapshots                    |
+
+> [!tabs]
+> Via l'API
+>> Utilisez l'appel API suivant pour créer la politique IAM:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me POST /iam/policy
+>>
+>> Avec le contenu de la requête suivant:
+>>
+>> ```json
+>>{
+>>  "description": "Trident CSI",
+>>  "identities": [
+>>    "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
+>>  ],
+>>  "name": "trident-policy",
+>>  "permissions": {
+>>    "allow": [
+>>      {
+>>        "action": "storageNetApp:apiovh:get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:serviceInfos/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/accessPath/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/edit"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/extend"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/revertToSnapshot"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/edit"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/get"
+>>      }
+>>    ]
+>>  },
+>>  "resources": [
+>>    {
+>>      "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+>>    }
+>>  ]
+>>}
+>> ```
+>>
+> Via la CLI
+>> Le politique IAM account peut être créé avec l'[OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) et la commande suivante (complétez-la avec vos valeurs) :
+>>
+>> ```bash
+>>cat <<EOF | ovhcloud iam policy create --from-file -
+>>{
+>>  "description": "Trident CSI",
+>>  "identities": [
+>>    "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
+>>  ],
+>>  "name": "trident-policy",
+>>  "permissions": {
+>>    "allow": [
+>>      {
+>>        "action": "storageNetApp:apiovh:get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:serviceInfos/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/accessPath/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/acl/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/edit"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/extend"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/get"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/revertToSnapshot"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/create"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/delete"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/edit"
+>>      },
+>>      {
+>>        "action": "storageNetApp:apiovh:share/snapshot/get"
+>>      }
+>>    ]
+>>  },
+>>  "resources": [
+>>    {
+>>      "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+>>    }
+>>  ]
+>>}
+>>EOF
+>> ```
+>>
+>> La CLI répondra avec le retour ci-dessous:
+>>
+>> ```bash
+>> ✅ IAM policy xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx created successfully
+>> ```
+>>
 
 ### Installation de Trident CSI
 
@@ -114,50 +275,90 @@ Lancez l'installation :
 helm repo add netapp-trident https://netapp.github.io/trident-helm-chart
 helm install trident-operator netapp-trident/trident-operator \
   --version 100.2502.1 \
+  --create-namespace \
   --namespace trident \
   -f trident-values.yaml
 ```
 
 Une fois l’installation terminée, vérifiez que tous les pods Trident sont en état `Running` dans le namespace trident avant de poursuivre.
 
-Installez Tridentctl :
+```bash
+kubectl get pods -n trident
+NAME                                  READY   STATUS    RESTARTS        AGE
+trident-controller-75869d7499-ffmkt   6/6     Running   0               4m25s
+trident-node-linux-4gv6w              2/2     Running   1 (4m24s ago)   4m25s
+trident-node-linux-g942s              2/2     Running   1 (4m24s ago)   4m24s
+trident-node-linux-tfjc2              2/2     Running   0               4m25s
+trident-operator-787b98cb7c-sgtdh     1/1     Running   0               4m26s
+```
+
+### Création du backend Trident
+
+Le backend Trident permet de connecter NetApp Trident au service OVHcloud Enterprise File Storage à l’aide des identifiants IAM créés précédemment.
+
+#### 1. Création d'un secret
+
+Créer un secret contenant les informations de connection permettant à trident d'accéder à l'API OVHcloud.
 
 ```bash
-mkdir 25.02.1 && cd 25.02.1
-wget https://github.com/NetApp/trident/releases/download/v25.02.1/trident-installer-25.02.1.tar.gz
-tar -xf trident-installer-25.02.1.tar.gz
-ln -sf /root/25.02.1/trident-installer/tridentctl /usr/local/bin/tridentctl
+cat <<EOF | kubectl create -n trident -f -
+apiVersion: v1
+kind: Secret
+metadata:
+  name: tbc-ovh-efs-secret
+type: Opaque
+stringData:
+  clientID: "EU.xxxxxxxxxxxxxxxx"                 
+  clientSecret: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+EOF
 ```
 
-### Configuration du backend (Provisioner)
-
-Le backend permet de connecter NetApp Trident au service OVHcloud Enterprise File Storage à l’aide des identifiants IAM créés précédemment.
-
-#### 1. Fichier de configuration du backend
-
-Créez un fichier nommé `backend-netapp.yaml`. Le driver de stockage `ovh-efs` doit impérativement être utilisé.
-
-```yaml
-version: 1
-storageDriverName: ovh-efs
-backendName: backend-ovh-efs-rbx
-location: eu-west-rbx          # Your service Region
-clientLocation: ovh-eu
-clientID: "EU.XXX"             # Your IAM ClientID
-clientSecret: "XXX"            # Your IAM ClientSecret
-defaults:   exportRule: 10.235.0.0/24    # CIDR of your nodes for ACL
-nfsMountOptions: rw,hard,rsize=65536,wsize=65536,nfsvers=3,tcp
-```
-
-#### 2. Création du backend
-
-Créez le backend à l’aide de l’outil `tridentctl` :
+La CLI répondra avec le retour ci-dessous:
 
 ```bash
-./tridentctl create backend -f backend-netapp.yaml -n trident
+secret/tbc-ovh-efs-gra-secret created
 ```
 
-Avant de poursuivre, vérifiez que l’état du backend est `Online`.
+#### 2. Création du backend Trident
+
+Créez votre backend avec la commande ci-dessous.
+
+**Note :** Le driver de stockage `ovh-efs` doit impérativement être utilisé.
+
+```bash
+cat <<EOF | kubectl create -n trident -f -
+apiVersion: trident.netapp.io/v1
+kind: TridentBackendConfig
+metadata:
+  name: tbc-ovh-efs-gra
+spec:
+  version: 1
+  backendName: backend-ovh-efs
+  defaults:
+    exportRule: 10.0.32.0/24    # CIDR de votre reseau pour les ACLs NFS
+  storageDriverName: ovh-efs
+  clientLocation: ovh-eu
+  location: eu-west-gra         # Localisation de votre service EFS
+  serviceLevel: premium
+  nfsMountOptions: rw,hard,rsize=65536,wsize=65536,nfsvers=3,tcp
+  credentials:
+    name: tbc-ovh-efs-secret
+EOF
+```
+
+La CLI répondra avec le retour ci-dessous:
+
+```bash
+tridentbackendconfig.trident.netapp.io/tbc-ovh-efs-gra created
+```
+
+Vérifier que le backend à été correctement créé avec la commande ci-dessous, celui-ci doit être dans l'état `bound`
+
+```bash
+kubectl get tridentbackendconfig -n trident
+NAME                  BACKEND NAME      BACKEND UUID                           PHASE   STATUS
+tbc-ovh-efs-gra       backend-ovh-efs   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   Bound   Success
+```
 
 ### StorageClass et utilisation des volumes
 
@@ -167,39 +368,63 @@ Cette section explique comment exposer Enterprise File Storage aux workloads Kub
 
 Définissez une `StorageClass` pour activer le provisionnement dynamique via le driver Trident CSI :
 
-```yaml
+```bash
+cat <<EOF | kubectl create -f -
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
-metadata:  
-  name: efs-rbx-test
+metadata:
+  name: ovh-efs-gra-premium
 provisioner: csi.trident.netapp.io
-parameters:   
+parameters:
   backendType: "ovh-efs"
   fsType: "nfs"
-allowVolumeExpansion: true   # Important for resizing
+allowVolumeExpansion: true
+EOF
+```
+
+La CLI répondra avec le retour ci-dessous:
+
+```bash
+storageclass.storage.k8s.io/ovh-efs-gra-premium created
 ```
 
 Cette StorageClass permet de provisionner les volumes à la demande et de les étendre dynamiquement.
 
 #### 2. Création d’un volume (PVC)
 
-Créez un `PersistentVolumeClaim` avec un accès `ReadWriteMany` (RWX) pour demander un volume :
+Créez un `PersistentVolumeClaim` avec un accès `ReadWriteMany` (RWX):
 
-```yaml
+```bash
+cat <<EOF | kubectl create -f -
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvclaim-test
+  name: premium-pvc
 spec:
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: 100Gi
-  storageClassName: efs-rbx-test
+  storageClassName: ovh-efs-gra-premium
+EOF
 ```
 
-Une fois qu’un Pod utilise ce PVC, le volume est automatiquement provisionné et monté via NFS.
+La CLI répondra avec le retour ci-dessous:
+
+```bash
+persistentvolumeclaim/premium-pvc created
+```
+
+Vérifier que le PVC a été créé avec la commande ci-dessous, il doit apparaitre dans l'état `bound`
+
+```bash
+kubectl get pvc
+NAME         STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS          VOLUMEATTRIBUTESCLASS   AGE
+premium-pvc  Bound    pvc-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   100Gi      RWX            ovh-efs-gra-premium   <unset>                 5m34s
+```
+
+Une fois qu’un Pod utilisera ce PVC, le volume sera automatiquement monté via le protocole NFS.
 
 ### Fonctionnalités avancées
 
@@ -209,18 +434,21 @@ NetApp Trident permet de créer des snapshots de volumes à la demande sur Enter
 
 - Définir une `VolumeSnapshotClass` pour gérer le cycle de vie des snapshots :
 
-```yaml
+```bash
+cat <<EOF | kubectl create -f -
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshotClass
 metadata:   
   name: csi-snapclass
 driver: csi.trident.netapp.io
 deletionPolicy: Delete
+EOF
 ```
 
 - Créer un `VolumeSnapshot` dans le même namespace que le `PersistentVolumeClaim` source :
 
-```yaml
+```bash
+cat <<EOF | kubectl create -f -
 apiVersion: snapshot.storage.k8s.io/v1
 kind: VolumeSnapshot
 metadata:
@@ -230,6 +458,7 @@ spec:
   volumeSnapshotClassName: csi-snapclass
   source:
     persistentVolumeClaimName: pvclaim-test
+EOF
 ```
 
 Le snapshot est créé sur le service Enterprise File Storage et peut être utilisé pour des workflows de sauvegarde ou de restauration.
@@ -239,4 +468,3 @@ Le snapshot est créé sur le service Enterprise File Storage et peut être util
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
