@@ -46,29 +46,40 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 
 ### Présentation du contenu
 
-- [**1** Création de clés SSH](#create-ssh)
-- [**2** Importation de clés SSH](#import-ssh)
-- [**3** Préparation de la configuration réseau](#network)
-- [**4** Création de l'instance](#create-instance)
-    - [**4.1** Sélection d'un modèle d'instance](#model)
-    - [**4.2** Sélection d'une région](#region)
-    - [**4.3** Sélection d'une image](#image)
-    - [**4.4** Configuration de votre instance](#configuration)
-    - [**4.5** Configurer votre réseau](#network)
-    - [**4.6** Sélectionner une période de facturation](#billing)
-- [**5** Connexion à l'instance](#connect-instance)
-    - [**5.1** Vérification de l'installation de l'instance dans l'espace client OVHcloud](#verify-status)
-    - [**5.2** Première connexion sur une instance avec un OS GNU/Linux installé](#login-linux)
-    - [**5.3** instances Windows](#windows)
-        - [**5.3.1** Fin de l'installation d'une instance Windows](#windows)
-        - [**5.3.2** Connexion à distance depuis Windows](#login-windows)
-        - [**5.3.3** Connexion à distance depuis un autre OS](#login-other)
-    - [**5.4** Accès console VNC](#vnc-console)
-- [**6** Premiers pas sur une nouvelle instance](#manage-access)
-    - [**6.1** Gestion des utilisateurs](#user-mgmt)
-        - [**6.1.1** Définition d'un mot de passe pour le compte d'utilisateur actuel](#set-password)
-        - [**6.1.2** Activation des connexions à distance par mot de passe](#remote-password)
-    - [**6.2** Clés SSH supplémentaires](#add-keys)
+- [Objectif](#objectif)
+- [Prérequis](#prérequis)
+- [En pratique](#en-pratique)
+  - [Présentation du contenu](#présentation-du-contenu)
+  - [Étape 1 : créer un jeu de clés SSH](#étape-1--créer-un-jeu-de-clés-ssh)
+  - [Étape 2 : Importer les clés SSH](#étape-2--importer-les-clés-ssh)
+  - [Étape 3 : préparer la configuration réseau](#étape-3--préparer-la-configuration-réseau)
+  - [Étape 4 : créer l'instance](#étape-4--créer-linstance)
+    - [Étape 4.1 : Nom de l'instance](#étape-41--nom-de-linstance)
+    - [Étape 4.2 : Sélectionnez une localisation](#étape-42--sélectionnez-une-localisation)
+    - [Étape 4.3 : Sélectionnez un modèle](#étape-43--sélectionnez-un-modèle)
+    - [Informations complémentaires](#informations-complémentaires)
+    - [Étape 4.4 : Sélectionnez une image](#étape-44--sélectionnez-une-image)
+    - [Étape 4.5 : Sélection d’une clé SSH (non applicable aux instances Windows)](#étape-45--sélection-dune-clé-ssh-non-applicable-aux-instances-windows)
+    - [Étape 4.6 : Configurez les paramètres de sauvegarde](#étape-46--configurez-les-paramètres-de-sauvegarde)
+    - [Étape 4.7 : Configurez le réseau](#étape-47--configurez-le-réseau)
+    - [Étape 4.8 : Sélectionnez une période de facturation](#étape-48--sélectionnez-une-période-de-facturation)
+    - [Étape 4.9 : Configurez les paramètres avancés](#étape-49--configurez-les-paramètres-avancés)
+    - [Étape 4.10 : Finalisation de votre instance](#étape-410--finalisation-de-votre-instance)
+    - [Étape 4.6 : Sélectionnez une période de facturation](#étape-46--sélectionnez-une-période-de-facturation)
+  - [Étape 5 : Se connecter à l'instance](#étape-5--se-connecter-à-linstance)
+    - [5.1 : Vérifier l'état de l'instance dans l'espace client](#51--vérifier-létat-de-linstance-dans-lespace-client)
+    - [5.2 : Première connexion sur une instance sous OS GNU/Linux](#52--première-connexion-sur-une-instance-sous-os-gnulinux)
+    - [5.3 : instances Windows](#53--instances-windows)
+      - [5.3.1 : Terminer l'installation d'une instance Windows](#531--terminer-linstallation-dune-instance-windows)
+      - [5.3.2 : Connectez-vous à distance depuis Windows](#532--connectez-vous-à-distance-depuis-windows)
+      - [5.3.3 : Se connecter à distance depuis un autre OS](#533--se-connecter-à-distance-depuis-un-autre-os)
+    - [5.4 : accès console VNC](#54--accès-console-vnc)
+  - [Étape 6 : premiers pas sur une nouvelle instance](#étape-6--premiers-pas-sur-une-nouvelle-instance)
+    - [6.1 : Gestion des utilisateurs](#61--gestion-des-utilisateurs)
+      - [6.1.1 : Définissez un mot de passe pour le compte d'utilisateur actuel](#611--définissez-un-mot-de-passe-pour-le-compte-dutilisateur-actuel)
+      - [6.1.2 : Activation de la connexion à distance par mot de passe (optionnel)](#612--activation-de-la-connexion-à-distance-par-mot-de-passe-optionnel)
+    - [6.2 : Clés SSH supplémentaires](#62--clés-ssh-supplémentaires)
+- [Aller plus loin](#aller-plus-loin)
 
 > [!primary]
 >
@@ -176,15 +187,27 @@ Sur la page « **Accueil** », cliquez sur `Créer une instance`{.action}.
 
 <a name="model"></a>
 
-#### Étape 4.1 : Sélectionnez un modèle
+#### Étape 4.1 : Nom de l'instance
 
-Lors de la première étape, vous sélectionnez un modèle d'instance (que l'on peut également appeler « *flavour* ») qui définit les ressources de l'instance. Cliquez sur l'onglet avec la ressource clé pour vos besoins afin de trouver nos modèles d'instances optimisés.
+Entrez un nom complet pour votre instance. La référence commerciale du modèle d'instance est la valeur par défaut.
+
+#### Étape 4.2 : Sélectionnez une localisation
+
+Sélectionnez une [région](/links/public-cloud/regions-pci) la plus proche de vos utilisateurs ou clients. Notez que si vous sélectionnez une **Local Zone** à cette étape, des limitations de réseau s'appliqueront à l'instance (voir [Étape 3](#networking-modes)).
+
+Reportez-vous également aux informations de la [page web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+![sélection de région](images/24-instance-creation03.png){.thumbnail}
+
+#### Étape 4.3 : Sélectionnez un modèle
+
+À cette étape, vous choisissez le modèle d’instance (également appelé flavour), qui détermine les ressources allouées à votre instance : processeur, mémoire et capacités associées. Ouvrez la liste déroulante `Modèle de l'instance`, puis sélectionnez le type de modèle le plus adapté à votre cas d’usage afin d’accéder à notre gamme d’instances optimisées.
 
 ![instance model](images/24-instance-creation02.png){.thumbnail}
 
-Dans la section `Découverte`{.action}, nous vous proposons des modèles d’instances à ressources partagées à des prix avantageux. Elles sont idéales pour tester le Public Cloud en général ou une application web par exemple.
+Le type de modèle `Découverte`{.action} regroupe des instances à ressources partagées, proposées à des tarifs compétitifs. Elles sont particulièrement adaptées pour découvrir le Public Cloud OVHcloud, réaliser des tests, ou héberger des charges de travail légères comme des applications web.
 
-Les modèles d'instance de type `Metal`{.action} fournissent des ressources physiques dédiées.
+Les modèles d’instance Metal{.action} offrent quant à eux des ressources physiques entièrement dédiées, garantissant des performances constantes et une isolation maximale pour les workloads les plus exigeants.
 
 > [!primary]
 >
@@ -199,13 +222,14 @@ Les modèles d'instance de type `Metal`{.action} fournissent des ressources phys
 
 | Type | Ressources garanties | Notes d'utilisation |
 | :---         |     :---:      |          :--- |
+| Best Sellers   | ✓     | Modèles les plus utilisés.    |
 | General Purpose   | ✓     | Serveurs de développement, applications web ou métier    |
 | Compute Optimized     | ✓       | Encodage vidéo ou autre calcul haute performance      |
 | Memory Optimized    | ✓     | Bases de données, analyses et calculs en mémoire    |
-| GPU     | ✓       | Puissance de traitement massivement parallèle pour les applications spécialisées (rendu, big data, deep learning, etc.)       |
-| Discovery    | -       | Hébergement sur ressources partagées pour les environnements de test et de développement      |
 | Storage Optimized   | ✓     | Optimisé pour le transfert de données sur disque    |
-| Metal | ✓ | Ressources dédiées avec accès direct aux ressources de calcul, de stockage et de réseau|
+| Discovery    | -       | Hébergement sur ressources partagées pour les environnements de test et de développement      |
+| Cloud GPU     | ✓       | Puissance de traitement massivement parallèle pour les applications spécialisées (rendu, big data, deep learning, etc.)       |
+| Metal Instances | ✓ | Ressources dédiées avec accès direct aux ressources de calcul, de stockage et de réseau|
 
 ///
 
@@ -223,19 +247,9 @@ Les Local Zones sont une extension des **régions** qui rapprochent les services
 
 <a name="region"></a>
 
-#### Étape 4.2 : Sélectionnez une localisation
+#### Étape 4.4 : Sélectionnez une image
 
-Sélectionnez une [région](/links/public-cloud/regions-pci) la plus proche de vos utilisateurs ou clients. Cette option peut être limitée, selon le choix du modèle à l'**étape 4.1**. Notez que si vous sélectionnez une **Local Zone** à cette étape, des limitations de réseau s'appliqueront à l'instance (voir [Étape 3](#networking-modes)).
-
-Reportez-vous également aux informations de la [page web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
-
-![sélection de région](images/24-instance-creation03.png){.thumbnail}
-
-<a name="image"></a>
-
-#### Étape 4.3 : Sélectionnez une image
-
-Cliquez sur l'onglet de votre choix et sélectionnez un système d'exploitation pour votre instance dans les menus déroulants.
+Ouvrez la liste déroulante `Type de distribution`, sélectionnez la catégorie correspondant à votre besoin, puis choisissez le `système d’exploitation` à déployer sur votre instance à l’aide du menu déroulant `Version de l'image`.
 
 ![image selection](images/24-instance-creation04.png){.thumbnail}
 
@@ -246,7 +260,9 @@ Les images disponibles à cette étape dépendent des choix opérés lors des é
 > Si vous choisissez un système d'exploitation nécessitant une licence payante, ces coûts seront automatiquement inclus dans la facturation du projet.
 >
 
-Cette étape nécessite également **l'ajout d'une clé SSH publique** (à l'exception des instances Windows). Vous avez 2 options :
+#### Étape 4.5 : Sélection d’une clé SSH (non applicable aux instances Windows)
+
+A l'exception des instances Windows, la configuration de votre instance nécessite également **l'ajout d'une clé SSH publique**. Vous avez 2 options :
 
 - Utiliser une clé publique déjà stockée dans l'espace client OVHcloud
 - Saisir directement une clé publique
@@ -268,84 +284,86 @@ Cliquez sur les onglets ci-dessous pour afficher leur présentation :
 >> Avant de cliquer sur `Suivant`{.action}, vous pouvez faire le choix d'utiliser le bouton `Ajouter une clé`{.action} pour stocker cette clé dans votre espace client OVHcloud (voir l'[étape 2](#import-ssh) pour plus de détails).
 >>
 
-<a name="configuration"></a>
+#### Étape 4.6 : Configurez les paramètres de sauvegarde
 
-#### Étape 4.4 : Configurez votre instance
+Vous pouvez activer [les sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) en cochant cette option. Prenez le temps de consulter les informations tarifaires et les détails complémentaires avant de poursuivre.
+
+Ensuite, sélectionnez le type de rotation, c’est-à-dire le nombre maximum de sauvegardes conservées en historique : 7 ou 14 jours.
+
+#### Étape 4.7 : Configurez le réseau
+
+Dans cette étape, vous allez configurer le réseau de votre instance.
+
+**Réseau privé**
+
+Vous pouvez connecter votre instance à un [réseau privé](#networking-modes) et lui attribuer une [Floating IP](/links/public-cloud/floating-ip). Dans ce cas, aucune adresse IP publique dédiée ne sera assignée.
+
+En cliquant sur `Créer un réseau privé`{.action}, vous pouvez en créer un directement :
+
+- Nommer le réseau
+- Choisir le VLAN ID
+- Définir le CIDR
+- Activer le DHCP en cochant la case correspondante, si nécessaire
+
+> [!primary]
+>
+> L’instance peut rester entièrement privée si vous ne lui attribuez pas d’IP publique.
+>
+
+**Gateway**
+
+Vous pouvez activer l’option pour attribuer une gateway à votre réseau. Par défaut, la gateway est de taille S, mais vous pourrez ajuster sa taille ultérieurement dans les paramètres.
+
+**Attribuer une connectivité publique**
+
+Vous pouvez activer ou désactiver cette fonctionnalité selon vos besoins. Si vous choisissez de l’activer, deux options s’offrent à vous :
+
+- **Basic Public IP :** une adresse IP publique temporaire, qui ne persiste pas au-delà de la durée de vie de l’instance. Notez que l’utilisation d’une Basic Public IP n’est pas compatible avec une gateway.
+- **Floating IP :** vous pouvez créer une nouvelle Floating IP ou réutiliser une adresse existante, permettant une IP publique persistante et détachable de l’instance.
+
+#### Étape 4.8 : Sélectionnez une période de facturation
+
+![mode de facturation](images/24-instance-creation14.png){.thumbnail}
+
+> [!primary]
+>
+> Veuillez noter que, selon le modèle d’instance choisi, la facturation **horaire** peut être la seule sélection affichée. Il s’agit d’une limitation temporaire, de nouvelles options de facturation de Public Cloud seront bientôt disponibles.
+>
+
+> [!tabs]
+> **Facturation mensuelle**
+>>
+>> La facturation mensuelle entraînera une baisse des coûts au fil du temps, mais **ne peut pas être changé** en facturation à l'heure une fois l'instance créée.<br>
+>>
+> **Facturation à l’heure**
+>>
+>> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
+>> L'instance sera facturée tant qu'elle n'est **pas supprimée**, quelle que soit l'utilisation réelle de l'instance.
+>>
+
+Retrouvez les détails dans notre documentation de facturation dédiée :
+
+- [Facturation du Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
+- [FAQ sur la facturation mensuelle](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
+
+Une fois la configuration de votre instance terminée, cliquez sur le bouton `Créer une instance`{.action}. La livraison de votre service peut prendre quelques minutes.
+
+#### Étape 4.9 : Configurez les paramètres avancés
+
+Vous pouvez ajouter [votre script de post-installation](/pages/public_cloud/compute/launching_script_when_creating_instance) dans ce champ.
+
+#### Étape 4.10 : Finalisation de votre instance
+
+Sur le côté droit de votre écran , se trouve le récapitulatif de votre configuration. Dans cette section vous pourrez configurer le nombre d'instances à créer. Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront
 
 ![instance select](images/24-instance-creation08.png){.thumbnail}
 
 Cette étape offre plusieurs options de configuration. Cliquez sur les onglets ci-dessous pour afficher les détails :
 
-> [!tabs]
-> **1 : Nombre d'instances à créer**
->>
->> Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront.<br>
->>
 > **2 : Instance flexible**
 >>
 >> Si le modèle sélectionné est compatible, vous pouvez choisir de créer une **instance Flex**. Cette option vous permet d’effectuer une mise à niveau vers un modèle plus petit (et même de passer à une autre catégorie de modèle), mais elle limite l’instance à **50 Go de stockage inclus fixes**, quelles que soient les autres mises à niveau ou rétrogradations.<br>
 >>
-> **3 : Nom de l’instance**
->>
->> Entrez un nom complet pour votre instance. La référence commerciale du modèle d'instance est la valeur par défaut.<br>
->>
-> **4 : Script de post-installation**
->>
->> Vous pouvez ajouter [votre script](/pages/public_cloud/compute/launching_script_when_creating_instance) dans ce champ.<br>
->>
-> **5 : Sauvegarde automatique des instances**
->>
->> Vous pouvez activer [les sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) en sélectionnant cette option. Veuillez prendre connaissance des informations tarifaires et des détails complémentaires.
->>
-
-<a name="network"></a>
-
-#### Étape 4.5 : Configurez votre réseau
-
-Dans cette étape, vous devez appliquer le mode de réseau Public Cloud que vous avez décidé, en fonction des informations de l'[étape 3](#network) ci-dessus. Vos options dépendent du [choix de l'emplacement précédent](#region) pour l'instance (**Région** ou **Local Zone**).
-
-##### Régions
-
-> [!tabs]
-> **Mode Privé**
->>
->> L’instance peut rester entièrement privée.<br><br>
->>![network type](images/24-instance-creation09.png){.thumbnail}<br>
->> Vous pouvez connecter l'instance à un [réseau privé](#networking-modes) et une [Floating IP](/links/public-cloud/floating-ip). Aucune adresse IP publique dédiée ne sera attachée.<br><br>
->>![network type](images/24-instance-creation10.png){.thumbnail}<br>
->> Notez que si vous cliquez sur `Créer un nouveau réseau privé`{.action}, le processus de création d'instance sera interrompu et devra être redémarré depuis le début.<br>
->>
-> **Mode Public**
->>
->> L’instance sera exposée à Internet directement via IPv4/IPv6.<br><br>
->>![network type](images/24-instance-creation11.png){.thumbnail}<br>
->> Vous pouvez également connecter l’instance à un [réseau privé](#networking-modes) (vRack) via le menu déroulant.<br>
->> Notez que si vous cliquez sur `Créer un nouveau réseau privé`{.action}, le processus de création d'instance sera interrompu et devra être redémarré depuis le début.
->>
-
-Cliquez sur `Suivant`{.action} pour passer à la dernière étape.
-
-##### Local Zones
-
-Vous pouvez choisir d'attacher l'instance à un réseau privé, de la rendre accessible publiquement ou les deux.
-
-![network type](images/24-instance-creation12.png){.thumbnail}
-
-> [!tabs]
-> **Réseau Public**
->>
->> Si vous sélectionnez l'option `Réseau Public`, l'instance sera exposée à Internet directement via IPv4/IPv6.<br>
->> Vous pouvez en plus connecter l'instance à un [réseau privé](#networking-modes) (non compatible avec vRack) si vous sélectionnez `Réseau Privé Local compatible avec Local Zones` (voir l'onglet **Réseau Privé Local**).
->>
-> **Réseau Privé Local**
->>
->> Cochez la case `Réseau Privé Local compatible avec Local Zones`. Si vous sélectionnez **cette option sans sélectionner** `Réseau Public`, l'instance restera entièrement privée, attachée à un [réseau privé](#networking-modes) (non compatible avec vRack). Choisissez un réseau existant dans la liste via l'option `Associer un réseau privé existant` ou créez-en un nouveau pour la Local Zone en choisissant `Créer un réseau privé local` (sans interrompre le processus de création de l'instance).<br><br>
->>![network type](images/24-instance-creation13.png){.thumbnail}
->>
-
-Cliquez sur `Suivant`{.action} pour passer à la dernière étape.
-
-<a name="billing"></a>
 
 #### Étape 4.6 : Sélectionnez une période de facturation
 
@@ -373,8 +391,6 @@ Retrouvez les détails dans notre documentation de facturation dédiée :
 - [FAQ sur la facturation mensuelle](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
 
 Une fois la configuration de votre instance terminée, cliquez sur le bouton `Créer une instance`{.action}. La livraison de votre service peut prendre quelques minutes.
-
-<a name="connect-instance"></a>
 
 ### Étape 5 : Se connecter à l'instance
 
