@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -33,6 +33,7 @@ The NIC handle is a personal username that you receive via email when you create
 - Appropriate rights for the service concerned.
 - The new contact’s NIC handle (the contact you want to add).
 - No outstanding payments on billing contacts.
+- The new billing contact must have a valid payment method in their OVHcloud account.
 
 ## Instructions
 

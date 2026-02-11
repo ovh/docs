@@ -1,7 +1,7 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Obiettivo
@@ -34,6 +34,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 - Avere a disposizione l’identificativo cliente del nuovo contatto (per cui si sta effettuando la modifica)
 - Il nuovo contatto deve avere accesso all'indirizzo email inserito nel proprio profilo
 - Il vecchio e il nuovo contatto di fatturazione devono essere in regola con i pagamenti dei propri servizi
+- Il nuovo contatto di fatturazione deve disporre di una modalità di pagamento valida sul proprio account OVHcloud.
 
 ## Procedura
 

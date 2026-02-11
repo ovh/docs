@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -31,6 +31,7 @@ There are three different contact types:
 - Appropriate rights for the service concerned.
 - The new contact’s email address.
 - No outstanding payments on billing contacts.
+- The new billing contact must have a valid payment method in their OVHcloud account.
 
 ## Instructions
 

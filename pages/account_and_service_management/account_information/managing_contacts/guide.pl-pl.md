@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Wprowadzenie
@@ -34,6 +34,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 - Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
 - Nowy kontakt musi mieć dostęp do adresu e-mail podanego w jego profilu.
 - Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
+- Nowy kontakt księgowy musi dysponować ważnym sposobem płatności na swoim koncie OVHcloud.
 
 ## W praktyce
 

@@ -1,7 +1,7 @@
 ---
 title: 'Como gerir os contactos (gestores) dos serviços OVHcloud'
 excerpt: 'Saiba como definir ou alterar os contactos (gestores) dos serviços OVHcloud'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objetivo
@@ -33,6 +33,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 - Ter acesso ao Identificador de Cliente (ID de Cliente) do utilizador que irá ser definido como contacto.
 - Todos os utilizadores envolvidos na alteração de um contacto devem ter acesso à conta de e-mail associada aos seus perfis.
 - O antigo e o novo contacto faturação devem ter os pagamentos em dia.
+- O novo contacto de faturação deve dispor de um método de pagamento válido na sua conta OVHcloud.
 
 ## Instruções
 
