@@ -46,7 +46,7 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Si la version du firmware est inférieure ou égale à 1,14 , merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
+Si la version du firmware est inférieure ou égale à 1.14, merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
 
 ### Sur un Serveur Windows
 
@@ -68,7 +68,7 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Si la version du firmware est inférieure ou égale à 1,14 , merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
+Si la version du firmware est inférieure ou égale à 1.14, merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
 
 ## Aller plus loin
 
