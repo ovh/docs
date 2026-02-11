@@ -50,7 +50,7 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, l
 >> 
 >> Tableau des correspondances PoP / Régions de faible latence
 >> 
->> | Ville | PoP | Région de faible latence OVHcloud | Bande passante OCC Direct (Gbps) |
+>> | Ville | PoP | Région de faible latence OVHcloud | 1 Gbps | 10 Gbps | 100 Gbps |
 >> | :--- | :--- | :--- | :--- | :--- | :--- |
 >> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) | X | X | |
 >> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) | X | X | |
@@ -64,7 +64,7 @@ Les tableaux suivant répertorient les régions accessibles depuis chaque PoP, l
 >> 
 >> Tableau des correspondances PoP / Régions de faible latence
 >> 
->> | Ville | PoP | Région de faible latence OVHcloud | Bande passante OCC Direct (Gbps) |
+>> | Ville | PoP | Région de faible latence OVHcloud | 1 Gbps | 10 Gbps | 100 Gbps |
 >> | :--- | :--- | :--- | :--- | :--- | :--- |
 >> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) | X | X | |
 >> | **Singapour** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) | X | X | |

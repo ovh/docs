@@ -50,7 +50,7 @@ The following tables list the regions accessible from each PoP, the correspondin
 >> 
 >> PoP / Low-latency Region Mapping Table
 >> 
->> | City | PoP | Low-latency OVHcloud Region | OCC Direct Bandwidth (Gbps) |
+>> | City | PoP | Low-latency OVHcloud Region | 1 Gbps | 10 Gbps | 100 Gbps |
 >> | :--- | :--- | :--- | :--- | :--- | :--- |
 >> | **Montreal** | Cologix - MTL3 | Beauharnois (`ca-east-bhs`) | X | X | |
 >> | **Toronto** | Equinix - TR1 | Toronto (`ca-east-tor`) | X | X | |
@@ -64,7 +64,7 @@ The following tables list the regions accessible from each PoP, the correspondin
 >> 
 >> PoP / Low-latency Region Mapping Table
 >> 
->> | City | PoP | Low-latency OVHcloud Region | OCC Direct Bandwidth (Gbps) |
+>> | City | PoP | Low-latency OVHcloud Region | 1 Gbps | 10 Gbps | 100 Gbps |
 >> | :--- | :--- | :--- | :--- | :--- | :--- |
 >> | **Mumbai** | Equinix - MB2 | Mumbai (`ap-south-mum`) | X | X | |
 >> | **Singapore** | Equinix - SG1 | Singapore (`ap-southeast-sgp`) | X | X | |
