@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -32,6 +32,7 @@ Trois types de contacts existent:
 - Connaître l'adresse e-mail principale renseignée dans le compte OVHcloud du nouveau contact (pour qui vous réalisez la modification).
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail principale renseignée dans son compte OVHcloud.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
+- Le nouveau contact de facturation doit disposer d'un moyen de paiement valide dans son compte OVHcloud.
 
 ## En pratique
 
