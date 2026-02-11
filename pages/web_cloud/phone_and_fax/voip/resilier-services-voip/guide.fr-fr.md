@@ -42,7 +42,12 @@ Récupérez le RIO d'un service VoIP ou Fax depuis les informations générales 
 
 > [!success]
 >
-> Autre méthode pour une ligne SIP : composez le **3179** depuis la ligne SIP concernée.
+> Autres méthodes pour obtenir le RIO :
+>
+> - Depuis la ligne SIP concernée : composez le **3179**.
+> - Depuis une autre ligne : composez le **0805 69 3179**, puis renseignez le numéro OVHcloud concerné.
+>
+> Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 ### Résilier une ligne SIP / Trunk
 
