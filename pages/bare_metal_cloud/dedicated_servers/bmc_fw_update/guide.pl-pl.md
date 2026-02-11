@@ -6,7 +6,7 @@ updated: 2026-02-11
 
 ## Wprowadzenie
 
-Zwykłe aktualizacje oprogramowania są kluczowe dla utrzymania wydajności, stabilności i bezpieczeństwa napędów. Takie aktualizacje często obejmują istotne poprawki błędów, poprawioną kompatybilność oraz zaawansowane funkcje bezpieczeństwa, które są niezbędne do zachowania integralności danych i utrzymania optymalnej sprawności operacyjnej.
+BMC (Baseboard Management Controller) odpowiada za zdalne zarządzanie i niskopoziomową kontrolę nad sprzętem serwera. Przestarzała wersja może mieć bezpośredni wpływ na bezpieczeństwo, stabilność i zarządzanie serwerem. Aktualizacja oprogramowania układowego BMC jest niezbędna, aby usunąć luki bezpieczeństwa, utrzymać stabilność systemu i spełnić wymagania dotyczące zgodności.
 
 **W tym przewodniku opisano kroki, jak sprawdzić wersję oprogramowania BMC na dedykowanym serwerze.**
 
@@ -46,7 +46,7 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Jeśli wersja oprogramowania jest niższa niż 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
+Jeśli wersja oprogramowania sprzętowego jest mniejsza lub równa 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
 
 ### Na serwerze z systemem Windows
 
@@ -68,7 +68,7 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Jeśli wersja oprogramowania jest niższa niż 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
+Jeśli wersja oprogramowania sprzętowego jest mniejsza lub równa 1.14, skontaktuj się z naszym zespołem wsparcia, tworząc [żądanie wsparcia za pośrednictwem OVHcloud Help Center](/links/support-contact), aby zażądać aktualizacji oprogramowania. Jeśli wersja jest wyższa niż 1.14, nie jest wymagana żadna akcja.
 
 ## Sprawdź również
 

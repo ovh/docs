@@ -6,7 +6,7 @@ updated: 2026-02-11
 
 ## Objective
 
-Routine firmware updates play a pivotal role in upholding your drives performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
+A BMC (Baseboard Management Controller) is responsible for the remote management and low-level control of the server hardware. An outdated version can directly impact security, stability, and manageability of the server. Keeping the BMC firmware updated is necessary to patch security vulnerabilities, maintain system stability, and meet compliance requirements.
 
 **This guide outlines the steps to check the BMC firmware version on a dedicated server.**
 
@@ -46,7 +46,7 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-If the firmware version is lower than 1.14, please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. However, if the version is higher than 1.14, no action is required.
+If the firmware version is less than or equal to 1.14 , please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. However, if the version is greater than 1.14, no action is required.
 
 ### On a Windows Server
 
@@ -68,7 +68,7 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-If the firmware version is lower than 1.14, please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. However, if the version is higher than 1.14, no action is required.
+If the firmware version is less than or equal to 1.14 , please contact our support team by creating a [support ticket via the OVHcloud Help Center](/links/support-contact) to request a firmware update. However, if the version is greater than 1.14, no action is required.
 
 ## Go further
 

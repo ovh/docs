@@ -6,7 +6,7 @@ updated: 2026-02-11
 
 ## Ziel
 
-Regelmäßige Firmware-Updates spielen eine entscheidende Rolle bei der Aufrechterhaltung der Leistung, Stabilität und Sicherheit Ihrer Laufwerke. Solche Updates enthalten oft wichtige Fehlerbehebungen, verbesserte Kompatibilität und erweiterte Sicherheitsfunktionen, die unerlässlich sind, um die Integrität Ihrer Daten zu gewährleisten und eine optimale Betriebsleistung zu erzielen.
+Ein BMC (Baseboard Management Controller) ist für die Remote-Verwaltung und Steuerung der Server-Hardware auf niedriger Systemebene verantwortlich. Eine veraltete Version kann sich direkt auf die Sicherheit, Stabilität und Verwaltbarkeit des Servers auswirken. Die Aktualisierung der BMC-Firmware ist notwendig, um Sicherheitsschwachstellen zu beheben, die Systemstabilität aufrechtzuerhalten und Compliance-Anforderungen zu erfüllen.
 
 **Dieses Handbuch beschreibt die Schritte, um die BMC-Firmware-Version auf einem dedizierten Server zu prüfen.**
 
@@ -46,7 +46,7 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Wenn die Firmware-Version niedriger als 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
 
 ### Auf einem Windows-Server
 
@@ -68,7 +68,7 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Wenn die Firmware-Version niedriger als 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
 
 ## Weiterführende Informationen
 

@@ -6,7 +6,7 @@ updated: 2026-02-11
 
 ## Objectif
 
-Les mises à jour régulières du firmware jouent un rôle essentiel dans le maintien des performances, de la stabilité et de la sécurité de vos disques. Ces mises à jour comprennent souvent des corrections de bogues critiques, une compatibilité améliorée et des fonctionnalités de sécurité avancées indispensables pour préserver l'intégrité de vos données et maintenir une efficacité opérationnelle optimale.
+Un contrôleur BMC (Baseboard Management Controller) est responsable de la gestion à distance et du contrôle de bas niveau du matériel du serveur. Une version obsolète peut avoir un impact direct sur la sécurité, la stabilité et la facilité de gestion du serveur. Il est nécessaire de maintenir le microprogramme du contrôleur BMC à jour pour corriger les failles de sécurité, maintenir la stabilité du système et satisfaire aux exigences de conformité.
 
 **Ce guide vous indique les étapes à suivre pour vérifier la version du firmware BMC sur un serveur dédié.**
 
@@ -46,7 +46,7 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
+Si la version du firmware est inférieure ou égale à 1,14 , merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
 
 ### Sur un Serveur Windows
 
@@ -68,7 +68,7 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Si la version du firmware est inférieure à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
+Si la version du firmware est inférieure ou égale à 1,14 , merci de contacter notre support en créant un [ticket support via le centre d’aide d’OVHcloud](/links/support-contact) afin de demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est requise.
 
 ## Aller plus loin
 
