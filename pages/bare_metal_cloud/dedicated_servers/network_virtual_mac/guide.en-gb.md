@@ -15,7 +15,6 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 - A [dedicated server](/links/bare-metal/bare-metal) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - An [Additional IP address](/links/network/additional-ip) or an Additional IP block (RIPE).
 - Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api).
-- Your server must support virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
 > - This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about). Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
@@ -29,6 +28,8 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
 ## Instructions
+
+### Assign a MAC address
 
 > [!warning]
 >
@@ -51,7 +52,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 
 > [!primary]
 >
-> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'ovh' will be for any other type of virtualisation system).
+> **Type:** Refers to the virtual MAC address type ('VMware' will be a MAC address made for the VMware ESXi system, while 'ovh' will be for any other type of virtualisation system).
 >
 > **Name of virtual machine:** Refers to the desired name for the virtual MAC address, in order to make it easy to identify this IP/MAC pair in the future.
 >

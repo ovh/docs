@@ -100,7 +100,7 @@ Utilisez l'appel API suivant :
 
 Le bloc ne sera pas déplacé.
 
-Exemple : si vous tentez de déplacer un bloc de 4 IPs avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
+Exemple : si vous tentez de déplacer un bloc de 4 IP avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
 
 ## Aller plus loin
 
