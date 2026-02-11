@@ -1,7 +1,7 @@
 ---
 title: "Come ottenere l'impronta di carbonio dei servizi OVHcloud"
 excerpt: "Questa guida ti mostra come recuperare l’impronta di carbonio mensile dei servizi OVHcloud grazie al nostro calcolatore di carbonio"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Obiettivo
@@ -43,7 +43,7 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 |                      | Server Dedicato Eco                | Disponibile | 2023/05/01 |
 | Hosted Private Cloud | VMware on OVHcloud                 | Disponibile | 2023/08/01 |
 | Public Cloud         | Instance Public Cloud              | Disponibile | 2025/01/01 |
-|                      | Block Storage                      | Disponibile |            |
+|                      | Block Storage                      | Disponibile | 2025/12/01 |
 |                      | Object Storage S3                  | In arrivo   |            |
 |                      | File Storage                       | In arrivo   |            |
 |                      | Network                            | In arrivo   |            |

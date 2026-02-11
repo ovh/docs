@@ -1,7 +1,7 @@
 ---
 title: "Cómo obtener la huella de carbono de los servicios de OVHcloud"
 excerpt: "Descubra cómo obtener la huella de carbono mensual de los servicios de OVHcloud con nuestra calculadora de carbono"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objetivo
@@ -43,7 +43,7 @@ Tenga en cuenta los siguientes puntos:
 |                      | Servidor Dedicado Eco              | Disponible   | 2023/05/01 |
 | Hosted Private Cloud | VMware on OVHcloud                 | Disponible   | 2023/08/01 |
 | Public Cloud         | Instancias Public Cloud            | Disponible   | 2025/01/01 |
-|                      | Block Storage                      | Disponible   |            |
+|                      | Block Storage                      | Disponible   | 2025/12/01 |
 |                      | Object Storage S3                  | Próximamente |            |
 |                      | File Storage                       | Próximamente |            |
 |                      | Network                            | Próximamente |            |

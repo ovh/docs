@@ -1,7 +1,7 @@
 ---
 title: "CO2-Fußabdruck Ihrer OVHcloud Dienste einsehen"
 excerpt: "Erfahren Sie, wie Sie den monatlichen CO2-Fußabdruck der OVHcloud Dienste mit unserem CO2-Rechner abrufen"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Ziel
@@ -43,7 +43,7 @@ Dabei sind mehrere Punkte zu beachten:
 |                      | Eco Dedicated Server               | Verfügbar           | 2023/05/01 |
 | Hosted Private Cloud | VMware on OVHcloud                 | Verfügbar           | 2023/08/01 |
 | Public Cloud         | Public Cloud Instanzen             | Verfügbar           | 2025/01/01 |
-|                      | Block Storage                      | Verfügbar           |            |
+|                      | Block Storage                      | Verfügbar           | 2025/12/01 |
 |                      | Object Storage S3                  | Demnächst verfügbar |            |
 |                      | File Storage                       | Demnächst verfügbar |            |
 |                      | Network                            | Demnächst verfügbar |            |

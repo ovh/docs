@@ -1,7 +1,7 @@
 ---
 title: "Comment obtenir l'empreinte carbone de vos services OVHcloud"
 excerpt: "Découvrez comment récupérer l'empreinte carbone mensuelle des services OVHcloud grâce à notre calculatrice carbone"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Plusieurs points sont à prendre en compte :
 |                      | Serveur Dédié Eco                  | Disponible  | 2023/05/01 |
 | Hosted Private Cloud | VMware on OVHcloud                 | Disponible  | 2023/08/01 |
 | Public Cloud         | Instances Public Cloud             | Disponible  | 2025/01/01 |
-|                      | Block Storage                      | Disponible  |            |
+|                      | Block Storage                      | Disponible  | 2025/12/01 |
 |                      | Object Storage S3                  | À venir     |            |
 |                      | File Storage                       | À venir     |            |
 |                      | Network                            | À venir     |            |

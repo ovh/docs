@@ -1,7 +1,7 @@
 ---
 title: "How to obtain the carbon footprint of your OVHcloud services"
 excerpt: "Find out how to retrieve the monthly carbon footprint of your OVHcloud services using our carbon calculator"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -43,7 +43,7 @@ Please note the following information:
 |                      | Eco Dedicated servers              | Available   | 2023/05/01 |
 | Hosted Private Cloud | VMware on OVHcloud                 | Available   | 2023/08/01 |
 | Public Cloud         | Instances Public Cloud             | Available   | 2025/01/01 |
-|                      | Block Storage                      | Available   |            |
+|                      | Block Storage                      | Available   | 2025/12/01 |
 |                      | Object Storage S3                  | Coming soon |            |
 |                      | File Storage                       | Coming soon |            |
 |                      | Network                            | Coming soon |            |

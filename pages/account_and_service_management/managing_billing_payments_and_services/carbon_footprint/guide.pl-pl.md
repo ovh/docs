@@ -1,7 +1,7 @@
 ---
 title: "Jak uzyskać ślad węglowy Twoich usług OVHcloud"
 excerpt: "Dowiedz się, jak odzyskać miesięczny ślad węglowy usług OVHcloud za pomocą naszego kalkulatora emisji dwutlenku węgla"
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 ## Wprowadzenie
@@ -43,7 +43,7 @@ Należy wziąć pod uwagę kilka kwestii:
 |                      | Serwery dedykowane Eco             | Dostępne    | 2023/05/01 |
 | Hosted Private Cloud | VMware na OVHcloud                 | Dostępne    | 2023/08/01 |
 | Public Cloud         | Instancje Public Cloud             | Dostępne    | 2025/01/01 |
-|                      | Block Storage                      | Dostępne    |            |
+|                      | Block Storage                      | Dostępne    | 2025/12/01 |
 |                      | Object Storage S3                  | Wkrótce     |            |
 |                      | File Storage                       | Wkrótce     |            |
 |                      | Sieć                               | Wkrótce     |            |
