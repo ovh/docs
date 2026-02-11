@@ -1,12 +1,8 @@
 ---
 title: "Configurar el registro DNS inverso de una instancia de Public Cloud"
 excerpt: Cómo activar la resolución inversa DNS
-updated: 2025-04-28
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -26,19 +22,19 @@ La configuración de la resolución **inversa DNS** de una instancia resulta esp
 
 Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Network`{.action} y haga clic en `Direcciones IP públicas`{.action}.
 
-El menú desplegable **Mis direcciones IP públicas y servicios asociados** le permite filtrar sus servicios por categoría.
+El menú desplegable bajo "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categoría. También puede buscar una dirección IP específica utilizando la barra de búsqueda situada a la izquierda del menú desplegable.
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Cambiar el registro inverso`{.action}.
+Haga clic en `⁝`{.action} en la línea de la dirección IP correspondiente y seleccione `Configurar el registro DNS inverso`{.action}.
 
-![Registro inverso](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.action}.
+En la nueva ventana, introduzca su reverse y haga clic en `Confirmar`{.action}.
 
-![Registro inverso](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-También puede editar el registro inverso directamente a través del icono de la columna **inversa** de la tabla.
+También puede editar el DNS inverso directamente a través del icono `lápiz`{.action} en la columna **Registro DNS inverso** de la tabla.
 
 > [!primary]
 >

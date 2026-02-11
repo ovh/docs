@@ -49,8 +49,8 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Ya puede sacar la instancia del modo de rescate. (Ver la guía [Convertir una instancia en modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Ya puede sacar la instancia del modo de rescate. (Ver la guía [Convertir una instancia en modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

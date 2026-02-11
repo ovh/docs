@@ -158,7 +158,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 > **Debian 12+, Ubuntu 22.04**
 >> Debian 12, Ubuntu 22.04 i późniejsze wersje
 >>
->> Plik konfiguracyjny adresów Additional IP znajduje się w pliku`/etc/netplan/`. W tym przykładzie nazywa się `50-cloud-init.yaml`.
+>> Plik konfiguracyjny adresów Additional IP znajduje się w pliku `/etc/netplan/`. W tym przykładzie nazywa się `50-cloud-init.yaml`.
 >>
 >> Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w celu zdefiniowania adresów Additional IP. W przypadku błędu można łatwo przywrócić modyfikacje.
 >>
@@ -244,7 +244,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> ```
 >>
 > **AlmaLinux / Rocky Linux**
->> **AlmaLinux (8/9), Rocky Linux (8/9)
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> Główny plik konfiguracyjny znajduje się w folderze `/etc/sysconfig/network-scripts/`. W tym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
 >>

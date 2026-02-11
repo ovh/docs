@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
 excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
-updated: 2025-09-19
+updated: 2026-01-22
 ---
 
 <style>
@@ -43,18 +43,6 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 
 ## Procedimiento
 
-> [!primary]
->
-> En nuestro ejemplo, utilizamos la referencia del servidor: ex?.mail.ovh.net. Deberá reemplazar el "?" por el número que identifica su servidor de Exchange.
->
-> Para encontrar el nombre del servidor:
->
-> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-> 2. Vaya a la sección `Web Cloud`{.action}.
-> 3. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-> 4. Seleccione la plataforma correspondiente.
-> 5. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
-
 ### Añadir la cuenta
 
 - **Al iniciar la aplicación por primera vez**: aparece un asistente de configuración que le pide que introduzca su dirección de correo electrónico.
@@ -92,7 +80,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de recepción:
 >>
 >>  - **Protocolo**: IMAP
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 993
 >>  - **Seguridad de la conexión**: SSL/TLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -105,7 +93,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de envío:
 >>
 >>  - **Protocolo**: SMTP 
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+>>  - **Nombre de host**: ex.mail.ovh.ca
 >>  - **Puerto**: 587
 >>  - **Seguridad de la conexión**: STARTTLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -132,7 +120,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 > Configuración del servidor de recepción:
 >
 > - **Protocolo**: POP3
-> - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
+> - **Nombre de host**: ex.mail.ovh.ca
 > - **Puerto**: 995
 > - **Seguridad de la conexión**: SSL/TLS
 > - **Método de autenticación**: Contraseña normal

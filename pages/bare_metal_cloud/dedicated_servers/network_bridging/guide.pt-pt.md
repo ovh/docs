@@ -1,7 +1,7 @@
 ---
 title: 'Configurar os Additional IP em modo bridge nas suas máquinas virtuais'
 excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
-updated: 2025-12-04
+updated: 2026-01-06
 ---
 
 <style>
@@ -43,7 +43,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 >
 > Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 >
-> Desde maio de 2025, este guia pode ser utilizado para os servidores das gamas [Scale](https://www.ovhcloud.com/pt/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/).
+> Desde maio de 2025, este guia pode ser utilizado para os servidores das gamas [Scale](/links/bare-metal/scale) e [High Grade](/links/bare-metal/hg).
 >
 > Também é possível configurar os Additional IP no modo encaminhado ou através do vRack. Para isso, pode consultar: [Configurar a rede em Proxmox VE nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurar a rede em Windows Server com Hyper-V nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
@@ -66,19 +66,19 @@ Para este exemplo, utilizaremos os seguintes valores nos nossos exemplos de cód
 > [!warning]
 > No caso de um bloco de IP, os endereços MAC virtuais são criados em cada IP individual no bloco.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique no menu `Bare Metal Cloud`{.action} e depois na secção `Network`{.action}. De seguida, clique em `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
-Clique no separador `Additional IP`{.action}.
+Pode utilizar o menu suspenso em **Os meus endereços IP públicos e serviços associados** e selecionar **Todos os Additional IP** para filtrar os seus serviços, ou digitar diretamente o endereço IP desejado na barra de pesquisa.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![Área de Cliente](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Clique nas `...`{.action} e, a seguir, em `Adicionar um endereço MAC virtual`{.action}.
+Clique nas `⁝`{.action} e, a seguir, em `Adicionar um endereço MAC virtual`{.action}.
 
-![Adicionar um MAC virtual (1)](images/addvmac.png){.thumbnail}
+![Adicionar um MAC virtual (1)](images/addvmac_new.png){.thumbnail}
 
 Selecione « ovh » (ou « vmware » se o sistema for um ESXI) na lista pendente « Tipo ». Introduza um nome no campo « Nome da máquina virtual » e, em seguida, clique em `Validar`{.action}.
 
-![Adicionar um MAC virtual (2)](images/addvmac2.png){.thumbnail}
+![Adicionar um MAC virtual (2)](images/addvmac2_new.png){.thumbnail}
 
 Após alguns segundos, um endereço MAC virtual aparecerá na coluna "MAC virtual" da linha de endereço Additional IP. Esse endereço MAC virtual será necessário ao configurar sua VM no host.
 

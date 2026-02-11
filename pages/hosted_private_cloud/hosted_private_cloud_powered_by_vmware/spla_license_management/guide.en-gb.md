@@ -1,7 +1,7 @@
 ---
 title: "How to manage Windows licences for virtual machines on your Hosted Private Cloud infrastructure"
 excerpt: "Learn how to track and activate Windows licences for your virtual machines using the OVHcloud Control Panel or API"
-updated: 2025-06-23
+updated: 2026-01-03
 ---
 
 ## Objective
@@ -81,6 +81,10 @@ There are two scenarios:
 > [!success]
 > 
 > The VM is now declared and licenced by OVHcloud. It will appear in your billing and compliance tracking.
+
+When you install a Windows Server operating system, the product key – also known as a KMS (Key Management Service) key – may not be installed correctly. In such cases, the operating system has been installed with a 120-day trial key. Once this time period elapses, the operating system can no longer be used. 
+
+[This guide](/pages/bare_metal_cloud/dedicated_servers/windows_key) will show you how to change the product key for your Windows Server environment.
 
 ### Manage licences using the OVHcloud API
 

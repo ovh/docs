@@ -1,7 +1,7 @@
 ---
-title: Gestionar los contactos de los servicios
-excerpt: Cómo gestionar los distintos contactos de los servicios de OVHcloud
-updated: 2025-08-27
+title: 'Gestionar los contactos de los servicios'
+excerpt: 'Cómo gestionar los distintos contactos de los servicios de OVHcloud'
+updated: 2026-02-10
 ---
 
 ## Objetivo
@@ -18,7 +18,7 @@ La mayoría de servicios creados en OVHcloud los gestionan varios contactos. Cad
 
 Existen tres tipos de contactos:
 
-- **El contacto administrador** se encarga de los aspectos administrativos y técnicos del servicio. Tiene permisos para modificar el resto de contactos y puede realizar cambios en los datos del propietario de servicios como, por ejemplo, los dominios.
+- **El contacto administrador** se encarga de los aspectos administrativos y técnicos del servicio. Tiene permisos para modificar el resto de contactos y puede realizar cambios en los datos del titular de servicios como, por ejemplo, los nombres de dominio.
 - **El contacto técnico** solo se encarga de los aspectos técnicos del servicio.
 - **El contacto de facturación** solo se encarga de los aspectos relativos a la facturación del servicio. En concreto, es el que recibe las notificaciones referentes a las renovaciones. 
 

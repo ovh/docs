@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2025-07-22
+updated: 2026-01-23
 ---
 
 > [!primary]
@@ -50,7 +50,7 @@ Avec cette configuration, les adresses Additional IP doivent être attachées à
 > [!tabs]
 > Gammes High Grade & Scale
 >>
->> ![schema route](images/schema_route2022.png){.thumbnail}
+>> ![schema route](images/schema_route.png){.thumbnail}
 >>
 > Gamme Advance
 >>
@@ -110,7 +110,7 @@ sysctl -p
 >> # Interfaces publiques
 >> auto bond0
 >> iface bond0 inet manual
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -133,7 +133,7 @@ sysctl -p
 >> # Interfaces privées
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -265,7 +265,7 @@ Cette configuration est plus souple car il n'est pas nécessaire d'associer une 
 
 #### Schéma de la configuration cible
 
-![schema vrack](images/schema_vrack2022.png){.thumbnail}
+![schema vrack](images/Schema_vrack.png){.thumbnail}
 
 #### Explications
 
@@ -332,7 +332,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface bond0 inet static
 >>         address PUB_IP_DEDICATED_SERVER/32
 >>         gateway 100.64.0.1
->>         bond-slaves ens33f0 ens33f1
+>>         bond-slaves ens33f0 ens35f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4
@@ -340,7 +340,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> # Interfaces privées
 >> auto bond1
 >> iface bond1 inet manual
->>         bond-slaves ens35f0 ens35f1
+>>         bond-slaves ens35f0 ens33f1
 >>         bond-mode 802.3ad
 >>         bond-lacp-rate fast
 >>         bond-xmit-hash-policy layer3+4

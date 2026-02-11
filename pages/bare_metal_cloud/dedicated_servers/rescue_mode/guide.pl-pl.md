@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja i korzystanie z trybu Rescue"
 excerpt: "Dowiedz się, jak używać trybu customer rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
-updated: 2025-01-20
+updated: 2026-01-09
 ---
 
 <style>
@@ -351,6 +351,14 @@ chroot /mnt/
 ```
 
 Teraz należy móc zastosować wszystkie niezbędne zmiany w systemie, na przykład aby [odzyskać dostęp do serwera](#gofurther).
+
+### Konfiguracja agregacji łączy w trybu rescue
+
+Agregacja łączy (LACP) jest bardzo korzystna, ponieważ pozwala zwiększyć całkowitą przepustowość serwera, zapewniając jednocześnie redundancję sieci w przypadku awarii interfejsu sieciowego.
+
+Chociaż trybu rescue jest oparty na systemie operacyjnym Debian 12, jego konfiguracja sieciowa opiera się na narzędziu `ifupdown`, a nie `Netplan`.
+
+Jeśli posiadasz serwer obsługujący agregację łączy i chcesz skonfigurować ją w trybu rescue, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Wyjście z trybu rescue
 

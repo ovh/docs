@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/kbyLL9x)
-
 ## Obiettivo
 
 Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno di un e-commerce per vendere i tuoi prodotti online? Questa guida dedicata ai primi passi dell’hosting Web OVHcloud ti mostra gli step chiave per configurarlo. Trovi anche le spiegazioni per creare indirizzi email professionali associati al tuo dominio. Ti permette di pubblicare online il tuo progetto in modo semplice e rapido, per comunicare con il tuo pubblico in modo efficace.

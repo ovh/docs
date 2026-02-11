@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Configuring Access Rights
 excerpt: A comprehensive guide to managing access rights for Logs Data Platform using OVHcloud IAM
-updated: 2025-10-16
+updated: 2026-01-22
 ---
 
 <style>
@@ -48,11 +48,9 @@ You can then create a policy with the basic rights to access the OVHcloud Contro
 
 ![basic policy](images/basic_policy_1.png){.thumbnail}
 
-After attaching the group, you can add the **controlPanelAccess** right to it.
+After attaching the group, follow the instructions from our guide: [Creating an IAM policy to allow users access to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-control-panel-access).
 
-![basic policy 2](images/basic_policy_2.png){.thumbnail}
-
-The group is now configured, you can then create the local users.
+Once the groups is configured, you can then create the local users.
 
 ### Create a local user
 

@@ -246,17 +246,17 @@ Wenn alle oben genannten Bedingungen erfüllt sind, können Sie die Löschung Ih
 
 ### Verwalten von Benachrichtigungen und Logs
 
-/// details | Erhalte ich Benachrichtigungen von OVHcloud auf mehrere E-Mail-Adressen?
+/// details | Kann ich Benachrichtigungen von OVHcloud an mehrere E-Mail-Adressen senden lassen?
 
-Ab November 2025 können Sie neue Kontakte-Mailadressen hinzufügen, um die Verteilung der von OVHcloud gesendeten E-Mails besser zu verwalten.
+Seit November 2025 können Sie neue Kontakt-Mailadressen hinzufügen, um die Verteilung der von OVHcloud gesendeten E-Mails besser zu verwalten.
 
-Weitere Informationen finden Sie in unserem dedizierten Guide: [Verwalten von Kommunikationen zu OVHcloud-Diensten](/pages/account_and_service_management/account_information/manage-messages).
+Weitere Informationen finden Sie in unserem Guide: [Verwalten von Kommunikationen zu OVHcloud-Diensten](/pages/account_and_service_management/account_information/manage-messages).
 
 ///
 
 /// details | Ich habe eine E-Mail von OVHcloud erhalten. Wie kann ich prüfen, ob sie echt ist?
 
-Alle unsere E-Mails entsprechen unseren Sicherheitsstandards (SPF, DKIM, DMARC) und stammen von einer E-Mail-Adresse, deren Domainname (oder der entsprechende Unterdomain) unten aufgelistet ist:
+Alle unsere E-Mails entsprechen unseren Sicherheitsstandards (SPF, DKIM, DMARC) und stammen von einer E-Mail-Adresse, deren Domainname (evtl. Subdomain) unten aufgelistet ist:
 
 - ovhcloud.com
 - ovh.com
@@ -285,9 +285,9 @@ Alle unsere E-Mails entsprechen unseren Sicherheitsstandards (SPF, DKIM, DMARC) 
 
 **Falls Sie sich bezüglich der Echtheit einer E-Mail unsicher sind**:
 
-- Wissen Sie, dass wir niemals per E-Mail nach Ihrem Passwort oder Bankdaten fragen.
+- Wir fragen niemals per E-Mail nach Ihrem Passwort oder Bankdaten.
 - Prüfen Sie, ob die von Ihnen empfangene E-Mail auch in Ihrem [OVHcloud Kundencenter](/links/manager) sichtbar ist. Melden Sie sich an, klicken Sie auf Ihren Namen in der oberen rechten Ecke und dann auf `E-Mails von OVHcloud`{.action} (oder `Meine Kommunikation`{.action}). Dort finden Sie Kopien aller offiziellen E-Mails, die von OVHcloud gesendet wurden.
-- Informieren Sie sich auch in unserem Guide: [Phishing – Wie erkenne ich betrügerische E-Mails oder SMS?](/pages/account_and_service_management/account_information/phishing_care).
+- Informieren Sie sich auch über unseren Guide: [Phishing – Wie erkenne ich betrügerische E-Mails oder SMS?](/pages/account_and_service_management/account_information/phishing_care).
 
 ///
 

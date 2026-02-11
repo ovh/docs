@@ -1,7 +1,7 @@
 ---
 title: 'Créer et gérer des conférences téléphoniques'
 excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVHcloud'
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -30,24 +30,39 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 ## En pratique
 
-### Étape 1 : accéder à la configuration du numéro
-
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
 1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-1. Dans l'onglet `Configuration`{.action}, cliquez sur `Conférence`{.action} puis sur `Paramétrer`{.action}.<br>
+
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+
+### Étape 1 : Appliquer la configuration « Conférence »
+
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Conférence`{.action} puis cliquez sur `Paramétrer`{.action}.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Conférence`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
 
 L'application de la configuration prend quelques secondes.
 
-![conférence](images/conference2022-01.png){.thumbnail}
+![conférence](images/conference2026-01.png){.thumbnail}
 
-Si une autre configuration est déjà appliquée sur votre numéro, cliquez sur `Configuration`{.action} puis `Changer de configuration`{.action}.
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+### Étape 2 : Accéder à la configuration de la conférence
 
 Une fois la configuration appliquée, vous accédez directement aux paramètres de la conférence.
 
 Pour retrouver ce menu ultérieurement, cliquez sur l'onglet `Configuration`{.action} puis sur `Conférence`{.action}.
 
-### Étape 2 : gérer les paramètres de la conférence
+### Étape 3 : Gérer les paramètres de la conférence
 
 #### Configurer la conférence
 
@@ -79,7 +94,7 @@ Dans la partie « Administration », définissez également vos paramètres.
 
 Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
 
-### Étape 3 : utiliser la conférence
+### Étape 4 : Utiliser la conférence
 
 Une fois votre conférence active et paramétrée, celle-ci est prête à être utilisée. Les participants peuvent donc appeler le numéro défini en tant que conférence, puis interagir selon la configuration que vous avez mise en place.
 

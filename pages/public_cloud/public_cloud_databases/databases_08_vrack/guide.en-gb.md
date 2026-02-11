@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to configure your Private Network
+title: Configure the private network for Public Cloud Databases
 excerpt: Connect a Public Cloud Database to vRack
 updated: 2023-08-17
 ---

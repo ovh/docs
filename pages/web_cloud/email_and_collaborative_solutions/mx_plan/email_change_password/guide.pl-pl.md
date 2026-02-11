@@ -18,7 +18,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 - W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](/links/web/email).
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -124,7 +124,7 @@ W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zat
 
 Przejdź do strony [Webmail](/links/web/email). Wpisz swój adres e-mail i hasło, a następnie kliknij `Logowanie`{.action}.
 
-Kliknij nazwę konta e-mail w prawym górnym rogu. Z poziomu tego menu możesz również zmienić hasło {.action}.
+Kliknij nazwę konta e-mail w prawym górnym rogu interfejsu. W tym menu możesz `Zmienić hasło`{.action}.
 
 ![Zimbra - preferencje](images/zimbra-password.png){.thumbnail}
 

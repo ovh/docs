@@ -26,7 +26,7 @@ Volume Snapshot und Volume Backup ermöglichen:
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben ein getrenntes [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt.
+- Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt und abgetrennt.
 
 ## In der praktischen Anwendung
 
@@ -38,14 +38,14 @@ Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} u
 
 > [!primary]
 > 
-> **Um ein Backup zu erstellen, muss der Volume zuerst von seiner Instanz abgetrennt sein.**
+> **Um ein Backup zu erstellen, muss ein Volume zuerst von der Instanz abgetrennt werden.**
 > 
-> - Für eine Linux-Umgebung beachten Sie bitte den Abschnitt **Unter Linux** im Guide "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
-> - Für eine Windows-Umgebung beachten Sie bitte den Abschnitt **Unter Windows** im Guide "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Für eine Linux-Umgebung beachten Sie den Abschnitt **Unter Linux** in "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Für eine Windows-Umgebung beachten Sie den Abschnitt **Unter Windows** in "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
 
 ![Volume Backup - Erstellung](images/volumebackup01.png){.thumbnail}
 
-Wählen Sie den Volume aus, von dem Sie ein Backup erstellen möchten.
+Wählen Sie das Volume aus, von dem Sie ein Backup erstellen möchten.
 
 Wählen Sie dann den Backup-Typ aus, den Sie erstellen möchten: **Volume Snapshot** oder **Volume Backup**.
 

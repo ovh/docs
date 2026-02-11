@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/kbyLL9x)
-
 ## Wprowadzenie
 
 Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz sklepu internetowego, aby sprzedawać swoje produkty online? Niniejszy przewodnik Pierwsze kroki z hostingiem OVHcloud wyjaśni kluczowe etapy jego konfiguracji. Dowiesz się również, jak utworzyć profesjonalne adresy e-mail powiązane z twoją nazwą domeny. Umożliwi on łatwą i szybką publikację twojego projektu, aby skutecznie komunikować się z odbiorcami.

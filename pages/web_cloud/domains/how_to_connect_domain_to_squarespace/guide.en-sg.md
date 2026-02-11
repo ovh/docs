@@ -1,12 +1,12 @@
 ---
 title: "How to connect an OVHcloud domain name to a SquareSpace hosting plan"
 excerpt: "Prepare and configure your OVHcloud domain name’s DNS zone to connect to a SquareSpace hosting plan"
-updated: 2024-05-15
+updated: 2026-02-10
 ---
 
 ## Objective
 
-You have a domain name with OVHcloud and you want to connect it to a SquareSpace hosting plan. In this guide, you will find the steps to prepare and configure your OVHcloud DNS zone, so that you can configure your SquareSpace hosting plan.
+You are the holder of a domain name with OVHcloud and you want to connect it to a SquareSpace hosting plan. In this guide, you will find the steps to prepare and configure your OVHcloud DNS zone, so that you can configure your SquareSpace hosting plan.
 
 **Find out how to connect your OVHcloud domain name to a SquareSpace hosting plan.**
 

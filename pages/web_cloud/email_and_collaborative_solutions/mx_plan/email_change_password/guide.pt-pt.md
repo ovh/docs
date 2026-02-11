@@ -18,7 +18,7 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 - Em função do método que utilizar: aceder à Área de [Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](/links/web/email).
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -124,7 +124,7 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 
 Aceda à página [Webmail](/links/web/email). Introduza o seu endereço de e-mail e a palavra-passe e clique em `Connection`{.action}.
 
-Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "Alterar a palavra-passe" {.action}.
+Clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá `Alterar a palavra-passe`{.action}.
 
 ![Zimbra - preferências](images/zimbra-password.png){.thumbnail}
 

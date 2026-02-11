@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2025-08-25
+updated: 2026-01-06
 ---
 
 <style>
@@ -323,7 +323,7 @@ For more information, consult OVHcloud's guide [How to create a V(x)LAN within a
 > - Some virtual routing appliances such as pfSense use CARP to provide high availability.
 > - VMs that use CARP will need “Promiscuous Mode” enabled in the security settings of a portgroup.
 > - Customers can enable this setting themselves on the vRack vDS on the destination vDC.
-> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
+> - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, follow the instructions from [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_carp).
 >
 
 <a name="inventory"></a>

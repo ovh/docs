@@ -38,17 +38,17 @@ This lifecycle policy is provided to help customers understand the underlying re
 
 ### Hosts (Compute)
 
-| Model | Release Year | Processor | End of Sale | End of Support | Software Version |
-| --- | --- | --- | --- | --- | --- |
-| HGR-HCI-1 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
-| HGR-HCI-2 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
-| HGR-HCI-3 | 2021 | Intel Cascade Lake | 2025-12-31 | 2027-07-31 | 7.5.x |
-| Scale-i1 | 2024 | Intel Emerald Rapid | - | - | - |
-| Scale-i2 | 2024 | Intel Emerald Rapid | - | - | - |
-| Scale-i3 | 2024 | Intel Emerald Rapid | - | - | - |
-| HGR-HCI-i1 | 2025 | Intel Emerald Rapid | - | - | 7.0.1.5 |
-| HGR-HCI-i2 | 2025 | Intel Emerald Rapid | - | - | 7.0.1.5 |
-| HGR-HCI-i3 | 2025 | Intel Emerald Rapid | - | - | 7.0.1.5 |
+| Model | Release Year | Processor  | End of Sale | End of Maintenance (Hardware) | End of Support (Hardware) | AOS Version Mini | AOS Version Maxi |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| HGR-HCI-1 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - | 7.5.x |
+| HGR-HCI-2 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - | 7.5.x |
+| HGR-HCI-3 | 2021 | Intel Cascade Lake | - | 2025-12-31 | 2027-07-31 | - |7.5.x |
+| Scale-i1 | 2024 | Intel Emerald Rapid | - | - | - | - |
+| Scale-i2 | 2024 | Intel Emerald Rapid | - | - | - | - |
+| Scale-i3 | 2024 | Intel Emerald Rapid | - | - | - | - |
+| HGR-HCI-i1 | 2025 | Intel Emerald Rapid | - | - | - | 7.0.1.5 |
+| HGR-HCI-i2 | 2025 | Intel Emerald Rapid | - | - | - | 7.0.1.5 |
+| HGR-HCI-i3 | 2025 | Intel Emerald Rapid | - | - | - | 7.0.1.5 |
 
 ## Go Further
 

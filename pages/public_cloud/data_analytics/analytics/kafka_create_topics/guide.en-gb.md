@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to create topics for your Kafka cluster
+title: Create topics for Analytics with Kafka
 excerpt: Learn how to create Kafka topics
 updated: 2025-08-25
 ---

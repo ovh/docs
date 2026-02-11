@@ -100,7 +100,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](/links
 
 **SPIP** ist ein CMS, das hauptsächlich für die Veröffentlichung und Verwaltung von Verlagswebsites wie Zeitungen oder Online-Magazinen konzipiert ist. Basierend auf PHP und einer SQL Datenbank vereinfacht es die Erstellung von Websites mit umfangreichen Text-, Grafik- und/oder Multimediainhalten.
 
-- Offizielle Website von [SPIP](https://www.spip.net/en_rubrik25.html)
+- Offizielle Website von [SPIP](https://www.spip.net/de_rubrique196.html)
 
 > [!warning]
 >

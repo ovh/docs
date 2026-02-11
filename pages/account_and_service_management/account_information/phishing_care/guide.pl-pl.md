@@ -1,7 +1,7 @@
 ---
 title: 'Rozpoznawanie e-maili typu phishing'
 excerpt: 'Jak rozpoznać e-mail typu phishing i jak postępować, jeśli kliknąłeś w link wyłudzający informacje?'
-updated: 2025-12-18
+updated: 2026-01-06
 ---
 
 <style>
@@ -48,7 +48,7 @@ Kliknij na obrazek, aby powiększyć. Szczegóły i wyjaśnienia znajdziesz w ta
 |---|---|---|
 |1 - Nadawca|Sprawdź, czy wiadomość została wysłana z adresu kończącego się na nazwę domeny (lub poddomeny, np. `events.ovhcloud.com`) należącą do OVHcloud (zobacz listę poniżej)|Nadawca wiadomości prawdopodobnie będzie adresem, który nie pochodzi od OVHcloud.|
 |2 - Tytuł|Sprawdź, czy w tytule wiadomości pojawia się Twój identyfikator konta OVHcloud (NIC Handle) **(zazwyczaj zaczynający się od inicjałów osoby, która założyła konto OVHcloud)** i/lub Twój adres e-mail konta.|Często wiadomość będzie oznaczona jako \[SPAM] i **Twój NIC Handle nie pojawi się lub będzie niepoprawny**.|
-|3 - Link|**Bez klikania w niego, najedź kursorem myszy na link lub przycisk**, a zobaczysz jego docelowy adres (bezpośrednio poniżej lub na dole przeglądarki). W naszym przykładzie link poprawnie wskazuje na adres w https://www.ovh.com/.|W phishingowej wiadomości link nie będzie prowadził do oficjalnej strony OVHcloud. **Nie klikaj w niego.**|
+|3 - Link|**Bez klikania w niego, najedź kursorem myszy na link lub przycisk**, a zobaczysz jego docelowy adres (bezpośrednio poniżej lub na dole przeglądarki). W naszym przykładzie link poprawnie wskazuje na adres w https://www.ovh.com/. Klikając link, zawsze sprawdzaj adres w przeglądarce. OVHcloud używa zbioru rozpoznawalnych nazw domen, zazwyczaj ovhcloud.com lub ovh.com (patrz lista poniżej). |W phishingowej wiadomości link nie będzie prowadził do oficjalnej strony OVHcloud. **Nie klikaj w niego.**|
 |4 - Nagłówek i stopka wiadomości|OVHcloud wysyła wiadomości w formacie TXT i HTML. Nagłówek będzie zawierał logo OVHcloud, a stopka informacje prawne dotyczące OVHcloud|Nagłówek lub stopka może zawierać linki nieskorelowane z OVHcloud. **Nie klikaj w te linki.**|
 
 /// details | **Lista autentycznych domen OVHcloud** (kliknij, aby wyświetlić)
@@ -92,7 +92,7 @@ OVHcloud **nigdy** nie wyśle Ci linku przez Usługa SMS. Wiadomości Usługa SM
 
 Poniżej znajdziesz dwa przykłady wiadomości Usługa SMS, pierwsza z nich jest autentyczna i odpowiada uwierzytelnieniu dwuetapowemu. Druga wiadomość Usługa SMS jest oszustwowa.
 
-![Oszustwowa wiadomość Usługa SMS](images/SMS-phishing.png){.thumbnail}
+![Oszustwowa wiadomość Usługa SMS](images/sms-phishing.png){.thumbnail}
 
 #### Jak zgłosić phishingową wiadomość e-mail?
 

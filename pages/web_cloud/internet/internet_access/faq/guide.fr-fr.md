@@ -55,7 +55,7 @@ Si vous rencontrez un dysfonctionnement sur votre accès Internet, commencez par
 
 Si la liaison ne remonte pas, vous avez la possibilité d’utiliser notre assistant de dépannage. Pour y accéder, connectez-vous, depuis un autre accès à Internet ou un smartphone, à votre [espace client OVHcloud](/links/manager) dans la section `Telecom`{.action}. Une fois positionné sur l’accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 
-Si cela ne fonctionne toujours pas, nous vous invitons à consulter la [carte des incidents en cours](https://status.isp.ovh.net/) pour vérifier les éventuels incidents génériques pouvant affecter votre connexion.
+Si cela ne fonctionne toujours pas, nous vous invitons à consulter la [carte des incidents en cours](https://status.isp.ovhcloud.com/) pour vérifier les éventuels incidents génériques pouvant affecter votre connexion.
 
 Enfin, vous pouvez également réaliser les vérifications que vous trouverez dans le guide [Rétablir son service suite à une coupure complète ou partielle](/pages/web_cloud/internet/internet_access/interruption_de_service).
 

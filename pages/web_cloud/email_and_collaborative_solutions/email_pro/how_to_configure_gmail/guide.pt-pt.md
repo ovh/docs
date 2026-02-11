@@ -1,8 +1,16 @@
 ---
 title: "E-mail Pro - Configurar o seu endereço de e-mail na interface online do Gmail"
 excerpt: "Aprenda a configurar uma conta E-mail Pro na interface on-line do Gmail"
-updated: 2025-04-28
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> A partir de janeiro de 2026, [Gmail deixará de ser compatível com as funcionalidades Gmailify e acesso POP](https://support.google.com/mail/answer/16604719?hl) que permitiam, até agora, importar e-mails de contas de e-mail de terceiros.
+>
+> Já não será possível configurar os endereços de e-mail OVHcloud no Gmail.
+>
+> As suas contas de e-mail OVHcloud estão sempre acessíveis através do nosso [Webmail](/links/web/email).
 
 ## Objetivo
 
@@ -101,7 +109,7 @@ Depois de preencher as informações, selecione a caixa ao lado de `Ligação se
 
 Só precisa de validar esta adição introduzindo um código de confirmação enviado para o seu endereço de E-mail Pro OVHcloud. Para o obter, ligue-se à sua conta de e-mail como de costume a partir da nossa interface online acessível a partir de: <https://pro1.mail.ovh.net>.
 
-Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador Contas e importação {.action}, ao qual acedeu no início da operação.
+Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador `Contas e importação`{.action}, ao qual acedeu no início da operação.
 
 ### 2 - Utilizar uma conta E-mail Pro a partir da interface do Gmail
 

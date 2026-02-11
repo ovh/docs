@@ -1,12 +1,12 @@
 ---
 title: Comment connecter un nom de domaine OVHcloud à un hébergement Wix
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Wix
-updated: 2024-04-17
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Wix.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Wix.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Wix**
 

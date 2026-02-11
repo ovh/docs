@@ -166,7 +166,7 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 
 - **Username**: Enter the **full** email address
 - **Password**: Enter the password for the email address
-- **Server (incoming)**: pro?.mail.ovh.net
+- **Server (outgoing)**: pro?.mail.ovh.net
 - **Port**: 587
 - **Security type**: STARTTLS
 

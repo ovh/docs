@@ -15,7 +15,7 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Dispor das informações de ligação aos endereços de e-mail em causa.

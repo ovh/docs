@@ -27,7 +27,7 @@ Gli indirizzi email del servizio Exchange possono essere configurati su client d
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](/links/web/emails)
+- Disporre di una soluzione [Exchange](/links/web/emails-exchange)
 - Aver installato l’applicazione Gmail sul proprio dispositivo, che puoi scaricare da Google Play Store
 - Disporre delle credenziali associate all’account email da configurare
 

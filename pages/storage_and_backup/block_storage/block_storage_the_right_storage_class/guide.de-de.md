@@ -6,7 +6,7 @@ updated: 2025-12-15
 
 ## Ziel
 
-Dieses Handbuch hilft Ihnen dabei, die verschiedenen OVHcloud Block Storage-Klassen zu verstehen und diejenige auszuwählen, die am besten zu Ihren Bedürfnissen passt. Sie erfahren alles über Leistungsstufen, Preisaspekte und empfohlene Anwendungsfälle, um fundierte Entscheidungen für Ihre Speicherung zu treffen.
+Diese Anleitung hilft Ihnen dabei, die verschiedenen OVHcloud Block Storage-Klassen zu verstehen und diejenige auszuwählen, die am besten zu Ihren Bedürfnissen passt. Sie erfahren alles über Leistungsstufen, Preisaspekte und empfohlene Anwendungsfälle, um fundierte Entscheidungen für Ihre Speicherung zu treffen.
 
 ## Block Storage Übersicht
 
@@ -37,13 +37,13 @@ Die **High Speed Volume**-Klasse ist in zwei Generationen unterteilt und bietet 
 - Gen 1: Bis zu 3.000 IOPS und 128 MB/s – geeignet für allgemeine Hochgeschwindigkeits-Workloads.
 - Gen 2: 30 IOPS/GB (max. 20.000 IOPS) und 0,5 MB/s pro GB (max. 512 MB/s) – empfohlen für intensiv genutzte Anwendungen, die maximale I/O und Durchsatz erfordern.
 
-Wählen Sie Gen 1 für Standard-Hochgeschwindigkeits-Anwendungsfälle und Gen 2 für schwere Workloads wie Analytics, große Datenbanken oder Hochleistungsrechnen.
+Wählen Sie Gen 1 für Standard-Hochgeschwindigkeits-Anwendungsfälle und Gen 2 für schwere Workloads wie Analytics, große Datenbanken oder Hochleistung-Computing.
 
 ### Vergleichstabelle
 
 | Speicherklassen | Anwendungsfälle | Leistung | Unterstützte Regionen | Verfügbarkeits-SLA | Replikation | Hinweise |
 | --- | --- | --- | --- | --- | --- | --- |
-| **High Speed Volume** | Hochleistungs-Workloads, Analytics, große Datenbanken | **Gen 1**: Bis zu 3.000 IOPS, 128 MB/s <br><br> **Gen 2**: 30 IOPS/GB (max. 20.000 IOPS), 0,5 MB/s pro GB (max. 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonal | Optimiertes NVMe, skalierbare Leistung |
+| **High Speed Volume** | Hochleistung-Workloads, Analytics, große Datenbanken | **Gen 1**: Bis zu 3.000 IOPS, 128 MB/s <br><br> **Gen 2**: 30 IOPS/GB (max. 20.000 IOPS), 0,5 MB/s pro GB (max. 512 MB/s) | 3-AZ, 1-AZ, Local Zones | 99,9 % | Zonal | Optimiertes NVMe, skalierbare Leistung |
 | **Regional Classic Volume** | Kritische Anwendungen, verteilte Systeme | 500 IOPS garantiert, 64 MB/s | 3-AZ | 99,99 % | Multi-zone | NVMe over Fabric, hohe Verfügbarkeit |
 | **Classic Volume** | Alltägliche Workloads, VMs, Backups | 500 IOPS garantiert, 64 MB/s | 1-AZ, Local Zones | 99,9 % | Zonal | NVMe over Fabric, Standardleistung |
 
@@ -51,7 +51,7 @@ Wählen Sie Gen 1 für Standard-Hochgeschwindigkeits-Anwendungsfälle und Gen 2 
 
 #### Minimale Speicherdauer
 
-Bei Block Storage gibt es keine minimale Speicherdauer: Sie können Volumes jederzeit anbinden oder löschen, ohne zusätzliche Gebühren. Sie werden nur für die tatsächliche Nutzung des Volumes während der Zeit berechnet, in der es existiert.
+Bei Block Storage gibt es keine minimale Speicherdauer: Sie können Volumes jederzeit anbinden oder löschen, ohne zusätzliche Gebühren. Sie werden nur für die echte Nutzung des Volumes während der Zeit berechnet, in der es existiert.
 
 #### Backup- und Snapshot-Gebühren
 
@@ -66,7 +66,7 @@ Block Storage-Volumes sind vollständig flexibel: Sie können ihre [Größe jede
 Jede Block Storage-Volumetyp ist in einer verschlüsselten Version (LUKS) erhältlich, je nach Region. Diese verschlüsselten Varianten gewährleisten die Datengeheimhaltung, ohne die Leistung zu beeinträchtigen.
 
 > [!primary]
-> Bitte beachten Sie, dass die Regional Classic Volume-Klasse und Volumes in Local Zones keine LUKS-Verschlüsselung unterstützen.
+> Beachten Sie, dass die Regional Classic Volume-Klasse und Volumes in Local Zones keine LUKS-Verschlüsselung unterstützen.
 
 Verschlüsselte Volumes können direkt über das OVHcloud Kundencenter oder über CLI/API-Tools erstellt werden, indem der Volumetyp mit dem Suffix `-luks` angegeben wird (z. B. classic-luks oder highspeed-luks). Dies bietet eine einfache und sichere Möglichkeit, sensible Daten zu schützen, wobei die gleiche Leistung und Funktionalität wie bei Standardvolumes genutzt werden kann.
 
@@ -86,9 +86,9 @@ Block Storage unterstützt dank seiner Leistung, Flexibilität und Ausfallsicher
 
 Block Storage-Volumes können mit unterschiedlichen Verfügbarkeitsoptionen bereitgestellt werden, abhängig von Ihren Anforderungen:
 
-- **Regional Classic Volume (3-AZ)**: Daten werden in drei Verfügbarkeitszonen innerhalb derselben Region repliziert, wodurch eine hohe Ausfallsicherheit und ein SLA von 99,99 % gewährleistet werden. Ideal für kritische, hochverfügbare Anwendungen. Weitere Informationen finden Sie in unserem Handbuch "[Ordnungsgemäße Nutzung und Einschränkungen von Classic Multi Attach Block Storage in 3AZ-Regionen (EN)](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
-- **Classic & High Speed Volume (1-AZ oder Local Zone)**: Daten werden innerhalb einer einzelnen Zone repliziert. Diese Optionen bieten niedrige Latenz und hohe Leistung, geeignet für Workloads, die keine mehrzonenredundante Replikation erfordern.
-- **Local Zones**: Für Anwendungen, die eine extrem niedrige Latenz in einer bestimmten geografischen Region benötigen, ermöglichen Local Zones es Ihnen, Speicher nahe an Compute-Ressourcen zu halten.
+- **Regional Classic Volume (3-AZ)**: Daten werden in drei Verfügbarkeitszonen innerhalb derselben Region repliziert, wodurch eine hohe Ausfallsicherheit und ein SLA von 99,99 % gewährleistet werden. Ideal für kritische, hochverfügbare Anwendungen. Weitere Informationen finden Sie in unserer Anleitung "[Ordnungsgemäße Nutzung und Einschränkungen von Classic Multi Attach Block Storage in 3AZ-Regionen (EN)](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+- **Classic & High Speed Volume (1-AZ oder Local Zone)**: Daten werden innerhalb einer einzelnen Zone repliziert. Diese Optionen bieten niedrige Latenz und hohe Leistung, geeignet für Workloads, die keine multizonenredundante Replikation erfordern.
+- **Local Zones**: Für Anwendungen, die eine extrem niedrige Latenz in einer bestimmten geografischen Region benötigen, ermöglichen Local Zones, Speicher nahe an Compute-Ressourcen zu halten.
 
 > [!success]
 > Die richtige Auswahl der Bereitstellungsvariante gewährleistet eine optimale Leistung, Redundanz und Kosten-effizienz basierend auf Ihren Workload- und geografischen Anforderungen.
@@ -99,6 +99,6 @@ Block Storage-Volumes können mit unterschiedlichen Verfügbarkeitsoptionen bere
 
 [Block Storage Volume bearbeiten](/pages/public_cloud/compute/switch_volume_type)
 
-Wenn Sie Schulungen oder technische Unterstützung benötigen, um unsere Lösungen umzusetzen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie [hier](/links/professional-services), um ein Angebot zu erhalten und eine persönliche Analyse Ihres Projekts von unserem Professional Services-Team anzufragen.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Treten Sie unserer [User Community](/links/community) bei.

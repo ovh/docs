@@ -1,7 +1,7 @@
 ---
 title: "Come configurare il reverse DNS del tuo server (record PTR)"
-excerpt: Copri come impostare la risoluzione reverse DNS del tuo indirizzo IPv4 o IPv6 dal tuo Spazio Cliente OVHcloud
-updated: 2025-12-10
+excerpt: Scopri come configurare la risoluzione reverse DNS del tuo indirizzo IP dal tuo Spazio Cliente OVHcloud
+updated: 2026-01-06
 ---
 
 ## Obiettivo
@@ -15,42 +15,44 @@ La configurazione del reverse DNS di un server è particolarmente utile durante 
 ## Prerequisiti
 
 - Un indirizzo IP associato a un servizio del tuo account OVHcloud
-- Un dominio con il suo record `A` o `AAAA` associato al tuo servizio
+- Un nome di dominio con il suo record `A` collegato al tuo servizio
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}.
 
-I menu a tendina della sezione **I miei indirizzi IP pubblici e i servizi associati** ti permettono di filtrare gli elementi della tabella per i servizi e trovare rapidamente l'indirizzo IP desiderato.
+Il menu a discesa sotto "**I tuoi indirizzi IP pubblici e servizi associati**" ti permette di filtrare i tuoi servizi per categoria. Puoi anche cercare un indirizzo IP specifico utilizzando la barra di ricerca a sinistra del menu a discesa.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
-Clicca su `...`{.action} nella riga dell’indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
+Clicca sul pulsante `⁝`{.action} nella riga dell'indirizzo IP interessato e seleziona `Configurare il reverse DNS`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
+Nella nuova finestra, inserisci il tuo reverse e clicca su `Confermare`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-È inoltre possibile modificare il reverse direttamente tramite l’icona a forma di penna nella colonna **Reverse DNS** della tabella.
+Puoi anche modificare il reverse direttamente tramite l'icona `matita`{.action} nella colonna **Reverse DNS** della tabella.
 
 > [!warning]
-> Quando inserisci il tuo dominio nel reverse, verifica immediatamente se i record `A` e `AAAA` corrispondono agli indirizzi IP configurati per questo dominio. Questa operazione viene utilizzata nelle procedure anti-spam e il record DNS deve essere valido e divulgato. Per inserire il reverse, è necessario seguire alcune regole:
+> Quando inserisci il tuo nome di dominio nel *reverse*, verifica immediatamente se il record A restituisce la stessa IP. Questo è utilizzato nelle procedure anti-spam, quindi il tuo record A deve essere valido e propagato. Ci sono alcune regole da seguire quando si inserisce il *reverse* :
 >
->  - il reverse non può iniziare con un `-`
->  - il reverse non può contenere più di 63 caratteri
->  - il reverse non può contenere caratteri maiuscoli
->  - il reverse deve terminare con un `.`
+>  - il *reverse* non può iniziare con un `-`
+>  - il *reverse* non può contenere più di 63 caratteri
+>  - il *reverse* non può contenere caratteri maiuscoli
+>  - il *reverse* deve terminare con un `.`
 >
-> Esempio: "domain.tld" nel campo reverse sarebbe `domain.tld.`.
+> Esempio : « domain.tld » nel record *reverse* sarebbe `domain.tld.`.
+>
 
 > [!primary]
 >
-> Se la modifica non funziona come previsto, verificare che i record `A` e `AAAA` siano correttamente configurati nella zona DNS del nome del dominio. L’applicazione delle modifiche nella zona DNS potrebbe richiedere fino a 24 ore, nel caso in cui il record sia stato modificato.
+> Se la modifica non funziona come previsto, verifica che il record `A` sia correttamente configurato nella zona DNS del tuo nome di dominio. L'applicazione delle modifiche nella zona DNS può richiedere fino a 24 ore, nel caso in cui tu abbia appena modificato il record `A`.
 >
-> Se il dominio è gestito da OVHcloud come Registrar **e utilizza i server DNS OVHcloud**, consulta [questa guida](/pages/web_cloud/domains/dns_zone_edit).
+> Se il nome di dominio è gestito da OVHcloud come registro **e utilizza i server DNS OVHcloud**, puoi fare riferimento a [questa guida](/pages/web_cloud/domains/dns_zone_edit).
+>
 
 ## Per saperne di più
 

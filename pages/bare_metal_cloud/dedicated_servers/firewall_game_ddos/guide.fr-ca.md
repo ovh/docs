@@ -1,7 +1,7 @@
 ---
 title: "Protéger un serveur Game avec le firewall applicatif"
 excerpt: "Découvrez comment configurer le OVHcloud Game DDoS Protection firewall"
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 <style>
@@ -74,7 +74,7 @@ Accédez à la configuration du *Firewall Game* :
 
 | ![game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Cliquez sur le bouton `...`{.action} à côté de l’adresse IP de votre serveur Game. |
+| Cliquez sur le bouton `⁝`{.action} à côté de l’adresse IP de votre serveur Game. |
 
 | ![configure-game-firewall](images/firewall_game_02_new.png) |
 |:--:|
@@ -128,7 +128,7 @@ De plus, nous vous recommandons fortement de définir la règle **« Default pol
 
 #### Rust
 
-- **Rust** est supporté avec un profil de protection dédié sur toutes les générations de serveurs Bare Metal Game. Veuillez noter que nous avons mis à jour ce profil de protection (c’est-à-dire que nous avons ajouté la prise en charge des cookies RakNet) pour la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
+- **Rust** est supporté avec un profil de protection dédié sur toutes les générations de serveurs Bare Metal Game. Veuillez noter que nous avons mis à jour ce profil de protection (nous avons ajouté la prise en charge des cookies RakNet) pour la 3ème génération de serveurs Bare Metal Game (2024, basé sur EPYC).
 
 #### Minecraft
 

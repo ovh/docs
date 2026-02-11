@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
-excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IPv4 oder IPv6-Adresse über Ihr Kundencenter einrichten
-updated: 2025-12-10
+excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IP-Adresse im Kundencenter einrichten
+updated: 2026-01-06
 ---
 
 ## Ziel
@@ -15,42 +15,44 @@ Die Konfiguration der umgekehrten DNS-Auflösung eines Servers ist besonders bei
 ## Voraussetzungen
 
 - Sie verfügen über eine mit Ihrem Dienst verbundene IP-Adresse in Ihrem OVHcloud Kunden-Account.
-- Sie haben einen Domainnamen, dessen `A`-Eintrag oder `AAAA`-Eintrag den Server als Ziel hat.
+- Ein Domänenname mit seinem `A`-Eintrag, der auf Ihren Dienst verweist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}.
 
-Mithilfe der Dropdown-Menüs im Bereich **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie die Tabelleneinträge nach Diensten filtern und so die gewünschte IP-Adresse schnell finden.
+Das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** (Meine öffentlichen IP-Adressen und zugehörige Dienste) ermöglicht es Ihnen, Ihre Dienste nach Kategorie zu filtern. Sie können auch nach einer bestimmten IP-Adresse in der Suchleiste links neben dem Dropdown-Menü suchen.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Klicken Sie auf `...`{.action} in der Zeile der betreffenden IP-Adresse und wählen Sie dann `Reverse ändern`{.action} aus.
+Klicken Sie auf die Schaltfläche `⁝`{.action} in der Zeile der betreffenden IP-Adresse und wählen Sie `Reverse DNS konfigurieren`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-Geben Sie Ihren Reverse-Pfad im neuen Fenster ein und klicken Sie auf `Bestätigen`{.action}.
+Geben Sie im neuen Fenster Ihren Reverse-Pfad ein und klicken Sie auf `Bestätigen`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-Sie können den Reverse-Pfad auch direkt mithilfe des Stift-Icons in der Spalte "**Reverse**" der Tabelle editieren.
+Sie können den Reverse-Pfad auch direkt über das `Stift`{.action}-Symbol in der Spalte **Reverse DNS** der Tabelle bearbeiten.
 
 > [!warning]
-> Wenn Sie Ihren Domainnamen im Reverse eingeben, wird sofort überprüft, ob die `A`- und `AAAA`-Einträge den für diese Domain konfigurierten IP-Adressen entsprechen. Anti-Spam-Verfahren verwenden diese Methode, daher muss Ihr DNS-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
+> Wenn Sie Ihren Domänennamen im Reverse eingeben, prüft das System sofort, ob der A-Eintrag auf dieselbe IP-Adresse verweist. Dies wird in Anti-Spam-Verfahren verwendet, daher muss Ihr A-Eintrag gültig und verbreitet sein. Beim Eingeben des Reverse gibt es gewisse Regeln zu beachten:
+> 
+>  - Es darf nicht mit einem `-` beginnen.
+>  - Es darf nicht länger als 63 Zeichen sein.
+>  - Es darf keine Großbuchstaben enthalten.
+>  - Es muss mit einem `.` enden.
 >
->  - Der *Reverse* darf nicht mit einem `-` beginnen.
->  - Der *Reverse* darf höchstens 63 Zeichen enthalten.
->  - Der *Reverse* darf keine Großbuchstaben enthalten.
->  - Der *Reverse* muss mit einem `.` enden.
+> Beispiel: "domain.tld" in der Reverse-Eintragsliste wäre `domain.tld.`.
 >
-> Beispiel: Für "domain.tld" wäre der *Reverse* `domain.tld.`
 
 > [!primary]
 >
-> Wenn die Änderung nicht wie vorgesehen funktioniert, überprüfen Sie, ob die `A`- und `AAAA`-Einträge in der DNS-Zone Ihrer Domain korrekt konfiguriert sind. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den Eintrag erst kürzlich bearbeitet haben.
+> Falls die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der `A`-Eintrag in der DNS-Zone Ihres Domänennamens korrekt konfiguriert ist. Beachten Sie, dass Änderungen an der DNS-Zone bis zu 24 Stunden in Kraft treten können, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
 >
-> Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie den Anweisungen in [unserer Anleitung zu DNS](/pages/web_cloud/domains/dns_zone_edit) folgen.
+> Falls der Domänenname von OVHcloud als Registrar verwaltet wird **und OVHcloud DNS-Server verwendet**, können Sie sich an [dieses Handbuch](/pages/web_cloud/domains/dns_zone_edit) wenden.
+>
 
 ## Weiterführende Informationen
 

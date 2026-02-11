@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Ziel
@@ -27,7 +27,7 @@ Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
 #### Automatische Erhöhung Ihrer Ressourcenquoten mit der Funktion „Quota autoscaling“
 
-Diese Option ermöglicht Ihnen, eine automatische und schrittweise Erhöhung Ihrer Ressourcenquote zu beantragen. Die Quote wird basierend auf Ihrer tatsächlichen Nutzung angepasst, **wenn Sie 60 % Ihrer aktuellen Quote 30 aufeinanderfolgende Tage überschreiten**, sowie anhand einer Reihe interner und finanzieller Kriterien.
+Diese Option ermöglicht Ihnen, eine automatische und schrittweise Erhöhung Ihrer Ressourcenquote zu beantragen. Die Quote wird basierend auf Ihrer realen Nutzung angepasst, **wenn Sie 60 % Ihrer aktuellen Quote 30 aufeinanderfolgende Tage überschreiten**, sowie anhand einer Reihe interner und finanzieller Kriterien.
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ Sobald aktiviert, erhöht sich die Quote Ihres Projekts automatisch und schrittw
 
 ![Contact Support](images/contact_support_quota.png){.thumbnail}
 
-Dieser Vorgang ermöglicht eine schnelle und erhebliche Erhöhung Ihrer Quoten (z. B. schnelles Skalieren, GPU-Instanzen usw.). Dieses Verfahren basiert auf dem sofortigen Kauf von Gutschriften, aus denen alle Cloud-Kosten automatisch abgebucht werden.
+Dieser Vorgang ermöglicht eine schnelle und erhebliche Erhöhung Ihrer Quoten (z. B. schnelles Skalieren, GPU-Instanzen usw.). Dieses Verfahren basiert auf dem sofortigen Kauf von Cloud-Guthaben, aus denen alle relevanten Kosten automatisch abgebucht werden.
 
 Es ist möglich, unterschiedliche Gutschriftsbeträge zu erwerben.
 
@@ -94,6 +94,8 @@ Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}.
 > Nachdem Sie auf die Schaltfläche `Bestätigen`{.action} geklickt haben, wird die Bestellung automatisch erstellt und der Betrag wird von Ihrer Standardzahlungsmethode abgebucht.
 >
 
+Eine detailliertere Übersicht über Ihre Ressourcen erhalten Sie in der [Horizon-Oberfläche](https://horizon.cloud.ovh.net/auth/login/). Klicken Sie nach der Anmeldung auf `Project`{.action} und dann auf `Overview`{.action}.
+
 ### Erhöhung der Quoten Ihres Public Cloud Projekts
 
 Es gibt zwei Hauptfälle, in denen Sie möglicherweise eine Anpassung der Quote benötigen:
@@ -108,13 +110,13 @@ Es gibt zwei Hauptfälle, in denen Sie möglicherweise eine Anpassung der Quote 
 
 Um die Bearbeitung zu beschleunigen, geben Sie bitte Folgendes in Ihrer Anfrage an:
 
-- Den Typ der zu erhöhenden Quote (Anzahl der Projekte, Ressourcen usw.);
-- Die beabsichtigte Verwendung und Begründung der Erhöhung;
-- Den gewünschten Zeitraum oder die Dauer der Erhöhung.
+- Den Typ der zu erhöhenden Quote (Anzahl der Projekte, Ressourcen usw.)
+- Die beabsichtigte Verwendung und Begründung der Erhöhung
+- Den gewünschten Zeitraum oder die Dauer der Erhöhung
 
 ### Spezifische Quoten und spezielle Ressourcen
 
-Für bestimmte Ressourcen oder Dienste können spezifische Quoten gelten. Weitere Informationen finden Sie unter:
+Für bestimmte Ressourcen oder Dienste können spezifische Quoten gelten. Weitere Informationen finden Sie hier:
 
 **S3 Quoten**<sup>1</sup>: siehe die offizielle Dokumentation „[Object Storage - Technische Grenzen (EN)](/pages/storage_and_backup/object_storage/s3_limitations)“.
 

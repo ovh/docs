@@ -1,5 +1,5 @@
 ---
-title: Analytics - Automated Backups
+title: Automated Backups for Analytics
 excerpt: Discover the automated backup methods for each engine
 updated: 2025-11-27
 ---

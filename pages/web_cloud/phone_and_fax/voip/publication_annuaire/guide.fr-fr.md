@@ -35,7 +35,7 @@ Renseigner vos coordonnées est obligatoire pour l'ensemble de vos lignes et num
 
 Cette démarche est nécessaire pour deux raisons :
 
-- **permettre à OVHcloud d'assurer la liaison vers les bons services d'urgence** : lorsque vous composez un numéro d'urgence sur votre téléphone, votre opérateur assure l'acheminement de cet appel vers le service d'urgence le plus proche de l'adresse d'installation de votre ligne ou de votre numéro ;
+- **permettre à OVHcloud d'assurer la liaison vers les bons services d'urgence** : lorsque vous composez un numéro d'urgence sur votre téléphone, votre opérateur assure l'acheminement de cet appel vers le service d'urgence le plus proche de l'adresse d'installation de votre ligne SIP ;
 
 - **permettre à OVHcloud d'assurer la liaison vers votre nouvel opérateur lors d'une portabilité** : si vous décidez de porter votre numéro chez un autre opérateur, vous devrez alors lui fournir les informations de ce numéro. Celles-ci doivent correspondre aux données renseignées chez OVHcloud.
 

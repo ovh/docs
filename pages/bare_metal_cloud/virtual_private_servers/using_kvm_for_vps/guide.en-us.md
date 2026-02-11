@@ -87,6 +87,8 @@ You can enable your preferred keyboard configuration to make using the console m
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+If necessary, install the package first via your distribution's package manager (`sudo dnf install keyboard-configuration` or `sudo apt install keyboard-configuration`).
+
 A graphical menu will open in which you can select a keyboard model.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}

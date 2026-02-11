@@ -1,7 +1,7 @@
 ---
 title: Inviare SMS dallo Spazio Cliente
 excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Obiettivo
@@ -56,7 +56,11 @@ Una volta selezionato il mittente e inseriti i destinatari, è possibile iniziar
 
 Digita il messaggio nell’apposita area di testo (1). Visualizzi un contatore che indica il numero dei caratteri utilizzati e il numero degli SMS corrispondenti (2).
 
-Le due tabelle qui sotto elencano i caratteri autorizzati per una codifica a 7bit. I caratteri della tabella “Estensioni” valgono il doppio. 
+> [!primary]
+>
+> Raccomandiamo di non superare gli 8 SMS per messaggio. Oltre questo limite, gli operatori non garantiscono più la consegna del messaggio.
+
+Le due tabelle qui sotto elencano i caratteri autorizzati per una codifica a 7bit. I caratteri della tabella "**Estensioni**" valgono il doppio. 
 
 La lunghezza massima di un SMS è di 160 caratteri (norma GSM 03.38).
 

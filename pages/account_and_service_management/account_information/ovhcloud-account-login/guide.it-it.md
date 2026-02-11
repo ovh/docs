@@ -4,11 +4,6 @@ excerpt: Come autenticarsi al tuo account OVHcloud
 updated: 2025-04-28
 ---
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/OiIwy54)
-
 ## Obiettivo
 
 Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud.
@@ -26,7 +21,7 @@ Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud.
 
 Accedi alla [pagina di autenticazione OVHcloud](/links/manager), inserisci il tuo identificativo cliente (o il tuo indirizzo email principale) e la password.
 
-![identificativo cliente](images/log-in.png){.thumbnail}
+![identificativo cliente](images/account-log-in-EN.png){.thumbnail}
 
 Se hai attivato la [doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), inserisci il codice unico di connessione generato dalla tua periferica (telefono, tablet o chiave U2F).
 

@@ -82,12 +82,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Schritt 4: Konfiguration des Datenbankservers <a name="sqlconf"></a>
 
-MariaDB stellt ein Skript zur Verfügung, um die Erstkonfiguration zu erleichtern und bestimmte Sicherheitseinstellungen anzuwenden.
+MariaDB stellt ein [Skript zur Verfügung](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation), um die Erstkonfiguration zu erleichtern und bestimmte Sicherheitseinstellungen anzuwenden.
 
 Geben Sie folgenden Befehl ein, um es auszuführen:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Bestätigen Sie den ersten Prompt, indem Sie `Enter`{.action} drücken.

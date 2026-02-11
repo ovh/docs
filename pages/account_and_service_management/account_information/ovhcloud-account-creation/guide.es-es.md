@@ -1,7 +1,7 @@
 ---
 title: 'Crear una cuenta de OVHcloud'
 excerpt: 'Cómo crear una cuenta de OVHcloud'
-updated: 2025-04-28
+updated: 2026-01-16
 ---
 
 ## Objetivo
@@ -19,19 +19,24 @@ Es posible crear una cuenta antes o durante el pedido de su primer servicio de O
 
 ### ¿Cómo crear una cuenta de OVHcloud?
 
-Para crear una cuenta de OVHcloud, acceda a [esta página](/links/manager) y complete el formulario online.
+Para crear una cuenta de OVHcloud, acceda a [esta página](/links/manager) y haga clic en `Crear una cuenta`{.action}.
 
-![formulario creación cuenta](images/account-creation.png){.thumbnail}
+![Crear una cuenta](images/account-creation-EN-01.png){.thumbnail}
+
+Introduzca su país de residencia fiscal, su divisa y el idioma deseado para gestionar sus servicios en el área de cliente de OVHcloud. A continuación, haga clic en `Aceptar`{.action}.
+
+![Crear una cuenta](images/account-creation-EN-02.png){.thumbnail}
+
+Introduzca su dirección de correo electrónico y cree una contraseña de acceso a la cuenta de OVHcloud.
 
 |Campo|Descripción|
 |---|---|
-|Nombre y apellidos|Introduzca aquí **imperativamente** un nombre y un nombre habituales.|
-|Correo|Introduzca una dirección de correo electrónico **válida a la que actualmente tiene acceso**.<br><br>Evite utilizar una dirección de correo electrónico asociada a un dominio que gestione desde el área de cliente. En caso de corte en este dominio, no recibiría nuestras notificaciones.|
+|Correo|Introduzca una dirección de correo electrónico **válida a la que actualmente tiene acceso**.<br><br>Evite utilizar una dirección de correo electrónico asociada a un dominio que vaya a gestionar desde esta cuenta de OVHcloud. En caso de corte en este dominio, no recibiría nuestras notificaciones.|
 |Contraseña|Su contraseña debe ser única (creada y utilizada únicamente por su cuenta de OVHcloud) y ser suficientemente compleja.<br><br>Consulte los consejos de [nuestra guía sobre la gestión de la contraseña](/pages/account_and_service_management/account_information/manage-ovh-password#generar-una-contrasena-adecuada) para crear una contraseña eficaz.|
 
 Una vez completado el primer formulario, recibirá un código de uso único en la dirección de correo electrónico que haya introducido. Este código le permitirá validar su dirección de correo electrónico. Introdúzcalo en las casillas previstas a tal efecto.
 
-![código de uso único](images/code.png){.thumbnail}
+![código de uso único](images/code-EN.png){.thumbnail}
 
 > [!primary]
 > Si no ha recibido el mensaje de correo electrónico con el código, compruebe las carpetas "spam" o "correo no deseado" de su dirección de correo electrónico.
@@ -42,8 +47,6 @@ Una vez completado el primer formulario, recibirá un código de uso único en l
 >
 
 Una vez que haya introducido y validado el código, complete el resto del formulario. En particular, deberá indicar el **tipo de cuenta** entre las opciones que se ofrecen.
-
-![formulario creación cuenta](images/account-type.png){.thumbnail}
 
 Su cuenta creada, se conectará automáticamente a la página de inicio de su cuenta, denominada "Panel de control".
 

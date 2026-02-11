@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
 excerpt: Découvrez les différentes classes de stockage Object Storage OVHcloud et choisissez celle qui convient le mieux à vos besoins
-updated: 2025-11-19
+updated: 2026-02-03
 ---
 
 Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
@@ -30,7 +30,13 @@ La classe de stockage Infrequent Access est conçue pour les données qui sont r
 
 Cette offre est adaptée aux cas d'usages suivants : stockage long durée, sauvegardes, reprise après sinistre.
 
-### Object Storage - Classe Cold Archive (compatible S3)
+### Object Storage - Active Archive (compatible S3)
+
+La classe de stockage Active Archive est conçue pour la conservation à long terme des données, tout en garantissant un accès immédiat en cas de besoin. Cette classe de stockage est optimisée pour les données rarement consultées, mais qui doivent toujours rester disponibles instantanément.
+
+Cette offre est adaptée aux cas d'utilisation suivants : stockage de données réglementaires à long terme, plans de reprise d’activité.
+
+### Object Storage - Cold Archive (compatible S3)
 
 La classe de stockage Cold Archive est une classe de stockage d'archives. Existant également en tant que [produit dédié chez OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (granularité au niveau du bucket), Cold Archive est désormais disponible en tant que classe à part entière pour un bucket dit « general-purpose ». La classe Cold Archive est conçue pour le stockage de données à long terme et l'archivage de données avec un coût très bas par GiB-heure et un coût additionnel de restauration par GiB restauré. En effet, les données dans la classe Cold Archive ne sont pas disponibles en temps réel et doivent être restaurées avant d'être disponibles.
 
@@ -78,6 +84,16 @@ La classe de stockage Cold Archive est une classe de stockage d'archives. Exista
         <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
     </tr>
     <tr>
+        <td><strong>Active Archive<strong></td>
+        <td>Stockage à long terme de données réglementaires, plans de reprise après sinistre</td>
+        <td>millisecondes</td>
+        <td>3-AZ</td>
+        <td>régions 3-AZ : 99,99%</td>
+        <td>90 jours</td>
+        <td>Oui</td>
+        <td>À l'objet, prise en charge de la gestion du cycle de vie</td>
+    </tr>
+    <tr>
         <td><strong>Cold Archive*<strong></td>
         <td>Stockage à très long terme, sauvegardes, reprise après sinistre</td>
         <td>heures</td>
@@ -107,7 +123,7 @@ Par exemple, pour la classe *Infrequent Access*, la durée de stockage minimale 
 
 Il s'agit de frais appliqués lorsque vous récupérez ou accédez à des données stockées dans une classe de stockage concernée. Ces frais de récupération sont calculés en fonction de la quantité de données récupérées (par Gio récupéré). 
 
-Pour la classe *Infrequent Access*, seules les requêtes de type *get-object* sont considérées comme des frais de récupération. 
+Pour les classes *Infrequent Access* et *Active Archive*, seules les requêtes de type *get-object* sont considérées comme des frais de récupération. 
 
 Pour la classe *Cold Archive*, seules les requêtes de type *restore* sont considérées comme des frais de récupération.
 
@@ -140,7 +156,8 @@ La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de
 | Object Storage - High Performance | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
 | Object Storage - Standard | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
 | Object Storage - Infrequent Access | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
-| Cold Archive | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
+| Object Storage - Active Archive | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
+| Object Storage - Cold Archive | Compatibilité S3 | Disponibilité générale | Génération la plus récente |
 | SWIFT Standard Object Storage | OpenStack SWIFT | Pris en charge | Solution établie, *legacy* |
 | Cloud Archive - API SWIFT | OpenStack SWIFT | Pris en charge | Solution établie, *legacy* |
 

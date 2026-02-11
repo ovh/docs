@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to fetch service metrics with Prometheus
+title: Récupérez les métriques avec Prometheus pour les services Analytics (EN)
 excerpt: Find out how to setup a Prometheus exporter for your Analytics service
 updated: 2025-02-03
 ---

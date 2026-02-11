@@ -1,7 +1,7 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9 to 11
-excerpt: "Enable OVHcloud Link Aggregation in your Debian server (from Debian 9 to Debian11)"
-updated: 2024-11-26
+title: How to configure your NIC for OVHcloud Link Aggregation in Debian 9 to 11
+excerpt: "Enable OVHcloud Link Aggregation in your Debian server (from Debian 9 to Debian 11)"
+updated: 2026-01-09
 ---
 
 ## Objective
@@ -22,6 +22,13 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> This guide provides instructions for configuring network interface bonding specifically using `ifupdown`, whose configuration file is located at `/etc/network/interfaces`. It also applies to the rescue system.
+>
+> If your system's network configuration uses `Netplan` instead, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## Instructions
@@ -58,6 +65,7 @@ This will open an empty text file. To configure the bond interface, insert the f
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> For the `hwaddress` parameter, we recommend using the smaller of the two MAC addresses of your NICs, as it belongs to the LACP fallback interface.
+>
 
 > [!primary]
 >
@@ -85,6 +98,6 @@ This restart may take several seconds since it is building the bond interface.  
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
 
 Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: OpenSearch Index as a Service
 excerpt: Use the power of OpenSearch without managing a cluster.
-updated: 2025-10-16
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ The service name is the identifier of your Logs Data Platform service. It is dif
 > Prior to IAM migration the prefix was <username>. It has now been changed to <service_name> for all indices created after September 17, 2025.
 >
 
-For each index, you can specify the number of **shards**. A **shard** is the main component of an **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards mean more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+For each index, you can specify the number of **shards**. A **shard** is the main component of an **index**. Its maximum storage capacity is set to **25 GiB** (per shard). Multiple shards mean more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
 
 When you create an index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/), you can also specify the number of shards. Note that the maximum number of shards per index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming conventions.
 

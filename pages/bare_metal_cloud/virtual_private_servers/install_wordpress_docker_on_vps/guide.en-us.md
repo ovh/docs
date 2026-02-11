@@ -95,7 +95,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 Check the Docker Compose installation:
 
 ```sh
-docker-compose –version
+docker compose version
 ```
 
 If the Docker Compose installation is successful, you will receive a message like this:
@@ -155,7 +155,7 @@ This Compose file creates a WordPress service and a MySQL service.
 Launch the services with Docker Compose:
 
 ```sh
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 The Docker image used in this example is the official version `wordpress:latest`. This specific image is designed to work with an Apache web server. The official WordPress images on [Docker Hub](https://hub.docker.com/) are regularly updated to include the latest stable PHP versions compatible with the current version of WordPress.

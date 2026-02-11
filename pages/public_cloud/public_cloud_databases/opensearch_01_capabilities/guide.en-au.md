@@ -26,7 +26,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Database nodes have to be in the same region. Multi-AZ is currently not supported.
+Database nodes have to be in the same region.
 
 ### OpenSearch versions
 

@@ -4,11 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verb
 updated: 2025-04-28
 ---
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/OiIwy54)
-
 ## Ziel
 
 Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencenter.
@@ -26,7 +21,7 @@ Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencen
 
 Gehen Sie auf die [Login-Seite von OVHcloud](/links/manager) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
-![Kundenkennung](images/log-in.png){.thumbnail}
+![Kundenkennung](images/account-log-in-EN.png){.thumbnail}
 
 Wenn Sie die [Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) aktiviert haben, bestätigen Sie den Login mit der gewählten Methode (SMS, Mobile App, U2F-Schlüssel).
 

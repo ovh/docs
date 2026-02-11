@@ -1,7 +1,7 @@
 ---
-title: 'Changing a Windows Server product key'
+title: 'How to change a Windows Server product key'
 excerpt: 'Find out how to modify your Windows Server product key'
-updated: 2022-07-07
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ When you install a Windows Server operating system, the product key – also kno
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/os/server-windows/) with Windows installed in your OVHcloud account
+- An OVHcloud [dedicated server](/links/bare-metal/os) running Windows Server, or a virtual machine running Windows Server on a [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses) service.
 - A Windows SPLA licence in your OVHcloud account
 - Administrative access to your server via remote desktop connection
 

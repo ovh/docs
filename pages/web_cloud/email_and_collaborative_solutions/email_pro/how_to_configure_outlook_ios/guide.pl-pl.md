@@ -53,7 +53,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - **Jeśli konto zostało już skonfigurowane**:
     1. Stuknij okrąg zawierający inicjały przeglądanego konta e-mail lub ikonę domu " &#8962;" w lewym górnym rogu ekranu.
     2. Stuknij koło zębate " &#9881;" w lewym dolnym rogu ekranu.
-    3. Następnie kliknij `Konta {.action} w menu **Ustawienia**.
+    3. Następnie kliknij `Konta`{.action} w menu **Ustawienia**.
     4. Kliknij `Dodaj konto`{.action}.
     5. Naciśnij `Konto pocztowe`{.action}.
 

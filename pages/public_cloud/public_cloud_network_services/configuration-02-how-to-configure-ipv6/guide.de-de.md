@@ -50,7 +50,7 @@ Die folgenden Abschnitte enthalten die Konfigurationen der derzeit von uns angeb
 
 > [!warning]
 >
-> Bitte beachten Sie, dass die IPv6-Adresse auf unseren Public Cloud-Instanzen standardmäßig konfiguriert ist. Überprüfen Sie unbedingt die Konfigurationsdatei des Betriebssystems, bevor Sie Änderungen vornehmen.
+> Beachten Sie, dass die IPv6-Adresse auf unseren Public Cloud Instanzen standardmäßig konfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei des Betriebssystems, bevor Sie Änderungen vornehmen.
 
 ### Glossar
 

@@ -49,8 +49,8 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Agora pode retirar a instância do modo rescue. (Ver o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Agora pode retirar a instância do modo rescue. (Ver o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Saiba mais
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

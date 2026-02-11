@@ -4,11 +4,6 @@ excerpt: 'Esta guía explica cómo optimizar la seguridad de su cuenta de OVHclo
 updated: 2025-05-22
 ---
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Objetivo
 
 La gestión de sus servicios y datos se realiza principalmente desde el área de cliente de OVHcloud.

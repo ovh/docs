@@ -192,7 +192,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Avec 
 >> ```
 >>
 > **Fedora 42+ / AlmaLinux (10) / Rocky Linux (10)**
->> Fedora 42 et versions ultérieures
+>> Fedora 42 et versions ultérieures, AlmaLinux et Rocky Linux (10)
 >>
 >> Fedora utilise dorénavant des fichiers clés (*keyfiles*).
 >> Fedora utilisait auparavant des profils réseau stockés par NetworkManager au format ifcfg dans le répertoire `/etc/sysconfig/network-scripts/`.<br>

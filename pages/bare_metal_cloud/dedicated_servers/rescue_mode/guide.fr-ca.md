@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser le mode rescue"
 excerpt: "Découvrez comment utiliser le mode customer rescue OVHcloud pour dépanner votre serveur dédié"
-updated: 2025-01-20
+updated: 2026-01-09
 ---
 
 <style>
@@ -351,6 +351,14 @@ chroot /mnt/
 ```
 
 Vous devriez maintenant pouvoir appliquer toutes les modifications nécessaires à votre système, par exemple pour [retrouver l'accès au serveur](#gofurther).
+
+### Configuration de l'agrégation de liens en mode rescue
+
+L'agrégation de liens (LACP) est très avantageuse, car elle permet d'augmenter la bande passante totale de votre serveur tout en offrant une redondance réseau en cas de défaillance d'une interface réseau.
+
+Bien que le mode rescue soit basé sur le système d'exploitation Debian 12, sa configuration réseau repose sur l'utilitaire `ifupdown`, plutôt que `Netplan`.
+
+Si vous disposez d'un serveur supportant l'agrégation de liens, et que vous souhaitez configurer celle-ci en mode rescue, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Sortie du mode rescue
 

@@ -4,11 +4,6 @@ excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus 
 updated: 2025-05-22
 ---
 
-> [!success]
-> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
-> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
-> [Aceda ao inquérito.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Objetivo
 
 A gestão dos seus serviços e dados efetua-se principalmente através da Área de Cliente OVHcloud.

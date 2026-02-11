@@ -1,12 +1,12 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-08-27
+updated: 2026-02-10
 ---
 
 ## Objective
 
-Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique NIC handle (Customer ID). 
+Most services created with OVHcloud are managed by several contacts. Each of these contacts is linked to a unique customer account.
 
 **Find out how to manage contacts for your OVHcloud services.**
 
@@ -18,11 +18,9 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 There are three different contact types:
 
-- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the owner of a service, such as domain names, for example.
+- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the holder of a service, such as domain names, for example.
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
-
-The NIC handle is a personal username that you receive via email when you create a customer account with OVHcloud. It is usually made up of two letters, followed by numbers. E.g.: **aa00000-ovh**. When you order services, this NIC handle is used as a contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
@@ -46,13 +44,13 @@ Log in to the [OVHcloud Control Panel](/links/manager), click on your name in th
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
-The table that appears will show all of the services your NIC handle is registered with as a contact.
+The table that appears will show all of the services your account is registered with as a contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
 
 ### Change the contacts for a service.
 
-Once you are on the Contacts page, click `...`{.action} to the right of the service you want to modify, then `Modify contacts`{.action}. Enter the new contact(s) you want to add, then click `Confirm`{.action}.
+Once you are on the Contacts page, click `...`{.action} to the right of the service you want to modify, then `Modify contacts`{.action}. Enter the new contact(s) you want (enter the primary email address for the account concerned), then click `Confirm`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
 

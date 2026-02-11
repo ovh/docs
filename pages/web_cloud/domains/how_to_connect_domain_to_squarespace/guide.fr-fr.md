@@ -1,12 +1,12 @@
 ---
 title: "Comment connecter un nom de domaine OVHcloud à un hébergement SquareSpace"
 excerpt: "Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement SquareSpace"
-updated: 2024-05-15
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement SquareSpace. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement SquareSpace.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement SquareSpace. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement SquareSpace.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement SquareSpace**
 
@@ -53,7 +53,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
->> Vous devrez créer 4 enregistrements de type « A » successivement afin de renseigner les 4 adresses IPv4 relatives à SquareSpace. 
+>> Vous devrez créer 4 enregistrements de type « A » successivement afin de renseigner les 4 adresses IPv4 relatives à SquareSpace.
 >> Laissez le champ **Sous-domaine** vide et saisissez la première adresse IPv4 de SquareSpace `198.185.159.144` dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A », ; répétez l'opération pour les 3 autres adresses IPv4 `198.185.159.145` ; `198.49.23.144` ; `198.49.23.145` et passez à l'étape 2.
 > **Etape 2**
@@ -83,7 +83,7 @@ La zone DNS est maintenant configurée pour faire le lien avec un hébergement S
 
 ### Connecter son nom de domaine à SquareSpace
 
-Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion de SquareSpace. 
+Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion de SquareSpace.
 
 > [!primary]
 >
@@ -96,7 +96,7 @@ Pour commencer, suivez les étapes de connexion décrites dans l'étape 1 de ce 
 
 > [!warning]
 >
-> Si vous recevez le message d’alerte « This domain is already connected to another Squarespace site » (Ce domaine est déjà connecté à un autre site Squarespace), vérifiez vos autres sites web Squarespace pour déterminer à quel site le nom de domaine est connecté. Puis, déconnectez-le de ce site web. 
+> Si vous recevez le message d’alerte « This domain is already connected to another Squarespace site » (Ce domaine est déjà connecté à un autre site Squarespace), vérifiez vos autres sites web Squarespace pour déterminer à quel site le nom de domaine est connecté. Puis, déconnectez-le de ce site web.
 
 Pour la suite du processus, poursuivez à l’étape 2 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/12880712406797-Connecter-un-domaine-OVHcloud-%C3%A0-votre-site-Squarespace).
 

@@ -1,14 +1,14 @@
 ---
 title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 bis 11'
-excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Debian 9 Server aktivieren'
-updated: 2024-11-26
+excerpt: 'Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Debian (Versionen 9 bis 11)'
+updated: 2026-01-09
 ---
 
 ## Ziel
 
 Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
 
-**Diese Anleitung erklärt, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in Debian (Versionen 9 bis 11) zu verwenden.**
+**Erfahren Sie, wie Sie Ihre NIC (Network Interface Controller) für die Verwendung mit dem OLA-Dienst unter Debian (Versionen 9 bis 11) zusammenfassen können.**
 
 ## Voraussetzungen
 
@@ -23,6 +23,13 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 > apt install ifenslave
 > ```
 >
+
+> [!primary]
+>
+> Diese Anleitung enthält Anweisungen zum Konfigurieren der Netzwerk-Schnittstellenaggregation speziell mit `ifupdown`, dessen Konfigurationsdatei `/etc/network/interfaces` ist. Sie gilt auch für den Rescue-Modus.
+>
+> Wenn die Netzwerkkonfiguration Ihres Systems stattdessen `Netplan` verwendet, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+
 
 ## In der praktischen Anwendung
 
@@ -58,6 +65,7 @@ Zum Konfigurieren der Bond-Schnittstelle fügen Sie Folgendes am Ende der Datei 
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> Für den Parameter `hwaddress` empfehlen wir, die kleinere der beiden MAC-Adressen Ihrer Netzwerkkarten zu verwenden, da diese zur LACP-Fallback-Schnittstelle gehört.
+>
 
 > [!primary]
 >

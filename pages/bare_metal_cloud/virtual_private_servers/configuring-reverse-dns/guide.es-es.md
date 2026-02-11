@@ -1,7 +1,7 @@
 ---
 title: "Cómo configurar el registro DNS inverso de su servidor (registro PTR)"
-excerpt: Cómo implementar la resolución inversa DNS de su dirección IPv4 o IPv6 desde el área de cliente de OVHcloud
-updated: 2025-12-10
+excerpt: Cómo implementar la resolución inversa DNS de su dirección IP desde el área de cliente de OVHcloud
+updated: 2026-01-06
 ---
 
 ## Objetivo
@@ -15,42 +15,44 @@ Esta guía explica cómo configurar el registro DNS inverso de su dirección IP 
 ## Requisitos
 
 - Una dirección IP asociada a un servicio de su cuenta de OVHcloud
-- Un dominio con su registro `A` o `AAAA` asociado a su servicio
+- Un nombre de dominio con su registro `A` u `ÀAAA` ligado a su servicio
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
-Los menús desplegables de la sección **Mis direcciones IP públicas y servicios asociados** le permiten filtrar los elementos de la tabla para los servicios y encontrar rápidamente la dirección IP deseada.
+El menú desplegable bajo "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categoría. También puede buscar una dirección IP específica mediante la barra de búsqueda situada a la izquierda del menú desplegable.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
-Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Modificar el registro inverso`{.action}.
+Haga clic en el botón `⁝`{.action} en la fila de la dirección IP correspondiente y seleccione `Configurar el registro DNS inverso`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-En la nueva ventana, introduzca el registro inverso y haga clic en `Aceptar`{.action}.
+En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-También puede editar el registro inverso directamente a través del icono con forma de pluma de la columna **registro inverso** de la tabla.
+También puede editar el reverse directamente mediante el icono `lápiz`{.action} en la columna **Registro DNS inverso** de la tabla.
 
 > [!warning]
-> Al introducir su dominio en el registro inverso, este verificará inmediatamente si los registros `A` y `AAAA` coinciden con las direcciones IP configuradas para este dominio. Se utiliza en los procedimientos antispam, por lo que el registro DNS ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:
+> Cuando introduzca su nombre de dominio en el *reverse*, se verificará inmediatamente si el registro A apunta a la misma IP. Esto se utiliza en las procedimientos antispam, por lo tanto, su registro A debe ser válido y propagado. Hay ciertas reglas a seguir al introducir el *reverse* :
 >
->  - el registro inverso no puede empezar por un `-`
->  - el registro inverso no puede tener más de 63 caracteres.
->  - el registro inverso no puede contener caracteres en mayúscula.
->  - el registro inverso debe terminar en un `.`
+>  - el *reverse* no puede comenzar con un `-`
+>  - el *reverse* no puede contener más de 63 caracteres
+>  - el *reverse* no puede contener caracteres mayúsculos
+>  - el *reverse* debe terminar con un `.`
 >
-> Por ejemplo: "domain.tld" en el registro inverso sería `domain.tld.`.
+> Ejemplo: "domain.tld" en el registro *reverse* sería `domain.tld.`.
+>
 
 > [!primary]
 >
-> Si el cambio no funciona como se esperaba, verifique que los registros `A` y `AAAA` estén correctamente configurados en la zona DNS de su nombre de dominio. La aplicación de los cambios en la zona DNS puede tardar hasta 24 horas en caso de que acabe de modificar el registro.
+> Si el cambio no funciona como se espera, compruebe que el registro `A` esté correctamente configurado en la zona DNS de su nombre de dominio. La aplicación de los cambios en la zona DNS puede tardar hasta 24 horas, en caso de que acaba de modificar el registro `A`.
 >
-> Si el dominio está gestionado por OVHcloud como agente registrador **y utiliza los servidores DNS de OVHcloud**, consulte la guía [esta guía](/pages/web_cloud/domains/dns_zone_edit).
+> Si el nombre de dominio está gestionado por OVHcloud como registrador **y utiliza los servidores DNS de OVHcloud**, puede consultar [este tutorial](/pages/web_cloud/domains/dns_zone_edit).
+>
 
 ## Más información
 

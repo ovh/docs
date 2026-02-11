@@ -1,7 +1,7 @@
 ---
 title: "Attivare e utilizzare il Rescue mode"
 excerpt: "Scopri come utilizzare la modalità customer rescue OVHcloud per risolvere i problemi del tuo server dedicato"
-updated: 2025-01-20
+updated: 2026-01-09
 ---
 
 <style>
@@ -351,6 +351,14 @@ chroot /mnt/
 ```
 
 A questo punto dovresti essere in grado di applicare tutte le modifiche necessarie al tuo sistema, ad esempio per [ritrovare l'accesso al server](#gofurther).
+
+### Configurazione dell'aggregazione dei collegamenti in modalità Rescue
+
+L'aggregazione dei collegamenti (LACP) è molto vantaggiosa, poiché consente di aumentare la larghezza di banda totale del server offrendo al contempo ridondanza di rete in caso di guasto di un'interfaccia di rete.
+
+Sebbene la modalità Rescue sia basata sul sistema operativo Debian 12, la sua configurazione di rete si basa sull'utilità `ifupdown`, piuttosto che su `Netplan`.
+
+Se disponi di un server che supporta l'aggregazione di collegamenti e desideri configurarla in modalità rescue, fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Uscita dalla modalità Rescue
 

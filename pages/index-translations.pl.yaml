@@ -90,7 +90,6 @@ hosted-private-cloud-managed-vmware-security-secnumcloud: Zgodność i SecNumClo
 hosted-private-cloud-managed-vmware-troubleshooting: Diagnostyka
 hosted-private-cloud-managed-vmware-troubleshooting-maintenance: Konserwacja i aktualizacje
 hosted-private-cloud-managed-vmware-troubleshooting-logs: Monitorowanie i logi
-hosted-private-cloud-managed-vmware-troubleshooting-errors: Obsługa błędów
 hosted-private-cloud-managed-vmware-troubleshooting-compliance: Monitorowanie zgodności
 hosted-private-cloud-managed-vmware-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-nutanix: Nutanix on OVHcloud
@@ -106,6 +105,8 @@ hosted-private-cloud-nutanix-additional-resources: Dodatkowe zasoby
 hosted-private-cloud-hosted-private-cloud-opcp: On-Prem Cloud Platform
 hosted-private-cloud-hosted-private-cloud-opcp-getting-started: Pierwsze kroki
 hosted-private-cloud-hosted-private-cloud-opcp-additional-resources: Dodatkowe zasoby
+hosted-private-cloud-snc-cloud-platform: SNC Cloud Platform
+hosted-private-cloud-snc-cloud-platform-getting-started: Pierwsze kroki
 hosted-private-cloud-baremetal-pod: Bare Metal Pod
 hosted-private-cloud-baremetal-pod-getting-started: Pierwsze kroki
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
@@ -176,46 +177,74 @@ public-cloud-containers-orchestration-managed-rancher-service-getting-started: G
 public-cloud-containers-orchestration-managed-rancher-service-configuration: Configuration
 public-cloud-containers-orchestration-managed-rancher-service-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service-additional-resources: Additional resources
-public-cloud-databases-common-configuration: Configuration
-public-cloud-databases-common-getting-started: Getting started
-public-cloud-databases-common-key-concepts: Key concepts
-public-cloud-databases-common-migration: Migration
-public-cloud-databases-common-security: Security
-public-cloud-databases-common-troubleshooting: Troubleshooting
+public-cloud-databases-common-additional-resources: Dodatkowe zasoby
+public-cloud-databases-common-configuration: Konfiguracja
+public-cloud-databases-common-getting-started: Pierwsze kroki
+public-cloud-databases-common-key-concepts: Kluczowe pojęcia
+public-cloud-databases-common-migration: Migracja
+public-cloud-databases-common-security: Bezpieczeństwo
+public-cloud-databases-common-troubleshooting: Diagnostyka
+public-cloud-databases-common-tutorials: Tutorials
 public-cloud-databases-common: Common
-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
-public-cloud-databases-mongodb-guides: MongoDB - User guides
-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+public-cloud-databases-mongodb-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mongodb-configuration: Konfiguracja
+public-cloud-databases-mongodb-getting-started: Pierwsze kroki
+public-cloud-databases-mongodb-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mongodb-migration: Migracja
+public-cloud-databases-mongodb-security: Bezpieczeństwo
+public-cloud-databases-mongodb-troubleshooting: Diagnostyka
+public-cloud-databases-mongodb-tutorials: Tutorials
 public-cloud-databases-mongodb: MongoDB
-public-cloud-databases-mysql-guides: MySQL - Guides
-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+public-cloud-databases-mysql-additional-resources: Dodatkowe zasoby
+public-cloud-databases-mysql-configuration: Konfiguracja
+public-cloud-databases-mysql-getting-started: Pierwsze kroki
+public-cloud-databases-mysql-key-concepts: Kluczowe pojęcia
+public-cloud-databases-mysql-migration: Migracja
+public-cloud-databases-mysql-security: Bezpieczeństwo
+public-cloud-databases-mysql-troubleshooting: Diagnostyka
+public-cloud-databases-mysql-tutorials: Tutorials
 public-cloud-databases-mysql: MySQL
-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
+public-cloud-databases-postgresql-additional-resources: Dodatkowe zasoby
+public-cloud-databases-postgresql-configuration: Konfiguracja
+public-cloud-databases-postgresql-getting-started: Pierwsze kroki
+public-cloud-databases-postgresql-key-concepts: Kluczowe pojęcia
+public-cloud-databases-postgresql-migration: Migracja
+public-cloud-databases-postgresql-security: Bezpieczeństwo
+public-cloud-databases-postgresql-troubleshooting: Diagnostyka
+public-cloud-databases-postgresql-tutorials: Tutorials
 public-cloud-databases-postgresql: PostgreSQL
-public-cloud-databases-valkey-guides: Valkey - Guides
-public-cloud-databases-valkey-tutorials: Valkey - Tutorials
+public-cloud-databases-valkey-configuration: Konfiguracja
+public-cloud-databases-valkey-getting-started: Pierwsze kroki
+public-cloud-databases-valkey-key-concepts: Kluczowe pojęcia
+public-cloud-databases-valkey-migration: Migracja
+public-cloud-databases-valkey-security: Bezpieczeństwo
+public-cloud-databases-valkey-troubleshooting: Diagnostyka
+public-cloud-databases-valkey-tutorials: Tutorials
 public-cloud-databases-valkey: Valkey
 public-cloud-databases: Public Cloud Databases
-public-cloud-data-analytics-common-configuration: Configuration
-public-cloud-data-analytics-common-getting-started: Getting started
-public-cloud-data-analytics-common-key-concepts: Key concepts
-public-cloud-data-analytics-common-migration: Migration
-public-cloud-data-analytics-common-security: Security
-public-cloud-data-analytics-common-troubleshooting: Troubleshooting
+public-cloud-data-analytics-common-additional-resources: Dodatkowe zasoby
+public-cloud-data-analytics-common-configuration: Konfiguracja
+public-cloud-data-analytics-common-getting-started: Pierwsze kroki
+public-cloud-data-analytics-common-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-common-migration: Migracja
+public-cloud-data-analytics-common-security: Bezpieczeństwo
+public-cloud-data-analytics-common-troubleshooting: Diagnostyka
+public-cloud-data-analytics-common-tutorials: Tutorials
 public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
 public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
 public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka-configuration: Konfiguracja
+public-cloud-data-analytics-kafka-getting-started: Pierwsze kroki
+public-cloud-data-analytics-kafka-key-concepts: Kluczowe pojęcia
+public-cloud-data-analytics-kafka-migration: Migracja
+public-cloud-data-analytics-kafka-security: Bezpieczeństwo
+public-cloud-data-analytics-kafka-troubleshooting: Diagnostyka
+public-cloud-data-analytics-kafka-tutorials: Tutorials
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
@@ -345,7 +374,7 @@ web-cloud-domains-dns-configuration-dns-zone: Strefa DNS
 web-cloud-domains-dns-security: Bezpieczeństwo
 web-cloud-domains-dns-tutorials: Tutorials
 web-cloud-domains-domain-names: Nazwy domen
-web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (trade)
+web-cloud-domains-domain-names-configuration-changing-a-domain-name-owner-trade: Zarządzanie kontaktami domen
 web-cloud-domains-domain-names-getting-started: Pierwsze kroki
 web-cloud-domains-domain-names-configuration: Konfiguracja
 web-cloud-domains-domain-names-migration-incoming-transfer-to-ovhcloud: Transfer przychodzący do OVHcloud
@@ -383,8 +412,7 @@ web-cloud-phone-and-fax-fax-getting-started: Pierwsze kroki
 web-cloud-phone-and-fax-fax-configuration: Konfiguracja
 web-cloud-phone-and-fax-fax-configuration-sending-and-receiving-faxes: Wysyłanie i odbieranie faksów
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-configuration-administration: Podanie
-web-cloud-phone-and-fax-voip-configuration-api: API
+web-cloud-phone-and-fax-voip-getting-started-administration: Podanie
 web-cloud-phone-and-fax-voip-configuration-computer-telephony-integration-cti: Integracja telefonii komputerowej (CTI)
 web-cloud-phone-and-fax-voip-configuration-ipbx: IPBX
 web-cloud-phone-and-fax-voip-configuration-numbers-and-aliases: Numery i aliasy
@@ -412,6 +440,8 @@ web-cloud-hosting-tutorials: Samouczki
 web-cloud-hosting-migration: Migracja
 web-cloud-hosting-tutorials-wordpress: Samouczki WordPress
 web-cloud-hosting-tutorials-cloud-web: Samouczki dla Cloud Web
+web-cloud-managed-hosting-for-wordpress: Managed Hosting for WordPress
+web-cloud-managed-hosting-for-wordpress-getting-started: Pierwsze kroki
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Pierwsze kroki
 storage-object-storage: Object Storage
@@ -464,7 +494,11 @@ storage-backup-and-disaster-recovery-solution: Backup and disaster recovery sol
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
-storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
+storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Kluczowe pojęcia
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Pierwsze kroki
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Rozwiązywanie problemów
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Dodatkowe zasoby
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Kluczowe pojęcia
 network-additional-ip-configuration: Konfiguracja

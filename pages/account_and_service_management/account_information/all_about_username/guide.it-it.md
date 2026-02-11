@@ -4,11 +4,6 @@ excerpt: "Scopri come ottimizzare la sicurezza del tuo account OVHcloud, gestire
 updated: 2025-05-22
 ---
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Obiettivo
 
 La gestione dei tuoi servizi e dati avviene principalmente tramite lo Spazio Cliente OVHcloud.

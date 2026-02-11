@@ -56,7 +56,7 @@ Si des voyants sont allumés sur votre modem, cela indique que celui-ci semble f
 
 > [!warning]
 >
-> Avant de poursuivre, vérifiez si votre accès est affecté par un incident en cours en vous rendant sur les liens suivants : <https://status.isp.ovh.net/> et <https://web-cloud.status-ovhcloud.com/>. Si c'est le cas, prenez connaissance des éléments renseignés sur la page, puis patientez le temps de sa résolution.
+> Avant de poursuivre, vérifiez si votre accès est affecté par un incident en cours en vous rendant sur les liens suivants : <https://status.isp.ovhcloud.com/> et <https://web-cloud.status-ovhcloud.com/>. Si c'est le cas, prenez connaissance des éléments renseignés sur la page, puis patientez le temps de sa résolution.
 >
 
 Si aucun incident déclaré n'est en cours, la coupure peut provenir de trois sources :

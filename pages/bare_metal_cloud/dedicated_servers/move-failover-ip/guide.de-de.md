@@ -1,7 +1,7 @@
 ---
 title: Eine Additional IP umziehen
-excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
-updated: 2025-07-22
+excerpt: Erfahren Sie, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -23,9 +23,11 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 >
 > Eine Ausnahme bilden die Regionen eu-west-gra, eu-west-rbx und eu-west-sbg, da hier IP-Adressblöcke zwischen diesen 3 Regionen verschoben werden können.
 >
+> Eine Region ist ein geografisches Gebiet, das aus einem oder mehreren Rechenzentren besteht.
+>
 > Migrationen funktionieren nur für ganze Blöcke. Es ist nicht möglich, einzelne IPs innerhalb eines Blocks zu migrieren.
 
-**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen.**
+**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen. Außerdem wird erklärt, wie Sie eine Additional IP von einem So You Start Kundencenter in ein OVHcloud Kundencenter übertragen können.**
 
 ## Voraussetzungen
 
@@ -62,7 +64,7 @@ Die Geolokalisierung einer IP-Adresse ist unabhängig von ihrer Heimatregion.
 Wenn Sie einen Additional IP Block auf einem Server bestellen, aber einen anderen Standort (Geolokalisierung) für den IP Block wählen, kann dieser IP Block nicht auf einen anderen Server im selben Land wie dieser Block verschoben werden.  
 Beispielsweise kann ein in Polen geolokalisierter Additional IP Block (eu-central-war), der auf einem Server in einem französischen Rechenzentrum (eu-west-gra) bestellt wird, nicht auf einen Server in einem polnischen Rechenzentrum (eu-central-war) umgezogen werden. Der IP-Block kann nur auf einen berechtigten Server in einem Rechenzentrum in Frankreich umgezogen werden.
 
-### IP-Adresse über das OVHcloud Kundencenter umziehen
+### Additional IP über das OVHcloud Kundencenter umziehen
 
 > [!warning]
 > Nur ein Block mit einer einzigen Adresse (/32) kann von einem dedizierten Server auf einen VPS verschoben werden.
@@ -70,21 +72,27 @@ Beispielsweise kann ein in Polen geolokalisierter Additional IP Block (eu-centra
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
-Klicken Sie auf den Tab `Additional IP`{.action}.
+Anschließend können Sie das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden und `Alle Additional IP`{.action} auswählen, um Ihre Dienste entsprechend zu filtern, oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Verschieben Additional IP`{.action} oder `Diesen IP-Block mit einem anderen Dienst verbinden`{.action}.
+Klicken Sie anschließend auf die Schaltfläche `⁝`{.action} rechts neben der zusätzlichen IP-Adresse oder dem IP-Adressblock, den Sie verschieben möchten, und wählen Sie `Verschieben Additional IP`{.action}.
 
-![Kundencenter](images/move_ip.png){.thumbnail}
+![Kundencenter](images/move_ip_1_new.png){.thumbnail}
 
-Wählen Sie im angezeigten Kontextmenü den Dienst aus, auf den die IP-Adresse umgezogen werden soll.
+Wählen Sie im Popup-Fenster aus dem Menü den Dienst aus, zu dem die IP-Adresse verschoben werden soll.
+
+![Kundencenter](images/move_ip_2_new.png){.thumbnail}
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-![Kundencenter](images/moveadditionalIP2.png){.thumbnail}
+> [!warning]
+> Beachten Sie, dass bei einigen Produkten IP-Adressen (oder Blöcke) zunächst in einen IP-Parkplatz (einen temporären Speicherort) verschoben werden müssen, bevor sie zum gewünschten Produkt verschoben werden können.
+>
+> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie die **vRack-Verwaltung**, auf die Sie zugreifen können, indem Sie das Menü `Netzwerk`{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
+>
 
-### IP-Adresse über die API umziehen
+### Additional IP über die API umziehen
 
 Loggen Sie sich auf der [Webseite der OVHcloud API](/links/api) ein.
 
@@ -108,6 +116,63 @@ Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 
 - `serviceName`: die Referenz des Zielservers
 - `ip`: die umzuziehende Additional IP
+
+### Verschieben einer Additional IP von einem So You Start Kundencenter zu einem OVHcloud Kundencenter
+
+Um eine Additional IP von einem SYS Kundencenter zu einem OVHcloud Kundencenter zu transferieren gibt es einige Dinge, die Sie beachten sollten:
+
+- Für das Verschieben einer Additional IP fallen Installationsgebühren an. Die IP-Adresse wird nicht verschoben, wenn die Rechnung nicht bezahlt wurde.
+- Es ist nicht möglich, eine Additional IP von einem OVHcloud Kundencenter zu einem So you Start Kundencenter zu transferieren.
+- Stellen Sie sicher, dass sich der Server, auf den Sie die Additional IPs verschieben, in derselben kompatiblen Region wie die IPs befindet. Siehe Abschnitt "Einschränkungen" weiter unten.
+
+Melden Sie sich zunächst bei Ihrem So you Start Kundencenter an und klicken Sie im Haupt-Dashboard auf `IP`{.action}.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failover IP umziehen`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Wählen Sie `Auf eine OVH-Dienstleistung umziehen`, geben Sie Ihre NIC-Handle ein und klicken Sie auf `Weiter`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+Dadurch wird eine Code (Token) generiert und gespeichert.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
+
+Klicken Sie auf das Zahnrad auf der rechten Seite und wählen Sie `Meine IP-Adressen von SyS bei OVHcloud importieren`{.action}.
+
+![SoYouStart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token (die im Konto So you Start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Wählen Sie den Zielserver aus und klicken Sie auf `Weiter`{.action}. Wenn der Dedicated Server mit der IP-Adresse kompatibel ist, wird eine grüne Meldung angezeigt. Ist dies nicht der Fall, erhalten Sie eine Fehlermeldung.
+
+Klicken Sie auf `Weiter`{.action}.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr angezeigt. Klicken Sie auf `Weiter`{.action} um fortzufahren.
+
+![soyoustart to ovh](images/Step-3.png){.thumbnail}
+
+Markieren Sie `Ich akzeptiere die Verträge`{.action} um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
+
+![soyoustart to ovh](images/Step-4.png){.thumbnail}
+
+Beachten Sie die Bestellübersicht und klicken Sie auf `Bestätigen`{.action}.
+
+![soyoustart to ovh](images/Step-5.png){.thumbnail}
+
+Sie werden auf eine neue Seite weitergeleitet, um die Zahlung vorzunehmen.
+
+Sobald die Zahlung erfolgt ist, wird Ihre Additional IP auf Ihr OVHcloud Kundencenter übertragen und mit dem ausgewählten Server verbunden. Dieser Vorgang kann einige Zeit in Anspruch nehmen.
 
 ### Einschränkungen <a name="limitations"></a>
 

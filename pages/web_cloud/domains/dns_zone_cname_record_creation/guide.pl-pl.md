@@ -1,7 +1,7 @@
 ---
 title: "Jak dodać rekord DNS typu CNAME dla subdomeny"
-excerpt: "Dowiedz się, jak dodać rekord DNS typu CNAME w strefie DNS zarządzanej przez OVHcloud dla subdomeny domeny"
-updated: 2025-06-25
+excerpt: "Dowiedz się, jak dodać rekord DNS typu CNAME w strefie DNS zarządzanej przez OVHcloud dla subdomeny nazwy domeny"
+updated: 2026-02-10
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-Rekord CNAME umożliwia powiązanie subdomeny z nazwą domeny lub subdomeny bez konieczności podawania adresu IP. Oznacza to, że subdomena zostanie przekierowana na adres IP domeny docelowej lub subdomeny, bez konieczności dalszej konfiguracji.
+Rekord CNAME umożliwia powiązanie subdomeny z nazwą domeny lub subdomeny bez konieczności podawania adresu IP. Oznacza to, że subdomena zostanie przekierowana na adres IP nazwy domeny docelowej lub subdomeny, bez konieczności dalszej konfiguracji.
 
 Na przykład, jeśli utworzysz rekord CNAME dla *www.domain.tld*, który wskazuje na *domain.tld*, wówczas *www.domain.tld* użyje tego samego adresu IP co *domain.tld*.
 
@@ -32,8 +32,8 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains).
-- Posiadanie strefy DNS powiązanej z tą domeną w OVHcloud.
+- Posiadanie [nazwy domeny](/links/web/domains).
+- Posiadanie strefy DNS powiązanej z tą nazwą domeny w OVHcloud.
 - Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
@@ -43,9 +43,9 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 ## W praktyce
 
-### Dodaj rekord DNS typu CNAME dla subdomeny domeny
+### Dodaj rekord DNS typu CNAME dla subdomeny nazwy domeny
 
-1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
+1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią nazwę domeny.
 2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
 3. W wyświetlonym oknie wybierz pole typ rekordu `CNAME`{.action}.
 4. Następnie w polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` nazwę domeny lub subdomeny (na przykład: `domain.tld`), do której chcesz przypisać rekord typu CNAME. Następnie kliknij przycisk `Dalej`{.action}.
@@ -80,12 +80,12 @@ Zapytanie DNS dla *www.domain.tld* zwróci losowo wartość docelową rekordu CN
 
 ///
 
-/// details | CNAME dla domeny w jej własnej strefie DNS
+/// details | CNAME dla nazwy domeny w jej własnej strefie DNS
 
 Konwencjonalnie, **rekordy CNAME nie mogą być używane dla nazwy domeny w jej własnej strefie DNS**. Nazwa domeny musi wskazywać bezpośrednio na adres IP z rekordem typu [A](/pages/web_cloud/domains/dns_zone_a_record_creation) w przypadku adresu IPv4 lub [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) w przypadku adresu IPv6.
 
-Aby postępować zgodnie z powyższym przykładem, nie będziesz mógł utworzyć rekordu CNAME dla domeny *domain.tld* w strefie DNS, którą utworzyłeś dla domeny.
-Będziesz mógł jednak tworzyć rekordy CNAME dla wszystkich subdomen (na przykład: *subdomain.domain.tld* lub *www.domain.tld*) dla domeny *domain.tld* w strefie DNS utworzonej dla *domain.tld*.
+Aby postępować zgodnie z powyższym przykładem, nie będziesz mógł utworzyć rekordu CNAME dla nazwy domeny *domain.tld* w strefie DNS, którą utworzyłeś dla nazwy domeny.
+Będziesz mógł jednak tworzyć rekordy CNAME dla wszystkich subdomen (na przykład: *subdomain.domain.tld* lub *www.domain.tld*) dla nazwy domeny *domain.tld* w strefie DNS utworzonej dla *domain.tld*.
 
 ///
 

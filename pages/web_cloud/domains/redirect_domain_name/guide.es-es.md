@@ -1,31 +1,31 @@
 ---
-title: "Redirigir un dominio gestionado por OVHcloud"
-excerpt: "Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud"
-updated: 2025-04-28
+title: "Redirigir un nombre de dominio gestionado por OVHcloud"
+excerpt: "Distintos tipos de redirecciones y cómo crear una redirección para un nombre de dominio gestionado por OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-La redirección de un dominio consiste en redirigir el dominio hacia un nuevo destino. Existen distintos tipos de redirecciones, cada una de las cuales responde a una necesidad específica.
+La redirección de un nombre de dominio consiste en redirigir el nombre de dominio hacia un nuevo destino. Existen distintos tipos de redirecciones, cada una de las cuales responde a una necesidad específica.
 
-**Descubra distintas formas de redirigir su dominio**
+**Descubra distintas formas de redirigir su nombre de dominio**
 
 ## Requisitos
 
-- Disponer de un [dominio](/links/web/domains)
+- Disponer de un [nombre de dominio](/links/web/domains)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Estar conectado al alojamiento web (para una redirección a través de un archivo [.htaccess](#htaccess_rewrite)).
 
 ## Procedimiento
 
-### Entender la redirección de un dominio
+### Entender la redirección de un nombre de dominio
 
-Esta funcionalidad permite redirigir un dominio/subdominio hacia:
+Esta funcionalidad permite redirigir un nombre de dominio/subdominio hacia:
 
-- otro dominio o subdominio ya existente:
+- otro nombre de dominio o subdominio ya existente:
     - **Ejemplo**: `domain.tld`
 - una URL (Uniform Resource Locator) del sitio web:
-    - **Ejemplos**: `http://www.domain.tld/welcome/` o `https://www.domain.tld/welcome/` (si el dominio de destino dispone de un certificado SSL compatible).
+    - **Ejemplos**: `http://www.domain.tld/welcome/` o `https://www.domain.tld/welcome/` (si el nombre de dominio de destino dispone de un certificado SSL compatible).
 
 Existen diversas formas de realizar estas acciones:
 
@@ -37,15 +37,15 @@ Existen diversas formas de realizar estas acciones:
 > La redirección puede afectar al posicionamiento de su sitio web. 
 > Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](/links/partner) en el posicionamiento, si es necesario.
 >
-> Atención: una redirección creada desde el [área de cliente de OVHcloud](/links/manager) no permite redirigir una URL en `https://` a otro dominio o URL. 
+> Atención: una redirección creada desde el [área de cliente de OVHcloud](/links/manager) no permite redirigir una URL en `https://` a otro nombre de dominio o URL. 
 > Para crear este tipo de redirección, debe pasar obligatoriamente por [una reescritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) a través de un fichero ".htaccess", por ejemplo.
 >
 
-### Redirigir un dominio desde el área de cliente
+### Redirigir un nombre de dominio desde el área de cliente
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente. Clic en la pestaña `Redirección`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente. Clic en la pestaña `Redirección`{.action}.
 
-Se mostrará una tabla con las redirecciones activas para el dominio. Puede gestionar las redirecciones existentes utilizando el botón `...`{.action} situado a la derecha de cada línea.
+Se mostrará una tabla con las redirecciones activas para el nombre de dominio. Puede gestionar las redirecciones existentes utilizando el botón `...`{.action} situado a la derecha de cada línea.
 
 Haga clic en el botón `Añadir una redirección`{.action}.
 
@@ -53,7 +53,7 @@ Haga clic en el botón `Añadir una redirección`{.action}.
 
 Hay tres opciones de redirección disponibles en el [área de cliente de OVHcloud](/links/manager), cada una de las cuales se compone de **5 etapas** sucesivas. 
 
-> La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
+> La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su nombre de dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
 > Debido a que no se trata de una "redirección", esta opción no se explicará en esta guía.
 >
 > Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_records).
@@ -67,7 +67,7 @@ A continuación se describen los tres tipos de redirecciones, que se explican pa
 
 #### Opción 1: redirección visible permanente hacia una dirección web
 
-Esta opción permite, una vez introducido el dominio redirigido, mostrar el dominio de destino en la barra de direcciones de su navegador de internet en lugar del dominio redirigido.
+Esta opción permite, una vez introducido el nombre de dominio redirigido, mostrar el nombre de dominio de destino en la barra de direcciones de su navegador de internet en lugar del nombre de dominio redirigido.
 
 - **Ejemplo**: si redirige `domain1.tld` hacia `domain2.tld`, se mostrará `domain2.tld` en la barra de direcciones de su navegador.
 
@@ -81,9 +81,9 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 > [!tabs]
 > **Etapa 1**
 >>
->> En la ventana, su dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
+>> En la ventana, su nombre de dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
 >>
->> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
+>> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su nombre de dominio/subdominio.
 >>
 >> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -107,7 +107,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 > **Etapa 4**
 >>
->> Seleccione `Permanente (301)`{.action} de las dos opciones indicadas y, seguidamente, introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
+>> Seleccione `Permanente (301)`{.action} de las dos opciones indicadas y, seguidamente, introduzca el nombre de dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
 >> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
@@ -123,7 +123,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >> 
 >> > [!primary]
 >> >
->> > Si aparece el mensaje "*Hay redirecciones desde los dominios que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
+>> > Si aparece el mensaje "*Hay redirecciones desde los nombres de dominio que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
 >> >
 >> > Atención, la antigua configuración se desactivará y eliminará.
 >> >
@@ -131,7 +131,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 
 #### Opción 2: redirección visible temporal hacia una dirección web
 
-Al igual que con la opción 1, esta opción permite mostrar, una vez introducido el dominio redirigido, el dominio destino en la barra de direcciones de su navegador de internet en lugar del dominio redirigido.
+Al igual que con la opción 1, esta opción permite mostrar, una vez introducido el nombre de dominio redirigido, el nombre de dominio destino en la barra de direcciones de su navegador de internet en lugar del nombre de dominio redirigido.
 
 Sin embargo, se debe utilizar de forma puntual, por ejemplo para acontecimientos efímeros.<br>
 En efecto, el posicionamiento en los motores de búsqueda es menos potente que con una redirección **visible permanente** de tipo 301 (código HTTP).
@@ -148,9 +148,9 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 > [!tabs]
 > **Etapa 1**
 >>
->> En la ventana, su dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
+>> En la ventana, su nombre de dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
 >>
->> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
+>> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su nombre de dominio/subdominio.
 >>
 >> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -174,7 +174,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 > **Etapa 4**
 >>
->> Seleccione `Temporal (302)`{.action} de las dos opciones indicadas y luego introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
+>> Seleccione `Temporal (302)`{.action} de las dos opciones indicadas y luego introduzca el nombre de dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
 >> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
@@ -190,7 +190,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >> 
 >> > [!primary]
 >> >
->> > Si aparece el mensaje "*Hay redirecciones desde los dominios que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
+>> > Si aparece el mensaje "*Hay redirecciones desde los nombres de dominio que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
 >> >
 >> > Atención, la antigua configuración se desactivará y eliminará.
 >> >
@@ -198,16 +198,16 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 
 #### Opción 3: redirección invisible hacia una dirección web
 
-Esta redirección permite, una vez introducido el dominio redirigido, dejarlo visible en la barra de direcciones de su navegador web en lugar de sustituirlo por el dominio de destino.<br>
+Esta redirección permite, una vez introducido el nombre de dominio redirigido, dejarlo visible en la barra de direcciones de su navegador web en lugar de sustituirlo por el nombre de dominio de destino.<br>
 **Atención: Esta acción no es compatible con todos los sitios web y afecta al posicionamiento de su sitio web.**
 
 - **Ejemplo**: si redirige `domain1.tld` hacia `domain2.tld`, se mostrará `domain1.tld` en la barra de direcciones de su navegador.
 
 ![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
-La redirección invisible funciona con una etiqueta HTML *iFrame*. que permite que el dominio redirigido integre en su propia página HTML el contenido de la otra página correspondiente al dominio de destino.
+La redirección invisible funciona con una etiqueta HTML *iFrame*. que permite que el nombre de dominio redirigido integre en su propia página HTML el contenido de la otra página correspondiente al nombre de dominio de destino.
 
-Esta encapsulación permite impedir que los visitantes del sitio web visualicen el dominio de destino.
+Esta encapsulación permite impedir que los visitantes del sitio web visualicen el nombre de dominio de destino.
 
 > Esta opción devolverá un código HTTP 200.
 
@@ -223,9 +223,9 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 > [!tabs]
 > **Etapa 1**
 >>
->> En la ventana, su dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
+>> En la ventana, su nombre de dominio a redirigir ya aparece. Introduzca el formulario **únicamente** si desea redirigir un *subdominio*.
 >>
->> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
+>> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su nombre de dominio/subdominio.
 >>
 >> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 > **Etapa 4**
 >>
->> Seleccione `Temporal (iframe)`{.action} de las dos opciones indicadas e introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
+>> Seleccione `Temporal (iframe)`{.action} de las dos opciones indicadas e introduzca el nombre de dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
 >> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
@@ -271,13 +271,13 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >> 
 >> > [!primary]
 >> >
->> > Si aparece el mensaje "*Hay redirecciones desde los dominios que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
+>> > Si aparece el mensaje "*Hay redirecciones desde los nombres de dominio que quiere redirigir que entran en conflicto con las redirecciones que desea añadir*", puede marcar la casilla `Confirmar la eliminación de la redirección existente`{.action} para forzar la aplicación de su redirección.
 >> >
 >> > Atención, la antigua configuración se desactivará y eliminará.
 >> >
 >>
 
-### Redirigir un dominio a través de un archivo ".htaccess" <a name="htaccess_rewrite"></a>
+### Redirigir un nombre de dominio a través de un archivo ".htaccess" <a name="htaccess_rewrite"></a>
 
 > [!warning]
 >
@@ -380,11 +380,13 @@ Esta variable se puede utilizar cuando mueve temporalmente archivos a otro sitio
 
 ## Más información <a name="go-further"></a>
 
-[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo ".htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
+[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo ".htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteger el panel de administración de su sitio web a través de ".htaccess"](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+[Proteger el panel de administración de su sitio web a través de ".htaccess"](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 
-[Reescribir las URLs utilizando el "mod_rewrite"](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite).
+[Realizar otras operaciones con el archivo ".htaccess"](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do)
+
+[Reescribir las URLs utilizando el "mod_rewrite"](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 [Cómo editar mi zona DNS ?](/pages/web_cloud/domains/dns_zone_edit)
 

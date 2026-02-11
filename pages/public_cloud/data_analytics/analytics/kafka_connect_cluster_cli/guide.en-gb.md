@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to connect to a Kafka cluster with CLI
+title: Connect using the CLI for Analytics with Kafka
 excerpt: Learn how to connect to a Kafka cluster using the CLI
 updated: 2025-08-25
 ---
