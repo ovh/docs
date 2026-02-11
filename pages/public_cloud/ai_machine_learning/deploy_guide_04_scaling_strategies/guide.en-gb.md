@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Scaling strategies
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy and learn how to use them
-updated: 2026-02-10
+updated: 2026-02-17
 ---
 
 > [!primary]

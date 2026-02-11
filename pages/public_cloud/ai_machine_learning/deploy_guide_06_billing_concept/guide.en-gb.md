@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Billing and lifecycle
 excerpt: Learn how we bill AI Deploy
-updated: 2026-02-10
+updated: 2026-02-17
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ During its lifetime, the app will go through the following status:
 - `STOPPING`: The app is stopping, your compute resources are freed. Ephemeral data is deleted.
 - `STOPPED`: The app ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
 - `FAILED`: The app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
-- `ERROR`: The app ended due to a backend error (issue on OVHcloud side). You may reach our support.
+- `ERROR`: The app ended due to a backend error (issue on OVHcloud side). You may [reach our support](/links/support-contact).
 - `DELETING`: The app is being removed. When it is deleted, you will no longer see it, it will no longer exist.
 - `DELETED`: The app is fully deleted.
 
