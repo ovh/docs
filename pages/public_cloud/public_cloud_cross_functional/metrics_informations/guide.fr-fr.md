@@ -98,7 +98,7 @@ Le tableau ci-dessous présente l’état de disponibilité des Métriques ainsi
 | -------------- | -------------------------------- | -------------- |
 | GRA            | Disponible                       |                |
 | SBG            | Non disponible                   | Q2 2026        |
-| EU-WEST-PAR    | Non disponible                   | Q2 2026        |
+| EU-WEST-PAR    | Non disponible                   | Q3 2026        |
 | EU-WEST-MIL    | Non disponible                   | Q3 2026        |
 | BHS            | Non disponible                   | Q4 2026        |
 | Autres régions | Voir la [roadmap OVHcloud Public Cloud](https://github.com/orgs/ovh/projects/16/views/11?filterQuery=main-product%3A%2C%22Observability%22+status%3AAcknowledged%2CPrioritized%2CPlanned%2C%22Partially+released%22%2CDone++label%3A%22New+Geo%22+-release-date%3A%3C%40today-2m++-reason%3Anot-planned) | Suivez la roadmap pour les mises à jour |

@@ -98,7 +98,7 @@ The table below shows the availability status of metrics and the planned release
 | ------------- | -------------------- | ------------ |
 | GRA           | Available            |              |
 | SBG           | Not available        | Q2 2026      |
-| EU-WEST-PAR   | Not available        | Q2 2026      |
+| EU-WEST-PAR   | Not available        | Q3 2026      |
 | EU-WEST-MIL   | Not available        | Q3 2026      |
 | BHS           | Not available        | Q4 2026      |
 | GRA           | Not available        | Q4 2026      |
