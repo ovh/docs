@@ -1,6 +1,6 @@
 ---
-title: Überprüfen der BMC-Firmware-Version auf einem dedizierten Server
-excerpt: "Erfahren Sie, wie Sie die BMC-Firmware-Version auf einem dedizierten Server prüfen."
+title: Überprüfen der BMC-Firmware-Version auf einem Dedicated Server
+excerpt: "Erfahren Sie, wie Sie die BMC-Firmware-Version auf einem dedizierten Server prüfen"
 updated: 2026-02-11
 ---
 
@@ -8,12 +8,12 @@ updated: 2026-02-11
 
 Ein BMC (Baseboard Management Controller) ist für die Remote-Verwaltung und Steuerung der Server-Hardware auf niedriger Systemebene verantwortlich. Eine veraltete Version kann sich direkt auf die Sicherheit, Stabilität und Verwaltbarkeit des Servers auswirken. Die Aktualisierung der BMC-Firmware ist notwendig, um Sicherheitsschwachstellen zu beheben, die Systemstabilität aufrechtzuerhalten und Compliance-Anforderungen zu erfüllen.
 
-**Dieses Handbuch beschreibt die Schritte, um die BMC-Firmware-Version auf einem dedizierten Server zu prüfen.**
+**Diese Anleitung beschreibt die Schritte, um die BMC-Firmware-Version auf einem dedizierten Server zu prüfen.**
 
 ## Voraussetzungen
 
-- Ein [dedizierter Server](/links/bare-metal/bare-metal) in Ihrem OVHcloud-Konto.
-- Administratorrechte (sudo).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server.
 - Internetverbindung (nur wenn das Paket `ipmitool` noch nicht auf dem Server installiert ist).
 
 ### Auf einem Linux-Server
@@ -46,15 +46,15 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
 
 ### Auf einem Windows-Server
 
-Derzeit können wir den Vorgang nur für Server bereitstellen, die mit Linux-basierten Betriebssystemen laufen. Wir empfehlen Ihnen, Ihren Windows-Server in unserem [Rescue modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) zu starten, um die Version zu prüfen. Der Befehl funktioniert auch im Rescue modus.
+Derzeit können wir den Vorgang nur für Server bereitstellen, die mit Linux-basierten Betriebssystemen laufen. Wir empfehlen Ihnen, Ihren Windows-Server in unserem [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) zu starten, um die Version zu prüfen. Der Befehl funktioniert auch im Rescue-Modus.
 
 ### Auf einem Server im Rescue modus
 
-Sobald Ihr Server im [Rescue modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) neu gestartet wurde, installieren Sie das Paket `ipmitool`.
+Sobald Ihr Server im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) neu gestartet wurde, installieren Sie das Paket `ipmitool`.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # apt install ipmitool -y
@@ -68,12 +68,12 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie bitte unser Support-Team, indem Sie ein [Support-Ticket über den OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
 
 ## Weiterführende Informationen
 
-Für spezialisierte Dienstleistungen (SEO, Entwicklung usw.) kontaktieren Sie [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie bei der Nutzung und Konfiguration Ihrer OVHcloud-Lösungen Unterstützung benötigen, bieten wir verschiedene [Support-Optionen](/links/support) an.
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Treten Sie unserer [User Community](/links/community) bei.
