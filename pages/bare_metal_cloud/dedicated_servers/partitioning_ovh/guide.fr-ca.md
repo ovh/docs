@@ -1,7 +1,7 @@
 ---
 title: API OVHcloud et Stockage
 excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration des disques, RAID matériels/logiciels et du partitionnement lors de la réinstallation de l'OS sur votre serveur"
-updated: 2025-06-04
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -499,7 +499,7 @@ Dans cet exemple, le point de montage `/` concerne un dataset ZFS dans un zpool 
 
 > [!primary]
 >
-> Si aucun nom de zpool n'est spécifié, celui-ci sera généré automatiquement.
+> Si aucun nom de zpool n'est spécifié, celui-ci sera généré automatiquement. Par défaut, l'algorithme tente de regrouper les différents datasets au sein d'un même zpool, à l'exception des datasets contenant `/` ou `/boot` qui sont placés dans des zpools séparés. Cela permet d'activer sur les autres zpools des fonctionnalités avancées de ZFS incompatibles avec le bootloader.
 >
 
 <br />
