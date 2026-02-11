@@ -1,7 +1,7 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-updated: 2026-02-10
+updated: 2026-02-11
 ---
 
 Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem dieser Kontakte ist eine eigene Kundenkennung zugewiesen. 
@@ -32,6 +32,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 - Sie haben die Kundenkennung des neuen Kontakts (der Kontakt, für den Sie die Änderung durchführen möchten).
 - Der neue Kontakt hat Zugriff auf die E-Mail-Adresse, die in seinem Kunden-Account angegeben ist.
 - Der bisherige sowie der neue Rechnungskontakt haben keine offenen Rechnungsbeträge.
+- Der neue Rechnungskontakt muss über ein gültiges Zahlungsmittel in seinem OVHcloud-Konto verfügen.
 
 ## In der praktischen Anwendung
 
