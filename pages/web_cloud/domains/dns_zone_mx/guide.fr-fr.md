@@ -38,14 +38,14 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 
 ### Comprendre le rôle des enregistrements MX
 
-L'enregistrements MX (**M**ail e**X**change) est un type d’enregistrement DNS déterminant quels serveurs e-mail de réception sont attachés à votre nom de domaine. 
+L'enregistrement MX (**M**ail e**X**change) est un type d’enregistrement DNS qui détermine quels serveurs e-mail de réception sont attachés à votre nom de domaine.
 
 Pour bien comprendre son fonctionnement, nous allons nous appuyer sur un exemple:
 
-- l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**
-- le serveur d'envoi e-mail (**Outgoing mail server**) interroger la zone DNS du nom de domaine **mydomain.ovh** et lit les enregistrements **MX**.
-- l'e-mail est transmis vers l'URL de l'enregistrement **MX** lu.
-- l'e-mail est envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
+- L'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**.
+- Le serveur d'envoi d'e-mail (**Outgoing mail server**) interroge la zone DNS du nom de domaine **mydomain.ovh** et lit les enregistrements **MX**.
+- L'e-mail est transmis vers l'URL de l'enregistrement **MX** lu.
+- L'e-mail est envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur correspond à la priorité : la valeur la plus faible est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements MX permet de pallier une absence de réponse du serveur désigné par l’enregistrement ayant la priorité la plus faible, en passant aux serveurs suivants dans l’ordre de priorité.
 
 ![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail .w-600}
 
