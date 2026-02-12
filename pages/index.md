@@ -1580,6 +1580,7 @@
                 + [AI Endpoints - Model Context Protocol (MCP) with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_15_mcp_langchain4j)
                 + [AI Endpoints - Integration in Python with LiteLLM](public_cloud/ai_machine_learning/endpoints_tuto_16_litellm_integration)
                 + [AI Endpoints - Integration with Apache Airflow](public_cloud/ai_machine_learning/endpoints_tuto_17_airflow_integration)
+                + [AI Endpoints - Integration with Hugging Face Inference Providers](public_cloud/ai_machine_learning/endpoints_tuto_18_huggingface_integration)
                 + [AI Endpoints - Integration with Pydantic AI](public_cloud/ai_machine_learning/endpoints_tuto_21_pydantic_ai_integration)
         + [AI Partners Ecosystem](products/public-cloud-ai-and-machine-learning-ai-ecosystem)
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
