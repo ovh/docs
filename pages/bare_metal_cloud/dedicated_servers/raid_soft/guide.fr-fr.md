@@ -169,10 +169,16 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-Nous prenons en compte les périphériques, les partitions et leurs points de montage. À partir des commandes et des résultats ci-dessus, nous avons :
+Notez les périphériques, les partitions et les points de montage, car cela est important, en particulier après le remplacement d'un disque. Cela vous permettra de vérifier que les partitions sont correctement montées sur leurs points de montage respectifs sur le nouveau disque.
 
-- Deux baies RAID : `/dev/md2` et `/dev/md4`.
-- Quatre partitions font partie du RAID avec les points de montage : `/` et `/home`.
+Dans notre exemple, nous avons :
+
+- Partitions faisant partie de md2 (`/`) : **sda2** et **sdb2**.
+- Partitions faisant partie de md4 (`/home`) : **sda4** et **sdb4**.
+- Partitions swap : **sda3** et **sdb3**.
+- Partitions BIOS boot : **sda1** et **sdb1**.
+
+La partition `sda5` est un [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), c'est-à-dire un volume en lecture seule qui fournit au serveur ses données de configuration initiale. Elle n'est lue qu'une seule fois lors du premier démarrage et peut être supprimée ensuite.
 
 <a name="diskfailure"></a>
 
@@ -442,7 +448,7 @@ Ensuite, récupérez les UUID des deux partitions SWAP :
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
 /dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-[user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+[user@server_ip ~]# sudo blkid -s UUID /dev/sdb4
 /dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
@@ -451,7 +457,7 @@ Nous remplaçons l'ancien UUID de la partition SWAP (**sda4**) par le nouveau da
 Exemple :
 
 ```sh
-[user@server_ip ~]# sudo nano etc/fstab
+[user@server_ip ~]# sudo nano /etc/fstab
 
 UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
 UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
@@ -573,19 +579,19 @@ unused devices: <none>
 
 Enfin, nous ajoutons une étiquette et montons la partition [SWAP] (le cas échéant).
 
-Une fois la reconstruction du RAID terminée, nous montons la partition contenant la racine de notre système d'exploitation sur `/mnt`. Dans notre exemple, cette partition est `md4`.
+Une fois la reconstruction du RAID terminée, nous montons la partition contenant la racine de notre système d'exploitation sur `/mnt`. Dans notre exemple, cette partition est `md2`.
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md2 /mnt
 ```
 
 Nous ajoutons le label à notre partition swap avec la commande :
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sda4 -L swap-sda4
-mkswap: /dev/sda4: warning: wiping old swap signature.
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkswap /dev/sdb4 -L swap-sdb4
+mkswap: /dev/sdb4: warning: wiping old swap signature.
 Setting up swapspace version 1, size = 512 MiB (536866816 bytes)
-LABEL=swap-nvme0n1p4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
+LABEL=swap-sdb4, UUID=b3c9e03a-52f5-4683-81b6-cc10091fcd
 ```
 
 Ensuite, nous montons les répertoires suivants pour nous assurer que toute manipulation que nous faisons dans l'environnement chroot fonctionne correctement :
@@ -626,7 +632,7 @@ blkid /dev/sdb4
 Ensuite, nous remplaçons l'ancien UUID de la partition SWAP (**sdb4**) par le nouveau dans `/etc/fstab` :
 
 ```sh
-root@rescue12-customer-eu:/# nano etc/fstab
+root@rescue12-customer-eu:/# nano /etc/fstab
 ```
 
 Exemple:
