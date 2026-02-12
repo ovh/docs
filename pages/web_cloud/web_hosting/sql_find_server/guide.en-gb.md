@@ -18,7 +18,7 @@ During the use of your services, you may need to know the name of the SQL server
 
 - An OVHcloud [Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Use a database included or [ordered as an additional service](/links/web/hosting-options-startsql) via your web hosting.
+- A database included or [ordered as an additional service](/links/web/hosting-options-startsql) via your web hosting
 
 ## Instructions
 
@@ -53,7 +53,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> > [!warning]
 >> >
->> > Do not confuse the **Server** with the **Server address** :
+>> > Do not confuse the **Server** with the **Server address**:
 >> >
 >> > - The **Server address** is part of the login credentials specific to your database and allows your website to connect to it.
 >> > - The **Server** represents the infrastructure hosting your database, as well as other databases. The server name allows you to check whether it is affected by a maintenance operation or an incident reported on our [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) page.
