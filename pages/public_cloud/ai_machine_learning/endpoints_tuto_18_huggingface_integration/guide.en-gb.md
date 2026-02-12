@@ -35,7 +35,6 @@ This new integration offers you several advantages:
 - **Multi-Language Support**: Use Python or JavaScript/TypeScript with the same models
 - **OpenAI Compatibility**: Use the OpenAI SDK for familiar syntax
 - **Cost Control**: Choose between Hugging Face billing or Bring Your Own Key (BYOK) with OVHcloud AI Endpoints
-- **Models**: All of our models are available through Hugging Face Inference Providers!
 
 ## Requirements
 
@@ -62,9 +61,12 @@ pip install huggingface_hub
 ```
 
 Then, you can authenticate yourself with:
+
 ```bash
 hf auth login # get a read token from hf.co/settings/tokens
 ```
+
+or add your key to the environmnent variable `export HF_TOKEN=...`.
 
 And that's all, you are ready to go! 🎉
 
@@ -75,6 +77,8 @@ Install the required packages via npm:
 ```bash
 npm install @huggingface/inference
 ```
+
+And add your key to the environmnent variable `export HF_TOKEN=...`.
 
 ### Basic Configuration
 
