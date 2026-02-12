@@ -38,7 +38,7 @@ Selon la distribution Linux, la commande peut varier :
 >> ```
 >>
 
-Vérifier la version du firmware BMC avec la commande suivante :
+Vérifiez la version du firmware BMC avec la commande suivante :
 
 ```sh
 sudo ipmitool mc info
