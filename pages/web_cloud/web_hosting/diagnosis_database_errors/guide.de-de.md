@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Datenbankfehler beheben"
 excerpt: "Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Ziel 
@@ -30,16 +30,16 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 #### Auf aktuelle Störungen überprüfen
 
-Überprüfen Sie zunächst auf [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder Web Cloud Databases Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
+Überprüfen Sie zunächst auf der Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Ihr Web-Cluster, Ihr Web Cloud Databases-Server oder Ihre Datenbank von einem Zwischenfall in der OVHcloud-Infrastruktur betroffen ist.
 
 > [!primary]
 >
 > Um die dazu nötigen Informationen einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie zum Bereich `Web Cloud`{.action}.
 >
-> - Das **Rechenzentrum** und den *Filer* Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action}: Wählen Sie das Hosting unter `Hosting-Pakete`{.action} aus und wechseln zum Tab `Allgemeine Informationen`{.action}.
-> - Das **Cluster** Ihres Webhostings kann im Tab `FTP-SSH`{.action} eingesehen werden. Die Cluster-Kennung erscheint als Teil des Servernamens unter `FTP-Server`.
+> - Um den `Rechenzentrum`{.action} Ihres Webhostings zu finden, wählen Sie `Hosting-Pakete`{.action} aus und dann das betreffende Webhosting. Diese Informationen finden Sie im Tab `Allgemeine Informationen`{.action}.
+> - Um den **Cluster** und den **Filer** (Dateiserver) Ihres Webhostings zu finden, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Um den Namen des **Web Cloud Databases** zu finden, klicken Sie unter `Web Cloud Databases`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
->
+> - Um den Server zu finden, auf dem sich Ihre integrierte oder über Ihr [Webhosting](/links/web/hosting) bestellte Datenbank befindet, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verbindungsdaten Ihrer Datenbank überprüfen <a name="config_file"></a>
 

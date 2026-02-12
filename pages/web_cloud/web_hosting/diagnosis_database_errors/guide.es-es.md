@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes asociados a las bases de datos"
 excerpt: "Diagnóstico de los errores más comunes relacionados con las bases de datos"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Objetivo
@@ -31,16 +31,16 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 #### Comprobar los incidentes en curso
 
-En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que su datacenter, su cluster de alojamiento, su servidor Web Cloud Databases no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
+Compruebe en primer lugar en la página [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) que su centro de datos, su clúster de alojamiento web, su servidor Web Cloud Databases o su base de datos no estén afectados por un incidente en la infraestructura de OVHcloud.
 
 > [!primary]
 >
 > Para encontrar esta información, conéctese a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} :
 >
-> - Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
-> - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
+> - Para encontrar el `Datacenter` de su alojamiento web, seleccione `Alojamientos`{.action} y, a continuación, el alojamiento web correspondiente. Encontrará esta información en la pestaña `Información general`{.action}.
+> - Para encontrar el **clúster** de servidores y el **filer** (servidor de archivos) de su alojamiento web, consulte [este guía](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Para encontrar el nombre de su servidor **Web Cloud Databases**, haga clic en `Web Cloud Databases`{.action} y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
->
+> - Para encontrar el servidor en el que se encuentra su base de datos incluida o adquirida como complemento a través de su [alojamiento web](/links/web/hosting), consulte [este guía](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Comprobar las claves de conexión a su base de datos <a name="config_file"></a>
 

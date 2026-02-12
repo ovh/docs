@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più frequenti associati ai database"
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Obiettivo
@@ -30,15 +30,15 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 #### Verifica gli incidenti in corso
 
-Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server Web Cloud Databases o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
+Verificate innanzitutto sulla pagina [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) che il vostro datacenter, il vostro cluster di hosting web, il vostro server Web Cloud Database o la vostra base di dati non siano interessati da un incidente sull'infrastruttura OVHcloud.
 
 > [!primary]
 > Per maggiori informazioni, accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}:
 >
-> - Per recuperare la `Datacenter` del tuo hosting e la `Filer` (server di file), seleziona `Hosting`{.action} e poi l'hosting interessato. Queste informazioni sono disponibili nella scheda `Informazioni generali`{.action}.
-> - Per recuperare il **cluster** di server su cui è ospitato il tuo hosting, clicca su `FTP-SSH`{.action}. Questa informazione verrà mostrata nella `Server FTP`
+> - Per trovare il `Datacenter` del vostro hosting web, selezionate `Hosting`{.action}, quindi l'hosting web desiderato. Troverete queste informazioni nella scheda `Informazioni generali`{.action}.
+> - Per trovare il **cluster** di server e il **filer** (server file) del vostro hosting web, consultate [questa guida](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Per recuperare il nome del tuo server **Cloud Databases**, clicca su `Web Cloud Databases`{.action} e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
->
+> - Per trovare il server su cui si trova la vostra base di dati inclusa o acquistata come complemento tramite il vostro [hosting web](/links/web/hosting), consultate [questa guida](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
 
