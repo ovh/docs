@@ -1,7 +1,7 @@
 ---
 title: "Jak zidentyfikować serwer bazy danych"
 excerpt: "Dowiedz się, jak odnaleźć nazwę serwera, na którym znajduje się Twoja współdzielona baza danych, dostępna za pośrednictwem Twojej oferty hostingu"
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Wprowadzenie

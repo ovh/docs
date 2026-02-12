@@ -1,7 +1,7 @@
 ---
 title: "Cómo identificar el servidor de su base de datos"
 excerpt: "Descubra cómo encontrar el nombre del servidor que aloja su base de datos compartida, accesible con su alojamiento web"
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Objetivo
