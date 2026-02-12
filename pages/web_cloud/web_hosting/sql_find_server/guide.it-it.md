@@ -1,5 +1,5 @@
 ---
-title: "Come identificare il server del database"
+title: "Come identificare il server del proprio database"
 excerpt: "Scopri come trovare il nome del server che ospita il tuo database condiviso, accessibile con il tuo hosting web"
 updated: 2026-02-11
 ---

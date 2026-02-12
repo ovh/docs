@@ -22,7 +22,7 @@ Ao longo da utilização dos seus serviços, pode vir a ter necessidade de conhe
 
 ## Instruções
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Clique nas janelas abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
