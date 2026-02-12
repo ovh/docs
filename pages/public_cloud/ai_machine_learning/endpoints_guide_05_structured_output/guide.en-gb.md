@@ -22,7 +22,7 @@ This feature allows for seamless integration of AI-generated data into your appl
 
 This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/).
 
-The examples provided in this guide will be using the [Llama 3.3 70b model](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/models/c968b503-27fa-451d-b59d-1b0ff91d304d).
+The examples provided in this guide will be using the [Llama 3.3 70b model](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/llama-3-3-70b-instruct/).
 
 Visit our [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog) to find out which models are compatible with Structured Output.
 

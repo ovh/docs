@@ -20,7 +20,7 @@ The LLM will identify which tool(s) to call and the arguments to use. This featu
 ## Objective
 
 This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/).
-The examples provided in this guide will be using the [Mistral-Nemo-Instruct-2407](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/models/mistral-nemo-instruct-2407) model.
+The examples provided in this guide will be using the [Mistral-Nemo-Instruct-2407](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/mistral-nemo-instruct-2407/) model.
 
 Visit our [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog) to find out which models are compatible with Function Calling.
 

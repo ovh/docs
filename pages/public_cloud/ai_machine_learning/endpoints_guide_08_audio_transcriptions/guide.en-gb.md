@@ -48,7 +48,7 @@ The examples provided during this guide can be used with one of the following en
 >> A standard terminal, with [cURL](https://cURL.se/) installed on the system.
 >> 
 
-*These examples will be using the [Whisper-large-v3](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/models/whisper-large-v3) model.*
+*These examples will be using the [Whisper-large-v3](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/whisper-large-v3/) model.*
 
 ## Authentication & Rate Limiting
 
