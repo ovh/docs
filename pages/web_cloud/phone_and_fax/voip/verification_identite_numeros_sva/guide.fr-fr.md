@@ -90,7 +90,7 @@ Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis 
 
 ### Téléverser les documents justificatifs
 
-Une fois vos informations saisies, vous devrez fournir des documents justificatifs sur l'interface **Lemonway**.
+Une fois vos informations saisies, vous serez redirigé vers l'interface **Lemonway** pour fournir des documents justificatifs.
 
 ![confirmation](images/sva-lemonway01.png){.thumbnail}
 
@@ -113,7 +113,11 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 >
 > Si votre compte OVHcloud correspond à **un projet de financement participatif (*crowdfunding*)**, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
 >
-> **Note** : Un selfie sera également demandé à des fins de vérification d'identité.
+> **Note** :
+>
+> - Le **Relevé d'Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br> Pour téléverser votre RIB, rendez-vous dans la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur `Gérer mes reversements`{.action} puis sur `Modifier mes coordonnées bancaires`{.action}.
+>
+>    ![sva iban](images/sva-iban.png){.thumbnail}
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
 
@@ -140,6 +144,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Société non cotée** <a name="societenoncotee"></a>
 
 - Une **pièce d'identité** en cours de validité du représentant légal de la société titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du représentant légal est également demandé à des fins de vérification d'identité.
 - Une **pièce d'identité** en cours de validité de chacun des bénéficiaires effectifs de la société titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud.
 - Les statuts de la société, datés et signés.
@@ -149,6 +154,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Société cotée dans un pays de l'UE ou un pays tiers équivalent** <a name="societecotee"></a>
 
 - Une **pièce d'identité** en cours de validité du représentant légal de la société titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du représentant légal est également demandé à des fins de vérification d'identité.
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud. Si non précisé sur le KBIS, le poste de la personne physique habilitée à représenter la société doit être publiquement vérifiable (par exemple sur LinkedIn) ou une délégation de pouvoir doit être fournie.
 - Preuve de la présence de la société sur ledit Marché (cela peut être la page de la Bourse du pays montrant les détails de la société).
 - Si les actions de la société ne sont pas au moins à 76% des actions publiques, tous les actionnaires détenant ou contrôlant plus de 25% des parts sociales seront soumis à la vérification des bénéficiaires effectifs.
@@ -157,6 +163,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Association/Organisme juridique** <a name="association"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique représentant l'association titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso). La personne physique représentant l'association doit occuper le poste de président, trésorier ou secrétaire de l'association.
+- Un **selfie** du représentant est également demandé à des fins de vérification d'identité.
 - Une **copie de moins d'un an du procès-verbal** de la dernière assemblée générale de l'association titulaire du compte OVHcloud.
 - Les **statuts datés et signés** de l'association titulaire du compte OVHcloud
 - La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant l'association titulaire du compte OVHcloud.
@@ -165,12 +172,14 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Administration/Autorité ou Agences publiques et autorités régionales** <a name="administration"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique habilitée par l'administration titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** de la personne habilitée est également demandé à des fins de vérification d'identité.
 - Un **mandat accordé par l'administration titulaire du compte OVHcloud** à la personne physique agissant en son nom.
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Fondation** <a name="fondation"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique représentant la fondation titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du représentant est également demandé à des fins de vérification d'identité.
 - Un **document officiel certifiant** que la personne physique identifiée est bien autorisée à **représenter la fondation** et à gérer le compte OVHcloud.
 - Les **statuts datés et signés** de la fondation titulaire du compte OVHcloud.
 - La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant la fondation titulaire du compte OVHcloud.
@@ -179,6 +188,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Fonds de dotation** <a name="fondsdotation"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud du fonds de dotation : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du responsable est également demandé à des fins de vérification d'identité.
 - Un **document officiel** certifiant que la personne physique identifiée est bien autorisée à représenter le fonds de dotation et à gérer le compte OVHcloud.
 - Les **statuts datés et signés** du fonds de dotation titulaire du compte OVHcloud.
 - Une **copie de moins d'un an du procès-verbal de la dernière assemblée générale** ou la liste des membres du conseil d'administration du fonds de dotation titulaire du compte OVHcloud.
@@ -187,12 +197,14 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Artisan** <a name="artisan"></a>
 
 - Une **pièce d'identité** en cours de validité de l'artisan qualifié titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de résidence (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** de l'artisan est également demandé à des fins de vérification d'identité.
 - Un **certificat d'immatriculation au Registre des Métiers** de moins de 3 mois au nom de l'artisan titulaire du compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Exploitation agricole à responsabilité limitée** <a name="exploitationagricole"></a>
 
 - Une **pièce d'identité** en cours de validité du président ou trésorier de l'EARL titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du président ou trésorier est également demandé à des fins de vérification d'identité.
 - Une **pièce d'identité** en cours de validité de chacun des **bénéficiaires effectifs** de l'EARL : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **certificat d'immatriculation au Registre du Commerce et des Sociétés** de moins de 3 mois au nom de l'EARL titulaire du compte OVHcloud.
 - Les **statuts datés et signés** de l'EARL titulaire du compte OVHcloud.
@@ -203,6 +215,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 
 - Une **première pièce d'identité** en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Une **seconde pièce d'identité** en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire (recto et verso), dernier avis d'imposition daté de moins d'un an, livret de famille, récépissé d'enregistrement du pacte civil de solidarité ou carte vitale.
+- Un **selfie** du titulaire du compte est également demandé à des fins de vérification d'identité.
 - Un **certificat d'inscription à l'INSEE datant de moins de 3 mois** au nom du titulaire du compte ou un document attestant de son inscription auprès de la Chambre de Commerce (pour un auto-entrepreneur exerçant une activité commerciale) ou auprès de la Chambre des métiers (pour un auto-entrepreneur exerçant une activité artisanale).
 - Un **Relevé d'Identité Bancaire**.
 
@@ -211,6 +224,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Fonds avec personnalité morale** <a name="fondspersonnalitemorale"></a>
 
 - Une **pièce d'identité** en cours de validité du mandataire du fonds titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du mandataire est également demandé à des fins de vérification d'identité.
 - Un **KBIS** (extrait attestant de la création de l'entreprise) de moins de trois mois du fonds titulaire du compte OVHcloud.
 - Les **statuts datés et signés** par le mandataire du fonds titulaire du compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
@@ -218,6 +232,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 ##### **Fonds commun de placement (FCP)** <a name="fcp"></a>
 
 - Une **pièce d'identité** en cours de validité du mandataire de la société de gestion titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du mandataire est également demandé à des fins de vérification d'identité.
 - Un **KBIS** (extrait attestant de la création de l'entreprise) de moins de trois mois de la société de gestion titulaire du compte OVHcloud.
 - Le **document de règlement de gestion** du fonds titulaire du compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
@@ -225,18 +240,21 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 #### Comité social et économique (CSE) <a name="cse"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom du CSE : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du responsable est également demandé à des fins de vérification d'identité.
 - Une **copie de moins d'un an du procès-verbal de la dernière assemblée générale** ou la liste des membres du conseil d'administration du CSE titulaire du compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
 
 #### Groupement d'intérêt public, Centre hospitalier universitaire, Établissement public d'intérêt général, Société d'investissement immobilier, Établissements de santé privés d'intérêt collectif <a name="divers"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom de l'agence publique : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du responsable est également demandé à des fins de vérification d'identité.
 - Un **document officiel** certifiant que la personne physique identifiée est bien autorisée à **représenter l'agence publique** et à gérer le compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
 
 #### Compagnie d'assurance <a name="assurance"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom de la compagnie d'assurance : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du responsable est également demandé à des fins de vérification d'identité.
 - Une **décision** (extrait de la délibération ou mandat) désignant la ou **les mandataire(s)** (non exécutifs) autorisés à gérer le compte OVHcloud au nom de la compagnie d'assurance.
 - Un **extrait des délibérations** désignant les directeurs et précisant leurs capacités
 - Un **extrait de la publication dans le JOAFE** (Journal Officiel des Associations & Fondations d'Entreprise) ou, à défaut, l'extrait de l'enregistrement de compagnies d'assurance mutuelle attestant de l'immatriculation de la compagnie d'assurance titulaire du compte OVHcloud.
@@ -246,6 +264,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 #### Paroisse ou église <a name="eglise"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom de la paroisse ou de l'église : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
+- Un **selfie** du responsable est également demandé à des fins de vérification d'identité.
 - Une copie de moins d'un an du **procès-verbal de la dernière assemblée générale** de l'association diocésaine autorisant l'ouverture du compte et désignant les personnes autorisées à le gérer.
 - Un **extrait de la publication dans le JOAFE** (Journal Officiel des Associations & Fondations d'Entreprise) au nom de l'association diocésaine ou du diocèse.
 - Les **statuts datés et signés** au nom de l'association diocésaine ou du diocèse.
@@ -253,12 +272,29 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 
 ### Vérifier le statut de mes documents <a name="statut-docs"></a>
 
-Dans votre `Tableau de bord`{.action}, vérifiez le statut de votre **Profil SVA** :
+Dans le `Tableau de bord`{.action} de votre groupe de téléphonie, vérifiez le statut de votre **Profil SVA** :
 
-- **En attente de validation** : vos documents ne sont pas encore intégralement fournis ou validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway.
-- **Valide** : vos documents sont validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à vos informations et les modifier si nécessaire.
+- **Valide** : vos documents sont validés. Vous pouvez accéder à vos informations et les modifier si nécessaire en cliquant sur `Voir mon profil SVA`{.action}.
 
-![vérification SVA](images/sva-check-profile.png){.thumbnail}
+    ![vérification SVA](images/sva-statut-valide.png){.thumbnail}
+
+- **En attente de validation** : vos documents ne sont pas encore intégralement fournis ou validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway et vérifier le statut de vos documents.
+
+    ![vérification SVA](images/sva-statut-en-attente-de-validation.png){.thumbnail}
+
+- **Incomplet** : un ou plusieurs documents fournis ne sont pas conformes. Cliquez sur `Finaliser mon formulaire de validation d'identité`{.action} ou sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway et vérifier le statut de vos documents.
+
+    ![vérification SVA](images/sva-acces-lemonway.png){.thumbnail}
+
+    ![vérification SVA](images/sva-statut-incomplet.png){.thumbnail}
+
+Sur les exemples ci-dessous, le document 1 est validé et le document 2 est refusé :
+
+![vérification SVA](images/sva-doc-valide.png){.thumbnail}
+
+![vérification SVA](images/sva-doc-refus.png){.thumbnail}
+
+En cas de document refusé, vous devrez téléverser un nouveau justificatif qui sera vérifié dès que possible.
 
 ## Aller plus loin
 
