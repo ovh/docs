@@ -16,7 +16,7 @@ Nell'utilizzo dei tuoi servizi, potresti dover conoscere il nome del server SQL 
 
 ## Prerequisiti
 
-- Disporre di un'offerta [OVHcloud Web Hosting](/links/web/hosting).
+- Disporre di una soluzione di [hosting web OVHcloud](/links/web/hosting).
 - Essere connessi al vostro [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare un database incluso o [acquistato come opzione aggiuntiva](/links/web/hosting-options-startsql) tramite il vostro hosting web.
 
