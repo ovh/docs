@@ -1,7 +1,7 @@
 ---
 title: 'Comment résilier un service VoIP ou une ligne Fax'
 excerpt: "Découvrez comment résilier une ligne SIP, Trunk SIP, une ligne Fax ou un numéro alias depuis l'espace client OVHcloud"
-updated: 2026-02-10
+updated: 2026-02-12
 ---
 
 ## Objectif
@@ -42,7 +42,12 @@ Récupérez le RIO d'un service VoIP ou Fax depuis les informations générales 
 
 > [!success]
 >
-> Autre méthode pour une ligne SIP : composez le **3179** depuis la ligne SIP concernée.
+> Autres méthodes pour obtenir le RIO :
+>
+> - Depuis la ligne SIP concernée : composez le **3179**.
+> - Depuis une autre ligne : composez le **0805 69 3179**, puis renseignez le numéro OVHcloud concerné.
+>
+> Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 ### Résilier une ligne SIP / Trunk
 

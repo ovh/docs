@@ -1,6 +1,6 @@
 ---
 title: FAQ VoIP OVHcloud
-updated: 2026-02-10
+updated: 2026-02-12
 ---
 
 <style>
@@ -217,7 +217,12 @@ Le RIO est affiché dans la rubrique `Informations générales`{.action}.
 
 > [!success]
 >
-> Autre méthode pour une ligne SIP : composez le **3179** depuis la ligne SIP concernée.
+> Autres méthodes pour obtenir le RIO :
+>
+> - Depuis la ligne SIP concernée : composez le **3179**.
+> - Depuis une autre ligne : composez le **0805 69 3179**, puis renseignez le numéro OVHcloud concerné.
+>
+> Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 ///
 
