@@ -27,7 +27,7 @@ Connectez-vous en utilisant les identifiants qui vous ont été fournis par e-ma
 
 > [!primary]
 >
-> Si vous n'avez plus vos identifiants, vous pouvez les regénérer en [contactant le support](/links/support).
+> Si vous n'avez plus vos identifiants, vous pouvez les regénérer en [contactant le support](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

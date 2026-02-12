@@ -28,7 +28,7 @@ Konta e-mail Exchange mogą być skonfigurowane w jednym z kompatybilnych progra
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](/links/web/emails)
+- Wykupienie konta e-mail [Exchange](/links/web/emails-exchange)
 - Zainstalowana aplikacja Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

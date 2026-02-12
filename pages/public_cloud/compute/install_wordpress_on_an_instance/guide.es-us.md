@@ -64,12 +64,12 @@ debian@instance:~$ sudo apt install apache2 mariadb-server php libapache2-mod-ph
 
 ### Paso 2: configuración del servidor de bases de datos <a name="sqlconf"></a>
 
-MariaDB proporciona un script para ayudarle con la configuración inicial y aplicar algunos parámetros de seguridad.
+MariaDB [proporciona un script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) para ayudarle con la configuración inicial y aplicar algunos parámetros de seguridad.
 
 Para ejecutarlo, introduzca el siguiente comando:
 
 ```bash
-debian@instance:~$ sudo mysql_secure_installation
+debian@instance:~$ sudo mariadb-secure-installation
 ```
 
 Confirme el primer salto pulsando `Entrar`{.action}.

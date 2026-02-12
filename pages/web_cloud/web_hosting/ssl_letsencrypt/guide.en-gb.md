@@ -20,7 +20,7 @@ SSL encryption levels are the same between these certificate types.
 
 The main difference lies in the level of checks that will be carried out by the Certificate Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
-Let's Encrypt is a free, automated, open, non-profit certification authority. You can find more information on <https://letsencrypt.org/en/about/>.
+Let's Encrypt is a free, automated, open, non-profit certification authority. You can find more information on <https://letsencrypt.org/about/>.
 
 **Find out how to activate a free Let's Encrypt SSL certificate on your OVHcloud web hosting plan.**
 

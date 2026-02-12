@@ -27,7 +27,7 @@ Effettua l'accesso utilizzando le credenziali che ti sono state fornite via e-ma
 
 > [!primary]
 >
-> Se non hai più le tue credenziali, puoi generarle nuovamente [contattando l'assistenza](/links/support).
+> Se non hai più le tue credenziali, puoi generarle nuovamente [contattando l'assistenza](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

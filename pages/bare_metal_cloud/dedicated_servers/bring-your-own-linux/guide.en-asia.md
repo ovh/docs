@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-09-30
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -11,7 +11,7 @@ The Bring Your Own Linux feature (BYOLinux) enables you to deploy *cloudready* L
 **What does *cloudready* mean?**
 
 The *cloudready* standard generally means being agnostic of the infrastructure on which the image is deployed.
-In addition to the requirement and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
+In addition to the requirements and limitations mentioned below, you must ensure that the image (downloaded or generated) meets the technical expectations of a cloudready image.
 
 **This guide explains how to use Bring Your Own Linux (BYOLinux) on your OVHcloud dedicated server.**
 
@@ -20,8 +20,8 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
-- Your image must be smaller than the Server RAM minus 3GiB
-- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
+- Your image must be smaller than the server RAM minus 3GiB
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will install and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/e20c9474e1a0/example_build/files/make_image_bootable.sh). This script must not alter the NVRAM boot order (e.g. use `grub-install --no-nvram`). For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process).
 
 > [!warning]
 >
@@ -37,10 +37,11 @@ There are some technical limitations linked to the use of physical products such
 - Boot type: **UEFI** or **legacy** (depending on the boot type of your server)
 - Image format: **qcow2**
 - Only one partition in the qcow2 image
+- Partition filesystem: **ext4**, **XFS**, or **BTRFS** (without subvolumes)
 
 **Deployment methods:**
 
-- [Deployment via the Control Panel](#viacontrolpanel): allows you to simply deploy your image using the OVHcloud Control Panel.
+- [Deployment via the Control Panel](#viacontrolpanel): allows you to deploy your image using the OVHcloud Control Panel.
 - [Deployment via API](#viaapi): you can use the OVHcloud API to integrate images into your own scripts to automate deployments.
 
 ### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
@@ -55,7 +56,7 @@ In the window that appears, select `Custom` in the menu, then `Bring Your Own Li
 
 ![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
 
-You will be redirected to the configuration page. Make sure your image URL is in the correct format. Complete the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
+You will be redirected to the configuration page. Make sure your image URL is in the correct format. Fill in the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
 You can find more details on the options in the [deployment options](#options) section below.
 
@@ -63,7 +64,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
 
-### Deploy your image via the APIs <a name="viaapi"></a>
+### Deploy your image via the API <a name="viaapi"></a>
 
 Log in to the [API console](/links/api) and go to the `/dedicated/server`{.action} section.
 
@@ -129,7 +130,7 @@ packages:
 final_message: The system is finally up, after $UPTIME seconds
 ```
 
-Once you completed the fields, start the deployment by clicking `Execute`{.action}.
+Once you have filled in the fields, start the deployment by clicking `Execute`{.action}.
 
 #### Deployment options <a name="options"></a>
 
@@ -146,17 +147,23 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 | customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 | userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
-¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
+¹ Can either be a `#cloud-config` or a script. Its JSON representation must be on a single line with `\n` for line breaks, as JSON strings cannot contain literal newlines.<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
-³ Examples of Efi bootloader path:
+³ The EFI bootloader path is used by iPXE to boot your operating system. For more information, see [Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process). Examples:
+
+> [!primary]
+>
+> The paths below use JSON escaping: `\\` represents a single backslash. For example, `\\efi\\debian\\grubx64.efi` is the path `\efi\debian\grubx64.efi`.
+>
 
 | Operating System | efiBootloaderPath |
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |
 | Ubuntu | `\\efi\\ubuntu\\grubx64.efi` |
-| Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
+| Windows | `\\efi\\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
+| Arch Linux | `\\efi\\arch\\grubx64.efi` |
 | Gentoo | `\\efi\\boot\\bootx64.efi` |
 
 > [!primary]
@@ -166,14 +173,13 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 #### Common customer errors <a name="errors"></a>
 
-The following table gives an overview of well known customer errors and how to fix them.
+The following table gives an overview of well-known customer errors and how to fix them.
 
 |Error message|Details|Solution(s)|
 |---|---|---|
 |Please provide checkSum AND checkSumType or none of them|You have specified only one of the arguments `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
-|image provided format is `x` which does not match expected qcow2 format|Not matter what the file extension is, the real format has to be qcow2.|- Change value of `imageType` to `raw`.<br />- Convert your image to qcow2 format.|
-|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
-|Can't write qcow2 on disk|Impossible to write qcow2 image on disk.|Modify your image so that the command `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` works.|
+|image provided format is `x` which does not match expected qcow2 format|No matter what the file extension is, the real format has to be qcow2.|Convert your image to qcow2 format.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|The image is larger than the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
 |Could not download, qcow2 image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
 |Could not download image: `<error message>`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can provide them with the `httpHeaders` argument.|
 |Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
@@ -182,7 +188,7 @@ See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/de
 
 ## Go further
 
-[Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)
+[BYOLinux on GitHub - Examples and in-depth documentation](https://github.com/ovh/bringyourownlinux)
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
@@ -191,5 +197,7 @@ See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/de
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+[Understanding the dedicated server boot process](/pages/bare_metal_cloud/dedicated_servers/boot-process)
 
 Join our user community on <https://community.ovh.com/en/>.

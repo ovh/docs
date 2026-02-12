@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to use Access Control Lists (ACLs)
+title: Use Access Control Lists (ACLs) for Analytics with Kafka
 excerpt: Learn how to configure Access Control Lists (ACLs)
 updated: 2025-08-25
 ---

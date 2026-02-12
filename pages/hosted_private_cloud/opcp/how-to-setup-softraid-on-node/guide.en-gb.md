@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to configure a software RAID on a node"
 excerpt: "Find out how to configure and manage a software RAID on an OpenStack Ironic node in OPCP"
-updated: 2026-01-13
+updated: 2026-02-06
 ---
 
 ## Objective
@@ -132,13 +132,6 @@ Once the configuration file has been created, apply it to the node:
 ```bash
 openstack baremetal node set <node-id> --target-raid-config /tmp/raid1.json
 ```
-
-> [!primary]
-> The RAID configuration is applied during the next *cleaning* cycle or deployment. If automatic cleaning is disabled, trigger a manual cleaning before setting the node back to `available`:
->
-> ```bash
-> openstack baremetal node clean <node-id>
-> ```
 
 #### 4.4. Check the RAID configuration
 

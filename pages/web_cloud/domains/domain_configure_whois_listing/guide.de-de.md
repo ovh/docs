@@ -1,7 +1,7 @@
 ---
 title: "Wie konfiguriere ich die Anzeige des WHOIS einer Domain?"
 excerpt: "Erfahren Sie, wie Sie bestimmte Informationen im WHOIS einer Domain über Ihr OVHcloud Kundencenter ein- oder ausblenden"
-updated: 2025-06-23
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -51,19 +51,17 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf der angezeigten Seite in der Randleiste **Sicherheit** auf den Button `WHOIS-Anzeige konfigurieren`{.action}.
+>> Klicken Sie auf der angezeigten Seite in der Randleiste **Konfiguration** auf den Button `Den Datenschutz verwalten`{.action}.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
 >> Auf der neu geöffneten Seite können Sie im Rahmen der von der Registry, die die Domainendung verwaltet, genehmigten Aktionen auswählen, ob die Informationen zu den Inhabern, Administratoren und technischen Kontakten der Domain `angezeigt` oder `verborgen` werden sollen.
 >>
->> Aktivieren Sie für jeden der 3 Kontakte die Option `Anzeige für jedes Feld einzeln verwalten`{.action}, um weitere Optionen anzuzeigen.
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
->>
->> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Änderungen speichern`{.action}.
+>> Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action}.
 >>
 >> Die Übernahme der Änderungen kann bis zu **48** Stunden dauern. Diese Änderungen werden **nur angewendet, wenn sie von der Registry, die die Domainendung verwaltet, genehmigt wurden**.
 

@@ -37,7 +37,7 @@ ssh root@<INSTANCE_IP>
 
 Substitua `<INSTANCE_IP>` pelo endereço IP público da sua instância.
 
-> [primary]
+> [!primary]
 >
 > Em Windows, utilize o PowerShell com SSH ou um cliente SSH como [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows) se preferir utilizar uma interface de linha de comandos.
 >

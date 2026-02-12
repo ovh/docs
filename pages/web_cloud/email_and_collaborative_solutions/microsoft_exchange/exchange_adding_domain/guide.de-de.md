@@ -142,7 +142,7 @@ Zur Erinnerung: Alle für einen Dienst erstellten Adressen können im Adressbuch
 
 Sobald die Accounts vollständig eingerichtet sind, können Sie mit deren Verwendung beginnen. Hierzu stellt Ihnen OVHcloud einen Zugang über **Webmail** zur Verfügung, auf den Sie [hier](/links/web/email) zugreifen können. Um Ihren Account mit einer E-Mail-Software zu verwenden, muss diese mit dem Dienst kompatibel sein.
 
-Wenn Sie E-Mail-Accounts auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation für [Exchange](/links/web/emails) oder [E-Mail Pro](/links/web/email-pro).
+Wenn Sie E-Mail-Accounts auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation für [Exchange](/links/web/emails-exchange) oder [E-Mail Pro](/links/web/email-pro).
 
 Sie können Outlook-Lizenzen im [OVHcloud Kundencenter](/links/manager) und Office 365-Lizenzen auf der Seite zu [Microsoft 365](/links/web/ms365) erwerben. Wir empfehlen Ihnen eine dieser Lösungen, wenn Sie Outlook E-Mail-Software oder weitere Software der Office Suite nutzen möchten.
 

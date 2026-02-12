@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Problembehandlung"
 excerpt: "Erfahren Sie, wie Sie potenzielle Probleme im Zusammenhang mit dem Backup Agent beheben können"
-updated: 2026-01-20
+updated: 2026-02-09
 ---
 
 <style>
@@ -105,7 +105,47 @@ Starten Sie anschließend den veeamservice-Dienst neu.
 
 /// details | Ich kann keine manuelle Sicherung starten.
 
-[Setzen Sie sich mit dem OVHcloud Support in Verbindung](/links/support), um dies zu untersuchen. Stellen Sie sicher, dass Sie Protokolle und Screenshots bereitstellen.
+[Setzen Sie sich mit dem OVHcloud Support in Verbindung](/links/support-contact), um dies zu untersuchen. Stellen Sie sicher, dass Sie Protokolle und Screenshots bereitstellen.
+
+///
+
+/// details | Mein Backup ist fehlerhaft, wie kann ich das Problem sehen?
+
+Wenn Ihr Backup fehlerhaft ist, können Sie das Problem direkt vom Agent aus diagnostizieren. Klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
+
+> [!tabs]
+> Windows
+>>
+>> Um die Details eines Backup-Fehlers unter Windows zu sehen:
+>>
+>> 1. Öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Bare Metal Server.
+>> 2. In der Hauptoberfläche sehen Sie den Status Ihrer Backups.
+>> 3. Klicken Sie auf das fehlerhafte Backup, um die Fehlerdetails zu sehen.
+>> 4. Überprüfen Sie den Abschnitt **History** oder **Last Session**, um detaillierte Fehlermeldungen zu sehen.
+>>
+>> Die Oberfläche zeigt Ihnen präzise Informationen über die Ursache des Fehlers, sodass Sie das Problem schnell identifizieren können.
+>
+> Linux
+>>
+>> Um die Details eines Backup-Fehlers unter Linux zu sehen, können Sie die Benutzeroberfläche verwenden:
+>>
+>> 1\. Verbinden Sie sich per SSH mit Ihrem Bare Metal Server.
+>> 2\. Starten Sie die Veeam-Oberfläche, indem Sie den folgenden Befehl eingeben:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
+>>
+>> 3\. Navigieren Sie in der Oberfläche zum Abschnitt Backups, um den Status Ihrer Jobs zu sehen.
+>> 4\. Wählen Sie das fehlerhafte Backup aus, um die Fehlerdetails anzuzeigen.
+>>
+>> Sie können die Protokolle auch direkt über die Befehlszeile einsehen:
+>>
+>> ```bash
+>> sudo veeamconfig session list
+>> ```
+>>
+>> Dieser Befehl zeigt die Liste der Backup-Sitzungen mit ihrem Status und Details zu eventuellen Fehlern an.
 
 ///
 
@@ -119,23 +159,81 @@ Wir bewahren Ihre Daten 14 Tage nach dem Löschen eines Agents auf. Die Speicher
 
 Passwörter können über den Link "Passwort vergessen?" geändert werden, der in der VSPC-Konsole verfügbar ist.
 
-![Reset password 1](images/reset_password_1.png)
+![Reset password 1](images/reset_password_1.png){.thumbnail}
 
-![Reset password 2](images/reset_password_2.png)
-
-///
-
-/// details | Ich habe meinen Veeam Agent deinstalliert. Wie kann ich ihn erneut installieren?
-
-[Setzen Sie sich mit dem OVHcloud Support in Verbindung](/links/support), um Ihnen bei der erneuten Installation Ihres Agents zu helfen.
+![Reset password 2](images/reset_password_2.png){.thumbnail}
 
 ///
 
-/// details | Ich habe meinen Server erneut installiert. Wie installiere ich den Backup Agent erneut?
+/// details | Ich habe meinen Server reinstalliert. Wie installiere ich den Backup Agent erneut?
 
-Sie müssen Ihren Agent im Agent-Bereich Ihres vspc-tenants löschen und anschließend den Agent auf Ihrem neuen Betriebssystem herunterladen und installieren.
+Sie müssen den Agent von Ihrem [OVHcloud Kundencenter](/links/manager) herunterladen und auf Ihrem neuen Betriebssystem installieren.
 
 ///
+
+### Protokolle finden und exportieren
+
+Um Probleme mit dem Backup Agent zu beheben, ist es oft notwendig, die Protokolle einzusehen und zu exportieren. Klicken Sie auf den Tab, der Ihrem Betriebssystem entspricht:
+
+> [!tabs]
+> Windows
+>>
+>> **Protokolle lokalisieren**
+>>
+>> Die Protokolle von Veeam Agent für Windows werden im folgenden Verzeichnis gespeichert:
+>>
+>> ```
+>> C:\ProgramData\Veeam\Endpoint\Logs
+>> ```
+>>
+>> **Protokolle exportieren**
+>>
+>> Um Protokolle unter Windows zu exportieren, können Sie die grafische Benutzeroberfläche von Veeam Agent verwenden:
+>>
+>> 1. Öffnen Sie die Anwendung "Veeam Agent" auf Ihrem Server.
+>> 2. Gehen Sie zum Menü `Help`{.action} > `Export Logs`{.action}.
+>> 3. Wählen Sie das Zielverzeichnis für das Protokollarchiv aus.
+>> 4. Klicken Sie auf `Export`{.action}, um das Archiv zu erstellen.
+>>
+>> Das Archiv wird im Format `.zip` erstellt und enthält alle Protokolle und Konfigurationsdateien, die für die Diagnose erforderlich sind.
+>>
+>> Weitere Informationen finden Sie im Artikel [Veeam KB2404](https://www.veeam.com/kb2404).
+>
+> Linux
+>>
+>> **Protokolle lokalisieren**
+>>
+>> Die Protokolle von Veeam Agent für Linux werden im folgenden Verzeichnis gespeichert:
+>>
+>> ```bash
+>> /var/log/veeam/
+>> ```
+>>
+>> Sie können auch die Protokolle des Veeam-Dienstes einsehen:
+>>
+>> ```bash
+>> /var/log/veeam/veeamservice.log
+>> ```
+>>
+>> **Protokolle exportieren**
+>>
+>> Um Protokolle unter Linux zu exportieren, haben Sie zwei Optionen:
+>>
+>> 1\. Über die Befehlszeile
+>>
+>> Verwenden Sie den folgenden Befehl, um Protokolle zu exportieren. Das Archiv wird im aktuellen Arbeitsverzeichnis gespeichert:
+>>
+>> ```bash
+>> sudo veeamconfig grablogs
+>> ```
+>>
+>> 2\. Über das control panel
+>>
+>> Wenn Sie Zugriff auf eine grafische Benutzeroberfläche haben, können Sie Protokolle über das Control Panel von Veeam Agent exportieren, indem Sie das Zielverzeichnis angeben.
+>>
+>> Das Archiv wird im Format `.tar.gz` erstellt und enthält alle Protokolle und Konfigurationsdateien, die für die Diagnose erforderlich sind.
+>>
+>> Weitere Informationen finden Sie in der [Veeam-Dokumentation](https://helpcenter.veeam.com/docs/agentforlinux/userguide/logs_export.html?ver=13).
 
 ## Weiterführende Informationen
 
