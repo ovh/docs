@@ -1,18 +1,18 @@
 ---
-title: "Como ligar um domínio OVHcloud a um alojamento Shopify"
-excerpt: "Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento Shopify"
-updated: 2024-04-17
+title: "Como ligar um nome de domínio OVHcloud a um alojamento Shopify"
+excerpt: "Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento Shopify"
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Tem um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento Shopify. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento Shopify.
+É titular de um nome de domínio na OVHcloud e deseja ligá-lo a um alojamento Shopify. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento Shopify.
 
-**Saiba como conectar o seu domínio OVHcloud a um alojamento Shopify**
+**Saiba como conectar o seu nome de domínio OVHcloud a um alojamento Shopify**
 
 > [!warning]
 >
-> - O suporte Shopify não tem acesso aos parâmetros do seu domínio OVHcloud e, por isso, não pode aconselhá-lo sobre as informações que deve fornecer.
+> - O suporte Shopify não tem acesso aos parâmetros do seu nome de domínio OVHcloud e, por isso, não pode aconselhá-lo sobre as informações que deve fornecer.
 >
 > - A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.<br><br> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção [Quer saber mais?](#go-further) deste guia.
 >
@@ -31,11 +31,11 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer ligação com o seu alojamento Shopify. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer ligação com o seu alojamento Shopify. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
 
 ### Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o nome de domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -83,25 +83,25 @@ Siga as etapas em ordem nas seguintes guias:
 
 A zona DNS está agora configurada para fazer a ligação a um alojamento Shopify.
 
-### Ligar o seu domínio ao Shopify
+### Ligar o seu nome de domínio ao Shopify
 
 As manipulações para esta etapa devem ser realizadas a partir da Área de Gestão do Shopify. Sugerimos que vá diretamente à etapa 2 do guia no site da Shopify, clicando [**nesta ligação**](https://help.shopify.com/en/manual/domains/add-a-domain/connecting-domains/connect-domain-manual).
 
 > [!primary]
 >
-> A verificação do seu domínio pode levar até 48 horas.
+> A verificação do seu nome de domínio pode levar até 48 horas.
 
 Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-[Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
+[Criar uma zona DNS da OVHcloud para um nome de domínio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  

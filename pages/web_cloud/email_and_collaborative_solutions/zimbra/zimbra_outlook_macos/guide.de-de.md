@@ -15,7 +15,7 @@ updated: 2025-07-03
 > [!primary]
 > Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](/links/web/emails-zimbra) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
 
-Zimbra Pro Accounts können auf einem Mac mit dem EWS Protokoll konfiguriert werden (**E**xchange **W**eb **S**ervices). So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die App [Outlook auf macOS](https://apps.apple.com/de/app/microsoft-outlook/id985367838?mt=12) ist im Apple App Store verfügbar.
+Zimbra Pro Accounts können auf einem Mac mit dem EWS Protokoll konfiguriert werden (**E**xchange **W**eb **S**ervices). So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die App [Outlook auf macOS](https://apps.apple.com/app/microsoft-outlook/id985367838?mt=12) ist im Apple App Store verfügbar.
 
 **Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für macOS über das EWS-Protokoll konfigurieren.**
 
@@ -28,7 +28,7 @@ Zimbra Pro Accounts können auf einem Mac mit dem EWS Protokoll konfiguriert wer
 ## Voraussetzungen
 
 - Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](/links/web/emails-zimbra) abonniert.
-- Sie haben die App [Outlook auf macOS](https://apps.apple.com/de/app/microsoft-outlook/id985367838?mt=12).
+- Sie haben die App [Outlook auf macOS](https://apps.apple.com/app/microsoft-outlook/id985367838?mt=12).
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
 ## In der praktischen Anwendung

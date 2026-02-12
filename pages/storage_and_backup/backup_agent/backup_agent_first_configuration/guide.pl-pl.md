@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Jak skonfigurować pierwszą kopię zapasową"
 excerpt: "Jak skonfigurować pierwszą kopię zapasową na serwerze Bare Metal przy użyciu produktu Backup Agent"
-updated: 2026-01-28
+updated: 2026-02-03
 ---
 
 ## Wprowadzenie
@@ -17,6 +17,17 @@ Zamówiłeś właśnie ofertę Backup Agent dla swojego serwera Bare Metal. Odkr
 - Dostęp do [Panelu klienta OVHcloud](/links/manager). 
 - Zamówiony Backup Agent jednocześnie z Twoim serwerem Bare Metal, lub później za pomocą menu `Backup Agent`{.action} w Panelu klienta OVHcloud.
 - Musisz mieć uruchomiony i skonfigurowany system operacyjny na swoim serwerze Bare Metal.
+
+> [!warning]
+>
+> Musisz upewnić się, że Twój serwer może być osiągnięty przez naszą infrastrukturę Veeam.
+> Oto informacje, które należy zezwolić na Twoim serwerze Bare Metal:
+>
+> - IP/DNS serwera: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Port: 6180
+>
+> Zdecydowanie zalecamy również, aby Twój serwer mógł osiągać inne zewnętrzne adresy, aby mógł wysyłać dane do Vault. W tym kontekście nie ma potrzeby zezwalania na ruch przychodzący.
+
 
 ## W praktyce
 

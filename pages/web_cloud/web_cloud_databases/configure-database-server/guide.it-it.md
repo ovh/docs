@@ -1,7 +1,7 @@
 ---
 title: Configura il tuo database server 
 excerpt: Come configurare e ottimizzare il tuo database server
-updated: 2025-02-20
+updated: 2026-02-06
 ---
 
 ## Obiettivo
@@ -102,7 +102,6 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
-- **Temp**: Directory dei file temporanei. **/dev/shm** corrisponde alla memoria RAM dell'istanza. **/tmp** corrisponde all'hard disk dell'istanza.
 - **MaxAllowedPacket**: Dimensione massima dei pacchetti
 - **Max_user_connections**: Numero di connessioni simultanee autorizzate per utente.
 - **AutoCommit**: Definisce se le richieste sono automaticamente confermate (committed) o no.
@@ -116,15 +115,6 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 > [!primary]
 > Quando si verifica un errore sul tuo sito indicando **"Too many connections"**, è dovuto al superamento del numero di connessioni simultanee sul tuo database.
 > In questo caso, puoi aumentare la variabile **"MaxConnections"** se non è al massimo.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: Il database server assegnerà metà della memoria RAM a questa directory per ottenere migliori performance.
->
-> - /tmp: Il server assegnerà sul suo hard disk uno spazio illimitato per questa directory, ma sarà molto meno performante. Ti consigliamo di utilizzare questa directory solo per operazioni occasionali di grande impatto.
 >
 
 > [!primary]

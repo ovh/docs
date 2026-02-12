@@ -1,7 +1,7 @@
 ---
 title: "Configurer un enregistrement MX pour la gestion des emails"
 excerpt: "Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -15,13 +15,13 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 - Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
-- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](/links/web/hosting)), [Exchange](/links/web/emails), ou un service e-mail externe.
+- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](/links/web/hosting)), [Exchange](/links/web/emails-exchange), ou un service e-mail externe.
 
 > [!primary]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des enregistrements MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Standards` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 
 ### Valeurs de la configuration MX OVHcloud <a name="mxovhcloud"></a>
 
-Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan ( incluse dans une offre d’[hébergement web OVHcloud](/links/web/hosting)) et [Exchange](/links/web/emails). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
+Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan ( incluse dans une offre d’[hébergement web OVHcloud](/links/web/hosting)) et [Exchange](/links/web/emails-exchange). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
 
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|

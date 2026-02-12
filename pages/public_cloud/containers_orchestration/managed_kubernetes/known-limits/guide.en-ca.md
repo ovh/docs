@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-01-30
+updated: 2026-02-03
 ---
 
 <style>
@@ -32,7 +32,7 @@ updated: 2026-01-30
 | Free    |100|110|5|400MB|
 | Standard|500|110|5|8GB|
 
-We have tested our OVHcloud Managed Kubernetes service Plans with a max number of nodes, while higher configurations might work and that there is no hard limits, we recommend staying under these limits for optimal stability.
+We have tested our OVHcloud Managed Kubernetes Service plans with a max number of nodes, while higher configurations might work and that there is no hard limits, we recommend staying under these limits for optimal stability.
 
 Keep in mind that impact on the control plane isn't solely determined by the number of nodes. What truly defines a 'large cluster' depends on the combination of resources deployed pods, custom resources, and other objects which all contribute to control plane load. A cluster with fewer nodes but intensive resource utilization can stress the control plane more than a cluster with many nodes running minimal workloads. In such configuration it is recommended to switch to the Standard plan in order to benefit from higher and dedicated control plane resources.
 
@@ -40,7 +40,18 @@ While 110 pods per node is the default value defined by Kubernetes, please note 
 
 As a fully managed service, you will **not have SSH access** to the nodes. All OS and component updates are handled by OVHcloud through patches and minor updates. If you need to perform **node-level debugging**, you can use the Kubernetes native tooling with [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node)to inspect or troubleshoot a node without requiring direct SSH access.
 
-## Patch, Upgrades & Maintenances considerations
+## Regional availability by plan
+
+The availability of OVHcloud Managed Kubernetes Service varies depending on your chosen plan (Free or Standard). Each plan supports different regions and deployment architectures (Single or Multi-Availability Zones).
+
+For detailed information about regional availability, deployment architecture (1-AZ vs 3-AZ), and plan-specific features, see the following guide: [Datacenters, nodes and storage flavors - Regional availability by MKS plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
+
+> [!primary]
+> **Standard plan exclusive features:**
+>
+> The Standard plan includes advanced features not available on the Free plan, such as Floating IPs per node, cross-AZ resilience, production-grade SLA (99.9% for 1-AZ, 99.99% for 3-AZ), dedicated etcd storage, and support for up to 500 nodes. For more information, see the [MKS Plans comparison guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+
+## Patch, upgrades & maintenances considerations
 
 Any operation requested to our services, such as node deletions, patches or versions updates, follows a **graceful draining procedure** respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this period, nodes are forcefully drained to allow operations to continue. Patch and Kubernetes version upgrade are performed using an In Place upgrade procedure, meaning the nodes are fully reinstalled one by one.
 
@@ -76,7 +87,7 @@ MKS clusters deployed on regions with 3 availability zones can use Cinder Persis
 > Classic multi-attach (`csi-cinder-classic-multiattach`) is **not supported** for multi-AZ clusters yet, as attaching volumes to multiple instances in different zones can lead to data corruption.
 >
 
-### Volumes Resizing
+### Volumes resizing
 
 Kubernetes `Persistent Volume Claims` resizing only allows to expand volumes, not to decrease them.
 
@@ -90,10 +101,10 @@ For more details, please refer to the [Resizing Persistent Volumes documentation
 
 ### LUKS Encrypted Persistent Volumes
 
-OVHcloud Managed Kubernetes supports LUKS encrypted block storage volumes using OVHcloud Managed Keys (OMK).
+OVHcloud Managed Kubernetes supports LUKS encrypted Block Storage volumes using OVHcloud Managed Keys (OMK).
 
 > [!primary]
-> This feature is available in specific regions. For detailed regional availability and storage class specifications, see [Datacenters, nodes and storage flavors - LUKS Encrypted Storage Classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors#luks-encrypted-storage-classes).
+> This feature is available in specific regions. For detailed regional availability and storage class specifications, see "[Datacenters, nodes and storage flavors - LUKS encrypted storage classes](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors)".
 
 The following encrypted storage classes are available:
 
@@ -166,7 +177,7 @@ To ensure proper operation of your OVHcloud Managed Kubernetes cluster, certain 
 >
 > Blocking any of the above ports may cause cluster malfunction.
 >
-> For Standard Plan clusters, the same rules apply.
+> For Standard plan clusters, the same rules apply.
 >
 > Keep the default OpenStack security group unchanged to avoid disconnecting nodes; only add application-specific rules carefully.
 >
@@ -227,7 +238,7 @@ For now it is recommended to leave these security rules in their "default" confi
 > Nodes affected in this way will also lack an External-IP.
 >
 
-### Free Plan
+### Free plan
 
 ### Known not compliant IP ranges
 
@@ -251,7 +262,7 @@ To prevent network conflicts, it is recommended to **keep the DHCP service runni
 > At the moment, MKS worker nodes cannot use provided subnet DNS nameservers.
 >
 
-### Standard Plan
+### Standard plan
 
 #### Reserved IP ranges
 

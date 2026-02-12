@@ -10,7 +10,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](/links/web/emails)
+- Wykupienie usługi [Exchange](/links/web/emails-exchange)
 - Instalacja aplikacji Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

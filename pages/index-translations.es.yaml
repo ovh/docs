@@ -234,14 +234,17 @@ public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
 public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-getting-started: Kafka - Getting started
-public-cloud-data-analytics-kafka-guides: Kafka - User guides
 public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-tutorials: Kafka - Tutorials
+public-cloud-data-analytics-kafka-configuration: Configuración
+public-cloud-data-analytics-kafka-getting-started: Primeros pasos
+public-cloud-data-analytics-kafka-key-concepts: Conceptos clave
+public-cloud-data-analytics-kafka-migration: Migración
+public-cloud-data-analytics-kafka-security: Seguridad
+public-cloud-data-analytics-kafka-troubleshooting: Diagnóstico
+public-cloud-data-analytics-kafka-tutorials: Tutoriales
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
@@ -461,22 +464,22 @@ storage-object-storage-swift-troubleshooting: Resolución de problemas
 storage-object-storage-swift-additional-resources: Recursos adicionales
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
-storage-file-storage-enterprise-file-storage-key-concepts: Primeros pasos
-storage-file-storage-enterprise-file-storage-getting-started: Premiers pas
+storage-file-storage-enterprise-file-storage-key-concepts: Conceptos clave
+storage-file-storage-enterprise-file-storage-getting-started: Primeros pasos
 storage-file-storage-enterprise-file-storage-configuration: Configuración
 storage-file-storage-enterprise-file-storage-migration: Migración
 storage-file-storage-enterprise-file-storage-additional-resources: Recursos adicionales
 storage-file-storage-ha-nas: NAS-HA
-storage-file-storage-ha-nas-key-concepts: Primeros pasos
-storage-file-storage-ha-nas-getting-started: Premiers pas
+storage-file-storage-ha-nas-key-concepts: Conceptos clave
+storage-file-storage-ha-nas-getting-started: Primeros pasos
 storage-file-storage-ha-nas-configuration: Configuración
 storage-file-storage-ha-nas-migration: Migración
 storage-file-storage-ha-nas-additional-resources: Recursos adicionales
 storage-file-storage-public-cloud-file-storage: Public Cloud File Storage
-storage-file-storage-public-cloud-file-storage-getting-started: Premiers pas
+storage-file-storage-public-cloud-file-storage-getting-started: Primeros pasos
 storage-block-storage: Block Storage
 storage-block-storage-block-volume: Block volume
-storage-block-storage-block-volume-key-concepts: Primeros pasos
+storage-block-storage-block-volume-key-concepts: Conceptos clave
 storage-block-storage-block-volume-getting-started: Primeros pasos
 storage-block-storage-block-volume-configuration: Configuración
 storage-block-storage-block-volume-migration: Migración
@@ -492,6 +495,10 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
+storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Conceptos clave
+storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Primeros pasos
+storage-backup-and-disaster-recovery-solution-backup-agent-troubleshooting: Resolución de problemas
+storage-backup-and-disaster-recovery-solution-backup-agent-additional-resources: Recursos adicionales
 network-additional-ip: Additional IP
 network-additional-ip-key-concepts: Conceptos clave
 network-additional-ip-configuration: Configuración

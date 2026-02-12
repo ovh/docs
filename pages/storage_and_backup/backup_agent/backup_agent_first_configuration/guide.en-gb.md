@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - How to configure your first backup"
 excerpt: "How to configure your first backup on your Bare Metal server using the Backup Agent product"
-updated: 2026-01-28
+updated: 2026-02-03
 ---
 
 ## Objective
@@ -17,6 +17,17 @@ You have just ordered your Backup Agent offer for your Bare Metal server. Discov
 - Access to the [OVHcloud Control Panel](/links/manager). 
 - A Backup Agent ordered simultaneously with your Bare Metal server, or afterwards via the `Backup Agent`{.action} menu in the OVHcloud Control Panel.
 - You need to have booted and configured an Operating System on your Bare Metal server.
+
+> [!warning]
+>
+> You must ensure that your server can be reached by our Veeam infrastructure.  
+> Here is the information to allow access on your Bare Metal server:
+>
+> - IP/DNS of the server: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - Port: 6180
+>
+> We also strongly recommend that you allow your server to reach other external addresses so that it can send your data to the Vault. There is no need to allow incoming traffic in this context.
+
 
 ## Instructions
 

@@ -24,7 +24,7 @@ Na prática, no dia e na hora previstos, o seu Backup Agent será reinstalado no
 
 Durante esta atualização, as operações de cópia de segurança e restauro estarão indisponíveis. Por isso, aplicaremos as atualizações durante o período do dia (fusos horários CET ou EST, consoante a sua localização) para evitar interferir nas suas [cópias de segurança automáticas](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
-Se tiver solicitações específicas, não hesite em [contactar o suporte da OVHcloud](/links/support).
+Se tiver solicitações específicas, não hesite em [contactar o suporte da OVHcloud](/links/support-contact).
 
 ## Quer saber mais?
 

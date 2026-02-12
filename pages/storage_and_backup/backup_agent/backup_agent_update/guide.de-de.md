@@ -24,7 +24,7 @@ Praktisch gesehen wird der Agent beim Update auf Ihrem Betriebssystem neu instal
 
 Während dieses Updates sind Backup- und Wiederherstellungsvorgänge vorübergehend nicht verfügbar. Um Auswirkungen zu minimieren, ist das Update entsprechend Ihrer geografischen Lage entweder in der CET- oder EST-Zeitzone für den Tagzeitbereich geplant, um nicht mit Ihren [automatischen Backups](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore) zu interferieren.
 
-Wenn Sie spezielle Anfragen haben, zögern Sie nicht, den [OVHcloud Support](/links/support) zu kontaktieren.
+Wenn Sie spezielle Anfragen haben, zögern Sie nicht, den [OVHcloud Support](/links/support-contact) zu kontaktieren.
 
 ## Weiterführende Informationen
 
