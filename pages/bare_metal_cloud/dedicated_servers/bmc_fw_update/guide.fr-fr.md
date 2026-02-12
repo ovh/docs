@@ -69,7 +69,8 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Si la version du firmware est inférieure ou égale à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. Cependant, si la version est supérieure à 1.14, aucune action n'est nécessaire.
+- Si la version du firmware est inférieure ou égale à 1.14, veuillez contacter notre support en créant un [ticket d'assistance depuis le centre d'aide OVHcloud](/links/support-contact) pour demander une mise à jour du firmware. 
+- Si la version est supérieure à 1.14, aucune action n'est nécessaire.
 
 ## Aller plus loin
 
