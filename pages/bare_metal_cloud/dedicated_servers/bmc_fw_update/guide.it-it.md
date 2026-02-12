@@ -1,7 +1,7 @@
 ---
-title: 'Verifica della versione del firmware BMC su un server dedicato'
+title: 'Come verificare la versione del firmware BMC su un server dedicato'
 excerpt: "Scopri come verificare la versione del firmware BMC su un server dedicato."
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Obiettivo
@@ -14,11 +14,11 @@ Un BMC (Baseboard Management Controller) è responsabile della gestione remota e
 
 - Un [server dedicato](/links/bare-metal/bare-metal) nel vostro account OVHcloud.
 - Diritti di amministratore (sudo).
-- Connessione Internet (solo se lo strumento `ipmitool` non è già installato).
+- Il tuo server dedicato deve essere connesso a Internet (solo se lo strumento `ipmitool` non è già installato).
 
 ### Su un Server Linux
 
-In primo luogo, è necessario installare lo strumento `ipmitool`. Questo strumento consente di interrogare il BMC tramite l'interfaccia IPMI. Ecco la documentazione ufficiale: <https://linux.die.net/man/1/ipmitool>
+In primo luogo, è necessario installare lo strumento `ipmitool`. Questo strumento consente di interrogare il BMC tramite l'interfaccia IPMI. Per ulteriori informazioni, consulta la documentazione ufficiale: <https://linux.die.net/man/1/ipmitool>.
 
 A seconda della distribuzione Linux, il comando può variare:
 
@@ -46,11 +46,12 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Se la versione del firmware è inferiore o uguale a 1.14, contattate il nostro supporto creando un [ticket di assistenza dal centro di aiuto OVHcloud](/links/support-contact) per richiedere un aggiornamento del firmware. Tuttavia, se la versione è superiore a 1.14, non è necessaria alcuna azione.
+- Se la versione del firmware è inferiore o uguale a 1.14, contattate il nostro supporto creando un [ticket di assistenza dal centro di aiuto OVHcloud](/links/support-contact) per richiedere un aggiornamento del firmware. 
+- Se la versione è superiore alla 1.14, non è richiesta alcuna azione.
 
 ### Su un Server Windows
 
-Attualmente, non possiamo fornire la procedura per i server che utilizzano il sistema operativo Windows. Vi consigliamo di riavviare il vostro server Windows nel nostro ambiente [modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) per verificare la versione. Il comando funziona anche in modalità rescue.
+Attualmente, non possiamo fornire la procedura per i server che utilizzano il sistema operativo Windows. Vi consigliamo di riavviare il vostro server Windows nel nostro ambiente [modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) per verificare la versione seguendo le istruzioni riportate di seguito.
 
 ### Su un Server in modalità rescue
 
@@ -68,7 +69,8 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Se la versione del firmware è inferiore o uguale a 1.14, contattate il nostro supporto creando un [ticket di assistenza dal centro di aiuto OVHcloud](/links/support-contact) per richiedere un aggiornamento del firmware. Tuttavia, se la versione è superiore a 1.14, non è necessaria alcuna azione.
+- Se la versione del firmware è inferiore o uguale a 1.14, contattate il nostro supporto creando un [ticket di assistenza dal centro di aiuto OVHcloud](/links/support-contact) per richiedere un aggiornamento del firmware. 
+- Se la versione è superiore alla 1.14, non è richiesta alcuna azione.
 
 ## Per saperne di più
 

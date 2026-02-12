@@ -1,7 +1,7 @@
 ---
 title: 'Comment vérifier la version du firmware BMC sur un serveur dédié'
 excerpt: "Découvrez comment vérifier la version du firmware BMC sur un serveur dédié"
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Objectif
@@ -18,7 +18,7 @@ Un contrôleur BMC (Baseboard Management Controller) est responsable de la gesti
 
 ### Sur un Serveur Linux
 
-Tout d'abord, vous devez installer l'outil `ipmitool`. Cet outil permet d’interroger le BMC via l’interface IPMI. Pour plus d'informations, consultez la documentation officielle : <https://linux.die.net/man/1/ipmitool>
+Tout d'abord, vous devez installer l'outil `ipmitool`. Cet outil permet d’interroger le BMC via l’interface IPMI. Pour plus d'informations, consultez la documentation officielle : <https://linux.die.net/man/1/ipmitool>.
 
 Selon la distribution Linux, la commande peut varier :
 

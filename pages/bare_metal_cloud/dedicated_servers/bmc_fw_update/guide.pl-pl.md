@@ -1,7 +1,7 @@
 ---
 title: Sprawdzanie wersji oprogramowania BMC na dedykowanym serwerze
 excerpt: "Dowiedz się, jak sprawdzić wersję oprogramowania BMC na dedykowanym serwerze."
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Wprowadzenie

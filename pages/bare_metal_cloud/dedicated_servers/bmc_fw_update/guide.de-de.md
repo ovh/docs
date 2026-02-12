@@ -1,7 +1,7 @@
 ---
-title: Überprüfen der BMC-Firmware-Version auf einem Dedicated Server
+title: So überprüfen Sie die BMC-Firmware-Version auf einem dedizierten Server
 excerpt: "Erfahren Sie, wie Sie die BMC-Firmware-Version auf einem dedizierten Server prüfen"
-updated: 2026-02-11
+updated: 2026-02-12
 ---
 
 ## Ziel
@@ -14,11 +14,11 @@ Ein BMC (Baseboard Management Controller) ist für die Remote-Verwaltung und Ste
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server.
-- Internetverbindung (nur wenn das Paket `ipmitool` noch nicht auf dem Server installiert ist).
+- Ihr dedicated Server muss mit dem Internet verbunden sein (nur wenn das Tool `ipmitool` noch nicht installiert ist).
 
 ### Auf einem Linux-Server
 
-Zunächst müssen Sie das Paket `ipmitool` installieren. Dieses Tool ermöglicht es Ihnen, das BMC über die IPMI-Schnittstelle abzufragen. Hier finden Sie die offizielle Dokumentation: <https://linux.die.net/man/1/ipmitool>
+Zunächst müssen Sie das Paket `ipmitool` installieren. Dieses Tool ermöglicht es Ihnen, das BMC über die IPMI-Schnittstelle abzufragen. Weitere Informationen finden Sie in der offiziellen Dokumentation: <https://linux.die.net/man/1/ipmitool>.
 
 Je nach verwendeter Linux-Distribution kann der Befehl variieren:
 
@@ -46,11 +46,12 @@ sudo ipmitool mc info
 
 ![bmc](images/ipmi_tool.png){.thumbnail} 
 
-Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+- Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. 
+- Wenn die Version höher als 1.14 ist, sind keine Maßnahmen erforderlich.
 
 ### Auf einem Windows-Server
 
-Derzeit können wir den Vorgang nur für Server bereitstellen, die mit Linux-basierten Betriebssystemen laufen. Wir empfehlen Ihnen, Ihren Windows-Server in unserem [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) zu starten, um die Version zu prüfen. Der Befehl funktioniert auch im Rescue-Modus.
+Derzeit können wir den Vorgang nur für Server bereitstellen, die mit Linux-basierten Betriebssystemen laufen. Wir empfehlen Ihnen, Ihren Windows-Server in unserem [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) zu starten, Um die Version zu überprüfen, befolgen Sie die nachstehenden Anweisungen.
 
 ### Auf einem Server im Rescue modus
 
@@ -68,7 +69,8 @@ ipmitool mc info
 
 ![bmc](images/ipmi_tool_rescue.png){.thumbnail}
 
-Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. Ist die Version jedoch höher als 1.14, ist keine weitere Aktion erforderlich.
+- Wenn die Firmware-Version kleiner oder gleich 1.14 ist, kontaktieren Sie unser Support-Team, indem Sie ein [Support-Ticket im OVHcloud Help Center](/links/support-contact) erstellen, um ein Firmware-Update anzufordern. 
+- Wenn die Version höher als 1.14 ist, sind keine Maßnahmen erforderlich.
 
 ## Weiterführende Informationen
 
