@@ -182,6 +182,7 @@
                 + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware](bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
                 + [Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware](bare_metal_cloud/dedicated_servers/solidigm_d7-p5520_fw_update)
                 + [Dedicated Servers - Upgrading your Micron 7500 PRO firmware](bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
+                + [Verifying the BMC firmware version on a dedicated server](bare_metal_cloud/dedicated_servers/bmc_fw_update)
             + [Network](bare-metal-cloud-dedicated-servers-configuration-network)
                 + [Configuring OVHcloud Secondary DNS on a dedicated server](bare_metal_cloud/dedicated_servers/adding-secondary-dns-on-dedicated-server)
                 + [Install an OVHcloud SSH key](bare_metal_cloud/dedicated_servers/ovh_ssh_key)
