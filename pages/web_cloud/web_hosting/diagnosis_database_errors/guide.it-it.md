@@ -19,9 +19,10 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Utilizzare una delle nostre offerte di database: [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases)
+- Disporre di una soluzione di [hosting web](/links/web/hosting) attiva.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Utilizzare una delle nostre offerte di database: [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
+
 ## Procedura
 
 ### "Error establishing a database connection"
@@ -37,7 +38,7 @@ Verificate innanzitutto sulla pagina [Web Cloud Status](https://web-cloud.status
 >
 > - Per trovare il `Datacenter` del vostro hosting web, selezionate `Hosting`{.action}, quindi l'hosting web desiderato. Troverete queste informazioni nella scheda `Informazioni generali`{.action}.
 > - Per trovare il **cluster** di server e il **filer** (server file) del vostro hosting web, consultate [questa guida](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
-> - Per recuperare il nome del tuo server **Cloud Databases**, clicca su `Web Cloud Databases`{.action} e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
+> - Per recuperare il nome del tuo server **Web Cloud Databases**, clicca su `Web Cloud Databases`{.action} e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Informazioni generali`{.action}.
 > - Per trovare il server su cui si trova la vostra base di dati inclusa o acquistata come complemento tramite il vostro [hosting web](/links/web/hosting), consultate [questa guida](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
