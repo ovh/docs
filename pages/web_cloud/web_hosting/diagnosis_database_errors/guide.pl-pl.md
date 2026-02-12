@@ -19,7 +19,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](/links/web/hosting) OVHcloud
+- Posiadanie [hostingu www OVHcloud](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases)
 
@@ -37,7 +37,7 @@ Sprawdź najpierw na stronie [Web Cloud Status](https://web-cloud.status-ovhclou
 >
 > Aby odnaleźć te informacje, zaloguj się do [Panelu klienta OVHcloud](/links/manager), w części `Web Cloud`{.action} :
 >
-> - Aby znaleźć `Datacentre` dla Twojego hostingu sieciowego, wybierz `Hostingu`{.action}, a następnie odpowiedni hosting sieciowy. Te informacje znajdziesz na karcie `Informacje ogólne`{.action}.
+> - Aby znaleźć `Data center` dla Twojego hostingu sieciowego, wybierz `Hosting`{.action}, a następnie odpowiedni hosting sieciowy. Te informacje znajdziesz na karcie `Informacje ogólne`{.action}.
 > - Aby znaleźć **klaster** serwerów i **filer** (serwer plików) dla Twojego hostingu sieciowego, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Aby odnaleźć nazwę serwera **Web Cloud Databases**, kliknij przycisk `Web Cloud Databases`{.action}, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
 > - Aby znaleźć serwer, na którym znajduje się Twoja baza danych włączona lub zamówiona jako dodatek do Twojego [hostingu sieciowego](/links/web/hosting), zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/sql_find_server).
