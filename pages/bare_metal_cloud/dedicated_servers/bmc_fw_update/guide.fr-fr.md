@@ -51,7 +51,7 @@ sudo ipmitool mc info
 
 ### Sur un Serveur Windows
 
-Actuellement, nous ne pouvons fournir la procédure que pour les serveurs fonctionnant sous le système d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version. La commande fonctionne également en mode rescue.
+Actuellement, nous ne pouvons fournir la procédure que pour les serveurs fonctionnant sous le système d'exploitation Linux. Nous vous recommandons de redémarrer votre serveur Windows dans notre environnement [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de vérifier la version en suivant les instructions ci-dessous.
 
 ### Sur un Serveur en mode rescue
 
