@@ -18,7 +18,7 @@ Un contrôleur BMC (Baseboard Management Controller) est responsable de la gesti
 
 ### Sur un Serveur Linux
 
-Tout d'abord, vous devez installer l'outil `ipmitool`. Cette outil permet d’interroger le BMC via l’interface IPMI. Voici la documentation officielle : <https://linux.die.net/man/1/ipmitool>
+Tout d'abord, vous devez installer l'outil `ipmitool`. Cet outil permet d’interroger le BMC via l’interface IPMI. Pour plus d'informations, consultez la documentation officielle : <https://linux.die.net/man/1/ipmitool>
 
 Selon la distribution Linux, la commande peut varier :
 
