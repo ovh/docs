@@ -14,7 +14,7 @@ Un contrôleur BMC (Baseboard Management Controller) est responsable de la gesti
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
 - Droits administrateur (sudo).
-- Connexion Internet (uniquement si l'outil `ipmitool` n’est pas déjà installé).
+- Votre serveur dédié doit être connecté à Internet (uniquement si l'outil `ipmitool` n’est pas déjà installé).
 
 ### Sur un Serveur Linux
 
