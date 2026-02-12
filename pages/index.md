@@ -1728,7 +1728,7 @@
                 + [Duplicating the contents of one database to another](web_cloud/web_hosting/copy_database)
                 + [Retrieving the backup of a Web Hosting plan’s database](web_cloud/web_hosting/sql_database_export)
                 + [Recovering a deleted database backup](web_cloud/web_hosting/sql_recovering_deleted_db_backup)
-                + [How to identify your database server](/pages/web_cloud/web_hosting/sql_find_server)
+                + [How to identify your database server](web_cloud/web_hosting/sql_find_server)
             + [FTP and SSH](web-cloud-hosting-configuration-ftp-and-ssh)
                 + [Tutorial - Using FileZilla with your OVHcloud hosting](web_cloud/web_hosting/ftp_filezilla_user_guide)
                 + [Web Hosting - How to manage FTP users](web_cloud/web_hosting/ftp_manage_users)
