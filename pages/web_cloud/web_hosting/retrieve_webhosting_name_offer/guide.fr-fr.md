@@ -6,11 +6,11 @@ updated: 2026-02-12
 
 ## Objectif
 
-Vous ne souvenez plus du type [d'offre d'hébergement web](/links/web/hosting) à laquelle vous avez souscrit ?
+Vous ne souvenez plus du nom de [l'offre d'hébergement web](/links/web/hosting) à laquelle vous avez souscrit ?
 Vous souhaitez connaître le nom de votre offre d'hébergement web ?
 Vous souhaitez comparer votre offre d'hébergement web actuelle à une autre offre d'hébergement ?
 
-Au cours de l'utilisation de vos services, vous pourrez être amené à devoir connaître ou retrouver le nom de vtre offre d'hébergement web.
+Au cours de l'utilisation de vos services, vous pourrez être amené à devoir connaître ou retrouver le nom de votre offre d'hébergement web.
 
 **Découvrez comment retrouver le type d'offre d'hébergement web dont vous disposez depuis votre espace client OVHcloud**
 
