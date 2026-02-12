@@ -1,6 +1,6 @@
 ---
 title: 'Comment vérifier la version du firmware BMC sur un serveur dédié'
-excerpt: "Découvrez comment verifier la version du firmware BMC sur un serveur dédié."
+excerpt: "Découvrez comment vérifier la version du firmware BMC sur un serveur dédié"
 updated: 2026-02-11
 ---
 
