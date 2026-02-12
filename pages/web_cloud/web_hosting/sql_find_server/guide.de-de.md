@@ -1,6 +1,6 @@
 ---
-title: "Wie Sie den Server Ihrer Datenbank identifizieren"
-excerpt: "Erfahren Sie, wie Sie den Namen des Servers ermitteln können, auf dem Ihre gemeinschaftliche Datenbank gehostet wird, der mit Ihrem Webhosting-Service verbunden ist"
+title: "Server Ihrer Datenbank identifizieren"
+excerpt: "Erfahren Sie, wie Sie den Namen des Servers ermitteln können, auf dem Ihre Datenbank gehostet wird, die mit Ihrem Webhosting verbunden ist"
 updated: 2026-02-11
 ---
 
@@ -10,15 +10,15 @@ Während der Nutzung Ihrer Dienste können Sie gelegentlich den Namen des SQL-Se
 
 > [!warning]
 >
-> Dieses Handbuch gilt nicht für Datenbanken, die sich auf einer [Web Cloud Databases](/links/web/databases)-Lösung befinden.
+> Diese Anleitung gilt nicht für Datenbanken, die sich auf einer [Web Cloud Databases](/links/web/databases) Lösung befinden.
 
-**Erfahren Sie, wie Sie den Namen des Servers ermitteln können, der Ihre gemeinschaftliche Datenbank hostet, die mit Ihrem Webhosting-Service verbunden ist.**
+**Diese Anleitung erklärt, wie Sie den Namen des Servers ermitteln können, der Ihre Datenbank hostet, die mit Ihrem Webhosting verbunden ist.**
 
 ## Voraussetzungen
 
-- Ein [OVHcloud Webhosting-Service](/links/web/hosting) besitzen.
-- Angemeldet sein in Ihrem [OVHcloud Kundencenter](/links/manager).
-- Eine inbegriffene oder [als Ergänzung bestellte](/links/web/hosting-options-startsql) Datenbank über Ihr Webhosting nutzen.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verwenden eine im Webhosting inkludierte oder eine [zusätzliche Datenbank](/links/web/hosting-options-startsql).
 
 ## In der praktischen Anwendung
 
@@ -49,14 +49,14 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 >> ![Datenbankserver](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 >>
->> Für die betreffende Datenbank finden Sie in dieser Spalte den Namen des SQL-Servers (z. B. **mysqlXXX.euXXX**), auf dem Ihre gemeinschaftliche Datenbank gehostet wird.
+>> Für die betreffende Datenbank finden Sie in dieser Spalte den Namen des SQL-Servers (z. B. **mysqlXXX.euXXX**), auf dem Ihre Datenbank gehostet wird.
 >>
 >> > [!warning]
 >> >
->> > Verwechseln Sie **Server** nicht mit der **Serveradresse** :
+>> > Verwechseln Sie **Server** nicht mit der **Serveradresse**:
 >> >
 >> > - Die **Serveradresse** ist ein Zugangsidentifizierer, der spezifisch für Ihre Datenbank ist und es Ihrem Webseiten ermöglicht, sich mit dieser zu verbinden.
->> > - Der **Server** ist die Infrastruktur, die Ihre Datenbank sowie andere Datenbanken hostet. Der Name des Servers hilft Ihnen dabei, zu prüfen, ob dieser von einem Wartungsvorgang oder einem Vorfall betroffen ist, der auf unserer Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) angekündigt wurde.
+>> > - Der **Server** ist die Infrastruktur, die Ihre Datenbank sowie andere Datenbanken hostet. Der Name des Servers hilft Ihnen dabei, zu prüfen, ob dieser von einem Wartungsvorgang oder einem Vorfall betroffen ist, der auf unserer Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) zu finden ist.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
