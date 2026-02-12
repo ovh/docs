@@ -1,6 +1,6 @@
 ---
 title: FAQ VoIP OVHcloud
-updated: 2026-02-10
+updated: 2026-02-12
 ---
 
 <style>
