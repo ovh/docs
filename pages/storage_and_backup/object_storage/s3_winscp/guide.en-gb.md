@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Use Object Storage with WinSCP
-excerpt: Learn how to configure WinSCP to manage your buckets and objects
+excerpt: Learn how to configure WinSCP to manage your buckets and objects.
 updated: 2025-08-25
 ---
 
 ## Objective
 
-[WinSCP](https://winscp.net/) is an open source free SFTP client, FTP client, WebDAV client, S3 client, SCP client and file manager for Windows.
+[WinSCP](https://winscp.net/) is a free, open-source SFTP, FTP, WebDAV, S3, and SCP client and file manager for Windows.
 
 **This guide explains how to configure WinSCP to manage your buckets and objects.**
 
@@ -30,11 +30,11 @@ Start WinSCP. The login dialog will appear. Fill in the fields as follows:
 
 ![Amazon S3 file protocol](images/S3_file_protocol.png)
 
-3\. Enter your endpoint (without `https://`) corresponding to your storage class and set the `Port number` field to `443`.
+3\. Enter your endpoint (without `https://`) corresponding to your storage class, and set the `Port number` field to `443`.
 
 > [!primary]
 >
-> In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
+> To identify the endpoint corresponding to your storage class, see: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
 ![Host name](images/hostname.png)
