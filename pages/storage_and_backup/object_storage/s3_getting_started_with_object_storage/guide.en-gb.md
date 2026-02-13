@@ -56,7 +56,7 @@ To find out how to install the AWS CLI in your environment, we recommend reading
 **Check installation**
 
 ```bash
-user@host:~$ aws --version
+aws --version
 ```
 
 > [!primary]
@@ -67,7 +67,8 @@ user@host:~$ aws --version
 #### Collect Credentials
 
 - You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
+- You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
+- You will also need your *endpoint_url*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Where to find the Endpoint URL of a bucket?
 
@@ -87,25 +88,33 @@ You can either use the interactive configuration to generate the configuration f
 >
 > or:
 >
-> `aws configure --profile PROFILE_NAME`
+> `aws configure --profile <profile_name>`
 
 The configuration file format in the AWS client is as follows:
 
 ```bash
-user@host:~$ cat ~/.aws/credentials
+cat ~/.aws/credentials
+```
+
+```text
 
 [default]
 aws_access_key_id = <access_key>
 aws_secret_access_key = <secret_key>
+```
 
-user@host:~$ cat ~/.aws/config
+```bash
+cat ~/.aws/config
+```
+
+```text
 
 [default]
 region = <region_in_lowercase>
-endpoint_url = <url_endpoint>
+endpoint_url = <endpoint_url>
 services = ovh-rbx-archive
 
-[profile PROFILE_NAME]
+[profile <profile_name>]
 region = rbx
 output = json
 services = ovh-rbx
@@ -144,7 +153,7 @@ For a list of endpoints by region and storage class, refer to [this page](/pages
 
 > [!primary]
 >
-> If you have more than one profile, add `--profile <profile>` to the command line.
+> If you have more than one profile, add `--profile <profile_name>` to the command line.
 >
 
 ///
@@ -187,7 +196,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ```bash
 >> aws s3 mb s3://<bucket_name>
->> aws --profile default s3 mb s3://<bucket_name>
+>> aws --profile <profile_name> s3 mb s3://<bucket_name>
 >> ```
 >>
 >> ///
@@ -196,7 +205,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ```bash
 >> aws s3api create-bucket --bucket <bucket_name>
->> aws s3api create-bucket --bucket <bucket_name> --profile default
+>> aws --profile <profile_name> s3api create-bucket --bucket <bucket_name>
 >> ```
 >>
 >> ///
