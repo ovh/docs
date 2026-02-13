@@ -102,7 +102,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 
 ```json
 {
-  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
+  "Role": "arn:aws:iam::<project_id>:role/s3-replication",
   "Rules": [
     {
       "ID": "string",
@@ -125,7 +125,7 @@ The basic structure of a replication rule within the configuration JSON file is 
       },
       "Status": "Enabled"|"Disabled",
       "Destination": {
-        "Bucket": "arn:aws:s3:::<your_bucket_name>",
+        "Bucket": "arn:aws:s3:::<destination_bucket_name>",
         "StorageClass": "STANDARD"|"STANDARD_IA"|"EXPRESS_ONEZONE"
       },
       "DeleteMarkerReplication": {
@@ -180,7 +180,7 @@ However, you can still replicate delete markers by adding the `DeleteMarkerRepli
 
 ```json
 {
-  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
+  "Role": "arn:aws:iam::<project_id>:role/s3-replication",
   "Rules": [
     {
       "ID": "ruleId",
@@ -203,7 +203,7 @@ However, you can still replicate delete markers by adding the `DeleteMarkerRepli
 The replication status can be used to determine the status of an object that is being replicated. To get the replication status of an object, you can use the `head-object` command via the AWS CLI:
 
 ```bash
-$ aws s3api head-object --bucket <source_bucket> --key <object_name>
+aws s3api head-object --bucket <source_bucket_name> --key <object_key>
 {
   "LastModified": "Fri, 15 Mar 2024 10:18:15 GMT",
   "ContentLength": 3481,
