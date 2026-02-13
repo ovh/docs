@@ -1,5 +1,5 @@
 ---
-title: "Backup Agent – Secure and Automated Backups with Plakar"
+title: "Automated backup with plakar"
 excerpt: "Set up a dedicated server with Plakar to automate, encrypt, and monitor your server backups securely."
 updated: 2026-02-04
 ---

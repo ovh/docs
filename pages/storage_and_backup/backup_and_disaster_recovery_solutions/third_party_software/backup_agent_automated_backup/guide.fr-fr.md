@@ -1,5 +1,5 @@
 ---
-title: "Backup Agent – Sauvegardes Sécurisées et Automatisées avec Plakar"
+title: "Sauvegardes Automatisées avec Plakar"
 excerpt: "Configurez un serveur dédié avec Plakar pour automatiser, chiffrer et superviser les backups de vos serveurs en toute sécurité."
 updated: 2026-02-04
 ---
