@@ -1,21 +1,21 @@
 ---
-title: "Comment chiffrer Kubernetes ETCD avec OVHcloud KMS"
-excerpt: "Configurer Kubernetes pour chiffrer le stockage ETCD avec l'interface KMIP d'OVHcloud KMS"
-updated: 2026-01-14
+title: "Comment chiffrer ETCD de Kubernetes avec OVHcloud KMS"
+excerpt: "Découvrez comment configurer Kubernetes pour chiffrer le stockage ETCD avec l'interface KMIP d'OVHcloud KMS"
+updated: 2026-02-13
 ---
 
 ## Objectif
 
-Ce guide explique comment configurer le kube-apiserver [encryption provider](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/) permettant aux clusters Kubernetes de chiffrer/déchiffrer les données au repos en utilisant OVHcloud KMS via le protocole KMIP.
+Ce guide explique comment configurer le [fournisseur de chiffrement](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/) du kube-apiserver permettant aux clusters Kubernetes de chiffrer et déchiffrer les données au repos en utilisant OVHcloud KMS via le protocole KMIP.
 
 ## Prérequis
 
-- Un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Vous devez avoir [commandé un domaine OKMS](/pages/manage_and_operate/kms/quick-start).
 
 ## En pratique
 
-### Installation
+### Installation du binaire
 
 Le binaire peut être installé directement à partir des paquets Go.
 
@@ -49,7 +49,7 @@ Si vous utilisez des [politiques IAM](/pages/account_and_service_management/acco
 - `okms:kmip:decrypt`
 - `okms:kmip:locate`
 
-Autrement, l'utilisateur doit appartenir à un groupe avec le rôle ADMIN.
+Autrement, l'utilisateur doit appartenir à un groupe doté du rôle ADMIN.
 
 Sinon, il est possible de créer un utilisateur en utilisant [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) :
 
@@ -65,17 +65,19 @@ Sauvegardez le certificat `cert.pem` et la clé privée `key.pem` générés, ca
 
 #### Création de la clé KMIP AES
 
-Pour créer une clé KMIP AES vous pouvez utiliser la [CLI OKMS](https://github.com/ovh/okms-cli) :
-Commencez par télécharger le binaire dans la dernière version ou construisez le depuis les sources.
-Ensuite vous pouvez créer une clé en utilisant :
+Pour créer une clé KMIP AES, vous pouvez utiliser la [CLI OKMS](https://github.com/ovh/okms-cli) :
+
+Commencez par télécharger le binaire de la dernière version ou compilez-le à partir des sources.
+
+Ensuite, vous pouvez créer une clé en utilisant :
 
 ```bash
 okms-cli kmip create symmetric --alg aes --size 256
 ```
 
-Conservez l'ID de la clé générée. Pour le reste du guide nous allons utiliser l'ID **70001308-5674-43fe-93dd-6270ecac0710** comme exemple.
+Conservez l'ID de la clé générée. Pour le reste du guide, nous allons utiliser l'ID **70001308-5674-43fe-93dd-6270ecac0710** comme exemple.
 
-Pour plus de détail sur l'utilisation de okms-cli, veuillez vous référer au dépôt Github
+Pour plus de détails sur l'utilisation de okms-cli, veuillez vous référer au dépôt GitHub.
 
 ### Configuration du fournisseur de chiffrement
 
@@ -95,9 +97,9 @@ Le fournisseur de chiffrement prend en charge les options suivantes :
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | `--client-cert` | Chemin vers le fichier de certificat client pour l'authentification sur OVHcloud KMS.                                                                       | `""` (obligatoire)               |
 | `--client-key`  | Chemin vers le fichier de clé privée associé au certificat client.                                                                                          | `""` (obligatoire)               |
-| `--kmip-addr`   | Adresse du serveur KMIP. Peut être trouvée dans la [page OVHcloud manager](https://www.ovh.com/manager) de votre OKMS. (ex. `eu-west-rbx.okms.ovh.net:5696`) | `""` (obligatoire)               |
+| `--kmip-addr`   | Adresse du serveur KMIP. Disponible dans votre [espace client OVHcloud](/links/manager), sur la page de votre domaine OKMS. (par exemple : `eu-west-rbx.okms.ovh.net:5696`). | `""` (obligatoire)               |
 | `--kmip-key-id` | Identifiant de la clé de chiffrement à utiliser sur le serveur KMIP.                                                                                        | `""` (obligatoire)               |
-| `--sock`        | Chemin vers le socket Unix sur lequel le fournisseur écoutera. Doit être monté à l'intérieur du serveur Kubernetes apiserver                                | `/var/run/okms_etcd_plugin.sock` |
+| `--sock`        | Chemin vers le socket Unix sur lequel le fournisseur écoutera. Doit être monté à l'intérieur du serveur Kubernetes apiserver.                                | `/var/run/okms_etcd_plugin.sock` |
 | `--timeout`     | Délai d'attente pour les opérations du serveur gRPC.                                                                                                        | `10s`                            |
 | `--debug`       | Activer les traces de débogage.                                                                                                                             | `false`                          |
 
@@ -107,11 +109,11 @@ Sur la base du [guide officiel Kubernetes pour chiffrer les données avec un fou
 
 ```bash
   --encryption-provider-config=<path/to>/encryption-config.yaml
-  # Optionnel, recharge le fichier s'il est mis à jour
+  # Optionnel : recharge le fichier s'il est mis à jour
   --encryption-provider-config-automatic-reload=true
 ```
 
-N'oubliez pas de monter le répertoire contenant le socket Unix sur lequel le serveur KMS écoute dans le kube-apiserver.
+Assuez-vous de monter le répertoire contenant le socket Unix sur lequel le serveur KMS écoute dans le kube-apiserver.
 
 Un exemple de `encryption-config.yaml` :
 
@@ -132,7 +134,7 @@ resources:
 
 ### Validation de la configuration
 
-Créez un secret avec `kubectl create secret generic okms-test-secret -n default --from-literal=mykey=mydata` puis vérifiez le contenu du secret dans le stockage ETCD en exécutant la commande suivante :
+Créez un secret avec `kubectl create secret generic okms-test-secret -n default --from-literal=mykey=mydata`, puis vérifiez le contenu du secret dans le stockage ETCD en exécutant la commande suivante :
 
 ```bash
 ETCDCTL_API=3 etcdctl \
@@ -153,7 +155,8 @@ La sortie devrait être illisible :
 ### Mise en place de la rotation de clé
 
 Pour faire tourner votre clé, vous devrez exécuter deux fournisseurs de chiffrement, chacun écoutant sur un socket Unix différent.
-Voici un exemple de fichier de configuration de chiffrement pour tous les serveurs API avant d'utiliser la nouvelle clé.
+
+Voici un exemple de fichier de configuration de chiffrement pour tous les serveurs API avant d'utiliser la nouvelle clé :
 
 ```yaml
 apiVersion: apiserver.config.k8s.io/v1
@@ -178,9 +181,11 @@ resources:
 ```
 
 Une fois que tous les serveurs API ont été redémarrés et sont capables de déchiffrer en utilisant la nouvelle clé, placez le fournisseur avec la nouvelle clé en haut.
-Une fois que toutes les clés secrètes ont été réchiffrées avec la nouvelle clé, vous pouvez supprimer l'ancien fournisseur de chiffrement.
+
+Une fois que tous les secrets ont été réchiffrés avec la nouvelle clé, vous pouvez supprimer l'ancien fournisseur de chiffrement.
 
 ## Aller plus loin
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).
-Vérifiez comment utiliser [Kubernetes External Secret Operator avec Secret Manager](/pages/manage_and_operate/secret_manager/external-secret-operator).
+
+Découvrez comment utiliser [Kubernetes External Secrets Operator avec Secret Manager](/pages/manage_and_operate/secret_manager/external-secret-operator).

@@ -1,12 +1,12 @@
 ---
 title: "How to Encrypt Kubernetes ETCD with OVHcloud KMS"
-excerpt: "Configure Kubernetes to encrypt ETCD store with OVHcloud KMS KMIP interface"
-updated: 2026-01-14
+excerpt: "Find out how to configure Kubernetes to encrypt ETCD storage with OVHcloud KMS KMIP interface"
+updated: 2026-02-13
 ---
 
 ## Objective
 
-This guide explains how to set up the kube-apiserver [encryption provider](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/) enabling Kubernetes clusters to encrypt/decrypt data at rest using OVHcloud KMS through the KMIP protocol.
+This guide explains how to set up the kube-apiserver [encryption provider](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/) enabling Kubernetes clusters to encrypt and decrypt data at rest using OVHcloud KMS through the KMIP protocol.
 
 ## Requirements
 
@@ -15,7 +15,7 @@ This guide explains how to set up the kube-apiserver [encryption provider](https
 
 ## Instructions
 
-### Installation
+### Installing the binary
 
 The binary can be installed directly from Go packages.
 
@@ -31,7 +31,7 @@ cd okms-k8s-encryption-provider
 go build -o okms-k8s-encryption-provider
 ```
 
-### OVHcloud KMS (OKMS) Configuration
+### Configuring OVHcloud KMS (OKMS)
 
 To use OVHcloud KMS as an encryption provider for Kubernetes, you will need the following:
 
@@ -39,7 +39,7 @@ To use OVHcloud KMS as an encryption provider for Kubernetes, you will need the 
 - An access certificate for your OKMS domain.
 - A KMIP AES key in your OKMS.
 
-#### User Creation and Access Rights
+#### Creating user and access rights
 
 Create a [IAM local user](/pages/account_and_service_management/account_information/ovhcloud-users-management) with access rights on your domain.
 
@@ -57,27 +57,29 @@ Alternatively, it is possible to create a user using [OVHcloud CLI](https://gith
 ovhcloud iam user create --login "etcd-encryption" --group ADMIN --description "A user created for ETCD encryption" --password "xxxxxxxxx" --email "xxxxx@mycompany.com"
 ```
 
-#### Access Certificate Creation
+#### Creating access certificate
 
 Create an [OKMS access certificate](/pages/manage_and_operate/kms/okms-certificate-management) and link the user previously created.
 
 Save the certificate `cert.pem` and the private key `key.pem` generated, as they will be required for the encryption provider configuration.
 
-#### KMIP AES Key Creation
+#### Creating KMIP AES key
 
-To create a KMIP key you can use the [OKMS CLI](https://github.com/ovh/okms-cli):
-Start by downloading the binary on the lastest release or building from the sources.
+To create a KMIP AES key, you can use the [OKMS CLI](https://github.com/ovh/okms-cli):
+
+Start by downloading the binary from the latest release or building from source.
+
 Then you can create a key using :
 
 ```bash
 okms-cli kmip create symmetric --alg aes --size 256
 ```
 
-Keep the Key ID of the key generated. For the rest of the guide we'll use the id **70001308-5674-43fe-93dd-6270ecac0710** as an example.
+Keep the Key ID of the key generated. For the rest of the guide we'll use the Key ID **70001308-5674-43fe-93dd-6270ecac0710** as an example.
 
-For more details information on how to use the okms-cli refer to the Github repository."
+For more information on how to use the okms-cli, refer to the GitHub repository.
 
-### Encryption Provider Configuration
+### Configuring encryption provider
 
 The encryption provider can be run on the kube-apiserver hosts directly with the following command line:
 
@@ -95,23 +97,23 @@ The encryption provider supports the following options:
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | `--client-cert` | Path to the client certificate file for OVHcloud KMS authentication.                                                                                      | `""` (required)                  |
 | `--client-key`  | Path to the private key file associated with the client certificate.                                                                                      | `""` (required)                  |
-| `--kmip-addr`   | Address of the KMIP server. Can be found in the [OVHcloud manager](https://www.ovh.com/manager) page of your OKMS. (e.g., `eu-west-rbx.okms.ovh.net:5696`) | `""` (required)                  |
+| `--kmip-addr`   | Address of the KMIP server. Available in your [OVHcloud Control Panel](/links/manager) on your OKMS domain page. (e.g., `eu-west-rbx.okms.ovh.net:5696`). | `""` (required)                  |
 | `--kmip-key-id` | Identifier of the encryption key to use on the KMIP server.                                                                                               | `""` (required)                  |
-| `--sock`        | Path to the Unix socket the provider will listen on. Should be mounted inside the Kubernetes apiserver                                                    | `/var/run/okms_etcd_plugin.sock` |
+| `--sock`        | Path to the Unix socket the provider will listen on. Should be mounted inside the Kubernetes apiserver.                                                    | `/var/run/okms_etcd_plugin.sock` |
 | `--timeout`     | Timeout for the gRPC server operations.                                                                                                                   | `10s`                            |
 | `--debug`       | Activate debug traces.                                                                                                                                    | `false`                          |
 
-### Kubernetes Configuration
+### Configuring Kubernetes
 
 Based on the [official Kubernetes guide for encrypting data with a KMS provider](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/#encrypting-your-data-with-the-kms-provider), add the following flags on your kube-apiserver:
 
 ```bash
   --encryption-provider-config=<path/to>/encryption-config.yaml
-  # Optional, reload the file if it is updated
+  # Optional: reload the file if it is updated
   --encryption-provider-config-automatic-reload=true
 ```
 
-Do not forget to mount the directory containing the Unix socket that the KMS server is listening on into the kube-apiserver.
+Make sure to mount the directory containing the Unix socket that the KMS server is listening on into the kube-apiserver.
 
 An example of `encryption-config.yaml`:
 
@@ -130,9 +132,9 @@ resources:
     - identity: {}
 ```
 
-### Validate Configuration
+### Validating configuration
 
-Create a secret with `kubectl create secret generic okms-test-secret -n default --from-literal=mykey=mydata` and then check the contents of the secret in etcd store by running the following:
+Create a secret with `kubectl create secret generic okms-test-secret -n default --from-literal=mykey=mydata` and then check the contents of the secret in ETCD storage by running the following:
 
 ```bash
 ETCDCTL_API=3 etcdctl \
@@ -150,10 +152,11 @@ The output should be unreadable:
 �AźR������.��8H�4�O
 ```
 
-### Implement Key Rotation
+### Implementing key rotation
 
 To rotate your key, you will need to run two encryption providers, each listening on a different Unix socket.
-Below is an example encryption configuration file for all API servers prior to using the new key.
+
+Below is an example encryption configuration file for all API servers prior to using the new key:
 
 ```yaml
 apiVersion: apiserver.config.k8s.io/v1
@@ -178,9 +181,11 @@ resources:
 ```
 
 After all API servers have been restarted and are able to decrypt using the new key, move the provider with the new key on top.
+
 After all secrets have been re-encrypted with the new key, you can remove the old encryption provider.
 
-## Go Further
+## Go further
 
 Join our [community of users](/links/community).
-Check how to use [Kubernetes External Secret Operator with Secret Manager](/pages/manage_and_operate/secret_manager/external-secret-operator).
+
+Find out how to use [Kubernetes External Secrets Operator with Secret Manager](/pages/manage_and_operate/secret_manager/external-secret-operator).
