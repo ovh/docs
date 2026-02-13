@@ -10,7 +10,7 @@ updated: 2024-05-20
 
 ## Requirements
 
-- An Object Storage bucket with an ACL public-read
+- An Object Storage bucket with ACL `public-read`
 - Your static resources (HTML, CSS, images, js, etc.)
 
 ## Instructions
@@ -39,17 +39,17 @@ The bucket hosting the website and its contents must be publicly accessible i.e.
 Using the predefined `PUBLIC-READ` ACL at the bucket level:
 
 ```bash
-aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
+aws --profile <profile_name> s3api put-bucket-acl --bucket <bucket_name> --acl public-read
 ```
 
 Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
 
 ```bash
 #!/bin/bash
-declare -a output=($(aws s3api list-objects-v2 --bucket my-website --query='Contents[].Key' | jq -r '.[]'))
+declare -a output=($(aws --profile <profile_name> s3api list-objects-v2 --bucket <bucket_name> --query='Contents[].Key' | jq -r '.[]'))
 for value in "${output[@]}"
 do
-    aws s3api put-object-acl --bucket my-website --key $value --acl public-read
+    aws --profile <profile_name> s3api put-object-acl --bucket <bucket_name> --key "$value" --acl public-read
 done
 ```
 
@@ -60,13 +60,13 @@ To activate website hosting, you will have to upload a website configuration.
 **Example**:
 
 ```bash
-aws --profile user-aws s3 website s3://my-website/ --index-document index.html --error-document error.html
+aws --profile <profile_name> s3 website s3://<bucket_name>/ --index-document index.html --error-document error.html
 ```
 
 Or
 
 ```bash
-aws --profile user-aws s3api put-bucket-website --bucket my-website --website-configuration file://website-conf.json
+aws --profile <profile_name> s3api put-bucket-website --bucket <bucket_name> --website-configuration file://website-conf.json
 ```
 
 If you use the AWS low-level commands with website-conf.json:
@@ -88,15 +88,17 @@ Once the website configuration has been successfully uploaded, you can test the 
 The default endpoint will depend on the region of your bucket.
 
 ```text
-http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
+http://<bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
 
 > [!primary]
+>
 > If you want to use a custom endpoint, you will have to provide your own domain name.
 > Find more information on OVHcloud domain name offers on the [OVHcloud website](/links/web/domains).
 
 > [!warning]
+>
 > - Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/storage_and_backup/object_storage/s3_location).
 > - By default, OVHcloud Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVHcloud Load Balancer to proxy your website. For more information, see the "Go further" section of this guide.
 
