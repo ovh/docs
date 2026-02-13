@@ -1673,6 +1673,7 @@
                     + [List of IP addresses of OVHcloud DNS servers](web_cloud/domains/dns_ips_update)
                 + [DNS zone](web-cloud-domains-dns-configuration-dns-zone)
                     + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)
+                    + [Creating an OVHcloud DNS zone for a subdomain](web_cloud/domains/dns_zone_create_subdomain)
                     + [Editing an OVHcloud DNS zone](web_cloud/domains/dns_zone_edit)
                     + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
                     + [How to delete a DNS zone ?](web_cloud/domains/dns_zone_deletion)
