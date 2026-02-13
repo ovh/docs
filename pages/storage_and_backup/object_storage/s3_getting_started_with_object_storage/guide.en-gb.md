@@ -28,8 +28,8 @@ This guide is designed to familiarise you with the management of your buckets/ob
 >
 > If you are using legacy Swift Object Storage, then:
 >
-> - for **Standard object storage - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
-> - for **Cloud Archive - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
+> - for **Standard object storage - Swift API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
+> - for **Cloud Archive - Swift API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
 > For new projects, we highly recommend using our S3<sup>1</sup>-compatible Object Storage which benefits from our latest innovations and new features.
 > 
@@ -67,8 +67,7 @@ aws --version
 #### Collect Credentials
 
 - You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
-- You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
-- You will also need your *endpoint_url*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
+- You will also need the **Endpoint URL** (`endpoint_url`). If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Where to find the Endpoint URL of a bucket?
 
@@ -97,7 +96,6 @@ cat ~/.aws/credentials
 ```
 
 ```text
-
 [default]
 aws_access_key_id = <access_key>
 aws_secret_access_key = <secret_key>
@@ -108,7 +106,6 @@ cat ~/.aws/config
 ```
 
 ```text
-
 [default]
 region = <region_in_lowercase>
 endpoint_url = <endpoint_url>
@@ -406,19 +403,19 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> In order to permanently delete an object, you must specify a version id:
 >>
 >> ```bash
->> aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 >> ```
 >>
 >> To list all objects and all version IDs, you can use the following command:
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <NAME>
+>> aws s3api list-object-versions --bucket <bucket_name>
 >> ```
 >>
 >> With the previous delete-object command, you will have to iterate over all your object versions. Alternatively, you can use the following one-liner to empty your bucket:
 >>
 >> ```bash
->> aws s3api delete-objects --bucket <NAME> --delete "$(aws s3api list-object-versions --bucket <NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+>> aws s3api delete-objects --bucket <bucket_name> --delete "$(aws s3api list-object-versions --bucket <bucket_name> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
 >> ```
 >>
 >> ///
@@ -493,14 +490,14 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Deleting tags on a bucket:**
 >>
 >> ```bash
->> aws s3api s3api delete-bucket-tagging --bucket <bucket_name>
+>> aws s3api delete-bucket-tagging --bucket <bucket_name>
 >> ```
 >>
 >> **Setting tags on an object:**
 >>
 >> ```bash
 >> aws s3api put-object-tagging --bucket <bucket_name> --key <object_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
->> aws s3api get-bucket-tagging --bucket <bucket_name>
+>> aws s3api get-object-tagging --bucket <bucket_name> --key <object_name>
 >> ```
 >>
 >> ```json
@@ -517,7 +514,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Deleting tags on an object:**
 >>
 >> ```bash
->> aws s3api s3api delete-object-tagging --bucket <bucket_name> --key <object_name>
+>> aws s3api delete-object-tagging --bucket <bucket_name> --key <object_name>
 >> ```
 
 ## Go further

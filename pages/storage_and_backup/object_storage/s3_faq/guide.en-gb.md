@@ -38,7 +38,7 @@ Find the description of the storage classes on [this page](/links/public-cloud/s
 
 ### What features are available for Object Storage classes?
 
-The S3 Object storage classes benefit from [enhanced features to better manage your data](/links/public-cloud/object-storage).
+The S3-compatible Object Storage classes benefit from [enhanced features to better manage your data](/links/public-cloud/object-storage).
 
 New features are coming soon, so please check out our [public GitHub roadmap](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22).
 
@@ -48,14 +48,14 @@ Object Storage classes offer a wide range of S3-compatible API support. All comp
 
 ### Which tools are compatible with Object Storage?
 
-Most of the tools on the market that are compatible with standard Amazon S3 protocol are compatible with OVHcloud Object Storage. 
+Most of the tools on the market that are compatible with the standard Amazon S3 protocol are compatible with OVHcloud Object Storage.
 Visit the [Object Storage - Third-party applications compatibility guide](/pages/storage_and_backup/object_storage/s3_ecosystem) to browse a non-exhaustive list of compatible backup, data management, file sharing tools and software.
 
 ## Billing
 
 ### How is the service billed?
 
-Object Storage is billed according to the storage space used, with a granularity of 1GiB. To ensure readability, the price is displayed per GiB/month, but the billing granularity is per GiB/hour. View pricing on [this page](/links/public-cloud/prices).
+Object Storage is billed according to the storage space used, with a granularity of 1 GiB. To ensure readability, the price is displayed per GiB/month, but the billing granularity is per GiB/hour. View pricing on [this page](/links/public-cloud/prices).
 
 ### Billing example for Object Storage – 1-AZ
 
@@ -152,7 +152,7 @@ aws s3 presign s3://<bucket_name>/<object_key>
 - Example:
 
 ```bash
-aws s3 presign s3://gribs/grib-file
+aws s3 presign s3://<bucket_name>/<object_key>
 ```
 
 ```text

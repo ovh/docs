@@ -82,10 +82,10 @@ The managed permissions are listed below. Note that depending on the level (buck
 
 | Permission | Bucket level | Object level |
 | --- | --- | --- |
-| READ | allows to list all objects in the bucket | allows to read an object and its metadata |
-| WRITE | allows creation/deletion/overwrites of objects in the bucket | n/a |
-| READ_ACP | allows read of the bucket ACL | allows read of the object ACL |
-| WRITE_ACP | allows creation/deletion/overwrites of the bucket ACL | allows creation/deletion/overwrites of the object ACL |
+| READ | allows you to list all objects in the bucket | allows you to read an object and its metadata |
+| WRITE | allows you to create/delete/overwrite objects in the bucket | n/a |
+| READ_ACP | allows you to read the bucket ACL | allows you to read the object ACL |
+| WRITE_ACP | allows you to create/delete/overwrite the bucket ACL | allows you to create/delete/overwrite the object ACL |
 | FULL_CONTROL | shorthand for READ, WRITE, READ_ACP, WRITE_ACP on the bucket | shorthand for READ, READ_ACP, WRITE_ACP on the object |
 
 ### Predefined ACLs
@@ -156,7 +156,7 @@ aws s3api put-bucket-acl --bucket <bucket_name> --grant-write id=<project_name>:
 
 Here, we change the ACL to give account user "user-yyyyyyyyyy" the permission to write in the bucket.
 
-Again, to verify that ACL are set correctly:
+Again, to verify that the ACLs are set correctly:
 
 ```bash
 aws s3api get-bucket-acl --bucket <bucket_name>
@@ -282,7 +282,7 @@ You might consider the following scenarios to use object ACL.
 
 #### At bucket level
 
-We stongly advise you to use policies instead for a better and more fine grained access control over the bucket and its objects. However, for very basic permission control needs, you might consider using bucket ACLs to grant permissions to the objects and ACLs related to the bucket.
+We strongly advise you to use policies instead for better, more fine-grained access control over the bucket and its objects. However, for very basic permission control needs, you might consider using bucket ACLs to grant permissions to the objects and ACLs related to the bucket.
 
 ### When to use bucket policies?
 
@@ -296,7 +296,7 @@ You might consider using user policies if you want to set **cross-resource** per
 >
 > **Important**
 >
-> ACLs and policies can be combined. However the principle of least privilege will always be applied and can be summerized as "**allow only if there is an explicit allow and no explicit deny, else, deny all**"
+> ACLs and policies can be combined. However, the principle of least privilege will always be applied and can be summarized as "**allow only if there is an explicit allow and no explicit deny, else, deny all**".
 >
 
 ## Go further

@@ -84,13 +84,13 @@ When versioning is enabled:
 >> To enable versioning on an Object Storage bucket, use the following command:
 >>
 >> ```bash
->> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
+>> aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 >> ```
 >>
 >> **Explanations:**
 >>
 >> - `put-bucket-versioning`: AWS CLI command to configure version management.
->> - `--bucket my-bucket`: replace `my-bucket` with the name of your bucket.
+>> - `--bucket <bucket_name>`: replace `<bucket_name>` with the name of your bucket.
 >> - `--versioning-configuration Status=Enabled`: enable versioning for the specified bucket.
 >>
 >> After enabling versioning, all objects added to the bucket will have a unique version identifier. This means that each time an object is modified or deleted, a new version is created, which can be restored if necessary.
@@ -114,13 +114,13 @@ When versioning is enabled:
 >> To suspend versioning, set the versioning configuration status to `Suspended`:
 >>
 >> ```bash
->> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
+>> aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Suspended
 >> ```
 >>
 >> **Explanations:**
 >>
 >> - `put-bucket-versioning`: AWS CLI command to configure versioning.
->> - `--bucket my-bucket`: replace `my-bucket` with the name of your bucket.
+>> - `--bucket <bucket_name>`: replace `<bucket_name>` with the name of your bucket.
 >> - `--versioning-configuration Status=Suspended`: suspend versioning for the specified bucket.
 >>
 >> Suspending versioning prevents new objects from receiving a version identifier. Existing objects and their versions remain unchanged, but new objects will not have version identifiers until versioning is reactivated.
