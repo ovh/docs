@@ -24,6 +24,8 @@ Vous souhaitez :
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mail concernées.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identifier la technologie e-mail de votre offre MX Plan.**
@@ -48,7 +50,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **MX Plan Roundcube**
 >>
->> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -61,7 +63,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 > **MX Plan Zimbra / OWA**
 >>
->> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -98,9 +100,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 >> ![email](images/exchange-reset.png){.thumbnail}
 >>
-> **Zimbra STARTER / PRO**
->>
->> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MX Plan](#whichmxplan) » de ce guide.
+> **Zimbra PRO**
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
