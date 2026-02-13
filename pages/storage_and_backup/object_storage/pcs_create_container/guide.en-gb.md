@@ -4,7 +4,7 @@ excerpt: Find out how to create your Object Storage containers in the OVHcloud C
 updated: 2021-10-27
 ---
 
-## Objectif
+## Objective
 
 The Object Storage solution for Public Cloud offers an unlimited storage solution with simple billing tailored to your needs. There are many types of object containers:
 

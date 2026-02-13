@@ -83,7 +83,7 @@ Select the access profile for this user and click `Confirm`{.action}.
 
 #### Overview
 
-By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, etc.) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, website configuration, etc.) are private in Object Storage. Only the resource owner, i.e., the user account that creates it, has full control.
 
 Access to private resources can be granted via access policies. Access policies can be categorized broadly into 2 types :
 

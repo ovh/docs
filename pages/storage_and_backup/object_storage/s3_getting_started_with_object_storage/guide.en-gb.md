@@ -266,7 +266,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >>
 >> ```bash
->> aws s3 cp /datas/<object_name> s3://<bucket_name>
+>> aws s3 cp /data/<object_name> s3://<bucket_name>
 >> ```
 >>
 >> **By default, objects are named after files, but they can be renamed.**
@@ -323,7 +323,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
->> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2
+>> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2>/<object_name>
 >> ```
 >>
 >> **Downloading or uploading an entire bucket to the host/bucket:**

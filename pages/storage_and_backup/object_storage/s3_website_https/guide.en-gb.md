@@ -72,7 +72,7 @@ Enter the configuration information of your server:
 
 **Example**: using dig command
 
-```sh
+```bash
 lxxxx@LWI1XXXXXX:~$ dig my-site.s3-website.gra.io.cloud.ovh.net
 
 ; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
@@ -97,7 +97,7 @@ my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
 
 **Example**: using host command
 
-```sh
+```bash
 lxxxx@LWI1XXXXXX:~$ host my-site.s3-website.gra.io.cloud.ovh.net
 my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
 

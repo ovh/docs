@@ -123,7 +123,7 @@ You can encrypt your data in two ways:
 - **SSE-C (Server-Side Encryption with Customer Keys)**: You can provide and manage your own encryption keys, giving you complete control over your data security. This option is particularly well-suited to organizations with specific compliance and data security needs, as it allows for exclusive management of encryption keys.
 - **SSE-OMK (Server-Side Encryption with OVHcloud-Managed Keys)**: Simplifies the encryption process by using keys managed by OVHcloud. This method is ideal for customers who want a robust encryption solution without the complexities of key management.
 
-When you updload an object, Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you download an object, you must provide the same encryption key as part of your request. Object Storage first checks that the encryption key you provided matches, then decrypts the object before returning the object data to you.
+When you upload an object, Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you download an object, you must provide the same encryption key as part of your request. Object Storage first checks that the encryption key you provided matches, then decrypts the object before returning the object data to you.
 
 You can find more information in the following guide: [Encrypt your server-side objects with SSE-C or SSE-OMK](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
@@ -146,7 +146,7 @@ Make sure you have the necessary permissions by using the credentials of the obj
 To generate a presigned URL to share an object using the AWS CLI, you can use the `presign` command:
 
 ```bash
-$ aws s3 presign s3://<bucket>/<key>
+aws s3 presign s3://<bucket>/<key>
 ```
 
 - Example:
@@ -205,7 +205,7 @@ You can also use the asynchronous replication feature available on Object Storag
 
 ### Is it possible to manage data lifecycles?
 
-You can use Object Storage lifeycle management feature for:
+You can use Object Storage lifecycle management feature for:
 - automating object deletion based on object expiration rules.
 - automating object transition from one class to another.
 
