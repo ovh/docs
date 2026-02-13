@@ -50,7 +50,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **MX Plan Roundcube**
 >>
->> Pour Identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -63,7 +63,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 > **MX Plan Zimbra / OWA**
 >>
->> Pour Identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
