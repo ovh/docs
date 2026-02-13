@@ -16,10 +16,10 @@ Vous souhaitez :
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée:
+- Disposer d'une solution e-mail OVHcloud préalablement configurée :
     - **MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément comme solution autonome.
-    - [**Exchange**](/links/web/emails-exchange)
-    - [**Email Pro**](/links/web/email-pro).
+    - [**Exchange**](/links/web/emails-exchange).
+    - [**E-mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mail concernées.
@@ -30,9 +30,9 @@ Vous souhaitez :
 >
 > **Identifier la technologie e-mail de votre offre MX Plan.**
 >
-> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
+> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette technologie est caractérisée par l'interface de son webmail. Pour l'identifier :
 >
-> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
+> - Depuis l'onglet `Informations générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action}.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
@@ -40,8 +40,8 @@ Vous souhaitez :
 
 OVHcloud propose 4 solutions e-mail, la notion de suppression de compte est différente selon votre offre.
 
-- **Email MX Plan** : cette offre est vendue sous la forme d'un pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack.
-- **Email Pro**, **Hosted Exchange** et **Zimbra** : ces offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, il s'agit alors d'effectuer une **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
+- **E-mail MX Plan** : cette offre est vendue sous la forme d'un pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack.
+- **E-mail Pro**, **Hosted Exchange** et **Zimbra** : ces offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, il s'agit alors d'effectuer une **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
 
 ### Supprimer ou réinitialiser un compte e-mail
 
@@ -50,7 +50,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **MX Plan Roundcube**
 >>
->> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous à la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -61,9 +61,9 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 >> ![email](images/email-mxplan-legacy-reset.png){.thumbnail}
 >>
-> **MX Plan Zimbra / OWA**
+> **MX Plan Zimbra/OWA**
 >>
->> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous au tableau de la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
+>> Pour identifier la technologie e-mail associée à votre service MX Plan, référez-vous à la partie « [Identifier la technologie e-mail de votre offre MX Plan](#whichmxplan) » de ce guide.
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -74,7 +74,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 >> ![email](images/email-mxplan-new-reset.png){.thumbnail}
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 >> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -83,7 +83,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >> 1. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.
 >> 1. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.
 >>
->> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).
+>> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes E-mail-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).
 >>
 >> ![email](images/emailpro-reset.png){.thumbnail}
 >>
@@ -121,7 +121,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
-[Gérer la facturation de vos comptes Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro)
+[Gérer la facturation de vos comptes E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro)
 
 [Gérer la facturation de vos comptes Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
