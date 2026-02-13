@@ -5,12 +5,12 @@ updated: 2022-05-13
 ---
 
 ## Objective
-Object Storage is a storage solution that is managed primarily through the OpenStack API. However, you might not be familiar with managing storage space via command line. Therefore, we have developed a gateway which makes it possible to connect to your PCA container with an SFTP client.
+Public Cloud Archive is a storage solution that is managed primarily through the OpenStack API. However, you might not be familiar with managing storage space via the command line. Therefore, we have developed a gateway which makes it possible to connect to your PCA container with an SFTP client.
 
 ## Requirements
 - SFTP Client: [WinSCP](https://winscp.net/eng/download.php)
 - OpenStack login & password
-- TenantName of the project
+- Tenant name of the project
 
 ## Instructions
 
@@ -18,17 +18,17 @@ Object Storage is a storage solution that is managed primarily through the OpenS
 In this example, we use WinSCP but you can use any SFTP client. Configurations of SFTP clients are similar as explained here, regardless of the client.
 
 ### OpenStack ID
-You can generate your OpenStack login & password using this [guide](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
+You can generate your OpenStack login and password using this [guide](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
-### TenantName
-The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/). Once logged in, the TenantName is visible at the top of page.
+### Tenant name
+The tenant name corresponds to the name of your Horizon project. To get the tenant name, connect to the OpenStack web interface: <https://horizon.cloud.ovh.net/>. Once logged in, the tenant name is visible at the top of the page.
 
 ![horizon](images/image1.png){.thumbnail}
 
 ### Connection
-- Host Name: gateways.storage.{region}.cloud.ovh.net
+- Host Name: gateways.storage.<region_in_lowercase>.cloud.ovh.net
 - User Name: pca
-- Password: {TenantName}.{Username_Openstack}.{Password_Openstack}
+- Password: <tenant_name>.<openstack_username>.<openstack_password>
 - Port: 22
 
 ![connexion](images/image2.png){.thumbnail}
@@ -38,14 +38,14 @@ If you have created a PCA container in SBG:
 
 - Host Name: gateways.storage.sbg.cloud.ovh.net
 - User Name: pca
-- Password: 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
+- Password: <tenant_name>.<openstack_username>.<openstack_password>
 
 ![connexion](images/image3.png){.thumbnail}
 
 ### WinSCP Setting
 In this part we will disable two WinSCP options:
 
-**Transfer Resume / Transfer to Temporary Filename**: This option will have to be disable because recovery is not possible with PCA and WinSCP can return you an error.
+**Transfer Resume / Transfer to Temporary Filename**: This option must be disabled because recovery is not possible with PCA and WinSCP can return an error.
 
 - In the "Endurance" section, select "Disable".
 

@@ -22,8 +22,10 @@ The default (and maximum) number of items returned for a container list request.
 Show all items with python-swiftclient:
 
 ```bash
-swift list <container>
+swift list <container_name>
+```
 
+```text
 container_listing_limit/00001
 container_listing_limit/00002
 container_listing_limit/00003
@@ -38,7 +40,7 @@ container_listing_limit/10038
 Show only the first 10000 objects:
 
 ```bash
-curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container>" -X GET -H `X-Auth-Token: xxx`
+curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container_name>" -X GET -H "X-Auth-Token: <auth_token>"
 ```
 
 ```
@@ -79,7 +81,7 @@ You can use the `marker`, `limit`, and `end_marker` parameters to control how ma
 Show more via `marker`:
 
 ```bash
-curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: xxx"
+curl -i "https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container_name>?marker=container_listing_limit/10000" -X GET -H "X-Auth-Token: <auth_token>"
 ```
 
 ```text
@@ -128,39 +130,39 @@ Failed Transaction ID: txd3664103d22a445687c5a-00610a32e3
 The largest normal object that can be saved in the cluster. This is also the limit on the size of each segment of a large object when using the large object manifest media. This value is set in bytes. If it is less than 1MiB, some tests will fail. It is STRONGLY recommended to leave this value as the default (`5 * 2**30 + 2`).
 
 ```bash
-swift upload <container> <largeobject>
+swift upload <container_name> <large_object_name>
 ```
 
 ```
-Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur>/<largeobject> 413 Request Entity Too Large   b'Your request is too large.'
+Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container_name>/<large_object_name> 413 Request Entity Too Large   b'Your request is too large.'
 Consider using the --segment-size option to chunk the object
 ```
 
 ```bash
-swift upload --use-slo --segment-size 1G <container> <largeobject>
+swift upload --use-slo --segment-size 1G <container_name> <large_object_name>
 ```
 
 ```
-<largeobject> segment 5
-<largeobject> segment 4
-<largeobject> segment 0
-<largeobject> segment 1
-<largeobject> segment 2
-<largeobject> segment 3
-<largeobject>
+<large_object_name> segment 5
+<large_object_name> segment 4
+<large_object_name> segment 0
+<large_object_name> segment 1
+<large_object_name> segment 2
+<large_object_name> segment 3
+<large_object_name>
 ```
 
 ```bash
-swift list <container_segments>
+swift list <container_segments_name>
 ```
 
 ```
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000000
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000001
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000002
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000003
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000004
-<largeobject>/slo/1627934910.652204/6442450944/1073741824/00000005
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000000
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000001
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000002
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000003
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000004
+<large_object_name>/slo/1627934910.652204/6442450944/1073741824/00000005
 ```
 
 ### max_meta_count = 90
@@ -196,7 +198,7 @@ swift post -m 'max_meta_name_length_oROpb2gFutM1NrZI9Q5aOuJDi0eiO0hFvJIJo9Hrd7mh
 ```
 
 ```
-Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur> 400 Bad Request  [first 60 chars of response] b'Metadata name too long: x-container-meta-Max-Meta-Name-Lengt'
+Container POST failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<container_name> 400 Bad Request  [first 60 chars of response] b'Metadata name too long: x-container-meta-Max-Meta-Name-Lengt'
 Failed Transaction ID: tx6ced883b311a4c1eb5e75-00610a30eb
 ```
 
@@ -231,7 +233,7 @@ swift upload <container> $file
 ```
 
 ```
-Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702de32b692c4842b0bb751dc5085daf/<conteneur>/tmp/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/max_object_name_length.txt 400 Bad Request   b'Object name length of 1141 longer than 1024'
+Object PUT failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702de32b692c4842b0bb751dc5085daf/<container_name>/tmp/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/dyL8Vb4KVkMnusLEWgDRsHWFIqGRJvxepapekbHHcQ08GFLPDEctdtRCpkpdZAOITkN4P0km0O717djG5qHd9EPA82zqyIrmEB4T/max_object_name_length.txt 400 Bad Request   b'Object name length of 1141 longer than 1024'
 
 ```
 

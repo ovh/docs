@@ -23,9 +23,9 @@ You can generate your OpenStack login and password using this [guide](/pages/pub
 
 ### TenantName
 
-The TenantName corresponds to the name of your Horizon Project. To get the TenantName, you need to connect to the OpenStack web interface: [https://horizon.cloud.ovh.net/](https://horizon.cloud.ovh.net/).
+The tenant name corresponds to the name of your Horizon project. To get the tenant name, connect to the OpenStack web interface: <https://horizon.cloud.ovh.net/>.
 
-Once logged in, the TenantName is visible at the top of page.
+Once logged in, the tenant name is visible at the top of the page.
 
 ![horizon](images/image1.png){.thumbnail}
 
@@ -38,14 +38,21 @@ Once logged in, the TenantName is visible at the top of page.
 - Password: {TenantName}.{Username_Openstack}.{Password_Openstack}
 - Port: 22
 
+Replace the placeholders as follows:
+
+- `gateways.storage.{region}.cloud.ovh.net` -> `gateways.storage.<region_in_lowercase>.cloud.ovh.net`
+- `{TenantName}.{Username_Openstack}.{Password_Openstack}` -> `<tenant_name>.<openstack_username>.<openstack_password>`
+
 ### Uploading data
 
 Command line example if you have created a PCA container in the GRA region:
 
 ```bash
-user@host:~$ rsync -a /path/to/my/dir pca@gateways.storage.gra.cloud.ovh.net:/container
+rsync -a /path/to/my/dir pca@gateways.storage.gra.cloud.ovh.net:/<container_name>
+```
+
+```text
 pca@gateways.storage.gra.cloud.ovh.net's password:
-user@host:~$
 ```
 
 ### Downloading data
@@ -55,9 +62,11 @@ OVHcloud Public Cloud Archive provides data storage at low cost, in exchange for
 Once your archive has been unsealed, you can download it within 24 hours with unlimited throughput and access frequency. After this retrieval period, the archive will be sealed again.
 
 ```bash
-user@host:~$ rsync -a pca@gateways.storage.gra.cloud.ovh.net:/container
+rsync -a pca@gateways.storage.gra.cloud.ovh.net:/<container_name>
+```
+
+```text
 pca@gateways.storage.gra.cloud.ovh.net's password:
-user@host:~$
 ```
 
 ### Additional information: Rsync options

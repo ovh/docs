@@ -23,7 +23,7 @@ This solution offers several features, including synchronisation between multipl
 Firstly you have to install ownCloud:
 
 ```bash
-root@instance:~$ apt install owncloud
+apt install owncloud
 ```
 
 > [!primary]
@@ -31,10 +31,10 @@ root@instance:~$ apt install owncloud
 > Make sure that the repository you use contains the latest version of ownCloud.
 >
 
-To function, OwnCloud must have a MySQL database. If you do not already have one, install it by running this command:
+To run, ownCloud needs a MySQL database. If you do not already have one, install it by running this command:
 
 ```bash
-root@instance:~$ apt install mysql-server
+apt install mysql-server
 ```
 
 ### Configuration
@@ -42,23 +42,23 @@ root@instance:~$ apt install mysql-server
 To configure the database that will be used by ownCloud, log in to your MySQL server with the root password defined when the server was installed:
 
 ```bash
-root@instance:~$ mysql -u root -p
+mysql -u root -p
 ```
 
 At this point, you can create a new user and a database dedicated to ownCloud:
 
 ```sql
 ***** Create user *****
-mysql> CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'P@ssw0rd';
+CREATE USER 'owncloud'@'localhost' IDENTIFIED BY '<mysql_password>';
 
 ***** Create database *****
-mysql> CREATE DATABASE `owncloud` ;
+CREATE DATABASE `owncloud`;
 
 ***** Grant all privileges on "ownCloud" to the "owncloud" database *****
-mysql> GRANT ALL PRIVILEGES ON `owncloud` . * TO 'owncloud'@'localhost';
+GRANT ALL PRIVILEGES ON `owncloud`.* TO 'owncloud'@'localhost';
 ```
 
-Log in to ownCloud on your browser by entering: `http://serverIP/owncloud`:
+Log in to ownCloud on your browser by entering: `http://<server_ip>/owncloud`:
 
 ![ownCloud](images/img_3325.jpg){.thumbnail}
 

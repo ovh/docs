@@ -15,13 +15,13 @@ The Object Storage solution for Public Cloud offers an unlimited storage solutio
 
 The first step is to create a container that will hold your files.
 
-**This guide explains how to create it from the OVHcloud Control Panel and from the Openstack Horizon interface.**
+**This guide explains how to create it from the OVHcloud Control Panel and from the OpenStack Horizon interface.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
 
-If you use Horizon :
+If you use Horizon:
 
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 

@@ -6,7 +6,7 @@ updated: 2022-01-03
 
 ## Objective
 
-CORS is a mechanism that allows code running in a browser (e.g. Javascript) to make requests to a domain other than the one from which it originates.
+CORS is a mechanism that allows code running in a browser (for example, JavaScript) to make requests to a domain other than the one from which it originates.
 
 Swift supports CORS requests to containers and objects.
 
@@ -21,7 +21,7 @@ CORS metadata is only present in the container. The values specified apply to th
 
 ## Instructions
 
-There are 3 metadata to manage the CORS on a container:
+There are three metadata headers to manage CORS on a container:
 
 | Metadata | Description |
 |:------------|:------------|
@@ -32,7 +32,7 @@ There are 3 metadata to manage the CORS on a container:
 ### The background
 
 ```bash
-swift stat <container>
+swift stat <container_name>
 ```
 
 ```console
@@ -71,11 +71,11 @@ CORS specifies a wildcard character *, which permits access to all user agents, 
 >
 
 ```bash
-swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com' <container>
-swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <container>
-swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <container>
+swift post -H 'X-Container-Meta-Access-Control-Allow-Origin: http://example.com' <container_name>
+swift post -H 'X-Container-Meta-Access-Control-Max-Age:3600' <container_name>
+swift post -H 'X-Container-Meta-Access-Control-Expose-Headers:X-Container-Meta-Access-Control-Allow-Origin' <container_name>
 # stat
-swift stat <container>
+swift stat <container_name>
 ```
 
 ```console
@@ -233,11 +233,11 @@ When a browser receives a response to an actual request, it exposes only the hea
 ### Delete CORS Metadata
 
 ```bash
-swift post -H `X-Remove-Container-Meta-Access-Control-Allow-Origin:x` <container>
-swift post -H "X-Remove-Container-Meta-Access-Control-Max-Age:x" <container>
-swift post -H "X-Remove-Container-Meta-Access-Control-Expose-Headers:x" <container>
+swift post -H "X-Remove-Container-Meta-Access-Control-Allow-Origin:x" <container_name>
+swift post -H "X-Remove-Container-Meta-Access-Control-Max-Age:x" <container_name>
+swift post -H "X-Remove-Container-Meta-Access-Control-Expose-Headers:x" <container_name>
 # stat
-swift stat <container>
+swift stat <container_name>
 ```
 
 ```console

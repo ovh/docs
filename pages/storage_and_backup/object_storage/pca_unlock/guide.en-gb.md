@@ -39,13 +39,13 @@ Your file will be ready for download after this time period. You can then start 
 Check the status of the object to download:
 
 ```bash
-swift stat <pca_container> <object>
+swift stat <pca_container_name> <object_name>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <pca_container>
-                Object: <object>
+         Container: <pca_container_name>
+           Object: <object_name>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -69,22 +69,22 @@ X-Ovh-Retrieval-State: sealed
 Therefore, the `swift download` command will return a 429 error:
 
 ```bash
-swift download <pca_container> <object>
+swift download <pca_container_name> <object_name>
 ```
 ```
-Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
+Error downloading object '<pca_container_name>/<object_name>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container_name>/<object_name> 429 Too Many Requests
 ```
 
 Relaunching the `swift stat` command:
 
 ```bash
-swift stat <pca_container> <object>
+swift stat <pca_container_name> <object_name>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <pca_container>
-                Object: <object>
+         Container: <pca_container_name>
+           Object: <object_name>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -108,20 +108,20 @@ X-Ovh-Retrieval-State: unsealing
 
 The next line indicates the time period (in seconds) to wait before retrieving the object:
 
-```bash
+```text
 X-Ovh-Retrieval-Delay: 14313
 ```
 
 Once the time period has elapsed:
 
 ```bash
-swift stat <pca_container> <object>
+swift stat <pca_container_name> <object_name>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <pca_container>
-                Object: <object>
+         Container: <pca_container_name>
+           Object: <object_name>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -145,12 +145,11 @@ X-Ovh-Retrieval-State: unsealed
 To download the object:
 
 ```bash
-swift download <pca_container> <object>
+swift download <pca_container_name> <object_name>
 ```
 
-```bash
-swift download <pca_container> <object>
-<object> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
+```text
+<object_name> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
 ```
 
 #### Automating the object download
@@ -161,16 +160,16 @@ swift download <pca_container> <object>
 >
 
 ```bash
-swift download <pca_container> <object>
+swift download <pca_container_name> <object_name>
 ```
 ```
-Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
+Error downloading object '<pca_container_name>/<object_name>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container_name>/<object_name> 429 Too Many Requests
 ```
 
 ```bash
-X_OVH_RETRIEVAL_DELAY=$(swift download <pca_container> <object> | awk -F ": " '/X-Ovh-Retrieval-Delay/ {print $2}'
+X_OVH_RETRIEVAL_DELAY=$(swift stat <pca_container_name> <object_name> | awk -F ": " '/X-Ovh-Retrieval-Delay/ {print $2}')
 RETRIEVAL_DELAY=$((${X_OVH_RETRIEVAL_DELAY} / 60 + 2))
-swift download <pca_container> <object> | at now + ${RETRIEVAL_DELAY} minutes
+echo "swift download <pca_container_name> <object_name>" | at now + ${RETRIEVAL_DELAY} minutes
 ```
 
 ## Go further

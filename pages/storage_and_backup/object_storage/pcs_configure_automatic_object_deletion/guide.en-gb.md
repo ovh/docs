@@ -27,10 +27,10 @@ There are two ways to delete your objects/files
 To do this, configure your request's X-Delete-After header
 
 ```bash
-root@server:~$ swift copy --header "X-Delete-After: 3600" container test.txt
+swift copy --header "X-Delete-After: 3600" <container_name> <object_name>
 ```
 
-The test.txt file will be deleted in an hour.
+The `<object_name>` object will be deleted in an hour.
 
 ### On a specific date
 
@@ -40,7 +40,7 @@ To help you find the value you need to insert, use a [converter](http://www.epoc
 Then you can enter this date in the X-Delete-At header:
 
 ```bash
-root@server:~$ swift copy --header "X-Delete-At: 1668877261000" container test.txt
+swift copy --header "X-Delete-At: 1668877261000" <container_name> <object_name>
 ```
 
 The file will therefore be deleted on the 19th November 2022.

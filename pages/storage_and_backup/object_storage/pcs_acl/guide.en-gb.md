@@ -19,13 +19,13 @@ The container ACLs are stored in the **X-Container-Write** and **X-Container-Rea
 Container ACLs use ACL syntax "V1" which is a comma-separated string of elements as shown in the following example:
 
 ```
-.r:*,.rlistings,702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
+.r:*,.rlistings,<project_id>:*
 ```
 
 Elements can be separated by spaces, as in the following example:
 
 ```
-.r : *, .rlistings, 702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:*
+.r : *, .rlistings, <project_id>:*
 ```
 
 ## Requirements
@@ -72,7 +72,7 @@ swift list <container>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Containers: 2
 Objects: 14
 Bytes: 6442454246
@@ -92,7 +92,7 @@ X-Iplb-Instance: 12308
 <container>
 <container_segments>
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 1
 Bytes: 3302
@@ -126,16 +126,16 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: tx5c07e0049b244351a8ad3-0061272d97
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txc64f2ae1b13b4512921d7-0061272dbe
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container> 403 Forbidden
 Failed Transaction ID: txe28a06b820024e2db7fdd-0061272dd0
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx7f02e551b0124f33bf7e3-0061272dde
 ```
 
@@ -150,16 +150,16 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: tx08b18a4a051d490ca02b6-00612734a6
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx072cebdc7d634368ab78f-00612734b3
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container> 403 Forbidden
 Failed Transaction ID: tx1370b790fcf14068b3c4b-00612734c4
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: tx46316b5682924d4c849ac-00612734db
 ```
 
@@ -174,12 +174,12 @@ openstack user show --format json "${OS_USERNAME}"
 
 ```json
 {
-  "default_project_id": "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b",
+  "default_project_id": "<project_id>",
   "description": "user",
   "domain_id": "default",
   "enabled": true,
-  "id": "febxxxxxxxxxxxxxxxxxxxxxxxxxxc72",
-  "name": "user-rAawn9H2qxnn",
+  "id": "<user_id>",
+  "name": "<user_name>",
   "options": {},
   "password_expires_at": null
 }
@@ -187,8 +187,8 @@ openstack user show --format json "${OS_USERNAME}"
 
 ```bash
 . openrc-admin.sh
-swift post <container> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72" \
-                       -w "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
+swift post <container> -r "<project_id>:<user_id>" \
+                       -w "<project_id>:<user_id>"
 ```
 
 #### Access verification
@@ -204,7 +204,7 @@ swift list <container>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Containers: 2
 Objects: 15
 Bytes: 6442454992
@@ -224,12 +224,12 @@ X-Iplb-Instance: 33617
 <container>
 <container_segments>
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
-Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
-Write ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
+Read ACL: <project_id>:<user_id>
+Write ACL: <project_id>:<user_id>
 Sync To:
 Sync Key:
 Accept-Ranges: bytes
@@ -258,13 +258,13 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: txd478e14d3a044d27a1069-0061273678
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resourc'
 Failed Transaction ID: txdf7a083913a449a0bdaa0-0061273699
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
@@ -298,16 +298,16 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: tx9ee6002842844cf791a8c-0061273715
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: txab4706eabf354d2982630-0061273724
 
-Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container> 403 Forbidden
+Container HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container> 403 Forbidden
 Failed Transaction ID: txa7a488b0549647e886757-0061273734
 
-Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Container GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: txdd45d71c14314f589744e-0061273744
 ```
 
@@ -315,8 +315,8 @@ Failed Transaction ID: txdd45d71c14314f589744e-0061273744
 
 ```bash
 . openrc-admin.sh
-swift post <container> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*" \
-                       -w "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*"
+swift post <container> -r "<project_id>:*" \
+                       -w "<project_id>:*"
 ```
 
 #### Access verification
@@ -332,7 +332,7 @@ swift list <container>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Containers: 2
 Objects: 15
 Bytes: 6442454992
@@ -352,12 +352,12 @@ X-Iplb-Instance: 12308
 <container>
 <container_segments>
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
-Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*
-Write ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:*
+Read ACL: <project_id>:*
+Write ACL: <project_id>:*
 Sync To:
 Sync Key:
 Accept-Ranges: bytes
@@ -386,13 +386,13 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: txa890a6d4b42c4f32be23e-0061273d10
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: txc3a82eda633e47e691633-0061273d1f
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
@@ -426,13 +426,13 @@ swift list <container>
 ```
 
 ```
-Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b 403 Forbidden
+Account HEAD failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> 403 Forbidden
 Failed Transaction ID: txf0ef1ea9e9024e8da4886-0061273d58
 
-Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
+Account GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>?format=json 403 Forbidden  [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource'
 Failed Transaction ID: tx554571e2af674d58913d2-0061273d65
 
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
@@ -471,8 +471,8 @@ swift post <container> -r ".r:.example.com"
 #### Access verification
 
 ```bash
-STORAGE_URL=`swift auth | awk -F = '/OS_STORAGE_URL/ {print $2}'`
-curl -i $STORAGE_URL/<container>/<object> -H "Referrer: http://example.com/index.html"
+STORAGE_URL=$(swift auth | awk -F = '/OS_STORAGE_URL/ {print $2}')
+curl -i "$STORAGE_URL/<container>/<object>" -H "Referrer: http://example.com/index.html"
 ```
 
 ### Share a container with a user external to the project
@@ -490,12 +490,12 @@ openstack user show --format json "${OS_USERNAME}"
 
 ```json
 {
-  "default_project_id": "702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf",
+  "default_project_id": "<other_project_id>",
   "description": "other-project-user",
   "domain_id": "default",
   "enabled": true,
-  "id": "c9677ed21acb4724aeafe2f60b7123f9",
-  "name": "user-Pkwgh5CqDbdm",
+  "id": "<other_user_id>",
+  "name": "<other_user_name>",
   "options": {},
   "password_expires_at": null
 }
@@ -509,14 +509,14 @@ swift auth | awk -F = '/OS_STORAGE_URL/ {print $2}'
 ```
 
 ```
-https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>
 ```
 
 Allow **other-project-user** to access the read container:
 
 ```bash
 . openrc-admin.sh
-swift post -r "702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:c9677ed21acb4724aeafe2f60b7123f9" <container>
+swift post -r "<other_project_id>:<other_user_id>" <container>
 ```
 
 #### Access verification
@@ -525,7 +525,7 @@ From the `other-project-user` account:
 
 ```bash
 . openrc-other-project-user.sh
-swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b list <container>
+swift --os-storage-url https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id> list <container>
 ```
 
 ```
@@ -541,11 +541,11 @@ swift stat <container>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
-Read ACL: 702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf:c9677ed21acb4724aeafe2f60b7123f9
+Read ACL: <other_project_id>:<other_user_id>
 Write ACL:
 Sync To:
 Sync Key:
@@ -563,7 +563,7 @@ X-Iplb-Instance: 33617
 
 ## The case of Large Objects
 
-If an object over 5Gb has been dropped, this generates a container such as: `<container_segments>`.<br>
+If an object over 5 GB has been dropped, this generates a container such as `<container_segments>`.<br>
 A large object can be SLO or DLO. You can find more information about this on the [OpenStack documentation](https://docs.openstack.org/swift/latest/overview_large_objects.html)
 
 ### SLO
@@ -575,12 +575,12 @@ swift stat <container>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container>
 Objects: 2
 Bytes: 4048
-Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
-Write ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
+Read ACL: <project_id>:<user_id>
+Write ACL: <project_id>:<user_id>
 Sync To:
 Sync Key:
 Accept-Ranges: bytes
@@ -600,7 +600,7 @@ swift stat <container_segments>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container_segments>
 Objects: 13
 Bytes: 6442450944
@@ -620,20 +620,20 @@ X-Iplb-Request-Id: 6DBEFE1E:8B3C_3626E64B:01BB_6127443A_1E867A3:15625
 X-Iplb-Instance: 38342
 ```
 
-If ACL is only on the "manifest container" you will encounter 409 errors :
+If the ACL is only on the "manifest container", you will encounter 409 errors:
 
 ```bash
 swift download <container> <largeobject>
 ```
 
 ```
-Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<container>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
+Error downloading object '<container>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_<project_id>/<container>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
 
-You can update the rights on the container to allow the download : 
+You can update the rights on the container to allow the download:
 
 ```bash
-swift post <container_segments> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
+swift post <container_segments> -r "<project_id>:<user_id>"
 ```
 
 ```bash
@@ -641,11 +641,11 @@ swift stat <container_segments>
 ```
 
 ```
-Account: AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b
+Account: AUTH_<project_id>
 Container: <container_segments>
 Objects: 13
 Bytes: 6442450944
-Read ACL: 297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72
+Read ACL: <project_id>:<user_id>
 Write ACL:
 Sync To:
 Sync Key:
@@ -671,13 +671,13 @@ swift download <container> <largeobject>
 ### DLO
 
 By design, DLO manifests need to dynamically list `<container_segments>`.<br> 
-If .rlistings ACL is only on the "manifest container" you will encounter 403 errors :
+If the `.rlistings` ACL is only on the "manifest container", you will encounter 403 errors:
 
 ```bash
 Container GET failed: https://storage.xxx.cloud.ovh.net/v1/AUTH_e4xxxxxxxxxxxxxxxxxxxxxxxxe02f/payload.png?format=json 403 Forbidden [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource' (txn: txf74a0fc6ixxxxxxxxxxxxx-006270f0a1)
 ```
 
-To allow object download you will need to put the acl ".rlisting" on the <container_segments>.
+To allow object download, you will need to put the `.rlistings` ACL on `<container_segments>`.
 
 ```bash
 swift post dlo --read-acl ".rlistings"
