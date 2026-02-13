@@ -30,16 +30,16 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 #### Auf aktuelle Störungen überprüfen
 
-Überprüfen Sie zunächst auf der Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Ihr Web-Cluster, Ihr Web Cloud Databases-Server oder Ihre Datenbank von einem Zwischenfall in der OVHcloud-Infrastruktur betroffen ist.
+Überprüfen Sie zunächst auf der Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Ihr Web-Cluster, Ihr Web Cloud Databases Server oder Ihre Datenbank von einem Zwischenfall in der OVHcloud Infrastruktur betroffen ist.
 
 > [!primary]
 >
 > Um die dazu nötigen Informationen einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie zum Bereich `Web Cloud`{.action}.
 >
-> - Um den `Rechenzentrum`{.action} Ihres Webhostings zu finden, wählen Sie `Hosting-Pakete`{.action} aus und dann das betreffende Webhosting. Diese Informationen finden Sie im Tab `Allgemeine Informationen`{.action}.
-> - Um den **Cluster** und den **Filer** (Dateiserver) Ihres Webhostings zu finden, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
-> - Um den Namen des **Web Cloud Databases** zu finden, klicken Sie unter `Web Cloud Databases`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
-> - Um den Server zu finden, auf dem sich Ihre integrierte oder über Ihr [Webhosting](/links/web/hosting) bestellte Datenbank befindet, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/sql_find_server).
+> - Um das `Rechenzentrum`{.action} Ihres Webhostings zu finden, wählen Sie `Hosting-Pakete`{.action} aus und dann das betreffende Webhosting. Diese Informationen finden Sie im Tab `Allgemeine Informationen`{.action}.
+> - Um **Cluster** und **Filer** (Dateiserver) Ihres Webhostings zu finden, konsultieren Sie [diese Anleitung](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
+> - Um den Namen des **Web Cloud Databases** Servers zu finden, klicken Sie unter `Web Cloud Databases`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
+> - Um den Server zu finden, auf dem sich Ihre integrierte oder über Ihr [Webhosting](/links/web/hosting) bestellte Datenbank befindet, konsultieren Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verbindungsdaten Ihrer Datenbank überprüfen <a name="config_file"></a>
 
@@ -49,10 +49,10 @@ Verbinden Sie sich über [FTP](/pages/web_cloud/web_hosting/ftp_connection) mit 
 >
 > Der Name und der Inhalt der für die Datenbankverbindungsinformationen relevanten Datei hängt von dem für die Website verwendeten CMS ab. Dies liegt nicht im Verantwortungsbereich von OVHcloud.
 >
-> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](/pages/web_cloud/web_hosting/cms_install_1_click_modules) heranzuziehen oder bei Bedarf einen [[spezialisierten Dienstleister](/links/partner)](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](/pages/web_cloud/web_hosting/cms_install_1_click_modules) heranzuziehen oder bei Bedarf einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
+Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Verbindungsinformationen zu [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
 
 Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -86,7 +86,7 @@ In Ihrem [OVHcloud Kundencenter](/links/manager) klicken Sie im Bereich `Hosting
 >
 > Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, legen Sie ein [Datenbank-Backup an](/pages/web_cloud/web_hosting/sql_database_export) und setzen Sie dann in Ihrem [OVHcloud Kundencenter](/links/manager) die Datenbank [auf einen früheren Zeitpunkt zurück](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 >
-> Kontaktieren Sie gegebenenfalls einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Kontaktieren Sie gegebenenfalls einen [spezialisierten Dienstleister](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Überschreitung der Datenbank-Quota
@@ -107,7 +107,7 @@ Wenn Sie über ein Webhosting **Starter** oder **Basic** verfügen, empfehlen wi
 >
 > Eine solche Anomalie kann zu einem dauerhaften Anschwellen Ihrer Datenbank führen. Ein Wechsel des Webhosting-Abos wird dies nicht beheben.
 >
-> Daher empfehlen wir Ihnen, falls Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie beispielsweise nur einen Blog betreiben, der nicht viel Datenvolumen verbraucht, sobald möglich einen [[spezialisierten Dienstleister](/links/partner)](/links/partner) zu kontaktieren. Wir werden Sie in diesem Fall nicht unterstützen können.
+> Daher empfehlen wir Ihnen, falls Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie beispielsweise nur einen Blog betreiben, der nicht viel Datenvolumen verbraucht, sobald möglich einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren.
 >
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Hosting-Pakete`{.action} und anschließend auf das betreffende Hosting. Klicken Sie auf den Button `...`{.action} rechts im Bereich `Abo`{.action} unter `Angebot`{.action}, dann auf `Upgraden`{.action}.
@@ -135,12 +135,12 @@ Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hosting
 
 > [!warning]
 >
-> Dieser Vorgang erfordert fortgeschrittene Kenntnisse. Wir empfehlen Ihnen, falls nötig einen [[spezialisierten Dienstleister](/links/partner)](/links/partner) zu kontaktieren. Wir werden Ihnen in dieser Angelegenheit nicht weiterhelfen können.
+> Dieser Vorgang erfordert fortgeschrittene Kenntnisse. Wir empfehlen Ihnen, falls nötig einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. Wir werden Ihnen in dieser Angelegenheit nicht weiterhelfen können.
 >
 
 #### Methode 4: Ihre Datenbank optimieren
 
-Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)“. Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
+Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung "[Konfigurieren Ihres Datenbankservers](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren)". Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
 
 > [!warning]
 >
@@ -173,7 +173,7 @@ Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in 
 
 ### Fehler beim Import von Datenbanken
 
-#### “Access denied for user to database“
+#### "Access denied for user to database"
 
 >
 > **"#1044 - Access denied for user to database"**
@@ -187,7 +187,7 @@ Sie können beim [Datenbank-Import](/pages/web_cloud/web_hosting/sql_importing_m
 
 ![database-import](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
-Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
+Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen [spezialisierten Dienstleister](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
 
 > [!success]
 >
@@ -207,7 +207,7 @@ USE `Database-Name`;
 
 Ersetzen Sie `Database-Name` mit dem Namen der Datenbank aus Ihrem [OVHcloud Kundencenter](/links/manager).
 
-#### “MySQL server has gone away“
+#### "MySQL server has gone away"
 
 >
 > **"404 ERROR MySQL server has gone away"**
@@ -225,7 +225,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 ### Kein Zugriff auf phpMyAdmin
 
-#### “Access denied for user“
+#### "Access denied for user"
 
 >
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
@@ -237,7 +237,7 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](
 
 Überprüfen Sie in diesem Fall die [Login-Daten](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_change_password).
 
-#### “Too many connections“
+#### "Too many connections"
 
 >
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
@@ -256,7 +256,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web_cloud/w
 > Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-#### “Name or service not known“
+#### "Name or service not known"
 
 >
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
