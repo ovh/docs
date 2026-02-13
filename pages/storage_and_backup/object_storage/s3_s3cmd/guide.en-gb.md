@@ -35,7 +35,7 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 To configure s3cmd, run the following command:
 
 ```bash
-$ s3cmd --configure
+s3cmd --configure
 
 Enter new values or accept defaults in brackets with Enter.
 Refer to user manual for detailed description of all options.
@@ -50,7 +50,7 @@ S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
 if the target S3 system supports dns based buckets.
-DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket>.s3.<region_in_lowercase>.io.cloud.ovh.net`
+DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: `<bucket_name>.s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Encryption password is used to protect your files from reading
 by unauthorized persons while in transfer to S3
@@ -95,36 +95,36 @@ S3cmd is now ready to be used.
 List all buckets:
 
 ```bash
-$ s3cmd ls
+s3cmd ls
 ```
 
 Create a new bucket:
 
 ```bash
-$ s3cmd mb s3://BUCKET
+s3cmd mb s3://<bucket_name>
 ```
 
 List the contents of a bucket:
 
 ```bash
-$ s3cmd ls s3://BUCKET[/PREFIX]
+s3cmd ls s3://<bucket_name>[/<prefix>]
 ```
 
 Synchronise /home/user/documents to a bucket
 ```bash
-$ s3cmd sync /home/user/documents s3://BUCKET[/PREFIX]
+s3cmd sync <source_directory> s3://<bucket_name>[/<prefix>]
 ```
 
 Copy a file /home/user/file.txt into a bucket:
 
 ```bash
-$ s3cmd put FILE [FILE...] s3://BUCKET[/PREFIX]
+s3cmd put <file_path> [<file_path>...] s3://<bucket_name>[/<prefix>]
 ```
 
 Download a file file.txt from a bucket:
 
 ```bash
-$ s3cmd get s3://BUCKET/OBJECT LOCAL_FILE
+s3cmd get s3://<bucket_name>/<object_key> <destination_file_path>
 ```
 
 You will find a detailed documentation of the possible actions on the [official S3cmd documentation](https://s3tools.org/usage).

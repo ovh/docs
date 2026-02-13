@@ -46,7 +46,7 @@ A 1-AZ Region consists of a **single availability zone covering multiple data ce
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
 | **Redundancy Type**   | 2N+1 across multiple data centers                                         |
-| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk .           |
+| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk.            |
 | **Use Case Examples** | General-purpose applications, backups                                    |
 
 <a name="3azregion"></a>

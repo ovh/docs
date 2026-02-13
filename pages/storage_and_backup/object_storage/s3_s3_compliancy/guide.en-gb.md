@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Compliancy
-excerpt: "Discover our S3* compatible Object Storage features list"
+title: Object Storage - Compliance
+excerpt: "Discover the list of features supported by our S3-compatible Object Storage."
 updated: 2025-06-27
 ---
 
@@ -12,7 +12,7 @@ td:nth-of-type(2) {
 
 ## Objective
 
-This guide lists the features supported by Object Storage.
+This guide lists the features supported by OVHcloud Object Storage.
 
 ## Instructions
 
