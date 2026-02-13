@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Getting started with Object Storage
-excerpt: This guide is designed to familiarise you with the management of your containers/objects
+title: Object Storage - Getting started
+excerpt: This guide is designed to familiarise you with the management of your buckets/objects.
 updated: 2026-01-27
 ---
 
@@ -20,13 +20,13 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide is designed to familiarise you with the management of your containers/objects.
+This guide is designed to familiarise you with the management of your buckets/objects.
 
 **Learn how to create an Object Storage bucket and manage it.**
 
 > [!primary]
 >
-> If you are using legacy SWIFT Object Storage, then:
+> If you are using legacy Swift Object Storage, then:
 >
 > - for **Standard object storage - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - for **Cloud Archive - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
@@ -51,7 +51,7 @@ This guide is designed to familiarise you with the management of your containers
 
 /// details | To use the AWS CLI
 
-To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
+To find out how to install the AWS CLI in your environment, we recommend reading [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Check installation**
 
@@ -116,7 +116,7 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
 
 [services ovh-rbx]
 s3 =
@@ -124,17 +124,17 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx.io.cloud.ovh.net/
 ```
 
 Here are the configuration values that you can specifically set:
 
 | Variable | Type | Value | Definition |
 |------|:------|:------|:------|
-| max_competitor_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
+| max_concurrent_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
 | max_queue_size | Integer | **Default:** 1000 | The maximum number of tasks in the task queue. |
 | multipart_threshold | Integer<br>String | **Default:** 8MB | The size threshold that the CLI uses for multipart transfers of individual files. |
-| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB | When using multipart transfers, this is the bit size that the CLI uses for multipart transfers of individual files. |
+| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB | When using multipart transfers, this is the byte size that the CLI uses for multipart transfers of individual files. |
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
@@ -170,7 +170,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >> /// details | **Via AWS S3api**
 >>
 >> ```bash
->> aws s3api list-buckets --query "Buckets[].Name" // retirez --query pour avoir plus d'info que le name.
+>> aws s3api list-buckets --query "Buckets[].Name" # Remove --query to display the full output.
 >> ```
 >>
 >> ///
