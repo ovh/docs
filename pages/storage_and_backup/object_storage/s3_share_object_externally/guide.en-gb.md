@@ -1,12 +1,12 @@
 ---
 title: Object Storage – How to share an object or file externally
-excerpt: Learn how to securely share Object Storage files externally in OVHcloud, using presigned URLs, public-read objects, or bucket policies for controlled access
+excerpt: Learn how to securely share Object Storage files externally in OVHcloud using presigned URLs or public-read objects.
 updated: 2025-12-19
 ---
 
 ## Objective
 
-This guide explains how to securely share files or objects stored in OVHcloud Object Storage with external users, covering temporary access, public-read objects, and bucket policies, while highlighting URL types and best practices.
+This guide explains how to securely share files or objects stored in OVHcloud Object Storage with external users, covering temporary access and public-read objects, while highlighting URL types and best practices.
 
 ### Use case scenarios
 
@@ -42,7 +42,7 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 ## Instructions
 
-OVHcloud Object Storage offers three main ways to share objects externally. Choose the method depending on whether you need temporary access, public access, or controlled sharing.
+OVHcloud Object Storage offers two common ways to share objects externally. Choose the method depending on whether you need temporary access or public access.
 
 > [!tabs]
 > Via Presigned URLs
@@ -84,7 +84,7 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >> ```
 >>
 >> The object becomes accessible at: `https://<bucket_name>.s3.<region>.io.cloud.ovh.net/<object_key>`
->>
+
 
 ## Go further
 
