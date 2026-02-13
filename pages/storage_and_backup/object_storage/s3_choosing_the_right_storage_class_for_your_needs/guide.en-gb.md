@@ -97,7 +97,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>Object-level, lifecycle management support</td>
     </tr>
     <tr>
-        <td><strong>Cold Archive*<strong></td>
+        <td><strong>Cold Archive</strong></td>
         <td>Very long-term storage, backups, disaster recovery</td>
         <td>hours</td>
         <td>Paris, 3-AZ region</td>
