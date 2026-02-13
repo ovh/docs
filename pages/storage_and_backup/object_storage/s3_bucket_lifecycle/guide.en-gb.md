@@ -31,7 +31,7 @@ details[open]>summary::before {
 
 ### What is lifecycle?
 
-OVHcloud Object Storage bucket lifecycle lets you optimize storage costs by managing objects throughout their lifecycle. By uploading a lifecycle configuration to a bucket, you define a set of rules that the object storage solution applies to the objects of the said bucket to perform specific actions.
+OVHcloud Object Storage bucket lifecycle is a feature that allows you to optimize your storage costs by managing your objects throughout their lifecycle. By uploading a lifecycle configuration to a bucket, you define a set of rules that the object storage solution applies to the objects of the bucket to perform specific actions.
 
 There are 2 types of actions that OVHcloud Object Storage performs on your objects:
 
@@ -60,7 +60,7 @@ Lifecycle rules are processed asynchronously and on a best-effort basis. Most ru
 
 ### Conflicting expiration dates
 
-Typically, the lifecycle feature is designed to help you optimize your storage costs. For instance, if two expiration rules overlap i.e they target the same set of objects but with different expiration dates, the rule with the shorter duration is applied, ensuring that data is not retained beyond the anticipated timeframe: OVHcloud Object Storage always chooses the most cost-effective path for you.
+Typically, the lifecycle feature is designed to help you optimize your storage costs. For instance, if two expiration rules overlap i.e. they target the same set of objects but with different expiration dates, the rule with the shorter duration is applied, ensuring that data is not retained beyond the anticipated timeframe: OVHcloud Object Storage always tries to choose the most cost-effective path for you.
 
 Generally speaking, when you have multiple rules in a bucket lifecycle configuration that apply to the same set of objects:
 
@@ -199,7 +199,7 @@ If current date is 2024-10-29 and **NoncurrentDays**=5, the lifecycle rule will 
 
 If an object is scheduled to be deleted, a HEAD-OBJECT call will return a special http response header x-amz-expiration that contains a timestamp indicating its expiry date and an id of the lifecycle rule that has been applied.
 
-The header format is: `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule-id>`
+The header format is: `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule_id>`
 
 - expire-date: is obtained by adding the creation date and the delay from expiration
 - rule-id: the matched rule id triggering the deletion
@@ -219,7 +219,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 **Example**: Get expiration date via the cli
 
 ```bash
-~$ aws s3api head-object --bucket $bucket --key $object_name
+aws s3api head-object --bucket <bucket_name> --key <object_key>
 {
   ...
   "Expiration" : "expiry-date=\"Fri, 21 Dec 2024 00:00:00 GMT\", rule-id=\"123456789\"",
