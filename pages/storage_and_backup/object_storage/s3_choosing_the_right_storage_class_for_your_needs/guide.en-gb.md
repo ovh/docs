@@ -4,9 +4,9 @@ excerpt: Discover the different OVHcloud Object Storage classes and choose the o
 updated: 2026-02-03
 ---
 
-Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
+Object Storage is a family of storage solutions that offer high-performance, scalable, and secure storage spaces.
 
-With object storage solutions, you can store static files (videos, images, web files...) in an unlimited space via a public access point, called an endpoint. You can use these files from an application, or you can make them accessible on the web. These storage spaces are accessible via an API interface.
+With object storage solutions, you can store static files (videos, images, web files, etc.) in an unlimited space via a public access point called an endpoint. You can use these files from an application, or you can make them accessible on the web. These storage spaces are accessible via an API interface.
 
 We offer two Object Storage solutions: our **latest generation S3<sup>1</sup>-compatible Object Storage**, which is generally available, and our **established Swift Object Storage**, which remains a supported option for users. However, we recommend using the S3-compatible Object Storage solution for newly designed applications as it benefits from the latest features.
 
@@ -28,7 +28,7 @@ This offer is suitable for the following use cases: AI & Analytics, datalake, Hi
 
 ### Object Storage - Infrequent Access class (S3-compatible)
 
-The Infrequent Access storage class is designed for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval. It offers similar performance (ms TTFB, low latency) and availability than Standard Object Storage but with a lower cost per GiB-hour and a per GiB retrieval fee.
+The Infrequent Access storage class is designed for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval. It offers similar performance (ms TTFB, low latency) and availability as Standard Object Storage but with a lower cost per GiB-hour and a per GiB retrieval fee.
 
 This offer is suitable for the following use cases: long-term storage, backups, disaster recovery.
 
@@ -40,8 +40,7 @@ This offer is suitable for the following use cases: long-term regulatory data st
 
 ### Object Storage - Cold Archive class (S3-compatible)
 
-The Cold Archive storage class is an archival storage class. Also existing on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (bucket-level granularity), Cold Archive is also available as a class in a general-purpose object storage container. Cold Archive is designed for long-term data storage and data archiving with a very low cost per GiB-hour and per GiB restore fee. Indeed, data in the Cold Archive class is not available in real-time and needs to be restored before being available.
-
+The Cold Archive storage class is an archival storage class. It also exists on its own as [a dedicated product at OVHcloud](/pages/storage_and_backup/object_storage/cold_archive_getting_started) (bucket-level granularity), and it is also available as a class in a general-purpose object storage container. Cold Archive is designed for long-term data storage and data archiving with a very low cost per GiB-hour and a per GiB restore fee. Data in the Cold Archive class is not available in real time and must be restored before it becomes available.
 
 ### Comparison Table
 
@@ -104,7 +103,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>99.9%</td>
         <td>180 days</td>
         <td>Yes</td>
-         <td>Object-level, lifecycle management support</td>
+        <td>Object-level, lifecycle management support</td>
     </tr>
    </table>
 
@@ -121,7 +120,7 @@ More details about available regions [here](/pages/storage_and_backup/object_sto
 
 It refers to the **minimum amount of time that an object must be stored in a particular storage class**. In case of early deletion, using *delete-object* requests, a pro-rated fee equal to the remaining days is applied. Be careful with non-versioned buckets, if the object is overwritten, this will be considered as a deletion of the current object version and the pro-rated fee will be applied too.
 
-For example, for the Infrequent Access class, the minimum storage time is 730 hours (30 days). If an object is deleted during this period, an additional charge will be applied and calculated using the following formula: [730h - # of hours of storage of the object] x price per hour of storage class.
+For example, for the Infrequent Access class, the minimum storage time is 730 hours (30 days). If an object is deleted during this period, an additional charge will be applied and calculated using the following formula: [730 h - number of storage hours for the object] x price per hour of the storage class.
 
 #### Retrieval fee
 

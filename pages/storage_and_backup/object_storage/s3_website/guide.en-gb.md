@@ -26,9 +26,9 @@ In Object Storage, a bucket is a flat container of objects. It does not provide 
 
 > [!warning]
 >
-> - HTML pages must be uploaded with text/html as their ContentType.
-> - CSS files must be uploaded with text/css as their ContentType.
-> - Make your bucket content publicly available, i.e., all resources must have ACL "public-read".
+> - HTML pages must be uploaded with `text/html` as their `Content-Type`.
+> - CSS files must be uploaded with `text/css` as their `Content-Type`.
+> - Make your bucket content publicly available, i.e. all resources must have the `public-read` ACL.
 
 ### Step 2: Setting the permissions
 
@@ -45,10 +45,11 @@ aws --profile <profile_name> s3api put-bucket-acl --bucket <bucket_name> --acl p
 Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
 
 ```bash
-#!/bin/bash
-declare -a output=($(aws --profile <profile_name> s3api list-objects-v2 --bucket <bucket_name> --query='Contents[].Key' | jq -r '.[]'))
-for value in "${output[@]}"
-do
+#!/usr/bin/env bash
+
+aws --profile <profile_name> s3api list-objects-v2 --bucket <bucket_name> --query 'Contents[].Key' \
+| jq -r '.[]' \
+| while IFS= read -r value; do
     aws --profile <profile_name> s3api put-object-acl --bucket <bucket_name> --key "$value" --acl public-read
 done
 ```

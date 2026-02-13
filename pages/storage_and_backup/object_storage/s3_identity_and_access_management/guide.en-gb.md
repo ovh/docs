@@ -110,11 +110,11 @@ Click on the `...`{.action} at the end of your user's line, then `Import JSON fi
 
 At the moment, user permissions are evaluated as follows:
 
-1. if exists, evaluate user policy else fallback to ACLs
-    1. check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow
-    2. check for an explicit allow: if there is an explicit allow, then allow permission
-    3. if there is no explicit deny nor explicit allow, then fallback to ACLs
-2. fallback to ACLs
+1. If a user policy exists, evaluate it. Otherwise, fall back to ACLs.
+  1. check for an explicit deny: if there is an explicit deny, then deny permission, else check for an explicit allow
+  2. check for an explicit allow: if there is an explicit allow, then allow permission
+  3. if there is no explicit deny nor explicit allow, then fall back to ACLs
+2. fall back to ACLs
 
 > [!primary]
 >
@@ -283,7 +283,7 @@ The following policy to attempt to deny read access to objects to specific IPs b
 | s3:GetBucketAcl | Bucket |
 | s3:GetBucketCORS | Bucket |
 | s3:GetBucketLocation | Bucket |
-| s3:GetBucketLogging" | Bucket |
+| s3:GetBucketLogging | Bucket |
 | s3:GetBucketObjectLockConfiguration | Bucket |
 | s3:GetBucketTagging | Bucket |
 | s3:GetBucketVersioning | Bucket |

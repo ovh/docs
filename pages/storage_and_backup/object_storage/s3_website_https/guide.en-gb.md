@@ -11,7 +11,7 @@ OVHcloud Object Storage can be used to host a static website inside an Object St
 > [!primary]
 > A static website contains only static content (HTML pages, images, videos, client-side scripts) whereas a dynamic website relies on server-side processing to process data and help render content.
 
-However, OVHcloud Object Storage static website hosting does not support HTTPS. If you want to use HTTPS, you can use OVHcloud Load Balancer to serve a static website hosted on OVHcloud Object Storage and act as an SSL gateway.
+However, OVHcloud Object Storage static website hosting does not support HTTPS by default. If you want to use HTTPS, you can use OVHcloud Load Balancer to serve a static website hosted on OVHcloud Object Storage and act as an SSL gateway.
 
 **The following document will explain how to configure your website and the OVHcloud Load Balancer to enable HTTPS.**
 
@@ -68,7 +68,7 @@ Enter the configuration information of your server:
 - Name (optional)
 - IPv4 address: Enter the public IP associated with your static website default URL in the form `<bucket_name>.s3-website.<region>.io.cloud.ovh.net`
 
-*You can retrieve this IP address by doing a dig command on the URL.*
+*You can retrieve this IP address by running a `dig` command on the URL.*
 
 **Example**: using `dig`
 
@@ -77,8 +77,7 @@ dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
 ```text
-
-; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
+; <<>> DiG 9.16.1-Ubuntu <<>> <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ;; global options: +cmd
 ;; Got answer:
 ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22041
@@ -87,10 +86,10 @@ dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 4096
 ;; QUESTION SECTION:
-;my-site.s3-website.gra.io.cloud.ovh.net. IN A
+;<bucket_name>.s3-website.<region>.io.cloud.ovh.net. IN A
 
 ;; ANSWER SECTION:
-my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
+<bucket_name>.s3-website.<region>.io.cloud.ovh.net. 3600 IN A 141.95.161.77
 
 ;; Query time: 12 msec
 ;; SERVER: 10.15.25.129#53(10.15.25.129)
@@ -105,20 +104,20 @@ host <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
 ```text
-my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
+<bucket_name>.s3-website.<region>.io.cloud.ovh.net has address 141.95.161.77
 ```
 
 ![server cluster configuration](images/serv-cluster-04.png){.thumbnail}
 
 #### Step 1.3 - Configure your front-ends
 
-The next steps consists in adding front-ends to your Load Balancer. A front-end will be the internet facing element of your Load Balancer and is responsible for handling and routing incoming requests.
+The next steps consist in adding front-ends to your Load Balancer. A front-end will be the internet-facing element of your Load Balancer and is responsible for handling and routing incoming requests.
 
 In the Load Balancer section of the OVHcloud Control Panel, click the `Front-ends`{.action} tab then click `Add a front-end`{.action}.
 
 ![frontend configuration](images/front-01.png){.thumbnail}
 
-Add 2 frontends:
+Add two front-ends:
 
 - One frontend whose sole purpose is to handle all incoming HTTP requests and redirect them to your domain name in HTTPS
     - name (optional)

@@ -47,9 +47,9 @@ Although there are two underlying ways of consuming Cold Archive, we continue to
 
 This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive v1, in coexistence with your Object Storage.
 
-In this tutorial, **awscli aliases** are used to simplify the commands.
+In this tutorial, **AWS CLI aliases** are used to simplify the commands.
 
-### Initial Setup: create AWS CLI Aliases
+### Initial setup: create AWS CLI aliases
 
 To simplify commands, create or edit the `~/.aws/cli/alias` file:
 
