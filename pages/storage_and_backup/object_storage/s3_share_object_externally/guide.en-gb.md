@@ -22,7 +22,7 @@ When sharing objects in OVHcloud Object Storage, understanding the difference be
 
 | Feature              | Path-style URL                                                                | Virtual-hosted-style URL                                     |
 | -------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Format               | `https://s3.<region>.io.cloud.ovh.net/<bucket>/<object-key>/<generated-code>` | `https://<bucket>.s3.<region>.io.cloud.ovh.net/<object-key>` |
+| Format               | `https://s3.<region>.io.cloud.ovh.net/<bucket_name>/<object_key>/<generated_code>` | `https://<bucket_name>.s3.<region>.io.cloud.ovh.net/<object_key>` |
 | Typical use          | Presigned URLs generated via API                                              | URLs from the Control Panel or public objects                |
 | Bucket Name Location | In the URL path                                                               | In the subdomain                                             |
 | Best For             | Temporary or programmatic access                                              | Public sharing or stable links                               |
@@ -54,11 +54,10 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >> - Set an expiration time.
 >> - Share the URL with the external user.
 >>
->> Example (AWS CLI compatible):
+>> Example (AWS CLI):
 >>
 >> ```bash
->> aws s3 presign s3://my-bucket/reports/data.csv --expires-in 3600 \
->>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>> aws s3 presign s3://<bucket_name>/<object_key> --expires-in 3600 --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
 >> This command returns a temporary link valid for 1 hour.
@@ -74,17 +73,17 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >> - Apply the public-read ACL.
 >> - Share the object's URL.
 >>
->> Example (AWS CLI compatible):
+>> Example (AWS CLI):
 >>
 >> ```bash
 >> aws s3api put-object-acl \
->>  --bucket my-bucket \
->>  --key docs/manual.pdf \
+>>  --bucket <bucket_name> \
+>>  --key <object_key> \
 >>  --acl public-read \
->>  --endpoint-url https://s3.gra.io.cloud.ovh.net
+>>  --endpoint-url https://s3.<region>.io.cloud.ovh.net
 >> ```
 >>
->> The object becomes accessible at: `https://my-bucket.s3.gra.io.cloud.ovh.net/docs/manual.pdf`
+>> The object becomes accessible at: `https://<bucket_name>.s3.<region>.io.cloud.ovh.net/<object_key>`
 >>
 
 ## Go further
