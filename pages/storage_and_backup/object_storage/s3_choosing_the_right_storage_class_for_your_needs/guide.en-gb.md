@@ -58,7 +58,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
     </tr>
     <tr>
         <td><strong>High Performance</strong></td>
-        <td>AI &amp; Analytics, Datalake, High power Computing Multimedia / Content Platform</td>
+        <td>AI &amp; Analytics, datalake, High Performance Computing, multimedia/content platforms</td>
         <td>milliseconds</td>
         <td>1-AZ</td>
         <td>1-AZ regions: 99.9%</td>
