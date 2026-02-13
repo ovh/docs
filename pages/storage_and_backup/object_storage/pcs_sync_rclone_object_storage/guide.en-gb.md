@@ -33,7 +33,7 @@ To do this, when you are on the OpenStack users page in your Control Panel, clic
 
 Once the file has been downloaded, you can launch the following command to add your new storage space:
 
-```sh
+```bash
 Rclone config
 ```
 
@@ -46,7 +46,7 @@ You will be asked to insert the config data that appears in your file.
 
 Once the configuration is complete, you can test it by listing your containers, for example:
 
-```sh
+```bash
 Rclone lsd BackupStorage
 ```
 

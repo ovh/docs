@@ -87,7 +87,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>Object-level, lifecycle management support</td>
     </tr>
     <tr>
-        <td><strong>Active Archive<strong></td>
+        <td><strong>Active Archive</strong></td>
         <td>Long-term regulatory data storage, disaster recovery plans</td>
         <td>milliseconds</td>
         <td>3-AZ</td>
@@ -104,7 +104,7 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>99,9%</td>
         <td>180 days</td>
         <td>Yes</td>
-        <td>Object-level, lifeycle management support</td>
+         <td>Object-level, lifecycle management support</td>
     </tr>
    </table>
 

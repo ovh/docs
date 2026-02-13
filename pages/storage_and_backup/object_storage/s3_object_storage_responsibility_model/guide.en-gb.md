@@ -4,7 +4,7 @@ excerpt: "Shared responsibilities between OVHcloud and the customer for Public C
 updated: 2024-02-26
 ---
 
-## Objectif
+## Objective
 
 The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges : 
 
@@ -35,7 +35,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical and virtuel Instances for service hosting | I | RA |
+| Produce, route, deliver and maintain physical and virtual Instances for service hosting | I | RA |
 | Create Object Storage credentials for an OpenStack user | RA |  |
 
 #### 2.2. Reversibility model

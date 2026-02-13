@@ -28,23 +28,23 @@ In Object Storage, a bucket is a flat container of objects. It does not provide 
 >
 > - HTML pages must be uploaded with text/html as their ContentType.
 > - CSS files must be uploaded with text/css as their ContentType.
-> - Make your bucket content publicly available, i.e all resources must have ACL "public-read".
+> - Make your bucket content publicly available, i.e., all resources must have ACL "public-read".
 
 ### Step 2: Setting the permissions
 
-The bucket hosting the website and its contents must be publicly accessible i.e with READ permission set for all users.
+The bucket hosting the website and its contents must be publicly accessible i.e., with READ permission set for all users.
 
 **Example**:
 
 Using the predefined `PUBLIC-READ` ACL at the bucket level:
 
-```sh
+```bash
 aws --profile user-aws s3api put-bucket-acl --bucket my-website --acl public-read
 ```
 
 Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
 
-```sh
+```bash
 #!/bin/bash
 declare -a output=($(aws s3api list-objects-v2 --bucket my-website --query='Contents[].Key' | jq -r '.[]'))
 for value in "${output[@]}"
@@ -59,19 +59,19 @@ To activate website hosting, you will have to upload a website configuration.
 
 **Example**:
 
-```sh
+```bash
 aws --profile user-aws s3 website s3://my-website/ --index-document index.html --error-document error.html
 ```
 
 Or
 
-```sh
+```bash
 aws --profile user-aws s3api put-bucket-website --bucket my-website --website-configuration file://website-conf.json
 ```
 
 If you use the AWS low-level commands with website-conf.json:
 
-```sh
+```json
 {
     "IndexDocument": {
         "Suffix": "index.html"
@@ -87,7 +87,7 @@ If you use the AWS low-level commands with website-conf.json:
 Once the website configuration has been successfully uploaded, you can test the endpoint in your web browser.
 The default endpoint will depend on the region of your bucket.
 
-```sh
+```text
 http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 ```
 

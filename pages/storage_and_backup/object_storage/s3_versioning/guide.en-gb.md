@@ -83,7 +83,7 @@ When versioning is enabled:
 > Via AWS CLI
 >> To enable versioning on an Object Storage bucket, use the following command:
 >>
->> ```sh
+>> ```bash
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
 >> ```
 >>
@@ -113,7 +113,7 @@ When versioning is enabled:
 > Via AWS CLI
 >> To suspend versioning, set the versioning configuration status to `Suspended`:
 >>
->> ```sh
+>> ```bash
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
 >> ```
 >>
