@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Integration with Hugging Face Inference Providers
-excerpt: Learn how to use OVHcloud AI Endpoints through Hugging Face Inference Providers
-updated: 2026-01-21
+excerpt: Find out how to use OVHcloud AI Endpoints through Hugging Face Inference Providers
+updated: 2026-02-16
 ---
 
 > [!primary]
@@ -9,11 +9,11 @@ updated: 2026-01-21
 > AI Endpoints is covered by the [OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf) and the [OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf).
 >
 
-🎉 **New Integration Available!** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/). This integration offers streamlined, unified access to world-class inference partners, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+**New Integration Available:** We're excited to announce a new integration for [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) with [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/). This integration offers streamlined, unified access to world-class inference partners, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
-OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day to day developments.
+OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) allows developers to easily add AI features to their day-to-day developments.
 
 In this guide, we will show how to use [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index/) to access OVHcloud [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) models through Hugging Face's unified interface.
 
@@ -66,7 +66,7 @@ Then, you can authenticate yourself with:
 hf auth login # get a read token from hf.co/settings/tokens
 ```
 
-or add your key to the environmnent variable `export HF_TOKEN=...`.
+or add your key to the environment variable `export HF_TOKEN=...`.
 
 And that's all, you are ready to go! 🎉
 
@@ -78,7 +78,7 @@ Install the required packages via npm:
 npm install @huggingface/inference
 ```
 
-And add your key to the environmnent variable `export HF_TOKEN=...`.
+And add your key to the environment variable `export HF_TOKEN=...`.
 
 ### Basic Configuration
 
