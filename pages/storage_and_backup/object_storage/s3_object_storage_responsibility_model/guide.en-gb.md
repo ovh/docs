@@ -6,11 +6,11 @@ updated: 2024-02-26
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges : 
+The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges: 
 
 - Standard Object Storage
 - High Performance Object Storage
-- Standard Object Storage-Swift
+- Standard Object Storage (Swift)
 
 | Roles |
 | --- |
@@ -25,7 +25,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the Object Storage container service range following business needs (SWIFT, High Speed, Standard, ...) | RA | I |
+| Choose the Object Storage container service range following business needs (Swift, High Speed, Standard, ...) | RA | I |
 | Provide personal data needed for service subscription | RA | I |
 | Choose service location| RA | I |
 
@@ -42,7 +42,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Use S3 **\*** compatible API to import data in bucket | RA |  |
+| Use S3-compatible API to import data in bucket | RA |  |
 
 ### 3. Service usage
 
@@ -52,8 +52,8 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Provide and manage Containers and objects' accessibility  |  | RA |
-| Manage Containers and objects' security created (object lock, SSE-C, etc ...  | RA |  |
+| Provide and manage containers and objects accessibility  |  | RA |
+| Manage containers and objects security created (Object Lock, SSE-C, etc.)  | RA |  |
 | Administrate service storage | I | RA |   
 | Administrate data | RA |   |
 | Manage backups | RA |  |
@@ -64,7 +64,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage access rights to the OVHcloud Control Panel | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
-| Manage Object Storage security policy of containers and object created | RA |  |
+| Manage Object Storage security policy of containers and objects created | RA |  |
 
 ##### **3.1.3. Monitoring**
 
@@ -89,7 +89,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Provide inventory of containers and objects used | I | RA |
 | Manage the security of management infrastructure (API, control plane) |   | RA |
-| Manage physical security of equipments and hosted infrastructures | I | RA |
+| Manage physical security of equipment and hosted infrastructures | I | RA |
 
 ##### **3.1.6. Business continuity**
 
@@ -131,7 +131,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Destroy data from the Object Storage Containers Service via the S3 compatible API | RA |  |
+| Destroy data from the Object Storage Containers Service via the S3-compatible API | RA |  |
 | Destroy end-of-life storage devices |  | RA |
 
 ## Go further

@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Identity and access management
-excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
+excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources.
 updated: 2025-09-25
 ---
 
@@ -87,8 +87,8 @@ By default, all resources (buckets, objects) and sub-resources (lifecycle config
 
 Access to private resources can be granted via access policies. Access policies can be categorized broadly into two types:
 
-- user-based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
-- resource-based: bucket policies and ACLs are policies that are attached directly to specific resources.
+- User-based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
+- Resource-based: bucket policies and ACLs are policies that are attached directly to specific resources.
 
 > [!primary]
 >

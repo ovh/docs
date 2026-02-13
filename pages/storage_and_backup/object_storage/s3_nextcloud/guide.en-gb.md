@@ -79,14 +79,20 @@ The result should be similar to this:
 First, the **External storage support** application must be enabled:
 
 ```bash
-$ php occ app:enable files_external
+php occ app:enable files_external
+```
+
+```text
 files_external enabled
 ```
 
-Check that S3 **\*** API is supported on your installation:
+Check that the S3-compatible API is supported on your installation:
 
 ```bash
-$ php occ files_external:backends storage amazons3
+php occ files_external:backends storage amazons3
+```
+
+```text
   - name: Amazon S3
   - identifier: amazons3
   - configuration:
@@ -106,25 +112,31 @@ $ php occ files_external:backends storage amazons3
       - secret: password
 ```
 
-Mount your S3-compatible Object Storage bucket on Nextcloud as a **OVH_hp-bucket** mount point:
+Mount your S3-compatible Object Storage bucket on Nextcloud as an `OVH_<bucket_name>` mount point:
 
 ```bash
-$ php occ files_external:create -c bucket=hp-bucket \
+php occ files_external:create -c bucket=<bucket_name> \
                                 -c hostname=s3.<region_in_lowercase>.io.cloud.ovh.net \
                                 -c region=<region_in_lowercase> \
                                 -c use_ssl=true \
                                 -c use_path_style=false \
-                                -c legacy_auth: false \
-                                -c key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \
-                                -c secret=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy \
-                                OVH_hp-bucket amazons3 amazons3::accesskey
-Storage created with id 4
+                                -c legacy_auth=false \
+                                -c key=<s3_access_key> \
+                                -c secret=<s3_secret_key> \
+                                OVH_<bucket_name> amazons3 amazons3::accesskey
+```
+
+```text
+Storage created with id <mount_id>
 ```
 
 Validate your settings:
 
 ```bash
-$ php occ files_external:verify 4
+php occ files_external:verify <mount_id>
+```
+
+```text
   - status: ok
   - code: 0
   - message
@@ -133,11 +145,14 @@ $ php occ files_external:verify 4
 Verify and update the settings if necessary:
 
 ```bash
-$ php occ files_external:list
+php occ files_external:list
+```
+
+```text
   +----------+----------------+-----------+---------------------+-----------------+---------+------------------+-------------------+
   | Mount ID | Mount Point    | Storage   | Authentication Type | Configuration   | Options | Applicable Users | Applicable Groups |
   +----------+----------------+-----------+---------------------+-----------------+---------+------------------+-------------------+
-  | 4        | /OVH_hp-bucket | Amazon S3 | Access key          | bucket: "nex.." |         | All              |                   |
+  | <mount_id> | /OVH_<bucket_name> | Amazon S3 | Access key          | bucket: "nex.." |         | All              |                   |
   +----------+--------------+-----------+---------------------+-----------------+---------+------------------+-------------------+
 
 ```
@@ -145,10 +160,13 @@ $ php occ files_external:list
 Start indexing the new storage:
 
 ```bash
-$ php occ files:scan -vvv --path /admin/files/OVH_hp-bucket
+php occ files:scan -vvv --path /admin/files/OVH_<bucket_name>
+```
+
+```text
 Starting scan for user 1 out of 1 (admin)
-     Folder /admin/files/OVH_hp-bucket/
-     Folder /admin/files/OVH_hp-bucket/home
+  Folder /admin/files/OVH_<bucket_name>/
+  Folder /admin/files/OVH_<bucket_name>/home
      ...
 +---------+-------+--------------+
 | Folders | Files | Elapsed time |
@@ -165,10 +183,10 @@ Edit your `config/config.php` file and add:
 'objectstore' => array(
         'class' => 'OC\\Files\\ObjectStore\\S3',
         'arguments' => array(
-                'bucket' => 'hp-bucket',
+    'bucket' => '<bucket_name>',
                 'autocreate' => true,
-                'key'    => 'xxxxxxxxxxxxxxxxxxxx',
-                'secret' => 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
+    'key'    => '<s3_access_key>',
+    'secret' => '<s3_secret_key>',
                 'hostname' => 's3.<region_in_lowercase>.io.cloud.ovh.net',
                 'port' => 443,
                 'use_ssl' => true,

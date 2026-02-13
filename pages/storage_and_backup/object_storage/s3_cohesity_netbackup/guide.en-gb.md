@@ -52,7 +52,7 @@ You will be guided through the entire process, from selecting the Storage Server
 
     ![credentials page](images/credentials_page.png){.thumbnail}
 
-9. (Optional) To enable WORM mode (S3 Object Lock), check `Use Object Lock`{.action}. Select the NetBackup lock mode matching the OVhcloud Object Lock mode:
+9. (Optional) To enable WORM mode (S3 Object Lock), check `Use Object Lock`{.action}. Select the NetBackup lock mode matching the OVHcloud Object Lock mode:
 
     - Compliance -> Compliance
     - Enterprise -> Governance

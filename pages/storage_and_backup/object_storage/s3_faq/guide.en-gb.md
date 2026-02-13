@@ -96,9 +96,9 @@ The monthly storage cost will be: 37 376 000 * 0.00001917 + (73 728 000 - 37 376
 
 ### Which APIs should I use to access storage solutions?
 
-We designed Object Storage storage classes to be **compatible with the S3 API**, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
+We designed Object Storage classes to be **compatible with the S3-compatible API**, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
-Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) or other commands.
+Get your S3 access keys and access the various storage classes via the command line using AWS CLI, [`s3cmd`](https://s3tools.org/s3cmd) or other commands.
 
 The list of endpoints is available in the following guide: [Object Storage endpoints and geo-availability](/pages/storage_and_backup/object_storage/s3_location).
 
@@ -137,9 +137,9 @@ You can find more information in our [Object Lock Immutability Management (WORM)
 
 ### How do I temporarily share access to an object via a URL?
 
-By default, all objects are private. This means that only the owner of the objects is authorized to access them. However, objects can be shared temporarily with other people using a pre-assigned URL to grant time-limited permission to download objects, without having to reconfigure permissions.
+By default, all objects are private. This means that only the owner of the objects is authorized to access them. However, objects can be shared temporarily with other people using a presigned URL to grant time-limited permission to download objects, without having to reconfigure permissions.
 
-Please note that anyone with access to the pre-assigned URL can download your item. We therefore recommend that you protect it properly.
+Please note that anyone with access to the presigned URL can download your item. We therefore recommend that you protect it properly.
 
 Make sure you have the necessary permissions by using the credentials of the object owner (by default, the bucket owner).
 
@@ -149,11 +149,7 @@ To generate a presigned URL to share an object using the AWS CLI, you can use th
 aws s3 presign s3://<bucket_name>/<object_key>
 ```
 
-- Example:
-
-```bash
-aws s3 presign s3://<bucket_name>/<object_key>
-```
+Example output:
 
 ```text
 https://s3.gra.perf.cloud.ovh.net/gribs/grib-file?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=5ba255c12baf43be9d00289070faf936%2F20230221%2Fgra%2Fs3%2Faws4_request&X-Amz-Date=20230221T142726Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a43dc63c483d469f6f747ef041a434145b3661541e95e4334eee3a96e059e15e

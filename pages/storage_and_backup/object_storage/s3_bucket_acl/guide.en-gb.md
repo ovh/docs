@@ -11,14 +11,14 @@ Access to private resources can be granted via access policies.
 
 Access policies can be categorized broadly into two types:
 
-- user-based
-- resource-based: bucket policies and ACLs are policies that are attached directly to specific resources
+- User-based
+- Resource-based: bucket policies and ACLs are policies that are attached directly to specific resources
 
-### User based
+### User-based
 
 Access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
 
-### Resource based
+### Resource-based
 
 #### ACL
 
@@ -26,7 +26,7 @@ An ACL is a list of permissions granted to identified grantees. ACLs are typical
 
 ACLs can either be attached at bucket level or at individual object level.
 
-Although ACLs are the legacy way to manage permissions, they are still relevant and not deprecated. However based on the situation, you might want to use policies to apply fine grained control of your resources.
+Although ACLs are the legacy way to manage permissions, they are still relevant and not deprecated. However, depending on your situation, you might prefer policies to apply fine-grained control to your resources.
 
 #### Bucket policy
 
@@ -52,7 +52,7 @@ OVHcloud Object Storage supports two types of grantees:
 
 Public Cloud account users are identified by a canonical user id. When you grant access rights, the canonical user id is specified by `id=<value>` where `<value>` equals `<project_name>:<user_name>`.
 
-Example: if you have a Public Cloud project named `my_project` and you have created a user named `storage-user` then you get `id=my_project:storage-user`
+Example: if you have a Public Cloud project named `my_project` and you have created a user named `storage-user`, you get `id=my_project:storage-user`.
 
 #### Predefined groups
 
@@ -154,7 +154,7 @@ To change the ACL, you can call the `put-bucket-acl` endpoint by using the AWS C
 aws s3api put-bucket-acl --bucket <bucket_name> --grant-write id=<project_name>:<user_name>
 ```
 
-Here, we change the ACL to give account user "user-yyyyyyyyyy" the permission to write in the bucket.
+Here, we grant the account user `<project_name>:<user_name>` the permission to write to the bucket.
 
 Again, to verify that the ACLs are set correctly:
 
@@ -202,26 +202,26 @@ aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```json
 {
     "Owner": {
-        "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
-        "ID": "2171889990277389:user-xxxxxxxxxxxx"
+        "DisplayName": "<project_id>:<user_name>",
+        "ID": "<project_id>:<user_name>"
     },
     "Grants": [
         {
             "Grantee": {
-                "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
-                "ID": "2171889990277389:user-xxxxxxxxxxxx",
+                "DisplayName": "<project_id>:<user_name>",
+                "ID": "<project_id>:<user_name>",
                 "Type": "CanonicalUser"
             },
             "Permission": "FULL_CONTROL"
         },
         {
             "Grantee": {
-                "DisplayName": "po-training:user-yyyyyyyyyy",
-                "ID": "po-training:user-yyyyyyyyyy",
+                "DisplayName": "<project_name>:<user_name_2>",
+                "ID": "<project_name>:<user_name_2>",
                 "Type": "CanonicalUser"
             },
             "Permission": "FULL_CONTROL"
-        },
+        }
     ]
 }
 ```
@@ -234,7 +234,7 @@ aws s3api put-object-acl --bucket <bucket_name> --key <object_key> --grant-read 
 
 Here, we changed our mind and decided to only give the account user `<user_name>` the permission to read instead of full control.
 
-Again, to verify that ACL are set correctly, use the following command:
+Again, to verify that the ACLs are set correctly, use the following command:
 
 ```bash
 aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
@@ -243,26 +243,26 @@ aws s3api get-object-acl --bucket <bucket_name> --key <object_key>
 ```json
 {
     "Owner": {
-        "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
-        "ID": "2171889990277389:user-xxxxxxxxxxxx"
+        "DisplayName": "<project_id>:<user_name>",
+        "ID": "<project_id>:<user_name>"
     },
     "Grants": [
         {
             "Grantee": {
-                "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
-                "ID": "2171889990277389:user-xxxxxxxxxxxx",
+                "DisplayName": "<project_id>:<user_name>",
+                "ID": "<project_id>:<user_name>",
                 "Type": "CanonicalUser"
             },
             "Permission": "FULL_CONTROL"
         },
         {
             "Grantee": {
-                "DisplayName": "po-training:user-yyyyyyyyyy",
-                "ID": "po-training:user-yyyyyyyyyy",
+                "DisplayName": "<project_name>:<user_name_2>",
+                "ID": "<project_name>:<user_name_2>",
                 "Type": "CanonicalUser"
             },
             "Permission": "READ"
-        },
+        }
     ]
 }
 ```

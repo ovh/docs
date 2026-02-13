@@ -272,13 +272,13 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >>
 >> ```bash
->> aws s3 cp /data/<object_name> s3://<bucket_name>
+>> aws s3 cp /data/<file_name> s3://<bucket_name>
 >> ```
 >>
 >> **By default, objects are named after files, but they can be renamed.**
 >>
 >> ```bash
->> aws s3 cp /data/<object_name> s3://<bucket_name>/other-filename
+>> aws s3 cp /data/<file_name> s3://<bucket_name>/<object_key_2>
 >> ```
 >>
 >> ///
@@ -294,10 +294,10 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> ```bash
 >> # upload an object to High Performance tier
->> aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/<object_name> --storage-class EXPRESS_ONEZONE
+>> aws s3api put-object --bucket <bucket_name> --key <object_key> --body /data/<file_name> --storage-class EXPRESS_ONEZONE
 >>
 >> # explicitly upload an object to Standard tier
->> aws s3api put-object --bucket <bucket_name> --key <object_name> --body /data/<object_name> --storage-class STANDARD
+>> aws s3api put-object --bucket <bucket_name> --key <object_key> --body /data/<file_name> --storage-class STANDARD
 >> ```
 >>
 >> ///
@@ -305,7 +305,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **By default, objects are named after files, but can be renamed.**
 >>
 >> ```bash
->> aws s3 cp /data/<object_name> s3://<bucket_name>/other-filename
+>> aws s3 cp /data/<file_name> s3://<bucket_name>/<object_key_2>
 >> ```
 >>
 > Via the OVHcloud Control Panel
@@ -323,13 +323,13 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Downloading an object from a bucket:**
 >>
 >> ```bash
->> aws s3 cp s3://<bucket_name>/<object_name> .
+>> aws s3 cp s3://<bucket_name>/<object_key> .
 >> ```
 >>
 >> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
->> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2>/<object_name>
+>> aws s3 cp s3://<bucket_name>/<object_key> s3://<bucket_name_2>/<object_key>
 >> ```
 >>
 >> **Downloading or uploading an entire bucket to the host/bucket:**
@@ -346,13 +346,13 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Downloading an object from a bucket:**
 >>
 >> ```bash
->> aws s3api get-object --bucket <bucket_name> --key <object_name> <object_name>
+>> aws s3api get-object --bucket <bucket_name> --key <object_key> <file_name>
 >> ```
 >>
 >> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
->> aws s3api copy-object --bucket <bucket_name_2> --copy-source <bucket_name>/<object_name> --key <object_name>
+>> aws s3api copy-object --bucket <bucket_name_2> --copy-source <bucket_name>/<object_key> --key <object_key>
 >> ```
 >>
 >> ///
@@ -386,7 +386,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> ```bash
 >> # Delete an object
->> aws s3 rm s3://<bucket_name>/<object_name>
+>> aws s3 rm s3://<bucket_name>/<object_key>
 >> # Removing all objects from a bucket
 >> aws s3 rm s3://<bucket_name> --recursive
 >> # Delete a bucket. To delete a bucket, it must be empty.
@@ -426,7 +426,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> ```bash
 >> # Delete an object
->> aws s3api delete-object --bucket <bucket_name> --key <object_name>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key>
 >> # Removing all objects from a bucket
 >> aws s3api delete-objects --bucket <bucket_name> --delete "$(aws s3api list-objects-v2 --bucket <bucket_name> --query='{Objects: Contents[].{Key:Key}}')"
 >> # Delete a bucket. To delete a bucket, it must be empty.
@@ -462,7 +462,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> Go to the bucket and open the `Objects`{.action} tab.
 >>
->> Click the delete icon (trash can) on the object line, type `PERMANENTLY DELETE`to confirm permanent deletion, then click `Delete`{.action}.
+>> Click the delete icon (trash can) on the object line, type `PERMANENTLY DELETE` to confirm permanent deletion, then click `Delete`{.action}.
 >>
 
 #### Manage tags
@@ -496,8 +496,8 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Setting tags on an object:**
 >>
 >> ```bash
->> aws s3api put-object-tagging --bucket <bucket_name> --key <object_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
->> aws s3api get-object-tagging --bucket <bucket_name> --key <object_name>
+>> aws s3api put-object-tagging --bucket <bucket_name> --key <object_key> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
+>> aws s3api get-object-tagging --bucket <bucket_name> --key <object_key>
 >> ```
 >>
 >> ```json
@@ -514,7 +514,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Deleting tags on an object:**
 >>
 >> ```bash
->> aws s3api delete-object-tagging --bucket <bucket_name> --key <object_name>
+>> aws s3api delete-object-tagging --bucket <bucket_name> --key <object_key>
 >> ```
 
 ## Go further

@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Local Zones specifications
-excerpt: ""
+excerpt: "Learn about Local Zones specifications and limitations for Object Storage."
 updated: 2024-11-12
 ---
 
@@ -19,11 +19,11 @@ All access keys within a project can access all buckets across all Local Zones.
 
 Once OVHcloud releases new storage classes, the potential for expanding Local Zones to support high-performance classes will be evaluated.
 
-## Feature Set
+## Feature set
 
 The feature sets for Object Storage in regions and Local Zones are mainly the same. However, there are some key differences which are highlighted in [the features matrix on this guide](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
-## MultiAZ and MonoAZ Specifications
+## MultiAZ and MonoAZ specifications
 
 ### MultiAZ (Multi-Availability Zone)
 
@@ -35,9 +35,9 @@ The feature sets for Object Storage in regions and Local Zones are mainly the sa
 - **Overview**: MonoAZ stores data within a single availability zone, offering lower latency and higher performance for applications that do not require the high availability provided by MultiAZ.
 - **Availability**: MonoAZ configurations are available in Local Zones, making them suitable for use cases that prioritize performance and low latency over cross-zone redundancy.
 
-### Meta-data API (not supported)
+### Metadata API (not supported)
 
-- **Overview**: The meta-data API, which allows users to retrieve metadata about their storage, is currently not available in Local Zones. This includes querying the number of buckets and the total size of buckets via the OVHcloud Control Panel or the API.
+- **Overview**: The metadata API, which allows users to retrieve metadata about their storage, is currently not available in Local Zones. This includes querying the number of buckets and the total size of buckets via the OVHcloud Control Panel or the API.
 - **Impact**: Customers cannot easily manage or monitor their storage usage and capacities programmatically in Local Zones.
 
 The OVHcloud development team is working on implementing this API.
@@ -47,7 +47,7 @@ The OVHcloud development team is working on implementing this API.
 #### Encryption
 
 - **Current State**: Encryption is not supported in Local Zones, meaning that data is not encrypted at rest by the service.
-- **Supported Encryption**: Server-Side Encryption with Customer-Provided Keys (SSeC) is supported. This allows users to encrypt their data before sending it to the object storage service, providing a layer of security.
+- **Supported Encryption**: Server-Side Encryption with Customer-Provided Keys (SSE-C) is supported. This allows users to encrypt their data before sending it to the object storage service, providing a layer of security.
 
 #### Versioning
 

@@ -6,7 +6,7 @@ updated: 2026-01-14
 
 ## Objective
 
-At OVHcloud, we understand the importance of compatibility and interoperability with third-party tools and software. Our **S3<sup>*</sup>-compatible Object Storage** service is designed to be flexible and adaptable to various use cases and workflows. This guide aims to provide an overview of the compatibility of our Object Storage service with popular third-party tools and software, helping you to integrate our service seamlessly into your existing infrastructure.
+At OVHcloud, we understand the importance of compatibility and interoperability with third-party tools and software. Our **S3<sup>*</sup>-compatible Object Storage** service is designed to be flexible and adaptable to various use cases and workflows. This guide aims to provide an overview of the compatibility of our Object Storage service with popular third-party tools and software, helping you integrate our service into your existing infrastructure.
 
 ## Compatibility Table
 
@@ -56,7 +56,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
 | **ownCloud** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product) | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
-| **NextCloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [NextCloud](https://nextcloud.com/files/) | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
+| **Nextcloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [Nextcloud](https://nextcloud.com/files/) | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
 
 ### Storage platforms
 
