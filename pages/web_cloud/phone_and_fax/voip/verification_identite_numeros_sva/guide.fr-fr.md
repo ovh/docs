@@ -1,7 +1,7 @@
 ---
 title: "Valider votre identité pour l'exploitation d'un numéro spécial SVA"
 excerpt: "Découvrez comment valider votre identité depuis l'espace client OVHcloud afin d'exploiter un numéro spécial SVA"
-updated: 2026-02-10
+updated: 2026-02-13
 ---
 
 ## Objectif
@@ -117,9 +117,10 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 >
 > **Note** :
 >
-> - Le **Relevé d'Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br> Pour téléverser votre RIB, rendez-vous dans la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur `Gérer mes reversements`{.action} puis sur `Modifier mes coordonnées bancaires`{.action}.
+> Le **Relevé d'Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br>
+> Pour téléverser votre RIB, rendez-vous dans la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur `Gérer mes reversements`{.action} puis sur `Modifier mes coordonnées bancaires`{.action}.
 >
->    ![sva iban](images/sva-iban.png){.thumbnail}
+> ![sva iban](images/sva-iban.png){.thumbnail}
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
 
