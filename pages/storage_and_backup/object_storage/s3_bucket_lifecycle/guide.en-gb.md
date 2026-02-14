@@ -712,7 +712,7 @@ The following configuration does the following actions:
 - all 15+ days old noncurrent versions of the selected objects are then deleted except for the 3 most recent noncurrent versions. If there are less than 3 noncurrent versions, the NoncurrentVersionExpiration action will not be applied.
 
 ```bash
-$ cat lifecycle.json
+cat lifecycle.json
 {
   "Rules": [
     {
@@ -736,7 +736,7 @@ $ cat lifecycle.json
 Upload the file to the bucket:
 
 ```bash
-$ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
+aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
 ```
 
 ///
