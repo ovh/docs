@@ -24,8 +24,7 @@ Therefore, it is highly likely that the segments will be stored in several stora
 As a result you can upload a 10 GB file in 100 X 100 MB segments:
 
 ```bash
-root@server:~$ swift upload --segment-size 104857600 --segment-threads 100
-container_name 10Gio.dat
+swift upload --segment-size 104857600 --segment-threads 100 <container_name> <file_path>
 ```
 
 |Argument|Description|

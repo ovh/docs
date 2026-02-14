@@ -20,18 +20,14 @@ The Swift s3api middleware providing S3 API compatibility has been enabled on al
 ### Set the OpenStack environment variables
 
 ```bash
-user@host:~$ source <user_name>-openrc.sh
+source <openrc_file>
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
-
-user@host:~$
 ```
 
 ### Install OpenStack client if needed
 
 ```bash
-user@host:~$ pip install python-openstackclient
-
-user@host:~$
+pip install python-openstackclient
 ```
 
 OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
@@ -44,37 +40,44 @@ These credentials will be safely stored in Keystone. To generate it:
 With python-openstack client:
 
 ```bash
-user@host:~$ openstack ec2 credentials create
+openstack ec2 credentials create
+```
+
+```text
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 | Field      | Value                                                                                                                      |
 +------------+----------------------------------------------------------------------------------------------------------------------------+
-| access     | 5a4d8b8d88104123a862c527ede5a3d3                                                                                           |
-| links      | {u'self': u'https://auth.cloud.ovh.net/v3/users/d74d05ff121b44bea9216495e7f0df61/credentials/OS-                     |
-|            | EC2/5a4d8b8d88104123a862c527ede5a3d3'}                                                                                     |
-| project_id | 20e124b71be141299e111ec26b1892fa                                                                                           |
-| secret     | 925d5fcfcd9f436d8ffcb20548cc53a2                                                                                           |
+| access     | <access_key>                                                                                                               |
+| links      | {u'self': u'https://auth.cloud.ovh.net/v3/users/<user_id>/credentials/OS-EC2/<access_key>'}                                |
+| project_id | <project_id>                                                                                                               |
+| secret     | <secret_key>                                                                                                               |
 | trust_id   | None                                                                                                                       |
-| user_id    | d74d05ff121b44bea9216495e7f0df61                                                                                           |
+| user_id    | <user_id>                                                                                                                  |
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 ```
 
 With curl:
 
 ```bash
-. openrc.sh
+source <openrc_file>
 TMP_FILE=$(mktemp)
 OS_USER_ID=$(curl -s -D $TMP_FILE -X POST "${OS_AUTH_URL}auth/tokens" -H "Content-Type: application/json" -d '{"auth":{"identity":{"methods":["password"],"password":{"user":{"name":"'$OS_USERNAME'","domain":{"id":"default"},"password":"'$OS_PASSWORD'"}}},"scope":{"project":{ "id":"'$OS_TENANT_ID'","domain":{"id":"default"}}}}}' | jq -r '.["token"]["user"]["id"]')
 OS_TOKEN=$(awk 'BEGIN{IGNORECASE=1} /^X-Subject-Token/ {print $2}' $TMP_FILE |  tr -d "\r")
 curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "'$OS_TENANT_ID'"}' "${OS_AUTH_URL}users/${OS_USER_ID}/credentials/OS-EC2" | jq .
+```
+
+Example output:
+
+```json
 {
   "credential": {
-    "user_id": "d74d05ff121b44bea9216495e7f0df61",
+    "user_id": "<user_id>",
     "links": {
-      "self": "https://auth.cloud.ovh.net/v3/users/d74d05ff121b44bea9216495e7f0df61/credentials/OS-EC2/660c89cfc4764271ba169941c7b2f310"
+      "self": "https://auth.cloud.ovh.net/v3/users/<user_id>/credentials/OS-EC2/<access_key>"
     },
-    "tenant_id": "20e124b71be141299e111ec26b1892fa",
-    "access": "660c89cfc4764271ba169941c7b2f310",
-    "secret": "fc9e8eb545724accadcfabbd99207df1",
+    "tenant_id": "<project_id>",
+    "access": "<access_key>",
+    "secret": "<secret_key>",
     "trust_id": null
   }
 }
@@ -89,19 +92,19 @@ Install the AWS client and configure it as follows:
 > **Python package**
 >>
 >> ```bash
->> user@host:~$ pip install awscli
+>> pip install awscli
 >> ```
 >> 
 > **Debian-based OS**
 >>
 >> ```bash
->> user@host:~$ sudo apt install awscli
+>> sudo apt install awscli
 >> ```
 >> 
 > **RHEL-based OS**
 >>
 >> ```bash 
->> user@host:~$ sudo yum install awscli
+>> sudo yum install awscli
 >> ```
 >> 
 
@@ -109,18 +112,18 @@ Install the AWS client and configure it as follows:
 > CLI method
 >>
 >> ```bash
->> user@host:~$ aws configure
+>> aws configure
 >> ```
 >> Then, follow the steps and enter your AWS credentials generated by the commands above.
 >>
 > Manual method
 >>
 >> ```bash
->> user@host:~$ cat ~/.aws/credentials
+>> cat ~/.aws/credentials
 >> [default]
 >> aws_access_key_id = <access_key>
 >> aws_secret_access_key = <secret_key>
->> user@host:~$ cat ~/.aws/config
+>> cat ~/.aws/config
 >> [plugins]
 >> endpoint = awscli_plugin_endpoint
 >> [default]
@@ -145,13 +148,13 @@ List buckets (containers):
 >
 
 ```bash
-user@host:~$ aws s3 ls
+aws s3 ls
 ```
 
 Create a new bucket:
 
 ```bash
-user@host:~$ aws s3 mb s3://bucket
+aws s3 mb s3://bucket
 ```
 
 > [!primary]
@@ -172,25 +175,25 @@ user@host:~$ aws s3 mb s3://bucket
 Upload a local file to Swift:
 
 ```bash
-user@host:~$ aws s3 cp file.txt s3://bucket/file.txt
+aws s3 cp file.txt s3://bucket/file.txt
 ```
 
 Download an object from Swift:
 
 ```bash
-user@host:~$ aws s3 cp s3://bucket/file.txt file.txt
+aws s3 cp s3://bucket/file.txt file.txt
 ```
 
 Delete a Swift object:
 
 ```bash
-user@host:~$ aws s3 rm s3://bucket/file.txt
+aws s3 rm s3://bucket/file.txt
 ```
 
 Delete a bucket:
 
 ```bash
-user@host:~$ aws s3 rb s3://bucket
+aws s3 rb s3://bucket
 ```
 
 ## Go further

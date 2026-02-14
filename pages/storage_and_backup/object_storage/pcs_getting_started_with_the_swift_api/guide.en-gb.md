@@ -28,8 +28,8 @@ Please note that the following instructions only pertain to the command line int
 
 You can retrieve the list of possible commands from the client's documentation:
 
-```
-admin@server-1:~$ swift --help
+```bash
+swift --help
 ```
 
 Here is the list of the main commands:
@@ -47,9 +47,11 @@ Here is the list of the main commands:
 
 For an explanation of a specific Swift command, add `--help` at the end of it:
 
+```bash
+swift post --help
 ```
-admin@server-1:~$ swift post --help
 
+```text
 Updates meta information for the account, container, or object.
 If the container is not found, it will be created automatically.
 
@@ -66,22 +68,24 @@ You can also consult the Swift documentation available on the [OpenStack website
 
 - Create the container "container1":
 
-```
-admin@server-1:~$ swift post container1
+```bash
+swift post container1
 ```
 
 - Configure the access rights to make your container public:
 
-```
-admin@server-1:~$ swift post --header "X-Container-Read: .r:*" container1
+```bash
+swift post --header "X-Container-Read: .r:*" container1
 ```
 
 - Check the container configuration:
 
+```bash
+swift stat container1
 ```
-admin@server-1:~$ swift stat container1
 
-Account: AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29
+```text
+Account: AUTH_<project_id>
 Container: container1
 Objects: 0
 Bytes: 0
@@ -101,9 +105,11 @@ Content-Type: text/plain; charset=utf-8
 
 - Upload the content of a local folder to a container:
 
+```bash
+swift upload container1 images/
 ```
-admin@server-1:~$ swift upload container1 images/
 
+```text
 images/OVHlogo.png
 images/OVHSummitKeynote.jpg
 ```
@@ -112,9 +118,11 @@ A prefix will automatically be added to your files if you send an entire folder 
 
 - List a container's files:
 
+```bash
+swift list container1
 ```
-admin@server-1:~$ swift list container1
 
+```text
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 text1.txt
@@ -124,9 +132,11 @@ text3.txt
 
 You can display all files with a particular prefix using the `--prefix` argument:
 
+```bash
+swift list container1 --prefix images
 ```
-admin@server-1:~$ swift list container1 --prefix images
 
+```text
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
@@ -134,7 +144,7 @@ images/OVHlogo.png
 If the container is configured as public, you can access the file using a URL:
 
 ```
-https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
+https://storage.<region>.cloud.ovh.net/v1/AUTH_<project_id>/container1/images/OVHlogo.png
 ```
 
 This URL is made up of an endpoint, available from the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/access_and_security_in_horizon), the name of your container and the name of your object (including the prefix).
@@ -143,17 +153,21 @@ This URL is made up of an endpoint, available from the [Horizon interface](/page
 
 - Download a file:
 
+```bash
+swift download container1 text1.txt
 ```
-admin@server-1:~$ swift download container1 text1.txt
 
+```text
 text1.txt [auth 0.328s, headers 0.452s, total 0.453s, 0.000 MB/s]
 ```
 
 You can download multiple files with the same prefix, using the following command:
 
+```bash
+swift download container1 --prefix images
 ```
-admin@server-1:~$ swift download container1 --prefix images
 
+```text
 images/OVHlogo.png [auth 0.383s, headers 0.520s, total 0.522s, 0.135 MB/s]
 images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB/s]
 ```
@@ -162,26 +176,32 @@ images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB
 
 - Delete a file:
 
+```bash
+swift delete container1 text1.txt
 ```
-admin@server-1:~$ swift delete container1 text1.txt
 
+```text
 text1.txt
 ```
 
 As with downloading, you can delete multiple files using the same prefix, with the following command:
 
+```bash
+swift delete container1 images/*
 ```
-admin@server-1:~$ swift delete container1 images/*
 
+```text
 images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
 - Delete a container:
 
+```bash
+swift delete container1
 ```
-admin@server-1:~$ swift delete container1
 
+```text
 text2.txt
 text3.txt
 ```

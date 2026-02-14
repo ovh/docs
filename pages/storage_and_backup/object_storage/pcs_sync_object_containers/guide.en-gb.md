@@ -29,7 +29,7 @@ For containers to authenticate, you will need to create a key and configure it o
 - Create the key:
 
 ```bash
-root@server-1:~$ sharedKey=$(openssl rand -base64 32)
+sharedKey=$(openssl rand -base64 32)
 ```
 
 #### Destination container configuration
@@ -39,29 +39,34 @@ First of all, you will need to configure the key on the container that will rece
 - Check the region that has loaded in the environment variables:
 
 ```bash
-root@server-1:~$ env | grep OS_REGION
+env | grep OS_REGION
+```
 
+```text
 OS_REGION_NAME=BHS
 ```
 
 - Configure the key on the destination container:
 
 ```bash
-root@server-1:~$ swift post --sync-key "$sharedKey" containerBHS
+swift post --sync-key "$sharedKey" <destination_container_name>
 ```
 
 - Next, check that the key has been successfully configured using the following command, and note down the content of the "Account" variable at the same time:
 
 ```bash
-root@server-1:~$ swift stat containerBHS
-                         Account: AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29
-                       Container: containerBHS
+swift stat <destination_container_name>
+```
+
+```text
+                         Account: AUTH_<project_id>
+                       Container: <destination_container_name>
                          Objects: 0
                            Bytes: 0
                         Read ACL:
                        Write ACL:
                          Sync To:
-                        Sync Key: 4cA5j5LyaaG2ws32d1fsdQSxnvIJv+y2qFnbnm6Kw=
+                        Sync Key: <sync_key>
 Meta Access-Control-Allow-Origin: https://www.ovh.com
                    Accept-Ranges: bytes
                 X-Storage-Policy: Policy-0
@@ -74,7 +79,7 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
 - Retrieve the target container’s address, then configure it on the source container (this one is: `//OVH_PUBLIC_CLOUD/Region/Account/Container`).
 
 ```bash
-root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
+export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_<project_id>/<destination_container_name>"
 ```
 
 #### Source container configuration
@@ -82,33 +87,36 @@ root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxx
 - Change the region in the environment variables:
 
 ```bash
-root@server-1:~$ export OS_REGION_NAME=GRA
+export OS_REGION_NAME=GRA
 ```
 
 - Configure the key on the source container:
 
 ```bash
-root@server-1:~$ swift post --sync-key "$sharedKey" containerGRA
+swift post --sync-key "$sharedKey" <source_container_name>
 ```
 
 - Configure the recipient container on the source container:
 
 ```bash
-root@server-1:~$ swift post --sync-to "$destContainer" containerGRA
+swift post --sync-to "$destContainer" <source_container_name>
 ```
 
 - As detailed previously, you can check that it has been configured properly using the following command:
 
 ```bash
-root@server-1:~$ swift stat containerGRA
-         Account: AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29
-       Container: containerGRA
+swift stat <source_container_name>
+```
+
+```text
+         Account: AUTH_<project_id>
+       Container: <source_container_name>
          Objects: 3
            Bytes: 15
         Read ACL:
        Write ACL:
-         Sync To: //OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS
-        Sync Key: 4cA5j5LyaaG2wU4lDYnDmEwQSxnvIJv+y2qFnbnm6Kw=
+         Sync To: //OVH_PUBLIC_CLOUD/BHS/AUTH_<project_id>/<destination_container_name>
+        Sync Key: <sync_key>
    Accept-Ranges: bytes
       Connection: close
      X-Timestamp: 1444813114.55493
@@ -124,7 +132,10 @@ After a few minutes (depending on the number and size of the files to be sent), 
 - To list the files on the source container:
 
 ```bash
-root@server-1:~$ swift list containerGRA
+swift list <source_container_name>
+```
+
+```text
 test1.txt
 test2.txt
 test3.txt
@@ -133,7 +144,10 @@ test3.txt
 - To list the files on the destination container:
 
 ```bash
-root@server-1:~$ swift list containerBHS
+swift list <destination_container_name>
+```
+
+```text
 test1.txt
 test2.txt
 test3.txt
@@ -149,10 +163,10 @@ In order to reverse the synchronisation between two containers, you need to remo
 >
 
 ```bash
-root@server-1:~$ swift post -H "X-Container-Sync-To:" containerGRA
-root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/GRA/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerGRA"
-root@server-1:~$ export OS_REGION_NAME=BHS
-root@server-1:~$ swift post --sync-to "$destContainer" containerBHS
+swift post -H "X-Container-Sync-To:" <source_container_name>
+export destContainer="//OVH_PUBLIC_CLOUD/GRA/AUTH_<project_id>/<source_container_name>"
+export OS_REGION_NAME=BHS
+swift post --sync-to "$destContainer" <destination_container_name>
 ```
 
 ### Stop synchronisation between two containers
@@ -160,8 +174,8 @@ root@server-1:~$ swift post --sync-to "$destContainer" containerBHS
 In order to stop synchronisation between two containers, you need to remove the `--sync-key` and `--sync-to` metadata:
 
 ```bash
-swift post -H "X-Container-Sync-Key:" containerGRA
-swift post -H "X-Container-Sync-To:" containerGRA
+swift post -H "X-Container-Sync-Key:" <source_container_name>
+swift post -H "X-Container-Sync-To:" <source_container_name>
 ```
 
 > [!primary]

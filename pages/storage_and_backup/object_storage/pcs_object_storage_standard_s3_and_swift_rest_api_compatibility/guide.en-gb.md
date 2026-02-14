@@ -29,8 +29,8 @@ This guide lists the main features of Amazon S3 **\*** that are supported.
 | HEAD Bucket | **Yes** |
 | DELETE Bucket | **Yes** |
 | List Multipart Uploads | **Yes** |
-| GET Bucket acl | **Yes** |
-| PUT Bucket acl | **Yes** |
+| GET Bucket ACL | **Yes** |
+| PUT Bucket ACL | **Yes** |
 | Versioning | **Yes** |
 | Bucket notification | No |
 | Bucket Lifecycle | No |

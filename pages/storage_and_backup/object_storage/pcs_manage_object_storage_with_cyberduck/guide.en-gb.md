@@ -8,9 +8,9 @@ updated: 2021-06-18
 
 Object Storage is a storage solution that is managed primarily through the OpenStack API.
 
-If you're not familiar with managing storage through command lines, there are some graphics solutions that use the OpenStack API for you. CyberDuck is one of these solutions and it is easy to configure.
+If you're not familiar with managing storage through the command line, there are graphical solutions that use the OpenStack API for you. Cyberduck is one of these solutions, and it is easy to configure.
 
-**This guide will explain how to configure Cyberduck to manage your Object Storage using a graphical interface based on the Openstack APIs.**
+**This guide will explain how to configure Cyberduck to manage your Object Storage using a graphical interface based on the OpenStack APIs.**
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ In case you have forgotten your OpenStack user password, you can change it by fo
 
 ## Instructions
 
-**This guide's last update is based upon version 7.9.2 of Cyberduck for MacOS.**
+**This guide's last update is based on version 7.9.2 of Cyberduck for macOS.**
 
 > [!primary]
 >

@@ -18,10 +18,12 @@ This guide shows you how to configure a domain on your container.
 ## How does it work?
 
 ### In theory
-When OpenStack Object Storage receives an HTTP request, the **"host"** header is checked. If the host header differs from the current hostname, the system treats it as a mapped record and sends a DNS request for the full hostname. If a DNS entry is found, the container, the account and the object sought are extracted and the request is rewritten. Make sure that you client is using the correction "host" header, to enable the Object Storage to handle the request.
+When OpenStack Object Storage receives an HTTP request, the **"Host"** header is checked. If the Host header differs from the current hostname, the system treats it as a mapped record and sends a DNS request for the full hostname. If a DNS entry is found, the container, the account and the requested object are extracted, and the request is rewritten.
+
+Make sure your client uses the correct **"Host"** header so that Object Storage can handle the request.
 
 ### HTTP &amp; HTTPS
-The feature works correctly with HTTP. However you will get a certificate error if you use HTTPS (as we don't have your private certificate). You can still use HTTPS, but you will get a warning in most browsers about the certificate.
+The feature works correctly with HTTP. However, you will get a certificate error if you use HTTPS (since we do not have your private certificate). You can still use HTTPS, but most browsers will display a certificate warning.
 
 ### CNAME or TXT record?
 You can only use one of these DNS records at a time:
@@ -37,7 +39,7 @@ Choose a subdomain (like "static.tuodominio.it"), add a CNAME record and then th
 To be interpreted by the Object Storage, the CNAME record must conform to some specific rules. Replace the **[VARIABLE]** in our example with the correct values:
 
 ```bash
-[CONTAINER_NAME].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
+<container_name>.auth-<project_id>.storage.<region>.cloud.ovh.net.
 ```
 
 For example, for a container named **staticct** and a project named **123xxxx456** to be used in SBG:
@@ -70,7 +72,7 @@ _swift-remap.static
 As with the CNAME, replace **[VARIABLES]** to the correct value.
 
 ```bash
-[CONTAINER_NAME].auth-[PROJECT_ID].storage.[REGION].cloud.ovh.net.
+<container_name>.auth-<project_id>.storage.<region>.cloud.ovh.net.
 ```
 
 For example, for a container named **staticct**, in project **123xxxx456** used in SBG 1:
@@ -106,7 +108,7 @@ dig storage.bhs.cloud.ovh.net
 > - [ . ]
 > - [ _ ] depending on your DNS provider
 > - Upper case
-> - Replace auth-ProjectID with auth_ProjectID
+> - Replace `auth-<project_id>` with `auth_<project_id>`
 > 
 > 
 
