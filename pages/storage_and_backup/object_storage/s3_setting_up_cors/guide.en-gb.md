@@ -59,14 +59,17 @@ The cors.json file contains the following configuration:
 {
    "CORSRules": [
         {
-            "AllowedHeaders": ["header1", "header2", etc.],
-            "AllowedMethods": ["GET", "HEAD", etc.],
-            "AllowedOrigins": ["https://<origin-domain>", etc.],
+            "AllowedHeaders": ["header1", "header2"],
+            "AllowedMethods": ["GET", "HEAD"],
+            "AllowedOrigins": ["https://<origin_domain>"],
             "ExposeHeaders": ["Access-Control-Allow-Origin"]
         }
    ]
 }
 ```
+
+Add any other headers, methods, or origins you need.
+
 #### Configuration example
 
 Let's assume you have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular, or any frontend framework) to query media files hosted in an Object Storage bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).

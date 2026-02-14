@@ -50,7 +50,7 @@ First, create a `provider.tf` file with the minimum version, the European endpoi
 
 Terraform:
 
-```bash
+```hcl
 terraform {
   required_providers {
     ovh = {
@@ -78,7 +78,7 @@ Here, we've defined the `ovh-eu` endpoint because we want to call the OVHcloud E
 
 You can create a file named `object_storage_simple.tf` and write the following:
 
-```python
+```hcl
 # Create an Object Storage bucket
 resource "ovh_cloud_project_storage" "my_bucket" {
   service_name = "<service_name>" # Replace with your OVHcloud project ID

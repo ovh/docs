@@ -30,7 +30,7 @@ An Object Storage bucket can be in one of three states:
 3. **Versioning-suspended**: Versions are not created for new objects, but existing versions are retained.
 
 > [!warning]
-> Once versioning is enabled, it cannot be disabled, it can only be suspended.
+> Once versioning is enabled, it cannot be disabled. It can only be suspended.
 
 ![Versioning States](images/versionning.png){.thumbnail}
 
