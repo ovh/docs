@@ -664,7 +664,7 @@ As a prerequisite, you must have a bucket containing data on which you want to a
 **Example**: the following configuration aims to empty a bucket after 30 days.
 
 ```bash
-$ cat lifecycle.json
+cat lifecycle.json
 {
   "Rules": [
     {
@@ -701,7 +701,7 @@ $ cat lifecycle.json
 Upload the file to the bucket:
 
 ```bash
-$ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
+aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
 ```
 
 ///
