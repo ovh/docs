@@ -102,8 +102,8 @@ To access the management interface:
 - In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
 
 The management page is organized into two tabs:
-* **All attached services**: Lists the products (Servers, Cloud Projects, etc.) currently linked to the vRack.
-* **Public IP routing**: Manages the public routing and performance of your Additional IPs.
+* **All attached services**: For the time being, it redirects to the classic vRack management page. Soon, it will list all the products (Servers, Cloud Projects, etc.) currently linked to the vRack, in a new way.
+* **Public IP routing**: Manages the public IP routing options of your vRack, including public bandwidth.
 
 To modify the public bandwidth:
 - Navigate to the `Public IP routing`{.action} tab.
