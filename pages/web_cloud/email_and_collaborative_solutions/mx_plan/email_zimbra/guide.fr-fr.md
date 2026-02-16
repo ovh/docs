@@ -45,6 +45,9 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
     - [Gestion des calendriers](#calendar-management)
     - [Tâches](#tasks)
 - [Stockage](#storage)
+    - [Ajouter un fichier](#storage-add)
+    - [Partager un fichier ou un dossier](#storage-add)
+    - [Éditer un document](#onlyoffice)
 - [Filtres](#filters)
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
@@ -472,10 +475,6 @@ Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre 
 >
 > La fonctionnalité de stockage appelée « Mallette » n'est disponible qu'à partir de l'offre Zimbra Pro.
 
-> [!warning]
->
-> L'offre Zimbra Pro est actuellement en version bêta, certaines fonctionnalités sont toujours en cours d'amélioration.
-
 Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour accéder à votre espace de stockage. Vous pourrez y déposer vos fichiers et les partager.
 
 1. Dans la colonne de gauche, vous retrouvez les dossiers de votre espace de stockage.
@@ -489,7 +488,7 @@ Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour 
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail .w-600}
 
-#### Ajouter un fichier
+#### Ajouter un fichier <a name="storage-add"></a>
 
 Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-dessous :
 
@@ -499,7 +498,7 @@ Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-des
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Partager un fichier ou un dossier
+#### Partager un fichier ou un dossier  <a name="storage-share"></a>
 
 Le partage vous permet de donner accès à un dossier ou à un fichier sur votre stockage à une personne tierce, hors de votre compte Zimbra.
 
@@ -531,6 +530,26 @@ Le partage vous permet de donner accès à un dossier ou à un fichier sur votre
 L'invité reçoit un e-mail l'invitant à créer un compte Zimbra composé d'un identifiant et d'un mot de passe. Ce compte permet d'accéder à une interface Zimbra limitée à ce qui a été partagé.
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
+
+#### Éditer un document  <a name="storage-onlyoffice"></a>
+
+> [!success]
+>
+> La fonctionnalité d'édition de documents depuis l'espace « Mallette » n'est disponible qu'à partir de l'offre Zimbra Pro.
+
+Depuis la Malette de votre compte Zimbra, il est possible d'éditer directement vos fichiers textes, tableurs ou présentations à l'aide de la suite ONLYOFFICE intégrée à votre interface. Pour éditer vos documents:
+
+- Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour accéder à votre espace de stockage.
+- Sélectionnez le fichier que vous souhaitez éditer.
+- Dans la barre supérieure, cliquez sur `Éditer`{.action}
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
+
+- L'éditeur ONLYOFFICE s'affiche dans un nouvelle onglet.
+
+![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
+
+Les modifications que vous faites dans l'éditeur sont automatiquement enregistrés pendant son édition ou lorsque vous fermer l'onglet.
 
 ### Filtres <a name="filters"></a>
 
