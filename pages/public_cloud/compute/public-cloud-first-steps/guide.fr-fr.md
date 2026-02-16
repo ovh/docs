@@ -57,7 +57,7 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
     - [Étape 4.1 : Nom de l'instance](#étape-41--nom-de-linstance)
     - [Étape 4.2 : Sélectionnez une localisation](#étape-42--sélectionnez-une-localisation)
     - [Étape 4.3 : Sélectionnez un modèle](#étape-43--sélectionnez-un-modèle)
-    - [Informations complémentaires](#informations-complémentaires)
+      - [Informations complémentaires](#informations-complémentaires)
     - [Étape 4.4 : Sélectionnez une image](#étape-44--sélectionnez-une-image)
     - [Étape 4.5 : Sélection d’une clé SSH (non applicable aux instances Windows)](#étape-45--sélection-dune-clé-ssh-non-applicable-aux-instances-windows)
     - [Étape 4.6 : Configurez les paramètres de sauvegarde](#étape-46--configurez-les-paramètres-de-sauvegarde)
@@ -65,7 +65,6 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
     - [Étape 4.8 : Sélectionnez une période de facturation](#étape-48--sélectionnez-une-période-de-facturation)
     - [Étape 4.9 : Configurez les paramètres avancés](#étape-49--configurez-les-paramètres-avancés)
     - [Étape 4.10 : Finalisation de votre instance](#étape-410--finalisation-de-votre-instance)
-    - [Étape 4.6 : Sélectionnez une période de facturation](#étape-46--sélectionnez-une-période-de-facturation)
   - [Étape 5 : Se connecter à l'instance](#étape-5--se-connecter-à-linstance)
     - [5.1 : Vérifier l'état de l'instance dans l'espace client](#51--vérifier-létat-de-linstance-dans-lespace-client)
     - [5.2 : Première connexion sur une instance sous OS GNU/Linux](#52--première-connexion-sur-une-instance-sous-os-gnulinux)
@@ -88,15 +87,13 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 > **Exception** : l'authentification de connexion sur les instances Windows nécessite un nom d'utilisateur et un mot de passe car Windows utilise RDP (**R**emote **D**esktop **P**rotocol).
 >
 
-<a name="create-ssh"></a>
-
 ### Étape 1 : créer un jeu de clés SSH
 
 Si vous disposez déjà d'une paire de clés SSH prête à l'emploi, vous pouvez ignorer cette étape.
 
 Le [protocole SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) permet une communication client-serveur cryptée. Une **paire de clés SSH** se compose d'une clé publique et d'une clé privée.
 
-- La **clé publique** est ajoutée à votre instance Public Cloud (et peut également être [stockée dans votre espace client OVHcloud](#import-ssh)).
+- La **clé publique** est ajoutée à votre instance Public Cloud (et peut également être [stockée dans votre espace client OVHcloud](#étape-2--importer-les-clés-ssh)).
 - La **clé privée** est stockée sur votre équipement local et doit être sécurisée contre tout accès non autorisé. Seuls les périphériques clients avec la clé privée correspondante peuvent accéder à votre instance. Aucun mot de passe de compte d'utilisateur n'est requis pour la connexion.
 
 Vous disposez de 2 options pour créer et gérer vos clés SSH :
@@ -107,8 +104,6 @@ Vous disposez de 2 options pour créer et gérer vos clés SSH :
 La plupart des systèmes d'exploitation de bureau contemporains incluent nativement le client **OpenSSH** accessible via l'application de ligne de commande du système (`cmd`, `Powershell`, `Terminal`, etc.). Si vous n'êtes pas familier avec l'utilisation des clés SSH comme méthode d'authentification, vous pouvez utiliser les instructions de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) pour créer votre paire de clés.
 
 Si vous utilisez un autre logiciel, reportez-vous à sa documentation utilisateur. Les instructions pour la solution open source `PuTTY` sont disponibles dans [ce guide](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
-
-<a name="import-ssh"></a>
 
 ### Étape 2 : Importer les clés SSH
 
@@ -129,19 +124,17 @@ Ouvrez `Clés SSH`{.action} dans le menu de gauche sous **Paramètres**. Cliquez
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
-Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé` avec votre chaîne de clé publique, par exemple celle créée à l'[étape 1](#create-ssh). Confirmez en cliquant sur `Ajouter`{.action}.
+Dans la nouvelle fenêtre, entrez un nom pour la clé. Remplissez le champ `Clé` avec votre chaîne de clé publique, par exemple celle créée à l'[étape 1](#étape-1--créer-un-jeu-de-clés-ssh). Confirmez en cliquant sur `Ajouter`{.action}.
 
 ![add key](images/24-addkey.png){.thumbnail}
 
-Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#create-instance) pour l'ajouter à une nouvelle instance.
-
-<a name="network"></a>
+Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#étape-4--créer-linstance) pour l'ajouter à une nouvelle instance.
 
 ### Étape 3 : préparer la configuration réseau
 
 Avant de créer votre instance, nous vous recommandons d'étudier la manière dont l'instance sera utilisée en termes de mise en réseau.
 
-- Si vous n'avez pas besoin de configurer l'instance avec un réseau privé pour le moment, vous pouvez passer à l'[étape 4](#create-instance). Vous pouvez créer une instance exposée à l'Internet public (voir le **Mode Public** [ci-dessous](#networking-modes).)
+- Si vous n'avez pas besoin de configurer l'instance avec un réseau privé pour le moment, vous pouvez passer à l'[étape 4](#étape-4--créer-linstance). Vous pouvez créer une instance exposée à l'Internet public (voir le **Mode Public** [ci-dessous](#networking-modes).)
 - Si l'instance doit être connectée à un nouveau réseau privé (OVHcloud [vRack](/links/network/vrack)), **créez d'abord votre vRack** avant de continuer. Retrouvez les détails dans le [guide sur le vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
@@ -166,26 +159,18 @@ Pour en savoir plus, consultez la [page web des Local Zones](/links/public-cloud
 
 ///
 
-<a name="create-instance"></a>
-
 ### Étape 4 : créer l'instance
 
 > [!primary]
 >
 > Une clé SSH publique est obligatoire lors de la création d'une instance dans l'espace client OVHcloud (à l'exception des instances Windows).
 >
-> Reportez-vous à l'[étape 1](#create-ssh) et l'[étape 2](#import-ssh) de ce guide si vous n'avez pas de clés SSH prêtes à l'emploi.
+> Reportez-vous à l'[étape 1](#étape-1--créer-un-jeu-de-clés-ssh) et l'[étape 2](#étape-2--importer-les-clés-ssh) de ce guide si vous n'avez pas de clés SSH prêtes à l'emploi.
 >
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
-
-Sur la page « **Accueil** », cliquez sur `Créer une instance`{.action}.
-
-![instance creation](images/24-instance-creation01.png){.thumbnail}
-
-<a name="model"></a>
+Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
 
 #### Étape 4.1 : Nom de l'instance
 
@@ -197,15 +182,11 @@ Sélectionnez une [région](/links/public-cloud/regions-pci) la plus proche de v
 
 Reportez-vous également aux informations de la [page web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
-![sélection de région](images/24-instance-creation03.png){.thumbnail}
-
 #### Étape 4.3 : Sélectionnez un modèle
 
 À cette étape, vous choisissez le modèle d’instance (également appelé flavour), qui détermine les ressources allouées à votre instance : processeur, mémoire et capacités associées. Ouvrez la liste déroulante `Modèle de l'instance`, puis sélectionnez le type de modèle le plus adapté à votre cas d’usage afin d’accéder à notre gamme d’instances optimisées.
 
-![instance model](images/24-instance-creation02.png){.thumbnail}
-
-Le type de modèle `Découverte`{.action} regroupe des instances à ressources partagées, proposées à des tarifs compétitifs. Elles sont particulièrement adaptées pour découvrir le Public Cloud OVHcloud, réaliser des tests, ou héberger des charges de travail légères comme des applications web.
+Le type de modèle `Découverte` regroupe des instances à ressources partagées, proposées à des tarifs compétitifs. Elles sont particulièrement adaptées pour découvrir le Public Cloud OVHcloud, réaliser des tests, ou héberger des charges de travail légères comme des applications web.
 
 Les modèles d’instance Metal{.action} offrent quant à eux des ressources physiques entièrement dédiées, garantissant des performances constantes et une isolation maximale pour les workloads les plus exigeants.
 
@@ -216,7 +197,7 @@ Les modèles d’instance Metal{.action} offrent quant à eux des ressources phy
 > Notez que vous pouvez **mettre à niveau** votre instance après sa création pour avoir plus de ressources disponibles. Le passage à un modèle plus petit n'est cependant pas possible avec une instance régulière. Vous trouverez plus d'informations sur ce sujet à l'**étape 4.4** ci-dessous.
 >
 
-#### Informations complémentaires
+##### Informations complémentaires
 
 /// details | Catégories de modèles d'instance
 
@@ -245,13 +226,9 @@ Les Local Zones sont une extension des **régions** qui rapprochent les services
 
 ///
 
-<a name="region"></a>
-
 #### Étape 4.4 : Sélectionnez une image
 
 Ouvrez la liste déroulante `Type de distribution`, sélectionnez la catégorie correspondant à votre besoin, puis choisissez le `système d’exploitation` à déployer sur votre instance à l’aide du menu déroulant `Version de l'image`.
-
-![image selection](images/24-instance-creation04.png){.thumbnail}
 
 Les images disponibles à cette étape dépendent des choix opérés lors des étapes précédentes, c'est-à-dire de la compatibilité avec le modèle d'instance et de la disponibilité régionale. Par exemple, si vous souhaitez sélectionner un système d'exploitation Windows et qu'il n'y a pas d'options dans l'onglet Windows, vous devez modifier vos choix des étapes précédentes.
 
@@ -272,16 +249,15 @@ Cliquez sur les onglets ci-dessous pour afficher leur présentation :
 > [!tabs]
 > **Utiliser une clé stockée**
 >>
->> Pour ajouter une clé stockée dans votre espace client OVHcloud (voir [Étape 2](#import-ssh)), sélectionnez-la dans la liste.<br><br>
->>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
+>> Pour ajouter une clé stockée dans votre espace client OVHcloud (voir [Étape 2](#étape-2--importer-les-clés-ssh)), sélectionnez-la dans la liste.
 >>
 > **Saisir directement une clé**
 >>
->> Pour ajouter une clé publique en collant la chaîne de clé, cliquez sur le bouton `Ajouter une clé`{.action}.<br><br>
->>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
->> Entrez un nom pour la clé et la chaîne de clé dans les champs respectifs. Cliquez ensuite sur `Suivant`{.action}.<br><br>
->>![key selection](images/24-instance-creation07.png){.thumbnail}<br>
->> Avant de cliquer sur `Suivant`{.action}, vous pouvez faire le choix d'utiliser le bouton `Ajouter une clé`{.action} pour stocker cette clé dans votre espace client OVHcloud (voir l'[étape 2](#import-ssh) pour plus de détails).
+>> Pour ajouter une clé publique en collant la chaîne de clé, cliquez sur le bouton `Ajouter une clé`{.action}.
+>>
+>> Entrez un nom pour la clé et la chaîne de clé dans les champs respectifs. Cliquez ensuite sur `Suivant`{.action}.
+>>
+>> Avant de cliquer sur `Suivant`{.action}, vous pouvez faire le choix d'utiliser le bouton `Ajouter une clé`{.action} pour stocker cette clé dans votre espace client OVHcloud (voir l'[étape 2](#étape-2--importer-les-clés-ssh) pour plus de détails).
 >>
 
 #### Étape 4.6 : Configurez les paramètres de sauvegarde
@@ -323,8 +299,6 @@ Vous pouvez activer ou désactiver cette fonctionnalité selon vos besoins. Si v
 
 #### Étape 4.8 : Sélectionnez une période de facturation
 
-![mode de facturation](images/24-instance-creation14.png){.thumbnail}
-
 > [!primary]
 >
 > Veuillez noter que, selon le modèle d’instance choisi, la facturation **horaire** peut être la seule sélection affichée. Il s’agit d’une limitation temporaire, de nouvelles options de facturation de Public Cloud seront bientôt disponibles.
@@ -333,11 +307,12 @@ Vous pouvez activer ou désactiver cette fonctionnalité selon vos besoins. Si v
 > [!tabs]
 > **Facturation mensuelle**
 >>
->> La facturation mensuelle entraînera une baisse des coûts au fil du temps, mais **ne peut pas être changé** en facturation à l'heure une fois l'instance créée.<br>
+>> La facturation mensuelle entraînera une baisse des coûts au fil du temps, mais **ne peut pas être changé** en facturation à l'heure une fois l'instance créée.
 >>
 > **Facturation à l’heure**
 >>
->> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
+>> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+>>
 >> L'instance sera facturée tant qu'elle n'est **pas supprimée**, quelle que soit l'utilisation réelle de l'instance.
 >>
 
@@ -356,39 +331,12 @@ Vous pouvez ajouter [votre script de post-installation](/pages/public_cloud/comp
 
 Sur le côté droit de votre écran , se trouve le récapitulatif de votre configuration. Dans cette section vous pourrez configurer le nombre d'instances à créer. Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront
 
-![instance select](images/24-instance-creation08.png){.thumbnail}
-
 Cette étape offre plusieurs options de configuration. Cliquez sur les onglets ci-dessous pour afficher les détails :
 
 > **2 : Instance flexible**
 >>
->> Si le modèle sélectionné est compatible, vous pouvez choisir de créer une **instance Flex**. Cette option vous permet d’effectuer une mise à niveau vers un modèle plus petit (et même de passer à une autre catégorie de modèle), mais elle limite l’instance à **50 Go de stockage inclus fixes**, quelles que soient les autres mises à niveau ou rétrogradations.<br>
+>> Si le modèle sélectionné est compatible, vous pouvez choisir de créer une **instance Flex**. Cette option vous permet d’effectuer une mise à niveau vers un modèle plus petit (et même de passer à une autre catégorie de modèle), mais elle limite l’instance à **50 Go de stockage inclus fixes**, quelles que soient les autres mises à niveau ou rétrogradations.
 >>
-
-#### Étape 4.6 : Sélectionnez une période de facturation
-
-![mode de facturation](images/24-instance-creation14.png){.thumbnail}
-
-> [!primary]
->
-> Veuillez noter que, selon le modèle d’instance choisi, la facturation **horaire** peut être la seule sélection affichée. Il s’agit d’une limitation temporaire, de nouvelles options de facturation de Public Cloud seront bientôt disponibles.
->
-
-> [!tabs]
-> **Facturation mensuelle**
->>
->> La facturation mensuelle entraînera une baisse des coûts au fil du temps, mais **ne peut pas être changé** en facturation à l'heure une fois l'instance créée.<br>
->>
-> **Facturation à l’heure**
->>
->> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
->> L'instance sera facturée tant qu'elle n'est **pas supprimée**, quelle que soit l'utilisation réelle de l'instance.
->>
-
-Retrouvez les détails dans notre documentation de facturation dédiée :
-
-- [Facturation du Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
-- [FAQ sur la facturation mensuelle](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
 
 Une fois la configuration de votre instance terminée, cliquez sur le bouton `Créer une instance`{.action}. La livraison de votre service peut prendre quelques minutes.
 
@@ -398,15 +346,13 @@ Les instructions de cette partie concernent les connexions à distance au moyen 
 
 Notez que nous proposons des moyens d'accès alternatifs (principalement utilisés pour le dépannage) qui ne sont disponibles que via votre espace client OVHcloud :
 
-- [Console VNC](#vnc-console)
+- [Console VNC](#54--accès-console-vnc)
 - [Mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
 
 > [!primary]
 >
 > Si vous avez installé un **OS avec application**, reportez-vous à notre [guide sur les premiers pas avec les applications](/pages/public_cloud/compute/apps_first_steps) ainsi qu'à la documentation officielle de l'éditeur de l'OS.
 >
-
-<a name="verify-status"></a>
 
 #### 5.1 : Vérifier l'état de l'instance dans l'espace client
 
@@ -424,16 +370,14 @@ Un **utilisateur avec des droits élevés (*sudo*) est automatiquement créé** 
 
 ![page instances](images/24-instance-connect02.png){.thumbnail}
 
-Si votre [paire de clés SSH est correctement configurée](#create-ssh), vous pouvez maintenant vous connecter à l'instance avec l'utilisateur préconfiguré et votre clé SSH. Vous trouverez des instructions plus détaillées dans les paragraphes suivants.
+Si votre [paire de clés SSH est correctement configurée](#étape-1--créer-un-jeu-de-clés-ssh), vous pouvez maintenant vous connecter à l'instance avec l'utilisateur préconfiguré et votre clé SSH. Vous trouverez des instructions plus détaillées dans les paragraphes suivants.
 
 > [!primary]
 >
-> L'accès via la **console VNC** sur une nouvelle instance OS GNU/Linux créée dans l'espace client doit d'abord être activé comme décrit dans la [section du guide ci-dessous](#vnc-console).
+> L'accès via la **console VNC** sur une nouvelle instance OS GNU/Linux créée dans l'espace client doit d'abord être activé comme décrit dans la [section du guide ci-dessous](#54--accès-console-vnc).
 >
 > Ce guide ne couvre pas le réseau privé pour les instances. Veuillez consulter notre documentation [Public Cloud Network Services](/products/public-cloud-network) à ce sujet.
 >
-
-<a name="login-linux"></a>
 
 #### 5.2 : Première connexion sur une instance sous OS GNU/Linux
 
@@ -457,19 +401,17 @@ Exemple :
 ssh ubuntu@203.0.113.101
 ```
 
-[En fonction de votre configuration](#create-ssh), vous devrez entrer une phrase secrète qui protège votre clé privée ou spécifier le chemin d'accès à votre fichier de clé. Consultez notre [guide des clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) pour des informations détaillées sur ce sujet.
+[En fonction de votre configuration](#étape-1--créer-un-jeu-de-clés-ssh), vous devrez entrer une phrase secrète qui protège votre clé privée ou spécifier le chemin d'accès à votre fichier de clé. Consultez notre [guide des clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) pour des informations détaillées sur ce sujet.
 
 Si vous utilisez un autre logiciel client SSH, reportez-vous à sa documentation utilisateur. Un exemple d'utilisation de la solution open source `PuTTY` est disponible dans [ce guide](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
-Poursuivez à l'[étape 6 ci-dessous](#manage-access).
-
-<a name="windows"></a>
+Poursuivez à l'[étape 6 ci-dessous](étape-6--premiers-pas-sur-une-nouvelle-instance).
 
 #### 5.3 : instances Windows
 
 ##### 5.3.1 : Terminer l'installation d'une instance Windows
 
-Après avoir vérifié que l'instance Windows est [installée](#verify-status), ouvrez l'onglet `Console VNC`{.action} dans votre [espace client OVHcloud](/links/manager).
+Après avoir vérifié que l'instance Windows est [installée](#51--vérifier-létat-de-linstance-dans-lespace-client), ouvrez l'onglet `Console VNC`{.action} dans votre [espace client OVHcloud](/links/manager).
 
 Il vous faudra ensuite finaliser la configuration initiale de votre système d’exploitation Windows. Suivez les étapes ci-dessous en parcourant les onglets :
 
@@ -495,8 +437,6 @@ Il vous faudra ensuite finaliser la configuration initiale de votre système d�
 >>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
 
-<a name="login-windows"></a>
-
 ##### 5.3.2 : Connectez-vous à distance depuis Windows
 
 Sur votre poste Windows local, vous pouvez utiliser l'application cliente `Remote Desktop Connection` pour vous connecter à votre instance.
@@ -509,8 +449,6 @@ Renseignez l'adresse IPv4 de votre instance, puis votre identifiant et votre pas
 >
 > Si vous rencontrez des difficultés avec cette procédure, vérifiez que les connexions à distance (RDP) sont autorisées sur votre appareil en vérifiant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
 >
-
-<a name="login-other"></a>
 
 ##### 5.3.3 : Se connecter à distance depuis un autre OS
 
@@ -541,8 +479,6 @@ Le logiciel libre et open source `Remmina Remote Desktop Client` est disponible 
 >>![linux remote](images/24-rem-connect04.png){.thumbnail}
 >>
 
-<a name="vnc-console"></a>
-
 #### 5.4 : accès console VNC
 
 La console VNC vous permet de vous connecter à vos instances même lorsque d'autres moyens d'accès ne sont pas disponibles.
@@ -558,14 +494,12 @@ Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **
 > [!tabs]
 > **Instance avec un OS GNU/Linux installé**
 >>
->> Un compte utilisateur **avec un mot de passe** doit être configuré sur l'instance pour utiliser la console VNC. Pour définir un mot de passe pour le compte préconfiguré, suivez les étapes de [section 6.1.1 ci-dessous](#set-password).
+>> Un compte utilisateur **avec un mot de passe** doit être configuré sur l'instance pour utiliser la console VNC. Pour définir un mot de passe pour le compte préconfiguré, suivez les étapes de [section 6.1.1 ci-dessous](#611--définissez-un-mot-de-passe-pour-le-compte-dutilisateur-actuel).
 >>
 > **Instance Windows**
 >>
 >> Connectez-vous avec vos identifiants Windows. En cas de session active, vous disposez d'un accès immédiat. Il y aura une latence notable par rapport à une connexion RDP.
 >>
-
-<a name="manage-access"></a>
 
 ### Étape 6 : premiers pas sur une nouvelle instance
 
@@ -575,14 +509,10 @@ Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **
 >
 > Aucune étape supplémentaire n’est requise pour les instances sur lesquelles un système d’exploitation Windows est installé.
 >
-> Retrouvez plus d’informations dans la section [Aller plus loin](#go-further) ci-dessous.
+> Retrouvez plus d’informations dans la section [Aller plus loin](#aller-plus-loin) ci-dessous.
 >
 
-<a name="user-mgmt"></a>
-
 #### 6.1 : Gestion des utilisateurs
-
-<a name="set-password"></a>
 
 > [!primary]
 >
@@ -591,7 +521,7 @@ Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **
 
 ##### 6.1.1 : Définissez un mot de passe pour le compte d'utilisateur actuel
 
-Lors de la [connexion à votre instance](#manage-access), définissez un mot de passe pour l'utilisateur actuel en entrant cette commande :
+Lors de la [connexion à votre instance](#étape-6--premiers-pas-sur-une-nouvelle-instance), définissez un mot de passe pour l'utilisateur actuel en entrant cette commande :
 
 ```bash
 sudo passwd
@@ -605,7 +535,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-**C'est suffisant pour activer les logins via la [console VNC](#vnc-console) dans votre [espace client OVHcloud](/links/manager)**. Les connexions SSH distantes avec ce mot de passe sont cependant toujours **désactivées** par défaut.
+**C'est suffisant pour activer les logins via la [console VNC](#54--accès-console-vnc) dans votre [espace client OVHcloud](/links/manager)**. Les connexions SSH distantes avec ce mot de passe sont cependant toujours **désactivées** par défaut.
 
 <a name="remote-password"></a>
 
@@ -618,7 +548,7 @@ passwd: password updated successfully
 > L'exemple suivant illustre une solution temporaire sur une instance sur laquelle Ubuntu est installé. Notez que vous devrez peut-être ajuster les commandes en fonction de votre système d'exploitation. Il n'est pas recommandé de conserver cette configuration en permanence car elle ajoute un risque potentiel de sécurité en ouvrant le système aux attaques basées sur SSH.
 >
 
-Une fois [connecté à votre instance](#manage-access), ouvrez le fichier de configuration concerné avec un éditeur de texte. Exemple :
+Une fois [connecté à votre instance](#étape-6--premiers-pas-sur-une-nouvelle-instance), ouvrez le fichier de configuration concerné avec un éditeur de texte. Exemple :
 
 ```bash
 sudo nano /etc/ssh/sshd_config
