@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Databases - Comment migrer vos bases de données à OVHcloud DBaaS"
+title: Migrer vers les bases de données Public Cloud OVHcloud
 excerpt: "Découvrez comment transférer vos bases de données vers OVHcloud via un dump et restore ou une migration PostgreSQL en direct"
 updated: 2025-09-03
 ---

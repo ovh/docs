@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Tutorial - How to deploy a database with Terraform
+title: Deploy with Terraform for Public Cloud for MongoDB
 excerpt: Find out how to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.
 updated: 2024-04-17
 ---

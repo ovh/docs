@@ -4,11 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre per
 updated: 2025-05-22
 ---
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/DItXnvw)
-
 ## Ziel
 
 Ihre Dienste und Daten werden hauptsächlich über das OVHcloud Kundencenter verwaltet.

@@ -1,5 +1,5 @@
 ---
-title: MySQL - Configure your MySQL instance to accept incoming connections
+title: Configure incoming connections of a Public Cloud Databases for MySQL service
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
 updated: 2025-05-19
 ---

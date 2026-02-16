@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: "Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig"
-updated: 2025-10-27
+updated: 2025-12-15
 ---
 
 ## Objective
@@ -93,7 +93,7 @@ Some PHP versions only work with certain runtime environments. Below are the PHP
 |---|---|
 |5.4, 5.5, 5.6, and 7.0|Legacy, Stable|
 |7.1, 7.2, and 7.3|Stable|
-|7.4, 8.0, 8.1,8.2 and 8.3|stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 and 8.5|stable64|
 
 > [!primary]
 >

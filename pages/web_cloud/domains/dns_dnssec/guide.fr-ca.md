@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser votre nom de domaine avec DNSSEC'
 excerpt: 'Découvrez comment protéger votre nom de domaine du Cache Poisoning en activant le DNSSEC'
-updated: 2025-03-04
+updated: 2026-02-10
 ---
 
 ## Objectif 
@@ -105,7 +105,7 @@ Pour activer (ou désactiver) la solution **DNSSEC** pour votre nom de domaine, 
 
 ### Cas n°2 - Votre nom de domaine est enregistré chez OVHcloud et n'utilise pas les serveurs DNS d'OVHcloud
 
-Dans cette situation, rapprochez-vous du prestataire gérant la configuration DNS de votre nom de domaine pour lui demander les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithm » / « Clé publique (encodée en base64) »).
+Dans cette situation, rapprochez-vous du prestataire gérant la configuration DNS de votre nom de domaine pour lui demander les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithme » / « Clé publique (encodée en base64) »).
 
 Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **5** étapes.
 
@@ -128,11 +128,11 @@ Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous afin
 >>
 > **Etape 4**
 >>
->> Dans la nouvelle page qui apparaît, cliquez sur le bouton `Modifier`{.action} à droite, puis sur le bouton `+`{.action}.
+>> Dans la nouvelle page qui apparaît, cliquez sur le bouton `Ajouter`{.action}.
 >>
 > **Etape 5**
 >>
->> Renseignez les 4 formulaires `Key Tag`, `Flag`, `Algorithm` et `Clé publique (encodée en base64)` avec les données communiquées par votre prestataire actuel.
+>> Renseignez les 4 formulaires `Key Tag`, `Flag`, `Algorithme` et `Clé publique (encodée en base64)` avec les données communiquées par votre prestataire actuel.
 >>
 >> ![DS records](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 >>
@@ -144,7 +144,7 @@ Une fois ces 4 paramètres récupérés, cliquez sur les onglets ci-dessous afin
 >
 > Avant de poursuivre, assurez-vous auprès du bureau d'enregistrement actuel de votre nom de domaine qu'aucune option DNSSEC n'est déjà active pour celui-ci.
 
-A l'inverse du **cas n°2**, vous devrez ici récupérer côté OVHcloud les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithm » / « Clé publique (encodée en base64) »).
+A l'inverse du **cas n°2**, vous devrez ici récupérer côté OVHcloud les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithme » / « Clé publique (encodée en base64) »).
 
 Pour cela, vous devez utiliser les [API OVHcloud](/pages/manage_and_operate/api/first-steps) et effectuer les actions suivantes : 
 
@@ -172,7 +172,7 @@ Pour cela, vous devez utiliser les [API OVHcloud](/pages/manage_and_operate/api/
 Une fois le formulaire rempli, cliquez sur le bouton bleu `EXECUTE`{.action} situé en bas à droite de la section préalablement remplie.
 
 Au bout de quelques minutes, vous recevrez un e-mail d'OVHcloud à l'adresse e-mail de contact de votre zone DNS OVHcloud.
-Cet e-mail contiendra les 4 paramètres (« Key Tag » / « Flag » / « Algorithm » / « Clé publique (encodée en base64) ») nécessaires pour activer le DNSSEC auprès du bureau d'enregistrement de votre nom de domaine.
+Cet e-mail contiendra les 4 paramètres (« Key Tag » / « Flag » / « Algorithme » / « Clé publique (encodée en base64) ») nécessaires pour activer le DNSSEC auprès du bureau d'enregistrement de votre nom de domaine.
 
 > [!success]
 >

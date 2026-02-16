@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2025-10-27
+updated: 2025-12-15
 ---
 
 ## Ziel
@@ -93,7 +93,7 @@ Einige PHP-Versionen funktionieren nur in bestimmten Laufzeitumgebungen. Nachfol
 |---|---|
 |5.4, 5.5, 5.6 und 7.0|Legacy, Stable|
 |7.1, 7.2 und 7.3|Stable|
-|7.4, 8.0, 8.1, 8.2 und 8.3|Stable64|
+|7.4, 8.0, 8.1, 8.2, 8.3, 8.4 und 8.5|Stable64|
 
 > [!primary]
 >

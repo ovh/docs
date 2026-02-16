@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS einer Public Cloud Instanz konfigurieren
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer Public Cloud Instanz bearbeiten
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Ziel
@@ -22,19 +22,19 @@ Die Konfiguration der umgekehrten DNS-Auflösung für eine Public Cloud Instanz 
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Network`{.action} und klicken Sie dann auf `Öffentlichen IP-Adressen`{.action}.
 
-Im Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorien filtern.
+Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorie filtern. Sie können auch in der Suchleiste links neben dem Dropdown-Menü nach einer bestimmten IP-Adresse suchen. 
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Klicken Sie auf `...`{.action} in der Zeile der betreffenden IP-Adresse und wählen Sie dann `Reverse ändern`{.action} aus.
+Klicken Sie auf die Schaltfläche `⁝`{.action} in der Zeile der betreffenden IP-Adresse und wählen Sie `Reverse DNS konfigurieren`{.action}.
 
-![Reverse DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-Geben Sie Ihren Reverse-Pfad im neuen Fenster ein und klicken Sie auf `Bestätigen`{.action}.
+Geben Sie im neuen Fenster Ihren Reverse-Pfad ein und klicken Sie auf `Bestätigen`{.action}.
 
-![Reverse DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Reverse**" der Tabelle editieren.
+Sie können den Reverse-Pfad auch direkt über das Symbol `Bleistift`{.action} in der Spalte **Reverse DNS** der Tabelle bearbeiten.
 
 > [!primary]
 >

@@ -73,7 +73,7 @@ En souscrivant à un Savings PLan pour Rancher, vous vous engagez à utiliser un
 >
 > Les Savings Plans pour Managed Rancher Service ne s'appliquent qu'aux vCPU. Les autres ressources, telles que le stockage, les instances et les autres services, ne sont pas couvertes par ce Savings Plan et seront toujours facturées séparément. Veillez à prendre en compte ces coûts supplémentaires lors de la planification de vos ressources Rancher.
 >
-> Pour que les vCPU inclus dans votre Savings Plan soient consommés, il est impératif d'attribuer une instance à vos noeuds Kubernetes. Sans instance configurée, les ressources couvertes par le Savings Plan resteront inutilisées, et vous continuerez à payer pour ces ressources non consommées. Assurez-vous de bien dimensionner vos instances pour qu'elles correspondent à vos besoins en vCPU et RAM.
+> Pour que les vCPU inclus dans votre Savings Plan soient consommés, il est impératif d'attribuer une instance à vos nœuds Kubernetes. Sans instance configurée, les ressources couvertes par le Savings Plan resteront inutilisées, et vous continuerez à payer pour ces ressources non consommées. Assurez-vous de bien dimensionner vos instances pour qu'elles correspondent à vos besoins en vCPU et RAM.
 >
 
 ### Eligible / compatible services

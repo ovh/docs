@@ -64,7 +64,7 @@ apt-get install apache2 mariadb-server php libapache2-mod-php php-mysql php-bz2 
 #### Step 2: Complete the secure installation of MariaDB
 
 ```sh
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 #### Step 3: Download ownCloud

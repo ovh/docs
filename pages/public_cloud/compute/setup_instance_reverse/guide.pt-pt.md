@@ -1,12 +1,8 @@
 ---
 title: "Configurar a reverse DNS de uma instância Public Cloud"
 excerpt: Saiba como implementar a resolução reverse DNS
-updated: 2025-04-28
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -26,19 +22,19 @@ Configurar a resolução **Reverse DNS** de uma instância é particularmente ú
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Network`{.action} e clique em `Endereços IP públicos`{.action}.
 
-O menu suspenso em **Meus endereços IP públicos e serviços associados** permite filtrar os serviços por categoria.
+O menu suspenso em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria. Também pode pesquisar um endereço IP específico através da barra de pesquisa localizada à esquerda do menu suspenso.
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Clique em `...`{.action} na linha do endereço IP em causa e selecione `Alterar a reverse`{.action}.
+Clique em `⁝`{.action} na linha do endereço IP em questão e selecione `Configurar o reverse DNS`{.action}.
 
-![Reverse DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-Na nova janela, introduza a sua reverse e clique em `Confirmar`{.action}.
+Na nova janela, insira o seu reverse e clique em `Confirmar`{.action}.
 
-![Reverse DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-Também pode editar a reverse diretamente através do ícone da coluna **Reverse** da tabela.
+Você também pode editar o reverse diretamente através do ícone `lápis`{.action} na coluna **Reverse DNS** da tabela.
 
 > [!primary]
 >

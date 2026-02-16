@@ -1,26 +1,22 @@
 ---
 title: OVHcloud AntySpam - Dobre praktyki i odblokowanie adresu IP
 excerpt: Poznaj nasze dobre praktyki antyspamowe i sposoby odblokowania adresu IP zablokowanego przez SPAM
-updated: 2025-04-28
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Dla każdego adresu IP dostępnego w produktach i usługach OVHcloud, będącego Dostawcą dostępu do Internetu, zapisujemy go i zarezerwujemy dla organizacji takich jak [RIPE](https://www.ripe.net/) lub [ARIN](https://www.arin.net/). W tym przypadku, w przypadku sporów w bazie danych *WHOIS*, wydajemy się *nadużywać* prawa własności intelektualnej.
+Dla każdej IP dostępnej z OVHcloud produkty i usługi, jako dostawca usług internetowych, zarejestrujemy i zarezerwujemy ją z organizacjami takimi jak [RIPE](https://www.ripe.net/) lub [ARIN](https://www.arin.net/). Oznacza to, że pojawiamy się jako kontakt do nadużyć IP w bazie danych WHOIS.
 
-Jeśli dany Destination IP zostanie zgłoszony do organizacji takich jak Spamhaus, SpamCop, itp., które walczą ze SPAM, złośliwymi stronami i phishingiem, stawką jest reputacja całej sieci OVHcloud.
+Jeśli IP zostanie zgłoszona do organizacji takich jak Spamhaus i SpamCop, które działają przeciw SPAMowi, złośliwym witrynom i phishingowi, to reputacja całej sieci OVHcloud jest zagrożona.
 
-OVHcloud musi zatem dbać o reputację, jakość i bezpieczeństwo sieci, co jest również ważną częścią Twojej usługi.
+Dlatego ważne jest, aby OVHcloud dbał o reputację, jakość i bezpieczeństwo sieci, co stanowi również ważną część Twojej usługi.
 
 ### Jak działa system ochrony?
 
 Nasz system opiera się na technologii antyspamowej Vade Secure.
 
-Po zablokowaniu adresu IP ze względu na SPAM, otrzymasz e-mail z informacjami, jak pokazano w poniższym przykładzie:
+Gdy IP zostanie "zablokowana z powodu SPAMU", zostanie wysłana wiadomość e-mail do Twojego konta zawierająca informacje jak poniżej:
 
 > 
 > Drogi Kliencie,
@@ -31,18 +27,18 @@ Po zablokowaniu adresu IP ze względu na SPAM, otrzymasz e-mail z informacjami, 
 > Aby zapewnić bezpieczeństwo naszej sieci, ruch wychodzący z Twojego serwera na port 25 został zawieszony.
 > Poniżej znajduje się próbka zablokowanych e-maili, aby móc przeprowadzić weryfikację:
 >
-> Destination IP: 188.95.235.33 - Wiadomość-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score 300 <br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score 300<br>
-> Destination IP: 188.95.235.33 - Wiadomość-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score 300
+> Destination IP: 188.95.235.33 - Message-ID: d24aa492-5f37-457f-9595-23ddc9e0f714@xxxxxxxxxxxxx.xx.local - Spam score 300 <br>
+> Destination IP: 188.95.235.33 - Message-ID: fc090jdhf934iu09bf084bfo92@xxxxxxxxxxxxx.com - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: P0hbfo93407684bfoqljrlqvpLatS3RRB9rZw7e8s@xxxxxxxxxxxx.online - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: 6ZUnls843bnf0934StxFasYGmhtDJRo@xxxxxxxxxxxx.online - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da3kdfkl45802n0c0q98rqcc57e3b8aadfac63b2c408e3f5f9a27.1d44jkgnddfef.166489320375@xxxxxx.xxxx.net - Spam score 300<br>
+> Destination IP: 188.95.235.33 - Message-ID: zcb.3z54da33hn98v9bcq-nrf3r67cc57e3b8aadfac63b2c408e3f5f9a27.1d44jd9340252.1655508652095@xxxxxx.xxxx.net - Spam score 300
 > <br>
 > <br>
 
-## W praktyce
+## Wymagania początkowe
 
-**Co zrobić, gdy otrzymasz e-mail z alertem?**
+**Co zrobić po otrzymaniu alertu e-mail?**
 
 Proces ten obejmuje identyfikację problemu, jego rozwiązanie, a następnie odblokowanie adresu IP.
 
@@ -62,42 +58,44 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 > W żadnym przypadku nie odblokuj adresu IP, zanim nie zawiesisz wysyłki e-maili z Twojego serwera i nie odblokuj kolejki wiadomości. W przeciwnym razie po raz drugi zostanie zablokowany na dłuższy czas. 
 >
 
-### Odblokuj adres IP
+### Odblokuj swoje IP
 
-#### Odblokuj adres IP w Panelu klienta
+#### Odblokowanie IP z Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
-Jeśli jeden z Twoich adresów IP dotyczy alertu, informacje zostaną wyświetlone poniżej:
+Możesz użyć menu rozwijanego pod **Moje publiczne adresy IP i usługi powiązane**, aby filtrować swoje usługi według kategorii, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 
-![Alert przeciw spamie](images/alertblockedip.png){.thumbnail}
+Jeśli masz alert dotyczący któregoś z Twoich IP, pojawi się czerwony status w kolumnie **Alert IP**.
 
-W sekcji "Moje publiczne adresy IP i powiązane usługi" kliknij przycisk `...`{.action} obok IP lub powiązanej z nim usługi i wybierz opcję `Antyspam`{.action}.
+![Anti spam alert](images/blockedIP_new.png){.thumbnail}
 
-![antyspam](images/antispam.png){.thumbnail}
+Kliknij przycisk `⁝`{.action} obok odpowiedniego IP/usługi i wybierz `Odblokowanie (anti-spam)`{.action}.
 
-W nowej zakładce kliknij `Zdjęcie blokady antyspam`{.action} i zatwierdź.
+![antispam](images/antispam_new.png){.thumbnail}
 
-![Odblokuj IP](images/unblockip.png){.thumbnail}
+W oknie, które się pojawi, kliknij `Odblokuj IP`{.action} na dole i potwierdź.
 
-IP jest odblokowywane. Operacja może trwać kilka minut.
+![Unblock IP](images/unblockip_new.png){.thumbnail}
 
-Po zakończeniu operacji Twój Destination IP zostanie odblokowany.
+IP jest w trakcie odblokowania, operacja może zająć kilka minut.
 
-#### Odblokuj adres IP z poziomu API OVHcloud
+Po zakończeniu, Twoje IP zostanie odblokowane.
 
-Zaloguj się do interfejsu [API OVHcloud](/links/api) i postępuj zgodnie z poniższymi instrukcjami. Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)".
+#### Odblokowanie IP z API OVHcloud
 
-Pobierz listę adresów IP każdej usługi OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serwer dedykowany):
+Zaloguj się do [interfejsu API OVHcloud](/links/api) zgodnie z [odpowiednim przewodnikiem](/pages/manage_and_operate/api/first-steps) i wykonaj poniższe kroki.
+
+Najpierw pobierz listę IP dla każdego z usług OVHcloud (Serwer Dedykowany/Hosted Private Cloud/VPS/Public Cloud):
 
 > [!api]
 >
 > @api {v1} /ip GET /ip
 >
 
-**type**: Wskaż rodzaj IP (Dedicated, PCC, VPS, vRack, PCI, itp.)
+**type**: Wprowadź typ IP (Dedicated, PCC, VPS, vRack, PCI, itp.)
 
-Oto przykład:
+Oto przykład tego, co powinieneś zobaczyć:
 
 ```bash
 "2001:41d0:67:d200::/56",
@@ -109,15 +107,15 @@ Oto przykład:
 "188.81.49.30/28",
 ```
 
-Następnie wyszukaj adresy IP w danym stanie, korzystając z następującego połączenia. Jeśli znasz już zablokowany Destination IP, możesz przejść do [kolejnego](#unblockip) etapu:
+Następnie wyszukaj IP w konkretnym stanie za pomocą poniższego wywołania. Jeśli już wiesz, który IP jest zablokowany, możesz przejść do [następnego kroku](#unblockip):
 
 > [!api]
 >
 > @api {v1} /ip GET /ip/{ip}/spam
 >
 
-**ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej. Na przykład 122.122.122.121/28<br>
-**State** : wskaż stan, którego szukasz.
+**ip**: Wprowadź blok IP pobrany w poprzednim kroku z maską sieciową. Na przykład 122.122.122.121/28.<br>
+**state**: Wprowadź stan, którego szukasz.
 
 Oto przykład wyniku (w tym przypadku wybrano blok 122.122.122.121/28):
 
@@ -125,17 +123,17 @@ Oto przykład wyniku (w tym przypadku wybrano blok 122.122.122.121/28):
 "122.122.122.122" 
 ```
 
-Możesz uzyskać informacje na temat blokady za pomocą następującego połączenia, w przeciwnym razie przejdź do [kolejnego](#unblockip) etapu.
+Jeśli IP jest zablokowane, możesz uzyskać informacje o blokowaniu za pomocą poniższego wywołania. W przeciwnym razie przejdź do [następnego kroku](#unblockip).
 
 > [!api]
 >
 > @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
-**ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej.<br>
-**ipSpamming** : wskaż uprzednio pobrany Destination IP w stanie "blockedForSpam".
+**ip**: Wprowadź blok IP pobrany w poprzednim kroku z maską sieciową.<br>
+**ipSpamming**: Wprowadź wcześniej pobrany IP w stanie "blockedForSpam", na przykład.
 
-Oto przykład wyniku (w tym przypadku wybrano blok 122.122.122.121/28 oraz IP 122.122.122.122):
+Oto przykład wyniku (w tym przypadku wybrano blok 122.122.122.121/28 i IP 122.122.122.122):
 
 ```bash
 time: 3600,
@@ -147,23 +145,23 @@ state: "blockedForSpam"
 Więc:
 
 ```bash
-- The IP is blocked for 1 hour (or 3600 seconds).
-- It was blocked on 29/08/2022 at 5:42 p.m.
-- Its current state is blocked.
+- IP jest zablokowane na 1 godzinę (lub 3600 sekund).
+- Zostało zablokowane 29/08/2022 o 17:42.
+- Jego obecny stan to zablokowany.
 ```
 
-Jeśli chcesz uzyskać statystyki dotyczące tego, co zostało wykryte, skorzystaj z następującego wywołania api, w przeciwnym razie przejdź do [kolejnego](#unblockip) etapu.
+Jeśli chcesz uzyskać statystyki dotyczące tego, co zostało wykryte, użyj poniższego wywołania API, w przeciwnym razie przejdź do [następnego kroku](#unblockip).
 
 > [!api]
 >
-> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/states
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
-**ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej.<br>
-**ipSpamming** : wskaż uprzednio pobrany Destination IP w stanie "blockedForSpam".<br>
-**from and to** : użyj formatu daty użytego w poprzedniej funkcji (YYYY-MM-DDTHH:MM+01:SS).
+**ip**: Wprowadź blok IP pobrany w poprzednim kroku z maską sieciową.<br>
+**ipSpamming**: Wprowadź wcześniej pobrany IP w stanie "blockedForSpam", na przykład.<br>
+**from i to**: Użyj formatu daty użytego w poprzedniej funkcji (YYYY-MM-DDTHH:MM+01:SS).
 
-Oto przykład:
+Oto przykład wyniku:
 
 ```bash
 {
@@ -174,44 +172,111 @@ Oto przykład:
 }
 ```
 
-##### **Odblokuj IP** <a name="unblockip"></a>
+##### **Odblokowanie IP** <a name="unblockip"></a>
 
 > [!alert]
 > WAŻNE!
-W żadnym wypadku nie odblokuj adresu IP bez zawieszenia wysyłki e-maili z Twojego serwera i opróżnij kolejkę wiadomości. W przeciwnym razie po raz drugi zostanie zablokowany na dłuższy czas. 
+> Nie odblokowuj IP w żadnym wypadku bez zatrzymania wysyłania e-maili z Twojego serwera, w przeciwnym razie zostaniesz natychmiast zablokowany ponownie (i na dłuższy czas). 
 >
 
-Aby odblokować Destination IP, zadzwoń w następujący sposób:
+Aby odblokować swoje IP, użyj poniższego wywołania:
 
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
-**ip** : podaj blok adresów IP odzyskany na poprzednim etapie za pomocą maski sieciowej.<br>
-**ipSpamming** : podaj na przykład Destination IP, który został wcześniej pobrany ze stanu "blockedForSpam".
+**ip**: Wprowadź blok IP pobrany w poprzednim kroku z maską sieciową.<br>
+**ipSpamming** : Wprowadź wcześniej pobrany IP w stanie "blockedForSpam".
 
-Oto przykład:
+Oto przykład wyniku:
 
 ```bash
-"message": "This IP address is still blocked for 129 seconds"
+"message": "Ten adres IP jest nadal zablokowany przez 129 sekund"
 ```
 
-Rezultat trochę później niż 129 sekund później:
+Po więcej niż 129 sekundach:
 
 ```bash
 time: 3600,
-data: "2022-08-29T17:42:50+01:00",
+date: "2022-08-29T17:42:50+01:00",
 ipSpamming: "122.122.122.122",
-State: "unblocking" 
+state: "unblocking" 
 ```
 
-Odblokowanie adresu IP może zająć kilka minut.
+IP jest w trakcie odblokowania, operacja może zająć kilka minut.
 
-### W przypadku wyników fałszywie dodatnich
+### W przypadku fałszywych pozytywów
 
-W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) i [dobrymi praktykami (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
+W niektórych przypadkach alert antyspamowy może być fałszywym pozytywem. Jeśli sprawdziłeś i stwierdziłeś, że **Message-ID** pochodzi z legalnej wiadomości e-mail, musisz upewnić się, że Twoje e-maile są zgodne z [RFC](#rfc) i [Najlepsze praktyki](#bestpractices) wskazane poniżej.
+
+#### RFC <a name="rfc"></a>
+
+RFC (Request For Comments) to dokumenty przeznaczone do opisania technicznych aspektów Internetu. Są tworzone i publikowane przez IETF (Internet Engineering Task Force), grupę, która w zasadzie tworzy i definiuje standardy.
+Aby uzyskać więcej informacji, zobacz: [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [IETF](https://www.ietf.org/) i [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).
+
+#### Najlepsze praktyki <a name="bestpractices"></a>
+
+Najlepsze praktyki to zalecane metody, które często opierają się na dokumentach RFC i mają na celu doradzenie, jak najlepiej postępować. W tym przypadku oznacza to podstawowe zasady, które należy przestrzegać, aby Twoje e-maile nie były oznaczone jako spam.
+
+**Objętość wysyłania**
+
+Jeśli Twoja objętość wysyłanych e-maili jest bardzo duża, zaleca się:
+
+- zarezerwować blok IP przeznaczony wyłącznie do użycia e-mailowego.
+- podać adres 'abuse' na tym bloku, aby otrzymywać skargi.
+- skonfigurować [Reverses](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configure-the-reverse-ip) na wszystkich IP poprawnie.
+
+Ta operacja pozwoli Ci jednocześnie izolować reputację IP i domeny, jeśli wysyłasz e-maile z różnych domen, otrzymywać skargi i tym samym robić to, co konieczne, aby zostać odblokowanym przez różne organizacje. Pozwala to również szybciej zlokalizować problem na formularzu używającym domeny X lub Y, ponieważ e-maile nie są wysyłane z tego samego IP i nie mają tego samego odwrotnego.
+
+**Zawartość e-maili**
+
+- Unikaj używania słów typowych dla spammerów w swoich e-mailach, takich jak "kup" i "ostatnia szansa", unikaj wielkich liter, impersonalnych tematów, wykrzykników i % rabatów.
+- Nie zapomnij dodać **linku do wyrejestrowania** dla osób, które nie zażądały otrzymywania Twojego e-maila lub uważają go za nielegalny.
+- Zwróć szczególną uwagę, aby Twoje e-maile zawierały adres nadawcy (lub alias), temat i poprawny stosunek tekstu, obrazów i linków w treści wiadomości.
+- Stosunek tekstu do obrazu i tekstu do linku powinien być wysoki. Nie przetężaj e-maila hiperłączami i unikaj JavaScriptu.
+
+**FBL (*Feedback Loop*) - Pętla zwrotna**
+
+Ten system umożliwia śledzenie opinii dostarczanych przez niektóre dostawców usług internetowych, bezpośrednio informując Cię, że ich użytkownicy oznaczyli Twoją wiadomość jako nielegalną, a więc została sklasyfikowana jako spam. To pozwoli Ci bezpośrednio komunikować się z tymi ISP w sprawie Twojej reputacji. Do niektórych FBL należą:
+
+- [Yahoo i AOL Postmaster](https://senders.yahooinc.com/contact)
+- [SpamCop](https://www.spamcop.net/)
+- [Outlook i live.com](https://sendersupport.olc.protection.outlook.com/pm/)
+
+**Uwierzytelnianie**
+
+Niektóre usługi uwierzytelniania pozwalają chronić swoją reputację:
+
+- **Sender-ID**: Technologia uwierzytelniania wiadomości e-mail opracowana przez Microsoft, która weryfikuje autentyczność Twojej nazwy domeny poprzez sprawdzenie adresu IP nadawcy. Ta technologia opiera się na standardzie IETF: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
+- **SPF**: Sender Policy Framework to standard weryfikacji domeny nadawcy. Bazuje on na [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) i polega na dodaniu pola SPF lub TXT do DNS domeny, zawierającego listę autoryzowanych adresów IP wysyłających wiadomości e-mail z tej domeny.
+- **Reverse DNS**: Reverse umożliwia przetłumaczenie Twojego adresu IP na Twoją domenę. Pozwala to znaleźć domenę przypisaną do adresu IP.
+- **DKIM**: Ten standard opisano w [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL i Google (Gmail) działają na tej podstawie. 
+
+Aby uzyskać więcej informacji na temat powyższych usług, zapoznaj się z naszym przewodnikiem dotyczącym [optymalizacji wysyłania wiadomości e-mail](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+
+#### Określone typy wysyłania wiadomości e-mail
+
+- **Do serwera Microsoft (Outlook itp.)**
+
+Microsoft stosuje zasadę listy białej. Oznacza to, że początkowo wszystko znajduje się na liście czarnej, a do weryfikacji Twojego serwera e-mail konieczna jest specyficzna procedura. Aby uzyskać więcej informacji, zapoznaj się z [tą sekcją](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#to-a-microsoft-server-outlook-etc) odpowiedniego przewodnika.
+
+- **Do serwera Gmail**
+
+Jeśli Twoi odbiorcy korzystają z Gmaila, dodanie określonych rekordów (np. rekordu DMARC) może zagwarantować, że wiadomości trafią do nich. Oto artykuł Google, który może Ci w tym pomóc: [Dodaj rekord DMARC](https://support.google.com/a/answer/2466563/).
+
+Google ma również [artykuł poświęcony](https://support.google.com/mail/answer/81126/) zapobieganiu spamowi dla użytkowników Gmail.
+
+### Zgłaszanie fałszywego pozytywu
+
+Jeśli Twoje wiadomości są zgodne, możesz poinformować nas, wysyłając przykład swojej wiadomości (w tym nagłówek). Nasz zespół wsparcia technicznego pomoże Ci w kolejnych krokach. Utwórz po prostu zgłoszenie wsparcia z poziomu Panelu klienta OVHcloud i dołącz poniższe informacje:
+
+- Adres IP usługi zablokowanej ze względu na SPAM.
+- Oryginalna kopia wiadomości(e) oznaczonej jako SPAM (powinieneś być w stanie to zidentyfikować za pomocą **Message-ID** zawartego w wiadomości ANTISPAM). Jeśli nie podano **Message-ID**, po prostu prześlij nam kopię wiadomości wysłanych przed otrzymaniem alertu. Prosimy, dostarczaj tylko kopię wiadomości oznaczonej jako SPAM.
+- Plik .EML wiadomości, który powinien zawierać **nagłówek** i **stopkę** wiadomości. Jeśli nie wiesz, jak wyodrębnić plik .EML, zapoznaj się z poniższym przewodnikiem: [Pobieranie nagłówków wiadomości e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+
+Po wysłaniu informacji nasz zespół wsparcia skontaktuje się z Vade Secure w celu dalszej analizy sprawy.
 
 ## Sprawdź również
- 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+
+Dołącz do [grona naszych użytkowników](/links/community).

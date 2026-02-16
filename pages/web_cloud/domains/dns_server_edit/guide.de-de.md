@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server eines OVHcloud Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres bei OVHcloud registrierten Domainnamens ändern können"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -16,7 +16,7 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Alle Informationen z
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bei OVHcloud registrierten [Domainnamen](/links/web/domains).
+- Inhaber eines bei OVHcloud registrierten [Domainnamens](/links/web/domains) sein.
 - Sie verfügen über die [entsprechenden Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) für die Verwaltung des Domainnamens über Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

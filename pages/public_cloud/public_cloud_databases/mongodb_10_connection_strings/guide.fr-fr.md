@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Comprendre le format URI des chaînes de connection (EN)
+title: Comprendre le format de l'URI des chaînes de connection de Public Cloud Databases for MongoDB (EN)
 excerpt: Find out how connections syntax work for MongoDB
 updated: 2023-03-02
 ---

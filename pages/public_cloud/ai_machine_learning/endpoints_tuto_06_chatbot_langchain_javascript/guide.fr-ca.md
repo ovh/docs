@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot en JavaScript avec LangChain (EN)
 excerpt: Apprenez à déveleopper un chatbot en utilisant JavaScript, LangChain et AI Endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -37,16 +37,11 @@ You will need to declare the following environment variables:
 
 ```bash
 _OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
-_OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-_OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+_OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3 # (or any other model you want to use)
+_OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 ```
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
-
-You will also have to set two other environments variables, related to the model you want to use. You can find these model-specific values in the `documentation` tab of each model. For example, if you want to add the `Mistral-7B-Instruct-v0.3` model, the expected environment variables will be:
-
-- `OVH_AI_ENDPOINTS_MODEL_NAME`: Mistral-7B-Instruct-v0.3
-- `OVH_AI_ENDPOINTS_MODEL_URL`: https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
 
 ### Project setup
 
@@ -103,7 +98,8 @@ async function chatCompletion(question) {
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     apiKey: process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN,
-    endpoint: process.env.OVH_AI_ENDPOINTS_MODEL_URL,    maxTokens: 1500,
+    endpoint: process.env.OVH_AI_ENDPOINTS_URL,
+    maxTokens: 1500,
     streaming: false,
     verbose: false,
   });
@@ -173,7 +169,7 @@ async function chatCompletion(question) {
     modelName: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     model: process.env.OVH_AI_ENDPOINTS_MODEL_NAME,
     apiKey: process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN,
-    endpoint: process.env.OVH_AI_ENDPOINTS_MODEL_URL,
+    endpoint: process.env.OVH_AI_ENDPOINTS_URL,
     maxTokens: 1500,
     streaming: true,
     verbose: false,

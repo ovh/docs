@@ -1,7 +1,7 @@
 ---
 title: "Comment payer une facture avec mes crédits du Startup Program"
 excerpt: "Découvrez comment payer vos factures avec vos crédits du Startup Program d'OVHcloud pour optimiser vos dépenses d'infrastructure"
-updated: 2025-10-14
+updated: 2025-12-11
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ En tant que membre du Startup Program d'OVHcloud, vous disposez de crédits pour
 - **Renouvellement automatique** : Pour les services éligibles, vos crédits sont utilisés automatiquement pour renouveler vos services, sans intervention de votre part.
 - **Nouvelles commandes** :
     - Pour les services Public Cloud éligibles, les crédits seront automatiquement appliqués lors de la prochaine facturation.
-    - Pour d’autres produits éligibles, vous devrez sélectionner les "Crédits Digital Launchpad" comme mode de paiement lors du processus de commande.
+    - Pour d’autres produits éligibles, vous devrez sélectionner les "Crédits Startup Program" comme mode de paiement lors du processus de commande.
 
 ## En pratique
 

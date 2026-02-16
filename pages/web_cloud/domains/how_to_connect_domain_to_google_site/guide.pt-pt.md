@@ -1,14 +1,14 @@
 ---
-title: Como ligar um domínio OVHcloud a um Google Site
-excerpt: Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um Google Site
-updated: 2024-10-03
+title: Como ligar um nome de domínio OVHcloud a um Google Site
+excerpt: Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um Google Site
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um Google Site. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu Google Site.
+É titular de um nome de domínio na OVHcloud, deseja ligá-lo a um Google Site. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu Google Site.
 
-**Saiba como ligar o seu domínio OVHcloud a um Google Site**
+**Saiba como ligar o seu nome de domínio OVHcloud a um Google Site**
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu Google Site. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu Google Site. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
 
 ### 1. Configurar o seu Google Site
 
@@ -39,11 +39,11 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 >
 > Apenas o proprietário de um Google Site pode ligá-lo a um nome de domínio. Se necessário, saiba como [alterar o proprietário do Google Site](https://support.google.com/sites/answer/97934).
 
-Quando utilizar um Google Site com um domínio OVHcloud, prepare primeiro o seu alojamento seguindo as instruções da secção **Configurar um domínio personalizado** a partir de [**esta página do suporte Google**](https://support.google.com/sites/answer/9068867?hl=pt#zippy=).
+Quando utilizar um Google Site com um nome de domínio OVHcloud, prepare primeiro o seu alojamento seguindo as instruções da secção **Configurar um domínio personalizado** a partir de [**esta página do suporte Google**](https://support.google.com/sites/answer/9068867?hl=pt#zippy=).
 
 ### 2. Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o nome de domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -83,7 +83,7 @@ Siga as etapas em ordem nas seguintes guias:
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Se existirem registos "TXT" para o domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), elimine-os para que não entrem em conflito com o registo CNAME que vai indicar no etapa 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" e, a seguir, clique em `Eliminar entrada`{.action}.<br>
+>> - Se existirem registos "TXT" para o nome de domínio específico (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`), elimine-os para que não entrem em conflito com o registo CNAME que vai indicar no etapa 4. Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" e, a seguir, clique em `Eliminar entrada`{.action}.<br>
 >> - É necessário criar um registo do tipo "TXT". Clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo" apontador `TXT`{.action}.
 >> Preencha os campos **Subdomínio** e **Destino** com as informações presentes na página "[Valores dos registos TXT](https://support.google.com/a/answer/2716802?hl=pt&ref_topic=2716886&sjid=3052810298579211755-EU)" da documentação oficial. Normalmente, o valor do campo **Subdomínio** está vazio, e o campo **Destino** é do tipo `google-site-verification=XXXXXXXXXXXX`.<br>
 >> Clique em `Seguinte`{.action} para validar o seu registo "TXT" e passe à etapa 4.
@@ -104,19 +104,19 @@ A zona DNS está configurada para fazer a ligação a um Google Site.
 
 > [!primary]
 >
-> A verificação do seu domínio pode levar até 48 horas.
+> A verificação do seu nome de domínio pode levar até 48 horas.
 
 Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
+[Criar uma zona DNS da OVHcloud para um nome de domínio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

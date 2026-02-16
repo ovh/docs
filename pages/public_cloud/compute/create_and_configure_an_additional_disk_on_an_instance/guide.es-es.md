@@ -101,7 +101,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 >>
 >> > [!warning]
 >>
->> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta o puede migrar la región siguiendo [esta guía](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Nota: El volumen debe crearse en la misma región que la instancia a la que desea asociarlo. Si lo crea en otra región, puede eliminarlo y volver a crearlo en la región correcta.
 >>
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}

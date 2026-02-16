@@ -190,8 +190,8 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> **Fedora 42+**
->> Fedora 42 und spätere Versionen
+> **Fedora 42+ / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42 und spätere Versionen, AlmaLinux und Rocky Linux (10)
 >>
 >> Fedora verwendet nunmehr Schlüsseldateien (*keyfiles*).
 >> Fedora speicherte zuvor im Verzeichnis `/etc/sysconfig/network-scripts/` Netzwerkprofile im Format ifcfg.<br>
@@ -361,7 +361,7 @@ In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebss
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+>> AlmaLinux (8/9) & Rocky Linux (8/9)
 >>
 >> Die Hauptkonfigurationsdatei befindet sich unter `/etc/sysconfig/network-scripts/`. In unserem Beispiel heißt es `ifcfg-eth0`. Überprüfen Sie Ihren Dateinamen in diesem Ordner, bevor Sie Änderungen vornehmen.
 >>

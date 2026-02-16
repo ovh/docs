@@ -6,9 +6,9 @@ updated: 2023-03-09
 
 ## Objectif
 
-Ce guide vous présente les étapes de mise à jour des firmwares des clusters Nutanix en mettant à tout de rôle chaque noeud en maintenance puis en le redémarrant en mode rescue.
+Ce guide vous présente les étapes de mise à jour des firmwares des clusters Nutanix en mettant à tout de rôle chaque nœud en maintenance puis en le redémarrant en mode rescue.
 
-Nos services prendront le relais pour appliquer les mises à jour des firmwares et redémarreront le noeud une fois cela fait.
+Nos services prendront le relais pour appliquer les mises à jour des firmwares et redémarreront le nœud une fois cela fait.
 
 > [!warning]
 > Avant d'entamer toute action, connectez-vous à votre [espace client OVHcloud](/links/manager) et créez un ticket de demande d'assistance pour demander une mise à jour du firmware et communiquer aux équipes d'assistance OVHcloud les éléments techniques concernant votre cluster.
@@ -58,7 +58,7 @@ ncc health_checks run_all
 
 ### Activation du mode maintenance
 
-Les noeuds seront mis à jour un par un, le cluster Nutanix continuera de fonctionner correctement.
+Les nœuds seront mis à jour un par un, le cluster Nutanix continuera de fonctionner correctement.
 
 Pour vous connecter à un CVM, vous pouvez lancer l'IPMI depuis votre espace client OVHcloud ou utiliser un terminal.
 
@@ -72,12 +72,12 @@ Ouvrez ensuite une connexion SSH à un CVM avec les identifiants Nutanix pour ac
 
 ![Connexion CVM](images/nutanix-cluster-fw-update-04.png){.thumbnail}
 
-#### Vérifier l'état des noeuds
+#### Vérifier l'état des nœuds
 
 Une fois connecté, vérifiez que :
 
 - `Node state` a la valeur `AcropolisNormal`.
-- La colonne `Schedulable` a la valeur `True` pour tous les noeuds.
+- La colonne `Schedulable` a la valeur `True` pour tous les nœuds.
 
 Exécutez ensuite la commande suivante pour vérifier :
 
@@ -95,7 +95,7 @@ acli host.enter_maintenance_mode_check <Hypervisor_IP>
 
 ![Checking nodes state](images/nutanix-cluster-fw-update-06.png){.thumbnail}
 
-#### Mettre un noeud en mode maintenance
+#### Mettre un nœud en mode maintenance
 
 > [!primary]
 > Les VM ayant des règles spécifiques (comme l'affinité, le passthrough CPU...) doivent être arrêtées manuellement avant l'exécution de la maintenance, car elles ne migreront pas.
@@ -121,7 +121,7 @@ cvm_shutdown -P now
 
 ![shutdown CVM](images/nutanix-cluster-fw-update-08.png){.thumbnail}
 
-Avec les identifiants root, ouvrez un terminal sur le noeud qui héberge le CVM et validez l'arrêt du CVM :
+Avec les identifiants root, ouvrez un terminal sur le nœud qui héberge le CVM et validez l'arrêt du CVM :
 
 ```bash
 virsh list --all
@@ -129,7 +129,7 @@ virsh list --all
 
 ![shutdown CVM](images/nutanix-cluster-fw-update-09.png){.thumbnail}
 
-Sur le tableau de bord principal, le **Data Resiliency Status** deviendra `Critical`, le cluster fonctionne alors avec 2 noeuds.
+Sur le tableau de bord principal, le **Data Resiliency Status** deviendra `Critical`, le cluster fonctionne alors avec 2 nœuds.
 
 ![shutdown CVM](images/nutanix-cluster-fw-update-10.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Connectez-vous à l'[espace client OVHcloud](/links/manager), accédez à l'ongl
 
 ![Espace client - accès au cluster](images/nutanix-cluster-fw-update-11.png){.thumbnail}
 
-Identifiez le noeud à démarrer en mode rescue en utilisant l'appel API OVHcloud suivant :
+Identifiez le nœud à démarrer en mode rescue en utilisant l'appel API OVHcloud suivant :
 
 > [!api]
 >
@@ -150,11 +150,11 @@ Identifiez le noeud à démarrer en mode rescue en utilisant l'appel API OVHclou
 
 - `serviceName` : entrez le nom du cluster
 
-Vous pourrez alors identifier le nom du noeud :
+Vous pourrez alors identifier le nom du nœud :
 
 ![OVHcloud API - node name](images/nutanix-cluster-fw-update-12.png){.thumbnail}
 
-Après avoir récupéré le nom du noeud à redémarrer en mode rescue, sélectionnez ce noeud dans votre espace client OVHcloud.
+Après avoir récupéré le nom du nœud à redémarrer en mode rescue, sélectionnez ce nœud dans votre espace client OVHcloud.
 
 Dans la section `Boot`, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.
 
@@ -174,20 +174,20 @@ Cliquez de nouveau sur le bouton `...`{.action} et cliquez cette fois sur `Redé
 
 ![Espace client - Boot](images/nutanix-cluster-fw-update-13.png){.thumbnail}
 
-Le serveur va redémarrer. Si vous le souhaitez, vous pouvez ouvrir une session IPMI pour suivre le redémarrage de votre noeud.
+Le serveur va redémarrer. Si vous le souhaitez, vous pouvez ouvrir une session IPMI pour suivre le redémarrage de votre nœud.
 
-Lorsque le noeud est démarré sur `rescue-customer`, mettez à jour votre ticket d'assistance avec ces informations pour informer les équipes d'assistance OVHcloud qu'elles peuvent procéder à la mise à jour du firmware.
+Lorsque le nœud est démarré sur `rescue-customer`, mettez à jour votre ticket d'assistance avec ces informations pour informer les équipes d'assistance OVHcloud qu'elles peuvent procéder à la mise à jour du firmware.
 
 Nos équipes support finaliseront les mises à jour nécessaires, c'est-à-dire qu'elles vont :
 
-- redémarrer le noeud sur le disque local, ce qui lancera automatiquement le système Nutanix et le CVM.
-- mettre à jour le ticket pour vous informer que vous pouvez sortir le noeud du mode maintenance.
+- redémarrer le nœud sur le disque local, ce qui lancera automatiquement le système Nutanix et le CVM.
+- mettre à jour le ticket pour vous informer que vous pouvez sortir le nœud du mode maintenance.
 
-À ce moment-là, le noeud est opérationnel, poursuivez la lecture de ce guide pour quitter le mode maintenance.
+À ce moment-là, le nœud est opérationnel, poursuivez la lecture de ce guide pour quitter le mode maintenance.
 
 ### Sortie du mode maintenance
 
-Après la mise à jour du noeud, nos services redémarrent le noeud à partir du disque local. Le logiciel Nutanix chargera AOS et le CVM démarrera automatiquement.
+Après la mise à jour du nœud, nos services redémarrent le nœud à partir du disque local. Le logiciel Nutanix chargera AOS et le CVM démarrera automatiquement.
 
 Une fois le système de retour à la normale, connectez-vous au CVM et exécutez la commande suivante :
 
@@ -195,11 +195,11 @@ Une fois le système de retour à la normale, connectez-vous au CVM et exécutez
 acli host.list
 ```
 
-Comme vous pouvez le voir sur l'exemple ci-dessous, le premier noeud est toujours en mode maintenance.
+Comme vous pouvez le voir sur l'exemple ci-dessous, le premier nœud est toujours en mode maintenance.
 
 ![sortie du mode maintenance](images/nutanix-cluster-fw-update-07.png){.thumbnail}
 
-Pour sortir le noeud du mode maintenance, exécutez la commande suivante :
+Pour sortir le nœud du mode maintenance, exécutez la commande suivante :
 
 ```bash
 host.exit_maintenance_mode 192.168.0.1
@@ -209,15 +209,15 @@ L'hôte quitte l'état `maintenance` et revient à l'état `Normal`.
 
 ![sortie du mode maintenance](images/nutanix-cluster-fw-update-16.png){.thumbnail}
 
-Les machines virtuelles migrées à partir de ce noeud passent automatiquement d'autres noeuds à celui-ci.
+Les machines virtuelles migrées à partir de ce nœud passent automatiquement d'autres nœuds à celui-ci.
 
 Sur le tableau de bord principal, le **Data Resiliency Status** redeviendra à `OK`, le cluster retrouvant également son état nominal.
 
 ![Data Resiliency Status](images/nutanix-cluster-fw-update-01.png){.thumbnail}
 
-Répétez les mêmes étapes pour les noeuds restants, un à la fois.
+Répétez les mêmes étapes pour les nœuds restants, un à la fois.
 
-Merci de ne pas ouvrir de nouveau ticket, il suffit de rajouter des commentaires sur le même ticket pour chaque noeud, en spécifiant le nom du serveur (par exemple `ns123456.ip-169-254-10.eu`).
+Merci de ne pas ouvrir de nouveau ticket, il suffit de rajouter des commentaires sur le même ticket pour chaque nœud, en spécifiant le nom du serveur (par exemple `ns123456.ip-169-254-10.eu`).
 
 ## Aller plus loin <a name="go further"></a>
 

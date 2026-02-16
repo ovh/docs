@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Capacités et limitations (EN)
+title: Capacités et limitations de Public Cloud Databases pour PostgreSQL (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 updated: 2025-09-30
 ---
@@ -26,7 +26,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Database nodes have to be in the same region. Multi-AZ is currently not supported.
+Database nodes have to be in the same region.
 
 ### PostgreSQL versions
 

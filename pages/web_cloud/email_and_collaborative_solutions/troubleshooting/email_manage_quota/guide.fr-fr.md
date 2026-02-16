@@ -15,7 +15,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 - Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 - Disposer des informations de connexion aux adresses e-mails concernées.
@@ -104,7 +104,7 @@ Si votre compte e-mail est saturé, cela signifie que vous n'êtes plus en mesur
 Lorsque qu'une personne vous envoie un e-mail, elle reçoit, en réponse automatique, un e-mail d'erreur du type *« 552, "5.2.2", Le compte de messagerie auquel vous avez envoyé un message a épuisé son quota. »*.<br>
 Lorsque votre compte e-mail est saturé, vous pouvez toujours envoyer des e-mails de votre côté. En revanche, ces e-mails ne pourront pas être stockés dans « messages envoyés ».
 
-#### Optimiser l'espace aloué de votre compte e-mail
+#### Optimiser l'espace alloué de votre compte e-mail
 
 Avant toute autre opération sur votre compte e-mail, il est nécessaire de bien prendre connaissance du contenu de votre compte e-mail afin de supprimer tous les éléments superflus. Nous vous invitons à en vérifier certains en particulier :
 

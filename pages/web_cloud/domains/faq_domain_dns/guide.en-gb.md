@@ -1,7 +1,7 @@
 ---
-title: "Domain names & DNS FAQ"
+title: "Domain name & DNS FAQ"
 excerpt: "Find the answers to the most frequently asked questions on domain names, DNS servers and DNS zones"
-updated: 2025-10-10
+updated: 2026-02-10
 ---
 
 <style>
@@ -31,7 +31,7 @@ Follow these steps:
 3. On the new page that appears, our interface will indicate whether the chosen domain name is available for purchase. If it is already reserved with the syntax you entered, modify it and initiate a new availability search.
 4. Once you find an available domain name, click the `Buy`{.action} button, then click the `Continue Order`{.action} button in the right column.
 5. Select any additional options or services you wish to subscribe to alongside your domain name, then click `Continue`{.action} until the order process prompts you to authenticate or create an OVHcloud customer account.
-6. Once authenticated with your OVHcloud customer account, you can customize the contact information (owner/registrant, administrator, technical) for your domain name. Click the `Continue`{.action} button to access the order summary.
+6. Once authenticated with your OVHcloud customer account, you can customize the contact information (holder/registrant, administrator, technical) for your domain name. Click the `Continue`{.action} button to access the order summary.
 7. On the `Order Summary` page and if necessary, you can modify the DNS configuration that will apply to your domain name by clicking the `Modify Configuration`{.action} link. Once your changes are complete, click the `Pay`{.action} button to proceed to the final step of your order.
 
 Pay for your order to initiate the reservation of your domain name and the installation of the services and options you have subscribed to.
@@ -54,7 +54,7 @@ Follow these steps:
 3. On the new page that appears, our interface will indicate whether the chosen domain name is available for purchase. If it is already reserved with the syntax you entered, modify it and initiate a new availability search.
 4. Once you find an available domain name, click the `Buy`{.action} button, then click the `Continue Order`{.action} button in the right column.
 5. Select any additional options or services you wish to subscribe to alongside your domain name, then click `Continue`{.action} until the order process prompts you to authenticate or create an OVHcloud customer account.
-6. Once authenticated with your OVHcloud customer account, you can customize the contact information (owner/registrant, administrator, technical) for your domain name. Click the `Continue`{.action} button to access the order summary.
+6. Once authenticated with your OVHcloud customer account, you can customize the contact information (holder/registrant, administrator, technical) for your domain name. Click the `Continue`{.action} button to access the order summary.
 7. On the `Order Summary` page and if necessary, you can modify the DNS configuration that will apply to your domain name by clicking the `Modify Configuration`{.action} link. Once your changes are complete, click the `Pay`{.action} button to proceed to the final step of your order.
 
 Pay for your order to initiate the reservation of your domain name and the installation of the services and options you have subscribed to.
@@ -70,7 +70,7 @@ Do not hesitate to create a support ticket from the [Help Center](https://help.o
 
 /// details | How can I know if my domain name is registered with OVHcloud?
 
-To do this, you can perform a [WHOIS](/links/web/domains-whois) query to find out where your domain name is registered and to verify that you are indeed declared as the owner of the domain name.
+To do this, you can perform a [WHOIS](/links/web/domains-whois) query to find out where your domain name is registered and to verify that you are indeed declared as the holder of the domain name.
 
 Each registry (such as OVHcloud) has the option to choose how to display information related to a domain name in the WHOIS.
 
@@ -146,7 +146,7 @@ Follow these steps:
 3. In the table that appears, locate the line corresponding to your domain name, click the `...`{.action} button on the right, then select `Cancel my subscription`{.action}.
 4. On the page that appears, select the cancellation mode (immediately or at the service's expiration date) and click the `Yes, cancel`{.action} button at the bottom.
 
-Your domain name will then be suspended on its expiration date. After this date, it will be permanently deleted within a maximum of 60 days. This delay is defined by the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) to ensure the domain name is fully deleted and becomes available for registration by another owner/registrant.
+Your domain name will then be suspended on its expiration date. After this date, it will be permanently deleted within a maximum of 60 days. This delay is defined by the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) to ensure the domain name is fully deleted and becomes available for registration by another holder/registrant.
 
 > [!primary]
 >
@@ -162,7 +162,7 @@ Your domain name will then be suspended on its expiration date. After this date,
 
 First, if you have doubts about the legitimacy of the received email, consult our guide "[Beware of scams – recognising fraudulent email and phishing](/pages/account_and_service_management/account_information/phishing_care)".
 
-According to a directive from the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) dated 01/09/2014, domain name registrars (e.g., OVHcloud) are required to verify the validity of the contact details of domain name registrants/owners. OVHcloud then sends an email to the registrant/owner of the domain name registered at the contact email address declared with OVHcloud.
+According to a directive from the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) dated 01/09/2014, domain name registrars (e.g., OVHcloud) are required to verify the validity of the contact details of domain name registrants/holders. OVHcloud then sends an email to the registrant/holder of the domain name registered at the contact email address declared with OVHcloud.
 
 You will receive this email when you perform one of the following actions:
 
@@ -170,16 +170,16 @@ You will receive this email when you perform one of the following actions:
 - Transfer of a domain name.
 - Modification of the contact details associated with your domain name.
 
-This email contains a link to quickly verify your contact details as the legal owner/registrant of the domain name.
+This email contains a link to quickly verify your contact details as the legal holder/registrant of the domain name.
 
 **Important:** This verification must be completed within 15 days. If not, the domain name will be technically suspended. It will remain contractually under your name but will no longer be accessible on the Internet. An error message will appear for visitors to your website.
 
 You may receive the following emails during the first 15 days:
 
-- **Day 0**: Immediately after ordering the domain name or modifying its contact details, you (or the person registered as the owner/registrant of the domain name) will receive the first email with a verification link.
+- **Day 0**: Immediately after ordering the domain name or modifying its contact details, you (or the person registered as the holder/registrant of the domain name) will receive the first email with a verification link.
 - **Days 4, 9, and 13 (reminder emails)**: If you have not yet verified the domain name, you will receive the email again.
 - **Day 14**: If you still have not verified the domain name, the email is sent once more. Additionally, an email is also sent to the administrator/registrant's email address to inform them that their contact details have not been confirmed.
-- **Day 15**: If the owner/registrant of the domain name has not yet responded, we send an email to the domain name administrator to inform them of the situation and the deactivation of the domain name.
+- **Day 15**: If the holder/registrant of the domain name has not yet responded, we send an email to the domain name administrator to inform them of the situation and the deactivation of the domain name.
 
 Beyond these 15 days, the system sends additional emails (up to 9 emails) before deleting your domain name. This deletion will occur 60 days after Day 0.
 
@@ -191,12 +191,12 @@ Beyond these 15 days, the system sends additional emails (up to 9 emails) before
 
 /// details | I did not receive the email to validate the information associated with my domain name and it is suspended. What should I do?
 
-If you did not receive the validation email for your domain name's owner, check the following points:
+If you did not receive the validation email for your domain name's holder, check the following points:
 
-1. The email address declared for the domain name owner is valid and operational.
+1. The email address declared for the domain name holder is valid and operational.
 2. The validation email is not in your spam/junk folder.
 
-After confirming the two points above, if you still cannot retrieve the owner validation email, we recommend opening a support ticket from the [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to request the email to be resent.
+After confirming the two points above, if you still cannot retrieve the holder validation email, we recommend opening a support ticket from the [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to request the email to be resent.
 
 ///
 
@@ -208,7 +208,7 @@ With OVHcloud, it is entirely possible to order IDNs and use them as regular dom
 
 Once subscribed, IDNs appear in your [OVHcloud Control Panel](/links/manager) in the **xn--** format.
 
-Even though your domain is displayed in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) in your [OVHcloud Cotrol Panel](/links/manager), it will function and display normally elsewhere. Your website address will appear as requested. Your email addresses will also display as intended to your contacts.
+Even though your domain is displayed in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) in your [OVHcloud Control Panel](/links/manager), it will function and display normally elsewhere. Your website address will appear as requested. Your email addresses will also display as intended to your contacts.
 
 > [!alert]
 >
@@ -250,39 +250,39 @@ To do this, follow these steps:
 
 ## Domain Name Transfer
 
-/// details | Is my domain name transferable after a change of owner?
+/// details | Is my domain name transferable after a change of holder?
 
-The **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) has implemented security measures to prevent unauthorized or abusive transfers or changes of ownership of domain names.
+The **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) has implemented security measures to prevent unauthorized or abusive transfers or changes of holder of domain names.
 
-ICANN has defined an incompressible period of **60** days between each operation that can occur on a domain name (creation, change of owner, transfer).
+ICANN has defined an incompressible period of **60** days between each operation that can occur on a domain name (creation, change of holder, transfer).
 
 The rules defined by ICANN must be strictly respected by registrars (such as OVHcloud).
 
-You will therefore have no choice but to wait until the end of the 60-day period to transfer your domain name after changing its owner.
+You will therefore have no choice but to wait until the end of the 60-day period to transfer your domain name after changing its holder.
 
 ///
 
 /// details | My domain name is locked against transfer for 60 days. What should I do?
 
-The **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) has implemented security measures to prevent unauthorized or abusive transfers or changes of ownership of domain names.
+The **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) has implemented security measures to prevent unauthorized or abusive transfers or changes of holder of domain names.
 
-ICANN has defined an incompressible period of **60** days between each operation that can occur on a domain name (creation, change of owner, transfer).
+ICANN has defined an incompressible period of **60** days between each operation that can occur on a domain name (creation, change of holder, transfer).
 
 The rules defined by ICANN must be strictly respected by registrars (such as OVHcloud).
 
-You will therefore have no choice but to wait until the end of the 60-day period to perform a new operation (change of owner or transfer) on your domain name.
+You will therefore have no choice but to wait until the end of the 60-day period to perform a new operation (change of holder or transfer) on your domain name.
 
 ///
 
 /// details | I cannot find my domain name in my customer area. What should I do?
 
-First, perform a [WHOIS](/links/web/domains-whois) query to find out where your domain name is registered and verify that you are declared as the owner of the domain name.
+First, perform a [WHOIS](/links/web/domains-whois) query to find out where your domain name is registered and verify that you are declared as the holder of the domain name.
 
-**Case 1.A - Your domain name is registered with OVHcloud and you are declared as the owner:**
+**Case 1.A - Your domain name is registered with OVHcloud and you are declared as the holder:**
 
 Perform a [contact recovery procedure](/links/transversal/procedure-contact-change) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
 
-**Case 1.B - Your domain name is registered with OVHcloud and you are not declared as the owner:**
+**Case 1.B - Your domain name is registered with OVHcloud and you are not declared as the holder:**
 
 In accordance with the **G**eneral **D**ata **P**rotection **R**egulation (**GDPR**), OVHcloud cannot provide information about the person or organization managing the domain name with OVHcloud.
 
@@ -296,13 +296,13 @@ Contact the registrar (specified in the lines starting with the term `Registrar`
 
 /// details | I cannot contact the person managing my domain name. What should I do?
 
-First, perform a [WHOIS](/links/web/domains-whois) query to verify that you are declared as the owner of the domain name.
+First, perform a [WHOIS](/links/web/domains-whois) query to verify that you are declared as the holder of the domain name.
 
-**Case 1 - You are declared as the owner of the domain name:**
+**Case 1 - You are declared as the holder of the domain name:**
 
 Perform a [contact recovery procedure](/links/transversal/procedure-contact-change) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
 
-**Case 2 - You are not declared as the owner of the domain name:**
+**Case 2 - You are not declared as the holder of the domain name:**
 
 In accordance with the **G**eneral **D**ata **P**rotection **R**egulation (**GDPR**), OVHcloud cannot provide information about the person or organization managing the domain name with OVHcloud.
 
@@ -358,7 +358,7 @@ DNS records are used, for example, to:
 Many DNS records exist. They all have a specific purpose in DNS resolution. At OVHcloud, they are categorized into three parts:
 
 - **Pointer records**: `A`, `AAAA`, `NS`, `CNAME`, and `DNAME`.
-- **Extended records**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, and `TLSA`.
+- **Extended records**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB`, and `HTTPS`.
 - **Mail records**: `MX`, `SPF`, `DKIM`, and `DMARC`.
 
 > [!success]
@@ -394,7 +394,7 @@ Here, you will see all the DNS records you can add via the OVHcloud configuratio
 Using this assistant, you can add the following types of DNS records:
 
 - **Pointer fields**: `A`, `AAAA`, `NS`, `CNAME`, and `DNAME`.
-- **Extended fields**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, and `TLSA`.
+- **Extended fields**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB`, and `HTTPS`.
 - **Email fields**: `MX`, `SPF`, `DKIM`, and `DMARC`.
 
 > [!primary]
@@ -940,7 +940,7 @@ You can then perform one of the following actions (if you are the registrant dec
 
 Case #2 - The domain name appears in the list:
 
-This means that you do not have sufficient rights to manage the domain name from your [OVHcloud Control Panel](/links/manager). Perform a [WHOIS](/links/web/domains-whois) request to verify that you are indeed declared as the owner of the domain name.
+This means that you do not have sufficient rights to manage the domain name from your [OVHcloud Control Panel](/links/manager). Perform a [WHOIS](/links/web/domains-whois) request to verify that you are indeed declared as the holder of the domain name.
 
 You can then perform a [contact recovery procedure](/links/transversal/procedure-contact-change) so that your domain name is fully managed in your [OVHcloud Control Panel](/links/manager).
 

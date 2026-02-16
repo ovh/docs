@@ -1,7 +1,7 @@
 ---
 title: "How to secure your website?"
 excerpt: "Find out how to make your website more secure"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Objective
@@ -76,9 +76,16 @@ We also recommend checking regularly the **validity of the payment methods** you
 
 ### Step 6 - Check that your website is up to date
 
-Check your website updates regularly, following the instructions in this [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-update-your-website).
+Make sure your website is kept up to date, both in terms of content and technical components (CMS, extensions, PHP versions, and dependencies).
 
-Also remember to use a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/configure_your_web_hosting) on your Web Hosting plan.
+If you are using a CMS, refer to its official documentation for updates:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/en)
+
+Also, ensure that you are using a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/configure_your_web_hosting) on your Web Hosting plan.
 
 ### Step 7 - Activate HTTPS
 

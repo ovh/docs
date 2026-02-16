@@ -59,7 +59,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 >>
 > **Etap 2**
 >>
->> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się {.action} <br><br>
+>> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się`{.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3**

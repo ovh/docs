@@ -1,7 +1,7 @@
 ---
 title: VPN-SPN - Présentation du concept
 excerpt: 'Présentation du concept de VPN-SPN au sein de la solution SecNumCloud Connectivity'
-updated: 2021-11-18
+updated: 2025-12-15
 ---
 
 ## Objectif
@@ -80,21 +80,23 @@ Seul IKEv2 est supporté.
 **Intégrité (non nécessaire si GCM) :**
 
 * Sha256
+* Sha384
+* Sha512
 
 Sha1 n'est pas supporté.
 
 **Groupe DH :**
 
-* 14 : 2048
-* 16 : 4096
-* 19 : ECDH 256 bits
-* 20 : ECDH 384 bits
-* 24 : ECDH 2048 bits
+* 14: MODP 2048 bits
+* 15: MODP 3072 bits
+* 19: ECDH 256 bits
+* 20: ECDH 384 bits
+* 21: ECDH 521 bits
 
 **Fonction pseudo-aléatoire (*Pseudo-Random Function* ou PRF)**
 
 * Identique à l'intégrité si non GCM
-* SHA1 / SHA256 / SHA512
+* SHA256
 
 #### Routage sur tunnel
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire la cronologia degli SMS
 excerpt: Come consultare la cronologia degli SMS inviati dallo Spazio Cliente OVHcloud
-updated: 2022-08-05
+updated: 2025-12-30
 ---
 
 > [!primary]
@@ -25,7 +25,9 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 
 > [!primary]
 >
-> Nello Spazio Cliente è possibile visualizzare soltanto la cronologia degli ultimi 6 mesi. Per consultare gli SMS meno recenti, vai allo [Step 2: scarica la cronologia degli SMS in formato CSV](#csv).
+> Lo Spazio Cliente OVHcloud ti permette di consultare gli SMS inviati negli ultimi 6 mesi (o gli ultimi 5000 SMS se hai inviato più di 5000 SMS negli ultimi 6 mesi).
+>
+> Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [lo Step 2 di questa guida](#csv).
 >
 
 ### Step 1: consulta la cronologia dal tuo Spazio Cliente

@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Getting started with Terraform
+title: Getting started with Terraform for Public Cloud Databases
 excerpt: Find out how to order and manage your Public Cloud managed database service using Terraform
 updated: 2022-10-19
 ---
@@ -244,8 +244,6 @@ In this guide, we explained how to deploy a MongoDB service but you can find exa
 >> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql/terraform/hello-world)
 > PostgreSQL
 >> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql/terraform/hello-world)
-> Cassandra
->> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra/terraform/hello-world)
 
 ## Go further
 

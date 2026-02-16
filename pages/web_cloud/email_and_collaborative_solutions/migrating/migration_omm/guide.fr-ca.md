@@ -1,6 +1,6 @@
 ---
-title: 'Migrer des comptes e-mail via OVH Mail Migrator'
-excerpt: 'Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator'
+title: 'Migrer des comptes e-mail via OVHcloud Mail Migrator'
+excerpt: 'Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVHcloud Mail Migrator'
 updated: 2025-11-25
 ---
 
@@ -15,13 +15,13 @@ updated: 2025-11-25
 
 ## Objectif
 
-[OVH Mail Migrator](/links/web/omm) est un outil créé par OVHcloud qui répond au besoin de réversibilité. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou un service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mail.
+[OVHcloud Mail Migrator](/links/web/omm) est un outil créé par OVHcloud qui répond au besoin de réversibilité. Il permet de migrer vos comptes e-mail vers vos adresses e-mail OVHcloud ou un service e-mail externe. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos adresses e-mail.
 
-**Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator.**
+**Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVHcloud Mail Migrator.**
 
 ## Prérequis
 
-- Disposer d'un service e-mail externe ou chez OVHcloud, tel qu'une offre [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan seule ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d'un service e-mail externe ou chez OVHcloud, tel qu'une offre [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan seule ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes e-mail source).
 - Disposer des identifiants relatifs aux comptes e-mail de destination.
 

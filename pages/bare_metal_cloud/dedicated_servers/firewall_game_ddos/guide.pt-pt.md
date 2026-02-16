@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor de jogos com a firewall aplicacional"
 excerpt: "Descubra como configurar o OVHcloud Game DDoS Protection firewall"
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 <style>
@@ -18,7 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-
 ## Objetivo
 
 O objetivo deste guia é ajudá-lo a compreender melhor a nossa proteção Anti-DDoS Game (também conhecida como *Game firewall*) e a fornecer-lhe instruções sobre a forma de configurar uma proteção eficaz.
@@ -29,7 +28,7 @@ O objetivo deste guia é ajudá-lo a compreender melhor a nossa proteção Anti-
 
 Os nossos servidores dedicados Bare Metal gaming incluem uma proteção suplementar contra os ataques de rede especialmente concebida para proteger as aplicações de jogos contra os ataques direcionados, garantindo assim a estabilidade e a acessibilidade aos jogadores. Esta solução de proteção dedicada é robusta e fácil de utilizar, permitindo-lhe concentrar-se no desenvolvimento da sua empresa sem ter de se defender contra o crime cibernético.
 
-|![global-schema](images/global_schema_focus_game.png) |
+| ![global-schema](images/global_schema_focus_game_new.png) |
 |:--:|
 Esquema dos serviços de infraestrutura e de proteção dos jogos anti-DDoS na OVHcloud |
 
@@ -65,19 +64,19 @@ Para configurar as regras de proteção de jogos do seu servidor Bare Metal Game
 - Clique em `Network`{.action} no menu à esquerda do ecrã.
 - Clique em `Endereços IP Públicos`{.action}.
 
-Pode filtrar os endereços IP utilizando o menu pendente `Todos os serviços`{.action}. Introduza o nome ou a categoria do servidor correspondente:
+Pode filtrar os endereços IP utilizando o menu suspenso `Todos os tipos de serviço`{.action} ou introduzir diretamente o endereço IP desejado na barra de pesquisa. Indique o nome ou a categoria do servidor correspondente:
 
-| ![configure-game-firewall](images/ip_listing.png) |
+| ![configure-game-firewall](images/ip_listing_new.png) |
 |:--:|
 | Lista dos IP : encontre o endereço IP por serviço correspondente |
 
 Aceda à configuração do *Firewall Game*:
 
-| ![game-server](images/firewall_game_01_blur.png) |
+| ![game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Clique no botão `...`{.action} junto do endereço IP do seu servidor Game. |
+| Clique no botão `⁝`{.action} junto do endereço IP do seu servidor Game. |
 
-| ![configure-game-firewall](images/firewall_game_02.png) |
+| ![configure-game-firewall](images/firewall_game_02_new.png) |
 |:--:|
 | Clique em `Configurar a firewall GAME`{.action}. |
 
@@ -89,16 +88,15 @@ Neste momento, já pode configurar regras de proteção de jogos para o endereç
 
 Para ativar a proteção anti-DDoS Game, basta definir as aplicações de jogo bem como o intervalo de portas de rede (ou porta única) que lhe está associada:
 
-| ![add-rule-btn](images/firewall_game_03.png) |
+| ![add-rule-btn](images/firewall_game_03_new.png) |
 |:--:|
 | No ecrã seguinte, clique no botão `Adicionar uma regra`{.action} para adicionar uma regra ao *Firewall Game*. |
 
-
-A proteção anti-DDoS Game permite-lhe configurar até **100 regras por endereço IP** que apontam para um servidor de jogo Bare Metal de 3ª geração (2024, baseado no EPYC), ou até **30 regras por endereço IP** para as antigas gamas de jogos Bare Metal (geralmente identificadas como RISE-GAME ou SYS-GAME).
+A proteção anti-DDoS Game permite configurar até **100 regras por endereço IP** que apontam para um servidor Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024), ou até **30 regras por endereço IP** para as antigas gamas de jogos Bare Metal (geralmente identificadas como RISE-GAME ou SYS-GAME).
 
 Os protocolos de jogo suportados (títulos e versões de jogos que podem ser protegidos) podem mudar com o tempo. Além disso, podem ser diferentes entre as antigas gamas de servidores Bare Metal Game e as mais recentes. A lista mais recente dos perfis de jogos suportados está disponível [aqui](/links/security/ddos).
 
-| ![confirm-new-rule](images/firewall_game_04.png) |
+| ![confirm-new-rule](images/firewall_game_04_new.png) |
 |:--:|
 | Configure as proteções do jogo selecionando um **Protocolo** na lista e definindo o **intervalo de portas** no qual a aplicação do jogo recebe as ligações (consulte a documentação de instalação do jogo). De seguida, clique no botão `Confirmar`{.action} para guardar. A configuração das regras da *firewall game* está terminada. |
 
@@ -117,19 +115,19 @@ Além disso, recomendamos-lhe vivamente que defina a regra **"Default policy = D
 #### Ark Survival Evolved
 
 - **Ark Survival Evolved** : Motor principal de proteção.
-- **Ark Survival Evolved v.311.78** : Motor de proteção atualizado, adicionado na 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
+- **Ark Survival Evolved v.311.78** : Motor de proteção atualizado, adicionado aos servidores Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024).
 
 #### Counter Strike 2
 
-- **Counter Strike 2**: Novo motor de proteção adicionado na 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
+- **Counter Strike 2**: Novo motor de proteção adicionado aos servidores Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024).
 
 #### FiveM
 
-- **FiveM** é um modo multiplayer Grand Theft Auto V da Cfx.re, agora reconhecido pelo editor de jogos da Rockstar. Nós adicionámos o suporte de FiveM na 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
+- **FiveM** é um mod multijogador do Grand Theft Auto V da *Cfx.re*, agora reconhecido pela editora de jogos Rockstar. Adicionámos o suporte ao FiveM aos servidores Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024).
 
 ### Rust
 
-- **Rust** é suportado com um perfil de proteção dedicado em todas as gerações de servidores Bare Metal Game. Tenha em conta que atualizámos este perfil de proteção (ou seja, adicionámos o suporte de cookies RakNet) para a 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
+- **Rust** é suportado com um perfil de proteção dedicado em todas as gerações de servidores Bare Metal Game. Observe que atualizamos esse perfil de proteção (adicionamos suporte para cookies RakNet) para a 3ª geração de servidores Bare Metal Game (2024, baseado em EPYC).
 
 #### Minecraft
 
@@ -137,12 +135,12 @@ Minecraft é bem suportado pelos seguintes perfis:
 
 - **Java Minecraft**: Deve ser a melhor solução para todas as versões de Java Minecraft. Protege o protocolo Minecraft Query e está configurado para o tráfego TCP. Foi adicionado em 2024, mas também está disponível para as gerações anteriores de servidores Bare Metal Game. Atenção: se houver outros jogos UDP alojados no mesmo IP.
 - **Minecraft Query** : Proteção geral do protocolo Minecraft Query.
-- **Minecraft Bedrock**: Proteção Minecraft Bedrock (com suporte para cookies RakNet), adicionada na 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
-- **Minecraft Pocket Edition** : Proteção PE/Bedrock Minecraft, idêntica à Bedrock, conservada por razões de compatibilidade.
+- **Minecraft Bedrock**: Proteção Minecraft Bedrock (com suporte para cookies RakNet), adicionada aos servidores Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024).
+- **Minecraft Pocket Edition**: Proteção PE/Bedrock Minecraft, idêntica à Bedrock, mantida por motivos de compatibilidade.
 
 #### Valheim
 
-- **Valheim** : Novo motor de proteção, adicionado na 3ª geração de servidores Bare Metal Game (2024, baseado no EPYC).
+- **Valheim** : Novo motor de proteção, adicionado aos servidores Bare Metal Game das gamas GAME-1 e GAME-2 (a partir de 2024).
 
 > [!primary]
 > Se aloja um serviço de maior envergadura com um dos jogos suportados, mas observa falsos positivos provenientes dos sistemas de infraestrutura anti-DDoS, contacte a nossa assistência através do [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help) com todos os detalhes necessários para melhorar o perfil da aplicação.
@@ -165,7 +163,7 @@ Existem diferenças entre os servidores Game mais recentes (3ª geração de ser
 
 Todos os protocolos de proteção anti-DDoS Game suportados para um servidor específico estão visíveis na página de configuração `GAME firewall`{.action} para qualquer endereço IP que aponte para esse servidor, no menu pendente `Game protocol`{.action}:
 
-| ![control-panel-game-protocols](images/game_protocols_list.png) |
+| ![control-panel-game-protocols](images/game_protocols_list_new.png) |
 |:--:|
 | Lista de protocolos de proteção suportados |
 

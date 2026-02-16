@@ -81,7 +81,7 @@ Une implémentation cloud ready : une image est créée, intégrant tous les out
 
 Une application *Cloud Native* est une application entièrement automatisée dans la gestion de son architecture et dont le design intègre directement les notions de cloud computing répondant à trois principes :
 
-- Répartition : La charge de l'application doit être répartie sur plusieurs noeuds de manière dynamique pour gérer l'évolution de l'activité.
+- Répartition : La charge de l'application doit être répartie sur plusieurs nœuds de manière dynamique pour gérer l'évolution de l'activité.
 - Distribution : Les éléments critiques (données, services, ...) de l'application doivent être distribués à plusieurs endroits pour pallier à toute panne d'infrastructure.
 - L'auto réparation : Lors de la perte d'un élément de l'infrastructure, l'application sait reconnaitre la panne et réagir pour corriger le problème. Souvent un outil d'orchestration est couplé à un outil de monitoring pour gérer ces cas.
 

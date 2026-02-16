@@ -1,14 +1,12 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2025-10-21
+updated: 2026-01-06
 ---
 
 ## Objetivo
 
 Para proteger los servicios dde sus clientes expuestos en direcciones IP públicas, OVHcloud ofrece un firewall sin estado configurado e integrado en la **infraestructura anti-DDoS**: el Edge Network Firewall. Permite limitar la exposición de los servicios a los ataques DDoS, eliminando determinados flujos de red procedentes de fuera de la red de OVHcloud.
-
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía le mostrará cómo configurar el Edge Network Firewall para sus servicios.**
 
@@ -51,27 +49,15 @@ El Edge Network Firewall reduce la exposición a los ataques DDoS de red, ya que
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en la columna izquierda y seleccione `Direcciones IP públicas`{.action}.
 
-Puede utilizar el menú desplegable "Mis direcciones IP públicas y servicios asociados" para filtrar sus servicios por categorías.
+Puede utilizar el menú desplegable situado debajo de **Mis direcciones IP públicas y servicios asociados** para filtrar sus servicios por categoría, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+![filtrar los servicios](images/selectservice_cut_new.png){.thumbnail}
 
-A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente y seleccione primero `Crear firewall`{.action}.
+A continuación, haga clic en el botón `⁝`{.action} situado a la derecha de la IPv4 correspondiente y seleccione `Configurar el Edge Network Firewall`{.action} (o haga clic en el icono de estado de la columna **Edge Firewall**).
 
-![Activación del firewall de red](images/firewallcreation2022.png){.thumbnail}
+![Activación del firewall de red](images/firewall_config_new.png){.thumbnail}
 
-A continuación, se le pedirá que confirme. Se creará el firewall y podrá configurar las reglas.
-
-> [!primary]
->
-> El botón `Crear firewall`{.action} solo estará disponible para las IP que nunca hayan configurado un firewall. Si no es la primera vez que configura el firewall, puede omitir este paso.
->
-
-| ![Habilitando la configuración](images/activationconfig.png) |
-|:--:|
-| Haga clic en `Configuración del Edge Network Firewall`{.action} para empezar a configurarlo. |
-
-En esta página puede elegir entre **Activar** o **Desactivar** el firewall utilizando el botón del switch.
-También es posible hacerlo de otra manera explicada a continuación.
+Se le redirigirá a la página de configuración del firewall.
 
 Puede configurar hasta **20 reglas por IP**.
 
@@ -98,21 +84,21 @@ Puede configurar hasta **20 reglas por IP**.
 > Para más información, consulte las siguientes guías: [Configuración del firewall en Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) y [Configuración del firewall en Linux con iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**Para añadir una regla:**
+**Para añadir una regla**, haga clic en el botón `+ Añadir una regla`{.action}, situado en la parte superior izquierda de la página.
 
-| ![add-rule-btn](images/enf_add_rule.png) |
+| ![add-rule-btn](images/enf_add_rule_new.png) |
 |:--:|
-| Haga clic en `Añadir una regla`{.action}. |
+| Haga clic en `+ Añadir una regla`{.action}. |
 
 Para cada regla (excluyendo TCP), debe elegir:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) |
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
 |:--|
 | &bull; Una prioridad (de 0 a 19, siendo 0 la primera regla que se aplica, seguida de las demás) <br>&bull; Una acción (`Aceptar`{.action} o `Denegar`{.action}) <br>&bull; El protocolo <br>&bull; IP de origen (opcional) |
 
 Para cada regla **TCP**, debe elegir:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) |
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) |
 |:--|
 | &bull; Una prioridad (de 0 a 19, siendo 0 la primera regla que se aplica, seguida de las demás) <br>&bull; Una acción (`Aceptar`{.action} o `Denegar`{.action}) <br>&bull; El protocolo <br>&bull; IP de origen (opcional) <br>&bull; El puerto de origen (opcional) <br>&bull; El puerto de destino (opcional) <br>&bull; El estado TCP (opcional) <br>&bull; Fragmentos (opcional)|
 
@@ -130,21 +116,13 @@ Para cada regla **TCP**, debe elegir:
 > Las configuraciones de firewall con reglas de modo "Aceptar" únicamente no son efectivas en absoluto. Debe haber una instrucción acerca del tráfico que debe interrumpir el firewall. Verá una advertencia a menos que se cree la regla "Denegar".
 >
 
-**Activar el firewall:**
+**Activar/desactivar el firewall:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) |
+| ![activate-desactivate](images/enf_enable_disable_new.png) |
 |:--:|
-| `Activar`{.action} para activar |
+| Utilice el botón de encendido/apagado para activar o desactivar el firewall. |
 
-Después de la confirmación, el firewall se activará.
-
-**Desactivar el firewall:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:--:|
-| `Activar`{.action} para activar |
-
-Después de la confirmación, el firewall se desactivará.
+Tras la validación, el cortafuegos se activará o desactivará.
 
 Tenga en cuenta que las reglas se desactivan hasta que se detecta un ataque y, a continuación, se activan. Esta lógica se puede utilizar para reglas que sólo están activas cuando entra un ataque repetido conocido.
 

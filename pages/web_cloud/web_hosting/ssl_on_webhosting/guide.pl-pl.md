@@ -1,7 +1,7 @@
 ---
 title: "Hosting - Zarządzanie certyfikatem SSL"
 excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud"
-updated: 2025-06-16
+updated: 2025-12-16
 ---
 
 ## Wprowadzenie 
@@ -34,16 +34,18 @@ Posiadanie certyfikatu SSL dla strony www jest niezbędne, aby używać go w HTT
 
 > [!warning]
 >
-> **Zanim przejdziesz dalej**, sprawdź, czy **nazwa(y) domeny i/lub subdomeny(y)**, której(e) będzie dotyczył(e) Twój przyszły certyfikat SSL:
+> **Zanim przejdziesz dalej**, sprawdź, czy **nazwa lub nazwy domen i/lub subdomen** objęte Twoim lub Twoimi przyszłymi certyfikatami SSL:
 >
-> - przekierowuje(a) na adres IP Twojego hostingu;
-> - jest (jest) zadeklarowany(e) w opcji MultiSite na Twoim hostingu.
+> - wskazuje/wskazują na adres IP Twojego hostingu.
+> - jest/są zarejestrowany/e na jednej ze stron Twojego hostingu.
+> - nie posiada/posiadają już aktywnego certyfikatu SSL.
 >
-> Sprawdź przewodniki:
+> Aby się upewnić co do metody, zapoznaj się z naszymi przewodnikami:
 >
-> - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
-> - [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+> - [Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
 > - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+> - [Hosting - Zarządzanie certyfikatem SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting), sekcja **Wyłączenie certyfikatu SSL na hostingu**.
 
 ### Aktywacja certyfikatu SSL na Twoim hostingu <a name="ssl-enable"></a>
 
@@ -51,56 +53,55 @@ OVHcloud oferuje 4 rozwiązania do aktywacji/instalacji certyfikatu SSL na hosti
 
 Zapoznaj się z 4 linkami do przewodników dotyczących tych 4 rozwiązań:
 
-- [Aktywacja bezpłatnego certyfikatu SSL Let's Encrypt (DV)](/pages/web_cloud/web_hosting/ssl_letsencrypt): certyfikat może zawierać do **99** nazwy domen/subdomen zadeklarowanych na hostingu.
-- [Aktywacja płatnego certyfikatu SSL Sectigo (DV)](/pages/web_cloud/web_hosting/ssl_dv): certyfikat ważny dla jednej domeny + jej subdomeny w "www" (przykład: `domain.tld` i `www.domain.tld`) lub **tylko** subdomena (przykład: `sub.domain.tld`).
-- [Aktywacja płatnego certyfikatu SSL Sectigo (EV)](/pages/web_cloud/web_hosting/ssl_ev): certyfikat ważny dla jednej domeny + jej subdomeny w "www" (przykład: `domain.tld` i `www.domain.tld`) lub **tylko** subdomena (przykład: `sub.domain.tld`).
-- [Zainstaluj spersonalizowany certyfikat SSL](/pages/web_cloud/web_hosting/ssl_custom) : jeśli posiadasz własny certyfikat SSL lub jeśli którekolwiek z 3 poprzednich rozwiązań nie odpowiada Twoim potrzebom.
-
-> [!primary]
->
-> Można zainstalować tylko jeden certyfikat SSL na hosting (spośród 4 wyżej wymienionych rozwiązań).
->
-> Jeśli chcesz aktywować certyfikat SSL dla kilku domen/subdomen zadeklarowanych na Twoim hostingu, zdecyduj się na instalację [bezpłatnego certyfikatu SSL Let's Encrypt](/links/web/hosting-options-ssl) lub zainstaluj własny [spersonalizowany certyfikat SSL](/pages/web_cloud/web_hosting/ssl_custom).
+- [Hosting WWW - Aktywacja darmowego certyfikatu SSL Let's Encrypt](/pages/web_cloud/web_hosting/ssl_letsencrypt): Bezpłatny certyfikat dostępny wraz z naszym hostingiem.
+- [Hosting www - Aktywacja certyfikatu SSL Sectigo DV](/pages/web_cloud/web_hosting/ssl_dv): Certyfikat ważny dla jednej domeny + jej subdomeny w "www" (na przykład: `domain.tld` i `www.domain.tld`) lub **tylko** subdomena (na przykład: `sub.domain.tld`).
+- [Hosting WWW - Aktywacja certyfikatu SSL Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev): Certyfikat ważny dla jednej domeny + jej subdomeny w "www" (na przykład: `domain.tld` i `www.domain.tld`) lub **tylko** subdomena (na przykład: `sub.domain.tld`).
+- [Hosting - Instalacja spersonalizowanego certyfikatu SSL](/pages/web_cloud/web_hosting/ssl_custom): Jeśli posiadasz własny certyfikat SSL lub jeśli żadne z 3 poprzednich rozwiązań nie odpowiada Twoim potrzebom.
 
 ### Usunięcie certyfikatu SSL na hostingu <a name="delete-ssl"></a>
 
 > [!warning]
 >
-> Jeśli chcesz usunąć certyfikat SSL z Twojego hostingu i **przed kontynuacją**, upewnij się, że usunięcie certyfikatu SSL nie zakłóci dostępności Twoich stron WWW. W przeciwnym razie użytkownicy napotkają błąd bezpieczeństwa podczas próby uzyskania dostępu do Twojej strony WWW przy użyciu protokołu "HTTPS".
-
-Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
-
-> [!primary]
->
-> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
->
-> Dalsza część tego przewodnika jest skierowana do klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
-> Aby sprawdzić, czy migracja została wykonana, przejdź do strony Hosting w Panelu klienta i w zakładce `Certyfikaty SSL`.
-> Jeśli zakładka `Certyfikaty SSL` jest aktywna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku zapoznaj się z [ten przewodnik](/pages/web_cloud/web_hosting/ssl_management) i zarządzaj certyfikatem SSL.
->
-> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
->
-> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
-
-Aby usunąć certyfikat SSL zainstalowany na Twoim hostingu, wykonaj następujące czynności:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. Kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
-6. Przejdź do ramki zatytułowanej `Konfiguracja`.
-7. Po prawej stronie wzmianki `Certyfikat SSL` kliknij przycisk `...`{.action}, a następnie `Usuń SSL`{.action}.
-8. W oknie, które się wyświetli kliknij `Zatwierdź`{.action}, aby potwierdzić usunięcie certyfikatu SSL.
-
-![Delete SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
-
-Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
-
-> [!warning]
->
 > Usunięcie płatnego certyfikatu SSL **Sectigo** (DV lub EV) jest definitywne, nawet jeśli certyfikat jeszcze nie wygasł. Nie wykonasz zwrotu wpłaconej sumy za niewykorzystany czas. Jeśli chcesz ponownie zainstalować certyfikat SSL **Sectigo** (DV lub EV), musisz obowiązkowo złożyć nowe zamówienie i zapłacić za cały nowy wykupiony certyfikat SSL.
 >
+> Ponadto, jeśli chcesz trwale wyłączyć certyfikat SSL na Twoim hostingu, upewnij się **przed kontynuowaniem**, że definitywne wyłączenie certyfikatu SSL nie uniemożliwi dostępu do Twoich stron WWW. W przeciwnym razie użytkownicy napotkają błąd bezpieczeństwa podczas próby uzyskania dostępu do Twojej strony WWW przy użyciu protokołu "HTTPS".
+>
+> Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
+
+Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków:
+
+> [!tabs]
+> **Krok 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
+>>
+>> ![Certyfikaty SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
+>>
+> **Krok 4**
+>>
+>> W tabeli na dole nowej strony, która się wyświetli, kliknij przycisk `⁝`{.action} po prawej stronie wiersza odpowiadającego danej domenie, po czym kliknij `Wyłącz SSL`{.action}.
+>>
+>> ![Wyłącz SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/disable-ssl.png){.thumbnail}
+>>
+> **Krok 5**
+>>
+>> W wyświetlonym oknie potwierdź dezaktywację, klikając `Zatwierdź`{.action}.
+>>
+>> ![Usuń SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/ssl-deletion.png){.thumbnail}
+
+Certyfikat SSL zostanie dezaktywowany najwyżej w ciągu kilku godzin.
 
 ### Popraw często występujące błędy przy użyciu certyfikatów SSL oferowanych na hostingu
 
@@ -108,9 +109,7 @@ Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
 Ten komunikat wskazuje, że jesteś już właścicielem certyfikatu SSL. Nie ma więc potrzeby aktywacji nowego certyfikatu SSL na Twoim hostingu.
 
-- 1 : Jeśli certyfikat SSL zainstalowany na Twoim hostingu jest bezpłatnym certyfikatem SSL Let's Encrypt, zapoznaj się z naszym przewodnikiem na temat certyfikatu SSL [Let's Encrypt (DV)](/pages/web_cloud/web_hosting/ssl_letsencrypt), aby kontynuować Twoje działania.
-
-- 2: Jeśli certyfikat SSL zainstalowany na Twoim hostingu nie jest tym, którego chcesz użyć, możesz [usunąć aktualny certyfikat SSL](#delete-ssl), a następnie [aktywować nowy certyfikat SSL](#ssl-enable) na Twoim hostingu.
+Jeśli certyfikat SSL zainstalowany na Twoim hostingu nie jest tym, którego chcesz użyć, możesz [dezaktywować aktualny certyfikat SSL](#delete-ssl), a następnie [aktywować nowy certyfikat SSL](#ssl-enable) na Twoim hostingu.
 
 #### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
 
@@ -129,10 +128,6 @@ Jeśli włączyłeś opcję GeoCache w Twoim hostingu, możesz również użyć 
 Aby sprawdzić adres IP hostingu, zapoznaj się z naszym przewodnikiem "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
-- 3: Żadna z domen w zakładce "MultiSite" nie posiada opcji SSL "active":
-
-Aby rozwiązać ten problem, włącz certyfikat SSL dla domeny (domen). Jeśli potrzebujesz bardziej szczegółowych informacji, zapoznaj się z częścią "[Aktywacja certyfikatu SSL](#ssl-enable)" niniejszego przewodnika, aby kontynuować Twoje działania.
-
 #### Zamówiłeś certyfikat SSL Sectigo EV w tym samym czasie, co Twój hosting, ale certyfikat nie jest jeszcze aktywny i hosting nie działa poprawnie
 
 Ma to związek z etapami, które musisz przeprowadzić, aby aktywować certyfikat SSL EV na Twoim hostingu.
@@ -142,7 +137,6 @@ W razie potrzeby sprawdź przewodnik "[Hosting WWW - Aktywacja certyfikatu SSL S
 > [!primary]
 >
 > Jeśli certyfikat SSL EV nie jest aktywny, zamówienie nie zostanie nigdy zamknięte i nie zostanie utworzona faktura. Z tego powodu usługa hostingu nie będzie działać prawidłowo.
->
 
 #### Po wygaśnięciu certyfikatu SSL Sectigo (DV lub EV) wystąpi błąd "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
 
@@ -167,7 +161,6 @@ W razie potrzeby sprawdź przewodnik "[Hosting WWW - Ustaw HTTPS na stronie WWW]
 > [!success]
 >
 > Odpowiednie elementy na stronie internetowej można zobaczyć bezpośrednio z informacji SSL przeglądarki internetowej, sprawdzając *szczegóły certyfikatu*.
->
 
 ## Sprawdź również
 

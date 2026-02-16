@@ -140,7 +140,7 @@ Lorsque le versioning est activé :
 
 #### Afficher les différentes versions d'un objet
 
-> ![tabs]
+> [!tabs]
 > Via l'espace client OVHcloud
 >> Pour consulter les différentes versions d’un objet, cliquez directement sur l’objet concerné. Vous serez redirigé vers une page détaillant les informations et versions disponibles pour cet objet :
 >>

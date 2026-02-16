@@ -75,9 +75,16 @@ Nous vous recommandons aussi de vérifier régulièrement la **validité des moy
 
 ### Étape 6 - Vérifier que votre site web est à jour
 
-Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
+Assurez-vous que votre site web est maintenu à jour, tant au niveau du contenu que des composants techniques (CMS, extensions, versions de PHP et dépendances).
 
-Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
+Si vous utilisez un CMS, consultez sa documentation officielle pour le mettre à jour :
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/fr)
+
+Veillez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
 ### Étape 7 - Activer le HTTPS
 

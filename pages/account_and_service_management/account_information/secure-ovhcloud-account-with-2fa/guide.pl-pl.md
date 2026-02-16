@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/QBbCw6r)
-
 ## Wprowadzenie
 
 OVHcloud oddaje do Twojej dyspozycji narzędzia pozwalające zwiększyć bezpieczeństwo Twojego konta i naszych usług.

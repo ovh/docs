@@ -1,7 +1,7 @@
 ---
 title: 'Historial de envíos'
 excerpt: 'Cómo gestionar el historial de envíos de sus SMS desde una cuenta de OVHcloud'
-updated: 2022-08-05
+updated: 2025-12-30
 ---
 
 > [!primary]
@@ -25,7 +25,9 @@ El historial de envíos incluye información sobre la fecha, el remitente, el de
 
 > [!primary]
 >
-> El área de cliente solo permite consultar los últimos seis meses del historial de envío. Para consultar los SMS anteriores a esta fecha, vaya al paso [2. Descargar el historial de sus SMS en CSV](#csv).
+> El área de cliente de OVHcloud permite consultar los SMS enviados en los últimos 6 meses (o los últimos 5000 SMS si ha enviado más de 5000 en los últimos 6 meses).
+>
+> Para consultar SMS anteriores (hasta los últimos 12 meses), deberá descargar el historial de sus SMS en formato CSV. Consulte [el paso 2 de esta guía](#csv).
 >
 
 ### 1. Consultar el historial en el área de cliente

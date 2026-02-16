@@ -1,31 +1,31 @@
 ---
-title: "Przekierowanie domeny zarządzanej w OVHcloud"
-excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
-updated: 2025-04-28
+title: "Przekierowanie nazwy domeny zarządzanej w OVHcloud"
+excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla nazwy domeny zarządzanej w OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Wprowadzenie
 
-Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. Istnieją różne rodzaje przekierowań, z których każdy odpowiada konkretnej potrzebie.
+Przekierowanie nazwy domeny polega na przekierowaniu jej na nową docelową stronę. Istnieją różne rodzaje przekierowań, z których każdy odpowiada konkretnej potrzebie.
 
-**Sprawdź różne sposoby przekierowania domeny**
+**Sprawdź różne sposoby przekierowania nazwy domeny**
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains)
+- Posiadanie [nazwy domeny](/links/web/domains)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
 
 ## W praktyce
 
-### Poznaj przekierowanie domeny
+### Poznaj przekierowanie nazwy domeny
 
-Funkcja ta pozwala na przekierowanie domeny/subdomeny na:
+Funkcja ta pozwala na przekierowanie nazwy domeny/subdomeny na:
 
-- inna już istniejąca domena/subdomena:
+- inna już istniejąca nazwa domeny/subdomena:
     - **Przykład**: `domain.tld`
 - adres URL (Uniform Resource Locator):
-    - **Przykłady**: `http://www.domain.tld/welcome/` lub `https://www.domain.tld/welcome/` (jeśli domena docelowa posiada kompatybilny certyfikat SSL).
+    - **Przykłady**: `http://www.domain.tld/welcome/` lub `https://www.domain.tld/welcome/` (jeśli nazwa domeny docelowej posiada kompatybilny certyfikat SSL).
 
 Działania te mogą być przeprowadzane na kilka sposobów:
 
@@ -37,14 +37,14 @@ Działania te mogą być przeprowadzane na kilka sposobów:
 > Uruchomienie przekierowania może mieć wpływ na pozycjonowanie Twojej strony WWW. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner) w celu pozycjonowania strony, jeśli to konieczne.
 >
-> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links/manager) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
+> Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](/links/manager) nie pozwala na przekierowanie adresu URL na `https://` na inną nazwę domeny lub adres URL. 
 > Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), na przykład przez plik ".htaccess".
 
-### Przekieruj domenę w Panelu klienta
+### Przekieruj nazwę domeny w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę. Kliknij zakładkę `Przekierowanie`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią nazwę domeny. Kliknij zakładkę `Przekierowanie`{.action}.
 
-Tabela wyświetla aktywne przekierowania dla Twojej domeny. Możesz zarządzać istniejącymi przekierowaniami za pomocą przycisku `...`{.action} znajduje się po prawej stronie każdej linii.
+Tabela wyświetla aktywne przekierowania dla Twojej nazwy domeny. Możesz zarządzać istniejącymi przekierowaniami za pomocą przycisku `...`{.action} znajduje się po prawej stronie każdej linii.
 
 Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
@@ -52,7 +52,7 @@ Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
 Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links/manager). Każda z nich składa się z **5 kolejnych etapów**. 
 
-> W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
+> W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie nazwy domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
 >
 > Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web_cloud/domains/dns_zone_records).
@@ -67,7 +67,7 @@ Poniżej znajdziesz trzy rodzaje przekierowań opisanych krok po kroku.
 
 ### Opcja 1: stałe przekierowanie widoczne na adres www
 
-Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny docelowej na pasku adresowym przeglądarki internetowej zamiast przekierowanej domeny.
+Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazwy domeny docelowej na pasku adresowym przeglądarki internetowej zamiast przekierowanej nazwy domeny.
 
 - **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain2.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
@@ -81,9 +81,9 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 > [!tabs]
 > **Etap 1**
 >>
->> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
->> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla nazwy domeny/subdomeny.
 >>
 >> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -107,7 +107,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 > **Etap 4**
 >>
->> Wybierz `Permanente (301)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>> Wybierz `Permanente (301)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
 >> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
@@ -123,7 +123,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >> 
 >> > [!primary]
 >> >
->> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z nazw domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
 >> >
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
 >> >
@@ -131,7 +131,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 
 ### Opcja 2: tymczasowe przekierowanie widoczne na adres www
 
-Podobnie jak w przypadku opcji 1, ta opcja pozwala na wyświetlenie domeny docelowej na pasku adresowym przeglądarki internetowej, a nie przekierowanej domeny po wpisaniu przekierowanego.
+Podobnie jak w przypadku opcji 1, ta opcja pozwala na wyświetlenie nazwy domeny docelowej na pasku adresowym przeglądarki internetowej, a nie przekierowanej nazwy domeny po wpisaniu przekierowanego.
 
 Należy je jednak stosować doraźnie, na przykład w przypadku zdarzeń ulotnych.<br>
 Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **przekierowania widocznego** typu 301 (kod HTTP).
@@ -148,9 +148,9 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 > [!tabs]
 > **Etap 1**
 >>
->> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
->> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla nazwy domeny/subdomeny.
 >>
 >> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -174,7 +174,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 > **Etap 4**
 >>
->> Wybierz `Tymczasowe (302)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>> Wybierz `Tymczasowe (302)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
 >> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
@@ -190,7 +190,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >> 
 >> > [!primary]
 >> >
->> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z nazw domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
 >> >
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
 >> >
@@ -198,16 +198,16 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 
 ### Opcja 3: przekierowanie niewidoczne na adres www
 
-To przekierowanie pozwala na pozostawienie domeny na pasku adresowym przeglądarki internetowej, zamiast zastępowania jej domeną docelową.<br>
+To przekierowanie pozwala na pozostawienie nazwy domeny na pasku adresowym przeglądarki internetowej, zamiast zastępowania jej nazwą domeny docelową.<br>
 **Uwaga, ta operacja nie jest kompatybilna ze wszystkimi stronami i wpływa na pozycjonowanie Twojej strony.**.
 
 - **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain1.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
 ![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
-Przekierowanie niewidoczne działa na znaczniku HTML *iFrame*. Pozwala ona domenie przekierowanej na zintegrowanie zawartości innej strony odpowiadającej domenie docelowej ze swoją stroną HTML.
+Przekierowanie niewidoczne działa na znaczniku HTML *iFrame*. Pozwala ona nazwie domeny przekierowanej na zintegrowanie zawartości innej strony odpowiadającej nazwie domeny docelowej ze swoją stroną HTML.
 
-Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić docelową domenę
+Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić docelową nazwę domeny
 
 > Ta opcja zwróci kod HTTP 200.
 
@@ -223,9 +223,9 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 > [!tabs]
 > **Etap 1**
 >>
->> W oknie pojawi się Twoja domena do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
+>> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
->> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
+>> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla nazwy domeny/subdomeny.
 >>
 >> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 > **Etap 4**
 >>
->> Wybierz `Tymczasowe (iframe)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
+>> Wybierz `Tymczasowe (iframe)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
 >> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
@@ -271,7 +271,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >> 
 >> > [!primary]
 >> >
->> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
+>> > Jeśli wyświetla się komunikat "*Istnieją przekierowania z nazw domen, które chcesz przekierować, które wchodzą w konflikt z przekierowaniami, które chcesz dodać*", możesz zaznaczyć kratkę `Potwierdź usunięcie istniejącego przekierowania`{.action}, aby wymusić zastosowanie przekierowania.
 >> >
 >> > Uwaga: poprzednia konfiguracja zostanie wyłączona i usunięta.
 >> >
@@ -380,17 +380,17 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
+[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Chroń interfejs administracyjny swojej strony za pomocą ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+[Chroń interfejs administracyjny swojej strony za pomocą ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 
 [Stworzenie adresów URL za pomocą mod_rewrite](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-[Wykonywanie innych operacji za pomocą pliku ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do).
+[Wykonywanie innych operacji za pomocą pliku ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do)
 
 [Jak edytować strefę DNS?](/pages/web_cloud/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

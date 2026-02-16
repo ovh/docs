@@ -1,7 +1,7 @@
 ---
 title: "Configure an MX record for email management"
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -15,13 +15,13 @@ With an MX record, you can link a domain name to the server on your email platfo
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](/links/manager).
 - The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
-- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting)), [Exchange](/links/web/emails), or an external email service.
+- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting)), [Exchange](/links/web/emails-exchange), or an external email service.
 
 > [!primary]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to modify the MX records using the interface of the service provider that manages your domain name configuration.
 >
-> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers** : If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
+> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers**: If you see `Standards` underneath it, your domain name is using the OVHcloud DNS servers.
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
@@ -49,7 +49,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
-Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (included in an [OVHcloud web hosting](/links/web/hosting) plan) and [Exchange](/links/web/emails). Our email servers have antispam and antivirus integrated.
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (included in an [OVHcloud web hosting](/links/web/hosting) plan) and [Exchange](/links/web/emails-exchange). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|

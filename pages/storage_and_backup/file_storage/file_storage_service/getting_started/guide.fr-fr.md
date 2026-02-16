@@ -1,25 +1,24 @@
 ---
-title: "File Storage Service - Premiers pas (Alpha)"
+title: "File Storage Service - Premiers pas (bêta)"
 excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de shares, l’accès des clients et le montage sur vos machines virtuelles."
-updated: 2025-10-21
+updated: 2026-01-19
 ---
 
 ## Objectif
 
 OVHcloud propose un service File Storage basé sur OpenStack Manila. Ce service fournit des shares NFS gérés sur des réseaux privés, avec un accès ReadWriteMany (RWX) possible depuis plusieurs instances ou pods Kubernetes.
 
-Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
+Il est accessible via les API OVHcloud, OpenStack CLI et API, Manila CSI et Terraform.
 
 > [!warning]
 >
-> Ce service est actuellement en Alpha, disponible uniquement dans la région **SBG5** et réservé aux clients Alpha enregistrés. Les fonctionnalités et la disponibilité peuvent évoluer.
+>  Ce service est actuellement en version bêta et disponible uniquement dans les régions **SBG5**, **DE1** et **GRA**. Les fonctionnalités et la disponibilité peuvent être modifiées.
 >
-> Pendant la phase Alpha, la taille autorisée des shares varie entre 10 Gio et 5 Tio.
+> Pendant la phase bêta, la taille autorisée des shares varie entre 150 Gio à 10 Tio.
 >
 
 ## Prérequis
 
-- Votre projet est autorisé pour Manila Alpha (inscrivez-vous [ici](https://labs.ovhcloud.com/en/file-storage/))
 - Vous disposez déjà d’un [réseau privé](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) dans votre projet Public Cloud
 - Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Un [environnement CLI OpenStack prêt à l’emploi](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
@@ -28,11 +27,255 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 
 > [!primary]
 >
-> Actuellement, le service File Storage ne peut être consulté et géré que via la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
+> Actuellement, le service File Storage ne peut être consulté et géré que via les API OVHcloud et la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
 >
 
 > [!tabs]
+> Via l'API OVHcloud
+>> **1\. Créer un share**
+>>
+>> Identifiez votre réseau privé et votre sous-réseau.
+>>
+>> Avant de créer ou d'associer un service File Storage, vous devez identifier le réseau privé cible.
+>>
+>> Récupérez l'ID du réseau :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "581fad02-158d-4dc6-81f0-c1ec2794bbec",
+>>     "name": "Ext-Net",
+>>     "visibility": "public",
+>>     "vlanId": null
+>>   },
+>>   {
+>>     "id": "[NETWORK_ID]",
+>>     "name": "<my-network-name>",
+>>     "visibility": "private",
+>>     "vlanId": 2701
+>>   }
+>> ]
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **Note :** Sélectionnez uniquement un réseau privé.
+>> >
+>>
+>> Récupérez l'ID du sous-réseau à l'aide de l'ID réseau :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/network/{networkId}/subnet
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> [
+>>   {
+>>     "id": "[SUBNET_ID]",
+>>     "name": "subnet-name",
+>>     "cidr": "10.1.0.0/24",
+>>     "ipVersion": 4,
+>>     "dhcpEnabled": true,
+>>     "gatewayIp": "10.1.0.1",
+>>     "allocationPools": [
+>>       {
+>>         "start": "10.1.0.2",
+>>         "end": "10.1.0.254"
+>>       }
+>>     ],
+>>     "hostRoutes": [],
+>>     "dnsNameServers": [
+>>       "1.1.1.1"
+>>     ]
+>>   }
+>> ]
+>> ```
+>>
+>> L'ID réseau et l'ID sous-réseau doivent tous deux respecter le format suivant : `abc12345-def6-4abc-8def-123456abcdef`.
+>>
+>> Créez un share NFS de 150 Gio connecté à votre réseau privé :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> > [!primary]
+>> >
+>> > **Note :** Remplacez <my-share-name> par le nom de share que vous avez choisi.
+>> >
+>>
+>> Répertoriez vos actions et attendez que la nouvelle action apparaisse avec le statut `available`.
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       ...
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "string"
+>>     }
+>>   ],
+>>   "id": "[SHARE_ID]",
+>>   "isPublic": false,
+>>   "name": "<my-share-name>",
+>>   "protocol": "NFS",
+>>   "region": "[REGION]",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > **Note :** L'identifiant du share doit avoir le format `abc12345-def6-4abc-8def-123456abcdef`.
+>> >
+>>
+>> Récupérez les détails du share à l'aide de l'ID de share :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "capabilities": [
+>>     {
+>>       "enabled": true,
+>>       "name": "<my-share-name>"
+>>     }
+>>   ],
+>>   "createdAt": "2026-01-14T08:23:30.079Z",
+>>   "description": "<my-share-description>",
+>>   "exportLocations": [
+>>     {
+>>       "id": "string",
+>>       "path": "10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef"
+>>     }
+>>   ],
+>>   "id": "abc12345-def6-4abc-8def-123456abcdef",
+>>   "isPublic": false,
+>>   "name": "string",
+>>   "protocol": "NFS",
+>>   "region": "string",
+>>   "size": 150,
+>>   "status": "available",
+>>   "type": "standard-1az",
+>>   "updatedAt": "2026-01-14T08:23:30.079Z"
+>> }
+>> ```
+>>
+>> **2\. Autoriser une machine virtuelle cliente**
+>>
+>> Assurez-vous que la machine virtuelle cliente se trouve sur le même réseau privé que le share.
+>>
+>> Récupérez l'adresse [IP privée de la machine virtuelle](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>>
+>> Accordez l'accès au share à l'aide de l'adresse IP privée de la machine virtuelle (par exemple, 10.1.0.123) via la gestion ACL :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl
+>> >
+>>
+>> Exemple de résultat :
+>>
+>> ```json
+>> {
+>>   "accessLevel": "rw",
+>>   "accessTo": "10.1.0.123",
+>>   "createdAt": "2026-01-14T10:26:14.446Z",
+>>   "id": "[ACL_ID]",
+>>   "status": "active",
+>>   "updatedAt": "2026-01-14T10:26:14.446Z"
+>> }
+>> ```
+>> 
+>> Vérifiez l'accès au share NFS à partir de la machine virtuelle cliente autorisée :
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/share/{id}/acl/{aclId}
+>> >
+>>
+>> **3\. Montez le share sur votre machine virtuelle cliente**
+>>
+>> Connectez-vous à votre machine virtuelle cliente et installez les utilitaires NFS nécessaires pour monter le share :
+>>
+>> ```bash
+>> sudo apt update && sudo apt install -y nfs-common
+>> ```
+>>
+>> Créez un point de montage et montez le share :
+>>
+>> ```bash
+>> sudo mkdir -p /mnt/share && sudo mount -t nfs4 10.1.0.12:/shares/share-abc12345-def6-4abc-8def-123456abcdef /mnt/share
+>> ```
+>>
+>> Vérifiez le montage :
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Rendez le montage persistant après les redémarrages :
+>>
+>> ```bash
+>> echo "<NFS_EXPORT_PATH> /mnt/share nfs nfsvers=4 defaults,noauto 0 0" | sudo tee -a /etc/fstab
+>> ```
+>>
+>> Cela garantit que le share NFS est automatiquement remonté après le redémarrage de la VM.
+>>
+>> **4\. Vérifier la capacité et l'utilisation**
+>>
+>> Une fois le share NFS monté, vérifiez son espace disponible et son utilisation :
+>>
+>> ```bash
+>> df -h /mnt/share
+>> ```
+>>
+>> Exemple de résultat :
+>>
+>> ```bash
+>> Filesystem                          Size  Used  Avail Use% Mounted on
+>> 10.1.0.12:/shares/share-abc1...     150G  100M   150G   1% /mnt/share
+>> ```
+>>
+>> **Note :** Cela vous permet de surveiller la capacité de stockage et l'utilisation de votre share NFS.
+>>
 > Via la CLI OpenStack avec le plugin Manila
+> >> **Prérequis supplémentaires**
+>>
+>> - Assurez-vous que l'utilisateur OpenStack dispose du rôle ``Administrator` ou `Share operator`.
+>>
 >> **1\. Installer le plugin CLI Manila**
 >>
 >> Si les commandes Manila ne sont pas encore disponibles, installez le plugin :
@@ -68,13 +311,13 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> +----------+-----------+------------+------------+
 >> | ID       | Name      | Visibility | Is Default |
 >> +----------+-----------+------------+------------+
->> | acceb7b4 | generic_0 | public     | True       |
+>> | acceb7b4 | standard-1az | public     | True       |
 >> +----------+-----------+------------+------------+
 >> ```
 >>
 >> > [!primary]
 >> >
->> > Remarque : Pour le type generic_0, vous devez obligatoirement choisir un share network, sinon le share ne pourra pas être créé.
+>> > Remarque : Le type `standard-1az` utilise `driver_handles_share_servers = True`, ce qui signifie que vous devez associer un réseau partagé lors de la création d'un share.
 >> >
 >>
 >> **3\. Créer un Share Network**
@@ -126,7 +369,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> ```bash
 >> openstack share create \
 >>   --os-region-name <REGION_NAME> \
->>   --share-type generic_0 \
+>>   --share-type standard-1az \
 >>   --share-network <my-share-network-name> \
 >>   --name <my-first-share-name> \
 >>   NFS 150
@@ -277,7 +520,6 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> | `Unknown command ['share']` | CLI Manila non installée                         | Installez-la avec `sudo apt install python3-manilaclient`                                  |
 >> | `Share network must be set` | Utilisation d’un type de share DHSS=True       | Fournissez `--share-network`                                                               |
 >> | Cannot mount NFS            | IP non autorisée ou réseau incorrect             | Assurez-vous que la VM est sur le même sous-réseau privé et que la règle d’accès est créée |
->> | `403 Forbidden`             | Projet non autorisé pour Manila                  | Assurez-vous d’être inscrit à l’Alpha                                                      |
 >> | Share stuck in creating     | ID de réseau ou sous-réseau invalide             | Vérifiez `NETWORK_ID` et `SUBNET_ID`                                                       |
 >>
 > Via Manila CSI dans l'environnement K8s
@@ -573,7 +815,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>   # Manila share type
 >>   # default value: default
 >>   # openstack share type list to find proper value
->>   type: generic_0
+>>   type: standard-1az
 >>   # /!\ MANDATORY /!\
 >>   # openstack share network list
 >>   shareNetworkID: "<OS_SHARE_NETWORK_ID>"
@@ -599,7 +841,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> kubectl apply -f dynamic-storageclass.yaml
 >> ```
 >>
->> Une fois la StorageClass créée, créez un fichier nommé `nfs-pvc.yaml` définissant une PersistentVolumeClaim (PVC) qui utilise cette StorageClass. Par exemple, demandez un volume de 15 Gi avec un accès `ReadWriteMany` (RWX) :
+>> Une fois la StorageClass créée, créez un fichier nommé `nfs-pvc.yaml` définissant une PersistentVolumeClaim (PVC) qui utilise cette StorageClass. Par exemple, demandez un volume de 150 Gio avec un accès `ReadWriteMany` (RWX) :
 >>
 >> ```yaml
 >> apiVersion: v1
@@ -611,7 +853,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>     - ReadWriteMany
 >>   resources:
 >>     requests:
->>       storage: 15Gi
+>>       storage: 150Gi
 >>   storageClassName: csi-manila-nfs
 >> ```
 >>
@@ -631,7 +873,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> | ID                                   | Name                                     | Size | Share Proto | Status    | Is Public | Share Type Name | Host | Availability Zone |
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
->> | 9484d5f3-7bf7-486b-b88e-40bbedeet9f3 | pvc-78135a68-c6f4-48fe-8644-454b387a3ad4 |   15 | NFS         | available | False     | generic_0       |      | nova              |
+>> | 9484d5f3-7bf7-486b-b88e-40bbedeet9f3 | pvc-78135a68-c6f4-48fe-8644-454b387a3ad4 |   150 | NFS         | available | False     | standard-1az       |      | nova              |
 >> +--------------------------------------+------------------------------------------+------+-------------+-----------+-----------+-----------------+------+-------------------+
 >> ```
 >>
@@ -744,7 +986,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> Où :
 >>
->> - `SHARE_TYPE` est `generic_0` par défaut. Vous pouvez vérifier les types de share existants avec :
+>> - `SHARE_TYPE` est `standard-1az` par défaut. Vous pouvez vérifier les types de share existants avec :
 >>
 >> ```bash
 >> openstack --os-region SBG5 share type list
@@ -779,7 +1021,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>   accessModes:
 >>   - ReadWriteMany
 >>   capacity:
->>     storage: 120Gi
+>>     storage: 150Gi
 >>   csi:
 >>     driver: nfs.manila.csi.openstack.org
 >>     volumeHandle: preprovisioned-nfs-share
@@ -802,7 +1044,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>   - ReadWriteMany
 >>   resources:
 >>     requests:
->>       storage: 120Gi
+>>       storage: 150Gi
 >>   storageClassName: "" # <--- Prevent default Cinder CSI usage
 >>   selector:
 >>     matchExpressions:
@@ -920,7 +1162,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> resource "openstack_sharedfilesystem_share_v2" "share" {
 >>   name             = "<YOUR_SHARE_NAME>"
 >>   region           = "<YOUR_REGION_NAME>"
->>   share_type       = "generic_0"
+>>   share_type       = "standard-1az"
 >>   share_proto      = "NFS"
 >>   size             = 150
 >>   share_network_id = openstack_sharedfilesystem_sharenetwork_v2.sharenetwork.id

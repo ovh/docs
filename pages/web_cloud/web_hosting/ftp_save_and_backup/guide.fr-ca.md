@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Objectif
@@ -196,6 +196,10 @@ Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'
 Prenez soin de remplacer l’information générique « utilisateurftp » par votre propre nom d'utilisateur FTP principal. Conservez cependant le suffixe définissant la date de sauvegarde à laquelle vous souhaitez accéder.
 
 La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé.
+
+> [!primary]
+>
+> Les sauvegardes sont accessibles uniquement via une connexion FTP.
 
 #### Étape 3 : récupérer le ou les fichiers souhaités
 

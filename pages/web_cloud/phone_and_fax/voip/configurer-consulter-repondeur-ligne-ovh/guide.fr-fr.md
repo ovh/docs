@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2025-08-12
+updated: 2026-01-20
 ---
 
 ## Objectif
@@ -109,7 +109,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Paramètres|Détails|
 |---|---|
 |Enregistrement des messages|Permet d'activer ou désactiver l'enregistrement de messages audio par vos appelants. Ceux-ci n'auront alors que votre message d'accueil du répondeur, sans possibilité de laisser un message.|
-|Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.|
+|Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.<br> - **Formats de fichiers pris en charge** : MP3, OGG, WAV et WMA.<br> - **Préconisations** : La taille du fichier ne doit pas excéder 10 Mo, avec une fréquence de 8 kHz, une résolution de 8 bits et un canal mono.|
 
 ![repondeur](images/voicemail-step4.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Créer un assistant de code avec Continue (EN)
 excerpt: "Créez votre assistant de code directement dans votre IDE (VSCode ou JetBrains) à l'aide du plug-in Continue"
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -51,13 +51,13 @@ models:
   - name: Meta-Llama-3_3-70B-Instruct
     provider: openai
     model: Meta-Llama-3_3-70B-Instruct
-    apiBase: https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+    apiBase: https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
     apiKey: <you AI Endpoint API key> # replace with your API key
     roles: [chat, edit, apply, summarize]
   - name: Qwen3-Coder-30B-A3B-Instruct
     provider: openai
     model: Qwen3-Coder-30B-A3B-Instruct
-    apiBase: https://qwen-3-coder-30b-a3b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+    apiBase: https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
     apiKey: <you AI Endpoint API key> # replace with your API key
     roles: [chat, edit, apply, summarize, autocomplete]
 ```

@@ -45,7 +45,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Vous pouvez maintenant sortir l'instance du mode rescue. (Voir le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+Vous pouvez maintenant sortir l'instance du mode rescue. (Voir le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Aller plus loin
 

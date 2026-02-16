@@ -1,7 +1,7 @@
 ---
 title: "Restoring your Web Hosting plan’s storage space"
 excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Objective
@@ -197,6 +197,10 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 Please ensure that you replace ‘ftpuser’ with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
 The method for connecting to your storage space will differ depending on the interface or software you are using.
+
+> [!primary]
+>
+> Backups are only accessible via an FTP connection.
 
 #### Step 3: Gather the files you want to restore.
 

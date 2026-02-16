@@ -21,11 +21,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/EsCB5sR)
-
 ## Obiettivo
 
 La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal dispositivo che preferisci.

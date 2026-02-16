@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Relational Migrator
+title: Relational Migrator for Public Cloud Databases for MongoDB
 excerpt: Migrate from a Relational Database to MongoDB
 updated: 2025-01-06
 ---

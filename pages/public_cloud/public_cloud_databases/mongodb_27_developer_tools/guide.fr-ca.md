@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Developer Tools
+title: Outils de développement de Public Cloud Databases pour MongoDB (EN)
 excerpt: Tooling for developers using MongoDB
 updated: 2025-01-06
 ---

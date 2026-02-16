@@ -1,5 +1,5 @@
 ---
-title: "Analytics - How to handle 'Disk Full' situations"
+title: Handle 'Disk Full' situations for Analytics
 excerpt: Find out how to avoid, analyse and fix an Analytics service reaching its full disk capacity
 updated: 2025-02-03
 ---

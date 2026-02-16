@@ -166,7 +166,7 @@ Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellu
 
 - **Benutzername**: Geben Sie die E-Mail-Adresse ein **vollständig**
 - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein
-- **Server (eingehend)**: pro?.mail.ovh.net
+- **Server (ausgehend)**: pro?.mail.ovh.net
 - **Port**: 587
 - **Sicherheitstyp**: STARTTLS
 

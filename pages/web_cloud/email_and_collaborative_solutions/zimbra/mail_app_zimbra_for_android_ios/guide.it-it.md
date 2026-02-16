@@ -70,7 +70,7 @@ OVHcloud propone anche un’applicazione Web che permette di accedere al tuo ind
 
 L’applicazione Zimbra permette di configurare un solo indirizzo email per volta. Per visualizzare un altro account email Zimbra è necessario disconnettersi dall’account email in uso.
 
-Clicca sul menu `─ {.action}`nell’angolo superiore sinistro dello schermo e seleziona l’icona del profilo nella parte superiore dello schermo. Infine, clicca su `Disconnessione`.
+Clicca sul menu `☰`{.action} nell’angolo superiore sinistro dello schermo e seleziona l’icona del profilo nella parte superiore dello schermo. Infine, clicca su `Disconnessione`.
 
 ![zimbra_app](images/zimbra_app_settings01.png){.thumbnail .w-600 .h-600}
 

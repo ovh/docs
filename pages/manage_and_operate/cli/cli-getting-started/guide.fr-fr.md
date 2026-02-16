@@ -121,5 +121,5 @@ La plupart des produits proposent des commandes de base pour lister les services
 ## Ressources
 
 - [Dépôt GitHub OVHcloud CLI](https://github.com/ovh/ovhcloud-cli)
-- [Documentation CLI](https://github.com/ovhcli#readme)
+- [Documentation CLI](https://github.com/ovh/ovhcloud-cli#readme)
 - [Référence API](/links/console)

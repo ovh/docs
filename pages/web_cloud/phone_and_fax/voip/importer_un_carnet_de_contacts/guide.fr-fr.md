@@ -1,7 +1,7 @@
 ---
 title: 'Gérer un carnet de contacts sur une ligne SIP'
 excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
-updated: 2025-04-28
+updated: 2025-12-30
 ---
 
 ## Objectif
@@ -23,8 +23,10 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
 
-> [!primary]
-> Pour bénéficier d'un carnet de contacts sur une seule ligne SIP, celle-ci doit être associée à un téléphone fourni par OVHcloud.
+> [!success]
+> L'avantage de l'ajout d'un carnet de contacts sur un **groupe de lignes** est qu'il permet d'avoir un carnet **commun** pour toutes les lignes du groupe.
+
+Pour bénéficier d'un carnet de contacts sur une seule ligne SIP, celle-ci doit être associée à un téléphone fourni par OVHcloud.
 
 - **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
