@@ -45,15 +45,11 @@ In order to connect to the ClickHouse service, it is required to use server and 
 
 ##### Server certificate
 
-The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab:
-
-![ClickHouse server certificate](images/clickhouse_get_server_certificate.png){.thumbnail}
+The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab.
 
 ##### User certificate and access key
 
-The user certificate and the user access key can be downloaded from the `Users`{.action} tab:
-
-![User informations](images/clickhouse_user_certificate_and_access_key.png){.thumbnail}
+The user certificate and the user access key can be downloaded from the `Users`{.action} tab.
 
 #### Installing the ClickHouse CLI
 
