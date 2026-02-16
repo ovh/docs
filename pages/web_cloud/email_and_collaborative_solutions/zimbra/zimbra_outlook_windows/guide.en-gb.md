@@ -1,38 +1,48 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync in Outlook for Windows"
 excerpt: "Find out how to configure your Zimbra Pro email address in Outlook for Windows using the ActiveSync protocol"
-updated: 2025-07-03
+updated: 2025-12-31
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
 .h-500 {
-  max-height:500px !important;
+  max-width:500px !important;
 }
 </style>
 
-
 ## Objective
-
-> [!primary]
->
-> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
 Zimbra Pro accounts can be configured on Windows using the ActiveSync protocol, allowing you to configure all the collaborative features of your email address at once. The Outlook application for Windows allows you to view your Zimbra Pro email account via the ActiveSync protocol.
 
 **Find out how to configure your Zimbra Pro email address in Outlook for Windows using the ActiveSync protocol.**
-
-> [!warning]
->
-> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
-> 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
-> 
 
 ## Requirements
 
 - A [Zimbra Pro](/links/web/emails-zimbra) account
 - [Outlook Classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) for Windows  installed on your device
 - The login details for the email account you would like to configure
+
+/// details | Information regarding the management and configuration of OVHcloud services
+
+OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+
+This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
+
+///
 
 ## Instructions
 
@@ -48,7 +58,7 @@ Zimbra Pro accounts can be configured on Windows using the ActiveSync protocol, 
 
 ### Add the <a name="add-account"></a> account
 
-To add a Zimbra Pro account on Outlook Classic, follow the steps below by clicking on the **7** tabs below:
+To add a Zimbra Pro account to Classic Outlook, follow the steps below by clicking on the tabs below in sequence:
 
 > [!tabs]
 > **Step 1**

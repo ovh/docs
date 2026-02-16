@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-updated: 2025-02-20
+updated: 2026-02-06
 ---
 
 ## Ziel
@@ -103,7 +103,6 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
-- **Tmpdir**: Verzeichnis temporärer Dateien. **/dev/shm** entspricht dem RAM Speicher der Instanz. **/tmp** entspricht der Festplatte der Instanz.
 - **MaxAllowedPacket**: Maximale Paketgröße.
 - **max_user_connections**: Anzahl der erlaubten Simultanverbindungen je Benutzer.
 - **AutoCommit**: Legt fest, ob die SQL-Transaktionen automatisch bestätigt werden oder nicht.
@@ -117,15 +116,6 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
 > Dann können Sie die **MaxConnections**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
->
-> - /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
 >
 
 > [!primary]

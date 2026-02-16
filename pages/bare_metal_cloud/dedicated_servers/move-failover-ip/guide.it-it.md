@@ -1,7 +1,7 @@
 ---
-title:  Trasferisci un Additional IP
+title:  Spostare un Additional IP
 excerpt: Questa guida ti mostra come spostare un Additional IP dallo Spazio Cliente OVHcloud o via API OVHcloud
-updated: 2025-07-22
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -19,14 +19,15 @@ Gli Additional IP possono essere trasferiti tra i servizi utilizzati. L'interess
 Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'altra in meno di un minuto, praticamente senza alcuna interruzione per i tuoi utenti. Può essere utilizzata in caso di migrazione di servizi (ad esempio, spostamento dei progetti dall'ambiente di sviluppo a quello di produzione) o in caso di trasferimento verso un server di backup in caso di guasto.
 
 > [!primary]
-> È possibile assegnare blocchi di indirizzi IP a qualsiasi servizio compatibile all'interno di una Region.
-I blocchi di indirizzi IP di una Region possono essere trasferiti da un datacenter a un altro all'interno della stessa Region, ma non al suo esterno.
+> È possibile assegnare blocchi di indirizzi IP a qualsiasi servizio compatibile all'interno di una Region. I blocchi di indirizzi IP di una Region possono essere trasferiti da un datacenter a un altro all'interno della stessa Region, ma non al suo esterno.
 >
 > Fanno eccezione eu-west-gra, eu-west-rbx e eu-west-sbg: i blocchi di indirizzi IP possono essere spostati tra queste 3 Region.
-> 
+>
+> Una regione è un'area geografica composta da uno o più data center.
+>
 > Solo l'intero blocco può essere spostato, non è possibile migrare i singoli IP all'interno di un blocco.
 
-**Come migrare un Additional IP dallo Spazio Cliente OVHcloud o tramite le API OVHcloud**
+**Scopri come spostare un Additional IP dallo Spazio Cliente OVHcloud o tramite le API OVHcloud. Scopri anche come spostare un Additional IP da un conto So you Start a un conto OVHcloud.**
 
 ## Prerequisiti
 
@@ -60,9 +61,9 @@ I blocchi di indirizzi IP di una Region possono essere trasferiti da un datacent
 
 La geolocalizzazione di un indirizzo IP è indipendente dalla regione di collegamento.
 
-Se ordini un blocco IP aggiuntivo su un server ma scegli una localizzazione diversa (geolocalizzazione) per il blocco IP, il blocco IP non può essere spostato verso un altro server situato nello stesso Paese del blocco. Ad esempio, un blocco IP aggiuntivo geolocalizzato in Polonia (eu-central-war) e ordinato su un server situato in un datacenter in Francia (eu-west-gra) non può essere spostato verso un server situato in un datacenter in Polonia (eu-central-war). Il blocco IP può essere trasferito solo verso un server idoneo localizzato in un datacenter in Francia.
+Se ordini un blocco Additional IP su un server ma scegli una localizzazione diversa (geolocalizzazione) per il blocco IP, il blocco IP non può essere spostato verso un altro server situato nello stesso Paese del blocco. Ad esempio, un blocco Additional IP geolocalizzato in Polonia (eu-central-war) e ordinato su un server situato in un datacenter in Francia (eu-west-gra) non può essere spostato verso un server situato in un datacenter in Polonia (eu-central-war). Il blocco IP può essere trasferito solo verso un server idoneo localizzato in un datacenter in Francia.
 
-### Sposta un IP dallo Spazio Cliente OVHcloud
+### Spostare un Additional IP dallo Spazio Cliente OVHcloud
 
 > [!warning]
 > Solo un blocco di dimensioni singole (/32) potrà essere spostato da un server dedicato a un VPS.
@@ -70,21 +71,27 @@ Se ordini un blocco IP aggiuntivo su un server ma scegli una localizzazione dive
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}.
 
-Clicca sulla scheda `Additional IP`{.action}.
+È possibile utilizzare il menu a tendina sotto **I tuoi indirizzi IP pubblici e servizi associati** e selezionare `Tutti gli Additional IP`{.action} per filtrare i servizi, oppure digitare direttamente l'indirizzo IP desiderato nella barra di ricerca.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![Spazio Cliente](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Clicca sul pulsante `...`{.action} a destra dell'indirizzo IP da spostare e poi su `Sposta Additional IP`{.action} o su `Associa questo blocco di IP a un altro servizio`{.action}.
+Clicca sul pulsante `⁝`{.action} a destra dell'indirizzo IP da spostare, quindi su `Sposta Additional IP`{.action}.
 
-![Spazio Cliente](images/move_ip.png){.thumbnail}
+![Spazio Cliente](images/move_ip_1_new.png){.thumbnail}
 
 Nel menu contestuale che appare, seleziona il servizio verso cui spostare l'indirizzo IP.
 
-Clicca su `Seguente`{.action} e poi su `Conferma`{.action}.
+Clicca su `Successivo`{.action} e poi su `Confermare`{.action}.
 
-![Spazio Cliente](images/moveadditionalIP2.png){.thumbnail}
+![Spazio Cliente](images/move_ip_2_new.png){.thumbnail}
 
-### Trasferisci un IP via API
+> [!warning]
+> Si prega di notare che per alcuni prodotti, gli indirizzi IP (o blocchi) devono prima essere spostati in un **Parking IP** (una posizione di archiviazione temporanea), prima di poter essere spostati nel prodotto desiderato.
+>
+> Per spostare i blocchi IP su una rete vRack specifica, utilizzare **l'interfaccia di gestione vRack**, accessibile cliccando su `Network`{.action} nel menu a sinistra dello schermo, quindi su `Rete privata vRack`{.action}.
+>
+
+### Spostare Additional IP via API
 
 Accedi alla pagina web delle [API OVHcloud](/links/api).
 
@@ -108,6 +115,47 @@ Per spostare l'indirizzo IP, utilizza questa chiamata:
 
 - `serviceName`: il riferimento del server dedicato di destinazione
 - `ip`: l'indirizzo Additional IP da spostare
+
+### Spostare un Additional IP da un conto So you Start a un conto OVHcloud
+
+Per spostare un Additional IP da un conto SYS a un conto OVHcloud, è necessario tenere conto di diversi elementi:
+
+- Lo spostamento di un Additional IP comporta dei costi di installazione. L'indirizzo IP non verrà spostato se la fattura rimane insoluta.
+- Non è possibile spostare un Additional IP da un conto OVHcloud a un conto So you Start.
+- Assicurati che il server su cui stai trasferendo l'indirizzo Additional IP si trovi nella stessa regione compatibile con esso. Consulta la sezione “Restrizioni” qui sotto.
+
+Per iniziare, accedi al tuo conto So you Start e clicca su `IP`{.action} nella dashboard principale.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Clicca sul pulsante delle impostazioni (a forma di ingranaggio `⚙`{.action}) accanto all'indirizzo IP corrispondente e seleziona `Trasferire l'IP FO`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Seleziona `Trasferisci su un servizio OVH`{.action}, inserisci il tuo ID cliente OVHcloud e clicca su `Seguente`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+Verrà generato un ID unico (token ID), salvalo.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+Quindi, [accedi al tuo account OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra, quindi su `IP`{.action}.
+
+Clicca sul pulsante delle impostazioni (a forma di ingranaggio `⚙`{.action}) a destra e seleziona `Importare i tuoi indirizzi IP da SyS a OVHcloud`{.action}.
+
+![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+Apparirà una finestra pop-up, inserisci l'indirizzo Additional IP (o il blocco) e l'ID unico (recuperato dall'account So you Start). Quindi, clicca su `Successivo`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Seleziona il server di destinazione e clicca su `Successivo`{.action}. Se il server dedicato è compatibile con l'indirizzo IP, verrà visualizzato un messaggio verde. In caso contrario, riceverai un messaggio di errore.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+Una volta effettuato il pagamento, il tuo Additional IP verrà trasferito al tuo account OVHcloud e associato al server selezionato. Questo processo potrebbe richiedere del tempo.
 
 ### Restrizioni <a name="limitations"></a>
 

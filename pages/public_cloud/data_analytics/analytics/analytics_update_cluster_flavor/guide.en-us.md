@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to update your service flavor
+title: Update the flavor of Analytics
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2025-02-03
 ---

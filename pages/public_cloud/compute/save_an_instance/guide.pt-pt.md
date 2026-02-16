@@ -1,7 +1,7 @@
 ---
 title: 'Guardar uma instância'
 excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
-updated: 2025-11-04
+updated: 2025-12-09
 ---
 
 <style>
@@ -188,6 +188,12 @@ Pode selecionar a instância a salvaguardar.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **Nome** 
+
+Introduza um nome para o planeamento do backup automático. Leia as informações de preços e crie o calendário ao clicar no botão `Criar`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
 #### **O planeamento** 
 
 Pode definir um planeamento de backup personalizado ou escolher uma das frequências predefinidas:
@@ -195,13 +201,15 @@ Pode definir um planeamento de backup personalizado ou escolher uma das frequên
 - Backup diário com retenção dos últimos 7 backups
 - Backup diário com retenção dos últimos 14 backups
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Nome** 
-
-Introduza um nome para o planeamento do backup automático. Leia as informações de preços e crie o calendário ao clicar no botão `Criar`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Adicionar um backup remoto**
+
+Clique no botão `Adicionar um backup remoto`{.action}, selecione uma localização, consulte as informações de precificação e clique no botão `Criar`{.action} 
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Gestão dos backups e dos planos
 

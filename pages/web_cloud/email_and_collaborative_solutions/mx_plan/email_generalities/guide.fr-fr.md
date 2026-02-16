@@ -21,11 +21,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
-> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
-> [Accédez à l'enquête.](https://s.elq.fr/ovhext/Jbu2Z3t)
-
 ## Objectif
 
 Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficier d'adresses e-mail, avec lesquelles vous pourrez envoyer et recevoir des messages depuis l’appareil de votre choix.

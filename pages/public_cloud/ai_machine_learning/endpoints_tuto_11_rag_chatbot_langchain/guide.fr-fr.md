@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot de discussion RAG avec LangChain (EN)
 excerpt: Apprenez à construire un chatbot RAG (Retrieval Augmented Generation) en utilisant Python et LangChain
-updated: 2025-10-30
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ In order to use AI Endpoints APIs easily, create a `.env` file to store environm
 
 ```bash
 OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_EMBEDDING_MODEL_NAME=bge-m3
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
@@ -96,7 +96,7 @@ load_dotenv()
 ## Retrieve the OVHcloud AI Endpoints configurations
 _OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN') 
 _OVH_AI_ENDPOINTS_MODEL_NAME = os.environ.get('OVH_AI_ENDPOINTS_MODEL_NAME') 
-_OVH_AI_ENDPOINTS_MODEL_URL = os.environ.get('OVH_AI_ENDPOINTS_MODEL_URL') 
+_OVH_AI_ENDPOINTS_URL = os.environ.get('OVH_AI_ENDPOINTS_URL') 
 _OVH_AI_ENDPOINTS_EMBEDDING_MODEL_NAME = os.environ.get('OVH_AI_ENDPOINTS_EMBEDDING_MODEL_NAME')
 ```
 
@@ -110,7 +110,7 @@ def chat_completion(new_message: str):
   # no need to use a token
   model = ChatMistralAI(model=_OVH_AI_ENDPOINTS_MODEL_NAME, 
                         api_key=_OVH_AI_ENDPOINTS_ACCESS_TOKEN,
-                        endpoint=_OVH_AI_ENDPOINTS_MODEL_URL, 
+                        endpoint=_OVH_AI_ENDPOINTS_URL, 
                         max_tokens=1500, 
                         streaming=True)
 

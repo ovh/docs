@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create a Memory Chatbot with LangChain4j
 excerpt: Learn how to implement memory in a Java-based chatbot using LangChain4j and AI Endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -133,7 +133,7 @@ Make sure your environment variables are set:
 
 ```bash
 export OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-export OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+export OVH_AI_ENDPOINTS_MODEL_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 export OVH_AI_ENDPOINTS_ACCESS_TOKEN=<your-access-token>
 ```
 

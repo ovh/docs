@@ -1,7 +1,7 @@
 ---
 title: 'Configuring Additional IPs in bridge mode on your virtual machines'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-12-04
+updated: 2026-01-06
 ---
 
 <style>
@@ -41,7 +41,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> As of May 2025, this guide can be used for servers of the [Scale](https://www.ovhcloud.com/en-sg/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-sg/bare-metal/high-grade/) ranges.
+> As of May 2025, this guide can be used for servers of the [Scale](/links/bare-metal/scale) and [High Grade](/links/bare-metal/hg) ranges.
 >
 > Alternatively, to configure Additional IPs using in routed mode or in a vRack, please refer to [Configuring the network on Proxmox VE on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) or [Configuring the network on Windows Server with Hyper-V on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
@@ -66,19 +66,19 @@ Code samples in the following instructions have to be replaced with your own val
 > [!warning]
 > In the case of a block of IPs, virtual MAC addresses are created on each individual IP in the block.
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-Click the `Additional IP`{.action} tab.
+Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail} 
+![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
+Next, locate your Additional IP address in the table and click the `⁝`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
-![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
+![Add a virtual MAC (1)](images/addvmac_new.png){.thumbnail}
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
+![Add a virtual MAC (2)](images/addvmac2_new.png){.thumbnail}
 
 After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your Additional IP row. This virtual MAC will be required when configuring your VM on the host.
 
@@ -481,7 +481,7 @@ For all operating systems and distributions, you **must** configure your virtual
 >>
 >> > [!primary]
 >> > 
->> >This step is only required once for a Hyper-V server. For all VMs, a **virtual switch** is required to connect the VM’s **virtual network adapters** to the server’s **physical adapter**.
+>> > This step is only required once for a Hyper-V server. For all VMs, a **virtual switch** is required to connect the VM’s **virtual network adapters** to the server’s **physical adapter**.
 >> > 
 >>
 >> Next, select the VM you wish to add the Additional IP to. Use the Hyper-V Manager to change the settings of the VM and shut it down.
@@ -509,7 +509,7 @@ For all operating systems and distributions, you **must** configure your virtual
 
 To verify that the virtual machine is fully connected to the Internet, use the following command:
 
-**For linux**
+**For Linux**
 
 ```bash
 ping -c 4 example.com
@@ -526,7 +526,7 @@ rtt min/avg/max/mdev = 24,925/28,028/30,840/2,254 ms
 
 **For Windows**
 
-```sh
+```bash
 ping example.com
 
 Pinging example.com [93.184.215.14] with 32 bytes of data:

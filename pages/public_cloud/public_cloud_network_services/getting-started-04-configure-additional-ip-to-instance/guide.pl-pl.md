@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja Additional IP
 excerpt: Dowiedz się, jak dodawać adresy Additional IP do konfiguracji Twojej instancji
-updated: 2025-12-04
+updated: 2025-12-17
 ---
 
 > [!primary]
@@ -188,8 +188,8 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> Powtórz tę procedurę dla każdego adresu Additional IP.
 >>
-> **cPanel (CentOS 7) / pochodne Red Hat**
->> cPanel (CentOS 7) / AlmaLinux (8/9/10) / Rocky Linux (8/9/10)
+> **AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)**
+>> AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)
 >>
 >> **Krok 1: zmień plik konfiguracyjny sieci**
 >>
@@ -222,6 +222,48 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 >>
 >> ```bash
 >> sudo systemctl restart networking
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora, AlmaLinux 10 & Rocky Linux 10
+>>
+>> Te systemy używają plików kluczy. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu: `/etc/sysconfig/network-scripts/`. Jednak format iffg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
+>>
+>> **Krok 1: edycja pliku konfiguracyjnego**
+>>
+>> > [!primary]
+>> > Pamiętaj, że nazwa pliku sieciowego w naszym przykładzie może się różnić od Twojej. Dostosuj polecenia do nazwy pliku.
+>> >
+>>
+>> ```bash
+>> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> ```
+>>
+>> Nie zmieniaj istniejących linii w pliku konfiguracyjnym, dodaj Additional IP do pliku w następujący sposób, zastępując `ADDITIONAL_IP/32` własnymi wartościami:
+>>
+>> ```console
+>> [IPv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP/32
+>> ```
+>>
+>> Jeśli masz dwa dodatkowe adresy IP do skonfigurowania, konfiguracja powinna wyglądać następująco:
+>>
+>> ```console
+>> [IPv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP1/32
+>> address2=ADDITIONAL_IP2/32
+>> ```
+>>
+>> **Krok 2: restart interfejsu**
+>>
+>> Uruchom ponownie interfejs:
+>>
+>> ```bash
+>> systemctl restart Network Manager
 >> ```
 >>
 > **Plesk**

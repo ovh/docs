@@ -191,8 +191,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> **Fedora 42+**
->> Fedora 42 e versões posteriores
+> **Fedora 42+ / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42 e versões posteriores, AlmaLinux e Rocky Linux (10)
 >>
 >> Fedora utiliza agora ficheiros chave (*keyfiles*).
 >> Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
@@ -360,7 +360,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+>> AlmaLinux (8/9) & Rocky Linux (8/9)
 >>
 >> O ficheiro de configuração principal encontra-se em `/etc/sysconfig/network-scripts/`. No nosso exemplo, é chamado `ifcfg-eth0`. Antes de fazer alterações, verifique o nome real do arquivo nessa pasta.
 >>
@@ -551,7 +551,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 > **Plesk**
 >> Plesk
 >>
->> **1 - aceder à gestão de IP do Plesk**
+>> **1 - Aceder à gestão de IP do Plesk**
 >>
 >> No painel de configuração Plesk, selecione `Tools & Settings`{.action} na barra lateral esquerda.
 >>
@@ -559,7 +559,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> Clique em `IP Addresses`{.action} em **Tools & Settings**.
 >>
->> **2 - adicionar informações IP suplementares**
+>> **2 - Adicionar informações IP suplementares**
 >>
 >> Nesta secção, clique no botão `Add IP Address`{.action}.
 >>
@@ -569,7 +569,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> ![adicionar informações IP](images/Plesk-2024-1.png){.thumbnail}
 >> 
->> **3 - verificar a configuração IP atual**
+>> **3 - Verificar a configuração IP atual**
 >>
 >> Na secção "IP Addresses", verifique se o endereço Additional IP foi adicionado corretamente.
 >>

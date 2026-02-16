@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - FAQ
+title: FAQ des bases de données Public Cloud (EN)
 excerpt: Public Cloud Databases Frequently Asked Questions
 updated: 2025-07-31
 ---

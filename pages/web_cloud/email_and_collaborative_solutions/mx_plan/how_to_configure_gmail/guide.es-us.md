@@ -1,8 +1,16 @@
 ---
 title: 'Configurar una dirección de correo electrónico en la interfaz web de Gmail'
 excerpt: 'Cómo configurar una cuenta en la interfaz web de Gmail'
-updated: 2025-02-17
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> A partir de enero de 2026, [Gmail dejará de ser compatible con las funcionalidades de Gmailify y acceso POP](https://support.google.com/mail/answer/16604719?hl) que hasta ahora permitían importar mensajes de correo de cuentas de correo de terceros.
+>
+> Ya no será posible configurar las direcciones de correo de OVHcloud en Gmail.
+>
+> Sus cuentas de correo de OVHcloud están siempre accesibles a través de nuestro [Webmail](/links/web/email).
 
 ## Objetivo
 

@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to configure your Kafka cluster to accept incoming connections
+title: Configure incoming connections of an Analytics for Kafka service
 excerpt: Learn how to configure your Kafka cluster to accept incoming connections
 updated: 2025-08-25
 ---

@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Connect with PHP
+title: Connect using PHP for Public Cloud Databases for MongoDB
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
 updated: 2022-07-27
 ---

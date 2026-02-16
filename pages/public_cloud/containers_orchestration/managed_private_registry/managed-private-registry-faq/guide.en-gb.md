@@ -1,6 +1,6 @@
 ---
 title: 'FAQ Managed Private Registry (MPR)'
-updated: 2025-11-18
+updated: 2026-01-20
 ---
 
 ## Objective
@@ -11,13 +11,14 @@ Here are the most frequently asked questions about Managed Private Registry (MPR
 
 Private Registry is currently available in the following regions:
 
-| Region       |    City     | Country |   Continent   | Availability Zones |
-|--------------|:-----------:|:-------:|:-------------:|:------------------:|
-| BHS          | Beauharnois | Canada  | North America |        1-AZ        |
-| DE           |  Frankfurt  | Germany |    Europe     |        1-AZ        |
-| EU-SOUTH-MIL |    Milan    |  Italy  |    Europe     |        3-AZ        |
-| EU-WEST-PAR  |    Paris    | France  |    Europe     |        3-AZ        |
-| GRA          | Gravelines  | France  |    Europe     |        1-AZ        |
+| Region       |    City     | Country | Continent | Availability Zones |
+|--------------|:-----------:|:-------:|:---------:|:------------------:|
+| AP-SOUTH-MUM |   Mumbai    |  India  |   Asia    |        1-AZ        |
+| BHS          | Beauharnois | Canada  |  America  |        1-AZ        |
+| DE           |  Frankfurt  | Germany |  Europe   |        1-AZ        |
+| EU-SOUTH-MIL |    Milan    |  Italy  |  Europe   |        3-AZ        |
+| EU-WEST-PAR  |    Paris    | France  |  Europe   |        3-AZ        |
+| GRA          | Gravelines  | France  |  Europe   |        1-AZ        |
 
 ### What are the differences between a 1-AZ region and 3-AZ region
 
@@ -44,6 +45,7 @@ Find below the exact locations of the dependencies:
 
 | Region       | Public Cloud Compute region | Object Storage (Standard class) |
 |--------------|:---------------------------:|:-------------------------------:|
+| AP-SOUTH-MUM |       AP-SOUTH-MUM-1        |          AP-SOUTH-MUM           |
 | BHS          |            BHS5             |               BHS               |
 | DE           |             DE1             |               DE                |
 | EU-SOUTH-MIL |        EU-SOUTH-MIL         |          EU-SOUTH-MIL           |

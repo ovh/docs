@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z konsoli IPMI na serwerze dedykowanym"
 excerpt: "Dowiedz się, jak zalogować się do serwera z poziomu panelu klienta bez korzystania z zewnętrznego oprogramowania"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -44,6 +44,10 @@ Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Klucze SSH przec
 Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](/links/manager). W sekcji `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} i wybierz swój serwer, a następnie kliknij zakładkę `IPMI/KVM`{.action}.
 
 ### Otwórz KVM za pomocą apletu Java <a name="applet-java"></a>
+
+> [!primary]
+> Zalecamy zainstalowanie najnowszej wersji Java.
+>
 
 Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/).
 

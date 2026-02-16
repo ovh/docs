@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Activating email addresses included"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2025-08-11
+updated: 2026-01-19
 ---
 
 ## Objective
@@ -20,21 +20,16 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!warning]
 >
-> If you want to enable the "email address(es) included with your web hosting plan" option for an external domain name (not registered with OVHcloud) **which you must be the administrator of**, you must create (at least) a DNS zone at OVHcloud for your external domain name. Refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create), if required. This will allow your domain name to appear in the list of available domain names when you enable the option.
+> The "email address(es) included with your web hosting plan" option is unavailable for an external domain name (not registered with OVHcloud or registered on a different OVHcloud account from yours).
 >
-> Furthermore, if your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](/links/manager) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
+> To transfer an external domain to OVHcloud, follow [this guide](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> If your domain name is already registered with OVHcloud or if a DNS zone already exists for it in another OVHcloud account than your own, refer to our documentation "[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)" to find out how to manage it.
 >
-> Finally, if your domain name is already linked to the "email address(es) included with your web hosting plan" option on another web hosting plan, you cannot link it to your own web hosting plan directly. Use this guide to check with the current web hosting manager.
->
+> Finally, if your domain name is already linked to the "email address(es) included" option of another web hosting plan, you will not be able to associate it directly with your own web hosting plan. Use this guide to check with the current web hosting manager.
 
 ## Instructions
 
 ### Activate your email addresses included with your web hosting plan
-
-> [!primary]
->
-> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create).
->
 
 Click on the tabs below to view each of the **4** steps.
 

@@ -4,11 +4,6 @@ excerpt: "Découvrez comment identifier et résoudre la page d'erreur « Site no
 updated: 2025-08-25
 ---
 
-> [!success]
-> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
-> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
-> [Accédez à l'enquête.](https://s.elq.fr/ovhext/jpwm0GK)
-
 ## Objectif
 
 Il est possible de voir apparaître sur votre navigateur Internet la page d'erreur « **Site non installé** », notamment lors de la première installation de votre site web.

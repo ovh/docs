@@ -1,14 +1,14 @@
 ---
 title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9 a 11'
 excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Debian 9 a 11"
-updated: 2024-11-26
+updated: 2026-01-09
 ---
 
 ## Obiettivo
 
 La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcloud per aumentare la disponibilità dei server e potenziare le connessioni di rete. L’attivazione dell’opzione permette di aggregare in pochi click le schede di rete e rendere i collegamenti ridondati in modo che, in caso di malfunzionamenti, il traffico venga reindirizzato automaticamente verso il collegamento disponibile.
 
-**Questa guida ti mostra come associare i Network Interface Controller (NIC) per utilizzarli con il servizio OLA su un sistema Debian 9 a 11.**
+**Scopri come raggruppare le tue NIC (Network Interface Controller) per utilizzarle con il servizio OLA su Debian (versioni da 9 a 11).**
 
 ## Prerequisiti
 
@@ -22,6 +22,13 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> Questa guida fornisce istruzioni per configurare l'aggregazione delle interfacce di rete specificamente con `ifupdown`, il cui file di configurazione è `/etc/network/interfaces`. È applicabile anche alla modalità di ripristino.
+>
+> Se la configurazione di rete del tuo sistema utilizza invece `Netplan`, fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## Procedura
@@ -58,6 +65,7 @@ Si aprirà un file di testo vuoto. Per configurare l’interfaccia bond, inseris
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> Per il parametro `hwaddress`, si consiglia di utilizzare il più piccolo dei due indirizzi MAC delle schede di rete, poiché appartiene all'interfaccia di riserva (fallback) LACP.
+>
 
 > [!primary]
 >

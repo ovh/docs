@@ -1,12 +1,8 @@
 ---
 title: Crear una copia de seguridad de un volumen
 excerpt: Cómo crear una copia de seguridad de su volumen Block Storage desde el área de cliente
-updated: 2025-04-28
+updated: 2025-12-15
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -30,7 +26,7 @@ El volumen de snapshot y el volumen de backup le permiten:
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Un volumen de [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto de [Public Cloud](/links/public-cloud/public-cloud).
+- Un [volumen de Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) desmontado creado en su [proyecto de Public Cloud.](/links/public-cloud/public-cloud)
 
 ## Procedimiento
 
@@ -38,13 +34,20 @@ Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la secci�
 
 Abra el menú `Block Storage`{.action} en la barra de navegación a la izquierda con **Backup Storage**.
 
-A la derecha del volumen correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Crear una copia de seguridad`{.action}. No es necesario desvincular en primer lugar el volumen de su instancia. No obstante, si desea desvincular su volumen de su instancia, consulte esta [sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#en-linux) de la guía correspondiente para Linux y esta [sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#en-windows) para Windows.
+A la derecha del volumen correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Crear una copia de seguridad`{.action}.
+
+> [!primary]
+>
+> **Para realizar una copia de seguridad, el volumen debe estar previamente desmontado de su instancia.**
+> 
+> - Para un entorno Linux, consulte la sección **Bajo Linux** del tutorial "[Crear y configurar un disco adicional en una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Para un entorno Windows, consulte la sección **Bajo Windows** del tutorial "[Crear y configurar un disco adicional en una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
 
 ![Volumen de backup - creación](images/volumebackup01.png){.thumbnail}
 
-Si viene desde la sección Block Storage, se indica el volumen correspondiente. Seleccione el volumen que quiera guardar.
+Seleccione el volumen desde el que desea crear una copia de seguridad.
 
-Seleccione el tipo de backup que quiera crear: **Volumen Snapshot** o **volumen de backup**.
+A continuación, seleccione el tipo de backup que quiera crear: **Volumen Snapshot** o **volumen de backup**.
 
 - Si elige **Volume Snapshot**, podrá cambiar el nombre del volumen Snapshot que quiera crear antes de validar mediante el botón `Crear la copia de seguridad`{.action}.
 - Seleccionando el **Volume backup**, deberá desvincular el volumen de la instancia para poder continuar. Podrá cambiar el nombre del volumen Snapshot que quiera crear antes de validar el backup utilizando el botón `Crear la copia de seguridad`{.action}.
@@ -72,7 +75,7 @@ Una vez creado el volumen Snapshot, aparecerá en esta lista.
 
 ![Volumen Snapshot - Lista](images/volumebackup03.png){.thumbnail}
 
-En la columna izquierda podrá consultar la lista de volúmenes de backup en la sección `Volume backup`{.action}.
+En la columna izquierda podrá consultar la lista de volúmenes de backup en la sección `Volume Backup`{.action}.
 Una vez que se ha solicitado la creación del volumen de backup, se añade a la lista.
 
 ![Volumen de backup - Lista](images/volumebackup04.png){.thumbnail}
@@ -90,7 +93,5 @@ Para más información, consulte [nuestra guía sobre la creación de un volumen
 [Crear y configurar un disco adicional en una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
 [Aumentar el tamaño de un disco adicional](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
-
-[Transferir la copia de seguridad de un volumen de una región de OpenStack a otra](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

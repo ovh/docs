@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2025-07-22
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 >
 
-**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
+**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud. Découvrez également comment déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud.**
 
 ## Prérequis
 
@@ -64,8 +64,7 @@ La géolocalisation d'une adresse IP est indépendante de sa région de rattache
 
 Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne (eu-central-war) et commandé sur un serveur situé dans un datacenter en France (eu-west-gra) ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne (eu-central-war). Le bloc IP ne peut être déplacé que vers un serveur éligible situé dans un datacenter en France.
 
-
-### Déplacer une IP depuis l'espace client OVHcloud
+### Déplacer une Addtional IP depuis l'espace client OVHcloud
 
 > [!warning]
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
@@ -73,21 +72,27 @@ Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez 
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
-Cliquez sur l'onglet `Additional IP`{.action}.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et séléctionner`Toutes les Additional IP`{.action} pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-![gerer IP](images/manageIPs2024.png){.thumbnail}
+![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action} ou sur `Associer ce bloc d’IP à un autre service`{.action}.
+Cliquez sur le bouton `⁝`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
 
-![espace client](images/move_ip.png){.thumbnail}
+![espace client](images/move_ip_1_new.png){.thumbnail}
 
 Dans le menu contextuel qui apparaît, sélectionnez le service vers lequel déplacer l'adresse IP.
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![espace client](images/moveadditionalIP2.png){.thumbnail}
+![espace client](images/move_ip_2_new.png){.thumbnail}
 
-### Déplacer une IP via les API
+> [!warning]
+> Veuillez noter que pour certains produits, les adresses IP (ou blocs) doivent d'abord être déplacées vers un **Parking IP** (un emplacement de stockage temporaire), avant de pouvoir être déplacées vers le produit souhaité.
+>
+> Pour déplacer des blocs IP vers un réseau vRack spécifique, veuillez utiliser **l'interface de gestion vRack**, à laquelle vous pouvez accéder en cliquant sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Réseau privé vRack`{.action}.
+>
+
+### Déplacer une Additional IP via les API
 
 Connectez-vous sur la page web des [API OVHcloud](/links/api).
 
@@ -112,13 +117,70 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 - `serviceName` : la référence du serveur dédié de destination
 - `ip` : l'adresse Additional IP à déplacer
 
+### Déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud
+
+> [primary]
+> Avant de commencer, vous devez récupérer votre identifiant client OVHcloud unique. Vous trouverez cette information dans les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.) Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte).
+>
+
+Pour déplacer une Additional IP d'un compte SYS vers un compte OVHcloud, vous devez tenir compte de plusieurs éléments :
+
+- Le déplacement d'une Additional IP entraîne des frais d'installation. L'adresse IP ne sera pas déplacée si la facture reste impayée.
+- Il n'est pas possible de déplacer une Additional IP d'un compte OVHcloud vers un compte So you Start.
+- Assurez-vous que le serveur vers lequel vous transférez l'adresse Additional IP se trouve dans la même région compatible que celle-ci. Consultez la section « Restrictions » ci-dessous.
+
+Pour commencer, connectez-vous à votre compte So you Start et cliquez sur `IP`{.action} dans le tableau de bord principal.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à côté de l'adresse IP correspondante et sélectionnez `Déplacer l'IP FO`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant client OVHcloud (sous forme de aa00000-ovh) et cliquez sur `Suivant`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+Cela générera un code, sauvegardez-le.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+Ensuite, [connectez-vous à votre compte OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
+
+Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à droite et sélectionnez `Importer mes adresses IP de Sys vers OVHcloud`{.action}.
+
+![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+Une fenêtre contextuelle apparaîtra, entrez l'adresse Additional IP (ou le bloc) et le code récupéré dans le compte So you Start dans le champ `Token`. Ensuite, cliquez sur `Suivant`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Sélectionnez le serveur de destination et cliquez sur `Suivant`{.action}. Si le serveur dédié est compatible avec l'adresse IP, un message vert s'affichera. Dans le cas contraire, vous recevrez un message d'erreur.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+Dans la fenêtre suivante, la durée est automatiquement sélectionnée et les frais sont affichés. Cliquez sur `Suivant`{.action} pour continuer.
+
+![soyoustart to ovh](images/Step-3.png){.thumbnail}
+
+Cochez la case `Accepter les contrats`{.action} pour accepter les conditions d'utilisation après les avoir lues. Cliquez ensuite sur `Suivant`{.action}.
+
+![soyoustart to ovh](images/Step-4.png){.thumbnail}
+
+Prenez note du récapitulatif de la commande et cliquez sur ` Confirmer`{.action} pour la valider.
+
+![soyoustart to ovh](images/Step-5.png){.thumbnail}
+
+Vous serez redirigé vers une nouvelle page pour effectuer le paiement.
+
+Une fois le paiement effectué, votre Additional IP sera transférée vers votre compte OVHcloud et associée au serveur sélectionné. Ce processus peut prendre un certain temps.
 
 ### Restrictions <a name="limitations"></a>
 
 Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresses IP, Le tableau ci-dessous montre la compatibilité entre les régions.
 
 Pour plus d'informations, consultez notre liste de [régions disponibles](/links/network/additional-ip).
-
 
 | Régions  | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor | ap-southeast-sgp | ap-southeast-syd |
 |----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|-------------|-------------|
@@ -133,7 +195,6 @@ Pour plus d'informations, consultez notre liste de [régions disponibles](/links
 | ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅     | ❌      |     ❌      |
 | ap-southeast-sgp|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ✅       |     ❌      |
 | ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
-
 
 
 ## Aller plus loin

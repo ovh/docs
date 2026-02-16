@@ -18,7 +18,7 @@ This shared model can help relieve the customer’s operational burden.
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
-For your information, a **Service** is considered as a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Redis, Kafka or Cassandra cluster.
+For your information, a **Service** is considered as a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Valkey or Kafka cluster.
 
 ### 1. Before subscription
 

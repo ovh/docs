@@ -1,12 +1,8 @@
 ---
 title: 'Como alterar a chave de produto do Windows Server'
 excerpt: 'Saiba como alterar o código de ativação do Windows Server'
-updated: 2022-07-07
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Sumário
 
@@ -16,7 +12,7 @@ Por vezes, durante a instalação de um sistema operativo Windows Server, a chav
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/os/server-windows/) com Windows instalado na sua conta OVHcloud
+- Ter um [servidor dedicado OVHcloud](/links/bare-metal/os) com Windows Server ou uma máquina virtual com Windows Server num serviço [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses).
 - Ter uma licença Windows SPLA na sua conta OVHcloud
 - Ter acesso ao servidor via desktop remoto
 
@@ -74,4 +70,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

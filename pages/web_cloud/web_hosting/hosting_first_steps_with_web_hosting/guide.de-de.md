@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/kbyLL9x)
-
 ## Ziel
 
 Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog erstellen? Sie benötigen einen Onlineshop, um Ihre Produkte online zu verkaufen? In dieser Anleitung für die ersten Schritte mit OVHcloud Webhosting werden die wichtigsten Schritte zur Konfiguration beschrieben. Hier finden Sie auch Anleitungen zum Erstellen von professionellen E-Mail-Adressen, die mit Ihrer Domain verbunden sind. So können Sie Ihr Projekt einfach und schnell online stellen und effizient mit Ihrem Publikum kommunizieren.

@@ -1,6 +1,6 @@
 ---
 title: "NSX-T: retrieving logs"
-excerpt: "Découvrez comment obtenir les logs des noeuds NSX grâce à l'API dédiée et/ou Bundle"
+excerpt: "Découvrez comment obtenir les logs des nœuds NSX grâce à l'API dédiée et/ou Bundle"
 updated: 2023-10-20
 ---
 
@@ -10,7 +10,7 @@ NSX est un réseau à définition logicielle ou « *Software-Defined Networking*
 
 A l'heure actuelle (18 Septembre 2023), en raison de l'implémentation par OVHcloud, il n'est pas possible d'exporter les logs d'un NSX-T par le biais d'un syslog serveur. Pour y remédier, il est possible de récupérer quelques logs via des appels API.
 
-**Découvrez comment obtenir les logs des noeuds NSX grâce à l'API dédiée.**
+**Découvrez comment obtenir les logs des nœuds NSX grâce à l'API dédiée.**
 
 ## Prérequis
 
@@ -20,7 +20,7 @@ De plus, les prérequis suivants sont nécessaires :
 
 - Avoir déployé les hôtes NSX.
 - Avoir un utilisateur ayant les droits d'accès au NSX.
-- Vérifier que le noeud soit activé.
+- Vérifier que le nœud soit activé.
 
 ## En pratique
 
@@ -51,7 +51,7 @@ N'oubliez pas d'appliquer la nouvelle configuration et de la publier.
 curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-123-123.ovh.com/api/v1/transport-nodes/
 ```
 
-- Cet appel API vous retourne les deux ID de vos deux noeuds Edges :
+- Cet appel API vous retourne les deux ID de vos deux nœuds Edges :
 
 ```bash
 "resource_type" : "EdgeNode",
@@ -64,7 +64,7 @@ curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-
       "external_id" : "b35873da-ca7f-48ff-961e-5d6fa8bc5bf7"
 ```
 
-- Une fois l'ID de votre noeud Edge obtenu, effectuez un appel API pour obtenir les logs de votre noeud Edge :
+- Une fois l'ID de votre nœud Edge obtenu, effectuez un appel API pour obtenir les logs de votre nœud Edge :
 
 ```bash
 curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-123-123.ovh.com/api/v1/transport-nodes/8a8e0033-9eee-4d13-a5e2-7cd2dbdebc6c/node/logs/firewallpkt.log/data

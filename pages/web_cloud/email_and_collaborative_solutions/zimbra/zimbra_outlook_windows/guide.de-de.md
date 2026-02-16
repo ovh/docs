@@ -1,30 +1,34 @@
 ---
 title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts mit ActiveSync auf Outlook für Windows"
 excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren"
-updated: 2025-07-03
+updated: 2025-12-31
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
 .h-500 {
-  max-height:500px !important;
+  max-width:500px !important;
 }
 </style>
 
 ## Ziel
 
-> [!primary]
-> Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](/links/web/emails-zimbra) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
-
 Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls konfiguriert werden, was es Ihnen erlaubt, alle kollaborativen Funktionen Ihrer E-Mail-Adresse auf einmal zu konfigurieren. Die Outlook für Windows-App ermöglicht die Anzeige Ihres Zimbra Pro E-Mail-Kontos über das ActiveSync-Protokoll.
 
-
 **Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren.**
-
-> [!warning]
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am „[Ende dieser Anleitung](#go-further)“.
->
 
 ## Voraussetzungen
 
@@ -32,6 +36,13 @@ Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls kon
 - Sie haben die Windows Anwendung [Outlook Classic](https://support.microsoft.com/de-de/office/installieren-oder-erneutes-installieren-des-klassischen-outlook-auf-einem-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5).
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
+/// details | Informationen zur Verwaltung und Konfiguration der OVHcloud-Dienste
+
+OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+
+Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am „[Ende dieser Anleitung](#go-further)“.
+
+///
 
 ## In der praktischen Anwendung
 
@@ -47,12 +58,12 @@ Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls kon
 
 ### Konto <a name="add-account"></a> hinzufügen
 
-Um einen Zimbra Pro Account in Outlook Classic hinzuzufügen, folgen Sie den Installationsschritten, indem Sie auf die Tabs klicken:
+Um ein Zimbra Pro-Konto auf klassische Outlook hinzuzufügen, folgen Sie den unten stehenden Schritten, indem Sie nacheinander auf die Registerkarten klicken:
 
 > [!tabs]
 > **Schritt 1**
 >>
->> 1. Rufen Sie das Windows-Systemsteuerungssymbol ** auf.
+>> 1. Gehen Sie zum **Einstellungenbereich** von Windows.
 >> 2. Klicken Sie auf `Benutzerkonten`{.action}.
 >> 3. Klicken Sie auf `Mail`{.action}.
 >> 4. Klicken Sie auf `E-Mail-Konten...`{.action}.
@@ -157,7 +168,6 @@ Um Ihren E-Mail-Account zu löschen befolgen Sie die folgenden Anweisungen:
 > [!primary]
 >
 > Weitere Informationen zum Konfigurieren einer E-Mail-Adresse in der Outlook-Anwendung auf Windows finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/hinzuf%C3%BCgen-eines-e-mail-kontos-zu-outlook-f%C3%BCr-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=&CorrelationId=778d1d8d-9ac2-4449b-96292924_4b).
-
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: "Como proteger o seu website?"
 excerpt: "Saiba como reforçar a segurança do seu website"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Objetivo
@@ -75,10 +75,16 @@ Além disso, recomendamos que verifique regularmente a **validade dos métodos d
 
 ### Etapa 6 - Verificar se o website está atualizado
 
-Verifique regularmente as atualizações do seu site seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-atualizar-o-website).
+Certifique-se de que o seu site está actualizado, quer ao nível do conteúdo, quer ao nível dos componentes técnicos (CMS, extensões, versões de PHP e dependências).
 
-Também pode usar uma versão recente da [linguagem PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) no seu alojamento.
+Se estiver a utilizar um CMS, consulte a sua documentação oficial para actualizar:
 
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/pt)
+
+Certifique-se também de utilizar uma versão recente da [linguagem de programação PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) no seu alojamento.
 ### Etapa 7 - Ativar o HTTPS
 
 Implemente a ligação encriptada ao seu website através do protocolo **HTTPS** seguindo este [guia](/pages/web_cloud/web_hosting/ssl-activate-https-website). A ativação deste protocolo vai permitir encriptar o conjunto das informações que transitam pelo seu website (nomeadamente as introduções efetuadas pelos seus utilizadores nos seus formulários).

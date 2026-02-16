@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch DKIM-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und E-Mail-Dienste bei OVHcloud einrichten
-updated: 2025-11-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -121,7 +121,7 @@ Die Hash-Funktion ist nützlich zum Überprüfen der Integrität einer Nachricht
 
 **Verschlüsselung** sorgt für die Chiffrierung der Eingabedaten. Sie ist **asymmetrisch**, da zum Ver- und Entschlüsseln der Nachricht nicht derselbe Schlüssel verwendet wird, im Gegensatz zu einer symmetrischen Verschlüsselung mit identischem Schlüssel.
 
-Bei der asymmetrischen Verschlüsselung werden ein **öffentlicher Schlüssel** und ein **privater Schlüssel** eingesetzt. Der öffentliche Schlüssel ist für jeden sicht- und nutzbar. Der private Schlüssel wird nur von dessen Eigentümer verwendet und ist nicht öffentlich sichtbar.
+Bei der asymmetrischen Verschlüsselung werden ein **öffentlicher Schlüssel** und ein **privater Schlüssel** eingesetzt. Der öffentliche Schlüssel ist für jeden sicht- und nutzbar. Der private Schlüssel wird nur von dessen Inhaber verwendet und ist nicht öffentlich sichtbar.
 
 Es gibt zwei Verwendungszwecke für asymmetrische Verschlüsselung:
 
@@ -181,7 +181,7 @@ Der Empfänger **recipient@otherdomain.ovh** kann diese Signatur mit dem in der 
 Die automatische DKIM-Konfiguration ist für alle unsere E-Mail-Angebote verfügbar:
 
 - MX Plan enthalten in einem [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt
-- [Exchange](/links/web/emails)
+- [Exchange](/links/web/emails-exchange)
 - [E-mail Pro](/links/web/email-pro)
 - [Zimbra](/links/web/zimbra)
 

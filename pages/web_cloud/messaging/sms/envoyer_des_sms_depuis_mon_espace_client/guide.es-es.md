@@ -1,7 +1,7 @@
 ---
 title: Enviar SMS desde el área de cliente
 excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Objetivo
@@ -54,9 +54,17 @@ Una vez que haya seleccionado el remitente y los destinatarios, ya puede empezar
 
 ![escribir sms](images/sms-send-control-panel03E.png){.thumbnail}
 
-Introduzca su mensaje en el área de texto (1). En la esquina inferior derecha podrá ver un contador en el que se indican el número de caracteres restantes y la cantidad de SMS correspondiente (2). La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (norma GMS 03.38).
+Introduzca su mensaje en el área de texto (1). En la esquina inferior derecha podrá ver un contador en el que se indican el número de caracteres restantes y la cantidad de SMS correspondiente (2).
 
-Las tablas que ofrecemos a continuación recogen los caracteres autorizados con codificación de 7 bits. Los caracteres de la tabla «**Extensiones**» cuentan por dos. Si utiliza caracteres que no figuran en estas tablas, la codificación pasará a Unicode y la longitud máxima del SMS se reducirá a 70 caracteres.
+> [!primary]
+>
+> Recomendamos no superar los 8 SMS por mensaje. A partir de este límite, los operadores ya no garantizan la entrega del mensaje.
+
+Las tablas que ofrecemos a continuación recogen los caracteres autorizados con codificación de 7 bits. Los caracteres de la tabla "**Extensiones**" cuentan por dos.
+
+La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (norma GMS 03.38).
+
+ Si utiliza caracteres que no figuran en estas tablas, la codificación pasará a Unicode y la longitud máxima del SMS se reducirá a 70 caracteres.
 
 ![Lista de caracteres de SMS](images/smsauthorizedcharacters.png){.thumbnail}
 

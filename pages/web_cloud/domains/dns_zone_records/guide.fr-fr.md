@@ -1,7 +1,7 @@
 ---
 title: "Tout savoir sur les enregistrements DNS"
 excerpt: "Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud"
-updated: 2024-07-17
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -55,19 +55,19 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> > [!alert]
 >> >
 >> > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
->> 
+>>
 >> > [!warning]
 >> >
->> > Par convention, les champs CNAME ne peuvent pas être directement utilisés par un domaine dans sa propre zone DNS. En effet, le domaine seul doit obligatoirement et directement pointer vers une adresse IP avec un champ de type A (ou AAAA s’il s’agit d’une IPv6).
->> > 
+>> > Par convention, les champs CNAME ne peuvent pas être directement utilisés par un nom de domaine dans sa propre zone DNS. En effet, le domaine seul doit obligatoirement et directement pointer vers une adresse IP avec un champ de type A (ou AAAA s’il s’agit d’une IPv6).
+>> >
 >> > Pour reprendre l’exemple donné ci-dessus, vous ne pourrez pas créer un champ CNAME pour le domaine *domain.tld* dans la zone DNS que vous avez créée pour celui-ci.
->> > Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemple : *subdomain.domain.tld* ou *www.domain.tld*) du domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
+>> > Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemple : *subdomain.domain.tld* ou *www.domain.tld*) du nom de domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
 >> >
 >> > Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pouvez retrouver, en bas de cette page, [un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines](#cnameusecase).
 >>
 > **Champ DNAME**
 >> **D**elegation **NAME**<br><br>
->> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
+>> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un nom de domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
 >>
 >> Exemple : en créant un enregistrement DNAME de *domain.tld* vers *ovh.com*, tous les sous-domaines de *domain.tld* (tels que *dname.domain.tld* et *xxx.domain.tld*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*).
 >>
@@ -75,22 +75,22 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> > [!warning]
 >> >
->> > En revanche, *domain.tld* en tant que domaine n’affichera pas la cible du domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
+>> > En revanche, *domain.tld* en tant que domaine n’affichera pas la cible du nom de domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des noms de domaine définis dans l’enregistrement DNAME.
 >> >
 >> > De plus, en reprenant l'un des exemples ci-dessus, si le sous-domaine cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.domain.tld*.
->> 
+>>
 >> > [!success]
 >> >
->> > L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société. Il peut aussi être mis en place lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, etc.) pour les rediriger entre eux facilement.
+>> > L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société. Il peut aussi être mis en place lorsqu’un utilisateur dispose de plusieurs extensions de noms de domaine (.fr, .net, .com, .info, etc.) pour les rediriger entre eux facilement.
 >> >
 > **Champ NS**
 >> **N**ame **S**erver<br><br>
 >> Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dnsXX.ovh.net* et *nsXX.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client OVHcloud. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) » pour plus d'informations.
 >>
 >> > [!warning]
->> > 
+>> >
 >> > Si vous [éditez une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit), ne modifiez pas, via le bouton `Modifier en mode textuel`{.action}, les enregistrements NS de votre zone DNS au profit de serveurs DNS externes à OVHcloud. En effet, cette zone DNS fonctionne **uniquement** avec des serveurs DNS OVHcloud.
->> 
+>>
 
 #### Enregistrements e-mail <a name="mail-records"></a>
 
@@ -135,7 +135,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> > [!warning]
 >> >
->> > L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
+>> > L'enregistrement TXT est limité à 255 caractères. Il est cependant possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
 >> >
 >> > Cette limite n'est cependant pas existante si vous passez par la fonctionnalité `Modifier en mode textuel`{.action} décrite dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » (pour les utilisateurs avertis).
 >>
@@ -151,7 +151,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 >> > Si vous configurez une entrée CAA pour un nom de domaine, cette configuration s'appliquera également à **tous les sous-domaines** de ce même nom de domaine.
 >> >
->> > Si vous utilisez un certificat SSL Let's Encrypt avec votre domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
+>> > Si vous utilisez un certificat SSL Let's Encrypt avec votre nom de domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R**<br><br>
@@ -167,20 +167,47 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification<br><br>
->> Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS. Il va permettre de conserver le *hash* d'un certificat directement dans la zone DNS de votre nom de domaine via un enregistrement DNS. 
+>> Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS. Il va permettre de conserver le *hash* d'un certificat directement dans la zone DNS de votre nom de domaine via un enregistrement DNS.
 >>
 >> Cet enregistrement est utilisé dans le cadre du protocole **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
 >>
 >> Le protocole DANE permet a un client (navigateur internet, client de messagerie e-mail, client FTP, client SSH, etc.) de consulter l'enregistrement TLSA. Ainsi, il s'assure qu'un certificat SSL/TLS utilisé pour un nom de domaine est bien celui certifiant ce même nom de domaine.
 >>
->> Si besoin, retrouvez plus de détails sur le site de l' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698) (EN).
 >>
+> **RP**
+>> **R**esponsible **P**erson<br><br>
+>> Cet enregistrement permet d'indiquer l'adresse e-mail de la personne responsable du nom de domaine. Cet enregistrement peut également être combiné à un enregistrement DNS de type TXT pour fournir de plus amples informations.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc1183#section-2) (EN).
+>>
+> **SVCB**
+>> **S**er**V**i**C**e **B**inding<br><br>
+>> Cet enregistrement DNS peut regrouper plusieurs informations pour permettre une connexion plus rapide et plus efficace à votre site web. Il permet aussi, par exemple, d'indiquer directement au navigateur Internet que le site web est compatible HTTP 2 ou HTTP 3, qu'il doit prioriser l'utilisation d'une adresse IP (IPv4 et/ou IPv6) mentionnée en paramètre ou encore de passer par un port d'accès spécifique. Cela permet ainsi au navigateur Internet de récupérer plusieurs informations en une seule requête.
+>>
+>> Cet enregistrement dispose de **2** modes : 
+>>
+>> - **Mode Alias** : ce mode s'active lorsque vous précisez une priorité égale à 0. Contrairement aux enregistrements DNS de type CNAME, elle permet de rediriger un nom de domaine depuis sa propre zone DNS (apex) vers un autre nom de domaine ou sous-domaine.
+>> - **Mode Service** : ce mode s'active lorsque vous précisez une priorité différente de 0. C'est dans ce mode que vous pourrez définir les paramètres que vous souhaitez appliquer à votre nom de domaine (exemples de paramètres : *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En mode **Service**, vous pouvez appliquer ces paramètres directement pour votre nom de domaine, même si ce dernier n'est pas à utiliser comme alias d'un autre nom de domaine.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+> **HTTPS**
+>> **H**yper **T**ext **T**ransfer **P**rotocol **S**ecure<br><br>
+>> Cet enregistrement fonctionne comme l'enregistrement DNS de type SVCB mais, contrairement à celui-ci, il est plus spécifique au protocole HTTP. Il peut regrouper plusieurs informations pour permettre une connexion plus rapide et plus efficace à votre site web. Il permet aussi, par exemple, d'indiquer directement au navigateur Internet que le site web est compatible HTTP 2 ou HTTP 3, qu'il doit prioriser l'utilisation d'une adresse IP (IPv4 et/ou IPv6) mentionnée en paramètre ou encore de passer par un port d'accès spécifique. Cela permet ainsi au navigateur Internet de récupérer plusieurs informations en une seule requête.
+>>
+>> Cet enregistrement dispose de **2** modes : 
+>>
+>> - **Mode Alias** : ce mode s'active lorsque vous précisez une priorité égale à 0. Contrairement aux enregistrements DNS de type CNAME, elle permet de rediriger un nom de domaine depuis sa propre zone DNS (apex) vers un autre nom de domaine ou sous-domaine.
+>> - **Mode Service** : ce mode s'active lorsque vous précisez une priorité différente de 0. C'est dans ce mode que vous pourrez définir les paramètres que vous souhaitez appliquer à votre nom de domaine (exemples de paramètres : *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En mode **Service**, vous pouvez appliquer ces paramètres directement pour votre nom de domaine, même si ce dernier n'est pas à utiliser comme alias d'un autre nom de domaine.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
 
 #### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="cnameusecase"></a>
 
-Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *subdomain-with-its-own-DNS-zone.domain.tld*). La règle précisée plus haut dans l'onglet « CNAME » de la partie « [Enregistrements de pointage](#pointer-records) » s’applique alors également dans ce cas de figure.
+Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un nom de domaine (par exemple *subdomain-with-its-own-DNS-zone.domain.tld*). La règle précisée plus haut dans l'onglet « CNAME » de la partie « [Enregistrements de pointage](#pointer-records) » s’applique alors également dans ce cas de figure.
 
-La zone DNS étant créée pour le sous-domaine (dans notre exemple *subdomain-with-its-own-DNS-zone.domain.tld*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
+La zone DNS étant créée pour le sous-domaine (dans notre exemple *subdomain-with-its-own-DNS-zone.domain.tld*), ce dernier est alors considéré comme un nom de domaine à part entière dans sa zone DNS.
 
 De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ CNAME pour *subdomain-with-its-own-DNS-zone.domain.tld* dans la zone DNS que vous avez créé pour celui-ci. Vous pourrez cependant créer des champs CNAME tels que *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* ou *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
 
@@ -192,7 +219,7 @@ De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ 
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
 
-[Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
+[Protégez votre nom de domaine contre le Cache Poisoning avec le DNSSEC](/links/web/domains-dnssec)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

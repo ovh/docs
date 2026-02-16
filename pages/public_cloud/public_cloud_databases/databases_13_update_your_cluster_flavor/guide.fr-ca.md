@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Comment mettre à jour votre flavor de service (EN)
+title: Mettre à jour la flavor d'une base de données Public Cloud (EN)
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2024-12-30
 ---

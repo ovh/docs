@@ -1,7 +1,7 @@
 ---
 title: "Activer et gérer les licences Windows de vos machines virtuelles"
 excerpt: "Découvrez comment activer et gérer les licences Windows de vos machines virtuelles"
-updated: 2025-06-23
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -80,6 +80,10 @@ Deux cas de figure sont possibles :
 > [!success]
 >
 > La VM est désormais déclarée et licenciée par OVHcloud. Elle sera prise en compte dans votre facturation et dans le suivi de conformité.
+
+Lors de l'installation d'un système d'exploitation Windows Server, il est possible que la clé d'activation ne soit pas correctement enregistrée. Dans ce cas, le système est installé avec une clé en version d'essai d'une durée de 120 jours. Passé ce délai, votre système ne sera plus utilisable.
+
+[Ce guide](/pages/bare_metal_cloud/dedicated_servers/windows_key) vous explique comment modifier la clé d'activation de votre environnement Windows Server.
 
 ### Gérer les licences via l’API OVHcloud
 

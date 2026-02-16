@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
 excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -64,19 +64,19 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Adresses IP Publiques`{.action}.
 
-Dans le cadre jaune dédié aux alertes, cliquez sur la flèche déroulante `Voir toutes mes alertes`{.action} pour afficher toutes les alertes sur votre ou vos adresses IP.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-Si l'une de vos adresses IP est concernée par une alerte, l'information sera affichée juste en dessous :
+Si vous avez une alerte sur l'une de vos adresses IP, vous trouverez un badge de statut rouge dans la colonne **IP Alert**.
 
-![Alerte anti spam](images/alertblockedip.png){.thumbnail}
+![Alerte anti spam](images/blockedIP_new.png){.thumbnail}
 
-Dans la rubrique « Mes adresses IP publiques et services associés », cliquez sur le bouton `...`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Anti-spam`{.action}.
+Cliquez sur le bouton `⁝`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Déblocage Anti-spam`{.action}.
 
-![antispam](images/antispam.png){.thumbnail}
+![antispam](images/antispam_new.png){.thumbnail}
 
-Dans le nouvel onglet, cliquez sur `Débloquer l'antispam`{.action} en bas et validez.
+Dans la fenêtre qui s'ouvre, cliquez sur `Débloquer l'IP`{.action} en bas et validez.
 
-![Débloquer IP](images/unblockip.png){.thumbnail}
+![Débloquer IP](images/unblockip_new.png){.thumbnail}
 
 L'IP est alors en cours de déblocage, l'opération peut prendre plusieurs minutes.
 
@@ -86,7 +86,7 @@ Une fois le traitement effectué, votre IP sera débloquée.
 
 Connectez-vous à l'interface [API d'OVHcloud](/links/api) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
-Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
+Récupérez tout d'abord la liste des adresses IP de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
 
 > [!api]
 >
@@ -107,7 +107,7 @@ Voici un exemple de résultat :
 "188.81.49.30/28",
 ```
 
-Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. Si vous connaissez déjà l'adresse IP bloquée, vous pouvez passer à l'[étape suivante](#unblockip) :
+Recherchez ensuite les adresses IP dans un état particulier grâce à l'appel suivant. Si vous connaissez déjà l'adresse IP bloquée, vous pouvez passer à l'[étape suivante](#unblockip) :
 
 > [!api]
 >
@@ -176,7 +176,7 @@ Voici un exemple de résultat :
 
 > [!alert]
 > IMPORTANT !
-Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
+> Ne débloquez en aucun cas l'IP sans avoir suspendu l'envoi des e-mails depuis votre serveur et vidé votre file d'attente d'emails. Dans le cas contraire, vous serez immédiatement bloqué une seconde fois, pour une durée plus longue. 
 >
 
 Pour débloquer votre adresse IP, utilisez l'appel suivant :
@@ -263,13 +263,13 @@ Pour plus d'informations sur les services ci-dessus, consultez notre guide « [O
 
 - **Vers un serveur Microsoft (Outlook, etc.)**
 
-Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter la section **Vers un serveur Microsoft (Outlook, etc.)** de notre guide « [Comment éviter que vos e-mails ne soient marqués comme spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization) ».
 
 - **Vers un serveur Gmail**
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr).
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563/).
 
-Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en) à la prévention du spam pour les utilisateurs de Gmail.
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126/) à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 

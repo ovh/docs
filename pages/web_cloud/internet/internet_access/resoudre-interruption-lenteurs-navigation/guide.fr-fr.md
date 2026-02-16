@@ -24,7 +24,7 @@ Avant de débuter, assurez-vous qu'aucun élément plus global ne perturbe votre
 
 - **le service n'est pas dégradé suite à une saturation de votre connexion** : il est possible que votre connexion fonctionne correctement mais qu'un élément relié à votre modem accapare le débit disponible. Reportez-vous alors aux instructions décrites dans notre documentation « [Vérifier si son lien xDSL est saturé](/pages/web_cloud/internet/internet_access/verifier-lien-xdsl-sature) » ;
 
-- **aucun incident sur votre ligne n'est en cours** : un incident plus global pourrait perturber votre accès. Rendez-vous donc sur la page <https://status.isp.ovh.net/> ou sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/) ;
+- **aucun incident sur votre ligne n'est en cours** : un incident plus global pourrait perturber votre accès. Rendez-vous donc sur la page <https://status.isp.ovhcloud.com/> ou sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/) ;
 
 - **le service fonctionne sur un autre équipement** : si vous en avez la possibilité, testez votre connexion depuis un équipement différent (tel qu'un autre ordinateur ou un téléphone).
 

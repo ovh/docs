@@ -1,7 +1,7 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
 excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 
 Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and your SMS account.
 
-The “Send an SMS” field is the first item available in the list of actions.
+The "Send an SMS" field is the first item available in the list of actions.
 
 ![send sms control panel](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -38,7 +38,7 @@ For further information on how to create a sender, please refer to [Step 3: Choo
 
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 
-- Via a list of recipients in .csv format, via the “Manage recipients” button.
+- Via a list of recipients in .csv format, via the "Manage recipients" button.
 For further information on this, you can refer to our [guide on SMS recipient lists](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms).
 
 - By creating an address book (3). You can do this directly via the OVHcloud Control Panel, or import one as a .csv or .txt file.
@@ -56,7 +56,11 @@ Once you have selected a sender and entered your recipients, you can now start c
 
 Type your message in the box (1). You will see a counter showing the number of characters used, and the number of corresponding SMS messages (2).
 
-The two tables below list the characters that are authorised in 7bit encoding. The characters in the “Extensions” table count as double. 
+> [!primary]
+>
+> We recommend not exceeding 8 SMS per message. Beyond this limit, operators can no longer guarantee message delivery.
+
+The two tables below list the characters that are authorised in 7bit encoding. The characters in the "**Extensions**" table count as double. 
 
 The maximum size of an SMS message is 160 characters in 7bit encoding (GSM 03.38 standard).
 

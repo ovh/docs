@@ -1,14 +1,14 @@
 ---
-title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9-11'
+title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debian 9-11'
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9-11'
-updated: 2024-11-26
+updated: 2026-01-09
 ---
 
 ## Wprowadzenie
 
 Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w celu zwiększenia dostępności serwera oraz podniesienia wydajności połączeń sieciowych. Możesz w prosty sposób przeprowadzić agregację kart sieciowych, dzięki czemu Twoje połączenia sieciowe staną się redundantne. Jeśli jedno połączenie zostanie zerwane, ruch zostanie automatycznie przekierowany do innego dostępnego łącza. 
 
-**Ten przewodnik wyjaśnia, jak powiązać interfejsy sieciowe i wykorzystać je do OLA w Debianie 9-11.**
+**Dowiedz się, jak połączyć swoje karty sieciowe (NIC) w celu korzystania z usługi OLA w systemie Debian (wersje od 9 do 11).**
 
 ## Wymagania początkowe
 
@@ -22,6 +22,13 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> Niniejszy przewodnik zawiera instrukcje dotyczące konfiguracji agregacji interfejsów sieciowych przy użyciu programu `ifupdown`, którego plik konfiguracyjny znajduje się w katalogu `/etc/network/interfaces`. Ma on również zastosowanie w trybie ratunkowym.
+>
+> Jeśli konfiguracja sieciowa systemu wykorzystuje raczej `Netplan`, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## W praktyce
@@ -58,6 +65,7 @@ Spowoduje to otwarcie pustego pliku tekstowego. Aby skonfigurować powiązanie, 
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> W przypadku parametru `hwaddress` zalecamy użycie mniejszego z dwóch adresów MAC kart sieciowych, ponieważ należy on do interfejsu rezerwowego (fallback) LACP.
+>
 
 > [!primary]
 >

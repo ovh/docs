@@ -6,8 +6,8 @@ updated: 2025-11-18
 
 ## Objectif
 
-Ce guide détaille les étapes à suivre pour installer un noeud OPCP via la création d'une instance à partir des API OpenStack.
-Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’un noeud installé et actif.
+Ce guide détaille les étapes à suivre pour installer un nœud OPCP via la création d'une instance à partir des API OpenStack.
+Avant de pouvoir déployer des services sur vos baies **OPCP**, il est nécessaire de disposer au moins d’un nœud installé et actif.
 
 ## Prérequis
 
@@ -335,15 +335,15 @@ openstack server list
 +--------------------------------------+-----------------+--------+-------------------------+---------------------+---------+
 ```
 
-Si vous souhaitez installer l'instance sur un noeud spécifique, vous pouvez spécifier l'identifiant de votre noeud dans votre commande :
+Si vous souhaitez installer l'instance sur un nœud spécifique, vous pouvez spécifier l'identifiant de votre nœud dans votre commande :
 
 ```bash
-openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_noeud_ID $server_name
+openstack server create --flavor $flavor_ID --image $image_ID --network $network_ID --key-name $your_keyname --availability-zone nova::$baremetal_nœud_ID $server_name
 ```
 
-Il faudra cependant vous assurer que le noeud a le statut `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
+Il faudra cependant vous assurer que le nœud a le statut `Available` et possède bien les **traits** nécessaires pour installer la flavor souhaitée.
 
-Pour vérifier l'état actuel du noeud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un noeud OPCP](/pages/hosted_private_cloud/opcp/node-lifecycle).
+Pour vérifier l'état actuel du nœud et récupérer son identifiant, vous pouvez consultez notre documentation : [Cycle de vie d'un nœud OPCP](/pages/hosted_private_cloud/opcp/node-lifecycle).
 
 #### Suppression d'une instance
 
@@ -353,10 +353,10 @@ Vous pouvez supprimer une instance grâce à la commande suivante :
 openstack server delete $INSTANCE_ID
 ```
 
-Votre noeud passera en état `Cleaning`. Cette étape consiste à la réinitialisation matérielle du serveur physique et de l'effacement des données présentes sur les disques.
+Votre nœud passera en état `Cleaning`. Cette étape consiste à la réinitialisation matérielle du serveur physique et de l'effacement des données présentes sur les disques.
 
-Durant cette étape, vous ne verrez plus l'instance dans la liste des instances, cependant le noeud ne sera pas disponible immédiatement pour une nouvelle installation. N'oubliez pas de prendre en compte ce délai lors de vos opérations de maintenance.
-L'opération peut prendre plusieurs minutes avant que le noeud soit de nouveau `Available` et disponible pour une nouvelle installation.
+Durant cette étape, vous ne verrez plus l'instance dans la liste des instances, cependant le nœud ne sera pas disponible immédiatement pour une nouvelle installation. N'oubliez pas de prendre en compte ce délai lors de vos opérations de maintenance.
+L'opération peut prendre plusieurs minutes avant que le nœud soit de nouveau `Available` et disponible pour une nouvelle installation.
 
 ### Références
 

@@ -1,7 +1,7 @@
 ---
 title: "How to add a CNAME record for a subdomain"
 excerpt: "Find out how to add a CNAME DNS record to an OVHcloud DNS zone for a domain name subdomain"
-updated: 2025-06-25
+updated: 2026-02-10
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-A CNAME record is used to associate a subdomain with a domain or subdomain, without having to specify an IP address. This means that the subdomain will be redirected to the target domain or subdomain’s IP address, without requiring any additional configuration.
+A CNAME record is used to associate a subdomain with a domain name or subdomain, without having to specify an IP address. This means that the subdomain will be redirected to the target domain name or subdomain’s IP address, without requiring any additional configuration.
 
 For example, if you create a CNAME record for *www.domain.tld* that points to *domain.tld*, then *www.domain.tld* will use the same IP address as *domain.tld*.
 
@@ -80,12 +80,12 @@ A DNS query for *www.domain.tld* will return either the target of the CNAME reco
 
 ///
 
-/// details | CNAME on a domain in its own DNS zone
+/// details | CNAME on a domain name in its own DNS zone
 
 By convention, **CNAME records cannot be used on a domain name in its own DNS zone**. The domain name must point directly to an IP address with a record of type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) for an IPv4, or [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) for an IPv6.
 
 As an example, you will not be able to create a CNAME record for the domain name *domain.tld* in the DNS zone you have created for it.  
-However, you can create CNAME records for all subdomains (e.g. *subdomain.domain.tld* or *www.domain.tld*) of the *domain.tld* domain in the DNS zone created for *domain.tld*.
+However, you can create CNAME records for all subdomains (e.g. *subdomain.domain.tld* or *www.domain.tld*) of the *domain.tld* domain name in the DNS zone created for *domain.tld*.
 
 ///
 

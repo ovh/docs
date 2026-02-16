@@ -21,11 +21,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Nehmen Sie an unserer Umfrage teil und helfen Sie uns, diese Anleitung zu verbessern!<br>
-> Teilen Sie uns Ihre Meinung und Ihre Ideen mit.<br>
-> [Zur Umfrage wechseln.](https://s.elq.fr/ovhext/EsCB5sR)
-
 ## Ziel
 
 Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachrichten von einem Gerät Ihrer Wahl aus versenden und empfangen können.

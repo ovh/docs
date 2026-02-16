@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Configurer un nœud Analytics (EN)
+title: Configurer un nœud Analytics pour Public Cloud Databases pour MongoDB (EN)
 excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for MongoDB to support analytics workloads
 updated: 2025-07-31
 ---

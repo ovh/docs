@@ -4,11 +4,6 @@ excerpt: 'Descubra cómo solucionar el error "Sitio no instalado"'
 updated: 2025-08-25
 ---
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/B4nKjrd)
-
 ## Objetivo
 
 Es posible que aparezca en su navegador de internet la página de error "**Sitio no instalado**", especialmente durante la primera instalación de su sitio web.
