@@ -4,11 +4,6 @@ excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
 updated: 2025-08-25
 ---
 
-> [!success]
-> Participe no nosso inquérito e ajude-nos a melhorar este guia!<br>
-> Não hesite em partilhar connosco as suas opiniões e ideias.<br>
-> [Aceda ao inquérito.](https://s.elq.fr/ovhext/B4nKjrd)
-
 ## Objetivo
 
 É possível que apareça no browser a página de erro “**Site não instalado**”, nomeadamente durante a primeira instalação do seu website.

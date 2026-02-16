@@ -1,7 +1,7 @@
 ---
 title: Configura un Additional IP
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-updated: 2025-12-04
+updated: 2025-12-17
 ---
 
 > [!primary]
@@ -188,8 +188,8 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Ripeti questa procedura per ogni indirizzo Additional IP.
 >>
-> **cPanel (CentOS 7) / derivati Red Hat**
->> cPanel (CentOS 7) / AlmaLinux (8/9/10) / Rocky Linux (8/9/10)
+> **AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)**
+>> AlmaLinux (8/9) / Rocky Linux (8/9) / CloudLinux (8/9)
 >>
 >> **Step 1: modifica il file di configurazione di rete**
 >>
@@ -222,6 +222,48 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ```bash
 >> sudo systemctl restart networking
+>> ```
+>>
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora, AlmaLinux 10 & Rocky Linux 10
+>>
+>> Questi sistemi utilizzano file chiave. NetworkManager ha precedentemente archiviato i profili di rete in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg non è più consigliato. Per impostazione predefinita, NetworkManager non crea più profili in questo formato. Il file di configurazione è ora disponibile in `/etc/NetworkManager/system-connections/`.
+>>
+>> **Step 1: modifica il file di configurazione**
+>>
+>> > [!primary]
+>> > Ti ricordiamo che il nome del file di rete nel nostro esempio potrebbe essere diverso dal tuo. Adatta i comandi al tuo nome di file.
+>> >
+>>
+>> ```bash
+>> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+>> ```
+>>
+>> Non modificare le righe esistenti nel file di configurazione, aggiungi l’Additional IP al file come segue, sostituendo `ADDITIONAL_IP/32` con i tuoi valori:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP/32
+>> ```
+>>
+>> Se avete due Additional IP da configurare, la configurazione dovrebbe essere questa:
+>>
+>> ```console
+>> [ipv4]
+>> method=auto
+>> may-fail=false
+>> address1=ADDITIONAL_IP1/32
+>> address2=ADDITIONAL_IP2/32
+>> ```
+>>
+>> **Step 2: riavvia l’interfaccia**
+>>
+>> Riavvia l’interfaccia:
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Plesk**

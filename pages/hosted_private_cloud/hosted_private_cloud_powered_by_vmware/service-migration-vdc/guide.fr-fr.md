@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2025-08-25
+updated: 2026-01-06
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -338,8 +338,7 @@ Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x
 > - Certaines appliances de routage virtuel telles que pfSense utilisent CARP pour fournir de la haute disponibilité.
 > - Les VMs qui utilisent CARP auront besoin que le « *Promiscuous Mode* » soit activé dans les paramètres de sécurité d'un groupe de ports.
 > - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
-> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d'ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
->
+> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, suivez les instructions de [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_carp).
 
 <a name="inventory"></a>
 #### Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)

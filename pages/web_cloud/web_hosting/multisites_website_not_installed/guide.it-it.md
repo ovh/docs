@@ -4,11 +4,6 @@ excerpt: Questa guida ti mostra come identificare e risolvere la pagina di error
 updated: 2025-08-25
 ---
 
-> [!success]
-> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
-> Condividi con noi le tue opinioni e idee.<br>
-> [Accedi al sondaggio.](https://s.elq.fr/ovhext/B4nKjrd)
-
 ## Obiettivo
 
 La pagina di errore "**Sito non installato**" può essere visualizzata sul browser, in particolare al momento della prima installazione del sito Web.

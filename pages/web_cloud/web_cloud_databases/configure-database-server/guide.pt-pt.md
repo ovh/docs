@@ -1,7 +1,7 @@
 ---
 title: 'Configurar o servidor de bases de dados'
 excerpt: 'Descubra como configurar e otimizar o servidor de bases de dados'
-updated: 2025-02-20
+updated: 2026-02-06
 ---
 
 ## Objetivo
@@ -102,7 +102,6 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
-- **Tmpdir**: Diretório de ficheiros temporários. **/dev/shm** corresponde à memória RAM da instância. **/tmp** corresponde ao disco rígido da instância.
 - **MaxAllowedPacket**: Tamanho máximo dos pacotes.
 - **Max_user_connections**: Número de conexões simultâneas autorizadas por utlizador.
 - **AutoCommit**: Define se os pedidos são validados (committed) automaticamente.
@@ -116,15 +115,6 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 > [!primary]
 > Quando encontra um erro no seu site a indicar **"Too many connections"**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
 > Assim, se a variável **"MaxConnections"** não estiver no máximo, pode aumentá-la.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: O servidor de bases de dados vai alocar para este diretório metade da sua memória RAM, tendo em vista um melhor desempenho.
->
-> - /tmp: O servidor vai alocar no disco rígido um espaço ilimitado para este diretório, mas o desempenho será muito inferior. Recomendamos que utilize este diretório apenas para operações pontuais pesadas.
 >
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo proteger su sitio web?"
 excerpt: "Descubra cómo aumentar la seguridad de su sitio web"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Objetivo
@@ -75,9 +75,16 @@ También le recomendamos que compruebe regularmente la **validez de las formas d
 
 ### Etapa 6 - Compruebe que su sitio web está actualizado
 
-Compruebe regularmente las actualizaciones de su sitio web siguiendo las instrucciones de esta [guía](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-actualizar-el-sitio-web).
+Asegúrate de que tu sitio web esté actualizado, tanto en cuanto al contenido como a los componentes técnicos (CMS, extensiones, versiones de PHP y dependencias).
 
-No olvide utilizar una versión reciente del [lenguaje PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) en su alojamiento.
+Si utilizas un CMS, consulta su documentación oficial para actualizarlo:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/es)
+
+También asegúrate de utilizar una versión reciente del [lenguaje de programación PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) en tu alojamiento.
 
 ### Etapa 7 - Activar el HTTPS
 

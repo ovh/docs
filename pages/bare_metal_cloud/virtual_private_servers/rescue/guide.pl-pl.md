@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie i korzystanie z trybu Rescue na serwerze VPS
 excerpt: Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem VPS i przeprowadzania weryfikacji systemu
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Wprowadzenie
@@ -53,6 +53,10 @@ Po rozpoczęciu restartu pasek postępu wskazuje czas trwania zadania. Może to 
 > [!primary]
 >
 > Otrzymasz automatyczny e-mail z danymi do logowania SSH, w celu uzyskania dostępu do trybu Rescue. Prosimy o oczekiwanie na wiadomość e-mail przed kontynuowaniem jakichkolwiek działań. E-mail ten jest również dostępny w Twoim [Panelu klienta OVHcloud](/links/manager). Aby ją znaleźć, kliknij na nazwę powiązaną z Twoim identyfikatorem OVHcloud na pasku menu w prawym górnym rogu, następnie wybierz `E-maile dotyczące usługi`{.action}.
+>
+
+> [!warning]
+> Pamiętaj, że jeśli nie jesteś już osobą kontaktową ds. technicznych serwera, nie otrzymasz wiadomości e-mail. Więcej informacji znajdziesz w naszym przewodniku: [Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
 Następnie [uzyskaj dostęp do Twojego serwera przez SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), używając tymczasowego hasła wygenerowanego dla trybu Rescue.

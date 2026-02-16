@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
 excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
-updated: 2025-02-14
+updated: 2026-01-09
 ---
 
 <style>
@@ -22,7 +22,16 @@ details[open]>summary::before {
 
 La technologie LACP (Link Aggregation Control Protocol) est conçue pour augmenter la disponibilité de votre serveur et améliorer l’efficacité de vos connexions réseau. Vous pouvez agréger vos cartes réseau et rendre vos liens réseau redondants. Cela signifie que si un lien tombe en panne, le trafic est automatiquement redirigé vers un autre lien disponible. La bande passante disponible est également doublée grâce à l’agrégation.
 
-**Ce guide explique comment lier vos interfaces pour les utiliser pour l'agrégation de liens dans Debian 12 / Ubuntu 24.04 (configuration Netplan).**
+**Ce guide explique comment lier vos interfaces pour les utiliser pour l'agrégation de liens dans Debian 12 (*ou plus récent*) / Ubuntu 24.04 (configuration Netplan).**
+
+> [!warning]
+> Bien que les images Debian 12 (ou plus récentes) fournies par OVHcloud utilisent `Netplan` par défaut, il existe deux exceptions clés où `ifupdown` (/etc/network/interfaces) est utilisé à la place :
+>
+> - **Mode rescue** : Bien qu'il soit basé sur Debian 12, le mode rescue s'appuie sur l'utilitaire `ifupdown`.
+> - **Images personnalisées** : Il se peut que les installations Debian effectuées à l'aide de votre propre image utilisent toujours `ifupdown` pour leur configuration réseau.
+>
+> Si vous souhaitez configurer l'agrégation de liens en mode rescue, ou sur un OS personnalisé s'appuyant sur `ifupdown`, veuillez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9) à la place.
+>
 
 ## Prérequis
 
@@ -43,7 +52,10 @@ Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses M
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
 > [!primary]
-> Veuillez noter que l'adresse MAC de l'interface publique **principale** est celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:c6`.
+> Veuillez noter que l'adresse MAC de l'interface **publique principale** est celle qui reçoit les offres DHCP à la fois dans le système d'exploitation du serveur et en mode rescue. Cette interface gère la connectivité publique dans la configuration par défaut.
+>
+> Quant à l'adresse MAC de l'interface **privée principale**, il s'agit de celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:d6`.
+>
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
 

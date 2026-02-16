@@ -4,11 +4,6 @@ excerpt: Dowiedz się, jak zarządzać usługami i odnawianiem usług w Panelu k
 updated: 2025-01-28
 ---
 
-> [!success]
-> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
-> Podziel się z nami swoją opinią i pomysłami.<br>
-> [przejdź do ankiety.](https://s.elq.fr/ovhext/FFBTC2m)
-
 ## Wprowadzenie
 
 Menu **Moje rozwiązania i usługi** w Panelu klienta OVHcloud umożliwia sprawdzenie statusu usług, ich odnowienie, zmianę typu odnowienia, regulowanie faktur lub antycypowanie płatności.

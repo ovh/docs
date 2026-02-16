@@ -1,7 +1,7 @@
 ---
 title: Securing Logs Data Platform's APIs with tokens
 excerpt: If you want to give access to your logs to a software application or automate tasks that depend on your logs, you may need to access them through the API.
-updated: 2025-10-16
+updated: 2025-12-17
 ---
 
 ## Objective
@@ -24,11 +24,42 @@ All these accesses are secured by your username and password. But what if you do
 
 ### Generating tokens with IAM
 
-Before generating tokens with IAM you will need to create a [Service Account or a Local User](/pages/manage_and_operate/iam/identities-management). Both have specificities detailed in IAM documentation. Don't forget to attach these new identities to your [IAM Policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
+Before generating tokens with IAM you will need to create [a local user or a service account](/pages/manage_and_operate/iam/identities-management). Both have specificities detailed in the IAM documentation. Don't forget to attach these new identities to your [IAM Policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
+
+#### Local Users
+
+Create a local user by following the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) and create the right [IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management). Once created, you can use the OVHcloud API to create a token for this user:
+
+> [!api]
+>
+> @api {v1} /me POST /me/identity/user/{user}/token
+>
+
+This call will return a bearer access token for your local user.
+
+You can then use this token on Logs Data Platform backend APIs:
+
+```bash
+ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer <access_token> -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
+```
+
+Or with the Bearer header:
+
+```bash
+ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <access_token>" -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
+```
+
+These tokens do not expire but can be deleted whenever needed with this call:
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/identity/user/{user}/token/{name}
+>
+
 
 #### Service accounts
 
-Create a service account and tokens by following the [documentation](/pages/manage_and_operate/api/manage-service-account). Service accounts are a identifier/token pair following the OAuth2 **client- credentials** authentication mechanism. If you are familiar with OAuth2 clients, here are the API calls to create them. We still recommend you to read the dedicated guide to understand its specificities.
+Create a service account and tokens by following the [documentation](/pages/manage_and_operate/api/manage-service-account). Service accounts are an identifier/token pair following the OAuth2 **client- credentials** authentication mechanism. If you are familiar with OAuth2 clients, here are the API calls to create them. We still recommend you to read the dedicated guide to understand its specificities. We encourage you to use local users if you can since they are easier to set up.
 
 To create a service account, use the following API call:
 
@@ -95,35 +126,6 @@ ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <a
 
 Note that access tokens created through a service account expire after some time. You must regenerate a new one after it has expired.
 
-#### Local Users
-
-Create a local user by following the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management) and create the right [IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management). Once created, you can use the OVHcloud API to create a token for this user:
-
-> [!api]
->
-> @api {v1} /me POST /me/identity/user/{user}/token
->
-
-This call will return a bearer access token for your local user.
-
-You can then use this token on Logs Data Platform backend APIs:
-
-```bash
-ldp@laptop curl -H 'content-type: application/json' --oauth2-bearer <access_token> -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
-```
-
-Or with the Bearer header
-
-```bash
-ldp@laptop curl -H 'content-type: application/json' -H "Authorization: Bearer <access_token>" -XPUT 'https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd'
-```
-
-These tokens do not expire but can be deleted whenever needed with this call:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/identity/user/{user}/token/{name}
->
 
 #### Hybrid authentication
 
@@ -151,10 +153,10 @@ Once the token is created, you can use its value or remove it:
 
 ![token generated](images/token_generated.png){.thumbnail}
 
-### Using your tokens
+#### Using your legacy tokens
 
-Using your token is no different than using your credentials. You just have to replace your username with the word **token** and your password with the token (the opposite works too).
-For example, to issue a search against the Graylog API with the token obtained above, you can do the following:
+Using your legacy token is not different than using your credentials. You just have to replace your username with the word **token** and your password with the legacy token (the opposite works too).
+For example, to issue a search against the Graylog API with the legacy token obtained above, you can do the following:
 
 ```shell-session
 $ curl -u token:kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd"
@@ -177,7 +179,7 @@ $ curl -u token:kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q "https://<yo
 
 This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have set up in your Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Grafana (or any tool that supports Basic Authentication with OpenSearch).
 
-The Graylog Web Interface does not support token authentication.
+The Graylog Web Interface does not support legacy token authentication.
 
 ## Go further
 

@@ -184,8 +184,8 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> Fedora 42+
->> **Fedora 42 y versiones posteriores**
+> **Fedora 42+ / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42 y versiones posteriores, AlmaLinux y Rocky Linux (10)
 >>
 >> Fedora ahora utiliza archivos clave (*keyfiles*).
 >> Fedora solía utilizar perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
@@ -260,7 +260,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> ```
 >> ///
 >>
->> **3. Reiniciar la interfaz****
+>> **3. Reiniciar la interfaz**
 >>
 >> A continuación, reinicie la interfaz:
 >>
@@ -353,7 +353,7 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >> >
 >>
 > **AlmaLinux / Rocky Linux**
->> **AlmaLinux (8/9/10), Rocky Linux (8/9/10)**
+>> AlmaLinux (8/9) & Rocky Linux (8/9)
 >>
 >> El archivo de configuración principal se encuentra en `/etc/sysconfig/network-scripts/`. En nuestro ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre de archivo real en esta carpeta.
 >>
@@ -539,8 +539,8 @@ En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos si
 >>
 >> ![Final configuration](images/final-ip-configuration.png){.thumbnail}
 >>
-> Plesk
->> **Plesk**
+> **Plesk**
+>> Plesk
 >>
 >> **1. Acceder a la gestión de IP de Plesk**
 >>

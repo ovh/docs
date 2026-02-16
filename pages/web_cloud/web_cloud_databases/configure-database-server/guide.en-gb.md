@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your database server'
 excerpt: 'Find out how to configure and optimise your database server'
-updated: 2025-02-20
+updated: 2026-02-06
 ---
 
 ## Objective
@@ -103,7 +103,6 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
-- <b>Tmpdir</b>: Directory of temporary files. <b>"/dev/shm"</b> is the instance’s RAM. <b>"/tmp"</b> is the instance’s hard drive.
 - <b>MaxAllowedPacket</b>: The maximum packet size.
 - <b>Max_user_connections</b>: The number of concurrent connections authorised per user.
 - <b>AutoCommit</b>: Sets whether requests are automatically committed or not.
@@ -117,15 +116,6 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 > [!primary]
 > When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
 > You can then increase the **MaxConnections variable** if it is not at its maximum.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
->
-> - /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
 >
 
 > [!primary]

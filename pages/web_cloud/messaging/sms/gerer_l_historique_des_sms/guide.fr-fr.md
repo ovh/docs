@@ -1,7 +1,7 @@
 ---
 title: 'Gérer l’historique des SMS'
 excerpt: 'Découvrez comment consulter l’historique de vos SMS envoyés depuis votre compte OVHcloud'
-updated: 2022-08-05
+updated: 2025-12-30
 ---
 
 ## Objectif
@@ -21,7 +21,9 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 > [!primary]
 >
-> L'espace client ne pourra afficher que les 6 derniers mois de votre historique. Pour consulter des SMS plus anciens, consultez [l'Étape 2 : télécharger l'historique de vos SMS en CSV](#csv).
+> L'espace client OVHcloud vous permet de consulter les SMS envoyés au cours des 6 derniers mois (ou les 5000 derniers SMS si vous avez envoyé plus de 5000 SMS au cours des 6 derniers mois).
+>
+> Pour consulter des SMS plus anciens (jusqu'aux 12 derniers mois), vous devez télécharger l'historique de vos SMS au format CSV. Consultez [l'étape 2 de ce guide](#csv).
 >
 
 ### Étape 1 : consulter l'historique dans votre espace client

@@ -1,7 +1,7 @@
 ---
 title: "Corriger la clé d’activation Windows Server"
 excerpt: "Découvrez comment modifier la clé d'activation de votre Windows Server"
-updated: 2022-07-07
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Lors de l'installation d'un système d'exploitation Windows Server, il est possi
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/os/server-windows/) avec Windows installé dans votre compte OVHcloud
+- Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/os) exécutant Windows Server ou d'une machine virtuelle exécutant Windows Server sur un service [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses).
 - Disposer d'une licence Windows SPLA dans votre compte OVHcloud
 - Avoir un accès administratif à votre serveur via une connexion bureau à distance
 

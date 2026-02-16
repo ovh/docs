@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre la gestión de la cuenta de OVHcloud
 excerpt: Consulte las preguntas más frecuentes sobre la gestión de la cuenta de OVHcloud
-updated: 2025-10-30
+updated: 2025-12-18
 ---
 
 <style>
@@ -246,13 +246,48 @@ Si se cumplen las condiciones anteriores, puede solicitar la eliminación de su 
 
 ### Gestionar notificaciones y registros
 
-/// details | ¿Puedo recibir todas las notificaciones de OVHcloud en varias direcciones de correo?
+/// details | ¿Puedo recibir las notificaciones de OVHcloud en varias direcciones de correo electrónico?
 
-Desafortunadamente, no es posible enviar correos de comunicación a varias direcciones.
+Desde noviembre de 2025, puede añadir nuevas direcciones de correo electrónico de contacto para repartir la distribución de los correos electrónicos enviados por OVHcloud.
 
-Desde su [área de cliente OVHcloud](/links/manager), puede configurar una dirección de correo de respaldo que no se utilizará para el envío de todas nuestras comunicaciones (renovaciones, eliminaciones de servicios, etc.).
+Consulte nuestra guía dedicada: [Gestionar las comunicaciones relacionadas con los servicios de OVHcloud](/pages/account_and_service_management/account_information/manage-messages).
 
-Esta dirección de correo de respaldo es útil en caso de pérdida de acceso a su dirección de correo principal, ya que esto le impediría conectarse a su área de cliente OVHcloud.
+///
+
+/// details | He recibido un correo electrónico de OVHcloud. ¿Cómo puedo saber si es legítimo?
+
+Todos nuestros correos electrónicos respetan nuestros estándares de seguridad (SPF, DKIM, DMARC) y provienen de una dirección de correo electrónico cuyo nombre de dominio (o subdominio correspondiente) se enumera a continuación:
+
+- ovhcloud.com
+- ovh.com
+- ovh.fr
+- services.ovhcloud.com
+- news.ovhcloud.com
+- clientmanager.fr
+- kimsufi.com
+- soyoustart.com
+- ovh.ca
+- ovh.com.au
+- ovh.co.uk
+- ovh.ie
+- ovh.de
+- ovh.es
+- ovh.it
+- ovh.lt
+- ovh-hosting.fi
+- ovh.net
+- ovh.nl
+- ovh.pl
+- ovh.pt
+- ovh.sn
+- ovh.us
+- robot.ovh.net
+
+**En caso de duda sobre la autenticidad de un correo electrónico**:
+
+- Sepa que nunca le pediremos una contraseña o datos bancarios por correo electrónico.
+- Verifique si el correo que ha recibido también es visible en su [área de cliente de OVHcloud](/links/manager). Conéctese, haga clic en su nombre en la parte superior derecha y luego en `Emails de servicio`{.action} (o `Mis mensajes`{.action}). Allí encontrará copias de los correos oficiales enviados por OVHcloud.
+- Consulte también nuestra guía « [Phishing - Cómo reconocer correos electrónicos o SMS fraudulentos ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
 

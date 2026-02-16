@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2025-10-14
+updated: 2025-12-09
 ---
 
 <style>
@@ -187,6 +187,12 @@ Al momento esiste un unico workflow. Crea un backup per l'istanza e il suo volum
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **Il nome** 
+
+Inserisci un nome per la pianificazione del backup automatico. Leggi le informazioni relative alla tariffazione e imposta il calendario cliccando sul pulsante `Crea`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
 #### **La pianificazione** 
 
 È possibile definire una pianificazione di backup personalizzata o scegliere una delle frequenze predefinite:
@@ -194,13 +200,15 @@ Al momento esiste un unico workflow. Crea un backup per l'istanza e il suo volum
 - Backup giornaliero con retention degli ultimi 7 backup
 - Backup giornaliero con retention degli ultimi 14 backup
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Il nome** 
-
-Inserisci un nome per la pianificazione del backup automatico. Leggi le informazioni relative alla tariffazione e imposta il calendario cliccando sul pulsante `Crea`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Aggiunta di un backup remoto**
+
+Clicca sul pulsante `Aggiungere un backup remoto`{.action}, seleziona una località, consulta le informazioni sui prezzi e clicca sul pulsante `Crea`{.action}.
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Gestione di backup e pianificazione
 

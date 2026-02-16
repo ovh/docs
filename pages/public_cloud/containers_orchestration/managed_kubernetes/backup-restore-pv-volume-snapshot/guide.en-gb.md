@@ -1,7 +1,7 @@
 ---
 title: Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 excerpt: Find out how to back up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
-updated: 2023-01-11
+updated: 2026-01-30
 ---
 
 In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to back up and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
@@ -138,6 +138,9 @@ And then connect to it and view your access logs:
 ```bash
 kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
 ```
+
+> [!primary]
+> Volume snapshots work with all storage classes, including LUKS encrypted volumes (`csi-cinder-high-speed-luks`, `csi-cinder-classic-luks`, `csi-cinder-high-speed-gen2-luks`). The encryption is transparently maintained during snapshot and restore operations.
 
 You should have a result like this:
 

@@ -12,10 +12,9 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
+- Tener [un servidor dedicado](/links/bare-metal/bare-metal) que soporte las MAC virtuales. Consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) para averiguarlo.
 - Tener una [dirección Additional IP](/links/network/additional-ip) o un bloque de Additional IP (RIPE).
 - Estar conectado al [área de cliente de OVHcloud](/links/manager) o a [la API de OVHcloud](/links/api).
-- Su servidor debe soportar las MAC virtuales. Para ello, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
 > - Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about). Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).

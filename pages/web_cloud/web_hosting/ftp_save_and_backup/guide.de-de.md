@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Ziel 
@@ -196,6 +196,10 @@ Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (bzw. „FTP-Login“) mit einem Suf
 Denken Sie daran, „ftpbenutzer“ mit Ihrem eigenen FTP-Benutzernamen zu ersetzen. Notieren Sie sich das Suffix für das Backup, auf das Sie zugreifen möchten.
 
 Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Software bzw. dem Interface ab.
+
+> [!primary]
+>
+> Die Sicherungen sind nur über eine FTP-Verbindung zugänglich.
 
 #### Schritt 3: Eine oder mehrere Backup-Dateien wiederherstellen
 

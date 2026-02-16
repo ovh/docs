@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Références des paramètres avancés (EN)
+title: Paramètres avancés des Public Cloud Databases pour PostgreSQL (EN)
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for PostgreSQL according to your use cases
 updated: 2025-06-19
 ---

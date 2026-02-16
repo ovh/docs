@@ -1,7 +1,7 @@
 ---
 title: "Come proteggere il tuo sito Web?"
 excerpt: "Questa guida ti mostra come migliorare la sicurezza del tuo sito Web"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Obiettivo
@@ -75,9 +75,16 @@ Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di p
 
 ### Step 6 - Verificare che il sito Web sia aggiornato
 
-Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
+Assicurati che il tuo sito web sia aggiornato sia per quanto riguarda il contenuto che per i componenti tecnici (CMS, estensioni, versioni di PHP e dipendenze).
 
-Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting.
+Se utilizzi un CMS, consulta la sua documentazione ufficiale per aggiornarlo :
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/it)
+
+Assicurati inoltre di utilizzare una versione recente del [linguaggio di programmazione PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull'ospedalità web.
 
 ### Step 7 - Attiva l’HTTPS
 

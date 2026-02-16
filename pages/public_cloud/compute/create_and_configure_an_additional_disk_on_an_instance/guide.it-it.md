@@ -102,7 +102,7 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 >>
 >> > [!warning]
 >> >
->> > Nota: il volume deve essere creato nella stessa regione dell'istanza a cui si desidera associarlo. Se lo crei in un'altra Region, puoi eliminarlo e ricrearlo nella Region corretta, oppure puoi migrare la Region seguendo [questa guida](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
+>> > Nota: il volume deve essere creato nella stessa regione dell'istanza a cui si desidera associarlo. Se lo crei in un'altra Region, puoi eliminarlo e ricrearlo nella Region corretta.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}

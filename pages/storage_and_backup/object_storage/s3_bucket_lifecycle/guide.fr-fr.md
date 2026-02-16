@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2025-12-02
+updated: 2026-02-03
 ---
 
 <style>
@@ -391,17 +391,18 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 > [!warning]
 >
-> Seules les transitions d'un niveau de stockage plus coûteux vers un niveau de stockage moins coûteux sont autorisées. En outre, toutes les transitions vers Cold Archive ne sont pas prises en charge actuellement.
+> Seules les transitions d'un niveau de stockage plus coûteux vers un niveau de stockage moins coûteux sont autorisées.
 > 
 
 Les transitions actuellement prises en charge sont les suivantes :
 
-| de/vers          | High Performance | Standard  | Infrequent Access |Cold Archive |
-| ---------------- | ---------------- | --------- | -------------------------- |------------ |
-| High Performance |        -         | oui       |             oui            | non          |
-| Standard         | interdit        | -         |             oui            | non          |
-| Infrequent Access         | interdit        | interdit         |             -            | non          |
-| Cold Archive     | interdit        | interdit |             interdit      | -           |
+| de/vers          | High Performance | Standard  | Infrequent Access |Active Archive | Cold Archive  |
+| ---------------- | ---------------- | --------- | ----------------- |-------------- | ------------- |
+| High Performance |        -         | oui       |    oui            | oui           | oui           |
+| Standard         | interdit         | -         |    oui            | oui           | oui           |
+| Infrequent Access| interdit         | interdit  |    -              | oui           | oui           |
+| Active Archive   | interdit         | interdit  |    interdit       | -             | oui           |
+| Cold Archive     | interdit         | interdit  |    interdit       | interdit      | -             |
 
 ### Taille minimale de l'objet
 

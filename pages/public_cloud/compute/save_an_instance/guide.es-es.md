@@ -188,6 +188,12 @@ Puede seleccionar la instancia a la que quiere realizar el backup.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **El nombre** 
+
+Escriba un nombre para la planificación de la copia de seguridad automática. Lea la información sobre los precios y cree la planificación haciendo clic en el botón `Crear`{.action}.
+ 
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
 #### **Planificación** 
 
 Puede definir una planificación de backup personalizada o elegir una de las frecuencias predeterminadas:
@@ -195,13 +201,15 @@ Puede definir una planificación de backup personalizada o elegir una de las fre
 - Backup diario con retención de las 7 últimas copias de seguridad
 - Backup diario con retención de las 14 últimas copias de seguridad
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **El nombre** 
-
-Escriba un nombre para la planificación de la copia de seguridad automática. Lea la información sobre los precios y cree la planificación haciendo clic en el botón `Crear`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Adicionar um backup remoto**
+
+Haga clic en el botón `Añadir un backup remoto`{.action}, seleccione una ubicación, consulte la información de precios y haga clic en el botón `Crear`{.action} 
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Gestión de las copias de seguridad y los planes
 

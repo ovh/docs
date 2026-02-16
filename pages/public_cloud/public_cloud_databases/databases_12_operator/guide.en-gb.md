@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to setup your Kubernetes database operator
+title: Set up the Kubernetes operator for Public Cloud Databases
 excerpt: Find out how to install and use the Kubernetes database operator
 updated: 2023-06-29
 ---

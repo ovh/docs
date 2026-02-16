@@ -1,7 +1,7 @@
 ---
 title: "Como utilizar a consola IPMI com um servidor dedicado"
 excerpt: "Saiba como aceder ao servidor a partir da Área de Cliente sem usar outro software"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -44,6 +44,10 @@ A ligação ao IPMI pode ser efetuada através de vários métodos¹. As chaves 
 Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](/links/manager). Na parte `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor, em seguida, clique no separador `IPMI/KVM`{.action}.
 
 ### Abrir um KVM através de applet Java <a name="applet-java"></a>
+
+> [!primary]
+> Recomendamos instalar a versão mais recente do Java.
+>
 
 Para que a applet Java funcione, é necessário que o Java esteja instalado no seu computador. Se ainda não o fez, aceda à [página oficial](https://www.java.com/en/download/).
 

@@ -1,7 +1,7 @@
 ---
 title: "Die Sicherheit Ihrer Website optimieren"
 excerpt: "Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen"
-updated: 2024-01-29
+updated: 2025-12-29
 ---
 
 ## Ziel 
@@ -68,17 +68,24 @@ Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Webs
 
 ### Schritt 5: Einrichtung der automatischen Verlängerung
 
-Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
+Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.  
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
+Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.  
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen, dass Ihre Website auf dem neuesten Stand ist
 
-Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
+Stellen Sie sicher, dass Ihre Website sowohl inhaltlich als auch hinsichtlich der technischen Komponenten (CMS, Erweiterungen, PHP-Versionen und Abhängigkeiten) auf dem neuesten Stand bleibt.
 
-Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Hosting zu verwenden.
+Wenn Sie ein CMS verwenden, konsultieren Sie dessen offizielle Dokumentation für Updates:
+
+- [WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [PrestaShop](https://devdocs.prestashop-project.org/9/basics/keeping-up-to-date/update/)
+- [Drupal](https://www.drupal.org/docs/updating-drupal)
+- [Joomla!](https://docs.joomla.org/Portal:Upgrading_Versions/de)
+
+Außerdem sollten Sie sicherstellen, dass Sie auf Ihrem Webhosting eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) verwenden.
 
 ### Schritt 7: HTTPS aktivieren
 

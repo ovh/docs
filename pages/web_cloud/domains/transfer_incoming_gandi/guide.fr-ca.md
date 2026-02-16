@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de Gandi vers OVHcloud'
 excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis Gandi vers OVHcloud'
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -15,14 +15,14 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 > Si OVHcloud est déjà le bureau d'enregistrement de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le transfert entrant de domaine n'est pas la procédure appropriée. La procédure de transfert entrant de domaine s’applique **uniquement** aux noms de domaine enregistrés dans un autre bureau d'enregistrement qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
+> Si vous devez également changer le **titulaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de titulaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
 
 **Découvrez comment transférer un nom de domaine Gandi vers OVHcloud**
 
 > [!warning]
 >
-> Le service Gandimail est lié à votre nom de domaine. Il arrêtera de fonctionner dès que le nom domaine sera transféré hors de Gandi. 
+> Le service Gandimail est lié à votre nom de domaine. Il arrêtera de fonctionner dès que le nom domaine sera transféré hors de Gandi.
 >
 > Les adresses e-mail associées à ce nom de domaine seront définitivement supprimées 7 jours après, **y compris l'ensemble de ce qu'elles contiennent**.
 >
@@ -33,7 +33,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 - Le nom de domaine est enregistré auprès du bureau d'enregistrement Gandi.
 - Le nom de domaine existe depuis plus de 60 jours.
-- Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
+- Le nom de domaine n'a pas été transféré ou n'a pas changé de titulaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
 - Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
 
@@ -42,7 +42,7 @@ Vous devez aussi :
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
-- Avoir prévenu le propriétaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
+- Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
 > [!warning]
 >
@@ -95,7 +95,7 @@ Le code d'autorisation sécurise votre nom de domaine contre des transferts non 
 Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html).
 
 ### Etape 3 - Initier le transfert de votre nom de domaine vers OVHcloud
-  
+
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
 > [!warning]

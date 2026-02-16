@@ -19,7 +19,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 ## Requisitos
 
-- Dispor de uma oferta [Exchange](/links/web/emails) .
+- Dispor de uma oferta [Exchange](/links/web/emails-exchange) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

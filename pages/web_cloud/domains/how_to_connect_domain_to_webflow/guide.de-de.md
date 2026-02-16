@@ -1,12 +1,12 @@
 ---
 title: Verbinden eines OVHcloud Domainnamens mit einem Webflow Hosting
 excerpt: Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem Webflow Hosting zu verwenden
-updated: 2024-06-13
+updated: 2026-02-10
 ---
 
 ## Ziel
 
-Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
+Sie sind der Inhaber eines Domainnamens bei OVHcloud und möchten ihn mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Webflow Hosting verbinden.**
 

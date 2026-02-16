@@ -1,12 +1,8 @@
 ---
 title: "Volume Backup erstellen"
 excerpt: "Erfahren Sie hier, wie Sie über Ihr Kundencenter ein Backup Ihres Block Storage Volumes erstellen"
-updated: 2025-04-28
+updated: 2025-12-15
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -30,7 +26,7 @@ Volume Snapshot und Volume Backup ermöglichen:
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt.
+- Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt und abgetrennt.
 
 ## In der praktischen Anwendung
 
@@ -38,11 +34,18 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in
 
 Öffnen Sie anschließend das Menü `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 
-Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}. Es ist nicht notwendig, zuerst das Volume von seiner Instanz zu trennen. Wenn Sie Ihr Volume jedoch von Ihrer Instanz trennen möchten, lesen Sie [diesen Abschnitt für Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-linux) und [diesen Abschnitt für Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-windows).
+Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}.
+
+> [!primary]
+> 
+> **Um ein Backup zu erstellen, muss ein Volume zuerst von der Instanz abgetrennt werden.**
+> 
+> - Für eine Linux-Umgebung beachten Sie den Abschnitt **Unter Linux** in "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
+> - Für eine Windows-Umgebung beachten Sie den Abschnitt **Unter Windows** in "[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)".
 
 ![Volume Backup - Erstellung](images/volumebackup01.png){.thumbnail}
 
-Wählen Sie das betreffende Volume aus, falls notwendig.
+Wählen Sie das Volume aus, von dem Sie ein Backup erstellen möchten.
 
 Wählen Sie dann den Backup-Typ aus, den Sie erstellen möchten: **Volume Snapshot** oder **Volume Backup**.
 
@@ -89,7 +92,5 @@ Weitere Informationen zu diesem Thema finden Sie in unserer [Anleitung zur Erste
 [Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
 [Die Größe einer zusätzlichen Disk erweitern](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
-
-[Übertragen von Volume-Backups von einer OpenStack-Region in eine andere](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

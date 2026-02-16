@@ -33,7 +33,7 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 
 /// details | What is a Quantum notebook emulator and how to launch one?
 
-All steps for starting and working on Quantum Notebooks are described in the [Quantum Notebooks - Getting Started](/pages/public_cloud/quantum_computing/getting-started-emulators) guide.
+All steps for starting and working on Quantum Notebooks are described in the [Quantum Notebooks - Getting Started](/pages/public_cloud/quantum_computing/emulators/getting-started) guide.
 
 ///
 

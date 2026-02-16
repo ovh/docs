@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to enable schema registry
+title: Enable schema registry for Analytics with Kafka
 excerpt: Learn how to enable the schema registry for your Kafka cluster
 updated: 2025-08-25
 ---

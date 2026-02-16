@@ -1,7 +1,7 @@
 ---
 title: "Ripristinare i dati dello spazio di storage di un hosting Web"
 excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Obiettivo
@@ -196,6 +196,10 @@ Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffi
 Sostituisci l’informazione generica “utenteftp” con il tuo nome utente FTP principale, conservando il suffisso che indica la data del backup che intendi ripristinare.
 
 Il metodo di accesso allo spazio di storage differisce in base all’interfaccia o al software utilizzato.
+
+> [!primary]
+>
+> Le copie di backup sono accessibili solo tramite una connessione FTP.
 
 #### 3. Recuperare i file
 

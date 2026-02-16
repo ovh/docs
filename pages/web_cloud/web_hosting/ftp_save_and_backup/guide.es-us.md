@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -196,6 +196,10 @@ Al conectarse, deberá añadir a su nombre de usuario FTP el sufijo correspondie
 En la tabla anterior, no olvide sustituir el valor **usuarioftp** por su nombre de usuario FTP y añádale el sufijo correspondiente en función de la copia de seguridad a la que quiera acceder.
 
 La forma de conectarse al espacio de almacenamiento varía en función de la interfaz web o el programa que utilice.
+
+> [!primary]
+>
+> Las copias de seguridad solo están accesibles a través de una conexión FTP.
 
 #### 3. Descargar los archivos
 

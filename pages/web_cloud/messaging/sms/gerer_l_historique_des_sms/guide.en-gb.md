@@ -1,7 +1,7 @@
 ---
 title: Manage your SMS history
 excerpt: Find out how to view your sent messages log from your OVHcloud account
-updated: 2022-08-05
+updated: 2025-12-30
 ---
 
 ## Objective
@@ -20,7 +20,9 @@ The log records the date, time, sender, recipient and contents of the sent SMS.
 
 > [!primary]
 >
-> The Control Panel can only display the last 6 months of your log. To view older messages, go to [Step 2: downloading the sending log as a CSV](#csv).
+> In the OVHcloud Control Panel, you can view SMS messages sent in the last 6 months (or the last 5,000 SMS messages if you have sent more than 5,000 SMS messages in the last 6 months).
+>
+> To view older SMS messages (up to the last 12 months), you will need to download your SMS history in CSV format. See [Step 2 of this guide](#csv).
 >
 
 ### Step 1: viewing the log in your Control Panel

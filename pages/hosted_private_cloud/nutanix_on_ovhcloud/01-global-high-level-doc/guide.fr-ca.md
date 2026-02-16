@@ -19,11 +19,11 @@ Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 - [Load Balancer](/links/network/load-balancer)
 - [Additional IP](/links/bare-metal/ip)
 
-Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
+Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (nœud ou *node*).
 
 Deux VLAN sont utilisés, le VLAN 0 pour l'internet public et le VLAN 1 pour l'infrastructure Nutanix (Hôtes, CVMs, Prism Element et Prism Central).
 
-L'adresse IP publique de chaque noeud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
+L'adresse IP publique de chaque nœud n'est pas accessible car l'Additional IP est dédiée à l'accès Internet. Cet accès est assuré par la passerelle « OVHgateway » qui est une VM dédiée créée par OVHcloud sur votre cluster.
 
 Le load balancer est utilisé pour exposer l'interface web utilisateur (*WebUI*) **Prism Central** sur Internet de façon publique. Pour des raisons de sécurité, vous pouvez restreindre l'interface utilisateur Web aux seules adresses IP de votre organisation.
 
@@ -31,8 +31,8 @@ Le load balancer est utilisé pour exposer l'interface web utilisateur (*WebUI*)
 
 ### Dimensionnement
 
-Votre cluster requiert certaines fonctionnalités pour fonctionner correctement. Une fois livré, votre cluster aura 5 VM (pour un cluster à 3 noeuds).<br>
-Chaque noeud disposera d'une « CVM ». Dans le cluster, vous retrouvez 2 VM supplémentaires : Prism Central et la OVHgateway. 
+Votre cluster requiert certaines fonctionnalités pour fonctionner correctement. Une fois livré, votre cluster aura 5 VM (pour un cluster à 3 nœuds).<br>
+Chaque nœud disposera d'une « CVM ». Dans le cluster, vous retrouvez 2 VM supplémentaires : Prism Central et la OVHgateway. 
 
 ### Prism Central
 
@@ -47,7 +47,7 @@ En cas de doute, choisissez le mode « *Alone* ». Vous pourrez toujours passer 
 
 ### CVM
 
-Toutes les CVM nécessitent au minimum 32 GB de mémoire et 12 vCPU pour chaque noeud.
+Toutes les CVM nécessitent au minimum 32 GB de mémoire et 12 vCPU pour chaque nœud.
 Ces valeurs doivent être augmentées si vous ajoutez de nouvelles fonctionnalités à votre cluster.
 
 ### OVHgateway

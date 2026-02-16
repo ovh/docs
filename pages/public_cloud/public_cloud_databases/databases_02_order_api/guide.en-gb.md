@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Getting started with APIs
+title: Getting started with Public Cloud Databases APIs
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 updated: 2025-07-31
 ---

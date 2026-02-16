@@ -1,7 +1,7 @@
 ---
 title: "How to pay a bill with your Startup Program credits"
 excerpt: 'Find out how to pay your bills with your OVHcloud Startup Program credits to optimise your infrastructure expenditure'
-updated: 2025-10-14
+updated: 2025-12-11
 ---
 
 ## Objective
@@ -23,7 +23,8 @@ As a member of the OVHcloud Startup Program, you have credits to support your pr
 - **Automatic renewal**: For eligible services, your credits are automatically used to renew your services, without requiring any action from you.
 - **New orders**:
     - For eligible Public Cloud services, credits will be automatically applied during the next billing cycle.
-    - For other eligible products, you must select "Digital Launchpad Credits" as the payment method during the ordering process.
+    - For other eligible products, you must select "Startup Program Credits" as the payment method during the ordering process.
+
 
 ## Instructions
 

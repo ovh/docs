@@ -96,7 +96,7 @@ Rendez le binaire exécutable :
 Vérifiez l'installation de Docker Compose :
 
 ```sh
-~$ docker-compose –version
+~$ docker compose version
 ```
 
 Si l'installation de Docker Compose s'est bien déroulée, vous obtenez un message de ce type :
@@ -156,7 +156,7 @@ Ce fichier Compose crée un service WordPress et un service MySQL.
 Lancez les services avec Docker Compose :
 
 ```sh
-~$ sudo docker-compose up -d
+~$ sudo docker compose up -d
 ```
 
 L'image Docker utilisée dans cet exemple est la version officielle `wordpress:latest`. Cette image spécifique est conçue pour fonctionner avec un serveur web Apache. Les images officielles de WordPress sur [Docker Hub](https://hub.docker.com/) sont régulièrement mises à jour pour inclure les dernières versions stables de PHP compatibles avec la version actuelle de WordPress.

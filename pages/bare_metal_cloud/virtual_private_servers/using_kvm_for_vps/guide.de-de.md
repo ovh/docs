@@ -89,6 +89,8 @@ Sie können die von Ihnen bevorzugte Tastaturkonfiguration aktivieren, um die Ve
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+Falls nötig, installieren Sie das Paket zuerst über den Paketmanager Ihrer Distribution (`sudo dnf install keyboard-configuration` oder `sudo apt install keyboard-configuration`).
+
 Es öffnet sich ein grafisches Menü, in dem Sie ein Tastaturmodell auswählen können.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}
