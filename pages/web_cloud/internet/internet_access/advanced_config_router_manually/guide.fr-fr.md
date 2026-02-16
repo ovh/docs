@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un routeur manuellement'
 excerpt: 'Découvrez comment configurer votre accès Internet OVHcloud sur votre propre routeur'
-updated: 2025-10-14
+updated: 2026-02-16
 ---
 
 ## Objectif
@@ -26,6 +26,8 @@ Si votre offre a été fournie avec un modem OVHcloud, les identifiants PPPoE vo
 
 Le *login* reste identique après chaque réinitialisation.<br>
 Pour des raisons de sécurité, le *mot de passe* est systématiquement modifié après chaque réinitialisation de votre routeur OVHcloud.
+
+**Lors de la première connexion du modem OVHcloud, celui-ci est automatiquement réinitialisé. Un nouveau mot de passe PPPoE vous est alors communiqué suite à cette réinitialisation.**
 
 Si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de [générer l'envoi de nouveaux identifiants PPPoE par e-mail](/pages/web_cloud/internet/internet_access/obtenir_id_ppp).
 
