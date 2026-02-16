@@ -38,9 +38,7 @@ We are now ready to learn how to connect to our ClickHouse instance.
 
 ### Connecing with Tabix
 
-In Tabix, create a new connection and fill in the required fields (name, port, login, password, and SSL certificate if applicable):
-
-![New connection](images/new-connection.png){.thumbnail}
+In Tabix, create a new connection and fill in the required fields (name, port, login, password, and SSL certificate if applicable).
 
 You are now ready to interact with your Analytics service for ClickHouse.
 
@@ -83,8 +81,6 @@ FROM numbers(100);
 
 SELECT '100 random rows inserted into the customer table.' AS message;
 ```
-
-![Compass Shell](images/tabixshell.png){.thumbnail}
 
 #### Querying data with the aggregation framework
 
