@@ -1,7 +1,7 @@
 ---
-title: "Sauvegardes Automatisées avec Plakar"
-excerpt: "Configurez un serveur dédié avec Plakar pour automatiser, chiffrer et superviser les backups de vos serveurs en toute sécurité."
-updated: 2026-02-04
+title: "Comment automatiser les sauvegardes serveur avec Plakar"
+excerpt: "Découvrez comment automatiser, chiffrer et superviser les sauvegardes de vos serveurs avec Plakar et OVHcloud Object Storage."
+updated: 2026-02-16
 ---
 
 <style>
@@ -18,7 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-
 ## Objectif
 
 Ce guide a pour objectif de vous montrer comment :
@@ -33,35 +32,35 @@ Ce guide a pour objectif de vous montrer comment :
 ## Prérequis
 
 - Un serveur [VPS](/links/bare-metal/vps) ou un [serveur dédié](/links/bare-metal/bare-metal).
-- Disposer d'un accès administrateur (sudo) via SSH à votre serveur
-- [Plakar](https://www.plakar.io/){.external} installé sur le serveur de backup (ou la possibilité de l’installer).
-- Un stockage objet compatible S3 pour héberger vos backups.
-- Avoir une compréhension basique de l'administration GNU/Linux
+- Disposer d'un accès administrateur (sudo) via SSH à votre serveur.
+- [Plakar](https://www.plakar.io/) installé sur le serveur de backup (ou la possibilité de l’installer).
+- Un stockage objet compatible S3<sup>1</sup> pour héberger vos backups.
+- Avoir une compréhension basique de l'administration GNU/Linux.
 
 ## Aperçu de l'architecture
 
 Le système de backup automatisé repose sur trois composants principaux.
 
-1. **Backup Server (VPS dédié) :**
-   
-- Exécute Plakar, qui gère la planification, la déduplication et le chiffrement des backups.
-- Supervise toutes les opérations via une interface web intuitive.
+1. **Serveur de backup (VPS dédié) :**
+
+    - Exécute Plakar, qui gère la planification, la déduplication et le chiffrement des backups.
+    - Supervise toutes les opérations via une interface web intuitive.
 
 2. **Serveurs Sources :**
 
-- Les serveurs dont les données doivent être sauvegardées.
-- Connectés au Backup Server via SSH/SFTP sécurisé, permettant des backups automatisés sans intervention manuelle.
+    - Les serveurs dont les données doivent être sauvegardées.
+    - Connectés au serveur de backup via SSH/SFTP sécurisé, permettant des backups automatisés sans intervention manuelle.
 
-3. **Stockage Objet (S3-compatible) :**
+3. **Stockage Objet (compatible S3) :**
 
-- Reçoit et stocke les backups de manière résiliente et sécurisée.
-- Permet de conserver des snapshots chiffrés et dédupliqués, garantissant la disponibilité des données en cas de panne.
+    - Reçoit et stocke les backups de manière résiliente et sécurisée.
+    - Permet de conserver des snapshots chiffrés et dédupliqués, garantissant la disponibilité des données en cas de panne.
 
-![Architecture overview](images/architecture_overview.png){.thumbnail}
+![Aperçu de l'architecture](images/architecture_overview.png){.thumbnail}
 
-## Instructions
+## En pratique
 
-### Étape 1: Configurer l'Object Storage
+### Étape 1 : Configurer l'Object Storage
 
 Avant d’exécuter le moindre backup, vous devez disposer d’un Object Storage compatible S3 pour stocker vos données de manière sécurisée et indépendante du serveur de backup.
 
@@ -76,15 +75,15 @@ L’utilisation d’Object Storage garantit que vos backups restent disponibles 
 
 **Créer un utilisateur Object Storage**
 
-1. Ouvrez l’onglet `Users`{.action}.
-2. Cliquez sur `Create user`{.action}.
+1. Ouvrez l'onglet `Utilisateurs`{.action}.
+2. Cliquez sur `Créer un utilisateur`{.action}.
 
-![Create Object Storage user](images/create_os_user.png){.thumbnail}
+    ![Créer un utilisateur Object Storage](images/create_os_user.png){.thumbnail}
 
-3. Donnez une description au user (ex. plakar-backup).
-4. Téléchargez et conservez les credentials S3 :
-   - Access Key
-   - Secret Key
+3. Donnez une description à l'utilisateur (ex. plakar-backup).
+4. Téléchargez et conservez les identifiants S3 :
+    - Access Key
+    - Secret Key
 
 > [!primary]
 >
@@ -93,13 +92,13 @@ L’utilisation d’Object Storage garantit que vos backups restent disponibles 
 
 **Créer le bucket Object Storage**
 
-1. Cliquez sur `Create an Object Storage container`{.action}.
+1. Cliquez sur `Créer un conteneur d'objets`{.action}.
 2. Configurez le container :
-   - **Name :** plakar-backups (ou équivalent)
-   - **Container API :** S3-compatible
-   - **Container type :** Choisissez en fonction de vos besoins (3-AZ pour une haute disponibilité, 1-AZ pour une rentabilité optimale)
-   - **Region :** choisissez la région la plus proche de vos serveurs
-   - **User selection :** sélectionnez l’utilisateur créé
+    - **Name :** plakar-backups (ou équivalent)
+    - **Container API :** S3-compatible
+    - **Container type :** Choisissez en fonction de vos besoins (3-AZ pour une haute disponibilité, 1-AZ pour une rentabilité optimale)
+    - **Region :** choisissez la région la plus proche de vos serveurs
+    - **User selection :** sélectionnez l’utilisateur créé
 3. Validez la création.
 
 > [!primary]
@@ -107,26 +106,26 @@ L’utilisation d’Object Storage garantit que vos backups restent disponibles 
 > Pour plus de détails sur la création et la gestion d’un bucket Object Storage, vous pouvez suivre notre guide [Object Storage – Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
-### Étape 2: Provisionner le serveur de backup
+### Étape 2 : Provisionner le serveur de backup
 
 Pour exécuter Plakar et automatiser vos backups, vous devez disposer d’un serveur VPS dédié.
 
 **Créer un VPS**
 
-1. Rendez vous dans `Bare Metal Cloud` puis `VPS`{.action}.
-2. Cliquez sur `Order`{.action} puis `Configurer votre VPS`{.action}.
+1. Rendez-vous dans `Bare Metal Cloud`{.action} > `VPS`{.action}.
+2. Cliquez sur `Commander`{.action} puis `Configurer votre VPS`{.action}.
 
-![Create VPS](images/create_vps.png)
+    ![Créer un VPS](images/create_vps.png){.thumbnail}
 
 3. Choisissez la configuration adaptée à vos besoins :
-   - **Modèle :** général-purpose (ex. VPS-1, 2 vCores, 8 Go RAM, 75 Go stockage)
-   - **Région :** proche de votre Object Storage pour des backups rapides
-   - **Image :** Ubuntu 25.04 (ou toute autre distribution supportée)
+    - **Modèle :** general-purpose (ex. VPS-1, 2 vCores, 8 Go RAM, 75 Go stockage)
+    - **Région :** proche de votre Object Storage pour des backups rapides
+    - **Image :** Ubuntu 25.04 (ou toute autre distribution supportée)
 4. Commandez le VPS.
 
 **Accéder au VPS**
 
-Les informations de connexion (IP, nom d’utilisateur temporaire, mot de passe) sont envoyées par email sécurisé.
+Les informations de connexion (IP, nom d’utilisateur temporaire, mot de passe) sont envoyées par e-mail sécurisé.
 
 Connectez-vous pour la première fois via SSH :
 
@@ -136,11 +135,11 @@ ssh ubuntu@<VPS_IP>
 
 Remplacez `ubuntu` par votre nom d'utilisateur réel et `<VPS_IP>` par l'adresse IP indiquée dans votre e-mail de livraison.
 
-Au premier connexion, vous serez invité à modifier le mot de passe temporaire. Après l'avoir modifié, la session se fermera automatiquement. Reconnectez-vous avec votre nouveau mot de passe.
+À la première connexion, vous serez invité à modifier le mot de passe temporaire. Après l'avoir modifié, la session se fermera automatiquement. Reconnectez-vous avec votre nouveau mot de passe.
 
 Pour plus d'informations sur la configuration initiale et la sécurité des VPS, consultez notre guide [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
-### Étape 3: Installer Plakar
+### Étape 3 : Installer Plakar
 
 Maintenant que votre VPS est prêt, il est temps d’installer Plakar, qui gérera les backups, le chiffrement et la déduplication.
 
@@ -156,7 +155,7 @@ Remplacez `ubuntu` par votre nom d'utilisateur réel et `<VPS_IP>` par l’adres
 
 **Installer Plakar**
 
-Suivez le [guide d’installation officiel de Plakar](https://www.plakar.io/docs/main/quickstart/installation/){.external} selon votre distribution.
+Suivez le [guide d’installation officiel de Plakar](https://www.plakar.io/docs/main/quickstart/installation/) selon votre distribution.
 
 Vérifiez que Plakar est installé :
 
@@ -164,7 +163,7 @@ Vérifiez que Plakar est installé :
 plakar version
 ```
 
-### Étape 4: Configurer Object Storage dans Plakar
+### Étape 4 : Configurer Object Storage dans Plakar
 
 Dans cette étape, vous allez connecter Plakar à votre Object Storage S3 et l’initialiser comme Kloset Store, pour permettre le stockage sécurisé et chiffré de vos backups.
 
@@ -174,7 +173,7 @@ Tout d'abord, connectez-vous à Plakar afin de pouvoir installer les intégratio
 
 ```bash
 plakar login -email you@example.com
-# OR
+# OU
 plakar login -github
 ```
 
@@ -188,7 +187,7 @@ plakar pkg add s3
 
 Les storage connectors dans Plakar définissent où vos backups sont stockés. En configurant un connector une seule fois, vous pourrez l’utiliser dans toutes les commandes de backup futures via un simple alias.
 
-Ajoutez votre Object Storage OVH comme storage connector en utilisant l’endpoint S3 et les identifiants que vous avez générés à l’étape 1 :
+Ajoutez votre Object Storage OVHcloud comme storage connector en utilisant l’endpoint S3 et les identifiants que vous avez générés à l’étape 1 :
 
 ```bash
 plakar store add ovh-s3-backups \
@@ -201,14 +200,14 @@ plakar store add ovh-s3-backups \
 
 Remplacez :
 
-- <S3_ENDPOINT> : votre endpoint S3 OVH (ex. s3.eu-west-par.io.cloud.ovh.net)
+- <S3_ENDPOINT> : votre endpoint S3 OVHcloud (ex. s3.eu-west-par.io.cloud.ovh.net)
 - <BUCKET_NAME> : nom du container créé (ex. plakar-backups)
 - <YOUR_ACCESS_KEY_ID> et <YOUR_SECRET_ACCESS_KEY> : identifiants générés à l’étape 1
 - <YOUR_SECURE_PASSPHRASE> : phrase secrète pour chiffrer vos backups (utilisez des guillemets simples si elle contient des caractères spéciaux)
 
-> [!primary]
+> [!success]
 >
-> En configurant la passphrase dans le storage connector : Les backups automatisés pourront s’exécuter sans demander les identifiants à chaque fois.
+> En configurant la passphrase dans le storage connector, les backups automatisés pourront s’exécuter sans demander les identifiants à chaque fois.
 >
 
 **Initialiser le Kloset Store**
@@ -223,9 +222,9 @@ Comme la passphrase a déjà été configurée lors de l’ajout du storage conn
 
 Une fois cette étape terminée, votre serveur de backup est totalement connecté à Object Storage et prêt à recevoir des snapshots chiffrés et dédupliqués.
 
-### Étape 5: Configurer l’accès SSH aux serveurs sources
+### Étape 5 : Configurer l’accès SSH aux serveurs sources
 
-Pour que Plakar puisse sauvegarder vos serveurs, il doit pouvoir accéder à leurs fichiers via SSH. L’authentification par clé SSH est recommandée : plus sécurisée qu’un mot de passe et permet des backups automatisés sans intervention.
+Pour que Plakar puisse sauvegarder vos serveurs, il doit pouvoir accéder à leurs fichiers via SSH. L’authentification par clé SSH est recommandée car elle est plus sécurisée qu’un mot de passe et permet des backups automatisés sans intervention.
 
 **Installer l’intégration SFTP**
 
@@ -294,9 +293,9 @@ Vérifiez que l’alias fonctionne :
 ssh source-1 'echo "Alias fonctionne"'
 ```
 
-Si le message "Alias fonctionne" s’affiche, vos alias SSH sont correctement configurés. Vous pouvez maintenant utiliser ces alias dans toutes les commandes Plakar, simplifiant la gestion de vos backups.
+Si le message `Alias fonctionne` s'affiche, vos alias SSH sont correctement configurés. Vous pouvez maintenant utiliser ces alias dans toutes les commandes Plakar, simplifiant la gestion de vos backups.
 
-### Étape 6: Configurer les sources de backup
+### Étape 6 : Configurer les sources de backup
 
 Dans Plakar, les source connectors définissent quels serveurs et quels répertoires doivent être sauvegardés. Une fois configurées, ces sources peuvent être réutilisées dans plusieurs commandes de backup, ce qui simplifie la gestion et réduit les risques d’erreurs.
 
@@ -305,15 +304,15 @@ Dans Plakar, les source connectors définissent quels serveurs et quels réperto
 Pour chaque serveur que vous souhaitez sauvegarder, ajoutez un source connector :
 
 ```bash
-# Add first source server
+# Ajouter le premier serveur source
 plakar source add web-server-1 sftp://source-1:/var/www
 
-# Add second source server
+# Ajouter le second serveur source
 plakar source add web-server-2 sftp://source-2:/var/www
 ```
 
-- Remplacez `source-1` et `source-2` par les alias SSH créés précédemment. 
-- `/var/www` correspond au répertoire à sauvegarder sur chaque serveur. 
+- Remplacez `source-1` et `source-2` par les alias SSH créés précédemment.
+- `/var/www` correspond au répertoire à sauvegarder sur chaque serveur.
 - Vous pouvez ajouter plusieurs sources, même sur le même serveur ou sur différents serveurs.
 
 **Vérifier la configuration des sources**
@@ -326,11 +325,11 @@ plakar source show
 
 La commande liste tous les source connectors configurés avec leur chemin d’accès. Cela permet de vérifier rapidement que tous les serveurs et répertoires à sauvegarder sont bien définis.
 
-### Étape 7: Lancer le premier backup
+### Étape 7 : Lancer le premier backup
 
 Avant de configurer les backups automatiques, il est important de tester la configuration manuellement.
 
-Cela permet de vérifier que les connexions SSH fonctionnent, que les credentials Object Storage sont corrects, et que Plakar peut sauvegarder vos données.
+Cela permet de vérifier que les connexions SSH fonctionnent, que les identifiants Object Storage sont corrects, et que Plakar peut sauvegarder vos données.
 
 **Sauvegarder une source unique**
 
@@ -351,7 +350,7 @@ Pour sauvegarder plusieurs serveurs en même temps :
 plakar at "@ovh-s3-backups" backup "@web-server-1" "@web-server-2"
 ```
 
-- Les sources définies dans Step 6 seront sauvegardées dans le même Kloset Store.
+- Les sources définies à l'étape 6 seront sauvegardées dans le même Kloset Store.
 - Cette commande est pratique pour tester une sauvegarde globale avant de passer à l’automatisation.
 
 **Vérifier les sauvegardes**
@@ -365,7 +364,7 @@ plakar at "@ovh-s3-backups" ls
 - Cette commande liste les snapshots présents dans le Kloset Store, avec leur horodatage et leur ID de snapshot.
 - Confirmez que les snapshots correspondent aux sources que vous venez de sauvegarder.
 
-### Étape 8: Programmer les backups automatiques
+### Étape 8 : Programmer les backups automatiques
 
 Les backups manuels fonctionnent pour les tests, mais en production il est essentiel d’exécuter les sauvegardes automatiquement. Plakar inclut un scheduler intégré pour gérer la planification et vérifier les backups après leur création.
 
@@ -412,10 +411,10 @@ plakar scheduler start -tasks ~/scheduler.yaml
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration du scheduler, rendez vous sur la [documentation officielle du Scheduler Plakar](https://www.plakar.io/docs/main/guides/setup-scheduler-daily-backups/){.external}.
+> Pour plus d'informations sur la configuration du scheduler, rendez-vous sur la [documentation officielle du Scheduler Plakar](https://www.plakar.io/docs/main/guides/setup-scheduler-daily-backups/).
 >
 
-### Étape 9: Configurer les services systemd pour Plakar
+### Étape 9 : Configurer les services systemd pour Plakar
 
 Actuellement, le scheduler et l’UI Plakar s’exécutent seulement dans votre session SSH. Si le VPS redémarre, ces processus s’arrêteront.
 
@@ -450,7 +449,7 @@ Remplacez `ubuntu` par votre nom d’utilisateur si nécessaire.
 
 **Créer le service systemd pour l’UI**
 
-L'interface utilisateur Web doit également fonctionner en continu afin que vous puissiez surveiller vos sauvegardes à tout moment, et pas seulement lorsque vous êtes connecté à SSH.
+L'interface utilisateur Web doit également fonctionner en continu afin que vous puissiez surveiller vos sauvegardes à tout moment, et pas seulement lorsque vous êtes connecté en SSH.
 
 Créez un service systemd pour l'interface utilisateur Web Plakar `/etc/systemd/system/plakar-ui.service` :
 
@@ -550,11 +549,11 @@ sudo journalctl -u plakar-ui -n 100 --no-pager | grep -i token
 
 Cherchez une ligne similaire à :
 
-```bash
+```console
 launching webUI at http://:8080?plakar_token=d9fccdbd-77a3-41a0-8657-24d77a6d00ac
 ```
 
-Copiez le token depuis l’URL et ouvrez l’UI : `http://your-vps-ip:8080`. Si demandé, collez le token pour accéder à l’interface.
+Copiez le token depuis l’URL et ouvrez l’UI : `http://<IP_DE_VOTRE_VPS>:8080`. S'il est demandé, collez le token pour accéder à l’interface.
 
 > [!warning]
 >
@@ -563,15 +562,17 @@ Copiez le token depuis l’URL et ouvrez l’UI : `http://your-vps-ip:8080`. S
 
 ///
 
-## Troubleshooting
+## Dépannage
 
 1. **Erreur d’authentification :** Vérifiez vos clés SSH et droits de lecture sur les serveurs sources.
 2. **Impossible de se connecter à Object Storage :** Vérifiez identifiants S3, endpoint et passphrase (commande `plakar store show ovh-s3-backups`).
 3. **Permission refusée sur les sources :** Assurez-vous que l’utilisateur SSH peut lire les répertoires à sauvegarder.
 4. **Services ne démarrent pas après reboot :** Vérifiez le statut et les logs (`systemctl status` / `journalctl -u`).
 
-Vous pouvez également exécuter l'interface utilisateur localement sur votre propre ordinateur en installant Plakar et en configurant le même magasin avec vos identifiants OVH S3. Cela vous permet d'accéder aux sauvegardes sans vous connecter au VPS.
+Vous pouvez également exécuter l'interface utilisateur localement sur votre propre ordinateur en installant Plakar et en configurant le même magasin avec vos identifiants OVHcloud S3. Cela vous permet d'accéder aux sauvegardes sans vous connecter au VPS.
 
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

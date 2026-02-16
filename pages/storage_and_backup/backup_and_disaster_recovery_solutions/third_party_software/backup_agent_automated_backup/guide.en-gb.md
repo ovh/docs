@@ -1,7 +1,7 @@
 ---
-title: "Automated backup with plakar"
-excerpt: "Set up a dedicated server with Plakar to automate, encrypt, and monitor your server backups securely."
-updated: 2026-02-04
+title: "How to Automate Server Backups with Plakar"
+excerpt: "Find out how to set up a dedicated server with Plakar to automate, encrypt, and monitor your server backups securely using OVHcloud Object Storage."
+updated: 2026-02-16
 ---
 
 <style>
@@ -18,7 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-
 ## Objective
 
 This guide aims to show you how to:
@@ -32,10 +31,10 @@ By the end of this guide, you will have a reliable, fully automated backup syste
 
 ## Requirements
 
-- Un [VPS server](/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal).
+- A [VPS server](/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal).
 - Administrative (sudo) access to your server via SSH.
-- [Plakar](https://www.plakar.io/){.external} installed on the backup server (or the ability to install it).
-- An S3-compatible Object Storage service to host your backups.
+- [Plakar](https://www.plakar.io/) installed on the backup server (or the ability to install it).
+- An S3<sup>1</sup>-compatible Object Storage service to host your backups.
 - A basic understanding of GNU/Linux system administration.
 
 ## Architecture Overview
@@ -44,18 +43,18 @@ The automated backup system is built around three main components.
 
 1. **Backup Server (Dedicated VPS):**
 
-- Runs Plakar, which handles backup scheduling, deduplication, and encryption.
-- Monitors all operations through an intuitive web interface.
+    - Runs Plakar, which handles backup scheduling, deduplication, and encryption.
+    - Monitors all operations through an intuitive web interface.
 
 2. **Source Servers:**
 
-- The servers whose data needs to be backed up.
-- Connected to the Backup Server via secure SSH/SFTP, enabling fully automated backups without manual intervention.
+    - The servers whose data needs to be backed up.
+    - Connected to the Backup Server via secure SSH/SFTP, enabling fully automated backups without manual intervention.
 
 3. **Object Storage (S3-compatible):**
 
-- Receives and stores backups in a resilient and secure manner.
-- Keeps encrypted and deduplicated snapshots, ensuring data availability in the event of a failure.
+    - Receives and stores backups in a resilient and secure manner.
+    - Keeps encrypted and deduplicated snapshots, ensuring data availability in the event of a failure.
 
 ![Architecture overview](images/architecture_overview.png){.thumbnail}
 
@@ -70,7 +69,7 @@ Using Object Storage ensures your backups remain available even if the backup se
 **Access Object Storage**
 
 1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Navigate to the `Public Cloud`{.action}.
+2. Navigate to `Public Cloud`{.action}.
 3. If no project exists, create a new Public Cloud project.
 4. In the left-hand menu, go to `Object Storage`{.action}.
 
@@ -79,12 +78,12 @@ Using Object Storage ensures your backups remain available even if the backup se
 1. Open the `Users`{.action} tab.
 2. Click `Create user`{.action}.
 
-![Create Object Storage user](images/create_os_user.png){.thumbnail}
+    ![Create Object Storage user](images/create_os_user.png){.thumbnail}
 
 3. Give the user a description (e.g. plakar-backup).
 4. Download and securely store the S3 credentials:
-   - Access Key
-   - Secret Key
+    - Access Key
+    - Secret Key
 
 > [!primary]
 >
@@ -95,12 +94,12 @@ Using Object Storage ensures your backups remain available even if the backup se
 
 1. Click `Create an Object Storage container`{.action}.
 2. Configure the container:
-   - **Name :** plakar-backups (or equivalent)
-   - **Container API :** S3-compatible
-   - **Container type :** choose according to your needs (3-AZ for high availability, 1-AZ for cost efficiency)
-   - **Region :** select the region closest to your servers
-   - **User selection :** select the user you created
-3. Click Create to confirm.
+    - **Name:** plakar-backups (or equivalent)
+    - **Container API:** S3-compatible
+    - **Container type:** choose according to your needs (3-AZ for high availability, 1-AZ for cost efficiency)
+    - **Region:** select the region closest to your servers
+    - **User selection:** select the user you created
+3. Click `Create`{.action} to confirm.
 
 > [!primary]
 >
@@ -113,15 +112,15 @@ To run Plakar and automate your backups, you need a dedicated VPS.
 
 **Create a VPS**
 
-1. Go to `Bare Metal Cloud` and `VPS`{.action}.
-2. Click  `Order`{.action}, then `Configure your VPS`{.action}.
+1. Go to `Bare Metal Cloud`{.action} > `VPS`{.action}.
+2. Click `Order`{.action}, then `Configure your VPS`{.action}.
 
-![Create VPS](images/create_vps.png)
+    ![Create VPS](images/create_vps.png){.thumbnail}
 
 3. Choose a configuration that fits your needs:
-   - **Model :** general-purpose (e.g., VPS-1, 2 vCores, 8 GB RAM, 75 GB storage)
-   - **Region :** close to your Object Storage for faster backups
-   - **Image :** Ubuntu 25.04 (or any other supported distribution)
+    - **Model:** general-purpose (e.g., VPS-1, 2 vCores, 8 GB RAM, 75 GB storage)
+    - **Region:** close to your Object Storage for faster backups
+    - **Image:** Ubuntu 25.04 (or any other supported distribution)
 4. Place your VPS order.
 
 **Access the VPS**
@@ -156,7 +155,7 @@ Replace `ubuntu` with your actual username and `<VPS_IP>` with your server’s I
 
 **Install Plakar**
 
-Follow the [official Plakar installation guide](https://www.plakar.io/docs/main/quickstart/installation/){.external} for your distribution.
+Follow the [official Plakar installation guide](https://www.plakar.io/docs/main/quickstart/installation/) for your distribution.
 
 Verify that Plakar is installed:
 
@@ -188,7 +187,7 @@ plakar pkg add s3
 
 Storage connectors in Plakar define where your backups are stored. By configuring a connector once, you can reference it in all future backup commands using a simple alias.
 
-Add your OVH Object Storage as a storage connector using the S3 endpoint and credentials you generated in Step 1:
+Add your OVHcloud Object Storage as a storage connector using the S3 endpoint and credentials you generated in Step 1:
 
 ```bash
 plakar store add ovh-s3-backups \
@@ -201,12 +200,12 @@ plakar store add ovh-s3-backups \
 
 Replace:
 
-- <S3_ENDPOINT> : your OVH S3 endpoint (e.g., s3.eu-west-par.io.cloud.ovh.net)
-- <BUCKET_NAME> : name of the container you created (e.g., plakar-backups)
-- <YOUR_ACCESS_KEY_ID> and <YOUR_SECRET_ACCESS_KEY> : credentials generated in Step 1
-- <YOUR_SECURE_PASSPHRASE> : passphrase to encrypt your backups (use single quotes if it contains special characters)
+- <S3_ENDPOINT>: your OVHcloud S3 endpoint (e.g., s3.eu-west-par.io.cloud.ovh.net)
+- <BUCKET_NAME>: name of the container you created (e.g., plakar-backups)
+- <YOUR_ACCESS_KEY_ID> and <YOUR_SECRET_ACCESS_KEY>: credentials generated in Step 1
+- <YOUR_SECURE_PASSPHRASE>: passphrase to encrypt your backups (use single quotes if it contains special characters)
 
-> [!primary]
+> [!success]
 >
 > By configuring the passphrase in the storage connector, automated backups can run without prompting for credentials each time.
 >
@@ -291,10 +290,10 @@ EOF
 Test the alias to ensure it works:
 
 ```bash
-ssh source-1 'echo "Alias fonctionne"'
+ssh source-1 'echo "Alias works"'
 ```
 
-If the message "Alias works" appears, your SSH aliases are correctly configured. You can now use these aliases in all Plakar commands, simplifying backup management.
+If the message `Alias works` appears, your SSH aliases are correctly configured. You can now use these aliases in all Plakar commands, simplifying backup management.
 
 ### Step 6: Configure Backup Sources
 
@@ -412,7 +411,7 @@ plakar scheduler start -tasks ~/scheduler.yaml
 
 > [!primary]
 >
-> For more information on scheduler configuration, refer to the [official Plakar Scheduler documentation](https://www.plakar.io/docs/main/guides/setup-scheduler-daily-backups/){.external}.
+> For more information on scheduler configuration, refer to the [official Plakar Scheduler documentation](https://www.plakar.io/docs/main/guides/setup-scheduler-daily-backups/).
 >
 
 ### Step 9: Configure systemd Services for Plakar
@@ -452,7 +451,7 @@ Replace `ubuntu` with your actual username if required.
 
 The Plakar Web UI must also run continuously so you can monitor your backups at any time, not only when connected via SSH.
 
-Create a systemd service for the Plakar Web UI at `/etc/systemd/system/plakar-ui.service` :
+Create a systemd service for the Plakar Web UI at `/etc/systemd/system/plakar-ui.service`:
 
 ```bash
 cat << 'EOF' | sudo tee /etc/systemd/system/plakar-ui.service > /dev/null
@@ -534,7 +533,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart plakar-ui
 ```
 
-Open your browser and access the UI: `http://<IP_DU_VPS>:8080?plakar_token=your-secure-token`
+Open your browser and access the UI: `http://<YOUR_VPS_IP>:8080?plakar_token=your-secure-token`
 
 ///
 
@@ -550,7 +549,7 @@ sudo journalctl -u plakar-ui -n 100 --no-pager | grep -i token
 
 Look for a line similar to:
 
-```bash
+```console
 launching webUI at http://:8080?plakar_token=d9fccdbd-77a3-41a0-8657-24d77a6d00ac
 ```
 
@@ -570,8 +569,10 @@ Copy the token from the URL and open the UI: `http://your-vps-ip:8080`. If promp
 3. **Permission denied on source servers:** Ensure the SSH user can read the directories to be backed up.
 4. **Services won’t start after reboot:** Check the service status and logs (`systemctl status` / `journalctl -u`).
 
-You can also run the Plakar UI locally on your own computer by installing Plakar and configuring the same store with your OVH S3 credentials. This allows you to access backups without connecting to the VPS.
+You can also run the Plakar UI locally on your own computer by installing Plakar and configuring the same store with your OVHcloud S3 credentials. This allows you to access backups without connecting to the VPS.
 
 ## Go further
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
