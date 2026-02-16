@@ -24,23 +24,15 @@ Once your ClickHouse service is up and running, you will have to define at least
 
 The `Dashboard`{.action} tab automatically updates when your service is ready.
 
-![ClickHouse General information](images/clickhouse_cluster_ready_to_configure.png){.thumbnail}
-
 #### Setting up a user
 
 Switch to the `Users`{.action} tab. An admin user name `avnadmin` is preconfigured during the service installation. 
 
-![Users](images/clickhouse_users.png){.thumbnail}
-
 You can add more users by clicking the `Add user`{.action} button.
-
-![Add a user](images/clickhouse_add_user.png){.thumbnail}
 
 Enter a username, then click `Create User`{.action}.
 
 Passwords need to be reset from the `Users`{.action} table.
-
-![Password reset](images/clickhouse_user_password_reset1.png){.thumbnail}
 
 #### Configuring authorised IPs
 
@@ -49,14 +41,12 @@ Passwords need to be reset from the `Users`{.action} table.
 
 If you did not define the authorised IPs during the order, you can do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
 
-![Authorised IP](images/clickhouse_authorized_ip.png){.thumbnail}
-
 Add the IP address of your computer by using the `Current IP`{.action} button.
+
 You will be able to remove IPs from the table afterward.
 
-![Add IP](images/clickhouse_add_ip.png){.thumbnail}
-
 Your ClickHouse service is now fully accessible!
+
 Optionally, you can configure access control lists (ACL) for granular permissions and create topics, as shown below.
 
 ## We want your feedback!
