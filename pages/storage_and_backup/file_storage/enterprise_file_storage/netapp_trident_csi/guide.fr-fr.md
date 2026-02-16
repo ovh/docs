@@ -14,11 +14,32 @@ Ce guide a pour objectif de fournir une référence claire et pas-à-pas pour d�
 
 Avant de commencer, assurez-vous que votre environnement répond aux critères suivants :
 
-- Cluster Kubernetes : Un cluster entièrement déployé et opérationnel.
-- Réseau (vRack) :
-  - Le projet Public Cloud et les services vRack doivent être connectés au même vRack.
-  - Le subnet et le VLAN doivent correspondre entre les services vRack et le réseau privé MKS.
-  - **Important :** L’IP du Service Endpoint doit être unique et non utilisée dans le subnet.
+**vRack**
+
+- **Projet Public Cloud et vRack Services** appartiennent au même vRack
+
+**Région**
+
+- **vRack Services et EFS** sont dans la même région
+
+**Réseau**
+
+- **Même ID de VLAN** pour le subnet de vRack Services et le réseau privé MKS
+- **Même CIDR** pour le subnet de vRack Services et le subnet du réseau privé MKS
+- Les IP du **pool d'allocation du réseau privé MKS** ne se chevauchent pas avec la plage de service des services vRack
+
+**Connectivité**
+
+- **Une passerelle (gateway)** est requise pour que les nœuds MKS puissent joindre l'API OVH
+
+![Schéma des prérequis Trident](images/trident_efs_requirements.excalidraw.png){.thumbnail}
+
+> [!primary]
+>
+> **Note :** Les régions EFS et MKS peuvent être différentes ; sachez que la latence entre les différentes régions peut impacter les performances de vos charges de travail de stockage.
+>
+> **Il est fortement recommandé de garder les resources de stockage et les resources de calcul aussi proches que possible.**
+>
 
 ## En pratique
 
