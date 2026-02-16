@@ -1,7 +1,7 @@
 ---
 title: 'Demander et suivre une portabilité de numéro'
 excerpt: "Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l'avancement du processus"
-updated: 2025-04-28
+updated: 2025-12-30
 ---
 
 ## Objectif
@@ -119,7 +119,7 @@ Verifiez bien que l'adresse et le nom du titulaire correspondent. En cas d'erreu
 
 Si les informations sont valides, prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Finalisez votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté.
 
-Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois, **depuis votre espace client**, au format PDF.
+Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois et comportant le cachet au nom de votre entreprise, **depuis votre espace client**, au format PDF.
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF.
 

@@ -293,7 +293,7 @@ Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um m
 - [MX Plan E-Mail-Account auf E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts von einer OVHcloud-E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
-- [E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+- [E-Mail-Accounts über OVHcloud Mail Migrator migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 
 ///
 

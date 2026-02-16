@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurar su cuenta de E-mail Pro en el nuevo Outlook para Windows"
 excerpt: "Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows"
-updated: 2025-09-02
+updated: 2026-01-09
 ---
 
 <style>
@@ -19,13 +19,16 @@ details[open]>summary::before {
 .w-600 {
   max-width:600px !important;
 }
+.h-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Objetivo
 
 Las direcciones de correo electrónico de la oferta [E-mail Pro](/links/web/email-pro) se pueden configurar en un cliente de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
 
-El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Correo** en Windows. Para obtener más información sobre este tema, consulte la página oficial de Microsoft: "[Outlook para Windows: El futuro del correo, calendario y Personas en Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Correo** en Windows. Para obtener más información sobre este tema, consulte la página oficial de Microsoft: "[Outlook para Windows: El futuro del correo, calendario y Personas en Windows 11](https://support.microsoft.com/es-es/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
 **Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows.**
 
@@ -34,10 +37,6 @@ El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Corr
 - Tener una dirección [E-mail Pro](/links/web/email-pro).
 - Tener el [nuevo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) para Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
-
-> [!warning]
->
-> Esta documentación se aplica únicamente al **nuevo Outlook** y no al "[Outlook Clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponible en la suite Microsoft 365 o instalado previamente en su computadora.
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
@@ -48,6 +47,16 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 ///
 
 ## Procedimiento
+
+> [!warning]
+>
+> Esta documentación se aplica únicamente al **nuevo Outlook** y no a "[Outlook clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponible en la suite Microsoft 365 o anteriormente instalado en su ordenador.
+>
+> Para distinguir las dos versiones de Outlook cuando están instaladas, escriba "Outlook" en la barra de búsqueda de Windows. Podrá entonces constatar la diferencia como se muestra a continuación. El nuevo Outlook no tiene ninguna mención especial.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> Para configurar su dirección de correo electrónico Pro en Outlook clásico, consulte nuestro guía "[E-mail Pro - Configurar una cuenta de correo en Outlook clásico para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
 
 ### Agregar la cuenta <a name="add-account"></a>
 
@@ -61,6 +70,8 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 > 1. Seleccione la plataforma correspondiente.
 > 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
+
+Para configurar su dirección de correo electrónico, siga los pasos pinchando en las pestañas que se muestran a continuación.
 
 > [!tabs]
 > **Etapa 1**

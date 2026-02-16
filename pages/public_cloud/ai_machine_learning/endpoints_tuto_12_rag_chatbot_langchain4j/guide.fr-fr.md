@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot de discussion RAG avec LangChain4j (EN)
 excerpt: Apprenez à construire un chatbot RAG (Retrieval Augmented Generation) en utilisant Java et LangChain4j
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ In order to use AI Endpoints APIs easily, create a `.env` file to store environm
 
 ```bash
 OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_EMBEDDING_MODEL_URL=https://bge-m3.endpoints.kepler.ai.cloud.ovh.net/api/text2vec
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
@@ -137,7 +137,7 @@ public class RAGStreamingChatbot {
   private static final Logger _LOG = LoggerFactory.getLogger(RAGStreamingChatbot.class);
   private static final String OVH_AI_ENDPOINTS_ACCESS_TOKEN = System.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN");
   private static final String OVH_AI_ENDPOINTS_MODEL_NAME = System.getenv("OVH_AI_ENDPOINTS_MODEL_NAME");
-  private static final String OVH_AI_ENDPOINTS_MODEL_URL = System.getenv("OVH_AI_ENDPOINTS_MODEL_URL"); 
+  private static final String OVH_AI_ENDPOINTS_URL = System.getenv("OVH_AI_ENDPOINTS_URL"); 
   private static final String OVH_AI_ENDPOINTS_EMBEDDING_MODEL_URL = System.getenv("OVH_AI_ENDPOINTS_EMBEDDING_MODEL_URL"); 
 
   interface Assistant {
@@ -148,7 +148,7 @@ public class RAGStreamingChatbot {
     MistralAiStreamingChatModel streamingChatModel = MistralAiStreamingChatModel.builder()
         .apiKey(OVH_AI_ENDPOINTS_ACCESS_TOKEN)
         .modelName(OVH_AI_ENDPOINTS_MODEL_NAME)
-        .baseUrl(OVH_AI_ENDPOINTS_MODEL_URL)
+        .baseUrl(OVH_AI_ENDPOINTS_URL)
         .maxTokens(512)
         .build();
 
@@ -314,7 +314,7 @@ public class RAGStreamingChatbot {
   private static final String DATABASE_PASSWORD = System.getenv("DATABASE_PASSWORD");
   private static final String OVH_AI_ENDPOINTS_ACCESS_TOKEN = System.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN");
   private static final String OVH_AI_ENDPOINTS_MODEL_NAME = System.getenv("OVH_AI_ENDPOINTS_MODEL_NAME");
-  private static final String OVH_AI_ENDPOINTS_MODEL_URL = System.getenv("OVH_AI_ENDPOINTS_MODEL_URL"); 
+  private static final String OVH_AI_ENDPOINTS_URL = System.getenv("OVH_AI_ENDPOINTS_URL"); 
   private static final String OVH_AI_ENDPOINTS_EMBEDDING_MODEL_URL = System.getenv("OVH_AI_ENDPOINTS_EMBEDDING_MODEL_URL"); 
 
   interface Assistant {
@@ -363,7 +363,7 @@ public class RAGStreamingChatbot {
     MistralAiStreamingChatModel streamingChatModel = MistralAiStreamingChatModel.builder()
         .apiKey(OVH_AI_ENDPOINTS_ACCESS_TOKEN)
         .modelName(OVH_AI_ENDPOINTS_MODEL_NAME)
-        .baseUrl(OVH_AI_ENDPOINTS_MODEL_URL)
+        .baseUrl(OVH_AI_ENDPOINTS_URL)
         .maxTokens(512)
         .build();
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 excerpt: Découvrez les points de terminaison et régions de l'Object Storage OVHcloud
-updated: 2025-11-19
+updated: 2026-02-06
 ---
 
 <style>
@@ -59,7 +59,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 3-AZ</td>
-        <td>Standard, Infrequent Access, Cold Archive</td>
+        <td>Standard, Infrequent Access, Active Archive, Cold Archive</td>
     </tr>
     <tr>
         <td>Milan</td>
@@ -67,15 +67,7 @@ OVHcloud Object Storage est accessible via un point de terminaison unique : `htt
         <td>HTTPS</td>
         <td>4</td>
         <td>région 3-AZ</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    </tr>
-        <td>Milan</td>
-        <td>eu-south-mil</td>
-        <td>HTTPS</td>
-        <td>4</td>
-        <td>région 3-AZ</td>
-        <td>Standard uniquement</td>
+        <td>Standard, Infrequent Access, Active Archive</td>
     </tr>
     <tr>
         <td>Francfort</td>
@@ -151,71 +143,148 @@ Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3
 
 Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est le suivant :
 
-<table>
-    <tr>
-        <th>AWS</th>
-        <th>OVHcloud</th>
-    </tr>
-    <tr>
-        <td>EXPRESS_ONEZONE</td> 
-        <td>High Performance</td>
-    </tr>
-    <tr>
-        <td>STANDARD</td>
-        <td rowspan=3>Standard</td>
-    </tr>
-    <tr>
-        <td>INTELLIGENT_TIERING</td>
-    </tr>
-    <tr>
-        <td>default<sup>2</sup></td>
-    </tr>
-    <tr>
-        <td>STANDARD_IA</td>
-        <td rowspan=4>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>ONEZONE_IA</td>
-    </tr>
-    <tr>
-        <td>GLACIER_IR</td>
-    </tr>
-    <tr>
-        <td>GLACIER</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
-    </tr>
-</table>
+> [!tabs]
+> 3-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud avant 2026-01-03</th>
+>>         <th>OVHcloud depuis 2026-01-03</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td rowspan=3>Standard</td>
+>>         <td rowspan=3>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>INTELLIGENT_TIERING</td>
+>>     </tr>
+>>     <tr>
+>>         <td>default<sup>2</sup></td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td rowspan=4>Infrequent Access</td>
+>>         <td rowspan=2>Infrequent Access</td>
+>>     </tr>
+>>     <tr>
+>>         <td>ONEZONE_IA</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER_IR</td>
+>>         <td rowspan=2>Active Archive</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>     </tr>
+>> </table>
+> 1-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td rowspan=3>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>INTELLIGENT_TIERING</td>
+>>     </tr>
+>>     <tr>
+>>         <td>default<sup>2</sup></td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td rowspan=5>Infrequent Access</td>
+>>     </tr>
+>>     <tr>
+>>         <td>ONEZONE_IA</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER_IR</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>     </tr>
+>> </table>
 
 _<sup>2</sup> :La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **io** est le suivant :
 
-<table>
-    <tr>
-        <th>AWS</th>
-        <th>OVHcloud</th>
-    </tr>
-    <tr>
-        <td>EXPRESS_ONEZONE</td> 
-        <td>High Performance</td>
-    </tr>
-    <tr>
-        <td>STANDARD</td>
-        <td>Standard</td>
-    </tr>
-    <tr>
-        <td>STANDARD_IA</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
-    </tr>
-</table>
+> [!tabs]
+> 3-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud avant 2026-01-03</th>
+>>         <th>OVHcloud depuis 2026-01-03</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td>Standard</td>
+>>         <td>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td>Infrequent Access</td>
+>>         <td>Infrequent Access</td>
+>>     </tr>
+>>     <tr>
+>>         <td>GLACIER_IR</td>
+>>         <td>-</td>
+>>         <td>Active Archive</td>
+>>     </tr>
+>>     <tr>
+>>         <td>DEEP_ARCHIVE</td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>         <td>Cold Archive<sup>3</sup></td>
+>>     </tr>
+>> </table>
+> 1-AZ regions
+>> <table>
+>>     <tr>
+>>         <th>AWS</th>
+>>         <th>OVHcloud</th>
+>>     </tr>
+>>     <tr>
+>>         <td>EXPRESS_ONEZONE</td> 
+>>         <td>High Performance</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD</td>
+>>         <td>Standard</td>
+>>     </tr>
+>>     <tr>
+>>         <td>STANDARD_IA</td>
+>>         <td>Infrequent Access</td>
+>>     </tr>
+>> </table>
 
+_<sup>3</sup>: La classe de stockage Cold Archive est uniquement disponible à Paris (EU-WEST-PAR)
 
 > [!warning]
 > Contrairement à AWS, Express One Zone est traité comme une classe de stockage régulière par OVHcloud et toutes nos fonctionnalités compatibles S3 prises en charge et leurs opérations d'API associées sont disponibles.
@@ -242,10 +311,10 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
         <td>STANDARD</td>
     </tr>
     <tr>
-        <td>default<sup>3</sup></td>
+        <td>default<sup>4</sup></td>
     </tr>
     <tr>
-         <td>STANDARD_IA</td>
+        <td>STANDARD_IA</td>
         <td rowspan=3>Standard</td>
     </tr>
     <tr>
@@ -256,18 +325,17 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=2>Standard, Infrequent Access</td>
+        <td rowspan=3>Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
     </tr>
     <tr>
         <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
     </tr>
 </table>
 
-_<sup>3</sup> : Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
+_<sup>4</sup> : Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
 
@@ -286,11 +354,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard, Infrequent Access</td>
-    </tr>
-    <tr>
-        <td>DEEP_ARCHIVE</td>
-        <td>Cold Archive</td>
+        <td>Infrequent Access</td>
     </tr>
 </table>
 

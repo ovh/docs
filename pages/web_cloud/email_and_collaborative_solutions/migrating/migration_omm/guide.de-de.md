@@ -1,6 +1,6 @@
 ---
-title: "E-Mail-Accounts mit dem OVH Mail Migrator migrieren"
-excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Accounts mit dem OVH Mail Migrator zu OVHcloud migrieren"
+title: "E-Mail-Accounts mit dem OVHcloud Mail Migrator migrieren"
+excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Accounts mit dem OVHcloud Mail Migrator zu OVHcloud migrieren"
 updated: 2025-11-25
 ---
 
@@ -15,13 +15,13 @@ updated: 2025-11-25
 
 ## Ziel
 
-[OVH Mail Migrator](/links/web/omm) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Reversibilität abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
+[OVHcloud Mail Migrator](/links/web/omm) ist ein von OVHcloud entwickeltes Tool, das den Bedarf nach Reversibilität abdeckt. Sie können damit E-Mail-Accounts auf Ihre OVHcloud E-Mail-Accounts oder einen externen E-Mail-Dienst migrieren. Dabei können verschiedene Inhalte wie E-Mails, Kontakte, Kalender und Aufgaben übertragen werden, sofern diese mit Ihren E-Mail-Accounts kompatibel sind.
 
-**Diese Anleitung erklärt, wie Sie Ihre E-Mail--Accounts mit unserem OVH Mail Migrator-Tool zu OVHcloud migrieren können.**
+**Diese Anleitung erklärt, wie Sie Ihre E-Mail--Accounts mit unserem OVHcloud Mail Migrator-Tool zu OVHcloud migrieren können.**
 
 ## Voraussetzungen
 
-- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
+- Sie haben einen externen E-Mail-Dienst oder einen Dienst von OVHcloud: [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-Mail Pro](/links/web/email-pro) oder eine MX Plan Lösung (als MX Plan Angebot oder enthalten in einem [OVHcloud Webhosting Angebot](/links/web/hosting)).
 - Sie verfügen über die Login-Daten für die Quell-Accounts, die Sie migrieren möchten.
 - Sie verfügen über die Login-Daten der Ziel-Accounts.
 

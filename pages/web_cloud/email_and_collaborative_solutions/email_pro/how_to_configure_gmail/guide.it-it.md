@@ -1,8 +1,16 @@
 ---
 title: 'Email Pro - Configura il tuo account di posta elettronica su Gmail'
 excerpt: 'Come configurare un account Email Pro dall’interfaccia Web di Gmail'
-updated: 2025-04-28
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> A partire da gennaio 2026, [Gmail non sarà più compatibile con le funzionalità Gmailify e accesso POP](https://support.google.com/mail/answer/16604719?hl) che fino ad ora permettevano di importare email da account email di terze parti.
+>
+> Non sarà più possibile configurare gli indirizzi email OVHcloud all’interno di Gmail.
+>
+> Gli account email OVHcloud sono sempre accessibili dalla nostra [Webmail](/links/web/email).
 
 ## Obiettivo
 

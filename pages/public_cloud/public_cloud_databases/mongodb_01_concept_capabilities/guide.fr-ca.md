@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Capacités et limitations (EN)
+title: Capacités et limitations de Public Cloud pour MongoDB (EN)
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 updated: 2025-07-31
 ---

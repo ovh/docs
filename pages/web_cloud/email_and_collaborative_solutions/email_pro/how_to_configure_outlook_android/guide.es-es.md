@@ -166,7 +166,7 @@ Para el envío de mensajes de correo electrónico, si debe introducir manualment
 
 - **Nombre de usuario**: Introduzca la dirección de correo electrónico **completa**
 - **Contraseña**: Introduzca la contraseña de la dirección de correo
-- **Servidor (entrante)**: pro?.mail.ovh.net
+- **Servidor (saliente)**: pro?.mail.ovh.net
 - **Puerto**: 587
 - **Tipo de seguridad**: STARTTLS
 

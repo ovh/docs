@@ -1,7 +1,7 @@
 ---
 title: "FAQ sulla gestione dell'account OVHcloud"
 excerpt: "Trovi le domande più frequenti sulla gestione dell'account OVHcloud"
-updated: 2025-10-30
+updated: 2025-12-18
 ---
 
 <style>
@@ -244,13 +244,48 @@ Se le condizioni sopra indicate sono soddisfatte, puoi richiedere l'eliminazione
 
 ### Gestire le notifiche e i log
 
-/// details | Posso ricevere tutte le notifiche di OVHcloud su più indirizzi email?
+/// details | Posso ricevere le notifiche di OVHcloud su più indirizzi e-mail?
 
-Purtroppo non è possibile inviare email di comunicazione a più indirizzi.
+Da novembre 2025, è possibile aggiungere nuovi indirizzi e-mail di contatto per distribuire le e-mail inviate da OVHcloud.
 
-Dallo [Spazio Cliente OVHcloud](/links/manager), è comunque possibile configurare un indirizzo email di riserva che non verrà utilizzato per l'invio di tutte le nostre comunicazioni (rinnovi, disattivazioni di servizi, ecc.).
+Consulta la nostra guida dedicata: [Gestire le comunicazioni relative ai servizi OVHcloud](/pages/account_and_service_management/account_information/manage-messages).
 
-Questo indirizzo email di riserva è utile in caso di perdita di accesso al proprio indirizzo email principale, poiché ti impedirebbe di accedere allo Spazio Cliente OVHcloud.
+///
+
+/// details | Ho ricevuto un'e-mail da OVHcloud. Come posso verificare che sia legittima?
+
+Tutte le nostre e-mail rispettano i nostri standard di sicurezza (SPF, DKIM, DMARC) e provengono da un indirizzo e-mail il cui nome di dominio (o sottodominio corrispondente) è elencato di seguito:
+
+- ovhcloud.com
+- ovh.com
+- ovh.fr
+- services.ovhcloud.com
+- news.ovhcloud.com
+- clientmanager.fr
+- kimsufi.com
+- soyoustart.com
+- ovh.ca
+- ovh.com.au
+- ovh.co.uk
+- ovh.ie
+- ovh.de
+- ovh.es
+- ovh.it
+- ovh.lt
+- ovh-hosting.fi
+- ovh.net
+- ovh.nl
+- ovh.pl
+- ovh.pt
+- ovh.sn
+- ovh.us
+- robot.ovh.net
+
+**In caso di dubbio sull'autenticità di un'e-mail** :
+
+- Sappiate che non vi chiederemo mai una password o coordinate bancarie via e-mail.
+- Verifica se l'e-mail che hai ricevuto è visibile anche nel tuo [Spazio Cliente OVHcloud](/links/manager). Accedi, clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action} (o `Le mie comunicazioni`{.action}). Troverai lì le copie delle e-mail ufficiali inviate da OVHcloud.
+- Consultate anche la nostra guida « [Phishing - Come riconoscere e-mail o SMS fraudolenti ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
 ///
 

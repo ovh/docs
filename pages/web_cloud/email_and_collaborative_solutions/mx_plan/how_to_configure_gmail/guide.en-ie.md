@@ -1,8 +1,16 @@
 ---
 title: 'MX Plan - Configuring an email address on the Gmail online interface'
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
-updated: 2025-02-17
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> From January 2026, [Gmail will no longer be compatible with Gmailify and POP access features](https://support.google.com/mail/answer/16604719?hl) which previously allowed you to import emails from third-party email accounts.
+>
+> As a result, you will no longer be able to configure your OVHcloud email addresses within Gmail.
+>
+> You can always access your OVHcloud email accounts via our [Webmail](/links/web/email).
 
 ## Objective
 

@@ -87,6 +87,8 @@ Lo schermo KVM visualizzato dipende dal sistema operativo e dallo stato individu
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+Se necessario, installare il pacchetto prima tramite il gestore di pacchetti della distribuzione (`sudo dnf install keyboard-configuration` o `sudo apt install keyboard-configuration`).
+
 Viene visualizzato un menu grafico in cui è possibile selezionare un modello di tastiera.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}

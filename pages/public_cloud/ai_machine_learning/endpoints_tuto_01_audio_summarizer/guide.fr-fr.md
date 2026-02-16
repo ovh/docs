@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Transcrire et résumer des fichiers audio (EN)
 excerpt: "Résumer des heures de réunions et conversations audio avec des APIs d'ASR et de LLM"
-updated: 2025-10-24
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -40,8 +40,7 @@ This tutorial will explore how AI APIs can be connected to create an advanced vi
 In order to use AI Endpoints APIs easily, create a `.env` file to store environment variables:
 
 ```bash
-ASR_AI_ENDPOINT=https://whisper-large-v3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
-LLM_AI_ENDPOINT=https://mixtral-8x7b-instruct-v01.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
 
@@ -85,21 +84,15 @@ After these lines, load and access the environnement variables of your `.env` fi
 # access the environment variables from the .env file
 load_dotenv()
 
-asr_ai_endpoint_url = os.environ.get("ASR_AI_ENDPOINT") 
-llm_ai_endpoint_url = os.getenv("LLM_AI_ENDPOINT")
+ai_endpoint_url = os.getenv("OVH_AI_ENDPOINTS_URL")
 ai_endpoint_token = os.getenv("OVH_AI_ENDPOINTS_ACCESS_TOKEN")
 ```
 
-Then define the clients that communicate with your APIs and authenticate your requests:
+Then define the client that communicates with the APIs and authenticates your requests:
 
 ```python
-asr_client = OpenAI(
-    base_url=asr_ai_endpoint_url,
-    api_key=ai_endpoint_token
-)
-
-llm_client = OpenAI(
-    base_url=llm_ai_endpoint_url,
+oai_client = OpenAI(
+    base_url=ai_endpoint_url,
     api_key=ai_endpoint_token
 )
 ```
@@ -111,7 +104,7 @@ llm_client = OpenAI(
 First, create the **Automatic Speech Recognition** function in order to transcribe audio files into text:
 
 ```python
-def asr_transcription(asr_client, audio):
+def asr_transcription(oai_client, audio):
     
     if audio is None:
         return " "
@@ -125,7 +118,7 @@ def asr_transcription(asr_client, audio):
         process_audio_to_wav.export(processed_audio, format="wav")
     
         with open(processed_audio, "rb") as audio_file:
-            response = asr_client.audio.transcriptions.create(
+            response = oai_client.audio.transcriptions.create(
                 model="whisper-large-v3",
                 file=audio_file,
                 response_format="verbose_json",
@@ -159,7 +152,7 @@ In this second step, create the `chat_completion` function to use `Mixtral8x7B` 
 - Return the audio summary
 
 ```python
-def chat_completion(llm_client, new_message):
+def chat_completion(oai_client, new_message):
 
     if new_message==" ":
         return "Please, send an input audio to get its summary!"
@@ -169,7 +162,7 @@ def chat_completion(llm_client, new_message):
         # prompt
         history_openai_format = [{"role": "user", "content": f"Summarize the following text in a few words: {new_message}"}]
         # return summary
-        return llm_client.chat.completions.create(
+        return oai_client.chat.completions.create(
             model="Mixtral-8x7B-Instruct-v0.1",
             messages=history_openai_format,
             temperature=0,
@@ -195,8 +188,8 @@ Inside a Gradio Block, you can:
 - Add a clear button with gr.ClearButton() to reset the page of the web app
 
 ```python
-asr_transcribe_fn = functools.partial(asr_transcription, asr_client)
-chat_completion_fn = functools.partial(chat_completion, llm_client)
+asr_transcribe_fn = functools.partial(asr_transcription, oai_client)
+chat_completion_fn = functools.partial(chat_completion, oai_client)
 
 # gradio
 with gr.Blocks(theme=gr.themes.Default(primary_hue="blue"), fill_height=True) as demo:

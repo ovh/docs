@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to restore a backup
+title: Restore a backup of Public Cloud Databases
 excerpt: Find out how to restore a backup
 updated: 2024-07-31
 ---

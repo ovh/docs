@@ -1,6 +1,6 @@
 ---
-title: 'Migrowanie kont e-mailowych za pomocą OVH Mail Migrator'
-excerpt: 'Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVH Mail Migrator'
+title: 'Migrowanie kont e-mailowych za pomocą OVHcloud Mail Migrator'
+excerpt: 'Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVHcloud Mail Migrator'
 updated: 2025-11-25
 ---
 
@@ -15,13 +15,13 @@ updated: 2025-11-25
 
 ## Wprowadzenie
 
-[Narzędzie OVH Mail Migrator](/links/web/omm) zostało stworzone przez OVHcloud, aby spełnić potrzebę odwracalności. Umożliwia ono migrację kont e-mailowych do adresów e-mail w OVHcloud lub zewnętrznego usługi poczty e-mail. Proces obsługuje różne typy treści, takie jak wiadomości e-mail, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi adresami e-mail.
+[Narzędzie OVHcloud Mail Migrator](/links/web/omm) zostało stworzone przez OVHcloud, aby spełnić potrzebę odwracalności. Umożliwia ono migrację kont e-mailowych do adresów e-mail w OVHcloud lub zewnętrznego usługi poczty e-mail. Proces obsługuje różne typy treści, takie jak wiadomości e-mail, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi adresami e-mail.
 
-**Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVH Mail Migrator.**
+**Dowiedz się, jak przenieść swoje konta e-mail do OVHcloud, korzystając z naszego narzędzia OVHcloud Mail Migrator.**
 
 ## Wymagania początkowe
 
-- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
+- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
 - Posiadaj dane logowania do kont e-mailowych, które chcesz przenieść (konta źródłowe).
 - Posiadaj dane logowania do kont e-mailowych docelowych.
 

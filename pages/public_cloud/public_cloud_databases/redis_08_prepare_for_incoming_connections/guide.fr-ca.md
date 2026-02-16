@@ -1,5 +1,5 @@
 ---
-title: Valkey - Configurez votre service Valkey pour accepter les connexions entrantes (EN)
+title: Configurez les connexions entrantes d'un service Public Cloud Databases pour Valkey (EN)
 excerpt: Find out how to configure your Valkey service to accept incoming connections
 updated: 2024-06-12
 ---

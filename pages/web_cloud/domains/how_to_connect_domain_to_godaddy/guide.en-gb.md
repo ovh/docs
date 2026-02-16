@@ -1,12 +1,12 @@
 ---
 title: How to connect an OVHcloud domain name to a GoDaddy hosting plan
 excerpt: Prepare and configure your OVHcloud domain name’s DNS zone to connect to a GoDaddy hosting plan
-updated: 2024-06-13
+updated: 2026-02-10
 ---
 
 ## Objective
 
-You have a domain name with OVHcloud and you want to connect it to a GoDaddy hosting plan. In this guide, you will find the steps to prepare and configure your OVHcloud DNS zone, so that you can configure your GoDaddy hosting plan.
+You are the holder of a domain name with OVHcloud and want to connect it to GoDaddy hosting. In this guide, you will find the steps to prepare and configure your OVHcloud DNS zone, so that you can configure your GoDaddy hosting plan.
 
 **Find out how to connect your OVHcloud domain name to a GoDaddy hosting plan.**
 

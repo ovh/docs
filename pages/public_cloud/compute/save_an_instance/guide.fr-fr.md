@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou via OpenStack'
-updated: 2025-10-14
+updated: 2025-12-09
 ---
 
 <style>
@@ -189,20 +189,28 @@ Vous pouvez sélectionner l'instance à sauvegarder.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **Le planning** 
+#### **Le nom** 
+
+Entrez un nom pour la planification de sauvegarde automatique et consultez les informations de tarification.
+
+![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+#### **Le planning**
 
 Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l'une des fréquences par défaut :
 
 - Sauvegarde quotidienne avec rétention des 7 dernières sauvegardes
 - Sauvegarde quotidienne avec rétention des 14 dernières sauvegardes
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Le nom** 
-
-Entrez un nom pour la planification de la sauvegarde automatique. Prenez connaissance des informations de tarification et créez le planning en cliquant sur le bouton `Créer`{.action}.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Ajout d'une sauvegarde distante**
+
+Cliquez sur le bouton `Ajouter un backup distant`{.action}, sélectionnez une localisation, prenez connaissance des informations de tarification et cliquez sur le bouton `Créer`{.action} 
+
+![public-cloud-instance-backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Gestion des sauvegardes et des plannings
 

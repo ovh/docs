@@ -88,7 +88,7 @@ Para configurar as suas [políticas de snapshot](#snapshot_policy), volte à sec
 
 #### Criação de uma snapshot <a name="create_snapshot"></a>
 
-Para criar uma nova snapshot de um volume no seu estado atual, clique no botão `Ações`{.action} e, a seguir, em Criar uma snapshot {.action}.
+Para criar uma nova snapshot de um volume no seu estado atual, clique no botão `Ações`{.action} e, a seguir, em `Criar uma snapshot`{.action}.
 
 ![Snapshot create](images/manage_enterprise08.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Pode eliminar uma snapshot clicando no botão `...`{.action} na tabela e, a segu
 
 ![Snapshot delete](images/manage_enterprise12.png){.thumbnail}
 
-Clique em Eliminar uma snapshot {.action} para validar a eliminação.
+Clique em `Eliminar uma snapshot`{.action} para validar a eliminação.
 
 ![Snapshot delete confirmation](images/manage_enterprise13.png){.thumbnail}
 

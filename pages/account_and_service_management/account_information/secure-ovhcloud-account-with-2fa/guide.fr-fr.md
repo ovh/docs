@@ -18,11 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!success]
-> Participez à notre enquête et aidez-nous à améliorer ce guide !<br>
-> N'hésitez pas à partager votre avis et vos idées avec nous.<br>
-> [Accédez à l'enquête.](https://s.elq.fr/ovhext/g3zPMWe)
-
 ## Objectif
 
 OVHcloud met à votre disposition des outils pour renforcer la sécurité de votre compte et de vos services.

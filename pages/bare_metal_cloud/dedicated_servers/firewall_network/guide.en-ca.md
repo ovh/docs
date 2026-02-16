@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-10-21
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -48,26 +48,17 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category, or directly type the desired IP address in the search bar.
 
-Next, click the `...`{.action} button to the right of the relevant IPv4 and first select `Create Firewall`{.action}.
+![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
+Next, click the `⁝`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
-You will then be asked to confirm. The firewall will be created and you can configure the rules.
+![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-> [!primary]
-> The `Create Firewall`{.action} button will only be available for IPs that have never configured a firewall. If it is not the first time you are configuring your firewall, you can skip this step. 
->
-
-| ![Enabling the configuration](images/activationconfig.png) | 
-|:--:| 
-| Click on `Edge Network Firewall configuration`{.action} to start configuring it. |
-
-On this page you can choose to **Enable** or **Disable** the firewall using the switch button.
-It is also possible to do it another way explained just below.
+You will then be taken to the firewall configuration page.
 
 You can set up to **20 rules per IP**.
 
@@ -94,21 +85,21 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**To add a rule:**
+**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left :
 
-| ![add-rule-btn](images/enf_add_rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_new.png) | 
 |:--:| 
-| Click on `Add a rule`{.action}. |
+| Click on `+ Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
 
@@ -126,21 +117,13 @@ For each **TCP** rule, you must choose:
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
 > 
 
-**Enable firewall:**
+**Enable/disable firewall:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) | 
+| ![activate-desactivate](images/enf_enable_disable_new.png) | 
 |:--:| 
 | `Switch on`{.action} to enable |
 
-After confirmation, the firewall will be enabled.
-
-**Disable firewall:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) | 
-|:--:| 
-| `Switch on`{.action} to enable |
-
-After confirmation, the firewall will be disabled.
+After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
 

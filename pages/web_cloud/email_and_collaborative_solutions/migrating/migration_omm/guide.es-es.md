@@ -1,6 +1,6 @@
 ---
-title: 'Migrar cuentas de correo electrónico con OVH Mail Migrator'
-excerpt: 'Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVH Mail Migrator'
+title: 'Migrar cuentas de correo electrónico con OVHcloud Mail Migrator'
+excerpt: 'Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVHcloud Mail Migrator'
 updated: 2025-11-25
 ---
 
@@ -15,13 +15,13 @@ updated: 2025-11-25
 
 ## Objetivo
 
-[OVH Mail Migrator](/links/web/omm) es una herramienta creada por OVHcloud que responde a la necesidad de reversibilidad. Permite migrar sus cuentas de correo electrónico a sus direcciones de correo electrónico de OVHcloud o a un servicio de correo electrónico externo. El proceso admite diferentes tipos de contenido, como correos electrónicos, contactos, calendarios y tareas, siempre que estos sean compatibles con sus direcciones de correo electrónico.
+[OVHcloud Mail Migrator](/links/web/omm) es una herramienta creada por OVHcloud que responde a la necesidad de reversibilidad. Permite migrar sus cuentas de correo electrónico a sus direcciones de correo electrónico de OVHcloud o a un servicio de correo electrónico externo. El proceso admite diferentes tipos de contenido, como correos electrónicos, contactos, calendarios y tareas, siempre que estos sean compatibles con sus direcciones de correo electrónico.
 
-**Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVH Mail Migrator.**
+**Descubra cómo migrar sus cuentas de correo electrónico a OVHcloud con nuestra herramienta OVHcloud Mail Migrator.**
 
 ## Requisitos
 
-- Tener un servicio de correo electrónico externo o en OVHcloud, como una oferta [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (a través de la oferta MX Plan sola o incluida en una oferta de [alojamiento web de OVHcloud](/links/web/hosting)).
+- Tener un servicio de correo electrónico externo o en OVHcloud, como una oferta [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [Email Pro](/links/web/email-pro) o MX Plan (a través de la oferta MX Plan sola o incluida en una oferta de [alojamiento web de OVHcloud](/links/web/hosting)).
 - Tener los identificadores relacionados con las cuentas de correo electrónico que desea migrar (las cuentas de correo electrónico de origen).
 - Tener los identificadores relacionados con las cuentas de correo electrónico de destino.
 

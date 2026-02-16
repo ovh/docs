@@ -101,7 +101,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >>
 >> > [!warning]
 >> >
->> > Hinweis: Das Volume muss in derselben Region wie die Instanz erstellt werden, mit der es verbunden werden soll. Ein in einer anderen Region erstelltes Volume kann entfernt und in der richtigen Region neu erstellt werden, oder Sie können zwischen Regionen migrieren, indem Sie [diese Anleitung](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another) befolgen.
+>> > Hinweis: Das Volume muss in derselben Region wie die Instanz erstellt werden, mit der es verbunden werden soll. Ein in einer anderen Region erstelltes Volume kann entfernt und in der richtigen Region neu erstellt werden.
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}

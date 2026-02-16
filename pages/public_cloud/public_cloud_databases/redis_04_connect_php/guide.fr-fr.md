@@ -1,5 +1,5 @@
 ---
-title: Valkey - Connectez-vous avec PHP (EN)
+title: Se connecter avec PHP au service Public Cloud Databases pour Valkey (EN)
 excerpt: Connect to your Public Cloud Databases for Valkey using the PHP programming language
 updated: 2024-06-12
 ---

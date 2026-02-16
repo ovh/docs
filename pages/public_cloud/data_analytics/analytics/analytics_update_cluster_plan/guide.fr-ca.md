@@ -1,5 +1,5 @@
 ---
-title: Analytics - How to update your service plan
+title: "Mettre à jour le plan d'un service Analytics (EN)"
 excerpt: Find out how to upgrade the service plan of your cluster
 updated: 2025-02-03
 ---

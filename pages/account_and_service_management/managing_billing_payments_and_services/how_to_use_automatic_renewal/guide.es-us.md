@@ -4,11 +4,6 @@ excerpt: Descubra cómo gestionar la renovación de los servicios de OVHcloud de
 updated: 2025-01-28
 ---
 
-> [!success]
-> ¡Participe en nuestra encuesta y ayúdenos a mejorar esta guía!<br>
-> No dude en compartir su opinión y sus ideas con nosotros.<br>
-> [Ir a la encuesta.](https://s.elq.fr/ovhext/FFBTC2m)
-
 ## Objetivo
 
 El menú **Mis soluciones y servicios** de su área de cliente de OVHcloud le permite consultar el estado de sus servicios, renovarlos, cambiar su tipo de renovación, regularizar las facturas o anticipar su pago.

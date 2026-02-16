@@ -166,7 +166,7 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 
 - **Nome de utilizador** : Insira o endereço de e-mail **completo*
 - **Palavra-passe**: Insira a palavra-passe do endereço de e-mail
-- **Servidor (de entrada)**: pro?.mail.ovh.net
+- **Servidor (de saída)**: pro?.mail.ovh.net
 - **Port** : 587
 - **Tipo de segurança**: STARTTLS
 

@@ -1,7 +1,7 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
 excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Wiadomości SMS możesz wysyłać bezpośrednio z Panelu klienta. W tym przewodn
 
 Zaloguj się do [Panelu klienta](/links/manager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
 
-Pole „Wyślij SMS” jest pierwszym dostępnym elementem na liście działań.
+Pole "Wyślij SMS" jest pierwszym dostępnym elementem na liście działań.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nad
 
 Wiadomości SMS możesz także wysyłać do wielu odbiorców. Możesz to zrobić na dwa sposoby:
 
-- Za pośrednictwem listy odbiorców w formacie .csv przez przycisk „Zarządzaj odbiorcami”.
+- Za pośrednictwem listy odbiorców w formacie .csv przez przycisk "Zarządzaj odbiorcami".
 Więcej informacji znajdziesz w [przewodniku dotyczącym list odbiorców wiadomości SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms).
 
 - Za pośrednictwem książki adresowej (3). Możesz ją utworzyć bezpośrednio w Panelu klienta lub zaimportować z pliku w formacie .csv lub .txt.
@@ -56,7 +56,11 @@ Po wybraniu nadawcy i wpisaniu odbiorców możesz przejść do tworzenia wiadomo
 
 Wpisz wiadomość w przeznaczonym do tego okienku (1). Widoczny jest licznik, który informuje o wykorzystanej liczbie znaków i odpowiadającej temu liczbie wiadomości SMS (2).
 
-W dwóch poniższych tabelach wymienione są znaki dozwolone w kodowaniu 7-bitowym. Znaki z tabeli „Extensions” liczą się podwójnie. 
+> [!primary]
+>
+> Zalecamy, aby nie przekraczać 8 SMS-ów na wiadomość. Po przekroczeniu tego limitu operatorzy nie gwarantują już dostarczenia wiadomości.
+
+W dwóch poniższych tabelach wymienione są znaki dozwolone w kodowaniu 7-bitowym. Znaki z tabeli "**Extensions**" liczą się podwójnie. 
 
 Maksymalny rozmiar wiadomości SMS wynosi 160 znaków w kodowaniu 7-bitowym (norma GSM 03.38).
 

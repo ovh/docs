@@ -1005,7 +1005,7 @@ Les trois machines virtuelles du plan de reprise d'activité sont fonctionnelles
 
 ![18 - fail on Gravelines 02](images/18-fail-on-gravelines02.png){.thumbnail}
 
-Une déconnexion des trois noeuds du cluster de Gravelines va être faite.
+Une déconnexion des trois nœuds du cluster de Gravelines va être faite.
 
 > [!primary]
 > La déconnexion est effectuée en supprimant du vRack les 3 nœuds du cluster de Gravelines.

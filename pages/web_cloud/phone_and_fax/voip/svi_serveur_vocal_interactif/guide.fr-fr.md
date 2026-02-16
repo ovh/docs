@@ -1,7 +1,7 @@
 ---
-title: 'Configurer un serveur vocal interactif (SVI)'
+title: 'Configurer un Serveur Vocal Interactif (SVI)'
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -16,8 +16,6 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
 - Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
-
 > [!primary]
 >
 > Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
@@ -25,17 +23,37 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 
 ## En pratique
 
-### Étape 1 : accéder à la configuration du serveur vocal interactif
-
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
 1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
 
-Assurez-vous que le numéro est bien configuré en tant que « Serveur Vocal Interactif », en vérifiant son `Type de configuration` dans le cadre « Configuration ». Dès lors, deux possibilités :
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
-- **le numéro est configuré en tant que « Serveur Vocal Interactif »** : cliquez alors sur `Paramétrer la configuration`{.action} et poursuivez la lecture de cette documentation ;
+### Étape 1 : Appliquer la configuration « Serveur Vocal Interactif »
 
-- **le numéro n'est pas configuré en tant que « Serveur Vocal Interactif »** : vous devez au préalable le configurer correctement avant de poursuivre cette documentation. Reportez-vous à notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins) » si nécessaire.
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Serveur Vocal Interactif`{.action} puis cliquez sur `Paramétrer`{.action}.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Serveur Vocal Interactif`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+![sviconfiguration](images/svi-1-2026.png){.thumbnail}
+
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+### Étape 2 : Accéder à la configuration du serveur vocal interactif
+
+Une fois la configuration de serveur vocal interactif appliquée, la page de configuration du SVI vous est présentée.
+
+![sviconfiguration](images/2026-VoIP-SVI-01.png){.thumbnail}
+
+Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![sviconfiguration](images/svi-1.png){.thumbnail}
 
@@ -48,11 +66,11 @@ L'interface de configuration du SVI se présente sous la forme d'une arborescenc
 |![menu numéro](images/menu-numero-svi.png){.thumbnail}|![menu configuration](images/menu-configuration-svi.png){.thumbnail}|![menu étape](images/menu-etape-svi.png){.thumbnail}|
 |Permet de gérer les options principales de la configuration.|Permet de gérer les étapes de la configuration ainsi que les options d'affichage des appels.|Permet d'ajouter des actions au sein d'une étape ainsi que des conditions d'exécution de l'étape.|
 
-### Étape 2 : configurer le serveur interactif
+### Étape 3 : Configurer le serveur vocal interactif
 
 Les étapes suivantes peuvent être suivies sans ordre particulier. Néanmoins, à des fins de facilité de prise en main, nous vous recommandons de suivre l'ordre ci-dessous.
 
-#### 2.1 gérer les sons
+#### 3.1 Gérer les sons
 
 **L'ajout d'un son d'accueil est la première étape indispensable pour créer votre SVI**. Ce son d'accueil sera joué dès le début de l'appel. Il précise à l'appelant les différents choix offerts par les touches.
 
@@ -71,7 +89,7 @@ Ouvrez le **menu du numéro** puis cliquez sur `Gérer les sons`{.action}.
 
 Cliquez alors sur `Ajouter un son`{.action} pour téléverser un son depuis votre poste.
 
-#### 2.2 Créer un menu interactif <a name="creer-menu-interactif"></a>
+#### 3.2 Créer un menu interactif <a name="creer-menu-interactif"></a>
 
 Ouvrez le **menu du numéro** puis cliquez sur `Gérer les menus interactifs`{.action}.
 
@@ -91,7 +109,7 @@ Une fenêtre de création s'affiche. Complétez les informations demandées :
 
 Une fois les informations renseignées, cliquez sur `Créer`{.action}.
 
-#### 2.3 Ajouter des entrées dans le menu interactif
+#### 3.3 Ajouter des entrées dans le menu interactif
 
 Une fois votre menu interactif créé, vous pouvez y ajouter des entrées. Pour cela, cliquez sur le bouton `+`{.action} situé en bas de celui-ci.
 
@@ -109,13 +127,13 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Selon vos
 
 ![sviconfiguration](images/svi-sous-menu.png){.thumbnail}
 
-### Étape 3 : configurer les étapes et actions
+### Étape 4 : Configurer les étapes et actions
 
 Une fois vos menus interactifs créés, cliquez sur `Retour à la configuration du numéro`{.action}.
 
 Vous devez à présent créer des étapes pour déclencher vos menus interactifs selon vos besoins. Vous pourrez par exemple définir des périodes de disponibilité (plages horaires) et les actions à déclencher en dehors de ces périodes.
 
-#### 3.1 Créer une étape
+#### 4.1 Créer une étape
 
 Pour créer une première étape, ouvrez le **menu de configuration** puis cliquez sur `Ajouter une étape`{.action}.
 
@@ -128,7 +146,7 @@ Pour créer une première étape, ouvrez le **menu de configuration** puis cliqu
 > Utilisez le bouton dédié (entre chaque étape) pour modifier l'ordre de vos étapes et actions puis validez ce nouvel ordre en cliquant sur `Valider les modifications`{.action}
 >
 
-#### 3.2 Ajouter une action à une étape
+#### 4.2 Ajouter une action à une étape
 
 Les actions ajoutées à une étape s'activent lorsqu'un appelant contacte votre numéro.
 
@@ -154,7 +172,7 @@ Selon vos besoins, répétez ces manipulations si vous souhaitez créer plusieur
 > A des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies dans vos étapes. Cliquez sur `Options d'affichage`{.action} en haut à gauche de votre interface puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
 >
 
-#### 3.3 Ajouter une condition à une étape
+#### 4.3 Ajouter une condition à une étape
 
 Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions ne sont pas remplies, soit une action correspondant aux **conditions non-vérifiées** se déclenche, soit l'étape suivante de votre plan de configuration se déclenche.
 
@@ -221,6 +239,14 @@ Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{
 > [!primary]
 > Pour modifier une plage horaire déjà créée, il est nécessaire de la supprimer puis de créer une nouvelle plage horaire.
 >
+
+##### **Double condition : « Jours exceptionnels » et « Plages horaires génériques »**
+
+Pour obtenir une configuration contenant à la fois des jours exceptionnels et des plages horaires génériques, il convient de placer les jours exceptionnels sur l'étape 1 et les plages horaires génériques sur l'étape 2.
+
+En effet, le système lit les étapes dans l'ordre : si les conditions de l'étape 1 sont remplies, les actions associées à cette étape sont exécutées. Dans le cas contraire, le système passe automatiquement à l’étape 2.
+
+![SVI - double condition](images/svi-double-condition.png){.thumbnail}
 
 ##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 

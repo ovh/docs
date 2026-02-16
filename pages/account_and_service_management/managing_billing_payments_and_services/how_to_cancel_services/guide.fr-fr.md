@@ -1,7 +1,7 @@
 ---
 title: Comment résilier mes services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2025-04-28
+updated: 2026-01-19
 ---
 
 ## Objectif
@@ -113,7 +113,7 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 
 #### VoIP <a name="voip"></a>
 
-Pour résilier une offre [VoIP](/links/telecom/telephonie-voip), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-sip-trunk) ou pour [résilier un numéro alias](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#cancel-alias).
+Pour résilier une offre [VoIP](/links/telecom/telephonie-voip), suivez les instructions de notre guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
 #### SMS <a name="sms"></a>
 
@@ -123,7 +123,7 @@ Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une dema
 
 #### FAX <a name="fax"></a>
 
-Pour résilier une offre [FAX](/links/telecom/fax), suivez les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#cancel-fax).
+Pour résilier une offre [FAX](/links/telecom/fax), suivez les instructions de notre guide « [Comment résilier un service VoIP ou une ligne Fax](/pages/web_cloud/phone_and_fax/voip/resilier-services-voip) ».
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 

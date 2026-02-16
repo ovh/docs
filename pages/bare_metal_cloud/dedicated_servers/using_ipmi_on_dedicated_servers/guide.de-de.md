@@ -1,7 +1,7 @@
 ---
 title: "Verwendung der IPMI-Konsole für Dedicated Server"
 excerpt: "Erfahren Sie hier, wie Sie sich über das OVHcloud Kundencenter auf Ihrem Server einloggen können, ohne externe Software zu verwenden"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 > [!primary]
@@ -44,6 +44,10 @@ Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹. Auf de
 Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI/KVM`{.action}.
 
 ### KVM über Java-Applet öffnen <a name="applet-java"></a>
+
+> [!primary]
+> Wir empfehlen die Installation der neuesten Java-Version.
+>
 
 Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist das nicht der Fall, gehen Sie auf die [offizielle Seite](https://www.java.com/en/download/).
 

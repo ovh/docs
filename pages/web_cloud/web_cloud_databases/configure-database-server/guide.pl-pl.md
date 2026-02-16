@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2025-02-20
+updated: 2026-02-06
 ---
 
 ## Wprowadzenie
@@ -102,7 +102,6 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
-- **Rozmiar**: Katalog plików tymczasowych. **/dev/shm** odpowiada instancji pamięci RAM. **/tmp** odpowiada instancji dysku twardego.
 - **MaxAllowedPacket**: Maksymalny rozmiar pakietów
 - **Max_user_connections**: Liczba autoryzowanych jednoczesnych połączeń na użytkownika.
 - **Automatycznie**: Definiuje, czy zapytania są automatycznie zatwierdzane (committed) czy nie.
@@ -116,15 +115,6 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 > [!primary]
 > Jeśli na Twojej stronie pojawi się błąd wskazujący **"Too many connections"**, jest to spowodowane przekroczeniem liczby jednoczesnych połączeń do Twojej bazy danych.
 > Możesz następnie zwiększyć zmienną **"MaxConnections"**, jeśli nie ma już maksymalnej wartości.
->
-
-> [!primary]
->
-> <b>Tmpdir</b>:
->
-> - /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
->
-> - /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
 >
 
 > [!primary]

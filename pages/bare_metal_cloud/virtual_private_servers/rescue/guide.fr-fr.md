@@ -1,7 +1,7 @@
 ---
 title: Activer et utiliser le mode rescue sur un VPS
 excerpt: Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre VPS et effectuer des vérifications système
-updated: 2025-03-27
+updated: 2025-01-12
 ---
 
 ## Objectif
@@ -53,6 +53,10 @@ Une fois le redémarrage initié, une barre de progression vous indiquera la dur
 > [!primary]
 >
 > Vous recevrez un e-mail automatique contenant les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de poursuivre toute action. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
+>
+
+> [!warning]
+> Veuillez noter que si vous n'êtes plus le contact technique du serveur, vous ne recevrez pas l'e-mail. Pour plus d'informations, consultez notre guide : « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 >
 
 Vous devrez ensuite [accéder à votre serveur via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), en utilisant le mot de passe temporaire généré pour le mode rescue.

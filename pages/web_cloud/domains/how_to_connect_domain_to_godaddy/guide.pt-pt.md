@@ -1,14 +1,14 @@
 ---
-title: Como ligar um domínio OVHcloud a um alojamento GoDaddy
-excerpt: Prepare e configure a zona DNS do seu domínio OVHcloud para a ligar a um alojamento GoDaddy
-updated: 2024-06-13
+title: Como ligar um nome de domínio OVHcloud a um alojamento GoDaddy
+excerpt: Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento GoDaddy
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Se possui um nome de domínio na OVHcloud, deseja ligá-lo a um alojamento GoDaddy. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento GoDaddy.
+É titular de um nome de domínio na OVHcloud e pretende ligá-lo a um alojamento da GoDaddy. Neste guia, encontrará as etapas de preparação e de configuração da sua zona DNS da OVHcloud para permitir a configuração do seu alojamento GoDaddy.
 
-**Saiba como ligar o seu domínio OVHcloud a um alojamento GoDaddy**
+**Saiba como ligar o seu nome de domínio OVHcloud a um alojamento GoDaddy**
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Antes de seguir as duas etapas deste manual, deve familiarizar-se com a configur
 
 > [!warning]
 >
-> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento GoDaddy. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu domínio durante a configuração.
+> A sua zona DNS já se encontra potencialmente pré-configurada ou associada a um alojamento. Vamos ver como identificar cada registo DNS necessário para estabelecer a ligação com o seu alojamento GoDaddy. Alguns terão de ser eliminados para evitar entrar em conflito com os registos DNS requeridos nesta configuração. Outros serão simplesmente modificados ou criados. Para uma melhor compreensão, utilizaremos o nome de domínio "**mydomain.ovh**" como exemplo. Substitua-o pelo seu nome de domínio durante a configuração.
 
 ### 1. Configurar o seu alojamento GoDaddy
 
@@ -48,7 +48,7 @@ Quando utiliza um alojamento GoDaddy com um nome de domínio OVHcloud, deve prim
 > - Siga as instruções até ao passo 10 e recupere as informações específicas ao seu website para poder modificar os seus registos DNS da OVHcloud.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS da OVHcloud.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o nome de domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -97,19 +97,19 @@ A zona DNS está configurada para fazer a ligação a um alojamento GoDaddy.
 
 > [!primary]
 >
-> A verificação do seu domínio pode levar até 48 horas.
+> A verificação do seu nome de domínio pode levar até 48 horas.
 
 Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), deverá também preparar a sua zona DNS em conformidade. Consulte o nosso manual sobre a [configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
-[Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
+[Criar uma zona DNS da OVHcloud para um nome de domínio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para alterar a gestão do seu domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
+Para alterar a gestão do seu nome de domínio para outra conta de cliente OVHcloud, siga o guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

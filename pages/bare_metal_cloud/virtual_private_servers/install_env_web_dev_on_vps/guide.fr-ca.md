@@ -104,7 +104,7 @@ En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https:
 >> Sécurisez l'installation :
 >> 
 >> ```bash
->> sudo mysql_secure_installation
+>> sudo mariadb-secure-installation
 >> ```
 >> 
 >> Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois l'installation de MariaDB (ou MySQL) terminée, le message suivant doit s'afficher :

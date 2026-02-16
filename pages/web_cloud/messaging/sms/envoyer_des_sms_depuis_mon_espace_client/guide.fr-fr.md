@@ -1,7 +1,7 @@
 ---
 title: "Envoyer des SMS depuis l'espace client OVHcloud"
 excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Objectif
@@ -59,7 +59,11 @@ Une fois l'expéditeur sélectionné et vos destinataires renseignés, vous pouv
 
 Tapez votre message dans le cadre prévu à cet effet (1). Un compteur est présent à titre indicatif pour le nombre de caractères utilisés et le nombre de SMS correspondants (2).
 
-Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau "Extensions" comptent double. 
+> [!primary]
+>
+> Nous préconisons de ne pas dépasser 8 SMS par message. Au-delà, les opérateurs ne garantissent plus la délivrabilité du message.
+
+Les deux tableaux ci-dessous listent les caractères autorisés en encodage 7bit. Les caractères du tableau « **Extensions** » comptent double. 
 
 La taille maximum d’un SMS est de 160 caractères en encodage 7bit (norme GSM 03.38).
 

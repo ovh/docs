@@ -1,7 +1,7 @@
 ---
-title: "FAQ sobre los dominios y DNS"
+title: "FAQ sobre los nombres de dominio y DNS"
 excerpt: "Encuentre las principales preguntas formuladas sobre los nombres de dominio, los servidores DNS y las zonas DNS"
-updated: 2025-10-10
+updated: 2026-02-10
 ---
 
 <style>
@@ -31,7 +31,7 @@ Siga estos pasos:
 3. En la nueva página que aparece, nuestra interfaz le indicará si el nombre de dominio elegido está disponible para la compra o no. Si ya está reservado con la sintaxis que ingresó, modifíquelo y realice una nueva búsqueda de disponibilidad.
 4. Una vez que haya encontrado un nombre de dominio disponible, haga clic en el botón `Comprar`{.action}, luego en el botón `Continuar con el pedido`{.action} en la columna de la derecha.
 5. Seleccione las opciones o servicios adicionales a los que desea suscribirse junto con su nombre de dominio, luego haga clic en `Continuar`{.action} hasta que el proceso de compra le pida que se autentique o cree una cuenta de cliente OVHcloud.
-6. Una vez autenticado con su cuenta de cliente OVHcloud, podrá personalizar las informaciones de contacto (propietario/titular, administrador, técnico) para su nombre de dominio. Haga clic luego en el botón `Continuar`{.action} para acceder al resumen de su pedido.
+6. Una vez autenticado con su cuenta de cliente OVHcloud, podrá personalizar las informaciones de contacto (titular, administrador, técnico) para su nombre de dominio. Haga clic luego en el botón `Continuar`{.action} para acceder al resumen de su pedido.
 7. En la página `Resumen de su pedido` y si es necesario, podrá modificar la configuración DNS que se aplicará a su nombre de dominio haciendo clic en el enlace `Modificar la configuración`{.action}. Una vez que sus modificaciones estén terminadas, haga clic en el botón `Pagar`{.action} para acceder a la última etapa de su pedido.
 
 Pague su pedido para iniciar la reserva de su nombre de dominio así como la instalación de los servicios y opciones a los que se ha suscrito.
@@ -54,7 +54,7 @@ Siga estos pasos:
 3. En la nueva página que aparece, nuestra interfaz le indicará si el nombre de dominio elegido está disponible para la compra o no. Si ya está reservado con la sintaxis que ingresó, modifíquelo y realice una nueva búsqueda de disponibilidad.
 4. Una vez que haya encontrado un nombre de dominio disponible, haga clic en el botón `Comprar`{.action}, luego en el botón `Continuar con el pedido`{.action} en la columna de la derecha.
 5. Seleccione las opciones o servicios adicionales a los que desea suscribirse junto con su nombre de dominio, luego haga clic en `Continuar`{.action} hasta que el proceso de compra le pida que se autentique o cree una cuenta de cliente OVHcloud.
-6. Una vez autenticado con su cuenta de cliente OVHcloud, podrá personalizar las informaciones de contacto (propietario/titular, administrador, técnico) para su nombre de dominio. Haga clic luego en el botón `Continuar`{.action} para acceder al resumen de su pedido.
+6. Una vez autenticado con su cuenta de cliente OVHcloud, podrá personalizar las informaciones de contacto (titular, administrador, técnico) para su nombre de dominio. Haga clic luego en el botón `Continuar`{.action} para acceder al resumen de su pedido.
 7. En la página `Resumen de su pedido` y si es necesario, podrá modificar la configuración DNS que se aplicará a su nombre de dominio haciendo clic en el enlace `Modificar la configuración`{.action}. Una vez que sus modificaciones estén terminadas, haga clic en el botón `Pagar`{.action} para acceder a la última etapa de su pedido.
 
 Pague su pedido para iniciar la reserva de su nombre de dominio así como la instalación de los servicios y opciones a los que se ha suscrito.
@@ -64,7 +64,7 @@ Podrá administrar su nombre de dominio conectándose a su [área de cliente de 
 
 No dude en crear un ticket de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) si es necesario.
 
-///
+/// 
 
 ## Gestión de un nombre de dominio
 
@@ -146,7 +146,7 @@ Siga estos pasos:
 3. En la tabla que aparece, busque la línea correspondiente a su nombre de dominio, haga clic en el botón `...`{.action} a la derecha y luego en `Dar de baja mi servicio`{.action}.
 4. En la página que aparece, seleccione el modo de cancelación (inmediatamente o en la fecha de vencimiento del servicio) y haga clic en el botón `Sí, dar de baja`{.action} de abajo.
 
-Su nombre de dominio se suspenderá en la fecha de vencimiento y, a partir de esa fecha, se eliminará **definitivamente** dentro de un plazo máximo de 60 días. Este plazo está definido por la **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) para garantizar que un nombre de dominio se elimine por completo y esté nuevamente disponible para su registro por otro propietario/titular.
+Su nombre de dominio se suspenderá en la fecha de vencimiento y, a partir de esa fecha, se eliminará **definitivamente** dentro de un plazo máximo de 60 días. Este plazo está definido por la **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) para garantizar que un nombre de dominio se elimine por completo y esté nuevamente disponible para su registro por otro titular.
 
 > [!primary]
 >
@@ -154,15 +154,15 @@ Su nombre de dominio se suspenderá en la fecha de vencimiento y, a partir de es
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) ».
+> Encuentre todos los detalles en nuestra guía "[Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
 
 ///
 
 /// details | He recibido un correo electrónico sobre la validación de la información del titular asociada a mi nombre de dominio, ¿qué debo hacer?
 
-En primer lugar, si tiene dudas sobre la legitimidad del correo electrónico recibido, consulte nuestra guía « [Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing](/pages/account_and_service_management/account_information/phishing_care) ».
+En primer lugar, si tiene dudas sobre la legitimidad del correo electrónico recibido, consulte nuestra guía "[Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing](/pages/account_and_service_management/account_information/phishing_care)".
 
-De acuerdo con una directiva de la **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) del 01/09/2014, los registradores (por ejemplo: OVHcloud) deben verificar la validez de las coordenadas de los titulares/propietarios de nombres de dominio. OVHcloud envía un correo electrónico a los titulares/propietarios del nombre de dominio registrado a la dirección de correo electrónico de contacto declarada en OVHcloud.
+De acuerdo con una directiva de la **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) del 01/09/2014, los registradores (por ejemplo: OVHcloud) deben verificar la validez de las coordenadas de los titulares de nombres de dominio. OVHcloud envía un correo electrónico a los titulares del nombre de dominio registrado a la dirección de correo electrónico de contacto declarada en OVHcloud.
 
 Recibirá este correo electrónico cuando realice una de las siguientes acciones:
 
@@ -170,16 +170,16 @@ Recibirá este correo electrónico cuando realice una de las siguientes acciones
 - Transferencia de un nombre de dominio.
 - Modificación de las coordenadas asociadas a su nombre de dominio.
 
-Este correo electrónico contiene un enlace para verificar rápidamente sus coordenadas como propietario/titular legal del nombre de dominio.
+Este correo electrónico contiene un enlace para verificar rápidamente sus coordenadas como titular legal del nombre de dominio.
 
 Atención: Esta verificación debe realizarse dentro de un plazo de 15 días. Si no se realiza, el nombre de dominio se suspenderá técnicamente. Permanecerá contractualmente a su nombre, pero ya no será accesible en Internet. Los visitantes de su sitio web verán un mensaje de error.
 
 Puede recibir los siguientes correos electrónicos durante los primeros 15 días:
 
-- **Día 0**: Inmediatamente después de haber contratado el nombre de dominio o haber modificado sus coordenadas, usted (o la persona registrada como propietario/titular del nombre de dominio) recibirá el primer correo electrónico con un enlace de verificación.
+- **Día 0**: Inmediatamente después de haber contratado el nombre de dominio o haber modificado sus coordenadas, usted (o la persona registrada como titular del nombre de dominio) recibirá el primer correo electrónico con un enlace de verificación.
 - **Días 4, 9 y 13 (correos electrónicos de recordatorio)**: Si aún no ha verificado el nombre de dominio, recibirá nuevamente el correo electrónico.
 - **Día 14**: Si aún no ha verificado el nombre de dominio, se envía el correo electrónico una vez más. Además, se envía un correo electrónico a la dirección de correo electrónico del administrador/titular del nombre de dominio para informarle de que las coordenadas de este último no han sido confirmadas.
-- **Día 15**: Si el propietario/titular del nombre de dominio aún no ha respondido, enviamos un correo electrónico al administrador del nombre de dominio para informarle de la situación y de la desactivación del nombre de dominio.
+- **Día 15**: Si el titular del nombre de dominio aún no ha respondido, enviamos un correo electrónico al administrador del nombre de dominio para informarle de la situación y de la desactivación del nombre de dominio.
 
 Tras estos 15 días, el sistema enviará correos electrónicos adicionales (hasta 9 correos electrónicos) antes de eliminar su nombre de dominio. Esta eliminación se realizará 60 días después del día 0.
 
@@ -191,7 +191,7 @@ Tras estos 15 días, el sistema enviará correos electrónicos adicionales (hast
 
 /// details | No he recibido el correo electrónico de validación del titular asociado a mi nombre de dominio y este está suspendido, ¿qué debo hacer?
 
-Si no ha recibido el correo electrónico de validación del propietario de su nombre de dominio, verifique los siguientes puntos:
+Si no ha recibido el correo electrónico de validación del titular de su nombre de dominio, verifique los siguientes puntos:
 
 1. La dirección de correo electrónico declarada para el titular del nombre de dominio es válida y operativa.
 2. El correo electrónico de validación no se encuentra en la carpeta de spam.
@@ -208,7 +208,7 @@ En OVHcloud, es perfectamente posible contratar IDN y utilizarlos como un nombre
 
 Una vez contratados, los IDN aparecen en su [área de cliente de OVHcloud](/links/manager) en formato **xn--**.
 
-Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado) en su [área de cliente de OVHcloud](/links/manager), funcionará y se mostrará de forma completamente normal en otros lugares. La dirección de su sitio web se mostrará tal como la solicitó. Sus direcciones de correo electrónico también se mostrarán como desee a sus contactos.
+Aunque su nombre de dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado) en su [área de cliente de OVHcloud](/links/manager), funcionará y se mostrará de forma completamente normal en otros lugares. La dirección de su sitio web se mostrará tal como la solicitó. Sus direcciones de correo electrónico también se mostrarán como desee a sus contactos.
 
 > [!alert]
 >
@@ -220,7 +220,7 @@ Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.
 
 /// details | ¿Cómo corregir un nombre de dominio en formato IDN?
 
-Al igual que los nombres de dominio « clásicos », una vez que se contrata un nombre de dominio o un IDN, se registra a partir de los caracteres que le definiste al realizar la compra.
+Al igual que los nombres de dominio "clásicos", una vez que se contrata un nombre de dominio o un IDN, se registra a partir de los caracteres que le definiste al realizar la compra.
 
 Por lo tanto, si cometiste un error de escritura al realizar tu compra, no será posible corregirlo. Deberás contratar un nuevo nombre de dominio independientemente del anterior (siempre que la nueva ortografía deseada no esté ya reservada por otra persona).
 
@@ -228,7 +228,7 @@ Por lo tanto, si cometiste un error de escritura al realizar tu compra, no será
 
 /// details | ¿Cómo renovar un solo nombre de dominio incluido en un pack Alldom?
 
-Para ello, debe estar al menos declarado como [contacto « Facturación »](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio en cuestión. A continuación, deberá modificar el modo de renovación del nombre de dominio para pasarlo a **renovación automática**.
+Para ello, debe estar al menos declarado como [contacto "Facturación"](/pages/account_and_service_management/account_information/managing_contacts) del nombre de dominio en cuestión. A continuación, deberá modificar el modo de renovación del nombre de dominio para pasarlo a **renovación automática**.
 
 Para ello, siga estos pasos:
 
@@ -244,33 +244,33 @@ Para ello, siga estos pasos:
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Cómo renovar mis servicios OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
+> Encuentre todos los detalles en nuestra guía "[Cómo renovar mis servicios OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 ///
 
 ## Transferencia de un nombre de dominio
 
-/// details | ¿Es transferible mi nombre de dominio después de un cambio de propietario?
+/// details | ¿Es transferible mi nombre de dominio después de un cambio de titular?
 
-La **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha implementado medidas de seguridad para prevenir transferencias o cambios de propietarios no autorizados o abusivos de los nombres de dominio.
+La **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha implementado medidas de seguridad para prevenir transferencias o cambios de titulares no autorizados o abusivos de los nombres de dominio.
 
-La ICANN ha definido un plazo inamovible de **60** días entre cada operación que pueda realizarse sobre un nombre de dominio (creación, cambio de propietario, transferencia).
+La ICANN ha definido un plazo inamovible de **60** días entre cada operación que pueda realizarse sobre un nombre de dominio (creación, cambio de titular, transferencia).
 
 Las reglas establecidas por la ICANN deben respetarse obligatoriamente por los registradores (como OVHcloud).
 
-Por lo tanto, no tendrá otra opción que esperar hasta el final del plazo de 60 días para poder transferir su nombre de dominio después de haber cambiado su propietario.
+Por lo tanto, no tendrá otra opción que esperar hasta el final del plazo de 60 días para poder transferir su nombre de dominio después de haber cambiado su titular.
 
 ///
 
 /// details | Mi nombre de dominio está bloqueado contra la transferencia durante 60 días, ¿qué debo hacer?
 
-La **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha implementado medidas de seguridad para prevenir transferencias o cambios de propietarios no autorizados o abusivos de los nombres de dominio.
+La **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha implementado medidas de seguridad para prevenir transferencias o cambios de titulares no autorizados o abusivos de los nombres de dominio.
 
-La ICANN ha definido un plazo inamovible de **60** días entre cada operación que pueda realizarse sobre un nombre de dominio (creación, cambio de propietario, transferencia).
+La ICANN ha definido un plazo inamovible de **60** días entre cada operación que pueda realizarse sobre un nombre de dominio (creación, cambio de titular, transferencia).
 
 Las reglas establecidas por la ICANN deben respetarse obligatoriamente por los registradores (como OVHcloud).
 
-Por lo tanto, no tendrá otra opción que esperar hasta el final del plazo de 60 días para realizar una nueva operación (cambio de propietario o transferencia) sobre su nombre de dominio.
+Por lo tanto, no tendrá otra opción que esperar hasta el final del plazo de 60 días para realizar una nueva operación (cambio de titular o transferencia) sobre su nombre de dominio.
 
 ///
 
@@ -331,7 +331,7 @@ Si desea vender su nombre de dominio, puede agregarlo a estas plataformas. Una v
 
 /// details | ¿Qué es una zona DNS?
 
-La zona DNS de un nombre de dominio contiene una configuración aplicable a este último. Está compuesta por información técnica, llamada *registros DNS*. La zona DNS funciona como un centro de enrutamiento, dirigiendo el tráfico hacia los servicios asociados al dominio.
+La zona DNS de un nombre de dominio contiene una configuración aplicable a este último. Está compuesta por información técnica, llamada *registros DNS*. La zona DNS funciona como un centro de enrutamiento, dirigiendo el tráfico hacia los servicios asociados al nombre de dominio.
 
 Puede, por ejemplo, especificar:
 
@@ -343,7 +343,7 @@ Una zona DNS está alojada / registrada en **servidores DNS**. Estos **servidore
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
+> Encuentre todos los detalles en nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ///
 
@@ -358,7 +358,7 @@ Los registros DNS se utilizan, por ejemplo, para:
 Existen muchos tipos de registros DNS. Cada uno tiene un propósito específico en la resolución DNS. En OVHcloud, se distinguen en tres categorías:
 
 - **Campos de puntero**: `A`, `AAAA`, `NS`, `CNAME` y `DNAME`.
-- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` y `TLSA`.
+- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` y `HTTPS`.
 - **Campos de correo**: `MX`, `SPF`, `DKIM` y `DMARC`.
 
 > [!success]
@@ -368,11 +368,11 @@ Existen muchos tipos de registros DNS. Cada uno tiene un propósito específico 
 > - Información general:
 >     - [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 > - Registros DNS de puntero:
->     - [Añadir un registro DNS de tipo A a un dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
->     - [Añadir un registro DNS de tipo AAAA a un dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
->     - [Añadir un registro DNS de tipo CNAME a un dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
+>     - [Añadir un registro DNS de tipo A a un nombre de dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
+>     - [Añadir un registro DNS de tipo AAAA a un nombre de dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+>     - [Añadir un registro DNS de tipo CNAME a un nombre de dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
 > - Registros DNS extendidos:
->     - [Añadir un registro DNS de tipo TXT a un dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
+>     - [Añadir un registro DNS de tipo TXT a un nombre de dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
 > - Registros DNS de correo:
 >     - [Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)
 >     - [Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)
@@ -386,7 +386,7 @@ Existen muchos tipos de registros DNS. Cada uno tiene un propósito específico 
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Añadir un registro`{.action}.
 
 En este punto, visualizará todos los registros DNS que podrá agregar mediante el asistente de configuración de OVHcloud.
@@ -394,7 +394,7 @@ En este punto, visualizará todos los registros DNS que podrá agregar mediante 
 Gracias a este asistente de configuración, podrá añadir los siguientes tipos de registros DNS:
 
 - **Campos de puntero**: `A`, `AAAA`, `NS`, `CNAME` y `DNAME`.
-- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` y `TLSA`.
+- **Campos extendidos**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP`, `TLSA`, `RP`, `SVCB` y `HTTPS`.
 - **Campos de correo**: `MX`, `SPF`, `DKIM` y `DMARC`.
 
 > [!primary]
@@ -410,11 +410,11 @@ Gracias a este asistente de configuración, podrá añadir los siguientes tipos 
 > - Información general:
 >     - [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 > - Registros DNS de puntero:
->     - [Añadir un registro DNS de tipo A a un dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
->     - [Añadir un registro DNS de tipo AAAA a un dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
->     - [Añadir un registro DNS de tipo CNAME a un dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
+>     - [Añadir un registro DNS de tipo A a un nombre de dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
+>     - [Añadir un registro DNS de tipo AAAA a un nombre de dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+>     - [Añadir un registro DNS de tipo CNAME a un nombre de dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
 > - Registros DNS extendidos:
->     - [Añadir un registro DNS de tipo TXT a un dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
+>     - [Añadir un registro DNS de tipo TXT a un nombre de dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
 > - Registros DNS de correo:
 >     - [Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)
 >     - [Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)
@@ -437,9 +437,9 @@ Si desea modificar la configuración de los registros DNS de tipo NS de su nombr
 Para ello, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio deseado.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá modificar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -454,13 +454,13 @@ En caso de error, le invitamos a abrir una solicitud de asistencia desde el [cen
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
 
 /// details | ¿Cuál es la diferencia entre un registro DNS de tipo A (IPv4) y AAAA (IPv6)?
 
-La red Internet ha funcionado desde principios de los años 90 siguiendo el estándar IPv4. Este estándar permite proporcionar una dirección IP X.X.X.X (donde cada « X » es un número entre 0 y 255) a cada una de las máquinas conectadas a la red Internet (servidores, ordenadores, smartphones, tabletas, etc.). Sin embargo, este estándar limita a aproximadamente 4 mil millones el número de dispositivos conectados a la red Internet.
+La red Internet ha funcionado desde principios de los años 90 siguiendo el estándar IPv4. Este estándar permite proporcionar una dirección IP X.X.X.X (donde cada "X" es un número entre 0 y 255) a cada una de las máquinas conectadas a la red Internet (servidores, ordenadores, smartphones, tabletas, etc.). Sin embargo, este estándar limita a aproximadamente 4 mil millones el número de dispositivos conectados a la red Internet.
 
 Posteriormente, se introdujo el protocolo IPv6 para permitir conectar hasta 340 sextillones de dispositivos a la red Internet.
 
@@ -470,19 +470,19 @@ Los registros DNS de tipo A y AAAA son dos tipos de registros de recursos utiliz
 
 Sus principales diferencias residen en el tipo de dirección IP que utilizan:
 
-- **Registro A** (también llamado « registro de host »): Asocia un nombre de dominio a una dirección IPv4 (por ejemplo, 213.0.113.0). Las direcciones IPv4 son direcciones de 32 bits, generalmente escritas en notación decimal punteada.
-- **Registro AAAA** (también llamado « registro cuádruple A »): Asocia un nombre de dominio a una dirección IPv6 (por ejemplo, 2001:db8:1:1b00:213:0:113:0). Las direcciones IPv6 son direcciones de 128 bits, generalmente escritas en notación hexadecimal.
+- **Registro A** (también llamado "registro de host"): Asocia un nombre de dominio a una dirección IPv4 (por ejemplo, 213.0.113.0). Las direcciones IPv4 son direcciones de 32 bits, generalmente escritas en notación decimal punteada.
+- **Registro AAAA** (también llamado "registro cuádruple A"): Asocia un nombre de dominio a una dirección IPv6 (por ejemplo, 2001:db8:1:1b00:213:0:113:0). Las direcciones IPv6 son direcciones de 128 bits, generalmente escritas en notación hexadecimal.
 
 En otras palabras, los registros A se utilizan para direcciones IPv4, mientras que los registros AAAA se utilizan para direcciones IPv6. Ambos tipos de registros se utilizan para dirigir el tráfico a una dirección IP específica, pero se emplean para diferentes versiones del protocolo Internet.
 
-Es importante destacar que un dominio puede tener tanto registros A como AAAA, lo que le permite ser accesible en redes IPv4 e IPv6. Esto se conoce como « doble apilamiento », una práctica común para sitios web y servicios que desean ser accesibles para usuarios en redes IPv4 e IPv6.
+Es importante destacar que un nombre de dominio puede tener tanto registros A como AAAA, lo que le permite ser accesible en redes IPv4 e IPv6. Esto se conoce como "doble apilamiento", una práctica común para sitios web y servicios que desean ser accesibles para usuarios en redes IPv4 e IPv6.
 
 > [!success]
 >
 > Encuentre más detalles en las siguientes guías:
 >
-> - [Añadir un registro DNS de tipo A a un dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
-> - [Añadir un registro DNS de tipo AAAA a un dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
+> - [Añadir un registro DNS de tipo A a un nombre de dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
+> - [Añadir un registro DNS de tipo AAAA a un nombre de dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
 > - [Configure una dirección IPv6 para su sitio web](/pages/web_cloud/web_hosting/configure_ipv6)
 
 ///
@@ -495,7 +495,7 @@ Para configurar un registro reverse/PTR para una dirección IP externa, contacte
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records) ».
+> Encuentre todos los detalles en nuestra guía "[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)".
 
 ///
 
@@ -504,7 +504,7 @@ Para configurar un registro reverse/PTR para una dirección IP externa, contacte
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Modificar el TTL por defecto`{.action}.
 4. En la ventana que se abre, ajuste el valor bajo la etiqueta `TTL por defecto` según sus necesidades, luego haga clic en `Editar`{.action}.
 
@@ -544,20 +544,20 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 Aquí hay varias soluciones para verificar la configuración de una zona DNS:
 
-- **Una herramienta de verificación en línea**: Varios herramientas en línea permiten verificar la configuración de su zona DNS. Puede encontrarlas directamente mediante un navegador web (Chrome, Edge, Firefox, Safari, etc.) introduciendo las palabras clave adecuadas (por ejemplo: « verificar propagación DNS ») en un motor de búsqueda.
+- **Una herramienta de verificación en línea**: Varios herramientas en línea permiten verificar la configuración de su zona DNS. Puede encontrarlas directamente mediante un navegador web (Chrome, Edge, Firefox, Safari, etc.) introduciendo las palabras clave adecuadas (por ejemplo: "verificar propagación DNS") en un motor de búsqueda.
 
-- **El comando « dig »**: Si tiene acceso a un *terminal* desde un sistema operativo Linux o macOS, puede utilizar el comando `dig` para verificar la configuración de su zona DNS en la red DNS.
+- **El comando "dig"**: Si tiene acceso a un *terminal* desde un sistema operativo Linux o macOS, puede utilizar el comando `dig` para verificar la configuración de su zona DNS en la red DNS.
 
-- **El comando « nslookup »**: El comando `nslookup` está disponible en la mayoría de los sistemas operativos y también permite verificar la configuración de su zona DNS.
+- **El comando "nslookup"**: El comando `nslookup` está disponible en la mayoría de los sistemas operativos y también permite verificar la configuración de su zona DNS.
 
 - **Desde su área de cliente de OVHcloud**: Para ello, siga estos pasos (si la zona DNS activa de su nombre de dominio está gestionada en OVHcloud):
     1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-    2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+    2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
     3. En la tabla de la página que aparece, visualizará todos los registros DNS declarados para su nombre de dominio.
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -602,7 +602,7 @@ Este tiene la forma `YYYYMMDDRR` donde:
 Una vez recuperado el número de serie, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Editar en modo de texto`{.action}.
 4. En la ventana que se abre, identifique la segunda línea, que, siguiendo nuestro ejemplo, sería equivalente a esta: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 5. Compare el número de serie recuperado a través del terminal con el que se muestra en su área de cliente de OVHcloud.
@@ -625,7 +625,7 @@ Esto significa que:
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Ver el historial de mi zona DNS`{.action}.
 4. En la tabla de la página que aparece, identifique la línea correspondiente a la copia de seguridad de la zona DNS que desee, luego haga clic en el icono presente en la columna `Restaurar`{.action}. La configuración actual de la zona DNS será reemplazada por la copia de seguridad elegida.
 
@@ -635,7 +635,7 @@ Siga estos pasos:
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history) ».
+> Encuentre todos los detalles en nuestra guía "[Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
 
@@ -644,13 +644,13 @@ Siga estos pasos:
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Ver el historial de mi zona DNS`{.action}.
 4. En la tabla de la página que aparece, identifique la línea correspondiente a la copia de seguridad de la zona DNS que desee, luego haga clic en el icono presente en la columna `Descargar`{.action}. La copia de la zona DNS será descargada en formato *.txt*.
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history) ».
+> Encuentre todos los detalles en nuestra guía "[Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)".
 
 ///
 
@@ -684,7 +684,7 @@ Una vez que tenga los 2 servidores DNS, declarelos mediante dos registros de tip
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Añadir un registro`{.action}, luego seleccione el tipo de registro DNS de tipo `NS`{.action} para declarar un servidor DNS.
 4. En la ventana que se abre, indique el subdominio correspondiente en el campo `Subdominio *`{.action} (por ejemplo, escriba **únicamente** *www* si su nombre de dominio es *domain.tld* y su subdominio completo es *www.domain.tld*). En el campo `Destino *`{.action}, indique **únicamente** uno de los 2 servidores DNS.
 5. Haga clic en `Siguiente`{.action}, luego en `Aceptar`{.action}.
@@ -703,7 +703,7 @@ Deberá declarar los 2 servidores DNS para su subdominio directamente ante el pr
 >
 > Encuentre más detalles en las siguientes guías:
 >
-> - [Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+> - [Crear una zona DNS de OVHcloud para un nombre de dominio](/pages/web_cloud/domains/dns_zone_create)
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
@@ -713,7 +713,7 @@ Deberá declarar los 2 servidores DNS para su subdominio directamente ante el pr
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Añadir un registro`{.action}, luego seleccione el tipo de registro DNS de tipo `A`{.action} para una IPv4 (por ejemplo: `203.0.113.0`) o de tipo `AAAA`{.action} para una IPv6 (por ejemplo: `2001:db8:1:1b00:203:0:113:0`).
 4. En la ventana que se abre y en el campo de entrada titulado `Subdominio *`{.action}, indique el valor `*`. El asterisco `*` representará todos los subdominios (por ejemplo: `www.domain.tld` o `ovhcloud.domain.tld`) de su nombre de dominio. Complete el campo `Destino *`{.action} con la dirección IP deseada.
 5. Haga clic en `Siguiente`{.action}, luego en `Aceptar`{.action}.
@@ -724,7 +724,7 @@ Siga estos pasos:
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -735,7 +735,7 @@ Es posible implementar un comodín en una zona DNS de OVHcloud.
 Para ello, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el nombre de dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Añadir un registro`{.action}, luego seleccione el tipo de registro DNS para el cual desea implementar un comodín.
 4. En la ventana que se abre y en el campo de entrada titulado `Subdominio *`{.action}, indique el valor `*`. El asterisco `*` representará todos los subdominios (por ejemplo: `www.domain.tld` o `ovhcloud.domain.tld`) de su nombre de dominio. Complete los demás campos con los valores deseados.
 5. Haga clic en `Siguiente`{.action}, luego en `Aceptar`{.action}.
@@ -746,7 +746,7 @@ Para ello, siga estos pasos:
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -769,7 +769,7 @@ Para restaurar su zona DNS, siga estos pasos:
 
 1. Descargue el archivo que contiene la zona DNS desde el correo electrónico recibido.
 2. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-3. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+3. Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
 4. Seleccione la pestaña `Zona DNS`{.action} una vez posicionado en el nombre de dominio correspondiente. **Si la zona DNS está inactiva, actívela desde esta pestaña.**
 5. A la derecha o debajo de la tabla, haga clic en `Editar en modo de texto`{.action}.
 6. En la ventana que se abre, reemplace todo el contenido que se muestra por la copia de la zona DNS eliminada. Haga clic después en `Siguiente`{.action}, y luego en `Aceptar`{.action}.
@@ -782,7 +782,7 @@ Para restaurar su zona DNS, siga estos pasos:
 >
 > Encuentre más detalles en las siguientes guías:
 >
-> - [Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+> - [Crear una zona DNS de OVHcloud para un nombre de dominio](/pages/web_cloud/domains/dns_zone_create)
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 > - [Gestionar el historial de una zona DNS](/pages/web_cloud/domains/dns_zone_history)
 
@@ -821,14 +821,14 @@ En esta situación y si no conoce este otro identificador de cliente, le invitam
 
 ///
 
-/// details | ¿Por qué no encuentro la pestaña « GLUE » en mi área de cliente de OVHcloud?
+/// details | ¿Por qué no encuentro la pestaña "GLUE" en mi área de cliente de OVHcloud?
 
 La funcionalidad no está disponible con todas las extensiones de nombres de dominio.
-Si la pestaña no aparece en su [área de cliente de OVHcloud](/links/manager), es porque la opción « GLUE » no está disponible para su nombre de dominio.
+Si la pestaña no aparece en su [área de cliente de OVHcloud](/links/manager), es porque la opción "GLUE" no está disponible para su nombre de dominio.
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Personalizar los servidores DNS de un dominio (Glue Records)](/pages/web_cloud/domains/glue_registry) ».
+> Encuentre todos los detalles en nuestra guía "[Personalizar los servidores DNS de un nombre de dominio (Glue Records)](/pages/web_cloud/domains/glue_registry)".
 
 ///
 
@@ -843,9 +843,9 @@ Si la pestaña no aparece en su [área de cliente de OVHcloud](/links/manager), 
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá modificar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -855,7 +855,7 @@ Podrá modificar los servidores DNS para su nombre de dominio en la página que 
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
 
@@ -864,9 +864,9 @@ Podrá modificar los servidores DNS para su nombre de dominio en la página que 
 Siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
-2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
+2. Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá personalizar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -876,7 +876,7 @@ Podrá personalizar los servidores DNS para su nombre de dominio en la página q
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
 
@@ -887,7 +887,7 @@ Siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla "servidores DNS". Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá reemplazar los servidores DNS para su nombre de dominio por los de OVHcloud en la página que aparece.
 
@@ -897,7 +897,7 @@ Podrá reemplazar los servidores DNS para su nombre de dominio por los de OVHclo
 
 > [!success]
 >
-> Encuentre todos los detalles en nuestra guía « [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
+> Encuentre todos los detalles en nuestra guía "[Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 ///
 
@@ -916,7 +916,7 @@ Si desea utilizar los servidores DNS de OVHcloud para su nombre de dominio, podr
 > Encuentre más detalles en las siguientes guías:
 >
 > - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
-> - [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+> - [Modificar los servidores DNS de un nombre de dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 ///
 

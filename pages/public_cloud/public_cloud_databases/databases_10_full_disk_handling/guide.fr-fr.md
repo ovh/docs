@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Databases - Comment gérer des situations de 'Full Disk' (EN)"
+title: "Gérer des situations de 'Full Disk' pour les bases de données Public Cloud (EN)"
 excerpt: Découvrez comment éviter, analyser et réparer un service Public Cloud Databases atteignant sa pleine capacité de disque
 updated: 2025-08-18
 ---
@@ -34,7 +34,6 @@ When the disk usage increases even more and reaches a critical level (depending 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
 - `Valkey` does not store any user data on disk. Thus, it will not fill up the underlying disk storage.
-- `Cassandra` turns to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes only for the Admin users.
 

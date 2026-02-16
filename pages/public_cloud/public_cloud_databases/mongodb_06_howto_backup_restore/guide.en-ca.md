@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Backups and Restores with the CLI
+title: Backup and restore a service with the CLI for Public Cloud Databases for MongoDB
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
 updated: 2022-07-27
 ---

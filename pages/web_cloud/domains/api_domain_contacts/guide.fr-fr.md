@@ -1,7 +1,7 @@
 ---
 title: "Gestion des contacts d'un nom de domaine"
-excerpt: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaines"
-updated: 2022-05-05
+excerpt: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaine"
+updated: 2026-02-10
 ---
 
 <!-- Rappel à mettre au début de chaque page -->
@@ -33,25 +33,25 @@ Il est important de comprendre les différences entre les _nichandles_ (Nic ou c
 
 Pour la majorité des extensions, il y a 3 contacts différents configurables chez le registre :
 
-- **Administrateur** : contact qui gère le domaine dans sa globalité (gestion du contact propriétaire, contact technique). Il est le principal interlocuteur du registrar.
-- **Technique** : contact qui gère la partie technique du domaine (gestion de la zone notamment).
-- **Propriétaire** : personne physique ou morale détentrice du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules). Il est celui qui est légalement responsable du domaine.
+- **Administrateur** : contact qui gère le nom de domaine dans sa globalité (gestion du contact titulaire, contact technique). Il est le principal interlocuteur du registrar.
+- **Technique** : contact qui gère la partie technique du nom de domaine (gestion de la zone notamment).
+- **Titulaire** : personne physique ou morale titulaire du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules). Il est celui qui est légalement responsable du nom de domaine.
 
 Par exemple, John contacte une agence web afin de créer son site web vitrine pour sa petite entreprise. Dans ce cas-là, l'agence web organisera les contacts de cette manière :
 
 - Administrateur : l'agence web
 - Technique : l'agence web
-- Propriétaire : John
+- Titulaire : John
 
 Il est très fréquent que le contact technique soit le même que le contact administrateur.
-Concernant le propriétaire, il est nécessaire que ce soit John. En cas de litige avec l'agence web, seul le fait d'être propriétaire du domaine aura une portée juridique et lui permettra la récupération du nom de domaine.
+Concernant le titulaire, il est nécessaire que ce soit John. En cas de litige avec l'agence web, seul le fait d'être titulaire du nom de domaine aura une portée juridique et lui permettra la récupération du nom de domaine.
 
 ### Nichandle OVHcloud
 
 Le nichandle OVHcloud représente le compte OVHcloud grâce auquel il est possible de se connecter au site OVHcloud et à l'API.
-Sur un service OVHcloud (domaine, DNS, serveur, autre...), il est possible d'affecter un nichandle en tant que :
+Sur un service OVHcloud (nom de domaine, DNS, serveur, autre...), il est possible d'affecter un nichandle en tant que :
 
-- **Nic admin** : administrateur du domaine, il peut exécuter toutes les actions possibles sur un service
+- **Nic admin** : administrateur du nom de domaine, il peut exécuter toutes les actions possibles sur un service
 - **Nic tech** : désigné par le Nic admin pour un service, il peut modifier certaines données techniques du service
 - **Nic facturation** : responsable du paiement (facturation) du service.
 
@@ -70,9 +70,9 @@ L'inverse n'est cependant pas vrai. Une modification du contact administrateur o
 
 Le nichandle facturation n'est pas utilisé côté registre/Whois. Il n'est utile qu'à la facturation du service OVHcloud représentant le nom de domaine.
 
-#### Contact propriétaire
+#### Contact titulaire
 
-Aucun nichandle ne représente le contact propriétaire registre/Whois.
+Aucun nichandle ne représente le contact titulaire registre/Whois.
 Il n'est pas possible de l'utiliser pour se connecter à l'API ou au site OVHcloud.
 
 Celui-ci est représenté dans l'API par une autre entité, l'objet `domain.Contact`.
@@ -136,9 +136,9 @@ Les APIs suivantes permettent de suivre le traitement de cette tâche, ou de lui
 > @api {v1} /me POST /me/task/contactChange/{id}/refuse
 > @api {v1} /me POST /me/task/contactChange/{id}/resendEmail
 
-## Gestion du contact propriétaire
+## Gestion du contact titulaire
 
-Le contact propriétaire est représenté et géré à la fois par les routes `/me/contact` et `/domain/contacts`.
+Le contact titulaire est représenté et géré à la fois par les routes `/me/contact` et `/domain/contacts`.
 Pour une utilisation des contacts dans un contexte de noms de domaine, nous vous recommandons fortement l'utilisation exclusive des APIs `/domain/contacts`.
 
 > [!primary]
@@ -147,7 +147,7 @@ Pour une utilisation des contacts dans un contexte de noms de domaine, nous vous
 > Historiquement, toutes les actions étaient faisables via `/me/contact`. Cependant, certaines règles métiers liées uniquement aux noms de domaine nous ont contraints à déployer de nouvelles APIs spécifiques sous `/domain/contact`.
 > Celles-ci représentent une surcouche aux APIs `/me/contact` et nous permettent d'ajouter des champs supplémentaires nécessaires à certaines extensions.
 
-Lors de la commande d'un nom de domaine, un **nouveau contact propriétaire** est créé à partir des informations fournies, afin de toujours avoir un **identifiant unique** par domaine.
+Lors de la commande d'un nom de domaine, un **nouveau contact titulaire** est créé à partir des informations fournies, afin de toujours avoir un **identifiant unique** par domaine.
 Cela facilite les mises à jour ultérieures et évite d'impacter un nom de domaine sans le vouloir.
 
 ### Gestion d'un contact
@@ -167,52 +167,52 @@ Les APIs suivantes vous permettent de gérer vos contacts.
 
 > [!primary]
 >
-> Certains champs étant en lecture seule, une procédure de changement de contact propriétaire sera parfois requise pour les changer.
+> Certains champs étant en lecture seule, une procédure de changement de contact titulaire sera parfois requise pour les changer.
 
-### Changement de contact propriétaire
+### Changement de contact titulaire
 
-La décision d'un changement de propriétaire dépend de deux critères.
+La décision d'un changement de titulaire dépend de deux critères.
 
 - L'extension est régie par les règles de l'ICANN (gTLDs et NewgTLDs) ou par l'administration d'un pays comme pour les ccTLDs.
-- Le statut légal du propriétaire (individu, entreprise, …).
+- Le statut légal du titulaire (individu, entreprise, …).
 
-La situation la plus simple est celle des extensions régies par l'ICANN. Cette dernière considère l'une des modifications suivantes comme étant un changement de propriétaire :
+La situation la plus simple est celle des extensions régies par l'ICANN. Cette dernière considère l'une des modifications suivantes comme étant un changement de titulaire :
 
 - le nom/prénom pour une personne physique ou le nom de l'entreprise/association pour une personne morale ;
 - l'adresse e-mail.
 
-Ces champs sont en conséquence en lecture seule si le contact est attaché à au moins un nom de domaine. Le changement de propriétaire est gratuit sur ce type d'extensions.
+Ces champs sont en conséquence en lecture seule si le contact est attaché à au moins un nom de domaine. Le changement de titulaire est gratuit sur ce type d'extensions.
 
-Pour le reste des extensions, l'API des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules) vous permet de connaître le statut de chaque champ. Pour des raisons d'homogénéité, nous considérons un changement d'adresse e-mail comme un changement de propriétaire.
+Pour le reste des extensions, l'API des [règles d'éligibilité](/pages/web_cloud/domains/api_domain_rules) vous permet de connaître le statut de chaque champ. Pour des raisons d'homogénéité, nous considérons un changement d'adresse e-mail comme un changement de titulaire.
 
 > [!primary]
 >
-> Selon l'extension (et les règles registre), un changement de propriétaire peut avoir plusieurs conséquences sur un nom de domaine.
-> Par exemple dans certains cas, le changement de propriétaire entraîne automatiquement un renouvellement d'1 an, rendant ce changement payant.
+> Selon l'extension (et les règles registre), un changement de titulaire peut avoir plusieurs conséquences sur un nom de domaine.
+> Par exemple dans certains cas, le changement de titulaire entraîne automatiquement un renouvellement d'1 an, rendant ce changement payant.
 > D'autres vont nécessiter une procédure de vérification manuelle.
 
-Pour garder un comportement le plus homogène possible sur l'API OVHcloud, nous avons choisi de représenter le changement de propriétaire sous la forme d'une commande.
+Pour garder un comportement le plus homogène possible sur l'API OVHcloud, nous avons choisi de représenter le changement de titulaire sous la forme d'une commande.
 Dans la très grande majorité des cas, celle-ci sera gratuite.  Elle nous permet d'avoir un processus d'initialisation identique à toutes les extensions.
 
 Ce processus se matérialise par deux étapes principales.
 
-1. Commande du changement de propriétaire
+1. Commande du changement de titulaire
     1. Identification du prix
     2. Création du panier
-    3. Ajout de l'action de changement de propriétaire dans le panier
-    4. Création et ajout du contact propriétaire
+    3. Ajout de l'action de changement de titulaire dans le panier
+    4. Création et ajout du contact titulaire
     5. Validation et paiement de la commande
-2. Exécution du changement de propriétaire
+2. Exécution du changement de titulaire
     1. Création de la tâche de `DomainTrade`
-    2. Envoi d'e-mails à l'ancien et au nouveau propriétaire
+    2. Envoi d'e-mails à l'ancien et au nouveau titulaire
     3. Réception des tokens de validation
     4. Changement auprès du registre et du Whois
 
-#### Commande du changement de propriétaire
+#### Commande du changement de titulaire
 
 Les étapes suivantes sont décrites plus en détails dans la documentation portant sur la [commande de nom de domaine](/pages/web_cloud/domains/api_domain_order).
 
-##### Étape 1 : Récupération des informations du changement de propriétaire
+##### Étape 1 : Récupération des informations du changement de titulaire
 
 > [!api]
 >
@@ -261,10 +261,10 @@ Les étapes suivantes sont décrites plus en détails dans la documentation port
 
 Les éléments à retenir du retour de cette API sont :
 
-- `prices` : prix du changement de propriétaire
-- `family` : la valeur `"trade"` indique qu'il s'agit d'un changement de propriétaire
-- `planCode` : plan commercial du changement de propriétaire, égal à `"$extension-trade"`
-- `pricingMode` : sous-plan commercial du changement de propriétaire
+- `prices` : prix du changement de titulaire
+- `family` : la valeur `"trade"` indique qu'il s'agit d'un changement de titulaire
+- `planCode` : plan commercial du changement de titulaire, égal à `"$extension-trade"`
+- `pricingMode` : sous-plan commercial du changement de titulaire
 
 ##### Étape 2 : Création du panier et ajout du produit dans le panier
 
@@ -274,7 +274,7 @@ Création du panier :
 >
 > @api {v1} /order POST /order/cart
 
-Ajout du changement de propriétaire dans le panier :
+Ajout du changement de titulaire dans le panier :
 
 > [!api]
 >
@@ -284,10 +284,10 @@ Ajout du changement de propriétaire dans le panier :
 | ---------------- | ----------------------------------------------------------- |
 | `serviceName`    | Nom de domaine                                              |
 | `cartId`         | Identifiant du panier                                       |
-| `duration`       | Durée, toujours **P0Y** pour un changement de propriétaire  |
+| `duration`       | Durée, toujours **P0Y** pour un changement de titulaire  |
 | `planCode`       | Code récupéré via le GET à l'étape 1 (`"$extension-trade"`) |
 | `pricingMode`    | Pricing mode récupéré via le GET                            |
-| `quantity`       | Quantité, toujours **1** pour un changement de propriétaire |
+| `quantity`       | Quantité, toujours **1** pour un changement de titulaire |
 
 ##### Étape 3 : Ajout des configurations requises
 
@@ -357,7 +357,7 @@ Cette étape est sans doute la plus importante du processus de commande et se fa
 
 Elle permet de récupérer le bon de commande dans sa forme finale sans le générer (c'est un "dry-run").
 
-Cet appel permet également de vérifier que les règles d'éligibilité du propriétaire sont respectées.
+Cet appel permet également de vérifier que les règles d'éligibilité du titulaire sont respectées.
 
 ##### Étape 5 : Validation de la commande
 
@@ -370,9 +370,9 @@ Cet appel permet également de vérifier que les règles d'éligibilité du prop
 | `autoPayWithPreferredPaymentMethod` | oui         | ""     | Permet de payer automatiquement le bon de commande avec le moyen de paiement par défaut du Nic |
 | `waiveRetractationPeriod`           | oui         | ""     | Obligatoire pour un nom de domaine. Il représente la renonciation au droit de rétractation     |
 
-#### Exécution du changement de propriétaire
+#### Exécution du changement de titulaire
 
-Une fois le bon de commande validé et payé, un traitement interne est effectué jusqu'à l'apparition d'une tâche de changement de propriétaire nommée `DomainTrade`.
+Une fois le bon de commande validé et payé, un traitement interne est effectué jusqu'à l'apparition d'une tâche de changement de titulaire nommée `DomainTrade`.
 Celle-ci peut alors être retrouvée via l'API suivante :
 
 > [!api]
@@ -381,7 +381,7 @@ Celle-ci peut alors être retrouvée via l'API suivante :
 
 Plus de détails sur la gestion des tâches peuvent être trouvés [sur cette page](/pages/web_cloud/domains/api_domain_tasks).
 
-La tâche de `DomainTrade` se charge d'envoyer un e-mail à l'ancien et au nouveau propriétaire pour valider la suite de la procédure.
+La tâche de `DomainTrade` se charge d'envoyer un e-mail à l'ancien et au nouveau titulaire pour valider la suite de la procédure.
 Ces e-mails contiennent un lien de validation (sécurisé via un token privé).
 
-Une fois ces tokens validés, la tâche peut alors exécuter le changement de propriétaire et mettre à jour le registre et/ou le Whois avec les informations du nouveau propriétaire.
+Une fois ces tokens validés, la tâche peut alors exécuter le changement de titulaire et mettre à jour le registre et/ou le Whois avec les informations du nouveau titulaire.

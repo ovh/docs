@@ -1,35 +1,48 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico mediante ActiveSync en Outlook para Windows"
 excerpt: "Cómo configurar una cuenta de correo electrónico de Zimbra Pro en Outlook para Windows mediante el protocolo ActiveSync"
-updated: 2025-07-03
+updated: 2025-12-31
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-600 {
+  max-width:600px !important;
+}
 .h-500 {
-  max-height:500px !important;
+  max-width:500px !important;
 }
 </style>
 
 ## Objetivo
 
-> [!primary]
-> Esta guía se dirige a los clientes que dispongan de una solución de correo [Zimbra Pro](/links/web/emails-zimbra). Este servicio estará disponible en beta desde julio de 2025.
-
 Las cuentas Zimbra Pro pueden configurarse en Windows utilizando el protocolo ActiveSync, esto le permite configurar el conjunto de funcionalidades colaborativas de su dirección de correo en una sola vez. La aplicación Outlook para Windows permite consultar su cuenta de correo Zimbra Pro a través del protocolo ActiveSync.
 
 **Aprenda a configurar su cuenta Zimbra Pro en Outlook para Windows mediante el protocolo ActiveSync.**
-
-> [!warning]
->
-> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
->
-> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 
 - Disponer de una dirección de correo electrónico [Zimbra Pro](/links/web/emails-zimbra).
 - Tener la [versión clásica de Outlook](https://support.microsoft.com/es-es/office/instalar-o-reinstalar-la-versi%C3%B3n-cl%C3%A1sica-de-outlook-en-un-equipo-pc-con-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) en Windows.
 - Disponer del nombre de usuario y la contraseña de la dirección de correo electrónico que quiera configurar.
+
+/// details | Información relativa a la gestión y configuración de los servicios de OVHcloud
+
+OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
+
+Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
+
+///
 
 ## Procedimiento
 
@@ -41,11 +54,11 @@ Las cuentas Zimbra Pro pueden configurarse en Windows utilizando el protocolo Ac
 >
 > Una vez finalizada la instalación, para distinguir entre las dos versiones una vez instaladas, escriba "Outlook" en la barra de búsqueda de Windows. Podrá ver la diferencia como se muestra a continuación.
 >
->![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
 ### Añadir la cuenta <a name="add-account"></a>
 
-Para añadir una cuenta Zimbra Pro en Outlook clásico, siga los pasos que se indican a continuación, haciendo clic en las siguientes **7** fichas:
+Para añadir una cuenta Zimbra Pro en Outlook clásico, siga los pasos que se indican a continuación pulsando sucesivamente en las pestañas que aparecen a continuación:
 
 > [!tabs]
 > **Paso 1**

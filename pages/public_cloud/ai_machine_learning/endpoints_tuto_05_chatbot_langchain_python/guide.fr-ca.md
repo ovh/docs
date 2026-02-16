@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Développer un chatbot en Python avec LangChain (EN)
 excerpt: Apprenez à développer un chatbot en Python en utilisant LangChain et AI Endpoints
-updated: 2025-04-28
+updated: 2025-12-19
 ---
 
 > [!primary]
@@ -45,16 +45,11 @@ In order to use AI Endpoints APIs easily, create a `.env` file to store environm
 
 ```bash
 _OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
-_OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3
-_OVH_AI_ENDPOINTS_MODEL_URL=https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
+_OVH_AI_ENDPOINTS_MODEL_NAME=Mistral-7B-Instruct-v0.3 # (or any other model you want to use)
+_OVH_AI_ENDPOINTS_URL=https://oai.endpoints.kepler.ai.cloud.ovh.net/v1
 ```
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
-
-You will also have to set two other environments variables, related to the model you want to use. You can find these model-specific values in the `documentation` tab of each model. For example, if you want to add the `Mistral-7B-Instruct-v0.3` model, the expected environment variables will be:
-
-- `OVH_AI_ENDPOINTS_MODEL_NAME`: Mistral-7B-Instruct-v0.3
-- `OVH_AI_ENDPOINTS_MODEL_URL`: https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
 
 Then, create a `requirements.txt` file with the following libraries:
 
@@ -87,7 +82,7 @@ load_dotenv()
 ## Set the OVHcloud AI Endpoints token to use models
 _OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN') 
 _OVH_AI_ENDPOINTS_MODEL_NAME = os.environ.get('OVH_AI_ENDPOINTS_MODEL_NAME') 
-_OVH_AI_ENDPOINTS_MODEL_URL = os.environ.get('OVH_AI_ENDPOINTS_MODEL_URL') 
+_OVH_AI_ENDPOINTS_URL = os.environ.get('OVH_AI_ENDPOINTS_URL') 
 
 # Function in charge to call the LLM model.
 # Question parameter is the user's question.
@@ -96,7 +91,7 @@ def chat_completion(question: str):
   # no need to use a token
   model = ChatMistralAI(model=_OVH_AI_ENDPOINTS_MODEL_NAME, 
                         api_key=_OVH_AI_ENDPOINTS_ACCESS_TOKEN,
-                        endpoint=_OVH_AI_ENDPOINTS_MODEL_URL, 
+                        endpoint=_OVH_AI_ENDPOINTS_URL, 
                         max_tokens=1500)
 
   prompt = ChatPromptTemplate.from_messages([
@@ -158,7 +153,7 @@ load_dotenv()
 ## Set the OVHcloud AI Endpoints token to use models
 _OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN') 
 _OVH_AI_ENDPOINTS_MODEL_NAME = os.environ.get('OVH_AI_ENDPOINTS_MODEL_NAME') 
-_OVH_AI_ENDPOINTS_MODEL_URL = os.environ.get('OVH_AI_ENDPOINTS_MODEL_URL') 
+_OVH_AI_ENDPOINTS_URL = os.environ.get('OVH_AI_ENDPOINTS_URL') 
 
 
 # Function in charge to call the LLM model.
@@ -168,7 +163,7 @@ def chat_completion(new_message: str):
   # no need to use a token
   model = ChatMistralAI(model=_OVH_AI_ENDPOINTS_MODEL_NAME, 
                         api_key=_OVH_AI_ENDPOINTS_ACCESS_TOKEN,
-                        endpoint=_OVH_AI_ENDPOINTS_MODEL_URL, 
+                        endpoint=_OVH_AI_ENDPOINTS_URL, 
                         max_tokens=1500, 
                         streaming=True)
 

@@ -1,12 +1,8 @@
 ---
 title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
 excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
-updated: 2025-04-28
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -25,7 +21,7 @@ Sobald das Sytem eine IP-Adresse wegen SPAM sperrt, wird eine E-Mail mit entspre
 > 
 > Guten Tag,
 >
-> Unser Antispam-Schutz hat einen massiven Spam-Versand von einer Ihrer IPs erkannt:
+> Unser Antispam-Schutz hat einen massiven Spam-Versand von einer Ihrer IP-Adressen erkannt:
 122.122.122.122
 >
 > Um die Sicherheit unseres Netzwerks zu gewährleisten wurde der ausgehende Traffic vom Port 25 Ihres Server gesperrt.
@@ -68,19 +64,19 @@ Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie 
 
 Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein, öffnen Sie das Menü `Network`{.action} in der linken Seitenleiste und klicken Sie auf `Öffentliche IP-Adressen`{.action}.
 
-Klicken Sie im gelben Hinweisfeld auf den Drop-down-Pfeil `Alle Benachrichtigungen anzeigen`{.action}, um alle Alarme bezüglich Ihrer IP-Adresse(n) anzuzeigen.
+Sie können das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden, um Ihre Dienste nach Kategorie zu filtern, oder direkt die gewünschte IP-Adresse in die Suchleiste eingeben.
 
-Wenn eine Ihrer IP-Adressen von einem Alarm betroffen ist, werden die Informationen direkt unterhalb angezeigt:
+Wenn Sie eine Warnung für eine Ihrer IP-Adressen haben, wird in der Spalte **IP-Warnung** ein roter Status-Icon angezeigt.
 
-![Spam-Alarm](images/alertblockedip.png){.thumbnail}
+![Spam-Alarm](images/blockedIP_new.png){.thumbnail}
 
-Im Bereich "Meine öffentlichen IP-Adressen und dazugehörigen Dienste" klicken Sie auf den Button `...`{.action} neben der IP oder dem entsprechenden Dienst und wählen Sie `Antispam`{.action}.
+Klicken Sie auf den Button `⁝`{.action} neben der entsprechenden IP/Dienst und wählen Sie `Entsperrung Spamschutz`{.action}.
 
-![antispam](images/antispam.png){.thumbnail}
+![antispam](images/antispam_new.png){.thumbnail}
 
-Klicken Sie im neuen Tab unten auf `Antispam-Sperrung aufheben`{.action} und bestätigen Sie.
+Klicken Sie im angezeigten Fenster auf `IP entsperren`{.action} unten und bestätigen Sie.
 
-![IP entsperren](images/unblockip.png){.thumbnail}
+![IP entsperren](images/unblockip_new.png){.thumbnail}
 
 Die IP wird nun entsperrt. Die Operation kann einige Minuten in Anspruch nehmen.
 
@@ -90,7 +86,7 @@ Sobald die Bearbeitung abgeschlossen ist, wird Ihre IP entsperrt.
 
 Verbinden Sie sich mit dem [API-Interface von OVHcloud](/links/api) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud API finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](/pages/manage_and_operate/api/first-steps)".
 
-Rufen Sie zunächst die Liste der IPs jedes OVHcloud Dienstes ab (Hosted Private Cloud / VPS / Public Cloud / Dedicated Server):
+Rufen Sie zunächst die Liste der IP-Adressen jedes OVHcloud Dienstes ab (Hosted Private Cloud / VPS / Public Cloud / Dedicated Server):
 
 > [!api]
 >
@@ -179,8 +175,8 @@ Hier ein Beispiel:
 ##### **IP entsperren** <a name="unblockip"></a>
 
 > [!alert]
-> WICHTIG!
-Entsperren Sie die IP unter keinen Umständen, bevor Sie den Versand von E-Mails von Ihrem Server aus unterbrochen und Ihre Warteschlange für E-Mails geleert haben. Andernfalls erfolgt unmittelbar eine weitere Sperre für einen längeren Zeitraum.
+>
+> Entsperren Sie die IP unter keinen Umständen, bevor Sie den Versand von E-Mails von Ihrem Server aus unterbrochen und Ihre Warteschlange für E-Mails geleert haben. Andernfalls erfolgt unmittelbar eine weitere Sperre für einen längeren Zeitraum.
 >
 
 Um Ihre IP-Adresse zu entsperren, verwenden Sie folgenden Aufruf:
@@ -212,8 +208,77 @@ Die IP-Adresse wird nun entsperrt. Es kann einige Minuten dauern, bis die Operat
 
 ### False Positives
 
-In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) und den [*Best Practices* (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) entsprechen.
+### Bei falsch positiven Ergebnissen
+
+In einigen Fällen kann die Anti-Spam-Benachrichtigung ein falsch positives Ergebnis sein. Wenn Sie überprüft haben und festgestellt haben, dass die **Message-ID** von einer legitimen E-Mail stammt, müssen Sie sicherstellen, dass Ihre E-Mails den [RFC](#rfc) und den unten genannten [Best Practices](#bestpractices) entsprechen.
+
+#### RFC <a name="rfc"></a>
+
+RFCs (Request For Comments) sind Dokumente, die dazu dienen, technische Aspekte des Internets zu beschreiben. Sie werden von der IETF (Internet Engineering Task Force) produziert und veröffentlicht, einer Gruppe, die im Wesentlichen Standards erzeugt und definiert.
+Weitere Informationen finden Sie unter: [RFC](https://en.wikipedia.org/wiki/Request_for_Comments), [IETF](https://www.ietf.org/) und [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft).
+
+#### Best Practices <a name="bestpractices"></a>
+
+Best Practices sind empfohlene Methoden, die oft auf RFC-Dokumenten basieren und Ihnen dabei helfen, die beste Vorgehensweise zu wählen. In diesem Fall bedeutet das, die grundlegenden Regeln einzuhalten, damit Ihre E-Mails nicht als Spam markiert werden.
+
+**E-Mail-Volumen**
+
+Wenn Ihr E-Mail-Volumen sehr hoch ist, empfehlen wir Ihnen:
+
+- Eine IP-Adresse zu reservieren, die ausschließlich für E-Mail-Nutzung vorgesehen ist.
+- Eine Abuse-Adresse auf diesem Block bereitzustellen, um Beschwerden zu erhalten.
+- [Reverse-Auflösung](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configure-the-reverse-ip) auf allen IP-Adressen korrekt zu konfigurieren.
+
+Diese Maßnahme ermöglicht es Ihnen, Ruf der IP und von Domainnamen zu isolieren, falls Sie E-Mails von verschiedenen Domains senden, Beschwerden zu erhalten und somit notwendige Maßnahmen zu ergreifen, um von verschiedenen Organisationen freigeschaltet zu werden. Sie ermöglicht es Ihnen auch, Probleme schneller zu lokalisieren, da E-Mails von Formularen, die den Domainnamen X oder Y verwenden, nicht von der gleichen IP gesendet werden und nicht den gleichen Reverse haben.
+
+**E-Mail-Inhalt**
+
+- Vermeiden Sie in Ihren E-Mails Formulierungen, die von Spammern verwendet werden, wie „kaufen“ und „letzte Chance“, und vermeiden Sie auch Großbuchstaben, unpersönliche Betreffzeilen, Ausrufezeichen und "%"-Rabatte.
+- Vergessen Sie nicht, einen **Abmelde-Link** bereitzustellen, damit Personen, die Ihre E-Mail nicht angefordert haben oder sie für illegitim halten, sich abmelden können.
+- Achten Sie besonders darauf, dass Ihre E-Mails die E-Mail-Adresse des Absenders (oder einen Alias), eine Betreffzeile und ein korrektes Verhältnis von Text, Bildern und Links im E-Mail-Text enthalten.
+- Das Verhältnis von Text zu Bild und Text zu Link sollte hoch sein. Laden Sie die E-Mail nicht mit Hyperlinks über und vermeiden Sie JavaScript.
+
+**FBL - Feedback Loop**
+
+Dieses System ermöglicht es Ihnen, direkten Kontakt zu Feedback herzustellen, das von einigen Internetdienstanbietern bereitgestellt wird, und informiert Sie darüber, dass ihre Benutzer Ihre Nachricht als illegitim markiert haben und sie daher als Spam klassifiziert wurde. Dies ermöglicht es Ihnen, direkt mit diesen ISPs bezüglich Ihres Rufes zu interagieren. Einige FBLs beinhalten:
+
+- [Yahoo & AOL Postmaster](https://senders.yahooinc.com/contact)
+- [SpamCop](https://www.spamcop.net/)
+- [Outlook & live.com](https://sendersupport.olc.protection.outlook.com/pm/)
+
+**Authentifizierung**
+
+Einige Authentifizierungsdienste ermöglichen es Ihnen, Ihren Ruf zu schützen:
+
+- **Sender-ID**: Eine von Microsoft entwickelte E-Mail-Authentifizierungstechnologie, die die Echtheit Ihres Domainnamens durch Überprüfung der IP-Adresse des Absenders bestätigt. Diese Technologie basiert auf dem IETF-Standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
+- **SPF**: Sender Policy Framework ist ein Standard zur Überprüfung der Absenderdomain. Er basiert auf [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) und besteht darin, einen SPF- oder TXT-Eintrag in die Domain-DNS hinzuzufügen, der die Liste der IP-Adressen enthält, die berechtigt sind, E-Mails von dieser Domain zu senden.
+- **Reverse DNS**: Reverse ermöglicht es, Ihre IP zum Domainnamen aufzulösen. Damit kann die mit der IP-Adresse verknüpfte Domain gefunden werden.
+- **DKIM**: Dieser Standard wird in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871) beschrieben. AOL und Google (Gmail) arbeiten auf dieser Grundlage. 
+
+Für weitere Informationen zu den oben genannten Diensten konsultieren Sie unsere Anleitung zur [Optimierung des E-Mail-Versands](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization).
+
+#### Spezifische Arten des E-Mail-Versands
+
+- **An einen Microsoft-Server (Outlook, usw.)**
+
+Microsoft verwendet eine Whitelist-Policy. Das bedeutet, dass zunächst alles auf einer Blacklist steht und ein bestimmtes Verfahren erforderlich ist, um Ihren E-Mail-Server zu validieren. Weitere Informationen finden Sie im Abschnitt **Microsoft Server (Outlook)** unserer Anleitung „[Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)“.
+
+- **An einen Gmail-Server**
+
+Wenn Ihre Empfänger bei Gmail sind, kann das Hinzufügen spezifischer Einträge (z. B. eines DMARC-Eintrags) sicherstellen, dass die E-Mails sie erreichen. Hier ist ein Artikel von Google, der Ihnen dabei helfen kann: [Hinzufügen eines DMARC-Eintrags](https://support.google.com/a/answer/2466563/).
+
+Google hat außerdem einen [dazu passenden Artikel](https://support.google.com/mail/answer/81126/) zum Schutz vor Spam für Gmail-Nutzer.
+
+### Melden eines falsch positiven Ergebnisses
+
+Wenn Ihre E-Mails den Vorgaben entsprechen, können Sie uns dies mitteilen, indem Sie eine Beispielform Ihrer E-Mail (einschließlich des Headers) senden. Unsere Support-Teams werden Ihnen dann bei den nächsten Schritten helfen. Erstellen Sie einfach eine Support-Anfrage über Ihr OVHcloud Kundencenter und fügen Sie folgende Informationen hinzu:
+
+- Die IP des blockierten Dienstes.
+- Eine Originalkopie der als SPAM markierten E-Mail (Sie sollten diese anhand der **Message-ID** in der ANTISPAM-E-Mail identifizieren können). Falls keine **Message-ID** angegeben wird, senden Sie uns einfach eine Kopie der gesendeten E-Mails, die Sie vor dem Empfang der Warnung gesendet haben. Bitte senden Sie nur die Kopie der als SPAM markierten E-Mail.
+- Die .EML-Datei der bereitgestellten E-Mail. Diese sollte den **Header** und **Footer** der E-Mail enthalten. Falls Sie nicht wissen, wie Sie eine .EML-Datei extrahieren, konsultieren Sie: [Abrufen von E-Mail-Headern](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+
+Sobald die Informationen gesendet wurden, wird unser Support mit Vade Secure kommunizieren, um die weitere Analyse des Falls durchzuführen.
 
 ## Weiterführende Informationen
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

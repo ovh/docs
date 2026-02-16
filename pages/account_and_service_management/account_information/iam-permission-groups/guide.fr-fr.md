@@ -2096,45 +2096,6 @@ Ce groupe de permissions reprend les droits anciennement porté par le rôle nic
         "action": "publicCloudProject:apiovh:database/capabilities/get"
     },
     {
-        "action": "publicCloudProject:apiovh:database/cassandra/advancedConfiguration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/backup/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/capabilities/advancedConfiguration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/capabilities/integration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/certificates/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/integration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/ipRestriction/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/logs/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/maintenance/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/metric/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/node/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/cassandra/user/get"
-    },
-    {
         "action": "publicCloudProject:apiovh:database/grafana/advancedConfiguration/get"
     },
     {

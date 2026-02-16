@@ -166,7 +166,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 
 - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**
 - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail
-- **Serveur (entrant)** : pro?.mail.ovh.net
+- **Serveur (sortant)** : pro?.mail.ovh.net
 - **Port** : 587
 - **Type de sécurité** : STARTTLS
 

@@ -1,12 +1,8 @@
 ---
 title: "Konfiguracja rewersu DNS instancji Public Cloud"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-updated: 2025-04-28
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -26,19 +22,19 @@ Konfiguracja **rewersu DNS** instancji jest szczególnie przydatna przy wysyłan
 
 Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Sieć`{.action} i kliknij przycisk `Publiczne adresy IP`{.action}.
 
-W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie.
+W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie. Możesz również wyszukać konkretny adres IP w pasku wyszukiwania po lewej stronie menu rozwijanego.
 
-![Reverse IP](images/filterippci.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Kliknij `...`{.action} w linii odpowiedniego adresu IP i wybierz `Zmień rewers`{.action}.
+Kliknij przycisk `⁝`{.action} w wierszu odpowiedniego adresu IP i wybierz opcję `Skonfiguruj rewers DNS`{.action}.
 
-![Rewers DNS](images/modifyreversepc.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-W nowym oknie wprowadź rewers i kliknij `Zatwierdź`{.action}.
+W nowym oknie wprowadź swoją ścieżkę odwrotną i kliknij `Zatwierdź`{.action}.
 
-![Rewers DNS](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
 
-Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** tabeli.
+Możesz również edytować ścieżkę odwrotną bezpośrednio za pomocą ikony `ołówek`{.action} w kolumnie **Rewers DNS** tabeli.
 
 > [!primary]
 >
@@ -48,5 +44,7 @@ Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` j
 ## Sprawdź również <a name="gofurther"></a>
 
 [Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
+
+[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 Dołącz do [grona naszych użytkowników](/links/community).

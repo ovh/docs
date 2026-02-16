@@ -244,7 +244,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> ```
 >>
 > **AlmaLinux / Rocky Linux**
->> AlmaLinux (8/9/10), Rocky Linux (8/9/10)
+>> AlmaLinux (8/9), Rocky Linux (8/9)
 >>
 >> O ficheiro de configuração principal está situado na pasta `/etc/sysconfig/network-scripts/`. Neste exemplo, é chamado `ifcfg-eth0`. Antes de fazer qualquer alteração, verifique o nome real do arquivo nessa pasta.
 >>
@@ -301,8 +301,8 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Em alguns sistemas o
 >> sudo systemctl restart network
 >> ```
 >>
-> **Fedora 42**
->> Fedora 42
+> **Fedora / AlmaLinux (10) / Rocky Linux (10)**
+>> Fedora 42, AlmaLinux & Rocky Linux (10)
 >>
 >> O Fedora utiliza agora ficheiros-chave. Antes, o NetworkManager armazenava os perfis de rede em formato ifcfg nesse diretório: `/etc/sysconfig/network-scripts/`. No entanto, o formato ifcfg tornou-se obsoleto. Por predefinição, o NetworkManager não cria novos perfis neste formato. O ficheiro de configuração encontra-se agora em `/etc/NetworkManager/system-connections/`.
 >>

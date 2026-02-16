@@ -1,7 +1,7 @@
 ---
 title: "Redirecting a domain name managed by OVHcloud"
 excerpt: "Find out about the various redirection types, and how to create one for a domain name managed by OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -20,12 +20,12 @@ Redirecting a domain name is to redirect it to a new target. Different types of 
 
 ### Understanding domain name redirection
 
-This feature allows you to redirect a domain or subdomain to:
+This feature allows you to redirect a domain name or subdomain to:
 
-- Another domain/subdomain already existing
+- Another domain name/subdomain already existing
     - **Example**: `domain.tld`
 - A website URL (Uniform Resource Locator)
-    - **Examples**: `http://www.domain.tld/welcome/` or `https://www.domain.tld/welcome/` (if the target domain has a compatible SSL certificate)
+    - **Examples**: `http://www.domain.tld/welcome/` or `https://www.domain.tld/welcome/` (if the target domain name has a compatible SSL certificate)
 
 There are several ways of doing this:
 
@@ -37,7 +37,7 @@ There are several ways of doing this:
 > Setting up a redirection can affect your SEO ranking. 
 > Be careful about the changes you apply, or contact a [specialised provider](/links/partner) for SEO if necessary.
 >
-> Warning: A redirection created from the [OVHcloud Control Panel](/links/manager) does not redirect an URL as `https://` to another domain or URL. 
+> Warning: A redirection created from the [OVHcloud Control Panel](/links/manager) does not redirect an URL as `https://` to another domain name or URL. 
 > To create this type of redirection, you will have to apply [a URL rewrite](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite), for example by editing a ".htaccess" file. 
 >
 
@@ -53,7 +53,7 @@ Click the `Add Redirection`{.action} button.
 
 Three redirection options are available from the [OVHcloud Control Panel](/links/manager), and each of them is made up of **5 successive steps**. 
 
-> The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
+> The `Redirection`{.action} tab contains a fourth option that allows your domain name to be quickly pointed to DNS A, AAAA and CNAME records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
 >
 > For more information on DNS records, see our guide "[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)".
@@ -67,7 +67,7 @@ Below are the three types of redirections detailed step by step.
 
 ### Option 1: permanent visible redirection to a web address
 
-After entering the domain which is being redirected into a browser's address bar, the target domain will be displayed instead.
+After entering the domain name which is being redirected into a browser's address bar, the target domain name will be displayed instead.
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
 
@@ -81,9 +81,9 @@ After entering the domain which is being redirected into a browser's address bar
 > [!tabs]
 > **Step 1**
 >>
->> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain name to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain name/subdomain.
 >>
 >> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -107,7 +107,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 > **Step 4**
 >>
->> Select `Permanent (301)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web address`{.action} form that appears.
+>> Select `Permanent (301)`{.action} from the two choices listed, then enter the target domain name or URL for your redirection in the `Web address`{.action} form that appears.
 >>
 >> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
@@ -123,7 +123,7 @@ After entering the domain which is being redirected into a browser's address bar
 >> 
 >> > [!primary]
 >> >
->> > If the message "*Some redirections from domains that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
+>> > If the message "*Some redirections from domain names that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
 >> >
 >> > Warning, the old configuration will be disabled and deleted.
 >> >
@@ -131,7 +131,7 @@ After entering the domain which is being redirected into a browser's address bar
 
 ### Option 2: temporary visible redirection to a web address
 
-As with option 1, this option displays the target domain in your browser's address bar instead of the redirected domain after you enter the redirected domain.
+As with option 1, this option displays the target domain name in your browser's address bar instead of the redirected domain name after you enter the redirected domain name.
 
 However, this option is the appropriate choice for non-permanent redirections, for example temporary events.<br>
 Positioning on search engines is less efficient than with a **permanent visible** redirection of type 301 (HTTP code).
@@ -148,9 +148,9 @@ Positioning on search engines is less efficient than with a **permanent visible*
 > [!tabs]
 > **Step 1**
 >>
->> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain name to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain name/subdomain.
 >>
 >> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -174,7 +174,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 > **Step 4**
 >>
->> Select `Temporary (302)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
+>> Select `Temporary (302)`{.action} from the two choices listed, then enter the target domain name or URL for your redirection in the `Web Address`{.action} form that appears.
 >>
 >> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
@@ -190,7 +190,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >> 
 >> > [!primary]
 >> >
->> > If the message "*Some redirections from domains that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
+>> > If the message "*Some redirections from domain names that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
 >> >
 >> > Warning, the old configuration will be disabled and deleted.
 >> >
@@ -198,16 +198,16 @@ Positioning on search engines is less efficient than with a **permanent visible*
 
 ### Option 3: invisible redirection to a web address
 
-With this redirection, you can keep the redirected domain in your browser’s address bar after you have entered it, rather than replacing it with the target domain.<br>
+With this redirection, you can keep the redirected domain name in your browser’s address bar after you have entered it, rather than replacing it with the target domain name.<br>
 **Warning, this action is not compatible with all sites and affects the SEO of your site.**
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain1.tld` will appear in the address bar in your browser.
 
 ![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
-Invisible redirection works with an *iFrame* HTML tag. This allows your redirected domain to integrate the content of the other page corresponding to the target domain into its own HTML page.
+Invisible redirection works with an *iFrame* HTML tag. This allows your redirected domain name to integrate the content of the other page corresponding to the target domain name into its own HTML page.
 
-This type of embedded content prevents your site visitors from viewing the target domain.
+This type of embedded content prevents your site visitors from viewing the target domain name.
 
 > This option will return an HTTP 200 code.
 
@@ -223,9 +223,9 @@ This type of embedded content prevents your site visitors from viewing the targe
 > [!tabs]
 > **Step 1**
 >>
->> In the popup window, your domain to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
+>> In the popup window, your domain name to redirect already appears. Fill in the form **only** if you wish to redirect a *subdomain*.
 >>
->> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
+>> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain name/subdomain.
 >>
 >> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -249,7 +249,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 > **Step 4**
 >>
->> Select `Temporary (iframe)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
+>> Select `Temporary (iframe)`{.action} from the two choices listed, then enter the target domain name or URL for your redirection in the `Web Address`{.action} form that appears.
 >>
 >> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
@@ -271,7 +271,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >> 
 >> > [!primary]
 >> >
->> > If the message "*Some redirections from domains that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
+>> > If the message "*Some redirections from domain names that you want to redirect conflict with existing redirections*" appears, you can tick the `Confirm the overwriting of the existing redirection`{.action} box to force your redirection to be applied.
 >> >
 >> > Warning, the old configuration will be disabled and deleted.
 >> >

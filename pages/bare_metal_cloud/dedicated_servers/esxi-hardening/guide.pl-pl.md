@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie serwerem dedykowanym ESXi i jego bezpieczeństwo po pierwszym uruchomieniu (EN)'
 excerpt: 'Poznaj sposoby skutecznego zabezpieczenia serwera dedykowanego ESXi'
-updated: 2025-09-15
+updated: 2026-01-09
 ---
 
 ## Objective
@@ -83,14 +83,14 @@ All this information is also available through the web administration interface.
 
 ![interface](images/gui_logs_.png){.thumbnail}
 
-### The Network Firewall solution
+### The Edge Network Firewall solution
 
 > [!primary]
 >
-> As a reminder, the Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
+> As a reminder, the Edge Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
 >
 
-You can enable and use our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) filtering solution.
+You can enable and use our [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) filtering solution.
 This solution will allow you to easily manage legitimate access, in addition to the access you have set up through your ESXi system.
 
 It will also prevent you from unexpectedly locking your administrator account in the event of an attack.
@@ -100,7 +100,13 @@ It is recommended that you filter legitimate access in this way:
 - Rule 1 (Priority 0) allows trusted external networks to access your ESXi system.
 - Rule 2 (Priority 1) blocks everything else.
 
-![Network_Firewall](images/firewall_network_.png){.thumbnail}
+You can access the Edge Network Firewall settings in the OVHcloud Control Panel, by selecting `Network`{.action}, then choosing `Public IP Addresses`{.action} under "Public Network". There, you can find your dedicated server by searching for its IP address.
+
+![Network_Firewall](images/firewall_network_1.png){.thumbnail}
+
+To the right of the table, click the `...`{.action} button corresponding to your dedicated server, then select `Configure Edge Network Firewall`{.action}.
+
+![Network_Firewall](images/firewall_network_2.png){.thumbnail}
 
 ### Filtering in ESXi
 

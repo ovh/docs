@@ -18,7 +18,7 @@ When you created your OVHcloud account, you specified a contact email address. I
 
 To access the communication management page for your OVHcloud customer account:
 
-1. Log in to your [OVHcloud Control Pane](/links/manager).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Click on your name in the top right corner, then click on `My messages`{.action}.
 
 ### My messages

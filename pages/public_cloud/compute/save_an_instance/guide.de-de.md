@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz erstellen
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
-updated: 2025-11-04
+updated: 2025-12-09
 ---
 
 <style>
@@ -188,6 +188,12 @@ Sie können die zu sichernde Instanz auswählen.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
+#### **Name**
+
+Geben Sie einen Namen für die Planung des automatischen Backups ein. Nehmen Sie die Abrechnungsinformationen zur Kenntnis und erstellen Sie das Scheduling, indem Sie auf den Button `Erstellen`{.action} klicken.
+
+![public-cloud-instance-Backup](images/createbackup7.png){.thumbnail}
+
 #### **Scheduling** 
 
 Sie können eine personalisierte Backup-Planung festlegen oder eine der Standardrotationen auswählen:
@@ -195,13 +201,15 @@ Sie können eine personalisierte Backup-Planung festlegen oder eine der Standard
 - Tägliche Sicherung mit Speicherung der letzten 7 Backups
 - Tägliche Sicherung mit Speicherung der letzten 14 Backups
 
-![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
-
-#### **Name** 
-
-Geben Sie einen Namen für die Planung des automatischen Backups ein. Nehmen Sie die Abrechnungsinformationen zur Kenntnis und erstellen Sie das Scheduling, indem Sie auf den Button `Erstellen`{.action} klicken.
- 
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
+
+/// details | **Hinzufügen einer Remote-Sicherung**
+
+Klicken Sie auf die Schaltfläche `Ein Remote-Backup hinzufügen`{.action}, wählen Sie einen Standort aus, überprüfen Sie die Preisinformationen und klicken Sie auf die Schaltfläche `Erstellen`{.action}.
+
+![public-cloud-instance-Backup-distant](images/createbackup8distant.png){.thumbnail}
+
+///
 
 ### Verwaltung der Backups und Zeitpläne
 

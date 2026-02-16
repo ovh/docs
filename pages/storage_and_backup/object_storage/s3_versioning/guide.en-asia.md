@@ -139,7 +139,7 @@ When versioning is enabled:
 
 #### View the different versions of an object
 
-> ![tabs]
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> To view the different versions of an object, click directly on the object concerned. You'll be redirected to a page detailing the information and versions available for this object:
 >>

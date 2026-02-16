@@ -10,7 +10,7 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 
 ## Voraussetzungen
 
-- Sie haben einen [OVHcloud Loadbalancer](/links/network/loadbalancer) in Ihrem OVHcloud Kundencenter.
+- Sie haben einen [OVHcloud Loadbalancer](/links/network/load-balancer) in Ihrem OVHcloud Kundencenter.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Beschreibung

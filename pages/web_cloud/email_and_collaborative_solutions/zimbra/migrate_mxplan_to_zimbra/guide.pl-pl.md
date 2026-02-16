@@ -27,7 +27,7 @@ Migracja konta e-mail MX Plan na konto e-mail Zimbra odbywa się w 2-etapowym pr
 
 1. **Przeniesienie zawartości konta MX Plan na konto Zimbra**
     - [1.1 - Tworzenie konta e-mail Zimbra](#step11)
-    - [1.2 - Migracja e-maili za pomocą OVH Mail Migrator](#step12)
+    - [1.2 - Migracja e-maili za pomocą OVHcloud Mail Migrator](#step12)
     - [1.3 - Kopia zapasowa e-maili konta źródłowego (opcjonalnie)](#step13)
 2. **Usuń oryginalne konto MX Plan i przypisz adres do konta Zimbra**
     - [2.1 - Usuwanie starego adresu e-mail MX Plan](#step21)
@@ -41,21 +41,21 @@ W poniższym przykładzie przenosimy adres `contact@modomain.ovh`. W tym celu ut
 
 > [!primary]
 >
-> Jeśli dysponujesz już kontem e-mail Zimbra, skorzystaj z [Migracja e-maili przy użyciu OVH Mail Migrator](#step12).
+> Jeśli dysponujesz już kontem e-mail Zimbra, skorzystaj z [Migracja e-maili przy użyciu OVHcloud Mail Migrator](#step12).
 
 Załóż najpierw konto e-mail z nazwą tymczasową. Możesz na przykład utworzyć adres `contact2@mydomain.ovh`{.action}, jeśli musisz przenieść adres `contact@mydomain.ovh`{.action}.
 
 Aby utworzyć konto e-mail Zimbra, zapoznaj się z sekcją "Tworzenie konta e-mail" naszego przewodnika [Pierwsze kroki z ofertą Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
-### 1.2 - Migracja e-maili za pomocą OVH Mail Migrator <a name="step12"></a>
+### 1.2 - Migracja e-maili za pomocą OVHcloud Mail Migrator <a name="step12"></a>
 
-Użyj narzędzia do migracji [**O**VH **M**ail **M**igrator](https://omm.ovh.net/) (**OMM**), aby przenieść zawartość oryginalnego konta MX Plan na nowe konto docelowe Zimbra, posługując się przykładem podanym na powyższym schemacie.
+Użyj narzędzia do migracji [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**), aby przenieść zawartość oryginalnego konta MX Plan na nowe konto docelowe Zimbra, posługując się przykładem podanym na powyższym schemacie.
 
-### Etap 1: Dostęp do OVH Mail Migrator
+### Etap 1: Dostęp do OVHcloud Mail Migrator
 
-Przejdź na stronę [OVH Mail Migrator](https://omm.ovh.net/).
+Przejdź na stronę [OVHcloud Mail Migrator](/links/web/omm).
 
-Na stronie <https://omm.ovh.net/> w zakładce `Migration`{.action} kliknij `New migration`{.action}.
+Na stronie [OMM](/links/web/omm) w zakładce `Migration`{.action} kliknij `New migration`{.action}.
 
 ![omm](images/omm-migration-create01.png){.thumbnail}
 
@@ -93,7 +93,7 @@ Sprawdź, czy wszystkie informacje są poprawne, następnie kliknij `Rozpocznij 
 Aby śledzić migrację pojedynczych kont, możesz skorzystać z jednej z dwóch dostępnych metod:
 
 - Z poziomu wiadomości e-mail informującej o postępie migracji.
-- Ze strony <https://omm.ovh.net/>: W zakładce `Migration`{.action} kliknij `Track/Synchronize`{.action}. Wpisz identyfikator migracji (`Migration ID`{.action}) oraz konto źródłowe (`Source account`{.action}).
+- Ze strony [OMM](/links/web/omm): W zakładce `Migration`{.action} kliknij `Track/Synchronize`{.action}. Wpisz identyfikator migracji (`Migration ID`{.action}) oraz konto źródłowe (`Source account`{.action}).
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Strona, która się wyświetla pozwala śledzić postępy migracji. Zobaczysz ko
 - `Delete migrated elements`{.action}: Umożliwia usunięcie elementów już przeniesionych na konto docelowe. Możesz usunąć elementy, korzystając z określonego punktu synchronizacji.
 - `Synchronize`{.action}: Umożliwia pobranie nowych elementów, nieprzeniesionych podczas poprzedniej synchronizacji konta źródłowego i konta docelowego. Operację tę można uznać za migrację brakujących elementów z konta źródłowego na konto docelowe.
 
-Aby przeprowadzić migrację z użyciem pliku lub wielu plików, zapoznaj się z sekcjami "Migracja z użyciem pliku" i "Migracja z użyciem wielu plików (tryb projektu)" w naszym przewodniku "[Migracja kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
+Aby przeprowadzić migrację z użyciem pliku lub wielu plików, zapoznaj się z sekcjami "Migracja z użyciem pliku" i "Migracja z użyciem wielu plików (tryb projektu)" w naszym przewodniku "[Migracja kont e-mail za pomocą OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
 > [!primary]
 >

@@ -1,5 +1,5 @@
 ---
-title: Valkey - Tutorial - Boost your CMS (from the example of WordPress)
+title: Boost your WordPress CMS with caching with Public Cloud Databases for Valkey
 keywords: wordpress, redis, dbaas, cms
 excerpt: Boost the performances of your WordPress CMS with a Valkey service
 updated: 2024-06-12

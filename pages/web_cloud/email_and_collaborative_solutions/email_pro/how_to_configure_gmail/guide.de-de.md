@@ -1,8 +1,16 @@
 ---
 title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto im Gmail-Webinterface'
 excerpt: 'Erfahren Sie hier, wie Sie einen E-Mail Pro Account im Webinterface von Gmail einrichten'
-updated: 2025-04-28
+updated: 2025-12-31
 ---
+
+> [!alert]
+>
+> Ab Januar 2026 ist [Gmail nicht mehr mit den Funktionen Gmailify und POP-Zugriff kompatibel](https://support.google.com/mail/answer/16604719?hl), mit denen E-Mails von E-Mail-Accounts Dritter importiert werden konnten.
+>
+> Ihre OVHcloud E-Mail-Adressen können also nicht mehr mit Google Mail konfiguriert werden.
+>
+> Ihre E-Mail-Accounts von OVHcloud sind immer über unsere [Webmail](/links/web/email) erreichbar.
 
 ## Ziel
 

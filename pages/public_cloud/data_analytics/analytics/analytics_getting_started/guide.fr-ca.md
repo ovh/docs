@@ -1,5 +1,5 @@
 ---
-title: Analytics - Getting started
+title: Premiers pas avec les services Analytics (EN)
 excerpt: Find out how to set up your managed analytic service in the OVHcloud Control Panel
 updated: 2025-02-03
 ---

@@ -1,7 +1,7 @@
 ---
 title: VPN-SPN Concept
 excerpt: 'SNC Connectivity - VPN-SPN'
-updated: 2021-11-18
+updated: 2025-12-15
 ---
 
 ## Objective
@@ -79,21 +79,23 @@ Only IKEv2 is supported.
 **Integrity (not needed if GCM):**
 
 * Sha256
+* Sha384
+* Sha512
 
 Sha1 is not supported
 
 **DH Group:**
 
-* 14: 2048
-* 16: 4096
-* 19: 256-bit ECDH
-* 20: 384-bit ECDH
-* 24: 2048-bit ECDH
+* 14: MODP 2048 bits
+* 15: MODP 3072 bits
+* 19: ECDH 256 bits
+* 20: ECDH 384 bits
+* 21: ECDH 521 bits
 
 **Pseudo-Random Function (PRF):**
 
 * Same as integrity if not GCM
-* SHA1 / SHA256 / SHA512
+* SHA256
 
 #### Routing over tunnel
 

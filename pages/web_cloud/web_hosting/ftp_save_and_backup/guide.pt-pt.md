@@ -1,7 +1,7 @@
 ---
 title: "Restaurar o espaço de armazenamento do alojamento web"
 excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
-updated: 2025-10-20
+updated: 2025-12-19
 ---
 
 ## Objetivo
@@ -196,6 +196,10 @@ Deverá adicionar um sufixo ao seu nome de utilizador (ou “login”) FTP princ
 Substitua a informação genérica “utilizadorftp” pelo seu nome de utilizador FTP principal. Mantenha o sufixo que define a cópia de segurança à qual pretende aceder.
 
 A forma de se ligar ao espaço de armazenamento varia em função da interface ou do programa que utiliza.
+
+> [!primary]
+>
+> As cópias de segurança só estão acessíveis através de uma ligação FTP.
 
 #### 3 - Recuperar os ficheiros
 

@@ -80,12 +80,12 @@ sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl p
 
 ### Etapa 4: configuração do servidor de base de dados <a name="sqlconf"></a>
 
-MariaDB fornece um script para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
+MariaDB [fornece um script](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-secure-installation) para o ajudar na configuração inicial e para aplicar certos parâmetros relacionados com a segurança.
 
 Para o executar, insira o seguinte comando:
 
 ```bash
-sudo mysql_secure_installation
+sudo mariadb-secure-installation
 ```
 
 Confirme a primeira chamada apoiando-se na `Entrada`{.action}.

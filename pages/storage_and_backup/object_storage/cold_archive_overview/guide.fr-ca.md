@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2025-11-19
+updated: 2026-01-19
 ---
 
 <style>
@@ -55,6 +55,15 @@ Ce service est adapté à votre entreprise pour les besoins suivants :
 Le service vous permet de vous concentrer sur la création et le déploiement d'applications cloud tandis qu'OVHcloud s'occupe de l'infrastructure et de la maintenance du service.
 
 **Ce guide explique les concepts de la classe de stockage Cold Archive.**
+
+Depuis novembre 2025, il existe deux manières de consommer Cold Archive :
+
+- **Cold Archive v1, une solution standalone (granularité au niveau du bucket)**.
+- **Cold Archive v2, une classe Object Storage permettant d'archiver des objets individuellement au sein d'un bucket**.
+
+Bien qu'il existe deux manières différentes de consommer Cold Archive, nous continuons à faire référence à la solution sous le nom de « Cold Archive » dans tous les documents destinés aux utilisateurs, y compris la page produit et dans l'espace client OVHcloud, sans mentionner explicitement 'v1' ou 'v2'.
+
+Veuillez vous référer à la [FAQ Cold Archive](/pages/storage_and_backup/object_storage/cold_archive_faq) pour en savoir plus sur les principales différences entre les deux options Cold Archive.
 
 ## Concepts
 
