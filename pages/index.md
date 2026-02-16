@@ -2346,7 +2346,7 @@
         + [HYCU for OVHcloud](storage-backup-and-disaster-recovery-solution-hycu)
             + [Configuring HYCU Backup](hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup)
         + [Third party software](storage-backup-and-disaster-recovery-solution-third-party-software)
-            + [Automated backup with plakar](storage_and_backup/backup_and_disaster_recovery_solutions/third_party_software/backup_agent_automated_backup)
+            + [Automated backup with plakar](storage_and_backup/backup_and_disaster_recovery_solutions/third_party_software/plakar_automated_backup)
         + [Backup Agent](products/storage-backup-and-disaster-recovery-solution-backup-agent)
             + [Key concepts](storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts)
                 + [Backup Agent - Product Overview](storage_and_backup/backup_agent/backup_agent_product_presentation)
