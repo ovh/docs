@@ -61,11 +61,10 @@ The examples provided during this guide can be used with one of the following en
 
 ## Authentication & Rate Limiting
 
-All the examples provided in this guide use anonymous authentication, which makes it simpler to use but may cause rate limiting issues.
-If you wish to enable authentication using your own token, specify your API key in the `Authorization` header.
+Most examples provided in this guide are authenticated and expect the AI_ENDPOINT_API_KEY to be set in order to avoid rate limiting issues.
+If you wish to enable authentication using your own token, specify your own API key in the environment (`export AI_ENDPOINT_API_KEY='your_api_key'`).
 
 Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
-
 
 ## Quickstart
 
@@ -109,7 +108,7 @@ The simplest request is a single text `input`.
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const response = await client.responses.create({
@@ -125,6 +124,7 @@ The simplest request is a single text `input`.
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "input": "Explain RAG in one paragraph.",
@@ -177,7 +177,7 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const resp = await client.responses.create({
@@ -197,6 +197,7 @@ To create a multi-turn conversation, keep the full conversation history on your 
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
@@ -248,7 +249,7 @@ You can provide system-level instructions in two ways:
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const resp = await client.responses.create({
@@ -266,6 +267,7 @@ You can provide system-level instructions in two ways:
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "instructions": "You are a technical writer. Answer in British English.",
@@ -309,7 +311,7 @@ You can provide system-level instructions in two ways:
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const resp = await client.responses.create({
@@ -329,6 +331,7 @@ You can provide system-level instructions in two ways:
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
@@ -381,7 +384,7 @@ This is useful for chat UIs and CLIs.
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const stream = await client.responses.create({
@@ -401,6 +404,7 @@ This is useful for chat UIs and CLIs.
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "input": "Write a haiku about cloud computing.",
@@ -484,7 +488,7 @@ The `text.format` object can be used in these modes (model permitting):
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const resp = await client.responses.create({
@@ -530,6 +534,7 @@ The `text.format` object can be used in these modes (model permitting):
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
@@ -681,7 +686,7 @@ Below is a minimal end-to-end example.
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> // 1) Tool implementation (your code)
@@ -762,6 +767,7 @@ Below is a minimal end-to-end example.
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
@@ -846,7 +852,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> function toDataUrl(filePath, mimeType = "image/jpeg") {
@@ -877,6 +883,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 >> IMAGE_B64=$(base64 -i sample.jpg | tr -d '\n')
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d "{\
 >>     \"model\": \"Qwen2.5-VL-72B-Instruct\",\
 >>     \"store\": false,\
@@ -940,7 +947,7 @@ When supported, a `reasoning` object can be used to tune the reasoning effort an
 >>
 >> const client = new OpenAI({
 >>   baseURL: "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
->>   apiKey: "", // Anonymous authentication
+>>   apiKey: process.env.AI_ENDPOINT_API_KEY || "", // Read from environment variable
 >> });
 >>
 >> const resp = await client.responses.create({
@@ -957,6 +964,7 @@ When supported, a `reasoning` object can be used to tune the reasoning effort an
 >> ```sh
 >> curl https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/responses \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $AI_ENDPOINT_API_KEY" \
 >>   -d '{
 >>     "model": "gpt-oss-20b",
 >>     "store": false,
