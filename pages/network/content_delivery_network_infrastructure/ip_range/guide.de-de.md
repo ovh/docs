@@ -4,10 +4,6 @@ excerpt: Entdecken Sie alle IP-Adressen, die für Ihr CDN Infrastructure erlaubt
 updated: 2026-02-17
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 In dieser Anleitung finden Sie alle IP-Adressen des CDN Infrastructure Dienstes, die Sie zu Ihrer ACL hinzufügen können (**A**ccess **C**control **L**ist), um sicherzustellen, dass bestimmte IP-Adressen nicht durch Sicherheitssysteme wie zum Beispiel Ihre Firewall blockiert werden.

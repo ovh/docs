@@ -4,10 +4,6 @@ excerpt: "Poznaj wszystkie adresy IP, które chcesz autoryzować w ramach usług
 updated: 2026-02-17
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
->
-
 ## Wprowadzenie
 
 W tym przewodniku znajdziesz wszystkie adresy IP usługi CDN Infrastructure, które chcesz dodać do listy ACL (**A**ccess **C**control **L**ist), aby upewnić się, że niektóre adresy IP nie są blokowane przez systemy bezpieczeństwa, takie jak Twój firewall.
