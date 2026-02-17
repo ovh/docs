@@ -1,7 +1,7 @@
 ---
 title: "Comment retrouver le nom de votre offre d'hébergement web"
 excerpt: "Découvrez comment identifier le type d'offre d'hébergement web dont vous disposez depuis votre espace client OVHcloud"
-updated: 2026-02-12
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -39,7 +39,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Dans le cadre **Abonnement**, vous trouverez la mention **Offre**.
 >>
->> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
+>> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
 >> Sous cette mention, vous retrouverez le nom de votre offre d'hébergement web (par exemple : Perso, Pro, Performance, etc.).
 
