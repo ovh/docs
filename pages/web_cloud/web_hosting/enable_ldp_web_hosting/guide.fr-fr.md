@@ -7,13 +7,13 @@ updated: 2026-02-02
 ## Objectif
 
 Un log correspond à un événement survenu sur un système informatique (serveur, ordinateur, application, site web, base de données, réseau informatique, etc.).
-Par exemple, un log peut enregistrer et contenir un ou plusieurs des éléments suivants : 
+Par exemple, un log peut enregistrer et contenir un ou plusieurs des éléments suivants :
 
 - L'horodatage (date, heure, minute, seconde, etc.) de l'événement.
 - La nature de l'événement (connexion, déconnexion, erreur, download, upload, alerte, etc.).
-- Des informations complémentaires sur l'événement (page ou fichier consulté, application lancée, serveur distant appelé, nom d'un fichier chargé ou téléchargé, etc.)
+- Des informations complémentaires sur l'événement (page ou fichier consulté, application lancée, serveur distant appelé, nom d'un fichier chargé ou téléchargé, etc.).
 - L'origine de l'événement (identifiant de l'utilisateur, adresse IP source, programme source, etc.).
-- L'état du système où se déroule l'événement (ressources disponible, mémoire restante, utilisation du CPU, etc.).
+- L'état du système où se déroule l'événement (ressources disponibles, mémoire restante, utilisation du CPU, etc.).
 
 La plupart du temps, les logs sont générés directement par les systèmes informatiques où les événements se réalisent.
 Ils sont stockés et historisés dans des fichiers textes également appelés fichiers de logs.
@@ -27,7 +27,7 @@ De ce fait, les fichiers de logs permettent d'effectuer les actions suivantes :
 
 Votre offre [d'hébergement web](/links/web/hosting) génère donc ses propres logs.
 
-Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs  :
+Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs :
 
 - de votre hébergement web ;
 - pour l'un des sites web ou l'une des applications présentes sur votre hébergement web.
@@ -57,17 +57,17 @@ Pour accéder aux logs en temps réel de votre hébergement web, effectuez les a
 
 ![Web hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab.png){.thumbnail}
 
-C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre offre d'hébergemet web.
+C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre offre d'hébergement web.
 
 > [!primary]
 >
-> Comme précisé ci-dessus, les logs ne sont disponibles ici qu'en temps réel. Cela signifie que ces logs n'apparaîtront que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}. 
+> Comme précisé ci-dessus, les logs ne sont disponibles ici qu'en temps réel. Cela signifie que ces logs n'apparaîtront que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}.
 >
 > Si vous quittez l'onglet `Logs`{.action} puis revenez dessus ultérieurement, l'historique qui s'affichait auparavant aura disparu.
 
 ### Abonner les logs de votre offre d'hébergement web à Logs Data Platform <a name="webhosting-ldp"></a>
 
-[Logs Data Platform](/links/manage-operate/ldp) est une plateforme permettant de gérer vos logs. Elle peut vous être utile si vous disposez d'une très grosse infrastructure ou si vos services génèrent énormément de logs. En effet, cette plateforme est conçue pour faciliter l'aggrégation et la gestion des logs. 
+[Logs Data Platform](/links/manage-operate/ldp) est une plateforme permettant de gérer vos logs. Elle peut vous être utile si vous disposez d'une très grosse infrastructure ou si vos services génèrent énormément de logs. En effet, cette plateforme est conçue pour faciliter l'agrégation et la gestion des logs.
 
 Elle fonctionne en récupérant les logs générés par votre infrastructure / vos sites web ou encore vos applications pour, par exemple :
 
