@@ -1,7 +1,7 @@
 ---
 title: "Lista adresów IP, które chcesz autoryzować dla usługi CDN Infrastructure"
 excerpt: "Poznaj wszystkie adresy IP, które chcesz autoryzować w ramach usługi CDN Infrastructure"
-updated: 2024-06-20
+updated: 2026-02-17
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Poniżej znajdziesz listę adresów IP:
 |Adres IP|
 |---|
 |144.217.2.0/23|
-|46.105.196.0/20|
+|46.105.192.0/20|
 |51.254.41.128/25|
 |137.74.120.0/22|
 |51.68.15.224/27|
