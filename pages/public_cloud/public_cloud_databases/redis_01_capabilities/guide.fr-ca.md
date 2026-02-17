@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations de Public Cloud Databases pour Valkey (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
-updated: 2026-01-26
+updated: 2026-02-17
 ---
 
 ## Objective

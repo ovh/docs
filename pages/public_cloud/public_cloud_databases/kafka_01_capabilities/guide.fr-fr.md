@@ -1,7 +1,7 @@
 ---
 title: Capacités et limitations pour Analytics avec Kafka (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka
-updated: 2025-08-04
+updated: 2026-02-17
 ---
 
 ## Objective
