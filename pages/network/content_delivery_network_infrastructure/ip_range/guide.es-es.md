@@ -4,10 +4,6 @@ excerpt: "Descubra el conjunto de direcciones IP que quiere autorizar para su CD
 updated: 2026-02-17
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
 
 Consulte en esta guía todas las direcciones IP del servicio CDN Infrastructure que debe añadir a su ACL (**A**ccess **C**control **L**ist) para asegurarse de que determinadas direcciones IP no estén bloqueadas por sistemas de seguridad como, por ejemplo, su cortafuegos.
