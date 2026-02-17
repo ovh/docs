@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Intégration avec Apache Airflow (EN)
-excerpt: Découvrez comment orchestrer des charges de travail IA sur les AI Endpoints d'OVHcloud via Apache Airflow
+excerpt: Découvrez comment orchestrer des charges de travail IA sur les AI Endpoints OVHcloud via Apache Airflow
 updated: 2026-01-29
 ---
 
