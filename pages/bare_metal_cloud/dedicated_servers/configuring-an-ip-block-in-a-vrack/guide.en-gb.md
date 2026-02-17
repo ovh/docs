@@ -83,10 +83,8 @@ To order a new Additional IP block:
 - Click on the `Order IPs`{.action} button, near the top of the page.
 - Select the IP version, then the vRack you want to attach your Additional IP to.
 - Select the region you want your Additional IP to be in.
-- Choose the public bandwidth you want to apply to you vRack for that specific region.
+- Choose the public bandwidth you want to apply to your vRack for that specific region.
 - Fill in the other options as necessary, then proceed with your order.
-
-![Ordering bandwidth selection](images/placeholder){.thumbnail}
 
 ///
 
@@ -111,8 +109,6 @@ To modify the public bandwidth:
 - Within the window for the relevant region, click the `Modify bandwidth`{.action} button.
 - Select the desired bandwidth option in the panel that appears on the right-hand side, then click `Proceed to order`{.action} to validate the order.
 - Once paid, the selected bandwidth should be available to your vRack in the chosen region after a few minutes.
-
-![vRack bandwidth management](images/placeholder){.thumbnail}
 
 The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
 
