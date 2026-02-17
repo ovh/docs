@@ -11,7 +11,7 @@ updated: 2026-02-09
 
 ## Introduction
 
-[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 **Function Calling**, also known as tool calling, is a feature that enables a large language model (LLM) to trigger user-defined functions (also named tools). These tools are defined by the developer and implement specific behaviors such as calling an API, fetching data or calculating values, which extends the capabilities of the LLM.
 
@@ -19,10 +19,10 @@ The LLM will identify which tool(s) to call and the arguments to use. This featu
 
 ## Objective
 
-This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/).
+This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](/links/public-cloud/ai-endpoints).
 The examples provided in this guide will be using the [Mistral-Nemo-Instruct-2407](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/mistral-nemo-instruct-2407/) model.
 
-Visit our [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog) to find out which models are compatible with Function Calling.
+Visit our [Catalog](/links/public-cloud/ai-endpoints-catalog) to find out which models are compatible with Function Calling.
 
 ## Requirements
 
@@ -804,7 +804,7 @@ Some additional considerations regarding prompts and model parameters:
 
 ## Conclusion
 
-In this guide, we have explained how to use Function Calling with the [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/) models.
+In this guide, we have explained how to use Function Calling with the [AI Endpoints](/links/public-cloud/ai-endpoints) models.
 We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
 
 ## Go further

@@ -11,7 +11,7 @@ updated: 2025-07-31
 
 ## Introduction
 
-In this tutorial, we’ll show you how to create a sentiment analyzer using **[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/)** and Java with **[Quarkus](https://github.com/quarkusio/quarkus)**.
+In this tutorial, we’ll show you how to create a sentiment analyzer using **[AI Endpoints](/links/public-cloud/ai-endpoints)** and Java with **[Quarkus](https://github.com/quarkusio/quarkus)**.
 
 We'll use a model from the `Natural Language Processing (NLP)` category, specifically the `roberta-base-go_emotions` model. This model can analyze text and return emotions in response.
 

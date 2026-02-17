@@ -11,9 +11,9 @@ updated: 2026-02-03
 
 ## Introduction
 
-[AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models.
 
-The **Responses API** (`/v1/responses`) is the most recent OpenAI-compatible route.
+The **Responses API** (`/v1/responses`) is the most recent OpenAI-compatible route. 
 Like `v1/chat/completions`, it can be used for **text generation**, **multi-turn conversations**, **tool/function calling**, **structured outputs**, and **vision inputs** (on compatible models).
 
 The key difference is that `/v1/responses` is intended as the **foundation for newer capabilities and agentic behaviour**, introducing advanced features such as **statefulness** and **built-in tools**.
@@ -21,12 +21,12 @@ The key difference is that `/v1/responses` is intended as the **foundation for n
 > [!warning]
 >
 > The `v1/responses` route was added recently. Some parameters and behaviours may differ between models.
-> For up-to-date limitations, refer to [Endpoint Limitations](#endpoint-limitations) and check model capabilities in the [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog).
+> For up-to-date limitations, refer to [Endpoint Limitations](#endpoint-limitations) and check model capabilities in the [Catalog](/links/public-cloud/ai-endpoints-catalog).
 >
 
 ## Objective
 
-This documentation provides an overview of the `v1/responses` route on [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints), including:
+This documentation provides an overview of the `v1/responses` route on [AI Endpoints](/links/public-cloud/ai-endpoints), including:
 
 - Basic requests and common response fields
 - Usage examples in **Python**, **JavaScript**, and **cURL**
@@ -61,7 +61,7 @@ The examples provided during this guide can be used with one of the following en
 
 ## Authentication & Rate Limiting
 
-Most examples provided in this guide are authenticated and expect the AI_ENDPOINT_API_KEY to be set in order to avoid rate limiting issues.
+Most examples provided in this guide are authenticated and expect the `AI_ENDPOINT_API_KEY` to be set in order to avoid rate limiting issues.
 If you wish to enable authentication using your own token, specify your own API key in the environment (`export AI_ENDPOINT_API_KEY='your_api_key'`).
 
 Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
@@ -341,7 +341,6 @@ You can provide system-level instructions in two ways:
 >>     ]
 >>   }'
 >> ```
-
 
 ### Streaming (`stream: true`)
 
@@ -903,7 +902,7 @@ When supported, you can pass an `input` array containing a mix of text and image
 > [!warning]
 >
 > Image inputs are supported only by vision-capable models.
-> Refer to the [Catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog) and model pages for supported content types.
+> Refer to the [Catalog](/links/public-cloud/ai-endpoints-catalog) and model pages for supported content types.
 >
 
 ### Reasoning models (`reasoning`)
@@ -973,11 +972,10 @@ When supported, a `reasoning` object can be used to tune the reasoning effort an
 >>   }'
 >> ```
 
-
 ## Endpoint limitations
 
 The `v1/responses` endpoint is still undergoing development and all features may not be available.
-If you are interested in specific features that would like us to prioritize, don't hesitate to let us know on the OVHcloud [Discord server](https://discord.gg/ovhcloud).
+If you are interested in specific features that would like us to prioritise, don't hesitate to let us know on the OVHcloud [Discord server](https://discord.gg/ovhcloud).
 
 ### Statefulness
 
@@ -1026,8 +1024,7 @@ Model-specific limitations you may encounter:
 
 The **Responses API** provides a unified way to interact with LLMs on OVHcloud **AI Endpoints**, covering basic text generation as well as advanced use cases such as **multi-turn conversations**, **streaming**, **structured outputs**, **function calling**, and **vision inputs** (model permitting).
 
-To maximise compatibility, always verify supported features for your chosen model in the [AI Endpoints catalog](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog), and consider falling back to `v1/chat/completions` when a feature is not available on `v1/responses`.
-
+To maximise compatibility, always verify supported features for your chosen model in the [AI Endpoints catalog](/links/public-cloud/ai-endpoints-catalog), and consider falling back to `v1/chat/completions` when a feature is not available on `v1/responses`.
 
 ## Go further
 
@@ -1035,10 +1032,8 @@ Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machi
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-
 ## Feedback
 
 Please send us your questions, feedback, and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud).
-

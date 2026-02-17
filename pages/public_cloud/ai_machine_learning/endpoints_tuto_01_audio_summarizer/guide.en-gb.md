@@ -17,7 +17,7 @@ Are you looking for a way to efficiently summarize your meetings, broadcasts, an
 
 In this tutorial, you will create an Audio Summarizer assistant that can not only transcribe but also summarize all your audio files.
 
-Indeed, thanks to [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/), it’s never been easier to create a virtual assistant that can help you stay on top of your meetings and keep track of important information.
+Indeed, thanks to [AI Endpoints](/links/public-cloud/ai-endpoints), it’s never been easier to create a virtual assistant that can help you stay on top of your meetings and keep track of important information.
 
 This tutorial will explore how AI APIs can be connected to create an advanced virtual assistant capable of transcribing and summarizing any audio file using **ASR (Automatic Speech Recognition)** technologies and popular **LLMs (Large Language Models)**. We will also build an app to use our assistant!
 

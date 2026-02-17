@@ -11,7 +11,7 @@ updated: 2026-02-06
 
 ## Objective
 
-This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/).
+This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](/links/public-cloud/ai-endpoints).
 
 ## Common questions
 
