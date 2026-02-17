@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Intégration avec Pydantic AI (EN)
-excerpt: Découvrez comment créer des applications d'IA prêtes pour la production avec Pydantic AI et les AI Endpoints d'OVHcloud
+excerpt: Découvrez comment créer des applications IA prêtes pour la production avec Pydantic AI et les AI Endpoints OVHcloud
 updated: 2026-01-29
 ---
 
