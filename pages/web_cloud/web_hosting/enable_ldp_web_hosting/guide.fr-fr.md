@@ -80,7 +80,7 @@ Pour plus de détails sur Logs Data Platform, consultez notre guide d'[introduct
 
 Du fait que les offres [d'hébergement web](/links/web/hosting) peuvent être utilisées avec de nombreux services (bases de données, etc.), celles-ci peuvent, en complément des logs en temps réel déjà disponibles, être abonnées par flux de données à Logs Data Platform.
 
-Avec les offres d'hébergement web, vous disposez gratuitement de **1 Go** de rétention de logs. Pour en bénéficier
+Avec les offres d'hébergement web, vous disposez gratuitement de **1 Go** de rétention de logs. Pour en bénéficier, vous devrez activer votre compte Log Data Platform gratuitement et associer votre hébergement web à un flux de données.
 
 > [!alert]
 >
