@@ -234,7 +234,7 @@ Suivez les étapes décrites dans le guide « [Comment résilier un accès xDSL/
 
 /// details | SMS
 
-Il n'existe pas de procédure de résiliation concernant les [offres SMS](/links/telecom/sms). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
+Il n'existe pas de procédure de résiliation concernant les offres SMS. Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
 
 Pour supprimer un compte SMS, nous vous invitons à créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
 

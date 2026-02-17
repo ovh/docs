@@ -191,6 +191,8 @@ systemctl restart networking.service
 
 #### Exemple de configuration VM cliente
 
+La VM doit être attachée au bridge `vmbr0`.
+
 > [!tabs]
 > Debian (ifupdown)
 >> Contenu du fichier `/etc/network/interfaces` :

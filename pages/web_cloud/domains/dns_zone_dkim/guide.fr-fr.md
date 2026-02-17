@@ -1,7 +1,7 @@
 ---
 title: Améliorer la sécurité des e-mails via un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2025-11-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -121,15 +121,15 @@ La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité 
 
 Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
 
-Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le propriétaire et n'est pas visible de tous.
+Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le titulaire et n'est pas visible de tous.
 
 Il existe deux utilisations du chiffrement asymétrique :
 
-- **La donnée d'entrée est chiffrée avec la clé publique et déchiffrée par celui qui possède la clé privée**. Par exemple, vous souhaitez qu'un tiers vous transmette des données de manière sécurisée. Vous transmettez votre clé publique sans vous soucier que quelqu'un la récupère, ce tiers chiffrera ses données avec votre clé publique. Les données chiffrées ne pourront être déchiffrées que par le propriétaire de la clé privée.
+- **La donnée d'entrée est chiffrée avec la clé publique et déchiffrée par celui qui possède la clé privée**. Par exemple, vous souhaitez qu'un tiers vous transmette des données de manière sécurisée. Vous transmettez votre clé publique sans vous soucier que quelqu'un la récupère, ce tiers chiffrera ses données avec votre clé publique. Les données chiffrées ne pourront être déchiffrées que par le titulaire de la clé privée.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
-- **La donnée d'entrée est chiffrée par le propriétaire de la clé privée et déchiffrée par la clé publique**. Cette utilisation s'applique pour authentifier un échange de donnée. Par exemple, vos destinataires souhaitent s'assurer que vous êtes bien l'auteur du message que vous leur transmettez. Dans ce cas, vous allez chiffrer votre message avec votre clé privée. Ce message ne pourra être déchiffré que par la clé publique que vous aurez transmise à tout le monde, ce qui garantit à vos destinataires l'authenticité de votre message. En effet, un message déchiffré par la clé publique ne peut provenir uniquement que du propriétaire de la clé privée.
+- **La donnée d'entrée est chiffrée par le titulaire de la clé privée et déchiffrée par la clé publique**. Cette utilisation s'applique pour authentifier un échange de donnée. Par exemple, vos destinataires souhaitent s'assurer que vous êtes bien l'auteur du message que vous leur transmettez. Dans ce cas, vous allez chiffrer votre message avec votre clé privée. Ce message ne pourra être déchiffré que par la clé publique que vous aurez transmise à tout le monde, ce qui garantit à vos destinataires l'authenticité de votre message. En effet, un message déchiffré par la clé publique ne peut provenir uniquement que du titulaire de la clé privée.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
@@ -157,7 +157,7 @@ Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les
 
 **Exemple d'une partie de signature DKIM**
 
-<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341;
 </code></pre>
 
 La valeur du sélecteur est ici `s=ovhex123456-selector1`.
@@ -635,7 +635,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` correspond à la cible de l'enregistrement. On y rajoute un point à la fin pour ponctuer la valeur. Cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail .w-400 .h-600} <br>
->> 
+>>
 >> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.<br>
 >>
 >> **Répétez cette opération pour le deuxième sélecteur si vous l'avez créé.**<br>
@@ -798,7 +798,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` correspond à la cible de l'enregistrement. On y rajoute un point à la fin pour ponctuer la valeur. Cela donne `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail .w-400 .h-600} <br>
->> 
+>>
 >> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.<br>
 >>
 >> **Répétez cette opération pour le deuxième sélecteur si vous l'avez créé.**<br>
@@ -1049,7 +1049,7 @@ Sélectionnez l'offre e-mail concernée parmi les onglets suivants :
 >>
 > **E-mail Pro**
 >> Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire de clés, utilisez l'appel API suivant :
->> 
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/disable
@@ -1124,7 +1124,7 @@ Le destinataire doit ignorer cet enregistrement si le type de service approprié
 La balise "s=" est destinée à restreindre l'utilisation des clés pour d'autres fins, dans le cas où l'utilisation du DKIM serait définie pour d'autres services à l'avenir.<br>
 Les types de services actuellement définis sont "\*" (tous les types de services), "email" (courrier électronique).
 
-- **Mode test (t=y)** : permet aux propriétaires du nom de domaine de tester la mise en place du DKIM sans risquer de voir les messages rejetés ou marqués comme SPAM si la vérification de signature DKIM échoue.<br>
+- **Mode test (t=y)** : permet aux titulaires du nom de domaine de tester la mise en place du DKIM sans risquer de voir les messages rejetés ou marqués comme SPAM si la vérification de signature DKIM échoue.<br>
 Lorsque le flag "t=y" est utilisé, le destinataire ne doit pas traiter différemment les messages signés en mode de test et les messages non signés. Cependant, le destinataire peut suivre le résultat du mode de test pour aider les signataires.
 
 - **Sous-domaines (t=s)** : permet de restreindre l'utilisation de la signature DKIM au nom de domaine uniquement (par exemple : @mydomain.ovh) ou de permettre l'envoi depuis le nom de domaine et ses sous-domaines (par exemple : @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).
@@ -1188,7 +1188,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 > [!tabs]
 > **Exchange**
 >> Pour basculer sur le deuxième sélecteur, utilisez l'appel API suivant :
->> 
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable

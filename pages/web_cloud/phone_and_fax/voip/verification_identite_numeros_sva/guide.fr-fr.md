@@ -1,7 +1,7 @@
 ---
 title: "Valider votre identité pour l'exploitation d'un numéro spécial SVA"
 excerpt: "Découvrez comment valider votre identité depuis l'espace client OVHcloud afin d'exploiter un numéro spécial SVA"
-updated: 2025-09-05
+updated: 2026-02-13
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ Ces informations sont indispensables pour maintenir votre compte conforme et **a
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
 
-Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur l'onglet `Commande de numéros`{.action} ou sur `Commander un numéro`{.action} dans le menu « Je veux... ».
+Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le cadre « Je veux... » du `Tableau de bord`{.action}.
 
 ![commande de numéro](images/sva-commande.png){.thumbnail}
 
@@ -66,23 +66,23 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 
 Si vous êtes le seul bénéficiaire, cochez la case « Mon représentant est bénéficiaire ». 
 
-![représentant bénéficiairs](images/beneficiaire.png){.thumbnail}
+![représentant bénéficiairs](images/sva-beneficiaire01.png){.thumbnail}
 
 Dans le cas contraire, cliquez sur `+ Ajouter un bénéficiaire`{.action} et renseignez les coordonnées du bénéficiaire.
+
+![ajout bénéficiaires](images/sva-beneficiaire02.png){.thumbnail}
 
 > [!primary]
 > Vous pouvez ajouter jusqu'à 4 bénéficiaires.
 
-![ajout bénéficiaires](images/sva-beneficiaire1.png){.thumbnail}
+![ajout bénéficiaires](images/sva-beneficiaire03.png){.thumbnail}
 
 Cochez la case :
 
 - « Je certifie être l'éditeur des contenus des numéros SVA » (si vous avez choisi le type de compte « Professionnel »);
-- « Je certifie être revendeur de numéro SVA et certifie connaître et appliquer les obligations à mes propres clients »  (si vous avez choisi le type de compte « Professionnel revendeur »).
+- « Je certifie être revendeur de numéro SVA et certifie connaître et appliquer les obligations à mes propres clients » (si vous avez choisi le type de compte « Professionnel revendeur »).
 
-![ajout bénéficiaires](images/sva-beneficiaire2.png){.thumbnail}
-
-Cliquez sur `Etape suivante`{.action}.
+Cliquez sur `Étape suivante`{.action}.
 
 Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis saisissez `CONFIRMER` dans le champ prévu à cet effet et cliquez sur `Valider mes informations`{.action}.
 
@@ -90,19 +90,21 @@ Dans la fenêtre qui s'affiche alors, prenez connaissance des informations puis 
 
 ### Téléverser les documents justificatifs
 
-Une fois vos informations saisies, la liste des documents justificatifs à fournir apparaît. Cliquez sur le bouton `...`{.action} puis sur `Télécharger`{.action} à droite de chaque document à fournir. 
+Une fois vos informations saisies, vous serez redirigé vers l'interface **Lemonway** pour fournir des documents justificatifs.
 
-Cliquez sur `Sélectionner un fichier`{.action}, sélectionnez le document correspondant sur votre poste de travail puis cliquez sur `Valider le document`{.action}.
+Cette procédure d'inscription est appelée « **Onboarding** ».
 
-> [!warning]
-> **Choix de la pièce d'identité :**
+![confirmation](images/sva-lemonway01.png){.thumbnail}
+
+Cliquez sur `C'est parti`{.action} pour fournir vos documents.
+
+![confirmation](images/sva-lemonway02.png){.thumbnail}
+
+> [!primary]
 >
-> Veillez à bien sélectionner, via le menu déroulant prévu à cet effet, le type de pièce d'identité que vous souhaitez ajouter **avant** de la téléverser.
+> Si vous ne pouvez pas fournir tous vos documents en une fois, cliquez sur `Enregistrer et finir plus tard`{.action}.
 >
-
-![ajout des documents](images/sva-documents-v2.png){.thumbnail}
-
-Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`{.action}.
+> Pour accéder par la suite à la plateforme Lemonway : depuis le `Tableau de bord`{.action} du groupe de facturation VoIP, cliquez sur `Voir mon profil SVA`{.action}.
 
 ### Liste des documents requis
 
@@ -113,6 +115,12 @@ Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`
 >
 > Si votre compte OVHcloud correspond à **un projet de financement participatif (*crowdfunding*)**, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
 >
+> **Note** :
+>
+> Le **Relevé d'Identité Bancaire** doit être déposé sur votre espace client OVHcloud afin de permettre les futurs reversements. Les autres documents doivent être fournis sur l’interface Lemonway.<br>
+> Pour téléverser votre RIB, rendez-vous dans la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur `Gérer mes reversements`{.action} puis sur `Modifier mes coordonnées bancaires`{.action}.
+>
+> ![sva iban](images/sva-iban.png){.thumbnail}
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
 
@@ -143,6 +151,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud.
 - Les statuts de la société, datés et signés.
 - Le registre des bénéficiaires effectifs type DBE-S1 (présentant les personnes physiques détenant directement ou indirectement plus de 25% du capital de la société). Vous pouvez l'obtenir gratuitement sur le site [INPI.fr](https://www.inpi.fr/beneficiaires-effectifs).
+- Une **vérification d’identité par vidéo** du représentant légal. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Société cotée dans un pays de l'UE ou un pays tiers équivalent** <a name="societecotee"></a>
@@ -151,6 +160,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud. Si non précisé sur le KBIS, le poste de la personne physique habilitée à représenter la société doit être publiquement vérifiable (par exemple sur LinkedIn) ou une délégation de pouvoir doit être fournie.
 - Preuve de la présence de la société sur ledit Marché (cela peut être la page de la Bourse du pays montrant les détails de la société).
 - Si les actions de la société ne sont pas au moins à 76% des actions publiques, tous les actionnaires détenant ou contrôlant plus de 25% des parts sociales seront soumis à la vérification des bénéficiaires effectifs.
+- Une **vérification d’identité par vidéo** du représentant légal. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Association/Organisme juridique** <a name="association"></a>
@@ -159,12 +169,14 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une **copie de moins d'un an du procès-verbal** de la dernière assemblée générale de l'association titulaire du compte OVHcloud.
 - Les **statuts datés et signés** de l'association titulaire du compte OVHcloud
 - La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant l'association titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du représentant. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Administration/Autorité ou Agences publiques et autorités régionales** <a name="administration"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique habilitée par l'administration titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **mandat accordé par l'administration titulaire du compte OVHcloud** à la personne physique agissant en son nom.
+- Une **vérification d’identité par vidéo** de la personne habilitée. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Fondation** <a name="fondation"></a>
@@ -173,6 +185,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **document officiel certifiant** que la personne physique identifiée est bien autorisée à **représenter la fondation** et à gérer le compte OVHcloud.
 - Les **statuts datés et signés** de la fondation titulaire du compte OVHcloud.
 - La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant la fondation titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du représentant. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Fonds de dotation** <a name="fondsdotation"></a>
@@ -181,12 +194,14 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **document officiel** certifiant que la personne physique identifiée est bien autorisée à représenter le fonds de dotation et à gérer le compte OVHcloud.
 - Les **statuts datés et signés** du fonds de dotation titulaire du compte OVHcloud.
 - Une **copie de moins d'un an du procès-verbal de la dernière assemblée générale** ou la liste des membres du conseil d'administration du fonds de dotation titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du responsable. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Artisan** <a name="artisan"></a>
 
 - Une **pièce d'identité** en cours de validité de l'artisan qualifié titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de résidence (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **certificat d'immatriculation au Registre des Métiers** de moins de 3 mois au nom de l'artisan titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** de l'artisan. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Exploitation agricole à responsabilité limitée** <a name="exploitationagricole"></a>
@@ -196,6 +211,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **certificat d'immatriculation au Registre du Commerce et des Sociétés** de moins de 3 mois au nom de l'EARL titulaire du compte OVHcloud.
 - Les **statuts datés et signés** de l'EARL titulaire du compte OVHcloud.
 - Une copie de la parution de l'acte dans le **Bulletin Officiel des Annonces Civiles et Commerciales** (BODACC).
+- Une **vérification d’identité par vidéo** du président ou trésorier. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Auto-entrepreneur <a name="autoentrepreneur"></a>
@@ -203,6 +219,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une **première pièce d'identité** en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Une **seconde pièce d'identité** en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire (recto et verso), dernier avis d'imposition daté de moins d'un an, livret de famille, récépissé d'enregistrement du pacte civil de solidarité ou carte vitale.
 - Un **certificat d'inscription à l'INSEE datant de moins de 3 mois** au nom du titulaire du compte ou un document attestant de son inscription auprès de la Chambre de Commerce (pour un auto-entrepreneur exerçant une activité commerciale) ou auprès de la Chambre des métiers (pour un auto-entrepreneur exerçant une activité artisanale).
+- Une **vérification d’identité par vidéo** du titulaire du compte. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Fonds d'investissement <a name="fondsinvestissement"></a>
@@ -212,6 +229,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une **pièce d'identité** en cours de validité du mandataire du fonds titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **KBIS** (extrait attestant de la création de l'entreprise) de moins de trois mois du fonds titulaire du compte OVHcloud.
 - Les **statuts datés et signés** par le mandataire du fonds titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du mandataire. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 ##### **Fonds commun de placement (FCP)** <a name="fcp"></a>
@@ -219,18 +237,21 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une **pièce d'identité** en cours de validité du mandataire de la société de gestion titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **KBIS** (extrait attestant de la création de l'entreprise) de moins de trois mois de la société de gestion titulaire du compte OVHcloud.
 - Le **document de règlement de gestion** du fonds titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du mandataire. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Comité social et économique (CSE) <a name="cse"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom du CSE : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Une **copie de moins d'un an du procès-verbal de la dernière assemblée générale** ou la liste des membres du conseil d'administration du CSE titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du responsable. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Groupement d'intérêt public, Centre hospitalier universitaire, Établissement public d'intérêt général, Société d'investissement immobilier, Établissements de santé privés d'intérêt collectif <a name="divers"></a>
 
 - Une **pièce d'identité** en cours de validité de la personne physique responsable de gérer le compte OVHcloud au nom de l'agence publique : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **document officiel** certifiant que la personne physique identifiée est bien autorisée à **représenter l'agence publique** et à gérer le compte OVHcloud.
+- Une **vérification d’identité par vidéo** du responsable. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Compagnie d'assurance <a name="assurance"></a>
@@ -240,6 +261,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **extrait des délibérations** désignant les directeurs et précisant leurs capacités
 - Un **extrait de la publication dans le JOAFE** (Journal Officiel des Associations & Fondations d'Entreprise) ou, à défaut, l'extrait de l'enregistrement de compagnies d'assurance mutuelle attestant de l'immatriculation de la compagnie d'assurance titulaire du compte OVHcloud.
 - Les **statuts finaux et/ou certifiés conformes**, datés et signés, de la compagnie d'assurance titulaire du compte OVHcloud.
+- Une **vérification d’identité par vidéo** du responsable. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
 #### Paroisse ou église <a name="eglise"></a>
@@ -248,28 +270,39 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Une copie de moins d'un an du **procès-verbal de la dernière assemblée générale** de l'association diocésaine autorisant l'ouverture du compte et désignant les personnes autorisées à le gérer.
 - Un **extrait de la publication dans le JOAFE** (Journal Officiel des Associations & Fondations d'Entreprise) au nom de l'association diocésaine ou du diocèse.
 - Les **statuts datés et signés** au nom de l'association diocésaine ou du diocèse.
+- Une **vérification d’identité par vidéo** du responsable. Si votre appareil ne possède pas de caméra, poursuivez depuis un autre appareil doté d'une caméra (ordinateur, smartphone ou tablette).
 - Un **Relevé d'Identité Bancaire**.
 
-### Vérifier le statut de mes documents
+### Vérifier le statut de mes documents <a name="statut-docs"></a>
 
-Dans votre `Tableau de bord`{.action}, cliquez sur `Voir mon profil SVA`{.action} dans la partie `Profil SVA`.
+Dans le `Tableau de bord`{.action} de votre groupe de téléphonie, vérifiez le statut de votre **Profil SVA** :
 
-Vous aurez alors accès aux coordonnées précédemment renseignées ainsi qu'au tableau récapitulatif de vos documents.
+- **Valide** : vos documents sont validés. Vous pouvez accéder à vos informations et les modifier si nécessaire en cliquant sur `Voir mon profil SVA`{.action}.
 
-La colonne `Statut` du tableau vous indique le statut de validation du document. Le bouton `...`{.action} à droite de chaque document vous permet d'interagir en conséquence.
+    ![vérification SVA](images/sva-statut-valide.png){.thumbnail}
 
-Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez également les mettre à jour depuis votre espace client OVHcloud.
+- **En attente de validation** : vos documents ne sont pas encore intégralement fournis ou validés. Cliquez sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway et vérifier le statut de vos documents.
 
-|Statut|Description|Action possible|
-|---|---|---|
-|Valide|Votre document a été validé par nos équipes|Pas d'action possible|
-|Attente de validation|Votre document a bien été réceptionne et va être vérifié par nos équipes|Pas d'action possible avant la vérification du document|
-|Non valide|Votre document a été vérifié mais n'est pas conforme|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif|
-|Arrivé à expiration le XX/XX/XXXX|La date de fin de validité sera bientôt atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
-|Expiré|La date de fin de validité du document est atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
+    ![vérification SVA](images/sva-statut-en-attente-de-validation.png){.thumbnail}
+
+- **Incomplet** : un ou plusieurs documents fournis ne sont pas conformes. Cliquez sur `Finaliser mon formulaire de validation d'identité`{.action} ou sur `Voir mon profil SVA`{.action} pour accéder à la plateforme Lemonway et vérifier le statut de vos documents.
+
+    ![vérification SVA](images/sva-acces-lemonway.png){.thumbnail}
+
+    ![vérification SVA](images/sva-statut-incomplet.png){.thumbnail}
+
+Sur les exemples ci-dessous, le document 1 est validé et le document 2 est refusé :
+
+![vérification SVA](images/sva-doc-valide.png){.thumbnail}
+
+![vérification SVA](images/sva-doc-refus.png){.thumbnail}
+
+En cas de document refusé, vous devrez téléverser un nouveau justificatif qui sera vérifié dès que possible.
 
 ## Aller plus loin
 
-[Les recommandations déontologiques applicables aux services à valeur ajoutée téléphoniques](https://www.ovh.com/fr/support/documents_legaux/conditions%20particulieres%20deontologie%20numeros%20SVA%20Fr.pdf).
+[Les recommandations déontologiques applicables aux services à valeur ajoutée téléphoniques](https://www.ovh.com/fr/support/documents_legaux/conditions%20particulieres%20deontologie%20numeros%20SVA%20Fr.pdf)
+
+[Lemonway : notice d’information relative à la protection des données à caractère personnel](https://www.lemonway.com/protection-des-donnees)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

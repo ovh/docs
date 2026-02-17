@@ -1,7 +1,7 @@
 ---
-title: "Customising a domain name’s DNS servers (Glue Records)"
+title: "Customising a domain name’s DNS servers (Hosts)"
 excerpt: "Find out how to customise your OVHcloud domain name’s DNS servers"
-updated: 2025-05-15
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -20,13 +20,13 @@ For more information on these topics, see the following guides:
 - [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
 - [How to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-Depending on your needs, you can customise your OVHcloud domain name’s DNS servers using **Glue Records**.
+Depending on your needs, you can customise your OVHcloud domain name’s DNS servers using **Hosts**.
 
 **This guide explains how to customise your OVHcloud domain name’s DNS servers.**
 
 ## Requirements
 
-- A domain name registered with OVHcloud
+- A [domain name](/links/web/domains) registered with OVHcloud
 - Access to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section
 
 ## Instructions
@@ -37,7 +37,32 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 > Please follow the instructions below carefully, or contact a [specialist provider](/links/partner) if you have any doubts.
 >
 
-### 1 - Retrieve the DNS servers currently used by your domain name <a name="step1"></a>
+### 1 – General rule <a name="step1"></a>
+
+Some registries, such as **Verisign** (which manages the *.com*, *.net* extensions as well as other TLDs), use a technical model called **host objects**.<br>
+In some cases, this model requires that a specific record be created in advance for a DNS server before it can be **used by a domain name**.<br>
+Other registries do not require this record and directly accept the DNS server name.
+
+In general, OVHcloud automatically creates the **host objects** when they are related to a domain name managed by OVHcloud.
+
+> [!warning]
+>
+> **The "Hosts" tab is only required in one specific case**: the DNS server belongs to a domain name managed by OVHcloud and must be used by another domain name that is not managed by OVHcloud *but is governed by the same registry* (for example, two *.com* domain names).
+>
+
+#### Possible cases
+
+| DNS server domain name | Domain name to configure | Host creation by OVHcloud | Manual action required in the "Hosts" menu | Example |
+| ---------------------- | ------------------------ | -------------------------- | ------------------------------------------ | ------- |
+| Managed by OVHcloud | Managed by OVHcloud | Automatic | No | *ns1.example.com* (domain *example.com* managed by OVHcloud) is used as the DNS server for the domain *test.com* (managed by OVHcloud) |
+| Managed by OVHcloud | Managed by OVHcloud | Automatic | No | *ns1.example.com* (domain *example.com* managed by OVHcloud) is used as the DNS server for the domain *test.fr* (managed by OVHcloud) |
+| **Managed by OVHcloud** | **Other registrar** | **Automatic configuration not possible** | **Yes** | ***ns1.example.com* (domain *example.com* managed by OVHcloud) is used as the DNS server for the domain *test.com* (managed by another registrar, same *.com* extension)** |
+| Managed by OVHcloud | Other registrar | N/A | No | *ns1.example.com* (domain *example.com* managed by OVHcloud) is used as the DNS server for the domain *test.fr* (managed by another registrar) |
+| Not managed by OVHcloud | Managed by OVHcloud | Out of scope | No | *ns1.example.net* (domain managed by another registrar) is used as the DNS server for the domain *test.com* (managed by OVHcloud) – the host must be created with the registrar managing *example.net* |
+
+**The third row of the table above is the only scenario where manual creation in the "Hosts" tab is required.**
+
+### 2 - Retrieving the DNS servers currently used by your domain name <a name="step2"></a>
 
 You can retrieve the DNS servers currently used by your domain name using the online DNS tool [Zonemaster](https://zonemaster.net/en).
 
@@ -58,13 +83,13 @@ In our example shown above, the **domain.tld** domain currently uses the followi
 
 If you need more information, please read [our tutorial on the Zonemaster tool](/pages/web_cloud/domains/dns_zonemaster).
 
-### 2 - Add the glue records <a name="step2"></a>
+### 3 - Adding the host records <a name="step3"></a>
 
 > [!warning]
 >
-> The registries for the extensions *.eu*, *.it*, *.be* and *.de* do not consider glue records to be "objects", but rather "attributes".
+> The registries for the extensions *.eu*, *.it*, *.be* and *.de* do not consider host records to be "objects", but rather "attributes".
 >
-> Therefore, for these extensions, skip **directly to [step 3](#step3)** of this guide without completing step 2.
+> Therefore, for these extensions, skip **directly to [step 4](#step4)** of this guide without completing step 2.
 >
 
 > [!success]
@@ -75,7 +100,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 >
 > - You can also create custom DNS servers on a domain name to use with another domain name. For example, you can create *dns1.domain1.tld* and *dns2.domain1.tld* for the domain name *domain2.tld*. You will need to retrieve the DNS servers and their associated IPs from the *domain2.tld*.
 >  
-> In addition, *domain1.tld* must be registered with OVHcloud to set up the glue records.
+> In addition, *domain1.tld* must be registered with OVHcloud to set up the hosts.
 >
 
 To do this, click on the tabs below to view the **4** steps.
@@ -95,11 +120,11 @@ To do this, click on the tabs below to view the **4** steps.
 >>
 > **Step 3**
 >>
->> On the new page, click on the `GLUE`{.action} tab.
+>> On the new page, click on the `Hosts`{.action} tab.
 >>
->> A table will display the glue records currently configured at OVHcloud for your domain name. To add a new glue record, click the `Add`{.action} button.
+>> A table will display the hosts currently configured at OVHcloud for your domain name. To add a new host record, click the `Add`{.action} button.
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add.png){.thumbnail}
+>> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
 > **Step 4**
 >>
@@ -110,26 +135,26 @@ To do this, click on the tabs below to view the **4** steps.
 >> |Host Name|Customise the host name you want to use as a custom DNS server.|
 >> |Target IP(s)|Specify all IP addresses (IPv4 and/or IPv6) to which the host name should resolve. These are IP addresses of the DNS server currently used by your domain name. If there are multiple IP addresses, separate them with *commas*.|
 >>
->> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add-another-glue-record-step-1.png){.thumbnail}
+>> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add-another-glue-record-step-2.png){.thumbnail}
 >>
->> In the image above, taking the example from [step 1](#step1), the glue record you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
+>> In the image above, taking the example from [step 2](#step2), the host you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
 >>
->> For this glue record, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
+>> For this host, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
 >>
->> This glue record is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.net** currently used by the domain name *domain.tld*.
+>> This host is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.net** currently used by the domain name *domain.tld*.
 >>
 >> Once you have entered this information, click the `Next`{.action} button, read the information displayed, then click `Confirm`{.action}. Repeat this step as many times as necessary, depending on the number of DNS servers your domain name uses.
 >>
->> In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*.
+>> In our example, you will need to repeat the operation to create the **dns2.domain.tld** host. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
-### 3 - Create the A and AAAA DNS records corresponding to the custom DNS <a name="step3"></a>
+### 4 - Create the A and AAAA DNS records corresponding to the custom DNS <a name="step4"></a>
 
 You must create the *A* and *AAAA* records for the host names that you defined in the previous step. The *A* and *AAAA* records must target the destination IP address corresponding to the host name created earlier.
 
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are two ways of doing this:
 
 - **If your domain name does not use an active DNS zone with OVHcloud**: Contact the service provider managing it. Once you have made the required changes, please move on to the next step.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `DNS zones`{.action}, then select the domain name you used to create the glue record in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `DNS zones`{.action}, then select the domain name you used to create the hosts in [step 3](#step3). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
@@ -138,7 +163,7 @@ You can do this via the interface given by the service provider managing your do
 > In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network. We recommend that you wait until the end of this period before continuing.
 >
 
-If we go back to our previous example, the GLUE records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
+If we go back to our previous example, the GLUE records that we want to add (from the *domain.tld* domain name) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
 
 As a result, the following records are added to the active DNS zone of the domain name *domain.tld*:
 
@@ -147,7 +172,7 @@ As a result, the following records are added to the active DNS zone of the domai
  - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.net**)
  - An *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.net**)
 
-### 4 - Replace the NS records in your domain name’s active DNS zone
+### 5 - Replacing the NS records in your domain name’s active DNS zone
 
 For the customisation of DNS servers to be visible on the DNS network (by performing a *Whois*, a *dig ns* or through a DNS configuration tool), you will need to replace the *NS* records in your domain name’s active DNS zone.
 
@@ -219,7 +244,7 @@ If necessary, please refer to our guide on [editing an OVHcloud DNS zone](/pages
 > Rest assured, this is the same result and this configuration will work. This phenomenon is generated by the fact that the domain name is the same on both sides of the *NS* record.
 >
 
-### 5 - Modify your domain name’s DNS servers
+### 6 - Modifying your domain name’s DNS servers
 
 You will need to modify your domain name’s DNS servers by replacing the old DNS servers with the custom DNS servers you have created.
 

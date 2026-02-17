@@ -142,7 +142,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
-For **GPT** partitions, line 6 will display: `Disklabel type: gpt`. This information can only been seen when the server is in normal mode.
+For **GPT** partitions, line 6 will display: `Disklabel type: gpt`. This information can only be seen when the server is in normal mode.
 
 Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB.
 
@@ -169,16 +169,22 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-We take note of the devices, partitions and their mount points. From the above commands and results, we have:
+Note the devices, partitions, and mount points, as this is important, especially after replacing a disk. This will allow you to verify that the partitions are correctly mounted on their respective mount points on the new disk.
 
-- Two RAID arrays: `/dev/md2` and `/dev/md4`.
-- Four partitions are part of the RAID with the mount points: `/` and `/home`.
+In our example, we have:
+
+- Partitions part of md2 (`/`): **sda2** and **sdb2**.
+- Partitions part of md4 (`/home`): **sda4** and **sdb4**.
+- Swap partitions: **sda3** and **sdb3**.
+- BIOS boot partitions: **sda1** and **sdb1**.
+
+The `sda5` partition is a [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), i.e. a read-only volume that provides the server with its initial configuration data. It is only read once during initial boot and can be removed afterwards.
 
 <a name="diskfailure"></a>
 
 ### Simulating a disk failure
 
-Now that we have all the necessary information, we can now simulate a disk. In this example, we will fail the disk `sda`.
+Now that we have all the necessary information, we can now simulate a disk failure. In this example, we will fail the disk `sda`.
 
 The preferred way to do this is via the OVHcloud rescue mode environment.
 
@@ -385,7 +391,7 @@ Once the replacement is done, the next step is to copy the partition table from 
 >> The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 >>
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Once this is done, the next step is to randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 sudo sgdisk -G /dev/sdX
@@ -431,7 +437,7 @@ unused devices: <none>
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable).
 
-To add a label the SWAP partition:
+To add a label to the SWAP partition:
 
 ```sh
 [user@server_ip ~]# sudo mkswap /dev/sda4 -L swap-sda4
@@ -442,7 +448,7 @@ Next, retrieve the UUIDs of both SWAP partitions:
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
 /dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-[user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+[user@server_ip ~]# sudo blkid -s UUID /dev/sdb4
 /dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
@@ -451,7 +457,7 @@ We replace the old UUID of the SWAP partition (**sda4**) with the new one in the
 Example:
 
 ```sh
-[user@server_ip ~]# sudo nano etc/fstab
+[user@server_ip ~]# sudo nano /etc/fstab
 
 UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
 UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
@@ -492,7 +498,7 @@ We have now successfully completed the RAID rebuild.
 
 /// details | **Rebuilding the RAID in rescue mode**
 
-If you server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode by our datacentre team.
+If your server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode by our datacentre team.
 
 In this example, we have replaced the disk `sdb`.
 
@@ -527,13 +533,13 @@ Once the disk has been replaced, we need to copy the partition table from the he
 >> sudo sfdisk -d /dev/sda /dev/sdb
 >> ```
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Once this is done, the next step is to randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 sudo sgdisk -G /dev/sdb
 ```
 
-If you the following message:
+If you receive the following message:
  
 ```console
 Warning: The kernel is still using the old partition table.
@@ -573,10 +579,10 @@ unused devices: <none>
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable).
 
-Once the RAID rebuild is complete, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is `md4`.
+Once the RAID rebuild is complete, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is `md2`.
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md2 /mnt
 ```
 
 We add the label to our SWAP partition with the command:
@@ -626,7 +632,7 @@ blkid /dev/sdb4
 Next, we replace the old UUID of the swap partition (**sdb4**) with the new one in `/etc/fstab`:
 
 ```sh
-root@rescue12-customer-eu:/# nano etc/fstab
+root@rescue12-customer-eu:/# nano /etc/fstab
 ```
 
 Example:
@@ -652,7 +658,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Enable the SWAP partition the following command:
+Enable the SWAP partition with the following command:
 
 ```sh
 root@rescue12-customer-eu:/# swapon -av
@@ -671,7 +677,7 @@ We exit the `chroot` environment with exit and reload the system:
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 ```
 
-We umount all the disks:
+We unmount all the disks:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
