@@ -33,7 +33,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 ## Prérequis
 
-- Posséder une offre **MX Plan** ou une offre **E-mail Pro** ou une offre **Exchange**.
+- Posséder une offre **MX Plan**, **E-mail Pro**, **Exchange** ou **Zimbra**.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
 
 ## En pratique
@@ -80,10 +80,10 @@ Voici comment vérifier que vos services sont bien opérationnels :
 
 /// details | Je ne parviens pas à envoyer et/ou recevoir d'e-mails depuis mon logiciel de messagerie (**envoi** et/ou **réception**)
 
-Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception:
+Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception :
 
-1. Depuis un navigateur internet allez sur le [Webmail](/links/web/email) et vérifiez que vous pouvez vous connecter sur l'adresse e-mail conernée.
-2. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé:
+1. Depuis un navigateur internet, connectez-vous au [Webmail](/links/web/email) avec l'adresse e-mail concernée.
+2. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé :
 
 > [!tabs]
 > **Compte e-mail MX Plan**
@@ -97,6 +97,7 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 > **Exchange**
 >>
 >> Pour une offre **Exchange**, dans la section **Microsoft Exchange** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`.
+>>
 > **Zimbra**
 >>
 >> Pour une offre **Zimbra**, dans la section **Zimbra** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration d'une application e-mail sur votre ordinateur` ou de votre smartphone dans `Configurer une application e-mail sur votre smartphone ou tablette`.
@@ -119,7 +120,7 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ///
 
-/// details | Je ne ne parviens pas à me connecter au webmail 
+/// details | Je ne parviens pas à me connecter au webmail
 
 Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](/links/web/emails-hosted-exchange) uniquement).
 
@@ -150,7 +151,7 @@ Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur
 
 - Pour **MXplan**, vérifiez dans la section `E-mails`
 - Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`
-- Pour **Exchange**, dirigez-vous dans la section `Hosted Microsoft`,`Private Microsoft` et `Trusted Microsoft` en fonction de votre offre.
+- Pour **Exchange**, dirigez-vous dans la section `Hosted Microsoft`, `Private Microsoft` et `Trusted Microsoft` en fonction de votre offre.
 - Pour **Zimbra**, dirigez-vous dans la section `Zimbra`
 
 ///
@@ -163,7 +164,7 @@ Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail 
 
 > [!primary]
 >
-> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement. Vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation [Tutoriel - Utilisation de Zonemaster](pages/web_cloud/domains/dns_zonemaster)
+> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement, vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation [Tutoriel - Utilisation de Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
 ///
 
@@ -187,7 +188,7 @@ Il y a quatre valeurs possibles pour le premier chiffre du code de réponse :
 
 > [!primary]
 >
-> Utilisez **Ctrl+F** / **Cmd+F** et saisissez votre code d'erreur pour le retrouver rapidement dans le tableau suivant.  .
+> Utilisez **Ctrl+F** / **Cmd+F** et saisissez votre code d'erreur pour le retrouver rapidement dans le tableau suivant.
 
 Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP utilisés par les serveurs :
 
