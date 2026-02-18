@@ -1,6 +1,6 @@
 ---
 title: 'Envoi ou réception des e-mails impossible'
-excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
+excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou à la réception des e-mails chez OVHcloud"
 updated: 2025-04-28
 ---
 
@@ -23,7 +23,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel de messagerie ou depuis le webmail ?
+Il vous est impossible de recevoir ou d'envoyer vos e-mails depuis votre logiciel de messagerie ou depuis le webmail ?
 
 **Découvrez comment diagnostiquer une erreur d'envoi ou de réception sur votre offre e-mail OVHcloud.**
 
@@ -46,7 +46,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si votre offre e-mail est associée à une offre d'hébergement, vérifiez que celle-ci n'est pas expirée. Vous pouvez vérifier cette information directement dans l'espace client. De la même façon, votre nom de domaine doit lui aussi être actif.
 
-Commencez par vérifier que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
+Commencez par vérifier que vous êtes à jour dans le [paiement](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et le [renouvellement](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
 
 Voici comment vérifier que vos services sont bien opérationnels :
 
@@ -80,15 +80,15 @@ Voici comment vérifier que vos services sont bien opérationnels :
 
 /// details | Je ne parviens pas à envoyer et/ou recevoir d'e-mails depuis mon logiciel de messagerie (**envoi** et/ou **réception**)
 
-Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception :
+Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.) et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception :
 
-1. Depuis un navigateur internet, connectez-vous au [Webmail](/links/web/email) avec l'adresse e-mail concernée.
+1. Depuis un navigateur Internet, connectez-vous au [webmail](/links/web/email) avec l'adresse e-mail concernée.
 2. Vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé :
 
 > [!tabs]
 > **Compte e-mail MX Plan**
 >>
->> Pour une offre **MXplan**, dans la section **E-mails mutualisés - MX Plan** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+>> Pour une offre **MX Plan**, dans la section **E-mails mutualisés - MX Plan** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
 >>
 > **E-mail Pro**
 >>
@@ -114,7 +114,7 @@ Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](/links/web/emails
 
 Pour vous assurer que le dysfonctionnement n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVHcloud. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
 
-Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'adresse [Webmail](/links/web/email).
+Depuis le navigateur de votre ordinateur ou depuis un smartphone, connectez-vous au [webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 > [!tabs]
 > **Compte e-mail MX Plan**
 >>
->> Pour une offre **MXplan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Pour une offre **MX Plan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >>
 > **E-mail Pro**
 >>
@@ -149,7 +149,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 
 Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <https://web-cloud.status-ovhcloud.com/>.
 
-- Pour **MXplan**, vérifiez dans la section `E-mails`
+- Pour **MX Plan**, vérifiez dans la section `E-mails`
 - Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`
 - Pour **Exchange**, dirigez-vous dans la section `Hosted Microsoft`, `Private Microsoft` et `Trusted Microsoft` en fonction de votre offre.
 - Pour **Zimbra**, dirigez-vous dans la section `Zimbra`
@@ -201,10 +201,10 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 >> |---|---|---|
 >> |420|Délai dépassé, problème de connexion|Ce message d'erreur est retourné uniquement par les serveurs mail GroupWise. Contactez l'administrateur du serveur de messagerie de destination|
 >> |421|Service non disponible, canal de transmission en cours de fermeture|Provenance de l'erreur indéterminée, assurez-vous que l'envoi vers un autre domaine fonctionne. Si oui, veuillez réessayer l'envoi initial plus tard|
->> |432|Réception du mail sur le serveur Exchange stoppé|Ce message d'erreur est retourne uniquement par les serveurs mail Microsoft Exchange. Contactez l'administrateur du serveur de messagerie de destination|
+>> |432|Réception du mail sur le serveur Exchange stoppé|Ce message d'erreur est retourné uniquement par les serveurs mail Microsoft Exchange. Contactez l'administrateur du serveur de messagerie de destination|
 >> |449|Une erreur de routage|Ce message d'erreur est retourné uniquement par les serveurs mail Microsoft Exchange. Microsoft recommande d'effectuer un diagnostic avec leur outil WinRoute|
->> |450|Action de messagerie demandée non effectuée : boîte mail indisponible (par exemple, boîte mail occupée ou temporairement bloquée pour des raisons de sécurité ou de blacklistage)|Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/)), et vérifiez également si votre mail ne comporte pas des mots se référant à du SPAM.|
->> |451|Action requise abandonnée : Erreur de traitement local|Cela peut être dû à une surcharge momentanée, ou à une vérification du SPF du domaine émetteur incorrecte. Référez-vous au message complémentaire fourni par le serveur, ou contactez l'administrateur de celui-ci si cela persiste|
+>> |450|Action de messagerie demandée non effectuée : boîte mail indisponible (par exemple, boîte mail occupée ou temporairement bloquée pour des raisons de sécurité ou de blacklistage)|Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([Spamhaus](https://check.spamhaus.org/)), et vérifiez également si votre mail ne comporte pas de mots assimilés à du spam.|
+>> |451|Action requise abandonnée : Erreur de traitement local|Cela peut être dû à une surcharge momentanée ou à une vérification du SPF du domaine émetteur incorrecte. Référez-vous au message complémentaire fourni par le serveur, ou contactez l'administrateur de celui-ci si cela persiste|
 >> |452|Action demandée non effectuée : système de stockage insuffisant|Votre serveur de messagerie est « surchargé ». Cela pourrait également être causé par un trop grand nombre de messages qui tentent d'être envoyés à la fois. Veuillez vérifier votre boîte d'envoi puis réessayez|
 >> |455|Serveur incapable de recevoir les paramètres|Patientez quelque temps puis effectuez une nouvelle tentative. En cas d'échec, contactez l'administrateur du serveur de messagerie du destinataire|
 >>
@@ -214,20 +214,20 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 >>
 >> |Codes réponse|Détails|Actions|
 >> |---|---|---|
->> |500|Erreur de syntaxe, commande non reconnue (Cela peut inclure des erreurs comme une ligne de commande trop longue)|Cela est souvent causé par l'antivirus ou le firewall de l'expéditeur. Vérifiez cela puis essayez à nouveau|
->> |501|Erreur de syntaxe dans les paramètres ou les arguments|Cela est souvent causé par une adresse e-mail de destinataire erronée ou un problème d'antivirus ou firewall côté expéditeur. Veuillez vérifier l'adresse de destination ainsi que votre antivirus ou firewall|
+>> |500|Erreur de syntaxe, commande non reconnue (Cela peut inclure des erreurs comme une ligne de commande trop longue)|Cela est souvent causé par l'antivirus ou le pare-feu de l'expéditeur. Vérifiez cela puis essayez à nouveau|
+>> |501|Erreur de syntaxe dans les paramètres ou les arguments|Cela est souvent causé par une adresse e-mail de destinataire erronée ou un problème d'antivirus ou de pare-feu côté expéditeur. Veuillez vérifier l'adresse de destination ainsi que votre antivirus ou pare-feu|
 >> |502|Commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
->> |503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû à un problème d'authentification, assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
->> |504|Paramètre de commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
->> |535|Echec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte à été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) pour plus d'informations.|
->> |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifier l'adresse e-mail du destinataire, et/ou réessayez à nouveau|
->> |550 5.7.1|Email rejected per policy reason|Le serveur de messagerie de destination à rejeté l'adresse e-mail d'expédition pour des raisons de politique de sécurité. Ces raisons peuvent être multiples, elles sont généralement détaillées avec le code erreur. Dans certains cas, il peut s'agir d'une adresse IP dans la chaine de transmission qui est présente dans une liste de rejet. Pour vérifier la réputation d'une adresse IP, vous pouvez la tester, par exemple, sur [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) ou vérifier la chaine de transmission d'un e-mail depuis l'adresse e-mail concernée avec [Mailtester](https://www.mail-tester.com/)|
->> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*| L'e-mail a été rejeté car le service e-mail de l'expéditeur n'a pas de SPF ou de DKIM configuré sur son nom de domaine.<br><br>Il est conseillé de mettre en place en priorité un enregistrement SPF, celui-ci étant compatible avec l'ensemble des offres e-mail. Utilisez notre guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) ».<br><br>Si votre offre e-mail dispose de l'option DKIM, vous pouvez la mettre en place à l'aide de notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) ».|
->> |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
->> |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
+>> |503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû à un problème d'authentification. Assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
+>> |504|Paramètre de commande non implémenté|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
+>> |535|Échec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte a été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) pour plus d'informations.|
+>> |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifiez l'adresse e-mail du destinataire et réessayez|
+>> |550 5.7.1|Email rejected per policy reason|Le serveur de messagerie de destination a rejeté l'adresse e-mail d'expédition pour des raisons de politique de sécurité. Ces raisons peuvent être multiples, elles sont généralement détaillées avec le code d'erreur. Dans certains cas, il peut s'agir d'une adresse IP dans la chaîne de transmission qui est présente dans une liste de rejet. Pour vérifier la réputation d'une adresse IP, vous pouvez la tester, par exemple, sur [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) ou vérifier la chaîne de transmission d'un e-mail depuis l'adresse e-mail concernée avec [Mailtester](https://www.mail-tester.com/)|
+>> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|L'e-mail a été rejeté car le service e-mail de l'expéditeur n'a pas de SPF ou de DKIM configuré sur son nom de domaine.<br><br>Il est conseillé de mettre en place en priorité un enregistrement SPF, celui-ci étant compatible avec l'ensemble des offres e-mail. Utilisez notre guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) ».<br><br>Si votre offre e-mail dispose de l'option DKIM, vous pouvez la mettre en place à l'aide de notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) ».|
+>> |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé, pour une raison quelconque, à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
+>> |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution consiste à contacter le destinataire par un autre moyen|
 >> |553|Action demandée non effectuée : adresse e-mail non autorisée|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|
->> |554|Transaction échouée, "Aucun service SMTP ici"|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/))|
->> |555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVHcloud : 200 mails /heure /compte et 300 mails /heure /ip|
+>> |554|Transaction échouée, "Aucun service SMTP ici"|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([Spamhaus](https://check.spamhaus.org/))|
+>> |555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en œuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVHcloud : 200 mails/heure/compte et 300 mails/heure/IP|
 
 ///
 
