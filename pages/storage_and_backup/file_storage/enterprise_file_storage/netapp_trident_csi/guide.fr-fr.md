@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Premiers pas avec Trident CSI
 excerpt: "Déployez NetApp Trident CSI sur OVHcloud Enterprise File Storage pour gérer les volumes et les snapshots dans Kubernetes"
-updated: 2026-02-17
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -30,7 +30,7 @@ Avant de commencer, assurez-vous que votre environnement répond aux critères s
 
 **Connectivité**
 
-- **Une passerelle (gateway)** est requise pour que les nœuds MKS puissent joindre l'API OVH
+- **Une passerelle (gateway)** est requise pour que les nœuds MKS puissent joindre l'API OVHcloud
 
 ![Schéma des prérequis Trident](images/trident_efs_requirements.excalidraw.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Avant de commencer, assurez-vous que votre environnement répond aux critères s
 >
 > **Note :** Les régions EFS et MKS peuvent être différentes ; sachez que la latence entre les différentes régions peut impacter les performances de vos charges de travail de stockage.
 >
-> **Il est fortement recommandé de garder les resources de stockage et les resources de calcul aussi proches que possible.**
+> **Il est fortement recommandé de garder les ressources de stockage et les ressources de calcul aussi proches que possible.**
 >
 
 ## En pratique
@@ -136,70 +136,70 @@ Configurez une politique IAM qui devra contenir les éléments suivants : le ser
 >> >
 >>
 >> ```json
->>{
->>  "description": "Trident CSI",
->>  "identities": [
->>    "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
->>  ],
->>  "name": "trident-policy",
->>  "permissions": {
->>    "allow": [
->>      {
->>        "action": "storageNetApp:apiovh:get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:serviceInfos/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/accessPath/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/edit"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/extend"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/revertToSnapshot"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/edit"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/get"
->>      }
->>    ]
->>  },
->>  "resources": [
->>    {
->>      "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
->>    }
->>  ]
->>}
+>> {
+>>   "description": "Trident CSI",
+>>   "identities": [
+>>     "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
+>>   ],
+>>   "name": "trident-policy",
+>>   "permissions": {
+>>     "allow": [
+>>       {
+>>         "action": "storageNetApp:apiovh:get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:serviceInfos/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/accessPath/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/edit"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/extend"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/revertToSnapshot"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/edit"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/get"
+>>       }
+>>     ]
+>>   },
+>>   "resources": [
+>>     {
+>>       "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+>>     }
+>>   ]
+>> }
 >> ```
 >>
 >> L'API répondra avec les détails de la politique créée :
@@ -222,72 +222,72 @@ Configurez une politique IAM qui devra contenir les éléments suivants : le ser
 >> >
 >>
 >> ```bash
->>cat <<EOF | ovhcloud iam policy create --from-file -
->>{
->>  "description": "Trident CSI",
->>  "identities": [
->>    "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
->>  ],
->>  "name": "trident-policy",
->>  "permissions": {
->>    "allow": [
->>      {
->>        "action": "storageNetApp:apiovh:get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:serviceInfos/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/accessPath/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/acl/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/edit"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/extend"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/get"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/revertToSnapshot"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/create"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/delete"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/edit"
->>      },
->>      {
->>        "action": "storageNetApp:apiovh:share/snapshot/get"
->>      }
->>    ]
->>  },
->>  "resources": [
->>    {
->>      "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
->>    }
->>  ]
->>}
->>EOF
+>> cat <<EOF | ovhcloud iam policy create --from-file -
+>> {
+>>   "description": "Trident CSI",
+>>   "identities": [
+>>     "urn:v1:eu:identity:credential:xx11111-ovh/oauth2-EU.xxxxxxxxxxxxxxxx"
+>>   ],
+>>   "name": "trident-policy",
+>>   "permissions": {
+>>     "allow": [
+>>       {
+>>         "action": "storageNetApp:apiovh:get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:serviceInfos/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/accessPath/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/acl/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/edit"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/extend"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/get"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/revertToSnapshot"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/create"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/delete"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/edit"
+>>       },
+>>       {
+>>         "action": "storageNetApp:apiovh:share/snapshot/get"
+>>       }
+>>     ]
+>>   },
+>>   "resources": [
+>>     {
+>>       "urn": "urn:v1:eu:resource:storageNetApp:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+>>     }
+>>   ]
+>> }
+>> EOF
 >> ```
 >>
 >> La CLI répondra avec le retour ci-dessous :
@@ -581,7 +581,7 @@ Le snapshot est créé sur le service Enterprise File Storage et peut être util
 ## Dépannage
 
 - **Backend non lié** : Vérifiez que les identifiants IAM (clientId/clientSecret) sont corrects et que la politique IAM accorde toutes les permissions requises.
-- **PVC bloqué en Pending** : Vérifiez que tous les pods Trident sont en état `Running`, que le backend est en état `Bound` et que la `StorageClass` référence le bon type de backend. Consultez les erreurs dans les logs des pods Trident avec `kubectl logs -n trident <nom-du-pod>`
+- **PVC bloqué en Pending** : Vérifiez que tous les pods Trident sont en état `Running`, que le backend est en état `Bound` et que la `StorageClass` référence le bon type de backend. Consultez les erreurs dans les logs des pods Trident avec `kubectl logs -n trident <nom-du-pod>`.
 - **Problèmes de connectivité réseau** : Vérifiez que le cluster MKS peut joindre le service Enterprise File Storage via le vRack.
 
 ## Aller plus loin
