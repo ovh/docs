@@ -110,7 +110,7 @@ This section offers several configuration options. For the purpose of this guide
 >>
 >> You can keep the default private IP range or use a different one.
 >>
->> Select "Enable DHCP for this private network" to automatically configure the instance’s private IP address. You will then only need to configure the dedicated server’s network interfaces.
+>> Select "Enable DHCP for this private network" to automatically assign and configure the private IP address on the instance. You will then only need to configure the dedicated server’s network interfaces.
 >>
 >> When this option is not selected, manual configuration is required on both the Public cloud instance and the dedicated server.
 >>
@@ -132,7 +132,7 @@ In the popup window, select the private network(s) to attach to your instance an
 ### Configure your network interfaces
 
 > [!primary]
-> If you selected to configure the private network on your instance using DHCP, you do not need to manually configure the network interface on the instance.
+> If you chose the option to configure the private network on your instance using DHCP, you only need to configure the network interfaces on the dedicated server.
 > 
 
 #### Configuration when using the default VLAN ID 0
@@ -218,7 +218,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >>
 >> Once you have identified your private network interface, use the following command to create a network configuration file. 
 >>
->> Replace `NETWORK_INTERFACE` with your own value.
+>> Replace `NETWORK_INTERFACE` with the name of your private interface.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -256,7 +256,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> Restart the networking service to apply the changes:
 >>
 >> ```bash
->> sudo systemctl restart NetworkManager.service
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Fedora 42+, AlmaLinux and Rocky Linux (10)**
@@ -430,7 +430,7 @@ In this example, we'll use **10** as the VLAN ID (tag), and **192.168.0.0/16** a
 >> ip a
 >> ```
 >> 
->> In this example, the private interface is `eno2`.
+>> In this example, the private network interface is identified as `eno2`.
 >>
 >> - Next, create a VLAN subinterface for the network interface (non-persistent configuration) and assign (tag) it the VLAN ID. In this example, the VLAN ID is 10.
 >>
