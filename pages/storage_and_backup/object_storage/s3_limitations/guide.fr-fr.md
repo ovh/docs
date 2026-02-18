@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Limites techniques
 excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage"
-updated: 2024-11-12
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -18,11 +18,14 @@ Retrouvez ici les limites techniques relatives à l'offre Object Storage.
 
 Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
-### Nombre maximum de requêtes par seconde en écriture sur un bucket
+### Nombre maximal par défaut de requêtes par seconde en écriture et lecture sur un bucket
 
-300 (au-delà de ce nombre, la qualité de service n'est plus garantie).
+Default maximum number of write and read requests per second on a bucket
 
-Cette valeur maximale est une limite souple qui peut être facilement dépassée en adoptant les bonnes pratiques pour répartir les E/S le plus largement possible dans le cluster de stockage objet, en tirant parti du **mécanisme de *sharding***.
+- PUT: 300 requêtes par seconde
+- GET: 900 requêtes par seconde
+
+Il est important de rappeler que ces valeurs maximales sont des *"soft limits"* et peuvent être facilement dépassées en adoptant de bonnes pratiques pour répartir les E/S le plus largement possible dans le cluster de stockage objet, en tirant parti du **mécanisme de *sharding***. En effet, un ramp-up progressif des requêtes permet de maximiser les performances et de capitaliser sur ce *sharding* natif de l’infrastructure. En d’autres termes, les limitations peuvent être levées grâce à une bonne répartition des noms des prefixes/clés d’objets et ainsi atteindre des milliers de requêtes par seconde tant en lecture qu’en écriture. 
 
 Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
