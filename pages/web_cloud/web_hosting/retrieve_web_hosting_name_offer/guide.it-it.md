@@ -6,8 +6,8 @@ updated: 2026-02-18
 
 ## Obiettivo
 
-Non ricordi più il nome della tua [offerta di hosting web](/links/web/hosting) ?
-Vuoi consultare i suoi dettagli o confrontarla con un'altra offerta ?
+Non ricordi più il nome della tua [offerta di hosting web](/links/web/hosting)?
+Vuoi consultare i suoi dettagli o confrontarla con un'altra offerta?
 
 Nell'utilizzo dei tuoi servizi, potresti aver bisogno del nome della tua offerta di hosting web.
 
@@ -15,8 +15,8 @@ Nell'utilizzo dei tuoi servizi, potresti aver bisogno del nome della tua offerta
 
 ## Prerequisiti
 
-- Disporre di un' [offerta di hosting web](/links/web/hosting).
-- Essere connessi al vostro [Spazio Cliente OVHcloud](/links/manager).
+- Disporre di un'[offerta di hosting web](/links/web/hosting).
+- Essere connesso al tuo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
@@ -47,7 +47,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 
 [Hosting Web - Come far evolvere la tua offerta](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

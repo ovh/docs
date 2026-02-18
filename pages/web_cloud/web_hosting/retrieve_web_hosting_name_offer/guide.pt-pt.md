@@ -1,37 +1,37 @@
 ---
 title: "Como encontrar o nome da sua oferta de alojamento web"
-excerpt: "Saiba como identificar o tipo de oferta de alojamento web que possui a partir do seu área de cliente OVHcloud"
+excerpt: "Saiba como identificar o tipo de oferta de alojamento web que possui a partir da sua Área de cliente OVHcloud"
 updated: 2026-02-18
 ---
 
 ## Objetivo
 
-Já não se recorda do nome da sua [oferta de alojamento web](/links/web/hosting) ?
-Deseja consultar os seus detalhes ou compará-la com outra oferta ?
+Já não se recorda do nome da sua [oferta de alojamento web](/links/web/hosting)?
+Deseja consultar os seus detalhes ou compará-la com outra oferta?
 
 Ao longo da utilização dos seus serviços, pode ter necessidade do nome da sua oferta de alojamento web.
 
-**Saiba como identificar o tipo de oferta de alojamento web que possui a partir do seu área de cliente OVHcloud.**
+**Saiba como identificar o tipo de oferta de alojamento web que possui a partir da sua Área de cliente OVHcloud.**
 
 ## Requisitos
 
 - Ter uma [oferta de alojamento web](/links/web/hosting).
-- Estar autenticado no seu [área de cliente OVHcloud](/links/manager).
+- Estar autenticado na sua [Área de cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Clique nas janelas abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e, em seguida, à secção `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web pretendido.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -41,14 +41,14 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 >>
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
->> Sob esta menção, encontrará o nome da sua oferta de alojamento web (por exemplo: Perso, Pro, Performance, etc.).
+>> Abaixo desta menção, encontrará o nome da sua oferta de alojamento web (por exemplo: Perso, Pro, Performance, etc.).
 
 ## Quer saber mais? <a name="go-further"></a>
 
 [Alojamento web - Como atualizar a sua oferta](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).
