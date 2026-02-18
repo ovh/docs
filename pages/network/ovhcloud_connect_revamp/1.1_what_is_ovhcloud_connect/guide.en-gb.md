@@ -48,3 +48,4 @@ Once the physical link is established, routing is configured using **BGP (Border
 - See the list of [Providers](../1.3_providers/guide.en-gb.md) available for managed connectivity
 - Jump to the [Quick Start guides: Direct](../2.1_quick_start_direct/guide.en-gb.md) to get connected
 - Jump to the [Quick Start guides: Provider](../2.1_quick_start_direct/guide.en-gb.md) to get connected
+ 
