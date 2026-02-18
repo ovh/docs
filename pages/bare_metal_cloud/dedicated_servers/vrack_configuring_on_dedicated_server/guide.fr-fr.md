@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2025-04-28
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -79,7 +79,7 @@ link ether f0:00:00:ef:0e:f0
 #### Configurations GNU/Linux
 
 > [!tabs]
-> **Debian (hors Debian 12)**
+> **Debian 11**
 >>
 >> Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 >>
@@ -110,7 +110,7 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **Ubuntu et  Debian 12**
+> **Ubuntu et Debian 12+**
 >>
 >> A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
 >>
@@ -147,12 +147,26 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **CentOS, AlmaLinux et RockyLinux**
+> **AlmaLinux et Rocky Linux (8/9)**
 >>
->> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+>> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. 
+>>
+>> Remplacez `NETWORK_INTERFACE` par votre propre valeur.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> ```
+>>
+>> Par exemple, si l'interface privée est nommée `eth1`, nous avons ce qui suit :
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> Ensuite, utilisez l'éditeur de texte de votre choix pour modifier ce fichier.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 >> ```
 >>
 >> Ajoutez ces lignes, en remplaçant `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
@@ -175,18 +189,12 @@ link ether f0:00:00:ef:0e:f0
 >> Redémarrez le service réseau pour appliquer les modifications :
 >>
 >> ```bash
->> sudo systemctl restart networking
->> ```
->>
->> Sous **CentOS 8, AlmaLinux et RockyLinux**, utilisez cette commande :
->>
->> ```bash
 >> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **Fedora**
+> **Fedora 42+, AlmaLinux ET Rocky Linux (10)**
 >>
 >> Une fois que vous avez identifié le nom de votre interface privée (comme expliqué [ici](#vrack-interface)), lancez la commande suivante pour vérifiez qu'elle est bien connectée. Dans notre exemple, notre interface est appelée `eno2` :
 >>

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack on your dedicated servers'
 excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
-updated: 2025-04-28
+updated: 2026-02-18
 ---
 
 ## Objective
@@ -82,7 +82,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 #### GNU/Linux configurations
 
 > [!tabs]
-> **Debian (excluding Debian 12)**
+> **Debian 11**
 >> 
 >> Using a text editor of your choice, open the network configuration file located in `/etc/network/interfaces.d` for editing. Here the file is called `50-cloud-init`.
 >>
@@ -113,7 +113,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >>
 >> Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 >>
-> **Ubuntu & Debian 12**
+> **Ubuntu & Debian 12+**
 >>
 >> Using a text editor of your choice, open the network configuration file located in `/etc/netplan/` for editing. Here the file is called `50-cloud-init.yaml`.
 >>
@@ -150,7 +150,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >>
 >> Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 >>
-> **CentOS, AlmaLinux and RockyLinux**
+> **AlmaLinux and Rocky Linux (8/9)**
 >>
 >> Once you have identified your private network interface, use the following command to create a network configuration file. 
 >>
@@ -183,7 +183,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> TYPE=Ethernet
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ![centos config](images/centos_alma_configuration.png){.thumbnail}
 >>
@@ -192,18 +192,12 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> Restart the networking service to apply the changes:
 >>
 >> ```bash
->> sudo systemctl restart networking
->> ```
->>
->> On **CentOS 8, AlmaLinux and RockyLinux**, use this command:
->>
->> ```bash
 >> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 >>
-> **Fedora**
+> **Fedora 42+, AlmaLinux and Rocky Linux (10)**
 >>
 >> Once you have identified the name of your private interface (as explained [here](#vrack-interface)), verify that is it connected. In our example, our interface is called `eno2`:
 >>
@@ -234,7 +228,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> nmcli connection add type ethernet con-name private-interface ifname eno2
 >> ```
 >>
->> Check that the interface has been connected correctly:
+>> - Check that the interface has been connected correctly:
 >> 
 >> ```bash
 >> $ nmcli device status
@@ -261,7 +255,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
->> **example**
+>> **Example:**
 >>
 >> ```bash
 >> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
@@ -273,7 +267,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> sudo nmcli connection modify CONNECTION_NAME IPv4.method manual
 >> ```
 >>
->> **example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli connection modify private-interface IPv4.method manual
@@ -285,7 +279,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> sudo nmcli con mod CONNECTION_NAME connection.autoconnect true
 >> ```
 >>
->> **example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli con mod private-interface connection.autoconnect true
@@ -296,6 +290,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> ```bash
 >> sudo systemctl restart NetworkManager
 >> ```
+>>
 
 #### Windows configuration 
 
