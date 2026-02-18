@@ -10,7 +10,10 @@ The guide will provide a clear, step-by-step reference for deploying and configu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [Enterprise File Storage](/links/storage/enterprise-file-storage) service in your OVHcloud account
+- An [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes) cluster
+- A [vRack](/links/network/vrack) with [vRack Services](/pages/network/vrack_services/global) configured
+- Familiarity with the [OVHcloud APIs](/pages/manage_and_operate/api/first-steps) and/or the [OVHcloud CLI](/pages/manage_and_operate/cli/cli-getting-started)
 
 Before beginning, ensure your environment meets the following criteria:
 

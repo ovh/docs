@@ -10,7 +10,10 @@ Ce guide a pour objectif de fournir une référence claire et pas-à-pas pour d�
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager)
+- Un service [Enterprise File Storage](/links/storage/enterprise-file-storage) dans votre compte OVHcloud
+- Un cluster [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes)
+- Un [vRack](/links/network/vrack) avec [vRack Services](/pages/network/vrack_services/global) configuré
+- Connaître les [API OVHcloud](/pages/manage_and_operate/api/first-steps) et/ou la [CLI OVHcloud](/pages/manage_and_operate/cli/cli-getting-started)
 
 Avant de commencer, assurez-vous que votre environnement répond aux critères suivants :
 
