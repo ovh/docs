@@ -41,7 +41,7 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 >> Tout d'abord, établissez une connexion SSH vers votre serveur et exécutez les commandes suivantes depuis la ligne de commande pour installer le paquet VLAN sur votre serveur :
 >>
 >> ```sh
->> sudo update
+>> sudo apt update
 >> sudo apt install vlan
 >> ```
 >>
@@ -272,7 +272,7 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Fedora 42+, Alma Linux et RockyLinux (10)**
+> **Fedora 42+, AlmaLinux et Rocky Linux (10)**
 >>
 >> La configuration ci-dessous est basée sur Fedora 43.
 >>

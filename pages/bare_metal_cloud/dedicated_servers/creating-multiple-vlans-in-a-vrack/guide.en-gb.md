@@ -41,7 +41,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >> First, establish an SSH connection to your server and run the following commands from the command line to install the VLAN package on your server:
 >>
 >> ```sh
->> sudo update
+>> sudo apt update
 >> sudo apt install vlan
 >> ```
 >>
@@ -155,7 +155,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >> network: {config: disabled}
 >> ```
 >>
->> Retrieve the network interface name and it's MAC address:
+>> Retrieve the network interface name and its MAC address:
 >>
 >> ```sh
 >> ip a
@@ -272,7 +272,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >> sudo systemctl restart NetworkManager
 >> ```
 >>
-> **Fedora 42+, Alma Linux and RockyLinux (10)**
+> **Fedora 42+, AlmaLinux and Rocky Linux (10)**
 >>
 >> The configuration below is based on Fedora 43.
 >>
@@ -349,7 +349,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> Once done, a configuration file for the VLAN interface is created. This file is located at `/etc/NetworkManager/system-connections/` and follows the naming format `vlan-name.nmconnection`.
 >>
->> For multiple VLANs, multiple configutation files will be created:
+>> For multiple VLANs, multiple configuration files will be created:
 >>
 >> - Overview:
 >>
