@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud API and Storage (EN)'
 excerpt: 'Find out what the OVHcloud API provides in order to customize the disks, hardware/software RAID and partitioning configuration during the server OS reinstallation'
-updated: 2026-02-17
+updated: 2026-02-18
 ---
 
 ## Objective
@@ -498,7 +498,7 @@ In this example, the `/` mount point will target a ZFS dataset in a zpool named 
 
 > [!primary]
 >
-> If zpool name not specified, a custom zpool name will be automatically generated.
+> If the zpool name is not specified, a custom zpool name will be automatically generated. By default, the algorithm attempts to group different datasets within the same zpool, except for datasets containing `/` or `/boot` which are placed in separate zpools. This allows advanced ZFS features that are incompatible with the bootloader to be enabled on the other zpools.
 >
 
 <br />
