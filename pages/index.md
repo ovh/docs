@@ -1706,7 +1706,7 @@
             + [Activating email addresses included in your Web Hosting plan](web_cloud/web_hosting/activate-email-hosting)
             + [Responsibility sharing for the Web Hosting service](web_cloud/web_hosting/raci-web-hosting)
             + [Web Hosting - How to find your cluster and/or filer](web_cloud/web_hosting/how_to_know_cluster_and_filer)
-            + [How to find the name of your web hosting plan](web_cloud/web_hosting/retrieve_web_hosting_name_offer)
+            + [How to find the name of your web hosting offer](web_cloud/web_hosting/retrieve_web_hosting_name_offer)
         + [Configuration](products/web-cloud-hosting-configuration)
             + [Hosting multiple websites on your Web Hosting plan](web_cloud/web_hosting/multisites_configure_multisite)
             + [Configuring and using Git with an OVHcloud web hosting plan](web_cloud/web_hosting/git_integration_webhosting)
