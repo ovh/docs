@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack entre Public Cloud et un serveur dédié'
 excerpt: 'Découvrez comment configurer un réseau privé entre une instance Public Cloud et un serveur dédié.'
-updated: 2026-02-17
+updated: 2026-02-18
 ---
 
 ## Objectif
@@ -108,8 +108,17 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 >>
 >> Vous pouvez conserver la plage IP privée par défaut ou en utiliser une autre.
 >>
+>>
+>> Sélectionnez « Activer DHCP pour ce réseau privé » pour configurer automatiquement l'adresse IP privée de l'instance. Vous n'aurez alors plus qu'à configurer les interfaces réseau du serveur dédié.
+>>
+>> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance de cloud public et sur le serveur dédié.
+>>
+>> **Options de passerelle réseau**
+>>
+>> Assurez-vous que les deux options sont décochées.
+>>
 
-Une fois la configuration terminée, cliquez sur `Créer`{.action}. Cette opération peut prendre quelques minutes.
+Une fois la configuration terminée, cliquez sur `Configurez votre réseau privé`{.action}. Cette opération peut prendre quelques minutes.
 
 Dans le tableau de bord de l'instance concernée, localisez la section « Réseaux » et cliquez sur le bouton `...`{.action} à côté de « Réseau(x) privé(s) ». Sélectionnez `Attacher un réseau`{.action}.
 
@@ -121,7 +130,266 @@ Dans la fenêtre qui apparaît, sélectionnez le ou les réseaux privés à atta
 
 ### Configurer vos interfaces réseau
 
-Configurez ensuite les interfaces réseau sur votre serveur dédié.
+> [!primary]
+> Si vous avez choisi de configurer le réseau privé sur votre instance à l'aide du protocole DHCP, vous n'avez pas besoin de configurer manuellement l'interface réseau sur l'instance.
+>
+
+#### Configuration en cas d'utilisation du VLAN ID 0 par défaut
+
+Avant de commencer, connectez-vous à votre serveur via SSH et listez vos interfaces réseau à l'aide de la commande suivante :
+
+```bash
+ip a
+```
+
+Pour les serveurs dédiés, repérez la ligne qui commence par ```link ether``` et vérifiez que cette interface correspond à l'interface **Privée** répertoriée dans l'onglet `Interfaces réseau`{.action} du tableau de bord de votre serveur.
+
+Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eth1`).
+
+À titre d'exemple, nous utiliserons la plage d'adresses IP `192.168.0.0/16` (**masque de sous-réseau** : `255.255.0.0`).
+
+> [!tabs]
+> **Debian 11**
+>>
+>> Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
+>>
+>> ```bash
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>> ```
+>>
+>> Ajoutez les lignes suivantes à la configuration existante, remplacez `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
+>>
+>> ```console
+>> auto NETWORK_INTERFACE
+>> iface NETWORK_INTERFACE inet static
+>>    address IP_ADDRESS
+>>    netmask NETMASK
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ![debian config](images/debian_configuration.png){.thumbnail}
+>>
+>> Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+>>
+>> Redémarrez le service réseau pour appliquer la configuration :
+>>
+>> ```bash
+>> sudo systemctl restart networking
+>> ```
+>>
+> **Ubuntu et Debian 12+**
+>>
+>> A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
+>>
+>> ```bash
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>>
+>> Ajoutez les lignes suivantes à la configuration existante après la ligne `version: 2`. Remplacez `NETWORK_INTERFACE` et `IP_ADDRESS/PREFIX` par vos propres valeurs.
+>>
+>> ```yaml
+>>    ethernets:
+>>        NETWORK_INTERFACE:
+>>           dhcp4: false
+>>            addresses:
+>>              - IP_ADDRESS/PREFIX
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ![netplan config](images/netplan_configuration.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace doit être utilisée.
+>> >
+>>
+>> Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+>>
+>> Appliquez la configuration :
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>>
+> **AlmaLinux et Rocky Linux (8/9)**
+>>
+>> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. 
+>>
+>> Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> ```
+>>
+>> Par exemple, si l'interface privée est nommée `eth1`, nous avons ce qui suit :
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> Ensuite, utilisez l'éditeur de texte de votre choix pour modifier ce fichier.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> Ajoutez ces lignes, en remplaçant `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
+>>
+>> ```console
+>> DEVICE=NETWORK_INTERFACE
+>> BOOTPROTO=static
+>> IPADDR=IP_ADDRESS
+>> NETMASK=NETMASK
+>> ONBOOT=yes
+>> TYPE=Ethernet
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ![centos config](images/centos_alma_configuration.png){.thumbnail}
+>>
+>> Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+>>
+>> Redémarrez le service réseau pour appliquer les modifications :
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager.service
+>> ```
+>>
+> **Fedora 42+, AlmaLinux et Rocky Linux (10)**
+>>
+>> Une fois que vous avez identifié le nom de votre interface privée, lancez la commande suivante pour vérifiez qu'elle est bien connectée. Dans notre exemple, notre interface est appelée `eno2` :
+>>
+>> ```bash 
+>> $ nmcli device status
+>>
+>> DEVICE           TYPE      STATE                   CONNECTION
+>> eno1             ethernet  connected               cloud-init eno1
+>> lo               loopback  connected (externally)  lo
+>> eno2             ethernet  disconnected            --
+>> ```
+>>
+>> Si le `STATE` du `DEVICE` apparaît comme `disconnected`, il est nécessaire de le connecter avant de configurer l'IP.
+>>
+>> Lors de l'ajout d'une connexion **ethernet**, nous devons créer un profil de configuration que nous assignons ensuite à un périphérique.
+>>
+>> Exécutez la commande suivante, en remplaçant `INTERFACE_NAME` et `CONNECTION_NAME` par vos propres valeurs.
+>>
+>> Dans notre exemple, nous avons nommé notre profil de configuration `private-interface`.
+>>
+>> ```bash
+>> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ```bash
+>> nmcli connection add type ethernet con-name private-interface ifname eno2
+>> ```
+>>
+>> - Vérifiez que l'interface a été correctement connectée :
+>>
+>> ```bash
+>> $ nmcli device status
+>>
+>> DEVICE           TYPE      STATE                   CONNECTION
+>> eno1             ethernet  connected               cloud-init eno1
+>> eno2             ethernet  connected               private-interface
+>> lo               loopback  connected (externally)  lo              
+>> ```
+>>
+>> Une fois cela fait, un nouveau fichier de configuration nommé *xxxxxxxxxx.nmconnection* sera créé dans le dossier `/etc/NetworkManager/system-connections`.
+>>
+>> ```bash
+>> [user@server ~]$ cd /etc/NetworkManager/system-connections
+>> [user@server system-connections]$ ls
+>> cloud-init-eno1.nmconnection  private-interface.nmconnection
+>> ```
+>>
+>> Vous pouvez alors éditer ce fichier en utilisant le gestionnaire `nmcli`, en remplaçant `IP_ADDRESS`, `PREFIX` et `CONNECTION_NAME` par vos propres valeurs.
+>>
+>> - Ajoutez votre IP :
+>>
+>> ```bash
+>> nmcli connection modify CONNECTION_NAME IPv4.address IP_ADDRESS/PREFIX
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ```bash
+>> nmcli connection modify private-interface IPv4.address 192.168.0.1/16
+>> ```
+>>
+>> - Changez la configuration de **auto** à **manual** :
+>>
+>> ```bash
+>> sudo nmcli connection modify CONNECTION_NAME IPv4.method manual
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ```bash
+>> sudo nmcli connection modify private-interface IPv4.method manual
+>> ```
+>>
+>> - Rendez la configuration persistante :
+>>
+>> ```bash
+>> sudo nmcli con mod CONNECTION_NAME connection.autoconnect true
+>> ```
+>>
+>> **Exemple :**
+>>
+>> ```bash
+>> sudo nmcli con mod private-interface connection.autoconnect true
+>> ```
+>>
+>> - Redémarrez votre réseau avec la commande suivante :
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
+> **Configuration Windows**
+>>
+>> Connectez-vous à votre serveur Windows via le bureau à distance et allez dans le **Panneau de configuration**.
+>>
+>> ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
+>>
+>> Cliquez sur `Network and Internet`{.action}.
+>>
+>> ![Réseau et Internet](images/windows_network_and_internet.png){.thumbnail}
+>>
+>> Ouvrez `Network and Sharing Center`{.action}.
+>>
+>> ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
+>>
+>> Cliquez sur `Change Adapter Settings`{.action}.
+>>
+>> ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
+>>
+>> Faites un clic-droit sur l'interface réseau secondaire, puis cliquez sur `Propriétés`{.action}.
+>>
+>> Notez que, dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que la carte réseau vRack utilise une interface différente. Utilisez une interface qui ne possède pas l'adresse IP principale du serveur ou qui utilise une adresse IP auto-attribuée.
+>>
+>> ![Windows Properties](images/windows_properties_button.png){.thumbnail}
+>>
+>> Double-cliquez sur `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+>>
+>> ![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
+>>
+>> Cliquez sur **Utiliser l'adresse IP suivante**. Entrez n'importe quelle adresse **IP** de votre plage privée et le **masque** de sous-réseau approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
+>>
+>> ![Utiliser l'adresse IP suivante](images/windows_use_following_ip_address.png){.thumbnail}
+>>
+>> Cliquez sur `OK`{.action} pour sauvegarder les modifications puis redémarrez votre serveur pour les appliquer.
+>>
+
+/// détails | **Configuration lors de l'utilisation d'un identifiant VLAN différent**
+
+Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **192.168.0.0/16** comme plage d'adresses IP privées.
 
 > [!tabs]
 > **Debian 11**
@@ -178,9 +446,10 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >> sudo ip addr add 192.168.0.14/16 dev eno2.10
 >> ```
 >>
->> - Ensuite, activez la sous-interface VLAN :
+>> - Ensuite, activez l'interface privée et la sous-interface VLAN :
 >>
 >> ```sh
+>> sudo ip link set dev eno2 up
 >> sudo ip link set dev eno2.10 up
 >> ```
 >> 
@@ -209,9 +478,9 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >> sudo systemctl restart networking
 >> ```
 >>
-> **Ubuntu 20.04+ et Debian 12+**
+> **Ubuntu et Debian 12+**
 >>
->> La configuration ci-dessous est basée sur Ubuntu 25.10.
+>> La configuration ci-dessous est basée sur Ubuntu 24.04 (Noble Numbat).
 >>
 >> - Avant de commencer, établissez une connexion SSH vers votre serveur et exécutez la commande suivante pour installer le paquet VLAN :
 >>
@@ -286,7 +555,7 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >>             - 192.168.0.14/16
 >> ```
 >>
->> - Aperçu
+>> - Aperçu :
 >>
 >> ![config](images/config_ubuntu.png){.thumbnail}
 >>
@@ -371,7 +640,7 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >>
 >> - Enregistrez et fermez le fichier.
 >>
->> - Aperçu
+>> - Aperçu :
 >>
 >> ![config](images/config_alma.png){.thumbnail}
 >>
@@ -422,7 +691,7 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >>
 >> Remplacez `vlan-name` par le nom de la sous-interface VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par l'ID VLAN.
 >>
->> Dans cet exemple :
+>> **Dans cet exemple :**
 >>
 >> ```sh
 >> sudo nmcli con add type vlan con-name eno2.10 dev eno2 id 10
@@ -435,7 +704,7 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >> sudo nmcli con mod <vlan-name> ipv4.addresses <ip/prefix> ipv4.method manual
 >> ```
 >>
->> Dans cet exemple :
+>> **Dans cet exemple :**
 >>
 >> ```sh
 >> sudo nmcli con mod eno2.10 ipv4.addresses 192.168.0.14/16 ipv4.method manual
@@ -447,7 +716,7 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >> sudo nmcli con up <vlan-name>.
 >> ```
 >>
->> Dans cet exemple :
+>> **Dans cet exemple :**
 >>
 >> ```sh
 >> sudo nmcli con up eno2.10
@@ -464,6 +733,8 @@ Configurez ensuite les interfaces réseau sur votre serveur dédié.
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+
+///
 
 ## Aller plus loin
 
