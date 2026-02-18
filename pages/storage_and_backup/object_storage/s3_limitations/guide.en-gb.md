@@ -23,7 +23,9 @@ Discover how to maximize your performance with [this guide](/pages/storage_and_b
 - PUT: 300 requests per second
 - GET: 900 requests per second
 
-Important to remind that those maximum values are "soft limits" and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**. Indeed, a gradual ramp-up of requests allows you to maximize performance and capitalize on the native sharding of the infrastructure. In other words, limitations can be overcome through a good distribution of the names of the prefixes/object keys and reach multiple thousands of requests per seconds both in read and write. Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
+Important to remind that those maximum values are "soft limits" and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**. Indeed, a gradual ramp-up of requests allows you to maximize performance and capitalize on the native sharding of the infrastructure. In other words, limitations can be overcome through a good distribution of the names of the prefixes/object keys and reach multiple thousands of requests per seconds both in read and write. 
+
+Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ## Bucket limitations
 
