@@ -1,6 +1,14 @@
-# PoP Locations & Regions
+---
+title: 'OVHcloud Connect - PoPs and Regions'
+excerpt: 'Understand how OCC works with PoPs and Regions, and find out which ones are the most suitable for your infrastructure'
+updated: 2026-02-18
+---
 
-A **Point of Presence (PoP)** is a physical location where OVHcloud operates networking equipment that allows you to connect to OVHcloud's backbone. When setting up OVHcloud Connect, you choose one or more PoPs as the hand-off point between your network or your provider's network, and OVHcloud.
+## Introduction
+
+When setting up OVHcloud Connect, you choose one or more **Points of Presence (PoP)** as the hand-off point between your network or your provider's network, and OVHcloud. Each PoP is tied to a specific geographic zone; consequently, it can only access OVHcloud regions within that same zone.
+
+This guide explains how OVHcloud PoPs and regions interact with OVHcloud Connect, and provides a framework for selecting the most suitable PoP for your specific infrastructure needs.
 
 ## Understanding Regions and PoPs
 
@@ -10,11 +18,13 @@ OVHcloud organises its infrastructure into **regions** — geographical areas wh
 
 ### Points of Presence (PoP)
 
-OVHcloud PoPs are located inside major carrier-neutral data centre campuses (such as Equinix, Interxion/Digital Realty, Telehouse, and others). If you are ordering a **Direct** connection, you need to be present (or arrange a circuit) in the same campus to install a cross-connect.
+OVHcloud PoPs are located inside major carrier-neutral datacenters managed by our partners. If you are ordering a **Direct** connection, you need to be present (or arrange a circuit) in the same datacenter to install a cross-connect.
 
 If you are using a **Provider**, the provider handles the physical connectivity and may reach the PoP from a different facility.
 
-> **Note:** OVHcloud regularly adds new locations. Always check the [OVHcloud Connect webpage](https://www.ovhcloud.com/en-ie/network/ovhcloud-connect/) for the most up-to-date list.
+> [!primary]
+> OVHcloud regularly adds new locations. Always check the [OVHcloud Connect webpage](https://www.ovhcloud.com/en-ie/network/ovhcloud-connect/) for the most up-to-date list.
+>
 
 ## How to choose a PoP
 
@@ -44,12 +54,6 @@ Some industries or countries require data to stay within a specific geography. C
 ### 5. Target OVHcloud region
 
 To ensure the best performance, your OVHcloud Connect service should terminate in the region where your OVHcloud workloads are running (or will run). Verify that the PoP serves the region you need.
-
-## Regions & PoPs table
-
-## Introduction
-
-When you establish a connection to OVHcloud Connect, your traffic enters the OVHcloud network via a specific PoP. Each PoP is associated with a geographic zone, and the OVHcloud regions that can be reached from this PoP are limited to the zone in which it is located. Depending on the PoP you choose, only a predefined set of regions will be available for interconnection.
 
 ## PoP and Region Mapping Tables
 
@@ -114,3 +118,9 @@ The following tables list the regions accessible from each PoP, the correspondin
 
 - Understand [Multi-AZ](1.5_multi_az.md) for resilient architectures
 - Review [PoP configuration and BGP](3.5_define_pop_bgp.md) for technical setup
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).
