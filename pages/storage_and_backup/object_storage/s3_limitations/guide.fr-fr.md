@@ -20,12 +20,10 @@ Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and
 
 ### Nombre maximal par défaut de requêtes par seconde en écriture et lecture sur un bucket
 
-Default maximum number of write and read requests per second on a bucket
-
 - PUT: 300 requêtes par seconde
 - GET: 900 requêtes par seconde
 
-Il est important de rappeler que ces valeurs maximales sont des *"soft limits"* et peuvent être facilement dépassées en adoptant de bonnes pratiques pour répartir les E/S le plus largement possible dans le cluster de stockage objet, en tirant parti du **mécanisme de *sharding***. En effet, un ramp-up progressif des requêtes permet de maximiser les performances et de capitaliser sur ce *sharding* natif de l’infrastructure. En d’autres termes, les limitations peuvent être levées grâce à une bonne répartition des noms des prefixes/clés d’objets et ainsi atteindre des milliers de requêtes par seconde tant en lecture qu’en écriture. 
+Il est important de rappeler que ces valeurs maximales sont des *"soft limits"* et peuvent être facilement dépassées en adoptant de bonnes pratiques pour répartir les E/S le plus largement possible dans le cluster de stockage objet, en tirant parti du **mécanisme de *sharding***. En effet, un ramp-up progressif des requêtes permet de maximiser les performances et de capitaliser sur ce *sharding* natif de l’infrastructure. En d’autres termes, les limitations peuvent être levées grâce à une bonne répartition des noms des préfixes/clés d'objets et ainsi atteindre des milliers de requêtes par seconde tant en lecture qu'en écriture.
 
 Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
@@ -34,7 +32,7 @@ Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and
 ### Nombre maximum de buckets par projet
 
 - 100 (par défaut)
-- 1000 (nécessite une intervenion manuelle, veuillez [contacter notre support](https://help.ovhcloud.com/csm?id=csm_get_help) à cet effet)
+- 1000 (nécessite une intervention manuelle, veuillez [contacter notre support](https://help.ovhcloud.com/csm?id=csm_get_help) à cet effet)
 
 ### Nombre maximum d'objets dans un bucket
 
@@ -56,9 +54,9 @@ Illimité
 
 ## Limitations des objets
 
-### Taille maximum par object / mpu / part
+### Taille maximum par objet / mpu / part
 
-#### Via un seule requête PUT
+#### Via une seule requête PUT
 
 Maximum 5 Go par objet (pour un objet dont la taille est supérieure à 5 Go, procédez à un *multi-part upload*).
 
