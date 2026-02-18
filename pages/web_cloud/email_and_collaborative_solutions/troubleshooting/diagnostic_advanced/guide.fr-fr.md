@@ -99,7 +99,7 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 >> Pour une offre **Exchange**, dans la section **Microsoft Exchange** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`.
 > **Zimbra**
 >>
->> Pour une offre **Zimbra**, dans la section **Zimbra** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`.
+>> Pour une offre **Zimbra**, dans la section **Zimbra** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration d'une application e-mail sur votre ordinateur` ou de votre smartphone dans `Configurer une application e-mail sur votre smartphone ou tablette`.
 
 ///
 
