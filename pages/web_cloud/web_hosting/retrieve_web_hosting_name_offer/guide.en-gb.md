@@ -41,7 +41,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
->> Under this mention, you will find the name of your web hosting offer (e.g., Personnal, Pro, Performance, etc.).
+>> Under this mention, you will find the name of your web hosting offer (e.g., Personal, Pro, Performance, etc.).
 
 ## Go further <a name="go-further"></a>
 
