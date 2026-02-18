@@ -4,6 +4,20 @@ excerpt: 'Découvrez comment configurer un réseau privé entre une instance Pub
 updated: 2026-02-18
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Le [vRack](/links/network/vrack) OVHcloud est un réseau privé qui vous permet de configurer l'adressage entre deux ou plusieurs [Serveurs dédiés](/links/bare-metal/bare-metal) OVHcloud. Mais il vous permet également d'ajouter des [instances Public Cloud](/links/public-cloud/compute) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
@@ -66,7 +80,7 @@ Cliquez sur le bouton `Ajouter un réseau privé`{.action}.
 
 La page suivante vous permet de personnaliser plusieurs paramètres.
 
-Sélectionnez la région dans laquelle vous souhaitez placer le réseau privé . Assurez-vous qu'il se trouve dans la même région que l'instance existante.
+Sélectionnez la région dans laquelle vous souhaitez placer le réseau privé. Assurez-vous qu'il se trouve dans la même région que l'instance existante.
 
 ![select region](images/vrack2024-01.png){.thumbnail}
 
@@ -97,7 +111,7 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 >> - Lors de la configuration du vRack sur le serveur dédié, ce VLAN ID doit être inclus dans le(s) fichier(s) de configuration réseau.
 >>
 >> > [!primary]
->> > Il est possible d'utiliser le même VLAN ID pour plusieurs réseaux privés, mais cela nécessite une gestion rigoureuse des adresses IP privées.  L'utilisation d'allocation pool DHCP sans chevauchement peut être une façon de gérer cette problématique.
+>> > Il est possible d'utiliser le même VLAN ID pour plusieurs réseaux privés, mais cela nécessite une gestion rigoureuse des adresses IP privées. L'utilisation d'allocation pool DHCP sans chevauchement peut être une façon de gérer cette problématique.
 >>
 >> > [!primary]
 >> > Contrairement aux serveurs dédiés (lorsque l’on utilise un VLAN ID différent de 0), il n’est pas nécessaire d’inclure directement le VLAN ID dans le fichier de configuration réseau de l’instance Public Cloud une fois qu’il est paramétré dans l’espace client OVHcloud.
@@ -387,7 +401,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 >> Cliquez sur `OK`{.action} pour sauvegarder les modifications puis redémarrez votre serveur pour les appliquer.
 >>
 
-/// détails | **Configuration lors de l'utilisation d'un identifiant VLAN différent**
+/// details | **Configuration lors de l'utilisation d'un identifiant VLAN différent**
 
 Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **192.168.0.0/16** comme plage d'adresses IP privées.
 

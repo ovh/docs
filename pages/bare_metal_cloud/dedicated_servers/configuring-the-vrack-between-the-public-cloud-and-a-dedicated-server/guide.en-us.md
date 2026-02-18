@@ -4,6 +4,20 @@ excerpt: 'Find out how to configure private networking between a Public Cloud in
 updated: 2026-02-18
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Objective
 
 The OVHcloud [vRack](/links/network/vrack) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](/links/bare-metal/bare-metal). But it also allows you to add [Public Cloud instances](/links/public-cloud/compute) to your private network so that you can create an infrastructure of both physical and virtual resources.
@@ -29,7 +43,7 @@ The OVHcloud [vRack](/links/network/vrack) allows you to configure private netwo
 ### Add a Public Cloud project to the vRack
 
 > [!primary]
-> This does not apply to newly created projects, which are automatically delivered with a vRack. Once the project has been created, you can view the vRack by opening the `Network`{.action} menu in the left-hand sidebar and selecting `vRack Private Network.`{.action}.
+> This does not apply to newly created projects, which are automatically delivered with a vRack. Once the project has been created, you can view the vRack by opening the `Network`{.action} menu in the left-hand sidebar and selecting `vRack Private Network`{.action}.
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish, particularly if you already had an existing vRack with your dedicated server(s).
 
@@ -56,7 +70,7 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 #### In case of an existing instance
 
-Once your project is linked to a vRack, you can create a private network and attach it to an existing instances.
+Once your project is linked to a vRack, you can create a private network and attach it to existing instances.
 
 Go to the `Public Cloud`{.action} tab, then click `Private Network`{.action} under **Network** in the left sidebar.
 
@@ -524,7 +538,7 @@ In this example, we'll use **10** as the VLAN ID (tag), and **192.168.0.0/16** a
 >>
 >> Save and exit the file.
 >>
->> - To obtain the network interface name and it's MAC address:
+>> - To obtain the network interface name and its MAC address:
 >>
 >> ```sh
 >> ip a
