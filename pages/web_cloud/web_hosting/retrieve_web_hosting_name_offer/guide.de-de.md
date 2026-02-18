@@ -1,22 +1,22 @@
 ---
-title: "So finden Sie den Namen Ihres Webhosting-Plans"
-excerpt: "Erfahren Sie, wie Sie den Typ des Webhosting-Plans identifizieren können, den Sie über das OVHcloud Kundencenter nutzen"
+title: "Namen Ihres Webhosting Angebots ermitteln"
+excerpt: "Erfahren Sie, wie Sie den Typ des Webhosting Angebots identifizieren können, den Sie über das OVHcloud Kundencenter nutzen"
 updated: 2026-02-18
 ---
 
 ## Ziel
 
-Sie können sich nicht mehr an den Namen Ihres [Webhosting-Plans](/links/web/hosting) erinnern?
-Möchten Sie dessen Details prüfen oder mit einem anderen Plan vergleichen?
+Sie können sich nicht mehr an den Namen Ihres [Webhostings](/links/web/hosting) erinnern?
+Möchten Sie dessen Details prüfen oder mit einem anderen Angebot vergleichen?
 
-Während der Nutzung Ihres Services könnten Sie den Namen Ihres Webhosting-Plans benötigen.
+Während der Nutzung Ihres Services könnten Sie den Namen Ihres Webhosting Angebots benötigen.
 
-**Erfahren Sie, wie Sie den Typ des Webhosting-Plans identifizieren können, den Sie über das OVHcloud Kundencenter nutzen.**
+**Erfahren Sie, wie Sie den Typ des Webhostings identifizieren können, den Sie über das OVHcloud Kundencenter nutzen.**
 
 ## Voraussetzungen
 
-- Ein [Webhosting-Plan](/links/web/hosting) besitzen.
-- Angemeldet sein im [OVHcloud Kundencenter](/links/manager).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -39,9 +39,9 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Im Bereich **Abo** finden Sie die Bezeichnung **Angebot**.
 >>
->> ![Plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
+>> ![Angebot](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-plan-pro.png){.thumbnail}
 >>
->> Unter dieser Bezeichnung finden Sie den Namen Ihres Webhosting-Plans (z. B. Basic, Pro, Performance, usw.).
+>> Unter dieser Bezeichnung finden Sie den Namen Ihres Webhosting Angebots (z. B. Basic, Pro, Performance, etc.).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
