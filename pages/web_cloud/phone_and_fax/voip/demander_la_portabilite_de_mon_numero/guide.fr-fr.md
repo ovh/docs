@@ -104,7 +104,7 @@ Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 >>
 >> ![numberport](images/porting-number-step5-2026.png){.thumbnail}
 >>
->> Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de la partie 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite) » de cette documentation.
+>> Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de la partie 3 « [Suivre une demande de portabilité](#suivre-demande) » de cette documentation.
 
 #### Porter une plage de numéros <a name="plage-numeros"></a>
 
@@ -174,7 +174,7 @@ Cliquez sur les onglets ci-dessous pour afficher les 6 étapes.
 >>
 >> ![numberport](images/porting-number-step7-2.png){.thumbnail}
 >>
->> Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans la partie 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite) » de cette documentation.
+>> Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans la partie 3 « [Suivre une demande de portabilité](#suivre-demande) » de cette documentation.
 
 #### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
 
@@ -191,7 +191,7 @@ Une fois le numéro spécial à porter renseigné (au format international) dans
 
 ![numberport](images/porting-number-sva-2026.png){.thumbnail}
 
-### 3 - Suivre une demande de portabilité
+### 3 - Suivre une demande de portabilité <a name="suivre-demande"></a>
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation dans lequel a été demandée la portabilité.
