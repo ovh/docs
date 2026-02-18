@@ -74,7 +74,9 @@ Choisissez si vous êtes un « Professionnel » ou un « Professionnel revendeur
 
 > [!primary]
 >
-> - **Identité de l'éditeur** : Personne physique ou morale exploitant le service accessible via ce numéro.<br>
+> **Éditeur, contact de l’éditeur et bénéficiaires : définitions.**
+>
+> - **Éditeur** : Personne physique ou morale exploitant le service accessible via ce numéro.<br>
 > - **Contact de l'éditeur** : Personne physique désignée pour représenter l’éditeur du numéro spécial dans le cadre du KYC, de la conformité ou de la gestion opérationnelle.<br>
 > - **Bénéficiaires** : Personnes physiques ou morales tirant un avantage financier, économique ou opérationnel de l’exploitation du numéro spécial, notamment :<br>
 >     - Les personnes physiques détenant directement ou indirectement une participation significative dans l’entreprise (≥ 25 %).<br>
