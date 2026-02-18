@@ -40,7 +40,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 ### Intégrer une instance dans le vRack
 
 > [!primary]
-> Ce guide se concentre sur une configuration simple de vRack entre une instance Public Cloud et un serveur dédié.
+> Ce guide décrit la mise en place d’une configuration simple de vRack entre une instance Public Cloud et un serveur dédié.
 > Si vous avez déployé vos instance(s) avec un mode de déploiement tel que les zones locales ou multi AZ, notez que les zones locales ne prennent pas encore en charge le vRack.
 > En outre, le **vRack** est un réseau L2 global et ne prend pas en charge la résilience au niveau "zone" ou "région".
 >
@@ -108,10 +108,9 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 >>
 >> Vous pouvez conserver la plage IP privée par défaut ou en utiliser une autre.
 >>
+>> Sélectionnez « Activer DHCP pour ce réseau privé » pour attribuer et configurer automatiquement l'adresse IP privée sur l'instance. Il vous suffira ensuite de configurer les interfaces réseau du serveur dédié.
 >>
->> Sélectionnez « Activer DHCP pour ce réseau privé » pour configurer automatiquement l'adresse IP privée de l'instance. Vous n'aurez alors plus qu'à configurer les interfaces réseau du serveur dédié.
->>
->> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance de cloud public et sur le serveur dédié.
+>> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance Public Cloud et sur le serveur dédié.
 >>
 >> **Options de passerelle réseau**
 >>
@@ -131,7 +130,7 @@ Dans la fenêtre qui apparaît, sélectionnez le ou les réseaux privés à atta
 ### Configurer vos interfaces réseau
 
 > [!primary]
-> Si vous avez choisi de configurer le réseau privé sur votre instance à l'aide du protocole DHCP, vous n'avez pas besoin de configurer manuellement l'interface réseau sur l'instance.
+> Si vous avez choisi l'option permettant de configurer le réseau privé sur votre instance à l'aide du protocole DHCP, vous devez uniquement configurer les interfaces réseau sur le serveur dédié.
 >
 
 #### Configuration en cas d'utilisation du VLAN ID 0 par défaut
@@ -217,7 +216,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 >>
 >> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. 
 >>
->> Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+>> Remplacez `NETWORK_INTERFACE` par le nom de votre interface privée.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -255,7 +254,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 >> Redémarrez le service réseau pour appliquer les modifications :
 >>
 >> ```bash
->> sudo systemctl restart NetworkManager.service
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Fedora 42+, AlmaLinux et Rocky Linux (10)**
@@ -389,7 +388,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 
 /// détails | **Configuration lors de l'utilisation d'un identifiant VLAN différent**
 
-Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **192.168.0.0/16** comme plage d'adresses IP privées.
+Dans cet exemple, nous utiliserons **10** comme identifiant (balise) VLAN et **192.168.0.0/16** comme plage d'adresses IP privées.
 
 > [!tabs]
 > **Debian 11**
@@ -430,7 +429,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >> 
->> Dans cet exemple, l'interface privée est `eno2`.
+>> Dans cet exemple, l'interface réseau privée s'appelle `eno2`.
 >>
 >> - Ensuite, créez une sous-interface VLAN pour l'interface réseau (configuration non persistante) et attribuez-lui (taguez) le VLAN ID. Dans cet exemple, le VLAN ID est 10.
 >>
@@ -530,7 +529,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >>
->> - Ici, l'interface que nous souhaitons configurer est `eno2` avec l'adresse MAC : `d0:50:99:d6:6b:14`.
+>> - Ici, l'interface que nous souhaitons configurer est identifiée sous le nom `eno2` avec l'adresse MAC : `d0:50:99:d6:6b:14`.
 >>
 >> ![ubuntu VLAN](images/ubuntu_ip_a.png){.thumbnail}
 >>
@@ -560,7 +559,6 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ![config](images/config_ubuntu.png){.thumbnail}
 >>
 >> - Enregistrez et fermez le fichier, puis exécutez la commande suivante :
->>
 >>
 >> ```sh
 >> sudo netplan apply
@@ -615,7 +613,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >>
->> Dans cet exemple, l'interface privée est `eno2`.
+>> Dans cet exemple, l'interface privée s'appelle `eno2`.
 >>
 >> - Ensuite, créez un fichier de configuration de sous-interface pour le VLAN dans le fichier de configuration réseau principal. Dans cet exemple, le fichier est nommé `ifcfg-eno2.10`, ici, eno2 fait référence à l'interface réseau privée et `10` fait référence au VLAN ID.
 >>
@@ -675,13 +673,13 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> sudo su -c 'echo "8021q" >> /etc/modules'
 >> ```
 >>
->> - Pour obtenir le nom de l'interface réseau :
+>> - Pour obtenir le nom de l'interface réseau privée :
 >>
 >> ```sh
 >> ip a
 >> ```
 >>
->> Dans cet exemple, l'interface s'appelle `eno2`. Nous devons créer une sous-interface VLAN avant d'attribuer une adresse IP privée à celle-ci.
+>> Dans cet exemple, l'interface privée s'appelle `eno2`. Nous devons créer une sous-interface VLAN avant d'attribuer une adresse IP privée à celle-ci.
 >>
 >> - Utilisez la commande suivante pour créer l'interface VLAN :
 >>
@@ -689,7 +687,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> sudo nmcli con add type vlan con-name <vlan-name> dev <parent-interface> id <vlan-id>.
 >> ```
 >>
->> Remplacez `vlan-name` par le nom de la sous-interface VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par l'ID VLAN.
+>> Remplacez `vlan-name` par le nom de la sous-interface VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par le VLAN ID.
 >>
 >> **Dans cet exemple :**
 >>
