@@ -51,10 +51,10 @@ Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 >>
 >> Dans la page qui apparaît, les deux types de demandes de portabilité sont proposés.
 >>
->> Choisissez la demande selon que votre demande concerne **Un numéro individuel** ou **Une plage de numéros (SDA)**.
+>> Choisissez si votre demande concerne **Un numéro individuel** ou **Une plage de numéros (SDA)**.
 >>
 >> - Pour un numéro individuel, renseignez le numéro à porter au format international (il doit nécessairement commencer par 0032). 
->> - Dans le cas d'une plage de numéros, renseignez le numéro de tête de ligne de la plage concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Cochez ensuite le bouton `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre plage de numéros (SDA)**.
+>> - Dans le cas d'une plage de numéros, renseignez le numéro de tête de ligne de la plage concernée au format international (il doit nécessairement commencer par 0032). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Sélectionnez ensuite `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} et renseignez successivement, dans la case prévue à cet effet, **chacun des numéros de votre plage de numéros (SDA)**.
 >>
 >> Sélectionnez enfin la date souhaitée de la portabilité.
 >>
@@ -137,7 +137,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du processu
 |---|---|---|
 |Demande envoyée à l'opérateur|La demande est envoyée à l'opérateur cédant|2 heures|
 |Rapport intermédiaire de l'opérateur reçu|Après vérification des informations, l'opérateur confirme le lancement de la procédure de portabilité vers OVHcloud|1 jour ouvré|
-|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans l'étape 5 « [Préparer la configuration des numéros portés](#configuration) »|2 jours ouvrés|
+|Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Pour vous aider, reportez-vous aux informations décrites dans la partie 5 « [Préparer la configuration des numéros portés](#configuration) »|2 jours ouvrés|
 |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure le numéro sur son réseau (routage). La portabilité est terminée et le numéro opérationnel|3 jours ouvrés|
 
 ### 5 - Préparer la configuration des numéros portés <a name="configuration"></a>

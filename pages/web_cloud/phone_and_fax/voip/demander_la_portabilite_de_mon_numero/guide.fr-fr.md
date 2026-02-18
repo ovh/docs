@@ -68,7 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher les 5 étapes.
 > [!tabs]
 > Étape 1
 >>
->> Sélectionnez `Numéro individuel`{.action} et renseignez le numéro individuel que vous souhaitez porter au format international (par exemple, « 0033100000000 » pour un numéro français). Indiquez ensuite le *RIO* du numéro concerné, puis sélectionnez la date souhaitée de la portabilité.
+>> Sélectionnez `Numéro individuel`{.action} et renseignez le numéro que vous souhaitez porter au format international (par exemple, « 0033100000000 » pour un numéro français). Indiquez ensuite le *RIO* du numéro concerné, puis sélectionnez la date souhaitée de la portabilité.
 >>
 >> ![numberport](images/porting-number-step1-2026.png){.thumbnail}
 >>
@@ -117,7 +117,7 @@ Cliquez sur les onglets ci-dessous pour afficher les 6 étapes.
 >>
 >> Renseignez alors le numéro de tête de ligne de la plage concernée au format international (par exemple, « 0033100000000 » pour un numéro français). En cas de doute, votre opérateur actuel peut vous communiquer ce numéro. Ensuite, indiquez si vous souhaitez :
 >> 
->> - **porter l'ensemble de la plage de numéros** : pour cela, sélectionnez `Porter votre numéro principal et l’ensemble des numéros Sélection Directe à l'Arrivée (SDA) rattachés`{.action}. Dans ce cas, la liste des SDA vous sera transmise par mail dans les prochains jours ;
+>> - **porter l'ensemble de la plage de numéros** : pour cela, sélectionnez `Porter votre numéro principal et l’ensemble des numéros Sélection Directe à l'Arrivée (SDA) rattachés`{.action}. Dans ce cas, la liste des SDA vous sera transmise par e-mail dans les prochains jours ;
 >>
 >> - **porter certains numéros de la plage, dont celui de tête de ligne** : pour cela, sélectionnez `Porter votre numéro principal et une partie des numéros Sélection Directe à l'Arrivée (SDA)`{.action} puis renseignez les numéros additionnels de la plage que vous souhaitez porter. Utilisez alors la zone de texte en dessous de `Numéro SDA à ajouter` ainsi que le bouton `Ajouter`{.action}.
 >>
@@ -231,7 +231,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 >> |Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
 >> |Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la plage de numéros SDA|5 jours ouvrés|
 >> |Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans la partie 4 « [Préparer la configuration des numéros portés](#preparer-configuration-numero) »| - |
->> |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24h pour le déploiement APNF aprés la portabilité du numéro. Pendant ces 24h, les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVHcloud. La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
+>> |Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24h pour le déploiement APNF après la portabilité du numéro. Pendant ces 24h, les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVHcloud. La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
 >> 
 
 ### 4 - Préparer la configuration des numéros portés <a name="preparer-configuration-numero"></a>
