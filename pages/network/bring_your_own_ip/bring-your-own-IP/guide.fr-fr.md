@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2025-02-28
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -112,34 +112,33 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 
 ### Comment commander un service BYOIP
 
-Pour commencer, connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
 
 ![Adresses IP publiques - Bouton BYOIP](images/byoip_public_ip.png){.thumbnail}
 
-Cliquez sur le bouton `+ Bring Your Own IP`{.action} en haut de la page. Vous serez redirigé vers la page de configuration BYOIP.
+Cliquez sur le bouton `+ Bring your own IP`{.action} en haut de la page. Vous serez redirigé vers la page de configuration BYOIP.
 
 ![Commander BYOIP](images/byoip_order.png){.thumbnail}
 
-Sélectionnez le **RIR** qui gère le bloc d'adresses IP publiques que vous souhaitez importer, puis sélectionnez la **région** où vous souhaitez que vos adresses IP soient situées. À partir de là, entrez la plage IP que vous souhaitez importer.
+Sélectionnez le **RIR** qui gère le bloc d'adresses IP publiques que vous souhaitez importer, puis sélectionnez le **campus** dans lequel vos adresses IP seront situées. Renseignez ensuite la plage d'adresses IP que vous souhaitez importer.
 
-Vous pourrez ensuite choisir si vous souhaitez utiliser l'AS OVHcloud (recommandé), ou votre propre AS, pour annoncer votre bloc IP. 
+Vous pourrez ensuite choisir d'utiliser l'AS OVHcloud (recommandé) ou votre propre AS pour annoncer votre bloc d'adresses IP. 
 
-Si vous choisissez d'utiliser votre propre AS, vous devrez sélectionner le RIR qui gère votre ASN, puis remplir le champ correspondant. Si vous choisissez l'AS OVHcloud, aucune information supplémentaire n'est requise.
+Si vous choisissez d'utiliser votre propre AS, vous devrez sélectionner le RIR qui gère votre ASN, puis renseigner votre numéro d'AS. Si vous choisissez l'AS OVHcloud, aucune information supplémentaire n'est requise.
 
 ![AS BYOIP - OVHcloud](images/byoip_as_ovhcloud.png){.thumbnail}
 
-![AS BYOIP - Personnalisé](images/byoip_as_ovhcloud.png){.thumbnail}
+![AS BYOIP - Personnalisé](images/byoip_as_custom.png){.thumbnail}
 
-Enfin, cliquez sur le bouton `Suivant`{.action} en bas de la page, ce qui ouvre une page de confirmation. Veuillez vous assurer que tous les prérequis sont respectés, puis cliquez sur le bouton `Confirmer`{.action} pour soumettre votre commande. 
+Enfin, cliquez sur le bouton `Suivant`{.action} en bas de la page. Une fenêtre de confirmation s'ouvre. Veuillez vous assurer que tous les prérequis sont respectés, puis cliquez sur le bouton `Confirmer`{.action} pour soumettre votre commande. 
 
 ![Soumettre la commande BYOIP](images/byoip_confirm.png){.thumbnail}
 
-Tous vos blocs IP importés porteront un tag `BYOIP`.
+Tous vos blocs IP importés porteront le tag `BYOIP`.
 
 ![Tag BYOIP](images/byoip_tag.png){.thumbnail}
 
-Comme il n'existe actuellement aucun moyen de filtrer les adresses IP publiques via les étiquettes, nous vous recommandons de les filtrer en cliquant sur la barre `Tous les types de service`{.action} en haut de la page, puis en sélectionnant `Toutes les Additional IP`{.action}. À partir de là, vous pourrez différencier vos Additional IP classiques des adresses importées grâce au tag `BYOIP` mentionnée ci-dessus.
-
+Le filtrage des adresses IP publiques par tag n’est pas disponible actuellement. Nous vous recommandons de les filtrer en cliquant sur la barre `Tous les types de service`{.action} au-dessus du tableau, puis en sélectionnant `Toutes les Additional IP`{.action}. Vous pourrez ainsi différencier vos Additional IP classiques des adresses importées grâce au tag `BYOIP` mentionné ci-dessus.
 
 ### Comment utiliser les adresses IP
 
@@ -225,7 +224,7 @@ Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, 
 - Les tâches API découpage/fusion ne peuvent pas être suivies par le numéro de tâche asynchrone renvoyé par l'API, car les objets IP associés seront détruits dans le processus de découpage/fusion.
 - La liste des adresses IP et des blocs renvoyés par l'API est classée par taille de préfixe réseau. Nous travaillons pour fournir une solution permettant de répertorier les adresses IP par ordre numérique.
 - Une fois découpés, les petits blocs ne sont pas déplaçables en dehors de la région choisie lors de la commande du produit.
-- Déplacer un bloc /24 entre les régions françaises ne fonctionnera pas s'il a été réagrégé à partir d'un découpage antérieur.
+- Déplacer un bloc /24 entre les régions françaises n'est pas possible si celui-ci a été réagrégé à partir d'un découpage antérieur.
 
 ## Comment résilier un service BYOIP
 
@@ -235,7 +234,7 @@ Dans la barre de recherche en haut à droite du tableau qui s'est ouvert, à cô
 
 ![Annulation BYOIP](images/byoip_cancel.png){.thumbnail}
 
-Trouvez le service que vous souhaitez annuler, puis cliquez sur le bouton `...`{.action} correspondant sur la droite du tableau, et sélectionnez `Résilier mon service`{.action}.
+Trouvez le service que vous souhaitez annuler, puis cliquez sur le bouton `...`{.action} correspondant sur la droite du tableau et sélectionnez `Résilier mon service`{.action}.
 
 Une fenêtre de confirmation s'affichera :
 
@@ -265,13 +264,13 @@ Oui.
 
 Pas pour le moment.
 
-### Est-il possible d'utiliser une plage d'adresses IP sur plusieurs régions ?
+### Est-il possible d'utiliser une plage d'adresses IP dans plusieurs régions ?
 
 Non, une plage d'IP doit être utilisée dans une seule région.
 
 ### Est-il possible de changer la région d'une plage IP importée ?
 
-Il n'est pas possible de changer la région d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi la région de Gravelines, Roubaix ou Strasbourg au moment de la commande et si vous avez commandé le service après le 1er janvier 2023, vous pourrez déplacer vos blocs IP **/24** sur ces 3 régions (et uniquement sur ces 3 régions).
+Il n'est pas possible de changer la région d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi la région de Gravelines, Roubaix ou Strasbourg au moment de la commande et si vous avez commandé le service après le 1er janvier 2023, vous pourrez déplacer vos blocs IP **/24** dans ces 3 régions (et uniquement dans ces 3 régions).
 
 Veuillez noter que, comme mentionné dans les limites du découpage de plages d'adresses, cette option n'est disponible que si le bloc IP que vous souhaitez déplacer n'a pas été réagrégé à partir d'un découpage antérieur.
 
