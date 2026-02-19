@@ -21,9 +21,10 @@ We will also see how to configure **vlan sub-interfaces** within your instance t
 
 ## Why Use Trunk Ports?
 
-Trunk ports can be used in two specific use cases:
+Trunk ports can be used in three specific use cases:
 
 - **Multi-network access from a single instance:** Trunk ports allow a baremetal server or a virtual machine to communicate on multiple isolated Neutron networks using vlan tagging, without needing separate ports for each network.
+- **Overcome physical interface limits on baremetal:** On a baremetal server, the number of Neutron networks is normally limited by the number of physical network interfaces. With trunk ports, you can connect to more networks than available physical interfaces by multiplexing multiple vlans over a single interface or LACP bond.
 - **Simplified network management:** Instead of provisioning multiple ports and attaching them individually, you create a single trunk with sub-ports, each tagged with a specific vlan ID. This keeps the network topology clean and manageable.
 
 ## Requirements
