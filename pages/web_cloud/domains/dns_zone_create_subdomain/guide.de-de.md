@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud DNS-Zone für eine Domainnamen erstellen"
 excerpt: "Erfahren Sie, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen"
-updated: 2025-04-28
+updated: 2026-02-19
 ---
 
 <style>
