@@ -160,12 +160,13 @@ openstack network trunk set \
 ```
 
 > [!warning]
-> Le `segmentation-id` **doit correspondre** à l'identifiant de segmentation du réseau assigné au sous-port. Neutron ne vérifie pas cette valeur, mais si elle ne correspond pas au segmentation ID réel du réseau, le trafic du sous-port sera ignoré.
+> Le comportement du `segmentation-id` diffère selon le type d'instance :
 >
-> Assurez-vous que le `segmentation-id` que vous spécifiez est identique à celui configuré sur le réseau cible.
+> - **Baremetal :** le `segmentation-id` **doit correspondre** à l'identifiant de segmentation du réseau assigné au sous-port. Neutron ne vérifie pas cette valeur, mais si elle ne correspond pas, le trafic n'atteindra pas l'instance.
+> - **Machines virtuelles :** le `segmentation-id` peut être **n'importe quelle valeur** de votre choix. L'hyperviseur gère la traduction entre le tag vlan du sous-port et l'identifiant de segmentation réel du réseau.
 
 > [!primary]
-> Pour ajouter d'autres réseaux, répétez les étapes 4 et 5 pour chaque réseau supplémentaire, en utilisant le `segmentation-id` correspondant à chaque réseau.
+> Pour ajouter d'autres réseaux, répétez les étapes 4 et 5 pour chaque réseau supplémentaire. Pour les instances baremetal, utilisez le `segmentation-id` correspondant à chaque réseau.
 
 #### 6. Vérifier la configuration du Trunk
 
@@ -249,6 +250,9 @@ openstack server create \
 ### Configuration du système d'exploitation de l'instance
 
 Après le déploiement de votre instance, vous devez configurer des **sous-interfaces vlan** dans l'OS invité pour accéder à chaque réseau rattaché via les sous-ports du trunk.
+
+> [!warning]
+> La configuration automatique du trunk via cloud-init n'est **pas possible**. OpenStack ne transmet pas les métadonnées trunk au userdata de l'instance. Vous devez configurer les sous-interfaces vlan manuellement ou via un outil de provisionnement post-déploiement.
 
 > [!warning]
 > Sur les **instances baremetal**, le port parent étant un port factice sans effet sur le fabric réseau, l'interface réseau de base n'aura **aucune** connectivité réseau par défaut. Tous les réseaux doivent être accessibles via des sous-interfaces vlan correspondant au `segmentation-id` assigné à chaque sous-port.

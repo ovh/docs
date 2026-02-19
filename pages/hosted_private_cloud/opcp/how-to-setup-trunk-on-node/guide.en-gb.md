@@ -160,12 +160,13 @@ openstack network trunk set \
 ```
 
 > [!warning]
-> The `segmentation-id` **must match** the segmentation ID of the network assigned to the sub-port. Neutron does not verify this value, but if it does not match the network's actual segmentation ID, the sub-port traffic will be ignored.
+> The behaviour of `segmentation-id` differs depending on the instance type:
 >
-> Make sure the `segmentation-id` you specify is identical to the one configured on the target network.
+> - **Baremetal:** the `segmentation-id` **must match** the segmentation ID of the network assigned to the sub-port. Neutron does not verify this value, but if it does not match, traffic will not reach the instance.
+> - **Virtual machines:** the `segmentation-id` can be **any value** you choose. The hypervisor handles the translation between the sub-port vlan tag and the network's actual segmentation ID.
 
 > [!primary]
-> To add more networks, repeat steps 4 and 5 for each additional network, using the matching `segmentation-id` of each network.
+> To add more networks, repeat steps 4 and 5 for each additional network. For baremetal instances, use the matching `segmentation-id` of each network.
 
 #### 6. Verify the Trunk Configuration
 
@@ -249,6 +250,9 @@ openstack server create \
 ### Instance Operating System Configuration
 
 After deploying your instance, you need to configure **vlan sub-interfaces** inside the guest OS to access each network attached through the trunk sub-ports.
+
+> [!warning]
+> Automatic trunk configuration via cloud-init is **not possible**. OpenStack does not pass trunk metadata to the instance userdata. You must configure vlan sub-interfaces manually or through a post-deployment provisioning tool.
 
 > [!warning]
 > On **baremetal instances**, since the parent port is a dummy port with no effect on the network fabric, the base network interface will **not** have any network connectivity by default. All networks must be accessed through vlan sub-interfaces matching the `segmentation-id` assigned to each sub-port.
