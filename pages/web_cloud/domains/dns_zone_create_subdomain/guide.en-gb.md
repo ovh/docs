@@ -47,7 +47,7 @@ The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configura
 For more information, please refer to our guides:
 
 - [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
-- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- [Everything you need to know about DNS zones](/pages/web_cloud/domains/dns_zone_general_information)
 - [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 Most often, the DNS records of a subdomain are configured directly from the active DNS zone of the domain name it depends on. 
@@ -58,7 +58,7 @@ The subdomain will then have its own zone to configure its DNS records.
 
 > [!success]
 >
-> To recap :
+> To recap:
 >
 > - A domain name usually has the form **domain.tld**. For example: ovhcloud.com.
 > - A subdomain usually has the form **sub.domain.tld**. For example: help.ovhcloud.com.
@@ -72,9 +72,9 @@ The subdomain will then have its own zone to configure its DNS records.
 
 ## Requirements
 
-- Possession of the domain name on which the chosen subdomain will depend.
+- You can administrate the domain name on which the chosen subdomain will depend.
 - The concerned subdomain must not already have an active or inactive DNS zone with OVHcloud or be the subject of an ongoing operation or order with OVHcloud.
-- Be logged in to your [OVHcloud Control Panel](/links/manager).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -154,13 +154,13 @@ To find them, click on the tabs below to view each of the **3** steps.
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 >>
 >> Find the two lines of type **NS** and retrieve the two values present in the **Target** column.
->> The names of the DNS servers should be in one of the following three forms :
+>> The names of the DNS servers should be in one of the following three forms:
 >>
 >> - `nsXX.ovh.net` and `dnsXX.ovh.net` or, `nsXXX.ovh.net` and `dnsXXX.ovh.net` (where each `X` represents a number between **0** and **9**).
 >> - `nsXX.ovh.ca` and `dnsXX.ovh.ca` or, `nsXXX.ovh.ca` and `dnsXXX.ovh.ca` (where each `X` represents a number between **0** and **9**).
 >> - `ns200.anycast.me` and `dns200.anycast.me` (if you have subscribed to the [DNS anycast](/links/web/domains-options) option).
 
-Once the two DNS server names are retrieved, two situations are possible :
+Once the two DNS server names are retrieved, two situations are possible:
 
 **Click on one of the two situations to display the content.**
 
@@ -213,7 +213,7 @@ Click on the tabs below to view each of the **5** steps.
 
 In this specific case, contact your DNS provider and specify that you want to add two DNS records of type NS for your subdomain.
 
-Here is an example of a request to make to your DNS provider :
+Here is an example of a request to make to your DNS provider:
 
 <pre class="bgwhite"><code>
 Hi,
@@ -236,7 +236,7 @@ In the example above, replace the values **domain.tld**, **sub.domain.tld**, **n
 >
 > **The following point of attention does not concern the two DNS records of type NS that you have just added.** 
 >
-> If other DNS records were present in the active DNS zone of the domain name on which your subdomain depends :
+> If other DNS records were present in the active DNS zone of the domain name on which your subdomain depends:
 >
 > 1. Do not forget to duplicate them in the DNS zone created for your subdomain.
 > 2. Once duplicated, remove them from the active DNS zone of your domain name.
