@@ -1,8 +1,17 @@
 ---
 title: "Configurar um registo MX para a gestão dos e-mails"
 excerpt: Saiba como configurar um registo MX no seu nome de domínio da OVHcloud
-updated: 2026-02-10
+updated: 2026-02-19
 ---
+
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.w-300 {
+  max-width:300px !important;
+}
+</style>
 
 ## Objetivo
 
@@ -23,22 +32,22 @@ O registo MX permite associar um nome de domínio ao servidor da sua plataforma 
 >
 > - Se o seu nome de domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud a partir da [Área de Cliente](/links/manager). Uma vez posicionado no nome de domínio em causa, no separador `Informações gerais`{.action}, na parte `Servidores DNS`{.action}, se a menção `Standards` estiver presente « **servidores DNS** », utiliza bem os servidores DNS da OVHcloud.
 >
-> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail .w-300}
 
 ## Instruções
 
 ### Compreender a função dos registos MX
 
-Os registos MX (**M**ail e**X**change) permitem associar o seu nome de domínio aos servidores de e-mail de receção associados ao seu serviço de e-mail. Vamos citar um exemplo.
+O registo MX (**M**ail e**X**change) é um tipo de registo DNS que determina quais servidores de e-mail de receção estão associados ao seu nome de domínio.
 
-Quando o endereço **sender@otherdomain.ovh** envia um e-mail para **contact@mydomain.ovh**, o servidor de envio de e-mail (**Outgoing mail server**) vai:
+Para compreender o seu funcionamento, vamos utilizar um exemplo:
 
-- **(1)** consultar a zona DNS do nome de domínio **mydomain.ovh** e ler os registos **MX**.
-- **(2)** reencaminhar o e-mail para o URL do registo **MX** lido.
+- O endereço **sender@otherdomain.ovh** envia um e-mail para **contact@mydomain.ovh**.
+- O servidor de envio de e-mail (**Outgoing mail server**) consulta a zona DNS do nome de domínio **mydomain.ovh** e lê os registos **MX**.
+- O e-mail é transmitido para o URL do registo **MX** lido.
+- O e-mail é enviado para o destino **mx0.mail.ovh.net**, precedido do valor **0**. Este valor corresponde à prioridade: o valor mais baixo é consultado em primeiro lugar e o mais alto em último. Isto significa que a presença de vários registos MX permite compensar a falta de resposta do servidor designado pelo registo com a prioridade mais baixa, passando para os servidores seguintes por ordem de prioridade.
 
-![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
-
-O e-mail será enviado para o destino **mx0.mail.ovh.net**, precedido do valor **0**. Esse valor é chamado de prioridade. O valor mais baixo é inquirido em primeiro lugar e o mais alto em último. Isto significa que vários registos irão compensar a falta de resposta do registo MX com a prioridade mais baixa.
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail .w-600}
 
 Pode configurar vários registos MX para o mesmo nome de domínio. É então necessário definir um número de prioridade para cada um deles. Os registos MX são pesquisados por ordem crescente, dos números mais baixos aos mais altos, até que o servidor de receção responda.
 
@@ -49,7 +58,7 @@ Pode configurar vários registos MX para o mesmo nome de domínio. É então nec
 
 ### Valores da configuração MX da OVHcloud <a name="mxovhcloud"></a>
 
-Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro) e [Exchange](/links/web/emails-exchange). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
+Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro), [Exchange](/links/web/emails-exchange) e [Zimbra](/links/web/zimbra). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
 
 Estes valores são comuns a todas estas ofertas, à exceção de [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) e Dedicated Exchange.
 
@@ -72,14 +81,14 @@ A tabela apresenta a configuração da OVHcloud do seu nome de domínio. Cada li
 Antes de mais, verifique se já existem registos MX na configuração DNS da OVHcloud do seu nome de domínio. Para tal, recorra à lista de filtragem situada por cima da tabela da sua zona DNS.<br>
 Selecione o tipo **MX** e valide para apresentar apenas as entradas DNS MX da sua zona DNS. Use a captura de ecrã abaixo.
 
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
 
 - Se já existirem e pretender alterá-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa e, a seguir, em `Alterar entrada`{.action}.
 - Se não existir nenhum registo MX presente, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
 **Se dispõe de uma solução de e-mail OVHcloud**, consulte as informações fornecidas na etapa "[Conhecer a configuração MX da OVHcloud](#mxovhcloud)".
 
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
 
 Conclua os passos e clique em `Validar`{.action}.
 
