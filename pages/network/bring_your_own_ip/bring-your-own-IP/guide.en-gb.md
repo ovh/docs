@@ -196,7 +196,7 @@ To merge back a block into a parent block, use this API call:
 
 Use the following parameters:
 
-- ip: the IP block you want to merge, in CIDR notation.
+- ip: the IP block you want to merge, in CIDR notation.-
 - aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
@@ -229,7 +229,7 @@ This call returns a list of possible aggregated blocks and, for each one of them
 
 From the [OVHcloud Control Panel](/links/manager), click your `account name`{.action} in the top right-hand corner, then select `My offers and services`{.action} in the dropdown menu.
 
-In the top-right search bar, next to the filter button, type "byoip", then press the `Enter`{.action} key to filter for your BYOIP services.
+In the search bar at the top right of the table that opened, next to the filter button, type "byoip", then press the `Enter`{.action} key to filter for your BYOIP services.
 
 ![BYOIP cancellation](images/byoip_cancel.png){.thumbnail}
 

@@ -1,54 +1,54 @@
 ---
-title: Comment utiliser la fonctionnalité Bring Your Own IP
-excerpt: Découvrez comment importer facilement vos propres adresses IP en tant qu'Additional IP sur votre compte OVHcloud
+title: Utiliser la fonctionnalité Bring Your Own IP
+excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
 updated: 2025-02-28
 ---
 
 ## Objectif
 
-La fonctionnalité [Bring Your Own IP (BYOIP)](/links/network/byoip) vous permet d'utiliser des plages d'adresses IP que vous possédez déjà, en tant qu'adresses Additional IP directement sur le réseau et les produits OVHcloud.
+La fonctionnalité [Bring Your Own IP (BYOIP)](/links/network/byoip) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
 
-Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme un bloc de produit [Additional IP](/links/bare-metal/ip) OVHcloud classique.
+Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](/links/bare-metal/ip) OVHcloud.
 
 ## Prérequis
 
 - [Avoir une plage d'IP dans un RIR pris en charge](#supportedrir)
 - [Avoir une plage d'IP d'une taille prise en charge](#supportedsize)
 - [Avoir une plage d'IP non utilisée sur Internet](#notinuseontheinternet)
-- [Avoir une plage d'IP ou numéro AS avec une bonne réputation](#cleanipreputation)
-- [Avoir choisi une région](#choosearegion)
+- [Avoir une plage d'IP ou numéro AS avec une réputation propre](#cleanipreputation)
+- [Choix de la région](#choosearegion)
 - [Prouver que vous êtes propriétaire de la plage d'IP](#proveownershipip)
 - [Prouver que vous êtes propriétaire du numéro AS](#proveownershipas)
 - [Permettre à OVHcloud d'annoncer la plage d'IP](#announceip)
 
 ### Avoir une plage d'IP dans un RIR pris en charge <a name="supportedrir"></a>
 
-Un [Regional Internet Registry](https://en.wikipedia.org/wiki/Regional_Internet_registry) (RIR) est une organisation qui gère les adresses IP dans une région donnée. 
+Un Registre Internet régional (RIR) est une autorité régionale qui gère les adresses IP dans une région donnée. 
 
-Vous devez posséder (voir ci-dessous) un bloc d'adresses IPv4 public avec l'un des RIR suivants :
+Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des RIR suivants :
 
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
-- [APNIC](https://www.apnic.net/) (Veuillez noter que le support des National Internet Registries - NIRs - est expérimental pour le moment)
+- [APNIC](https://www.apnic.net/) (Veuillez noter que le support pour les Registres Internet Nationaux - NIRs - est actuellement en phase expérimentale)
 
-Veuillez noter que l'enregistrement WHOIS du bloc IPv4 fourni **doit correspondre exactement à la plage souhaitée**. La sélection d'un bloc IPv4 parent ou enfant vous empêchera d'utiliser cette plage.
+Veuillez noter que l'enregistrement WHOIS du bloc IPv4 public fourni **doit correspondre précisément à la plage souhaitée**. La sélection d'un bloc IPv4 parent ou enfant vous empêchera d'utiliser cette plage.
 
-Il est désormais possible d'utiliser des blocs IP ARIN, RIPE ou APNIC sur n'importe quelle région OVHcloud. Cette flexibilité accrue permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
+Il est désormais possible d'utiliser des blocs IP ARIN, RIPE ou APNIC sur n'importe quelle région OVHcloud. Cette flexibilité améliorée permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
 
-Contrairement à l'ancienne politique, où un bloc ARIN ne pouvait être utilisé qu'avec les services OVHcloud situés au Canada ou aux États-Unis, et un bloc RIPE ne pouvait être utilisé qu'avec les services OVHcloud situés en Europe, cette restriction a été levée.
+Contrairement à la politique précédente, où un bloc ARIN ne pouvait être utilisé qu'avec des services OVHcloud situés au Canada ou aux États-Unis et un bloc RIPE ne pouvait être utilisé qu'avec des services OVHcloud situés en Europe, cette restriction a été levée.
 
-Pour être considéré comme un bloc valide, les blocs importés doivent être de l'un des types suivants :
+Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
-| ARIN (objet *Network type*) | RIPE (objet *status*) | APNIC (objet *status*) |
+| ARIN (object « Network type ») | RIPE (object « status ») | APNIC (object « status »)
 | :--- | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
-| **Pour plus d'informations :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[Description of the INETNUM Object](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
+| **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://docs.db.ripe.net/entire-documentation-HTML.html#description-of-the-inetnum-object) |  **Pour plus d'informations :** <br>&bull; [« INETNUM Quick Guide »](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [« Recording network assignments »](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
 ### Avoir une plage d'IP d'une taille prise en charge <a name="supportedsize"></a>
 
-Nous acceptons des blocs IP de taille /24 à /19. Voici le nombre de /24 que vous recevrez à partir de la plage importée :
+Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouverez ci-dessous le nombre de /24 que vous recevrez en fonction de la plage importée :
 
-|CIDR|Nombre de blocs /24|
+|CIDR|Nombre de /24|
 |---|---|
 | /24 | 1 |
 | /23 | 2 |
@@ -59,58 +59,60 @@ Nous acceptons des blocs IP de taille /24 à /19. Voici le nombre de /24 que vou
 
 ### Avoir une plage d'IP non utilisée sur Internet <a name="notinuseontheinternet"></a>
 
-La plage ne doit pas être annoncée ou utilisée sur Internet (aucune annonce en termes de protocole Border Gateway (BGP) sur au moins un réseau public). Vous êtes libre de ne pas respecter ce prérequis, auquel cas OVHcloud ne pourra pas garantir le bon fonctionnement et le support de ce service.
+La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public). Vous êtes libre de ne pas satisfaire à ce prérequis, auquel cas OVHcloud ne pourra assurer le bon fonctionnement et le support de ce service.
 
-### Avoir une plage d'IP ou numéro AS avec une bonne réputation <a name="cleanipreputation"></a>
+### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="cleanipreputation"></a>
 
-Nous pouvons refuser l'utilisation d'IPs/AS ayant une mauvaise réputation, et nous nous réservons le droit d'arrêter l'annonce des IPs/AS si leur réputation a un impact négatif sur la réputation d'OVHcloud.
+Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une mauvaise réputation, et nous nous réservons le droit de ne plus les annoncer si leur réputation a un impact négatif sur la réputation d’OVHcloud.
 
-### Avoir choisi une région <a name="choosearegion"></a>
+### Choix de la région <a name="choosearegion"></a>
 
-Une région peut être vue comme une liste de datacenters où une IP peut être utilisée.
+Une région peut être vue comme une liste de datacentres où une IP peut être utilisée.
 
-Vous devrez choisir une région où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n'importe quel bloc de taille /24 obtenu à partir de la plage importée vers n'importe quel service OVHcloud dans la même région que celle choisie au moment de la commande.
+Vous devrez choisir une région où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n’importe quel bloc de taille /24, obtenu à partir de la plage importée, vers n’importe quel service OVHcloud dans la même région que celle choisie au moment de la commande.
 
 Pour choisir une région, veuillez vous référer à la liste des régions disponibles accessible sur [cette page](/links/network/byoip).
 
-### Prouver que vous êtes le propriétaire de la plage IP <a name="proveownershipip"></a>
+### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipip"></a>
 
-Pour prouver que vous êtes le propriétaire de la plage, vous serez invité à entrer un jeton spécial que nous fournirons, dans l'objet public whois correspondant à votre plage. Cela se fera via le portail web du RIR gérant vos IPs. Ce jeton sera fourni à la commande.
+Afin de prouver que vous êtes le propriétaire de la plage d'adresses IP, il vous sera demandé de renseigner un *token* spécial que nous mettrons à disposition, dans l'objet *whois* public correspondant à votre plage.<br>
+Cela se fera via le portail web du RIR gérant vos adresses IP. Ce token sera fourni lors de la commande (il peut aussi être trouvé directement dans l'espace client OVHcloud, dans la section IP).
 
-- Pour RIPE, modifiez le champ « **descr** » de l'objet « **inetnum** » de l'IP.
-- Pour ARIN, modifiez le champ « **Public Comments** » de l'objet « **Network** ».
-- Pour APNIC, modifiez le champ « **remarks** » de l'objet « **inetnum** ».
+- Pour RIPE, éditez le champ « **descr** » de l'objet « **inetnum** » de l'IP.
+- Pour ARIN, éditez le champ « **Public Comments** » de l'objet « **Network** ».
+- Pour APNIC, éditez le champ « **remarks** » de l'objet « **inetnum** ».
 
-Le jeton doit apparaître dans le champ de description (voir ci-dessus) de l'objet whois, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le jeton soit présent sur sa propre ligne dédiée dans la description. Le jeton doit être ajouté avant de passer la commande, et ne doit pas être retiré jusqu'à la fin du processus de livraison.
+Il est nécessaire que le token apparaisse dans le champ de description (voir ci-dessus) de l'objet WHOIS, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le token soit présent dans sa propre ligne dédiée dans la description. Le token doit être ajouté avant la commande et ne doit pas être supprimé avant la fin de la livraison.
 
-### Prouver que vous êtes le propriétaire du numéro AS (obligatoire uniquement si vous fournissez un numéro AS) <a name="proveownershipas"></a>
+### Prouver que vous êtes propriétaire du numéro AS (requis uniquement si vous fournissez un numéro AS) <a name="proveownershipas"></a>
 
-Pour prouver que vous êtes le propriétaire du numéro AS, vous serez invité à réutiliser le même jeton précédemment utilisé pour prouver la propriété de la plage IP, et à l'insérer dans l'objet public whois correspondant au numéro AS. Cela se fera via le portail web du RIR gérant votre numéro AS. Ce jeton sera fourni à la commande (il peut également être trouvé directement dans l'espace client OVHcloud, dans la section IP).
+Afin de prouver que vous êtes le propriétaire du numéro AS, il vous sera demandé de réutiliser le même *token* précédemment utilisé pour prouver la propriété de la plage d'adresses IP, et de l'insérer dans l'objet WHOIS public correspondant au numéro AS.<br>
+Cela se fera via le portail web du RIR gérant votre numéro AS. Ce token sera fourni lors de la commande.
 
-- Pour RIPE, modifiez le champ « **descr** » de l'objet « **aut-num** » du numéro AS.
-- Pour ARIN, modifiez le champ « **Public Comments** » de l'objet « **ASN** ».
-- Pour APNIC, modifiez le champ « **remarks** » de l'objet « **aut-num** ».
+- Pour RIPE, éditez le champ « **descr** » de l'objet « **aut-num** » du numéro AS.
+- Pour ARIN, éditez le champ « **Public Comments** » de l'objet « **ASN** ».
+- Pour APNIC, éditez le champ « **remarks** » de l'objet « **aut-num** ».
 
-Le jeton doit apparaître dans le champ de description (voir ci-dessus) de l'objet whois, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le jeton soit présent sur sa propre ligne dédiée dans la description. Le jeton doit être ajouté avant de passer la commande, et ne doit pas être retiré jusqu'à la fin du processus de livraison.
+Il est nécessaire que le token apparaisse dans le champ de description (voir ci-dessus) de l'objet WHOIS, sur une ligne dédiée. D'autres lignes peuvent être présentes, à condition que le token soit présent dans sa propre ligne dédiée dans la description. Le token doit être ajouté avant la commande et ne doit pas être supprimé avant la fin de la livraison.
 
 ### Permettre à OVHcloud d'annoncer la plage d'IP <a name="announceip"></a>
 
-Sur le RIR où la plage IP est enregistrée, vous devrez créer un **objet route** pour elle (correspondant exactement à la plage IP), avec le **numéro AS** d'OVHcloud ("AS16276") ou votre propre numéro AS dans le champ **origin** de l'objet route.
+Sur le RIR où la plage d'adresses IP est inscrite, il faudra créer un objet de routage (*route object*) pour celle-ci (correspondant exactement à la plage d'IP), avec le numéro **AS** de OVHcloud ("AS16276") ou votre propre numéro AS dans le champ **origin** de l'objet de routage.
 
-Pour plus d'informations sur les objets route, veuillez consulter la page de documentation de votre RIR :
+Pour plus d'informations sur les objets de routage (*route objects*), veuillez consulter la page de votre RIR :
 
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 - APNIC - [Creating Route Objects](https://www.apnic.net/manage-ip/using-whois/guide/creating-route-objects/)
 
 > [!warning]
-> Si votre bloc IP importé est déjà annoncé sur Internet depuis des sites autres qu'OVHcloud (cas du multihoming), vous risquez de perte de paquets ou d'autres problèmes de routage. Nous ne pourrons donc pas garantir la connectivité vers les services OVHcloud avec votre bloc IP importé.
+> Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles pertes de paquets ou d'autres difficultés de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
 
 ## En pratique
 
 ### Comment commander un service BYOIP
 
-Pour commencer, connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Réseau`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
+Pour commencer, connectez-vous à l'[espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche, puis sélectionnez `Adresses IP publiques`{.action}.
 
 ![Adresses IP publiques - Bouton BYOIP](images/byoip_public_ip.png){.thumbnail}
 
@@ -118,11 +120,11 @@ Cliquez sur le bouton `+ Bring Your Own IP`{.action} en haut de la page. Vous se
 
 ![Commander BYOIP](images/byoip_order.png){.thumbnail}
 
-Sélectionnez le **RIR** qui gère le bloc d'adresses IP public que vous souhaitez importer, puis sélectionnez la **région** où vous souhaitez que vos adresses IP soient situées. À partir de là, entrez la plage IP que vous souhaitez importer.
+Sélectionnez le **RIR** qui gère le bloc d'adresses IP publiques que vous souhaitez importer, puis sélectionnez la **région** où vous souhaitez que vos adresses IP soient situées. À partir de là, entrez la plage IP que vous souhaitez importer.
 
-Vous pourrez ensuite choisir si vous souhaitez utiliser le AS d'OVHcloud (recommandé), ou votre propre AS, pour annoncer votre bloc IP. 
+Vous pourrez ensuite choisir si vous souhaitez utiliser l'AS OVHcloud (recommandé), ou votre propre AS, pour annoncer votre bloc IP. 
 
-Si vous choisissez d'utiliser votre propre AS, vous devrez sélectionner le RIR qui gère votre ASN, puis remplir le champ correspondant. Si vous choisissez le AS d'OVHcloud, aucune information supplémentaire n'est requise.
+Si vous choisissez d'utiliser votre propre AS, vous devrez sélectionner le RIR qui gère votre ASN, puis remplir le champ correspondant. Si vous choisissez l'AS OVHcloud, aucune information supplémentaire n'est requise.
 
 ![AS BYOIP - OVHcloud](images/byoip_as_ovhcloud.png){.thumbnail}
 
@@ -132,33 +134,34 @@ Enfin, cliquez sur le bouton `Suivant`{.action} en bas de la page, ce qui ouvre 
 
 ![Soumettre la commande BYOIP](images/byoip_confirm.png){.thumbnail}
 
-Tous vos blocs IP importés porteront une étiquette `BYOIP`.
+Tous vos blocs IP importés porteront un tag `BYOIP`.
 
-![Étiquette BYOIP](images/byoip_tag.png){.thumbnail}
+![Tag BYOIP](images/byoip_tag.png){.thumbnail}
 
-Comme il n'existe actuellement aucun moyen de filtrer les adresses IP publiques via les étiquettes, nous vous recommandons de les filtrer en cliquant sur la barre `Tous les types de service`{.action} en haut de la page, puis en sélectionnant `Toutes les adresses IP supplémentaires`{.action}. À partir de là, vous pourrez différencier vos adresses IP supplémentaires classiques des adresses importées en utilisant l'étiquette `BYOIP` mentionnée ci-dessus.
+Comme il n'existe actuellement aucun moyen de filtrer les adresses IP publiques via les étiquettes, nous vous recommandons de les filtrer en cliquant sur la barre `Tous les types de service`{.action} en haut de la page, puis en sélectionnant `Toutes les Additional IP`{.action}. À partir de là, vous pourrez différencier vos Additional IP classiques des adresses importées grâce au tag `BYOIP` mentionnée ci-dessus.
 
-### Comment utiliser le produit
 
-Les adresses IP importées se comporteront comme le produit d'Additional IP actuel. Une plage IP importée sera divisée en blocs /24 qui pourront être déplacés vers n'importe quel service dans la même région.<br>
-Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'attribuer un de vos blocs à un produit éligible via le panneau de configuration ou l'API OVHcloud.<br>
+### Comment utiliser les adresses IP
+
+Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’une même région.<br>
+Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
 
 > [!warning]
-> Certaines opérations disponibles sur le produit Additional IP ne seront pas disponibles sur le produit BYOIP.
+> Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
 >
-> Par exemple, vous ne pourrez pas personnaliser les WHOIS de vos blocs via l'espace client OVHcloud/API, car OVHcloud ne les possède pas.
+> Par exemple, il ne vous sera pas possible de personnaliser le WHOIS de vos blocs via l'espace client ou l'API OVHcloud, car OVHcloud n'en est pas propriétaire.
 >
-> Pour la même raison, vous ne pourrez pas modifier les reverses de vos IPs directement via l'espace client OVHcloud/API.
+> Pour la même raison, il ne vous sera pas possible de modifier les *reverse* de vos IPs dès leur réception directement via l'espace client ou l'API OVHcloud.
 >
 
-<br>En cours de livraison, nous créerons des zones ARPA sur nos serveurs DNS et toute modification de reverse DNS via l'espace client OVHcloud/API sera appliquée sur ces zones. Cependant, ces modifications ne seront visibles publiquement que lorsque nos serveurs DNS recevront les délégations des zones ARPA par le RIR. (Cela est facultatif, si vous souhaitez continuer à gérer vous-même votre reverse DNS, vous pouvez le faire).
+Lors de la livraison, nous créerons des zones ARPA sur nos serveurs DNS et toute modification de *reverse DNS* via l'espace client ou l'API OVHcloud y sera appliquée. Ces modifications seront visibles au public lorsque nos serveurs DNS auront reçu les délégations des zones ARPA par le RIR (ceci est facultatif, si vous voulez continuer à gérer votre *reverse DNS* par vous-même, vous pouvez le faire).
 
 ### Découpage de plages d'adresses <a name="range-slicing"></a>
 
-Tout bloc IP importé peut être découpé en blocs plus petits et/ou en adresses individuelles.
+Tout bloc IP importé peut être divisé en blocs plus petits et/ou en adresses individuelles.
 
-> [!warning] 
-> Pour pouvoir découper/fusionner un bloc IP existant, il doit être inutilisé (c'est-à-dire dans la zone de parking) et il ne doit pas y avoir de tâche en attente associée (par exemple, aucune opération de déplacement en attente).
+> [!warning]
+> Pour pouvoir découper/fusionner un bloc IP existant, il doit être inutilisé (c'est-à-dire au parking) et aucune tâche en attente ne doit lui être associée (par exemple aucune opération de déplacement en attente).
 
 Pour découper un bloc, utilisez l'appel API suivant :
 
@@ -167,86 +170,86 @@ Pour découper un bloc, utilisez l'appel API suivant :
 > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
-Utilisez les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip: le bloc IP que vous souhaitez découper, en notation CIDR.
-- slicingSize: la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez entrer la valeur "25".
+- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+- slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur "25".
 
 > [!primary]
-> Cet appel API est asynchrone, les nouveaux blocs sont disponibles peu de temps après l'appel. Ils seront utilisables comme n'importe quel autre bloc d'Additional IP ou adresse individuelle.
+> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc IP supplémentaire ou adresse individuelle.
 
-Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, en utilisant l'appel API suivant :
+Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
-Utilisez les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip: le bloc IP que vous souhaitez découper, en notation CIDR.
+- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 
-Pour fusionner à nouveau un bloc dans un bloc parent, utilisez cet appel API :
+Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
 
 > [!api]
 >
 > @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
-Utilisez les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip: le bloc IP que vous souhaitez fusionner, en notation CIDR.
-- aggregationIp: le bloc résultant, en notation CIDR.
+- ip : le bloc IP que vous souhaitez agréger, en notation CIDR.
+- aggregationIp : le bloc résultant, en notation CIDR.
 
-Le bloc résultant sera une agrégation de tous ses blocs enfants.
+Le bloc résultant sera un agrégat de tous ses blocs enfants.
 
 > [!primary]
-> Cet appel API est asynchrone, les blocs réaggrégés sont disponibles peu de temps après l'appel.
+> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
 
-Vous pouvez prévisualiser toutes les configurations possibles de blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
+Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
-Utilisez les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip: le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
+- ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
 
 Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
 
 **Limites** :
 
-- Les éléments de configuration associés à des adresses IP individuelles (/32), tels que les règles de pare-feu ou les entrées de nom de domaine inverse, seront conservés après les opérations de découpage/fusion.
-- Les tâches API de découpage/fusion ne peuvent pas être suivies par le numéro de tâche asynchrone renvoyé par l'API, car les objets IP associés seront détruits lors du processus de découpage/fusion.
-- La liste des adresses IP et des blocs renvoyée par l'API est triée par taille de préfixe réseau. Nous travaillons à fournir une solution pour lister les IPs par ordre numérique.
-- Une fois découpé, les blocs plus petits ne peuvent pas être déplacés en dehors de la région choisie lors de la commande du produit.
-- Le déplacement d'un bloc /24 entre les régions françaises ne fonctionnera pas s'il a été regroupé à partir d'un découpage antérieur.
+- Les éléments de configuration associés aux adresses IP individuelles (/32) tels que les règles de pare-feu ou les entrées reverse DNS seront conservés après les opérations de découpage/fusion.
+- Les tâches API découpage/fusion ne peuvent pas être suivies par le numéro de tâche asynchrone renvoyé par l'API, car les objets IP associés seront détruits dans le processus de découpage/fusion.
+- La liste des adresses IP et des blocs renvoyés par l'API est classée par taille de préfixe réseau. Nous travaillons pour fournir une solution permettant de répertorier les adresses IP par ordre numérique.
+- Une fois découpés, les petits blocs ne sont pas déplaçables en dehors de la région choisie lors de la commande du produit.
+- Déplacer un bloc /24 entre les régions françaises ne fonctionnera pas s'il a été réagrégé à partir d'un découpage antérieur.
 
-## Comment annuler un service BYOIP
+## Comment résilier un service BYOIP
 
-Depuis le [espace client OVHcloud](/links/manager), cliquez sur votre `nom de compte`{.action} en haut à droite, puis sélectionnez `Mes offres et services`{.action} dans le menu déroulant.
+Depuis votre [espace client OVHcloud](/links/manager), cliquez sur votre `nom de compte`{.action} en haut à droite de la fenêtre, puis sélectionnez `Mes offres et services`{.action} dans le menu déroulant.
 
-Dans la barre de recherche en haut à droite, à côté du bouton de filtre, tapez "byoip", puis appuyez sur la touche `Entrée`{.action} pour filtrer vos services BYOIP.
+Dans la barre de recherche en haut à droite du tableau qui s'est ouvert, à côté du bouton de filtre, tapez "byoip", puis appuyez sur la touche `Entrée`{.action} pour filtrer vos services BYOIP.
 
 ![Annulation BYOIP](images/byoip_cancel.png){.thumbnail}
 
-Trouvez le service que vous souhaitez annuler, puis cliquez sur le bouton correspondant `...`{.action} à droite, et sélectionnez `Annuler mon abonnement`{.action}.
+Trouvez le service que vous souhaitez annuler, puis cliquez sur le bouton `...`{.action} correspondant sur la droite du tableau, et sélectionnez `Résilier mon service`{.action}.
 
 Une fenêtre de confirmation s'affichera :
 
 ![Confirmation d'annulation BYOIP](images/byoip_cancel_confirmation.png){.thumbnail}
 
-Choisissez si vous souhaitez annuler le service immédiatement ou à la date d'expiration, puis cliquez sur `Oui, annuler`{.action}.
+Choisissez si vous souhaitez résilier le service immédiatement ou à la date d'expiration, puis cliquez sur `Oui, résilier`{.action}.
 
 ## FAQ
 
 ### Est-il possible d'importer une plage d'adresses IP inférieure à un /24 ?
 
-Non, la taille minimale acceptée est un /24.
+Non, la taille minimum acceptée est un /24.
 
-### Est-il possible d'importer une plage IP supérieure à un /19 ?
+### Est-il possible d'importer une plage d'adresses IP supérieure à un /19 ?
 
 Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vous invitons à nous contacter pour en discuter.
 
@@ -254,25 +257,25 @@ Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vou
 
 Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'addresses](#range-slicing) ci-dessus.
 
-### Puis-je importer une adresse IP et un numéro AS qui ne sont pas dans le même RIR ?
+### Puis-je importer un numéro AS et une plage d'adresses IP provenant de RIR différents ?
 
 Oui.
 
-### Puis-je importer une plage d'adresses IP ou un numéro AS géré par AFRINIC/LACNIC ?
+### Puis-je importer une plage d’adresses IP ou un numéro AS géré par IP AFRINIC/LACNIC ?
 
 Pas pour le moment.
 
-### Est-il possible d'utiliser une plage IP sur plusieurs régions ?
+### Est-il possible d'utiliser une plage d'adresses IP sur plusieurs régions ?
 
-Non, une plage IP doit être utilisée dans une seule région.
+Non, une plage d'IP doit être utilisée dans une seule région.
 
 ### Est-il possible de changer la région d'une plage IP importée ?
 
-Il n'est pas possible de changer la région d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi la région de Gravelines, Roubaix ou Strasbourg au moment de la commande et si vous avez commandé le service après le 1er janvier 2023, vous pourrez déplacer vos blocs IP sur ces 3 régions (et uniquement sur ces 3 régions).
+Il n'est pas possible de changer la région d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi la région de Gravelines, Roubaix ou Strasbourg au moment de la commande et si vous avez commandé le service après le 1er janvier 2023, vous pourrez déplacer vos blocs IP **/24** sur ces 3 régions (et uniquement sur ces 3 régions).
 
-Veuillez noter que, comme mentionné dans les limites du découpage de plage d'adresses, cela n'est possible que si le bloc que vous souhaitez déplacer **n'a pas été regroupé** à la suite d'un découpage antérieur.
+Veuillez noter que, comme mentionné dans les limites du découpage de plages d'adresses, cette option n'est disponible que si le bloc IP que vous souhaitez déplacer n'a pas été réagrégé à partir d'un découpage antérieur.
 
-### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA pour mon IP importée ?
+### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
 Leurs noms vous seront communiqués dans l'e-mail de livraison.
 
@@ -282,8 +285,8 @@ Pas pour le moment.
 
 ### Puis-je commander le service alors que ma plage IP est encore annoncée depuis un autre site ?
 
-Oui, mais une fois le service BYOIP livré, vous devez immédiatement annuler l'annonce depuis l'autre site, car vous risquez des problèmes de connectivité avec les services hébergés chez OVHcloud. Dans ce cas, OVHcloud ne peut pas être tenu responsable.
+Oui, mais une fois la livraison du service BYOIP effectuée, vous devrez immédiatement annuler les annonces depuis l'autre site, sous peine de problème de connectivité avec vos éventuels services hébergés chez OVHcloud. Le cas échéant, OVHcloud ne pourra être tenu responsable.
 
-## Aller plus loin
+## Allez plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
