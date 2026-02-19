@@ -395,7 +395,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 >> ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 >>
->> Haga clic en **Usar la siguiente dirección IP**. Introduzca cualquier **dirección IP** de su rango privado y la **Máscara de subred** apropiada (`255.255.0.0` en este ejemplo) en los campos correspondientes.
+>> Haga clic en `Usar la siguiente dirección IP`{.action}. Introduzca cualquier **dirección IP** de su rango privado y la **Máscara de subred** apropiada (`255.255.0.0` en este ejemplo) en los campos correspondientes.
 >>
 >> ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 >>

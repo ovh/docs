@@ -109,7 +109,7 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 >>
 >> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
 >>
-> **Ubuntu Debian 12+**
+> **Ubuntu und Debian 12+**
 >>
 >> Diese Befehle wurden unter Ubuntu 24.04 (Noble Numbat) ausgeführt.
 >>
@@ -370,7 +370,7 @@ Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface ausw
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Geben Sie nun das VLAN-Tag an. Klicken Sie im "***NIC Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein:
+Geben Sie nun das VLAN-Tag an. Klicken Sie im "**NIC-Teamvorgang**"-Fenster im Panel "**ADAPTER UND SCHNITTSTELLEN**", Gehen Sie zur Registerkarte `Teamschnittstellen`{.action} und mit der rechten Maustaste auf das Interface, das Sie gerade zum neuen Team hinzugefügt haben, und klicken Sie dann auf `Eigenschaften`{.action}. Klicken Sie jetzt auf `Spezifisches VLAN`{.action} und geben Sie den Tag ein:
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 

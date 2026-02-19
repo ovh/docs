@@ -372,7 +372,7 @@ Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet `Interfaces d'équipe`{.action} et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Proprétés`{.action}. Cliquez maintenant sur `VLAN spécifique`{.action}, et précisez le tag :
+Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet `Interfaces d'équipe`{.action} et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Propriétés`{.action}. Cliquez maintenant sur `VLAN spécifique`{.action}, et précisez le tag :
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
