@@ -1,7 +1,7 @@
 ---
 title: "Tout savoir sur les enregistrements DNS"
 excerpt: "Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud"
-updated: 2026-02-10
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -202,6 +202,21 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> - **Mode Service** : ce mode s'active lorsque vous précisez une priorité différente de 0. C'est dans ce mode que vous pourrez définir les paramètres que vous souhaitez appliquer à votre nom de domaine (exemples de paramètres : *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En mode **Service**, vous pouvez appliquer ces paramètres directement pour votre nom de domaine, même si ce dernier n'est pas à utiliser comme alias d'un autre nom de domaine.
 >>
 >> Si besoin, retrouvez plus de détails sur le site de l'[**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > Retrouvez ci-dessous un exemple concret de mise en place d'un alias (apex) via un enregistrement DNS de type HTTPS :
+>> >
+>> > Le site web **domain.tld** est hébergé derrière une infrastructure CDN (par exemple : **cdn.provider.tld**).
+>> > Grâce à l'enregistrement DNS de type HTTPS, le nom de domaine **domain.tld** peut indiquer directement aux navigateurs Internet compatibles que le service HTTPS doit être résolu auprès du fournisseur du CDN **cdn.provider.tld**. Ceci sans redirections et sans gestion manuelle des adresses IP.
+>> >
+>> > Pour cela, l'enregistrement DNS de type HTTPS doit indiquer :
+>> >
+>> > - En priorité : *0*.
+>> > - En cible : *cdn.provider.tld*.
+>> > - En paramètre : **Laissez le champ vide**.
+>> >
+>> > Ainsi, c'est la résolution de **cdn.provider.tld** qui indiquera les paramètres à utiliser pour **domain.tld**.
 
 #### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="cnameusecase"></a>
 

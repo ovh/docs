@@ -1,7 +1,7 @@
 ---
 title: "Todo sobre los registros DNS"
 excerpt: "Descubra los diferentes tipos de registro DNS disponibles en una zona DNS de OVHcloud"
-updated: 2026-02-10
+updated: 2026-02-19
 ---
 
 ## Objetivo
@@ -202,6 +202,21 @@ Seleccione el registro que desee haciendo clic en cada una de las fichas siguien
 >> - **Modo Servicio**: este modo se activa cuando especifica una prioridad distinta de 0. Es en este modo donde podrá definir los parámetros que desee aplicar a su nombre de dominio (ejemplos de parámetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). En modo **Servicio**, puede aplicar estos parámetros directamente a su nombre de dominio, incluso si este no se utiliza como alias de otro nombre de dominio.
 >>
 >> Si es necesario, puede encontrar más detalles en el sitio web de la [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > A continuación, puede encontrar un ejemplo práctico de configuración de un alias (apex) mediante un registro DNS de tipo HTTPS:
+>> >
+>> > El sitio web **domain.tld** está alojado detrás de una infraestructura CDN (por ejemplo: **cdn.provider.tld**).
+>> > Gracias al registro DNS de tipo HTTPS, el nombre de dominio **domain.tld** puede indicar directamente a los navegadores compatibles que el servicio HTTPS debe resolverse en el proveedor del CDN **cdn.provider.tld**. Esto sin redirecciones ni gestión manual de direcciones IP.
+>> >
+>> > Para ello, el registro DNS de tipo HTTPS debe indicar:
+>> >
+>> > - En prioridad: *0*.
+>> > - En destino: *cdn.provider.tld*.
+>> > - En ajustes: **Deje el campo vacío**.
+>> >
+>> > De esta manera, será la resolución de **cdn.provider.tld** la que indique los parámetros a utilizar para **domain.tld**.
 
 #### Caso particular de uso: el uso de los registros CNAME <a name="cnameusecase"></a>
 
