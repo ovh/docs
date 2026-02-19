@@ -1,7 +1,7 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objetivo
@@ -294,23 +294,23 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 
 A modo de ejemplo, las siguientes configuraciones utilizarán el rango de direcciones IP de `192.168.0.0/16` (**Máscara de subred**: `255.255.0.0`).
 
-Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de configuración**.
+Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel do control**.
 
 ![Panel de control de Windows](images/windows_control_panel.png){.thumbnail}
 
-Haga clic en `Network and Internet`{.action}.
+Haga clic en `Redes e Internet`{.action}.
 
 ![Red e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Abra `Network and Sharing Center`{.action}.
+Abra `Centro de redes y recursos compartidos`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Haga clic en `Change Adapter Settings`{.action}.
+Haga clic en `Cambiar cconfiguración del adaptador`{.action}.
 
 ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 
-Haga clic derecho en la interfaz de red secundaria y seleccione `Properties`{.action}.
+Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
 
 En nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la tarjeta de red vRack utilice una interfaz diferente. Utilice una interfaz que no posea la dirección IP principal del servidor o que utilice una dirección IP autoasignada.
 
@@ -320,7 +320,7 @@ Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Protocolo de Internet versión 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Haga clic en **Usar la siguiente** dirección IP. Introduzca en el campo correspondiente cualquier dirección **IP** de su rango privado y la **máscara** de subred adecuada (`255.255.0.0` en este ejemplo).
+Haga clic en `Usar la siguente dirección IP`{.action}. Introduzca en el campo correspondiente cualquier **dirección IP** de su rango privado y la **Máscara de subred** adecuada (`255.255.0.0` en este ejemplo).
 
 ![Usar la siguiente dirección IP](images/windows_use_following_ip_address.png){.thumbnail}
 

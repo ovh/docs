@@ -1,7 +1,7 @@
 ---
 title: 'Configurare due o più server dedicati nella vRack'
 excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Obiettivo
@@ -295,23 +295,23 @@ A titolo di esempio, utilizzeremo l'intervallo di indirizzi IP `192.168.0.0/16` 
 
 Ad esempio, queste configurazioni utilizzeranno la classe di indirizzi IP di `192.168.0.0/16` (**Maschera di sottorete**: `255.255.0.0`).
 
-Accedi al tuo server Windows tramite desktop remoto e vai nel **Pannello di configurazione**.
+Accedi al tuo server Windows tramite desktop remoto e vai nel **Pannello di controllo**.
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Poi clicca su `Network and Internet`{.action}.
+Poi clicca su `Rete e Internet`{.action}.
 
 ![Rete e Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Apri `Network and Sharing Center`{.action}.
+Apri `Centro connessioni di rete e condivisione`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Clicca su `Change Adapter Settings`{.action}.
+Clicca su `Modifica impostazioni scheda`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Clicca con il tasto destro sull'interfaccia di rete secondaria e poi clicca su `Properties`{.action}.
+Clicca con il tasto destro sull'interfaccia di rete secondaria e poi clicca su `Proprietà`{.action}.
 
 Nel nostro esempio, `Ethernet 2` è l'interfaccia utilizzata per la vRack. ma è possibile che la scheda di rete vRack utilizzi un'interfaccia diversa. Utilizza un'interfaccia che non possiede l'indirizzo IP principale del server o che utilizza un indirizzo IP auto-attribuito.
 
@@ -321,7 +321,7 @@ Fai doppio clic su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Clicca su **Utilizza questo indirizzo IP**. Inserisci qualsiasi indirizzo **IP** della tua gamma privata e la **maschera di sottorete** appropriata (`255.255.0.0` in questo esempio) nel campo corrispondente.
+Clicca su `Utilizza il seguente indirizzo IP`{.action} Inserisci qualsiasi **indirizzo IP** della tua gamma privata e la **maschera di sottorete** appropriata (`255.255.0.0` in questo esempio) nel campo corrispondente.
 
 ![Utilizza questo indirizzo IP](images/windows_use_following_ip_address.png){.thumbnail}
 

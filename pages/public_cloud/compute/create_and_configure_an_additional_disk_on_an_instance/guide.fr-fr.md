@@ -34,7 +34,7 @@ Cela peut être utile dans les cas suivants :
 
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'une instance [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud
-- Avoir un accès administrateur (sudo) à votre instance via SSH
+- Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
 - Préparer l'environnement si vous souhaitez utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Wprowadzenie
@@ -295,23 +295,23 @@ Na potrzeby tego przykładu użyjemy zakresu adresów IP `192.168.0.0/16` (**Mas
 
 Na przykład następujące konfiguracje będą korzystać z zakresu adresów IP `192.168.0.0/16` (**maska podsieci**: `255.255.0.0`).
 
-Zaloguj się do serwera Windows przez zdalny pulpit i przejdź do **Panelu konfiguracyjnego**.
+Zaloguj się do serwera Windows przez zdalny pulpit i przejdź do **Panel sterowania**.
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Kliknij `Network and Internet`{.action}.
+Kliknij `Sieć i Internet`{.action}.
 
 ![Sieć i Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Otwórz `Network and Sharing Center`{.action}.
+Otwórz `Centrum sieci i udostępniania`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Kliknij `Change Adapter Settings`{.action}.
+Kliknij `Zmień ustawienia karty sieciowej`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Kliknij prawym przyciskiem myszy na dodatkowym interfejsie sieciowym, a następnie kliknij `Properties`{.action}.
+Kliknij prawym przyciskiem myszy na dodatkowym interfejsie sieciowym, a następnie kliknij `Właściwości`{.action}.
 
 W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP.
 
@@ -321,7 +321,7 @@ Kliknij dwukrotnie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 
-Kliknij **Użyj następującego** adresu IP. W odpowiednim polu wpisz dowolny adres **IP** z Twojego zakresu prywatnego oraz odpowiednią **maskę** podsieci (`255.255.0.0` w tym przykładzie).
+Kliknij `Uźyj następującego adresu IP`{.action}. W odpowiednim polu wpisz dowolny **Adres IP** z Twojego zakresu prywatnego oraz odpowiednią **Maska podsieci** (`255.255.0.0` w tym przykładzie).
 
 ![Użyj następującego adresu IP](images/windows_use_following_ip_address.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Créer plusieurs VLAN dans le vRack'
 excerpt: 'Découvrez comment créer plusieurs VLAN dans le vRack'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -360,39 +360,39 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 
 ### Sous Windows
 
-Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Server Manager ». Sélectionnez ensuite `Local Server`{.action}, puis cliquez sur le lien `Disabled`{.action} à côté de **NIC Teaming** :
+Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Gestionnaire de serveur ». Sélectionnez ensuite `Serveur local`{.action}, puis cliquez sur le lien `Désactivé`{.action} à côté de **Association des cartes réseau** :
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Faites ensuite un clic droit sur l'interface réseau et sélectionnez `Add to New Team`{.action}.
+Faites ensuite un clic droit sur l'interface réseau et sélectionnez `Ajouter à une nouvelle équipe`{.action}.
 
 ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Team name**. Lorsque vous avez terminé, cliquez sur `OK`{.action}.
+Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Nom de l'équipe**. Lorsque vous avez terminé, cliquez sur `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **Adapters and Interfaces** » de l’écran « **NIC Teaming** », faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Properties`{.action}. Cliquez maintenant sur `Specific VLAN`{.action}, et précisez le tag :
+Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet `Interfaces d'équipe`{.action} et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Proprétés`{.action}. Cliquez maintenant sur `VLAN spécifique`{.action}, et précisez le tag :
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Il faut maintenant configurer l’adresse IP du VLAN. Cliquez sur le bouton `Start`{.action} du menu de démarrage, puis sur `Control Panel`{.action} :
+Il faut maintenant configurer l’adresse IP du VLAN. Cliquez sur le bouton `Start`{.action} du menu de démarrage, puis sur `Panneau de configuration`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Cliquez sur `Network and Internet`{.action} :
+Cliquez sur `Réseau et Internet`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
-Cliquez ensuite sur `Network and Sharing Center`{.action} :
+Cliquez ensuite sur `Centre Réseau et partage`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Cliquez alors sur `Modifier les paramètres de l’adaptateur`{.action} :
+Cliquez alors sur `Modifier les paramètres de la carte`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
-Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Properties`{.action} :
+Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Propriétés`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
@@ -402,7 +402,7 @@ Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IPv4)`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Dans l'étape suivante, cliquez sur `Use the following IP address`{.action}. Pour « **IP Address** », tapez une adresse IP de votre plage interne. Pour « **Subnet mask** », tapez « 255.255.0.0 ».
+Dans l'étape suivante, cliquez sur `Utiliser l'adresse IP suivante`{.action}. Pour « **Address IP** », tapez une adresse IP de votre plage interne. Pour « **Masque de sous-réseau** », tapez « 255.255.0.0 ».
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 

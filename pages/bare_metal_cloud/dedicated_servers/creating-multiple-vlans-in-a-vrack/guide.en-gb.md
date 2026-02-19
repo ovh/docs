@@ -1,7 +1,7 @@
 ---
 title: Creating multiple vLANs in a vRack
 excerpt: This guide will show you how to create multiple vLANs within the vRack
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 
 * An active [vRack](/links/network/vrack) service in your account
 * Two or more [vRack-compatible servers](/links/bare-metal/bare-metal)
-* Administrative (sudo) access to the server via SSH
+* Administrative (sudo) access to your server via SSH (Linux) or RDP (Windows)
 * Access to the [OVHcloud Control Panel](/links/manager)
 * Your chosen private IP address range
 * You must have completed the [vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
@@ -109,9 +109,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 >>
 >> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
 >>
-> **Ubuntu 20.04+ and Debian 12+**
->> 
->> Ubuntu 20.04 and later versions, Debian 12 and later versions
+> **Ubuntu and Debian 12+**
 >>
 >> These commands were executed under Ubuntu 24.04 (Noble Numbat).
 >>
@@ -368,11 +366,11 @@ Next, right-click on the network interface and select `Add to New Team`{.action}
 
 ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 
-In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}
+In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}.
 
 ![Windows vLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Next, we need to define the vLAN tag. In the **Adapters and Interfaces** pane of the **NIC Teaming** screen, right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
+Next, we need to define the vLAN tag. In the **ADAPTERS AND INTERFACES** pane of the **NIC Teaming** screen, go to the `Team Interfaces`{.action} tab and right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
 
 ![Windows vLAN](images/vrack2-windows-03.png){.thumbnail}
 

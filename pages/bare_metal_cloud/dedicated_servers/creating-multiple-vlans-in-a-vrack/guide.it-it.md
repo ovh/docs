@@ -1,7 +1,7 @@
 ---
 title: 'Creare due o più VLAN nella vRack'
 excerpt: 'Scopri come creare molteplici VLAN nella vRack'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Obiettivo
@@ -14,7 +14,7 @@ La [configurazione standard della vRack](/pages/bare_metal_cloud/dedicated_serve
 
 * Un servizio [vRack](/links/network/vrack) attivo nel tuo account
 * Due o più [server compatibili con la vRack](/links/bare-metal/bare-metal)
-* Accesso amministrativo (sudo) al server via SSH
+* Accesso amministrativo (sudo) al server tramite SSH (Linux) o RDP (Windows)
 * Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 * Il range di indirizzi IP privati scelto
 * Aver completato la [guida di configurazione della vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
@@ -109,9 +109,7 @@ La [configurazione standard della vRack](/pages/bare_metal_cloud/dedicated_serve
 >>
 >> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
 >>
-> **Ubuntu 20.04+ e Debian 12+**
->>
->> Ubuntu 20.04 e versioni successive, Debian 12 e versioni successive
+> **Ubuntu e Debian 12+**
 >>
 >> Questi comandi sono stati eseguiti su Ubuntu 24.04 (Noble Numbat).
 >>
@@ -360,39 +358,39 @@ La [configurazione standard della vRack](/pages/bare_metal_cloud/dedicated_serve
 
 ### Windows
 
-Connettiti al tuo server tramite desktop remoto e apri l'applicazione Server Manager. Seleziona `Local Server`{.action} e clicca sul link `Disabled`{.action} accanto a **NIC Teaming**:
+Connettiti al tuo server tramite desktop remoto e apri l'applicazione Server Manager. Seleziona `Server locale`{.action} e clicca sul link `Disabilitato`{.action} accanto a **Gruppo NIC**:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Clicca con il tasto destro sull'interfaccia di rete e seleziona `Add to New Team`{.action}.
+Clicca con il tasto destro sull'interfaccia di rete e seleziona `Aggiungi al nuovo team`{.action}.
 
 ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 
-Nella nuova finestra, crea un nuovo team digitando il nome del team nel campo **Team name**. Al termine dell'operazione clicca su `OK`{.action} per confermare.
+Nella nuova finestra, crea un nuovo team digitando il nome del team nel campo **Nome team**. Al termine dell'operazione clicca su `OK`{.action} per confermare.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Poi specifica il tag della VLAN. Nel pannello **Adapters and Interfaces** della schermata **NIC Teaming** clicca con il tasto destro del mouse sull'interfaccia che hai appena aggiunto al nuovo team e infine clicca su `Properties`{.action}. A questo punto, seleziona `Specific VLAN`{.action} e inserisci il tag:
+Poi specifica il tag della VLAN. Nel pannello **SCHEDE E INTERFACE** della schermata **Gruppo NIC**, vai alla scheda `Interface gruppo`{.action} e clicca con il tasto destro del mouse sull'interfaccia che hai appena aggiunto al nuovo team e infine clicca su `Proprietà`{.action}. A questo punto, seleziona `VLAN specifica`{.action} e inserisci il tag:
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Adesso non resta che configurare l'indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Control Panel`{.action}.
+Adesso non resta che configurare l'indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Pannello di controllo`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Poi clicca su `Network and Internet`{.action}.
+Poi clicca su `Rete e Internet`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
-Clicca su `Network and Sharing Center`{.action}.
+Clicca su `Centro connessioni di rete e condivisione`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Poi clicca su `Change adapter settings`{.action}.
+Poi clicca su `Modifica impostazioni scheda`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
-Di seguito, clicca con il tasto destro sull'interfaccia VLAN e poi clicca su `Properties`{.action}.
+Di seguito, clicca con il tasto destro sull'interfaccia VLAN e poi clicca su `Proprietà`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
@@ -402,7 +400,7 @@ Fai doppio click su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Clicca su `Use the following IP address`{.action}: in **IP Address** inserisci un indirizzo IP del tuo intervallo e in **Subnet mask** inserisci 255.255.0.0
+Clicca su `Utilizza il seguente indirizzo IP`{.action}: in **Indirizzo IP** inserisci un indirizzo IP del tuo intervallo e in **maschera di sottorete** inserisci 255.255.0.0
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 
