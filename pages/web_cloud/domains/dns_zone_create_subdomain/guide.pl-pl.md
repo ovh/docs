@@ -58,7 +58,7 @@ Wówczas będzie ona mieć własną strefę do konfigurowania rekordów DNS.
 
 > [!success]
 >
-> Na przypomnienie :
+> Na przypomnienie:
 >
 > - Nazwa domeny ma zazwyczaj postać: **domain.tld**. Na przykład: ovhcloud.com.
 > - Poddomena ma zazwyczaj postać: **sub.domain.tld**. Na przykład: help.ovhcloud.com.
@@ -120,11 +120,11 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
 Po utworzeniu strefy DNS Twojej subdomena możesz ją edytować. Operacja ta jest opcjonalna, ale może okazać się konieczna, jeśli chcesz zapewnić nieprzerwaną dostępność usług powiązanych z tą subdomena (takich jak strona WWW i/lub konta e-mail).
 
-Aby edytować tę strefę DNS, zapoznaj się z naszym przewodnikiem „[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)”.
+Aby edytować tę strefę DNS, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 > [!primary]
 >
-> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług (w części `Web cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług (w części `Web Cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
 
 ### 3 - Zadeklarowanie serwerów DNS w aktywnej strefie DNS nazwy domeny, od której zależy wybrana subdomena
 
@@ -205,7 +205,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> **Powtórz cały proces dla drugiego serwera DNS.**
 >>
->> W razie potrzeby, skorzystaj również z naszego przewodnika „[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)”.
+>> W razie potrzeby, skorzystaj również z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -218,7 +218,7 @@ Oto przykład zapytania, które możesz wysłać do swojego dostawcy DNS:
 <pre class="bgwhite"><code>
 Dzień dobry,
 
-Chciałbym dodać do aktywnej strefy DNS nazwy domeny <b>domain.tld</b> następujące rekordy DNS typu NS dla mojej poddomeny <b>sub.domain.tld</b> :
+Chciałbym dodać do aktywnej strefy DNS nazwy domeny <b>domain.tld</b> następujące rekordy DNS typu NS dla mojej poddomeny <b>sub.domain.tld</b>:
 
  - sub IN NS nsXX.ovh.net.
  - sub IN NS dnsXX.ovh.net.
@@ -236,7 +236,7 @@ W powyższym przykładzie zastąp wartości **domain.tld**, **sub.domain.tld**, 
 >
 > **Następujące uwagi dotyczą nie dwóch właśnie dodanych rekordów DNS typu NS.** 
 >
-> Jeśli inne rekordy DNS znajdowały się w aktywnej strefie DNS nazwy domeny, od której zależy Twoja subdomena :
+> Jeśli inne rekordy DNS znajdowały się w aktywnej strefie DNS nazwy domeny, od której zależy Twoja subdomena:
 >
 > 1. Pamiętaj, aby je skopiować do strefy DNS utworzonej dla Twojej poddomeny.
 > 2. Po skopiowaniu usuń je ze strefy DNS aktywnej Twojej nazwy domeny.
@@ -255,7 +255,7 @@ Po zmodyfikowaniu strefy DNS nazwy domeny, od której zależy Twoja subdomena, p
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

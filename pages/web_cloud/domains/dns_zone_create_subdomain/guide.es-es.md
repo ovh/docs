@@ -1,6 +1,6 @@
 ---
 title: "Crear una zona DNS de OVHcloud para un subdominio"
-excerpt: "Descubra cómo crear una zona DNS en OVHcloud para un subdominio de un nombre de dominio desde su área de cliente"
+excerpt: "Descubra cómo crear una zona DNS en OVHcloud para el subdominio de un nombre de dominio desde su área de cliente"
 updated: 2026-02-19
 ---
 
@@ -54,14 +54,14 @@ Normalmente, los registros DNS de un subdominio se configuran directamente desde
 Sin embargo, también es posible crear una zona DNS específica para un subdominio.
 
 Por diversas razones, puede que necesite crear una zona DNS para un subdominio en OVHcloud.
-Este dispondrá entonces de su propia zona para configurar sus registros DNS.
+Este subdominio dispondrá entonces de su propia zona para configurar sus registros DNS.
 
 > [!success]
 >
-> Para recordar :
+> Para recordar:
 >
-> - Un nombre de dominio tiene normalmente esta forma : **domain.tld**. Por ejemplo : ovhcloud.com.
-> - Un subdominio tiene normalmente esta forma : **sub.domain.tld**. Por ejemplo : help.ovhcloud.com.
+> - Un nombre de dominio tiene normalmente esta forma: **domain.tld**. Por ejemplo: ovhcloud.com.
+> - Un subdominio tiene normalmente esta forma: **sub.domain.tld**. Por ejemplo: help.ovhcloud.com.
 >
 > Por defecto, un subdominio depende de un nombre de dominio para funcionar.
 > En la práctica, no podrá utilizar el subdominio **sub.domain.tld** si no tiene acceso a la gestión del nombre de dominio **domain.tld**.
@@ -97,7 +97,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 > **Etapa 3**
 >>
->> En la página que aparece, indique el subdominio (por ejemplo : *sub.domain.tld*) para el que desea crear una zona DNS de OVHcloud. Espere unos instantes mientras la herramienta realiza comprobaciones sobre el subdominio.
+>> En la página que aparece, indique el subdominio (por ejemplo: *sub.domain.tld*) para el que desea crear una zona DNS de OVHcloud. Espere unos instantes mientras la herramienta realiza comprobaciones sobre el subdominio.
 >>
 >> ![dnszonecreate](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/adding-a-dns-zone.png){.thumbnail}
 >>
@@ -120,11 +120,11 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 Una vez que haya creado la zona DNS para el subdominio ya puede editarla. Esta operación es opcional, pero puede ser necesaria para garantizar la disponibilidad de los servicios asociados al subdominio (como un sitio web o los mensajes de correo electrónico).
 
-Para editar esta zona DNS, consulte nuestra guía « [Editar una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». 
+Para editar esta zona DNS, consulte nuestra guía "[Editar una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". 
 
 > [!primary]
 >
-> Si acaba de crear la zona DNS y el subdominio no aparece aún en la lista de sus servicios (en la sección `Web cloud`{.action} del área de cliente de OVHcloud y, seguidamente, en la sección `Zonas DNS`{.action}), espere entre 15 y 20 minutos y vuelva a cargar la página.
+> Si acaba de crear la zona DNS y el subdominio no aparece aún en la lista de sus servicios (en la sección `Web Cloud`{.action} del área de cliente de OVHcloud y, seguidamente, en la sección `Zonas DNS`{.action}), espere entre 15 y 20 minutos y vuelva a cargar la página.
 
 ### 3 - Declarar los servidores DNS en la zona DNS activa del nombre de dominio del que depende el subdominio elegido
 
@@ -153,14 +153,14 @@ Para encontrarlos, haga clic en las fichas siguientes para ver cada una de las *
 >>
 >> ![Zonas DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 >>
->> Busque las 2 líneas de tipo **NS** y recupere las 2 valores presentes en la columna **Destino**.
->> Los nombres de los servidores DNS deben tener una de las 3 formas siguientes :
+>> Busque las 2 líneas de tipo **NS** y recupere los 2 valores presentes en la columna **Destino**.
+>> Los nombres de los servidores DNS deben tener una de las 3 formas siguientes:
 >>
 >> - `nsXX.ovh.net` y `dnsXX.ovh.net` o, `nsXXX.ovh.net` y `dnsXXX.ovh.net` (donde cada `X` representa un número entre **0** y **9**).
 >> - `nsXX.ovh.ca` y `dnsXX.ovh.ca` o, `nsXXX.ovh.ca` y `dnsXXX.ovh.ca` (donde cada `X` representa un número entre **0** y **9**).
 >> - `ns200.anycast.me` y `dns200.anycast.me` (si ha contratado la opción [DNS anycast](/links/web/domains-options)).
 
-Una vez recuperados los 2 nombres de servidor DNS, 2 situaciones son posibles :
+Una vez recuperados los 2 nombres de servidor DNS, 2 situaciones son posibles:
 
 **Pulse en una de las 2 situaciones para mostrar el contenido.**
 
@@ -195,7 +195,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 5**
 >>
->> A continuación, introduzca en el campo `Subdominio *` el subdominio correspondiente (por ejemplo : `sub` para el subdominio `sub.domain.tld`), y en el campo `Destino *`, uno de los 2 servidores DNS recuperados anteriormente (por ejemplo : `nsXX.ovh.net`).
+>> A continuación, introduzca en el campo `Subdominio *` el subdominio correspondiente (por ejemplo: `sub` para el subdominio `sub.domain.tld`), y en el campo `Destino *`, uno de los 2 servidores DNS recuperados anteriormente (por ejemplo: `nsXX.ovh.net`).
 >>
 >> ![zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-a-ns-entry-to-the-dns-zone.png){.thumbnail}
 >>
@@ -205,20 +205,20 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> **Repita todo el proceso para el segundo servidor DNS.**
 >>
->> Si es necesario, consulte también nuestra guía « [Editar una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+>> Si es necesario, consulte también nuestra guía "[Editar una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
 /// details | El nombre de dominio del que depende su subdominio tiene su zona DNS activa en otro proveedor
 
-En este caso concreto, contacte con su proveedor DNS y le indique que desea añadir 2 registros DNS de tipo NS para su subdominio. 
+En este caso concreto, contacte con su proveedor DNS y indíquele que desea añadir 2 registros DNS de tipo NS para su subdominio. 
 
-Este es un ejemplo de solicitud que puede formular a su proveedor DNS :
+Este es un ejemplo de solicitud que puede formular a su proveedor DNS:
 
 <pre class="bgwhite"><code>
 Buenos días,
 
-Deseo añadir en la zona DNS activa del nombre de dominio <b>domain.tld</b> los siguientes registros DNS de tipo NS para mi subdominio <b>sub.domain.tld</b> :
+Deseo añadir en la zona DNS activa del nombre de dominio <b>domain.tld</b> los siguientes registros DNS de tipo NS para mi subdominio <b>sub.domain.tld</b>:
 
  - sub IN NS nsXX.ovh.net.
  - sub IN NS dnsXX.ovh.net.
@@ -236,7 +236,7 @@ En el ejemplo anterior, reemplace los valores **domain.tld**, **sub.domain.tld**
 >
 > **La observación siguiente no concierne a los 2 registros DNS de tipo NS que acaba de añadir.** 
 >
-> Si había otros registros DNS presentes en la zona DNS activa del nombre de dominio del que depende su subdominio :
+> Si había otros registros DNS presentes en la zona DNS activa del nombre de dominio del que depende su subdominio:
 >
 > 1. No olvide duplicarlos en la zona DNS creada para su subdominio.
 > 2. Una vez duplicados, elimínelos de la zona DNS activa de su nombre de dominio.
