@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el vRack entre Public Cloud y un servidor dedicado'
 excerpt: 'Cómo configurar una red privada entre una instancia de Public Cloud y un servidor dedicado'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 <style>
@@ -369,23 +369,23 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 > **Configuración de Windows**
 >>
->> Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de configuración**.
+>> Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de control**.
 >>
 >> ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 >>
->> Haga clic en `Network and Internet`{.action}.
+>> Haga clic en `Redes e Internet`{.action}.
 >>
 >> ![Network and Internet](images/windows_network_and_internet.png){.thumbnail}
 >>
->> Abra `Network and Sharing Center`{.action}.
+>> Abra `Centro de redes y recursos compartidos`{.action}.
 >>
 >> ![Network and Sharing Centre](images/windows_network_and_sharing_centre.png){.thumbnail}
 >>
->> Haga clic en `Change Adapter Settings`{.action}.
+>> Haga clic en `Cambiar configuración del adaptador`{.action}.
 >>
 >> ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 >>
->> Haga clic derecho en la interfaz de red secundaria y, a continuación, haga clic en `Properties`{.action}.
+>> Haga clic derecho en la interfaz de red secundaria y, a continuación, haga clic en `Propiedades`{.action}.
 >>
 >> Tenga en cuenta que en nuestro ejemplo `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la NIC del vRack sea una interfaz diferente en su configuración. La correcta para seleccionar será la interfaz que no tenga la dirección IP principal del servidor o que tenga una IP autoasignada.
 >>
@@ -395,11 +395,11 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 >> ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 >>
->> Haga clic en **Usar la siguiente dirección IP**. Introduzca cualquier **dirección IP** de su rango privado y la **máscara de subred** apropiada (`255.255.0.0` en este ejemplo) en los campos correspondientes.
+>> Haga clic en **Usar la siguiente dirección IP**. Introduzca cualquier **dirección IP** de su rango privado y la **Máscara de subred** apropiada (`255.255.0.0` en este ejemplo) en los campos correspondientes.
 >>
 >> ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 >>
->> Haga clic en `OK`{.action} para guardar los cambios y reinicie el servidor para aplicarlos.
+>> Haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor para aplicarlos.
 
 /// details | **Configuración al utilizar un VLAN ID diferente**
 

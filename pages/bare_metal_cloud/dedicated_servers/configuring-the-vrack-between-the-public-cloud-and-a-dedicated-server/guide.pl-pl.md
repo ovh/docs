@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym'
 excerpt: 'Dowiedz się, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 <style>
@@ -44,7 +44,7 @@ details[open]>summary::before {
 ### Dodaj projekt Public Cloud do sieci vRack
 
 > [!primary]
-> Nie dotyczy to nowo utworzonych projektów, które są automatycznie dostarczane z siecią vRack. Aby wyświetlić usługę vRack po utworzeniu projektu, otwórz menu `Network`{.action} na lewym pasku bocznym i kliknij na `Prywatna sieć vRack`{.action}.
+> Nie dotyczy to nowo utworzonych projektów, które są automatycznie dostarczane z siecią vRack. Aby wyświetlić usługę vRack po utworzeniu projektu, otwórz menu `Sieć`{.action} na lewym pasku bocznym i kliknij na `Prywatna sieć vRack`{.action}.
 >
 > Możesz również usunąć przypisany projekt z sieci vRack i przypisać go do innej sieci vRack, jeśli chcesz, zwłaszcza jeśli posiadasz już istniejący vRack na swoim (swoich) serwerze(ach) dedykowanym(ych).
 
@@ -125,7 +125,7 @@ Ten etap oferuje kilka opcji konfiguracji. Na potrzeby tego przewodnika skupimy 
 >>
 >> Możesz zachować domyślny zakres prywatnych adresów IP lub użyć innego zakresu.
 >>
->> Wybierz opcję „Włącz DHCP dla tej sieci prywatnej", aby automatycznie przypisać i skonfigurować prywatny adres IP na instancji. Będzie wtedy potrzebne jedynie skonfigurowanie interfejsów sieciowych serwera dedykowanego.
+>> Wybierz opcję "Włącz DHCP dla tej prywatnej sieci", aby automatycznie przypisać i skonfigurować prywatny adres IP na instancji. Będzie wtedy potrzebne jedynie skonfigurowanie interfejsów sieciowych serwera dedykowanego.
 >>
 >> Gdy ta opcja nie jest zaznaczona, wymagana jest ręczna konfiguracja zarówno instancji Public Cloud, jak i serwera dedykowanego.
 >>
@@ -134,9 +134,9 @@ Ten etap oferuje kilka opcji konfiguracji. Na potrzeby tego przewodnika skupimy 
 >> Upewnij się, że obie opcje są odznaczone.
 >>
 
-Po zakończeniu konfiguracji kliknij przycisk `Utwórz`{.action}. Może to potrwać kilka minut.
+Po zakończeniu konfiguracji kliknij przycisk `Skonfiguruj prywatną sieć`{.action}. Może to potrwać kilka minut.
 
-W dashboardzie odpowiedniej instancji znajdź sekcję „Sieci" i kliknij przycisk `...`{.action} obok „Prywatna(e) sieć(-i)". Wybierz `Przypisz sieć`{.action}.
+W dashboardzie odpowiedniej instancji znajdź sekcję "Sieć" i kliknij przycisk `...`{.action} obok "Sieci prywatne". Wybierz `Przypisz sieć`{.action}.
 
 ![attach network](images/vrack2021-01.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Na przykład użyjemy zakresu adresów IP `192.168.0.0/16` (**Maska podsieci**: 
 >>    netmask NETMASK
 >>```
 >>
->> **Przykład**
+>> **Przykład:**
 >>
 >> ![debian config](images/debian_configuration.png){.thumbnail}
 >>
@@ -262,7 +262,7 @@ Na przykład użyjemy zakresu adresów IP `192.168.0.0/16` (**Maska podsieci**: 
 >> TYPE=Ethernet
 >> ```
 >>
->> **Przykład**
+>> **Przykład:**
 >>
 >> ![centos config](images/centos_alma_configuration.png){.thumbnail}
 >>
@@ -370,7 +370,7 @@ Na przykład użyjemy zakresu adresów IP `192.168.0.0/16` (**Maska podsieci**: 
 >>
 > **Konfiguracja Windows**
 >>
->> Zaloguj się do swojego serwera Windows przez zdalny pulpit i przejdź do **Panelu sterowania**.
+>> Zaloguj się do serwera Windows przez zdalny pulpit i przejdź do **Panelu sterowania**.
 >>
 >> ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 >>

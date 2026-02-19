@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -297,15 +297,15 @@ Connectez-vous à votre serveur Windows via le bureau à distance et allez dans 
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Cliquez sur `Network and Internet`{.action}.
+Cliquez sur `Réseau et Internet`{.action}.
 
 ![Réseau et Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Ouvrez `Network and Sharing Center`{.action}.
+Ouvrez `Centre Réseau et partage`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Cliquez sur `Change Adapter Settings`{.action}.
+Cliquez sur  `Modifier les paramètres de la carte`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
@@ -319,7 +319,7 @@ Double-cliquez sur `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Cliquez sur **Utiliser l'adresse IP suivante**. Entrez n'importe quelle adresse **IP** de votre plage privée et le **masque** de sous-réseau approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
+Cliquez sur `Utiliser l'adresse IP suivante`{.action}. Entrez n'importe quelle **Address IP** de votre plage privée et le **Masque de sous-réseau** approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
 
 ![Utiliser l'adresse IP suivante](images/windows_use_following_ip_address.png){.thumbnail}
 

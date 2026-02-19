@@ -1,7 +1,7 @@
 ---
 title: "Configurare la vRack tra un'istanza Public Cloud e un server dedicato"
 excerpt: "Scopri come configurare una rete privata tra un'istanza Public Cloud e un server dedicato"
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 <style>
@@ -22,11 +22,11 @@ details[open]>summary::before {
 
 La [vRack](/links/network/vrack) OVHcloud è una rete privata che permette di configurare l'indirizzamento tra due o più [Server dedicati](/links/bare-metal/bare-metal) OVHcloud. ma permette anche di aggiungere [istanze Public Cloud](/links/public-cloud/compute) alla rete privata per creare un'infrastruttura di risorse fisiche e virtuali.
 
-**Questa guida ti mostra come configurare una rete privata tra un' [istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) e un [Server dedicato](/links/bare-metal/bare-metal).**
+**Questa guida ti mostra come configurare una rete privata tra un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) e un [Server dedicato](/links/bare-metal/bare-metal).**
 
 ## Prerequisiti
 
-* Aver creato un' [istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
+* Aver creato un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aver attivato un servizio [vRack](/links/network/vrack)
 * Disporre di un [server dedicato](/links/bare-metal/bare-metal) compatibile con la vRack
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
@@ -62,7 +62,7 @@ Nella lista dei servizi compatibili, seleziona il progetto che vuoi aggiungere a
 Le potrebbero presentarsi due situazioni:
 
 - L'istanza non esiste ancora.
-- l'istanza esiste già e sarà necessario aggiungerla alla vRack.
+- L'istanza esiste già e sarà necessario aggiungerla alla vRack.
 
 #### Caso di una nuova istanza
 
@@ -111,7 +111,7 @@ Questo step offre diverse opzioni di configurazione. Ai fini di questa guida, ci
 >> - Durante la configurazione della vRack sul server dedicato, questa VLAN ID deve essere inclusa nel file o nei file di configurazione di rete.
 >>
 >> > [!primary]
->> > È possibile utilizzare lo stesso VLAN ID per più reti private; tuttavia, ciò richiede una gestione accurata degli indirizzi IP privati. L'utilizzo di allocazioni pool DHCP senza sovrapposizioni è un modo per risolvere questo problema.
+>> > È possibile utilizzare lo stesso VLAN ID per più reti private; tuttavia, ciò richiede una gestione attenta degli IP privati. L'utilizzo di un pool DHCP non sovrapposto può essere un modo per gestire questo problema.
 >> >
 >>
 >> > [!primary]
@@ -120,11 +120,11 @@ Questo step offre diverse opzioni di configurazione. Ai fini di questa guida, ci
 >>
 >> Esempio: se la rete privata dell'istanza è "taggata" con il VLAN 2, questo VLAN ID deve essere incluso solo nella configurazione di rete del server dedicato. Per maggiori informazioni, consulta la guida seguente: [Creare diverse VLAN nella vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 >>
-> **Opzioni DHCP di distribuzione degli indirizzi**
+> **Opzioni di distribuzione degli indirizzi DHCP**
 >>
 >> È possibile mantenere la classe IP privata di default o utilizzarne un'altra.
 >>
->> Selezionare "Abilitare DHCP per questa rete privata" per assegnare e configurare automaticamente l'indirizzo IP privato sull'istanza. Sarà quindi necessario configurare solo le interfacce di rete del server dedicato.
+>> Selezionare "Attiva DHCP per questa rete privata" per assegnare e configurare automaticamente l'indirizzo IP privato sull'istanza. Sarà quindi necessario configurare solo le interfacce di rete del server dedicato.
 >>
 >> Quando questa opzione non è selezionata, è necessaria una configurazione manuale sia sull'istanza Public Cloud che sul server dedicato.
 >>
@@ -133,7 +133,7 @@ Questo step offre diverse opzioni di configurazione. Ai fini di questa guida, ci
 >> Assicurati che entrambe le opzioni siano deselezionate.
 >>
 
-Una volta terminata la configurazione, clicca su `Configurare la rete privata`{.action}. Questa operazione potrebbe richiedere alcuni minuti.
+Una volta terminata la configurazione, clicca su `Configurare la tua rete privata`{.action}. Questa operazione potrebbe richiedere alcuni minuti.
 
 Nella dashboard dell'istanza corrispondente, individua la sezione "Reti" e clicca sul pulsante `...`{.action} accanto a "Reti private". Seleziona `Associa una rete`{.action}.
 
@@ -391,7 +391,7 @@ A titolo di esempio, utilizzeremo l'intervallo di indirizzi IP `192.168.0.0/16` 
 >>
 >> ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 >>
->> Fai doppio clic su `Protocollo Internet versione 4 (TCP/IPv4)`{.action}.
+>> Fai doppio clic su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 >>
 >> ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 >>

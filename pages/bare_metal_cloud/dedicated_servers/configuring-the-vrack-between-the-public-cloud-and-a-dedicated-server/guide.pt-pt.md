@@ -1,7 +1,7 @@
 ---
 title: 'Configurar o vRack entre o Public Cloud e um servidor dedicado'
 excerpt: 'Saiba como configurar uma rede privada entre uma instância Public Cloud e um servidor dedicado'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 <style>
@@ -112,7 +112,7 @@ Esta etapa oferece várias opções de configuração. Para as necessidades dest
 >> - Aquando da configuração do vRack no servidor dedicado, este VLAN ID deve ser incluído no(s) ficheiro(s) de configuração de rede.
 >>
 >> > [!primary]
->> > É possível utilizar o mesmo VLAN ID para várias redes privadas, mas isso exige uma gestão cuidadosa dos endereços IP privados. A utilização de alocações de pool DHCP sem sobreposição é uma forma de resolver este problema.
+>> > É possível utilizar o mesmo VLAN ID para várias redes privadas, mas isso exige uma gestão cuidadosa dos endereços IP privados. A utilização da alocação de pool DHCP sem sobreposição pode ser uma forma de gerir esta problemática.
 >> >
 >>
 >> > [!primary]
@@ -136,7 +136,7 @@ Esta etapa oferece várias opções de configuração. Para as necessidades dest
 
 Uma vez terminada a configuração, clique em `Configure a sua rede privada`{.action}. Esta operação pode levar alguns minutos.
 
-No painel de controlo da instância correspondente, localize a secção "Redes" e clique no botão `...`{.action} ao lado de "Rede(s) privada(s)". Selecione `Associar uma rede`{.action}.
+No painel de controlo da instância correspondente, localize a secção "Redes" e clique no botão `...`{.action} ao lado de "Redes privadas". Selecione `Associar uma rede`{.action}.
 
 ![attach network](images/vrack2021-01.png){.thumbnail}
 
@@ -182,7 +182,7 @@ A título de exemplo, utilizaremos o intervalo de endereços IP `192.168.0.0/16`
 >>    netmask NETMASK
 >>```
 >>
->> **Exemplo**
+>> **Exemplo:**
 >>
 >> ![debian config](images/debian_configuration.png){.thumbnail}
 >>
@@ -262,7 +262,7 @@ A título de exemplo, utilizaremos o intervalo de endereços IP `192.168.0.0/16`
 >> TYPE=Ethernet
 >> ```
 >>
->> **Exemplo**
+>> **Exemplo:**
 >>
 >> ![centos config](images/centos_alma_configuration.png){.thumbnail}
 >>
