@@ -1,7 +1,7 @@
 ---
 title: "Todo sobre los registros DNS"
 excerpt: "Descubra los diferentes tipos de registro DNS disponibles en una zona DNS de OVHcloud"
-updated: 2026-02-19
+updated: 2026-02-18
 ---
 
 ## Objetivo

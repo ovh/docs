@@ -1,7 +1,7 @@
 ---
 title: "Scopri tutto sui record DNS"
 excerpt: "Questa guida ti mostra i diversi tipi di record DNS disponibili in una zona DNS di OVHcloud"
-updated: 2026-02-19
+updated: 2026-02-18
 ---
 
 ## Obiettivo

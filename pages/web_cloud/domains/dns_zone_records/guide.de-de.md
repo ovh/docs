@@ -1,7 +1,7 @@
 ---
 title: "Alle Informationen zu DNS-Einträgen"
 excerpt: "Entdecken Sie die verschiedenen Arten von DNS-Einträgen, die in einer OVHcloud DNS-Zone verfügbar sind"
-updated: 2026-02-19
+updated: 2026-02-18
 ---
 
 ## Ziel
