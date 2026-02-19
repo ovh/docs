@@ -64,6 +64,8 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
     - [Étape 4.7 : Configurez le réseau](#étape-47--configurez-le-réseau)
     - [Étape 4.8 : Sélectionnez une période de facturation](#étape-48--sélectionnez-une-période-de-facturation)
     - [Étape 4.9 : Configurez les paramètres avancés](#étape-49--configurez-les-paramètres-avancés)
+      - [Instance flexible](#instance-flexible)
+      - [Script de post-installation](#script-de-post-installation)
     - [Étape 4.10 : Finalisation de votre instance](#étape-410--finalisation-de-votre-instance)
   - [Étape 5 : Se connecter à l'instance](#étape-5--se-connecter-à-linstance)
     - [5.1 : Vérifier l'état de l'instance dans l'espace client](#51--vérifier-létat-de-linstance-dans-lespace-client)
@@ -324,6 +326,15 @@ Retrouvez les détails dans notre documentation de facturation dédiée :
 Une fois la configuration de votre instance terminée, cliquez sur le bouton `Créer une instance`{.action}. La livraison de votre service peut prendre quelques minutes.
 
 #### Étape 4.9 : Configurez les paramètres avancés
+
+##### Instance flexible
+
+Une instance Flex est une instance à disque unique de 50 Go, conçue pour offrir un processus de création et de restauration de snapshots plus rapide.
+
+Elle permet de redimensionner l’instance vers des modèles supérieurs ou inférieurs, tout en conservant un espace de stockage fixe.
+À l’inverse, les modèles classiques autorisent uniquement un redimensionnement vers des modèles supérieurs.
+
+##### Script de post-installation
 
 Vous pouvez ajouter [votre script de post-installation](/pages/public_cloud/compute/launching_script_when_creating_instance) dans ce champ.
 

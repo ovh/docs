@@ -63,6 +63,9 @@ You can then go further with your Public Cloud project according to your needs.
     - [Step 4.6: Configure backup settings](#step-46-configure-backup-settings)
     - [Step 4.7: Configure the network](#step-47-configure-the-network)
     - [Step 4.8: Select a billing period](#step-48-select-a-billing-period)
+    - [Step 4.9: Configure advanced settings](#step-49-configure-advanced-settings)
+      - [Flexible instance](#flexible-instance)
+      - [Post-installation script](#post-installation-script)
     - [Step 4.10: Finalizing your instance](#step-410-finalizing-your-instance)
   - [Step 5: Connect to the instance](#step-5-connect-to-the-instance)
     - [5.1: Verify the instance status in the OVHcloud Control Panel](#51-verify-the-instance-status-in-the-ovhcloud-control-panel)
@@ -324,7 +327,16 @@ Find details in our dedicated billing documentation:
 
 Once you have finished configuring your instance, click on the `Create instance`{.action} button. It may take a few minutes for your service to be delivered.
 
-Step 4.9: Configure advanced settings
+#### Step 4.9: Configure advanced settings
+
+##### Flexible instance
+
+A Flex instance is a single 50 GB disk instance designed to offer faster snapshot creation and restoration.
+
+It allows you to resize the instance to higher or lower models while maintaining a fixed storage space.
+Conversely, classic models only allow resizing to higher models.
+
+##### Post-installation script
 
 You can add [your post-installation script](/pages/public_cloud/compute/launching_script_when_creating_instance) in this field.
 
