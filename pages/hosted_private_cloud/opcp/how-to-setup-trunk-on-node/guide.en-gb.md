@@ -1,16 +1,16 @@
 ---
-title: "OPCP - How to setup Trunk ports on a Node"
-excerpt: Learn how to configure Neutron Trunk ports in OPCP for multi-network vlan connectivity on baremetal or virtual machine instances
+title: "OPCP - How to set up Trunk ports on a Node"
+excerpt: Learn how to configure Neutron Trunk ports in OPCP for multi-network vlan connectivity on bare metal or virtual machine instances
 updated: 2026-02-18
 ---
 
 ## Objective
 
-Trunk ports allow a single instance (baremetal or virtual machine) to send and receive traffic on multiple Neutron networks using vlan tagging, through a single physical interface or an [LACP bond](/pages/hosted_private_cloud/opcp/how-to-setup-lacp-on-node).
+Trunk ports allow a single instance (bare metal or virtual machine) to send and receive traffic on multiple Neutron networks using vlan tagging, through a single physical interface or an [LACP bond](/pages/hosted_private_cloud/opcp/how-to-setup-lacp-on-node).
 
-**This guide explains how to configure Neutron Trunk ports in OPCP to enable multi-network (vlan) connectivity on a baremetal node or a virtual machine.**
+**This guide explains how to configure Neutron Trunk ports in OPCP to enable multi-network (vlan) connectivity on a bare metal node or a virtual machine.**
 
-We will also see how to configure **vlan sub-interfaces** within your instance to access each network attached to the trunk.
+This guide also shows how to configure **vlan sub-interfaces** within your instance to access each network attached to the trunk.
 
 > [!warning]
 > Trunk creation requires the **admin** role. A project user cannot create trunks.
@@ -23,19 +23,19 @@ We will also see how to configure **vlan sub-interfaces** within your instance t
 
 Trunk ports can be used in three specific use cases:
 
-- **Multi-network access from a single instance:** Trunk ports allow a baremetal server or a virtual machine to communicate on multiple isolated Neutron networks using vlan tagging, without needing separate ports for each network.
-- **Overcome physical interface limits on baremetal:** On a baremetal server, the number of Neutron networks is normally limited by the number of physical network interfaces. With trunk ports, you can connect to more networks than available physical interfaces by multiplexing multiple vlans over a single interface or LACP bond.
+- **Multi-network access from a single instance:** Trunk ports allow a bare metal server or a virtual machine to communicate on multiple isolated Neutron networks using vlan tagging, without needing separate ports for each network.
+- **Overcome physical interface limits on bare metal:** On a bare metal server, the number of Neutron networks is normally limited by the number of physical network interfaces. With trunk ports, you can connect to more networks than available physical interfaces by multiplexing multiple vlans over a single interface or LACP bond.
 - **Simplified network management:** Instead of provisioning multiple ports and attaching them individually, you create a single trunk with sub-ports, each tagged with a specific vlan ID. This keeps the network topology clean and manageable.
 
 ## Requirements
 
-Before starting, make sure you have the following:
+Before starting, ensure you have the following:
 
 - An active [OPCP service](/links/hosted-private-cloud/onprem-cloud-platform).
 - **[Configured OpenStack CLI access](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** with the necessary permissions (`clouds.yaml` or environment variables).
 - The **admin** role (required for trunk creation and sub-port management).
 - At least **two Neutron networks** already created in your project (one for the parent port and one or more for sub-ports).
-- An available baremetal node or virtual machine project.
+- An available bare metal node or virtual machine project.
 
 Trunk port configuration is an advanced networking feature requiring familiarity with OpenStack Neutron networking concepts, vlan tagging, and the OpenStack CLI.
 
@@ -92,7 +92,7 @@ openstack port create --network primary-network primary-port
 ```
 
 > [!warning]
-> On **baremetal instances**, the parent port is a **dummy port**. It exists in the Neutron database but has **no effect on the network fabric**. The network assigned to the parent port will **not** carry any traffic to the instance. All actual network connectivity must be configured through **sub-ports** (see steps 4 and 5).
+> On **bare metal instances**, the parent port is a **dummy port**. It exists in the Neutron database but has **no effect on the network fabric**. The network assigned to the parent port will **not** carry any traffic to the instance. All actual network connectivity must be configured through **sub-ports** (see steps 4 and 5).
 >
 > On **virtual machines**, the parent port carries the parent network as **untagged** traffic on the base interface. Sub-port networks are delivered as tagged vlan traffic.
 
@@ -162,11 +162,11 @@ openstack network trunk set \
 > [!warning]
 > The behaviour of `segmentation-id` differs depending on the instance type:
 >
-> - **Baremetal:** the `segmentation-id` **must match** the segmentation ID of the network assigned to the sub-port. Neutron does not verify this value, but if it does not match, traffic will not reach the instance.
+> - **Bare metal:** the `segmentation-id` **must match** the segmentation ID of the network assigned to the sub-port. Neutron does not verify this value, but if it does not match, traffic will not reach the instance.
 > - **Virtual machines:** the `segmentation-id` can be **any value** you choose. The hypervisor handles the translation between the sub-port vlan tag and the network's actual segmentation ID.
 
 > [!primary]
-> To add more networks, repeat steps 4 and 5 for each additional network. For baremetal instances, use the matching `segmentation-id` of each network.
+> To add more networks, repeat steps 4 and 5 for each additional network. For bare metal instances, use the matching `segmentation-id` of each network.
 
 #### 6. Verify the Trunk Configuration
 
@@ -209,7 +209,7 @@ openstack server create \
   <instance-name>
 ```
 
-**Baremetal example:**
+**Bare metal example:**
 
 ```bash
 openstack server create \
@@ -255,7 +255,7 @@ After deploying your instance, you need to configure **vlan sub-interfaces** ins
 > Automatic trunk configuration via cloud-init is **not possible**. OpenStack does not pass trunk metadata to the instance userdata. You must configure vlan sub-interfaces manually or through a post-deployment provisioning tool.
 
 > [!warning]
-> On **baremetal instances**, since the parent port is a dummy port with no effect on the network fabric, the base network interface will **not** have any network connectivity by default. All networks must be accessed through vlan sub-interfaces matching the `segmentation-id` assigned to each sub-port.
+> On **bare metal instances**, since the parent port is a dummy port with no effect on the network fabric, the base network interface will **not** have any network connectivity by default. All networks must be accessed through vlan sub-interfaces matching the `segmentation-id` assigned to each sub-port.
 >
 > On **virtual machines**, the base interface carries the parent network as untagged traffic. Only sub-port networks require vlan sub-interfaces.
 
