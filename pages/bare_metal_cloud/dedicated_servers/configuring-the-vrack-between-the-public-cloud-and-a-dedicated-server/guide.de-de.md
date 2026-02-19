@@ -1,7 +1,7 @@
 ---
 title: 'vRack zwischen Public Cloud und Dedicated Server einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie ein privates Netzwerk zwischen Public Cloud Instanzen und Dedicated Servern einrichten'
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 <style>
@@ -124,7 +124,7 @@ Dieser Schritt bietet mehrere Konfigurationsoptionen. Für die Zwecke dieser Anl
 >>
 >> Sie können den standardmäßigen privaten IP-Bereich beibehalten oder einen anderen IP-Bereich verwenden.
 >>
->> Wählen Sie „DHCP für dieses private Netzwerk aktivieren", um die private IP-Adresse auf der Instanz automatisch zuzuweisen und zu konfigurieren. Sie müssen dann nur noch die Netzwerkschnittstellen des Dedicated Servers konfigurieren.
+>> Wählen Sie "DHCP für dieses private Netzwerk aktivieren", um die private IP-Adresse auf der Instanz automatisch zuzuweisen und zu konfigurieren. Sie müssen dann nur noch die Netzwerkschnittstellen des Dedicated Servers konfigurieren.
 >>
 >> Wenn diese Option nicht ausgewählt ist, ist eine manuelle Konfiguration sowohl auf der Public Cloud Instanz als auch auf dem Dedicated Server erforderlich.
 >>
@@ -133,9 +133,9 @@ Dieser Schritt bietet mehrere Konfigurationsoptionen. Für die Zwecke dieser Anl
 >> Stellen Sie sicher, dass beide Optionen deaktiviert sind.
 >>
 
-Klicken Sie nach Abschluss der Konfiguration auf `Ihr privates Netzwerk konfigurieren`{.action}. Dieser Vorgang kann einige Minuten dauern.
+Klicken Sie nach Abschluss der Konfiguration auf `Konfigurieren Sie Ihr privates Netzwerk`{.action}. Dieser Vorgang kann einige Minuten dauern.
 
-Suchen Sie im Dashboard der entsprechenden Instanz den Bereich „Netzwerke" und klicken Sie auf den Button `...`{.action} neben „Privates Netzwerk(e)". Wählen Sie `Netzwerk verbinden`{.action}.
+Klicken Sie im Dashboard der entsprechenden Instanz den Bereich "Netzwerke" und klicken Sie auf den Button `...`{.action} neben "Privates Netzwerk(e)". Wählen Sie `Netzwerk verbinden`{.action}.
 
 ![attach network](images/vrack2021-01.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Bevor Sie beginnen, verbinden Sie sich via SSH mit Ihrem Server und listen Sie I
 ip a
 ```
 
-Für Dedicated Server suchen Sie die Zeile, die mit ```link ether``` beginnt, und überprüfen Sie, dass diese Schnittstelle mit der **Private** Schnittstelle übereinstimmt, die im Tab `Netzwerkschnittstellen`{.action} im Dashboard Ihres Servers aufgeführt ist.
+Für Dedicated Server suchen Sie die Zeile, die mit ```link ether``` beginnt, und überprüfen Sie, dass diese Schnittstelle mit der **Private** Schnittstelle übereinstimmt, die im Tab ` Netzwerkinterfaces`{.action} im Dashboard Ihres Servers aufgeführt ist.
 
 Verwenden Sie diesen Schnittstellennamen, um `NETWORK_INTERFACE` in den folgenden Konfigurationen zu ersetzen (Beispiel: `eth1`).
 
@@ -369,7 +369,7 @@ Als Beispiel verwenden wir den IP-Adressbereich `192.168.0.0/16` (**Subnetzmaske
 >>
 > **Windows-Konfiguration**
 >>
->> Melden Sie sich über Remote Desktop bei Ihrem Windows-Server an und öffnen Sie die **Systemsteuerung**.
+>> Loggen Sie sich über Remote-Desktopverbindung auf Ihrem Windows-Server ein und öffnen Sie die **Systemsteuerung**.
 >>
 >> ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 >>
@@ -385,17 +385,17 @@ Als Beispiel verwenden wir den IP-Adressbereich `192.168.0.0/16` (**Subnetzmaske
 >>
 >> ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 >>
->> Klicken Sie mit der rechten Maustaste auf die sekundäre Netzwerkschnittstelle und dann auf `Eigenschaften`{.action}.
+>> Klicken Sie mit der rechten Maustaste auf die sekundäre Netzwerkschnittstelle und klicken Sie dann auf `Properties`{.action}.
 >>
->> Beachten Sie, dass in unserem Beispiel `Ethernet 2` die für das vRack verwendete Schnittstelle ist. Es ist jedoch möglich, dass die vRack-NIC in Ihrer Konfiguration eine andere Schnittstelle ist. Die richtige Schnittstelle ist diejenige, die nicht die Haupt-IP-Adresse des Servers hat oder eine selbst zugewiesene IP verwendet.
+>> In unserem Beispiel ist `Ethernet 2` die für das vRack verwendete Schnittstelle. Es ist jedoch möglich, dass die vRack-Schnittstelle in Ihrer Konfiguration ein anderes ist. Das hier auszuwählende Schnittstelle verwendet nicht die Haupt-IP-Adresse des Servers oder eine selbst zugewiesene IP-Adresse.
 >>
 >> ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 >>
->> Doppelklicken Sie auf `Internetprotokoll Version 4 (TCP/IPv4)`{.action}.
+>> Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 >>
 >> ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 >>
->> Klicken Sie auf **Folgende IP-Adresse verwenden**. Geben Sie eine beliebige **IP-Adresse** aus Ihrem privaten Bereich und die entsprechende **Subnetzmaske** (`255.255.0.0` in diesem Beispiel) in die entsprechenden Felder ein.
+>> Klicken Sie auf **Use the following IP address**. Geben Sie in den entsprechenden Feldern eine **IP-Adresse** Ihres privaten Bereichs und die zugehörige **Subnetzmaske** (`255.255.0.0` in diesem Beispiel) ein.
 >>
 >> ![Folgende IP-Adresse verwenden](images/windows_use_following_ip_address.png){.thumbnail}
 >>
@@ -446,7 +446,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >>
 >> In diesem Beispiel wird die private Netzwerkschnittstelle als `eno2` identifiziert.
 >>
->> - Als Nächstes erstellen Sie eine VLAN-Unterschnittstelle für die Netzwerkschnittstelle (nicht persistente Konfiguration) und weisen Sie ihr die VLAN-ID zu (taggen Sie sie). In diesem Beispiel ist die VLAN-ID 10.
+>> - Als Nächstes erstellen Sie eine VLAN-Subschnittstelle für die Netzwerkschnittstelle (nicht persistente Konfiguration) und weisen Sie ihr die VLAN-ID zu (taggen Sie sie). In diesem Beispiel ist die VLAN-ID 10.
 >>
 >> Ersetzen Sie die Werte durch Ihre eigenen.
 >>
@@ -454,13 +454,13 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >> sudo ip link add link eno2 name eno2.10 type vlan id 10
 >> ```
 >>
->> - Weisen Sie dann der neu erstellten VLAN-Unterschnittstelle eine private IP-Adresse zu:
+>> - Weisen Sie dann der neu erstellten VLAN-Subschnittstelle eine private IP-Adresse zu:
 >>
 >> ```sh
 >> sudo ip addr add 192.168.0.14/16 dev eno2.10
 >> ```
 >>
->> - Aktivieren Sie dann die private Schnittstelle und die VLAN-Unterschnittstelle:
+>> - Aktivieren Sie dann die private Schnittstelle und die VLAN-Subschnittstelle:
 >>
 >> ```sh
 >> sudo ip link set dev eno2 up
@@ -631,7 +631,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >>
 >> In diesem Beispiel heißt die private Schnittstelle `eno2`.
 >>
->> - Erstellen Sie als Nächstes eine Unterschnittstellen-Konfigurationsdatei für das VLAN in der Hauptnetzwerkkonfigurationsdatei. In diesem Beispiel heißt die Datei `ifcfg-eno2.10`, wobei eno2 sich auf die private Netzwerkschnittstelle und `10` auf die VLAN-ID bezieht.
+>> - Erstellen Sie als Nächstes eine Subschnittstellen-Konfigurationsdatei für das VLAN in der Hauptnetzwerkkonfigurationsdatei. In diesem Beispiel heißt die Datei `ifcfg-eno2.10`, wobei eno2 sich auf die private Netzwerkschnittstelle und `10` auf die VLAN-ID bezieht.
 >>
 >> ```sh
 >> sudo nano /etc/sysconfig/network-scripts-ifcfg-eno2.10
@@ -695,7 +695,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >> ip a
 >> ```
 >>
->> In diesem Beispiel heißt die Schnittstelle `eno2`. Wir müssen eine VLAN-Unterschnittstelle erstellen, bevor wir ihr eine private IP-Adresse zuweisen.
+>> In diesem Beispiel heißt die Schnittstelle `eno2`. Wir müssen eine VLAN-Subschnittstelle erstellen, bevor wir ihr eine private IP-Adresse zuweisen.
 >>
 >> - Verwenden Sie den folgenden Befehl, um die VLAN-Schnittstelle zu erstellen:
 >>
@@ -703,7 +703,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >> sudo nmcli con add type vlan con-name <vlan-name> dev <parent-interface> id <vlan-id>.
 >> ```
 >>
->> Ersetzen Sie `vlan-name` durch den Namen der VLAN-Unterschnittstelle, `parent-interface` durch den Namen der privaten Schnittstelle und `vlan-id` durch die VLAN-ID.
+>> Ersetzen Sie `vlan-name` durch den Namen der VLAN-Subschnittstelle, `parent-interface` durch den Namen der privaten Schnittstelle und `vlan-id` durch die VLAN-ID.
 >>
 >> **In diesem Beispiel:**
 >>
@@ -712,7 +712,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >> Connection 'eno2.10' successfully added.
 >> ```
 >>
->> - Weisen Sie der VLAN-Unterschnittstelle eine private IP-Adresse zu:
+>> - Weisen Sie der VLAN-Subschnittstelle eine private IP-Adresse zu:
 >>
 >> ```sh
 >> sudo nmcli con mod <vlan-name> ipv4.addresses <ip/prefix> ipv4.method manual
@@ -724,7 +724,7 @@ In diesem Beispiel verwenden wir **10** als VLAN-ID (Tag) und **192.168.0.0/16**
 >> sudo nmcli con mod eno2.10 ipv4.addresses 192.168.0.14/16 ipv4.method manual
 >> ```
 >>
->> - Aktivieren Sie dann die VLAN-Unterschnittstelle:
+>> - Aktivieren Sie dann die VLAN-Subschnittstelle:
 >>
 >> ```sh
 >> sudo nmcli con up <vlan-name>.
