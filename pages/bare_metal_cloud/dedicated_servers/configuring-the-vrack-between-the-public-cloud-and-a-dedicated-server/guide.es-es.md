@@ -111,7 +111,7 @@ Este paso ofrece varias opciones de configuración. A efectos de esta guía, nos
 >> - Al configurar el vRack en el servidor dedicado, esta VLAN ID debe incluirse en el archivo de configuración de red.
 >>
 >> > [!primary]
->> > Es posible utilizar el mismo VLAN ID para varias redes privadas; sin embargo, esto requiere una gestión cuidadosa de las direcciones IP privadas. El uso de asignaciones de grupos DHCP que no se solapen es una forma de resolver este problema.
+>> > Es posible utilizar el mismo VLAN ID para varias redes privadas; sin embargo, esto requiere una gestión cuidadosa de las direcciones IP privadas. El uso de la asignación de grupos DHCP sin solapamiento puede ser una forma de solucionar este problema.
 >> >
 >>
 >> > [!primary]
@@ -128,14 +128,14 @@ Este paso ofrece varias opciones de configuración. A efectos de esta guía, nos
 >>
 >> Cuando esta opción no está seleccionada, se requiere una configuración manual tanto en la instancia de Public Cloud como en el servidor dedicado.
 >>
->> **Opciones de pasarela de red**
+>> **Opciones de puerta de enlace de red**
 >>
 >> Asegúrese de que ambas opciones estén desmarcadas.
 >>
 
 Una vez completada la configuración, haga clic en `Configure su red privada`{.action}. Esta operación puede tardar unos minutos.
 
-En el panel de control de la instancia correspondiente, localice la sección «Redes» y haga clic en el botón `...`{.action} junto a «Red(es) privada(s)». Seleccione `Asociar una red`{.action}.
+En el panel de control de la instancia correspondiente, localice la sección «Redes» y haga clic en el botón `...`{.action} junto a «Redes privadas». Seleccione `Asociar una red`{.action}.
 
 ![attach network](images/vrack2021-01.png){.thumbnail}
 
@@ -181,7 +181,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>    netmask NETMASK
 >>```
 >>
->> **Ejemplo**
+>> **Ejemplo:**
 >>
 >> ![debian config](images/debian_configuration.png){.thumbnail}
 >>
@@ -261,7 +261,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >> TYPE=Ethernet
 >> ```
 >>
->> **Ejemplo**
+>> **Ejemplo:**
 >>
 >> ![centos config](images/centos_alma_configuration.png){.thumbnail}
 >>
@@ -369,7 +369,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 > **Configuración de Windows**
 >>
->> Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de control**.
+>> Conéctese a su servidor Windows a través del escritorio remoto y acceda al **Panel de configuración**.
 >>
 >> ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 >>
@@ -385,7 +385,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 >> ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 >>
->> Haga clic derecho en la interfaz de red secundaria y, a continuación, haga clic en `Propiedades`{.action}.
+>> Haga clic derecho en la interfaz de red secundaria y, a continuación, haga clic en `Properties`{.action}.
 >>
 >> Tenga en cuenta que en nuestro ejemplo `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la NIC del vRack sea una interfaz diferente en su configuración. La correcta para seleccionar será la interfaz que no tenga la dirección IP principal del servidor o que tenga una IP autoasignada.
 >>
@@ -399,7 +399,7 @@ A modo de ejemplo, utilizaremos el rango de direcciones IP `192.168.0.0/16` (**M
 >>
 >> ![Use the following IP address](images/windows_use_following_ip_address.png){.thumbnail}
 >>
->> Haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor para aplicarlos.
+>> Haga clic en `OK`{.action} para guardar los cambios y reinicie el servidor para aplicarlos.
 
 /// details | **Configuración al utilizar un VLAN ID diferente**
 
@@ -446,7 +446,7 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 >> En este ejemplo, la interfaz de red privada se identifica como `eno2`.
 >>
->> - A continuación, cree una subinterfaz VLAN para la interfaz de red (configuración no persistente) y asígnele (etiquete) el VLAN ID. En este ejemplo, el VLAN ID es 10.
+>> - A continuación, cree una subinterfaz VLAN para la interfaz de red (configuración no persistente) y asígnele (etiquete) el VLAN ID.
 >>
 >> Reemplace los valores con los suyos.
 >>
