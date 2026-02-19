@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2025-04-28
+updated: 2026-02-23
 ---
 
 <style>
