@@ -1,5 +1,5 @@
 ---
-title: "OVHcloud DNS-Zone für eine Domainnamen erstellen"
+title: "OVHcloud DNS-Zone für Subdomain erstellen"
 excerpt: "Erfahren Sie, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen"
 updated: 2026-02-19
 ---
@@ -58,7 +58,7 @@ Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfi
 
 > [!success]
 >
-> Zur Erinnerung :
+> Zur Erinnerung:
 >
 > - Ein Domainnamen hat in der Regel folgende Form: **domain.tld**. Beispiel: ovhcloud.com.
 > - Eine Subdomain hat in der Regel folgende Form: **sub.domain.tld**. Beispiel: help.ovhcloud.com.
@@ -68,13 +68,13 @@ Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfi
 >
 > Wenn Sie eine DNS-Zone für einen Domainnamen erstellen möchten, konsultieren Sie direkt [diesen Guide](/pages/web_cloud/domains/dns_zone_create).
 
-**Erfahren Sie, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen.**
+**Diese Anleitung erklärt, wie Sie eine DNS-Zone bei OVHcloud für eine Subdomain eines Domainnamens über Ihr OVHcloud Kundencenter erstellen.**
 
 ## Voraussetzungen
 
-- Über den Domainnamen verfügen, von dem die gewählte Subdomain abhängen wird.
-- Die betreffende Subdomain darf nicht bereits über eine (aktiv oder nicht) DNS-Zone bei OVHcloud verfügen oder Gegenstand eines laufenden Vorgangs oder einer Bestellung bei OVHcloud sein.
-- Angemeldet sein bei Ihrem [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über einen Domainnamen, von dem die gewählte Subdomain abhängen wird.
+- Die betreffende Subdomain darf nicht bereits über eine DNS-Zone (aktiv oder nicht) bei OVHcloud verfügen oder Gegenstand eines laufenden Vorgangs oder einer Bestellung bei OVHcloud sein.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -149,7 +149,7 @@ Um diese zu finden, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzu
 >>
 > **Schritt 3**
 >>
->> Im auf der angezeigten Seite befindlichen Tabelle identifizieren Sie die beiden Spalten **Typ** und **Ziel**.
+>> In der Tabelle identifizieren Sie die beiden Spalten **Typ** und **Ziel**.
 >>
 >> ![DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 >>
@@ -160,11 +160,11 @@ Um diese zu finden, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzu
 >> - `nsXX.ovh.ca` und `dnsXX.ovh.ca` oder, `nsXXX.ovh.ca` und `dnsXXX.ovh.ca` (wobei jeder `X` eine Zahl zwischen **0** und **9** darstellt).
 >> - `ns200.anycast.me` und `dns200.anycast.me` (wenn Sie die Option [DNS anycast](/links/web/domains-options) abonniert haben).
 
-Nachdem Sie die beiden DNS-Server-Namen abgerufen haben, gibt es zwei mögliche Szenarien :
+Nachdem Sie die beiden DNS-Server-Namen abgerufen haben, gibt es zwei mögliche Szenarien:
 
 **Klicken Sie auf eine der beiden Szenarien, um den Inhalt anzuzeigen.**
 
-/// details | Der Domainnamen, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud
+/// details | Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud
 
 Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
@@ -205,20 +205,20 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> **Wiederholen Sie den gesamten Vorgang für den zweiten DNS-Server.**
 >>
->> Falls nötig, konsultieren Sie zusätzlich unseren Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
+>> Falls nötig, konsultieren Sie zusätzlich unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
-/// details | Der Domainnamen, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei einem anderen Anbieter
+/// details | Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei einem anderen Anbieter
 
 In diesem speziellen Fall kontaktieren Sie Ihren DNS-Anbieter und teilen Sie ihm mit, dass Sie 2 DNS-Einträge vom Typ NS für Ihre Subdomain hinzufügen möchten. 
 
-Hier ist ein Beispiel für eine Anfrage, die Sie an Ihren DNS-Anbieter richten können :
+Hier ist ein Beispiel für eine Anfrage, die Sie an Ihren DNS-Anbieter richten können:
 
 <pre class="bgwhite"><code>
 Hallo,
 
-Ich möchte in der aktiven DNS-Zone des Domainnamens <b>domain.tld</b> folgende NS-DNSEinträge für meine Subdomain <b>sub.domain.tld</b> hinzufügen :
+Ich möchte in der aktiven DNS-Zone des Domainnamens <b>domain.tld</b> folgende NS-Einträge für meine Subdomain <b>sub.domain.tld</b> hinzufügen:
 
  - sub IN NS nsXX.ovh.net.
  - sub IN NS dnsXX.ovh.net.
@@ -236,14 +236,14 @@ Im obigen Beispiel ersetzen Sie die Werte **domain.tld**, **sub.domain.tld**, **
 >
 > **Der folgende Hinweis betrifft nicht die beiden DNS-Einträge vom Typ NS, die Sie gerade hinzugefügt haben.** 
 >
-> Falls andere DNS-Einträge in der aktiven DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, vorhanden waren :
+> Falls andere DNS-Einträge in der aktiven DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, vorhanden waren:
 >
 > 1. Vergessen Sie nicht, sie in der für Ihre Subdomain erstellten DNS-Zone zu duplizieren.
 > 2. Nach der Duplizierung entfernen Sie sie aus der aktiven DNS-Zone Ihres Domainnamens.
 >
 > Es könnte sonst zu einem Konflikt bei der DNS-Auflösung kommen.
 
-Nachdem Sie die DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, geändert haben, kann die Ausbreitung der Änderungen bis zu **48 Stunden** dauern.
+Nachdem Sie die DNS-Zone des Domainnamens, von dem Ihre Subdomain abhängt, geändert haben, kann die Propagation der Änderungen bis zu **48 Stunden** dauern.
 
 ## Weiterführende Informationen
 
