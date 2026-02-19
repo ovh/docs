@@ -205,7 +205,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> > [!success]
 >> >
->> > Retrouvez ci-après un exemple concret de mise en place d'un alias (apex) via un enregistrement DNS de type HTTPS :
+>> > Retrouvez ci-dessous un exemple concret de mise en place d'un alias (apex) via un enregistrement DNS de type HTTPS :
 >> >
 >> > Le site web **domain.tld** est hébergé derrière une infrastructure CDN (par exemple : **cdn.provider.tld**).
 >> > Grâce à l'enregistrement DNS de type HTTPS, le nom de domaine **domain.tld** peut indiquer directement aux navigateurs Internet compatibles que le service HTTPS doit être résolu auprès du fournisseur du CDN **cdn.provider.tld**. Ceci sans redirections et sans gestion manuelle des adresses IP.
