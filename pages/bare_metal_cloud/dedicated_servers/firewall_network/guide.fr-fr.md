@@ -36,7 +36,11 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en permettant aux utilisateurs de répliquer certaines règles de pare-feu du serveur à la périphérie du réseau OVHcloud. Cela bloque les attaques entrantes au plus près de leur source, réduisant ainsi le risque de surcharge des ressources du serveur en cas d'attaque importante.
 
-### Activer le Edge Network Firewall
+### Configurer le Edge Network Firewall
+
+Le Edge Network Firewall est **automatiquement activé** lorsqu’une attaque DDoS est détectée et ne **peut pas être désactivé** tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
+
+#### Accéder à la page de configuration du Edge Network Firewall
 
 > [!primary]
 >
@@ -59,24 +63,26 @@ Cliquez ensuite sur le bouton `⁝`{.action} à droite de l'IPv4 concernée et s
 
 Vous serez amené vers la page de configuration du pare-feu.
 
-Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
-
-> [!warning]
->
-> Le Edge Network Firewall est automatiquement activé lorsqu’une attaque DDoS est détectée et ne peut pas être désactivé tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
->
-> Veuillez noter que vous devez configurer vos propres pare-feux locaux même si le Edge Network Firewall a été configuré, car son rôle principal est de gérer le trafic en dehors du réseau OVHcloud.
->
-> Si vous avez configuré des règles, nous vous recommandons de les vérifier régulièrement ou lors de changements dans le fonctionnement de vos services. Comme évoqué précédemment, le Edge Network Firewall sera automatiquement activé en cas d’attaque DDoS, même s’il est désactivé dans vos paramètres IP.
->
-
 > [!primary]
 >
 > - La fragmentation UDP est bloquée (*DROP*) par défaut. Lors de l'activation du Edge Network Firewall, si vous utilisez un VPN, n'oubliez pas de configurer correctement votre unité de transmission maximale (MTU). Par exemple, avec OpenVPN, vous pouvez le vérifier via `MTU test`.
 > - Le Edge Network Firewall (ENF), intégré aux Scrubbing Centers (VAC), gère uniquement le trafic réseau provenant de l’extérieur du réseau OVHcloud.
 >
 
-### Configurer le Edge Network Firewall
+> [!warning]
+> Veuillez noter que vous devez configurer vos propres pare-feux locaux même si le Edge Network Firewall a été configuré, car son rôle principal est de gérer le trafic en dehors du réseau OVHcloud.
+>
+> Si vous avez configuré des règles, nous vous recommandons de les vérifier régulièrement ou lors de changements dans le fonctionnement de vos services. Comme évoqué précédemment, le Edge Network Firewall sera automatiquement activé en cas d’attaque DDoS, même s’il est désactivé dans vos paramètres IP.
+>
+
+### Configurer des règles de pare-feu
+
+Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
+
+> [!primary]
+> Depuis mars 2026, le Edge Network Firewall prend en charge des règles s'appliquant à des plages de ports, en plus des règles habituelles à port unique.
+>
+> L'utilisation de plages de ports vous permet de protéger avec une seule règle les applications nécessitant plusieurs ports en séquence. Cela garantit que votre configuration respecte la limite des 20 règles, sans avoir à créer une règle distincte pour chaque port utilisé.
 
 > [!warning]
 > Veuillez noter que le Edge Network Firewall d’OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.
@@ -100,7 +106,12 @@ Pour chaque règle **TCP**, vous devez choisir :
 
 | ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
 |:--| 
-| &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Le port source (facultatif) <br>&bull; Le port de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
+| &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Port ou plage de ports source (facultatif) <br>&bull; Port ou plage de ports de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
+
+Lors de la configuration d'une règle s'appliquant à une plage de ports, assurez-vous de respecter le format suivant :
+- Le premier et le dernier port doivent être séparés par un trait d'union (ex : 1000-1200).
+- Les deux ports doivent être compris entre 0 et 65535 (inclus).
+- Le premier port de la plage doit être inférieur au dernier port.
 
 > [!primary]
 > Nous vous conseillons d'autoriser le protocole TCP avec une option `established` (pour les paquets qui font partie d'une session précédemment ouverte/démarrée), les paquets ICMP (pour le ping et traceroute) et éventuellement les réponses DNS UDP des serveurs externes (si vous utilisez des serveurs DNS externes).

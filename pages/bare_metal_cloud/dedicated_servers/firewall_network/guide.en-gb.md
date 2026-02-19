@@ -36,7 +36,11 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 The Edge Network Firewall reduces exposure to network DDoS attacks by allowing users to copy some of the server's firewall rules to the edge of the OVHcloud network. This blocks incoming attacks as close to their source as possible, reducing the risk of saturating server resources or rack connections in the event of major attacks.
 
-### Enabling Edge Network Firewall
+### Configure the Edge Network Firewall
+
+The Edge Network Firewall is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
+
+#### Access the Edge Network Firewall configuration page
 
 > [!primary]
 >
@@ -60,24 +64,26 @@ Next, click the `⁝`{.action} button to the right of the relevant IPv4 and firs
 
 You will then be taken to the firewall configuration page.
 
-You can set up to **20 rules per IP**.
+> [!primary]
+>
+> - UDP fragmentation is blocked (DROP) by default. If you are using a VPN, remember to configure your Maximum Transmission Unit (MTU) correctly. For example, with OpenVPN, you can check `MTU test`.
+> - The Edge Network Firewall (ENF) integrated in the scrubbing centres (VAC) only handles network traffic coming from outside the OVHcloud network.
+>
 
 > [!warning]
->
-> The Edge Network Firewall is automatically enabled when a DDoS attack is detected and cannot be disabled until the attack has ended. As a result, all the rules configured in the firewall are applied during the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
->
 > Please note that you should configure your own local firewalls even if the Edge Network Firewall has been configured, as its main role is to handle traffic from outside of the OVHcloud network.
 >
 > If you have configured some rules, we recommend that you check them regularly or when changing how your services are working. As previously mentioned, the Edge Network Firewall will be automatically enabled in case of a DDoS attack even when disabled in your IP settings.
 >
 
-> [!primary]
->
-> - UDP fragmentation is blocked (DROP) by default. When enabling the Edge Network Firewall, if you are using a VPN, remember to configure your Maximum Transmission Unit (MTU) correctly. For example, with OpenVPN, you can check `MTU test`.
-> - The Edge Network Firewall (ENF) integrated in the scrubbing centres (VAC) only handles network traffic coming from outside the OVHcloud network.
->
+### Configure firewall rules
 
-### Configure the Edge Network Firewall
+You can set up to **20 rules per IP**.
+
+> [!primary]
+> Since March 2026, the Edge Network Firewall supports rules that apply to port ranges, in addition to the usual single-port rules.
+>
+> By using port ranges, you can protect applications that require multiple sequential ports with a single entry. This ensures your configuration stays within the 20-rule limit without needing a separate rule for every individual port.
 
 > [!warning]
 > Please note that the OVHcloud Edge Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
@@ -101,7 +107,12 @@ For each **TCP** rule, you must choose:
 
 | ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
 |:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
+| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port or port range (optional) <br>&bull; The destination port or port range(optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
+
+When configuring a rule that applies to a port range, please make sure that the range is formatted this way :
+- The first and last port must be separated with a hyphen (e.g. 1000-1200).
+- Both ports must be between 0 and 65535 (inclusive).
+- The first port in a range must be smaller than the last port.
 
 > [!primary]
 > We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
