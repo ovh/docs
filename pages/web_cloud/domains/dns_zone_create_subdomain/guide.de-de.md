@@ -72,9 +72,9 @@ Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfi
 
 ## Voraussetzungen
 
-- Über den Domainnamen verfügen, von dem die gewählte Subdomain abhängen wird.
-- Die betreffende Subdomain darf nicht bereits über eine (aktiv oder nicht) DNS-Zone bei OVHcloud verfügen oder Gegenstand eines laufenden Vorgangs oder einer Bestellung bei OVHcloud sein.
-- Angemeldet sein bei Ihrem [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über einen Domainnamen, von dem die gewählte Subdomain abhängen wird.
+- Die betreffende Subdomain darf nicht bereits über eine DNS-Zone (aktiv oder nicht) bei OVHcloud verfügen oder Gegenstand eines laufenden Vorgangs oder einer Bestellung bei OVHcloud sein.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -164,7 +164,7 @@ Nachdem Sie die beiden DNS-Server-Namen abgerufen haben, gibt es zwei mögliche 
 
 **Klicken Sie auf eine der beiden Szenarien, um den Inhalt anzuzeigen.**
 
-/// details | Der Domainnamen, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud
+/// details | Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud
 
 Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
@@ -205,7 +205,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> **Wiederholen Sie den gesamten Vorgang für den zweiten DNS-Server.**
 >>
->> Falls nötig, konsultieren Sie zusätzlich unseren Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
+>> Falls nötig, konsultieren Sie zusätzlich unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ///
 
@@ -218,7 +218,7 @@ Hier ist ein Beispiel für eine Anfrage, die Sie an Ihren DNS-Anbieter richten k
 <pre class="bgwhite"><code>
 Hallo,
 
-Ich möchte in der aktiven DNS-Zone des Domainnamens <b>domain.tld</b> folgende NS-DNSEinträge für meine Subdomain <b>sub.domain.tld</b> hinzufügen:
+Ich möchte in der aktiven DNS-Zone des Domainnamens <b>domain.tld</b> folgende NS-Einträge für meine Subdomain <b>sub.domain.tld</b> hinzufügen:
 
  - sub IN NS nsXX.ovh.net.
  - sub IN NS dnsXX.ovh.net.
