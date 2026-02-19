@@ -15,7 +15,17 @@ Dallo Spazio Cliente è possibile consultare e scaricare la cronologia degli SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con almeno 1 SMS inviato
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -31,8 +41,6 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 >
 
 ### Step 1: consulta la cronologia dal tuo Spazio Cliente
-
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
 Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
 
