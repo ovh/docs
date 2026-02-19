@@ -1,7 +1,7 @@
 ---
 title: "Supprimer un compte e-mail"
 excerpt: "Découvrez comment supprimer ou réinitialiser une adresse e-mail sur votre offre e-mail"
-updated: 2026-02-10
+updated: 2026-02-19
 ---
 
 ## Objectif
