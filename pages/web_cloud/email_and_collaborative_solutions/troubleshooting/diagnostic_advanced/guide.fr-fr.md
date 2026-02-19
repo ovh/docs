@@ -88,19 +88,19 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 > [!tabs]
 > **Compte e-mail MX Plan**
 >>
->> Pour une offre **MX Plan**, rendez-vous sur [la page de nos guides MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
+>> Pour une offre **MX Plan**, rendez-vous sur [la page de nos guides MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **E-mail Pro**
 >>
->> Pour une offre **E-mail Pro**, rendez-vous sur [la page de nos guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
+>> Pour une offre **E-mail Pro**, rendez-vous sur [la page de nos guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **Exchange**
 >>
->> Pour une offre **Exchange**, rendez-vous sur [la page de nos guides Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
+>> Pour une offre **Exchange**, rendez-vous sur [la page de nos guides Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **Zimbra**
 >>
->> Pour une offre **Zimbra**, rendez-vous sur [la page de nos guides Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
+>> Pour une offre **Zimbra**, rendez-vous sur [la page de nos guides Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 
 ///
 
