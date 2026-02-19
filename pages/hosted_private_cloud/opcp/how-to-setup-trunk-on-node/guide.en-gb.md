@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to set up Trunk ports on a Node"
 excerpt: Learn how to configure Neutron Trunk ports in OPCP for multi-network vlan connectivity on bare metal or virtual machine instances
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -13,10 +13,10 @@ Trunk ports allow a single instance (bare metal or virtual machine) to send and 
 This guide also shows how to configure **vlan sub-interfaces** within your instance to access each network attached to the trunk.
 
 > [!warning]
-> Trunk creation requires the **admin** role. A project user cannot create trunks.
+> Trunk creation requires the **admin** role. A project user cannot create trunks.<br>
 > Adding sub-ports to a trunk also requires admin rights by default, but this can be delegated by your administrator.
 >
-> It is recommended to configure the trunk **before** deploying an instance.
+> It is recommended to configure the trunk **before** deploying an instance.<br>
 > This guide **does not cover** configuring a trunk on an instance that is already in production.
 
 ## Why Use Trunk Ports?

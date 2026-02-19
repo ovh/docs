@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer les ports Trunk sur un nœud"
 excerpt: "Apprenez à configurer les ports Trunk Neutron dans OPCP pour une connectivité multi-réseau vlan sur des instances baremetal ou machines virtuelles"
-updated: 2026-02-18
+updated: 2026-02-19
 ---
 
 ## Objectif
@@ -13,10 +13,10 @@ Les ports Trunk permettent à une seule instance (bare metal ou machine virtuell
 Ce guide montre également comment configurer des **sous-interfaces vlan** au sein de votre instance pour accéder à chaque réseau rattaché au trunk.
 
 > [!warning]
-> La création de trunk nécessite le rôle **admin**. Un utilisateur projet ne peut pas créer de trunks.
+> La création de trunk nécessite le rôle **admin**. Un utilisateur projet ne peut pas créer de trunks.<br>
 > L'ajout de sous-ports à un trunk nécessite également les droits admin par défaut, mais cela peut être délégué par votre administrateur.
 >
-> Il est recommandé de configurer le trunk **avant** le déploiement d'une instance.
+> Il est recommandé de configurer le trunk **avant** le déploiement d'une instance.<br>
 > Ce guide **ne couvre pas** la configuration d'un trunk sur une instance déjà en production.
 
 ## Pourquoi utiliser les ports Trunk ?
