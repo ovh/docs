@@ -6,34 +6,34 @@ updated: 2026-02-18
 
 ## Ziel
 
-Dieses Handbuch bietet eine klare, schrittweise Anleitung zur Bereitstellung und Konfiguration von NetApp Trident CSI auf OVHcloud Managed Kubernetes (MKS), wodurch ein nahtloser Zugriff auf Enterprise File Storage über das vRack ermöglicht wird. Dieses Handbuch fasst bewährte Methoden, Voraussetzungen, IAM-Einrichtung, Backend-Konfiguration und erweiterte Funktionen wie Snapshots und Volumeverwaltung zusammen.
+Diese Anleitung bietet eine klare, schrittweise Anleitung zur Bereitstellung und Konfiguration von NetApp Trident CSI auf OVHcloud Managed Kubernetes (MKS), wodurch ein nahtloser Zugriff auf Enterprise File Storage über das vRack ermöglicht wird. Diese Anleitung fasst bewährte Methoden, Voraussetzungen, IAM-Einrichtung, Backend-Konfiguration und erweiterte Funktionen wie Snapshots und Volumeverwaltung zusammen.
 
 ## Voraussetzungen
 
-- Einen [Enterprise File Storage](/links/storage/enterprise-file-storage)-Dienst in Ihrem OVHcloud Account
-- Einen [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes)-Cluster
-- Ein [vRack](/links/network/vrack) mit konfiguriertem [vRack Services](/pages/network/vrack_services/global)
-- Vertrautheit mit den [OVHcloud APIs](/pages/manage_and_operate/api/first-steps) und/oder der [OVHcloud CLI](/pages/manage_and_operate/cli/cli-getting-started)
+- Sie haben einen [Enterprise File Storage](/links/storage/enterprise-file-storage)-Dienst in Ihrem OVHcloud Kunden-Account.
+- Sie haben ein [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes)-Cluster.
+- Sie haben ein [vRack](/links/network/vrack) mit konfiguriertem [vRack Services](/pages/network/vrack_services/global).
+- Sie sind vertraut mit der Verwendung der [OVHcloud API](/pages/manage_and_operate/api/first-steps) oder der [OVHcloud CLI](/pages/manage_and_operate/cli/cli-getting-started).
 
 Bevor Sie beginnen, stellen Sie sicher, dass Ihre Umgebung folgende Kriterien erfüllt:
 
 **vRack**
 
-- **Public Cloud Projekt und vRack Services** gehören zum selben vRack
+- **Public Cloud Projekt und vRack Services** gehören zum selben vRack.
 
 **Region**
 
-- **vRack Services und EFS** befinden sich in derselben Region
+- **vRack Services und EFS** befinden sich in derselben Region.
 
 **Netzwerk**
 
-- **Dieselbe VLAN-ID** wird für das vRack Services Subnetz und das private MKS-Netzwerk verwendet
-- **Dasselbe CIDR** wird für das vRack Services Subnetz und das Subnetz des privaten MKS-Netzwerks verwendet
-- Die IPs des **MKS Private Network Allocation Pools** überschneiden sich nicht mit dem vRack Services Service Range
+- **Dieselbe VLAN-ID** wird für das vRack Services Subnetz und das private MKS-Netzwerk verwendet.
+- **Dasselbe CIDR** wird für das vRack Services Subnetz und das Subnetz des privaten MKS-Netzwerks verwendet.
+- Die IPs des **MKS Private Network Allocation Pools** überschneiden sich nicht mit dem vRack Services Service Range.
 
 **Konnektivität**
 
-- **Ein Gateway** ist erforderlich, damit MKS-Knoten die OVHcloud API erreichen können
+- **Ein Gateway** ist erforderlich, damit MKS-Knoten die OVHcloud API erreichen können.
 
 ![Trident Voraussetzungen Schema](images/trident_efs_requirements.excalidraw.png){.thumbnail}
 
@@ -48,9 +48,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Ihre Umgebung folgende Kriterien er
 
 ### IAM-Konfiguration (Identity and Access Management)
 
-Trident benötigt ein dediziertes Dienstkonto, um mit der OVHcloud API zu interagieren und Enterprise File Storage Volumes zu verwalten. Folgen Sie diesen Schritten, um IAM ordnungsgemäß zu konfigurieren.
+Trident benötigt einen dedizierten Dienst-Account, um mit der OVHcloud API zu interagieren und Enterprise File Storage Volumes zu verwalten. Folgen Sie diesen Schritten, um IAM ordnungsgemäß zu konfigurieren.
 
-#### 1. Dienstkontoerstellung (OAuth2)
+#### 1. Dienst-Account-Erstellung (OAuth2)
 
 Erstellen Sie einen OAuth2-Client mit der OVHcloud API oder CLI unter Verwendung des `CLIENT_CREDENTIALS`-Flusses.
 
@@ -82,7 +82,7 @@ Erstellen Sie einen OAuth2-Client mit der OVHcloud API oder CLI unter Verwendung
 >> ```
 >>
 > Über die CLI
->> Das Dienstkonto kann mit der [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) und dem folgenden Befehl erstellt werden (ergänzen Sie Ihre Werte):
+>> Der Dienst-Account kann mit der [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) und dem folgenden Befehl erstellt werden (ergänzen Sie Ihre Werte):
 >>
 >> ```bash
 >> ovhcloud account api oauth2 client create --name "TRIDENT-CSI" --description "Service Account for Trident CSI" --flow "CLIENT_CREDENTIALS"
@@ -102,7 +102,7 @@ Erstellen Sie einen OAuth2-Client mit der OVHcloud API oder CLI unter Verwendung
 
 #### 2. IAM-Richtlinienerstellung
 
-Konfigurieren Sie eine IAM-Richtlinie, die folgende Elemente enthalten muss: das zu autorisierende Dienstkonto, den oder die einzuschließenden `Enterprise File Storage`-Dienst(e) und die zu gewährenden Aktionen, die in der folgenden Tabelle zusammengefasst sind:
+Konfigurieren Sie eine IAM-Richtlinie, die folgende Elemente enthalten muss: den zu autorisierenden Dienst-Account, die einzuschließenden `Enterprise File Storage`-Dienste und die zu gewährenden Aktionen, die in der folgenden Tabelle zusammengefasst sind:
 
 | Aktion                                      | Beschreibung                           |
 | ------------------------------------------- | -------------------------------------- |
@@ -135,7 +135,7 @@ Konfigurieren Sie eine IAM-Richtlinie, die folgende Elemente enthalten muss: das
 >>
 >> > [!primary]
 >> >
->> > Ersetzen Sie im Feld `identities` den Wert `xx11111-ovh` durch Ihre OVHcloud Account-ID (NIC-Handle) und `EU.xxxxxxxxxxxxxxxx` durch die in Schritt 1 erhaltene `clientId`.
+>> > Ersetzen Sie im Feld `identities` den Wert `xx11111-ovh` durch Ihre OVHcloud Kundenkennung und `EU.xxxxxxxxxxxxxxxx` durch die in Schritt 1 erhaltene `clientId`.
 >> >
 >>
 >> ```json
@@ -221,7 +221,7 @@ Konfigurieren Sie eine IAM-Richtlinie, die folgende Elemente enthalten muss: das
 >>
 >> > [!primary]
 >> >
->> > Ersetzen Sie im Feld `identities` den Wert `xx11111-ovh` durch Ihre OVHcloud Account-ID (NIC-Handle) und `EU.xxxxxxxxxxxxxxxx` durch die in Schritt 1 erhaltene `clientId`.
+>> > Ersetzen Sie im Feld `identities` den Wert `xx11111-ovh` durch Ihre OVHcloud Kundenkennung und `EU.xxxxxxxxxxxxxxxx` durch die in Schritt 1 erhaltene `clientId`.
 >> >
 >>
 >> ```bash
@@ -374,11 +374,11 @@ Das Trident-Backend verbindet NetApp Trident mit dem OVHcloud Enterprise File St
 
 #### 1. Secret-Erstellung
 
-Erstellen Sie ein Secret mit den Verbindungsinformationen, die Trident den Zugriff auf die OVHcloud API ermöglichen.
+Erstellen Sie ein Secret mit den Zugangsdaten, die Trident den Zugriff auf die OVHcloud API ermöglichen.
 
 > [!warning]
 >
-> Ersetzen Sie die Werte `clientID` und `clientSecret` durch die in Schritt 1 erhaltenen Anmeldeinformationen.
+> Ersetzen Sie die Werte `clientID` und `clientSecret` durch die in Schritt 1 erhaltenen Zugangsdaten.
 >
 
 ```bash
@@ -583,7 +583,7 @@ Der Snapshot wird im Enterprise File Storage-Dienst erstellt und kann für Siche
 
 ## Fehlerbehebung
 
-- **Backend nicht gebunden**: Überprüfen Sie, dass die IAM-Anmeldeinformationen (clientId/clientSecret) korrekt sind und die IAM-Richtlinie alle erforderlichen Berechtigungen gewährt.
+- **Backend nicht gebunden**: Überprüfen Sie, dass die IAM-Zugangsdaten (clientId/clientSecret) korrekt sind und die IAM-Richtlinie alle erforderlichen Berechtigungen gewährt.
 - **PVC bleibt im Status Pending**: Überprüfen Sie, dass alle Trident-Pods im Status `Running` sind, das Backend im Status `Bound` ist und die `StorageClass` den richtigen Backend-Typ referenziert. Prüfen Sie die Fehler in den Trident-Pod-Logs mit `kubectl logs -n trident <pod-name>`.
 - **Netzwerkverbindungsprobleme**: Überprüfen Sie, dass der MKS-Cluster den Enterprise File Storage-Dienst über das vRack erreichen kann.
 
