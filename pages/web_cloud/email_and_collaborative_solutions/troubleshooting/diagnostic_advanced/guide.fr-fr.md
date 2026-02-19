@@ -55,25 +55,25 @@ Voici comment vérifier que vos services sont bien opérationnels :
 >>
 >> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis sélectionnez votre nom de domaine. Si votre nom de domaine a expiré, cela sera indiqué en haut de la page.
 >>
-> **Hébergement Web**
+> **Hébergement web**
 >>
 >> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis sélectionnez votre hébergement. La date d'expiration ou de renouvellement automatique de votre hébergement sera indiquée en haut de la page.
 >>
 > **E-mail MX Plan**
 >>
->> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Emails`{.action} (ou `MX Plan`{.action} selon votre offre), puis sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez le statut du compte e-mail dans la colonne `Statut`.
+>> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Emails`{.action} (ou `MX Plan`{.action} selon votre offre), puis sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Emails`{.action}. Vérifiez le statut du compte e-mail dans la colonne `Bloqué pour SPAM`.
 >>
 > **E-mail Pro**
 >>
->> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+>> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Email Pro`{.action}, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 >>
 > **Exchange**
 >>
->> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+>> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Exchange`{.action} dans la rubrique **Microsoft** et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 >>
 > **Zimbra**
 >>
->> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Zimbra Mail`{.action}. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+>> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Zimbra Mail`{.action}. Cliquez sur l'onglet `Compte e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 
 
 ///
@@ -88,19 +88,19 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 > [!tabs]
 > **Compte e-mail MX Plan**
 >>
->> Pour une offre **MX Plan**, dans la section **E-mails mutualisés - MX Plan** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+>> Pour une offre **MX Plan**, rendez-vous sur [la page de nos guides MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **E-mail Pro**
 >>
->> Pour une offre **E-mail Pro**, dans la section **E-mail Pro**, de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+>> Pour une offre **E-mail Pro**, rendez-vous sur [la page de nos guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **Exchange**
 >>
->> Pour une offre **Exchange**, dans la section **Microsoft Exchange** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`.
+>> Pour une offre **Exchange**, rendez-vous sur [la page de nos guides Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **Zimbra**
 >>
->> Pour une offre **Zimbra**, dans la section **Zimbra** de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration d'une application e-mail sur votre ordinateur` ou de votre smartphone dans `Configurer une application e-mail sur votre smartphone ou tablette`.
+>> Pour une offre **Zimbra**, rendez-vous sur [la page de nos guides Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans les sections `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 
 ///
 
@@ -133,15 +133,15 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 >>
 > **E-mail Pro**
 >>
->> Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
+>> Pour une offre **E-mail Pro**, accédez à la section `Web Cloud`{.action}, cliquez sur `Email Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 >>
 > **Exchange**
 >>
->> Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Pour une offre **Exchange**, accédez à la section `Web Cloud`{.action}, cliquez sur `Exchange`{.action} dans la rubrique **Microsoft** et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
 >>
 > **Zimbra**
 >>
->> Pour une offre **Zimbra**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Zimbra Mail`{.action}. Depuis l'onglet `Compte e-mail`{.action}, cliquez sur le bouton `⋮`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
+>> Pour une offre **Zimbra**, accédez à la section `Web Cloud`{.action} et cliquez sur `Zimbra Mail`{.action}. Depuis l'onglet `Compte e-mail`{.action}, cliquez sur le bouton `⋮`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 
 ///
 
