@@ -58,7 +58,7 @@ You can use the drop-down menu underneath **"My public IP addresses and associat
 
 ![filter service](images/selectservice_cut_new.png){.thumbnail}
 
-Next, click the `⁝`{.action} button to the right of the relevant IPv4 and first select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
+Next, click the `⁝`{.action} button to the right of the relevant IPv4 and select `Configure Edge Network Firewall`{.action} (or click on the status badge in the **Edge Firewall** column).
 
 ![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
