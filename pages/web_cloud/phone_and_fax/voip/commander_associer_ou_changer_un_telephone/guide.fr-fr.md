@@ -13,9 +13,17 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -35,16 +43,15 @@ Votre ligne SIP peut être associée à un téléphone OVHcloud. Cela vous perme
 
 Vous pouvez commander un téléphone OVHcloud pour une ligne SIP qui n'est pas déjà rattachée à un téléphone OVHcloud.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} puis cliquez sur `Commander un téléphone VoIP`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} puis cliquez sur `Commander un téléphone VoIP`{.action}.
 
 ![plug&phone](images/orderphone.png){.thumbnail}
 
 Sur la page qui s'affiche, dans la partie « Choix de l'équipement », sélectionnez le téléphone que vous souhaitez commander parmi les modèles proposés puis suivez les étapes qui apparaissent.
 
-Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone](#rattacher-telephone) » de cette documentation. 
+Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone](#rattacher-telephone) » de cette documentation.
 
 ### Changer ou renvoyer le téléphone de votre ligne <a name="changer-telephone"></a>
 
@@ -58,10 +65,9 @@ Lorsque vous possédez une ligne SIP OVHcloud actuellement rattachée à un tél
 > Selon l'offre dont vous disposez sur votre ligne SIP, l'option de renvoi du téléphone peut ne pas être disponible.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Changer de téléphone`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Changer de téléphone`{.action}.
 
 ![plug&phone](images/change-phone.png){.thumbnail}
 
@@ -70,12 +76,11 @@ Sur la page qui s'affiche, dans la partie « Choix de l'équipement », sélec
 |Actions|Description|
 |---|---|
 |Renvoyer mon équipement actuel|Permet de renvoyer le téléphone actuellement rattaché à votre ligne SIP, si votre offre le permet. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».|
-|Caution pour le ...|Permet de changer le téléphone actuellement rattaché à votre ligne SIP pour un autre équipement. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».| 
+|Caution pour le ...|Permet de changer le téléphone actuellement rattaché à votre ligne SIP pour un autre équipement. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».|
 
 > [!primary]
 >
-> Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d’un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma) ».
-> 
+> Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d'un RMA](/pages/web_cloud/phone_and_fax/voip/deroulement_d_un_rma) ».
 
 ### Rattacher votre ligne à un téléphone <a name="rattacher-telephone"></a>
 
@@ -92,10 +97,9 @@ Certains téléphones OVHcloud peuvent être associés à plusieurs lignes SIP. 
 
 Si tel est le cas, pour réaliser la manipulation, suivez les étapes ci-dessous :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (n'étant actuellement rattachée à aucun téléphone).
-1. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Rattacher la ligne à un équipement actuel`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (n'étant actuellement rattachée à aucun téléphone).
+
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Rattacher la ligne à un équipement actuel`{.action}.
 
 ![rattacher une ligne SIP](images/plug-and-phone-step1.png){.thumbnail}
 
@@ -103,7 +107,7 @@ Sur la page qui s'affiche, sélectionnez l'équipement sur lequel vous souhaitez
 
 ![rattacher une ligne SIP](images/plug-and-phone-step5.png){.thumbnail}
 
-Si vous préférez commander un nouveau téléphone OVHcloud, suivez les instructions de la section « [commander un téléphone OVHcloud](#obtenir-telephone) » de ce guide. 
+Si vous préférez commander un nouveau téléphone OVHcloud, suivez les instructions de la section « [Commander un téléphone OVHcloud](#obtenir-telephone) » de ce guide.
 
 ### Détacher votre ligne d'un téléphone <a name="detacher-telephone"></a>
 
@@ -113,27 +117,25 @@ Si vous préférez commander un nouveau téléphone OVHcloud, suivez les instruc
 > ![IP publique](images/public-ip.png){.thumbnail}
 >
 
-Vous pouvez détacher une ligne SIP d'un téléphone OVHcloud disposant de plusieurs lignes SIP configurées. Pour cela, suivez les étapes ci-dessous : 
+Vous pouvez détacher une ligne SIP d'un téléphone OVHcloud disposant de plusieurs lignes SIP configurées. Pour cela, suivez les étapes ci-dessous :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Détacher la ligne d'un téléphone`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Détacher la ligne d'un téléphone`{.action}.
 
 ![détacher une ligne SIP](images/detach-phone01.png){.thumbnail}
 
-Sur la page qui s'affiche, renseignez l'adresse IP publique du téléphone puis cliquez sur `Détacher`{.action}. 
+Sur la page qui s'affiche, renseignez l'adresse IP publique du téléphone puis cliquez sur `Détacher`{.action}.
 
 ![détacher une ligne SIP](images/detach-phone02.png){.thumbnail}
 
 ### Commander des accessoires <a name="accessoires"></a>
 
-Vous pouvez commander des accessoires (casques, câbles, combinés, etc.) pour vos téléphones OVHcloud. Pour cela, suivez les étapes ci-dessous : 
+Vous pouvez commander des accessoires (casques, câbles, combinés, etc.) pour vos téléphones OVHcloud. Pour cela, suivez les étapes ci-dessous :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Commander des accessoires`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+
+Positionnez-vous ensuite sur l'onglet `Téléphone`{.action} et cliquez sur `Commander des accessoires`{.action}.
 
 ![commander des accessoires](images/accessoires01.png){.thumbnail}
 

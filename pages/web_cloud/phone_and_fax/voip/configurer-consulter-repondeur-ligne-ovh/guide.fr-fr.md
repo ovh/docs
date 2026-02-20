@@ -22,7 +22,17 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 ## Prérequis
 
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -67,19 +77,11 @@ Depuis votre ligne téléphonique OVHcloud, composez le **123** pour accéder au
 
 Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
 
-Si vous n'avez pas défini de mot de passe d'accès à distance : 
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
+Si vous n'avez pas défini de mot de passe d'accès à distance, accédez à l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
 
 #### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP pour laquelle vous souhaitez consulter le répondeur.
-1. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
 
@@ -95,10 +97,7 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Configuration du répondeur`{.action}. 
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
 
@@ -137,10 +136,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Choix de la messagerie par défaut`{.action}.
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Choix de la messagerie par défaut`{.action}.
 
 ![repondeur](images/voicemail-step1.png){.thumbnail}
 

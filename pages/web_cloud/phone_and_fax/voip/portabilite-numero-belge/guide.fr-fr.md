@@ -15,10 +15,20 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur en Belgique.
 - Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
 - Disposer d'une offre [VoIP OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
- 
+
 ## En pratique
 
 ### 1 - Préparer sa demande de portabilité
@@ -38,9 +48,7 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 ### 2 - Demander la portabilité
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation dans lequel le ou les numéros portés seront intégrés.
-1. Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Demander une portabilité`{.action}.
 
 ![numberport](images/BE-porta-request.png){.thumbnail}
 
@@ -109,9 +117,7 @@ Avant cette validation du mandat par nos soins, vous pouvez, en cas d'erreur, su
 
 ### 4 - Suivre une demande de portabilité <a name="suivi"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation dans lequel a été demandée la portabilité.
-1. Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Consulter mes portabilités en cours`{.action}.
 
 ![numberport](images/BE-porta-request08.png){.thumbnail}
 

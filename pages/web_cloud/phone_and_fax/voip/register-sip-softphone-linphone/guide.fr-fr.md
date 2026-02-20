@@ -37,6 +37,17 @@ Le logiciel [Linphone](https://www.linphone.org/) est un softphone (logiciel de 
 - [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone)
 - Avoir installé le logiciel [Linphone](https://www.linphone.org/) sur un smartphone ou un ordinateur
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 Ce tutoriel décrit la méthode pour enregistrer votre ligne sur les versions mobiles (Android et iOS) et Desktop (Windows et macOS) de Linphone.
