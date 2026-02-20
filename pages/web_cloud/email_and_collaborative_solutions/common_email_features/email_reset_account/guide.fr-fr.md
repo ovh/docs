@@ -83,7 +83,7 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >> 1. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.
 >> 1. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.
 >>
->> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes E-mail-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).
+>> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).
 >>
 >> ![email](images/emailpro-reset.png){.thumbnail}
 >>

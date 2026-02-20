@@ -82,7 +82,7 @@ Le Serveur Vocal Interactif en VXML permet, via une configuration VXML 2.1, d’
 
 #### 2.6 Contact Center Solution <a name="ccs"></a>
 
-En cours de développement chez OVHcloud, le Contact Center Solution (ou CCS) est une évolution de la file d'appels. Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
+Le Contact Center Solution (ou CCS) est une évolution de la file d'appels. Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
 
 Via une interface unique, vous avez la possibilité de gérer une file d'appels, de définir des services (par exemple : service commercial, technique, production, etc.), de personnaliser vos sons (musique d'attente, musique de prédécroché), mais aussi de mettre en place une supervision de l’ensemble de vos postes téléphoniques.
 
