@@ -21,17 +21,6 @@ details[open]>summary::before {
 
 Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud.
 
-<!-- CP-NAV-START:telecom-voip-fax -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
-- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
-
----
-<!-- CP-NAV-END:telecom-voip-fax -->
-
 <a name="ligne-ou-numero"></a>
 
 /// details | Quelle est la différence entre une ligne SIP et un numéro « alias » ?
@@ -87,7 +76,7 @@ Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions 
 
 /// details | Comment associer un autre numéro à ma ligne téléphonique ?
 
-Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, connectez-vous sur votre [espace client OVHcloud](/links/manager), puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
+Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, connectez-vous sur votre [espace client OVHcloud](/links/manager), sélectionnez la rubrique `Télécom`{.action} puis cliquez sur `VoIP & Fax`{.action}. Cliquez sur le groupe de facturation souhaité puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
 
 > [!success]
 >

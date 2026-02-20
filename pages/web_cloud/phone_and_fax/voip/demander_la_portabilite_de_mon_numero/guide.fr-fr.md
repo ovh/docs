@@ -52,7 +52,7 @@ Selon le type du ou des numéros que vous souhaitez porter chez OVHcloud, le pro
 
 ### 2 - Demander la portabilité
 
-Assurez-vous d'être positionné sur l'onglet `Tableau de bord`{.action} et cliquez sur `Demander une portabilité`{.action}.
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Demander une portabilité`{.action}.
 
 ![numberport](images/porta-request.png){.thumbnail}
 

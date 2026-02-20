@@ -32,7 +32,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ### Étape 1 : accéder à la gestion des musiques et sonneries
 
-Positionnez-vous sur l'onglet `Gestion des musiques`{.action}.
+Cliquez sur l'onglet `Gestion des musiques`{.action}.
 
 ![sonneriesetmusiques](images/gestion-musiques.png){.thumbnail width="600"}
 

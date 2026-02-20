@@ -53,7 +53,7 @@ Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ense
 
 ### Étape 2 : modifier ses coordonnées et demander leur parution
 
-Positionnez-vous sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
+Cliquez sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step1.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer 
 > Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
 >
 
-Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
+Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
 
 Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. Vérifiez alors le statut qui s'affiche : 
 

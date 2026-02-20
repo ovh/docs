@@ -31,9 +31,7 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 
 ## En pratique
 
-Afin d'accéder à la gestion des groupes de téléphonie, suivez ces étapes :
-
-Les différents groupes apparaissent alors. Cliquez sur un groupe pour afficher la liste des services qu'il contient.
+Cliquez sur un groupe de téléphonie pour afficher la liste des services qu'il contient.
 
 ![groupes de téléphonie](images/groupes01.png){.thumbnail}
 

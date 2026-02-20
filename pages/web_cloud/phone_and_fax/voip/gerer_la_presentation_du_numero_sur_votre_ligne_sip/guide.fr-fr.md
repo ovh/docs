@@ -74,9 +74,7 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 
 #### Rester anonyme <a name="rester-anonyme"></a>
 
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
-1. Cliquez sur la ligne Trunk concernée.
-1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
+Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -86,9 +84,7 @@ La page qui s'affiche vous indique la configuration actuelle de la présentation
 
 #### Présenter de manière unique un numéro OVHcloud <a name="presenter-numero-unique"></a>
 
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
-1. Cliquez sur la ligne Trunk concernée.
-1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
+Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -111,9 +107,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud, sinon il sera prioritaire sur la présentation de votre IPBX.**
 
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
-1. Cliquez sur la ligne Trunk concernée.
-1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
+Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -134,9 +128,7 @@ Vous pouvez à présent configurer la présentation du numéro sur votre équipe
 
 La présentation d'un numéro externe depuis votre IPBX nécessite la validation du numéro souhaité.
 
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
-1. Cliquez sur la ligne Trunk concernée.
-1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation d'un numéro externe`{.action}.
+Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro externe`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step3.png){.thumbnail}
 
@@ -152,9 +144,7 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud. Dans le cas contraire, il sera prioritaire sur la présentation de votre IPBX.**
 
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
-1. Cliquez sur la ligne Trunk concernée.
-1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
+Choisissez la ligne Trunk concernée, cliquez sur l'onglet `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
