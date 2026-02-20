@@ -30,13 +30,9 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche. 
 
-Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Editer`{.action}.
-
-![public-cloud](images/editinstance.png){.thumbnail}
+Cliquez ensuite sur `...`{.action} à droite de l’instance, puis sélectionnez `Éditer`{.action}. Vous pouvez également accéder à cette action depuis les détails de l’instance en cliquant sur son nom, puis sur `Modifier le modèle`{.action}.
 
 Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** pour sélectionner le modèle de votre choix.
-
-![public-cloud](images/template.png){.thumbnail}
 
 > [!primary]
 >
