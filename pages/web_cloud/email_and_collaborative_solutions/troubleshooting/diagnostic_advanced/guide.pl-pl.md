@@ -34,7 +34,7 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 ## Wymagania początkowe
 
 - Posiadanie usługi **MX Plan**, **E-mail Pro**, **Exchange** lub **Zimbra**.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+- Dostęp do [panelu klienta OVHcloud](/links/manager). 
 
 ## W praktyce
 
@@ -44,16 +44,16 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 /// details | Czy moja oferta e-mail i/lub moje konta są aktywne? (**wysyłka** i **odbiór**)
 
-Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
+Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja nazwa domeny musi być aktywna.
 
 Sprawdź, czy jesteś na bieżąco z [płatnościami](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnawianiem](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) usług.
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 
 > [!tabs]
-> **Domena**
+> **Nazwa domeny**
 >>
->> Przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
+>> Przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} i wybierz Twoją nazwę domeny. Jeśli Twoja nazwa domeny wygasła, zostanie to wyświetlone na górze strony.
 >>
 > **Hosting WWW**
 >>
@@ -61,11 +61,11 @@ Sprawdź, czy Twoje usługi działają poprawnie:
 >>
 > **Konto e-mail MX Plan**
 >>
->> Przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action} (lub `MX Plan`{.action} w zależności od Twojej oferty), a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Zablokowany dla SPAM`.
+>> Przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action} (lub `MX Plan`{.action} w zależności od Twojej oferty), a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `E-maile`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Zablokowane ze względu na SPAM`.
 >>
 > **E-mail Pro**
 >>
->> Przejdź do sekcji `Web Cloud`{.action} i kliknij `Email Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+>> Przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 >>
 > **Exchange**
 >>
@@ -87,19 +87,19 @@ Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy
 > [!tabs]
 > **Konto e-mail MX Plan**
 >>
->> W przypadku oferty **MX Plan** przejdź do [strony naszych przewodników MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfiguracja programu pocztowego na komputerze` lub `Konfiguracja programu pocztowego na smartfonie lub tablecie`, w zależności od używanego urządzenia.
+>> W przypadku oferty **MX Plan** przejdź do [strony naszych przewodników MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfigurowanie aplikacji poczty e-mail na komputerze` lub `Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym`, w zależności od używanego urządzenia.
 >>
 > **E-mail Pro**
 >>
->> W przypadku oferty **E-mail Pro** przejdź do [strony naszych przewodników E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfiguracja programu pocztowego na komputerze` lub `Konfiguracja programu pocztowego na smartfonie lub tablecie`, w zależności od używanego urządzenia.
+>> W przypadku oferty **E-mail Pro** przejdź do [strony naszych przewodników E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfigurowanie aplikacji poczty e-mail na komputerze` lub `Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym`, w zależności od używanego urządzenia.
 >>
 > **Exchange**
 >>
->> W przypadku oferty **Exchange** przejdź do [strony naszych przewodników Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfiguracja programu pocztowego na komputerze` lub `Konfiguracja programu pocztowego na smartfonie lub tablecie`, w zależności od używanego urządzenia.
+>> W przypadku oferty **Exchange** przejdź do [strony naszych przewodników Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfigurowanie aplikacji poczty e-mail na komputerze` lub `Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym`, w zależności od używanego urządzenia.
 >>
 > **Zimbra**
 >>
->> W przypadku oferty **Zimbra** przejdź do [strony naszych przewodników Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfiguracja programu pocztowego na komputerze` lub `Konfiguracja programu pocztowego na smartfonie lub tablecie`, w zależności od używanego urządzenia.
+>> W przypadku oferty **Zimbra** przejdź do [strony naszych przewodników Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) i sprawdź konfigurację Twojego programu pocztowego za pomocą dostępnych przewodników w sekcji `Konfigurowanie aplikacji poczty e-mail na komputerze` lub `Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym`, w zależności od używanego urządzenia.
 
 ///
 
@@ -128,11 +128,11 @@ W jaki sposób zmienić hasło do konta e-mail:
 > [!tabs]
 > **Konto e-mail MX Plan**
 >>
->> W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> W przypadku oferty **MX Plan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >>
 > **E-mail Pro**
 >>
->> W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `Email Pro`{.action}, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
+>> W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
 >>
 > **Exchange**
 >>
@@ -140,7 +140,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 >>
 > **Zimbra**
 >>
->> W przypadku oferty **Zimbra** przejdź do sekcji `Web Cloud`{.action} i kliknij `Zimbra Mail`{.action}. W zakładce `Konto e-mail`{.action} kliknij przycisk `⋮`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
+>> W przypadku oferty **Zimbra** przejdź do sekcji `Web Cloud`{.action} i kliknij `Zimbra Mail`{.action}. W zakładce `Konto e-mail`{.action} kliknij przycisk `⋮`{.action} a następnie `Zmodyfikuj`{.action}, aby zmienić hasło.
 
 ///
 
@@ -148,22 +148,22 @@ W jaki sposób zmienić hasło do konta e-mail:
 
 Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-cloud.status-ovhcloud.com/>.
 
-- Aby **MXplan**, sprawdź w sekcji `E-maile`
+- Aby **MX Plan**, sprawdź w sekcji `E-maile`
 - W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`
 - W przypadku **Exchange** przejdź do sekcji `Hosted Microsoft`, `Private Microsoft` i `Trusted Microsoft` w zależności od Twojej oferty.
 - W przypadku **Zimbra** przejdź do sekcji `Zimbra`
 
 ///
 
-/// details | Czy wskazanie domeny do mojej usługi e-mail jest poprawne? (**odbiór**)
+/// details | Czy wskazanie nazwy domeny do mojej usługi e-mail jest poprawne? (**odbiór**)
 
-Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](/pages/web_cloud/domains/dns_zone_mx).
+Sprawdź, czy Twoja nazwa domeny wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji nazwy domeny](/pages/web_cloud/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Aby sprawdzić konfigurację DNS Twojej domeny, niezależnie od jej operatora, możesz użyć narzędzia [Zone Master](https://zonemaster.net/), korzystając z naszej dokumentacji [Tutorial - Korzystanie z Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Aby sprawdzić konfigurację DNS Twojej nazwy domeny, niezależnie od jej operatora, możesz użyć narzędzia [Zone Master](https://zonemaster.net/), korzystając z naszej dokumentacji [Tutorial - Korzystanie z Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
 ///
 
@@ -199,11 +199,11 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 >> |Kody odpowiedzi|Szczegóły|Działania|
 >> |---|---|---|
 >> |420|Przekroczony czas, problem z logowaniem|Ten komunikat błędu jest zwracany tylko przez serwery mail GroupWise. Skontaktuj się z administratorem docelowego serwera poczty elektronicznej|
->> |421|Usługa niedostępna, kanał transmisji w trakcie zamykania|Upewnij się, czy wysyłka wiadomości do innej domeny działa w wyniku błędu nieokreślonego. Jeśli tak, spróbuj ponownie później wysłać wiadomość|
+>> |421|Usługa niedostępna, kanał transmisji w trakcie zamykania|Upewnij się, czy wysyłka wiadomości do innej nazwy domeny działa w wyniku błędu nieokreślonego. Jeśli tak, spróbuj ponownie później wysłać wiadomość|
 >> |432|Otrzymanie wiadomości e-mail na zatrzymanym serwerze Exchange|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Skontaktuj się z administratorem docelowego serwera poczty elektronicznej|
 >> |449|Błąd routingu|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Microsoft zaleca przeprowadzenie diagnostyki z ich narzędzie WinRoute|
->> |450|Nie wykonano operacji poczty elektronicznej: niedostępna skrzynka e-mail (np. okupowana lub czasowo zablokowana skrzynka e-mail ze względów bezpieczeństwa lub lista czarna)|Sprawdź, czy Twój adres IP na serwerze poczty elektronicznej nie jest wyświetlany czarno ([SpamHaus](https://check.spamhaus.org/)) i sprawdź, czy Twój e-mail nie zawiera słów odnoszących się do SPAM.|
->> |451|Zrezygnowałeś z działania: Błąd podczas przetwarzania lokalnego|Może to być spowodowane chwilowym przeciążeniem lub weryfikacją SPF nieprawidłowej domeny nadającej. Skontaktuj się z administratorem serwera, jeśli taka wiadomość zostanie utrzymana|
+>> |450|Nie wykonano operacji poczty elektronicznej: niedostępna skrzynka e-mail (np. okupowana lub czasowo zablokowana skrzynka e-mail ze względów bezpieczeństwa lub lista czarna)|Sprawdź, czy Twój adres IP na serwerze poczty elektronicznej nie jest wyświetlany czarno ([Spamhaus](https://check.spamhaus.org/)) i sprawdź, czy Twój e-mail nie zawiera słów odnoszących się do SPAM.|
+>> |451|Zrezygnowałeś z działania: Błąd podczas przetwarzania lokalnego|Może to być spowodowane chwilowym przeciążeniem lub weryfikacją SPF nieprawidłowej nazwy domeny nadającej. Skontaktuj się z administratorem serwera, jeśli taka wiadomość zostanie utrzymana|
 >> |452|Operacja nie została wykonana: niewystarczający system przechowywania danych|Twój serwer poczty elektronicznej jest "przeciążony". Może to być również spowodowane zbyt dużą liczbę wiadomości, które próbują być wysyłane jednocześnie. Prosimy o sprawdzenie skrzynki pocztowej i spróbuj ponownie|
 >> |455|Serwer, który nie może otrzymać parametrów|Odczekaj chwilę i spróbuj ponownie. W przypadku awarii, skontaktuj się z administratorem serwera poczty elektronicznej odbiorcy|
 >>
@@ -225,7 +225,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 >> |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 >> |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
 >> |553|Operacja nie została wykonana: nieautoryzowany adres e-mail|Jest to zazwyczaj spowodowane przez nieprawidłowy adres e-mail docelowy. Sprawdź, czy dany adres e-mail jest poprawny|
->> |554|Transakcja nie powiodła się, "Brak usług SMTP tutaj"|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://check.spamhaus.org/))|
+>> |554|Transakcja nie powiodła się, "Brak usług SMTP tutaj"|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([Spamhaus](https://check.spamhaus.org/))|
 >> |555|MAIL FROM / RCPT TO, ustawienia nie rozpoznane lub nie zostały wdrożone|Wychodzący serwer SMTP nie rejestruje poprawnie adresu e-mail używanego w ustawieniach "De" lub "A". Sprawdź, czy podane adresy e-mail są poprawne i sprawdź, czy nie przekroczyłeś limitu określonego przez OVHcloud: 200 e-maili /godzina /konto i 300 e-maili /godzina /ip|
 
 ///
