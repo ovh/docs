@@ -1,7 +1,7 @@
 ---
 title: 'vRack zwischen Public Cloud und Dedicated Server einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie ein privates Netzwerk zwischen Public Cloud Instanzen und Dedicated Servern einrichten'
-updated: 2026-02-19
+updated: 2026-02-20
 ---
 
 <style>
