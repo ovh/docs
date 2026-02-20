@@ -1,7 +1,7 @@
 ---
 title: 'E-Mails können nicht gesendet oder empfangen werden'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 <style>

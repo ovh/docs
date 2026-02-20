@@ -1,7 +1,7 @@
 ---
 title: Unable to send or receive emails
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'Wysyłanie lub otrzymywanie e-maili niemożliwe'
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 <style>
