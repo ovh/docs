@@ -1,7 +1,7 @@
 ---
 title: Invio o ricezione delle email impossibile
 excerpt: Come reagire in caso di malfunzionamenti durante l'invio o la ricezione delle email in OVHcloud
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 <style>
