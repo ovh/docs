@@ -112,11 +112,11 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 > [!tabs]
 > **Cuenta de correo MX Plan**
 >>
->> Para un servicio **MX Plan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Para un servicio **MX Plan**, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >>
 > **Exchange**
 >>
->> Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Exchange`{.action} en la sección **Microsoft** y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Editar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Exchange`{.action} en la sección **Microsoft** y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Editar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía "[Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)".
 
 
 ///
@@ -132,13 +132,13 @@ Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcl
 
 /// details | ¿Es correcto apuntar el nombre de dominio a mi servicio de correo? (**recepción**)
 
-Compruebe que el nombre de dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_mx).
+Compruebe que el nombre de dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía "[Añadir un registro MX a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_mx)".
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Para comprobar la configuración DNS de su nombre de dominio, independientemente de su registrador, puede utilizar la herramienta [Zone Master](https://zonemaster.net/), utilizando nuestra documentación [Tutorial - Uso de Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
+> Para comprobar la configuración DNS de su nombre de dominio, independientemente de su registrador, puede utilizar la herramienta [Zone Master](https://zonemaster.net/), utilizando nuestra documentación "[Tutorial - Uso de Zonemaster](/pages/web_cloud/domains/dns_zonemaster)".
 
 ///
 
@@ -193,7 +193,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 >> |502|Pedido no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
 >> |503|El servidor ha encontrado una mala secuencia de comandos.|Esto suele deberse a un problema de autenticación. Asegúrese de estar bien autenticado en el servidor SMTP en lo que respecta a la configuración de su cliente de correo.|
 >> |504|Parámetro de órdenes no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
->> |535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) para más información|
+>> |535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía "[¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)" para más información|
 >> |550|Acción solicitada no realizada: buzón de correo no disponible|El servidor de correo de destino no ha podido verificar la dirección de correo electrónico utilizada. Esto suele deberse a una dirección de correo electrónico de destino no válida, pero también puede significar que el servidor de correo de destino tenga problemas de cortafuegos o conectividad. Compruebe la dirección de correo electrónico del destinatario e inténtelo de nuevo|
 >> |550 5.7.1|Email rejected per policy reason|El servidor de correo de destino rechazó la dirección de correo de envío por motivos de política de seguridad. Estas razones pueden ser múltiples, normalmente se detallan con el código de error. En algunos casos, puede ser una dirección IP de la cadena de transmisión que está presente en una lista de rechazo. Para comprobar la reputación de una dirección IP, puede probarla, por ejemplo, en [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) o comprobar la cadena de transmisión de un mensaje de correo desde la dirección de correo electrónico correspondiente con [Mailtester](https://www.mail-tester.com/)|
 >> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|El correo electrónico fue rechazado porque el servicio de correo electrónico del remitente no tiene configurado SPF o DKIM en su nombre de dominio.<br><br>Se recomienda configurar un registro SPF de prioridad, que es compatible con todas nuestras soluciones de correos electrónicos. Use nuestra guía "[Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Si su oferta de correo electrónico tiene la opción DKIM, puede implementarla usando nuestra guía "[Mejorar la seguridad del correo electrónico mediante el registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)".|

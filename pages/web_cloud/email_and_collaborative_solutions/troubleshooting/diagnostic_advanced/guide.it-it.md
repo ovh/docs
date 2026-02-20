@@ -128,7 +128,7 @@ Come modificare la password di un indirizzo email:
 > [!tabs]
 > **Account email MX Plan**
 >>
->> Per una soluzione **MX Plan**, consulta la guida [Modificare la password di un indirizzo email MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).
+>> Per una soluzione **MX Plan**, consulta la guida "[Modificare la password di un indirizzo email MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >>
 > **Email Pro**
 >>
@@ -136,7 +136,7 @@ Come modificare la password di un indirizzo email:
 >>
 > **Exchange**
 >>
->> Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Exchange`{.action} nella sezione **Microsoft** e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Exchange`{.action} nella sezione **Microsoft** e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida "[Configurare la doppia autenticazione su un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)".
 >>
 > **Zimbra**
 >>
@@ -157,13 +157,13 @@ Come modificare la password di un indirizzo email:
 
 /// details | Il puntamento del nome di dominio verso il tuo servizio di posta è corretto? (**ricezione**)
 
-Verifica che il tuo nome di dominio punti correttamente verso i server di posta OVHcloud. Per fare ciò, nella tua zona DNS devono essere configurati record di tipo MX. <br>Consulta la nostra guida [Aggiungere un record MX alla configurazione del nome di dominio](/pages/web_cloud/domains/dns_zone_mx).
+Verifica che il tuo nome di dominio punti correttamente verso i server di posta OVHcloud. Per fare ciò, nella tua zona DNS devono essere configurati record di tipo MX. <br>Consulta la nostra guida "[Aggiungere un record MX alla configurazione del nome di dominio](/pages/web_cloud/domains/dns_zone_mx)".
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Per verificare la configurazione DNS del tuo nome di dominio, indipendentemente dal suo registrar, puoi utilizzare lo strumento [Zone Master](https://zonemaster.net/), utilizzando la nostra documentazione [Tutorial - Utilizzo di Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Per verificare la configurazione DNS del tuo nome di dominio, indipendentemente dal suo registrar, puoi utilizzare lo strumento [Zone Master](https://zonemaster.net/), utilizzando la nostra documentazione "[Tutorial - Utilizzo di Zonemaster](/pages/web_cloud/domains/dns_zonemaster)".
 
 ///
 
@@ -218,7 +218,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 >> |502|Ordine non implementato|I parametri o le opzioni utilizzati durante l'invio dell'email con il tuo server SMTP sono riconosciuti ma disattivati nella sua configurazione. Contatta il tuo provider di servizi|
 >> |503|Il server ha riscontrato una brutta sequenza di comandi|In genere è necessario verificare l'autenticazione. Assicurati di essere autenticato correttamente sul server SMTP al livello di configurazione del tuo client di posta|
 >> |504|Parametro di comando non implementato|I parametri o le opzioni utilizzati durante l'invio dell'email con il tuo server SMTP sono riconosciuti ma disattivati nella sua configurazione. Contatta il tuo provider di servizi|
->> |535|Perdita durante l'autenticazione|Le informazioni utente/password sono eliminate o l'invio è potenzialmente bloccato sul tuo indirizzo email. Dallo Spazio Cliente OVHcloud è possibile verificare lo stato dell'indirizzo email Se l'account è stato bloccato per Spam, è possibile sbloccare la password. Per maggiori informazioni, consulta la nostra guida [Che fare in caso di account bloccato per invio di Spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)|
+>> |535|Perdita durante l'autenticazione|Le informazioni utente/password sono eliminate o l'invio è potenzialmente bloccato sul tuo indirizzo email. Dallo Spazio Cliente OVHcloud è possibile verificare lo stato dell'indirizzo email Se l'account è stato bloccato per Spam, è possibile sbloccare la password. Per maggiori informazioni, consulta la nostra guida "[Che fare in caso di account bloccato per invio di Spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)"|
 >> |550|Azione richiesta non effettuata: casella di posta non disponibile|Il server di posta di destinazione non ha potuto verificare l'indirizzo email utilizzato. Questo problema è causato principalmente da un indirizzo email di destinazione non valido, ma può anche significare che il server di posta di destinazione ha problemi di firewall o di connettività. Verifica l'indirizzo email del destinatario e/o riprova|
 >> |550 5.7.1|Email rejected per policy reason|Il server di posta di destinazione ha rifiutato l'indirizzo di posta elettronica di spedizione per motivi di politica di sicurezza. Questi motivi possono essere multipli, di solito sono dettagliati con il codice di errore. In alcuni casi può trattarsi di un indirizzo IP nella catena di trasmissione presente in un elenco di rifiuto. Per verificare la reputazione di un indirizzo IP, è possibile testarlo, ad esempio, su [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) o verificare la catena di trasmissione di un'email dall'indirizzo interessato con [Mailtester](https://www.mail-tester.com/)|
 >> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|L'e-mail è stata rifiutata perché il servizio di posta del mittente non ha SPF o DKIM configurati sul proprio nome di dominio.<br><br>Si consiglia di impostare un record SPF prioritario, compatibile con tutte le e-mail offerte. Usa la nostra guida "[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Se la tua offerta e-mail ha l'opzione DKIM, puoi metterla in atto utilizzando la nostra guida "[Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)".|

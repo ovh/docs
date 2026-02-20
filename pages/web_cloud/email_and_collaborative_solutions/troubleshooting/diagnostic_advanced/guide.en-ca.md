@@ -61,7 +61,7 @@ Follow these steps to ensure that your relevant services are up and running:
 >>
 > **MX Plan email account**
 >>
->> Go to the `Web Cloud`{.action} section, click `Emails`{.action} (or `MX Plan`{.action} depending on your plan), then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the email account status in the `Blocked for SPAM` column.
+>> Go to the `Web Cloud`{.action} section, click `Emails`{.action} (or `MX Plan`{.action} depending on your plan), then select the domain name concerned. Click the `Emails`{.action} accounts tab. Check the email account status in the `Blocked due to SPAM` column.
 >>
 > **Exchange**
 >>
@@ -74,7 +74,7 @@ Follow these steps to ensure that your relevant services are up and running:
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue:
 
-1. From an Internet browser, log in to [webmail](/links/web/email) using the email address concerned.
+1. From an Internet browser, log in to the [webmail](/links/web/email) using the email address concerned.
 2. Check the configuration settings according to your email solution and the email client or application you are using:
 
 > [!tabs]
@@ -92,7 +92,7 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 
 /// details | I can't receive emails because my email address is full, I don't have any more space. What can I do?
 
-If you have signed up to [one of our OVHcloud email solutions](/links/web/emails) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
+If you have signed up to [one of our OVHcloud email solutions](/links/web/emails) and one of your email accounts is full, please read our guide "[Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
 
 ///
 
@@ -115,11 +115,11 @@ Here is how to change the password for an email address:
 > [!tabs]
 > **MX Plan email account**
 >>
->> For an **MX Plan** solution, please refer to our guide on [Changing a password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> For an **MX Plan** solution, please refer to our guide "[Changing a password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >>
 > **Exchange**
 >>
->> For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Exchange`{.action} in the **Microsoft** section, then select your platform. In the `Email accounts`{.action} tab, click the `...`{.action} button, then click `Modify`{.action} to change the password. <br> Check if two-factor authentication is enabled in our guide on [Configuring two-factor authentication on an Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange) account.
+>> For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Exchange`{.action} in the **Microsoft** section, then select your platform. In the `Email accounts`{.action} tab, click the `...`{.action} button, then click `Edit`{.action} to change the password. <br> Check if two-factor authentication is enabled in our guide "[Configuring two-factor authentication on an Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)" account.
 
 ///
 
@@ -134,13 +134,13 @@ You can check the various tasks that are currently in progress on <https://web-c
 
 /// details | Is the domain name pointing correctly to my email service? (**receiving**)
 
-Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide on [Adding an MX record to your domain name's configuration](/pages/web_cloud/domains/dns_zone_mx).
+Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide "[Adding an MX record to your domain name's configuration](/pages/web_cloud/domains/dns_zone_mx)".
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> To check your domain name's DNS configuration, regardless of its registrar, you can use the [Zone Master](https://zonemaster.net/) tool, using our documentation [Tutorial - Using Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
+> To check your domain name's DNS configuration, regardless of its registrar, you can use the [Zone Master](https://zonemaster.net/) tool, using our documentation "[Tutorial - Using Zonemaster](/pages/web_cloud/domains/dns_zonemaster)".
 
 ///
 
@@ -195,7 +195,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 >> |502|Command not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
 >> |503|Server encountered bad sequence of commands|This is usually due to an authentication problem, make sure you are authenticated on the SMTP server in terms of your email software configuration.|
 >> |504|Command parameter not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
->> |535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide [What to do if your account is blocked for spam](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) for more information.|
+>> |535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide "[What to do if your account is blocked for spam](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)" for more information.|
 >> |550|Requested action not performed: mailbox unavailable|The destination mail server could not verify the email address used. This is most often caused by an invalid destination email address, but can also mean that the destination email server has firewall or connectivity issues. Check the recipient's email address, and/or try again.|
 >> |550 5.7.1|Email rejected per policy reason|The destination email server rejected the sending email address for security policy reasons. There are many reasons for this, and they are usually detailed with the error code. In some cases, it can be an IP address in the transmission chain that is present in a reject list. To check the reputation of an IP address, you can test it, for example, on [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) or check the chain of transmission of an email from the email address concerned with [Mailtester](https://www.mail-tester.com/)|
 >> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|The mail was rejected because the sender's email service does not have SPF or DKIM configured on their domain name.<br><br>It is advisable to set up a priority SPF record, which is compatible with all email offers. Use our guide "[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)".<br><br>If your email offer has the DKIM option, you can put it in place using our guide "[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)".|
