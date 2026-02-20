@@ -39,7 +39,7 @@ Même si le principe de la présentation du numéro reste le même, la manipulat
 
 ### Configurer la présentation du numéro d'une ligne SIP <a name="sip"></a>
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero](images/display-incoming-call-step1.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
 1. Cliquez sur la ligne Trunk concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -88,7 +88,7 @@ La page qui s'affiche vous indique la configuration actuelle de la présentation
 
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
 1. Cliquez sur la ligne Trunk concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
 1. Cliquez sur la ligne Trunk concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 
@@ -136,7 +136,7 @@ La présentation d'un numéro externe depuis votre IPBX nécessite la validation
 
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
 1. Cliquez sur la ligne Trunk concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation d'un numéro externe`{.action}.
+1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation d'un numéro externe`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step3.png){.thumbnail}
 
@@ -154,7 +154,7 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Trunk.
 1. Cliquez sur la ligne Trunk concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
+1. Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Présentation du numéro`{.action}.
 
 ![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
 

@@ -82,7 +82,7 @@ Pour diverses raisons, l'authentification peut être refusée par le serveur et 
 
 Pour y accéder, suivez ces étapes :
 
-Positionnez-vous sur l'onglet `Assistance`{.action} puis cliquez sur le bouton `Consultation des notifications`{.action}.
+Dans l'onglet `Assistance`{.action}, cliquez sur le bouton `Consultation des notifications`{.action}.
 
 ![securiser-sip](images/restriction04.png){.thumbnail}
 

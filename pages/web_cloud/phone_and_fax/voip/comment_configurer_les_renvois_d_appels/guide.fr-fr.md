@@ -45,7 +45,7 @@ Poursuivez la lecture de cette documentation en fonction de la solution que vous
 
 ### Activer le verrouillage des appels sortants <a name="verrouillage"></a>
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Verrouillage des appels sortants`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Verrouillage des appels sortants`{.action}.
 
 ![gerer-appels-verrouillage](images/manage-calls-locking-step1.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce
 > Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)».
 >
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Renvoi d'appel`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Renvoi d'appel`{.action}.
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step1.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs li
 
 ### Activer le filtrage d'appels <a name="filtrage"></a>
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Filtrage d'appels`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Filtrage d'appels`{.action}.
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step1.png){.thumbnail}
 

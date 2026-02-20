@@ -201,7 +201,7 @@ Une fois le numéro spécial à porter renseigné (au format international) dans
 
 ### 3 - Suivre une demande de portabilité <a name="suivre-demande"></a>
 
-Positionnez-vous sur l'onglet `Tableau de bord`{.action} et cliquez sur `Consulter mes portabilités en cours`{.action}.
+Dans l'onglet `Tableau de bord`{.action}, cliquez sur `Consulter mes portabilités en cours`{.action}.
 
 ![numberport](images/porting-number-step8-2021.png){.thumbnail}
 

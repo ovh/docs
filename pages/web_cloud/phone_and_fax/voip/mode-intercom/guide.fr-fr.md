@@ -32,7 +32,7 @@ Votre ligne téléphonique vous permet de recevoir et d'émettre des appels. Un 
 
 ### Étape 1 : accéder à la gestion du mode intercom
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action}, puis cliquez sur `Double appel et Intercom`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Double appel et Intercom`{.action}.
  
 ![modeintercom](images/mode-intercom-step1.png){.thumbnail}
 

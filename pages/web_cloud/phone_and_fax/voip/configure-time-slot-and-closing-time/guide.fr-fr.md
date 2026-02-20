@@ -45,7 +45,7 @@ Poursuivez la lecture de cette documentation en fonction de la configuration que
 
 #### Étape 1 : accéder à la gestion des plages horaires
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les plages horaires`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Gérer les plages horaires`{.action}.
 
 ![gerer-plages-horaires](images/manage-time-slot-step1.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 > Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires). Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s'appliquent.
 >
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
 ![gerer-fermetures-exceptionnelles](images/manage-closing-time-step1.png){.thumbnail}
 

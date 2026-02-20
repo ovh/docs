@@ -81,7 +81,7 @@ Si vous n'avez pas défini de mot de passe d'accès à distance, positionnez-vou
 
 #### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
 
-Positionnez-vous sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
 
-Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Configuration du répondeur`{.action}. 
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
 
@@ -136,7 +136,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
-Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Choix de la messagerie par défaut`{.action}.
+Dans l'onglet `Répondeur`{.action}, cliquez sur `Choix de la messagerie par défaut`{.action}.
 
 ![repondeur](images/voicemail-step1.png){.thumbnail}
 

@@ -45,7 +45,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >>
->> 1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
+>> Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
 >>
 >> ![modeintercom](images/click2call-step1.png){.thumbnail}
 >>

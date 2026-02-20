@@ -39,7 +39,7 @@ Vous pouvez créer des numéros abrégés pour une seule ligne ou partager ces n
 - **Pour accéder à la gestion des numéros abrégés d'une seule ligne** :
 
 Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.<br>
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Numéros abrégés`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Numéros abrégés`{.action}.
 
 ![configuration numeros abrégés](images/configurer-numeros-abreges-step1-2022.png){.thumbnail}
 

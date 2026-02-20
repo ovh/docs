@@ -31,7 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ### Étape 1 : accéder à la gestion du mot de passe de la ligne SIP
 
-Positionnez-vous sur l'onglet `Gestion`{.action}, puis cliquez sur le bouton `Mot de passe SIP`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur le bouton `Mot de passe SIP`{.action}.
 
 > [!primary]
 >

@@ -85,7 +85,7 @@ Pour cela, vous devrez gérer le filtrage d'appels depuis votre espace client OV
 
 Maintenant que vous avez appris à sécuriser votre ligne SIP OVHcloud ou que vous venez de le faire, il est intéressant de savoir où suivre en temps réel la consommation inhérente à votre ligne.
 
-Positionnez-vous sur l'onglet `Consommation`{.action} et cliquez sur `Appels émis`{.action}.
+Dans l'onglet `Consommation`{.action}, cliquez sur `Appels émis`{.action}.
 
 ![securisersip](images/secure-sip-line-step1.png){.thumbnail}
 

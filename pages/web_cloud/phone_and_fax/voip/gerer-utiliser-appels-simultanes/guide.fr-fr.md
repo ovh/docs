@@ -32,7 +32,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 ### Gérer les appels simultanés
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} puis cliquez sur `Appels simultanés`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appels simultanés`{.action}.
 
 ![appels-simultanes](images/simultaneous-call-step1.png){.thumbnail}
 
