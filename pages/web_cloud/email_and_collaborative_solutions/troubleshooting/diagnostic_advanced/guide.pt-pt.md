@@ -34,7 +34,7 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 ## Requisitos
 
 - Dispor de uma oferta **MX Plan**, **E-mail Pro**, **Exchange** ou **Zimbra**.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager). 
 
 ## Instruções
 
@@ -44,16 +44,16 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 
 /// details | A minha oferta de e-mail e/ou as minhas contas estão ativas? (**envio** e **receção**)
 
-Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
+Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu nome de domínio também deve estar ativo.
 
 Comece por verificar que está atualizado nos [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e nas [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos seus serviços.
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 
 > [!tabs]
-> **Domínio**
+> **Nome de domínio**
 >>
->> Aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
+>> Aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e selecione o seu nome de domínio. Se o nome de domínio expirar, isto ser-lhe-á indicado no topo da página.
 >>
 > **Alojamento Web**
 >>
@@ -61,7 +61,7 @@ Eis como verificar que os seus serviços estão corretamente operacionais:
 >>
 > **Conta de e-mail MX Plan**
 >>
->> Aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} (ou `MX Plan`{.action} conforme a sua oferta) e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Bloqueado para SPAM`.
+>> Aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} (ou `MX Plan`{.action} conforme a sua oferta) e selecione o nome de domínio em causa. Clique no separador `E-mails`{.action}. Verifique o estado da conta de e-mail na coluna `Bloqueado para SPAM`.
 >>
 > **E-mail Pro**
 >>
@@ -87,19 +87,19 @@ Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thu
 > [!tabs]
 > **Conta de e-mail MX Plan**
 >>
->> Para uma oferta **MX Plan**, aceda à [página dos nossos guias MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no computador` ou `Configurar uma aplicação de e-mail num smartphone ou tablet`, em função do dispositivo utilizado.
+>> Para uma oferta **MX Plan**, aceda à [página dos nossos guias MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no seu computador` ou `Configurar uma aplicação de e-mail no seu smartphone`, em função do dispositivo utilizado.
 >>
 > **E-mail Pro**
 >>
->> Para uma oferta **E-mail Pro**, aceda à [página dos nossos guias E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no computador` ou `Configurar uma aplicação de e-mail num smartphone ou tablet`, em função do dispositivo utilizado.
+>> Para uma oferta **E-mail Pro**, aceda à [página dos nossos guias E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no seu computador` ou `Configurar uma aplicação de e-mail no seu smartphone`, em função do dispositivo utilizado.
 >>
 > **Exchange**
 >>
->> Para uma oferta **Exchange**, aceda à [página dos nossos guias Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no computador` ou `Configurar uma aplicação de e-mail num smartphone ou tablet`, em função do dispositivo utilizado.
+>> Para uma oferta **Exchange**, aceda à [página dos nossos guias Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no seu computador` ou `Configurar uma aplicação de e-mail no seu smartphone`, em função do dispositivo utilizado.
 >>
 > **Zimbra**
 >>
->> Para uma oferta **Zimbra**, aceda à [página dos nossos guias Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no computador` ou `Configurar uma aplicação de e-mail num smartphone ou tablet`, em função do dispositivo utilizado.
+>> Para uma oferta **Zimbra**, aceda à [página dos nossos guias Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) e verifique a configuração do seu software de e-mail através dos guias disponíveis na secção `Configurar uma aplicação de e-mail no seu computador` ou `Configurar uma aplicação de e-mail no seu smartphone`, em função do dispositivo utilizado.
 
 ///
 
@@ -128,7 +128,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 > [!tabs]
 > **Conta de e-mail MX Plan**
 >>
->> Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Para uma oferta **MX Plan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >>
 > **E-mail Pro**
 >>
@@ -148,22 +148,22 @@ Como alterar a palavra-passe de um endereço de e-mail:
 
 Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcloud.com/>.
 
-- Para **MXplan**, verifique na secção `E-mails`
+- Para **MX Plan**, verifique na secção `E-mails`
 - Para o **E-mail Pro**, dirija-se à secção `Microsoft`
 - Para **Exchange**, dirija-se às secções `Hosted Microsoft`, `Private Microsoft` e `Trusted Microsoft` em função da sua oferta.
 - Para **Zimbra**, dirija-se à secção `Zimbra`
 
 ///
 
-/// details | O apontamento do domínio para o meu serviço de e-mail está correto? (**receção**)
+/// details | O apontamento do nome de domínio para o meu serviço de e-mail está correto? (**receção**)
 
-Verifique que o seu domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do domínio](/pages/web_cloud/domains/dns_zone_mx).
+Verifique que o seu nome de domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do nome de domínio](/pages/web_cloud/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Para verificar a configuração DNS do seu domínio, independentemente do seu agente de registo, pode utilizar a ferramenta [Zone Master](https://zonemaster.net/), utilizando a nossa documentação [Tutorial - Utilização do Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Para verificar a configuração DNS do seu nome de domínio, independentemente do seu agente de registo, pode utilizar a ferramenta [Zone Master](https://zonemaster.net/), utilizando a nossa documentação [Tutorial - Utilização do Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
 ///
 
@@ -199,11 +199,11 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 >> |Códigos de resposta|Detalhes|Ações|
 >> |---|---|---|
 >> |420|Prazo ultrapassado, problema de ligação|Esta mensagem de erro é devolvida unicamente pelos servidores mail GroupWise. Contacte o administrador do servidor de e-mail de destino|
->> |421|Serviço não disponível, canal de transmissão em curso de encerramento|Proveniência do erro indeterminado, certifique-se de que o envio para outro domínio funciona. Em caso afirmativo, queira tentar novamente o envio inicial mais tarde|
+>> |421|Serviço não disponível, canal de transmissão em curso de encerramento|Proveniência do erro indeterminado, certifique-se de que o envio para outro nome de domínio funciona. Em caso afirmativo, queira tentar novamente o envio inicial mais tarde|
 >> |432|Receção do e-mail no servidor Exchange parado|Esta mensagem de erro é devolvida unicamente pelos servidores de e-mail Microsoft Exchange. Contacte o administrador do servidor de e-mail de destino|
 >> |449|Erro de roteamento|Esta mensagem de erro é retornada unicamente pelos servidores de e-mail Microsoft Exchange. Microsoft recomenda que efetue um diagnóstico com a sua ferramenta WinRoute|
->> |450|Ação de mensagens pedida não efetuada: caixa de email indisponível (por exemplo, caixa de email ocupada ou temporariamente bloqueada por razões de segurança ou de blacklistagem)|Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://check.spamhaus.org/)) e verifique se o seu e-mail não contém palavras relacionadas com SPAM.|
->> |451|Ação requerida abandonada: Erro de tratamento local|Isto pode dever-se a uma sobrecarga momentânea ou à verificação do registo SPF do domínio emissor incorreto. Refira-se à mensagem adicional fornecida pelo servidor, ou contacte o administrador do servidor se persistir|
+>> |450|Ação de mensagens pedida não efetuada: caixa de email indisponível (por exemplo, caixa de email ocupada ou temporariamente bloqueada por razões de segurança ou de blacklistagem)|Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([Spamhaus](https://check.spamhaus.org/)) e verifique se o seu e-mail não contém palavras relacionadas com SPAM.|
+>> |451|Ação requerida abandonada: Erro de tratamento local|Isto pode dever-se a uma sobrecarga momentânea ou à verificação do registo SPF do nome de domínio emissor incorreto. Refira-se à mensagem adicional fornecida pelo servidor, ou contacte o administrador do servidor se persistir|
 >> |452|Ação solicitada não efetuada: sistema de armazenamento insuficiente|O seu servidor de e-mail está "sobrecarregado". Isto também pode ser causado por demasiadas mensagens que tentam ser enviadas ao mesmo tempo. Verifique a sua caixa de envio e tente novamente|
 >> |455|Servidor incapaz de receber os parâmetros|Aguarde algum tempo e tente novamente. Em caso de falha, contacte o administrador do servidor de e-mail do destinatário|
 >>
@@ -225,7 +225,7 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 >> |551|Utilizador não local|Esta é geralmente utilizada como uma estratégia de prevenção contra o spam. Indica-se que o envio de correio não é autorizado, por qualquer razão, a transmitir a sua mensagem para outro servidor que não o seu. Contacte o seu fornecedor de serviço|
 >> |552|Serviço de mensagens pedido interrompido: espaço de armazenamento ultrapassado|O utilizador que tentou contactar já não tem espaço disponível para receber mensagens. Infelizmente, a única solução é contactar o destinatário através de outro método|
 >> |553|Ação solicitada não efetuada: endereço de e-mail não autorizado|Esta situação é geralmente causada por um endereço de e-mail de destino incorreto. Verifique que o endereço de e-mail está correto|
->> |554|Transação falhada, "Nenhum serviço SMTP aqui"|Trata-se geralmente de um problema de blacklist. Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://check.spamhaus.org/))|
+>> |554|Transação falhada, "Nenhum serviço SMTP aqui"|Trata-se geralmente de um problema de blacklist. Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([Spamhaus](https://check.spamhaus.org/))|
 >> |555|MAIL FROM / RCPT TO, parâmetros não reconhecidos ou não utilizados|O servidor SMTP de saída não regista corretamente o endereço de e-mail utilizado nos seus parâmetros "De" ou "A". Verifique que os endereços de e-mail indicados estão corretos e verifique que não ultrapassou o limite definido pela OVHcloud: 200 emails /hora /conta e 300 emails /hora /ip|
 
 ///

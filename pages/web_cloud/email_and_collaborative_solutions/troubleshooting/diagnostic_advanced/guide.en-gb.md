@@ -87,19 +87,19 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 > [!tabs]
 > **MX Plan email account**
 >>
->> For an **MX Plan** solution, go to [the MX Plan guides page](/products/web-cloud-email-collaborative-solutions-mx-plan) and check your email client configuration using the guides available in the `Configure an email application on your computer` or `Configure an email application on your smartphone or tablet` section, depending on the device you are using.
+>> For an **MX Plan** solution, go to [the MX Plan guides page](/products/web-cloud-email-collaborative-solutions-mx-plan) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 >>
 > **Email Pro**
 >>
->> For an **Email Pro** solution, go to [the Email Pro guides page](/products/web-cloud-email-collaborative-solutions-email-pro) and check your email client configuration using the guides available in the `Configure an email application on your computer` or `Configure an email application on your smartphone or tablet` section, depending on the device you are using.
+>> For an **Email Pro** solution, go to [the Email Pro guides page](/products/web-cloud-email-collaborative-solutions-email-pro) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 >>
 > **Exchange**
 >>
->> For an **Exchange** solution, go to [the Microsoft Exchange guides page](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and check your email client configuration using the guides available in the `Configure an email application on your computer` or `Configure an email application on your smartphone or tablet` section, depending on the device you are using.
+>> For an **Exchange** solution, go to [the Microsoft Exchange guides page](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 >>
 > **Zimbra**
 >>
->> For a **Zimbra** solution, go to [the Zimbra guides page](/products/web-cloud-email-collaborative-solutions-zimbra) and check your email client configuration using the guides available in the `Configure an email application on your computer` or `Configure an email application on your smartphone or tablet` section, depending on the device you are using.
+>> For a **Zimbra** solution, go to [the Zimbra guides page](/products/web-cloud-email-collaborative-solutions-zimbra) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 
 ///
 
@@ -163,7 +163,7 @@ Check that your domain name points correctly to the OVHcloud email servers. To d
 
 > [!primary]
 >
-> To check your domain name's DNS configuration, regardless of its registrar, you can use the [Zone Master](https://zonemaster.net/) tool, using our documentation [Tutorial - Using Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> To check your domain name's DNS configuration, regardless of its registrar, you can use the [Zone Master](https://zonemaster.net/) tool, using our documentation [Tutorial - Using Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ///
 
@@ -202,7 +202,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 >> |421|Service not available, transmission channel being closed|Undetermined origin error, make sure that sending to another domain works. If yes, please try sending the original email again later.|
 >> |432|The recipient's Exchange Server incoming mail queue has been stopped|This error message is returned only by Microsoft Exchange mail servers. Contact the destination mail server administrator.|
 >> |449|A routing error|This error message is returned only by Microsoft Exchange mail servers. Microsoft recommends that you run a diagnostic with their WinRoute tool.|
->> |450|Requested action not taken – The user's mailbox is unavailable (for example, mailbox busy or temporarily blocked for security or blacklisting reasons).|Check if the IP address of the mail server is blacklisted ([SpamHaus](https://check.spamhaus.org/)), and also check if your mail contains words referring to SPAM.|
+>> |450|Requested action not taken – The user's mailbox is unavailable (for example, mailbox busy or temporarily blocked for security or blacklisting reasons).|Check if the IP address of the mail server is blacklisted ([Spamhaus](https://check.spamhaus.org/)), and also check if your mail contains words referring to SPAM.|
 >> |451|Requested action aborted – Local error in processing|This may be due to a momentary overload, or an incorrect SPF check of the issuing domain. Refer to the additional message provided by the server, or contact the server administrator if this persists.|
 >> |452|The command has been aborted because the server has insufficient system storage|The mail server is 'overloaded'. This could also be caused by too many messages trying to be sent at once. Please check your outbox and try again.|
 >> |455|Server unable to deal with the command at this time.|Wait a while, then try again. If this fails, contact the recipient's email server administrator.|
@@ -225,7 +225,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 >> |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 >> |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|
 >> |553|Requested action not taken – Mailbox name invalid|This is usually caused by an incorrect destination email address. Please check that the email address in question is correct.|
->> |554|Transaction failed, "No SMTP service here"|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://check.spamhaus.org/)).|
+>> |554|Transaction failed, "No SMTP service here"|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([Spamhaus](https://check.spamhaus.org/)).|
 >> |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|The outgoing SMTP server cannot recognise the email address used in either your `From` or `To` settings. Please check that the email addresses entered are correct, and also check that you have not exceeded the limit set by OVHcloud: 200 mails/hour/account and 300 mails/hour/ip.|
 
 ///

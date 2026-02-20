@@ -44,16 +44,16 @@ details[open]>summary::before {
 
 /// details | ¿Mi solución de correo y/o mis cuentas están activas? (**envío** y **recepción**)
 
-Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el dominio también debe estar activo.
+Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el nombre de dominio también debe estar activo.
 
 En primer lugar, compruebe que está actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus servicios.
 
 Compruebe que los servicios están correctamente operativos:
 
 > [!tabs]
-> **Dominio**
+> **Nombre de dominio**
 >>
->> Acceda a la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione su dominio. Si su dominio ha caducado, se le indicará en la parte superior de la página.
+>> Acceda a la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione su nombre de dominio. Si su nombre de dominio ha caducado, se le indicará en la parte superior de la página.
 >>
 > **Alojamiento web**
 >>
@@ -61,7 +61,7 @@ Compruebe que los servicios están correctamente operativos:
 >>
 > **Cuenta de correo MX Plan**
 >>
->> Acceda a la sección `Web Cloud`{.action}, haga clic en `Correo electrónico`{.action} (o `MX Plan`{.action} según su solución) y seleccione el dominio correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Bloqueado por SPAM`.
+>> Acceda a la sección `Web Cloud`{.action}, haga clic en `Correo electrónico`{.action} (o `MX Plan`{.action} según su solución) y seleccione el nombre de dominio correspondiente. Haga clic en la pestaña `Correo electrónico`{.action}. Compruebe el estado de la cuenta de correo en la columna `Bloqueado por spam`.
 >>
 > **Email Pro**
 >>
@@ -87,19 +87,19 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 > [!tabs]
 > **Cuenta de correo MX Plan**
 >>
->> Para un servicio **MX Plan**, acceda a [la página de nuestras guías MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo en su ordenador` o `Configurar una aplicación de correo en su smartphone o tableta`, según el dispositivo que utilice.
+>> Para un servicio **MX Plan**, acceda a [la página de nuestras guías MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo electrónico en el ordenador` o `Configurar una aplicación de correo electrónico en el móvil`, según el dispositivo que utilice.
 >>
 > **Email Pro**
 >>
->> Para un servicio **Email Pro**, acceda a [la página de nuestras guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo en su ordenador` o `Configurar una aplicación de correo en su smartphone o tableta`, según el dispositivo que utilice.
+>> Para un servicio **Email Pro**, acceda a [la página de nuestras guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo electrónico en el ordenador` o `Configurar una aplicación de correo electrónico en el móvil`, según el dispositivo que utilice.
 >>
 > **Exchange**
 >>
->> Para un servicio **Exchange**, acceda a [la página de nuestras guías Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo en su ordenador` o `Configurar una aplicación de correo en su smartphone o tableta`, según el dispositivo que utilice.
+>> Para un servicio **Exchange**, acceda a [la página de nuestras guías Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo electrónico en el ordenador` o `Configurar una aplicación de correo electrónico en el móvil`, según el dispositivo que utilice.
 >>
 > **Zimbra**
 >>
->> Para un servicio **Zimbra**, acceda a [la página de nuestras guías Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo en su ordenador` o `Configurar una aplicación de correo en su smartphone o tableta`, según el dispositivo que utilice.
+>> Para un servicio **Zimbra**, acceda a [la página de nuestras guías Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) y compruebe la configuración de su cliente de correo mediante las guías disponibles en la sección `Configurar una aplicación de correo electrónico en el ordenador` o `Configurar una aplicación de correo electrónico en el móvil`, según el dispositivo que utilice.
 
 ///
 
@@ -128,19 +128,19 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 > [!tabs]
 > **Cuenta de correo MX Plan**
 >>
->> Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Para un servicio **MX Plan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >>
 > **Email Pro**
 >>
->> Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
+>> Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Editar`{.action} para cambiar la contraseña.
 >>
 > **Exchange**
 >>
->> Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Exchange`{.action} en la sección **Microsoft** y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Exchange`{.action} en la sección **Microsoft** y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Editar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
 >>
 > **Zimbra**
 >>
->> Para un servicio **Zimbra**, acceda a la sección `Web Cloud`{.action} y haga clic en `Zimbra Mail`{.action}. En la pestaña `Cuenta de correo`{.action}, haga clic en el botón `⋮`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
+>> Para un servicio **Zimbra**, acceda a la sección `Web Cloud`{.action} y haga clic en `Zimbra Mail`{.action}. En la pestaña `Cuenta de correo`{.action}, haga clic en el botón `⋮`{.action} y luego en `Modificar`{.action} para cambiar la contraseña.
 
 ///
 
@@ -155,15 +155,15 @@ Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcl
 
 ///
 
-/// details | ¿Es correcto apuntar el dominio a mi servicio de correo? (**recepción**)
+/// details | ¿Es correcto apuntar el nombre de dominio a mi servicio de correo? (**recepción**)
 
-Compruebe que el dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
+Compruebe que el nombre de dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del nombre de dominio](/pages/web_cloud/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Para comprobar la configuración DNS de su dominio, independientemente de su registrador, puede utilizar la herramienta [Zone Master](https://zonemaster.net/), utilizando nuestra documentación [Tutorial - Uso de Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Para comprobar la configuración DNS de su nombre de dominio, independientemente de su registrador, puede utilizar la herramienta [Zone Master](https://zonemaster.net/), utilizando nuestra documentación [Tutorial - Uso de Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ///
 
@@ -199,11 +199,11 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 >> |Códigos de respuesta|Detalles|Acciones|
 >> |---|---|---|
 >> |420|Tiempo excedido, problema de conexión|Este mensaje de error solo es devuelto por los servidores mail GroupWise. Contacte con el administrador del servidor de correo de destino|
->> |421|Servicio no disponible, canal de transmisión en curso de cierre|Procedente del error indeterminado, asegúrese de que el envío a otro dominio funciona. Si es así, vuelva a intentarlo más tarde|
+>> |421|Servicio no disponible, canal de transmisión en curso de cierre|Procedente del error indeterminado, asegúrese de que el envío a otro nombre de dominio funciona. Si es así, vuelva a intentarlo más tarde|
 >> |432|Recepción del email en el servidor Exchange detenido|Este mensaje de error solo es devuelto por los servidores de correo Microsoft Exchange. Contacte con el administrador del servidor de correo de destino|
 >> |449|Un error de enrutado|Este mensaje de error solo es devuelto por los servidores de correo Microsoft Exchange. Microsoft recomienda realizar un diagnóstico con su herramienta WinRoute|
->> |450|Petición de acción de correo no efectuada: buzón de correo no disponible (por ejemplo, buzón de correo ocupado o temporalmente bloqueado por razones de seguridad o de blacklistage)|Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/)) y si su email no incluye palabras que se refieran al spam.|
->> |451|Se ha interrumpido la acción necesaria: Error de procesamiento local|Esto puede deberse a una sobrecarga momentánea, o a una verificación del SPF del dominio emisor incorrecta. Consulte el mensaje complementario que le haya proporcionado el servidor o contacte con el administrador del servidor si persiste|
+>> |450|Petición de acción de correo no efectuada: buzón de correo no disponible (por ejemplo, buzón de correo ocupado o temporalmente bloqueado por razones de seguridad o de blacklistage)|Compruebe si su dirección IP del servidor de correo no es blacklistada ([Spamhaus](https://check.spamhaus.org/)) y si su email no incluye palabras que se refieran al spam.|
+>> |451|Se ha interrumpido la acción necesaria: Error de procesamiento local|Esto puede deberse a una sobrecarga momentánea, o a una verificación del SPF del nombre de dominio emisor incorrecta. Consulte el mensaje complementario que le haya proporcionado el servidor o contacte con el administrador del servidor si persiste|
 >> |452|Acción solicitada no realizada: sistema de almacenamiento insuficiente|Su servidor de correo está "sobrecargado". Esto también puede deberse a un gran número de mensajes que intentan ser enviados a la vez. Por favor, compruebe su bandeja de salida e inténtelo de nuevo|
 >> |455|Servidor incapaz de recibir la configuración|Espere un tiempo y vuelva a intentarlo. En caso de fallo, contacte con el administrador del servidor de correo del destinatario|
 >>
@@ -225,7 +225,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 >> |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 >> |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|
 >> |553|Acción solicitada no realizada: dirección de correo electrónico no autorizada|Esto suele deberse a una dirección de correo electrónico de destino incorrecta. Por favor, compruebe que la dirección de correo electrónico es correcta.|
->> |554|Transacción fallida, "Aquí no hay servicios SMTP"|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/))|
+>> |554|Transacción fallida, "Aquí no hay servicios SMTP"|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([Spamhaus](https://check.spamhaus.org/))|
 >> |555|MAIL FROM / RCPT TO, parámetros no reconocidos o no implementados|El servidor SMTP saliente no guarda correctamente la dirección de correo electrónico utilizada en los parámetros "De" o "A". Por favor, compruebe que las direcciones de correo electrónico indicadas son correctas y también que no ha superado el límite establecido por OVHcloud: 200 emails /hora por cuenta y 300 emails /hora/ip|
 
 ///

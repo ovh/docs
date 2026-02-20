@@ -164,7 +164,7 @@ Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail 
 
 > [!primary]
 >
-> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement, vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation [Tutoriel - Utilisation de Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement, vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation [Tutoriel - Utilisation de Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ///
 

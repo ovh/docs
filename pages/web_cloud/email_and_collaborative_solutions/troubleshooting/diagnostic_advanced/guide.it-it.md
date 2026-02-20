@@ -44,16 +44,16 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 
 /// details | Il tuo servizio di posta elettronica e/o i tuoi account sono attivi? (**invio** e **ricezione**)
 
-Per una corretta gestione delle email è necessario disporre di un'offerta attiva. Se la tua offerta email è associata a un'offerta di hosting, verifica che non sia scaduta. È possibile verificare questa informazione direttamente dallo Spazio Cliente. Allo stesso modo, anche il tuo dominio deve essere attivo.
+Per una corretta gestione delle email è necessario disporre di un'offerta attiva. Se la tua offerta email è associata a un'offerta di hosting, verifica che non sia scaduta. È possibile verificare questa informazione direttamente dallo Spazio Cliente. Allo stesso modo, anche il tuo nome di dominio deve essere attivo.
 
 Verifica di essere aggiornato sui [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e sui [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei tuoi servizi.
 
 Come verificare che i tuoi servizi siano operativi:
 
 > [!tabs]
-> **Dominio**
+> **Nome di dominio**
 >>
->> Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} e seleziona il tuo dominio. Se il tuo dominio è scaduto, ti verrà indicato in alto.
+>> Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} e seleziona il tuo nome di dominio. Se il tuo nome di dominio è scaduto, ti verrà indicato in alto.
 >>
 > **Hosting Web**
 >>
@@ -61,7 +61,7 @@ Come verificare che i tuoi servizi siano operativi:
 >>
 > **Account email MX Plan**
 >>
->> Vai alla sezione `Web Cloud`{.action}, clicca su `Email`{.action} (o `MX Plan`{.action} a seconda della tua offerta) e seleziona il dominio interessato. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Bloccato per SPAM`.
+>> Vai alla sezione `Web Cloud`{.action}, clicca su `Email`{.action} (o `MX Plan`{.action} a seconda della tua offerta) e seleziona il nome di dominio interessato. Clicca sulla scheda `Email`{.action}. Verifica lo stato dell'account email nella colonna `Bloccato per SPAM`.
 >>
 > **Email Pro**
 >>
@@ -87,19 +87,19 @@ Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbi
 > [!tabs]
 > **Account email MX Plan**
 >>
->> Per un'offerta **MX Plan**, vai alla [pagina delle nostre guide MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configurare un'applicazione email sul computer` o `Configurare un'applicazione email su smartphone o tablet`, a seconda del dispositivo utilizzato.
+>> Per un'offerta **MX Plan**, vai alla [pagina delle nostre guide MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configura un'applicazione di posta elettronica sul tuo computer` o `Installazione di un'applicazione di posta elettronica sul telefono cellulare`, a seconda del dispositivo utilizzato.
 >>
 > **Email Pro**
 >>
->> Per un'offerta **Email Pro**, vai alla [pagina delle nostre guide Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configurare un'applicazione email sul computer` o `Configurare un'applicazione email su smartphone o tablet`, a seconda del dispositivo utilizzato.
+>> Per un'offerta **Email Pro**, vai alla [pagina delle nostre guide Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configura un'applicazione di posta elettronica sul tuo computer` o `Installazione di un'applicazione di posta elettronica sul telefono cellulare`, a seconda del dispositivo utilizzato.
 >>
 > **Exchange**
 >>
->> Per un'offerta **Exchange**, vai alla [pagina delle nostre guide Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configurare un'applicazione email sul computer` o `Configurare un'applicazione email su smartphone o tablet`, a seconda del dispositivo utilizzato.
+>> Per un'offerta **Exchange**, vai alla [pagina delle nostre guide Microsoft Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configura un'applicazione di posta elettronica sul tuo computer` o `Installazione di un'applicazione di posta elettronica sul telefono cellulare`, a seconda del dispositivo utilizzato.
 >>
 > **Zimbra**
 >>
->> Per un'offerta **Zimbra**, vai alla [pagina delle nostre guide Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configurare un'applicazione email sul computer` o `Configurare un'applicazione email su smartphone o tablet`, a seconda del dispositivo utilizzato.
+>> Per un'offerta **Zimbra**, vai alla [pagina delle nostre guide Zimbra](/products/web-cloud-email-collaborative-solutions-zimbra) e verifica la configurazione del tuo client di posta utilizzando le guide disponibili nella sezione `Configura un'applicazione di posta elettronica sul tuo computer` o `Installazione di un'applicazione di posta elettronica sul telefono cellulare`, a seconda del dispositivo utilizzato.
 
 ///
 
@@ -140,7 +140,7 @@ Come modificare la password di un indirizzo email:
 >>
 > **Zimbra**
 >>
->> Per un'offerta **Zimbra**, accedi alla sezione `Web Cloud`{.action} e clicca su `Zimbra Mail`{.action}. Nella scheda `Account email`{.action}, clicca sul pulsante `⋮`{.action} e clicca su `Modifica`{.action} per modificare la password.
+>> Per un'offerta **Zimbra**, accedi alla sezione `Web Cloud`{.action} e clicca su `Zimbra Mail`{.action}. Nella scheda `Account email`{.action}, clicca sul pulsante `⋮`{.action} e clicca su `Modificare`{.action} per modificare la password.
 
 ///
 
@@ -155,15 +155,15 @@ Come modificare la password di un indirizzo email:
 
 ///
 
-/// details | Il puntamento del dominio verso il tuo servizio di posta è corretto? (**ricezione**)
+/// details | Il puntamento del nome di dominio verso il tuo servizio di posta è corretto? (**ricezione**)
 
-Verifica che il tuo dominio punti correttamente verso i server di posta OVHcloud. Per fare ciò, nella tua zona DNS devono essere configurati record di tipo MX. <br>Consulta la nostra guida [Aggiungere un record MX alla configurazione del dominio](/pages/web_cloud/domains/dns_zone_mx).
+Verifica che il tuo nome di dominio punti correttamente verso i server di posta OVHcloud. Per fare ciò, nella tua zona DNS devono essere configurati record di tipo MX. <br>Consulta la nostra guida [Aggiungere un record MX alla configurazione del nome di dominio](/pages/web_cloud/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Per verificare la configurazione DNS del tuo dominio, indipendentemente dal suo registrar, puoi utilizzare lo strumento [Zone Master](https://zonemaster.net/), utilizzando la nostra documentazione [Tutorial - Utilizzo di Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Per verificare la configurazione DNS del tuo nome di dominio, indipendentemente dal suo registrar, puoi utilizzare lo strumento [Zone Master](https://zonemaster.net/), utilizzando la nostra documentazione [Tutorial - Utilizzo di Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
 ///
 
@@ -199,11 +199,11 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 >> |Codici di risposta|Descrizione|Azione|
 >> |---|---|---|
 >> |420|Tempo superato, problema di connessione|Questo messaggio di errore viene restituito solo dai server mail GroupWise. Contatta l'amministratore del server di posta di destinazione|
->> |421|Servizio non disponibile, canale di trasmissione in corso di chiusura|Provenienza dall'errore indefinito, assicurati che l'invio verso un altro dominio funzioni correttamente. In caso affermativo, riprova l'invio iniziale più tardi|
+>> |421|Servizio non disponibile, canale di trasmissione in corso di chiusura|Provenienza dall'errore indefinito, assicurati che l'invio verso un altro nome di dominio funzioni correttamente. In caso affermativo, riprova l'invio iniziale più tardi|
 >> |432|Ricezione dell'email sul server Exchange bloccato|Questo messaggio di errore viene restituito solo dai server mail Microsoft Exchange. Contatta l'amministratore del server di posta di destinazione|
 >> |449|Errore di routing|Questo messaggio di errore viene restituito solo dai server mail Microsoft Exchange. Microsoft consiglia di effettuare una diagnostica con il loro tool WinRoute|
->> |450|Azione di messaggeria richiesta non effettuata: casella email non disponibile (ad esempio, una casella email occupata o temporaneamente bloccata per motivi di sicurezza o per ragioni di blacklist)|Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/)) e verifica che la tua email non contenga parole relative allo SPAM.|
->> |451|Azione richiesta abbandonata: Errore di trattamento locale|Ciò può essere dovuto a un sovraccarico temporaneo o a una verifica del record SPF del dominio di emissione non corretto. Fai riferimento al messaggio aggiuntivo fornito dal server o contatta l'amministratore del server se questo persiste|
+>> |450|Azione di messaggeria richiesta non effettuata: casella email non disponibile (ad esempio, una casella email occupata o temporaneamente bloccata per motivi di sicurezza o per ragioni di blacklist)|Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([Spamhaus](https://check.spamhaus.org/)) e verifica che la tua email non contenga parole relative allo SPAM.|
+>> |451|Azione richiesta abbandonata: Errore di trattamento locale|Ciò può essere dovuto a un sovraccarico temporaneo o a una verifica del record SPF del nome di dominio di emissione non corretto. Fai riferimento al messaggio aggiuntivo fornito dal server o contatta l'amministratore del server se questo persiste|
 >> |452|Azione richiesta non effettuata: sistema di archiviazione insufficiente|Il tuo server di posta è "sovraccarico". Ciò potrebbe essere causato anche da troppi messaggi che cercano di essere inviati contemporaneamente. Verifica la tua casella di posta e riprova|
 >> |455|Server incapace di ricevere le impostazioni|Attendi qualche tempo e prova a riprovare. In caso di malfunzionamento, contatta l'amministratore del server di posta del destinatario|
 >>
@@ -225,7 +225,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 >> |551|Utenti non locali|Questo viene generalmente utilizzato come strategia di prevenzione contro lo spam. Ti ricordiamo che il corriere di posta non è autorizzato per alcun motivo a trasferire il tuo messaggio verso un server diverso dal tuo. Contatta il tuo provider di servizi|
 >> |552|Azione di messaggistica richiesta interrotta: spazio di storage superato|L'utente che hai cercato di contattare non ha più spazio disponibile per ricevere messaggi. Purtroppo, l'unica soluzione è contattare il destinatario con un altro metodo|
 >> |553|Azione richiesta non effettuata: indirizzo email non autorizzato|La causa principale di questa operazione è in genere un indirizzo email di destinazione non corretto. Verifica che l'indirizzo email in questione sia corretto|
->> |554|Operazione fallita, "Nessun servizio SMTP qui"|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/))|
+>> |554|Operazione fallita, "Nessun servizio SMTP qui"|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([Spamhaus](https://check.spamhaus.org/))|
 >> |555|MAIL FROM / RCPT TO, parametri non riconosciuti o non attuati|Il server SMTP in uscita non registra correttamente l'indirizzo email utilizzato nei parametri "Da" o "A". Verifica la correttezza degli indirizzi email indicati e verifica che non sia stato superato il limite definito da OVHcloud: 200 email/ora/account e 300 email/ora/ip|
 
 ///

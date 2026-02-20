@@ -87,19 +87,19 @@ Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird 
 > [!tabs]
 > **E-Mail-Account MX Plan**
 >>
->> Überprüfen Sie bei einem **MX Plan** Angebot auf [der Seite unserer MX Plan Anleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Programm auf Computer konfigurieren` oder `E-Mail-Programm auf Smartphone oder Tablet konfigurieren`, je nach verwendetem Gerät.
+>> Überprüfen Sie bei einem **MX Plan** Angebot auf [der Seite unserer MX Plan Anleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Anwendung auf Ihrem Computer einrichten` oder `E-Mail-Anwendung auf Ihrem Mobilgerät einrichten`, je nach verwendetem Gerät.
 >>
 > **E-Mail Pro**
 >>
->> Überprüfen Sie bei einem **E-Mail Pro** Angebot auf [der Seite unserer E-Mail Pro Anleitungen](/products/web-cloud-email-collaborative-solutions-email-pro) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Programm auf Computer konfigurieren` oder `E-Mail-Programm auf Smartphone oder Tablet konfigurieren`, je nach verwendetem Gerät.
+>> Überprüfen Sie bei einem **E-Mail Pro** Angebot auf [der Seite unserer E-Mail Pro Anleitungen](/products/web-cloud-email-collaborative-solutions-email-pro) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Anwendung auf Ihrem Computer einrichten` oder `E-Mail-Anwendung auf Ihrem Mobilgerät einrichten`, je nach verwendetem Gerät.
 >>
 > **Exchange**
 >>
->> Überprüfen Sie bei einem **Exchange** Angebot auf [der Seite unserer Microsoft Exchange Anleitungen](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Programm auf Computer konfigurieren` oder `E-Mail-Programm auf Smartphone oder Tablet konfigurieren`, je nach verwendetem Gerät.
+>> Überprüfen Sie bei einem **Exchange** Angebot auf [der Seite unserer Microsoft Exchange Anleitungen](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Anwendung auf Ihrem Computer einrichten` oder `E-Mail-Anwendung auf Ihrem Mobilgerät einrichten`, je nach verwendetem Gerät.
 >>
 > **Zimbra**
 >>
->> Überprüfen Sie bei einem **Zimbra** Angebot auf [der Seite unserer Zimbra Anleitungen](/products/web-cloud-email-collaborative-solutions-zimbra) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Programm auf Computer konfigurieren` oder `E-Mail-Programm auf Smartphone oder Tablet konfigurieren`, je nach verwendetem Gerät.
+>> Überprüfen Sie bei einem **Zimbra** Angebot auf [der Seite unserer Zimbra Anleitungen](/products/web-cloud-email-collaborative-solutions-zimbra) die Konfiguration Ihres E-Mail-Programms mithilfe der verfügbaren Anleitungen im Bereich `E-Mail-Anwendung auf Ihrem Computer einrichten` oder `E-Mail-Anwendung auf Ihrem Mobilgerät einrichten`, je nach verwendetem Gerät.
 
 ///
 
@@ -128,7 +128,7 @@ So ändern Sie das Passwort einer E-Mail-Adresse:
 > [!tabs]
 > **MX Plan E-Mail-Account**
 >>
->> Für ein **MX Plan** Angebot lesen Sie unsere Anleitung [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Für ein **MX Plan** Angebot lesen Sie unsere Anleitung [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).
 >>
 > **E-Mail Pro**
 >>
@@ -202,7 +202,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 >> |421|Service not available, transmission channel being closed|Unbestimmte Herkunft; vergewissern Sie sich, dass der Versand an eine andere Domain funktioniert. Wenn ja, versuchen Sie den Versand später erneut.|
 >> |432|The recipient's Exchange Server incoming mail queue has been stopped|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Wenden Sie sich an den Administrator des Empfänger-Mailservers.|
 >> |449|Routing error|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Microsoft empfiehlt, eine Diagnose mit dem Tool WinRoute durchzuführen.|
->> |450|Requested action not taken – The user's mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/)), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
+>> |450|Requested action not taken – The user's mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([Spamhaus](https://check.spamhaus.org/)), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
 >> |451|Requested action aborted – Local error in processing|Dies kann durch eine vorübergehende Überlastung oder eine negative SPF-Prüfung der Senderdomain verursacht werden. Lesen Sie die Zusatznachricht des Servers oder kontaktieren Sie dessen Administrator, falls dies weiterhin der Fall ist.|
 >> |452|The command has been aborted because the server has insufficient system storage|Der E-Mail-Server ist ausgelastet. Dies könnte von zu vielen ausgehenden Nachrichten gleichzeitig verursacht werden. Bitte überprüfen Sie Ihren Postausgang und versuchen Sie es erneut.|
 >> |455|Server unable to deal with the command at this time.|Warten Sie eine Weile und versuchen Sie es erneut. Im Falle eines Fehlschlags kontaktieren Sie den Administrator des Empfänger-Mailservers.|
@@ -225,7 +225,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 >> |551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
 >> |552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
 >> |553|Requested action not taken – Mailbox name invalid|Dies wird in der Regel durch eine falsche Empfänger-E-Mail-Adresse verursacht. Bitte überprüfen Sie, dass die betroffene E-Mail-Adresse korrekt ist.|
->> |554|Transaction failed, "No SMTP service here"|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/)).|
+>> |554|Transaction failed, "No SMTP service here"|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([Spamhaus](https://check.spamhaus.org/)).|
 >> |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|Der ausgehende SMTP-Server kann die E-Mail-Adresse, die Sie in den Feldern "Von" oder "An" verwendet haben, nicht deuten. Bitte prüfen Sie, ob die eingegebenen E-Mail-Adressen korrekt sind, und überprüfen Sie, dass Sie die von OVHcloud festgelegte Grenze nicht überschritten haben: 200 Mails / Stunde / Account / 300 Mails / Stunde / IP.|
 
 ///
