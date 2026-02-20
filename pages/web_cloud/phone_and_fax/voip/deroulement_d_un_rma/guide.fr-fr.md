@@ -31,6 +31,17 @@ De même, lors d'un changement de modem suite à une migration vers la Fibre ou 
 - Disposer d'un téléphone VoIP fourni sous caution par OVHcloud, d'un modem ou d'un ONT fournis en prêt par OVHcloud.
 - Un retour du matériel est demandé, par exemple suite à un échange ou à une résiliation.
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 Retrouvez dans ce guide les étapes du déroulement d'un RMA pour la restitution d'un téléphone sous caution, d'un modem et d'un ONT fournis par OVHcloud.
@@ -178,11 +189,9 @@ Suivez ce lien et imprimez le bon de retour.
 
 Pour la téléphonie, vous pourrez également télécharger le bon de retour depuis votre espace client OVHcloud en suivant les étapes ci-dessous :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (vous pouvez rechercher le numéro dans le champ prévu à cet effet).
-1. Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.
-1. Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée (vous pouvez rechercher le numéro dans le champ prévu à cet effet).<br>
+Cliquez alors sur l'onglet `Assistance`{.action} puis sur `Suivi RMA`{.action}.<br>
+Les informations relatives au RMA sont alors visibles, ainsi qu'un bouton pour `Télécharger le bon de retour`{.action}.
 
 Cliquez sur les onglets ci-dessous pour afficher des exemples de bons RMA :
 
@@ -300,8 +309,6 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 Si une caution est restituée (uniquement valable pour un téléphone, les modems et les ONT sont fournis en prêt par OVHcloud), elle sera disponible sous forme d'avoir sur votre compte prépayé OVHcloud et servira ainsi à régler vos prochaines factures de manière automatique.<br>
 Si vous le souhaitez, vous pouvez en demander le remboursement sur votre compte bancaire via les étapes suivantes, **sous réserve d'avoir [enregistré un compte bancaire SEPA dans votre compte OVHcloud et de l'avoir défini en moyen de paiement par défaut](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) au préalable** :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
 1. Cliquez sur l'onglet `Facturation`{.action} puis sur `Virement vers un compte bancaire`{.action}.
 1. Dans le tableau, cliquez sur les `...`{.action} à droite de la ligne correspondant à la caution restituée, puis sur `Demander un remboursement`{.action}.
 1. Cliquez sur `Valider la demande`{.action}.

@@ -20,7 +20,7 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [SMS](/links/control-panel/telecom-sms)
-- **Pour y accéder :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
 
 ---
 <!-- CP-NAV-END:telecom-sms -->
