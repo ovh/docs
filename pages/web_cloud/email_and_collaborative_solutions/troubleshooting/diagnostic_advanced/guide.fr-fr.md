@@ -129,7 +129,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 > [!tabs]
 > **Compte e-mail MX Plan**
 >>
->> Pour une offre **MX Plan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Pour une offre **MX Plan**, consultez notre guide « [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) ».
 >>
 > **E-mail Pro**
 >>
@@ -137,7 +137,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 >>
 > **Exchange**
 >>
->> Pour une offre **Exchange**, accédez à la section `Web Cloud`{.action}, cliquez sur `Exchange`{.action} dans la rubrique **Microsoft** et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Pour une offre **Exchange**, accédez à la section `Web Cloud`{.action}, cliquez sur `Exchange`{.action} dans la rubrique **Microsoft** et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide « [Configurer la double authentification sur un compte Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange) ».
 >>
 > **Zimbra**
 >>
@@ -158,13 +158,13 @@ Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur
 
 /// details | Le pointage du nom de domaine vers mon service e-mail est-il correct ? (**réception**)
 
-Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx).
+Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement, vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation [Tutoriel - Utilisation de Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
+> Pour vérifier la configuration DNS de votre nom de domaine, quel que soit son bureau d'enregistrement, vous pouvez utiliser l'outil [Zone Master](https://zonemaster.net/), à l'aide de notre documentation « [Tutoriel - Utilisation de Zonemaster](/pages/web_cloud/domains/dns_zonemaster) ».
 
 ///
 
@@ -219,7 +219,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 >> |502|Commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
 >> |503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû à un problème d'authentification. Assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
 >> |504|Paramètre de commande non implémenté|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
->> |535|Échec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte a été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) pour plus d'informations.|
+>> |535|Échec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte a été bloqué pour spam. Consultez notre guide « [Que faire en cas de compte bloqué pour spam ?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) » pour plus d'informations.|
 >> |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifiez l'adresse e-mail du destinataire et réessayez|
 >> |550 5.7.1|Email rejected per policy reason|Le serveur de messagerie de destination a rejeté l'adresse e-mail d'expédition pour des raisons de politique de sécurité. Ces raisons peuvent être multiples, elles sont généralement détaillées avec le code d'erreur. Dans certains cas, il peut s'agir d'une adresse IP dans la chaîne de transmission qui est présente dans une liste de rejet. Pour vérifier la réputation d'une adresse IP, vous pouvez la tester, par exemple, sur [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) ou vérifier la chaîne de transmission d'un e-mail depuis l'adresse e-mail concernée avec [Mailtester](https://www.mail-tester.com/)|
 >> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|L'e-mail a été rejeté car le service e-mail de l'expéditeur n'a pas de SPF ou de DKIM configuré sur son nom de domaine.<br><br>Il est conseillé de mettre en place en priorité un enregistrement SPF, celui-ci étant compatible avec l'ensemble des offres e-mail. Utilisez notre guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) ».<br><br>Si votre offre e-mail dispose de l'option DKIM, vous pouvez la mettre en place à l'aide de notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) ».|

@@ -128,7 +128,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 > [!tabs]
 > **Conta de e-mail MX Plan**
 >>
->> Para uma oferta **MX Plan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> Para uma oferta **MX Plan**, consulte o nosso guia "[Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >>
 > **E-mail Pro**
 >>
@@ -136,7 +136,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 >>
 > **Exchange**
 >>
->> Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Exchange`{.action} na secção **Microsoft** e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Exchange`{.action} na secção **Microsoft** e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia "[Configurar a dupla autenticação numa conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)".
 >>
 > **Zimbra**
 >>
@@ -157,13 +157,13 @@ Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcl
 
 /// details | O apontamento do nome de domínio para o meu serviço de e-mail está correto? (**receção**)
 
-Verifique que o seu nome de domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do nome de domínio](/pages/web_cloud/domains/dns_zone_mx).
+Verifique que o seu nome de domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual "[Adicionar um campo MX à configuração do nome de domínio](/pages/web_cloud/domains/dns_zone_mx)".
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Para verificar a configuração DNS do seu nome de domínio, independentemente do seu agente de registo, pode utilizar a ferramenta [Zone Master](https://zonemaster.net/), utilizando a nossa documentação [Tutorial - Utilização do Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Para verificar a configuração DNS do seu nome de domínio, independentemente do seu agente de registo, pode utilizar a ferramenta [Zone Master](https://zonemaster.net/), utilizando a nossa documentação "[Tutorial - Utilização do Zonemaster](/pages/web_cloud/domains/dns_zonemaster)".
 
 ///
 
@@ -218,7 +218,7 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 >> |502|Encomenda não implementada|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
 >> |503|O servidor encontrou uma má sequência de encomendas|Isto deve-se geralmente a um problema de autenticação. Certifique-se de que está autenticado no servidor SMTP ao nível da configuração do seu software de mensagens.|
 >> |504|Parâmetro de comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
->> |535|Falha durante a autenticação|As informações de utilizador/password foram descarregadas ou o envio está potencialmente bloqueado no seu endereço de e-mail. Verifique o estado do seu endereço de e-mail a partir da Área de Cliente OVHcloud. Uma alteração da password pode desbloquear o envio se a conta tiver sido bloqueada por spam, consulte o nosso guia [O que fazer no caso de uma conta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) para mais informações|
+>> |535|Falha durante a autenticação|As informações de utilizador/password foram descarregadas ou o envio está potencialmente bloqueado no seu endereço de e-mail. Verifique o estado do seu endereço de e-mail a partir da Área de Cliente OVHcloud. Uma alteração da password pode desbloquear o envio se a conta tiver sido bloqueada por spam, consulte o nosso guia "[O que fazer no caso de uma conta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)" para mais informações|
 >> |550|Ação solicitada não efetuada: caixa de correio indisponível|O servidor de e-mail de destino não pôde verificar o endereço de e-mail utilizado. Isto é causado, na maioria dos casos, por um endereço de e-mail de destino inválido, mas pode também significar que o servidor de e-mail de destino tem problemas com firewall ou com a conectividade. Verificar o endereço de e-mail do destinatário e/ou tente novamente|
 >> |550 5.7.1|Email rejected per policy reason|O servidor de correio de destino rejeitou o endereço de e-mail de envio por razões de política de segurança. Essas razões podem ser múltiplas, geralmente são detalhadas com o código de erro. Em certos casos, pode tratar-se de um endereço IP na cadeia de transmissão que está presente numa lista de rejeição. Para verificar a reputação de um endereço IP, pode testá-lo, por exemplo, em [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) ou verificar a cadeia de transmissão de um e-mail a partir do endereço em causa com [Mailtester](https://www.mail-tester.com/)|
 >> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|O e-mail foi rejeitado porque o serviço de e-mail do remetente não possui SPF ou DKIM configurado em seu nome de domínio.<br><br>É aconselhável configurar um registro SPF prioritário, compatível com todos os e-mails ofertas. Use nosso guia "[Melhorar a segurança dos e-mails através do registo SPF](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Se sua oferta de e-mail tiver a opção DKIM, você pode colocá-la usando nosso guia "[Melhorar a segurança dos e-mails através do registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)".|

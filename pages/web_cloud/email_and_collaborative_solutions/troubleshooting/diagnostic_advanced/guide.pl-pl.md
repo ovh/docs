@@ -128,7 +128,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 > [!tabs]
 > **Konto e-mail MX Plan**
 >>
->> W przypadku oferty **MX Plan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+>> W przypadku oferty **MX Plan** zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >>
 > **E-mail Pro**
 >>
@@ -136,7 +136,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 >>
 > **Exchange**
 >>
->> W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Exchange`{.action} w sekcji **Microsoft**, następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange).
+>> W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Exchange`{.action} w sekcji **Microsoft**, następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik "[Konfiguracja weryfikacji dwuetapowej na koncie Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)".
 >>
 > **Zimbra**
 >>
@@ -157,13 +157,13 @@ Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-clou
 
 /// details | Czy wskazanie nazwy domeny do mojej usługi e-mail jest poprawne? (**odbiór**)
 
-Sprawdź, czy Twoja nazwa domeny wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji nazwy domeny](/pages/web_cloud/domains/dns_zone_mx).
+Sprawdź, czy Twoja nazwa domeny wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem "[Dodaj pole MX do konfiguracji nazwy domeny](/pages/web_cloud/domains/dns_zone_mx)".
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
 > [!primary]
 >
-> Aby sprawdzić konfigurację DNS Twojej nazwy domeny, niezależnie od jej operatora, możesz użyć narzędzia [Zone Master](https://zonemaster.net/), korzystając z naszej dokumentacji [Tutorial - Korzystanie z Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+> Aby sprawdzić konfigurację DNS Twojej nazwy domeny, niezależnie od jej operatora, możesz użyć narzędzia [Zone Master](https://zonemaster.net/), korzystając z naszej dokumentacji "[Tutorial - Korzystanie z Zonemaster](/pages/web_cloud/domains/dns_zonemaster)".
 
 ///
 
@@ -218,10 +218,10 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 >> |502|Zamówienie nie zostało zrealizowane|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
 >> |503|Serwer napotkał złą sekwencję poleceń|Powodem tego problemu jest problem z uwierzytelnianiem. Upewnij się, że jesteś uwierzytelniony na serwerze SMTP podczas konfiguracji programu pocztowego.|
 >> |504|Parametr zamówienia nie został zrealizowany|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
->> |535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam), aby uzyskać więcej informacji|
+>> |535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem "[Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)", aby uzyskać więcej informacji|
 >> |550|Operacja nie została wykonana: skrzynka pocztowa niedostępna|Docelowy serwer poczty elektronicznej nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail docelowym, ale może również oznaczać, że docelowy serwer poczty elektronicznej ma problemy z zaporą lub połączeniem. Sprawdź adres e-mail odbiorcy i/lub spróbuj ponownie|
 >> |550 5.7.1|Email rejected per policy reason|Docelowy serwer poczty e-mail odrzucił wysyłający adres e-mail ze względów polityki bezpieczeństwa. Przyczyny te mogą być wielorakie, zazwyczaj są one opisane za pomocą kodu błędu. W niektórych przypadkach może to być adres IP w ciągu transmisji, który znajduje się na liście odrzuconych. Aby sprawdzić reputację adresu IP, możesz go przetestować na przykład na [MXtoolbox](https://mxtoolbox.com/blacklists.aspx) lub sprawdzić ciąg transmisji wiadomości e-mail z danego adresu e-mail za pomocą [Mailtester](https://www.mail-tester.com/)|
->> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|E-mail został odrzucony, ponieważ usługa e-mail nadawcy nie ma skonfigurowanego SPF ani DKIM w jego nazwie domeny.<br><br>Zaleca się ustawienie priorytetowego rekordu SPF, który jest zgodny ze wszystkimi wiadomościami e-mail oferuje. Skorzystaj z naszego przewodnika „[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Jeśli Twoja oferta e-mail ma opcję DKIM, możesz ją ustawić za pomocą nasz przewodnik „[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)".|
+>> |550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*|E-mail został odrzucony, ponieważ usługa e-mail nadawcy nie ma skonfigurowanego SPF ani DKIM w jego nazwie domeny.<br><br>Zaleca się ustawienie priorytetowego rekordu SPF, który jest zgodny ze wszystkimi wiadomościami e-mail oferuje. Skorzystaj z naszego przewodnika "[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)".<br><br>Jeśli Twoja oferta e-mail ma opcję DKIM, możesz ją ustawić za pomocą nasz przewodnik "[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)".|
 >> |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 >> |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
 >> |553|Operacja nie została wykonana: nieautoryzowany adres e-mail|Jest to zazwyczaj spowodowane przez nieprawidłowy adres e-mail docelowy. Sprawdź, czy dany adres e-mail jest poprawny|
