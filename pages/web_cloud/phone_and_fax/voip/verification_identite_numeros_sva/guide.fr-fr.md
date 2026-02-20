@@ -20,11 +20,11 @@ details[open]>summary::before {
 
 ## Objectif
 
-L'exploitation de **numéros de Services à Valeur Ajoutée (SVA)** OVHcloud nécessite d'être en conformité avec le cadre réglementaire applicable, notamment les obligations définies par l’ARCEP ainsi que celles prévues par la [Directive européenne 2015/849](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015L0849&from=FR) du Parlement européen et du Conseil du 20 mai 2015, relative à la prévention de l'utilisation du système financier à des fins de blanchiment d'argent et de financement du terrorisme.
+L'exploitation de **numéros de Services à Valeur Ajoutée (SVA)** OVHcloud nécessite d'être en conformité avec le cadre réglementaire applicable, notamment les obligations définies par l'ARCEP ainsi que celles prévues par la [Directive européenne 2015/849](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015L0849&from=FR) du Parlement européen et du Conseil du 20 mai 2015, relative à la prévention de l'utilisation du système financier à des fins de blanchiment d'argent et de financement du terrorisme.
 
 Lors de la commande ou de la portabilité d'un numéro SVA, vous devez renseigner des informations précises sur votre identité ou celle de votre entreprise et fournir des documents justificatifs à OVHcloud.
 
-OVHcloud, en partenariat avec Lemonway&#174;, vous accompagne dans la mise en œuvre du KYC (*Know Your Customer* ou « Connaître vos clients ») via la fourniture d'éléments justificatifs depuis votre espace client OVHcloud.
+OVHcloud, en partenariat avec Lemonway®, vous accompagne dans la mise en œuvre du KYC (*Know Your Customer* ou « Connaître vos clients ») via la fourniture d'éléments justificatifs depuis votre espace client OVHcloud.
 
 **Découvrez comment valider votre identité afin d'exploiter un numéro spécial SVA.**
 
@@ -47,18 +47,22 @@ Ces informations sont indispensables pour maintenir votre compte en conformité 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
 
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
 > [!warning]
 > Afin d'exploiter un numéro spécial SVA, il est obligatoire de fournir l'ensemble des justificatifs requis. Faute de validation de ces documents, vous ne pourrez pas exploiter votre numéro.
 >
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
 
 Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez sur `Commander un numéro`{.action} dans le cadre « Je veux... » du `Tableau de bord`{.action}.
 
@@ -136,7 +140,7 @@ Cliquez sur `C'est parti`{.action} pour fournir vos documents.
 
 > [!primary]
 > 
-> La liste suivante n'est pas exhaustive. Il s'agit des documents standard exigés à tous les clients dans le cadre de la vérification d'identité par Lemonway&#174;.
+> La liste suivante n'est pas exhaustive. Il s'agit des documents standard exigés à tous les clients dans le cadre de la vérification d'identité par Lemonway®.
 > Des documents supplémentaires peuvent être requis pour effectuer des vérifications complémentaires.
 >
 > Si votre compte OVHcloud correspond à **un projet de financement participatif (*crowdfunding*)**, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détail**.

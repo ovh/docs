@@ -13,7 +13,17 @@ Votre ligne téléphonique OVHcloud vous permet de recevoir des appels. Pour div
 ## Prérequis
 
 - Disposer d'une [ligne OVHcloud avec un forfait compatible](/links/telecom/telephonie-voip) ou d'une ligne Trunk.
-- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,10 +45,7 @@ Poursuivez la lecture de cette documentation en fonction de la configuration que
 
 #### Étape 1 : accéder à la gestion des plages horaires
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les plages horaires`{.action}.
+Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les plages horaires`{.action}.
 
 ![gerer-plages-horaires](images/manage-time-slot-step1.png){.thumbnail}
 
@@ -92,17 +99,14 @@ Vous pouvez également personnaliser le délai avant renvoi en « hors plage hor
 
 ### Gérer les fermetures exceptionnelles <a name="fermetures-exceptionnelles"></a>
 
-Pour compléter vos plages horaires, vous avez la possibilité de créer des fermetures exceptionnelles. Elles vous permettront de fermer votre file d’appels sur des plages horaires qui sont normalement considérées comme étant ouvertes. 
+Pour compléter vos plages horaires, vous avez la possibilité de créer des fermetures exceptionnelles. Elles vous permettront de fermer votre file d'appels sur des plages horaires qui sont normalement considérées comme étant ouvertes.
 
 > [!primary]
 >
-> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires). Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
+> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires). Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s'appliquent.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
+Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
 ![gerer-fermetures-exceptionnelles](images/manage-closing-time-step1.png){.thumbnail}
 

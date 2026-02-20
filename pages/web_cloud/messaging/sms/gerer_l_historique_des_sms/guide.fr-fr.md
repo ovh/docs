@@ -18,7 +18,7 @@ Votre espace client OVHcloud vous permet de consulter et télécharger l'histori
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [SMS](/links/control-panel/telecom-sms)
-- **Pour y accéder :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
 
 ---
 <!-- CP-NAV-END:telecom-sms -->

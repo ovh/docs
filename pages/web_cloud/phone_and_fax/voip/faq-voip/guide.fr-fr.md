@@ -19,7 +19,18 @@ details[open]>summary::before {
 
 ## Objectif
 
-Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud
+Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 <a name="ligne-ou-numero"></a>
 
@@ -76,7 +87,7 @@ Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions 
 
 /// details | Comment associer un autre numéro à ma ligne téléphonique ?
 
-Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, connectez-vous sur votre [espace client OVHcloud](/links/manager), sélectionnez la rubrique `Télécom`{.action} puis cliquez sur `VoIP & Fax`{.action}. Cliquez sur le groupe de facturation souhaité puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
+Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, connectez-vous sur votre [espace client OVHcloud](/links/manager), puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
 
 > [!success]
 >
@@ -106,7 +117,7 @@ Lorsque vous réalisez une demande de portabilité et que nous ne sommes pas cap
 
 ///
 
-/// details | Comment configurer mes numéro alias ?
+/// details | Comment configurer mes numéros alias ?
 
 Il existe plusieurs configurations pouvant être appliquées à vos numéros alias, vous pouvez retrouver celles-ci sur le guide [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
 
@@ -159,7 +170,7 @@ Pour cela, connectez-vous à l'aide de vos identifiants et dirigez-vous vers la 
 >
 > **Trucs et astuces**
 >
-> Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./##comment-configurer-un-renvoi-dappel)
+> Si vous avez récemment activé la fonctionnalité de renvoi d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel ?](#comment-configurer-un-renvoi-dappel)
 
 ///
 
