@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym'
 excerpt: 'Dowiedz się, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym'
-updated: 2026-02-19
+updated: 2026-02-20
 ---
 
 <style>

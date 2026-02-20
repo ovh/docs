@@ -1,7 +1,7 @@
 ---
 title: 'Créer plusieurs VLAN dans le vRack'
 excerpt: 'Découvrez comment créer plusieurs VLAN dans le vRack'
-updated: 2026-02-19
+updated: 2026-02-20
 ---
 
 ## Objectif
