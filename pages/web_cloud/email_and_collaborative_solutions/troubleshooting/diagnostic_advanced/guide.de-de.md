@@ -83,7 +83,6 @@ Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird 
 
 1. Loggen Sie sich über einen Webbrowser in das [Webmail](/links/web/email) mit der betreffenden E-Mail-Adresse ein.
 2. Überprüfen Sie die Konfigurationseinstellungen je nach Ihrem E-Mail-Angebot und dem verwendeten E-Mail-Client oder der verwendeten App:
-2. Überprüfen Sie die Konfigurationseinstellungen je nach Ihrem E-Mail-Angebot und dem verwendeten E-Mail-Client oder der verwendeten App:
 
 > [!tabs]
 > **E-Mail-Account MX Plan**
@@ -128,9 +127,7 @@ So ändern Sie das Passwort einer E-Mail-Adresse:
 
 > [!tabs]
 > **MX Plan E-Mail-Account**
-> **MX Plan E-Mail-Account**
 >>
->> Für ein **MX Plan** Angebot lesen Sie unsere Anleitung [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >> Für ein **MX Plan** Angebot lesen Sie unsere Anleitung [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 >>
 > **E-Mail Pro**
@@ -155,7 +152,6 @@ Sie können alle aktuellen Tasks auf <https://web-cloud.status-ovhcloud.com/> ü
 - Für **E-Mail Pro** gehen Sie in den Bereich `Microsoft`.
 - Für **Exchange**, gehen Sie in den Bereich `Hosted Microsoft`, `Private Microsoft` und `Trusted Microsoft` je nach Ihrem Angebot.
 - Für **Zimbra** gehen Sie in den Bereich `Zimbra`.
-- Für **Zimbra** gehen Sie in den Bereich `Zimbra`.
 
 ///
 
@@ -167,7 +163,6 @@ Sie können alle aktuellen Tasks auf <https://web-cloud.status-ovhcloud.com/> ü
 
 > [!primary]
 >
-> Um die DNS-Konfiguration Ihrer Domain unabhängig von deren Registrar zu überprüfen, können Sie das Tool [Zone Master](https://zonemaster.net/) mithilfe unserer Dokumentation [Tutorial - Verwendung von Zonemaster](/pages/web_cloud/domains/dns_zonemaster) verwenden.
 > Um die DNS-Konfiguration Ihrer Domain unabhängig von deren Registrar zu überprüfen, können Sie das Tool [Zone Master](https://zonemaster.net/) mithilfe unserer Dokumentation [Tutorial - Verwendung von Zonemaster](/pages/web_cloud/domains/dns_zonemaster) verwenden.
 
 ///
