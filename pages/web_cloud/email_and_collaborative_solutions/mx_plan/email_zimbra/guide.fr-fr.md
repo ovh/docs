@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2025-10-22
+updated: 2026-02-25
 ---
 
 <style>
@@ -550,6 +550,10 @@ Depuis la Malette de votre compte Zimbra, il est possible d'éditer directement 
 ![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
 
 Les modifications que vous faites dans l'éditeur sont automatiquement enregistrés pendant son édition ou lorsque vous fermer l'onglet.
+
+> [!success]
+>
+> Si vous souhaitez plus d'information sur l'édition de documents sur ONLYOFFICE, [consulter la documentation officielle](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtres <a name="filters"></a>
 
