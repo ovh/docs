@@ -747,9 +747,61 @@ In this example, we'll use **10** as the VLAN ID (tag), and **192.168.0.0/16** a
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+> **Windows**
+>>
+>> Log on to your server via a remote desktop connection, and open the Server Manager app. Then select `Local Server`{.action}. Now click the `Disabled`{.action} link next to **NIC Teaming**:
+>>
+>> ![Windows vLAN](images/vrack2-windows-01.png){.thumbnail}
+>>
+>> Next, right-click on the network interface and select `Add to New Team`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+>>
+>> In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.png){.thumbnail}
+>>
+>> Next, we need to define the vLAN tag. In the **ADAPTERS AND INTERFACES** pane of the **NIC Teaming** screen, go to the `Team Interfaces`{.action} tab and right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
+>>
+>> ![Windows vLAN](images/vrack2-windows-03.png){.thumbnail}
+>>
+>> Next, we need to configure the IP address of the vLAN. Click the `Start`{.action} button on your keyboard, then click `Control Panel`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-04.png){.thumbnail}
+>>
+>> Next, click `Network and Internet`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-05.png){.thumbnail}
+>>
+>> Then `Network and Sharing Center`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-06.png){.thumbnail}
+>>
+>> Then click `Change adapter settings`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-07.png){.thumbnail}
+>>
+>> Next, right-click the vLAN interface, and click `Properties`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-08.png){.thumbnail}
+>>
+>> Note that in our example `Ethernet 2` is the interface used for the vRack. However, it is possible that the vRack NIC is a different interface in your configuration. The correct one to select will be the interface that does not have the server's main IP address or has a self-assigned IP.
+>>
+>> Then double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-09.png){.thumbnail}
+>>
+>> Next, click `Use the following IP address`{.action}. For **IP address**, type in an IP from your internal range. For **Subnet mask**, type in 255.255.0.0.
+>>
+>> ![Windows vLAN](images/vrack2-windows-10.png){.thumbnail}
+>>
+>> Finally, click the `OK`{.action} button to save the changes, then reboot your server.
+>>
 
 ///
 
 ## Go further
+
+[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Join our [community of users](/links/community).

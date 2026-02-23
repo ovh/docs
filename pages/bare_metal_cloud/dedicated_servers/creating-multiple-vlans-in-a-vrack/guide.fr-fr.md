@@ -109,9 +109,7 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 >>
 >> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
 >>
-> **Ubuntu 20.04+ et Debian 12+**
->> 
->> Ubuntu 20.04 et versions ultérieures, Debian 12 et versions ultérieures
+> **Ubuntu et Debian 12+**
 >>
 >> Ces commandes ont été exécutées sous Ubuntu 24.04 (Noble Numbat).
 >>

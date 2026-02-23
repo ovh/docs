@@ -124,7 +124,7 @@ This section offers several configuration options. For the purpose of this guide
 >>
 >> You can keep the default private IP range or use a different one.
 >>
->> Select "Enable DHCP for this private network" to automatically configure the instance’s private IP address. You will then only need to configure the dedicated server’s network interfaces.
+>> Select "Enable DHCP for this private network" to automatically assign and configure the private IP address on the instance. You will then only need to configure the dedicated server’s network interfaces.
 >>
 >> When this option is not selected, manual configuration is required on both the Public cloud instance and the dedicated server.
 >>
@@ -146,7 +146,7 @@ In the popup window, select the private network(s) to attach to your instance an
 ### Configure your network interfaces
 
 > [!primary]
-> If you selected to configure the private network on your instance using DHCP, you do not need to manually configure the network interface on the instance.
+> If you chose the option to configure the private network on your instance using DHCP, you only need to configure the network interfaces on the dedicated server.
 > 
 
 #### Configuration when using the default VLAN ID 0
@@ -232,7 +232,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >>
 >> Once you have identified your private network interface, use the following command to create a network configuration file. 
 >>
->> Replace `NETWORK_INTERFACE` with your own value.
+>> Replace `NETWORK_INTERFACE` with the name of your private interface.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -270,7 +270,7 @@ For example purposes, we will use the IP address range of `192.168.0.0/16` (**Su
 >> Restart the networking service to apply the changes:
 >>
 >> ```bash
->> sudo systemctl restart NetworkManager.service
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Fedora 42+, AlmaLinux and Rocky Linux (10)**
@@ -444,7 +444,7 @@ In this example, we'll use **10** as the VLAN ID (tag), and **192.168.0.0/16** a
 >> ip a
 >> ```
 >> 
->> In this example, the private interface is `eno2`.
+>> In this example, the private network interface is identified as `eno2`.
 >>
 >> - Next, create a VLAN subinterface for the network interface (non-persistent configuration) and assign (tag) it the VLAN ID. In this example, the VLAN ID is 10.
 >>
@@ -747,9 +747,61 @@ In this example, we'll use **10** as the VLAN ID (tag), and **192.168.0.0/16** a
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+> **Windows**
+>>
+>> Log on to your server via a remote desktop connection, and open the Server Manager app. Then select `Local Server`{.action}. Now click the `Disabled`{.action} link next to **NIC Teaming**:
+>>
+>> ![Windows vLAN](images/vrack2-windows-01.png){.thumbnail}
+>>
+>> Next, right-click on the network interface and select `Add to New Team`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+>>
+>> In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.png){.thumbnail}
+>>
+>> Next, we need to define the vLAN tag. In the **ADAPTERS AND INTERFACES** pane of the **NIC Teaming** screen, go to the `Team Interfaces`{.action} tab and right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
+>>
+>> ![Windows vLAN](images/vrack2-windows-03.png){.thumbnail}
+>>
+>> Next, we need to configure the IP address of the vLAN. Click the `Start`{.action} button on your keyboard, then click `Control Panel`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-04.png){.thumbnail}
+>>
+>> Next, click `Network and Internet`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-05.png){.thumbnail}
+>>
+>> Then `Network and Sharing Center`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-06.png){.thumbnail}
+>>
+>> Then click `Change adapter settings`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-07.png){.thumbnail}
+>>
+>> Next, right-click the vLAN interface, and click `Properties`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-08.png){.thumbnail}
+>>
+>> Note that in our example `Ethernet 2` is the interface used for the vRack. However, it is possible that the vRack NIC is a different interface in your configuration. The correct one to select will be the interface that does not have the server's main IP address or has a self-assigned IP.
+>>
+>> Then double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}:
+>>
+>> ![Windows vLAN](images/vrack2-windows-09.png){.thumbnail}
+>>
+>> Next, click `Use the following IP address`{.action}. For **IP address**, type in an IP from your internal range. For **Subnet mask**, type in 255.255.0.0.
+>>
+>> ![Windows vLAN](images/vrack2-windows-10.png){.thumbnail}
+>>
+>> Finally, click the `OK`{.action} button to save the changes, then reboot your server.
+>>
 
 ///
 
 ## Go further
+
+[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Join our [community of users](/links/community).

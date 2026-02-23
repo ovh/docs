@@ -54,7 +54,7 @@ Dans la liste des services éligibles, sélectionnez le projet que vous souhaite
 ### Intégrer une instance dans le vRack
 
 > [!primary]
-> Ce guide se concentre sur une configuration simple de vRack entre une instance Public Cloud et un serveur dédié.
+> Ce guide décrit la mise en place d’une configuration simple de vRack entre une instance Public Cloud et un serveur dédié.
 > Si vous avez déployé vos instance(s) avec un mode de déploiement tel que les zones locales ou multi AZ, notez que les zones locales ne prennent pas encore en charge le vRack.
 > En outre, le **vRack** est un réseau L2 global et ne prend pas en charge la résilience au niveau "zone" ou "région".
 >
@@ -122,10 +122,9 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 >>
 >> Vous pouvez conserver la plage IP privée par défaut ou en utiliser une autre.
 >>
+>> Sélectionnez « Activer DHCP pour ce réseau privé » pour attribuer et configurer automatiquement une adresse IP privée sur l'instance. Il vous suffira ensuite de configurer les interfaces réseau du serveur dédié.
 >>
->> Sélectionnez « Activer DHCP pour ce réseau privé » pour configurer automatiquement l'adresse IP privée de l'instance. Vous n'aurez alors plus qu'à configurer les interfaces réseau du serveur dédié.
->>
->> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance de cloud public et sur le serveur dédié.
+>> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance Public Cloud et sur le serveur dédié.
 >>
 >> **Options de passerelle réseau**
 >>
@@ -145,7 +144,7 @@ Dans la fenêtre qui apparaît, sélectionnez le ou les réseaux privés à atta
 ### Configurer vos interfaces réseau
 
 > [!primary]
-> Si vous avez choisi de configurer le réseau privé sur votre instance à l'aide du protocole DHCP, vous n'avez pas besoin de configurer manuellement l'interface réseau sur l'instance.
+> Si vous avez choisi l'option permettant de configurer le réseau privé sur votre instance à l'aide du protocole DHCP, vous devez uniquement configurer les interfaces réseau sur le serveur dédié.
 >
 
 #### Configuration en cas d'utilisation du VLAN ID 0 par défaut
@@ -231,7 +230,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 >>
 >> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. 
 >>
->> Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+>> Remplacez `NETWORK_INTERFACE` par le nom de votre interface privée.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -269,7 +268,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 >> Redémarrez le service réseau pour appliquer les modifications :
 >>
 >> ```bash
->> sudo systemctl restart NetworkManager.service
+>> sudo systemctl restart NetworkManager
 >> ```
 >>
 > **Fedora 42+, AlmaLinux et Rocky Linux (10)**
@@ -403,7 +402,7 @@ Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configur
 
 /// details | **Configuration lors de l'utilisation d'un identifiant VLAN différent**
 
-Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **192.168.0.0/16** comme plage d'adresses IP privées.
+Dans cet exemple, nous utiliserons **10** comme identifiant (balise) VLAN et **192.168.0.0/16** comme plage d'adresses IP privées.
 
 > [!tabs]
 > **Debian 11**
@@ -444,7 +443,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >> 
->> Dans cet exemple, l'interface privée est `eno2`.
+>> Dans cet exemple, l'interface réseau privée s'appelle `eno2`.
 >>
 >> - Ensuite, créez une sous-interface VLAN pour l'interface réseau (configuration non persistante) et attribuez-lui (taguez) le VLAN ID. Dans cet exemple, le VLAN ID est 10.
 >>
@@ -544,7 +543,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >>
->> - Ici, l'interface que nous souhaitons configurer est `eno2` avec l'adresse MAC : `d0:50:99:d6:6b:14`.
+>> - Ici, l'interface que nous souhaitons configurer est identifiée sous le nom `eno2` avec l'adresse MAC : `d0:50:99:d6:6b:14`.
 >>
 >> ![ubuntu VLAN](images/ubuntu_ip_a.png){.thumbnail}
 >>
@@ -574,7 +573,6 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ![config](images/config_ubuntu.png){.thumbnail}
 >>
 >> - Enregistrez et fermez le fichier, puis exécutez la commande suivante :
->>
 >>
 >> ```sh
 >> sudo netplan apply
@@ -629,7 +627,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> ip a
 >> ```
 >>
->> Dans cet exemple, l'interface privée est `eno2`.
+>> Dans cet exemple, l'interface privée s'appelle `eno2`.
 >>
 >> - Ensuite, créez un fichier de configuration de sous-interface pour le VLAN dans le fichier de configuration réseau principal. Dans cet exemple, le fichier est nommé `ifcfg-eno2.10`, ici, eno2 fait référence à l'interface réseau privée et `10` fait référence au VLAN ID.
 >>
@@ -689,13 +687,13 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> sudo su -c 'echo "8021q" >> /etc/modules'
 >> ```
 >>
->> - Pour obtenir le nom de l'interface réseau :
+>> - Récupérez les noms des interfaces et identifiez l'interface privée :
 >>
 >> ```sh
 >> ip a
 >> ```
 >>
->> Dans cet exemple, l'interface s'appelle `eno2`. Nous devons créer une sous-interface VLAN avant d'attribuer une adresse IP privée à celle-ci.
+>> Dans cet exemple, l'interface privée s'appelle `eno2`. Nous devons créer une sous-interface VLAN avant d'attribuer une adresse IP privée à celle-ci.
 >>
 >> - Utilisez la commande suivante pour créer l'interface VLAN :
 >>
@@ -703,7 +701,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >> sudo nmcli con add type vlan con-name <vlan-name> dev <parent-interface> id <vlan-id>.
 >> ```
 >>
->> Remplacez `vlan-name` par le nom de la sous-interface VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par l'ID VLAN.
+>> Remplacez `vlan-name` par le nom de la sous-interface VLAN, `parent-interface` par le nom de l'interface privée et `vlan-id` par le VLAN ID.
 >>
 >> **Dans cet exemple :**
 >>
@@ -747,9 +745,61 @@ Dans cet exemple, nous utiliserons **10** comme identifiant VLAN (balise) et **1
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+> **Windows**
+>>
+>> Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Gestionnaire de serveur ». Sélectionnez ensuite `Serveur local`{.action}, puis cliquez sur le lien `Désactivé`{.action} à côté de **Association des cartes réseau** :
+>>
+>> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
+>>
+>> Faites ensuite un clic droit sur l'interface réseau et sélectionnez `Ajouter à une nouvelle équipe`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+>>
+>> Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Nom de l'équipe**. Lorsque vous avez terminé, cliquez sur `OK`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
+>>
+>> Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet `Interfaces d'équipe`{.action} et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Propriétés`{.action}. Cliquez maintenant sur `VLAN spécifique`{.action}, et précisez le tag :
+>>
+>> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
+>>
+>> Il faut maintenant configurer l’adresse IP du VLAN. Cliquez sur le bouton `Start`{.action} du menu de démarrage, puis sur `Panneau de configuration`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
+>>
+>> Cliquez sur `Réseau et Internet`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
+>>
+>> Cliquez ensuite sur `Centre Réseau et partage`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
+>>
+>> Cliquez alors sur `Modifier les paramètres de la carte`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
+>>
+>> Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Propriétés`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+>>
+>> Dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que le NIC vRack soit une interface différente dans votre configuration. La bonne interface à sélectionner sera celle qui n'a pas l'adresse IP principale du serveur ou qui a une IP auto-attribuée.
+>>
+>> Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IPv4)`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
+>>
+>> Dans l'étape suivante, cliquez sur `Utiliser l'adresse IP suivante`{.action}. Pour « **Address IP** », tapez une adresse IP de votre plage interne. Pour « **Masque de sous-réseau** », tapez « 255.255.0.0 ».
+>>
+>> ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
+>>
+>> Pour finir, cliquez sur le bouton `OK`{.action} pour sauvegarder les modifications et enfin redémarrez le serveur.
+>>
 
 ///
 
-## Aller plus loin
+## Aller plus 
+
+[Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

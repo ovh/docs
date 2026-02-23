@@ -358,7 +358,7 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 
 ### Windows
 
-Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung "Server Manager". Wählen Sie dann `Lokaler Server`{.action} aus und klicken Sie neben "**NIC Teamvorgang**" auf den Link `Deaktiviert`{.action}:
+Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung "Server-Manager". Wählen Sie dann `Lokaler Server`{.action} aus und klicken Sie neben "**NIC Teamvorgang**" auf den Link `Deaktiviert`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
@@ -378,7 +378,7 @@ Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Sta
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Klicken Sie auf `Netzwerk and Internet`{.action}:
+Klicken Sie auf `Netzwerk und Internet`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
