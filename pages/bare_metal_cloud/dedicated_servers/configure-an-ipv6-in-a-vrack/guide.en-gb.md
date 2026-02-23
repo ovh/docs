@@ -208,7 +208,7 @@ Don't forget to configure SLAAC on your host machine.
 
 By default, Additional IP blocks routed via a vRack benefit from a standard public bandwidth of 5Gbps in Europe/Canada/US and 100Mbps in APAC regions. For a detailed overview of availability, please refer to public routing options on our [vRack product page](/links/network/vrack). 
 
-As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services, for which OVHcloud provides paid bandwidth options for users requiring higher throughput. It is important to note that bandwidth options are applied **per-vRack and per-region**. Since Additional IP addresses are tied to a region, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular region.
+As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services, for which OVHcloud provides paid bandwidth options. It is important to note that bandwidth options are applied **per-vRack and per-region**. Since Additional IP addresses are tied to a region, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular region.
 
 /// details | During the Additional IP ordering process
 
@@ -248,6 +248,11 @@ To modify the public bandwidth:
 - Within the window for the relevant region, click the `Modify bandwidth`{.action} button.
 - Select the desired bandwidth option in the panel that appears on the right-hand side, then click `Proceed to order`{.action} to validate the order.
 - Once paid, the selected bandwidth should be available to your vRack in the chosen region after a few minutes.
+
+> [!primary]
+>
+> Please note that charges for the initial month are pro-rated based on the remaining days, with the full rate effective the next billing cycle.
+>
 
 The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
 
