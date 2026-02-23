@@ -20,19 +20,22 @@ Lors d'une migration, l'adresse IP de votre service est conservée et votre appa
 ## Prérequis
 
 - Disposer d'un service OverTheBox actif.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-otb -->
+---
 
-![espace client Telecom OverTheBox](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-05-fr-otb.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](/links/control-panel/telecom-otb)
+- **Pour accéder à vos services :** `Télécom`{.action} > `OverTheBox`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:telecom-otb -->
 
 ## En pratique
 
 ### Changer d’offre
 
-La demande de changement d'offre s'effectue via votre [espace client OVHcloud](/links/manager).
-
-Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `OverTheBox`{.action} puis choisissez le service que vous souhaitez faire évoluer.
-
-Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez faire évoluer et cliquez sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 
 ![changement d'offre](images/manager-changeOffer-2024.png){.thumbnail}
 
