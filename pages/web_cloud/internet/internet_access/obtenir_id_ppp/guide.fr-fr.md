@@ -16,7 +16,17 @@ Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés 
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'un équipement (routeur, firewall) compatible PPPoE.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
+
 - Être connecté aux [API OVHcloud](/links/api).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
@@ -40,10 +50,7 @@ Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès �
 
 Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, suivez ces étapes :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-
-La référence interne est affichée dans le cadre `Accès Internet` à droite.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
 
@@ -67,7 +74,7 @@ Dans un délai approximatif de deux à trois minutes, vous recevrez un e-mail, *
 
 #### Retrouver l'email dans l'espace client OVHcloud
 
-Si vous n'avez pas accès à l'adresse e-mail de contact du compte OVHcloud, vous pouvez consulter les e-mails de service depuis l'[espace client OVHcloud](/links/manager).
+Si vous n'avez pas accès à l'adresse e-mail de contact du compte OVHcloud, vous pouvez consulter les e-mails de service depuis l'[espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx).
 
 Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action}.
 

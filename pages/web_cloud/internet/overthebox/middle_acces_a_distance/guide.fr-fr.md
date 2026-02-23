@@ -13,15 +13,22 @@ Ajouter un accès à distance à votre OverTheBox permet une gestion et une surv
 ## Prérequis
 
 - Disposer d'un service **OverTheBox** fourni par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
+<!-- CP-NAV-START:telecom-otb -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](/links/control-panel/telecom-otb)
+- **Pour accéder à vos services :** `Télécom`{.action} > `OverTheBox`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:telecom-otb -->
 
 ## En pratique
 
 ### Création de l'accès à distance
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.<br>
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox auquel vous souhaitez acceder à distance.<br>
-Cliquez sur `Accès à distance`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox auquel vous souhaitez accéder à distance et cliquez sur `Accès à distance`{.action}.
 
 Informations à inscrire dans la partie `Ajouter un accès à distance`{.action} :
 
