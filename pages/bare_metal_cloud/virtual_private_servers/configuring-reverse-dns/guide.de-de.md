@@ -1,6 +1,6 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
-excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IPv4 oder IPv6-Adresse über Ihr Kundencenter einrichten
+excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IPv4- oder IPv6-Adresse über Ihr Kundencenter einrichten
 updated: 2026-02-23
 ---
 
