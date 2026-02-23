@@ -1,57 +1,56 @@
 ---
 title: Installing Istio on OVHcloud Managed Kubernetes
-excerpt: Find out how to install Istio on OVHcloud Managed Kubernetes
+excerpt: Find out how to install Istio service mesh on an OVHcloud Managed Kubernetes cluster, deploy the Bookinfo sample app, and visualise traffic with Kiali
 updated: 2022-05-30
 ---
 
-[Istio](https://istio.io) is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
+[Istio](https://istio.io) is an open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
 
 - Control the flow of traffic between services
 - Secure the services and manage the authentication, authorization and encryption of inter-service communications
-- Apply and enforce policies on distributes services
+- Apply and enforce policies on distributed services
 - Monitor the services gathering metrics, logs and traces
 
-In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
+This tutorial shows how to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, refer to the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
 ## Downloading Istio
 
 Istio is installed in its own `istio-system` namespace and can manage services from all other namespaces.
 
-1. Go to the [Istio release page](https://github.com/istio/istio/releases) to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
+1\. Go to the [Istio release page](https://github.com/istio/istio/releases) to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
 
-    ```
-    curl -L https://istio.io/downloadIstio | sh -
-    ```
+```bash
+curl -L https://istio.io/downloadIstio | sh -
+```
 
-1. Move to the Istio package directory. For example, if the package is istio-1.11.2:  
+2\. Move to the Istio package directory. For example, if the package is istio-1.11.2:
 
-    ```
-    cd istio-1.11.2
-    ```
+```bash
+cd istio-1.11.2
+```
 
-    The installation directory contains:
+The installation directory contains:
 
-    - Sample applications in `samples/`
-    - The `istioctl` client binary in the `bin/` directory.
+- Sample applications in `samples/`
+- The `istioctl` client binary in the `bin/` directory.
 
-  
-1. Add the `istioctl` client to your PATH environment variable, on a macOS or Linux system:
+3\. Add the `istioctl` client to your PATH environment variable, on a macOS or Linux system:
 
-    ```
-    export PATH=$PWD/bin:$PATH
-    ```
+```bash
+export PATH=$PWD/bin:$PATH
+```
 
-For the rest of the tutorial, please remain on this directory.
+For the rest of the tutorial, please remain in this directory.
 
 ## Installing Istio
 
-For this installation, we use the `istioctl` command line tool that provides rich customization of the Istio control plane and of the sidecars for the Istio data plane. It has user input validation to help prevent installation errors and customization options to override any aspect of the configuration.
+This installation uses the `istioctl` command line tool that provides rich customization of the Istio control plane and of the sidecars for the Istio data plane. It has user input validation to help prevent installation errors and customization options to override any aspect of the configuration.
 
-In this tutorial you're going to install Istio with the default profile, [other profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) exists.
+In this tutorial you're going to install Istio with the default profile, [other profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) exist.
 
 ```bash
 istioctl install
@@ -77,11 +76,11 @@ Use the following instructions to deploy the `Kiali` dashboard, along with `Prom
 
 Install Kiali and the other addons and wait for them to be deployed:
 
-```
+```bash
 kubectl apply -f samples/addons
 ```
 
-In my example cluster I get:
+Example output:
 
 ```console
 $ kubectl apply -f samples/addons
@@ -102,45 +101,43 @@ deployment.apps/prometheus created
 
 ## Verifying the installation
 
-1. List the services in `istio-system` namespace using `kubectl get services -n istio-system` and ensure that the following services are deployed: `istiod`, `istio-ingressgateway` and the addons: `grafana`, `jaeger`, `kiali`, `prometheus`, `tracing`and `zipkin`.
+1\. List the services in `istio-system` namespace using `kubectl get services -n istio-system` and ensure that the following services are deployed: `istiod`, `istio-ingressgateway` and the addons: `grafana`, `jaeger`, `kiali`, `prometheus`, `tracing` and `zipkin`.
 
-    In my example cluster I get:
+Example output:
 
-    ```console
-$  kubectl get services -n istio-system
-    NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                                      AGE
-    grafana                ClusterIP      10.3.75.230    <none>          3000/TCP                                     2m19s
-    istio-ingressgateway   LoadBalancer   10.3.175.205   51.178.69.212   15021:31288/TCP,80:32588/TCP,443:30085/TCP   4m38s
-    istiod                 ClusterIP      10.3.31.181    <none>          15010/TCP,15012/TCP,443/TCP,15014/TCP        4m49s
-    jaeger-collector       ClusterIP      10.3.250.26    <none>          14268/TCP,14250/TCP,9411/TCP                 2m16s
-    kiali                  ClusterIP      10.3.255.49    <none>          20001/TCP,9090/TCP                           2m15s
-    prometheus             ClusterIP      10.3.9.246     <none>          9090/TCP                                     2m15s
-    tracing                ClusterIP      10.3.220.9     <none>          80/TCP,16685/TCP                             2m16s
-    zipkin                 ClusterIP      10.3.165.183   <none>          9411/TCP                                     2m16s
-    
+```console
+$ kubectl get services -n istio-system
+NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                                      AGE
+grafana                ClusterIP      10.3.75.230    <none>          3000/TCP                                     2m19s
+istio-ingressgateway   LoadBalancer   10.3.175.205   51.178.69.212   15021:31288/TCP,80:32588/TCP,443:30085/TCP   4m38s
+istiod                 ClusterIP      10.3.31.181    <none>          15010/TCP,15012/TCP,443/TCP,15014/TCP        4m49s
+jaeger-collector       ClusterIP      10.3.250.26    <none>          14268/TCP,14250/TCP,9411/TCP                 2m16s
+kiali                  ClusterIP      10.3.255.49    <none>          20001/TCP,9090/TCP                           2m15s
+prometheus             ClusterIP      10.3.9.246     <none>          9090/TCP                                     2m15s
+tracing                ClusterIP      10.3.220.9     <none>          80/TCP,16685/TCP                             2m16s
+zipkin                 ClusterIP      10.3.165.183   <none>          9411/TCP                                     2m16s
 ```
 
-    As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` for `istio-ingressgateway` `EXTERNAL-IP` field. Please try again in a few minutes to get the external URL to call your Istio. 
+As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` for `istio-ingressgateway` `EXTERNAL-IP` field. Please try again in a few minutes to get the external URL to call your Istio.
 
-1. List the pods in `istio-system` namespace using `kubectl get pods -n istio-system` and ensure that the following pods are deployed and all containers are up and running: `istiod-*`, `istio-ingressgateway-*` and the addons: `grafana-*`, `jaeger-*`, `kiali-*`and `prometheus-*`.
+2\. List the pods in `istio-system` namespace using `kubectl get pods -n istio-system` and ensure that the following pods are deployed and all containers are up and running: `istiod-*`, `istio-ingressgateway-*` and the addons: `grafana-*`, `jaeger-*`, `kiali-*` and `prometheus-*`.
 
-    In my example cluster I get:
+Example output:
 
-    ```console
+```console
 $ kubectl get pods -n istio-system
-    NAME                                    READY   STATUS    RESTARTS   AGE
-    grafana-556f8998cd-kmn6l                1/1     Running   0          4m23s
-    istio-ingressgateway-65668fd4dd-t8t4q   1/1     Running   0          6m43s
-    istiod-5f7bb95ddf-25f27                 1/1     Running   0          6m54s
-    jaeger-5f65fdbf9b-ctjkn                 1/1     Running   0          4m20s
-    kiali-787bc487b7-h9ck9                  1/1     Running   0          4m19s
-    prometheus-9f4947649-7wszv              2/2     Running   0          4m19s
-    
+NAME                                    READY   STATUS    RESTARTS   AGE
+grafana-556f8998cd-kmn6l                1/1     Running   0          4m23s
+istio-ingressgateway-65668fd4dd-t8t4q   1/1     Running   0          6m43s
+istiod-5f7bb95ddf-25f27                 1/1     Running   0          6m54s
+jaeger-5f65fdbf9b-ctjkn                 1/1     Running   0          4m20s
+kiali-787bc487b7-h9ck9                  1/1     Running   0          4m19s
+prometheus-9f4947649-7wszv              2/2     Running   0          4m19s
 ```
 
 ## Deploying an application
 
-To verify that Istio is truly working in the cluster, you are going to deploy a test application. We have choosen the [Bookinfo](https://istio.io/docs/examples/bookinfo/) application, as it's a multi-technology multi-instance microservices-based application that let's you verify if Istio works as intended.
+To verify that Istio is working in the cluster, deploy the [Bookinfo](https://istio.io/docs/examples/bookinfo/) test application — a multi-service microservices app that lets you verify Istio works as intended.
 
 ![Bookinfo](images/installing-istio-bookinfo.png){.thumbnail}
 
@@ -148,19 +145,19 @@ To verify that Istio is truly working in the cluster, you are going to deploy a 
 
 The [Istio-Sidecar-injector](https://istio.io/docs/setup/kubernetes/sidecar-injection/#automatic-sidecar-injection), that you installed with Istio, will automatically inject Envoy containers into your application pods. The injector assumes the application pods are running in namespaces labeled with `istio-injection=enabled`. 
 
-Let's create and label a `istio-apps` namespace:
+Let's create and label an `istio-apps` namespace:
 
-```
+```bash
 kubectl create namespace istio-apps
 ```
 
 Then, add the `istio-injection=enabled` label:
 
-```
+```bash
 kubectl label namespace istio-apps istio-injection=enabled
 ```
 
-In my example cluster I get:
+Example output:
 
 ```console
 $ kubectl create namespace istio-apps
@@ -172,11 +169,11 @@ namespace/istio-apps labeled
 
 And now, deploy the `bookinfo` manifest into the namespace:
 
-```
+```bash
 kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
 ```
 
-The above command installs and launches, in `istio-apps` namespace, all four microservices as illustrated in the above diagram: `details`, `productpage`, `ratings` and  the three versions of `reviews`:
+The above command installs and launches, in `istio-apps` namespace, all four microservices as illustrated in the above diagram: `details`, `productpage`, `ratings` and the three versions of `reviews`:
 
 ```console
 $ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
@@ -199,23 +196,22 @@ deployment.apps/productpage-v1 created
 
 Now you can verify that all services and pods are correctly defined and running:
 
-1. Use `kubectl -n istio-apps get services` to verify that the `details`, `productpage`, `ratings` and `reviews` services are up un running:
+1\. Use `kubectl -n istio-apps get services` to verify that the `details`, `productpage`, `ratings` and `reviews` services are up and running:
 
-    ```console
+```console
 $ kubectl -n istio-apps get services
 NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
 details       ClusterIP   10.3.131.63    <none>        9080/TCP   6s
 productpage   ClusterIP   10.3.141.189   <none>        9080/TCP   4s
 ratings       ClusterIP   10.3.133.82    <none>        9080/TCP   5s
 reviews       ClusterIP   10.3.60.119    <none>        9080/TCP   5s
-    
 ```
 
-1. Use `kubectl -n istio-apps get pods` to verify that the `details-v1-*`, `productpage-v1-*`, `ratings-v1-*`, `reviews-v1-*`, `reviews-v2-*` and `reviews-v3-*` are up and running:
- 
-    In the case of my example cluster:
+2\. Use `kubectl -n istio-apps get pods` to verify that the `details-v1-*`, `productpage-v1-*`, `ratings-v1-*`, `reviews-v1-*`, `reviews-v2-*` and `reviews-v3-*` are up and running:
 
-    ```console
+Example output:
+
+```console
 $ kubectl -n istio-apps get pods
 NAME                              READY   STATUS    RESTARTS   AGE
 details-v1-79f774bdb9-wnklv       2/2     Running   0          88s
@@ -224,7 +220,6 @@ ratings-v1-b6994bb9-s6kwq         2/2     Running   0          88s
 reviews-v1-545db77b95-rf58h       2/2     Running   0          88s
 reviews-v2-7bf8c9648f-5dt4x       2/2     Running   0          88s
 reviews-v3-84779c7bbc-f5jbw       2/2     Running   0          87s
-    
 ```
 
 As you can see, each pod has 2 containers, the app container and the Istio sidecar that is deployed with it.
@@ -241,30 +236,27 @@ $ kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadat
 Now that the Bookinfo services are up and running, you need to make the application accessible from outside of your Kubernetes cluster, e.g., from a browser.
 An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways) is used for this purpose.
 
-1. Associate this application with the Istio gateway:
+1\. Associate this application with the Istio gateway:
 
-    ```console
+```console
 $ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml -n istio-apps
-    gateway.networking.istio.io/bookinfo-gateway created
-    virtualservice.networking.istio.io/bookinfo created
-    
+gateway.networking.istio.io/bookinfo-gateway created
+virtualservice.networking.istio.io/bookinfo created
 ```
 
-1. Ensure that there are no issues with the configuration:
+2\. Ensure that there are no issues with the configuration:
 
-    ```console
+```console
 $ istioctl analyze -n istio-apps
-    ✔ No validation issues found when analyzing namespace: istio-apps.
-    
+✔ No validation issues found when analyzing namespace: istio-apps.
 ```
 
-1. Confirm the gateway has been created:
-    
-    ```console
+3\. Confirm the gateway has been created:
+
+```console
 $ kubectl -n istio-apps get gateway
-    NAME               AGE
-    bookinfo-gateway   53s
-    
+NAME               AGE
+bookinfo-gateway   53s
 ```
 
 ### Determining the ingress IP and port
@@ -286,7 +278,7 @@ $ echo $GATEWAY_URL
 
 To confirm that the Bookinfo application is running, run the following `curl` command:
 
-```
+```bash
 curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
 ```
 
@@ -303,18 +295,18 @@ You can also point your browser to `http://<YOUR_GATEWAY_URL>/productpage` (in m
 
 ## Visualize the traffic
 
-As we installed Istio addons, we can access the `Kiali` dashboard. The following command will create a tunnel between the Kiali service and your machine and then open the dashboard link in your favorite browser:
+With the Istio addons installed, you can access the `Kiali` dashboard. The following command will create a tunnel between the Kiali service and your machine and then open the dashboard link in your favorite browser:
 
-```
+```bash
 istioctl dashboard kiali
 ```
 
 ![Kiali](images/installing-istio-kiali.png){.thumbnail}
 
-Now, we will take a look to the traffic. For that, in the left navigation menu, select `Graph` and in the `Namespace` drop down, select `istio-apps`.
+To view traffic, in the left navigation menu, select `Graph` and in the `Namespace` drop down, select `istio-apps`.
 
 > [!warning]
-> To see trace data, you must send requests to your service. In order to send 100 requests to the productpage service, use the following command:
+> To see trace data, you must send requests to your service. To send 100 requests to the productpage service, use the following command:
 > ```
 > for i in `seq 1 100`; do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
 > ```
@@ -357,14 +349,14 @@ Application cleanup successful
 
 To confirm the shutdown you can list the virtual services, destination rules, gateway and pods in the `istio-apps` namespace:
 
-```
+```bash
 kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
 kubectl -n istio-apps get destinationrules  #-- there should be no destination rules
 kubectl -n istio-apps get gateway           #-- there should be no gateway
 kubectl -n istio-apps get pods              #-- there should be no pod
 ```
 
-In my example cluster:
+Example output:
 
 ```console
 $ kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
@@ -379,7 +371,7 @@ No resources found in istio-apps namespace.
 
 Now you can uninstall Istio with `istioctl` command:
 
-```
+```bash
 istioctl manifest generate | kubectl delete --ignore-not-found=true -f -
 ```
 
@@ -387,17 +379,17 @@ This command deletes the RBAC permissions and all resources hierarchically under
 
 The istio-system namespace is not removed by default. If no longer needed, use the following command to remove it:
 
-```
+```bash
 kubectl delete namespace istio-system
 ```
 
 And remove `istio-apps` namespace:
 
-```
+```bash
 kubectl delete namespace istio-apps
 ```
 
-Example on my cluster:
+Example output:
 
 ```console
 $ istioctl manifest generate | kubectl delete --ignore-not-found=true -f -
