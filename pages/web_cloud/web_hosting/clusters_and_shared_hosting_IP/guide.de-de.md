@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Liste der IP-Adressen pro Cluster"
 excerpt: "Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
 
 <style>

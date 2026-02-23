@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Lista dos endereços IP por cluster"
 excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
 
 <style>
@@ -62,7 +62,7 @@ Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, cl
 >>
 >> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
-**Clique na número do cluster abaixo onde se encontra o seu alojamento web para mostrar os endereços IP correspondentes.**
+**Clique no número do cluster abaixo onde se encontra o seu alojamento web para mostrar os endereços IP correspondentes.**
 
 /// details | Cluster 024
 

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Lista adresów IP według klastra"
-excerpt: "Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach"
-updated: 2026-01-07
+excerpt: "Poznaj wszystkie dostępne adresy IP na naszych hostingach"
+updated: 2026-02-23
 ---
 
 <style>
@@ -26,7 +26,7 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 - opcje (CDN, płatny certyfikat SSL, darmowy certyfikat SSL itp.),
 - szukany kraj.
 
-**Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach.**
+**Poznaj wszystkie dostępne adresy IP na naszych hostingach.**
 
 > [!primary]
 >
@@ -62,7 +62,7 @@ Aby poznać klaster hostingu WWW, w którym znajduje się Twoja usługa, kliknij
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
-**Kliknij poniżej na numer klastra, w którym znajduje się Twoje hostowanie, aby wyświetlić odpowiednie adresy IP.**
+**Kliknij poniżej na numer klastra, w którym znajduje się Twój hosting, aby wyświetlić odpowiednie adresy IP.**
 
 /// details | Klaster 024
 
