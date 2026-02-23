@@ -17,6 +17,17 @@ Si vous ne les connaissez pas, vous pouvez les récupérer en suivant les étape
 - Disposer d'un équipement (routeur, firewall) compatible PPPoE.
 - Disposer des identifiants PPPoE de votre accès Internet OVHcloud.
 
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
+
 ## En pratique
 
 Les identifiants PPPoE vous sont envoyés par e-mail (à l'adresse e-mail de contact de votre compte OVHcloud) lors de la livraison de votre accès.<br>
@@ -39,11 +50,7 @@ Si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHclo
 
 ### Connaître le profil de son modem
 
-Le profil de votre accès est disponible sur l'espace client. Pour le retrouver, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+Le profil de votre accès est disponible dans votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sur la page de votre accès Internet.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
 
