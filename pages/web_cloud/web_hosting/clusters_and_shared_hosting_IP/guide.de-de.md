@@ -4,6 +4,20 @@ excerpt: "Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu v
 updated: 2026-01-07
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Ziel 
 
 In dieser Anleitung finden Sie alle IP-Adressen für OVHcloud Webhostings. So können Sie beispielsweise herausfinden, welche IP-Adresse in Ihren DNS-Zonen eingetragen werden muss, bezüglich der folgenden Kriterien:
@@ -47,7 +61,9 @@ Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, klicken Sie 
 >>
 >> ![Cluster-Nummer und Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
-### Cluster 024
+**Klicken Sie unten auf die Nummer des Clusters, in dem sich Ihr Webhosting befindet, um die entsprechenden IP-Adressen anzuzeigen.**
+
+/// details | Cluster 024
 
 #### IP-Adressen der Cluster nach Land
 
@@ -79,27 +95,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-#### IP-Adressen der Cluster nach Land
-
-|Country|Country Code|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Wenn Sie die Option **Shared CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.204.51
-```
-
-Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 #### IP-Adressen der Cluster nach Land
 
@@ -131,7 +129,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 #### IP-Adressen der Cluster nach Land
 
@@ -162,7 +162,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 #### IP-Adressen der Cluster nach Land
 
@@ -193,7 +195,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 #### IP-Adressen der Cluster nach Land
 
@@ -224,7 +228,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 #### IP-Adressen der Cluster nach Land
 
@@ -255,7 +261,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 #### IP-Adressen der Cluster nach Land
 
@@ -286,7 +294,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 #### IP-Adressen der Cluster nach Land
 
@@ -317,7 +327,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 #### IP-Adressen der Cluster nach Land
 
@@ -348,7 +360,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 #### IP-Adressen der Cluster nach Land
 
@@ -379,7 +393,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 #### IP-Adressen der Cluster nach Land
 
@@ -410,7 +426,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 #### IP-Adressen der Cluster nach Land
 
@@ -441,7 +459,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 #### IP-Adressen der Cluster nach Land
 
@@ -472,7 +492,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 #### IP-Adressen der Cluster nach Land
 
@@ -503,7 +525,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 #### IP-Adressen der Cluster nach Land
 
@@ -535,7 +559,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 #### IP-Adressen der Cluster nach Land
 
@@ -567,7 +593,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 #### IP-Adressen der Cluster nach Land
 
@@ -599,7 +627,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 #### IP-Adressen der Cluster nach Land
 
@@ -631,7 +661,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 #### IP-Adressen der Cluster nach Land
 
@@ -663,7 +695,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 #### IP-Adressen der Cluster nach Land
 
@@ -695,7 +729,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 #### IP-Adressen der Cluster nach Land
 
@@ -727,7 +763,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 #### IP-Adressen der Cluster nach Land
 
@@ -759,7 +797,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 #### IP-Adressen der Cluster nach Land
 
@@ -791,7 +831,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 #### IP-Adressen der Cluster nach Land
 
@@ -810,6 +852,8 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Weiterführende Informationen
 

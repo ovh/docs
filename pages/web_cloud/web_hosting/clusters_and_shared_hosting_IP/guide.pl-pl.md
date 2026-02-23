@@ -4,6 +4,20 @@ excerpt: "Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach"
 updated: 2026-01-07
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Wprowadzenie 
 
 W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięki temu dowiesz się na przykład, jaki adres IP wpisać w strefach DNS w zależności od elementów takich jak:
@@ -48,7 +62,9 @@ Aby poznać klaster hostingu WWW, w którym znajduje się Twoja usługa, kliknij
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
-### Klaster 024
+**Kliknij poniżej na numer klastra, w którym znajduje się Twoje hostowanie, aby wyświetlić odpowiednie adresy IP.**
+
+/// details | Klaster 024
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -80,27 +96,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 91.134.248.230
 ```
 
-### Klaster 051
+///
 
-Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
-|Kraj|Kod kraju|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
-
-```bash
-46.105.204.51
-```
-
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
-```bash
-51.161.94.36
-```
-
-### Klaster 100
+/// details | Klaster 100
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -132,7 +130,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 54.36.142.130
 ```
 
-### Klaster 102
+///
+
+/// details | Klaster 102
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -163,7 +163,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.39.29.130
 ```
 
-### Klaster 103
+///
+
+/// details | Klaster 103
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -194,7 +196,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.52.162
 ```
 
-### Klaster 105
+///
+
+/// details | Klaster 105
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -225,7 +229,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.37.162
 ```
 
-### Klaster 106
+///
+
+/// details | Klaster 106
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -256,7 +262,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.47.98
 ```
 
-### Klaster 107
+///
+
+/// details | Klaster 107
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -287,7 +295,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.52.18
 ```
 
-### Klaster 110
+///
+
+/// details | Klaster 110
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -318,7 +328,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.39.194
 ```
 
-### Klaster 111
+///
+
+/// details | Klaster 111
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -349,7 +361,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.38.50
 ```
 
-### Klaster 112
+///
+
+/// details | Klaster 112
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -380,7 +394,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.39.53.162
 ```
 
-### Klaster 113
+///
+
+/// details | Klaster 113
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -411,7 +427,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.39.18
 ```
 
-### Klaster 114
+///
+
+/// details | Klaster 114
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -442,7 +460,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.42.162
 ```
 
-### Klaster 115
+///
+
+/// details | Klaster 115
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -473,7 +493,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.41.162
 ```
 
-### Klaster 117
+///
+
+/// details | Klaster 117
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -504,7 +526,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.50.34
 ```
 
-### Klaster 120
+///
+
+/// details | Klaster 120
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -536,7 +560,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.48.162
 ```
 
-### Klaster 121
+///
+
+/// details | Klaster 121
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -568,7 +594,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.48.114
 ```
 
-### Klaster 123
+///
+
+/// details | Klaster 123
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -600,7 +628,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.41.82
 ```
 
-### Klaster 126
+///
+
+/// details | Klaster 126
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -632,7 +662,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.42.226
 ```
 
-### Klaster 127
+///
+
+/// details | Klaster 127
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -664,7 +696,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.54.114
 ```
 
-### Klaster 128
+///
+
+/// details | Klaster 128
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -696,7 +730,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.37.210
 ```
 
-### Klaster 129
+///
+
+/// details | Klaster 129
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -728,7 +764,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.48.82
 ```
 
-### Klaster 130
+///
+
+/// details | Klaster 130
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -760,7 +798,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.43.82
 ```
 
-### Klaster 131
+///
+
+/// details | Klaster 131
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -792,7 +832,9 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 5.135.42.194
 ```
 
-### Klaster 151
+///
+
+/// details | Klaster 151
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -811,6 +853,8 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Sprawdź również
 
