@@ -46,8 +46,8 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
     - [Tâches](#tasks)
 - [Stockage](#storage)
     - [Ajouter un fichier](#storage-add)
-    - [Partager un fichier ou un dossier](#storage-add)
-    - [Éditer un document](#onlyoffice)
+    - [Partager un fichier ou un dossier](#storage-share)
+    - [Éditer un document](#storage-onlyoffice)
 - [Filtres](#filters)
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
@@ -498,7 +498,7 @@ Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-des
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail .w-600}
 
-#### Partager un fichier ou un dossier  <a name="storage-share"></a>
+#### Partager un fichier ou un dossier <a name="storage-share"></a>
 
 Le partage vous permet de donner accès à un dossier ou à un fichier sur votre stockage à une personne tierce, hors de votre compte Zimbra.
 
@@ -531,29 +531,29 @@ L'invité reçoit un e-mail l'invitant à créer un compte Zimbra composé d'un 
 
 ![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail .w-600}
 
-#### Éditer un document  <a name="storage-onlyoffice"></a>
+#### Éditer un document <a name="storage-onlyoffice"></a>
 
 > [!success]
 >
 > La fonctionnalité d'édition de documents depuis l'espace « Mallette » n'est disponible qu'à partir de l'offre Zimbra Pro.
 
-Depuis la Malette de votre compte Zimbra, il est possible d'éditer directement vos fichiers textes, tableurs ou présentations à l'aide de la suite ONLYOFFICE intégrée à votre interface. Pour éditer vos documents:
+Depuis la Mallette de votre compte Zimbra, vous pouvez éditer vos fichiers texte, tableurs ou présentations avec la suite ONLYOFFICE intégrée. Pour éditer un document :
 
 - Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour accéder à votre espace de stockage.
 - Sélectionnez le fichier que vous souhaitez éditer.
-- Dans la barre supérieure, cliquez sur `Éditer`{.action}
+- Dans la barre supérieure, cliquez sur `Éditer`{.action}.
 
 ![Zimbra - storage](images/zimbra-storage-onlyoffice-01.png){.thumbnail .w-600}
 
-- L'éditeur ONLYOFFICE s'affiche dans un nouvelle onglet.
+- L'éditeur ONLYOFFICE s'affiche dans un nouvel onglet.
 
 ![Zimbra - storage](images/zimbra-storage-onlyoffice-02.png){.thumbnail .w-600}
 
-Les modifications que vous faites dans l'éditeur sont automatiquement enregistrés pendant son édition ou lorsque vous fermer l'onglet.
+Les modifications que vous faites dans l'éditeur sont automatiquement enregistrées pendant son édition ou lorsque vous fermez l'onglet.
 
 > [!success]
 >
-> Si vous souhaitez plus d'information sur l'édition de documents sur ONLYOFFICE, [consulter la documentation officielle](https://helpcenter.onlyoffice.com/docs).
+> Si vous souhaitez plus d'informations sur l'édition de documents sur ONLYOFFICE, [consultez la documentation officielle](https://helpcenter.onlyoffice.com/docs).
 
 ### Filtres <a name="filters"></a>
 
