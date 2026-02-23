@@ -306,7 +306,7 @@ Abra `Centro de redes y recursos compartidos`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Haga clic en `Cambiar cconfiguración del adaptador`{.action}.
+Haga clic en `Cambiar configuración del adaptador`{.action}.
 
 ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 

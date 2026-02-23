@@ -321,7 +321,7 @@ Fai doppio clic su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Clicca su `Utilizza il seguente indirizzo IP`{.action} Inserisci qualsiasi **indirizzo IP** della tua gamma privata e la **maschera di sottorete** appropriata (`255.255.0.0` in questo esempio) nel campo corrispondente.
+Clicca su `Utilizza il seguente indirizzo IP`{.action}. Inserisci qualsiasi **Indirizzo IP** della tua gamma privata e la **maschera di sottorete** appropriata (`255.255.0.0` in questo esempio) nel campo corrispondente.
 
 ![Utilizza questo indirizzo IP](images/windows_use_following_ip_address.png){.thumbnail}
 

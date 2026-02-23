@@ -370,7 +370,7 @@ Na janela que aparece, crie uma nova equipa escrevendo um nome de equipa no camp
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Em seguida, deve indicar a etiqueta da VLAN. No painel "**ADAPTADORES E INTERFACES**" do ecrã "**Agregação de NICs***", vá para o separador `Interfaces de Equipa`{.action} e clique com o botão direito do rato na interface que acabou de adicionar à nova equipa e clique em `Propriedades`{.action}. Depois, clique em `VLAN específica`{.action} e indique a etiqueta:
+Em seguida, deve indicar a etiqueta da VLAN. No painel "**ADAPTADORES E INTERFACES**" do ecrã "**Agregação de NICs**", vá para o separador `Interfaces de Equipa`{.action} e clique com o botão direito do rato na interface que acabou de adicionar à nova equipa e clique em `Propriedades`{.action}. Depois, clique em `VLAN específica`{.action} e indique a etiqueta:
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 

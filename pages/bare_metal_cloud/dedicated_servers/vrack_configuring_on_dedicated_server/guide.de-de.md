@@ -299,7 +299,7 @@ Loggen Sie sich über Remote-Desktopverbindung auf Ihrem Windows-Server ein und 
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Klicken Sie auf `Netzwerk and Internet`{.action}.
+Klicken Sie auf `Netzwerk und Internet`{.action}.
 
 ![Internet](images/windows_network_and_internet.png){.thumbnail}
 
