@@ -36,7 +36,7 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet �
 
 ### Réaliser une demande de déménagement 
 
-Pour réaliser une demande de déménagement, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Déménager`{.action} dans le cadre « Informations Générales ».
+Pour réaliser une demande de déménagement, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite. Sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Déménager`{.action} dans le cadre « Informations Générales ».
 
 ![accès déménagement](images/move01-edit-2022.png){.thumbnail}
 

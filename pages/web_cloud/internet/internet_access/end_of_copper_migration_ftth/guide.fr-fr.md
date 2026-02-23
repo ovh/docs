@@ -149,9 +149,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >>
 >> Maintenant que vous avez récupéré et confirmé les bonnes informations de raccordement à la fibre, il est nécessaire de déménager techniquement votre accès depuis l'adresse actuelle (celle qui correspond au réseau cuivre) vers la nouvelle adresse (correspondant au réseau fibre).
 >>
->> Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), accédez à l'onglet `Télécom`{.action}.
->>
->> Effectuez une demande de déménagement de votre accès en suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) » et choisissez l'offre Fibre Pro.
+>> Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), effectuez une demande de déménagement de votre accès en suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) ». Choisissez l'offre Fibre Pro.
 >> 
 >> Renseignez l'adresse postale obtenue sur le site de l'ARCEP (Etape 1) et confirmée sur notre outil d'éligibilité (Etape 2). L'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez à nouveau qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
 >>
