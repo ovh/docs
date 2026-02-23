@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-updated: 2025-04-28
+updated: 2026-02-24
 ---
 
 <style>
@@ -111,7 +111,7 @@ Dans la fenêtre qui apparaît, indiquez la nouvelle taille du volume et cliquez
 
 ![tableau de bord](images/increase-disk-03.png){.thumbnail}
 
-Assurez-vous que le volume est attaché à votre instance avant de continuer. Si ce n'est pas le cas, cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
+Une fois cette opération terminée, détachez le volume de l'instance et rattachez-le afin de vous assurer que les paramètres QoS mis à jour (IOPS et bande passante) sont correctement appliqués.
 
 ### Etendre la partition (instance Linux)
 
@@ -207,6 +207,8 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 ### Etendre la partition (instance Windows)
 
+Avant de continuer, rattachez le volume à l'instance. Cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
+
 Établissez une connexion RDP (Remote Desktop) sur votre instance Windows.
 
 Une fois connecté, faites un clic-droit sur le bouton `Démarrer`{.action} et ouvrez la `Gestion des disques`{.action}.
@@ -234,6 +236,8 @@ Cliquez sur `Terminer`{.action} pour terminer le processus.
 Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Une fois cette opération terminée, détachez le volume de l'instance et rattachez-le afin de vous assurer que les paramètres QoS mis à jour (IOPS et bande passante) sont correctement appliqués.
 
 ## Aller plus loin
 
