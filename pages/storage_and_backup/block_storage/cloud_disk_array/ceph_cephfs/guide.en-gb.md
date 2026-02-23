@@ -34,7 +34,10 @@ Currently, only a single file system can be enabled, and it must be named fs-def
 
 The first step is to list your existing CephFS instances. Here, `serviceName` corresponds to the fsid of your cluster:
 
-You can enable and manage CephFS on your Cloud Disk Array (CDA) via the OVHcloud API. Once enabled, CephFS functions like a private, dedicated file system for your use. You can use both RBD and CephFS simultaneously, but note that they share the same underlying hardware.
+> [!api]
+>
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/cephfs
+>
 
 ![api request 01](images/api_request_01.png){.thumbnail}
 

@@ -139,7 +139,7 @@ You can now select this key in [Step 4](#step-4-create-the-instance) to add it t
 Before creating your instance, we recommend to consider the way the instance will be used in terms of networking.
 
 - If you do not need to configure the instance with a private network at this time, you can proceed with [step 4](#step-4-create-the-instance). You can create an instance exposed to the public internet. (See **Public Mode** [below](#networking-modes).)
-- If the instance needs to be connected to a new private network (OVHcloud [vRack](/links/network/vrack)), **create your vRack first** before continuing. You can find the details in the [Public Cloud vRack guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+- If the instance needs to be connected to a new private network (OVHcloud [vRack](/links/network/vrack)), please note that the vRack is created automatically when you create your Public Cloud project. No prior action is therefore required. For more information, see the [Public Cloud vRack guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
 
@@ -178,13 +178,15 @@ On the **Home** page, click `Create an instance`{.action}.
 
 #### Step 4.1: Instance Name
 
-Enter a complete name for your instance. The instance model's commercial reference is the default value.
+Enter a full name for your instance. The commercial reference of the instance model is the default value. If necessary, we can also add the region and date to facilitate the identification and management of our instances.
 
 #### Step 4.2: Select a location
 
 Select a [region](/links/public-cloud/regions-pci) closest to your users or customers. Note that if you select a **Local Zone** in this step, network limitations will apply to the instance (see [Step 3](#networking-modes)).
 
 Also refer to the information on the [Local Zones web page](/links/public-cloud/local-zones) and the [Local Zones capabilities documentation](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+The choice of region determines how your instance is deployed (1-AZ, 3-AZ, or Local Zones). To understand the differences in terms of resilience, availability, and architecture, see our guide [Deployment Mode Comparison and Resilience – Understanding 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
 
 #### Step 4.3: Select a model
 
@@ -266,7 +268,7 @@ Click on the tabs below to view their presentation:
 
 #### Step 4.6: Configure backup settings
 
-You can enable automated backups by checking this option. Take the time to review the pricing information and additional details before continuing.
+You can enable [automated backups](/pages/public_cloud/compute/save_an_instance) by checking this option, which is enabled by default. Please take the time to review the pricing information and additional details before proceeding.
 
 Next, select the rotation type, i.e., the maximum number of backups kept in the history: 7 or 14 days.
 
@@ -276,14 +278,14 @@ In this step, you will configure the network for your instance.
 
 **Private network**
 
-You can connect your instance to a [private network](#networking-modes) and assign it a [floating IP](/links/public-cloud/floating-ip). In this case, no dedicated public IP address will be assigned.
+You can connect your instance to a [private network](#networking-modes) and assign it a [floating IP](/links/public-cloud/floating-ip).
 
 By clicking on `Create a private network`{.action}, you can create one directly:
 
 - Name the network
-- Choose the VLAN ID
-- Define the CIDR
-- Enable DHCP by checking the corresponding box, if necessary
+- **Select the VLAN ID:** identifier used to interconnect multiple services and resources within the same private network, via a common network segmentation number
+- **Define the CIDR:** range of IP addresses for the network
+- **Enable DHCP by checking the corresponding box, if necessary:** enable this option if you want IP addresses to be assigned automatically
 
 > [!primary]
 >

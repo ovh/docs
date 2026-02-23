@@ -137,7 +137,7 @@ Vous pouvez dorénavant sélectionner cette clé à l'[Étape 4](#étape-4--cré
 Avant de créer votre instance, nous vous recommandons d'étudier la manière dont l'instance sera utilisée en termes de mise en réseau.
 
 - Si vous n'avez pas besoin de configurer l'instance avec un réseau privé pour le moment, vous pouvez passer à l'[étape 4](#étape-4--créer-linstance). Vous pouvez créer une instance exposée à l'Internet public (voir le **Mode Public** [ci-dessous](#networking-modes).)
-- Si l'instance doit être connectée à un nouveau réseau privé (OVHcloud [vRack](/links/network/vrack)), **créez d'abord votre vRack** avant de continuer. Retrouvez les détails dans le [guide sur le vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+- Si l'instance doit être connectée à un nouveau réseau privé (OVHcloud [vRack](/links/network/vrack)), notez que le vRack est créé automatiquement lors de la création de votre projet Public Cloud. Aucune action préalable n’est donc requise. Pour plus d’informations, consultez le [guide sur le vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
 
@@ -176,13 +176,15 @@ Sur la page **Accueil**, cliquez sur `Créer une instance`{.action}.
 
 #### Étape 4.1 : Nom de l'instance
 
-Entrez un nom complet pour votre instance. La référence commerciale du modèle d'instance est la valeur par défaut.
+Entrez un nom complet pour votre instance. La référence commerciale du modèle d'instance est la valeur par défaut. Si nécessaire, nous pouvons également ajouter la région et la date pour faciliter l’identification et la gestion de nos instances.
 
 #### Étape 4.2 : Sélectionnez une localisation
 
 Sélectionnez une [région](/links/public-cloud/regions-pci) la plus proche de vos utilisateurs ou clients. Notez que si vous sélectionnez une **Local Zone** à cette étape, des limitations de réseau s'appliqueront à l'instance (voir [Étape 3](#networking-modes)).
 
 Reportez-vous également aux informations de la [page web des Local Zones](/links/public-cloud/local-zones) et de la [documentation des capacités des Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+Le choix de la région détermine le mode de déploiement de votre instance (1-AZ, 3-AZ ou Local Zones). Pour comprendre les différences en termes de résilience, de disponibilité et d’architecture, consultez notre guide [Comparaison et résilience des modes de déploiement – Comprendre les régions 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details).
 
 #### Étape 4.3 : Sélectionnez un modèle
 
@@ -264,7 +266,7 @@ Cliquez sur les onglets ci-dessous pour afficher leur présentation :
 
 #### Étape 4.6 : Configurez les paramètres de sauvegarde
 
-Vous pouvez activer [les sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) en cochant cette option. Prenez le temps de consulter les informations tarifaires et les détails complémentaires avant de poursuivre.
+Vous pouvez activer [les sauvegardes automatisées](/pages/public_cloud/compute/save_an_instance) en cochant cette option, activée par défaut. Prenez le temps de consulter les informations tarifaires et les détails complémentaires avant de poursuivre.
 
 Ensuite, sélectionnez le type de rotation, c’est-à-dire le nombre maximum de sauvegardes conservées en historique : 7 ou 14 jours.
 
@@ -274,14 +276,14 @@ Dans cette étape, vous allez configurer le réseau de votre instance.
 
 **Réseau privé**
 
-Vous pouvez connecter votre instance à un [réseau privé](#networking-modes) et lui attribuer une [Floating IP](/links/public-cloud/floating-ip). Dans ce cas, aucune adresse IP publique dédiée ne sera assignée.
+Vous pouvez connecter votre instance à un [réseau privé](#networking-modes) et lui attribuer une [Floating IP](/links/public-cloud/floating-ip).
 
 En cliquant sur `Créer un réseau privé`{.action}, vous pouvez en créer un directement :
 
 - Nommer le réseau
-- Choisir le VLAN ID
-- Définir le CIDR
-- Activer le DHCP en cochant la case correspondante, si nécessaire
+- **Choisir le VLAN ID:** identifiant permettant d’interconnecter plusieurs services et ressources au sein d’un même réseau privé, via un numéro de segmentation réseau commun
+- **Définir le CIDR:** plage d’adresses IP du réseau
+- **Activer le DHCP en cochant la case correspondante, si nécessaire:** activez cette option si vous souhaitez une attribution automatique des adresses IP
 
 > [!primary]
 >
