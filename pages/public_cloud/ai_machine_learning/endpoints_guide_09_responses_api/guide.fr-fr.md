@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - API Responses (EN)
-excerpt: "Découvrez comment utiliser AI Endpoints avec l'API Responses"
-updated: 2026-02-03
+excerpt: Découvrez comment utiliser AI Endpoints avec l'API Responses
+updated: 2026-02-24
 ---
 
 > [!primary]

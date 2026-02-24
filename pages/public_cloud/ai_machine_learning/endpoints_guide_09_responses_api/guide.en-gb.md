@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Responses API
 excerpt: Learn how to use OVHcloud AI Endpoints with the Responses API
-updated: 2026-02-03
+updated: 2026-02-24
 ---
 
 > [!primary]
