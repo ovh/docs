@@ -59,7 +59,7 @@ Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący
 Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące karty:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >> **Rekord A**<br><br>
 >> Aby zidentyfikować istniejące rekordy A, kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
@@ -70,7 +70,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Kolejno utwórz 2 rekordy typu "A", aby wpisać 2 adresy IPv4 związane z Webflow.
 >> Pozostaw pole **Subdomena** puste i wprowadź pierwszy adres IPv4 interfejsu Webflow `75.2.70.75` w polu **Adres docelowy**.
 >> Kliknij na `Dalej`{.action} i zatwierdź rejestrację "A". Powtórz operację dla drugiego adresu IPv4 `99.83.190.102` i przejdź do etapu 2.
-> **Etap 2**
+> **Krok 2**
 >> **Rekord AAAA**<br><br>
 >> Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
@@ -78,7 +78,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który pasuje tylko do Twojej nazwy domeny, bez subdomeny (przykład: `mydomain.ovh.`), a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli jest obecny rekord dla subdomeny "www" (przykład: `www.mydomain.ovh.`), usuń go również, aby nie kolidował z rekordem CNAME, który wprowadzisz w kroku 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej nazwie domeny z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "AAAA", przejdź do etapu 3.
-> **Etap 3**
+> **Krok 3**
 >> **Rekord TXT**<br><br>
 >> Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
@@ -88,7 +88,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Uzupełnij pole **Subdomena** o wartość`_webflow` i wprowadź w polu **Obiekt docelowy** wartość z sekcji `Site settings > Publishing tab > Production`{.action} Twojego konta Webflow, typu `one-time-verification=XXXXXXXX`. Zamień `XXXXXXXX` na wartość na koncie Webflow.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Kliknij na `Dalej`{.action}, aby potwierdzić rejestrację "TXT" i przejść do etapu 4.
-> **Etap 4**
+> **Krok 4**
 >> **Rekord CNAME**<br><br>
 >> Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}

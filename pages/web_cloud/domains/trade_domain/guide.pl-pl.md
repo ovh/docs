@@ -52,31 +52,31 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli, w polu **Abonament** znajduje się pozycja **Kontakt**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie `Zarządzanie kontaktami`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na nowej stronie przejdź do pola **Abonent**, następnie kliknij przycisk `Zmodyfikuj`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> > [!warning]
 >> >
@@ -88,7 +88,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Etap 6**
+> **Krok 6**
 >>
 >> Otworzy się nowa zakładka w przeglądarce dla wszystkich nazw domen uprawnionych do zmiany abonenta. Wybierz z listy nazwę domeny, zaznaczając pole po lewej stronie. Etap ten można również wykorzystać do rozpoczęcia operacji zbiorczej. Możliwe jest zatem zainicjowanie zmiany abonenta dla kilku nazw domen jednocześnie, na przykład w celu zmiany abonenta wszystkich nazw domen *.ovh*, jeśli ich obecni abonenci są identyczni.
 >>
@@ -96,7 +96,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **7**.
 >>
 >> Po dokonaniu wyboru, kliknij przycisk `Dalej`{.action}.
 >>
-> **Etap 7**
+> **Krok 7**
 >>
 >> W formularzu danych posiadacza karty upewnij się, że wpisałeś poprawne informacje we wszystkich wymaganych polach. Uważaj na błędy przy wprowadzaniu danych i w miarę możliwości używaj [znaki ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Pamiętaj, że wszelkie niedokładne lub fałszywe informacje mogą spowodować błąd techniczny, a tym samym opóźnienie całego procesu.
 >>

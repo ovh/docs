@@ -37,25 +37,25 @@ Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie ni
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli, w ramce **Konfiguracja** kliknij przycisk `Zarządzaj ochroną danych`{.action}.
 >>
 >> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na nowej stronie, która się wyświetli, będziesz mógł wybrać opcję `Wyświetl` lub `Ukryj` informacje kontaktowe abonenta, administratora i kontaktu technicznego nazwy domeny, w granicach operacji dozwolonych przez registry menedżera rozszerzenia.
 >>

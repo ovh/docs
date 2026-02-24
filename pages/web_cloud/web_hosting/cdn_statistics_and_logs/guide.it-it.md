@@ -83,13 +83,13 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> ![Visualizza i log](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio  4**
 >>
 >> Nella nuova pagina clicca sul pulsante `CDN`{.action} presente nella barra in alto a sinistra.
 >>
 >> ![OSL CDN](/pages/assets/screens/other/web-tools/logs/osl-cdn.png){.thumbnail}
 >>
-> **Step 5**
+> **Passaggio  5**
 >>
 >> Visualizzi la nuova pagina:
 >>

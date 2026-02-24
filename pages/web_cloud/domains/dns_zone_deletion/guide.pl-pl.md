@@ -51,25 +51,25 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager), kliknij na swoje imię w prawym górnym rogu, a następnie kliknij `Moje rozwiązania i usługi`{.action}.
 >>
 >> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> W tabeli na stronie, która się wyświetli, kliknij przycisk `...`{.action} po prawej stronie strefy DNS, którą chcesz zakończyć, a następnie kliknij `Rezygnuję z usługi`{.action}.
 >>
 >> ![Zakończ](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-cancel-my-subscription.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na nowej stronie, która się pojawi, podaj powód swojej prośby o zakończenie oraz swoje projekty, a następnie kliknij `Zatwierdź`{.action}.
 >>
 >> ![Zakończ usługę](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/dns-zone-delete-your-service.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Zakończenie Twojej usługi nastąpi w **Data wejścia w życie**, która jest wskazana w tabeli "Zarządzanie moimi ofertami i usługami". Jeśli nie widzisz statusu "Planowane zakończenie usługi", odśwież stronę.
 >>
