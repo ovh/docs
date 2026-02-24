@@ -1,12 +1,12 @@
 ---
 title: Capabilities and Limitations of Public Cloud Analytics with ClickHouse
-excerpt: Discover the capabilities and limitations of Analytics for ClickHouse
+excerpt: Discover the technical capabilities and limitations of the Public Cloud Analytics for ClickHouse offer, including supported regions, plans, storage, networking, and backups
 updated: 2026-01-28
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Analytics for ClickHouse offer.
+**This page provides the technical capabilities and limitations of the Analytics for ClickHouse offer.**
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/18>.
 
@@ -17,7 +17,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 The Analytics offer is available in the following regions:
 
 - `EU-WEST-PAR` (Paris, France).
-- `EU-SOUTH-MIL` (Milan, Italia).
+- `EU-SOUTH-MIL` (Milan, Italy).
 
 Analytics nodes have to be in the same region.
 
@@ -27,7 +27,7 @@ The Analytics offer supports the following ClickHouse versions:
 
 - ClickHouse 25
 
-Please refer to the [Analytics services lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for ClickHouse version on their official page : <https://clickhouse.com/docs/whats-new/changelog>
+See the [Analytics services lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for version upgrade recommendations and end-of-life announcements. Additionally, you can follow the EOL lifecycle for ClickHouse versions on their official page: <https://clickhouse.com/docs/whats-new/changelog>
 
 ### ClickHouse connectors
 
@@ -40,7 +40,7 @@ Different plans are available:
 - *Discovery* (Soon).
 - *Production*.
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan                  | Number of nodes by default |
 | --------------------- | -------------------------- |
@@ -60,15 +60,15 @@ More information on <https://github.com/ClickHouse/ClickHouse/blob/master/LICENS
 
 ### Hardware resources
 
-For information on node types and pricing, please refer to the [price page](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+For information on node types and pricing, see the [price page](/links/public-cloud/prices).
 
 #### Flexible storage
 
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the "[Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage)" for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. See the "[Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage)" for details.
 
 #### Node template upgrade
 
-You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service, but be aware that you will not be able to downgrade the node template afterwards.
 
 #### Disk type
 
@@ -85,8 +85,8 @@ The disk size listed above is the total disk size of the underlying machine. How
 We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
 
 1. When reaching a concerning level of disk usage, a warning email is sent.
-2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
-3. You then have the ability to upgrade to a higher service plan with more storage.
+2. When reaching a concerning level of disk usage, the service is moved to the `DISK_FULL` state and `read-only` mode, meaning no more writes can be done.
+3. You can then upgrade to a higher service plan with more storage.
 
 See the "[Handling 'Disk Full' situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling)" for more information.
 
@@ -104,21 +104,21 @@ The Analytics service's IP address is subject to change periodically. Thus, it i
 
 ##### Private network considerations
 
-Here are some considerations to take into account when using private network:
+Consider the following when using a private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Analytics services first.
-- When connecting from an outside subnet, the OpenStack IP gateway must be enabled in the subnet used for the ANalytics service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the OpenStack IP gateway must be enabled in the subnet used for the Analytics service. You are responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
-- OpenStack subnets routes announcement will not be applied to your services.
+- OpenStack subnet route announcements will not be applied to your services.
 - You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify CIDR blocks to authorise incoming traffic. Until then, your service will be unreachable.
+Once your service is running, you can specify CIDR blocks to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Analytcis for ClickHouse depends on the available total memory on the node.
+The number of simultaneous connections in Public Cloud Analytics for ClickHouse depends on the available total memory on the node.
 We allow approximately 100 connections per 4 GB of RAM memory, capped to a maximum of 1000 active connections.
 
 So for example on a server with 7 GB memory, you will get approximately 200 connections and with 15 GB memory you will get 400 connections.
@@ -131,12 +131,12 @@ See the [Automated Backups guide](/pages/public_cloud/data_analytics/analytics/i
 
 #### Logs and metrics
 
-Logs and metrics are available through the OVHcloud Control Panel, the OVHcloud API and can be forwarded to Logs Data Platform. For setup instructions, see the guide "[Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer)".
+Logs and metrics are available through the OVHcloud Control Panel, the OVHcloud API and can be forwarded to Logs Data Platform. For setup instructions, see the guide "[Analytics - How to set up logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer)".
 
 - **Logs retention**: 1000 lines of logs.
 - **Metrics retention**: 1 calendar month.
 
-Please note that if the Analytics instance is deleted, logs and metrics are also automatically deleted.
+If the Analytics instance is deleted, logs and metrics are also automatically deleted.
 
 #### Users and roles
 
@@ -150,3 +150,5 @@ We would love to help answer questions and appreciate any feedback you may have.
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our Analytics service!
+
+Join our [community of users](/links/community).
