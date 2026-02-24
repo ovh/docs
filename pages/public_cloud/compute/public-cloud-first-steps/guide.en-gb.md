@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2026-02-23
+updated: 2026-02-24
 ---
 
 <style>
@@ -59,7 +59,7 @@ You can then go further with your Public Cloud project according to your needs.
     - [Step 4.3: Select a model](#step-43-select-a-model)
       - [Additional information](#additional-information)
     - [Step 4.4: Select an image](#step-44-select-an-image)
-    - [Step 4.5: Selecting an SSH key (not applicable to Windows instances)](#step-45-selecting-an-ssh-key-not-applicable-to-windows-instances)
+    - [Step 4.5: Select an SSH key (not applicable to Windows instances)](#step-45-select-an-ssh-key-not-applicable-to-windows-instances)
     - [Step 4.6: Configure backup settings](#step-46-configure-backup-settings)
     - [Step 4.7: Configure the network](#step-47-configure-the-network)
     - [Step 4.8: Select a billing period](#step-48-select-a-billing-period)
@@ -138,7 +138,7 @@ You can now select this key in [Step 4](#step-4-create-the-instance) to add it t
 
 Before creating your instance, we recommend to consider the way the instance will be used in terms of networking.
 
-- If you do not need to configure the instance with a private network at this time, you can proceed with [step 4](#step-4-create-the-instance). You can create an instance exposed to the public internet. (See **Public Mode** [below](#networking-modes).)
+- If you do not need to configure the instance with a private network at this time, you can proceed with [step 4](#step-4-create-the-instance). You can create an instance exposed to the public Internet. (See **Public Mode** [below](#networking-modes).)
 - If the instance needs to be connected to a new private network (OVHcloud [vRack](/links/network/vrack)), please note that the vRack is created automatically when you create your Public Cloud project. No prior action is therefore required. For more information, see the [Public Cloud vRack guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
@@ -147,17 +147,17 @@ Before creating your instance, we recommend to consider the way the instance wil
 
 **Public Mode**
 
-Instances in Public Mode are exposed to the public internet directly via IPv4/IPv6. IP addresses cannot be modified but instances can have [Additional IP](/links/network/additional-ip) addresses attached ([including your own](/links/network/byoip)) and they can be connected to a [vRack](/links/network/vrack).
+Instances in Public Mode are exposed to the public Internet directly via IPv4/IPv6. IP addresses cannot be modified but instances can have [Additional IP](/links/network/additional-ip) addresses attached ([including your own](/links/network/byoip)) and they can be connected to a [vRack](/links/network/vrack).
 
 **Private Mode**
 
-Instances in Private Mode can only be exposed to the public internet via a [Gateway](/links/public-cloud/gateway) or a [Load Balancer](/links/public-cloud/load-balancer) service and [Floating IP](/links/public-cloud/floating-ip) addresses.
+Instances in Private Mode can only be exposed to the public Internet via a [Gateway](/links/public-cloud/gateway) or a [Load Balancer](/links/public-cloud/load-balancer) service and [Floating IP](/links/public-cloud/floating-ip) addresses.
 
 For more information, please consult our guides in the [Public Cloud Network Services](/products/public-cloud-network) section. The [Concepts guide](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) provides an introduction to Public Cloud Networking.
 
 **Local Private Mode**
  
-Local Private Mode only applies if you create an instance in a **Local Zone**. They can be exposed to the public internet directly via IPv4/IPv6. Only instances in the same Local Zone can be connected via private networks. Local Zones are not compatible with [vRack](/links/network/vrack). In this mode, DHCP automatically provides IP addresses to your instances.
+Local Private Mode only applies if you create an instance in a **Local Zone**. They can be exposed to the public Internet directly via IPv4/IPv6. Only instances in the same Local Zone can be connected via private networks. Local Zones are not compatible with [vRack](/links/network/vrack). In this mode, DHCP automatically provides IP addresses to your instances.
 
 Find out more on the [Local Zones web page](/links/public-cloud/local-zones).
 
@@ -178,11 +178,11 @@ On the **Home** page, click `Create an instance`{.action}.
 
 #### Step 4.1: Instance Name
 
-Enter a full name for your instance. The commercial reference of the instance model is the default value. If necessary, we can also add the region and date to facilitate the identification and management of our instances.
+Enter a full name for your instance. The commercial reference of the instance model is the default value. If necessary, you can also add the region and date to facilitate the identification and management of your instances.
 
 #### Step 4.2: Select a location
 
-Select a [region](/links/public-cloud/regions-pci) closest to your users or customers. Note that if you select a **Local Zone** in this step, network limitations will apply to the instance (see [Step 3](#networking-modes)).
+Select a [location](/links/public-cloud/regions-pci) closest to your users or customers. Note that if you select a **Local Zone** in this step, network limitations will apply to the instance (see [Step 3](#networking-modes)).
 
 Also refer to the information on the [Local Zones web page](/links/public-cloud/local-zones) and the [Local Zones capabilities documentation](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
@@ -194,13 +194,13 @@ At this stage, you choose the instance model (also known as flavor), which deter
 
 The `Discovery` model type brings together instances with shared resources, offered at competitive prices. They are particularly well suited for discovering the OVHcloud Public Cloud, performing tests, or hosting light workloads such as web applications.
 
-Metal{.action} instance models offer fully dedicated physical resources, guaranteeing consistent performance and maximum isolation for the most demanding workloads.
+`Metal Instances` models offer fully dedicated physical resources, guaranteeing consistent performance and maximum isolation for the most demanding workloads.
 
 > [!primary]
 >
 > Your total Public Cloud resources will initially be limited for cost control and security reasons. You can check these quotas by clicking on `Quota & Regions`{.action} in the left navigation bar under **Settings**. See [the dedicated documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more information.
 >
-> Note that you can **upgrade** your instance after creation to have more resources available. However, downgrading to a smaller model is not possible with a regular instance. You can find more information on this topic in **step 4.4** below.
+> Note that you can **upgrade** your instance after creation to have more resources available. However, downgrading to a smaller model is not possible with a regular instance. You can find more information on this topic in **step 4.9** below.
 >
 
 ##### Additional information
@@ -216,7 +216,7 @@ Metal{.action} instance models offer fully dedicated physical resources, guarant
 | GPU     | ✓       | Massively parallel processing power for specialized applications (rendering, big data, deep learning, etc.)       |
 | Discovery    | -       | Hosted on shared resources for testing and development environments      |
 | Storage Optimized   | ✓     | Optimized for disk data transfer    |
-| Metal | ✓ | Dedicated resources with direct access to compute, storage and network resources|
+| Metal Instances | ✓ | Dedicated resources with direct access to compute, storage and network resources|
 
 ///
 
@@ -234,7 +234,7 @@ Local Zones are an extension of **regions** that bring OVHcloud services closer 
 
 #### Step 4.4: Select an image
 
-Open the `Distribution Type` drop-down list, select the category that corresponds to your needs, then choose the `operating system` to deploy on your instance using the `Image Version` drop-down menu.
+Open the `Distribution Type` drop-down list, select the category that corresponds to your needs, then choose the operating system to deploy on your instance using the `Image Version` drop-down menu.
 
 The images available at this stage depend on the choices made in the previous stages, i.e., compatibility with the instance model and regional availability. For example, if you want to select a Windows operating system and there are no options in the Windows tab, you must change your choices from the previous stages.
 
@@ -243,7 +243,7 @@ The images available at this stage depend on the choices made in the previous st
 > If you choose an operating system that requires a paid license, these costs will be automatically included in the project invoice.
 >
 
-#### Step 4.5: Selecting an SSH key (not applicable to Windows instances)
+#### Step 4.5: Select an SSH key (not applicable to Windows instances)
 
 With the exception of Windows instances, configuring your instance also requires **adding a public SSH key**. You have two options:
 
@@ -259,16 +259,14 @@ Click on the tabs below to view their presentation:
 >>
 > **Enter a key directly**
 >>
->> To add a public key by pasting the key string, click the `Add Key`{.action} button.
+>> To add a public key by pasting the key string, click the `Create a new SSH Key`{.action} button.
 >>
->> Enter a name for the key and the key string in the respective fields. Then click `Next`{.action}.
->>
->> Before clicking `Next`{.action}, you can choose to use the `Add a key`{.action} button to store this key in your OVHcloud Control Panel (see [step 2](#step-2-import-ssh-keys) for more details...)
+>> Enter a name for the key and the key string in the respective fields. Then click `Validate the key`{.action}.
 >>
 
 #### Step 4.6: Configure backup settings
 
-You can enable [automated backups](/pages/public_cloud/compute/save_an_instance) by checking this option, which is enabled by default. Please take the time to review the pricing information and additional details before proceeding.
+[Automated backups](/pages/public_cloud/compute/save_an_instance) are enabled by default. Review the pricing information and additional details before proceeding.
 
 Next, select the rotation type, i.e., the maximum number of backups kept in the history: 7 or 14 days.
 
@@ -289,12 +287,12 @@ By clicking on `Create a private network`{.action}, you can create one directly:
 
 > [!primary]
 >
-> L’instance peut rester entièrement privée si vous ne lui attribuez pas d’IP publique.
+> The instance can remain fully private if you do not assign it a public IP address.
 >
 
 **Gateway**
 
-Vous pouvez activer l’option pour attribuer une gateway à votre réseau. Par défaut, la gateway est de taille S, mais vous pourrez ajuster sa taille ultérieurement dans les paramètres.
+You can enable the option to assign a gateway to your network. By default, the gateway is size S, but you can adjust its size later in the settings.
 
 **Assign public connectivity**
 
@@ -327,7 +325,7 @@ Find details in our dedicated billing documentation:
 - [Public Cloud Billing](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
 - [FAQ on monthly billing](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
 
-Once you have finished configuring your instance, click on the `Create instance`{.action} button. It may take a few minutes for your service to be delivered.
+Once you have finished configuring your instance, you can choose to click the `Launch my instance`{.action} button, or configure advanced settings (see below). It may take a few minutes for your service to be delivered.
 
 #### Step 4.9: Configure advanced settings
 
@@ -335,8 +333,7 @@ Once you have finished configuring your instance, click on the `Create instance`
 
 A Flex instance is a single 50 GB disk instance designed to offer faster snapshot creation and restoration.
 
-It allows you to resize the instance to higher or lower models while maintaining a fixed storage space.
-Conversely, classic models only allow resizing to higher models.
+It allows resizing to higher or lower models while maintaining fixed storage. Classic models only allow resizing to higher models.
 
 ##### Post-installation script
 
@@ -346,20 +343,13 @@ You can add [your post-installation script](/pages/public_cloud/compute/launchin
 
 On the right side of your screen, you will find a summary of your configuration. In this section, you can configure the number of instances to be created. You can create multiple instances based on the selections made during the creation steps, but resource [quota limits](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) will apply.
 
-This step offers several configuration options. Click on the tabs below to view details:
-
-> **2: Flexible instance**
->>
->> If the selected model is compatible, you can choose to create a **Flex instance**. This option allows you to upgrade to a smaller model (and even switch to a different model category), but it limits the instance to **50 GB of fixed included storage**, regardless of any other upgrades or downgrades.
->>
-
-Once you have finished configuring your instance, click the `Create instance`{.action} button. Delivery of your service may take a few minutes.
+Once you have finished configuring your instance, click the `Launch my instance`{.action} button. Delivery of your service may take a few minutes.
 
 ### Step 5: Connect to the instance
 
-The instructions in this part concern remote connections by means of the **OpenSSH** and **RDP** protocols through a public network (internet).
+The instructions in this part concern remote connections by means of the **OpenSSH** and **RDP** protocols through a public network (Internet).
 
-Note that we provide alternative ways of access (mainly used for troubleshoooting) which are only available via your OVHcloud Control Panel:
+Note that we provide alternative ways of access (mainly used for troubleshooting) which are only available via your OVHcloud Control Panel:
 
 - [VNC console](#54-vnc-console-access)
 - [Rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
@@ -490,7 +480,7 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 >>
 > 3. **Settings**
 >>
->> You can find some useful items in the left-hand toolbar. For example, click on on the icon `Toggle dynamic resolution update`{.action} to improve the window resolution.<br><br>
+>> You can find some useful items in the left-hand toolbar. For example, click on the icon `Toggle dynamic resolution update`{.action} to improve the window resolution.<br><br>
 >>![linux remote](images/24-rem-connect04.png){.thumbnail}
 >>
 
@@ -520,7 +510,7 @@ Select `Instances`{.action} in the left-hand navigation bar under **Compute**. C
 
 > [!primary]
 >
->**Windows instances**
+> **Windows instances**
 >
 > There are no additional steps required for instances with a Windows OS installed.
 >
@@ -556,9 +546,9 @@ passwd: password updated successfully
 
 > [!warning]
 >
-This step is not necessary and should only be executed if you have a viable reason to enable this access type; for example if you need to temporarily log in to the instance from a device that does not have your private SSH key stored on it.
+> This step is not necessary and should only be executed if you have a viable reason to enable this access type; for example if you need to temporarily log in to the instance from a device that does not have your private SSH key stored on it.
 >
-The following example illustrates a temporary solution on an instance with Ubuntu installed. Note that you might need to adjust the commands according to your OS. It is not recommended to keep this configuration permanently because it adds a potential security risk by opening the system to SSH-based attacks.
+> The following example illustrates a temporary solution on an instance with Ubuntu installed. Note that you might need to adjust the commands according to your OS. It is not recommended to keep this configuration permanently because it adds a potential security risk by opening the system to SSH-based attacks.
 >
 
 When [logged on to your instance](#step-6-first-steps-on-a-new-instance), open the pertinent configuration file with a text editor. Example:
