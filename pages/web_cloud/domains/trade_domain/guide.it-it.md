@@ -52,31 +52,31 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Domini`{.action} e seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Nella nuova pagina, nel riquadro **Abbonamento**, trovi la dicitura **Contatti**. Clicca sul pulsante `...`{.action} a destra e poi su `Gestisci i contatti`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Accedi alla nuova pagina nel riquadro **Intestatario** e clicca sul pulsante `Modificare`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Step 5**
+> **Passaggio 5**
 >>
 >> > [!warning]
 >> >
@@ -88,7 +88,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Step 6**
+> **Passaggio 6**
 >>
 >> Si apre una nuova scheda del browser con tutti i nomi di dominio che possono essere modificati. Seleziona un nome di dominio nella lista selezionando la casella a sinistra. Questo step può essere utilizzato anche per avviare un'operazione di gruppo. In questo modo è possibile avviare la modifica dell'intestatario di più nomi di dominio contemporaneamente, ad esempio per cambiare l'intestatario di tutti i nomi di dominio *.ovh* se gli intestatari attuali sono gli stessi.
 >>
@@ -96,7 +96,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> Una volta effettuate le scelte, clicca su `Continua`{.action}.
 >>
-> **Step 7**
+> **Passaggio 7**
 >>
 >> Nel modulo Dettagli intestatario, assicurarsi di inserire informazioni valide in tutti i campi obbligatori. Presta attenzione agli errori di inserimento e utilizza [caratteri stampabili ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) quando possibile. Ti ricordiamo che eventuali informazioni inesatte o false possono causare un errore tecnico e quindi un ritardo dell'intero processo.
 >>
