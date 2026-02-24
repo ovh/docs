@@ -747,9 +747,61 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+> **Windows**
+>>
+>> Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Disabled`{.action} situado junto a **Formación de equipos de NIC**.
+>>
+>> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
+>>
+>> A continuación, haga clic con el botón derecho en la interfaz de red y seleccione `Agregar a nuevo equipo`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+>>
+>> En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Nombre del equipo**. Cuando haya terminado, haga clic en `Agregar`{.action}
+>>
+>> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
+>>
+>> A continuación, es recomendable indicar la etiqueta de la VLAN. Para ello, en el panel **ADAPTADORES e INTERFACES** de la pantalla **Formación de equipos de NIC**, vaya a la pestaña `Interfaces de equipo`{.action} y haga clic derecho en la interfaz que acaba de añadir al nuevo equipo y seleccione `Propiedades`{.action}. Después marque la opción `VLAN específica`{.action} e introduzca la etiqueta.
+>>
+>> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
+>>
+>> Ahora hay que configurar la dirección IP de la VLAN. Para ello, abra la pantalla de inicio y haga clic en `Panel do control`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
+>>
+>> Haga clic en `Redes e Internet`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
+>>
+>> Haga clic en `Centro de redes y recursos compartidos`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
+>>
+>> Haga clic en `Cambiar configuración del adaptador`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
+>>
+>> A continuación, haga clic derecho en la interfaz VLAN y seleccione `Propiedades`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+>>
+>> Tenga en cuenta que en nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que el vRack NIC sea una interfaz diferente en su configuración. La correcta será la interfaz que no tenga la dirección IP principal del servidor o que tenga una IP autoasignada.
+>>
+>> Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
+>>
+>> Marque la opción `Usar la siguente dirección IP`{.action}. En **Dirección IP**, introduzca una dirección IP de su rango interno. En **Máscara de subred** introduzca **255.255.0.0**.
+>>
+>> ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
+>>
+>> Por último, haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor.
+>>
 
 ///
 
 ## Más información
+
+[Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

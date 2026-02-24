@@ -58,25 +58,25 @@ Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konf
 Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Nowa strona wyświetla tabelę zawierającą utworzone bazy danych.
 >>
@@ -86,7 +86,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >>
 >> Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
@@ -233,31 +233,31 @@ Możesz jednak wymusić ich przejście na Twoje usługi, aby przyspieszyć proce
 Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych. Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Przelicz rozmiar bazy`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W oknie, które się wyświetli kliknij bezpośrednio przycisk `Zatwierdź`{.action}.
 >>
@@ -272,19 +272,19 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **3**.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Web Cloud Databases`{.action}, następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> W ramce **Informacje ogólne** znajduje się pozycja **Przestrzeń wykorzystana**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odśwież limit wielkości bazy danych`{.action}.
 >>

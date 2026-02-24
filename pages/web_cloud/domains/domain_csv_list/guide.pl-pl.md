@@ -20,19 +20,19 @@ Chcesz pobrać listę wszystkich domen dostępnych na Twoim koncie klienta OVHcl
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}. Nad tabelą, która się wyświetli kliknij przycisk `Eksportuj w formacie CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> W wyświetlonym oknie zaznacz informacje, które chcesz dołączyć do pliku CSV dla wszystkich Twoich domen.
 >>
@@ -40,7 +40,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**.
 >>
 >> Następnie kliknij przycisk `Eksport`{.action}, aby rozpocząć generowanie pliku w formacie CSV.
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Pojawi się okno ładowania. Zaczekaj, aż pasek postępu osiągnie 100%.
 >>

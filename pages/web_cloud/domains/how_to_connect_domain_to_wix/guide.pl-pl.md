@@ -59,7 +59,7 @@ Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący
 Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące karty:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >> **Rekord A**<br><br>
 >> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów w górnej części tabeli rekordów DNS i wybierz opcję `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
@@ -69,19 +69,19 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Jeśli nie masz istniejącego rekordu "A", kliknij przycisk `Dodaj rekord`{.action} w prawym górnym rogu ekranu i wybierz "Pole wskaźnika" `A`{.action}<br><br>
 >> Pozostaw pole **Subdomena** puste i wpisz adres IPv4 *zgłoszony w interfejsie Wix* w polu **Cel**.
 >> Kliknij `Dalej`{.action}, zatwierdź rekord "A" i przejdź do etapu 2.
-> **Etap 2**
+> **Krok 2**
 >> **Rekord AAAA**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Jeśli dla samej nazwy domeny (np. `mydomain.ovh.`) i dla jej subdomeny podano "www." (np. `www.mydomain.ovh.`) są widoczne rekordy "AAAA", należy je usunąć, aby nie kolidowały z rekordami "A" i "CNAME", które wprowadzisz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odnoszącego się tylko do Twojej nazwy domeny i subdomeny "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
-> **Etap 3**
+> **Krok 3**
 >> **Rekord TXT**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - Jeśli rekordy "TXT" są obecne tylko dla nazwy domeny (na przykład: `mydomain.ovh.`) i dla jej subdomeny "www." (na przykład: `www.mydomain.ovh.`), należy je usunąć, aby nie kolidowały z rekordem CNAME, który podasz w etapie 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej nazwy domeny z subdomeną "www.", a następnie kliknij `Usuń rekord`{.action}.<br>
-> **Etap 4**
+> **Krok 4**
 >> **Rekord CNAME**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}

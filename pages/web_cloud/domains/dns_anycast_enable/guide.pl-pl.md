@@ -22,31 +22,31 @@ OVHcloud oferuje opcję [DNS Anycast](/links/web/domains-options-anycast).
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Wybierz zakładkę `Serwery DNS`{.action} po wybraniu domeny.
 >>
 >> ![DNS Servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na stronie, która się wyświetli kliknij przycisk `Zamów DNS Anycast`{.action}.
 >>
 >> ![Order Anycast DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> Na nowej stronie, która się wyświetli:
 >>

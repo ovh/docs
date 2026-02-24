@@ -386,7 +386,7 @@ Haga clic en `Centro de redes y recursos compartidos`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Haga clic en `Cambiar cconfiguración del adaptador`{.action}.
+Haga clic en `Cambiar configuración del adaptador`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 

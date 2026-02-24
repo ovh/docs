@@ -104,19 +104,19 @@ W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutor
 W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na nowej stronie kliknij zakładkę `Hosty`{.action}.
 >>
@@ -124,7 +124,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W oknie, które się otworzy na ekranie, wprowadź wymagane informacje:
 >>

@@ -122,7 +122,7 @@ Cette étape offre plusieurs options de configuration. Pour les besoins de ce gu
 >>
 >> Vous pouvez conserver la plage IP privée par défaut ou en utiliser une autre.
 >>
->> Sélectionnez « Activer DHCP pour ce réseau privé » pour attribuer et configurer automatiquement l'adresse IP privée sur l'instance. Il vous suffira ensuite de configurer les interfaces réseau du serveur dédié.
+>> Sélectionnez « Activer DHCP pour ce réseau privé » pour attribuer et configurer automatiquement une adresse IP privée sur l'instance. Il vous suffira ensuite de configurer les interfaces réseau du serveur dédié.
 >>
 >> Lorsque cette option n'est pas sélectionnée, une configuration manuelle est requise à la fois sur l'instance Public Cloud et sur le serveur dédié.
 >>
@@ -687,7 +687,7 @@ Dans cet exemple, nous utiliserons **10** comme identifiant (balise) VLAN et **1
 >> sudo su -c 'echo "8021q" >> /etc/modules'
 >> ```
 >>
->> - Pour obtenir le nom de l'interface réseau privée :
+>> - Récupérez les noms des interfaces et identifiez l'interface privée :
 >>
 >> ```sh
 >> ip a
@@ -745,9 +745,61 @@ Dans cet exemple, nous utiliserons **10** comme identifiant (balise) VLAN et **1
 >>
 >> ![config](images/config_fedora.png){.thumbnail}
 >>
+> **Windows**
+>>
+>> Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Gestionnaire de serveur ». Sélectionnez ensuite `Serveur local`{.action}, puis cliquez sur le lien `Désactivé`{.action} à côté de **Association des cartes réseau** :
+>>
+>> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
+>>
+>> Faites ensuite un clic droit sur l'interface réseau et sélectionnez `Ajouter à une nouvelle équipe`{.action}.
+>>
+>> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+>>
+>> Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Nom de l'équipe**. Lorsque vous avez terminé, cliquez sur `OK`{.action}.
+>>
+>> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
+>>
+>> Il convient ensuite de préciser le tag du VLAN. Dans le panneau « **CARTES ET INTERFACES** » de l’écran « **Association des cartes réseau** », allez dans l'onglet `Interfaces d'équipe`{.action} et faites un clic droit sur l’interface que vous venez d’ajouter à la nouvelle équipe, puis cliquez sur `Propriétés`{.action}. Cliquez maintenant sur `VLAN spécifique`{.action}, et précisez le tag :
+>>
+>> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
+>>
+>> Il faut maintenant configurer l’adresse IP du VLAN. Cliquez sur le bouton `Start`{.action} du menu de démarrage, puis sur `Panneau de configuration`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
+>>
+>> Cliquez sur `Réseau et Internet`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
+>>
+>> Cliquez ensuite sur `Centre Réseau et partage`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
+>>
+>> Cliquez alors sur `Modifier les paramètres de la carte`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
+>>
+>> Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Propriétés`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+>>
+>> Dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que le NIC vRack soit une interface différente dans votre configuration. La bonne interface à sélectionner sera celle qui n'a pas l'adresse IP principale du serveur ou qui a une IP auto-attribuée.
+>>
+>> Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IPv4)`{.action} :
+>>
+>> ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
+>>
+>> Dans l'étape suivante, cliquez sur `Utiliser l'adresse IP suivante`{.action}. Pour « **Address IP** », tapez une adresse IP de votre plage interne. Pour « **Masque de sous-réseau** », tapez « 255.255.0.0 ».
+>>
+>> ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
+>>
+>> Pour finir, cliquez sur le bouton `OK`{.action} pour sauvegarder les modifications et enfin redémarrez le serveur.
+>>
 
 ///
 
-## Aller plus loin
+## Aller plus 
+
+[Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
