@@ -530,6 +530,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, and Terr
 >> - Krew (kubectl plugin manager) installed.
 >> - Stern (kubectl log tailing plugin) installed via Krew.
 >> - A Kubernetes cluster deployed in a private network within a Public Cloud region where Manila endpoints are accessible.
+>> - Ensure that your OpenStack user has the Administrator or Share Operator role.
 >>
 >> > [!primary]
 >> >
