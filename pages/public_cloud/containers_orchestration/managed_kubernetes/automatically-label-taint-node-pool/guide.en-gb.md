@@ -447,7 +447,7 @@ Let's display our node. We should have 1 node running:
 ```bash
 $ kubectl get nodes
 NAME                       STATUS   ROLES    AGE     VERSION
-my-node-pool-node-5781fa   Ready    <none>   7m55s   v1.22.9
+my-node-pool-node-5781fa   Ready    <none>   7m55s   v1.34.0
 ```
 
 Check that the label, annotation and taint you defined are well propageted to the node:

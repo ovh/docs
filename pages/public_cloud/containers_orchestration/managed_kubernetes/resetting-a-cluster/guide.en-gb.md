@@ -116,7 +116,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 {
   "name": "my-test-cluster",
   "updatePolicy": "ALWAYS_UPDATE",
-  "version": "1.25"
+  "version": "1.34"
 }
 ```
 
@@ -146,7 +146,7 @@ By default, if you don't specify it, the `workerNodesPolicy` option will be equi
   "name": "my-test-cluster",
   "url": "xxxxxx.xx.gra.k8s.ovh.net",
   "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
-  "version": "1.25.4-2",
+  "version": "1.34.1",
   "nextUpgradeVersions": [],
   "kubeProxyMode": "iptables",
   "customization": {

@@ -713,9 +713,9 @@ For example:
 ```console
 $ kubectl --user=oidc get nodes
 NAME                                         STATUS   ROLES    AGE   VERSION
-nodepool-d18716fa-e910-4e77-a2-node-79add5   Ready    <none>   2d    v1.22.2
-nodepool-d18716fa-e910-4e77-a2-node-aa7701   Ready    <none>   2d    v1.22.2
-nodepool-d18716fa-e910-4e77-a2-node-f9f18e   Ready    <none>   2d    v1.22.2
+nodepool-d18716fa-e910-4e77-a2-node-79add5   Ready    <none>   2d    v1.34.0
+nodepool-d18716fa-e910-4e77-a2-node-aa7701   Ready    <none>   2d    v1.34.0
+nodepool-d18716fa-e910-4e77-a2-node-f9f18e   Ready    <none>   2d    v1.34.0
 ```
 
 If you can see the nodes of your Managed Kubernetes Service, congratulations, your Keycloak instance is up and running!

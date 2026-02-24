@@ -339,7 +339,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>   "name": "my_kube_cluster",
 >>   "url": "xxxxxx.c1.gra.k8s.ovh.net",
 >>   "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
->>   "version": "1.25.4-1",
+>>   "version": "1.34.1",
 >>   "nextUpgradeVersions": [],
 >>   "kubeProxyMode": "iptables",
 >>   "customization": {

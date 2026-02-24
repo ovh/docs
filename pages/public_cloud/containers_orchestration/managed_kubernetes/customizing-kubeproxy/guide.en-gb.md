@@ -595,7 +595,7 @@ Terraform will perform the following actions:
       - status                      = "READY" -> null
       - update_policy               = "ALWAYS_UPDATE" -> null
       - url                         = "xxxxxx.c1.gra.k8s.ovh.net" -> null
-      - version                     = "1.25" -> null
+      - version                     = "1.34" -> null
 
       - customization_apiserver {
           - admissionplugins {

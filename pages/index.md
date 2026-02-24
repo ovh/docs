@@ -959,6 +959,7 @@
     + [Containers & Orchestration](products/public-cloud-containers-orchestration)
         + [Managed Kubernetes Service (MKS)](products/public-cloud-containers-orchestration-managed-kubernetes-k8s)
             + [Key concepts](public-cloud-containers-orchestration-managed-kubernetes-k8s-key-concepts)
+                + [Understanding OVHcloud Managed Kubernetes architecture](public_cloud/containers_orchestration/managed_kubernetes/understanding-mks-architecture)
                 + [Known limits](public_cloud/containers_orchestration/managed_kubernetes/known-limits)
                 + [Choosing the right OVHcloud Managed Kubernetes Plan, Free or Standard](public_cloud/containers_orchestration/managed_kubernetes/mks_plans)
                 + [Available datacenters, worker nodes and persistent storage flavors](public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors)

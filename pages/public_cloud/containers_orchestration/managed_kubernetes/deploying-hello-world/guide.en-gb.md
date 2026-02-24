@@ -86,10 +86,8 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 >>   "name": "my-tiny-cluster",
 >>   "url": "xxxxxx.c2.gra.k8s.ovh.net",
 >>   "nodesUrl": "xxxxxx.nodes.c2.gra.k8s.ovh.net",
->>   "version": "1.24.8-1",
->>   "nextUpgradeVersions": [
->>     "1.25"
->>   ],
+>>   "version": "1.34.1",
+>>   "nextUpgradeVersions": [],
 >>   "customization": {
 >>     "apiServer": {
 >>       "admissionPlugins": {
