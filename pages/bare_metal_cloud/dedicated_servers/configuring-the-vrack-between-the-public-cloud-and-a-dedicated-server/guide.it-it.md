@@ -749,7 +749,7 @@ In questo esempio, utilizzeremo **10** come VLAN ID (tag) e **192.168.0.0/16** c
 >>
 > **Windows**
 >>
->> Connettiti al tuo server tramite desktop remoto e apri l'applicazione Server Manager. Seleziona `Server locale`{.action} e clicca sul link `Disabilitato`{.action} accanto a **Gruppo NIC**:
+>> Connettiti al tuo server tramite desktop remoto e apri l'applicazione Server Manager. Seleziona `Server locale`{.action} e clicca sul link `Disabilitato`{.action} accanto a **Gruppo NIC**.
 >>
 >> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 >>
@@ -761,7 +761,7 @@ In questo esempio, utilizzeremo **10** come VLAN ID (tag) e **192.168.0.0/16** c
 >>
 >> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 >>
->> Poi specifica il tag della VLAN. Nel pannello **SCHEDE E INTERFACE** della schermata **Gruppo NIC**, vai alla scheda `Interface gruppo`{.action} e clicca con il tasto destro del mouse sull'interfaccia che hai appena aggiunto al nuovo team e infine clicca su `Proprietà`{.action}. A questo punto, seleziona `VLAN specifica`{.action} e inserisci il tag:
+>> Poi specifica il tag della VLAN. Nel pannello **SCHEDE E INTERFACE** della schermata **Gruppo NIC**, vai alla scheda `Interface gruppo`{.action} e clicca con il tasto destro del mouse sull'interfaccia che hai appena aggiunto al nuovo team e infine clicca su `Proprietà`{.action}. A questo punto, seleziona `VLAN specifica`{.action} e inserisci il tag.
 >>
 >> ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 >>
@@ -791,7 +791,7 @@ In questo esempio, utilizzeremo **10** come VLAN ID (tag) e **192.168.0.0/16** c
 >>
 >> ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 >>
->> Clicca su `Utilizza il seguente indirizzo IP`{.action}: in **Indirizzo IP** inserisci un indirizzo IP del tuo intervallo e in **maschera di sottorete** inserisci 255.255.0.0
+>> Clicca su `Utilizza il seguente indirizzo IP`{.action}: in **Indirizzo IP** inserisci un indirizzo IP del tuo intervallo e in **maschera di sottorete** inserisci 255.255.0.0.
 >>
 >> ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 >>

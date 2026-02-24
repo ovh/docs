@@ -749,7 +749,7 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 > **Windows**
 >>
->> Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Disabled`{.action} situado junto a **Formación de equipos de NIC**.
+>> Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Deshabilitado`{.action} situado junto a **Formación de equipos de NIC**.
 >>
 >> ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 >>
@@ -757,7 +757,7 @@ En este ejemplo, utilizaremos **10** como VLAN ID (etiqueta) y **192.168.0.0/16*
 >>
 >> ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 >>
->> En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Nombre del equipo**. Cuando haya terminado, haga clic en `Agregar`{.action}
+>> En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Nombre del equipo**. Cuando haya terminado, haga clic en `Agregar`{.action}.
 >>
 >> ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 >>
