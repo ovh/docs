@@ -1574,7 +1574,6 @@
                 + [AI Endpoints - Create your own audio summarizer](public_cloud/ai_machine_learning/endpoints_tuto_01_audio_summarizer)
                 + [AI Endpoints - Create your own voice assistant](public_cloud/ai_machine_learning/endpoints_tuto_02_voice_virtual_assistant)
                 + [AI Endpoints - Create a code assistant with Continue](public_cloud/ai_machine_learning/endpoints_tuto_03_code_assistant_continue)
-                + [AI Endpoints - Create a sentiment analyzer](public_cloud/ai_machine_learning/endpoints_tuto_04_sentiment_analyzer)
                 + [AI Endpoints - Build a Python Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_05_chatbot_langchain_python)
                 + [AI Endpoints - Build a JavaScript Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_06_chatbot_langchain_javascript)
                 + [AI Endpoints - Create your own AI chatbot using LangChain4j and Quarkus](public_cloud/ai_machine_learning/endpoints_tuto_07_chatbot_langchain4j_quarkus)
