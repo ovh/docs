@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos instances Public Cloud'
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
-updated: 2025-04-28
+updated: 2026-02-24
 ---
 
 ## Objectif
@@ -27,11 +27,11 @@ Cliquez sur `Instances`{.action} dans le menu de gauche.
 Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 
 - l'ID de l'instance, nécessaire pour certains appels API;
-- la localisation du datacentre, c'est à dire la région de l'instance;
+- la localisation du datacentre, c'est-à-dire la région de l'instance;
 - le modèle de l'instance;
-- l'image, c'est à dire l'OS installé sur l'instance;
+- l'image, c'est-à-dire l'OS installé sur l'instance;
 - l'adresse IPv4 de l'instance;
-- l'adresse privée actuellement attaché à l'instance;
+- l'adresse privée actuellement attachée à l'instance;
 - les volumes (disques) additionnels actuellement attachés à l'instance;
 - le statut de l'instance, indiquant si elle est à l'état `Activé`.
 
@@ -41,7 +41,7 @@ Depuis la page de gestion des instances, cliquez sur le nom de l’instance conc
 
 Vous accédez alors à la page `Informations générales`, qui centralise les principaux détails et l’état de fonctionnement de votre instance (statut, ressources, réseau, accès, et métadonnées).
 
-Certaines de ces opérations sont aussi accessibles directement depuis la page de gestion des instances, en cliquant sur le bouton `...`{.action} situé dans le tableau correspondant à l’instance.
+Certaines de ces opérations sont aussi accessibles depuis la page de gestion des instances, via le bouton `...`{.action} du tableau.
 
 #### Éditer la configuration d'une instance
 
@@ -49,12 +49,12 @@ Cliquez sur `Modifier l’image`{.action} ou `Modifier le modèle`{.action}.
 
 Vous pouvez également ouvrir `Actions supplémentaires`{.action}, puis sélectionner `Editer`{.action}.
 
-La nouvelle page qui s'affiche alors présente une version modifiée des options [de création d'instance](/pages/public_cloud/compute/public-cloud-first-steps), dans laquelle vous pouvez modifier les éléments suivants :
+La nouvelle page présente une version modifiée des options [de création d'instance](/pages/public_cloud/compute/public-cloud-first-steps), dans laquelle vous pouvez modifier les éléments suivants :
 
 - **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
 - **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d'informations sur les options.
-- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
+- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d'informations sur les options.
+- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Consultez [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
 
 #### Créer un backup d'une instance
 
@@ -66,7 +66,7 @@ Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute
 
 Cliquez sur `Supprimer`{.action}.
 
-Cette action aura pour effet de supprimer définitivement l'instance ainsi que toutes ses données.
+Cette action supprimera définitivement l'instance et toutes ses données.
 
 Confirmez la demande de suppression dans la fenêtre qui apparaît.
 
@@ -84,19 +84,19 @@ Sélectionnez ensuite le volume à associer à l’instance, puis cliquez sur `C
 
 Cliquez sur `⋮`{.action} puis `Changer le reverse DNS`{.action}.
 
-Reportez-vous au guide « [Comment configurer le reverse DNS de ma connexion](web_cloud/internet/internet_access/comment_configurer_le_reverse_dns_de_ma_connexion) » pour plus d'informations.
+Reportez-vous au guide « [Configurer le reverse DNS d'une instance Public Cloud](/pages/public_cloud/compute/setup_instance_reverse) » pour plus d'informations.
 
 #### Configurer le pare-feu
 
 Cliquez sur `⋮`{.action} puis `Configurer le pare-feu`{.action}.
 
-Reportez-vous au guide « [Enabling and configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network) » pour plus d'informations.
+Reportez-vous au guide « [Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) » pour plus d'informations.
 
 #### Gérer les réseaux privés
 
 Cliquez sur `⋮`{.action} puis `Gérer les réseaux privés`{.action}.
 
-Reportez-vous au guide « [Creating a private network with Gateway](public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) » pour plus d'informations.
+Reportez-vous au guide « [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) » pour plus d'informations.
 
 #### Attacher un réseau
 

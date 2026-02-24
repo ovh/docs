@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2025-04-28
+updated: 2026-02-24
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`
 
 ### Using the management interface for instances
 
-Click on `Instances`{.action} the left-hand menu.
+Click on `Instances`{.action} in the left-hand menu.
 
 This page lists all your Public Cloud instances and some of their properties:
 
@@ -41,7 +41,7 @@ From the instance management page, click on the name of the instance concerned.
 
 This will take you to the `General Information` page, which centralizes the main details and operating status of your instance (status, resources, network, access, and metadata).
 
-Some of these operations are also accessible directly from the instance management page by clicking on the `...`{.action} button located in the table corresponding to the instance.
+Some of these operations are also accessible from the instance management page via the `...`{.action} button in the instance table.
 
 #### Editing the configuration of the instance
 
@@ -51,8 +51,8 @@ The new page displays a modified version of the [instance creation options](/pag
 
 - **Renaming the instance**: You can give a name to the instance for easier identification.
 - **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
-- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps#model) for more information about the options.
-- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information.
+- **Changing the template**: You can switch to a different instance model. Refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps#model) for more information about the options.
+- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information.
 
 #### Creating a backup of the instance
 
@@ -82,19 +82,19 @@ Then select the volume to associate with the instance and click `Confirm`{.actio
 
 Click on `⋮`{.action} then `Change reverse DNS`{.action}.
 
-Refer to the guide « [Comment configurer le reverse DNS de ma connexion](web_cloud/internet/internet_access/comment_configurer_le_reverse_dns_de_ma_connexion) » for more information.
+Refer to the guide [How to configure the reverse DNS of my connection](/pages/public_cloud/compute/setup_instance_reverse) for more information.
 
 #### Configure the firewall
 
 Click on `⋮`{.action} then `Configure the firewall`{.action}.
 
-Refer to the guide « [Enabling and configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network) » for more information.
+Refer to the guide [Enabling and configuring the Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) for more information.
 
 #### Manage private networks
 
 Click on `⋮`{.action} then `Manage private networks`{.action}.
 
-Refer to the guide « [Creating a private network with Gateway](public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) » for more information.
+Refer to the guide [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) for more information.
 
 #### Attach a network
 
@@ -155,13 +155,13 @@ Note that reinstalling **deletes all data** currently stored on your instance.
 
 ### Accessing the VNC console <a name="accessvnc"></a>
 
-Click on `Instances`{.action} the left-hand menu. On the instance management page, click on the name of the instance in the table.
+Click on `Instances`{.action} in the left-hand menu. On the instance management page, click on the name of the instance in the table.
 
 Switch from the dashboard to the tab `VNC console`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-The VNC console provides direct access to your instance. In order for this access to work you need to configure a username and password on the instance first. 
+The VNC console provides direct access to your instance. For this to work, first configure a username and password on the instance.
 
 Consult our [Getting started guide](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) to learn more about the necessary steps.
 
