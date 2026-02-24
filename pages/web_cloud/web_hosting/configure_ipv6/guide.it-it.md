@@ -44,19 +44,19 @@ Per verificare se il tuo sito Web utilizza già un indirizzo IPv6, utilizza il s
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Informazioni generali**, trovi la dicitura **IPv6**.
 >>

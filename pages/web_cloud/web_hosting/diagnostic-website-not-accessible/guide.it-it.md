@@ -116,19 +116,19 @@ Se il tuo sito non è ospitato sull'infrastruttura OVHcloud o se è gestito da u
 Se il tuo sito è ospitato su una delle nostre [soluzione di hosting Web](/links/web/hosting), clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Informazioni generali**, troverete le informazioni **IPv4** e **IPv6**.
 >>

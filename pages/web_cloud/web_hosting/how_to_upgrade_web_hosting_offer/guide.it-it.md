@@ -41,19 +41,19 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 Per modificare l’abbonamento, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Abbonamento**, clicca sul pulsante `...`{.action} a destra di **Servizio** e poi su `Modifica offerta`{.action}.
 >>
@@ -80,31 +80,31 @@ In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre l
 In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizzata. Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nella nuova pagina clicca sulla scheda `Database`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Passaggio  4**
+> **Passaggio 4**
 >>
 >> Sulla nuova pagina appare una tabella con i database creati. A destra del database, clicca sul pulsante `...`{.action} e poi su `Ricalcola la quota`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Passaggio  5**
+> **Passaggio 5**
 >>
 >> Nella nuova finestra, clicca direttamente sul pulsante `Conferma`{.action}.
 >>
@@ -125,19 +125,19 @@ Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databas
 Per farlo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della voce **Web Cloud Databases** e poi su `Scollega`{.action}.
 >>
@@ -157,19 +157,19 @@ Assicurati che la nuova soluzione offra [spazio di storage FTP](/pages/web_cloud
 Per verificare lo spazio di storage FTP utilizzato sull’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Passaggio  1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Passaggio  2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio  3**
+> **Passaggio 3**
 >>
 >> Nel riquadro **Informazioni generali**, trovi la dicitura **Spazio disco**.
 >>
