@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started (Beta)
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2026-01-19
+updated: 2026-02-24
 ---
 
 ## Objective
