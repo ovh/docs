@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer LACP sur un nœud"
 excerpt: "Apprenez à configurer un nœud dans OpenStack pour utiliser LACP (Link Aggregation Control Protocol)"
-updated: 2025-11-10
+updated: 2026-02-25
 ---
 
 ## Objectif
@@ -132,19 +132,26 @@ openstack baremetal node maintenance set <node-id>
 
 Le **groupe de ports** permet d’activer l’agrégation LACP entre plusieurs interfaces réseau.
 
-Utilisez le paramètre `--mode 802.3ad` pour activer LACP.  Si vous n’indiquez pas d’adresse MAC avec `--address`, l’adresse d’un des ports sera utilisée automatiquement.
-
 > [!success]
-> Vous pouvez créer :<br>
+> Vous pouvez créer :
+>
 > - un **groupe de ports unique** pour un bond 1×4, ou<br>
 > - deux **groupes de ports** pour des bonds 2×2.
+
+Utilisez le paramètre `--mode 802.3ad` pour activer LACP.
+
+Le paramètre `--address <MAC>` doit être égal à l'adresse MAC du port PXE s'il est utilisé. Sinon, vous pouvez omettre le paramètre ou définir la valeur MAC à partir de l'une des interfaces physiques que vous utiliserez.
+
+Vous pouvez lister tous les ports avec `openstack baremetal port list --node <node-id> --long` et vérifier si PXE est utilisé ou non.
+
+Remarque : il est recommandé de préfixer le nom du groupe de ports avec le nom du nœud (ex. : `<node-name>-<name>`) pour faciliter l'identification.
 
 **Exemple :**
 
 ```bash
 openstack baremetal port group create \
   --node 88830859-5b16-4935-8f41-d381b754cbe5 \
-  --name portgroup-lacp \
+  --name node_name-pg-lacp \
   --mode 802.3ad \
   --address 00:00:00:20:00:01
 ```
@@ -158,7 +165,7 @@ openstack baremetal port group create \
 | uuid                       | d082c2ab-5960-44e3-920d-3d6dfb6811e9      |
 | address                    | 00:00:00:20:00:01                         |
 | node_uuid                  | 88830859-5b16-4935-8f41-d381b754cbe5      |
-| name                       | portgroup-lacp                            |
+| name                       | node_name-pg-lacp                         |
 | mode                       | 802.3ad                                   |
 | standalone_ports_supported | True                                      |
 +----------------------------+-------------------------------------------+
