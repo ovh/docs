@@ -1,12 +1,8 @@
 ---
 title: "Lista dos endereços IP a autorizar para a sua CDN Infrastructure"
 excerpt: "Descubra o conjunto dos endereços IP a autorizar para a sua CDN Infrastructure"
-updated: 2024-06-20
+updated: 2026-02-17
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -29,7 +25,7 @@ Encontre aqui a lista dos endereços IP:
 |Endereço IP|
 |---|
 |144.217.2.0/23|
-|46.105.196.0/20|
+|46.105.192.0/20|
 |51.254.41.128/25|
 |137.74.120.0/22|
 |51.68.15.224/27|
@@ -44,4 +40,4 @@ Encontre aqui a lista dos endereços IP:
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

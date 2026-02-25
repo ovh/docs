@@ -12,7 +12,7 @@ Une coupure de synchronisation est généralement occasionnée par un élément 
 
 > [!primary]
 >
-> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 >
 
 ## Prérequis

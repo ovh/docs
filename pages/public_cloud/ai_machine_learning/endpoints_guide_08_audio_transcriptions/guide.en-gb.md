@@ -11,7 +11,7 @@ updated: 2025-10-03
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 **Speech to Text** is a powerful feature that enables the conversion of spoken language into written text.
 
@@ -19,9 +19,9 @@ The Speech to Text APIs on AI Endpoints allow you to easily integrate this techn
 
 ## Objective
 
-This documentation provides an overview of the Speech to Text endpoints offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
+This documentation provides an overview of the Speech to Text endpoints offered on [AI Endpoints](/links/public-cloud/ai-endpoints). 
 
-Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Audio Analysis.
+Visit our [Catalog](/links/public-cloud/ai-endpoints-catalog) to find out which models are compatible with Audio Analysis.
 
 The examples provided during this guide can be used with one of the following environments:
 
@@ -48,7 +48,7 @@ The examples provided during this guide can be used with one of the following en
 >> A standard terminal, with [cURL](https://cURL.se/) installed on the system.
 >> 
 
-*These examples will be using the [Whisper-large-v3](https://endpoints.ai.cloud.ovh.net/models/whisper-large-v3) model.*
+*These examples will be using the [Whisper-large-v3](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/whisper-large-v3/) model.*
 
 ## Authentication & Rate Limiting
 
@@ -712,7 +712,7 @@ Repeat this process to create multiple chunks, then transcribe each chunk indivi
 
 ## Conclusion
 
-In this guide, we have explained how to use Speech to Text models available on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of model for your own application.
+In this guide, we have explained how to use Speech to Text models available on [AI Endpoints](/links/public-cloud/ai-endpoints) models. We have provided a comprehensive overview of the feature which can help you perfect your integration of model for your own application.
 
 ## Go Further
 

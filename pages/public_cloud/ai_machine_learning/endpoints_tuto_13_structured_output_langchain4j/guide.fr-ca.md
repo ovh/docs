@@ -15,7 +15,7 @@ In this tutorial, we will explore how to use **Structured Output** with OVHcloud
 
 To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that  **LangChain4j** is not officially maintained by the LangChain team, despite the similar name.
 
-Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
+Combined with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ![image](images/parrot.png){.thumbnail}
 
@@ -23,7 +23,7 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 - **Structured Output**: Structured output allows you to format output data in a way that makes it easier for machines to interpret and process.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: a Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ## Requirements
 

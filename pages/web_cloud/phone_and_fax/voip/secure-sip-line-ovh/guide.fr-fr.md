@@ -14,7 +14,17 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) (Découverte ou Entreprise).
 - Connaître ses adresses IP publiques ou être en mesure de les récupérer.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -23,10 +33,6 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre son utilisation à une ou plusieurs adresses IP publiques. Ceci vous permet par exemple de limiter l'utilisation de vos lignes uniquement à des adresses IP utilisées dans votre entreprise. Vous interdirez ainsi que vos lignes soient utilisables à partir d'autres adresses IP que celles autorisées.
 
 ### Étape 1 : configurer la restriction par IP
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
 
 Si vous souhaitez appliquer la configuration à plusieurs lignes SIP, vous serez prévenu du choix dans la suite de ce guide. Pour le moment, sélectionnez-en une pour laquelle vous voulez appliquer la modification.
 
@@ -64,7 +70,7 @@ Dès que vous êtes prêt à appliquer les modifications, cliquez sur le bouton 
 
 ![securiser-sip](images/restriction03.png){.thumbnail}
 
-### Étape 2 : accéder aux logs d’erreurs d'authentification de sa ligne SIP
+### Étape 2 : accéder aux logs d'erreurs d'authentification de sa ligne SIP
 
 Lorsqu'un téléphone utilisant une ligne SIP souhaite s'identifier par exemple, celui-ci doit communiquer avec un serveur. Durant ce processus, ce dernier prendra en compte plusieurs éléments :
 
@@ -76,10 +82,7 @@ Pour diverses raisons, l'authentification peut être refusée par le serveur et 
 
 Pour y accéder, suivez ces étapes :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Assistance`{.action} puis cliquez sur le bouton `Consultation des notifications`{.action}.
+Dans l'onglet `Assistance`{.action}, cliquez sur le bouton `Consultation des notifications`{.action}.
 
 ![securiser-sip](images/restriction04.png){.thumbnail}
 

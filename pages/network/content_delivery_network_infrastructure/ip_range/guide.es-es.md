@@ -1,12 +1,8 @@
 ---
 title: "Lista de direcciones IP a autorizar para su CDN Infrastructure"
 excerpt: "Descubra el conjunto de direcciones IP que quiere autorizar para su CDN Infrastructure"
-updated: 2024-06-20
+updated: 2026-02-17
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -29,7 +25,7 @@ Consulte a continuación la lista de direcciones IP:
 |Dirección IP|
 |---|
 |144.217.2.0/23|
-|46.105.196.0/20|
+|46.105.192.0/20|
 |51.254.41.128/25|
 |137.74.120.0/22|
 |51.68.15.224/27|

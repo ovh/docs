@@ -13,8 +13,18 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 ## Prérequis
 
 - Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) et d'un modem Zyxel fourni par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Accès Internet`{.action}.
 - Cette fonctionnalité est disponible uniquement si la configuration à distance est désactivée.
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -25,10 +35,7 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
 
@@ -51,7 +58,7 @@ Un couple user/password vous est alors demandé :
 ![activerBridge](images/activerBridge-step2.png){.thumbnail}
 
 > [!primary]
-> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action} à droite de l'écran.
+> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/control-panel/account-messages) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur votre nom puis sur `E-mails de service`{.action} à droite de l'écran.
 >
 
 ### Étape 3 : Accéder aux options de connexion broadband

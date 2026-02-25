@@ -18,6 +18,16 @@ Découvrez comment installer et configurer votre ancien appareil OverTheBox v1 (
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
 - Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
+<!-- CP-NAV-START:telecom-otb -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](/links/control-panel/telecom-otb)
+- **Pour accéder à vos services :** `Télécom`{.action} > `OverTheBox`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:telecom-otb -->
 
 > [!warning]
 >
@@ -140,8 +150,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 
 ![overthebox](images/installationV1-step3-2.png){.thumbnail}
 
-- Identifiez-vous sur [l'espace client](/links/manager).
-- Cliquez sur le **service OverTheBox** que vous souhaitez associer à votre boîtier.
+- Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le **service OverTheBox** que vous souhaitez associer à votre boîtier.
 
 ![overthebox](images/installationV1-step3-3.png){.thumbnail}
 

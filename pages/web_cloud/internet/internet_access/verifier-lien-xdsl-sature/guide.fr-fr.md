@@ -13,8 +13,17 @@ Votre solution xDSL OVHcloud vous permet d'accéder à différents types de cont
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL OVHcloud](/links/telecom/offre-internet) actif.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 - Disposer d'un ordinateur relié via un câble Ethernet au modem utilisant le lien xDSL que vous souhaitez tester.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -32,10 +41,7 @@ Poursuivez la lecture de cette documentation selon la vérification que vous sou
 
 Cette opération se réalise en plusieurs étapes. L'objectif est de vérifier si votre connexion est saturée ou non.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous alors d'être positionné sur l'onglet `Mon accès`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action}.
 
 ![xdslsaturation](images/monacces-2022.png){.thumbnail}
 

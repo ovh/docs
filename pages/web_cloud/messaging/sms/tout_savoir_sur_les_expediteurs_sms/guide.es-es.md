@@ -11,15 +11,21 @@ Este guía le explica cómo crear y utilizar remitentes para el envío de sus SM
 ## Requisitos
 
 - Disponer de una [cuenta SMS de OVHcloud](/links/telecom/sms).
-- Estar conectado a la [área de cliente de OVHcloud](/links/manager), parte `Telecom`{.action} y luego `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## Procedimiento
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Telecom`{.action}.
-
-Haga clic a continuación en `SMS`{.action} y luego en su cuenta SMS.
 
 ### Tipos de remitentes disponibles
 

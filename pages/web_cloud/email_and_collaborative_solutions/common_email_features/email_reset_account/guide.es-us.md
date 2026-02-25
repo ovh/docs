@@ -1,7 +1,7 @@
 ---
 title: "Eliminar una cuenta de correo"
 excerpt: "Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo"
-updated: 2025-04-28
+updated: 2026-02-19
 ---
 
 

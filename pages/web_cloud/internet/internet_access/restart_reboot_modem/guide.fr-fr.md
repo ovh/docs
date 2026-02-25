@@ -13,7 +13,16 @@ En cas de difficultés avec votre accès à Internet, il est parfois nécessaire
 ## Prérequis
 
 - Être à proximité de votre box pour effectuer les actions.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Accès Internet`{.action}.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -115,7 +124,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Il existe deux possibilités pour réinitialiser votre box OVHcloud :
 
-- **Depuis l'[espace client](/links/manager)** : Positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client#22-configuration-generale) » ;
+- **Depuis l'[espace client](/links/control-panel/telecom-xdsl-fttx)** : Positionnez-vous sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné, puis utilisez le bouton `Réinitialiser le modem`{.action}. Cette solution est commune à tous les modèles de box. Si nécessaire, reportez-vous à notre guide « [Configurer sa box à partir de l'espace client OVHcloud](/pages/web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client#22-configuration-generale) » ;
 
 - **Par le biais d'une manipulation manuelle sur votre box** : La marche à suivre est différente selon le modèle de votre box. Rapprochez-vous de celle-ci afin de pouvoir l'identifier, en vous aidant du tableau ci-dessous. Puis poursuivez vers le modèle concerné.
 
