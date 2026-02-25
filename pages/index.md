@@ -1365,6 +1365,7 @@
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
+                + [ClickHouse – Real-time Analytics with Kafka integration](public_cloud/data_analytics/analytics/clickhouse_integration_with_kafka)
         + [Kafka](products/public-cloud-data-analytics-kafka)
             + [Key concepts](public-cloud-data-analytics-kafka-key-concepts)
                 + [Lifecycle policy for Analytics](public_cloud/data_analytics/analytics/information_02_lifecycle_policy)
