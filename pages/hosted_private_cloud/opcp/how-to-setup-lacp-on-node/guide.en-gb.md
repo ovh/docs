@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to setup LACP on a Node"
 excerpt: Learn how to setup a node in OpenStack to use LACP (Link Aggregation Control Protocol)
-updated: 2025-11-10
+updated: 2026-02-25
 ---
 
 ## Objective
