@@ -150,7 +150,7 @@ Remarque : il est recommandé de faire précéder le nom du groupe de ports du n
 ```bash
 openstack baremetal port group create \
   --node 88830859-5b16-4935-8f41-d381b754cbe5 \
-  --name portgroup-lacp \
+  --name node_name-pg-lacp \
   --mode 802.3ad \
   --address 00:00:00:20:00:01
 ```
@@ -164,7 +164,7 @@ openstack baremetal port group create \
 | uuid                       | d082c2ab-5960-44e3-920d-3d6dfb6811e9      |
 | address                    | 00:00:00:20:00:01                         |
 | node_uuid                  | 88830859-5b16-4935-8f41-d381b754cbe5      |
-| name                       | portgroup-lacp                            |
+| name                       | node_name-pg-lacp                         |
 | mode                       | 802.3ad                                   |
 | standalone_ports_supported | True                                      |
 +----------------------------+-------------------------------------------+
