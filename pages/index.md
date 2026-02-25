@@ -1366,6 +1366,7 @@
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
                 + [Getting started with Public Cloud Analytics with ClickHouse](public_cloud/data_analytics/analytics/clickhouse_getting_started)
                 + [How to create a ClickHouse cluster](public_cloud/data_analytics/analytics/clickhouse_create_cluster)
+                + [ClickHouse - How to connect to a ClickHouse cluster with CLI](public_cloud/data_analytics/analytics/clickhouse_connect_cluster_cli)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
                 + [ClickHouse - Configure incoming connections](public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
