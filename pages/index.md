@@ -1364,7 +1364,7 @@
                 + [Capabilities and Limitations of Public Cloud Analytics with ClickHouse](public_cloud/data_analytics/analytics/clickhouse_capabilities_limitations) 
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
-                + [ClickHouse - How to configure your ClickHouse cluster to accept incoming connections](public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
+                + [ClickHouse - Configure incoming connections](public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
         + [Kafka](products/public-cloud-data-analytics-kafka)
             + [Key concepts](public-cloud-data-analytics-kafka-key-concepts)
