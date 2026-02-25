@@ -1,7 +1,7 @@
 ---
 title: Sprawdzanie wersji oprogramowania BMC na dedykowanym serwerze
 excerpt: "Dowiedz się, jak sprawdzić wersję oprogramowania BMC na dedykowanym serwerze."
-updated: 2026-02-12
+updated: 2026-02-25
 ---
 
 ## Wprowadzenie
@@ -15,6 +15,10 @@ BMC (Baseboard Management Controller) odpowiada za zdalne zarządzanie i niskopo
 - Dedykowany serwer w Twoim koncie OVHcloud.
 - Prawa administratora (sudo).
 - Połączenie z Internetem (tylko jeśli pakiet `ipmitool` nie jest jeszcze zainstalowany na serwerze).
+
+> [!primary]
+> Z powodu naszej dedykowanej konfiguracji uaktualnienie BMC jest wykonywane tylko przez automatyzację OVHcloud pod nadzorem naszych techników, nie oferujemy żadnego pakietu ani mechanizmu automatycznego w tym celu.
+>
 
 ### Na serwerze z systemem Linux
 
