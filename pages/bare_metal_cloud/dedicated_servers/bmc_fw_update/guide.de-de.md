@@ -1,7 +1,7 @@
 ---
 title: So überprüfen Sie die BMC-Firmware-Version auf einem dedizierten Server
 excerpt: "Erfahren Sie, wie Sie die BMC-Firmware-Version auf einem dedizierten Server prüfen"
-updated: 2026-02-12
+updated: 2026-02-25
 ---
 
 ## Ziel
@@ -15,6 +15,10 @@ Ein BMC (Baseboard Management Controller) ist für die Remote-Verwaltung und Ste
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server.
 - Ihr dedicated Server muss mit dem Internet verbunden sein (nur wenn das Tool `ipmitool` noch nicht installiert ist).
+
+> [!primary]
+> Aufgrund unserer dedizierten Konfiguration erfolgt die BMC-Aktualisierung ausschließlich durch die OVHcloud-Automatisierung unter Aufsicht unserer Techniker. Wir stellen weder Pakete noch automatisierte Mechanismen dafür bereit.
+>
 
 ### Auf einem Linux-Server
 
