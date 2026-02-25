@@ -53,7 +53,7 @@ Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a d
 Segui i passaggi in sequenza nelle seguenti schede:
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >> **Record A**<br><br>
 >> Per identificare i record A esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `A`.
 >>
@@ -66,7 +66,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> Lascia vuoto il campo **Sottodominio** e inserisci il primo indirizzo IPv4 di Google Site `216.239.32.21` nel campo **Destinazione**.
 >> Clicca su `Continua`{.action} e conferma la tua registrazione "A". Ripeti l’operazione per gli altri tre indirizzi IPv4 `216.239.34.21`, `216.239.36.21` e `216.239.38.21`, poi passa allo Step 2. Poiché i valori di questi indirizzi IP possono cambiare, consulta la documentazione ufficiale [il valore dei record A](https://support.google.com/a/answer/2579934?hl=it&ref_topic=2721296&sjid=1037374977980680534-EU).
 >>
-> **Step 2**
+> **Passaggio 2**
 >> **Record AAAA**<br><br>
 >> Per identificare i record AAAA esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `AAAA`.
 >>
@@ -76,7 +76,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> - Se è presente un record per il sottodominio "www" (esempio: `wwww.mydomain.ovh.`), eliminalo in modo che non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo sottodominio in "www" e poi clicca su `Elimina il record`{.action}.<br>
 >> - Se non disponi di un record "AAAA" esistente, passa allo Step 3.
 >>
-> **Step 3**
+> **Passaggio 3**
 >> **Record TXT**<br><br>
 >> Per identificare i record "TXT" esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `TXT`.
 >>
@@ -87,7 +87,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> Completa i campi **Sottodominio** e **Destinazione** con le informazioni presenti nella pagina "[Valori dei record TXT](https://support.google.com/a/answer/2716802?hl=it&ref_topic=2716886&sjid=3052810298579211755-EU)" della documentazione ufficiale. In genere, il valore del campo **Sottodominio** è vuoto e il valore del campo **Destinazione** è di tipo `google-site-verification=XXXXXXXXXXXX`.<br>
 >> Clicca su `Continua`{.action} per confermare il record "TXT" e andare al passaggio 4.
 >>
-> **Step 4**
+> **Passaggio 4**
 >> **Record CNAME**<br><br>
 >> Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.
 >>

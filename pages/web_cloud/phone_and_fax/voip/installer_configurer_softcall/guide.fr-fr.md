@@ -27,9 +27,19 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 - Si votre ligne est rattachée à un téléphone fourni par OVHcloud, celui-ci ne pourra plus être utilisé dès lors que Softcall est activé.
 - Si votre connexion est derrière un pare-feu, vous devez y autoriser la plage d'adresses IP suivante : `5.196.180.0/27`.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 > [!primary]
 > Si Softcall est désactivé et que vous souhaitez réutiliser votre téléphone OVHcloud, vous devez procéder à un dépannage Plug & Phone (pour plus de détails, consultez notre guide [Dépanner son téléphone OVHcloud](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel)). Pour les autres types d'appareils, il est nécessaire de réinitialiser le mot de passe SIP et de le renseigner à nouveau dans les paramètres de l'appareil.
@@ -40,10 +50,8 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 #### Activer la ligne SIP pour Softcall
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l’ensemble de vos applications Softcall.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.<br>
+Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l'ensemble de vos applications Softcall.
 
 ![Install Softcall](images/toggle_activation_sip.png){.thumbnail}
 
@@ -364,9 +372,7 @@ Envoyez l'e-mail pour transmettre ce rapport à notre équipe en charge du produ
 
 ### Personnaliser Softcall
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action}, sélectionnez la ligne SIP utilisée par votre application Softcall puis cliquez sur l'onglet `Softphone`{.action}.
+Cliquez sur l'onglet `Services`{.action}, sélectionnez la ligne SIP utilisée par votre application Softcall puis cliquez sur l'onglet `Softphone`{.action}.
 
 #### Appliquer un thème
 

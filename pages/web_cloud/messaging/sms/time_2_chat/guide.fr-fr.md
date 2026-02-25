@@ -12,8 +12,20 @@ Ce guide présente le principe de Time2Chat, ses avantages, les conditions d’a
 
 ## Prérequis
 
-- Disposer d’un [compte SMS OVHcloud](/links/telecom/sms).
-- Être connecté à [l’espace client OVHcloud](/links/manager), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un [compte SMS OVHcloud](/links/telecom/sms).
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
+
+![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
@@ -69,7 +81,7 @@ Nous proposerons prochainement ce service à tous les clients possédant un [com
 
 ### Commander un numéro Time2Chat
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et sur votre compte SMS. Dans l’onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
+Dans l'onglet `Accueil`{.action}, cliquez sur le bouton `Commander un numéro Time2Chat`{.action}.
 
 ![time2chat](images/time2chat_order_number_button.png){.thumbnail}
 

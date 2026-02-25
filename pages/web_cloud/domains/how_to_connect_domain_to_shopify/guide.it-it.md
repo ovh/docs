@@ -46,7 +46,7 @@ Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a d
 Segui i passaggi in sequenza nelle seguenti schede:
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >> **Record A**<br><br>
 >> Per identificare i record "A" esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
@@ -56,7 +56,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> Lasciare vuoto il campo **Sottodominio** e inserire l'indirizzo IPv4 di Shopify `23.227.38.65` nel campo **Destinazione**.
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-a-shopify.png){.thumbnail}<br><br>
 >> Clicca su `Avanti`{.action}, conferma il record "A" e passa allo Step 2.
-> **Step 2**
+> **Passaggio 2**
 >> **Record AAAA**<br><br>
 >>  Per identificare i record AAAA esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
@@ -66,12 +66,12 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> Lasciare vuoto il campo **Sottodominio** e inserire l'indirizzo IPv6 di Shopify `2620:0127:f00f:5::` nel campo **Destinazione**.
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-aaaa-shopify.png){.thumbnail}<br><br>
 >> Clicca su `Seguente`{.action} e conferma il record "AAAA", dopodiché passa allo step 3.
-> **Step 3**
+> **Passaggio 3**
 >> **Record TXT**<br><br>
 >>  Per identificare i record "TXT" esistenti, fare clic sul menu dei filtri nella parte superiore della tabella di record DNS e selezionare `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Se sono presenti record "TXT" per il solo nome di dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www." (esempio: `www.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo nome di dominio con il sottodominio "www." e poi clicca su `Elimina il record`{.action}.<br>
-> **Step 4**
+> **Passaggio 4**
 >> **Record CNAME**<br><br>
 >>  Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}

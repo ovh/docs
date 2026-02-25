@@ -118,7 +118,7 @@ Para crear un usuario DynHost, haga clic en las fichas siguientes para ver cada 
 >>
 >> ![Create a DynHost username](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 >>
-> **Etape 6**
+> **Etapa 6**
 >>
 >> Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El usuario aparecerá en la tabla.
 >>

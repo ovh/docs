@@ -31,25 +31,25 @@ Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia de
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
 >> Clicca su `Visualizza la cronologia della tua zona DNS`{.action}. 
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Visualizzi una tabella con la cronologia dei backup della zona DNS, ordinata in base alla data più recente e meno recente. In cima alla tabella è riportata la versione corrente della zona DNS. In questa pagina è possibile eseguire le operazioni seguenti:
 >>

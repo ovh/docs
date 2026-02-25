@@ -12,6 +12,16 @@ Votre espace client OVHcloud Télécom regroupe un certain nombre de fonctionnal
 
 - Disposer d'un accès xDSL actif.
 - Être raccordé sur un NRA dégroupé par OVHcloud.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -19,9 +29,7 @@ Votre espace client OVHcloud Télécom regroupe un certain nombre de fonctionnal
 
 ### Comment accéder au changement de profil
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 Par défaut, l'onglet affiché est `Mon accès`.
 

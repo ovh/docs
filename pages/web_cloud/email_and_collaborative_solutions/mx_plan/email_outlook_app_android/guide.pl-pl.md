@@ -1,6 +1,6 @@
 ---
-title: "MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Android"
-excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w aplikacji mobilnej Outlook na Androida"
+title: "MX Plan / Zimbra STARTER - Konfiguracja programu Outlook na Androida"
+excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan lub Zimbra STARTER w aplikacji mobilnej Outlook na Androida"
 updated: 2024-11-26
 ---
 

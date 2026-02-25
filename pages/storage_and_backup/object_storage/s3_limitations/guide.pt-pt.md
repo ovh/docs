@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Limites técnicos (EN)
 excerpt: Find here the technical limits of the Object Storage offer
-updated: 2024-11-12
+updated: 2026-02-18
 ---
 
 ## Objective
@@ -18,11 +18,12 @@ As **OVHcloud Object Storage** is a highly distributed system, using **parallel 
 
 Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
-### Maximum number of write requests per second on a bucket
+### Default maximum number of write and read requests per second on a bucket
 
-300 (beyond this number, the quality of service is no longer guaranteed).
+- PUT: 300 requests per second
+- GET: 900 requests per second
 
-This maximum value is a soft limit and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**.
+It is important to note that these maximum values are "soft limits" and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**. Indeed, a gradual ramp-up of requests allows you to maximize performance and capitalize on the native sharding of the infrastructure. In other words, limitations can be overcome through a good distribution of the names of the prefixes/object keys and reach multiple thousands of requests per second both in read and write.
 
 Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 

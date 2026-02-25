@@ -27,11 +27,21 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](/links/manager)
-- Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
-- Posséder l’identifiant client du nouveau contact (destinataire de la modification).
-- Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
-- En cas de modification du contact facturation, l’ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](/pages/web_cloud/phone_and_fax/voip/la_procedure_de_validation_voip) et être à jour de leurs règlements.
+- Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
+- Posséder l'identifiant client du nouveau contact (destinataire de la modification).
+- Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
+- En cas de modification du contact facturation, l'ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](/pages/web_cloud/phone_and_fax/voip/la_procedure_de_validation_voip) et être à jour de leurs règlements.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 > [!success]
 >
@@ -46,9 +56,7 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 > En cas de changement de tous les contacts pour un service, le contact administrateur est à modifier **en dernier**. En effet, si vous le modifiez en premier, vous ne disposerez plus des droits nécessaires pour modifier les contacts technique ou facturation.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez sur l'onglet `Gestion des contacts`{.action}.
+Cliquez sur l'onglet `Gestion des contacts`{.action}.
 
 ![gestion des contacts](images/gestion-contacts01.png){.thumbnail}
 

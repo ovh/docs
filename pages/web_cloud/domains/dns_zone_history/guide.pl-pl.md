@@ -31,19 +31,19 @@ Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
 Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Pojawi się tabela, która przedstawia strefę DNS Twojej domeny. Znajduje się na niej lista rekordów DNS. Po prawej stronie tabeli znajduje się kilka przycisków umożliwiających wykonywanie operacji w strefie DNS. 
 >>
@@ -51,7 +51,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 >>
 >> Kliknij przycisk `Wyświetl historię strefy DNS`{.action}. 
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na nowej stronie, która się wyświetli, pojawi się tabela z historią kopii zapasowych strefy DNS, posortowana od najnowszej do najstarszej daty. Na górze tej tabeli znajduje się aktualna wersja Twojej strefy DNS. Na tej stronie możesz wykonać następujące czynności:
 >>

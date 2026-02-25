@@ -46,7 +46,7 @@ Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a d
 Segui i passaggi in sequenza nelle seguenti schede:
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >> **Record A**<br><br>
 >> Per identificare i record "A" esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
@@ -56,19 +56,19 @@ Segui i passaggi in sequenza nelle seguenti schede:
 >> Per inserire i 4 indirizzi IPv4 relativi a SquareSpace, è necessario creare 4 record di tipo "A" in successione.
 >> Lasciare vuoto il campo **Sottodominio** e inserire il primo indirizzo IPv4 di SquareSpace `198.185.159.144` nel campo **Destinazione**.
 >> Clicca su `Seguente`{.action}, conferma la tua registrazione "A",; ripeti l’operazione per gli altri 3 indirizzi IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` e passa allo step 2.
-> **Step 2**
+> **Passaggio 2**
 >> **Record AAAA**<br><br>
 >>  Per identificare i record AAAA esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella che corrisponde al tuo nome di dominio, senza sottodominio (esempio: `mydomain.ovh.`), poi clicca su `Elimina il record`{.action}.<br>
 >> - Se è presente un record per il sottodominio "www" (esempio: `wwww.mydomain.ovh.`), eliminalo in modo che non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo nome di dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
 >> - Se non disponi di un record "AAAA" esistente, passa allo Step 3.
-> **Step 3**
+> **Passaggio 3**
 >> **Record TXT**<br><br>
 >> Per identificare i record TXT esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Se sono presenti record "TXT" solo per il nome di dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo nome di dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
-> **Step 4**
+> **Passaggio 4**
 >> **Record CNAME**<br><br>
 >> Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
