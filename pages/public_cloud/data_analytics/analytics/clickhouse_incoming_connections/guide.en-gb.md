@@ -1,7 +1,7 @@
 ---
 title: ClickHouse - Configure incoming connections
 excerpt: Find out how to configure your ClickHouse cluster to accept incoming connections via the OVHcloud Control Panel
-updated: 2026-01-10
+updated: 2026-02-25
 ---
 
 ## Objective
