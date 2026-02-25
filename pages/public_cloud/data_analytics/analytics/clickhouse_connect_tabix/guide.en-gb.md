@@ -1,42 +1,41 @@
 ---
 title: ClickHouse - Connect with Tabix
-excerpt: Find out how to connect to your Analytics for ClickHouse using Tabix
-updated: 2026-01-10
+excerpt: Find out how to connect to your Analytics for ClickHouse instance using Tabix, a lightweight SQL client, and start querying your data
+updated: 2026-02-25
 ---
 
 ## Objective
 
-Analytics engines allow you to focus on building and analyzing data while OVHcloud handles the database infrastructure and ensures it operates under proper conditions.
+Analytics engines let you focus on building and analyzing data while OVHcloud handles the database infrastructure.
 
 **This guide explains how to connect to a ClickHouse Analytics instance using Tabix, a lightweight and user-friendly SQL client for ClickHouse.**
 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A ClickHouse service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement).
-- [Configure your ClickHouse instance](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections) to accept incoming connections.
+- A ClickHouse instance [configured to accept incoming connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections).
 - A stable version of Tabix installed and public network connectivity (Internet). This guide was created using Tabix version 22.05.25.
 
 ## Concept
 
 A ClickHouse service can be managed in several ways.
 
-One of the simplest, yet powerful, approaches is to use the Command Line Interface (CLI), as shown in our guide: [Connect to ClickHouse with CLI](/pages/public_cloud/data_analytics/analytics/clickhouse_connect_cluster_cli), or by using programming languages and drivers.
+One of the simplest, yet powerful, approaches is to use the Command Line Interface (CLI), as shown in the guide: [Connect to ClickHouse with CLI](/pages/public_cloud/data_analytics/analytics/clickhouse_connect_cluster_cli), or by using programming languages and drivers.
 
 Another option is to interact directly using a graphical management tool designed for ClickHouse: **Tabix**.
 
-To do so, we will install Tabix, configure your Analytics service for ClickHouse service to accept incoming connections, and finally connect to your ClickHouse service using Tabix.
+To do so, you will install Tabix, configure your ClickHouse Analytics service to accept incoming connections, and finally connect to it using Tabix.
 
 ## Instructions
 
 ### Installing Tabix
 
-Please follow the [official Tabix documentation](https://tabix.io/doc/Install/) to install Tabix.
+Follow the [official Tabix documentation](https://tabix.io/doc/Install/) to install Tabix.
 
-We are now ready to learn how to connect to our ClickHouse instance.
+You are now ready to connect to your ClickHouse instance.
 
-### Connecing with Tabix
+### Connecting with Tabix
 
 In Tabix, create a new connection and fill in the required fields (name, port, login, password, and SSL certificate if applicable).
 
@@ -44,7 +43,7 @@ You are now ready to interact with your Analytics service for ClickHouse.
 
 ### Inserting and querying data
 
-You can use the SQL editor integrated in Tabix to create your first database and table, and insert sample data. Below is an example that creates the database **company** and table **customer**, then inserts a sample row.
+Use the SQL editor in Tabix to create your first database and table and insert sample data. Below is an example that creates the database **company** and table **customer**, then inserts a sample row.
 
 #### Loading data into ClickHouse
 
@@ -95,11 +94,11 @@ GROUP BY age
 ORDER BY age ASC;
 ```
 
-This query provides a summary of customers by age in your ClickHouse service.
+This query summarizes customers by age.
 
 ## Go further
 
-Explore the [Tabix documentation](https://tabix.io/doc/) to view all the features and learn how to interact with your ClickHouse data.
+Explore the [Tabix documentation](https://tabix.io/doc/) for all available features and capabilities.
 
 [ClickHouse service capabilities](/pages/public_cloud/data_analytics/analytics/clickhouse_capabilities_limitations)
 
