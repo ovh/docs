@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Public Cloud Analytics with ClickHouse
 excerpt: Discover the technical capabilities and limitations of the Public Cloud Analytics for ClickHouse offer, including supported regions, plans, storage, networking, and backups
-updated: 2026-01-28
+updated: 2026-02-25
 ---
 
 ## Objective

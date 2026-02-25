@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Analytics with ClickHouse
-excerpt: Discover ClickHouse on OVHcloud Public Cloud
-updated: 2026-01-10
+excerpt: Learn how to get started with OVHcloud's Managed ClickHouse service - explore capabilities, pricing, cluster creation, and connection configuration
+updated: 2026-02-25
 ---
 
 ClickHouse on OVHcloud is a fully managed, high-performance analytical column-store database designed to handle massive data volumes with extremely low latency. Built on the open-source ClickHouse engine, the service is tailored for real-time Analytics, large-scale reporting, modern BI workloads, and any application that requires ultra-fast queries over large datasets. Your data is stored in a columnar, partitioned, and distributed format, enabling OVHcloud to deliver highly parallel processing, high-throughput ingestion, and excellent compression efficiency. With intuitive management through the OVHcloud Control Panel (or API/Terraform), you can deploy and configure ClickHouse clusters within minutes, offloading infrastructure operations such as maintenance, scaling, and high availability. This lets you focus entirely on extracting value from your data rather than managing backend systems.
@@ -10,11 +10,11 @@ ClickHouse on OVHcloud is a fully managed, high-performance analytical column-st
 
 ### Product page
 
-Discover how OVHcloud’s Managed ClickHouse service enables you to deploy and operate fully managed, high-performance analytical clusters in the Public Cloud, complete with distributed storage, column-oriented processing, real-time ingestion, advanced compression, and effortless scalability. Benefit from built-in high availability, seamless integration with OVHcloud networking options, Terraform support for automated provisioning, and competitive pay-as-you-go pricing on the [ClickHouse product page](/links/public-cloud/analytics-clickhouse).
+Discover how OVHcloud’s Managed ClickHouse service enables you to deploy and operate fully managed, high-performance analytical clusters in the Public Cloud, complete with distributed storage, column-oriented processing, real-time ingestion, advanced compression, and effortless scalability. Benefit from built-in high availability, seamless integration with OVHcloud networking options, Terraform support for automated provisioning, and competitive pay-as-you-go pricing. Learn more on the [ClickHouse product page](/links/public-cloud/analytics-clickhouse).
 
 ### Pricing
 
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, and Analytics solutions—including plans for ClickHouse on the [ClickHouse pricing page](/links/public-cloud/prices-clickhouse).
+Find detailed hourly and monthly rates for OVHcloud Public Cloud services — including virtual instances, managed databases, and Analytics solutions with ClickHouse plans — on the [ClickHouse pricing page](/links/public-cloud/prices-clickhouse).
 
 ### Capabilities
 
@@ -40,6 +40,8 @@ Some UI tools for ClickHouse are also available:
 - [Redash](https://redash.io/)
 - [Altinity](https://altinity.com/)
 
-Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our database services.
+Visit our Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our database services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or our [Professional Services experts](/links/professional-services) for a quote and custom analysis of your project.
+
+Join our [community of users](/links/community).
