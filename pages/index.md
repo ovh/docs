@@ -1367,6 +1367,7 @@
                 + [Getting started with Public Cloud Analytics with ClickHouse](public_cloud/data_analytics/analytics/clickhouse_getting_started)
                 + [How to create a ClickHouse cluster](public_cloud/data_analytics/analytics/clickhouse_create_cluster)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
+                + [ClickHouse - Configure incoming connections](public_cloud/data_analytics/analytics/clickhouse_incoming_connections)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
         + [Kafka](products/public-cloud-data-analytics-kafka)
             + [Key concepts](public-cloud-data-analytics-kafka-key-concepts)
