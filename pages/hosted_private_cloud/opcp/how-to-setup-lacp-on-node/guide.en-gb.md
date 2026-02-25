@@ -134,17 +134,18 @@ openstack baremetal node maintenance set <node-id>
 A **port group** allows enabling LACP aggregation between multiple network interfaces.
 
 > [!success]
-> You can create:<br>
+> You can create:
+>
 > - a **single port group** for a 1×4 bond, or<br>
 > - two **port groups** for 2×2 bonds.
 
-Use the `--mode 802.3ad` parameter to enable LACP. 
-* `--address <MAC>` must be equal to the MAC address of the PXE port only if it's being used. Otherwise, you can omit the parameter or set the MAC value from one of the chosen physical interfaces you intend to use.
+Use the `--mode 802.3ad` parameter to enable LACP.
+
+The `--address <MAC>` parameter must be equal to the MAC address of the PXE port only if it's being used. Otherwise, you can omit the parameter or set the MAC value from one of the physical interfaces you will use.
 
 You can list all ports with `openstack baremetal port list --node <node> --long` and verify if PXE is used or not.
 
-Note: We recommend prefixing the portgroup name with the node name to have a clearer identification when listing all portgroups.
-<node-name>-<name>
+Note: We recommend prefixing the portgroup name with the node name for clearer identification when listing portgroups (e.g. `<node-name>-<name>`).
 
 **Example:**
 
