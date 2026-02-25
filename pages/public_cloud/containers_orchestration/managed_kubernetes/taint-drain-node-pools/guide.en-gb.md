@@ -1,7 +1,7 @@
 ---
 title: Taint, cordon and drain specific Nodes and Nodes Pools
 excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, like taint, drain and cordon, on OVHcloud Managed Kubernetes'
-updated: 2021-12-23
+updated: 2026-02-25
 ---
 
 ## Objective

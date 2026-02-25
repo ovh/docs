@@ -1,7 +1,7 @@
 ---
 title: Customizing Kube-proxy on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to customize the Kube-proxy configuration on an OVHcloud Managed Kubernetes cluster'
-updated: 2023-03-14
+updated: 2026-02-25
 ---
 
 <style>

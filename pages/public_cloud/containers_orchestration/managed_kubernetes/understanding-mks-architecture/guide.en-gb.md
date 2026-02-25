@@ -1,25 +1,25 @@
 ---
 title: Understanding OVHcloud Managed Kubernetes architecture
 excerpt: 'Learn how OVHcloud Managed Kubernetes Service works under the hood: control plane, worker nodes, networking, and storage'
-updated: 2026-01-22
+updated: 2026-02-25
 ---
 
 ## Objective
 
-This guide explains the architecture of OVHcloud Managed Kubernetes Service (MKS) to help you understand how your clusters are deployed, managed, and connected. Understanding this architecture will help you make informed decisions about cluster configuration, troubleshooting, and scaling.
+**This guide explains the architecture of OVHcloud Managed Kubernetes Service (MKS) to help you understand how your clusters are deployed, managed, and connected. Understanding this architecture will help you make informed decisions about cluster configuration, troubleshooting, and scaling.**
 
 ## Overview
 
 OVHcloud Managed Kubernetes Service is a CNCF-certified Kubernetes offering that abstracts away the complexity of managing the control plane while giving you full control over your worker nodes and workloads.
 
-```
+```text
 +------------------------------------------------------------------+
 |                    OVHcloud Managed Kubernetes                    |
 +------------------------------------------------------------------+
 |                                                                  |
 |  +------------------------+      +----------------------------+  |
 |  |     CONTROL PLANE      |      |       WORKER NODES         |  |
-|  |    (Managed by OVH)    |      |   (Your responsibility)    |  |
+|  | (Managed by OVHcloud)  |      |   (Your responsibility)    |  |
 |  +------------------------+      +----------------------------+  |
 |  |                        |      |                            |  |
 |  |  +------------------+  |      |  +---------+  +---------+  |  |
@@ -65,14 +65,14 @@ OVHcloud handles all operational aspects of the control plane:
 
 > [!primary]
 >
-> **About Kubernetes upgrades**: OVHcloud makes new Kubernetes minor versions available. You control when to trigger the upgrade. The only exception is when your cluster runs an End-of-Life version, in this case, OVHcloud will force an upgrade to the next supported version after prior notification.
+> **About Kubernetes upgrades**: OVHcloud makes new Kubernetes minor versions available. You control when to trigger the upgrade. The only exception is when your cluster runs an End-of-Life version; in this case, OVHcloud will force an upgrade to the next supported version after prior notification.
 >
 
 ### Free vs Standard plan: Control plane differences
 
 The control plane architecture differs significantly between plans:
 
-```
+```text
 FREE PLAN                                STANDARD PLAN
 +--------------------+                   +------------------------------------------------+
 |   Single Zone      |                   |              Multi-AZ Deployment               |
@@ -123,7 +123,7 @@ Worker nodes are based on OVHcloud Public Cloud instances. When you create a nod
 
 The CNI differs depending on your plan:
 
-```
+```text
 FREE PLAN - Worker Node                     STANDARD PLAN - Worker Node
 +------------------------------+            +------------------------------+
 |                              |            |                              |
@@ -152,10 +152,10 @@ Nodes are organized into node pools - groups of nodes sharing the same configura
 - **Flavor**: Instance type (b3-8, b3-16, t1-45 for GPU, etc.)
 - **Autoscaling settings**: Min/max nodes, scale-down thresholds
 - **Anti-affinity**: Distribute nodes across different hypervisors
-- **Billing**: Hourly or monthly (for gen2 flaovrs), Saving Plans for gen3 and above
+- **Billing**: Hourly or monthly (for gen2 flavors), Saving Plans for gen3 and above
 - **Labels and taints**: For workload scheduling
 
-```
+```text
 +------------------------------------------------------------------+
 |                         KUBERNETES CLUSTER                        |
 +------------------------------------------------------------------+
@@ -186,7 +186,7 @@ Nodes are organized into node pools - groups of nodes sharing the same configura
 
 ### Node lifecycle
 
-```
+```text
                               NORMAL LIFECYCLE
   +------------+      +----------+      +-----------+      +------------+
   |            |      |          |      |           |      |            |
@@ -256,7 +256,7 @@ This ensures cluster stability but means:
 
 When upgrading Kubernetes versions, MKS offers two strategies for updating worker nodes:
 
-```
+```text
 +=============================================================================+
 |                          NODE UPGRADE STRATEGIES                            |
 +=============================================================================+
@@ -376,13 +376,13 @@ Each worker node reserves resources for Kubernetes system components:
 | RAM | Fixed 1590 MB |
 | Storage | log10(total storage in GB) * 10 + 10% of total storage |
 
-Example for b3-16 flavor: 170ms CPU, 1.59GB RAM, 30GB storage reserved.
+Example for b3-16 flavor: 170m CPU, 1.59GB RAM, 30GB storage reserved.
 
 ## Networking architecture
 
 ### Cluster network overview
 
-```
+```text
 +====================================================================================+
 |                            NETWORKING ARCHITECTURE                                 |
 +====================================================================================+
@@ -504,7 +504,7 @@ Reserved subnets (do not use in your private network):
 
 Kubernetes Services can be exposed in several ways:
 
-```
+```text
 +------------------------------------------------------------------+
 |                    SERVICE EXPOSURE OPTIONS                       |
 +------------------------------------------------------------------+
@@ -583,7 +583,7 @@ This is the simplest option when you only need private connectivity between Publ
 
 For broader interconnectivity across OVHcloud product universes and regions:
 
-```
+```text
 +------------------------------------------------------------------+
 |                         vRack INTEGRATION                         |
 +------------------------------------------------------------------+
@@ -609,6 +609,7 @@ For broader interconnectivity across OVHcloud product universes and regions:
 ```
 
 vRack enables:
+
 - Cross-region private connectivity
 - Interconnection with Bare Metal servers
 - Interconnection with Hosted Private Cloud (VMware)
@@ -625,7 +626,7 @@ vRack enables:
 
 MKS uses the OpenStack Cinder CSI driver for persistent storage:
 
-```
+```text
 +------------------------------------------------------------------+
 |                    STORAGE ARCHITECTURE                           |
 +------------------------------------------------------------------+
@@ -692,7 +693,7 @@ MKS uses the OpenStack Cinder CSI driver for persistent storage:
 
 ### Shared responsibility
 
-```
+```text
 +------------------------------------------------------------------+
 |                    SHARED RESPONSIBILITY MODEL                    |
 +------------------------------------------------------------------+
@@ -754,7 +755,7 @@ For the complete version matrix, see [Kubernetes Plugins & Software versions](/p
 
 ## Architecture diagram: Complete overview
 
-```
+```text
 +=======================================================================================+
 |                        OVHCLOUD MANAGED KUBERNETES SERVICE                             |
 +=======================================================================================+

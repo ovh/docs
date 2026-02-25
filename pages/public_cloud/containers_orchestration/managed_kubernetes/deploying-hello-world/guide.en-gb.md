@@ -1,7 +1,7 @@
 ---
 title: Deploying a Hello World application
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API'
-updated: 2025-05-06
+updated: 2026-02-25
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Installing Keycloak, an OIDC Provider, on OVHcloud Managed Kubernetes
 excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenID Connect provider (OIDC) and RBAC.
-updated: 2022-11-24
+updated: 2026-02-25
 ---
 
 ## Objective

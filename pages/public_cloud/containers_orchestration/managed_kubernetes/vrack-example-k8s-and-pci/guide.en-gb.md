@@ -1,6 +1,6 @@
 ---
 title: Working with vRack example - Managed Kubernetes and Public Cloud instances
-updated: 2021-12-21
+updated: 2026-02-25
 ---
 
 ## Objective

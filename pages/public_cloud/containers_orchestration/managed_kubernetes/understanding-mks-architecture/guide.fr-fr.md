@@ -1,25 +1,25 @@
 ---
-title: Comprendre l'architecture d'OVHcloud Managed Kubernetes
+title: "Comprendre l'architecture d'OVHcloud Managed Kubernetes"
 excerpt: "Découvrez le fonctionnement d'OVHcloud Managed Kubernetes Service : control plane, worker nodes, réseau et stockage"
-updated: 2026-01-22
+updated: 2026-02-25
 ---
 
 ## Objectif
 
-Ce guide explique l'architecture d'OVHcloud Managed Kubernetes Service (MKS) pour vous aider à comprendre comment vos clusters sont déployés, gérés et connectés. Comprendre cette architecture vous aidera à prendre des décisions éclairées concernant la configuration, le dépannage et le dimensionnement de votre cluster.
+**Ce guide explique l'architecture d'OVHcloud Managed Kubernetes Service (MKS) pour vous aider à comprendre comment vos clusters sont déployés, gérés et connectés. Comprendre cette architecture vous aidera à prendre des décisions éclairées concernant la configuration, le dépannage et le dimensionnement de votre cluster.**
 
 ## Vue d'ensemble
 
 OVHcloud Managed Kubernetes Service est une offre Kubernetes certifiée CNCF qui abstrait la complexité de la gestion du control plane tout en vous donnant un contrôle total sur vos worker nodes et vos workloads.
 
-```
+```text
 +------------------------------------------------------------------+
 |                    OVHcloud Managed Kubernetes                    |
 +------------------------------------------------------------------+
 |                                                                  |
 |  +------------------------+      +----------------------------+  |
 |  |     CONTROL PLANE      |      |       WORKER NODES         |  |
-|  |    (Géré par OVH)      |      |  (Votre responsabilité)    |  |
+|  |  (Géré par OVHcloud)   |      |  (Votre responsabilité)    |  |
 |  +------------------------+      +----------------------------+  |
 |  |                        |      |                            |  |
 |  |  +------------------+  |      |  +---------+  +---------+  |  |
@@ -72,7 +72,7 @@ OVHcloud gère tous les aspects opérationnels du control plane :
 
 L'architecture du control plane diffère significativement entre les plans :
 
-```
+```text
 PLAN FREE                                PLAN STANDARD
 +--------------------+                   +------------------------------------------------+
 |   Zone unique      |                   |              Déploiement Multi-AZ              |
@@ -123,7 +123,7 @@ Les worker nodes sont basés sur des instances OVHcloud Public Cloud. Quand vous
 
 Le CNI diffère selon votre plan :
 
-```
+```text
 PLAN FREE - Worker Node                     PLAN STANDARD - Worker Node
 +------------------------------+            +------------------------------+
 |                              |            |                              |
@@ -152,10 +152,10 @@ Les nodes sont organisés en node pools - des groupes de nodes partageant la mê
 - **Flavor** : Type d'instance (b3-8, b3-16, t1-45 pour GPU, etc.)
 - **Paramètres d'autoscaling** : Min/max nodes, seuils de scale-down
 - **Anti-affinité** : Distribuer les nodes sur différents hyperviseurs
-- **Facturation** : Horaire ou mensuelle
+- **Facturation** : Horaire ou mensuelle (pour les flavors gen2), Saving Plans pour gen3 et au-delà
 - **Labels et taints** : Pour le scheduling des workloads
 
-```
+```text
 +------------------------------------------------------------------+
 |                         CLUSTER KUBERNETES                        |
 +------------------------------------------------------------------+
@@ -186,7 +186,7 @@ Les nodes sont organisés en node pools - des groupes de nodes partageant la mê
 
 ### Cycle de vie des nodes
 
-```
+```text
                               CYCLE DE VIE NORMAL
   +------------+      +----------+      +-----------+      +------------+
   |            |      |          |      |           |      |            |
@@ -257,7 +257,7 @@ Cela garantit la stabilité du cluster mais signifie :
 
 Lors de la mise à jour des versions Kubernetes, MKS propose deux stratégies pour mettre à jour les worker nodes :
 
-```
+```text
 +===============================================================================+
 |                     STRATÉGIES DE MISE À JOUR DES NODES                       |
 +===============================================================================+
@@ -282,7 +282,7 @@ Lors de la mise à jour des versions Kubernetes, MKS propose deux stratégies po
 |      |                                                                        |
 |      | 2. Mise à jour                         +-------+                       |
 |      v    composants                          |Node 3 |  3. Migrer pods       |
-|  +-------+  +-------+  +-------+              |DRAIN  |     vers nouveaur node|
+|  +-------+  +-------+  +-------+              |DRAIN  |     vers nouveau node |
 |  |Node 1 |  |Node 2 |  |Node 3 |              +---+---+                       |
 |  | v1.34 |  | v1.33 |  | v1.33 |                  |                           |
 |  +-------+  +---+---+  +-------+                  | 4. Supprimer ancien node  |
@@ -329,7 +329,7 @@ Avec les mises à jour in-place, chaque worker node est mis à jour directement 
 
 #### Rolling upgrades
 
-Avec les rolling upgrades (actuellement disponible uniquement sur le plan Standard), de nouveaux worker nodes sont créés avec la version Kubernetes cible :
+Avec les rolling upgrades (actuellement disponibles uniquement sur le plan Standard), de nouveaux worker nodes sont créés avec la version Kubernetes cible :
 
 1. MKS **crée** un nouveau node avec la version cible
 2. MKS met en **cordon et draine** un ancien node
@@ -377,13 +377,13 @@ Chaque worker node réserve des ressources pour les composants système Kubernet
 | RAM | Fixe 1590 MB |
 | Stockage | log10(stockage total en GB) * 10 + 10% du stockage total |
 
-Exemple pour la flavor b3-16 : 170ms CPU, 1.59GB RAM, 30GB stockage réservés.
+Exemple pour la flavor b3-16 : 170m CPU, 1.59GB RAM, 30GB stockage réservés.
 
 ## Architecture réseau
 
 ### Vue d'ensemble du réseau cluster
 
-```
+```text
 +====================================================================================+
 |                             ARCHITECTURE RÉSEAU                                     |
 +====================================================================================+
@@ -393,7 +393,7 @@ Exemple pour la flavor b3-16 : 170ms CPU, 1.59GB RAM, 30GB stockage réservés.
 |   |      |                                                                         |
 |   +--+---+                                                                         |
 |      |                                                                             |
-|      +------------------+------------------------+.                                |
+|      +------------------+------------------------+                                 |
 |      |                  ^                        ^                                 |
 |      | OPTION 1         | OPTION 2               | OPTION 3                        |
 |      | Load Balancer    | Floating IPs nodes     | Gateway (SNAT)                  |
@@ -505,7 +505,7 @@ Sous-réseaux réservés (ne pas utiliser dans votre réseau privé) :
 
 Les Services Kubernetes peuvent être exposés de plusieurs façons :
 
-```
+```text
 +------------------------------------------------------------------+
 |                    OPTIONS D'EXPOSITION DES SERVICES              |
 +------------------------------------------------------------------+
@@ -584,7 +584,7 @@ C'est l'option la plus simple quand vous avez uniquement besoin de connectivité
 
 Pour une interconnectivité plus large entre les univers produits OVHcloud et entre régions :
 
-```
+```text
 +------------------------------------------------------------------+
 |                      INTÉGRATION vRack                            |
 +------------------------------------------------------------------+
@@ -610,6 +610,7 @@ Pour une interconnectivité plus large entre les univers produits OVHcloud et en
 ```
 
 Le vRack permet :
+
 - Connectivité privée inter-régions
 - Interconnexion avec les serveurs Bare Metal
 - Interconnexion avec Hosted Private Cloud (VMware)
@@ -626,7 +627,7 @@ Le vRack permet :
 
 MKS utilise le driver OpenStack Cinder CSI pour le stockage persistant :
 
-```
+```text
 +------------------------------------------------------------------+
 |                    ARCHITECTURE DE STOCKAGE                       |
 +------------------------------------------------------------------+
@@ -693,7 +694,7 @@ MKS utilise le driver OpenStack Cinder CSI pour le stockage persistant :
 
 ### Responsabilité partagée
 
-```
+```text
 +------------------------------------------------------------------+
 |                    MODÈLE DE RESPONSABILITÉ PARTAGÉE              |
 +------------------------------------------------------------------+
@@ -756,7 +757,7 @@ Pour la matrice complète des versions, consultez [Plugins Kubernetes et version
 
 ## Diagramme d'architecture : vue complète
 
-```
+```text
 +=======================================================================================+
 |                        OVHCLOUD MANAGED KUBERNETES SERVICE                             |
 +=======================================================================================+

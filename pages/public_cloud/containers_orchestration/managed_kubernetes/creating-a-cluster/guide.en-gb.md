@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster
 excerpt: 'Find out how to create a Kubernetes cluster managed by OVHcloud using the OVHcloud Control Panel, Terraform, Pulumi or CDK'
-updated: 2025-05-06
+updated: 2026-02-25
 ---
 
 <style>
