@@ -1,7 +1,7 @@
 ---
 title: "Migrate Helm Charts from Chartmuseum to OCI"
 excerpt: "Find out how to migrate Helm Charts From Chartmuseum (Harbor < 2.8) to OCI"
-updated: 2024-10-18
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -107,7 +107,7 @@ helm install dummy-chart oci://$HARBOR_URL/$HARBOR_PROJECT/dummy-chart --version
 ```
 
 #### Useful Links
-- [Harbor Helm documentation](https://goharbor.io/docs/2.4.0/working-with-projects/working-with-images/managing-helm-charts/)
+- [Harbor Helm documentation](https://goharbor.io/docs/2.14.0/working-with-projects/working-with-oci/working-with-helm-oci-charts/)
 - [Helm OCI documentation](https://helm.sh/docs/topics/registries/#using-an-oci-based-registry)
 
 ## Go further
