@@ -1,21 +1,20 @@
 ---
 title: ClickHouse – Real-time Analytics with Kafka integration
-excerpt: Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange
-updated: 2026-01-15
+excerpt: Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange. Learn which data formats are supported for input and output.
+updated: 2026-02-25
 ---
 
 ## Objective
 
-This guide aims to help users integrate ClickHouse with Kafka using Aiven. You will learn how to set up the connection, manage supported data formats, and enable efficient real-time data ingestion for Analytics. By the end of this guide, you will be able to build reliable, high-performance data pipelines between ClickHouse and Kafka.
+This guide explains how to integrate ClickHouse with Kafka using Aiven: setting up the connection, managing data formats, and enabling real-time ingestion for Analytics.
 
-**Find out how to connect ClickHouse® to Kafka® with Aiven integrations for seamless data exchange. Learn which data formats are supported for input and output to ensure smooth Analytics workflows.**
+**This guide explains how to connect ClickHouse® to Kafka® via Aiven integrations for real-time data exchange.**
 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
-- A ClickHouse service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement).
-- [Configure your ClickHouse instance](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections) to accept incoming connections.
+- A ClickHouse service running on your OVHcloud Analytics ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help).
+- A ClickHouse instance [configured to accept incoming connections](/pages/public_cloud/data_analytics/analytics/clickhouse_incoming_connections).
 - An [active Kafka cluster integrated via Aiven](https://aiven.io/docs/products/clickhouse/howto/data-service-integration#create-apache-kafka-integrations) or a managed [Kafka cluster](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster).
 
 ## Instructions
@@ -30,7 +29,7 @@ Before connecting ClickHouse, ensure your Kafka cluster is operational:
 
 ### Creating the Apache Kafka integration in Aiven
 
-Before configuring ClickHouse tables, you must create the Apache Kafka integration in Aiven. This step establishes the managed connection that allows ClickHouse to consume Kafka data.
+Before configuring ClickHouse tables, create the Apache Kafka integration in Aiven. This establishes the managed connection for ClickHouse to consume Kafka data.
 
 Follow the [official Aiven documentation to create the integration](https://aiven.io/docs/products/clickhouse/howto/data-service-integration#create-apache-kafka-integrations).
 
@@ -51,7 +50,9 @@ ClickHouse must accept connections from your Kafka cluster:
 - Enable external connections and whitelist Kafka cluster IPs or network ranges;
 - Confirm ClickHouse is running a stable version supported by Aiven.
 
-**Tip:** Always use a secure connection (TLS) between ClickHouse and Kafka for production environments.
+> [!primary]
+>
+> Always use a secure connection (TLS) between ClickHouse and Kafka for production environments.
 
 ### Creating Kafka engine tables in ClickHouse
 
