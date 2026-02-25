@@ -1,7 +1,7 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
-updated: 2025-07-02
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -65,7 +65,7 @@ helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
-  --set installCRDs=true \
+  --set crds.enabled=true \
   --values values.yaml
 ```
 
@@ -80,7 +80,7 @@ $ helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
- --set installCRDs=true
+ --set crds.enabled=true
 NAME: cert-manager
 LAST DEPLOYED: Thu Jan 18 15:28:23 2024
 NAMESPACE: cert-manager

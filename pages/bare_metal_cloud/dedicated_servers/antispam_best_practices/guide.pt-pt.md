@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Boas práticas e desbloqueio de um endereço IP
 excerpt: Descubra as nossas boas práticas antisspam e como desbloquear um endereço IP bloqueado para SPAM
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Objetivo
@@ -64,19 +64,19 @@ Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os p
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
-No quadro amarelo dedicado aos alertas, clique na seta pendente `Ver todos os meus alertas`{.action} para apresentar todos os alertas no(s) seu(s) endereço(s) IP.
+Pode utilizar o menu suspenso sob **Os meus endereços IP públicos e serviços associados** para filtrar os seus serviços por categoria, ou escrever diretamente o endereço IP desejado na barra de pesquisa.
 
-Se um dos seus endereços IP for afetado por um alerta, a informação será apresentada imediatamente abaixo:
+Se tiver uma alerta sobre uma das suas IPs, encontrará um selo de status vermelho na coluna **Alerta IP**.
 
-![Alerta antispam](images/alertblockedip.png){.thumbnail}
+![Alerta anti spam](images/blockedIP_new.png){.thumbnail}
 
-Na secção "Os meus endereços IP públicos e serviços associados", clique no botão `...`{.action} junto do IP ou do serviço correspondente e selecione o `AntiSpam`{.action}.
+Clique no botão `⁝`{.action} ao lado da IP ou do serviço correspondente e selecione `Desbloqueio anti-spam`{.action}.
 
-![antispam](images/antispam.png){.thumbnail}
+![antispam](images/antispam_new.png){.thumbnail}
 
-Na nova janela, clique em `Desbloquear a proteção Anti-Spam`{.action} e valide.
+Na janela que se abre, clique em `Desbloquear o IP`{.action} em baixo e valide.
 
-![Desbloquear IP](images/unblockip.png){.thumbnail}
+![Desbloquear IP](images/unblockip_new.png){.thumbnail}
 
 O IP está em curso de desbloqueio, a operação pode levar vários minutos.
 
@@ -114,8 +114,8 @@ A seguir, procure os endereços IP num determinado estado graças à seguinte ch
 > @api {v1} /ip GET /ip/{ip}/spam
 >
 
-**ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede. Por exemplo, 122.122.122.121/28.<br>
-**state** : especifique o estado que procura.
+**ip**: especifique o bloco de IP recuperado no passo anterior com a máscara de rede. Por exemplo, 122.122.122.121/28.<br>
+**state**: especifique o estado que procura.
 
 Eis um exemplo de resultado (neste caso, o bloco 122.122.122.121/28 foi selecionado):
 
@@ -130,8 +130,8 @@ Para obter informações sobre o bloqueio, aceda à seguinte chamada. Caso contr
 > @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
-**ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
-**ipSpamming** : indique o IP anteriormente recuperado no estado "blockedForSpam", por exemplo.
+**ip**: especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
+**ipSpamming**: indique o IP anteriormente recuperado no estado "blockedForSpam", por exemplo.
 
 Eis um exemplo de resultado (neste caso, o bloco 122.122.122.121/28 e o IP 122.122.122.122 foram selecionados):
 
@@ -157,9 +157,9 @@ Se deseja obter as estatísticas sobre o que foi detetado, utilize a chamada api
 > @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
-**ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
-**ipSpamming** : indique o IP anteriormente recuperado no estado "blockedForSpam", por exemplo.<br>
-**from and to** : utilize o formato de data utilizado na função anterior (YYYY-MM-DDTHH:MM+01:SS).
+**ip**: especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
+**ipSpamming**: indique o IP anteriormente recuperado no estado "blockedForSpam", por exemplo.<br>
+**from and to**: utilize o formato de data utilizado na função anterior (YYYY-MM-DDTHH:MM+01:SS).
 
 Eis um exemplo:
 
@@ -186,8 +186,8 @@ Para desbloquear o seu endereço IP, utilize a seguinte chamada:
 > @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
-**ip** : especifique o bloco de endereços IP recuperado no passo anterior com a máscara de rede.<br>
-**ipSpamming** : especifique o endereço IP anteriormente recuperado no estado "blockedForSpam", por exemplo.
+**ip**: especifique o bloco de endereços IP recuperado no passo anterior com a máscara de rede.<br>
+**ipSpamming**: especifique o endereço IP anteriormente recuperado no estado "blockedForSpam", por exemplo.
 
 Eis um exemplo:
 
@@ -206,9 +206,80 @@ state: "unblocking"
 
 O endereço IP está a ser desbloqueado e a operação pode levar alguns minutos.
 
-### Em caso de falsos positivos
+### Em caso de falso positivo
 
-Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) e [boas práticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
+Em alguns casos, o alerta antispam pode ser um falso positivo. Se verificou e constatou que o **Message-ID** está associado a um e-mail legítimo, deve assegurar-se de que os seus e-mails estão em conformidade com as [RFC](#rfc) e com as [boas práticas](#bestpractices) referenciadas abaixo.
+
+#### RFC <a name="rfc"></a>
+
+As RFC (Request For Comments) são documentos destinados a descrever aspectos técnicos da Internet. Estes documentos são produzidos e publicados pela IETF (Internet Engineering Task Force), um grupo que produz e define essencialmente normas.
+Encontre mais informações nos seguintes links: 
+<br>
+- [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)<br>
+- [IETF](https://www.ietf.org/)<br>
+- [Internet Draft](https://en.wikipedia.org/wiki/Internet_Draft)
+
+#### Boas práticas <a name="bestpractices"></a>
+
+As boas práticas são métodos recomendados que são frequentemente baseados nos documentos RFC e que visam aconselhá-lo sobre a melhor forma de proceder. Trata-se aqui das regras básicas a respeitar para que os seus e-mails não sejam considerados como spam.
+
+**Volume de envio**
+
+Se o volume dos seus e-mails enviados for muito elevado, é aconselhável:
+
+- reservar um bloco de endereços IP dedicado exclusivamente à utilização dos e-mails.
+- fornecer um endereço *abuse* nesse bloco para receber reclamações.
+- configurar corretamente os [Reverses](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configurer-le-reverse-ip) em todas as endereços IP. 
+
+Esta última operação permitirá isolar simultaneamente a IP e a reputação do domínio se enviar e-mails de diferentes domínios, receber as reclamações e, assim, fazer o necessário para ser desbloqueado pelas diferentes organizações. O *reverse* permite também localizar mais rapidamente um problema num formulário utilizando o domínio X ou Y, pois os e-mails não são enviados a partir da mesma IP e não têm o mesmo *reverse*.
+
+**Conteúdo do seu e-mail**
+
+- Evite utilizar palavras-chave de spam nos seus e-mails, como "comprar" ou "última chance". Evite maiúsculas desnecessárias, assuntos genéricos, pontos de exclamação e percentagens de desconto.
+- Pense em fornecer um link de **desinscrição** para as pessoas que não solicitaram receber o seu e-mail ou que considerem que este é ilegítimo.
+- Preste especial atenção a que os seus e-mails contenham o endereço do remetente (ou um alias), um assunto e uma boa proporção de texto, imagens e links no corpo da mensagem.
+- A relação texto/imagem e texto/link deve ser elevada. Não sobrecarregue o e-mail com links hipertexto e evite o JavaScript.
+
+**FBL (*Feedback Loop*) - Ciclo de avaliação**
+
+Este sistema permite acompanhar diretamente os feedbacks de alguns provedores de acesso à Internet, informando-lhe que os seus utilizadores sinalizaram a sua mensagem como ilegal e que foi classificada como spam. Isto permitirá interagir diretamente com estes FAI em relação à sua reputação. Eis alguns FBL:
+
+- [Yahoo & AOL Postmaster](https://senders.yahooinc.com/contact)
+- [SpamCop](https://www.spamcop.net/)
+- [Outlook & live.com](https://sendersupport.olc.protection.outlook.com/pm/)
+
+**Autenticação**
+
+Certos serviços de autenticação permitem-lhe proteger a sua reputação:
+
+- **Sender-ID**: trata-se de uma tecnologia de autenticação de e-mails desenvolvida pela Microsoft que valida a autenticidade do seu nome de domínio verificando o endereço IP do remetente. Esta tecnologia baseia-se na norma IETF: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
+- **SPF**: *Sender Policy Framework* é um padrão de verificação do domínio do remetente. Baseia-se na [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) e consiste em adicionar um campo SPF ou TXT ao DNS do domínio, que contém a lista das endereços IP autorizadas a enviar e-mails a partir desse domínio.
+- **Reverse DNS ou Reverse IP**: O *reverse* permite "traduzir" uma IP num domínio. Isto permite encontrar o domínio associado ao endereço IP.
+- **DKIM**: Esta norma é descrita na [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL e Google (Gmail) funcionam com base nisso. 
+
+Para mais informações sobre os serviços acima mencionados, consulte o nosso guia "[Optimizar o envio de e-mails](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)".
+
+#### Casos específicos de envios de e-mails
+
+- **Para um servidor Microsoft (Outlook, etc.)**
+
+A Microsoft utiliza uma política de lista branca. Isto significa que qualquer servidor está inicialmente numa lista negra. Uma procedimento específico é então necessário para validar o seu servidor de e-mail. Para mais informações, convidamo-lo a consultar a secção **Para um servidor Microsoft (Outlook, etc.)** do nosso guia "[Como evitar que os seus e-mails sejam marcados como spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)".
+
+- **Para um servidor Gmail**
+
+A adição de registos específicos (por exemplo, um registo DMARC) pode facilitar a receção dos e-mails se o seu destinatário tiver um endereço Gmail. A seguinte documentação da Google pode ajudá-lo nesse processo: [Adicionar um campo DMARC](https://support.google.com/a/answer/2466563/).
+
+A Google também oferece um [artigo dedicado](https://support.google.com/mail/answer/81126/) à prevenção de spam para utilizadores do Gmail.
+
+### Declarar um falso positivo
+
+Se os seus e-mails estão em conformidade, pode informar-nos enviando um exemplo do seu e-mail (incluindo o cabeçalho). O nosso suporte técnico ajudará-o nas próximas etapas. Basta criar um ticket de assistência a partir do seu espaço cliente e incluir as seguintes informações:
+
+- A IP do serviço bloqueada por SPAM.
+- Uma cópia original do ou dos e-mails marcados como SPAM (deverá conseguir identificá-los através do **Message-ID** incluído no alerta de bloqueio). Se nenhum **Message-ID** for fornecido, basta-nos enviar uma cópia dos e-mails enviados antes da receção do alerta. Por favor, forneça apenas a cópia do e-mail sinalizado como SPAM.
+- O ficheiro .EML do e-mail fornecido. Este deve incluir o **cabeçalho** e o **rodapé** do e-mail. Se não souber como extrair um ficheiro .EML, convidamo-lo a consultar o seguinte guia: [Recuperar o cabeçalho de um e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+
+Uma vez enviadas as informações, o nosso serviço de assistência comunicará com o Vade Secure para uma análise mais aprofundada da situação.
 
 ## Quer saber mais?
  

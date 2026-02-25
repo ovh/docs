@@ -20,9 +20,9 @@ details[open]>summary::before {
 
 ## Ziel
 
-Der OVHcloud [vRack](/links/network/vrack) ist eine Lösung für private Netzwerke, die es unseren Kunden ermöglicht, den Datenverkehr zwischen OVHcloud-Dedizierten Servern sowie anderen OVHcloud-Diensten zu leiten. Gleichzeitig können Sie [Public Cloud-Instanzen](/links/public-cloud/compute) in Ihr privates Netzwerk einfügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
+OVHcloud [vRack](/links/network/vrack) ist eine Lösung für private Netzwerke, die es unseren Kunden ermöglicht, den Datenverkehr zwischen OVHcloud Dedizierten Servern sowie anderen OVHcloud Diensten zu leiten. Ebenso können Sie [Public Cloud Instanzen](/links/public-cloud/compute) in Ihr privates Netzwerk einfügen, um eine Infrastruktur aus physischen und virtuellen Ressourcen zu erstellen.
 
-**Dieses Handbuch erklärt, wie Sie Public Cloud-Instanzen in Ihrem vRack konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Public Cloud Instanzen in Ihrem vRack konfigurieren.**
 
 ## Voraussetzungen
 
@@ -33,17 +33,17 @@ Der OVHcloud [vRack](/links/network/vrack) ist eine Lösung für private Netzwer
 
 ## Schnittstellen
 
-Ein vRack erstellen oder eine Instanz in das Netzwerk hinzufügen kann mit dem OVHcloud Kundencenter, der OVHcloud APIv6, der OpenStack API, der Horizon-Schnittstelle oder Terraform erfolgen.
+Ein vRack erstellen oder eine Instanz in das Netzwerk hinzufügen kann mit dem OVHcloud Kundencenter, der OVHcloud APIv6, der OpenStack API, dem Horizon Interface oder Terraform erfolgen.
 
 Je nach Ihrem technischen Profil und Ihren Anforderungen können Sie selbst entscheiden, welche Schnittstelle oder Methode Sie verwenden möchten. Für jede Option beschreibt die folgende Anleitung die notwendigen Schritte.
 
-**Zu Beginn finden Sie hier eine kurze Beschreibung der möglichen Aktionen je nach gewählter Methode/Schnittstelle.** <a name="horizon"></a>
+**Sie finden nachfolgend eine kurze Beschreibung der möglichen Aktionen je nach gewählter Methode/Schnittstelle.** <a name="horizon"></a>
 
 /// details | OVHcloud Kundencenter
 
-Das [OVHcloud Kundencenter](/links/manager) ist eine vollständig visuelle Schnittstelle, die ideal geeignet ist, um mehrere VLANs zu verwalten. Sie können außerdem den privaten IP-Bereich anpassen, der standardmäßig in 10.1.0.0/16 liegt.
+Das [OVHcloud Kundencenter](/links/manager) ist eine vollständig visuelles Interface, die ideal geeignet ist, um mehrere VLANs zu verwalten. Sie können außerdem den privaten IP-Bereich anpassen, der standardmäßig in 10.1.0.0/16 liegt.
 
-Das VLAN wird in die ausgewählte Region bereitgestellt. Sie haben außerdem die Möglichkeit, Gateways zu aktivieren oder nicht, DHCP-Verteilungen zu ermöglichen usw.
+Das VLAN wird in die ausgewählte Region bereitgestellt. Sie haben außerdem die Möglichkeit, Gateways zu aktivieren oder nicht, DHCP-Verteilungen zu ermöglichen etc.
 
 Sie können außerdem die Abrechnung Ihrer Dienste im OVHcloud Kundencenter verwalten.
 
@@ -51,21 +51,21 @@ Sie können außerdem die Abrechnung Ihrer Dienste im OVHcloud Kundencenter verw
 
 /// details | Horizon
 
-Die [Horizon](https://horizon.cloud.ovh.net/auth/login/)-Schnittstelle (unabhängig von OVHcloud) ist die ursprüngliche Implementierung des OpenStack-Dashboards, das eine Web-Benutzeroberfläche für OpenStack-Dienste bereitstellt, einschließlich Nova, Swift, Keystone usw.
+[Horizon](https://horizon.cloud.ovh.net/auth/login/) (unabhängig von OVHcloud) ist die ursprüngliche Implementierung des OpenStack Dashboards, das eine Web-Benutzeroberfläche für OpenStack Dienste bereitstellt, einschließlich Nova, Swift, Keystone etc.
 
-Diese multifunktionale, technische Schnittstelle ermöglicht es Ihnen, fast alle OpenStack-Aktionen zu verwalten. Sie ist eine der notwendigen Schnittstellen, wenn Sie mehr als zwei VLANs verwalten müssen, private Netzwerkschnittstellen zu Ihren Instanzen hinzufügen, benutzerdefinierte Images verwalten usw.
+Diese multifunktionale, technische Oberfläche ermöglicht es Ihnen, fast alle OpenStack Aktionen zu verwalten. Sie ist notwendig, wenn Sie mehr als zwei VLANs verwalten müssen, private Netzwerkschnittstellen zu Ihren Instanzen hinzufügen, benutzerdefinierte Images verwalten etc.
 
-Beziehen Sie sich auf [dieses Handbuch](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon), um sich mit Horizon vertraut zu machen.
+Verwenden Sie [diese Anleitung](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon), um sich mit Horizon vertraut zu machen.
 
 > [!primary]
-> Horizon ist zonenbezogen, daher müssen Sie sich daran erinnern, Ihre logische (geografische) Arbeitszone oben links in Ihrer Schnittstelle auszuwählen (GRA5, SBG3, BHS1 usw.).
+> Horizon ist zonenbezogen, daher müssen Sie Ihre logische (geografische) Arbeitszone oben links in Ihrer Oberfläche auszuwählen (GRA5, SBG3, BHS1 etc.).
 >
 
 ///
 
 /// details | OVHcloud APIv6
 
-Jede Aktion, die Sie in Ihrem OVHcloud Kundencenter durchführen, kann mit der [OVHcloud APIv6](/links/api) aufgerufen werden.
+Jede Aktion, die Sie in Ihrem OVHcloud Kundencenter durchführen, kann mit der [OVHcloud APIv6](/links/api) aufgerufen werden.  
 Sie bietet sogar mehr Möglichkeiten als die grafische Oberfläche.
 
 Die API-Schnittstelle ist weniger visuell als das OVHcloud Kundencenter, ermöglicht Ihnen aber die Durchführung einer großen Anzahl von Aktionen. Sie können Ihr VLAN verwalten und anpassen, Schnittstellen zu Ihren Instanzen hinzufügen oder Server mit hoher Anpassung erstellen.
@@ -76,21 +76,21 @@ Auf diese Weise können Sie grundlegende Aufgaben mit Skripten automatisieren, I
 
 Sie müssen möglicherweise verschiedene Informationen abrufen, bevor Sie einige API-Aufrufe verwenden, da ein spezifischer Eingabewert erforderlich ist.
 
-Beziehen Sie sich auf [dieses Handbuch](/pages/manage_and_operate/api/first-steps), um mit der OVHcloud APIv6 zu beginnen.
+Verwenden Sie [diese Anleitung](/pages/manage_and_operate/api/first-steps), um mit der OVHcloud APIv6 zu beginnen.
 
 ///
 
 /// details | OpenStack API
 
-Public Cloud-Dienste können nach dem Herunterladen und Installieren von OpenStack-Tools über Linux- oder Windows-Befehlszeilen verwaltet werden.
+Public Cloud Dienste können nach dem Herunterladen und Installieren von OpenStack Tools über Befehlszeilen (Linux oder Windows) verwaltet werden.
 
 Diese Methode erfordert ein gutes Wissen über Linux oder Windows, um sie nutzen zu können, ermöglicht Ihnen aber, die gesamte Leistung von OpenStack zu nutzen.
 
-Je nach Schicht, die Sie verwalten möchten, müssen Sie den Nova (Compute), Neutron (Netzwerk), Glance (Image) oder Swift (Object Storage) Client verwenden. Die neueste Ergänzung zu dieser Palette, der OpenStack Client, ermöglicht es Ihnen, fast alle OpenStack-Schichten direkt zu verwalten.
+Je nach Schicht, die Sie verwalten möchten, müssen Sie den Clients von Nova (Compute), Neutron (Netzwerk), Glance (Image) oder Swift (Object Storage) verwenden. Die neueste Ergänzung zu dieser Palette, der OpenStack Client, ermöglicht es Ihnen, fast alle OpenStack Schichten direkt zu verwalten.
 
 Mit der OpenStack API können Sie diese Verwaltung auch über Ihre Skripte automatisieren.
 
-Um mehr über die Verwendung der OpenStack API zu erfahren, konsultieren Sie diese Handbücher:
+Um mehr über die Verwendung der OpenStack API zu erfahren, konsultieren Sie diese Anleitungen:
 
 - [System für die Verwendung der OpenStack API vorbereiten](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [OpenStack Umgebungsvariablen einrichten](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
@@ -103,20 +103,20 @@ Sie können anschließend die für OpenStack vorgesehenen APIs nach Bedarf verwe
 - Neutron (Netzwerk)
 
 > [!primary]
-> In einigen Fällen ist es einfacher, die OpenStack-APIs zu verwenden, in anderen Fällen hingegen Nova, Neutron usw.
+> In einigen Fällen ist es einfacher, die OpenStack API zu verwenden, in anderen Fällen hingegen Nova, Neutron etc.
 >
-> Darüber hinaus können einige Funktionen je nach Version Ihres Clients und Betriebssystems von der OpenStack-API fehlen.
-> Um dieses Handbuch für alle zugänglich zu machen, werden die einfachsten und intuitivsten Optionen vorgestellt.
-> Sie können sich bei Bedarf die [offizielle OpenStack-Dokumentation](https://docs.openstack.org/) ansehen, um mehr über deren Nutzung zu erfahren.
+> Darüber hinaus können einige Funktionen je nach Version Ihres Clients und Betriebssystems von der OpenStack API fehlen.  
+> Um diese Anleitung für alle zugänglich zu machen, werden die einfachsten und intuitivsten Optionen vorgestellt.  
+> Sie können sich bei Bedarf die [offizielle OpenStack Dokumentation](https://docs.openstack.org/) ansehen, um mehr über deren Nutzung zu erfahren.
 >
 
 ///
 
 /// details | OpenStack CLI
 
-Sie können Ihre OVHcloud Public Cloud-Dienste und vRacks direkt über Ihren Linux- oder Windows-Terminal mit der OpenStack CLI verwalten.
+Sie können Ihre OVHcloud Public Cloud Dienste und vRacks direkt über Ihr Linux- oder Windows-Terminal mit der OpenStack CLI verwalten.
 
-Diese Schnittstelle ermöglicht Ihnen die Verwaltung aller OpenStack-Schichten:
+Diese Schnittstelle ermöglicht Ihnen die Verwaltung aller OpenStack Schichten:
 
 - Nova: Instanzen (Compute)
 - Neutron: Netzwerke
@@ -125,23 +125,23 @@ Diese Schnittstelle ermöglicht Ihnen die Verwaltung aller OpenStack-Schichten:
 
 Die CLI vereinigt diese Funktionen und kann in Ihre Skripte integriert werden, um Ihre Aufgaben zu automatisieren.
 
-Bevor Sie beginnen, konsultieren Sie bitte die folgenden Handbücher:
+Bevor Sie beginnen, konsultieren Sie die folgenden Anleitungen:
 
 - [System für die Verwendung der OpenStack API vorbereiten](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 - [OpenStack Umgebungsvariablen einrichten](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 > [!primary]
 >
-> Die OpenStack CLI ist nützlich, um Ihren vRack zu verwalten, aber einige Funktionen können je nach Version des Clients oder Betriebssystems variieren. Beziehen Sie sich auf die [offizielle OpenStack-Dokumentation](https://docs.openstack.org/).
+> Die OpenStack CLI ist nützlich, um Ihr vRack zu verwalten, aber einige Funktionen können je nach Version des Clients oder Betriebssystems variieren. Verwenden Sie die [offizielle OpenStack-Dokumentation](https://docs.openstack.org/).
 >
 
 ///
 
 /// details | Terraform
 
-Terraform kann ebenfalls verwendet werden, um OVHcloud-Infrastrukturen zu verwalten.
+Terraform kann ebenfalls verwendet werden, um OVHcloud Infrastrukturen zu verwalten.
 
-Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Weitere Informationen finden Sie in unserem Handbuch zu [der Verwendung von Terraform mit OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
+Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Weitere Informationen finden Sie in unserer Anleitung zu [der Verwendung von Terraform mit OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
 ///
 
@@ -151,14 +151,14 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 
 > [!warning]
 >
-> Das vRack wird auf der OVHcloud-Infrastruktur-Ebene verwaltet, was bedeutet, dass Sie es nur in Ihrem OVHcloud Kundencenter und der OVHcloud APIv6 verwalten können.
+> Das vRack wird auf der OVHcloud Infrastruktur-Ebene verwaltet, was bedeutet, dass Sie es nur in Ihrem OVHcloud Kundencenter und der OVHcloud APIv6 verwalten können.
 >
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
 >> > [!primary]
 >> >
->> > Dies gilt nicht für neu erstellte Projekte, die jetzt automatisch mit einem vRack ausgeliefert werden. Um das vRack anzuzeigen, nachdem das Projekt erstellt wurde, gehen Sie in den Bereich `Network`{.action} und klicken Sie auf `Private vRack Netzwerk`{.action}, um das/die vRack(s) anzuzeigen.
+>> > Dies gilt nicht für neu erstellte Projekte, die automatisch mit einem vRack ausgeliefert werden. Um das vRack anzuzeigen, nachdem das Projekt erstellt wurde, gehen Sie in den Bereich `Network`{.action} und klicken Sie auf `Private vRack Netzwerk`{.action}, um das/die vRack(s) anzuzeigen.
 >> >
 >>
 >> Wenn Sie ein älteres Projekt haben und kein vRack besitzen, müssen Sie eines bestellen. Die Nutzung des vRacks selbst ist kostenlos und kann innerhalb weniger Minuten ausgeliefert werden.
@@ -167,15 +167,15 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> ![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 >>
->> Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu bestätigen. Es wird einige Minuten dauern, bis das vRack in Ihrem Konto eingerichtet ist.
+>> Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu bestätigen. Es wird einige Minuten dauern, bis das vRack in Ihrem Account eingerichtet ist.
 >>
->> Sobald der Dienst aktiv ist, finden Sie ihn in Ihrem Control Panel im Bereich `Network`{.action} > `Private vRack Netzwerk`{.action}, bezeichnet als "pn-xxxxxx".
+>> Sobald der Dienst aktiv ist, finden Sie ihn in Ihrem Kundencenter im Bereich `Network`{.action} > `Private vRack Netzwerk`{.action}, bezeichnet als "pn-xxxxxx".
 >>
 >> Klicken Sie auf Ihr vRack, wählen Sie dann aus der Liste der verfügbaren Dienste das Projekt aus, das Sie zum vRack hinzufügen möchten, und klicken Sie auf die Schaltfläche `Hinzufügen`{.action}.
 >>
 >> ![Projekt zum vRack hinzufügen](images/addprojectvrack.png){.thumbnail}
 >>
->> Um die Konfiguration Ihres vRacks über das OVHcloud Kundencenter fortzusetzen, fahren Sie mit diesem Leitfaden unter [Schritt 2: Ein privates Netzwerk im vRack erstellen](#create-pn-in-vrack) fort, im Tab **Über das OVHcloud Kundencenter**.
+>> Um die Konfiguration Ihres vRacks über das OVHcloud Kundencenter fortzusetzen, fahren Sie mit dieser Anleitung unter [Schritt 2: Ein privates Netzwerk im vRack erstellen](#create-pn-in-vrack) fort, im Tab **Über das OVHcloud Kundencenter**.
 >>
 > Über die OVHcloud APIv6
 >>
@@ -192,9 +192,9 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> > [!primary]
 >> >
->> > Dieser Aufruf erstellt eine ID für Ihren „Warenkorb“. Sie können so viele Artikel wie gewünscht hinzufügen, bevor Sie ihn bestätigen.
+>> > Dieser Aufruf erstellt eine ID für Ihren "Warenkorb". Sie können so viele Artikel wie gewünscht hinzufügen, bevor Sie ihn bestätigen.
 >> >
->> > In diesem Fall ist die Bestellung eines vRacks allein kostenlos. Merken Sie sich Ihre Warenkorbnummer (cartId), sie wird für den Rest benötigt.
+>> > In diesem Fall ist die Bestellung eines vRacks allein kostenlos. Notieren Sie Ihre Warenkorbnummer (cartId), sie wird für den Rest benötigt.
 >> >
 >>
 >> **Abrufen der erforderlichen Informationen für die vRack-Bestellung**
@@ -255,7 +255,7 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> Um die Bestellung zu bestätigen, haben Sie zwei Möglichkeiten:
 >>
->> - Gehe durch die sichtbare URL, wenn der Warenkorb bestätigt ist.
+>> - Sichtbare URL, wenn der Warenkorb bestätigt ist.  
 >> URL-Beispiel: https://www.ovh.com/cgi-bin/order/displayOrder.cgi?orderId=12345678&orderPassword=xxxxxxxxxx
 >>
 >> - Bestätigen Sie mithilfe dieses Aufrufs:
@@ -267,16 +267,16 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> > [!primary]
 >> >
->> > Selbst wenn es sich um eine €0-Kaufbestellung handelt, ist es notwendig, eine Kaufbestellung (orderId) zu simulieren. Ihr Bestellformular wird dann bestätigt und die Bearbeitung beginnt.
+>> > Selbst wenn es sich um eine €0-Bestellung handelt, ist es notwendig, eine Bestellung (orderId) zu simulieren. Ihr Bestellformular wird dann bestätigt und die Bearbeitung beginnt.
 >> >
 >>
 >> Nachdem die kostenlose Bestellung bestätigt wurde, kann es einige Minuten dauern, bis das vRack aktiviert wird.
 >>
->> **Schritt 2: Ihr Public Cloud-Projekt dem vRack hinzufügen**
+>> **Schritt 2: Ihr Public Cloud Projekt dem vRack hinzufügen**
 >>
->> Sobald das vRack aktiv ist, müssen Sie Ihr Public Cloud-Projekt (e) in das vRack integrieren.
+>> Sobald das vRack aktiv ist, müssen Sie Ihr Public Cloud Projekt (e) in das vRack integrieren.
 >>
->> Melden Sie sich über die entsprechende Anleitung an: [Erste Schritte mit der OVHcloud API](/pages/manage_and_operate/api/first-steps).
+>> Folgen Sie unserer Anleitung: [Erste Schritte mit der OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >>
 >> Falls die Projekt-ID unbekannt ist, ermöglichen die folgenden Aufrufe, sie abzurufen.
 >>
@@ -299,7 +299,7 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> > [!primary]
 >> >
->> > Dieser Aufruf identifiziert das Projekt über das Feld „description“.
+>> > Dieser Aufruf identifiziert das Projekt über das Feld "description".
 >> >
 >>
 >> **Hinzufügen des Projekts zum vRack**
@@ -313,17 +313,17 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> Füllen Sie die Felder mit den zuvor abgerufenen Informationen aus:
 >>
->> - **serviceName**: vRack-Name in der Form „pn-xxxxxx“.
->> - **project**: Die Public Cloud-Projekt-ID in Form einer 32-stelligen Zeichenkette.
+>> - **serviceName**: vRack-Name in der Form "pn-xxxxxx".
+>> - **project**: Die Public Cloud Projekt-ID in Form einer 32-stelligen Zeichenkette.
 >>
 >> > [!primary]
 >> >
 >> > Dieser Aufruf initialisiert die Zuordnung des Projekts und des vRacks. Die Task-ID muss anschließend abgerufen werden, um den Fortschritt zu überprüfen.
 >> >
 >>
->> **Überprüfen des Fortschritts der Aufgabe**
+>> **Überprüfen des Fortschritts des Tasks**
 >>
->> Sie können den Fortschritt der Aufgabe mit diesem Aufruf einsehen:
+>> Sie können den Fortschritt des Tasks mit diesem Aufruf einsehen:
 >>
 >> > [!api]
 >> >
@@ -332,7 +332,7 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 >>
 >> > [!primary]
 >> >
->> > Dieser Aufruf ist optional und ermöglicht nur die Überprüfung des Status der Aufgabe. Sobald sie abgeschlossen ist, können Sie zum nächsten Schritt übergehen.
+>> > Dieser Aufruf ist optional und ermöglicht nur die Überprüfung des Status des Tasks. Sobald abgeschlossen, können Sie zum nächsten Schritt übergehen.
 >> >
 >>
 
@@ -340,7 +340,7 @@ Dazu müssen Sie den richtigen Terraform-Provider und -Ressource auswählen. Wei
 
 Es ist notwendig, ein privates Netzwerk mit einem virtuellen lokalen Bereich (VLAN) zu erstellen, damit die angeschlossenen Instanzen miteinander kommunizieren können.
 
-Mit dem Public Cloud-Dienst können Sie bis zu 4 000 VLANs innerhalb eines vRacks erstellen. Das bedeutet, dass Sie jede private IP-Adresse bis zu 4 000 Mal verwenden können.
+Mit dem Public Cloud-Dienst können Sie bis zu 4000 VLANs innerhalb eines vRacks erstellen. Das bedeutet, dass Sie jede private IP-Adresse bis zu 4000 Mal verwenden können.  
 Somit ist beispielsweise 192.168.0.10 von VLAN 2 anders als die IP 192.168.0.10 von VLAN 42.
 
 Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken zu segmentieren.
@@ -348,16 +348,16 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 Über das OVHcloud Kundencenter und die OVHcloud APIv6 können Sie alle Einstellungen anpassen: Bereitstellungsmodus und Region, VLAN-Name und -ID, privater IP-Adressbereich (z. B. 10.0.0.0/16), DHCP und Gateway.
 
 > [!primary]
-> Auf dedizierten Servern wird standardmäßig VLAN 0 verwendet. Die OpenStack-Infrastruktur erfordert, dass Sie Ihre VLAN-ID direkt auf der Infrastruktur-Ebene angeben.
+> Auf dedizierten Servern wird standardmäßig VLAN 0 verwendet. Die OpenStack Infrastruktur erfordert, dass Sie Ihre VLAN-ID direkt auf der Infrastruktur-Ebene angeben.
 >
 > Im Gegensatz zu dedizierten Servern ist es nicht notwendig, ein VLAN direkt auf einer Public Cloud-Instanz zu kennzeichnen.
 >
 > Weitere Informationen zu diesem Thema finden Sie in der Anleitung "[Mehrere vLANs in einem vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)".
 
 > [!warning]
-> vRack wird auf der OVHcloud-Infrastruktur-Ebene verwaltet, was bedeutet, dass Sie es nur im OVHcloud Kundencenter und der OVHcloud APIv6 verwalten können.
+> vRack wird auf der OVHcloud Infrastruktur-Ebene verwaltet, was bedeutet, dass Sie es nur im OVHcloud Kundencenter und der OVHcloud APIv6 verwalten können.
 >
-> Da OpenStack nicht auf der gleichen Ebene liegt, können Sie VLANs nicht über die Horizon-Schnittstelle oder OpenStack APIs anpassen.
+> Da OpenStack nicht auf der gleichen Ebene liegt, können Sie VLANs nicht über Horizon oder OpenStack API anpassen.
 >
 
 > [!tabs]
@@ -382,11 +382,11 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> **Netzwerkoption Layer 2**
 >>
->> Wenn Sie das Feld `VLAN-ID festlegen`{.action} ankreuzen, können Sie manuell eine VLAN-ID zwischen 0 und 4 000 wählen.
+>> Wenn Sie das Feld `VLAN-ID festlegen`{.action} ankreuzen, können Sie manuell eine VLAN-ID zwischen 0 und 4000 wählen.
 >>
 >> Wenn Sie das Feld nicht ankreuzen, wird dem privaten Netzwerk eine zufällige VLAN-ID zugewiesen.
 >>
->> Wenn Sie mit Servern in diesem VLAN kommunizieren möchten, konsultieren Sie bitte die Anleitung: [Mehrere vLANs in einem vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
+>> Wenn Sie mit Servern in diesem VLAN kommunizieren möchten, konsultieren Sie die Anleitung: [Mehrere vLANs in einem vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 >>
 >> **Verteilungsoptionen für DHCP-Adressen**
 >>
@@ -394,8 +394,8 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> **Netzwerk-Gateway-Optionen**
 >>
->> - **Die erste Adresse einer bestimmten CIDR als Standardgateway ankündigen (DHCP-Option 3)**: Wenn diese Option aktiviert ist, bewirbt der DHCP-Server die erste Adresse im CIDR als Standard-Gateway für Geräte, die mit dem Netzwerk verbunden sind.
->> - **Einen Gateway zuweisen und sich mit dem privaten Netzwerk verbinden**: Wählen Sie diese Option, wenn Sie beabsichtigen, Instanzen mit einem privaten Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Anleitungen: [Ein privates Netzwerk mit Gateway erstellen](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) und [Erstellen und Verbinden mit Ihrer ersten Public Cloud-Instanz](/pages/public_cloud/Compute/public-cloud-first-steps).
+>> - **Die erste Adresse einer bestimmten CIDR als Standard-Gateway ankündigen (DHCP-Option 3)**: Wenn diese Option aktiviert ist, bewirbt der DHCP-Server die erste Adresse im CIDR als Standard-Gateway für Geräte, die mit dem Netzwerk verbunden sind.
+>> - **Ein Gateway zuweisen und sich mit dem privaten Netzwerk verbinden**: Wählen Sie diese Option, wenn Sie beabsichtigen, Instanzen mit einem privaten Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Anleitungen: [Ein privates Netzwerk mit Gateway erstellen](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) und [Erstellen und Verbinden mit Ihrer ersten Public Cloud-Instanz](/pages/public_cloud/Compute/public-cloud-first-steps).
 >>
 >> > [!warning]
 >> >
@@ -415,7 +415,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> **Schritt 1: Abrufen der erforderlichen Informationen**
 >>
->> **Public Cloud-Projekt**
+>> **Public Cloud Projekt**
 >>
 >> > [!api]
 >> >
@@ -434,7 +434,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> > [!primary]
 >> >
->> > Dieser Aufruf identifiziert das Projekt über das Feld „description“.
+>> > Dieser Aufruf identifiziert das Projekt über das Feld "description".
 >> >
 >>
 >> **vRack**
@@ -446,7 +446,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> > [!primary]
 >> >
->> > Geben Sie im Feld „serviceName“ die ID Ihres Projekts an. Speichern Sie die vRack-ID-Informationen in der Form „pn-xxxxx“.
+>> > Geben Sie im Feld "serviceName" die ID Ihres Projekts an. Speichern Sie die vRack-ID-Informationen in der Form "pn-xxxxx".
 >> >
 >>
 >> **Schritt 2: Erstellen des privaten Netzwerks**
@@ -463,7 +463,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >> > - **serviceName**: Projekt-ID.
 >> > - **name**: Name Ihres VLANs.
 >> >
->> > Sie können das Feld „Region“ leer lassen, um es für alle Regionen zu aktivieren.
+>> > Sie können das Feld "Region" leer lassen, um es für alle Regionen zu aktivieren.
 >> >
 >> > Der VLAN-Bezeichner (vlanId) ist erforderlich, wenn Sie ein bestimmtes VLAN erstellen möchten.
 >> >
@@ -479,7 +479,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >>
 >> > [!primary]
 >> >
->> > Dieser Aufruf ruft die „networkId“ in dieser Form ab: name-vrack_vlanId.
+>> > Dieser Aufruf ruft die "networkId" in dieser Form ab: name-vrack_vlanId.
 >> >
 >> > Beispiel: VLAN 42: pn-xxxxxx_42.
 >> >
@@ -530,7 +530,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 > Über Terraform
 >> In Terraform müssen Sie den OpenStack-Provider verwenden. Ein Beispiel für ein vollständiges Terraform-Skript können Sie aus [diesem GitHub-Repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network) herunterladen.
 >>
->> Der OVHcloud-spezifische Teil für die vRack-Integration ist der Parameter `value_specs`.
+>> Der für OVHcloud spezifische Teil für die vRack-Integration ist der Parameter `value_specs`.
 >>
 >> ```python
 >> resource "openstack_networking_network_v2" "tf_network" {
@@ -549,7 +549,7 @@ Dies kann nützlich sein, um Ihr vRack zwischen mehreren virtuellen Netzwerken z
 >> }
 >> ```
 >>
-> Über die OpenStack-CLI
+> Über die OpenStack CLI
 >> Im folgenden Beispiel geben wir die `VLAN_ID`, zu der das Netzwerk gehören soll, über die Parameter `--provider-network-type` und `--provider-segment` an.
 >>
 >> Sie können diese Parameter entfernen. In diesem Fall wird eine verfügbare `VLAN_ID` automatisch verwendet.
@@ -571,7 +571,7 @@ Es gibt zwei mögliche Szenarien:
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
->> Wenn Sie Unterstützung benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen einer Instanz im OVHcloud Kundencenter](/pages/public_cloud/Compute/public-cloud-first-steps). Beim Erstellen einer Instanz können Sie in Schritt 5 einen Netzwerkmodus wählen, gefolgt von einem privaten Netzwerk, in das Sie Ihre Instanz integrieren können.
+>> Wenn Sie Unterstützung benötigen, folgen Sie zunächst dieser Anleitung: [Erstellen einer Instanz im OVHcloud Kundencenter](/pages/public_cloud/Compute/public-cloud-first-steps). Beim Erstellen einer Instanz können Sie in Schritt 5 einen Netzwerkmodus wählen, gefolgt von einem privaten Netzwerk, in das Sie Ihre Instanz integrieren können.
 >>
 >> ![attach new instance](images/network-selection.png){.thumbnail}
 >>
@@ -579,7 +579,7 @@ Es gibt zwei mögliche Szenarien:
 >> >
 >> > Sie können Ihre Instanz **nur mit einem** vRack über das OVHcloud Kundencenter verbinden.
 >> >
->> > Um mehrere Schnittstellen hinzuzufügen, müssen Sie die OpenStack- oder Horizon-APIs verwenden.
+>> > Um mehrere Schnittstellen hinzuzufügen, müssen Sie OpenStack oder Horizon verwenden.
 >> >
 >>
 > Über die OVHcloud APIv6
@@ -664,9 +664,9 @@ Es gibt zwei mögliche Szenarien:
 >>
 >> |Feld|Beschreibung| 
 >> |---|---| 
->> |serviceName|ID des Public Cloud-Projekts.|
->> |flavorId|ID des Instanztyps (z. B. D2-2, B2-7, WIN-R2-15 usw.).|
->> |imageId|ID des Images für die Bereitstellung (z. B. Debian 9, Centos 7 usw.).|
+>> |serviceName|ID des Public Cloud Projekts.|
+>> |flavorId|ID des Instanztyps (z. B. D2-2, B2-7, WIN-R2-15 etc.).|
+>> |imageId|ID des Images für die Bereitstellung (z. B. Debian 9, Centos 7 etc.).|
 >> |name|Name Ihrer Instanz.|
 >> |networks|Im Abschnitt "networkId" geben Sie die Kennung des öffentlichen Netzwerks (Ext-Net) oder Ihrer VLAN (pn-xxxxxx_yy) an. Sie können auf die "+"-Schaltfläche klicken, um weitere Netzwerke hinzuzufügen.|
 >> |region|Region für die Bereitstellung Ihrer Instanz (z. B. GRA5).|
@@ -720,15 +720,15 @@ Es gibt zwei mögliche Szenarien:
 >> >
 >> > Sie müssen sich die Netzwerk-IDs notieren, die Sie interessieren:
 >> >
->> > - Ext-Net für eine öffentliche IP-Adresse.
->> > - Die VLAN(s), die für Ihre Konfiguration erforderlich sind.
+>> > - Ext-Net für eine öffentliche IP-Adresse
+>> > - Die VLANs, die für Ihre Konfiguration erforderlich sind
 >> >
 >>
 >> Notieren Sie auch die in der [Nova API-Benutzeranleitung](/pages/public_cloud/Compute/starting_with_nova) beschriebenen Informationen:
 >>
->> - ID oder Name des OpenStack-SSH-Schlüssels.
->> - ID des Instanztyps (flavor).
->> - ID des gewünschten Images (Betriebssystem, Snapshot usw.).
+>> - ID oder Name des OpenStack-SSH-Schlüssels
+>> - ID des Instanztyps (flavor)
+>> - ID des gewünschten Images (Betriebssystem, Snapshot etc.)
 >>
 >> **Instanz bereitstellen**
 >>
@@ -818,7 +818,7 @@ Es gibt zwei mögliche Szenarien:
 >> +--------------------------------------+------------------------------------------------------+
 >> ```
 >>
->> Sie können die IP-Adresse der Instanz Ihrer vRack-Schnittstelle auf der OpenStack-Ebene festlegen.
+>> Sie können die IP-Adresse der Instanz Ihrer vRack-Schnittstelle auf der OpenStack Ebene festlegen.
 >>
 >> Dazu können Sie ein einzelnes Argument zur Funktion "--nic" hinzufügen:
 >>
@@ -855,20 +855,20 @@ Es gibt zwei mögliche Szenarien:
 
 /// details | **Im Fall einer vorhandenen Instanz**
 
-Das OVHcloud Kundencenter ermöglicht es Ihnen, eine Instanz an eine oder mehrere private Netzwerke anzuschließen, bietet aber keine fortgeschrittene Netzwerkkonfiguration der Netzwerkschnittstellen. Wenn Sie weitere Anpassungen vornehmen möchten, müssen Sie diese entweder über die OVHcloud APIv6, über die OpenStack-APIs oder über Horizon verwalten.
+Das OVHcloud Kundencenter ermöglicht es Ihnen, eine Instanz an eine oder mehrere private Netzwerke anzuschließen, bietet aber keine fortgeschrittene Netzwerkkonfiguration der Netzwerkschnittstellen. Wenn Sie weitere Anpassungen vornehmen möchten, müssen Sie diese entweder über die OVHcloud APIv6, über die OpenStack APIs oder über Horizon verwalten.
 
 Die erforderliche Aktion besteht einfach darin, eine neue Netzwerkschnittstelle an Ihren Server anzufügen, zusätzlich zur vorhandenen.
 
 Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie die Schnittstelle *eth1* hinzu.
 
 > [!warning]
-> Die Konfiguration dieser neuen Schnittstelle ist selten automatisch.
+> Die Konfiguration dieser neuen Schnittstelle ist selten automatisch.  
 > Sie müssen daher eine statische IP-Adresse zuweisen oder DHCP konfigurieren, je nach Ihrer Infrastruktur.
 >
 
 > [!tabs]
 > Über das OVHcloud Kundencenter
->> Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud-Projekt aus.
+>> Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 >>
 >> Klicken Sie auf `Instanzen`{.action} in der linken Navigationsleiste und dann auf `⁝`{.action} rechts neben der Instanz. Wählen Sie `Details der Instanz`{.action}.
 >>
@@ -878,7 +878,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> ![attach network](images/vrack2021-01.png){.thumbnail}
 >>
->> Im sich öffnenden Fenster wählen Sie das/die private(n) Netzwerk(e) aus, die Sie an Ihre Instanz anhängen möchten, und klicken Sie auf `Bestätigen`{.action}.
+>> Wählen Sie die privaten Netzwerke aus, die Sie an Ihre Instanz anhängen möchten, und klicken Sie auf `Bestätigen`{.action}.
 >>
 >> ![attach network](images/vrack9.png){.thumbnail}
 >>
@@ -892,7 +892,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> > [!warning]
 >> >
->> > Die Konfiguration dieser neuen Schnittstelle ist selten automatisch.
+>> > Die Konfiguration dieser neuen Schnittstelle ist selten automatisch.  
 >> > Sie müssen daher eine statische IP-Adresse zuweisen oder DHCP konfigurieren, je nach Ihrer Infrastruktur.
 >> >
 >>
@@ -935,7 +935,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> **Schritt 2: Eine Schnittstelle an Ihre Instanz anhängen**
 >>
->> Sobald alle erforderlichen Elemente zusammengetragen sind, können Sie den folgenden Aufruf verwenden:
+>> Sobald alle erforderlichen Elemente bekannt sind, können Sie den folgenden Aufruf verwenden:
 >>
 >> > [!api]
 >> >
@@ -946,7 +946,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> |Feld|Beschreibung| 
 >> |---|---| 
->> |serviceName|ID des Public Cloud-Projekts.|
+>> |serviceName|ID des Public Cloud Projekts.|
 >> |instanceId|ID der Instanz.|
 >> |networkId|Geben Sie die öffentliche Netzwerk-ID (Ext-Net) oder Ihre VLAN-ID (pn-xxxxxx_yy) ein.|
 >> |ip|Definieren Sie eine spezifische IP-Adresse (funktioniert nur für private Schnittstellen).|
@@ -955,8 +955,8 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> > [!primary]
 >> >
->> > Ihre OVHcloud-Instanz hat eine neue Netzwerkschnittstelle zusätzlich zur öffentlichen Schnittstelle (Ext-Net).<br>
->> > In der Zusammenfassung der Instanz können Sie die private IP-Adresse einsehen, die automatisch Ihrer Schnittstelle zugewiesen wird.<br>
+>> > Ihre OVHcloud Instanz hat eine neue Netzwerkschnittstelle zusätzlich zur öffentlichen Schnittstelle (Ext-Net).  
+>> > In der Zusammenfassung der Instanz können Sie die private IP-Adresse einsehen, die automatisch Ihrer Schnittstelle zugewiesen wird.  
 >> > Es ist Ihre Verantwortung, die Schnittstelle korrekt über DHCP zu konfigurieren oder durch statische IP-Adressen zu verwenden.
 >> >
 >>
@@ -966,7 +966,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >> >
 >> > Das Trennen einer Netzwerkschnittstelle ist dauerhaft.
 >> >
->> > Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse freigegeben und in den Verkehr zurückgeführt wird. Sie kann nicht einfach erneut zugewiesen werden.<br>
+>> > Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse wieder zur generellen Nutzung freigegeben wird. Sie kann deshalb nicht einfach erneut zugewiesen werden.  
 >> > Diese Aktion ist nur erforderlich, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren möchten oder wenn Sie ihn von einer oder mehreren VLANs trennen möchten.
 >> >
 >>
@@ -981,7 +981,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> |Feld|Beschreibung| 
 >> |---|---| 
->> |serviceName|ID des Public Cloud-Projekts.|
+>> |serviceName|ID des Public Cloud Projekts.|
 >> |instanceId|ID der Instanz.|
 >> |networkId|Geben Sie die öffentliche Netzwerk-ID (Ext-Net) oder Ihre VLAN-ID (pn-xxxxxx_yy) ein.|
 >>
@@ -1008,8 +1008,8 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >>
 >> > [!primary]
 >> >
->> > Ihre OVHcloud-Instanz hat eine neue Netzwerkschnittstelle zusätzlich zur öffentlichen Schnittstelle (Ext-Net).<br>
->> > In der Zusammenfassung der Instanz können Sie die private IP-Adresse einsehen, die automatisch Ihrem Interface zugewiesen wird.<br>
+>> > Ihre OVHcloud Instanz hat eine neue Netzwerkschnittstelle zusätzlich zur öffentlichen Schnittstelle (Ext-Net).  
+>> > In der Zusammenfassung der Instanz können Sie die private IP-Adresse einsehen, die automatisch Ihrem Interface zugewiesen wird.  
 >> > Es ist Ihre Verantwortung, das Interface korrekt über DHCP zu konfigurieren oder durch statische IP-Adressen zu verwenden.
 >> >
 >>
@@ -1019,7 +1019,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >> >
 >> > Das Trennen eines Netzwerkinterfaces ist dauerhaft.
 >> >
->> > Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse freigegeben und in den Verkehr zurückgeführt wird. Sie kann nicht einfach erneut zugewiesen werden.<br>
+>> > Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse wieder zur generellen Nutzung freigegeben wird. Sie kann deshalb nicht einfach erneut zugewiesen werden.  
 >> > Diese Aktion ist nur erforderlich, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren möchten oder wenn Sie ihn von einer oder mehreren VLANs trennen möchten.
 >> >
 >>
@@ -1093,7 +1093,7 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >> > Sie müssen sich die Netzwerk-IDs notieren, die Sie benötigen:
 >> >
 >> > - Ext-Net für eine öffentliche IP-Adresse
->> > - Die VLAN(s), die für Ihre Konfiguration erforderlich sind
+>> > - Die VLANs, die für Ihre Konfiguration erforderlich sind
 >> >
 >>
 >> **Ein privates Netzwerkinterface hinzufügen**
@@ -1142,11 +1142,11 @@ Zum Beispiel, wenn Sie eine öffentliche Schnittstelle *eth0* haben, fügen Sie 
 >
 > Das Trennen eines Netzwerkinterfaces ist dauerhaft.
 >
-> Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse freigegeben und in den Verkehr zurückgeführt wird. Sie kann nicht einfach erneut zugewiesen werden.<br>
+> Es ist jedoch wichtig zu beachten, dass, wenn Sie die Schnittstelle "Ext-Net" (öffentliche IP) trennen, diese Adresse wieder zur generellen Nutzung freigegeben wird. Sie kann deshalb nicht einfach erneut zugewiesen werden.   
 > Diese Aktion ist nur erforderlich, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren möchten oder wenn Sie ihn von einer oder mehreren VLANs trennen möchten.
 >
 
-Um ein Interface zu trennen, müssen Sie zuerst den Neutron-Port identifizieren, der erstellt wurde.
+Um ein Interface zu trennen, müssen Sie zuerst den Neutron-Port identifizieren, der erstellt wurde.  
 Dazu können Sie die folgenden Befehle verwenden:
 
 ```bash
@@ -1191,6 +1191,6 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 [Erstellen mehrerer vLANs in einem vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
-Wenn Sie Schulungen oder technische Unterstützung benötigen, um unsere Lösungen umzusetzen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um ein Angebot zu erhalten und unsere Professional Services-Experten um Unterstützung bei Ihrem spezifischen Use Case Ihres Projekts zu bitten.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Treten Sie unserer [User Community](/links/community) bei.

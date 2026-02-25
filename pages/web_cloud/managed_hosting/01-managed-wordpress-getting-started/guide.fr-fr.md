@@ -1,7 +1,7 @@
 ---
 title: Découvrir le Managed Hosting for WordPress (version Bêta)
 excerpt: Découvrez la solution OVHcloud qui gère pour vous l’hébergement, la sécurité et la maintenance de vos sites web WordPress.
-updated: 2025-12-31
+updated: 2026-01-13
 ---
 
 ## Objectif
@@ -128,6 +128,11 @@ Une fois tous les éléments sélectionnés, cliquez sur `Lancer l'import`{.acti
 ![managed_wordpress](images/managed_wordpress_import_site_selection.png){.thumbnail}
 
 #### Supprimer un site web
+
+> [!alert]
+>
+> La suppression d'un site web est définitive et entraîne la suppression de l'intégralité du contenu du site.
+> Prenez soin d'effectuer une sauvegarde de vos données avant toute action de suppression.
 
 ##### Supprimer un seul site web
 

@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - Maintenance operations
+title: Opérations de maintenance des bases de données Public Cloud (EN)
 excerpt: Find out how your cluster is maintained
 updated: 2024-05-22
 ---

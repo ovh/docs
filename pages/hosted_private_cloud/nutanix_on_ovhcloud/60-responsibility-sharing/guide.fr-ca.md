@@ -39,7 +39,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les machines physiques et les bâtiments d’hébergement | I | RA |
 | Installer et configurer les briques fonctionnelles internes au serveur dédié nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS, BMC, IPMI...) | I | RA |
-| Déployer la configuration réseau initiale sur les équipements (vRack, IPLB et les noeuds du cluster Nutanix) | I | RA |
+| Déployer la configuration réseau initiale sur les équipements (vRack, IPLB et les nœuds du cluster Nutanix) | I | RA |
 | Installer le Nutanix Acroplis Operating System (AOS)  | I | RA |
 
 #### 2.2. Modèle de réversibilité

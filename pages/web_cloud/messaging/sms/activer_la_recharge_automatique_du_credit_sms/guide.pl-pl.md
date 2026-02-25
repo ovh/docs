@@ -16,7 +16,17 @@ Z tego przewodnika dowiesz się, czym są zasilenia SMS, jak je automatycznie do
 
 - Posiadanie aktywnego konta SMS OVHcloud
 - Zalogowanie do [API OVHcloud](/links/api) (tylko na potrzeby przenoszenia zasileń)
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

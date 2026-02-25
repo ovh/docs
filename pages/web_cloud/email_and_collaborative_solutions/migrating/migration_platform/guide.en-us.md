@@ -1,7 +1,7 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
-updated: 2021-10-21
+updated: 2026-01-16
 ---
 
 ## Objective
@@ -30,13 +30,15 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 ### Configuring the destination platform
 
-Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
-
-> Select the `Associated domains`{.action} tab for your platform, then click on the button `Add a domain`{.action}. Configure your domain name as **non-authoritative**. Once you have added your domain name, ensure that `OK` appears in the `Status` column.
+> [!warning]
+>
+> Before starting your migration, if you have just ordered your new email offer, first add the domain name to your email platform. If you are migrating to an MX Plan platform, the attached domain name being "fixed", you can directly proceed to the [next step](#accountsmigration).
+>
+> Select the `Associated Domains`{.action} or `Domain`{.action} tab on your platform, then click on `Add a domain`{.action}. Once the domain name is added, make sure the `OK` or `Active`{.action} mention is present in the `Status` column.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> For more details on adding a domain name, follow the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> For more details on adding a domain name, follow [the Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -80,8 +82,6 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 
 Migrate the source email account to your new platform account using our [OMM](/links/web/omm) tool (OVHcloud Mail Migrator).
 
-> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](/links/web/omm). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
-
 For more information on OMM, please read our guide on [Migrating email accounts via the OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
@@ -100,14 +100,13 @@ At this stage, your email addresses should already be migrated and functional. F
 
 To do this, select the Exchange service concerned, then go to the `Associated domains`{.action} tab. In the table shown, you can use the `Diagnostic` column to check if the DNS configuration is correct: a red box appears if the configuration needs to be modified.
 
+![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
+
 > [!primary]
 >
 > If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](/links/manager).
->
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.
-
-![email-migration](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 ### Use your migrated email addresses
 
@@ -119,7 +118,6 @@ If you have configured one of the migrated accounts on a local email client (e.g
 > [!primary]
 >
 > You can also manually migrate external email addresses to OVHcloud by using our [OVHcloud Mail Migrator](/links/web/omm) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
->
 
 ## Go further
 

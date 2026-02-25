@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Configure an Analytics node
+title: Configure an Analytics node for Public Databases for MongoDB
 excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for MongoDB to support analytics workloads
 updated: 2025-07-31
 ---

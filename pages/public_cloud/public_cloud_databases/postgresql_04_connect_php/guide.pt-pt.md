@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Connect with PHP
+title: Connect using PHP for Public Cloud Databases for PostgreSQL
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the PHP programming language
 updated: 2022-04-04
 ---

@@ -419,7 +419,7 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 >>
 > **AlmaLinux (8/9) and Rocky Linux (8/9)**
 >>
->> The configuration example below is based on CentOS 7.
+>> The configuration example below is based on AlmaLinux 9.
 >>
 >> The network configuration file is located in the directory `/etc/sysconfig/network-scripts`. In our example, it is called `ifcfg-eth0`.
 >>

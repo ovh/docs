@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to configure your advanced parameters
+title: Configure the advanced parameters for Public Cloud Databases
 excerpt: Advanced configuration for Public Cloud Databases engines
 updated: 2025-02-03
 ---

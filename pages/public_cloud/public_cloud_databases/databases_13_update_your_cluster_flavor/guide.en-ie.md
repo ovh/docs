@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to update your service flavor
+title: Update the flavor of Public Cloud Databases
 excerpt: Find out how to adjust the flavor of your cluster
 updated: 2024-12-30
 ---

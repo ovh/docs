@@ -1,7 +1,7 @@
 ---
 title: Discover Managed Hosting for WordPress (Beta version)
 excerpt: Discover the OVHcloud solution that manages your WordPress website hosting, security, and maintenance for you.
-updated: 2025-12-31
+updated: 2026-01-13
 ---
 
 ## Objective
@@ -128,6 +128,11 @@ Once all items are selected, click on `Start import`{.action}.
 ![managed_wordpress](images/managed_wordpress_import_site_selection.png){.thumbnail}
 
 #### Delete a website
+
+> [!alert]
+>
+> Deleting a website is permanent, and will delete all of the website's content.
+> Please ensure you back up your data before deleting anything.
 
 ##### Delete a single website
 

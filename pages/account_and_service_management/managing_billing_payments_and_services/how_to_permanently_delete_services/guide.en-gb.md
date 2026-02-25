@@ -216,7 +216,7 @@ A period of 30 days may be observed before the services are effectively deleted.
 
 /// details | SMS
 
-There is no cancellation procedure for [SMS offers](/links/telecom/sms). An SMS account does not generate any monthly subscription or billing. SMS credits have an unlimited lifespan.
+There is no cancellation procedure for SMS offers. An SMS account does not generate any monthly subscription or billing. SMS credits have an unlimited lifespan.
 
 To delete an SMS account, we invite you to create a [support ticket via the help center](https://help.ovhcloud.com/csm?id=csm_get_help).
 

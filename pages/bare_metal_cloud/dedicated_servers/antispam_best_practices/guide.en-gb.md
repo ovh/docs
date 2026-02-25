@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-updated: 2025-04-28
+updated: 2026-01-06
 ---
 
 ## Objective
@@ -64,19 +64,19 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
-In the yellow window for IP alerts, click on the `View all alerts`{.action} drop-down arrow to view all alerts on your IP(s).
+You can use the drop-down menu underneath **My public IP addresses and associated services** to filter your services according to category, or directly type the desired IP address in the search bar.
 
-If you have an alert on any of your IP(s), the information will be displayed right underneath:
+If you have an alert on any of your IP(s), there will be a red status icon in the **IP Alert** column.
 
-![Anti spam alert](images/alertblockedip.png){.thumbnail}
+![Anti spam alert](images/blockedIP_new.png){.thumbnail}
 
-Next, in the section "My public IP addresses and associated services" , click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam`{.action}.
+Click the `⁝`{.action} button next to the corresponding IP/service and select `Anti-spam unblocking`{.action}.
 
-![antispam](images/antispam.png){.thumbnail}
+![antispam](images/antispam_new.png){.thumbnail}
 
-In the new tab, click on `Unblock the anti-spam`{.action} at the bottom and confirm.
+In the window that appears, click on `Unblock the IP`{.action} at the bottom and confirm.
 
-![Unblock IP](images/unblockip.png){.thumbnail}
+![Unblock IP](images/unblockip_new.png){.thumbnail}
 
 The IP is being released, the operation may take several minutes.
 
@@ -176,7 +176,7 @@ Here is an example result:
 
 > [!alert]
 > IMPORTANT!
-Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
+> Do not unblock the IP under any circumstances without having suspended the sending of emails from your server, otherwise you will immediately get blocked for a second time (and a longer duration). 
 >
 
 To unblock your IP, use the following call:
@@ -259,13 +259,13 @@ For more information on the above services, please consult our guide on [Optimis
 
 - **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult the section **To a Microsoft server (Outlook, etc.)** of our guide "[How to prevent your emails from being marked as spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization)".
 
 - **To a Gmail server**
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
+If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563/).
 
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en) regarding spam prevention to Gmail users.
+Google also has a [dedicated article](https://support.google.com/mail/answer/81126/) regarding spam prevention to Gmail users.
 
 ### Reporting a false positive
 

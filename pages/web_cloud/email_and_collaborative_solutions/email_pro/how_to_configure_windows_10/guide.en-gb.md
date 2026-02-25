@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configure your Email Pro account on the New Outlook for Windows"
 excerpt: "Find out how to configure your Email Pro address on the New Outlook for Windows"
-updated: 2025-09-02
+updated: 2026-01-09
 ---
 
 <style>
@@ -19,6 +19,9 @@ details[open]>summary::before {
 .w-600 {
   max-width:600px !important;
 }
+.h-500 {
+  max-width:500px !important;
+}
 </style>
 
 ## Objective
@@ -26,7 +29,7 @@ details[open]>summary::before {
 The email addresses from the [Email Pro](/links/web/email-pro) offer can be configured on a compatible email client. This allows you to send and receive messages from the application of your choice.
 
 The **New Outlook** has replaced the **Mail** application on Windows since January 1, 2025. For more information on this topic, please refer to Microsoft's official page:  
-[Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
+[Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-gb/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
 **Learn how to configure your Email Pro account on the New Outlook for Windows.**
 
@@ -36,9 +39,6 @@ The **New Outlook** has replaced the **Mail** application on Windows since Janua
 - The [New Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows
 - The credentials for the email account you wish to configure
 
-> [!warning]
->
-> This documentation applies only to the **New Outlook** and not to [Outlook Classic](https://support.microsoft.com/en-us/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) available in the Microsoft 365 suite or previously installed on your computer.
 
 /// details | Information related to the management and configuration of OVHcloud services
 
@@ -50,13 +50,28 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 ## Instructions
 
+> [!warning]
+>
+> This documentation applies only to the **new Outlook** and not to "[Classic Outlook](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" available in the Microsoft 365 suite or previously installed on your computer.
+>
+> To distinguish the two versions of Outlook when both are installed, type "Outlook" in the Windows search bar. You will then be able to see the difference as shown below. The new Outlook has no special mention.
+>
+> ![outlook Windows](images/outlook-windows-identify01.png){.thumbnail .h-500}
+>
+> To configure your E-mail Pro address on Classic Outlook, refer to our guide "[E-mail Pro - Configure an e-mail account on Classic Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)".
+
 ### Add the account <a name="add-account"></a>
 
 > [!warning]
 >
-> In our example, we use the server name: `pro?.mail.ovh.net`. You must replace the `?` with the number corresponding to your Email Pro service server.
-> 
-> Find this number in your [OVHcloud Control Panel](/links/manager), under the `Web Cloud`{.action} section, then `Email Pro`{.action}. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
+> In our example, we use the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number corresponding to your E-mail Pro service server.
+>
+> 1. Log in to your [OVHcloud Control Panel](/links/manager).
+> 1. Go to the `Web Cloud`{.action} section.
+> 1. Click on `Email Pro`{.action}.
+> 1. Select the relevant platform.
+> 1. The server name is visible in the **Connection** section of the `General information`{.action} tab.
+>
 
 > [!tabs]
 > **Step 1**
@@ -148,9 +163,7 @@ For sending emails, find the **SMTP** settings to use below:
 - **Port**: 587.
 - **Security type**: STARTTLS.
 
-<a name="go-further"></a>
-
-## Go further
+## Go further <a name="go-further"></a>
 
 > [!primary]
 >

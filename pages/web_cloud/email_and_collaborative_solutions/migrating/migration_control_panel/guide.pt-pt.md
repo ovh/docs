@@ -1,114 +1,81 @@
 ---
-title: 'Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange'
-excerpt: 'Saiba como migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange'
-updated: 2025-04-28
+title: 'Migrar um endereço de e-mail MX Plan para uma conta de E-mail Pro, Exchange ou Zimbra'
+excerpt: 'Descubra como migrar um endereço de e-mail MX Plan para uma conta de E-mail Pro, Exchange ou Zimbra'
+updated: 2026-01-16
 ---
 
 ## Objetivo
 
-A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente ou incluído numa oferta de alojamento web), E-mail Pro e Exchange. Estas beneficiam de funcionalidades próprias e podem adaptar-se a várias utilizações. As suas necessidades evoluem? A OVHcloud oferece-lhe uma ferramenta de migração que lhe permite passar de uma solução para outra.
+A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente ou incluído numa oferta de alojamento web), Zimbra, E-mail Pro e Exchange. Estas beneficiam de funcionalidades próprias e podem adaptar-se a várias utilizações. As suas necessidades evoluem? A OVHcloud oferece-lhe uma ferramenta de migração que lhe permite passar de uma solução para outra.
 
 **Saiba como migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange.**
+
+> [!warning]
+>
+> [OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) permite migrar as suas mensagens de um servidor de correio eletrónico para outro.<br>
+> Se os seus e-mails estiverem apenas armazenados localmente (configuração em POP ou arquivamento local), pode efetuar um [exportação a partir do seu software de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), depois [importar o seu ficheiro PST através do OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ou [importar diretamente a partir do seu software de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Requisitos
 
 - Ter um endereço de e-mail MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)).
-- Dispor de um serviço [Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) com pelo menos uma conta não configurada (que aparecerá sob a forma "@configureme.me").
+- Dispor de um serviço [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) com pelo menos uma conta não configurada (que aparecerá na forma "@configureme.me") ou [Zimbra](/links/web/zimbra).
 - **Não ter configurado um reencaminhamento para o endereço de e-mail MX Plan que pretende migrar.**
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-### 1 - Definir o projeto
+### Etapa 1: Definir o projeto
 
 As soluções E-mail Pro e Exchange dispõem de uma base de funcionalidades comum. No entanto, subsistem diferenças consoante os casos de utilização. Ao escolher um endereço Exchange, dispõe da totalidade das funções colaborativas, como a sincronização do calendário e dos contactos. A solução E-mail Pro, por sua vez, propõe algumas, mas estas estão limitadas a uma utilização apenas através de um webmail.
 
 Antes de continuar, é importante saber para que oferta deseja migrar os seus endereços de e-mail MX Plan. Para o ajudar nesta escolha, consulte a página das [soluções de e-mails profissionais da OVHcloud](/links/web/emails) que propõe uma comparação pormenorizada das ofertas. Tem a possibilidade de acumular as soluções e de utilizar para um mesmo nome de domínio uma ou várias contas E-mail Pro e Exchange. Além disso, se tiver de migrar várias contas, recomendamos que execute um plano de migração.
 
-### Etapa 2: encomendar as suas contas E-mail Pro ou Exchange
+### Etapa 2: Encomendar as suas contas E-mail Pro ou Exchange
 
 Esta etapa é facultativa se já dispõe de um serviço Exchange ou E-mail Pro para o qual está a migrar.
 
-Caso contrário, aceda à [Cliente OVHcloud](/links/manager) e encomende o serviço E-mail Pro ou Exchange à sua escolha. Siga os passos indicados e aguarde até que o serviço esteja instalado. Receberá um e-mail no final desta operação.
+Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager) e encomende o serviço E-mail Pro ou Exchange à sua escolha. Siga os passos indicados e aguarde até que o serviço esteja instalado. Receberá um e-mail no final desta operação.
 
 > [!primary]
 >
 > Uma vez a conta encomendada, deixe-a na forma "@configureme.me" num primeiro tempo. Na verdade, será renomeado durante a migração.
 >
 
-### 3 - Realizar a migração
+### Etapa 3: Realizar a migração
 
 Antes de iniciar a migração, terá de identificar a versão do MX Plan a partir da qual migra.
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
-
-Consulte a tabela abaixo para consultar a versão em baixo.
-
-|Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> A sua oferta situa-se no quadro "Subscrição"|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Poderá encontrar uma `Referência do servidor` na secção "Resumo" que começa por "mxplan-"|
-|Continuar a ler na secção «[Versão antiga da oferta MX Plan](#VersionHistoriqueMxplan)».|Continuar a ler na secção «[Nova versão da oferta MX Plan](#NouvelleVersionMxplan)».|
-
-#### 3.1 Migrar uma oferta MX Plan histórica <a name="VersionHistoriqueMxplan"></a>
-
 > [!primary]
 >
-> A sua conta OVHcloud deve ter um contacto com o administrador **e** contacto técnico do serviço MX plan a migrar, **bem como** do serviço E-mail Pro ou Exchange para o qual migra.
+> A tecnologia de e-mail da sua oferta MX Plan pode variar consoante a data de ativação da sua oferta ou se uma migração ocorreu recentemente. Esta tecnologia distingue-se, nomeadamente, pela interface do seu webmail. Para a identificar a partir do seu Área de Cliente OVHcloud, siga estes passos:
 >
-> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
+> 1. Faça login no seu [Área de Cliente OVHcloud](/links/manager).
+> 1. Dirija-se à secção `Web Cloud`{.action}.
+> 1. Clique em `MX Plan`{.action}.
+> 1. Selecione o domínio em questão.
+> 1. O separador `Informações gerais`{.action} está selecionado por defeito.
+> 1. Registe a tecnologia utilizada sob a menção **Webmail** no quadro `Subscrição`.
+>
+> ![MX plan](/pages/assets/schemas/emails/technology-email.png){.thumbnail .w-640}
 >
 
-A migração pode ser efetuada a partir de duas interfaces:<br>
-
-- **o do assistente de configuração Hosted Exchange**, apenas se encomendou um serviço Hosted Exchange e ainda não o configurou;
-- **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
-
-> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum *reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MX Plan.
-> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
-
-Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.
+#### 3.1 Migração manual de uma oferta MX Plan para Exchange, E-mail Pro ou Zimbra  <a name="all-mxplan"></a>
 
 > [!warning]
 >
-> Uma vez confirmada a migração, já não poderá aceder ao seu antigo endereço de e-mail MX Plan nem anular o processo de migração. Recomendamos vivamente que realize esta operação num momento adequado.
+> Esta secção aplica-se a todos os serviços MX Plan que utilizam a tecnologia webmail Rouncube, Zimbra ou OWA.
 >
-> Mesmo que já não possa aceder ao seu endereço de e-mail atual, as mensagens já recebidas e as recebidas não serão perdidas. Todos estarão imediatamente acessíveis a partir da sua nova conta.
->
+> No entanto, se pretender migrar um serviço MX Plan que utiliza o webmail Roundcube para uma plataforma Email Pro ou Exchange OVHcloud, siga a secção "[Migração automática de uma oferta MX Plan Roundcube para Exchange ou Email Pro](#roundcube-mxplan)" deste guia.
 
-##### **Migração a partir do assistente de configuração Exchange**
-
-Para aceder, selecione na Área de [Cliente OVHcloud](/links/manager) o serviço em questão. O assistente deverá aparecer para o ajudar a configurar o seu novo serviço Exchange. Durante este processo, poderá selecionar as contas de e-mail MX Plan a migrar.
-
-Se o assistente de configuração não for apresentado, aparecerão as informações gerais do serviço Exchange. Neste caso, deverá realizar a migração das suas contas através da interface MX Plan.
-
-##### **Migração a partir da interface MX Plan**
-
-Para realizar a migração a partir desta interface, aceda à secção `E-mails`{.action} da Área de Cliente OVHcloud. De seguida, selecione o serviço que tem o nome de domínio dos seus endereços de e-mail. Clique no ícone em forma de engrenagem na linha da conta de e-mail em causa (também designada conta de origem) e, a seguir, em `Migrar a conta`{.action}.
-
-![Exchange](images/access_the_migration_tool.png){.thumbnail}
-
-Na nova janela, selecione o destino (para o qual pretende migrar o endereço) e clique em `Seguinte`{.action}. Se possuir no mínimo uma conta "livre" (ou seja, ainda não parametrizada), a migração efetuar-se-á para uma destas contas. De seguida, leia as informações apresentadas, valide-as e clique em `Seguinte`{.action}.
-
-Se não possuir uma conta "livre", aparecerá um botão `Encomendar contas`{.action}. Siga os passos e aguarde até que as contas estejam instaladas para efetuar novamente a operação.
-
-Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pretende migrar) e clique em `Migrar`{.action}. Esta operação deve ser repetida tantas vezes quantas as necessárias para a migração de outras contas.
-
-![Exchange](images/account_migration_steps.png){.thumbnail}
-
-#### 3.2 Migrar a nova versão do MX Plan <a name="NouvelleVersionMxplan"></a>
-
-> [!warning]
+[!warning]
 >
 > Se acabou de encomendar a sua nova oferta de e-mail, adicione o domínio à sua plataforma de e-mail antes de começar a migração. <br> - *Por exemplo, para migrar a conta "myemail@mydomain.ovh", deve adicionar o nome de domínio "mydomain.ovh" à sua plataforma.*
 >
 >Selecione o separador `Domínios associados`{.action} na sua plataforma, e clique em `Adicionar um domínio`{.action}. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está na coluna `Estatuto`.
 >
->![exchange](images/account_migration_adddomain.png){.thumbnail}
+> ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para mais detalhes sobre a adição de um nome de domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ou [o guia Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 A migração do seu MX Plan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 
@@ -144,11 +111,64 @@ Pode conservar ou eliminar a conta de origem com o nome provisório após esta m
 
 Se pretender eliminá-lo, aceda ao separador `Contas de e-mail`{.action} do MX Plan e clique no botão `...`{.action} e em `Reinicializar esta conta`{.action}.
 
-### 4 - Domínios: Consultar, Verificar e Alterar dados DNS
+#### 3.2 Migração automática de uma oferta MX Plan Roundcube para Exchange ou Email Pro <a name="roundcube-mxplan"></a>
+
+> [!warning]
+>
+> Esta secção aplica-se apenas aos serviços MX Plan que utilizam a tecnologia webmail Rouncube.
+
+> [!primary]
+>
+> A sua conta OVHcloud deve ter um contacto com o administrador **e** contacto técnico do serviço MX plan a migrar, **bem como** do serviço E-mail Pro ou Exchange para o qual migra.
+>
+> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
+>
+
+A migração pode ser efetuada a partir de duas interfaces:<br>
+
+- **o do assistente de configuração Hosted Exchange**, apenas se encomendou um serviço Hosted Exchange e ainda não o configurou;
+- **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
+
+> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum *reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MX Plan.
+>
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
+
+Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.
+
+> [!warning]
+>
+> Uma vez confirmada a migração, já não poderá aceder ao seu antigo endereço de e-mail MX Plan nem anular o processo de migração. Recomendamos vivamente que realize esta operação num momento adequado.
+>
+> Mesmo que já não possa aceder ao seu endereço de e-mail atual, as mensagens já recebidas e as recebidas não serão perdidas. Todos estarão imediatamente acessíveis a partir da sua nova conta.
+>
+
+##### **Migração a partir do assistente de configuração Exchange**
+
+Para aceder, selecione na [Área de Cliente OVHcloud](/links/manager) o serviço em questão. O assistente deverá aparecer para o ajudar a configurar o seu novo serviço Exchange. Durante este processo, poderá selecionar as contas de e-mail MX Plan a migrar.
+
+Se o assistente de configuração não for apresentado, aparecerão as informações gerais do serviço Exchange. Neste caso, deverá realizar a migração das suas contas através da interface MX Plan.
+
+##### **Migração a partir da interface MX Plan**
+
+Para realizar a migração a partir desta interface, aceda à secção `E-mails`{.action} da Área de Cliente OVHcloud. De seguida, selecione o serviço que tem o nome de domínio dos seus endereços de e-mail. Clique no ícone em forma de engrenagem na linha da conta de e-mail em causa (também designada conta de origem) e, a seguir, em `Migrar conta`{.action}.
+
+![Exchange](images/access_the_migration_tool.png){.thumbnail}
+
+Na nova janela, selecione o destino (para o qual pretende migrar o endereço) e clique em `Seguinte`{.action}. Se possuir no mínimo uma conta "livre" (ou seja, ainda não parametrizada), a migração efetuar-se-á para uma destas contas. De seguida, leia as informações apresentadas, valide-as e clique em `Seguinte`{.action}.
+
+Se não possuir uma conta "livre", aparecerá um botão `encomende uma nova conta`{.action}. Siga os passos e aguarde até que as contas estejam instaladas para efetuar novamente a operação.
+
+Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pretende migrar) e clique em `Migrar`{.action}. Esta operação deve ser repetida tantas vezes quantas as necessárias para a migração de outras contas.
+
+![Exchange](images/account_migration_steps.png){.thumbnail}
+
+### Etapa 4: Verificar ou modificar a configuração do seu domínio
 
 Nesta etapa, os seus endereços de e-mail já devem ser migrados e funcionais. Por questões de segurança, sugerimos que verifique se a configuração do seu domínio está correta ao consultar a Área de Cliente.
 
 Para isso, selecione o serviço E-mail Pro ou Exchange em questão e aceda ao separador `Domínios associados`{.action}. Na tabela que vai aparecer, a coluna "Diagnóstico" irá permitir-lhe ver se a configuração DNS está correta: se a configuração tiver de ser alterada, aparecerá uma etiqueta vermelha.
+
+![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
 > [!primary]
 >
@@ -157,9 +177,7 @@ Para isso, selecione o serviço E-mail Pro ou Exchange em questão e aceda ao se
 
 Para alterar a configuração, clique na etiqueta vermelha e execute a operação solicitada. A propagação pode demorar entre 4 e 24 horas.
 
-![Exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
-
-### 5 - utilizar os seus endereços de e-mail migrados
+### Etapa 5: Utilizar os seus endereços de e-mail migrados
 
 Só precisa de utilizar os seus endereços de e-mail migrados. Para isso, a OVHcloud disponibiliza uma aplicação online (_web app_) acessível no endereço [Webmail](/links/web/email). Introduza os dados de acesso relativos ao seu endereço de e-mail.
 
@@ -181,10 +199,12 @@ Também pode migrar manualmente os seus endereços de e-mail para a nova oferta 
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Guias E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
+[Primeiros passos com a oferta E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Guias Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Primeiros passos com a oferta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Fale com nossa [comunidade de utilizadores](/links/community).

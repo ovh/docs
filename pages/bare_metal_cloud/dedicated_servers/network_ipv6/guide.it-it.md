@@ -426,7 +426,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` può anche essere scritto 
 >>
 > **AlmaLinux (8/9) e Rocky Linux (8/9)**
 >>
->> La configurazione di esempio qui sotto è basata su CentOS 7.
+>> La configurazione di esempio qui sotto è basata su AlmaLinux 9.
 >>
 >> Il file di configurazione di rete si trova nella directory `/etc/sysconfig/network-scripts`. Nel nostro esempio, si chiama `ifcfg-eth0`.
 >>

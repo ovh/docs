@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Connect with Python
+title: Connect using Python for Public Cloud Databases for PostgreSQL
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python programming language
 updated: 2025-10-08
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Activar y utilizar el modo de rescate"
 excerpt: "Cómo utilizar el modo customer rescue de OVHcloud para solucionar los problemas de un servidor dedicado"
-updated: 2025-01-20
+updated: 2026-01-09
 ---
 
 <style>
@@ -351,6 +351,14 @@ chroot /mnt/
 ```
 
 Ahora debería poder aplicar todos los cambios necesarios al sistema, por ejemplo, para [recuperar el acceso al servidor](#gofurther).
+
+### Configuración de la agregación de enlaces en modo de rescate
+
+La agregación de enlaces (LACP) es muy ventajosa, ya que permite aumentar el ancho de banda total de su servidor y, al mismo tiempo, ofrece redundancia de red en caso de fallo de una interfaz de red.
+
+Aunque el modo de rescate se basa en el sistema operativo Debian 12, su configuración de red se basa en la utilidad `ifupdown`, en lugar de `Netplan`.
+
+Si dispone de un servidor que admite la agregación de enlaces y desea configurarla en modo de rescate, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Salida del modo de rescate
 

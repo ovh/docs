@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
 excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 ## Objectif
@@ -66,7 +66,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 
 Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** pour filtrer vos services par catégorie, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
-Si vous avez une alerte sur l'une de vos IPs, vous trouverez un badge de statut rouge dans la colonne **IP Alert**.
+Si vous avez une alerte sur l'une de vos adresses IP, vous trouverez un badge de statut rouge dans la colonne **IP Alert**.
 
 ![Alerte anti spam](images/blockedIP_new.png){.thumbnail}
 
@@ -263,13 +263,13 @@ Pour plus d'informations sur les services ci-dessus, consultez notre guide « [O
 
 - **Vers un serveur Microsoft (Outlook, etc.)**
 
-Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter la section **Vers un serveur Microsoft (Outlook, etc.)** de notre guide « [Comment éviter que vos e-mails ne soient marqués comme spam](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization) ».
 
 - **Vers un serveur Gmail**
 
-L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563?hl=fr).
+L'ajout d'enregistrements spécifiques (par exemple, un enregistrement DMARC) peut faciliter la réception des e-mails si votre destinataire a une adresse Gmail. La documentation suivante de Google peut vous aider dans cette démarche : [Ajout d'un champ DMARC](https://support.google.com/a/answer/2466563/).
 
-Google propose également un [article dédié](https://support.google.com/mail/answer/81126?hl=en) à la prévention du spam pour les utilisateurs de Gmail.
+Google propose également un [article dédié](https://support.google.com/mail/answer/81126/) à la prévention du spam pour les utilisateurs de Gmail.
 
 ### Déclarer un faux positif
 

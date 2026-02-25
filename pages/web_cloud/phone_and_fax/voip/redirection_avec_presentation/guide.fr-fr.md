@@ -1,7 +1,7 @@
 ---
 title: "Configurer une redirection d'appels"
 excerpt: "Découvrez comment configurer une redirection d'appels sur votre numéro alias OVHcloud"
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -20,20 +20,39 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 
 - Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/telephonie-numeros) ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
 - Disposer d'[une ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
 
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
- 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias sur lequel vous souhaitez configurer la redirection de vos appels entrants.
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
 
-Cliquez sur l'onglet `Configuration`{.action}.<br>
-Parmi les configurations proposées, choisissez `Redirection d'appels`{.action} puis cliquez sur le bouton `Paramétrer`{.action}.
+### Accès à l'espace client OVHcloud
 
-![redirection d'appels](images/redirection1-2022.png){.thumbnail}
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+
+### Étape 1 : Appliquer la configuration « Redirection d'appels »
+
+- Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `Redirection d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
+
+- Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `Redirection d'appels`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
+
+![redirection d'appels](images/redirection1-2026.png){.thumbnail}
+
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+
+### Étape 2 : Paramétrer la redirection d'appels
 
 Dans la partie « **Vos appels entrants** », cliquez d'abord sur le bouton `+ Sélectionner une ligne`{.action}.<br>
 Choisissez alors, parmi les lignes affichées, celle vers laquelle vous souhaitez rediriger les appels reçus sur votre numéro. Cliquez ensuite sur le bouton `Valider`{.action} pour confirmer votre sélection.
@@ -52,6 +71,10 @@ Si vous souhaitez activer cette fonctionnalité, cochez la case située à côt�
 
 Une fois vos choix effectués, cliquez sur `Valider`{.action} afin d'appliquer la configuration.<br>
 Patientez quelques instants afin que celle-ci soit prise en compte.
+
+> [!primary]
+>
+> Si vous avez appliqué le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
 
 ## Aller plus loin
 

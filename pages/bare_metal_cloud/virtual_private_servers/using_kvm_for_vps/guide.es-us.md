@@ -87,6 +87,8 @@ Puede activar la distribución de teclado deseada para facilitar el uso de la co
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+Si es necesario, instale primero el paquete a través del gestor de paquetes de su distribución (`sudo dnf install keyboard-configuration` o `sudo apt install keyboard-configuration`).
+
 Se abrirá un menú gráfico en el que podrá seleccionar un modelo de teclado.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}

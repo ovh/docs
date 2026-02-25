@@ -1,5 +1,5 @@
 ---
-title: Public Cloud Databases - How to enable deletion protection
+title: Enable deletion protection for Public Cloud Databases
 excerpt: Find out how to setup a deletion protection for your Public Cloud databases service
 updated: 2025-08-15
 ---

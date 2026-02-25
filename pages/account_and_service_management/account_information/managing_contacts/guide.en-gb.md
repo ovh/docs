@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 There are three different contact types:
 
-- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the owner of a service, such as domain names, for example.
+- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the holder of a service, such as domain names, for example.
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
 
@@ -33,6 +33,7 @@ The NIC handle is a personal username that you receive via email when you create
 - Appropriate rights for the service concerned.
 - The new contact’s NIC handle (the contact you want to add).
 - No outstanding payments on billing contacts.
+- The new billing contact must have a valid payment method in their OVHcloud account.
 
 ## Instructions
 
@@ -106,7 +107,7 @@ The contact change will take effect a few minutes after both contacts have valid
 
 ### Example: Providing access for a website's technical administration to your webmaster
 
-You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](https://www.ovhcloud.com/en-gb/web-hosting/ecommerce-website/). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
+You have just subscribed to an OVHcloud service with the purpose of hosting your own [online store](/links/web/hosting-ecommerce-website). You have contacted one of our [partners](/links/partner) and they are requesting access rights to your OVHcloud services in order to start building your website.
 
 > [!warning]
 >
@@ -117,15 +118,15 @@ In this situation, you can grant your service provider the role "[technical cont
 
 If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give them the role "[technical contact](#gestion_des_contacts)" on your [domain name’s DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](/pages/web_cloud/domains/transfer_outgoing_domain) to another hosting provider or [change its owner](/pages/web_cloud/domains/trade_domain). Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
+You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](/pages/web_cloud/domains/transfer_outgoing_domain) to another hosting provider or [change its holder](/pages/web_cloud/domains/trade_domain) to another holder. Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
 
-### Special case of a domain owner
+### Special case of a domain name holder
 
-When you ordered an OVHcloud service, you defined an owner for it. If the domain owner has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain ownership to a third party, or obtain domain administration, via the following procedures:
+When you ordered an OVHcloud service, you defined a holder for it. If the domain name holder has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain name to a third-party holder, or obtain domain administration, via the following procedures:
 
-[Change the owner of a service](https://www.ovh.com/cgi-bin/en/procedure/procedureChangeOwner.cgi)
+[Change the holder of a service](/links/transversal/procedure-change-owner)
 
-[Change your domain contacts](https://www.ovh.de/cgi-bin/en/procedure/procedureChangeContacts.cgi)
+[Change your domain contacts](/links/transversal/procedure-contact-change)
 
 Each procedure is carried out by email and an identity check will be required. Detailed instructions will be provided throughout each procedure.
 

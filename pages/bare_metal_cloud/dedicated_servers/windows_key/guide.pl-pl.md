@@ -1,7 +1,7 @@
 ---
-title: 'Modyfikacja klucza aktywacyjnego Windows Server'
+title: 'Jak zmienić klucz aktywacyjny Windows Server'
 excerpt: 'Dowiedz się, jak zmodyfikować klucz aktywacyjny Windows Server'
-updated: 2022-07-07
+updated: 2026-01-06
 ---
 
 ## Wprowadzenie
@@ -12,7 +12,7 @@ Istnieje możliwość, że podczas instalacji systemu operacyjnego Windows Serve
 
 ## Wymagania początkowe
 
-- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/os/server-windows/) z zainstalowanym systemem Windows na koncie OVHcloud
+- Posiadanie [Serwer dedykowany OVHcloud](/links/bare-metal/os) z systemem Windows Server lub wirtualna maszyna z systemem Windows Server na usłudze [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses).
 - Posiadanie licencja SPLA systemu Windows na koncie OVHcloud
 - Dostęp administracyjny do serwera za pośrednictwem połączenia pulpitu zdalnego
 
@@ -69,5 +69,5 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Sprawdź również
- 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+
+Dołącz do [grona naszych użytkowników](/links/community).

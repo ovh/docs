@@ -1,7 +1,7 @@
 ---
 title: "How to protect a Game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud Game DDoS Protection firewall"
-updated: 2025-12-10
+updated: 2026-01-06
 ---
 
 <style>
@@ -74,7 +74,7 @@ Navigate to the *Game firewall* configuration:
 
 | ![game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Click on the `...`{.action} button next to the IP address of your Game server. |
+| Click on the `⁝`{.action} button next to the IP address of your Game server. |
 
 | ![configure-game-firewall](images/firewall_game_02_new.png) |
 |:--:|
@@ -115,8 +115,8 @@ Also, we strongly recommend to set the rule **"Default policy = DROP"** on every
 
 #### Ark Survival Evolved
 
-- **Ark Survival Evolved**: Basic protection engine
-- **Ark Survival Evolved v.311.78**: Updated protection engine, added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later)
+- **Ark Survival Evolved**: Basic protection engine.
+- **Ark Survival Evolved v.311.78**: Updated protection engine, added to the recent GAME-1 and GAME-2 Bare Metal Game Servers (2024 and later).
 
 #### Counter Strike 2
 

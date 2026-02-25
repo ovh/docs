@@ -1,18 +1,18 @@
 ---
-title: "Cómo conectar un dominio de OVHcloud a un alojamiento web de Shopify"
-excerpt: "Prepara y configura la zona DNS de tu dominio de OVHcloud para conectarla a un alojamiento de Shopify"
-updated: 2024-04-17
+title: "Cómo conectar un nombre de dominio de OVHcloud a un alojamiento web de Shopify"
+excerpt: "Prepara y configura la zona DNS de tu nombre de dominio de OVHcloud para conectarla a un alojamiento de Shopify"
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, Esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud para alojar su sitio web en Shopify.
+Si es titular de un nombre de dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, esta guía explica los pasos necesarios para preparar y configurar la zona DNS de OVHcloud para alojar su sitio web en Shopify.
 
-**Cómo conectar un dominio de OVHcloud a un alojamiento web de Shopify**
+**Cómo conectar un nombre de dominio de OVHcloud a un alojamiento web de Shopify**
 
 > [!warning]
 >
-> - El servicio de soporte de Shopify no tiene acceso a la configuración del dominio de OVHcloud y no puede aconsejarle sobre la información que debe proporcionarle.
+> - El servicio de soporte de Shopify no tiene acceso a la configuración del nombre de dominio de OVHcloud y no puede aconsejarle sobre la información que debe proporcionarle.
 >
 > - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#go-further) información de esta guía.
 >
@@ -20,8 +20,8 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, E
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener un [dominio](/links/web/domains) registrado con OVHcloud.
-- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el dominio desde el [área de cliente de OVHcloud](/links/manager).
+- Tener un [nombre de dominio](/links/web/domains) registrado con OVHcloud.
+- Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un plan de hosting con Shopify.
 - Tener acceso a la gestión de este alojamiento web en Shopify.
 
@@ -31,13 +31,13 @@ Antes de seguir los dos pasos de esta guía, le recomendamos que se familiarice 
 
 > [!warning]
 >
-> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. Esta guía explica cómo identificar cada registro DNS necesario para conectarse a su alojamiento web de Shopify. Es necesario eliminar algunos registros para evitar conflictos con los registros DNS necesarios en esta configuración. Otros se pueden editar o crear fácilmente. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustituya el dominio por su nombre de dominio durante la configuración.
+> Su zona DNS podría estar ya preconfigurada o asociada a un alojamiento. Esta guía explica cómo identificar cada registro DNS necesario para conectarse a su alojamiento web de Shopify. Es necesario eliminar algunos registros para evitar conflictos con los registros DNS necesarios en esta configuración. Otros se pueden editar o crear fácilmente. Para una mejor comprensión, utilizaremos el nombre de dominio "**mydomain.ovh**" como ejemplo. Sustituya el nombre de dominio por su nombre de dominio durante la configuración.
 
 ### Configurar los registros DNS en su cuenta de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el nombre de dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
+Se mostrará una tabla con todos los registros DNS del nombre de dominio seleccionado.
 
 ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
@@ -83,25 +83,25 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 
 La zona DNS ya está configurada para conectarse a un alojamiento de Shopify.
 
-### Conectar un dominio a Shopify
+### Conectar un nombre de dominio a Shopify
 
 Las operaciones de este paso deben realizarse desde el área de cliente de Shopify. Para ello, acceda directamente al paso 2 de la guía en el sitio web de Shopify y haga clic en [**este enlace**](https://help.shopify.com/es/manual/domains/add-a-domain/connecting-domains/connect-domain-manual).
 
 > [!primary]
 >
-> La comprobación del dominio puede tardar hasta 48 horas.
+> La comprobación del nombre de dominio puede tardar hasta 48 horas.
 
 Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](/links/web/emails), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Cambiar los servidores DNS de un nombre de dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
-[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)
+[Crear una zona DNS de OVHcloud para un nombre de dominio](/pages/web_cloud/domains/dns_zone_create)
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para cambiar la gestión de un dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
+Para cambiar la gestión de un nombre de dominio a otra cuenta de cliente de OVHcloud, consulte la guía [Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts) de OVHcloud.
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

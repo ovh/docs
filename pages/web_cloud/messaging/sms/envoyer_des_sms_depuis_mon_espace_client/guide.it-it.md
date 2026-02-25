@@ -1,7 +1,7 @@
 ---
 title: Inviare SMS dallo Spazio Cliente
 excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
-updated: 2025-10-28
+updated: 2026-01-07
 ---
 
 ## Obiettivo
@@ -11,15 +11,23 @@ updated: 2025-10-28
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Gestione SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo account SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](/links/manager) e seleziona `Telecom`{.action}. Quindi clicca su `SMS`{.action} e seleziona il tuo account SMS.
-
-Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle azioni.
+Il campo "Inviare un SMS" è il primo elemento disponibile nella lista delle azioni.
 
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -56,7 +64,11 @@ Una volta selezionato il mittente e inseriti i destinatari, è possibile iniziar
 
 Digita il messaggio nell’apposita area di testo (1). Visualizzi un contatore che indica il numero dei caratteri utilizzati e il numero degli SMS corrispondenti (2).
 
-Le due tabelle qui sotto elencano i caratteri autorizzati per una codifica a 7bit. I caratteri della tabella “Estensioni” valgono il doppio. 
+> [!primary]
+>
+> Raccomandiamo di non superare gli 8 SMS per messaggio. Oltre questo limite, gli operatori non garantiscono più la consegna del messaggio.
+
+Le due tabelle qui sotto elencano i caratteri autorizzati per una codifica a 7bit. I caratteri della tabella "**Estensioni**" valgono il doppio. 
 
 La lunghezza massima di un SMS è di 160 caratteri (norma GSM 03.38).
 

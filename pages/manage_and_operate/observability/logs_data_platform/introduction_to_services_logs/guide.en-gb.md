@@ -1,7 +1,7 @@
 ---
 title: Introduction to OVHcloud Service Logs with Logs Data Platform
 excerpt: Discover how to retrieve your OVHcloud managed products logs in Logs Data Platform
-updated: 2025-12-11
+updated: 2026-01-08
 ---
 
 ## Objective
@@ -57,7 +57,7 @@ Our ambition is to make all OVHcloud products compatible with OVHcloud Service L
 | Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
 | Public Cloud - Load Balancer | OVHcloud Control Panel & API | [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers) |
 | Public Cloud - Managed Databases | OVHcloud Control Panel & API | [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) |
-| Hosted Private Cloud - Managed VMware vSphere | OVHcloud Control Panel & API | - |
+| Hosted Private Cloud - Managed VMware vSphere | OVHcloud Control Panel & API | [Hosted Private Cloud - Collect VMware on OVHcloud logs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ldp) |
 | Hosting & Collaboration - Web Cloud Databases | OVHcloud Control Panel & API | [Web Cloud Databases - How to manage logs](/pages/web_cloud/web_cloud_databases/retrieve-logs) |
 | Hosting & Collaboration - Microsoft Private Exchange | OVHcloud Control Panel & API | [Exchange - How to manage logs](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_manage_logs) |
 | Hosting & Collaboration - Microsoft Trusted Exchange | OVHcloud Control Panel & API | [Exchange - How to manage logs](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_manage_logs) |

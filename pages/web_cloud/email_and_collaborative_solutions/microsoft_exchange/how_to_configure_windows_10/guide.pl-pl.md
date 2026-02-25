@@ -12,7 +12,7 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](/links/web/emails)
+- Wykupienie konta e-mail [Exchange](/links/web/emails-exchange)
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 

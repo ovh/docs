@@ -1,7 +1,7 @@
 ---
 title: "Ochrona serwera gier za pomocą firewalla aplikacyjnego"
 excerpt: "Dowiedz się, jak skonfigurować OVHcloud Game DDoS Protection firewall"
-updated: 2025-12-22
+updated: 2026-01-06
 ---
 
 <style>
@@ -74,7 +74,7 @@ Sprawdź konfigurację *Firewall Game*:
 
 | ![Game-server](images/firewall_game_01_blur_new.png) |
 |:--:|
-| Kliknij przycisk`...`{.action} obok adresu IP Twojego serwera Game. |
+| Kliknij przycisk`⁝`{.action} obok adresu IP Twojego serwera Game. |
 
 | ![configure-Game-firewall](images/firewall_game_02_new.png) |
 |:--:|

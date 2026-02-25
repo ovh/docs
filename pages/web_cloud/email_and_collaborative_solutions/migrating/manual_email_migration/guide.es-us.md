@@ -1,7 +1,7 @@
 ---
 title: Migrar manualmente una dirección de correo electrónico
 excerpt: Cómo migrar manualmente su dirección de correo a otra dirección de correo
-updated: 2025-04-28
+updated: 2026-01-16
 ---
  
 

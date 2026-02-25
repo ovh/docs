@@ -109,7 +109,7 @@ Depois de preencher as informações, selecione a caixa ao lado de `Ligação se
 
 Só precisa de validar esta adição introduzindo um código de confirmação enviado para o seu endereço de E-mail Pro OVHcloud. Para o obter, ligue-se à sua conta de e-mail como de costume a partir da nossa interface online acessível a partir de: <https://pro1.mail.ovh.net>.
 
-Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador Contas e importação {.action}, ao qual acedeu no início da operação.
+Após a validação efetuada, o endereço de E-mail Pro OVHcloud será apresentado no separador `Contas e importação`{.action}, ao qual acedeu no início da operação.
 
 ### 2 - Utilizar uma conta E-mail Pro a partir da interface do Gmail
 

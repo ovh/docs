@@ -213,7 +213,7 @@ Moreover, keep in mind that the exact file names may vary.
 >> sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 >> ```
 >>
-> **Configuration using Netplan**
+> **Configuration using *Netplan***
 >>
 >> The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called `50-cloud-init.yaml`. Before continuing, first check this file to see if the IPv6 address has already been configured. If so, you don't need to configure the IPv6 address again as you only have one IPv6 with your VPS server.
 >>

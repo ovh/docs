@@ -224,7 +224,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> sudo /etc/init.d/networking restart
 >> ```
 >>
-> **Fedora 42 e versões posteriores**
+> **Fedora 42+, AlmaLinux & Rocky Linux (10)**
 >>
 >> O exemplo de configuração abaixo é baseado no Fedora 42.
 >>
@@ -278,7 +278,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff:ff
 >> ```
 >>
-/// details | **Exemplo de configuração:**
+>> /// details | **Exemplo de configuração:**
 >>
 >> ```sh
 >> sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -467,7 +467,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF:00FF` também pode ser escr
 >> IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/ IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFIX etc..."
 >> ```
 >>
->> /// details | **Exemplo de configuração**
+>> /// details | **Exemplo de configuração:**
 >>
 >> ```sh
 >> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0

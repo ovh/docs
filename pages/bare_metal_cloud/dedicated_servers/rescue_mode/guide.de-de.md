@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud Rescue-Modus aktivieren und verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das <i>Customer Rescue System</i> zur Fehlerbehebung bei einem Dedicated Server einsetzen"
-updated: 2025-01-20
+updated: 2026-01-09
 ---
 
 <style>
@@ -350,6 +350,14 @@ chroot /mnt/
 ```
 
 Jetzt sollten Sie in der Lage sein, alle erforderlichen Änderungen am System vorzunehmen, z.B. um den [Zugriff auf den Server wiederherzustellen](#gofurther).
+
+### Konfiguration der Link-Aggregation im Rescue-Modus
+
+Die Link-Aggregation (LACP) ist sehr vorteilhaft, da sie die Gesamtbandbreite Ihres Servers erhöht und gleichzeitig Netzwerkredundanz für den Fall eines Ausfalls einer Netzwerkschnittstelle bietet.
+
+Obwohl der Rescue-Modus auf dem Betriebssystem Debian 12 basiert, basiert seine Netzwerkkonfiguration auf dem Dienstprogramm `ifupdown` und nicht auf `Netplan`.
+
+Wenn Sie über einen Server verfügen, der Link Aggregation unterstützt, und diese im Rescue-Modus konfigurieren möchten, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 ### Rescue-Modus verlassen
 

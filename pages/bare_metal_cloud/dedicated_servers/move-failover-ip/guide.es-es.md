@@ -1,14 +1,15 @@
 ---
 title:  Mover una Additional IP
 excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
-updated: 2025-07-22
+updated: 2026-01-21
 ---
 
 > [!primary]
 > Este artículo se refiere al traslado de direcciones Additional IPv4, que está limitado según [restricciones regionales](#limitations).
 >
 > La configuración de Additional IP en un vRack (red privada) sortea estas restricciones regionales al perder la dependencia de una sola región, facilitando al mismo tiempo la interconexión en una amplia gama de servicios de OVHcloud.
-> Cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) y [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+> Descubra cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) y [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -18,14 +19,16 @@ Las Additional IP pueden moverse entre los servicios que utilice. El objetivo es
 Esta tecnología le permite mover las direcciones IP de un servidor a otro en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de respaldo en caso de fallo.
 
 > [!primary]
-> Es posible asignar los bloques de direcciones IP a cualquier servicio compatible dentro de una región.
-Los bloques de direcciones IP de una región pueden moverse de un datacenter a otro dentro de una misma región, pero no fuera de esa región.
+> Es posible asignar los bloques de direcciones IP a cualquier servicio compatible dentro de una región. Los bloques de direcciones IP de una región pueden moverse de un datacenter a otro dentro de una misma región, pero no fuera de esa región.
 >
 > Las regiones «eu-west-gra», «eu-west-rbx» y «eu-west-sbg» son una excepción, ya que sí es posible mover los bloques de direcciones IP entre estas tres regiones.
 >
+> Una región es una zona geográfica compuesta por uno o varios centros de datos.
+>
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
+>
 
-**Cómo mover una Additional IP desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
+**Descubra cómo trasladar una Additional IP desde su espacio de cliente OVHcloud o a través de las API de OVHcloud. Descubra también cómo trasladar una Additional IP de una cuenta So you Start a una cuenta OVHcloud.**
 
 ## Requisitos
 
@@ -37,6 +40,7 @@ Los bloques de direcciones IP de una región pueden moverse de un datacenter a o
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
+>
 
 > [!warning]
 > Si la dirección Additional IP, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
@@ -60,7 +64,7 @@ La geolocalización de una dirección IP es independiente de su región de conex
 
 Si contrata un bloque de IP adicional en un servidor, pero elige una localización diferente (geolocalización) para el bloque de IP, dicho bloque no podrá trasladarse a otro servidor situado en el mismo país que dicho bloque. Por ejemplo, un bloque adicional de IP geolocalizado en Polonia (eu-central-war) y contratado en un servidor situado en un datacenter de Francia (eu-west-gra) no puede transferirse a un servidor situado en un datacenter de Polonia (eu-central-war). El bloque de IP solo puede moverse hacia un servidor elegible situado en un datacenter de Francia.
 
-### Migrar una IP desde el área de cliente de OVHcloud
+### Migrar una Additional IP desde el área de cliente de OVHcloud
 
 > [!warning]
 > Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
@@ -68,21 +72,27 @@ Si contrata un bloque de IP adicional en un servidor, pero elige una localizaci�
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
-Haga clic en la pestaña `Additional IP`{.action}.
+Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicios asociados** y seleccionar `Todas las Additional IP`{.action} para filtrar sus servicios, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 
-![manage IPs](images/manageIPs2024.png){.thumbnail}
+![área de cliente](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
-Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Trasladar Additional IP`{.action} o `Asociar este bloque de IP a otro servicio`{.action}.
+Haga clic en el botón `⁝`{.action} situado a la derecha de la dirección IP que desea mover y, a continuación, en `Trasladar Additional IP`{.action}.
 
-![área de cliente](images/move_ip.png){.thumbnail}
+![área de cliente](images/move_ip_1_new.png){.thumbnail}
 
-En el menú contextual, seleccione el servicio al que quiere mover la dirección IP.
+En el menú contextual que aparece, seleccione el servicio al que desea mover la dirección IP.
 
-Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
+Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 
-![área de cliente](images/moveadditionalIP2.png){.thumbnail}
+![área de cliente](images/move_ip_2_new.png){.thumbnail}
 
-### Mover una IP a través de las API
+> [!warning]
+> Tenga en cuenta que, para algunos productos, las direcciones IP (o bloques) deben trasladarse primero a un **aparcamiento de IP** (una ubicación de almacenamiento temporal) antes de poder trasladarse al producto deseado.
+>
+> Para mover bloques IP a una red vRack específica, utilice **la interfaz de gestión vRack**, a la que puede acceder haciendo clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y, a continuación, en `Red privada vRack`{.action}.
+>
+
+### Mover una Additional IP a través de las API
 
 Conéctese a la página web de las [API de OVHcloud](/links/api).
 
@@ -106,6 +116,61 @@ Para mover la dirección IP, utilice la siguiente llamada:
 
 - `serviceName`: la referencia del servidor dedicado de destino
 - `ip`: la dirección Additional IP a mover
+
+### Mover una Additional IP de una cuenta So you Start a una cuenta OVHcloud
+
+Para mover una Additional  IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
+
+- El movimiento de una Additional IP conlleva gastos de instalación. La dirección IP no se moverá si la factura sigue pendiente de pago.
+- No es posible mover una Additional IP de una cuenta OVHcloud a una cuenta So you Start.
+- Asegúrese de que el servidor al que transfiere la dirección Additional IP se encuentra en la misma región compatible que esta. Consulte la sección «Restricciones» más abajo.
+
+Para empezar, inicie sesión en su cuenta So you Start y haga clic en `IP`{.action} en el panel de control principal.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Haga clic en el botón de configuración (con forma de engranaje `⚙`{.action}) junto a la dirección IP correspondiente y seleccione `Mover la IP Failover`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Seleccione `Mover a un servicio OVH`{.action}, introduzca su identificador de cliente OVHcloud y haga clic en `Siguiente`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+Esto generará un código (token), guárdelo.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+A continuación, [inicie sesión en su cuenta OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
+
+Haga clic en el botón de configuración (con forma de engranaje `⚙`{.action}) a la derecha y seleccione `Importar mis direcciones IP de SyS a OVHcloud`{.action}.
+
+![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+Aparecerá una ventana emergente, introduzca la dirección Additional IP (o el bloque) y el código recuperado en la cuenta So you Start en el campo `Token`. A continuación, haga clic en `Siguiente`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Seleccione el servidor de destino y haga clic en `Siguiente`{.action}. Si el servidor dedicado es compatible con la dirección IP, aparecerá un mensaje verde. De lo contrario, recibirá un mensaje de error.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+En la siguiente ventana, la duración se selecciona automáticamente y se muestran los gastos. Haga clic en `Siguiente`{.action} para continuar.
+
+![soyoustart to ovh](images/Step-3.png){.thumbnail}
+
+Marque la casilla `Aceptar los contratos`{.action} para aceptar las condiciones de uso después de haberlas leído. A continuación, haga clic en `Siguiente`{.action}.
+
+![soyoustart to ovh](images/Step-4.png){.thumbnail}
+
+Tome nota del resumen del pedido y haga clic en `Confirmar`{.action} para validarlo.
+
+![soyoustart to ovh](images/Step-5.png){.thumbnail}
+
+Se le redirigirá a una nueva página para realizar el pago.
+
+Una vez realizado el pago, su Additional IP se transferirá a su cuenta OVHcloud y se asociará al servidor seleccionado. Este proceso puede tardar algún tiempo.
 
 ### Restricciones <a name="limitations"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2025-10-21
+updated: 2026-01-06
 ---
 
 ## Ziel
@@ -41,33 +41,22 @@ Die Edge Network Firewall reduziert die Anfälligkeit für DDoS-Angriffe im Netz
 > [!primary]
 >
 > Derzeit ist diese Funktion nur für IPv4-Adressen verfügbar.
+>
 
 > [!primary]
 >
 > Die Edge Network Firewall schützt eine bestimmte, mit einem Server (oder Dienst) verbundene IP. Wenn Sie also einen Server mit mehreren IP-Adressen haben, müssen Sie jede IP separat konfigurieren.
 > 
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und zugehörige Dienste** können Sie Ihre Dienste nach Kategorien filtern.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorien filtern, oder geben Sie die gewünschte IP-Adresse direkt in die Suchleiste ein.
 
-![filter service](images/selectservice_cut.png){.thumbnail}   
+![filter service](images/selectservice_cut_new.png){.thumbnail}
 
+Klicken Sie anschließend auf die Schaltfläche `⁝`{.action} rechts neben der entsprechenden IPv4-Adresse und wählen Sie zunächst `Edge Network Firewall konfigurieren`{.action} (oder klicken Sie auf das Status-Symbol in der Spalte **Edge-Firewall**).
 
-Klicken Sie anschließend rechts neben der IPv4 auf `...`{.action} und wählen Sie `Firewall erstellen`{.action}.
+![Enabling the Network Firewall](images/firewall_config_new.png){.thumbnail}
 
-![Netzwerkfirewall aktivieren](images/firewallcreation2022.png){.thumbnail}
-
-Sie werden dann um Bestätigung gebeten. Die Firewall wird erstellt, und Sie können die Regeln konfigurieren.
-
-> [!primary]
-> Die Schaltfläche `Firewall erstellen`{.action} ist nur für IPs verfügbar, für die keine Firewall konfiguriert wurde. Wenn Sie Ihre Firewall nicht zum ersten Mal konfigurieren, können Sie diesen Schritt überspringen. 
->
-
-| ![Konfiguration wird aktiviert](images/activationconfig.png) | 
-|:--:| 
-| Klicken Sie auf `Edge Network Firewall Konfiguration`{.action}, um mit der Konfiguration zu beginnen. |
-
-Auf dieser Seite können Sie die Firewall über den Slider-Button **aktivieren** oder **deaktivieren**.  
-Weiter unten wird die alternative Vorgehensweise beschrieben.
+Sie werden dann zur Seite für die Firewall-Konfiguration weitergeleitet.
 
 Sie können bis zu **20 Regeln pro IP** einrichten.
 
@@ -94,21 +83,21 @@ Sie können bis zu **20 Regeln pro IP** einrichten.
 > Weitere Informationen finden Sie in unseren Anleitungen: [Firewall auf einem Windows Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) und [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-linux-iptable).
 >
 
-**Hinzufügen einer Regel:**
+**Um eine Regel hinzuzufügen**, klicken Sie oben links auf die Schaltfläche `+ Hinzufügen eine Regel`{.action}:
 
-| ![add-rule-btn](images/enf_add_rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_new.png) |
 |:--:| 
-| Auf `Regel hinzufügen`{.action} klicken |
+| Auf `+ Hinzufügen eine Regel`{.action} klicken |
 
 Für jede Regel (mit Ausnahme von TCP) müssen Sie Folgendes auswählen:
 
-| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
 |:-| 
 | &bull; Eine Priorität (0 bis 19, wobei 0 die erste anzuwendende Regel ist) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) |
 
 Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 
-| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png) |
 |:-| 
 | &bull; Eine Priorität (0 bis 19, 0 ist die erste anzuwendende Regel, gefolgt von den anderen) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) <br>&bull; Der Quell-Port (optional) <br>&bull; Der Ziel-Port (optional) <br>&bull; Der TCP-Status (optional) <br>&bull; Fragmente (optional)|
 
@@ -126,21 +115,13 @@ Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 > Firewall-Setups, die nur akzeptierende Regeln enthalten, sind nicht wirksam. Es muss eine Anweisung geben, welcher Traffic von der Firewall abgelehnt werden soll. Es wird eine Warnung angezeigt, falls eine solche *Deny*-Regel nicht existiert.
 > 
 
-**Firewall aktivieren:**
+**Firewall aktivieren/deaktivieren:**
 
-| ![activate-desactivate](images/enf_enabled_button_01.png) | 
+| ![activate-desactivate](images/enf_enable_disable_new.png) |
 |:--:| 
 | `Umschalten`{.action} zum Aktivieren |
 
-Nach der Bestätigung wird die Firewall aktiviert.
-
-**Firewall deaktivieren:**
-
-| ![activate-desactivate](images/enf_enabled_button_04.png) | 
-|:--:| 
-| `Umschalten`{.action} zum Deaktivieren |
-
-Nach der Bestätigung wird die Firewall deaktiviert.
+Nach der Bestätigung wird die Firewall aktiviert oder deaktiviert.
 
 Regeln bleiben deaktiviert, bis ein Angriff erkannt wird und werden dann aktiv. Diese Logik kann für Regeln verwendet werden, die nur aktiv sein sollen, wenn ein bekannter wiederholter Angriff eintrifft.
 

@@ -1,7 +1,7 @@
 ---
 title: Przenieś Additional IP
 excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprzez API OVHcloud
-updated: 2025-12-22
+updated: 2026-01-21
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 >
 > Migracja dotyczy tylko całych bloków danych. Nie można przenieść pojedynczych adresów IP wewnątrz bloku.
 
-**Dowiedz się, jak przenieść adres Additional IP z Panelu klienta OVHcloud lub poprzez API OVHcloud**
+**W niniejszym przewodniku wyjaśniono, jak przenieść dodatkowy adres IP w Panelu klienta OVHcloud lub za pośrednictwem interfejsu API OVHcloud. Wyjaśniono również, jak przenieść dodatkowy adres IP z konta So you Start na konto OVHcloud.**
 
 ## Wymagania początkowe
 
@@ -61,7 +61,7 @@ Geolokalizacja adresu IP jest niezależna od regionu, z którym jest on powiąza
 
 Jeśli zamówisz dodatkowy blok adresów IP na serwerze, ale wybierzesz inną lokalizację (geolokalizację) dla tego bloku, nie będzie można przenieść go na inny serwer znajdujący się w tym samym kraju. Na przykład dodatkowy blok adresów IP geolokalizowany w Polsce (eu-central-war) i zamówiony na serwerze znajdującym się w francuskim centrum danych (eu-west-gra) nie może zostać przeniesiony na serwer znajdujący się w polskim centrum danych (eu-central-war). Blok adresów IP można przenieść wyłącznie na kwalifikujący się serwer znajdujący się we francuskim centrum danych.
 
-### Przenieś IP w Panelu klienta OVHcloud
+### Przenieś Additional IP w Panelu klienta OVHcloud
 
 > [!warning]
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
@@ -89,7 +89,7 @@ Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 > Aby przenieść bloki adresów IP do określonej sieci vRack, należy skorzystać z **interfejsu zarządzania vRack**, do którego można uzyskać dostęp, otwierając menu `Sieć`{.action} w lewym pasku bocznym, a następnie wybierając opcję `Prywatna sieć vRack`{.action}. 
 >
 
-### Przeniesienie IP przez API
+### Przeniesienie Additional IP przez API
 
 Zaloguj się na stronie WWW [API OVHcloud](/links/api).
 
@@ -113,6 +113,63 @@ Aby przenieść adres IP, użyj następującego połączenia:
 
 - `serviceName`: numer serwera dedykowanego docelowego
 - `ip`: adres Additional IP do przeniesienia
+
+### Przeniesienie Additional adresu IP z konta So you Start na konto OVHcloud
+
+Aby przenieść dodatkowy adres IP z konta SYS na konto OVHcloud, należy wziąć pod uwagę kilka kwestii:
+
+- Przeniesienie Additional adresu IP wiąże się z opłatą instalacyjną. Adres IP nie zostanie przeniesiony, jeśli faktura pozostanie niezapłacona.
+- Nie ma możliwości przeniesienia Additional adresu IP z konta OVHcloud na konto So you Start.
+- Upewnij się, że serwer, na który przenosisz dodatkowy adres IP, znajduje się w tym samym regionie kompatybilnym z adresem IP. Zobacz sekcję "Ograniczenia" poniżej.
+
+Aby rozpocząć, zaloguj się na swoje konto So you Start i kliknij `IP`{.action} na głównym pulpicie nawigacyjnym.
+
+![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+
+Kliknij koło zębate obok odpowiedniego adresu IP i wybierz `Przenieś IP FO`{.action}.
+
+![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+
+Wybierz opcję `Przeniesienia na usługę OVH`, wprowadź identyfikator karty sieciowej i kliknij `Dalej`{.action}.
+
+![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+
+Spowoduje to wygenerowanie kodu (tokenu), który należy zapisać.
+
+![soyoustart to ovh](images/token-id.png){.thumbnail}
+
+Następnie [zaloguj się na swoje konto OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
+
+Kliknij na koło zębate po prawej stronie i wybierz `Importuj adresy IP SYS do OVHcloud`{.action}.
+
+![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+
+Pojawi się okno pop-up, wprowadź dodatkowy adres IP (lub blok) oraz identyfikator tokenu (uzyskany na koncie So you start). Następnie kliknij `Dalej`{.action}.
+
+![soyoustart to ovh](images/Step-1.png){.thumbnail}
+
+Wybierz serwer docelowy i kliknij `Dalej`{.action}. Jeśli serwer dedykowany jest zgodny z adresem IP, pojawi się zielony komunikat. Jeśli nie jest zgodny, pojawi się komunikat o błędzie.
+
+Kliknij `Dalej`{.action}.
+
+![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
+![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+
+W następnym oknie czas trwania zostanie wybrany automatycznie, a opłata zostanie wyświetlona. Kliknij `Dalej`{.action}, aby kontynuować.
+
+![soyoustart to ovh](images/Step-3.png){.thumbnail}
+
+Zaznacz pole „Akceptuję umowy”{.action}, aby wyrazić zgodę na warunki świadczenia usług po ich przeczytaniu. Następnie kliknij `Dalej`{.action}.
+
+![soyoustart to ovh](images/Step-4.png){.thumbnail}
+
+Zapoznaj się z podsumowaniem zamówienia i kliknij `Potwierdź`{.action}, aby je potwierdzić.
+
+![soyoustart to ovh](images/Step-5.png){.thumbnail}
+
+Zostaniesz przekierowany na nową stronę, aby dokonać płatności.
+
+Po dokonaniu płatności dodatkowy adres IP zostanie przeniesiony na Twoje konto OVHcloud i powiązany z wybranym serwerem. Proces ten może potrwać chwilę.
 
 ### Ograniczenia <a name="Limitations"></a>
 

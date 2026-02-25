@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja rewersu DNS instancji Public Cloud"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-updated: 2025-12-22
+updated: 2026-01-06
 ---
 
 ## Wprowadzenie

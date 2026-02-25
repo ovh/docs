@@ -1,7 +1,7 @@
 ---
 title: Creare un backup di un volume
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
-updated: 2025-12-15
+updated: 2026-02-24
 ---
 
 ## Obiettivo
@@ -27,6 +27,10 @@ Il Volume Snapshot e il Volume Backup ti permettono di:
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un [volume Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) scollegato creato nel tuo [progetto Public Cloud](/links/public-cloud/public-cloud)
+
+## Limitazioni
+
+I backup di volumi LUKS cifrati possono essere ripristinati solo sullo stesso tipo di volume LUKS cifrato.
 
 ## Procedura
 

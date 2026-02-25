@@ -67,7 +67,7 @@ Le schéma de partitionnement `default` sera utilisé sauf si un autre est séle
 > La procédure est très similaire [aux autres systèmes d'exploitation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), à l'exception que vous ne pouvez pas cocher la case `Personnaliser la configuration des partitions`{.action} et qu'il y a une liste déroulante pour choisir le schéma de partitionnement à la quatrième et dernière étape.
 >
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager). Depuis l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du système d'exploitation, puis cliquez sur `Installer`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager). Depuis l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du système d'exploitation, puis cliquez sur `Réinstaller mon serveur`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 

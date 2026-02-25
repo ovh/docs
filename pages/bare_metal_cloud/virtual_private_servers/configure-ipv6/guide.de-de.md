@@ -431,13 +431,13 @@ address1=2607:5300:201:abcd::7c5/128
 route1=::/0,2607:5300:201:abcd::1
 ```
 
-#### Persistente Anwendung auf Windows Server** <a name="persistentwindows"></a>
+#### Persistente Anwendung auf Windows Server <a name="persistentwindows"></a>
 
 IPv6 ist standardmäßig nicht auf Windows Servern konfiguriert. Um es zu aktivieren, öffnen Sie die Systemsteuerung und klicken Sie auf `View network status and tasks`{.action} und danach auf `Change adapter settings`{.action}.
 
 ![ipv6 konfigurieren](images/configure-ipv6-step2.png){.thumbnail}
 
-Klicken Sie auf `Ethernet`{.action}, um die Einstellungen zu öffnen, und klicken Sie auf `Properties`{.action}, um das Fenster `Ethernet Properties` anzuzeigen`.
+Klicken Sie auf `Ethernet`{.action}, um die Einstellungen zu öffnen, und klicken Sie auf `Properties`{.action}, um das Fenster `Ethernet Properties` anzuzeigen.
 
 Wählen Sie `Internet Protocol Version 6 (TCP/IPv6)`{.action} aus und klicken Sie dann auf den Button `Properties`{.action}.
 

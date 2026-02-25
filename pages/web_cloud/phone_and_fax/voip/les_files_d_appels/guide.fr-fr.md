@@ -1,7 +1,7 @@
 ---
 title: "Configurer une file d'appels"
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
-updated: 2025-04-28
+updated: 2026-01-22
 ---
 
 ## Objectif
@@ -13,9 +13,8 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 **Découvrez comment configurer intégralement une file d'appels.**
  
 ## Prérequis
- 
+
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros) dans votre compte OVHcloud.
-- Être connecté à l’[espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
@@ -25,21 +24,38 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
-### Étape 1 : appliquer la configuration
+### Étape 1 : Appliquer la configuration « File d'appels »
 
 - Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `File d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
 
 - Si votre numéro a déjà une configuration en place, cliquez sur l'onglet `Configuration`{.action} puis sur `Changer de configuration`{.action}. Sélectionnez ensuite `File d'appels`{.action} et cliquez sur `Paramétrer`{.action}. Vous devrez alors confirmer la perte de la configuration actuellement en place.
 
-![fileappels](images/2022-VoIP-FA-01.png){.thumbnail}
+![fileappels](images/2026-VoIP-FA-01.png){.thumbnail}
 
-### Étape 2 : paramétrer la file d'appels
+> [!primary]
+>
+> Pour appliquer le même type de configuration à plusieurs numéros, cliquez sur `Appliquer à plusieurs numéros`{.action}, sélectionnez les numéros concernés puis cliquez sur `Valider`{.action}.
+> 
+> ![configurationnumeroalias](images/selection-alias-conf.png){.thumbnail}
+>
+> Cliquez sur le bouton `Paramétrer`{.action} et patientez quelques instants pendant l’application du paramétrage.
+>
+> Si vous appliquez le même type de configuration à plusieurs numéros, vous devrez finaliser la configuration sur chacun des numéros concernés.
+
+### Étape 2 : Paramétrer la file d'appels
 
 Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
 

@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connect with PHP
+title: Connect using PHP for Public Cloud Databases for MySQL
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 updated: 2025-05-16
 ---

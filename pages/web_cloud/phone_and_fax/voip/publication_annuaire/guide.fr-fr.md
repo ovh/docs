@@ -22,8 +22,18 @@ Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obl
 
 ## Prérequis
 
-- Disposer d’un [numéro alias](/links/telecom/telephonie-numeros) ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+- Disposer d'un [numéro alias](/links/telecom/telephonie-numeros) ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,7 +45,7 @@ Renseigner vos coordonnées est obligatoire pour l'ensemble de vos lignes et num
 
 Cette démarche est nécessaire pour deux raisons :
 
-- **permettre à OVHcloud d'assurer la liaison vers les bons services d'urgence** : lorsque vous composez un numéro d'urgence sur votre téléphone, votre opérateur assure l'acheminement de cet appel vers le service d'urgence le plus proche de l'adresse d'installation de votre ligne ou de votre numéro ;
+- **permettre à OVHcloud d'assurer la liaison vers les bons services d'urgence** : lorsque vous composez un numéro d'urgence sur votre téléphone, votre opérateur assure l'acheminement de cet appel vers le service d'urgence le plus proche de l'adresse d'installation de votre ligne SIP ;
 
 - **permettre à OVHcloud d'assurer la liaison vers votre nouvel opérateur lors d'une portabilité** : si vous décidez de porter votre numéro chez un autre opérateur, vous devrez alors lui fournir les informations de ce numéro. Celles-ci doivent correspondre aux données renseignées chez OVHcloud.
 
@@ -43,10 +53,7 @@ Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ense
 
 ### Étape 2 : modifier ses coordonnées et demander leur parution
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP ou votre numéro alias.
-1. Cliquez sur la ligne SIP ou le numéro alias concerné.
-1. Positionnez-vous ensuite sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
+Cliquez sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVHcloud. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVHcloud.
 
 ![telephonedirectory](images/manage-telephone-directory-step1.png){.thumbnail}
 
@@ -69,7 +76,7 @@ Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer 
 > Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
 >
 
-Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVHcloud](/links/manager), partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
+Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVHcloud concerné.
 
 Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. Vérifiez alors le statut qui s'affiche : 
 

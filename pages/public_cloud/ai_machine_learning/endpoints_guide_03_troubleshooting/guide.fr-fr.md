@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Dépannage (EN)
 excerpt: "Résoudre les problèmes rencontrés lors de l'utilisation d'AI Endpoints"
-updated: 2025-05-05
+updated: 2026-02-06
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2025-05-05
 
 ## Objective
 
-This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This tutorial provides guidance on how to resolve common issues that may arise when using [AI Endpoints](/links/public-cloud/ai-endpoints).
 
 ## Common questions
 
@@ -21,20 +21,7 @@ All steps for starting with AI Endpoints are described in the [AI Endpoints - Ge
 
 ### How can I stay up-to-date on changes to the AI Endpoints platform?
 
-To stay informed about changes to the AI Endpoints platform, you can consult the [AI Endpoints Changelog](https://endpoints.ai.cloud.ovh.net/changelog). This page is accessible from the AI Endpoints website and provides a comprehensive overview of all modifications to the platform, including new features, models, quantization, documentation improvements, decommissioned models, and bug fixes.
-
-### What parameters can I customize for the Large Language Model (LLM) endpoints in AI Endpoints?
-
-When making a request to the LLMs endpoints in AI Endpoints, you can customize several parameters to tailor the response to your specific needs. Here are the parameters you can customize:
-
-- `max_tokens`: This parameter specifies the maximum number of tokens that will be generated in the response.
-- `temperature`: This parameter controls the randomness of the response. A value of 0 will always return the same response, while a higher value will increase the randomness of the response.
-- `seed`: This parameter specifies the seed for the random number generator. If you specify the same seed and parameters for multiple requests, you will receive the same response.
-- `top_p`: This parameter specifies the probability mass of the smallest set of words that will be sampled. The value must be between 0 and 1.
-
-### I am interested in creating a code assistant with Continue and AI Endpoints. Do you have any documentation on how to set this up?
-
-Yes, we have [a guide that explains how to configure Continue to work with AI Endpoints](/pages/public_cloud/ai_machine_learning/endpoints_tuto_03_code_assistant_continue). Continue is an IDE plugin that allows you to build your own code assistant by using a custom LLM endpoint. This guide will walk you through the steps to configure Continue to work with AI Endpoints, including how to specify the endpoint URL and how to authenticate your requests.
+To stay informed about changes to the AI Endpoints platform, you can follow our announcements on the [#ai-news channel](https://discord.com/channels/850031577277792286/1045441414521180281) of the OVHcloud [Discord server](https://discord.gg/ovhcloud). We provide there a comprehensive overview of all modifications to the platform, including new features, models, improvements, models removals and bug fixes.
 
 ## Error codes and unexpected behaviours
 
@@ -44,7 +31,11 @@ A 401 error code typically indicates that the authorization token specified in t
 
 ### I am trying to use the AI Endpoints models, but I keep getting a 404 error code. What is going on?
 
-A **404** error typically indicates that the model you're trying to access cannot be found. In the case of AI Endpoints, this could mean that the **query path** or the **model name** specified in the request is incorrect.
+A **404** error typically indicates that the model you're trying to access cannot be found. In the case of AI Endpoints, this could mean that the **query path** or the **model name** specified in the request is incorrect, or that the model has been decommissioned.
+
+### Why can't I use my model anymore? I am facing 404 now.
+
+If you are now unable to use a model you were previously using, it might have been decommissioned. OVHcloud AI Endpoints follows a [model lifecycle process](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) to ensure a seamless experience for our customers. As stated in the documentation linked above, we notify you of our decision to retire a model three months in advance, giving you time to prepare for migration.
 
 ### I am trying to use the AI Endpoints models, but I keep getting a 429 error code. What does it mean?
 
@@ -55,7 +46,9 @@ A 429 error code typically indicates that you have exceeded the rate limit for t
 
 If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. 
 
-Alternatively, please **[reach out to us to discuss increasing your limits](https://help.ovhcloud.com/csm?id=csm_get_help )** if you require higher usage.
+### I am trying to use the AI Endpoints models, but I keep getting a 413 error code. What does it mean?
+
+If you exceed our maximum input payload limits, you will receive a 413 error code (too long text, large image, long or large audio file).
 
 ### When using AI Endpoints, I am facing "Resource tag 'discovery' is forbidden"
 

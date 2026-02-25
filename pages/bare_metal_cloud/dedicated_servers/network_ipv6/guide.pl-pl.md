@@ -105,7 +105,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >
 
 > [!tabs]
-> **Debian i jego pochodne (z wyjątkiem Debiana 12)**
+> **Debian i jego pochodne (z wyjątkiem Debian 12)**
 >>
 >> Poniższy przykład konfiguracji opiera się na dystrybucji Debian 11 (Bullseye).
 >>
@@ -224,6 +224,8 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >> ```
 >>
 > **Fedora 42+, AlmaLinux & Rocky Linux (10)**
+>>
+>> Poniższy przykład konfiguracji oparty jest na Fedora 42.
 >>
 >> Fedora używa teraz plików kluczy (*keyfiles*).
 >> Fedora wcześniej używała profili sieciowych przechowywanych przez NetworkManager w formacie ifcfg w katalogu `/etc/sysconfig/network-scripts/`.<br>
@@ -423,8 +425,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >>
 > **AlmaLinux (8/9) i Rocky Linux (8/9)**
 >>
->> Poniższa przykładowa konfiguracja oparta jest na systemie CentOS 7.
->>
+>> Poniższa przykładowa konfiguracja oparta jest na systemie AlmaLinux 9.
 >> Plik konfiguracji sieci znajduje się w katalogu `/etc/sysconfig/network-scripts`. W naszym przykładzie nosi on nazwę `ifcfg-eth0`.
 >>
 >> **Krok 1: połączenie z serwerem przy użyciu protokołu SSH**

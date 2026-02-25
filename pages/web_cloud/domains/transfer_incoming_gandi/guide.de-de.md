@@ -1,7 +1,7 @@
 ---
 title: "Gandi-Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie einen Gandi-Domainnamen zu OVHcloud transferieren"
-updated: 2024-06-28
+updated: 2026-02-10
 ---
 
 ## Ziel

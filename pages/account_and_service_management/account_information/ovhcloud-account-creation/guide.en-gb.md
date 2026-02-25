@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2025-12-16
+updated: 2026-01-22
 ---
 
 ## Objective
@@ -13,25 +13,30 @@ You can create an account before or during the order process for your first OVHc
 
 ## Requirements
 
-- a valid and accessible email address
+- A valid and accessible email address
 
 ## Instructions
 
 ### How do I create my OVHcloud account?
 
-To create an OVHcloud account, simply go to [this page](/links/manager) and fill in the online form.
+To create an OVHcloud account, go to [this page](/links/manager) and click `Create an account`{.action}.
 
-![account creation form](images/account-creation.png){.thumbnail}
+![Create an account](images/account-creation-EN-01.png){.thumbnail}
+
+Enter your country of tax residence, your currency, and the language you would like to use to manage your services in the OVHcloud Control Panel. Then click `Confirm`{.action}.
+
+![Create an account](images/account-creation-EN-02.png){.thumbnail}
+
+Then enter your email address and create a password for accessing your OVHcloud account.
 
 |Information|Description|
 |---|---|
-|First name - Surname|Enter first name and last name here.|
-|Email address|Enter a **valid email address that you currently have access to**.<br><br>Avoid using an email address linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications.|
+|Email address|Enter a **valid email address that you currently have access to**.<br><br>Avoid using an email address linked to a domain name that you will manage from this OVHcloud account. If your domain is blocked, you will no longer receive our notifications.|
 |Password|Your password must be unique (created and used only for your OVHcloud account) and sufficiently complex.<br><br>Please refer to [our guide on password management](/pages/account_and_service_management/account_information/manage-ovh-password) for tips on creating an effective password.|
 
 Once you have completed this first form, a one-time code will be sent to the email address you have entered. This code will validate your email address. Enter it in the boxes provided.
 
-![single-use code](images/code.png){.thumbnail}
+![single-use code](images/code-EN.png){.thumbnail}
 
 > [!primary]
 > If you did not receive the email containing the code, check the spam folder of your email account.
@@ -66,8 +71,16 @@ Your NIC-handle is what you will need to use in order to:
 - manage all of your services easily via the OVHcloud Control Panel
 - identify your customer account when you contact OVHcloud support, so that they can answer your queries.
 
-> [!warning]
+> [!success]
+> 
 > Make a note of your NIC handle, as you will need it for each time you log in to your account.
+>
+> **Tips: Use a password manager**
+>
+> You can use specific software programs to save and secure your OVHcloud account credentials (NIC handle and password).<br>
+> For example, you can use the password manager **KeePass**. It is a free, open-source, popular password manager.<br>
+> It is simple to use, and involves setting a master password — which must meet a complexity requirement — then using the master password to access a database containing all of your usernames and passwords. You can make the passwords stored in the database highly complex, because the software program will store them.<br>
+> The software can also generate random complex passwords, which it will save for all of the websites and applications you use.
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
-title: "Como configurar a apresentação do WHOIS de um domínio?"
-excerpt: "Saiba como apresentar ou ocultar certas informações contidas no WHOIS de um domínio a partir da Área de Cliente OVHcloud"
-updated: 2025-06-23
+title: "Como configurar a apresentação do WHOIS de um nome de domínio?"
+excerpt: "Saiba como apresentar ou ocultar certas informações contidas no WHOIS de um nome de domínio a partir da Área de Cliente OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Objetivo
@@ -16,9 +16,9 @@ Por exemplo, pode encontrar as seguintes informações (lista não exaustiva):
 - Estado (criado, bloqueado, expirado, etc.).
 - Etc.
 
-Durante a utilização do domínio, poderá ser necessário mostrar ou ocultar algumas informações presentes no WHOIS.
+Durante a utilização do nome de domínio, poderá ser necessário mostrar ou ocultar algumas informações presentes no WHOIS.
 
-**Saiba como apresentar ou ocultar determinadas informações contidas no WHOIS de um domínio a partir da Área de Cliente OVHcloud.**
+**Saiba como apresentar ou ocultar determinadas informações contidas no WHOIS de um nome de domínio a partir da Área de Cliente OVHcloud.**
 
 ## Requisitos
 
@@ -45,27 +45,25 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >>
 > **Etapa 2**
 >>
->> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Clique no menu `Nomes de domínios`{.action} e escolha o nome de domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, na caixa **Segurança**, clique no botão `Configurar a visualização do WHOIS`{.action}.
+>> Na página que se abrir, na caixa **Configuração**, clique no botão `Gerir la proteção de dados`{.action}.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> Na nova página que aparece, poderá escolher `Mostrar` ou `Ocultar` as informações relativas aos contactos proprietário, administrador e técnico do nome de domínio, no limite das ações autorizadas pelo registry gestor da extensão.
+>> Na nova página que aparece, poderá escolher `Mostrar` ou `Ocultar` as informações relativas aos contactos titular, administrador e técnico do nome de domínio, no limite das ações autorizadas pelo registry gestor da extensão.
 >>
->> Para cada um dos 3 contactos, selecione a opção `Gerir a visualização campo a campo`{.action} para obter mais opções.
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
+>> Depois de fazer as suas escolhas, clique no botão `Validar`{.action}.
 >>
->> Depois de fazer as suas escolhas, clique no botão `Registar as modificações`{.action}.
->>
->> As alterações podem ser aplicadas até **48** horas. Estas alterações apenas serão aplicadas **se forem autorizadas pelo agente de registo responsável pela extensão do seu domínio**.
+>> As alterações podem ser aplicadas até **48** horas. Estas alterações apenas serão aplicadas **se forem autorizadas pelo agente de registo responsável pela extensão do seu nome de domínio**.
 
 ## Quer saber mais?
  

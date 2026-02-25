@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutoriel - Construire une application Strapi connectée au service OVHcloud Managed PostgreSQL (EN)
+title: Construire une application Strapi connectée a Public Cloud Databases pour PostgreSQL (EN)
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
 updated: 2021-01-11
 ---

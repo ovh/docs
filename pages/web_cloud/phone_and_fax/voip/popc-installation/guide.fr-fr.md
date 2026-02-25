@@ -17,7 +17,17 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 - Disposer d'un PC sous Windows (7, 8, 10).
 - Disposer de la [solution POPC OVHcloud](/links/telecom/telephonie-standard) ainsi que de la ligne SIP associée.
 - **Uniquement pour la version d'essai de POPC** : disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone Plug & Phone associé.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,12 +45,9 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 
 #### Login et domain
 
-Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous :
+Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 

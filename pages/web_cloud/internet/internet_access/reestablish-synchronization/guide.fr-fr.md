@@ -12,7 +12,7 @@ Une coupure de synchronisation est généralement occasionnée par un élément 
 
 > [!primary]
 >
-> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+> Pour vous accompagner au mieux dans le rétablissement de vos services, vous avez également la possibilité d'utiliser notre assistant de dépannage. Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx) dans la section « Télécom ». Une fois positionné sur l'accès Internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 >
 
 ## Prérequis
@@ -33,7 +33,7 @@ Ces quelques vérifications peuvent vous permettre de savoir si le dysfonctionne
 
 #### 1. Si un incident déclaré est en cours
 
-Rendez-vous sur la page <https://status.isp.ovh.net/> et vérifiez si votre accès est affecté par incident en cours. Dès lors, deux possibilités :
+Rendez-vous sur la page <https://status.isp.ovhcloud.com/> et vérifiez si votre accès est affecté par incident en cours. Dès lors, deux possibilités :
 
 - **votre accès est affecté** : prenez connaissance des éléments renseignés sur la page, puis patientez le temps de la résolution de l'incident;
 

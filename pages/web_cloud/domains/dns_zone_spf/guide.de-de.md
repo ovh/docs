@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Sicherheit durch SPF-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre Domain konfigurieren, um die Sicherheit Ihrer E-Mails zu verbessern
-updated: 2024-09-05
+updated: 2026-02-10
 ---
 
 <style>

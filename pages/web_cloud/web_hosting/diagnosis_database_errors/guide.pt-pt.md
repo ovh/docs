@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados às bases de dados" 
 excerpt: "Diagnosticar os casos mais comuns de erros associados às bases de dados"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 **Objetivo**
@@ -19,7 +19,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](/links/web/hosting) OVHcloud.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma das nossas ofertas de bases de dados [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
 
@@ -31,16 +31,16 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 #### Verificar os incidentes em curso
 
-Em [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), verifique primeiro se o seu datacenter, cluster de alojamento ou servidor Web Cloud Databases não está afetado por um incidente na infraestrutura OVHcloud.
+Verifique, em primeiro lugar, na página [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) se o seu datacenter, o seu cluster de alojamento web, o seu servidor Web Cloud Databases ou a sua base de dados não estão afetados por um incidente na infraestrutura OVHcloud.
 
 > [!primary]
 >
 > Para encontrar estas informações, aceda à [Área de Cliente OVHcloud](/links/manager), na parte `Web Cloud`{.action}:
 >
-> - Para encontrar o `Datacenter` do seu alojamento, bem como o seu `Filer` (servidor de ficheiro), escolha os `Alojamentos`{.action} e, a seguir, o alojamento em causa. Encontrará estas informações no separador `Informações gerais`{.action}.
-> - Para encontrar o **cluster** de servidores em que se encontra o seu alojamento, clique no separador `FTP-SSH`{.action}. Esta informação aparecerá no nome do seu `Servidor FTP`.
+> - Para encontrar o `Datacenter` do seu alojamento web, selecione `Alojamentos`{.action}, depois o alojamento web em questão. Encontrará esta informação no separador `Informações gerais`{.action}.
+> - Para encontrar o **cluster** de servidores e o **filer** (servidor de ficheiros) do seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Para encontrar o nome do seu servidor **Web Cloud Databases**, clique em `Web Cloud Databases`{.action} e, a seguir, na oferta em causa. Encontrará esta informação no separador `Informações gerais`{.action}.
->
+> - Para encontrar o servidor onde se encontra a sua base de dados incluída ou adquirida como complemento através do seu [alojamento web](/links/web/hosting), consulte [este guia](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verificar os dados de acesso à sua base de dados <a name="config_file"></a>
 

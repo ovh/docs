@@ -106,7 +106,7 @@ Istnieje kilka metod konfiguracji IPv6. W zależności od Twojego przypadku prze
 - [Konfiguracja nietrwała](#nonpersistent).
 - [Konfiguracja trwała dla systemu Debian i pochodnych (Ubuntu, Crunchbang, SteamOS, itp.)](#persistentdebian).
 - [Konfiguracja trwała dla systemu Redhat i pochodnych (CentOS, Rocky Linux, AlmaLinux, itp.)](#persistentredhat).
-- [Konfiguracja trwała dla Fedora 42 i nowszych wersjach](#persistentfedora)
+- [Konfiguracja trwała dla Fedora 42 i nowszych wersjach](#persistentfedora).
 - [Konfiguracja trwała dla Windows Server](#persistentwindows).
 
 #### Konfiguracja nietrwała <a name="nonpersistent"></a>

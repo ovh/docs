@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox ?'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2025-12-12
+updated: 2026-01-21
 ---
 
 ## Objectif
@@ -11,7 +11,16 @@ Découvrez comment mettre à jour votre appareil OverTheBox, afin de profiter de
 ## Prérequis
 
 - Disposer d'un service **OverTheBox** fourni par OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
+<!-- CP-NAV-START:telecom-otb -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [OverTheBox](/links/control-panel/telecom-otb)
+- **Pour accéder à vos services :** `Télécom`{.action} > `OverTheBox`{.action} > Sélectionnez votre service
+
+---
+<!-- CP-NAV-END:telecom-otb -->
 
 ## En pratique
 
@@ -22,9 +31,7 @@ La méthode recommandée est de mettre à jour votre appareil OverTheBox depuis 
 L'OverTheBox est un projet open-source hébergé sur la plateforme GitHub. Le code est librement accessible et vous permet de consulter concrètement ce qui change entre chaque version.
 La version d'un appareil est au format [semver](https://semver.org/lang/fr/), vous pouvez consulter la version actuellement installée sur votre appareil depuis l'espace client.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
 Le champ `Version du matériel` indique la version actuellement installée sur votre appareil. Elle est basée sur les tags du [dépôt git overthebox](https://github.com/ovh/overthebox/tags).
 
@@ -32,9 +39,7 @@ Le champ `Version du matériel` indique la version actuellement installée sur v
 
 ### Vérifier si une mise à jour est disponible
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
 Si une mise à jour est disponible, une bannière s'affiche comme sur l'image ci-dessous.
 
@@ -47,9 +52,7 @@ Si une mise à jour est disponible, une bannière s'affiche comme sur l'image ci
 > Cette action n'est possible que si votre appareil contacte notre serveur de provisionning. Si ce n'est pas le cas, vous devez effectuer une [installation manuelle](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel).
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez mettre à jour.
 
 Cliquez ensuite sur le bouton `Mettre à jour`{.action}, puis cliquez une seconde fois sur l'encart explicatif, la mise à jour commencera alors.
 
@@ -76,9 +79,7 @@ D'autre canaux sont disponibles :
 - Le canal `beta` permet de tester la prochaine version du logiciel avant le déploiment sur le canal `stable`.
 - Les canaux de versions, comme `v0.9`, `v1.0`, permettent de maintenir votre matériel sur une version majeure précise. Seules des mises à jour mineures, telles que des correctifs, seront proposées.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez modifier.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez modifier.
 
 Selectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions disponibles`{.action}.
 
@@ -88,9 +89,7 @@ Selectionnez ensuite le canal souhaité à l'aide du menu déroulant `Versions d
 
 Par défaut, un appareil OverTheBox est mis à jour automatiquement la nuit si une nouvelle version du logicielle est disponible. Vous pouvez désactiver cette fonctionnnalité depuis l'espace client.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez modifier.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-otb), sélectionnez le service OverTheBox que vous souhaitez modifier.
 
 Activez ou désactivez les mise à jour automatique à l'aide de l'interrupteur `Autoriser les mises à jour automatiques la nuit`{.action}.
 
@@ -132,9 +131,9 @@ Dans ce cas, les recommandations sont les suivantes :
 | v0.8_deprecated | v0.8.3 | 19.07.10 | 4.14.276 | v0.94 | &#10060; | nuc, ITv1, rpi3 |
 | v0.9 | v0.9.7 | 21.02.5 | 5.4.217 | v0.96 | &#10060; | v2b, v2c |
 | v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |
-| v1.1 | v1.1.2 | 24.10.1 | 6.6.86 | v1 | &#9989; | v3lte, v3, v2b, v2c |
+| v1.1 | v1.1.3 | 24.10.2 | 6.6.93 | v1 | &#9989; | v3lte, v3, v2b, v2c |
 | stable | v1.0.4 | 23.05.5 | 5.15.167 | v1 | &#10060; | v3lte, v3, v2b, v2c |
-| beta | v1.1.2 | 24.10.1 | 6.6.86 | v1 | &#9989; | v3lte, v3, v2b, v2c |
+| beta | v1.1.3 | 24.10.2 | 6.6.93 | v1 | &#9989; | v3lte, v3, v2b, v2c |
 
 ### Revenir sur une version antérieure
 

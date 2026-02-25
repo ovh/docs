@@ -1,7 +1,7 @@
 ---
 title: 'Windows Server Product Key ändern'
 excerpt: 'So passen Sie den Product Key Ihres Windows Servers an'
-updated: 2022-07-07
+updated: 2025-01-06
 ---
 
 ## Ziel
@@ -12,7 +12,7 @@ Bei der Installation eines Windows Server Betriebssystems kann es vorkommen, das
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/os/server-windows/) mit Windows-Betriebssystem in Ihrem Kunden-Account.
+- Sie haben einen OVHcloud [Dedicated Server](/links/bare-metal/os) mit Windows Server oder eine virtuelle Maschine mit Windows Server auf einem [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses) Dienst.
 - Sie verfügen über eine SPLA-Windows-Lizenz in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff auf Ihren Server über Remotedesktop-Verbindung.
 
@@ -37,7 +37,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -upk
 Sie können nun den neuen Key hinzufügen. Öffnen Sie hierzu erneut den `Ausführen`{.action}-Dialog und geben Sie folgenden Befehl ein:
 
 ```bash
-cscript.exe c:\windows\system32\slmgr.vbs -ipk CLEF KMS
+cscript.exe c:\windows\system32\slmgr.vbs -ipk PRODUCT KEY
 ```
 
 Die Product Keys für unterstützte Versionen von Windows Server finden Sie in der Tabelle auf der [offiziellen Webseite von Microsoft](https://learn.microsoft.com/en-gb/windows-server/get-started/kms-client-activation-keys).
@@ -70,4 +70,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

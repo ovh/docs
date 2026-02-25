@@ -1,7 +1,7 @@
 ---
 title: "How do I configure the WHOIS display for a domain name?"
 excerpt: "Find out how to show or hide certain information contained in a domain name's WHOIS in your OVHcloud Control Panel"
-updated: 2025-06-23
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -51,19 +51,17 @@ Click on the tabs below to view each of the **4** steps.
 >>
 > **Step 3** 
 >>
->> On the page that pops up, in the **Security** box, click the `Configure WHOIS listing`{.action} button.
+>> On the page that pops up, in the **Configuration** box, click the `Managing data protection`{.action} button.
 >>
->> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
 > **Step 4**
 >>
->> On the new page that pops up, you can choose to `Display` or `Hide` the information relating to the owner, administrator and technical contacts of the domain name, subject to the actions authorized by the registry managing the extension.
+>> On the new page that pops up, you can choose to `Display` or `Hide` the information relating to the holder, administrator and technical contacts of the domain name, subject to the actions authorized by the registry managing the extension.
 >>
->> For each of the 3 contacts, tick the `Manage listing by field`{.action} box to get more options.
+>> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection/configure-data-protection-in-drawer.png){.thumbnail}
 >>
->> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
->>
->> Once you have made your choices, click the `Save the changes`{.action} button.
+>> Once you have made your choices, click the `Confirm`{.action} button.
 >>
 >> Changes may take up to **48** hours to take effect. These changes will only be applied **if authorized by the registry managing your domain name extension**.
 

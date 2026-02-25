@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage. 
+La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage.
 
 Pour plus d'explications, consultez nos guides suivants :
 
@@ -37,25 +37,25 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 **Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si celui-ci utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 >>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >>
 >> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
@@ -63,11 +63,11 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 > [!success]
 >
-> Pour savoir si vous utilisez ou non les serveurs DNS d'OVHcloud, ceux-ci ont l'une des 2 formes suivantes : 
+> Pour savoir si vous utilisez ou non les serveurs DNS d'OVHcloud, ceux-ci ont l'une des 2 formes suivantes :
 >
 > - `nsXX.ovh.net` et `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` désigne un chiffre compris entre **0** et **9**)
 > - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options))
-> 
+>
 > Si besoin, consultez notre guide relatif aux [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) pour plus d'informations.
 
 ## En pratique
@@ -77,32 +77,32 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **6** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
 >> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
->> Cliquez sur le bouton `Gérer les accès`{.action}, puis sur `Créer un identifiant`{.action}. 
+>> Cliquez sur le bouton `Gérer les accès`{.action}, puis sur `Créer un identifiant`{.action}.
 >>
 >> ![DynHost tab empty](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png){.thumbnail}
 >>
-> **Etape 5**
->> 
+> **Étape 5**
+>>
 >> Dans la fenêtre qui s'affiche, complétez les informations demandées :
 >>
 >> |Informations|Description|
@@ -118,7 +118,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> ![Create a DynHost username](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 >>
-> **Etape 6**
+> **Étape 6**
 >>
 >> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle.
 >>
@@ -134,31 +134,31 @@ La seconde étape consiste à créer l'enregistrement DNS qui devra être mis à
 Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **5** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
 >> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Cliquez sur le bouton `Ajouter un DynHost`{.action}.
 >>
 >> ![DynHost tab empty](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png){.thumbnail}
 >>
-> **Etape 5**
+> **Étape 5**
 >>
 >> Dans la fenêtre qui s'affiche, complétez les informations demandées :
 >>
@@ -166,7 +166,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >> |---|---|
 >> |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost.<br><br>**Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
 >> |IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé.<br><br>Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.<br><br>Une seule adresse IP doit être renseignée dans ce formulaire.|
->> 
+>>
 >> > [!warning]
 >> >
 >> > Pour la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un *wildcard* (en placant uniquement le caractère `*`) dans le formulaire `Sous-domaine`{.action} est indisponible.
@@ -188,11 +188,11 @@ Une fois l'[utilisateur](#step1) et l'[enregistrement DynHost](#step2) créés, 
 
 > [!warning]
 >
-> L'installation et la configuration du logiciel/client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet. 
+> L'installation et la configuration du logiciel/client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet.
 > Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-Il existe plusieurs possibilités concernant le logiciel/client : 
+Il existe plusieurs possibilités concernant le logiciel/client :
 
 - il peut être installé sur votre serveur ou sur votre ordinateur ;
 - il peut déjà être disponible dans l'interface de votre routeur/*box* Internet si ce dernier est compatible. Si vous éprouvez des difficultés dans ce cas de figure, rapprochez du support de votre **FAI** pour effectuer la configuration.
@@ -213,25 +213,25 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
 >> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Vérifiez l'adresse IP qui apparaît dans la colonne `Cible`{.action}.
 >>

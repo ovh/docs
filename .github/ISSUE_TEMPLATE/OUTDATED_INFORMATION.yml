@@ -1,0 +1,22 @@
+name: Outdated information
+description: Create a new issue for an outdated information.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Provide a general summary of the issue in the Title above
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: |
+        Please search to see if an issue already exists for the bug you encountered.          
+        If so, you can create a sub-issue.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of the outdated information with the list of concerned file(s)/URL(s).
+    validations:
+      required: true

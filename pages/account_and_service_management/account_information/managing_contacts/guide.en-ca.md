@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 
 There are three different contact types:
 
-- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the owner of a service, such as domain names, for example.
+- **The administrative contact** manages a service’s administrative and technical aspects. They have rights to modify all contacts, and can make changes to information belonging to the holder of a service, such as domain names, for example.
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
 
@@ -31,6 +31,7 @@ There are three different contact types:
 - Appropriate rights for the service concerned.
 - The new contact’s email address.
 - No outstanding payments on billing contacts.
+- The new billing contact must have a valid payment method in their OVHcloud account.
 
 ## Instructions
 

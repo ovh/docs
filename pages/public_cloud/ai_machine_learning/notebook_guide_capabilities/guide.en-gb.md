@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-updated: 2025-10-07
+updated: 2026-01-27
 ---
 
 > [!primary]
@@ -139,7 +139,11 @@ When attaching data volumes to your AI Notebooks, you can use storage from Publi
 
 #### Maximum execution time
 
-There is no duration limitation on AI Notebooks execution.
+> [!warning]
+>
+> There is no duration limitation on AI Notebooks execution.
+>
+> However, by default, your AI Notebook will automatically shut down after **7 consecutive days of being in a RUNNING state**. All your settings and data are preserved and you can start it again anytime. You can also enable **Automatic Restart** to have it restart every 7 days, or contact [our support](/links/support-contact) to extend this period to **28 days**.
 
 ### Live-code editors
 
@@ -187,11 +191,13 @@ If you want to build and use a custom Docker image, you can do it with AI Traini
 
 #### Available ports to public network
 
-Each notebook has a public URL, by default this URL accesses the port 8080 of the notebook. The default port cannot be changed.
+Each notebook exposes a public URL that defaults to port `8080`. This default port cannot be changed.
 
-Notebook URL for accessing the default port (starting with the notebook's ID):
+This public URL starts with the notebook's ID (filled with 0 here) and looks like the following:
 
 -   https://00000000-0000-0000-0000-000000000000.notebook.gra.ai.cloud.ovh.net
+
+However, you can access other ports than the default `8080` by appending its number to your notebook URL. For example, if you want to access port `8501` from your notebook, you will have to add `-8501` to your notebook URL. Your notebook URL for accessing the `8501` port will then be https://00000000-0000-0000-0000-000000000000-8501.job.gra.ai.cloud.ovh.net/
 
 Only the HTTP layer is accessible.
 

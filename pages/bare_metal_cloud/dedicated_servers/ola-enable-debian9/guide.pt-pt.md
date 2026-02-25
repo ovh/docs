@@ -1,14 +1,14 @@
 ---
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9 a 11'
 excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Debian 9 a 11'
-updated: 2024-11-26
+updated: 2026-01-09
 ---
 
 ## Sumário
 
 A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.
 
-**Neste manual, explicaremos como ligar as suas NIC para as utilizar para o OLA em Debian 9 a 11.**
+**Descubra como agrupar as suas NIC (Network Interface Controller) para utilizá-las com o serviço OLA no Debian (versões 9 a 11).**
 
 ## Requisitos
 
@@ -22,6 +22,13 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas par
 > ```
 > apt install ifenslave
 > ```
+>
+
+> [!primary]
+>
+> Este guia fornece instruções para configurar a agregação de interfaces de rede especificamente com `ifupdown`, cujo ficheiro de configuração é `/etc/network/interfaces`. Ele também é aplicável ao modo de recuperação.
+>
+> Se a configuração de rede do seu sistema usa `Netplan`, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 >
 
 ## Instruções
@@ -58,6 +65,7 @@ Um ficheiro de texto vazio aparecerá. Para configurar a interface de ligação,
 auto bond0
 iface bond0 inet static
   address 10.0.0.1/24
+  hwaddress ether 00:11:22:33:44:55
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-lacp-rate fast
@@ -65,6 +73,11 @@ iface bond0 inet static
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
+
+> [!primary]
+>
+> Para o parâmetro `hwaddress`, recomendamos usar o menor dos dois endereços MAC das suas NICs, pois ele pertence à interface reserva (fallback) LACP.
+>
 
 > [!primary]
 >

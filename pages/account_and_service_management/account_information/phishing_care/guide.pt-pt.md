@@ -1,7 +1,7 @@
 ---
 title: 'Phishing - Como identificar e-mails ou SMS fraudulentos?'
 excerpt: 'Como identificar um e-mail de phishing e o que fazer se clicar num link fraudulento?'
-updated: 2025-12-18
+updated: 2026-01-06
 ---
 
 <style>
@@ -49,7 +49,7 @@ Clique na imagem para ampliá-la. Encontre os detalhes e explicações na tabela
 |---|---|---|
 |1 - Remetente|Verifique se o endereço usado para enviar o e-mail termina com um nome de domínio (ou subdomínio, por exemplo `events.ovhcloud.com` ) pertencente à OVHcloud (consulte a lista abaixo)|O remetente do e-mail será provavelmente um endereço que não vem da OVHcloud.|
 |2 - Assunto|Verifique se o seu identificador **(que começa normalmente pelas iniciais da pessoa que criou a conta OVHcloud)** e/ou o endereço de e-mail da sua conta aparecem no assunto da mensagem.|Muitas vezes, o e-mail será marcado como \[SPAM] e **o seu identificador não aparecerá ou será incorreto**.|
-|3 - Link|**Sem clicar nele, passe o ponteiro do rato sobre o link ou botão** e verá diretamente o destino (abaixo ou no fundo do seu navegador). No nosso exemplo, o link leva corretamente para um endereço https://www.ovh.com/.|Num e-mail de phishing, o link não será o de uma página oficial da OVHcloud. **Não clique nele.**|
+|3 - Link|**Sem clicar nele, passe o ponteiro do rato sobre o link ou botão** e verá diretamente o destino (abaixo ou no fundo do seu navegador). No nosso exemplo, o link leva corretamente para um endereço https://www.ovh.com/. Quando clicar numa ligação, verifique sempre o endereço no browser. A OVHcloud utiliza um conjunto de nomes de domínio reconhecíveis, geralmente ovhcloud.com ou ovh.com (ver lista abaixo). |Num e-mail de phishing, o link não será o de uma página oficial da OVHcloud. **Não clique nele.**|
 |4 - Cabeçalho e rodapé do e-mail|A OVHcloud envia e-mails nos formatos TXT e HTML. O cabeçalho conterá o logótipo da OVHcloud, o rodapé do e-mail conterá informações legais relacionadas com a OVHcloud|É possível que o cabeçalho ou o rodapé contenham links que nada têm a ver com a OVHcloud. **Não clique nesses links.**|
 
 /// details | **Lista de nomes de domínios OVHcloud legítimos** (clique para exibir)

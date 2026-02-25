@@ -133,7 +133,7 @@ As contas que ainda não foram configuradas aparecem na tabela como “*@configu
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza o webmail **Outlook Web App** (OWA). Pode aceder através do endereço [Webmail](/links/web/email), inserindo as credenciais do seu endereço de e-mail. Para mais informações, [consulte os manuais da OVHcloud](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em ‘Guardar‘ {.action} para continuar.
+Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em `Guardar`{.action} para continuar.
 
 > [!primary]
 >

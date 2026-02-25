@@ -149,7 +149,7 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 >
 
 > [!tabs]
-> **Configuración utilizando archivos *interfaces***
+> **Configuración de los archivos *interfaces***
 >>
 >> Por defecto, los ficheros de configuración se encuentran en `/etc/network/interfaces.d/`.
 >>

@@ -1,12 +1,8 @@
 ---
-title: 'Cambiar la clave de activación de Windows Server'
+title: 'Cómo cambiar la clave de activación de Windows Server'
 excerpt: 'Cómo cambiar la clave de activación de Windows Server'
-updated: 2022-07-07
+updated: 2026-01-06
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -16,7 +12,7 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/os/server-windows/) con Windows instalado en su cuenta OVHcloud
+- Disponer de un [servidor dedicado OVHcloud](/links/bare-metal/os) que ejecute Windows Server o de una máquina virtual que ejecute Windows Server en un servicio [Managed VMware](/links/hosted-private-cloud/vmware-images-licenses).
 - Disponer de una licencia Windows SPLA en su cuenta de OVHcloud
 - Tener acceso administrativo al servidor a través de una conexión de escritorio remoto
 
@@ -72,5 +68,5 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Más información
-  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

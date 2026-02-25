@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Connectez-vous avec MongoDB Compass (EN)
+title: Se connecter depuis Compass au service Public Cloud Databases pour MongoDB (EN)
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
 updated: 2025-01-06
 ---

@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Dépannage (EN)
 excerpt: Principales erreurs et comment dépanner votre AI Notebooks
-updated: 2023-12-14
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -156,9 +156,15 @@ If you want to build and use a custom Docker image, you can do it with AI Traini
 
 ### What are the available ports to public network?
 
-Each notebook has a public URL. By default this URL accesses the port 8080 of the notebook. The default port cannot be changed.
+Each notebook exposes a public URL that defaults to port `8080`. This default port cannot be changed.
 
-However, you can access other ports by appending them to the URL. For example, the notebook URL (starting with the notebook's ID, filled with 0 here) for accessing the 8501 port is https://00000000-0000-0000-0000-000000000000-8501.job.gra.ai.cloud.ovh.net/
+This public URL starts with the notebook's ID (filled with 0 here) and looks like the following:
+
+-   https://00000000-0000-0000-0000-000000000000.notebook.gra.ai.cloud.ovh.net
+
+However, you can access other ports than the default `8080` by appending its number to your notebook URL. For example, if you want to access port `8501` from your notebook, you will have to add `-8501` to your notebook URL. Your notebook URL for accessing the `8501` port will then be https://00000000-0000-0000-0000-000000000000-8501.job.gra.ai.cloud.ovh.net/
+
+Only the HTTP layer is accessible.
 
 ### CLI: My notebook is in "failed" status
 
@@ -176,13 +182,13 @@ You will know if the `failed` status is related to data synchronization and whic
 
 ### How long can I use my AI Notebook?
 
-An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
+An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 consecutive days of being in a RUNNING state**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project. Alternatively, you can contact [our support](/links/support-contact) to extend the automatic restart period from **7** to **28 days**, ensuring minimal disruption to your workflow.
 
 ### My notebook shut down unexpectedly
 
 While we are doing our best to avoid this situation, like with any services in the world, outages can happen.
 
-Please open a ticket to our support.
+Please open a ticket to [our support](/links/support-contact).
 
 If your notebook has shut down unexpectedly, it may be due to an issue in our backend. Usually, your remote data is safe and will be synchronized in Public Cloud Object Storage.
 
