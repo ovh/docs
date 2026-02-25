@@ -1365,7 +1365,7 @@
                 + [Capabilities and Limitations of Public Cloud Analytics with ClickHouse](public_cloud/data_analytics/analytics/clickhouse_capabilities_limitations)
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
                 + [Getting started with Public Cloud Analytics with ClickHouse](public_cloud/data_analytics/analytics/clickhouse_getting_started)
-                + [ClickHouse - How to create a ClickHouse cluster](public_cloud/data_analytics/analytics/clickhouse_create_cluster)
+                + [How to create a ClickHouse cluster](public_cloud/data_analytics/analytics/clickhouse_create_cluster)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
         + [Kafka](products/public-cloud-data-analytics-kafka)
