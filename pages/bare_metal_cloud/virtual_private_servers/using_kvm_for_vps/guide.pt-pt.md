@@ -87,6 +87,8 @@ Pode ativar a configuração de teclado desejada para facilitar a utilização d
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
+Se necessário, instale o pacote primeiro através do gestor de pacotes da sua distribuição (`sudo dnf install keyboard-configuration` ou `sudo apt install keyboard-configuration`).
+
 Abre-se um menu gráfico no qual pode selecionar um modelo de teclado.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}

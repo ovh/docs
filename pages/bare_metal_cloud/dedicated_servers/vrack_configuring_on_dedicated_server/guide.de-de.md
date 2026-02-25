@@ -1,7 +1,7 @@
 ---
 title: "vRack für Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten"
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 ## Ziel
@@ -76,15 +76,17 @@ In der mit ```link ether``` beginnenden Zeile können Sie verifizieren, dass das
 link ether f0:00:00:ef:0e:f0
 ```
 
+Zu Beispielzwecken verwenden wir den IP-Adressbereich `192.168.0.0/16` (**Subnetzmaske**: `255.255.0.0`).
+
 #### GNU/Linux Konfigurationen
 
 > [!tabs]
-> **Debian (außer Debian 12)**
+> **Debian 11**
 >> 
 >> Bearbeiten Sie mit einem beliebigen Texteditor die Netzwerkkonfigurationsdatei in `/etc/network/interfaces.d`. Hier heißt die Datei `50-cloud-init`:
 >>
 >> ```bash
->> editor /etc/network/interfaces.d/50-cloud-init
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
 >> Fügen Sie der vorhandenen Konfiguration die folgenden Zeilen hinzu. Ersetzen Sie `NETWORK_INTERFACE`, `IP_ADDRESS` und `NETMASK` durch eigene Werte:
@@ -110,7 +112,7 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Wiederholen Sie diesen Vorgang für Ihre anderen Server und weisen Sie jedem Server eine noch ungenutzte IP-Adresse aus Ihrem privaten Bereich zu. Ihre Server können dann über das private Netzwerk untereinander kommunizieren.
 >>
-> **Ubuntu & Debian 12**
+> **Ubuntu und Debian 12+**
 >>
 >> Bearbeiten Sie mit einem beliebigen Texteditor die Netzwerkkonfigurationsdatei in `/etc/netplan/`. Hier heißt die Datei `50-cloud-init.yaml`:
 >>
@@ -147,12 +149,26 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Wiederholen Sie diesen Vorgang für Ihre anderen Server und weisen Sie jedem Server eine noch ungenutzte IP-Adresse aus Ihrem privaten Bereich zu. Ihre Server können dann über das private Netzwerk untereinander kommunizieren.
 >>
-> **CentOS, AlmaLinux und RockyLinux**
+> **AlmaLinux und Rocky Linux (8/9)**
 >>
->> Nachdem Sie Ihr privates Netzwerkinterface identifiziert haben, erstellen Sie mit dem Texteditor Ihrer Wahl die folgende Netzwerkkonfigurationsdatei. Ersetzen Sie `NETWORK_INTERFACE` durch Ihren eigenen Wert.
+>> Nachdem Sie Ihr privates Netzwerkinterface identifiziert haben, erstellen Sie mit folgendem Befehl eine Netzwerkkonfigurationsdatei.
+>>
+>> Ersetzen Sie `NETWORK_INTERFACE` durch Ihren eigenen Wert.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> ```
+>>
+>> Wenn die private Schnittstelle zum Beispiel `eth1` heißt, ergibt sich Folgendes:
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> Bearbeiten Sie dann diese Datei mit dem Texteditor Ihrer Wahl.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 >> ```
 >>
 >> Fügen Sie diese Zeilen hinzu und ersetzen Sie `NETWORK_INTERFACE`, `IP_ADDRESS` und `NETMASK` durch Ihre eigenen Werte:
@@ -175,18 +191,12 @@ link ether f0:00:00:ef:0e:f0
 >> Starten Sie den Netzwerkdienst neu, um die Änderungen anzuwenden:
 >>
 >> ```bash
->> sudo systemctl restart networking
->> ```
->>
->> Verwenden Sie in **CentOS 8, AlmaLinux und RockyLinux** diesen Befehl:
->>
->> ```bash
 >> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Wiederholen Sie diesen Vorgang für Ihre anderen Server und weisen Sie jedem Server eine noch ungenutzte IP-Adresse aus Ihrem privaten Bereich zu. Ihre Server können dann über das private Netzwerk untereinander kommunizieren.
 >>
-> **Fedora**
+> **Fedora 42+, AlmaLinux und Rocky Linux (10)**
 >>
 >> Sobald Sie den Namen Ihrer privaten Schnittstelle identifiziert haben (wie [hier](#vrack-interface) erklärt), führen Sie folgenden Befehl aus, um sicherzustellen, dass sie korrekt verbunden ist. In unserem Beispiel heißt das Interface `eno2`:
 >>
@@ -289,19 +299,19 @@ Loggen Sie sich über Remote-Desktopverbindung auf Ihrem Windows-Server ein und 
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Klicken Sie auf `Network and Internet`{.action}.
+Klicken Sie auf `Netzwerk und Internet`{.action}.
 
 ![Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Öffnen Sie `Network and Sharing Center`{.action}.
+Öffnen Sie `Netzwerk- und Freigabecenter`{.action}.
 
 ![Windows](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Klicken Sie auf `Change Adapter Settings`{.action}.
+Klicken Sie auf `Adaptereinstellugen ändern`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf das sekundäre Netzwerkinterface und klicken Sie dann auf `Properties`{.action}.
+Klicken Sie mit der rechten Maustaste auf das sekundäre Netzwerkinterface und klicken Sie dann auf `Eigenschaften`{.action}.
 
 In unserem Beispiel ist `Ethernet 2` das für vRack verwendete Interface. Es ist jedoch möglich, dass das vRack-Interface in Ihrer Konfiguration ein anderes ist. Das hier auszuwählende Interface verwendet nicht die Haupt-IP-Adresse des Servers oder eine selbst zugewiesene IP-Adresse.
 
@@ -311,7 +321,7 @@ Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4](images/windows_ipv4.png){.thumbnail}
 
-Klicken Sie auf **Use the following IP address**. Geben Sie in den entsprechenden Feldern eine **IP-Adresse** Ihres privaten Bereichs und die zugehörige **Subnetzmaske** (`255.255.0.00` in diesem Beispiel) ein.
+Klicken Sie auf **Folgende IP-Adresse verwenden**. Geben Sie in den entsprechenden Feldern eine **IP-Adresse** Ihres privaten Bereichs und die zugehörige **Subnetzmaske** (`255.255.0.0` in diesem Beispiel) ein.
 
 ![Windows](images/windows_use_following_ip_address.png){.thumbnail}
 

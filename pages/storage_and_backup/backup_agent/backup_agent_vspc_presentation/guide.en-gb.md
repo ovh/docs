@@ -27,7 +27,7 @@ Log in using the credentials that were provided to you by email. The login forma
 
 > [!primary]
 >
-> If you no longer have your credentials, you can regenerate them by [contacting support](/links/support).
+> If you no longer have your credentials, you can regenerate them by [contacting support](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

@@ -43,19 +43,19 @@ Per verificare se il dominio utilizza la configurazione DNS di OVHcloud, clicca 
 >
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
@@ -77,19 +77,19 @@ L'attivazione del **DNSSEC** è possibile in tre situazioni descritte di seguito
 Per attivare (o disattivare) la soluzione **DNSSEC** per il tuo dominio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Visualizzi una tabella con tutte le informazioni generali relative al tuo dominio. In questa interfaccia è possibile verificare lo stato di attivazione del **DNSSEC**.
 >>
@@ -97,7 +97,7 @@ Per attivare (o disattivare) la soluzione **DNSSEC** per il tuo dominio, clicca 
 >>
 >> ![Secured Delegation DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Il pulsante di attivazione situato sopra la voce `Delegazione Sicura (DNSSEC)`{.action} permette di attivare o disattivare il **DNSSEC** sul dominio. L’operazione genera una nuova finestra da cui è possibile confermare la modifica.
 >>
@@ -110,19 +110,19 @@ In questo caso, contatta il provider che gestisce la configurazione DNS del tuo 
 Una volta recuperate queste 4 impostazioni, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca sulla scheda `record DS`{.action}. **Questa scheda appare solo se il dominio utilizza server DNS esterni**.
 >>

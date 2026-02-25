@@ -1,7 +1,7 @@
 ---
-title: Valkey - Capabilities and Limitations
+title: Capabilities and Limitations of Public Cloud Databases for Valkey
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
-updated: 2026-01-26
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Database nodes have to be in the same region.
 

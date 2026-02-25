@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Administre tus copias de seguridad y restauraciones"
 excerpt: "Descubre cómo hacer copias de seguridad y restaurar tus datos en tus servidores Bare Metal con Backup Agent"
-updated: 2026-01-28
+updated: 2026-02-03
 ---
 
 ## Objetivo
@@ -50,56 +50,155 @@ Podrás ver el éxito de esta copia de seguridad a través de:
 
 #### Copia de seguridad manual
 
-En caso necesario, puedes activar una copia de seguridad manual.
+En caso necesario, puede iniciar una copia de seguridad manual.
 
-Esta también realizará una copia de seguridad completa de tu servidor, siempre enviada a tu punto de almacenamiento remoto.
+Esta hará también una copia de seguridad completa de su servidor, también enviada a su punto de almacenamiento remoto.
 
-Para crear una copia de seguridad manual, abre la aplicación "Veeam Agent" en el servidor Bare Metal:
+Haga clic en la pestaña correspondiente a su sistema operativo:
 
-![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
-
-Haz clic en el botón `Backup Now`{.action} para iniciar una copia de seguridad:
-
-![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
+> [!tabs]
+> Windows
+>>
+>> Abra la aplicación "Veeam Agent" en el servidor Bare Metal:
+>>
+>> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
+>>
+>> Haga clic en el botón `Backup Now`{.action} para iniciar una copia de seguridad:
+>>
+>> ![Backup Agent BKP Agent](images/01-backup-agent-bkpagent.png){.thumbnail}
+>
+> Linux
+>>
+>> Para iniciar una copia de seguridad manual en Linux, puede utilizar la línea de comandos.
+>>
+>> Conéctese a su servidor Bare Metal mediante SSH y ejecute el siguiente comando para listar sus trabajos de copia de seguridad:
+>>
+>> ```bash
+>> sudo veeamconfig job list
+>> ```
+>>
+>> Para iniciar una copia de seguridad manual, utilice el siguiente comando, reemplazando `<nombre_del_trabajo>` por el nombre de su trabajo de copia de seguridad:
+>>
+>> ```bash
+>> sudo veeamconfig job start <nombre_del_trabajo>
+>> ```
+>>
+>> Si desea iniciar todos los trabajos de copia de seguridad, utilice:
+>>
+>> ```bash
+>> sudo veeamconfig job start --all
+>> ```
+>>
+>> Puede seguir el progreso de la copia de seguridad consultando las sesiones activas:
+>>
+>> ```bash
+>> sudo veeamconfig session list
+>> ```
+>>
+>> También puede tener una interfaz para interactuar con el producto introduciendo este comando:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
 
 ### Restauración
 
-En caso de necesidad de restaurar datos, tienes dos opciones:
+En caso de necesidad de restaurar datos, tiene dos opciones:
 
 - a través del asistente de restauración de archivos;
 - a través de la ISO Veeam Baremetal Recovery.
 
 #### Asistente de restauración de archivos
 
-Abre la aplicación "Veeam Agent" en tu servidor Baremetal:
+Para restaurar archivos y carpetas, haga clic en la pestaña correspondiente a su sistema operativo:
 
-![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
-
-Ve al menú y selecciona `Restore File`{.action}:
-
-![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
-
-Selecciona el punto de restauración deseado en el asistente:
-
-![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
-
-Luego confirma:
-
-![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
-
-Finalmente, busca tu archivo y selecciona una opción:
-
-![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
-
-- Restore - Overwrite: te permite restaurar el archivo mientras sobrescribes el que actualmente está en el servidor.
-- Restore - Keep: te permite restaurar el archivo mientras mantienes el que actualmente está en el servidor.
-- Copy To: te permite copiar el archivo en un lugar de tu servidor.
-- Explore: te permite explorar la copia de seguridad.
-- Properties: te permite ver las propiedades del archivo.
-
-Iniciar una restauración te permitirá tener una última ventana que mostrará la transferencia:
-
-![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
+> [!tabs]
+> Windows
+>>
+>> Abra la aplicación "Veeam Agent" en su servidor Baremetal:
+>>
+>> ![Backup Agent BKP Agent Search](images/01-backup-agent-bkpagent-search.png){.thumbnail}
+>>
+>> Vaya al menú y seleccione `Restore File`{.action}:
+>>
+>> ![Backup Agent Restore Menu](images/01-backup-agent-restore-menu.png){.thumbnail}
+>>
+>> Seleccione el punto de restauración deseado en el asistente:
+>>
+>> ![Backup Agent Restore Points](images/01-backup-agent-restore-restore-points.png){.thumbnail}
+>>
+>> A continuación, confirme:
+>>
+>> ![Backup Agent Restore Point Summary](images/01-backup-agent-restore-restore-point-summary.png){.thumbnail}
+>>
+>> Finalmente, busque su archivo y seleccione una opción:
+>>
+>> ![Backup Agent Restore Wizard](images/01-backup-agent-restore-wizard.png){.thumbnail}
+>>
+>> - Restore - Overwrite: le permite restaurar el archivo mientras sobrescribe el que actualmente se encuentra en el servidor.
+>> - Restore - Keep: le permite restaurar el archivo mientras conserva el que actualmente se encuentra en el servidor.
+>> - Copy To: le permite copiar el archivo a un lugar de su servidor.
+>> - Explore: le permite explorar la copia de seguridad.
+>> - Properties: le permite ver las propiedades del archivo.
+>>
+>> Iniciar una restauración le permitirá tener una última ventana que mostrará la transferencia:
+>>
+>> ![Backup Agent Restore Transfer](images/01-backup-agent-restore-transfer.png){.thumbnail}
+>
+> Linux
+>>
+>> Para restaurar archivos y carpetas en Linux, tiene dos opciones: a través de la interfaz gráfica o a través de la línea de comandos.
+>>
+>> #### A través de la interfaz gráfica
+>>
+>> 1\. Conéctese a su servidor Bare Metal mediante SSH.
+>> 2\. Inicie la interfaz Veeam introduciendo el siguiente comando:
+>>
+>> ```bash
+>> sudo veeam
+>> ```
+>>
+>> 3\. En la interfaz, seleccione la opción de restauración de archivos.
+>> 4\. Seleccione la copia de seguridad y el punto de restauración deseado.
+>> 5\. Navegue por la copia de seguridad para encontrar los archivos o carpetas a restaurar.
+>> 6\. Seleccione los archivos y elija la acción de restauración:
+>>    - Restaurar en el lugar de origen
+>>    - Copiar a un nuevo lugar
+>>    - Explorar la copia de seguridad
+>>
+>> #### A través de la línea de comandos
+>>
+>> Para restaurar archivos a través de la línea de comandos, debe montar previamente la copia de seguridad:
+>>
+>> 1\. Liste sus copias de seguridad disponibles:
+>>
+>> ```bash
+>> sudo veeamconfig backup list
+>> ```
+>>
+>> 2\. Liste los puntos de restauración de una copia de seguridad:
+>>
+>> ```bash
+>> sudo veeamconfig restore list --backup <nombre_de_la_copia>
+>> ```
+>>
+>> 3\. Monte un punto de restauración:
+>>
+>> ```bash
+>> sudo veeamconfig mount --backup <nombre_de_la_copia> --restorepoint <nombre_del_punto>
+>> ```
+>>
+>> 4\. Una vez montado, puede acceder a los archivos a través del punto de montaje (normalmente en `/mnt/veeam/`).
+>>
+>> 5\. Copie los archivos deseados desde el punto de montaje a su destino.
+>>
+>> 6\. Una vez finalizada la restauración, desmonte la copia de seguridad:
+>>
+>> ```bash
+>> sudo veeamconfig unmount --backup <nombre_de_la_copia>
+>> ```
+>>
+>> Para más información, consulte la [documentación de Veeam](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_gui.html?ver=13) y la [documentación sobre restauración en línea de comandos](https://helpcenter.veeam.com/docs/agentforlinux/userguide/files_restore_cmd.html?ver=13).
 
 ### ISO Veeam Baremetal Recovery
 

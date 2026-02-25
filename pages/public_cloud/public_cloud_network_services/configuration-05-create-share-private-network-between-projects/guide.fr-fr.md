@@ -1,7 +1,7 @@
 ---
 title: 'Comment partager un réseau privé entre 2 projets Public Cloud'
 excerpt: 'Découvrez comment partager un réseau privé entre deux projets Public Cloud OVHcloud.'
-updated: 2024-07-31
+updated: 2026-02-10
 ---
 
 ## Objectif
@@ -11,12 +11,13 @@ Ce tutoriel vous montre comment connecter deux projets sur un réseau interne. I
 ## Prérequis
 
 - Vous avez 2 projets Public Cloud ou plus.
+- Les deux projets doivent être placés dans le même vRack.
 
 Référez-vous aux guides suivants :
 
   - [Débuter avec l’API OpenStack](/pages/public_cloud/compute/starting_with_nova).
   - [Attacher une adresse Floating IP à une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance).
-  - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/security_group_private_network).
+  - [Gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/public_cloud/public_cloud_cross_functional/security_group_private_network)
 
 ## En pratique
 

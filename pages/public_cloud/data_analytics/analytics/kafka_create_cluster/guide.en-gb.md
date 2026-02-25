@@ -1,5 +1,5 @@
 ---
-title: Kafka - How to create a Kafka cluster
+title: Create a cluster with Analytics with Kafka
 excerpt: Learn how to create a Kafka cluster
 updated: 2025-08-25
 ---

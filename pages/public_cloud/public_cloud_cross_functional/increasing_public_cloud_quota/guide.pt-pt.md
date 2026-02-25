@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Objetivo
@@ -93,6 +93,8 @@ Assim que selecionar o seu volume, clique em `Confirmar`{.action}. O seu pagamen
 >
 > Após clicar no botão `Confirmar`{.action}, o pedido é automaticamente criado e o montante é deduzido do seu método de pagamento predefinido.
 >
+
+Pode obter uma visão mais detalhada dos seus recursos na [interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Depois de iniciar sessão, clique em `Project`{.action} e, em seguida, em `Overview`{.action}.
 
 ### Aumentar o quota dos seus projetos Public Cloud
 

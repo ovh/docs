@@ -1,7 +1,7 @@
 ---
-title: Analytics - Automated Backups
+title: Automated Backups for Analytics
 excerpt: Discover the automated backup methods for each engine
-updated: 2025-11-27
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -46,6 +46,8 @@ Analytics services provide a default configuration for remote backups based on t
 | SGP (Singapore, Singapore) | BHS (Beauharnois, Canada) |
 | UK (London, United Kingdom) | GRA (Gravelines, France) |
 | WAW (Warsaw, Poland) | GRA (Gravelines, France) |
+| RBX (Roubaix, France) | GRA (Gravelines, France) |
+| AP-SOUTH-MUM (Mumbai, Inde) | BHS (Beauharnois, Canada) |
 
 ### Custom settings
 

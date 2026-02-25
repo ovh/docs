@@ -1,7 +1,7 @@
 ---
 title: "Como obter a pegada de carbono dos seus serviços OVHcloud"
 excerpt: "Saiba como recuperar a pegada de carbono mensal dos serviços OVHcloud graças à nossa calculadora de carbono"
-updated: 2025-06-17
+updated: 2026-02-11
 ---
 
 ## Objetivo
@@ -19,9 +19,14 @@ No âmbito das suas atividades profissionais ou por interesse no assumpto, poder
 - [Servidor Dedicado](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Servidor Dedicado Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Instâncias Public Cloud (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## Instruções
+
+> [!primary]
+>
+> Os dados de pegada de carbono ainda não estão disponíveis para as arquiteturas 3AZ e as Local Zones.
+>
 
 Há vários pontos a ter em conta:
 
@@ -30,12 +35,23 @@ Há vários pontos a ter em conta:
 - Não podem ser efetuados balanços para além dos últimos 24 meses.
 - Nenhum balanço pode ser gerado para o período que precede a data de implementação da funcionalidade para cada serviço da OVHcloud (ver quadro abaixo).
 
-| Serviço | Data de entrada em funcionamento da calculadora de pegada de carbono |
-|---|---|
-| Servidor Dedicado | 2023/05/01 |
-| Servidor Dedicado Eco | 2023/05/01 |
-| VMware on OVHcloud | 2023/08/01 |
-| Instâncias Public Cloud | 2025/01/01 |
+**Disponibilidade dos dados da pegada de carbono:**
+
+| Serviços OVHcloud    | Produtos                           | Estado      | Data de lançamento da calculadora de pegada de carbono |
+| -------------------- | ---------------------------------- | ----------  | -------------------------------------------------------- |
+| Servidores dedicados | Servidor Dedicado.                 | Disponível  | 2023/05/01 |
+|                      | Servidor Dedicado Eco              | Disponível  | 2023/05/01 |
+| Hosted Private Cloud | VMware on OVHcloud                 | Disponível  | 2023/08/01 |
+| Public Cloud         | Instâncias Public Cloud            | Disponível  | 2025/01/01 |
+|                      | Block Storage                      | Disponível  | 2025/12/01 |
+|                      | Object Storage S3                  | Em breve    |            |
+|                      | File Storage                       | Em breve    |            |
+|                      | Network                            | Em breve    |            |
+|                      | Managed Kubernetes Service         | Em breve    |            |
+|                      | Public Cloud Databases/Analytics   | Em breve    |            |
+|                      | Data Platform                      | Em breve    |            |
+|                      | AI                                 | Em breve    |            |
+|                      | Quantum                            | Em breve    |            |
 
 ### Recuperar o balanço mensal do mês anterior através da Área de Cliente OVHcloud
 

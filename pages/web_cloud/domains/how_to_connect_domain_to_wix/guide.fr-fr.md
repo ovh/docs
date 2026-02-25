@@ -1,12 +1,12 @@
 ---
 title: Comment connecter un nom de domaine OVHcloud à un hébergement Wix
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Wix
-updated: 2024-04-17
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Wix.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Wix.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Wix**
 
@@ -59,7 +59,7 @@ Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.a
 Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >> **Enregistrement A**<br><br>
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
@@ -69,19 +69,19 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 *relevée depuis votre interface Wix* dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
-> **Etape 2**
+> **Étape 2**
 >> **Enregistrement AAAA**<br><br>
 >>  Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Si des enregistrements « AAAA » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec les enregistrements « A » et « CNAME » que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
-> **Etape 3**
+> **Étape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
-> **Etape 4**
+> **Étape 4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}

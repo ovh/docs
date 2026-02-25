@@ -1,7 +1,7 @@
 ---
 title: 'Comment résilier un service VoIP ou une ligne Fax'
 excerpt: "Découvrez comment résilier une ligne SIP, Trunk SIP, une ligne Fax ou un numéro alias depuis l'espace client OVHcloud"
-updated: 2025-10-30
+updated: 2026-02-12
 ---
 
 ## Objectif
@@ -13,7 +13,17 @@ Ce guide décrit comment résilier une ligne Fax ou un service VoIP OVHcloud, qu
 ## Prérequis
 
 - Disposer de [services VoIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -24,11 +34,28 @@ Retrouvez dans ce guide les explications pour résilier unitairement un service 
 >
 > Retrouvez les informations correspondantes dans notre guide « [Gérer vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie) ».
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre service VoIP ou Fax.
-1. Cliquez sur l'onglet `Services`{.action} puis sur sur la ligne ou le numéro concerné (vous pouvez rechercher le service dans le champ prévu à cet effet).
+Cliquez sur l'onglet `Services`{.action} puis sur sur la ligne ou le numéro concerné (vous pouvez rechercher le service dans le champ prévu à cet effet).
 
 En fonction de votre service, référez-vous à la partie correspondante.
+
+### Cas particulier : portabilité sortante
+
+La portabilité d'un numéro OVHcloud vers un autre opérateur entraîne sa résiliation technique et commerciale chez OVHcloud à la date effective de la portabilité.
+
+Tout numéro associé à un service VoIP ou à une ligne Fax est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
+
+Récupérez le RIO d'un service VoIP ou Fax depuis les informations générales du service dans votre [espace client OVHcloud](/links/manager).
+
+![rio manager](images/rio.png){.thumbnail}
+
+> [!success]
+>
+> Autres méthodes pour obtenir le RIO :
+>
+> - Depuis la ligne SIP concernée : composez le **3179**.
+> - Depuis une autre ligne : composez le **0805 69 3179**, puis renseignez le numéro OVHcloud concerné.
+>
+> Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 ### Résilier une ligne SIP / Trunk
 

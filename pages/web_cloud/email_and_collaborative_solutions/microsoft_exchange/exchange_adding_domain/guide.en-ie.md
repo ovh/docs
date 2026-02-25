@@ -21,7 +21,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
+- An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
 - Access to the [OVHcloud Control Panel](/links/manager)
@@ -142,7 +142,7 @@ As a reminder, all of the addresses created on your service will be able to view
 
 Once the accounts are fully configured, you can start using them. To do this, OVHcloud offers **webmail**, accessible [here](/links/web/email). To optimize the use of your email accounts on a software application, ensure that it is compatible with the service.
 
-If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails) and [Email Pro](/links/web/email-pro) pages.
+If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails-exchange) and [Email Pro](/links/web/email-pro) pages.
 
 You can purchase Outlook licenses in the [OVHcloud Control Panel](/links/manager) and Office 365 licenses on the [Microsoft 365](/links/web/ms365) page. We recommend using one of these solutions if you would like to use Outlook email software, or more software from the Office suite, depending on your needs.
 

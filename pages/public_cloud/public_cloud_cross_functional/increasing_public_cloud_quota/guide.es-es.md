@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Descubra cómo solicitar el aumento de sus cuotas de Public Cloud'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Objetivo
@@ -93,6 +93,8 @@ Una vez que haya seleccionado su volumen, haga clic en `Confirmar`{.action}. Su 
 >
 > Después de hacer clic en el botón `Confirmar`{.action}, el pedido se crea automáticamente y el importe se deduce de su método de pago predeterminado.
 >
+
+Puede obtener una vista más detallada de sus recursos en la [interfaz Horizon](https://horizon.cloud.ovh.net/auth/login/). Una vez conectado, haga clic en `Project`{.action} y, a continuación, en `Overview`{.action}.
 
 ### Aumentar el cuota de sus proyectos Public Cloud
 

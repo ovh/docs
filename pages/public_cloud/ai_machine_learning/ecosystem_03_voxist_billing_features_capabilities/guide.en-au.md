@@ -71,7 +71,7 @@ Voxist gives you the possibility to have a real time transcription. Indeed, the 
 
 > [!primary]
 >
-> To learn more about **Voxist ASR service**, please refer to this [documentation](https://www.voxist.com/voice-ai/documentation).
+> To learn more about **Voxist ASR service**, please refer to this [website](https://www.voxist.com/voice-ai/).
 >
 
 ## Voxist quick start

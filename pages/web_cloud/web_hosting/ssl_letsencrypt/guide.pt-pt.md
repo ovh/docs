@@ -20,7 +20,7 @@ Os níveis de encriptação SSL são idênticos entre estes três tipos de certi
 
 A principal diferença reside no nível de controlos que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e certifica a sua autenticidade.
 
-A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aberta e sem fins lucrativos. Encontre mais informações em <https://letsencrypt.org/pt/about/>.
+A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aberta e sem fins lucrativos. Encontre mais informações em <https://letsencrypt.org/pt-br/about/>.
 
 **Saiba como ativar um certificado SSL gratuito Let's Encrypt no seu alojamento web da OVHcloud.**
 

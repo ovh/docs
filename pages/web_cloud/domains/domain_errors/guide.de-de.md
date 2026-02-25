@@ -1,6 +1,6 @@
 ---
-title: "Fehler bei Domain-Operationen beheben"
-updated: 2025-04-28
+title: "Fehler bei Domainname-Operationen beheben"
+updated: 2026-02-10
 ---
 
 ## Ziel
@@ -11,7 +11,7 @@ Bei der Erstellung eines Domainnamens, dem Transfer oder dem Inhaberwechsel hand
 
 ## Voraussetzungen
 
-- Sie verfügen über eine oder mehrere Domains.
+- Inhaber eines oder mehrerer [Domainnamen](/links/web/domains) sein.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 

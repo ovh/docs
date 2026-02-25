@@ -1,5 +1,5 @@
 ---
-title: MongoDB - BI Connector
+title: Configurer BI Connector pour Public Cloud Databases pour MongoDB (EN)
 excerpt: Connect Microsoft Power BI, Tableau Desktop, Microsoft Excel
 updated: 2025-01-06
 ---

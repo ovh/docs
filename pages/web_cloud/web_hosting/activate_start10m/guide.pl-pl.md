@@ -32,25 +32,25 @@ Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [d
 Aby włączyć darmowy hosting 100M, kliknij na poniższe zakładki, aby wyświetlić wszystkie **4** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> W ramce **Informacje ogólne** znajduje się pozycja **Darmowy hosting WWW i e-mail**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Pojawi się okno aktywacyjne. W sekcja **1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk `Dalej`{.action}.
 >> W sekcja **2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:

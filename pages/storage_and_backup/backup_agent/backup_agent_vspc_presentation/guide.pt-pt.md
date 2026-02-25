@@ -27,7 +27,7 @@ Conecte-se utilizando as credenciais fornecidas por e-mail. O formato do login �
 
 > [!primary]
 >
-> Se já não tiver as suas credenciais, pode regenerá-las ao [contactar o suporte](/links/support).
+> Se já não tiver as suas credenciais, pode regenerá-las ao [contactar o suporte](/links/support-contact).
 
 ![Backup Agent Login VSPC](images/01-backup-agent-login-vspc.png){.thumbnail}
 

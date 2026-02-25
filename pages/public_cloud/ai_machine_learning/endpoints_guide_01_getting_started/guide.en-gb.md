@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Getting started
 excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
-updated: 2026-01-23
+updated: 2026-01-30
 ---
 
 > [!primary]
@@ -11,15 +11,15 @@ updated: 2026-01-23
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
 
 With no extensive AI expertise required, AI Endpoints is an ideal choice for developers seeking a convenient and secure way to integrate AI into their applications.
 
 ## Objective
 
-The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](/links/public-cloud/ai-endpoints).
 
-It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
+It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](/links/public-cloud/ai-endpoints) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
 
 ## Requirements
 
@@ -30,7 +30,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 ### Generating your first API access key
 
-Getting an API key enables you to use the models available in our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
+Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
 **1\. Access the AI Endpoints section**
 
@@ -70,7 +70,7 @@ With your access API key in hand, you are now ready to access the AI models and 
 
 ### Accessing AI models
 
-Once your API key has been generated, you can navigate to the [Catalog page](https://endpoints.ai.cloud.ovh.net/catalog) to choose the AI model you want to interact with.
+Once your API key has been generated, you can navigate to the [Catalog page](/links/public-cloud/ai-endpoints-catalog) to choose the AI model you want to interact with.
 
 AI Endpoints offers a variety of world-renowned AI models to choose from, including:
 
@@ -86,7 +86,7 @@ Once you have selected the category of model you want to use, you will be presen
 
 For example, if you select the `Code LLM` category, you will see a list of available code assistant models.
 
-To access one of them, simply click the name of the model you want to use. Let's take the `Qwen2.5-​Coder-​32B-​Instruct` code assistant as our example.
+To access one of them, simply click the name of the model you want to use. Let's take the `gpt-oss-120b` code assistant as our example.
 
 This will take you to a dedicated page with several options for interacting with the chosen model, including the ability to view its specifications. Here is an overview of the available options:
 
@@ -96,6 +96,22 @@ This will take you to a dedicated page with several options for interacting with
 >> This option provides a user-friendly interface to test and explore the model's capabilities, giving you a chance to see how it works before making an API call. Please note that Large Language Models (LLMs) in the playground are **currently limited to 1024 output tokens** for testing purposes. This means that LLMs will not generate responses longer than 1024 tokens in the playground, allowing you to test and validate their behavior.
 >>
 >> ![AI Endpoints playground overview](images/playground_demo.png){.thumbnail}
+>>
+> **API**
+>>
+>> The API section provides access to POST routes that you can use to send a request to the model and receive an output.
+>>
+>> ![AI Endpoints API overview](images/api_demo.png){.thumbnail}
+>>
+>> For LLMs, two POST routes are available: `Chat Completions` and `Completions`. Here's an example of how to use the `Chat Completions` API:
+>>
+>> Click the `Chat Completions`{.action} endpoint in the API section. Once there, select one of the available input schemas.
+>>
+>> Here you can also find information on how to send a correct request to the model (existing parameters). Examples of usage are provided. You will also find there the output schema example. You can modify the input schema if needed to customize the request you are sending. When you are ready, click `TRY`{.action} to send your request.
+>>
+>> Upon executing the request, a cURL command will be displayed, representing the request you just sent. This can be useful for re-sending the command using a terminal. Additionally, the server's response body will also be provided, displaying the output of the model.
+>>
+>> You can follow similar steps for using the `Completions` API.
 >>
 > **Documentation**
 >>
@@ -110,22 +126,6 @@ This will take you to a dedicated page with several options for interacting with
 >> There, you will find guides related to AI Endpoints that you may find helpful in learning how to use the model more effectively. Whether you're building a chatbot with Langchain and JavaScript or creating a video translator app, we provide step-by-step guidance to support your AI projects.
 >>
 >> ![AI Endpoints tutorials overview](images/tutorials_demo.png){.thumbnail}
->>
-> **API**
->>
->> The API section provides access to POST routes that you can use to send a request to the model and receive an output.
->>
->> ![AI Endpoints API overview](images/api_demo.png){.thumbnail}
->>
->> For LLMs, two POST routes are available: `Chat Completions` and `Completions`. Here's an example of how to use the `Chat Completions` API:
->>
->> Click the `Chat Completions`{.action} endpoint in the API section. Once there, select one of the available input schemas.
->>
->> Here you can also find information on how to send a correct request to the model (existing parameters). Examples of usage are provided. You will also find there the output schema example. Click `Try it out`{.action} to prepare the request. There, you can modify the input schema if needed to customize the request you are sending. When you are ready, click `Execute`{.action} to send your modified request.
->>
->> Upon executing the request, a cURL command will be displayed, representing the request you just sent. This can be useful for re-sending the command using a terminal. Additionally, the server's response body will also be provided, displaying the output of the model.
->>
->> You can follow similar steps for using the `Completions` API.
 
 ### Revoke your API access key
 
@@ -150,7 +150,7 @@ When using AI Endpoints, the **following rate limits apply**:
 
 If you exceed this limit, a **429 error code** will be returned.
 
-If you require higher usage, please **[get in touch with us](/links/support)** to discuss increasing your rate limits.
+If you require higher usage, please **[get in touch with us](/links/support-contact)** to discuss increasing your rate limits.
 
 ### Billing and usage
 

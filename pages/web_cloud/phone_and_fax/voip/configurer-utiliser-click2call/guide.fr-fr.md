@@ -12,8 +12,18 @@ La fonctionnalité Click2Call (ou « appel en un clic ») permet de mettre en re
 
 ## Prérequis
 
-- Disposer d’une ligne SIP possédant un [forfait compatible](/links/telecom/telephonie-services-inclus) avec la fonctionnalité Click2Call.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+- Disposer d'une ligne SIP possédant un [forfait compatible](/links/telecom/telephonie-services-inclus) avec la fonctionnalité Click2Call.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -35,10 +45,7 @@ Vous avez la possibilité de créer et de gérer vos identifiants Click2Call dep
 > [!tabs]
 > Depuis l'espace client OVHcloud
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
->> 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
->> 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
->> 1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
+>> Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appel en 1 clic (Click2Call)`{.action}.
 >>
 >> ![modeintercom](images/click2call-step1.png){.thumbnail}
 >>

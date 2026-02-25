@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie kopii zapasowej wolumenu"
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
-updated: 2025-12-15
+updated: 2026-02-24
 ---
 
 ## Wprowadzenie
@@ -27,6 +27,10 @@ Wolumen Snapshot oraz Backup Wolumenu pozwalają na:
 
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Odłączony [wolumin Block storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud)
+
+## Ograniczenia
+
+Kopie zapasowe zaszyfrowanych wolumenów LUKS mogą być przywracane wyłącznie na ten sam typ zaszyfrowanego wolumenu LUKS.
 
 ## W praktyce
 
