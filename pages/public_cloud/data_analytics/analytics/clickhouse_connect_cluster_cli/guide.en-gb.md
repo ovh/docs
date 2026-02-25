@@ -1,7 +1,7 @@
 ---
 title: ClickHouse - How to connect to a ClickHouse cluster with CLI
-excerpt: Learn how to connect to a ClickHouse cluster using the CLI
-updated: 2026-01-10
+excerpt: Learn how to connect to a ClickHouse cluster using the CLI, including certificate setup, client configuration, and basic queries
+updated: 2026-02-25
 ---
 
 <style>
@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 ClickHouse is an open-source, columnar analytical database system designed for real-time processing of massive data volumes, providing high performance, scalability, and low latency.
 
-This guide explains how to connect to a ClickHouse cluster using the CLI.
+**This guide explains how to connect to a ClickHouse cluster using the CLI.**
 
 ## Requirements
 
@@ -32,36 +32,25 @@ This guide explains how to connect to a ClickHouse cluster using the CLI.
 
 ## Instructions
 
-### First CLI connection
-
 > [!warning]
-> Verify that the IP address visible from your browser application is part of the "Authorised IPs" defined for this ClickHouse service.
+> Verify that your public IP address is part of the "Authorised IPs" defined for this ClickHouse service.
 >
-> Check also that the user has granted ACLs for the target topics.
+> Check also that the user has the required ACLs for the target databases.
 
-#### Downloading server and user certificates
+### Downloading server and user certificates
 
-In order to connect to the ClickHouse service, it is required to use server and user certificates.
+To connect to the ClickHouse service, you need server and user certificates.
 
-##### Server certificate
+- **Server certificate**: The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab.
+- **User certificate and access key**: The user certificate and the user access key can be downloaded from the `Users`{.action} tab.
 
-The server Certificate Authority (*CA*) certificate can be downloaded from the `Dashboard`{.action} tab.
+### Installing the ClickHouse CLI
 
-##### User certificate and access key
+As part of the official ClickHouse installation, you will have access to several tools, including the standard `clickhouse-client` CLI. For details, see the [official ClickHouse Client documentation](https://clickhouse.com/docs/interfaces/cli).
 
-The user certificate and the user access key can be downloaded from the `Users`{.action} tab.
+#### ClickHouse configuration file
 
-#### Installing the ClickHouse CLI
-
-As part of the official ClickHouse installation, you will have access to several tools, including the standard `clickhouse-client` CLI. You can refer to the official guide: [ClickHouse Client official](https://clickhouse.com/docs/interfaces/cli).
-
-We recommend using the lightweight `clickhouse-client` CLI instead, which does not require a JVM and provides a simple way to execute queries and manage your ClickHouse cluster.
-
-##### **ClickHouse configuration file**
-
-You can create a configuration file to simplify connecting to your ClickHouse server:
-
-The ClickHouse Client can be configured using an XML or YAML file. The client searches for configuration files in the following order:
+You can configure the ClickHouse Client using an XML or YAML file to simplify connection. The client searches for configuration files in the following order:
 
 1. A file specified with `-c` / `--config` / `--config-file`.
 2. `./clickhouse-client.[xml|yaml|yml]`.
@@ -73,7 +62,7 @@ The ClickHouse Client can be configured using an XML or YAML file. The client se
 
 Create a file named `clickhouse-client.xml` with the following content:
 
-```json
+```xml
 <config>
     <user>default</user>
     <password>your_password</password>
@@ -116,7 +105,9 @@ openSSL:
 
 Change these values according to your own cluster configuration.
 
-##### **Inserting data into ClickHouse**
+### Using the ClickHouse CLI
+
+#### Inserting data into ClickHouse
 
 For this first example, let's insert a test row into the `my_table` table in the `test_db` database.
 
@@ -124,7 +115,7 @@ For this first example, let's insert a test row into the `my_table` table in the
 clickhouse-client --query "INSERT INTO test_db.my_table (id, message) VALUES (1, 'test-message-content')"
 ```
 
-##### **Querying data into ClickHouse**
+#### Querying data from ClickHouse
 
 Retrieve all the data from the `my_table` table in the `test_db` database:
 
@@ -132,7 +123,7 @@ Retrieve all the data from the `my_table` table in the `test_db` database:
 clickhouse-client --query "SELECT * FROM test_db.my_table"
 ```
 
-## We want your feedback!
+## Go further
 
 We would love to help answer questions and appreciate any feedback you may have.
 
