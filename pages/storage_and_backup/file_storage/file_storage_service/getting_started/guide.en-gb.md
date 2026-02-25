@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started (Beta)
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2026-01-19
+updated: 2026-02-24
 ---
 
 ## Objective
@@ -530,6 +530,7 @@ It can be accessed via OVHcloud API, OpenStack CLI and API, Manila CSI, and Terr
 >> - Krew (kubectl plugin manager) installed.
 >> - Stern (kubectl log tailing plugin) installed via Krew.
 >> - A Kubernetes cluster deployed in a private network within a Public Cloud region where Manila endpoints are accessible.
+>> - Ensure that your OpenStack user has the Administrator or Share Operator role.
 >>
 >> > [!primary]
 >> >

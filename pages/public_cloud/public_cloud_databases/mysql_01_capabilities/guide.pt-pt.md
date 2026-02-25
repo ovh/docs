@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Public Cloud Databases for MySQL
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2026-01-28
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Entire database instances have to be in the same region.
 

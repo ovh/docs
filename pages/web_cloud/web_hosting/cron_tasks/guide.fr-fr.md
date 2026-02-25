@@ -111,23 +111,23 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite de la tâche planifiée concernée.
 >>

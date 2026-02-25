@@ -34,19 +34,19 @@ Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hosti
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** etapy.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę Na stronie, która się wyświetli przejdź do zakładki `Więcej`{.action} i kliknij `Skrypty e-mail`{.action}.
 >>

@@ -28,6 +28,17 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont variées :
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie-voip).
 - Disposer d'un [téléphone fourni par OVHcloud](/links/telecom/telephonie-comparatif-telephones) et l'avoir installé.
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 > [!warning]

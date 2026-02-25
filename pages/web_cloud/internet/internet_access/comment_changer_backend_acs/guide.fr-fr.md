@@ -18,17 +18,24 @@ L'Auto Configuration Server (ACS) est une couche de traduction entre votre modem
 ## Prérequis
 
 - Disposer d’un [accès Internet xDSL ou fibre OVHcloud](/links/telecom/offre-internet).
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Accès Internet`{.action}.
 - Cette fonctionnalité est disponible même si la configuration à distance est désactivée.
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 ![changeACS](images/changeACS-step1-2022.png){.thumbnail}
 

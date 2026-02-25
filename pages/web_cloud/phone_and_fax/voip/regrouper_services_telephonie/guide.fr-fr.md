@@ -16,17 +16,22 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom).
 - Disposer de [lignes SIP OVHcloud](/links/telecom/telephonie-voip) et/ou de [numéros alias OVHcloud](/links/telecom/telephonie-numeros).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
-Afin d'accéder à la gestion des groupes de téléphonie, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action}.
-
-Les différents groupes apparaissent alors. Cliquez sur un groupe pour afficher la liste des services qu'il contient.
+Cliquez sur un groupe de téléphonie pour afficher la liste des services qu'il contient.
 
 ![groupes de téléphonie](images/groupes01.png){.thumbnail}
 

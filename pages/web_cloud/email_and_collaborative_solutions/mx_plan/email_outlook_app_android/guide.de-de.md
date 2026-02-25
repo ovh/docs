@@ -1,6 +1,6 @@
 ---
-title: "MX Plan - Konfiguration Ihres E-Mail-Accounts in Outlook für Android"
-excerpt: "Erfahren Sie hier, wie Sie Ihre MX Plan E-Mail-Adresse auf der mobilen Outlook App für Android einrichten"
+title: "MX Plan / Zimbra STARTER - Konfiguration von Outlook für Android"
+excerpt: "Erfahren Sie hier, wie Sie Ihre MX Plan oder Zimbra STARTER E-Mail-Adresse in der mobilen Outlook-App für Android einrichten"
 updated: 2024-11-26
 ---
 

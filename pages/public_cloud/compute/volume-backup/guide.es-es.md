@@ -1,7 +1,7 @@
 ---
 title: Crear una copia de seguridad de un volumen
 excerpt: Cómo crear una copia de seguridad de su volumen Block Storage desde el área de cliente
-updated: 2025-12-15
+updated: 2026-02-24
 ---
 
 ## Objetivo
@@ -27,6 +27,10 @@ El volumen de snapshot y el volumen de backup le permiten:
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Un [volumen de Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) desmontado creado en su [proyecto de Public Cloud.](/links/public-cloud/public-cloud)
+
+## Limitaciones
+
+Las copias de seguridad de volúmenes LUKS cifrados solo pueden restaurarse en el mismo tipo de volumen LUKS cifrado.
 
 ## Procedimiento
 

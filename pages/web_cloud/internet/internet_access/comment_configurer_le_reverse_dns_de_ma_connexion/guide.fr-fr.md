@@ -15,11 +15,20 @@ Par exemple, dans le cadre de l'utilisation d'un serveur e-mail, si l'e-mail est
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP (IPv4 et/ou IPv6) de votre accès xDSL ou fibre.
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
-
 Il est également possible de configurer les Reverse DNS des blocs IPv4 fournis en option sur nos accès.
 
 Retrouvez plus d'informations dans notre guide « [Commander et gérer un bloc IP /29](/pages/web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29) ».
+
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -105,11 +114,7 @@ Nous pouvons maintenant passer à l'étape suivante qui est la configuration de 
 
 ### Configurer le Reverse DNS de votre connexion
 
-La configuration du Reverse DNS s'effectue dans l'espace client OVHcloud :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
+La configuration du Reverse DNS s'effectue dans votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx). Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 
 Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 publique sous cette forme : `109.190.xxx.xxx` ou `151.127.xxx.xxx` et votre préfixe IPv6 public sous cette forme : `2001:41d0:xxxx:xxxx::`.
 

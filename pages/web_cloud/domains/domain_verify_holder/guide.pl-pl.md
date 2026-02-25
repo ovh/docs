@@ -51,19 +51,19 @@ Jeśli ten sposób nie zadziała, właściciel może ręcznie zweryfikować swó
 Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Domeny`{.action}, a następnie wybierz nazwę domeny, która jest dotyczy.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na stronie, która się otworzy, sprawdź, czy Twoja nazwa domeny jest objęta procedurą, ponieważ istnieje baner (żółty lub czerwony) wskazujący na operację do wykonania.
 >>
@@ -71,13 +71,13 @@ Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Na nowej stronie przejdź do pola **Właściciel**, następnie kliknij przycisk `Zmodyfikuj`{.action}.
 >>
 >> ![Zarządzanie kontaktami i właścicielami](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> > [!warning]
 >> >
@@ -134,25 +134,25 @@ Dla niektórych rozszerzeń (np.: .fr, .it, .es), administrator domeny może bez
 Kliknij w karty poniżej, aby wyświetlić każdy z **4** kroków.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Operacje w Toku`{.action}, a następnie znajdź nazwę domeny w liście, która się pojawi.
 >>
 >> ![Trwające operacje](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Kliknij przycisk `⁝`{.action} po prawej stronie, a następnie `Zmień operację`{.action}.
 >>
 >> ![Operacja nazwy domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> W wyświetlonym oknie zaznacz opcję `Wznów operację`{.action}, następnie kliknij `Zatwierdź`{.action}.
 >>
