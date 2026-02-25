@@ -133,7 +133,12 @@ openstack baremetal node maintenance set <node-id>
 
 A **port group** allows enabling LACP aggregation between multiple network interfaces.
 
-Use the `--mode 802.3ad` parameter to enable LACP. If you don’t specify a MAC address with `--address`, one of the ports’ addresses will be used automatically.
+Use the `--mode 802.3ad` parameter to enable LACP. 
+* `--address <MAC>` must be equal to the MAC address of the PXE port only if it's being used. Otherwise, you can omit the parameter or set the MAC value from one of the chosen physical interfaces you intend to use.
+
+You can list all ports with `openstack baremetal port show <port-id>` and verify if PXE is used or not.
+
+Note: We recommend prefixing the portgroup name with the node name to have a clearer identification when listing all portgroups.
 
 > [!success]
 > You can create:<br>
@@ -145,7 +150,7 @@ Use the `--mode 802.3ad` parameter to enable LACP. If you don’t specify a MAC 
 ```bash
 openstack baremetal port group create \
   --node 88830859-5b16-4935-8f41-d381b754cbe5 \
-  --name portgroup-lacp \
+  --name node_name-pg-lacp \
   --mode 802.3ad \
   --address 00:00:00:20:00:01
 ```
@@ -159,7 +164,7 @@ openstack baremetal port group create \
 | uuid                       | d082c2ab-5960-44e3-920d-3d6dfb6811e9      |
 | address                    | 00:00:00:20:00:01                         |
 | node_uuid                  | 88830859-5b16-4935-8f41-d381b754cbe5      |
-| name                       | portgroup-lacp                            |
+| name                       | node_name-pg-lacp                         |
 | mode                       | 802.3ad                                   |
 | standalone_ports_supported | True                                      |
 +----------------------------+-------------------------------------------+
