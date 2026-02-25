@@ -1,7 +1,7 @@
 ---
 title: How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster
 excerpt: Learn how to manage nodes and node pools using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)
-updated: 2025-12-02
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -339,7 +339,7 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>   "name": "my_kube_cluster",
 >>   "url": "xxxxxx.c1.gra.k8s.ovh.net",
 >>   "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
->>   "version": "1.25.4-1",
+>>   "version": "1.34.1",
 >>   "nextUpgradeVersions": [],
 >>   "kubeProxyMode": "iptables",
 >>   "customization": {
