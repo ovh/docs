@@ -1,7 +1,7 @@
 ---
 title: How to create a ClickHouse cluster
 excerpt: Find out how to create and configure a ClickHouse cluster through the OVHcloud Control Panel for real-time data analytics
-updated: 2026-01-10
+updated: 2026-02-25
 ---
 
 ## Objective
