@@ -6,13 +6,23 @@ updated: 2022-08-05
 
 ## Objectif
 
-L'envoi de SMS aux Etats-Unis est soumis à des règles spécifiques. Ce guide a pour but de vous les expliquer et vous montrer comment les appliquer afin de pouvoir envoyer vos SMS vers cette destination.
+L'envoi de SMS aux États-Unis est soumis à des règles spécifiques. Ce guide a pour but de vous les expliquer et de vous montrer comment les appliquer afin de pouvoir envoyer vos SMS vers cette destination.
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud avec des crédits SMS.
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS.
 - Être connecté aux [API OVHcloud](/links/api) (uniquement pour la méthode d'envoi via API).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -20,7 +30,7 @@ L'envoi de SMS aux Etats-Unis est soumis à des règles spécifiques. Ce guide a
 
 ### Étape 1 : connaître les restrictions
 
-En accord avec l’autorité de régulation des SMS des Etats-Unis (Neustar), l'envoi de SMS vers cette destination doit faire l'objet d'une validation préalable par nos services d'un modèle de message.
+En accord avec l'autorité de régulation des SMS des États-Unis (Neustar), l'envoi de SMS vers cette destination doit faire l'objet d'une validation préalable par nos services d'un modèle de message.
 Seuls les messages d’alerte et de double authentification sont autorisés et aucun modèle de SMS publicitaire ne sera accepté. Une fois votre modèle validé, l’envoi se fera de la même manière que pour les autres destinations.
 
 Vous pouvez demander la validation de plusieurs modèles de messages.
@@ -34,7 +44,7 @@ Vous pouvez demander la validation de plusieurs modèles de messages.
 
 #### 2.1 Depuis l'espace client
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS. Cliquez sur l'onglet `Message et campagne`{.action} (3) puis sur `Gestion des SMS`{.action}. 
+Cliquez sur l'onglet `Message et campagne`{.action} (3) puis sur `Gestion des SMS`{.action}.
 
 Enfin, cliquez sur `Gérer les modèles`{.action}.
 
@@ -91,7 +101,7 @@ Our monitoring system detected your server #SERVER# doesn't respond to ping requ
 
 Une fois votre modèle de message créé et validé, l'envoi d'un SMS génère une comparaison automatique de son contenu avec vos modèles. Si la comparaison est positive, le SMS est envoyé de manière identique à un envoi vers une autre destination.
 
-Si vous envoyez un SMS aux Etats-Unis sans avoir au préalable créé et validé un modèle, le SMS sera refusé et un Premium Tracking Transaction Code (PTT code) à 1999 vous sera adressé. Ce code correspond au message d'erreur « No templates available » (pas de modèle de messages créé).
+Si vous envoyez un SMS aux États-Unis sans avoir au préalable créé et validé un modèle, le SMS sera refusé et un Premium Tracking Transaction Code (PTT code) à 1999 vous sera adressé. Ce code correspond au message d'erreur « No templates available » (pas de modèle de messages créé).
 
 Vous pouvez consulter les autres codes de retour possibles sur [ce guide](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
 

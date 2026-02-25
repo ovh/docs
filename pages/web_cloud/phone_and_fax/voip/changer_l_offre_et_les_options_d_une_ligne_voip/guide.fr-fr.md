@@ -13,7 +13,17 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 ## Prérequis
 
 - Disposer de [services VoIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -30,9 +40,7 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 
 Un changement dans votre activité peut vous amener à vouloir modifier le forfait de votre ligne VoIP, pour le passer en Offre VoIP Entreprise ou ajouter des heures de communication vers les téléphones mobiles. Ce changement peut être effectué depuis votre espace client.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
 
 Dans l'onglet `Gestion`{.action}, cliquez sur `Changer d'offre`{.action}. L'offre actuelle de votre ligne VoIP vous sera alors présentée. Cliquez sur `Modifier l'offre`{.action} pour accéder aux offres disponibles.
 
@@ -44,7 +52,7 @@ Validez enfin votre choix en cliquant sur `Valider`{.action}.
 
 Le changement d'offre sera effectif lors du prochain renouvellement de la ligne. Le renouvellement est automatique, à chaque début de mois, lors de la facturation de vos services.
 
-Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février. 
+Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serait appliqué à partir du 1er février.
 
 > [!primary]
 >
@@ -67,8 +75,8 @@ Vous pouvez adapter le nombre d'appels simultanés sur une ligne VoIP Entreprise
 
 > [!primary]
 >
-> Une ligne VoIP découverte est limitée à 1 seul appel simultané. 
->Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#changer-doffre-voip).
+> Une ligne VoIP découverte est limitée à 1 seul appel simultané.
+> Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#changer-doffre-voip).
 >
 
 Sélectionnez votre ligne VoIP puis l'onglet `Gestion des appels`{.action} (1). Cliquez alors sur `Appels simultanés`{.action} (2).
@@ -77,7 +85,7 @@ Sélectionnez votre ligne VoIP puis l'onglet `Gestion des appels`{.action} (1). 
 
 Modifiez le nombre d'appels simultanés dans le premier menu déroulant. Chaque appel simultané supplémentaire est facturé 1,00 € HT/mois. Un bon de commande correspondant devra être validé par vos soins.
 
-Prenez connaissance des Conditions Générales de Téléphonie et validez-les en cochant la case de validation. 
+Prenez connaissance des Conditions Générales de Téléphonie et validez-les en cochant la case de validation.
 
 Cliquez sur `Générer le bon de commande`{.action} afin de l'afficher. L'option ne sera prise en compte qu'après validation du paiement de ce bon de commande.
 
@@ -142,8 +150,9 @@ Vous devez alors:
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
-Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/secure-sip-line).
+Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone#commander-un-telephone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.
+
+Dans ce dernier cas de figure, nous vous invitons à sécuriser votre ligne en suivant les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/secure-sip-line).
 
 <a name="contacts"></a>
 

@@ -20,6 +20,17 @@ Un lien de secours LTE permet de sécuriser votre connexion en cas de coupure. S
 > Attention, les clés Brovi E3372-**325** sont nativement incompatibles avec les modems OVHcloud.
 >
 
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
+
 ## En pratique
 
 Cette fonctionnalité est disponible même si la configuration à distance du modem (via l'espace client OVHcloud) est désactivée.
@@ -63,12 +74,7 @@ Activer le lien de secours LTE sur un modem TG799vac nécessite quelques configu
 
 Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware « 17.1.7960.01 ».
 
-Afin de mettre à jour le modem, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
+Afin de mettre à jour le modem, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon Modem`{.action}.
 
 Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.7960.01 » dans la liste déroulante de la section `Firmware`.
 

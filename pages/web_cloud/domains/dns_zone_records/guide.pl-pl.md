@@ -1,7 +1,7 @@
 ---
 title: "Wszystko o rekordach DNS"
 excerpt: "Poznaj różne typy rekordów DNS dostępnych w strefie DNS OVHcloud"
-updated: 2026-02-10
+updated: 2026-02-19
 ---
 
 ## Wprowadzenie
@@ -202,6 +202,21 @@ Select the record you want by clicking each of the following tabs.
 >> - **Tryb Usługi**: ten tryb aktywuje się, gdy określisz priorytet różny od 0. W tym trybie możesz zdefiniować parametry, które chcesz zastosować do swojej nazwy domeny (przykładowe parametry: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, itp.). W trybie **Usługi** możesz zastosować te parametry bezpośrednio do swojej nazwy domeny, nawet jeśli ta nie ma być używana jako alias innej nazwy domeny.
 >>
 >> W razie potrzeby więcej szczegółów znajdziesz na stronie [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > Poniżej znajdziesz przykład użycia aliasu (apex) za pomocą rekordu DNS typu HTTPS:
+>> >
+>> > Strona internetowa **domain.tld** jest hostowana za infrastrukturą CDN (np. **cdn.provider.tld**).
+>> > Dzięki rekordowi DNS typu HTTPS, nazwa domeny **domain.tld** może bezpośrednio poinformować kompatybilne z Internetem przeglądarki, że usługa HTTPS powinna być rozwiązana przez dostawcę CDN **cdn.provider.tld**. To wszystko bez przekierowań i bez ręcznego zarządzania adresami IP.
+>> >
+>> > Aby to osiągnąć, rekord DNS typu HTTPS musi wskazywać:
+>> >
+>> > - W priorytet: *0*.
+>> > - W adres docelowy: *cdn.provider.tld*.
+>> > - W ustawienia: **Pozostaw to pole puste**.
+>> >
+>> > W ten sposób to **cdn.provider.tld** wskaże parametry do użycia dla **domain.tld**.
 
 #### Specjalne zastosowania: użycie rekordów CNAME <a name="cannamesecase"></a>
 

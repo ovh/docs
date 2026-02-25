@@ -1,8 +1,22 @@
 ---
 title: "Alojamento web - Lista dos endereços IP por cluster"
 excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
-updated: 2026-01-07
+updated: 2026-02-23
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -48,7 +62,9 @@ Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, cl
 >>
 >> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
-### Cluster 024
+**Clique no número do cluster abaixo onde se encontra o seu alojamento web para mostrar os endereços IP correspondentes.**
+
+/// details | Cluster 024
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -80,27 +96,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 91.134.248.230
 ```
 
-### Cluster 051
+///
 
-De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
-
-|País|Código de país|IPv4|IPv6|
-|---|---|----|---|
-|Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Se o **Shared CDN** estiver ativado no seu alojamento, deve utilizar este endereço IP:
-
-```bash
-46.105.204.51
-```
-
-Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-51.161.94.36
-```
-
-### Cluster 100
+/// details | Cluster 100
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -132,7 +130,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 54.36.142.130
 ```
 
-### Cluster 102
+///
+
+/// details | Cluster 102
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -163,7 +163,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.39.29.130
 ```
 
-### Cluster 103
+///
+
+/// details | Cluster 103
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -194,7 +196,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.52.162
 ```
 
-### Cluster 105
+///
+
+/// details | Cluster 105
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -225,7 +229,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.37.162
 ```
 
-### Cluster 106
+///
+
+/// details | Cluster 106
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -256,7 +262,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.47.98
 ```
 
-### Cluster 107
+///
+
+/// details | Cluster 107
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -287,7 +295,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.52.18
 ```
 
-### Cluster 110
+///
+
+/// details | Cluster 110
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -318,7 +328,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.39.194
 ```
 
-### Cluster 111
+///
+
+/// details | Cluster 111
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -349,7 +361,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.38.50
 ```
 
-### Cluster 112
+///
+
+/// details | Cluster 112
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -380,7 +394,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.39.53.162
 ```
 
-### Cluster 113
+///
+
+/// details | Cluster 113
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -411,7 +427,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.39.18
 ```
 
-### Cluster 114
+///
+
+/// details | Cluster 114
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -442,7 +460,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.42.162
 ```
 
-### Cluster 115
+///
+
+/// details | Cluster 115
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -473,7 +493,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.41.162
 ```
 
-### Cluster 117
+///
+
+/// details | Cluster 117
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -504,7 +526,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.50.34
 ```
 
-### Cluster 120
+///
+
+/// details | Cluster 120
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -536,7 +560,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.48.162
 ```
 
-### Cluster 121
+///
+
+/// details | Cluster 121
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -568,7 +594,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.48.114
 ```
 
-### Cluster 123
+///
+
+/// details | Cluster 123
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -600,7 +628,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.41.82
 ```
 
-### Cluster 126
+///
+
+/// details | Cluster 126
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -632,7 +662,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.42.226
 ```
 
-### Cluster 127
+///
+
+/// details | Cluster 127
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -664,7 +696,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.54.114
 ```
 
-### Cluster 128
+///
+
+/// details | Cluster 128
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -696,7 +730,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.37.210
 ```
 
-### Cluster 129
+///
+
+/// details | Cluster 129
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -728,7 +764,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.48.82
 ```
 
-### Cluster 130
+///
+
+/// details | Cluster 130
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -760,7 +798,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.43.82
 ```
 
-### Cluster 131
+///
+
+/// details | Cluster 131
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -792,7 +832,9 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 5.135.42.194
 ```
 
-### Cluster 151
+///
+
+/// details | Cluster 151
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
 
@@ -811,6 +853,8 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 ```bash
 15.235.26.178
 ```
+
+///
 
 ## Quer saber mais?
 

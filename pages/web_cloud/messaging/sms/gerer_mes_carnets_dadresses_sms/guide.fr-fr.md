@@ -12,7 +12,17 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 - Disposer d'un compte SMS OVHcloud.
 - Disposer d'un outil de type tableur ou éditeur de texte.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -20,9 +30,7 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 ### Étape 1 : créer un carnet d'adresses dans votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action}.
-
-Cliquez sur le compte SMS souhaité et choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
+Choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 
 ![phonebook](images/smsphonebook01.png){.thumbnail}
 
@@ -96,7 +104,7 @@ Patientez quelques secondes pendant le chargement du fichier dans votre espace c
 
 Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre carnet dans le menu déroulant (1) (si vous avez créé plusieurs carnets) puis cliquez sur le crayon (2) en face du nom du carnet. 
 
-Pour supprimer un carnet, cliquez sur `Supprimer le carnet d'adresses`{.action} après l'avoir préalablement sélectionné dans le menu déroulant (1).
+Pour supprimer un carnet, sélectionnez-le dans le menu déroulant (1) puis cliquez sur `Supprimer le carnet d'adresses`{.action}.
 
 Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur `...`{.action} (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix.
 
