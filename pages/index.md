@@ -329,6 +329,7 @@
             + [How to create and import a Lovable website on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/import-lovable-website-on-vps)
             + [How to install an AI agent on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/install-ia-agent-on-vps)
             + [How to install ISPmanager on a VPS or Dedicated Server](bare_metal_cloud/virtual_private_servers/install_ispmanager)
+            + [How to install Docker and Docker Compose on a VPS](bare_metal_cloud/virtual_private_servers/install_docker_on_vps)
             + [How to install Nextcloud on an OVHcloud VPS with Docker](bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_beginner)
             + [How to install Nextcloud on an OVHcloud VPS with Docker and Traefik](bare_metal_cloud/virtual_private_servers/install_nextcloud_on_vps_advanced)
             + [How to install an OpenClaw agent on a VPS](bare_metal_cloud/virtual_private_servers/install_openclaw)
