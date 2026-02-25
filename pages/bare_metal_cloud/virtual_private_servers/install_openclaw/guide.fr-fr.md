@@ -1,84 +1,74 @@
 ---
-title: "Installer OpenClaw derrière Traefik sur un VPS OVHcloud avec endpoints OVH AI"
-excerpt: "Déployez OpenClaw en production avec HTTPS automatique via Traefik et connectez-le aux endpoints OVH AI sur un VPS OVHcloud."
-updated: 2026-02-24
----
-
-**OpenClaw** (successeur de Moltbot et Clawdbot) est la nouvelle version évoluée de l'assistant IA autonome. Ce guide utilise **Docker** afin de protéger votre système hôte tout en vous assurant que votre assistant reste en ligne 24h/24.
-
-# Installer OpenClaw en production avec Traefik et endpoints OVH AI
-
-Ce guide explique comment déployer **OpenClaw** sur un VPS OVHcloud avec :
-
-- Docker & Docker Compose
-- Traefik (reverse proxy)
-- Certificats HTTPS automatiques (Let's Encrypt)
-- Connexion aux endpoints OVH AI
-
-Contrairement à une installation locale via tunnel SSH, cette méthode permet :
-
-- un accès public sécurisé
-- une architecture évolutive
-- l’ajout futur d’autres services derrière le même proxy (nextcloud, n8n, stoat etc...)
-
+title: "Comment installer OpenClaw sur un VPS"
+excerpt: "Déployez OpenClaw en production avec HTTPS automatique via Traefik et connectez-le aux AI Endpoints OVHcloud sur un VPS"
+updated: 2026-02-25
 ---
 
 ## Objectif
 
-Mettre en place l’architecture suivante :
+**OpenClaw** (successeur de Moltbot et Clawdbot) est la nouvelle version évoluée de l'assistant IA autonome. Ce guide utilise Docker pour protéger votre système hôte et garantir que votre assistant reste en ligne 24h/24.
 
-```
+Contrairement à une installation locale via tunnel SSH, cette méthode permet :
+
+- un accès public sécurisé via HTTPS (Let's Encrypt)
+- une architecture évolutive derrière Traefik (reverse proxy)
+- l'ajout futur d'autres services derrière le même proxy (Nextcloud, n8n, Stoat, etc.)
+
+L'architecture cible :
+
+```text
 Internet
    ↓
 Traefik (HTTPS automatique)
    ↓
 OpenClaw Gateway
    ↓
-Endpoints OVH AI
+AI Endpoints OVHcloud
 ```
 
----
+**Ce guide explique comment déployer OpenClaw en production avec Docker, Traefik et les AI Endpoints OVHcloud sur un VPS.**
 
 ## Prérequis
 
-- VPS OVHcloud (Debian 11/12 ou Ubuntu 22.04+)
-- Accès SSH
-- Nom de domaine pointant vers votre VPS. Vous pouvez utiliser le nom de domaine qu'OVHcloud vous fourni avec votre VPS. Exemple nomdevotrevps.vps.ovh.net.
-- Clé API OVH AI
+- Disposer d'un [VPS OVHcloud](/links/bare-metal/vps) (Debian 11/12 ou Ubuntu 22.04+). Consultez notre guide « [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
+- Accès SSH à votre VPS
+- Un nom de domaine pointant vers votre VPS. Consultez notre guide « [Ajouter un enregistrement DNS de type A](/pages/web_cloud/domains/dns_zone_a_record_creation) » si nécessaire.
+- Une clé API OVHcloud AI Endpoints. Consultez notre guide « [AI Endpoints - Premiers pas](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) » pour en générer une.
 
----
-
-# Sommaire
+## Sommaire
 
 - [Étape 1 - Installation de Docker](#docker)
 - [Étape 2 - Création du réseau proxy](#network)
 - [Étape 3 - Installation de Traefik](#traefik)
-- [Étape 4 - Installation d’OpenClaw](#openclaw)
+- [Étape 4 - Installation d'OpenClaw](#openclaw)
 - [Étape 5 - Configuration pour Traefik](#traefik-config)
-- [Étape 6 - Configuration des endpoints OVH AI](#ovh)
+- [Étape 6 - Configuration des AI Endpoints OVHcloud](#ovh)
 - [Étape 7 - Démarrage final](#launch)
-- [Étape 8 - Pairing du device](#pairing)
+- [Étape 8 - Association de l'appareil](#pairing)
 
----
+## En pratique
 
-## Étape 1 - Installation de Docker <a name="docker"></a>
+### Étape 1 - Installation de Docker <a name="docker"></a>
 
-Vérifiez que docker est installer sur votre machine :
+Vérifiez que Docker est installé sur votre machine :
+
 ```bash
 docker --version
 docker compose version
 ```
-Si vous voyez quelques chose comme ça : 
-```bash
+
+Si vous obtenez une sortie similaire à :
+
+```console
 Docker version 29.2.1, build a5c7197
 Docker Compose version v5.0.2
 ```
-C'est que docker est deja installer sur votre machine. Sinon suivez le **guide**.
 
-### Configuration des droits Docker (important)
+Cela signifie que Docker est déjà installé sur votre machine. Dans le cas contraire, suivez le [guide d'installation de Docker](/pages/bare_metal_cloud/virtual_private_servers/install_docker_on_vps).
 
-Par défaut, les commandes Docker nécessitent `sudo`.  
-Or, le script `docker-setup.sh` doit être exécuté **sans sudo** afin d’éviter des problèmes de permissions sur les fichiers générés (`.env`, `.openclaw`, volumes, etc.).
+#### Configuration des droits Docker (important)
+
+Par défaut, les commandes Docker nécessitent `sudo`. Cependant, le script `docker-setup.sh` doit être exécuté **sans sudo** pour éviter des problèmes de permissions sur les fichiers générés (`.env`, `.openclaw`, volumes, etc.).
 
 Ajoutez votre utilisateur au groupe `docker` :
 
@@ -98,11 +88,9 @@ Vous pouvez vérifier que Docker fonctionne sans sudo :
 docker ps
 ```
 
-Si la commande s’exécute sans erreur de permission, vous pouvez continuer l’installation.
+Si aucune erreur de permission n'apparaît, continuez l'installation.
 
----
-
-## Étape 2 - Création du réseau proxy <a name="network"></a>
+### Étape 2 - Création du réseau proxy <a name="network"></a>
 
 Traefik et OpenClaw doivent partager un réseau Docker commun :
 
@@ -110,18 +98,18 @@ Traefik et OpenClaw doivent partager un réseau Docker commun :
 docker network create proxy
 ```
 
----
+### Étape 3 - Installation de Traefik <a name="traefik"></a>
 
-## Étape 3 - Installation de Traefik <a name="traefik"></a>
-
-### Création du dossier
+#### Création du dossier
 
 ```bash
 mkdir -p ~/docker/traefik && cd ~/docker/traefik
 nano docker-compose.yml
 ```
 
-### docker-compose.yml
+#### Configuration du fichier docker-compose.yml
+
+Copiez la configuration suivante dans le fichier `docker-compose.yml` :
 
 ```yaml
 services:
@@ -152,9 +140,12 @@ networks:
   proxy:
     external: true
 ```
-N'oubliez pas d'adapter le fichier en remplaçant YOUR_EMAIL par votre email.
 
-### Initialisation Let's Encrypt
+N'oubliez pas d'adapter le fichier en remplaçant `YOUR_EMAIL` par votre e-mail.
+
+#### Initialisation du stockage Let's Encrypt
+
+Créez le répertoire et le fichier de stockage des certificats avec les permissions appropriées :
 
 ```bash
 mkdir letsencrypt
@@ -162,14 +153,15 @@ touch letsencrypt/acme.json
 chmod 600 letsencrypt/acme.json
 ```
 
-### Démarrage
+#### Démarrage de Traefik
+
+Lancez le conteneur Traefik en arrière-plan :
 
 ```bash
 docker compose up -d
 ```
 
----
-## Étape 4 - Installation d’OpenClaw <a name="openclaw"></a>
+### Étape 4 - Installation d'OpenClaw <a name="openclaw"></a>
 
 ```bash
 cd ~
@@ -177,7 +169,7 @@ git clone https://github.com/openclaw/openclaw.git
 cd openclaw
 ```
 
-Préparer les dossiers :
+Préparez les dossiers :
 
 ```bash
 mkdir -p ~/.openclaw/workspace
@@ -185,24 +177,24 @@ mkdir -p ~/.openclaw/workspace
 sudo chown -R ubuntu:ubuntu ~/openclaw
 ```
 
-Lancer le wizard :
+Lancez le wizard :
 
 ```bash
 ./docker-setup.sh
 ```
 
-À la fin de l'installation notez bien le token qui vous est fourni, on s'en servira pour se connecter à Openclaw. 
-À tout moment vous pouvez retrouver cette valeur qui est stocker dans le .env de votre dossier openclaw en faisant : 
+À la fin de l'installation, notez bien le token qui vous est fourni, vous en aurez besoin pour vous connecter à OpenClaw.
+À tout moment, vous pouvez retrouver cette valeur qui est stockée dans le `.env` de votre dossier OpenClaw :
 
 ```bash
 cat .env
 #Ou alors via la commande :
 grep OPENCLAW_GATEWAY_TOKEN .env
 ```
----
 
-## Étape 5 - Configuration pour Traefik, et simplification de l'architecture OpenClaw <a name="traefik-config"></a>
-Nous vous conseillons de modifier le `docker-compose.yml` généré par :
+### Étape 5 - Configuration pour Traefik <a name="traefik-config"></a>
+
+Remplacez le contenu du `docker-compose.yml` généré par :
 
 ```yaml
 services:
@@ -243,21 +235,19 @@ networks:
   proxy:
     external: true
 ```
-N'oubliez pas d'adapter le fichier en remplaçant YOUR_DOMAIN_NAME par votre nom de domaine.
 
----
+N'oubliez pas d'adapter le fichier en remplaçant `YOUR_DOMAIN_NAME` par votre nom de domaine.
 
-## Étape 6 - Configuration des endpoints OVH AI <a name="ovh"></a>
+### Étape 6 - Configuration des AI Endpoints OVHcloud <a name="ovh"></a>
 
-Éditez :
+Avant de modifier le fichier de configuration, créez une sauvegarde puis ouvrez-le dans un éditeur de texte :
 
 ```bash
-#Avant d'etiter nous vous conseillons toujours de faire un backup en utilisant la commande mv, exemple ==>
-mv ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.
+mv ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak
 nano ~/.openclaw/openclaw.json
 ```
 
-Ajoutez dans la section `"gateway"` :
+Copiez la configuration suivante dans le fichier `openclaw.json`. Cette configuration définit les paramètres de connexion, la gateway et le provider OVHcloud AI Endpoints :
 
 ```json
 {
@@ -272,22 +262,22 @@ Ajoutez dans la section `"gateway"` :
     "port": 18789,
     "mode": "local",
     "bind": "lan",
-	"controlUi": {
-		"allowedOrigins": [
-		  "https://YOUR_DOMAINNAME"
-		]
-	},
+    "controlUi": {
+      "allowedOrigins": [
+        "https://YOUR_DOMAIN_NAME"
+      ]
+    },
     "auth": {
       "mode": "token",
       "token": "YOUR_OPENCLAW_TOKEN"
-		}
-    },
+    }
+  },
   "models": {
     "mode": "merge",
     "providers": {
       "ovhcloud": {
         "baseUrl": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
-        "apiKey": YOUR_OVH_ENDPOINT_API_KEY,
+        "apiKey": "YOUR_OVH_ENDPOINT_API_KEY",
         "api": "openai-completions",
         "models": [
           {
@@ -309,19 +299,20 @@ Ajoutez dans la section `"gateway"` :
       "models": {
         "ovhcloud/gpt-oss-120b": {}
       }
-	 }
-	},
+    }
+  }
 }
-
 ```
+
 N'oubliez pas d'adapter le fichier en remplaçant les valeurs suivantes :
-- YOUR_DOMAIN_NAME par votre nom de domaine.
-- YOUR_OPENCLAW_TOKEN par le token que Openclaw vous a fourni à la fin de l'installation
-- YOUR_OVH_ENDPOINT_API_KEY par votre clé API
 
----
+- `YOUR_DOMAIN_NAME` par votre nom de domaine.
+- `YOUR_OPENCLAW_TOKEN` par le token qu'OpenClaw vous a fourni à la fin de l'installation.
+- `YOUR_OVH_ENDPOINT_API_KEY` par votre clé API.
 
-## Étape 7 - Démarrage final <a name="launch"></a>
+### Étape 7 - Démarrage final <a name="launch"></a>
+
+Une fois la configuration terminée, redémarrez les conteneurs OpenClaw pour appliquer les modifications :
 
 ```bash
 cd ~/openclaw/
@@ -329,40 +320,35 @@ docker compose down
 docker compose up -d
 ```
 
-Vérifiez :
+Vérifiez que le gateway est bien actif en consultant les logs du conteneur :
 
 ```bash
 docker logs openclaw
 ```
 
-Vous devez voir en bleu cyan:
-```
+Si le démarrage s'est déroulé correctement, vous devez voir apparaître le message suivant (en bleu cyan) :
+
+```console
 Gateway listening on 0.0.0.0:18789
 ```
 
----
+### Étape 8 - Association de l'appareil <a name="pairing"></a>
 
-## Étape 8 - Pairing du device <a name="pairing"></a>
+Accédez à l'interface web d'OpenClaw depuis votre navigateur en ouvrant l'URL de votre domaine :
 
----
-
-# Accès à l’interface
-
-Ouvrez :
-
-```
+```text
 https://votre-domaine.com
 ```
 
-Dans "Overview", saisissez votre Gateway Token.
+Dans la section `Overview`, saisissez votre `Gateway Token` pour vous authentifier.
 
----
+Lors de la première connexion depuis un nouvel appareil, l'interface affiche le message suivant :
 
-Lors de la première connexion, l’interface affichera :
+```console
+pairing required
+```
 
-> pairing required
-
-Approuvez le device :
+Pour autoriser l'appareil, listez les appareils en attente puis approuvez celui souhaité en remplaçant `<ID>` par l'identifiant affiché :
 
 ```bash
 docker exec -it openclaw node dist/index.js devices list
