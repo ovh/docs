@@ -1365,6 +1365,7 @@
             + [Getting started](public-cloud-data-analytics-clickhouse-getting-started)
             + [Configuration](public-cloud-data-analytics-clickhouse-configuration)
             + [Tutorials](public-cloud-data-analytics-clickhouse-tutorials)
+                + [ClickHouse - Connect with Tabix](public_cloud/data_analytics/analytics/clickhouse_connect_tabix) 
         + [Kafka](products/public-cloud-data-analytics-kafka)
             + [Key concepts](public-cloud-data-analytics-kafka-key-concepts)
                 + [Lifecycle policy for Analytics](public_cloud/data_analytics/analytics/information_02_lifecycle_policy)
