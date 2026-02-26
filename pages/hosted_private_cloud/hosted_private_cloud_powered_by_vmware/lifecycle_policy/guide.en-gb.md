@@ -1,7 +1,7 @@
 ---
 title: "Hosted Private Cloud VMware Lifecycle Policy"
-excerpt: "Lifecycle policy for VMware on OVHcloud"
-updated: 2026-02-10
+excerpt: "Discover the lifecycle policy for VMware on OVHcloud services, including maintenance, sunset, and end of support phases"
+updated: 2026-02-26
 ---
 
 > [!warning]
@@ -15,12 +15,12 @@ updated: 2026-02-10
 
 Hosted Private Cloud VMware on OVHcloud services proposes dedicated infrastructure based on SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 
-OVHcloud has a lifecycle policy for the service in order to take into account several factors, such as:
+OVHcloud has a lifecycle policy for the service to take into account several factors, such as:
 
-* the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
-* the lifecycle of the hardware components;
-* the compatibility between hardware and/or software components;
-* any factor affecting the quality of the service.
+- the lifecycle policy of integrated software components as determined by their editors (VMware, Veeam, Zerto, etc.);
+- the lifecycle of the hardware components;
+- the compatibility between hardware and/or software components;
+- any factor affecting the quality of the service.
 
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to a newer version or range.
 
@@ -51,6 +51,7 @@ Our team is committed to helping you navigate this transition and ensuring a sea
 #### Sunset Mode
 
 Sunset mode is a phase in the product lifecycle where a service or feature is nearing the end of its supported life. At this stage, the service or feature is still available for use, but it will no longer receive regular updates, new features, or significant bug fixes.
+
 During this phase, OVHcloud will provide support to help customers migrate to alternative services or solutions that meet their evolving needs. Our goal is to ensure a seamless transition and minimize disruption to your business.
 
 While the service or feature is in the Sunset mode phase, customers can expect:
@@ -59,25 +60,22 @@ While the service or feature is in the Sunset mode phase, customers can expect:
 - Assistance from OVHcloud in migrating to other services or solutions
 - Regular communication about the upcoming Support Expiration date and recommended next steps
 - Access to documentation and resources to help with the migration process
-- Existing customers for these specifics services will no longer be able to add host
 
-#### End of Support 
+#### End of Support
 
 The following services and features have reached end of support and are no longer available.
 
-## OVHcloud Commercial status
+### Timeline
 
-### Products (platform)
+![Typical lifecycle](images/01_lifecycle_pcc.png){.thumbnail}
 
-**Hosted Private Cloud VMware on OVHcloud Products**:
+## OVHcloud Commercial Range Status
 
-- Public VMware Cloud Foundation as-a-Service
-- Managed VMware vSphere
-- Private VMware Cloud Foundation - Stretched Cluster 3AZ
+### Products (Platforms)
 
-|                   Products                            | General Availability | Maintenance Mode | Sunset Mode | End of Support |
+|                   Commercial Range                    | General Availability | Maintenance Mode | Sunset Mode | End of Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-|  Managed VMware vSphere                               |          2016        |  2027-05-31  |  2027-10-31   | 2028-10-31  |
+|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
 |  Public VMware Cloud Foundation as-a-Service          |          2025        |              |               |             |
 |Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
 
@@ -90,25 +88,25 @@ For the Managed VMware vSphere product, a specific hardware lifecycle applies:
 
 |                   Hardware Generation                 | General Availability |     Sales    |    Growth     | End of Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-31   | 2028-05-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-31   | 2028-05-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-03-31  |  2026-03-31   | 2028-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-03-31   | 2028-10-31  |
-|           Premier2026 (Intel Emerald Rapids)          |          2026        |              |               | 2028-10-31  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-04-30   | 2027-05-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-04-30   | 2027-05-31  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-09-30   | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-05-31  |               | 2027-10-31  |
 
-### Managed VMware Cloud Foundation - Stretched Cluster 3AZ Hosts (compute)
+### Private VMware Cloud Foundation Hosts (compute)
 
-|                   Hardware Generation                 | General Availability |    Sales     |     Growth    |End of Support|
+|                   Hardware Generation                 | General Availability |    Sales    |     Growth     | End of Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-|                 AMD Epyc Turin                        |          2027        |              |               |             |
+| AMD Epyc Turin (3AZ)                                  |          2027        |             |                |             |
 
 ## Integrated Software
 
 ### VMware lifecycle policy
 
-To know the lifecycle policy of VMware products, please refer to the editor's publication accessible at the following URL:
+For the VMware product lifecycle policy, refer to the editor's publication:
 
-- [VMware Product Lifecycle](https://lifecycle.vmware.com/#/)
+[VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
 ### Veeam Backup & Replication lifecycle policy
 
