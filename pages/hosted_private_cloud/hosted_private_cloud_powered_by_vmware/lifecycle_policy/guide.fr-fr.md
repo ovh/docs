@@ -72,7 +72,7 @@ Les services et fonctionnalités suivants ont atteint leur fin de support et ne 
 
 |                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2028-10-31  |
+|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
 |     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
 |Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
 
@@ -85,17 +85,17 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 
 |                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-31   | 2028-05-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-31   | 2028-05-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-03-31  |  2026-03-31   | 2028-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-03-31   | 2028-10-31  |
-|           Premier2026 (Intel Emerald Rapids)          |          2026        |              |               | 2028-10-31  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-04-30   | 2027-05-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-04-30   | 2027-05-31  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-09-31   | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-05-31  |               | 2027-10-31  |
 
-### Hôtes Private VMware Cloud Foundation - Stretched Cluster 3AZ (calcul)
+### Hôtes Private VMware Cloud Foundation (calcul)
 
 |                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| AMD Epyc Turin                                        |          2027        |             |                |             |
+| AMD Epyc Turin (3AZ)                                  |          2027        |             |                |             |
 
 ## Logiciels intégrés
 
