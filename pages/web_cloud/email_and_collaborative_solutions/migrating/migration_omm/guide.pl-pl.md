@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Wymagania początkowe
 
-- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
+- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
 - Posiadaj dane logowania do kont e-mailowych, które chcesz przenieść (konta źródłowe).
 - Posiadaj dane logowania do kont e-mailowych docelowych.
 

@@ -54,10 +54,10 @@ Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effec
 ### Aperçu du contenu
 
 - [Informations de base](#basicinformation)
-- [Compréhension de la partition système EFI (ESP)](#efisystemparition)
+- [Compréhension de la partition système EFI (ESP)](#efisystempartition)
 - [Simulation d'une panne de disque](#diskfailure)
     - [Retirer le disque défectueux](#diskremove)
-- [Reconstruction du RAID (avec des ESP non-mirrorrées)](#raidrebuildnonmirrored)
+- [Reconstruction du RAID (avec des ESP non mises en miroir)](#raidrebuildnonmirrored)
     - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](#nonmirroredrescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID avec des ESP non synchronisés après des mises à jour majeures du système (GRUB)](#efiraidgrub)
@@ -105,7 +105,7 @@ md2 : active raid1 nvme1n1p2[0] nvme0n1p2[1]
 unused devices: <none>
 ```
 
-D'après les résultats, nous avons actuellement trois périphériques RAID logiciels configurés, **md1**, **md2** et **md3**, avec **md3** étant le plus grand des deux. **md3** est composé de deux partitions, appelées **nvme0n1p3** et **nvme1n1p3**.
+D'après les résultats, nous avons actuellement trois périphériques RAID logiciels configurés, **md1**, **md2** et **md3**, avec **md3** étant le plus grand des trois. **md3** est composé de deux partitions, appelées **nvme0n1p3** et **nvme1n1p3**.
 
 Si vous avez un serveur avec des disques SATA, vous obtiendrez les résultats suivants :
 
@@ -227,20 +227,21 @@ nvme0n1
 
 Notez les périphériques, les partitions et les points de montage, car cela est important, en particulier après le remplacement d'un disque. Cela vous permettra de vérifier que les partitions sont correctement montées sur leurs points de montage respectifs sur le nouveau disque.
 
-Dans note exemple, nous avons :
+Dans notre exemple, nous avons :
 
-- Deux matrices RAID : `/dev/md2` et `/dev/md3`.
-- Partitions faisant partie du RAID : **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** et **nvme0n1p3** avec les points de montage `/boot` et `/`.
-- Partitions ne faisant pas partie du RAID : **nvem0n1p1**, **nvme0n1p4** et **nvme1n1p4** avec les points de montage `/boot/efi` et [SWAP].
-- Une partition n'a pas de point de montage : **nvme1n1p1**.
+- Partitions faisant partie de md2 (`/boot`) : **nvme0n1p2** et **nvme1n1p2**.
+- Partitions faisant partie de md3 (`/`) : **nvme0n1p3** et **nvme1n1p3**.
+- Partitions swap : **nvme0n1p4** et **nvme1n1p4**.
+- ESP montée (`/boot/efi`) : **nvme0n1p1**.
+- ESP non montée : **nvme1n1p1**.
 
-La partition `nvme0n1p5` est une partition de configuration, c'est-à-dire un volume en lecture seule connecté au serveur qui lui fournit les données de configuration initiale.
+La partition `nvme0n1p5` est un [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), c'est-à-dire un volume en lecture seule qui fournit au serveur ses données de configuration initiale. Elle n'est lue qu'une seule fois lors du premier démarrage et peut être supprimée ensuite.
 
 <a name="efisystempartition"></a>
 
 ### Comprendre la partition système EFI (ESP)
 
-/// details | **Déplier cette section**
+/// details | **Dépliez cette section**
 
 ***Qu'est-ce qu'une partition système EFI ?***
 
@@ -253,10 +254,10 @@ Une partition système EFI est une partition qui peut contenir les chargeurs de 
 * Debian 13
 * Proxmox 9
 * Ubuntu 25.10
-* AlmaLinux and Rocky Linux 10
+* AlmaLinux et Rocky Linux 10
 * Fedora 43
 
-Pour les versions antérieures de ces systèmes d'exploitation, la partition EFI n'est pas mise en miroir dans RAID ; plusieurs ESP sont créés, un par disque. Cependant, une seule ESP est montée à la fois, et toutes les ESP contiennent les mêmes fichiers. La partition système EFI est montée dans `/boot/efi`, et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
+Pour les versions antérieures de ces systèmes d'exploitation, la partition EFI n'est pas mise en miroir dans RAID ; plusieurs ESP sont créés, un par disque. Cependant, une seule ESP est montée à la fois. La partition système EFI est montée dans `/boot/efi`, et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
 
 Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait partie d'une configuration RAID.
 
@@ -289,6 +290,7 @@ Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait 
 >>
 >> ```sh
 >> lsblk
+>> NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
 >> nvme0n1     259:0    0 476.9G  0 disk
 >> ├─nvme0n1p1 259:1    0   511M  0 part
 >> │ └─md1       9:1    0 510.9M  0 raid1 /boot/efi
@@ -604,7 +606,7 @@ Nous pouvons maintenant procéder au remplacement du disque et à la reconstruct
 
 <a name="raidrebuildnonmirrored"></a>
 
-### Reconstruction du RAID (avec des ESP non-mirrorrées)
+### Reconstruction du RAID (avec des ESP non mises en miroir)
 
 > [!primary]
 > Ce processus peut varier selon le système d'exploitation installé sur votre serveur. Nous vous recommandons de consulter la documentation officielle de votre système d'exploitation pour obtenir les commandes appropriées.
@@ -824,7 +826,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 #### Reconstruction du RAID avec des ESP non synchronisés après des mises à jour majeures du système (GRUB) <a name="efiraidgrub"></a>
 
-/// details | **Développez cette section**
+/// details | **Dépliez cette section**
 
 > [!warning]
 > Veuillez suivre les étapes de cette section uniquement si cela s'applique à votre cas.
@@ -834,7 +836,7 @@ Si le disque principal est remplacé alors qu'il contient des partitions systèm
 
 Dans ce cas, en plus de reconstruire le RAID et de recréer la partition système EFI en mode rescue, vous devez également réinstaller le GRUB sur celle-ci.
 
-Une fois l'ESP créé (comme expliqué ci-dessus) et reconnu par le système, toujours dans l'environnement `choot`, créez le dossier /boot/efi pour monter la nouvelle partition système EFI **nvme0n1p1**.
+Une fois l'ESP créé (comme expliqué ci-dessus) et reconnu par le système, toujours dans l'environnement `chroot`, créez le dossier /boot/efi pour monter la nouvelle partition système EFI **nvme0n1p1**.
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -867,7 +869,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 #### Reconstruction du RAID après le remplacement du disque principal (mode normal)
 
-/// details | **Développez cette section**
+/// details | **Dépliez cette section**
 
 Si votre serveur est capable de démarrer en mode normal après un remplacement de disque, vous pouvez suivre les étapes ci-dessous pour reconstruire le RAID.
 
@@ -1031,7 +1033,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >>
 >> Exécutez la commande `partprobe`.
 >>
->> Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter à nouveau les nouvelles partitions (nvme0n1p2 et nvme0n1p3) à la matrice RAID.
+>> Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter à nouveau les nouvelles partitions (nvme0n1p1, nvme0n1p2 et nvme0n1p3) à la matrice RAID.
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md1 /dev/nvme0n1p1
@@ -1156,7 +1158,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 ///
 
-#### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
+### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
 
 /// details | **Dépliez cette section**
 

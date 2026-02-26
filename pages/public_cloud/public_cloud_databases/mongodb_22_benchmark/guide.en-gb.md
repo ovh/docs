@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Benchmark MongoDB Instances
+title: Benchmark Public Cloud Databases for MongoDB
 excerpt: Benchmark MongoDB Instances
 updated: 2025-01-06
 ---

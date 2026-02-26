@@ -75,7 +75,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
 
 ## En pratique
 

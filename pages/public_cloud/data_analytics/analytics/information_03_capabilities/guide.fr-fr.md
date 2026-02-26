@@ -1,5 +1,5 @@
 ---
-title: Analytics - Capabilities and Limitations
+title: Capacités et limitations des services Analytics (EN)
 excerpt: Discover the capabilities and limitations of Analytics services
 updated: 2025-02-03
 ---

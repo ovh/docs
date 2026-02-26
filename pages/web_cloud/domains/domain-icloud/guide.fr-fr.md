@@ -1,7 +1,7 @@
 ---
-title: 'Comment utiliser un domaine OVHcloud avec iCloud Mail'
+title: 'Comment utiliser un nom de domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
-updated: 2025-08-27
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -62,7 +62,7 @@ Une fois les enregistrements DNS (MX, CNAME, TXT, DMARC) correctement ajoutés d
 
 Suivez les instructions de la page « Add a domain you own to iCloud Mail on iCloud.com » de la [documentation officielle Apple](https://support.apple.com/guide/icloud/add-a-domain-you-own-mma473945269/icloud). Concentrez-vous sur la section « Step 4: Finish setting up the domain ».
 
-Une fois cette étape terminée, votre domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
+Une fois cette étape terminée, votre nom de domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
 
 > [!warning]
 >
@@ -85,7 +85,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### DKIM incomplet
 
-- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS. 
+- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS.
 
 #### Délai de propagation
 

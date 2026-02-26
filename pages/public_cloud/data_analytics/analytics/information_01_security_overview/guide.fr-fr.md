@@ -1,6 +1,6 @@
 ---
-title: Analytics Concepts - Présentation de la sécurité (EN)
-excerpt: Analytics  security overview
+title: Présentation de la sécurité des services Analytics (EN)
+excerpt: Analytics security overview
 updated: 2025-12-04
 ---
 

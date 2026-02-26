@@ -49,8 +49,8 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-A questo punto, è possibile rimuovere l'istanza dal Rescue mode. (Consulta la guida [Attivare un'istanza in modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+A questo punto, è possibile rimuovere l'istanza dal Rescue mode. (Consulta la guida [Attivare un'istanza in modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

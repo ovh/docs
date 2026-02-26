@@ -1,5 +1,5 @@
 ---
-title: Analytics Concepts - Security overview
+title: Security overview for Analytics
 excerpt: Analytics security overview
 updated: 2025-12-04
 ---

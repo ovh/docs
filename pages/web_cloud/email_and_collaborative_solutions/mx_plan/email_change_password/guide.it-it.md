@@ -18,7 +18,7 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 - In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](/links/web/email).
 - Disporre di una soluzione email OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting Web](/links/web/hosting) o inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 

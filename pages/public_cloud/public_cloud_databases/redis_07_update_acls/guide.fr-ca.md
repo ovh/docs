@@ -1,5 +1,5 @@
 ---
-title: "Valkey - Gérer les ACL via l'API (EN)"
+title: "Gérer les ACL via l'API pour Public Cloud Databases pour Valkey (EN)"
 excerpt: Update users ACLs with the OVHcloud API
 updated: 2024-06-12
 ---

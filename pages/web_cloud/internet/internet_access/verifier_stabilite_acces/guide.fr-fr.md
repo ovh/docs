@@ -13,7 +13,17 @@ Les *logs radius* disponibles via les API OVHcloud permettent de vérifier la st
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) actif.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
+
 - Être connecté aux [API OVHcloud](/links/api).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
@@ -43,10 +53,7 @@ La période de récupération des logs radius est de trois mois maximum.
 
 Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, suivez ces étapes :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-
-La référence interne est affichée dans le cadre `Accès Internet` à droite.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
 ![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
 

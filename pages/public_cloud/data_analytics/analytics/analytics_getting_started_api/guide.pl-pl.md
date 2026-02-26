@@ -1,5 +1,5 @@
 ---
-title: Analytics - Getting started with APIs
+title: Getting started with Analytics APIs
 excerpt: Find out how to order and manage your analytics service using the OVHcloud API
 updated: 2025-02-03
 ---

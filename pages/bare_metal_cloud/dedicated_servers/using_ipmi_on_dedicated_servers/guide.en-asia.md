@@ -1,7 +1,7 @@
 ---
 title: "How to use the IPMI console with a dedicated server"
 excerpt: "Find out how to log on to your server from the OVHcloud Control Panel without the use of external software"
-updated: 2024-07-23
+updated: 2026-01-29
 ---
 
 ## Objective
@@ -40,6 +40,10 @@ You can access the IPMI using several different methods¹. SSH keys stored on th
 To enable one of these methods, log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI/KVM`{.action} tab.
 
 ### Open KVM via Java applet <a name="applet-java"></a>
+
+> [!primary]
+> We recommend installing the latest version of Java.
+>
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/) to do so.
 

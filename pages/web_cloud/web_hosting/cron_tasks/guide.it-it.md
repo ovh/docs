@@ -111,23 +111,23 @@ L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Clicca sulla scheda `Più`{.action} e seleziona `Cron`{.action}.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’operazione pianificata in questione.
 >>

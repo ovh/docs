@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about DNS records"
 excerpt: "Discover the different types of DNS records available in an OVHcloud DNS zone"
-updated: 2025-12-19
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -58,16 +58,16 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> > [!warning]
 >> >
->> > By convention, CNAME records cannot be used directly by a domain in its own DNS zone. Indeed, the domain alone must obligatorily and directly point to an IP address with a type A field (or AAAA if it is an IPv6).
+>> > By convention, CNAME records cannot be used directly by a domain name in its own DNS zone. Indeed, the domain alone must obligatorily and directly point to an IP address with a type A field (or AAAA if it is an IPv6).
 >> >
 >> > To use the example given above, you cannot create a CNAME record for the domain *domain.tld* in the DNS zone you created for it.
->> > However, you can create CNAME records with all subdomains (examples: *subdomain.domain.tld* or *www.domain.tld*) of the domain *domain.tld* in the DNS zone created for *domain.tld*.
+>> > However, you can create CNAME records with all subdomains (examples: *subdomain.domain.tld* or *www.domain.tld*) of the domain name *domain.tld* in the DNS zone created for *domain.tld*.
 >> >
 >> > If you would like to go further technically on this subject, you can find at the bottom of this page [a particular use case concerning CNAME records and DNS zones created for subdomains](#cnameusecase).
 >>
 > **DNAME**
 >> **D**elegation **NAME** <br><br>
->> Allows to generate an "alias" for all subdomains of a domain. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
+>> Allows to generate an "alias" for all subdomains of a domain name. This record avoids creating a multitude of CNAME records. A CNAME record redirects only one subdomain to a single target, independently.
 >>
 >> Example: By creating a DNAME record from *domain.tld* to *ovh.com*, all subdomains of *domain.tld* (such as *dname.domain.tld* and *xxx.domain.tld*) will be redirected respectively to subdomains of *ovh.com* (such as *dname.ovh.com* and *xxx.ovh.com*).
 >>
@@ -75,13 +75,13 @@ Select the record you want by clicking each of the following tabs.
 >>
 >> > [!warning]
 >> >
->> > However, *domain.tld* as a domain will not display the target of the *ovh.com* domain, because the DNAME record is only valid for the subdomains of the domains defined in the DNAME record.
+>> > However, *domain.tld* as a domain name will not display the target of the *ovh.com* domain name, because the DNAME record is only valid for the subdomains of the domain names defined in the DNAME record.
 >> >
 >> > Also, using one of the examples above, if the target subdomain *xxx.ovh.com* does not point to anything, then the DNAME record will not display anything for *xxx.domain.tld* either.
 >>
 >> > [!success]
 >> > 
->> > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain extensions (.fr, .net, .com, .info, etc.) to redirect them easily.
+>> > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain name extensions (.fr, .net, .com, .info, etc.) to redirect them easily.
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
@@ -151,7 +151,7 @@ Select the record you want by clicking each of the following tabs.
 >> >
 >> > If you configure a CAA record for a domain name, this configuration will also apply to **all subdomains** of the same domain name.
 >> >
->> > If you use a Let's Encrypt SSL certificate with your domain on an OVHcloud Web Hosting plan, and you use a CAA record, the CAA record will prevent the Let's Encrypt SSL certificate from being regenerated.
+>> > If you use a Let's Encrypt SSL certificate with your domain name on an OVHcloud Web Hosting plan, and you use a CAA record, the CAA record will prevent the Let's Encrypt SSL certificate from being regenerated.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -202,10 +202,25 @@ Select the record you want by clicking each of the following tabs.
 >> - **Service Mode**: this mode is activated when you specify a priority different from 0. It is in this mode that you can define the parameters you wish to apply to your domain name (example parameters: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). In **Service** mode, you can apply these parameters directly to your domain name, even if it is not to be used as an alias for another domain name.
 >>
 >> If needed, find more details on the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN) website.
+>>
+>> > [!success]
+>> >
+>> > Below is a concrete example of setting up an alias (apex) using an HTTPS-type DNS record:
+>> >
+>> > The website **domain.tld** is hosted behind a CDN infrastructure (for example: **cdn.provider.tld**).
+Thanks to the HTTPS-type DNS record, the domain name **domain.tld** can directly inform compatible web browsers that the HTTPS service should be resolved by the CDN provider **cdn.provider.tld**. This is done without redirections and without manual management of IP addresses.
+>> >
+>> > For this, the HTTPS-type DNS record must specify:
+>> >
+>> > - Priority: *0*.
+>> > - Target: *cdn.provider.tld*.
+>> > - Settings: **Leave the field empty**.
+>> >
+>> > Thus, it is the resolution of **cdn.provider.tld** that will indicate the parameters to use for **domain.tld**.
 
 #### Special use case: CNAME records <a name="cnameusecase"></a>
 
-Some users create DNS zones directly for a domain’s subdomain (for example, *subdomain-with-its-own-DNS-zone.domain.tld*). The rule specified earlier in the "CNAME" tab of the “[pointer records](#pointer-records)” section will then also apply in this scenario.
+Some users create DNS zones directly for a domain name’s subdomain (for example, *subdomain-with-its-own-DNS-zone.domain.tld*). The rule specified earlier in the "CNAME" tab of the “[pointer records](#pointer-records)” section will then also apply in this scenario.
 
 Since the DNS zone is created for the subdomain (in our example *subdomain-with-its-own-DNS-zone.domain.tld*), the subdomain is then considered a fully qualified domain name in its DNS zone.
 
@@ -219,7 +234,7 @@ As a result, in this specific case, you will not be able to create a CNAME recor
 
 [Add an SPF record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_spf)
 
-[Protect your domain against cache poisoning with DNSSEC](/links/web/domains-dnssec)
+[Protect your domain name against cache poisoning with DNSSEC](/links/web/domains-dnssec)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  

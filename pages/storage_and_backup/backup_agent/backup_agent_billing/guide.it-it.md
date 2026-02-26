@@ -19,7 +19,7 @@ Non addebitiamo il Backup Agent sui vostri server, ovvero potete distribuirlo su
 
 Tuttavia, l'utilizzo dell'OVHcloud Object Storage vi verrà addebitato, a livello del gigabyte al mese. Verrete quindi fatturati all'inizio di ogni mese per l'utilizzo del mese precedente.
 
-Potrete trovare il prezzo del GB al mese sul nostro [sito web](/links/public-cloud/prices-object-storage).
+Potrete trovare il prezzo del GB al mese sul nostro [sito web](/links/storage/backup-agent).
 
 A vostra disposizione c'è un pannello `Fatturazione` nel vostro [Spazio Cliente OVHcloud](/links/manager) per visualizzare il consumo attuale e quindi prevedere la fattura finale alla fine del mese.
 

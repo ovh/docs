@@ -18,7 +18,7 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 - Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](/links/web/email).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 

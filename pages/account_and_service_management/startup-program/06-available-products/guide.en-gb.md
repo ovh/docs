@@ -1,7 +1,7 @@
 ---
 title: "Which products are available to use with Startup Program credits?"
 excerpt: 'Find out which OVHcloud solutions are eligible for Startup Program credits to support your start-up'
-updated: 2026-01-15
+updated: 2026-01-27
 ---
 
 ## Objective
@@ -40,7 +40,7 @@ Here is a summary of eligible solutions:
 
 | Solutions | Eligibility |
 |---|---|
-| **Compute**: Instances (only instances using RTX5000, V100 and V100s GPUs, excluding all other GPUs), Baremetal Cloud | ✅ |
+| **Compute**: Instances, GPU instances (only instances using RTX5000, V100 and V100s GPUs, excluding all other GPUs), Baremetal Cloud | ✅ |
 | **Storage & Backup**: Block Storage, Object Storage, Cloud Archive, Cold Archive, Snapshot, Backup | ✅ |
 | **Network**: Load Balancer, vRack (Free), Bandwidth, Floating IP, Gateway, Anti-DDoS | ✅ |
 | **Containers & Orchestration**: Managed K8s Service, Managed Rancher Service, Managed K8s Load Balancer, Managed Private Registry, Workflow Management, Image Catalog | ✅ |

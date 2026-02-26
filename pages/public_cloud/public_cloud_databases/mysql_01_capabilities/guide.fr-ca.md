@@ -1,7 +1,7 @@
 ---
-title: MySQL - Capacités et limitations (EN)
+title: Capacités et limitations de Public Cloud Databases pour MySQL (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-updated: 2025-07-31
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Entire database instances have to be in the same region.
 
@@ -33,6 +35,7 @@ Entire database instances have to be in the same region.
 The Public Cloud Databases offer supports the following MySQL versions:
 
 - MySQL 8.0
+- MySQL 8.4 (soon)
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. MySQL recommends always installing and using the latest stable version.
 

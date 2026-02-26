@@ -14,7 +14,17 @@ To send an SMS campaign to multiple contacts, you can import one or more recipie
 
 - an active OVHcloud SMS account
 - a spreadsheet or text editor tool
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -64,9 +74,7 @@ You should end up with the result below:
 
 ### Step 2: Importing your list into the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, select `SMS`{.action}.
-
-Select your SMS account, then click on the `Contacts`{.action} tab and `Create a contact`{.action} list.
+Click on the `Contacts`{.action} tab and `Create a contact`{.action} list.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
 

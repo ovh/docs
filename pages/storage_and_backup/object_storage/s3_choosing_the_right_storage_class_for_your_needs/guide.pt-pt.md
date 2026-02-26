@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Escolhendo a classe de armazenamento certa para suas necessidades (EN)
 excerpt: Discover the different OVHcloud Object Storage classes and choose the one that best suits your needs
-updated: 2025-11-19
+updated: 2026-02-03
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
@@ -31,6 +31,12 @@ This offer is suitable for the following use cases: AI & Analytics, Datalake, Hi
 The Infrequent Access storage class is designed for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval. It offers similar performance (ms TTFB, low latency) and availability than Standard Object Storage but with a lower cost per GiB-hour and a per GiB retrieval fee.
 
 This offer is suitable for the following use cases: long-term storage, backups, disaster recovery.
+
+### Object Storage - Active Archive class (S3 compatible)
+
+The Active Archive storage class is designed for long-term data retention, while ensuring immediate access when needed. This storage class is optimized for data that is rarely accessed but must always remain instantly available.
+
+This offer is suitable for the following use cases: long-term regulatory data storage, disaster recovery plans.
 
 ### Object Storage - Cold Archive class (S3 compatible)
 
@@ -81,6 +87,16 @@ The Cold Archive storage class is an archival storage class. Also existing on it
         <td>Object-level, lifecycle management support</td>
     </tr>
     <tr>
+        <td><strong>Active Archive<strong></td>
+        <td>Long-term regulatory data storage, disaster recovery plans</td>
+        <td>milliseconds</td>
+        <td>3-AZ</td>
+        <td>3-AZ regions: 99,99%</td>
+        <td>90 days</td>
+        <td>Yes</td>
+        <td>Object-level, lifecycle management support</td>
+    </tr>
+    <tr>
         <td><strong>Cold Archive*<strong></td>
         <td>Very long-term storage, backups, disaster recovery</td>
         <td>hours</td>
@@ -111,7 +127,7 @@ For example, for the Infrequent Access class, the minimum storage time is 730 ho
 
 It refers to a **charge that is applied when you retrieve or access data that is stored in a particular storage class**. The retrieval fee is calculated based on the amount of data retrieved (per GiB retrieved).
 
-For the Infrequent Access class, only *get-object* requests are considered as retrieval fee.
+For the Infrequent Access and the Active Archive classes, only *get-object* requests are considered as retrieval fee.
 
 For our Cold Archive class, only *restore* requests are considered as retrieval fee.
 
@@ -144,6 +160,8 @@ The Cloud Archive (SWIFT) storage class offers a storage service for long-term d
 | Object Storage - High Performance class | S3-compatible | General Availability | Latest Generation |
 | Object Storage - Standard class | S3-compatible | General Availability | Latest Generation |
 | Object Storage - Infrequent Access class | S3-compatible | General Availability | Latest Generation |
+| Object Storage - Active Archive class | S3-compatible | General Availability | Latest Generation |
+| Object Storage - Cold Archive class | S3-compatible | General Availability | Latest Generation |
 | Swift Standard Object Storage | OpenStack SWIFT | Supported | Established Solution |
 | Cloud Archive - SWIFT API | OpenStack SWIFT | Supported | Established Solution |
 

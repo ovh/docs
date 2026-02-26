@@ -1,7 +1,7 @@
 ---
 title: 'How to increase Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-updated: 2025-12-17
+updated: 2026-02-04
 ---
 
 ## Objective
@@ -93,6 +93,8 @@ Once you have selected your volume, click on `Confirm`{.action}. Your payment wi
 >
 > After clicking on the `Confirm`{.action} button, the order is automatically created and the amount will be debited from your default payment method.
 >
+
+You can get a more detailed view of your resources in the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/). Once logged in, click on `Project`{.action}, then on `Overview`{.action}.
 
 ### Increasing the quota of your Public Cloud projects
 

@@ -1,5 +1,5 @@
 ---
-title: Valkey - Connect with CLI
+title: Connect using the CLI for Public Cloud Databases for Valkey
 excerpt: Connect to your Public Cloud Databases for Valkey using the Command Line Interface (CLI)
 updated: 2024-06-12
 ---

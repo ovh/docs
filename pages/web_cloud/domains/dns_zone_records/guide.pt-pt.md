@@ -1,16 +1,16 @@
 ---
 title: "Saber tudo sobre os registos DNS"
 excerpt: "Descubra os diferentes tipos de registos DNS disponíveis numa zona DNS da OVHcloud"
-updated: 2025-12-19
+updated: 2026-02-19
 ---
 
 ## Objetivo
 
-A sigla **DNS**, que significa **D**omain **N**ame **S**ystem, é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um domínio a um endereço IP.
+A sigla **DNS**, que significa **D**omain **N**ame **S**ystem, é um conjunto de elementos (servidores DNS, zonas DNS, etc.) que permitem fazer corresponder um nome de domínio a um endereço IP.
 
 Recomendamos que consulte previamente os nossos manuais "[Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)" nesta ordem.
 
-A zona DNS de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, chamadas *registos DNS*. A zona DNS é, por assim dizer, um centro de informação para um domínio.
+A zona DNS de um nome de domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, chamadas *registos DNS*. A zona DNS é, por assim dizer, um centro de informação para um nome de domínio.
 
 Este manual tem como objetivo apresentar os diferentes tipos de registos DNS disponíveis numa zona DNS gerida na OVHcloud. É complementar aos seguintes guias:
 
@@ -36,11 +36,11 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 > [!tabs]
 > **A**
 >> **A**ddress <br><br>
->> Liga um domínio a um endereço IPv4 `X.X.X.X` (em que os `X` são números entre `0` e `255`). Por exemplo, o endereço IPv4 do servidor onde está alojado o seu website.
+>> Liga um nome de domínio a um endereço IPv4 `X.X.X.X` (em que os `X` são números entre `0` e `255`). Por exemplo, o endereço IPv4 do servidor onde está alojado o seu website.
 >>
 > **AAAA** 
 >> 4 letras **A**, pois este registo está codificado em quatro vezes mais bits que o registo histórico de apontamento **A**
->> Associe um domínio a um endereço IPv6. Por exemplo, o endereço IPv6 do servidor onde está alojado o seu website.
+>> Associe um nome de domínio a um endereço IPv6. Por exemplo, o endereço IPv6 do servidor onde está alojado o seu website.
 >>
 >> > [!primary]
 >> > Os endereços IPv6 são progressivamente implementados para compensar a falta de endereços IPv4 devido à expansão contínua das utilizações digitais. A codificação em 128 bits dos endereços IPv6 permite assim fornecer um maior número de endereços IP.
@@ -50,24 +50,24 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> >
 > **CNAME**
 >> **C**anonical **NAME** <br><br>
->> Utiliza o endereço IP de outro domínio ao criar um link chamado alias. Por exemplo, se *www.domain.tld* for um alias de *domain.tld*, isso indica que *www.domain.tld* utilizará o endereço IP de *domain.tld*.
+>> Utiliza o endereço IP de outro nome de domínio ao criar um link chamado alias. Por exemplo, se *www.domain.tld* for um alias de *domain.tld*, isso indica que *www.domain.tld* utilizará o endereço IP de *domain.tld*.
 >>
 >> > [!alert]
 >> >
->> > Um registo TXT que utilize o mesmo domínio ou subdomínio que um registo CNAME perturba o funcionamento deste último. O seu registo CNAME só funcionará parcialmente ou de todo.
+>> > Um registo TXT que utilize o mesmo nome de domínio ou subdomínio que um registo CNAME perturba o funcionamento deste último. O seu registo CNAME só funcionará parcialmente ou de todo.
 >>
 >> > [!warning]
 >> >
->> > Por convenção, os campos CNAME não podem ser diretamente utilizados por um domínio na sua própria zona DNS. Com efeito, o domínio só deve apontar obrigatória e diretamente para um endereço IP com um campo de tipo A (ou AAAA, se se tratar de um IPv6).
+>> > Por convenção, os campos CNAME não podem ser diretamente utilizados por um nome de domínio na sua própria zona DNS. Com efeito, o nome de domínio só deve apontar obrigatoriamente e diretamente para um endereço IP com um campo de tipo A (ou AAAA, se se tratar de um IPv6).
 >> >
->> > Para seguir o exemplo acima, não poderá criar um campo CNAME para o domínio *domain.tld* na zona DNS que criou para este domínio.
->> > No entanto, poderá criar campos CNAME com todos os subdomínios (exemplos: *subdomain.domain.tld* ou *www.domain.tld*) do domínio *domain.tld* na zona DNS criada para *domain.tld*.
+>> > Para seguir o exemplo acima, não poderá criar um campo CNAME para o nome de domínio *domain.tld* na zona DNS que criou para este nome de domínio.
+>> > No entanto, poderá criar campos CNAME com todos os subdomínios (exemplos: *subdomain.domain.tld* ou *www.domain.tld*) do nome de domínio *domain.tld* na zona DNS criada para *domain.tld*.
 >> >
->> > Se pretender ir mais longe do ponto de vista técnico sobre este assumpto, poderá encontrar, no final desta página, [um caso particular de uso relativo aos CNAME e às zonas DNS criadas para subdomínios](#cnameusecase).
+>> > Se pretender ir mais longe do ponto de vista técnico sobre este assunto, poderá encontrar, no final desta página, [um caso particular de uso relativo aos CNAME e às zonas DNS criadas para subdomínios](#cnameusecase).
 >>
 > **DNAME**
 >> **D**elegation **NAME** <br><br>
->> Permite gerar um "alias" para o conjunto dos subdomínios de um domínio. Este registo evita criar uma multitude de registos CNAME. De facto, um registo CNAME redireciona de forma independente apenas um subdomínio para um único alvo.
+>> Permite gerar um "alias" para o conjunto dos subdomínios de um nome de domínio. Este registo evita criar uma multitude de registos CNAME. De facto, um registo CNAME redireciona de forma independente apenas um subdomínio para um único alvo.
 >>
 >> Exemplo: ao criar um registo DNAME de *domain.tld* para *ovh.com*, todos os sub-domínios de *domain.tld* (como *dname.domain.tld* e *xxx.domain.tld*) serão reencaminhados respetivamente para os subdomínios de *ovh.com* (tais como o *dname.ovh.com* e *xxx.ovh.com*).
 >>
@@ -75,17 +75,17 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 >> > [!warning]
 >> > 
->> > Por outro lado, *domain.tld*, enquanto domínio, não mostrará o destino do domínio *ovh.com*, pois o registo DNAME só é válido para os subdomínios dos domínios definidos no registo DNAME.
+>> > Por outro lado, *domain.tld*, enquanto nome de domínio, não mostrará o destino do nome de domínio *ovh.com*, pois o registo DNAME só é válido para os subdomínios dos nomes de domínio definidos no registo DNAME.
 >> >
 >> > Além disso, se pegar num dos exemplos acima, se o subdomínio alvo *xxx.ovh.com* não apontar para lado nenhum, o registo DNAME também não mostrará nada para *xxx.domain.tld*.
 >>
 >> > [!success]
 >> >
->> > O registo DNAME é geralmente utilizado para uma alteração do nome da empresa. Também pode ser implementado quando um utilizador dispõe de várias extensões de domínios (.pt, .net, .com, .info, ...) para os reencaminhar facilmente entre si.
+>> > O registo DNAME é geralmente utilizado para uma alteração do nome da empresa. Também pode ser implementado quando um utilizador dispõe de várias extensões de nomes de domínio (.pt, .net, .com, .info, ...) para os reencaminhar facilmente entre si.
 >> >
 > **NS**
 >> **N**ame **S**erver<br><br>
->> Define os servidores DNS associados à sua zona DNS. Por exemplo, se os registos NS da sua zona DNS mostrarem os servidores *dnsXX.ovh.net* e *nsXX.ovh.net*, deverá utilizar estes últimos no separador `Servidores DNS`{.action} da sua Área de Cliente OVHcloud. Para mais informações, consulte o nosso manual "[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+>> Define os servidores DNS associados à sua zona DNS. Por exemplo, se os registos NS da sua zona DNS mostrarem os servidores *dnsXX.ovh.net* e *nsXX.ovh.net*, deverá utilizar estes últimos no separador `Servidores DNS`{.action} da sua Área de Cliente OVHcloud. Para mais informações, consulte o nosso manual "[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >>
 >> > [!warning]
 >> >
@@ -99,7 +99,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 > [!tabs]
 > **MX**
 >> **M**ail e**X**changer <br><br>
->> Associe um domínio a um servidor de e-mail. Por exemplo, o endereço *10 mx1.mail.ovh.net* corresponde a um dos servidores de e-mail OVHcloud quando possui uma oferta de e-mail OVHcloud. É provável que o seu fornecedor de e-mail disponha de vários servidores de e-mail: assim, devem ser criados vários campos MX. Consulte o nosso manual "[Adicionar um campo MX à configuração do domínio](/pages/web_cloud/domains/dns_zone_mx)".
+>> Associe um nome de domínio a um servidor de e-mail. Por exemplo, o endereço *10 mx1.mail.ovh.net* corresponde a um dos servidores de e-mail OVHcloud quando possui uma oferta de e-mail OVHcloud. É provável que o seu fornecedor de e-mail disponha de vários servidores de e-mail: assim, devem ser criados vários campos MX. Consulte o nosso manual "[Adicionar um campo MX à configuração do nome de domínio](/pages/web_cloud/domains/dns_zone_mx)".
 >>
 >> > [!warning]
 >> >
@@ -110,7 +110,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> **S**ender **P**olicy **F**ramework <br><br>
 >> Permite evitar potenciais usurpações de identidade nos endereços de e-mail que utilizam o seu nome de domínio (*spoofing*). Por exemplo, o registo `v=spf1 include:mx.ovh.com ~all` indica que apenas os servidores de envio relacionados com a oferta de e-mail OVHcloud podem ser considerados legítimos pelo servidor de receção. Pode introduzir este registo sob a forma de um registo TXT ou através do nosso sistema de configuração automática.
 >>
->> Para mais informações, consulte o nosso manual "[Adicionar um registo SPF à configuração do seu domínio](/pages/web_cloud/domains/dns_zone_spf)".
+>> Para mais informações, consulte o nosso manual "[Adicionar um registo SPF à configuração do seu nome de domínio](/pages/web_cloud/domains/dns_zone_spf)".
 >>
 > **DKIM**
 >> **D**omain**K**eys **I**dentified **M**ail <br><br>
@@ -122,7 +122,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >> Contribui para a autenticação dos e-mails em associação com os métodos SPF e/ou DKIM. Este valor ser-lhe-á dado pelo seu fornecedor de e-mail (se esta funcionalidade for proposta por este último), e será no mínimo associado a um registo SPF ou DKIM.
 >>
->> Consulte a nossa documentação "[Configurar um registo DMARC no seu domínio](/pages/web_cloud/domains/dns_zone_dmarc)" para saber mais.
+>> Consulte a nossa documentação "[Configurar um registo DMARC no seu nome de domínio](/pages/web_cloud/domains/dns_zone_dmarc)" para saber mais.
 
 #### Registos alargados <a name="extended-records"></a>
 
@@ -131,7 +131,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 > [!tabs]
 > **TXT**
 >> **T**e**XT** <br><br>
->> Permite adicionar o valor da sua escolha, em formato de texto, na zona DNS do seu domínio. Este registo é frequentemente utilizado em processos de verificação/validação ou de segurança.
+>> Permite adicionar o valor da sua escolha, em formato de texto, na zona DNS do seu nome de domínio. Este registo é frequentemente utilizado em processos de verificação/validação ou de segurança.
 >>
 >> > [!warning]
 >> >
@@ -145,13 +145,13 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 > **CAA**
 >> **C**ertification **A**uthority **A**uthorization <br><br>
->> Permite listar as autoridades de certificação autorizadas a serem entregues dos certificados SSL para um domínio.
+>> Permite listar as autoridades de certificação autorizadas a serem entregues dos certificados SSL para um nome de domínio.
 >>
 >> > [!warning]
 >> >
->> > Se configurar uma entrada CAA para um domínio, esta configuração também será aplicada a **todos os subdomínios** desse mesmo domínio.
+>> > Se configurar uma entrada CAA para um nome de domínio, esta configuração também será aplicada a **todos os subdomínios** desse mesmo nome de domínio.
 >> >
->> > Se utilizar um certificado SSL Let's Encrypt com o seu domínio num alojamento partilhado OVHcloud e um registo CAA, este último impedirá a regeneração do certificado SSL Let's Encrypt.
+>> > Se utilizar um certificado SSL Let's Encrypt com o seu nome de domínio num alojamento partilhado OVHcloud e um registo CAA, este último impedirá a regeneração do certificado SSL Let's Encrypt.
 >>
 > **NAPTR**
 >> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
@@ -167,7 +167,7 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizado para indicar o cunho de um certificado SSL/TLS. Vai permitir conservar o *hash* de um certificado diretamente na zona DNS do seu domínio através de um registo DNS.
+>> Utilizado para indicar o cunho de um certificado SSL/TLS. Vai permitir conservar o *hash* de um certificado diretamente na zona DNS do seu nome de domínio através de um registo DNS.
 >>
 >> Este registo é utilizado no âmbito do protocolo **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
 >>
@@ -202,12 +202,27 @@ Selecione o registo à sua escolha clicando nos separadores seguintes.
 >> - **Modo Serviço**: este modo ativa-se quando especifica uma prioridade diferente de 0. É neste modo que poderá definir os parâmetros que deseja aplicar ao seu nome de domínio (exemplos de parâmetros: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). Em modo **Serviço**, pode aplicar estes parâmetros diretamente ao seu nome de domínio, mesmo que este último não seja utilizado como alias de outro nome de domínio.
 >>
 >> Se necessário, encontre mais detalhes no site da [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN).
+>>
+>> > [!success]
+>> >
+>> > Encontre abaixo um exemplo prático da implementação de um alias (apex) através de um registo DNS do tipo HTTPS:
+>> >
+>> > O site web **domain.tld** está alojado atrás de uma infraestrutura CDN (por exemplo: **cdn.provider.tld**).
+>> > Graças ao registo DNS do tipo HTTPS, o nome de domínio **domain.tld** pode indicar diretamente aos navegadores compatíveis que o serviço HTTPS deve ser resolvido junto ao fornecedor do CDN **cdn.provider.tld**. Isto sem redirecionamentos e sem gestão manual dos endereços IP.
+>> >
+>> > Para isso, o registo DNS do tipo HTTPS deve indicar:
+>> >
+>> > - Em prioridade: *0*.
+>> > - Em alvo: *cdn.provider.tld*.
+>> > - Em parâmetros: **Deixe o campo vazio**.
+>> >
+>> > Assim, é a resolução de **cdn.provider.tld** que indicará os parâmetros a utilizar para **domain.tld**.
 
 #### Casos particulares de utilização: a utilização dos registos CNAME <a name="cnameusecase"></a>
 
-Alguns utilizadores criam zonas DNS diretamente para o subdomínio de um domínio (por exemplo *subdomain-with-its-own-DNS-zone.domain.tld*). A regra indicada no separador "CNAME" da parte "[Registos de apontamento](#pointer-records)" aplica-se igualmente neste caso.
+Alguns utilizadores criam zonas DNS diretamente para o subdomínio de um nome de domínio (por exemplo *subdomain-with-its-own-DNS-zone.domain.tld*). A regra indicada no separador "CNAME" da parte "[Registos de apontamento](#pointer-records)" aplica-se igualmente neste caso.
 
-Como a zona DNS foi criada para o subdomínio (no nosso exemplo *subdomain-with-its-own-DNS-zone.domain.tld*), este último é considerado como um domínio de pleno direito na sua zona DNS.
+Como a zona DNS foi criada para o subdomínio (no nosso exemplo *subdomain-with-its-own-DNS-zone.domain.tld*), este último é considerado como um nome de domínio de pleno direito na sua zona DNS.
 
 Por isso, e neste caso específico, não poderá criar um campo CNAME para *subdomain-with-its-own-DNS-zone.domain.tld* na zona DNS que criou para este último. No entanto, pode criar campos CNAME tais como *subdomain.subdomain-with-its-own-DNS-zone.domain.tld* ou *xxx.subdomain-with-its-own-DNS-zone.domain.tld*.
 
@@ -217,9 +232,9 @@ Por isso, e neste caso específico, não poderá criar um campo CNAME para *subd
 
 [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Como configurar o registo SPF de um domínio](/pages/web_cloud/domains/dns_zone_spf)
+[Como configurar o registo SPF de um nome de domínio](/pages/web_cloud/domains/dns_zone_spf)
 
-[Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/pages/web_cloud/domains/dns_dnssec)
+[Proteja o seu nome de domínio contra o Cache Poisoning graças ao DNSSEC](/pages/web_cloud/domains/dns_dnssec)
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  

@@ -24,7 +24,7 @@ W praktyce, gdy zostanie uruchomiona aktualizacja w dniu D, agent zostanie w cis
 
 W trakcie aktualizacji operacje kopii zapasowej i przywracania będą tymczasowo niedostępne. Aby zminimalizować ewentualny wpływ, aktualizacja zostanie zaplanowana w godziny dzienne w strefie czasowej CET lub EST, w zależności od Twojej lokalizacji, aby nie zakłócać Twoich [automatycznych kopii zapasowych](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
-Jeśli masz jakiekolwiek specjalne żądania, skontaktuj się proszę z [wsparciem OVHcloud](/links/support).
+Jeśli masz jakiekolwiek specjalne żądania, skontaktuj się proszę z [wsparciem OVHcloud](/links/support-contact).
 
 ## Sprawdź również
 

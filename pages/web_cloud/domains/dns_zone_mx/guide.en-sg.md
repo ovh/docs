@@ -1,8 +1,17 @@
 ---
 title: "Configure an MX record for email management"
-excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-updated: 2025-04-28
+excerpt: Find out how to configure an MX record on your domain name at OVHcloud
+updated: 2026-02-19
 ---
+
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.w-300 {
+  max-width:300px !important;
+}
+</style>
 
 ## Objective
 
@@ -15,30 +24,30 @@ With an MX record, you can link a domain name to the server on your email platfo
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](/links/manager).
 - The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
-- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting)), or an external email service.
+- You have an MX Plan solution (included in the [web hosting plan](/links/web/hosting), or an external email service.
 
 > [!primary]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to modify the MX records using the interface of the service provider that manages your domain name configuration.
 >
-> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers** : If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
+> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers**: If you see `Standards` underneath it, your domain name is using the OVHcloud DNS servers.
 >
-> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail .w-300}
 
 ## Instructions
 
-### Understanding the role of MX records 
+### Understanding the role of MX records
 
-MX (**M**ail e**X**change) records are used to link your domain name to the receiving email servers attached to your email service. We will use an example.
+The MX (**M**ail e**X**change) record is a type of DNS record that determines which receiving email servers are attached to your domain name.
 
-When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain.ovh**, the **Outgoing mail server** will:
+To understand how it works, we will use an example:
 
-- **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
-- **(2)** Forward the email to the URL of the **MX** record it has found.
+- The address **sender@otherdomain.ovh** sends an email to **contact@mydomain.ovh**.
+- The sending email server (**Outgoing mail server**) queries the DNS zone for the domain name **mydomain.ovh** and reads the **MX** records.
+- The email is forwarded to the URL of the **MX** record that was read.
+- The email is sent to the target **mx0.mail.ovh.net**, which is preceded by the value **0**. This value corresponds to the priority: the lowest value is queried first and the highest last. This means that having multiple MX records helps compensate for a lack of response from the server designated by the record with the lowest priority, by moving on to subsequent servers in order of priority.
 
-![email](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
-
-The email will be sent to the target **mx0.mail.ovh.ca**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail .w-600}
 
 You can set up multiple MX records for the same domain name. It is then necessary to define a *priority* number for each of them. MX records are queried in ascending order from lowest number to highest number until a response is received from the receiving server.
 
@@ -49,7 +58,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
-Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions ( included in an [OVHcloud web hosting](/links/web/hosting) plan). Our email servers have antispam and antivirus integrated.
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (included in an [OVHcloud web hosting](/links/web/hosting) plan). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
@@ -70,14 +79,14 @@ The table shows your domain name’s OVHcloud configuration. Each row correspond
 As a first step, please check whether any MX records already exist in your domain name’s OVHcloud DNS configuration. You can do this using the filtering list located above the table for your DNS zone.<br>
 Select the **MX** type, then confirm to display only the MX DNS records for your DNS zone. Use the screenshot below.
 
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail .w-600}
 
 - If MX records already exist and you want to edit them, click the `...`{.action} button to the right of each table row, and then click `Edit Entry`{.action}.
 - If no MX record is present, click the `Add record`{.action} button to the right of the table, then choose `MX`{.action}. Enter the information requested, depending on the email solution you have chosen:
 
 **If you have an OVHcloud email solution**, please refer to the information provided in the [OVHcloud MX configuration](#mxovhcloud) step.
 
-![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail .w-600}
 
 Fill in the values, complete the steps, then click `Confirm`{.action}.
 

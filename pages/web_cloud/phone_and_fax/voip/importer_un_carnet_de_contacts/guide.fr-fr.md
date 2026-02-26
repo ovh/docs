@@ -13,7 +13,17 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 ## Prérequis
 
 - Disposer au moins d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -30,18 +40,13 @@ Pour bénéficier d'un carnet de contacts sur une seule ligne SIP, celle-ci doit
 
 - **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée. 
-1. Cliquez sur l'onglet `Téléphone`{.action} puis sur `Carnets de contacts`{.action}.
- 
+Cliquez sur l'onglet `Téléphone`{.action} puis sur `Carnets de contacts`{.action}.
+
 ![carnet de contacts](images/carnetligne.png){.thumbnail}
 
 - **Pour accéder à la gestion du carnet de contacts d'un groupe de lignes** :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez alors sur l'onglet `Carnet de contacts`{.action}.
+Cliquez sur l'onglet `Carnet de contacts`{.action}.
 
 ![carnet de contacts](images/carnetgroupe.png){.thumbnail}
 

@@ -24,7 +24,7 @@ In practice, when the update is triggered, your agent will be silently reinstall
 
 During this update, backup and restore operations will be temporarily unavailable. To minimize any impact, the update will be scheduled during daytime hours in either the CET or EST time zone, depending on your location, to avoid interfering with your [automatic backups](/pages/storage_and_backup/backup_agent/backup_agent_backup_restore).
 
-If you have any specific requests, please feel free to [contact OVHcloud support](/links/support).
+If you have any specific requests, please feel free to [contact OVHcloud support](/links/support-contact).
 
 ## Go further
 

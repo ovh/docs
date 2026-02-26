@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Caractéristiques, capacités et limites (EN)
 excerpt: Découvrez les principales caractéristiques, capacités et limites de AI Endpoints
-updated: 2025-08-18
+updated: 2026-02-03
 ---
 
 > [!primary]
@@ -11,11 +11,11 @@ updated: 2025-08-18
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 ## Objective
 
-This page provides the technical features, capabilities and limitations of [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This page provides the technical features, capabilities and limitations of [AI Endpoints](/links/public-cloud/ai-endpoints).
 
 ## Features
 
@@ -23,7 +23,7 @@ This page provides the technical features, capabilities and limitations of [AI E
 
 | Feature                                    | Details                                                                                                                                                                                                                                      |
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Large Selection of Models                        | AI Endpoints offers a diverse range of pre-trained AI models, covering categories such as LLMs (Visual, Reasoning, Coding), Audio Analysis, Embeddings, Natural Language Processing, Translation, Image Generation, and Computer Vision. For a full list of models, please visit the [AI Endpoints Catalog Page](https://endpoints.ai.cloud.ovh.net/catalog).                                                                          |
+| Large Selection of Models                        | AI Endpoints offers a diverse range of pre-trained AI models, covering categories such as LLMs (Visual, Reasoning, Coding), Audio Analysis, Embeddings, Natural Language Processing, Translation, Image Generation, and Computer Vision. For a full list of models, please visit the [AI Endpoints Catalog Page](/links/public-cloud/ai-endpoints-catalog).                                                                          |
 | Model Metrics | Users can access various metrics in the [OVHcloud Control Panel](/links/manager), such as the number of calls made per model, input and output tokens for large language models (LLMs), and other usage data. These insights can help you manage costs and gain a better understanding of how your applications are using AI capabilities.                                                                                              |
 | Data Privacy and Sovereignty | OVHcloud prioritizes data privacy and sovereignty, ensuring that AI models accessed via AI Endpoints are fully compliant with strict European regulations. Our infrastructure, located in Gravelines, France, adheres to European data protection regulations. Data is not stored or shared during or after model use, providing users with peace of mind that their data is secure and protected.                                                                          |
 | Access with Personalized Access Keys | To ensure secure and authenticated access to model APIs, users need to provide an API access key in each request. Access keys can be easily created by following the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide. API keys are linked to a Public Cloud project. We provide the flexibility to manage multiple keys for various projects or teams. Additionally, each access key comes with adjustable validity periods, allowing users to tailor their access to specific needs.
@@ -56,15 +56,16 @@ When using AI Endpoints, the **following rate limits apply**:
 
 If you exceed this limit, a **429 error code** will be returned.
 
-If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
-
 ### Payload size limits
 
 To ensure security and stability, AI Endpoints APIs enforce default request payload size limits:
 
 Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String and Json parameters.
+Some endpoints, like those handling media files, are specifically configured to accept larger payloads due to their use cases.
 
-However some endpoints, like those handling audio transcriptions, are specifically configured to accept larger payloads due to their use cases. These endpoints can handle larger audio files, but are limited by audio file size and duration. The specific limits of these endpoints will be indicated in their respective model documentation.
+Visual Language Models (VLM) are limited to **10 MB** per request body.
+Audio transcription endpoints can handle larger audio files, but are limited by audio file size and duration.
+The specific limits of these endpoints are indicated in their respective model documentation.
 
 ### No usage limit
 

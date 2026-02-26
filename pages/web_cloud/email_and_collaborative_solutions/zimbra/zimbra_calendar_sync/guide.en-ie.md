@@ -1,7 +1,7 @@
 ---
-title: "How to synchronize a CalDAV Zimbra calendar in an application"
+title: "Zimbra - Synchronise a CalDAV calendar in an application"
 excerpt: "Find out how to add a Zimbra calendar to an application via the CalDAV protocol"
-updated: 2025-02-12
+updated: 2026-01-29
 ---
 
 <style>
@@ -15,7 +15,7 @@ updated: 2025-02-12
 
 ## Objective
 
-Zimbra email accounts can be configured on different email clients that are compatible. This allows you to use your email address from the device of your choice. Zimbra includes the shared calendar feature, so it can be synchronized using CalDAV-compatible software.
+Zimbra email accounts can be configured on different compatible email software. This allows you to use your email address from your preferred device. Zimbra includes an online calendar feature, which can be synchronised from software compatible with the CalDAV protocol.
 
 **Find out how to add a Zimbra calendar to an application via the CalDAV protocol.**
 
@@ -29,11 +29,85 @@ Zimbra email accounts can be configured on different email clients that are comp
 
 ### What is the CalDAV protocol?
 
-CalDAV is a protocol for sharing calendars and online tasks. Zimbra email accounts have calendars that use the CalDAV protocol.
+CalDAV is a protocol for editing online calendars and tasks. Zimbra email addresses have calendars that use the CalDAV protocol.
 
 CalDAV calendar configuration is similar to email account configuration and requires an application that supports this protocol.
 
-### Configuring the CalDAV Calendar on compatible software
+### Share a calendar
+
+> [!warning]
+>
+> This section only concerns the [Zimbra Starter or Pro](/links/web/emails) offers, which include the calendar sharing feature.
+
+#### Public sharing in ICS format
+
+> [!primary]
+>
+> The ICS file format used here is static: the file version corresponds to the moment when the user generates the link. This means that an event added after the link to the ICS file is generated will not be present in the file or in the calendar into which it is imported. There is no synchronisation.
+
+To generate an ICS file link, follow the steps below:
+
+- Log in to your Zimbra email address via the [webmail](/links/web/email).
+- Go to the `Calendar`{.action} tab.
+- Right-click on the relevant calendar and click on `Share...`{.action}.
+- Click on the `Make public`{.action} tab.
+- Tick the box `Generate a public link`{.action}, copy or open the link in a new tab and download the ICS file.
+
+![zimbra_app](images/zimbra-calendar-webmail-01.png){.thumbnail .w-600 .h-600}
+
+The ICS file you have downloaded can be imported into an existing or newly created calendar.
+
+#### Sharing by email invitation
+
+Unlike ICS file sharing, sharing by email invitation allows you to dynamically share a calendar with other email accounts from the same domain name. Events and actions on the shared calendar will be synchronised.
+
+> [!warning]
+>
+> Only email addresses from the same domain name can receive this type of sharing.
+
+To initiate a sharing on another email address:
+
+- Log in to your Zimbra email account via the [webmail](/links/web/email).
+- Go to the `Calendar`{.action} tab.
+- Right-click on the relevant calendar and click on `Share...`{.action}.
+- Click on the `Invite by email`{.action} tab.
+
+![zimbra_app](images/zimbra-calendar-webmail-02.png){.thumbnail .w-600 .h-600}
+
+Follow the steps below to share a calendar with one or more email accounts:
+
+> [!tabs]
+> **Step 1**
+>>
+>> Enter the email address with which you want to share the calendar.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-03.png){.thumbnail .w-600 .h-600}
+>>
+> **Step 2**
+>>
+>> Set the permissions of the email account on the calendar, then click on `Add`{.action}.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-04.png){.thumbnail .w-600 .h-600}
+>>
+> **Step 3**
+>>
+>> Repeat steps 1 and 2 to share the same calendar with other email accounts from the same domain name, then click on `Save`{.action}.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-05.png){.thumbnail .w-600 .h-600}
+>>
+> **Step 4**
+>>
+>> An email is sent to each recipient of the sharing and allows them to accept or reject the shared calendar. It also indicates the rights granted on this calendar.
+>>
+>> ![zimbra_app](images/zimbra-calendar-webmail-06.png){.thumbnail .w-600 .h-600}
+
+> [!primary]
+>
+> If you share your calendar with an email account from the same domain name using the Roundcube webmail (MX Plan offer) or OWA (Email Pro and Exchange offers), the recipient email address receives a link to access the Zimbra webmail, allowing them to create a "guest" account to view the calendar.
+>
+> ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
+
+### Configuring the CalDAV calendar on compatible software
 
 We have selected stable applications that are compatible with the CalDAV protocol.
 
@@ -47,7 +121,7 @@ We have selected stable applications that are compatible with the CalDAV protoco
 >
 > Android devices do not currently offer native support for the CalDAV protocol, neither is there currently a stable third-party app that is able to sync Zimbra calendars for our offers.
 >
-> Only the Zimbra app, based on its Webmail, is able to view shared calendars on an Android device.
+> Only the Zimbra app, based on its webmail, is able to view online calendars on an Android device.
 
 #### General settings for a CalDAV Zimbra calendar <a name="general-settings"></a>
 

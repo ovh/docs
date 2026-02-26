@@ -20,9 +20,19 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie-voip).
 - Disposer d'un [téléphone fourni par OVHcloud](/links/telecom/telephonie-comparatif-telephones) et l'avoir installé.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -120,10 +130,8 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 > Rendez-vous sur <http://monip.ovh> et prenez note de l'adresse IP publique qui vous est indiquée.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
+Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.<br>
+Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
 
 ![dépannage-plug-and-phone](images/control-panel01.png){.thumbnail}
 

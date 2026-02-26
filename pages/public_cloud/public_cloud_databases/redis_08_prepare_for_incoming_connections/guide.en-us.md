@@ -1,5 +1,5 @@
 ---
-title: Valkey - Configure your Valkey service to accept incoming connections
+title: Configure incoming connections of a Public Cloud Databases for Valkey service
 excerpt: Find out how to configure your Valkey service to accept incoming connections
 updated: 2024-06-12
 ---

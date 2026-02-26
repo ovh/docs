@@ -45,19 +45,19 @@ Aby usunąć tę anomalię, należy:
 Aby odnaleźć adres IP Twojego [hostingu OVHcloud](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> W ramce **Informacje ogólne** znajdziesz oznaczenia **IPv4** i **IPv6**.
 >>
