@@ -1,6 +1,6 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2025-10-30
+updated: 2026-02-26
 ---
 
 ## Obiettivo
@@ -23,9 +23,11 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 
 > [!alert]
 >
-> Questa guida si applica solo alle istanze con **fatturazione oraria**. Se le tue istanze hanno una **fatturazione mensile**, la fatturazione classica continuerà a essere applicata indipendentemente dallo stato del servizio.
+> **Ambito:** Questa guida si applica a tutte le istanze Public Cloud, indipendentemente dal loro modello di fatturazione (oraria o mensile).
 >
-> Queste manipolazioni comportano sempre la fatturazione dell'istanza finché non viene **eliminata**.
+> **Fatturazione mensile:** Un'istanza che rimane sospesa per l'intero mese non verrà fatturata. Non appena l'istanza viene riattivata, anche brevemente, si applica la fatturazione completa del mese.
+>
+> **Nota:** Finché l'istanza non viene eliminata, qualsiasi operazione continuerà a generare addebiti per l'istanza.
 >
 
 La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle tue istanze. Prosegui nella lettura di questa guida cliccando sull'opzione che preferisci. Abbiamo messo tra parentesi la terminologia utilizzata nell'interfaccia di Horizon.
@@ -84,7 +86,7 @@ Nella finestra contestuale, annota il messaggio e clicca su `Confermare`{.action
 
 Durante l'operazione viene visualizzato un messaggio:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Una volta completata la procedura, l'istanza si presenta come *Sospesa*.
 
@@ -294,6 +296,6 @@ Per **riattivare** l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentazione OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Contatta la nostra [Community di utenti](/links/community).

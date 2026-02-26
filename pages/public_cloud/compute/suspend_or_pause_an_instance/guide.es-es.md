@@ -1,6 +1,6 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2025-10-30
+updated: 2026-02-26
 ---
 
 ## Objetivo
@@ -23,9 +23,11 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 
 > [!alert]
 >
-> Esta guía solo se aplica a las instancias con **facturación por horas**. Si sus instancias tienen una **facturación mensual**, la facturación clásica seguirá aplicándose independientemente del estado del servicio.
+> **Alcance:** Esta guía se aplica a todas las instancias de Public Cloud, independientemente de su modelo de facturación (por horas o mensual).
 >
-> Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
+> **Facturación mensual:** Una instancia que permanezca suspendida durante todo el mes no se facturará. En cuanto la instancia sea reactivada, aunque sea brevemente, se aplicará la facturación completa del mes.
+>
+> **Nota:** Mientras la instancia no sea eliminada, cualquier operación seguirá generando cargos por la instancia.
 >
 
 En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción. Ponemos entre paréntesis la terminología utilizada en la **interfaz Horizon**.
@@ -83,7 +85,7 @@ En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.ac
 
 Durante la operación se muestra un mensaje:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Una vez finalizado el proceso, su instancia se mostrará como *Suspendida*.
 
@@ -293,6 +295,6 @@ Para **reactivar** la instancia, escriba lo siguiente en la línea de comandos:
 
 ## Más información
 
-[Documentación OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentación OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

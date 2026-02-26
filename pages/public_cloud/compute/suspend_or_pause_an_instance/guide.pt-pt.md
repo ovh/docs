@@ -1,6 +1,6 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-updated: 2025-10-30
+updated: 2026-02-26
 ---
 
 ## Objetivo
@@ -23,9 +23,11 @@ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é p
 
 > [!alert]
 >
-> Este guia só se aplica às instâncias com uma **faturação à hora**. Se as suas instâncias tiverem uma **faturação mensal**, a faturação clássica continuará a ser aplicada independentemente do estado do serviço.
+> **Âmbito:** Este guia aplica-se a todas as instâncias de Public Cloud, independentemente do modelo de faturação (à hora ou mensal).
 >
-> Estas manipulações não interrompem a faturação da instância, ela será faturada até que a **eliminada**.
+> **Faturação mensal:** Uma instância que permaneça suspensa durante todo o mês não será faturada. Assim que a instância for reativada, mesmo que brevemente, aplica-se a faturação completa do mês.
+>
+> **Nota:** Enquanto a instância não for eliminada, qualquer operação continuará a gerar encargos de instância.
 >
 
 A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâncias. Consulte este manual clicando na opção que preferir. Colocámos entre parênteses a terminologia utilizada na interface Horizon.
@@ -82,7 +84,7 @@ Na janela contextual, tome nota da mensagem e clique em `Confirmar`{.action}.
 
 Uma mensagem é exibida durante a operação:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Uma vez terminado o processo, a instância parece *Suspensa*.
 
@@ -292,6 +294,6 @@ Para **reactivar** a instância, utilize o seguinte comando:
 
 ## Quer saber mais?
 
-[Documentação OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentação OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

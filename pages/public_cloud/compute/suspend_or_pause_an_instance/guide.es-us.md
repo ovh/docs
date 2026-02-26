@@ -83,7 +83,7 @@ En la pantalla que aparece, tome nota del mensaje y haga clic en `Confirmar`{.ac
 
 Durante la operación se muestra un mensaje:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Una vez finalizado el proceso, su instancia se mostrará como *Suspendida*.
 
@@ -293,6 +293,6 @@ Para **reactivar** la instancia, escriba lo siguiente en la línea de comandos:
 
 ## Más información
 
-[Documentación OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentación OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
