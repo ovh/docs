@@ -1,7 +1,7 @@
 ---
 title: 'Die Größe einer zusätzlichen Disk erweitern'
 excerpt: 'Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen'
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -111,8 +111,6 @@ Geben Sie im neuen Fenster die gewünschte Größe des Volumes ein und klicken S
 
 ![Dashboard](images/increase-disk-03.png){.thumbnail}
 
-Vergewissern Sie sich, dass das Volume an Ihre Instanz angehängt ist, bevor Sie fortfahren. Ist das nicht der Fall, klicken Sie auf `...`{.action} in der Zeile des Volumes und wählen Sie `Mit Instanz verbinden`{.action}.
-
 ### Partition erweitern (Linux-Instanz)
 
 Stellen Sie eine SSH-Verbindung zu Ihrer Instanz her, um die Partition an die skalierte Disk anzupassen.
@@ -201,7 +199,11 @@ tmpfs 5.0M 0 5.0M 0% /run/lock
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Nachdem dies abgeschlossen ist, trennen Sie das Volume von der Instanz und hängen Sie es erneut an, um sicherzustellen, dass die aktualisierten QoS-Einstellungen (IOPS und Bandbreite) ordnungsgemäß angewendet werden.
+
 ### Partition erweitern (Windows-Instanz)
+
+Bevor Sie fortfahren, hängen Sie das Volume erneut an die Instanz an. Klicken Sie auf `...`{.action} in der Zeile des Volumes und wählen Sie `Mit Instanz verbiden`{.action} aus.
 
 Stellen Sie eine RDP-Verbindung (Remote Desktop) zu Ihrer Windows-Instanz her.
 
@@ -230,6 +232,8 @@ Klicken Sie auf `Finish`{.action}, um den Vorgang abzuschließen.
 Das skalierte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Nachdem dies abgeschlossen ist, trennen Sie das Volume von der Instanz und hängen Sie es erneut an, um sicherzustellen, dass die aktualisierten QoS-Einstellungen (IOPS und Bandbreite) ordnungsgemäß angewendet werden.
 
 ## Weiterführende Informationen
 

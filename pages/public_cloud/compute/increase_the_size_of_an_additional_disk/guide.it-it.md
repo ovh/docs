@@ -1,7 +1,7 @@
 ---
 title: Aumenta la dimensione di un disco aggiuntivo
 excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -111,8 +111,6 @@ Nella nuova finestra, indica la nuova dimensione del volume e clicca su `Modific
 
 ![dashboard](images/increase-disk-03.png){.thumbnail}
 
-Prima di continuare, assicurati che il volume sia associato all'istanza. In caso contrario, clicca sui tre puntini `...`{.action} nella riga del volume e seleziona `Associa all'istanza`{.action}.
-
 ### Estendi la partizione (istanza Linux)
 
 Apri una connessione SSH alla tua istanza per adattare la partizione al disco ridimensionato.
@@ -201,7 +199,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Una volta completata questa operazione, scollegate il volume dall'istanza e ricollegatelo per verificare che le impostazioni QoS aggiornate (IOPS e larghezza di banda) vengano applicate correttamente.
+
 ### Estendi la partizione (istanza Windows)
+
+Prima di procedere, ricollegate il volume all'istanza. Cliccate su `...`{.action} nella riga del volume e selezionate `Associa all'istanza`{.action}.
 
 Installa una connessione RDP (Remote Desktop) sulla tua istanza Windows.
 
@@ -230,6 +232,8 @@ Clicca su `Terminare`{.action} per completare il processo.
 Il volume ridimensionato include lo spazio disco aggiuntivo.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Una volta completata questa operazione, scollegate il volume dall'istanza e ricollegatelo per verificare che le impostazioni QoS aggiornate (IOPS e larghezza di banda) vengano applicate correttamente.
 
 ## Per saperne di più
 
