@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Kunden-Account erstellen'
 excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Ziel
@@ -18,7 +18,6 @@ Die Erstellung eines Accounts kann vor oder während der Bestellung Ihres ersten
 ## In der praktischen Anwendung
 
 ### Wie erstellt man einen OVHcloud Kunden-Account?
-
 
 Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie zu [dieser Seite](/links/manager) und klicken Sie auf `Account erstellen`{.action}.
 
@@ -47,12 +46,12 @@ Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmali
 > Ist die von Ihnen angegebene E-Mail-Adresse nicht gültig oder verfügbar, klicken Sie auf den Button `E-Mail-Adresse ändern`{.action}.
 >
 
-Nach Eingabe und Validierung des Codes müssen Sie den *** Kontotyp aus den verfügbaren Optionen auswählen:
+Nach Eingabe und Validierung des Codes müssen Sie den **Kontotyp** aus den verfügbaren Optionen auswählen:
 
-- **Verein**: Erstellen Sie einen Account für Ihren Verein, wenn Sie im nationalen Verzeichnis der Unternehmen und Einrichtungen registriert sind. Wenn Sie nicht registriert sind, erstellen Sie bitte einen Account als Privatperson.
-- **Öffentliche Verwaltung**: Erstellen Sie einen Account für Ihre öffentliche Organisation, wenn Sie einen Staat, eine Gebietskörperschaft oder eine internationale Organisation oder Institution vertreten.
-- **Unternehmen**: Erstellen Sie einen Account für Ihr Unternehmen, wenn Sie über eine registrierte Tätigkeit verfügen, einschließlich Einpersonenunternehmen.
-- **Privatperson**: Erstellen Sie einen Account als Privatperson, wenn Sie kein registriertes Unternehmen haben oder Ihr Unternehmen gerade gründen.
+- **Verein**: Ein Account vom Typ "Verein" darf nur von Vereinen und anderen gemeinnützigen Organisationen wie Stiftungen, Berufsgewerkschaften oder religiösen Vereinigungen erstellt werden.
+- **Öffentliche Verwaltung**: Ein Account vom Typ "Behörde" darf nur von staatlichen Behörden, Gebietskörperschaften oder öffentlichen Einrichtungen eingerichtet werden.
+- **Unternehmen**: Ein Account vom Typ "Unternehmen" muss von allen juristischen Personen (mit Ausnahme von Behörden und Vereinen) und allen natürlichen Personen (Einzelunternehmer:innen) erstellt werden, die im Rahmen ihrer beruflichen Tätigkeit OVHcloud Produkte erwerben.
+- **Privatperson**: Ein Account vom Typ "Privat" darf nur von natürlichen Personen erstellt werden, die OVHcloud Produkte für ihren privaten Bedarf erwerben.
 
 ![Wahl des Kontotyps](images/account-type-2025.png){.thumbnail}
 
@@ -78,7 +77,7 @@ Diese Kundenkennung erlaubt Ihnen:
 >
 > **Tipp: Verwenden Sie einen Passwortmanager.**
 >
-> Mit spezieller Software können Sie Ihre Zugangsdaten (ID und Passwort) für den OVHcloud Account sichern und sichern.<br>
+> Mit spezieller Software können Sie Ihre Zugangsdaten (ID und Passwort) für den OVHcloud Account speichern und sichern.<br>
 > Beispielsweise können Sie den Passwort-Manager **KeePass** verwenden. Dies ist ein freies und von der französischen Nationalen Agentur für Sicherheit der Informationssysteme (ANSSI) empfohlenes Programm.<br>
 > Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, das Sie sich aber merken müssen, ermöglicht den Zugriff auf eine Datenbank mit allen Ihren Kennungen und Passwörtern. Diese können hochgradig komplex sein, da sie im Programm gespeichert werden können.
 >

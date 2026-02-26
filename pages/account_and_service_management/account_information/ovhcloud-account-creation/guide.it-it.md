@@ -1,7 +1,7 @@
 ---
 title: Creare un account OVHcloud
 excerpt: Come creare un account OVHcloud
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Obiettivo
@@ -46,18 +46,18 @@ Una volta completato il primo form, ricevi un codice monouso all'indirizzo email
 > Se l'indirizzo email inserito non è valido o disponibile, clicca sul pulsante `Modifica l'indirizzo email`{.action}.
 >
 
-Una volta inserito e convalidato il codice, Lei deve definire il **tipo di conto** tra le scelte proposte:
+Una volta inserito e convalidato il codice, devi definire il **tipo di conto** tra le scelte proposte:
 
-- **Associazione**: Crea un account per la tua associazione se sei iscritto al Registro nazionale delle imprese. Se non sei iscritto, crea un account come privato.
-- **Pubblica amministrazione**: Crea un account per la tua organizzazione pubblica se rappresenti uno Stato, una collettività territoriale, un'organizzazione o un'istituzione internazionale.
-- **Società**: Crea un account per la tua azienda se disponi di un'attività registrata, incluse le imprese unipersonali.
-- **Privato**: Crea un account come privato se non disponi di un'azienda registrata o se stai creando la tua impresa.
+- **Associazione**: L'account "Associazione" deve essere creato esclusivamente dalle associazioni e altri organismi senza scopo di lucro come fondazioni, sindacati professionali o congregazioni religiose.
+- **Pubblica amministrazione**: L'account "Amministrazione pubblica" deve essere creato esclusivamente dalle amministrazioni statali, amministrazioni territoriali o istituzioni pubbliche.
+- **Società**: L'account "Società" deve essere creato da tutte le persone giuridiche (escluse le amministrazioni pubbliche e le associazioni) e persone fisiche (imprenditori individuali) che acquistano servizi OVHcloud nell'ambito della propria attività professionale.
+- **Privato**: L'account "Privato" deve essere creato esclusivamente dalle persone fisiche che acquistano servizi OVHcloud per le proprie esigenze private, al di fuori di un'attività professionale.
 
 ![scelta del tipo di account](images/account-type-2025.png){.thumbnail}
 
-In seguito, Lei verrà invitato a fornire i Suoi dati. Si assicuri che le informazioni inserite siano corrette.
+In seguito, verrai invitato a fornire i tuoi dati. Assicurati che le informazioni inserite siano corrette.
 
-Il tuo account creato sarà automaticamente connesso alla home page, chiamata "Dashboard", del tuo account.
+Una volta creato l'account, verrai connesso automaticamente alla home page, chiamata "Dashboard", del tuo account.
 
 ### Qual è il mio identificativo cliente? <a name="nic-handle"></a>
 

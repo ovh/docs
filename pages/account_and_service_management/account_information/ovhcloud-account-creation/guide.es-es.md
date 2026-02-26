@@ -1,7 +1,7 @@
 ---
 title: 'Crear una cuenta de OVHcloud'
 excerpt: 'Cómo crear una cuenta de OVHcloud'
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Objetivo
@@ -48,10 +48,10 @@ Una vez completado el primer formulario, recibirá un código de uso único en l
 
 Una vez introducido y validado el código, deberá definir el **tipo de cuenta** entre las opciones disponibles:
 
-- **Asociación**: Cree una cuenta para su asociación si está inscrita en el directorio nacional de empresas e instituciones. Si no está registrada, cree una cuenta como particular.
-- **Administración pública**: Cree una cuenta para su organización pública si representa a un Estado, una administración territorial, organización o institución internacional.
-- **Empresa**: Cree una cuenta para su empresa si tiene una actividad registrada, incluidas las empresas unipersonales.
-- **Particular**: Cree una cuenta como particular si no tiene empresa inscrita o si está creando su empresa.
+- **Asociación**: La cuenta "Asociación" debe ser creada únicamente por las asociaciones y otras organizaciones sin ánimo de lucro como fundaciones, sindicatos profesionales o congregaciones religiosas.
+- **Administración pública**: La cuenta "Administración pública" debe ser creada únicamente por las administraciones públicas, las administraciones territoriales o los establecimientos públicos.
+- **Empresa**: La cuenta "Empresa" debe ser creada por todas las personas jurídicas (excepto las administraciones públicas y las asociaciones) y todas las personas físicas (empresarios individuales) que compren productos de OVHcloud en el marco de su actividad profesional.
+- **Particular**: La cuenta "Particular" debe ser creada únicamente por las personas físicas que compren productos de OVHcloud para sus necesidades privadas, al margen de una actividad profesional.
 
 ![elegir el tipo de cuenta](images/account-type-2025.png){.thumbnail}
 

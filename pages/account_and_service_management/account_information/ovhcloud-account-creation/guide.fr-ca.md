@@ -1,13 +1,13 @@
 ---
 title: 'Créer un compte OVHcloud'
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Objectif
 
 Pour utiliser les services OVHcloud, vous devez d'abord créer votre compte.
-La création d'un compte peut s'effectuer avant ou pendant la commande de votre premier service OVHcloud.
+Vous pouvez créer un compte avant ou pendant la commande de votre premier service OVHcloud.
 
 **Découvrez comment vous créer un compte OVHcloud.**
 
@@ -41,17 +41,17 @@ Une fois ce premier formulaire complété, un code à usage unique vous sera env
 > [!primary]
 > Si vous n'avez pas reçu l'e-mail contenant le code, vérifiez les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
 >
-> Vous pouvez déclencher l'envoi d'un nouveau code en cliquant sur le lien prévu à cet effet en bas de cette page.
+> Vous pouvez déclencher l'envoi d'un nouveau code en cliquant sur le lien en bas de cette page.
 >
 > Si l'adresse e-mail que vous avez renseignée n'est pas valide ou disponible, cliquez sur le bouton `Changer l'adresse e-mail`{.action}.
 >
 
 Une fois le code saisi et validé, vous devez définir le **type de compte** parmi les choix proposés :
 
-- **Association** : Créez un compte pour votre association si elle est inscrite au répertoire national des entreprises et des établissements. Si ce n'est pas le cas, veuillez créer un compte en tant que particulier.
-- **Administration publique** : Créez un compte pour votre organisation publique si vous représentez un État, une collectivité territoriale, une organisation ou institution internationale.
-- **Entreprise** : Créez un compte pour votre entreprise si vous avez une activité immatriculée, y compris les entreprises unipersonnelles.
-- **Particulier** : Créez un compte en tant que particulier si vous n'avez pas d'entreprise immatriculée ou si vous êtes en train de créer votre entreprise.
+- **Association** : Le compte « Association » doit être créé uniquement par les associations et autres organismes à but non lucratif tels que les fondations, syndicats professionnels ou congrégations religieuses.
+- **Administration publique** : Le compte « Administration publique » doit être créé uniquement par les administrations d'État, les administrations territoriales ou les établissements publics.
+- **Entreprise** : Le compte « Entreprise » doit être créé par toutes les personnes morales (hors administrations publiques et associations) et toutes les personnes physiques (entrepreneurs individuels) achetant des produits OVHcloud dans le cadre de leur activité professionnelle.
+- **Particulier** : Le compte « Particulier » doit être créé uniquement par les personnes physiques achetant des produits OVHcloud pour leurs besoins privés, hors cadre d'une activité professionnelle.
 
 ![choix du type de compte](images/account-type-2025.png){.thumbnail}
 

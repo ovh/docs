@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Konto może zostać utworzone przed lub podczas składania zamówienia na pierws
 
 ### Jak założyć konto OVHcloud?
 
-Aby utworzyć konto OVHcloud, przejdź do [this page](/links/manager) i kliknij `Utwórz konto`{.action}.
+Aby utworzyć konto OVHcloud, przejdź do [tej strony](/links/manager) i kliknij `Utwórz konto`{.action}.
 
 ![Załóż konto](images/account-creation-EN-01.png){.thumbnail}
 
@@ -43,15 +43,15 @@ Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres 
 >
 > Możesz aktywować wysyłkę nowego kodu, klikając na link podany w tym celu na dole strony.
 >
-> Jeśli podany przez Ciebie adres e-mail jest nieprawidłowy lub dostępny, kliknij przycisk `Zmień adres e-mail`{.action}.
+> Jeśli podany przez Ciebie adres e-mail jest nieprawidłowy lub niedostępny, kliknij przycisk `Zmień adres e-mail`{.action}.
 >
 
 Po wpisaniu i potwierdzeniu kodu należy zdefiniować **typ konta** jako jeden z dostępnych modeli:
 
-- **Stowarzyszenie**: Utwórz konto dla stowarzyszenia, jeśli jest ono wpisane do krajowego rejestru firm i instytucji. Jeśli nie masz jeszcze konta, utwórz konto jako osoba prywatna.
-- **Administracja publiczna**: Utwórz konto dla instytucji publicznej, jeśli reprezentujesz organ państwowy, jednostkę terytorialną lub organizację czy instytucję międzynarodową.
-- **Firma**: Utwórz konto firmowe, jeśli prowadzisz zarejestrowaną działalność, także jednoosobową.
-- **Osoba fizyczna**: Utwórz konto jako osoba prywatna, jeśli nie prowadzisz zarejestrowanej działalności albo dopiero zakładasz firmę.
+- **Stowarzyszenie**: Konto "Stowarzyszenie" powinny tworzyć wyłącznie stowarzyszenia i inne podmioty niekomercyjne, takie jak fundacje, związki zawodowe lub zgromadzenia wyznaniowe.
+- **Administracja publiczna**: Konto "Administracja publiczna" powinny tworzyć wyłącznie jednostki administracji państwowej, terytorialnej oraz inne jednostki sektora publicznego.
+- **Firma**: Konto "Firma" powinny tworzyć osoby prawne (z wyłączeniem podmiotów administracji publicznej i stowarzyszeń) oraz osoby fizyczne (przedsiębiorcy indywidualni), które kupują produkty OVHcloud w ramach działalności gospodarczej.
+- **Osoba fizyczna**: Konto "Prywatne" powinny tworzyć wyłącznie osoby fizyczne kupujące produkty OVHcloud na własne potrzeby, niezwiązane z działalnością gospodarczą.
 
 ![wybór typu konta](images/account-type-2025.png){.thumbnail}
 

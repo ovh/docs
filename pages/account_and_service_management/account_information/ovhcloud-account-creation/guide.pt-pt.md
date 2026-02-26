@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma conta OVHcloud'
 excerpt: 'Saiba como criar a sua conta OVHcloud'
-updated: 2026-02-01
+updated: 2026-02-26
 ---
 
 ## Objetivo
@@ -48,16 +48,16 @@ Depois de preencher o primeiro formulário, ser-lhe-á enviado um código de uti
 
 Uma vez o código introduzido e validado, deve definir o **tipo de conta** entre as escolhas propostas:
 
-- **Associação**: Crie uma conta para a sua associação se estiver inscrito no Registo Nacional de Pessoas Coletivas. Se não estiver inscrito, crie uma conta como particular.
-- **Administração pública**: Crie uma conta para a sua organização pública se representa um Estado, uma autarquia, uma organização ou uma instituição internacional.
-- **Empresa**: Crie uma conta para a sua empresa se tiver uma atividade registada, incluindo empresas unipessoais.
-- **Particular**: Crie uma conta como particular se não tiver uma empresa registada ou se estiver a criar uma empresa.
+- **Associação**: A conta "Associação" deve ser criada apenas por associações e outras organizações sem fins lucrativos, como fundações, sindicatos profissionais ou congregações religiosas.
+- **Administração pública**: A conta "Administração pública" deve ser criada apenas por organismos públicos.
+- **Empresa**: A conta "Empresa" deve ser criada por todas as pessoas coletivas (exceto administração pública e associações) e por todas as pessoas singulares (empresários individuais) que adquiram produtos da OVHcloud no âmbito da sua atividade profissional.
+- **Particular**: A conta "Particular" deve ser criada apenas pelas pessoas singulares que adquiram produtos da OVHcloud para as suas necessidades privadas, fora do âmbito de uma atividade profissional.
 
 ![escolha do tipo de conta](images/account-type-2025.png){.thumbnail}
 
 De seguida, ser-lhe-á pedido que indique os seus dados. Verifique se as informações introduzidas estão corretas.
 
-A sua conta criada irá automaticamente ser ligada à página inicial, denominada "painel de controlo", da sua conta.
+Após a criação da conta, será automaticamente direcionado para a página inicial, denominada "painel de controlo", da sua conta.
 
 ### Qual é o meu identificador de cliente? <a name="nic-handle"></a>
 
