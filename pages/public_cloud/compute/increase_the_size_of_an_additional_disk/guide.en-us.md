@@ -1,7 +1,7 @@
 ---
 title: Increasing the size of an additional disk
 excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -111,8 +111,6 @@ In the popup window, enter the new size for the volume and click on `Modify the 
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
 
-Ensure that the volume is attached to your instance before continuing. If not, click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
-
 ### Extending the partition (Linux instance)
 
 Establish an SSH connection to your instance in order to adjust the partition to the resized disk.
@@ -201,7 +199,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
+
 ### Extending the partition (Windows instance)
+
+Before proceeding, reattach the volume to the instance. Click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
 
 Establish a remote desktop (RDP) connection to your Windows instance.
 
@@ -228,6 +230,8 @@ Click on `Finish`{.action} to complete the process.
 The resized volume now includes the additional disk space.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Once this is completed, detach the volume from the instance and reattach it to ensure the updated QoS settings (IOPS and bandwidth) are properly applied.
 
 ## Go further
 

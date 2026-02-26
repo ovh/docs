@@ -1,7 +1,7 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -111,8 +111,6 @@ En la nueva ventana, introduzca el nuevo tamaño del volumen y haga clic en `Edi
 
 ![cuadro de mando](images/increase-disk-03.png){.thumbnail}
 
-Asegúrese de que el volumen está asociado a su instancia antes de continuar. En caso contrario, haga clic en `...`{.action} en la línea de volumen y seleccione `Asociar a la instancia`{.action}.
-
 ### Ampliar la partición (instancia Linux)
 
 Conéctese por SSH a su instancia para ajustar la partición al disco redimensionado.
@@ -201,7 +199,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Una vez finalizada esta operación, desmonte el volumen de la instancia y vuelva a montarlo para asegurarse de que los parámetros QoS actualizados (IOPS y ancho de banda) se hayan aplicado correctamente.
+
 ### Ampliar la partición (instancia Windows)
+
+Antes de continuar, monte el volumen en la instancia. Haga clic en `...`{.action} en la fila del volumen y seleccione `Asociar a la instancia`{.action}.
 
 Establezca una conexión RDP (Remote Desktop) en su instancia Windows.
 
@@ -230,6 +232,8 @@ Haga clic en `Finalizar`{.action} para finalizar el proceso.
 El volumen redimensionado incluye ahora el espacio en disco adicional.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Una vez finalizada esta operación, desmonte el volumen de la instancia y vuelva a montarlo para asegurarse de que los parámetros QoS actualizados (IOPS y ancho de banda) se hayan aplicado correctamente.
 
 ## Más información
 
