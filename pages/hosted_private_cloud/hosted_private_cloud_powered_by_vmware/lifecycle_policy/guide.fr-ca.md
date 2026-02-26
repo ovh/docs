@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
-excerpt: "VMware on OVHcloud"
-updated: 2025-09-24
+excerpt: "Découvrez la politique de cycle de vie des services VMware on OVHcloud, incluant les phases de maintenance, sunset et fin de support"
+updated: 2026-02-26
 ---
 
 > [!warning]
@@ -17,10 +17,10 @@ Le service Hosted Private Cloud VMware on OVHcloud propose une infrastructure d�
 
 OVHcloud a une politique de cycle de vie du service afin de prendre en compte un certain nombre de facteurs, tels que :
 
-* le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
-* le cycle de vie des composants matériels ;
-* la compatibilité entre composants matériels et/ou logiciels ;
-* les autres facteurs affectant la qualité du service.
+- le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
+- le cycle de vie des composants matériels ;
+- la compatibilité entre composants matériels et/ou logiciels ;
+- les autres facteurs affectant la qualité du service.
 
 Cette politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme.
 
@@ -49,6 +49,7 @@ Nos équipes restent engagées pour vous accompagner dans cette transition et ga
 #### Mode Sunset
 
 Le mode Sunset correspond à une phase du cycle de vie d’un produit indiquant qu’un service ou une fonctionnalité approche de la fin de sa période de support. À ce stade, le service ou la fonctionnalité reste disponible, mais ne bénéficie plus de mises à jour régulières, de nouvelles fonctionnalités ou de correctifs importants.
+
 Durant cette phase, OVHcloud accompagne les clients dans la migration vers d’autres services ou solutions plus adaptées à leurs besoins en évolution. Notre objectif est d’assurer une transition fluide et de minimiser toute perturbation de l’activité.
 
 Pendant la phase Sunset, les clients peuvent s’attendre à :
@@ -72,7 +73,7 @@ Les services et fonctionnalités suivants ont atteint leur fin de support et ne 
 
 |                   Commercial Range                    | Disponibilité générale| Mode Maintenance | Mode Sunset | Fin de support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2028-10-31  |
+|     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
 |     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
 |Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
 
@@ -85,23 +86,23 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 
 |                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-03-31   | 2028-05-31  |
-|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-31   | 2028-05-31  |
-|             Essentials (Intel Broadwell)              |          2020        |  2026-03-31  |  2026-03-31   | 2028-05-31  |
-|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-03-31   | 2028-10-31  |
-|           Premier2026 (Intel Emerald Rapids)          |          2026        |              |               | 2028-10-31  |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016        |  2017-04-30  |  2026-04-30   | 2027-05-31  |
+|              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-04-30   | 2027-05-31  |
+|             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
+|               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2026-09-30   | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-05-31  |               | 2027-10-31  |
 
-### Hôtes Private VMware Cloud Foundation - Stretched Cluster 3AZ (calcul)
+### Hôtes Private VMware Cloud Foundation (calcul)
 
 |                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
-| AMD Epyc Turin                                        |          2027        |             |                |             |
+| AMD Epyc Turin (3AZ)                                  |          2027        |             |                |             |
 
 ## Logiciels intégrés
 
 ### Cycle de vie VMware
 
-Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante :
+Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
