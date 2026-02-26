@@ -1,7 +1,7 @@
 ---
 title: Creare un account OVHcloud
 excerpt: Come creare un account OVHcloud
-updated: 2026-01-16
+updated: 2026-02-26
 ---
 
 ## Obiettivo
@@ -46,9 +46,18 @@ Una volta completato il primo form, ricevi un codice monouso all'indirizzo email
 > Se l'indirizzo email inserito non è valido o disponibile, clicca sul pulsante `Modifica l'indirizzo email`{.action}.
 >
 
-Una volta inserito e convalidato il codice, completa il form Ricordati di definire correttamente il **tipo di account** tra le opzioni proposte.
+Una volta inserito e convalidato il codice, devi definire il **tipo di conto** tra le scelte proposte:
 
-Il tuo account creato sarà automaticamente connesso alla home page, chiamata "Dashboard", del tuo account.
+- **Associazione**: L'account "Associazione" deve essere creato esclusivamente dalle associazioni e altri organismi senza scopo di lucro come fondazioni, sindacati professionali o congregazioni religiose.
+- **Pubblica amministrazione**: L'account "Amministrazione pubblica" deve essere creato esclusivamente dalle amministrazioni statali, amministrazioni territoriali o istituzioni pubbliche.
+- **Società**: L'account "Società" deve essere creato da tutte le persone giuridiche (escluse le amministrazioni pubbliche e le associazioni) e persone fisiche (imprenditori individuali) che acquistano servizi OVHcloud nell'ambito della propria attività professionale.
+- **Privato**: L'account "Privato" deve essere creato esclusivamente dalle persone fisiche che acquistano servizi OVHcloud per le proprie esigenze private, al di fuori di un'attività professionale.
+
+![scelta del tipo di account](images/account-type-2025.png){.thumbnail}
+
+In seguito, verrai invitato a fornire i tuoi dati. Assicurati che le informazioni inserite siano corrette.
+
+Una volta creato l'account, verrai connesso automaticamente alla home page, chiamata "Dashboard", del tuo account.
 
 ### Qual è il mio identificativo cliente? <a name="nic-handle"></a>
 
@@ -63,8 +72,14 @@ Questo identificativo cliente ti permette di:
 - accedere al tuo Spazio Cliente per gestire tutti i tuoi servizi
 - identificarti durante il contatto con il supporto OVHcloud e semplificare la gestione delle tue richieste.
 
-> [!warning]
+> [!success]
 > Annota il tuo identificativo perché ne hai bisogno per ogni connessione al tuo account.
+>
+> **Suggerimento: Utilizza un gestore di password**
+>
+> Per proteggere e rendere sicure le Sue credenziali di accesso (identificativo e password) all’account OVHcloud sono necessari programmi specifici.<br>
+> **KeePass**, ad esempio, è un software libero e gratuito che funziona secondo un semplice principio: una password principale – sufficientemente complessa, ma che è necessario memorizzare – permette di accedere a un database che raggruppa tutti gli identificativi e le relative password. Utilizzare questo sistema consente di scegliere password anche molto complesse: essendo memorizzate sul software non è necessario ricordarle a memoria.<br>
+> KeePass permette inoltre di generare password casuali complesse che memorizzerà per ogni sito o applicazione.
 
 ## Per saperne di più
 

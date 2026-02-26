@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma conta OVHcloud'
 excerpt: 'Saiba como criar a sua conta OVHcloud'
-updated: 2026-01-16
+updated: 2026-02-26
 ---
 
 ## Objetivo
@@ -46,9 +46,18 @@ Depois de preencher o primeiro formulário, ser-lhe-á enviado um código de uti
 > Se o endereço de e-mail que introduziu não for válido ou não estiver disponível, clique no botão `Alterar o endereço de e-mail`{.action}.
 >
 
-Uma vez o código introduzido e validado, preencha o formulário. Tenha o cuidado de definir corretamente o **tipo de conta** entre as opções propostas.
+Uma vez o código introduzido e validado, deve definir o **tipo de conta** entre as escolhas propostas:
 
-A sua conta criada irá automaticamente ser ligada à página inicial, denominada "painel de controlo", da sua conta.
+- **Associação**: A conta "Associação" deve ser criada apenas por associações e outras organizações sem fins lucrativos, como fundações, sindicatos profissionais ou congregações religiosas.
+- **Administração pública**: A conta "Administração pública" deve ser criada apenas por organismos públicos.
+- **Empresa**: A conta "Empresa" deve ser criada por todas as pessoas coletivas (exceto administração pública e associações) e por todas as pessoas singulares (empresários individuais) que adquiram produtos da OVHcloud no âmbito da sua atividade profissional.
+- **Particular**: A conta "Particular" deve ser criada apenas pelas pessoas singulares que adquiram produtos da OVHcloud para as suas necessidades privadas, fora do âmbito de uma atividade profissional.
+
+![escolha do tipo de conta](images/account-type-2025.png){.thumbnail}
+
+De seguida, ser-lhe-á pedido que indique os seus dados. Verifique se as informações introduzidas estão corretas.
+
+Após a criação da conta, será automaticamente direcionado para a página inicial, denominada "painel de controlo", da sua conta.
 
 ### Qual é o meu identificador de cliente? <a name="nic-handle"></a>
 
@@ -63,8 +72,15 @@ Este identificador de cliente permite-lhe:
 - ligar-se à Área de Cliente para gerir o conjunto dos seus serviços;
 - identificar-se quando contacta o suporte da OVHcloud, facilitando assim o tratamento das suas questões.
 
-> [!warning]
+> [!success]
 > Tome nota do seu identificador de utilizador, pois precisará dele para cada ligação à sua conta.
+>
+> **Dica: Use um gerenciador de palavras-passe**
+>
+> Programas específicos permitem guardar e proteger os seus identificadores de acesso (identificador e palavra-passe) à conta OVHcloud.<br>
+> Pode, por exemplo, utilizar o gestor de palavras-passe **KeePass**. Trata-se de um programa livre e gratuito.<br>
+> O princípio é simples: uma palavra-passe principal – que deve ser suficientemente complexa, mas que tem de memorizar – permite aceder a uma base de dados que reúne todas as suas ID de utilizador e palavras-passe. Estas podem ser muito complexas porque o programa consegue lembrar-se delas.<br>
+> Este programa permite também gerar palavras-passe complexas aleatórias que irá memorizar para cada um dos seus sites ou aplicações.
 
 ## Saiba mais
 
