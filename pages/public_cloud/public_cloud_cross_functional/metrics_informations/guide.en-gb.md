@@ -22,33 +22,44 @@ details[open]>summary::before {
 
 The objective of this document is to provide OVHcloud Public Cloud users with a comprehensive understanding of the Metrics feature, including:
 
-- Key Concepts – Explaining M4M (Dashboards) and M2C (Subscriptions) so users understand how to monitor and manage their resources.
+- Key Concepts – Explaining observability metrics dashboard and configuration to use them in Observability service so users understand how to monitor and manage their resources.
 - Metrics Overview – Defining what Metrics are, how they work, and how they can help optimize cloud operations.
 - Regional Roll-out – Highlighting the availability of Metrics across different regions, helping users plan and deploy workloads with full visibility.
 
 By the end of this document, readers will be able to navigate the Metrics feature confidently, leverage dashboards and subscriptions effectively, and understand the service’s regional availability for better cost and resource management.
 
-## Monitoring & Subscriptions: M4M and M2C
+## Observability metrics dashboard and configuration to use them in Observability service 
 
-M4M and M2C work together to provide a comprehensive experience: view metrics to understand the state of the cloud, and use them to take effective action. This approach ensures that users always have complete control over their resources and can optimize both performance and costs.
+Metrics dashboard and collect configuration with Observability service work together to provide a comprehensive experience: view metrics to understand the state of the cloud, and use them to take effective action. This approach ensures that users always have complete control over their resources and can optimize both performance and costs.
 
-### M4M – Dashboards for Metrics Monitoring
+> [!primary]
+>
+> At the time of writing, only Metrics dashboards are generally available. Metrics subscription into the Observability service is not yet generally available and will be introduced progressively (see below).
+>
 
-M4M represents the approach to visualizing and monitoring metrics. This feature allows users to:
+### Metrics Dashboards for Monitoring
 
-- Centralize and visualize all metrics for their cloud services in real time and historically,
-- Create customized dashboards to monitor performance, health, and resource usage,
+Metrics dashboard provide a visualization of metrics for a given resource for the purpose of monitoring its health and performance. This feature allows users to:
+
+- Centralize and visualize all metrics for a given cloud service in real time and historically,
 - Analyze trends and quickly detect anomalies.
 
-The goal of M4M is to provide a comprehensive and intuitive dashboard, ensuring maximum visibility across the entire cloud infrastructure.
+The goal of Metrics Dashboards is to provide a comprehensive and intuitive dashboard, ensuring maximum visibility across the entire cloud infrastructure.
 
-### M2C – Metrics Consumption and Subscriptions
+Metrics dashboards are available by region depending on the rollout status (see the regional availability section below).
 
-M2C corresponds to the management of Metrics consumption and use. It allows users to:
+### Configuration to collect metrics in Observability service
 
-- Subscribe to specific Metrics feeds and receive real-time notifications,
+The subscription feature is not yet available in production. An Alpha phase is planned to open in May, allowing early adopters to test the feature and provide feedback.
+
+Subscription is the activation of metrics collection in user's own tenant in observability service for advanced usage.
+
+- Subscribe to Prometheus metrics from a given resource to store them retention periode you defien (up to 13 months),
+- Query your metrics in PromQL
 - Integrate Metrics into automated workflows and external tools,
 - Set alerts and thresholds to anticipate problems and optimize performance.
+
+Information about the Alpha phase will be published on this [OVHcloud Observability Metrics page](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
 
 M2C emphasizes proactivity and action, transforming metric data into concrete operational decisions.
 

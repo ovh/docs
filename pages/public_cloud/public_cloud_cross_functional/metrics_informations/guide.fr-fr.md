@@ -22,33 +22,44 @@ details[open]>summary::before {
 
 L'objectif de ce document est de fournir aux utilisateurs du Public Cloud une compréhension complète de la fonctionnalité Métriques, notamment :
 
-- Concepts clés – Explication des concepts M4M (tableaux de bord) et M2C (abonnements) afin que les utilisateurs comprennent comment surveiller et gérer leurs ressources.
+- Concepts clés – Explication du tableau de bord des métriques d'observabilité et de leur configuration dans le service Observability afin que les utilisateurs comprennent comment surveiller et gérer leurs ressources.
 - Présentation des Métriques : définition de Métrique, de son fonctionnement et de la manière dont il peut aider à optimiser les opérations cloud.
 - Déploiement régional : mise en avant de la disponibilité des Métriques dans différentes régions, afin d'aider les utilisateurs à planifier et à déployer leurs charges de travail en toute transparence.
 
 À la fin de ce document, les lecteurs seront en mesure de naviguer en toute confiance dans la fonctionnalité Métriques, d'utiliser efficacement les tableaux de bord et les abonnements, et de comprendre la disponibilité régionale du service pour une meilleure gestion des coûts et des ressources.
 
-## Monitoring & Subscriptions: M4M et M2C
+## Tableau de bord des métriques d'observabilité et configuration pour les utiliser dans le service Observability
 
-M4M et M2C fonctionnent de concert pour offrir une expérience complète : visualiser les Métriques pour comprendre l’état du cloud, et les consommer pour agir efficacement. Cette approche assure que les utilisateurs ont toujours un contrôle total sur leurs ressources et peuvent optimiser à la fois la performance et les coûts.
+Le tableau de bord des métriques et la configuration de collecte avec le service Observability fonctionnent ensemble pour offrir une expérience complète : consultez les métriques pour comprendre l'état du cloud et utilisez-les pour prendre des mesures efficaces. Cette approche garantit que les utilisateurs ont toujours un contrôle total sur leurs ressources et peuvent optimiser à la fois les performances et les coûts.
 
-### M4M – Tableaux de bord pour la surveillance des Métriques
+> [!primary]
+>
+> Au moment de la rédaction du présent document, seuls les tableaux de bord Metrics sont généralement disponibles. L'abonnement à Metrics dans le service Observability n'est pas encore généralement disponible et sera introduit progressivement (voir ci-dessous).
+>
 
-M4M représente l’approche de visualisation et de suivi des Métriques. Cette fonctionnalité permet aux utilisateurs de :
+### Tableaux de bord métriques pour la surveillance
 
-- Visualiser toutes les Métriques d'un service cloud en temps réel et en historique
-- Analyser les tendances et détecter rapidement les anomalies.
+Les tableaux de bord métriques permettent de visualiser les métriques d'une ressource donnée afin d'en surveiller l'état et les performances. Cette fonctionnalité permet aux utilisateurs :
 
-L’objectif de M4M est de fournir un tableau de bord complet et intuitif, garantissant une visibilité maximale sur l’ensemble de l’infrastructure cloud.
+- de centraliser et de visualiser toutes les métriques d'un service cloud donné en temps réel et de manière historique,
+- d'analyser les tendances et de détecter rapidement les anomalies.
 
-### M2C – Consommation et abonnements aux Métriques
+L'objectif des tableaux de bord métriques est de fournir un tableau de bord complet et intuitif, garantissant une visibilité maximale sur l'ensemble de l'infrastructure cloud.
 
-M2C correspond à la gestion de la consommation et de l’exploitation des Métriques. Elle permet aux utilisateurs de :
+Les tableaux de bord métriques sont disponibles par région en fonction de l'état d'avancement du déploiement (voir la section sur la disponibilité régionale ci-dessous).
 
-- S’abonner à des flux de Métriques spécifiques et recevoir des notifications en temps réel,
-- Intégrer les Métriques dans des workflows automatisés et des outils externes,
+### Configuration pour collecter des métriques dans le service Observability
+
+La fonctionnalité d'abonnement n'est pas encore disponible en production. Une phase Alpha devrait être lancée en mai, permettant aux premiers utilisateurs de tester la fonctionnalité et de fournir leurs commentaires.
+
+L'abonnement consiste à activer la collecte de métriques dans le tenant de l'utilisateur dans le service Observability pour une utilisation avancée.
+
+- Abonnez-vous aux métriques Prometheus d'une ressource donnée pour les stocker pendant la période de conservation que vous définissez (jusqu'à 13 mois).
+- Interrogez vos métriques dans PromQL.
+- Intégrer les métriques dans les workflows automatisés et les outils externes,
 - Définir des alertes et des seuils pour anticiper les problèmes et optimiser les performances.
-- Conserver les Métriques jusqu’à 13 mois, pour une analyse historique et un suivi à long terme.
+
+Les informations relatives à la phase Alpha seront publiées sur cette [page OVHcloud Observability Metrics](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
 
 M2C met l’accent sur la proactivité et l’action, transformant les données des Métriques en décisions opérationnelles concrètes.
 
