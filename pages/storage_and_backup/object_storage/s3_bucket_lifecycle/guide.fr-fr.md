@@ -83,7 +83,7 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 > La version 1 de la configuration d'un lifecycle (avec l'attribut Prefix en dehors de Filter) est obsolète. Nous tolérons la version 1 en transformant automatiquement le json pour qu'il corresponde au format de la version 2. Cependant, nous vous conseillons vivement de n'utiliser que la version 2, comme décrit ci-dessous.
 >
 
-/// details | Voici la structure de base d'une configuration JSON pour un lifecycle contenant des règles d'expiration
+Voici la structure de base d'une configuration JSON pour un lifecycle contenant des règles d'expiration
 
 
 ```json
@@ -153,7 +153,6 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 | AbortIncompleteMultipartUpload                      | non       | Une action de lifecycle qui applique une opération de suppression sur les parties d'un téléchargement multi-parties incomplet. |
 | AbortIncompleteMultipartUpload.DaysAfterInitiation  | non       | Indique le nombre de jours après lequel toutes les parties de tous les téléchargements multi-parties incomplets sont supprimées et interrompt les téléchargements multi-parties sous-jacents. |
 
-///
 
 ### Comprendre le paramètre NoncurrentDays
 
@@ -232,7 +231,8 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 /// details | Supprimer tous les objets d'un bucket non versionné
 
-Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets du bucket au bout de 30 jours :
+Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets du bucket au bout de 1 jour.
+Cependant, si vous avez des incomplete multipart uploads, ceux-ci ne seront pas supprimés : pour vider complètement votre bucket, vous aurez besoin de règles supplémentaires.
 
 ```json
 {
@@ -242,7 +242,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
       "Status": "Enabled",
       "Filter": { },
       "Expiration": {
-        "Days": 30
+        "Days": 1
       }
     }
   ]
@@ -355,12 +355,9 @@ Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « âge »
 
 ///
 
-/// details | Expirer des objets dans un bucket versionné
+/// details | Vider un bucket non-versioné
 
-Dans un bucket versionné, la configuration suivante effectue ces actions :
-
-- Après 45 jours, tous les objets portant le préfixe « old/ » expirent automatiquement en créant des marqueurs de suppression pour chacune des versions courantes de l'objet : la version courante devient non courante et le marqueur de suppression devient la version courante.
-- Toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont alors supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
+Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets et les incomplete multipart uploads du bucket au bout de 1 jour:
 
 ```json
 {
@@ -368,15 +365,61 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
     {
       "ID": "123456",
       "Status": "Enabled",
-      "Filter": {
-        "Prefix": "old/"
-      },
+      "Filter": { },
       "Expiration": {
-        "Days": 45
+        "Days": 1
+      }
+    },
+    {
+      "ID": "78910",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
+      }
+    }
+  ]
+}
+```
+
+///
+
+/// details | Vider un bucket versioné.
+
+Dans la configuration suivante, il existe 3 règles de cycle de vie :
+- la première règle expirera (insérera un marqueur de suppression) la version courante de tous les objets 1 jour après leur date de création et supprimera définitivement toutes les versions non courantes 1 jour après qu'elles soient devenues non courantes
+- la deuxième règle supprimera automatiquement tous les marqueurs de suppression expirés
+- la troisième règle supprimera automatiquement tous les incomplete multipart uploads 1 jour après leur date de création
+
+```json
+
+{
+  "Rules": [
+    {
+      "ID": "123456",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "Days": 1
       },
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 15,
-        "NewerNoncurrentVersions": 3
+        "NoncurrentDays": 1
+      }
+    },
+    {
+      "ID": "654789",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "ExpiredObjectDeleteMarker": true
+      }
+    },
+    {
+      "ID": "963852",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
       }
     }
   ]
@@ -447,7 +490,7 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 
 ### Configuration
 
-/// details | Voici la structure de base d'une configuration d'un lifecycle JSON contenant des règles de transition :
+Voici la structure de base d'une configuration d'un lifecycle JSON contenant des règles de transition :
 
 ```json
 {
@@ -484,7 +527,6 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 | NoncurrentVersionTransitions.NoncurrentDays          | no       | Indique le nombre de jours avant qu'une version non courante soit éligible à la transition après être devenue non courante, c'est-à-dire l'âge minimum d'une version non courante. |
 | NoncurrentVersionTransitions.NewerNoncurrentVersions | no       | Indique le nombre de versions non courantes les plus récentes à conserver dans leur niveau de stockage actuel. Le maximum est de 100. |
 
-///
 
 ### Exemples de configurations de transition
 
@@ -661,7 +703,11 @@ Comme prérequis, vous devez avoir un bucket contenant des données sur lesquell
 
 /// details | Créez un fichier de configuration de lifecycle à l'aide de votre éditeur préféré.
 
-**Exemple** : La configuration suivante vise à vider un bucket après 30 jours.
+**Exemple** : Expirer les objets avec un préfixe spécifique dans un bucket versioné.
+
+La configuration suivante effectue les actions suivantes :
+- après 45 jours, elle expire automatiquement tous les objets avec le préfixe « old/ » en créant des marqueurs de suppression pour chacune des versions courantes de l'objet : la version courante devient non courante et le marqueur de suppression devient la version courante.
+- toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont ensuite supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
 
 ```bash
 $ cat lifecycle.json
