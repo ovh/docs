@@ -83,7 +83,7 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 > Version 1 of lifecycle configuration (with Prefix attribute outside of Filter) is deprecated. We tolerate version 1 by automatically transforming the json to match version 2 format. However, we strongly advise you to use only version 2 as described below.
 >
 
-/// details | The following is the basic structure of a lifecycle configuration JSON containing expiration rules
+The following is the basic structure of a lifecycle configuration JSON containing expiration rules
 
 
 ```json
@@ -153,7 +153,6 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 | AbortIncompleteMultipartUpload                      | no       | A lifecycle action that applies a delete operation on parts of an incomplete multipart upload. |
 | AbortIncompleteMultipartUpload.DaysAfterInitiation  | no       | Indicates the number of days after which all the parts of all incomplete multipart uploads are deleted and aborts the underlying multipart uploads. |
 
-///
 
 ### Understanding the NoncurrentDays parameter
 
@@ -232,7 +231,8 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 /// details | Delete all objects in a non-versioned bucket
 
-Since the bucket is non-versioned, the following configuration will permanently delete all objects in the bucket after 30 days:
+Since the bucket is non-versioned, the following configuration will permanently delete all objects in the bucket after 1 day.
+However, if you have incomplete multipart uploads, they will not be deleted: to completely empty your bucket, you will need additional rules.
 
 ```json
 {
@@ -242,7 +242,7 @@ Since the bucket is non-versioned, the following configuration will permanently 
       "Status": "Enabled",
       "Filter": { },
       "Expiration": {
-        "Days": 30
+        "Days": 1
       }
     }
   ]
@@ -356,12 +356,9 @@ If an object has both tags i.e if an object is tagged "age" with value "old" and
 
 ///
 
-/// details | Expire objects in a versioned bucket
+/// details | Empty a non-versioned bucket
 
-In a versioned bucket, the following configuration does the following actions:
-
-- after 45 days, it automatically expires all the objects with prefix "old/" by creating delete markers for each of the current object versions: the current version becomes noncurrent, and the delete marker becomes the current version.
-- all 15+ days old noncurrent versions of the selected objects are then deleted except for the 3 most recent noncurrent versions. If there are less than 3 noncurrent versions, the NoncurrentVersionExpiration action will not be applied.
+Since the bucket is non-versioned, the following configuration will permanently delete all objects and incomplete multipart uploads in the bucket after 1 day:
 
 ```json
 {
@@ -369,15 +366,61 @@ In a versioned bucket, the following configuration does the following actions:
     {
       "ID": "123456",
       "Status": "Enabled",
-      "Filter": {
-        "Prefix": "old/"
-      },
+      "Filter": { },
       "Expiration": {
-        "Days": 45
+        "Days": 1
+      }
+    },
+    {
+      "ID": "78910",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
+      }
+    }
+  ]
+}
+```
+
+///
+
+/// details | Empty a versioned bucket.
+
+In the following configuration, there are 3 lifecycle rules:
+- the 1st rule will expire (insert a delete marker) current version of all objects 1 day after their creation date and will permanently delete all non-current versions 1 day after they become non-curent
+- the 2nd rule will automatically delete any expired delete markers
+- the 3rd rule will automatically delete all incomplete multipart uploads 1 day after their creation date
+
+```json
+
+{
+  "Rules": [
+    {
+      "ID": "123456",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "Days": 1
       },
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 15,
-        "NewerNoncurrentVersions": 3
+        "NoncurrentDays": 1
+      }
+    },
+    {
+      "ID": "654789",
+      "Status": "Enabled",
+      "Filter": { },
+      "Expiration": {
+        "ExpiredObjectDeleteMarker": true
+      }
+    },
+    {
+      "ID": "963852",
+      "Status": "Enabled",
+      "Filter": { },
+      "AbortIncompleteMultipartUpload": {
+        "DaysAfterInitiation": 1
       }
     }
   ]
@@ -447,7 +490,7 @@ As already mentioned before, when you have multiple rules in a bucket lifecycle 
 
 ### Configuration
 
-/// details | The following is the basic structure of a lifecycle configuration JSON containing transition rules:
+The following is the basic structure of a lifecycle configuration JSON containing transition rules:
 
 ```json
 {
@@ -484,7 +527,6 @@ As already mentioned before, when you have multiple rules in a bucket lifecycle 
 | NoncurrentVersionTransitions.NoncurrentDays          | no       | Indicates the number of days before a noncurrent version is eligible to transition after they became noncurrent i.e the minimum age of a noncurrent version. |
 | NoncurrentVersionTransitions.NewerNoncurrentVersions | no       | Indicates the number of most recent noncurrent versions to retain in their current storage tier. Maximum is 100. |
 
-///
 
 ### Examples of transition configurations
 
@@ -661,7 +703,11 @@ As a prerequisite, you must have a bucket containing data on which you want to a
 
 /// details | Create a lifecycle configuration file using your favorite editor.
 
-**Example**: the following configuration aims to empty a bucket after 30 days.
+**Example**: Expire objects with specific prefix in a versioned bucket.
+
+The following configuration does the following actions:
+- after 45 days, it automatically expires all the objects with prefix "old/" by creating delete markers for each of the current object versions: the current version becomes noncurrent, and the delete marker becomes the current version.
+- all 15+ days old noncurrent versions of the selected objects are then deleted except for the 3 most recent noncurrent versions. If there are less than 3 noncurrent versions, the NoncurrentVersionExpiration action will not be applied.
 
 ```bash
 $ cat lifecycle.json
@@ -670,28 +716,15 @@ $ cat lifecycle.json
     {
       "ID": "123456",
       "Status": "Enabled",
-      "Filter": { },
+      "Filter": {
+        "Prefix": "old/"
+      },
       "Expiration": {
-        "Days": 20
+        "Days": 45
       },
       "NoncurrentVersionExpiration": {
-        "NoncurrentDays": 10
-      }
-    },
-    {
-      "ID": "654789",
-      "Status": "Enabled",
-      "Filter": { },
-      "Expiration": {
-        "ExpiredObjectDeleteMarker": true
-      }
-    },
-    {
-      "ID": "963852",
-      "Status": "Enabled",
-      "Filter": { },
-      "AbortIncompleteMultipartUpload": {
-        "DaysAfterInitiation": 10
+        "NoncurrentDays": 15,
+        "NewerNoncurrentVersions": 3
       }
     }
   ]
