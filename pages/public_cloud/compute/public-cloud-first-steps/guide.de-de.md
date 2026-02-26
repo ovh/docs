@@ -589,7 +589,7 @@ Machen Sie diese Änderungen rückgängig, um zur schlüsselbasierten Anmeldung 
 Wenn Sie weiteren Benutzer-Accounts den Zugriff auf die Instanz erlauben möchten, gehen Sie wie folgt vor:
 
 - Erstellen Sie den Account auf der Instanz.
-- Erzuegen Sie ein neues SSH-Schlüsselpaar auf dem Gerät des Benutzers.
+- Erzeugen Sie ein neues SSH-Schlüsselpaar auf dem Gerät des Benutzers.
 - Fügen Sie der Instanz den öffentlichen Schlüssel hinzu.
 
 Eine detaillierte Erklärung dieser Schritte finden Sie in unserer [zugehörigen Anleitung](/pages/public_cloud/compute/configuring_additional_ssh_keys).
