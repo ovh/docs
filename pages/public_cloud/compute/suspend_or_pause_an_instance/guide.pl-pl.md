@@ -1,6 +1,7 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2025-10-30
+excerpt: Dowiedz się, jak wstrzymać, uśpić lub zawiesić instancję Public Cloud, aby tymczasowo zwolnić zasoby zachowując adres IP, oraz poznaj wpływ każdej opcji na rozliczenia
+updated: 2026-02-27
 ---
 
 ## Wprowadzenie
@@ -21,11 +22,13 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 
 ## W praktyce
 
-> [!alert]
+> [!warning]
 >
-> Niniejszy przewodnik dotyczy tylko instancji z płatnością **godzinową**. Jeśli w Twoich instancjach stosowana jest opłata **miesięczna**, płatność będzie kontynuowana niezależnie od statusu usługi.
+> **Zakres:** Niniejszy przewodnik dotyczy wszystkich instancji Public Cloud, niezależnie od ich modelu rozliczeniowego (godzinowego lub miesięcznego).
 >
-> Te czynności zawsze powodują **naliczenie opłaty za instancję**, dopóki nie zostanie ona **usunięta**.
+> **Rozliczenie miesięczne:** Instancja, która pozostaje zawieszona przez cały miesiąc, nie będzie rozliczana. Gdy tylko instancja zostanie reaktywowana, nawet na chwilę, stosowane jest pełne rozliczenie miesięczne.
+>
+> **Uwaga:** Dopóki instancja nie zostanie usunięta, każda operacja będzie nadal generować opłaty za instancję.
 >
 
 Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Kontynuuj lekturę przewodnika, klikając wybraną opcję. W nawiasach umieszczamy terminologię używaną w interfejsie Horizon.
@@ -82,7 +85,7 @@ W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk 
 
 Podczas operacji wyświetla się komunikat:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Zawieszona*.
 
@@ -292,6 +295,6 @@ Aby **restartować** instancję, wpisz w wierszu polecenia:
 
 ## Sprawdź również
 
-[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Dokumentacja OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Dołącz do [grona naszych użytkowników](/links/community).
