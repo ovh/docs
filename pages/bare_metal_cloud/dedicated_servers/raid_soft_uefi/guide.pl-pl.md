@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie uruchamiania UEFI
+title: Zarządzanie i odbudowa oprogramowania RAID w trybie UEFI
 excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI
 updated: 2026-01-26
 ---
@@ -47,14 +47,14 @@ W całym przewodniku używamy pojęć **główny dysk** i **dysk pomocniczy**. W
 - Główny dysk to dysk, którego ESP (EFI System Partition) jest zamontowany przez system Linux.
 - Dyski pomocnicze to wszystkie inne dyski w RAID.
 
-## Instrukcje
+## W praktyce
 
 Kiedy zakupisz nowy serwer, możesz poczuć potrzebę wykonania szeregu testów i działań. Jednym z takich testów może być symulacja awarii dysku, aby zrozumieć proces odbudowy RAID.
 
 ### Omówienie treści
 
 - [Podstawowe informacje](#basicinformation)
-- [Zrozumienie partycji systemu EFI (ESP)](#efisystemparition)
+- [Zrozumienie partycji systemu EFI (ESP)](#efisystempartition)
 - [Symulowanie awarii dysku](#diskfailure)
     - [Usuwanie uszkodzonego dysku](#removedisk)
 - [Odbudowa macierzy RAID (z ESP bez dublowania)](#raidrebuildnonmirrored)
@@ -228,9 +228,9 @@ Zwróć uwagę na urządzenia, partycje i punkty montażu, ponieważ jest to wa�
 
 W naszym przykładzie mamy:
 
-- Dwa tablice RAID: `/dev/md2` i `/dev/md3`.
+- Dwie tablice RAID: `/dev/md2` i `/dev/md3`.
 - Partycje należące do RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** i **nvme0n1p3** z punktami montażu `/boot` i `/`.
-- Partycje nie należące do RAID: **nvem0n1p1**, **nvme0n1p4** i **nvme1n1p4** z punktami montażu `/boot/efi` i [SWAP].
+- Partycje nie należące do RAID: **nvme0n1p1**, **nvme0n1p4** i **nvme1n1p4** z punktami montażu `/boot/efi` i [SWAP].
 - Jedna partycja nie ma punktu montażu: **nvme1n1p1**.
 
 Partycja **nvme0n1p5** jest partycją konfiguracyjną, czyli tylko do odczytu, połączoną z serwerem, która dostarcza mu początkowe dane konfiguracyjne.
@@ -327,7 +327,7 @@ Jeśli twój ESP nie jest dublowany, mogą wystąpić następujące problemy:
 
 **Przypadek 1** – Nie było żadnych zmian ani dużych aktualizacji (np. GRUB) w systemie operacyjnym.
 
-- Serwer może uruchomić się w normalnym trybu i można kontynuować odbudowę RAID.
+- Serwer może uruchomić się w normalnym trybie i można kontynuować odbudowę RAID.
 - Serwer nie może uruchomić się w normalnym trybie, użyj środowiska trybu rescue, aby odbudować RAID i zrekonfigurować partycję systemu EFI na nowym dysku.
 
 **Przypadek 2** – Były duże aktualizacje systemu (np. GRUB), a partycje ESP są zsynchronizowane.
@@ -610,7 +610,7 @@ Możemy teraz przystąpić do wymiany dysku i odbudowy macierzy RAID.
 > [!primary]
 > Ten proces może się różnić w zależności od systemu operacyjnego zainstalowanego na Twoim serwerze. Zalecamy, abyś zapoznał się z oficjalną dokumentacją swojego systemu operacyjnego, aby uzyskać dostęp do odpowiednich poleceń.
 > 
-> Jeśli Twój serwer potrafi uruchomić się w trybie normalnym po wymianie dysku, po prostu wykonaj kroki z [tej sekcji](#nonmirrorednormalmode), jeśli Twoja partycja systemu EFI nie jest zwierciadlona lub [tej sekcji](#mirrored-esp-normal), jeśli Twoja partycja systemu EFI jest zwierciadlona.
+> Jeśli Twój serwer potrafi uruchomić się w trybie normalnym po wymianie dysku, po prostu wykonaj kroki z [tej sekcji](#nonmirrorednormalmode), jeśli Twoja partycja systemu EFI nie jest zwierciadlona lub [tej sekcji](#raidrebuildmirrored), jeśli Twoja partycja systemu EFI jest zwierciadlona.
 >
 
 #### Odbudowanie tablicy RAID po wymianie głównego dysku (trybu Rescue) <a name="nonmirroredrescuemode"></a>
@@ -1131,8 +1131,6 @@ Następnie skorzystaj z [tej sekcji](#swap-partition), aby odbudować partycję 
 >>
 >> Jeśli otrzymasz poniższy komunikat:
 >>
->> If you receive the following message:
->>
 >> ```console
 >> Warning: The kernel is still using the old partition table.
 >> The new table will be used at the next reboot or after you
@@ -1333,6 +1331,8 @@ Następnie skorzystaj z [tej sekcji](#swap-partition), aby odbudować partycję 
 >>
 
 ///
+
+<a name="go-further"></a>
 
 ## Sprawdź również
 
