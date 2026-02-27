@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
-excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2026-02-03
+excerpt: Learn how to optimise your OVHcloud Object Storage costs by configuring lifecycle rules for automatic expiration, transition, and cleanup of objects
+updated: 2026-02-27
 ---
 
 <style>
@@ -20,18 +20,18 @@ details[open]>summary::before {
 
 ## Objective
 
-**Learn how to optimise your storage costs with OVHcloud lifecycle rules.**
+**Learn how to optimise your OVHcloud Object Storage costs by configuring lifecycle rules for automatic expiration, transition, and cleanup of objects.**
 
 > [!warning]
 > 
 > This feature is **not** supported on the legacy **.perf** endpoint and is only available through the **.io** endpoint.
-> For more information about the differences between the 2 endpoints, please check [this documentation](/pages/storage_and_backup/object_storage/s3_location).
+> For more information about the differences between the 2 endpoints, see [this documentation](/pages/storage_and_backup/object_storage/s3_location).
 
 ## Introduction
 
-### What is lifecycle ?
+### What is lifecycle?
 
-OVHcloud Object Storage bucket lifecycle is a feature that allows you to optimize your storage costs by managing your objects throughout their lifecycle. By uploading a lifecycle configuration to a bucket, you define a set a rules that the object storage solution applies to the objects of the said bucket to perform specific actions.
+OVHcloud Object Storage bucket lifecycle lets you optimize storage costs by managing objects throughout their lifecycle. By uploading a lifecycle configuration to a bucket, you define a set of rules that the object storage solution applies to the objects of the said bucket to perform specific actions.
 
 There are 2 types of actions that OVHcloud Object Storage performs on your objects:
 
@@ -43,8 +43,8 @@ There are 2 types of actions that OVHcloud Object Storage performs on your objec
 By leveraging the lifecycle configuration feature, you can tell OVHcloud Object Storage to:
 
 - **clean incomplete multi-parts uploads**: suppose you have uploaded a large number of large (>5GB) objects using multi-part uploads, but for some reasons, for many objects, the multi-part upload did not complete successfully. In this scenario, even if you haven't fully uploaded all the parts of an object, you still have to pay for the storage cost of the uploaded parts. In that case, you might want to clean the parts of all the incomplete multi-parts uploads to save money.
-- **clean old unused data**: suppose you have an application that stores its logs in a bucket. Your organization might define a log retention policy of 30 days. After that, the logs are no longer needed and you might want to delete them in order to save money.
-- **optimize storage costs by transitioning infrequently accessed data to a less expensive storage tier**: suppose you have certain files which are often used for a brief duration before they are hardly used again. Eventually, you might not require immediate access to them, yet your organization or laws might mandate that you keep them for a certain timeframe. Once that period is over, you can then remove them to save money.
+- **clean old unused data**: suppose you have an application that stores its logs in a bucket. Your organization might define a log retention policy of 30 days. After that, the logs are no longer needed and you might want to delete them to save money.
+- **optimize storage costs by transitioning infrequently accessed data to a less expensive storage tier**: suppose you have certain files which are often used for a brief duration before they are hardly used again. You may not need immediate access, but your organization or laws may require you to keep them for a certain period. After that, you can delete them to save money.
 
 ### Special considerations
 
@@ -60,7 +60,7 @@ Lifecycle rules are processed asynchronously and on a best-effort basis. Most ru
 
 ### Conflicting expiration dates
 
-Typically, the lifecycle feature is designed to help you optimize your storage costs. For instance, if two expiration rules overlap i.e they target the same set of objects but with different expiration dates, the rule with the shorter duration is applied, ensuring that data is not retained beyond the anticipated timeframe: OVHcloud Object Storage always tries to chose the path that is the most cost-effective for you.
+Typically, the lifecycle feature is designed to help you optimize your storage costs. For instance, if two expiration rules overlap i.e they target the same set of objects but with different expiration dates, the rule with the shorter duration is applied, ensuring that data is not retained beyond the anticipated timeframe: OVHcloud Object Storage always chooses the most cost-effective path for you.
 
 Generally speaking, when you have multiple rules in a bucket lifecycle configuration that apply to the same set of objects:
 
@@ -388,7 +388,8 @@ Since the bucket is non-versioned, the following configuration will permanently 
 /// details | Empty a versioned bucket.
 
 In the following configuration, there are 3 lifecycle rules:
-- the 1st rule will expire (insert a delete marker) current version of all objects 1 day after their creation date and will permanently delete all non-current versions 1 day after they become non-curent
+
+- the 1st rule will expire (insert a delete marker) current version of all objects 1 day after their creation date and will permanently delete all non-current versions 1 day after they become non-current
 - the 2nd rule will automatically delete any expired delete markers
 - the 3rd rule will automatically delete all incomplete multipart uploads 1 day after their creation date
 
@@ -574,7 +575,7 @@ In this scenario, suppose you upload an object with multiple versions:
 If the current date is 2024-10-23:
 
 - v5 will be transitioned 30 days after 2024-10-23
-- v1 will be transitioned 30 days after its creation date (2024-10-18)
+- v1 will be transitioned 30 days after its creation date (2024-10-17)
 
 ```json
 {
@@ -706,6 +707,7 @@ As a prerequisite, you must have a bucket containing data on which you want to a
 **Example**: Expire objects with specific prefix in a versioned bucket.
 
 The following configuration does the following actions:
+
 - after 45 days, it automatically expires all the objects with prefix "old/" by creating delete markers for each of the current object versions: the current version becomes noncurrent, and the delete marker becomes the current version.
 - all 15+ days old noncurrent versions of the selected objects are then deleted except for the 3 most recent noncurrent versions. If there are less than 3 noncurrent versions, the NoncurrentVersionExpiration action will not be applied.
 
@@ -754,7 +756,7 @@ When a delete object operation (i.e expiration) is performed on an object in a v
 
 Extra lifecycle configuration is needed to remove objects permanently, including incomplete multipart uploads, expired delete markers, and previous versions of objects.
 
-### How can I empty my S3 bucket using Lifecycle rules?
+### How can I empty my S3<sup>1</sup> bucket using Lifecycle rules?
 
 To empty an S3 bucket, you will need to consider the following:
 
@@ -770,7 +772,7 @@ You can use the [Server Access Logging](/pages/storage_and_backup/object_storage
 ### How can I recover objects deleted by my lifecycle rules?
 
 Versioning is the only way to recover objects that have been expired by lifecycle rules. It must be activated on your bucket before you set up your lifecycle rules.
-Howaver, objects that are permanently deleted by lifecycle rules cannot be recovered.
+However, objects that are permanently deleted by lifecycle rules cannot be recovered.
 
 ### How can I exclude prefixes from my lifecycle rules?
 
@@ -785,3 +787,5 @@ Delete operations resulting from application of lifecycle rules are not replicat
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
