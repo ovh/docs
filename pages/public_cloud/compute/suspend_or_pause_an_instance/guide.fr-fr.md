@@ -1,6 +1,7 @@
 ---
 title: Suspendre ou mettre en pause une instance
-updated: 2026-02-26
+excerpt: Découvrez comment suspendre, mettre en pause ou arrêter une instance Public Cloud pour libérer temporairement des ressources tout en conservant votre adresse IP, ainsi que l'impact de chaque option sur la facturation
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -21,13 +22,13 @@ Dans le cadre de la configuration d’une infrastructure hautement disponible, v
 
 ## En pratique
 
-> [!alert]
+> [!warning]
 >
-> **Applicabilité :** ce guide concerne toutes les instances publiques cloud, quelle que soit leur modalité de facturation (horaire ou mensuelle).
+> **Applicabilité :** ce guide concerne toutes les instances Public Cloud, quel que soit leur mode de facturation (horaire ou mensuel).
 >
-> **Facturation mensuelle :** une instance shelved pendant l’intégralité du mois n’est pas facturée. Dès que l’instance est unshelved, même ponctuellement, la facturation du mois complet est appliquée.
+> **Facturation mensuelle :** une instance suspendue (*shelved*) pendant l’intégralité du mois n’est pas facturée. Dès que l’instance est réactivée (*unshelved*), même brièvement, la facturation du mois complet s’applique.
 >
-> **Attention :** tant que l’instance n’est pas supprimée, toute manipulation entraîne la facturation continue de l’instance.
+> **Attention :** tant que l’instance n’est pas supprimée, toute opération continuera d’entraîner la facturation de l’instance.
 >
 
 Le tableau ci-dessous vous permet de différencier les options disponibles sur vos instances. Poursuivez la lecture de ce guide en cliquant sur l'option de votre choix. Nous mettons entre parenthèses la terminologie utilisée dans l'interface de Horizon.

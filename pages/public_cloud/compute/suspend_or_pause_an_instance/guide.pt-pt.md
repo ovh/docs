@@ -1,6 +1,7 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-updated: 2026-02-26
+excerpt: Saiba como suspender ou colocar em pausa uma instância Public Cloud para libertar temporariamente recursos mantendo o seu endereço IP, bem como o impacto na faturação de cada opção
+updated: 2026-02-27
 ---
 
 ## Objetivo
@@ -21,7 +22,7 @@ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é p
 
 ## Instruções
 
-> [!alert]
+> [!warning]
 >
 > **Âmbito:** Este guia aplica-se a todas as instâncias de Public Cloud, independentemente do modelo de faturação (à hora ou mensal).
 >

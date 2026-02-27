@@ -1,6 +1,7 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2026-02-26
+excerpt: Erfahren Sie, wie Sie eine Public Cloud Instanz aussetzen, pausieren oder anhalten, um vorübergehend Ressourcen freizugeben und dabei Ihre IP-Adresse beizubehalten, sowie die Auswirkungen der einzelnen Optionen auf die Abrechnung
+updated: 2026-02-27
 ---
 
 ## Ziel
@@ -21,7 +22,7 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 
 ## In der praktischen Anwendung
 
-> [!alert]
+> [!warning]
 >
 > **Anwendungsbereich:** Diese Anleitung gilt für alle Public Cloud Instanzen, unabhängig von deren Abrechnungsmodell (stündlich oder monatlich).
 >

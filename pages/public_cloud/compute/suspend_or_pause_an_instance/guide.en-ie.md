@@ -1,6 +1,7 @@
 ---
 title: Shelve or pause an instance
-updated: 2026-02-26
+excerpt: Learn how to shelve, pause or suspend a Public Cloud instance to temporarily free resources while keeping your IP address, and understand the billing impact of each option
+updated: 2026-02-27
 ---
 
 ## Objective
@@ -21,9 +22,9 @@ As part of the configuration of a high-availability infrastructure, you may need
 
 ## Instructions
 
-> [!alert]
+> [!warning]
 >
-> **Scope:** This guide applies to all public cloud instances, regardless of their billing model (hourly or monthly).
+> **Scope:** This guide applies to all Public Cloud instances, regardless of their billing model (hourly or monthly).
 >
 > **Monthly billing:** An instance that remains shelved for the entire month will not be billed. As soon as the instance is unshelved, even briefly, the full month’s billing applies.
 >

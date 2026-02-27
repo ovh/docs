@@ -1,6 +1,7 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2026-02-26
+excerpt: Scopri come sospendere, mettere in pausa o arrestare un’istanza Public Cloud per liberare temporaneamente le risorse conservando il tuo indirizzo IP, nonché l’impatto sulla fatturazione di ciascuna opzione
+updated: 2026-02-27
 ---
 
 ## Obiettivo
@@ -21,7 +22,7 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 
 ## Procedura
 
-> [!alert]
+> [!warning]
 >
 > **Ambito:** Questa guida si applica a tutte le istanze Public Cloud, indipendentemente dal loro modello di fatturazione (oraria o mensile).
 >

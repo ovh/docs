@@ -1,6 +1,7 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2025-10-30
+excerpt: Cómo suspender, pausar o detener una instancia de Public Cloud para liberar recursos temporalmente conservando su dirección IP, así como el impacto en la facturación de cada opción
+updated: 2026-02-27
 ---
 
 ## Objetivo
@@ -21,11 +22,13 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 
 ## Procedimiento
 
-> [!alert]
+> [!warning]
 >
-> Esta guía solo se aplica a las instancias con **facturación por horas**. Si sus instancias tienen una **facturación mensual**, la facturación clásica seguirá aplicándose independientemente del estado del servicio.
+> **Alcance:** Esta guía se aplica a todas las instancias de Public Cloud, independientemente de su modelo de facturación (por horas o mensual).
 >
-> Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
+> **Facturación mensual:** Una instancia que permanezca suspendida durante todo el mes no se facturará. En cuanto la instancia sea reactivada, aunque sea brevemente, se aplicará la facturación completa del mes.
+>
+> **Nota:** Mientras la instancia no sea eliminada, cualquier operación seguirá generando cargos por la instancia.
 >
 
 En la siguiente tabla podrá diferenciar las opciones disponibles en sus instancias. Continúe leyendo esta guía en el apartado correspondiente a su opción. Ponemos entre paréntesis la terminología utilizada en la **interfaz Horizon**.

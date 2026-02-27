@@ -1,6 +1,7 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2026-02-26
+excerpt: Dowiedz się, jak wstrzymać, uśpić lub zawiesić instancję Public Cloud, aby tymczasowo zwolnić zasoby zachowując adres IP, oraz poznaj wpływ każdej opcji na rozliczenia
+updated: 2026-02-27
 ---
 
 ## Wprowadzenie
@@ -21,7 +22,7 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 
 ## W praktyce
 
-> [!alert]
+> [!warning]
 >
 > **Zakres:** Niniejszy przewodnik dotyczy wszystkich instancji Public Cloud, niezależnie od ich modelu rozliczeniowego (godzinowego lub miesięcznego).
 >

@@ -1,6 +1,7 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2026-02-26
+excerpt: Cómo suspender, pausar o detener una instancia de Public Cloud para liberar recursos temporalmente conservando su dirección IP, así como el impacto en la facturación de cada opción
+updated: 2026-02-27
 ---
 
 ## Objetivo
@@ -21,7 +22,7 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 
 ## Procedimiento
 
-> [!alert]
+> [!warning]
 >
 > **Alcance:** Esta guía se aplica a todas las instancias de Public Cloud, independientemente de su modelo de facturación (por horas o mensual).
 >
