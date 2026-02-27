@@ -26,7 +26,6 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting).
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le ou les noms de domaine/sous-domaines ne doivent pas déjà être liés à un certificat SSL.
 
@@ -39,6 +38,17 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 >
 > L'objectif étant de vous faire gagner du temps lors de la configuration de vos services. Vous pourrez toujours désactiver le certificat SSL Let's Encrypt depuis votre [espace client OVHcloud](/links/manager) si vous souhaitez installer un autre certificat SSL (Sectigo DV, Sectigo EV ou un certificat SSL personnalisé).
 > Retrouvez plus d'informations dans notre guide « [Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) », partie **Désactiver un certificat SSL sur un hébergement web**.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

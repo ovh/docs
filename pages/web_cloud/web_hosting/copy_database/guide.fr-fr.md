@@ -18,8 +18,18 @@ Votre base de données est un élément central dans la construction de votre si
 ## Prérequis
 
 - Disposer d’offres de bases de données [start SQL](/links/web/hosting-options-startsql) et/ou [Web Cloud Databases](/links/web/databases). Les deux bases de données concernées doivent être préalablement créées pour pouvoir utiliser l'outil de duplication.
-- Être connecté à l’[espace client OVHcloud](/links/manager)
 - Disposer des droits suffisants sur l’ensemble des services de base de données concernées. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

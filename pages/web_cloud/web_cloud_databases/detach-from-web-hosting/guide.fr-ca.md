@@ -13,8 +13,18 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être activée
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases) associée à une offre d'[hébergement web Performance](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services sur lesquels vous souhaitez agir.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

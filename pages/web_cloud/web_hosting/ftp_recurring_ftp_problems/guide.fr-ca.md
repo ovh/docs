@@ -20,7 +20,16 @@ L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web C
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

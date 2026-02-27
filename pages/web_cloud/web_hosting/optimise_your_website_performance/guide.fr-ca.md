@@ -19,7 +19,16 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 - Un [hébergement web OVHcloud](/links/web/hosting)
 - Un e-mail confirmant que votre hébergement web a été configuré;
 - Un [nom de domaine](/links/web/domains) lié à votre hébergement web;
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

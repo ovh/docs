@@ -16,8 +16,6 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 - Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-
 > [!warning]
 >
 > L'option « adresse(s) e-mail incluse(s) avec votre hébergement web » est indisponible pour un nom de domaine externe (non enregistré chez OVHcloud ou enregistré sur un compte OVHcloud différent du vôtre).
@@ -26,6 +24,17 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 Si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS existe déjà pour ce dernier dans un autre compte OVHcloud que le vôtre, consultez notre documentation « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
 >
 > Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web directement. Faites le point avec l'actuel gestionnaire de l'hébergement web en vous aidant de ce guide.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

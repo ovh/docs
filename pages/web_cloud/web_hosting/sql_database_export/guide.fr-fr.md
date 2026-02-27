@@ -16,6 +16,17 @@ Les bases de données sont utilisées par la plupart des sites web et des **C**o
 - Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager) ou des informations permettant de se connecter à la base de données.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## En pratique
 
 Avant de commencer, définissez la méthode que vous allez suivre pour récupérer la sauvegarde de votre base de données. Plusieurs possibilités s’offrent à vous :
