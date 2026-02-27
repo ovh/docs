@@ -83,7 +83,7 @@ You can set up to **20 rules per IP**.
 > [!primary]
 > Since March 2026, the Edge Network Firewall supports rules that apply to port ranges, in addition to the usual single-port rules.
 >
-> By using port ranges, you can protect applications that require multiple sequential ports with a single entry. This ensures your configuration stays within the 20-rule limit without needing a separate rule for every individual port.
+> By using port ranges, you can protect applications that require multiple sequential ports with a single entry. This ensures your configuration stays within the 20-rule limit by eliminating the need for separate rules targeting each individual port.
 
 > [!warning]
 > Please note that the OVHcloud Edge Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
@@ -137,6 +137,25 @@ When configuring a rule that applies to a port range, please make sure that the 
 After confirmation, the firewall will be enabled or disabled.
 
 Note that rules are disabled until the moment an attack is detected - then they are activated. This logic can be used for rules that are only active when a known repeated attack is incoming.
+
+### Common mistakes and best practices
+
+#### Setting both source and destination ports in the same rule
+
+When creating firewall rules, defining both source and destination ports is usually misconfiguration, as source ports are typically assigned randomly by the client’s operating system (ephemeral ports).
+
+If you lock a rule to a specific source port, it will likely drop legitimate traffic as soon as the client's port changes for the next session. To ensure connectivity, you should only specify the destination port (your service port). 
+
+**Best Practice:** Leave the source port empty, unless you are filtering traffic from a specialized system with a static outbound configuration.
+
+#### Large port ranges
+
+Creating rules allowing traffic over very large port ranges may be a security risk, as it significantly expand the attack surface on your server. This can result in several issues :
+- You may inadvertently expose background services that were not meant to be public-facing, thus potentially leaking information about your system, and allowing malicious actors to probe your servers for vulnerabilities.
+- Audit and troubleshooting become significantly more difficult, as it is harder to check which applications are actually communicating, masking potential misconfigurations or breaches.
+- Large open UDP ranges are frequently targeted for amplification and reflection attacks, as there is a higher chance of finding public-facing services. Attackers can spoof a targeted IP to send small requests to services in that open range, which then respond with much larger packets. This way, they are effectively using your server to send DDoS attacks, while potentially overwhelming your own bandwidth.
+
+**Best Practice:** Only use limited ranges for sequential ports required by a single application (e.g. 5000-5100).
 
 ### Configuration example
 
