@@ -714,7 +714,7 @@ D'après les résultats ci-dessus, les partitions du nouveau disque ont été co
 > [!warning]
 > Les exemples ci-dessus illustrent simplement les étapes nécessaires sur la base d'une configuration de serveur par défaut. Les résultats de chaque commande dépendent du type de matériel installé sur votre serveur et de la structure de ses partitions. En cas de doute, consultez la documentation de votre système d'exploitation.
 > 
-> Si vous avez besoin d'une assistance professionnelle pour l'administration de votre serveur, consultez les détails de la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Si vous avez besoin d'une assistance professionnelle pour l'administration de votre serveur, consultez les détails de la section [Aller plus loin](#go-further) de ce guide.
 >
 
 <a name="recreateesp"></a>
@@ -1326,6 +1326,8 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >>
 
 ///
+
+<a name="go-further"></a>
 
 ## Aller plus loin
 
