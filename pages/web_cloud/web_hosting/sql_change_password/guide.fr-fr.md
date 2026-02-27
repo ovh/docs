@@ -1,7 +1,7 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-updated: 2025-10-08
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -189,34 +189,28 @@ A nouveau, deux cas sont possibles :
 
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement <a name="case1"></a>
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Cliquez ensuite sur le bouton `...`{.action} à droite de la base de données de votre site puis sur `Changer le mot de passe`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini dans [la partie 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 >>

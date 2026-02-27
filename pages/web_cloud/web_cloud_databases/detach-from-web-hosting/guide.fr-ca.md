@@ -1,7 +1,7 @@
 ---
 title: "Délier ma solution Web Cloud Databases d'un hébergement web"
 excerpt: "Découvrez comment délier votre solution Web Cloud Databases d'un hébergement web"
-updated: 2025-01-24
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -18,28 +18,22 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être activée
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Etape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Etape 2**
 >>
 >> Dans le cadre **Configuration** vous trouverez la mention **Web Cloud Databases**. Cliquez sur le bouton `...`{.action} à droite puis sur `Délier`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Etape 4**
+> **Etape 3**
 >>
 >> Sur la nouvelle page qui s'affiche, choisissez la nouvelle tarification désirée pour votre solution Web Cloud Databases, puis suivez les étapes indiquées jusqu'au paiement.
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment gérer des utilisateurs FTP"
 excerpt: "Découvrez comment créer, modifier ou supprimer des utilisateurs FTP sur votre hébergement web OVHcloud"
-updated: 2025-10-16
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -23,34 +23,28 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 
 ### Créer un nouvel utilisateur FTP sur votre hébergement web <a name="create-ftp-user"></a>
 
-Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espace client OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espace client OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Pour créer un nouvel utilisateur FTP, cliquez sur le bouton `Créer un utilisateur`{.action} situé à droite. En fonction de la résolution de votre écran, le bouton peut se trouver sur la partie basse de la page.
 >>
 >> ![FTP-SSH create user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> La fenêtre suivante apparaît :
 >>
@@ -66,7 +60,7 @@ Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espac
 >>
 >> Une fois les paramètres définis, cliquez sur `Suivant`{.action}.
 >>
-> **Étape 6**
+> **Étape 5**
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
@@ -74,7 +68,7 @@ Pour créer un nouvel utilisateur FTP sur votre hébergement web via votre espac
 >>
 >> Une fois votre mot de passe choisi et confirmé, cliquez sur `Suivant`{.action}.
 >>
-> **Étape 7**
+> **Étape 6**
 >>
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>
@@ -88,34 +82,28 @@ Si besoin, testez ce nouvel utilisateur FTP à l'aide de notre guide « [Se conn
 
 ### Modifier un utilisateur FTP
 
-Pour modifier un utilisateur FTP, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Pour modifier un utilisateur FTP, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondant à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Modifier`{.action}.
 >>
 >> ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> La fenêtre suivante apparaît :
 >>
@@ -135,34 +123,28 @@ Pour modifier un utilisateur FTP, cliquez sur les onglets ci-dessous pour affich
 
 ### Supprimer un utilisateur FTP <a name="delete-ftp-user"></a>
 
-Pour supprimer un utilisateur FTP, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Pour supprimer un utilisateur FTP, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau situé en bas de page et sur la partie droite de la ligne correspondant à l'utilisateur FTP concerné, cliquez sur le bouton `...`{.action}, puis cliquez sur `Supprimer`{.action}.
 >>
 >> ![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> La fenêtre suivante apparaît :
 >>

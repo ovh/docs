@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l’espace de stockage FTP de son hébergement web"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud"
-updated: 2025-06-15
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -40,28 +40,22 @@ Pour vous connecter à votre espace de stockage FTP, récupérez les éléments 
 >
 > **Si vous disposez déjà de ces éléments**, poursuivez directement vers la partie 2 « [Accéder à votre espace de stockage](#ftp_storage_access) » de ce guide.
 
-Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Si vous ne disposez pas de ces éléments, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement web.
 >>

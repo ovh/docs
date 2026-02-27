@@ -1,7 +1,7 @@
 ---
 title: "Créer des tâches automatisées (CRON) sur votre hébergement web"
 excerpt: "Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web"
-updated: 2025-02-20
+updated: 2026-02-27
 ---
 
 <style>
@@ -108,26 +108,20 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 
 ### Modifier ou supprimer une tâche planifiée
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite de la tâche planifiée concernée.
 >>

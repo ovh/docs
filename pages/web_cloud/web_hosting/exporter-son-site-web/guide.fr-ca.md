@@ -1,7 +1,7 @@
 ---
 title: "Exporter son site web"
 excerpt: "Découvrez comment exporter votre site web OVHcloud"
-updated: 2025-10-28
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -30,28 +30,22 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 
 Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. 
 
-Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Si vous n’êtes pas en possession de ces derniers, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci.
 >>

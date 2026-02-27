@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer les adresses e-mails incluses"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2026-01-19
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -31,29 +31,23 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ### Activation de vos adresses e-mail incluses avec votre offre d'hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Activer mon offre e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous souhaitez attacher vos adresses e-mail puis validez votre choix.
 >>
@@ -70,22 +64,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 Si votre hébergement web est sur le point d'expirer, il est possible de demander la conservation de vos adresses e-mail **avant** sa date d'expiration.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Délier mon option e-mail`{.action}.
@@ -102,22 +90,16 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 >
 > Attention, cette action est irréversible. Les comptes e-mail et leur contenu seront supprimés.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
 >> Cliquez sur le bouton `...`{.action} à droite puis sur `Résilier l'option e-mail`{.action}.

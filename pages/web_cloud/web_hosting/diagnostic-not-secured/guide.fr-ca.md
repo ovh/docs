@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2025-10-28
+updated: 2026-02-27
 ---
 
 ## Objectif <a name="objectif"></a>
@@ -42,22 +42,16 @@ Afin de résoudre cette anomalie, vous devrez :
 
 Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](/links/web/domains).
 
-Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez les mentions **IPv4** et **IPv6**.
 >>

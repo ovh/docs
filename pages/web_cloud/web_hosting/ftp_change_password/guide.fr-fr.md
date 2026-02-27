@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'un utilisateur FTP"
 excerpt: "Découvrez comment changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-updated: 2025-10-14
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -30,28 +30,22 @@ Cet accès permet notamment de [mettre en ligne votre site](/pages/web_cloud/web
 
 ### 1 - Accéder à la gestion des utilisateurs FTP
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP- SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Un tableau affiche les *utilisateurs FTP* créés sur votre hébergement web. Ces utilisateurs vous permettent d'accéder à votre espace de stockage FTP afin d'y mettre en ligne les fichiers de votre site web. Un utilisateur est créé automatiquement lors de l'installation de votre hébergement web.
 

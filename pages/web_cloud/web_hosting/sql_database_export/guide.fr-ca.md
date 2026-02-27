@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-updated: 2025-10-08
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -46,28 +46,22 @@ Poursuivez la lecture de cette documentation selon la méthode de sauvegarde sou
 
 ### Récupérer une sauvegarde via l'outil d'OVHcloud
 
-Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît.
 >>

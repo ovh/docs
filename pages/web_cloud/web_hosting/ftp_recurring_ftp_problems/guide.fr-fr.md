@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
-updated: 2025-10-20
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -59,22 +59,16 @@ Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en
 
 Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonctionnements sur votre site lorsque vous tentez de le modifier ou de le mettre à jour.
 
-Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Pour vérifier l'espace de stockage restant sur votre hébergement web, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez la mention **Espace disque**.
 >>

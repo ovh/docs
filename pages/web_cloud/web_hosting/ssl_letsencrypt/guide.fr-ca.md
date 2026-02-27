@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL gratuit Let's Encrypt"
 excerpt: "Découvrez comment activer un certificat SSL gratuit Let's Encrypt sur votre hébergement Web"
-updated: 2025-12-16
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -59,28 +59,22 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 
 ### Activer le certificat SSL Let's Encrypt
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
->>
->> ![Hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Certificats SSL`{.action}.
 >>
 >> ![Certificats SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Lorsque le contenu de l'onglet apparaît, sélectionnez le nom de domaine ou le sous-domaine pour lequel vous souhaitez activer le certificat SSL gratuit Let's Encrypt (DV), sous la mention `Activer le certificat SSL`.
 >>
@@ -92,28 +86,22 @@ La mise en place du certificat SSL Let's Encrypt peut prendre plusieurs heures.
 
 ### Vérifier l'activation du certificat SSL gratuit Let's Encrypt (DV)
 
-Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
->>
->> ![Hébergement web](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
->>
-> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Certificats SSL`{.action}.
 >>
 >> ![Certificats SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Lorsque le contenu de l'onglet apparaît, vérifiez que chaque nom de domaine et/ou sous-domaine concerné figure dans le tableau avec le type de certificat SSL `Let's Encrypt`.
 >>

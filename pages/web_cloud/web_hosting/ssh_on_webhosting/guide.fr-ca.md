@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment utiliser l'accès SSH"
 excerpt: "Découvrez comment vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud"
-updated: 2025-09-08
+updated: 2026-02-27
 ---
 
 <style>
@@ -44,28 +44,22 @@ Pour vous connecter et utiliser l'accès SSH de votre hébergement web, vous aur
 
 ### 1 - Assurez-vous que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, les informations liées à votre espace de stockage apparaissent.
 >>
@@ -83,28 +77,22 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### 2 - Récupérez les informations nécessaires pour vous connecter en SSH <a name="sshlogin"></a>
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >> 
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, récupérez les éléments décrits dans le tableau suivant :
 >>

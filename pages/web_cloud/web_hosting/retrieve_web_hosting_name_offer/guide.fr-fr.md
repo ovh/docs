@@ -1,7 +1,7 @@
 ---
 title: "Comment retrouver le nom de votre offre d'hébergement web"
 excerpt: "Découvrez comment identifier le type d'offre d'hébergement web dont vous disposez depuis votre espace client OVHcloud"
-updated: 2026-02-18
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -20,22 +20,16 @@ Au cours de l'utilisation de vos services, vous pourriez avoir besoin du nom de 
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Abonnement**, vous trouverez la mention **Offre**.
 >>

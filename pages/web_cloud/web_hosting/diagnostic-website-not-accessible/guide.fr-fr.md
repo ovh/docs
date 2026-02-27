@@ -1,7 +1,7 @@
 ---
 title: "Que faire si mon site est inaccessible ?"
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
-updated: 2025-10-09
+updated: 2026-02-27
 ---
 
 ## Objectif
@@ -113,22 +113,16 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de nos [offres d'hébergement web](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Si votre site est hébergé sur l'une de nos [offres d'hébergement web](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez les mentions **IPv4** et **IPv6**.
 >>
