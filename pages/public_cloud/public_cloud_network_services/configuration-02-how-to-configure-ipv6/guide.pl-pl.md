@@ -97,9 +97,9 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 > [!tabs]
 > **W systemie Debian (poza Debian 12)**
 >>
->> Domyślnie pliki konfiguracyjne znajdują się w katalogu`/etc/network/interfaces.d/`.
+>> Domyślnie pliki konfiguracyjne znajdują się w katalogu `/etc/network/interfaces.d/`.
 >>
->> Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalogu`/etc/network/interfaces.d/` w celu skonfigurowania IPV6. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init-ipv6`:
+>> Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalogu `/etc/network/interfaces.d/` w celu skonfigurowania IPV6. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init-ipv6`:
 >>
 >> ```bash
 >> sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
@@ -107,7 +107,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 >> Dzięki temu możesz oddzielić konfigurację IPv6 i w prosty sposób wrócić do zmian w przypadku błędu.
 >>
->> Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
+>> Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (`YOUR_IPV6`, `IPV6_PREFIX` i `IPV6_GATEWAY`) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -154,7 +154,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 >> Dzięki temu możesz oddzielić konfigurację IPv6 i w prosty sposób wrócić do zmian w przypadku błędu.
 >>
->> Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
+>> Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (`YOUR_IPV6`, `IPV6_PREFIX` i `IPV6_GATEWAY`) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
 >>
 >> ```bash
 >> sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -229,7 +229,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >> sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 >> ```
 >>
->> Następnie edytujemy plik `ifcfg-eth0`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
+>> Następnie edytujemy plik `ifcfg-eth0`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (`YOUR_IPV6`, `IPV6_PREFIX` i `IPV6_GATEWAY`) według określonych wartości.
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -260,7 +260,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 > **W systemie Fedora / Rocky Linux (10) / AlmaLinux (10)**
 >>
->> Plik konfiguracji sieci znajduje się w katalogu`/etc/NetworkManager/system-connections/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
+>> Plik konfiguracji sieci znajduje się w katalogu `/etc/NetworkManager/system-connections/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
 >>
 >> W naszym przykładzie nasz plik nosi nazwę `cloud-init-eth0.nmconnection`, wykonujemy więc kopię pliku `cloud-init-eth0.nmconnection`, używając następujących poleceń. W razie potrzeby należy zastąpić **eth0** rzeczywistym interfejsem.
 >>
@@ -270,7 +270,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >> sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 >> ```
 >>
->> Następnie edytujemy plik `cloud-init-eth0.nmconnection`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
+>> Następnie edytujemy plik `cloud-init-eth0.nmconnection`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (`YOUR_IPV6`, `IPV6_PREFIX` i `IPV6_GATEWAY`) według określonych wartości.
 >>
 >> ```console
 >> [ipv6]
@@ -282,7 +282,6 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 >>
 >> Pominęliśmy konfigurację IPv4, aby uniknąć pomyłek, ale konfiguracja IPv6 znajduje się w tym samym pliku konfiguracyjnym.
 >>
->> 
 >> /// details | **Przykładowa konfiguracja**
 >>
 >> ```console
@@ -347,7 +346,7 @@ ping6 ipv6.google.com
 
 Jeśli Twoja instancja odpowiada, istnieje duże prawdopodobieństwo, że jeden z etapów konfiguracji początkowej nie został prawidłowo przeprowadzony.
 
-W każdym przypadku warto skontaktować się z działem pomocy technicznej, podając powyższe wyniki powyższych testów, aby uzyskać analizę z naszej strony.
+W każdym przypadku warto skontaktować się z działem [pomocy technicznej](https://help.ovhcloud.com/csm?id=csm_get_help), podając wyniki powyższych testów, aby uzyskać analizę z naszej strony.
 
 ## Sprawdź również
 
