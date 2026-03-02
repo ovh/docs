@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Os servidores das gamas High Grade, Scale e Advance (desde julho de 2024) são entregues com um bloco /56 IPv6. Já os antigos servidores são entregues com um bloco /64 IPv6. Um servidor entregue com um bloco /56 IPv6 permite dispor de até 18 quintilhões de endereços IP.
+Internet Protocol w wersji 6 (IPv6) jest następcą Internet Protocol w wersji 4 (IPv4). Wdrożono go, aby rozwiązać problem wyczerpywania adresów IPv4. IPv6 wykorzystuje adresy 128-bitowe zamiast 32-bitowych. Serwery z ofert High Grade, Scale i Advance (od lipca 2024) są dostarczane z blokiem /56 IPv6. Starsze serwery natomiast są dostarczane z blokiem /64 IPv6. Serwer dostarczony z blokiem /56 IPv6 umożliwia dysponowanie aż 18 kwintylionami adresów IP.
 
 **Dowiedz się, jak skonfigurować adresy IPv6 na serwerze na podstawie różnych przykładów.**
 
@@ -29,7 +29,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 > Ten artykuł dotyczy konfiguracji głównego adresu IP. W przypadku serwerów korzystających z usługi vRack możesz skonfigurować dodatkowe adresy IP w ramach usługi vRack, a nie w publicznym interfejsie serwera. Odpowiednie instrukcje znajdują się w tych przewodnikach:
 >
 > - IPv4: [Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Konfigurowanie bloku IPv6 w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
@@ -52,7 +52,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 Poniższe sekcje zawierają konfiguracje aktualnie oferowanych przez nas dystrybucji oraz najczęściej używane dystrybucje/systemy operacyjne. Pierwszy etap polega zawsze na połączeniu się z Twoim serwerem przez SSH lub za pomocą sesji połączenia GUI (RDP w przypadku serwera Windows).
 
-W przypadku serwerów dedykowanych pierwszy adres IPv6 deklarowany jest jako 2607:5300:xxxx:xxxx:::/64. Na przykład, jeśli przypisaliśmy do Twojego serwera zakres adresów IPv6: `2607:5300:abcd:efgh::/64`, pierwszym adresem IPv6 jest: `2607:5300:abcd:efgh::`.
+W przypadku serwerów dedykowanych pierwszy adres IPv6 deklarowany jest jako 2607:5300:xxxx:xxxx::/64. Na przykład, jeśli przypisaliśmy do Twojego serwera zakres adresów IPv6: `2607:5300:abcd:efgh::/64`, pierwszym adresem IPv6 jest: `2607:5300:abcd:efgh::`.
 
 Pierwszy adres IPv6 jest domyślnie skonfigurowany w większości najnowszych dystrybucji Linux, które proponujemy do instalacji, więc brama jest już zawarta w pliku konfiguracyjnym. W większości przypadków nie trzeba dodawać go ręcznie.
 
@@ -73,7 +73,7 @@ Pierwszy etap polega na pobraniu bramy (gateway) IPv6 przypisanej do Twojego ser
 > [!tabs]
 > **W Panelu klienta**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwer dedykowany`{.action}.
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwery dedykowane`{.action}.
 >>
 >> Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu przejdź do aplikacji konfiguracyjnej IPv6.
 >>
@@ -93,7 +93,7 @@ Pamiętaj, że "0" głowicy można usunąć w bramie IPv6.
 
 Przykład:
 
-IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako `2607:5300:60:62FF:FF:FF:FF`.
+IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` można również zapisać jako `2607:5300:60:62FF:FF:FF:FF:FF`.
 
 > [!warning]
 > 
@@ -111,7 +111,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >>
 >> > [!warning]
 >> >
->> > Przed wykonaniem poniższych kroków zalecamy wyłączenie narzędzi autoconf IPv6 i anonsowania routera, aby zapobiec wystąpieniu znanych problemów. W tym celu należy dodać następujące wiersze do pliku `sysctl.conf`, który znajduje się w katalogu /etc/sysctl.conf:
+>> > Przed wykonaniem poniższych kroków zalecamy wyłączenie narzędzi autoconf IPv6 i anonsowania routera, aby zapobiec wystąpieniu znanych problemów. W tym celu należy dodać następujące wiersze do pliku `sysctl.conf`, który znajduje się w katalogu `/etc/sysctl.conf`:
 >> >
 >> > `net.ipv6.conf.all.autoconf=0`
 >> >
@@ -392,7 +392,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >>               - 2607:5300:adce:f2cd::1/64
 >> ```
 >>
->> - Dla kilku adresów IPV6:
+>> - Dla kilku adresów IPv6:
 >>
 >> ```yaml
 >> network:
@@ -480,14 +480,14 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 >> ```
 >>
->> - Dla kilku adresów IPV6:
+>> - Dla kilku adresów IPv6:
 >>
 >> ```console
 >> IPV6INIT=yes
 >> IPV6ADDR=2607:5300:adce:f2cd::
 >> IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 >> IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
->>```
+>> ```
 >> ///
 >>
 >> **Krok 4: Zapisz plik i zastosuj zmiany**
@@ -512,7 +512,7 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >>
 >> Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
 >>
->> K**rok 2: otwarcie konfiguracji sieci dla serwera**
+>> **Krok 2: otwarcie konfiguracji sieci dla serwera**
 >>
 >> Najpierw prawym przyciskiem myszy kliknij ikonę sieci w obszarze powiadomień, aby przejść do `Centrum sieci i udostępniania`{.action}.
 >>
@@ -536,9 +536,9 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF` można również zapisać jako 
 >>
 >> ![Properties](images/ipv6_configuration.png){.thumbnail}
 
-### Sprawdź konfigurację i przetestować połączenie.
+### Sprawdź konfigurację i przetestuj połączenie
 
-W celu sprawdzenia, czy konfiguracja działa, istnieje kilka możliwych zamówień, w zależności od systemu operacyjnego.
+W celu sprawdzenia, czy konfiguracja działa, istnieje kilka możliwych poleceń, w zależności od systemu operacyjnego.
 
 - **W przypadku systemu GNU/Linux** dwa przykłady interfejsu **eth0** (do dostosowania w razie potrzeby):
 
@@ -608,7 +608,7 @@ Istnieje prosta procedura pozwalająca określić, czy błąd występuje w konfi
 
 Najpierw [przełącz serwer w tryb ratunkowy](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-Następnie użyj następujących poleceń, aby skonfigurować IPv6 w trybie niepersystentnym, zastępując "YOUR_IPV6", "IPV6_PREFIX" i "IPV6_GATEWAY" własnymi informacjami:
+Następnie użyj następujących poleceń, aby skonfigurować IPv6 w trybie niepersystentnym, zastępując `YOUR_IPV6`, `IPV6_PREFIX` i `IPV6_GATEWAY` własnymi informacjami:
 
 ```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
