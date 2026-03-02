@@ -78,7 +78,7 @@ Retrouvez ci-dessous les 4 liens vers nos guides dédiés à ces 4 solutions :
 >
 > Cette vérification étant inhérente aux paramètres de votre ou de vos sites web, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) si vous rencontrez des difficultés. Nous ne serons pas en mesure de vous fournir une assistance à ce sujet.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**

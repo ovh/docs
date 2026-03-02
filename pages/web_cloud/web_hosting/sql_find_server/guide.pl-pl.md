@@ -1,7 +1,7 @@
 ---
 title: "Jak zidentyfikować serwer bazy danych"
 excerpt: "Dowiedz się, jak odnaleźć nazwę serwera, na którym znajduje się Twoja współdzielona baza danych, dostępna za pośrednictwem Twojej oferty hostingu"
-updated: 2026-02-12
+updated: 2026-03-02
 ---
 
 ## Wprowadzenie
@@ -20,30 +20,35 @@ W trakcie korzystania z Twoich usług może się zdarzyć, że będziesz musiał
 - Zalogowanie się do [Panelu klienta OVHcloud](/links/manager).
 - Użycie bazy danych wliczonej w ofertę lub [zamówionej dodatkowo](/links/web/hosting-options-startsql) za pośrednictwem Twojego hostingu.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli zwróć uwagę na kolumnę **Serwer**.
 >>

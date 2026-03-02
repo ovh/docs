@@ -54,7 +54,7 @@ To log in and use SSH access to your web hosting plan, you will need the followi
 
 ### 1 - Make sure that SSH access is enabled for the SSH user you have chosen <a name="user-ssh-enablement"></a>
 
-Click on the tabs below to view each of the **3** steps in succession.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -87,7 +87,7 @@ Click on the tabs below to view each of the **3** steps in succession.
 
 ### 2 - Retrieve the information you need to log in via SSH <a name="sshlogin"></a>
 
-Click on the tabs below to view each of the **3** steps in succession.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

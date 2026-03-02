@@ -41,7 +41,7 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager).
 
-Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

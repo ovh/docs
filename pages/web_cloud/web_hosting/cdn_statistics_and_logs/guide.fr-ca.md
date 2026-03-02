@@ -29,7 +29,7 @@ Ce guide vous explique comment consulter les statistiques et les logs générés
 
 ### Visualiser les statistiques du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -62,7 +62,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Visualiser les logs du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**

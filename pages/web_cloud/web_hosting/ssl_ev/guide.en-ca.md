@@ -101,7 +101,7 @@ To check if this is the case, please refer to our guides below:
 
 #### 1.1 - For a domain name and a hosting already existing at OVHcloud
 
-Click on the tabs below to view each of the **5** steps in succession:
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**

@@ -117,7 +117,7 @@ Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellunge
 
 ### Task bearbeiten oder löschen
 
-Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

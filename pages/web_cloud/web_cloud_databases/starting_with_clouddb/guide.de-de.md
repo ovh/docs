@@ -33,7 +33,7 @@ Ihre Web Cloud Databases Lösung ist standardmäßig an das Webhosting-Netzwerk 
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen Web Cloud Databases Servers
 
-Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

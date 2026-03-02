@@ -82,7 +82,7 @@ Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 ### Commander le certificat SSL Sectigo DV
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -121,7 +121,7 @@ L'installation du certificat SSL Sectigo DV peut prendre jusqu'à **24** heures.
 
 ### Vérifier l'activation du certificat SSL Sectigo DV
 
-Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
+Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

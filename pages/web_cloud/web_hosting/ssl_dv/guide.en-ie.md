@@ -83,7 +83,7 @@ To check if this is the case, please refer to our guides below:
 
 ### Order the Sectigo DV SSL certificate
 
-Click on the tabs below to view each of the **4** steps in succession:
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
@@ -122,7 +122,7 @@ It may take up to **24** hours to install the Sectigo DV SSL certificate.
 
 ### Check the activation of the Sectigo DV SSL certificate
 
-To verify that the installation is complete, click on the tabs below to display each of the **3** steps in succession:
+To verify that the installation is complete, click on the tabs below to display each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

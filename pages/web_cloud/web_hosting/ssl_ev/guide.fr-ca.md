@@ -99,7 +99,7 @@ Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 #### 1.1 - Pour un nom de domaine/sous-domaine et un hébergement web déjà existants chez OVHcloud
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
 > **Étape 1**

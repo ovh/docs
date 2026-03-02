@@ -78,7 +78,7 @@ Hier finden Sie die 4 Links zu unseren Anleitungen zu diesen 4 Lösungen:
 >
 > Da diese Überprüfung von den Einstellungen Ihrer Website abhängt, empfehlen wir Ihnen, sich an einen [spezialisierten Dienstanbieter](/links/partner) zu wenden. Wir können Ihnen in dieser Hinsicht keine Unterstützung bieten.
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

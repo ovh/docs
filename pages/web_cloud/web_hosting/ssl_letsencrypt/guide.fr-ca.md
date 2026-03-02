@@ -69,7 +69,7 @@ Let's Encrypt est une autorité de certification gratuite, automatisée, ouverte
 
 ### Activer le certificat SSL Let's Encrypt
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -96,7 +96,7 @@ La mise en place du certificat SSL Let's Encrypt peut prendre plusieurs heures.
 
 ### Vérifier l'activation du certificat SSL gratuit Let's Encrypt (DV)
 
-Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
+Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

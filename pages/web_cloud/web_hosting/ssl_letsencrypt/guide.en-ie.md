@@ -69,7 +69,7 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 
 ### Activate the Let's Encrypt SSL certificate
 
-Click on the tabs below to view each of the **3** steps in succession:
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -96,7 +96,7 @@ It may take several hours to set up the Let's Encrypt SSL certificate.
 
 ### Verify activation of the free Let's Encrypt (DV) SSL certificate
 
-To verify that the installation is complete, click on the tabs below to display each of the **3** steps in succession:
+To verify that the installation is complete, click on the tabs below to display each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

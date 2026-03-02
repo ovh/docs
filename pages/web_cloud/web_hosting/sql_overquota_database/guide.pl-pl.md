@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2025-02-19
+updated: 2026-03-02
 ---
 
 ## Wprowadzenie
@@ -18,9 +18,19 @@ Tutorial ten wyjaśnia, jakie działania należy podjąć, gdy wirtualna baza da
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [hostingu OVHcloud](/links/web/hosting) wraz z powiązaną bazą danych współdzieloną OVHcloud.
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 > [!warning]
@@ -55,28 +65,22 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **etapu 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
-Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Nowa strona wyświetla tabelę zawierającą utworzone bazy danych.
 >>
@@ -86,7 +90,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >>
 >> Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
@@ -230,34 +234,28 @@ Możesz jednak wymusić ich przejście na Twoje usługi, aby przyspieszyć proce
 
 #### Przeliczenie rozmiaru bazy danych zawartej w ofercie hostingu
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych. Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Przelicz rozmiar bazy`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> W oknie, które się wyświetli kliknij bezpośrednio przycisk `Zatwierdź`{.action}.
 >>
@@ -269,7 +267,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 #### Przeliczenie rozmiaru bazy danych hostowanej w rozwiązaniu Web Cloud Databases
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **3**.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

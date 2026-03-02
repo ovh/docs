@@ -29,7 +29,7 @@ Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés �
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**

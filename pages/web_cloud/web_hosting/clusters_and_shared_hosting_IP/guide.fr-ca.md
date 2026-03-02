@@ -51,7 +51,7 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 
 ## En pratique
 
-Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes :
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**

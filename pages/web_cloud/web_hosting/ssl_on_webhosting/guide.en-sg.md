@@ -78,7 +78,7 @@ Below are the 4 links to our guides dedicated to these 4 solutions:
 >
 > Since this verification is linked to your website settings, we recommend that you contact a [specialist service provider](/links/partner) if you encounter any difficulties. We will not be able to assist you with this.
 
-Click on the tabs below to view each of the **4** steps in succession:
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**

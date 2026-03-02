@@ -1,7 +1,7 @@
 ---
 title: "Usuwanie powtarzających się błędów podczas korzystania z programu FTP"
 excerpt: "Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP"
-updated: 2025-10-20
+updated: 2026-03-02
 ---
 
 ## Wprowadzenie 
@@ -20,7 +20,17 @@ Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](/links/we
 ## Wymagania początkowe
 
 - Posiadanie [oferty hostingu WWW Cloud](/links/web/hosting)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -59,22 +69,16 @@ Jeśli nie możesz się zalogować, zmień hasło FTP zgodnie z instrukcjami zaw
 
 Brak przestrzeni dyskowej na hostingu może spowodować usterki na Twojej stronie WWW podczas prób jej zmiany lub aktualizacji.
 
-Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajduje się wzmianka **Przestrzeń dyskowa**.
 >>

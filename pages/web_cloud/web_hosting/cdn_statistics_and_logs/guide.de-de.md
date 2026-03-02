@@ -29,7 +29,7 @@ In dieser Anleitung erfahren Sie, wie Sie die Statistiken und Logs einsehen, die
 
 ### Die CDN-Statistiken anzeigen
 
-Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -62,7 +62,7 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
 ### Die Logs des CDN anzeigen
 
-Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

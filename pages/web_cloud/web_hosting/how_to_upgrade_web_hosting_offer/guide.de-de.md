@@ -223,7 +223,7 @@ Mit der [Boost Option](/links/web/hosting-options-boost), die für unsere *Perfo
 
 Wenn die Option **Boost** Ihren Anforderungen entspricht, finden Sie unten die Anweisungen, um diese Option zu **aktivieren** oder zu **deaktivieren**.
 
-Um die **Boost-Option zu aktivieren**, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen:
+Um die **Boost-Option zu aktivieren**, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -239,7 +239,7 @@ Um die **Boost-Option zu aktivieren**, klicken Sie auf die Tabs, um die **2** Sc
 >> ![boost enable](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}
 
 
-Um die **Boost-Option zu deaktivieren**, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen:
+Um die **Boost-Option zu deaktivieren**, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

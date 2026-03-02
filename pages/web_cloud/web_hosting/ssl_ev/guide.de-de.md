@@ -100,7 +100,7 @@ Um dies zu überprüfen, lesen Sie bei Bedarf unsere Anleitungen:
 
 #### 1.1 - Für bereits bei OVHcloud existierende Domainnamen und Webhostings
 
-Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

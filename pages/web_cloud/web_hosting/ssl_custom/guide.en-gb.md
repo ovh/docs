@@ -170,7 +170,7 @@ To check if this is the case, please refer to our guides below:
 
 Once you have met all of these requirements, you can start finalizing the installation of your custom SSL certificate on your web hosting plan.
 
-Click on the tabs below to view each of the **4** steps in succession:
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
@@ -218,7 +218,7 @@ If the SSL certificate has been generated successfully by the SSL provider, and 
 
 The installation will take several minutes.
 
-To verify that the installation is complete, click on the tabs below to display each of the **3** steps in succession:
+To verify that the installation is complete, click on the tabs below to display each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

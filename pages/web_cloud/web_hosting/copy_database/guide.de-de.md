@@ -49,7 +49,7 @@ Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedli
 
 #### Start SQL
 
-Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -73,7 +73,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start
 
 #### Web Cloud Databases
 
-Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

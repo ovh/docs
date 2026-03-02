@@ -28,7 +28,7 @@ Die Lösung [Web Cloud Databases](/links/web/databases) ist in unseren [Performa
 
 ## In der praktischen Anwendung
 
-Klicken Sie auf die Tabs, um die **3** Schritte jeweils anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

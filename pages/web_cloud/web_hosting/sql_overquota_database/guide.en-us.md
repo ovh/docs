@@ -267,7 +267,7 @@ Click on the tabs below to view each of the **4** steps.
 
 #### Recalculate the quota for a database hosted on a Web Cloud Databases solution
 
-Click on the tabs below to view each of the **3** steps in turn.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

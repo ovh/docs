@@ -33,7 +33,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz. Mit diesem 
 
 ### Einen neuen FTP-Benutzer auf Ihrem Webhosting erstellen <a name="create-ftp-user"></a>
 
-Um über Ihr OVHcloud Kundencenter einen neuen FTP-Benutzer auf Ihrem Webhosting zu erstellen, klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen:
+Um über Ihr OVHcloud Kundencenter einen neuen FTP-Benutzer auf Ihrem Webhosting zu erstellen, klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -92,7 +92,7 @@ Testen Sie bei Bedarf diesen neuen FTP-Benutzer mithilfe unserer Anleitung „[M
 
 ### FTP-Benutzer bearbeiten
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -133,7 +133,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
 
 ### FTP-Benutzer löschen <a name="delete-ftp-user"></a>
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

@@ -170,7 +170,7 @@ Pour vous en assurer, consultez si besoin nos guides ci-dessous :
 
 Dès lors où tous ces prérequis sont respectés, vous pouvez commencer la finalisation de l'installation de votre certificat SSL personnalisé sur votre hébergement web.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -218,7 +218,7 @@ Si le certificat SSL a été correctement généré par le fournisseur SSL et si
 
 L'installation prend plusieurs minutes.
 
-Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
+Pour vérifier que l'installation est terminée, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
