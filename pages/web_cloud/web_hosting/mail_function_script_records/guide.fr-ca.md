@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -25,6 +25,7 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

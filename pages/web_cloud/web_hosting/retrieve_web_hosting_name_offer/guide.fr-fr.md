@@ -1,7 +1,7 @@
 ---
 title: "Comment retrouver le nom de votre offre d'hébergement web"
 excerpt: "Découvrez comment identifier le type d'offre d'hébergement web dont vous disposez depuis votre espace client OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -16,6 +16,7 @@ Au cours de l'utilisation de vos services, vous pourriez avoir besoin du nom de 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

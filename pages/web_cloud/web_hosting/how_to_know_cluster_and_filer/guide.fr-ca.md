@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment connaître son cluster et son filer"
 excerpt: "Découvrez comment retrouver le numéro de cluster et/ou le numéro du filer où se trouve votre hébergement web"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -15,6 +15,7 @@ Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés �
 ## Prérequis
 
 - Posséder une [offre d'hébergement web](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

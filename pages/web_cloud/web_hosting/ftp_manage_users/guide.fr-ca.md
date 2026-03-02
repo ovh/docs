@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment gérer des utilisateurs FTP"
 excerpt: "Découvrez comment créer, modifier ou supprimer des utilisateurs FTP sur votre hébergement web OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -17,6 +17,7 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) compatible.
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

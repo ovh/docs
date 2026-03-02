@@ -1,7 +1,7 @@
 ---
 title: "Using automated tasks on a Web Hosting plan"
 excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
-updated: 2025-02-20
+updated: 2026-03-02
 ---
 
 <style>
@@ -43,7 +43,17 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan 
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -106,26 +116,20 @@ The task will be ready within a few minutes. You can then modify all of its sett
 
 ### Modify or delete a scheduled task
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `More`{.action} tab, then `Cron`{.action}.
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click the `...`{.action} button to the right of the scheduled task concerned.
 >>

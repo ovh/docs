@@ -1,7 +1,7 @@
 ---
 title: "How to detach the Web Cloud Databases solution from a web hosting plan"
 excerpt: "Find out how to unlink your Web Cloud Databases solution from a web hosting plan"
-updated: 2025-01-24
+updated: 2026-03-02
 ---
 
 ## Objective
@@ -13,33 +13,37 @@ updated: 2025-01-24
 ## Requirements
 
 - You have a [Web Cloud Databases instance](/links/web/databases) associated with a [Performance web hosting plan](/links/web/hosting).
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You are the [Administrator](/pages/account_and_service_management/account_information/managing_contacts) contact of the OVHcloud services concerned.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **Configuration** box, Click the `...`{.action} button next to **Web Cloud Databases**, then `Detach`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page that pops up, choose the new pricing for your Web Cloud Databases solution, then follow the steps indicated until you pay.
 >>

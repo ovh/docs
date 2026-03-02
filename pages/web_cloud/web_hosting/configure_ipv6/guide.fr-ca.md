@@ -1,7 +1,7 @@
 ---
 title: "Configurez une adresse IPv6 pour votre site web"
 excerpt: "Découvrez comment rendre votre site web compatible avec une adresse IPv6"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -22,6 +22,7 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 - Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

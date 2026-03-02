@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -19,6 +19,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 - Un [hébergement web OVHcloud](/links/web/hosting)
 - Un e-mail confirmant que votre hébergement web a été configuré;
 - Un [nom de domaine](/links/web/domains) lié à votre hébergement web;
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

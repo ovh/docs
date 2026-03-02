@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -20,6 +20,7 @@ L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web C
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

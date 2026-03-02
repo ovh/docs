@@ -1,7 +1,7 @@
 ---
 title: "Résoudre l'erreur « Site non installé »"
 excerpt: "Découvrez comment identifier et résoudre la page d'erreur « Site non installé »"
-updated: 2026-02-27
+updated: 2025-08-25
 ---
 
 ## Objectif
@@ -35,22 +35,28 @@ Les 2 parties suivantes vous permettront de corriger l’erreur `Site non instal
 
 ### 1 - Vérifier la déclaration de votre nom de domaine ou de votre sous-domaine sur votre hébergement web <a name="check-multisites"></a>
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 2**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Multisite`{.action}. 
 >>
 >> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 4**
 >>
 >> Sur la nouvelle page qui s'affiche, un tableau apparaît.
 >>
@@ -76,16 +82,22 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 2**
+> **Étape 3**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez la mention **IPv4**.
 >>

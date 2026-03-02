@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -14,6 +14,7 @@ Par défaut, votre solution Web Cloud Databases est liée au réseau d'hébergem
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 
@@ -32,19 +33,19 @@ Par défaut, votre solution Web Cloud Databases est liée au réseau d'hébergem
 Si votre offre d'hébergement inclut l'option Web Cloud Databases, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Web Cloud Databases**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
 >>
 >> ![Informations générales](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur Web Cloud Databases. Il sera ensuite accessible depuis la colonne de gauche dans `Web Cloud Databases`{.action}.
 

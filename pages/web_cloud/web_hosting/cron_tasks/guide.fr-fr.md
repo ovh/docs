@@ -1,7 +1,7 @@
 ---
 title: "Créer des tâches automatisées (CRON) sur votre hébergement web"
 excerpt: "Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 <style>
@@ -43,6 +43,7 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 ## Prérequis
 
 - Posséder une [offre d'hébergement web](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

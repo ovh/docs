@@ -1,7 +1,7 @@
 ---
 title: What do I do if my website is down?
 excerpt: How to diagnose the causes of inaccessibility of your web site
-updated: 2025-10-09
+updated: 2026-03-02
 ---
 
 ## Objective
@@ -26,8 +26,18 @@ Several error returns may appear on your browser if your website becomes inacces
 ## Requirements
 
 - Administrative access to your domain name in order to change the DNS servers and edit the [DNS zone](/pages/web_cloud/domains/dns_zone_edit)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - No outstanding [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -112,22 +122,16 @@ In this step, you will find your hosting plan’s IP address, then add it to you
 
 If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your site is hosted on one of our [Web Hosting offers](/links/web/hosting), click on the tabs below to view each of the **3** steps.
+If your site is hosted on one of our [Web Hosting offers](/links/web/hosting), click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box, you will see the addresses under **IPv4** and **IPv6**.
 >>

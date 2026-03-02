@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -20,6 +20,7 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) avec une base de données mutualisée OVHcloud associée.
   
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

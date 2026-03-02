@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif <a name="objectif"></a>
@@ -27,6 +27,7 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 ## Prérequis
 
 - Avoir la gestion des [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) et de la [zone DNS](/pages/web_cloud/domains/dns_zone_general_information) de votre nom de domaine
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

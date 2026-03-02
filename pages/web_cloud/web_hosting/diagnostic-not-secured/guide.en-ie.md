@@ -1,7 +1,7 @@
 ---
 title: What to do if you get a "Your connection is not private" error?
 excerpt: How to react to a security error message on your website
-updated: 2025-10-28
+updated: 2026-03-02
 ---
 
 ## Objective <a name="objective"></a>
@@ -27,7 +27,17 @@ Several error messages may appear if your website is inaccessible. The examples 
 ## Requirements
 
 - Administrative rights to manage your domain name’s [DNS servers](/pages/web_cloud/domains/dns_server_general_information) and [DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -42,22 +52,16 @@ To solve this issue, you will need to:
 
 The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](/links/web/hosting). For this reason, you will need to check the IP address of the server your [domain name](/links/web/domains) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on the tabs below to view each of the **3** steps.
+To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **General information** box, you will see the addresses under **IPv4** and **IPv6**.
 >>

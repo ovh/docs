@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Gérer un certificat SSL"
 excerpt: "Découvrez comment gérer un certificat SSL sur votre hébergement web OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif

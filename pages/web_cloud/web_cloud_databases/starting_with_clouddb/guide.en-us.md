@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the Web Cloud Databases service'
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
-updated: 2025-02-20
+updated: 2026-03-02
 ---
 
 ## Objective
@@ -14,34 +14,38 @@ Your Web Cloud Databases solution is linked to the OVHcloud web hosting network 
 ## Requirements
 
 - A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](/links/web/hosting)).
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
 ### Web Cloud Databases server activation included with your Web Hosting plan
 
-If your hosting plan includes the Web Cloud Databases option, click on the tabs below to view each of the **4** steps.
+If your hosting plan includes the Web Cloud Databases option, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
 >>
 >> ![Informations générales](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> To complete the activation, follow the instructions to determine the type and version of your Web Cloud Databases server. It will then be accessible from the left column in `Web Cloud Databases`{.action}.
 

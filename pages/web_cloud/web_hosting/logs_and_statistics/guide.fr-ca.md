@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Consulter les statistiques et logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -13,6 +13,7 @@ L'accès aux logs et aux statistiques de votre site web est compris dans votre o
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) compatible.
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 

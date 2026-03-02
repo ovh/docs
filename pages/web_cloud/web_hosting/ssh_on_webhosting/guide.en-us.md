@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to use SSH access"
 excerpt: "Find out how to log in and use SSH access on an OVHcloud Web Hosting plan"
-updated: 2025-09-08
+updated: 2026-03-02
 ---
 
 <style>
@@ -27,11 +27,21 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting) with SSH access.
-- Access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 
 > [!warning]
 > 
 > SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](/links/web/hosting-compare) and above.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -44,28 +54,22 @@ To log in and use SSH access to your web hosting plan, you will need the followi
 
 ### 1 - Make sure that SSH access is enabled for the SSH user you have chosen <a name="user-ssh-enablement"></a>
 
-Click on the tabs below to view each of the **4** steps in succession.
+Click on the tabs below to view each of the **3** steps in succession.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, the information related to your storage space will appear.
 >>
@@ -83,28 +87,22 @@ Click on the tabs below to view each of the **4** steps in succession.
 
 ### 2 - Retrieve the information you need to log in via SSH <a name="sshlogin"></a>
 
-Click on the tabs below to view each of the **4** steps in succession.
+Click on the tabs below to view each of the **3** steps in succession.
 
->> [!tabs]
+> [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, retrieve the elements described in the following table:
 >>

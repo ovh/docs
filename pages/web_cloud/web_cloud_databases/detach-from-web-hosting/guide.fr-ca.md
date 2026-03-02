@@ -1,7 +1,7 @@
 ---
 title: "Délier ma solution Web Cloud Databases d'un hébergement web"
 excerpt: "Découvrez comment délier votre solution Web Cloud Databases d'un hébergement web"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -31,19 +31,19 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être activée
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration** vous trouverez la mention **Web Cloud Databases**. Cliquez sur le bouton `...`{.action} à droite puis sur `Délier`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la nouvelle page qui s'affiche, choisissez la nouvelle tarification désirée pour votre solution Web Cloud Databases, puis suivez les étapes indiquées jusqu'au paiement.
 >>

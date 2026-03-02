@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'un utilisateur FTP"
 excerpt: "Découvrez comment changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-02
 ---
 
 ## Objectif
@@ -24,6 +24,7 @@ Cet accès permet notamment de [mettre en ligne votre site](/pages/web_cloud/web
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
+
 <!-- CP-NAV-START:web-hosting -->
 ---
 
