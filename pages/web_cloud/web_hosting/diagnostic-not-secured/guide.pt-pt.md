@@ -1,7 +1,7 @@
 ---
 title: "O que fazer em caso de erro 'Sua conexão não é particular'?"
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
-updated: 2025-10-28
+updated: 2026-03-02
 ---
 
 ## Objetivo <a name="objective"></a>
@@ -27,8 +27,16 @@ Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro.
 ## Requisitos
 
 - Ter a gestão dos [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) e da [zona DNS](/pages/web_cloud/domains/dns_zone_general_information) do seu domínio
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -43,22 +51,16 @@ Para resolver esta anomalia, deverá:
 
 As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](/links/web/domains).
 
-Para encontrar o endereço IP do seu [alojamento OVHcloud](/links/web/hosting), clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para encontrar o endereço IP do seu [alojamento OVHcloud](/links/web/hosting), clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Informações gerais**, encontrará as referências **IPv4** e **IPv6**.
 >>

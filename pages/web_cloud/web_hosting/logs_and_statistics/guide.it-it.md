@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Consultare le statistiche e i log di un sito Web"
 excerpt: "Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web grazie alla tua soluzione di hosting Web"
-updated: 2025-10-09
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -13,32 +13,35 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Per accedere ai diversi dati statistici e ai log dell’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per accedere ai diversi dati statistici e ai log dell’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> La schermata visualizzata è composta da 4 sezioni:
 >>

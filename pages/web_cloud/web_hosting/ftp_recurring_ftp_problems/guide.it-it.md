@@ -1,7 +1,7 @@
 ---
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: "Ritrova qui le anomalie più frequenti associate al tuo software FTP"
-updated: 2025-10-20
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -20,7 +20,16 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](/li
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web Cloud](/links/web/hosting) 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -59,22 +68,16 @@ Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni 
 
 La mancanza di spazio sul tuo hosting condiviso può causare problemi al tuo sito quando provi a modificarlo o ad aggiornarlo.
 
-Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Per verificare lo spazio di storage rimasto sul tuo hosting, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali**, trovi la dicitura **Spazio disco**.
 >>

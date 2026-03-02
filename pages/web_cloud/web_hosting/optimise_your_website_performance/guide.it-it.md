@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2025-10-09
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -16,7 +16,16 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 - Una [soluzione Web Hosting OVHcloud](/links/web/hosting)
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
 - Un [dominio](/links/web/domains)per accedere al tuo sito
-- avere accesso allo [Spazio Cliente](/links/manager)OVHcloud
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -94,28 +103,22 @@ Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spa
 
 Come accedere alle statistiche e ai log:
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Statistiche e log`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 >>

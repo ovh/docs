@@ -1,7 +1,7 @@
 ---
 title: "O que fazer se o meu site está inacessível?"
 excerpt: "Diagnóstico das causas da inacessibilidade do seu site"
-updated: 2025-10-09
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -27,8 +27,18 @@ Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibil
 ## Requisitos
 
 - Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -113,22 +123,16 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
-Se o seu site está alojado numa das nossas [planos de alojamento web](/links/web/hosting), clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Se o seu site está alojado numa das nossas [planos de alojamento web](/links/web/hosting), clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No marco **Informações gerais**, encontrará as referências **IPv4** e **IPv6**.
 >>

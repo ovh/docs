@@ -49,7 +49,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.

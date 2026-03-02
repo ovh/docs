@@ -55,14 +55,12 @@ Si no dispone de estos datos, haga clic en las fichas siguientes para ver cada u
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.

@@ -59,14 +59,12 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Aparecerá la lista de sus bases de datos Start SQL.

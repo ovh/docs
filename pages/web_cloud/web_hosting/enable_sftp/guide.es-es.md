@@ -59,14 +59,12 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la tabla situada en la parte inferior de la página, marque la casilla presente en la columna **SFTP** del usuario FTP correspondiente. La página se actualizará automáticamente.
@@ -89,14 +87,12 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la tabla situada en la parte inferior de la página, verifique el estado presente en la columna **SFTP** del usuario FTP correspondiente :
@@ -106,7 +102,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![FTP - SSH Pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> En la ventana que se abre, en la sección **Protocolos de conexión**, seleccione `FTP y SFTP`{.action} o `FTP, SFTP y SSH`{.action} si también necesita activar el protocolo SSH.

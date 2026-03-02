@@ -37,14 +37,12 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Web Cloud Databases**. Haga clic en el botón `...`{.action} a la derecha y luego en `Desvincular`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la nueva página, seleccione el nuevo precio deseado para su solución Web Cloud Databases y siga los pasos indicados hasta el pago.

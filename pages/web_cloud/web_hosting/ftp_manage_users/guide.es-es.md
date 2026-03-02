@@ -41,21 +41,18 @@ Para crear un nuevo usuario FTP en un alojamiento web desde el área de cliente 
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >>  Para crear un nuevo usuario FTP, haga clic en el botón `Crear un usuario`{.action} situado a la derecha. Dependiendo de la resolución de la pantalla, el botón puede estar en la parte inferior de la página.
 >>
 >> ![FTP-SSH create user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> Se abrirá la siguiente ventana:
@@ -103,21 +100,18 @@ Para editar un usuario FTP, haga clic en las fichas siguientes para ver cada una
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la tabla de la parte inferior de la página y a la derecha de la fila correspondiente al usuario FTP, haga clic en el botón `...`{.action} y, seguidamente, en `Editar`{.action}.
 >>
 >> ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> Se abrirá la siguiente ventana:
@@ -147,21 +141,18 @@ Para eliminar un usuario FTP, haga clic en las fichas siguientes para ver cada u
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la tabla de la parte inferior de la página y a la derecha de la fila correspondiente al usuario FTP, haga clic en el botón `...`{.action} y seleccione `Eliminar`{.action}.
 >>
 >> ![FTP-SSH delete user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/delete-user1.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> Se abrirá la siguiente ventana:

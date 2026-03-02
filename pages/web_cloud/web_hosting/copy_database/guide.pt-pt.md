@@ -1,7 +1,7 @@
 ---
 title: "Duplicar o conteúdo de uma base de dados em outra"
 excerpt: "Saiba como copiar o conteúdo de uma base de dados OVHcloud para outra base de dados OVHcloud"
-updated: 2025-02-20
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -18,8 +18,18 @@ A sua base de dados é um elemento central na construção do seu website dinâm
 ## Requisitos
 
 - Dispor de ofertas de bases de dados [start SQL](/links/web/hosting-options-startsql) e/ou [Web Cloud Databases](/links/web/databases). As duas bases de dados em causa devem ser previamente criadas para poderem utilizar a ferramenta de duplicação.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de direitos suficientes sobre o conjunto dos serviços de base de dados em causa. Encontre mais informações no nosso guia [Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -40,28 +50,22 @@ Dependendo da sua situação, o caminho para aceder à base de dados de origem �
 
 #### Base de dados Start SQL
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> A lista das bases de dados Start SQL é apresentada.
 >>
@@ -69,7 +73,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 
 #### Web Cloud Databases
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

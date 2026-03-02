@@ -126,12 +126,10 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y seleccione `Cron`{.action}.
 >>
-
 > **Etapa 3**
 >>
 >> En la tabla que aparece, haga clic en el botón `...`{.action} situado a la derecha de la tarea planificada correspondiente.

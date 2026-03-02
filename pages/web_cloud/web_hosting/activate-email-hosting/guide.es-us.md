@@ -49,7 +49,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
@@ -57,7 +56,6 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> ![Activar el correo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
@@ -87,7 +85,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.

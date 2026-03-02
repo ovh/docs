@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Lista dos endereços IP por cluster"
 excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
-updated: 2026-02-23
+updated: 2026-03-02
 ---
 
 <style>
@@ -37,26 +37,29 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
-Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
+Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`).
 >>

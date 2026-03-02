@@ -77,7 +77,6 @@ Para comprobar el espacio de almacenamiento restante del alojamiento, haga clic 
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará la mención **Espacio en disco**.

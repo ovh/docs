@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2025-10-09
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -16,7 +16,16 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 - um [plano de Alojamento Web OVHcloud](/links/web/hosting)
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
 - um [nome de domínio](/links/web/domains) que pode ser utilizado para aceder ao seu website
-- acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -94,28 +103,22 @@ Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Á
 
 Como aceder às estatísticas e logs:
 
-Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
 >>

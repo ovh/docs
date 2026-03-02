@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Installa un certificato SSL personalizzato"
 excerpt: "Scopri come importare e installare un certificato SSL personalizzato sul tuo hosting Web OVHcloud"
-updated: 2025-12-16
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -16,10 +16,20 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting).
 - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 - Aver installato sul proprio dispositivo OpenSSL o un’applicazione compatibile in locale.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -160,34 +170,28 @@ Per maggiori informazioni, consulta le nostre guide:
 
 Una volta rispettati tutti questi prerequisiti, puoi iniziare a finalizzare l’installazione del tuo certificato SSL personalizzato sul tuo hosting Web.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi:
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Certificati SSL`{.action}.
 >>
 >> ![Certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Quando il contenuto della scheda appare, clicca sul pulsante `Importazione del tuo certificato SSL`{.action}.
 >>
 >> ![SSL personalizzato](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates/import-your-own-ssl-certificate.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Verrà visualizzata la seguente finestra con 3 moduli da completare:
 >>
@@ -214,28 +218,22 @@ Se il certificato SSL è stato generato correttamente dal provider SSL e i prere
 
 L'installazione richiede alcuni minuti.
 
-Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ogni **4** step:
+Per verificare che l'installazione sia stata completata, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Certificati SSL`{.action}.
 >>
 >> ![Certificati SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ssl-certificates.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Una volta visualizzato il contenuto della scheda, verifica che ogni dominio e/o sottodominio interessato sia presente nella tabella con il tipo di certificato SSL `Custom`.
 >>

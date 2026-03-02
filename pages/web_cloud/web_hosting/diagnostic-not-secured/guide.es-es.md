@@ -60,7 +60,6 @@ Para encontrar la dirección IP de su [alojamiento OVHcloud](/links/web/hosting)
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará las menciones **IPv4** y **IPv6**.

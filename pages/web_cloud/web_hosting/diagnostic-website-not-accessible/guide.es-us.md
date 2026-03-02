@@ -132,7 +132,6 @@ Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará las menciones **IPv4** y **IPv6**.

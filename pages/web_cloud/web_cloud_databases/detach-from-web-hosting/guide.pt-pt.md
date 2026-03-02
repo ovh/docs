@@ -1,7 +1,7 @@
 ---
 title: "Desassociar a minha solução Web Cloud Databases de um alojamento web"
 excerpt: "Saiba como desassociar a sua solução Web Cloud Databases de um alojamento web"
-updated: 2025-01-24
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -13,33 +13,37 @@ As soluções [Web Cloud Databases](/links/web/databases) podem ser ativadas gra
 ## Requisitos
 
 - Ter um [instância Web Cloud Databases](/links/web/databases) associado a uma oferta de [alojamento web Performance](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ser, no mínimo, o contacto "[Administrador](/pages/account_and_service_management/account_information/managing_contacts)" dos serviços sobre os quais deseja agir.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
-Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> No **Configuração** encontrará uma **Web Cloud Databases**. Clique no botão `...`{.action} à direita e, a seguir, em `Desassociar`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página que vai aparecer, escolha o novo preço desejado para a sua solução Web Cloud Databases e siga as etapas indicadas até ao pagamento.
 >>

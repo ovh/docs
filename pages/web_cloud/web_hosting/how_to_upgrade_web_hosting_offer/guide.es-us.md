@@ -91,7 +91,6 @@ Para **activar la opción Boost**, haga clic en las fichas siguientes para ver c
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el recuadro **Información general** de la página que se abre, haga clic en el botón `...`{.action} a la derecha de **Boost** y seleccione `Mejorar mi plan`{.action}.
@@ -107,7 +106,6 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Mejorar mi plan`{.action}.
@@ -116,7 +114,6 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.

@@ -38,7 +38,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`) y el número del filer bajo la mención **Servidor de archivos**.

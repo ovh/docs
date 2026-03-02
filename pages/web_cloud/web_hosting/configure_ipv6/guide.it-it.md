@@ -1,7 +1,7 @@
 ---
 title: "Configura un indirizzo IPv6 per il tuo sito Web"
 excerpt: "Questa guida ti mostra come rendere il tuo sito Web compatibile con un indirizzo IPv6"
-updated: 2025-01-28
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -22,7 +22,16 @@ I nostri hosting Web sono compatibili con IPv6 dal 2011. L'attivazione di questo
 
 - Avere un [dominio](/links/web/domains) nello Spazio Cliente OVHcloud
 - Disporre di una [offerta di hosting Web](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -41,22 +50,16 @@ Per verificare se il tuo sito Web utilizza già un indirizzo IPv6, utilizza il s
 
 ### 2 - recuperare l'indirizzo IPv6 del tuo hosting Web
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali**, trovi la dicitura **IPv6**.
 >>

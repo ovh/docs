@@ -74,14 +74,12 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la nueva página, aparecerá una tabla con las bases de datos creadas.
@@ -92,7 +90,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> A la derecha de la base de datos correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Acceder a phpMyAdmin`{.action}.
 >>
-
 > **Etapa 4**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
@@ -246,21 +243,18 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la nueva página, aparecerá una tabla con las bases de datos creadas. A la derecha de la base de datos correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Recalcular el espacio utilizado `{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> En la nueva ventana, haga clic directamente en el botón `Aceptar`{.action}.

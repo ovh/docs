@@ -38,7 +38,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
@@ -49,12 +48,10 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Estadísticas y logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Será redirigido a la herramienta **OVHcloud Web Statistics**. En esta herramienta, haga clic en el formulario titulado `Selección del dominio`{.action} situado en la parte superior de la página y seleccione un dominio para el que esté activa la CDN.
 >>
-
 > **Etapa 4**
 >>
 >> En la columna izquierda, haga clic en la pestaña `Cache`{.action}.
@@ -74,7 +71,6 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
@@ -85,14 +81,12 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> ![Ver los logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la nueva página, haga clic en el botón `CDN`{.action} situado en la parte superior de la página.
 >>
 >> ![OSL CDN](/pages/assets/screens/other/web-tools/logs/osl-cdn.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> En la nueva página que aparece:

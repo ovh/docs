@@ -1,7 +1,7 @@
 ---
 title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
 excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
-updated: 2025-02-20
+updated: 2026-03-02
 ---
 
 <style>
@@ -43,7 +43,16 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 ## Requisitos
 
 - Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -108,26 +117,20 @@ A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus par
 
 ### Modificar ou eliminar uma tarefa agendada
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Mais`{.action} e, a seguir, em `Cron`{.action}.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela que aparece, clique no botão `...`{.action} situado à direita da tarefa planeada em causa.
 >>

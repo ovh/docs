@@ -35,14 +35,12 @@ Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, 
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 >>
 >> ![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Se abrirá una pantalla que consta de 4 secciones:

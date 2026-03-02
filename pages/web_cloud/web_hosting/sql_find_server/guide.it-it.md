@@ -1,7 +1,7 @@
 ---
 title: "Come identificare il server del proprio database"
 excerpt: "Scopri come trovare il nome del server che ospita il tuo database condiviso, accessibile con il tuo hosting web"
-updated: 2026-02-12
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -17,33 +17,37 @@ Nell'utilizzo dei tuoi servizi, potresti dover conoscere il nome del server SQL 
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting web OVHcloud](/links/web/hosting).
-- Essere connessi al vostro [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare un database incluso o [acquistato come opzione aggiuntiva](/links/web/hosting-options-startsql) tramite il vostro hosting web.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Database`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nella tabella, individua la colonna **Server**.
 >>

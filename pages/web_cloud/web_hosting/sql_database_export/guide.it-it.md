@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup del database di un hosting Web"
 excerpt: "Questa guida ti mostra come ripristinare il backup di un database di un hosting Web OVHcloud"
-updated: 2025-10-08
+updated: 2026-03-02
 ---
 
 ## Obiettivo
@@ -15,6 +15,17 @@ I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**a
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o disporre dei dati di connessione al database
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -46,28 +57,22 @@ Continua la lettura in base al metodo di backup scelto.
 
 ### Recuperare un backup tramite lo strumento di OVHcloud
 
-Per accedere allo strumento di backup di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per accedere allo strumento di backup di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Database`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Sulla nuova pagina appare una tabella con i database creati.
 >>

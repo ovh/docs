@@ -90,21 +90,18 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> En la nueva página, aparecerá una tabla con las bases de datos creadas. A la derecha de la base de datos correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Recalcular el espacio utilizado `{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-
 > **Etapa 4**
 >>
 >> En la nueva ventana, haga clic directamente en el botón `Aceptar`{.action}.
@@ -132,7 +129,6 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **2** eta
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Configuración**, haga clic en el botón `...`{.action} situado a la derecha de **Web Cloud Databases** y seleccione `Desvincular`{.action}.
@@ -159,7 +155,6 @@ Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web,
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará la mención **Espacio en disco**.
@@ -237,7 +232,6 @@ Para **activar la opción Boost**, haga clic en las fichas siguientes para ver c
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el recuadro **Información general** de la página que se abre, haga clic en el botón `...`{.action} a la derecha de **Boost** y seleccione `Mejorar mi plan`{.action}.
@@ -253,7 +247,6 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Más`{.action} y haga clic en `Mejorar mi plan`{.action}.
@@ -262,7 +255,6 @@ Para **desactivar la opción Boost**, haga clic en las fichas siguientes para ve
 >>
 >> ![More tab 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/more-2.png){.thumbnail}
 >>
-
 > **Etapa 3**
 >>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.

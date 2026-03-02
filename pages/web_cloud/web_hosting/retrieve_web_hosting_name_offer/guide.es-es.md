@@ -38,7 +38,6 @@ Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-
 > **Etapa 2**
 >>
 >> En el marco **Suscripción**, encontrará la etiqueta **Solución**.
