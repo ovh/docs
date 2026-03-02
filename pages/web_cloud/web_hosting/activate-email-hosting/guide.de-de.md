@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Inklusiv-E-Mail-Adressen aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können"
-updated: 2026-01-19
+updated: 2026-03-02
 ---
 
 ## Ziel 
@@ -16,7 +16,6 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 
 - Sie verfügen über einen [Domainnamen](/links/web/domains) in Ihrem OVHcloud Kundencenter.
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account (mit Ausnahme der Angebote: Kostenloses Hosting 100M und Start10m).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -27,33 +26,38 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 > Wenn Ihr Domainname bereits mit der Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ eines anderen Webhostings verbunden ist, können Sie ihn nicht direkt mit Ihrem eigenen Webhosting verbinden. Wenden Sie sich an den zuständigen Administrator.
 >
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## In der praktischen Anwendung
 
 ### Aktivierung Ihrer bei Ihrem Webhosting inklusiven E-Mail-Adressen
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Konfiguration** finden Sie die Adresse unter **E-Mail-Adressen**.
 >> Klicken Sie rechts davon auf `...`{.action} und danach auf `Mein E-Mail Angebot aktivieren`{.action}.
 >>
 >> ![Aktivierung der E-Mail-Adressen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainnamen Sie mit Ihren E-Mail-Adressen verbinden möchten, und bestätigen Sie Ihre Auswahl.
 >>
@@ -70,22 +74,16 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 Wenn Ihr Webhosting in Kürze abläuft, können Sie die Speicherung Ihrer E-Mail-Adressen **vor dem Ablaufdatum** anfordern.
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Konfiguration** finden Sie die Adresse unter **E-Mail-Adressen**.
 >> Klicken Sie rechts davon auf `...`{.action} und danach auf `Meine E-Mail-Option abtrennen`{.action}.
@@ -102,22 +100,16 @@ Sie können die optionalen E-Mail-Accounts in Verbindung mit Ihrem Webhosting en
 >
 > Diese Aktion kann nicht rückgängig gemacht werden. Nach der Kündigung können Sie die optionalen E-Mail-Konten nicht wieder aktivieren.
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Konfiguration** finden Sie die Adresse unter **E-Mail-Adressen**.
 >> Klicken Sie rechts davon auf `...`{.action} und danach auf `Die Option „E-Mail“ kündigen`{.action}.
