@@ -29,7 +29,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 > In questo articolo viene descritta la configurazione di un indirizzo IP primario. Sui server compatibili con la vRack è inoltre possibile configurare indirizzi Additional IP su una vRack invece che sull’interfaccia pubblica del server. Per istruzioni dettagliate, consultare i seguenti articoli:
 >
 > - IPv4: [Configurare un blocco di indirizzi IP nella vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Configurare un blocco IPv6 in una vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Configurare un blocco IPv6 in una vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]

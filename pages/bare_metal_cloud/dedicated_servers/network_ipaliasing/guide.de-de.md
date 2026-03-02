@@ -586,7 +586,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Ersetzen Sie `ADDITIONAL_IP` mit Ihrer Additional IP-Adresse.
 
-Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](/links/support-contact) mit folgenden Angaben:
+Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) mit folgenden Angaben:
 
 - Name und Version des auf dem Server verwendeten Betriebssystems
 - Name und Verzeichnis der Netzwerkkonfigurationsdatei

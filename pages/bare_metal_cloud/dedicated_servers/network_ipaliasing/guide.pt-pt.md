@@ -553,7 +553,7 @@ Nos exemplos abaixo, utilizaremos o editor de texto `nano`. Para alguns sistemas
 >>
 >> **1 - Aceder à gestão de IP do Plesk**
 >>
->> No painel de configuração Plesk, selecione `Tools & Resources`{.action} na barra lateral esquerda.
+>> No painel de configuração Plesk, selecione `Tools & Settings`{.action} na barra lateral esquerda.
 >>
 >> ![acesso à gestão dos endereços IP](images/pleskip1.png){.thumbnail}
 >>

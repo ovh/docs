@@ -29,7 +29,7 @@ Internet Protocol w wersji 6 (IPv6) jest następcą Internet Protocol w wersji 4
 > Ten artykuł dotyczy konfiguracji głównego adresu IP. W przypadku serwerów korzystających z usługi vRack możesz skonfigurować dodatkowe adresy IP w ramach usługi vRack, a nie w publicznym interfejsie serwera. Odpowiednie instrukcje znajdują się w tych przewodnikach:
 >
 > - IPv4: [Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
-> - IPv6: [Konfigurowanie bloku IPv6 w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> - IPv6: [Konfigurowanie bloku IPv6 w sieci vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
