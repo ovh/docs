@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer un RAID logiciel sur un nœud"
 excerpt: "Apprenez à configurer et gérer un RAID logiciel sur un nœud OpenStack Ironic dans OPCP"
-updated: 2026-02-06
+updated: 2026-03-02
 ---
 
 ## Objectif
