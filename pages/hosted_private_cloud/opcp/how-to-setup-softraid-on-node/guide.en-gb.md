@@ -193,6 +193,29 @@ unused devices: <none>
 mdadm --detail /dev/md0
 ```
 
+## Disabling RAID
+
+In some cases, you may need to disable RAID on a node. This can be achieved by setting the RAID interface to `no-raid` and clearing the target RAID configuration.
+
+### 1. Disable RAID interface
+
+Set the RAID interface to `no-raid`:
+
+```bash
+openstack baremetal node set <node-id> --raid-interface=no-raid
+```
+
+### 2. Clear target RAID configuration
+
+Clear the target RAID configuration:
+
+```bash
+openstack baremetal node set <node-id> --target-raid-config "{}"
+```
+
+> [!warning]
+> Disabling RAID will erase all data on the disks used for the RAID configuration. Make sure to backup any important data before proceeding.
+
 ## Summary of main commands
 
 | Action | Command |
@@ -206,6 +229,8 @@ mdadm --detail /dev/md0
 | Disable maintenance mode | `openstack baremetal node maintenance unset <node-id>` |
 | Deploy an instance | `openstack server create --image <image-name> --flavor <flavor-id> --key-name <keypair-name> --nic net-id=<network-id> --availability-zone "nova::<node-id>" <instance-name>` |
 | Check RAID status (from the instance) | `cat /proc/mdstat` |
+| Disable RAID interface | `openstack baremetal node set <node-id> --raid-interface=no-raid` |
+| Clear target RAID configuration | `openstack baremetal node set <node-id> --target-raid-config "{}"` |
 
 ## Best practices
 

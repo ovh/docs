@@ -193,6 +193,29 @@ unused devices: <none>
 mdadm --detail /dev/md0
 ```
 
+## Désactivation du RAID
+
+Dans certains cas, vous pouvez avoir besoin de désactiver le RAID sur un nœud. Cela peut être réalisé en définissant l'interface RAID sur `no-raid` et en effaçant la configuration RAID cible.
+
+### 1. Désactiver l'interface RAID
+
+Définir l'interface RAID sur `no-raid` :
+
+```bash
+openstack baremetal node set <node-id> --raid-interface=no-raid
+```
+
+### 2. Effacer la configuration RAID cible
+
+Effacer la configuration RAID cible :
+
+```bash
+openstack baremetal node set <node-id> --target-raid-config "{}"
+```
+
+> [!warning]
+> La désactivation du RAID effacera toutes les données présentes sur les disques utilisés pour la configuration RAID. Assurez-vous d'avoir sauvegardé toutes les données importantes avant de procéder.
+
 ## Résumé des commandes principales
 
 | Action | Commande |
@@ -206,6 +229,8 @@ mdadm --detail /dev/md0
 | Désactiver le mode maintenance | `openstack baremetal node maintenance unset <node-id>` |
 | Déployer une instance | `openstack server create --image <image-name> --flavor <flavor-id> --key-name <keypair-name> --nic net-id=<network-id> --availability-zone "nova::<node-id>" <instance-name>` |
 | Vérifier l'état RAID (depuis l'instance) | `cat /proc/mdstat` |
+| Désactiver l'interface RAID | `openstack baremetal node set <node-id> --raid-interface=no-raid` |
+| Effacer la configuration RAID cible | `openstack baremetal node set <node-id> --target-raid-config "{}"` |
 
 ## Bonnes pratiques
 
