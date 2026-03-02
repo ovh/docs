@@ -1,7 +1,7 @@
 ---
 title: "Cómo encontrar el nombre de su solución de alojamiento web"
 excerpt: "Descubra cómo identificar el tipo de solución de alojamiento web que posee desde su área de cliente de OVHcloud"
-updated: 2026-02-18
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -16,26 +16,30 @@ Mientras utiliza sus servicios, es posible que necesite el nombre de su solució
 ## Requisitos
 
 - Tener un [plan de alojamiento web](/links/web/hosting).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+
+> **Etapa 2**
 >>
 >> En el marco **Suscripción**, encontrará la etiqueta **Solución**.
 >>

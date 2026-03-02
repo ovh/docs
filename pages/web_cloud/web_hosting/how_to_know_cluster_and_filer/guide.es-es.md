@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo conocer su cluster y su filer"
 excerpt: "Cómo encontrar el número de cluster y/o el número de filer en el que se encuentra su alojamiento web"
-updated: 2025-08-12
+updated: 2026-03-02
 ---
 
 ## Objetivo
@@ -12,29 +12,34 @@ Al utilizar un alojamiento web, es posible que deba conocer el número del clust
 
 **Descubra cómo encontrar el número de cluster y el número de filer en el que se encuentra su alojamiento web.**
 
-## Procedimiento
+## Requisitos
 
 - Tener contratado un plan de [alojamiento web](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
-Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+
+> **Etapa 2**
 >>
 >> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`) y el número del filer bajo la mención **Servidor de archivos**.
 >>
