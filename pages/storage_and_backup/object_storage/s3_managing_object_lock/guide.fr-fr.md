@@ -99,56 +99,76 @@ Consultez notre guide « [Débuter avec Object Storage](/pages/storage_and_backu
 
 ### Configuration d'Object Lock
 
-Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionnalité avec le flag `--object-lock-enabled-for-bucket`. Si un bucket est créé sans ce flag, il ne pourra pas être ajouté ultérieurement.
-
 > [!primary]
 >
-> La commande suivante n'applique pas l'Object Lock aux objets du bucket, elle active seulement la fonctionnalité.
->
-
-```bash
-aws s3api create-bucket \
-  --bucket object-lock-bucket \
-  --object-lock-enabled-for-bucket
-```
-
-> [!primary]
+> L’activation de l’Object Lock ne s’applique pas automatiquement aux objets existants ou futurs du bucket. Elle permet uniquement d’activer la fonctionnalité au niveau du bucket ; une configuration de rétention doit ensuite être définie pour que les objets soient effectivement protégés.
 >
 > Cette action active également le versioning du bucket.
 >
+
+> [!tabs]
+> Via AWS cli
+>> Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionnalité avec le flag `--object-lock-enabled-for-bucket`. Si un bucket est créé sans ce flag, il ne pourra pas être ajouté ultérieurement.
+>>
+>>
+>> ```bash
+>> aws s3api create-bucket \
+>>   --bucket object-lock-bucket \
+>>   --object-lock-enabled-for-bucket
+>> ```
+>>
+> Via l'espace client OVHcloud
+>> Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
+>>
+>> Cliquez sur `Object Storage`{.action} dans la barre de navigation, puis cliquez sur `Créer un conteneur d'objets`{.action}.
+>>
+>> Lors de la création d’un bucket Object Storage, une étape dédiée permet d’activer l’Object Lock afin de stocker les objets en mode WORM (Write Once, Read Many).
+>>
+>> Une fois l’Object Lock activé, le paramètre est irréversible pour le bucket concerné. Tous les objets stockés bénéficient ainsi d’une immutabilité garantie jusqu’à la fin de la période de rétention définie.
+>>
 
 ### Configuration d'Object Lock sur un bucket
 
 Object Lock vous permet de définir une période de rétention sur un bucket spécifique. Une fois définie, la règle spécifiée est appliquée par défaut à chaque nouvel objet placé dans le bucket spécifié.
 
-```bash
-aws s3api put-object-lock-configuration \
-    --bucket object-lock-bucket \
-    --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
-```
-
-Pour afficher la configuration Object Lock d'un bucket, exécutez :
-
-```bash
-aws s3api get-object-lock-configuration \
-   --bucket object-lock-bucket
-```
-
-Le résultat devrait ressembler à ceci :
-
-```json
-{
-  "ObjectLockConfiguration" : {
-    "ObjectLockEnabled" : "Enabled",
-    "Rule" : {
-      "DefaultRetention" : {
-        "Mode" : "GOVERNANCE",
-        "Days" : 60
-      }
-    }
-  }
-}
-```
+> [!tabs]
+> Via AWS cli
+>> ```bash
+>> aws s3api put-object-lock-configuration \
+>>     --bucket object-lock-bucket \
+>>     --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
+>> ```
+>>
+>> Pour afficher la configuration Object Lock d'un bucket, exécutez :
+>>
+>> ```bash
+>> aws s3api get-object-lock-configuration \
+>>    --bucket object-lock-bucket
+>> ```
+>>
+>> Le résultat devrait ressembler à ceci :
+>>
+>> ```json
+>> {
+>>   "ObjectLockConfiguration" : {
+>>     "ObjectLockEnabled" : "Enabled",
+>>     "Rule" : {
+>>       "DefaultRetention" : {
+>>         "Mode" : "GOVERNANCE",
+>>         "Days" : 60
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
+> Via l'espace client OVHcloud
+>> Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
+>>
+>> Cliquez sur `Object Storage`{.action} dans la barre de navigation, sur l'onglet `Mes conteneurs`{.action}, puis cliquez sur le `nom de votre conteneur`{.action}.
+>>
+>> Depuis l’onglet `Informations générales`{.action}, cliquez sur `Configurer la rétention`{.action}, activez la fonctionnalité, puis définissez le mode et la période de rétention applicables. Cliquez ensuite sur le bouton `Sauvegarder`{.action}.
+>>
 
 ### Comment configurer une période de rétention sur un objet
 

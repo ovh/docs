@@ -99,56 +99,75 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 ### Object Lock configuration
 
-To use Object Lock, you have to create a bucket that supports the feature with the `--object-lock-enabled-for-bucket` flag. If a bucket is created without `--object-lock-enabled-for-bucket`, the flag cannot be added later.
-
 > [!primary]
 >
-> The following command does not apply Object Lock to the bucket’s objects, it only activates the feature.
->
-
-```bash
-aws s3api create-bucket \
-  --bucket object-lock-bucket \
-  --object-lock-enabled-for-bucket
-```
-
-> [!primary]
+> Enabling Object Lock does not automatically apply to existing or future objects in the bucket. It only enables the feature at the bucket level; a retention configuration must then be defined for objects to be effectively protected.
 >
 > This action also enables versioning of the bucket.
 >
+
+> [!tabs]
+> Via AWS cli
+>> To use Object Lock, you have to create a bucket that supports the feature with the `--object-lock-enabled-for-bucket` flag. If a bucket is created without `--object-lock-enabled-for-bucket`, the flag cannot be added later.
+>>
+>> ```bash
+>> aws s3api create-bucket \
+>>   --bucket object-lock-bucket \
+>>   --object-lock-enabled-for-bucket
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+>>
+>> Click on `Object Storage`{.action} in the navigation bar, then click on `Create object container`{.action}.
+>>
+>> When creating an Object Storage bucket, a dedicated step allows you to enable Object Lock in order to store objects in WORM (Write Once, Read Many) mode.
+>>
+>> Once Object Lock is enabled, the setting is irreversible for the bucket concerned. All stored objects are therefore guaranteed to remain immutable until the end of the defined retention period.
+>>
 
 ### How to configure Object Lock on bucket
 
 The lock configuration enables you to set a lock configuration on a specified bucket. Once set, the rule specified in the Object Lock configuration is applied by default to every new object placed in the specified bucket.
 
-```bash
-aws s3api put-object-lock-configuration \
-    --bucket object-lock-bucket \
-    --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
-```
-
-To view the Object Lock configuration of a bucket, run:
-
-```bash
-aws s3api get-object-lock-configuration \
-   --bucket object-lock-bucket
-```
-
-The result should look like this:
-
-```json
-{
-  "ObjectLockConfiguration": {
-    "ObjectLockEnabled": "Enabled",
-    "Rule": {
-      "DefaultRetention": {
-        "Mode": "GOVERNANCE",
-        "Days": 60
-      }
-    }
-  }
-}
-```
+> [!tabs]
+> Via AWS cli
+>> ```bash
+>> aws s3api put-object-lock-configuration \
+>>     --bucket object-lock-bucket \
+>>     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
+>> ```
+>>
+>> To view the Object Lock configuration of a bucket, run:
+>>
+>> ```bash
+>> aws s3api get-object-lock-configuration \
+>>    --bucket object-lock-bucket
+>> ```
+>>
+>> The result should look like this:
+>>
+>> ```json
+>> {
+>>   "ObjectLockConfiguration": {
+>>     "ObjectLockEnabled": "Enabled",
+>>     "Rule": {
+>>       "DefaultRetention": {
+>>         "Mode": "GOVERNANCE",
+>>         "Days": 60
+>>       }
+>>     }
+>>   }
+>> }
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> To manage an Object Storage bucket, first log in to your [OVHcloud control panel](/links/manager) and open your `Public Cloud`{.action} project.
+>>
+>> Click on `Object Storage`{.action} in the navigation bar, then on the `My containers`{.action} tab, and then on the `name of your container`{.action}.
+>>
+>> From the `General Information`{.action} tab, click `Configure Retention`{.action}, enable the feature, and then set the applicable retention mode and period. Then click the `Save`{.action} button.
+>>
 
 ### How to configure an Object Lock retention period on an object
 
