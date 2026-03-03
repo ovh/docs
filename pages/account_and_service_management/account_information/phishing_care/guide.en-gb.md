@@ -111,28 +111,26 @@ Click on the heading that matches the e-mail application you use.
 
 **E-mail software (desktop)**
 
-/// details | **Outlook (classic version)**
+/// details | **Outlook for Windows**
+
+There are two versions of Outlook for Windows: **classic Outlook** and **new Outlook**. To distinguish between the two, type "Outlook" in the Windows search bar. The classic version displays the mention *"(classic)"*, while the new Outlook has no special mention.
+
+![Outlook Windows - identifying the version](images/outlook-windows-identify01.png){.thumbnail .h-500}
+
+**Classic Outlook:**
 
 1. Select the phishing e-mail in your inbox (do not open it).
 2. Click `File`{.action} in the menu bar, then `Save As`{.action}.
 3. In the "Save as type" dropdown, select **Outlook Message Format - Unicode (.msg)**.
 4. Choose a location on your computer (e.g. your Desktop) and click `Save`{.action}.
 
-> [!primary]
->
-> You can also **drag and drop** the e-mail from your inbox directly onto your Desktop. This will create a `.msg` file that you can attach to your report.
+You can also **drag and drop** the e-mail from your inbox directly onto your Desktop. This will create a `.msg` file that you can attach to your report.
 
-///
-
-/// details | **Outlook (new version)**
+**New Outlook:**
 
 1. In the message list, **right-click** the phishing e-mail.
 2. Select `Save as`{.action}, then choose `Save as EML`{.action}.
 3. Choose a location on your computer and click `Save`{.action}.
-
-> [!primary]
->
-> If you are unsure which version of Outlook you are using: in the new version, you will see a toggle labelled `New Outlook` in the top-right corner of the window.
 
 ///
 

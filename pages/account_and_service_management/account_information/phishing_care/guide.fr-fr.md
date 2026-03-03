@@ -111,28 +111,26 @@ Cliquez sur le titre correspondant à l’application de messagerie que vous uti
 
 **Logiciels de messagerie (bureau)**
 
-/// details | **Outlook (version classique)**
+/// details | **Outlook pour Windows**
+
+Il existe deux versions d’Outlook pour Windows : **Outlook classique** et le **nouvel Outlook**. Pour les distinguer, tapez « Outlook » dans la barre de recherche Windows. La version classique affiche la mention *« (classique) »*, tandis que le nouvel Outlook n’a pas de mention spéciale.
+
+![Outlook Windows - identifier la version](images/outlook-windows-identify01.png){.thumbnail .h-500}
+
+**Outlook classique :**
 
 1. Sélectionnez l’e-mail de phishing dans votre boîte de réception (ne l’ouvrez pas).
 2. Cliquez sur `Fichier`{.action} dans la barre de menu, puis sur `Enregistrer sous`{.action}.
 3. Dans le menu déroulant « Type de fichier », sélectionnez **Format de message Outlook - Unicode (.msg)**.
 4. Choisissez un emplacement sur votre ordinateur (par exemple le Bureau) et cliquez sur `Enregistrer`{.action}.
 
-> [!primary]
->
-> Vous pouvez également **glisser-déposer** l’e-mail depuis votre boîte de réception directement sur votre Bureau. Cela créera un fichier `.msg` que vous pourrez joindre à votre signalement.
+Vous pouvez également **glisser-déposer** l’e-mail depuis votre boîte de réception directement sur votre Bureau. Cela créera un fichier `.msg` que vous pourrez joindre à votre signalement.
 
-///
-
-/// details | **Outlook (nouvelle version)**
+**Nouvel Outlook :**
 
 1. Dans la liste des messages, faites un **clic droit** sur l’e-mail de phishing.
 2. Sélectionnez `Enregistrer sous`{.action}, puis choisissez `Enregistrer en tant que fichier EML`{.action}.
 3. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
-
-> [!primary]
->
-> Si vous ne savez pas quelle version d’Outlook vous utilisez : dans la nouvelle version, un bouton `Nouvel Outlook` est visible en haut à droite de la fenêtre.
 
 ///
 
