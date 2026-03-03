@@ -1,6 +1,6 @@
 ---
-title: Kafka MirrorMaker - Capacités et limitations (EN)
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka MirrorMaker
+title: Capacités et limitations pour Analytics avec Kafka MirrorMaker (EN)
+excerpt: Discover the capabilities and limitations of Analytics for Kafka MirrorMaker
 updated: 2026-02-17
 ---
 

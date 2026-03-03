@@ -234,10 +234,6 @@ public-cloud-data-analytics-common: Commun
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
-public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
-public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
 public-cloud-data-analytics-kafka-configuration: Configuration
 public-cloud-data-analytics-kafka-getting-started: Premiers pas
 public-cloud-data-analytics-kafka-key-concepts: Concepts clés
