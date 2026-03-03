@@ -1,7 +1,7 @@
 ---
-title: "Récupérer l'en-tête d'un e-mail"
-excerpt: 'Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie'
-updated: 2021-11-19
+title: "Récupérer l'en-tête et le fichier .eml d'un e-mail"
+excerpt: "Découvrez comment récupérer l'en-tête d'un e-mail ou extraire un fichier .eml depuis votre client de messagerie, webmail ou application externe"
+updated: 2026-03-03
 ---
 
 <style>
@@ -29,13 +29,13 @@ updated: 2021-11-19
 
 ## Objectif
 
-Un en-tête e-mail a pour rôle de retracer le chemin emprunté par cet e-mail sur le réseau, de l'expéditeur au destinataire.<br> 
-Il permet notamment d'identifier un e-mail malveillant ou de détecter une lenteur de réception.
+Un en-tête e-mail retrace le chemin emprunté par un e-mail sur le réseau, de l'expéditeur au destinataire.<br> 
+Il permet d'identifier un e-mail malveillant ou de détecter une lenteur de réception.
 
 Chaque e-mail reçu possède un en-tête (*header*) qui ne s'affiche pas par défaut lorsque vous consultez votre e-mail. Vous pouvez toutefois le récupérer sur votre client de messagerie ou votre webmail.
 
 Vous pouvez également extraire l'e-mail dans son intégralité sous forme de fichier `.eml`. Ce fichier peut vous être demandé pour analyser un e-mail malveillant que vous avez reçu.<br>
-Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
+Pour récupérer un fichier `.eml`, consultez notre rubrique [webmail](#webmail).
 
 **Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie.**
 
@@ -48,8 +48,8 @@ Pour récupérer un fichier `.eml`, consultez notre rubrique [Webmail](#webmail)
 
 ### Comprendre le contenu d'un en-tête
 
-L'en-tête est composé de plusieurs éléments indiquant le cheminement de l'e-mail. Il est composé d'éléments hiérarchisés de façon antéchronologique, des plus récents jusqu'aux plus anciens, et d'informations supplémentaires.<br>
-Vous trouverez ci-dessous une liste non-exhaustive des éléments pouvant composer un en-tête, ainsi que leur signification. 
+L'en-tête est composé de plusieurs éléments indiquant le cheminement de l'e-mail. Il est composé d'éléments hiérarchisés de façon antéchronologique, et d'informations supplémentaires.<br>
+Voici une liste non exhaustive des éléments composant un en-tête et leur signification. 
 
 - Le champ `Received` est présent dans l'en-tête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du passage le plus récent au passage le plus ancien sur un serveur :
 <pre class="bgwhite"><code>
@@ -59,7 +59,7 @@ Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 </code></pre>
   *Ici l'e-mail a été transmis du serveur MX Plan7.mail.ovh.net vers le serveur mo3005.mail-out.ovh.net le 30 juin 2021 à 13:12:40 (Fuseau horaire UTC)*
 
-- Le champ `Return-Path` correspond à l'adresse de retour lorsque l'envoi du message a échoué. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
+- Le champ `Return-Path` correspond à l'adresse de retour lorsque l'envoi du message a échoué. L'adresse de retour est généralement celle de l'expéditeur. 
 <pre class="bgwhite"><code>
 Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
@@ -100,37 +100,76 @@ X-VR-SPAMCAUSE:
 
 ### Récupérer un en-tête sur un logiciel de messagerie
 
-#### Microsoft Outlook 
+#### Microsoft Outlook
 
-Pour lire l'en-tête, ouvrez l'e-mail de votre choix dans une fenêtre séparée en double-cliquant sur celui-ci dans la liste.
+##### **Récupérer l’en-tête**
 
-Dans la nouvelle fenêtre, cliquez sur `Fichier`{.action} en haut à droite.
+Il existe deux versions d’Outlook pour Windows : **Outlook classique** et le **nouvel Outlook**. Pour les distinguer, tapez « Outlook » dans la barre de recherche Windows. La version classique affiche la mention *« (classique) »*, tandis que le nouvel Outlook n’a pas de mention spéciale.
 
-![emails](images/outlook01.png){.thumbnail}
+![Outlook Windows - identifier la version](images/outlook-windows-identify01.png){.thumbnail .h-500}
 
-Sélectionnez ensuite `Informations`{.action} sur la gauche puis cliquez sur `Propriétés`{.action}.
+**Outlook classique :**
 
-![emails](images/outlook02.png){.thumbnail}
+1. Ouvrez l’e-mail de votre choix dans une fenêtre séparée en double-cliquant sur celui-ci dans la liste.
+2. Dans la nouvelle fenêtre, cliquez sur `Fichier`{.action} en haut à gauche.
+![Menu Fichier dans Outlook](images/outlook01.png){.thumbnail}
+3. Sélectionnez `Informations`{.action} sur la gauche puis cliquez sur `Propriétés`{.action}.
+![Informations et Propriétés dans Outlook](images/outlook02.png){.thumbnail}
+4. L’en-tête complet de l’e-mail apparaît dans le cadre inférieur. Sélectionnez l’ensemble du texte et copiez-le dans un fichier.
+![En-tête complet affiché dans Outlook](images/outlook03.png){.thumbnail}
 
-L'en-tête complet de l'e-mail apparaît dans le cadre inférieur. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
+**Nouvel Outlook :**
 
-![emails](images/outlook03.png){.thumbnail}
+1. Ouvrez l’e-mail de votre choix.
+2. Cliquez sur `Autres actions`{.action} (⋯) en haut de la fenêtre du message.
+3. Sélectionnez `Afficher`{.action} puis `Afficher les détails des messages`{.action}.
+4. L’en-tête complet de l’e-mail apparaît dans le volet de détails du message. Sélectionnez l’ensemble du texte et copiez-le dans un fichier.
+
+##### **Récupérer le fichier .eml**
+
+**Outlook classique :**
+
+1. Sélectionnez l’e-mail dans votre boîte de réception (ne l’ouvrez pas).
+2. Cliquez sur `Fichier`{.action} dans la barre de menu, puis sur `Enregistrer sous`{.action}.
+3. Dans le menu déroulant « Type de fichier », sélectionnez **Format de message Outlook - Unicode (.msg)**.
+4. Choisissez un emplacement sur votre ordinateur (par exemple le Bureau) et cliquez sur `Enregistrer`{.action}.
+
+Vous pouvez également **glisser-déposer** l’e-mail depuis votre boîte de réception directement sur votre Bureau. Cela créera un fichier `.msg` que vous pourrez joindre à votre signalement.
+
+**Nouvel Outlook :**
+
+1. Dans la liste des messages, faites un **clic droit** sur l’e-mail.
+2. Sélectionnez `Enregistrer sous`{.action}, puis choisissez `Enregistrer en tant que fichier EML`{.action}.
+3. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
 
 #### Mozilla Thunderbird
 
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis appuyez simultanément sur les touches `Ctrl` \+ `U`.
+##### **Récupérer l'en-tête**
 
-![emails](images/thunderbird01.png){.thumbnail}
+1. Sélectionnez l'e-mail de votre choix.
+2. Appuyez simultanément sur les touches `Ctrl` \+ `U`.
+![En-tête complet affiché dans Thunderbird](images/thunderbird01.png){.thumbnail}
+3. L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Sélectionnez l'ensemble du texte et copiez-le dans un fichier.
 
-L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée, vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
+##### **Récupérer le fichier .eml**
+
+1. Sélectionnez l'e-mail de votre choix.
+2. Cliquez sur `Fichier`{.action} dans la barre de menu et sélectionnez `Enregistrer sous`{.action}.
+3. Le fichier est enregistré par défaut au format `.eml`.
 
 #### Mail de macOS
 
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix, puis rendez-vous sur `Présentation`{.action} dans la barre de menu supérieure, puis dans `Message`{.action} et cliquez sur `Tous les en-têtes`.
+##### **Récupérer l'en-tête**
 
-![emails](images/mailmac01.png){.thumbnail}
+1. Sélectionnez l'e-mail de votre choix.
+2. Rendez-vous sur `Présentation`{.action} dans la barre de menu supérieure, puis dans `Message`{.action} et cliquez sur `Tous les en-têtes`.
+![En-tête complet affiché dans Mail macOS](images/mailmac01.png){.thumbnail}
+3. L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Sélectionnez l'ensemble du texte et copiez-le dans un fichier.
 
-L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
+##### **Récupérer le fichier .eml**
+
+1. Sélectionnez l'e-mail de votre choix.
+2. Glissez-le directement sur votre Bureau ou dans un dossier du Finder. Le fichier `.eml` est automatiquement créé.
 
 ### Récupérer un en-tête sur un webmail <a name="webmail"></a>
 
@@ -138,51 +177,70 @@ L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Vous pouve
 
 ##### **Récupérer l'en-tête**
 
-Pour afficher l'en-tête, sélectionnez l'e-mail de votre choix. Cliquez sur le bouton  `... Plus`{.action} puis sur `< > Voir la source`{.action}.
-
-![emails](images/roundcube01.png){.thumbnail}
-
-Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail. Vous pouvez sélectionner l'ensemble du texte et le copier dans un fichier.
+1. Sélectionnez l'e-mail de votre choix.
+2. Cliquez sur le bouton `... Plus`{.action} puis sur `< > Voir la source`{.action}.
+![Voir la source dans Roundcube](images/roundcube01.png){.thumbnail}
+3. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail. Sélectionnez l'ensemble du texte et copiez-le dans un fichier.
 
 ##### **Récupérer le fichier .eml**
 
-Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix. Cliquez sur le bouton  `... Plus`{.action} puis sur `Télécharger (.eml)`{.action}.
+1. Sélectionnez l'e-mail de votre choix.
+2. Cliquez sur le bouton `... Plus`{.action} puis sur `Télécharger (.eml)`{.action}.
+![Télécharger le fichier eml dans Roundcube](images/roundcube02.png){.thumbnail}
 
-![emails](images/roundcube02.png){.thumbnail}
-
-#### Outlook Web App (OWA) <a name="owa"></a>
+#### Outlook Web App (OWA)
 
 ##### **Récupérer l'en-tête**
 
-Sélectionnez l'e-mail dont vous souhaitez afficher l'en-tête. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis sur `Afficher les détails du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet de le télécharger.
+1. Sélectionnez l'e-mail dont vous souhaitez afficher l'en-tête.
+2. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis sur `Afficher les détails du message`{.action}.
+3. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet de le télécharger.
+![Détails du message dans OWA](images/owa01.png){.thumbnail}
 
-![emails](images/owa01.png){.thumbnail}
-
-Consultez également notre tutoriel vidéo:
+Consultez également notre tutoriel vidéo :
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Récupérer le fichier .eml**
 
-Pour télécharger le fichier `.eml`, cliquez sur `(+) Nouveau`{.action} pour créer un nouvel e-mail. 
+1. Cliquez sur `(+) Nouveau`{.action} pour créer un nouvel e-mail.
+2. Sélectionnez l'e-mail que vous souhaitez extraire puis glissez-le dans le contenu du nouveau message.
+3. Cliquez sur la flèche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `Télécharger`{.action} pour enregistrer le fichier sur votre machine.
+![Extraire un fichier eml depuis OWA](images/owa02.gif){.thumbnail}
 
-Sélectionnez l'e-mail que vous souhaitez extraire puis glissez-le dans le contenu du nouveau message. 
+#### Zimbra
 
-Cliquez sur la flèche qui pointe vers le bas à côté de la pièce jointe que vous venez de générer, puis cliquez sur `Télécharger`{.action} pour enregistrer le fichier sur votre machine.
+##### **Récupérer l'en-tête**
 
-![emails](images/owa02.gif){.thumbnail}
+1. Sélectionnez l'e-mail de votre choix.
+2. Cliquez sur `Plus`{.action} dans la barre d'actions et sélectionnez `Afficher l'original`{.action}.
+3. Une nouvelle fenêtre s'ouvre avec l'en-tête complet et le contenu brut de l'e-mail.
+
+##### **Récupérer le fichier .eml**
+
+1. Sélectionnez l'e-mail de votre choix.
+2. Cliquez sur `Plus`{.action} dans la barre d'actions et sélectionnez `Afficher l'original`{.action}.
+3. Dans la fenêtre qui s'ouvre, utilisez le raccourci `Ctrl` \+ `S` (ou `Cmd` \+ `S` sur macOS) pour enregistrer la page en tant que fichier `.eml`.
 
 ### Récupérer un en-tête sur un autre client de messagerie
 
 #### Gmail
 
-Pour récupérer l'en-tête, sélectionnez l'e-mail concerné, puis cliquez sur les 3 points verticaux à droite, puis sur `Afficher la source du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet également de le télécharger au format `.eml`.
+##### **Récupérer l'en-tête**
 
-![emails](images/gmail01.png){.thumbnail}
+1. Sélectionnez l'e-mail concerné.
+2. Cliquez sur les 3 points verticaux à droite et sur `Afficher la source du message`{.action}.
+3. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail.
+![Voir la source du message dans Gmail](images/gmail01.png){.thumbnail}
+
+##### **Récupérer le fichier .eml**
+
+1. Sélectionnez l'e-mail concerné.
+2. Cliquez sur les 3 points verticaux à droite et sélectionnez `Télécharger le message`{.action}.
 
 #### Outlook.com
 
-Pour afficher l'en-tête dans l'interface webmail &#60;Outlook.com&#62;, consultez la rubrique [Outlook Web App](#owa) de ce guide.
+Pour récupérer l'en-tête ou extraire le fichier `.eml` depuis l'interface webmail &#60;Outlook.com&#62;, consultez la rubrique [Outlook Web App](#owa) de ce guide.
 
 ## Aller plus loin
 
