@@ -129,19 +129,48 @@ public-cloud-ai-and-machine-learning: AI & machine learning
 public-cloud-ai-and-machine-learning-general-information: Informations générales
 public-cloud-ai-and-machine-learning-command-line-interface: Command Line Interface
 public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai-and-machine-learning-ai-notebooks-guides: AI Notebooks - Guides
+public-cloud-ai-and-machine-learning-ai-notebooks-key-concepts: AI Notebooks - Concepts clés
+public-cloud-ai-and-machine-learning-ai-notebooks-getting-started: AI Notebooks - Premiers pas
+public-cloud-ai-and-machine-learning-ai-notebooks-configuration: AI Notebooks - Configuration
 public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: AI Notebooks - Tutoriels
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-audio-speech: Audio/Speech
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-computer-vision: Computer vision
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-nlp: NLP
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-code-assistant: Code assistant
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-fine-tuning: Fine Tuning
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials-mlops-monitoring: MLOps/Monitoring
+public-cloud-ai-and-machine-learning-ai-notebooks-troubleshooting: AI Notebooks - Diagnostic et dépannage
+public-cloud-ai-and-machine-learning-ai-notebooks-additional-resources: AI Notebooks - Ressources additionnelles
 public-cloud-ai-and-machine-learning-ai-training: AI Training
-public-cloud-ai-and-machine-learning-ai-training-guides: AI Training - Guides
+public-cloud-ai-and-machine-learning-ai-training-key-concepts: AI Training - Concepts clés
+public-cloud-ai-and-machine-learning-ai-training-getting-started: AI Training - Premiers pas
+public-cloud-ai-and-machine-learning-ai-training-configuration: AI Training - Configuration
 public-cloud-ai-and-machine-learning-ai-training-tutorials: AI Training - Tutoriels
+public-cloud-ai-and-machine-learning-ai-training-tutorials-mlops-monitoring: MLOps/Monitoring
+public-cloud-ai-and-machine-learning-ai-training-tutorials-nlp: NLP
+public-cloud-ai-and-machine-learning-ai-training-tutorials-audio-signal-processing: Audio/Signal processing
+public-cloud-ai-and-machine-learning-ai-training-tutorials-computer-vision: Computer vision
+public-cloud-ai-and-machine-learning-ai-training-tutorials-model-export-inference: Model export/Inference
+public-cloud-ai-and-machine-learning-ai-training-troubleshooting: AI Training - Diagnostic et dépannage
+public-cloud-ai-and-machine-learning-ai-training-additional-resources: AI Training - Ressources additionnelles
 public-cloud-ai-and-machine-learning-ai-deploy: AI Deploy
-public-cloud-ai-and-machine-learning-ai-deploy-guides: AI Deploy - Guides
+public-cloud-ai-and-machine-learning-ai-deploy-key-concepts: AI Deploy - Concepts clés
+public-cloud-ai-and-machine-learning-ai-deploy-getting-started: AI Deploy - Premiers pas
+public-cloud-ai-and-machine-learning-ai-deploy-configuration: AI Deploy - Configuration
+public-cloud-ai-and-machine-learning-ai-deploy-security: AI Deploy - Security
 public-cloud-ai-and-machine-learning-ai-deploy-tutorials: AI Deploy - Tutoriels
+public-cloud-ai-and-machine-learning-ai-deploy-troubleshooting: AI Deploy - Diagnostic et dépannage
+public-cloud-ai-and-machine-learning-ai-deploy-addtional-resources: AI Deploy - Ressources additionnelles
 public-cloud-ai-and-machine-learning-ai-ecosystem: AI Partners Ecosystem
-public-cloud-ai-and-machine-learning-ai-ecosystem-guides: AI Partners - Guides
+public-cloud-ai-and-machine-learning-ai-ecosystem-key-concepts: AI Partners - Concepts clés
+public-cloud-ai-and-machine-learning-ai-ecosystem-getting-started: AI Partners - Premiers pas
 public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
-public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
-public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutoriels
+public-cloud-ai-and-machine-learning-ai-endpoints-key-concepts: AI Endpoints - Concepts clés
+public-cloud-ai-and-machine-learning-ai-endpoints-getting-started: AI Endpoints - Premiers pas
+public-cloud-ai-and-machine-learning-ai-endpoints-configuration: AI Endpoints - Configuration
+public-cloud-ai-and-machine-learning-ai-endpoints-tutorials: AI Endpoints - Tutoriels
+public-cloud-ai-and-machine-learning-ai-endpoints-troubleshooting: AI Endpoints - Diagnostic et dépannage
+public-cloud-ai-and-machine-learning-ai-endpoints-additional-resources: AI Endpoints - Ressources additionnelles
 public-cloud-quantum-computing: Quantum computing
 public-cloud-quantum-computing-general-information: General information
 public-cloud-quantum-computing-emulators: Quantum emulators
