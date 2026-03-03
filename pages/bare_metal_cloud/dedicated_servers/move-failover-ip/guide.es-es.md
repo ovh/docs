@@ -1,5 +1,5 @@
 ---
-title:  Mover una Additional IP
+title: Mover una Additional IP
 excerpt: Cómo mover una Additional IP desde el área de cliente o a través de la API de OVHcloud
 updated: 2026-01-21
 ---
@@ -119,7 +119,7 @@ Para mover la dirección IP, utilice la siguiente llamada:
 
 ### Mover una Additional IP de una cuenta So you Start a una cuenta OVHcloud
 
-Para mover una Additional  IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
+Para mover una Additional IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
 
 - El movimiento de una Additional IP conlleva gastos de instalación. La dirección IP no se moverá si la factura sigue pendiente de pago.
 - No es posible mover una Additional IP de una cuenta OVHcloud a una cuenta So you Start.
@@ -137,7 +137,7 @@ Seleccione `Mover a un servicio OVH`{.action}, introduzca su identificador de cl
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Esto generará un código (token), guárdelo.
+Esto generará un código (token). Guárdelo.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 

@@ -14,7 +14,7 @@ updated: 2026-01-21
 
 ## Objectif
 
-Les Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
+Les Additional IP peuvent être déplacées entre les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
 
 Cette technologie vous permet d’échanger les adresses IP d'une solution à l'autre en moins d'une minute, pratiquement sans aucune interruption pour vos utilisateurs. Elle peut être utilisée lors des migrations de services (déplacement des projets de l'environnement de développement à celui de production, par exemple) ou lors du basculement vers un serveur de secours en cas de défaillance.
 
@@ -28,7 +28,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 >
 
-**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud. Découvrez également comment déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud.**
+**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud, y compris d'un compte So you Start vers un compte OVHcloud.**
 
 ## Prérequis
 
@@ -62,9 +62,9 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 La géolocalisation d'une adresse IP est indépendante de sa région de rattachement.
 
-Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne (eu-central-war) et commandé sur un serveur situé dans un datacenter en France (eu-west-gra) ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne (eu-central-war). Le bloc IP ne peut être déplacé que vers un serveur éligible situé dans un datacenter en France.
+Si vous commandez un bloc Additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc Additional IP géolocalisé en Pologne (eu-central-war) et commandé sur un serveur situé dans un datacenter en France (eu-west-gra) ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne (eu-central-war). Le bloc IP ne peut être déplacé que vers un serveur éligible situé dans un datacenter en France.
 
-### Déplacer une Addtional IP depuis l'espace client OVHcloud
+### Déplacer une Additional IP depuis l'espace client OVHcloud
 
 > [!warning]
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
@@ -72,7 +72,7 @@ Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez 
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
-Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et séléctionner`Toutes les Additional IP`{.action} pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
+Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et sélectionner `Toutes les Additional IP`{.action} pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 Connectez-vous sur la page web des [API OVHcloud](/links/api).
 
-Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
+Vérifiez d'abord si l'adresse IP peut être déplacée.
 <br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
 
 > [!api]
@@ -119,10 +119,6 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 ### Déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud
 
-> [primary]
-> Avant de commencer, vous devez récupérer votre identifiant client OVHcloud unique. Vous trouverez cette information dans les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.) Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte).
->
-
 Pour déplacer une Additional IP d'un compte SYS vers un compte OVHcloud, vous devez tenir compte de plusieurs éléments :
 
 - Le déplacement d'une Additional IP entraîne des frais d'installation. L'adresse IP ne sera pas déplacée si la facture reste impayée.
@@ -137,7 +133,7 @@ Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à c�
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant client OVHcloud (sous forme de aa00000-ovh) et cliquez sur `Suivant`{.action}.
+Sélectionnez `Déplacer vers un service OVH`{.action}, entrez votre identifiant client OVHcloud et cliquez sur `Suivant`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
@@ -151,7 +147,7 @@ Cliquez sur le bouton de paramètres (en forme d'engrenage `⚙`{.action}) à dr
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Une fenêtre contextuelle apparaîtra, entrez l'adresse Additional IP (ou le bloc) et le code récupéré dans le compte So you Start dans le champ `Token`. Ensuite, cliquez sur `Suivant`{.action}.
+Dans la fenêtre contextuelle, entrez l'adresse Additional IP (ou le bloc) et le code récupéré depuis le compte So you Start, puis cliquez sur `Suivant`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
@@ -168,17 +164,17 @@ Cochez la case `Accepter les contrats`{.action} pour accepter les conditions d'u
 
 ![soyoustart to ovh](images/Step-4.png){.thumbnail}
 
-Prenez note du récapitulatif de la commande et cliquez sur ` Confirmer`{.action} pour la valider.
+Prenez note du récapitulatif de la commande et cliquez sur `Confirmer`{.action} pour la valider.
 
 ![soyoustart to ovh](images/Step-5.png){.thumbnail}
 
 Vous serez redirigé vers une nouvelle page pour effectuer le paiement.
 
-Une fois le paiement effectué, votre Additional IP sera transférée vers votre compte OVHcloud et associée au serveur sélectionné. Ce processus peut prendre un certain temps.
+Une fois le paiement effectué, votre Additional IP sera transférée vers votre compte OVHcloud et associée au serveur sélectionné. Ce processus peut prendre du temps.
 
 ### Restrictions <a name="limitations"></a>
 
-Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresses IP, Le tableau ci-dessous montre la compatibilité entre les régions.
+Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresses IP. Le tableau ci-dessous montre la compatibilité entre les régions.
 
 Pour plus d'informations, consultez notre liste de [régions disponibles](/links/network/additional-ip).
 

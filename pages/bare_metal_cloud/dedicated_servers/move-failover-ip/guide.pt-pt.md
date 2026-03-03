@@ -1,5 +1,5 @@
 ---
-title:  Migrar um Additional IP
+title: Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
 updated: 2026-01-21
 ---
@@ -120,7 +120,7 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 ### Migrar um Additional IP de uma conta So you Start para uma conta OVHcloud
 
 > [!primary]
-> Antes de começar, deve recuperar o seu identificador de cliente OVHcloud único. Encontrará essa informação nos e-mails enviados pela OVHcloud (e-mail de confirmação da criação da conta, bem como nos e-mails de confirmação ou renovação de encomendas). É semelhante a isto: "aa00000-ovh" (as primeiras letras são geralmente as iniciais da pessoa que criou a conta).
+> Antes de começar, deve recuperar o seu identificador de cliente OVHcloud único. Encontrará essa informação nos e-mails enviados pela OVHcloud (e-mail de confirmação da criação da conta, bem como nos e-mails de confirmação ou renovação de encomendas). É semelhante a isto: `aa00000-ovh` (as primeiras letras são geralmente as iniciais da pessoa que criou a conta).
 >
 
 Para migrar um Additional IP de uma conta SYS para uma conta OVHcloud, deve ter em conta vários elementos:
@@ -141,13 +141,13 @@ Selecione `Migrar para um serviço OVH`{.action}, introduza o seu ID de cliente 
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Isso irá gerar um código (token), guarde-o.
+Isso irá gerar um código (token). Guarde-o.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
 Em seguida, [inicie sessão na sua conta OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
-Clique no botão de definições (em forma de roda dentada `⚙`{.action}) à direita e selecione `Importar os meus endereços IP da SyS para a OVHcloud`{.action}.
+Clique no botão de definições (em forma de engrenagem `⚙`{.action}) à direita e selecione `Importar os meus endereços IP da SyS para a OVHcloud`{.action}.
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
@@ -198,4 +198,4 @@ Para mais informações, consulte a nossa lista de [regiões disponíveis](/link
 
 ## Quer saber mais?
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

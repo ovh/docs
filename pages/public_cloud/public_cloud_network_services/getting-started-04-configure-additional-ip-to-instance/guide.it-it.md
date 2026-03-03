@@ -44,7 +44,7 @@ Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operati
 
 > [!primary]
 >
-Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la procedura per configurare la tua interfaccia di rete e i nomi di file possono essere stati modificati. In caso di difficoltà o dubbi, consulta la documentazione relativa al tuo sistema operativo.
+> Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la procedura per configurare la tua interfaccia di rete e i nomi di file possono essere stati modificati. In caso di difficoltà o dubbi, consulta la documentazione relativa al tuo sistema operativo.
 >
 
 **Si prega di prendere nota della terminologia che verrà utilizzata negli esempi di codice e nelle istruzioni dettagliate contenute in questa guida:**
@@ -248,7 +248,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >> address1=ADDITIONAL_IP/32
 >> ```
 >>
->> Se avete due Additional IP da configurare, la configurazione dovrebbe essere questa:
+>> Se hai due Additional IP da configurare, la configurazione dovrebbe essere questa:
 >>
 >> ```console
 >> [ipv4]
@@ -275,7 +275,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![accesso alla gestione degli indirizzi IP](images/pleskip1.png){.thumbnail}
 >>
->> Clicca su `IP Indirizzi`{.action} con **Tools & Settings**.
+>> Clicca su `IP Addresses`{.action} sotto **Tools & Resources**.
 >>
 >> **Step 2: aggiungi le informazioni IP supplementari**
 >>
@@ -302,7 +302,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> Clicca con il tasto destro sul pulsante `Menu Inizia`{.action} e apri `Esegui`{.action}.
 >>
->> Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
+>> Digita `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
 >>
 >> ![cmdprompt](images/pci_win07.png){.thumbnail}
 >>
@@ -318,7 +318,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> ![modifica la configurazione IP](images/image2.png){.thumbnail}
 >>
->> Nella finestra Proprietà IPv4, seleziona `Utilizza questo indirizzo IP`{.action}. Inserisci l'indirizzo IP recuperato nel primo step e poi clicca su `Avanti`{.action}.
+>> Nella finestra Proprietà IPv4, seleziona `Utilizza questo indirizzo IP`{.action}. Inserisci l'indirizzo IP recuperato nel primo step e poi clicca su `Avanzate`{.action}.
 >>
 >> **Step 3: aggiungi l'indirizzo Additional IP nelle Impostazioni TCP/IP avanzate**
 >>
@@ -332,7 +332,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 >>
 >> **Step 4: riavvia l'interfaccia di rete**
 >>
->> Di ritorno al pannello di configurazione (`Connessioni di rete`{.action}), clicca con il tasto destro sulla tua interfaccia di rete e seleziona `Disattivare`{.action}.
+>> Di ritorno al pannello di configurazione (`Connessioni di rete`{.action}), clicca con il tasto destro sulla tua interfaccia di rete e seleziona `Disattiva`{.action}.
 >>
 >> ![disattivazione della rete](images/image6.png){.thumbnail}
 >>
@@ -357,7 +357,7 @@ Una volta effettuato l'accesso in Rescue mode via SSH, esegui questo comando:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional IP dall'esterno. Se risponde in modalità Rescue, significa probabilmente che si è verificato un errore di configurazione. Se l'IP non funziona ancora, informi i nostri team del supporto creando un ticket di assistenza dallo [Spazio Cliente OVHcloud](/links/manager).
+Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional IP dall'esterno. Se risponde in modalità Rescue, significa probabilmente che si è verificato un errore di configurazione. Se l'IP non funziona ancora, informa i nostri team del supporto creando un ticket di assistenza dallo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Per saperne di più
 
