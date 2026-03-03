@@ -1,6 +1,6 @@
 ---
-title: 'Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?'
-excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
+title: 'Phishing - Comment reconnaître des e-mails frauduleux ?'
+excerpt: 'Comment reconnaître un e-mail ou SMS de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
 updated: 2026-03-03
 ---
 
@@ -49,7 +49,7 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 |---|---|---|
 |1 - Expéditeur|Vérifiez que l’adresse utilisée pour l’envoi de l’e-mail se termine par un nom de domaine (ou un sous-domaine, par exemple `events.ovhcloud.com` ) appartenant à OVHcloud (voir la liste ci-dessous) |L'expéditeur de l'e-mail sera très probablement une adresse qui ne vient pas d'OVHcloud.|
 |2 - Objet|Vérifiez que votre identifiant **(qui commence généralement par les initiales de la personne ayant créé le compte OVHcloud)** et/ou l’adresse e-mail de votre compte figurent dans l’objet du message.|Très souvent, l'e-mail sera marqué comme \[SPAM] et **votre identifiant n'apparaîtra pas ou sera incorrect**.|
-|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (juste en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/. Lorsque vous cliquez sur un lien, vérifiez toujours l'adresse dans le navigateur. OVHcloud utilise un ensemble de noms de domaines reconnaissables, généralement ovhcloud.com ou ovh.com (voir la liste ci-dessous). |Dans un e-mail de phishing, le lien ne sera pas celui d'une page officielle OVHcloud. **Ne cliquez pas dessus.**|
+|3 - Lien|**Sans cliquer dessus, passez votre pointeur de souris sur le lien ou le bouton** et vous en verrez directement la cible (juste en dessous ou tout en bas de votre navigateur). Dans notre exemple, le lien renvoie bien vers une adresse https://www.ovh.com/. Lorsque vous cliquez sur un lien, vérifiez toujours l'adresse dans le navigateur. OVHcloud utilise un ensemble de noms de domaines reconnaissables, généralement ovhcloud.com ou ovh.com (voir ci-dessous la liste des domaines légitimes et les astuces pour vérifier un lien suspect).|Dans un e-mail de phishing, le lien ne sera pas celui d'une page officielle OVHcloud. **Ne cliquez pas dessus.**|
 |4 - En-tête et pied de page de l'e-mail|OVHcloud envoie des e-mails dans les formats TXT et HTML. L'en-tête contiendra le logo OVHcloud, le pied de l'e-mail contiendra des informations légales liées à OVHcloud|Il se peut que l'en-tête ou le pied de page contiennent des liens qui n'ont rien à voir avec OVHcloud. **Ne cliquez pas sur ces liens.**|
 
 /// details | **Liste des noms de domaines OVHcloud légitimes** (cliquez pour l'afficher)
@@ -84,6 +84,41 @@ Des e-mails peuvent aussi provenir de sous-domaines authentiques :
 - events.ovhcloud.com
 - news.soyoustart.com
 - services.kimsufi.com
+
+///
+
+/// details | **Astuces pour vérifier un lien suspect** (cliquez pour afficher)
+
+**Lire l'URL de droite à gauche**
+
+Le vrai nom de domaine se trouve juste avant le premier `/` dans l'adresse. Les URL de phishing ajoutent souvent des mots avant le domaine pour le rendre crédible :
+
+- `https://www.ovhcloud.com/account/login` — le vrai domaine est **ovhcloud.com** ✓
+- `https://ovhcloud.com.login-secure.xyz/account` — le vrai domaine est **login-secure.xyz** ✗
+
+Pour trouver le vrai domaine, regardez la barre d'adresse et lisez **depuis le premier `/` vers la gauche** — les deux dernières parties avant cette barre oblique sont le domaine réel.
+
+**Attention aux caractères ressemblants**
+
+Les fraudeurs remplacent parfois des lettres par des caractères visuellement similaires pour créer des adresses trompeuses :
+
+- `ovhcIoud.com` (I majuscule à la place du L minuscule)
+- `0vhcloud.com` (zéro à la place de la lettre O)
+- `ovhclould.com` (lettre supplémentaire)
+
+Si quelque chose vous semble inhabituel, ne cliquez pas. Tapez `ovhcloud.com` manuellement dans votre navigateur.
+
+**Les raccourcisseurs d'URL sont un signal d'alerte**
+
+Les liens courts tels que `bit.ly/xxx`, `tinyurl.com/xxx` ou `t.co/xxx` masquent la destination réelle. OVHcloud n'utilise **jamais** de raccourcisseurs d'URL dans ses e-mails officiels.
+
+**Sur mobile : appui long au lieu du survol**
+
+Sur un téléphone ou une tablette, vous ne pouvez pas survoler un lien. À la place, effectuez un **appui long** (maintenez le doigt sur le lien sans le relâcher). Un aperçu de l'URL complète apparaîtra. Si le domaine vous est inconnu, n'ouvrez pas le lien.
+
+**En cas de doute, accédez directement au site**
+
+Le réflexe le plus sûr : **ne cliquez jamais sur un lien dans un e-mail pour accéder à votre compte**. Ouvrez plutôt votre navigateur et tapez `www.ovhcloud.com` vous-même, puis connectez-vous depuis le site. Si OVHcloud nécessite une action de votre part, vous verrez la notification dans votre espace client.
 
 ///
 

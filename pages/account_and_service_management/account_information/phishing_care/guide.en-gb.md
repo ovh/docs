@@ -1,5 +1,5 @@
 ---
-title: 'Beware of scams – recognising fraudulent email and phishing'
+title: 'Phishing - How to recognise fraudulent emails'
 excerpt: 'How to recognise a phishing email, and what should you do if you click on a fraudulent link?'
 updated: 2026-03-03
 ---
@@ -49,7 +49,7 @@ Click on the image to enlarge it. Find the details and explanations in the table
 |---|---|---|
 |1 - Sender|Check that the email is sent from an address ending with a domain name (or sub-domain, for example `events.ovhcloud.com`) belonging to OVHcloud (see the list below)|The email sender is very likely to be an address that does not come from OVHcloud.|
 |2 - Subject|Check that your OVHcloud account ID (NIC Handle) **(which usually starts with the initials of the person who created the OVHcloud account)** and/or your account email address appear in the subject line of the message.|Very often, the email will be marked as \[SPAM] and **your NIC Handle will not appear or will be incorrect**.|
-|3 - Link|**Without clicking on it, hover your mouse over the link or button** and you will directly see its destination (just below or at the bottom of your browser). In our example, the link correctly points to an address at https://www.ovh.com/. When you click a link, always check the address in the browser. OVHcloud uses a set of recognisable domain names, usually ovhcloud.com or ovh.com (see list below).|In a phishing email, the link will not be from an official OVHcloud page. **Do not click it.**|
+|3 - Link|**Without clicking on it, hover your mouse over the link or button** and you will directly see its destination (just below or at the bottom of your browser). In our example, the link correctly points to an address at https://www.ovh.com/. When you click a link, always check the address in the browser. OVHcloud uses a set of recognisable domain names, usually ovhcloud.com or ovh.com (see the lists below for legitimate domains and tips to verify suspicious links).|In a phishing email, the link will not be from an official OVHcloud page. **Do not click it.**|
 |4 - Email header and footer|OVHcloud sends emails in both TXT and HTML formats. The header will contain the OVHcloud logo, and the footer will contain legal information related to OVHcloud|The header or footer may contain links that have nothing to do with OVHcloud. **Do not click on these links.**|
 
 /// details | **List of legitimate OVHcloud domain names** (click to display)
@@ -84,6 +84,41 @@ Emails may also be sent from genuine sub-domains such as:
 - events.ovhcloud.com
 - news.soyoustart.com
 - services.kimsufi.com
+
+///
+
+/// details | **Tips to verify a suspicious link** (click to display)
+
+**Read the URL from right to left**
+
+The real domain name is the part just before the first single `/` in the address. Phishing URLs often stack words before the domain to make it look legitimate:
+
+- `https://www.ovhcloud.com/account/login` — the real domain is **ovhcloud.com** ✓
+- `https://ovhcloud.com.login-secure.xyz/account` — the real domain is **login-secure.xyz** ✗
+
+To find the real domain, look at the address bar and read **from the first `/` backwards** — the last two parts before that slash are the actual domain.
+
+**Watch out for lookalike characters**
+
+Attackers sometimes swap letters with visually similar ones to create convincing fake addresses:
+
+- `ovhcIoud.com` (capital I instead of lowercase L)
+- `0vhcloud.com` (zero instead of the letter O)
+- `ovhclould.com` (extra letter added)
+
+If something looks slightly off, do not click. Instead, type `ovhcloud.com` manually in your browser.
+
+**URL shorteners are a red flag**
+
+Short links such as `bit.ly/xxx`, `tinyurl.com/xxx` or `t.co/xxx` hide the real destination. OVHcloud **never** uses URL shorteners in official emails.
+
+**On mobile: long-press instead of hovering**
+
+On a phone or tablet, you cannot hover over a link. Instead, **long-press** (press and hold) the link without lifting your finger. A preview of the full URL will appear. If the domain is unfamiliar, do not open it.
+
+**When in doubt, go directly to the website**
+
+The safest reflex: **never click a link in an email to access your account**. Instead, open your browser and type `www.ovhcloud.com` yourself, then log in from there. If OVHcloud genuinely requires action from you, you will see the notification in your Control Panel.
 
 ///
 
