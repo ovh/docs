@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
 excerpt: "Découvrez la politique de cycle de vie des services VMware on OVHcloud, incluant les phases de maintenance, sunset et fin de support"
-updated: 2026-02-26
+updated: 2026-03-03
 ---
 
 > [!warning]
@@ -91,6 +91,12 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 |             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
 |               Premier (Intel Xeon Gold)               |          2020        |  2027-06-30  |  2027-08-30   | 2027-10-31  |
 |           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               | 2027-10-31  |
+
+### Hôtes Private VMware Cloud Foundation (calcul)
+
+|                   Génération matérielle               | General Availability |    Sales    |     Growth     | Fin de Support |
+|:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
+| AMD Epyc Turin (3AZ)                                  |          2027        |             |                |             |
 
 ## Logiciels intégrés
 
