@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment utiliser les API et obtenir les informations d'identification"
 excerpt: "Découvrez les étapes nécessaires pour configurer Keycloak et le CLI OpenStack afin de permettre l’authentification via Keycloak"
-updated: 2025-11-07
+updated: 2026-03-03
 ---
 
 ## Objectif
@@ -196,3 +196,9 @@ Si ces commandes retournent des résultats, l’intégration **Keycloak ↔ Open
 
 - [Documentation Keycloak – OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc)
 - [Documentation OpenStack Keystone](https://docs.openstack.org/keystone/latest/)
+
+## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
