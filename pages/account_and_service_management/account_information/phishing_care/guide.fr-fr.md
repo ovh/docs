@@ -1,7 +1,7 @@
 ---
 title: 'Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?'
 excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
-updated: 2026-01-06
+updated: 2026-03-03
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-L'hameçonnage (ou *phishing* en anglais) est une technique frauduleuse destinée à leurrer l'internaute pour l'inciter à communiquer des données personnelles (comptes d'accès, mots de passe, etc...) et/ou bancaires en se faisant passer pour un tiers ou un site de confiance.<br>
+L'hameçonnage (ou *phishing* en anglais) est une technique frauduleuse destinée à leurrer l'internaute pour l'inciter à communiquer des données personnelles (comptes d'accès, mots de passe, etc.) et/ou bancaires en se faisant passer pour un tiers ou un site de confiance.<br>
 Dans la pratique, il s'agit souvent de l’envoi d’un e-mail ou d'un SMS vous invitant à cliquer sur un lien. Ce lien vous redirige vers un formulaire qui reprend frauduleusement les couleurs d’une marque et vous invite à entrer vos identifiants personnels.
 
 **Ce guide vous explique comment reconnaître un e-mail ou un SMS de phishing et quelles mesures prendre si vous avez cliqué sur un lien frauduleux.**
@@ -79,7 +79,7 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 - ovh.us
 - robot.ovh.net
 
-Des e-mails peuvent également vous être envoyés de notre part depuis des sous-domaines authentiques tels que :
+Des e-mails peuvent aussi provenir de sous-domaines authentiques :
 
 - events.ovhcloud.com
 - news.soyoustart.com
@@ -97,7 +97,7 @@ Vous trouverez ci-dessous 2 exemples de SMS, le premier est légitime et corresp
 
 #### Comment signaler un e-mail de phishing ?
 
-Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l’identité d’OVHcloud, vous pouvez nous le signaler en enregistrant l’e-mail sous forme de fichier (`.eml` ou `.msg`) et en l’envoyant en **pièce jointe** d’un nouveau message à l’adresse **<fraude@ovh.com>**.
+Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain d'avoir reçu un e-mail de phishing usurpant l’identité d’OVHcloud, vous pouvez nous le signaler en enregistrant l’e-mail sous forme de fichier (`.eml` ou `.msg`) et en l’envoyant en **pièce jointe** d’un nouveau message à l’adresse **<fraude@ovh.com>**.
 
 Ces formats de fichiers conservent les informations techniques cachées (appelées « en-têtes ») dont nos équipes ont besoin pour remonter à la source de la fraude et agir.
 
@@ -201,7 +201,7 @@ Cliquez sur les titres ci-dessous pour afficher les instructions.
 
 /// details | **Si vous avez entré votre numéro de carte bancaire sur un site frauduleux**
 
-Contactez rapidement votre banque afin de faire opposition sur votre moyen de paiement. Indiquez-leur la date et si possible l’heure à laquelle vous avez entré votre numéro de carte bancaire.
+Contactez rapidement votre banque pour faire opposition sur votre moyen de paiement. Indiquez-leur la date et si possible l’heure à laquelle vous avez entré votre numéro de carte bancaire.
 
 **Votre banque est la seule à pouvoir annuler les transactions frauduleuses qui pourraient avoir été effectuées à votre insu.**
 
@@ -209,7 +209,7 @@ Contactez rapidement votre banque afin de faire opposition sur votre moyen de pa
 
 /// details | **Si vous avez entré votre mot de passe OVHcloud sur un site frauduleux**
 
-Connectez-vous sur votre [espace client OVHcloud](/links/manager) et modifiez immédiatement votre mot de passe.<br>
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et modifiez immédiatement votre mot de passe.<br>
 
 Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
 

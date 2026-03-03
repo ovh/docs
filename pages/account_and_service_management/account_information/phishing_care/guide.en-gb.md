@@ -1,7 +1,7 @@
 ---
 title: 'Beware of scams – recognising fraudulent email and phishing'
 excerpt: 'How to recognise a phishing email, and what should you do if you click on a fraudulent link?'
-updated: 2026-01-06
+updated: 2026-03-03
 ---
 
 <style>
@@ -20,37 +20,37 @@ details[open]>summary::before {
 
 ## Objective
 
-Phishing is a fraudulent technique designed to deceive internet users into providing personal data (access accounts, passwords, etc.) and/or banking details by pretending to be a trusted third party or site.<br>
-In practice, this is often done by sending an email asking you to click on a link. This link will redirect you to a form that fraudulently uses the colors of a brand and asks you to enter your personal details.
+Phishing is a fraudulent technique designed to deceive Internet users into providing personal data (access accounts, passwords, etc.) and/or banking details by pretending to be a trusted third party or site.<br>
+In practice, this is often done by sending an email asking you to click on a link. This link will redirect you to a form that fraudulently uses the colours of a brand and asks you to enter your personal details.
 
-**This guide will show you how to recognise a phishing email, and what to do if you click on a fraudulent link.**
+**This guide explains how to recognise a phishing email, and what to do if you click on a fraudulent link.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/RED6EuCLFjk?si=9ppewOVm_bXymThM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Instructions
 
-### I have received an e-mail or SMS message in the name of OVHcloud, how do I know if it is legitimate?
+### I have received an email or SMS message in the name of OVHcloud, how do I know if it is legitimate?
 
-#### Identifying a phishing e-mail
+#### Identifying a phishing email
 
-First, check whether the e-mail you received is also visible in your [OVHcloud Control Panel](/links/manager). Log in, click on your name in the top right corner and then on `Service emails`{.action} (or `My messages`{.action}). You will find copies of all official e-mails sent by OVHcloud there.
+First, check whether the email you received is also visible in your [OVHcloud Control Panel](/links/manager). Log in, click on your name in the top right corner and then on `Service emails`{.action} (or `My messages`{.action}). You will find copies of all official emails sent by OVHcloud there.
 
-In addition, here are some elements to help you visually distinguish a genuine OVHcloud e-mail from a phishing attempt.
+Here are some tips to visually distinguish a genuine OVHcloud email from a phishing attempt.
 
 Click on the image to enlarge it. Find the details and explanations in the table below.
 
-![Difference between an OVHcloud e-mail and a phishing e-mail](images/EN-legit-and-phishing-email.png){.thumbnail}
+![Difference between an OVHcloud email and a phishing email](images/EN-legit-and-phishing-email.png){.thumbnail}
 
 > [!primary]
 > 
 > The numbers in the table correspond to those visible in the image above.
 
-|Number - Description|Legitimate OVHcloud e-mail|Fraudulent phishing e-mail|
+|Number - Description|Legitimate OVHcloud email|Fraudulent phishing email|
 |---|---|---|
-|1 - Sender|Check that the e-mail is sent from an address ending with a domain name (or sub-domain, for example `events.ovhcloud.com`) belonging to OVHcloud (see the list below)|The e-mail sender is very likely to be an address that does not come from OVHcloud.|
-|2 - Subject|Check that your OVHcloud account ID (NIC Handle) **(which usually starts with the initials of the person who created the OVHcloud account)** and/or your account e-mail address appear in the subject line of the message.|Very often, the e-mail will be marked as \[SPAM] and **your NIC Handle will not appear or will be incorrect**.|
-|3 - Link|**Without clicking on it, hover your mouse over the link or button** and you will directly see its destination (just below or at the bottom of your browser). In our example, the link correctly points to an address at https://www.ovh.com/. When you click a link, always check the address in the browser. OVHcloud uses a set of recognisable domain names, usually ovhcloud.com or ovh.com (see list below).|In a phishing e-mail, the link will not be from an official OVHcloud page. **Do not click it.**|
-|4 - E-mail header and footer|OVHcloud sends e-mails in both TXT and HTML formats. The header will contain the OVHcloud logo, and the footer will contain legal information related to OVHcloud|The header or footer may contain links that have nothing to do with OVHcloud. **Do not click on these links.**|
+|1 - Sender|Check that the email is sent from an address ending with a domain name (or sub-domain, for example `events.ovhcloud.com`) belonging to OVHcloud (see the list below)|The email sender is very likely to be an address that does not come from OVHcloud.|
+|2 - Subject|Check that your OVHcloud account ID (NIC Handle) **(which usually starts with the initials of the person who created the OVHcloud account)** and/or your account email address appear in the subject line of the message.|Very often, the email will be marked as \[SPAM] and **your NIC Handle will not appear or will be incorrect**.|
+|3 - Link|**Without clicking on it, hover your mouse over the link or button** and you will directly see its destination (just below or at the bottom of your browser). In our example, the link correctly points to an address at https://www.ovh.com/. When you click a link, always check the address in the browser. OVHcloud uses a set of recognisable domain names, usually ovhcloud.com or ovh.com (see list below).|In a phishing email, the link will not be from an official OVHcloud page. **Do not click it.**|
+|4 - Email header and footer|OVHcloud sends emails in both TXT and HTML formats. The header will contain the OVHcloud logo, and the footer will contain legal information related to OVHcloud|The header or footer may contain links that have nothing to do with OVHcloud. **Do not click on these links.**|
 
 /// details | **List of legitimate OVHcloud domain names** (click to display)
 
@@ -91,25 +91,25 @@ Emails may also be sent from genuine sub-domains such as:
 
 OVHcloud will **never** send you a link via SMS. The SMS messages we send are usually related to [two-factor authentication in your OVHcloud Control Panel](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-You will find below 2 examples of SMS messages, the first one is legitimate and corresponds to two-factor authentication. The second SMS is fraudulent.
+Below are 2 examples of SMS messages, the first one is legitimate and corresponds to two-factor authentication. The second SMS is fraudulent.
 
 ![Fraudulent SMS](images/sms-phishing.png){.thumbnail}
 
-#### How to report a phishing e-mail?
+#### How to report a phishing email?
 
-After performing the checks outlined above, if you are certain that you have received a phishing e-mail impersonating OVHcloud, you can report it by saving the e-mail as a file (`.eml` or `.msg`) and sending it as an **attachment** in a new message to **<fraude@ovh.com>**.
+After performing the checks outlined above, if you are certain that you have received a phishing email impersonating OVHcloud, you can report it by saving the email as a file (`.eml` or `.msg`) and sending it as an **attachment** in a new message to **<fraude@ovh.com>**.
 
 These file formats preserve the hidden technical information (called "headers") that our teams need to trace the source of the fraud and take action against it.
 
 > [!warning]
 >
-> **Do not forward the phishing e-mail directly.** Forwarding it means your own mailbox sends out the fraudulent content, which may cause your e-mail address to be flagged as spam. Instead, save the e-mail as a file and attach it to a **new** message.
+> **Do not forward the phishing email directly.** Forwarding it means your own mailbox sends out the fraudulent content, which may cause your email address to be flagged as spam. Instead, save the email as a file and attach it to a **new** message.
 
-**How to save an e-mail as a file:**
+**How to save an email as a file:**
 
-Click on the heading that matches the e-mail application you use.
+Click on the heading that matches the email application you use.
 
-**E-mail software (desktop)**
+**Email software (desktop)**
 
 /// details | **Outlook for Windows**
 
@@ -119,16 +119,16 @@ There are two versions of Outlook for Windows: **classic Outlook** and **new Out
 
 **Classic Outlook:**
 
-1. Select the phishing e-mail in your inbox (do not open it).
+1. Select the phishing email in your inbox (do not open it).
 2. Click `File`{.action} in the menu bar, then `Save As`{.action}.
 3. In the "Save as type" dropdown, select **Outlook Message Format - Unicode (.msg)**.
 4. Choose a location on your computer (e.g. your Desktop) and click `Save`{.action}.
 
-You can also **drag and drop** the e-mail from your inbox directly onto your Desktop. This will create a `.msg` file that you can attach to your report.
+You can also **drag and drop** the email from your inbox directly onto your Desktop. This will create a `.msg` file that you can attach to your report.
 
 **New Outlook:**
 
-1. In the message list, **right-click** the phishing e-mail.
+1. In the message list, **right-click** the phishing email.
 2. Select `Save as`{.action}, then choose `Save as EML`{.action}.
 3. Choose a location on your computer and click `Save`{.action}.
 
@@ -136,15 +136,15 @@ You can also **drag and drop** the e-mail from your inbox directly onto your Des
 
 /// details | **Thunderbird**
 
-1. Right-click the phishing e-mail in your inbox.
+1. Right-click the phishing email in your inbox.
 2. Select `Save As`{.action}.
-3. The e-mail will be saved as a `.eml` file. Choose a location on your computer and click `Save`{.action}.
+3. The email will be saved as a `.eml` file. Choose a location on your computer and click `Save`{.action}.
 
 ///
 
 /// details | **Apple Mail (macOS)**
 
-1. Select the phishing e-mail in your inbox.
+1. Select the phishing email in your inbox.
 2. In the menu bar, click `File`{.action} > `Save As`{.action}.
 3. Choose the **Raw Message Source** format, select a location on your computer and click `Save`{.action}.
 
@@ -154,8 +154,8 @@ You can also **drag and drop** the e-mail from your inbox directly onto your Des
 
 /// details | **OWA - Outlook Web Application**
 
-1. Open the phishing e-mail.
-2. Click the **three horizontal dots** (⋯) in the top-right corner of the e-mail.
+1. Open the phishing email.
+2. Click the **three horizontal dots** (⋯) in the top-right corner of the email.
 3. Select `View`{.action} > `View message source`{.action}.
 4. Select all the text (`Ctrl+A` or `Cmd+A`), copy it (`Ctrl+C` or `Cmd+C`), paste it into a plain text editor (e.g. Notepad or TextEdit), and save the file with the extension `.eml`.
 
@@ -163,7 +163,7 @@ You can also **drag and drop** the e-mail from your inbox directly onto your Des
 
 /// details | **Roundcube (OVHcloud Webmail)**
 
-1. Select the phishing e-mail in your inbox.
+1. Select the phishing email in your inbox.
 2. Click `More`{.action} (or the **⋮** icon) in the toolbar.
 3. Select `Download (.eml)`{.action}.
 4. The file will be saved to your Downloads folder.
@@ -172,23 +172,23 @@ You can also **drag and drop** the e-mail from your inbox directly onto your Des
 
 /// details | **Zimbra (OVHcloud Webmail)**
 
-1. Select the phishing e-mail in your inbox.
+1. Select the phishing email in your inbox.
 2. Click `More`{.action} in the toolbar.
-3. Select `Show Original`{.action}. The raw content of the e-mail will open in a new browser tab.
+3. Select `Show Original`{.action}. The raw content of the email will open in a new browser tab.
 4. In this new tab, use `Ctrl+S` (or `Cmd+S` on macOS) to save the page. Save the file with the extension `.eml` (if your browser suggests `.txt`, rename the file after saving).
 
 ///
 
 /// details | **Gmail**
 
-1. Open the phishing e-mail.
-2. Click the **three vertical dots** (⋮) in the top-right corner of the e-mail.
+1. Open the phishing email.
+2. Click the **three vertical dots** (⋮) in the top-right corner of the email.
 3. Select `Download message`{.action}.
 4. A `.eml` file will be saved to your Downloads folder.
 
 ///
 
-Once you have saved the file, create a **new e-mail** to **<fraude@ovh.com>** and attach it.
+Once you have saved the file, create a **new email** to **<fraude@ovh.com>** and attach it.
 
 > [!primary]
 >
