@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
 excerpt: "Find out how to rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
-updated: 2022-12-22
+updated: 2026-02-01
 ---
 
   
@@ -88,15 +88,15 @@ This URL rewrite can help SEO your website.
 
 ### Redirect requests to a particular folder without displaying the folder
 
-When you use an OVHcloud shared hosting plan, your domain name (for example **domain.tld**) is declared as a `Multisite` to display the content of a target folder also called `root folder`. You can customise the name of this `root folder`.
+When using an OVHcloud shared hosting plan, your domain name (e.g., **domain.tld**) is declared on a website present on your web hosting. This is to display the content of a target folder also known as the `root folder`. This is the folder that contains the files of your website. You can customise the name of this `root folder` when you add the website to your hosting via the OVHcloud Control Panel.
 
-Please refer to our guide on [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) if you would like more information on this subject.
+Refer to our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)" if you want to find out more about this topic.
 
 Some users do not place their websites directly in the `root folder`, but inside a subfolder (for example: **MyWebsite**) inside this `root folder`.
 
 In this case, the URL to access the site will be as follows: **http://domain.tld/MyWebsite**.
 
-If your website is not located directly in the `root folder` declared for your domain name in `Multisites`, and you do not want to display the folder name in your website’s URL, edit the ".htaccess" file located in the root directory of your website. 
+If the files of your website are not directly in the `root folder` declared for your website in the OVHcloud Control Panel and you do not want to display the folder name in the URL of your website, edit the ".htaccess" file located at the root of the directory containing your website.
 
 Place the following code inside (replacing the values **domain.tld** with your domain name, and **MyWebsite** with the name of your own folder):
 

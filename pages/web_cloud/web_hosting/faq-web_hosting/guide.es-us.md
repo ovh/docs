@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2025-11-10
+updated: 2026-02-01
 ---
 
 <style>
@@ -29,7 +29,7 @@ Siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 
-Desde ahí podrá gestionar sus certificados SSL, la versión PHP aplicada a su alojamiento web, la opción CDN, los posibles multisitios, las bases de datos, etc.
+Podrá gestionar allí sus certificados SSL, la versión PHP aplicada a su alojamiento web, la opción CDN, sus sitios web, las bases de datos, etc.
 
 > [!success]
 >
@@ -164,9 +164,9 @@ Si su [alojamiento web](/links/web/hosting) es compatible, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-3. En la nueva página, haga clic en la pestaña `Multisitio`{.action}.
+3. En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 
-Desde ahí podrá gestionar los dominios o subdominios declarados en multisitio en su alojamiento web.
+Podrá gestionar allí los nombres de dominio/subdominios declarados en los sitios web presentes en su alojamiento web.
 
 > [!success]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Ziel 
@@ -24,17 +24,17 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite "[Wie erstelle ich eine Website?](/links/web/hosting-website)" vorgestellt werden. Beachten Sie dazu auch die Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite „[Wie erstelle ich eine Website?](/links/web/hosting-website) vorgestellt werden. Beachten Sie dazu auch die Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
 - **Website selbst erstellen**: Hier sind sowohl technische als auch Programmierkenntnisse erforderlich. Aber Sie haben auch die größte Gestaltungsfreiheit für eine Website ganz nach Ihren Vorstellungen.
 
-- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, haben wir die folgende Anleitung erstellt: [„Migration Ihrer Website und E-Mails zu OVHcloud“](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, empfehlen wir Ihnen, vorab diese Dokumentation zu konsultieren: „[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“.
 
 Nachdem Sie eine der Möglichkeiten ausgewählt haben, ergeben sich die folgenden zwei Optionen:
 
-- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
 - **Sie möchten keine 1-Klick-Module verwenden**: Stellen Sie Ihre Website manuell auf Ihrem Hosting online. In dieser Anleitung geben wir Ihnen einige Informationen, die Ihnen hierbei helfen. Sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
  
@@ -102,11 +102,21 @@ Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherpl
 
 #### 2.3. Dateien auf Ihren Speicherplatz hochladen
 
-Sobald Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie lediglich noch die Dateien Ihres Webs auf den Server laden. **Wir empfehlen Ihnen, besonders aufmerksam darauf zu achten, in welchem Verzeichnis Sie die Dateien hochladen.** In einem klassischen Szenario muss die Website in den Ordner "www" geladen werden. Falls Sie jedoch Ihren Webhosting-Service für mehrere Webseiten nutzen, haben Sie wahrscheinlich mehrere Websites deklariert.
+> [success]
+>
+> Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) noch keinen Website-Name auf Ihrem Webhosting deklariert haben, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) noch keinen Domainnamen mit einer Website auf Ihrem Webhosting verknüpft haben, konsultieren Sie [dieses Handbuch](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Multisite`{.action}, um zu überprüfen, in welchem Ordner die neue Website veröffentlicht wird. Achten Sie in der angezeigten Tabelle auf das für die gewünschte Domain angegebene `Wurzelverzeichnis`{.action}. Plazieren Sie die Dateien in diesem Verzeichnis.
+Nachdem Sie sich bei Ihrem Speicherbereich angemeldet haben, müssen Sie lediglich noch die Dateien Ihrer Website hochladen. **Wir möchten Sie besonders darauf hinweisen, auf welchen Ordner Sie die Dateien hochladen**, insbesondere wenn Sie mehrere Websites auf Ihrem Webhosting deklariert haben.
 
-Es kann sein, dass Sie auf Ihrem Speicherplatz eine Datei mit dem Namen „index.html“ finden. Diese wurde gegebenenfalls bei der Installation Ihres Hostings von OVHcloud erstellt, um für Ihre Domain zunächst eine Standardseite anzuzeigen. Vergessen Sie bitte nicht, diese Datei zu löschen, wenn Sie Ihre Dateien online stellen.
+Um den Ordner zu prüfen, in den die Website veröffentlicht werden muss, navigieren Sie zum Tab `Meine Seiten`{.action} in Ihrem OVHcloud Kundencenter. Im angezeigten Tabellenansicht für die gewünschte Website, prüfen Sie den `Wurzelverzeichnis`{.action}, der angezeigt wird. Veröffentlichen Sie anschließend die Dateien der Website in diesem Ordner.
+
+Es kann vorkommen, dass Sie auf Ihrem Speicherbereich eine Datei namens „index.html“ finden. Diese kann von OVHcloud bei der Installation Ihres Webhostings erstellt worden sein, um eine Standardseite auf Ihrer Website anzuzeigen. Falls dies der Fall ist, vergessen Sie nicht, sie zu löschen, wenn Sie Ihre Dateien hochladen.
+
+> [!primary]
+>
+> Eine „index.php“-Datei hat immer Vorrang vor einer „index.html“-Datei. Wenn beide vorhanden sind, wird daher nur „index.php“ aufgerufen.
 
 ![website installation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
@@ -115,15 +125,14 @@ Es kann sein, dass Sie auf Ihrem Speicherplatz eine Datei mit dem Namen „index
 > [!primary]
 >
 > Dieser Schritt ist optional, wenn Ihre Website nicht mit einer Datenbank verbunden werden muss.
->
 
-Heute verwenden praktisch alle Content Management Systeme (CMS) wie WordPress oder Joomla! eine Datenbank, um dynamische Elemente einer Website wie zum Beispiel Kommentare oder Artikel zu speichern. Die Websitedateien und die Datenbank müssen unbedingt miteinander verbunden werden, damit die Seite korrekt funktioniert. Die Verbindung wird mithilfe einer Konfigurationsdatei hergestellt, die Informationen zur Datenbank enthält.
+Heute verwenden die meisten Content Management Systeme (CMS), wie z. B. WordPress oder Joomla!, eine Datenbank, um dynamische Elemente wie Kommentare oder Artikel zu speichern. Eine Verbindung zwischen den Dateien der Website und der Datenbank ist daher unerlässlich, damit die Website ordnungsgemäß funktioniert. Dazu gibt es eine Konfigurationsdatei, die die Informationen der Datenbank enthält, um diese Verbindung herzustellen.
 
-Je nach Website wird die Verbindung manuell eingerichtet oder über ein Interface der Website hergestellt. Hierzu werden verschiedene Zwischenschritte durchgeführt, von denen einige optional sein können.
+Je nach verwendetem Website-Typ muss dieser Link manuell erstellt werden oder über eine von der Website selbst generierte Oberfläche. Dieser Vorgang besteht aus mehreren Unterphasen, von denen einige optional sein können.
 
 #### 3.1. Bestehende Datenbank übertragen 
 
-Wenn Sie eine bereits bestehende Website migrieren, erhalten Sie die Datenbankdateien bei Ihrem bisherigen Hosting-Anbieter. Wenn Sie eine neue Website erstellen, können Sie direkt zum nächsten Schritt übergehen.
+Wenn Sie gerade eine Website migrieren, rufen Sie die vorhandene Datenbank bei Ihrem alten Hoster ab. Wenn es sich um eine neue Website handelt, fahren Sie mit dem nächsten Schritt fort.
 
 #### 3.2. Datenbank bei OVHcloud erstellen 
 
@@ -155,11 +164,11 @@ Nachdem Sie die Dateien auf den Speicherplatz hochgeladen und die Datenbank mit 
 
 Ist das nicht der Fall, empfehlen wir Ihnen Folgendes:
 
-- **Überprüfen Sie die Konfiguration der Domain**: Eine fehlerhafte DNS-Konfiguration Ihrer Domain kann dazu führen, dass die gerade auf Ihr OVHcloud Webhosting hochgeladene Website nicht korrekt angezeigt wird. Vergewissern Sie sich, dass der A-Eintrag in der DNS-Zone Ihrer Domain mit der IP-Adresse Ihres OVHcloud Webhostings übereinstimmt.
+- **Prüfung der Domain-Konfiguration**: Es kann sein, dass die DNS-Konfiguration der Domain nicht erlaubt, dass diese die Website anzeigt, die Sie soeben auf Ihrem OVHcloud Webhosting heruntergeladen haben. Stellen Sie sicher, dass der aktuell in der DNS-Zone Ihrer Domain konfigurierte A-Eintrag tatsächlich der IP-Adresse Ihres OVHcloud Webhostings entspricht.
 
-- **Stellen Sie sicher, dass keine Dateien fehlen**: Es kann sein, dass Sie beim Hochladen der Dateien in Ihr OVHcloud Webhosting einige Dateien vergessen haben oder ein Fehler aufgetreten ist. Gehen Sie bei entsprechenden Änderungen bitte vorsichtig vor, um die Verbindung zwischen der Website und der Datenbank nicht zu unterbrechen (falls Ihre Seite eine Datenbank nutzt).
+- **Stellen Sie sicher, dass keine Dateien fehlen**: Es kann vorkommen, dass Sie beim Hochladen der Dateien auf Ihr OVHcloud Webhosting Dateien vergessen haben oder ein Fehler aufgetreten ist. Seien Sie dennoch vorsichtig bei Ihren Handlungen, um den Link zwischen den Dateien der Website und der Datenbank (sofern diese verwendet wird) nicht zu zerstören.
 
-- **Überprüfen Sie den Code der Website auf Fehler**: Diese Überprüfung ist zwar technisch anspruchsvoll, aber es kann sein, dass die hochgeladenen Dateien Fehler enthalten und der Server die Website deshalb nicht korrekt oder überhaupt nicht anzeigen kann.
+- **Überprüfen Sie, ob der Website-Code Fehler enthält**: Diese Prüfung ist vermutlich die technischste. Es kann sein, dass die von Ihnen heruntergeladenen Dateien Fehler enthalten und der Server Ihre Website nicht ordnungsgemäß, oder sogar gar nicht, anzeigt.
 
 Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes (zum Beispiel des installierten CMS) zu kontaktieren.
 

@@ -1,7 +1,7 @@
 ---
 title: "Cómo empezar correctamente con su alojamiento web"
 excerpt: 'Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web'
-updated: 2025-04-07
+updated: 2026-02-01
 ---
 
 <style>
@@ -37,21 +37,22 @@ details[open]>summary::before {
 
 ## Procedimiento
 
-### 1 - Asociar su dominio a su alojamiento web <a name="part-1"></a>
+### 1 - Asociar su nombre de dominio a un sitio web en su alojamiento web <a name="part-1"></a>
 
 > [!success]
 >
 > Si ha contratado su dominio y su alojamiento web en un mismo pedido, estos dos servicios ya están asociados. Acceda directamente a la [Parte 2](#part-2) de esta guía.
 
 1. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
-2. Seleccione la pestaña `Multisitio`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
-3. En la nueva página, haga clic en el botón `Acciones`{.action} situado sobre la tabla que muestra los dominios ya declarados en el alojamiento web. Haga clic en `Añadir un dominio o subdominio`{.action}.
-4. En la ventana que se abre, marque y complete los elementos solicitados hasta su validación.
+2. Seleccione la pestaña `Mis sitios`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
+3. En la tabla que aparece, haga clic en el botón `⁝`{.action} situado a la derecha del sitio web creado automáticamente al crear su alojamiento web, y luego en `Agregar un dominio`{.action}.
+4. En la nueva página que se abre, marque y complete los elementos solicitados hasta su validación.
 
 /// details | Haga clic aquí para obtener más información.
 
 Consulte nuestras guías detalladas:
 
+- [¿Cómo asociar un nombre de dominio a un sitio web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Web hosting - Modificar un dominio ya asociado a un alojamiento](/pages/web_cloud/web_hosting/multisites_modify_domain).
 

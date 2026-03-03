@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2025-11-10
+updated: 2026-02-01
 ---
 
 <style>
@@ -29,7 +29,7 @@ Führen Sie die folgenden Schritte aus:
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
-Dort können Sie Ihre SSL Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN Option, Multisites, Datenbanken, etc. verwalten.
+Sie können dort Ihre SSL-Zertifikate, die auf Ihrem Webhosting angewendete PHP Version, die CDN-Option, Ihre Webseiten, Datenbanken, etc. verwalten.
 
 > [!success]
 >
@@ -164,9 +164,9 @@ Wenn Ihr [Webhosting](/links/web/hosting) kompatibel ist, folgen Sie diesen Schr
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-3. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}.
+3. Klicken Sie auf der angezeigten Seite auf den Tab `Meine Seiten`{.action}.
 
-Dort können Sie die auf Ihrem Webhosting als Multisite deklarierten Domains/Subdomains verwalten.
+Dort können Sie die für Ihre Webseiten Ihres Webhosting deklarierten Domains/Subdomains verwalten.
 
 > [!success]
 >

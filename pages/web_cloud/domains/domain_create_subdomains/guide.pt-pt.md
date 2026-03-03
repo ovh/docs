@@ -173,11 +173,11 @@ Para serviços que não sejam indicados, consulte a documentação do serviço. 
 
 #### Casos 1: Ver um website presente no meu alojamento web da OVHcloud com um subdomínio <a name="link-subdomain-case-1"></a>
 
-Tal como para um nome de domínio e para autorizar um subdomínio a apresentar o conteúdo de uma pasta *de destino* presente num alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, selecione o serviço em causa onde se encontra o seu website e escolha o separador `Multisite`{.action}.
+Tal como para um nome de domínio, para autorizar um subdomínio a apresentar o conteúdo de uma pasta "destino" declarada para um site presente num alojamento web, inicie sessão no [Área de cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna à esquerda, selecione o alojamento em questão onde se encontra o seu site e, em seguida, escolha o separador `Meus sites`{.action}.
 
-É aqui que autoriza o acesso do seu subdomínio ao seu alojamento web onde se encontra o seu website.
+É aqui que autoriza o acesso do seu subdomínio ao seu site presente no seu alojamento web.
 
-Para mais informações sobre a configuração de um nome de domínio ou subdomínio num alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Quer se trate de um nome de domínio ou de um subdomínio, o procedimento é o mesmo.
+Para mais detalhes sobre a configuração de um domínio ou subdomínio num alojamento web, consulte o nosso guia "[Como associar um nome de domínio a um site web existente ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Trata-se de um nome de domínio ou de um subdomínio, o procedimento é o mesmo.
 
 > [!warning]
 >

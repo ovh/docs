@@ -1,7 +1,7 @@
 ---
 title: "Visualizzare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
 excerpt: "Scopri come consultare e gestire tutti i siti Web dallo Spazio Cliente OVHcloud"
-updated: 2025-05-27
+updated: 2026-02-01
 ---
 
 ## Obiettivo
@@ -25,9 +25,9 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.a
 
 #### Dominio
 
-Mostra il dominio principale del sito Web, così come configurato nella scheda Multisito del tuo hosting.
+Mostra il nome di dominio principale del sito web, come configurato nella scheda "I miei siti" del tuo hosting.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 #### Diagnostica
 
@@ -37,15 +37,15 @@ Informa se il tuo dominio punta correttamente verso l’hosting Web associato. P
 - `A/AAAA` giallo: i record A e/o AAAA del tuo dominio puntano verso un indirizzo IP diverso da quello del tuo hosting Web.
 - `A/AAAA` grigio: Nessun record A o AAAA è configurato, il dominio non punta verso alcun indirizzo IP.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
-Per maggiori informazioni sulla diagnostica, consulta la sezione "Diagnostica i tuoi domini" della nostra guida "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Per ulteriori dettagli sulle diagnosi, consulta la nostra guida "[Come verificare l'associazione "nome di dominio / sito web"?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Cartella di root
 
 Indica la directory dell’hosting (ad esempio, www, app, public_html, ecc.) verso cui punta il dominio.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 #### Nome del servizio
 
@@ -74,13 +74,13 @@ Visualizza lo stato dell'integrazione Git sul sito Web:
 - In corso: Il repository Git è in corso di configurazione.
 - Errore: Viene rilevato un errore nella configurazione del repository Git.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 #### Log separati
 
 Indica se nel dominio selezionato è attivo uno spazio di log.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 Per maggiori informazioni, consulta la nostra pagina "[Segui e analizza il traffico dei tuoi siti Web](/links/web/hosting-traffic-analysis)".
 
@@ -97,7 +97,7 @@ Mostra lo stato della CDN (**C**ontent **D**elivery **N**etwork) sul dominio:
 - Inattivo: la CDN è disattivata.
 - N/D: Non applicabile (offerta non compatibile).
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 La CDN permette di mettere in cache elementi statici del sito Web, come le immagini. Per maggiori informazioni, consulta la nostra pagina "[Shared CDN](/links/web/hosting-options-cdn)".
 
@@ -105,7 +105,7 @@ La CDN permette di mettere in cache elementi statici del sito Web, come le immag
 
 Indica se l'SSL è attivo o meno sul dominio in questione.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 L'SSL ti permette di usufruire di una connessione sicura (**https://**) sul dominio selezionato. Per maggiori informazioni, consulta la nostra pagina "[Proteggi efficacemente il tuo sito web OVHcloud con un certificato SSL Premium](/links/web/hosting-options-ssl)".
 
@@ -113,7 +113,7 @@ L'SSL ti permette di usufruire di una connessione sicura (**https://**) sul domi
 
 Indica se il firewall dell'applicazione è attivato o meno sul dominio.
 
-Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
+Cliccando sul pulsante sarai reindirizzato alla scheda `I miei siti`{.action} dell’hosting interessato.
 
 Per maggiori informazioni, consulta la nostra pagina "[Opzioni indispensabili per l’hosting Web](/links/web/hosting-options)".
 

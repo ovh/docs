@@ -1,7 +1,7 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
 excerpt: "Find out how to change the domain name of an existing website"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Objective
@@ -37,7 +37,7 @@ To change the access domain name for your website, there are several steps to fo
 
 ### Step 1: Declare the new domain on your hosting <a name="step1"></a>
 
-Declare your new domain name using our documentation on [adding a website to your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite). Also declare its `www` subdomain to display your website as `www.NewDomain.tld` as well as `NewDomain.tld`.
+Declare your new domain name by following our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Also declare its `www` subdomain to display your website as `www.NewDomain.tld` as well as `NewDomain.tld`.
 
 There are several conditions to meet for this part:
 
@@ -59,7 +59,7 @@ There are several conditions to meet for this part:
 
 If all actions have been correctly performed, the declarations of your domain names should be strictly identical **unless you are using a paid SSL certificate of type *Sectigo DV*, *Sectigo EV*, or *custom***.
 
-![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,7 +114,7 @@ If you used a service provider to create your website, contact them so that they
 
 ### Step 3: Remove the old domain name <a name="step3"></a>
 
-To avoid "duplicate content" once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name on your website using the guide on managing [websites on your web hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+To avoid "duplicated content" and once your new domain name is fully operational with your website, you will need to remove the declaration of your old domain name from your website using the guide "[How to detach a domain name from an existing website?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)".
 
 > [!warning]
 >

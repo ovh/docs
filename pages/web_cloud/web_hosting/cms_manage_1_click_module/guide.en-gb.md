@@ -1,7 +1,7 @@
 ---
 title: "How to manage your 1-click module"
 excerpt: "Find out how to manage your 1-click module in the OVHcloud Control Panel"
-updated: 2024-11-15
+updated: 2026-02-01
 ---
 
 ## Objective
@@ -74,9 +74,9 @@ To delete your 1-click module, you must first identify its database with **certa
 
 If you have only one database in this part of your Control Panel and you do not have a [Web Cloud Databases](/links/web/databases) offer, you can consider this to be your website's database.
 
-Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
+Otherwise, go to the `My sites`{.action} tab. Note the name of the `Root folder` displayed on the line for the relevant website: this is the directory containing the files that make up your 1-click module on the FTP server.
 
-Then log on to the [FTP space](/pages/web_cloud/web_hosting/ftp_connection) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
+Then log on to the [FTP space](/pages/web_cloud/web_hosting/ftp_connection) of your hosting plan. Open the `Root folder` found earlier in the `My sites`{.action} tab and browse to the configuration file for your module:
 
 - WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).

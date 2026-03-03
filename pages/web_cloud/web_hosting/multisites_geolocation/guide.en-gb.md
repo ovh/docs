@@ -1,7 +1,7 @@
 ---
 title: "How do I geolocate a website in a specific country?"
 excerpt: "Find out how to locate your website using the geolocated IP addresses available on OVHcloud shared hosting plans"
-updated: 2025-08-22
+updated: 2026-02-01
 ---
 
 ## Objective
@@ -42,19 +42,21 @@ To use the IP geolocation option, click on the tabs below to view each of the **
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 3**
->>
->> On the page that pops up, click on the `Multisite`{.action} tab.
->>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
->>
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
 > **Step 4**
->>
->> On the new page, a table will appear containing your associated domain names.
->>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
->>
->> Click the `...`{.action} button to the right of your domain name in the table. Finally, click `Modify domain`{.action}.
->>
+>> 
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
+>> 
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>> 
+>> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify domain`{.action}.
+>> 
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> 
 > **Step 5**
 >>
 >> In the window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.

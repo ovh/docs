@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Schnellstart-Anleitung"
 excerpt: "Erfahren Sie hier, wie Sie auf einem Webhosting eine neue Website mithilfe eines 1-Klick-Moduls online stellen und personalisierte E-Mail-Adressen mit Ihrem Domainnamen verwenden"
-updated: 2025-04-07
+updated: 2026-02-01
 ---
 
 <style>
@@ -37,21 +37,22 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 
 ## In der praktischen Anwendung
 
-### 1 - Verbinden Sie Ihre Domain mit Ihrem Webhosting <a name="part-1"></a>
+### 1 - Ihren Domainnamen einem Website auf Ihrem Webhosting zuordnen <a name="part-1"></a>
 
 > [!success]
 >
 > Wenn Sie Ihren Domainnamen und Ihr Webhosting zusammen abonniert haben, sind diese beiden Dienste bereits verbunden. Fahren Sie mit [Teil 2](#part-2) dieser Anleitung fort.
 
 1. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Wählen Sie den Tab `Multisite`{.action}.
-3. Klicken Sie auf den Button `Aktionen`{.action} oberhalb der Tabelle, in der die bereits für das Webhosting deklarierten Domainnamen aufgeführt sind. Klicken Sie dann auf `Domain oder Subdomain hinzufügen`{.action}.
-4. Aktivieren Sie im angezeigten Fenster die angeforderten Elemente, und geben Sie sie ein, bis sie validiert wurden.
+2. Wählen Sie den Tab `Meine Seiten`{.action}.
+3. Klicken Sie im angezeigten Tabelle auf die Schaltfläche `⁝`{.action} rechts neben der automatisch erstellten Website bei Erstellung Ihres Webhostings, und dann auf `Ein Domain hinzufügen`{.action}.
+4. Auf der neuen Seite, die sich öffnet, aktivieren Sie und füllen Sie die geforderten Elemente aus, bis sie validiert sind.
 
 /// details | Klicken Sie hier für weitere Informationen.
 
 Lesen Sie unsere detaillierten Anleitungen:
 
+- [Wie ordne ich einen Domainnamen einer bestehenden Website zu ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Webhosting - Mehrere Websites auf einem Webhosting hosten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Webhosting - Bereits zugewiesenen Domainnamen bearbeiten](/pages/web_cloud/web_hosting/multisites_modify_domain)
 

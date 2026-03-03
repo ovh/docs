@@ -1,7 +1,7 @@
 ---
 title: "FAQ Hosting web"
 excerpt: "Rivivi le principali domande sugli hosting Web OVHcloud"
-updated: 2025-11-10
+updated: 2026-02-01
 ---
 
 <style>
@@ -29,7 +29,7 @@ Segui questi passaggi:
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 
-È possibile gestire i certificati SSL, la versione PHP applicata all’hosting Web, l’opzione CDN, gli eventuali multisiti, i database, ecc.
+Potrai gestire i tuoi certificati SSL, la versione PHP applicata al tuo hosting Web, l'opzione CDN, i tuoi siti web, i database, ecc.
 
 > [!success]
 >
@@ -164,9 +164,9 @@ Se il tuo [hosting Web](/links/web/hosting) è compatibile, segui questi step:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
-3. Clicca sulla scheda `Multisito`{.action}.
+3. Clicca sulla scheda `I miei siti`{.action}.
 
-Lì è possibile gestire i domini/sottodomini dichiarati in multisito sul proprio hosting Web.
+Potrai gestire i nomi di dominio/sottodomini dichiarati sui siti web presenti sul tuo hosting Web.
 
 > [!success]
 >

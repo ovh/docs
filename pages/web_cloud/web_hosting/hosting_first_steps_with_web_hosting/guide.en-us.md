@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online with our 1-click modules, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2025-04-07
+updated: 2026-02-01
 ---
 
 <style>
@@ -36,21 +36,22 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 
 ## Instructions
 
-### 1 - Link your domain name to your web hosting plan <a name="part-1"></a>
+### 1 - Link your domain name to a website on your web hosting plan <a name="part-1"></a>
 
 > [!success]
 >
 > If you have subscribed to your domain name and web hosting plan in the same order, these two services are already linked. Skip to [Part 2](#part-2) of this guide.
 
 1. Click on the `Hosting plans`{.action} menu, then choose the web hosting plan concerned.
-2. Select the `Multisite`{.action} tab.
-3. On the page that pops up, click the `Actions`{.action} button above the table listing the domain names already declared on the web hosting plan. Then click `Add a domain or sub-domain`{.action}.
-4. In the window that opens, check and complete the requested elements until they are validated.
+2. Select the `My sites`{.action} tab.
+3. In the table that appears, click on the `⁝`{.action} button located to the right of the website created automatically when your web hosting was created, then click on `Add a domain`{.action}.
+4. On the new page that opens, check and complete the requested items until they are validated.
 
 /// details | Click here for more information.
 
 See our detailed guides:
 
+- [How to link a domain name to an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Web hosting - Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Web Hosting - How to modify a domain name already associated to a hosting plan](/pages/web_cloud/web_hosting/multisites_modify_domain)
 

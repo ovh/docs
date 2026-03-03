@@ -1,7 +1,7 @@
 ---
 title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Wprowadzenie
@@ -17,7 +17,6 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
->
 
 ## Wymagania początkowe
 
@@ -31,13 +30,12 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 >
 > Zmiana nazwy domeny dotycząca dostępu do Twojej strony WWW może mieć wpływ na jej pozycjonowanie. 
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner) w celu pozycjonowania strony, jeśli to konieczne.
->
 
 Aby zmienić domenę dostępu do Twojej strony WWW, należy wykonać kilka kroków w określonej kolejności.
 
 ### Etap 1 - zadeklarowanie nowej domeny na hostingu <a name="step1"></a>
 
-Zadeklaruj nową domenę korzystając z naszej dokumentacji dotyczącej [dodawania witryny na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite). Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
+Zadeklaruj nową nazwę domeny, postępując zgodnie z naszym przewodnikiem „[Jak przypisać nazwę domeny do istniejącej strony internetowej?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". Zadeklaruj również jej poddomenę w `www`, jeśli chcesz, na przykład, aby `www.NewDomain.tld` również wyświetlała Twoją stronę oprócz `NewDomain.tld`.
 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
@@ -59,7 +57,7 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 Jeśli wszystkie czynności zostały poprawnie wykonane, deklaracje Twoich domen powinny być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
-![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
+![My websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,7 +112,7 @@ Jeśli korzystałeś z usług dostawcy podczas tworzenia strony, skontaktuj się
 
 ### Etap 3 - usunięcie poprzedniej nazwy domeny <a name="step3"></a>
 
-Aby uniknąć „*Duplicate-content*” i gdy nowa nazwa domeny jest w pełni operacyjna z Twoją witryną, należy usunąć deklarację starej nazwy domeny na Twojej witrynie, korzystając z przewodnika dotyczącego zarządzania [witrynami na Twoim serwisie udostępnionym](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+Aby uniknąć „*Duplicate-content*” i po w pełni funkcjonalnej nowej nazwie domeny z Twoją stroną internetową, należy usunąć deklarację starej nazwy domeny ze swojej strony internetowej, korzystając z przewodnika „[Jak odłączyć nazwę domeny od istniejącej strony internetowej ?](/pages/web_cloud/web_hosting/my_websites_detach_domain_existing_website)”.
 
 > [!warning]
 >

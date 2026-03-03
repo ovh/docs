@@ -1,7 +1,7 @@
 ---
 title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
-updated: 2025-08-25
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -28,12 +28,12 @@ updated: 2025-08-25
 
 A página “**Site não instalado**” é apresentada por dois motivos:
 
-- 1: [O seu domínio ou subdomínio não foi corretamente declarado no seu alojamento web](#check-multisites).
+- 1: [O seu nome de domínio ou subdomínio não está declarado corretamente num dos sites web presentes no seu alojamento web](#check-my-websites).
 - 2: [O seu domínio não aponta para o endereço IP da sua oferta de alojamento web.](#check-dns-domain)
 
 Os passos seguintes irão permitir-lhe corrigir o erro `Site não instalado` nestes dois casos.
 
-### 1 - Verifique a declaração do seu domínio ou subdomínio no seu alojamento web <a name="check-multisites"></a>
+### 1 - Verificar a declaração do seu nome de domínio ou subdomínio no seu site web presente no seu alojamento web <a name="check-my-websites"></a>
 
 Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
 
@@ -52,21 +52,21 @@ Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `Multisite`{.action}.
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> Na nova página que é apresentada, aparece uma tabela.
+>> Na tabela que aparece, clique no botão `>`{.action} à esquerda do nome do site web relevante para visualizar os nomes de domínio e subdomínios associados.
 >>
->> ![Multisite interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> |Cenários|Ações a realizar|
+>> |Cenários|Ações a tomar|
 >> |---|---|
->> |O nome de domínio ou o subdomínio associado ao seu website **aparece** na tabela « multisite ».|Se acabou de adicionar o seu nome de domínio ou o seu subdomínio na parte `Multisite`{.action} do seu alojamento web, aguarde cerca de **vinte minutos** e atualize a cache do seu browser. Se a mensagem « Site não instalado » aparecer, vá para [parte 2](#check-dns-domain).|
->> |O domínio ou o subdomínio associado ao seu website **não aparece** na tabela « multisite ».|Adicione o seu domínio ou subdomínio à secção `Multisite`{.action} seguindo a secção dedicada do guia « [Partilhar o alojamento entre vários sites - adicionar um domínio ou um subdomínio](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
->> |O domínio ou subdomínio **foi eliminado** do quadro « multisite » sem qualquer ação da sua parte.|O seu domínio ou a sua zona DNS podem ser geridos a partir de outra conta. Adicione o seu domínio ou subdomínio à parte `Multisite`{.action} . Para tal, clique na secção dedicada do guia « [Partilhar o alojamento entre vários sites - adicionar um domínio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
+>> |O nome de domínio ou subdomínio associado ao seu site web **aparece** na tabela.|Se acabou de adicionar o seu nome de domínio ou subdomínio ao seu site web no seu alojamento web, aguarde cerca de **vinte minutos** e, em seguida, atualize o cache do seu navegador Internet. Se a mensagem "Site não instalado" continuar a aparecer, passe para a [parte 2](#check-dns-domain).|
+>> |O nome de domínio ou subdomínio associado ao seu site web **não aparece** na tabela.|Adicione o seu nome de domínio ou subdomínio seguindo o nosso guia "[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
+>> |O nome de domínio ou subdomínio **foi removido** da tabela sem qualquer ação por sua parte.|O seu nome de domínio ou a sua zona DNS podem estar a ser geridos a partir de outra conta. Adicione o seu nome de domínio ou subdomínio seguindo o nosso guia "[Como associar um nome de domínio a um site web existente? - Adicionar um nome de domínio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".|
 
 ### 2 - Verifique o apontamento de IP na zona DNS ativa do seu domínio <a name="check-dns-domain"></a>
 
@@ -105,7 +105,7 @@ Clique nos separadores abaixo para visualizar cada um dos **3** passos.
 >>
 >> Copie o endereço IPv4 e continue a ler o guia.
 
-Pode também consultar o endereço IP associado ao seu alojamento web no nosso guia « [Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
+Pode também consultar o endereço IP associado ao seu alojamento web no nosso guia "[Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
 #### 2\.2 Verifique o endereço IP anotado na zona DNS ativa do seu domínio
 
@@ -135,8 +135,8 @@ Para isso, clique nos separadores abaixo para apresentar cada um dos **4** passo
 >> [!primary]
 >> >
 >> Se o domínio não aparecer na lista que aparece, significa que a zona DNS não está a ser gerida a partir da Área de Cliente OVHcloud.<br>
->> > Determine o « agente de registo » e os servidores DNS aos quais está associado através da nossa ferramenta [WHOIS](/links/web/domains-whois).<br>
->> > Encontre e modifique a zona DNS em causa de acordo com a rubrica dedicada do guia « [Partilhar o alojamento entre vários sites - adicionar um domínio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> > Determine o "agente de registo" e os servidores DNS aos quais está associado através da nossa ferramenta [WHOIS](/links/web/domains-whois).<br>
+>> > Encontre e modifique a zona DNS relevante, seguindo a secção dedicada do guia "[Como associar um nome de domínio a um site web existente? - Adicionar um nome de domínio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 > **Etapa 3**
 >>
@@ -148,7 +148,7 @@ Para isso, clique nos separadores abaixo para apresentar cada um dos **4** passo
 >> >
 >> > Se o separador `Zona DNS`{.action} do seu domínio aparecer da seguinte forma:<br><br> ![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >> >
->> > Isto significa que o domínio não é gerido a partir da Área de Cliente OVHcloud.<br> Determine o « agente de registo » e os servidores DNS associados ao domínio através da nossa ferramenta [WHOIS](/links/web/domains-whois).<br> Encontre e modifique a zona DNS correspondente seguindo a secção dedicada do guia « [Partilhar o alojamento entre vários sites - adicionar um domínio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>> > Isto significa que o seu nome de domínio não é gerido a partir da sua área de cliente OVHcloud.<br> Determine o seu "gabinete de registo" e os servidores DNS aos quais está associado através do nosso ferramenta [WHOIS](/links/web/domains-whois).<br> Encontre e modifique a zona DNS relevante, seguindo a secção dedicada do guia "[Como associar um nome de domínio a um site web existente? - Adicionar um nome de domínio externo](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
 >>
 >> Vá para a etapa 4 para visualizar os diferentes cenários possíveis e as ações a realizar.
 >>
@@ -159,13 +159,13 @@ Para isso, clique nos separadores abaixo para apresentar cada um dos **4** passo
 >> |Na zona DNS ativa, o seu domínio ou subdomínio aponta para o endereço IP do seu alojamento web com um registo de tipo A (para um endereço IPv4) ou AAAA (para um endereço IPv6).<br><br>![zoneDNS_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Isto indica que a configuração do seu domínio está correta.<br>Aguarde o tempo para a propagação DNS recente alteração.<br><br>Reinicie os seus dispositivos (PC, smartphone, box, etc.) e esvazie a cache do seu browser. A antiga configuração do domínio pode ainda ser conservada em cache, o que pode atrasar a apresentação da atualização.|
 >> |A zona DNS ativa não contém registos do tipo A ou AAAA que liguem o seu domínio ou subdomínio ao endereço IP do seu alojamento web.|Adicione o novo registo DNS do tipo A ou AAAA ou corrija o registo existente seguindo [este manual](/pages/web_cloud/domains/dns_zone_edit).|
 >> |O registo DNS de tipo A ou AAAA existente na zona DNS para o seu domínio ou subdomínio aponta para um endereço IP diferente do do seu alojamento web.|Adicione o novo registo DNS de tipo A ou AAAA ou corrija o registo existente seguindo [este manual](/pages/web_cloud/domains/dns_zone_edit).|
->> |Este aviso aparece no separador `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique os servidores DNS do seu domínio de acordo com o nosso guia « [Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit) »|.
+>> |Este aviso aparece no separador `Zona DNS`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifique os servidores DNS do seu domínio de acordo com o nosso guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)"|.
 
 ## Quer saber mais? <a name="go-further"></a>
 
 [Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Como associar um nome de domínio a um site web existente?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 
 [Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 

@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2025-04-07
+updated: 2026-02-01
 ---
 
 <style>
@@ -37,21 +37,22 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 
 ## W praktyce
 
-### 1 - Przypisz domenę do hostingu <a name="part-1"></a>
+### 1 - Powiązanie nazwy domeny z witryną na Twoim hostingu sieciowym <a name="part-1"></a>
 
 > [!success]
 >
 > Jeśli zamówiłeś domenę i hosting w ramach jednego zamówienia, te dwie usługi są już powiązane. Przejdź bezpośrednio do [Część 2](#część-2) tego przewodnika.
 
 1. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
-2. Wybierz zakładkę `MultiSite`{.action} po wybraniu odpowiedniego hostingu.
-3. Na stronie, która się wyświetli kliknij przycisk `Operacje`{.action} znajdujący się nad tabelą zawierającą nazwy domen już zadeklarowanych na hostingu. Następnie kliknij `Dodaj domenę lub subdomenę`{.action}.
-4. W oknie, które się otworzy, zaznacz i uzupełnij wymagane elementy aż do ich zatwierdzenia.
+2. Wybierz zakładkę `Moje strony`{.action} po wybraniu odpowiedniego hostingu.
+3. W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie witryny utworzonej automatycznie podczas tworzenia Twojego hostingu sieciowego, a następnie kliknij `Dodaj domenę`{.action}.
+4. Na nowej stronie, która się otwiera, zaznacz i uzupełnij wymagane elementy aż do ich zweryfikowania.
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
+- [Jak powiązać nazwę domeny z istniejącą witryną internetową ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)
 - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
 
@@ -124,8 +125,8 @@ Zapoznaj się z naszymi przewodnikami zawierającymi szczegółowe informacje na
 - [Logowanie do przestrzeni dyskowej FTP hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 - [Tworzenie automatycznych zadań (CRON) na twoim hostingu](/pages/web_cloud/web_hosting/cron_tasks).
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do [grona naszych użytkowników](/links/community).

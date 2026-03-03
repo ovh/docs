@@ -1,7 +1,7 @@
 ---
 title: "Exportar un sitio web"
 excerpt: "Cómo exportar un sitio web de OVHcloud"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -63,17 +63,42 @@ Si no dispone de ellos, haga clic en las fichas siguientes para ver cada una de 
 
 Una vez que disponga de todos los elementos necesarios, la recuperación de los archivos en el espacio de almacenamiento puede realizarse de dos formas diferentes:
 
-- **Cliente FTP o SFTP** : deberá instalar en su ordenador un programa compatible, como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa instalado, ya que OVHcloud no lo ha creado.
+- **Cliente FTP o SFTP**: deberá instalar en su ordenador un programa compatible, como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa instalado, ya que OVHcloud no lo ha creado.
 
 - **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting) específico. Para más información, consulte nuestra guía ["Utilizar el acceso SSH de un alojamiento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2. Descargar los archivos desde el espacio de almacenamiento.
 
-Una vez conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que ha instalado su sitio**. En un caso de uso típico, el sitio debe descargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para alojar varios sitios web, es probable que haya declarado varios sitios web.
+Una vez conectado a su espacio de almacenamiento y según los sitios web alojados en él, pueden aparecer varios directorios.
 
-Para comprobar la carpeta en la que se almacena su sitio web, vaya a la pestaña `Multisitio`{.action} desde su área de cliente de OVHcloud. En la tabla que aparece, para el dominio deseado, mire el `Carpeta raíz`{.action} que se muestra.
+Si es necesario, identifique previamente en su alojamiento web el nombre del directorio raíz en el que se almacena su sitio web. Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Siempre conectado a su espacio de almacenamiento, solo le queda descargar los archivos de su sitio web accediendo al directorio raíz identificado anteriormente.
 
 ### 2 - Recuperar la copia de seguridad de la base de datos (opcional)
 

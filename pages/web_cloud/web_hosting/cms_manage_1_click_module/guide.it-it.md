@@ -1,7 +1,7 @@
 ---
 title: "Come gestire il tuo modulo in 1 click?"
 excerpt: "Questa guida ti mostra come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud"
-updated: 2024-11-15
+updated: 2026-02-01
 ---
 
 ## Obiettivo
@@ -75,9 +75,9 @@ Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne 
 
 Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [Web Cloud Databases](/links/web/databases), puoi considerare che si tratta di quello del tuo sito.
 
-In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome della `Cartella di root`: è la directory in cui sono presenti i file che costituiscono il tuo modulo in 1 click sul server FTP.
+In caso contrario, vai alla scheda `I miei siti`{.action}. Annota il nome della `Cartella di root` presente sulla riga del sito web interessato: si tratta della directory in cui si trovano i file che costituiscono il tuo modulo in 1 click sul server FTP.
 
-Accedi allo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
+Accedi allo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection). Apri la `Cartella di root` trovata precedentemente nella scheda `I miei siti`{.action} e cerca il file di configurazione del tuo modulo:
 
 - Per WordPress : **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
 - Per Joomla! : **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).

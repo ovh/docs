@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -69,11 +69,36 @@ Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no es
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
-Uma vez ligado ao seu espaço de armazenamento, resta-lhe apenas transferir os ficheiros do seu site. **Recomendamos que seja especialmente atento ao diretório em que instalou o seu site**. Num cenário de utilização comum, o site deve ser transferido para a pasta « www ». No entanto, se estiver a utilizar o seu alojamento para alojar vários sítios Web, certamente declarou vários sítios Web.
+Uma vez ligado ao seu espaço de armazenamento e consoante os seus sítios Web alojados, vários diretórios podem aparecer.
 
-Para verificar a pasta em que o seu site está armazenado, posicione-se no separador `Multisite`{.action} a partir da sua Área de cliente OVHcloud. No quadro que aparece, para o domínio pretendido, consulte o `Pasta raiz`{.action} que aparece.
+Se necessário, identifique previamente no seu alojamento Web o nome do diretório principal em que o seu sítio Web está armazenado. Para isso, clique nas janelas abaixo para visualizar cada uma das **4** etapas.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Meus sites`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na tabela que aparece, para o sítio Web desejado, veja o `Pasta raiz`{.action} que aparece.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Ainda ligado ao seu espaço de armazenamento, basta descarregar os ficheiros do seu sítio Web ao aceder ao diretório principal identificado anteriormente.
 
 ### 2 - Recuperar o backup da sua base de dados (opcional) 
 

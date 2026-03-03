@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -30,7 +30,7 @@ Para llevar su proyecto a buen puerto, es importante tener una visión clara de 
 
 - **Crear usted mismo un sitio web**: Esta opción le permitirá crear un proyecto a medida, aunque es la más técnica y requiere conocimientos de programación.
 
-- **Migrar un sitio web ya existente a OVHcloud**: Esta opción es delicada si no desea que se interrumpa el acceso al sitio web. Si necesita ayuda para migrar su sitio web, puede consultar la guía [Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **Migrar un sitio web ya existente a OVHcloud**: Esta opción es delicada si no desea que se interrumpa el acceso al sitio web. Para ayudarle en este proceso, le invitamos previamente a consultar esta documentación: [Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Según el método elegido para llevar a cabo su proyecto, tendrá dos posibilidades:
 
@@ -102,11 +102,17 @@ Una vez que disponga de todos los datos necesarios, podrá conectarse a su espac
 
 #### 2.3. Cargar los archivos en el espacio de almacenamiento
 
-Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos encarecidamente que preste especial atención al directorio en el que vaya a cargar los archivos**. En un caso de uso habitual, el sitio debe cargarse en la carpeta "www". Sin embargo, si está utilizando su alojamiento para varios sitios web, es probable que haya declarado varios sitios web.
+> [success]
+>
+> Si, desde su [área de cliente de OVHcloud](/links/manager), aún no ha declarado su sitio web en su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> Si, desde su [área de cliente de OVHcloud](/links/manager), aún no ha asociado su nombre de dominio a un sitio web presente en su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Para conocer la carpeta en la que debe colocar el sitio web, vaya a la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la **Carpeta raíz** del dominio correspondiente. Ese es el directorio en el que debe colocar los archivos del sitio web.
+Una vez conectado a su espacio de almacenamiento, solo le queda subir los archivos de su sitio web. **Le recomendamos que preste especial atención al directorio en el que va a cargar los archivos**, especialmente si ha declarado varios sitios web en su alojamiento web.
 
-Es posible que en el espacio de almacenamiento ya haya un archivo denominado index.html, que puede haber sido creado por OVHcloud al instalar el alojamiento para mostrar una página por defecto en su sitio web. En ese caso, no olvide eliminarlo (o renombrarlo) antes de colocar sus archivos.
+Para verificar la carpeta en la que debe publicarse el sitio web, vaya a la pestaña `Mis sitios`{.action} desde su área de cliente de OVHcloud. En la tabla que aparece, para el sitio web deseado, mire el `Carpeta raíz`{.action} que se muestra. Publique entonces los archivos del sitio web en este último.
+
+Es posible que encuentre en su espacio de almacenamiento un archivo denominado "index.html". Este podría haber sido creado por OVHcloud durante la instalación de su alojamiento web para mostrar una página predeterminada en su sitio web. Si es así, no olvide eliminarlo al subir sus archivos.
 
 > [!primary]
 >
@@ -119,11 +125,10 @@ Es posible que en el espacio de almacenamiento ya haya un archivo denominado ind
 > [!primary]
 >
 > Si su sitio web no está conectado a una base de datos, puede omitir este paso.
->
 
-En la actualidad, prácticamente todos los sistemas de gestión de contenidos (CMS), como WordPress o Joomla!, utilizan bases de datos para almacenar los elementos dinámicos, como comentarios o artículos. Para que el sitio web funcione correctamente, es imprescindible conectar los archivos del sitio web a la base de datos mediante un archivo de configuración que contiene la información de conexión a la base de datos.
+Hoy en día, la mayoría de los sistemas de gestión de contenido (CMS), como WordPress y Joomla!, utilizan una base de datos para almacenar elementos dinámicos, como comentarios o artículos. Una conexión entre los archivos del sitio web y la base de datos es esencial para que el sitio web funcione correctamente. Para ello, existe un archivo de configuración que contiene las informaciones de la base de datos que permite esta conexión.
 
-Según el sitio web, la conexión puede realizarse, o bien manualmente, o bien a través de un panel de administración generado por el propio sitio web. Para ello, debe realizar las acciones que se indican a continuación.
+Según el sitio web utilizado, este enlace debe crearse manualmente o a través de una interfaz generada por el propio sitio web. Se realiza en varias subetapas, algunas de las cuales pueden ser opcionales.
 
 #### 3.1. Obtener la base de datos existente 
 
@@ -159,11 +164,11 @@ Una vez que haya cargado los archivos en el espacio de almacenamiento y que la b
 
 Si no puede ver el sitio web, le recomendamos lo siguiente:
 
-- **Compruebe la configuración del dominio**: Es posible que la configuración DNS del dominio no permita que este último muestre el sitio web que acaba de subir al alojamiento web de OVHcloud. Asegúrese de que el registro A actualmente configurado en la zona DNS del dominio se corresponde con la dirección IP de su alojamiento web de OVHcloud.
+- **verificar la configuración del nombre de dominio**: es posible que la configuración DNS del nombre de dominio no permita que este muestre el sitio web que acaba de cargar en su alojamiento web de OVHcloud. Asegúrese de que el registro DNS de tipo A actualmente configurado en la zona DNS de su nombre de dominio corresponda bien a la dirección IP de su alojamiento web de OVHcloud.
 
-- **Compruebe que no falta ningún archivo**: Es posible que, al cargar los archivos en su alojamiento web de OVHcloud, haya olvidado algún archivo o se haya producido un error. Preste atención al realizar las distintas operaciones para no romper la conexión entre los archivos del sitio web y la base de datos (si el sitio web utiliza una).
+- **asegurarse de que ningún archivo esté faltando**: es posible que durante la carga de los archivos en su alojamiento web de OVHcloud, haya olvidado algunos archivos o que se haya producido un error. Manténgase atento durante sus manipulaciones para no romper el enlace entre los archivos del sitio y la base de datos (si esta la utiliza).
 
-- **Compruebe que no hay errores en el código del sitio web**: Esta comprobación es más técnica, pero es posible que los archivos que haya cargado tengan errores y no permitan que el servidor muestre correctamente o en absoluto el sitio web.
+- **verificar que el código del sitio web no contenga errores**: esta verificación es probablemente la más técnica, pero es posible que los archivos que ha cargado contengan errores y no permitan al servidor mostrar correctamente, o incluso en absoluto, su sitio web.
 
 Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en contacto con el editor del servicio (del CMS instalado, por ejemplo) o con un profesional especializado.
 

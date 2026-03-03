@@ -1,7 +1,7 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
-excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
-updated: 2025-10-08
+excerpt: Erfahren Sie, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
+updated: 2026-02-01
 ---
 
 ## Ziel 
@@ -46,16 +46,44 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Teilen:
 
 ### 1: Die Konfigurationsdatei Ihrer Website identifizieren <a name="step1"></a>
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
+Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
 
-![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
-
-Gehen Sie dann in dieser [Anleitung](/pages/web_cloud/web_hosting/ftp_connection) zu dem Bereich, der die Dateien und Ordner Ihrer Website enthält (*FTP-Bereich*).
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Meine Seiten`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Im angezeigten Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomains anzuzeigen.
+>>
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Identifizieren Sie den Namen des `Wurzelverzeichnis` Ihrer Website. Dies ist das Verzeichnis, in dem sich ihre Dateien und Ordner befinden.
+>>
+>> ![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+>>
+>> Gehen Sie anschließend zum FTP-Speicherbereich, der die Dateien und Ordner Ihrer Website enthält, und konsultieren Sie dafür [unsere Anleitung](/pages/web_cloud/web_hosting/ftp_connection).
 
 > [!primary]
 >
 > Wenn Sie das Passwort Ihres FTP-Speicherplatzes ändern möchten, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password).
->
 
 Öffnen Sie das oben identifizierte `Wurzelverzeichnis`.
 
@@ -86,7 +114,7 @@ Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](/link
 - Klicken Sie auf den Tab `Datenbanken`{.action} auf der **rechten Seite der Bildschirmanzeige**.
 - Suchen Sie den Namen der zuvor in der Spalte `Name der Datenbank` gefundenen Datenbank.
 
-Wenn Sie in diesem Teil Ihres Kundencenters den Namen der in der Konfigurationsdatei angegebenen Datenbank gefunden haben, gehen Sie zu [Schritt 3](#step3).
+Wenn Sie im Kundencenter den Namen der in der Konfigurationsdatei angegebenen Datenbank gefunden haben, gehen Sie zu [Teil 3](#step3).
 
 Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [Web Cloud Databases Angebot](/links/web/databases) gebunden.
 
@@ -119,7 +147,7 @@ Legen Sie das neue Passwort Ihrer Datenbank fest und speichern Sie es. Es muss f
 - Mindestens eine Zahl
 - Ausschließlich Ziffern und Buchstaben
 
-Gehen Sie wie in [Schritt 1](#step1) beschrieben zum FTP-Speicherplatz Ihres Hostings und bearbeiten Sie die Konfigurationsdatei Ihrer Website.
+Gehen Sie wie in [Teil 1](#step1) beschrieben zum FTP-Speicherplatz Ihres Hostings und bearbeiten Sie die Konfigurationsdatei Ihrer Website.
 
 **Speichern** Sie vor jeder Änderung den Inhalt der Datei lokal in einem Textdokument, um eine Backup-Kopie für einen Fehlerfall aufzubewahren.
 
@@ -229,11 +257,11 @@ Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken 
 
 ![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
-Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf `...`{.action} rechts neben dem im [zweiten Schritt](#step2) identifizierten `Benutzernamen`{.action} und anschließend auf `Passwort ändern`{.action}.
+Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem `Benutzernamen`{.action}, den Sie in [Teil 2](#step2) identifiziert haben, und anschließend auf `Passwort ändern`{.action}.
 
 ![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
-Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
+Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Teil 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
 ![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 

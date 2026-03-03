@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2025-11-05
+updated: 2026-02-01
 ---
 
 ## Objective
@@ -10,8 +10,10 @@ When you use your web hosting plan or update your website, you may need to modif
 
 > [!primary]
 >
-> This guide only explains how to modify a domain name or subdomain that has already been declared on an OVHcloud Web Hosting plan. If you would like to link a new domainname or subdomain to your web hosting plan, please read our guide on “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+> This guide only explains how to modify a domain name or subdomain that has already been declared on an OVHcloud Web Hosting plan.
 >
+> - To associate a new domain name or subdomain with your website on your web hosting, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - To add a new website to your web hosting, please refer to our guide "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 **Find out how to modify the association settings for a domainname or subdomain already declared on your web hosting plan.**
 
@@ -29,62 +31,55 @@ When you use your web hosting plan or update your website, you may need to modif
 > Modifying the association settings for a domain name or subdomain can result in access to your services (your website) being interrupted. If you have any doubts about the modifications to be made, do not hesitate to contact a specialist provider.
 >
 
-To modify the association settings for a domain name or subdomain that has already been declared on your Web Hosting plan, perform the following actions:
+To modify the association settings of a domain name or subdomain already declared on your web hosting plan, click on the tabs below to view each of the **5** steps.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. Click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting plans`{.action} menu.
-4. Select the web hosting plan concerned.
-5. On the page that appears, click on the `Multisite`{.action} tab.
-6. In the table that appears below the tab and to the right of the domainname or subdomain concerned, click on the `...`{.action} button, then on `Modify domain`{.action}.
+> [!tabs]
+> **Step 1**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Step 2**
+>>
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Step 3**
+>> 
+>> On the page that pops up, click on the `My sites`{.action} tab.
+>> 
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>> 
+> **Step 4**
+>> 
+>> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
+>> 
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
+>> 
+>> Then click on the `⁝`{.action} button to the right of the relevant domain name or subdomain, then on `Modify domain`{.action}.
+>> 
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
+>> 
+> **Step 5**
+>>
+>> The following window appears: 
+>>
+>> ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
+>>
+>> In the following part of this guide, you will find a description of each of the available parameters in the window above. After reading the different descriptions in the section "[Description of modifiable parameters](#step1)" and once your changes have been made, click on the `Next`{.action} button located at the bottom right of the window, then go to [Part 2](#step2).
 
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
-
-The following window appears:
-
-![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
-
-In the remainder of this guide, you will find a description of each of the available settings in the window above. Once you have read the descriptions below and made your changes, click the `Next`{.action} button in the bottom right-hand corner of the window, then go to [step 2](#step2).
-
-### Step 1 - Description of editable parameters <a name="step1"></a>
+### 1 - Description of editable parameters <a name="step1"></a>
 
 > [!primary]
 >
-> The `Domain name`{.action} form cannot be modified, as it is a change to the settings of the domain name associated with the web hosting plan. If you would like to link a new domainname or subdomain to your web hosting plan, please read our guide on “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
+> The `Domain name`{.action} and `Root folder`{.action} fields are not modifiable, as they are parameters related to the website on your web hosting plan.
 >
+> - To associate a new domain name or subdomain with a website on your web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
+> - To change the root folder of your website, refer to our guide "[How to modify the root folder of an existing website?](/pages/web_cloud/web_hosting/my_websites_modify_root_folder)".
 
-#### Modify the "root folder"
-
-> [!warning]
-> **Special case: configuration with Git**
->
-> To modify the `Root folder`{.action} declared for your domain name if a configuration exists with Git for the same domain name, you must first delete this configuration.
->
-> If a configuration exists with Git, a message will appear just below the form:
->
-> ![Modify domain associed with git](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png){.thumbnail}
->
-> To delete the Git configuration for a domainname or subdomain associated with your hosting plan, please read our guide on [Configuring and using Git with an OVHcloud web hosting plan](/pages/web_cloud/web_hosting/git_integration_webhosting).
->
-
-The `Root folder`{.action} form shows the name of the folder containing the items that appear with your domain name. For example, a folder might contain your website’s files.
-
-When using your services, you may need to change the `Root folder`{.action} declared for your domain name. This can happen when, for example:
-
-- You have developed a new website in a new folder in your web hosting plan’s FTP storage space.
-- You want to redirect your domain name to an empty folder and then place a new website there.
-- etc.
-
-In this form, replace the name of the pre-filled folder with the name of the new folder you want.
-
-> [!success]
->
-> If you enter a non-existent folder name in your web hosting plan’s FTP storage space, it will be automatically created by our robots in your FTP storage space.
->
-
-#### Other options available
-
-##### The "Activate the CDN" option
+#### The "Activate the CDN" option
 
 To use this option, you must have already subscribed to an OVHcloud CDN solution, or have a Performance web hosting plan.
 
@@ -92,21 +87,21 @@ Tick/untick this box to enable/disable the CDN option for your domain name or su
 
 You can find more information on the CDN options/offers available in our dedicated documentation “[Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)”.
 
-##### The "Enable the firewall" option
+#### The "Enable the firewall" option
 
 This option filters incoming requests to protect your web hosting plan against the most common attacks.
 
 You can find more information on this option in our dedicated documentation "[Activating the application firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
-##### The "Separate logs" option
+#### The "Separate logs" option
 
 Tick/untick this option only if you want to separate your domain name logs from other domain names declared on your web hosting plan.
 
 Find out more about this option in our [detailed statistics page](/links/web/hosting-traffic-analysis).
 
-Once you have made your changes, click the `Next`{.action} button in the bottom right-hand corner of the window to go to [step 2](#step2).
+Once you have made your changes, click the `Next`{.action} button in the bottom right-hand corner of the window to go to [Part 2](#step2).
 
-### Step 2 - Summary of changes <a name="step2"></a>
+### 2 - Summary of changes <a name="step2"></a>
 
 Once you have clicked the `Next`{.action} button, you will see a summary of the settings you are about to apply to your domain name:
 
@@ -116,7 +111,7 @@ If all the settings are configured as you want, click the `Confirm`{.action} but
 
 Depending on the options you have selected, the changes may take between a few minutes and a few hours to be applied.
 
-If modifications of the **CDN** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [step 1](#step1), in order to check that all of the required conditions have been met.
+If modifications of the **CDN** and **separate logs** options are not taken into account after 24 hours, please refer to the respective resources listed for all of the options described in [Part 1](#step1), in order to check that all of the required conditions have been met.
 
 ## Go further
 

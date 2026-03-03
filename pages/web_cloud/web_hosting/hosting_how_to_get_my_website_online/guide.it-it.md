@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Obiettivo
@@ -24,17 +24,17 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVHcloud offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](/links/web/hosting-website). Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud "[Creare un sito Internet con i moduli in 1 click](/links/web/hosting-website)". Per maggiori informazioni, consulta la guida "[Installare il proprio sito con i moduli in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVHcloud.
 
 - **creare un sito Web in autonomia**: questa soluzione è più tecnica e richiede competenze di programmazione, ma offre la possibilità di realizzare un progetto totalmente personalizzato.
 
-- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per aiutarti in questa procedura, ti invitiamo a consultare in anticipo questa documentazione: [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 In base all’opzione scelta, hai quindi due possibilità: 
 
-- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida "[Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster.
  
@@ -102,11 +102,17 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in due mod
 
 #### 2.3. Caricare i file
 
-Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito web. **Ti invitiamo a prestare particolare attenzione al percorso in cui intendi caricare i file**. In un utilizzo classico, il sito deve essere caricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per diversi siti web, è molto probabile che tu abbia dichiarato diversi siti web.
+> [success]
+>
+> Se, dal tuo [Spazio Cliente OVHcloud](/links/manager), non hai ancora dichiarato il tuo sito web sull'hosting web, consulta [questa guida](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+>
+> Se, dal tuo [Spazio Cliente OVHcloud](/links/manager), non hai ancora associato il tuo nome di dominio a un sito web presente sull'hosting web, consulta [questa guida](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website).
 
-Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisito`{.action} del tuo Spazio Cliente OVHcloud e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato. 
+Una volta connesso al tuo spazio di archiviazione, ti rimane solo da caricare i file del tuo sito. **Ti invitiamo a essere particolarmente attento al directory su cui intendi caricare i file**, soprattutto se hai dichiarato più siti web sull'hosting web.
 
-È possibile che nel tuo spazio di storage sia presente il file <b>index.html</b>, che può essere stato creato da OVHcloud durante l'installazione del tuo hosting per visualizzare una pagina predefinita sul tuo sito Internet. In questo caso, ricordati di eliminarlo prima della pubblicazione dei tuoi file in rete.
+Per verificare la cartella in cui deve essere pubblicato il sito web, posizionati sull'onglet `I miei siti`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella che appare, per il sito web desiderato, guarda il `Cartella di root`{.action} che appare. Pubblica quindi i file del sito web in quest'ultimo.
+
+Potrebbe capitare che tu trovi sul tuo spazio di archiviazione un file intitolato "index.html". Quest'ultimo può essere stato creato da OVHcloud all'installazione del tuo hosting web per visualizzare una pagina predefinita sul tuo sito web. Se è così, non dimenticarti di eliminarlo quando carichi i tuoi file.
 
 > [!primary]
 >
@@ -119,15 +125,14 @@ Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisi
 > [!primary]
 >
 > Se il tuo sito Internet non ha un database associato, salta questo passaggio.
->
 
-Oggi quasi tutti i CMS utilizzano un database per archiviare gli elementi detti “dinamici”, ad esempio commenti o articoli. Per il corretto funzionamento del sito è necessaria una connessione tra il server Web e il database. Questa connessione viene stabilita grazie a un file di configurazione contenente le informazioni del database. 
+Oggi, la maggior parte dei sistemi di gestione del contenuto (CMS), come WordPress e Joomla!, utilizza un database per memorizzare elementi detti dinamici, come commenti o articoli. Una connessione tra i file del sito web e il database è quindi essenziale affinché il sito web possa funzionare correttamente. Per farlo, esiste un file di configurazione che contiene le informazioni del database che permette questa connessione.
 
-In base alla tipologia di sito installato, la configurazione deve essere realizzata manualmente o tramite un’interfaccia generata dal sito stesso. Questa operazione prevede vari passaggi, alcuni dei quali opzionali. 
+A seconda del sito web utilizzato, questo collegamento deve essere creato manualmente o tramite un'interfaccia generata dal sito web stesso. Viene realizzato in diverse sottotappe, alcune delle quali possono essere opzionali.
 
 #### 3.1. Recuperare il database esistente  
 
-Se stai migrando un sito, contatta il tuo precedente provider per recuperare il database esistente. Se invece si tratta di un nuovo sito Web, passa allo step successivo.
+Se stai migrando un sito web, recupera il database esistente presso il tuo vecchio host. Se si tratta di un nuovo sito web, passa al passo successivo.
 
 #### 3.2. Creare il database in OVHcloud 
 
@@ -148,7 +153,7 @@ Se stai migrando un sito, importa il database esistente in quello appena creato.
 
 L’importazione può essere effettuata in diversi modi. OVHcloud ne propone una direttamente dallo Spazio Cliente. Accedi allo Spazio Cliente OVHcloud, clicca sui tre puntini in corrispondenza del tuo servizio e seleziona `...`{.action} in corrispondenza del tuo database e poi su `Importa un file`{.action}.
 
-#### 3.4. Associare il sito al database
+#### 3.4. Collegare il sito web al database
 
 Una volta che il database è disponibile e i file caricati nello spazio di storage, è necessario associarli. Assicurati di avere a disposizione tutti i dati necessari: nome utente, password, nome del database e indirizzo del server.
 
@@ -160,11 +165,11 @@ Dopo aver caricato i file sullo spazio di storage e associato l’eventuale data
 
 Se riscontri problemi di visualizzazione, ti consigliamo di:
 
-- **verificare la configurazione del dominio**: è possibile che la configurazione DNS del dominio non consenta a quest’ultimo di mostrare il sito caricato sul tuo hosting Web OVHcloud. Accertati che il record A impostato nella zona DNS del dominio corrisponda all’indirizzo IP dell’hosting. 
+- **verificare la configurazione del nome di dominio**: è possibile che la configurazione DNS del nome di dominio non permetta a quest'ultimo di visualizzare il sito web che hai appena scaricato sull'hosting web OVHcloud. Assicurati che l'attuale record DNS di tipo A configurato nella zona DNS del tuo nome di dominio corrisponda effettivamente all'indirizzo IP del tuo hosting web OVHcloud.
 
-- **verifica che non manchino file**: è possibile che durante l’upload dei file nel tuo hosting, ne abbia dimenticato alcuni o si sia verificato un errore. È comunque importante prestare la massima attenzione durante queste operazioni in modo da evitare problemi di interazione tra il sito e l’eventuale database utilizzato; 
+- **assicurarsi che nessun file manchi**: è possibile che durante il caricamento dei file verso il tuo hosting web OVHcloud tu abbia dimenticato alcuni file o che si sia verificato un errore. Rimani comunque attento durante le tue operazioni per non rompere il collegamento tra i file del sito e il database (se lo utilizza).
 
-- **verifica che il codice del sito non contenga errori**: questa operazione è più tecnica, ma è possibile che i file caricati contengano errori e non consentano al server di visualizzare correttamente il sito. 
+- **verificare che il codice del sito web non presenti errori**: questa verifica è probabilmente la più tecnica, ma è possibile che i file che hai scaricato contengano errori e non permettano al server di visualizzare correttamente, se non addirittura affatto, il tuo sito web.
 
 In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consigliamo di rivolgerti a uno specialista del settore o contattare il fornitore del servizio (ad esempio, del CMS installato). 
 

@@ -1,7 +1,7 @@
 ---
 title: "Ver y gestionar todos sus sitios web desde el área de cliente de OVHcloud"
 excerpt: "Cómo consultar y gestionar todos sus sitios web desde el área de cliente de OVHcloud"
-updated: 2025-05-27
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -25,9 +25,9 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a `Web C
 
 #### Dominio
 
-Muestra el nombre de dominio principal del sitio web, tal y como está configurado en la pestaña Multisitio del alojamiento.
+Muestra el nombre de dominio principal del sitio web, tal como está configurado en la pestaña "Mis sitios" de su alojamiento.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 #### Diagnóstico
 
@@ -37,15 +37,15 @@ Le informa si su dominio apunta correctamente al alojamiento web asociado. Para 
 - `A/AAAA` amarillo: Los registros A y/o AAAA de su dominio apuntan a una dirección IP diferente de la de su alojamiento web.
 - `A/AAAA` gris: No hay ningún registro A o AAAA configurado, su dominio no apunta a ninguna dirección IP.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
-Para más información sobre el diagnóstico, consulte el apartado "diagnosticar los dominios" de nuestra guía "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+Para obtener más detalles sobre el diagnóstico, consulte nuestro guía "[¿Cómo verificar la asociación "nombre de dominio / sitio web"?](/pages/web_cloud/web_hosting/my_websites_diagnosis)".
 
 #### Carpeta raíz
 
 Indica el directorio del alojamiento (por ejemplo: www, app, public_html, etc.) al que apunta el dominio.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 #### Nombre del servicio
 
@@ -74,13 +74,13 @@ Muestra el estado de la integración de Git en el sitio web:
 - En curso: Se está configurando el repositorio Git.
 - Error: se ha detectado un error en la configuración del repositorio Git.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 #### Logs separados
 
 Indica si un espacio de logs está activado en el dominio seleccionado.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 Para más información, consulte nuestra página "[Monitorice y analice el tráfico en sus sitios web](/links/web/hosting-traffic-analysis)".
 
@@ -97,7 +97,7 @@ Muestra el estado de la CDN (**C**Content **D**elivery **N**Network) en el domin
 - Inactivo: La CDN está desactivada.
 - N/A: No aplicable (oferta no compatible).
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 La CDN permite almacenar en caché elementos estáticos del sitio web, como imágenes. Para más información, consulte nuestra página "[Shared CDN](/links/web/hosting-options-cdn)".
 
@@ -105,7 +105,7 @@ La CDN permite almacenar en caché elementos estáticos del sitio web, como imá
 
 Indica si el SSL está activado o no en el dominio.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 El SSL le permite disfrutar de una conexión segura (**https://**) en el dominio seleccionado. Para más información, consulte nuestra página "[Protege eficazmente tu sitio web de OVHcloud con un certificado SSL premium](/links/web/hosting-options-ssl)".
 
@@ -113,7 +113,7 @@ El SSL le permite disfrutar de una conexión segura (**https://**) en el dominio
 
 Indica si el firewall de aplicación está habilitado en el dominio.
 
-Al hacer clic, se redirige a la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+Al hacer clic, se redirige a la pestaña `Mis sitios`{.action} del alojamiento correspondiente.
 
 Para más información, consulte nuestra página "[Opciones imprescindibles para tu alojamiento web](/links/web/hosting-options)".
 

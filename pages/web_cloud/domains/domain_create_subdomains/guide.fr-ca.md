@@ -168,11 +168,11 @@ Pour les services qui ne seraient pas mentionnés, consultez la documentation re
 
 #### Cas 1 - Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine <a name="link-subdomain-case-1"></a>
 
-Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web puis choisissez l'onglet `Multisite`{.action}.
+Tout comme pour un nom de domaine, pour autoriser un sous-domaine à afficher le contenu d'un dossier « cible » déclaré pour un site web présent sur un hébergement web, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'hébergement concerné où se trouve votre site web puis choisissez l'onglet `Mes sites`{.action}.
 
-C'est ici que vous autorisez l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
+C'est ici que vous autorisez l'accès de votre sous-domaine à votre site web présent sur votre hébergement web.
 
-Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou d'un sous-domaine, la procédure est la même.
+Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ». Qu'il s'agisse d'un nom de domaine ou d'un sous-domaine, la procédure est la même.
 
 > [!warning]
 >

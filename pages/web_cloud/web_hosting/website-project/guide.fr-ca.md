@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un site web - Réaliser votre projet en 5 étapes"
 excerpt: "Découvrez comment définir votre projet, publier votre site internet et créer des adresses e-mail avec votre solution d'hébergement web"
-updated: 2025-04-25
+updated: 2026-02-01
 ---
 
 <style>
@@ -155,10 +155,10 @@ En effet, la liaison entre votre nom de domaine et vos services (hébergement we
 
 ///
 
-Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre hébergement web, **consultez les guides suivants dans l'ordre :**
+Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre site web présent sur votre hébergement web, **consultez les guides suivants dans l'ordre :**
 
 - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : Vous y trouverez l'ensemble des adresses IP de notre infrastructure d'hébergements web. Ce guide vous aidera particulièrement pour les noms de domaine dont la zone DNS active n'est pas gérée chez OVHcloud (ou gérée sur un autre compte client OVHcloud que le vôtre).
-- [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) : Ce guide explique comment ajouter plusieurs noms de domaine à un hébergement web. Il peut aussi vous aider à vérifier que la déclaration de votre nom de domaine dans l'onglet `Multisite`{.action} de votre hébergement web est correcte. Le cas échéant, vous pourrez ainsi la modifier puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
+- [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) : Ce guide explique comment ajouter un nom de domaine sur un site web présent sur votre hébergement web. Il peut aussi vous aider à vérifier que la déclaration de votre nom de domaine sur le site web présent sur votre hébergement web est correcte. Le cas échéant, vous pourrez ainsi la modifier puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) : Ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il vous servira dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre compte client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine, afin de vérifier que l'adresse IP (entrée(s) de type *A* et/ou *AAAA*) déclarée pour votre nom de domaine dans la zone DNS correspond à l'adresse IP de votre hébergement web.
 
 Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre offre e-mail OVHcloud, consultez le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) ». Vous y trouverez les noms des serveurs e-mail OVHcloud mais aussi la procédure à suivre pour faire pointer votre nom de domaine vers ces mêmes serveurs.
@@ -167,10 +167,9 @@ Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre off
 >
 > Si la zone DNS active pour votre nom de domaine n'est pas gérée chez OVHcloud :
 > 
-> - **Pour la liaison entre votre nom de domaine et votre hébergement web** : Consultez uniquement les guides « [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » et « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » cités ci-dessus pour récupérer l'adresse IP de votre hébergement web, puis déclarez correctement votre nom de domaine sur votre hébergement web. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers votre hébergement web.
+> - **Pour la liaison entre votre nom de domaine et votre hébergement web** : Consultez uniquement les guides « [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » et « [Comment associer un nom de domaine à un site web existant ?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) » cités ci-dessus pour récupérer l'adresse IP de votre hébergement web, puis déclarez correctement votre nom de domaine sur votre site web présent sur votre hébergement web. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers votre hébergement web.
 >
 > - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : Consultez uniquement le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) » pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
->
 
 ### Étape 5 - Autres options disponibles avec les hébergements web <a name="other-options"></a>
 

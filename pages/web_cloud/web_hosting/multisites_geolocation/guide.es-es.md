@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo geolocalizar un sitio web en un país específico?"
 excerpt: "Esta guía explica cómo localizar un sitio web con las direcciones IP geolocalizadas disponibles en los planes de hosting de OVHcloud"
-updated: 2025-08-22
+updated: 2026-02-01
 ---
 
 ## Objetivo
@@ -26,7 +26,7 @@ La opción de geolocalización en su alojamiento puede ser útil para el posicio
 
 Para los sitios web principalmente consultados en el extranjero y alojados en nuestra infraestructura de hosting OVHcloud, ofrecemos una opción de geolocalización por dirección IP. Permite posicionar mejor los sitios web en el país en el que está situada la dirección IP seleccionada con la opción.
 
-Para utilizar la opción de geolocalización por IP, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Para utilizar la opción de geolocalización por IP, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -43,17 +43,19 @@ Para utilizar la opción de geolocalización por IP, haga clic en las fichas sig
 >>
 > **Etapa 3**
 >>
->> En la nueva página, haga clic en la pestaña `Multisitio`{.action}.
+>> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
->> ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/multisite.png){.thumbnail}
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> En la nueva página, aparecerá una tabla con los dominios asociados.
+>> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
 >>
->> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
+>> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
->> Haga clic en el botón `...`{.action} situado a la derecha de su dominio en la tabla. Por último, haga clic en `Modificar el dominio`{.action}.
+>> A continuación, haga clic en el botón `⁝`{.action} situado a la derecha del dominio o subdominio correspondiente, y luego en `Modificar el dominio`{.action}.
+>>
+>> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
 > **Etapa 5**
 >>

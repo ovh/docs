@@ -172,15 +172,15 @@ For services that are not mentioned, please refer to the documentation for the s
 
 #### Case 1: Display a website on my OVHcloud web hosting plan with a subdomain <a name="link-subdomain-case-1"></a>
 
-As with a domain name, and to authorize a subdomain to display the contents of a *target* folder on a web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the plan concerned where your website is located, then select the `Multisite`{.action} tab.
+As with a domain name, to authorise a subdomain to display the content of a "target" folder declared for a website on a web hosting plan, log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click on `Hosting plans`{.action} in the left-hand column, select the hosting plan concerned where your website is located, then select the `My sites`{.action} tab.
 
-This is where you authorize your subdomain to access your web hosting plan, where your website is located.
+This is where you authorise your subdomain to access your website on your web hosting plan.
 
-For more details on setting up a domain or subdomain on a web hosting plan, please read our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). The procedure is the same whether you are using a domain name or a subdomain.
+For more details on configuring a domain or subdomain on a web hosting plan, please refer to our guide "[How to associate a domain name with an existing website?](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)". The procedure is the same for both domain names and subdomains.
 
 > [!warning]
 >
-> Adding a domain name or subdomain to one of the websites on your web hosting may require setting up a **validation token**. 
+> Adding a domain name or subdomain to one of the websites on your web hosting may require setting up a **validation token**.
 > For a subdomain, the same token is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the token as a TXT record for the domain name in your domain name’s active DNS zone.
 
 #### Case 2 - Create Exchange email addresses with a subdomain <a name="link-subdomain-case-2"></a>

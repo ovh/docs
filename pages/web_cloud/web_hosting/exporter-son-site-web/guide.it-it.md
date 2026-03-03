@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2025-10-28
+updated: 2026-02-01
 ---
 
 ## Obiettivo
@@ -69,11 +69,36 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
-Una volta connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito. **Ti invitiamo a prestare particolare attenzione al percorso in cui hai installato il tuo sito**. Nell'uso comune, il sito deve essere scaricato nella cartella "www". Tuttavia, se utilizzi il tuo spazio di hosting per ospitare diversi siti web, è probabile che tu abbia dichiarato diversi siti web.
+Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diversi cartelle.
 
-Per verificare la cartella in cui è memorizzato il tuo sito web, vai sull'onglet `Multisito`{.action} dal tuo Spazio Cliente OVHcloud. Nella tabella visualizzata, per il dominio desiderato, guarda il `Cartella di root`{.action} che appare.
+Se necessario, individua in precedenza nell'ospedalità web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
 
-![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
+>>
+>> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
+>>
+> **Passaggio 4**
+>>
+>> Nella tabella che appare, per il sito web desiderato, osserva il `Cartella di root`{.action} che viene visualizzato.
+>>
+>> ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
+
+Rimani connesso al tuo spazio di archiviazione, ti rimane solo da scaricare i file del tuo sito web accedendo alla cartella radice precedentemente identificata.
 
 ### 2 - Recuperare il backup del tuo database (facoltativo)
 
