@@ -1,7 +1,7 @@
 ---
 title: Modificare la password del database di un hosting Web
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Obiettivo
@@ -38,42 +38,46 @@ Per modificare la password del database del tuo sito sono necessarie quattro azi
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Utilizza un [database associato alla tua offerta di hosting condiviso](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 - Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](/pages/web_cloud/web_hosting/ftp_connection) 
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
 ### 1: Identifica il file di configurazione del tuo sito <a name="step1"></a>
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passaggi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel tavolo che appare, clicca sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i nomi di dominio e sottodomini associati.
 >>
 >> ![Sito web](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Individua il nome della `Cartella di root` del tuo sito web. Si tratta della directory in cui si trovano i file e le sottodirectory.
 >>
@@ -218,34 +222,28 @@ Di nuovo, sono possibili due casi:
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `Database`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Clicca sui tre puntini in corrispondenza del database del tuo sito e poi su `Modificare la password`{.action}.
 >>
 >> ![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Nella nuova finestra, inserisci la nuova password del tuo database (definita allo [3](#step3)), confermala e clicca su `Conferma`{.action}.
 >>

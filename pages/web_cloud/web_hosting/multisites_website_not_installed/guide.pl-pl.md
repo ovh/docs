@@ -1,7 +1,7 @@
 ---
 title: Usunięcie błędu "Strona nie została zainstalowana"
 excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie 
@@ -22,7 +22,17 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie "**Niezai
 
 - Posiadanie [hostingu](/links/web/hosting)
 - Zarządzanie [strefą DNS](/pages/web_cloud/domains/dns_zone_edit), do której przypisana jest Twoja domena.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -35,28 +45,22 @@ Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana`
 
 ### 1 - Sprawdź deklarację swojej domeny lub subdomeny na swojej stronie internetowej znajdującej się na Twoim hostingu <a name="check-my-websites"></a>
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić powiązane nazwy domen i subdomen.
 >>
@@ -82,22 +86,16 @@ Etap ten polega na upewnieniu się, że Twoja domena lub subdomena wskazuje z ak
 
 #### 2\.1 Identyfikacja adresu IP hostingu OVHcloud
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **3**.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajduje się wzmianka **IPv4**.
 >>
@@ -117,28 +115,16 @@ Sprawdź, czy adres IP Twojego hostingu wyświetla się w aktywnej strefie DNS T
 >
 > Jeśli zmodyfikujesz bezpośrednio **serwery DNS** powiązane z Twoją domeną, może to potrwać do **48 godzin** maksymalnie.
 
-W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 2**
->>
->> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
->>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
->> > [!primary]
->> >
->> > Jeśli Twoja nazwa domeny nie wyświetla się na liście, oznacza to, że Twoja strefa DNS nie jest zarządzana z poziomu Panelu klienta OVHcloud.<br>
->> > Sprawdź "operatora" oraz serwery DNS, z którymi jest on powiązany, przy użyciu narzędzia [WHOIS](/links/web/domains-whois).<br>
->> > Znajdź i zmień odpowiednią strefę DNS, korzystając z odpowiedniej sekcji poradnika "[Jak przypisać domenę do istniejącej strony internetowej? - Dodanie zewnętrznej domeny](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)".
->>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Tabela, która się wyświetla pokazuje dla każdego wiersza rekord DNS powiązany z Twoją domeną w OVHcloud. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny.
 >>
@@ -152,7 +138,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 >> Przejdź do etapu 4, aby wyświetlić różne możliwe scenariusze i działania, które należy podjąć.
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> |Możliwe scenariusze|Operacja do wykonania|
 >> |---|---|

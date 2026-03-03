@@ -1,7 +1,7 @@
 ---
 title: "Comment vérifier l'association « nom de domaine / site web » ?"
 excerpt: "Utilisez notre outil de diagnostic pour vérifier que votre nom de domaine ou sous-domaine est bien déclaré avec votre site web sur votre hébergement web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -29,40 +29,44 @@ Vous pouvez héberger plusieurs sites web sur une même offre d'hébergement web
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou de plusieurs [noms de domaine](/links/web/domains).
 - Pouvoir modifier la configuration de vos noms de domaine depuis la [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
 ### Accéder à l'outil de diagnostic
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Les noms de domaine ou sous-domaines associés à votre site web apparaissent. 
 >>

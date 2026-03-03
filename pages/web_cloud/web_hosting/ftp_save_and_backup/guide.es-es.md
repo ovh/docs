@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objetivo
@@ -20,7 +20,17 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) (salvo el hosting [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -48,22 +58,16 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 >
 > Esto se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
 
-Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Para comprobar la cuota utilizada en su alojamiento web, haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Información general**, encontrará la mención **Espacio en disco**.
 >>
@@ -98,34 +102,28 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
 
-Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, haga clic en el botón `Restaurar una copia de seguridad`{.action}.
 >>
 >> ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Se abrirá una ventana en la que deberá seleccionar la fecha de restauración deseada en el menú desplegable.
 >>
@@ -139,7 +137,7 @@ Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 >>
 >> Una vez seleccionada la fecha, haga clic en el botón `Siguiente`{.action}. 
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> ![backup ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 >>

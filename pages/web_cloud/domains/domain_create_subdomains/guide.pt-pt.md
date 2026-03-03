@@ -1,7 +1,7 @@
 ---
 title: "Como criar um subdomínio?"
 excerpt: "Saiba a definição de um subdomínio e como criá-lo na OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,9 +32,19 @@ Pode criar infinitos subdomínios a partir de um único nome de domínio.
 
 - Dispor de, pelo menos, um [nome de domínio](/links/web/domains);
 - Ter uma zona DNS ativa para o seu nome de domínio. Se necessário, consulte o guia "[Criar uma zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager);
 - Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia [Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Instruções
 
 **Índice**

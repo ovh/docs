@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Modificare un dominio già associato a un hosting"
 excerpt: "Questa guida ti mostra come modificare le impostazioni di associazione di un dominio/sottodominio già dichiarato sul tuo piano di hosting Web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Obiettivo
@@ -19,10 +19,20 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione [hosting Web OVHcloud](/links/web/hosting).
 - Disporre di uno o più [domini](/links/web/domains).
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -30,28 +40,22 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 >
 > La modifica delle impostazioni di associazione di un dominio o sottodominio può, in caso di errori, comportare l’interruzione dell’accesso ai servizi (il sito Web). In caso di dubbi sulle modifiche da apportare, ti consigliamo di rivolgerti a un professionista specializzato
 
-Per modificare i parametri di associazione di un dominio o sottodominio già dichiarato sulla tua offerta di hosting web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Per modificare i parametri di associazione di un dominio o sottodominio già dichiarato sulla tua offerta di hosting web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini e sottodomini associati.
 >>
@@ -61,7 +65,7 @@ Per modificare i parametri di associazione di un dominio o sottodominio già dic
 >>
 >> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Verrà visualizzata la seguente finestra: 
 >>

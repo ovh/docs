@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -13,7 +13,17 @@ This guideline will outline the steps to follow in order to export all elements 
 ## Requirements
 
 - an [OVHcloud web hosting plan](/links/web/hosting)
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -30,28 +40,22 @@ To log in to your storage space, you will need the following:
 
 This information was included in the email informing you that your web hosting plan has been set up.
 
-If you don’t have this information, click on the tabs below to view each of the **4** steps.
+If you don’t have this information, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The information associated with your storage space will now appear. You should be able to find the information you need to log in to it.
 >>
@@ -71,28 +75,22 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 Once connected to your storage space and depending on the websites hosted on it, several folders may appear.
 
-If needed, identify in advance in your web hosting the name of the root folder in which your website is stored. To do this, click on the tabs below to view each of the **4** steps.
+If needed, identify in advance in your web hosting the name of the root folder in which your website is stored. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, for the desired website, look at the `Root folder`{.action} that is displayed.
 >>

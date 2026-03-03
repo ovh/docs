@@ -1,7 +1,7 @@
 ---
 title: "Alojamentos web - FAQ"
 excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -431,7 +431,7 @@ Para corrigir isto, siga estes passos:
 2. Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
 3. Na página que vai aparecer, clique no separador `Servidores DNS`{.action}.
 4. De seguida, anote os nomes dos servidores DNS indicados e aceda ao separador `Zona DNS`{.action} (à direita do separador `Servidores DNS`{.action}).
-5. Na tabela (que representa a zona DNS do nome de domínio) que aparece, compare os `Alvos` das entradas do tipo `NS` presentes na zona DNS com os nomes dos servidores DNS recuperados anteriormente. Podem ocorrer três situações. Clique nas guias abaixo para exibir sucessivamente cada um dos **3** casos.
+5. Na tabela (que representa a zona DNS do nome de domínio) que aparece, compare os `Alvos` das entradas do tipo `NS` presentes na zona DNS com os nomes dos servidores DNS recuperados anteriormente. Podem ocorrer três situações. Clique nos separadores abaixo para visualizar cada um dos **3** casos.
 
 > [!tabs]
 > **Caso n°1**

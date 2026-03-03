@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to modify a domain name already associated to a hosting plan"
 excerpt: "Find out how to change the association settings for a domainname or subdomain already declared on your web hosting plan"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -19,10 +19,20 @@ When you use your web hosting plan or update your website, you may need to modif
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 - One or more [domain names](/links/web/domains)
 - Sufficient rights to all the services concerned, find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -31,28 +41,22 @@ When you use your web hosting plan or update your website, you may need to modif
 > Modifying the association settings for a domain name or subdomain can result in access to your services (your website) being interrupted. If you have any doubts about the modifications to be made, do not hesitate to contact a specialist provider.
 >
 
-To modify the association settings of a domain name or subdomain already declared on your web hosting plan, click on the tabs below to view each of the **5** steps.
+To modify the association settings of a domain name or subdomain already declared on your web hosting plan, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >> 
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >> 
@@ -62,7 +66,7 @@ To modify the association settings of a domain name or subdomain already declare
 >> 
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >> 
-> **Step 5**
+> **Step 4**
 >>
 >> The following window appears: 
 >>

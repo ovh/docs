@@ -1,7 +1,7 @@
 ---
 title: "Jak geolokalizować stronę WWW w danym kraju?"
 excerpt: "Dowiedz się, jak zlokalizować stronę WWW, korzystając z geolokalizowanych adresów IP dostępnych w ofercie hostingu współdzielonego OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie
@@ -18,36 +18,41 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
   
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [hostingu OVHcloud](/links/web/hosting)
 - Posiadanie [domeny](/links/web/domains)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 Dla stron www odwiedzanych głównie za granicą i hostowanych na naszej infrastrukturze hostingu współdzielonego OVHcloud proponujemy opcję geolokalizacji za pomocą adresu IP. Umożliwia lepsze pozycjonowanie stron www w kraju, w którym znajduje się wybrany adres IP z opcją.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -57,7 +62,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> W nowym oknie, które się wyświetla zaznacz kratkę `Geolokalizacja IP`{.action}, aby wyświetlić rozwijane menu.
 >>

@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -34,7 +34,17 @@ Czy chcesz dodać nową stronę internetową do swojego hostingu?
 - Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting-multisite).
 - Zarejestrowana domena lub kilka [domen](/links/web/domains).
 - Możliwość zmiany konfiguracji nazw domen z poziomu [strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -48,34 +58,28 @@ Czy chcesz dodać nową stronę internetową do swojego hostingu?
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której nazwa domeny (i/lub jej aktywna strefa DNS), za pomocą której chcesz utworzyć swoją stronę internetową, znajduje się **w Panelu klienta OVHcloud**.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Połączyć istniejącą domenę OVHcloud`{.action} i kliknij `Kontynuuj`{.action}.
 >>
@@ -98,7 +102,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >>
 >> Jeśli chcesz dostosować nazwę katalogu głównego lub skorzystać z jednej z **Zaawansowanych opcji**, dostępnych poprzez przycisk `Konfiguracja zaawansowana`{.action}, aktywuj ten przycisk i przejdź do **kroku 6**. W przeciwnym razie przejdź bezpośrednio do **kroku 7**.
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> > [!primary]
 >> >
@@ -125,7 +129,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >>     - [Hostingu - Lista adresów IP według klastrów](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
-> **Krok 7**
+> **Krok 6**
 >>
 >> OVHcloud udostępnia moduły WordPress, Joomla!, PrestaShop i Drupal. Dzięki nim możesz mieć gotową do użycia strukturę strony internetowej, automatycznie zainstalowaną w skonfigurowanym wcześniej folderze głównym. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -135,7 +139,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >>
 >> Jeśli natomiast chcesz zainstalować swoją stronę ręcznie, pobierz jej pliki i prześlij je do odpowiedniego folderu głównego w przestrzeni dyskowej swojego hostingu. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 >>
-> **Krok 8**
+> **Krok 7**
 >>
 >> Sprawdź, czy wszystkie wprowadzone wcześniej informacje są poprawne, a następnie kliknij przycisk `Kontynuuj`{.action}, aby sfinalizować dodanie nazwy domeny lub subdomeny do swojej witryny internetowej.
 >>
@@ -157,40 +161,34 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie jest obecna na Twoim koncie OVHcloud. Może to być nazwa domeny należąca do innego konta OVHcloud lub zarejestrowana u innego dostawcy.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **7** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Powiąż domenę zewnętrzną`{.action} i kliknij `Kontynuuj`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> W polu **Nazwa witryny - obowiązkowa** wprowadź nazwę, której chcesz używać dla swojej witryny internetowej. Nazwa ta będzie widoczna tylko w zakładce `Moje witryny`{.action} Twojego hostingu internetowego.
 >>
@@ -210,7 +208,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >>
 >> Po uzupełnieniu informacji kliknij przycisk `Kontynuuj`{.action}.
 >>
-> **Krok 7**
+> **Krok 6**
 >>
 >> > [!primary]
 >> >
@@ -234,7 +232,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 >> >
 >> > Aby znaleźć aktywną strefę DNS nazwy domeny, znajdź [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi jest ona powiązana. Wystarczy zweryfikować nazwę domeny za pomocą pola **TXT**, a nie wszystkich jej subdomen.
 >>
-> **Krok 8**
+> **Krok 7**
 >>
 >> OVHcloud udostępnia moduły WordPress, Joomla!, PrestaShop i Drupal. Dzięki nim możesz mieć gotową do użycia strukturę strony internetowej, automatycznie zainstalowaną w skonfigurowanym wcześniej folderze głównym. Więcej informacji znajdziesz w naszej dokumentacji "[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -250,40 +248,34 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **8** kroków.
 
 Ta sekcja dotyczy wyłącznie sytuacji, w której chcesz dodać stronę internetową z nazwą domeny, która nie została jeszcze zarejestrowana ani w OVHcloud, ani u innego rejestratora. Innymi słowy, dotyczy to nazw domen, które nie zostały jeszcze wykupione.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Nad i po lewej stronie tabeli, która się pojawi, kliknij przycisk `Dodaj stronę`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Zamawiam nową domenę`{.action} i kliknij `Kontynuuj`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> Następnie zostaniesz przekierowany na naszą stronę handlową, gdzie możesz wykupić nazwę domeny. Wybierz nową nazwę domeny zgodnie z dostępnością na rynku. Następnie postępuj zgodnie z instrukcjami w procesie składania zamówienia, aż do potwierdzenia zamówienia. Nie musisz dodatkowo wykupywać nowego planu hostingowego.
 >>

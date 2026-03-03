@@ -1,7 +1,7 @@
 ---
 title: "Résoudre l'erreur « Site non installé »"
 excerpt: "Découvrez comment identifier et résoudre la page d'erreur « Site non installé »"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objectif
@@ -22,7 +22,17 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 
 - Disposer d'une [offre d'hébergement mutualisé](/links/web/hosting) OVHcloud.
 - Disposer également de la gestion de la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) à laquelle est rattachée votre nom de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -35,28 +45,22 @@ Les 2 parties suivantes vous permettront de corriger l’erreur `Site non instal
 
 ### 1 - Vérifier la déclaration de votre nom de domaine ou de votre sous-domaine sur votre site web présent sur votre hébergement web <a name="check-my-websites"></a>
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
@@ -82,22 +86,16 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Informations générales**, vous trouverez la mention **IPv4**.
 >>
@@ -117,28 +115,16 @@ Vous devez maintenant vérifier que l'adresse IP de votre hébergement web appar
 >
 > Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
 
-Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
+Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Étape 2**
->>
->> Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
->>
->> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
->> > [!primary]
->> >
->> > Si votre nom de domaine n'apparaît pas dans la liste qui s'affiche, cela signifie que sa zone DNS n'est pas gérée depuis votre espace client OVHcloud.<br>
->> > Déterminez son « bureau d'enregistrement » ainsi que les serveurs DNS auxquels il est associé via notre outil [WHOIS](/links/web/domains-whois).<br>
->> > Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Comment associer un nom de domaine à un site web existant ? - Ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) ».
->>
-> **Étape 3**
 >>
 >> Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHcloud. Vous avez la possibilité de filtrer le contenu du tableau par type d'enregistrement ou par nom de domaine.
 >>
@@ -152,7 +138,7 @@ Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement cha
 >>
 >> Passez à l'étape 4 pour visualiser les différents scénarios possibles et les actions à entreprendre.
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> |Scénarios possibles|Action à entreprendre|
 >> |---|---|

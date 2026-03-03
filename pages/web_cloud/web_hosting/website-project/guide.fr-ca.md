@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un site web - Réaliser votre projet en 5 étapes"
 excerpt: "Découvrez comment définir votre projet, publier votre site internet et créer des adresses e-mail avec votre solution d'hébergement web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -43,7 +43,17 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](/links/web/domains).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

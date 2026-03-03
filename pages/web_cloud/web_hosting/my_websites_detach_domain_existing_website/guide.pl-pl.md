@@ -1,7 +1,7 @@
 ---
 title: "Jak odłączyć nazwę domeny od istniejącej strony internetowej ?"
 excerpt: "Dowiedz się, jak odłączyć nazwę domeny lub poddomeny od istniejącej strony internetowej na Twoim hostingu"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie
@@ -18,7 +18,17 @@ Chcesz przypisać swoją nazwę domeny lub poddomenę do innej strony internetow
 - Posiadanie pakietu [hostingu OVHcloud](/links/web/hosting-multisite) kompatybilnego.
 - Posiadanie jednej lub więcej [nazw domen](/links/web/domains).
 - Możliwość zmiany konfiguracji swoich nazw domen z ich [stref DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -26,28 +36,22 @@ Chcesz przypisać swoją nazwę domeny lub poddomenę do innej strony internetow
 >
 > Odłączenie nazwy domeny lub poddomeny od strony internetowej na Twoim hostingu to czynność wrażliwa. W rzeczywistości po tej operacji Twoja strona internetowa nie będzie już dostępna w Internecie za pomocą swojej nazwy domeny i/lub poddomeny.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -57,7 +61,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Nowe okno prosi o potwierdzenie odłączenia nazwy domeny lub poddomeny.
 >>

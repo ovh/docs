@@ -1,7 +1,7 @@
 ---
 title: "Activating the application firewall"
 excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -40,7 +40,17 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - at least one [domain name](/links/web/domains) attached to the hosting
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -48,22 +58,16 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 /// details | Enable the application firewall on your entire web hosting in the PHP configuration
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> In the **Configuration** section, you will find the **Global PHP Version**.
 >> 
@@ -71,7 +75,7 @@ Click on the tabs below to view each of the **4** steps.
 >> 
 >> Click on the `...`{.action} button to the right of **Global PHP Version**, then on `Modify configuration`{.action}.
 >> 
-> **Step 4**
+> **Step 3**
 >> 
 >> In the window that opens, select the `Modify the current configuration`{.action} option and click on the `Next`{.action} button.
 >> 
@@ -83,28 +87,22 @@ Click on the tabs below to view each of the **4** steps.
 
 /// details | Enable the application firewall only on a specific domain name or subdomain
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >> 
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >> 
@@ -114,7 +112,7 @@ Click on the tabs below to view each of the **5** steps.
 >> 
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >> 
-> **Step 5**
+> **Step 4**
 >> 
 >> In the configuration window, tick the box `Enable the firewall`{.action}. You can also include the subdomain `www` in this configuration by ticking the corresponding box at the top (if it is also declared on the same website).
 >> 

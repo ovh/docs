@@ -1,7 +1,7 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -41,7 +41,17 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) attivo
 - Disporre di almeno un [dominio](/links/web/domains) associato all'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -49,22 +59,16 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 /// details | Abilitare il firewall applicativo sull'intero hosting web nella configurazione PHP
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione**, troverai l'indicazione **Versione PHP**.
 >>
@@ -72,7 +76,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Fai clic sul pulsante `...`{.action} a destra dell'indicazione **Versione PHP**, quindi su `Modifica la configurazione`{.action}.
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nella finestra che si apre, seleziona l'elemento `Modifica la configurazione attuale`{.action} e fai clic sul pulsante `Continua`{.action}.
 >>
@@ -84,28 +88,22 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 
 /// details | Abilitare il firewall applicativo solo su un dominio o sottodominio specifico
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![I miei siti](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel riquadro che appare, fai clic sul pulsante `>`{.action} a sinistra del nome del sito web desiderato per visualizzare i domini o sottodomini associati.
 >>
@@ -115,7 +113,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> ![Opzioni domini associati](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Nella finestra di configurazione, seleziona la casella `Attiva il firewall`{.action}. Puoi inoltre includere il sottodominio `www` in questa configurazione selezionando la casella corrispondente in alto (se presente sullo stesso sito web).
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Visualizar e gerir todos os seus websites a partir da Área de Cliente OVHcloud"
 excerpt: "Descubra como consultar e gerir os seus websites a partir da Área de Cliente OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objetivo
@@ -12,8 +12,18 @@ A vista `Websites` permite centralizar a apresentação do conjunto dos seus web
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [plano de alojamento web](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

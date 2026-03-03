@@ -1,7 +1,7 @@
 ---
 title: "Jak przypisać nazwę domeny do istniejącej strony internetowej ?"
 excerpt: "Dowiedz się, jak przypisać nazwę domeny lub poddomeny do istniejącej strony internetowej na Twojej ofercie hostingu"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,7 +32,17 @@ Możesz hostować wiele stron internetowych na jednej ofercie hostingu, nawet je
 - Posiadanie oferty [hostingu OVHcloud](/links/web/hosting-multisite) kompatybilnej.
 - Posiadanie jednej lub więcej [nazw domen](/links/web/domains).
 - Możliwość zmiany konfiguracji swoich nazw domen z poziomu ich [stref DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -46,34 +56,28 @@ Możesz hostować wiele stron internetowych na jednej ofercie hostingu, nawet je
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny i/lub aktywna strefa DNS znajdują się **w Twoim Panelu klienta OVHcloud**.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie strony internetowej, a następnie `Dodaj domenę`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Połączyć istniejącą domenę OVHcloud`{.action} i kliknij `Kontynuuj`{.action}.
 >>
@@ -88,7 +92,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >>
 >> Jeśli chcesz skorzystać z jednej z **opcji zaawansowanych**, aktywuj przycisk `Konfiguracja zaawansowana`{.action} i przejdź bezpośrednio do **kroku 7**. W przeciwnym razie przejdź do **kroku 6**.
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> Sprawdź, czy wszystkie wcześniej wprowadzone informacje są poprawne, a następnie kliknij `Kontynuuj`{.action}, aby zakończyć dodawanie nazwy domeny lub poddomeny do Twojej strony internetowej.
 >>
@@ -104,7 +108,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >> > [!primary]
 >> > Zmiana konfiguracji DNS Twojej nazwy domeny wymaga czasu propagacji, który może wynosić nawet 24 godziny, zanim będzie w pełni skuteczna.
 >>
-> **Krok 7**
+> **Krok 6**
 >>
 >> > [!primary]
 >> >
@@ -141,40 +145,34 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny nie znajduje się w Twoim koncie OVHcloud.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie strony internetowej, a następnie `Dodaj domenę`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Powiąż domenę zewnętrzną`{.action} i kliknij `Kontynuuj`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> Wpisz nazwę domeny (np. domain.tld) lub poddomenę (np. **sub**.domain.tld) do przypisania w polu **Nazwa domeny - wymagana**, które pojawi się poniżej.
 >>
@@ -192,7 +190,7 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 >> >
 >> > Jednak **wszystkie te funkcje można włączyć później, po dodaniu zewnętrznej nazwy domeny lub poddomeny do Twojej strony internetowej.** Aby to zrobić, skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
-> **Krok 7**
+> **Krok 6**
 >>
 >> Każde dodanie zewnętrznej nazwy domeny do OVHcloud wymaga dodatkowej, obowiązkowej weryfikacji. Pozwala to nam upewnić się, że dodanie zewnętrznej nazwy domeny jest uzasadnione. Otrzymasz więc wiadomość proszącą o zmianę konfiguracji DNS nazwy domeny.
 >>
@@ -216,40 +214,34 @@ Kliknij poniższe zakładki, aby wyświetlić każdy z **7** kroków.
 
 Ta część dotyczy tylko wtedy, gdy Twoja nazwa domeny jeszcze nie została zarejestrowana, ani u OVHcloud, ani u innego biura rejestracji. Inaczej mówiąc, dotyczy nazw domen, które jeszcze nie zostały zamówione.
 
-Kliknij poniższe zakładki, aby wyświetlić każdy z **6** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `⁝`{.action} po prawej stronie strony internetowej, a następnie `Dodaj domenę`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Zaznacz opcję `Zamawiam nową domenę`{.action} i kliknij `Kontynuuj`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
-> **Krok 6**
+> **Krok 5**
 >>
 >> Następnie zostaniesz przekierowany do naszej strony zamówień nazw domen. Wybierz swoją nową nazwę domeny w zależności od dostępności na rynku. Następnie postępuj zgodnie z instrukcjami kanału zakupowego aż do zatwierdzenia zamówienia.
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Come associare un nome di dominio a un sito web esistente"
 excerpt: "Questa guida ti mostra come associare un nome di dominio o un sottodominio a un sito web già esistente sul tuo hosting web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,7 +32,17 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i d
 - Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting-multisite) compatibile.
 - Disporre di uno o più [domini](/links/web/domains).
 - Poter modificare la configurazione dei tuoi domini dalle loro [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Essere connesso al tuo [Spazio Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -46,34 +56,28 @@ Puoi ospitare diversi siti web sulla stessa offerta di hosting web, anche se i d
 
 Questa parte si applica esclusivamente se il tuo nome di dominio e/o la sua zona DNS attiva si trovano **nel tuo Spazio Cliente OVHcloud**.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** passaggi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel tavolo che appare, fai clic sul pulsante `⁝`{.action} a destra del sito web interessato, quindi su `Aggiungi un dominio`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Seleziona l'opzione `Associa un dominio OVHcloud esistente`{.action} e fai clic su `Continua`{.action}.
 >>
@@ -88,7 +92,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 >> Se desideri utilizzare una delle **opzioni avanzate** disponibili, attiva il pulsante `Configurazione avanzata`{.action} e vai direttamente al **passagio 7**. Altrimenti, prosegui al **passagio 6**.
 >>
-> **Passaggio 6**
+> **Passaggio 5**
 >>
 >> Verifica che tutte le informazioni inserite precedentemente siano corrette, quindi fai clic su `Continua`{.action} per finalizzare l'aggiunta del tuo nome di dominio o del tuo sottodominio al tuo sito web.
 >>
@@ -104,7 +108,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >> > [!primary]
 >> > La modifica della configurazione DNS del tuo nome di dominio richiede un periodo di propagazione che può arrivare fino a 24 ore prima di essere pienamente efficace.
 >>
-> **Passaggio 7**
+> **Passaggio 6**
 >>
 >> > [!primary]
 >> >
@@ -141,40 +145,34 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 
 Questa parte si applica esclusivamente se il tuo nome di dominio non è presente nel tuo account OVHcloud.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** passaggi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel tavolo che appare, fai clic sul pulsante `⁝`{.action} a destra del sito web interessato, quindi su `Aggiungi un dominio`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Seleziona l'opzione `Associa un dominio esterno`{.action} e fai clic su `Continua`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Passaggio 6**
+> **Passaggio 5**
 >>
 >> Inserisci il nome di dominio (ad esempio: domain.tld) o il sottodominio (ad esempio: **sub**.domain.tld) da associare nel campo **Nome di dominio - obbligatorio** che appare in basso.
 >>
@@ -192,7 +190,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >> >
 >> > Tuttavia, **tutte queste funzionalità possono essere attivate in un secondo momento una volta che il nome di dominio o il sottodominio esterno è stato aggiunto al tuo sito web.** Per farlo, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/multisites_modify_domain).
 >>
-> **Passaggio 7**
+> **Passaggio 6**
 >>
 >> Ogni aggiunta di un nome di dominio esterno a OVHcloud richiede una validazione supplementare obbligatoria. Ciò ci permette di assicurarci che l'aggiunta del nome di dominio esterno sia legittima. Un messaggio ti inviterà quindi a modificare la configurazione DNS del nome di dominio.
 >>
@@ -216,40 +214,34 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 
 Questa parte si applica esclusivamente se il tuo nome di dominio non è ancora stato registrato, né presso OVHcloud né presso un altro ufficio di registrazione. In altre parole, riguarda i domini che non sono ancora stati sottoscritti.
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passaggi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nel tavolo che appare, fai clic sul pulsante `⁝`{.action} a destra del sito web interessato, quindi su `Aggiungi un dominio`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Passaggio 5**
+> **Passaggio 4**
 >>
 >> Seleziona l'opzione `Ordina un nuovo dominio`{.action} e fai clic su `Continua`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-new-step-1.png){.thumbnail}
 >>
-> **Passaggio 6**
+> **Passaggio 5**
 >>
 >> Verrai quindi reindirizzato alla nostra pagina commerciale per la sottoscrizione di un nome di dominio. Scegli il tuo nuovo nome di dominio in base alle disponibilità del mercato. Segui quindi le istruzioni del tunnel d'ordine fino alla validazione del buono d'ordine.
 >>

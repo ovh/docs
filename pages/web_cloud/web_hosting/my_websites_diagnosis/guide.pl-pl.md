@@ -1,7 +1,7 @@
 ---
 title: "Jak sprawdzić przypisanie 'nazwy domeny / strony internetowej'?"
 excerpt: "Użyj naszego narzędzia diagnostycznego, aby upewnić się, że Twoja domena lub poddomena jest poprawnie zadeklarowana z Twoją stroną internetową na Twoim hosting"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -29,40 +29,44 @@ Możesz hostować wiele stron internetowych w ramach jednej oferty hostingu, naw
 - Posiadanie oferty [hostingu OVHcloud](/links/web/hosting-multisite) zgodnej z tą funkcją.
 - Posiadanie jednej lub więcej [nazw domen](/links/web/domains).
 - Możliwość zmiany konfiguracji swoich nazw domen z poziomu [strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Zalogowanie się do swojego [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
 ### Uzyskanie dostępu do narzędzia diagnostycznego
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
 >> ![Strona internetowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> Nazwy domen i poddomen przypisane do Twojej strony internetowej będą widoczne.
 >>

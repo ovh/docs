@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie 
@@ -20,7 +20,17 @@ W ramach usługi hostingu OVHcloud otrzymujesz dostęp do przestrzeni dyskowej, 
 ## Wymagania początkowe
 
 - Posiadanie oferty [hostingu](/links/web/hosting) (nie dotyczy hostingu [Cloud Web](/links/web/hosting-cloud-web-offer)).
-- W zależności od użytej metody, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager) lub posiadanie hasła użytkownika FTP umożliwiającego zalogowanie do przestrzeni dyskowej. 
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -48,22 +58,16 @@ Określ również metodę przywracania, której użyjesz.
 >
 > Nasze roboty instalują na Twoim hostingu kopię zapasową, zanim usuną zawartość FTP, która zostanie zastąpiona przywróceniem danych.
 
-Aby sprawdzić rozmiar używany na Twoim hostingu,  kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Aby sprawdzić rozmiar używany na Twoim hostingu,  kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajduje się wzmianka **Przestrzeń dyskowa**.
 >>
@@ -98,34 +102,28 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/manager). W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> Na stronie, która się otworzy, kliknij przycisk `Przywróć kopię zapasową`{.action}.
 >>
 >> ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 4**
 >>
 >> W oknie, które się wyświetla wybierz z rozwijanego menu odpowiednią dla Ciebie datę:
 >>
@@ -139,7 +137,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> Po wybraniu daty, kliknij przycisk `Dalej`{.action}. 
 >>
-> **Etap 6**
+> **Krok 5**
 >>
 >> ![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 >>

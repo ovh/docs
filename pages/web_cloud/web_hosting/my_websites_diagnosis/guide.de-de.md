@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich die Zuordnung von Domainnamen und Websites prüfen?"
 excerpt: "Verwenden Sie unser Diagnose-Tool, um zu prüfen, ob Ihre Domain oder Subdomain korrekt mit Ihrer Website auf Ihrem Webhosting verknüpft ist"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -29,40 +29,44 @@ Sie können mehrere Webseiten auf derselben Webhosting Angebot nutzen, selbst we
 - Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting-multisite).
 - Sie verfügen über einen oder mehrere [Domainnamen](/links/web/domains).
 - Sie haben die erforderlichen Berechtigungen zur Verwaltung der [DNS-Zonen Ihrer Domainnamen](/pages/web_cloud/domains/dns_zone_edit).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
 ### Zugriff auf das Diagnose-Tool
 
-Klicken Sie auf die nachfolgenden Tabs, um die **5** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Meine Seiten`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> In der Tabelle klicken Sie auf den Button `>`{.action} links neben dem Namen der Website, um die zugehörigen Domainnamen oder Subdomain anzuzeigen.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Schritt 5**
+> **Schritt 4**
 >>
 >> Die Domains oder Subdomains, die mit Ihrer Website verknüpft sind, werden angezeigt. 
 >>

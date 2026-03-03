@@ -1,7 +1,7 @@
 ---
 title: "Erstellen Ihrer Website - So setzen Sie Ihr Projekt in 5 Schritten um"
 excerpt: "Erfahren Sie hier, wie Sie Ihr Projekt definieren, Ihre Website veröffentlichen und E-Mail-Adressen mit Ihrer Webhosting-Lösung erstellen"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -43,7 +43,17 @@ So sparen Sie Zeit bei der Administration und können sich etwa auf Folgendes ko
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie haben einen [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -93,7 +103,7 @@ Wenn Sie eine Website von einem anderen Hosting-Anbieter migrieren möchten, les
 
 /// details | Erstellen einer neuen Website
 
-Sie können Ihre Website vollständig selbst erstellen oder ein [CMS (Content Management System)](/links/web/hosting-cms-comparison) wie WordPress, PrestaShop, Joomla! oder Drupal verwenden. Klicken Sie je nach Ihrer Auswahl auf die folgenden Registerkarten:
+Sie können Ihre Website vollständig selbst erstellen oder ein [CMS (Content Management System)](/links/web/hosting-cms-comparison) wie WordPress, PrestaShop, Joomla! oder Drupal verwenden. Klicken Sie je nach Ihrer Auswahl auf die Tabs:
 
 > [!tabs]
 > **Ein CMS verwenden**

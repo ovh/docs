@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć subdomenę?"
 excerpt: "Dowiedz się, jak zdefiniować subdomenę i jak ją utworzyć w OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,9 +32,19 @@ Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej nazwy dome
 
 - Posiadanie co najmniej jednej [nazwy domeny](/links/web/domains);
 - Dysponowanie aktywną strefą DNS dla Twojej nazwy domeny. W razie potrzeby sprawdź przewodnik "[Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Dostęp do [panelu klienta OVHcloud](/links/manager);
 - Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## W praktyce
 
 **Podsumowanie**

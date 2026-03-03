@@ -1,7 +1,7 @@
 ---
 title: "FAQ Webhosting"
 excerpt: "Hier finden Sie Antworten zu den am häufigsten gestellten Fragen zu den OVHcloud Webhostings"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -431,7 +431,7 @@ Um dies zu korrigieren, folgen Sie diesen Schritten:
 2. Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie die betreffende Domain aus.
 3. Klicken Sie auf der angezeigten Seite auf den Tab `DNS-Server`{.action}.
 4. Notieren Sie sich anschließend die Namen der angegebenen DNS-Server und gehen Sie in den Tab `DNS-Zone`{.action} (rechts neben dem Tab `DNS-Server`{.action}).
-5. Vergleichen Sie in der angezeigten Tabelle (die die DNS-Zone der Domain darstellt) die `Ziele` der Einträge vom Typ `NS` in der DNS-Zone mit den zuvor abgerufenen DNS-Servernamen. Drei Fälle können auftreten. Klicken Sie auf die Registerkarten unten, um die einzelnen **3** Fälle anzuzeigen.
+5. Vergleichen Sie in der angezeigten Tabelle (die die DNS-Zone der Domain darstellt) die `Ziele` der Einträge vom Typ `NS` in der DNS-Zone mit den zuvor abgerufenen DNS-Servernamen. Drei Fälle können auftreten. Klicken Sie auf die Registerkarten unten, um die **3** Fälle anzuzeigen.
 
 > [!tabs]
 > **Fall 1**

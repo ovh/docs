@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites web sur votre offre d'hébergement web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -34,7 +34,17 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Pouvoir modifier la configuration de vos noms de domaine depuis la [zone DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -48,34 +58,28 @@ Vous souhaitez ajouter un nouveau site web sur votre hébergement web ?
 
 Cette partie s'applique uniquement si le nom de domaine (et/ou sa zone DNS active) avec lequel vous souhaitez créer votre site web se trouve **dans votre espace client OVHcloud**.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Cochez l'option `Associer un domaine OVHcloud existant`{.action} et cliquez sur `Continuer`{.action}.
 >>
@@ -98,7 +102,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> Si vous souhaitez personnaliser le nom du dossier racine ou utiliser l'une des **options avancées** disponibles, activez le bouton `Configuration avancée`{.action} et passez à **l'étape 6**. Sinon, poursuivez directement à **l'étape 7**.
 >>
-> **Étape 6**
+> **Étape 5**
 >>
 >> > [!primary]
 >> >
@@ -125,7 +129,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>     - [Hébergement web - Liste des adresses IP par cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
-> **Étape 7**
+> **Étape 6**
 >>
 >> OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 >>
@@ -135,7 +139,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> A contrario, si vous souhaitez installer manuellement votre site web, récupérez ses fichiers et téléversez-les dans le dossier racine approprié sur l'espace de stockage de votre hébergement web. Pour en savoir plus, consultez notre documentation « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
 >>
-> **Étape 8**
+> **Étape 7**
 >>
 >> Vérifiez que toutes les informations saisies précédemment sont correctes, puis cliquez sur `Continuer`{.action} pour finaliser l'ajout de votre nom de domaine ou de votre sous-domaine à votre site web.
 >>
@@ -157,40 +161,34 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 
 Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'est pas présent dans votre compte OVHcloud. Il peut s'agir d'un nom de domaine présent dans un autre compte OVHcloud ou enregistré chez un autre fournisseur.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Cochez l'option `Associer un domaine externe`{.action} et cliquez sur `Continuer`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Étape 6**
+> **Étape 5**
 >>
 >> Dans le champ **Nom du site**, renseignez le nom que vous souhaitez utiliser pour votre site web. Ce nom sera visible uniquement depuis l'onglet `Mes sites`{.action} de votre hébergement web.
 >>
@@ -210,7 +208,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >>
 >> Une fois les informations complétées, cliquez sur le bouton `Continuer`{.action}.
 >>
-> **Étape 7**
+> **Étape 6**
 >>
 >> > [!primary]
 >> >
@@ -234,7 +232,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 >> >
 >> > Pour retrouver la zone DNS active de votre nom de domaine, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels celui-ci est lié. Vous devrez valider uniquement le nom de domaine à l'aide du champ **TXT**, pas tous ses sous-domaines.
 >>
-> **Étape 8**
+> **Étape 7**
 >>
 >> OVHcloud met à disposition les modules WordPress, Joomla!, PrestaShop et Drupal. Ils permettent de disposer d'une structure de site web prête à l'emploi, installée automatiquement dans le dossier racine configuré précédemment. Pour en savoir plus, consultez notre documentation « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 >>
@@ -250,40 +248,34 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **8*
 
 Cette partie s'applique uniquement si vous souhaitez ajouter un site web avec un nom de domaine qui n'a pas encore été enregistré, que ce soit chez OVHcloud ou auprès d'un autre bureau d'enregistrement. En d'autres termes, elle concerne les noms de domaine qui n'ont pas encore été souscrits.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Au-dessus et à gauche du tableau qui apparaît, cliquez sur le bouton `Ajouter un site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Cochez l'option `Commander un nouveau domaine`{.action} et cliquez sur `Continuer`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
 >>
-> **Étape 6**
+> **Étape 5**
 >>
 >> Vous êtes alors redirigé vers notre page commerciale de souscription d'un nom de domaine. Choisissez votre nouveau nom de domaine en fonction des disponibilités du marché. Suivez ensuite les instructions du tunnel de commande jusqu'à la validation du bon de commande. Ceci sans souscrire en complément à un nouvel hébergement web.
 >>

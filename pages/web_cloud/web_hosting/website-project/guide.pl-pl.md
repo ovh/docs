@@ -1,7 +1,7 @@
 ---
 title: "Jak stworzyć stronę WWW - 5 etapów realizacji projektu"
 excerpt: "Dowiedz się, jak zdefiniować projekt, opublikować stronę WWW i utworzyć konta e-mail w ramach hostingu"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -43,7 +43,17 @@ Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i sku
 - Zakupienie [hostingu OVHcloud](/links/web/hosting).
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
 - Posiadanie [nazwy domeny](/links/web/domains).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

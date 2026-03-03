@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -431,7 +431,7 @@ Para corregirlo, siga estos pasos:
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. En la nueva página, haga clic en la pestaña `Servidores DNS`{.action}.
 4. Anote los nombres de los servidores DNS indicados y acceda a la pestaña `Zona DNS`{.action} (a la derecha de la pestaña `Servidores DNS`{.action}).
-5. En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada uno de los **3** casos.
+5. En la tabla que aparece (que representa la zona DNS del dominio), compare los `Destinos` de las entradas de tipo `NS` presentes en la zona DNS con los nombres de los servidores DNS recuperados anteriormente. Pueden darse tres situaciones. Haga clic en las fichas siguientes para ver cada una de las **3** casos.
 
 > [!tabs]
 > **Caso n° 1**

@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -33,7 +33,17 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Dispor de um [nome de domínio](/links/web/domains) e de uma zona DNS associada na OVHcloud.
 - Todos os serviços (Alojamento web, Nome de domínio, zona DNS) devem estar acessíveis a partir de uma única conta OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

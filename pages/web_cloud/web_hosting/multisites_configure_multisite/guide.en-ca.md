@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -34,7 +34,17 @@ Would you like to add a new website to your web hosting?
 - A compatible [OVHcloud Web Hosting plan](/links/web/hosting-multisite)
 - One or more [domain names](/links/web/domains)
 - The right to modify your domain name's configuration (the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit))
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -48,34 +58,28 @@ Would you like to add a new website to your web hosting?
 
 This section applies only if the domain name (and/or its active DNS zone) with which you want to create your website is **in your OVHcloud Control Panel**.
 
-Click on the tabs below to view each of the **8** steps.
+Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >>
 >> Above and to the left of the table that appears, click on the `Add a site`{.action} button.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Tick the `Associate an existing OVHcloud domain`{.action} option and click on `Continue`{.action}.
 >>
@@ -98,7 +102,7 @@ Click on the tabs below to view each of the **8** steps.
 >>
 >> If you wish to customise the name of the root folder or use one of the **Advanced options** available, activate the `Advanced configuration`{.action} button and proceed to **Step 6**. Otherwise, continue directly to **Step 7**.
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> > [!primary]
 >> >
@@ -125,7 +129,7 @@ Click on the tabs below to view each of the **8** steps.
 >>     - [Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 >>
-> **Step 7**
+> **Step 6**
 >>
 >> OVHcloud provides the WordPress, Joomla!, PrestaShop and Drupal modules. They allow you to have a ready-to-use website structure, automatically installed in the root folder configured previously. For more information, please refer to our documentation "[Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -135,7 +139,7 @@ Click on the tabs below to view each of the **8** steps.
 >>
 >> Conversely, if you want to manually install your website, retrieve its files and upload them to the appropriate root folder on the storage space of your web hosting. For more information, please refer to our documentation "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 >>
-> **Step 8**
+> **Step 7**
 >>
 >> Check that all the previously entered information is correct, then click on `Continue`{.action} to finalise the addition of your domain name or subdomain to your website.
 >>
@@ -157,40 +161,34 @@ Click on the tabs below to view each of the **8** steps.
 
 This section applies only if you want to add a website with a domain name that is not present in your OVHcloud account. It may be a domain name in another OVHcloud account or registered with another provider.
 
-Click on the tabs below to view each of the **8** steps.
+Click on the tabs below to view each of the **7** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >>
 >> Above and to the left of the table that appears, click on the `Add a site`{.action} button.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Tick the `Associate an external domain`{.action} option and click on `Continue`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> In the **Site name** field, enter the name you want to use for your website. This name will be visible only from the `My sites`{.action} tab of your web hosting.
 >>
@@ -210,7 +208,7 @@ Click on the tabs below to view each of the **8** steps.
 >>
 >> Once the information is completed, click on the `Continue`{.action} button.
 >>
-> **Step 7**
+> **Step 6**
 >>
 >> > [!primary]
 >> >
@@ -234,7 +232,7 @@ Click on the tabs below to view each of the **8** steps.
 >> >
 >> > To find the active DNS zone of your domain name, find the [DNS servers](/pages/web_cloud/domains/dns_server_edit) to which it is linked. You will only need to validate the domain name using the **TXT** field, not all its subdomains.
 >>
-> **Step 8**
+> **Step 7**
 >>
 >> OVHcloud provides the WordPress, Joomla!, PrestaShop and Drupal modules. They allow you to have a ready-to-use website structure, automatically installed in the root folder configured previously. For more information, please refer to our documentation "[Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -250,40 +248,34 @@ Click on the tabs below to view each of the **8** steps.
 
 This section applies only if you want to add a website with a domain name that has not yet been registered, either with OVHcloud or with another registrar. In other words, it concerns domain names that have not yet been subscribed to.
 
-Click on the tabs below to view each of the **6** steps.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >>
 >> Above and to the left of the table that appears, click on the `Add a site`{.action} button.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Tick the `Order a new domain`{.action} option and click on `Continue`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> You are then redirected to our commercial page for domain name subscription. Choose your new domain name according to market availability. Then follow the instructions in the order process until the order confirmation. This without subscribing to a new web hosting plan in addition.
 >>

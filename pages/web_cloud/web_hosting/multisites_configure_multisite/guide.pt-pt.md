@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -34,7 +34,17 @@ Quer adicionar um novo website ao seu alojamento web?
 - Ter um [serviço de alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
 - Dispor de um ou vários [domínios](/links/web/domains).
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -48,34 +58,28 @@ Quer adicionar um novo website ao seu alojamento web?
 
 Esta secção aplica-se apenas se o nome de domínio (e/ou a sua zona DNS activa) com o qual pretende criar o seu website se encontra **na sua Área de cliente OVHcloud**.
 
-Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **7** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um site`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Marque a opção `Associar um domínio OVHcloud existente`{.action} e clique em `Continuar`{.action}.
 >>
@@ -98,7 +102,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >>
 >> Se pretender personalizar o nome da pasta raiz ou utilizar uma das **opções avançadas** disponíveis, active o botão `Configuração avançada`{.action} e passe para a **etapa 6**. Caso contrário, continue directamente para a **etapa 7**.
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> > [!primary]
 >> >
@@ -125,7 +129,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >>     - [Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 >>     - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >>
-> **Etapa 7**
+> **Etapa 6**
 >>
 >> A OVHcloud disponibiliza os módulos WordPress, Joomla!, PrestaShop e Drupal. Estes permitem dispor de uma estrutura de website pronta a utilizar, instalada automaticamente na pasta raiz configurada anteriormente. Para saber mais, consulte a nossa documentação "[Instalar o seu website com um 'módulo 1 clique' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -135,7 +139,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >>
 >> Ao contrário, se pretender instalar manualmente o seu website, recupere os seus ficheiros e carregue-os na pasta raiz apropriada no espaço de armazenamento do seu alojamento web. Para saber mais, consulte a nossa documentação "[Publicar um site num alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 >>
-> **Etapa 8**
+> **Etapa 7**
 >>
 >> Verifique que todas as informações introduzidas anteriormente estão correctas, em seguida, clique em `Continuar`{.action} para finalizar a adição do seu nome de domínio ou subdomínio ao seu website.
 >>
@@ -157,40 +161,34 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 
 Esta secção aplica-se apenas se pretender adicionar um website com um nome de domínio que não está presente no seu conta OVHcloud. Pode tratar-se de um nome de domínio presente noutra conta OVHcloud ou registado por outro fornecedor.
 
-Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **7** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um sítio`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Marque a opção `Associar um domínio externo`{.action} e clique em `Continuar`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-sub-domain-external-step-1.png){.thumbnail}
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> No campo **Nome do site - obrigatório**, insira o nome que pretende utilizar para o seu website. Este nome será visível apenas no separador `Meus sites`{.action} do seu alojamento web.
 >>
@@ -210,7 +208,7 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 >>
 >> Uma vez preenchidas as informações, clique no botão `Continuar`{.action}.
 >>
-> **Etapa 7**
+> **Etapa 6**
 >>
 >> > [!primary]
 >> >
@@ -250,41 +248,35 @@ Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
 
 Esta parte aplica-se apenas se pretender adicionar um site web com um nome de domínio que ainda não foi registado, quer seja na OVHcloud ou em outro registo. Em outras palavras, refere-se aos nomes de domínio que ainda não foram subscritos.
 
-Clique nas janelas abaixo para visualizar cada uma das **8** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **7** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Acima e à esquerda da tabela que aparece, clique no botão `Adicionar um sítio`{.action}.
 >>
 >> ![My websites tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/tab.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Marque a opção `Encomendar um novo nome de domínio`{.action} e clique em `Continuar`{.action}.
 >>
 >> ![Add external domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/add-a-domain-or-subdomain-new-step-1.png){.thumbnail}
 >>
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> É então redirecionado para a nossa página comercial de subscrição de um nome de domínio. Escolha o seu novo nome de domínio com base nas disponibilidades do mercado. Segue-se depois as instruções do túnel de encomenda até à validação do bono de encomenda. Isto sem subscrever um novo alojamento web em complemento.
 >>

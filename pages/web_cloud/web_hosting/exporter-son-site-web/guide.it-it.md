@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Obiettivo
@@ -13,7 +13,17 @@ Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in for
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -30,28 +40,22 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma.
 
-Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Se non ne hai ancora uno, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
 >>
 >> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Visualizzi le informazioni associate allo spazio di storage. le informazioni di accesso allo spazio di storage.
 >>
@@ -71,28 +75,22 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 Una volta connesso al tuo spazio di archiviazione e in base ai siti web ospitati su di esso, potranno apparire diversi cartelle.
 
-Se necessario, individua in precedenza nell'ospedalità web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passaggi.
+Se necessario, individua in precedenza nell'ospedalità web il nome della cartella radice in cui è conservato il tuo sito web. A tale scopo, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `I miei siti`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Nella tabella che appare, per il sito web desiderato, osserva il `Cartella di root`{.action} che viene visualizzato.
 >>

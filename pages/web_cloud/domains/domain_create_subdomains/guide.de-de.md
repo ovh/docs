@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2026-02-10
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,9 +32,19 @@ Sie können für einen Domainnamen eine unbegrenzte Anzahl an Subdomains erstell
 
 - Sie verwalten mindestens einen [Domainnamen](/links/web/domains).
 - Sie verfügen über eine aktive DNS-Zone für Ihren Domainnamen. Bei Bedarf lesen Sie unsere Anleitung [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ausreichende Rechte zur Verwaltung aller betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung zur [Verwaltung der Kontakte Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 **Inhaltsübersicht**

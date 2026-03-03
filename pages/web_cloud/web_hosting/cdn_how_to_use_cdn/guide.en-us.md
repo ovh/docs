@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -20,8 +20,18 @@ In order for this to work, each server stores a part of your website in its cach
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -45,28 +55,22 @@ You will be redirected to a page where you can generate a purchase order. Once t
 
 #### If the CDN option is already enabled on your Web Hosting plan
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -76,7 +80,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options-cdn-disabled.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the window that opens, click on `Confirm`{.action} to activate the CDN.
 >>
@@ -99,28 +103,22 @@ In terms of SEO (search engine optimisation), the website loading speed is more 
 
 It can sometimes be useful to clear the CDN cache, especially when you modify your static files. For example, when deploying a new version of your website. You can clear the cache for each of your domain names and subdomains.
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -132,28 +130,22 @@ Click on the tabs below to view each of the **4** steps.
 
 #### Configuring Shared CDN options
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -163,7 +155,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> > [!warning]
 >> >
@@ -185,28 +177,22 @@ Click on the tabs below to view each of the **5** steps.
 
 ##### **Creating a cache rule** <a name="cacherules"></a>
 
-Click on the tabs below to view each of the **6** steps.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -216,7 +202,7 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Under **Cache rule**, click the `Add a rule`{.action} button.
 >>
@@ -232,7 +218,7 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Once you have made your choices, click the `Create the rule`{.action} button.
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> Rules will appear in the list. You can modify a rule by clicking on `...`{.action}, then on `Modify rule`{.action} or delete it by clicking `Delete the rule`{.action}.
 >>
@@ -246,28 +232,22 @@ Click on the tabs below to view each of the **6** steps.
 
 #### Configuring CDN Security options
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -277,7 +257,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> > [!primary]
 >> > The options explained below require a subscription to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
@@ -324,28 +304,22 @@ Click on the tabs below to view each of the **5** steps.
 
 #### Configuring CDN Advanced options
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -355,7 +329,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> > [!primary]
 >> >
@@ -403,28 +377,22 @@ Click on the tabs below to view each of the **5** steps.
 
 ##### **Create an advanced caching rule** <a name="cacherulesadv"></a>
 
-Click on the tabs below to view each of the **6** steps.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -434,7 +402,7 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5** 
+> **Step 4** 
 >>
 >> Under **Cache** rules, click the `Add a rule`{.action} button.
 >>
@@ -452,7 +420,7 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Once you have made your choices, click the `Create rule`{.action} button.
 >>
-> **Step 6** 
+> **Step 5** 
 >>
 >> Rules appear in a list. You can edit a rule by clicking `...`{.action} to the right of the rule, then `Edit Rule`{.action}. You can delete it by clicking `Delete Rule`{.action}.
 >>
@@ -506,28 +474,22 @@ This action allows you to disable the CDN for one or more of your domain names o
 >
 > Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This occurs because some parts of the DNS network still redirect requests to the CDN IP address linked to your Web Hosting plan.
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >>
@@ -537,7 +499,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Untick "Activate the CDN", click `Next`{.action} and then `Confirm`{.action}.
 >>

@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2026-02-10
+updated: 2026-03-03
 ---
 
 <style>
@@ -32,9 +32,19 @@ You can create an infinite number of subdomains from a single domain name.
 
 - You have at least one [domain name](/links/web/domains).
 - You have an active DNS zone for your domain name. If you need further guidance, please refer to our guide on "[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create)".
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all of the services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Instructions
 
 **Content overview**

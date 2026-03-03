@@ -1,7 +1,7 @@
 ---
 title: "Jak rozpocząć korzystanie z hostingu WWW"
 excerpt: 'Dowiedz się, jak zamieścić w Internecie nową stronę WWW za pomocą opcji"Moduły za 1 kliknięciem", jak utworzyć nowy spersonalizowany adres e-mail z nazwą domeny, a wszystko to za pomocą naszego rozwiązania hostingowego'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -33,7 +33,17 @@ Chcesz stworzyć stronę WWW dla swojej firmy lub własny blog? Potrzebujesz skl
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany.
 - Posiadanie domeny [domena](/links/web/domains) oraz powiązanej strefy DNS w OVHcloud.
 - Wszystkie usługi (hosting, domena, strefa DNS) muszą być dostępne z jednego konta OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

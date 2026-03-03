@@ -1,7 +1,7 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -41,7 +41,17 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'au moins un [nom de domaine](/links/web/domains) attaché à l'hébergement.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -49,22 +59,16 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 /// details | Activer le pare-feu applicatif sur l'ensemble de votre hébergement web dans la configuration PHP
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Version PHP Globale**.
 >>
@@ -72,7 +76,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de la mention **Version PHP Globale**, puis sur `Modifier la configuration`{.action}.
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration courante`{.action} et cliquez sur le bouton `Suivant`{.action}.
 >>
@@ -84,28 +88,22 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 /// details | Activer le pare-feu applicatif uniquement sur un nom de domaine ou un sous-domaine spécifique
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
@@ -115,7 +113,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case correspondante en haut (si ce dernier est également déclaré sur le même site web).
 >>

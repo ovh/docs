@@ -1,7 +1,7 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie 
@@ -15,11 +15,21 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting) zawierającej co najmniej jedną bazę danych.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Skonfigurowany plik "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" musi znajdować się w katalogu głównym FTP Twojego hostingu.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
 - Domen (z poddomeną, jeśli to konieczne) używany będzie do Twojej strony internetowej i musi zostać zadeklarowany za pomocą karty [Moje strony](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) na Twojej hostingu OVHcloud.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

@@ -1,7 +1,7 @@
 ---
 title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Ziel 
@@ -21,7 +21,17 @@ Möglicherweise wird in Ihrem Webbrowser die Fehlerseite "**Seite nicht installi
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie verfügen über die erforderlichen Berechtigungen zum Verwalten der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) des Domainnamens.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
@@ -34,28 +44,22 @@ Mit den folgenden Schritten können Sie in beiden Fällen den Fehler `Seite nich
 
 ### 1 - Überprüfen Sie die Deklaration Ihres Domainnamens oder Ihrer Subdomain auf der Webseite, die auf Ihrem Webhosting bereitgestellt wird <a name="check-my-websites"></a>
 
-Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Meine Seiten`{.action}.
 >>
 >> ![Meine Webseiten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Klicken Sie in der angezeigten Tabelle auf die Schaltfläche `>`{.action} links neben dem Namen der betreffenden Webseite, um die zugeordneten Domainnamen und Subdomänen anzuzeigen.
 >>
@@ -81,22 +85,16 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die ak
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren
 
-Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Im Feld **Allgemeine Informationen** finden Sie die Adresse unter **IPv4**.
 >>
@@ -116,28 +114,16 @@ Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung
 >
 > Wenn Sie die mit Ihrer Domain verbundenen DNS-Server direkt ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
 
-Klicken Sie hierzu auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Schritt 2**
->>
->> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
->>
->> ![DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
->>
->> > [!primary]
->> >
->> > Wenn Ihr Domainname nicht in der angezeigten Liste aufgeführt ist, wird seine DNS-Zone nicht über Ihr OVHcloud Kundencenter verwaltet.<br>
->> > Bestimmen Sie über unser Tool [WHOIS](/links/web/domains-whois) seinen Registrar und die DNS-Server, mit denen er verbunden ist.<br>
->> > Rufen Sie die entsprechende DNS-Zone ab und passen Sie sie ggf. an, indem Sie sich die dafür vorgesehene Rubrik in der Anleitung "[Wie verknüpfe ich einen Domainnamen mit einer bestehenden Webseite? - Externer Domainname hinzufügen](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website)" ansehen.
->>
-> **Schritt 3**
 >>
 >> Die angezeigte Tabelle zeigt für jede Zeile einen mit Ihrer Domain bei OVHcloud verbundenen DNS-Eintrag an. Sie können den Inhalt der Tabelle nach Eintragstyp oder Domainname filtern.
 >>
@@ -151,7 +137,7 @@ Klicken Sie hierzu auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 >> Fahren Sie mit Schritt 4 fort, um die verschiedenen Szenarien und zu ergreifenden Maßnahmen anzuzeigen.
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> |Mögliche Szenarien|Auszuführende Aktion|
 >> |---|---|

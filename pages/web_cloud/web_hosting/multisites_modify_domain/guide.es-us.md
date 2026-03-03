@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Modificar un dominio ya asociado a un alojamiento"
 excerpt: "Descubra cómo modificar la configuración de asociación de un dominio o subdominio ya declarado en su plan de hosting"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objetivo
@@ -19,10 +19,20 @@ Al utilizar el alojamiento web o actualizar el sitio web, es posible que deba mo
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Tener uno o varios [dominios](/links/web/domains).
 - Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía "[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -30,28 +40,22 @@ Al utilizar el alojamiento web o actualizar el sitio web, es posible que deba mo
 >
 > La modificación de la configuración de asociación de un dominio o subdominio puede, en caso de mala manipulación, provocar la interrupción del acceso a sus servicios (su sitio web). Si no está seguro de los cambios que debe realizar, puede ponerse en contacto con un proveedor especializado
 
-Para modificar los parámetros de asociación de un dominio o subdominio ya declarado en su oferta de alojamiento web, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
+Para modificar los parámetros de asociación de un dominio o subdominio ya declarado en su oferta de alojamiento web, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios y subdominios asociados.
 >>
@@ -61,7 +65,7 @@ Para modificar los parámetros de asociación de un dominio o subdominio ya decl
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> Aparecerá la siguiente ventana: 
 >>

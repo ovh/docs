@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - przepisz URL dostępu do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
 excerpt: "Dowiedz się, jak zmienić adres URL dostępu do Twojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Wprowadzenie
@@ -29,6 +29,18 @@ Na przykład Apache pobiera zapytania HTTP generowane przez przeglądarki intern
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 > [!warning]

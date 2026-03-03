@@ -1,7 +1,7 @@
 ---
 title: "Publicar un sitio web en internet"
 excerpt: "Descubra cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objetivo
@@ -15,8 +15,18 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -63,28 +73,22 @@ Para conectarse al espacio de almacenamiento, necesitará lo siguiente:
 - la dirección del servidor;
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de esta información, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
 >>
 >> ![FTP - SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último.
 >>

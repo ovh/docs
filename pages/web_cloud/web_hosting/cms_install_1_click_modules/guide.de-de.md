@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Ziel 
@@ -14,12 +14,22 @@ updated: 2026-02-01
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer Datenbank.
 - Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Sie können den Stand der verschiedenen Versionen auf [dieser Seite](https://webhosting-infos.hosting.ovh.net/) überprüfen. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
 - Im FTP-Wurzelverzeichnis Ihres Webhostings muss eine konfigurierte [.ovhconfig Datei](/pages/web_cloud/web_hosting/configure_your_web_hosting) vorhanden sein.
 - Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
 - Der Domainname (mit Subdomain, falls gewünscht), der für Ihre Website verwendet werden soll, muss über den Tab [Meine Seiten](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) Ihres Webhostings hinzugefügt werden.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

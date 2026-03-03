@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
 excerpt: "Find out how to rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
   
@@ -30,6 +30,18 @@ The **mod_rewrite** module offers an infinite number of possibilities. Below are
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
   
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 > [!warning]

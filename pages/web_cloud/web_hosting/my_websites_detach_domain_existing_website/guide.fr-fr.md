@@ -1,7 +1,7 @@
 ---
 title: "Comment détacher un nom de domaine d'un site web existant ?"
 excerpt: "Découvrez comment détacher un nom de domaine ou un sous-domaine d'un site web déjà existant sur votre hébergement web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objectif
@@ -18,7 +18,17 @@ Vous voulez associer votre nom de domaine ou votre sous-domaine à un autre site
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou de plusieurs [noms de domaine](/links/web/domains).
 - Pouvoir modifier la configuration de vos noms de domaine depuis leurs [zones DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -26,28 +36,22 @@ Vous voulez associer votre nom de domaine ou votre sous-domaine à un autre site
 >
 > Détacher un nom de domaine ou un sous-domaine d'un site web présent sur votre hébergement web est une manipulation sensible. En effet, après cette opération, votre site web ne sera plus accessible sur Internet avec votre nom de domaine et/ou sous-domaine.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `>`{.action} situé à gauche du nom du site web concerné pour afficher les noms de domaine et sous-domaines associés.
 >>
@@ -57,7 +61,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> La nouvelle fenêtre qui s'ouvre vous demande de confirmer le détachement du nom de domaine ou du sous-domaine.
 >>

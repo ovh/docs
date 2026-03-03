@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -14,12 +14,22 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have an [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database.
 - Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. You can check the status of the different versions on [this page](https://webhosting-infos.hosting.ovh.net/). If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
 - A configured [.ovhconfig file](/pages/web_cloud/web_hosting/configure_your_web_hosting) must be present in the FTP root of your web hosting plan.
 - If you want to install the 1-click module in an existing folder, this folder must be empty.
 - The domain name (with subdomain if desired) that will be used for your website must be declared via the [My sites](/pages/web_cloud/web_hosting/my_websites_add_domain_existing_website) tab on your web hosting.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

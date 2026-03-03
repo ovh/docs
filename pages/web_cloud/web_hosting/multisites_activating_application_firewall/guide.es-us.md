@@ -1,7 +1,7 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -41,7 +41,17 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
 - Tener al menos un [dominio](/links/web/domains) asociado al alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 
@@ -49,22 +59,16 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 /// details | Activar el firewall de aplicación en todo su alojamiento web en la configuración PHP
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Versión PHP global**.
 >>
@@ -72,7 +76,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 >>
 >> Haga clic en el botón `...`{.action} a la derecha de la mención **Versión PHP global**, y luego en `Editar la configuración`{.action}.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la ventana que se abre, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.
 >>
@@ -84,28 +88,22 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
 /// details | Activar el firewall de aplicación únicamente en un dominio o subdominio específico
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Mis sitios`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la tabla que aparece, haga clic en el botón `>`{.action} situado a la izquierda del nombre del sitio web correspondiente para mostrar los dominios o subdominios asociados.
 >>
@@ -115,7 +113,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> En la ventana de configuración, marque la casilla `Activar el firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla correspondiente en la parte superior (si también está declarado en el mismo sitio web).
 >>

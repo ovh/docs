@@ -1,7 +1,7 @@
 ---
 title: "How to detach a domain name from an existing website?"
 excerpt: "Find out how to detach a domain name or subdomain from an existing website on your web hosting"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -18,7 +18,17 @@ Do you want to associate your domain name or subdomain with another website on o
 - A compatible [OVHcloud web hosting plan](/links/web/hosting-multisite)
 - One or more [domain names](/links/web/domains)
 - Access to modify the configuration of the [DNS zones of your domain names](/pages/web_cloud/domains/dns_zone_edit)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -26,28 +36,22 @@ Do you want to associate your domain name or subdomain with another website on o
 >
 > Detaching a domain name or subdomain from a website on your web hosting is a sensitive operation. Indeed, after this operation, your website will no longer be accessible on the Internet using your domain name and/or subdomain.
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >> 
 >> On the page that pops up, click on the `My sites`{.action} tab.
 >> 
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >> 
-> **Step 4**
+> **Step 3**
 >> 
 >> In the table that appears, click on the `>`{.action} button to the left of the name of the website to display the associated domain names or subdomains.
 >> 
@@ -57,7 +61,7 @@ Click on the tabs below to view each of the **5** steps.
 >> 
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >> 
-> **Step 5**
+> **Step 4**
 >>
 >> The new window that opens asks you to confirm the detachment of the domain name or subdomain.
 >>

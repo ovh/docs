@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -41,28 +41,32 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting).
 - Posiadanie co najmniej jednej [domeny](/links/web/domains) przypisanej do hostingu
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
 /// details | Włączanie zapory aplikacji na całym obszarze hostingu sieciowego w konfiguracji PHP
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Konfiguracja** znajdziesz wpis **Ogólna wersja PHP**.
 >>
@@ -70,7 +74,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 >> Kliknij przycisk `...`{.action} po prawej stronie wpisu **Ogólna wersja PHP**, a następnie kliknij `Zmień konfigurację`{.action}.
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> W otwartej oknie wybierz pozycję `Zmień bieżącą konfigurację`{.action} i kliknij przycisk `Dalej`{.action}.
 >>
@@ -82,28 +86,22 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 /// details | Włączanie zapory aplikacji tylko na konkretnej domenie lub poddomenie
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Moje strony`{.action}.
 >>
 >> ![Moje strony](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etap 4**
+> **Krok 3**
 >>
 >> W tabeli, która się pojawi, kliknij przycisk `>`{.action} po lewej stronie nazwy strony internetowej, aby wyświetlić przypisane domeny lub poddomeny.
 >>
@@ -113,7 +111,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **5** etapy.
 >>
 >> ![Opcje przypisanych domen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etap 5**
+> **Krok 4**
 >>
 >> W oknie konfiguracji zaznacz pole `Włącz firewall`{.action}. Możesz również uwzględnić poddomenę `www` w tej konfiguracji, zaznaczając odpowiednie pole u góry (jeśli ta poddomena również została zadeklarowana na tej samej stronie internetowej).
 >>

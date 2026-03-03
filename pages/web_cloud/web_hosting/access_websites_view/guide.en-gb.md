@@ -1,7 +1,7 @@
 ---
 title: "View and manage all your websites from the OVHcloud Control Panel"
 excerpt: "Find out how to view and manage all of your websites via the OVHcloud Control Panel"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objective
@@ -12,8 +12,18 @@ The `Websites` view allows you to centrally display all of your websites, regard
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - An [OVHcloud Web Hosting plan](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

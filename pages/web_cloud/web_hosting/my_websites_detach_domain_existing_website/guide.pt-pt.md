@@ -1,7 +1,7 @@
 ---
 title: "Como desassociar um nome de domínio de um site web existente"
 excerpt: "Descubra como desassociar um nome de domínio ou subdomínio de um site web já existente no seu alojamento web"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objetivo
@@ -18,7 +18,17 @@ Deseja associar o seu nome de domínio ou subdomínio a outro site web num dos s
 - Dispor de uma oferta de [alojamento web OVHcloud](/links/web/hosting-multisite) compatível.
 - Dispor de um ou vários [nomes de domínio](/links/web/domains).
 - Poder modificar a configuração dos seus nomes de domínio a partir das [zonas DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Estar ligado à sua [Área de Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -26,28 +36,22 @@ Deseja associar o seu nome de domínio ou subdomínio a outro site web num dos s
 >
 > Desassociar um nome de domínio ou subdomínio de um site web no seu alojamento web é uma operação sensível. De facto, após esta operação, o seu site web já não será acessível na Internet com o seu nome de domínio e/ou subdomínio.
 
-Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique [nesta ligação](/links/control-panel/web-hosting) e selecione o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, clique no separador `Meus sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na tabela que surge, clique no botão `>`{.action} à esquerda do nome do site relevante para visualizar os nomes de domínio ou subdomínios associados.
 >>
@@ -57,7 +61,7 @@ Clique nas janelas abaixo para visualizar cada uma das **5** etapas.
 >>
 >> ![Associated domains options](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/associated-domains-options.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> A nova janela que se abre pede-lhe para confirmar a desassociação do nome de domínio ou subdomínio.
 >>

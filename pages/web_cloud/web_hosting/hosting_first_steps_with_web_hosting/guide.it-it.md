@@ -1,7 +1,7 @@
 ---
 title: "Come eseguire le prime operazioni sul tuo hosting Web"
 excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 <style>
@@ -33,7 +33,17 @@ Vuoi creare un sito Internet per la tua azienda o un blog personale? Hai bisogno
 - Aver ricevuto l’email di conferma dell’installazione del tuo hosting Web.
 - Disporre di un [dominio](/links/web/domains) e di una zona DNS associata in OVHcloud.
 - Tutti i servizi (Hosting Web, Domini, Zona DNS) devono essere accessibili da un unico account OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

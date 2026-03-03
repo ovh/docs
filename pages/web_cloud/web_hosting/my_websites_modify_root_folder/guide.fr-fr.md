@@ -1,7 +1,7 @@
 ---
 title: "Comment modifier le dossier racine d'un site web existant ?"
 excerpt: "Découvrez comment modifier le dossier racine déclaré pour un site web déjà existant sur votre hébergement web depuis votre espace client OVHcloud"
-updated: 2026-02-01
+updated: 2026-03-03
 ---
 
 ## Objectif
@@ -25,7 +25,17 @@ Au cours de l'utilisation de vos services, vous pouvez être amené à :
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting-multisite) compatible.
 - Disposer d'un ou de plusieurs [noms de domaine](/links/web/domains).
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -43,34 +53,28 @@ Au cours de l'utilisation de vos services, vous pouvez être amené à :
 >
 > En effet, la suite de ce guide décrit uniquement la procédure permettant de modifier, depuis votre espace client OVHcloud, le dossier racine initialement défini pour votre site web. Cette action est obligatoire afin que le site web affiche le contenu du nouveau dossier, en remplacement de l'ancien.
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Mes sites`{.action}.
 >>
 >> ![My Websites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Dans le tableau qui apparaît, cliquez sur le bouton `⁝`{.action} situé à droite du site web concerné, puis sur `Modifier un site`{.action}.
 >>
 >> ![Website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/my-websites/website-options.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> /////// En attente du staging //////////////////////////////////
 
