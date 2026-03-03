@@ -70,7 +70,7 @@ The following window will appear:
 >>
 >> Once you have set the parameters, click `Next`{.action}.
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
@@ -78,7 +78,7 @@ The following window will appear:
 >>
 >> Once you have chosen and confirmed your password, click `Next`{.action}.
 >>
-> **Step 7**
+> **Step 6**
 >>
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>

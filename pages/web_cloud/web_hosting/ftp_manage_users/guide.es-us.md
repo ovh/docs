@@ -69,7 +69,7 @@ Para crear un nuevo usuario FTP en un alojamiento web desde el área de cliente 
 >>
 >> Una vez que haya definido los parámetros, haga clic en `Siguiente`{.action}.
 >>
-> **Etapa 6**
+> **Etapa 5**
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
@@ -77,7 +77,7 @@ Para crear un nuevo usuario FTP en un alojamiento web desde el área de cliente 
 >>
 >> Una vez que haya elegido y confirmado la contraseña, haga clic en `Siguiente`{.action}.
 >>
-> **Etapa 7**
+> **Etapa 6**
 >>
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>

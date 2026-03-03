@@ -103,7 +103,7 @@ Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spa
 
 Come accedere alle statistiche e ai log:
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**

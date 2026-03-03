@@ -70,7 +70,7 @@ Um über Ihr OVHcloud Kundencenter einen neuen FTP-Benutzer auf Ihrem Webhosting
 >>
 Nachdem Sie die Einstellungen festgelegt haben, klicken Sie auf `Weiter`{.action}.
 >>
-> **Schritt 6**
+> **Schritt 5**
 >>
 >> ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 >>
@@ -78,7 +78,7 @@ Nachdem Sie die Einstellungen festgelegt haben, klicken Sie auf `Weiter`{.action
 >>
 >> Wenn Sie Ihr Passwort ausgewählt und bestätigt haben, klicken Sie auf `Weiter`{.action}.
 >>
-> **Schritt 7**
+> **Schritt 6**
 >>
 >> ![FTP-SSH create user step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-3.png){.thumbnail}
 >>

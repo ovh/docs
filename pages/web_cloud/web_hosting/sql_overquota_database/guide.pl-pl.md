@@ -84,7 +84,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >>
 >> Nowa strona wyświetla tabelę zawierającą utworzone bazy danych.
 >>
-![Go to phpMyAdmin](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+>> ![Go to phpMyAdmin](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 >>
 >> Zapisz `Nazwa użytkownika` i `Adres serwera` **bazy danych, której baza danych jest przepełniona**. Informacje te są widoczne w tabeli zawierającej listę Twoich baz danych. 
 >>
