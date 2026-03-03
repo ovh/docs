@@ -196,4 +196,3 @@ Si ces commandes retournent des résultats, l’intégration **Keycloak ↔ Open
 
 - [Documentation Keycloak – OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/#_oidc)
 - [Documentation OpenStack Keystone](https://docs.openstack.org/keystone/latest/)
-- [Documentation OVHcloud OPCP](https://docs.opcp.ovh)
