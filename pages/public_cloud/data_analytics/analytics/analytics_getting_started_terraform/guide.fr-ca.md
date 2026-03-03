@@ -103,7 +103,7 @@ resource "ovh_cloud_project_database" "service" {
   }
 }
 
-resource "ovh_cloud_project_database_mongodb_user" "dbuser" {
+resource "ovh_cloud_project_database_opensearch_user" "analyticsuser" {
   service_name = ovh_cloud_project_database.service.service_name
   cluster_id   = ovh_cloud_project_database.service.id
   name         = var.access.name
