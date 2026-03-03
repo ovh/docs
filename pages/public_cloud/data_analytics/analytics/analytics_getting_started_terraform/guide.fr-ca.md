@@ -32,16 +32,22 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
+To retrieve this information, follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
+Specifically, you have to generate these credentials via the OVHcloud token generation page with the following rights:
 
 - **GET** `/cloud/project/*/database/*`
 - **POST** `/cloud/project/*/database/*`
 - **PUT** `/cloud/project/*/database/*`
 - **DELETE** `/cloud/project/*/database/*`
 
-When you have successfully generated your OVHcloud tokens, please save them as you will have to use them very soon.
+> [!tabs]
+> EU region
+>> [Generate OVHcloud API tokens (EU)](https://auth.eu.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+> CA region
+>> [Generate OVHcloud API tokens (CA)](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+
+Once you have generated your tokens, save them — you will need them shortly.
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
@@ -53,17 +59,17 @@ You will also use this information in Terraform resources definition files.
 
 ### Step 2: Gather the set of required parameters
 
-In order to create a new OpenSearch cluster, you will need to specify at least:
+To create a new OpenSearch cluster, specify at least:
 
-- the _engine_ (e.g. "clickhouse")
-- the _version_ (e.g. "25")
+- the _engine_ (e.g. "opensearch")
+- the _version_ (e.g. "3.3")
 - the _region_ (e.g. "EU-WEST-PAR")
 - the _plan_ (e.g. "production")
 - the _flavor_ of the cluster (e.g. "b3-8")
 
 ### Step 3: Create Terraform files
 
-First, create a `main.tf` file defining the resources that will be created
+First, create a `main.tf` file defining the resources that will be created.
 
 ```bash
 terraform {
@@ -207,7 +213,7 @@ terraform init
 
 The [init](https://www.terraform.io/cli/commands/init) command will initialize your working directory which contains `.tf` configuration files.
 
-It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
+Run it first for any new configuration, or after checking out a configuration from a git repository.
 
 The `init` command will:
 
@@ -239,9 +245,9 @@ export URI=$(terraform output -raw cluster_uri)
 
 And that's it, the OpenSearch cluster is created.
 
-## How to deploy with Another engine
+## How to deploy with another engine
 
-In this guide, we explained how to deploy an OpenSearch service but you can find example for Kafka service here and tweak them according to your needs:
+This guide covered deploying an OpenSearch service. You can find a Kafka example here:
 
 [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
 

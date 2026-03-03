@@ -32,16 +32,22 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
+To retrieve this information, follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://auth.eu.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
+Specifically, you have to generate these credentials via the OVHcloud token generation page with the following rights:
 
 - **GET** `/cloud/project/*/database/*`
 - **POST** `/cloud/project/*/database/*`
 - **PUT** `/cloud/project/*/database/*`
 - **DELETE** `/cloud/project/*/database/*`
 
-When you have successfully generated your OVHcloud tokens, please save them as you will have to use them very soon.
+> [!tabs]
+> EU region
+>> [Generate OVHcloud API tokens (EU)](https://auth.eu.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+> CA region
+>> [Generate OVHcloud API tokens (CA)](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+
+Once you have generated your tokens, save them — you will need them shortly.
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
@@ -53,7 +59,7 @@ You will also use this information in Terraform resources definition files.
 
 ### Step 2: Gather the set of required parameters
 
-In order to create a new MongoDB cluster, you will need to specify at least:
+To create a new MongoDB cluster, specify at least:
 
 - the _engine_ (e.g. "mongodb")
 - the _version_ (e.g. "8.2")
@@ -63,7 +69,7 @@ In order to create a new MongoDB cluster, you will need to specify at least:
 
 ### Step 3: Create Terraform files
 
-First, create a `main.tf` file defining the resources that will be created
+First, create a `main.tf` file defining the resources that will be created.
 
 ```bash
 terraform {
@@ -147,8 +153,8 @@ variable "access" {
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API. Other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-ca` for OVHcloud North-America API
 
 Then, create a `secrets.tfvars` file containing the required variables values:
 
@@ -207,7 +213,7 @@ terraform init
 
 The [init](https://www.terraform.io/cli/commands/init) command will initialize your working directory which contains `.tf` configuration files.
 
-It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
+Run it first for any new configuration, or after checking out a configuration from a git repository.
 
 The `init` command will:
 
@@ -229,7 +235,7 @@ The plan is OK for us, so let's [apply](https://www.terraform.io/cli/commands/ap
 terraform apply -var-file=secrets.tfvars -auto-approve
 ```
 
-Finally export the user credentials and the URI
+Finally export the user credentials and the URI:
 
 ```bash
 export PASSWORD=$(terraform output -raw user_password)
@@ -241,7 +247,7 @@ And, voilà, the MongoDB cluster is created.
 
 ## How to deploy with other engines
 
-In this guide, we explained how to deploy a MongoDB service but you can find example for other database engine here and tweak them according to your needs :
+This guide covered deploying a MongoDB service. You can find examples for other engines here:
 
 > [!tabs]
 > MySQL
