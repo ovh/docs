@@ -33,20 +33,20 @@ Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią host
 Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 >>
 >> ![Informacje ogólne](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego Web Cloud Databases. Będzie on dostępny w kolumnie po lewej stronie w `Web Cloud Databases`{.action}.
 

@@ -31,19 +31,19 @@ Le soluzioni [Web Cloud Databases](/links/web/databases) possono essere attivate
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Configurazione** trovi la voce **Web Cloud Databases**. Clicca sul pulsante `...`{.action} a destra e poi su `Scollega`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Nella nuova pagina seleziona la nuova tariffazione per la tua soluzione Web Cloud Databases e segui gli step fino al saldo dell’ordine.
 >>

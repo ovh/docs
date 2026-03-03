@@ -31,19 +31,19 @@ Rozwiązania [Web Cloud Databases](/links/web/databases) można włączyć bezp�
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> W ramce **Konfiguracja** znajduje się wzmianka **Web Cloud Databases**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie `Odłącz`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Na nowej stronie, która się wyświetli, wybierz nowy cennik usługi Web Cloud Databases i wykonaj kolejne kroki, aż do wpłynięcia płatności.
 >>
