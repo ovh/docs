@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Eigenes SSL-Zertifikat installieren"
 excerpt: "Erfahren Sie hier, wie Sie ein SSL-Zertifikat eines externen Anbieters auf Ihrem OVHcloud Webhosting importieren und installieren"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
   
 ## Ziel  

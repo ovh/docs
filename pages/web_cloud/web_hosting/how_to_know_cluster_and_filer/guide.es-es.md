@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo conocer su cluster y su filer"
 excerpt: "Cómo encontrar el número de cluster y/o el número de filer en el que se encuentra su alojamiento web"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

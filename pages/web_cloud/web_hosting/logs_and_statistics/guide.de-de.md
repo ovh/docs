@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Statistiken und Logs einer Website einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Website auf Ihrem Webhosting einsehen"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Ziel

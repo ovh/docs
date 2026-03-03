@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - CDN Statistiken und Logs einsehen"
 excerpt: "Erfahren Sie, wie Sie die CDN Statistiken und Logs Ihrer Website mit Ihrem Webhosting einsehen können"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Ziel

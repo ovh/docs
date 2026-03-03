@@ -1,7 +1,7 @@
 ---
 title: "Comment retrouver le nom de votre offre d'hébergement web"
 excerpt: "Découvrez comment identifier le type d'offre d'hébergement web dont vous disposez depuis votre espace client OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Objectif

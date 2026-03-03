@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Obiettivo

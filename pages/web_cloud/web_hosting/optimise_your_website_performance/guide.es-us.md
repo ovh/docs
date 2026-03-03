@@ -1,7 +1,7 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

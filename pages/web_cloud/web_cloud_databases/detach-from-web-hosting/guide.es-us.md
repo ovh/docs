@@ -1,7 +1,7 @@
 ---
 title: "Desvincular mi solución Web Cloud Databases de un alojamiento web"
 excerpt: "Descubra cómo desvincular una solución Web Cloud Databases de un alojamiento web"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Objetivo

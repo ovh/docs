@@ -1,7 +1,7 @@
 ---
 title: "Desassociar a minha solução Web Cloud Databases de um alojamento web"
 excerpt: "Saiba como desassociar a sua solução Web Cloud Databases de um alojamento web"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como utilizar o acesso SSH"
 excerpt: "Saiba como conectar-se e utilizar o acesso SSH do seu alojamento web OVHcloud"
-updated: 2026-03-02
+updated: 2025-09-08
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Accedi allo spazio di storage FTP del tuo hosting Web"
 excerpt: "Questa guida ti mostra come connettersi allo spazio di storage FTP del tuo hosting Web OVHcloud"
-updated: 2026-03-02
+updated: 2025-06-15
 ---
 
 ## Obiettivo

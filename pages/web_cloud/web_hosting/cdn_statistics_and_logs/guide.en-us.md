@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - View CDN statistics and logs"
 excerpt: "Find out how to view your website's statistics and CDN logs with your web hosting plan"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objective

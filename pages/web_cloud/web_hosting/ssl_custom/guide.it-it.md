@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Installa un certificato SSL personalizzato"
 excerpt: "Scopri come importare e installare un certificato SSL personalizzato sul tuo hosting Web OVHcloud"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Obiettivo

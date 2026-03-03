@@ -1,7 +1,7 @@
 ---
 title: "Délier ma solution Web Cloud Databases d'un hébergement web"
 excerpt: "Découvrez comment délier votre solution Web Cloud Databases d'un hébergement web"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Objectif

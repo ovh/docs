@@ -1,7 +1,7 @@
 ---
 title: "How to find the name of your web hosting offer"
 excerpt: "Find out how to identify the type of web hosting offer you have from your OVHcloud Control Panel"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Objective

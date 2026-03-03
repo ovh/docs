@@ -1,7 +1,7 @@
 ---
 title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objective

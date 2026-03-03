@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo utilizar el acceso SSH"
 excerpt: "Descubra cómo conectarse y utilizar el acceso SSH de un alojamiento web de OVHcloud"
-updated: 2026-03-02
+updated: 2025-09-08
 ---
 
 <style>

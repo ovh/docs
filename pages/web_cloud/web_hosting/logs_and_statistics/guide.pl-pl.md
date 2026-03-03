@@ -1,7 +1,7 @@
 ---
 title: "Hosting - sprawdzanie statystyk i logów strony www"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi Twojej strony WWW dzięki rozwiązaniu hostingowemu"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 

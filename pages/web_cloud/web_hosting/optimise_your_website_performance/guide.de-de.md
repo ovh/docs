@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Ziel 

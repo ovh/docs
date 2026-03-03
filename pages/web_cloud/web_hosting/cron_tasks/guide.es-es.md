@@ -1,7 +1,7 @@
 ---
 title: "Crear tareas automatizadas (CRON) en un alojamiento web"
 excerpt: "Descubra cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web"
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Namen Ihres Webhosting Angebots ermitteln"
 excerpt: "Erfahren Sie, wie Sie den Typ des Webhosting Angebots identifizieren können, den Sie über das OVHcloud Kundencenter nutzen"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Ziel

@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Cluster und Filer eines Webhostings finden"
 excerpt: "Erfahren Sie hier, wie Sie die Cluster-Nummer und die Filer-Nummer Ihres Webhostings herausfinden"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Ziel

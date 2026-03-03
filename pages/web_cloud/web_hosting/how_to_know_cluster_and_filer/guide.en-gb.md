@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - How to know your cluster and filer"
 excerpt: "Find out how to find the cluster number and/or filer number where your web hosting plan is located"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Objective

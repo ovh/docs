@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Consulta le statistiche e i log della CDN"
 excerpt: "Questa guida ti mostra come consultare le statistiche e i log CDN del tuo sito Web grazie alla tua offerta di hosting Web"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Obiettivo

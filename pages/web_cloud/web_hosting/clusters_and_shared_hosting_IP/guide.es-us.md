@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Lista de direcciones IP por cluster"
 excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
-updated: 2026-03-02
+updated: 2026-02-23
 ---
 
 <style>

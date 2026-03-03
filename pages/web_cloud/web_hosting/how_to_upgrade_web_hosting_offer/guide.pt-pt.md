@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como fazer evoluir a sua oferta"
 excerpt: "Saiba como alterar a forma de subscrição do seu plano de alojamento web da OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-21
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Inhalt einer Datenbank in eine andere duplizieren"
 excerpt: "Erfahren Sie hier, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren"
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 ## Ziel

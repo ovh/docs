@@ -1,7 +1,7 @@
 ---
 title: "¿Qué hacer si mi sitio web no está accesible?"
 excerpt: "Diagnóstico de las causas de la inaccesibilidad de su sitio web"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

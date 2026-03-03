@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to activate a free Let's Encrypt SSL certificate"
 excerpt: "Find out how to activate a free Let's Encrypt SSL certificate on your Web Hosting plan"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Objective

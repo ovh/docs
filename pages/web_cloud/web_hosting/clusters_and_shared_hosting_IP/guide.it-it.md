@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Lista degli indirizzi IP per cluster"
 excerpt: "Questa guida elenca tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2026-03-02
+updated: 2026-02-23
 ---
 
 <style>

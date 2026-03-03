@@ -1,7 +1,7 @@
 ---
 title: "Duplicating the contents of one database to another"
 excerpt: "Find out how to duplicate the content of an OVHcloud database into another OVHcloud database"
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 ## Objective

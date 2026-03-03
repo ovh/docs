@@ -1,7 +1,7 @@
 ---
 title: "Como encontrar o nome da sua oferta de alojamento web"
 excerpt: "Saiba como identificar o tipo de oferta de alojamento web que possui a partir da sua Área de cliente OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Objetivo

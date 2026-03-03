@@ -1,7 +1,7 @@
 ---
 title: "Backup einer Webhosting-Datenbank exportieren"
 excerpt: "Erfahren Sie hier, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren"
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Ziel

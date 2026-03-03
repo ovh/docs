@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to activate a Sectigo EV SSL certificate"
 excerpt: "Find out how to order and install a Sectigo EV SSL certificate for an OVHcloud web hosting plan"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Objective

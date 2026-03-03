@@ -1,7 +1,7 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 

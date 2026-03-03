@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Consultar as estatísticas e logs de um website"
 excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

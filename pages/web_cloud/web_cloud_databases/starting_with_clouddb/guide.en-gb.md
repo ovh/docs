@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the Web Cloud Databases service'
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 ## Objective

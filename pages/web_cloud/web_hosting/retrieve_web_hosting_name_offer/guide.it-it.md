@@ -1,7 +1,7 @@
 ---
 title: "Come trovare il nome della tua offerta di hosting web"
 excerpt: "Questa guida ti mostra come identificare il tipo di offerta di hosting web che possiedi dal tuo Spazio Cliente OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Obiettivo

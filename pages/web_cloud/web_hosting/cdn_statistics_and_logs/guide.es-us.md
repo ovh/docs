@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar estadísticas y logs CDN"
 excerpt: "Descubra cómo consultar las estadísticas y los logs CDN de su sitio web gracias a su plan de hosting"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

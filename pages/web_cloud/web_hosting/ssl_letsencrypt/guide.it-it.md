@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare un certificato SSL gratuito Let's Encrypt"
 excerpt: "Scopri come attivare un certificato SSL gratuito Let's Encrypt sul tuo hosting Web"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Obiettivo

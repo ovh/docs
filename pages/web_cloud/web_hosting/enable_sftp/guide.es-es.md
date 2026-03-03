@@ -1,7 +1,7 @@
 ---
 title: "Alojamiento web - Cómo activar el acceso SFTP"
 excerpt: "Descubra cómo activar el acceso SFTP en su alojamiento web OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-04
 ---
 
 <style>

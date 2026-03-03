@@ -1,7 +1,7 @@
 ---
 title: "Jak znaleźć nazwę oferty hostingu"
 excerpt: "Dowiedz się, jak zidentyfikować typ oferty hostingu, którą aktualnie posiadasz w Panelu klienta OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Wprowadzenie

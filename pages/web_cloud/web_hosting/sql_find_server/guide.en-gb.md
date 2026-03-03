@@ -1,7 +1,7 @@
 ---
 title: "How to identify your database server"
 excerpt: "Discover how to find the name of the server hosting your shared database, accessible with your web hosting"
-updated: 2026-03-02
+updated: 2026-02-12
 ---
 
 ## Objective

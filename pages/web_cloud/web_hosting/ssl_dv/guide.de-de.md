@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Sectigo DV SSL-Zertifikat aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie ein Sectigo DV SSL-Zertifikat auf Ihrem OVHcloud Webhosting aktivieren"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Ziel

@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2026-03-02
+updated: 2025-02-19
 ---
 
 ## Objectif

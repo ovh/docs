@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come conoscere cluster e filer"
 excerpt: "Questa guida ti mostra come trovare il numero del cluster e/o il numero del filer in cui si trova il tuo hosting Web"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Obiettivo

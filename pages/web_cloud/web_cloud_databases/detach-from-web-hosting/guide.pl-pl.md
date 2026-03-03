@@ -1,7 +1,7 @@
 ---
 title: "Odłączenie mojego rozwiązania Web Cloud Databases od hostingu WWW"
 excerpt: "Dowiedz się, jak odłączyć rozwiązanie Web Cloud Databases od hostingu WWW"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Wprowadzenie

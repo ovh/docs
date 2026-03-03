@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases von einem Webhosting abtrennen"
 excerpt: "Erfahren Sie hier, wie Sie den Dienst Web Cloud Databases von einem Webhosting separieren können"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Ziel

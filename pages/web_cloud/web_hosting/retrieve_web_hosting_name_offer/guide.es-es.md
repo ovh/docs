@@ -1,7 +1,7 @@
 ---
 title: "Cómo encontrar el nombre de su solución de alojamiento web"
 excerpt: "Descubra cómo identificar el tipo de solución de alojamiento web que posee desde su área de cliente de OVHcloud"
-updated: 2026-03-02
+updated: 2026-02-18
 ---
 
 ## Objetivo

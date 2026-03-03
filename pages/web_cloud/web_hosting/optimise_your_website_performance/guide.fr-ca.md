@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objectif

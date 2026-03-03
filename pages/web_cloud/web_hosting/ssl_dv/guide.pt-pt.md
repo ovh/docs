@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL Sectigo DV"
 excerpt: "Saiba como ativar um certificado SSL Sectigo DV no seu alojamento Web OVHcloud"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - How to enable SFTP access"
 excerpt: "Find out how to enable SFTP access on your OVHcloud web hosting"
-updated: 2026-03-02
+updated: 2026-02-04
 ---
 
 <style>

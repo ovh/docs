@@ -1,7 +1,7 @@
 ---
 title: "Server Ihrer Datenbank identifizieren"
 excerpt: "Erfahren Sie, wie Sie den Namen des Servers ermitteln können, auf dem Ihre Datenbank gehostet wird, die mit Ihrem Webhosting verbunden ist"
-updated: 2026-03-02
+updated: 2026-02-12
 ---
 
 ## Ziel

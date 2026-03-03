@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup del database di un hosting Web"
 excerpt: "Questa guida ti mostra come ripristinare il backup di un database di un hosting Web OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Obiettivo

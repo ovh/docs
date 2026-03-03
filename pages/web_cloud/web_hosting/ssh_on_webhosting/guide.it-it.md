@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come utilizzare l’accesso SSH"
 excerpt: "Questa guida ti mostra come effettuare l’accesso e utilizzare il protocollo SSH sul tuo hosting Web OVHcloud."
-updated: 2026-03-02
+updated: 2025-09-08
 ---
 
 <style>

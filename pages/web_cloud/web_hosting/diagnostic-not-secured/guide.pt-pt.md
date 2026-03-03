@@ -1,7 +1,7 @@
 ---
 title: "O que fazer em caso de erro 'Sua conexão não é particular'?"
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
-updated: 2026-03-02
+updated: 2025-10-28
 ---
 
 ## Objetivo <a name="objective"></a>

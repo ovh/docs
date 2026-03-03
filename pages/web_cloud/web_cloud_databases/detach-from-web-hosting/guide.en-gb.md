@@ -1,7 +1,7 @@
 ---
 title: "How to detach the Web Cloud Databases solution from a web hosting plan"
 excerpt: "Find out how to unlink your Web Cloud Databases solution from a web hosting plan"
-updated: 2026-03-02
+updated: 2025-01-24
 ---
 
 ## Objective

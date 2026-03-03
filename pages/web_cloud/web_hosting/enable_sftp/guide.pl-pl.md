@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Jak włączyć dostęp SFTP"
 excerpt: "Dowiedz się, jak włączyć dostęp SFTP na swoim OVHcloud Web Hosting"
-updated: 2026-03-02
+updated: 2026-02-04
 ---
 
 <style>

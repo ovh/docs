@@ -1,7 +1,7 @@
 ---
 title: "Comment identifier le serveur de votre base de données"
 excerpt: "Découvrez comment retrouver le nom du serveur qui héberge votre base de données mutualisée, accessible avec votre hébergement web"
-updated: 2026-03-02
+updated: 2026-02-12
 ---
 
 ## Objectif

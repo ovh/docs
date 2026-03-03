@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Consultare le statistiche e i log di un sito Web"
 excerpt: "Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web grazie alla tua soluzione di hosting Web"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Obiettivo

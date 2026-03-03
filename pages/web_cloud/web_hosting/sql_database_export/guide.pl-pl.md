@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW"
 excerpt: "Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Wprowadzenie 

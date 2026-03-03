@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Objetivo

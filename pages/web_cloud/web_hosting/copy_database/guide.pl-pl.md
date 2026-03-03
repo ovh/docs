@@ -1,7 +1,7 @@
 ---
 title: "Duplikuj zawartość jednej bazy danych do innej"
 excerpt: "Dowiedz się, jak skopiować zawartość bazy danych OVHcloud do innej bazy danych OVHcloud"
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 ## Wprowadzenie

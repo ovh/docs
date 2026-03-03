@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak zarządzać użytkownikami FTP"
 excerpt: "Dowiedz się, jak tworzyć, modyfikować lub usuwać użytkowników FTP na Twoim hostingu OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-16
 ---
 
 ## Wprowadzenie

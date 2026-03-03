@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come far evolvere la tua offerta"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-21
 ---
 
 ## Obiettivo

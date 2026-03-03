@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Sprawdzanie statystyk i logów CDN"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi CDN Twojej strony WWW w ramach Twojego pakietu hostingowego"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie

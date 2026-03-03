@@ -1,7 +1,7 @@
 ---
 title: "Configurez une adresse IPv6 pour votre site web"
 excerpt: "Découvrez comment rendre votre site web compatible avec une adresse IPv6"
-updated: 2026-03-02
+updated: 2025-01-28
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Was tun, wenn Ihre Website nicht erreichbar ist?"
 excerpt: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Ziel 

@@ -1,7 +1,7 @@
 ---
 title: 'Retrieving the backup of a Web Hosting plan’s database'
 excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Objective

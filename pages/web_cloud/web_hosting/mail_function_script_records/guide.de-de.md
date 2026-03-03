@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2026-03-02
+updated: 2025-10-21
 ---
 
 ## Ziel

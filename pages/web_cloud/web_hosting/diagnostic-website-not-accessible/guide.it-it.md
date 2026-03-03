@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare se il tuo sito è inaccessibile?"
 excerpt: "Diagnostica le cause dell'inaccessibilità del tuo sito"
-updated: 2026-03-02
+updated: 2025-10-09
 ---
 
 ## Obiettivo

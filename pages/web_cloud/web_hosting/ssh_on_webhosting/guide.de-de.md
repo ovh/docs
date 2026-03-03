@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Verwendung des SSH Zugangs"
 excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen"
-updated: 2026-03-02
+updated: 2025-09-08
 ---
 
 <style>

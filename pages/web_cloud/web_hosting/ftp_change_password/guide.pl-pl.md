@@ -1,7 +1,7 @@
 ---
 title: "Zmiana hasła do konta FTP"
 excerpt: "Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu"
-updated: 2026-03-02
+updated: 2025-10-14
 ---
 
 ## Wprowadzenie 

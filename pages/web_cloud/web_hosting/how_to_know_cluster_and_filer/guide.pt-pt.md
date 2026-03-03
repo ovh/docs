@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como conhecer o seu cluster e o seu filer"
 excerpt: "Saiba como encontrar o número do cluster e/ou o número do filer onde se encontra o seu alojamento web"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Webhosting – Aktivieren des Zugriffs über SFTP"
 excerpt: "Erfahren Sie, wie Sie den SFTP-Zugriff auf Ihrem OVHcloud Webhosting aktivieren"
-updated: 2026-03-02
+updated: 2026-02-04
 ---
 
 <style>

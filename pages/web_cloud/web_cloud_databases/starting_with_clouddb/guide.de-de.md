@@ -4,7 +4,7 @@ links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
-updated: 2026-03-02
+updated: 2025-02-20
 ---
 
 ## Ziel

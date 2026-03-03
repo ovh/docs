@@ -1,7 +1,7 @@
 ---
 title: "Hosting www - Poznaj klaster i syn"
 excerpt: "Dowiedz się, jak znaleźć numer klastra i/lub numer filera, w którym znajduje się Twój hosting"
-updated: 2026-03-02
+updated: 2025-08-12
 ---
 
 ## Wprowadzenie

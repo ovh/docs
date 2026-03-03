@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - How to manage FTP users"
 excerpt: "Find out how to create, modify and delete FTP users on your OVHcloud web hosting plan"
-updated: 2026-03-02
+updated: 2025-10-16
 ---
 
 ## Objective

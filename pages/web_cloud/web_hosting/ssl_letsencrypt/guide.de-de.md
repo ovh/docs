@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Kostenloses SSL-Zertifikat von Let's Encrypt aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie ein kostenloses SSL-Zertifikat von Let's Encrypt auf Ihrem Webhosting aktivieren"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
   
 ## Ziel  

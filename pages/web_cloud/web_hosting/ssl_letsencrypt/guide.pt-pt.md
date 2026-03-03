@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL gratuito Let's Encrypt"
 excerpt: "Saiba como ativar um certificado SSL gratuito Let's Encrypt no seu alojamento web"
-updated: 2026-03-02
+updated: 2025-12-16
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Exportar una copia de seguridad de la base de datos de un alojamiento web"
 excerpt: "Descubra cómo descargar un backup de la base de datos de un alojamiento web de OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Usuwanie powtarzających się błędów podczas korzystania z programu FTP"
 excerpt: "Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim oprogramowaniem FTP"
-updated: 2026-03-02
+updated: 2025-10-20
 ---
 
 ## Wprowadzenie 

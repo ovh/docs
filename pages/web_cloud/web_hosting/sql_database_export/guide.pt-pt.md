@@ -1,7 +1,7 @@
 ---
 title: "Recuperar a cópia de segurança da base de dados de um alojamento web"
 excerpt: "Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVHcloud"
-updated: 2026-03-02
+updated: 2025-10-08
 ---
 
 ## Objetivo
