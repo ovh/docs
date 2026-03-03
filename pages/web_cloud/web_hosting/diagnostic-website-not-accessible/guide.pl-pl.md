@@ -30,6 +30,17 @@ W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotó
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
 
 ### 1: Sprawdź ważność Twojej domeny
@@ -113,22 +124,16 @@ Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej 
 
 Jeśli Twoja strona nie jest hostowana w infrastrukturze OVHcloud lub jest zarządzana przez innego dostawcę, skontaktuj się z odpowiednią pomocą techniczną.
 
-Jeśli Twoja strona internetowa jest hostowana w ramach jednej z naszych [ofert hostingu WWW](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Jeśli Twoja strona internetowa jest hostowana w ramach jednej z naszych [ofert hostingu WWW](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajdziesz oznaczenia **IPv4** i **IPv6**.
 >>

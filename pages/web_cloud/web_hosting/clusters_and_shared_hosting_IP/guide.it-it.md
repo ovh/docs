@@ -37,26 +37,29 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
-Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura **Cluster** (3 cifre comprese tra `0` e `9`).
 >>

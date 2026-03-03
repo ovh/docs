@@ -18,8 +18,18 @@ Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W
 ## Wymagania początkowe
 
 - Posiadanie ofert baz danych [start SQL](/links/web/hosting-options-startsql) i/lub [Web Cloud Databases](/links/web/databases). Obie bazy danych muszą zostać wcześniej utworzone, aby można było korzystać z narzędzia do powielania.
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Wystarczające uprawnienia do wszystkich odpowiednich usług bazodanowych. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -40,28 +50,22 @@ W zależności od Twojego przypadku ścieżka dostępu do źródłowej bazy dany
 
 #### Baza danych Start SQL
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Wyświetli się lista baz danych Start SQL.
 >>
@@ -69,7 +73,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 
 #### Web Cloud Databases
 
-Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **3** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
