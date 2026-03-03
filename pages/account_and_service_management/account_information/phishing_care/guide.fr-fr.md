@@ -97,12 +97,105 @@ Vous trouverez ci-dessous 2 exemples de SMS, le premier est légitime et corresp
 
 #### Comment signaler un e-mail de phishing ?
 
-Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l'identité d'OVHcloud, vous pouvez nous faire parvenir un maximum d’informations (le contenu de l'e-mail au minimum) à l’adresse e-mail suivante : **<fraude@ovh.com>**.
+Après avoir effectué les vérifications expliquées au-dessus, si vous êtes certain que vous avez effectivement reçu un e-mail de phishing usurpant l’identité d’OVHcloud, vous pouvez nous le signaler en enregistrant l’e-mail sous forme de fichier (`.eml` ou `.msg`) et en l’envoyant en **pièce jointe** d’un nouveau message à l’adresse **<fraude@ovh.com>**.
+
+Ces formats de fichiers conservent les informations techniques cachées (appelées « en-têtes ») dont nos équipes ont besoin pour remonter à la source de la fraude et agir.
+
+> [!warning]
+>
+> **Ne transférez pas directement l’e-mail de phishing.** En le transférant, c’est votre propre boîte mail qui envoie le contenu frauduleux, ce qui peut entraîner le blocage de votre adresse e-mail considérée comme émettrice de spam. Enregistrez plutôt l’e-mail sous forme de fichier et joignez-le à un **nouveau** message.
+
+**Comment enregistrer un e-mail sous forme de fichier :**
+
+Cliquez sur le titre correspondant à l’application de messagerie que vous utilisez.
+
+**Logiciels de messagerie (bureau)**
+
+/// details | **Outlook (version classique)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception (ne l’ouvrez pas).
+2. Cliquez sur `Fichier`{.action} dans la barre de menu, puis sur `Enregistrer sous`{.action}.
+3. Dans le menu déroulant « Type de fichier », sélectionnez **Format de message Outlook - Unicode (.msg)**.
+4. Choisissez un emplacement sur votre ordinateur (par exemple le Bureau) et cliquez sur `Enregistrer`{.action}.
 
 > [!primary]
-> 
+>
+> Vous pouvez également **glisser-déposer** l’e-mail depuis votre boîte de réception directement sur votre Bureau. Cela créera un fichier `.msg` que vous pourrez joindre à votre signalement.
+
+///
+
+/// details | **Outlook (nouvelle version)**
+
+1. Dans la liste des messages, faites un **clic droit** sur l’e-mail de phishing.
+2. Sélectionnez `Enregistrer sous`{.action}, puis choisissez `Enregistrer en tant que fichier EML`{.action}.
+3. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+> [!primary]
+>
+> Si vous ne savez pas quelle version d’Outlook vous utilisez : dans la nouvelle version, un bouton `Nouvel Outlook` est visible en haut à droite de la fenêtre.
+
+///
+
+/// details | **Thunderbird**
+
+1. Faites un clic droit sur l’e-mail de phishing dans votre boîte de réception.
+2. Sélectionnez `Enregistrer sous`{.action}.
+3. L’e-mail sera enregistré sous forme de fichier `.eml`. Choisissez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+///
+
+/// details | **Apple Mail (macOS)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Dans la barre de menu, cliquez sur `Fichier`{.action} > `Enregistrer sous`{.action}.
+3. Choisissez le format **Source brute du message**, sélectionnez un emplacement sur votre ordinateur et cliquez sur `Enregistrer`{.action}.
+
+///
+
+**Webmail (navigateur)**
+
+/// details | **OWA - Outlook Web Application**
+
+1. Ouvrez l’e-mail de phishing.
+2. Cliquez sur les **trois points horizontaux** (⋯) en haut à droite de l’e-mail.
+3. Sélectionnez `Afficher`{.action} > `Afficher la source du message`{.action}.
+4. Sélectionnez tout le texte (`Ctrl+A` ou `Cmd+A`), copiez-le (`Ctrl+C` ou `Cmd+C`), collez-le dans un éditeur de texte brut (par exemple le Bloc-notes ou TextEdit), et enregistrez le fichier avec l’extension `.eml`.
+
+///
+
+/// details | **Roundcube (Webmail OVHcloud)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Cliquez sur `Plus`{.action} (ou l’icône **⋮**) dans la barre d’outils.
+3. Sélectionnez `Télécharger (.eml)`{.action}.
+4. Le fichier sera enregistré dans votre dossier Téléchargements.
+
+///
+
+/// details | **Zimbra (Webmail OVHcloud)**
+
+1. Sélectionnez l’e-mail de phishing dans votre boîte de réception.
+2. Cliquez sur `Plus`{.action} dans la barre d’outils.
+3. Sélectionnez `Afficher l’original`{.action}. Le contenu brut de l’e-mail s’ouvrira dans un nouvel onglet du navigateur.
+4. Dans ce nouvel onglet, utilisez `Ctrl+S` (ou `Cmd+S` sur macOS) pour enregistrer la page. Enregistrez le fichier avec l’extension `.eml` (si votre navigateur propose `.txt`, renommez le fichier après l’enregistrement).
+
+///
+
+/// details | **Gmail**
+
+1. Ouvrez l’e-mail de phishing.
+2. Cliquez sur les **trois points verticaux** (⋮) en haut à droite de l’e-mail.
+3. Sélectionnez `Télécharger le message`{.action}.
+4. Un fichier `.eml` sera enregistré dans votre dossier Téléchargements.
+
+///
+
+Une fois le fichier enregistré, créez un **nouvel e-mail** à destination de **<fraude@ovh.com>** et joignez-y le fichier.
+
+> [!primary]
+>
 > Veuillez noter que les informations que vous nous communiquerez pourront être partagées à des tiers afin de nous permettre de lutter contre ces menaces.
-> 
+>
 
 ### J'ai saisi mes informations personnelles : que faire ?
 

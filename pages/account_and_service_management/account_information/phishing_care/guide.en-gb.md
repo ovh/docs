@@ -97,12 +97,105 @@ You will find below 2 examples of SMS messages, the first one is legitimate and 
 
 #### How to report a phishing e-mail?
 
-After performing the checks outlined above, if you are certain that you have received a phishing e-mail impersonating OVHcloud, you can send us as much information as possible (at a minimum, the content of the e-mail) to the following e-mail address: **<fraude@ovh.com>**.
+After performing the checks outlined above, if you are certain that you have received a phishing e-mail impersonating OVHcloud, you can report it by saving the e-mail as a file (`.eml` or `.msg`) and sending it as an **attachment** in a new message to **<fraude@ovh.com>**.
+
+These file formats preserve the hidden technical information (called "headers") that our teams need to trace the source of the fraud and take action against it.
+
+> [!warning]
+>
+> **Do not forward the phishing e-mail directly.** Forwarding it means your own mailbox sends out the fraudulent content, which may cause your e-mail address to be flagged as spam. Instead, save the e-mail as a file and attach it to a **new** message.
+
+**How to save an e-mail as a file:**
+
+Click on the heading that matches the e-mail application you use.
+
+**E-mail software (desktop)**
+
+/// details | **Outlook (classic version)**
+
+1. Select the phishing e-mail in your inbox (do not open it).
+2. Click `File`{.action} in the menu bar, then `Save As`{.action}.
+3. In the "Save as type" dropdown, select **Outlook Message Format - Unicode (.msg)**.
+4. Choose a location on your computer (e.g. your Desktop) and click `Save`{.action}.
 
 > [!primary]
-> 
+>
+> You can also **drag and drop** the e-mail from your inbox directly onto your Desktop. This will create a `.msg` file that you can attach to your report.
+
+///
+
+/// details | **Outlook (new version)**
+
+1. In the message list, **right-click** the phishing e-mail.
+2. Select `Save as`{.action}, then choose `Save as EML`{.action}.
+3. Choose a location on your computer and click `Save`{.action}.
+
+> [!primary]
+>
+> If you are unsure which version of Outlook you are using: in the new version, you will see a toggle labelled `New Outlook` in the top-right corner of the window.
+
+///
+
+/// details | **Thunderbird**
+
+1. Right-click the phishing e-mail in your inbox.
+2. Select `Save As`{.action}.
+3. The e-mail will be saved as a `.eml` file. Choose a location on your computer and click `Save`{.action}.
+
+///
+
+/// details | **Apple Mail (macOS)**
+
+1. Select the phishing e-mail in your inbox.
+2. In the menu bar, click `File`{.action} > `Save As`{.action}.
+3. Choose the **Raw Message Source** format, select a location on your computer and click `Save`{.action}.
+
+///
+
+**Webmail (browser)**
+
+/// details | **OWA - Outlook Web Application**
+
+1. Open the phishing e-mail.
+2. Click the **three horizontal dots** (⋯) in the top-right corner of the e-mail.
+3. Select `View`{.action} > `View message source`{.action}.
+4. Select all the text (`Ctrl+A` or `Cmd+A`), copy it (`Ctrl+C` or `Cmd+C`), paste it into a plain text editor (e.g. Notepad or TextEdit), and save the file with the extension `.eml`.
+
+///
+
+/// details | **Roundcube (OVHcloud Webmail)**
+
+1. Select the phishing e-mail in your inbox.
+2. Click `More`{.action} (or the **⋮** icon) in the toolbar.
+3. Select `Download (.eml)`{.action}.
+4. The file will be saved to your Downloads folder.
+
+///
+
+/// details | **Zimbra (OVHcloud Webmail)**
+
+1. Select the phishing e-mail in your inbox.
+2. Click `More`{.action} in the toolbar.
+3. Select `Show Original`{.action}. The raw content of the e-mail will open in a new browser tab.
+4. In this new tab, use `Ctrl+S` (or `Cmd+S` on macOS) to save the page. Save the file with the extension `.eml` (if your browser suggests `.txt`, rename the file after saving).
+
+///
+
+/// details | **Gmail**
+
+1. Open the phishing e-mail.
+2. Click the **three vertical dots** (⋮) in the top-right corner of the e-mail.
+3. Select `Download message`{.action}.
+4. A `.eml` file will be saved to your Downloads folder.
+
+///
+
+Once you have saved the file, create a **new e-mail** to **<fraude@ovh.com>** and attach it.
+
+> [!primary]
+>
 > Please note that the information you provide may be shared with third parties to help us combat these threats.
-> 
+>
 
 ### I have entered my personal information: what should I do?
 
