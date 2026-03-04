@@ -38,7 +38,7 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 
 ### Configure the Edge Network Firewall
 
-The Edge Network Firewall is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
+The Edge Network Firewall can be enabled or disabled by the user at all times, besides one exception : it is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
 
 #### Access the Edge Network Firewall configuration page
 
@@ -109,10 +109,7 @@ For each **TCP** rule, you must choose:
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port or port range (optional) <br>&bull; The destination port or port range(optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
 
-When configuring a rule that applies to a port range, please make sure that the range is formatted this way :
-- The first and last port must be separated with a hyphen (e.g. 1000-1200).
-- Both ports must be between 0 and 65535 (inclusive).
-- The first port in a range must be smaller than the last port.
+When configuring a TCP or UDP rule that uses a protocol port or port range, please make sure that the source and destination port fields are either a single number between 1 and 65535 (inclusive), or representing a port range (two numbers separated by a hyphen, e.g. 8887-8888)
 
 > [!primary]
 > We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).

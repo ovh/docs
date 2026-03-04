@@ -38,7 +38,7 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 
 ### Configurer le Edge Network Firewall
 
-Le Edge Network Firewall est **automatiquement activé** lorsqu’une attaque DDoS est détectée et ne **peut pas être désactivé** tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
+Le Edge Network Firewall peut être activé ou désactivé par l'utilisateur à tout moment, à une exception près : il est **automatiquement activé** lorsqu’une attaque DDoS est détectée et ne **peut pas être désactivé** tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
 
 #### Accéder à la page de configuration du Edge Network Firewall
 
@@ -108,10 +108,7 @@ Pour chaque règle **TCP**, vous devez choisir :
 |:--| 
 | &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Port ou plage de ports source (facultatif) <br>&bull; Port ou plage de ports de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
 
-Lors de la configuration d'une règle s'appliquant à une plage de ports, assurez-vous de respecter le format suivant :
-- Le premier et le dernier port doivent être séparés par un trait d'union (ex : 1000-1200).
-- Les deux ports doivent être compris entre 0 et 65535 (inclus).
-- Le premier port de la plage doit être inférieur au dernier port.
+Lors de la configuration d'une règle TCP ou UDP utilisant un port ou une plage de ports, veuillez vous assurer que les champs "port source" et "port destination" contiennent soit un nombre unique compris entre 1 et 65535 (inclus), soit une plage de ports (deux nombres séparés par un tiret, par exemple : 8887-8888).
 
 > [!primary]
 > Nous vous conseillons d'autoriser le protocole TCP avec une option `established` (pour les paquets qui font partie d'une session précédemment ouverte/démarrée), les paquets ICMP (pour le ping et traceroute) et éventuellement les réponses DNS UDP des serveurs externes (si vous utilisez des serveurs DNS externes).
