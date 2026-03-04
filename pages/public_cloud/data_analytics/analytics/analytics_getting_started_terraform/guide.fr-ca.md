@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec Terraform pour les services Analytics (EN)
 excerpt: Find out how to order and manage your Analytics service using Terraform
-updated: 2026-03-03
+updated: 2026-03-04
 ---
 
 ## Objective
