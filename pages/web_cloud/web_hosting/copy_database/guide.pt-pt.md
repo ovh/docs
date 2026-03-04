@@ -50,7 +50,7 @@ Dependendo da sua situação, o caminho para aceder à base de dados de origem �
 
 #### Base de dados Start SQL
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -73,7 +73,7 @@ Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etap
 
 #### Web Cloud Databases
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

@@ -102,7 +102,7 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 #### 1.1 - Para um domínio e um alojamento já existentes na OVHcloud
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **5** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

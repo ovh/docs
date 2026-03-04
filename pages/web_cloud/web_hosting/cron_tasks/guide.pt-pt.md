@@ -117,7 +117,7 @@ A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus par
 
 ### Modificar ou eliminar uma tarefa agendada
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
