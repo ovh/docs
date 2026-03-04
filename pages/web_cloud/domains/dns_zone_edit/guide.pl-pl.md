@@ -61,7 +61,7 @@ Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystk
 >
 > W przeciwieństwie do nazwy domeny, nie ma tu pojęcia abonenta strefy DNS, lecz zarządzanie kontaktami w przypadku strefy DNS OVHcloud. Jeśli chcesz przełączyć zarządzanie swoją strefą DNS na inne konto OVHcloud, postępuj zgodnie z naszym przewodnikiem [Zarządzanie kontaktami swoich usług](/pages/account_and_service_management/account_information/managing_contacts).
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -99,7 +99,7 @@ W tym celu możesz ręcznie zmienić strefę w trybie tekstowym lub skorzystać 
 > Tylko dla zaawansowanych użytkowników. Zachowaj szczególną ostrożność podczas wprowadzania zmian.
 >
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby zmienić strefę DNS OVHcloud w trybie tekstowym, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -129,7 +129,7 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację przy użyciu 
 
 /// details | Dodanie nowego rekordu DNS
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby dodać nowy rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -156,7 +156,7 @@ Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 /// details | Modyfikacja istniejącego rekordu DNS
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby zmodyfikować rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -177,7 +177,7 @@ Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 /// details | Usunięcie rekordu DNS
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby usunąć rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -207,7 +207,7 @@ Zresetowanie strefy DNS pozwala na przywrócenie minimalnej konfiguracji z domy�
 > Przed zresetowaniem strefy DNS upewnij się, że Twoja nazwa domeny nie jest powiązana z usługami, które są obecnie używane, takimi jak strona WWW lub konta e-mail.
 >
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+Aby zresetować strefę DNS, kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -255,7 +255,7 @@ Abkliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
-Jekliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy DNS OVHcloud, możesz to uczynić, do pewnego stopnia, przez dostosowanie TTL (*Time To Live*), który zostanie zastosowany do wszystkich rekordów strefy DNS. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**

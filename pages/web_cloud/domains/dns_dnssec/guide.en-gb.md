@@ -42,7 +42,7 @@ You can also refer to our guides on [OVHcloud DNS servers](/pages/web_cloud/doma
 
 ## Instructions
 
-Toclick on the tabs below to view each of the **2** steps.
+To check if your domain name uses the OVHcloud DNS configuration, click on the tabs below to view each of the **2** steps.
 
 > [!warning]
 >
@@ -77,7 +77,7 @@ You can enable **DNSSEC** in three scenarios detailed below.
 
 ### Case 1 - Your domain name is registered with OVHcloud and uses OVHcloud DNS servers
 
-Toclick on the tabs below to view each of the **3** steps.
+To enable (or disable) the **DNSSEC** solution for your domain name, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -102,7 +102,7 @@ Toclick on the tabs below to view each of the **3** steps.
 
 ### Case 2 - Your domain name is registered with OVHcloud and does not use OVHcloud DNS servers
 
-Onclick on the tabs below to view each of the **4** steps.
+Once you have retrieved these 4 parameters, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**

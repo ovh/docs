@@ -111,7 +111,7 @@ Se precisar de mais informações, consulte o nosso tutorial sobre a ferramenta 
 > Além disso, o *domain1.tld* deve ser registado na OVHcloud para implementar os "Hosts" records.
 >
 
-Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Para isso, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

@@ -26,6 +26,8 @@ En este caso, no se podrá realizar ningún reembolso por parte de OVHcloud.
 - Disponer de un [nombre de dominio](/links/web/domains) registrado en OVHcloud.
 - Haber recibido un correo electrónico por parte de OVHcloud indicándole que se requiere una acción en relación con las coordenadas del titular de su nombre de dominio.
 - Verificar los siguientes puntos para asegurarse de que no se trata de un correo electrónico fraudulento:
+    - El asunto del correo electrónico contiene su identificador de cliente (por ejemplo: `aa00000-ovh`) así como su nombre de dominio (por ejemplo: `domain.tld`).
+    - La URL mencionada en el correo electrónico comienza efectivamente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ En este caso, no se podrá realizar ningún reembolso por parte de OVHcloud.
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - El asunto del correo electrónico contiene su identificador de cliente (por ejemplo: `aa00000-ovh`) así como su nombre de dominio (por ejemplo: `domain.tld`).
-    - La URL mencionada en el correo electrónico comienza efectivamente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Procedimiento
 
@@ -59,7 +58,7 @@ Si este método no funciona, el titular puede validar manualmente su dirección 
 
 ### 2 - Corregir o completar las coordenadas/información de contacto del titular del nombre de dominio como administrador
 
-HaHaga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -136,7 +135,7 @@ Para ciertas extensiones (por ejemplo: .fr, .it, .es), el administrador del domi
 > Si las correcciones realizadas siguiendo la primera parte de este guía han requerido la inicialización de un cambio de titular para el nombre de dominio, finalice primero el cambio de titular **antes** de continuar con las acciones descritas a continuación.
 >
 
-Haga clic en las pestañas que aparecen a continuación para mostrar sucesivamente cada una de las **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

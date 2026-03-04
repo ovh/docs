@@ -27,7 +27,7 @@ Sie möchten die Liste aller Domainnamen in Ihrem OVHcloud Kunden-Account abrufe
 
 ## In der praktischen Anwendung
 
-KlKlicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

@@ -26,6 +26,8 @@ In questo caso, non sarà possibile effettuare alcun rimborso da parte di OVHclo
 - Disporre di un [nome di dominio](/links/web/domains) registrato presso OVHcloud.
 - Aver ricevuto un'e-mail da parte di OVHcloud che indica che è necessaria un'azione relativa alle coordinate del titolare del vostro nome di dominio.
 - Verificare i seguenti punti per assicurarsi che non si tratti di un'e-mail fraudolenta:
+    - L'oggetto dell'e-mail contiene il vostro identificativo cliente (ad esempio: `aa00000-ovh`) nonché il vostro nome di dominio (ad esempio: `domain.tld`).
+    - L'URL menzionata nell'e-mail inizia effettivamente con: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ In questo caso, non sarà possibile effettuare alcun rimborso da parte di OVHclo
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - L'oggetto dell'e-mail contiene il vostro identificativo cliente (ad esempio: `aa00000-ovh`) nonché il vostro nome di dominio (ad esempio: `domain.tld`).
-    - L'URL menzionata nell'e-mail inizia effettivamente con: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Procedura
 
@@ -59,7 +58,7 @@ Se questo metodo non funziona, il titolare può validare manualmente il proprio 
 
 ### 2 - Correggi o completa le coordinate/informazioni di contatto del titolare del nome di dominio come amministratore
 
-ClClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -136,7 +135,7 @@ Per alcune estensioni (ad esempio: .fr, .it, .es), l'amministratore del dominio 
 > Se le correzioni apportate seguendo la prima parte di questa guida hanno richiesto l'inizializzazione di un cambio di titolare per il nome di dominio, completa prima il cambio di titolare **prima** di proseguire con le azioni descritte di seguito.
 >
 
-Clicca sui tab sottostanti per visualizzare successivamente ciascuna delle **4** fasi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**

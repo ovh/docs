@@ -43,7 +43,7 @@ Lesen Sie dazu auch unsere Anleitungen zu [OVHcloud DNS-Servern](/pages/web_clou
 
 ## In der praktischen Anwendung
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um zu überprüfen, ob Ihre Domain die OVHcloud DNS-Konfiguration verwendet, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!warning]
 >
@@ -78,7 +78,7 @@ Die Aktivierung von **DNSSEC** ist in drei unten aufgeführten Fällen möglich.
 
 ### Fall 1 - Ihre Domain ist bei OVHcloud registriert und verwendet die DNS-Server von OVHcloud
 
-Umklicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Um **DNSSEC** für Ihren Domainnnamen zu aktivieren oder deaktivieren, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -105,7 +105,7 @@ Umklicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 Wenden Sie sich an den Anbieter, der die DNS-Konfiguration Ihrer Domain verwaltet, und erfragen Sie dort die DNSSEC-Aktivierungsparameter ("Key Tag" / "Flag" / "Algorithm" / "Public key (encoded in base64)").
 
-Weklicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Wenn Sie diese 4 Werte bereit haben, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

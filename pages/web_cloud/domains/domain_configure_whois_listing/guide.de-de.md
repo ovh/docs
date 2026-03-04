@@ -45,7 +45,7 @@ Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Info
 
 ## In der praktischen Anwendung
 
-KlKlicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

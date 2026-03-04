@@ -27,7 +27,7 @@ updated: 2025-07-03
 
 ## Procedimiento
 
-HaHaga clic en las fichas siguientes para ver cada una de las **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

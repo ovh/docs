@@ -111,7 +111,7 @@ Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/page
 > Außerdem muss *domain1.tld* bei OVHcloud registriert sein, um die Hosts einzurichten.
 >
 
-KlKlicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

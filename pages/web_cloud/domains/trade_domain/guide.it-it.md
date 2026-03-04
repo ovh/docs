@@ -59,7 +59,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 
 ### Avvia la procedura di modifica dell'intestatario o modifica le informazioni ad essa associate
 
-ClClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **6** passi.
 
 > [!tabs]
 > **Passaggio 1**

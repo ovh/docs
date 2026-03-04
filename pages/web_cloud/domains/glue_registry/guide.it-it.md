@@ -111,7 +111,7 @@ Se necessario e per maggiori informazioni, consulta la nostra guida sullo strume
 > In più, il *domain1.tld* deve essere registrato in OVHcloud per attivare i "Host" record.
 >
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Tappa 1**

@@ -26,6 +26,8 @@ Neste caso, não será possível efectuar qualquer reembolso por parte da OVHclo
 - Dispor de um [nome de domínio](/links/web/domains) registado na OVHcloud.
 - Ter recebido um e-mail da parte da OVHcloud informando que uma ação é necessária relativamente às coordenadas do titular do seu nome de domínio.
 - Verificar os seguintes pontos para se assegurar de que não se trata de um e-mail fraudulento:
+    - O assunto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`) bem como o seu nome de domínio (por exemplo: `domain.tld`).
+    - A URL mencionada no e-mail começa realmente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ Neste caso, não será possível efectuar qualquer reembolso por parte da OVHclo
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - O assunto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`) bem como o seu nome de domínio (por exemplo: `domain.tld`).
-    - A URL mencionada no e-mail começa realmente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Instruções
 
@@ -59,7 +58,7 @@ Se este método não funcionar, o titular pode validar manualmente o seu endere�
 
 ### 2 - Corrigir ou completar as coordenadas/informações de contacto do titular do nome de domínio como administrador
 
-ClClique nos separadores abaixo para visualizar cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -136,7 +135,7 @@ Para certas extensões (por exemplo: .fr, .it, .es), o administrador do domínio
 > Se as correções efetuadas seguindo a primeira parte deste guia exigiram a inicialização de uma mudança de titular para o nome de domínio, conclua primeiro a mudança de titular **antes** de continuar as ações descritas abaixo.
 >
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

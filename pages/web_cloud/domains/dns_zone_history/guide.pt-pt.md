@@ -37,7 +37,7 @@ Agora, a gestão dos DNS é facilitada graças ao histórico das suas zonas DNS.
 
 ## Instruções
 
-ClClique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

@@ -27,7 +27,7 @@ Deseja recuperar a lista de todos os nomes de domínio presentes na sua conta de
 
 ## Instruções
 
-ClClique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

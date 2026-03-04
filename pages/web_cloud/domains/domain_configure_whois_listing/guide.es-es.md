@@ -45,7 +45,7 @@ Durante el uso de su nombre de dominio, es posible que deba mostrar u ocultar de
 
 ## Procedimiento
 
-HaHaga clic en las fichas siguientes para ver cada una de las **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

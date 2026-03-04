@@ -27,7 +27,7 @@ Vous souhaitez récupérer la liste de tous les noms de domaine présents sur vo
 
 ## En pratique
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

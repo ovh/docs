@@ -57,7 +57,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ### Initiating the holder change procedure or editing the holder information
 
-ClClick on the tabs below to view each of the **6** steps.
+Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
 > **Step 1**

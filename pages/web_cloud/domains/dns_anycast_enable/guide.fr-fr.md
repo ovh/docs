@@ -29,7 +29,7 @@ OVHcloud vous propose l'option [DNS Anycast](/links/web/domains-options-anycast)
 
 ## En pratique
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**

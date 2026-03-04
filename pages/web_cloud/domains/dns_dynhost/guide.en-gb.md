@@ -45,7 +45,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 **If your domain name does not use OVHcloud DNS servers**, please contact the service provider managing its DNS configuration to find out how to proceed.
 
-**click on the tabs below to view each of the **3** steps.
+**If your domain name is registered with OVHcloud**, you can check if it is using our configuration. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -79,7 +79,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ### 1 - Create a DynHost username <a name="step1"></a>
 
-ClClick on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
@@ -130,7 +130,7 @@ Repeat this step if you need additional DynHost usernames.
 
 This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVHcloud DNS zone as an "A" or "AAAA" record. For advice on how to check this and delete the A record if necessary, please read our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
 
-Onclick on the tabs below to view each of the **4** steps.
+Once you are ready to create the DynHost record, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|The subdomain you are modifying the DNS configuration for|
 |$IP|The new target IPv4 or IPv6 address|
 
-Yoclick on the tabs below to view each of the **3** steps.
+You can check if the destination IP address has been updated. To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

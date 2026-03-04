@@ -113,7 +113,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 > In addition, *domain1.tld* must be registered with OVHcloud to set up the hosts.
 >
 
-Toclick on the tabs below to view each of the **3** steps.
+To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

@@ -45,7 +45,7 @@ Durante l’utilizzo del nome di dominio potrebbe essere necessario mostrare o n
 
 ## Procedura
 
-ClClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**

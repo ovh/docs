@@ -91,7 +91,7 @@ Wówczas będzie ona mieć własną strefę do konfigurowania rekordów DNS.
 
 ### 1 - Utwórz strefę DNS za pomocą Panelu klienta OVHcloud
 
-W kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -137,7 +137,7 @@ Aktywacja strefy DNS dla poddomeny różni się od aktywacji nazwy domeny, ponie
 
 Najpierw musisz uzyskać nazwy **serwerów DNS** OVHcloud skojarzonych ze strefą DNS utworzoną dla Twojej poddomeny.
 
-Abkliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
+Aby je odnaleźć, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -165,7 +165,7 @@ Po odzyskaniu dwóch nazw serwerów DNS, mogą zajść dwie sytuacje:
 
 /// details | Nazwa domeny, od której zależy Twoja subdomena, ma aktywną strefę DNS w OVHcloud
 
-W kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**

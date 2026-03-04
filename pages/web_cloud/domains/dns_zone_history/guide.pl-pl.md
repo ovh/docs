@@ -38,7 +38,7 @@ Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
 
 ## W praktyce
 
-KlKliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

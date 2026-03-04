@@ -45,7 +45,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 **Wenn Ihr Domainname nicht die DNS-Server von OVHcloud verwendet**, kontaktieren Sie den Anbieter, der die DNS-Konfiguration Ihrer Domainname verwaltet, um sich über das weitere Vorgehen zu informieren.
 
-**Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+**Wenn Ihr Domainname bei OVHcloud registriert ist**, können Sie überprüfen, ob er unsere Konfiguration verwendet. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -79,7 +79,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ### 1 - DynHost-Benutzer erstellen <a name="step1"></a>
 
-KlKlicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -130,7 +130,7 @@ Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möch
 
 Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A- oder AAAA-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
 
-Weklicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
 |$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
-SiKlicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

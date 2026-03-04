@@ -114,7 +114,7 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 > De plus, le *domain1.tld* doit être enregistré chez OVHcloud pour mettre en place les hôtes.
 >
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

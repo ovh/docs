@@ -45,7 +45,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 **Se il dominio non utilizza i server DNS forniti da OVHcloud**, contatta il provider che ne gestisce la configurazione DNS per conoscere la procedura da seguire.
 
-**Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+**Se il dominio è registrato in OVHcloud**, verifica che utilizzi la nostra configurazione. Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -79,7 +79,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 ### 1 - Crea un utente DynHost <a name="step1"></a>
 
-ClClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -130,7 +130,7 @@ Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
 A questo punto è necessario creare il record DNS che dovrà essere aggiornato dinamicamente. Ti ricordiamo che per eseguire questa operazione il record non deve essere già presente nella zona DNS OVHcloud del dominio come record A o AAAA. Per verificarlo ed eventualmente rimuoverlo, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Unclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Una volta che tutto è pronto per creare il record, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Il sottodominio interessato dalla modifica|
 |$IP|Il nuovo indirizzo IPv4 o IPv6 di destinazione|
 
-VeClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
+Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**

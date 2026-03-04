@@ -26,6 +26,8 @@ In diesem Fall kann OVHcloud keine Rückerstattung anbieten.
 - Sie haben eine bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben eine E-Mail von OVHcloud erhalten, die besagt, dass bezüglich der Kontaktdaten Ihres Domaininhabers eine Aktion erforderlich ist.
 - Überprüfen Sie die folgenden Punkte, um sicherzustellen, dass es sich nicht um eine betrügerische E-Mail handelt:
+    - Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (Beispiel: `domain.tld`).
+    - Die in der E-Mail angegebene URL beginnt mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ In diesem Fall kann OVHcloud keine Rückerstattung anbieten.
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (Beispiel: `domain.tld`).
-    - Die in der E-Mail angegebene URL beginnt mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## In der praktischen Anwendung
 
@@ -59,7 +58,7 @@ Falls diese Methode nicht funktioniert, kann der Inhaber die E-Mail-Adresse manu
 
 ### 2 - Korrigieren oder vervollständigen Sie die Kontaktdaten des Domaininhabers als Administrator
 
-KlKlicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -136,7 +135,7 @@ Für bestimmte Erweiterungen (z. B.: .fr, .it, .es) kann der Domainadministrator
 > Falls die Korrekturen im ersten Teil dieser Anleitung den Start eines Wechsels des Inhabers für die Domain erfordern, vollenden Sie den Wechsel des Inhabers **vor** der Fortsetzung der in dieser Anleitung beschriebenen Aktionen.
 >
 
-Klicken Sie auf die Tabs unten, um jeden der **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

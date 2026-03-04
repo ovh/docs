@@ -28,7 +28,7 @@ OVHcloud offers the [Anycast DNS](/links/web/domains-options-anycast) option.
 
 ## Instructions
 
-ClClick on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**

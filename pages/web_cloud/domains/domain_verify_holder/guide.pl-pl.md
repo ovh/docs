@@ -26,6 +26,8 @@ W takim przypadku OVHcloud nie będzie mógł zaoferować żadnego zwrotu pieni�
 - Masz zarejestrowaną [nazwę domeny](/links/web/domains) w OVHcloud.
 - Otrzymałeś wiadomość e-mail od OVHcloud informującą, że wymagana jest akcja dotycząca danych kontaktowych właściciela Twojej nazwy domeny.
 - Sprawdź poniższe punkty, aby upewnić się, że nie jest to wiadomość oszukańcza:
+    - Temat wiadomości zawiera Twój NIC handle (np.: `aa00000-ovh`) i Twoją nazwę domeny (np.: `domain.tld`).
+    - Adres URL w wiadomości zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ W takim przypadku OVHcloud nie będzie mógł zaoferować żadnego zwrotu pieni�
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - Temat wiadomości zawiera Twój NIC handle (np.: `aa00000-ovh`) i Twoją nazwę domeny (np.: `domain.tld`).
-    - Adres URL w wiadomości zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## W praktyce
 
@@ -59,7 +58,7 @@ Jeśli ten sposób nie zadziała, właściciel może ręcznie zweryfikować swó
 
 ### 2 - Popraw lub uzupełnij dane kontaktowe właściciela nazwy domeny jako administrator
 
-KlKliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -136,7 +135,7 @@ Dla niektórych rozszerzeń (np.: .fr, .it, .es), administrator domeny może bez
 > Jeśli poprawki w pierwszej części tego przewodnika wymagały zainicjowania zmiany właściciela dla nazwy domeny, ukończ zmianę właściciela **przed** kontynuowaniem działań opisanych w tym przewodniku.
 >
 
-Kliknij w karty poniżej, aby wyświetlić każdy z **4** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**

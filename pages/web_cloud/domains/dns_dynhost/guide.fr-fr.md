@@ -45,7 +45,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 **Si votre nom de domaine n'utilise pas les serveurs DNS fournis par OVHcloud**, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre.
 
-**cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+**Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si celui-ci utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -79,7 +79,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 ### 1 - Créer un utilisateur DynHost <a name="step1"></a>
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -130,7 +130,7 @@ Répétez cette étape autant de fois que nécessaire si vous avez besoin de cr�
 
 La seconde étape consiste à créer l'enregistrement DNS qui devra être mis à jour dynamiquement. Pour rappel, celui-ci ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A » ou « AAAA ». Pour le vérifier, et le supprimer si nécessaire, reportez-vous aux informations de notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-D�cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Le sous-domaine concerné par la modification.|
 |$IP|La nouvelle adresse IPv4 ou IPv6 de destination.|
 
-Vocliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

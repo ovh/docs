@@ -37,7 +37,7 @@ DNS management is now easier thanks to the history of your DNS zones.
 
 ## Instructions
 
-Toclick on the tabs below to view each of the **3** steps.
+To access this feature, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

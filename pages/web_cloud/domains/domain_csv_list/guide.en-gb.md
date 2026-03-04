@@ -27,7 +27,7 @@ Want to retrieve a list of all the domain names on your OVHcloud customer accoun
 
 ## Instructions
 
-ClClick on the tabs below to view each of the **3** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

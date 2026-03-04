@@ -111,7 +111,7 @@ W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutor
 > Ponadto, OVHcloud musi zarejestrować *domain1.tld*, aby wdrożyć rekordy Host.
 >
 
-W kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

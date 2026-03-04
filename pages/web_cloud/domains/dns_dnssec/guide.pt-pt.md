@@ -43,7 +43,7 @@ Não hesite também em consultar os nossos manuais sobre [os servidores DNS da O
 
 ## Instruções
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!warning]
 >
@@ -78,7 +78,7 @@ Há três cenários detalhados abaixo que permitem ativar o **DNSSEC**.
 
 ### Casos n°1 - O seu domínio está registado na OVHcloud e utiliza os servidores DNS da OVHcloud
 
-Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -105,7 +105,7 @@ Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 Nesta situação, contacte o prestador que gere a configuração DNS do seu domínio para lhe pedir os parâmetros de ativação do DNSSEC ("Key Tag" / "Flag" / "Algoritmo" / "Chave pública (codificada em base64)").
 
-Quclique nos separadores abaixo para visualizar cada uma das **4** etapas.
+Quando tiver concluído a obtenção destes 4 parâmetros, clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

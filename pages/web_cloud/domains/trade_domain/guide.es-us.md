@@ -59,7 +59,7 @@ Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 
 ### Iniciar el procedimiento de cambio de titular o modificar la información asociada
 
-HaHaga clic en las fichas siguientes para ver cada una de las **6** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
 > **Etapa 1**

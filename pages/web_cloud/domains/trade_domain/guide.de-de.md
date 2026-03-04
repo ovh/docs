@@ -58,7 +58,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 ### Initiieren des Inhaberwechsels oder Ändern der Inhaberinformationen
 
-KlKlicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

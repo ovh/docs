@@ -59,7 +59,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 
 ### Rozpocznij procedurę zmiany abonenta lub zmień powiązane z nim informacje
 
-KlKliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **6** kroki.
 
 > [!tabs]
 > **Krok 1**

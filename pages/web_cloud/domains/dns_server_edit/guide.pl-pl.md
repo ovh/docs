@@ -56,7 +56,7 @@ Należy jednak wziąć pod uwagę następujące kwestie:
 
 ### 1 - Dostęp do zarządzania serwerami DNS OVHcloud <a name="access-dns-servers"></a>
 
-W kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

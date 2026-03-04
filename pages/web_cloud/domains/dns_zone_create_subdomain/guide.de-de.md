@@ -90,7 +90,7 @@ Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfi
 
 ### 1 - Erstellen der DNS-Zone über das OVHcloud Kundencenter
 
-KlKlicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -136,7 +136,7 @@ Die Aktivierung einer DNS-Zone für eine Subdomain unterscheidet sich von der Ak
 
 Zunächst müssen Sie den Namen der **DNS-Server** von OVHcloud abrufen, die mit der für Ihre Subdomain erstellten DNS-Zone verknüpft sind.
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -164,7 +164,7 @@ Nachdem Sie die beiden DNS-Server-Namen abgerufen haben, gibt es zwei mögliche 
 
 /// details | Der Domainname, von dem Ihre Subdomain abhängt, hat seine aktive DNS-Zone bei OVHcloud
 
-KlKlicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

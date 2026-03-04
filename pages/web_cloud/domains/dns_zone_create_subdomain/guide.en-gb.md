@@ -90,7 +90,7 @@ The subdomain will then have its own zone to configure its DNS records.
 
 ### 1 - Create the DNS zone via the OVHcloud Control Panel
 
-ClClick on the tabs below to view each of the **3** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -136,7 +136,7 @@ The activation of a DNS zone for a subdomain differs from that of a domain name,
 
 You must first retrieve the names of the **DNS servers** associated with the DNS zone created for your subdomain.
 
-Toclick on the tabs below to view each of the **2** steps.
+To find them, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -164,7 +164,7 @@ Once the two DNS server names are retrieved, two situations are possible:
 
 /// details | The domain name on which your subdomain depends has its active DNS zone with OVHcloud
 
-ClClick on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**

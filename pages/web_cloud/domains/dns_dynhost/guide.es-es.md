@@ -45,7 +45,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 **Si el dominio no utiliza los servidores DNS proporcionados por OVHcloud**, contacte con el proveedor que gestione su configuración DNS para conocer el procedimiento a seguir.
 
-**haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+**Si el dominio está registrado en OVHcloud**, compruebe que utiliza nuestra configuración. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -79,7 +79,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 ### 1 - Crear un usuario DynHost <a name="step1"></a>
 
-Pahaga clic en las fichas siguientes para ver cada una de las **5** etapas.
+Para crear un usuario DynHost, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -130,7 +130,7 @@ Repita esta operación para cada usuario DynHost que quiera crear.
 
 En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A o AAAA. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Pahaga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Para crear el registro DynHost, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|El subdominio afectado por la actualización.|
 |$IP|La nueva dirección IPv4 o IPv6 de destino.|
 
-Puhaga clic en las fichas siguientes para ver cada una de las **3** etapas.
+Puede comprobar si la dirección IP de destino se ha actualizado correctamente. Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

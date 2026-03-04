@@ -56,7 +56,7 @@ However, it is essential to consider the following points:
 
 ### 1 - Access OVHcloud DNS server management <a name="access-dns-servers"></a>
 
-Toclick on the tabs below to view each of the **3** steps.
+To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

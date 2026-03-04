@@ -61,7 +61,7 @@ Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS
 >
 > A differenza del nome di dominio, per una zona DNS non esiste la nozione di intestatario, ma di gestione dei contatti per una zona DNS OVHcloud. Se desideri trasferire la gestione della tua zona DNS su un altro account OVHcloud, segui la nostra guida [Gestire i contatti di servizio](/pages/account_and_service_management/account_information/managing_contacts).
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per accedere alla gestione di una zona DNS OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -99,7 +99,7 @@ Per effettuare questa operazione è possibile modificare manualmente la zona in 
 > Solo per gli utenti esperti. Presta particolare attenzione alla sintassi durante le modifiche.
 >
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per modificare in modalità testo una zona DNS di OVHcloud, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -129,7 +129,7 @@ Questa guida descrive la procedura relativa alla configurazione guidata.
 
 /// details | Aggiungi un nuovo record DNS
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per aggiungere un nuovo record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -156,7 +156,7 @@ Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** 
 
 /// details | Modifica un record DNS esistente
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per modificare un record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -177,7 +177,7 @@ Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** 
 
 /// details | Elimina un record DNS
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per eliminare un record DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -207,7 +207,7 @@ La reinizializzazione della zona DNS permette di ripristinare una configurazione
 > Prima di reimpostare la zona DNS, assicurati che il nome di dominio non sia associato a servizi in uso, come un sito Web o indirizzi email.
 >
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per reinizializzare la zona DNS, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -255,7 +255,7 @@ Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** 
 
 Una volta modificata la zona DNS del nome di dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
-Peclicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
+Per ridurre il tempo di propagazione per le prossime modifiche della zona DNS, è possibile regolare il TTL (*Time To Live*) che si applicherà a tutti i record della zona DNS. Per questo , clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **2** passi.
 
 > [!tabs]
 > **Passaggio 1**

@@ -26,6 +26,8 @@ In this case, OVHcloud will not be able to provide any refund.
 - You have a [domain name](/links/web/domains) registered with OVHcloud.
 - You have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
+    - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
+    - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ In this case, OVHcloud will not be able to provide any refund.
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
-    - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Instructions
 
@@ -59,7 +58,7 @@ If this method does not work, the holder can manually validate their email addre
 
 ### 2 - Correct or complete the contact details of the domain name holder as an administrator
 
-ClClick on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**

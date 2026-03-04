@@ -59,7 +59,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ### Lancer la procédure de changement de titulaire ou modifier les informations qui lui sont associées
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
 > **Étape 1**

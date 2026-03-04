@@ -27,7 +27,7 @@ Chcesz pobrać listę wszystkich domen dostępnych na Twoim koncie klienta OVHcl
 
 ## W praktyce
 
-KlKliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

@@ -45,7 +45,7 @@ Au cours de l'utilisation de votre nom de domaine, vous pouvez être amené à d
 
 ## En pratique
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**

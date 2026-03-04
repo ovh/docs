@@ -61,7 +61,7 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Alle Informationen z
 >
 > Im Gegensatz zum Domainnamen gibt es für eine DNS-Zone keinen Inhaber, lediglich die Kontaktverwaltung bei OVHcloud. Wenn Sie die Verwaltung Ihrer DNS-Zone auf einen anderen OVHcloud Kunden-Account übertragen möchten, folgen Sie unserer Anleitung [Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts).
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um auf die Verwaltung der OVHcloud DNS-Zone zugreifen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -99,7 +99,7 @@ Dazu können Sie entweder die Zone im Textmodus manuell bearbeiten oder unsere K
 > Nur für erfahrene Benutzer. Achten Sie auch sehr auf die Syntax, wenn Sie Änderungen vornehmen.
 >
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um auf die Verwaltung der OVHcloud DNS-Zonim Textmodus zugreifen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -129,7 +129,7 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 
 /// details | Neuen DNS-Eintrag hinzufügen
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -156,7 +156,7 @@ Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 /// details | Existierenden DNS-Eintrag bearbeiten
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um einen DNS-Eintrag zu bearbeiten, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -177,7 +177,7 @@ Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 /// details | DNS-Eintrag löschen
 
-Umklicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Um einen DNS-Eintrag zu löschen, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -207,7 +207,7 @@ Durch das Zurücksetzen Ihrer DNS-Zone können Sie zu einer minimalen Konfigurat
 > Bevor Sie Ihre DNS-Zone zurücksetzen, vergewissern Sie sich, dass Ihr Domainname nicht mit anderen Diensten wie Websites oder E-Mail-Adressen verbunden ist.
 >
 
-Umklicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um Ihre DNS-Zone zurückzusetzen, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -257,7 +257,7 @@ Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maxim
 
 Wenn Sie die Verzögerung für die nächste Bearbeitung Ihrer OVHcloud DNS-Zone verkürzen möchten, können Sie diese bis zu einem gewissen Grad beeinflussen, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge in der DNS-Zone gilt.
 
-KlKlicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

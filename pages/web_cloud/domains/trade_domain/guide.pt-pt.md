@@ -59,7 +59,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 
 ### Iniciar o procedimento de alteração de titular ou alterar as informações associadas
 
-ClClique nos separadores abaixo para visualizar cada uma das **6** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **6** etapas.
 
 > [!tabs]
 > **Etapa 1**

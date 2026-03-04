@@ -26,6 +26,8 @@ Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHcloud
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
 - Avoir reçu un e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
 - Vérifier les points suivants afin de vous assurer qu'il ne s'agit pas d'un e-mail frauduleux :
+    - Le sujet de l'e-mail contient votre identifiant client (par exemple : `aa00000-ovh`) ainsi que votre nom de domaine (par exemple : `domain.tld`).
+    - L’URL mentionnée dans l’e-mail commence bien par : `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -37,9 +39,6 @@ Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHcloud
 
 ---
 <!-- CP-NAV-END:web-domains -->
-
-    - Le sujet de l'e-mail contient votre identifiant client (par exemple : `aa00000-ovh`) ainsi que votre nom de domaine (par exemple : `domain.tld`).
-    - L’URL mentionnée dans l’e-mail commence bien par : `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## En pratique
 
@@ -59,7 +58,7 @@ Si cette méthode ne fonctionne pas, le titulaire peut valider manuellement son 
 
 ### 2 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine en tant qu'administrateur
 
-ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -136,7 +135,7 @@ Pour certaines extensions ( par exemple : .fr, .it, .es), l'administrateur du do
 > Si les corrections apportées en suivant la première partie de ce guide ont nécessité l'initialisation d'un changement de titulaire pour le nom de domaine, finalisez d'abord le changement de titulaire **avant** de poursuivre les actions décrites ci-dessous.
 >
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**

@@ -111,7 +111,7 @@ Si necesita más información, consulte [nuestro tutorial sobre la herramienta Z
 > Además, el *domain1.tld* debe estar registrado en OVHcloud para poder activar los "Hosts" records.
 >
 
-Pahaga clic en las fichas siguientes para ver cada una de las **3** etapas.
+Para ello, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

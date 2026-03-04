@@ -45,7 +45,7 @@ Na przykład **DynHost** może być używany do samodzielnego hostowania serwera
 
 **Jeśli Twoja domena nie używa serwerów DNS dostarczanych przez OVHcloud**, skontaktuj się z dostawcą zarządzającym konfiguracją DNS domeny, aby poznać dalszą procedurę.
 
-**kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+**Jeśli Twoja domena jest zarejestrowana w OVHcloud**, możesz sprawdzić, czy używa ona konfiguracji OVHcloud. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -79,7 +79,7 @@ Na przykład **DynHost** może być używany do samodzielnego hostowania serwera
 
 ### 1 - Utworzenie identyfikatora DynHost <a name="step1"></a>
 
-W kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -130,7 +130,7 @@ Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, i
 
 Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord "A" lub "AAAA". Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Gdkliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
+Gdy jesteś gotowy, aby utworzyć rekord DynHost, w tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -203,7 +203,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomena, której dotyczy modyfikacja.|
 |$IP|Nowy docelowy adres IPv4 lub IPv6.|
 
-Mokliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**

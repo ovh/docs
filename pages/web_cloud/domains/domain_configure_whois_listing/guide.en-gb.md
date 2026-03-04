@@ -45,7 +45,7 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Instructions
 
-ClClick on the tabs below to view each of the **3** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

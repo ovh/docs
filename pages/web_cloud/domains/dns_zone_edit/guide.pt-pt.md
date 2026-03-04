@@ -61,7 +61,7 @@ Para mais explicações, consulte os nossos manuais "[Saber tudo sobre os servid
 >
 > Ao contrário do nome de domínio, para uma zona DNS não existe uma noção de titular, mas sim uma gestão de contactos para uma zona DNS da OVHcloud. Se desejar mudar a gestão da sua zona DNS para outra conta OVHcloud, siga o nosso guia [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para aceder à gestão de uma zona DNS da OVHcloud, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -99,7 +99,7 @@ Para isso, pode alterar manualmente a zona em modo de texto ou utilizar os nosso
 > Apenas para utilizadores experientes. Esteja também muito atento à sintaxe aquando das suas modificações.
 > 
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para editar uma zona DNS da OVHcloud em modo de texto, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -129,7 +129,7 @@ A partir de agora, o manual apenas irá abordar a configuração realizada atrav
 
 /// details | Adicionar um novo registo DNS
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para adicionar um novo registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -156,7 +156,7 @@ Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 /// details | Alterar um registo DNS existente
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para alterar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -177,7 +177,7 @@ Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 /// details | Eliminar um registo DNS existente
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para eliminar um registo DNS, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -207,7 +207,7 @@ Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entrada
 > Antes de reiniciar a zona DNS, certifique-se de que o seu nome de domínio não está associado a serviços em curso de utilização, tais como um website ou endereços de e-mail.
 >
 
-Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Para reiniciar a zona DNS, clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -255,7 +255,7 @@ Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 Depois de alterar a zona DNS do nome de domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
-Seclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Se pretender reduzir esse tempo de espera para as suas próximas alterações da zona DNS da OVHcloud, pode fazê-lo, de certa forma, ajustando o TTL (*Time To Live*) que será aplicado a todos os registos da zona DNS. Para isso, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**

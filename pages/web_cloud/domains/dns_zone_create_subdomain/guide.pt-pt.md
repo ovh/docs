@@ -90,7 +90,7 @@ Este terá então a sua própria zona para configurar os seus registos DNS.
 
 ### 1 - Criar a zona DNS através do Área de Cliente OVHcloud
 
-ClClique nos separadores abaixo para visualizar cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -136,7 +136,7 @@ A ativação de uma zona DNS para um subdomínio difere daquela de um nome de do
 
 Deve primeiro recuperar os nomes dos **servidores DNS** OVHcloud associados à zona DNS criada para o seu subdomínio.
 
-Paclique nos separadores abaixo para visualizar cada uma das **2** etapas.
+Para os encontrar, clique nos separadores abaixo para visualizar cada uma das **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -164,7 +164,7 @@ Uma vez os 2 nomes de servidor DNS recuperados, 2 situações são possíveis:
 
 /// details | O nome de domínio do qual o seu subdomínio depende tem a sua zona DNS ativa na OVHcloud
 
-ClClique nos separadores abaixo para visualizar cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

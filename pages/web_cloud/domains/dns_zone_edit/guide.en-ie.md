@@ -61,7 +61,7 @@ For further explanation, please refer to our guides “[Everything you need to k
 >
 > Unlike domain names, a DNS zone has no "holder", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
-Toclick on the tabs below to view each of the **2** steps.
+To manage an OVHcloud DNS zone, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -99,7 +99,7 @@ To do this, you can either manually edit the zone in text mode, or use our confi
 > For informed users only. Be careful with syntax when you make changes.
 >
 
-Toclick on the tabs below to view each of the **2** steps.
+To edit an OVHcloud DNS zone in text mode, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -129,7 +129,7 @@ From this point onwards, this guide will only cover configuration using our conf
 
 /// details | Add a new DNS record
 
-Toclick on the tabs below to view each of the **2** steps.
+To add a new DNS record, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -156,7 +156,7 @@ Toclick on the tabs below to view each of the **2** steps.
 
 /// details | Modify an existing DNS record
 
-Toclick on the tabs below to view each of the **2** steps.
+To modify a DNS record, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -177,7 +177,7 @@ Toclick on the tabs below to view each of the **2** steps.
 
 /// details | Delete a DNS record
 
-Toclick on the tabs below to view each of the **2** steps.
+To delete a DNS record, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
@@ -206,7 +206,7 @@ By resetting your DNS zone, you can revert back to a minimal configuration, with
 > Before you reset your DNS zone, ensure that your domain name is not attached to services that are in use, such as a website or email addresses.
 >
 
-Toclick on the tabs below to view each of the **4** steps.
+To reset your DNS zone, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
@@ -254,7 +254,7 @@ Toclick on the tabs below to view each of the **4** steps.
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
-Ifclick on the tabs below to view each of the **2** steps.
+If you would like to reduce this delay for the next edits of your OVHcloud DNS zone, you can do so to a certain extent by adjusting the TTL (*Time To Live*), which will apply to all of the records in the DNS zone. To do that, click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**

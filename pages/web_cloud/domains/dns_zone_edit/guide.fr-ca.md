@@ -61,7 +61,7 @@ Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs 
 >
 > Contrairement au nom de domaine, il n'y a pas de notion de titulaire pour une zone DNS, mais de gestion des contacts pour une zone DNS OVHcloud. Si vous souhaitez basculer la gestion de votre zone DNS vers un autre compte OVHcloud, suivez notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Pour accéder à la gestion d'une zone DNS OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -99,7 +99,7 @@ Pour effectuer cela, vous pouvez soit modifier manuellement la zone en mode text
 > Pour les utilisateurs avertis uniquement. Soyez également très vigilant sur la syntaxe lors de vos modifications.
 >
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Pour modifier en mode textuel une zone DNS OVHcloud, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -129,7 +129,7 @@ Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **
 
 /// details | Ajouter un nouvel enregistrement DNS
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Pour ajouter un nouvel enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -156,7 +156,7 @@ Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **
 
 /// details | Modifier un enregistrement DNS existant
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Pour modifier un enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -177,7 +177,7 @@ Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **
 
 /// details | Supprimer un enregistrement DNS
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Pour supprimer un enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -207,7 +207,7 @@ Réinitialiser votre zone DNS permet de revenir à une configuration minimale, a
 > Avant de réinitialiser votre zone DNS, assurez-vous que votre nom de domaine n'est pas attaché à des services en cours d'utilisation, tels qu'un site web ou des adresses e-mail.
 >
 
-Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Pour réinitialiser votre zone DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
@@ -255,7 +255,7 @@ Pocliquez sur les onglets ci-dessous pour afficher successivement chacune des **
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
-Sicliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
+Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone DNS OVHcloud, vous pouvez le faire, dans une certaine mesure, en ajustant le TTL (*Time To Live*) qui s'appliquera à tous les enregistrements de la zone DNS. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
 > [!tabs]
 > **Étape 1**
