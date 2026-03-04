@@ -254,7 +254,25 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
 
 - `loadbalancer.openstack.org/flavor-id` (MKS Standard only)
 
-  The UUID of the flavor used to create the loadbalancer. To get the flavors UUIDs, see the following guides:
+  The UUID of the flavor used to create the loadbalancer. To get the flavors UUIDs, install the [OVHcloud CLI](https://github.com/ovh/ovhcloud-cli) and run:
+
+  ```bash
+  ovhcloud cloud reference loadbalancer list-flavors <REGION>
+  ```
+
+  ```console
+  $ ovhcloud cloud reference loadbalancer list-flavors EU-WEST-PAR
+  ┌──────────────────────────────────────┬────────┬─────────────┐
+  │                  id                  │  name  │   region    │
+  ├──────────────────────────────────────┼────────┼─────────────┤
+  │ 222a6297-9d0b-42df-82a7-dcc83168868e │ medium │ EU-WEST-PAR │
+  │ 472650bd-610d-40ed-9bb3-80e419a9fdcb │ large  │ EU-WEST-PAR │
+  │ 472f72ea-3e6a-4633-bf23-0591bef5c553 │ small  │ EU-WEST-PAR │
+  │ b753626b-12a2-4163-b277-208b4044e979 │ xl     │ EU-WEST-PAR │
+  └──────────────────────────────────────┴────────┴─────────────┘
+  ```
+
+  Alternatively, you can use the OpenStack CLI:
     - [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api);
     - [Load the OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
     - Run `openstack loadbalancer flavor list` to get the list of flavors and their UUIDs.
