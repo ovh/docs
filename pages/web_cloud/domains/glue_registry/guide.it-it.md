@@ -114,13 +114,13 @@ Se necessario e per maggiori informazioni, consulta la nostra guida sullo strume
 Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Tappa 1**
+> **Passaggio1**
 >>
 >> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Tappa 2**
+> **Passaggio2**
 >>
 >> Nella nuova pagina, clicca sulla scheda `Host`{.action}.
 >>
@@ -128,7 +128,7 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Tappa 3**
+> **Passaggio3**
 >>
 >> Nella nuova finestra, inserisci le informazioni richieste:
 >>

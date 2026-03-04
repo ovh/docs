@@ -59,17 +59,17 @@ Tuttavia, è essenziale tenere conto dei seguenti punti:
 Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Tappa 1**
+> **Passaggio1**
 >>
 >> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Tappa 2**
+> **Passaggio2**
 >>
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
-> **Tappa 3**
+> **Passaggio3**
 >>
 >> Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo nome di dominio. A ogni riga corrisponde un server DNS.
 >>
