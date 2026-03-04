@@ -29,7 +29,7 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 
 Les sections suivantes contiennent les configurations des distributions que nous proposons actuellement et les distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou via une session de connexion GUI (RDP pour un serveur Windows).
 
-Sur les serveurs dédiés, la première IPv6 est déclarée comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64`, la première IPv6 de votre serveur est : `2607:5300:xxxx:xxxx::/64`.
+Sur les serveurs dédiés, la première IPv6 est déclarée comme `2607:5300:xxxx:xxxx::/64`. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64`, la première IPv6 de votre serveur est : `2607:5300:xxxx:xxxx::/64`.
 
 Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 
@@ -68,7 +68,7 @@ Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple :
 >
 
 > [!success]
-> Veuillez noter que les "0" de tête peuvent être supprimés dans une passerelle IPv6.
+> Veuillez noter que les `0` de tête peuvent être supprimés dans une passerelle IPv6.
 >
 > Exemple : IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` peut aussi être écrit comme `2607:5300:60:62ff:ff:ff:ff:ff`.
 >
@@ -118,7 +118,7 @@ Sélectionnez le réseau existant et cliquez sur `Edit`{.action}.
 
 ![configuration du conteneur](images/edit_network.png){.thumbnail}
 
-Complétez les champs IPV6 avec les bonnes informations.
+Complétez les champs IPv6 avec les bonnes informations.
 
 ![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
 
@@ -196,7 +196,7 @@ Enregistrez vos modifications dans le fichier de configuration et quittez l'édi
 Appliquez la configuration :
 
 ```bash
-netplan apply
+sudo netplan apply
 ```
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
@@ -246,7 +246,7 @@ NetworkManager a précédemment stocké des profils réseau au format ifcfg dans
 Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
 ```bash
-sudo /etc/NetworkManager/system-connections
+cd /etc/NetworkManager/system-connections
 ```
 
 Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dans notre exemple, notre fichier s'appelle `ens18.nmconnection`.

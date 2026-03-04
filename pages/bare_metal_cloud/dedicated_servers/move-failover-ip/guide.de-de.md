@@ -27,7 +27,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 >
 > Migrationen funktionieren nur für ganze Blöcke. Es ist nicht möglich, einzelne IPs innerhalb eines Blocks zu migrieren.
 
-**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen. Außerdem wird erklärt, wie Sie eine Additional IP von einem So You Start Kundencenter in ein OVHcloud Kundencenter übertragen können.**
+**Diese Anleitung erklärt, wie Sie eine Additional IP über Ihr OVHcloud Kundencenter oder die OVHcloud API umziehen. Außerdem wird erklärt, wie Sie eine Additional IP von einem So you Start Kundencenter in ein OVHcloud Kundencenter übertragen können.**
 
 ## Voraussetzungen
 
@@ -89,7 +89,7 @@ Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 > [!warning]
 > Beachten Sie, dass bei einigen Produkten IP-Adressen (oder Blöcke) zunächst in einen IP-Parkplatz (einen temporären Speicherort) verschoben werden müssen, bevor sie zum gewünschten Produkt verschoben werden können.
 >
-> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie die **vRack-Verwaltung**, auf die Sie zugreifen können, indem Sie das Menü `Netzwerk`{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
+> Um IP-Blöcke in ein bestimmtes vRack-Netzwerk zu verschieben, verwenden Sie die **vRack-Verwaltung**, auf die Sie zugreifen können, indem Sie das Menü `Network`{.action} in der linken Seitenleiste öffnen und dann `Private vRack Netzwerk`{.action} auswählen. 
 >
 
 ### Additional IP über die API umziehen
@@ -117,9 +117,9 @@ Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 - `serviceName`: die Referenz des Zielservers
 - `ip`: die umzuziehende Additional IP
 
-### Verschieben einer Additional IP von einem So You Start Kundencenter zu einem OVHcloud Kundencenter
+### Verschieben einer Additional IP von einem So you Start Kundencenter zu einem OVHcloud Kundencenter
 
-Um eine Additional IP von einem SYS Kundencenter zu einem OVHcloud Kundencenter zu transferieren gibt es einige Dinge, die Sie beachten sollten:
+Um eine Additional IP von einem SYS Kundencenter zu einem OVHcloud Kundencenter zu transferieren, gibt es einige Dinge, die Sie beachten sollten:
 
 - Für das Verschieben einer Additional IP fallen Installationsgebühren an. Die IP-Adresse wird nicht verschoben, wenn die Rechnung nicht bezahlt wurde.
 - Es ist nicht möglich, eine Additional IP von einem OVHcloud Kundencenter zu einem So you Start Kundencenter zu transferieren.
@@ -133,21 +133,21 @@ Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failove
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Wählen Sie `Auf eine OVH-Dienstleistung umziehen`, geben Sie Ihre NIC-Handle ein und klicken Sie auf `Weiter`{.action}.
+Wählen Sie `Auf eine OVH-Dienstleistung umziehen`{.action}, geben Sie Ihre OVHcloud Kundenkennung, auch "NIC-handle" ein und klicken Sie auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Dadurch wird eine Code (Token) generiert und gespeichert.
+Dadurch wird ein Code (Token) generiert. Speichern Sie diesen.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
+Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an, klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Klicken Sie auf das Zahnrad auf der rechten Seite und wählen Sie `Meine IP-Adressen von SyS bei OVHcloud importieren`{.action}.
 
 ![SoYouStart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und die Token (die im Konto So you Start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
+Ein Popup-Fenster wird angezeigt, in dem Sie die Additional IP (oder den Block) und das Token (das im Konto So you Start abgerufen wurde) eingeben können. Klicken Sie dann auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
@@ -158,11 +158,11 @@ Klicken Sie auf `Weiter`{.action}.
 ![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
 ![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
 
-Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr angezeigt. Klicken Sie auf `Weiter`{.action} um fortzufahren.
+Im nächsten Fenster wird die Dauer automatisch ausgewählt und die Gebühr angezeigt. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
 ![soyoustart to ovh](images/Step-3.png){.thumbnail}
 
-Markieren Sie `Ich akzeptiere die Verträge`{.action} um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
+Markieren Sie `Ich akzeptiere die Verträge`{.action}, um den Dienstleistungsbedingungen zuzustimmen, sobald Sie sie gelesen haben. Klicken Sie dann auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/Step-4.png){.thumbnail}
 
@@ -192,7 +192,7 @@ Weitere Informationen finden Sie in unserer Liste der [verfügbaren Regionen](/l
 | ca-east-bhs    |     ❌        |      ❌       |    ❌         |        ❌    |        ❌       |      ❌          |       ❌      |     ✅        |      ❌       | ❌      |     ❌      |
 | ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅     | ❌      |     ❌      |
 | ap-southeast-sgp|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ✅       |     ❌      |
-| ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅
+| ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
 
 ## Weiterführende Informationen
 
