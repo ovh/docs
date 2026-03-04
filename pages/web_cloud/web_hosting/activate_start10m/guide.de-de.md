@@ -29,7 +29,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 
 ## In der praktischen Anwendung
 
-Um Ihr Kostenloses Hosting 100M zu aktivieren, klicken Sie auf die folgenden Tabs, um nacheinander alle **4** Schritte anzuzeigen.
+Um Ihr Kostenloses Hosting 100M zu aktivieren, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

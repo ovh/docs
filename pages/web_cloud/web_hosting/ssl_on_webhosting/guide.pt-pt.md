@@ -78,7 +78,7 @@ Encontre aqui os 4 links para os nossos guias dedicados a estas 4 soluções:
 >
 > Uma vez que esta verificação depende das definições do(s) website(s), recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica.
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

@@ -122,7 +122,7 @@ Die Installation des Sectigo DV SSL-Zertifikats kann bis zu **24** Stunden dauer
 
 ### Aktivierung des Sectigo DV SSL-Zertifikats überprüfen
 
-Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Tabs, um die **3** Schritte anzuzeigen.
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

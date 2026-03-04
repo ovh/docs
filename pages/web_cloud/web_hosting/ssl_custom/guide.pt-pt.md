@@ -170,7 +170,7 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 Quando todos estes requisitos forem cumpridos, pode iniciar a finalização da instalação do seu certificado SSL personalizado no seu alojamento web.
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

@@ -53,7 +53,7 @@ Para se ligar e utilizar o acesso SSH do seu alojamento web, precisará dos segu
 
 ### 1 - Assegure-se de que o acesso SSH está ativo para o utilizador SSH escolhido <a name="user-ssh-enablement"></a>
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -86,7 +86,7 @@ Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etap
 
 ### 2 - Obtenha as informações necessárias para se ligar em SSH <a name="sshlogin"></a>
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **3** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**

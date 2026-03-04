@@ -96,7 +96,7 @@ Es kann mehrere Stunden dauern, bis das SSL-Zertifikat von Let's Encrypt eingeri
 
 ### Die Aktivierung des kostenlosen SSL-Zertifikats Let's Encrypt (DV) überprüfen
 
-Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die folgenden Tabs, um die **3** Schritte anzuzeigen.
+Um zu überprüfen, dass die Installation abgeschlossen ist, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

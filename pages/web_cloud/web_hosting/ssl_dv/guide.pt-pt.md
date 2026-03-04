@@ -83,7 +83,7 @@ Para confirmar, consulte os guias abaixo sempre que necessário:
 
 ### Encomendar o certificado SSL Sectigo DV
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

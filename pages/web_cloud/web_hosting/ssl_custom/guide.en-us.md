@@ -218,7 +218,7 @@ If the SSL certificate has been generated successfully by the SSL provider, and 
 
 The installation will take several minutes.
 
-To verify that the installation is complete, click on the tabs below to display each of the **3** steps.
+To verify that the installation is complete, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
