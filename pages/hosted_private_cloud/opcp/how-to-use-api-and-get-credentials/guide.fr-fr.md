@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment utiliser les API et obtenir les informations d'identification"
 excerpt: "Découvrez les étapes nécessaires pour configurer Keycloak et le CLI OpenStack afin de permettre l’authentification via Keycloak"
-updated: 2026-03-03
+updated: 2025-11-07
 ---
 
 ## Objectif

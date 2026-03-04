@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to use the APIs and obtain the credentials"
 excerpt: "Discover the steps required to configure Keycloak and the OpenStack CLI to allow authentication via Keycloak"
-updated: 2026-03-03
+updated: 2025-11-07
 ---
 
 ## Objective
