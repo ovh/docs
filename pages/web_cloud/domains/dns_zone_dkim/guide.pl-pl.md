@@ -69,7 +69,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} >  `Strefy DNS`{.action} > Wybierz nazwę domeny
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

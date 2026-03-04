@@ -68,7 +68,7 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 ### Acesso à Área de Cliente OVHcloud
 
 - **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Caminho de navegação:** `Web Cloud`{.action} >  `Zonas DNS`{.action} > Selecione o seu nome de domínio
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

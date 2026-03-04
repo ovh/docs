@@ -68,7 +68,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 ### Zugriff auf das OVHcloud Kundencenter
 
 - **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
-- **Navigationspfad:** `Web Cloud`{.action} >  `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

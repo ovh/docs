@@ -39,7 +39,7 @@ Vous souhaitez que votre site web soit accessible via votre nom de domaine ? Pou
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
-- **Pour accéder à vos services :** `Web Cloud`{.action} >  `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

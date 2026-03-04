@@ -37,7 +37,7 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} >  `Strefy DNS`{.action} > Wybierz nazwę domeny
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

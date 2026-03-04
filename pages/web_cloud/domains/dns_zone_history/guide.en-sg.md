@@ -30,7 +30,7 @@ DNS management is now easier thanks to the history of your DNS zones.
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

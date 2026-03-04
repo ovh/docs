@@ -67,7 +67,7 @@ You should therefore ensure that you enter the sending sources you use to send e
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

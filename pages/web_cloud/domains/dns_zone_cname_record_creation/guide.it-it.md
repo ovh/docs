@@ -41,7 +41,7 @@ I record CNAME sono utili per evitare di modificare gli indirizzi IP dei sottodo
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Percorso di navigazione:** `Web Cloud`{.action} >  `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

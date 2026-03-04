@@ -81,7 +81,7 @@ Diese wird dann über eine eigene Zone verfügen, um ihre DNS-Einträge zu konfi
 ### Zugriff auf das OVHcloud Kundencenter
 
 - **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
-- **Navigationspfad:** `Web Cloud`{.action} >  `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

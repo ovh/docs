@@ -30,7 +30,7 @@ With an MX record, you can link a domain name to the server on your email platfo
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

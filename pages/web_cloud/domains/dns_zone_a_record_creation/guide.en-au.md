@@ -39,7 +39,7 @@ Want your website to be accessible via your domain name? To do this, your domain
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->
