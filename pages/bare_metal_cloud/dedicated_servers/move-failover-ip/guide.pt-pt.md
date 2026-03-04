@@ -119,10 +119,6 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 
 ### Migrar um Additional IP de uma conta So you Start para uma conta OVHcloud
 
-> [!primary]
-> Antes de começar, deve recuperar o seu identificador de cliente OVHcloud único. Encontrará essa informação nos e-mails enviados pela OVHcloud (e-mail de confirmação da criação da conta, bem como nos e-mails de confirmação ou renovação de encomendas). É semelhante a isto: `aa00000-ovh` (as primeiras letras são geralmente as iniciais da pessoa que criou a conta).
->
-
 Para migrar um Additional IP de uma conta SYS para uma conta OVHcloud, deve ter em conta vários elementos:
 
 - A migração de um Additional IP implica custos de instalação. O endereço IP não será migrado se a fatura permanecer por pagar.

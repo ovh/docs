@@ -119,6 +119,10 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 ### Déplacer une Additional IP d'un compte So you Start vers un compte OVHcloud
 
+> [primary]
+> Avant de commencer, vous devez récupérer votre identifiant client OVHcloud unique. Vous trouverez cette information dans les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.) Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte).
+>
+
 Pour déplacer une Additional IP d'un compte SYS vers un compte OVHcloud, vous devez tenir compte de plusieurs éléments :
 
 - Le déplacement d'une Additional IP entraîne des frais d'installation. L'adresse IP ne sera pas déplacée si la facture reste impayée.

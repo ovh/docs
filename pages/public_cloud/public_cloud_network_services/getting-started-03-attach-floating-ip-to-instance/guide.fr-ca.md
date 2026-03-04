@@ -141,7 +141,7 @@ Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenSt
 
 Depuis l'onglet `Public Cloud`{.action}, cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 
-Dans l'onglet `Floating IPs`{.action}, cliquez sur le bouton `...`{.action} à côté de l'IP correspondante et sélectionnez `Supprimer`{.action}.
+Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à côté de l'IP correspondante et sélectionnez `Supprimer`{.action}.
 
 ![delete floating ip](images/deletefip.png){.thumbnail}
 

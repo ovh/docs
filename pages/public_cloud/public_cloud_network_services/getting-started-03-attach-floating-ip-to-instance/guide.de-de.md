@@ -108,11 +108,11 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> In the `Public Cloud`{.action} section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
 >>
->> Click on `Floating IPs`{.action}, then on `Add a new IP`{.action}.
+>> Click on `Floating IP`{.action}, then on `Add a new IP`{.action}.
 >>
 >> ![add a new ip](images/addfloatingip.png){.thumbnail}
 >>
->> Underneath `Select your public use`{.action}, select the `Floating IPs (Public Cloud)`{.action}.
+>> Underneath "Select your public use", select the `Floating IPs (Public Cloud)`{.action}.
 >> 
 >> ![select floating ip](images/selectfip.png){.thumbnail}
 >>
@@ -147,7 +147,7 @@ This feature is available via the [OpenStack API](#detachip) and the [Horizon in
 
 In the `Public Cloud`{.action} section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
 
-In the `Floating IPs`{.action} tab, click on the `...`{.action} next to the corresponding IP and select `Delete`{.action}.
+In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corresponding IP and select `Delete`{.action}.
 
 ![delete floating ip](images/deletefip.png){.thumbnail}
 
@@ -528,7 +528,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 
 #### Detaching a Floating IP
 
-This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip). 
+This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip).
 
 #### Deleting a Floating IP
 

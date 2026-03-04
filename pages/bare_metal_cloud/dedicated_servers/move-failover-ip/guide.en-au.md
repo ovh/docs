@@ -117,6 +117,10 @@ To move the IP address, use the following call:
 
 ### Moving an Additional IP from a So you Start account to an OVHcloud account
 
+> [!primary]
+> Before you begin, you must retrieve your unique OVHcloud customer ID. You can find this information in the emails sent by OVHcloud (account creation confirmation email, order confirmations, renewal emails, etc.). It looks like this: “aa00000-ovh” (the first letters are normally the initials of the person who created the account).
+>
+
 To move an Additional IP from a SYS account to an OVHcloud account, there are a few things you need to consider:
 
 - Moving an Additional IP incurs an installation fee. The IP address will not be moved if the invoice remains unpaid.

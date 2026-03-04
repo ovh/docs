@@ -133,7 +133,7 @@ Klicken Sie auf das Zahnrad neben der entsprechenden IP und wählen Sie `Failove
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Wählen Sie `Auf eine OVH-Dienstleistung umziehen`{.action}, geben Sie Ihre OVHcloud Kundenkennung ein und klicken Sie auf `Weiter`{.action}.
+Wählen Sie `Auf eine OVH-Dienstleistung umziehen`{.action}, geben Sie Ihre OVHcloud Kundenkennung, auch "NIC-handle" ein und klicken Sie auf `Weiter`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
