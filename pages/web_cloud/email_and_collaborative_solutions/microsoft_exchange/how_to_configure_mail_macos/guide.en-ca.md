@@ -97,8 +97,6 @@ If your email account is already set up and you need to access the account setti
 
 [FAQ emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-[Configure your Email Pro account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
-
 [Configure your MX Plan email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
 Join our [community of users](/links/community).

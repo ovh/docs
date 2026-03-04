@@ -50,22 +50,6 @@ OVHcloud ofrece actualmente 4 soluciones de correo. Para entender sus especifica
 > [!success]
 > A menos que se indique lo contrario, las siguientes preguntas afectan a todos los servicios de correo de OVHcloud.
 
-/// details | ¿En qué se diferencian las tecnologías de correo electrónico de las ofertas **MX Plan**?
-
-La solución MX Plan se distingue por su evolución, que se basa en tres tecnologías de correo distintas. Cada una de ellas tiene su propia interfaz webmail:
-
-- **Roundcube**.
-- **OWA** (Outlook Web Access).
-- **Zimbra**.
-
-Esta diversidad de tecnologías implica una ergonomía de funcionamiento diferente para cada interfaz. Algunas funcionalidades pueden configurarse a través del área de cliente, mientras que otras pueden configurarse a través del webmail.
-
-A continuación, se ofrece un resumen de las principales funcionalidades de correo electrónico, clasificadas por tecnología y ubicación de configuración:
-
-![MX plan](images/email_feature_table.png){.thumbnail .w-500}
-
-///
-
 /// details | ¿Qué hay que saber antes de crear una dirección de correo electrónico?
 
 Crear una dirección de correo electrónico no es una tarea compleja, pero es necesario seguir unas reglas que determinen el **nombre de su dirección de correo electrónico** y su **contraseña**.

@@ -19,7 +19,6 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 >
 > **Special cases**
 >
-> - Regarding the 100M free hosting solution, you will need to [activate it](/pages/web_cloud/web_hosting/activate_start10m) in order to create an email account. You can do this from your [OVHcloud Control Panel](/links/manager) by selecting the domain name concerned.
 > - For [Web Hosting plans](/links/web/hosting), you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>
@@ -123,7 +122,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
-Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+Your inbox will then appear. You can find more information in our guide on [Using your email account via the Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
