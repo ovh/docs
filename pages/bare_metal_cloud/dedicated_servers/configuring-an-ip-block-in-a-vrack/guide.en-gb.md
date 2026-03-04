@@ -79,7 +79,8 @@ The default selection of public bandwidth can be modified at the order time of a
 
 To order a new Additional IP block:
 - Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager).
-- Go to the `Network`{.action} section in the left-hand sidebar, then select `Public IP addresses`{.action}.
+- Open the `Network`{.action} section in the left-hand sidebar.
+- Select `Public IP addresses`{.action}.
 - Click on the `Order IPs`{.action} button, near the top of the page.
 - Select the IP version, then the vRack you want to attach your Additional IP to.
 - Select the region you want your Additional IP to be in.
@@ -96,7 +97,7 @@ For Additional IP blocks already attached to a vRack, bandwidth can be managed d
 
 To access the management interface:
 - Open `Network`{.action} in the left-hand sidebar of your Control Panel.
-- Open `vRack private network`{.action}.
+- Select `vRack private network`{.action}.
 - In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
 
 The management page is organized into two tabs:
