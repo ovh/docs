@@ -30,9 +30,18 @@ For further explanation, please refer to our guides “[Everything you need to k
 
 ## Requirements
 
-- Appropriate rights to manage the domain name from your [OVHcloud Control Panel](/links/manager)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - OVHcloud DNS servers in use for the domain name concerned
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -52,22 +61,16 @@ For further explanation, please refer to our guides “[Everything you need to k
 >
 > Unlike domain names, a DNS zone has no "holder", but is managed at OVHcloud through the contact management. If you wish to assign the management of your DNS zone to another OVHcloud customer account, follow our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
-To manage an OVHcloud DNS zone, click on the tabs below to view each of the **3** steps.
+Toclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> The table displays a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 >>
@@ -96,22 +99,16 @@ To do this, you can either manually edit the zone in text mode, or use our confi
 > For informed users only. Be careful with syntax when you make changes.
 >
 
-To edit an OVHcloud DNS zone in text mode, click on the tabs below to view each of the **3** steps.
+Toclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> On the right or below the table, click `Change in text format`{.action} and follow the steps that appear.
 >>
@@ -132,22 +129,16 @@ From this point onwards, this guide will only cover configuration using our conf
 
 /// details | Add a new DNS record
 
-To add a new DNS record, click on the tabs below to view each of the **3** steps.
+Toclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> On the right or below the table, click `Add an entry`{.action}, then follow the steps that appear.
 >>
@@ -163,25 +154,18 @@ To add a new DNS record, click on the tabs below to view each of the **3** steps
 
 ///
 
-
 /// details | Modify an existing DNS record
 
-To modify a DNS record, click on the tabs below to view each of the **3** steps.
+Toclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> In the table that appears, click on the symbol `...`{.action} to the right of the entry concerned.
 >>
@@ -191,25 +175,18 @@ To modify a DNS record, click on the tabs below to view each of the **3** steps.
 
 ///
 
-
 /// details | Delete a DNS record
 
-To delete a DNS record, click on the tabs below to view each of the **3** steps.
+Toclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> In the table that appears, click on the symbol `...`{.action} to the right of the entry concerned.
 >> Then click `Delete record`{.action} and follow the steps that appear.
@@ -220,7 +197,6 @@ To delete a DNS record, click on the tabs below to view each of the **3** steps.
 
 ///
 
-
 /// details | Reset the DNS zone
 
 By resetting your DNS zone, you can revert back to a minimal configuration, with OVHcloud default records, or your services’ records. You can also point your domain name to custom web hosting and email services.
@@ -230,35 +206,29 @@ By resetting your DNS zone, you can revert back to a minimal configuration, with
 > Before you reset your DNS zone, ensure that your domain name is not attached to services that are in use, such as a website or email addresses.
 >
 
-To reset your DNS zone, click on the tabs below to view each of the **5** steps.
+Toclick on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> On the right or below the table, click `Reset my DNS zone`{.action}, then follow the 2 steps that appear.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone-ca.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> Answer the question `Do you want to enable the minimum records when you reset your DNS zone?`. Defining minimal records in a DNS zone prevents error responses when the domain name is queried.
 >>
 >> - `Yes, I want to reset my DNS zone with the minimum records`
 >> - `No, but I want to reset my DNS zone`
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> Whichever option you choose in the previous step, you will need to set values for queries to your domain name to prevent an incorrect DNS response.
 >>
@@ -280,27 +250,20 @@ To reset your DNS zone, click on the tabs below to view each of the **5** steps.
 
 ///
 
-
 ### Propagation time
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
-If you would like to reduce this delay for the next edits of your OVHcloud DNS zone, you can do so to a certain extent by adjusting the TTL (*Time To Live*), which will apply to all of the records in the DNS zone. To do that, click on the tabs below to view each of the **3** steps.
+Ifclick on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> On the right or below the table, click the `Modify default TTL`{.action} button and follow the steps that appear.
 >>

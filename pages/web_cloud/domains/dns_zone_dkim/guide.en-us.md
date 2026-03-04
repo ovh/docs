@@ -55,12 +55,21 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have signed up to one of these email offers:
     - OVHcloud MX Plan Email, available with a [web hosting plan](/links/web/hosting)
     - [Exchange](/links/web/emails-hosted-exchange)
     - An email solution outside of OVHcloud with DKIM support
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -993,4 +1002,4 @@ Below, you will find the states that may block your DKIM from working, and the a
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

@@ -27,7 +27,17 @@ En función de sus necesidades, es posible personalizar el nombre de los servido
 ## Requisitos
 
 - Tener un [nombre de dominio](/links/web/domains) registrado con OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la parte `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedimiento
 
@@ -101,22 +111,16 @@ Si necesita más información, consulte [nuestro tutorial sobre la herramienta Z
 > Además, el *domain1.tld* debe estar registrado en OVHcloud para poder activar los "Hosts" records.
 >
 
-Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Pahaga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action} y seleccione el nombre de dominio correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el nombre de dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva página, haga clic en la pestaña `Hosts`{.action}.
 >>
@@ -124,7 +128,7 @@ Para ello, haga clic en las fichas siguientes para ver cada una de las **4** eta
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Introduzca la información solicitada en la ventana que se abre en su pantalla :
 >>
@@ -285,4 +289,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

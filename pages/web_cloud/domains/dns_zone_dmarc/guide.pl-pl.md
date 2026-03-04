@@ -17,11 +17,20 @@ Rekord **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym](/links/partner) dostawcą usług hostingowych. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) tego tutoriala.
 >
 
-
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania nazwą domeny (przypisaną do Twojego rozwiązania e-mail) w Panelu [klienta OVHcloud](/links/manager).
 - Jeden z mechanizmów uwierzytelniania, [SPF](/pages/web_cloud/domains/dns_zone_spf) i/lub [DKIM](/pages/web_cloud/domains/dns_zone_dkim) musi być skonfigurowany w strefie DNS nazwy domeny usługi e-mail.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} >  `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## W praktyce
 

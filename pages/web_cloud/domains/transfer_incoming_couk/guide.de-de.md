@@ -38,6 +38,18 @@ Für den Transfer einer .uk-Domainname (oder einer ähnlichen Domainname) ist ei
 - Die Angaben des Inhabers müssen im Whois der [Domain](https://www.nominet.uk/whois/) aktuell sein.
 - Sie haben Zugriff auf den Autorisierungscode, der an die E-Mail-Adresse des Inhabers versandt wird. 
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 > [!primary]
 >
 > Der Zeitraum der **Redemption**-Phase beträgt maximal 90 Tage ab dem Ablaufdatum der Domain. Im Falle eines Transfers erlaubt dieser Zeitraum die Wiederherstellung der Domain und entsperrt so die Möglichkeit, diese zu transferieren.

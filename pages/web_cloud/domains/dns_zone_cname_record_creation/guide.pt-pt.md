@@ -34,7 +34,18 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 
 - Ter um [nome de domínio](/links/web/domains).
 - Ter uma zona DNS associada a este nome de domínio na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} >  `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >

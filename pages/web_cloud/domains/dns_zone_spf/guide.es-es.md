@@ -62,9 +62,18 @@ Cuando el servidor de recepción (Inbound Mail Server) recibe el mensaje de corr
 
 ## Requisitos
 
-- Tener acceso a la gestión del nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - El nombre de dominio debe utilizar la configuración de OVHcloud (es decir, los servidores DNS de OVHcloud).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} >  `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

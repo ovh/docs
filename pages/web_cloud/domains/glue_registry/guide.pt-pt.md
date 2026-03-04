@@ -27,7 +27,17 @@ Consoante as suas necessidades, é possível personalizar o nome dos servidores 
 ## Requisitos
 
 - Ter um [nome de domínio registado](/links/web/domains) na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), parte `Web Cloud`{.action}. 
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 
@@ -101,22 +111,16 @@ Se precisar de mais informações, consulte o nosso tutorial sobre a ferramenta 
 > Além disso, o *domain1.tld* deve ser registado na OVHcloud para implementar os "Hosts" records.
 >
 
-Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+Paclique nos separadores abaixo para visualizar cada uma das **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
+>> Clique [nesta ligação](/links/control-panel/web-domains) e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na nova página, clique no separador `Hosts`{.action}.
 >>
@@ -124,7 +128,7 @@ Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** 
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na janela que se abre no seu ecrã, complete as informações pedidas:
 >>
@@ -285,4 +289,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

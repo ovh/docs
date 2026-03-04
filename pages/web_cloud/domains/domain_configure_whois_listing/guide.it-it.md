@@ -22,8 +22,19 @@ Durante l’utilizzo del nome di dominio potrebbe essere necessario mostrare o n
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un [nome di dominio](/links/web/domains).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,28 +45,22 @@ Durante l’utilizzo del nome di dominio potrebbe essere necessario mostrare o n
 
 ## Procedura
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+ClClicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Domini`{.action} e seleziona il nome di dominio interessato.
+>> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il nome di dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina, nel riquadro **Configurazione**, clicca sul pulsante `Gestire la protezione dei dati`{.action}.
 >>
 >> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Visualizzi una nuova pagina in cui puoi scegliere se `Mostra` o `Nascondi` le informazioni relative ai contatti intestatario, amministratore e tecnico del nome di dominio, nel limite delle azioni autorizzate dal Registro responsabile dell’estensione.
 >>
@@ -71,4 +76,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [par
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra [Community di utenti](/links/community).

@@ -24,9 +24,20 @@ Dans ce cas, aucun remboursement ne pourra être effectué de la part d'OVHcloud
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir reçu un e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
 - Vérifier les points suivants afin de vous assurer qu'il ne s'agit pas d'un e-mail frauduleux :
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
     - Le sujet de l'e-mail contient votre identifiant client (par exemple : `aa00000-ovh`) ainsi que votre nom de domaine (par exemple : `domain.tld`).
     - L’URL mentionnée dans l’e-mail commence bien par : `https://www.ovh.com/manager/#/web/domain/operation/`.
 
@@ -48,22 +59,16 @@ Si cette méthode ne fonctionne pas, le titulaire peut valider manuellement son 
 
 ### 2 - Corriger ou compléter les coordonnées/informations de contact du titulaire du nom de domaine en tant qu'administrateur
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+ClCliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, vérifiez d'abord que votre nom de domaine est bien concerné par la procédure grâce à la présence d'un bandeau (jaune ou rouge) signalant l'opération à réaliser.
 >>
@@ -71,13 +76,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> > [!warning]
 >> >
@@ -174,4 +179,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

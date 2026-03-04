@@ -22,8 +22,19 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](/links/manager)
 - A [domain name](/links/web/domains)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,28 +45,22 @@ When using your domain name, you may find that you need to show or hide certain 
 
 ## Instructions
 
-Click on the tabs below to view each of the **4** steps.
+ClClick on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> On the page that pops up, in the **Configuration** box, click the `Managing data protection`{.action} button.
 >>
 >> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page that pops up, you can choose to `Display` or `Hide` the information relating to the holder, administrator and technical contacts of the domain name, subject to the actions authorized by the registry managing the extension.
 >>
@@ -71,4 +76,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

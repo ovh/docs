@@ -22,7 +22,17 @@ Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OV
 
 - Dispor de um nome de domínio.
 - O domínio em questão não deve dispor de uma zona DNS (ativa ou não) na OVHcloud ou estar a ser objeto de uma operação ou de um comando em curso na OVHcloud.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} >  `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instruções
 

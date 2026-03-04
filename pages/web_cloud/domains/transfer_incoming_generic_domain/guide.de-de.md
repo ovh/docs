@@ -42,6 +42,17 @@ Wenn Sie Ihren Domainname transferieren, ändern Sie dessen **Registrar**. Sie k
 - Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamens zu veranlassen.
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 > [!success]

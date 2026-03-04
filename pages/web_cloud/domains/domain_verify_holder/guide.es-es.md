@@ -24,9 +24,20 @@ En este caso, no se podrá realizar ningún reembolso por parte de OVHcloud.
 ## Requisitos previos
 
 - Disponer de un [nombre de dominio](/links/web/domains) registrado en OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Haber recibido un correo electrónico por parte de OVHcloud indicándole que se requiere una acción en relación con las coordenadas del titular de su nombre de dominio.
 - Verificar los siguientes puntos para asegurarse de que no se trata de un correo electrónico fraudulento:
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
     - El asunto del correo electrónico contiene su identificador de cliente (por ejemplo: `aa00000-ovh`) así como su nombre de dominio (por ejemplo: `domain.tld`).
     - La URL mencionada en el correo electrónico comienza efectivamente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
@@ -48,22 +59,16 @@ Si este método no funciona, el titular puede validar manualmente su dirección 
 
 ### 2 - Corregir o completar las coordenadas/información de contacto del titular del nombre de dominio como administrador
 
-Haga clic en las pestañas que aparecen a continuación para mostrar sucesivamente cada una de las **5** etapas.
+HaHaga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Inicie sesión en su [área de cliente de OVHcloud](/links/manager), y vaya a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action}, y elija el nombre de dominio afectado.
+>> Haga clic en [este enlace](/links/control-panel/web-domains), y elija el nombre de dominio afectado.
 >>
 >> ![Nombres de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la página que aparece, verifique en primer lugar que su nombre de dominio está efectivamente afectado por el procedimiento gracias a la presencia de una barra (amarilla o roja) señalando la operación a realizar.
 >>
@@ -71,13 +76,13 @@ Haga clic en las pestañas que aparecen a continuación para mostrar sucesivamen
 >>
 >> ![Cambiar propietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> En la nueva página, acceda al recuadro **Titular** y haga clic en el botón `Modificar`{.action}.
 >>
 >> ![Gestionar contactos y propietarios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> > [!warning]
 >> >
@@ -174,4 +179,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

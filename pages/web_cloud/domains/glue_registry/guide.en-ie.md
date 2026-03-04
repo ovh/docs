@@ -27,7 +27,17 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 
@@ -103,22 +113,16 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 > In addition, *domain1.tld* must be registered with OVHcloud to set up the hosts.
 >
 
-To do this, click on the tabs below to view the **4** steps.
+Toclick on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the new page, click on the `Hosts`{.action} tab.
 >>
@@ -126,7 +130,7 @@ To do this, click on the tabs below to view the **4** steps.
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/hosts/add.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> In the window that opens, enter the information requested:
 >>
@@ -285,4 +289,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

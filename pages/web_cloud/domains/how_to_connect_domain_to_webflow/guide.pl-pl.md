@@ -19,11 +19,21 @@ Jesteś abonentem nazwy domeny w OVHcloud i chcesz ją połączyć z hostingiem 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [nazwy domeny](/links/web/domains) zarejestrowanej w OVHcloud.
 - Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) nazwą domeny w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w Webflow.
 - Dostęp do interfejsu zarządzania hostingiem w Webflow.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 

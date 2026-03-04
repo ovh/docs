@@ -20,8 +20,18 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 
 ## Requirements
 
-- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](/links/manager).
 - One of the authentication mechanisms, [SPF](/pages/web_cloud/domains/dns_zone_spf) and/or [DKIM](/pages/web_cloud/domains/dns_zone_dkim) must be configured in the DNS zone of the email solution domain name.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} >  `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instructions
 
