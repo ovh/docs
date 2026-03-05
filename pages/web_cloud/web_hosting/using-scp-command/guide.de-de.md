@@ -27,7 +27,17 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 - Sie verfügen über ein Terminal, das mit Linux- und SSH-Befehlen kompatibel ist (zum Beispiel das *Terminal* von MacOS oder der *Ubuntu* Emulator unter Windows).
 - Sie können mit SSH und Kommandzeile umgehen.
 - Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting) mit SSH-Zugang.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

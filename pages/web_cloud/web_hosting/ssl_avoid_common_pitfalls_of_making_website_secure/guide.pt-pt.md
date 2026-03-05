@@ -21,7 +21,17 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 
 - Dispor de um [alojamento web OVHcloud](/links/web/hosting).
 - Ter registado, pelo menos, um [nome de domínio](/links/web/domains).
-- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager), parte "Web cloud".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

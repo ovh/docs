@@ -23,6 +23,17 @@ Sie sind für Backups von auf Webhostings gehosteten Websites alleine verantwort
 
 - Sie verfügen über ein [Webhosting](/links/web/hosting) mit einer [WordPress Installation](/pages/web_cloud/web_hosting/wordpress_first-steps).
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## In der praktischen Anwendung
 
 Sie können ein Backup auf zwei Arten durchführen: **Manuell** oder über ein **Plugin**.

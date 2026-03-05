@@ -14,7 +14,17 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 ermöglicht die Entwic
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer Datenbank.
 - Sie besitzen eine [Domain](/links/web/domains).
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

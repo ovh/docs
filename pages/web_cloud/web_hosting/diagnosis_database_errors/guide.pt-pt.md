@@ -20,8 +20,18 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma das nossas ofertas de bases de dados [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

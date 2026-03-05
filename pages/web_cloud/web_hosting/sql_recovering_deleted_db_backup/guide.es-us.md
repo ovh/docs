@@ -22,6 +22,17 @@ La mayoría de nuestros [planes de hosting](/links/web/hosting) incluyen bases d
 - Tener un [plan de hosting de OVHcloud](/links/web/hosting) activo que incluya una o varias bases de datos compartidas de OVHcloud asociadas.
 - La eliminación de la base de datos debe tener menos de 30 días.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
 
 Las API de OVHcloud permiten a los desarrolladores o integradores asociar, por ejemplo, funcionalidades presentes o no en el área de cliente de OVHcloud directamente en sus aplicaciones o soluciones.

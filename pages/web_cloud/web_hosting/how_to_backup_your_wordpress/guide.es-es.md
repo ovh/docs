@@ -24,6 +24,17 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 
 - Disponer de un [alojamiento web](/links/web/hosting) y haber instalado WordPress.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
 
 Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.

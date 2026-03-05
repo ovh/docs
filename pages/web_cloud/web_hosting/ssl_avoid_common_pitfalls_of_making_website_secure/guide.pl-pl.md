@@ -21,7 +21,17 @@ W tym tutorialu znajdziesz przykłady sytuacji dotyczących zabezpieczenia Twoje
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting).
 - Zarejestrowanie co najmniej jednej [domeny](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja "Web cloud".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

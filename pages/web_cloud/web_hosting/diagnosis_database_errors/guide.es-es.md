@@ -20,8 +20,18 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 ## Requisitos
 
 - Disponer de un [plan de hosting OVHcloud](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Utilizar uno de nuestros productos de bases de datos [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

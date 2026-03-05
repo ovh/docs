@@ -28,7 +28,17 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 ## Requisitos
 
 - Ter [oferta de alojamento Web Cloud](/links/web/hosting) com o seu website alojado em cima.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

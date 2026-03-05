@@ -23,6 +23,17 @@ Scopri come creare un negozio online con l'estensione open source **WooCommerce*
 
 Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima di continuare con questa guida: "[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
   
 **WooCommerce** è un'estensione di **WordPress** Si installa come qualsiasi estensione.

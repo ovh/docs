@@ -20,8 +20,18 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Utiliser l'une de nos offres de bases de données [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

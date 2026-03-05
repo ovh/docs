@@ -21,36 +21,41 @@ Questa guida ti mostra come attivare l’hosting gratuito 100M sul tuo [dominio]
 ## Prerequisiti
 
 - Disporre di un [dominio](/links/web/domains) nel tuo [Spazio Cliente OVHcloud](/links/manager), scollegato da un hosting Web e senza [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associato.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!primary]
 >
 > L'hosting gratuito 100M è **solo** disponibile per i nostri clienti in Europa.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
+
 ## Procedura
 
-Per attivare l’hosting gratuito 100M, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno degli **4** step.
+Per attivare l’hosting gratuito 100M, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+>> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il dominio interessato.
 >>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passaggio 2**
->>
->> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
->>
->> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
->>
-> **Passaggio 3**
 >>
 >> Nel riquadro **Informazioni generali** visualizzi la voce **Hosting Web e email gratis**. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Si apre la pagina di attivazione. La sezione **1** mostra i dettagli del piano e la relativa tariffa.
 >> Quindi clicca su `Continua`{.action}. Alla sezione**2**, seleziona le modifiche da apportare alla tua zona DNS.

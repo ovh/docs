@@ -14,7 +14,17 @@ Il **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permette di sviluppare 
 
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting) che includa almeno un database.
 - Disporre di un [dominio](/links/web/domains).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
