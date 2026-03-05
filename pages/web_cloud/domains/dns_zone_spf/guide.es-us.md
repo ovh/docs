@@ -117,7 +117,7 @@ Para añadir un registro SPF, haga clic en `Añadir un registro`{.action}.
 
 Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para añadir un SPF, existen dos posibilidades:
 
-- [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su nombre de dominio (excepto [Private Exchange](/links/web/emails-hosted-exchange) y Exchange Provider).
+- [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su nombre de dominio.
 - [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
 - [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
 
@@ -214,38 +214,6 @@ La configuración es la siguiente:
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 ```
-
-### Configuración SPF OVHcloud para Private Exchange
-
-Para la solución Private Exchange, es necesario indicar las direcciones IP del servidor de correo. Para ello, utilice el argumento `ip4` para introducir la dirección IPv4 (**A**) y el argumento `ip6` para la dirección IPv6 (**AAAA**) de su servidor Private Exchange.
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
-```
-
-Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.ca` al registro anterior, que proporciona el siguiente valor:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.ca ~all"
-```
-
-/// details | ¿Cómo recuperar las direcciones IP de un servidor Private Exchange?
-
-Para obtener la dirección IP del servidor Private Exchange, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. y seleccione el servicio Private Exchange correspondiente.
-
-En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor.
-
-![Nombre de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail .w-400}
-
-Si las etiquetas `A` y `AAAA` son verdes, no verá las direcciones IP al hacer clic en ellas. Deberá recuperarlas desde la zona DNS del dominio asociado a su plataforma Private Exchange. Para ello, consulte el enlace del webmail en la pestaña `Información general`{.action}, en el recuadro `Conexión`.
-
-![nombre de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail .w-400}
-
-Acceda a la sección `Nombres de dominio`{.action} de la columna izquierda y seleccione el nombre de dominio asociado a su plataforma Private Exchange. A continuación, abra la pestaña de la columna izquierda y haga clic en `Zona DNS`{.action}. Obtenga las direcciones IPv4 (registro `A`) y IPv6 (registro `AAAA`) correspondientes a la URL del webmail.
-
-![nombre de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail .w-400}
-
-///
 
 ## Más información
 
