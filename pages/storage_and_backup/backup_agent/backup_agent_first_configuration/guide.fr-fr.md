@@ -21,9 +21,11 @@ Vous venez de commander votre offre Backup Agent pour votre serveur Bare Metal, 
 > [!warning]
 >
 > Vous devez vous assurer de pouvoir rendre votre serveur joignable par notre infrastructure Veeam.
+> Vous recevrez l'exactitude des informations via le mail de livraison.
+>
 > Voici les informations à autoriser sur votre serveur Bare Metal :
 >
-> - IP/DNS du serveur: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - IP/DNS du serveur: `vspc-cgw1.prod01.eu-west-rbx.backup.ovh.net` ou `vspc-cgw21.prod01.eu-west-rbx.backup.ovh.net`
 > - Port: 6180
 >
 > Nous vous conseillons également vivement de laisser votre serveur en capacité de joindre d'autres adresses vers l'extérieur afin de pouvoir envoyer vos données vers le Vault. Il n'y pas besoin d'autoriser un flux entrant dans ce cadre.
