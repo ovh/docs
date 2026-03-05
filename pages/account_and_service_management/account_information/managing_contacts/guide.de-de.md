@@ -26,13 +26,23 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben Zugriff auf die E-Mail-Adresse Ihres Kunden-Accounts.
 - Sie verfügen über ausreichende Zugriffsrechte für den betreffenden Dienst.
 - Sie haben die Kundenkennung des neuen Kontakts (der Kontakt, für den Sie die Änderung durchführen möchten).
 - Der neue Kontakt hat Zugriff auf die E-Mail-Adresse, die in seinem Kunden-Account angegeben ist.
 - Der bisherige sowie der neue Rechnungskontakt haben keine offenen Rechnungsbeträge.
 - Der neue Rechnungskontakt muss über ein gültiges Zahlungsmittel in seinem OVHcloud-Konto verfügen.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Kontakte verwalten](/links/control-panel/account-contacts)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Kontaktverwaltung`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## In der praktischen Anwendung
 
@@ -42,7 +52,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ### Auf die Kontaktverwaltung zugreifen <a name="gestion_des_contacts"></a>
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Kontakte`{.action}.
+Öffnen Sie die Seite [Kontaktverwaltung](/links/control-panel/account-contacts).
 
 ![Kontaktverwaltung](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -83,7 +93,7 @@ Sie können lediglich eine andere Person an Ihrer Stelle als Rechnungskontakt er
 
 ### Bestätigung, Ablehnung oder Nachverfolgung einer Kontaktänderung
 
-Um aktuelle Änderungsanfragen zu verfolgen und zu verwalten, loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Kontakte`{.action}. Klicken Sie auf den Tab `Meine Anfragen`{.action}. Hier können Sie eine Anfrage annehmen oder ablehnen.
+Um aktuelle Änderungsanfragen zu verfolgen und zu verwalten, klicken Sie auf den Tab `Meine Anfragen`{.action}. Hier können Sie eine Anfrage annehmen oder ablehnen.
 
 ![Kontaktverwaltung](images/managing_contacts_05.png){.thumbnail}
 
