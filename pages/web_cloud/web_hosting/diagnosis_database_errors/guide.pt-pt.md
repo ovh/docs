@@ -202,9 +202,9 @@ Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatam
 
 Contacte, se necessário, a nossa [comunidade](/links/community) ou um [fornecedor especializado](/links/partner) sobre este assumpto. Não poderemos prestar-lhe assistência na correção desta anomalia.
 
-> [!faq]
+> [!primary]
 >
-> Que elementos no script de importação da minha base de dados podem causar um erro "#1044 - Access denied for user to database"?
+> **Que elementos no script de importação da minha base de dados podem causar um erro "#1044 - Access denied for user to database"?**
 
 Ter um **"trigger"** no script de importação da sua base de dados não é autorizado nos servidores de alojamento partilhado OVHcloud. Para isso, importe a sua base de dados para um servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

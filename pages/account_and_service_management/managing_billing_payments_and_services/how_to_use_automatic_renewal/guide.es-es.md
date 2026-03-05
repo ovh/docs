@@ -4,6 +4,50 @@ excerpt: Descubra cómo gestionar sus servicios y su renovación desde el área 
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 El menú **Mis soluciones y servicios** de su área de cliente de OVHcloud le permite consultar el estado de sus servicios, renovarlos, cambiar su tipo de renovación, regularizar las facturas o anticipar su pago.
@@ -204,30 +248,68 @@ El siguiente cuadro explica en detalle cuáles son las acciones que pueden agrup
 
 ## FAQ
 
-> [!faq]
-> ¿Dónde puedo encontrar mi ID de cliente (NIC) de OVHcloud?
->> Se muestra en el área de cliente, haciendo clic en su nombre en la esquina superior derecha. También aparece en la parte superior derecha de todas sus facturas. También aparece en el mensaje de correo electrónico de confirmación de la creación de la cuenta, en los mensajes de confirmación de los pedidos o de renovación, así como en las notificaciones de conexión a su cuenta.
-> No puedo conectarme a mi cuenta de OVHcloud para renovar mis servicios, ¿qué hago?
->> Consulte la sección "[Qué hago si no puedo conectarme?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
-> Quiero activar la renovación automática, pero recibo un mensaje de error. ¿Qué debo hacer?
->> Para poder activar la renovación automática en sus servicios, debe haber añadido una forma de pago válida a su cuenta de OVHcloud. En caso contrario, o si la forma de pago ha expirado, aparecerá un mensaje de error en el área de cliente al intentar activar la renovación automática. Para consultar o añadir una forma de pago, consulte nuestra guía "[Gestionar las formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
-> Mi forma de pago ya no es válida. ¿Cómo añadir una nueva forma de pago?
->> Consulte nuestra guía "[Gestionar mis formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Para poder eliminar una forma de pago obsoleta, debe añadir una nueva forma de pago válida a su cuenta de OVHcloud.
-> Tengo una pregunta relativa a la renovación de mi dominio
->> Consulte nuestra guía "[Renovar los dominios de OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
-> Ya no quiero domiciliación bancaria, pero no quiero dar de baja el servicio. ¿Qué debo hacer?
->> Si su servicio lo permite, puede utilizar la acción [Configurar renovación](#actions) para elegir una renovación manual.
-> He renovado mi servicio por 12 meses. ¿Puedo revertir mi elección?
->> Una vez renovado el servicio, no es posible cancelarlo. No obstante, puede elegir otro tipo de renovación o dar de baja el servicio, pero estas dos opciones solo se aplicarán al final de la suscripción en curso, es decir, al cabo de 12 meses.
-> Mi sitio web está suspendido porque no he renovado mis servicios a tiempo. Acabo de renovar mis servicios. ¿Cuánto tiempo tengo que esperar para que mi sitio web vuelva a estar disponible?
->> El plazo de recuperación varía en función de los servicios afectados.
->> Si solo su alojamiento web está suspendido y ha sido renovado, el plazo medio para volver a acceder al sitio web es de 2 horas.
->> Si su dominio también ha sido suspendido y ha sido renovado, el plazo puede ser superior y llegar hasta las 48 horas, correspondientes al plazo de propagación DNS.
->> Para protegerse de la no disponibilidad de acceso a todos sus servicios críticos, le recomendamos que dé prioridad a la renovación automática y que [compruebe periódicamente que sus formas de pago están actualizadas](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> La suscripción de mi servicio expira en julio de 2024. Estamos en enero de 2024 y quiero renovarlo por un año. ¿La suscripción caducará en julio de 2025 o en enero de 2025?
->> Cuando se prorroga la renovación de un servicio (por un período de 1 año o más corto), este período se añade a la siguiente fecha de vigencia que se indica en la tabla "Gestión de mis soluciones y servicios". En su caso, el servicio se renovará hasta julio de 2025.
-> La suscripción a mi servicio expiró el 1 de enero de 2024 y se me olvidó renovarlo. Acabo de renovarlo el 16 de enero de 2024 por seis meses, pero constato que expirará el 1 de julio de 2024 y no el 16 de julio de 2024. ¿Es esto normal?
->> Sí, es normal. La renovación comienza en la fecha de expiración de la suscripción.
+/// details | ¿Dónde puedo encontrar mi ID de cliente (NIC) de OVHcloud?
+
+Se muestra en el área de cliente, haciendo clic en su nombre en la esquina superior derecha. También aparece en la parte superior derecha de todas sus facturas. También aparece en el mensaje de correo electrónico de confirmación de la creación de la cuenta, en los mensajes de confirmación de los pedidos o de renovación, así como en las notificaciones de conexión a su cuenta.
+
+///
+
+/// details | No puedo conectarme a mi cuenta de OVHcloud para renovar mis servicios, ¿qué hago?
+
+Consulte la sección "[Qué hago si no puedo conectarme?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+
+///
+
+/// details | Quiero activar la renovación automática, pero recibo un mensaje de error. ¿Qué debo hacer?
+
+Para poder activar la renovación automática en sus servicios, debe haber añadido una forma de pago válida a su cuenta de OVHcloud. En caso contrario, o si la forma de pago ha expirado, aparecerá un mensaje de error en el área de cliente al intentar activar la renovación automática. Para consultar o añadir una forma de pago, consulte nuestra guía "[Gestionar las formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+
+///
+
+/// details | Mi forma de pago ya no es válida. ¿Cómo añadir una nueva forma de pago?
+
+Consulte nuestra guía "[Gestionar mis formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)". Para poder eliminar una forma de pago obsoleta, debe añadir una nueva forma de pago válida a su cuenta de OVHcloud.
+
+///
+
+/// details | Tengo una pregunta relativa a la renovación de mi dominio
+
+Consulte nuestra guía "[Renovar los dominios de OVHcloud](/pages/web_cloud/domains/autorenew_domain_name)".
+
+///
+
+/// details | Ya no quiero domiciliación bancaria, pero no quiero dar de baja el servicio. ¿Qué debo hacer?
+
+Si su servicio lo permite, puede utilizar la acción [Configurar renovación](#actions) para elegir una renovación manual.
+
+///
+
+/// details | He renovado mi servicio por 12 meses. ¿Puedo revertir mi elección?
+
+Una vez renovado el servicio, no es posible cancelarlo. No obstante, puede elegir otro tipo de renovación o dar de baja el servicio, pero estas dos opciones solo se aplicarán al final de la suscripción en curso, es decir, al cabo de 12 meses.
+
+///
+
+/// details | Mi sitio web está suspendido porque no he renovado mis servicios a tiempo. Acabo de renovar mis servicios. ¿Cuánto tiempo tengo que esperar para que mi sitio web vuelva a estar disponible?
+
+El plazo de recuperación varía en función de los servicios afectados.
+Si solo su alojamiento web está suspendido y ha sido renovado, el plazo medio para volver a acceder al sitio web es de 2 horas.
+Si su dominio también ha sido suspendido y ha sido renovado, el plazo puede ser superior y llegar hasta las 48 horas, correspondientes al plazo de propagación DNS.
+Para protegerse de la no disponibilidad de acceso a todos sus servicios críticos, le recomendamos que dé prioridad a la renovación automática y que [compruebe periódicamente que sus formas de pago están actualizadas](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | La suscripción de mi servicio expira en julio de 2024. Estamos en enero de 2024 y quiero renovarlo por un año. ¿La suscripción caducará en julio de 2025 o en enero de 2025?
+
+Cuando se prorroga la renovación de un servicio (por un período de 1 año o más corto), este período se añade a la siguiente fecha de vigencia que se indica en la tabla "Gestión de mis soluciones y servicios". En su caso, el servicio se renovará hasta julio de 2025.
+
+///
+
+/// details | La suscripción a mi servicio expiró el 1 de enero de 2024 y se me olvidó renovarlo. Acabo de renovarlo el 16 de enero de 2024 por seis meses, pero constato que expirará el 1 de julio de 2024 y no el 16 de julio de 2024. ¿Es esto normal?
+
+Sí, es normal. La renovación comienza en la fecha de expiración de la suscripción.
+
+///
 
 ## Más información
 

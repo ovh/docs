@@ -13,54 +13,17 @@ First, connect to the [Ceph as a Service manager](https://www.ovh.com/manager/su
 
 Additional explanations:
 
-> [!faq]
->
-> **Label**
->>
->> Name given to you cluster
->>
->>
-> **Region**
->>
->> We currently deliver Ceph clusters on Strasbourg, Gravelines and Beauharnois.
->>
->>
-> **Version**
->>
->> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/))
->>
->>
-> **Tunable**
->>
->> It's the algorithm used to place datas.
->>
->>
-> **Status**
->>
->> Installed means that all tasks requested are done.
->>
->>
-> **State**
->>
->> Active
->>
->>
-> **Monitors**
->>
->> IP that you have to use to reach your monitors.
->>
->>
-> **Create date**
->>
->> Creation date of your cluster
->>
->>
-> **Update date**
->>
->> Date of the last task applied to your cluster
->>
->>
->
+| Field | Description |
+|-------|-------------|
+| **Label** | Name given to you cluster |
+| **Region** | We currently deliver Ceph clusters on Strasbourg, Gravelines and Beauharnois. |
+| **Version** | We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/)) |
+| **Tunable** | It's the algorithm used to place datas. |
+| **Status** | Installed means that all tasks requested are done. |
+| **State** | Active |
+| **Monitors** | IP that you have to use to reach your monitors. |
+| **Create date** | Creation date of your cluster |
+| **Update date** | Date of the last task applied to your cluster |
 
 ### Cluster health
 
@@ -68,42 +31,14 @@ Additional explanations:
 
 Additional explanations:
 
-> [!faq]
->
-> **Status**
->>
->> HEALTH_OK means that every objects are at the right place and have 3 replicates.
->>
->>
->> HEALTH_WARN means that some objects are missplaced (like after a growth) or that some object are not replicated three times. In this case cluster is recovering
->>
->>
-> **Healthy**
->>
->> Boolean indicating if everything is ok with Ceph cluster or not
->>
->>
-> **Availables bytes**
->>
->> Free bytes available in the cluster (before replication)
->>
->>
-> **Used bytes**
->>
->> Bytes currently used in the cluster (after replication)
->>
->>
-> **Space usage [%]**
->>
->> Percentage of *used bytes* in relation to *total bytes*
->>
->>
-> **Cluster active tasks**
->>
->> List of user-initiated tasks that are currently being processed for this cluster
->>
->>
->
+| Field | Description |
+|-------|-------------|
+| **Status** | HEALTH_OK means that every objects are at the right place and have 3 replicates. HEALTH_WARN means that some objects are missplaced (like after a growth) or that some object are not replicated three times. In this case cluster is recovering |
+| **Healthy** | Boolean indicating if everything is ok with Ceph cluster or not |
+| **Availables bytes** | Free bytes available in the cluster (before replication) |
+| **Used bytes** | Bytes currently used in the cluster (after replication) |
+| **Space usage [%]** | Percentage of *used bytes* in relation to *total bytes* |
+| **Cluster active tasks** | List of user-initiated tasks that are currently being processed for this cluster |
 
 ## Using API
 Get Ceph cluster details with a simple HTTP call.
