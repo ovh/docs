@@ -131,24 +131,24 @@ El tíquet de asistencia se presenta de la siguiente manera:
 >
 > Estimado/a cliente:
 >
-> Nuestro sistema ha detectado que la dirección **sudirección@ejemplo.com** alojada en nuestros sistemas bajo el servicio **servicename** es origen del envío de correos no deseados (spam).
-> Por lo tanto, se ha desactivado temporalmente el envío de mensajes de correo electrónico.
+> Nuestro sistema ha hallado que la dirección **sudirección@dominio.com** alojada en nuestros sistemas en el servicio **servicename** origina el envío de correos no deseados (spam).
+> Por consiguiente, se ha desactivado el envío de mensajes de correo electrónico temporalmente.
 >
-> Actualmente hemos detectado **X** mensaje(s) sospechoso(s).
+> Actualmente, hemos encontrado **X** mensaje/s sospecho/s.
 >
-> Con el fin de ayudarnos a reactivar el envío de mensajes de correo electrónico para la dirección: **dirección@ejemplo.com**,
-> responda a este mensaje de correo electrónico contestando a las siguientes preguntas:
+> Con el fin de ayudarnos a reactivar el envío de mensajes de correo electrónico de la dirección: **dirección@dominio.com**,
+> responda este mensaje de correo electrónico contestando las siguientes preguntas:
 >
 > - ¿Es usted el remitente del mensaje de correo electrónico en cuestión (véase el encabezado a continuación)?
 >
 > - ¿Dispone de una regla de redirección a otra dirección de correo electrónico?
 >
-> - ¿Ha respondido a algún spam?
->
+> - ¿Ha respondido a algún correo no deseado?
+> 
 > Estas respuestas nos ayudarán a reactivar su cuenta rápidamente.
 > <br>
 > <br>
->
+> 
 
 A continuación de este mensaje, se le ha enviado una muestra de los encabezados de los mensajes de correo electrónico transmitidos.
 

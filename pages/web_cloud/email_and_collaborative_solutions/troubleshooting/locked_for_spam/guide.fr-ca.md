@@ -101,11 +101,11 @@ Le ticket d'assistance se présente comme suit :
 > - Avez-vous une règle de redirection vers une autre adresse e-mail ?
 >
 > - Avez-vous répondu à un Spam ?
->
+> 
 > Ces réponses nous aideront à réactiver votre compte rapidement.
 > <br>
 > <br>
->
+> 
 
 Dans la continuité de ce message, un échantillon d'en-têtes des e-mails envoyés vous a été transmis.
 

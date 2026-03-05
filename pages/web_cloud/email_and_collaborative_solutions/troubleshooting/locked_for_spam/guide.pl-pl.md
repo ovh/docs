@@ -131,21 +131,21 @@ Zgłoszenie wygląda następująco:
 >
 > Drogi Kliencie,
 >
-> Nasz system wykrył, że adres **youraddress@example.com** hostowany w naszych systemach w ramach usługi **servicename** jest źródłem wysyłki niechcianych wiadomości (spamu).
+> Nasz system wykrył, że adres **youraddress@domain.com** hostowany w naszych systemach w ramach usługi **servicename** jest wykorzystywany do rozsyłania niechcianych wiadomości (spam).
 > Wysyłanie e-maili zostało więc tymczasowo wyłączone.
 >
-> Aktualnie wykryliśmy **X** podejrzanych wiadomości.
+> Na chwilę obecną wykryliśmy następującą liczbę podejrzanych wiadomości: **X**
 >
-> Aby pomóc nam w ponownym włączeniu wysyłki e-maili z adresu: **address@example.com**,
-> odpowiedz na tę wiadomość, uzupełniając poniższe pytania:
+> Aby pomóc nam w reaktywowaniu wysyłki e-maili z adresu: **address@domain.com**,
+> odpowiedz na niniejszą wiadomość, załączając wyjaśnienia dotyczące następujących kwestii:
 >
-> - Czy jesteś nadawcą danego e-maila (patrz nagłówek poniżej)?
+> - Czy jesteś nadawcą tej wiadomości e-mail (patrz nagłówek poniżej)?
 >
-> - Czy masz regułę przekierowania na inny adres e-mail?
+> - Czy masz regułę przekierowującą na inny adres e-mail?
 >
 > - Czy odpowiedziałeś na spam?
 >
-> Twoje odpowiedzi pomogą nam szybko reaktywować Twoje konto.
+> Te odpowiedzi pomogą OVHcloud szybko reaktywować Twoje konto.
 > <br>
 > <br>
 >

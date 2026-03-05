@@ -131,12 +131,12 @@ Das Support-Ticket sieht wie folgt aus:
 >
 > Sehr geehrter Kunde,
 >
-> unser System hat festgestellt, dass die Adresse **youraddress@example.com**, die auf unseren Systemen unter dem Dienst **servicename** gehostet wird, eine Quelle für den Versand unerwünschter E-Mails (Spam) darstellt.
-> Der E-Mail-Versand wurde daher vorübergehend deaktiviert.
+> Unser System hat festgestellt, dass die Adresse **Ihre.Adresse@example.com**, die auf unseren Systemen unter **Dienstreferenz** gehostet wird, eine Quelle für den Versand von Spam (Junk-E-Mails) darstellt.
+> Das Senden von E-Mails wurde daher vorübergehend deaktiviert.
 >
-> Wir haben derzeit **X** verdächtige Nachricht(en) erkannt.
+> Wir haben derzeit **X** verdächtige Nachrichten erkannt.
 >
-> Um den E-Mail-Versand für die Adresse **address@example.com** wieder zu aktivieren,
+> Damit wir den Versand von E-Mails für folgende Adresse wieder aktivieren können: **Ihre.Adresse@example.com**,
 > beantworten Sie diese E-Mail mit den folgenden Fragen:
 >
 > - Sind Sie der Absender der betreffenden E-Mail (siehe nachstehender Header)?
@@ -144,11 +144,11 @@ Das Support-Ticket sieht wie folgt aus:
 > - Haben Sie eine Weiterleitungsregel zu einer anderen E-Mail-Adresse?
 >
 > - Haben Sie auf eine Spam-Nachricht geantwortet?
->
+> 
 > Diese Antworten helfen uns, Ihr Konto schnell wieder zu aktivieren.
 > <br>
 > <br>
->
+> 
 
 Im Anschluss an diese Nachricht wird Ihnen ein Auszug der Header der versendeten E-Mails bereitgestellt.
 

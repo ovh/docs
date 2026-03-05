@@ -131,21 +131,21 @@ O ticket de assistência apresenta-se da seguinte forma:
 >
 > Estimado/a Cliente,
 >
-> O nosso sistema detetou que o endereço **youraddress@example.com** alojado nos nossos sistemas no serviço **servicename** é fonte de envio de mensagens indesejadas (spams).
-> O envio de e-mails foi, por isso, temporariamente desativado.
+> O nosso sistema detetou que o endereço **youraddress@domain.com** alojado nos nossos sistemas no serviço **servicename** é fonte de envio de mensagens indesejadas (spams).
+> O envio de e-mails deste endereço foi, por isso, temporariamente desativado.
 >
-> Detetámos atualmente **X** mensagem(ns) suspeita(s).
+> Detetámos **X** mensagem(ns) suspeita(s).
 >
-> Para nos ajudar a reativar o envio de e-mails para o endereço: **address@example.com**,
-> responda a este e-mail completando as seguintes perguntas:
+> Para nos ajudar a reativar o envio de e-mails para o endereço: **address@domain.com**,
+> devolva-nos este e-mail respondendo às seguintes perguntas:
 >
-> - É o emissor do e-mail em questão (ver o cabeçalho abaixo)?
+> - É o emissor do e-mail em questão (ver cabeçalho acima)?
 >
 > - Tem alguma regra de reencaminhamento para outro endereço de e-mail?
 >
 > - Respondeu a uma mensagem de spam?
 >
-> Estas respostas irão ajudar-nos a reativar a sua conta rapidamente.
+> Estas respostas irão ajudar-nos a reativar a sua conta o mais rapidamente possível.
 > <br>
 > <br>
 >

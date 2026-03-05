@@ -70,19 +70,19 @@ The support ticket reads as follows:
 >
 > Dear Customer,
 >
-> Our system has detected that the address **youraddress@example.com** hosted on our systems under the **servicename** service is a source of unsolicited emails (spam).
-> The sending of emails has therefore been temporarily disabled.
+> Our system has detected that the address **address@example.com** hosted on our systems under the **service name** service is a source of spam.
+> The sending of emails has been temporarily disabled.
 >
 > We have currently detected **X** suspicious message(s).
 >
-> To help us re-enable email sending for the address: **address@example.com**,
+> To help us re-enable sending for the address: **address@example.com**,
 > please reply to this email by answering the following questions:
 >
 > - Are you the sender of the email in question (see the header below)?
 >
 > - Do you have a redirection rule to another email address?
 >
-> - Have you replied to spam?
+> - Have you responded to spam?
 >
 > These answers will help us re-enable your account quickly.
 > <br>

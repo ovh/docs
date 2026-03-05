@@ -131,21 +131,21 @@ Il ticket di assistenza si presenta nel modo seguente:
 >
 > Gentile Cliente,
 >
-> Il nostro sistema ha rilevato che l'indirizzo **youraddress@example.com** ospitato sui nostri sistemi nell'ambito del servizio **servicename** è fonte di invio di messaggi indesiderati (spam).
-> L'invio di e-mail è stato quindi temporaneamente disattivato.
+> Il nostro sistema ha rilevato che l’indirizzo **youraddress@domain.com** ospitato sui nostri sistemi sotto il servizio **servicename** è fonte di invio di messaggi indesiderati (spam).
+> Pertanto, l’invio di email è stato temporaneamente disattivato.
 >
-> Abbiamo attualmente rilevato **X** messaggio/i sospetto/i.
+> Abbiamo rilevato **X** messaggio/i sospetto/i.
 >
-> Per consentirci di riattivare l'invio di e-mail per l'indirizzo: **address@example.com**,
-> rispondi a questa e-mail fornendo le seguenti informazioni:
+> Per consentirci di riattivare l’invio di email per l’indirizzo: **address@domain.com**,
+> rispondi a questa email fornendo le seguenti informazioni:
 >
-> - Sei tu il mittente dell'e-mail in questione (vedi l'intestazione qui di seguito)?
+> - Sei tu il mittente dell’email in questione (vedi l’intestazione qui di seguito)?
 >
-> - Disponi di una regola di reindirizzamento verso un altro indirizzo e-mail?
+> - Disponi di una regola di reindirizzamento verso un altro indirizzo email?
 >
-> - Hai risposto a un messaggio spam?
+> - Hai risposto a un messaggio Spam?
 >
-> Queste risposte ci aiuteranno a riattivare rapidamente il tuo account.
+> Queste risposte ci consentiranno di riattivare rapidamente il tuo account.
 > <br>
 > <br>
 >
