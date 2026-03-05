@@ -1,47 +1,50 @@
 ---
-title: "Backup Agent - Come configurare la tua prima copia di backup"
-excerpt: "Come configurare la tua prima copia di backup sul tuo server Bare Metal utilizzando il prodotto Backup Agent"
-updated: 2026-02-03
+title: "Backup Agent - Come configurare il primo backup"
+excerpt: "Scopri come configurare il primo backup sul tuo server Bare Metal con il prodotto Backup Agent dallo Spazio Cliente OVHcloud"
+updated: 2026-03-05
 ---
 
 ## Obiettivo
 
-Hai appena acquistato l'offerta Backup Agent per il tuo server Bare Metal, scopri come configurare le tue prime copie di backup.
+Hai appena acquistato l'offerta Backup Agent per il tuo server Bare Metal, scopri come configurare i tuoi primi backup.
+
+**Questa guida spiega come configurare il primo backup con Backup Agent su un server Bare Metal.**
 
 > [!primary]
-> 
+>
 > Per ulteriori informazioni sul prodotto Backup Agent, consulta [questa pagina](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Prerequisiti
 
-- Essere connessi al [Spazio Cliente OVHcloud](/links/manager).
-- Avere acquistato un servizio Backup Agent al momento dell'acquisto del tuo server Bare Metal o successivamente tramite il menu `Backup Agent`{.action} del tuo spazio cliente.
+- Essere connessi allo [Spazio Cliente OVHcloud](/links/manager).
+- Avere acquistato un servizio Backup Agent al momento dell'acquisto del tuo server Bare Metal o successivamente tramite il menu `Backup Agent`{.action} del tuo Spazio Cliente.
 - Avere avviato e configurato un sistema operativo sul tuo server Bare Metal.
 
 > [!warning]
 >
 > Devi assicurarti che il tuo server possa essere raggiunto dalla nostra infrastruttura Veeam.
+> Riceverai le informazioni esatte nella tua e-mail di consegna.
+>
 > Ecco le informazioni da autorizzare sul tuo server Bare Metal:
 >
-> - IP/DNS del server: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - IP/DNS del server: `vspc-cgw1.prod01.eu-west-rbx.backup.ovh.net` o `vspc-cgw21.prod01.eu-west-rbx.backup.ovh.net`
 > - Porta: 6180
 >
 > Ti consigliamo vivamente di permettere anche al tuo server di raggiungere altri indirizzi esterni per poter inviare i tuoi dati al Vault. Non è necessario autorizzare un flusso in entrata in questo contesto.
 
-
 ## Procedura
 
-Le fasi per creare una copia di backup per il tuo server sono le seguenti:
+Le fasi per creare un backup per il tuo server sono le seguenti:
 
 - Aggiungi il tuo server al tuo Backup Agent.
 - Scarica l'agente.
 - Installa l'agente sul tuo server.
 
-Una volta installato l'agente, riceverà la politica di backup e permetterà di effettuare le copie di backup.
+Una volta installato l'agente, riceverà la politica di backup e permetterà di effettuare i backup.
 
-Una volta completate tutte queste fasi, la tua prima copia di backup sarà eseguita.
+Una volta completate queste fasi, il primo backup verrà eseguito automaticamente.
 
-## Aggiungi il tuo server al tuo Backup Agent
+### Aggiungi il tuo server al tuo Backup Agent
 
 Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e vai nella sezione `Backup Agent`{.action}.
 
@@ -57,10 +60,10 @@ Vai nella sezione `Agents`{.action}.
 
 > [!primary]
 >
-> Dovresti trovare nel tabella il server Bare Metal che hai selezionato nel tuo ordine, con lo stato `not_installed`. Questo è normale a questo stadio, devi ora installare l'agente sul tuo server.
+> Dovresti trovare nella tabella il server Bare Metal che hai selezionato nel tuo ordine, con lo stato `not_installed`. Questo è normale a questo stadio, devi ora installare l'agente sul tuo server.
 >
 
-Clicca sul pulsante `Scarica`{.action} in alto nella tabella che elenca i tuoi agenti.
+Clicca sul pulsante `Scaricare`{.action} in alto nella tabella che elenca i tuoi agenti.
 
 ![Backup Agent Agents](images/01-backup-agent-agents-en.png){.thumbnail}
 
@@ -85,7 +88,7 @@ Per installare il tuo agente sul tuo server Bare Metal, clicca sul tab corrispon
 >>
 >> ![Backup Agent Step 05](images/01-backup-agent-step05.png){.thumbnail}
 >>
->> Una volta installato, potrai vedere il tuo agente che si connette alla nostra infrastruttura per scaricare la tua politica di backup:
+>> Una volta installato, l'agente si connette alla nostra infrastruttura per recuperare la politica di backup:
 >>
 >> ![Backup Agent Step 06](images/01-backup-agent-step06.png){.thumbnail}
 >>
@@ -118,7 +121,7 @@ Per installare il tuo agente sul tuo server Bare Metal, clicca sul tab corrispon
 >>     Cloud gateway          : <OVHDOMAIN>:6180
 >>     Connection account     : <UTILISATEUR>
 >> ```
->> 
+>>
 >> Potrai notare che un elemento non è ancora installato:
 >>
 >> ```bash
