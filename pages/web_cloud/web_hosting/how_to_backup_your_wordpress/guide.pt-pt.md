@@ -24,6 +24,17 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 
 - Ter um [alojamento web](/links/web/hosting) e ter instalado o WordPress
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instruções
 
 Pode efetuar um backup de duas formas: **manualmente** ou **através de uma extensão**.

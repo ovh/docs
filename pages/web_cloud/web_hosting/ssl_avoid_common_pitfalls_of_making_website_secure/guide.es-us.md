@@ -21,7 +21,17 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 
 - Tener un [alojamiento web de OVHcloud](/links/web/hosting).
 - Haber registrado al menos un [dominio](/links/web/domains).
-- Tener acceso al [área de cliente de OVHcloud](/links/manager), parte "Web cloud".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

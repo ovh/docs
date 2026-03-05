@@ -21,7 +21,17 @@ Questo tutorial contiene alcuni esempi di situazioni in cui proteggere il sito W
 
 - Disporre di un [hosting Web OVHcloud](/links/web/hosting).
 - Aver registrato almeno un [dominio](/links/web/domains).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione "Web cloud".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

@@ -28,7 +28,17 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Disponer de un [plan de hosting Cloud](/links/web/hosting) con su sitio web alojado en él.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

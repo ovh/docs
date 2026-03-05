@@ -20,6 +20,17 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
 - Posiadanie hostingu [OVHcloud](/links/web/hosting)
 - Zainstaluj [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) na komputerze
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## W praktyce
  
 > [!warning]

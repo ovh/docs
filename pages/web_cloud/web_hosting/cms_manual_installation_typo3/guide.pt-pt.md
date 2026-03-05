@@ -14,7 +14,17 @@ O sistema **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 oferece a capaci
 
 - Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
 - Dispor de um [domínio](/links/web/domains).
-Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

@@ -20,8 +20,18 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting web](/links/web/hosting) attiva.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare una delle nostre offerte di database: [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

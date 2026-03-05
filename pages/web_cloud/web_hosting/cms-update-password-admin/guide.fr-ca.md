@@ -14,7 +14,17 @@ Vous avez perdu l’accès à votre interface d’administration de WordPress, P
 
 - Disposer d'une [offre d'hébergement Web](/links/web/hosting) permettant l'installation d'un module en 1 clic.
 - Avoir créé un module en 1 clic sur votre hébergement web (si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Être connecté à votre [espace client OVHcloud](/links/manager) (uniquement pour la partie liée à phpMyAdmin).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

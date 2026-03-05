@@ -34,6 +34,17 @@ Para descargar Cyberduck, acceda al [sitio web oficial](https://cyberduck.io/) d
 >
 > Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
 
 ### Interfaz

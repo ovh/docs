@@ -14,7 +14,17 @@ Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](
 
 - Tener un [certificado SSL](/links/web/hosting-options-ssl) instalado en su [alojamiento web de OVHcloud](/links/web/hosting).
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), parte `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

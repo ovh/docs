@@ -15,6 +15,17 @@ Questo manuale spiega perché può essere rilevata un'**attività anomala** sul 
 - Disporre di un'offerta di [hosting web OVHcloud](/links/web/hosting).
 - Essere connesso al tuo [spazio clienti OVHcloud](/links/manager).
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
 
 > [!primary]

@@ -37,7 +37,17 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 - An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -14,7 +14,17 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 - Tener contratado un plan de [alojamiento web de OVHcloud](/links/web/hosting) que incluya al menos una base de datos.
 - Disponer de una base de datos disponible en "creación" entre las que se incluyen en el plan de hosting. Si lo necesita, puede añadir bases de datos [Start SQL](/links/web/hosting-options-startsql) a su alojamiento web.
-- Tener acceso al [área de cliente de OVHcloud](/links/manager) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

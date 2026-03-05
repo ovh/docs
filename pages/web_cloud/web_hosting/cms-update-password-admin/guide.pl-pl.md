@@ -14,7 +14,17 @@ Straciłeś dostęp do interfejsu administracyjnego WordPressa, PrestaShop, Joom
 
 - Posiadanie [hostingu WWW](/links/web/hosting) umożliwiającego instalację modułu za pomocą 1 kliknięcia.
 - Utworzenie modułu za pomocą 1 kliknięcia na Twoim hostingu (jeśli jeszcze tego nie przeprowadziłeś, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager) (tylko w części phpMyAdmin).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

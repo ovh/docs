@@ -14,7 +14,17 @@ Hai perso l'accesso all'interfaccia di gestione di WordPress, PrestaShop, Joomla
 
 - Disporre di una [offerta di hosting Web](/links/web/hosting) che permette l'installazione di un modulo in 1 click.
 - Aver creato un modulo in 1 click sul tuo hosting Web (se non l’hai ancora installato, segui le istruzioni di questa [guida](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) (solo per la parte relativa a phpMyAdmin).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

@@ -14,7 +14,17 @@ Szybkie tworzenie stron WWW możliwe jest dzięki systemowi Pico **CMS** (**C**o
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting).
 - Posiadanie [domeny](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

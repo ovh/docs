@@ -20,8 +20,18 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 ## Wymagania początkowe
 
 - Posiadanie [hostingu www OVHcloud](/links/web/hosting).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

@@ -14,7 +14,17 @@ Twoja strona WWW zmienia się, a zużycie zasobów zmienia się w taki sposób, 
 
 - Posiadanie aktywnego [hostingu](/links/web/hosting).
 - Wykupienie usługi [VPS](/links/bare-metal/vps) na Twoim koncie OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

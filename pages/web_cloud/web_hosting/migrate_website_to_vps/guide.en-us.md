@@ -14,7 +14,17 @@ As your website evolves, its resource consumption becomes so high that your web 
 
 - An OVHcloud [web hosting plan](/links/web/hosting)
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-- You must be logged in to your [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
