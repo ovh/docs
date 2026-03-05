@@ -164,18 +164,18 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `serviceName` |  | L'identifiant de votre OVHcloud Load Balancer. |
-| `farmId` |  | L'identifiant numérique de votre `ferme`. |
-| `probe.type` |  | Le type de la `probe` à activer. Les types de sonde gérés sont : |
-| `probe.interval` |  | L'intervalle en secondes entre deux tentatives de la sonde. Il doit être au moins de 30 secondes. |
-| `probe.port` |  | Le port que la sonde doit utiliser, s'il est différent de celui configuré sur la ferme. |
-| `probe.method` |  | La méthode HTTP à utiliser si la sonde est de type "http". |
-| `probe.url` |  | L'URL à utiliser pour les tests, si la sonde est de type "http". |
-| `probe.match` |  | Le type de comparateur à utiliser pour vérifier que le serveur est en bonne santé. |
-| `probe.pattern` |  | La valeur à utiliser en argument du comparateur si différent de "default". |
-| `probe.forceSsl` |  | Définit si la sonde doit fonctionner en SSL/TLS même si la ferme est configurée pour se connecter en TCP classique. |
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | L'identifiant de votre OVHcloud Load Balancer. |
+| `farmId` | L'identifiant numérique de votre `ferme`. |
+| `probe.type` | Le type de la `probe` à activer. Les types de sonde gérés sont : |
+| `probe.interval` | L'intervalle en secondes entre deux tentatives de la sonde. Il doit être au moins de 30 secondes. |
+| `probe.port` | Le port que la sonde doit utiliser, s'il est différent de celui configuré sur la ferme. |
+| `probe.method` | La méthode HTTP à utiliser si la sonde est de type "http". |
+| `probe.url` | L'URL à utiliser pour les tests, si la sonde est de type "http". |
+| `probe.match` | Le type de comparateur à utiliser pour vérifier que le serveur est en bonne santé. |
+| `probe.pattern` | La valeur à utiliser en argument du comparateur si différent de "default". |
+| `probe.forceSsl` | Définit si la sonde doit fonctionner en SSL/TLS même si la ferme est configurée pour se connecter en TCP classique. |
 
 D'autres paramètres peuvent être édités via cet appel. Dans la mesure où ce guide se concentre sur les sondes, ils ne sont pas documentés ici.
 
@@ -195,12 +195,12 @@ Pour qu'une sonde soit active, il faut qu'elle ait été configurée sur la ferm
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `serviceName` |  | L'identifiant de votre OVHcloud Load Balancer. |
-| `farmId` |  | L'identifiant numérique de votre `ferme`. |
-| `serverId` |  | L'identifiant numérique de votre `serveur`. |
-| `probe` |  | Indique si les `probe` doivent être prises en compte ou non. |
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | L'identifiant de votre OVHcloud Load Balancer. |
+| `farmId` | L'identifiant numérique de votre `ferme`. |
+| `serverId` | L'identifiant numérique de votre `serveur`. |
+| `probe` | Indique si les `probe` doivent être prises en compte ou non. |
 
 D'autres paramètres peuvent être édités via cet appel. Dans la mesure où ce guide se concentre sur les sondes, ils ne sont pas documentés ici.
 
@@ -226,13 +226,13 @@ La liste des sondes disponibles peut être obtenue avec l'appel API :
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `type` |  | Le type de la `probe` à configurer dans le champ `probe.type` des `fermes`. |
-| `port` |  | Indique si le port peut être configuré pour cette sonde. |
-| `method` |  | La liste des méthodes HTTP gérées ou `null` s'il n'en existe aucune. |
-| `url` |  | Indique si l'URL de la sonde peut être configurée. |
-| `matches` |  | La liste de comparateurs disponibles pour cette sonde. |
+| Parameter | Description |
+|-----------|-------------|
+| `type` | Le type de la `probe` à configurer dans le champ `probe.type` des `fermes`. |
+| `port` | Indique si le port peut être configuré pour cette sonde. |
+| `method` | La liste des méthodes HTTP gérées ou `null` s'il n'en existe aucune. |
+| `url` | Indique si l'URL de la sonde peut être configurée. |
+| `matches` | La liste de comparateurs disponibles pour cette sonde. |
 
 ##### **TCP**
 

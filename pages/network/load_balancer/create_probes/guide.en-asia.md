@@ -164,18 +164,18 @@ Probes can be configured on a new farm (`POST`) or an existing farm (`PUT`). The
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `serviceName` |  | The identifier of your OVHcloud Load Balancer. |
-| `farmId` |  | The numeric identifier of your `farm`. |
-| `probe.type` |  | The type of `probe` to enable. The probe types handled are : |
-| `probe.interval` |  | The interval in seconds between two probe attempts. It must be at least 30 seconds. |
-| `probe.port` |  | The port that the probe should use, if it is different from the one configured on the farm. |
-| `probe.method` |  | The HTTP method to use if the probe is of type "http". |
-| `probe.url` |  | The URL to use for the tests, if the probe is of type "http". |
-| `probe.match` |  | The type of comparator to use to check that the server is healthy. |
-| `probe.pattern` |  | The value to use as an argument for the comparator if it is different from "default". |
-| `probe.forceSsl` |  | Defines whether the probe should work in SSL/TLS even if the farm is configured to connect in classic TCP. |
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | The identifier of your OVHcloud Load Balancer. |
+| `farmId` | The numeric identifier of your `farm`. |
+| `probe.type` | The type of `probe` to enable. The probe types handled are : |
+| `probe.interval` | The interval in seconds between two probe attempts. It must be at least 30 seconds. |
+| `probe.port` | The port that the probe should use, if it is different from the one configured on the farm. |
+| `probe.method` | The HTTP method to use if the probe is of type "http". |
+| `probe.url` | The URL to use for the tests, if the probe is of type "http". |
+| `probe.match` | The type of comparator to use to check that the server is healthy. |
+| `probe.pattern` | The value to use as an argument for the comparator if it is different from "default". |
+| `probe.forceSsl` | Defines whether the probe should work in SSL/TLS even if the farm is configured to connect in classic TCP. |
 
 Other parameters can be edited via this call. As this guide focuses on probes, they are not documented here.
 
@@ -195,12 +195,12 @@ For a probe to be active, it must have been configured on the farm and enabled o
 > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `serviceName` |  | The identifier of your OVHcloud Load Balancer. |
-| `farmId` |  | The numeric identifier of your `farm`. |
-| `serverId` |  | The numeric identifier of your `server`. |
-| `probe` |  | Indicates whether `probe` should be taken into account or not. |
+| Parameter | Description |
+|-----------|-------------|
+| `serviceName` | The identifier of your OVHcloud Load Balancer. |
+| `farmId` | The numeric identifier of your `farm`. |
+| `serverId` | The numeric identifier of your `server`. |
+| `probe` | Indicates whether `probe` should be taken into account or not. |
 
 Other parameters can be edited via this call. As this guide focuses on probes, they are not documented here.
 
@@ -226,13 +226,13 @@ The list of available probes can be obtained with the API call :
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >
 
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| `type` |  | The type of `probe` to configure in the `probe.type` field of the `farms`. |
-| `port` |  | Indicates whether the port can be configured for this probe. |
-| `method` |  | The list of HTTP methods handled or `null` if none exist. |
-| `url` |  | Indicates whether the probe URL can be configured. |
-| `matches` |  | The list of available comparators for this probe. |
+| Parameter | Description |
+|-----------|-------------|
+| `type` | The type of `probe` to configure in the `probe.type` field of the `farms`. |
+| `port` | Indicates whether the port can be configured for this probe. |
+| `method` | The list of HTTP methods handled or `null` if none exist. |
+| `url` | Indicates whether the probe URL can be configured. |
+| `matches` | The list of available comparators for this probe. |
 
 ##### **TCP**
 
