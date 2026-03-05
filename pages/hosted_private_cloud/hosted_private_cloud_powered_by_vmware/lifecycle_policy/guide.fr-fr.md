@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
 excerpt: "Découvrez la politique de cycle de vie des services VMware on OVHcloud, incluant les phases de maintenance, sunset et fin de support"
-updated: 2026-03-03
+updated: 2026-03-05
 ---
 
 > [!warning]
