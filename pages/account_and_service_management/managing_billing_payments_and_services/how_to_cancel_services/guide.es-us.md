@@ -36,8 +36,18 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 ## Requisitos
 
 - Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 - Tener servicios de OVHcloud activos (no suspendidos por impago)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [My services](/links/control-panel/billing-services)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Procedimiento
 
@@ -47,7 +57,7 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
+Para cancelar la suscripción al servicio, abra la página [Mis servicios](/links/control-panel/billing-services).
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -101,9 +111,9 @@ También puede [consultar su consumo actual](/pages/public_cloud/public_cloud_cr
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
+Para anular una solicitud de baja, abra la página [Mis servicios](/links/control-panel/billing-services).
 
-Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action} 
+Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action}.
 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 

@@ -49,7 +49,7 @@ Pour OVHcloud, le document doit donc contenir a minima les informations suivante
 
 ### Comment renseigner un Numéro de Purchase Order (PO) dans votre espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis, directement sur la page qui s'affiche, cliquez sur `Voir mes commandes`{.action}.
+Ouvrez la page [Commandes](/links/control-panel/billing-orders).
 
 ![Espace client](images/huborders.png){.thumbnail}
 

@@ -45,8 +45,18 @@ Weitere Informationen finden Sie in den [FAQ](/pages/account_and_service_managem
 ## Voraussetzungen
 
 - Sie sind der "Administrator-Kontakt" des Dienstes, den Sie kündigen möchten (weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/account_information/managing_contacts#definition)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben aktive OVHcloud Dienste (die nicht wegen eines Zahlungsverzugs gesperrt sind).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Produkte und Dienstleistungen`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## In der praktischen Anwendung
 
@@ -56,7 +66,7 @@ Es gibt jedoch auch **Sonderfälle**, die [weiter unten](#specific-cases) in die
 
 ## Wie kann ich ein Abonnement kündigen? <a name="terminate"></a>
 
-Um das Abonnement Ihres Dienstes zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf den Account-Namen und dann auf `Meine Angebote und Dienste`{.action}.
+Um das Abonnement Ihres Dienstes zu kündigen, öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -134,9 +144,9 @@ Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/public_cloud_cross_f
 > Sie können eine Kündigungsanfrage nur bis zu 24 Stunden vor dem Kündigungsdatum stornieren.
 >
 
-Um eine Kündigungsanfrage zurückzunehmen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Account-Namen und dann auf `Meine Angebote und Dienste`{.action}.
+Um eine Kündigungsanfrage zurückzunehmen, öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
 
-Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action} 
+Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action}
 
 ![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 

@@ -14,6 +14,17 @@ W związku z Twoją działalnością lub zainteresowaniem tym tematem może być
 
 - Posiadanie statusu kontaktu "Płatności" za usługi, w przypadku których chcesz uzyskać ślad węglowy. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Account dashboard](/links/control-panel/account-dashboard)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Account dashboard`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Obliczanie śladu węglowego jest dostępne dla następujących usług:**
 
 - [Serwer dedykowany](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
@@ -55,8 +66,7 @@ Należy wziąć pod uwagę kilka kwestii:
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Na stronie, która się wyświetli i w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
+1. Na [Panelu klienta](/links/control-panel/account-dashboard), w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
 1. Na nowej stronie, która się wyświetli, kliknij `Pobierz dane dot. śladu węglowego z m-ca: [Miesiąc] [Rok]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

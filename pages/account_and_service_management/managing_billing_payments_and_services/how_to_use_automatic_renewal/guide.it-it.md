@@ -26,10 +26,20 @@ Questa guida ti mostra come:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di servizi OVHcloud attivi
 - Essere [contatto fatturazione](/pages/account_and_service_management/account_information/managing_contacts#definizione) dei servizi OVHcloud
 - Disporre di un metodo di pagamento valido sul tuo account OVHcloud. Consulta la nostra guida "[Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [My services](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +78,7 @@ Questa guida ti mostra come:
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager).<br>
-Clicca sul tuo nome nell’angolo in alto a destra e seleziona `Le mie offerte e servizi`{.action}.
+Apri la pagina [I miei servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

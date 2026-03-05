@@ -26,10 +26,20 @@ Folgende Themen werden erläutert:
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über aktive OVHcloud Dienste.
 - Sie sind [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts#definition) Ihrer OVHcloud Dienste.
 - Sie verfügen über ein gültiges Zahlungsmittel in Ihrem OVHcloud Account, siehe auch unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Produkte und Dienstleistungen`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +78,7 @@ Folgende Themen werden erläutert:
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).<br>
-Klicken Sie oben rechts auf Ihren Namen und wählen Sie `Meine Angebote und Dienste`{.action}.
+Öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
