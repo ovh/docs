@@ -25,8 +25,18 @@ Volume Snapshot und Volume Backup ermöglichen:
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein [Block Storage Volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](/links/public-cloud/public-cloud) erstellt und abgetrennt.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Einschränkungen
 
@@ -34,9 +44,7 @@ Backups verschlüsselter LUKS-Volume-Typen können nur auf denselben verschlüss
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das Public Cloud Projekt aus.
-
-Öffnen Sie anschließend das Menü `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
+Öffnen Sie das Menü `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 
 Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}.
 

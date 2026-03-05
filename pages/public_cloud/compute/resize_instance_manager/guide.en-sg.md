@@ -24,11 +24,21 @@ If your instance lacks resources due to increased activity or new needs, you can
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- [Access to the OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
-Log into the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
+Click on `Instances`{.action} in the left-hand menu.
 
 Click on `...`{.action} to the right of the instance, and select `Edit`{.action}. You can also access this action from the instance details by clicking on its name, then on `Modify model`{.action}.
 

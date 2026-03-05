@@ -17,8 +17,18 @@ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é p
 ## Requisitos
 
 - uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre faturação à **hora**
-- acesso à [Área de Cliente OVHcloud](/links/manager) o à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Conhecimento da [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e das [variáveis OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -101,7 +111,7 @@ O snapshot estará então disponível na secção `Instance Backup`{.action} do 
 
 Para utilizar este método, é necessário [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Para se ligar com a autenticação única OVHcloud: utilize o link `Horizon`{.action} no menu à esquerda, sob « Management Interfaces » depois de ter aberto o seu projeto `Public Cloud`{.action} na sua [Área de Cliente OVHcloud](/links/manager).
+- Para iniciar sessão com o SSO da OVHcloud: utilize o link `Horizon`{.action} no menu à esquerda em "Management Interfaces" após abrir o seu projeto `Public Cloud`{.action} na [Área de Cliente OVHcloud](/links/manager).
 
 - Para se ligar a um utilizador OpenStack específico: abra a página de ligação ao [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduza os [identificadores OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previamente criados, depois clique em `Connect`{.action}.
 

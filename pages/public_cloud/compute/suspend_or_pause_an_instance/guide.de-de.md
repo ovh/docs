@@ -17,8 +17,18 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) mit **stündlicher** Abrechnung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Sie haben Kenntnisse der [OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) und der [OpenStack Variablen](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -103,7 +113,7 @@ Um diese Methode zu verwenden, müssen Sie sich [in das Horizon-interface einlog
 
 - Um sich über OVHcloud SSO zu verbinden: Verwenden Sie den Link `Horizon`{.action} im Menü links unter "Management Interfaces", nachdem Sie Ihr `Public Cloud`{.action} Projekt in Ihrem [OVHcloud Kundencenter](/links/manager) geöffnet haben.
 
-- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein. Klicken Sie anschließend auf `Connect`{.action}.
+- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein. Klicken Sie auf `Connect`{.action}.
 
 Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der korrekten Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 

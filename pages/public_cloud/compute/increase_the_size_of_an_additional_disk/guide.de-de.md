@@ -28,8 +28,18 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 - Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/compute) in Ihrem Public Cloud Projekt.
 - Sie haben eine [zusätzliche Disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem Projekt erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 

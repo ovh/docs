@@ -17,8 +17,19 @@ As part of the configuration of a high-availability infrastructure, you may need
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) on **hourly** billing
-- Access to the [OVHcloud Control Panel](/links/manager) or [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Knowledge of [OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) and [OpenStack variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

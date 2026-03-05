@@ -24,11 +24,21 @@ Si su instancia no dispone de recursos suficientes debido a un aumento de la act
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En el menú de la izquierda, haga clic en `Instancias`{.action}.
+En el menú de la izquierda, haga clic en `Instancias`{.action}.
 
 Haga clic en `...`{.action} a la derecha de la instancia y seleccione `Editar`{.action}. También puede acceder a esta acción desde los detalles de la instancia haciendo clic en su nombre y luego en `Editar la plantilla`{.action}.
 

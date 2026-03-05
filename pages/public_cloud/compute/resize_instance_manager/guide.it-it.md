@@ -24,11 +24,21 @@ Se la tua istanza non dispone di risorse sufficienti a causa di un aumento dell'
 ## Prerequisiti
 
 - Disporre di un'[istanza Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Nel menu di sinistra, clicca su `Istanze`{.action}.
+Nel menu di sinistra, clicca su `Istanze`{.action}.
 
 Clicca su `...`{.action} a destra dell'istanza e seleziona `Modificare`{.action}. Puoi anche accedere a questa azione dai dettagli dell'istanza, cliccando sul nome e poi su `Modifica il modello`{.action}.
 

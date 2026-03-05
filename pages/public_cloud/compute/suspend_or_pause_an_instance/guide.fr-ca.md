@@ -17,8 +17,18 @@ Dans le cadre de la configuration d’une infrastructure hautement disponible, v
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) au forfait **horaire**.
-- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’interface [Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Avoir des connaissances de l’[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) et des [variables OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

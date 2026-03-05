@@ -25,16 +25,24 @@ O Volume Snapshot e o Volume Backup permitem-lhe:
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Um [volume Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) desligado criado no seu [projeto Public Cloud](/links/public-cloud/public-cloud).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Limitações
 
 As cópias de segurança de volumes LUKS cifrados só podem ser restauradas no mesmo tipo de volume LUKS cifrado.
 
 ## Instruções
-
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
 A seguir, abra o menu `Block Storage`{.action} na barra de navegação à esquerda, abaixo de **Backup Storage**.
 
