@@ -12,7 +12,16 @@ Ce guide présente les changements d’adresses IP affectant une partie de nos s
 
 ## Prérequis
 
-- Avoir un accès à votre [espace client OVHcloud](/links/manager) pour configurer le nom de domaine concerné.
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

@@ -22,8 +22,19 @@ Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie ni
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [nazwy domeny](/links/web/domains).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!warning]
 >
@@ -34,28 +45,22 @@ Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie ni
 
 ## W praktyce
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny.
+>> Kliknij [ten link](/links/control-panel/web-domains), następnie wybierz odpowiednią nazwę domeny.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli, w ramce **Konfiguracja** kliknij przycisk `Zarządzaj ochroną danych`{.action}.
 >>
 >> ![Configure Data protection](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-data-protection.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Na nowej stronie, która się wyświetli, będziesz mógł wybrać opcję `Wyświetl` lub `Ukryj` informacje kontaktowe abonenta, administratora i kontaktu technicznego nazwy domeny, w granicach operacji dozwolonych przez registry menedżera rozszerzenia.
 >>
@@ -71,4 +76,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

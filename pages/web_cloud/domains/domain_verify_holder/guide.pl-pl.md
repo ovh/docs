@@ -24,11 +24,21 @@ W takim przypadku OVHcloud nie będzie mógł zaoferować żadnego zwrotu pieni�
 ## Wymagania początkowe
 
 - Masz zarejestrowaną [nazwę domeny](/links/web/domains) w OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Otrzymałeś wiadomość e-mail od OVHcloud informującą, że wymagana jest akcja dotycząca danych kontaktowych właściciela Twojej nazwy domeny.
 - Sprawdź poniższe punkty, aby upewnić się, że nie jest to wiadomość oszukańcza:
     - Temat wiadomości zawiera Twój NIC handle (np.: `aa00000-ovh`) i Twoją nazwę domeny (np.: `domain.tld`).
     - Adres URL w wiadomości zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -48,22 +58,16 @@ Jeśli ten sposób nie zadziała, właściciel może ręcznie zweryfikować swó
 
 ### 2 - Popraw lub uzupełnij dane kontaktowe właściciela nazwy domeny jako administrator
 
-Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Domeny`{.action}, a następnie wybierz nazwę domeny, która jest dotyczy.
+>> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz nazwę domeny, która jest dotyczy.
 >>
 >> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Na stronie, która się otworzy, sprawdź, czy Twoja nazwa domeny jest objęta procedurą, ponieważ istnieje baner (żółty lub czerwony) wskazujący na operację do wykonania.
 >>
@@ -71,13 +75,13 @@ Kliknij w karty poniżej, aby wyświetlić każdy z **5** kroków.
 >>
 >> ![Zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> Na nowej stronie przejdź do pola **Właściciel**, następnie kliknij przycisk `Zmodyfikuj`{.action}.
 >>
 >> ![Zarządzanie kontaktami i właścicielami](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Krok 5**
+> **Krok 4**
 >>
 >> > [!warning]
 >> >
@@ -131,7 +135,7 @@ Dla niektórych rozszerzeń (np.: .fr, .it, .es), administrator domeny może bez
 > Jeśli poprawki w pierwszej części tego przewodnika wymagały zainicjowania zmiany właściciela dla nazwy domeny, ukończ zmianę właściciela **przed** kontynuowaniem działań opisanych w tym przewodniku.
 >
 
-Kliknij w karty poniżej, aby wyświetlić każdy z **4** kroków.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 > [!tabs]
 > **Krok 1**
@@ -174,4 +178,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -28,9 +28,20 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 ## Requirements
 
-- You have access your [OVHcloud Control Panel](/links/manager).
 - You have a DNS zone in your OVHcloud Control Panel.
 - You have sufficient rights on the DNS zone to be deleted. You can find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!primary]
 >

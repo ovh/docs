@@ -22,10 +22,20 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A domain name registered with OVHcloud for which no operation (holder change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
 - Your customer account is the [admin and billing contact](/pages/account_and_service_management/account_information/managing_contacts) for the domain name concerned.
 - You have permission from the current domain name holder to change holders or edit the holder information.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 
@@ -47,34 +57,28 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 ### Initiating the holder change procedure or editing the holder information
 
-Click on the tabs below to view each of the **7** steps.
+Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **Plan** box, you will see **Contacts**. Click `...`{.action} on the right-hand side, then `Manage contacts`{.action}.
 >>
 >>![Change holder](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, go to the **Holder** box, then click the `Edit`{.action} button.
 >>
 >> ![Manage contacts and holders](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> > [!warning]
 >> >
@@ -86,7 +90,7 @@ Click on the tabs below to view each of the **7** steps.
 >>
 >> ![Holder informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Step 6**
+> **Step 5**
 >>
 >> A new browser tab will open with all domains eligible for the holder change. Select a domain name from the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation. It is thus possible to initiate a change of holder for several domain names at once, for example to change the holder of all *.ovh* domains if their current holders are identical.
 >>
@@ -94,7 +98,7 @@ Click on the tabs below to view each of the **7** steps.
 >>
 >> Once you have made your choices, click `Continue`{.action}.
 >>
-> **Step 7**
+> **Step 6**
 >>
 >> In the holder details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and use [ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
 >>
@@ -126,4 +130,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

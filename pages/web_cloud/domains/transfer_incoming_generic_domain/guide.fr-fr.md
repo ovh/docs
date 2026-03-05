@@ -43,6 +43,17 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 - Être habilité à demander le transfert du nom de domaine.
 - Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## En pratique
 
 > [!success]

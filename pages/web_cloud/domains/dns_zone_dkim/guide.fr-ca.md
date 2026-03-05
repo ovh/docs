@@ -55,12 +55,21 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit à l'une des offres e-mail ci-dessous :
     - MX Plan OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)).
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - Une offre e-mail hors OVHcloud disposant du DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -251,7 +260,6 @@ Par défaut, le nom de votre plateforme correspond à sa référence ou celle-ci
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/dns-dkim-platform-exchange.png){.thumbnail .w-400 .h-600}
 
-
 Assurez-vous également que le nom de domaine que vous souhaitez utiliser pour vos e-mails soit bien actif dans la rubrique `Domaines associés`{.action}.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-domain.png){.thumbnail .w-400 .h-600}
@@ -281,7 +289,6 @@ Cliquez sur l'onglet correspondant à votre offre :
 > **Exchange**
 >>
 >> ![email](/pages/assets/screens/api/get-email-exchange-organizationname-service-exchangeservice-domain-domainname-dkim.png){.thumbnail .w-400 .h-600}
-
 
 ##### **Pour MX Plan** <a name="confemail"></a>
 
@@ -916,7 +923,6 @@ Pour basculer sur le deuxième sélecteur, utilisez l'appel API suivant :
 - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
 - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
 - `selectorName` : saisissez le nom du sélecteur sur lequel vous souhaitez basculer. <br>
-
 
 Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jours avant de le supprimer et d'en créer un nouveau.
 

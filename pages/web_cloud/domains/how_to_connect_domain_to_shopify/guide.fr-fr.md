@@ -19,11 +19,21 @@ Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le conn
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager).
+- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine.
 - Disposer d’un hébergement chez Shopify.
 - Avoir accès à la gestion de cet hébergement chez Shopify.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

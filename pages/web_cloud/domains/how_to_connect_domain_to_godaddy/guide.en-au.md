@@ -20,9 +20,20 @@ You are the holder of a domain name with OVHcloud and want to connect it to GoDa
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
+- The [necessary permissions to manage the domain name](/pages/account_and_service_management/account_information/managing_contacts)
 - A GoDaddy web hosting plan
 - Access to manage this hosting plan with GoDaddy
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 

@@ -43,6 +43,17 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 - Estar facultado para solicitar la transferencia del nombre de dominio.
 - Haber informado al titular del nombre de dominio y a sus administradores de la solicitud de transferencia.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedimiento
 
 > [!success]

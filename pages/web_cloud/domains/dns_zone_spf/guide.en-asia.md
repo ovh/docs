@@ -59,8 +59,18 @@ You should therefore ensure that you enter the sending sources you use to send e
 
 ## Requirements
 
-- You have access to manage the domain name from your [OVHcloud Control Panel](/links/manager).
 - The domain name concerned must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

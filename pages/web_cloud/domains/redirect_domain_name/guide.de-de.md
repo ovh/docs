@@ -13,8 +13,18 @@ Bei der Weiterleitung eines Domainnamens wird dieser auf ein neues Ziel umgeleit
 ## Voraussetzungen
 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die erforderlichen Informationen, um sich auf Ihrem Webhosting-Speicherplatz einzuloggen (optional, für Weiterleitungen über eine [.htaccess Datei](#htaccess_rewrite)).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## In der praktischen Anwendung
 

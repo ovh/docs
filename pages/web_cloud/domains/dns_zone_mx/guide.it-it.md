@@ -21,10 +21,19 @@ Il record MX permette di collegare un nome di dominio al server della sua piatta
 
 ## Prerequisiti
 
-- Avere accesso alla gestione della zona DNS del nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Il nome di dominio in questione deve utilizzare la configurazione OVHcloud (ad esempio i server DNS di OVHcloud).
 - Disporre di una soluzione MX Plan (inclusa nelle soluzioni di [hosting Web](/links/web/hosting), [hosting gratuito 100M](/links/web/domains-free-hosting) o MX Plan ordinati separatamente), una delle nostre [offerte di posta elettronica OVHcloud](/links/web/emails) o un servizio di posta esterna.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!primary]
 >

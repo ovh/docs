@@ -22,7 +22,17 @@ Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud fü
 
 - Sie haben administrativen Zugriff auf Ihren Domainnamen.
 - Für den betreffenden Domainnamen besteht nicht bereits eine aktive oder inaktive OVHcloud DNS-Zone, noch ist er Gegenstand einer laufenden Operation oder einer Bestellung bei OVHcloud.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## In der praktischen Anwendung
 
@@ -118,4 +128,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

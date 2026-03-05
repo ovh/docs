@@ -62,9 +62,18 @@ Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-c
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS OVHcloud).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >

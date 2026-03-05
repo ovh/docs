@@ -19,11 +19,21 @@ Sei l'intestatario di un nome di dominio presso OVHcloud e vuoi connetterlo a un
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [nome di dominio](/links/web/domains) registrato in OVHcloud.
 - Disporre delle [autorizzazioni necessarie per gestire](/pages/account_and_service_management/account_information/managing_contacts) il nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un hosting in SquareSpace.
 - Avere accesso alla gestione di questo hosting su SquareSpace.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedura
 

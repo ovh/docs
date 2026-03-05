@@ -24,8 +24,19 @@ In order to prevent unauthorised domain name transfers, domain names are usually
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name (domain administrator)
 - The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of holder) during the last 60 days
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

@@ -43,6 +43,17 @@ Ao transferir o domínio, irá mudar de **registrar** para o nome de domínio. P
 - Ter a autorização para solicitar a transferência do nome de domínio.
 - Ter notificado o titular do nome de domínio e/ou os seus administradores do pedido de transferência.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Instruções
 
 > [!success]

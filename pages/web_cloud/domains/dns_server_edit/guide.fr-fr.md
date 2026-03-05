@@ -17,8 +17,19 @@ Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/doma
 ## Prérequis
 
 - Être titulaire d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Disposer des autorisations [appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer des autorisations [appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ Toutefois, il est essentiel de prendre en compte les points suivants :
 
 ### 1 - Accéder à la gestion des serveurs DNS OVHcloud <a name="access-dns-servers"></a>
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 >>
@@ -231,4 +236,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

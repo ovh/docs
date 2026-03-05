@@ -22,7 +22,17 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 - You have adminstrative access to manage your domain name.
 - The domain name concerned does not already have an active or inactive DNS zone with OVHcloud, nor is it the subject of an operation or order in progress with OVHcloud.
-- You have access your [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instructions
 
@@ -116,4 +126,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community). 
+Join our [community of users](/links/community). 

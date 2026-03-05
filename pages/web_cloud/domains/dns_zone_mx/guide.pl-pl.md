@@ -21,10 +21,19 @@ Rekord MX umożliwia powiązanie nazwy domeny z serwerem platformy e-mail. Jest 
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania strefą DNS danej nazwy domeny w [Panelu klienta](/links/manager).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Wybrana nazwa domeny musi korzystać z konfiguracji OVHcloud (tzn. z serwerów DNS OVHcloud).
 - Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](/links/web/hosting), [bezpłatnym hostingu 100M](/links/web/domains-free-hosting) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](/links/web/emails) lub zewnętrznej usługi e-mail.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!primary]
 >

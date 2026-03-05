@@ -21,8 +21,18 @@ Troverai tutte le informazioni per:
 ## Prerequisiti
 
 - Disporre di un dominio registrato in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 - Essere contatto di fatturazione dei servizi OVHcloud.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedura
 

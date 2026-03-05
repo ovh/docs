@@ -55,14 +55,23 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 
 ## Voraussetzungen
 
-- Sie haben über das [OVHcloud Kundencenter](/links/manager) Zugriff auf die Konfiguration des betreffenden Domainnamens oder entsprechenden Verwaltungszugriff bei Ihrem DNS-Anbieter, wenn der Domainname nicht über OVHcloud registriert ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über einen der folgenden E-Mail-Dienste:
     - OVHcloud MX Plan E-Mail, verfügbar mit den Angeboten [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder als separater Dienst
     - [Hosted Exchange](/links/web/emails-hosted-exchange) oder [Private Exchange](/links/web/emails-hosted-exchange)
     - [E-Mail Pro](/links/web/email-pro)
     - [Zimbra](/links/web/zimbra)
     - Ein E-Mail-Angebot außerhalb von OVHcloud, das über DKIM verfügt
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -1316,4 +1325,4 @@ Im Folgenden finden Sie die Zustände, die den Betrieb Ihres DKIM blockieren kö
 
 ## Weiterführende Informationen
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

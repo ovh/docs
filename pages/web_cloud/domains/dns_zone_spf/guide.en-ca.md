@@ -56,13 +56,22 @@ When the Inbound Mail Server receives the email, it will read the DNS zone of yo
 
 ///
 
-
 **Find out how to configure an SPF record for your domain name at OVHcloud.**
 
 ## Requirements
 
-- You have access to manage the domain name from your [OVHcloud Control Panel](/links/manager).
 - The domain name concerned must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
