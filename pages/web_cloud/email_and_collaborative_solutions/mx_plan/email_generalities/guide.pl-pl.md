@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>

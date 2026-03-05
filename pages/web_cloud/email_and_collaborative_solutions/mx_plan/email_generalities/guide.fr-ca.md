@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre MX Plan"
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>
