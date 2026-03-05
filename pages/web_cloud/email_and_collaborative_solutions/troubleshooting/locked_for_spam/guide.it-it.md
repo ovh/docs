@@ -1,7 +1,7 @@
 ---
 title: 'Cosa fare in caso di account bloccato per spam?'
 excerpt: 'Scopri come procedere quando il tuo indirizzo è stato bloccato per spam'
-updated: 2026-03-02
+updated: 2026-03-05
 ---
 
 ## Obiettivo

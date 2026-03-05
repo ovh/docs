@@ -1,7 +1,7 @@
 ---
 title: 'Was tun, wenn ein Account wegen Spamversands gesperrt wurde?'
 excerpt: 'Erfahren Sie, wie Sie vorgehen, wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt wurde'
-updated: 2026-03-02
+updated: 2026-03-05
 ---
 
 ## Ziel
