@@ -14,6 +14,17 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 - Essere contatto "Fatturazione" dei servizi per i quali si desidera ottenere l'impronta di carbonio. Per maggiori informazioni, consulta la [guida sulla gestione dei contatti](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Account dashboard](/links/control-panel/account-dashboard)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Account dashboard`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Il calcolo dell'impronta di carbonio è disponibile per i seguenti servizi:**
 
 - [Server Dedicato](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
@@ -55,8 +66,7 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 ### Recupera il bilancio mensile del mese precedente dallo Spazio Cliente OVHcloud
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Nella nuova pagina, nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
+1. Nel [Dashboard dell'account](/links/control-panel/account-dashboard), nella colonna a sinistra, scorri la pagina fino alla sezione **Link utili**, poi clicca sulla scheda `Il mio bilancio del carbonio`{.action}.
 1. Nella nuova pagina clicca su `Scarica la tua impronta di [Mese] [Anno]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

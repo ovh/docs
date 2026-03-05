@@ -26,12 +26,20 @@ Este manual permitir-lhe-á:
 
 ## Requisitos
 
-Antes de continuar a ler este guia, deve preencher as seguintes condições:
-
-- Ter acesso à Área de [Cliente OVHcloud](/links/manager);
-- Dispor de serviços ativos da OVHcloud;
-- Ter [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts#definicao) dos seus serviços OVHcloud.
+- Dispor de serviços ativos da OVHcloud
+- Ter [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts#definicao) dos seus serviços OVHcloud
 - Dispor de um método de pagamento válido na sua conta OVHcloud. Consulte o guia "[Gerir os métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [My services](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -70,8 +78,7 @@ Antes de continuar a ler este guia, deve preencher as seguintes condições:
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager).<br>
-Clique no seu nome no canto superior direito e escolha `As minhas ofertas e serviços`{.action}.
+Abra a página [Os meus serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

@@ -12,8 +12,18 @@ Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé u
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager) dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
+- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Pour accéder à vos services :** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Sélectionnez votre service vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## En pratique
 
@@ -26,9 +36,7 @@ L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [C
 
 ### Étape 1 : demander la résiliation depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
-
-Dans le tableau « Gestion du service » de l'onglet « Informations Générales », cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
+Dans le tableau « Gestion du service » de l'onglet `Informations Générales`{.action}, cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
 
 ![resiliation depuis l'espace client](images/resiliation1.png){.thumbnail}
 

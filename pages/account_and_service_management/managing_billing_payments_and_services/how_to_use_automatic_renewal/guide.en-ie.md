@@ -26,10 +26,20 @@ This guide will help you to:
 
 ## Requirements
 
-- You have access to your [OVHcloud Control Panel](/links/manager).
 - Your OVHcloud services are active.
 - You are the [billing contact](/pages/account_and_service_management/account_information/managing_contacts#definition) of your OVHcloud services.
 - You have a valid payment method in your OVHcloud account (see our guide [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)).
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +78,7 @@ This guide will help you to:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager).<br>
-Click your name in the top right-hand corner, then choose `My offers and services`{.action}.
+Open the [My services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

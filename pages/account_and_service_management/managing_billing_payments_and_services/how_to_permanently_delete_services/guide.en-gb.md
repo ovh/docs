@@ -27,12 +27,22 @@ Under the General Data Protection Regulation (GDPR), you can exercise the right 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - You must have verified that all your data has been backed up.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## Instructions
 
-To list your services, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right corner and then on `My offers and services`{.action}.
+To list your services, open the [My services](/links/control-panel/billing-services) page.
 
 > [!alert]
 >

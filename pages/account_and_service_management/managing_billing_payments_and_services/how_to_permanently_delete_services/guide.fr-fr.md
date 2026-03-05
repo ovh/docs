@@ -27,12 +27,22 @@ Dans le cadre du Règlement Général sur la Protection des Données (RGPD), vou
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir vérifié que toutes vos données ont été sauvegardées.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
-Pour lister vos services, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
+Pour lister vos services, ouvrez la page [Mes services](/links/control-panel/billing-services).
 
 > [!alert]
 >

@@ -36,8 +36,18 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 ## Wymagania początkowe
 
 - Pełnienie funkcji "kontaktu administracyjnego" dla usługi, z której chcesz zrezygnować (aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie aktywnych usług OVHcloud (nie zawieszonych z powodu braku płatności)
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [My services](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Products and services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## W praktyce
 
@@ -47,7 +57,7 @@ Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#speci
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-Aby zrezygnować z abonamentu, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}.
+Aby zrezygnować z abonamentu, otwórz stronę [Moje usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -131,7 +141,7 @@ Możesz również [sprawdzić aktualne](/pages/public_cloud/public_cloud_cross_f
 > Możesz anulować zlecenie rezygnacji z usługi do 24 godzin przed datą wygaśnięcia abonamentu.
 >
 
-Aby anulować zlecenie rezygnacji z usługi, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij swoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}.
+Aby anulować zlecenie rezygnacji z usługi, otwórz stronę [Moje usługi](/links/control-panel/billing-services).
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
 

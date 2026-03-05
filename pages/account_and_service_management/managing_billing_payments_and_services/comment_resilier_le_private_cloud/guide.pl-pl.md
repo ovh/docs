@@ -12,8 +12,18 @@ Jeśli usługa Private Cloud nie jest już dla Ciebie odpowiednia lub jeśli zam
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) i sekcji `Hosted Private Cloud`{.action}, a następnie `Private Cloud`{.action}
 - Posiadanie usługi [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+
+<!-- CP-NAV-START:privatecloud-vmware-vsphere -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VMware vSphere](/links/control-panel/privatecloud-vmware-vsphere)
+- **Ścieżka nawigacji:** `Hosted Private Cloud`{.action} > `Managed VMware vSphere`{.action} > Wybierz usługę vSphere
+
+---
+<!-- CP-NAV-END:privatecloud-vmware-vsphere -->
 
 ## W praktyce
 
@@ -25,8 +35,6 @@ W przypadku korzystania z usługi Private Cloud nie musisz podpisywać umowy ter
 >
 
 ### Etap 1: złóż dyspozycję zakończenia usługi w Panelu klienta 
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Hosted Private Cloud`{.action} (1), kliknij `Private Cloud`{.action} (2) i wybierz serwer z listy (3).
 
 W tabeli „Zarządzanie usługami” w zakładce „Informacje ogólne” kliknij przycisk `...`{.action} (4) po prawej stronie od daty odnowienia. Na koniec kliknij `Usuń usługę`{.action} (5).
 

@@ -12,12 +12,22 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un moyen de paiement valide.
+
+<!-- CP-NAV-START:billing-payment-methods -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Moyens de paiement](/links/control-panel/billing-payment-methods)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Moyen de paiement`{.action}
+
+---
+<!-- CP-NAV-END:billing-payment-methods -->
 
 ## En pratique <a name="payment_methods"></a>
 
-Dans votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sélectionnez `Mes moyens de paiement`{.action}.
+Ouvrez la page [Moyens de paiement](/links/control-panel/billing-payment-methods).
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
@@ -133,9 +143,8 @@ Le *compte prépayé* est présent sur votre [espace client OVHcloud](/links/man
 
 En créditant régulièrement votre compte, vous vous assurerez ainsi que le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) de vos services ne sera jamais interrompu pour défaut de paiement.
 
-Pour cela, il vous suffit de vous rendre dans la section `Moyens de paiement` de votre espace client :
+Pour cela, rendez-vous sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods) :
 
-- cliquez en haut à droite sur votre nom puis sur `Mes moyens de paiement`{.action} dans le menu de droite;
 - sélectionnez l'onglet `Mon compte prépayé`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}

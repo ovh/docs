@@ -14,6 +14,17 @@ Im Rahmen Ihrer beruflichen Tätigkeit oder aus Interesse an dem Thema müssen S
 
 - Ihr Kunden-Account ist der "Rechnungskontakt" für die Dienstleistungen, für die Sie den CO2-Fußabdruck erhalten möchten. Weitere Informationen finden Sie in [unserer Anleitung zur Kontaktverwaltung](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Konto-Dashboard](/links/control-panel/account-dashboard)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Konto-Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Die Berechnung des CO2-Fußabdrucks ist für folgende Dienste verfügbar:**
 
 - [Dedicated Server](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
@@ -56,8 +67,7 @@ Dabei sind mehrere Punkte zu beachten:
 
 ### Abrufen der monatlichen Bilanz des Vormonats über das OVHcloud Kundencenter
 
-1. Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an.
-1. Gehen Sie auf der angezeigten Seite in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
+1. Auf dem [Konto-Dashboard](/links/control-panel/account-dashboard) gehen Sie in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
 1. Klicken Sie auf der neu geöffneten Seite auf `Meinen CO2-Fußabdruck von [Monat] [Jahr] herunterladen`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

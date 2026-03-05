@@ -17,8 +17,18 @@ Składając zamówienie możesz śledzić zamówienie i zarządzać nim w [Panel
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Złożenie co najmniej jednego zamówienia w OVHcloud.
+- Złożenie co najmniej jednego zamówienia w OVHcloud
+
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Orders](/links/control-panel/billing-orders)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `View my orders`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
 
 ## W praktyce
 
@@ -35,11 +45,11 @@ Zamówienie zostało utworzone w momencie składania zamówienia. Zawiera listę
 |3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Dostępne metody płatności Zaproponowane są wyłącznie metody płatności akceptowane w kraju, w którym znajduje się konto, lub metody związane z typem zarejestrowanego konta.|
 
-Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta OVHcloud](/links/manager), jak wyjaśniono poniżej.
+Możesz w każdym momencie odnaleźć Twoje zamówienie na stronie [Zamówienia](/links/control-panel/billing-orders), jak wyjaśniono poniżej.
 
 ### Dostęp do zamówień w Panelu klienta OVHcloud
 
-Aby uzyskać dostęp do panelu zarządzania zamówieniami, zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}.
+Otwórz stronę [Zamówienia](/links/control-panel/billing-orders).
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
@@ -69,9 +79,9 @@ Możesz również wyświetlić zamówienie w formacie HTML, klikając `...`{.act
 
 ### Sprawdzanie statusu zamówienia
 
-Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie w [Panelu klienta OVHcloud](/links/manager):
+Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie na stronie [Zamówienia](/links/control-panel/billing-orders):
 
-* Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}, następnie przycisk `...`{.action} przed Twoim zamówieniem.
+* Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz `Informacje o zamówieniu`{.action}. Informacje o zamówieniu można również wyświetlić, klikając status zamówienia w kolumnie `Status`.
 
 ![Informacje o zamówieniu](images/order05b.png){.thumbnail}
@@ -98,9 +108,9 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Nie dotyczy on również niektórych usług (w szczególności [domen](/links/web/domains) i [certyfikatów SSL Sectigo](/links/web/hosting-options-ssl)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
 >
 
-Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta OVHcloud](/links/manager):
+Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio na stronie [Zamówienia](/links/control-panel/billing-orders):
 
-* Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}, następnie przycisk `...`{.action} przed Twoim zamówieniem.
+* Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz opcję `Anuluj zamówienie`{.action}.
 
 ![Anulowanie zamówienia](images/cancelorder1.png){.thumbnail}

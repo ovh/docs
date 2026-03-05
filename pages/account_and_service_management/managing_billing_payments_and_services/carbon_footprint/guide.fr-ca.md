@@ -14,6 +14,17 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 
 - Être contact « Facturation » des services pour lesquels vous souhaitez obtenir l'empreinte carbone. Pour plus d'informations, consultez [notre guide sur la gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Tableau de bord du compte](/links/control-panel/account-dashboard)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Tableau de bord`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Le calcul de l'empreinte carbone est disponible pour les services suivants :**
 
 - [Serveur Dédié](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
@@ -55,8 +66,7 @@ Plusieurs points sont à prendre en compte :
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
-1. Connectez-vous à l'[espace client OVHcloud](/links/manager).
-1. Sur la page qui s'affiche et dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
+1. Sur le [Tableau de bord du compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
 1. Sur la nouvelle page qui apparaît, cliquez sur `Télécharger mon empreinte de [Mois] [Année]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
