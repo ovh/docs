@@ -64,6 +64,4 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 [Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 
-[Configuring your Email Pro account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
-
 Join our [community of users](/links/community).

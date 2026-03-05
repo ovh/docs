@@ -126,7 +126,7 @@ Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
-- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](/links/web/emails-hosted-exchange) et Exchange Provider).
+- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine.
 - [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
 - [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 
@@ -223,52 +223,6 @@ La configuration est la suivante :
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 ```
-
-### Configuration SPF OVHcloud pour Exchange Provider
-
-Pour l'offre Exchange Provider, la configuration est la suivante :
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
-```
-
-En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider** :
-
-```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca a:gw.ex-mail.biz ~all"
-```
-
-### Configuration SPF OVHcloud pour Private Exchange
-
-Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP de votre serveur e-mail. Pour cela, utilisez l'argument `ip4` pour renseigner l'adresse IPv4 (**A**) et l'argument `ip6` pour l'adresse IPv6 (**AAAA**) de votre serveur Private Exchange.
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 ~all"
-```
-
-Si vous utilisez également [une offre e-mail mutualisée](#ovhcloudspfvalue), vous pouvez ajouter l'argument `include:mx.ovh.ca` à l'enregistrement ci-dessus, ce qui donnera la valeur suivante :
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.ca ~all"
-```
-
-/// details | Comment récupérer les adresses IP d'un serveur Private Exchange ?
-
-Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Private Exchange concerné.
-
-Dans l'onglet `Informations générales`{.action}, cliquez sur le `A` et le `AAAA` dans la partie `Diagnostic serveur`. Dans la fenêtre qui s'affiche, relevez la valeur.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail .w-400}
-
-Si les pastilles `A` et `AAAA` sont vertes, vous ne verrez pas les adresses IP en cliquant dessus. Vous devrez récupérer celles-ci depuis la zone DNS du nom de domaine attaché à votre plateforme Private Exchange. Pour cela, récupérez le lien du webmail depuis l'onglet `Informations générales`{.action}, dans le cadre `Connexion`.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail .w-400}
-
-Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine attaché à votre plateforme Private Exchange, puis cliquez sur l'onglet `Zone DNS`{.action}. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail .w-400}
-
-///
 
 ## Aller plus loin
 

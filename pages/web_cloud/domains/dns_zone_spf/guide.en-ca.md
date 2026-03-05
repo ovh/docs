@@ -120,7 +120,7 @@ To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
-- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](/links/web/emails-private-exchange)).
+- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name.
 - [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
 
@@ -215,38 +215,6 @@ The configuration is as follows:
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 ```
-
-### OVHcloud SPF configuration for Private Exchange 
-
-For the Private Exchange solution, you need to enter your email server’s IP addresses. To do this, use the `ip4` argument to enter the IPv4 address (**A**) and the `ip6` argument for the IPv6 address (**AAAA**) of your Private Exchange server.
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 ~all"
-```
-
-If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.ca` to the SPF record, with the following result:
-
-```bash
-mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.ca ~all"
-```
-
-/// details | How do I retrieve the IP addresses of a Private Exchange server?
-
-To retrieve the IP address of the Private Exchange server, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Private Exchange service concerned.
-
-In the `General Information`{.action} tab, click on the `A` and `AAAA` in the `Server Diagnostics` section. In the window that appears, read the value.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail .w-400}
-
-If the boxes `A` and `AAAA` are green, you will not see the IP addresses by clicking on them. You will need to retrieve this information from the DNS zone for the domain name attached to your Private Exchange platform. To do this, retrieve the webmail link from the `General information`{.action} tab, in the `Connection` box.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail .w-400}
-
-Go to the `Domain names`{.action} section, select the domain name attached to your private Exchange platform, then click on the `DNS zone`{.action} tab. Retrieve the IPv4 (record `A`) and IPv6 (record `AAAA`) addresses corresponding to the webmail URL.
-
-![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail .w-400}
-
-///
 
 ## Go further
 

@@ -93,7 +93,7 @@ From your computer browser or smartphone, go to the address [Webmail](/links/web
 
 /// details | I cannot log in to webmail
 
-Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](/links/web/emails-hosted-exchange) only).
+Make sure you have the right password. If necessary, you can modify it.
 
 To change the password for an email address, please refer to our guide "[Changing a password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 
