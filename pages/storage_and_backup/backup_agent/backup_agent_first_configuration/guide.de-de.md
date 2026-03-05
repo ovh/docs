@@ -1,33 +1,36 @@
 ---
 title: "Backup Agent - Konfigurieren einer ersten Sicherung"
-excerpt: "So konfigurieren Sie Ihre erste Sicherung auf Ihrem Bare Metal Server mit dem Backup Agent Produkt"
-updated: 2026-02-03
+excerpt: "Erfahren Sie, wie Sie Ihre erste Sicherung auf einem Bare Metal Server mit dem Backup Agent Produkt über das OVHcloud Kundencenter konfigurieren"
+updated: 2026-03-05
 ---
 
 ## Ziel
 
 Sie haben gerade Ihr Backup Agent Angebot für Ihren Bare Metal Server bestellt. Erfahren Sie, wie Sie Ihre ersten Sicherungen einrichten.
 
+**Diese Anleitung erklärt, wie Sie Ihre erste Sicherung mit Backup Agent auf einem Bare Metal Server konfigurieren.**
+
 > [!primary]
-> 
+>
 > Weitere Informationen zum Backup Agent Produkt finden Sie auf [dieser Seite](/pages/storage_and_backup/backup_agent/backup_agent_product_presentation).
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager). 
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen Backup Agent, der gleichzeitig mit Ihrem Bare Metal Server bestellt wurde, oder danach über das Menü `Backup Agent`{.action} im OVHcloud Kundencenter.
 - Sie haben ein Betriebssystem auf Ihrem Bare Metal Server installiert und konfiguriert.
 
 > [!warning]
 >
-> Sie müssen sicherstellen, dass Ihr Server von unserer Veeam-Infrastruktur erreicht werden kann.  
+> Sie müssen sicherstellen, dass Ihr Server von unserer Veeam-Infrastruktur erreicht werden kann.
+> Die genauen Informationen erhalten Sie in Ihrer Bereitstellungs-E-Mail.
+>
 > Hier sind die Informationen, um den Zugriff auf Ihrem Bare Metal Server zu erlauben:
 >
-> - IP/DNS des Servers: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - IP/DNS des Servers: `vspc-cgw1.prod01.eu-west-rbx.backup.ovh.net` oder `vspc-cgw21.prod01.eu-west-rbx.backup.ovh.net`
 > - Port: 6180
 >
 > Wir empfehlen Ihnen dringend, dass Sie Ihrem Server auch erlauben, andere externe Adressen zu erreichen, damit er Ihre Daten an den Vault senden kann. In diesem Zusammenhang ist es nicht erforderlich, eingehenden Datenverkehr zuzulassen.
-
 
 ## In der praktischen Anwendung
 
@@ -39,7 +42,7 @@ Die Schritte, um eine Sicherung für Ihren Server zu erstellen, sind wie folgt:
 
 Sobald der Agent installiert ist, erhält er die Backup-Richtlinie und kann Sicherungen durchführen.
 
-Sobald alle diese Schritte abgeschlossen sind, wird Ihre erste Sicherung durchgeführt.
+Sobald diese Schritte abgeschlossen sind, wird Ihre erste Sicherung automatisch ausgeführt.
 
 ### Fügen Sie Ihren Server Ihrem Backup Agent hinzu
 
@@ -51,7 +54,7 @@ Klicken Sie auf Ihren vspc-tenant im Abschnitt `Dienste`{.action}.
 
 ![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
-Gehen Sie zum Abschnitt `Agenten`{.action}.
+Gehen Sie zum Abschnitt `Agents`{.action}.
 
 ![Backup Agent Tenant Infos](images/01-backup-agent-tenant-infos-en.png){.thumbnail}
 
@@ -85,7 +88,7 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den 
 >>
 >> ![Backup Agent Schritt 05](images/01-backup-agent-step05.png){.thumbnail}
 >>
->> Nach der Installation sehen Sie, dass Ihr Agent sich mit unserer Infrastruktur verbindet, um Ihre Backup-Richtlinie abzurufen:
+>> Nach der Installation verbindet sich der Agent mit unserer Infrastruktur, um Ihre Backup-Richtlinie abzurufen:
 >>
 >> ![Backup Agent Schritt 06](images/01-backup-agent-step06.png){.thumbnail}
 >>
@@ -118,7 +121,7 @@ Um Ihren Agent auf Ihrem Bare Metal Server zu installieren, klicken Sie auf den 
 >>     Cloud gateway          : <OVHDOMAIN>:6180
 >>     Connection account     : <USER>
 >> ```
->> 
+>>
 >> Sie können dann sehen, dass ein Element noch nicht installiert ist:
 >>
 >> ```bash
