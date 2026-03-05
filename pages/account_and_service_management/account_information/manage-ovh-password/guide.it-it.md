@@ -14,6 +14,17 @@ La password associata allo Spazio Cliente è la chiave di accesso a tutti i serv
 - Disporre di un account OVHcloud attivo
 - Conoscere l’identificativo cliente e l’indirizzo email associato all’account
 
+<!-- CP-NAV-START:account-security -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Account security](/links/control-panel/account-security)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `My account`{.action} > `Security`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
+
 ## Procedura
 
 ### Genera una password efficace
@@ -67,9 +78,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 #### Dallo Spazio Cliente
 
-- Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Accedere al mio account`{.action}.
-
-- Clicca sulla scheda `Sicurezza`{.action} e poi sul pulsante `Modificare`{.action} in corrispondenza della voce “Password”.
+- Nella pagina [Sicurezza dell'account](/links/control-panel/account-security), clicca sul pulsante `Modificare`{.action} in corrispondenza della voce “Password”.
 
 ![manage-ovh-password](/pages/assets/screens/control_panel/product-selection/right-column/access-my-account/edit-account-password.png){.thumbnail}
 
