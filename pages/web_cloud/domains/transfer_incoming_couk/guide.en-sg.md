@@ -37,18 +37,7 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 - The domain name must not be blocked by your registrar.
 - Holder contact information must be up to date in the [Whois](https://www.nominet.uk/whois) data of the domain name.
 - You are able to obtain the authorisation code that will be sent to the domain name holder's email address.
-
-<!-- CP-NAV-START:web-domains -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Domain names](/links/control-panel/web-domains)
-- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
-
----
-<!-- CP-NAV-END:web-domains -->
-
+
 
 > [!primary]
 >

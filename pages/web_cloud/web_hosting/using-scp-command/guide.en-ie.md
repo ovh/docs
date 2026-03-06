@@ -28,18 +28,7 @@ It allows you to copy a file or folder containing one or more files from a termi
 - A terminal compatible with Linux and SSH commands (for example, the *terminal* of MacOS or the *Ubuntu* emulator on Windows)
 - Familiarity with Linux and SSH commands
 - A [web hosting plan](/links/web/hosting) with SSH access
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Instructions
 
 This guide will provide a non-exhaustive list of the features available with the `scp` command. Please feel free to chat with our [community of users](/links/community) if you would like to learn more.

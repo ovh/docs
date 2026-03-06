@@ -14,18 +14,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Grav permite desarrollar ráp
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Tener un [dominio](/links/web/domains).
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Procedimiento
 
 ### Preparar la instalación

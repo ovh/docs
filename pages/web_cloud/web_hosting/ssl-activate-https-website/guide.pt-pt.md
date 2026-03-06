@@ -14,18 +14,7 @@ Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SS
 
 - Dispor de um [certificado SSL](/links/web/hosting-options-ssl) instalado no seu [alojamento web OVHcloud](/links/web/hosting).
 - Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Instruções
 
 A segurança assume um lugar cada vez mais importante na Internet. Muitos dedicam uma atenção especial à confidencialidade dos seus dados e à forma como estes transitam na web. De forma geral, os internautas confiam mais em websites que permitam uma partilha segura, especialmente quando os dados comunicados são sensíveis. 

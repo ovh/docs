@@ -23,18 +23,7 @@ Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de vo
 ## Prérequis
 
 - Disposer d'un [hébergement web](/links/web/hosting) et avoir installé WordPress
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## En pratique
 
 Vous pouvez effectuer une sauvegarde de deux façons : **manuellement** ou par le **biais d'une extension**.

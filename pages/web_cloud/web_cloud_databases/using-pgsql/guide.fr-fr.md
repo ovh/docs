@@ -31,7 +31,7 @@ Afin de vous connecter à votre base, assurez vous de ceci :
 - Disposer du mot de passe de votre base de données
 - Disposer du nom de votre base de données
 
-Toutes ces informations sont disponibles dans votre [Espace Client Web](/links/manager).
+Toutes ces informations sont disponibles dans votre [espace client OVHcloud](/links/control-panel/web-cloud-databases).
 
 Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

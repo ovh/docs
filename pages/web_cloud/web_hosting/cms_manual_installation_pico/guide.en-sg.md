@@ -14,18 +14,7 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 - An [OVHcloud web hosting plan](/links/web/hosting).
 - A [domain name](/links/web/domains).
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Instructions
 
 ### Prepare for installation

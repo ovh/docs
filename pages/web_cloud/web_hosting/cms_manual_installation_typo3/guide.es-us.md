@@ -14,18 +14,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permite desarrollar sit
 
 - Tener contratado un plan de [alojamiento web de OVHcloud](/links/web/hosting) que incluya al menos una base de datos.
 - Tener un [dominio](/links/web/domains).
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Procedimiento
 
 ### Preparar la instalación

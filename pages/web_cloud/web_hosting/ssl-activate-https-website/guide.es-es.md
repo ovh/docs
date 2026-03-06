@@ -14,18 +14,7 @@ Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](
 
 - Tener un [certificado SSL](/links/web/hosting-options-ssl) instalado en su [alojamiento web de OVHcloud](/links/web/hosting).
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Procedimiento
 
 La seguridad desempeña un papel cada vez más importante en internet. Usted presta una atención especial a la confidencialidad de sus datos y a la forma en que estos se transmiten por la web. En general, los internautas confían más en los sitios web que permiten un intercambio seguro de los datos, sobre todo cuando los datos intercambiados son sensibles. 

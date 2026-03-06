@@ -23,18 +23,7 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 ## Prerequisiti
 
 - Disporre di un [hosting Web](/links/web/hosting) e aver installato WordPress
-  
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+  
 ## Procedura
 
 Puoi effettuare un backup in due modi: **manualmente** o con **o tramite estensione**.

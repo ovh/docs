@@ -28,18 +28,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 
 - Posiadanie [hostingu](/links/web/hosting)
 - Posiadanie danych do logowania do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## W praktyce
 
 > [!primary]

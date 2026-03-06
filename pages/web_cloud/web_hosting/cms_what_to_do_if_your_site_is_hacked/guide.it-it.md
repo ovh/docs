@@ -28,18 +28,7 @@ La pirateria può manifestarsi in diversi modi (elenco non esaustivo):
 ## Prerequisiti
 
 - Disporre di una [offerta di hosting Web Cloud](/links/web/hosting) con il tuo sito Web ospitato su
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Procedura
 
 La pirateria di un sito Web è sistematicamente legata a **almeno**:

@@ -38,18 +38,7 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 - El nombre de dominio no debe ser bloqueado en su registrador.
 - Los datos del titular deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/) del nombre de dominio.
 - Deberá obtener el código de autorización que se enviará a la dirección de correo electrónico del titular.
-
-<!-- CP-NAV-START:web-domains -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
-
----
-<!-- CP-NAV-END:web-domains -->
-
+
 
 > [!primary]
 >

@@ -32,18 +32,7 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 - Avoir **initié une demande de changement de titulaire** pour un nom de domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) et pour lequel les procédures indiquées dans notre documentation sur le [changement de titulaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain) **ne peuvent pas être appliquées**.
 - Avoir un bon de commande de **changement de titulaire d'un nom de domaine** dans le statut "en cours".
 - Télécharger la **Demande d'Opération AFNIC (DOA)** via le lien suivant : <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
-
-<!-- CP-NAV-START:web-domains -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
-
----
-<!-- CP-NAV-END:web-domains -->
-
+
 ## En pratique
 
 La première étape consiste à initier une demande de changement de titulaire pour votre nom de domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/) à l'aide de notre documentation sur le [changement de titulaire d'un nom de domaine](/pages/web_cloud/domains/trade_domain).

@@ -28,18 +28,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows)
 - Être familiarisé avec les commandes Linux et SSH
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) bénéficiant d'un accès en SSH
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## En pratique
 
 Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. N'hésitez pas à échanger avec notre [communauté d'utilisateurs](/links/community) si vous souhaitez approfondir vos connaissances sur cette commande.

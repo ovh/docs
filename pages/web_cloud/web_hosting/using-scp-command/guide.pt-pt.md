@@ -28,18 +28,7 @@ Permite, a partir de um terminal e graças a um comando Linux, copiar um ficheir
 - Dispor de um terminal compatível com os comandos Linux e SSH (por exemplo, o *terminal* do MacOS ou o emulador *Ubuntu* no Windows)
 - Estar familiarizado com os comandos Linux e SSH
 - Ter um serviço de [alojamento web](/links/web/hosting) com acesso em SSH
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Instruções
 
 Este guia explica de forma não exaustiva as funcionalidades disponíveis com o comando `scp`. Não hesite em trocar impressões com nossa [comunidade de utilizadores](/links/community). se desejar aprofundar os seus conhecimentos sobre esta encomenda.

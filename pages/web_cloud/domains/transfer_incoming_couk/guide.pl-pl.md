@@ -38,18 +38,7 @@ Transfer nazwy domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejś
 - Nazwa domeny nie może zostać zablokowana u Twojego operatora. 
 - Dane kontaktowe abonenta muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/) nazwy domeny.
 - Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail abonenta.
-
-<!-- CP-NAV-START:web-domains -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
-
----
-<!-- CP-NAV-END:web-domains -->
-
+
 
 > [!primary]
 >

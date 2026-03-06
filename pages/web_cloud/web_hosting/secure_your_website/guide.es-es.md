@@ -24,18 +24,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 - un [plan OVHcloud Web Hosting](/links/web/hosting)
 - tener los detalles de [inicio de sesión](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
 - acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress)
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## Procedimiento
 
 ### Etapa 1 - Comprobar la seguridad de los dispositivos <a name="local"></a>

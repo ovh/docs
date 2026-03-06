@@ -20,18 +20,7 @@ updated: 2023-02-24
 ## Prérequis
 
 - Posséder une [offre d'hébergement web](/links/web/hosting) disposant d'un accès SSH.
-
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
+
 ## En pratique
 
 Connectez-vous en SSH à votre hébergement mutualisé à l'aide de notre guide sur [l'utilisation du SSH avec votre hébergement web mutualisé OVHcloud](/pages/web_cloud/web_hosting/ssh_on_webhosting).
