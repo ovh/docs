@@ -217,7 +217,7 @@ As infrastructure requirements scale, users may require broader bandwidth to sup
 The default selection of public bandwidth can be modified at the order time of a new Additional IP block, when a vRack network is selected as a backend service.
 
 To order a new Additional IPv6 block:
-- Log in to the [OVHcloud Control Panel](https://www.ovh.com/manager).
+- Log in to the [OVHcloud Control Panel](/links/manager).
 - Open the `Network`{.action} section in the left-hand sidebar.
 - Select `Public IP addresses`{.action}.
 - Click on the `Order IPs`{.action} button, near the top of the page.
