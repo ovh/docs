@@ -13,7 +13,17 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 ## Wymagania początkowe
 
 - Posiadanie [instancji Web Cloud Databases](/links/web/databases) (zawartej w ofercie[hostingu www Performance](/links/web/hosting)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wybierz usługę bazy danych
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## W praktyce
 

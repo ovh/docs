@@ -18,17 +18,6 @@ Jeśli Twoja strona WWW wyświetla stronę "Your IP has been banned", oznacza to
 - Posiadanie [hostingu](/links/web/hosting) OVHcloud.
 - Posiadanie [danych do logowania](/pages/web_cloud/web_hosting/ftp_connection) do przestrzeni dyskowej FTP Twojego hostingu.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## W praktyce
 
 Strona "Your IP has been banned" może się wyświetlać z różnych powodów (lista nie jest wyczerpująca):

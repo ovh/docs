@@ -15,17 +15,6 @@ Gli hosting Web OVHcloud permettono di usufruire di un [certificato SSL](/links/
 - Disporre di un [certificato SSL](/links/web/hosting-options-ssl) installato sul [hosting web OVHcloud](/links/web/hosting).
 - Disporre di almeno un sito Web installato e accessibile sul proprio hosting Web OVHcloud.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedura
 
 La sicurezza svolge un ruolo sempre più importante sul Web. Gli utenti rivolgono un’attenzione sempre maggiore alla confidenzialità dei propri dati e al modo in cui circolano in rete. In generale, gli internauti accordano maggiore fiducia ai siti Web che permettono scambi sicuri, in particolare quando i dati scambiati sono sensibili. 

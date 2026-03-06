@@ -29,17 +29,6 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 - Familiarizarse con los comandos Linux y SSH
 - Tener contratado un plan de [alojamiento web](/links/web/hosting) con acceso por SSH
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedimiento
 
 Esta guía explica en detalle las funcionalidades disponibles con el comando `scp`. No dude en interactuar con nuestra [comunidad de usuarios](/links/community) si desea profundizar sus conocimientos sobre este pedido.

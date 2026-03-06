@@ -34,17 +34,6 @@ Para transferir o Cyberduck, aceda a [site oficial](https://cyberduck.io/) da ap
 >
 > Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instruções
 
 ### Interface

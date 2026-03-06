@@ -25,17 +25,6 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 - ter os [detalhes de login](/pages/web_cloud/web_hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso) para acessar o espaço de armazenamento do seu plano de hospedagem
 - acesso à [interface admin para o seu site](https://codex.wordpress.org/pt-br:Primeiros_Passos_com_o_WordPress)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instruções
 
 ### Etapa 1 - Verificar a segurança dos seus dispositivos <a name="local"></a>

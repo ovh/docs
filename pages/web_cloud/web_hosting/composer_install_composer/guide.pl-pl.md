@@ -21,17 +21,6 @@ updated: 2023-02-24
 
 - Posiadanie [hostingu](/links/web/hosting) z dostępem SSH
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## W praktyce
 
 Połącz się z hostingiem za pomocą SSH, korzystając z naszego przewodnika na temat [korzystanie z SSH przy pomocy hostingu www OVHcloud](/pages/web_cloud/web_hosting/ssh_on_webhosting).

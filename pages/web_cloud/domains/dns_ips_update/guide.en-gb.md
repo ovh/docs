@@ -13,17 +13,6 @@ This guide explains the IP addresses changes affecting part of our DNS servers h
 ## Requirements
 
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Domain names](/links/control-panel/web-domains)
-- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
-
----
-<!-- CP-NAV-END:web-domains -->
-
 ## Instructions
 
 ### Who is concerned?

@@ -15,17 +15,6 @@ O seu website evolui e o seu consumo de recursos é tal que o seu alojamento web
 - Ter um [plano de alojamento web](/links/web/hosting) ativo.
 - Ter subscrito um [VPS](/links/bare-metal/vps) presente na sua conta OVHcloud.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instruções
 
 > [!warning]

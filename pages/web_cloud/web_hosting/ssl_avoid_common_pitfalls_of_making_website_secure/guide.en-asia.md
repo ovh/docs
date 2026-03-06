@@ -22,17 +22,6 @@ In this tutorial, you will find some examples of situations you may encounter wh
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - At least one [domain name](/links/web/domains)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instructions
 
 ### Mixed content

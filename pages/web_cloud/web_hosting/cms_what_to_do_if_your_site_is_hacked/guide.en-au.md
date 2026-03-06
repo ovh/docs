@@ -29,17 +29,6 @@ Hacking can occur in several ways (non-exhaustive list):
 
 - An [OVHcloud web hosting plan](/links/web/hosting) with your website hosted on it.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instructions
 
 Hacking of a website is systematically linked to **at least** one of the following:

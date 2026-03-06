@@ -29,17 +29,6 @@ utilizzando due file di configurazione (HTTP) Apache da inserire nello [spazio F
 - Disporre di una [offerta di hosting Web](/links/web/hosting)
 - Disporre delle credenziali di accesso a [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection)
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedura
 
 > [!primary]

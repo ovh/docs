@@ -28,17 +28,6 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
 - Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
   
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## In der praktischen Anwendung
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a>

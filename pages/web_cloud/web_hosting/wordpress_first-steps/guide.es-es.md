@@ -23,17 +23,6 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Disponer de un [dominio](/links/web/domains)
 - Haber [instalado WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedimiento
 
 Si todavía no lo ha hecho, [añada un certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web) al nombre de dominio asociado a su sitio web.

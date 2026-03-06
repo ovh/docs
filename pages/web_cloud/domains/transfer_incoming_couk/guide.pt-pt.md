@@ -39,17 +39,6 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 - Os dados de contacto do titular devem estar bem atualizados no [Whois](https://www.nominet.uk/whois/) do nome de domínio.
 - Deverá obter o código de autorização que será enviado para o endereço de e-mail do titular.
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
-
----
-<!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >

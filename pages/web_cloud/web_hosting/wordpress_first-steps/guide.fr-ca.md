@@ -23,17 +23,6 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 - Disposer d'un [nom de domaine](/links/web/domains)
 - Avoir [installé Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## En pratique
 
 Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.

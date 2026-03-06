@@ -28,17 +28,6 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 - Sie können mit SSH und Kommandzeile umgehen.
 - Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting) mit SSH-Zugang.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## In der praktischen Anwendung
 
 In dieser Anleitung erfahren Sie, welche Funktionen mit dem Befehl `scp` verfügbar sind. Für genauere Informationen kontaktieren Sie unsere [User Community](/links/community).

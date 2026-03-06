@@ -21,17 +21,6 @@ updated: 2023-03-07
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting) with SSH access
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
-- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Instructions
 
 Access your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting).

@@ -15,17 +15,6 @@ A medida que su sitio web evoluciona, su consumo de recursos se vuelve tal que s
 - Tener un [plan de hosting](/links/web/hosting) activo.
 - Haber contratado un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedimiento
 
 > [!warning]

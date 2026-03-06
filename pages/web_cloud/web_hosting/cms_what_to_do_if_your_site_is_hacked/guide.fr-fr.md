@@ -29,17 +29,6 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) avec votre site Web hébergé dessus.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
-- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## En pratique
 
 Le piratage d'un site Web est systématiquement lié à **au moins** l'un des points suivants :

@@ -15,17 +15,6 @@ Ihre Website entwickelt sich weiter, und der Ressourcenverbrauch wird immer stä
 - Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Account.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Zugriff auf das OVHcloud Kundencenter
-
-- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
-- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## In der praktischen Anwendung
 
 > [!warning]

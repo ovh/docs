@@ -29,17 +29,6 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Disponer de un [plan de hosting Cloud](/links/web/hosting) con su sitio web alojado en él.
 
-<!-- CP-NAV-START:web-hosting -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
-- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
-
----
-<!-- CP-NAV-END:web-hosting -->
-
 ## Procedimiento
 
 La piratería de un sitio web siempre está vinculada a **al menos** uno de los siguientes puntos:

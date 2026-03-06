@@ -13,8 +13,18 @@ Durante l'utilizzo del prodotto, potrebbe essere necessario modificare i diritti
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione [Web Cloud Databases](/links/web/databases) e di uno o più utenti.
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Procedura
 

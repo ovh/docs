@@ -39,17 +39,6 @@ Il trasferimento di un nome di dominio.uk (o assimilato) richiede una procedura 
 - Le coordinate dell’**intestatario** devono essere ben aggiornate nel [Whois](https://www.nominet.uk/whois/) del nome di dominio.
 - Riceverai il codice di autorizzazione che verrà inviato all'indirizzo email dell’**intestatario**.
 
-<!-- CP-NAV-START:web-domains -->
----
-
-### Accesso allo Spazio Cliente OVHcloud
-
-- **Link diretto:** [Domini](/links/control-panel/web-domains)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
-
----
-<!-- CP-NAV-END:web-domains -->
-
 
 > [!primary]
 >
