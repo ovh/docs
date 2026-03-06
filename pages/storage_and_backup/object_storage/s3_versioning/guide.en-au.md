@@ -1,7 +1,7 @@
 ---
 title: 'Object Storage - Getting Started with Versioning'
 excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs'
-updated: 2025-07-07
+updated: 2026-03-06
 ---
 
 ## Objective

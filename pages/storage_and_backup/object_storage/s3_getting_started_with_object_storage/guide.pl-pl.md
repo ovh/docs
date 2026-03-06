@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started
 excerpt: This guide is designed to familiarise you with the management of your buckets/objects.
-updated: 2026-01-27
+updated: 2026-03-06
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage
 excerpt: This guide provides details on how to migrate from an S3-compatible object storage provider to OVHcloud Object Storage using Rclone
-updated: 2025-09-08
+updated: 2026-03-06
 ---
 
 ## Objective

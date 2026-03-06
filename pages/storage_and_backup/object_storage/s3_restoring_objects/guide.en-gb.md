@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Restoring an archived object from Cold Archive storage class
 excerpt: Restore objects from Cold Archive storage class
-updated: 2025-11-19
+updated: 2026-03-06
 ---
 
 ## Objective

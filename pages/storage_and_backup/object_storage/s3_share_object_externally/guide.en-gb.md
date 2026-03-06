@@ -1,7 +1,7 @@
 ---
 title: Object Storage – How to share an object or file externally
 excerpt: Learn how to securely share Object Storage files externally in OVHcloud, using presigned URLs, public-read objects, or bucket policies for controlled access
-updated: 2025-12-19
+updated: 2026-03-06
 ---
 
 ## Objective

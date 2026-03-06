@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Managing object immutability with Object Lock (WORM)
 excerpt: Object Lock is a feature that allows you to store objects using a Write Once, Read Many (WORM) model
-updated: 2025-03-25
+updated: 2026-03-06
 ---
 
 ## Objective

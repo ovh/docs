@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Hosting a static website in an Object Storage bucket
 excerpt: Learn how to configure an Object Storage bucket to host a static website
-updated: 2024-05-20
+updated: 2026-03-06
 ---
 
 ## Objective

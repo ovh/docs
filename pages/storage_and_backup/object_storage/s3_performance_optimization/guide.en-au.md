@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimising Performance
 excerpt: This guide walks you through various methods to optimise the performance of your Object Storage buckets, including using byte range fetches, multipart uploads and other methods
-updated: 2025-06-04
+updated: 2026-03-06
 ---
 
 ## Objective

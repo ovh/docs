@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Use Object Storage with Rclone
 excerpt: Learn how to set up Rclone to synchronize your files to and from Object Storage.
-updated: 2024-12-19
+updated: 2026-03-06
 ---
 
 ## Objective

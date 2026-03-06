@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
 excerpt: Discover OVHcloud Object Storage endpoints and regions.
-updated: 2026-02-06
+updated: 2026-03-06
 ---
 
 <style>

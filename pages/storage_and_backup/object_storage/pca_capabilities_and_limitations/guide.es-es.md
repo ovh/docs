@@ -1,7 +1,7 @@
 ---
 title: Cloud Archive Swift - Capabilities and limitations
 excerpt: Find here the main capacities and limitations for the management of your containers
-updated: 2021-09-23
+updated: 2026-03-06
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Setting up CORS on Object Storage
 excerpt: Learn how to enable and configure CORS on your buckets
-updated: 2023-05-30
+updated: 2026-03-06
 ---
 
 ## Objective

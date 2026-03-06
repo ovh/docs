@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimise the sending of your files to Object Storage
 excerpt: Learn how to optimise the sending of your files to your bucket
-updated: 2021-12-08
+updated: 2026-03-06
 ---
 
 ## Objective

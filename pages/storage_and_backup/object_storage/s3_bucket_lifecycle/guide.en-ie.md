@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your OVHcloud Object Storage costs by configuring lifecycle rules for automatic expiration, transition, and cleanup of objects
-updated: 2026-02-27
+updated: 2026-03-06
 ---
 
 <style>
