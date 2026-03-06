@@ -31,7 +31,7 @@ details[open]>summary::before {
 
 ### Qu'est-ce qu'un lifecycle ?
 
-Le bucket lifecycle dans OVHcloud Object Storage vous permet d'optimiser vos coûts de stockage en gérant vos objets tout au long de leur cycle de vie (**lifecycle**). En téléversant une configuration de lifecycle vers un bucket, vous définissez un ensemble de règles que la solution Object Storage applique aux objets du bucket en question pour effectuer des actions spécifiques.
+Le bucket lifecycle dans OVHcloud Object Storage est une fonctionnalité qui vous permet d'optimiser vos coûts de stockage en gérant vos objets tout au long de leur cycle de vie (**lifecycle**). En téléversant une configuration de lifecycle vers un bucket, vous définissez un ensemble de règles que la solution Object Storage applique aux objets du bucket pour effectuer des actions spécifiques.
 
 Il y a 2 types d'actions qu'OVHcloud Object Storage effectue sur vos objets :
 
@@ -60,7 +60,7 @@ Les règles de lifecycle sont traitées de manière asynchrone et dans la mesure
 
 ### Dates d'expiration conflictuelles
 
-En règle générale, la fonction lifecycle est conçue pour vous aider à optimiser vos coûts de stockage. Par exemple, si deux règles d'expiration se chevauchent, c'est-à-dire qu'elles ciblent le même ensemble d'objets mais avec des dates d'expiration différentes, la règle avec la durée la plus courte est appliquée, garantissant que les données ne sont pas conservées au-delà du délai prévu : OVHcloud Object Storage choisit toujours la voie la plus rentable pour vous.
+En règle générale, la fonction lifecycle est conçue pour vous aider à optimiser vos coûts de stockage. Par exemple, si deux règles d'expiration se chevauchent, c'est-à-dire qu'elles ciblent le même ensemble d'objets mais avec des dates d'expiration différentes, la règle avec la durée la plus courte est appliquée, garantissant que les données ne sont pas conservées au-delà du délai prévu : OVHcloud Object Storage essaie toujours de choisir la voie la plus rentable pour vous.
 
 En règle générale, lorsque plusieurs règles s'appliquent au même ensemble d'objets dans une configuration de bucket lifecycle :
 
@@ -199,7 +199,7 @@ Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecyc
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.
 
-Le format de l'en-tête est le suivant : `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule-id>`
+Le format de l'en-tête est le suivant : `x-amz-expiration: expiry-date=<timestamp>, rule-id=<rule_id>`
 
 - expiry-date : obtenue en additionnant la date de création et le délai d'expiration
 - rule-id : l'identifiant de la règle correspondante qui déclenche la suppression
@@ -219,7 +219,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 **Exemple** : Obtenir la date d'expiration via le CLI
 
 ```bash
-~$ aws s3api head-object --bucket $bucket --key $object_name
+aws s3api head-object --bucket <bucket_name> --key <object_key>
 {
   ...
   "Expiration" : "expiry-date=\"Fri, 21 Dec 2024 00:00:00 GMT\", rule-id=\"123456789\"",
@@ -713,7 +713,7 @@ La configuration suivante effectue les actions suivantes :
 - toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont ensuite supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
 
 ```bash
-$ cat lifecycle.json
+cat lifecycle.json
 {
   "Rules": [
     {
@@ -737,7 +737,7 @@ $ cat lifecycle.json
 Transférez le fichier dans le bucket :
 
 ```bash
-$ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
+aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-configuration file://lifecycle.json
 ```
 
 ///
