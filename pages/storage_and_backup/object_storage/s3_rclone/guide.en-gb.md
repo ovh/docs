@@ -27,7 +27,7 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 > [!primary]
 >
-> In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
+> To identify the endpoint for your storage class, refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
 ## Instructions
@@ -69,19 +69,19 @@ List the contents of a bucket:
 rclone ls <remote_name>:<bucket_name>
 ```
 
-Synchronise `/home/user/documents` to a bucket:
+Synchronise a local directory to a bucket:
 
 ```bash
 rclone sync <source_directory> <remote_name>:<bucket_name>
 ```
 
-Copy a file `/home/user/file.txt` into a bucket:
+Copy a file into a bucket:
 
 ```bash
 rclone copy <file_path> <remote_name>:<bucket_name>
 ```
 
-Download a file `file.txt` from a bucket:
+Download a file from a bucket:
 
 ```bash
 rclone copy <remote_name>:<bucket_name>/<object_key> <destination_file_path>

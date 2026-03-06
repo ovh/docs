@@ -52,7 +52,7 @@ aws --profile <profile_name> s3api put-bucket-acl \
 aws --profile <profile_name> s3api get-bucket-acl --bucket <logs_bucket_name>
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```json
 {
@@ -104,7 +104,7 @@ aws --profile <profile_name> s3api put-bucket-logging --bucket <bucket_name> --b
 aws --profile <profile_name> s3api get-bucket-logging --bucket <bucket_name>
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```json
 {
@@ -123,7 +123,7 @@ After about one hour, the first logs are available:
 aws --profile <profile_name> s3 ls s3://<logs_bucket_name> --recursive
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```text
 2023-01-10 17:39:42       1861 test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
@@ -137,7 +137,7 @@ Download a log:
 aws --profile <profile_name> s3 cp s3://<logs_bucket_name>/<log_object_key> .
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```bash
 download: s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261 to ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
@@ -149,7 +149,7 @@ Then read it:
 cat ./<log_object_key>
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```bash
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:28 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f tx46d5e8a45e5e4bb3975fc-0063bd7ef4 REST.PUT.LOGGING_STATUS - "PUT /?logging HTTP/1.0" 200 - - 200 113 0 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
@@ -195,7 +195,7 @@ The following list describes the log record fields:
 - Authentication Type: type of request authentication used
     - AuthHeader
     - QueryString
-- Host Header: endpoint used to connect to S3
+- Host Header: endpoint used to connect to S3<sup>1</sup>
     - (BUCKET.)STORAGE_DOMAIN
 
 ### Check log file acl
@@ -204,7 +204,7 @@ The following list describes the log record fields:
 aws --profile <profile_name> s3api get-object-acl --bucket <logs_bucket_name> --key <log_object_key>
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```json
 {
@@ -253,4 +253,6 @@ aws --profile <profile_name> s3api put-bucket-logging --bucket <bucket_name> --b
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
 

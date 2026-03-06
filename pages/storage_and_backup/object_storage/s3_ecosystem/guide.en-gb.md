@@ -6,7 +6,7 @@ updated: 2026-01-14
 
 ## Objective
 
-At OVHcloud, we understand the importance of compatibility and interoperability with third-party tools and software. Our **S3<sup>*</sup>-compatible Object Storage** service is designed to be flexible and adaptable to various use cases and workflows. This guide aims to provide an overview of the compatibility of our Object Storage service with popular third-party tools and software, helping you to integrate our service seamlessly into your existing infrastructure.
+At OVHcloud, we understand the importance of compatibility and interoperability with third-party tools and software. Our **S3<sup>1</sup>-compatible Object Storage** service is designed to be flexible and adaptable to various use cases and workflows. This guide aims to provide an overview of the compatibility of our Object Storage service with popular third-party tools and software, helping you to integrate our service seamlessly into your existing infrastructure.
 
 ## Compatibility Table
 
@@ -69,4 +69,4 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 
 Join our [community of users](/links/community).
 
-<sup>*</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

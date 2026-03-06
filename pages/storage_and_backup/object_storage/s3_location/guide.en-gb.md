@@ -10,7 +10,7 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the Object Storage storage classes to be compatible with the **S3-compatible API**<sup>1</sup>, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region, not storage class.
+We have designed the Object Storage storage classes to be compatible with the S3<sup>1</sup>-compatible API, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region, not storage class.
 
 ## Object Storage
 
@@ -290,7 +290,7 @@ _<sup>3</sup>: The Cold Archive storage class is only available in Paris (`eu-we
 > [!warning]
 > Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3-compatible features and API operations are available.
 
-### Endpoint retrocompatibility
+### Endpoint backward compatibility
 
 > [!warning]
 > The **perf** endpoint is maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our Object Storage. We strongly encourage you to migrate to the **io** endpoint whenever possible.

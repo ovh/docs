@@ -12,7 +12,7 @@ By default, modern browsers impose a same-origin security policy i.e. by prevent
 
 Cross-Origin Resource Sharing (CORS) is a technique that allows resources from a client web application that is loaded from one domain to interact with resources located in a different domain.
 
-**The purpose of this guide is to explain the concept of CORS and how to enable it on your Object Storage buckets.**
+**This guide explains CORS and how to enable it on your Object Storage buckets.**
 
 ### Use case scenarios
 
@@ -49,7 +49,7 @@ The rules for accepted CORS requests are configured at the bucket level.
 
 Using the AWS CLI, set up CORS on the bucket:
 
-```bash
+```sh
 aws s3api put-bucket-cors --bucket <bucket_name> --cors-configuration file://cors.json
 ```
 
@@ -73,7 +73,7 @@ Let's assume you have a frontend web application hosted on `https://my-app.xyz` 
 
 Enable CORS on the `my-media` bucket:
 
-```bash
+```sh
 aws s3api put-bucket-cors --bucket my-media --cors-configuration file://cors.json
 ```
 

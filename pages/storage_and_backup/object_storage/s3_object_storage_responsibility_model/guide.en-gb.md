@@ -6,7 +6,7 @@ updated: 2024-02-26
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges : 
+The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges:
 
 - Standard Object Storage
 - High Performance Object Storage
@@ -14,10 +14,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | Roles |
 | --- |
-|R : Is in charge of carrying out the process|
-|A : Accountable for the successful completion of the process|
-|C : Is consulted during the process|
-|I : Is informed of the results of the process|
+|R: Is in charge of carrying out the process|
+|A: Accountable for the successful completion of the process|
+|C: Is consulted during the process|
+|I: Is informed of the results of the process|
 
 ### 1. Before subscription
 
@@ -42,7 +42,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Use S3 **\*** compatible API to import data in bucket | RA |  |
+| Use S3<sup>1</sup> compatible API to import data in bucket | RA |  |
 
 ### 3. Service usage
 
@@ -140,4 +140,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

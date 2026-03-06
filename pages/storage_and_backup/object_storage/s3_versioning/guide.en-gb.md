@@ -19,7 +19,7 @@ updated: 2025-07-07
 
 ### Concept
 
-Versioning in Object Storage allows you to keep multiple variants of an object in the same bucket. This feature helps preserve, retrieve, and restore every version of every object stored in your buckets, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it.
+Versioning lets you keep multiple variants of an object in the same bucket. This feature helps preserve, retrieve, and restore every version of every object stored in your buckets, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it.
 
 ### General Information
 
@@ -83,7 +83,7 @@ When versioning is enabled:
 > Via AWS CLI
 >> To enable versioning on an Object Storage bucket, use the following command:
 >>
->> ```bash
+>> ```sh
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
 >> ```
 >>
@@ -113,7 +113,7 @@ When versioning is enabled:
 > Via AWS CLI
 >> To suspend versioning, set the versioning configuration status to `Suspended`:
 >>
->> ```bash
+>> ```sh
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
 >> ```
 >>
@@ -218,6 +218,6 @@ When versioning is enabled:
 - **Suspension:** Suspending versioning does not delete existing versions, it only stops new versions from being created.
 - **Permissions:** Only the bucket owner can enable or suspend versioning.
 
-## Go Further
+## Go further
 
 Join our [community of users](/links/community).

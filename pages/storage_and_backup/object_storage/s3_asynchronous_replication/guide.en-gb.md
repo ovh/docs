@@ -582,7 +582,7 @@ When creating a new bucket/container in a **3-AZ region**, you will be asked if 
 
 #### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
 
-The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
+The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3<sup>1</sup>-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
 
 #### Where will the replicated data be stored, since the replication rule configuration is managed by OVHcloud?
 
@@ -629,3 +629,5 @@ You can access the details of the Offsite Replication pricing on the global Obje
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

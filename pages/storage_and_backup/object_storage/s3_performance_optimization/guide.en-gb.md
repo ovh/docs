@@ -6,11 +6,11 @@ updated: 2025-06-04
 
 ## Objective
 
-There are several ways to optimise the performance of your buckets on Object Storage. The following guide will walk you through the different optimization methods.
+There are several ways to optimise the performance of your buckets on Object Storage. The following guide will walk you through the different optimisation methods.
 
 ### Using byte range fetch
 
-OVHcloud Object Storage supports byte range fetch. The idea is to retrieve an object chunk by chunk, each chunk being defined by a range of bytes. The main advantage is that it allows you to parallelize GET requests to download an object, with each GET requesting a specific range of bytes: typical sizes for byte range requests are 8 MB or 16 MB, but you can specify any size.
+OVHcloud Object Storage supports byte range fetch. This retrieves an object chunk by chunk, with each chunk defined by a byte range. The main advantage is that you can parallelise GET requests to download an object, with each GET requesting a specific range of bytes: typical sizes for byte range requests are 8 MB or 16 MB, but you can specify any size.
 
 ![Schema 1](images/sharding1.png){.thumbnail}
 
@@ -224,13 +224,13 @@ To customize the default value on the AWS CLI, consult [this guide](/pages/stora
 
 For other tools, you should check the relevant documentation of the software you are using.
 
-### I/O optimization
+### I/O optimisation
 
 It is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
 
 **What is sharding**
 
-OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
+OpenIO is a software-defined storage solution on which OVHcloud Object Storage is based.
 
 In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that lists all the addresses in the cluster of the objects contained in it. By default, an Object Storage bucket is associated with one container but this can change with the sharding mechanism.
 

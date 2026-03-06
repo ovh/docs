@@ -6,7 +6,7 @@ updated: 2025-09-08
 
 ## Objective
 
-This guide provides detailed steps to help you migrate from a third-party S3-compatible object storage provider to OVHcloud Object Storage using the popular [Rclone](https://rclone.org/) tool, a command-line tool that can be used to manage cloud storage resources.
+This guide provides detailed steps to help you migrate from a third-party S3<sup>1</sup>-compatible object storage provider to OVHcloud Object Storage using the popular [Rclone](https://rclone.org/) tool, a command-line tool that can be used to manage cloud storage resources.
 
 > [!warning]
 >
@@ -78,7 +78,7 @@ After installing **Rclone** on your virtual machine, configure its connection to
 rclone config
 ```
 
-This command will open the configuration menu and will guide you step by step with the configuration. The official OVHcloud provider configuration is available and will guide you step by step. Follow the steps available [here](https://rclone.org/s3/#ovhcloud).
+This command opens an interactive configuration menu. For OVHcloud-specific steps, follow the [official Rclone guide](https://rclone.org/s3/#ovhcloud).
 
 You can also create/modify the configuration file yourself with the following command:
 
@@ -86,7 +86,7 @@ You can also create/modify the configuration file yourself with the following co
 rclone config file
 ```
 
-If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano` :
+If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano`:
 
 ```bash
 nano /home/<linux_username>/.config/rclone/rclone.conf
@@ -126,7 +126,7 @@ rclone config
 
 #### Step 3.3 - Running Rclone
 
-Depending on your strategy you can use two different commands to start the migration. Either you use the `rclone sync` command to start the migration of one or all buckets. As detailed in the documentation, the `rclone sync`command will make source and destination identical. Be careful then when using it.
+Depending on your strategy you can use two different commands to start the migration. Either you use the `rclone sync` command to start the migration of one or all buckets. As detailed in the documentation, the `rclone sync` command will make source and destination identical. Be careful then when using it.
 
 You can also use the `rclone copy` command that will copy files from your source to your destination.
 In both cases, remember to replace the source and destination values with your own bucket names:
@@ -143,7 +143,7 @@ rclone copy <source_remote_name>:<source_bucket_name>/ ovhcloud:<destination_buc
 
 `--progress` shows progress during transfer.
 
-In order to leverage the rclone WebUI GUI you can also use the following command:
+To use the Rclone web GUI, run:
 
 ```bash
 rclone copy <source_remote_name>:<source_bucket_name>/ ovhcloud:<destination_bucket_name>/ --transfers 50 --rc --rc-addr :5572 --rc-web-gui --rc-user <username> --rc-pass <password>
@@ -155,7 +155,7 @@ In this command we added specific flags to optimize and monitor the copy:
 - `--rc` enables the remote control server
 - `--rc-addr :5572` represents the address and the port used to access rclone’s WebUI GUI. Port 5572 is the default port used by Rclone to securely access the WebUI.
 - `--rc-web-gui` launches WebGUI on localhost
-- `--rc-user USERNAME` `--rc-pass PASSWORD` are your user and password for authentication. Make sure to enter the right credentials.
+- `--rc-user <username>` `--rc-pass <password>` are your user and password for authentication. Make sure to enter the right credentials.
 
 > [!primary]
 >
@@ -186,3 +186,5 @@ rclone size ovhcloud:<destination_bucket_name>/
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

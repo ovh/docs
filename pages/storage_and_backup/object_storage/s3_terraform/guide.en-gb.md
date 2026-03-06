@@ -5,7 +5,7 @@ updated: 2025-10-16
 
 ## Objective
 
-This tutorial will help you automate and orchestrate actions to use the [Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3-compatible API with Terraform. Terraform is an open-source tool for orchestrating the provisioning of resources.
+This tutorial shows you how to use the [Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3<sup>1</sup>-compatible API with Terraform. Terraform is an open-source tool for orchestrating the provisioning of resources.
 
 ## Requirements
 
@@ -118,4 +118,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

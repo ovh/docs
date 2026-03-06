@@ -10,7 +10,7 @@ OVHcloud offers two types of Object Storage: one based on OpenStack Swift and th
 
 If you want to know more about available Object Storage offerings and classes, refer to our guide "[Object Storage - Choosing the right storage class for your needs](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)".
 
-This guide provides detailed steps to help you migrate from OVHcloud Swift Object Storage to OVHcloud S3-compatible Object Storage using the [Rclone](https://rclone.org/) tool, a command-line tool that can be used to manage cloud storage resources.
+This guide provides detailed steps to help you migrate from OVHcloud Swift Object Storage to OVHcloud S3-compatible Object Storage using the [Rclone](https://rclone.org/) tool, a command-line tool for managing cloud storage.
 
 > [!warning]
 >
@@ -63,7 +63,7 @@ As said, you can also create and modify the configuration file yourself with the
 rclone config file
 ```
 
-If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano` :
+If the configuration file doesn’t exist, you’ll be prompted to add the following configuration using your preferred editor. For example, on Linux you can use `nano`:
 
 ```bash
 nano /home/<linux_username>/.config/rclone/rclone.conf
@@ -114,7 +114,7 @@ You can use the `rclone sync` command to start the migration of one or all bucke
 
 You can also use the `rclone copy` command that will copy files from your source to your destination.
 
-In both cases, remember to change `source-container-name` and `destination-bucket-name` to your OVHcloud Swift source container and your OVHcloud S3-compatible destination bucket names, respectively:
+In both cases, remember to change `<source_container_name>` and `<destination_bucket_name>` to your OVHcloud Swift source container and your OVHcloud S3-compatible destination bucket names, respectively:
 
 ```bash
 rclone sync ovhcloud-swift:<source_container_name>/ ovhcloud-s3:<destination_bucket_name>/ --progress

@@ -50,7 +50,7 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 >>
 >> Steps:
 >>
->> - Generate a presigned URL using the OVHcloud API or an S3-compatible SDK.
+>> - Generate a presigned URL using the OVHcloud API or an S3<sup>1</sup>-compatible SDK.
 >> - Set an expiration time.
 >> - Share the URL with the external user.
 >>
@@ -91,4 +91,6 @@ OVHcloud Object Storage offers three main ways to share objects externally. Choo
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
 

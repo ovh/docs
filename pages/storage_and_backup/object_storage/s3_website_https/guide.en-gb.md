@@ -17,7 +17,7 @@ However, OVHcloud Object Storage static website hosting does not support HTTPS. 
 
 ## Requirements
 
-The following are the prerequisites to have in order to enable HTTPS:
+To enable HTTPS, you need:
 
 - An [OVHcloud Load Balancer](/links/network/load-balancer) which will serve the role of an SSL gateway and can offer protection against DDoS attacks.
 - A registered [domain name](/links/web/domains).
@@ -72,7 +72,7 @@ Enter the configuration information of your server:
 
 **Example**: using `dig`
 
-```bash
+```sh
 dig <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
@@ -100,7 +100,7 @@ my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
 
 **Example**: using `host`
 
-```bash
+```sh
 host <bucket_name>.s3-website.<region>.io.cloud.ovh.net
 ```
 
@@ -112,7 +112,7 @@ my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
 
 #### Step 1.3 - Configure your front-ends
 
-The next steps consists in adding front-ends to your Load Balancer. A front-end will be the internet facing element of your Load Balancer and is responsible for handling and routing incoming requests.
+The next step is to add front-ends to your Load Balancer. A front-end will be the internet facing element of your Load Balancer and is responsible for handling and routing incoming requests.
 
 In the Load Balancer section of the OVHcloud Control Panel, click the `Front-ends`{.action} tab then click `Add a front-end`{.action}.
 

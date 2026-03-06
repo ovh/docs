@@ -38,13 +38,13 @@ The bucket hosting the website and its contents must be publicly accessible i.e.
 
 Using the predefined `PUBLIC-READ` ACL at the bucket level:
 
-```bash
+```sh
 aws --profile <profile_name> s3api put-bucket-acl --bucket <bucket_name> --acl public-read
 ```
 
 Applying the predefined `PUBLIC-READ` ACL on **all** the objects:
 
-```bash
+```sh
 #!/bin/bash
 declare -a output=($(aws --profile <profile_name> s3api list-objects-v2 --bucket <bucket_name> --query='Contents[].Key' | jq -r '.[]'))
 for value in "${output[@]}"
@@ -55,17 +55,17 @@ done
 
 ### Step 3: Setting the website configuration for a bucket
 
-To activate website hosting, you will have to upload a website configuration.
+To activate website hosting, upload a website configuration.
 
 **Example**:
 
-```bash
+```sh
 aws --profile <profile_name> s3 website s3://<bucket_name>/ --index-document index.html --error-document error.html
 ```
 
 Or
 
-```bash
+```sh
 aws --profile <profile_name> s3api put-bucket-website --bucket <bucket_name> --website-configuration file://website-conf.json
 ```
 

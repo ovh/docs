@@ -526,7 +526,7 @@ This guide lists the features supported by OVHcloud Object Storage.
     </tr>
     <tr>
         <td>Data analytics</td>
-        <td>S3 Select</td>
+        <td>S3<sup>1</sup> Select</td>
         <td>select object content</td>
         <td>no</td>
         <td>no</td>
@@ -541,4 +541,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

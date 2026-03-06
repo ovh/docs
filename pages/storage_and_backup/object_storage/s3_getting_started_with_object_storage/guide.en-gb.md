@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide is designed to familiarise you with the management of your buckets/objects.
+This guide helps you manage your buckets and objects.
 
 **Learn how to create an Object Storage bucket and manage it.**
 
@@ -66,7 +66,6 @@ aws --version
 
 #### Collect Credentials
 
-- You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
 - You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
 - You will also need your *endpoint_url*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
@@ -265,7 +264,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 #### Uploading your files as objects in your bucket
 
-As part of the object upload process to an Object Storage bucket, users can select the desired storage class for their objects, providing control over storage characteristics such as availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+When uploading objects, you can select a storage class to control availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI

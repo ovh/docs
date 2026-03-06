@@ -6,7 +6,7 @@ updated: 2025-11-19
 
 ## Objective
 
-Find out how to restore an object from the Cold Archive tier in OVHcloud S3-compatible Object Storage<sup>1</sup>.
+Find out how to restore an object from the Cold Archive tier in OVHcloud S3<sup>1</sup>-compatible Object Storage.
 
 ## Requirements
 

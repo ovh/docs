@@ -6,7 +6,7 @@ updated: 2025-09-25
 
 ## Objective
 
-The purpose of this guide is to show you how to manage your identities and access your Object Storage resources.
+This guide explains how to manage identities and access to your Object Storage resources.
 
 ## Requirements
 
