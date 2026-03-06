@@ -32,6 +32,7 @@ Before following this tutorial, please refer to these guides:
 
 ## Requirements
 
+- A [Public Cloud Instance](/links/public-cloud/prices) with Ubuntu 18.04 installed
 - Root SSH access on the Instance
 - [Object Storage](/links/public-cloud/object-storage) in the same datacentre as your Public Cloud Instance (optional)
 - [High-performance additional disk](/links/public-cloud/block-storage) in the same datacentre as your Public Cloud Instance (optional)

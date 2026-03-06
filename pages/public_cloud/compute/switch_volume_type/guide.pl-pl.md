@@ -10,6 +10,7 @@ Celem niniejszego przewodnika jest pokazanie, jak zmienić rodzaj wolumenu Block
 
 ## Wymagania początkowe
 
+- Dostęp do [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Wolumen [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](/links/public-cloud/public-cloud).
 
 <!-- CP-NAV-START:publiccloud-projects -->
@@ -44,6 +45,8 @@ Modyfikacja ta może zostać przeprowadzona za pośrednictwem interfejsu Horizon
 
 > [!tabs]
 > Za pomocą Panelu klienta OVHcloud
+>>
+>> Kliknij `Block Storage`{.action} w lewym menu pod **Storage & Backup**.
 >>
 >> Znajdź odpowiedni wolumin na liście, a następnie kliknij przycisk `...`{.action} po prawej stronie. Wybierz `Zmień typ woluminu`{.action}.
 >>

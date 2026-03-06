@@ -17,6 +17,7 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) w abonamencie **godzina**
+- Dostęp do [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Znajomość [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 <!-- CP-NAV-START:publiccloud-projects -->

@@ -10,6 +10,7 @@ L'objectif de ce guide est de vous montrer comment changer un type de volume Blo
 
 ## Prérequis
 
+- Avoir accès à [l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet [Public Cloud](/links/public-cloud/public-cloud).
 
 <!-- CP-NAV-START:publiccloud-projects -->
@@ -44,6 +45,8 @@ Cette modification peut être réalisée via Horizon ou via l’interface de lig
 
 > [!tabs]
 > Depuis l'espace client OVHcloud
+>>
+>> Cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 >>
 >> Repérez le volume concerné dans la liste, puis cliquez sur le bouton `...`{.action} situé à droite de celui-ci. Choisissez ensuite `Modifier le type du volume`{.action}.
 >>

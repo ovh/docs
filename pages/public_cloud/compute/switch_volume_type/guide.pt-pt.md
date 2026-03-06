@@ -10,6 +10,7 @@ O objetivo deste guia é mostrar-lhe como alterar um tipo de volume Block Storag
 
 ## Requisitos
 
+- Aceder à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Um volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto [Public Cloud](/links/public-cloud/public-cloud).
 
 <!-- CP-NAV-START:publiccloud-projects -->
@@ -44,6 +45,8 @@ Esta alteração pode ser realizada através da interface Horizon ou através da
 
 > [!tabs]
 > A partir da área de cliente OVHcloud
+>>
+>> Clique em `Block Storage`{.action} no menu à esquerda sob **Storage & Backup**.
 >>
 >> Localize o volume relevante na lista, em seguida, clique no botão `...`{.action} à sua direita. Escolha depois `Modificar o tipo do volume`{.action}.
 >>

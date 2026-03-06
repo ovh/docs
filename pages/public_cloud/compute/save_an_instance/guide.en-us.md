@@ -63,6 +63,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
+>> Click on `Instances`{.action} in the left-hand menu.
 >>
 >> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
 >>

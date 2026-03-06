@@ -32,6 +32,7 @@ Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 ## Prérequis
 
+- Avoir une [instance de Public Cloud](/links/public-cloud/prices) avec Ubuntu 18.04 installé
 - Accès root SSH sur l'Instance
 - [Stockage d'objets](/links/public-cloud/object-storage) dans le même datacenter que votre Public Cloud Instance (facultatif)
 - [Disque supplémentaire de haute performance](https://www.ovh.com/fr/public-cloud/storage/additional-disks/) dans le même datacenter que votre instance de Public Cloud (en option)

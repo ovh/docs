@@ -37,7 +37,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 Cliquez sur l’onglet `Instances`{.action} dans la barre de navigation à gauche.
 
-Cliquez sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
+Cliquez sur `...`{.action} à droite de l’instance et sélectionnez `Redémarrer en mode rescue`{.action}.
 
 ![tableau de bord](images/rescue2022.png){.thumbnail}
 

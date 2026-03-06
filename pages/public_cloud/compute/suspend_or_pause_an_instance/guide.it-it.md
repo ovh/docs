@@ -17,7 +17,8 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 ## Prerequisiti
 
 - un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con la fatturazione **oraria**
-- Conoscenza dell'[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+- Avere accesso all’[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Conoscenza dell’[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

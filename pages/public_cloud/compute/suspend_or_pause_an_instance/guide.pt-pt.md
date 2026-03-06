@@ -17,6 +17,7 @@ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é p
 ## Requisitos
 
 - uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre faturação à **hora**
+- acesso à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Conhecimento da [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e das [variáveis OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 <!-- CP-NAV-START:publiccloud-projects -->
