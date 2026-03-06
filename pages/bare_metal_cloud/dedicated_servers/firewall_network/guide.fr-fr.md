@@ -134,6 +134,25 @@ Après validation, le firewall sera activé ou désactivé.
 
 Notez que les règles sont désactivées jusqu'au moment où une attaque est détectée, puis qu'elles sont activées. Cette logique peut être utilisée pour les règles qui ne sont actives que lorsqu'une attaque répétée connue arrive.
 
+### Erreurs courantes et bonnes pratiques
+
+#### Définir simultanément les ports source et destination dans une même règle
+
+Lors de la création de règles de pare-feu, définir à la fois le port source et le port de destination est généralement une erreur de configuration. En effet, les ports sources sont la plupart du temps attribués de manière aléatoire par le système d'exploitation du client (ports éphémères).
+
+Si vous paramétrez une règle sur un port source spécifique, le trafic légitime sera probablement bloqué dès que le port du client changera lors de la session suivante. Pour garantir la continuité de la connexion, vous ne devez spécifier que le port de destination (le port de votre service).
+
+**Bonne pratique :** Laissez le port source vide, sauf si vous filtrez le trafic provenant d'un système spécialisé disposant d'une configuration de sortie statique.
+
+#### Plages de ports trop étendues
+
+Créer des règles autorisant le trafic sur de très larges plages de ports peut constituer un risque de sécurité, car cela augmente considérablement la surface d'attaque de votre serveur. Cela peut entraîner plusieurs problèmes :
+- Vous pourriez exposer par inadvertance des services d'arrière-plan qui n'ont pas vocation à être publics, risquant ainsi des fuites d'informations sur votre système et permettant à des acteurs malveillants de sonder votre serveur à la recherche de vulnérabilités.
+- L'audit et le dépannage deviennent beaucoup plus complexes, car il est plus difficile de vérifier quelles applications communiquent réellement, ce qui peut masquer des erreurs de configuration ou des intrusions.
+- Les larges plages UDP ouvertes sont fréquemment ciblées par des attaques par amplification et réflexion, car la probabilité d'y trouver des services exposés est plus élevée. Des attaquants peuvent usurper une adresse IP cible pour envoyer de petites requêtes aux services de cette plage, lesquels répondent avec des paquets beaucoup plus volumineux. De cette manière, ils utilisent votre serveur pour lancer des attaques DDoS tout en saturant potentiellement votre propre bande passante.
+
+**Bonne pratique :** Utilisez uniquement des plages restreintes pour les ports séquentiels requis par une application spécifique (ex: 5000-5100).
+
 ### Exemple de configuration
 
 Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (53) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :

@@ -150,7 +150,7 @@ If you lock a rule to a specific source port, it will likely drop legitimate tra
 Creating rules allowing traffic over very large port ranges may be a security risk, as it significantly expand the attack surface on your server. This can result in several issues :
 - You may inadvertently expose background services that were not meant to be public-facing, thus potentially leaking information about your system, and allowing malicious actors to probe your servers for vulnerabilities.
 - Audit and troubleshooting become significantly more difficult, as it is harder to check which applications are actually communicating, masking potential misconfigurations or breaches.
-- Large open UDP ranges are frequently targeted for amplification and reflection attacks, as there is a higher chance of finding public-facing services. Attackers can spoof a targeted IP to send small requests to services in that open range, which then respond with much larger packets. This way, they are effectively using your server to send DDoS attacks, while potentially overwhelming your own bandwidth.
+- Large open UDP ranges are frequently targeted by amplification and reflection attacks, as there is a higher chance of finding public-facing services. Attackers can spoof a targeted IP to send small requests to services in that open range, which then respond with much larger packets. This way, they are effectively using your server to send DDoS attacks, while potentially overwhelming your own bandwidth.
 
 **Best Practice:** Only use limited ranges for sequential ports required by a single application (e.g. 5000-5100).
 
