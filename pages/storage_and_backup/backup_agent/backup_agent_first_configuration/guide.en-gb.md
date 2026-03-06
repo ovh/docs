@@ -16,9 +16,19 @@ You have just ordered your Backup Agent offer for your Bare Metal server. Discov
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager). 
 - A Backup Agent ordered simultaneously with your Bare Metal server, or afterwards via the `Backup Agent`{.action} menu in the OVHcloud Control Panel.
 - You need to have booted and configured an Operating System on your Bare Metal server.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 > [!warning]
 >
@@ -47,11 +57,7 @@ Once these steps are complete, your first backup will run automatically.
 
 ### Add your server to your Backup Agent
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Backup Agent`{.action} section.
-
-![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
-
-Click on your vspc-tenant in the `Services`{.action} section.
+Click [this link](/links/control-panel/baremetal-backup-agent) to access the `Backup Agent`{.action} section, then click on your vspc-tenant in the `Services`{.action} section.
 
 ![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 

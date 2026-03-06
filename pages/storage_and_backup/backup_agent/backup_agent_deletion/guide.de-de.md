@@ -10,8 +10,18 @@ Diese Anleitung erklärt, wie Sie verschiedene Elemente Ihres Backup Agent-Diens
 
 ## Voraussetzungen
 
-- Zugriff auf das [OVHcloud Kundencenter](/links/manager) im Bereich `Backup Agent`{.action}.
 - Ein aktiver Backup Agent-Dienst.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## In der praktischen Anwendung
 

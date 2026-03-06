@@ -16,9 +16,19 @@ Acabou de encomendar a sua oferta Backup Agent para o seu servidor Bare Metal, d
 
 ## Requisitos
 
-- Estar ligado à [área de cliente OVHcloud](/links/manager).
 - Ter encomendado um serviço Backup Agent no momento da encomenda do seu servidor Bare Metal ou posteriormente através do menu `Backup Agent`{.action} da sua área de cliente.
 - Ter iniciado e configurado um sistema operativo no seu servidor Bare Metal.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 > [!warning]
 >
@@ -46,11 +56,7 @@ Assim que estas etapas forem concluídas, a sua primeira cópia de segurança se
 
 ### Adicionar o seu servidor ao seu Backup Agent
 
-Inicie sessão na sua [área de cliente OVHcloud](/links/manager) e dirija-se à secção `Backup Agent`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-menu-en.png){.thumbnail}
-
-Clique no seu vspc-tenant, na secção `Services`{.action}.
+Clique [neste link](/links/control-panel/baremetal-backup-agent) para aceder à secção `Backup Agent`{.action} e, de seguida, clique no seu vspc-tenant na secção `Services`{.action}.
 
 ![Backup Agent Services](images/01-backup-agent-services-en.png){.thumbnail}
 
