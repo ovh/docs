@@ -1,14 +1,14 @@
 ---
 title: Object Storage Swift - Using Object Storage with Rclone
-excerpt: This guide explains how to sync object storage via your OVH Control Panel
+excerpt: This guide explains how to sync object storage via your OVHcloud Control Panel
 updated: 2021-10-27
 ---
 
 ## Objective
 
-OVH Object Storage can be synchronised using Rclone.
+OVHcloud Object Storage can be synchronised using Rclone.
 
-**This guide explains how to sync object storage via your OVH Control Panel.**
+**This guide explains how to sync object storage via your OVHcloud Control Panel.**
 
 Rclone is an external synchronisation program - you can find further details for its use in its [official documentation](https://Rclone.org/).
 
@@ -58,4 +58,4 @@ You can find more detailed instructions on how to synchronise your object storag
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our user community at <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
