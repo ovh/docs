@@ -1,12 +1,12 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2026-01-06
+updated: 2026-03-09
 ---
 
 ## Objective
 
-To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It allows to limit service exposure to DDoS attacks, by dropping specified network flows coming from outside of the OVHcloud network.
+To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It limits exposure to DDoS attacks by dropping specified network flows from outside the OVHcloud network.
 
 **This guide will show you how to configure the Edge Network Firewall for your services.**
 
@@ -17,7 +17,7 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 | Anti-DDoS infrastructure & Game protection services diagram at OVHcloud |
 |:--:|
-| ![global-schema](images/global_schema_2025.png) |
+| ![global-schema](images/global_schema_2025.png){.thumbnail} |
 
 ## Requirements
 
@@ -38,7 +38,7 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 
 ### Configure the Edge Network Firewall
 
-The Edge Network Firewall can be enabled or disabled by the user at all times, besides one exception : it is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
+The Edge Network Firewall can be enabled or disabled by the user at all times, besides one exception: it is **automatically enabled** when a DDoS attack is detected and **cannot be disabled** until the attack has ended. As a result, all the rules configured in the firewall are applied for the duration of the attack. This logic allows our customers to offload the firewall rules of the server to the edge of the OVHcloud network for the duration of the attack.
 
 #### Access the Edge Network Firewall configuration page
 
@@ -91,7 +91,7 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left :
+**To add a rule**, click on the `+ Add a rule`{.action} button, on the top left:
 
 | ![add-rule-btn](images/enf_add_rule_new.png) | 
 |:--:| 
@@ -99,17 +99,17 @@ You can set up to **20 rules per IP**.
 
 For each rule (excluding TCP), you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) | 
-|:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
+|:--|
+| - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) |
 
 For each **TCP** rule, you must choose:
 
-| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
-|:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port or port range (optional) <br>&bull; The destination port or port range(optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png){.thumbnail} |
+|:--|
+| - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br> - An action (`Accept`{.action} or `Deny`{.action}) <br> - The protocol <br> - Source IP (optional) <br> - The source port or port range (optional) <br> - The destination port or port range (optional) <br> - The TCP state (optional) <br> - Fragments (optional) |
 
-When configuring a TCP or UDP rule that uses a protocol port or port range, please make sure that the source and destination port fields are either a single number between 1 and 65535 (inclusive), or representing a port range (two numbers separated by a hyphen, e.g. 8887-8888)
+When configuring a TCP or UDP rule with a port or port range, ensure the source and destination port fields contain either a single number between 1 and 65535 (inclusive), or a port range (two numbers separated by a hyphen, e.g. 8887-8888).
 
 > [!primary]
 > We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
@@ -122,7 +122,7 @@ When configuring a TCP or UDP rule that uses a protocol port or port range, plea
 > - Priority 19: Refuse IPv4
 
 > [!warning]
-> Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
+> Firewall setups with only `Accept` mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a `Deny` rule is created.
 > 
 
 **Enable/disable firewall:**
@@ -141,13 +141,14 @@ Note that rules are disabled until the moment an attack is detected - then they 
 
 When creating firewall rules, defining both source and destination ports is usually misconfiguration, as source ports are typically assigned randomly by the client’s operating system (ephemeral ports).
 
-If you lock a rule to a specific source port, it will likely drop legitimate traffic as soon as the client's port changes for the next session. To ensure connectivity, you should only specify the destination port (your service port). 
+If you lock a rule to a specific source port, it will likely drop legitimate traffic as soon as the client's port changes for the next session. To ensure connectivity, you should only specify the destination port (your service port).
 
 **Best Practice:** Leave the source port empty, unless you are filtering traffic from a specialized system with a static outbound configuration.
 
 #### Large port ranges
 
-Creating rules allowing traffic over very large port ranges may be a security risk, as it significantly expand the attack surface on your server. This can result in several issues :
+Creating rules allowing traffic over very large port ranges may be a security risk, as it significantly expands the attack surface on your server. This can result in several issues:
+
 - You may inadvertently expose background services that were not meant to be public-facing, thus potentially leaking information about your system, and allowing malicious actors to probe your servers for vulnerabilities.
 - Audit and troubleshooting become significantly more difficult, as it is harder to check which applications are actually communicating, masking potential misconfigurations or breaches.
 - Large open UDP ranges are frequently targeted by amplification and reflection attacks, as there is a higher chance of finding public-facing services. Attackers can spoof a targeted IP to send small requests to services in that open range, which then respond with much larger packets. This way, they are effectively using your server to send DDoS attacks, while potentially overwhelming your own bandwidth.

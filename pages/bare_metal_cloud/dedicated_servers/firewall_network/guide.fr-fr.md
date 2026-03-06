@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2026-01-06
+updated: 2026-03-09
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 | Infrastructure anti-DDoS et protection DDoS Game chez OVHcloud |
 |:--:|
-| ![global-schema](images/global_schema_2025.png) |
+| ![global-schema](images/global_schema_2025.png){.thumbnail} |
 
 ## Prérequis
 
@@ -30,7 +30,7 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
 > [!warning]
-> Le Edge Firewall Network ne prend pas en charge le protocole QUIC.
+> Le Edge Network Firewall ne prend pas en charge le protocole QUIC.
 
 ## En pratique
 
@@ -98,17 +98,17 @@ Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
 Pour chaque règle (hors TCP), vous devez choisir :
 
-| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png) |
-|:--| 
-| &bull; Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) |
+| ![add-rule-btn](images/enf_add_rule_no_tcp_new.png){.thumbnail} |
+|:--|
+| - Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br> - Une action (`Accepter`{.action} ou `Refuser`{.action}) <br> - Le protocole <br> - L'adresse IP source (facultatif) |
 
 Pour chaque règle **TCP**, vous devez choisir :
 
-| ![add-rule-btn](images/enf_add_rule_tcp_new.png) | 
-|:--| 
-| &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Port ou plage de ports source (facultatif) <br>&bull; Port ou plage de ports de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
+| ![add-rule-btn](images/enf_add_rule_tcp_new.png){.thumbnail} |
+|:--|
+| - Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br> - Une action (`Accepter`{.action} ou `Refuser`{.action}) <br> - Le protocole <br> - L'adresse IP source (facultatif) <br> - Port ou plage de ports source (facultatif) <br> - Port ou plage de ports de destination (facultatif) <br> - L'état TCP (facultatif) <br> - Fragments (facultatif) |
 
-Lors de la configuration d'une règle TCP ou UDP utilisant un port ou une plage de ports, veuillez vous assurer que les champs "port source" et "port destination" contiennent soit un nombre unique compris entre 1 et 65535 (inclus), soit une plage de ports (deux nombres séparés par un tiret, par exemple : 8887-8888).
+Lorsque vous configurez une règle TCP ou UDP avec un port ou une plage de ports, vérifiez que les champs `port source` et `port destination` contiennent soit un nombre unique compris entre 1 et 65535 (inclus), soit une plage de ports (deux nombres séparés par un tiret, par exemple : 8887-8888).
 
 > [!primary]
 > Nous vous conseillons d'autoriser le protocole TCP avec une option `established` (pour les paquets qui font partie d'une session précédemment ouverte/démarrée), les paquets ICMP (pour le ping et traceroute) et éventuellement les réponses DNS UDP des serveurs externes (si vous utilisez des serveurs DNS externes).
@@ -121,7 +121,7 @@ Lors de la configuration d'une règle TCP ou UDP utilisant un port ou une plage 
 > - Priorité 19 : Refuser l'IPv4
 
 > [!warning]
-> Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
+> Les configurations de pare-feu avec seulement des règles de mode  `Accept` ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
 > 
 
 **Activer/désactiver le pare-feu :**
@@ -130,7 +130,7 @@ Lors de la configuration d'une règle TCP ou UDP utilisant un port ou une plage 
 |:--:| 
 | Utilisez le bouton commutateur pour activer ou désactiver le pare-feu. |
 
-Après validation, le firewall sera activé ou désactivé.
+Après validation, le pare-feu sera activé ou désactivé.
 
 Notez que les règles sont désactivées jusqu'au moment où une attaque est détectée, puis qu'elles sont activées. Cette logique peut être utilisée pour les règles qui ne sont actives que lorsqu'une attaque répétée connue arrive.
 
@@ -147,11 +147,12 @@ Si vous paramétrez une règle sur un port source spécifique, le trafic légiti
 #### Plages de ports trop étendues
 
 Créer des règles autorisant le trafic sur de très larges plages de ports peut constituer un risque de sécurité, car cela augmente considérablement la surface d'attaque de votre serveur. Cela peut entraîner plusieurs problèmes :
+
 - Vous pourriez exposer par inadvertance des services d'arrière-plan qui n'ont pas vocation à être publics, risquant ainsi des fuites d'informations sur votre système et permettant à des acteurs malveillants de sonder votre serveur à la recherche de vulnérabilités.
 - L'audit et le dépannage deviennent beaucoup plus complexes, car il est plus difficile de vérifier quelles applications communiquent réellement, ce qui peut masquer des erreurs de configuration ou des intrusions.
 - Les larges plages UDP ouvertes sont fréquemment ciblées par des attaques par amplification et réflexion, car la probabilité d'y trouver des services exposés est plus élevée. Des attaquants peuvent usurper une adresse IP cible pour envoyer de petites requêtes aux services de cette plage, lesquels répondent avec des paquets beaucoup plus volumineux. De cette manière, ils utilisent votre serveur pour lancer des attaques DDoS tout en saturant potentiellement votre propre bande passante.
 
-**Bonne pratique :** Utilisez uniquement des plages restreintes pour les ports séquentiels requis par une application spécifique (ex: 5000-5100).
+**Bonne pratique :** Utilisez uniquement des plages restreintes pour les ports séquentiels requis par une application spécifique (ex : 5000-5100).
 
 ### Exemple de configuration
 
@@ -164,7 +165,7 @@ Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La
 Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port TCP 25 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
 
 > [!warning]
-> La configuration ci-dessus n'est qu'un exemple et ne doit être utilisée comme référence que si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est indispensable de configurer les règles de votre firewall pour qu'elles correspondent aux services hébergés sur votre serveur. Une configuration incorrecte de vos règles de pare-feu peut entraîner le blocage du trafic légitime et l'inaccessibilité des services du serveur.
+> La configuration ci-dessus n'est qu'un exemple et ne doit être utilisée comme référence que si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est indispensable de configurer les règles de votre pare-feu pour qu'elles correspondent aux services hébergés sur votre serveur. Une configuration incorrecte de vos règles de pare-feu peut entraîner le blocage du trafic légitime et l'inaccessibilité des services du serveur.
 > 
 
 ### Mitigation des attaques - Activité du centre de nettoyage (Scrubbing Center)
@@ -189,7 +190,7 @@ Toutes les adresses IP OVHcloud sont en mitigation automatique. Si un trafic mal
 
 Pour un aperçu détaillé des attaques détectées et des résultats des activités du Scrubbing Center, nous vous encourageons à consulter notre guide sur le [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
 
-### Conclusion
+## Conclusion
 
 Après avoir lu ce tutoriel, vous devriez pouvoir configurer le Edge Network Firewall pour améliorer la sécurité de vos services OVHcloud.
 
