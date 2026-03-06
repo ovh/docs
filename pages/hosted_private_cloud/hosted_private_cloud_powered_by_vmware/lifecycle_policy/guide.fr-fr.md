@@ -30,7 +30,8 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 - Public VMware Cloud Foundation as-a-Service
 - Managed VMware vSphere
-- Managed VMware Cloud Foundation - Stretched Cluster 3AZ
+- Private VMware Cloud Foundation as-a-Service (Single AZ)
+- Private VMware Cloud Foundation as-a-Service (Stretched Cluster 3AZ)
 
 ## Chronologie du cycle de vie et définitions
 
@@ -75,6 +76,7 @@ Les services et fonctionnalités suivants ont atteint leur fin de support et ne 
 |:-----------------------------------------------------:|:--------------------:|:------------:|:-------------:|:-----------:|
 |     Managed VMware vSphere                            |          2016        |  2027-05-31  |  2027-10-31   | 2027-10-31  |
 |     Public VMware Cloud Foundation as-a-Service       |          2025        |              |               |             |
+|Private VMware Cloud Foundation - 1AZ                  |          2027        |              |               |             |
 |Private VMware Cloud Foundation - Stretched Cluster 3AZ|          2027        |              |               |             |
 
 ### Hôtes Managed VMware vSphere (calcul)
@@ -90,7 +92,8 @@ Pour le produit Managed VMware vSphere, un cycle de vie matériel spécifique s�
 |              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-04-30   | 2027-05-31  |
 |             Essentials (Intel Broadwell)              |          2020        |  2026-04-30  |  2026-04-30   | 2027-05-31  |
 |               Premier (Intel Xeon Gold)               |          2020        |  2026-03-31  |  2027-03-30   | 2027-10-31  |
-|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               | 2027-10-31  |
+|           Premier2026 (Intel Emerald Rapids)          |          2026        |  2027-06-30  |               |             |
+|           Premier2027 (Intel Granite Rapids)          |          2027        |              |               |             |
 
 ## Logiciels intégrés
 
