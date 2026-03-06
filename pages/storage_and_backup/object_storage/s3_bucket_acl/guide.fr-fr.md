@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Bucket ACL
-updated: 2023-08-09
+updated: 2026-03-06
 ---
 
 ## Objectif

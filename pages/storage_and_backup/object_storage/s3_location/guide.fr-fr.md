@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 excerpt: Découvrez les points de terminaison et régions de l'Object Storage OVHcloud.
-updated: 2026-02-06
+updated: 2026-03-06
 ---
 
 <style>

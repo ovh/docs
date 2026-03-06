@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimiser les performances
 excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
-updated: 2025-06-04
+updated: 2026-03-06
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos buckets/objets.
-updated: 2026-01-27
+updated: 2026-03-06
 ---
 
 <style>

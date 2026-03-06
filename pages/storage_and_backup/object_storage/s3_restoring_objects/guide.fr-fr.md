@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Restaurer un objet archivé depuis la classe Cold Archive
 excerpt: Restaurer des objets depuis la classe Cold Archive
-updated: 2025-11-19
+updated: 2026-03-06
 ---
 
 ## Objectif

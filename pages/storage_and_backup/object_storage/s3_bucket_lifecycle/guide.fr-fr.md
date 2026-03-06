@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2026-02-27
+updated: 2026-03-06
 ---
 
 <style>

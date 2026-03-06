@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Server Access Logging
 excerpt: Découvrez comment configurer et utiliser Server Access Logging
-updated: 2023-02-16
+updated: 2026-03-06
 ---
 
 ## Objectif

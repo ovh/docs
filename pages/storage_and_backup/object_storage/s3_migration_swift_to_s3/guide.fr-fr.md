@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3"
 excerpt: "Découvrez comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3 en utilisant Rclone"
-updated: 2025-10-16
+updated: 2026-03-06
 ---
 
 ## Objectif

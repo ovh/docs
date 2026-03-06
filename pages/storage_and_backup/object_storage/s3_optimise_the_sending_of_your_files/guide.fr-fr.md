@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimisez l'envoi de vos fichiers vers Object Storage
 excerpt: Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket
-updated: 2021-12-08
+updated: 2026-03-06
 ---
 
 ## Objectif

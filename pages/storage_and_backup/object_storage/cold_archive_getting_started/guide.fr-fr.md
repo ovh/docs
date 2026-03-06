@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2026-01-19
+updated: 2026-03-06
 ---
 
 > [!warning]

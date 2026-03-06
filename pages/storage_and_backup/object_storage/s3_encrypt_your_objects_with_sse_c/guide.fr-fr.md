@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-OMK
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-OMK
-updated: 2025-09-12
+updated: 2026-03-06
 ---
 
 <style>

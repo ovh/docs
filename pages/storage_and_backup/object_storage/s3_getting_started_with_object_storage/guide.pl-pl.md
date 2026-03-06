@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Pierwsze kroki z Object Storage (EN)
-excerpt: This guide is designed to familiarise you with the management of your containers/objects
+title: Object Storage - Getting started
+excerpt: This guide is designed to familiarise you with the management of your buckets/objects.
 updated: 2026-01-27
 ---
 
@@ -20,13 +20,13 @@ details[open]>summary::before {
 
 ## Objective
 
-This guide is designed to familiarise you with the management of your containers/objects.
+This guide helps you manage your buckets and objects.
 
 **Learn how to create an Object Storage bucket and manage it.**
 
 > [!primary]
 >
-> If you are using legacy SWIFT Object Storage, then:
+> If you are using legacy Swift Object Storage, then:
 >
 > - for **Standard object storage - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - for **Cloud Archive - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
@@ -51,12 +51,12 @@ This guide is designed to familiarise you with the management of your containers
 
 /// details | To use the AWS CLI
 
-To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
+To find out how to install the AWS CLI in your environment, we recommend reading [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Check installation**
 
 ```bash
-user@host:~$ aws --version
+aws --version
 ```
 
 > [!primary]
@@ -67,7 +67,7 @@ user@host:~$ aws --version
 #### Collect Credentials
 
 - You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
+- You will also need your *endpoint_url*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Where to find the Endpoint URL of a bucket?
 
@@ -87,25 +87,33 @@ You can either use the interactive configuration to generate the configuration f
 >
 > or:
 >
-> `aws configure --profile PROFILE_NAME`
+> `aws configure --profile <profile_name>`
 
 The configuration file format in the AWS client is as follows:
 
 ```bash
-user@host:~$ cat ~/.aws/credentials
+cat ~/.aws/credentials
+```
+
+```text
 
 [default]
 aws_access_key_id = <access_key>
 aws_secret_access_key = <secret_key>
+```
 
-user@host:~$ cat ~/.aws/config
+```bash
+cat ~/.aws/config
+```
+
+```text
 
 [default]
 region = <region_in_lowercase>
-endpoint_url = <url_endpoint>
+endpoint_url = <endpoint_url>
 services = ovh-rbx-archive
 
-[profile PROFILE_NAME]
+[profile <profile_name>]
 region = rbx
 output = json
 services = ovh-rbx
@@ -116,7 +124,7 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
 
 [services ovh-rbx]
 s3 =
@@ -124,17 +132,17 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx.io.cloud.ovh.net/
 ```
 
 Here are the configuration values that you can specifically set:
 
 | Variable | Type | Value | Definition |
 |------|:------|:------|:------|
-| max_competitor_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
+| max_concurrent_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
 | max_queue_size | Integer | **Default:** 1000 | The maximum number of tasks in the task queue. |
 | multipart_threshold | Integer<br>String | **Default:** 8MB | The size threshold that the CLI uses for multipart transfers of individual files. |
-| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB | When using multipart transfers, this is the bit size that the CLI uses for multipart transfers of individual files. |
+| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB | When using multipart transfers, this is the byte size that the CLI uses for multipart transfers of individual files. |
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
@@ -144,7 +152,7 @@ For a list of endpoints by region and storage class, refer to [this page](/pages
 
 > [!primary]
 >
-> If you have more than one profile, add `--profile <profile>` to the command line.
+> If you have more than one profile, add `--profile <profile_name>` to the command line.
 >
 
 ///
@@ -170,7 +178,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >> /// details | **Via AWS S3api**
 >>
 >> ```bash
->> aws s3api list-buckets --query "Buckets[].Name" // retirez --query pour avoir plus d'info que le name.
+>> aws s3api list-buckets --query "Buckets[].Name" # Remove --query to display the full output.
 >> ```
 >>
 >> ///
@@ -187,7 +195,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ```bash
 >> aws s3 mb s3://<bucket_name>
->> aws --profile default s3 mb s3://<bucket_name>
+>> aws --profile <profile_name> s3 mb s3://<bucket_name>
 >> ```
 >>
 >> ///
@@ -196,7 +204,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ```bash
 >> aws s3api create-bucket --bucket <bucket_name>
->> aws s3api create-bucket --bucket <bucket_name> --profile default
+>> aws --profile <profile_name> s3api create-bucket --bucket <bucket_name>
 >> ```
 >>
 >> ///
@@ -256,7 +264,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 #### Uploading your files as objects in your bucket
 
-As part of the object upload process to an Object Storage bucket, users can select the desired storage class for their objects, providing control over storage characteristics such as availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+When uploading objects, you can select a storage class to control availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
@@ -266,7 +274,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >>
 >> ```bash
->> aws s3 cp /datas/<object_name> s3://<bucket_name>
+>> aws s3 cp /data/<object_name> s3://<bucket_name>
 >> ```
 >>
 >> **By default, objects are named after files, but they can be renamed.**
@@ -323,7 +331,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
->> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2
+>> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2>/<object_name>
 >> ```
 >>
 >> **Downloading or uploading an entire bucket to the host/bucket:**

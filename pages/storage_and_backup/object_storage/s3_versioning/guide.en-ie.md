@@ -19,7 +19,7 @@ updated: 2025-07-07
 
 ### Concept
 
-Versioning in Object Storage allows you to keep multiple variants of an object in the same bucket. This feature helps preserve, retrieve, and restore every version of every object stored in your buckets, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it.
+Versioning lets you keep multiple variants of an object in the same bucket. This feature helps preserve, retrieve, and restore every version of every object stored in your buckets, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it.
 
 ### General Information
 
@@ -150,7 +150,7 @@ When versioning is enabled:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by clickin the `...`{.action} button, then on `Download`{.action}.
+>> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by clicking the `...`{.action} button, then `Download`{.action}.
 >>
 >> ![download current or versioned objects](images/bucket_download_versions.png){.thumbnail}
 >>
@@ -159,7 +159,7 @@ When versioning is enabled:
 
 > [!primary]
 >
-> If versioning is enabled on your S3 bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the `View versions`{.action} option.
+> If versioning is enabled on your Object Storage bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the `View versions`{.action} option.
 >
 > This protection allows you to restore an object deleted by mistake.
 >
@@ -177,37 +177,37 @@ When versioning is enabled:
 >> To delete an object, use the following command:
 >>
 >> ```bash
->> aws s3api delete-object --bucket <bucket> --key <objet>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key>
 >> ```
 >>
 >> If you want to see the different versions of an object, use the following command:
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key>
 >> ```
 >>
 >> To delete a specific version of an object:
 >>
 >> ```bash
->> aws s3api delete-object --bucket <bucket> --key <object> --version-id <version-id>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 >> ```
 >>
->> If you wish to delete a `delete marker` to recover your object version, proceed as follows:
+>> If you wish to delete a delete marker to recover your object version, proceed as follows:
 >>
->> - List delete markers and identify the version-id of the delete marker:
+>> - List delete markers and identify the version ID of the delete marker:
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket my-bucket --prefix my-object. txt \
->> --query "DeleteMarkers" --output json
+>> aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key> \
+>>   --query "DeleteMarkers" --output json
 >> ```
 >>
 >> - Delete this delete marker:
 >>
 >> ```bash
 >> aws s3api delete-object \
->> --bucket my-bucket \
->> --key my-object.txt \
->> --version-id <delete-marker-version-id>
+>>   --bucket <bucket_name> \
+>>   --key <object_key> \
+>>   --version-id <delete_marker_version_id>
 >> ```
 >>
 
@@ -218,6 +218,6 @@ When versioning is enabled:
 - **Suspension:** Suspending versioning does not delete existing versions, it only stops new versions from being created.
 - **Permissions:** Only the bucket owner can enable or suspend versioning.
 
-## Go Further
+## Go further
 
 Join our [community of users](/links/community).

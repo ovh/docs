@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Héberger un site statique dans un bucket Object Storage
 excerpt: Apprenez à configurer un bucket Object Storage pour héberger un site web statique
-updated: 2024-05-20
+updated: 2026-03-06
 ---
 
 ## Objectif

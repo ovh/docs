@@ -1,7 +1,7 @@
 ---
 title: "Object Storage -  Comment migrer d'un fournisseur de stockage objet compatible S3 vers OVHcloud Object Storage"
 excerpt: "Ce guide fournit des détails sur la façon de migrer d'un fournisseur de stockage objet compatible S3 vers OVHcloud Object Storage en utilisant l'outil Rclone"
-updated: 2025-09-08
+updated: 2026-03-06
 ---
 
 ## Objectif

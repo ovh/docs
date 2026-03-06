@@ -1,7 +1,7 @@
 ---
 title: Object Storage – Comment partager un objet ou fichier en externe
 excerpt: Découvrez comment partager en toute sécurité des fichiers Object Storage en externe dans OVHcloud, en utilisant des URLs signées, des objets public-read ou des politiques de bucket pour un accès contrôlé
-updated: 2025-12-19
+updated: 2026-03-06
 ---
 
 ## Objectif
