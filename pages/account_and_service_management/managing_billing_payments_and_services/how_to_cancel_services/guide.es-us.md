@@ -4,6 +4,50 @@ excerpt: Cómo interrumpir las suscripciones a OVHcloud
 updated: 2025-04-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 Quiere dar de baja uno o varios servicios de OVHcloud. Esta guía explica cómo cancelar la suscripción desde el área de cliente de OVHcloud.
@@ -123,33 +167,42 @@ La cancelación de la baja tendrá efecto inmediato. Actualice la página "Gesti
 
 ## FAQ
 
-> [!faq]
->
-> No consigo dar de baja un servicio. ¿Qué hago?
->> Si no consigue dar de baja un servicio (no ofrecemos el botón `Dar de baja mi servicio`{.action}), este puede ser uno de los casos particulares detallados [anteriormente en esta guía](#specific-cases).
->> Compruebe también que se cumplen las siguientes condiciones:
->>
->> - Debe ser el "contacto administrador" del servicio. Para obtener más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - El servicio está en **renovación automática**. Si su servicio está en [renovación manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), se suspenderá en su fecha de expiración y se eliminará al cabo de unos días.
->> - El servicio no está suspendido, especialmente por la imposibilidad de regularizar una factura. Asegúrese de que está actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus servicios.
->>
->> Si sigue sin poder dar de baja el servicio, póngase en contacto con nuestro equipo de soporte abriendo un tíquet desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
-> ¿Cómo dar de baja todos mis servicios?
->> Debe completar el procedimiento de baja de cada servicio de forma unitaria. No es posible dar de baja varios servicios a la vez ni solicitar una baja global a nuestro equipo de soporte.
-> ¿Cómo eliminar una cuenta de OVHcloud?
->> Solo es posible cerrar su cuenta de cliente de OVHcloud y eliminar sus datos personales si:
->>
->> 1. Ya no tiene servicios visibles en la sección "[Mis soluciones y servicios](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". En caso contrario, deberá solicitar en primer lugar la baja del servicio y esperar a su eliminación.
->> 2. No hay facturas pendientes de pago. En caso contrario, deberá abonarlos haciendo clic en el botón `Abonar inmediatamente`{.action} en las acciones de masa de la página "[Mis facturas](https://www.ovh.com/manager/#/dedicated/billing/history)".
->> 3. No hay pedidos en curso. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
->> 4. Su cuenta de prepago no es positiva. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
->>
->> Si cumple las condiciones anteriores, puede solicitar la eliminación de su cuenta de OVHcloud y de los datos asociados siguiendo estos pasos:
->>
->> 1. Conéctese al [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
->> 2. Haga clic en el botón `Crear un tíquet`{.action}
->> 3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`
->> 4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud` y siga los pasos que se indican.
+/// details | No consigo dar de baja un servicio. ¿Qué hago?
+
+Si no consigue dar de baja un servicio (no ofrecemos el botón `Dar de baja mi servicio`{.action}), este puede ser uno de los casos particulares detallados [anteriormente en esta guía](#specific-cases).
+Compruebe también que se cumplen las siguientes condiciones:
+
+- Debe ser el "contacto administrador" del servicio. Para obtener más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition).
+- El servicio está en **renovación automática**. Si su servicio está en [renovación manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), se suspenderá en su fecha de expiración y se eliminará al cabo de unos días.
+- El servicio no está suspendido, especialmente por la imposibilidad de regularizar una factura. Asegúrese de que está actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus servicios.
+
+Si sigue sin poder dar de baja el servicio, póngase en contacto con nuestro equipo de soporte abriendo un tíquet desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
+/// details | ¿Cómo dar de baja todos mis servicios?
+
+Debe completar el procedimiento de baja de cada servicio de forma unitaria. No es posible dar de baja varios servicios a la vez ni solicitar una baja global a nuestro equipo de soporte.
+
+///
+
+/// details | ¿Cómo eliminar una cuenta de OVHcloud?
+
+Solo es posible cerrar su cuenta de cliente de OVHcloud y eliminar sus datos personales si:
+
+1. Ya no tiene servicios visibles en la sección "[Mis soluciones y servicios](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". En caso contrario, deberá solicitar en primer lugar la baja del servicio y esperar a su eliminación.
+2. No hay facturas pendientes de pago. En caso contrario, deberá abonarlos haciendo clic en el botón `Abonar inmediatamente`{.action} en las acciones de masa de la página "[Mis facturas](https://www.ovh.com/manager/#/dedicated/billing/history)".
+3. No hay pedidos en curso. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Su cuenta de prepago no es positiva. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Si cumple las condiciones anteriores, puede solicitar la eliminación de su cuenta de OVHcloud y de los datos asociados siguiendo estos pasos:
+
+1. Conéctese al [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Haga clic en el botón `Crear un tíquet`{.action}
+3. Seleccione el motivo `Gestione su cuenta de cliente OVHcloud`
+4. Indique `Quiero cerrar mi cuenta de cliente OVHcloud` y siga los pasos que se indican.
+
+///
 
 ## Más información <a name="gofurther"></a>
 

@@ -41,113 +41,60 @@ Alle Ihre aktiven Dienste können über folgende Route abgerufen werden:
 
 Verwenden Sie die folgende Route, um die Partitionen eines Dienstes abzurufen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
 
 ### Die Eigenschaften einer Partition abrufen
 
 Um die Details einer Partition anzuzeigen, verwenden Sie die folgende Route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
 
 ### Abruf der Statistiken einer Partition
 
 Verwenden Sie die folgende Route, um die Nutzungsinformationen einer Partition abzurufen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->> >
->> > **Typ** *
->> >
->> >> Der Typ der zu übernehmenden Statistiken: *size*, *used* oder *usedbysnapshots*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
+| `Typ` | Yes | Der Typ der zu übernehmenden Statistiken: *size*, *used* oder *usedbysnapshots* |
 
 ### Erstellung einer Partition
 
 Verwenden Sie die folgende Route, um eine neue Partition zu erstellen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionDescription**
->> >
->> >> Optionale Beschreibung
->> >
->> > **partitionName** *
->> >
->> >> Ein Name für die Partition
->> >
->> > **protocol** *
->> >
->> >> *NFS*, *CIFS* oder *NFS_CIFS* für beide
->> >
->> > **size** *
->> >
->> >> Größe der Partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionDescription` |  | Optionale Beschreibung |
+| `partitionName` | Yes | Ein Name für die Partition |
+| `protocol` | Yes | *NFS*, *CIFS* oder *NFS_CIFS* für beide |
+| `size` | Yes | Größe der Partition |
 
 Wählen Sie beispielsweise `NFS` als Protokoll mit einer Größe von `10` Gigabyte aus.
 
@@ -155,59 +102,31 @@ Wählen Sie beispielsweise `NFS` als Protokoll mit einer Größe von `10` Gigaby
 
 Verwenden Sie die folgende Route zur Änderung einer Partition:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->> >
->> > **partitionDescription**
->> >
->> >> Die neue Beschreibung
->> >
->> > **size**
->> >
->> >> Die neue Größe der Partition
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
+| `partitionDescription` |  | Die neue Beschreibung |
+| `size` |  | Die neue Größe der Partition |
 
 ### ZFS-Einstellungen einer Partition abrufen
 
 Verwenden Sie die folgende Route, um die ZFS-Einstellungen abzurufen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
 
 ### Änderung der ZFS-Einstellungen einer Partition
 
@@ -218,63 +137,32 @@ Verwenden Sie die folgende Route, um die ZFS-Einstellungen abzurufen:
 
 Verwenden Sie die folgende Route zur Änderung der ZFS-Einstellungen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/options
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->> >
->> > **atime**
->> >
->> >> Parameter für die Aktualisierung der Zugriffszeit: *on* (Standardwert) oder *off*
->> >
->> > **recordsize**
->> >
->> >> Maximale Blockgröße: *131072* (Standard), *16384*, *32768*, *4096*, *65536* oder *8129*
->> >
->> > **sync**
->> >
->> >> Datei-Synchronisierungsparameter: *always*, *disabled* oder *standard* (Standardwert)
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
+| `atime` |  | Parameter für die Aktualisierung der Zugriffszeit: *on* (Standardwert) oder *off* |
+| `recordsize` |  | Maximale Blockgröße: *131072* (Standard), *16384*, *32768*, *4096*, *65536* oder *8129* |
+| `sync` |  | Datei-Synchronisierungsparameter: *always*, *disabled* oder *standard* (Standardwert) |
 
 ### Löschung einer Partition
 
 Verwenden Sie die folgende Route, um eine Partition zu löschen:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
->> >
->>
->
-> Parameter:
->
->> > **serviceName** *
->> >
->> >> Der interne Name Ihres HA-NAS
->> >
->> > **partitionName** *
->> >
->> >> Partitionsname
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Der interne Name Ihres HA-NAS |
+| `partitionName` | Yes | Partitionsname |
 
 ## Weiterführende Informationen
 
