@@ -23,7 +23,7 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 ## Prerequisiti
 
 - Disporre di un [hosting Web](/links/web/hosting) e aver installato WordPress
-  
+  
 ## Procedura
 
 Puoi effettuare un backup in due modi: **manualmente** o con **o tramite estensione**.

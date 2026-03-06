@@ -27,7 +27,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) PrestaShop
 
 - Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-  
+  
 ## In der praktischen Anwendung
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a>

@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener un [plan de hosting](/links/web/hosting).
 - Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_connection).
-
+
 ## Procedimiento
 
 > [!primary]

@@ -22,7 +22,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Haber contratado previamente [WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web.
 
 Si todavía no lo ha hecho, le recomendamos que cambie el sitio web a HTTPS antes de continuar con este tutorial con la guía "[Habilitar HTTPS en un sitio web gracias al SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".
-  
+  
 ## Procedimiento
   
 **WooCommerce** es una extensión de **WordPress**. Se instala como cualquier otra extensión.

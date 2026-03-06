@@ -21,7 +21,7 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 - Posséder un [hébergement web OVHcloud](/links/web/hosting).
 - Avoir enregistré au moins un [nom de domaine](/links/web/domains).
-
+
 ## En pratique
 
 ### Contenu mixte (mixed content)

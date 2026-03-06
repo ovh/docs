@@ -28,7 +28,7 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) avec votre site Web hébergé dessus.
-
+
 ## En pratique
 
 Le piratage d'un site Web est systématiquement lié à **au moins** l'un des points suivants :

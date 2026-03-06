@@ -28,7 +28,7 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 - Tener un terminal compatible con los comandos Linux y SSH (por ejemplo, el *terminal* de MacOS o el emulador *Ubuntu* en Windows)
 - Familiarizarse con los comandos Linux y SSH
 - Tener contratado un plan de [alojamiento web](/links/web/hosting) con acceso por SSH
-
+
 ## Procedimiento
 
 Esta guía explica en detalle las funcionalidades disponibles con el comando `scp`. No dude en interactuar con nuestra [comunidad de usuarios](/links/community) si desea profundizar sus conocimientos sobre este pedido.

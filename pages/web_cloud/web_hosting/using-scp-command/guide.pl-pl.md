@@ -28,7 +28,7 @@ Za pomocą terminala i polecenia Linux można skopiować plik lub folder zawiera
 - Terminal kompatybilny z poleceniami Linux i SSH (na przykład *terminal* MacOS lub emulator *Ubuntu* na Windows)
 - Zaznajomienie się z poleceniami Linux i SSH
 - Posiadanie [hostingu web](/links/web/hosting) z dostępem przez SSH
-
+
 ## W praktyce
 
 Niniejszy przewodnik zawiera niewyczerpujące informacje na temat funkcji dostępnych za pomocą polecenia `scp`. Zachęcamy do kontaktu z [naszych użytkowników](/links/community), jeśli chcesz dowiedzieć się więcej na temat tego zamówienia.

@@ -28,7 +28,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting).
 - Disposer des identifiants de connexion à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection).
-
+
 ## En pratique
 
 > [!primary]

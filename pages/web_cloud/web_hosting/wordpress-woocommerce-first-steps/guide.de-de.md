@@ -21,7 +21,7 @@ Dieses Tutorial erklärt, wie Sie einen Onlineshop mit der Open-Source-Anwendung
 - Sie haben [WordPress installiert](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 Falls nicht bereits vorhanden, installieren Sie ein [SSL-Zertifikat](/pages/web_cloud/web_hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren) für den zu Ihrer Website gehörenden Domainnamen.
-  
+  
 ## In der praktischen Anwendung
   
 **WooCommerce** ist ein Plugin für **WordPress**, installierbar wie jede andere Erweiterung.

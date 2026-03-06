@@ -14,7 +14,7 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - A [domain name](/links/web/domains)
-
+
 ## Instructions
 
 ### Prepare for installation

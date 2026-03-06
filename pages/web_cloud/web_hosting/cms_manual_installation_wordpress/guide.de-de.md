@@ -27,7 +27,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 - Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-
+
 ## In der praktischen Anwendung
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a> 

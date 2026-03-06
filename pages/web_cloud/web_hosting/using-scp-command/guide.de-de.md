@@ -27,7 +27,7 @@ Es ermöglicht über ein Terminal mit einem Linux-Befehl das Kopieren von Dateie
 - Sie verfügen über ein Terminal, das mit Linux- und SSH-Befehlen kompatibel ist (zum Beispiel das *Terminal* von MacOS oder der *Ubuntu* Emulator unter Windows).
 - Sie können mit SSH und Kommandzeile umgehen.
 - Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting) mit SSH-Zugang.
-
+
 ## In der praktischen Anwendung
 
 In dieser Anleitung erfahren Sie, welche Funktionen mit dem Befehl `scp` verfügbar sind. Für genauere Informationen kontaktieren Sie unsere [User Community](/links/community).

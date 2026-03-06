@@ -23,7 +23,7 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 ## Requisitos
 
 - Ter um [alojamento web](/links/web/hosting) e ter instalado o WordPress
-
+
 ## Instruções
 
 Pode efetuar um backup de duas formas: **manualmente** ou **através de uma extensão**.

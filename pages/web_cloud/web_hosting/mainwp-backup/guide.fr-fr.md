@@ -28,7 +28,7 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 > 
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du plugin MainWP](https://mainwp.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
-
+
 ## En pratique
 
 ### Installer l'extension UpdraftPlus

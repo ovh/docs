@@ -17,7 +17,7 @@ If your website displays a “Your IP has been banned” page, this means that t
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
-
+
 ## Instructions
 
 The “Your IP has been banned” page may appear for a number of reasons (non-exhaustive list):

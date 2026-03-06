@@ -14,7 +14,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Grav permite desarrollar ráp
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Tener un [dominio](/links/web/domains).
-
+
 ## Procedimiento
 
 ### Preparar la instalación

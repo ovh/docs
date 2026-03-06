@@ -33,7 +33,7 @@ Para transferir o Cyberduck, aceda a [site oficial](https://cyberduck.io/) da ap
 > [!primary]
 >
 > Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
-
+
 ## Instruções
 
 ### Interface

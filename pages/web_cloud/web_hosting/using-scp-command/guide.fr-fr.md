@@ -28,7 +28,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows)
 - Être familiarisé avec les commandes Linux et SSH
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) bénéficiant d'un accès en SSH
-
+
 ## En pratique
 
 Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. N'hésitez pas à échanger avec notre [communauté d'utilisateurs](/links/community) si vous souhaitez approfondir vos connaissances sur cette commande.

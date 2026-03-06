@@ -21,7 +21,7 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 
 - Dispor de um [alojamento web OVHcloud](/links/web/hosting).
 - Ter registado, pelo menos, um [nome de domínio](/links/web/domains).
-
+
 ## Instruções
 
 ### Conteúdo misto (mixed content)

@@ -14,7 +14,7 @@ Twoja strona WWW zmienia się, a zużycie zasobów zmienia się w taki sposób, 
 
 - Posiadanie aktywnego [hostingu](/links/web/hosting).
 - Wykupienie usługi [VPS](/links/bare-metal/vps) na Twoim koncie OVHcloud.
-
+
 ## W praktyce
 
 > [!warning]

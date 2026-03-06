@@ -28,7 +28,7 @@ It allows you to copy a file or folder containing one or more files from a termi
 - A terminal compatible with Linux and SSH commands (for example, the *terminal* of MacOS or the *Ubuntu* emulator on Windows)
 - Familiarity with Linux and SSH commands
 - A [web hosting plan](/links/web/hosting) with SSH access
-
+
 ## Instructions
 
 This guide will provide a non-exhaustive list of the features available with the `scp` command. Please feel free to chat with our [community of users](/links/community) if you would like to learn more.

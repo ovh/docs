@@ -14,7 +14,7 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) SPIP is a solution adapted t
 
 - An [OVHcloud web hosting plan](/links/web/hosting) that includes at least one database
 - A [domain name](/links/web/domains)
-
+
 ## Instructions
 
 ### Prepare for installation

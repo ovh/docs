@@ -22,7 +22,7 @@ Découvrez comment créer une boutique en ligne avec l'extension open source **W
 - Avoir préalablement [installé WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web.
 
 Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide « [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website) ».
-
+
 ## En pratique
 
 **WooCommerce** est une extension de **WordPress**. Elle s'installe comme n'importe quelle extension.

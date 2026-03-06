@@ -14,7 +14,7 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Grav enables websites to be 
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - A [domain name](/links/web/domains)
-
+
 ## Instructions
 
 ### Prepare for installation

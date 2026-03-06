@@ -21,7 +21,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - At least one [domain name](/links/web/domains)
-
+
 ## Instructions
 
 ### Mixed content

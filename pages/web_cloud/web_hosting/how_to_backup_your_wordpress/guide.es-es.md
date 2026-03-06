@@ -23,7 +23,7 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 ## Requisitos
 
 - Disponer de un [alojamiento web](/links/web/hosting) y haber instalado WordPress.
-
+
 ## Procedimiento
 
 Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.

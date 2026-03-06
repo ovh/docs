@@ -22,7 +22,7 @@ Sie sind für Backups von auf Webhostings gehosteten Websites alleine verantwort
 ## Voraussetzungen
 
 - Sie verfügen über ein [Webhosting](/links/web/hosting) mit einer [WordPress Installation](/pages/web_cloud/web_hosting/wordpress_first-steps).
-
+
 ## In der praktischen Anwendung
 
 Sie können ein Backup auf zwei Arten durchführen: **Manuell** oder über ein **Plugin**.

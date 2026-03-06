@@ -20,7 +20,7 @@ In dieser Anleitung finden Sie einige Beispiele für mögliche Problemsituatione
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben mindestens einen [Domainnamen](/links/web/domains) registriert.
-
+
 ## In der praktischen Anwendung
 
 ### Mixed Content (Gemischter Inhalt)

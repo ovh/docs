@@ -28,7 +28,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 
 - Ter um [serviço de alojamento web](/links/web/hosting).
 - Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection).
-
+
 ## Instruções
 
 > [!primary]

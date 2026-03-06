@@ -28,7 +28,7 @@ This tutorial will help you install the WordPress CMS (Content Management System
 
 - An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](/links/web/domains)
-
+
 ## Instructions
 
 ### Step 1: Prepare for the installation <a name="step1"></a>

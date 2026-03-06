@@ -14,7 +14,7 @@ A partir de **CMS** (**C**ontent **M**anagement **S**ystem), o Pico permite a cr
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
 - Dispor de um [domínio](/links/web/domains).
-
+
 ## Instruções
 
 ### Preparar a instalação

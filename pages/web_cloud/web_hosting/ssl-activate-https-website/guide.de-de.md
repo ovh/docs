@@ -14,7 +14,7 @@ Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](/links/we
 
 - Auf Ihrem [OVHcloud Webhosting](/links/web/hosting) ist ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl) installiert.
 - Sie verfügen über mindestens eine Website, die auf Ihrem OVHcloud Webhosting installiert und verfügbar ist.
-
+
 ## In der praktischen Anwendung
 
 Sicherheit nimmt im Internet einen hohen Stellenwert ein. Sie achten sicherlich besonders auf die Vertraulichkeit Ihrer Daten und die Art und Weise, wie diese über das Web übertragen werden. Im Allgemeinen vertrauen Internetnutzer eher Websites, die einen sicheren Datenaustausch ermöglichen, insbesondere wenn es sich um sensible Daten handelt. 

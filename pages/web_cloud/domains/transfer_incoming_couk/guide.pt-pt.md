@@ -38,7 +38,7 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 - O nome de domínio não deve ser bloqueado no seu registar. 
 - Os dados de contacto do titular devem estar bem atualizados no [Whois](https://www.nominet.uk/whois/) do nome de domínio.
 - Deverá obter o código de autorização que será enviado para o endereço de e-mail do titular.
-
+
 
 > [!primary]
 >

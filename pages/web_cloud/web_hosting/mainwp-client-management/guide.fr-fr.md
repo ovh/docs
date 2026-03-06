@@ -21,7 +21,7 @@ La fidélisation de vos clients est primordiale pour le développement de votre 
 > 
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du plugin MainWP](https://mainwp.com/support/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
-
+
 ## En pratique
 
 Dans le menu principal de MainWP, cliquez sur `Clients`{.action}. Sur l'écran qui s'affiche, trois onglets sont présents :

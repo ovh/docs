@@ -14,7 +14,7 @@ As your website evolves, its resource consumption becomes so high that your web 
 
 - An OVHcloud [web hosting plan](/links/web/hosting)
 - A [VPS](/links/bare-metal/vps) in your OVHcloud account
-
+
 ## Instructions
 
 > [!warning]

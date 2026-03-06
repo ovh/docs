@@ -23,7 +23,7 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting) with [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
-
+
 ## Instructions
 
 You can perform a backup in two ways: **manually** or by **using a plugin**.

@@ -14,7 +14,7 @@ O seu website evolui e o seu consumo de recursos é tal que o seu alojamento web
 
 - Ter um [plano de alojamento web](/links/web/hosting) ativo.
 - Ter subscrito um [VPS](/links/bare-metal/vps) presente na sua conta OVHcloud.
-
+
 ## Instruções
 
 > [!warning]

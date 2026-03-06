@@ -20,7 +20,7 @@ updated: 2023-03-07
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting) with SSH access
-
+
 ## Instructions
 
 Access your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting).

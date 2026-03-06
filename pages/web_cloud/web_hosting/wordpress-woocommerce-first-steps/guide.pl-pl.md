@@ -22,7 +22,7 @@ Dowiedz się, jak utworzyć sklep internetowy z rozszerzeniem open source **WooC
 - [Instalacja WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) na Twoim hostingu
 
 Jeśli jeszcze tego nie zrobiłeś, zalecamy aktywację HTTPS Twojej strony WWW, zanim przejdziesz do tego tutoriala, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Przejdź na swoją stronę WWW poprzez HTTPS za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".  
-
+
 ## W praktyce
   
 **WooCommerce** to rozszerzenie **WordPress**. Instaluje się jak każde inne rozszerzenie.

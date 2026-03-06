@@ -23,7 +23,7 @@ Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de vo
 ## Prérequis
 
 - Disposer d'un [hébergement web](/links/web/hosting) et avoir installé WordPress
-
+
 ## En pratique
 
 Vous pouvez effectuer une sauvegarde de deux façons : **manuellement** ou par le **biais d'une extension**.

@@ -28,7 +28,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 
 - Posiadanie [hostingu](/links/web/hosting)
 - Posiadanie danych do logowania do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
-
+
 ## W praktyce
 
 > [!primary]

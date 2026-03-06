@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Disponer de un [plan de hosting Cloud](/links/web/hosting) con su sitio web alojado en él.
-
+
 ## Procedimiento
 
 La piratería de un sitio web siempre está vinculada a **al menos** uno de los siguientes puntos:

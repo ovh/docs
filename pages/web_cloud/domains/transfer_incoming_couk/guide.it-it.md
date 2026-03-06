@@ -38,7 +38,7 @@ Il trasferimento di un nome di dominio.uk (o assimilato) richiede una procedura 
 - Il nome di dominio non deve essere bloccato presso il tuo registrar. 
 - Le coordinate dell’**intestatario** devono essere ben aggiornate nel [Whois](https://www.nominet.uk/whois/) del nome di dominio.
 - Riceverai il codice di autorizzazione che verrà inviato all'indirizzo email dell’**intestatario**.
-
+
 
 > [!primary]
 >

@@ -37,7 +37,7 @@ Für den Transfer einer .uk-Domainname (oder einer ähnlichen Domainname) ist ei
 - Die Domain darf nicht bei Ihrem Registrar blockiert sein. 
 - Die Angaben des Inhabers müssen im Whois der [Domain](https://www.nominet.uk/whois/) aktuell sein.
 - Sie haben Zugriff auf den Autorisierungscode, der an die E-Mail-Adresse des Inhabers versandt wird. 
-
+
 
 > [!primary]
 >

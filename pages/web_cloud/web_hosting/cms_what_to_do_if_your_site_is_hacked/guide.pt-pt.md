@@ -28,7 +28,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 ## Requisitos
 
 - Ter [oferta de alojamento Web Cloud](/links/web/hosting) com o seu website alojado em cima.
-
+
 ## Instruções
 
 A pirataria de um website está sistematicamente ligada a **pelo** menos um dos seguintes pontos:

@@ -14,7 +14,7 @@ Ihre Website entwickelt sich weiter, und der Ressourcenverbrauch wird immer stä
 
 - Sie verfügen über ein OVHcloud [Webhosting](/links/web/hosting).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Account.
-
+
 ## In der praktischen Anwendung
 
 > [!warning]

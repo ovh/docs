@@ -38,7 +38,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 - Le nom de domaine ne doit pas être bloqué chez votre registrar.
 - Les coordonnées du titulaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/) du nom de domaine.
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du titulaire.
-
+
 
 > [!primary]
 >

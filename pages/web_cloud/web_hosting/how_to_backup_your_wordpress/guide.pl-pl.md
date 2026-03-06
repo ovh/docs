@@ -23,7 +23,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](/links/web/hosting) i zainstalowanie WordPressa
-
+
 ## W praktyce
 
 Możesz wykonać kopię zapasową na dwa sposoby: **ręcznie** lub przez **poprzez rozszerzenie**.

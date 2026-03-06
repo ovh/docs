@@ -28,7 +28,7 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-
+
 ## Procedura
 
 ### Step 1 - preparare l'installazione <a name="step1"></a>

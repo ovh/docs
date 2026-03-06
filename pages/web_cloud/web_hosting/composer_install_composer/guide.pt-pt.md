@@ -20,7 +20,7 @@ updated: 2023-02-24
 ## Requisitos
 
 - Ter um [serviço de alojamento web](/links/web/hosting) com acesso SSH.
-
+
 ## Instruções
 
 Ligue-se ao seu alojamento partilhado através de SSH através do nosso manual sobre [a utilização do SSH com o seu alojamento web partilhado OVHcloud](/pages/web_cloud/web_hosting/ssh_on_webhosting).

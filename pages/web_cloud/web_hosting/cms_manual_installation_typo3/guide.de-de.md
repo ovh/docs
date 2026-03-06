@@ -14,7 +14,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 ermöglicht die Entwic
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer Datenbank.
 - Sie besitzen eine [Domain](/links/web/domains).
-
+
 ## In der praktischen Anwendung
 
 ### Installation vorbereiten

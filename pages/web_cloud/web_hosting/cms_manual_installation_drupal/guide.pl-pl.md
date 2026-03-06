@@ -30,7 +30,7 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-  
+  
 ## W praktyce
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>

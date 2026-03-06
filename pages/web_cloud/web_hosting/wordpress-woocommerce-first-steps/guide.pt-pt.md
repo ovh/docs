@@ -22,7 +22,7 @@ Saiba como criar uma loja online com a extensão open source **WooCommerce** com
 - Ter previamente [instalado WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) no seu alojamento web.
 
 Se ainda não o fez, recomendamos que coloque o seu website em HTTPS antes de prosseguir com este tutorial, utilizando o guia "[Ativar o HTTPS num website com certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".
-  
+  
 ## Instruções
   
 **WooCommerce** é uma extensão de **WordPress**. Instala-se como qualquer extensão.

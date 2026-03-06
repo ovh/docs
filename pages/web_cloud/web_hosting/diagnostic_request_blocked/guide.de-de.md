@@ -31,7 +31,7 @@ Wenn Ihre Website die Seite „Your request has been blocked“ anzeigt, bedeute
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
-
+
 ## In der praktischen Anwendung
 
 Die Seite „Your request has been blocked“ kann aus verschiedenen Gründen angezeigt werden (nicht abschließende Liste):

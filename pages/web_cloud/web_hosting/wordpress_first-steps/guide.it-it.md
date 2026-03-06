@@ -22,7 +22,7 @@ Questa guida ti mostra come creare i tuoi primi contenuti, organizzarli, metterl
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
 - Aver [installato Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sul tuo hosting Web
-
+
 ## Procedura
 
 Se non lo hai già fatto e prima di continuare, [aggiungi un certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting) sul dominio associato al tuo sito Web.

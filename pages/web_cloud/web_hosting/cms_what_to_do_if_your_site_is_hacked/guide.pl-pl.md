@@ -28,7 +28,7 @@ Piractwo może pojawić się na kilka sposobów (niewyczerpująca lista):
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW Cloud](/links/web/hosting) na Twojej stronie WWW z hostingiem
-
+
 ## W praktyce
 
 Piractwo strony internetowej jest systematycznie związane z **co najmniej** jednym z poniższych punktów:

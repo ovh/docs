@@ -21,7 +21,7 @@ Maintaining the security of your websites is crucial for the development of your
 >
 > This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the MainWP plugin](https://mainwp.com/support/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
-
+
 ## Instructions
 
 ### Install the Sucuri extension

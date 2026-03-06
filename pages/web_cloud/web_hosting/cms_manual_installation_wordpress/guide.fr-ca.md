@@ -28,7 +28,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](/links/web/domains)
-
+
 ## En pratique
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>

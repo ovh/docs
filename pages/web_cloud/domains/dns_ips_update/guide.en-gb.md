@@ -12,7 +12,7 @@ This guide explains the IP addresses changes affecting part of our DNS servers h
 
 ## Requirements
 
-
+
 ## Instructions
 
 ### Who is concerned?
