@@ -24,27 +24,28 @@ Ajouter un nom de domaine sur un service Exchange ou E-mail Pro est indispensabl
 - Disposer d'une solution [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
-
-### Accéder à la gestion de votre service
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
-> **Email Pro**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `Email Pro`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
 
 ### Ajouter un nom de domaine
 

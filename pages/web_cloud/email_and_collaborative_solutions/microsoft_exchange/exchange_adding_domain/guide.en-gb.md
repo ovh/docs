@@ -24,27 +24,28 @@ To use the accounts included with an Exchange service, you will need to add a do
 - An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
-
-### Access your service management
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
->>
-> **Email Pro**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the service concerned.
->>
 
 ### Add a domain name
 

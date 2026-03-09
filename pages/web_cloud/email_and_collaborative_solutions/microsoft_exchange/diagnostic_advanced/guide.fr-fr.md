@@ -14,19 +14,22 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 - Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
-- Être connecté à l'[espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de ce service et du nom de domaine lié.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
 ### Réaliser un diagnostic
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-
-![Diagnostic Exchange](images/img_4450.png){.thumbnail}
 
 Cliquez sur l'onglet `Diagnostics`{.action} et choisissez le compte Exchange concerné dans le menu déroulant. Saisissez le mot de passe du compte dans le champ prévu à cet effet, puis cliquez sur `Lancer le diagnostic`{.action}.
 

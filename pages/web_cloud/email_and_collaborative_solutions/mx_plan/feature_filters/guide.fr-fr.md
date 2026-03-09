@@ -18,7 +18,17 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 ## Prérequis
 
 - Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
-- Avoir accès à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
@@ -32,10 +42,6 @@ Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 
 ## En pratique <a name="oldmxplan"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 1. Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.png){.thumbnail}

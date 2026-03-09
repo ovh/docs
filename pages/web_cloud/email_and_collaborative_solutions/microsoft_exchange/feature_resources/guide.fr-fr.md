@@ -13,16 +13,22 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 ## Prérequis
 
 - Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà configurée
-- Être connecté votre [espace client OVHcloud](/links/manager)
 - Disposer des identifiants de connexion pour le ou les comptes de messagerie ayant accès à la ressource
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-1. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 

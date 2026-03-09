@@ -12,8 +12,18 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d’une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](/links/web/hosting), l’[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable) ou l’offre MX Plan commandée séparément.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -23,10 +33,6 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ### Création d'une réponse automatique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 1. Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
 Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des réponses automatiques e-mail en place sur votre offre e-mail.

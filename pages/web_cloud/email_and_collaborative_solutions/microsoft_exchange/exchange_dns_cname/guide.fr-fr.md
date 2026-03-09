@@ -16,10 +16,29 @@ Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configura
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer d'une solution [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Avoir ajouté un nom de domaine sur votre plateforme e-mail. Vous pouvez vous aider du guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) » si nécessaire.
 - Être en mesure de [configurer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) du nom de domaine concerné, depuis l'espace client OVHcloud ou depuis l'interface de gestion où il est enregistré.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 

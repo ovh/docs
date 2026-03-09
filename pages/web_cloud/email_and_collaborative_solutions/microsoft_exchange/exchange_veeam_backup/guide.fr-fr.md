@@ -22,8 +22,18 @@ Vous souhaitez sauvegarder vos comptes e-mail hébergés sur une plateforme Priv
 ## Prérequis
 
 - Avoir souscrit à une [offre Private Exchange OVHcloud](/links/web/emails-private-exchange) et créé des comptes e-mails sur celle-ci.
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - [Télécharger Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) sur un ordinateur sous Microsoft Windows 10 minimum.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -144,7 +154,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/impersonatedUser
 >>
->> - Dans les cases `exchangeService` et `organizationName` , renseignez la référence de votre plateforme Exchange, visible depuis votre [espace client OVHcloud](/links/manager) dans la rubrique `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action}, en sélectionnant la plateforme concernée.
+>> - Dans les cases `exchangeService` et `organizationName` , renseignez la référence de votre plateforme Exchange. Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}, puis sélectionnez la plateforme concernée pour retrouver sa référence.
 >>
 >> - Saisissez un mot de passe de 15 caractères minimum entre les guillemets, à côté de `"password": `.
 >>
@@ -170,7 +180,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >>
 > **Étape 8**
 >>
->> - Relevez le nom d'hôte de votre plateforme Exchange, celle-ci est visible depuis votre [espace client OVHcloud](/links/manager) dans la rubrique `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action}, en sélectionnant la plateforme concernée.
+>> - Relevez le nom d'hôte de votre plateforme Exchange. Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}, puis sélectionnez la plateforme concernée.
 >>
 >> - Le nom d'hôte correspond à la valeur mentionnée pour accéder au webmail.
 >>

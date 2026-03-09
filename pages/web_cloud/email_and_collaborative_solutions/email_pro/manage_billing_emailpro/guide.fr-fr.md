@@ -12,17 +12,22 @@ L'offre E-mail Pro dispose d'une gestion flexible de la facturation des comptes.
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un [compte E-mail Pro](/links/web/email-pro).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## En pratique
 
 ### Commander des comptes supplémentaires
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Cliquez sur l'onglet `Web Cloud`{.action}.
-1. Cliquez sur `Email Pro`{.action}.
-1. Sélectionnez la plateforme concernée.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Commander des comptes`{.action} en haut à droite.
 

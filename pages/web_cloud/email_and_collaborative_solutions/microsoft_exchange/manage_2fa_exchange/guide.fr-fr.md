@@ -13,17 +13,27 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 ## Prérequis
 
 - Disposer d'une offre [Exchange OVHcloud](/links/web/emails).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Avoir installé une application OTP sur un smartphone ou une tablette Android ou iOS.
 
 > [!primary]
 >**Les applications mobiles OTP**
 >
 > De nombreuses applications OTP existent. En voici deux, gratuites :
-> 
+>
 > - sur Android : Free OTP ;
 > - sur iOS : OTP Auth.
-> 
+>
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -33,11 +43,7 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 
 Lors d'une première configuration, il est nécessaire d'activer la double authentification sur la plateforme avant de l'activer sur un compte.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-1. Sélectionnez l'onglet `Sécurité`{.action} de votre plateforme.
+Sélectionnez l'onglet `Sécurité`{.action} de votre plateforme.
 1. En dessous de la mention « Double authentification », cliquez sur `Activer`{.action}.
 1. Pour terminer, descendez en bas de la page et cliquez sur `Enregistrer les modifications`{.action}.
 
@@ -63,11 +69,7 @@ Lors de vos connexions suivantes, seul le code généré par votre application v
 
 La double authentification de votre compte peut être désactivée de trois manières.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
-1. Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur `...`{.action} à droite du compte sur lequel la double authentification est déjà active.
+Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur `...`{.action} à droite du compte sur lequel la double authentification est déjà active.
 
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 

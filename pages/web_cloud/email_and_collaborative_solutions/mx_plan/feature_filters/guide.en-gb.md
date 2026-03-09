@@ -17,8 +17,18 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](/links/web/hosting) 
-- access to the [OVHcloud Control Panel](/links/manager)
+- an MX Plan email solution or a [Web Hosting plan](/links/web/hosting)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
@@ -32,10 +42,6 @@ MX Plan legacy version|MX Plan new version|
 
 ## Instructions <a name="oldmxplan"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 1. In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.png){.thumbnail}

@@ -13,16 +13,22 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 ## Requirements
 
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
-- access to the [OVHcloud Control Panel](/links/manager)
 - login credentials for the email account(s) accessing the resource
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
 ### Step 1: Creating a resource
 

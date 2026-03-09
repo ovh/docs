@@ -15,18 +15,23 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 - An [Email Pro](/links/web/email-pro) solution
 - An email confirming that your Email Pro solution has been set up
 - A domain name
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 
-### Step 1: Log in to your service’s interface
+### Step 1: Access your service’s interface
 
-Once the Email Pro service has been created and is available:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Email Pro`{.action}.
-1. Select the service concerned.
+Once the Email Pro service has been created and is available, select it from the Control Panel.
 
 > [!primary]
 >
@@ -170,7 +175,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the `General Information`{.action} tab of your Email Pro service, in the **Connection** box.
 >
 
 ## Go further

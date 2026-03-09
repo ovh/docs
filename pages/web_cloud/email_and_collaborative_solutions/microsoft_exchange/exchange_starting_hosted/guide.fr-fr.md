@@ -20,19 +20,24 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 
 - Avoir souscrit une offre [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Hosted Exchange.
-- Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d’un nom de domaine.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
 ### Accéder à la gestion de votre service
 
-Une fois votre service Hosted Exchange créé et disponible :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
+Une fois votre service Hosted Exchange créé et disponible, sélectionnez-le dans l’espace client OVHcloud.
 
 > [!primary]
 >

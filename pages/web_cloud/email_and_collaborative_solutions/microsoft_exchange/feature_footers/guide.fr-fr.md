@@ -12,26 +12,29 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro)
 
-## En pratique
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
 
-> [!tabs]
-> **Exchange**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
-> **Email Pro**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `Email Pro`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
+### Accès à l’espace client OVHcloud
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
+
+## En pratique
 
 Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
 

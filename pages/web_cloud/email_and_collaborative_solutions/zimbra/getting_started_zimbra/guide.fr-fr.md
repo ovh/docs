@@ -22,7 +22,17 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 - Avoir souscrit à un compte e-mail sur notre solution e-mail Zimbra OVHcloud.
 - Disposer d'un [nom de domaine OVHcloud](/links/web/domains).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zimbra](/links/control-panel/web-zimbra)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## En pratique
 
@@ -46,9 +56,7 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 ### Accéder à la gestion de votre service <a name="zimbra-access"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Zimbra Mail`{.action}.
+Depuis la section Zimbra de l'espace client OVHcloud, sélectionnez votre service.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -225,9 +233,6 @@ Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
 Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offre supérieure ou inférieure.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `Zimbra Mail`{.action}.
 1. Cliquez sur l'onglet `Compte email`{.action}.
 1. À droite du compte e-mail pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`{.action}.
 1. Cliquez sur `Changer d'offre`{.action}.

@@ -17,7 +17,17 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 ## Prérequis
 
 - Posséder une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!warning]
 >
@@ -36,10 +46,6 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 > La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](/links/manager) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
 >
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 1. Pour afficher la liste des comptes e-mails de votre offre MX Plan, cliquez sur l'onglet `Emails`{.action}.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
