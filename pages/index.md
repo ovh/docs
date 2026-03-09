@@ -2363,7 +2363,6 @@
                 + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
                 + [Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
                 + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
-                + [Veeam Cloud Connect - How to migrate data from Veeam Cloud Connect to Object Storage](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam-cloud-connect-migration)
             + [Security](storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-security)
                 + [Encrypting backup jobs with Veeam and OKMS](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_encrypt_backup_job_with_okms)
         + [Managed Veeam for Public VCF aaS](products/storage-backup-and-disaster-recovery-solution-managed-veeam-public-vcf)
