@@ -62,13 +62,25 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## W praktyce
 
 ### Etapy wspólne dla wszystkich aplikacji
 
 #### Zainstaluj wybraną wstępnie zainstalowaną aplikację
 
-W [panelu klienta OVHcloud](/links/manager), API OVHcloud lub API OpenStack Horizon zainstaluj wybraną aplikację na Twojej instancji Public Cloud.
+Za pomocą [Panelu klienta OVHcloud](/links/manager) / API lub interfejsu OpenStack Horizon / API zainstaluj wybraną aplikację na swojej instancji Public Cloud.
+
 
 #### Szczegóły logowania do aplikacji
 

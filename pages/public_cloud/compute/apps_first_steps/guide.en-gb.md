@@ -58,6 +58,17 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Common steps

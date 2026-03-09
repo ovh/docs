@@ -14,11 +14,19 @@ Vous pouvez gérer vos instances Public Cloud dans votre [espace client OVHcloud
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre projet
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. 
 
 ### Utiliser l'interface de gestion des instances
 
@@ -154,7 +162,6 @@ Cliquez sur `Réinstaller`{.action}.
 Cette action réinstallera l'instance avec le même système d'exploitation, à condition que l'image soit toujours prise en charge.
 
 Notez que la réinstallation **supprime toutes les données** actuellement stockées sur votre instance.
-
 
 ### Accéder à la console VNC <a name="accessvnc"></a>
 

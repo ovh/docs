@@ -24,11 +24,21 @@ Jeśli Twoja instancja nie dysponuje wystarczającymi zasobami z powodu zwiększ
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Instancje`{.action} w menu po lewej stronie.
+Kliknij `Instancje`{.action} w menu po lewej stronie.
 
 Kliknij `...`{.action} po prawej stronie instancji i wybierz `Edytuj`{.action}. Możesz również uzyskać dostęp do tej akcji z poziomu szczegółów instancji, klikając jej nazwę, a następnie `Zmień szablon`{.action}.
 

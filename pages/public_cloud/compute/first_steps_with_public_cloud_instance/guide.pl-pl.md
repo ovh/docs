@@ -14,11 +14,19 @@ Możesz zarządzać instancjami Public Cloud w [Panelu klienta OVHcloud](/links/
 
 - Projekt [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Twoim projekcie
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
 ### Korzystanie z interfejsu zarządzania instancjami
 

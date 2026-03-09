@@ -16,11 +16,21 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 - Avoir une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Un nom de domaine avec son champ `A` pointant vers l'instance
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Chemin de navigation :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Network`{.action} et cliquez sur `Adresses IP Publiques`{.action}.
+Accédez à la section `Network`{.action} et cliquez sur `Adresses IP Publiques`{.action}.
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
 

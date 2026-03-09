@@ -27,8 +27,18 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 
 - Un [proyecto de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Tener una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu instalado.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Acceso de administrador (sudo) a su instancia a través de SSH.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 

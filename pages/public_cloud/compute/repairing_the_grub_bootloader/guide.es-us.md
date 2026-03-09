@@ -16,6 +16,17 @@ Es posible que tuviera que reparar el bootloader GRUB. Esta guía explica cómo 
 
 - Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Procedimiento
 
 > [!warning]

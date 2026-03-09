@@ -17,8 +17,19 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) w abonamencie **godzina**
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Dostęp do [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Znajomość [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -101,7 +112,7 @@ Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu **
 
 Aby skorzystać z tej metody, należy [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Aby zalogować się przy użyciu logowania jednokrotnego OVHcloud: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Interfejsy zarządzania" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager).
+- Aby zalogować się za pomocą OVHcloud SSO: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Management Interfaces" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager).
 
 - Aby zalogować się za pomocą określonego użytkownika OpenStack: otwórz stronę logowania w witrynie [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone dane [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user), a następnie kliknij przycisk `Connect`{.action}.
 

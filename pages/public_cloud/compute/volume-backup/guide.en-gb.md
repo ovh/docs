@@ -23,8 +23,18 @@ Both volume snapshot and volume backup allow you to:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A detached [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Limitations
 
@@ -32,9 +42,7 @@ Backups of encrypted LUKS volume types can only be restored to the same encrypte
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
+Open `Block Storage`{.action} in the left-hand navigation bar under **Storage & backup**.
 
 In the row of the volume concerned, click the `...`{.action} button, then select `Create a backup`{.action}.
 

@@ -17,7 +17,17 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 ## Prérequis
 
 - Disposer d'[une sauvegarde d'une instance Public Cloud](/links/public-cloud/instance-backup). À cet effet, consultez [le guide dédié à la création d'une sauvegarde](/pages/public_cloud/compute/save_an_instance).
-- Être connecté à [l'espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -37,7 +47,6 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 >> Cliquez ensuite sur `Instance backup`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -136,7 +145,6 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 > [!tabs]
 > Via l'espace client OVHcloud
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
 >> Cliquez ensuite sur `Instances`{.action} dans la barre de navigation de gauche sous **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

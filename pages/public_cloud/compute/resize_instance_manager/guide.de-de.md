@@ -24,11 +24,21 @@ Wenn Ihre Instanz aufgrund erhöhter Aktivität oder neuer Anforderungen nicht m
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
+Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
 Klicken Sie auf `...`{.action} rechts neben der Instanz und wählen Sie `Bearbeiten`{.action}. Sie können auch über die Instanzdetails auf diese Aktion zugreifen, indem Sie auf den Namen der Instanz und dann auf `Modell ändern`{.action} klicken.
 

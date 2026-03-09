@@ -28,8 +28,18 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your Public Cloud project
 - An [additional disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your project
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -99,7 +109,7 @@ To ensure that you resize your disk at the right moment, it is essential to moni
 
 ### Modifying the size of the disk
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**
+Click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 
 If the volume is attached to a **Windows instance**, click on `...`{.action} in the row of the volume and select `Detach from instance`{.action}.
 
