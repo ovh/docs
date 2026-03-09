@@ -4,6 +4,20 @@ excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des obj
 updated: 2025-03-25
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (**W**rite **O**nce, **R**ead **M**any) et peut être utilisé dans des scénarios où il est impératif que les données ne soient pas modifiées ou supprimées après avoir été écrites.
@@ -16,25 +30,9 @@ Object Lock fournit deux façons de gérer la rétention des objets. La premièr
 
 ### Comment fonctionne Object Lock ?
 
-Pour comprendre le fonctionnement de Object Lock, nous devons d'abord comprendre comment la suppression d'objets et le *versioning* fonctionnent ensemble. Lorsqu'une opération de suppression d'objet est effectuée sur un objet dans un bucket sur lequel le *versioning* est activé, elle ne supprime pas l'objet de manière permanente, mais crée un marqueur de suppression sur l'objet. Ce marqueur de suppression devient la version la plus récente et la version actuelle de l'objet avec un nouvel ID de version.
-
-Un marqueur de suppression possède les propriétés suivantes :
-
-- Une clé et un ID de version comme tout autre objet.
-- Il n'a pas de données associées, donc il ne récupère rien d'une requête GET (vous obtenez une erreur 404).
-- Par défaut, il n'est plus affiché dans l'espace client.
-- La seule opération que vous pouvez utiliser sur un marqueur de suppression est DELETE, et seul le propriétaire du bucket peut effectuer une telle demande.
-
-Pour supprimer définitivement un objet, vous devez spécifier l'ID de version dans votre demande de suppression d'objet :
-
-```bash
-aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
-```
-
-La fonction Object Lock empêche les objets, pendant une durée fixe (mode de rétention) ou indéfiniment (conservation légale), d'être :
-
-- supprimés même si vous spécifiez le *version id* (vous obtenez une erreur « Access Denied ») ;
-- écrasés par le *versioning*.
+Object Lock permet de rendre les objets immuables pendant une période définie (*Rétention*) ou indéfinie (*Legal hold*).
+  
+Pour que la fonctionnalité fonctionne, le *versioning* doit être activé sur le bucket.
 
 > [!primary]
 >
@@ -43,22 +41,35 @@ La fonction Object Lock empêche les objets, pendant une durée fixe (mode de r�
 
 ### Périodes de rétention
 
-Une période de rétention spécifie une période de temps fixe pendant laquelle un objet reste verrouillé. Pendant cette période, votre objet est protégé et ne peut pas être écrasé ou supprimé. Vous pouvez appliquer une période de rétention en nombre de jours ou en nombre d'années, avec un minimum d'un jour et aucune limite maximale.
+Une période de rétention définit une durée pendant laquelle un objet reste verrouillé. Pendant cette période, l’objet est protégé et ne peut ni être modifié ni supprimé. La rétention peut être définie en jours ou en années, avec un minimum d’un jour et sans limite maximale.
 
-Lorsque vous définissez une période de rétention pour vos objets ou vos buckets, vous pouvez choisir le mode de rétention que vous souhaitez appliquer à vos objets. Vous pouvez choisir soit le mode *Governance*, soit le mode *Compliance* pour vos objets.
+Lors de la définition d’une période de rétention pour un bucket ou ses objets, vous devez choisir le mode de rétention à appliquer : **Governance** ou **Compliance**.
 
 #### Mode Governance
 
-Vous devriez utiliser le mode *Governance* si vous souhaitez empêcher la suppression des objets par la plupart des utilisateurs au cours d'une période de rétention prédéfinie, tout en permettant à certains utilisateurs disposant d'autorisations spéciales de modifier les paramètres de rétention ou de supprimer les objets. Les utilisateurs disposant de l'autorisation `s3:BypassGovernanceRetention` peuvent remplacer ou supprimer les paramètres de rétention en mode *Governance*.
+Le mode **Governance** empêche la plupart des utilisateurs de supprimer ou modifier les objets pendant la période de rétention, tout en permettant à certains utilisateurs disposant de droits spécifiques de gérer la rétention ou de supprimer des objets.
+
+Les utilisateurs autorisés possédant `s3:BypassGovernanceRetention` peuvent ainsi remplacer ou supprimer des objets en mode **Governance**.
+
+> [!primary]
+> 
+> **Bonne pratique :** utilisez le mode **Governance** lorsque vous souhaitez protéger vos données tout en conservant une certaine flexibilité opérationnelle pour des rôles administratifs spécifiques.
+>
 
 #### Mode Compliance
 
-Vous devriez utiliser le mode *Compliance* si vous avez l'obligation de stocker des données conformes.
-Lorsque ce mode est activé, la version d'un objet ne peut être écrasée ou supprimée par aucun utilisateur. Si ce mode est configuré pour un objet, son mode de rétention ne peut pas être modifié et sa période de rétention ne peut pas être raccourcie.
+Le mode **Compliance** garantit que les objets ne peuvent être ni modifiés ni supprimés par aucun utilisateur, y compris les administrateurs, pendant toute la période de rétention.
+
+Une fois ce mode activé pour un objet, son mode de rétention et sa durée ne peuvent pas être modifiés.
 
 > [!primary]
 >
-> Vous ne devez utiliser le mode *Compliance* que si vous ne voulez jamais qu'un utilisateur, y compris l'utilisateur administrateur, puisse supprimer les objets pendant une période de rétention prédéfinie.
+> **Bonne pratique :** utilisez le mode **Compliance** uniquement si vous devez assurer une immutabilité stricte pour des besoins de conformité ou réglementaires.
+>
+
+> [!warning]
+>
+> Le mode Compliance doit être choisi uniquement si aucun utilisateur, y compris l’administrateur, ne doit pouvoir supprimer ou modifier les objets pendant la période de rétention.
 >
 
 ### Legal hold
@@ -167,7 +178,7 @@ Object Lock vous permet de définir une période de rétention sur un bucket sp�
 >>
 >> Cliquez sur `Object Storage`{.action} dans la barre de navigation, sur l'onglet `Mes conteneurs`{.action}, puis cliquez sur le `nom de votre conteneur`{.action}.
 >>
->> Depuis l’onglet `Informations générales`{.action}, cliquez sur `Configurer la rétention`{.action}, activez la fonctionnalité, puis définissez le mode et la période de rétention applicables. Cliquez ensuite sur le bouton `Sauvegarder`{.action}.
+>> Depuis l’onglet `Informations générales`{.action}, cliquez sur `Configurer la rétention`{.action}, activez la rétention, puis définissez le mode et la période de rétention applicables. Cliquez ensuite sur le bouton `Sauvegarder`{.action}.
 >>
 
 ### Comment configurer une période de rétention sur un objet
@@ -260,6 +271,54 @@ Le résultat devrait ressembler à ceci :
   }
 }
 ```
+
+### Object Lock et suppression d'objets
+
+Lorsque le *versioning* est activé, une suppression d'objet ne supprime pas l'objet immédiatement mais crée un **marqueur de suppression**. Ce marqueur devient la version actuelle de l’objet avec un nouvel ID.
+
+Un marqueur de suppression :
+
+- A une clé et un ID de version comme tout autre objet.
+- Ne contient pas de données (GET retourne 404).
+- N'est pas affiché par défaut dans l’espace client.
+- Ne peut être manipulé que par DELETE, par le propriétaire du bucket.
+
+La fonction **Object Lock** empêche les objets d’être :
+
+- Supprimés même avec un ID de version (renvoie `Access Denied`).
+- Écrasés par le versioning.
+
+#### Fonctionnement des suppressions avec Object Lock
+
+Lorsque l’Object Lock est activé et qu’un objet est protégé par une période de rétention ou une conservation légale, les tentatives de suppression se comportent différemment selon le type de requête :
+
+/// details | **Suppression avec ID de version (DELETE permanente)**
+
+- La suppression est bloquée pendant la période de rétention.
+- La réponse renvoyée est 403 Forbidden (Accès refusé).
+- Cette protection s’applique à tous les utilisateurs, même les administrateurs, selon le mode de rétention.
+
+Pour supprimer définitivement un objet, vous devez spécifier l’ID de version dans votre demande :
+
+```bash
+aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+```
+
+> [!primary]
+>
+> Cette commande échouera si l’objet est protégé par Object Lock en mode Compliance ou Governance sans le contournement adéquat.
+>
+
+///
+
+/// details | **Suppression sans ID de version (DELETE simple)**
+- La requête renvoie 200 OK.
+- Un marqueur de suppression est créé dans le bucket et devient la version actuelle de l’objet.
+- L’objet reste protégé par la période de rétention.
+
+**Remarque :** la gestion des marqueurs de suppression et des erreurs d’accès peut se faire via les API/CLI correspondantes.
+
+///
 
 ## Aller plus loin
 
