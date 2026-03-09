@@ -19,11 +19,21 @@ updated: 2026-02-10
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [nome de domínio](/links/web/domains) registado na OVHcloud.
 - Dispor das [autorizações adequadas para gerir](/pages/account_and_service_management/account_information/managing_contacts) o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager).
 - Ter um alojamento na SquareSpace.
 - Ter acesso à gestão deste alojamento na SquareSpace.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 

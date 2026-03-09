@@ -27,12 +27,22 @@ Dans le cadre du Règlement Général sur la Protection des Données (RGPD), vou
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir vérifié que toutes vos données ont été sauvegardées.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
-Pour lister vos services, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
+Pour lister vos services, ouvrez la page [Mes services](/links/control-panel/billing-services).
 
 > [!alert]
 >
@@ -234,7 +244,7 @@ Suivez les étapes décrites dans le guide « [Comment résilier un accès xDSL/
 
 /// details | SMS
 
-Il n'existe pas de procédure de résiliation concernant les [offres SMS](/links/telecom/sms). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
+Il n'existe pas de procédure de résiliation concernant les offres SMS. Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
 
 Pour supprimer un compte SMS, nous vous invitons à créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
 

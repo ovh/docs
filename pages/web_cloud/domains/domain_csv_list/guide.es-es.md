@@ -13,26 +13,30 @@ updated: 2025-07-03
 ## Requisitos
 
 - Tener un [dominio](/links/web/domains) registrado en OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedimiento
 
-Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Dominios`{.action}. Encima de la tabla que aparece, haga clic en el botón `Exportar en CSV`{.action}.
+>> Haga clic en [este enlace](/links/control-panel/web-domains). Encima de la tabla que aparece, haga clic en el botón `Exportar en CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En la nueva ventana, marque la información que desea incluir en el archivo CSV para todos sus dominios.
 >>
@@ -40,7 +44,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 >>
 >> A continuación, haga clic en el botón `Exportar`{.action} para iniciar la generación del archivo en formato CSV.
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Aparecerá una ventana de carga. Espere hasta que la barra de progreso alcance el 100%.
 >>
@@ -58,4 +62,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 **[LangChain](https://github.com/langchain-ai/langchain)** is one of the most popular frameworks for building LLM-powered applications like virtual assistants and chatbots. It provides structured abstractions and tooling to easily orchestrate prompts, memory, chains, and agents.
 
-In this tutorial, we’ll use LangChain (Python edition) with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** to create a **command-line chatbot**, starting with a simple blocking mode, then enabling **streaming** for real-time feedback.
+In this tutorial, we’ll use LangChain (Python edition) with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** to create a **command-line chatbot**, starting with a simple blocking mode, then enabling **streaming** for real-time feedback.
 
 ## Objective
 
@@ -29,7 +29,7 @@ This tutorial demonstrates how to:
 - **Streaming LLM Response**: Instead of waiting for a full response from the model, streaming allows the application to start processing output tokens as they’re generated. This creates a smoother, faster user experience—especially useful for chatbots.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. It offers abstractions and annotations for building intelligent agents and chatbots. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 - **[Quarkus](https://quarkus.io/)**: A Kubernetes-native Java framework designed to optimize Java applications for containers and the cloud. In this tutorial we will use the [quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j/) extension.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+- **[AI Endpoints](/links/public-cloud/ai-endpoints)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
 
 ## Requirements
 

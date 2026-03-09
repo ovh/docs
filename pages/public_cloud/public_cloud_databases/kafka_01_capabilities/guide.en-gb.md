@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Analytics with Kafka
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka
-updated: 2025-08-04
+excerpt: Discover the capabilities and limitations of Analytics for Kafka
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Analytics offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 ### Kafka versions
 

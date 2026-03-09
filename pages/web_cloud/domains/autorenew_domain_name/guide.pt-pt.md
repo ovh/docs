@@ -21,8 +21,18 @@ Encontrará todas as informações para:
 ## Requisitos
 
 - Ter um nome de domínio registado na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 - Ser contacto de faturação dos seus serviços OVHcloud.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 

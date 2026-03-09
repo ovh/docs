@@ -20,8 +20,18 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) attivo
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

@@ -15,8 +15,18 @@ There are many different types of website you can put online. Whether you are cr
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - an email confirming that your Web Hosting plan has been set up
 - a [domain name](/links/web/domains) which can be used to access your website
-- access to the [OVHcloud Control Panel](/links/manager)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -16,7 +16,6 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 - A [domain name](/links/web/domains) registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/asia/domains/dns-subdomain/) of a domain name not registered with OVHcloud.
 - An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers).
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan.
 
 > [!warning]
 >
@@ -27,33 +26,38 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 >
 > Finally, if your domain name is already linked to the "email address(es) included" option of another web hosting plan, you will not be able to associate it directly with your own web hosting plan. Use this guide to check with the current web hosting manager.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 ### Activate your email addresses included with your web hosting plan
 
-Click on the tabs below to view each of the **4** steps.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **Configuration** box, you will see **Email addresses**.
 >> Click the `...`{.action} button on the right, then `Enable email solution`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> The activation window appears. Choose the domain name you would like to link your email addresses to, then confirm your choice.
 >>
@@ -74,22 +78,16 @@ You can permanently delete the email solution linked to your Web Hosting plan.
 >
 > This action cannot be undone. You will not be able to reactivate the email solution after it has been cancelled.
 
-Click on the tabs below to view each of the **3** steps.
+Click on the tabs below to view each of the **2** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> In the **Configuration** box, you will see **Email addresses**.
 >> Click the `...`{.action} button on the right, then `Cancel the email option`{.action}.

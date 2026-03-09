@@ -32,9 +32,20 @@ Il processo di modifica del Registrar (*registrar*) per i nomi di dominio di pri
 ## Prerequisiti
 
 - Disporre di un [nome di dominio.uk](/links/web/domains) registrato in OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) e disporre dei diritti necessari per gestire il nome di dominio (essere amministratore del nome di dominio)
 - Il nome di dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
 - Il nome di dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

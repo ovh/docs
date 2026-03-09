@@ -24,11 +24,21 @@ Neste caso, não será possível efectuar qualquer reembolso por parte da OVHclo
 ## Requisitos
 
 - Dispor de um [nome de domínio](/links/web/domains) registado na OVHcloud.
-- Estar autenticado no seu [área de cliente OVHcloud](/links/manager).
 - Ter recebido um e-mail da parte da OVHcloud informando que uma ação é necessária relativamente às coordenadas do titular do seu nome de domínio.
 - Verificar os seguintes pontos para se assegurar de que não se trata de um e-mail fraudulento:
     - O assunto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`) bem como o seu nome de domínio (por exemplo: `domain.tld`).
     - A URL mencionada no e-mail começa realmente por: `https://www.ovh.com/manager/#/web/domain/operation/`.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 
@@ -48,22 +58,16 @@ Se este método não funcionar, o titular pode validar manualmente o seu endere�
 
 ### 2 - Corrigir ou completar as coordenadas/informações de contacto do titular do nome de domínio como administrador
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **5** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
+>> Clique [nesta ligação](/links/control-panel/web-domains) e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> Na página que se abrir, verifique primeiro se o seu nome de domínio está afetado pelo procedimento graças a uma faixa (amarela ou vermelha) que indique a operação a realizar.
 >>
@@ -71,13 +75,13 @@ Clique nos separadores abaixo para exibir sucessivamente cada uma das **5** etap
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Na nova página, aceda ao quadro **Titular** e clique no botão `Alterar`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etapa 5**
+> **Etapa 4**
 >>
 >> > [!warning]
 >> >
@@ -131,7 +135,7 @@ Para certas extensões (por exemplo: .fr, .it, .es), o administrador do domínio
 > Se as correções efetuadas seguindo a primeira parte deste guia exigiram a inicialização de uma mudança de titular para o nome de domínio, conclua primeiro a mudança de titular **antes** de continuar as ações descritas abaixo.
 >
 
-Clique nos separadores abaixo para exibir sucessivamente cada uma das **4** etapas.
+Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -175,4 +179,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

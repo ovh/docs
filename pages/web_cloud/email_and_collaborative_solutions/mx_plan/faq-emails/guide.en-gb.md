@@ -1,7 +1,7 @@
 ---
 title: FAQ OVHcloud emails
 excerpt: "Find the most frequently asked questions about emails"
-updated: 2025-04-07
+updated: 2026-03-05
 ---
 
 <style>

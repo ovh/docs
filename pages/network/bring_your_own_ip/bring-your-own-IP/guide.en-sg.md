@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2025-02-28
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -109,6 +109,36 @@ For more information on route objects, please refer to your RIR’s documentatio
 
 ## Instructions
 
+### How to order a BYOIP service
+
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar, then select `Public IP Addresses`{.action}.
+
+![Public IP addresses - BYOIP button](images/byoip_public_ip.png){.thumbnail}
+
+Click the `+ Bring Your Own IP`{.action} button at the top of the page. You will be taken to the BYOIP configuration page.
+
+![Order BYOIP](images/byoip_order.png){.thumbnail}
+
+Select the **RIR** that manages the public IP block you want to import, then select the **region** where you want your IP addresses to be located. Then enter the IP range you wish to import.
+
+You can then choose whether to use the OVHcloud AS (recommended) or your own AS to advertise your IP block.
+
+If you choose to use your own AS, you must select the RIR that manages your ASN, then enter your AS number. If you choose the OVHcloud AS, no additional information is required.
+
+![BYOIP AS - OVHcloud](images/byoip_as_ovhcloud.png){.thumbnail}
+
+![BYOIP AS - Custom](images/byoip_as_custom.png){.thumbnail}
+
+Finally, click the `Next`{.action} button at the bottom of the page. A confirmation window will open. Please ensure that all of the requirements are met, then click the `Confirm`{.action} button to submit your order. 
+
+![Submit BYOIP order](images/byoip_confirm.png){.thumbnail}
+
+All your imported IP blocks will have the `BYOIP` tag. 
+
+![BYOIP tag](images/byoip_tag.png){.thumbnail}
+
+Filtering public IP addresses by tag is not currently available. We recommend filtering them by clicking the `All service types`{.action} bar above the table, then selecting `All additional IPs`{.action}. You will then be able to differentiate your classic Additional IPs from the imported ones by using the aforementioned `BYOIP` tag.
+
 ### How to use the product
 
 The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same region.<br>
@@ -166,7 +196,7 @@ To merge back a block into a parent block, use this API call:
 
 Use the following parameters:
 
-- ip: the IP block you want to slice, in CIDR notation.
+- ip: the IP block you want to merge, in CIDR notation.-
 - aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
@@ -189,14 +219,27 @@ This call returns a list of possible aggregated blocks and, for each one of them
 
 **Limitations**:
 
-- This feature is currently available via API only. It will be added to the OVHcloud Control Panel in the near future.
 - Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
 - Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
 - The listing of IP addresses and blocks returned by API is ordered by network prefix size. We are working to provide a solution to list IPs by numerical order.
 - Once sliced, smaller blocks are not movable outside the region chosen during the order of the product.
-- Moving a /24 block across french regions won't work if:
-    - It has been reaggregated from a previous slicing.
-    - The /24 block was imported from a bigger block (/23 to /19).
+- Moving a /24 block across French regions is not supported if it has been reaggregated from a previous slicing.
+
+## How to cancel a BYOIP service
+
+From the [OVHcloud Control Panel](/links/manager), click your `account name`{.action} in the top right-hand corner, then select `My offers and services`{.action} in the dropdown menu.
+
+In the search bar at the top right of the table that appears, next to the filter button, type "byoip", then press the `Enter`{.action} key to filter for your BYOIP services.
+
+![BYOIP cancellation](images/byoip_cancel.png){.thumbnail}
+
+Find the service you want to cancel, then click the corresponding `...`{.action} button to the right and select `Cancel my subscription`{.action}.
+
+A confirmation window will pop up:
+
+![BYOIP cancellation confirmation](images/byoip_cancel_confirmation.png){.thumbnail}
+
+Choose whether to cancel the service immediately or on the expiry date, then click `Yes, cancel`{.action}.
 
 ## FAQ
 
@@ -226,7 +269,9 @@ No, an IP range must be used in only one region.
 
 ### Is changing the region of an imported IP range possible?
 
-It is not possible to change the region of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen Gravelines, Roubaix or Strasbourg region at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across those 3 regions (and only those 3 ones).
+It is not possible to change the region of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen the Gravelines, Roubaix or Strasbourg region at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your **/24** IP blocks across those 3 regions (and only those 3 regions).
+
+Please note that, as mentioned in the range slicing limitations, this is only available if the block you want to move was **not reaggregated** following a previous slicing.
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 

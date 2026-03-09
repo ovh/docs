@@ -11,7 +11,17 @@ Diese Anleitung erklärt, wie Sie eine Public Cloud-Instanz von einer Region in 
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 

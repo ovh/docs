@@ -54,7 +54,7 @@ Wenn Sie einen neuen Server bestellt und installiert haben, können Sie vorab ei
 ### Inhaltsübersicht
 
 - [Grundlegende Informationen](#basicinformation)
-- [Verständnis der EFI-Systempartition (ESP)](#efisystemparition)
+- [Verständnis der EFI-Systempartition (ESP)](#efisystempartition)
 - [Simulieren eines Diskausfalls](#diskfailure)
     - [Entfernen der defekten Disk](#removedisk)
 - [Wiederherstellung des RAID (mit nicht gespiegeltem ESP)](#raidrebuildnonmirrored)
@@ -231,7 +231,7 @@ In unserem Beispiel haben wir:
 
 - Zwei RAID-Arrays: `/dev/md2` und `/dev/md3`.
 - Partitionen, die Teil des RAID sind: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** und **nvme0n1p3** mit den Einhängepunkten `/boot` und `/`.
-- Partitionen, die nicht Teil des RAID sind: **nvem0n1p1**, **nvme0n1p4** und **nvme1n1p4** mit den Einhängepunkten `/boot/efi` und [SWAP].
+- Partitionen, die nicht Teil des RAID sind: **nvme0n1p1**, **nvme0n1p4** und **nvme1n1p4** mit den Einhängepunkten `/boot/efi` und [SWAP].
 - Eine Partition hat keinen Einhängepunkt: **nvme1n1p1**.
 
 <a name="efisystempartition"></a>
@@ -327,16 +327,16 @@ Wenn Ihre ESP nicht gespiegelt ist, kann Folgendes passieren:
 **Fall 1** - Es gab keine Änderungen oder größeren Updates (z. B. GRUB) am Betriebssystem.
 
 - Der Server kann im normalen Modus starten, und Sie können mit der RAID-Wiederherstellung fortfahren.
-- Der Server kann nicht im normalen Modus starten. Verwenden Sie die Rescue-Modus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
+- Der Server kann nicht im normalen Modus starten. Verwenden Sie den Rescue-Modus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
 
 **Fall 2** - Es gab umfangreiche Systemaktualisierungen (z. B. GRUB) und die ESPs wurden synchronisiert.
 
 - Der Server kann im normalen Modus starten, da alle ESPs auf dem neuesten Stand sind und die RAID-Wiederherstellung im normalen Modus durchgeführt werden kann.
-- Der Server kann nicht im normalen Modus starten. Verwenden Sie die Rescue-Modus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
+- Der Server kann nicht im normalen Modus starten. Verwenden Sie den Rescue-Modus, um das RAID wiederherzustellen und die EFI-Partition auf der neuen Disk neu zu erstellen.
 
 **Fall 3** - Es gab größere Systemaktualisierungen (z. B. GRUB) und die ESP-Partitionen wurden nicht synchronisiert.
 
-- Der Server kann nicht im normalen Modus gestartet werden. Verwenden Sie die Rescue-Modus, um das RAID neu aufzubauen, die EFI-Systempartition auf der neuen Disk neu zu erstellen und den Bootloader (z. B. GRUB) neu zu installieren.
+- Der Server kann nicht im normalen Modus gestartet werden. Verwenden Sie den Rescue-Modus, um das RAID neu aufzubauen, die EFI-Systempartition auf der neuen Disk neu zu erstellen und den Bootloader (z. B. GRUB) neu zu installieren.
 - Der Server kann im normalen Modus gestartet werden (z. B. wenn das Betriebssystem aktualisiert wurde, die GRUB-Version jedoch unverändert geblieben ist), sodass Sie mit dem Neuaufbau des RAID fortfahren können.
 
 In einigen Fällen kann das Booten von einem veralteten ESP fehlschlagen. Beispielsweise kann ein umfangreiches GRUB-Update dazu führen, dass die GRUB-Binärdatei im ESP mit neueren GRUB-Modulen in der Partition `/boot` nicht mehr kompatibel ist.
@@ -441,7 +441,7 @@ Starten Sie den Server im Rescue-Modus neu und melden Sie sich mit den bereitges
 
 Um eine Disk aus dem RAID zu entfernen, markieren Sie sie zunächst als **Failed** (Ausgefallen) und entfernen Sie dann ihre Partitionen aus den RAID-Arrays.
 
-**Note**: Dies ist nur ein Beispiel; passen Sie die Befehle an Ihre eigene Konfiguration an.
+**Hinweis**: Dies ist nur ein Beispiel; passen Sie die Befehle an Ihre eigene Konfiguration an.
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -609,7 +609,7 @@ Wir können nun mit dem Austausch der Disk und der Wiederherstellung des RAID-Ve
 > [!primary]
 > Dieser Prozess kann je nach installiertem Betriebssystem auf Ihrem Server variieren. Wir empfehlen Ihnen, die offizielle Dokumentation Ihres Betriebssystems zu konsultieren, um auf die richtigen Befehle zugreifen zu können.
 >
-> Wenn Ihr Server nach dem Austausch der Disk im normalen Modus starten kann, fahren Sie einfach mit den Schritten aus [diesem Abschnitt](#nonmirrorednormalmode) fort, wenn Ihre EFI-Systempartition nicht gespiegelt ist, oder mit den Schritten aus [diesem Abschnitt](#mirrored-esp-normal), wenn Ihre EFI-Systempartition gespiegelt ist.
+> Wenn Ihr Server nach dem Austausch der Disk im normalen Modus starten kann, fahren Sie einfach mit den Schritten aus [diesem Abschnitt](#nonmirrorednormalmode) fort, wenn Ihre EFI-Systempartition nicht gespiegelt ist, oder mit den Schritten aus [diesem Abschnitt](#raidrebuildmirrored), wenn Ihre EFI-Systempartition gespiegelt ist.
 >
 
 #### Wiederherstellung des RAIDs nach Austausch der primären Disk (Rescue-Modus) <a name="nonmirroredrescuemode"></a>
@@ -727,7 +727,7 @@ Wir gehen davon aus, dass beide Partitionen synchronisiert wurden und aktuelle D
 > Wenn ein größeres System-Update wie Kernel oder GRUB durchgeführt wurde und beide Partitionen nicht synchronisiert wurden, lesen Sie [diesen Abschnitt](#efiraidgrub), sobald Sie die neue EFI-Systempartition erstellt haben.
 >
 
-Formatiere zuerst die Partition:
+Formatieren Sie zuerst die Partition:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkfs.vfat /dev/nvme0n1p1
@@ -741,20 +741,20 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # fatlabel /dev/nvme0n1p1 E
 
 Als Nächstes duplizieren Sie den Inhalt von nvme1n1p1 nach nvme0n1p1.
 
-Beginnen Sie damit, zwei Ordner zu erstellen, in diesem Beispiel mit den Namen "old" und "new":
+Beginnen Sie damit, zwei Ordner zu erstellen, in diesem Beispiel mit den Namen `old` und `new`:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mkdir old new
 ```
 
-Mounten Sie **nvme1n1p1** im Ordner "old” und **nvme0n1p1** im Ordner "new", um die Unterscheidung zu treffen:
+Mounten Sie **nvme1n1p1** im Ordner `old` und **nvme0n1p1** im Ordner `new`, um die Unterscheidung zu treffen:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme1n1p1 old
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/nvme0n1p1 new
 ```
 
-Kopieren Sie die Dateien aus dem Ordner "old" in den Ordner "new":
+Kopieren Sie die Dateien aus dem Ordner `old` in den Ordner `new`:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # rsync -axv old/ new/
@@ -834,7 +834,7 @@ Wenn die primäre Disk ausgetauscht wird, während sie EFI-Systempartitionen ent
 
 In diesem Fall müssen Sie neben dem Wiederherstellen des RAID und dem Neuerstellen der EFI-Systempartition im Rescue-Modus auch GRUB darauf neu installieren.
 
-Sobald die ESP erstellt wurde (wie oben beschrieben) und das System beide Partitionen erkennt, erstellen Sie noch in der `choot`-Umgebung den Ordner `/boot/efi`, um die neue EFI-Systempartition **nvme0n1p1** zu mounten:
+Sobald die ESP erstellt wurde (wie oben beschrieben) und das System beide Partitionen erkennt, erstellen Sie noch in der `chroot`-Umgebung den Ordner `/boot/efi`, um die neue EFI-Systempartition **nvme0n1p1** zu mounten:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -969,7 +969,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >>
 >> Der Wiederaufbau des RAID mit gespiegelten Partitionen ist einfacher: Kopieren Sie einfach die Daten von der fehlerfreien Disk auf die neue Disk und erstellen Sie die [SWAP]-Partition neu (falls zutreffend).
 >>
->> Aus den obigen Abbildungen geht hervor, dass der RAID-Status nach einem Disknausfall wie folgt aussehen sollte:
+>> Aus den obigen Abbildungen geht hervor, dass der RAID-Status nach einem Diskausfall wie folgt aussehen sollte:
 >>
 >> ```sh
 >> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
@@ -1094,7 +1094,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >
 > **Im normalen Modus**
 >>
->> Aus den obigen Abbildungen geht hervor, dass der RAID-Status nach einem Disknausfall wie folgt aussehen sollte:
+>> Aus den obigen Abbildungen geht hervor, dass der RAID-Status nach einem Diskausfall wie folgt aussehen sollte:
 >>
 >> ```sh
 >> Personalities : [raid1]
@@ -1285,7 +1285,7 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> - Wir ersetzen die alte UUID der SWAP-Partition (**nvme0n1p4)** durch die neue in `/etc/fstab`:
+>> - Wir ersetzen die alte UUID der SWAP-Partition (**nvme0n1p4**) durch die neue in `/etc/fstab`:
 >>
 >> ```sh
 >> [user@server_ip ~]# sudo nano /etc/fstab
@@ -1326,6 +1326,8 @@ Als Nächstes lesen Sie [diesen Abschnitt](#swap-partition), um die SWAP-Partiti
 >>
 
 ///
+
+<a name="go-further"></a>
 
 ## Weiterführende Informationen
 

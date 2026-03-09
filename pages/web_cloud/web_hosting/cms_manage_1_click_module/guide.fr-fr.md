@@ -21,7 +21,17 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) permettant l'installation d'un module en 1 clic (seule l'[offre d'hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m) n'est pas concernée).
 - Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

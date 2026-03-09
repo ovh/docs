@@ -21,6 +21,17 @@ Diese Anleitung hilft Ihnen bei der Verwaltung Ihrer Domainnamen und deckt alle 
 - Sie verfügen über einen bei OVHcloud registrierten [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen [Berechtigungen zur Verwaltung](/pages/account_and_service_management/account_information/managing_contacts) des Domainnamens (Rechnungskontakt).
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 ### Warum sollte ich meinen Domainnamen verlängern?

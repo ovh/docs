@@ -22,7 +22,17 @@ This guide will outline the steps you need to take to migrate your entire websit
 - Access to your domain name’s active DNS (Domain Name System) zone
 - Access to your website’s files and database at your current hosting provider
 - Credentials (user, password, server) for your current email accounts
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -214,7 +214,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 Once the e-mail address is configured, you can now use it! You can now send and receive messages.
 
-OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide "[Accessing your Exchange account from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
+OVHcloud also offers a web application allowing you to access your e-mail address from a web browser. OVHcloud Webmail is available [here](/links/web/email). You can log in using the credentials of your e-mail address. For any questions regarding its use, feel free to consult our guide "[Using the OWA webmail interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 
 ### Recover a backup of your e-mail address
 

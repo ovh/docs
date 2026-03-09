@@ -32,9 +32,19 @@ Puede crear infinidad de subdominios a partir de un único nombre de dominio.
 
 - Tener al menos un [nombre de dominio](/links/web/domains);
 - Tener una zona DNS activa para el nombre de dominio. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)".
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager);
 - Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedimiento
 
 **Índice**

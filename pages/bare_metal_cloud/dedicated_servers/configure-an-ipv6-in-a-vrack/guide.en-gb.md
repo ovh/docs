@@ -1,6 +1,6 @@
 ---
-title: Configuring an Additional IPv6 block in a vRack
-excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
+title: Configuring an IPv6 block in a vRack
+excerpt: Find out how to configure a block of public IPv6 addresses for use with an OVHcloud vRack network
 updated: 2025-06-04
 ---
 
@@ -31,7 +31,7 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 > [!primary]
 >
-> This article is focusing on Additional IP configuration over a vRack network. If you look for guidance on Additional IP configuration together with primary IP (on public network interface), read the following articles:
+> This guide focuses on Additional IP configuration over a vRack network. If you look for guidance on Additional IP configuration together with primary IP (on public network interface), read the following articles:
 >
 > - IPv4:
 >     - [Configuring IP aliasing on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
@@ -64,7 +64,7 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
+> Visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 
@@ -78,7 +78,7 @@ You can order your new additional IPv6 block [here](https://www.ovh.com/manager/
 
 ![configuration page](images/500.png){.thumbnail}
 
-Next you need to follow the step-by-step instructions.
+Next, follow the step-by-step instructions.
 
 Your new Additional IPv6 will then be available on your vRack configuration page.
 
@@ -245,7 +245,7 @@ First, let's allow our host to accept Router Advertisements (for autoconfigurati
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
 
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to <a href="#host-side-configuration">[Automatic IP configuration for routed subnet](#host-side) for more details.
+Note that this setting does not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side) for more details.
 
 Then, simply bring up the interface:
 
@@ -292,7 +292,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 ### Configuring an IPv6 in a vRack for routed mode <a name="routedmode"></a>
 
-In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
+In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
 
 ![Configuring an IPv6 in a vRack for routed-mode](images/routed-mode-20240513.png){.thumbnail}
 
@@ -307,7 +307,7 @@ The default gateway for the host is the first address from the /56 block, which 
 
 /// details | OVHcloud Control Panel actions
 
-After adding Additional IP to your vRack you can manage routed subnet by clicking `Add subnet`{.action} button.
+After adding Additional IP to your vRack you can manage routed subnet by clicking the `Add subnet`{.action} button.
 
 ![vRack select](images/600.png){.thumbnail}
 
@@ -316,11 +316,11 @@ To create a routed subnet, we must first define:
 - **subnet in CIDR notation** (size between /57 and /64)
 - **next-hop address** (so the host's IPv6 address)
 
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+Please note that a given subnet cannot overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
 ![continue](images/800.png){.thumbnail}
 
-This created routed subnet `2001:41d0:abcd::ef10::/60` reachable via next hop `2001:41d0:abcd::ef00::2`. 
+This created routed subnet `2001:41d0:abcd:ef10::/60` reachable via next hop `2001:41d0:abcd:ef00::2`. 
 
 ![continue](images/801.png){.thumbnail}
 
@@ -333,13 +333,13 @@ To create a routed subnet, we must first define:
 - **subnet in CIDR notation** (size between /57 and /64)
 - **next-hop address** (so the host's IPv6 address)
 
-Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+Please note that a given subnet cannot overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
 The example below shows how to define such a subnet:
 
 ![continue](images/20240418-02.png){.thumbnail}
 
-Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60 `which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
+Here, we defined a routed subnet `2001:41d0:abcd:ef10::/60` which will be delegated to the VM hosted on: `2001:41d0:abcd:ef00::2`.
 
 ///
 
@@ -504,7 +504,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
 ```
 
-And traceroute from a remote host (somewhere in the internet):
+And traceroute from a remote host (somewhere on the internet):
 
 ```bash
 ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
@@ -531,7 +531,7 @@ On the other hand, services like Additional IPv6 are regional, which means their
 
 Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as a suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
 
-![image](images/20240418-08.png)
+![image](images/20240418-08.png){.thumbnail}
 
 Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in the whole vRack** (as this may lead to unpredictable results and losing connectivity randomly).
 

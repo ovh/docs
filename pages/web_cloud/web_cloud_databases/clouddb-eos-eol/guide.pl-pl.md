@@ -1,6 +1,6 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2025-12-02
+updated: 2026-03-06
 ---
 
 ## Wprowadzenie
@@ -20,6 +20,7 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |PostgreSQL 15|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 16|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 17|Do określenia|Do określenia|Do określenia|
+|PostgreSQL 18|Do określenia|Do określenia|Do określenia|
 |Valkey 7.2|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również

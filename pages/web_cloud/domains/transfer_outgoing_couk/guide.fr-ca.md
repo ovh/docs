@@ -32,9 +32,19 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les nom
 ## Prérequis
 
 - Disposer d'un [nom de domaine .uk](/links/web/domains) enregistré chez OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du nom de domaine)
 - Le nom de domaine doit être toujours actif, c'est-à-dire qu'il ne doit pas avoir expiré ou être bloqué par OVHcloud
 - Le nom de domaine ne doit pas faire l’objet d’un litige en cours auprès du [Registre Nominet](https://www.nominet.uk/)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

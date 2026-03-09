@@ -42,6 +42,17 @@ By transferring your domain name, you will change its **registrar**. You can tra
 - You have the authority to request a transfer for the domain name.
 - The domain name holder and/or its administrators must be informed of the transfer request.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Instructions
 
 > [!success]

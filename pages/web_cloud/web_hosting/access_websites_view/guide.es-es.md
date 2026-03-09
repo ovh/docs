@@ -12,8 +12,18 @@ La vista `Sitios web` permite centralizar la visualización de todos sus sitios 
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener un [plan de hosting](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

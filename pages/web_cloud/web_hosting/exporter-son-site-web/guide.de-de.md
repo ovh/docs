@@ -13,7 +13,17 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

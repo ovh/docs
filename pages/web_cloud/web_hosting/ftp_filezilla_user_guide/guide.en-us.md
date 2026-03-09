@@ -32,9 +32,19 @@ You can use it to put files or your website online by [connecting to your web ho
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - An [OVHcloud Web Hosting plan](/links/web/hosting).
 - You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Interface overview <a name="interface"></a>
 

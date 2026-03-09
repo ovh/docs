@@ -32,7 +32,17 @@ Sie möchten Ihre Website über einen bestimmten Domainnamen erreichbar machen? 
 
 - Sie haben einen [Domainnamen](/links/web/domains).
 - Sie nutzen eine diesem Domainnamen zugeordnete DNS-Zone bei OVHcloud.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## In der praktischen Anwendung
 

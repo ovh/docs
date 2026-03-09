@@ -234,10 +234,6 @@ public-cloud-data-analytics-common: Common
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
-public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
-public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
 public-cloud-data-analytics-kafka-configuration: Konfiguracja
 public-cloud-data-analytics-kafka-getting-started: Pierwsze kroki
 public-cloud-data-analytics-kafka-key-concepts: Kluczowe pojęcia
@@ -248,6 +244,11 @@ public-cloud-data-analytics-kafka-tutorials: Tutorials
 public-cloud-data-analytics-kafka: Kafka
 public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
+public-cloud-data-analytics-clickhouse: Clickhouse
+public-cloud-data-analytics-clickhouse-key-concepts: Key concepts
+public-cloud-data-analytics-clickhouse-getting-started: Getting started
+public-cloud-data-analytics-clickhouse-configuration: Configuration
+public-cloud-data-analytics-clickhouse-tutorials: Tutorials
 public-cloud-data-analytics: Analytics
 public-cloud-data-analytics-general-information: General information
 public-cloud-data-analytics-general-guides: General guides
@@ -493,6 +494,7 @@ storage-block-storage-cloud-disk-array-additional-resources: Dodatkowe zasoby
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
+storage-backup-and-disaster-recovery-solution-third-party-software: Oprogramowanie firm zewnętrznych
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
 storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Kluczowe pojęcia

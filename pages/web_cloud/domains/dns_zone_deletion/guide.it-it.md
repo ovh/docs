@@ -28,9 +28,20 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una zona DNS nello Spazio Cliente.
 - Disporre di diritti sufficienti sulla zona DNS da eliminare. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei propri servizi](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zone DNS`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!primary]
 >

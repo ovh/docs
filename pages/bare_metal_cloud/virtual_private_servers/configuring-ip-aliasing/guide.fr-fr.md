@@ -39,19 +39,19 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Avoir les connaissances de base sur les réseaux et leur administration
 
 > [!warning]
-> Les adresses Additional IP actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+> Les adresses Additional IP sont actuellement indisponibles pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## En pratique
 
-Ce guide contient les configurations des distributions/systèmes d'exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre serveur via SSH ou via une session de connexion à l'interface graphique utilisateur (RDP pour un VPS Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
+Ce guide contient les configurations des distributions/systèmes d'exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre serveur via SSH ou via une interface graphique (RDP pour un VPS Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
 
 > [!primary]
 >
-En ce qui concerne les différentes versions de distributions, veuillez noter que la procédure appropriée pour configurer votre interface réseau ainsi que les noms de fichiers peuvent avoir été modifiés. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation.
+> En ce qui concerne les différentes versions de distributions, veuillez noter que la procédure appropriée pour configurer votre interface réseau ainsi que les noms de fichiers peuvent avoir été modifiés. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation.
 >
 
-**Veuillez prendre note de la terminologie suivante qui sera utilisée dans les exemples de code et les instructions détaillées dans ce guide :**
+**La terminologie suivante est utilisée dans les exemples de code et les instructions de ce guide :**
 
 |Terme|Description|Exemples|
 |---|---|---|
@@ -59,7 +59,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
-Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur certains systèmes d'exploitation, vous devrez l'installer avant de pouvoir l'utiliser. Si c'est le cas, vous serez invité à le faire. Vous pouvez bien sûr utiliser l'éditeur de texte de votre choix.
+Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur certains systèmes d'exploitation, vous devrez l'installer avant de l'utiliser. Si c'est le cas, vous serez invité à le faire. Vous pouvez bien sûr utiliser l'éditeur de texte de votre choix.
 
 > [!success]
 > Sélectionnez l'onglet correspondant à votre système d'exploitation.
@@ -87,7 +87,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> **Étape 2 : créer une sauvegarde**
 >>
->> Par défaut, le fichier de configuration est situé dans le chemin `etc/network/interfaces.d`.
+>> Par défaut, le fichier de configuration est situé dans le chemin `/etc/network/interfaces.d`.
 >>
 >> Dans notre exemple, notre fichier s'appelle `50-cloud-init`, donc nous faisons une copie du fichier `50-cloud-init` en utilisant la commande suivante :
 >>
@@ -184,7 +184,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> sudo nano /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> Editez le fichier avec le contenu ci-dessous, en remplaçant `INTERFACE_NAME` et `ADDITIONAL_IP` par vos propres valeurs :
+>> Éditez le fichier avec le contenu ci-dessous, en remplaçant `INTERFACE_NAME` et `ADDITIONAL_IP` par vos propres valeurs :
 >>
 >> ```yaml
 >> network:
@@ -370,13 +370,13 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 > **cPanel**
 >> cPanel
 >>
->> **Étape 1 : accéder à la section de gestion des IP du WHM.**
+>> **Étape 1 : accéder à la section de gestion des IP du WHM**
 >>
 >> Dans l'espace client WHM, cliquez sur `IP Functions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 >>
 >> ![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 >>
->> **Étape 2 : ajouter les informations des Additional IP.**
+>> **Étape 2 : ajouter les informations des Additional IP**
 >>
 >> Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 >>
@@ -388,7 +388,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >> > Attention, si vous avez plusieurs IP à configurer sur un même bloc et que vous les ajoutez toutes en même temps, le système WHM vous forcera à utiliser le masque de sous-réseau `255.255.255.0`. Il n'est pas recommandé d'utiliser cette configuration, il faut ajouter chaque IP individuellement pour pouvoir utiliser le masque de sous-réseau approprié `255.255.255.255`.
 >> >
 >>
->> **Étape 3 : vérifier la configuration IP actuelle.**
+>> **Étape 3 : vérifier la configuration IP actuelle**
 >>
 >> De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 >>
@@ -403,7 +403,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> ![accès à la gestion des adresses IP](images/pleskip1.png){.thumbnail}
 >>
->> Cliquez sur `IP Addresses`{.action} sous **Tools & Settings**.
+>> Cliquez sur `IP Addresses`{.action} sous **Tools & Resources**.
 >>
 >> **Étape 2 : ajouter les informations des Additional IP**
 >>
@@ -450,11 +450,11 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> **Étape 2 : modifier les propriétés IPv4**
 >>
->> 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de gestion`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
+>> 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de configuration`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
 >> 2. Effectuez un clic droit sur `Connexion au réseau local`{.action} ;
 >> 3. Cliquez sur `Propriétés`{.action} ;
 >> 4. Sélectionnez `Protocole Internet Version 4 (TCP/IPv4)`{.action}, puis cliquez sur `Propriétés`{.action} ;
->> 5. Cliquez sur `Utiliser l’adresse IP suivante`{.action} et renseignez l’IP principale de votre serveur, le masque sous-réseau et la passerelle par défaut obtenus grâce à la commande `ipconfig`{.action} ci-dessus. Dans la case « Serveur DNS Préféré », tapez « 213.186.33.99 ».
+>> 5. Cliquez sur `Utiliser l’adresse IP suivante`{.action} et renseignez l’IP principale de votre serveur, le masque sous-réseau et la passerelle par défaut obtenus grâce à la commande `ipconfig`{.action} ci-dessus. Dans la case « Serveur DNS Préféré », tapez `213.186.33.99`.
 >>
 >> ![change the ip configuration](images/configure-main-ip.png){.thumbnail}
 >>
@@ -467,7 +467,7 @@ Dans les exemples ci-dessous, nous utiliserons l'éditeur de texte `nano`. Sur c
 >>
 >> Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP ». Entrez votre adresse Additional IP et le masque de sous-réseau (255.255.255.255).
 >>
->> ![advance configuration section](images/configure-additional-ip.png){.thumbnail}
+>> ![section de configuration TCP/IP avancée](images/configure-additional-ip.png){.thumbnail}
 >>
 >> Confirmez en cliquant sur `Ajouter`{.action}.
 >>
@@ -509,7 +509,7 @@ Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande s
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
+Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, créez un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) auprès de notre support.
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -517,6 +517,6 @@ Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis 
 
 [OVHcloud Marketplace](/links/transversal/marketplace)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+Pour bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

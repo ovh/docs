@@ -13,7 +13,7 @@ updated: 2025-12-19
 
 In this tutorial, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context.
 
-To do this, we will use **[LangChain](https://github.com/langchain-ai/langchain)**, a powerful open-source framework that simplifies working with LLMs in both Python and JavaScript. Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
+To do this, we will use **[LangChain](https://github.com/langchain-ai/langchain)**, a powerful open-source framework that simplifies working with LLMs in both Python and JavaScript. Combined with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ## Definition
 

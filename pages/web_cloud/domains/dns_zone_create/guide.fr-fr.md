@@ -22,7 +22,17 @@ Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour votr
 
 - Disposer d’un nom de domaine.
 - Le nom de domaine concerné ne doit pas déjà disposer d'une zone DNS (active ou non) chez OVHcloud ou faire l'objet d'une opération ou d'une commande en cours chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## En pratique
 

@@ -25,7 +25,17 @@ An "**Index of**" page appears in at least one of the following cases:
 
 - A [domain name](/links/web/domains)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

@@ -25,28 +25,32 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 ## Wymagania początkowe
 
 - Posiadanie oferty [hostingu OVHcloud](/links/web/hosting).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
 Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](/links/manager). 
 
-Kliknij poniższe zakładki, aby wyświetlić kolejne **3** etapy.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> Na stronie, która się wyświetli kliknij zakładkę Na stronie, która się wyświetli przejdź do zakładki `Więcej`{.action} i kliknij `Skrypty e-mail`{.action}.
 >>

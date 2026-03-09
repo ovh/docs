@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3"
 excerpt: "Découvrez comment migrer un Object Storage Swift OVHcloud vers un Object Storage OVHcloud compatible S3 en utilisant Rclone"
-updated: 2025-10-16
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -47,7 +47,7 @@ Après avoir installé **Rclone** sur votre machine virtuelle, configurez sa con
 #### 2.1 - Utilisation de la commande Rclone config
 
 ```bash
-$ rclone config
+rclone config
 ```
 
 Cette commande ouvrira le menu de configuration et vous guidera pas à pas dans la configuration. Ensuite :
@@ -60,13 +60,13 @@ Cette commande ouvrira le menu de configuration et vous guidera pas à pas dans 
 Comme indiqué, vous pouvez également créer et modifier vous-même le fichier de configuration avec la commande suivante :
 
 ```bash
-$ rclone config file
+rclone config file
 ```
 
 Si le fichier de configuration n'existe pas, vous serez invité à ajouter la configuration suivante en utilisant votre éditeur préféré. Par exemple, sous Linux, vous pouvez utiliser `nano` :
 
 ```bash
-$ nano /home/<votre utilisateur Linux>/.config/rclone/rclone.conf
+nano /home/<linux_username>/.config/rclone/rclone.conf
 ```
 Dans les deux cas, vos blocs de configuration doivent ressembler à :
 
@@ -78,20 +78,20 @@ auth_version = 3
 auth = https://auth.cloud.ovh.net/v3
 endpoint_type = public
 tenant_domain = default
-tenant = <numéro de tenant (locataire)>
+tenant = <tenant_id>
 domain = default
-user = <votre utilisateur>
-key = <votre clé>
+user = <swift_username>
+key = <swift_password>
 region = <région>
 
 [ovhcloud-s3]
 type = s3
 provider = OVHcloud
 env_auth = false
-access_key_id = OVH-ACCESS-KEY
-secret_access_key = OVH-SECRET-KEY
-endpoint = s3.<région>.io.cloud.ovh.net
-region = <région>
+access_key_id = <s3_access_key>
+secret_access_key = <s3_secret_key>
+endpoint = s3.<region>.io.cloud.ovh.net
+region = <region>
 ```
 
 > [!primary]
@@ -99,30 +99,30 @@ region = <région>
 > Pour obtenir la liste des endpoints des régions OVHcloud, consultez notre guide « [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](/pages/storage_and_backup/object_storage/s3_location) ».
 >
 
-Vous pouvez ensuite tester vos deux connexions en utilisant la commande `rclone config` comme suit :
+Vous pouvez ensuite tester vos deux connexions en utilisant la commande `rclone config` :
 
 ```bash
-$ rclone config
+rclone config
 ```
 
 ### 3 - Exécution de Rclone
 
 En fonction de votre stratégie, vous pouvez utiliser deux commandes différentes pour lancer la migration.
 
-Vous pouvez utilisez la commande `rclone sync` pour migrer un ou tous les buckets. Comme indiqué dans la documentation, la commande `rclone sync` rendra la source et la destination identiques. Soyez donc prudent lors de son utilisation.
+Vous pouvez utiliser la commande `rclone sync` pour migrer un ou tous les buckets. Comme indiqué dans la documentation, la commande `rclone sync` rendra la source et la destination identiques. Soyez prudent lors de son utilisation.
 
 Vous pouvez également utiliser la commande `rclone copy` qui copiera les fichiers de votre source vers votre destination.
 
-Dans les deux cas, n'oubliez pas de remplacer `source-container-name` et `destination-bucket-name` par le nom de votre conteneur source Swift OVHcloud et le nom de votre bucket de destination OVHcloud compatible S3, respectivement :
+Dans les deux cas, n'oubliez pas de remplacer `<source_container_name>` et `<destination_bucket_name>` par le nom de votre conteneur source Swift OVHcloud et le nom de votre bucket de destination OVHcloud compatible S3, respectivement :
 
 ```bash
-$ rclone sync ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-bucket-name/ --progress
+rclone sync ovhcloud-swift:<source_container_name>/ ovhcloud-s3:<destination_bucket_name>/ --progress
 ```
 
 ou :
 
 ```bash
-$ rclone copy ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-bucket-name/ --progress
+rclone copy ovhcloud-swift:<source_container_name>/ ovhcloud-s3:<destination_bucket_name>/ --progress
 ```
 
 `--progress` affiche l'avancement pendant le transfert.
@@ -134,8 +134,8 @@ Nous vous recommandons de comparer les buckets source et destination après la m
 Vous pouvez vérifier la taille des deux buckets et le nombre d'objets en utilisant cette commande :
 
 ```bash
-rclone size <nom de votre fournisseur source>:source-bucket-name/
-rclone size ovhcloud:ovh-bucket-name/
+rclone size ovhcloud-swift:<source_container_name>/
+rclone size ovhcloud-s3:<destination_bucket_name>/
 ```
 
 ## Aller plus loin

@@ -25,7 +25,17 @@ La modalità Rescue di OVHcloud consente comunque di accedere con una password p
 ## Prerequisiti
 
 - Un’ [istanza Public Cloud](/links/public-cloud/compute) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 

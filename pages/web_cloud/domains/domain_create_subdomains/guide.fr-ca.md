@@ -32,8 +32,18 @@ Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de dom
 
 - Disposer d'au moins un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS active pour votre nom de domaine. Si besoin, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des droits suffisants sur l’ensemble des services concernés. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

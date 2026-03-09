@@ -13,7 +13,16 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 ## Prerequisiti
 
 - Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Procedura
 

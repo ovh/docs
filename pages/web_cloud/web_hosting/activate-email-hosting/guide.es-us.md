@@ -16,8 +16,6 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 - Disponer de un [dominio](/links/web/domains) en su área de cliente de OVHcloud.
 - Tener contratado un [plan de hosting](/links/web/hosting).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-
 > [!warning]
 >
 > La opción "dirección(es) de correo electrónico incluida(s) con su alojamiento web" no está disponible para un nombre de dominio externo (no registrado en OVHcloud o registrado en una cuenta de OVHcloud diferente a la suya).
@@ -27,33 +25,38 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 >
 > Finalmente, si su nombre de dominio ya está vinculado a la opción "dirección(es) de correo electrónico incluida(s)" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Póngase en contacto con el actual administrador del alojamiento web con la ayuda de esta guía.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
 
 ### Activación de las direcciones de correo electrónico incluidas con el plan de hosting
 
-Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
 >> Haga clic en el botón `...`{.action} a la derecha y seleccione `Activar mi solución de correo`{.action}.
 >>
 >> ![Activar el correo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
-> **Etapa 4**
+> **Etapa 3**
 >>
 >> Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
 >>
@@ -73,22 +76,16 @@ Es posible eliminar definitivamente la solución de correo asociada a su alojami
 >
 > Tenga en cuenta que esta acción es irreversible. Tras la baja del servicio, no será posible reactivar la solución de correo.
 
-Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **2** etapas.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etapa 2**
->>
->> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en [este enlace](/links/control-panel/web-hosting) y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etapa 3**
+> **Etapa 2**
 >>
 >> En el cuadro **Configuración**, encontrará la mención **Direcciones de correo**.
 >> Haga clic en el botón `...`{.action} a la derecha y seleccione `Dar de baja la opción de correo`{.action}.

@@ -19,7 +19,18 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 ## Wymagania początkowe
 
-- Zalogowanie się do [Panelu klienta OVHcloud](/links/manager) jako [kontakt księgowy](/pages/account_and_service_management/account_information/managing_contacts) dla Twojej usługi.
+- Posiadanie statusu [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts) dla Twojej usługi
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Link bezpośredni:** [Invoices](/links/control-panel/billing-invoices)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Invoices`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## W praktyce
 
@@ -48,7 +59,7 @@ Faktura za usługę OVHcloud jest wysyłana po opłaceniu zamówienia lub odnowi
 
 #### Wyświetlanie i zarządzanie fakturami
 
-Aby sprawdzić faktury, przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w nowym menu, które się pojawi, kliknij `Faktury`{.action}.
+Aby sprawdzić faktury, otwórz stronę [Faktury](/links/control-panel/billing-invoices).
 
 ![Płatności](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 

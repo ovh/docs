@@ -13,7 +13,17 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -21,10 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ### Étape 1 : accéder à la gestion du mot de passe de la ligne SIP
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Gestion`{.action}, puis cliquez sur le bouton `Mot de passe SIP`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur le bouton `Mot de passe SIP`{.action}.
 
 > [!primary]
 >

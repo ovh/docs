@@ -14,11 +14,21 @@ Cela signifie que ce crédit cloud est débité en premier et que toute dette se
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ouvrez `Crédits & Vouchers`{.action} dans le menu de gauche sous **Paramètres**.
+Ouvrez `Crédits & Vouchers`{.action} dans le menu de gauche sous **Paramètres**.
 
 > [!warning]
 >

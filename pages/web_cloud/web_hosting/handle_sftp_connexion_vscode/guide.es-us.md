@@ -21,6 +21,17 @@ Si tiene contratado un plan de hosting de OVHcloud, puede acceder a un espacio d
 - Tener contratado un plan de hosting de OVHcloud (/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) en el equipo
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedimiento
  
 > [!warning]

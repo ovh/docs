@@ -32,9 +32,20 @@ O processo de mudança de agente de registo (*registar*) para os nomes de domín
 ## Requisitos
 
 - Ter um [nome de domínio .uk](/links/web/domains) registado na OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) e ter os direitos necessários para gerir o nome de domínio (ser administrador do nome de domínio)
 - O nome de domínio deve estar sempre ativo, isto é, não deve ter expirado ou ser bloqueado pela OVHcloud
 - O nome de domínio não deve ser objeto de um litígio em curso no [Registo Nominet](https://www.nominet.uk/)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

@@ -18,9 +18,18 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Un identifiant Apple avec un abonnement **iCloud+**.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

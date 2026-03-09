@@ -27,7 +27,17 @@ OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur d
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip) sans téléphone OVHcloud associé.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 > [!primary]
 > Une ligne SIP **fournie avec un téléphone OVHcloud** ne peut pas être enregistrée sur un softphone ou sur votre propre téléphone personnel. Si c'est le cas de votre ligne et que vous souhaitez utiliser un softphone ou votre propre téléphone, nous vous invitons à [commander une ligne SIP supplémentaire](/links/telecom/telephonie-voip), fournie sans téléphone OVHcloud.
@@ -52,12 +62,9 @@ Vous devez **impérativement** disposer des quatre informations suivantes afin d
 
 #### Login, Domain et Proxy sortant
 
-Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous :
+Afin de retrouver votre **Login**, **Domain** et **Proxy sortant**, suivez les étapes ci-dessous.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 
 ![informations générales](images/general-information.png){.thumbnail}
 

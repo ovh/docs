@@ -43,7 +43,17 @@ So sparen Sie Zeit bei der Administration und können sich etwa auf Folgendes ko
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie haben einen [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

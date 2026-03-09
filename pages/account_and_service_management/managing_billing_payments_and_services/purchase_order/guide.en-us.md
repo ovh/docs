@@ -48,7 +48,7 @@ For OVHcloud, the document must contain at least the following information:
 
 ### How to enter a Purchase Order (PO) reference in your OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), then, directly on the page that pops up, click `View my orders`{.action}.
+Open the [Orders](/links/control-panel/billing-orders) page.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 

@@ -1,86 +1,88 @@
 ---
-title: Redimensionar una instancia desde el área de cliente de OVHcloud
-excerpt: Cómo redimensionar una instancia desde el área de cliente de OVHcloud
-updated: 2025-04-28
+title: Redimensionar una instancia a través del área de cliente de OVHcloud
+excerpt: "Cómo redimensionar una instancia Public Cloud desde el área de cliente de OVHcloud"
+updated: 2026-03-04
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
-En algunos casos, bien debido a un aumento de la actividad o a sus nuevas necesidades, es posible que su instancia no pueda dar respuesta a esta nueva carga debido a la falta de recursos. Sin embargo, Public Cloud le permite aumentar los recursos de su instancia, con tal solo unos clics.
+Si su instancia no dispone de recursos suficientes debido a un aumento de la actividad o a nuevas necesidades, puede aumentar sus recursos en pocos clics gracias a Public Cloud.
 
-**Esta guía explica los pasos que debe seguir para cambiar el tamaño de su instancia desde el área de cliente de OVHcloud**
+**Esta guía explica cómo redimensionar su instancia desde el área de cliente de OVHcloud.**
 
 > [!warning]
 >
-> Sólo es posible redimensionar a un modelo superior para los modelos clásicos.
-> Además, esta operación interrumpe la instancia durante la operación.
-> 
+> Solo es posible redimensionar a un modelo superior para los modelos clásicos.
+> Además, esta operación provoca la interrupción de la instancia durante el tiempo de la operación.
+>
 
 > [!success]
 >
-> Las instancias de tipo *flex* permiten redimensionar hacia modelos superiores o inferiores gracias a un único tamaño de disco.
-> 
+> Las instancias de tipo *flex* permiten el redimensionamiento hacia modelos superiores o inferiores gracias a un tamaño de disco único.
+>
 
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En el menú de la izquierda, haga clic en `Instancias`{.action}. 
+En el menú de la izquierda, haga clic en `Instancias`{.action}.
 
-Haga clic en `...`{.action} a la derecha de la instancia y seleccione `Editar`{.action}.
+Haga clic en `...`{.action} a la derecha de la instancia y seleccione `Editar`{.action}. También puede acceder a esta acción desde los detalles de la instancia haciendo clic en su nombre y luego en `Editar la plantilla`{.action}.
 
-![public-cloud](images/editinstance.png){.thumbnail}
-
-En la nueva pestaña, desplace la página hasta la sección **Modelo** para seleccionar el modelo que desee.
-
-![public-cloud](images/template.png){.thumbnail}
+En la nueva pestaña, desplace la página hasta la sección **Modelo** para seleccionar el modelo de su elección.
 
 > [!primary]
 >
-> En los modelos clásicos, puede cambiar a cualquier modelo con un disco similar o mayor. No es posible pasar a un modelo con un disco más pequeño.<br/>
+> Para los modelos clásicos, puede cambiar a cualquier modelo con un disco similar o mayor. No es posible cambiar a un modelo con un disco más pequeño.<br/>
 >
-> Solo **las instancias flexibles** pueden actualizarse y degradarse, conservando un tamaño de disco fijo de 50 GB.
+> Solo **las instancias flexibles** pueden actualizarse o degradarse, conservando un tamaño de disco fijo de 50 GB.
 >
 
-Si su disco es igual o inferior a 50 GB, puede pasar a una `instancia flexible`{.action} si lo desea.
+Si su disco es igual o inferior a 50 GB, puede cambiar a una `Instancia flexible`{.action} si lo desea.
 
 > [!warning]
-> Atención: Si edita una instancia de tipo *flexible*, no es posible migrar a una instancia clásica desde el área de cliente. Para más información, consulte nuestra guía [Cambiar de una instancia flex a una instancia clásica](/pages/public_cloud/compute/revert_a_flex_instance).
+> Si edita una instancia de tipo *flex*, no es posible volver a una instancia clásica a través del área de cliente. Para más información, consulte nuestra guía sobre [Cambiar de una instancia flex a una instancia clásica](/pages/public_cloud/compute/revert_a_flex_instance).
 >
 
-Una vez realizada la selección, haga clic en `Modificar el modelo`{.action} para confirmar la elección.
+Una vez realizada la selección, haga clic en `Editar la plantilla`{.action} para confirmar su elección.
 
 ### Redimensionar el disco en Windows
 
-Atención: Al redimensionar una instancia Windows, el tamaño de la partición no se actualiza automáticamente, por lo que deberá ampliarse utilizando el **disk manager**:
+Al redimensionar una instancia Windows, el tamaño de la partición no se actualiza automáticamente. Debe ampliarlo utilizando el **administrador de discos**:
 
-- Haga clic derecho en el menú `Start`{.action} e inicie el gestor del disco haciendo clic en `Disk Management`{.action}:
+- Haga clic derecho en el menú `Start`{.action} e inicie el administrador de discos haciendo clic en `Disk Management`{.action}:
 
-![public-cloud](images/2980.png){.thumbnail}
+![Menú contextual del menú Inicio con la opción Administración de discos](images/2980.png){.thumbnail}
 
 - Haga clic derecho en la partición principal y seleccione `Extend Volume`{.action}.
 
-![public-cloud](images/2981a.png){.thumbnail}
+![Clic derecho en la partición principal para ampliar el volumen](images/2981a.png){.thumbnail}
 
-- Haga clic en `Next`{.action} para acceder al `Extend Volume Wizard`. Seleccione los recursos del disco que quiera ampliar y haga clic en `Next`{.action}. 
+- En el menú `Extend Volume Wizard`, haga clic en `Next`{.action}. Seleccione los recursos del disco a ampliar y haga clic en `Next`{.action}.
 
-![public-cloud](images/2978a.png){.thumbnail}
+![Asistente de extensión de volumen con selección de recursos del disco](images/2978a.png){.thumbnail}
 
-Haga clic en `Finish`{.action} para aceptar la opción que prefiera.
+Haga clic en `Finish`{.action} para confirmar su elección.
 
-![public-cloud](images/wizard2021.png){.thumbnail}
+![Paso de finalización del asistente de extensión de volumen](images/wizard2021.png){.thumbnail}
 
-- El nuevo tamaño del disco se mostrará en el gestor de disco.
+- El nuevo tamaño del disco se mostrará en el administrador de discos.
 
-![public-cloud](images/2979.png){.thumbnail}
+![Administrador de discos mostrando el nuevo tamaño](images/2979.png){.thumbnail}
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

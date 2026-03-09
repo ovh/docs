@@ -1,7 +1,7 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 
 - Tener una [instancia Public Cloud](/links/public-cloud/compute) en su proyecto de Public Cloud.
 - Tener un [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto.
-- Tienes acceso a su [área de cliente de OVHcloud](/links/manager).
 - Tener acceso administrativo (sudo) a su instancia a través de SSH (Linux) o RDP (Windows).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -110,8 +120,6 @@ Haga clic en el botón `...`{.action} a la derecha del volumen correspondiente y
 En la nueva ventana, introduzca el nuevo tamaño del volumen y haga clic en `Editar volumen`{.action}.
 
 ![cuadro de mando](images/increase-disk-03.png){.thumbnail}
-
-Asegúrese de que el volumen está asociado a su instancia antes de continuar. En caso contrario, haga clic en `...`{.action} en la línea de volumen y seleccione `Asociar a la instancia`{.action}.
 
 ### Ampliar la partición (instancia Linux)
 
@@ -201,7 +209,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Una vez finalizada esta operación, desmonte el volumen de la instancia y vuelva a montarlo para asegurarse de que los parámetros QoS actualizados (IOPS y ancho de banda) se hayan aplicado correctamente.
+
 ### Ampliar la partición (instancia Windows)
+
+Antes de continuar, monte el volumen en la instancia. Haga clic en `...`{.action} en la fila del volumen y seleccione `Asociar a la instancia`{.action}.
 
 Establezca una conexión RDP (Remote Desktop) en su instancia Windows.
 
@@ -230,6 +242,8 @@ Haga clic en `Finalizar`{.action} para finalizar el proceso.
 El volumen redimensionado incluye ahora el espacio en disco adicional.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Una vez finalizada esta operación, desmonte el volumen de la instancia y vuelva a montarlo para asegurarse de que los parámetros QoS actualizados (IOPS y ancho de banda) se hayan aplicado correctamente.
 
 ## Más información
 

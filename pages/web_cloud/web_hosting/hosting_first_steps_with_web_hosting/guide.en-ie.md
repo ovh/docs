@@ -32,8 +32,18 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 - A [OVHcloud Web Hosting](/links/web/hosting) plan with at least one database available.
 - An email confirming that your web hosting plan has been set up.
 - A [domain name](/links/web/domains) and an associated DNS zone at OVHcloud.
-- Access to the [OVHcloud Control Panel](/links/manager), in the section `Web Cloud`{.action}.
 - Access to all these services (Web Hosting, Domain name, DNS zone) from a single OVHcloud account.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

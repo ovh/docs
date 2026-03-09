@@ -37,7 +37,16 @@ Dans certaines situations, vous pouvez être amené à consulter / récupérer l
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Sélectionnez votre service de base de données
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## En pratique
 

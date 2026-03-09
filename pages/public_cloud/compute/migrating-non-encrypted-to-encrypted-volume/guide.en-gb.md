@@ -16,6 +16,17 @@ This guide explains how to migrate your data from a standard Block Storage volum
 - An existing Block Storage volume (source)
 - Administrator (root or sudo) access to your instance
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1: Create a LUKS volume

@@ -25,6 +25,17 @@ Sie sind der Inhaber eines Domainnamens bei OVHcloud und möchten ihn mit einem 
 - Sie verfügen über ein Hosting bei GoDaddy.
 - Sie haben Zugriff auf die Verwaltung dieses Hostings bei GoDaddy.
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 Bevor Sie dieser Anleitung folgen, empfehlen wir, sich mit der Konfiguration von DNS-Zonen vertraut machen. Nutzen Sie dazu unsere Anleitung "[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".

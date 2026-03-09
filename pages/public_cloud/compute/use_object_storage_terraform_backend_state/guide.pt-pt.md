@@ -16,9 +16,19 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - [Terraform CLI](https://www.terraform.io/downloads) installed
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Before you begin
 

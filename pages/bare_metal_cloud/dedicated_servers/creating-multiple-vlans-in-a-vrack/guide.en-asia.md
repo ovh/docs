@@ -1,20 +1,20 @@
 ---
 title: Creating multiple vLANs in a vRack
 excerpt: This guide will show you how to create multiple vLANs within the vRack
-updated: 2023-09-12
+updated: 2026-02-20
 ---
 
 ## Objective
 
-The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) enables you to create only one vLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 vLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
+The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) enables you to create only one VLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 VLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
 
 **This guide will show you how to create multiple vLANs within the vRack.**
 
 ## Requirements
 
 * An active [vRack](/links/network/vrack) service in your account
-* Two or more [vRack-compatible servers](https://www.ovh.com/asia/dedicated-servers/)
-* Administrative (sudo) access to the server via SSH
+* Two or more [vRack-compatible servers](/links/bare-metal/bare-metal)
+* Administrative (sudo) access to your server via SSH (Linux) or RDP (Windows)
 * Access to the [OVHcloud Control Panel](/links/manager)
 * Your chosen private IP address range
 * You must have completed the [vRack configuration guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
@@ -30,119 +30,331 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 
 > [!primary]
 >
-> As an example, we'll use **eno2** for Ubuntu and **eth1** for Debian as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
+> As an example, we'll use **eno2** as the network interface, **10** and **11** as the VLAN tags, and **192.168.0.0/16** and **10.0.0.0/16** as the private IP address ranges.
+>
+> All commands must be adapted to the distribution used. Please refer to the official documentation for your distribution if you have any doubts.
 >
 
-#### Ubuntu 20 & 21 
-
-These commands were executed under Ubuntu 21.10 (Impish Indri).
-
-First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
-
-```sh
-sudo apt-get install vlan
-```
-
-Load the 8021q kernel module:
-
-```sh
-sudo su -c 'echo "8021q" >> /etc/modules'
-```
-
-Create or edit this configuration file to prevent changes to your network configuration from being made automatically:
-
-```sh
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
-
-And add this line:
-
-```sh
-network: {config: disabled}
-```
-
-Get the network interface name and it's MAC address:
-
-```sh
-ip a
-```
-
-Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
-
-![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
-
-Add the network configuration for this network interface and the VLAN declaration in the following file:
-
-```sh
-sudo nano /etc/netplan/50-cloud-init.yaml
-```
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        eno2:
-            match:
-                macaddress: d0:50:99:d6:6b:14
-        eno1:
-            ...
-            ...
-    vlans:
-        vlan10:
-            id: 10                      # VLAN ID    
-            link: eno2                  # Interface name
-            addresses:
-            - 192.168.0.14/16
-```
-
-Save and close the file, then run the following commands:
-
-```sh
-sudo netplan try
-sudo netplan apply
-```
-
-Use the following command to confirm the configuration:
-
-```sh
-ip a
-```
-
-![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
-
-#### Debian
-
-First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
-
-```sh
-# sudo apt-get install vlan
-```
-
-Next, we need to create a vLAN tag. The tag is an identifier that allows you differentiate between multiple vLANs:
-
-```sh
-# vconfig add eth1 10
-
-Added VLAN with VID == 10 to IF -:eth1:-
-```
-
-Next, we need to declare the IP address range within the vRack and tag it with our identifier. We can do this with the following command:
-
-```sh
-# ip addr add 192.168.0.0/16 dev eth1.10
-```
-
-Lastly, we need to amend the configuration of our network interface so that it takes into account the vLAN tag. For this step, you will need to open your network interface configuration file for editing, and amend it as shown below:
-
-```sh
-# sudo /etc/network/interfaces
-
-auto eth1.10
-iface eth1.10 inet static
-address 192.168.0.50
-netmask 255.255.0.0
-broadcast 192.168.255.255
-```
+> [!tabs]
+> **Debian 11**
+>>
+>> First, establish an SSH connection to your server and run the following commands from the command line to install the VLAN package on your server:
+>>
+>> ```sh
+>> sudo apt update
+>> sudo apt install vlan
+>> ```
+>>
+>> Next, load the 8021q kernel module:
+>>
+>> ```sh
+>> sudo modprobe 8021q
+>> ```
+>>
+>> To verify that the module is loaded:
+>>
+>> ```sh
+>> user@server:~$ lsmod | grep 8021q
+>> 8021q                  40960  0
+>> garp                   16384  1 8021q
+>> mrp                    20480  1 8021q
+>> ```
+>>
+>> Run the following command to ensure the modules are permanently loaded at boot:
+>>
+>> ```sh
+>> sudo su -c 'echo "8021q" >> /etc/modules'
+>> ```
+>>
+>> Next, retrieve your interface names and identify the private interface:
+>>
+>> ```sh
+>> ip a
+>> ```
+>>
+>> Next, create a VLAN tag. The tag serves as an identifier, allowing you to differentiate between multiple VLANs:
+>>
+>> ```sh
+>> sudo ip link add link <parent-interface> name <vlan-identifier> type vlan id <ID>
+>> ```
+>>
+>> **In this example:**
+>>
+>> ```sh
+>> sudo ip link add link eno2 name eno2.10 type vlan id 10
+>> ```
+>>
+>> Use the same command for each VLAN tag you wish to add.
+>>
+>> Next, declare the private IP address range within the vRack and tag it with the identifier using the following command:
+>>
+>> ```sh
+>> sudo ip addr add 192.168.0.10/16 dev eno2.10
+>> ```
+>>
+>> Amend the configuration of your network interface to incorporate the VLAN tag. Open your network interface configuration file and add the following entries:
+>>
+>> ```sh
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>>
+>> auto eno2.10
+>> iface eno2.10 inet static
+>> address 192.168.0.10
+>> netmask 255.255.0.0
+>> broadcast 192.168.255.255
+>> vlan-raw-device eno2
+>> ```
+>>
+>> For multiple configured VLANs, your network configuration should look like this:
+>>
+>> ![debian VLAN](images/multiple_vlan_debian.png){.thumbnail}
+>>
+> **Ubuntu and Debian 12+**
+>>
+>> These commands were executed under Ubuntu 24.04 (Noble Numbat).
+>>
+>> First, establish an SSH connection to your server and run the following commands from the command line to install the VLAN package on your server:
+>>
+>> ```sh
+>> sudo apt update
+>> sudo apt install vlan
+>> ```
+>>
+>> Next, load the 8021q kernel module:
+>>
+>> ```sh
+>> sudo modprobe 8021q
+>> ```
+>>
+>> To verify that the module is loaded:
+>>
+>> ```sh
+>> user@server:~$ lsmod | grep 8021q
+>> 8021q                  40960  0
+>> garp                   16384  1 8021q
+>> mrp                    20480  1 8021q
+>> ```
+>>
+>> Run the following command to ensure the modules are permanently loaded at boot:
+>>
+>> ```sh
+>> sudo su -c 'echo "8021q" >> /etc/modules'
+>> ```
+>>
+>> Create or edit the `cloud.cfg` configuration file to prevent automatic changes to your network configuration:
+>>
+>> ```sh
+>> sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+>> ```
+>>
+>> Add the following line:
+>>
+>> ```sh
+>> network: {config: disabled}
+>> ```
+>>
+>> Retrieve the network interface name and its MAC address:
+>>
+>> ```sh
+>> ip a
+>> ```
+>>
+>> Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
+>>
+>> ![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
+>>
+>> Add the network configuration for this network interface and the VLAN information in the following file, ensuring it is placed directly beneath the `version: 2` line. Replace the values with your own:
+>>
+>> ```sh
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>>
+>> ```yaml
+>> network:
+>>     version: 2
+>>     ethernets:
+>>         eno2:
+>>             match:
+>>                 macaddress: d0:50:99:d6:6b:14
+>>     vlans:
+>>         vlan10:
+>>             id: 10                      # VLAN ID    
+>>             link: eno2                  # Interface name
+>>             addresses:
+>>             - 192.168.0.10/16
+>>     ethernets:                    
+>>         eno1:
+>>             ...
+>>             ...
+>> ```
+>>
+>> For multiple configured VLANs, your network configuration should look like this:
+>>
+>> ![ubuntu VLAN](images/multiple_vlan_ubuntu.png){.thumbnail}
+>>
+>> Save and close the file, then run the following command:
+>>
+>> ```sh
+>> sudo netplan apply
+>> ```
+>>
+>> Use the following command to ensure the configuration has been applied correctly:
+>>
+>> ```sh
+>> ip a
+>> ```
+>>
+>> ![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
+>>
+> **AlmaLinux and Rocky Linux (8/9)**
+>>
+>> Before you begin, establish an SSH connection to your server and run the following command to load the 8021q kernel module:
+>>
+>> ```sh
+>> sudo modprobe 8021q
+>> ```
+>>
+>> To verify that the module is loaded:
+>>
+>> ```sh
+>> user@server:~$ lsmod | grep 8021q
+>> 8021q                  40960  0
+>> garp                   16384  1 8021q
+>> mrp                    20480  1 8021q
+>> ```
+>>
+>> Next, run the following command to ensure the modules are permanently loaded at boot:
+>>
+>> ```sh
+>> sudo su -c 'echo "8021q" >> /etc/modules'
+>> ```
+>>
+>> Retrieve the interface names and identify the private interface:
+>>
+>> ```sh
+>> ip a
+>> ```
+>> 
+>> Next, create a subinterface configuration file for the VLAN in the main network configuration file.
+>>
+>> In this example, the file is named `ifcfg-eno2.10`, where eno2 refers to the private network interface and `10` the VLAN ID.
+>>
+>> ```sh
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eno2.10
+>> ```
+>> 
+>> Add the following entries to the configuration file, ensuring you replace the values with your own:
+>>
+>> ```console
+>> TYPE=Vlan
+>> PHYSDEV=eno2
+>> VLAN_ID=10
+>> BOOTPROTO=none
+>> IPADDR=192.168.0.10
+>> PREFIX=16
+>> NAME=eno2.10
+>> DEVICE=eno2.10
+>> ONBOOT=yes
+>> VLAN=yes
+>> ```
+>>
+>> Save and exit the file.
+>>
+>> To have multiple configured VLANs, you should have a new file created for each VLAN identifier:
+>>
+>> ![alma VLAN](images/multiple_vlan_alma.png){.thumbnail}
+>>
+>> Restart the network interface:
+>>
+>> ```sh
+>> sudo systemctl restart NetworkManager
+>> ```
+>>
+> **Fedora 42+, AlmaLinux and Rocky Linux (10)**
+>>
+>> The configuration below is based on Fedora 43.
+>>
+>> Before you begin, establish an SSH connection to your server and run the following command to load the 8021q kernel module:
+>>
+>> ```sh
+>> sudo modprobe 8021q
+>> ```
+>>
+>> To verify that the module is loaded:
+>>
+>> ```sh
+>> user@server:~$ lsmod | grep 8021q
+>> 8021q                  40960  0
+>> garp                   16384  1 8021q
+>> mrp                    20480  1 8021q
+>> ```
+>>
+>> Run the following command to ensure the modules are permanently loaded at boot:
+>>
+>> ```sh
+>> sudo su -c 'echo "8021q" >> /etc/modules'
+>> ```
+>>
+>> To obtain the name of the private network interface:
+>>
+>> ```sh
+>> ip a
+>> ```
+>>
+>> In this example, the interface is called `eno2`. We will need to create a VLAN subinterface before assigning a private IP address to it.
+>>
+>> Use the following command to create the VLAN interface:
+>>
+>> ```sh
+>> sudo nmcli con add type vlan con-name <vlan-name> dev <parent-interface> id <vlan-id>.
+>> ```
+>>
+>> Replace `vlan-name` with the name of the VLAN subinterface, `parent-interface` with the name of the private interface and `vlan-id` with the VLAN ID.
+>>
+>> **In this example:**
+>>
+>> ```sh
+>> sudo nmcli con add type vlan con-name eno2.10 dev eno2 id 10
+>> Connection 'eno2.10' successfully added.
+>> ```
+>>
+>> Assign a private IP address to the VLAN subinterface:
+>>
+>> ```sh
+>> sudo nmcli con mod <vlan-name> ipv4.addresses <ip/prefix> ipv4.method manual
+>> ```
+>>
+>> **In this example:**
+>>
+>> ```sh
+>> sudo nmcli con mod eno2.10 ipv4.addresses 192.168.0.10/16 ipv4.method manual
+>> ```
+>>
+>> Next, bring the up the VLAN subinterface:
+>>
+>> ```sh
+>> sudo nmcli con up <vlan-name>.
+>> ```
+>>
+>> **In this example:**
+>>
+>> ```sh
+>> sudo nmcli con up eno2.10
+>> # Connection successfully activated
+>> ```
+>>
+>> Use the same commands for each VLAN interface you wish to add.
+>>
+>> Once done, a configuration file for the VLAN interface is created. This file is located at `/etc/NetworkManager/system-connections/` and follows the naming format `vlan-name.nmconnection`.
+>>
+>> For multiple VLANs, multiple configuration files will be created:
+>>
+>> - Overview:
+>>
+>> ![config](images/multiple_vlan_fedora.png){.thumbnail}
+>>
+>> ![config](images/multiple_vlan_fedora_1.png){.thumbnail}
+>>
 
 ### Windows
 
@@ -154,11 +366,11 @@ Next, right-click on the network interface and select `Add to New Team`{.action}
 
 ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
 
-In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}
+In the popup window, create a new team by typing a team name into the **Team name** field. When you have finished, click `OK`{.action}.
 
 ![Windows vLAN](images/vrack2-windows-02.png){.thumbnail}
 
-Next, we need to define the vLAN tag. In the **Adapters and Interfaces** pane of the **NIC Teaming** screen, right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
+Next, we need to define the vLAN tag. In the **ADAPTERS AND INTERFACES** pane of the **NIC Teaming** screen, go to the `Team Interfaces`{.action} tab and right-click the interface you have just added to the new team, then click `Properties`{.action}. Now click `Specific VLAN`{.action}, and define the tag:
 
 ![Windows vLAN](images/vrack2-windows-03.png){.thumbnail}
 

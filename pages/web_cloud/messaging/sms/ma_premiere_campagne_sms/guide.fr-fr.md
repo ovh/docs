@@ -10,14 +10,22 @@ OVHcloud met à votre disposition des outils intégrés à votre espace client a
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud avec des crédits SMS.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} puis choisissez votre compte SMS .
 
 La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonctionnalités principales pour envoyer votre campagne de SMS.
 

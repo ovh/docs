@@ -43,6 +43,17 @@ Con il trasferimento del tuo nome di dominio, potrai cambiare da **Registrar** p
 - Essere abilitato a richiedere il trasferimento del nome di dominio
 - Aver avvisato l'intestatario del nome di dominio e/o i suoi amministratori della richiesta di trasferimento
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedura
 
 > [!success]

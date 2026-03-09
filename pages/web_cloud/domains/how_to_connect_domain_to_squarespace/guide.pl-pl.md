@@ -19,11 +19,21 @@ Jesteś abonentem nazwy domeny w OVHcloud i chcesz ją połączyć z hostingiem 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [nazwy domeny](/links/web/domains) zarejestrowanej w OVHcloud.
 - Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) nazwą domeny w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie hostingu w SquareSpace.
 - Dostęp do interfejsu zarządzania hostingiem w SquareSpace.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -46,7 +56,7 @@ Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący
 Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące karty:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >> **Rekord A**<br><br>
 >> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów w górnej części tabeli rekordów DNS i wybierz opcję `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
@@ -56,19 +66,19 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Kolejno utwórz 4 rekordy typu "A", aby wpisać 4 adresy IPv4 związane z usługą SquareSpace.
 >> Pozostaw puste pole **Subdomena** i wprowadź pierwszy adres IPv4 nazwy domeny SquareSpace `198.185.159.144` w polu **Adres docelowy**.
 >> Kliknij przycisk `Dalej`{.action}, zatwierdź rejestrację "A", powtórz operację dla 3 pozostałych adresów IPv4 `198.185.159.145`; `198.49.23.144`; `198.49.23.145` i przejdź do etapu 2.
-> **Etap 2**
+> **Krok 2**
 >> **Rekord AAAA**<br><br>
 >>  Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli, który pasuje tylko do Twojej nazwy domeny, bez subdomeny (przykład: `mydomain.ovh.`), a następnie kliknij `Usuń wpis`{.action}.<br>
 >> - Jeśli jest obecny rekord dla subdomeny "www" (przykład: `www.mydomain.ovh.`), usuń go również, aby nie kolidował z rekordem CNAME, który wprowadzisz w kroku 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej nazwie domeny z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "AAAA", przejdź do etapu 3.
-> **Etap 3**
+> **Krok 3**
 >> **Rekord TXT**<br><br>
 >> Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Jeśli dla samej nazwy domeny istnieją rekordy "TXT" (na przykład: `mydomain.ovh.`), a dla jej subdomeny na "www" (na przykład: `www.mydomain.ovh.`), musisz je usunąć, aby nie kolidowały z rekordem CNAME, który wprowadzisz w etapie 4. Kliknij przycisk`...`{.action} po prawej stronie wiersza tabeli odpowiadającego nazwie Twojej nazwy domeny wraz z subdomeną "www", a następnie kliknij `Usuń rekord`{.action}.<br>
-> **Etap 4**
+> **Krok 4**
 >> **Rekord CNAME**<br><br>
 >> Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
