@@ -1,5 +1,5 @@
 ---
-title: Configurar un bloque Additional IPv6 en un vRack (EN)
+title: Configuring an IPv6 block in a vRack (EN)
 excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
 updated: 2026-03-09
 ---
@@ -303,7 +303,7 @@ First, let's allow our host to accept Router Advertisements (for autoconfigurati
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
 
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side) for more details.
+Note that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side) for more details.
 
 Then, simply bring up the interface:
 
@@ -562,7 +562,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
 ```
 
-And traceroute from a remote host (somewhere in the Internet):
+And traceroute from a remote host (somewhere on the internet):
 
 ```bash
 ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
