@@ -17,10 +17,20 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um plano [de alojamento web OVHcloud](/links/web/hosting).
 - Dispor de um ou vários [nomes de domínio](/links/web/domains).
 - Dispor de direitos suficientes sobre o conjunto dos serviços em causa. Encontre mais informações no nosso guia "[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

@@ -222,7 +222,7 @@ Une fois les vérifications faites par Sectigo, vous serez contacté par leurs s
 
 > [!success]
 >
-> Pour plus de détails sur les opérations décrites dans la **partie 2** ci-dessus, consultez la [documentation officielle de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sur le sujet.
+> Pour plus de détails sur les opérations décrites dans la **partie 2** ci-dessus, consultez la [documentation officielle de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-) sur le sujet.
 
 ### 3 - Installation du certificat SSL Sectigo EV avec votre domaine et votre hébergement OVHcloud
 

@@ -55,7 +55,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei CMS citati precedentemente.
 
-##### WordPress
+#### WordPress
 
 **WordPress** è generalmente utilizzato per creare un sito Web o un blog. È basato sulla tecnologia PHP e comporta una gamma di strumenti come un correttore ortografico e plugin per l'e-commerce, la SEO e la sicurezza del tuo sito Web.
 

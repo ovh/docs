@@ -21,8 +21,18 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) compatibile.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Aver utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare un nuovo sito Web.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

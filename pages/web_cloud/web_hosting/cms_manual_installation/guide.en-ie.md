@@ -272,7 +272,7 @@ Below is an example with the CMS *WordPress*:
 > Once the transfer is complete, check that all the elements in the local **CMS** folder have been correctly transferred to the root folder on your Web Hosting plan.
 >
 
-**Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
+**Special Case**: If you have a limited Internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
 
 To log in to your hosting plan via SSH, please refer to our guide on [Accessing a web hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 

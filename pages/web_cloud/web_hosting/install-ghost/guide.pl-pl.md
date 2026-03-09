@@ -261,7 +261,7 @@ W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny
 
 ### Etap 8: użycie HTTPS
 
-Aby zwiększyć bezpieczeństwo Twojej strony WWW, możesz skonfigurować przekierowanie HTTP na HTTPS. W tym celu utwórz w katalogu `ghost` plik .htaccess` z następującą treścią:
+Aby zwiększyć bezpieczeństwo Twojej strony WWW, możesz skonfigurować przekierowanie HTTP na HTTPS. W tym celu utwórz w katalogu `ghost` plik `.htaccess` z następującą treścią:
 
 ```
 RewriteCond %{ENV:HTTPS} !on
