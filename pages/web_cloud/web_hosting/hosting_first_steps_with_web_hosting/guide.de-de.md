@@ -33,7 +33,17 @@ Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog ers
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie haben einen [Domainnamen](/links/web/domains) und eine zugehörige DNS-Zone bei OVHcloud.
 - Alle Dienste (Webhosting, Domainnamen, DNS-Zone) müssen von einem einzigen OVHcloud Account aus erreichbar sein.
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

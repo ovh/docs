@@ -45,7 +45,17 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 ## Requirements
 
 - An [OVHcloud web hosting plan](/links/web/hosting), with the exception of a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
-- Access to your web hosting plan in the [OVHcloud Control Panel](/links/manager), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
