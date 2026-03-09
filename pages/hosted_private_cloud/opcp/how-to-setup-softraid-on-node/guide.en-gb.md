@@ -1,7 +1,7 @@
 ---
 title: "OPCP - How to configure a software RAID on a node"
 excerpt: "Find out how to configure and manage a software RAID on an OpenStack Ironic node in OPCP"
-updated: 2026-02-06
+updated: 2026-03-09
 ---
 
 ## Objective
@@ -68,7 +68,7 @@ Before any configuration change, put the node in **maintenance mode**:
 openstack baremetal node maintenance set <node-id> --reason "Software RAID configuration"
 ```
 
-### 3. Supported RAID level <a name="raid-levels"></a>
+### 3. Supported RAID levels <a name="raid-levels"></a>
 
 Ironic supports several software RAID levels. The following values are accepted in the JSON configuration:
 
@@ -80,7 +80,7 @@ Ironic supports several software RAID levels. The following values are accepted 
 > 
 > **Important constraint**: The first logical disk with `is_root_volume: true` **must be in RAID 1**. Other RAID levels (RAID 0, 5, 6, 10, etc.) are not allowed for the root volume.
 
-It is therefore only possible to use RAID 1 for the instance deployment.
+Therefore, only RAID 1 can be used for instance deployment.
 
 ### 4. Configure software RAID
 
@@ -193,6 +193,29 @@ unused devices: <none>
 mdadm --detail /dev/md0
 ```
 
+## Disabling RAID
+
+In some cases, you may need to disable RAID on a node. To do this, set the RAID interface to `no-raid` and clear the target RAID configuration.
+
+### 1. Disable RAID interface
+
+Set the RAID interface to `no-raid`:
+
+```bash
+openstack baremetal node set <node-id> --raid-interface=no-raid
+```
+
+### 2. Clear target RAID configuration
+
+Clear the target RAID configuration:
+
+```bash
+openstack baremetal node set <node-id> --target-raid-config "{}"
+```
+
+> [!warning]
+> Disabling RAID will erase all data on the disks used for the RAID configuration. Make sure to backup any important data before proceeding.
+
 ## Summary of main commands
 
 | Action | Command |
@@ -206,6 +229,8 @@ mdadm --detail /dev/md0
 | Disable maintenance mode | `openstack baremetal node maintenance unset <node-id>` |
 | Deploy an instance | `openstack server create --image <image-name> --flavor <flavor-id> --key-name <keypair-name> --nic net-id=<network-id> --availability-zone "nova::<node-id>" <instance-name>` |
 | Check RAID status (from the instance) | `cat /proc/mdstat` |
+| Disable RAID interface | `openstack baremetal node set <node-id> --raid-interface=no-raid` |
+| Clear target RAID configuration | `openstack baremetal node set <node-id> --target-raid-config "{}"` |
 
 ## Best practices
 
@@ -237,5 +262,5 @@ mdadm --detail /dev/md0
 
 If you need training or technical assistance to implement our solutions, please contact your sales representative or click on [this link](/links/professional-services) to request a quote and have your project reviewed by our Professional Services experts.
 
-Join our [user community](/links/community).
+Join our [community of users](/links/community).
 
