@@ -10,6 +10,15 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
 
+> [!warning]
+>
+> If a virtual machine is protected using multiple backup methods (for example **VMware backup** and **Veeam Agent for Linux**), each method consumes a separate licence.
+>
+> As a result, the same virtual machine may be **billed twice during the same month**.
+>
+> To avoid additional charges, protect each virtual machine using **only one backup method**.
+>
+
 ## Prérequis
 
 - Posséder une [offre Veeam Enterprise](/links/hosted-private-cloud/veeam-enterprise).
@@ -252,7 +261,7 @@ Allez dans le menu, puis cliquez sur `Licence`{.action}.
 
 Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
 
-Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
+Si l'enregistrement a été effectué avec succès, vous devriez voir apparaître « Édition : Enterprise Plus ».
 
 > [!primary]
 > Vous pouvez maintenant désactiver l'utilisateur que vous avez créé pour créer l'enregistrement.
