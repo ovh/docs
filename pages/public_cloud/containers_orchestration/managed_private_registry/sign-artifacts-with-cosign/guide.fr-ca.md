@@ -1,7 +1,7 @@
 ---
 title: 'Sign OCI artifacts with Cosign on OVHcloud Managed Private Registry'
 excerpt: 'Find out how to sign OCI artifacts with Cosign OVHcloud Managed Private Registry'
-updated: 2023-08-08
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Compared to Notary, Cosign is really easy to use and one advantage to use it is 
 
 ## Requirements
 
-- An OVHcloud Managed Private Registry (version 2.5+)
+- An OVHcloud Managed Private Registry
 - The URL and login/password of your private registry
 - An image stored in your registry
 

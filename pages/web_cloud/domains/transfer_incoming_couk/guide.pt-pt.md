@@ -39,6 +39,7 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 - Os dados de contacto do titular devem estar bem atualizados no [Whois](https://www.nominet.uk/whois/) do nome de domínio.
 - Deverá obter o código de autorização que será enviado para o endereço de e-mail do titular.
 
+
 > [!primary]
 >
 > O período de **redenção** é de 90 dias, no máximo, a contar da data de expiração do nome de domínio. No caso de uma transferência, este período permite restaurar o nome de domínio e assim desbloquear a possibilidade de o transferir.

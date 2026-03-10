@@ -10,8 +10,19 @@ The purpose of this guide is to show you how to change a block storage volume ty
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](/links/public-cloud/public-cloud)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -35,7 +46,7 @@ This modification can be made via Horizon or the OpenStack CLI.
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
+>> Click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> Locate the relevant volume in the list, then click the `...`{.action} button on the right. Select `Change the volume type`{.action}.
 >>

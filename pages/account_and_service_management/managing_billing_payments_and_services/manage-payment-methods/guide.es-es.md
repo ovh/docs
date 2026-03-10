@@ -10,16 +10,26 @@ En el área de cliente de OVHcloud, puede registrar y gestionar diferentes forma
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de un medio de pago válido.
+
+<!-- CP-NAV-START:billing-payment-methods -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Payment methods](/links/control-panel/billing-payment-methods)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Payment method`{.action}
+
+---
+<!-- CP-NAV-END:billing-payment-methods -->
 
 ## Procedimiento <a name="payment_methods"></a>
 
-En el [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis forma de pago`{.action}.
+En la página [Formas de pago](/links/control-panel/billing-payment-methods), podrá consultar la forma de pago registrada en su cuenta de cliente.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
-Se abrirá una página en la que podrá consultar la forma de pago registrada en su cuenta de cliente. Allí, podrá:
+Allí, podrá:
 
 - Añadir una forma de pago
 - Cambiar su forma de pago por defecto
@@ -131,10 +141,7 @@ Una vez que haya creado, la *cuenta de prepago* aparecerá en el [área de clien
 
 Recargando su cuenta con regularidad, se asegurará de que la [renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) de sus servicios no se interrumpa nunca por defecto de pago.
 
-Para ello, acceda a la sección `Formas de pago` del área de cliente:
-
-- haga clic en su nombre en la esquina superior derecha y seleccione `Mis forma de pago`{.action} en el menú de la derecha.
-- seleccione la pestaña `Mi cuenta de prepago`{.action}.
+Para ello, acceda a la página [Formas de pago](/links/control-panel/billing-payment-methods) y seleccione la pestaña `Mi cuenta de prepago`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
 

@@ -36,7 +36,17 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 ## Prérequis
 
 - Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](/links/web/hosting)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 

@@ -32,9 +32,20 @@ Si también debe cambiar el **titular** del nombre de dominio, debe hacerlo **an
 ## Requisitos
 
 - Tener un [nombre de dominio .uk](/links/web/domains) registrado con OVHcloud.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager) y tener los permisos necesarios para gestionar el nombre de dominio (ser administrador del nombre de dominio).
 - El nombre de dominio debe estar siempre activo, es decir, no debe haber expirado o haber sido bloqueado por OVHcloud.
 - El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

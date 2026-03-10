@@ -15,7 +15,18 @@ Databases are used in virtually all modern content management systems (CMS), suc
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - a database created as part of an [OVHcloud Web Hosting plan](/links/web/hosting)
 - access to the backup that you want to import into your database, or the ability to retrieve it
-- Depending on which import method you use, you must be able to administer the Web Hosting plan from the [OVHcloud Control Panel](/links/manager), or have the information you need in order to connect to the database.
+- Depending on which import method you use, you must be able to administer the Web Hosting plan from the OVHcloud Control Panel, or have the information you need in order to connect to the database.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

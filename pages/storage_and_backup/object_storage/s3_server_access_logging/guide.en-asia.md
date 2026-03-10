@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Server Access Logging
 excerpt: Learn how to configure and use Server Access Logging
-updated: 2023-02-16
+updated: 2026-03-06
 ---
 
 ## Objective
@@ -14,16 +14,16 @@ Server Access Logging provides detailed records for the requests that are made t
 
 - A bucket
 - A user with the required access rights on the bucket
-- Have installed and configured aws-cli
+- Have installed and configured the AWS CLI
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
-## Instruction
+## Instructions
 
 ### Create a bucket
 
-``` bash
-$ aws --profile my-profile s3 mb "s3://my-bucket"
+```bash
+aws --profile <profile_name> s3 mb s3://<bucket_name>
 ```
 
 ### Create a logs bucket
@@ -33,25 +33,28 @@ $ aws --profile my-profile s3 mb "s3://my-bucket"
 > Your target bucket should not have Server Access Logging enabled. You can have logs delivered to any bucket that you own that is in the same Region as the source bucket, including the source bucket itself. However, this would cause an infinite loop of logs and is not recommended. For simpler log management, we recommend that you save access logs in a different bucket.
 >
 
-``` bash
-$ aws --profile my-profile s3 mb "s3://my-bucket-logs"
+```bash
+aws --profile <profile_name> s3 mb s3://<logs_bucket_name>
 ```
 
 ### Configure bucket acl on logs bucket
 
-``` bash
-$ aws --profile my-profile s3api put-bucket-acl --bucket my-bucket-logs --grant-write URI=http://acs.amazonaws.com/groups/s3/LogDelivery --grant-read-acp URI=http://acs.amazonaws.com/groups/s3/LogDelivery
+```bash
+aws --profile <profile_name> s3api put-bucket-acl \
+    --bucket <logs_bucket_name> \
+    --grant-write URI=http://acs.amazonaws.com/groups/s3/LogDelivery \
+    --grant-read-acp URI=http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
 #### Check the bucket acl configuration
 
-``` bash
-$ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
+```bash
+aws --profile <profile_name> s3api get-bucket-acl --bucket <logs_bucket_name>
 ```
 
-*Sample output* :
+*Sample output*:
 
-``` json
+```json
 {
     "Owner": {
         "DisplayName": "1542319462669586:user-5hwhM25pPT6f",
@@ -80,8 +83,8 @@ $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
 
 Set the logging parameters for a bucket and specify permissions for who can view and modify the logging parameters.
 
-``` bash
-$ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging.json
+```bash
+aws --profile <profile_name> s3api put-bucket-logging --bucket <bucket_name> --bucket-logging-status file://logging.json
 ```
 
 `logging.json`
@@ -89,21 +92,21 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 ```json
 {
   "LoggingEnabled": {
-      "TargetBucket": "my-bucket-logs",
-      "TargetPrefix": "test/"
+    "TargetBucket": "<logs_bucket_name>",
+    "TargetPrefix": "<log_prefix>/"
    }
 }
 ```
 
 #### Check bucket logging parameters
 
-``` bash
-$ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
+```bash
+aws --profile <profile_name> s3api get-bucket-logging --bucket <bucket_name>
 ```
 
-*Sample output* :
+*Sample output*:
 
-``` json
+```json
 {
     "LoggingEnabled": {
         "TargetBucket": "my-bucket-logs",
@@ -116,13 +119,13 @@ $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
 
 After about one hour, the first logs are available:
 
-``` bash
-$ aws --profile my-profile s3 ls "s3://my-bucket-logs" --recursive
+```bash
+aws --profile <profile_name> s3 ls s3://<logs_bucket_name> --recursive
 ```
 
-*Sample output* :
+*Sample output*:
 
-``` bash
+```text
 2023-01-10 17:39:42       1861 test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 2023-01-10 17:42:39        369 test/2023-01-10-16-12-38-4623ACA1FDEF492DBCD30385DAB48E1D
 2023-01-10 17:42:39       1485 test/2023-01-10-16-12-38-FEE333087AD64973ABF6B62B10ECBF20
@@ -130,11 +133,11 @@ $ aws --profile my-profile s3 ls "s3://my-bucket-logs" --recursive
 
 Download a log:
 
-``` bash
-$ aws --profile my-profile s3 cp "s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261" .
+```bash
+aws --profile <profile_name> s3 cp s3://<logs_bucket_name>/<log_object_key> .
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```bash
 download: s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261 to ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
@@ -142,11 +145,11 @@ download: s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FC
 
 Then read it:
 
-``` bash
-$ cat ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
+```bash
+cat ./<log_object_key>
 ```
 
-*Sample output* :
+*Sample output*:
 
 ```bash
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:28 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f tx46d5e8a45e5e4bb3975fc-0063bd7ef4 REST.PUT.LOGGING_STATUS - "PUT /?logging HTTP/1.0" 200 - - 200 113 0 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
@@ -192,18 +195,18 @@ The following list describes the log record fields:
 - Authentication Type: type of request authentication used
     - AuthHeader
     - QueryString
-- Host Header: endpoint used to connect to S3
+- Host Header: endpoint used to connect to S3<sup>1</sup>
     - (BUCKET.)STORAGE_DOMAIN
 
 ### Check log file acl
 
-``` bash
-$ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
+```bash
+aws --profile <profile_name> s3api get-object-acl --bucket <logs_bucket_name> --key <log_object_key>
 ```
 
-*Sample output* :
+*Sample output*:
 
-``` json
+```json
 {
     "Owner": {
         "DisplayName": "logging_s3:.log_delivery",
@@ -235,14 +238,14 @@ $ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key te
 Create an empty configuration file:
 
 ```bash
-$ cat Documents/logging_disable.json
+cat logging_disable.json
 {}
 ```
 
 Then configure bucket logging parameters with this empty configuration file:
 
 ```bash
-$ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging_disable.json
+aws --profile <profile_name> s3api put-bucket-logging --bucket <bucket_name> --bucket-logging-status file://logging_disable.json
 ```
 
 ## Go further
@@ -250,3 +253,6 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+

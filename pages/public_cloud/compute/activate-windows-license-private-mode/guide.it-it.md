@@ -18,10 +18,20 @@ In questo caso, è necessario attivare manualmente la licenza per avere accesso 
 ## Prerequisiti
 
 - Disporre di un [progetto Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - [Aver creato un utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 
 Per familiarizzare con Horizon, consulta la guida [Accedere all'interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 

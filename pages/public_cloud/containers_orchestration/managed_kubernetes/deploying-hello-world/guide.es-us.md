@@ -1,7 +1,7 @@
 ---
 title: Deploying a Hello World application
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API'
-updated: 2025-05-06
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -86,10 +86,8 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 >>   "name": "my-tiny-cluster",
 >>   "url": "xxxxxx.c2.gra.k8s.ovh.net",
 >>   "nodesUrl": "xxxxxx.nodes.c2.gra.k8s.ovh.net",
->>   "version": "1.24.8-1",
->>   "nextUpgradeVersions": [
->>     "1.25"
->>   ],
+>>   "version": "1.34.1",
+>>   "nextUpgradeVersions": [],
 >>   "customization": {
 >>     "apiServer": {
 >>       "admissionPlugins": {

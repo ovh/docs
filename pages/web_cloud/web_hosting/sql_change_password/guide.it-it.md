@@ -39,9 +39,19 @@ Per modificare la password del database del tuo sito sono necessarie quattro azi
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Utilizza un [database associato alla tua offerta di hosting condiviso](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 - Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](/pages/web_cloud/web_hosting/ftp_connection) 
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

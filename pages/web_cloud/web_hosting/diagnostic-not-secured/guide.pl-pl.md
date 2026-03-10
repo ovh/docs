@@ -27,7 +27,17 @@ W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o
 ## Wymagania początkowe
 
 - Zarządzanie [serwerami DNS](/pages/web_cloud/domains/dns_server_general_information) i [strefą DNS](/pages/web_cloud/domains/dns_zone_general_information) Twojej domeny
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -42,22 +52,16 @@ Aby usunąć tę anomalię, należy:
 
 [Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](/links/web/hosting). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](/links/web/domains).
 
-Aby odnaleźć adres IP Twojego [hostingu OVHcloud](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
+Aby odnaleźć adres IP Twojego [hostingu OVHcloud](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **2** kroki.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etap 2**
->>
->> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etap 3**
+> **Krok 2**
 >>
 >> W ramce **Informacje ogólne** znajdziesz oznaczenia **IPv4** i **IPv6**.
 >>

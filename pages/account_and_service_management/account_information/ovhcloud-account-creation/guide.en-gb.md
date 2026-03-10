@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2026-01-22
+updated: 2026-02-26
 ---
 
 ## Objective
@@ -48,9 +48,9 @@ Once you have completed this first form, a one-time code will be sent to the ema
 
 Once you have entered and validated the code, you have to define the **type of account** among the choices offered:
 
-- **Non-profit**: Set up an account for your nonprofit if you are registered in the national directory of companies and establishments. If you are not registered, please set up an individual account.
-- **Company**: Set up an account for your business, whether you are a registered business or a sole trader.
-- **Private individual**: Create an account as a private individual if you do not yet have a registered business or are in the process of getting your business set up.
+- **Non-profit**: The "Non-Profit" account should only be created by non-profits and other not-for-profit organisations such as foundations, trade unions or religious congregations.
+- **Company**: The "Company" account is intended and should be created by all legal persons (excluding public sector bodies and non-profit entities) and all natural persons (sole traders) purchasing OVHcloud products as part of their professional activity.
+- **Private individual**: The "Individual" account should only be created by natural persons purchasing OVHcloud products for their private needs, outside the scope of a professional activity.
 
 ![account type choice](images/account-type-2025.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Each OVHcloud customer account is associated with a unique ID, also called a NIC
 It is usually made up of two letters followed by numbers, for example: **aa00000-ovh**.<br>
 For most accounts outside Europe, it is often replaced by the primary email address entered into the OVHcloud account.
 
-Your NIC-handle is what you will need to use in order to:
+You will use your NIC handle to:
 
 - place orders online
 - manage all of your services easily via the OVHcloud Control Panel
@@ -73,7 +73,7 @@ Your NIC-handle is what you will need to use in order to:
 
 > [!success]
 > 
-> Make a note of your NIC handle, as you will need it for each time you log in to your account.
+> Make a note of your NIC handle, as you will need it each time you log in to your account.
 >
 > **Tips: Use a password manager**
 >

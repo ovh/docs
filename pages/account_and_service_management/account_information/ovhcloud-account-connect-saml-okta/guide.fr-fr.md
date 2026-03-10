@@ -14,7 +14,17 @@ Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) pour vous connect
 
 - Être administrateur d'un service Okta
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SSO SAML](/links/control-panel/iam-saml-sso)
+- **Pour y accéder :** `Identité, Sécurité & Opérations`{.action} > `Utilisateurs`{.action} > `Connexion SSO`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## En pratique
 
@@ -78,13 +88,7 @@ Votre service Okta fait désormais confiance à OVHcloud en tant que prestataire
 
 ### Enregistrer Okta sur le compte OVHcloud et configurer la connexion
 
-Pour ajouter Okta en tant que fournisseur d'identité de confiance, vous devez fournir les métadonnées du fournisseur d'identité dans votre [espace client OVHcloud](/links/manager).
-
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identités`{.action}.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `SSO`{.action} et sur le bouton `Connexion SSO`{.action}.
+Pour ajouter Okta en tant que fournisseur d'identité de confiance, vous devez fournir les métadonnées du fournisseur d'identité. Ouvrez la page [SAML SSO](/links/control-panel/iam-saml-sso) et cliquez sur le bouton `Connexion SSO`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -116,7 +120,7 @@ Votre service Okta est désormais considéré comme un fournisseur d'identité d
 
 Vous devez à présent attribuer des **rôles** aux groupes d'utilisateurs Okta chez OVHcloud. Dans le cas contraire, votre compte OVHcloud ne sait pas ce que l'utilisateur est autorisé à faire et, par défaut, aucun droit n'est attribué.
 
-Pour ajouter un groupe depuis votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} et remplissez les champs :
+Dans la section `Identités`{.action}, ouvrez l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} et remplissez les champs :
 
 - **Group name** : Nom du groupe dans Okta
 - **Role** : Niveau de droits accordés à ce groupe

@@ -92,8 +92,6 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-[Configurar una cuenta Email Pro en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
-
 [Configurar una cuenta MX plan en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

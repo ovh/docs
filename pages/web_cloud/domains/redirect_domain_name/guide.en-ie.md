@@ -13,8 +13,18 @@ Redirecting a domain name is to redirect it to a new target. Different types of 
 ## Requirements
 
 - A [domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name
 - The login credentials required to connect to your storage space via SSH (optional, for redirection via a [.htaccess](#htaccess_rewrite) file).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 

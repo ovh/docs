@@ -14,7 +14,17 @@ Sie haben den Zugriff auf Ihr Verwaltungsinterface von WordPress, PrestaShop, Jo
 
 - Sie verfügen über ein [Webhosting Angebot](/links/web/hosting), mit dem Sie ein 1-Klick-Modul installieren können.
 - Sie haben ein 1-Klick-Modul auf Ihrem Webhosting erstellt. (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules).)
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) (nur für den mit phpMyAdmin verbundenen Teil).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 

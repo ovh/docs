@@ -17,7 +17,17 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 ## Requisitos
 
 - Ter um backup de uma [instância Public Cloud](/links/public-cloud/instance-backup). Para isso, consulte [o guia relativo à criação de um backup](/pages/public_cloud/compute/save_an_instance).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -36,7 +46,6 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 > [!tabs]
 > Via a área de cliente OVHcloud
->> Conecte-se a sua [área de cliente OVHcloud](/links/manager), acesse a seção `Public Cloud`{.action} e selecione o projeto Public Cloud desejado.<br>
 >> Clique em seguida em `Instance backup`{.action} na barra de navegação à esquerda sob **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -135,7 +144,6 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 > [!tabs]
 > Via a área de cliente OVHcloud
->> Conecte-se a sua [área de cliente OVHcloud](/links/manager), acesse a seção `Public Cloud`{.action} e selecione o projeto Public Cloud desejado.<br>
 >> Clique em seguida em `Instâncias`{.action} na barra de navegação à esquerda sob **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

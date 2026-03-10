@@ -55,14 +55,23 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVHcloud](/links/manager) ou na Área de Cliente, caso esteja registado fora da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter adquirido uma das ofertas de correio eletrónico abaixo:
     - MX Plan OVHcloud (disponível através de uma [oferta de alojamento Web Cloud](/links/web/hosting), um [alojamento gratuito 100M](/links/web/domains-free-hosting) ou uma oferta MX Plan encomendada separadamente).
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/zimbra).
     - Uma oferta de e-mail fora da OVHcloud que dispõe do DKIM.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -188,7 +197,6 @@ A configuração automática do DKIM está disponível para todas as nossas ofer
 Quando configura o seu nome de domínio numa solução de correio eletrónico OVHcloud, a configuração automática do DKIM é proposta e realizada por defeito se não a desativar.
 
 Se o DKIM não foi ativado quando adicionou um nome de domínio à sua plataforma de correio eletrónico, terá de iniciar o processo de configuração automática através do espaço cliente.
-
 
 Clique no separador seguinte da sua oferta.
 

@@ -10,8 +10,18 @@ This guide explains how to delete different elements of your Backup Agent servic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager) in the `Backup Agent`{.action} section.
 - An active Backup Agent service.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## Instructions
 

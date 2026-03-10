@@ -19,11 +19,21 @@ Si es titular de un nombre de dominio con OVHcloud y quiere conectarlo a un aloj
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener un [nombre de dominio](/links/web/domains) registrado con OVHcloud.
 - Disponer de los [permisos necesarios para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un plan de hosting con Shopify.
 - Tener acceso a la gestión de este alojamiento web en Shopify.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Dominios](/links/control-panel/web-domains)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Dominios`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedimiento
 

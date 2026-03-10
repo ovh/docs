@@ -17,34 +17,38 @@ Ihre Web Cloud Databases Lösung ist standardmäßig an das Webhosting-Netzwerk 
 ## Voraussetzungen
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (im [Webhosting Performance](/links/web/hosting)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## In der praktischen Anwendung
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen Web Cloud Databases Servers
 
-Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+Wenn Ihr Hosting-Angebot die Option "Web Cloud Databases" beinhaltet, klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Web Cloud Databases**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 >>
 >> ![Allgemeine Informationen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Folgen Sie den Anweisungen, um Typ und Version Ihres Web Cloud Databases Servers zu bestimmen. Nach Abschluss des Vorgangs kann der Web Cloud Databases Dienst über die linke Menüspalte unter `Web Cloud Databases`{.action} eingesehen werden.
 

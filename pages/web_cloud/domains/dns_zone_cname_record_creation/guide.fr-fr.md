@@ -34,7 +34,18 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 - Disposer d'un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >

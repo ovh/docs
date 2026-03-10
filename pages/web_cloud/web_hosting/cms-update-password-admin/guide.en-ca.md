@@ -14,7 +14,17 @@ Have you lost access to your WordPress, PrestaShop, Joomla! or Drupal administra
 
 - A [web hosting plan](/links/web/hosting) that allows you to install a 1-click module.
 - A 1-click module on your web hosting plan (if you have not done this already, follow the instructions from this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Accesss to the [OVHcloud Control Panel](/links/manager) (only for the phpMyAdmin part of this guide).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

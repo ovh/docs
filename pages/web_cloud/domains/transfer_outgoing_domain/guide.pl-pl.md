@@ -25,8 +25,19 @@ Aby zapobiec przenoszeniu nazwy domeny bez zezwolenia, nazwy domen są zazwyczaj
 
 - Posiadanie [nazwy domeny zarejestrowanej](/links/web/domains) w OVHcloud
 - Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny: abonent i/lub administratorzy nazwy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
-- Dostęp do interfejsu zarządzania nazwą domeny w [Panelu klienta OVHcloud](/links/manager).
 - Rejestracja tej nazwy domeny trwa co najmniej 60 dni **i** nie została przeniesiona ani wymieniona (tj. zmiana abonenta) w ciągu ostatnich 60 dni
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

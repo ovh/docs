@@ -18,9 +18,19 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud web hosting plan](/links/web/hosting) with an associated OVHcloud shared database
   
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Instructions
 
 > [!warning]
@@ -55,28 +65,22 @@ The first step is to identify the large table or tables in your database.
 
 Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-To connect to the database via phpMyAdmin, click on the tabs below to view each of the **5** steps.
+To connect to the database via phpMyAdmin, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, a table will appear containing the databases you have created.
 >>
@@ -86,7 +90,7 @@ To connect to the database via phpMyAdmin, click on the tabs below to view each 
 >>
 >> To the right of the database concerned, click the `...`{.action} button, then `Go to phpMyAdmin`{.action}.
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 >>
@@ -230,34 +234,28 @@ However, you can force them through your services to speed up the process. To do
 
 #### Recalculate the quota for a database included with your web hosting plan
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
+>> Click [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the new page, a table will appear containing the databases you have created. To the right of the database concerned, click the `...`{.action} button, then `Recalculate the quota`{.action}.
 >>
 >> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the window that pops up, click the `Confirm`{.action} button directly.
 >>
@@ -269,7 +267,7 @@ Click on the tabs below to view each of the **5** steps.
 
 #### Recalculate the quota for a database hosted on a Web Cloud Databases solution
 
-Click on the tabs below to view each of the **3** steps in turn.
+Click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**

@@ -14,11 +14,21 @@ Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Otwórz `Zasilenia i vouchery`{.action} w menu po lewej stronie w sekcji **Ustawienia**.
+Otwórz `Zasilenia i vouchery`{.action} w menu po lewej stronie w sekcji **Ustawienia**.
 
 > [!warning]
 >

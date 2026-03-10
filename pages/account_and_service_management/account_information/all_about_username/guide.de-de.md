@@ -16,7 +16,17 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 ## Voraussetzungen
 
 - Sie haben [Ihren OVHcloud Kunden-Account erstellt](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Benutzerprofil](/links/control-panel/account-profile)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Mein Konto`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure).
@@ -53,9 +63,7 @@ Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwo
 Bei Schwierigkeiten beim Zugriff auf Ihre Haupt-E-Mail-Adresse können Sie über eine Backup-E-Mail-Adresse den Zugang zu Ihrem Account und damit zur Verwaltung Ihrer Dienstleistungen behalten.
 <br>Diese zweite Adresse **muss sich von der ersten unterscheiden**, insbesondere zur Erleichterung der Prozedur im Falle einer Passwortwiederherstellung.
 
-Um diese Backup-E-Mail-Adresse zu hinterlegen, indem Sie rechts oben in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen und dann auf `Zu meinem Account`{.action} klicken.
-
-Im Bereich `Mein Profil`{.action} rechts auf Ihrem Bildschirm (klicken Sie erneut auf Ihren Namen, um das rechte Menü zu schließen) klicken Sie auf `Mein Profil bearbeiten`{.action}.
+Um diese Backup-E-Mail-Adresse zu hinterlegen, gehen Sie zu Ihrem [Benutzerprofil](/links/control-panel/account-profile) und klicken Sie im Bereich `Mein Profil` auf `Mein Profil bearbeiten`{.action}.
 
 > [!warning]
 > Zur Erinnerung: Es ist sehr wichtig, dass sich die **Backup-E-Mail-Adresse** von der **Haupt-E-Mail-Adresse** des Accounts **unterscheidet**.
@@ -76,9 +84,7 @@ Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHc
 
 #### Meine persönlichen Angaben ändern
 
-Sie können die Daten Ihres Kunden-Accounts über Ihr [OVHcloud Kundencenter](/links/manager) ändern. Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
-
-Im Bereich `Mein Profil`{.action} rechts auf Ihrem Bildschirm (klicken Sie erneut auf Ihren Namen, um das rechte Menü zu schließen) klicken Sie auf `Mein Profil bearbeiten`{.action}.
+Sie können die Daten Ihres Kunden-Accounts ändern. Gehen Sie zu Ihrem [Benutzerprofil](/links/control-panel/account-profile) und klicken Sie im Bereich `Mein Profil` auf `Mein Profil bearbeiten`{.action}.
 
 Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Bestätigen`{.action}.
 

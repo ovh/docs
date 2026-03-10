@@ -18,10 +18,20 @@ You are the holder of a domain name with OVHcloud and you want to connect it to 
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - A [domain name](/links/web/domains) registered with OVHcloud.
 - You must have the [appropriate permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage the domain name from your [OVHcloud Control Panel](/links/manager).
 - You have a Google Site and be its owner.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 

@@ -25,13 +25,22 @@ Il est possible de demander une migration vers une offre fibre, sous réserve d'
 
 - Disposer d'un accès xDSL (ADSL/VDSL) actif.
 - Disposer d'une offre éligible au changement d'offre.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
 ### Vérifier la date de fermeture du cuivre pour votre accès
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et accédez à l'onglet `Télécom`{.action}.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), accédez à l'onglet `Télécom`{.action}.
 
 La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos accès à Internet et si la migration vers la fibre est possible.
 
@@ -140,9 +149,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >>
 >> Maintenant que vous avez récupéré et confirmé les bonnes informations de raccordement à la fibre, il est nécessaire de déménager techniquement votre accès depuis l'adresse actuelle (celle qui correspond au réseau cuivre) vers la nouvelle adresse (correspondant au réseau fibre).
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager) et accédez à l'onglet `Télécom`{.action}.
->>
->> Effectuez une demande de déménagement de votre accès en suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) » et choisissez l'offre Fibre Pro.
+>> Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), effectuez une demande de déménagement de votre accès en suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) ». Choisissez l'offre Fibre Pro.
 >> 
 >> Renseignez l'adresse postale obtenue sur le site de l'ARCEP (Etape 1) et confirmée sur notre outil d'éligibilité (Etape 2). L'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez à nouveau qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
 >>

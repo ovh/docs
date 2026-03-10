@@ -43,6 +43,17 @@ Transfer nazwy domeny może spowodować zmianę z **rejestrator** dla nazwy dome
 - Posiadanie uprawnień do złożenia wniosku o transfer nazwy domeny
 - Powiadomienie abonenta nazwy domeny i/lub administratorów o wszczęciu procedury transferu
 
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## W praktyce
 
 > [!success]

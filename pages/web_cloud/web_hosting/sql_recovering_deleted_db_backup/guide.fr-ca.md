@@ -22,6 +22,17 @@ La plupart de nos offres d'[hébergement web](/links/web/hosting) comprennent de
 - Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) active comprenant une (ou plusieurs) base(s) de données mutualisée(s) OVHcloud associée(s).
 - La suppresion de la base de donnée doit dater de moins de 30 jours.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## En pratique
 
 Les API OVHcloud sont mises à disposition pour permettre aux développeurs ou aux intégrateurs d'associer, par exemple, des fonctionnalités présentes ou non dans l'espace client OVHcloud directement dans leurs applications ou solutions.

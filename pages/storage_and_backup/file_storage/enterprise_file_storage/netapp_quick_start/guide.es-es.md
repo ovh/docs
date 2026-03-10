@@ -50,40 +50,18 @@ Un volumen es una unidad de almacenamiento con un tamaño y un protocolo.
 
 Para crear un volumen, utilice la siguiente ruta de la API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
->> >
->>
->
-> Parámetros:
->
->> > **serviceName** *
->> >
->> >> ID del servicio
->> >
->> > **NetAppShare** *
->> >
->> >> **descripción**
->> >>
->> >> > Descripción del volumen
->> >>
->> >> **name**
->> >>
->> >> > Nombre del volumen
->> >>
->> >> **protocol** *
->> >>
->> >> > Protocolo utilizado por el volumen
->> >>
->> >> **size**
->> >>
->> >> > Tamaño del volumen en gigabytes
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servicio |
+| `NetAppShare.descripción` |  | Descripción del volumen |
+| `NetAppShare.name` |  | Nombre del volumen |
+| `NetAppShare.protocol` | Yes | Protocolo utilizado por el volumen |
+| `NetAppShare.size` |  | Tamaño del volumen en gigabytes |
 
 Seleccione el protocolo `NFS` y un tamaño de `10` gigabytes, por ejemplo.
 
@@ -100,36 +78,17 @@ Una vez que haya creado un volumen, debe crear una nueva ACL para acceder a él.
 
 Para crear una nueva ACL que le permita conectarse a su volumen, utilice la siguiente ruta de la API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parámetros:
->
->> > **serviceName** *
->> >
->> >> ID del servicio
->> >
->> > **shareId** *
->> >
->> >> ID del volumen
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >>
->> >> > Nivel de acceso ACL. Puede ser **rw** (lectura y escritura) o **ro** (sólo lectura).
->> >>
->> >> **accessTo** *
->> >>
->> >> > Dirección IP o rango de direcciones IP en notación CIDR.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servicio |
+| `shareId` | Yes | ID del volumen |
+| `NetAppShareACLRule.accessLevel` | Yes | Nivel de acceso ACL. Puede ser **rw** (lectura y escritura) o **ro** (sólo lectura). |
+| `NetAppShareACLRule.accessTo` | Yes | Dirección IP o rango de direcciones IP en notación CIDR. |
 
 > [!primary]
 >
@@ -141,30 +100,16 @@ Para crear una nueva ACL que le permita conectarse a su volumen, utilice la sigu
 
 Compruebe el estado de creación del ACL mediante la siguiente ruta de la API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Parámetros:
->
->> > **serviceName** *
->> >
->> >> ID del servicio
->> >
->> > **shareId** *
->> >
->> >> ID del volumen
->> >
->> > **aclRuleId** *
->> >
->> >> ID del ACL
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servicio |
+| `shareId` | Yes | ID del volumen |
+| `aclRuleId` | Yes | ID del ACL |
 
 Sustituya `aclRuleId` por el ID del ACL creado para su volumen.
 
@@ -175,26 +120,15 @@ Sustituya `aclRuleId` por el ID del ACL creado para su volumen.
 
 Una vez que el ACL esté activo, recupere las rutas de acceso al volumen utilizando la siguiente API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
->> >
->>
->
-> Parámetros:
->
->> > **serviceName** *
->> >
->> >> ID del servicio
->> >
->> > **shareId** *
->> >
->> >> ID del volumen
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servicio |
+| `shareId` | Yes | ID del volumen |
 
 Para cada volumen, aparecerán una o más rutas de acceso.
 
@@ -215,26 +149,15 @@ Una vez montado, podrá utilizar el volumen para almacenar sus archivos.
 
 Puede eliminar el volumen utilizando la siguiente ruta de la API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
->> >
->>
->
-> Parámetros:
->
->> > **serviceName** *
->> >
->> >> ID del servicio
->> >
->> > **shareId** *
->> >
->> >> ID del volumen
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID del servicio |
+| `shareId` | Yes | ID del volumen |
 
 ## Más información
 

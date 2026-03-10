@@ -1,6 +1,7 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2025-10-30
+excerpt: Erfahren Sie, wie Sie eine Public Cloud Instanz aussetzen, pausieren oder anhalten, um vorübergehend Ressourcen freizugeben und dabei Ihre IP-Adresse beizubehalten, sowie die Auswirkungen der einzelnen Optionen auf die Abrechnung
+updated: 2026-02-27
 ---
 
 ## Ziel
@@ -16,19 +17,32 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) mit **stündlicher** Abrechnung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+- Sie haben Zugriff auf das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 - Sie haben Kenntnisse der [OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) und der [OpenStack Variablen](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
-> [!alert]
+> [!warning]
 >
-> Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
+> **Anwendungsbereich:** Diese Anleitung gilt für alle Public Cloud Instanzen, unabhängig von deren Abrechnungsmodell (stündlich oder monatlich).
 >
-> Diese Manipulationen führen immer zu einer **Abrechnung der Instanz**, solange diese nicht **gelöscht** wird.
+> **Monatliche Abrechnung:** Eine Instanz, die den gesamten Monat über ausgesetzt bleibt, wird nicht berechnet. Sobald die Instanz auch nur kurzzeitig reaktiviert wird, gilt die vollständige Monatsabrechnung.
+>
+> **Hinweis:** Solange die Instanz nicht gelöscht wird, entstehen durch jeden Vorgang weiterhin Instanzkosten.
 >
 
-In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen. Wir setzen die in der Horizon-Interface verwendete Terminologie in Klammern.
+In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen. Wir setzen die in der **Horizon-Interface** verwendete Terminologie in Klammern.
 
 |Funktion|Beschreibung|Abrechnung|
 |---|---|---|
@@ -82,7 +96,7 @@ Nehmen Sie die Meldung im Dialogfenster zur Kenntnis und klicken Sie auf `Bestä
 
 Während des Vorgangs wird folgende Meldung angezeigt:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
@@ -100,7 +114,7 @@ Um diese Methode zu verwenden, müssen Sie sich [in das Horizon-interface einlog
 
 - Um sich über OVHcloud SSO zu verbinden: Verwenden Sie den Link `Horizon`{.action} im Menü links unter "Management Interfaces", nachdem Sie Ihr `Public Cloud`{.action} Projekt in Ihrem [OVHcloud Kundencenter](/links/manager) geöffnet haben.
 
-- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein. Klicken Sie anschließend auf `Connect`{.action}.
+- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein. Klicken Sie auf `Connect`{.action}.
 
 Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der korrekten Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 
@@ -292,6 +306,6 @@ Um die Instanz **zu reaktivieren**, geben Sie in der Kommandozeile Folgendes ein
 
 ## Weiterführende Informationen
 
-[OpenStack Dokumentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[OpenStack Dokumentation](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Treten Sie unserer [User Community](/links/community) bei.

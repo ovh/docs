@@ -33,7 +33,17 @@ Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma l
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Dispor de um [nome de domínio](/links/web/domains) e de uma zona DNS associada na OVHcloud.
 - Todos os serviços (Alojamento web, Nome de domínio, zona DNS) devem estar acessíveis a partir de uma única conta OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

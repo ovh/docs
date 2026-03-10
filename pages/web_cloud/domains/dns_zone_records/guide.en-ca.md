@@ -1,7 +1,7 @@
 ---
 title: "Everything you need to know about DNS records"
 excerpt: "Discover the different types of DNS records available in an OVHcloud DNS zone"
-updated: 2026-02-10
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -202,6 +202,21 @@ Select the record you want by clicking each of the following tabs.
 >> - **Service Mode**: this mode is activated when you specify a priority different from 0. It is in this mode that you can define the parameters you wish to apply to your domain name (example parameters: *apln="h2,h3"*, *ipv4hint="203.0.113.0"*, *ipv6hint="2001:db8:1:1b00:203:0:113:0"*, *port="XXXX"*, etc.). In **Service** mode, you can apply these parameters directly to your domain name, even if it is not to be used as an alias for another domain name.
 >>
 >> If needed, find more details on the [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc9460) (EN) website.
+>>
+>> > [!success]
+>> >
+>> > Below is a concrete example of setting up an alias (apex) using an HTTPS-type DNS record:
+>> >
+>> > The website **domain.tld** is hosted behind a CDN infrastructure (for example: **cdn.provider.tld**).
+Thanks to the HTTPS-type DNS record, the domain name **domain.tld** can directly inform compatible web browsers that the HTTPS service should be resolved by the CDN provider **cdn.provider.tld**. This is done without redirections and without manual management of IP addresses.
+>> >
+>> > For this, the HTTPS-type DNS record must specify:
+>> >
+>> > - Priority: *0*.
+>> > - Target: *cdn.provider.tld*.
+>> > - Settings: **Leave the field empty**.
+>> >
+>> > Thus, it is the resolution of **cdn.provider.tld** that will indicate the parameters to use for **domain.tld**.
 
 #### Special use case: CNAME records <a name="cnameusecase"></a>
 

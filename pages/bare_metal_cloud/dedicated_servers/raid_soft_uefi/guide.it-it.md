@@ -1,6 +1,6 @@
 ---
-title: "Gestione e ricostruzione di un RAID software sui server in modalità di avvio UEFI"
-excerpt: Scopri come gestire e ricostruire un RAID software dopo il ripristino di un disco su un server in modalità di avvio UEFI
+title: "Gestione e ricostruzione di un RAID software sui server in modalità UEFI"
+excerpt: Scopri come gestire e ricostruire un RAID software dopo la sostituzione di un disco su un server UEFI
 updated: 2026-01-26
 ---
 
@@ -54,7 +54,7 @@ Quando acquisti un nuovo server, potresti sentire il bisogno di effettuare una s
 ### Panoramica del contenuto
 
 - [Informazioni di base](#basicinformation)
-- [Comprendere la partizione di sistema EFI (ESP)](#efisystemparition)
+- [Comprendere la partizione di sistema EFI (ESP)](#efisystempartition)
 - [Simulazione di un guasto del disco](#diskfailure)
     - [Rimozione del disco guasto](#removedisk)
 - [Ricostruzione del RAID (con ESP non mirror)](#raidrebuildnonmirrored)
@@ -231,7 +231,7 @@ Nel nostro esempio, abbiamo:
 
 - Due matrici RAID: `/dev/md2` e `/dev/md3`.
 - Partizioni che fanno parte del RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** e **nvme0n1p3** con i punti di montaggio `/boot` e `/`.
-- Partizioni che non fanno parte del RAID: **nvem0n1p1**, **nvme0n1p4** e **nvme1n1p4** con i punti di montaggio `/boot/efi` e [SWAP].
+- Partizioni che non fanno parte del RAID: **nvme0n1p1**, **nvme0n1p4** e **nvme1n1p4** con i punti di montaggio `/boot/efi` e [SWAP].
 - Una partizione non ha un punto di montaggio: **nvme1n1p1**.
 
 La partizione `nvme0n1p5` è una partizione di configurazione, ovvero un volume in sola lettura collegato al server che gli fornisce i dati di configurazione iniziale.
@@ -330,14 +330,14 @@ Se il tuo ESP non è in mirror, potresti incontrare i seguenti problemi:
 - Il server è in grado di avviarsi in modalità normale e puoi procedere alla ricostruzione del RAID.
 - Il server non riesce ad avviarsi in modalità normale. Utilizza l'ambiente della modalità rescue per ricostruire il RAID e ricreare la partizione EFI sul nuovo disco.
 
-**Caso studio 2** - Sono state effettuate aggiornamenti principali del sistema (ad esempio, GRUB) e gli ESP sono sincronizzati.
+**Caso studio 2** - Sono stati effettuati aggiornamenti principali del sistema (ad esempio, GRUB) e gli ESP sono sincronizzati.
 
 - Il server è in grado di avviarsi in modalità normale poiché tutti gli ESP contengono informazioni aggiornate e la ricostruzione del RAID può essere effettuata in modalità normale.
 - Il server non riesce ad avviarsi in modalità normale. Utilizza l'ambiente della modalità rescue per ricostruire il RAID e ricreare la partizione EFI sul nuovo disco.
 
-**Caso studio 3** - Sono state effettuate aggiornamenti principali del sistema (ad esempio, GRUB) sul sistema operativo e le partizioni ESP non sono state sincronizzate.
+**Caso studio 3** - Sono stati effettuati aggiornamenti principali del sistema (ad esempio, GRUB) sul sistema operativo e le partizioni ESP non sono state sincronizzate.
 
-- Il server non riesce ad avviarsi in modalità normale, Utilizza l'ambiente della modalità rescue per ricostruire il RAID, ricreare la partizione di sistema EFI sul nuovo disco e reinstallare il bootloader (ad esempio, GRUB).
+- Il server non riesce ad avviarsi in modalità normale. Utilizza l'ambiente della modalità rescue per ricostruire il RAID, ricreare la partizione di sistema EFI sul nuovo disco e reinstallare il bootloader (ad esempio, GRUB).
 - Il server è in grado di avviarsi in modalità normale (questo potrebbe accadere nel caso in cui un sistema operativo venga aggiornato ma la versione di GRUB rimanga invariata), il che permette di procedere alla ricostruzione del RAID.
 
 In alcuni casi, l'avvio da un ESP obsoleto potrebbe fallire; ad esempio, un aggiornamento principale di GRUB potrebbe rendere il binario GRUB nell'ESP incompatibile con i nuovi moduli GRUB nella partizione `/boot`.
@@ -473,7 +473,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --manage /dev/md3 -
 # mdadm: set /dev/nvme0n1p3 faulty in /dev/md3
 ```
 
-Quando eseguiamo il comando `cat /proc/mdstat`, otteniamo :
+Quando eseguiamo il comando `cat /proc/mdstat`, otteniamo:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # cat /proc/mdstat
@@ -517,7 +517,7 @@ md2 : active raid1 nvme1n1p2[1]
 unused devices: <none>
 ```
 
-Ora, appaiono solo due partizioni negli array RAID. Abbiamo riuscito a provocare il guasto del disco **nvme0n1**.
+Ora, appaiono solo due partizioni negli array RAID. Siamo riusciti a provocare il guasto del disco **nvme0n1**.
 
 Per ottenere un disco simile a un disco vuoto, esegui il comando seguente su ogni partizione, quindi sul disco:
 
@@ -562,7 +562,7 @@ Partition Table: unknown
 Disk Flags:
 ```
 
-Per ulteriori informazioni sulla preparazione e la richiesta di sostituzione di un disco, consulta questo [guida](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
+Per ulteriori informazioni sulla preparazione e la richiesta di sostituzione di un disco, consulta questa [guida](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
 Inoltre, se esegui il comando seguente, otterrai ulteriori dettagli sugli array RAID:
 
@@ -608,7 +608,7 @@ Possiamo ora procedere alla sostituzione del disco e alla ricostruzione del RAID
 > [!primary]
 > Questo processo può variare in base al sistema operativo installato sul tuo server. Ti consigliamo di consultare la documentazione ufficiale del tuo sistema operativo per ottenere i comandi appropriati.
 >
-> Se il tuo server può avviarsi in modalità normale dopo la sostituzione del disco, procedi semplicemente seguendo le istruzioni descritte in [questa sezione](#nonmirrorednormalmode) se la tua partizione EFI non è in mirror o [questa sezione](#mirrored-esp-normal) se la tua partizione EFI è in mirror.
+> Se il tuo server può avviarsi in modalità normale dopo la sostituzione del disco, procedi semplicemente seguendo le istruzioni descritte in [questa sezione](#nonmirrorednormalmode) se la tua partizione EFI non è in mirror o [questa sezione](#raidrebuildmirrored) se la tua partizione EFI è in mirror.
 >
 
 #### Ricostruzione del RAID dopo il ripristino del disco principale (modalità rescue) <a name="nonmirroredrescuemode"></a>
@@ -723,7 +723,7 @@ Per ricostruire la partizione EFI System sul nuovo disco, dobbiamo formattare **
 In questo caso, assumiamo che le due partizioni siano state sincronizzate e contengano file aggiornati.
 
 > [!warning]
-> Se è avvenuta un'aggiornamento importante del sistema, come un aggiornamento del kernel o di GRUB, e le due partizioni non sono state sincronizzate, consulta questa [sezione](#efiraidgrub) una volta che hai completato la creazione della nuova partizione EFI System.
+> Se è avvenuto un aggiornamento importante del sistema, come un aggiornamento del kernel o di GRUB, e le due partizioni non sono state sincronizzate, consulta questa [sezione](#efiraidgrub) una volta che hai completato la creazione della nuova partizione EFI System.
 >
 
 Per prima cosa, formatta la partizione:
@@ -1283,7 +1283,7 @@ Successivamente, consulta [questa sezione](#swap-partition) per ricostruire la p
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> - Sostituisci il vecchio UUID della partizione SWAP (**nvme0n1p4)** con quello nuovo in `/etc/fstab`:
+>> - Sostituisci il vecchio UUID della partizione SWAP (**nvme0n1p4**) con quello nuovo in `/etc/fstab`:
 >>
 >> ```sh
 >> [user@server_ip ~]# sudo nano /etc/fstab
@@ -1325,6 +1325,8 @@ Successivamente, consulta [questa sezione](#swap-partition) per ricostruire la p
 >>
 
 ///
+
+<a name="go-further"></a>
 
 ## Per saperne di più
 

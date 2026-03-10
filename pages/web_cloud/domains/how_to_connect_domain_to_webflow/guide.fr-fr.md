@@ -18,11 +18,21 @@ Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le conn
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](/links/manager).
+- Disposer des [autorisations appropriées pour gérer](/pages/account_and_service_management/account_information/managing_contacts) le nom de domaine.
 - Disposer d’un hébergement chez Webflow.
 - Avoir accès à la gestion de cet hébergement chez Webflow.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -58,7 +68,7 @@ Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.a
 Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >> **Enregistrement A**<br><br>
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
@@ -69,7 +79,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> Vous devez créer 2 enregistrements de type « A » successivement afin de renseigner les 2 adresses IPv4 relatives à Webflow.
 >> Laissez le champ **Sous-domaine** vide et saisissez la première adresse IPv4 de Webflow `75.2.70.75` dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action} et validez votre enregistrement « A ». Répétez l'opération pour la seconde adresse IPv4 `99.83.190.102`, et passez à l'étape 2.
-> **Etape 2**
+> **Étape 2**
 >> **Enregistrement AAAA**<br><br>
 >> Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
@@ -77,7 +87,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine avec le sous-domaine « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, passez à l'étape 3.
-> **Etape 3**
+> **Étape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
@@ -87,7 +97,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> Complétez le champ **Sous-domaine** avec la valeur `_webflow` et saisissez dans le champ **Cible** la valeur présente dans la section `Site settings > Publishing tab > Production`{.action} de votre compte Webflow, de type `one-time-verification=XXXXXXXX`. Remplacez `XXXXXXXX` par la valeur présente dans votre compte Webflow.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-txt-webflow.png){.thumbnail}<br><br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « TXT » et passez à l'étape 4.
-> **Etape 4**
+> **Étape 4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}

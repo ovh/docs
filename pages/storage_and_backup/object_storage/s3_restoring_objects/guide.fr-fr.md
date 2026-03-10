@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Restaurer un objet archivé depuis la classe Cold Archive
 excerpt: Restaurer des objets depuis la classe Cold Archive
-updated: 2025-11-19
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -47,7 +47,7 @@ Vous pouvez restaurer un objet dans la classe de stockage Cold Archive en utilis
 > Via AWS CLI
 >>
 >> ```bash
->> aws s3api restore-object --bucket <bucket-name> --key <object-name> --restore-request '{"Days":10}'
+>> aws s3api restore-object --bucket <bucket_name> --key <object_key> --restore-request '{"Days":10}'
 >> ```
 >>
 >> > [!primary]
@@ -60,7 +60,7 @@ Vous pouvez restaurer un objet dans la classe de stockage Cold Archive en utilis
 >> Vous pouvez également surveiller l'état de la restauration via :
 >>
 >> ```bash
->> aws s3api head-object --bucket <bucket-name> --key <object-name>
+>> aws s3api head-object --bucket <bucket_name> --key <object_key>
 >> ```
 >>
 

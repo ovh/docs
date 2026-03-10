@@ -13,8 +13,18 @@ O reencaminhamento de um nome de domínio consiste em reencaminhá-lo para um no
 ## Requisitos
 
 - Dispor de um [nome de domínio](/links/web/domains).
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 - Estar conectado ao seu alojamento web (para um reencaminhamento através de um ficheiro [.htaccess](#htaccess_rewrite)).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 

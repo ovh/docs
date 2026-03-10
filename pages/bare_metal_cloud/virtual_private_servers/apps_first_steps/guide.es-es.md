@@ -4,6 +4,50 @@ excerpt: Cómo desplegar aplicaciones preinstaladas en un VPS
 updated: 2022-08-25
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objetivo
 
 OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para un despliegue rápido y fácil en pocos clics.
@@ -46,14 +90,23 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
-> [!faq]
->
-> ¿Puedo utilizar mis propios servidores DNS?
->> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía](/pages/web_cloud/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
-> ¿Por qué establecer la contraseña root?
->> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
-> ¿Dónde está mi licencia para cPanel?
->> Puede contratar su licencia cPanel para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | ¿Puedo utilizar mis propios servidores DNS?
+
+Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía](/pages/web_cloud/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
+
+///
+
+/// details | ¿Por qué establecer la contraseña root?
+
+WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
+
+///
+
+/// details | ¿Dónde está mi licencia para cPanel?
+
+Puede contratar su licencia cPanel para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Plesk
 
@@ -74,10 +127,11 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
-> [!faq]
->
-> ¿Dónde está mi licencia Plesk?
->> Puede contratar una licencia Plesk para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | ¿Dónde está mi licencia Plesk?
+
+Puede contratar una licencia Plesk para su VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Docker
 

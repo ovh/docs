@@ -18,9 +18,9 @@ Cuando instala Windows en un servidor con una configuración RAID de hardware, l
 
 ## Procedimiento
 
->[!warning]
+> [!warning]
 >
->Seguir los pasos de esta guía requerirá que elimine y reconstruya el volumen RAID existente. Esto significa que todos los datos existentes se perderán. Asegúrese de hacer una copia de seguridad de sus datos de antemano. Esta guía es para usuarios experimentados.
+> Seguir los pasos de esta guía requerirá que elimine y reconstruya el volumen RAID existente. Esto significa que todos los datos existentes se perderán. Asegúrese de hacer una copia de seguridad de sus datos de antemano. Esta guía es para usuarios experimentados.
 >
 
 ### Listar los volúmenes RAID existentes

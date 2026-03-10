@@ -23,8 +23,18 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 
 ## Requisitos
 
-- Ter criado uma [instância Public Cloud](/links/public-cloud/public-cloud).
-- Aceder à [Área de Cliente OVHcloud](/links/manager).
+- Uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -34,7 +44,7 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 > O seguinte procedimento não funciona para instâncias de terceira geração (por exemplo: B3-32). Para ser faturado mensalmente para este tipo de instância, deve criar um [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) para este modelo de instância.
 >
 
-Na [Área de Cliente OVHcloud](/links/manager), escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
+Escolha a instância para a qual deseja mudar o modo de faturação e abra o respetivo menu de opções clicando nos 3 pontos do lado direito da Instância. Terá então acesso ao botão `Passar para o plano mensal`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
