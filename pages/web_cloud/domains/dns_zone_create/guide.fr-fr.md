@@ -129,7 +129,7 @@ Pour éditer cette zone DNS, consultez notre guide « [Editer une zone DNS chez 
 
 ### 3 - Modifier les serveurs DNS du nom de domaine
 
-Une fois que la zone DNS chez OVHcloud est prête à être utilisée, reliez-la à votre nom de domaine pour appliquer la configuration qu'elle contient à ce dernier. 
+Une fois que la zone DNS chez OVHcloud est prête à être utilisée, reliez-la à votre nom de domaine pour appliquer la configuration qu'elle contient.
 
 Vous devez donc récupérer au préalable les **serveurs DNS** d'OVHcloud sur lesquels la zone DNS OVHcloud a été créée pour votre nom de domaine.
 
@@ -171,7 +171,7 @@ Consultez [ce guide](/pages/web_cloud/domains/dns_server_edit) pour vérifier ou
 
 /// details | Le nom de domaine a sa zone DNS active chez un autre fournisseur
 
-Dans ce cas précis, contactez votre fournisseur DNS en lui précisant que vous souhaitez ajouter 2 enregistrements DNS de type NS pour votre nom de domaine. 
+Dans ce cas précis, contactez votre fournisseur DNS en lui précisant que vous souhaitez ajouter 2 enregistrements DNS de type NS pour votre nom de domaine.
 
 Voici un exemple de demande à formuler auprès de votre fournisseur DNS :
 
