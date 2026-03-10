@@ -13,16 +13,24 @@ Con los VPS de OVHcloud, puede añadir un espacio de almacenamiento seguro como 
 ## Requisitos
 
 - Tener un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener acceso administrativo a su VPS por SSH o RDP.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## Procedimiento
-
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 ### Contratar un disco adicional
 

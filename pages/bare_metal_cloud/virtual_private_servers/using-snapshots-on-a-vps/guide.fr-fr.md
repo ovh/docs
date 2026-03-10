@@ -19,16 +19,24 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](/links/manager).
 - Un [VPS OVHcloud](/links/bare-metal/vps) déjà configuré.
 
 > [!warning]
 > Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## En pratique
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## En pratique
 
 ### Étape 1 : souscrire l'option snapshot
 

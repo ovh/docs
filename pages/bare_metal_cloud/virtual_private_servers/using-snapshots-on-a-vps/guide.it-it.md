@@ -17,16 +17,24 @@ Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagin
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - un servizio [VPS OVHcloud](/links/bare-metal/vps) già impostato
 
 > [!warning]
 > Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Procedura
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Procedura
 
 ### Step 1: Attivare l’opzione snapshot
 

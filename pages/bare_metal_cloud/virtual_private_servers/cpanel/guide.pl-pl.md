@@ -21,7 +21,17 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 ## Wymagania początkowe
 
 - Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
-- zalogowanie do [Panelu client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).

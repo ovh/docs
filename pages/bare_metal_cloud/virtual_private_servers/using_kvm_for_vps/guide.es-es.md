@@ -31,13 +31,21 @@ La consola KVM para VPS, disponible en el área de cliente de OVHcloud, le permi
 ## Requisitos
 
 - Un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedimiento
 
 ### Cómo abrir la consola KVM desde el área de cliente de OVHcloud
-
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en `Servidores privados virtuales`{.action}.
 
 En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} situado junto al nombre de su VPS en la sección **Su VPS**.
 

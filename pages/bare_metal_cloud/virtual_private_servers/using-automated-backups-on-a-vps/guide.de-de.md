@@ -30,9 +30,19 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 - Administratorzugang (sudo) über SSH auf Ihren VPS (optional)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
@@ -69,9 +79,7 @@ Für mehr Flexibilität bei Ihren Backups können Sie die Option "Automatisches 
 Die Option Automatisches Backup Premium erzeugt alle 24 Stunden zum ausgewählten Zeitpunkt ein Backup Ihres VPS.  
 Sie haben Zugriff auf alle täglichen Backups der letzten 7 Tage. Sobald 7 Backups erstellt wurden, ersetzt jedes neue Backup das älteste.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, wählen Sie `Virtual Private Server`{.action} aus und klicken Sie auf Ihren VPS-Namen.
-
-Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
+Klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
 
 Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die seit dem 07.08.25 bestellt wurden) oder den Button `Automatisches Backup aktivieren`{.action}.
 

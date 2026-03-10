@@ -16,12 +16,19 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 
 - An IP address attached to a service in your OVHcloud account
 - A domain name with its `A` record or `AAAA` record mapped to your service
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## Instructions
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
-
 The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}

@@ -18,7 +18,17 @@ Im Gegensatz zu einem verwalteten Webhosting-Dienst sind Sie für folgende Aufga
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
@@ -71,11 +81,7 @@ Sobald das Windows-Betriebssystem installiert ist, erhalten Sie eine E-Mail mit 
 
 Sie müssen anschließend den Windows-Installationsprozess abschließen, indem Sie Ihre Anzeigesprache, Tastaturbelegung und Administratorpasswort einstellen.
 
-Dies erfolgt über die VPS-KVM-Konsole:
-
-1. Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an und wechseln Sie in den Bereich `Bare Metal Cloud`{.action}.
-1. Klicken Sie auf `Virtual Private Server`{.action} und wählen Sie Ihren Server aus.
-1. Gehen Sie auf den Tab `Start`{.action}, klicken Sie auf den `...`{.action}-Button neben dem Namen Ihres VPS in der **Ihr VPS**-Sektion und wählen Sie `KVM`{.action}.
+Dies erfolgt über die VPS-KVM-Konsole: Gehen Sie auf den Tab `Start`{.action}, klicken Sie auf den `...`{.action}-Button neben dem Namen Ihres VPS in der **Ihr VPS**-Sektion und wählen Sie `KVM`{.action}.
 
 Weitere Informationen zu diesem Tool finden Sie in unserer "[KVM-Anleitung](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)".
 

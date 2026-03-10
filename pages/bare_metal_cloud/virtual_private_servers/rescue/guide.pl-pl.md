@@ -25,8 +25,18 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie już skonfigurowanego [VPS OVHcloud](/links/bare-metal/vps)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Do Twoich obowiązków należy zatem upewnienie się, że działają one prawidłowo.
@@ -37,8 +47,6 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 ## W praktyce
 
 ### Aktywacja trybu Rescue
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
 W zakładce `Strona główna`{.action} kliknij `...`{.action} obok "Boot" w strefie **Twój VPS**.
 

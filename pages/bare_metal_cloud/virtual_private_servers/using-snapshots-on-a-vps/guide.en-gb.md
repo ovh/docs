@@ -17,16 +17,24 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Instructions
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Log in to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Instructions
 
 ### Step 1: Subscribing to the snapshot option
 

@@ -25,8 +25,18 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ter o seu [VPS OVHcloud](/links/bare-metal/vps) já configurado.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. É da sua responsabilidade assegurar o seu bom funcionamento.
@@ -37,8 +47,6 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 ## Instruções
 
 ### Ativação do modo rescue
-
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
 

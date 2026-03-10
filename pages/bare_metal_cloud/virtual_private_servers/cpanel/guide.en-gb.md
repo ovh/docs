@@ -21,7 +21,17 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
