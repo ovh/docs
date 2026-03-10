@@ -1,7 +1,7 @@
 ---
 title: "Backup Agent - Restaurer un serveur Bare Metal avec Veeam Backup Agent"
 excerpt: "Découvrez comment restaurer l'intégralité de votre système - en ligne ou sur site - grâce à une image ISO de récupération et des sauvegardes Veeam hébergées chez OVHcloud"
-updated: 2026-02-09
+updated: 2026-03-10
 ---
 
 ## Objectif
@@ -92,16 +92,15 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 5\. Saisissez l’adresse suivante lorsqu’il vous est demandé de renseigner le fournisseur de service :
 
+![Renseigner les DNS](images/step2_04.png){.thumbnail}
+
 > [!warning]
 >
-> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez [contacter le support](/links/support-contact) qui vous les fournira.
-
-![Renseigner les DNS](images/step2_04.png){.thumbnail}
+> La procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration n'est pas encore disponible. Si besoin, [contactez le support](/links/support-contact) pour les obtenir.
 
 6\. Saisissez votre nom d’utilisateur et votre mot de passe pour vous connecter.
 
 ![Renseigner les informations d'identification](images/step2_05.png){.thumbnail}
-
 
 7\. Sélectionnez le `serveur`{.action} que vous souhaitez restaurer.
 
