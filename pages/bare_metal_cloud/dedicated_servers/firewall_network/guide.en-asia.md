@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2026-03-09
+updated: 2026-03-10
 ---
 
 ## Objective
