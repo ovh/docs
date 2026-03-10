@@ -27,6 +27,17 @@ Di default, il server DNS configurato sulle istanze Public Cloud è quello di OV
 - Avere accesso amministratore all'istanza via SSH o RDP
 - Conoscenze di base in rete e amministrazione
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Procedura
 
 Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).

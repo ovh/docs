@@ -39,6 +39,18 @@ Es kann notwendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum 
 
 ## In der praktischen Anwendung
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung auf Ihrer Instanz über SSH oder einen GUI-Login (VNC für eine Windows-Instanz). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
 
 > [!primary]
@@ -295,7 +307,7 @@ Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten v
 > **Windows Server**
 >> Windows Server
 >>
->> Öffnen Sie im Public Cloud Bereich im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
+>> Öffnen Sie In Ihrem Public Cloud Projekt im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
 >>
 >> **Schritt 1: Netzwerkkonfiguration überprüfen**
 >>

@@ -17,6 +17,17 @@ updated: 2024-12-10
 - Un Load Balancer [déjà créé et disponible](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
 - Les privilèges nécessaires pour modifier les paramètres du Load Balancer
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 ### Étape 1 - Se connecter à Horizon

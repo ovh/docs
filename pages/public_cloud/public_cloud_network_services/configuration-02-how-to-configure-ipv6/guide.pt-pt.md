@@ -42,7 +42,16 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 * Uma instância Public Cloud (qualquer modelo).
 * Dispor de um acesso administrativo (sudo) via SSH ou ambiente de trabalho remoto (Windows) ao seu servidor.
 * Ter conhecimentos básicos de rede.
-* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -65,7 +74,7 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 
 ### Obter as informações de rede
 
-Aceda à Área de Cliente, clique no menu da secção `Public Cloud`{.action}, selecione o seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspondente e clique em `Detalhes da instância`{.action}.
+No seu projeto Public Cloud, clique em `Instâncias`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspondente e clique em `Detalhes da instância`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 

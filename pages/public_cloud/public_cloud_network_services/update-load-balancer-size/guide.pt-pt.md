@@ -17,6 +17,17 @@ This guide explains how to change the size of your Public Cloud Load Balancer us
 - A Load Balancer [already created and available](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
 - User privileges to modify the Load Balancer settings
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1 - Log in to Horizon

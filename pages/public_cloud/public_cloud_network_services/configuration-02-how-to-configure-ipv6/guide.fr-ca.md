@@ -38,7 +38,16 @@ Par défaut, seule l'adresse IPv4 est configurée.
 * Une instance Public Cloud, le modèle importe peu.
 * Disposer d’un accès administrateur (sudo) via SSH ou bureau à distance (Windows) à votre serveur.
 * Disposer de connaissances basiques en réseau.
-* Être connecté à l'[espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -61,7 +70,7 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
 ### Récupérer les informations réseaux
 
-Connectez-vous à votre espace client, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche. Ensuite, cliquez sur le bouton `...`{.action} à droite de l'instance correspondante et cliquez sur `Détails de l'instance`{.action}.
+Dans votre projet Public Cloud, cliquez sur `Instances`{.action} dans le menu de gauche. Ensuite, cliquez sur le bouton `...`{.action} à droite de l’instance correspondante et cliquez sur `Détails de l’instance`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 

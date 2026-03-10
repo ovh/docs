@@ -40,6 +40,18 @@ Potrai configurare indirizzi Additional IP sulle tue istanze, ad esempio se ospi
 
 ## Procedura
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'accedere alla tua istanza via SSH o tramite una sessione di connessione all'interfaccia grafica utente (VNC per un'istanza Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (amministratore/sudo).
 
 > [!primary]
@@ -296,7 +308,7 @@ Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operati
 > **Windows Server**
 >> Windows Server
 >>
->> Dallo spazio Public Cloud, apri `Instances`{.action} nel menu a sinistra e clicca sul nome dell’istanza. Accedi alla scheda `Console VNC`{.action}.
+>> Nel tuo progetto Public Cloud, apri `Instances`{.action} nel menu a sinistra e clicca sul nome dell’istanza. Accedi alla scheda `Console VNC`{.action}.
 >>
 >> **Step 1: verifica la configurazione di rete**
 >>
