@@ -128,7 +128,7 @@ Um die DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[Bearbeiten der OVHcl
 
 > [!primary]
 >
-> Wenn Sie gerade die DNS-Zone erstellt haben und die Subdomain noch nicht in der Liste Ihrer Dienstleistungen erscheint (unter `DNS-Zone`{.action} im Bereich `Web Cloud`{.action} im OVHcloud Kundencenter), warten Sie ca. 20 Minuten und laden Sie die Seite neu.
+> Wenn Sie gerade die DNS-Zone erstellt haben und die Subdomain noch nicht in der Liste Ihrer Dienstleistungen erscheint, warten Sie ca. 20 Minuten und laden Sie die Seite neu.
 
 ### 3 - Deklarieren der DNS-Server in der aktiven DNS-Zone des Domainnamens, von dem die gewählte Subdomain abhängt
 

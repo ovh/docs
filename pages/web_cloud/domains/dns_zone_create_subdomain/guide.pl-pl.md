@@ -129,7 +129,7 @@ Aby edytować tę strefę DNS, zapoznaj się z naszym przewodnikiem "[Edycja str
 
 > [!primary]
 >
-> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług (w części `Web Cloud`{.action} w Panelu klienta OVHcloud, a następnie w sekcji `Strefy DNS`{.action}), odczekaj 15-20 minut, a następnie przeładuj stronę.
+> Jeśli właśnie utworzyłeś strefę DNS i nazwa subdomena nie wyświetla się jeszcze na liście Twoich usług, odczekaj 15-20 minut, a następnie przeładuj stronę.
 
 ### 3 - Zadeklarowanie serwerów DNS w aktywnej strefie DNS nazwy domeny, od której zależy wybrana subdomena
 
