@@ -94,14 +94,14 @@ If your system no longer boots and you need to restore it:
 
 ![Enter DNS](images/step2_04.png){.thumbnail}
 
+> [!warning]
+>
+> At this stage, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can [contact our support team](/links/support-contact) who will provide them to you.
 
 6\. Enter your username and password to log in.
 
 ![Enter credentials](images/step2_05.png){.thumbnail}
 
-> [!warning]
->
-> At this stage, we have not yet finalised the automatic procedure for recovering your credentials to access your restore points. If needed, you can [contact our support team](/links/support-contact) who will provide them to you.
 
 7\. Select the `server`{.action} you want to restore.
 

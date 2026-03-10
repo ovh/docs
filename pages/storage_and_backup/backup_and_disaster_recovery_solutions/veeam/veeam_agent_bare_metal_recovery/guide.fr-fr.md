@@ -92,6 +92,9 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 5\. Saisissez l’adresse suivante lorsqu’il vous est demandé de renseigner le fournisseur de service :
 
+> [!warning]
+>
+> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez [contacter le support](/links/support-contact) qui vous les fournira.
 
 ![Renseigner les DNS](images/step2_04.png){.thumbnail}
 
@@ -99,9 +102,6 @@ Si votre système ne démarre plus et que vous devez le restaurer :
 
 ![Renseigner les informations d'identification](images/step2_05.png){.thumbnail}
 
-> [!warning]
->
-> À l'heure actuelle, nous n'avons pas encore finalisé la procédure automatique de récupération de vos identifiants pour accéder à vos points de restauration. En cas de besoin, vous pouvez [contacter le support](/links/support-contact) qui vous les fournira.
 
 7\. Sélectionnez le `serveur`{.action} que vous souhaitez restaurer.
 
