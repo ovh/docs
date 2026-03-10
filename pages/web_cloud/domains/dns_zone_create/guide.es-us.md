@@ -40,7 +40,7 @@ pre.bgwhite code {
 
 ## Objetivo
 
-La zona **D**omain **N**ame **S**ystem (**DNS**) de un dominio constituye el fichero de configuración de este último. y se compone de información técnica llamada *enregistrement DNS*. La zona DNS es, en cierto modo, un centro de afilamiento.
+La zona **D**omain **N**ame **S**ystem (**DNS**) de un dominio constituye el fichero de configuración de este último. y se compone de información técnica llamada *registro DNS*. La zona DNS es, en cierto modo, un centro de distribución.
 
 Para más información, consulte nuestras guías:
 
