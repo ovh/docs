@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Data Loss Prevention API
-excerpt: Learn how to detect and anonymize your sensitive data
+excerpt: Learn how to detect and anonymize your sensitive data with AI Endpoints
 updated: 2025-10-03
 ---
 
@@ -17,10 +17,11 @@ The **Data Loss Prevention (DLP)** API helps organizations detect, classify, and
 
 Under the hood, the DLP API leverages a combination of **Named Entity Recognition (NER) models** and **regex-based detection** to provide optimized and accurate identification of sensitive content.
 
-The DLP API is designed to identify sensitive content such as **PII**, **PHI**, financial data, administrative information, and credentials, enabling compliance with regulations including **[GDPR](https://fcn-data.fr/blog/rgpd-definition-perimetre-principes)**, **[HIPAA](https://www.hhs.gov/hipaa/for-individuals/guidance-materials-for-consumers/index.html)**, and **[PCI-DSS](https://www.ovhcloud.com/fr/compliance/pci-dss/)**.
-PII (Personally Identifiable Information) refers to data that can be used to identify an individual, either directly, such as a name, email address, or social security number, or indirectly, such as a phone number, postal address, date of birth, or any combination of data that can be linked to a specific person.
+The DLP API is designed to identify sensitive content such as **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, financial data, administrative information, and credentials, enabling compliance with regulations including **[GDPR](https://fcn-data.fr/blog/rgpd-definition-perimetre-principes)**, **[HIPAA](https://www.hhs.gov/hipaa/for-individuals/guidance-materials-for-consumers/index.html)**, and **[PCI-DSS](https://www.ovhcloud.com/fr/compliance/pci-dss/)**.
 
-PHI (Protected Health Information) refers to health-related data associated with an identifiable individual. This includes medical records, test results, diagnoses, treatments, prescriptions, and any information related to a person’s physical or mental health. These data are highly sensitive and are subject to strict regulations, such as HIPAA, to ensure their confidentiality, integrity, and security.
+PII refers to data that can be used to identify an individual, either directly, such as a name, email address, or social security number, or indirectly, such as a phone number, postal address, date of birth, or any combination of data that can be linked to a specific person.
+
+PHI refers to health-related data associated with an identifiable individual. This includes medical records, test results, diagnoses, treatments, prescriptions, and any information related to a person’s physical or mental health. These data are highly sensitive and are subject to strict regulations, such as HIPAA, to ensure their confidentiality, integrity, and security.
 
 
 ## Objective
@@ -58,7 +59,8 @@ The examples provided during this guide can be used with one of the following en
 
 ## Authentication & Rate Limiting
 
-All the examples provided in this guide use anonymous authentication, which makes it simpler to use but may cause rate limiting issues. If you wish to enable authentication using your own token, simply specify your API key within the requests.
+Most examples provided in this guide are authenticated and expect the `OVH_AI_ENDPOINTS_ACCESS_TOKEN` to be set in order to avoid rate limiting issues.
+If you wish to enable authentication using your own token, specify your own API key in the environment (`export OVH_AI_ENDPOINTS_ACCESS_TOKEN='your_api_key'`).
 
 Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
 
@@ -99,7 +101,7 @@ The `detection_config` is a list of detector objects. Each detector includes:
 Now that you know which parameters are available, let's look at how to put them into practice. Below are sample requests in **Python**, **cURL** and **JavaScript**:
 
 > [!tabs]
-> **Python (using requests)**
+> **Python**
 >> 
 >> ```python
 >> import os
@@ -107,12 +109,10 @@ Now that you know which parameters are available, let's look at how to put them 
 >>
 >> url = "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect"
 >> 
->> 
 >> headers = {
 >>    "accept": "application/json",
->> #   "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
+>>    "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 >> }
->> 
 >> 
 >> data = {
 >>   "model": "NuNER_Zero",
@@ -144,6 +144,7 @@ Now that you know which parameters are available, let's look at how to put them 
 >> ```sh
 >> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect" \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
 >>   -d '{
 >>     "model": "NuNER_Zero",
 >>     "detection_config": [
@@ -159,13 +160,6 @@ Now that you know which parameters are available, let's look at how to put them 
 >>     ],
 >>     "payload": "Mr Dupont Yves and Mrs Dupont Marie are attending a meeting with Freddy. Contact Yves Dupont for more information."
 >>   }'
->>
->> ```
->>
->> To [**authenticate with your API key**](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started), add an Authorization header:
->>
->> ```sh
->> `-H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \`
 >> ```
 >>
 > **JavaScript**
@@ -176,7 +170,7 @@ Now that you know which parameters are available, let's look at how to put them 
 >> const headers = {
 >>   "accept": "application/json",
 >>   "Content-Type": "application/json",
->> //  "Authorization": `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
+>>   "Authorization": `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
 >> };
 >>
 >> const data = {
@@ -314,7 +308,7 @@ The `regex` detector allows you to identify such information using regular expre
 In the following example, we detect a **graduation year** contained in a text.
 
 > [!tabs]
-> **Python (using requests)**
+> **Python**
 >>
 >> ```python
 >> import os
@@ -325,7 +319,7 @@ In the following example, we detect a **graduation year** contained in a text.
 >> headers = {
 >>   "accept": "application/json",
 >>   "Content-Type": "application/json",
->> #  "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
+>>   "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 >> }
 >>
 >> data = {
@@ -353,8 +347,8 @@ In the following example, we detect a **graduation year** contained in a text.
 >>
 >> ```sh
 >> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect" \
->>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
 >>   -d '{
 >>     "model": "NuNER_Zero",
 >>     "detection_config": [
@@ -377,7 +371,7 @@ In the following example, we detect a **graduation year** contained in a text.
 >> const headers = {
 >>   accept: "application/json",
 >>   "Content-Type": "application/json",
->> // Authorization: `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
+>>   Authorization: `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
 >> };
 >>
 >> const data = {
@@ -418,7 +412,7 @@ This type of detector compares the analyzed content against an explicit list of 
 In this example, we detect members of the **Dupont** family in a text.
 
 > [!tabs]
-> **Python (using requests)**
+> **Python**
 >>
 >> ```python
 >> import os
@@ -429,7 +423,7 @@ In this example, we detect members of the **Dupont** family in a text.
 >> headers = {
 >>   "accept": "application/json",
 >>   "Content-Type": "application/json",
->> #  "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
+>>   "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 >> }
 >>
 >> data = {
@@ -461,8 +455,8 @@ In this example, we detect members of the **Dupont** family in a text.
 >>
 >> ```sh
 >> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect" \
->>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
 >>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
 >>   -d '{
 >>     "model": "NuNER_Zero",
 >>     "detection_config": [
@@ -479,6 +473,43 @@ In this example, we detect members of the **Dupont** family in a text.
 >>     ],
 >>     "payload": "Mr Dupont Yves and Mrs Dupont Marie are attending a meeting with Freddy."
 >>   }'
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> const url = "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect";
+>>
+>> const headers = {
+>>   accept: "application/json",
+>>   "Content-Type": "application/json",
+>>   Authorization: `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
+>> };
+>>
+>> const data = {
+>>   model: "NuNER_Zero",
+>>   detection_config: [
+>>     {
+>>       type: "word_list",
+>>       name: "Dupont_family",
+>>       words: ["Dupont Yves", "Dupont Marie", "Dupont Jean"],
+>>       is_case_sensitive: false,
+>>     },
+>>   ],
+>>   payload: "Mr Dupont Yves and Mrs Dupont Marie are attending a meeting with Freddy.",
+>> };
+>>
+>> const response = await fetch(url, {
+>>   method: "POST",
+>>   headers,
+>>   body: JSON.stringify(data),
+>> });
+>>
+>> if (response.ok) {
+>>   console.log(await response.json());
+>> } else {
+>>   console.log("Error:", response.status, await response.text());
+>> }
 >> ```
 
 ---
@@ -498,7 +529,7 @@ The example below detects:
 - a graduation year (regex).
 
 > [!tabs]
-> **Python (using requests)**
+> **Python**
 >>
 >> ```python
 >> import os
@@ -509,7 +540,7 @@ The example below detects:
 >> headers = {
 >>   "accept": "application/json",
 >>   "Content-Type": "application/json",
->> #  "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
+>>   "Authorization": f"Bearer {os.getenv('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}",
 >> }
 >>
 >> data = {
@@ -551,7 +582,98 @@ The example below detects:
 >> else:
 >>     print("Error:", response.status_code, response.text)
 >> ```
-
+>
+> **cURL**
+>>
+>> ```sh
+>> curl -X POST "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect" \
+>>   -H "Content-Type: application/json" \
+>>   -H "Authorization: Bearer $OVH_AI_ENDPOINTS_ACCESS_TOKEN" \
+>>   -d '{
+>>     "model": "NuNER_Zero",
+>>     "detection_config": [
+>>       {
+>>         "type": "word_list",
+>>         "name": "Dupont_family",
+>>         "words": [
+>>           "Dupont Yves",
+>>           "Dupont Marie",
+>>           "Dupont Jean"
+>>         ],
+>>         "is_case_sensitive": false
+>>       },
+>>       {
+>>         "type": "builtin",
+>>         "name": "person_detector",
+>>         "confidence": "very_unlikely",
+>>         "filter": {
+>>           "type": "entity",
+>>           "entities": ["PERSON"]
+>>         }
+>>       },
+>>       {
+>>         "type": "regex",
+>>         "name": "year_of_diplomation",
+>>         "pattern": "graduated in (\\d{4})",
+>>         "is_case_sensitive": false
+>>       }
+>>     ],
+>>     "payload": "Mr Dupont Yves and Mrs Dupont Marie are attending a meeting with Freddy. Contact Yves Dupont for more information. I graduated in 2026 from university."
+>>   }'
+>> ```
+>
+> **JavaScript**
+>>
+>> ```javascript
+>> const url = "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/detect";
+>>
+>> const headers = {
+>>   accept: "application/json",
+>>   "Content-Type": "application/json",
+>>   Authorization: `Bearer ${process.env.OVH_AI_ENDPOINTS_ACCESS_TOKEN}`,
+>> };
+>>
+>> const data = {
+>>   model: "NuNER_Zero",
+>>   detection_config: [
+>>     {
+>>       type: "word_list",
+>>       name: "Dupont_family",
+>>       words: ["Dupont Yves", "Dupont Marie", "Dupont Jean"],
+>>       is_case_sensitive: false,
+>>     },
+>>     {
+>>       type: "builtin",
+>>       name: "person_detector",
+>>       confidence: "very_unlikely",
+>>       filter: {
+>>         type: "entity",
+>>         entities: ["PERSON"],
+>>       },
+>>     },
+>>     {
+>>       type: "regex",
+>>       name: "year_of_diplomation",
+>>       pattern: "graduated in (\\d{4})",
+>>       is_case_sensitive: false,
+>>     },
+>>   ],
+>>   payload:
+>>     "Mr Dupont Yves and Mrs Dupont Marie are attending a meeting with Freddy. Contact Yves Dupont for more information. I graduated in 2026 from university.",
+>> };
+>>
+>> const response = await fetch(url, {
+>>   method: "POST",
+>>   headers,
+>>   body: JSON.stringify(data),
+>> });
+>>
+>> if (response.ok) {
+>>   console.log(await response.json());
+>> } else {
+>>   console.log("Error:", response.status, await response.text());
+>> }
+>> ```
 
 ## De-identification
 
@@ -668,7 +790,7 @@ Our API supports several types of de-identification operations:
 
 ### Language Compatibility and Performance
 
-The DLP API supports multiple languages. The specific languages supported depend on the underlying model used. Please refer to the model specifications in the [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to check which languages are available for your chosen model. Detection accuracy depends on language quality, structure, and content.
+The DLP API may support multiple languages depending on the underlying model used. Please refer to the model specifications in the [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to check which languages are available for your chosen model. Detection accuracy depends on language quality, structure, and content.
 
 ### Payload size
 Very large documents or large batches may increase processing time. For optimal performance, consider splitting large inputs into smaller logical units.
