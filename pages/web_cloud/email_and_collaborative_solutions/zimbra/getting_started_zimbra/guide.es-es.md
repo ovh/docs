@@ -38,7 +38,6 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 
 **Contenido**
 
-- [Acceder a la gestión de su servicio](#zimbra-access)
 - [Configurar el servicio Zimbra](#zimbra-conf)
 - [Organizaciones](#organizations)
     - [Crear organización](#organizations-create)
@@ -53,10 +52,6 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 - [Redirecciones](#redirections)
 - [Alias](#alias)
 - [Respuestas automáticas](#autoreply)
-
-### Acceder a la gestión de su servicio <a name="zimbra-access"></a>
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configurar su servicio Zimbra <a name="zimbra-conf"></a>
 

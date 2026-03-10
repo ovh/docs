@@ -38,7 +38,6 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 **Podsumowanie**
 
-- [Dostęp do interfejsu zarządzania usługą](#zimbra-access)
 - [Skonfiguruj usługę Zimbra](#zimbra-conf)
 - [Organizacje](#organizations)
     - [Utwórz organizację](#organizations-create)
@@ -53,10 +52,6 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 - [Przekierowania](#redirections)
 - [Alias](#alias)
 - [Odpowiedzi automatyczne](#autoreply)
-
-### Dostęp do interfejsu zarządzania usługą <a name="zimbra-access"></a>
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Skonfiguruj usługę Zimbra <a name="zimbra-conf"></a>
 

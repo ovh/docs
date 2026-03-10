@@ -38,7 +38,6 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
 
 **Riepilogo**
 
-- [Accedere alla gestione del servizio](#zimbra-access)
 - [Configura il servizio Zimbra](#zimbra-conf)
 - [Organizzazioni](#organizations)
     - [Crea organizzazione](#organizations-create)
@@ -53,10 +52,6 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
 - [Reindirizzamenti](#redirections)
 - [Alias](#alias)
 - [Risposte automatiche](#autoreply)
-
-### Accedi alla gestione del servizio <a name="zimbra-access"></a>
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configura il servizio Zimbra <a name="zimbra-conf"></a>
 

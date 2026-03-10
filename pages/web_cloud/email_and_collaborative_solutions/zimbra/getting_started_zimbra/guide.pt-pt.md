@@ -38,7 +38,6 @@ Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colabora
 
 **Índice**
 
-- [Aceder à interface de gestão do serviço](#zimbra-access)
 - [Configurar o serviço Zimbra](#zimbra-conf)
 - [Organizações](#organizations)
     - [Criar uma organização](#organizations-create)
@@ -53,10 +52,6 @@ Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colabora
 - [Reencaminhamentos](#redirections)
 - [alias](#alias)
 - [Respostas automáticas](#autoreply)
-
-### Aceder à gestão do seu serviço <a name="zimbra-access"></a>
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configurar o serviço Zimbra <a name="zimbra-conf"></a>
 

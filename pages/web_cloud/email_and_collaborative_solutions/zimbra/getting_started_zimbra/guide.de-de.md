@@ -38,7 +38,6 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
 
 **Inhalt**
 
-- [Zur Verwaltung Ihres Dienstes](#zimbra-access)
 - [Konfigurieren Sie Ihre Zimbra Dienstleistung](#zimbra-conf)
 - [Organisationen](#organizations)
     - [Organisation erstellen](#organizations-create)
@@ -53,10 +52,6 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
 - [Weiterleitungen](#redirections)
 - [Alias](#alias)
 - [automatische Antworten](#autoreply)
-
-### Auf die Verwaltung Ihrer Dienstleistung zugreifen <a name="zimbra-access"></a>
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Ihren Zimbra Dienst konfigurieren <a name="zimbra-conf"></a>
 

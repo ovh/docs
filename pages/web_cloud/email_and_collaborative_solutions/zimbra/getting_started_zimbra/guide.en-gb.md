@@ -38,7 +38,6 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 **Summary**
 
-- [Access your service management](#zimbra-access)
 - [Configure your Zimbra service](#zimbra-conf)
 - [Organizations](#organizations)
     - [Create an organization](#organizations-create)
@@ -53,12 +52,6 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 - [Redirections](#redirections)
 - [Alias](#alias)
 - [Automatic Replies](#autoreply)
-
-### Access your service management <a name="zimbra-access"></a>
-
-From the Zimbra section of the OVHcloud Control Panel, select your service.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configure your Zimbra service <a name="zimbra-conf"></a>
 

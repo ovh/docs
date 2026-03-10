@@ -38,7 +38,6 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 **Sommaire**
 
-- [Accéder à la gestion de votre service](#zimbra-access)
 - [Configurer votre service Zimbra](#zimbra-conf)
 - [Organisations](#organizations)
     - [Créer une organisation](#organizations-create)
@@ -53,12 +52,6 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 - [Redirections](#redirections)
 - [Alias](#alias)
 - [Réponses automatiques](#autoreply)
-
-### Accéder à la gestion de votre service <a name="zimbra-access"></a>
-
-Depuis la section Zimbra de l'espace client OVHcloud, sélectionnez votre service.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configurer votre service Zimbra <a name="zimbra-conf"></a>
 
