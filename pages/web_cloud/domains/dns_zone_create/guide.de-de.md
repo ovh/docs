@@ -40,7 +40,7 @@ pre.bgwhite code {
 
 ## Ziel
 
-Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens. Sie besteht aus **DNS-Einträgen**, Datensätzen die dem Domainnamen verschiedenen Diensten und Funktionen zuordnen, zum Beispiel:
+Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens. Sie besteht aus **DNS-Einträgen**, Datensätzen die dem Domainnamen verschiedenen Diensten und Funktionen zuordnen.
 
 Weitere Informationen finden Sie in folgenden Anleitungen:
 
@@ -147,10 +147,10 @@ Um diese zu finden, klicken Sie auf die Tabs, um die **2** Schritte anzuzeigen.
 >> ![DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 >>
 >> Suchen Sie die beiden Zeilen vom Typ **NS** und notieren Sie die beiden Werte in der Spalte **Ziel**.
->> Die Namen der DNS-Server sollten eine der folgenden drei Formen haben :
+>> Die Namen der DNS-Server sollten eine der folgenden drei Formen haben:
 >>
->> - `nsXX.ovh.net` und `dnsXX.ovh.net` oder, `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jeder `X` eine Zahl zwischen **0** und **9** darstellt).
->> - `nsXX.ovh.ca` und `dnsXX.ovh.ca` oder, `nsXXX.ovh.ca` und `dnsXXX.ovh.ca` (wobei jeder `X` eine Zahl zwischen **0** und **9** darstellt).
+>> - `nsXX.ovh.net` und `dnsXX.ovh.net` oder, `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei `X` eine Zahl zwischen **0** und **9** darstellt).
+>> - `nsXX.ovh.ca` und `dnsXX.ovh.ca` oder, `nsXXX.ovh.ca` und `dnsXXX.ovh.ca` (wobei `X` eine Zahl zwischen **0** und **9** darstellt).
 >> - `ns200.anycast.me` und `dns200.anycast.me` (wenn Sie die Option [DNS anycast](/links/web/domains-options) abonniert haben).
 
 Sobald die beiden DNS-Server-Namen abgerufen wurden, gibt es zwei mögliche Szenarien.
@@ -173,7 +173,7 @@ Kontaktieren Sie in diesem Fall Ihren DNS-Anbieter und teilen Sie ihm mit, dass 
 
 Hier ein Beispiel für eine Anfrage an Ihren DNS-Anbieter:
 
-<pre class=”bgwhite”><code>
+<pre class="bgwhite"><code>
 Guten Tag,
 
 für meinen Domainnamen <b>domain.tld</b> möchte ich die aktuellen DNS-Server durch die folgenden DNS-Server ersetzen:
@@ -209,4 +209,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.
