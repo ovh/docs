@@ -17,16 +17,24 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## W praktyce
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## W praktyce
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 

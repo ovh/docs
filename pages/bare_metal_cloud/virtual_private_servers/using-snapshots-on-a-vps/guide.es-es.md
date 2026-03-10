@@ -17,16 +17,24 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](/links/manager).
 - Tener un [servicio de servidor virtual privado (VPS)](/links/bare-metal/vps) de OVHcloud configurado.
 
 > [!warning]
 > Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Procedimiento
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Procedimiento
 
 ### Paso 1: Suscribirse a la opción "Snapshot"
 

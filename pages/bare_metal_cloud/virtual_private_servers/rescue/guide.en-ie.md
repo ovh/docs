@@ -26,7 +26,17 @@ If you are facing a problem with your system, performing checks in rescue mode h
 ## Requirements
 
 - A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [VPS management](/links/control-panel/baremetal-vps)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Virtual private servers`{.action} > Select your VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
@@ -37,8 +47,6 @@ If you are facing a problem with your system, performing checks in rescue mode h
 ## Instructions
 
 ### Activating rescue mode
-
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the section **Your VPS**.
 

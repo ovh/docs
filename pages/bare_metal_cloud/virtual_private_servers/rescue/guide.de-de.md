@@ -25,8 +25,18 @@ Wenn Sie ein Problem mit Ihrem System feststellen, können Sie mithilfe des Resc
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 >
@@ -38,8 +48,6 @@ Wenn Sie ein Problem mit Ihrem System feststellen, können Sie mithilfe des Resc
 ## In der praktischen Anwendung
 
 ### Rescue-Modus aktivieren
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren VPS unter `Virtual Private Server`{.action} aus.
 
 Klicken Sie im Tab `Start`{.action} auf `...`{.action} neben "Boot" im Bereich **Ihr VPS**.
 

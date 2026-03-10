@@ -21,7 +21,17 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 ## Requisitos
 
 - Tener contratado un servicio [VPS reciente](/links/bare-metal/vps) con un [OS compatible con cPanel](/links/bare-metal/vps-os).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).

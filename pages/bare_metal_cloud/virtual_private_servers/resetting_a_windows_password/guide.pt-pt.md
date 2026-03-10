@@ -19,7 +19,6 @@ Se perder a sua palavra-passe de administrador, pode repô-la através do modo r
 ## Requisitos
 
 - Dispor de uma [VPS](/links/bare-metal/vps) ou de uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 

@@ -16,12 +16,19 @@ Esta guía explica cómo configurar el registro DNS inverso de su dirección IP 
 
 - Una dirección IP asociada a un servicio de su cuenta de OVHcloud
 - Un dominio con su registro `A` o `AAAA` asociado a su servicio
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## Procedimiento
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
-
 El menú desplegable bajo "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categoría. También puede buscar una dirección IP específica mediante la barra de búsqueda situada a la izquierda del menú desplegable.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}

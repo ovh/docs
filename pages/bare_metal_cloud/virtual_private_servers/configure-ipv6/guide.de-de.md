@@ -40,7 +40,18 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 - Sie verfügen über einen [OVHcloud VPS](/links/bare-metal/vps).
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](/links/api).
+- Sie haben Zugriff auf die [OVHcloud API](/links/api) (optional).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
@@ -67,8 +78,6 @@ Der erste Schritt besteht darin, die Ihrem Server zugewiesene IPv6-Adresse sowie
 
 > [!tabs]
 > **Über Ihr Kundencenter**
->>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Virtual Private Server`{.action} aus.
 >>
 >> Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway werden im Tab `Start`{.action} unter `IP` angezeigt. Kopieren Sie diese und fahren Sie fort mit Schritt 2, [IPv6-Konfiguration anwenden](#applyipv6).
 >>

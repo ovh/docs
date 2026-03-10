@@ -25,8 +25,18 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [VPS OVHcloud](/links/bare-metal/vps) già configurato
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [VPS management](/links/control-panel/baremetal-vps)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server Privati Virtuali`{.action} > Seleziona il tuo VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud fornisce servizi la cui configurazione e gestione sono di vostra responsabilità. È quindi vostra responsabilità assicurarvi che funzionino correttamente.
@@ -37,8 +47,6 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 ## Procedura
 
 ### Attivazione della modalità Rescue
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server privati virtuali`{.action}.
 
 Nella scheda `Home`{.action}, clicca su `...`{.action} accanto a "Boot" nella casella **Il tuo VPS**.
 

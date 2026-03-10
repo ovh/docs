@@ -16,12 +16,19 @@ La configuration du reverse DNS d'un serveur est particulièrement utile lors de
 
 - Une adresse IP attachée à un service de votre compte OVHcloud
 - Un nom de domaine avec son enregistrement `A` ou `AAAA` relié à votre service
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Chemin de navigation :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
-
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie. Vous pouvez également rechercher une adresse IP spécifique grâce à la barre de recherche située à gauche du menu déroulant.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}

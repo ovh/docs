@@ -15,7 +15,6 @@ Si vous avez perdu votre mot de passe administrateur, vous pouvez le réinitiali
 ## Prérequis
 
 - Disposer d'un [VPS](/links/bare-metal/vps) ou d'une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

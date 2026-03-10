@@ -21,13 +21,23 @@ updated: 2023-09-20
 ## Requisitos
 
 - Un [VPS](/links/bare-metal/vps) en su cuenta OVHcloud
-- Tener acceso al [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedimiento
 
 ### VPS GNU/Linux
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Reinicie el servidor en modo de rescate desde el área de cliente. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 A continuación, compruebe la configuración de los discos:
 
@@ -92,7 +102,7 @@ fsck /dev/sdb1 -f
 
 Las instrucciones anteriores no suelen aplicarse a un VPS con Windows, ya que la verificación del sistema de archivos no admite NTFS. No obstante, puede comprobar la coherencia NTFS en las particiones.
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Reinicie el servidor en modo de rescate desde el área de cliente. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 A continuación, compruebe la configuración de los discos:
 

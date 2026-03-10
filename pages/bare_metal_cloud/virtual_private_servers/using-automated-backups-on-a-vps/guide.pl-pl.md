@@ -29,9 +29,19 @@ Opcja zautomatyzowany backup zapasowych dla serwerów VPS pozwala na udostępnie
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Serwer [Prywatne serwery wirtualne](/links/bare-metal/vps) z poziomu Twojego konta OVHcloud.
 - Dostęp administracyjny (uprawnienia użytkownika root) do prywatnego serwera wirtualnego za pośrednictwem protokołu SSH.
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
@@ -67,8 +77,6 @@ Aby uzyskać większą elastyczność w zakresie kopii zapasowych, możesz włą
 
 Opcja zautomatyzowany backup Premium tworzy kopię zapasową Twojego VPS co 24 godziny w wyznaczonym czasie.  
 Będziesz miał dostęp do wszystkich dziennych kopii zapasowych z ostatnich 7 dni. Po utworzeniu 7 kopii zapasowych, każda nowa kopia zastąpi najstarszą.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), otwórz sekcję `Bare Metal Cloud`{.action}, wybierz `Prywatne serwery wirtualne`{.action} a następnie kliknij nazwę swojego VPS.
 
 Kliknij kartę `Zautomatyzowany backup`{.action} w poziomym menu.
 
