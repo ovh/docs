@@ -61,7 +61,7 @@ L'abonnement consiste à activer la collecte de métriques dans le tenant de l'u
 
 Les informations relatives à la phase Alpha seront publiées sur cette [page OVHcloud Observability Metrics](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
 
-M2C met l’accent sur la proactivité et l’action, transformant les données des Métriques en décisions opérationnelles concrètes.
+La fonctionnalité d’abonnement Metrics met l’accent sur la proactivité et l’action, transformant les données des Métriques en décisions opérationnelles concrètes une fois la fonctionnalité disponible.
 
 ## Comprendre les Métriques dans le Public Cloud
 

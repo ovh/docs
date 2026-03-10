@@ -61,7 +61,7 @@ Subscription is the activation of metrics collection in user's own tenant in obs
 
 Information about the Alpha phase will be published on this [OVHcloud Observability Metrics page](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
 
-M2C emphasizes proactivity and action, transforming metric data into concrete operational decisions.
+The Metrics subscription feature emphasizes proactivity and action, transforming Metrics data into concrete operational decisions once the feature is available.
 
 ## Understanding Metrics in the Public Cloud
 
