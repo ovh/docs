@@ -1,7 +1,7 @@
 ---
 title: "Setting up Veeam Backup & Replication"
 excerpt: "Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise"
-updated: 2026-03-11
+updated: 2026-03-10
 ---
 
 ## Objective
@@ -261,7 +261,7 @@ Go to the menu, then click `License`{.action}.
 
 Check that the information displayed is definitely for your OVHcloud licence.
 
-If the registration was successful, you should see "Edition: Enterprise Plus".
+If the registration was successful, you should see `Edition: Enterprise Plus`.
 
 > [!primary]
 > You can now disable the user that you have created to create the registration.
