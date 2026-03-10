@@ -72,10 +72,29 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A preconfigured OVHcloud email solution:
     - **MX Plan** available with a [web hosting plan](/links/web/hosting).
     - [Exchange](/links/web/emails-exchange).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -95,11 +114,6 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 Currently, only the **MX Plan** and **Redirect** plans have a redirection management interface via the OVHcloud Control Panel.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 
 In our example, this is a **redirection with a local copy** (see [diagram 2](#diagram) at the beginning of this guide). If this is what you need, follow the steps below by clicking on the tab corresponding to the webmail technology used by your MX Plan:
 
@@ -197,11 +211,6 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 
 ##### MX Plan via the OVHcloud Control Panel <a name="redirect-delete-mxplan"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-
 Select the tab below for the email technology used by your MX Plan service:
 
 - By default, you are in the `General information`{.action} tab of your MX Plan.
@@ -243,8 +252,6 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 
 Creating an alias for your email address allows you to provide a "mask" address to your contacts, without having to provide your personal email address to the sender.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Then choose the menu according to your email solution:
-
 - **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click the `Email accounts`{.action} tab.
 
 - **MX Plan**: Go to the `MX Plan`{.action} section, select the platform concerned, then click the `Email accounts`{.action} tab.
@@ -271,8 +278,6 @@ To add an alias to your email account, follow the steps described by clicking on
 >> ![emails](images/email-alias03.png){.thumbnail .w-640}
 
 ### Delete an alias <a name="alias-delete"></a>
-
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Then choose the menu according to your email solution:
 
 - **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click on the `Email accounts`{.action} tab.
 

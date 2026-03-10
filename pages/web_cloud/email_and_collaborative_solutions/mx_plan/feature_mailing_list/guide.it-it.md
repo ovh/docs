@@ -36,7 +36,17 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 ## Prerequisiti
 
 - Disponi di una soluzione MX Plan 100 o di un [hosting Web](/links/web/hosting) adatto per le mailing list
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 
@@ -48,10 +58,6 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 
 Per creare la tua mailing list:
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
 1. Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
 
 ![Email](images/manage_mailing-lists_01.png){.thumbnail}

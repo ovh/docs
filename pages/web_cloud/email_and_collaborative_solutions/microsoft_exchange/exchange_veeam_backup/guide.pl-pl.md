@@ -22,8 +22,18 @@ Want to back up your email accounts hosted on an OVHcloud Private Exchange platf
 ## Requirements
 
 - You must have signed up to an [OVHcloud Private Exchange solution](/links/web/emails-private-exchange) and created email accounts on it.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - [Download Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) on a computer running Microsoft Windows 10 or higher.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 

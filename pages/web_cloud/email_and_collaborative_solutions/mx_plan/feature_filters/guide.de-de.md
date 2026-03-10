@@ -18,7 +18,6 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 ## Voraussetzungen
 
 - Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -30,12 +29,19 @@ MX Plan Legacy|MX Plan neuere Version|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
 |Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
 1. Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
 
 ![E-Mails](images/img_3239.png){.thumbnail}

@@ -25,13 +25,21 @@ Esta es la lista de programas incluidos en la siguiente:
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud.](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## Procedimiento
 
 ### Contratar una licencia
 
-1. Acceda a la página comercial [Microsoft 365 OVHcloud](/links/web/ms365) o desde el [área de cliente OVHcloud](/links/manager):
     - Acceda a la sección `Web Cloud`{.action} de la columna izquierda.
     - En la sección `MICROSOFT`, haga clic en `Microsoft 365`{.action}.
     - Haga clic en `Contratar`{.action}.
@@ -42,13 +50,6 @@ Esta es la lista de programas incluidos en la siguiente:
 ### Activar su licencia
 
 Para activar la licencia contratada:
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna izquierda.
-1. En la sección `MICROSOFT`, haga clic en `Microsoft 365`{.action}.
-1. Seleccione el servicio de Microsoft 365 correspondiente.
-1. Seleccione la pestaña `Licencias`{.action}.
-1. Haga clic en el botón `⁝`{.action} en la línea de la licencia correspondiente a la activación y seleccione `Editar la cuenta`{.action}.
 
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
@@ -76,26 +77,11 @@ Para instalar su licencia en varias máquinas, solo tiene que reproducir [paso a
 
 Si desea establecer usted mismo la contraseña de su licencia:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna izquierda.
-1. En la sección `MICROSOFT`, haga clic en `Microsoft 365`{.action}.
-1. Seleccione el servicio de Microsoft 365 correspondiente.
-1. Seleccione la pestaña `Licencias`{.action}.
-1. Haga clic en el botón `⁝`{.action} a la derecha de la licencia correspondiente y luego en `Cambiar la contraseña`{.action}.
-
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
 ### Añadir una licencia a un grupo existente
 
 Si desea agregar una o varias licencias a su grupo de licencias existente:
-
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna izquierda.
-1. En la sección `MICROSOFT`, haga clic en `Microsoft 365`{.action}.
-1. Seleccione el servicio de Microsoft 365 correspondiente.
-1. Seleccione la pestaña `Licencias`{.action}.
-1. Haga clic en el botón `Contratar más licencias`{.action} a la derecha.
-1. Determine el **número** y el **tipo de licencia** que desea contratar y haga clic en `Validar`{.action}.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
 

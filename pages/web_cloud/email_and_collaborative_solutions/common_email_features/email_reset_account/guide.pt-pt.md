@@ -21,8 +21,41 @@ Deseja:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 - Ter acesso aos endereços de e-mail pertinentes.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**Zimbra:**
+
+- **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -52,10 +85,6 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 >> Para identificar a tecnologia de e-mail associada ao seu serviço MX Plan, consulte a parte "[Identificar a tecnologia de e-mail da sua oferta MX Plan](#whichmxplan)" deste guia.
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Clique em `MX Plan`{.action}.
->> 1. Selecione o domínio em questão.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
 >> 1. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Eliminar conta`{.action}.
 >>
@@ -65,10 +94,6 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 >> Para identificar a tecnologia de e-mail associada ao seu serviço MX Plan, consulte a parte "[Identificar a tecnologia de e-mail da sua oferta MX Plan](#whichmxplan)" deste guia.
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Clique em `MX Plan`{.action}.
->> 1. Selecione o domínio em questão.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
 >> 1. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.
 >>
@@ -76,10 +101,6 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 > **Email Pro**
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Clique em `Email Pro`{.action}.
->> 1. Selecione a plataforma em causa.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
 >> 1. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.
 >>
@@ -89,10 +110,6 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 > **Exchange**
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
->> 1. Selecione a plataforma em causa.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}.
 >> 1. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar`{.action}.
 >>
@@ -102,9 +119,6 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Clique em `Zimbra Mail`{.action}.
 >> 1. Aceda ao separador `Conta email`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
 >> 1. Clique no botão `⋮`{.action} à direita da conta a modificar e, a seguir, clique em `Eliminar`{.action}.
 >>

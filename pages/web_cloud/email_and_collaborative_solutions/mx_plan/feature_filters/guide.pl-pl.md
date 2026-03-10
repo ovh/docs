@@ -19,7 +19,6 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 ## Wymagania początkowe
 
 - Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
-- Posiadanie dostępu do [Panelu klienta](/links/manager)
 
 > [!warning]
 >
@@ -31,12 +30,19 @@ Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
 |Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)".|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## W praktyce <a name="oldmxplan"></a>
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. W zakładce `E-maile`{.action} w Twojej usłudze MX Plan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
 
 ![emails](images/img_3239.png){.thumbnail}

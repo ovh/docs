@@ -21,18 +21,23 @@ Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektroni
 - Wykupienie usługi [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Hosted Exchange została zainstalowana.
 - Zarejestrowana domena.
-- Dostęp [do Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
 ### Dostęp do zarządzania usługą
 
 Po utworzeniu i udostępnieniu usługi Hosted Exchange :
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 
 > [!primary]
 >

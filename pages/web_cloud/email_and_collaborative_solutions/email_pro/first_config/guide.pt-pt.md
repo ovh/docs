@@ -15,18 +15,23 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 - Ter o serviço [E-mail Pro](/links/web/email-pro).
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instruções
 
 ### 1 - Aceder à interface de gestão do serviço
 
 Assim que o serviço E-mail Pro for criado e estiver disponível:
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Clique no separador `Web Cloud`{.action}.
-1. Clique em `Email Pro`{.action}.
-1. Selecione a plataforma em causa.
 
 > [!primary]
 >

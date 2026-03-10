@@ -13,7 +13,17 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 ## Wymagania początkowe
 
 - Zamówienie [rozwiązania Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 

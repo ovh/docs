@@ -13,7 +13,17 @@ Quando estiver em falta e não conseguir consultar o seu endereço de e-mail, po
 ## Requisitos
 
 - Dispor de uma oferta MX Plan. Esta última está disponível através de: uma oferta de [alojamento web](/links/web/hosting), o [alojamento gratuito 100M](/links/web/domains-free-hosting) incluído com um domínio (ativado anteriormente) ou a oferta MX Plan encomendada separadamente.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -23,10 +33,6 @@ Quando estiver em falta e não conseguir consultar o seu endereço de e-mail, po
 
 ### Criação de uma resposta automática
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
 1. Clique no separador `E-mails`{.action} na parte superior e, a seguir, em `Gestão das respostas automáticas`{.action}.
 
 Será redirecionado para a janela `Gestão das respostas automáticas`, onde será apresentado um conjunto de respostas automáticas aos e-mails que foram implementadas no seu serviço.

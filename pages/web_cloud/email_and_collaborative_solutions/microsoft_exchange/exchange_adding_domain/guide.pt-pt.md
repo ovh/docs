@@ -24,27 +24,30 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 - Dispor de uma solução [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Dispor de um ou vários domínios.
 - Ter a possibilidade de alterar a configuração do domínio [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+**Email Pro:**
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
 ### Aceder à gestão do seu serviço
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
->> 1. Selecione a plataforma em causa.
->>
-> **Email Pro**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Clique no separador `Web Cloud`{.action}.
->> 1. Clique em `Email Pro`{.action}.
->> 1. Selecione a plataforma em causa.
->>
 
 ### Adicionar um domínio
 

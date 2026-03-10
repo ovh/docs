@@ -15,7 +15,17 @@ En el marco de la transición progresiva de las cuentas MX Plan a Zimbra, es pos
 - Disponer de una dirección de correo electrónico MX Plan (a través de un MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Disponer de una cuenta de correo electrónico de Zimbra OVHcloud.
 - **No haber configurado una redirección en la dirección de correo electrónico MX Plan que quiera migrar**.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Procedimiento
 

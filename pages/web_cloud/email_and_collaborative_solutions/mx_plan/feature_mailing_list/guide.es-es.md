@@ -35,7 +35,17 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 ## Requisitos
 
 - Disponga al menos de una solución de correo electrónico MX Plan 100 o de un [Web hosting](/links/web/hosting) compatible con las listas de difusión.
-- Inicie sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -47,10 +57,6 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 
 Para crear una lista de difusión:
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}

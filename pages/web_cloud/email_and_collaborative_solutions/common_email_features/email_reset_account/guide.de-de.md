@@ -21,8 +21,41 @@ Sie möchten:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-Mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) als Admin-Kontakt des betreffenden E-Mail-Dienstes (Bereich `Web Cloud`{.action}).
 - Sie verfügen über Zugangsdaten für die betreffenden E-Mail-Accounts.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**Zimbra:**
+
+- **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -52,10 +85,6 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 >> Um die E-Mail-Technologie Ihres MX Plan Dienstes zu identifizieren, lesen Sie den Abschnitt "[Identifizierung der E-Mail-Technologie Ihres MX Plan Angebots](#whichmxplan)" in dieser Anleitung.
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
 >> 1. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt.
 >> 1. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Account löschen`{.action}.
 >>
@@ -65,10 +94,6 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 >> Um die E-Mail-Technologie Ihres MX Plan Dienstes zu identifizieren, lesen Sie den Abschnitt "[Identifizierung der E-Mail-Technologie Ihres MX Plan Angebots](#whichmxplan)" in dieser Anleitung.
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
 >> 1. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt.
 >> 1. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.
 >>
@@ -76,10 +101,6 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 > **E-Mail Pro**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `E-Mail Pro`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
 >> 1. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt.
 >> 1. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.
 >>
@@ -89,10 +110,6 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 > **Exchange**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
 >> 1. Wechseln Sie zum Tab `E-Mail Accounts`{.action}.
 >> 1. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Zurücksetzen`{.action}.
 >>
@@ -102,9 +119,6 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `Zimbra Mail`{.action}.
 >> 1. Wechseln Sie zum Tab `E-Mail Account`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt.
 >> 1. Klicken Sie auf `⋮`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Löschen`{.action}.
 >>

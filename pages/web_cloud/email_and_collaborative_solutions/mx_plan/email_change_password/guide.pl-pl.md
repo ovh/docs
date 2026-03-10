@@ -15,12 +15,45 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 
 ## Wymagania początkowe
 
-- W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](/links/web/email).
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**Zimbra:**
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wybierz usługę Zimbra
+
+**Email Pro:**
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -44,7 +77,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
+Postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 
 > [!tabs]
 > **E-maile MX Plan (wersja historyczna)**

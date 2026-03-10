@@ -22,7 +22,17 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
     - A [Web Hosting](/links/web/hosting) offer.
     - A [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated beforehand).
     - An MX Plan solution ordered separately.
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 > [!primary]
 >
@@ -33,11 +43,7 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 ## Instructions <a name="instructions"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. **Continue with the email technology used by your MX Plan service**.
+**Continue with the email technology used by your MX Plan service**.
 
 > [!primary]
 >

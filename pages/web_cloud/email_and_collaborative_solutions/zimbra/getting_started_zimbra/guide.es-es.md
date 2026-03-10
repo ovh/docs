@@ -22,7 +22,17 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 
 - Tener una cuenta de correo en nuestra solución de correo Zimbra OVHcloud.
 - Tener un [dominio de OVHcloud](/links/web/domains).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Procedimiento
 
@@ -45,10 +55,6 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 - [Respuestas automáticas](#autoreply)
 
 ### Acceder a la gestión de su servicio <a name="zimbra-access"></a>
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `Zimbra Mail`{.action}.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -224,13 +230,6 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 ### Cambiar de plan <a name="emails-offer"></a>
 
 Es posible cambiar el plan de cualquier cuenta Zimbra por un plan superior o inferior.
-
-1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-1. Vaya a la sección `Web Cloud`{.action}.
-1. Haga clic en `Zimbra Mail`{.action}.
-1. Haga clic en la pestaña `Cuenta de correo`{.action}.
-1. A la derecha de la cuenta de correo para la que desea cambiar a un plan superior, haga clic en `⁝`{.action}.
-1. Haga clic en `Cambiar de plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

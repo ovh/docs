@@ -21,6 +21,26 @@ details[open]>summary::before {
 }
 </style>
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## FAQ e-mail
 
 Sur cette page, vous trouverez les questions les plus fréquemment posées concernant l'utilisation de vos e-mails en fonction des offres e-mail OVHcloud.
@@ -97,7 +117,6 @@ Ci-dessous vous retrouverez les principales raisons d'une absence de réception 
 
 ///
 
-
 /// details | Pourquoi configurer les enregistrements SPF et DKIM ?
 
 **SPF (Sender Policy Framework)**
@@ -113,7 +132,6 @@ Il permet de signer les e-mails pour éviter l'usurpation d'identité. Cette sig
 Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | Comment configurer mon adresse e-mail et l'utiliser avec le webmail ?
 
@@ -215,7 +233,6 @@ Si la colonne `Filtre` n'est pas présente dans votre espace-client, la créatio
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à ouvrir une demande d'assistance dans votre [espace client OVHcloud](/links/manager) afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
 ///
-
 
 /// details | Mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 

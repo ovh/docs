@@ -13,7 +13,17 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 ## Voraussetzungen
 
 - Sie verfügen über einen MX Plan, als E-Mail-Dienst enthalten in einem [OVHcloud Webhosting-Angebot](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting), oder als eigenständige Lösung bestellbar.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 
@@ -23,10 +33,6 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 
 ### Automatische Antwort erstellen
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
 1. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
 
 Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, in dem alle für Ihr E-Mail-Angebot verfügbaren automatischen Antworten angezeigt werden.

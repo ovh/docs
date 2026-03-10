@@ -16,7 +16,6 @@ You can access your OVHcloud email accounts using the password associated with t
 ## Requirements
 
 - A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), or ordered separately
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used
 
 > [!primary]
 >
@@ -26,6 +25,26 @@ You can access your OVHcloud email accounts using the password associated with t
 > - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Instructions
 
 ### Changing the password via the Control Panel <a name="controlpanel"></a>
@@ -33,7 +52,7 @@ You can access your OVHcloud email accounts using the password associated with t
 > [!warning]
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+Follow the instructions for your solution:
 
 > [!tabs]
 > **MX Plan email**

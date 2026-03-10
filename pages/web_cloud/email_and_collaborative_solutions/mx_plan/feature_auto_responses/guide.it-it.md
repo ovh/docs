@@ -13,7 +13,17 @@ Quando sei assente e non sei in grado di consultare il tuo indirizzo email, puoi
 ## Prerequisiti
 
 - Disporre di una soluzione MX Plan. Puoi effettuare questa operazione scegliendo tra una soluzione di [hosting Web](/links/web/hosting), l’[hosting gratuito 100M](/links/web/domains-free-hosting) incluso con un dominio (attivato in precedenza) o l’offerta MX Plan ordinata separatamente.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 
@@ -23,10 +33,6 @@ Quando sei assente e non sei in grado di consultare il tuo indirizzo email, puoi
 
 ### Crea la risposta automatica
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
 1. Clicca sulla scheda `Email`{.action} in alto e poi su `Gestione delle risposte automatiche`{.action}.
 
 Verrai reindirizzato alla finestra `Gestione delle risposte automatiche`, nella quale sono visualizzate tutte le risposte automatiche alle email attive sul tuo servizio di posta.

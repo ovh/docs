@@ -18,7 +18,6 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 ## Requisitos
 
 - Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](/links/web/hosting), o [Alojamento gratuito 100M](/links/web/domains-free-hosting) incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
-- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -30,12 +29,19 @@ Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
 |Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)".|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Prática <a name="oldmxplan"></a>
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
 1. No separador `E-mails`{.action} do serviço MX Plan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
 
 ![emails](images/img_3239.png){.thumbnail}

@@ -12,15 +12,21 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) 
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
 1. Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}

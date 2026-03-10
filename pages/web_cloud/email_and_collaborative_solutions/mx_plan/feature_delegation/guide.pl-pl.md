@@ -18,7 +18,6 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 ## Wymagania początkowe
 
 - Posiadanie pakietu MX Plan Jest ona dostępna przez: ofertę [hostingu WWW Cloud](/links/web/hosting), bezpłatnego [Darmowy hosting 100M](/links/web/domains-free-hosting) lub ofertę MX Plan zamówioną oddzielnie.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -30,6 +29,17 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
 |Przejdź do sekcji "[W praktyce](#oldmxplan)"|Zapoznaj się z naszym przewodnikiem "[Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#zmiana-hasla)"|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## W praktyce <a name="oldmxplan"></a>
 
 > [!primary]
@@ -37,10 +47,6 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 > Delegacja na koncie e-mail wyświetla się w [odpowiednim panelu klienta](/links/manager). W tej sytuacji możliwe będą jedynie zmiany wskazane w sekcji [Cel](#objective) niniejszego przewodnika.
 >
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. Aby wyświetlić listę kont e-mail w Twojej usłudze MX Plan, kliknij zakładkę `E-maile`{.action}.
 
 ![delegacja uprawnień exchange](images/mxplan-delegation-01.png){.thumbnail}

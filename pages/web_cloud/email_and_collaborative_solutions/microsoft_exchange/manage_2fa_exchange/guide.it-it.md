@@ -13,8 +13,18 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 ## Prerequisiti
 
 - Disporre di una soluzione [Exchange OVHcloud](/links/web/emails)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver installato un’applicazione OTP su smartphone o tablet Android o iOS. 
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
 >**Le applicazioni OTP per dispositivi mobili**
@@ -32,14 +42,6 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 #### Step 1: attiva la doppia autenticazione sulla piattaforma 
 
 Al momento della prima configurazione, è necessario attivare la doppia autenticazione sulla piattaforma prima di attivarla su un account.
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Quindi seleziona la scheda `Sicurezza`{.action} della tua piattaforma
-1. Clicca su `Attiva`{.action}, sotto alla voce “Doppia autenticazione”.
-1. Infine, scorri fino in fondo alla pagina e clicca su `Salva modifiche`{.action} per completare l’operazione.
 
 ![2fa-exchange](images/2fa-exchange.gif){.thumbnail}
 
@@ -62,12 +64,6 @@ Per le connessioni successive, sarà necessario inserire solo il codice generato
 ### Disattiva la doppia autenticazione
 
 La doppia autenticazione può essere disattivata in tre modi diversi:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
-1. Dalla scheda `Account email`{.action} della piattaforma Exchange, clicca sui tre puntini `...`{.action} a destra dell’account su cui la doppia autenticazione è già attiva.
 
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 

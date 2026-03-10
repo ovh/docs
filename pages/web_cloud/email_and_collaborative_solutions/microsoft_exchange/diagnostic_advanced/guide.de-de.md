@@ -14,17 +14,22 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 
 - Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Diagnose durchführen
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 
 ![Exchange-Diagnose](images/img_4450.png){.thumbnail}
 

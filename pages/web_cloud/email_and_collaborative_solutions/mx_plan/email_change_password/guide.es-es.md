@@ -15,12 +15,45 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 
 ## Requisitos
 
-- Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](/links/web/email).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Zimbra:**
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleccione su servicio Zimbra
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -44,7 +77,7 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+Siga las indicaciones de su solución:
 
 > [!tabs]
 > **MXplan (versión histórica)**

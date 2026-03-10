@@ -15,18 +15,23 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 - Sie haben einen [E-Mail Pro](/links/web/email-pro)-Dienst in Ihrem Kunden-Account.
 - Sie haben die E-Mail zur Installation von E-Mail Pro bereits erhalten.
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
 
 Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist:
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `E-Mail Pro`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 
 > [!primary]
 >

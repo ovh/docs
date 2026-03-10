@@ -30,14 +30,20 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 ## Voraussetzungen
 
 - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
 1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort.**
 
 > [!primary]

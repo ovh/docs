@@ -12,10 +12,19 @@ When you add a domain name to your Exchange service, you may be required to conf
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
-- You need to have admin rights for the Exchange service on your [OVHcloud Control Panel](/links/manager).
 - You need to have added a domain name to your Exchange service before requesting the addition of a CNAME record.
 - Administrative rights to [configure the DNS zone](/pages/web_cloud/domains/dns_zone_edit) for the domain name concerned (in the OVHcloud Control Panel or an external management interface)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 

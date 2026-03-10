@@ -22,7 +22,17 @@ Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colabora
 
 - Ter subscrito uma conta de e-mail na nossa solução de e-mail Zimbra OVHcloud.
 - Ter um [nome de domínio OVHcloud](/links/web/domains).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Instruções
 
@@ -45,10 +55,6 @@ Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colabora
 - [Respostas automáticas](#autoreply)
 
 ### Aceder à gestão do seu serviço <a name="zimbra-access"></a>
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `Zimbra Mail`{.action}.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -224,13 +230,6 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 ### Mudar de oferta <a name="emails-offer"></a>
 
 É possível alterar a oferta de qualquer conta Zimbra para uma oferta superior ou inferior.
-
-1. Inicie sessão na sua [área de cliente OVHcloud](/links/manager).
-1. Dirija-se à secção `Web Cloud`{.action}.
-1. Clique em `Zimbra Mail`{.action}.
-1. Clique no separador `Conta de e-mail`{.action}.
-1. À direita da conta de correio electrónico para a qual pretende passar para uma oferta superior, clique em `⁝`{.action}.
-1. Clique em `Mudar de oferta`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

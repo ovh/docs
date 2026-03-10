@@ -12,26 +12,29 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 - Tener una solución [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) ya configuradas.
 
-## Procedimiento
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
 
-> [!tabs]
-> **Exchange**
->>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda al apartado `Web Cloud`{.action}.
->> 1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
-> **Email Pro**
->>
->> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
->> 1. Haga clic en la pestaña `Web Cloud`{.action}.
->> 1. Haga clic en `Email Pro`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
+### Acceso al área de cliente de OVHcloud
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedimiento
 
 Haga clic en la pestaña `Más +`{.action} en la barra horizontal y seleccione `Pies de página`{.action}.
 

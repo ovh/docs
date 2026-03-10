@@ -22,7 +22,17 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 - Zakup konta e-mail w ramach naszego rozwiązania e-mail Zimbra OVHcloud.
 - Posiadanie [domeny OVHcloud](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## W praktyce
 
@@ -45,10 +55,6 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 - [Odpowiedzi automatyczne](#autoreply)
 
 ### Dostęp do interfejsu zarządzania usługą <a name="zimbra-access"></a>
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `Zimbra Mail`{.action}.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -225,9 +231,6 @@ Kliknij na `Potwierdź`{.action}, aby rozpocząć zakładanie konta.
 
 Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 
-1. Zaloguj się do [panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `Zimbra Mail`{.action}.
 1. Kliknij zakładkę `Konto e-mail`{.action}.
 1. Po prawej stronie konta e-mail, dla którego chcesz przejść na wyższą ofertę, kliknij `⁝`{.action}.
 1. Kliknij `Zmień ofertę`{.action}.

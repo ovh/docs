@@ -4,7 +4,6 @@ excerpt: "Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłu
 updated: 2026-02-19
 ---
 
-
 ## Wprowadzenie
 
 Chcesz:
@@ -22,8 +21,41 @@ Chcesz:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**Zimbra:**
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+**Email Pro:**
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 <a name="whichmxplan"></a>
 
@@ -53,10 +85,6 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 >> Aby zidentyfikować technologię e-mail związaną z Twoją usługą MX Plan, zapoznaj się z częścią "[Identyfikacja technologii e-mail Twojej oferty MX Plan](#whichmxplan)" tego przewodnika.
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. Kliknij `MX Plan`{.action}.
->> 1. Wybierz odpowiednią domenę.
 >> 1. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
 >> 1. Kliknij przycisk `...` po prawej stronie konta, które ma zostać zmienione, a następnie kliknij polecenie `Usuń konto`{.action}.
 >>
@@ -66,10 +94,6 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 >> Aby zidentyfikować technologię e-mail związaną z Twoją usługą MX Plan, zapoznaj się z częścią "[Identyfikacja technologii e-mail Twojej oferty MX Plan](#whichmxplan)" tego przewodnika.
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. Kliknij `MX Plan`{.action}.
->> 1. Wybierz odpowiednią domenę.
 >> 1. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
 >> 1. Kliknij na przycisk `...` po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.
 >>
@@ -77,10 +101,6 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 > **Email Pro**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
->> 1. Wybierz odpowiednią platformę.
 >> 1. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
 >> 1. Kliknij na przycisk `...` po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.
 >>
@@ -90,10 +110,6 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 > **Exchange**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
->> 1. Wybierz odpowiednią platformę.
 >> 1. Przejdź do zakładki `Konta e-mail`{.action}.
 >> 1. Kliknij na przycisk `...` po prawej stronie konta, które ma zostać zmienione, a następnie kliknij na `Zresetuj`{.action}.
 >>
@@ -103,9 +119,6 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 > **Zimbra STARTER/PRO**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. Kliknij `Zimbra Mail`{.action}.
 >> 1. Przejdź do zakładki `Konto email`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
 >> 1. Kliknij przycisk `⋮`{.action} po prawej stronie konta, które ma zostać zmienione, a następnie kliknij `Usuń`{.action}.
 >>

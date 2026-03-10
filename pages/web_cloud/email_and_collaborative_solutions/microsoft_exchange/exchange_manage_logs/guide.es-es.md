@@ -37,19 +37,23 @@ Su oferta Private Exchange o Trusted Exchange genera sus propios logs. Puede que
 
 - Tener contratada una oferta [Private Exchange](/links/web/emails-hosted-exchange) o [Trusted Exchange](/links/web/emails-trusted-exchange).
 - Un cuenta Logs Data Platform (LDP). Este guía le guiará a través de todos los pasos necesarios: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Visualizar los logs de su plataforma Exchange en tiempo real
 
 Para acceder a los logs en tiempo real en su oferta Private o Trusted Exchange, siga las instrucciones siguientes:
-
-1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-1. Vaya a la sección `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
-1. A la derecha de la serie de pestañas, haga clic en la pestaña `Más +`{.action} y luego en `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -84,13 +88,6 @@ Funciona recuperando los logs generados por su infraestructura, sus sitios web o
 Las soluciones Exchange son compatibles con diversos servicios como el alojamiento compartido, los VPS y los servidores dedicados. También pueden complementarse con flujos de datos en Logs Data Platform, además de los logs en tiempo real ya disponibles.
 
 Para suscribir los logs de su solución Exchange a un flujo de datos en Logs Data Platform, realice las siguientes acciones:
-
-1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-1. Vaya a la sección `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
-1. A la derecha de la serie de pestañas, haga clic en la pestaña `Más +`{.action} y luego en `Logs`{.action}.
-1. A la derecha del recuadro donde aparecen sus logs en tiempo real, haga clic en el botón `Suscribirse`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

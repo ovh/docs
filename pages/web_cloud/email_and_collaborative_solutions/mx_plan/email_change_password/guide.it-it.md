@@ -15,12 +15,45 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 
 ## Prerequisiti
 
-- In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](/links/web/email).
 - Disporre di una soluzione email OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting Web](/links/web/hosting) o inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+
+**Zimbra:**
+
+- **Link diretto:** [Zimbra](/links/control-panel/web-zimbra)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Seleziona il tuo servizio Zimbra
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 
@@ -44,7 +77,7 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+Segui le indicazioni fornite:
 
 > [!tabs]
 > **Email MX Plan (versione storica)**

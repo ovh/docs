@@ -12,9 +12,19 @@ Office 365 Reseller (CSP2) è un servizio che ti permette di usufruire di divers
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un ID [MPN](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier) 
 - Essere iscritto al programma CSP (Cloud Solution Provider) di Microsoft come rivenditore indiretto nella regione in cui si esercita (ad esempio: "UE" per l’Europa)
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 > [!warning]
 >
@@ -37,8 +47,6 @@ Il MPN ID ti permetterà di ottenere un cashback sugli abbonamenti che ordinerai
 ## Procedura
 
 ### Ordina un servizio Office 365 Reseller
-
-Per ordinare un servizio Office 365 Reseller, accedi al tuo [Spazio Cliente OVHcloud](/links/manager). Seleziona `Sunrise`{.action} nel pannello superiore e clicca su `Office 365 Reseller`{.action}.
 
 - *Facoltativo*: puoi definire un **sottodominio personalizzato** al momento della creazione di una nuova piattaforma selezionando la casella all'uopo prevista (con riserva dei nomi disponibili).
 - Inserisci il tuo ID MPN creato precedentemente su Microsoft.

@@ -21,18 +21,23 @@ Mit Hosted Exchange verfügen Sie über professionelle E-Mail-Accounts mit erwei
 - Sie haben einen [OVHcloud Exchange Dienst](/links/web/emails-hosted-exchange).
 - Sie haben die E-Mail mit der Installationsbestätigung für Ihren Hosted Exchange erhalten.
 - Sie verfügen über einen Domainnamen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Zugang zur Verwaltung Ihrer Dienstleistung
 
 Wenn Ihr Hosted Exchange eingerichtet und verfügbar ist:
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 
 > [!primary]
 >

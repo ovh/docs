@@ -15,15 +15,23 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 - An [Email Pro](/links/web/email-pro) solution
 - An email confirming that your Email Pro solution has been set up
 - A domain name
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 
-### Step 1: Log in to your service’s interface
+### Step 1: Access your service’s interface
 
-Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager).
-
-To do this, log in, then click on `Email Pro`{.action} and select the appropriate service.
+Once the Email Pro service has been created and is available, select it from the Control Panel.
 
 > [!primary]
 >
@@ -148,6 +156,8 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
 
+If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
+
 > [!primary]
 >
 > Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
@@ -165,7 +175,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the `General Information`{.action} tab of your Email Pro service, in the **Connection** box.
 >
 
 ## Go further

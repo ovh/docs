@@ -21,6 +21,40 @@ details[open]>summary::before {
 }
 </style>
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-zimbra -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**Zimbra:**
+
+- **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wählen Sie Ihren Zimbra Dienst aus
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `Email Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-zimbra -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## E-Mail FAQ
 
 Auf dieser Seite finden Sie die am häufigsten gestellten Fragen zur Verwendung Ihrer E-Mails, die auf den E-Mail-Angeboten von OVHcloud basieren.
@@ -85,17 +119,12 @@ Im Folgenden finden Sie eine Tabelle mit einer Zusammenfassung der wichtigsten E
 
 Die für Ihr MX Plan Angebot verwendete E-Mail-Technologie ist durch das Webmail-Interface gekennzeichnet. Um ihn über Ihr Kundencenter zu identifizieren, folgen Sie dem folgenden Pfad:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
 1. Wählen Sie in `Allgemeine Informationen`{.action} die Option „Standard“.
 1. Notieren Sie die unter **Webmail** verwendete Technologie.
 
 ![MX PLAN](images/technology-email.png){.thumbnail .w-500}
 
 ///
-
 
 /// details | Was müssen Sie vor der Erstellung einer E-Mail-Adresse wissen?
 
@@ -142,7 +171,6 @@ Im Folgenden finden Sie die wichtigsten Gründe für den fehlenden Empfang Ihrer
 
 ///
 
-
 /// details | Warum SPF- und DKIM-Einträge konfigurieren?
 
 **SPF (Sender Policy Framework)**
@@ -158,7 +186,6 @@ Es ermöglicht das Signieren von E-Mails, um Identitätsdiebstahl zu verhindern.
 Weitere Informationen zum Konfigurieren eines DKIM-Eintrags für Ihren E-Mail-Dienst finden Sie in unserer Anleitung [E-Mail-Sicherheit durch einen DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden?
 
@@ -225,7 +252,6 @@ Mit [Webmail](/links/web/email) können Sie jederzeit und von jedem beliebigen G
 
 **Tipps und Tricks**: Wenn Sie Ihren E-Mail-Account auf einem E-Mail-Client einrichten, empfehlen wir Ihnen, hierzu das IMAP-Protokoll zu verwenden. So werden die E-Mails weiterhin auf dem Server gespeichert und Sie können sie von überall aus über das [Webmail](/links/web/email) einsehen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
-
 ///
 
 /// details | Wie kann ich meine E-Mail-Dienste verwalten?
@@ -279,7 +305,6 @@ Wird in Ihrem Kundencenter keine `Filter`-Spalte angezeigt, müssen zunächst im
 **Tipps und Tricks**: Wenn Sie einen Filter für den Empfang von Spam-Mails festlegen, kann es vorkommen, das erwünschte E-Mails als Spam eingeordnet werden. Man spricht hierbei von falsch positiven Ergebnissen. Ist das bei Ihnen der Fall, können Sie über Ihr [OVHcloud Kundencenter](/links/manager) eine Support-Anfrage erstellen, um uns darüber zu informieren. So können wir die notwendigen Schritte durchführen, damit die erwünschten E-Mails nicht länger als Spam eingeordnet werden.
 
 ///
-
 
 /// details | Mein E-Mail-Accounts ist voll, ich habe keinen Speicherplatz mehr. Was kann ich tun?
 

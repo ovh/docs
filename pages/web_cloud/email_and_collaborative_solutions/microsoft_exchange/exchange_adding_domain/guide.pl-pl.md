@@ -24,7 +24,26 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 - Posiadanie rozwiązania [Exchange](/links/web/emails-exchange) lub [Email Pro](/links/web/email-pro).
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+**Email Pro:**
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
@@ -33,14 +52,9 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 > [!tabs]
 > **Exchange**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
->> 1. Wybierz odpowiednią platformę.
 >>
 > **Email Pro**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 >> 1. Kliknij zakładkę `Web Cloud`{.action}.
 >> 1. Kliknij `Email Pro`{.action}.
 >> 1. Wybierz odpowiednią platformę.

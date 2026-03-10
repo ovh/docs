@@ -21,7 +21,6 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 - Tener una solución MX Plan. Esta está disponible a través de:
     - Un [plan de hosting](/links/web/hosting).
     - Una solución MX Plan contratada por separado.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -30,12 +29,19 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 > - En el caso del Alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager), accediendo al dominio correspondiente.
 > - Si tiene un [alojamiento web](/links/web/hosting), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento <a name="instructions"></a>
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 
 #### Crear una cuenta de correo
 

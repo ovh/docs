@@ -12,17 +12,22 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma [conta E-mail Pro](/links/web/email-pro).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instruções
 
 ### Encomendar contas suplementares
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Clique no separador `Web Cloud`{.action}.
-1. Clique em `Email Pro`{.action}.
-1. Selecione a plataforma em causa.
 
 Aceda ao separador `Contas de e-mail`{.action} e clique no botão `Encomendar contas`{.action} no canto superior direito.
 

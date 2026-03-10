@@ -13,8 +13,18 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 - skonfigurowane rozwiązanie [OVHcloud Exchange](/links/web/emails-hosted-exchange) lub [E-mail Pro](/links/web/email-pro)
 - Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych dostępowych do konta e-mail, dla którego przydzielone zostaną nowe prawa
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## W praktyce
 

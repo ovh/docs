@@ -13,7 +13,17 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 ## Requisitos
 
 - Tener una solución MX Plan. Esta está disponible a través de: un plan de hosting [web hosting](/links/web/hosting), el [alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio (activado previamente) o el MX Plan contratado por separado.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -23,10 +33,6 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 
 ### Creación de una respuesta automática
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. Haga clic en la pestaña `Correo electrónico`{.action} en la parte superior y, seguidamente, en `Gestión de los contestadores`{.action}.
 
 Será redirigido a la ventana `Gestión de los contestadores`, en la que podrá consultar todas las respuestas automáticas de correo que tiene instaladas en su servicio de correo.

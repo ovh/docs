@@ -12,10 +12,19 @@ Lors de l'ajout d'un nom de domaine à votre service Exchange, une configuration
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être en mesure d’administrer le service Exchange depuis votre [espace client OVHcloud](/links/manager).
 - Avoir effectué l'ajout d'un nom de domaine sur votre service Exchange demandant l'ajout d'un champ CNAME.
 - Être en mesure de [configurer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) du nom de domaine concerné, depuis l'espace client OVHcloud ou depuis l'interface de gestion où il est enregistré.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 

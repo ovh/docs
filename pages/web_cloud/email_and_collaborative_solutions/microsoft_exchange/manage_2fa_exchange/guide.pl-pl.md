@@ -13,8 +13,18 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 ## Wymagania początkowe
 
 - Wykupienie usługi [Exchange OVHcloud](/links/web/emails-hosted-exchange).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
 >**Aplikacje mobilne OTP**
@@ -33,10 +43,6 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 
 Przy pierwszej konfiguracji należy aktywować weryfikację dwuetapową w platformie, aby móc ją włączyć w koncie.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 1. Wybierz kartę `Bezpieczeństwo`{.action} w platformie.
 1. Naciśnij przycisk `Aktywuj`{.action} Który znajduje się pod opcją „Weryfikacja dwuetapowa”.
 1. Na koniec przejdź na dół strony i kliknij `Zapisz zmiany`{.action}.
@@ -63,10 +69,6 @@ Podczas następnych logowań wymagany będzie jedynie kod wygenerowany przez apl
 
 Weryfikację dwuetapową Twojego konta można wyłączyć na trzy sposoby.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 1. Z poziomu karty `Konta e-mail`{.action} Twojej platformy Exchange kliknij `...`{.action} po prawej stronie konta z aktywną weryfikacją dwuetapową.
 
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}

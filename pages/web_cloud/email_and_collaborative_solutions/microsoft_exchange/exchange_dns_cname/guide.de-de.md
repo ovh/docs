@@ -16,10 +16,29 @@ Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie mögli
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine der E-Mail-Lösungen [Exchange](/links/web/emails-exchange) oder [E-Mail Pro](/links/web/email-pro).
 - Sie haben einen Domainnamen zu Ihrem Dienst hinzugefügt, wie in [unserer Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) beschrieben.
 - Sie sind berechtigt die zugehörige [DNS-Zone zu konfigurieren](/pages/web_cloud/domains/dns_zone_edit) (im OVHcloud Kundencenter oder einem externen Verwaltungsinterface).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 

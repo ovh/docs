@@ -22,7 +22,6 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
     - un piano di [hosting Web](/links/web/hosting).
     - [hosting gratuito 100M](/links/web/domains-free-hosting) incluso con un dominio (attivato in precedenza).
     - Offerta MX Plan ordinata separatamente.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -31,12 +30,19 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 > - Se disponi di un Hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), selezionando il dominio interessato.
 > - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](/links/web/hosting). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedura <a name="instructions"></a>
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `MX Plan`{.action}.
-1. Seleziona il dominio.
 1. **Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
 
 > [!primary]

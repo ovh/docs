@@ -25,13 +25,21 @@ Eis a lista dos softwares incluídos:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## Instruções
 
 ### Encomendar uma licença
 
-1. Aceda à página comercial [Microsoft 365 OVHcloud](/links/web/ms365) ou através da [Área de Cliente OVHcloud](/links/manager):
     - Aceda à secção `Web Cloud`{.action}.
     - Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
     - Clique em `Encomendar`{.action}.
@@ -42,13 +50,6 @@ Eis a lista dos softwares incluídos:
 ### Ativar a sua licença
 
 Para ativar a licença encomendada:
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
-1. Selecione o serviço Microsoft 365 correspondente.
-1. Clique no separador `Licenças`{.action}.
-1. Clique no botão `⁝`{.action} na linha da licença afetada pela ativação, depois em `Editar conta`{.action}.
 
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
@@ -76,25 +77,11 @@ Para instalar a sua licença em várias máquinas, basta reproduzir [o passo ant
 
 Se deseja definir a palavra-passe da sua licença:
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
-1. Selecione o serviço Microsoft 365 correspondente.
-1. Clique no separador `Licenças`{.action}.
-1. Clique no botão `⁝`{.action} à direita da licença em causa, e em `Alterar palavra-passe`{.action}.
-
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
 ### Adicionar uma licença a um grupo existente
 
 Se pretender adicionar uma ou várias licenças ao grupo de licenças existente:
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
-1. Selecione o serviço Microsoft 365 correspondente.
-1. Clique no botão `Encomendar mais licenças`{.action} à direita.
-1. Determine o **número** e o **tipo de licença** que deseja encomendar, depois clique em `Validar`{.action}.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail .w-500}
 

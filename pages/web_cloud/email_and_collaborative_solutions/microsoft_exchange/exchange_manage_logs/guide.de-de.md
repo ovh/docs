@@ -37,19 +37,23 @@ Ihr Private Exchange oder Trusted Exchange generiert daher auch eigene Logs. Sie
 
 - Sie verwenden [Hosted Exchange](/links/web/emails-hosted-exchange) oder [Trusted Exchange](/links/web/emails-trusted-exchange).
 - Sie haben einen Account für Logs Data Platform (LDP). Diese Anleitung führt Sie durch alle notwendigen Schritte: [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Anzeigen der Exchange Logs in Echtzeit
 
 Um Echtzeit-Logs auf Ihrem Private- oder Trusted Exchange zu öffnen, gehen Sie wie folgt vor:
-
-1. Loggen Sie sich im [OVHcloud Kundencenter](/links/manager) ein.
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Im Abschnitt `MICROSOFT` klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie die relevante Plattform aus.
-1. Klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -84,13 +88,6 @@ Sie funktioniert, indem sie Logs abruft, die von Ihrer Infrastruktur, Ihren Webs
 Exchange Lösungen sind mit verschiedenen Diensten wie Webhosting, VPS und Dedicated Servern kompatibel. Sie können auch durch Datenströme auf Logs Data Platform ergänzt werden, zusätzlich zu den bereits verfügbaren Echtzeit-Logs.
 
 Um die Logs Ihrer Exchange Lösung einem Datenstrom auf Logs Data Platform hinzuzufügen, führen Sie die folgenden Aktionen aus:
-
-1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an.
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Im Abschnitt `MICROSOFT` klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den relevanten Dienst aus.
-1. Rechts neben der Reihe von Tabs klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Logs`{.action}.
-1. Auf der rechten Seite des Bereichs, in dem Ihre Echtzeit-Logs angezeigt werden, klicken Sie auf den Button `Abonnieren`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

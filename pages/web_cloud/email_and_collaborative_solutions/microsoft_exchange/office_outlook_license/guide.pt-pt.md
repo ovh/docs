@@ -18,17 +18,22 @@ Após a subscrição, pode descarregar o Outlook entre as 3 versões seguintes:
 
 **Saiba como subscrever e instalar uma licença Outlook a partir da plataforma Exchange OVHcloud.**
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## Instruções
 
 ### Encomendar uma licença Outlook
 
 #### Para uma conta Hosted Exchange
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. Clique no ícone `...`{.action} à direita da conta em causa e, a seguir, em `Encomendar uma licença Outlook`{.action}.
 
 ![Outlook](images/order-outlook01.png){.thumbnail}
 
@@ -41,12 +46,6 @@ Após o resumo da sua encomenda, utilize o botão `Pagar`{.action} para gerar a 
 Aguarde alguns instantes até a sua licença Outlook estar disponível na Área de Cliente.
 
 #### Para uma conta Private Exchange
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. Clique no ícone `...`{.action} à direita da conta em causa e, a seguir, em `Ativar a licença Outlook`{.action}.
 
 ![Outlook](images/order-outlook03.png){.thumbnail}
 
@@ -78,12 +77,6 @@ Depois de alguns instantes, será gerada uma ligação de download, assim como u
 O ficheiro descarregado está no formato .ISO, ou seja, uma imagem em disco. Execute a instalação e introduza a chave da licença quando ela lhe for solicitada.
 
 ### Eliminar a licença Outlook da sua conta
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. Clique no ícone `...`{.action} à direita da conta em causa e, a seguir, em `Eliminar a licença Outlook`{.action}
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 

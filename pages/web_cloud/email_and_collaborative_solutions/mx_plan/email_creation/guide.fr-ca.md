@@ -21,7 +21,6 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
     - Une offre d’[hébergement web](/links/web/hosting).
     - Une offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -30,12 +29,19 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 > - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](/links/manager), en vous positionnant sur le nom de domaine concerné.
 > - Dans le cadre d'un [hébergement web](/links/web/hosting), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## En pratique <a name="instructions"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 
 #### Créer un compte e-mail
 

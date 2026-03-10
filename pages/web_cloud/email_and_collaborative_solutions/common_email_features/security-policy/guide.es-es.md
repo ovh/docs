@@ -13,7 +13,33 @@ El servicio de correo de OVHcloud permite disfrutar de direcciones de correo pro
 ## Requisitos
 
 - Tener un [plan de correo en OVHcloud](/links/web/emails).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento
 
@@ -23,8 +49,6 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 - aumentar la seguridad de las contraseñas de las cuentas del servicio de correo;
 - reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange));
 - determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange)).
-
-Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](/links/manager), y diríjase a la sección `Web Cloud`{.action}.
 
 |Correo electrónico y Email Pro|Exchange|
 |---|---|

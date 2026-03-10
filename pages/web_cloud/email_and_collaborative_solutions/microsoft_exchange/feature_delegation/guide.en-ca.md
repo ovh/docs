@@ -14,8 +14,18 @@ With the OVHcloud Exchange  services, you can set up professional email addresse
 
 - An [OVHcloud Exchange](/links/web/emails-hosted-exchange) solution already set up
 - At least two active email accounts, configured on the same OVHcloud Exchange platform
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Credentials for the email account that will be delegated new permissions
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -35,11 +45,6 @@ Before you get started, define the permissions you want to delegate. As a remind
 When you have identified the account that you want to delegate permissions for, determined the kinds of permissions you want to delegate, and listed the users that will be delegated these permissions, go to the next step.
 
 ### Step 1: Setting up the delegation
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 Next, go to the `Email accounts`{.action} tab.
 

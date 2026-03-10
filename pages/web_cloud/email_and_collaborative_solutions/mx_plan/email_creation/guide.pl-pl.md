@@ -22,7 +22,6 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
     - Oferta [hostingu](/links/web/hosting).
     - Darmowy [hosting 100M](/links/web/domains-free-hosting) zawarty w ofercie domeny (uprzednio aktywowany).
     - Usługa MX Plan zamówiona oddzielnie.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -31,12 +30,19 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 > - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](/links/manager), przechodząc do odpowiedniej domeny.
 > - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](/links/web/hosting). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## W praktyce <a name="instructions"></a>
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. **Następnie postępuj zgodnie z technologią poczty elektronicznej używaną przez Twoją usługę MX Plan**.
 
 > [!primary]

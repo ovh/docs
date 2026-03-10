@@ -22,7 +22,17 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 - An email account on our Zimbra OVHcloud email solution
 - An [OVHcloud domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Instructions
 
@@ -46,9 +56,7 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 ### Access your service management <a name="zimbra-access"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Zimbra Mail`{.action}.
+From the Zimbra section of the OVHcloud Control Panel, select your service.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -133,7 +141,7 @@ Select the tab that corresponds to your choice:
 >> - **Custom configuration**: If you have already configured an email solution on your domain name, you can choose the elements that interest you.
 >>    - *Configure the MX record automatically*: This allows you to enter the OVHcloud incoming servers automatically (applies to all OVHcloud email solutions).
 >>    - *Configure the SPF record automatically*: This allows you to enter the record automatically, authorizing the OVHcloud sending email servers to send your emails. This registration is valid for all OVHcloud email solutions.
->>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending
+>>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending.
 >>    - *Automatically configure the SRV record*: it allows the automatic configuration of the parameters of an email account when you add it to an email software (Outlook, Mail for Mac, Thunderbird, etc.).
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
@@ -225,9 +233,6 @@ Click `Confirm`{.action} to start creating the account.
 
 It is possible to upgrade or downgrade any Zimbra account.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click on `Zimbra Mail`{.action}.
 1. Click on the `Email account`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
 1. Click on `Change plan`{.action}.

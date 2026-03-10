@@ -47,9 +47,19 @@ Hier der Kontext des obigen Diagramms:
 ## Voraussetzungen
 
 - Sie haben eine OVHcloud [Private Exchange Plattform](/links/web/emails-private-exchange) oder [Trusted Exchange Plattform](/links/web/emails-trusted-exchange) abonniert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie können sich in der [OVHcloud API-Konsole](/links/api) einloggen.
 - Sie verfügen über die erforderlichen Konfigurationsparameter zum Einrichten des Send Connectors von Ihrem Dienstleister.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 

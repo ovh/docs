@@ -13,7 +13,17 @@ Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per
 ## Prerequisiti
 
 - Aver ordinato una [soluzione Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 

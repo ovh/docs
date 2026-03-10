@@ -13,7 +13,17 @@ Jeśli jesteś nieobecny i nie możesz sprawdzić Twojego adresu e-mail, możesz
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan. Jest ona dostępna w ramach: oferty [hosting www](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) zawartej w ofercie domeny (aktywowanej wcześniej) lub oferty MX Plan zamówionej oddzielnie.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -23,10 +33,6 @@ Jeśli jesteś nieobecny i nie możesz sprawdzić Twojego adresu e-mail, możesz
 
 ### Utworzenie automatycznej odpowiedzi
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. Kliknij na zakładkę `Emaile`{.action} u góry, następnie `Zarządzanie autoresponderami`{.action}.
 
 Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, w którym wyświetlony zostanie zestaw automatycznych odpowiedzi e-mail wprowadzonych w Twojej ofercie e-mail.

@@ -22,8 +22,18 @@ Want to back up your email accounts hosted on an OVHcloud Private Exchange platf
 ## Requirements
 
 - You must have signed up to an [OVHcloud Private Exchange solution](/links/web/emails-private-exchange) and created email accounts on it.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - [Download Veeam Backup for Microsoft 365](https://www.veeam.com/products/free/backup-microsoft-office-365.html) on a computer running Microsoft Windows 10 or higher.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -144,7 +154,7 @@ Follow the configuration steps by clicking on the 10 tabs below:
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/impersonatedUser
 >>
->> - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform, visible from your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action} section, by selecting the platform concerned.
+>> - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section, then select the platform concerned to find its reference.
 >>
 >> - Enter a password of at least 15 characters between the quotation marks, next to `"password": `.
 >>
@@ -170,7 +180,7 @@ Follow the configuration steps by clicking on the 10 tabs below:
 >>
 > **Step 8**
 >>
->> - Enter the host name of your Exchange platform. You can view it from your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action} section, by selecting the platform concerned.
+>> - Enter the host name of your Exchange platform. You can find it by clicking [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section, then selecting the platform concerned.
 >>
 >> - The host name corresponds to the value mentioned to access the webmail.
 >>

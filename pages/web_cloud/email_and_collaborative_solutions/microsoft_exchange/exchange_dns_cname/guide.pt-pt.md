@@ -16,10 +16,29 @@ Quando adiciona um domínio à sua plataforma de e-mail, poderá ser-lhe solicit
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 - Dispor de uma solução [Exchange](/links/web/emails-exchange) ou [Email Pro](/links/web/email-pro).
 - Ter adicionado um domínio à sua plataforma de e-mail. Se necessário, pode consultar o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ".
 - Poder [configurar a zona DNS](/pages/web_cloud/domains/dns_zone_edit) do domínio em causa a partir da Área de Cliente OVHcloud ou da interface de gestão onde está registado.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+**Email Pro:**
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 

@@ -15,18 +15,23 @@ La soluzione Email Pro permette di usufruire di un servizio di posta elettronica
 - Disporre di una soluzione [Email Pro](/links/web/email-pro)
 - Aver ricevuto l’email di conferma dell’installazione di Email Pro
 - Disporre di un dominio OVH
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Procedura
 
 ### Step 1: accedi alla gestione del servizio
 
 Per gestire la soluzione Email Pro :
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Clicca sulla scheda `Web Cloud`{.action}.
-1. Clicca su `Email Pro`{.action}.
-1. Seleziona la piattaforma interessata.
 
 > [!primary]
 >

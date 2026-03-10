@@ -22,7 +22,6 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
     - Ein [Webhosting](/links/web/hosting).
     - Ein aktiviertes [Kostenloses Hosting 100M](/links/web/domains-free-hosting), inklusive mit einem Domainnamen.
     - Ein separat bestelltes MX Plan Angebot.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -31,12 +30,19 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 > - Hinweis zu Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/pages/web_cloud/web_hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](/links/manager) durchführen, indem Sie die betreffende Domain auswählen.
 > - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](/links/web/hosting), bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web_cloud/web_hosting/activate-email-hosting).
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## ## In der praktischen Anwendung <a name="instructions"></a>
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
 1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
 
 > [!primary]

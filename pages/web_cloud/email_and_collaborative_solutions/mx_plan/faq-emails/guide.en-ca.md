@@ -21,6 +21,26 @@ details[open]>summary::before {
 }
 </style>
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Email FAQ
 
 On this page, you will find the most frequently asked questions regarding the use of your emails, depending on the OVHcloud email offers.
@@ -95,7 +115,6 @@ Below, you will find the main reasons for not receiving your emails.
 
 ///
 
-
 /// details | Why set up SPF and DKIM records?
 
 **SPF (Sender Policy Framework)**
@@ -111,7 +130,6 @@ It allows you to sign emails to prevent identity theft. This signature operates 
 To find out how to configure a DKIM record on your email service, please read our guide on [Enhancing email security via a DKIM record](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | How do I configure my email address and use it with webmail?
 
@@ -213,7 +231,6 @@ If the `Filter` column is not present in your Control Panel, you will need to cr
 **Tips and Tricks**: If you set a filter on receiving SPAM, legitimate emails may be considered SPAM. If this happens to you, please open a support request in your [OVHcloud Control Panel](/links/manager) and let us know. This way, we can ensure that your emails are not marked as SPAM in the future.
 
 ///
-
 
 /// details | My email account is full, I don't have any more space. What can I do?
 

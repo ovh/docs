@@ -24,27 +24,30 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 - Sie verfügen über einen [Exchange Dienst](/links/web/emails-hosted-exchange) oder [E-Mail Pro Dienst](/links/web/email-pro).
 - Sie verfügen über einen oder mehrere Domainnamen.
 - Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Zugang zur Verwaltung Ihrer Dienstleistung
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
-> **Email Pro**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `E-Mail Pro`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
 
 ### Eine Domain hinzufügen
 

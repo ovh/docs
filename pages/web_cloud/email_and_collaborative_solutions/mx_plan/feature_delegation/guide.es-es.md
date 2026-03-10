@@ -18,7 +18,6 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 ## Requisitos
 
 - Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](/links/web/hosting), un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -30,6 +29,17 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro «Suscripción», en el epígrafe «Producto».|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
 |Continúe leyendo esta guía en el apartado "[Procedimiento](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#cambiar-la-contrasena)"|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento <a name="oldmxplan"></a>
 
 > [!primary]
@@ -37,10 +47,6 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 > La delegación en una cuenta de correo electrónico lo hace evidente en [el área de cliente](/links/manager). Sin embargo, en esta situación solo serán posibles los cambios indicados en la sección [Objetivo](#objective) de esta guía.
 >
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. Para ver la lista de cuentas de correo de su solución MX Plan, haga clic en la pestaña `Correo electrónico`{.action}.
 
 ![Delegación de permisos](images/mxplan-delegation-01.png){.thumbnail}

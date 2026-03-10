@@ -21,18 +21,23 @@ Con Hosted Exchange puoi usufruire di account email professionali che semplifica
 - Disporre di una soluzione [Hosted Exchange](/links/web/emails-hosted-exchange)
 - Aver ricevuto l’email di conferma dell’installazione di Hosted Exchange
 - Disporre di un dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
 ### Accedi alla gestione del tuo servizio
 
 Una volta che il tuo Hosted Exchange è pronto per l’utilizzo :
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
 
 > [!primary]
 >

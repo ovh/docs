@@ -21,7 +21,6 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 - An MX Plan solution. This is available via:
     - A [Web Hosting](/links/web/hosting) offer.
     - An MX Plan solution ordered separately.
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
 
 > [!primary]
 >
@@ -29,12 +28,19 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 >
 > - For [Web Hosting plans](/links/web/hosting), you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Instructions <a name="instructions"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 
 #### Create an email account
 

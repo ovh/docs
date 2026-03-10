@@ -13,16 +13,20 @@ Esta função colaborativa do Exchange permite criar endereços de e-mail dedica
 ## Requisitos
 
 - Dispor de uma [solução Exchange OVHcloud](/links/web/emails-hosted-exchange) já configurada
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de dados de acesso para a(s) conta(s) de e-mail com acesso ao recurso.
 
-## Instruções
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
-1. Selecione a plataforma em causa.
-1. Clique no separador `Mais +`{.action} e, a seguir, em `Recursos`{.action}.
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Instruções
 
 ### 1 - criar um recurso
 

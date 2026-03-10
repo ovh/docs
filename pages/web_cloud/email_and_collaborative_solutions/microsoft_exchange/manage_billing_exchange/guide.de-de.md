@@ -12,15 +12,20 @@ Die Dienste Hosted Exchange und Private Exchange bieten hinsichtlich der Abrechn
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben bereits einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
 
-## In der praktischen Anwendung
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## In der praktischen Anwendung
 
 ### Hosted Exchange
 

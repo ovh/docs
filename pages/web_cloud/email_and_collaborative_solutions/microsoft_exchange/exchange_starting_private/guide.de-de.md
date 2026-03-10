@@ -13,7 +13,17 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 ## Voraussetzungen
 
 - Sie haben einen [Private Exchange](/links/web/emails-private-exchange) Dienst in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 

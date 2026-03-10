@@ -22,7 +22,6 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
     - Uma oferta de [alojamento web](/links/web/hosting).
     - Um [alojamento gratuito 100M](/links/web/domains-free-hosting) incluído com um nome de domínio (ativado anteriormente).
     - Uma oferta MX Plan encomendada separadamente.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -31,12 +30,19 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 > - Relativamente ao alojamento gratuito 100M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](/links/manager), posicionando-se no domínio em questão.
 > - No âmbito de um [alojamento web](/links/web/hosting), é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Instruções <a name="instructions"></a>
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
 1. **Continuar com base na tecnologia de e-mail utilizada pelo serviço MX Plan**.
 
 > [!primary]

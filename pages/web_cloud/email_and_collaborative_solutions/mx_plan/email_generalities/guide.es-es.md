@@ -30,14 +30,21 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 ## Requisitos
 
 - Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](/links/web/hosting), el [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o la solución MX Plan.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento <a name="instructions"></a>
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 1. Acceda a la sección `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. **Prosiga con la tecnología de correo electrónico que utiliza su servicio MX Plan**.
 
 > [!primary]

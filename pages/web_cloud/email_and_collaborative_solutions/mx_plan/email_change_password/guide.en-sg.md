@@ -16,12 +16,22 @@ You can access your OVHcloud email accounts using the password associated with t
 ## Requirements
 
 - A preconfigured OVHcloud email solution (available with a [web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used
 
 > [!primary]
 >
 > When you change the password for your email account, you will also need to apply this change to all email clients that access this account. You can find the configuration guides for your email software on the guide homepage of your email offer [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
 >
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 

@@ -13,7 +13,17 @@ With OVHcloud email services, you can set up professional email addresses. To ma
 ## Requirements
 
 - A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting))
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 

@@ -4,7 +4,6 @@ excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
 updated: 2025-09-22
 ---
 
-
 ## Wprowadzenie
 
 Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy przewodnik przedstawia, jak skonfigurować fakturowanie.
@@ -13,14 +12,23 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [konta E-mail Pro](/links/web/email-pro)
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## W praktyce
 
 ### Zamówienie dodatkowych kont
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 1. Kliknij zakładkę `Web Cloud`{.action}.
 1. Kliknij `Email Pro`{.action}.
 1. Wybierz odpowiednią platformę.

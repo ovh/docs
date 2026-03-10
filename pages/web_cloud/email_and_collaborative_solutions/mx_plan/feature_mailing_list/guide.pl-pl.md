@@ -35,7 +35,17 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 ## Wymagania początkowe
 
 - Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](/links/web/hosting) obsługującego listy mailingowe.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -47,10 +57,6 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 Aby utworzyć listę mailingową:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}

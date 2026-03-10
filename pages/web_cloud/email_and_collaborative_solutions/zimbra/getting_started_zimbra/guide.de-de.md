@@ -22,7 +22,17 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
 
 - Sie haben einen E-Mail-Account auf der OVHcloud Zimbra E-Mail-Lösung abonniert.
 - Sie verwalten einen [OVHcloud Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## In der praktischen Anwendung
 
@@ -45,10 +55,6 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
 - [automatische Antworten](#autoreply)
 
 ### Auf die Verwaltung Ihrer Dienstleistung zugreifen <a name="zimbra-access"></a>
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `Zimbra Mail`{.action}.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -224,13 +230,6 @@ Klicken Sie auf `Bestätigen`{.action}, um die Erstellung des Accounts zu starte
 ### Angebot wechseln <a name="emails-offer"></a>
 
 Es ist möglich, jeden Zimbra Account auf ein höheres oder niedrigeres Angebot zu ändern.
-
-1. Melden Sie sich bei Ihrem [OVHcloud Kundencenter](/links/manager) an.
-1. Gehen Sie in den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `Zimbra Mail`{.action}.
-1. Klicken Sie auf `E-Mail-Account`{.action}.
-1. Rechts neben dem E-Mail-Account, den Sie auf ein höheres Angebot wechseln möchten, klicken Sie auf `⁝`{.action}.
-1. Klicken Sie auf `Angebot wechseln`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

@@ -13,17 +13,22 @@ Un **account condiviso** è una casella email condivisa tra più account Exchang
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di una soluzione [Exchange OVHcloud](/links/web/emails-hosted-exchange)
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
 ### Aggiungi un account condiviso
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma interessata.
 
 Seleziona la scheda `Account condivisi`{.action} nel menu orizzontale e clicca su `Aggiungi un account condiviso`{.action}.
 

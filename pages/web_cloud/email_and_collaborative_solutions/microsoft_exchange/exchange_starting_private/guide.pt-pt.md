@@ -13,7 +13,17 @@ Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia expli
 ## Requisitos
 
 - Ter encomendado uma [solução Private Exchange OVHcloud](/links/web/emails-private-exchange).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 

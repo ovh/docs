@@ -18,7 +18,6 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 ## Requisitos
 
 - Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](/links/web/hosting), el [Alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio o la solución MX Plan contratada por separado.
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -30,12 +29,19 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
 |Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## Procedimiento <a name="oldmxplan"></a>
 
-1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
 1. En la pestaña `Correo electrónico`{.action} de su servicio MX Plan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
 ![correo electrónico](images/img_3239.png){.thumbnail}

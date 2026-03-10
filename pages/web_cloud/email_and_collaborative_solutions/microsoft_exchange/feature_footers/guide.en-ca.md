@@ -12,16 +12,20 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Exchange](/links/web/emails-hosted-exchange) solution already set up
 
-## Instructions
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Instructions
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 

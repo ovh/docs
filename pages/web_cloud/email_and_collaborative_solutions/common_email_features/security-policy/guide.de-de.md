@@ -13,7 +13,33 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 ## Voraussetzungen
 
 - Sie verfügen über einen [OVHcloud E-Mail-Dienst](/links/web/emails).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 
@@ -23,8 +49,6 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 - Komplexität der Account-Passwörter Ihres E-Mail-Dienstes erhöhen
 - Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 - festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
-
-Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und begeben Sie sich in den Bereich `Web Cloud`{.action}. 
 
 |E-Mails und E-Mail Pro|Exchange|
 |---|---|

@@ -16,10 +16,29 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 - Posiadanie usługi [Exchange](/links/web/emails-exchange) lub [Email Pro](/links/web/email-pro).
 - Dodanie domeny do platformy e-mail. W razie potrzeby skorzystaj z przewodnika "[Dodawanie domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 - Posiadanie możliwości [skonfigurowania strefy DNS](/pages/web_cloud/domains/dns_zone_edit) danej domeny w Panelu klienta OVHcloud lub z poziomu interfejsu zarządzania, w którym jest ona zarejestrowana.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+**Email Pro:**
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 

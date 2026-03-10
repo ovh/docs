@@ -24,18 +24,23 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 - Tener una [solución Exchange](/links/web/emails).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Acceder a la gestión del servicio
 
 **Exchange**
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 ### Añadir un dominio
 

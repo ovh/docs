@@ -18,8 +18,27 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 >
 > **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+**Email Pro:**
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instruções
 
@@ -38,22 +57,6 @@ Antes de começar, defina o(s) direito(s) que vai delegar. Relembramos que, ao c
 Quando identificar a conta que a delegação lhe diz respeito, determinar os direitos que irá delegar, bem como a(s) conta(s) que irá(ão) beneficiar destes direitos adicionais, siga para a primeira etapa.
 
 ### 1 - criar a delegação
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção `Web Cloud`{.action}.
->> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
->> 1. Selecione a plataforma em causa.
->>
-> **Email Pro**
->>
->> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Clique no separador `Web Cloud`{.action}.
->> 1. Clique em `Email Pro`{.action}.
->> 1. Selecione a plataforma em causa.
->>
 
 Clique nos três pontos à direita da conta para a qual deseja criar uma delegação e, a seguir, em `Gerir as delegações`{.action}.
 

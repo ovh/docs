@@ -25,7 +25,16 @@ Oto lista programów zawartych w pakiecie:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## W praktyce
 
@@ -43,10 +52,6 @@ Oto lista programów zawartych w pakiecie:
 
 Aby aktywować zamówioną licencję:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `⁝`{.action} w linii licencji, której dotyczy aktywacja, następnie `Edytuj konto`{.action}.
 
@@ -76,10 +81,6 @@ Aby zainstalować licencję na kilku maszynach, należy wykonać reprodukcję [p
 
 Jeśli chcesz samodzielnie zdefiniować hasło do licencji:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `⁝`{.action} po prawej stronie wybranej licencji, a następnie `Zmień hasło`{.action}.
 
@@ -89,10 +90,6 @@ Jeśli chcesz samodzielnie zdefiniować hasło do licencji:
 
 Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie.
 1. Wybierz **nombre** i **type de licence**, które chcesz zamówić, następnie kliknij `Zatwierdź`{.action}.

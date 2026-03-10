@@ -21,17 +21,23 @@ Mit Exchange Gruppen können mehrere Benutzer durch Senden von E-Mails an eine G
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud-Kundencenter](/links/manager).
 - Sie haben eine [OVHcloud Exchange Lösung](/links/web/emails-hosted-exchange), die bereits eingerichtet ist.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
 
 ### Eine neue Gruppe erstellen
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 1. Gehen Sie dann auf den Tab `Gruppen`{.action}.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}

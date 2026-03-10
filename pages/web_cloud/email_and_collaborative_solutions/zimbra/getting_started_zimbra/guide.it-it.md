@@ -22,7 +22,17 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
 
 - Aver sottoscritto un account email sulla soluzione email Zimbra OVHcloud.
 - Disporre di un [dominio OVHcloud](/links/web/domains).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Zimbra](/links/control-panel/web-zimbra)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Procedura
 
@@ -45,10 +55,6 @@ Con l'offerta Zimbra, OVHcloud ti propone una piattaforma di messaggeria collabo
 - [Risposte automatiche](#autoreply)
 
 ### Accedi alla gestione del servizio <a name="zimbra-access"></a>
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Clicca su `Zimbra Mail`{.action}.
 
 ![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
@@ -225,13 +231,6 @@ Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 
 È possibile cambiare piano per qualsiasi account Zimbra per un piano superiore o inferiore.
 
-1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
-1. Vai alla sezione `Web Cloud`{.action}.
-1. Clicca su `Zimbra Mail`{.action}.
-1. Clicca sulla scheda `Account email`{.action}.
-1. A destra dell'account email per cui desideri passare a un piano superiore, clicca su `⁝`{.action}.
-1. Clicca su `Modificare soluzione`{.action}.
-
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 
 > [!warning]
@@ -290,8 +289,6 @@ Per maggiori informazioni sull’utilizzo della webmail Zimbra, consulta la nost
 ### Alias <a name="alias"></a>
 
 La creazione di un alias per l’indirizzo email permette di comunicare un indirizzo "nascosto" ai propri contatti, senza dover comunicare il proprio indirizzo email personale al mittente.
-
-Per creare un alias accedi allo [Spazio Cliente OVHcloud](/links/manager), segui questi step:
 
 > [!tabs]
 > **Step 1**

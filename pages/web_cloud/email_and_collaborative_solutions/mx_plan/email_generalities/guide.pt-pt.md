@@ -30,14 +30,20 @@ Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail
 ## Requisitos
 
 - Dispor de uma oferta MX Plan Está disponível através de: uma oferta de [alojamento web](/links/web/hosting), o [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou a oferta MX Plan sozinha.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções <a name="instructions"></a>
 
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção `Web Cloud`{.action}.
-1. Clique em `MX Plan`{.action}.
-1. Selecione o domínio em questão.
 1. **Continuar com base na tecnologia de e-mail utilizada pelo serviço MX Plan**.
 
 > [!primary]

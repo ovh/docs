@@ -30,14 +30,21 @@ Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail
 ## Wymagania początkowe
 
 - Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) lub oferta MX Plan.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce <a name="instructions"></a>
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
 1. Kliknij opcję `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
 1. **Następnie postępuj zgodnie z technologią poczty elektronicznej używaną przez Twoją usługę MX Plan**.
 
 > [!primary]

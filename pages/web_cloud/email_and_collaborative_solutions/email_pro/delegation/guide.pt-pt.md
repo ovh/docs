@@ -13,8 +13,18 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 - Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instruções
 

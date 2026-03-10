@@ -47,9 +47,19 @@ Ecco il contesto del diagramma sopra:
 ## Prerequisiti
 
 - Disporre di una piattaforma [Private Exchange OVHcloud](/links/web/emails-private-exchange) o [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere connesso alle [API OVHcloud](/links/api).
 - Disporre dei parametri necessari per configurare il connettore di invio. Contatta il fornitore del servizio.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 

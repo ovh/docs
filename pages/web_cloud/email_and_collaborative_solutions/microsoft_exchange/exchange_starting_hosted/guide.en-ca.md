@@ -21,18 +21,23 @@ With the Hosted Exchange service, you can get professional email accounts to use
 - You need to have a subscription to a [Hosted Exchange](/links/web/emails-hosted-exchange) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Access your service management
 
 Once your Hosted Exchange service has been created and is available:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 > [!primary]
 >

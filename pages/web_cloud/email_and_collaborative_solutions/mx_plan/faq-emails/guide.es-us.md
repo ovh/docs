@@ -21,6 +21,26 @@ details[open]>summary::before {
 }
 </style>
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## FAQ e-mail
 
 En esta página encontrará las preguntas más frecuentes sobre el uso de su correo electrónico en función de las ofertas de correo de OVHcloud.
@@ -95,7 +115,6 @@ A continuación se indican las principales razones por las que no ha recibido su
 
 ///
 
-
 /// details | ¿Por qué configurar los registros SPF y DKIM?
 
 **SPF (Sender Policy Framework)**
@@ -111,7 +130,6 @@ Permite firmar los mensajes de correo para evitar el robo de identidad. Esta fir
 Para saber cómo configurar un registro DKIM en su servicio de correo, consulte nuestra guía [Mejorar la seguridad del correo electrónico mediante un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
-
 
 /// details | ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail?
 
@@ -214,7 +232,6 @@ Si la columna `Filtro` no está presente en el área de cliente, deberá crear l
 
 ///
 
-
 /// details | Mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
 
 Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/emails) y tiene una cuenta de correo llena, consulte nuestra guía «[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
@@ -243,7 +260,6 @@ La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skyp
 Para más información, consulte la guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ///
-
 
 ## Más información <a name="go-further"></a>
 

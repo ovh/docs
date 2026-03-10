@@ -25,13 +25,21 @@ Ecco l'elenco dei software inclusi nella suite:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## Procedura
 
 ### Ordina una licenza
 
-1. Accedi alla pagina commerciale [Microsoft 365 OVHcloud](/links/web/ms365) o dallo [Spazio Cliente OVHcloud](/links/manager):
     - Accedi alla sezione `Web Cloud`{.action}.
     - Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
     - Clicca su `Ordina`{.action}.
@@ -42,13 +50,6 @@ Ecco l'elenco dei software inclusi nella suite:
 ### Attiva la tua licenza
 
 Per attivare la licenza ordinata:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `⁝`{.action} sulla linea della licenza per cui vuoi attivare il servizio, poi su `Modifica l’account`{.action}.
 
     ![email](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
@@ -76,26 +77,11 @@ Per installare la licenza su più macchine, è sufficiente riprodurre [step prec
 
 Per impostare in autonomia la password della licenza:
 
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `⁝`{.action} a destra della licenza in questione e poi su `Modifica la password`{.action}.
-
 ![email](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
 ### Aggiungere una licenza a un gruppo esistente
 
 Per aggiungere una o più licenze al gruppo di licenze esistente:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Web Cloud`{.action}.
-1. Nella sezione `MICROSOFT`, clicca su `Microsoft 365`{.action}.
-1. Selezionare il servizio Microsoft 365 appropriato.
-1. Clicca sulla scheda `Licenze`{.action}.
-1. Clicca sul pulsante `Ordina più licenze`{.action} a destra.
-1. Determina il **numero** e il **tipo di licenza** che vuoi ordinare, poi clicca su `Conferma`{.action}.
 
 ![email](images/Outlook-cps1-05.png){.thumbnail .w-500}
 

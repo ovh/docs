@@ -14,8 +14,18 @@ Le service Exchange permet de bénéficier d’adresses e-mail professionnelles,
 
 - Disposer d'une offre [Exchange](/links/web/emails-hosted-exchange).
 - Disposer au minimum de deux comptes Exchange actifs et configurés sur la même plateforme Exchange OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer des identifiants relatifs au compte Exchange qui bénéficiera des nouveaux droits délégués.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -35,11 +45,6 @@ Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour 
 Lorsque vous avez identifié le compte concerné par la délégation, déterminé les droits que vous allez déléguer, ainsi qu'identifié le ou les comptes qui bénéficieront de ces droits supplémentaires, poursuivez vers la première étape.
 
 ### Étape 1 : mettre en place la délégation
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
-1. Sélectionnez la plateforme concernée.
 
 Le tableau qui apparaît affiche les comptes liés à votre service Exchange. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation, puis sur `Gérer les délégations`{.action}.
 

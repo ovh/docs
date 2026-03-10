@@ -4,7 +4,6 @@ excerpt: Dowiedz się, jak zamówić i zarządzać usługą Office 365 Reseller 
 updated: 2023-01-17
 ---
 
-
 ## Wprowadzenie
 
 Office 365 Resellerzy (CSP2) to usługa pozwalająca na korzystanie z różnych typów licencji Microsoft 365 w preferencyjnych cenach, dzięki czemu możesz je odsprzedać swoim klientom.
@@ -13,9 +12,19 @@ Office 365 Resellerzy (CSP2) to usługa pozwalająca na korzystanie z różnych 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier) 
 - Bądź członkiem programu CSP (Cloud Solution Provider) Microsoft jako pośrednik reseller w regionie, w którym pracujesz (na przykład: "UE" dla Europy)
+
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 > [!warning]
 >

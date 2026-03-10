@@ -15,7 +15,17 @@ Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjo
 - Wykupienie usługi [E-mail Pro](/links/web/email-pro)
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że usługa E-mail Pro została zainstalowana
 - Zarejestrowana domena.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## W praktyce
 
@@ -23,7 +33,6 @@ Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjo
 
 Po utworzeniu i udostępnieniu usługi E-mail Pro :
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 1. Kliknij zakładkę `Web Cloud`{.action}.
 1. Kliknij `Email Pro`{.action}.
 1. Wybierz odpowiednią platformę.
