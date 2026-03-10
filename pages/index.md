@@ -726,6 +726,7 @@
             + [Information regarding Public Cloud billing options](public_cloud/public_cloud_cross_functional/analyze_billing)
             + [Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](public_cloud/compute/classic_block_multi_az_limitations)
             + [Understanding Landing Zones](public_cloud/public_cloud_cross_functional/whats_is_landing_zone)
+            + [Understanding Metrics in Public Cloud](public_cloud/public_cloud_cross_functional/metrics_informations)
     + [Compute](products/public-cloud-compute)
         + [Key Concepts](public-cloud-compute-key-concepts)
             + [Public Cloud Instances - Key concepts](public_cloud/compute/key_concepts)
