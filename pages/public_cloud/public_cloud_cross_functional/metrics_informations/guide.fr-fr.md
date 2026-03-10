@@ -1,7 +1,7 @@
 ---
-title: 'Comprendre les Métriques dans Public Cloud'
-excerpt: "Découvrez comment fonctionnent les Métriques dans Public Cloud, les tableaux de bord, les abonnements ainsi que la disponibilité régionale."
-updated: 2026-02-01
+title: 'Comprendre les métriques dans OVHcloud Public Cloud'
+excerpt: "Découvrez comment fonctionnent les métriques dans le Public Cloud, les tableaux de bord, les abonnements ainsi que la disponibilité régionale."
+updated: 2026-03-10
 ---
 
 <style>
@@ -18,79 +18,79 @@ details[open]>summary::before {
 }
 </style>
 
-## Objective
+## Objectif
 
-L'objectif de ce document est de fournir aux utilisateurs du Public Cloud une compréhension complète de la fonctionnalité Métriques, notamment :
+Ce guide vous aide à comprendre la fonctionnalité des métriques dans OVHcloud Public Cloud :
 
-- Concepts clés – Explication du tableau de bord des métriques d'observabilité et de leur configuration dans le service Observability afin que les utilisateurs comprennent comment surveiller et gérer leurs ressources.
-- Présentation des Métriques : définition de Métrique, de son fonctionnement et de la manière dont il peut aider à optimiser les opérations cloud.
-- Déploiement régional : mise en avant de la disponibilité des Métriques dans différentes régions, afin d'aider les utilisateurs à planifier et à déployer leurs charges de travail en toute transparence.
+- Concepts clés – Tableaux de bord de métriques d'observabilité et configuration dans le service Observability pour surveiller et gérer vos ressources.
+- Présentation des métriques – Définition des métriques, de leur fonctionnement et de la manière dont elles peuvent aider à optimiser les opérations dans le cloud.
+- Déploiement régional – Mise en avant de la disponibilité des métriques dans différentes régions, pour aider les utilisateurs à planifier et à déployer leurs charges de travail de manière optimale.
 
-À la fin de ce document, les lecteurs seront en mesure de naviguer en toute confiance dans la fonctionnalité Métriques, d'utiliser efficacement les tableaux de bord et les abonnements, et de comprendre la disponibilité régionale du service pour une meilleure gestion des coûts et des ressources.
+Après lecture, vous saurez utiliser les tableaux de bord et les abonnements aux métriques, et comprendre la disponibilité régionale pour mieux gérer vos coûts et ressources.
 
-## Tableau de bord des métriques d'observabilité et configuration pour les utiliser dans le service Observability
+**Ce guide explique le fonctionnement des métriques dans OVHcloud Public Cloud.**
 
-Le tableau de bord des métriques et la configuration de collecte avec le service Observability fonctionnent ensemble pour offrir une expérience complète : consultez les métriques pour comprendre l'état du cloud et utilisez-les pour prendre des mesures efficaces. Cette approche garantit que les utilisateurs ont toujours un contrôle total sur leurs ressources et peuvent optimiser à la fois les performances et les coûts.
+## Tableaux de bord des métriques d’observabilité et configuration dans le service Observability
+
+Le tableau de bord des métriques et la configuration de collecte avec le service Observability fonctionnent ensemble pour offrir une expérience complète : consultez les métriques pour comprendre l'état de votre cloud et utilisez-les pour prendre des mesures efficaces. Cette approche garantit aux utilisateurs un contrôle total sur leurs ressources et leur permet d'optimiser à la fois les performances et les coûts.
 
 > [!primary]
 >
-> Au moment de la rédaction du présent document, seuls les tableaux de bord Metrics sont généralement disponibles. L'abonnement à Metrics dans le service Observability n'est pas encore généralement disponible et sera introduit progressivement (voir ci-dessous).
+> Au moment de la rédaction du présent document, seuls les tableaux de bord de métriques sont disponibles. L'abonnement aux métriques dans le service Observability n'est pas encore disponible et sera introduit progressivement (voir ci-dessous).
 >
 
-### Tableaux de bord métriques pour la surveillance
+### Tableaux de bord de métriques pour la surveillance
 
-Les tableaux de bord métriques permettent de visualiser les métriques d'une ressource donnée afin d'en surveiller l'état et les performances. Cette fonctionnalité permet aux utilisateurs :
+Les tableaux de bord de métriques permettent de visualiser les métriques d'une ressource donnée pour en surveiller l'état et les performances. Cette fonctionnalité permet aux utilisateurs :
 
-- de centraliser et de visualiser toutes les métriques d'un service cloud donné en temps réel et de manière historique,
+- de centraliser et de visualiser toutes les métriques d'un service cloud donné en temps réel et sur des périodes historiques,
 - d'analyser les tendances et de détecter rapidement les anomalies.
 
-L'objectif des tableaux de bord métriques est de fournir un tableau de bord complet et intuitif, garantissant une visibilité maximale sur l'ensemble de l'infrastructure cloud.
+Les tableaux de bord de métriques offrent une visibilité complète sur l'ensemble de votre infrastructure cloud.
 
-Les tableaux de bord métriques sont disponibles par région en fonction de l'état d'avancement du déploiement (voir la section sur la disponibilité régionale ci-dessous).
+Les tableaux de bord de métriques sont disponibles par région en fonction de l'état d'avancement du déploiement (voir la section sur la disponibilité régionale ci-dessous).
 
 ### Configuration pour collecter des métriques dans le service Observability
 
-La fonctionnalité d'abonnement n'est pas encore disponible en production. Une phase Alpha est planifiée, permettant aux premiers utilisateurs de tester la fonctionnalité et de fournir leurs commentaires.
+La fonctionnalité d'abonnement n'est pas encore disponible en production. Une phase Alpha est planifiée, permettant aux premiers utilisateurs de la tester et de donner leur avis.
 
-L'abonnement consiste à activer la collecte de métriques dans le tenant de l'utilisateur dans le service Observability pour une utilisation avancée.
+L'abonnement consiste à activer la collecte de métriques dans le tenant utilisateur dans le service Observability pour une utilisation avancée.
 
 - Abonnez-vous aux métriques Prometheus d'une ressource donnée pour les stocker pendant la période de conservation que vous définissez (jusqu'à 13 mois).
 - Interrogez vos métriques dans PromQL.
-- Intégrer les métriques dans les workflows automatisés et les outils externes,
-- Définir des alertes et des seuils pour anticiper les problèmes et optimiser les performances.
+- Intégrez les métriques dans les workflows automatisés et les outils externes.
+- Définissez des alertes et des seuils pour anticiper les problèmes et optimiser les performances.
 
-Les informations relatives à la phase Alpha seront publiées sur cette [page OVHcloud Observability Metrics](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
+Une fois disponible, la fonctionnalité d’abonnement aux métriques transforme les données en décisions opérationnelles concrètes.
 
-M2C met l’accent sur la proactivité et l’action, transformant les données des Métriques en décisions opérationnelles concrètes.
+## Comprendre les métriques dans OVHcloud Public Cloud
 
-## Comprendre les Métriques dans le Public Cloud
+### Qu’est-ce que les métriques ?
 
-### Qu’est-ce que les Métriques ?
+Les métriques sont des indicateurs quantitatifs de performance et d’utilisation des ressources cloud : CPU, mémoire, réseau, stockage, latence, etc. Elles permettent de surveiller, analyser et optimiser l’infrastructure en temps réel.
 
-Les Métriques sont des indicateurs quantitatifs de performance et d’utilisation des ressources cloud : CPU, mémoire, réseau, stockage, latence… Elles permettent de surveiller, analyser et optimiser l’infrastructure en temps réel.
-
-### Pourquoi les Métriques sont essentielles
+### Pourquoi les métriques sont essentielles
 
 - **Surveillance :** suivre la performance des services.
 - **Efficacité :** détecter les goulots d’étranglement et optimiser les ressources.
 - **Proactivité :** anticiper les problèmes grâce aux alertes et seuils.
-- **Optimisation des coûts :** aligner usage et budget.
+- **Optimisation des coûts :** aligner l'usage et le budget.
 
-### Explorer les Métrique par service
+### Explorer les métriques par service
 
 /// details | Compute
 
-Les Métriques Compute permettent de suivre la performance et l’utilisation des instances cloud. Elles fournissent des informations précises sur le CPU, la mémoire, le stockage et le réseau, permettant d’optimiser les performances et d’anticiper les besoins opérationnels.
+Les métriques Compute permettent de suivre la performance et l’utilisation des instances cloud. Elles fournissent des informations précises sur le CPU, la mémoire, le stockage et le réseau, permettant d’optimiser les performances et d’anticiper les besoins opérationnels.
 
 | Catégorie              | Metric                          | Description |
 | ---------------------- | ------------------------------- | ----------- |
 | **Stockage – Disques** | Disk read Bytes (KiB/s)         | Volume moyen de données lues depuis tous les volumes attachés à l’instance. Permet de mesurer la vitesse de lecture des applications. |
 |                        | Disk read IOPS                  | Nombre moyen d’opérations de lecture complétées par seconde. Permet de suivre l’intensité des lectures sur les volumes de l’instance. |
 |                        | Disk write Bytes (KiB/s)        | Volume moyen de données écrites sur tous les volumes attachés à l’instance. Permet de mesurer la vitesse d’écriture des applications. |
-|                        | Disk write IOPS                 | Nombre moyen d’opérations d’écriture complétées par seconde. Suivi de l’intensité des écritures sur les volumes de l’instance. |
+|                        | Disk write IOPS                 | Nombre moyen d’opérations d’écriture complétées par seconde. Permet de suivre l’intensité des écritures sur les volumes de l’instance. |
 | **CPU**                | CPU utilization (%)             | Pourcentage de ressources CPU utilisées par l’instance sur une période donnée. Permet d’identifier les pics de charge et les éventuels goulots d’étranglement. |
 | **Réseau**             | Network in (bytes/s)            | Trafic entrant de l’instance en octets par seconde. Permet de détecter les pics ou anomalies dans les flux entrants. |
-|                        | Network out (bytes/s)           | Trafic sortant de l’instance en octets par seconde. Suivi des flux sortants et détection de volumes anormaux. |
+|                        | Network out (bytes/s)           | Trafic sortant de l’instance en octets par seconde. Permet de surveiller les flux sortants et de détecter les volumes anormaux. |
 |                        | Network packets in (packets/s)  | Nombre de paquets entrants par seconde. Utile pour analyser l’intensité du trafic réseau. |
 |                        | Network packets out (packets/s) | Nombre de paquets sortants par seconde. Permet de surveiller les flux sortants et détecter des anomalies. |
 | **Mémoire**            | Memory utilization (%)          | Pourcentage de mémoire utilisée par l’instance. Permet d’identifier les pressions mémoire, fuites ou contraintes de capacité. |
@@ -99,13 +99,13 @@ Les Métriques Compute permettent de suivre la performance et l’utilisation de
 
 ///
 
-## Disponibilité des Métriques par région
+## Disponibilité des métriques par région
 
-OVHcloud déploie les Métriques progressivement sur toutes ses régions afin d’assurer une haute disponibilité et une performance homogène. Comprendre le roll-out par région permet aux utilisateurs de planifier leurs déploiements, d’anticiper leurs besoins en monitoring et d’optimiser l’exploitation de leurs ressources.
+OVHcloud déploie les métriques progressivement sur toutes ses régions pour assurer une haute disponibilité et des performances homogènes. Comprendre la disponibilité par région permet aux utilisateurs de planifier leurs déploiements, d’anticiper leurs besoins en surveillance et d’optimiser l’exploitation de leurs ressources.
 
-Le tableau ci-dessous présente l’état de disponibilité des Métriques ainsi que les dates de sortie prévues pour chaque région.
+Le tableau ci-dessous présente l’état de disponibilité des métriques ainsi que les dates de sortie prévues par région.
 
-| Région         | Disponibilité des Métriques      | Date de sortie |
+| Région         | Disponibilité des métriques      | Date de sortie |
 | -------------- | -------------------------------- | -------------- |
 | GRA            | Disponible                       |                |
 | SBG            | Disponible                       |                |

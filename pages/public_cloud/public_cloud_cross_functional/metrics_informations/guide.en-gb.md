@@ -1,7 +1,7 @@
 ---
-title: 'Understanding Metrics in Public Cloud'
-excerpt: 'Learn how Metrics work in OVHcloud Public Cloud, dashboards, subscriptions, and regional availability.'
-updated: 2026-02-01
+title: 'Understanding metrics in OVHcloud Public Cloud'
+excerpt: 'Learn how metrics work in OVHcloud Public Cloud, including dashboards for monitoring, subscriptions for advanced usage, and regional availability.'
+updated: 2026-03-10
 ---
 
 <style>
@@ -20,67 +20,67 @@ details[open]>summary::before {
 
 ## Objective
 
-The objective of this document is to provide OVHcloud Public Cloud users with a comprehensive understanding of the Metrics feature, including:
+This guide helps you understand the metrics feature in OVHcloud Public Cloud:
 
-- Key Concepts – Explaining observability metrics dashboard and configuration to use them in Observability service so users understand how to monitor and manage their resources.
-- Metrics Overview – Defining what Metrics are, how they work, and how they can help optimize cloud operations.
-- Regional Roll-out – Highlighting the availability of Metrics across different regions, helping users plan and deploy workloads with full visibility.
+- Key Concepts – Observability Metrics dashboard and configuration in the Observability service for monitoring and managing your resources.
+- Metrics Overview – Defining what metrics are, how they work, and how they can help optimise cloud operations.
+- Regional Roll-out – Highlighting the availability of metrics across different regions, helping users plan and deploy workloads with full visibility.
 
-By the end of this document, readers will be able to navigate the Metrics feature confidently, leverage dashboards and subscriptions effectively, and understand the service’s regional availability for better cost and resource management.
+After reading this guide, you will know how to use metrics dashboards and subscriptions, and understand regional availability for cost and resource management.
 
-## Observability metrics dashboard and configuration to use them in Observability service 
+**This guide explains how metrics work in OVHcloud Public Cloud.**
 
-Metrics dashboard and collect configuration with Observability service work together to provide a comprehensive experience: view metrics to understand the state of the cloud, and use them to take effective action. This approach ensures that users always have complete control over their resources and can optimize both performance and costs.
+## Observability Metrics dashboards and configuration in the Observability service
+
+Metrics dashboards and collection configuration with the Observability service work together to provide a comprehensive experience: view metrics to understand the state of the cloud, and use them to take effective action. This approach ensures that users always have complete control over their resources and can optimise both performance and costs.
 
 > [!primary]
 >
-> At the time of writing, only Metrics dashboards are generally available. Metrics subscription into the Observability service is not yet generally available and will be introduced progressively (see below).
+> At the time of writing, only metrics dashboards are generally available. Metrics subscription in the Observability service is not yet generally available and will be introduced progressively (see below).
 >
 
 ### Metrics Dashboards for Monitoring
 
-Metrics dashboard provide a visualization of metrics for a given resource for the purpose of monitoring its health and performance. This feature allows users to:
+Metrics dashboards display metrics for a given resource to monitor its health and performance. This feature allows users to:
 
-- Centralize and visualize all metrics for a given cloud service in real time and historically,
-- Analyze trends and quickly detect anomalies.
+- Centralise and visualise all metrics for a given cloud service in real time and over historical periods,
+- Analyse trends and quickly detect anomalies.
 
-The goal of Metrics Dashboards is to provide a comprehensive and intuitive dashboard, ensuring maximum visibility across the entire cloud infrastructure.
+Metrics dashboards give you full visibility across your cloud infrastructure.
 
 Metrics dashboards are available by region depending on the rollout status (see the regional availability section below).
 
-### Configuration to collect metrics in Observability service
+### Configuration to collect metrics in the Observability service
 
 The subscription feature is not yet available in production. An Alpha phase is planned, allowing early adopters to test the feature and provide feedback.
 
-Subscription is the activation of metrics collection in user's own tenant in observability service for advanced usage.
+Subscription is the activation of metrics collection in the user's tenant in the Observability service for advanced usage.
 
-- Subscribe to Prometheus metrics from a given resource to store them retention periode you defien (up to 13 months),
-- Query your metrics in PromQL
-- Integrate Metrics into automated workflows and external tools,
-- Set alerts and thresholds to anticipate problems and optimize performance.
+- Subscribe to Prometheus metrics from a given resource to store them for the retention period you define (up to 13 months).
+- Query your metrics in PromQL.
+- Integrate metrics into automated workflows and external tools.
+- Set alerts and thresholds to anticipate problems and optimise performance.
 
-Information about the Alpha phase will be published on this [OVHcloud Observability Metrics page](https://labs.ocms.ovhcloud.tools/en/node/18861/latest/){.external}.
+Once available, the metrics subscription feature enables metrics data to be used for operational decisions.
 
-M2C emphasizes proactivity and action, transforming metric data into concrete operational decisions.
+## Understanding metrics in OVHcloud Public Cloud
 
-## Understanding Metrics in the Public Cloud
+### What are metrics?
 
-### What are Metrics?
+Metrics are quantitative indicators of cloud resource performance and usage: CPU, memory, network, storage, latency, etc. They enable real-time monitoring, analysis, and optimisation of infrastructure.
 
-Metrics are quantitative indicators of cloud resource performance and usage: CPU, memory, network, storage, latency, etc. They enable real-time monitoring, analysis, and optimization of infrastructure.
-
-### Why Metrics Are Essential
+### Why metrics are essential
 
 - **Monitoring:** track service performance.
-- **Efficiency:** detect bottlenecks and optimize resources.
+- **Efficiency:** detect bottlenecks and optimise resources.
 - **Proactivity:** anticipate problems with alerts and thresholds.
-- **Cost optimization:** align usage and budget.
+- **Cost optimisation:** align usage and budget.
 
-### Explore Metrics by service
+### Explore metrics by service
 
 /// details | Compute
 
-Compute metrics allow you to track the performance and usage of cloud instances. They provide accurate information on CPU, memory, storage, and network, enabling you to optimize performance and anticipate operational needs.
+Compute metrics allow you to track the performance and usage of cloud instances. They provide accurate information on CPU, memory, storage, and network, enabling you to optimise performance and anticipate operational needs.
 
 | Category             | Metric                          | Description |
 | ---------------------| ------------------------------- | ----------- |
@@ -91,7 +91,7 @@ Compute metrics allow you to track the performance and usage of cloud instances.
 | **CPU**              | CPU utilization (%)             | Percentage of CPU resources used by the instance over a given period. Helps identify load peaks and potential bottlenecks. |
 | **Network**          | Network in (bytes/s)            | Incoming traffic to the instance in bytes per second. Helps detect peaks or anomalies in inbound flows. |
 |                      | Network out (bytes/s)           | Outgoing traffic from the instance in bytes per second. Monitors outbound flows and detects abnormal volumes. |
-|                      | Network packets in (packets/s)  | Number of incoming packets per second. Useful to analyze network traffic intensity. |
+|                      | Network packets in (packets/s)  | Number of incoming packets per second. Useful to analyse network traffic intensity. |
 |                      | Network packets out (packets/s) | Number of outgoing packets per second. Monitors outbound flows and detects anomalies. |
 | **Memory**           | Memory utilization (%)          | Percentage of memory used by the instance. Helps identify memory pressure, leaks, or capacity constraints. |
 | **Attached Volumes** | Number of attached volumes      | Number of volumes attached to the instance, to track available storage configuration. |
@@ -101,7 +101,7 @@ Compute metrics allow you to track the performance and usage of cloud instances.
 
 ## Metrics availability by region
 
-OVHcloud is gradually rolling out Metrics across all its regions to ensure high availability and consistent performance. Understanding the rollout by region allows users to plan their deployments, anticipate their monitoring needs, and optimize the use of their resources.
+OVHcloud is gradually rolling out metrics across all its regions to ensure high availability and consistent performance. Understanding the rollout by region allows users to plan their deployments, anticipate their monitoring needs, and optimise the use of their resources.
 
 The table below shows the availability status of metrics and the planned release dates for each region.
 
@@ -109,7 +109,7 @@ The table below shows the availability status of metrics and the planned release
 | ------------- | -------------------- | ------------ |
 | GRA           | Available            |              |
 | SBG           | Available            |              |
-| Autres régions | See [OVHcloud Public Cloud roadmap](https://github.com/orgs/ovh/projects/16/views/11?filterQuery=main-product%3A%2C%22Observability%22+status%3AAcknowledged%2CPrioritized%2CPlanned%2C%22Partially+released%22%2CDone++label%3A%22New+Geo%22+-release-date%3A%3C%40today-2m++-reason%3Anot-planned) | Follow roadmap for updates |
+| Other regions | See [OVHcloud Public Cloud roadmap](https://github.com/orgs/ovh/projects/16/views/11?filterQuery=main-product%3A%2C%22Observability%22+status%3AAcknowledged%2CPrioritized%2CPlanned%2C%22Partially+released%22%2CDone++label%3A%22New+Geo%22+-release-date%3A%3C%40today-2m++-reason%3Anot-planned) | Follow the roadmap for updates |
 
 ## Go further
 
