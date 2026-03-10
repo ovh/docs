@@ -66,10 +66,20 @@ Voici quelques scénarios pratiques où l'extension d'un réseau privé OVHcloud
 
 - Un [projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) dans votre compte OVHcloud
 - Connaissances de base en réseau
-- Être connecté à l'[espace client OVHcloud](/links/manager)
 - Être connecté à l'[interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## En pratique
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 Cette section fournit des instructions pas à pas pour configurer un réseau privé étiré à travers plusieurs régions Public Cloud OVHcloud. Vous pouvez utiliser l'espace client OVHcloud & Horizon, l'OpenStack CLI ou Terraform.
 

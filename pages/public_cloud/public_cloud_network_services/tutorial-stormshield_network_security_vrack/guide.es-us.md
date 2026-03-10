@@ -19,13 +19,24 @@ Esta guía explica cómo desplegar y configurar SNS EVA en el Public Cloud de OV
 ## Requisitos
 
 - Un [proyecto de Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) en su cuenta de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Un [usuario OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (opcional).
 - Conocimientos básicos de redes.
 - Una cuenta Stormshield creada a través del [sitio Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm).
 - Asegurarse de que el vRack esté activado y configurado para permitir una comunicación segura entre los componentes de la infraestructura.
 - Un bloque de direcciones [Additional IP](/links/network/additional-ip) (/29) para permitir el failover y la configuración de la alta disponibilidad.
 - Una licencia Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence), obtenida de [partners o revendedores terceros](https://www.stormshield.com/partner/partner-finder/), que deberá proporcionar durante la instalación y la configuración.
+
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -127,7 +138,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configurar las instancias SNS EVA
 
-Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En el menú de la izquierda, haga clic en `Instances`{.action} en la pestaña **Compute** y seleccione las dos instancias SNS EVA.
+En la sección `Public Cloud`{.action}, seleccione su proyecto. En el menú de la izquierda, haga clic en `Instances`{.action} en la pestaña **Compute** y seleccione las dos instancias SNS EVA.
 
 Acceda a la consola VNC para las dos instancias SNS EVA y configure la distribución del teclado y la contraseña.
 
