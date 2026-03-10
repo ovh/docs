@@ -57,7 +57,7 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 
 Para criar a sua mailing list:
 
-1. Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.
+Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 

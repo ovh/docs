@@ -42,7 +42,7 @@ MX Plan Legacy|MX Plan neuere Version|
 
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 
-1. Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
+Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
 
 ![E-Mails](images/img_3239.png){.thumbnail}
 

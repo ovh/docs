@@ -42,7 +42,7 @@ Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 
 ## En pratique <a name="oldmxplan"></a>
 
-1. Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
+Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.png){.thumbnail}
 

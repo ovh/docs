@@ -33,7 +33,7 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 ### Creating an auto-reply
 
-1. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
+Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
 

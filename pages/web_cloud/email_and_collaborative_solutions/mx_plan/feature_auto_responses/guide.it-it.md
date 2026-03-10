@@ -33,7 +33,7 @@ Quando sei assente e non sei in grado di consultare il tuo indirizzo email, puoi
 
 ### Crea la risposta automatica
 
-1. Clicca sulla scheda `Email`{.action} in alto e poi su `Gestione delle risposte automatiche`{.action}.
+Clicca sulla scheda `Email`{.action} in alto e poi su `Gestione delle risposte automatiche`{.action}.
 
 Verrai reindirizzato alla finestra `Gestione delle risposte automatiche`, nella quale sono visualizzate tutte le risposte automatiche alle email attive sul tuo servizio di posta.
 

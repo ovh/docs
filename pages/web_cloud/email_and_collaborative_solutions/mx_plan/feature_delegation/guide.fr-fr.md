@@ -46,7 +46,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 > La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](/links/manager) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
 >
 
-1. Pour afficher la liste des comptes e-mails de votre offre MX Plan, cliquez sur l'onglet `Emails`{.action}.
+Pour afficher la liste des comptes e-mails de votre offre MX Plan, cliquez sur l'onglet `Emails`{.action}.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
 

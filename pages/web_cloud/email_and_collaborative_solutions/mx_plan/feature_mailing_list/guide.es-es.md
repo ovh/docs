@@ -57,7 +57,7 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 
 Para crear una lista de difusión:
 
-1. Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
+Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 

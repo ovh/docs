@@ -38,7 +38,7 @@ Mit Exchange Gruppen können mehrere Benutzer durch Senden von E-Mails an eine G
 
 ### Eine neue Gruppe erstellen
 
-1. Gehen Sie dann auf den Tab `Gruppen`{.action}.
+Gehen Sie dann auf den Tab `Gruppen`{.action}.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 

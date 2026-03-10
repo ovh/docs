@@ -46,7 +46,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 > A criação de uma delegação numa conta de e-mail indica-o no [espaço de cliente](/links/manager) em causa. No entanto, nesta situação, apenas serão possíveis as alterações indicadas na secção [Objetivo](#objective) deste guia.
 >
 
-1. Para apresentar a lista das contas de e-mail da sua oferta MX Plan, clique no separador `Emails`{.action}.
+Para apresentar a lista das contas de e-mail da sua oferta MX Plan, clique no separador `Emails`{.action}.
 
 ![delegação](images/mxplan-delegation-01.png){.thumbnail}
 

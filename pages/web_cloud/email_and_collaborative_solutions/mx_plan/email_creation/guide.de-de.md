@@ -43,7 +43,7 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 
 ## ## In der praktischen Anwendung <a name="instructions"></a>
 
-1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
+**Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
 
 > [!primary]
 >

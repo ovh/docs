@@ -47,7 +47,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 > Delegacja na koncie e-mail wyświetla się w [odpowiednim panelu klienta](/links/manager). W tej sytuacji możliwe będą jedynie zmiany wskazane w sekcji [Cel](#objective) niniejszego przewodnika.
 >
 
-1. Aby wyświetlić listę kont e-mail w Twojej usłudze MX Plan, kliknij zakładkę `E-maile`{.action}.
+Aby wyświetlić listę kont e-mail w Twojej usłudze MX Plan, kliknij zakładkę `E-maile`{.action}.
 
 ![delegacja uprawnień exchange](images/mxplan-delegation-01.png){.thumbnail}
 

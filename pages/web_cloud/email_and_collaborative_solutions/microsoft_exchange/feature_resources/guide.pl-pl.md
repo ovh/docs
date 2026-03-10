@@ -28,7 +28,7 @@ Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twoje
 
 ## W praktyce
 
-1. Kliknij kartę `Więcej +`{.action}, a następnie `Zasoby`{.action}.
+Kliknij kartę `Więcej +`{.action}, a następnie `Zasoby`{.action}.
 
 ### Etap 1: tworzenie zasobów
 

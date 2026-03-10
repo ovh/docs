@@ -53,7 +53,7 @@ Para activar la licencia contratada:
 
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Introduzca los datos del usuario de la licencia y haga clic en `Validar`{.action}.
+Introduzca los datos del usuario de la licencia y haga clic en `Validar`{.action}.
 
     ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 

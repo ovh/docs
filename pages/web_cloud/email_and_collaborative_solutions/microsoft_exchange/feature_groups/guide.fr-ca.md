@@ -38,7 +38,7 @@ Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par en
 
 ### Créer un nouveau groupe
 
-1. Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
+Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 

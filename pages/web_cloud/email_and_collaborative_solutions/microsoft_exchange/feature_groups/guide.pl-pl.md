@@ -29,7 +29,7 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 
 ### Krok 1: utworzenie nowej grupy
 
-1. Kliknij kartę `Grupy`{.action} w menu poziomym.
+Kliknij kartę `Grupy`{.action} w menu poziomym.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 

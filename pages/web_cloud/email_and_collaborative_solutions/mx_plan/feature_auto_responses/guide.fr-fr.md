@@ -33,7 +33,7 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ### Création d'une réponse automatique
 
-1. Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
+Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
 Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des réponses automatiques e-mail en place sur votre offre e-mail.
 

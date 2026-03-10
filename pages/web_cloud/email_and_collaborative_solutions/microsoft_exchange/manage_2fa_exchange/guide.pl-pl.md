@@ -69,7 +69,7 @@ Podczas następnych logowań wymagany będzie jedynie kod wygenerowany przez apl
 
 Weryfikację dwuetapową Twojego konta można wyłączyć na trzy sposoby.
 
-1. Z poziomu karty `Konta e-mail`{.action} Twojej platformy Exchange kliknij `...`{.action} po prawej stronie konta z aktywną weryfikacją dwuetapową.
+Z poziomu karty `Konta e-mail`{.action} Twojej platformy Exchange kliknij `...`{.action} po prawej stronie konta z aktywną weryfikacją dwuetapową.
 
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 

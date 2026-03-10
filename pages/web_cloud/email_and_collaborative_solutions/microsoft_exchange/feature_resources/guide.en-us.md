@@ -28,7 +28,7 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 
 ## Instructions
 
-1. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
 ### Step 1: Creating a resource
 

@@ -57,7 +57,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 Um Ihre Mailingliste zu erstellen:
 
-1. Wechseln Sie zur Registerkarte `Mailinglisten`{.action} Ihres E-Mail-Dienstes.
+Wechseln Sie zur Registerkarte `Mailinglisten`{.action} Ihres E-Mail-Dienstes.
 
 ![Emails](images/manage_mailing-lists_01.png){.thumbnail}
 

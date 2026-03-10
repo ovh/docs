@@ -58,7 +58,7 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 
 Per creare la tua mailing list:
 
-1. Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
+Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
 
 ![Email](images/manage_mailing-lists_01.png){.thumbnail}
 

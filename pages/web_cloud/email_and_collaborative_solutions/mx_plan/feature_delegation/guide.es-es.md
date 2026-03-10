@@ -47,7 +47,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 > La delegación en una cuenta de correo electrónico lo hace evidente en [el área de cliente](/links/manager). Sin embargo, en esta situación solo serán posibles los cambios indicados en la sección [Objetivo](#objective) de esta guía.
 >
 
-1. Para ver la lista de cuentas de correo de su solución MX Plan, haga clic en la pestaña `Correo electrónico`{.action}.
+Para ver la lista de cuentas de correo de su solución MX Plan, haga clic en la pestaña `Correo electrónico`{.action}.
 
 ![Delegación de permisos](images/mxplan-delegation-01.png){.thumbnail}
 

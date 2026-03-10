@@ -33,7 +33,7 @@ Quando estiver em falta e não conseguir consultar o seu endereço de e-mail, po
 
 ### Criação de uma resposta automática
 
-1. Clique no separador `E-mails`{.action} na parte superior e, a seguir, em `Gestão das respostas automáticas`{.action}.
+Clique no separador `E-mails`{.action} na parte superior e, a seguir, em `Gestão das respostas automáticas`{.action}.
 
 Será redirecionado para a janela `Gestão das respostas automáticas`, onde será apresentado um conjunto de respostas automáticas aos e-mails que foram implementadas no seu serviço.
 

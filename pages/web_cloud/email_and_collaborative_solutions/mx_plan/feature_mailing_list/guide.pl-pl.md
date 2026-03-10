@@ -57,7 +57,7 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 Aby utworzyć listę mailingową:
 
-1. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
+Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 

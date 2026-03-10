@@ -43,7 +43,7 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 
 ## Procedimiento <a name="instructions"></a>
 
-1. **Prosiga con la tecnología de correo electrónico que utiliza su servicio MX Plan**.
+**Prosiga con la tecnología de correo electrónico que utiliza su servicio MX Plan**.
 
 > [!primary]
 >

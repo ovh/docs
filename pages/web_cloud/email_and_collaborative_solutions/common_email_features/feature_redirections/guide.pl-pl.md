@@ -455,7 +455,7 @@ Aby utworzyć alias dla konta e-mail MX Plan Roundcube, należy go utworzyć w t
 
 ### Zimbra <a name="alias-mxplan-roundcube"></a>
 
-1. Kliknij zakładkę `Konta e-mail`{.action} w Twojej usłudze Zimbra.
+Kliknij zakładkę `Konta e-mail`{.action} w Twojej usłudze Zimbra.
 
 > [!tabs]
 > **Etap 1**
@@ -513,7 +513,7 @@ Kliknij przycisk`...`{.action} po prawej stronie wybranego przekierowania, a nas
 
 ### Zimbra <a name="alias-delete-zimbra"></a>
 
-1. Kliknij zakładkę `Konta e-mail`{.action} w Twojej usłudze Zimbra.
+Kliknij zakładkę `Konta e-mail`{.action} w Twojej usłudze Zimbra.
 
 > [!tabs]
 > **Etap 1**

@@ -44,7 +44,7 @@ La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal 
 
 ## Procedura <a name="instructions"></a>
 
-1. **Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
+**Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
 
 > [!primary]
 >

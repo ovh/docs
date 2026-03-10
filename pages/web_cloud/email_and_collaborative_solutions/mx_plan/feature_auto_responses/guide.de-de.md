@@ -33,7 +33,7 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 
 ### Automatische Antwort erstellen
 
-1. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
+Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
 
 Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, in dem alle für Ihr E-Mail-Angebot verfügbaren automatischen Antworten angezeigt werden.
 

@@ -46,7 +46,7 @@ By creating a delegation, you can enable an email account user to manage their o
 > When you set up a delegation on an email account, it will appear in the relevant [Control Panel](/links/manager). However, only the modifications listed in the [Objective](#objective) section of this guide will be possible in this situation.
 >
 
-1. Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
+Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
 

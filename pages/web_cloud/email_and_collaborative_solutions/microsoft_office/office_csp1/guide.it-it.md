@@ -53,7 +53,7 @@ Per attivare la licenza ordinata:
 
     ![email](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Inserisci le informazioni relative all’utente della licenza e clicca su `Conferma`{.action}.
+Inserisci le informazioni relative all’utente della licenza e clicca su `Conferma`{.action}.
 
     ![email](images/Outlook-cps1-02.png){.thumbnail .w-500}
 

@@ -44,7 +44,7 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort.**
+**Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort.**
 
 > [!primary]
 >

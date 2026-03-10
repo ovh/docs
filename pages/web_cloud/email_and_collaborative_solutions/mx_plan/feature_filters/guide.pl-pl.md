@@ -43,7 +43,7 @@ Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 
 ## W praktyce <a name="oldmxplan"></a>
 
-1. W zakładce `E-maile`{.action} w Twojej usłudze MX Plan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
+W zakładce `E-maile`{.action} w Twojej usłudze MX Plan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
 
 ![emails](images/img_3239.png){.thumbnail}
 

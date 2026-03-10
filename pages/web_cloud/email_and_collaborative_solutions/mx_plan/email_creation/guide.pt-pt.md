@@ -43,7 +43,7 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 
 ## Instruções <a name="instructions"></a>
 
-1. **Continuar com base na tecnologia de e-mail utilizada pelo serviço MX Plan**.
+**Continuar com base na tecnologia de e-mail utilizada pelo serviço MX Plan**.
 
 > [!primary]
 >

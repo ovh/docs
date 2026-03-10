@@ -55,7 +55,7 @@ Twoja oferta Private Exchange lub Trusted Exchange generuje więc własne logi. 
 
 Aby uzyskać dostęp do logów w czasie rzeczywistym na ofercie Private lub Trusted Exchange, wykonaj poniższe instrukcje:
 
-1. Obok serii kart kliknij kartę `Więcej`{.action}, a następnie `Logi`{.action}.
+Obok serii kart kliknij kartę `Więcej`{.action}, a następnie `Logi`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 

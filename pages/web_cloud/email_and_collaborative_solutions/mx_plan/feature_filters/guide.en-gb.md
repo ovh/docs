@@ -42,7 +42,7 @@ MX Plan legacy version|MX Plan new version|
 
 ## Instructions <a name="oldmxplan"></a>
 
-1. In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
+In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.png){.thumbnail}
 

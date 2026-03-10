@@ -28,7 +28,7 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 
 ## En pratique
 
-1. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 

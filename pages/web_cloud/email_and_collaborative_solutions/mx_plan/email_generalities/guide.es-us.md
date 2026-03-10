@@ -44,7 +44,7 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Procedimiento <a name="instructions"></a>
 
-1. Acceda a la sección `Web Cloud`{.action}.
+Acceda a la sección `Web Cloud`{.action}.
 
 **Contenido**
 

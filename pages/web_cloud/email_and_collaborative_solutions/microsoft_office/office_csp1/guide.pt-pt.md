@@ -53,7 +53,7 @@ Para ativar a licença encomendada:
 
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Introduza as informações relativas ao utilizador da licença e depois clique em `Validar`{.action}.
+Introduza as informações relativas ao utilizador da licença e depois clique em `Validar`{.action}.
 
     ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 

@@ -38,7 +38,7 @@ Exchange groups enable multiple participants to communicate by sending emails to
 
 ### Creating a new group
 
-1. Click on the `Groups`{.action} tab in the horizontal menu.
+Click on the `Groups`{.action} tab in the horizontal menu.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 

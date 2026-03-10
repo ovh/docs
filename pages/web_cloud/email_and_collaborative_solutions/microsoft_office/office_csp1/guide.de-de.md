@@ -53,7 +53,7 @@ So aktivieren Sie die bestellte Lizenz:
 
     ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
-1. Geben Sie die Lizenz-Daten ein, und klicken Sie auf `Bestätigen`{.action}.
+Geben Sie die Lizenz-Daten ein, und klicken Sie auf `Bestätigen`{.action}.
 
     ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 

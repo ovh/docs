@@ -43,7 +43,7 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 ## Procedura <a name="instructions"></a>
 
-1. **Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
+**Prosegui nella lettura di questa guida in base alla tecnologia utilizzata dal tuo servizio MX Plan**.
 
 > [!primary]
 >
