@@ -98,7 +98,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> Kliknij [ten link](/links/control-panel/web-dns-zone), a następnie w przycisk `Zamów`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Krok 2**
 >>

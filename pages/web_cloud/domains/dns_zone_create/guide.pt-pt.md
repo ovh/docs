@@ -93,7 +93,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Clique [nesta ligação](/links/control-panel/web-dns-zone), depois no botão `Encomendar`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

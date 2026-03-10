@@ -93,7 +93,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> Pulse en [este enlace](/links/control-panel/web-dns-zone), y luego en el botón `Contratar`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

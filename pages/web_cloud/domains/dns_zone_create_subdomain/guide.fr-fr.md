@@ -97,7 +97,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis sur le bouton `Commander`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>

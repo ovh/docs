@@ -93,7 +93,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> Clicca su [questo link](/links/control-panel/web-dns-zone), quindi sul pulsante `Ordina`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

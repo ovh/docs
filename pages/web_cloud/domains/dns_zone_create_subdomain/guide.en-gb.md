@@ -97,7 +97,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> Click on [this link](/links/control-panel/web-dns-zone), then on the `Order`{.action} button.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 2**
 >>

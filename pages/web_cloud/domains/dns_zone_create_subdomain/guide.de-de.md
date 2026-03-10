@@ -97,7 +97,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone), dann auf den Button `Bestellen`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
