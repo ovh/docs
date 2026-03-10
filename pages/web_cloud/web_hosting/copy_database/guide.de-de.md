@@ -19,6 +19,17 @@ Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des
 - Sie verfügen über Datenbanken der Dienste [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
 - Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## In der praktischen Anwendung
 
 Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
@@ -38,28 +49,22 @@ Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedli
 
 #### Start SQL
 
-Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-hosting) und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
 >> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 
 Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start SQL-Datenbanken angezeigt.
@@ -68,7 +73,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start
 
 #### Web Cloud Databases
 
-Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

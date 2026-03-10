@@ -21,8 +21,18 @@ Tutaj znajdziesz wszystkie informacje, które pozwolą Ci:
 ## Wymagania początkowe
 
 - Posiadanie domeny zarejestrowanej w OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 - Posiadanie statusu kontaktu księgowego usług OVHcloud.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 

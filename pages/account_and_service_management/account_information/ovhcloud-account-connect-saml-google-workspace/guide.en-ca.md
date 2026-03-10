@@ -14,7 +14,17 @@ You can use **Single Sign-On** (SSO) to sign in to your OVHcloud account. To ena
 
 - Being an administrator of a Google Workspace service
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Navigation path:** `Identity, Security & Operations`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Instructions
 
@@ -79,13 +89,7 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 ### Registering Google Workspace into the OVHcloud account and configuring the connection
 
-To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](/links/manager).
-
-On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
-
-![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
+To add Google Workspace as a trusted identity provider, you need to provide the identity provider metadata in your OVHcloud Control Panel. [Access the SAML SSO page](/links/control-panel/iam-saml-sso), then click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -137,7 +141,7 @@ You must then assign **roles** to these user groups at OVHcloud. Otherwise, your
 
 ![Configuring user groups](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-To add a group from your [OVHcloud Control Panel](/links/manager), go to the `Identities`{.action} section, then the `User groups`{.action} tab. Then click the `Declare a group`{.action} button and fill in the fields:
+In your OVHcloud Control Panel, go to the `Identities`{.action} section, then the `User groups`{.action} tab. Then click the `Declare a group`{.action} button and fill in the fields:
 
 - **Group name**: Group name within Google Workspace
 - **Role**: Level of rights granted to this group

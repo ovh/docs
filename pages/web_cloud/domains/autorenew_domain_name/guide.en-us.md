@@ -19,8 +19,18 @@ This guide will help you manage your domain names, covering all aspects of their
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [billing contact](/pages/account_and_service_management/account_information/managing_contacts) account for your OVHcloud services
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instructions
 

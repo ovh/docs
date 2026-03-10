@@ -47,7 +47,7 @@ Le réseau vRack est un réseau privé mondial qui relie différents produits OV
 
 L’IPv6 révolutionne la mise en réseau au sein du vRack d’OVHcloud, en offrant une solution aux limites de l’IPv4, ainsi que des fonctionnalités adaptées à l’Internet moderne. Son déploiement est une réponse directe au besoin d'architectures Internet plus étendues, plus sécurisées et plus sophistiquées. Voici les principaux avantages de l’intégration d’IPv6 au vRack :
 
-- **Flexibilité pour les réseaux avancés** : l’IPv6 augmente considérablement l’espace d’adressage, offrant la flexibilité nécessaire pour faire évoluer l’infrastructure, gérer les scénarios de basculement et prendre en charge des solutions plus importantes. Cela permet aux réseaux de se développer et de s’adapter sans les contraintes d’adressage de l’IPv4.
+- **Flexibilité pour les réseaux avancés** : l’IPv6 augmente considérablement l’espace d’adressage, offrant la flexibilité nécessaire pour faire évoluer l’infrastructure, gérer les scénarios de basculement et prendre en charge des solutions plus importantes. Cela permet aux réseaux de se développer et de s’adapter sans les contraintes d'adressage de l’IPv4.
 
 - **Routage hiérarchique et segmentation** : IPv6 permet un routage hiérarchique efficace et une segmentation de l’infrastructure logique. Cela améliore la gestion et la sécurité du réseau, idéal pour la revente de machines virtuelles avec des sous-réseaux dédiés ou encore la segmentation de l'infrastructure réseau.
 
@@ -64,13 +64,13 @@ En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuv
 > [!warning]
 > Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](/links/bare-metal/eco-about).
 >
-> Merci de visiter notre [comparatif des serveurs Eco](/links/bare-metal/eco-compare) pour obtenir plus d'informations.
+> Consultez notre [comparatif des serveurs Eco](/links/bare-metal/eco-compare) pour obtenir plus d'informations.
 
 ## En pratique
 
 ### Obtention d’un nouveau bloc Additional IPv6
 
-Lors de la demande d'un nouveau bloc Additional IPv6, il est important de noter que l'allocation de celui-ci est régionale. Cela signifie que le bloc IPv6 que vous recevez sera lié à une région spécifique, définissant où le trafic public entre dans votre réseau vRack (à savoir, l'emplacement de la passerelle).
+Lors de la demande d'un nouveau bloc Additional IPv6, l'allocation est régionale. Cela signifie que le bloc IPv6 que vous recevez sera lié à une région spécifique, définissant où le trafic public entre dans votre réseau vRack (à savoir, l'emplacement de la passerelle).
 
 /// details | Demander un nouveau bloc Additional IPv6
 
@@ -157,7 +157,7 @@ Comme dans l'exemple ci-dessous :
 
 Maintenant, nous voyons notre bloc configuré avec un vRack. L’étape suivante consiste à configurer le ou les hôtes virtuels.
 
-### Configuration IP Statique
+### Configuration IP statique
 
 Une fois que le bloc Additional IPv6 /56 est attribué à un réseau vRack, le premier sous-réseau /64 est bridgé avec lui. Cela signifie que vous pouvez facilement utiliser de telles IP sur vos hôtes.
 
@@ -358,7 +358,7 @@ Le trafic revenant d'une telle VM doit utiliser la route par défaut via la prem
 
 Pour la définition de sous-réseau routé, toute taille de préfixe peut être utilisée entre /57 et /64.
 
-La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple: `2001:41d0:abcd:ef00::1`. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
+La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple : `2001:41d0:abcd:ef00::1`. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
 
 #### Définir un sous-réseau routé
 
@@ -377,7 +377,7 @@ Veuillez noter qu'un sous-réseau donné ne peut pas chevaucher un autre sous-r�
 
 ![continue](images/800.png){.thumbnail}
 
-Le sous-réseau routé `2001:41d0:abcd::ef10::/60` est accessible via le saut suivant `2001:41d0:abcd::ef00::2`.
+Le sous-réseau routé `2001:41d0:abcd:ef10::/60` est accessible via le saut suivant `2001:41d0:abcd:ef00::2`.
 
 ![continue](images/801.png){.thumbnail}
 
@@ -406,7 +406,7 @@ Nous avons ici défini le sous-réseau routé `2001:41d0:abcd:ef10::/60`, qui se
 
 Lorsque vous hébergez des VMs, nous vous recommandons fortement l'utilisation d'une configuration statique sur votre hôte.
 
-Configurez une adresse IPv6, démarrez l'interface, puis (facultatif) ajoutez la route par défaut sur l'interface vRack:
+Configurez une adresse IPv6, démarrez l'interface, puis (facultatif) ajoutez la route par défaut sur l'interface vRack :
 
 ```bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
@@ -453,7 +453,7 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 
 /// details | Configuration d'un sous-réseau routé dans une VM
 
-Encore une fois, veuillez noter que le lien utilisé entre l'hôte et les VMs est spécifique à l'hyperviseur installé (il peut s'agir de vSwitch ou d'interfaces vEth). Merci de vous référer aux guides de configuration réseau de votre hyperviseur pour cette configuraton.
+Encore une fois, veuillez noter que le lien utilisé entre l'hôte et les VMs est spécifique à l'hyperviseur installé (il peut s'agir de vSwitch ou d'interfaces vEth). Merci de vous référer aux guides de configuration réseau de votre hyperviseur pour cette configuration.
 
 Ajouter le bloc d'IP routées à l'intérieur d'une VM, pour s'assurer qu'elle peut accepter des paquets :
 

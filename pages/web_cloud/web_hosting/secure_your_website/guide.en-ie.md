@@ -24,7 +24,6 @@ However, if you experience any difficulties carrying out some of them, please do
 
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/)
 
 ## Instructions

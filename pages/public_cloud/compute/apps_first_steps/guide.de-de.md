@@ -4,6 +4,50 @@ excerpt: Erfahren Sie hier, wie Sie vorinstallierte Anwendungen auf Instanzen ei
 updated: 2021-09-07
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
@@ -18,6 +62,17 @@ OVHcloud bietet Nutzern der Public Cloud vorinstallierte Images verschiedener An
 
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Kunden-Account.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## In der praktischen Anwendung
 
 ### Für alle Anwendungen gemeinsame Schritte
@@ -25,6 +80,7 @@ OVHcloud bietet Nutzern der Public Cloud vorinstallierte Images verschiedener An
 #### Installieren Sie die vorinstallierte Anwendung Ihrer Wahl
 
 Installieren Sie über das [OVHcloud Kundencenter](/links/manager), die OVHcloud API oder OpenStack Horizon API die Anwendung Ihrer Wahl auf Ihrer Public Cloud Instanz.
+
 
 #### Verbindungsdetails zur Anwendung <a name="connection"></a>
 
@@ -131,14 +187,23 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
-> [!faq]
->
-> Kann ich meine eigenen DNS Server verwenden?
->> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain “GLUE” Einträge erstellen. Wenn Sie zum Beispiel “ns1.mydomain.com” und “ns2.mydomain.com” wünschen, müssen Sie “GLUE” Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Bitte beachten Sie, dass die Erstellung 24 Stunden dauern kann.
-> Warum sollte ich das Root-Passwort festlegen?
->> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
-> Wo ist meine Lizenz für cPanel?
->> OVHcloud bietet derzeit keine Lizenzen für Public Cloud Server außer Windows Lizenzen an. Sie müssen eine Lizenz von einem Drittanbieter für cPanel erwerben. Wenden Sie sich dazu an den cPanel Anbieter.
+/// details | Kann ich meine eigenen DNS Server verwenden?
+
+Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain “GLUE” Einträge erstellen. Wenn Sie zum Beispiel “ns1.mydomain.com” und “ns2.mydomain.com” wünschen, müssen Sie “GLUE” Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Bitte beachten Sie, dass die Erstellung 24 Stunden dauern kann.
+
+///
+
+/// details | Warum sollte ich das Root-Passwort festlegen?
+
+WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
+
+///
+
+/// details | Wo ist meine Lizenz für cPanel?
+
+OVHcloud bietet derzeit keine Lizenzen für Public Cloud Server außer Windows Lizenzen an. Sie müssen eine Lizenz von einem Drittanbieter für cPanel erwerben. Wenden Sie sich dazu an den cPanel Anbieter.
+
+///
 
 ### Plesk
 
@@ -155,10 +220,11 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
-> [!faq]
->
-> Wo ist meine Plesk-Lizenz?
->> OVHcloud bietet derzeit keine Lizenzen für Public Cloud Instanzen außer für Windows. Plesk-Lizenzen müssen von einem Drittanbieter bezogen werden. Wenden Sie sich hierzu direkt an einen Anbieter.
+/// details | Wo ist meine Plesk-Lizenz?
+
+OVHcloud bietet derzeit keine Lizenzen für Public Cloud Instanzen außer für Windows. Plesk-Lizenzen müssen von einem Drittanbieter bezogen werden. Wenden Sie sich hierzu direkt an einen Anbieter.
+
+///
 
 ### Virtualmin
 

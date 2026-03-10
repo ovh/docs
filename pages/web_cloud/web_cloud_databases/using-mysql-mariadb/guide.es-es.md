@@ -52,7 +52,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 - Disponer de la contraseña asociada al usuario.
 - el nombre de la base de datos;
 
-Puede encontrar todos estos datos en el [área de cliente OVHcloud](/links/manager).
+Puede encontrar todos estos datos en el [área de cliente de OVHcloud](/links/control-panel/web-cloud-databases).
 
 Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

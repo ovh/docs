@@ -20,6 +20,17 @@ GPU instances are technically similar to the instances from the older range, but
 - A Public Cloud project with access to the regions where most GPUs are available (GRA7, GRA9, GRA11 and BHS5)
 - [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci) created to deploy a linux GPU instance.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 You will find the information needed to deploy a GPU instance on Linux or Windows below.
@@ -33,7 +44,7 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you have logged in to [your OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click on `Create an instance`{.action} and choose a compatible GPU instance:
+Click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click on `Create an instance`{.action} and choose a compatible GPU instance:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -105,7 +116,7 @@ We offer special images, based on a virtual UEFI BIOS, which allow the driver to
 > We only offer the possiblity to install the special images on a few selected models (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Additionally, depending on the region selected, these special images may not be available.
 >
 
-Once you have logged in to [your OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click on `Create an instance`{.action} and choose a compatible GPU instance:
+Click on `Instances`{.action} in the left-hand menu under the **Compute** tab. Next, click on `Create an instance`{.action} and choose a compatible GPU instance:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

@@ -16,7 +16,17 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 
 - Disponer de una cuenta de SMS en OVHcloud.
 - Conectarse a la [API de OVHcloud](/links/api) (solo para las transferencias de crédito).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 

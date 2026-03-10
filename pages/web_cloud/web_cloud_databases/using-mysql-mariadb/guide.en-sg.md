@@ -50,7 +50,7 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [OVHcloud Control Panel](/links/manager).
+All this information is available in the [OVHcloud Control Panel](/links/control-panel/web-cloud-databases).
 
 Please also read our guide on [getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

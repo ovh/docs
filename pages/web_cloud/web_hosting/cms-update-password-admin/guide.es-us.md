@@ -14,7 +14,17 @@ updated: 2024-10-15
 
 - Tener un [plan de hosting](/links/web/hosting) que permita instalar un módulo en un clic.
 - Haber creado un módulo en un clic en su alojamiento web (si todavía no ha realizado esta instalación, siga las instrucciones de esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager) (solo para la parte asociada a phpMyAdmin).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

@@ -1,12 +1,12 @@
 ---
-title: Object Storage - Object Storage mit WinSCP nutzen (EN)
-excerpt: Learn how to configure WinSCP to manage your buckets and objects
+title: Object Storage - Use Object Storage with WinSCP
+excerpt: Learn how to configure WinSCP to manage your buckets and objects.
 updated: 2025-08-25
 ---
 
 ## Objective
 
-[WinSCP](https://winscp.net/) is an open source free SFTP client, FTP client, WebDAV client, S3 client, SCP client and file manager for Windows.
+[WinSCP](https://winscp.net/) is a free, open-source SFTP, FTP, WebDAV, S3<sup>1</sup>, and SCP client and file manager for Windows.
 
 **This guide explains how to configure WinSCP to manage your buckets and objects.**
 
@@ -24,38 +24,38 @@ Start WinSCP. The login dialog will appear. Fill in the fields as follows:
 
 1\. Make sure the `New Site` node is selected.
 
-![Login dialog](images/login_dialog.png)
+![Login dialog](images/login_dialog.png){.thumbnail}
 
 2\. On the `New Site` node, select `Amazon S3`{.action} protocol.
 
-![Amazon S3 file protocol](images/S3_file_protocol.png)
+![Amazon S3 file protocol](images/S3_file_protocol.png){.thumbnail}
 
-3\. Enter your endpoint (without `https://`) corresponding to your storage class and set the `Port number` field to `443`.
+3\. Enter your endpoint (without `https://`) corresponding to your storage class, and set the `Port number` field to `443`.
 
 > [!primary]
 >
-> In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
+> To identify the endpoint corresponding to your storage class, see: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
 >
 
-![Host name](images/hostname.png)
+![Host name](images/hostname.png){.thumbnail}
 
 4\. Enter your user's `access_key`.
 
 In order to respect best practices, please fill in only the `Access key ID` field at this stage.
 
-![Access key](images/access_key.png)
+![Access key](images/access_key.png){.thumbnail}
 
 5\. Save your site settings using the `Save`{.action} button.
 
-![Save config](images/save_config.png)
+![Save config](images/save_config.png){.thumbnail}
 
 6\. Log in using the `Login`{.action} button.
 
-![Login](images/login.png)
+![Login](images/login.png){.thumbnail}
 
 Then enter your `secret_access_key`.
 
-![Secret key](images/secret_key.png)
+![Secret key](images/secret_key.png){.thumbnail}
 
 7\. Once you are connected, you will see a list of your S3 buckets as *folders* in the root folder.
 
@@ -64,10 +64,11 @@ Then enter your `secret_access_key`.
 > The `Create directory` command in the root folder creates a new bucket.
 >
 
-![Connected](images/connected.png)
+![Connected](images/connected.png){.thumbnail}
 
 ## Go further
 
-Join our community of Discord users: <https://discord.gg/ovhcloud>
-
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+

@@ -14,11 +14,21 @@ Questo significa che il credito Cloud viene addebitato per primo e che il debito
 ## Prerequisiti
 
 - Un progetto [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
+Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 > [!warning]
 >

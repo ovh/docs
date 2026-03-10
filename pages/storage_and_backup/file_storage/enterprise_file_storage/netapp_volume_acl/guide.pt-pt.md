@@ -43,26 +43,15 @@ Todas as rotas API utilizadas para este guia estão disponíveis na secção */a
 
 Todas as ACL existentes de um volume podem ser recuperadas através da seguinte rota API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** *
->>
->> >> ID do serviço
->>
->> > **shareId** *
->>
->> >> ID do volume
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID do serviço |
+| `shareId` | Yes | ID do volume |
 
 Substitua o `serviçoName` pelo ID do seu serviço e `shareId` pelo ID do volume.
 
@@ -72,36 +61,17 @@ Quando utilizar esta chamada API para um novo volume, nenhuma ACL deve ser devol
 
 Para criar uma nova ACL, utilize a seguinte rota API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** *
->>
->> >> ID do serviço
->>
->> > **shareId** *
->>
->> >> ID do volume
->>
->> > **NetAppShareACLRule** *
->>
->> >> **accessLevel** *
->> >>
->> >> > Nível de acesso ACL. Pode ser **rw** (leitura e escrita) ou **ro** (leitura apenas).
->> >>
->> >> **accessTo** *
->> >>
->> >> > Endereço IP ou intervalo de endereços IP em notação CIDR.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID do serviço |
+| `shareId` | Yes | ID do volume |
+| `NetAppShareACLRule.accessLevel` | Yes | Nível de acesso ACL. Pode ser **rw** (leitura e escrita) ou **ro** (leitura apenas). |
+| `NetAppShareACLRule.accessTo` | Yes | Endereço IP ou intervalo de endereços IP em notação CIDR. |
 
 Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume.
 
@@ -115,30 +85,16 @@ A eliminação de um ACL impede qualquer acesso posterior a partir dos endereço
 
 Para eliminar um ACL, utilize a seguinte rota API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Parâmetros:
->
->> > **serviceName** *
->>
->> >> ID do serviço
->>
->> > **shareId** *
->>
->> >> ID do volume
->>
->> > **aclRuleId** *
->>
->> >> ID do ACL
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | ID do serviço |
+| `shareId` | Yes | ID do volume |
+| `aclRuleId` | Yes | ID do ACL |
 
 Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume.
 

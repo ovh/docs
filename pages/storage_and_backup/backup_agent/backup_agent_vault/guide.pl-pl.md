@@ -12,6 +12,17 @@ Przewodnik ten wyjaśnia, jak działa system Vault w produkcie Backup Agent i ja
 
 - Usługa Backup Agent zamówiona w momencie zakupu serwera Bare Metal lub później za pomocą menu `Backup Agent`{.action} w Panelu klienta OVHcloud.
 
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
+
 ## W praktyce
 
 ### Omówienie Vault
@@ -20,7 +31,7 @@ Vault to Twoje miejsce przechowywania, do którego dane kopii zapasowej są wysy
 
 Jest to oparte na naszych obiektach magazynu, które możesz znaleźć [tutaj](/links/public-cloud/object-storage).
 
-Aby znaleźć swoje Vault, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do `Bare Metal Cloud`{.action}, a następnie do `Backup Agent`{.action}. Kliknij kartę `Vaults`{.action}.
+Aby znaleźć swoje Vault, kliknij [ten link](/links/control-panel/baremetal-backup-agent), aby uzyskać dostęp do sekcji `Backup Agent`{.action}, a następnie kliknij kartę `Vaults`{.action}.
 
 ![Lista Vault Backup Agent](images/01-backup-agent-vault-list.png){.thumbnail}
 

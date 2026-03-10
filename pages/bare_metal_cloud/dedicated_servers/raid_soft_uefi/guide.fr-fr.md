@@ -49,15 +49,15 @@ Au cours de ce guide, nous utilisons les termes **disque principal** et **disque
 
 ## En pratique
 
-Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effectuer une série de tests et d'actions. Un tel test pourrait être de simuler une panne de disque afin de comprendre le processus de reconstruction du RAID.
+Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effectuer une série de tests et d'actions. Un tel test pourrait être de simuler une panne de disque pour comprendre le processus de reconstruction du RAID.
 
 ### Aperçu du contenu
 
 - [Informations de base](#basicinformation)
-- [Compréhension de la partition système EFI (ESP)](#efisystemparition)
+- [Compréhension de la partition système EFI (ESP)](#efisystempartition)
 - [Simulation d'une panne de disque](#diskfailure)
-    - [Retirer le disque défectueux](#diskremove)
-- [Reconstruction du RAID (avec des ESP non-mirrorrées)](#raidrebuildnonmirrored)
+    - [Retirer le disque défectueux](#removedisk)
+- [Reconstruction du RAID (avec des ESP non mises en miroir)](#raidrebuildnonmirrored)
     - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](#nonmirroredrescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
     - [Reconstruction du RAID avec des ESP non synchronisés après des mises à jour majeures du système (GRUB)](#efiraidgrub)
@@ -105,7 +105,7 @@ md2 : active raid1 nvme1n1p2[0] nvme0n1p2[1]
 unused devices: <none>
 ```
 
-D'après les résultats, nous avons actuellement trois périphériques RAID logiciels configurés, **md1**, **md2** et **md3**, avec **md3** étant le plus grand des deux. **md3** est composé de deux partitions, appelées **nvme0n1p3** et **nvme1n1p3**.
+D'après les résultats, nous avons actuellement trois périphériques RAID logiciels configurés, **md1**, **md2** et **md3**, avec **md3** étant le plus grand des trois. **md3** est composé de deux partitions, appelées **nvme0n1p3** et **nvme1n1p3**.
 
 Si vous avez un serveur avec des disques SATA, vous obtiendrez les résultats suivants :
 
@@ -227,20 +227,21 @@ nvme0n1
 
 Notez les périphériques, les partitions et les points de montage, car cela est important, en particulier après le remplacement d'un disque. Cela vous permettra de vérifier que les partitions sont correctement montées sur leurs points de montage respectifs sur le nouveau disque.
 
-Dans note exemple, nous avons :
+Dans notre exemple, nous avons :
 
-- Deux matrices RAID : `/dev/md2` et `/dev/md3`.
-- Partitions faisant partie du RAID : **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** et **nvme0n1p3** avec les points de montage `/boot` et `/`.
-- Partitions ne faisant pas partie du RAID : **nvem0n1p1**, **nvme0n1p4** et **nvme1n1p4** avec les points de montage `/boot/efi` et [SWAP].
-- Une partition n'a pas de point de montage : **nvme1n1p1**.
+- Partitions faisant partie de md2 (`/boot`) : **nvme0n1p2** et **nvme1n1p2**.
+- Partitions faisant partie de md3 (`/`) : **nvme0n1p3** et **nvme1n1p3**.
+- Partitions swap : **nvme0n1p4** et **nvme1n1p4**.
+- ESP montée (`/boot/efi`) : **nvme0n1p1**.
+- ESP non montée : **nvme1n1p1**.
 
-La partition `nvme0n1p5` est une partition de configuration, c'est-à-dire un volume en lecture seule connecté au serveur qui lui fournit les données de configuration initiale.
+La partition `nvme0n1p5` est un [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), c'est-à-dire un volume en lecture seule qui fournit au serveur ses données de configuration initiale. Elle n'est lue qu'une seule fois lors du premier démarrage et peut être supprimée ensuite.
 
 <a name="efisystempartition"></a>
 
 ### Comprendre la partition système EFI (ESP)
 
-/// details | **Déplier cette section**
+/// details | **Dépliez cette section**
 
 ***Qu'est-ce qu'une partition système EFI ?***
 
@@ -253,10 +254,10 @@ Une partition système EFI est une partition qui peut contenir les chargeurs de 
 * Debian 13
 * Proxmox 9
 * Ubuntu 25.10
-* AlmaLinux and Rocky Linux 10
+* AlmaLinux et Rocky Linux 10
 * Fedora 43
 
-Pour les versions antérieures de ces systèmes d'exploitation, la partition EFI n'est pas mise en miroir dans RAID ; plusieurs ESP sont créés, un par disque. Cependant, une seule ESP est montée à la fois, et toutes les ESP contiennent les mêmes fichiers. La partition système EFI est montée dans `/boot/efi`, et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
+Pour les versions antérieures de ces systèmes d'exploitation, la partition EFI n'est pas mise en miroir dans RAID ; plusieurs ESP sont créés, un par disque. Cependant, une seule ESP est montée à la fois. La partition système EFI est montée dans `/boot/efi`, et le disque sur lequel elle est montée est sélectionné par Linux au démarrage.
 
 Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait partie d'une configuration RAID.
 
@@ -313,7 +314,7 @@ Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait 
 
 ***Le contenu de la partition système EFI change-t-il régulièrement ?***
 
-En général, le contenu de cette partition ne change pas beaucoup, son contenu ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*) (par exemple GRUB).
+En général, le contenu de cette partition ne change pas beaucoup et ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*) (par exemple GRUB).
 
 Cependant, si votre partition EFI n'est pas en miroir, nous vous recommandons d'exécuter un script automatique ou manuel pour synchroniser toutes les ESP, afin qu'elles contiennent toutes les mêmes fichiers à jour. Ainsi, si le disque sur lequel cette partition est montée tombe en panne, le serveur pourra redémarrer sur l'ESP de l'un des autres disques.
 
@@ -337,7 +338,7 @@ Si votre ESP n'est pas en miroir, vous pouvez rencontrer les difficultés suivan
 
 **Étude de cas 3** - Des mises à jour majeures du système (par exemple, GRUB) ont été effectuées sur le système d'exploitation et les partitions ESP n'ont pas été synchronisées.
 
-- Le serveur ne parvient pas à démarrer en mode normal, Utilisez l'environnement du mode rescue pour reconstruire le RAID, recréer la partition système EFI sur le nouveau disque et réinstaller le bootloader (par exemple, GRUB).
+- Le serveur ne parvient pas à démarrer en mode normal. Utilisez l'environnement du mode rescue pour reconstruire le RAID, recréer la partition système EFI sur le nouveau disque et réinstaller le chargeur de démarrage (*bootloader*) (par exemple, GRUB).
 - Le serveur est capable de démarrer en mode normal (cela pourrait arriver dans le cas où un système d'exploitation est mis à niveau mais que la version de GRUB reste inchangée), ce qui permet de procéder à la reconstruction du RAID.
 
 Dans certains cas, le démarrage à partir d'une ESP obsolète peut échouer ; par exemple, une mise à jour majeure de GRUB peut rendre le binaire GRUB dans l'ESP incompatible avec les nouveaux modules GRUB dans la partition `/boot`.
@@ -353,7 +354,7 @@ Si votre partition système EFI n'est pas mise en miroir, tenez compte des élé
 
 Nous vous recommandons de synchroniser vos ESP régulièrement ou après chaque mise à jour majeure du système. Par défaut, toutes les partitions système EFI contiennent les mêmes fichiers après l'installation. Cependant, si une mise à jour majeure du système est impliquée, la synchronisation des ESP est essentielle pour garder le contenu à jour.
 
-L'exécution d'un script est un moyen efficace de synchroniser régulièrement vos partitions. Vous trouverez ci-dessous un script que vous pouvez utiliser pour synchroniser manuellement vos ESP. Vous pouvez également configurer un script automatisé pour les synchroniser quotidiennement ou à chaque démarrage du système.
+L'exécution d'un script est un moyen efficace de synchroniser régulièrement vos partitions. Voici un script pour synchroniser manuellement vos ESP. Vous pouvez également configurer un script automatisé pour les synchroniser quotidiennement ou à chaque démarrage du système.
 
 Avant d'exécuter le script, assurez-vous que `rsync` est installé sur votre système :
 
@@ -605,12 +606,12 @@ Nous pouvons maintenant procéder au remplacement du disque et à la reconstruct
 
 <a name="raidrebuildnonmirrored"></a>
 
-### Reconstruction du RAID (avec des ESP non-mirrorrées)
+### Reconstruction du RAID (avec des ESP non mises en miroir)
 
 > [!primary]
 > Ce processus peut varier selon le système d'exploitation installé sur votre serveur. Nous vous recommandons de consulter la documentation officielle de votre système d'exploitation pour obtenir les commandes appropriées.
 >
-> Si votre serveur peut démarrer en mode normal après le remplacement du disque, procédez simplement en suivant les étapes décrites dans [cette section](#nonmirrorednormalmode) si votre partition EFI n'est pas en miroir ou [cette section](#mirrored-esp-normal) si votre partition EFI est en miroir.
+> Si votre serveur peut démarrer en mode normal après le remplacement du disque, procédez simplement en suivant les étapes décrites dans [cette section](#nonmirrorednormalmode) si votre partition EFI n'est pas en miroir ou [cette section](#raidrebuildmirrored) si votre partition EFI est en miroir.
 >
 
 #### Reconstruction du RAID après le remplacement du disque principal (mode rescue) <a name="nonmirroredrescuemode"></a>
@@ -825,7 +826,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 #### Reconstruction du RAID avec des ESP non synchronisés après des mises à jour majeures du système (GRUB) <a name="efiraidgrub"></a>
 
-/// details | **Développez cette section**
+/// details | **Dépliez cette section**
 
 > [!warning]
 > Veuillez suivre les étapes de cette section uniquement si cela s'applique à votre cas.
@@ -835,7 +836,7 @@ Si le disque principal est remplacé alors qu'il contient des partitions systèm
 
 Dans ce cas, en plus de reconstruire le RAID et de recréer la partition système EFI en mode rescue, vous devez également réinstaller le GRUB sur celle-ci.
 
-Une fois l'ESP créé (comme expliqué ci-dessus) et reconnu par le système, toujours dans l'environnement `choot`, créez le dossier /boot/efi pour monter la nouvelle partition système EFI **nvme0n1p1**.
+Une fois l'ESP créé (comme expliqué ci-dessus) et reconnu par le système, toujours dans l'environnement `chroot`, créez le dossier /boot/efi pour monter la nouvelle partition système EFI **nvme0n1p1**.
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -868,7 +869,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 #### Reconstruction du RAID après le remplacement du disque principal (mode normal)
 
-/// details | **Développez cette section**
+/// details | **Dépliez cette section**
 
 Si votre serveur est capable de démarrer en mode normal après un remplacement de disque, vous pouvez suivre les étapes ci-dessous pour reconstruire le RAID.
 
@@ -897,7 +898,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Exécutez simplement la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (avec la commande `lsblk`), vous devez redémarrer le serveur avant de continuer.
+Exécutez la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (avec la commande `lsblk`), vous devez redémarrer le serveur avant de continuer.
 
 Ensuite, ajoutez les partitions au RAID :
 
@@ -1016,7 +1017,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> └─nvme0n1p4 259:13   0   512M  0 part
 >> ```
 >>
->> l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
+>> L'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
@@ -1032,7 +1033,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >>
 >> Exécutez la commande `partprobe`.
 >>
->> Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter à nouveau les nouvelles partitions (nvme0n1p2 et nvme0n1p3) à la matrice RAID.
+>> Nous pouvons maintenant reconstruire la matrice RAID. L'extrait de code suivant montre comment ajouter à nouveau les nouvelles partitions (nvme0n1p1, nvme0n1p2 et nvme0n1p3) à la matrice RAID.
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mdadm --add /dev/md1 /dev/nvme0n1p1
@@ -1131,7 +1132,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> The operation has completed successfully.
 >> ```
 >>
->> Exécutez simplement la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (ex. avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
+>> Exécutez la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (ex. avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
 >>
 >> Ensuite, ajoutez les partitions au RAID :
 >>
@@ -1157,7 +1158,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 ///
 
-#### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
+### Ajout de l'étiquette à la partition SWAP (si applicable) <a name="swap-partition"></a>
 
 /// details | **Dépliez cette section**
 
@@ -1209,7 +1210,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> Ensuite, remplaçez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
+>> Ensuite, remplacez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
 >>
 >> ```sh
 >> root@rescue12-customer-eu:/# nano /etc/fstab
@@ -1284,7 +1285,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> - Remplaçez l'ancien UUID de la partition SWAP (**nvme0n1p4)** par le nouveau dans `/etc/fstab` :
+>> - Remplacez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans `/etc/fstab` :
 >>
 >> ```sh
 >> [user@server_ip ~]# sudo nano /etc/fstab
@@ -1326,6 +1327,8 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 ///
 
+<a name="go-further"></a>
+
 ## Aller plus loin
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
@@ -1342,4 +1345,4 @@ Si vous avez besoin d'une assistance pour utiliser et configurer vos solutions O
 
 Si vous avez besoin de formation ou d'une assistance technique pour mettre en place nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services d'intervenir sur votre cas d'utilisation spécifique.
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

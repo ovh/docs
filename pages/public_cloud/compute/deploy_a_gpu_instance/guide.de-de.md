@@ -24,6 +24,17 @@ Die GPU Instanzen sind den Instanzen aus der Produktreihe 2017 technisch ähnlic
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA7, GRA9, GRA11 und BHS5) in Ihrem Kunden-Account.
 - Sie haben einen [SSH-Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci) für die Bereitstellung einer Linux GPU Instanz erstellt.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## In der praktischen Anwendung
 
 Nachfolgend finden Sie die Informationen, die zum Bereitstellen einer GPU Instanz unter Linux oder Windows erforderlich sind. Beachten Sie, dass Sie das Instanz-Betriebssystem nicht ändern können, um von Linux auf Windows zu wechseln oder umgekehrt. Stellen Sie daher sicher, dass die Instanz in der Ausgangskonfiguration mit dem richtigen Betriebssystem erstellt wird.
@@ -37,7 +48,7 @@ Alle von uns angebotenen Images können auf einer GPU Instanz verwendet werden.
 > Wenn Sie mit dem manuellen Kompilieren eines Kernelmoduls nicht vertraut sind, empfehlen wir die Verwendung einer Distribution, die offiziell von NVIDIA unterstützt wird und für die _turnkey_ Treiber angeboten werden: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Wenn Sie sich im [OVHcloud Kundencenter](/links/manager) eingeloggt haben, klicken Sie auf `Public Cloud`{.action}. Wählen Sie Ihr Public Cloud Projekt aus und klicken Sie im linken Menü auf `Instanzen`{.action} im Bereich **Compute**. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
+Klicken Sie im linken Menü auf `Instanzen`{.action} im Bereich **Compute**. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -108,7 +119,7 @@ Wir stellen spezielle Images auf Basis eines virtuellen UEFI-BIOS zur Verfügung
 > Sie haben die Möglichkeit, diese Images auf einigen ausgewählten Modellen (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180) zu installieren. Je nach ausgewählter Region sind diese speziellen Images möglicherweise nicht verfügbar.
 >
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt sind, gehen Sie in Ihr Public Cloud Projekt und klicken Sie im linken Menü im Tab **Compute** auf `Instanzen`{.action}. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
+Klicken Sie im linken Menü im Tab **Compute** auf `Instanzen`{.action}. Klicken Sie anschließend auf `Instanz erstellen`{.action} und wählen Sie eine GPU-kompatible Instanz aus:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

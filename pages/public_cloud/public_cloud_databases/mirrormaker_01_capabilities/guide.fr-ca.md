@@ -1,7 +1,7 @@
 ---
-title: Kafka MirrorMaker - Capacités et limitations (EN)
-excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka MirrorMaker
-updated: 2025-08-04
+title: Capacités et limitations pour Analytics avec Kafka MirrorMaker (EN)
+excerpt: Discover the capabilities and limitations of Analytics for Kafka MirrorMaker
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ The Public Cloud Analytics offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 Kafka MirrorMaker nodes have to be in the same region.
 

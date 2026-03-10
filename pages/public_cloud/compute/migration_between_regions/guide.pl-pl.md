@@ -11,7 +11,17 @@ Ten przewodnik wyjaśnia, jak migrować instancję Public Cloud z jednego region
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instrukcje
 

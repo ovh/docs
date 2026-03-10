@@ -14,7 +14,19 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 > [!primary]
 >
@@ -22,12 +34,6 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 >
 
 ## En pratique
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ### Étape 1 : Appliquer la configuration « Serveur Vocal Interactif »
 

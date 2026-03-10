@@ -1,86 +1,88 @@
 ---
-title: Skaluj instancję w Panelu klienta OVHcloud
-excerpt: 'Dowiedz się, jak zmienić rozmiar instancji w Panelu klienta OVHcloud'
-updated: 2025-04-28
+title: Zmiana rozmiaru instancji w Panelu klienta OVHcloud
+excerpt: "Dowiedz się, jak zmienić rozmiar instancji Public Cloud z poziomu Panelu klienta OVHcloud"
+updated: 2026-03-04
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, możesz za pomocą kilku kliknięć zwiększyć zasoby, którymi dysponuje Twoja instancja. 
+Jeśli Twoja instancja nie dysponuje wystarczającymi zasobami z powodu zwiększonej aktywności lub nowych potrzeb, możesz zwiększyć jej zasoby za pomocą kilku kliknięć dzięki Public Cloud.
 
-**Z tego przewodnika dowiesz się, jak zmienić rozmiar instancji w interfejsie OpenStack Horizon.**
+**Z tego przewodnika dowiesz się, jak zmienić rozmiar instancji w Panelu klienta OVHcloud.**
 
 > [!warning]
 >
-> W przypadku modeli klasycznych możliwe jest tylko zmiana rozmiaru na wyższy.
-> Operacja ta spowoduje również wycięcie instancji w czasie jej wykonywania.
-> 
+> W przypadku modeli klasycznych możliwe jest tylko skalowanie w górę.
+> Ponadto operacja ta powoduje wyłączenie instancji na czas jej trwania.
+>
 
 > [!success]
 >
-> Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki unikalnemu rozmiarowi dysku.
-> 
+> Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki stałemu rozmiarowi dysku.
+>
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Posiadanie [instancji Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Instancje`{.action} w menu po lewej stronie. 
+Kliknij `Instancje`{.action} w menu po lewej stronie.
 
-Następnie kliknij `...`{.action} po prawej stronie instancji i wybierz `Edytuj`{.action}.
+Kliknij `...`{.action} po prawej stronie instancji i wybierz `Edytuj`{.action}. Możesz również uzyskać dostęp do tej akcji z poziomu szczegółów instancji, klikając jej nazwę, a następnie `Zmień szablon`{.action}.
 
-![public-cloud](images/editinstance.png){.thumbnail}
-
-W nowej zakładce przewiń stronę do sekcji **Model**, aby wybrać wybrany model.
-
-![public-cloud](images/template.png){.thumbnail}
+W nowej zakładce przewiń stronę do sekcji **Model**, aby wybrać odpowiedni model.
 
 > [!primary]
 >
-> W przypadku modeli klasycznych możesz przełączyć na dowolny model o podobnym lub większym dysku. Nie możesz przejść do modelu z mniejszym dyskiem.<br/>
+> W przypadku modeli klasycznych możesz przełączyć na dowolny model o podobnym lub większym dysku. Nie możesz przejść na model z mniejszym dyskiem.<br/>
 >
-> Tylko **elastyczne instancje** mogą być aktualizowane i podświetlane, zachowując stały rozmiar dysku 50 GB.
+> Tylko **elastyczne instancje** mogą być skalowane w górę lub w dół, zachowując stały rozmiar dysku 50 GB.
 >
 
-Jeśli twój dysk ma 50 GB lub mniej, możesz przełączyć się na `Elastyczna instancja`{.action}, jeśli chcesz.
+Jeśli Twój dysk ma 50 GB lub mniej, możesz przełączyć się na `Elastyczna instancja`{.action}, jeśli chcesz.
 
 > [!warning]
-> Uwaga: w przypadku edycji instancji typu *flex* nie można przejść na instancję klasyczną w Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [Zmiana instancji flex na instancję klasyczną](/pages/public_cloud/compute/revert_a_flex_instance).
+> Jeśli edytujesz instancję typu *flex*, nie jest możliwe przejście na instancję klasyczną za pośrednictwem Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem [Zmiana instancji flex na instancję klasyczną](/pages/public_cloud/compute/revert_a_flex_instance).
 >
 
-Po dokonaniu wyboru kliknij `Zmień model`{.action}, aby potwierdzić wybór.
+Po dokonaniu wyboru kliknij `Zmień szablon`{.action}, aby potwierdzić wybór.
 
 ### Zmiana rozmiaru dysku w systemie Windows
 
-Uwaga: podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy więc rozszerzyć ją, używając **disk manager**:
+Podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy go rozszerzyć, korzystając z **menedżera dysków**:
 
-- Kliknij prawym przyciskiem myszy w menu `Start`{.action} i uruchom menedżer dysku klikając `Disk Management`{.action}:
+- Kliknij prawym przyciskiem myszy menu `Start`{.action} i uruchom menedżer dysków, klikając `Disk Management`{.action}:
 
-![public-cloud](images/2980.png){.thumbnail}
+![Menu kontekstowe menu Start z opcją Zarządzanie dyskami](images/2980.png){.thumbnail}
 
 - Kliknij prawym przyciskiem myszy na partycję główną, a następnie kliknij `Extend Volume`{.action}.
 
-![public-cloud](images/2981a.png){.thumbnail}
+![Kliknięcie prawym przyciskiem na partycji głównej w celu rozszerzenia woluminu](images/2981a.png){.thumbnail}
 
-- Kliknij `Next`{.action}, aby uzyskać dostęp do `Extend Volume Wizard`. Wybierz zasoby dysku do rozszerzenia i kliknij `Next`{.action}. 
+- W menu `Extend Volume Wizard` kliknij `Next`{.action}. Wybierz zasoby dysku do rozszerzenia i kliknij `Next`{.action}.
 
-![public-cloud](images/2978a.png){.thumbnail}
+![Kreator rozszerzenia woluminu z wyborem zasobów dysku](images/2978a.png){.thumbnail}
 
-Następnie kliknij `Finish`{.action}, aby zatwierdzić wybór.
+Kliknij `Finish`{.action}, aby potwierdzić wybór.
 
-![public-cloud](images/wizard2021.png){.thumbnail}
+![Krok finalizacji kreatora rozszerzenia woluminu](images/wizard2021.png){.thumbnail}
 
-- Nowy rozmiar dysku zostanie wyświetlony w managerze dysku.
+- Nowy rozmiar dysku zostanie wyświetlony w menedżerze dysków.
 
-![public-cloud](images/2979.png){.thumbnail}
+![Menedżer dysków wyświetlający nowy rozmiar](images/2979.png){.thumbnail}
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

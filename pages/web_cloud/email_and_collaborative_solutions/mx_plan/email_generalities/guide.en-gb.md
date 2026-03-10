@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>

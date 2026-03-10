@@ -25,8 +25,19 @@ De modo a impedir as transferências de nome de domínio não autorizadas, os no
 
 - Ter um [nome de domínio](/links/web/domains) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o titular e/ou os administradores devem ser informados do pedido de transferência.
-- Ter acesso à secção de gestão do nome de domínio na Área de [Cliente OVHcloud](/links/manager).
 - O registo do nome de domínio em questão data de há pelo menos 60 dias **e** não foi transferido ou trocado (ou seja, a mudança de titular) durante os últimos 60 dias
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

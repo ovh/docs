@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Punkty końcowe i Object Storage geoavailability (EN)
-excerpt: Discover OVHcloud Object Storage endpoints and regions
-updated: 2026-02-06
+title: Object Storage - Endpoints and Object Storage geoavailability
+excerpt: Discover OVHcloud Object Storage endpoints and regions.
+updated: 2026-03-06
 ---
 
 <style>
@@ -10,11 +10,11 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the Object Storage storage classes to be **compatible with S3<sup>1</sup>API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
+We have designed the Object Storage storage classes to be compatible with the S3<sup>1</sup>-compatible API, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region, not storage class.
 
 ## Object Storage
 
-OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported with this unique endpoint.
+OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported through this unique endpoint.
 
 ### List of available regions
 
@@ -137,7 +137,7 @@ OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<
     </tr>
 </table>
 
-The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
+The bucket endpoint is a URL, for example `https://<bucket_name>.s3.<region>.io.cloud.ovh.net`, that represents a virtual-host-style endpoint.
 
 ### Mapping from AWS S3 tiers to OVHcloud Storage tiers
 
@@ -285,17 +285,17 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 >> </table>
 
 
-_<sup>3</sup>: The Cold Archive storage class in only available in Paris (EU-WEST-PAR)
+_<sup>3</sup>: The Cold Archive storage class is only available in Paris (`eu-west-par`).
 
 > [!warning]
-> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
+> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3-compatible features and API operations are available.
 
-### Endpoint retrocompatibility
+### Endpoint backward compatibility
 
 > [!warning]
-> The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint whenever possible.
+> The **perf** endpoint is maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our Object Storage. We strongly encourage you to migrate to the **io** endpoint whenever possible.
 
-Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all API operations including `listBucket`.
+Although the **io** endpoint is the preferred endpoint to access OVHcloud Object Storage, the legacy endpoint `https://s3.<region>.perf.cloud.ovh.net` is maintained for backward compatibility for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint can also address all buckets and all objects in both Standard and High Performance storage classes and supports all API operations, including `listBucket`.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
@@ -364,7 +364,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
 
 | Storage solution | endpoint URL | Region available<br><b><i>To be entered in lower case</i></b> |
 | ------ | ------ | ------ |
-| Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
+| Object Storage Swift - Standard - Legacy | `https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
 
 ## Go further
 

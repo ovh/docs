@@ -15,7 +15,18 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Avere accesso al backup da importare nel database o essere in grado di recuperarlo
-- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o disporre dei dati di connessione al database
+- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo Spazio Cliente OVHcloud o disporre dei dati di connessione al database
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

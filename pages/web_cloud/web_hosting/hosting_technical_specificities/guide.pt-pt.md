@@ -13,7 +13,17 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting) compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 
@@ -83,7 +93,7 @@ Apenas os servidores de bases de dados [Web Cloud Databases](/links/web/database
 
 #### Variáveis do servidor SQL partilhado
 
-Para conhecer as suas variáveis, ligue-se através da interface *PhpMyAdmin* à sua base de dados. Uma vez ligado, clique no separador "SQL` na parte superior da página e introduza o seguinte pedido no formulário central para verificar as variáveis do servidor MySQL:
+Para conhecer as suas variáveis, ligue-se através da interface *PhpMyAdmin* à sua base de dados. Uma vez ligado, clique no separador `SQL` na parte superior da página e introduza o seguinte pedido no formulário central para verificar as variáveis do servidor MySQL:
 
 ```bash
 SHOW VARIABLES;

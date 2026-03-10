@@ -39,26 +39,15 @@ All API routes used for this tutorial are available under the */storage* section
 
 All existing ACLs for a volume can be retrieved using the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
@@ -68,36 +57,17 @@ You should have no ACLs by default.
 
 To create a new ACL, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >
->> > [!api]
->> >
->> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **NetAppShareACLRule** *
->> >
->> >> **accessLevel** *
->> >> >
->> >> > ACL access level. Can be **rw** (read and write) or **ro** (read-only).
->> >>
->> >> **accessTo** *
->> >> >
->> >> > IP address or a range of IP addresses in CIDR notation.
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `NetAppShareACLRule.accessLevel` | Yes | ACL access level. Can be **rw** (read and write) or **ro** (read-only). |
+| `NetAppShareACLRule.accessTo` | Yes | IP address or a range of IP addresses in CIDR notation. |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
@@ -111,30 +81,16 @@ Removing an ACL will prevent all further access from the IP adresses specified b
 
 To remove an ACL, use the following route:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >
->> > [!api]
->> >
->> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
->> >
->>
->
-> Parameters:
->
->> > **serviceName** *
->> >
->> >> Service ID
->> >
->> > **shareId** *
->> >
->> >> Volume ID
->> >
->> > **aclRuleId** *
->> >
->> >> ACL ID
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Service ID |
+| `shareId` | Yes | Volume ID |
+| `aclRuleId` | Yes | ACL ID |
 
 Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 

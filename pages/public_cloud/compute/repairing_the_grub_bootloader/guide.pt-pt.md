@@ -16,6 +16,17 @@ updated: 2020-11-23
 
 - Uma [Instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instruções
 
 > [!warning]

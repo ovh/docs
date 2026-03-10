@@ -19,10 +19,20 @@ Jesteś abonentem nazwy domeny w OVHcloud i chcesz ją połączyć z Google Site
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [nazwy domeny](/links/web/domains) zarejestrowanej w OVHcloud.
 - Posiadanie odpowiednich [uprawnień do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) nazwą domeny w [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie strony Google i bycie jej właścicielem.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -53,7 +63,7 @@ Każdy rekord DNS można zmienić, klikając przycisk `...`{.action} znajdujący
 Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące karty:
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >> **Rekord A**<br><br>
 >> Aby zidentyfikować istniejące rekordy "A", kliknij menu filtrów na górze tabeli rekordów DNS i wybierz opcję `A`.
 >>
@@ -66,7 +76,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Pozostaw pole **Subdomena** puste i wprowadź pierwszy adres IPv4 serwisu Google Site `216.239.32.21` w polu **Adres docelowy**.
 >> Kliknij na `Dalej`{.action} i zatwierdź rejestrację "A". Powtórz operację dla pozostałych trzech adresów IPv4 `216.239.34.21`, `216.239.36.21` i `216.239.38.21`, a następnie przejdź do etapu 2. Ponieważ wartości tych adresów IP mogą ulec zmianie, sprawdź w oficjalnej dokumentacji [wartość rekordów A](https://support.google.com/a/answer/2579934?hl=pl&ref_topic=2721296&sjid=103737497980680534-EU).
 >>
-> **Etap 2**
+> **Krok 2**
 >> **Rekord AAAA**<br><br>
 >> Aby zidentyfikować istniejące rekordy "AAAA", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `AAAA`.
 >>
@@ -76,7 +86,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> - Jeśli jest obecny rekord dla subdomeny "www" (przykład: `www.mydomain.ovh.`), usuń go również, aby nie kolidował z rekordem CNAME, który wprowadzisz w kroku 4. Kliknij przycisk `...`{.action} po prawej stronie wiersza tabeli odpowiadającego Twojej subdomenie na "www", a następnie kliknij `Usuń rekord`{.action}.<br>
 >> - Jeśli nie masz istniejącego rekordu "AAAA", przejdź do etapu 3.
 >>
-> **Etap 3**
+> **Krok 3**
 >> **Rekord TXT**<br><br>
 >> Aby zidentyfikować istniejące rekordy "TXT", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `TXT`.
 >>
@@ -87,7 +97,7 @@ Postępuj zgodnie z kolejnością kroków, przechodząc przez następujące kart
 >> Uzupełnij pola **Subdomena** i **Adres docelowy** informacjami zawartymi na stronie "[Wartości rekordów TXT](https://support.google.com/a/answer/2716802?hl=pl&ref_topic=2716886&sjid=3052810298579211755-EU)" w oficjalnej dokumentacji. Pole **Subdomena** jest zazwyczaj puste, a pole **Adres docelowy** jest typu `google-site-verification=XXXXXXXXXXXX`.<br>
 >> Kliknij na `Dalej`{.action}, aby potwierdzić rejestrację "TXT" i przejść do etapu 4.
 >>
-> **Etap 4**
+> **Krok 4**
 >> **Rekord CNAME**<br><br>
 >> Aby zidentyfikować istniejące rekordy "CNAME", kliknij menu filtrów u góry tabeli rekordów DNS i wybierz opcję `CNAME`.
 >>

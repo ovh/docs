@@ -1,7 +1,7 @@
 ---
 title: Capabilities and Limitations of Public Cloud Databases for MongoDB
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2025-07-31
+updated: 2026-02-17
 ---
 
 ## Objective
@@ -23,6 +23,8 @@ The Public Cloud Databases offer is available in the following regions:
 - `EU-SOUTH-MIL` (Milan, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `RBX` (Roubaix, France)
+- `AP-SOUTH-MUM` (Mumbai, India)
 
 ### MongoDB versions
 

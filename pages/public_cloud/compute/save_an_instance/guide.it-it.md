@@ -27,8 +27,18 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 ## Prerequisiti
 
 - Disporre di un'istanza [Public Cloud](/links/public-cloud/public-cloud) sul proprio account OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - CLI OpenStack. Consulta la nostra guida "[Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)". (opzionale)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -52,7 +62,6 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 > [!tabs]
 > Attraverso il Spazio Cliente OVHcloud
 >>
->> Accedi al [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il progetto Public Cloud desiderato.<br>
 >> Clicca su `Istanze`{.action} nel menu a sinistra.<br>
 >> Nella pagina delle istanze, clicca sul pulsante `...`{.action} a destra dell'istanza e seleziona `Crea un backup`{.action}.
 >>

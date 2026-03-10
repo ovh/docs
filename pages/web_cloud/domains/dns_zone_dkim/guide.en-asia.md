@@ -55,11 +55,20 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have signed up to one of these email offers:
     - OVHcloud MX Plan Email, available with a [web hosting plan](/links/web/hosting)
     - An email solution outside of OVHcloud with DKIM support
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
@@ -434,7 +443,6 @@ At the level of the selectors you also have 3 possible states:
 - `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
 - `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails MX Plan](#confemail).
 
-
 #### API - Enable or change the DKIM selector <a name="enable-switch"></a>
 
 > [!warning]
@@ -446,7 +454,6 @@ To enable DKIM, use the following API call:
 > [!api]
 >
 > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
-
 
 - `domain`: Enter the domain name attached to your email service on which the DKIM must be present. 
 

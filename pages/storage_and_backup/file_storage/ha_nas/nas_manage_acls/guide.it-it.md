@@ -46,86 +46,45 @@ Tutti i tuoi servizi attivi possono essere recuperati utilizzando la strada segu
 
 Per recuperare gli indirizzi IP che possono accedere alla partizione, utilizza questa strada:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/access
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
 
 ### Recupera tutti gli indirizzi IP ammissibili
 
 Puoi verificare gli indirizzi IP che possono essere ammessi ad un accesso tramite queste chiamate API:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
->> >
->> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS |
+| `partitionName` | Yes | Nome della partizione |
 
 ### Aggiungi un record ACL
 
 Per creare un nuovo accesso ACL che ti permetta di connetterti alla tua partizione, utilizza la seguente strada:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->> >
->> > **ip** *
->> >
->> >> L'indirizzo IP o la gamma a cui deve essere concesso l'accesso
->> >
->> > **type** *
->> >
->> >> Tipo di accesso ACL per questo record: *readonly* o *readwrite*
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
+| `ip` | Yes | L'indirizzo IP o la gamma a cui deve essere concesso l'accesso |
+| `type` | Yes | Tipo di accesso ACL per questo record: *readonly* o *readwrite* |
 
 > [!primary]
 >
@@ -136,30 +95,16 @@ Per creare un nuovo accesso ACL che ti permetta di connetterti alla tua partizio
 
 Per eliminare un indirizzo IP o una gamma di indirizzi dell'ACL, utilizza questa strada:
 
-> [!faq]
+> [!api]
 >
-> API:
+> @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/access/{ip}
 >
->> > [!api]
->> >
->> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/access/{ip}
->> >
->>
->
-> Impostazioni:
->
->> > **serviceName** *
->> >
->> >> Il nome interno del tuo servizio NAS-HA
->> >
->> > **partitionName** *
->> >
->> >> Nome della partizione
->> >
->> > **ip** *
->> >
->> >> L'indirizzo IP o la gamma da rifiutare
->
+
+| Parameter | Required | Description |
+|-----------|----------|-------------|
+| `serviceName` | Yes | Il nome interno del tuo servizio NAS-HA |
+| `partitionName` | Yes | Nome della partizione |
+| `ip` | Yes | L'indirizzo IP o la gamma da rifiutare |
 
 ## Per saperne di più
 

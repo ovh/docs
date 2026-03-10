@@ -14,7 +14,6 @@ Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](/links/web/hosting
 
 - Posiadanie [certyfikatu SSL](/links/web/hosting-options-ssl) zainstalowanego na [hostingu OVHcloud](/links/web/hosting).
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVHcloud.
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 ## W praktyce
 
@@ -37,7 +36,7 @@ A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, sta
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 Poniżej znajdziesz najważniejsze kroki opisane w dalszej części tego przewodnika, aby aktywować Twoją stronę WWW przy użyciu *HTTPS*:

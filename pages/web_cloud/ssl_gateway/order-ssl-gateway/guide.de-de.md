@@ -73,21 +73,20 @@ Wenn Sie nach der Validierung Ihres Bestellscheins die Option `Ich verwalte die 
 > Ohne Änderung Ihrer DNS-Zone innerhalb von 3 Tagen wird Ihre Bestellung storniert.
 >
 
-> [!faq]
+> [!primary]
 >
-> Fall 1: Ihre DNS Zone wird von den Shared DNS Servern von OVHcloud verwaltet.
->>
->> - Wenn Ihre Kundenkennung ein *Administrator* oder *technischer* Kontakt dieser DNS-Zone ist, müssen Sie diese in Ihrem [OVHcloud Kundencenter](/links/manager) ändern.
->> - Wenn Sie kein *Administrator* oder *technischer* Kontakt für diese DNS-Zone sind, wenden Sie sich an den zuständigen DNS-Zonenadministrator, um die Zone zu ändern.
->>
->> Befolgen Sie bei Bedarf die Anweisungen in der Anleitung „[OVHcloud DNS-Zone für eine Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)“.
->>
+> **Fall 1: Ihre DNS Zone wird von den Shared DNS Servern von OVHcloud verwaltet.**
 >
-> Fall 2: Ihre DNS Zone wird nicht von den Shared DNS Servern von OVHcloud verwaltet.
->>
->> - In diesem Fall ändern Sie die IP in Ihrer DNS Zone über das Interface Ihres Anbieters oder konfigurieren Sie Ihren zuständigen DNS-Server.
->>
+> - Wenn Ihre Kundenkennung ein *Administrator* oder *technischer* Kontakt dieser DNS-Zone ist, müssen Sie diese in Ihrem [OVHcloud Kundencenter](/links/manager) ändern.
+> - Wenn Sie kein *Administrator* oder *technischer* Kontakt für diese DNS-Zone sind, wenden Sie sich an den zuständigen DNS-Zonenadministrator, um die Zone zu ändern.
 >
+> Befolgen Sie bei Bedarf die Anweisungen in der Anleitung „[OVHcloud DNS-Zone für eine Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)“.
+
+> [!primary]
+>
+> **Fall 2: Ihre DNS Zone wird nicht von den Shared DNS Servern von OVHcloud verwaltet.**
+>
+> - In diesem Fall ändern Sie die IP in Ihrer DNS Zone über das Interface Ihres Anbieters oder konfigurieren Sie Ihren zuständigen DNS-Server.
 
 Sobald Ihre Änderung von unserer Infrastruktur übernommen wurde, erhalten Sie eine E-Mail-Bestätigung.
 

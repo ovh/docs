@@ -19,7 +19,18 @@ OVHcloud mette a tua disposizione uno spazio per consultare, gestire e saldare l
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) come [contatto di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del servizio
+- Essere [contatto di fatturazione](/pages/account_and_service_management/account_information/managing_contacts) del servizio
+
+<!-- CP-NAV-START:billing-invoices -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Invoices](/links/control-panel/billing-invoices)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Invoices`{.action}
+
+---
+<!-- CP-NAV-END:billing-invoices -->
 
 ## Procedura
 
@@ -48,7 +59,7 @@ La fattura del tuo servizio OVHcloud ti viene inviata in seguito al pagamento di
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) Clicca sul tuo nome in alto a destra e poi sul nuovo menu che appare su `Le mie fatture`{.action}.
+Apri la pagina [Fatture](/links/control-panel/billing-invoices).
 
 ![Fatturazione](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 

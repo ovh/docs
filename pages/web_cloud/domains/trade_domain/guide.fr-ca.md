@@ -22,10 +22,20 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'un nom de domaine enregistré chez OVHcloud et pour lequel aucune opération (changement de titulaire, transfert, création) n'est en cours. Si une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
 - Votre compte client est le [contact administrateur et de facturation](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine concerné.
 - Disposer de l'accord du titulaire actuel du nom de domaine pour effectuer le changement de titulaire.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -49,34 +59,28 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ### Lancer la procédure de changement de titulaire ou modifier les informations qui lui sont associées
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+>> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Étape 3**
+> **Étape 2**
 >>
 >> Sur la page qui s'affiche, vous trouverez, dans le cadre **Abonnement**, la mention **Contacts**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Étape 4**
+> **Étape 3**
 >>
 >> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Étape 5**
+> **Étape 4**
 >>
 >> > [!warning]
 >> >
@@ -88,7 +92,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
-> **Étape 6**
+> **Étape 5**
 >>
 >> Un nouvel onglet de votre navigateur s'ouvre avec tous les noms de domaine éligibles au changement de titulaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée. Ainsi, il est possible d'initier un changement de titulaire pour plusieurs noms de domaine à la fois, par exemple pour changer le titulaire de tous les noms de domaine *.ovh* si leurs titulaires actuels sont identiques.
 >>
@@ -96,7 +100,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 >> Une fois vos choix effectués, cliquez sur `Continuer`{.action}.
 >>
-> **Étape 7**
+> **Étape 6**
 >>
 >> Dans le formulaire des détails du titulaire, veillez à entrer des informations valides dans tous les champs obligatoires. Soyez vigilant sur les erreurs de saisie et utilisez des [caractères imprimables ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) dans la mesure du possible. Veuillez noter que toute information inexacte ou fausse peut entraîner une erreur technique et donc un retard de l'ensemble du processus.
 >>
@@ -128,4 +132,4 @@ Pour des prestations spécialisées (référencement, développement, etc.), con
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

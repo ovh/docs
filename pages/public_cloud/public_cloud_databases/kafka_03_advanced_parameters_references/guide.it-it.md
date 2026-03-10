@@ -1,6 +1,6 @@
 ---
 title: Advanced parameters for Analytics with Kafka
-excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Kafka according to your use cases
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Analytics with Kafka according to your use cases
 updated: 2025-08-04
 ---
 
