@@ -68,7 +68,7 @@ When the Inbound Mail Server receives the email, it will read the DNS zone of yo
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

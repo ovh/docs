@@ -38,7 +38,7 @@ For further explanation, please refer to our guides “[Everything you need to k
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->

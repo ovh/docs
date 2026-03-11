@@ -28,7 +28,7 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
-- **Navigation path:** `Web Cloud`{.action} > `DNS Zone`{.action} > Select your domain name
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->
@@ -110,7 +110,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 #### TXT record <a name="txt-record"></a>
 
-You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links/manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links/manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS zones`{.action} tab.
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 
