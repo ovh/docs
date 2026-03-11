@@ -36,7 +36,7 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My services](/links/control-panel/billing-services)
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
 - **Navigation path:** Click your name in the top right > `My offers and services`{.action}
 
 ---
