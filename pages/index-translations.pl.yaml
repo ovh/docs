@@ -492,10 +492,16 @@ storage-block-storage-cloud-disk-array-configuration: Konfigurowanie
 storage-block-storage-cloud-disk-array-tutorials: Tutorials
 storage-block-storage-cloud-disk-array-additional-resources: Dodatkowe zasoby
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
-storage-backup-and-disaster-recovery-solution-veeam: Veeam
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus: Veeam Enterprise Plus
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-getting-started: Pierwsze kroki
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-configuration: Konfigurowanie
+storage-backup-and-disaster-recovery-solution-veeam-enterprise-plus-security: Bezpieczeństwo
+storage-backup-and-disaster-recovery-solution-managed-veeam-public-vcf: Managed Veeam for Public VCF aaS
+storage-backup-and-disaster-recovery-solution-managed-veeam-public-vcf-getting-started: Pierwsze kroki
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
-storage-backup-and-disaster-recovery-solution-third-party-software: Oprogramowanie firm zewnętrznych
+storage-backup-and-disaster-recovery-solution-hycu-getting-started: Pierwsze kroki
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
+storage-backup-and-disaster-recovery-solution-kubernetes-data-protection-tutorials: Tutorials
 storage-backup-and-disaster-recovery-solution-backup-agent: Backup Agent
 storage-backup-and-disaster-recovery-solution-backup-agent-key-concepts: Kluczowe pojęcia
 storage-backup-and-disaster-recovery-solution-backup-agent-getting-started: Pierwsze kroki
