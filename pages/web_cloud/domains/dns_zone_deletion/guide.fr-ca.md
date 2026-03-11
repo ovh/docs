@@ -36,7 +36,7 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes services](/links/control-panel/billing-services)
+- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
 - **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
 
 ---

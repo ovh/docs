@@ -36,7 +36,7 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Meine Dienste](/links/control-panel/billing-services)
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
 - **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
 
 ---

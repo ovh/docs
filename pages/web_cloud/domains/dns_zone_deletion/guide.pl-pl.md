@@ -36,7 +36,7 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Moje usługi](/links/control-panel/billing-services)
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
 - **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
 
 ---

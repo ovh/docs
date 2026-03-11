@@ -36,7 +36,7 @@ Por exemplo, pode eliminar uma zona DNS do seu domínio na OVHcloud nos seguinte
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Os meus serviços](/links/control-panel/billing-services)
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
 - **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
 
 ---
