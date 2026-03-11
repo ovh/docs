@@ -97,7 +97,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> Click on [this link](/links/control-panel/web-dns-zone), then on the `Order`{.action} button.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 2**
 >>
@@ -128,7 +128,7 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 
 > [!primary]
 >
-> If you have just created the DNS zone and the subdomain does not yet appear in your list of services (under `DNS zones`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
+> If you have just created the DNS zone and the subdomain does not yet appear in your list of services, wait 15 to 20 minutes, then reload the page.
 
 ### 3 - Declare the DNS servers in the active DNS zone of the domain name on which the chosen subdomain depends
 

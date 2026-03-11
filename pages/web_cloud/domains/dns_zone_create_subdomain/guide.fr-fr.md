@@ -97,7 +97,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis sur le bouton `Commander`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -128,7 +128,7 @@ Pour éditer cette zone DNS, consultez notre guide « [Éditer une zone DNS OVHc
 
 > [!primary]
 >
-> Si vous venez juste de créer la zone DNS et que le sous-domaine n'apparaît pas encore dans la liste de vos services (dans la partie `Web Cloud`{.action} de l'espace client OVHcloud puis dans la section `Zones DNS`{.action}), patientez 15 à 20 minutes puis rechargez la page.
+> Si vous venez juste de créer la zone DNS et que le sous-domaine n'apparaît pas encore dans la liste de vos services, patientez 15 à 20 minutes puis rechargez la page.
 
 ### 3 - Déclarer les serveurs DNS dans la zone DNS active du nom de domaine dont dépend le sous-domaine choisi
 

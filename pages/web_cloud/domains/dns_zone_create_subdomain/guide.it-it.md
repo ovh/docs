@@ -97,7 +97,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> Clicca su [questo link](/links/control-panel/web-dns-zone), quindi sul pulsante `Ordina`{.action}.
 >>
->> ![DNS Zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -128,7 +128,7 @@ Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS
 
 > [!primary]
 >
-> Se hai appena creato la zona DNS e il sottodominio non appare ancora nell'elenco dei tuoi servizi (nella parte `Web Cloud`{.action} dello Spazio Cliente OVHcloud e poi nella sezione `Zone DNS`{.action}), attendi 15 a 20 minuti e ricarica la pagina.
+> Se hai appena creato la zona DNS e il sottodominio non appare ancora nell'elenco dei tuoi servizi, attendi 15 a 20 minuti e ricarica la pagina.
 
 ### 3 - Dichiarare i server DNS nella zona DNS attiva del nome di dominio a cui appartiene il sottodominio scelto
 

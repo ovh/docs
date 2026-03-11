@@ -128,7 +128,7 @@ Para editar esta zona DNS, consulte o nosso guia "[Editar uma zona DNS da OVHclo
 
 > [!primary]
 >
-> Se acabou de criar a zona DNS e o subdomínio ainda não aparece na lista dos seus serviços (na parte `Web Cloud`{.action} do Área de Cliente OVHcloud e depois na secção `Zonas DNS`{.action}), aguarde 15 a 20 minutos e recarregue a página.
+> Se acabou de criar a zona DNS e o subdomínio ainda não aparece na lista dos seus serviços, aguarde 15 a 20 minutos e recarregue a página.
 
 ### 3 - Declarar os servidores DNS na zona DNS ativa do nome de domínio do qual o subdomínio escolhido depende
 
