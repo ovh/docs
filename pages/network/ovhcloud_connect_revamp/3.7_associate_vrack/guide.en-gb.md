@@ -1,4 +1,10 @@
-# Associate an OVHcloud Connect to Your vRack
+---
+title: 'Associate an OVHcloud Connect to Your vRack'
+excerpt: 'Learn how to associate your OVHcloud Connect service with a vRack for private connectivity'
+updated: 2026-02-18
+---
+
+## Objective
 
 The **vRack** (Virtual Rack) is OVHcloud's private networking service. To allow your OVHcloud resources (servers, VMs, etc.) to communicate through your OVHcloud Connect link, you must associate the OVHcloud Connect service with a vRack.
 
@@ -114,3 +120,9 @@ If you need to dissociate OVHcloud Connect from a vRack:
 
 - [Monitor your OVHcloud Connect](3.8_monitor.md)
 - [Define your AZ configuration](3.6_define_az_subnets.md) to set up subnets properly
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

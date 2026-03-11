@@ -1,4 +1,10 @@
-# Automation (API, CLI & Terraform)
+---
+title: 'OVHcloud Connect - Automation (API, CLI & Terraform)'
+excerpt: 'Discover how to manage OVHcloud Connect programmatically using the API, CLI, and Terraform'
+updated: 2026-02-18
+---
+
+## Objective
 
 OVHcloud Connect can be managed programmatically using the OVHcloud API, command-line tools, and Terraform. Automation reduces manual errors, speeds up provisioning, and makes your infrastructure repeatable and version-controlled.
 
@@ -99,3 +105,9 @@ resource "ovh_vrack_cloudconnect" "my_connect" {
 ```
 
 > **Note:** Resource names and attributes may change between provider versions. Always refer to the [Terraform Registry documentation](https://registry.terraform.io/providers/ovh/ovh/latest/docs) for the latest resource definitions.
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

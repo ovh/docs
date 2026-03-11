@@ -1,4 +1,10 @@
-# Quick Start: Direct Connection to OVHcloud
+---
+title: 'Quick Start: Direct Connection to OVHcloud'
+excerpt: 'Walk through the essential steps to establish a direct, private connection to OVHcloud'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide walks you through the essential steps to establish a **direct, private connection** between your infrastructure and OVHcloud — without using a third-party provider.
 
@@ -126,3 +132,9 @@ If you cannot resolve the issue, [open a support ticket](3.9_incident_followup.m
 - For a managed connection, see [Quick Start: Provider Connection](2.2_quick_start_provider.md)
 - For resilient setups, see [Resilient On-Prem tutorial](4.1.2_onprem_resilient.md)
 - Set up [monitoring](3.8_monitor.md) for your connection
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

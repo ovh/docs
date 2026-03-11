@@ -1,4 +1,8 @@
-# Frequently Asked Questions (FAQ)
+---
+title: 'OVHcloud Connect - Frequently Asked Questions (FAQ)'
+excerpt: 'Find answers to the most common questions about OVHcloud Connect'
+updated: 2026-02-18
+---
 
 ## General
 
@@ -213,3 +217,9 @@ See [Automation](1.6_automation.md) for SDK and API examples.
 - Browse the [full documentation](1.1_what_is_ovhcloud_connect.md)
 - Check the [OVHcloud Community](https://community.ovh.com/)
 - Contact [OVHcloud Support](https://www.ovh.com/manager/) via the Control Panel
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

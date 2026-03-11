@@ -1,4 +1,10 @@
-# Quick Start: Connection to OVHcloud with a Provider
+---
+title: 'Quick Start: Connection to OVHcloud with a Provider'
+excerpt: 'Walk through the steps to connect to OVHcloud using a third-party network provider'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide walks you through connecting to OVHcloud using a **third-party network provider** (such as Megaport, Equinix Fabric, or Console Connect). A provider handles the physical connectivity on your behalf, so you don't need to be present in the same data centre as OVHcloud.
 
@@ -127,3 +133,9 @@ See [Associate an OVHcloud Connect to your vRack](3.7_associate_vrack.md).
 - For a self-managed connection, see [Quick Start: Direct Connection](2.1_quick_start_direct.md)
 - Set up [monitoring](3.8_monitor.md)
 - Explore [resilient architectures](4.1.2_onprem_resilient.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

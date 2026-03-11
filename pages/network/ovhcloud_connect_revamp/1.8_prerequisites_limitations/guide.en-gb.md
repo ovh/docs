@@ -1,4 +1,10 @@
-# Prerequisites & Limitations
+---
+title: 'OVHcloud Connect - Prerequisites & Limitations'
+excerpt: 'Review the requirements and current limitations before ordering OVHcloud Connect'
+updated: 2026-02-18
+---
+
+## Objective
 
 Before ordering OVHcloud Connect, review the requirements below to ensure your environment is ready. Also be aware of the current limitations to plan your implementation effectively.
 
@@ -96,3 +102,9 @@ OVHcloud Connect Provider is always a Layer 3 network service: please read the [
 ## What's next?
 
 - Jump to the [Quick Start: Direct Connection](2.1_quick_start_direct.md) or [Quick Start: Provider Connection](2.2_quick_start_provider.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

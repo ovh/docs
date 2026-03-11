@@ -1,4 +1,10 @@
-# Define Your PoP Configuration (BGP Session)
+---
+title: 'Define Your PoP Configuration (BGP Session)'
+excerpt: 'Learn how to configure the BGP session between your router and OVHcloud at the Point of Presence'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide explains how to configure the **BGP (Border Gateway Protocol) session** between your router and OVHcloud at the Point of Presence (PoP). BGP is the routing protocol that tells each side which IP networks are reachable through the OVHcloud Connect link.
 
@@ -192,3 +198,9 @@ Expected results:
 
 - [Define your AZ configuration (private subnets)](3.6_define_az_subnets.md)
 - [Associate with your vRack](3.7_associate_vrack.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

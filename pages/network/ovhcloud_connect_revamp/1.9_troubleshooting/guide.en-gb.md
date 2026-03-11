@@ -1,4 +1,10 @@
-# Troubleshooting OVHcloud Connect
+---
+title: 'Troubleshooting OVHcloud Connect'
+excerpt: 'Diagnose and resolve the most common issues encountered with OVHcloud Connect'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide helps you diagnose and resolve the most common issues encountered with OVHcloud Connect. Each section describes a known issue, its possible causes, and the steps to fix it.
 
@@ -582,3 +588,9 @@ If you have followed the troubleshooting steps above and the issue persists, ope
 - Review [Prerequisites & Limitations](../1.8_prerequisites_limitations/guide.en-gb.md) to avoid known pitfalls
 - Consult the [FAQ](../5_faq/guide.en-gb.md) for answers to common questions
 - Check [SLAs](../1.7_slas/guide.en-gb.md) for uptime guarantees and service credits
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

@@ -1,4 +1,10 @@
-# Monitor Your OVHcloud Connect
+---
+title: 'Monitor Your OVHcloud Connect'
+excerpt: 'Discover the tools and metrics available to monitor your OVHcloud Connect service'
+updated: 2026-02-18
+---
+
+## Objective
 
 Monitoring your OVHcloud Connect service ensures that the connection is healthy, performant, and meeting your expectations. This guide covers the tools and metrics available.
 
@@ -128,3 +134,9 @@ show route protocol bgp
 
 - [Declare and follow up on an incident](3.9_incident_followup.md) if you detect a problem
 - Review [SLAs](1.7_slas.md) to understand uptime guarantees
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

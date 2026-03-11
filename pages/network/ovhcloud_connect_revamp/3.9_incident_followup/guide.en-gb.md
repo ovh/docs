@@ -1,4 +1,10 @@
-# Declare and Follow Up Upon an Incident
+---
+title: 'Declare and Follow Up Upon an Incident'
+excerpt: 'Learn how to report an OVHcloud Connect incident, provide diagnostic information, and track resolution'
+updated: 2026-02-18
+---
+
+## Objective
 
 If you experience a service degradation or outage on your OVHcloud Connect link, follow this guide to report the incident, provide the right diagnostic information, and track resolution.
 
@@ -138,3 +144,9 @@ After the incident is resolved:
 
 - Set up proactive [monitoring](3.8_monitor.md) to detect issues before they impact your users
 - Review your [SLA](1.7_slas.md) commitments
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

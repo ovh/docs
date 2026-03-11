@@ -1,4 +1,10 @@
-# Cancel OVHcloud Connect Provider
+---
+title: 'Cancel OVHcloud Connect Provider'
+excerpt: 'Learn how to cancel an OVHcloud Connect Provider service and coordinate with your provider'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide explains how to cancel an OVHcloud Connect Provider service. Since a provider connection involves both OVHcloud and a third-party network operator, you need to coordinate the cancellation with both parties.
 
@@ -54,3 +60,9 @@ This guide explains how to cancel an OVHcloud Connect Provider service. Since a 
 
 - [Cancel OVHcloud Connect Direct](3.3_cancel_direct.md) (if you also have a direct connection)
 - [Order a new connection](3.2_order_provider.md) if you need a replacement
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

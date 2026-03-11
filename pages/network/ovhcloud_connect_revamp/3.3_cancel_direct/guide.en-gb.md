@@ -1,4 +1,10 @@
-# Cancel OVHcloud Connect Direct
+---
+title: 'Cancel OVHcloud Connect Direct'
+excerpt: 'Learn how to cancel an OVHcloud Connect Direct service and decommission the physical connection'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide explains how to cancel an OVHcloud Connect Direct service and decommission the physical connection.
 
@@ -66,3 +72,9 @@ client.post('/ovhCloudConnect/{serviceName}/terminate')
 
 - [Cancel OVHcloud Connect Provider](3.4_cancel_provider.md) (if you also have a provider connection)
 - [Order a new connection](3.1_order_direct.md) if you need to replace the service
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

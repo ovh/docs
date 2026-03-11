@@ -1,4 +1,10 @@
-# Ordering/Cancelling a Cross Connect with an LOA
+---
+title: 'Ordering/Cancelling a Cross Connect with an LOA'
+excerpt: 'Learn how to order or cancel a physical cross-connect using a Letter of Authorization'
+updated: 2026-02-18
+---
+
+## Objective
 
 A **cross-connect** is a physical fibre-optic cable that links your equipment (or your provider's equipment) to OVHcloud's equipment inside a data centre. A **Letter of Authorization (LOA)** is the document that authorises the data centre operator to install or remove this cable.
 
@@ -100,3 +106,9 @@ Before removing the physical cable, cancel the OVHcloud Connect service (see [Ca
 
 - [Configure BGP at the PoP](3.5_define_pop_bgp.md) after the cross-connect is installed
 - [Order OVHcloud Connect Direct](3.1_order_direct.md) if you haven't started the process yet
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

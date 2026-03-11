@@ -1,4 +1,10 @@
-# Define Your AZ Configuration (Private Subnets)
+---
+title: 'Define Your AZ Configuration (Private Subnets)'
+excerpt: 'Learn how to configure private subnets within OVHcloud Availability Zones for OVHcloud Connect'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide explains how to configure **private subnets** within OVHcloud Availability Zones (AZs) for use with your OVHcloud Connect service. Proper subnet planning ensures that your OVHcloud resources can communicate privately with your external infrastructure.
 
@@ -116,3 +122,9 @@ See [Multi-AZ](1.5_multi_az.md) for architecture guidance.
 
 - [Associate OVHcloud Connect with your vRack](3.7_associate_vrack.md)
 - [Monitor your connection](3.8_monitor.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

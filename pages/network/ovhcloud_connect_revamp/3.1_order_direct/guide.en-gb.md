@@ -1,4 +1,10 @@
-# Order OVHcloud Connect Direct
+---
+title: 'Order OVHcloud Connect Direct'
+excerpt: 'Learn how to order a direct physical connection to OVHcloud through the Control Panel or the API'
+updated: 2026-02-18
+---
+
+## Objective
 
 This guide explains how to order a **direct physical connection** to OVHcloud through the OVHcloud Control Panel or the API.
 
@@ -101,3 +107,9 @@ print(result)
 - [Receive and use your LOA](3.10_cross_connect_loa.md)
 - [Configure BGP at the PoP](3.5_define_pop_bgp.md)
 - [Associate with your vRack](3.7_associate_vrack.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

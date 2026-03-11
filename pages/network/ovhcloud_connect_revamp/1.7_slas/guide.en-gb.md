@@ -1,4 +1,10 @@
-# SLAs
+---
+title: 'OVHcloud Connect - SLAs'
+excerpt: 'Learn about the Service Level Agreements for OVHcloud Connect and how to achieve higher availability'
+updated: 2026-02-18
+---
+
+## Objective
 
 A **Service Level Agreement (SLA)** is a contractual commitment from OVHcloud that defines the guaranteed level of service for OVHcloud Connect. SLAs give you confidence that your connection will meet specific performance and availability targets.
 
@@ -58,3 +64,9 @@ See [Monitor your OVHcloud Connect](3.8_monitor.md) for detailed monitoring guid
 - Review [Prerequisites & Limitations](1.8_prerequisites_limitations.md)
 - Set up [monitoring](3.8_monitor.md) for your connection
 - Learn how to [declare and follow up on incidents](3.9_incident_followup.md)
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).

@@ -1,4 +1,10 @@
-# Providers
+---
+title: 'OVHcloud Connect - Providers'
+excerpt: 'Discover the third-party network providers that partner with OVHcloud to offer managed connectivity'
+updated: 2026-02-18
+---
+
+## Objective
 
 Providers are third-party network operators that partner with OVHcloud to offer managed connectivity in OVHcloud's Points of Presence (PoPs). Using a provider is an alternative to managing your own physical cross-connect (Direct connection).
 
@@ -133,3 +139,9 @@ Risq positions itself as a premium connectivity partner for businesses requiring
 
 - Check [PoP Locations & Regions](1.4_pop_locations_regions.md) to find where you can connect
 - Follow the [Quick Start with a Provider](2.2_quick_start_provider.md) to get started
+
+## Go further
+
+If you would like training or technical assistance for the implementation of our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
+
+Join our [community of users](/links/community).
