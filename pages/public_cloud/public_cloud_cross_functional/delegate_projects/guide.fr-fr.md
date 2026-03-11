@@ -14,11 +14,21 @@ Dans cet objectif, vous pouvez déléguer à d'autres comptes client OVHcloud de
 ## Prérequis
 
 - Avoir une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
-## En pratique 
+## En pratique
 
-Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez sur `Contacts & droits`{.action} dans le menu de gauche sous **Paramètres**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Cliquez sur `Contacts & droits`{.action} dans le menu de gauche sous **Paramètres**.
 
 Cette page vous permet de voir les contacts associés à votre projet.
 

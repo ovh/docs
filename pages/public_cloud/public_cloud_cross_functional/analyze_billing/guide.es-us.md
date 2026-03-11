@@ -20,7 +20,17 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 
 * Tener un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 * Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-* Tener acceso al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Nube Pública. Más información en nuestra página [Savings Plans](/links/public-cloud/savings-plan).

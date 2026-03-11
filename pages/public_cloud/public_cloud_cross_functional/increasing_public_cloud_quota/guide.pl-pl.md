@@ -14,8 +14,18 @@ Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
 - [Posiadanie ważnego](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) sposobu płatności w Panelu klienta OVHcloud.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Wskazówki
 
@@ -33,8 +43,6 @@ Ta opcja umożliwia żądanie automatycznego i stopniowego zwiększenia limitu z
 >
 > **Uwaga**: Ten proces nie jest odpowiedni do szybkiego zwiększania limitu.
 >
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz swój projekt Public Cloud.
 
 W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
 
@@ -59,8 +67,6 @@ Po aktywacji funkcji auto-scaling stopniowo zwiększy ona limit zasobów projekt
 Ten proces umożliwia szybkie i znaczne zwiększenie limitów (np. szybkie skalowanie, instancje GPU itp.). Ta metoda opiera się na natychmiastowym zakupie kredytu, z którego wszystkie koszty chmury zostaną automatycznie odliczone.
 
 Można zakupić różne kwoty kredytu.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
 W menu po lewej stronie kliknij `Limity i regiony`{.action} pod sekcją **Ustawienia**.
 

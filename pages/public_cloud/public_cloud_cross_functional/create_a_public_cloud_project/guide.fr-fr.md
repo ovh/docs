@@ -12,11 +12,18 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), et cliquez sur le menu `Public Cloud`{.action}.
 
 Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 

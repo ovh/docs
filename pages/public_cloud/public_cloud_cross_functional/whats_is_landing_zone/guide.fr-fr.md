@@ -125,9 +125,19 @@ Le cycle de vie d'un log comprend 4 phases distinctes :
 
 Pour créer une Landing Zone qui fonctionne bien, il est important d'évaluer les composants nécessaires à sa construction. La Landing Zone idéale doit être suffisamment flexible pour s'adapter à divers besoins, permettant un déploiement automatisé, agile et simple de l'architecture cible.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Prérequis :
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Un moyen de paiement.
 - [Charger les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
