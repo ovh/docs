@@ -1,6 +1,6 @@
 ---
-title: AI Endpoints - Prévention de la perte de données (EN)
-excerpt: Découvrez comment utiliser l'API de prévention de la perte de données (DLP) sur AI Endpoints pour détecter, classifier et anonymiser vos données sensibles.
+title: "AI Endpoints - Prévention de la perte de données (EN)"
+excerpt: "Découvrez comment utiliser l'API de prévention de la perte de données (DLP) sur AI Endpoints pour détecter, classifier et anonymiser vos données sensibles."
 updated: 2026-03-11
 ---
 
