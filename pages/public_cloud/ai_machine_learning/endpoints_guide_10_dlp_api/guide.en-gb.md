@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Data Loss Prevention API
-excerpt: Learn how to detect and anonymize your sensitive data with AI Endpoints
-updated: 2025-10-03
+excerpt: Find out how to use the Data Loss Prevention (DLP) API on AI Endpoints to detect, classify, and anonymise sensitive data in your documents.
+updated: 2026-03-11
 ---
 
 > [!primary]
@@ -11,11 +11,11 @@ updated: 2025-10-03
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
-The **Data Loss Prevention (DLP)** API helps organizations detect, classify, and anonymize sensitive information found in textual documents. It addresses common risks related to data leaks, regulatory non-compliance, and poor data governance.
+The **Data Loss Prevention (DLP)** API helps organisations detect, classify, and anonymise sensitive information found in textual documents. It addresses common risks related to data leaks, regulatory non-compliance, and poor data governance.
 
-Under the hood, the DLP API leverages a combination of **Named Entity Recognition (NER) models** and **regex-based detection** to provide optimized and accurate identification of sensitive content.
+Under the hood, the DLP API leverages a combination of **Named Entity Recognition (NER) models** and **regex-based detection** to provide optimised and accurate identification of sensitive content.
 
 The DLP API is designed to identify sensitive content such as **Personally Identifiable Information (PII)**, **Protected Health Information (PHI)**, financial data, administrative information, and credentials, enabling compliance with regulations including **[GDPR](https://fcn-data.fr/blog/rgpd-definition-perimetre-principes)**, **[HIPAA](https://www.hhs.gov/hipaa/for-individuals/guidance-materials-for-consumers/index.html)**, and **[PCI-DSS](https://www.ovhcloud.com/fr/compliance/pci-dss/)**.
 
@@ -26,13 +26,15 @@ PHI refers to health-related data associated with an identifiable individual. Th
 
 ## Objective
 
-This documentation provides an overview of the **DLP API** available on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+This documentation provides an overview of the **DLP API** available on [AI Endpoints](/links/public-cloud/ai-endpoints).
 
 It explains how to configure detectors, submit documents for analysis, and interpret the results returned by the API.
 
-Visit the [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to discover supported models and features related to data protection and document analysis.
+**This guide explains how to use the DLP API, from configuring detectors and submitting documents to interpreting the results.**
 
-The examples provided during this guide can be used with one of the following environments:
+Visit the [Catalog](/links/public-cloud/ai-endpoints-catalog) to discover supported models and features related to data protection and document analysis.
+
+The examples in this guide work with any of the following environments:
 
 
 > [!tabs]
@@ -59,7 +61,7 @@ The examples provided during this guide can be used with one of the following en
 
 ## Authentication & Rate Limiting
 
-Most examples provided in this guide are authenticated and expect the `OVH_AI_ENDPOINTS_ACCESS_TOKEN` to be set in order to avoid rate limiting issues.
+Most examples in this guide require `OVH_AI_ENDPOINTS_ACCESS_TOKEN` to be set to avoid rate limiting.
 If you wish to enable authentication using your own token, specify your own API key in the environment (`export OVH_AI_ENDPOINTS_ACCESS_TOKEN='your_api_key'`).
 
 Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide for more information on authentication.
@@ -77,6 +79,7 @@ The DLP detection endpoint expects a JSON payload with the following top-level f
 | **detection_config**        | Yes       | `object`   | -                                                                                     | null    | Configuration object defining the detectors to apply. More details [here](#detection-configuration).                                                                                                                                                     |
 
 ### Detection configuration
+
 The `detection_config` is a list of detector objects. Each detector includes:
 
 | Parameter                | Required | Type          | Allowed Values / Format                                                                 | Default | Description                                                                                                                                                                                                 |
@@ -90,6 +93,7 @@ The `detection_config` is a list of detector objects. Each detector includes:
 | **is_case_sensitive**                     | No      | `boolean`      | -                                    | `false`       | Flag to indicate if the matching is case sensitive (for regex and word_list detectors)                                                                                                                                                     |
 
 ### filter object (for builtin detectors)
+
 | Parameter                | Required | Type          | Allowed Values / Format                                                                 | Default | Description                                                                                                                                                                                                 |
 |--------------------------|----------|---------------|---------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **type**                     | Yes      | `string`      | `entity`, `category`                                    | -       | Type of filter                                                                                                                 |
@@ -305,6 +309,7 @@ In some cases, sensitive data follows a **well-defined pattern** (e.g., year, co
 The `regex` detector allows you to identify such information using regular expressions.
 
 ### Example
+
 In the following example, we detect a **graduation year** contained in a text.
 
 > [!tabs]
@@ -406,9 +411,10 @@ In the following example, we detect a **graduation year** contained in a text.
 
 When sensitive data is **known in advance** (e.g., names, internal projects, confidential references), a **word list detector** is more appropriate.
 
-This type of detector compares the analyzed content against an explicit list of sensitive terms.
+This type of detector compares the analysed content against an explicit list of sensitive terms.
 
 ### Example
+
 In this example, we detect members of the **Dupont** family in a text.
 
 > [!tabs]
@@ -523,6 +529,7 @@ For advanced use cases, you can **combine multiple detectors** within a single r
 This approach provides **comprehensive coverage** of sensitive data in a single API call.
 
 ### Example
+
 The example below detects:
 - people (standard detector),
 - members of the Dupont family (word list),
@@ -677,7 +684,7 @@ The example below detects:
 
 ## De-identification
 
-De-identification (or anonymization) allows for the automatic transformation of sensitive data detected in a text to protect privacy while preserving the document's structure.
+De-identification (or anonymisation) allows for the automatic transformation of sensitive data detected in a text to protect privacy while preserving the document's structure.
 This feature is configurable for each detector via the `deidentification_config` field.
 When this field is present, the API response includes an additional `redacted_text` field containing the modified text.
 
@@ -790,20 +797,23 @@ Our API supports several types of de-identification operations:
 
 ### Language Compatibility and Performance
 
-The DLP API may support multiple languages depending on the underlying model used. Please refer to the model specifications in the [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to check which languages are available for your chosen model. Detection accuracy depends on language quality, structure, and content.
+The DLP API may support multiple languages depending on the underlying model used. Please refer to the model specifications in the [Catalog](/links/public-cloud/ai-endpoints-catalog) to check which languages are available for your chosen model. Detection accuracy depends on language quality, structure, and content.
 
 ### Payload size
+
 Very large documents or large batches may increase processing time. For optimal performance, consider splitting large inputs into smaller logical units.
 
 ## Conclusion
 
-In this guide, we have explained how to use the Data Loss Prevention API available on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). We have provided a comprehensive overview of the features that can help you integrate the DLP API into your own application.
+This guide covered the Data Loss Prevention API on [AI Endpoints](/links/public-cloud/ai-endpoints) and the main features for integrating it into your application.
 
 ## Go Further
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 ## Feedback
 
