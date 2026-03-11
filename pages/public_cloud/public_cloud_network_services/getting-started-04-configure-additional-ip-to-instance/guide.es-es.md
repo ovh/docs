@@ -40,6 +40,18 @@ Es posible que necesite configurar direcciones Additional IP en sus instancias, 
 
 ## Procedimiento
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 Esta guía explica las configuraciones de las distribuciones y sistemas operativos más habituales. En primer lugar, conéctese a su instancia por SSH o a través de una sesión de conexión a la interfaz gráfica de usuario (VNC para una instancia Windows). Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 
 > [!primary]
@@ -295,7 +307,7 @@ Esta guía explica las configuraciones de las distribuciones y sistemas operativ
 > **Windows Server**
 >> Windows Server
 >>
->> En el área de Public Cloud, abra `Instances`{.action} en el menú de la izquierda y haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
+>> En su proyecto Public Cloud, abra `Instances`{.action} en el menú de la izquierda y haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
 >>
 >> **Paso 1: comprobar la configuración de red**
 >>

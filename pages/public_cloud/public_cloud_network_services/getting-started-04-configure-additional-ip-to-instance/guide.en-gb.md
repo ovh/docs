@@ -36,6 +36,17 @@ You may need to configure Additional IP addresses on your instances, for example
 
 ## Instructions
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
@@ -290,7 +301,7 @@ The following sections contain the configurations for the most commonly used dis
 > **Windows Server**
 >> Windows Server
 >>
->> In the Public Cloud area, open `Instances`{.action} in the left-hand menu and click on the name of your instance. Navigate to the `VNC Console`{.action} tab.
+>> In your Public Cloud project, open `Instances`{.action} in the left-hand menu and click on the name of your instance. Navigate to the `VNC Console`{.action} tab.
 >>
 >> **Step 1: Verify the network configuration**
 >>

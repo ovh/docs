@@ -42,7 +42,16 @@ Di default è configurato soltanto l’IPv4.
 * Disporre di un qualsiasi modello di istanza Public Cloud
 * Avere accesso amministrativo (sudo) via SSH o desktop remoto (Windows) al server
 * Possedere conoscenze base di rete
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -65,7 +74,7 @@ Ecco una lista di termini impiegati in questa guida:
 
 ### Recupera le informazioni di rete
 
-Accedi al tuo Spazio Cliente, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all'istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
+Nel tuo progetto Public Cloud, clicca su `Istanze`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all’istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
