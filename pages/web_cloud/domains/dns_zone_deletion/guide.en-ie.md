@@ -79,7 +79,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> > [!primary]
 >> >
->> > If you want to immediately delete a DNS zone from your OVHcloud Control Panel, complete the 3 steps to request cancellation on the date of effect, then contact OVHcloud support by creating a support ticket from the [help center](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > If you want to immediately delete a DNS zone from your OVHcloud Control Panel, complete the 3 steps to request cancellation on the date of effect, then contact OVHcloud support by creating a support ticket from the [help center](/links/support-contact).
 >> > In the ticket, specify the concerned DNS zone and clearly state your wish to delete it immediately without waiting for the date of effect.
 
 ## Go further
