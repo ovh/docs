@@ -36,7 +36,7 @@ Por ejemplo, es posible que necesite eliminar una zona DNS para su dominio en OV
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [My services](/links/control-panel/billing-services)
+- **Enlace directo:** [Mis servicios](/links/control-panel/billing-services)
 - **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis soluciones y servicios`{.action}
 
 ---
@@ -79,7 +79,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> > [!primary]
 >> >
->> > Si desea eliminar inmediatamente una zona DNS de su área de cliente de OVHcloud, realice los 3 pasos para solicitar la cancelación en la fecha de aplicación, y luego contacte con el soporte de OVHcloud creando un ticket de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > Si desea eliminar inmediatamente una zona DNS de su área de cliente de OVHcloud, realice los 3 pasos para solicitar la cancelación en la fecha de aplicación, y luego contacte con el soporte de OVHcloud creando un ticket de asistencia desde el [centro de ayuda](/links/support-contact).
 >> > En el ticket, indique la zona DNS afectada y exprese claramente su deseo de eliminarla inmediatamente sin esperar a la fecha de aplicación.
 
 ## Más información

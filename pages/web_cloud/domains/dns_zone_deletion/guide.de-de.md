@@ -79,7 +79,7 @@ Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> > [!primary]
 >> >
->> > Wenn Sie eine DNS-Zone sofort aus Ihrem OVHcloud Kundencenter löschen möchten, führen Sie die 3 Schritte aus, um die Kündigung zum Datum des Inkrafttretens zu beantragen, und kontaktieren Sie anschließend den OVHcloud Support, indem Sie ein Support-Ticket über das [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
+>> > Wenn Sie eine DNS-Zone sofort aus Ihrem OVHcloud Kundencenter löschen möchten, führen Sie die 3 Schritte aus, um die Kündigung zum Datum des Inkrafttretens zu beantragen, und kontaktieren Sie anschließend den OVHcloud Support, indem Sie ein Support-Ticket über das [Help Center](/links/support-contact) erstellen.
 >> > Geben Sie im Ticket die betroffene DNS-Zone an und erklären Sie ausdrücklich, dass Sie diese sofort löschen möchten, ohne auf das Datum des Inkrafttretens zu warten.
 
 ## Weiterführende Informationen

@@ -22,7 +22,7 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 > [!primary]
 >
-> La création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](/links/control-panel/web-dns-zone) est totalement gratuite.
+> La création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](/links/control-panel/web-dns-zone) est gratuite.
 
 **Découvrez comment supprimer une zone DNS chez OVHcloud pour votre nom de domaine via votre espace client OVHcloud.**
 
@@ -79,7 +79,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> > [!primary]
 >> >
->> > Si vous souhaitez supprimer immédiatement une zone DNS de votre espace client OVHcloud, réalisez les 3 étapes pour demander la résiliation à la date d'effet, puis contactez le support OVHcloud en créant un ticket d'assistance depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
+>> > Si vous souhaitez supprimer immédiatement une zone DNS de votre espace client OVHcloud, réalisez les 3 étapes pour demander la résiliation à la date d'effet, puis contactez le support OVHcloud en créant un ticket d'assistance depuis le [centre d'aide](/links/support-contact).
 >> > Précisez dans le ticket la zone DNS concernée et votre souhait explicite de la supprimer immédiatement sans attendre la date d'effet.
 
 ## Aller plus loin
