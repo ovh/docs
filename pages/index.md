@@ -2378,6 +2378,7 @@
                 + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/backup-restore-pv-volume-snapshot)
                 + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
                 + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
++ Network
     + [Additional IP](network-additional-ip)
         + [Key concepts](network-additional-ip-key-concepts)
             + [Concepts - Primary and Additional IP](network/additional_ip/primary_additional_ip_concepts)
