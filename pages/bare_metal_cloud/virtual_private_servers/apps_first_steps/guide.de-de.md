@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Ziel
 
-OVHcloud bietet VPS-Nutzern vorinstallierte Images verschiedener Anwendungen für eine schnelle und einfache Inbetriebnahme mit nur wenigen Klicks. 
+OVHcloud bietet VPS-Nutzern vorinstallierte Images verschiedener Anwendungen für eine schnelle und einfache Inbetriebnahme mit nur wenigen Klicks.
 
 **Diese Anleitung erklärt die Ersteinrichtung vorinstallierter Anwendungen auf Ihrem VPS.**
 
@@ -77,7 +77,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, loggen Sie sich mit dem CentOS-Benutzer über SSH auf Ihrem VPS ein und führen Sie den Befehl "sudo whmlogin" aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, loggen Sie sich mit dem CentOS-Benutzer über SSH auf Ihrem VPS ein und führen Sie den Befehl `sudo whmlogin` aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">
@@ -142,7 +142,7 @@ Sie können Ihre Plesk Lizenz für Ihren VPS über das [OVHcloud Kundencenter be
 Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Docker.
 
 1. Verbinden Sie sich via SSH mit dem Benutzernamen und dem Passwort aus der E-Mail mit dem Server.
-2. Überprüfen Sie, dass Docker funktioniert, mit dem Befehl "docker run hello-world".
+2. Überprüfen Sie, dass Docker funktioniert, mit dem Befehl `docker run hello-world`.
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
@@ -211,4 +211,4 @@ IMPORTANT NOTES:
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

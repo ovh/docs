@@ -134,7 +134,7 @@ Das aktive Fenster Ihres Terminals ändert sich und Sie wechseln automatisch auf
 
 Um eine Shell zu verlassen (während diese weiter ausgeführt wird), drücken Sie auf `Ctrl`{.action}, dann auf `a`{.action} und dann auf `d`{.action} Ihrer Tastatur.
 
-Um von einer Shell zur anderen zu wechseln verwenden Sie folgenden Befehl:
+Um von einer Shell zur anderen zu wechseln, verwenden Sie folgenden Befehl:
 
 ```sh
 ~/server$ screen -x name_der_shell

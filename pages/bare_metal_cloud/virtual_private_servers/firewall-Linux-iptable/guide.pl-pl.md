@@ -29,10 +29,10 @@ Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablok
 >
 > Niniejszy przewodnik zawiera informacje o zamówieniach na dystrybucję Ubuntu Server.
 >
-> Niniejsza instrukcja ma charakter poglądowy. Być może będziesz musiał dostosować niektóre komendy do konkretnej dystrybucji i/lub systemu operacyjnego, którego używasz. W niektórych sytuacjach rekomendujemy użycie narzędzi zewnętrznych. W przypadku pytań dotyczących korzystania z tych narzędzi zapoznaj się z oficjalną dokumentacją producenta.  
+> Niniejsza instrukcja ma charakter poglądowy. Być może będziesz musiał dostosować niektóre komendy do konkretnej dystrybucji i/lub systemu operacyjnego, którego używasz. W niektórych sytuacjach rekomendujemy użycie narzędzi zewnętrznych. W przypadku pytań dotyczących korzystania z tych narzędzi zapoznaj się z oficjalną dokumentacją producenta.
 >
 > Większość reguł opisanych w tym przewodniku zakłada, że iptables jest domyślnie skonfigurowany do DROP ruchu przychodzącego i że selektywnie zezwalasz na ruch przychodzący. Jeśli zamierzasz ustawić inny typ konfiguracji, zalecamy zapoznanie się z dodatkową dokumentacją.
-> 
+>
 
 ### Etap 1: aktualizacja systemu
 
@@ -45,7 +45,7 @@ Więcej informacji znajdziesz w przewodniku dotyczącym [bezpieczeństwa serwera
 > [!primary]
 >
 > Istnieją dwie różne wersje iptables dla IPv4 i IPv6. Zasady, które opisujemy w tym tutorialu Linux iptables dotyczą IPv4.
-> Aby skonfigurować IPv6, użyj narzędzia iptables6. Te dwa różne protokoły nie działają razem i muszą być skonfigurowane niezależnie.
+> Aby skonfigurować IPv6, użyj narzędzia ip6tables. Te dwa różne protokoły nie działają razem i muszą być skonfigurowane niezależnie.
 >
 
 iptables jest domyślnie zainstalowany na większości systemów Linux. Aby potwierdzić, że usługa iptables jest zainstalowana, wpisz następujące polecenie:
@@ -125,15 +125,15 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
 Opcje działają następująco:
 
-- -p : Sprawdź określony protokół (tcp).
+- -p: Sprawdź określony protokół (tcp).
 - --dport: Określa port docelowy.
-- -j jump: Wykonaj czynność 
+- -j jump: Wykonaj czynność.
 
 > [!warning]
 > W przypadku utraty dostępu do serwera, możesz nadal używać narzędzia KVM/IPMI, aby uzyskać do niego dostęp, zmienić konfigurację lub usunąć reguły.
 >
-> Więcej informacji na temat dostępu do tego narzędzia znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).  
-> 
+> Więcej informacji na temat dostępu do tego narzędzia znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+>
 
 ### Etap 6: kontrola ruchu na adres IP
 
@@ -145,7 +145,7 @@ sudo iptables -A INPUT -s adres_IP_do_autoryzacji -j ACCEPT
 
 Zastąp adres IP w zamówieniu adresem IP, który chcesz autoryzować.
 
-Możesz również zablokować ruch z adresu IP 
+Możesz również zablokować ruch z adresu IP:
 
 ```bash
 sudo iptables -A INPUT -s adres_IP_do_blokowania -j DROP
@@ -177,7 +177,7 @@ Opcja -A dodaje nową regułę do łańcucha. Jeśli połączenie przechodzi prz
 
 > [!warning]
 > 
->Uwaga, jeśli wpiszesz to polecenie przed wykonaniem [etapu piątego](#step5), zablokujesz dostęp do wszystkich usług, w tym do bieżącego dostępu, do SSH. Jest to szczególnie problematyczne w maszynie do zdalnego dostępu. 
+>Uwaga, jeśli wpiszesz to polecenie przed wykonaniem [etapu piątego](#step5), zablokujesz dostęp do wszystkich usług, w tym do bieżącego dostępu, do SSH. Jest to szczególnie problematyczne w maszynie do zdalnego dostępu.
 >
 
 ### Etap 8: usuń regułę
@@ -222,4 +222,4 @@ Nie wahaj się doświadczyć, ponieważ zawsze możesz usunąć reguły, któryc
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie  <https://community.ovh.com/en/>.
+Dołącz do [społeczności naszych użytkowników](/links/community).

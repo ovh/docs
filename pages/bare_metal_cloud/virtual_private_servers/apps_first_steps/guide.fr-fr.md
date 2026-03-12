@@ -77,7 +77,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « sudo whmlogin » pour générer un nouveau lien. 
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
 >
 
 <ol start="3">
@@ -96,13 +96,13 @@ Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec 
 
 ///
 
-/// details | Pourquoi définir le mot de passe root?
+/// details | Pourquoi définir le mot de passe root ?
 
 WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
 
 ///
 
-/// details | Où est ma licence pour cPanel?
+/// details | Où est ma licence pour cPanel ?
 
 Vous pouvez commander votre licence cPanel pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
@@ -119,7 +119,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
 2. Cliquez sur l'URL de Plesk dans cet e-mail.
 3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
-4. Une fois connecté, Plesk vous demandera:   
+4. Une fois connecté, Plesk vous demandera :
     a) Vos coordonnées.  
     b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.  
     c) Des informations sur la licence.*  
@@ -127,7 +127,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-/// details | Où est ma licence Plesk?
+/// details | Où est ma licence Plesk ?
 
 Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
@@ -142,7 +142,7 @@ Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Docker.
 
 1. Connectez-vous en SSH sur le serveur à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
-2. Vérifiez que Docker fonctionne à l'aide de la commande « docker run hello-world ».
+2. Vérifiez que Docker fonctionne à l'aide de la commande `docker run hello-world`.
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -150,7 +150,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 
 Cette section s'applique uniquement aux installations de WordPress, Drupal, Joomla! et PrestaShop. Elle ne s'applique pas pour les autres installations.
 
-1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
+1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A` qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
 
    - personaldomain.ovh <br>
    - www.personaldomain.ovh <br>  

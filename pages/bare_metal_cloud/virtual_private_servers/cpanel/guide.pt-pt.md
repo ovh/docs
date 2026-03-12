@@ -6,12 +6,12 @@ updated: 2025-09-11
 
 ## Objetivo
 
-O cPanel é um painel de configuração que facilita a gestão dos alojamentos web. Torna as tarefas complexas mais acessíveis, incluindo para os novos utilizadores. Oferece uma vasta gama de funcionalidades como, por exemplo, para a gestão: 
+O cPanel é um painel de configuração que facilita a gestão dos alojamentos web. Torna as tarefas complexas mais acessíveis, incluindo para os novos utilizadores. Oferece uma vasta gama de funcionalidades como, por exemplo, para a gestão:
 
-- e-mails
-- domínios
+- E-mails
+- Domínios
 - Bases de dados
-- da segurança
+- Da segurança
 - etc.
 
 Graças a uma interface gráfica que permite a automatização dos parâmetros, o alojamento de websites é simplificado.
@@ -44,7 +44,7 @@ Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a par
 > [!warning]
 >
 > Se reinstalar um VPS, todos os dados armazenados no VPS serão eliminados.
-> 
+>
 
 Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPanel.
 
@@ -53,9 +53,9 @@ Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPane
 Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de acesso ao servidor cPanel:
 
 ```
- |    As suas aplicações:
+ |    Your application(s):
  |    Application: cpanel
- |    Pode conectar-se ao cPanel a partir de https://<ip>:2087/<session_parameters>
+ |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
 ```
 
 ### Primeira ligação

@@ -13,9 +13,9 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 **This tutorial explains how to launch a Minecraft Java Edition server on an OVHcloud VPS and test its connectivity.**
 
 > [!warning]
-> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
+> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
+> If you encounter any difficulties performing these actions, contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -36,7 +36,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 The first step is to set up your VPS for a Minecraft installation.
 <br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](/links/manager), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps) if necessary.
 
-Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps). 
+Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 First update the packages to their latest versions:
 
@@ -48,7 +48,7 @@ $ sudo apt update
 $ sudo apt full-upgrade
 ```
 
-Use the following command to ensure all required packages are installed. 
+Use the following command to ensure all required packages are installed.
 
 ```sh
 $ sudo apt install screen nano wget git
@@ -79,7 +79,7 @@ $ sudo su - minecraft
 > [!primary]
 >
 > The following commands need to be executed by the user "minecraft".
-> 
+>
 
 To complete the setup preparations, create a folder named `server`.
 
@@ -90,7 +90,7 @@ $ mkdir ~/server && cd ~/server
 ### Step 2: Install your Vanilla Minecraft server
 
 > [!primary]
-> 
+>
 > A "Vanilla" server is an instance without any add-ons or plugins. You will experience the game the way it was created by the developers.
 >
 
@@ -138,7 +138,7 @@ To switch from one shell to another, use this command:
 
 You can also press `Ctrl`{.action}, then `a`{.action}, then `n`{.action} on your keyboard.
 
-In the previously created `minecraft1` shell, launch the Minecraft server with the following command. (Use `ls` to verify the filename in case it differs.) 
+In the previously created `minecraft1` shell, launch the Minecraft server with the following command. (Use `ls` to verify the filename in case it differs.)
 
 ```sh
 ~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
@@ -146,7 +146,7 @@ In the previously created `minecraft1` shell, launch the Minecraft server with t
 
 - `Xmx1024M`: This sets the server to start up with 1024 MB or 1 GB of RAM. This limit can be increased if you want your server to start up with more RAM.
 - `Xms1024M`: This sets the server to use a maximum of 1024M RAM. You can increase this limit if you want your server to run with more RAM, to accommodate more players, or if you have the impression that your server is running slowly.
-- `jar`: Specifies which server jar file to run. 
+- `jar`: Specifies which server jar file to run.
 - `nogui`: This instructs the server not to launch a GUI, since it's a server and you don't have a GUI.
 
 Alternatively, you can use the command below instead:
@@ -181,10 +181,10 @@ By default, no port needs to be specified.
 
 Your Vanilla Minecraft server is now installed on your VPS.
 
-Please note that this installation guide should also work on an OVHcloud [dedicated server](/links/bare-metal/bare-metal) or a [Public Cloud](/links/public-cloud/compute) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
+Note that this installation guide should also work on an OVHcloud [dedicated server](/links/bare-metal/bare-metal) or a [Public Cloud](/links/public-cloud/compute) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
 
 ## Go further <a name="gofurther"></a>
 
-For add-ons, mods and to personalise your Minecraft experience, please consult this official documentation: <https://help.mojang.com/>.
+For add-ons, mods and to personalise your Minecraft experience, consult this official documentation: <https://help.mojang.com/>.
 
 Join our [community of users](/links/community).

@@ -29,7 +29,7 @@ I firewall funzionano definendo regole che disciplinano il traffico autorizzato 
 >
 > Questa guida ti mostra i comandi per una distribuzione Ubuntu Server.
 >
-> Questa è una guida per uso generale. Alcuni comandi dovranno essere adattati in base alla distribuzione o al sistema operativo che utilizzi. In qualche caso ti suggeriremo l’utilizzo di strumenti esterni. Se hai dubbi riguardo al loro utilizzo, consulta le relative guide ufficiali.  
+> Questa è una guida per uso generale. Alcuni comandi dovranno essere adattati in base alla distribuzione o al sistema operativo che utilizzi. In qualche caso ti suggeriremo l’utilizzo di strumenti esterni. Se hai dubbi riguardo al loro utilizzo, consulta le relative guide ufficiali.
 >
 > La maggior parte delle regole descritte in questa guida presuppone che iptables sia configurato per impostazione predefinita in modo da GETTARE (DROP) il traffico in entrata e che si consenta selettivamente il traffico in entrata. Se si intende impostare un altro tipo di configurazione, si consiglia di consultare la documentazione aggiuntiva.
 >
@@ -45,7 +45,7 @@ Per maggiori informazioni, consulta la nostra guida sulla [sicurezza di un VPS](
 > [!primary]
 >
 > Esistono due versioni differenti di iptables, per IPv4 e IPv6. Le regole di questa guida Linux iptables sono IPv4.
-> Per configurare iptables per IPv6, utilizza il programma iptables6. Questi due diversi protocolli non funzionano insieme e devono essere configurati in modo indipendente.
+> Per configurare iptables per IPv6, utilizza il programma ip6tables. Questi due diversi protocolli non funzionano insieme e devono essere configurati in modo indipendente.
 >
 
 iptables è installato di default sulla maggior parte dei sistemi Linux. Per confermare l'installazione di iptables, utilizza il comando:
@@ -127,13 +127,13 @@ Le opzioni funzionano in questo modo:
 
 - -p: Verifica il protocollo specificato (tcp).
 - --dport: Specifica il porto di destinazione.
-- -j jump: Effettua l'azione 
+- -j jump: Effettua l'azione.
 
 > [!warning]
 > In caso di perdita dell'accesso al tuo server, puoi sempre utilizzare il tool KVM/IPMI per accedervi nuovamente e modificare la tua configurazione o eliminare le tue regole.
 >
-> Per maggiori informazioni sull'accesso a questo tool, consulta [questa guida](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).  
-> 
+> Per maggiori informazioni sull'accesso a questo tool, consulta [questa guida](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+>
 
 ### Step 6: controlla il traffico per indirizzo IP
 
@@ -145,7 +145,7 @@ sudo iptables -A INPUT -s il tuo_indirizzo_IP_da_autorizzare -j ACCEPT
 
 Sostituisci l'indirizzo IP nel comando con l'indirizzo IP che vuoi autorizzare.
 
-Puoi anche bloccare il traffico a partire da un indirizzo IP 
+Puoi anche bloccare il traffico a partire da un indirizzo IP:
 
 ```bash
 sudo iptables -A INPUT -s il vostro_indirizzo_IP_a_bloccare -j DROP
@@ -177,7 +177,7 @@ L'opzione -A aggiunge una nuova regola al canale. Se una connessione passa attra
 
 > [!warning]
 > 
->Attenzione: se digiti questo ordine prima di effettuare [lo Step 5](#step5), bloccherai tutti gli accessi, incluso quello in corso, l'accesso SSH. Questo è particolarmente problematico per una macchina su cui puoi accedere a distanza. 
+>Attenzione: se digiti questo ordine prima di effettuare [lo Step 5](#step5), bloccherai tutti gli accessi, incluso quello in corso, l'accesso SSH. Questo è particolarmente problematico per una macchina su cui puoi accedere a distanza.
 >
 
 ### Step 8: elimina una regola
@@ -222,4 +222,4 @@ Non esitare a sperimentare perché puoi sempre eliminare le regole di cui non ha
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

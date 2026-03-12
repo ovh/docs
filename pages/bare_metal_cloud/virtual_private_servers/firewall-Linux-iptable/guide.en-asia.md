@@ -14,7 +14,7 @@ Firewalls work by defining rules that govern both authorised and blocked traffic
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](/links/community) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -30,21 +30,21 @@ Firewalls work by defining rules that govern both authorised and blocked traffic
 >
 > This guide is for general use. You may need to adapt some commands depending on the distribution and/or operating system you are using. Some tips may suggest using third-party tools. If you have any questions about their use, please refer to their official documentation.
 >
-> Most of the rules outlined in this guide assume that your iptables is configured by default to DROP incoming traffic, and that you selectively authorize incoming traffic. If you intend to set up a different type configuration, we recommend that you consult the additional documentation.
-> 
+> Most of the rules outlined in this guide assume that your iptables is configured by default to DROP incoming traffic, and that you selectively authorize incoming traffic. If you intend to set up a different type of configuration, we recommend that you consult the additional documentation.
+>
 
 ### Step 1: Update your system
 
 Distribution and operating system developers offer frequent software package updates, very often for security reasons. **Keeping your distribution or operating system up-to-date is essential for securing your server.**
 
-Please refer to our guide on [securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) for more information.
+Refer to our guide on [securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) for more information.
 
 ### Step 2: Install the iptables firewall in Ubuntu
 
 > [!primary]
 >
 > There are two different versions of *iptables*, for IPv4 and IPv6. The rules we cover in this Linux *iptables* tutorial concern IPv4.
-> To configure *iptables* for IPv6, you must use the *iptables* utility. These two different protocols do not work together and must be configured independently.
+> To configure *iptables* for IPv6, you must use the *ip6tables* utility. These two different protocols do not work together and must be configured independently.
 >
 
 *iptables* is installed by default on most Linux systems. To confirm that *iptables* is installed, use the following command:
@@ -126,13 +126,13 @@ The options work this way:
 
 - -p: Checks the specified protocol (tcp).
 - --dport: Specifies the destination port.
-- -j jump: Performs the action. 
+- -j jump: Performs the action.
 
 > [!warning]
 > If you lose access to your server, you can always use the KVM/IPMI tool to access it again and modify your configuration or delete your rules.
 >
-> For more information on accessing this tool, please refer to [this guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).  
-> 
+> For more information on accessing this tool, refer to [this guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+>
 
 ### Step 6: Control traffic by IP address
 
@@ -176,7 +176,7 @@ The -A option adds a new rule to the string. If a connection goes through ports 
 
 > [!warning]
 > 
-> If you type this command before performing [step 5](#step5), you will block all access including the current one, SSH access. This is particularly problematic on a machine you access remotely. 
+> If you type this command before performing [step 5](#step5), you will block all access including the current one, SSH access. This is particularly problematic on a machine you access remotely.
 >
 
 ### Step 8: Delete a rule

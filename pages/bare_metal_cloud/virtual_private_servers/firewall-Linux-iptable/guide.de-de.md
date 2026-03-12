@@ -14,13 +14,13 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kunden-Account.
-- Sie haben administrativen Zugriff (root/sudo) über SSH auf Ihren Server. 
+- Sie haben administrativen Zugriff (root/sudo) über SSH auf Ihren Server.
 
 ## In der praktischen Anwendung
 
@@ -28,7 +28,7 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 >
 > Diese Anleitung verwendet Befehle für eine Ubuntu Server Distribution.
 >
-> Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
+> Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.
 >
 > Die meisten der hier beschriebenen Regeln gehen davon aus, dass Ihr *iptables* so konfiguriert ist, dass es eingehenden Datenverkehr selektiv zulässt und dann *DROP* anwendet. Wenn Sie vorhaben, eine andere Art von Konfiguration einzurichten, empfehlen wir Ihnen, die zugehörige Dokumentation zu konsultieren.
 >
@@ -44,7 +44,7 @@ Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines VPS](
 > [!primary]
 >
 > Es gibt zwei verschiedene Versionen von *iptables*, für IPv4 und IPv6. Die Regeln, die wir in diesem Linux-spezifischen Tutorial erläutern, betreffen IPv4.
-> Um *iptables* für IPv6 zu konfigurieren müssen Sie das Dienstprogramm *iptables6* verwenden. Diese beiden Protokolle funktionieren nicht miteinander und müssen unabhängig konfiguriert werden.
+> Um *iptables* für IPv6 zu konfigurieren müssen Sie das Dienstprogramm *ip6tables* verwenden. Diese beiden Protokolle funktionieren nicht miteinander und müssen unabhängig konfiguriert werden.
 >
 
 *iptables* ist standardmäßig für die meisten Linux-Systeme installiert. Um zu bestätigen, dass *iptables* installiert ist, verwenden Sie folgenden Befehl:
@@ -132,7 +132,7 @@ Die Optionen funktionieren wie folgt:
 > Wenn Sie den Zugriff auf Ihren Server verlieren, können Sie immer noch das KVM/IPMI Tool verwenden, um Ihre Konfiguration zu ändern oder Ihre Regeln zu löschen.
 >
 > Weitere Informationen zum Zugriff auf dieses Tool finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
-> 
+>
 
 ### Schritt 6: Den Traffic nach IP-Adresse kontrollieren
 
@@ -176,7 +176,7 @@ Die Option "-A" fügt der Kette eine neue Regel hinzu. Wenn eine Verbindung übe
 
 > [!warning]
 > 
->Wenn Sie diesen Befehl eingeben, bevor Sie [Schritt 5](#step5) ausführen, blockieren Sie alle Zugänge und damit auch die laufende SSH-Verbindung. Dies ist besonders relevant bei einem Server, auf den Sie *remote* zugreifen. 
+>Wenn Sie diesen Befehl eingeben, bevor Sie [Schritt 5](#step5) ausführen, blockieren Sie alle Zugänge und damit auch die laufende SSH-Verbindung. Dies ist besonders relevant bei einem Server, auf den Sie *remote* zugreifen.
 >
 
 ### Schritt 8: Eine Regel löschen
@@ -221,4 +221,4 @@ Zögern Sie nicht, zu experimentieren, denn Sie können nicht mehr benötigte Re
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf [unsere Community](/links/community).

@@ -15,8 +15,7 @@ Vous pouvez louer un serveur Minecraft préconstruit ou le configurer vous-même
 > [!warning]
 > Ce guide vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un 
-[prestataire spécialisé](/links/partner). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce guide.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis
@@ -29,14 +28,14 @@ Vous pouvez louer un serveur Minecraft préconstruit ou le configurer vous-même
 ## En pratique
 
 > [!primary]
-> Ce tutoriel est basé sur la version « 1.21 » de Minecraft Java Edition et la version « 24.0.1 » de OpenJDK.
+> Ce tutoriel est basé sur la version « 1.21 » de Minecraft Java Edition et la version « 24.0.1 » d'OpenJDK.
 >
 
 ### Étape 1 : préparer le serveur
 
 La première étape consiste à configurer votre VPS pour une installation de Minecraft.
 <br>Il est recommandé de commander un nouveau VPS ou de réinstaller un VPS existant depuis votre [espace client OVHcloud](/links/manager), en utilisant la dernière version disponible d'Ubuntu ou de Debian.
-<br>Consultrez notre guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#installation-ou-reinstallation-de-votre-vps-gamme-vps-actuelle) » si nécessaire.
+<br>Consultez notre guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#installation-ou-reinstallation-de-votre-vps-gamme-vps-actuelle) » si nécessaire.
 
 Une fois le système d'exploitation installé, connectez-vous à votre VPS en SSH comme décrit dans le guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
 
@@ -119,7 +118,7 @@ Un fichier nommé `eula.txt` est alors créé à la racine de votre serveur, con
 
 Votre serveur est ensuite prêt à être lancé.
 
-Au cours de l'étape 1, nous avons installé le paquet `screen` qui permet d'ouvrir plusieurs sessions du terminal (*shell*). Nous allons démarrer Minecraft dans une nouvelle session qui peut s'exécuter en arrière-plan. L'utilisation de `screen` peut être très pratique car elle vous permet de lancer plusieurs serveurs Minecraft simultanément.
+Au cours de l'étape 1, nous avons installé le paquet `screen` qui permet d'ouvrir plusieurs sessions du terminal (*shell*). Nous allons démarrer Minecraft dans une nouvelle session qui peut s'exécuter en arrière-plan. `screen` est très pratique pour lancer plusieurs serveurs Minecraft simultanément.
 
 Tout d'abord, nous allons créer un nouveau `shell` nommé `minecraft1` :
 
@@ -135,7 +134,7 @@ La fenêtre active de votre terminal change, vous basculez automatiquement sur u
 
 Pour vous détacher du `shell` (et le maintenir en cours d'exécution), appuyez sur `Ctrl`{.action}, puis sur `a`{.action}, puis sur `d`{.action} sur votre clavier.
 
-Pour passer d'un `shell`à un autre, utilisez la commande suivante :
+Pour passer d'un `shell` à un autre, utilisez la commande suivante :
 
 ```sh
 ~/server$ screen -x nom_du_shell
@@ -190,6 +189,6 @@ Notez que ce guide d'installation est également valable pour un [serveur dédi�
 
 ## Aller plus loin <a name="gofurther"></a>
 
-Pour ajouter des add-ons, des mods et configurer plus finement votre serveur Minecraft, veuillez consulter la documentation officielle suivante: <https://help.mojang.com/>.
+Pour ajouter des add-ons, des mods et configurer plus finement votre serveur Minecraft, consultez la documentation officielle : <https://help.mojang.com/>.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

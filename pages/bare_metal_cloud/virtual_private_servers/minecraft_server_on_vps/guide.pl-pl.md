@@ -15,7 +15,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 > [!warning]
 > Niniejszy przewodnik wyjaśnia, jak korzystać z jednego lub kilku rozwiązań OVHcloud za pomocą zewnętrznych narzędzi i opisuje działania, jakie należy podjąć w konkretnym przypadku. Może być konieczne dostosowanie instrukcji do Twojego przypadku.
 >
-> W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Więcej informacji znajdziesz w sekcji [Sprawdź również](#gofurther) tego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -34,7 +34,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 ### Etap 1: przygotować serwer
 
 Pierwszy etap polega na skonfigurowaniu serwera VPS do instalacji Minecraft.
-<br>Zaleca się zamówienie nowego VPS lub przeinstalowanie istniejącego z [Panelu client OVHcloud](/links/manager), używając najnowszej dostępnej wersji Ubuntu lub Debiana. W razie potrzeby zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)".
+<br>Zaleca się zamówienie nowego VPS lub przeinstalowanie istniejącego z [Panelu klienta OVHcloud](/links/manager), używając najnowszej dostępnej wersji Ubuntu lub Debiana. W razie potrzeby zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)".
 
 Po zainstalowaniu systemu operacyjnego zaloguj się do Twojego serwera VPS przez SSH, jak opisano w przewodniku "[Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
 
@@ -170,7 +170,7 @@ Aby wyłączyć serwer, wprowadź komendę `stop`.
 
 Twoja instancja serwerowa działa teraz. Aby grać w grę, pobierz klienta Minecraft z oficjalnej [strony internetowej](https://www.minecraft.net/).
 
-Zainstaluj i uruchom klienta dla systemu operacyjnego i zaloguj się.
+Zainstaluj i uruchom klienta dla Twojego systemu operacyjnego i zaloguj się.
 
 ![Połączenie z serwerem](images/login_minecraft.png){.thumbnail}
 

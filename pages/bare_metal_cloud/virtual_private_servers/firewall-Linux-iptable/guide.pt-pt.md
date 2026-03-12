@@ -29,7 +29,7 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 >
 > Este guia indica os comandos para uma distribuição Ubuntu Server.
 >
-> Manual para utilização geral. Poderá ter de adaptar alguns comandos consoante a distribuição e/ou o sistema operativo que utiliza. Poderá ser-lhe sugerida a utilização de ferramentas de terceiros. Em caso de dúvidas relacionadas com a sua utilização, consulte a documentação oficial.  
+> Manual para utilização geral. Poderá ter de adaptar alguns comandos consoante a distribuição e/ou o sistema operativo que utiliza. Poderá ser-lhe sugerida a utilização de ferramentas de terceiros. Em caso de dúvidas relacionadas com a sua utilização, consulte a documentação oficial.
 >
 > A maioria das regras descritas neste guia assume que o seu iptables está configurado por defeito para DROP o tráfego de entrada, e que permite seletivamente o tráfego de entrada. Caso pretenda efetuar outro tipo de configuração, recomendamos que consulte a documentação adicional.
 >
@@ -45,7 +45,7 @@ Para mais informações, consulte o nosso manual sobre a [segurança de um VPS](
 > [!primary]
 >
 > Existem duas versões diferentes de iptables para IPv4 e IPv6. As regras que estamos a cobrir neste tutorial Linux iptables dizem respeito ao IPv4.
-> Para configurar iptables para IPv6, deve utilizar o utilitário iptables6. Estes dois protocolos diferentes não funcionam em conjunto e devem ser configurados de forma independente.
+> Para configurar iptables para IPv6, deve utilizar o utilitário ip6tables. Estes dois protocolos diferentes não funcionam em conjunto e devem ser configurados de forma independente.
 >
 
 O iptables é instalado de forma padrão na maior parte dos sistemas Linux. Para confirmar que o iptables está instalado, utilize o seguinte comando:
@@ -127,13 +127,13 @@ As opções funcionam da seguinte forma:
 
 - -p: Verifique o protocolo especificado (tcp).
 - --dport: Especifica o porto de destino.
-- -j jump: Efetua a ação 
+- -j jump: Efetua a ação.
 
 > [!warning]
 > Em caso de perda de acesso ao seu servidor, poderá sempre utilizar a ferramenta KVM/IPMI para aceder novamente e modificar a sua configuração ou eliminar as suas regras.
 >
-> Para mais informações sobre o acesso a esta ferramenta, consulte [este guia](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).  
-> 
+> Para mais informações sobre o acesso a esta ferramenta, consulte [este guia](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+>
 
 ### Etapa 6: controlar o tráfego por endereço IP
 
@@ -177,7 +177,7 @@ A opção -A acrescenta uma nova regra à cadeia. Se uma ligação passa por por
 
 > [!warning]
 > 
->Atenção, se introduzir este comando antes de efetuar [o passo 5](#step5), bloqueará todos os acessos, incluindo o que está em curso, e o acesso SSH. Isto é particularmente problemático numa máquina na qual se pode aceder remotamente. 
+>Atenção, se introduzir este comando antes de efetuar [o passo 5](#step5), bloqueará todos os acessos, incluindo o que está em curso, e o acesso SSH. Isto é particularmente problemático numa máquina na qual se pode aceder remotamente.
 >
 
 ### Etapa 8: eliminar uma regra
@@ -221,4 +221,4 @@ Não hesite em experimentar, pois pode sempre eliminar as regras de que não pre
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

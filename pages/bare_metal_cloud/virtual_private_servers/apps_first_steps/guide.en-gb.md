@@ -50,9 +50,9 @@ details > :not(summary) {
 
 ## Objective
 
-OVHcloud offers VPS customers pre-installed application images for quick and easy deployment of applications with few clicks only. 
+OVHcloud offers VPS customers pre-installed application images for quick and easy deployment of applications in just a few clicks.
 
-**This guide will provide the first steps for each and every pre-installed application image on our VPS.**
+**This guide will provide the first steps for each pre-installed application image on our VPS.**
 
 ## Requirements
 
@@ -78,7 +78,7 @@ This section will explain the first steps specifically for the cPanel pre-instal
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the "sudo whmlogin" command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the `sudo whmlogin` command to generate a new link.
 >
 
 <ol start="3">
@@ -143,7 +143,7 @@ You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control 
 This section will explain the first steps specifically for the Docker pre-installed image.
 
 1. SSH into the server using the login details sent in the email to you.
-2. Check that Docker is working using the "docker run hello-world" command.
+2. Check that Docker is working using the `docker run hello-world` command.
 
 No further steps are necessary to complete the first configuration of this application.
 
