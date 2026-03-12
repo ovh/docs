@@ -1576,7 +1576,6 @@
                 + [AI Endpoints - Virtual Models](public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models)
                 + [AI Endpoints - Speech to Text](public_cloud/ai_machine_learning/endpoints_guide_08_audio_transcriptions)
                 + [AI Endpoints - Responses API](public_cloud/ai_machine_learning/endpoints_guide_09_responses_api)
-                + [AI Endpoints - DLP API](public_cloud/ai_machine_learning/endpoints_guide_10_dlp_api)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-endpointstutorials)
                 + [AI Endpoints - Create your own audio summarizer](public_cloud/ai_machine_learning/endpoints_tuto_01_audio_summarizer)
                 + [AI Endpoints - Create your own voice assistant](public_cloud/ai_machine_learning/endpoints_tuto_02_voice_virtual_assistant)
