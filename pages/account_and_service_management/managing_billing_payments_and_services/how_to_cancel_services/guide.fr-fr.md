@@ -156,7 +156,7 @@ Il n'y a pas de résiliation possible avant échéance sur les offres [SSL secti
 
 #### Offre d'accès à Internet (FTTH / xDSL) <a name="xdsl"></a>
 
-Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-internet/), suivez les instructions de ce [guide](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl).
+Pour résilier votre offre [FTTH ou xDSL](/links/telecom/offre-internet), suivez les instructions de ce [guide](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl).
 
 > [!warning]
 >

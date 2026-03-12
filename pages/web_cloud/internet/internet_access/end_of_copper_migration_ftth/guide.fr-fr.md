@@ -151,7 +151,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >>
 >> Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), effectuez une demande de déménagement de votre accès en suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) ». Choisissez l'offre Fibre Pro.
 >> 
->> Renseignez l'adresse postale obtenue sur le site de l'ARCEP (Etape 1) et confirmée sur notre outil d'éligibilité (Etape 2). L'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez à nouveau qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
+>> Renseignez l'adresse postale obtenue sur le site de l'ARCEP (Étape 1) et confirmée sur notre outil d'éligibilité (Étape 2). L'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez à nouveau qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
 >>
 >> ![espace client OVHcloud - Déménagement](images/espace-client-demenagement.png){.thumbnail}
 >> 
@@ -167,7 +167,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 Si vous ne souhaitez pas migrer vers une offre Fibre OVHcloud, votre ligne xDSL sera automatiquement résiliée lors de la fermeture du cuivre.
 
 > [!warning]
-> Cette résiliation est uniquement **technique**. Vous devez effectuer une **[résiliation commerciale](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl)** pour finaliser la suppression de votre service et éviter toute facturation future.
+> Cette résiliation est uniquement **technique**. Vous devez **[résilier commercialement votre service](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl)** pour finaliser la suppression de votre service et éviter toute facturation future.
 
 ## Aller plus loin
 

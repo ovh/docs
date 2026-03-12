@@ -69,7 +69,7 @@ Cochez la case « Testez avec la nouvelle adresse » puis renseignez les champs 
 
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
 
-Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
+Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponibles à cette adresse.
 
 <br>À l'aide des initiales des personnes rattachées à ces lignes, sélectionnez la ligne qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
 <br>Si aucun des choix proposés ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}

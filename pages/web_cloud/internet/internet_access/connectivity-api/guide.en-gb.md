@@ -24,9 +24,9 @@ You can view offers [here](/links/telecom/offre-internet).
 
 Services can be managed using these API endpoints:
 
-* `/pack/xdsl`: Manage Internet package offerings.
-* `/xdsl`: Manage Internet access, sub-services and options.
-* `/connectivity`: will replace `/xdsl`. For now it allows to do the eligibility for copper and fiber offers.
+- `/pack/xdsl`: Manage Internet package offerings.
+- `/xdsl`: Manage Internet access, sub-services and options.
+- `/connectivity`: will replace `/xdsl`. For now it allows to do the eligibility for copper and fiber offers.
 
 ### Eligibility
 
@@ -34,7 +34,7 @@ Services can be managed using these API endpoints:
 
 Eligibility methods are available on the endpoint path `/connectivity/eligibility/`.
 
-The objective of eligibility is to resend eligible internet offers for a given *endpoint* (delivery point), in order to order this offer.
+The objective of eligibility is to resend eligible internet offers for a given *endpoint* (delivery point), so you can order this offer.
 An *endpoint* can be an existing address or line, identified by the line number and its status (active or inactive).
 
 Methods return an asynchronous *xdsl.AsyncTask* structure, such as:
@@ -85,7 +85,7 @@ And finally an example of a failed task:
 #### Finding the endpoints
 
 For a copper line, the endpoint is a line identified by its number and status.
-If no line exists, you will need to test by address to see if you are eligible to create a neighbouring line..
+If no line exists, you will need to test by address to see if you are eligible to create a neighbouring line.
 
 For fiber, the endpoint can be identified by a *building* identifier, or an *OTP* (Optical Termination Point) identifier.
 
@@ -323,14 +323,14 @@ We found a single building that is a house.
 
 Possible cases are:
 
-* [I know the line number, I'll use it for eligibility](#eligibilityTestLine)
-* [I do not know the line number, I'll have to look it up first](#eligibilitySearchLines)
-* [I do not have a line number, I will have to request a line creation from a neighbour line](#eligibilityTestAddress)
+- [I know the line number, I'll use it for eligibility](#eligibilityTestLine)
+- [I do not know the line number, I'll have to look it up first](#eligibilitySearchLines)
+- [I do not have a line number, I will have to request a line creation from a neighbour line](#eligibilityTestAddress)
 
 ##### **Doing an eligibility on a line** <a name="eligibilityTestLine"></a>
 
-If you known the number and status of the line then you can check its eligibility.
-The diffence between an active and an inactive line is that an active line has an active Internet access, whereas the inactive line is just an identifier to use to order an Internet access (usually this is the previous number of the last owner, who moved with his line).
+If you know the number and status of the line then you can check its eligibility.
+The difference between an active and an inactive line is that an active line has an active Internet access, whereas the inactive line is just an identifier to use to order an Internet access (usually this is the previous number of the last owner, who moved with his line).
 
 > [!warning]
 >
@@ -354,7 +354,7 @@ to do with the following POST data:
 
 ```
 
-Here is a partial successfull response example:
+Here is a partial successful response example:
 
 ```json
 {
@@ -531,8 +531,8 @@ Here is a partial successfull response example:
 
 The response is composed of:
 
-* a *result.offers* table that will list all the offers and if the given line is eligible or not;
-* a *result.endpoint* structure that gives line information: address and characteristics.
+- a *result.offers* table that will list all the offers and if the given line is eligible or not;
+- a *result.endpoint* structure that gives line information: address and characteristics.
 
 Here is a description of the offer codes:
 
@@ -745,8 +745,8 @@ The response:
 
 For fiber eligibility, we have two scenarios:
 
-* I have an Optical Termination Point (OTP) fiber ID, which I will use for eligibility;
-* I do not have an OTP  fiber identifier and will use a *building* identifier for the eligibility.
+- I have an Optical Termination Point (OTP) fiber ID, which I will use for eligibility;
+- I do not have an OTP  fiber identifier and will use a *building* identifier for the eligibility.
 
 A *building* can be a house or a building with multiple housing. The *building* can be found from an address or from an existing copper line.
 
@@ -763,7 +763,7 @@ From one line, we have to:
 1. [Get the building references from a given line number](#eligibilitySearchBuildingsByLine)
 2. [Search eligibility for the selected building](#eligibilityTestBuilding)
 
-For an OTP, this is the simpliest:
+For an OTP, this is the simplest:
 
 1. [Doing the eligibility test for the OTP](#eligibilityTestOtp)
 

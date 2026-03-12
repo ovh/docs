@@ -41,7 +41,7 @@ Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), c
 > [!primary]
 >
 > La désactivation de la configuration à distance n'écrase pas le paramétrage de votre box. Vous pourrez accéder localement au modem, sans perdre votre configuration actuelle.
-> Un nouveau mot de passe utilisateur vous sera communiqué par email. Il est possible qu'un redémarrage du modem soit nécessaire.
+> Un nouveau mot de passe utilisateur vous sera communiqué par e-mail. Il est possible qu'un redémarrage du modem soit nécessaire.
 >
 
 - Si vous souhaitez configurer votre modem localement sans utiliser l'outil de configuration à distance, vérifiez que la case `Configuration à distance activée` est bien décochée.

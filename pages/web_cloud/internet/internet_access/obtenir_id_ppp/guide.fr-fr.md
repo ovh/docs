@@ -72,7 +72,7 @@ Saisissez, dans le champ `serviceName`, la référence de votre accès obtenue �
 
 Dans un délai approximatif de deux à trois minutes, vous recevrez un e-mail, **sur l'adresse e-mail de contact du compte OVHcloud**, contenant l'identifiant PPPoE et le nouveau mot de passe.
 
-#### Retrouver l'email dans l'espace client OVHcloud
+#### Retrouver l'e-mail dans l'espace client OVHcloud
 
 Si vous n'avez pas accès à l'adresse e-mail de contact du compte OVHcloud, vous pouvez consulter les e-mails de service depuis l'[espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx).
 
