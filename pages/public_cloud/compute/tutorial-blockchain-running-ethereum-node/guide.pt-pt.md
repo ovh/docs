@@ -1,7 +1,7 @@
 ---
 title: 'Executar um nó Ethereum numa instância Public Cloud'
 excerpt: 'Implemente um nó Ethereum completo com Nethermind (EL) e Lighthouse (CL) numa instância Public Cloud da OVHcloud, utilizando block storage para os dados da blockchain'
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Objetivo

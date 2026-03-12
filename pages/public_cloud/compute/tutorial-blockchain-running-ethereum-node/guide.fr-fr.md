@@ -1,7 +1,7 @@
 ---
 title: "Exécuter un nœud Ethereum sur une instance Public Cloud"
 excerpt: "Déployez un nœud Ethereum complet avec Nethermind (EL) et Lighthouse (CL) sur une instance OVHcloud Public Cloud en utilisant le block storage pour les données de la chaîne"
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Objectif

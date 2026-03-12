@@ -1,7 +1,7 @@
 ---
 title: 'Running an Ethereum node on a Public Cloud instance'
 excerpt: 'Deploy a full Ethereum node with Nethermind (EL) and Lighthouse (CL) on an OVHcloud Public Cloud instance using block storage for chain data'
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Eseguire un nodo Ethereum su un'istanza Public Cloud"
 excerpt: "Esegui il deploy di un nodo Ethereum completo con Nethermind (EL) e Lighthouse (CL) su un'istanza Public Cloud OVHcloud utilizzando il Block Storage per i dati della blockchain"
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Obiettivo
@@ -17,7 +17,7 @@ Questi due componenti devono funzionare in parallelo e comunicare in modo sicuro
 
 L'ecosistema Ethereum supporta diverse implementazioni client, ciascuna sviluppata in modo indipendente ma conforme alle specifiche di Ethereum. Le opzioni più utilizzate includono:
 
-**Execution Client (EL):**
+**Execution Clients (EL):**
 
 - Geth
 - Nethermind
@@ -25,7 +25,7 @@ L'ecosistema Ethereum supporta diverse implementazioni client, ciascuna sviluppa
 - Besu
 - Erigon
 
-**Consensus Client (CL):**
+**Consensus Clients (CL):**
 
 - Lighthouse
 - Prysm
@@ -64,7 +64,7 @@ Per questo tutorial utilizzeremo la seguente combinazione:
 
 ## Procedura
 
-### Step 1 - Montare il volume Block Storage
+### Passo 1 - Montare il volume Block Storage
 
 Dopo aver [creato e associato il volume Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) all'istanza, connettiti all'istanza tramite SSH:
 
@@ -138,7 +138,7 @@ UUID=<your-uuid-here> /mnt/chaindata ext4 nofail 0 0
 
 L'opzione `nofail` consente al sistema di proseguire l'avvio anche se il dispositivo non è disponibile.
 
-### Step 2 - Creare un utente dedicato
+### Passo 2 - Creare un utente dedicato
 
 Crea un **account utente dedicato** per gestire tutte le operazioni del nodo Ethereum. Questa pratica migliora la sicurezza separando i processi del nodo dall'utente di sistema predefinito.
 
@@ -163,7 +163,7 @@ sudo sh -c "echo '<your-public-ssh-key>' > /home/node_admin/.ssh/authorized_keys
 
 Questo crea il file `authorized_keys` nella directory `/home/node_admin/.ssh/` e vi inserisce la chiave pubblica, consentendo un accesso sicuro e senza password come utente `node_admin`.
 
-### Step 3 - Installare Nethermind (Execution Client)
+### Passo 3 - Installare Nethermind (Execution Client)
 
 Nethermind è un execution client Ethereum responsabile dell'elaborazione delle transazioni e del mantenimento dello stato di Ethereum.
 
@@ -192,7 +192,7 @@ sudo apt-get install nethermind -y
 
 ![Installazione di Nethermind](images/nethermind_install.png){.thumbnail}
 
-### Step 4 - Installare Lighthouse (Consensus Client)
+### Passo 4 - Installare Lighthouse (Consensus Client)
 
 Lighthouse è un consensus client Ethereum responsabile del raggiungimento del consenso tramite il protocollo proof-of-stake.
 
@@ -221,7 +221,7 @@ sudo cp lighthouse /usr/bin
 
 ![Versione di Lighthouse](images/lighthouse_version.png){.thumbnail}
 
-### Step 5 - Creare il file JWT secret
+### Passo 5 - Creare il file JWT secret
 
 Un segreto JWT condiviso è necessario per la comunicazione sicura tra l'execution client e il consensus client.
 
@@ -232,7 +232,7 @@ openssl rand -hex 32 | tr -d "\n" | sudo tee /secrets/jwt.hex > /dev/null
 
 ![JWT secret creato](images/jwt_secret.png){.thumbnail}
 
-### Step 6 - Installare screen per la persistenza delle sessioni
+### Passo 6 - Installare screen per la persistenza delle sessioni
 
 Su un server remoto, la disconnessione dalla sessione SSH termina i processi in esecuzione. `screen` consente di mantenerli attivi in background, indipendentemente dalla sessione.
 
@@ -248,7 +248,7 @@ Se non è già installato:
 sudo apt-get install screen -y
 ```
 
-### Step 7 - Impostare la proprietà delle directory
+### Passo 7 - Impostare la proprietà delle directory
 
 I client Ethereum necessitano di accesso in scrittura alla directory dei dati. Assegna la proprietà del punto di montaggio al tuo utente corrente:
 
@@ -258,7 +258,7 @@ sudo chown $USER:$USER /mnt/chaindata
 
 Questo comando assegna al tuo utente la piena proprietà di `/mnt/chaindata`, in modo che i client Ethereum possano leggere e scrivere dati al suo interno.
 
-### Step 8 - Avviare Nethermind
+### Passo 8 - Avviare Nethermind
 
 Crea una sessione screen e avvia Nethermind:
 
@@ -293,7 +293,7 @@ Puoi elencare le sessioni attive con `screen -ls` e ricollegarti successivamente
 
 ![Sessioni screen](images/screen_list.png){.thumbnail}
 
-### Step 9 - Avviare Lighthouse
+### Passo 9 - Avviare Lighthouse
 
 Crea una nuova sessione screen e avvia Lighthouse:
 
@@ -319,7 +319,7 @@ Dopo la configurazione iniziale, Lighthouse dovrebbe iniziare la sincronizzazion
 
 Disconnetti la sessione premendo `Ctrl+A` e poi `D`.
 
-### Step 10 - Verificare la sincronizzazione
+### Passo 10 - Verificare la sincronizzazione
 
 A questo punto, sia l'**execution client** (Nethermind) che il **consensus client** (Lighthouse) dovrebbero essere in esecuzione in sessioni screen separate. Per verificare che siano correttamente collegati e che la sincronizzazione sia in corso, ricollegati alla sessione Nethermind e ispeziona i log:
 

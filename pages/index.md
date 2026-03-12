@@ -786,6 +786,7 @@
             + [How to set up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
             + [Local Zone VPN-as-a-Service (VPNaaS) with Tailscale Integration](public_cloud/compute/local-zones-vpn-tailscale-integration)
             + [How to connect a Public Cloud instance to an EFS volume via vRack](storage_and_backup/file_storage/enterprise_file_storage/netapp_pci_connection_via_vrack)
+            + [Running an Ethereum node on a Public Cloud instance](public_cloud/compute/tutorial-blockchain-running-ethereum-node)
         + [Security](public-cloud-compute-security)
             + [How to create and use authentication keys for SSH connections to Public Cloud instances](public_cloud/compute/creating-ssh-keys-pci)
             + [How to configure additional SSH keys on an instance](public_cloud/compute/configuring_additional_ssh_keys)

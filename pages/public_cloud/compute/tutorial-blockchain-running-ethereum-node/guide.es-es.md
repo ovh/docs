@@ -1,7 +1,7 @@
 ---
 title: 'Ejecutar un nodo Ethereum en una instancia Public Cloud'
 excerpt: 'Despliegue un nodo Ethereum completo con Nethermind (EL) y Lighthouse (CL) en una instancia Public Cloud de OVHcloud utilizando Block Storage para los datos de la cadena'
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Einen Ethereum-Node auf einer Public Cloud Instanz betreiben'
 excerpt: 'Einen vollständigen Ethereum-Node mit Nethermind (EL) und Lighthouse (CL) auf einer OVHcloud Public Cloud Instanz mit Block Storage für Blockchain-Daten bereitstellen'
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Ziel

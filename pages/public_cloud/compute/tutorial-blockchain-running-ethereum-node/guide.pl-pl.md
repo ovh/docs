@@ -1,7 +1,7 @@
 ---
 title: 'Uruchomienie węzła Ethereum na instancji Public Cloud'
 excerpt: 'Wdrożenie pełnego węzła Ethereum z Nethermind (EL) i Lighthouse (CL) na instancji OVHcloud Public Cloud z wykorzystaniem block storage do przechowywania danych łańcucha bloków'
-updated: 2026-03-11
+updated: 2026-03-12
 ---
 
 ## Wprowadzenie
