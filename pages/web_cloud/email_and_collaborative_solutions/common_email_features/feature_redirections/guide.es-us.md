@@ -115,7 +115,9 @@ Actualmente, solo los planes **MX plan** y **Redirect** disponen de una interfaz
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
-En nuestro ejemplo, se trata de una **redirección con copia local** (consulte el [esquema 2](#diagram) al principio de esta guía). Si lo necesita, siga los pasos que se indican a continuación en la pestaña correspondiente a la tecnología webmail utilizada por su MX Plan:
+Desde su servicio MX Plan, seleccione el dominio en cuestión.
+
+En nuestro ejemplo, se trata de una **redirección con copia local** (consulte el [esquema 2](#diagram) al principio de esta guía). Si lo necesita, siga los pasos que se indican a continuación:
 
 Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan. Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestionar las redirecciones`{.action} en el lado derecho.
 
@@ -211,7 +213,9 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 
 ##### MX Plan desde el área de cliente <a name="redirect-delete-mxplan"></a>
 
-A continuación, abra la pestaña correspondiente a la tecnología de correo que utiliza su servicio MX Plan:
+Desde su servicio MX Plan, seleccione el dominio en cuestión.
+
+Siga los pasos que se indican a continuación para eliminar una redirección:
 
 - Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan.
 - Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
@@ -252,9 +256,7 @@ Acceda al [webmail](/links/web/email). Introduzca **la dirección de correo elec
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección "máscara" a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
-
-- **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
+Desde su servicio de correo (Exchange o MX Plan), haga clic en la pestaña `Cuentas de correo`{.action}.
 
 Para añadir un alias a su cuenta de correo, siga los pasos que se indican en cada pestaña:
 
@@ -279,11 +281,9 @@ Para añadir un alias a su cuenta de correo, siga los pasos que se indican en ca
 
 ### Eliminar un alias <a name="alias-delete"></a>
 
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
+Desde su servicio de correo (Exchange o MX Plan), haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
-
-En la pestaña `Cuentas de correo electrónico`{.action}, haga clic en el botón `...`{.action} a la derecha de la dirección de correo electrónico correspondiente. A continuación, haga clic en `Configurar alias`{.action} (o `Gestionar alias`{.action}).
+En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la dirección de correo electrónico correspondiente. A continuación, haga clic en `Configurar alias`{.action} (o `Gestionar alias`{.action}).
 
 Haga clic en el botón `...`{.action} situado al final de la línea correspondiente al alias en el menú de gestión de alias. Por último, haga clic en `Eliminar el alias`{.action}
 

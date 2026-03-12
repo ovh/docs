@@ -29,10 +29,6 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ### Zamówienie dodatkowych kont
 
-1. Kliknij zakładkę `Web Cloud`{.action}.
-1. Kliknij `Email Pro`{.action}.
-1. Wybierz odpowiednią platformę.
-
 Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamówienie kont`{.action} w prawym górnym rogu.
 
 ![billing_emailpro](images/billing-emailpro-01.png){.thumbnail}

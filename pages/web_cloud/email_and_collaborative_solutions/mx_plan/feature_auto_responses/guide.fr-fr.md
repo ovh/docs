@@ -45,14 +45,14 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 
 - `Type de répondeur`:
 
-**Associé à une boite e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
-**Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
+    - **Associé à une boîte e-mail** : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
+    - **Libre** : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
 
 - `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par la réponse automatique.
 - `Durée du répondeur`:
     - **Temporaire** : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre réponse automatique (utile si vous partez en congé par exemple).
     - **Permanent** : la réponse automatique fonctionnera tant que vous ne l'aurez pas désactivée.
-- `Envoyer une copie` ou `Garder les messages sur le serveur`: permets de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
+- `Envoyer une copie` ou `Garder les messages sur le serveur`: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
 
 > [!warning]
 >
@@ -73,7 +73,7 @@ Lorsque votre réponse automatique a été créée, elle apparaît dans la liste
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

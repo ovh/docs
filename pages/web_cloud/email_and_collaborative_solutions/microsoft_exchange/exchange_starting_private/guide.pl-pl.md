@@ -98,7 +98,7 @@ Kiedy tylko Twój serwer będzie gotowy i dostępny, otrzymasz wiadomość e-mai
 
 Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kont, zapoznaj się z naszym przewodnikiem [„Dodanie domeny do usługi Exchange”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) 
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 

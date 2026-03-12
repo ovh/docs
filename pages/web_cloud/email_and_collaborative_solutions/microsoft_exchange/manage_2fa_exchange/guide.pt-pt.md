@@ -27,7 +27,7 @@ Se deseja aumentar a segurança da sua conta Exchange, pode ativar a dupla auten
 <!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
->**As aplicações móveis OTP**
+> **As aplicações móveis OTP**
 >
 > Existem inúmeras aplicações OTP. As duas que se seguem são gratuitas:
 > 
@@ -75,6 +75,6 @@ Selecione a opção correspondente às suas necessidades na seguinte tabela:
 | 2. | "Reinicializar a dupla autenticação" | Permite reinicializar o código QR solicitado no momento da sua primeira ligação ao webmail.<br> *Por exemplo: um utilizador trocou de smartphone e precisa de reconfigurar a sua aplicação OTP.* |
 | 3. | "Eliminar a dupla autenticação" | Elimina totalmente a dupla autenticação na conta. | 
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 Fale com nossa [comunidade de utilizadores](/links/community).

@@ -319,7 +319,7 @@ In the section **PATH PARAMETERS**:
 
 In the **EXAMPLE** tab in the **REQUEST BODY** section, modify the values in the two fields below:
 
-- `sbrDefault `: Leave empty.
+- `sbrDefault`: Leave empty.
 - `sendConnectorIdDefault`: Enter the ID of your send connector, obtained as a number in [this step](#idconnector).
 
 Click `Execute`{.action} to launch the API call.
@@ -368,7 +368,7 @@ The result is as follows:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 

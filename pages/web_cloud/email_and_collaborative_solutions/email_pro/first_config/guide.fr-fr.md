@@ -29,16 +29,11 @@ Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de béné
 
 ## En pratique
 
-### Étape 1 : accéder à la gestion de votre service
-
-Une fois le service E-mail Pro créé et disponible, sélectionnez-le depuis l'espace client.
+### Étape 1 : ajouter votre nom de domaine
 
 > [!primary]
 >
 > Le nom d'un service E-mail Pro dans votre espace client OVHcloud débute par *emailpro-*, puis contient une partie de votre référence client et se termine par un chiffre (1 pour le premier service E-mail Pro installé, 2 pour le deuxième, etc.).
->
-
-### Étape 2 : ajouter votre nom de domaine
 
 Après la commande de votre service E-mail Pro, une fenêtre s'affiche automatiquement vous invitant à `Ajouter un domaine`{.action}. Si cette dernière ne s'affiche pas, rendez-vous sur l'onglet `Domaines associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action}.
 
@@ -94,7 +89,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 En fin de configuration, vérifiez les informations qui s'affichent puis cliquez sur le bouton `Confirmer`{.action} pour lancer l'ajout du domaine.
 
-### Étape 3 : configurer votre nom de domaine
+### Étape 2 : configurer votre nom de domaine
 
 Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son paramétrage grâce au tableau qui s'affiche.
 
@@ -111,7 +106,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Étape 4 : configurer les comptes E-mail Pro
+### Étape 3 : configurer les comptes E-mail Pro
 
 Pour configurer vos adresses e-mail, positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Le tableau affiche les comptes que vous avez commandés sous la forme “*@configureme.me*”.
 
@@ -152,7 +147,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 > Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition. Vous pouvez commander des comptes additionnels grâce au bouton `Commander des comptes`{.action}.
 >
 
-### Étape 5 : utiliser vos adresses e-mail
+### Étape 4 : utiliser vos adresses e-mail
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [Webmail](/links/web/email) et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 

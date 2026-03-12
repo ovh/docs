@@ -27,7 +27,7 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 <!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
->**Le applicazioni OTP per dispositivi mobili**
+> **Le applicazioni OTP per dispositivi mobili**
 >
 > Esistono numerose applicazioni OTP. Eccone due, gratuite:
 > 
@@ -73,8 +73,8 @@ Seleziona l’opzione che preferisci in base alla seguente tabella:
 |----------------------------------	|------------------|------------------|
 | 1. | Disattivare la doppia autenticazione | Consente di sospendere la doppia autenticazione per un determinato periodo di tempo espresso in ore. Una volta scaduto il termine, la doppia autenticazione sarà riattivata. <br> *Esempio: un utente ha dimenticato il suo smartphone e non può autenticarsi con l’applicazione OTP.*   |
 | 2. | Reimpostare la doppia autenticazione | Consente di reimpostare il codice QR richiesto al momento del tuo primo accesso alla Webmail.<br> *Esempio: un utente ha cambiato smartphone e deve riconfigurare l’applicazione OTP.* |
-| 3. | Rimuovere la doppia autenticazione via SMS | Consente di rimuovere completamente la doppia autenticazione dal tuo account. | 
+| 3. | Rimuovere la doppia autenticazione | Consente di rimuovere completamente la doppia autenticazione dal tuo account. | 
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 Contatta la nostra [Community di utenti](/links/community).

@@ -38,10 +38,6 @@ Ajouter un nom de domaine sur un service Exchange est indispensable pour utilise
 
 ## En pratique
 
-### Accéder à la gestion de votre service
-
-**Exchange**
-
 ### Ajouter un nom de domaine
 
 1. Cliquez sur l'onglet `Domaine associés`{.action} de votre plateforme Exchange.

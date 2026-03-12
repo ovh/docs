@@ -67,6 +67,8 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 >
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, eviti le indicazioni del tuo cognome, nome e data di nascita) e rinnovarla regolarmente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificare la tecnologia di posta elettronica della soluzione MX Plan.**
@@ -125,14 +127,14 @@ La modifica della password tramite la Webmail è disponibile per le soluzioni em
 
 > [!warning]
 >
-> Para la solución **MX Plan Roundcube**, el cambio de contraseña solo se realiza [desde el área de cliente](#controlpanel).
+> Per l'offerta **MX Plan Roundcube**, la modifica della password avviene esclusivamente [dallo Spazio Cliente](#controlpanel).
 >
 
 #### OWA
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi alla pagina [Webmail](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
+Accedi alla pagina [Webmail](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -169,7 +171,7 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare** una passw
 >
 > Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

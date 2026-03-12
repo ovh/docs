@@ -64,9 +64,9 @@ Espere a que se ponga a su disposición la licencia Outlook en el área de clien
 
 Ya puede descargar el archivo de instalación de Outlook para su máquina.
 
-Desde la interfaz de gestión de su plataforma Exchange, haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Utilizar la licencia Outlook.`{.action}
+Desde la interfaz de gestión de su plataforma Exchange, haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Utilizar la licencia Outlook`{.action}.
 
-Seleccione la versión en el menú desplegable, en función de su sistema operativo y del idioma, y haga clic en `Siguiente.`{.action}
+Seleccione la versión en el menú desplegable, en función de su sistema operativo y del idioma, y haga clic en `Siguiente`{.action}.
 
 ![Outlook](images/order-outlook05.png){.thumbnail}
 
@@ -80,8 +80,8 @@ El archivo descargado tiene el formato .ISO, es decir, una imagen de disco. Ejec
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
-Tras la validación, le recordamos que la licencia se eliminará definitivamente en su fecha de expiración
+Tras la validación, le recordamos que la licencia se eliminará definitivamente en su fecha de expiración.
 
-## Más información
+## Más información <a name="go-further"></a>
   
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -222,9 +222,13 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Mudar de oferta <a name="emails-offer"></a>
+#### Mudar de oferta <a name="emails-offer"></a>
 
 É possível alterar a oferta de qualquer conta Zimbra para uma oferta superior ou inferior.
+
+1. Clique no separador `Contas de e-mail`{.action}.
+1. À direita da conta de e-mail para a qual pretende alterar a oferta, clique em `⁝`{.action}.
+1. Clique em `Mudar de oferta`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

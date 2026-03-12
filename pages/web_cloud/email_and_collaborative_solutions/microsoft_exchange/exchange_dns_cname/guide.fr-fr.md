@@ -44,7 +44,7 @@ Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configura
 
 ### Pourquoi créer un enregistrement CNAME ?
 
-L'enregistrement CNAME est utilisé ici en temps qu'alias, il pointe vers une cible qui elle-même renvoie vers une adresse IP. Il ne s'agit donc pas par nature d'un enregistrement lié à un service e-mail.
+L'enregistrement CNAME est utilisé ici en tant qu'alias, il pointe vers une cible qui elle-même renvoie vers une adresse IP. Il ne s'agit donc pas par nature d'un enregistrement lié à un service e-mail.
 
 Dans le cadre de nos offres [**Hosted Exchange**](/links/web/emails-hosted-exchange) et [**Email Pro**](/links/web/email-pro), cet enregistrement CNAME est utilisé comme code de validation (token) qui sera visible dans la zone DNS du nom de domaine à valider. Le but est de vérifier que l'utilisateur de la plateforme e-mail est bien le gestionnaire du nom de domaine qu'il ajoute.
 
@@ -68,7 +68,7 @@ La pastille de diagnostic **CNAME** apparaît dans l'onglet `Domaine associés`{
 Dans l'exemple ci-dessus, la pastille est rouge. Voici les raisons possibles de ce diagnostic :
 
 - **le nom de domaine déclaré n'est pas géré dans le même compte client OVHcloud que votre plateforme e-mail** : réalisez [l'étape 3](#step3) de ce guide depuis l'espace client du compte OVHcloud qui gère la zone DNS du nom de domaine.
-- **le nom de domaine déclaré utilise des serveurs DNS externes à OVHcloud** : le nom de domaine est enregistré chez OVHcloud mais vous utilisez des serveurs DNS « personnalisés ». Pour le vérifier, depuis la section `Noms de domaine`{.action} dans la colonne de gauche, sélectionnez le nom de domaine concerné. Depuis l'onglet `Information génrales`{.action}, vérifiez la mention « Serveurs DNS ». Si elle indique `Personnalisés`{.action}, vous devrez vous connecter à l'interface de gestion des serveurs DNS inscrits dans l'onglet `Serveurs DNS`{.action}
+- **le nom de domaine déclaré utilise des serveurs DNS externes à OVHcloud** : le nom de domaine est enregistré chez OVHcloud mais vous utilisez des serveurs DNS « personnalisés ». Pour le vérifier, depuis la section `Noms de domaine`{.action} dans la colonne de gauche, sélectionnez le nom de domaine concerné. Depuis l'onglet `Informations générales`{.action}, vérifiez la mention « Serveurs DNS ». Si elle indique `Personnalisés`{.action}, vous devrez vous connecter à l'interface de gestion des serveurs DNS inscrits dans l'onglet `Serveurs DNS`{.action}
 
 ![email](images/email-dns-conf-cname02.png){.thumbnail}
 

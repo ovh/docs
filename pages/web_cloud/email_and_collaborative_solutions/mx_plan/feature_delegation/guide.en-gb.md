@@ -78,7 +78,7 @@ Enter the OVHcloud NIC handle that will benefit from this delegation, and confir
 
 You can add multiple OVHcloud customer accounts to manage each email address.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

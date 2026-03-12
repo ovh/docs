@@ -7,13 +7,13 @@ updated: 2020-10-24
 
 Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
 
-**Saiba como delegar os direitos da sua conta  noutro agente.**
+**Saiba como delegar os direitos da sua conta de e-mail noutro utilizador.**
 
 ## Requisitos
 
 - Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
-
-- Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
+- Dispor de, pelo menos, duas contas de e-mail ativas e configuradas na mesma plataforma de e-mail OVHcloud.
+- Dispor dos identificadores relativos à conta de e-mail que beneficiará dos novos direitos delegados.
 
 <!-- CP-NAV-START:web-email-pro -->
 ---

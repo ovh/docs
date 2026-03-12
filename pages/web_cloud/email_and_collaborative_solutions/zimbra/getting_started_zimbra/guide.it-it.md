@@ -222,9 +222,13 @@ Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Modificare soluzione <a name="emails-offer"></a>
+#### Modificare soluzione <a name="emails-offer"></a>
 
 È possibile cambiare piano per qualsiasi account Zimbra per un piano superiore o inferiore.
+
+1. Clicca sulla scheda `Account email`{.action}.
+1. A destra dell'account email per cui desideri modificare il piano, clicca su `⁝`{.action}.
+1. Clicca su `Modificare soluzione`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

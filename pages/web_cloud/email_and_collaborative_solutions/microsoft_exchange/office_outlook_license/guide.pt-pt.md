@@ -13,7 +13,7 @@ A OVHcloud oferece-lhe o cliente de e-mails Outlook ao preço de 2€ s/IVA por 
 Após a subscrição, pode descarregar o Outlook entre as 3 versões seguintes:
 
 - Outlook para Windows 32 bits.
-- Outlook pour Windows 64 bits.
+- Outlook para Windows 64 bits.
 - Outlook para MAC 64 bits.
 
 **Saiba como subscrever e instalar uma licença Outlook a partir da plataforma Exchange OVHcloud.**
@@ -37,7 +37,7 @@ Após a subscrição, pode descarregar o Outlook entre as 3 versões seguintes:
 
 ![Outlook](images/order-outlook01.png){.thumbnail}
 
-Defina a frequência de renovação da sua licença Outlook e valide as condições. e clique em `Seguinte`{.action}.
+Defina a frequência de renovação da sua licença Outlook e valide as condições e clique em `Seguinte`{.action}.
 
 ![Outlook](images/order-outlook02.png){.thumbnail}
 
@@ -80,8 +80,8 @@ O ficheiro descarregado está no formato .ISO, ou seja, uma imagem em disco. Exe
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
-Após a validação, recorde-se que a licença será definitivamente eliminada na sua data de expiração
+Após a validação, recorde-se que a licença será definitivamente eliminada na sua data de expiração.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
  
 Fale com nossa [comunidade de utilizadores](/links/community).

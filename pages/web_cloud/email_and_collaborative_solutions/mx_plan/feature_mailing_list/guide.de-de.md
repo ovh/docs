@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Ziel
 
-Über eine Mailingliste können Sie Massenabonnenten kontaktieren, d. h. eine Nachricht oder Informationen gleichzeitig an mehrere Empfänger senden. Das kann im Zusammenhang mit einem Informationsmailing z. B. über die Veröffentlichung eines neuen Produkts (für eine E-Commerce-Site) oder als Information über ein bevorstehendes Meeting (für eine Community-Website) nützlich sein. 
+Über eine Mailingliste können Sie Massenabonnenten kontaktieren, d. h. eine Nachricht oder Informationen gleichzeitig an mehrere Empfänger senden. Das kann im Zusammenhang mit einem Informationsmailing z. B. über die Veröffentlichung eines neuen Produkts (für eine E-Commerce-Site) oder als Information über ein bevorstehendes Meeting (für eine Community-Website) nützlich sein.
 
 **Diese Anleitung erklärt, wie Sie Ihre Mailinglisten verwalten.**
 
@@ -92,7 +92,7 @@ Füllen Sie das Formular gemäß den Angaben in der folgenden Tabelle aus:
 
 ### Die Mailinglisten-Optionen verwalten
 
-Um die Optionen der Mailingliste zu ändern, klicken Sie rechts davon auf `...`{.action}. Sie können dann die Optionen aktualisieren, die Mailingliste löschen sowie die Abonnentenliste per E-Mail freigeben. 
+Um die Optionen der Mailingliste zu ändern, klicken Sie rechts davon auf `...`{.action}. Sie können dann die Optionen aktualisieren, die Mailingliste löschen sowie die Abonnentenliste per E-Mail freigeben.
 
 ![Emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -136,7 +136,7 @@ Das folgende Fenster wird angezeigt:
 
 |Moderatoren hinzufügen|Moderatoren entfernen|
 |---|---|
-|Klicken Sie rechts auf `Moderatoren hinzufügen`{.action}.|Klicken Sie rechts auf `Über eine Datei entfernen `{.action}.|
+|Klicken Sie rechts auf `Moderatoren hinzufügen`{.action}.|Klicken Sie rechts auf `Über eine Datei entfernen`{.action}.|
 |![Emails](images/manage_mailing-lists_10.png){.thumbnail}|![Emails](images/manage_mailing-lists_10b.png){.thumbnail}|
 
 Es gibt zwei Methoden zum Hinzufügen/Entfernen von Moderatoren:
@@ -255,6 +255,6 @@ Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Bes
 > Beispiel: Wenn Sie die Standardfußzeile für E-Mails ändern möchten, die an Ihre Mailingliste gesendet werden, müssen Sie eine Nachricht an die Adresse `Name_Ihrer_ML-edit.bottom@mydomain.ovh` senden. Sie erhalten dann eine neue E-Mail, in der erläutert wird, wie Sie die Fußzeile anpassen.
 >
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 Treten Sie unserer [User Community](/links/community) bei.

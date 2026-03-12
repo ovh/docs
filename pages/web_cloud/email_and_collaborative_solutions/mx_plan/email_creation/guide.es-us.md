@@ -63,7 +63,7 @@ A continuación, introduzca la información solicitada:
 > - Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
 
 - **Nombre**: Introduzca un nombre.
-- **Nombre**: Introduzca los apellidos.
+- **Apellidos**: Introduzca los apellidos.
 - **Nombre mostrado**: Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.
 - **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
@@ -75,7 +75,7 @@ A continuación, introduzca la información solicitada:
 > - Máximo 30 caracteres
 > - Sin caracteres acentuados
 
-Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
+Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 ![Correo electrónico](images/mxplan-creation-new-step3.png){.thumbnail .w-400}
 
@@ -112,7 +112,7 @@ En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.actio
 **Ha utilizado todas las direcciones incluidas en su plan?**
 
 - Consulte las preguntas de [nuestras FAQ de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Consulte nuestra solución de correo electrónico [Exchange] (/links/web/emails) para completar su MX Plan con el mismo dominio.
+- Consulte nuestra solución de correo electrónico [Exchange](/links/web/emails-exchange) para completar su MX Plan con el mismo dominio.
 
 
 ## Más información <a name="go-further"></a>

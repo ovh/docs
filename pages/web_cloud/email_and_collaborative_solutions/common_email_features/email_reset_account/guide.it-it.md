@@ -21,7 +21,8 @@ Vuoi:
     - [**Exchange**](/links/web/emails-exchange).
     - [**Email Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Disporre delle informazioni di connessione agli account email interessati
+- Essere il contatto amministratore del servizio email interessato.
+- Disporre delle informazioni di connessione agli account email interessati.
 
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-zimbra -->

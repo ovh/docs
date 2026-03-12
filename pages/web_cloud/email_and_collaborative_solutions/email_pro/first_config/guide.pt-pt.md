@@ -29,16 +29,11 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ## Instruções
 
-### 1 - Aceder à interface de gestão do serviço
-
-Assim que o serviço E-mail Pro for criado e estiver disponível:
+### 1 - Adicionar o domínio
 
 > [!primary]
 >
 > Na Área de Cliente, o nome de um serviço E-mail Pro é composto por: *emailpro-*, uma parte do identificador de cliente e um algarismo (1 para o primeiro serviço E-mail Pro instalado, 2 para o segundo, etc.).
->
-
-### 2 - Adicionar o domínio
 
 Depois de contratar o serviço E-mail Pro, surge uma janela na Área de Cliente para `Adicionar domínio`{.action}. Se isso não acontecer, clique em `Domínios associados`{.action} e, depois, em `Adicionar domínio`{.action}.
 
@@ -94,7 +89,7 @@ Clique em `Seguinte`{.action} para adicionar o domínio.
 
 No final do processo, verifique as informações apresentadas e clique em `Confirmar`{.action} para adicionar o domínio.
 
-### 3 - Configurar o domínio
+### 2 - Configurar o domínio
 
 Depois de adicionar o domínio enquanto domínio associado, verifique as configurações através da tabela apresentada.
 
@@ -111,7 +106,7 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do d
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### 4 - Configurar as contas E-mail Pro
+### 3 - Configurar as contas E-mail Pro
 
 Para configurar os endereços de e-mail, aceda a `Contas de e-mail`{.action}. Na tabela, as contas contratadas apresentam o seguinte formato: “*@configureme.me*”.
 
@@ -152,7 +147,7 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 > Repita este passo sempre que necessário, de acordo com o número de contas disponíveis. Se precisar de mais contas, clique em `Encomendar contas`{.action}.
 >
 
-### 5 - Usar o serviço de e-mail
+### 4 - Usar o serviço de e-mail
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço [Webmail](/links/web/email), onde deve introduzir os dados de acesso à sua conta.
 
@@ -175,7 +170,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 >
 > No nosso exemplo, utilizamos a referência servidor: pro?.mail.ovh.net. Deve substituir o "?" pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre esse algarismo na [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action}, em `Email Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action} do serviço E-mail Pro.
 >
 
 ## Quer saber mais?

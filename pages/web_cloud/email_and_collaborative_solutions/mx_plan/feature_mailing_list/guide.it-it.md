@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Obiettivo
 
-Una mailing list ti consente di trasmettere informazioni a una lista di più destinatari, tramite l’invio di messaggi di posta collettivi agli iscritti al servizio. Questa soluzione può essere utile, ad esempio, per informare i tuoi clienti dell’uscita di un nuovo prodotto (sito e-commerce) o di un incontro (ad esempio, nel caso del sito di una Community). 
+Una mailing list ti consente di trasmettere informazioni a una lista di più destinatari, tramite l’invio di messaggi di posta collettivi agli iscritti al servizio. Questa soluzione può essere utile, ad esempio, per informare i tuoi clienti dell’uscita di un nuovo prodotto (sito e-commerce) o di un incontro (ad esempio, nel caso del sito di una Community).
 
 **Questa guida ti mostra come gestire la tua mailing list**
 
@@ -28,8 +28,7 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 
 > [!warning]
 >
-> - una mailing list non è una soluzione per l’invio in massa di messaggi di Spam (massaggi pubblicitari)
- Questo tipo di utilizzo è tollerato in certa misura, finché non si rivela abusiva.
+> - una mailing list non è una soluzione per l’invio in massa di messaggi di Spam (messaggi pubblicitari). Questo tipo di utilizzo è tollerato in certa misura, finché non si rivela abusiva.
 > - un utente può decidere di cancellare il proprio contatto dalla mailing list in qualsiasi momento e può segnalare un abuso ogni volta che lo ritiene opportuno
 >
 
@@ -235,7 +234,7 @@ Qui di seguito trovi una lista dei file che contengono i testi delle risposte e 
 |get_bad|in caso di messaggi non presenti negli archivi|
 |help|aiuto generale (tra “top” e “bottom”)|
 |info|Informazioni relative alla lista La prima riga ne contiene una sintesi|
-|mod_help|aiuto specifico ai moderatori della lista||
+|mod_help|aiuto specifico ai moderatori della lista|
 |mod_reject|risposta inviata al mittente dei messaggi rifiutati|
 |mod_request|messaggio inviato ai moderatori|
 |mod_sub|messaggio inviato al contatto dopo la conferma di iscrizione da parte del moderatore|
@@ -258,6 +257,6 @@ Qui di seguito trovi una lista dei file che contengono i testi delle risposte e 
 > Esempio: per modificare la firma predefinita delle email inviate alla tua mailing list, invia un messaggio all’indirizzo `nome_tua_ML-edit.bottom@mydomain.ovh`. Riceverai una nuova email con le informazioni necessarie per la personalizzazione della tua firma.
 >
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 Contatta la nostra [Community di utenti](/links/community).

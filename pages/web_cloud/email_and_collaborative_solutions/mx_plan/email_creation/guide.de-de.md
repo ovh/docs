@@ -41,7 +41,7 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 ---
 <!-- CP-NAV-END:web-mx-plan -->
 
-## ## In der praktischen Anwendung <a name="instructions"></a>
+## In der praktischen Anwendung <a name="instructions"></a>
 
 **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
 
@@ -146,10 +146,10 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein.
 
 - **Name des Accounts**: Fügen Sie hier Ihre gewünschte E-Mail-Adresse ein (zum Beispiel vorname.name). Die betreffende Domain ist bereits standardmäßig angegeben.
 - **Kontobeschreibung**: Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.
-- **Account-Größe**: Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz, den Ihr Account zum Speichern von Nachrichten nutzen kann. 
+- **Account-Größe**: Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz, den Ihr Account zum Speichern von Nachrichten nutzen kann.
 - **Passwort**: Wählen Sie ein Passwort und bestätigen Sie es. Aus Sicherheitsgründen empfehlen wir Ihnen, Passwörter nicht mehrfach zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (beispielsweise Namen, Vornamen oder Ihr Geburtsdatum). Es wird empfohlen, das Passwort regelmäßig zu ändern.
 
-Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.action}. 
+Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.action}.
 
 ![E-Mail](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
@@ -157,7 +157,7 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.acti
 
 Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
-#### E-Mails einsehen 
+#### E-Mails einsehen
 
 Gehen Sie auf die [Webmail Loginseite](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 

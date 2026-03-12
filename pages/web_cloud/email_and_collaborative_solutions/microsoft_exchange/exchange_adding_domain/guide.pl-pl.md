@@ -47,19 +47,6 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## W praktyce
 
-### Dostęp do zarządzania usługą
-
-> [!tabs]
-> **Exchange**
->>
->>
-> **Email Pro**
->>
->> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
->> 1. Wybierz odpowiednią platformę.
->>
-
 ### Dodaj domenę
 
 1. Kliknij w zakładkę `Przypisane domeny`{.action} w twojej platformie Exchange lub E-mail Pro.

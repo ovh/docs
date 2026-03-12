@@ -67,6 +67,8 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 >
 > Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe, selecione uma palavra-passe que não tenha qualquer relação com as suas informações pessoais (evite as menções do seu apelido, nome próprio e data de nascimento, por exemplo) e que a renove regularmente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificar a tecnologia de e-mail da oferta MX Plan.**
@@ -109,7 +111,7 @@ Siga as instruções indicadas na oferta:
 > **Zimbra**
 >>
 >> Clique em `Zimbra Mail`{.action} e dirija-se ao separador `Conta de e-mail`{.action}. A janela que aparece apresenta as contas de e-mail existentes. <br>
->> Clique no botão `...`{.action} e, em seguida, em `Modificar`{.action}.<br><br>>
+>> Clique no botão `...`{.action} e, em seguida, em `Modificar`{.action}.<br><br>
 >>![email](images/email-password-zimbra01.png){.thumbnail}<br>
 >>
 
@@ -132,7 +134,7 @@ A modificação da sua palavra-passe através do webmail está disponível para 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Aceda à página "[Webmail](/links/web/email)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
+Aceda à página "[Webmail](/links/web/email)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -169,7 +171,7 @@ Por razões de segurança e de confidencialidade, não é possível **recuperar*
 >
 > Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 [Primeiros passos com a solução MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

@@ -82,7 +82,7 @@ Clicca su `Seguente`{.action} e `Conferma`{.action} per salvare le modifiche.
 ![email](images/exchange-shared_accounts04.png){.thumbnail}
 
 Nel nostro esempio, permettiamo agli account **guide-exchange@** e **test@** di avere accesso all'account condiviso **shared_test@**.
-<br>L'account email **guide-exchange@**avrà anche il diritto di inviare email "come" **shared_test@**.
+<br>L'account email **guide-exchange@** avrà anche il diritto di inviare email "come" **shared_test@**.
 <br>L'account email **test@** potrà anche inviare email "da parte di" **shared_test@**.
 
 ### Utilizzo di un account condiviso con OWA (Webmail)
@@ -108,7 +108,7 @@ Dal tuo software Outlook, troverai il tuo account condiviso nella colonna di sin
 
 ![email](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -226,7 +226,7 @@ o endereço de e-mail **newsletter@mydomain.ovh** envia um e-mail para **john.sm
 
 Eis um exemplo de cabeçalho de um e-mail enviado a partir de um Private Exchange que utiliza um conector de envio, no contexto acima:
 
-<robert@hisdomain.ovh>
+&lt;robert@hisdomain.ovh&gt;
 
 <pre class="bgwhite"><code>Return-Path: &lt;bounces-249164590-newsletter=mydomain.ovh@sender-id.exemplo.com>
 Delivered-To: john.smith@guias.ovh
@@ -319,7 +319,7 @@ Na secção **PATH PARAMETERS**:
 
 No separador **EXAMPLE** na secção **REQUEST BODY**, complete os campos com os seus valores:
 
-- `sbrDefault `: deixe em branco.
+- `sbrDefault`: deixe em branco.
 - `sendConnectorIdDefault` : introduza a ID do seu conector de envio, que é um número [nesta etapa](#idconnector).
 
 Clique em `Execute`{.action} para lançar a chamada API.
@@ -368,7 +368,7 @@ Obtém o seguinte resultado:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Editar uma zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 

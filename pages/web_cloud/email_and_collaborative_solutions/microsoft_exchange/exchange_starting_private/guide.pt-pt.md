@@ -65,7 +65,7 @@ Após a validação desta etapa surgirá uma mensagem a indicar que a configura�
 
 > [!primary]
 >
-> Esta etapa é facultativa se tiver assinalado a opção "**DNS Assist**" na [etapa 2](./#etape-2-initializacao-da-sua-plateforma).
+> Esta etapa é facultativa se tiver assinalado a opção "**DNS Assist**" na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma).
 > 
 
 Se o nome de domínio não for gerado na mesma conta de cliente ou não estiver alojado na OVHcloud, ser-lhe-á enviado um segundo e-mail contendo as informações necessárias para configurar manualmente a sua zona DNS.
@@ -98,7 +98,7 @@ Assim que o servidor esteja pronto e disponível, ser-lhe-á enviado um e-mail d
 
 Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 [Editar uma zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 

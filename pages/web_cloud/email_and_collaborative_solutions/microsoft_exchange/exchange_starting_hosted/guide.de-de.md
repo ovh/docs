@@ -58,9 +58,9 @@ Wählen Sie einen Ihrer Domainnamen aus der Liste aus oder setzen Sie einen Hake
 
 ![E-Mail](images/exchange-wizard01.png){.thumbnail}
 
-#### Werden Sie ausschließlich OVH Exchange mit dieser Domain verwenden?
+#### Werden Sie ausschließlich OVHcloud Exchange mit dieser Domain verwenden?
 
-Die Frage "**Werden Sie ausschließlich das OVH Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain.
+Die Frage "**Werden Sie ausschließlich das OVHcloud Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain.
 
 - Wenn Sie ein Exchange Angebot allein oder zusammen mit anderen **E-Mail-Angeboten von OVHcloud** verwenden, kann die Konfiguration automatisch oder manuell erfolgen, indem Sie ausschließlich die E-Mail-Server von OVHcloud verwenden.
 - Wenn Sie Ihr Exchange Angebot zusätzlich zu einem E-Mail-Dienst **außerhalb des OVHcloud E-Mail Angebots** verwenden, werden Sie aufgefordert, die URL des Empfangsservers Ihres externen E-Mail-Dienstes unter der Rubrik `Relay-Server (SMTP)` anzugeben.
@@ -117,7 +117,7 @@ Für weitere Informationen, lesen Sie bitte die Anleitung [Eine Domain zu Ihrem 
 > Wenn für die Konfiguration einer Domain eine besondere Aktion erforderlich ist, erscheint in der Tabelle ein roter Vermerk in der Spalte `Diagnose`{.action}. Klicken Sie auf das rote Feld, um die notwendigen Aktionen anzuzeigen. Wenn diese Domain nicht die OVHcloud Konfiguration (die DNS-Server von OVHcloud) verwendet, müssen die Änderungen über das Interface vorgenommen werden, mit dem Sie die Konfiguration Ihrer Domain verwalten können. 
 >
 
-![Eine Domain hinzufügen](images/first-steps-hosted-exchange-add-domain.png)
+![Eine Domain hinzufügen](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Zusätzliche Exchange Accounts konfigurieren (optional)
 
@@ -132,7 +132,7 @@ Die Accounts, deren Konfiguration in Bearbeitung ist, werden in der Tabelle mit 
 > Wiederholen Sie diesen Schritt so oft wie nötig, je nach Anzahl Ihrer Accounts. Sie können weitere Accounts über den Button `Aktionen`{.action} bestellen und dann auf `Accounts bestellen`{.action} klicken.
 >
 
-![Einen Account hinzufügen](images/first-steps-hosted-exchange-add-account.png)
+![Einen Account hinzufügen](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### E-Mail-Adressen verwenden
 
@@ -168,7 +168,7 @@ Um die verschiedenen Funktionen zu aktivieren, wählen Sie in Ihrem [OVHcloud Ku
 
 Weitere Anleitungen zu den Funktionen finden Sie in unserer Dokumentation unter [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Kontaktgruppen erstellen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

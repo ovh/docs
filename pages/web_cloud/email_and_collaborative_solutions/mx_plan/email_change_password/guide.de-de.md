@@ -67,6 +67,8 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 >
 > Aus Sicherheitsgründen empfehlen wir, Passwörter nicht mehrfach zu verwenden, eines auszuwählen, das keine persönlichen Angaben enthält (Namen, Vornamen und Geburtsdatum) und es regelmäßig zu ändern.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
@@ -169,7 +171,7 @@ Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein P
 >
 > Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Passwortmanager verwenden, z. B. **KeePass**.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

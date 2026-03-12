@@ -21,6 +21,7 @@ Sie möchten:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-Mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
+- Sie sind der Admin-Kontakt des betreffenden E-Mail-Dienstes.
 - Sie verfügen über Zugangsdaten für die betreffenden E-Mail-Accounts.
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -39,7 +40,7 @@ Sie möchten:
 **Zimbra:**
 
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
-- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
+- **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
 **Email Pro:**
 

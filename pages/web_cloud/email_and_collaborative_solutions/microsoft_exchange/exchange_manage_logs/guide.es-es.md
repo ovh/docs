@@ -36,7 +36,7 @@ Su oferta Private Exchange o Trusted Exchange genera sus propios logs. Puede que
 ## Requisitos
 
 - Tener contratada una oferta [Private Exchange](/links/web/emails-hosted-exchange) o [Trusted Exchange](/links/web/emails-trusted-exchange).
-- Un cuenta Logs Data Platform (LDP). Este guía le guiará a través de todos los pasos necesarios: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+- Una cuenta Logs Data Platform (LDP). Este guía le guiará a través de todos los pasos necesarios: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 <!-- CP-NAV-START:web-exchange -->
 ---
@@ -53,7 +53,7 @@ Su oferta Private Exchange o Trusted Exchange genera sus propios logs. Puede que
 
 ### Visualizar los logs de su plataforma Exchange en tiempo real
 
-Para acceder a los logs en tiempo real en su oferta Private o Trusted Exchange, siga las instrucciones siguientes:
+Para acceder a los logs en tiempo real en su oferta Private o Trusted Exchange, a la derecha de la serie de pestañas, haga clic en la pestaña `Más +`{.action} y luego en `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -88,6 +88,9 @@ Funciona recuperando los logs generados por su infraestructura, sus sitios web o
 Las soluciones Exchange son compatibles con diversos servicios como el alojamiento compartido, los VPS y los servidores dedicados. También pueden complementarse con flujos de datos en Logs Data Platform, además de los logs en tiempo real ya disponibles.
 
 Para suscribir los logs de su solución Exchange a un flujo de datos en Logs Data Platform, realice las siguientes acciones:
+
+1. A la derecha de la serie de pestañas, haga clic en la pestaña `Más +`{.action} y luego en `Logs`{.action}.
+1. En la parte derecha del recuadro donde se muestran los logs en tiempo real, haga clic en el botón `Suscribirse`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

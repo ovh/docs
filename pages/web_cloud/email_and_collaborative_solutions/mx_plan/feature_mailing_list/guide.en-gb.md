@@ -90,7 +90,7 @@ Fill in the form with the information listed in the table below:
 
 ### Manage mailing list options
 
-To modify the mailing list options, click the `...`{.action} to the right-hand side of it. You can then update the options, delete the mailing list, or share the list of subscribers via email. 
+To modify the mailing list options, click the `...`{.action} to the right-hand side of it. You can then update the options, delete the mailing list, or share the list of subscribers via email.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -255,6 +255,6 @@ Below is a list of files containing the reply texts, and a brief description of 
 > Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`. You will then receive a new email explaining how to customise the footer.
 >
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

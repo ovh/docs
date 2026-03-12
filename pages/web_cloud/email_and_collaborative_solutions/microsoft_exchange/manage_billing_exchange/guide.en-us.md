@@ -101,7 +101,7 @@ In the window for managing your Exchange platform, click on the `Actions`{.actio
 >
 > This action suspends and then deletes all of the accounts on the Exchange platform on their expiry date.
 
-# Go further <a name="go-further"></a>
+## Go further <a name="go-further"></a>
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

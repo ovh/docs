@@ -96,7 +96,7 @@ Je nach Verwendung Ihres Exchange Dienstes sind die folgenden MX Server gültig:
 > [!warning]
 > In unseren Anleitungen verwenden wir als Servernamen: ex<b>?</b>.mail.ovh.net. Ersetzen Sie das "?" durch die dem Server Ihres Exchange Dienstes entsprechende Nummer.
 >
-> Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich `Web Cloud`{.action}: Öffnen Sie `Microsoft`{.action}, dann `Exchange`{.action} im Menü links, und wählen Sie Ihre Dienstleistung aus. Der Servername wird im Bereich **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
+> Diese Informationen finden Sie im OVHcloud Kundencenter im Bereich `Web Cloud`{.action}: Öffnen Sie `Exchange`{.action} und wählen Sie Ihre Dienstleistung aus. Der Servername wird im Bereich **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
 >
 
 ### Der SRV-Eintrag der Domain ist ungültig

@@ -56,7 +56,7 @@ Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`
 
 > [!primary]
 >
-Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Conéctese a su cuenta Exchange a través del [webmail OVHcloud](/links/web/email). Vaya a la interfaz "Calendario" haciendo clic en el botón "Aplicación lanzada" en la esquina superior izquierda y seleccionando el icono `Calendario`{.action}.
@@ -119,7 +119,7 @@ Después de crear el evento (haciendo clic en `Enviar`{.action} en la barra supe
 
 ![mensaje de rechazo](images/exchange-resources-step8.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Consultar una cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -45,13 +45,13 @@ Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi inform
 
 - `Rodzaj autorespondera`:
 
-**Przypisane do skrzynki e-mail** : do użycia, jeśli dotyczy to adresu e-mail istniejącego w Twojej usłudze e-mail.
-**Wolny**: do użycia w przypadku aliasu. Nie jest on zatem powiązany z istniejącym adresem.
+    - **Przypisane do skrzynki e-mail** : do użycia, jeśli dotyczy to adresu e-mail istniejącego w Twojej usłudze e-mail.
+    - **Wolny**: do użycia w przypadku aliasu. Nie jest on zatem powiązany z istniejącym adresem.
 
 - `Skrzynka e-mail` lub `Nazwa autorespondera`: adres e-mail lub alias, którego dotyczy automatyczna odpowiedź.
 - `Czas trwania autorespondera`:
     - **Tymczasowe** : określ datę rozpoczęcia i zakończenia automatycznej odpowiedzi (użyteczne, jeśli na przykład wyjeżdżasz na urlop).
-    - **Permanent**: automatyczna odpowiedź będzie działać, dopóki jej nie wyłączysz.
+    - **Permanentna**: automatyczna odpowiedź będzie działać, dopóki jej nie wyłączysz.
 - `Wyślij kopię` lub `Zachowaj wiadomości na serwerze`: umożliwiają ponowne wysłanie wiadomości odebranych podczas Twojej nieobecności na wybrany adres lub ich zachowanie na wybranym adresie e-mail.
 
 > [!warning]
@@ -59,7 +59,7 @@ Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi inform
 > Jeśli usuniesz zaznaczenie tego pola, wiadomości odebrane podczas Twojej nieobecności zostaną automatycznie usunięte.
 
 - `Adres w kopii` (tylko w trybie swobodnym) : w przypadku aliasu zaznacz adres e-mail, na który będą wysyłane wiadomości wysłane na ten alias.
-- `Message`: jest to wiadomość, którą twoi rozmówcy otrzymają, gdy wyślą ci e-mail.
+- `Wiadomość`: jest to wiadomość, którą twoi rozmówcy otrzymają, gdy wyślą ci e-mail.
 
 Następnie kliknij przycisk `Zatwierdź`{.action}, aby zakończyć konfigurowanie automatycznej odpowiedzi.
 
@@ -69,11 +69,11 @@ Następnie kliknij przycisk `Zatwierdź`{.action}, aby zakończyć konfigurowani
 
 ### Zmiana lub usunięcie automatycznej odpowiedzi
 
-Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej ofercie e-mail. Możesz ją usunąć lub zmienić, klikając '...`{.action} po prawej stronie.
+Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej ofercie e-mail. Możesz ją usunąć lub zmienić, klikając `...`{.action} po prawej stronie.
 
 ![autoreply](images/email_responder02.png){.thumbnail}
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

@@ -16,7 +16,7 @@ If you wish to increase the security on your Exchange account, you can enable tw
 - an OTP mobile application installed on your Android or iOS smartphone or tablet
 
 > [!primary]
->**OTP mobile applications**
+> **OTP mobile applications**
 >
 > You can choose from a number of OTP applications. Here are two examples that are free to use.
 >
@@ -81,6 +81,6 @@ Select the option that you need according to the table below:
 | 2. | “Reset two-factor authentication” | Resets the QR code requested when you first log in to webmail.<br> *For example: a user has changed phones and needs to reconfigure their OTP application.* |
 | 3. | “Remove two-factor authentication” | Fully removes two-factor authentication from the account. | 
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

@@ -58,9 +58,9 @@ Escolha um dos seus nomes de domínio na lista ou selecione a caixa `O meu nome 
 
 ![email](images/exchange-wizard01.png){.thumbnail}
 
-#### Apenas vai utilizar a oferta Exchange OVH com este domínio?
+#### Apenas vai utilizar a oferta Exchange OVHcloud com este domínio?
 
-A questão "**Vai utilizar apenas a oferta Exchange OVH com este domínio?** " vai determinar o tipo de configuração do seu domínio. 
+A questão "**Vai utilizar apenas a oferta Exchange OVHcloud com este domínio?** " vai determinar o tipo de configuração do seu domínio. 
 
 - Se utilizar uma oferta Exchange sozinha ou com outras ofertas de **e-mail OVHcloud**, a configuração poderá ser realizada de forma automática ou manual, utilizando apenas os servidores de e-mail da OVHcloud.
 - Se utiliza a sua oferta Exchange em complemento de um serviço de e-mail **externo às ofertas de e-mail OVHcloud**, ser-lhe-á pedido que indique, sob a menção `Servidor de envio (SMTP)`, o URL do servidor de receção do seu serviço de e-mail externo.
@@ -117,7 +117,7 @@ Para obter mais informações, pode consultar o nosso manual [Adicionar um domí
 > Se for necessário realizar uma ação específica para configurar o domínio, uma etiqueta vermelha aparecerá na coluna `Diagnóstico`{.action}. Ao clicar, aparecerão as alterações necessárias. Se este domínio não utilizar a configuração da OVHcloud (os seus servidores DNS), deverá realizar as alterações a partir da interface que lhe permite gerir a configuração do seu domínio. 
 >
 
-![Adicionar um domínio](images/first-steps-hosted-exchange-add-domain.png)
+![Adicionar um domínio](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Configurar contas Exchange suplementares (facultativo)
 
@@ -132,7 +132,7 @@ As contas que ainda não foram configuradas aparecem na tabela como “*@configu
 > Repita este passo sempre que necessário, em função do número de contas que possui. Pode encomendar novos recursos graças ao botão `Ações`{.action} e, a seguir, clicando em `Encomendar contas`{.action}.
 >
 
-![Adicionar uma conta](images/first-steps-hosted-exchange-add-account.png)
+![Adicionar uma conta](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Utilizar os seus endereços de e-mail
 
@@ -168,7 +168,7 @@ Para ativar estas diferentes funções, selecione o serviço Hosted Exchange na 
 
 Para obter ajuda numa das funcionalidades, consulte a [nossa documentação](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Criar um grupo de contactos](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

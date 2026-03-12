@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objective
 
-With the OVHcloud Exchange  services, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (for example sending or access permissions) between different email accounts.
+With the OVHcloud Exchange services, you can set up professional email addresses, and use them with a range of features for collaborative work. One of these features is the ability to delegate specific permissions (for example sending or access permissions) between different email accounts.
 
 **This guide explains how to delegate permissions on your email account to another user.**
 

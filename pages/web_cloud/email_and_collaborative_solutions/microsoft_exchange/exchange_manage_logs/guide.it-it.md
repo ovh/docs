@@ -53,7 +53,7 @@ La tua offerta Private Exchange o Trusted Exchange genera quindi i propri log. P
 
 ### Visualizzare i log della tua piattaforma Exchange in tempo reale
 
-Per accedere ai log in tempo reale sulla tua offerta Private o Trusted Exchange, segui le seguenti istruzioni:
+Per accedere ai log in tempo reale sulla tua offerta Private o Trusted Exchange, a destra della serie di schede, clicca sulla scheda `Altro +`{.action} e poi su `Log`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -88,6 +88,9 @@ Funziona recuperando i log generati dalla tua infrastruttura, dai tuoi siti web 
 Le soluzioni Exchange sono compatibili con diversi servizi come l'hosting condiviso, i VPS e i server dedicati. Possono inoltre essere completate da flussi di dati su Logs Data Platform, in aggiunta ai log in tempo reale già disponibili.
 
 Per abbonare i log della tua soluzione Exchange a un flusso di dati su Logs Data Platform, effettua le seguenti azioni:
+
+1. A destra della serie di schede, clicca sulla scheda `Altro +`{.action} e poi su `Log`{.action}.
+1. A destra del riquadro dove vengono visualizzati i log in tempo reale, clicca sul pulsante `Abbonati`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

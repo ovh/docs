@@ -3,7 +3,7 @@ title: 'Créer une adresse e-mail avec son offre MX Plan'
 excerpt: 'Découvrez comment créer une adresse e-mail avec votre offre MX Plan'
 updated: 2025-08-26
 ---
- 
+
 <style>
 .w-400 {
   max-width:400px !important;
@@ -20,7 +20,7 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
     - Une offre d’[hébergement web](/links/web/hosting).
-    - Un[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
+    - Un [hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
     - Une offre MX Plan commandée séparément.
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -67,7 +67,7 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Comptes
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-amil (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
+- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
 
 > [!warning]
 >
@@ -85,7 +85,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
 > [!warning]
 >
-> Le choix du mot de passe doit respecter les conditions suivantes:
+> Le choix du mot de passe doit respecter les conditions suivantes :
 >
 > - Minimum 9 caractères
 > - Maximum 30 caractères
@@ -118,7 +118,7 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 >>
 >> ![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
-Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
+Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous à la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
 
 #### Supprimer un compte e-mail
 
@@ -157,7 +157,7 @@ Vérifiez alors les informations qui s'affichent dans le récapitulatif ; si cel
 
 Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
-#### Consulter les e-mails 
+#### Consulter les e-mails
 
 Accédez à la page « [Connexion au webmail](/links/web/email) », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
@@ -165,7 +165,7 @@ Votre boîte de réception s'affiche. Pour découvrir comment utiliser votre adr
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail .w-400}
 
-Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique [Consulter un compte e-mail depuis un appareil](#configdevices)
+Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous à la rubrique [Consulter un compte e-mail depuis un appareil](#configdevices).
 
 #### Supprimer un compte e-mail
 
@@ -173,7 +173,7 @@ Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la r
 >
 > Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne sont pas utilisés. Une sauvegarde de ces comptes peut s'avérer nécessaire. Au besoin, consultez le guide [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
-Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer, puis cliquez sur `Supprimer le compte`{.action}
+Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer, puis cliquez sur `Supprimer le compte`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail .w-400}
 
@@ -255,7 +255,7 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 - Consultez les questions de [notre FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consultez l'ensemble de nos offres e-mail [Zimbra](/links/web/emails-zimbra) ou [Exchange](/links/web/emails-exchange) pour compléter votre offre MX Plan sur le même nom de domaine.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 

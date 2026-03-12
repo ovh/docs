@@ -49,7 +49,7 @@ Cliquez sur `...`{.action} à droite de la plateforme Exchange puis sur `Modifie
 
 Sur cette nouvelle fenêtre, vous pouvez visualiser et modifier la facturation de chacun de vos comptes. Il est possible d'effectuer des changements depuis la colonne « **Renouvellement** » sur un ou plusieurs comptes à la fois. Chaque modification sur un compte sera appliquée à la date indiquée dans la colonne « **Expiration** ».
 
-Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel:
+Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel :
 
 > Sur la première étape, cliquez sur la mention « **Mensuelle** » à droite du compte de votre choix puis cliquez sur `Suivant`{.action} plus bas à gauche.
 >

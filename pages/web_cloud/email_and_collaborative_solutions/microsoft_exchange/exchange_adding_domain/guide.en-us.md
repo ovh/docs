@@ -38,10 +38,6 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Instructions
 
-### Access your service management
-
-**Exchange**
-
 ### Add a domain name
 
 1. Click on the `Associated domains`{.action} tab of your Exchange service.
@@ -157,7 +153,7 @@ If you have email accounts attached to the domain name you want to detach, you h
 **Attach accounts to another domain name**:
 
 1. Go to the `Email accounts`{.action} tab.
-1 To the right of the accounts you want to modify, click the `...`{.action} button.
+1. To the right of the accounts you want to modify, click the `...`{.action} button.
 1. Click `Modify`{.action}.
 
 ![exchange](images/add_domain_exchange_step8.png){.thumbnail .w-600}

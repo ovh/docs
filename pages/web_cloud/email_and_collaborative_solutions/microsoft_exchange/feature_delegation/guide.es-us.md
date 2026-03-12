@@ -12,7 +12,7 @@ Los servicios Exchange permiten disfrutar de direcciones de correo profesionales
 
 ## Requisitos
 
-- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configuradas.
+- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configurada.
 - Tener al menos dos cuentas de correo activas configuradas en una misma plataforma de correo de OVHcloud.
 - Tener las claves de la cuenta de correo que disfrutará de los nuevos permisos delegados.
 

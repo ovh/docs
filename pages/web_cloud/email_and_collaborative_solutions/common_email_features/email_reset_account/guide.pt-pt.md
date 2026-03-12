@@ -21,6 +21,7 @@ Deseja:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
+- Ser o contacto administrador do serviço de e-mail em questão.
 - Ter acesso aos endereços de e-mail pertinentes.
 
 <!-- CP-NAV-START:web-mx-plan -->

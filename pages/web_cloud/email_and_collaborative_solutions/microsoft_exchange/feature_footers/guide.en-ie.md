@@ -65,7 +65,7 @@ Please take the following specifics into consideration before applying signature
 - The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
 - "Initials" are not active on the service. Adding this variable will have no effect.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

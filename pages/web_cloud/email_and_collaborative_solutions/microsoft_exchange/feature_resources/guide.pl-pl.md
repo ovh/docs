@@ -121,7 +121,7 @@ Po utworzeniu wydarzenia (kliknij `Wyślij`{.action} na górnym pasku menu), Exc
 
 ![komunikat odmowny](images/exchange-resources-step8.png){.thumbnail}
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

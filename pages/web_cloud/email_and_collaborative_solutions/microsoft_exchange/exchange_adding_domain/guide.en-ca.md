@@ -38,10 +38,6 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Instructions
 
-### Access your service management
-
-**Exchange**
-
 ### Add a domain name
 
 1. Click on the `Associated domains`{.action} tab of your Exchange service.

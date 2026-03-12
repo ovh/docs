@@ -35,7 +35,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 > The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pp). You can identify which version you are using with the table below.
 >
 
-MX Plan legacy version|MX Plan new version|
+|MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
 |Continue reading this guide in the [Instructions](#oldmxplan) section below.|Continue with our guide regarding [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
@@ -134,7 +134,7 @@ You can choose between these types of actions:
 
 <a name="MULTI"></a>
 
-#### Deleting emails containing an unwanted phrase, excluding one sender 
+#### Deleting emails containing an unwanted phrase, excluding one sender
 
 This filter example consists of two rules:
 
@@ -149,6 +149,6 @@ In the Control Panel, the filter configuration looks like this:
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

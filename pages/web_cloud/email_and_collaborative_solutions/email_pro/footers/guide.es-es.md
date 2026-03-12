@@ -26,4 +26,4 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Procedimiento
 
-Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) en la sección "Soluciones colaborativas de Microsoft".
+Siga nuestra guía [Crear firmas automáticas](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers) en la sección "Soluciones colaborativas de Microsoft".

@@ -46,6 +46,8 @@ Lorsque vous avez identifié le compte concerné par la délégation, détermin�
 
 ### Étape 1 : mettre en place la délégation
 
+Dirigez-vous vers l'onglet `Comptes e-mail`{.action}.
+
 Le tableau qui apparaît affiche les comptes liés à votre service Exchange. Cliquez sur les trois points à droite du compte pour lequel vous souhaitez créer une délégation, puis sur `Gérer les délégations`{.action}.
 
 ![delegation](images/delegation-step1.png){.thumbnail}
@@ -139,6 +141,12 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+[Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Partager un dossier depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Créer un groupe de contacts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

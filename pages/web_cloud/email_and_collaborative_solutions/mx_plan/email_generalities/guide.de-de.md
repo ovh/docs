@@ -113,7 +113,7 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 
 Sobald Ihre E-Mail-Adressen angelegt sind, können Sie mit deren Verwendung beginnen. Hierzu haben Sie zwei Möglichkeiten: Webmail über einen Webbrowser oder einen E-Mail-Client verwenden.
 
-### Webmail verwenden <a name="consult-emails-webmail"></a>
+#### Webmail verwenden <a name="consult-emails-webmail"></a>
 
 Gehen Sie auf die Seite „[Webmail Login](/links/web/email)“ und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie dann auf den Button `Verbinden`{.action}.
 
@@ -143,7 +143,7 @@ Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 >> ![email](images/mxplan-webmail-owa01.png){.thumbnail .w-500}
 >>
 
-### Einen E-Mail-Client verwenden <a name="consult-emails-client"></a>
+#### Einen E-Mail-Client verwenden <a name="consult-emails-client"></a>
 
 Sie können Ihren E-Mail-Account auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail, etc. einrichten.
 
@@ -222,7 +222,7 @@ Sie möchten Ihre E-Mails an einen anderen Empfänger weiterleiten, einen Alias 
 Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 
 > [!tabs]
-> **RoundCube**
+> **Roundcube**
 >>
 >> Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `E-Mails`{.action} Ihres MX Plan Dienstes und dann rechts auf `Weiterleitungsverwaltung`{.action}.  
 >> Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}, um mit der Erstellung Ihrer Weiterleitung oder Ihres Alias zu beginnen.
@@ -254,7 +254,7 @@ Sie können für Abwesenheiten eine automatische Antwort einrichten, um anzuzeig
 Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 > [!tabs]
-> **RoundCube**
+> **Roundcube**
 >>
 >> Um eine automatische Antwort auf eine Ihrer E-Mail-Adressen hinzuzufügen, klicken Sie in Ihrem MX Plan Dienst auf `E-Mails`{.action} und dann rechts auf `Verwaltung der automatischen Antworten`{.action}.  
 >> Die Tabelle der bereits aktiven Auto-Antworten wird angezeigt. Rechts klicken Sie auf den Button `Eine Auto-Antwort hinzufügen`{.action}, um Ihre Weiterleitung oder Ihren Alias zu erstellen.
@@ -281,8 +281,6 @@ Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 [E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Automatische Antwort an einer E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

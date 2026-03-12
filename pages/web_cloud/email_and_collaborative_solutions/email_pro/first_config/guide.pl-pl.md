@@ -29,20 +29,11 @@ Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjo
 
 ## W praktyce
 
-### Etap 1: logowanie do usługi E-mail Pro
-
-Po utworzeniu i udostępnieniu usługi E-mail Pro :
-
-1. Kliknij zakładkę `Web Cloud`{.action}.
-1. Kliknij `Email Pro`{.action}.
-1. Wybierz odpowiednią platformę.
+### Etap 1: dodanie domeny
 
 > [!primary]
 >
 > Nazwa usługi E-mail Pro w Panelu klienta OVHcloud zaczyna się od *emailpro-*, następnie zawiera część Twojego identyfikatora klienta i kończy się cyfrą (1 dla pierwszej zainstalowanej usługi E-mail Pro, 2 dla drugiej etc.).
->
-
-### Etap 2: dodanie domeny
 
 Po zamówieniu usługi E-mail Pro automatycznie wyświetli się okno, w którym zostaniesz poproszony o `Dodanie domeny`{.action}. Jeśli okno się nie wyświetla, przejdź do karty `Powiązane domeny`{.action}, następnie kliknij przycisk `Dodaj domenę`{.action}.
 
@@ -98,7 +89,7 @@ Kliknij przycisk `Dalej`{.action}, aby kontynuować proces dodawania domeny.
 
 Przed zakończeniem konfiguracji zweryfikuj wyświetlane informacje, a następnie kliknij przycisk `Zatwierdź`{.action}, aby dodać domenę.
 
-### Etap 3: konfiguracja nazwy domeny
+### Etap 2: konfiguracja nazwy domeny
 
 Po dodaniu nazwy domeny jako domeny powiązanej sprawdź jej ustawienia, korzystając z wyświetlającej się tabeli.
 
@@ -115,7 +106,7 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. J
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Etap 4: konfiguracja i korzystanie z kont E-mail Pro
+### Etap 3: konfiguracja i korzystanie z kont E-mail Pro
 
 Skonfiguruj konta e-mail w karcie `Konta e-mail`{.action}. Konta, które zamówiłeś wyświetlają się w tabeli w postaci “*@configureme.me*”.
 
@@ -156,7 +147,7 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 > Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz. Możesz zamówić nowe konta, klikając przycisk `Zamówienie kont`{.action}.
 >
 
-### Etap 5: korzystanie z kont e-mail
+### Etap 4: korzystanie z kont e-mail
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](/links/web/email). Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
 
@@ -179,7 +170,7 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 >
 > Poniżej stosujemy przykładową nazwę serwera, czyli pro?.mail.ovh.net. Należy zastąpić „X” cyfrą wskazującą serwer Twojej usługi E-mail Pro.
 > 
-> Znajdziesz tę cyfrę w Twoim [Panelu klienta OVHcloud](/links/manager), przechodząc do sekcji `Web Cloud`{.action}, a następnie do `Email Pro`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
+> Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action} usługi E-mail Pro.
 > 
 
 ## Sprawdź również

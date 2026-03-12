@@ -1,6 +1,6 @@
 ---
 title: 'Gérer et utiliser les mailing lists'
-excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
+excerpt: 'Découvrez dans ce guide comment utiliser les listes de diffusion.'
 updated: 2025-04-28
 ---
 
@@ -18,13 +18,13 @@ Une mailing list peut être modérée pour éviter que n'importe qui n'envoie d'
 
 ![emails](images/manage_mailing-lists_no-modarate.png){.thumbnail}
 
-L'expéditeur (sender) transmet l'e-mail à la mailing list, les abonnés (subscribers) recoivent directement l'e-mail.
+L'expéditeur (sender) transmet l'e-mail à la mailing list, les abonnés (subscribers) reçoivent directement l'e-mail.
 
 **Mailing list avec modération**
 
 ![emails](images/manage_mailing-lists_modarate.png){.thumbnail}
 
-L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (moderator) reçoit un e-mail avec une demande de validation ou de refus. Si le modérateur valide, les abonnés (subscribers) recoivent l'e-mail transmis à la mailing list. Si le modérateur refuse, l'email de l'expéditeur est effacé et les abonnées ne reçoivent rien.
+L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (moderator) reçoit un e-mail avec une demande de validation ou de refus. Si le modérateur valide, les abonnés (subscribers) reçoivent l'e-mail transmis à la mailing list. Si le modérateur refuse, l'email de l'expéditeur est effacé et les abonnées ne reçoivent rien.
 
 > [!warning]
 >
@@ -65,7 +65,7 @@ Pour créer une nouvelle mailing list, cliquez sur `Ajouter une mailing list`{.a
 
 ![emails](images/manage_mailing-lists_02.png){.thumbnail}
 
-Complétez le formulaire selon les informations décrites dans le tableau ci-dessous:
+Complétez le formulaire selon les informations décrites dans le tableau ci-dessous :
 
 | Information                      	| Description                                                                                                            	|
 |----------------------------------	|------------------------------------------------------------------------------------------------------------------------	|
@@ -90,7 +90,7 @@ Complétez le formulaire selon les informations décrites dans le tableau ci-des
 
 ### Gérer les options de la mailing list
 
-Pour modifier les options de la mailing list, cliquez sur `...`{.action} à droite de celle-ci. Vous pourrez alors mettre à jour les options, supprimer la mailing list ou encore partager la liste de ses abonnés par e-mail. 
+Pour modifier les options de la mailing list, cliquez sur `...`{.action} à droite de celle-ci. Vous pourrez alors mettre à jour les options, supprimer la mailing list ou encore partager la liste de ses abonnés par e-mail.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -255,6 +255,6 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 > Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse `nom_de_votre_ML-edit.bottom@mydomain.ovh`. Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
 >
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

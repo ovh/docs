@@ -18,8 +18,8 @@ Your Microsoft 365 licences are collected into a group, also called `Service`. A
 
 Here is the list of software included in the suite:
 
-- Apps for Business licences: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for Enterprise licences: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business licences: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Apps for Enterprise licences: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **This guide explains how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel.**
 
@@ -123,7 +123,7 @@ To terminate your Microsoft Office 365 CSP1 license group:
 >
 > Usage for the current month will be billed at the end of the month.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using Remote Desktop with Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

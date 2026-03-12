@@ -27,6 +27,8 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Instructions
 
+Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
+
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
 In this section you will see your attached domains, for each of which you can create a footer scheme. Click on `...`{.action} and then on `Configuration`{.action} to open the HTML editor.
@@ -54,7 +56,7 @@ Please take the following specifics into consideration before applying signature
 - The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
 - "Initials" are not active on the service. Adding this variable will have no effect.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

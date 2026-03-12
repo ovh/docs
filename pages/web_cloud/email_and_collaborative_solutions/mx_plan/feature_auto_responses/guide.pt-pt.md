@@ -45,13 +45,13 @@ Aparecerá a janela de adição. Pode completá-la de acordo com as informaçõe
 
 - `Tipo de resposta automática`:
 
-**Associado a uma caixa de e-mail** : a utilizar se se tratar de um endereço de e-mail existente no seu serviço de e-mail.
-**Livre** : a utilizar no caso de um alias. Por isso, não está associado a um endereço existente.
+    - **Associado a uma caixa de e-mail** : a utilizar se se tratar de um endereço de e-mail existente no seu serviço de e-mail.
+    - **Livre** : a utilizar no caso de um alias. Por isso, não está associado a um endereço existente.
 
 - `Caixa de e-mail` ou `Nome da resposta automática`: o endereço de e-mail ou o alias afetado pela resposta automática.
 - `Duração da resposta automática`:
     - **Temporário** : defina uma data de início e de fim que tenha em conta para o funcionamento da sua resposta automática (útil se estiver de férias, por exemplo).
-    - **Permanent** : a resposta automática só funcionará quando a tiver desativado.
+    - **Permanente** : a resposta automática só funcionará quando a tiver desativado.
 - `Enviar uma cópia` ou `Guardar as mensagens no servidor` : permite reenviar as mensagens recebidas durante a sua ausência para o endereço à sua escolha ou conservá-las no endereço de e-mail.
 
 > [!warning]

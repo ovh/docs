@@ -128,11 +128,7 @@ Questa guida si applica a tutte le nostre offerte di posta elettronica. La gesti
 >
 > La tecnologia di posta del servizio MX Plan può variare in base alla data di attivazione del servizio o in caso di una recente migrazione. Questa tecnologia si distingue soprattutto per l'interfaccia della sua Webmail. Per identificarlo dallo Spazio Cliente, segui questa procedura:
 >
-> 1. Accedi alla sezione `Web Cloud`{.action}.
-> 1. Clicca su `MX Plan`{.action}.
-> 1. Seleziona il dominio interessato.
-> 1. La scheda `Informazioni generali`{.action} è selezionata di default.
-> 1. Prendi nota della tecnologia utilizzata sotto la voce **Webmail** nel riquadro `Abbonamento`.
+> Dal servizio MX Plan, nella scheda `Informazioni generali`{.action}, prendi nota della tecnologia utilizzata sotto la voce **Webmail** nel riquadro `Abbonamento`.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-640}
 >
@@ -165,6 +161,8 @@ Questa guida si applica a tutte le nostre offerte di posta elettronica. La gesti
 Al momento, solo le offerte **MX plan** e **Redirect** dispongono di un’interfaccia di gestione dei reindirizzamenti tramite lo Spazio Cliente OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
+
+Dal tuo servizio MX Plan, seleziona il dominio interessato.
 
 Nel nostro esempio, si tratta di un **reindirizzamento con copia in locale** (vedi lo [schema 2](#diagram) all'inizio di questa guida). Se ciò corrisponde alle tue necessità, segui gli step indicati qui sotto nella scheda corrispondente alla tecnologia Webmail utilizzata dal tuo MX Plan:
 
@@ -346,6 +344,8 @@ Per maggiori informazioni sull’utilizzo della webmail Zimbra, consulta la nost
 
 ##### MX Plan dallo Spazio Cliente <a name="redirect-delete-mxplan"></a>
 
+Dal tuo servizio MX Plan, seleziona il dominio interessato.
+
 Seleziona qui sotto la scheda corrispondente alla tecnologia email utilizzata dal tuo servizio MX Plan:
 
 > [!tabs]
@@ -454,10 +454,12 @@ Per creare un alias su un account email MX Plan Roundcube, è necessario farlo a
 
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
+Dal tuo servizio Zimbra, clicca sulla scheda `Account email`{.action}.
+
 > [!tabs]
 > **Step 1**
 >>
->> - clicca sul pulsante `⁝`{.action} in corrispondenza dell’account email interessato.
+>> - Clicca sul pulsante `⁝`{.action} in corrispondenza dell’account email interessato.
 >> - Clicca su `Modifica`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -509,6 +511,8 @@ Clicca sul pulsante `...`{.action} a destra del reindirizzamento in questione e 
 ![email](images/email-del-legacy-redirect01.png){.thumbnail .w-640}
 
 #### Zimbra <a name="alias-delete-zimbra"></a>
+
+Dal tuo servizio Zimbra, clicca sulla scheda `Account email`{.action}.
 
 > [!tabs]
 > **Step 1**

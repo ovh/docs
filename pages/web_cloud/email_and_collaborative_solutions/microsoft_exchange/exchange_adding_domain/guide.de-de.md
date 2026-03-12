@@ -47,8 +47,6 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 ## In der praktischen Anwendung
 
-### Zugang zur Verwaltung Ihrer Dienstleistung
-
 ### Eine Domain hinzufügen
 
 1. Klicken Sie auf den Tab `Assoziierte Domains`{.action}.

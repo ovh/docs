@@ -54,7 +54,7 @@ A sua oferta Private Exchange ou Trusted Exchange gera, portanto, os seus própr
 
 ### Visualizar os logs da sua plataforma Exchange em tempo real
 
-Para aceder aos logs em tempo real na sua oferta Private ou Trusted Exchange, siga as instruções seguintes:
+Para aceder aos logs em tempo real na sua oferta Private ou Trusted Exchange, à direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Registos`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Os serviços Exchange oferecem 2 tipos de logs:
 
 - **Access** : Permite consultar a atividade das ligações ao seu serviço Exchange.
 - **Messagetracking** : Permite consultar os logs detalhados do fluxo de correio eletrónico que atravessa o seu serviço Exchange. Encontrará as seguintes informações:
-    - o estado de entrega de correios nos seus contos Exchange;
+    - o estado de entrega de correios nas suas contas Exchange;
     - o estado de envio de correios a partir do seu serviço Exchange;
     - o tamanho dos correios transmitidos;
     - etc.
@@ -89,6 +89,9 @@ Funciona ao recuperar os logs gerados pela sua infraestrutura, sites web ou apli
 As soluções Exchange são compatíveis com diversos serviços tais como alojamento partilhado, VPS e servidores dedicados. Podem também ser complementadas por fluxos de dados na Logs Data Platform, em complemento dos logs em tempo real já disponíveis.
 
 Para subscrever os logs da sua solução Exchange a um fluxo de dados na Logs Data Platform, realize as seguintes ações:
+
+1. À direita da série de separadores, clique no separador `Mais +`{.action} e depois em `Registos`{.action}.
+1. À direita do quadro onde são apresentados os logs em tempo real, clique no botão `Subscrever`{.action}.
 
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 

@@ -65,7 +65,7 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 - O editor permite formatação HTML, hiperligações, imagens, etc. Contudo, as assinaturas não deverão contar demasiado com estas opções. Os destinatários podem usar clientes de e-mail incompatíveis com HTML e imagens integradas, ou então as assinaturas podem ser exibidas de forma distorcida. Tenha em conta que as tags HTML serão removidas por completo se a mensagem for enviada como «Texto simples» a partir do OWA.
 - O serviço não conta com a opção «Initials». Se introduzir esta variável, não verificará nenhum efeito.
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

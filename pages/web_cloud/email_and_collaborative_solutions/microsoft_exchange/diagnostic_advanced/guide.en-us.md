@@ -104,7 +104,7 @@ Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | ex.mail.ovh.ca)
+Target       | ex.mail.ovh.ca
 
 ### The test email could not be sent from this account 
 

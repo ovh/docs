@@ -27,7 +27,7 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 <!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
->**Las aplicaciones móviles OTP**
+> **Las aplicaciones móviles OTP**
 >
 > Existen numerosas aplicaciones OTP. Dos de estas aplicaciones son gratuitas:
 > 
@@ -79,6 +79,6 @@ Seleccione la opción que corresponde a sus necesidades según la siguiente tabl
 | 2. | «Restablecer la doble autenticación» | Permite restablecer el código QR solicitado al conectarse por primera vez al correo electrónico basado en la web.<br> *Ejemplo: un usuario ha cambiado de teléfono inteligente y debe volver a configurar su aplicación OTP.* |
 | 3. | «Eliminar la doble autenticación» | Elimina por completo la doble autenticación de la cuenta. | 
 
-## Más información
+## Más información <a name="go-further"></a>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

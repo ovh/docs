@@ -6,7 +6,7 @@ updated: 2025-08-12
 
 ## Objectif
 
-Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de passe qui leur est associé. La modification de celui-ci peut se faire de 2 manières selon votre offre e-mail:
+Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de passe qui leur est associé. La modification de celui-ci peut se faire de 2 manières selon votre offre e-mail :
 
 - Depuis le Webmail
 - Via l'espace client OVHcloud
@@ -67,6 +67,8 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > [!warning]
 >
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+
+<a name="whichmxplan"></a>
 
 > [!primary]
 >
@@ -133,7 +135,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -170,7 +172,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 >
 > Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

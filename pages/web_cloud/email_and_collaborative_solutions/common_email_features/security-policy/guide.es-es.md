@@ -50,9 +50,11 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 - reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange));
 - determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange)).
 
-|Correo electrónico y Email Pro|Exchange|
+Para acceder a la política de seguridad de su servicio de correo, siga las instrucciones a continuación.
+
+|MX Plan y Email Pro|Exchange|
 |---|---|
-|Haga clic en `MX Plan`{.action} o `Email Pro`{.action} y seleccione el servicio correspondiente. Haga clic en `Más`{.action} y seleccione `Editar la política de seguridad`{.action}.| Haga clic en `Microsoft`{.action}, después en `Exchange`{.action}, y seleccione el servicio correspondiente. Haga clic en `Más` y seleccione `Editar la política de seguridad`{.action}|
+|Haga clic en la pestaña `Más` y seleccione `Editar la política de seguridad`{.action}.|Haga clic en `Seguridad`{.action}.|
 |![Política de seguridad Exchange](images/manage-security01.png){.thumbnail}|![Política de seguridad Exchange](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

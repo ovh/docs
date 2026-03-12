@@ -47,8 +47,6 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 ## Instruções
 
-### Aceder à gestão do seu serviço
-
 ### Adicionar um domínio
 
 1. Clique no separador `Domínios associados`{.action} da sua plataforma Exchange ou E-mail Pro.

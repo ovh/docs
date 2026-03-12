@@ -29,16 +29,11 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 
 ## Procedimiento
 
-### 1. Acceder a la gestión del servicio
-
-Una vez creado y activado el servicio E-mail Pro :
+### 1. Añadir su nombre de dominio
 
 > [!primary]
 >
 > El nombre de un servicio E-mail Pro en el área de cliente de OVHcloud comienza por "*emailpro-*", además, contiene una parte de su referencia de cliente y termina por una cifra (1 para el primer servicio E-mail Pro instalado, 2 para el segundo y así sucesivamente).
->
-
-### 2. Añadir su nombre de dominio
 
 Después de contratar el servicio E-mail Pro, se abrirá automáticamente una ventana en la que se le invita a `añadir un dominio`{.action}. Si la ventana no aparece, acceda a la pestaña `Dominios asociados`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 
@@ -94,7 +89,7 @@ Haga clic en el botón `"Siguiente"`{.action} para continuar con la adición del
 
 Una vez realizada la configuración, compruebe que la información mostrada sea la correcta y haga clic en `Confirmar`{.action} para añadir el dominio.
 
-### 3. Configurar el nombre de dominio
+### 2. Configurar el nombre de dominio
 
 Una vez añadido el nombre de dominio como dominio asociado, compruebe su configuración usando la tabla que aparece.
 
@@ -111,7 +106,7 @@ En la columna "`Diagnóstico`{.action}", podrá ver si la configuración DNS del
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### 4. Configurar las cuentas E-mail Pro
+### 3. Configurar las cuentas E-mail Pro
 
 Para configurar las direcciones de correo, abra la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas que haya contratado con el formato "*@configureme.me*".
 
@@ -152,7 +147,7 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 > Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición. Si necesita más cuentas, puede realizar el pedido utilizando el botón `Contratar cuentas`{.action}.
 >
 
-### 5. Utilizar las direcciones de correo electrónico
+### 4. Utilizar las direcciones de correo electrónico
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](/links/web/email), donde deberá introducir las credenciales de su dirección de correo electrónico.
 
@@ -175,7 +170,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor pro?.mail.ovh.net. Deberá sustituir la "?" por el número que designa el servidor del servicio E-mail Pro.
 >
-> Encontrará este número en el [área de cliente de OVHcloud](/links/manager), en el apartado `Web Cloud`{.action} de la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **"Conexión"** de la pestaña `Información General`{.action}.
+> El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action} de su servicio E-mail Pro.
 >
 
 ## Más información

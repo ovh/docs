@@ -29,7 +29,7 @@ Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messa
 ### Zugriff auf das OVHcloud Kundencenter
 
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
-- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
+- **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
 ---
 <!-- CP-NAV-END:web-zimbra -->
@@ -81,7 +81,7 @@ Um eine Organisation zu erstellen, klicken Sie auf `Organisation hinzufügen`{.a
 
 ![zimbra](images/zimbra_organization_add.png){.thumbnail .w-500}
 
-### Nach Organisation filtern <a name="organizations-filters"></a>
+#### Nach Organisation filtern <a name="organizations-filters"></a>
 
 In den Tabs `Organisation`{.action}, `Domain`{.action} und `E-Mail-Accounts`{.action} erstellen Sie einen Filter, der nur die Elemente anzeigt, die mit dieser Organisation verknüpft sind.
 
@@ -170,7 +170,7 @@ Klicken Sie im Tab `Domain`{.action} Ihres Zimbra Dienstes auf das Symbol &#8285
     - **MX**: Notwendig zum Empfang Ihrer E-Mails.
     - **SPF**: Sicherheitseintrag, der von den meisten E-Mail-Empfänger-Servern verlangt wird, um die OVHcloud Server für den E-Mail-Versand mit Ihrem Domainnamen zu legitimieren.
     - **DKIM**: Ermöglicht die Einrichtung eines Signatursystems für jede E-Mail, die von Ihrem Zimbra-Dienst gesendet wird. Die Signatur wird vom Empfänger anhand des öffentlichen Schlüssels überprüft, der in Ihrer DNS-Zone hinterlegt ist.
-- **SRV**: Ermöglicht die Konfiguration Ihres Zimbra Accounts, wenn Sie ihn in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) einrichten.
+    - **SRV**: Ermöglicht die Konfiguration Ihres Zimbra Accounts, wenn Sie ihn in einer E-Mail-Software (Outlook, Mail für Mac, Thunderbird usw.) einrichten.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
@@ -222,9 +222,13 @@ Klicken Sie auf `Bestätigen`{.action}, um die Erstellung des Accounts zu starte
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Angebot wechseln <a name="emails-offer"></a>
+#### Angebot wechseln <a name="emails-offer"></a>
 
 Es ist möglich, jeden Zimbra Account auf ein höheres oder niedrigeres Angebot zu ändern.
+
+1. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
+1. Klicken Sie rechts neben dem E-Mail-Account, für den Sie das Angebot ändern möchten, auf `⁝`{.action}.
+1. Klicken Sie auf `Angebot wechseln`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

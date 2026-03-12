@@ -43,7 +43,7 @@ Migracja konta e-mail MX Plan na konto e-mail Zimbra odbywa się w 2-etapowym pr
     - [2.1 - Usuwanie starego adresu e-mail MX Plan](#step21)
     - [2.2 - Zmień nazwę adresu e-mail Zimbra](#step22)
 
-W poniższym przykładzie przenosimy adres `contact@modomain.ovh`. W tym celu utworzymy konto Zimbra pod nazwą `contact2@mydomain.ovh`.
+W poniższym przykładzie przenosimy adres `contact@mydomain.ovh`. W tym celu utworzymy konto Zimbra pod nazwą `contact2@mydomain.ovh`.
 
 ![zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
 
@@ -53,7 +53,7 @@ W poniższym przykładzie przenosimy adres `contact@modomain.ovh`. W tym celu ut
 >
 > Jeśli dysponujesz już kontem e-mail Zimbra, skorzystaj z [Migracja e-maili przy użyciu OVHcloud Mail Migrator](#step12).
 
-Załóż najpierw konto e-mail z nazwą tymczasową. Możesz na przykład utworzyć adres `contact2@mydomain.ovh`{.action}, jeśli musisz przenieść adres `contact@mydomain.ovh`{.action}.
+Załóż najpierw konto e-mail z nazwą tymczasową. Możesz na przykład utworzyć adres `contact2@mydomain.ovh`, jeśli musisz przenieść adres `contact@mydomain.ovh`.
 
 Aby utworzyć konto e-mail Zimbra, zapoznaj się z sekcją "Tworzenie konta e-mail" naszego przewodnika [Pierwsze kroki z ofertą Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
@@ -61,7 +61,7 @@ Aby utworzyć konto e-mail Zimbra, zapoznaj się z sekcją "Tworzenie konta e-ma
 
 Użyj narzędzia do migracji [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**), aby przenieść zawartość oryginalnego konta MX Plan na nowe konto docelowe Zimbra, posługując się przykładem podanym na powyższym schemacie.
 
-### Etap 1: Dostęp do OVHcloud Mail Migrator
+#### Etap 1: Dostęp do OVHcloud Mail Migrator
 
 Przejdź na stronę [OVHcloud Mail Migrator](/links/web/omm).
 
@@ -79,9 +79,9 @@ Na stronie [OMM](/links/web/omm) w zakładce `Migration`{.action} kliknij `New m
     - **Login**: Wpisz pełny adres e-mail konta, które chcesz przenieść (na przykład: `contact@mydomain.ovh`).
     - **Password**: Wpisz hasło wybrane dla wybranego konta e-mail.
 - **Destination Account**:
-     **Server type**: Wybierz `Zimbra` dla typu serwera docelowego.
+    - **Server type**: Wybierz `Zimbra` dla typu serwera docelowego.
     - **Server URL**: Wpisz adres serwera Zimbra <https://zimbra1.mail.ovh.net>.
-    - **Login**: Wpisz pełny adres e-mail docelowego konta Zimbra (przykład:`contact2@mydomain.ovh`).
+    - **Login**: Wpisz pełny adres e-mail docelowego konta Zimbra (przykład: `contact2@mydomain.ovh`).
     - **Password**: Wpisz hasło wybrane dla konta e-mail Zimbra docelowego.
 
 **Opcje**
@@ -137,7 +137,7 @@ Aby usunąć adres e-mail MX Plan (na przykład: `contact@mydomain.ovh`), zapozn
 
 ### 2.2 - Zmień nazwę adresu e-mail Zimbra <a name="step22"></a>
 
-W Panelu klienta OVHcloud zaloguj się do usługi Zimbra Starter i zmień nazwę Twojego konta e-mail Zimbra na nazwę przeniesionego konta e-mail (na przykład: `contact2@mydomain.ovh` en `contact@mydomain.ovh`).
+W Panelu klienta OVHcloud zaloguj się do usługi Zimbra Starter i zmień nazwę Twojego konta e-mail Zimbra na nazwę przeniesionego konta e-mail (na przykład: `contact2@mydomain.ovh` na `contact@mydomain.ovh`).
 
 ### Zakończenie <a name="Zakończenie"></a>
 

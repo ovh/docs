@@ -59,7 +59,7 @@ Pour accéder aux logs en temps réel sur votre offre Private ou Trusted Exchang
 
 > [!warning]
 >
-> Comme il s'agit d'une console en temps réel, les logs n'apparaîssent que lorsque vous vous trouvez sur l'onglet `Logs`{.action}. Si vous quittez l'onglet `Logs`{.action} puis revenez dessus, l'historique précédent aura disparu.
+> Comme il s'agit d'une console en temps réel, les logs n'apparaissent que lorsque vous vous trouvez sur l'onglet `Logs`{.action}. Si vous quittez l'onglet `Logs`{.action} puis revenez dessus, l'historique précédent aura disparu.
 
 Les services Exchange proposent 2 types de logs :
 
@@ -111,7 +111,7 @@ Deux cas de figure se présentent alors pour abonner votre solution Exchange :
 > **Cas n°2**
 >> **S'abonner à un nouveau flux de données sur votre solution Logs Data Platform**
 >>
->> Si le flux concerné n'existe pas encore, cliquez sur le bouton `Ajouter un flux de données`{.action}. Vous serez alors redirigé vers une nouvelle page de votre espace client OVHcloud, sur laquelle vous pourrez de créer un nouveau flux de données sur votre solution Logs Data Platform.
+>> Si le flux concerné n'existe pas encore, cliquez sur le bouton `Ajouter un flux de données`{.action}. Vous serez alors redirigé vers une nouvelle page de votre espace client OVHcloud, sur laquelle vous pourrez créer un nouveau flux de données sur votre solution Logs Data Platform.
 >>
 >> Consultez nos guides « [Introduction to Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) » et « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » pour réaliser cette action.
 >>

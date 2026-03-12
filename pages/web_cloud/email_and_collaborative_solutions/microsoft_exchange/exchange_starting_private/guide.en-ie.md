@@ -98,7 +98,7 @@ Once your server is ready and available, you will receive a confirmation email w
 
 To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain). 
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 

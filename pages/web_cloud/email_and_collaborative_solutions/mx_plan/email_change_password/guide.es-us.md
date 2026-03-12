@@ -77,7 +77,7 @@ La modificación de su contraseña a través del webmail está disponible para l
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}.
 
 ![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -98,15 +98,15 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-### Recupera una password
+### Recuperar una contraseña
 
-Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en los pasos anteriores, es necesario restablecer la contraseña si ya no la conoce.
 
 > [!primary]
 >
-> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
+> Si desea almacenar una contraseña, le recomendamos utilizar un gestor de contraseñas, como **Keepass** por ejemplo.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

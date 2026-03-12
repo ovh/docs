@@ -45,8 +45,8 @@ Se abrirá la ventana de adición. Puede completar esta información de acuerdo 
 
 - `Tipo de contestador`:
 
-**Asociado a una cuenta de correo**: utilice esta opción si su servicio de correo ya contiene una dirección de correo.
-**Libre**: se utiliza en el caso de un alias. por lo que no está vinculado a ninguna dirección existente.
+    - **Asociado a una cuenta de correo**: utilice esta opción si su servicio de correo ya contiene una dirección de correo.
+    - **Libre**: se utiliza en el caso de un alias. Por lo que no está vinculado a ninguna dirección existente.
 
 - `Buzón de correo` o `Nombre del contestador`: la dirección de correo o el alias afectados por la respuesta automática.
 - `Duración del contestador`:

@@ -29,18 +29,13 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Instructions
 
-### Step 1: Access your service’s interface
-
-Once the Email Pro service has been created and is available, select it from the Control Panel.
+### Step 1: Add your domain name
 
 > [!primary]
 >
 > The name of an Email Pro service in the OVHcloud Control Panel begins with *emailpro-*, contains part of your NIC handle, and ends with a number (1 for the first Email Pro service installed, 2 for the second, etc.).
->
 
-### Step 2: Add your domain name
-
-If you have just ordered your Email Pro service, a window will automatically pop up, prompting you to `Add a domain`{.action}. If the window does not appear, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
+After ordering your Email Pro service, a window will automatically appear prompting you to `Add a domain`{.action}. If the window does not appear, go to the `Associated domains`{.action} tab, then click on the `Add a domain`{.action} button.
 
 You will need to choose an option:
 
@@ -94,7 +89,7 @@ Click on the `Next`{.action} button to continue adding the domain.
 
 At the end of the configuration process, check the information displayed, then click on the `Confirm`{.action} button to start adding the domain.
 
-### Step 3: Configure your domain name
+### Step 2: Configure your domain name
 
 Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
@@ -111,7 +106,7 @@ You can use the `Diagnosis`{.action} column to check the domain name’s DNS con
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Step 4: Configure the Email Pro accounts
+### Step 3: Configure the Email Pro accounts
 
 To configure your email accounts, go to the `Email accounts`{.action} tab. The table displays the accounts that you have ordered in this format: “*@configureme.me*”.
 
@@ -152,7 +147,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 > Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
 
-### Step 5: Use your email addresses
+### Step 4: Use your email addresses
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
 

@@ -79,7 +79,7 @@ A continuación, introduzca la información solicitada:
 > - Sin caracteres especiales, excepto los siguientes: `.`, `,`, `-` y `_`
 
 - **Nombre**: Introduzca un nombre.
-- **Nombre**: Introduzca los apellidos.
+- **Apellidos**: Introduzca los apellidos.
 - **Nombre mostrado**: Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.
 - **Contraseña**: Introduzca una contraseña y luego confírmela en el último campo. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
@@ -91,7 +91,7 @@ A continuación, introduzca la información solicitada:
 > - Máximo 30 caracteres
 > - Sin caracteres acentuados
 
-Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
+Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 ![Correo electrónico](images/mxplan-creation-new-step3.png){.thumbnail .w-400}
 
@@ -149,7 +149,7 @@ A continuación, introduzca la información solicitada:
 - **Tamaño de cuenta**: Seleccione el tamaño de cuenta deseado. Este es el espacio del que dispondrá su dirección para almacenar los mensajes.
 - **Contraseña**: Establezca una contraseña y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
-Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}. 
+Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action}.
 
 ![Correo electrónico](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
@@ -157,11 +157,11 @@ Compruebe que la información indicada en el resumen es correcta. Si lo es, haga
 
 Repita el procedimiento descrito en este apartado para crear las cuentas que desee, en función del número de cuentas a su disposición.
 
-#### Consultar los mensajes de correo 
+#### Consultar los mensajes de correo
 
 Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ![Correo electrónico](images/mxplan-creation-legacy-step4.png){.thumbnail .w-400}
 
@@ -206,7 +206,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan.
 
-##### Parámetros de recepción IMAP y POP <a name="imap-pop"></a>
+#### Parámetros de recepción IMAP y POP <a name="imap-pop"></a>
 
 Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recomendamos que utilice **IMAP**. Sin embargo, puede seleccionar **POP**.
 
@@ -235,7 +235,7 @@ Seleccione la pestaña correspondiente a su tipo de configuración:
 >> - **Puerto**: 995.
 >> - **Tipo de seguridad**: SSL/TLS.
 
-##### Parámetros de envío SMTP <a name="smtp"></a>
+#### Parámetros de envío SMTP <a name="smtp"></a>
 
 Para el envío de mensajes de correo, consulte a continuación los parámetros **SMTP** que debe utilizar:
 

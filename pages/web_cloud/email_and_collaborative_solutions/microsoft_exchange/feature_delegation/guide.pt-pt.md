@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais, que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
 
-**Saiba como delegar os direitos da sua conta  noutro agente.**
+**Saiba como delegar os direitos da sua conta noutro agente.**
 
 ## Requisitos
 
@@ -18,7 +18,7 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 >
 > **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
 
-- Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
+- Dispor dos identificadores relativos à conta que beneficiará dos novos direitos delegados.
 
 <!-- CP-NAV-START:web-exchange -->
 <!-- CP-NAV-START:web-email-pro -->
@@ -42,7 +42,7 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 ## Instruções
 
-Antes de começar, defina o(s) direito(s) que vai delegar. Relembramos que, ao criar uma delegação, atribui a uma ou várias contas  direitos adicionais na conta  em causa.
+Antes de começar, defina o(s) direito(s) que vai delegar. Relembramos que, ao criar uma delegação, atribui a uma ou várias contas direitos adicionais na conta em causa.
 
 |Permissões|Descrição|
 |---|---|
@@ -115,7 +115,7 @@ Clique agora em `Parâmetros adicionais`{.action}. Na nova janela, aceda ao sepa
 
 - **A partir do webmail Outlook Web App (OWA)**
 
-Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
+Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`{.action}.
 
 Na zona que aparecer, clique no botão que representa três pontos e, a seguir, em `Apresentar o campo De`{.action}. A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, elimine a já introduzida e inscreva-a. 
 
@@ -141,7 +141,7 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 - **A partir do webmail Outlook Web App (OWA)**
 
-Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
+Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`{.action}.
 
 Na zona que aparece, clique no botão que representa três pontos e, a seguir, em `Mostrar o campo De`{.action}. A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, elimine a já introduzida e inscreva-a. 
 

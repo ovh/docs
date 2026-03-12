@@ -121,7 +121,7 @@ After creating the event (clicking `Send`{.action} in the top menu bar) Exchange
 
 ![declinemessage](images/exchange-resources-step8.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

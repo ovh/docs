@@ -92,7 +92,7 @@ Preencha o formulário em função das informações descritas no seguinte quadr
 
 ### Gerir as opções da mailing list
 
-Para alterar as opções da mailing list, clique em `...`{.action} do lado direito. Pode então atualizar as opções, eliminar a mailing list ou partilhar a lista dos subscritores por e-mail. 
+Para alterar as opções da mailing list, clique em `...`{.action} do lado direito. Pode então atualizar as opções, eliminar a mailing list ou partilhar a lista dos subscritores por e-mail.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -257,6 +257,6 @@ Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e 
 > Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço `nome_da_sua_ML-edit.bottom@mydomain.ovh`. Receberá então um novo e-mail a explicar como personalizar o rodapé.
 >
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 Fale com nossa [comunidade de utilizadores](/links/community).

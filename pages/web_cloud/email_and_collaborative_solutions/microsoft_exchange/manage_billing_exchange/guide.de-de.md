@@ -101,7 +101,7 @@ Klicken Sie im Verwaltungsfenster Ihrer Exchange-Plattform oben rechts auf `Akti
 >
 > Diese Aktion führt zur Aussetzung und anschließenden Löschung sämtlicher Accounts auf der Exchange Plattform am Ablaufdatum.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

@@ -50,9 +50,11 @@ A gestão da política de segurança do seu serviço de e-mail pode interagir co
 - reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange));
 - definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange)).
 
+Para aceder à política de segurança do seu serviço de e-mail, siga as indicações abaixo.
+
 |MX Plan e E-mail Pro|Exchange|
 |---|---|
-|Clique em `MX Plan`{.action} ou `Email Pro`{.action}, e selecione o serviço em causa. Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|Clique em `Microsoft`{.action}, depois em `Exchange`{.action}, e selecione o serviço em causa. Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|
+|Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|Clique em `Segurança`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

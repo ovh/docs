@@ -22,7 +22,7 @@ Im Rahmen des schrittweisen Übergangs der MX Plan Accounts zu Zimbra ist es mö
 ### Zugriff auf das OVHcloud Kundencenter
 
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
-- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
+- **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
 ---
 <!-- CP-NAV-END:web-zimbra -->
@@ -53,13 +53,13 @@ Im folgenden Beispiel migrieren wir die Adresse `kontakt@mydomain.ovh`. Dazu ers
 >
 > Wenn Sie bereits über einen Zimbra E-Mail-Account verfügen, fahren Sie fort mit der [Migration der E-Mails mit dem OVHcloud Mail Migrator](#step12).
 
-Erstellen Sie zunächst eine E-Mail-Account mit einem vorläufigen Namen. Sie können zum Beispiel die Adresse `contact2@mydomain.ovh`{.action} erstellen, wenn Sie  `contact@mydomain.ovh`{.action} migrieren müssen.
+Erstellen Sie zunächst eine E-Mail-Account mit einem vorläufigen Namen. Sie können zum Beispiel die Adresse `contact2@mydomain.ovh` erstellen, wenn Sie `contact@mydomain.ovh` migrieren müssen.
 
 Um eine Zimbra E-Mail-Account zu erstellen, lesen Sie den Abschnitt "Einen E-Mail-Account erstellen" in unserer Anleitung: [Erste Schritte mit Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### 1.2 - E-Mail-Migration mit dem OVHcloud Mail Migrator <a name="step12"></a>
 
-Verwenden Sie das Migrationstool [**O**OVH **M**ail **M**igrator](/links/web/omm) (**OMM**), um den Inhalt des MX Plan Accounts auf den neuen Zimbra Ziel-Account zu übertragen.
+Verwenden Sie das Migrationstool [**O**VH **M**ail **M**igrator](/links/web/omm) (**OMM**), um den Inhalt des MX Plan Accounts auf den neuen Zimbra Ziel-Account zu übertragen.
 
 #### Schritt 1: Auf den OVHcloud Mail Migrator zugreifen
 
@@ -81,7 +81,7 @@ Klicken Sie auf der Seite [OMM](/links/web/omm) im Tab `Migration`{.action} auf 
 - **Ziel Account**
     - **Server type**: Wählen Sie `Zimbra` für den Zielservertyp aus.
     - **Server URL**: Geben Sie die Adresse des Zimbra Servers <https://zimbra1.mail.ovh.net> ein.
-    - **Login**: Geben Sie die vollständige E-Mail-Adresse des Ziel-Zimbra-Accounts ein (Beispiel:`contact2@mydomain.ovh`).
+    - **Login**: Geben Sie die vollständige E-Mail-Adresse des Ziel-Zimbra-Accounts ein (Beispiel: `contact2@mydomain.ovh`).
     - **Password**: Geben Sie das Passwort des Ziel-Zimbra-Accounts ein.
 
 **Optionen**

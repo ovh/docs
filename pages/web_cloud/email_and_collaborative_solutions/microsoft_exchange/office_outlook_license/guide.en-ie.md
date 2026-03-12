@@ -43,7 +43,7 @@ Set the renewal frequency for your Outlook licence, and confirm the conditions. 
 
 ![Outlook](images/order-outlook02.png){.thumbnail}
 
-Once you have verfied your order summary, use the `Pay`{.action} button to generate the purchase order. You will be redirected to a new page where you can pay for your order using the payment methods available to you.
+Once you have verified your order summary, use the `Pay`{.action} button to generate the purchase order. You will be redirected to a new page where you can pay for your order using the payment methods available to you.
 
 You will need to wait a few moments for your Outlook licence to become available in the OVHcloud Control Panel.
 
@@ -88,6 +88,6 @@ Click on the `...`{.action} icon to the right of the account concerned, then on 
 
 Once you have confirmed, you are reminded that the licence will be permanently deleted on its expiry date.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

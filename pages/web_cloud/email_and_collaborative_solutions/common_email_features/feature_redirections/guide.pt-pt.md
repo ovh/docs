@@ -128,11 +128,7 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 >
 > A tecnologia de e-mail da oferta MX Plan pode variar em função da data de ativação da sua oferta ou se ocorreu recentemente uma migração. Esta tecnologia distingue-se notavelmente pela interface do seu webmail. Para o identificar a partir da Área de Cliente, siga este procedimento:
 >
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Clique em `MX Plan`{.action}.
-> 1. Selecione o domínio em questão.
-> 1. O separador `Informações gerais`{.action} é selecionado por predefinição.
-> 1. Registe a tecnologia utilizada com a legenda **Webmail** na caixa `Subscrição`.
+> No serviço MX Plan, no separador `Informações gerais`{.action}, consulte a tecnologia utilizada com a legenda **Webmail** na caixa `Subscrição`.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-640}
 >
@@ -165,6 +161,8 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 Atualmente, apenas as ofertas **MX plan** e **Redirect** dispõem de uma interface de gestão dos reencaminhamentos através da Área de Cliente OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
+
+A partir do seu serviço MX Plan, selecione o domínio em questão.
 
 No nosso exemplo, trata-se de um **reencaminhamento com cópia local** (ver [esquema 2](#diagram) no início deste guia). Se for necessário, clique no separador correspondente à tecnologia webmail utilizada pelo MX Plan e siga as etapas abaixo:
 
@@ -346,6 +344,8 @@ Para mais informações sobre a utilização do webmail Zimbra, consulte o guia 
 
 ##### MX Plan através da Área de Cliente <a name="redirect-delete-mxplan"></a>
 
+A partir do seu serviço MX Plan, selecione o domínio em questão.
+
 Selecione o separador abaixo para a tecnologia de e-mail utilizada pelo serviço MX Plan:
 
 > [!tabs]
@@ -454,6 +454,8 @@ Para criar um alias numa conta de e-mail MX Plan Roundcube, deve fazê-lo da mes
 
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
+A partir do seu serviço Zimbra, clique no separador `Contas de e-mail`{.action}.
+
 > [!tabs]
 > **Etapa 1**
 >>
@@ -509,6 +511,8 @@ Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seg
 ![emails](images/email-del-legacy-redirect01.png){.thumbnail .w-640}
 
 #### Zimbra <a name="alias-delete-zimbra"></a>
+
+A partir do seu serviço Zimbra, clique no separador `Contas de e-mail`{.action}.
 
 > [!tabs]
 > **Etapa 1**

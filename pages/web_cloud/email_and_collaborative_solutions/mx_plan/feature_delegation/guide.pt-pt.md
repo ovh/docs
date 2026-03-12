@@ -64,7 +64,7 @@ Surge uma nova janela. Clique no botão `+`{.action} à direita da linha `Adicio
 
 Pode delegar a gestão do seu serviço MX Plan em vários identificadores OVHcloud.
 
-### Delegar uma ou várias contas de e-mail tem um identificador
+### Delegar uma ou várias contas de e-mail a um identificador
 
 Esta delegação permite-lhe alterar a palavra-passe da conta de e-mail em causa e gerir os seus filtros.
 
@@ -78,7 +78,7 @@ Introduza o identificador OVHcloud que beneficiará desta delegação e valide a
 
 É possível adicionar vários identificadores OVHcloud para gerir cada endereço de e-mail.
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

@@ -18,8 +18,8 @@ Sus licencias Microsoft 365 se agrupan en un grupo, también llamado "Service". 
 
 Esta es la lista de programas incluidos en la siguiente:
 
-- Licencias Apps for business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Licencias Apps para empresa: Excel, Word, PowerPoint, Outlook, Nota, Publisher, Access.
+- Licencias Apps for business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Licencias Apps para empresa: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Cómo contratar una licencia Microsoft 365 y administrarla desde el área de cliente de OVHcloud**
 
@@ -40,9 +40,6 @@ Esta es la lista de programas incluidos en la siguiente:
 
 ### Contratar una licencia
 
-    - Acceda a la sección `Web Cloud`{.action} de la columna izquierda.
-    - En la sección `MICROSOFT`, haga clic en `Microsoft 365`{.action}.
-    - Haga clic en `Contratar`{.action}.
 1. Elija entre nuestros productos disponibles: "Apps for Business" y "Apps for Enterprise".
 1. Defina la frecuencia de renovación de su grupo de licencias.
 1. Indique el número de licencias que desea y finalice el pedido.
@@ -111,7 +108,7 @@ Para dar de baja el grupo de licencias Microsoft Office 365 CSP1:
 >
 > El consumo del mes en curso se facturará al final del mes en curso.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Utilizar el escritorio remoto con Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

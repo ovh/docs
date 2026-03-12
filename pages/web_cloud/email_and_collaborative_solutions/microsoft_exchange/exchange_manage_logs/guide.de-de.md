@@ -29,7 +29,7 @@ Log-Dateien ermöglichen Ihnen folgende Aktionen:
 - Behebung von Fehlern, die im Computersystem aufgetreten sind.
 - Optimierung des Betriebs und der Leistung des Computersystems.
 
-Ihr Private Exchange oder Trusted Exchange generiert daher auch eigene Logs. Sie müssen möglicherweise auf diese Logs zugreifen oder sie abrufen, um den Zugriff auf Ihre E-Mail-Postfächer zu analysieren oder E-Mail-Verkemhr nachzuverfolgen.
+Ihr Private Exchange oder Trusted Exchange generiert daher auch eigene Logs. Sie müssen möglicherweise auf diese Logs zugreifen oder sie abrufen, um den Zugriff auf Ihre E-Mail-Postfächer zu analysieren oder E-Mail-Verkehr nachzuverfolgen.
 
 **Diese Anleitung erklärt, wie Sie Logs Ihres Private Exchange oder Trusted Exchange ansehen und verwalten können**
 
@@ -53,7 +53,7 @@ Ihr Private Exchange oder Trusted Exchange generiert daher auch eigene Logs. Sie
 
 ### Anzeigen der Exchange Logs in Echtzeit
 
-Um Echtzeit-Logs auf Ihrem Private- oder Trusted Exchange zu öffnen, gehen Sie wie folgt vor:
+Um Echtzeit-Logs auf Ihrem Private- oder Trusted Exchange zu öffnen, klicken Sie rechts neben den Tabs auf den Tab `Mehr +`{.action} und dann auf `Logs`{.action}.
 
 ![exchange - logs](images/exchange-logs01.png){.thumbnail}
 
@@ -89,9 +89,12 @@ Exchange Lösungen sind mit verschiedenen Diensten wie Webhosting, VPS und Dedic
 
 Um die Logs Ihrer Exchange Lösung einem Datenstrom auf Logs Data Platform hinzuzufügen, führen Sie die folgenden Aktionen aus:
 
+1. Klicken Sie rechts neben den Tabs auf den Tab `Mehr +`{.action} und dann auf `Logs`{.action}.
+1. Klicken Sie rechts neben dem Bereich, in dem Ihre Echtzeit-Logs angezeigt werden, auf den Button `Abonnieren`{.action}.
+
 ![exchange - logs](images/exchange-logs02.png){.thumbnail}
 
-Wählen Sie den Account aus dem Dropdown-Menü über der Tabelle aus.
+Wählen Sie auf der angezeigten Seite den gewünschten Logs Data Platform Account aus dem Dropdown-Menü über der Tabelle aus.
 
 ![exchange - logs](images/exchange-logs03.png){.thumbnail}
 

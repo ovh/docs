@@ -24,7 +24,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 > O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, a gestão dos filtros é feita diretamente através do webmail OWA (**O**utlook **W**eb **A**pp). Identifique a sua oferta através da tabela abaixo.
 >
 
-Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
+|Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
 |Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)".|
@@ -113,21 +113,21 @@ Pode escolher entre:
 >
 > Neste exemplo, introduzimos [SPAM] no assumpto do e-mail. Esta indicação é apresentada quando o serviço de receção de correio eletrónico anti-spam entrega o correio eletrónico indesejado, o qual é considerado indesejado, diretamente na pasta A receber. Como é o caso da versão antiga da oferta MX Plan.
 
-||Cabeçalho|Règle|Valor|Cenários|
+||Cabeçalho|Regra|Valor|Cenários|
 |---|---|---|---|---|
 |Parâmetros do filtro|Assumpto da mensagem|contém|\[SPAM]|eliminação|
 |O que o filtro vai fazer|Se o assumpto da mensagem|contém|a suite "\[SPAM]"|então, eliminar a mensagem.|
 
 #### Reencaminhar os e-mails de um destinatário
 
-||Cabeçalho|Règle|Valor|Cenários|
+||Cabeçalho|Regra|Valor|Cenários|
 |---|---|---|---|---|
 |Parâmetros do filtro|De|contém|contact@domaintest.ovh|reencaminhar para um endereço remoto: jean@otherdomain.ovh|
 |O que o filtro vai fazer|Se o expedidor|é|contact@domaintest.ovh|enviar o e-mail para jean@otherdomain.ovh|
 
 #### Reencaminhar os e-mails enviados a uma Mailing-List
 
-||Cabeçalho|Règle|Valor|Cenários|
+||Cabeçalho|Regra|Valor|Cenários|
 |---|---|---|---|---|
 |Parâmetros do filtro|A|contém|ml@mailing.com|Reencaminhar para um endereço local: recipient@mypersonaldomain.ovh|
 |O que o filtro vai fazer|Se a mensagem foi enviada à Mailing-List|chamada|ml@mailing.com|então, enviar a mensagem para o meu outro endereço: recipient@mypersonaldomain.ovh|
@@ -136,7 +136,7 @@ Pode escolher entre:
 
 Adicionam-se dois filtros:
 
-||Cabeçalho|Règle|Valor|Cenários|
+||Cabeçalho|Regra|Valor|Cenários|
 |---|---|---|---|---|
 |Parâmetros do filtro 1|Assumpto da mensagem|contém|"money"|eliminação|
 |Parâmetros do filtro 2|De|não contém|john@mybank.ovh|eliminação|
@@ -145,7 +145,7 @@ Se o assumpto da mensagem contiver a palavra "money" **e o** remetente da mensag
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

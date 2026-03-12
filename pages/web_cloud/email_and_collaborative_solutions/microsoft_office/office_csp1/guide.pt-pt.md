@@ -12,14 +12,14 @@ updated: 2025-05-22
 
 ## Objetivo
 
-Existem várias vantagens em subscrever às ofertas OVHcloud **Microsoft 365 apps for business** ou **Microsoft 365 apps for entreprise**. A faturação é mensal e pode instalar uma licença em 5 PC/Mac, 5 tablets e 5 smartphones.
+Existem várias vantagens em subscrever às ofertas OVHcloud **Microsoft 365 apps for business** ou **Microsoft 365 apps for Enterprise**. A faturação é mensal e pode instalar uma licença em 5 PC/Mac, 5 tablets e 5 smartphones.
 
-As suas licenças Microsoft 365 estão agrupadas num grupo, também chamado "Serviço". Um grupo de licenças Apps for business pode conter no máximo 300 licenças, um grupo de licenças Apps for entreprise é ilimitado.
+As suas licenças Microsoft 365 estão agrupadas num grupo, também chamado "Serviço". Um grupo de licenças Apps for business pode conter no máximo 300 licenças, um grupo de licenças Apps for Enterprise é ilimitado.
 
 Eis a lista dos softwares incluídos:
 
-- Licenças Apps for business: Excel, Word, PowerPoint, Outlook, Nota, Publisher.
-- Licenças Apps for entreprise: Excel, Word, PowerPoint, Outlook, Nota, Publisher, Access.
+- Licenças Apps for business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Licenças Apps for Enterprise: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Saiba como subscrever uma licença Microsoft 365 e geri-la na sua Área de Cliente OVHcloud**
 
@@ -40,9 +40,6 @@ Eis a lista dos softwares incluídos:
 
 ### Encomendar uma licença
 
-    - Aceda à secção `Web Cloud`{.action}.
-    - Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
-    - Clique em `Encomendar`{.action}.
 1. Escolha entre as nossas ofertas disponíveis, a saber, "Apps for Business" e "Apps for Enterprise".
 1. Defina a frequência de renovação do seu grupo de licenças.
 1. Defina o número de licenças pretendidas e conclua a sua encomenda.
@@ -99,7 +96,7 @@ No separador `Licenças`{.action} do seu grupo de licenças, clique no botão `�
 
 #### Rescindir o grupo de licenças
 
-Para rescindir o seu grupo de licença Microsoft Office 365 CSP1:
+Para rescindir o seu grupo de licenças Microsoft Office 365 CSP1:
 
 1. Clique no seu nome no canto superior direito da Área de Cliente OVHcloud.
 1. Clique em `As minhas ofertas e serviços`{.action}.
@@ -111,7 +108,7 @@ Para rescindir o seu grupo de licença Microsoft Office 365 CSP1:
 >
 > Os consumos do mês em curso serão faturados no final deste último.
 
-## Saiba mais
+## Saiba mais <a name="go-further"></a>
 
 [Utilizar o ambiente de trabalho remoto com Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

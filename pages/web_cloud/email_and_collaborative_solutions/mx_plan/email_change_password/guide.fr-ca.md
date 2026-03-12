@@ -77,7 +77,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 >
 > Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

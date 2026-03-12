@@ -26,4 +26,4 @@ Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) pe
 
 ## Procedura
 
-Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) nella sezione "Soluzioni collaborative Microsoft".
+Consulta la nostra guida [Creare firme automatiche](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers) nella sezione "Soluzioni collaborative Microsoft".

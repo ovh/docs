@@ -174,7 +174,7 @@ En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
-### Cuentas de correo <a name="email"></a>
+### Cuentas de correo <a name="emails"></a>
 
 La gestión de las direcciones de correo de su servicio Zimbra se realiza desde la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas de correo que tiene en el servicio, así como 3 datos para cada una de ellas:
 
@@ -222,9 +222,13 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Cambiar de plan <a name="emails-offer"></a>
+#### Cambiar de plan <a name="emails-offer"></a>
 
 Es posible cambiar el plan de cualquier cuenta Zimbra por un plan superior o inferior.
+
+1. Haga clic en la pestaña `Cuentas de correo`{.action}.
+1. A la derecha de la cuenta de correo para la que desea cambiar de plan, haga clic en `⁝`{.action}.
+1. Haga clic en `Cambiar de plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
 

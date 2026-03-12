@@ -64,7 +64,7 @@ Attendi qualche istante per la messa a disposizione della tua licenza Outlook ne
 
 A questo punto è necessario scaricare il file di installazione di Outlook per la tua macchina.
 
-Dall'interfaccia di gestione della tua piattaforma Exchange, clicca sull'icona `...`{.action} a destra dell'account interessato e poi su `Utilizza la licenza Outlook.`{.action}
+Dall'interfaccia di gestione della tua piattaforma Exchange, clicca sull'icona `...`{.action} a destra dell'account interessato e poi su `Utilizza la licenza Outlook`{.action}.
 
 Scegli la versione nel menu a tendina in base al tuo sistema operativo e la lingua, poi clicca su `Seguente`{.action}
 
@@ -80,8 +80,8 @@ Il file caricato è in formato .ISO, cioè un'immagine disco. Avvia l'installazi
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
-Dopo la conferma, ti ricordiamo che la licenza verrà eliminata definitivamente alla data di scadenza
+Dopo la conferma, ti ricordiamo che la licenza verrà eliminata definitivamente alla data di scadenza.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
   
 Contatta la nostra [Community di utenti](/links/community).

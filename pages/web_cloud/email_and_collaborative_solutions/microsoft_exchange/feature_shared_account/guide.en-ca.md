@@ -65,7 +65,7 @@ A shared account cannot be accessed directly because it does not have a password
 
 You will need to set up a delegation between an Exchange account and the shared account.
 
-In the `Shared accounts`{.action} tab of your Exchange service, click on the `...`{.action} button next to the shared account, then click `Manage  delegations`{.action}. You can then choose which accounts can access the shared account.
+In the `Shared accounts`{.action} tab of your Exchange service, click on the `...`{.action} button next to the shared account, then click `Manage delegations`{.action}. You can then choose which accounts can access the shared account.
 
 ![emails](images/exchange-shared_accounts03.png){.thumbnail}
 
@@ -90,7 +90,7 @@ In our example, we allow the accounts **guide-exchange@** and **test@** to acces
 Log in to [webmail](/links/web/email) with an Exchange account that has access to the shared account.
 <br>In our example, we connect with the **guide-exchange@** account.
 
-Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select `Add shared folder...`{.action} from the context menu. 
+Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select `Add shared folder...`{.action} from the context menu.
 
 ![emails](images/exchange-shared_accounts05.png){.thumbnail}
 
@@ -108,7 +108,7 @@ In the Outlook application, you will see your shared account in the left-hand co
 
 ![emails](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

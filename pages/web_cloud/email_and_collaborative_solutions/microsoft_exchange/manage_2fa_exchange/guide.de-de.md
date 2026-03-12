@@ -27,7 +27,7 @@ Wenn Sie die Sicherheit Ihres Accounts erhöhen möchten, können Sie die Zwei-F
 <!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
->**Die OTP-Applikationen**
+> **Die OTP-Applikationen**
 >
 > Es gibt zahlreiche OTP-Apps für Mobilgeräte. Die folgenden stehen kostenfrei zur Verfügung:
 > 
@@ -79,6 +79,6 @@ Wählen Sie die Option, die Ihren Anforderungen entspricht, gemäß der folgende
 | 2. | „Die Zwei-Faktor-Authentifizierung zurücksetzen“ | Ermöglicht das Zurücksetzen des QR-Codes, der beim ersten Herstellen einer Verbindung zum Webmail generiert wurde.<br> *Beispiel: Ein Benutzer hat sein Smartphone gewechselt und muss seine OTP-App neu konfigurieren.* |
 | 3. | „Die Zwei-Faktor-Authentifizierung löschen“ | Deaktiviert die Zwei-Faktor-Authentifizierung des Accounts vollständig. | 
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 Treten Sie unserer [User Community](/links/community) bei.

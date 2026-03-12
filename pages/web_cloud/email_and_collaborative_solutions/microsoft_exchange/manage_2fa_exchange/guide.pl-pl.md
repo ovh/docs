@@ -27,7 +27,7 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 <!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
->**Aplikacje mobilne OTP**
+> **Aplikacje mobilne OTP**
 >
 > Istnieje wiele aplikacji OTP. Oto przykładowe dwie z nich, dostępne za darmo:
 > 
@@ -44,7 +44,7 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 Przy pierwszej konfiguracji należy aktywować weryfikację dwuetapową w platformie, aby móc ją włączyć w koncie.
 
 1. Wybierz kartę `Bezpieczeństwo`{.action} w platformie.
-1. Naciśnij przycisk `Aktywuj`{.action} Który znajduje się pod opcją „Weryfikacja dwuetapowa”.
+1. Naciśnij przycisk `Aktywuj`{.action} który znajduje się pod opcją „Weryfikacja dwuetapowa”.
 1. Na koniec przejdź na dół strony i kliknij `Zapisz zmiany`{.action}.
 
 ![2fa-exchange](images/2fa-exchange.gif){.thumbnail}
@@ -81,6 +81,6 @@ Wybierz pożądaną opcję na podstawie poniższej tabeli:
 | 2. | „Zresetuj weryfikację dwuetapową” | Umożliwia ponowne wygenerowanie kodu QR wymaganego przy pierwszym logowaniu do poczty webmail.<br> *Przykład: użytkownik zmienił smartfona i musi ponownie skonfigurować aplikację OTP.* |
 | 3. | „Usuń weryfikację dwuetapową” | Ta opcja powoduje całkowite wyłączenie weryfikacji dwuetapowej w koncie. | 
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 Dołącz do [grona naszych użytkowników](/links/community).

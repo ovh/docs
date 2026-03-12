@@ -108,7 +108,7 @@ Desde Outlook, encontrará su cuenta compartida en la columna de la izquierda, d
 
 ![correo electrónico](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Consultar una cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

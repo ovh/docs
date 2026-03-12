@@ -53,7 +53,7 @@ Dans l'exemple ci-dessous, nous migrons l'adresse `contact@mydomain.ovh`. Pour c
 >
 > Si vous disposez déjà d'une adresse e-mail Zimbra, passez à la [Migration des e-mails avec OVHcloud Mail Migrator](#step12).
 
-Créez dans un premier temps une adresse e-mail avec un nom provisoire. Vous pouvez créer, par exemple, l'adresse `contact2@mydomain.ovh`{.action} si vous devez migrer l'adresse `contact@mydomain.ovh`{.action}.
+Créez dans un premier temps une adresse e-mail avec un nom provisoire. Vous pouvez créer, par exemple, l'adresse `contact2@mydomain.ovh` si vous devez migrer l'adresse `contact@mydomain.ovh`.
 
 Pour créer une adresse e-mail Zimbra, consultez la section « Créer un compte e-mail » de notre guide [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
@@ -81,7 +81,7 @@ Sur la page [OMM](/links/web/omm), dans l'onglet `Migration`{.action}, cliquez s
 - **Destination Account** :
     - **Server type** : Sélectionnez `Zimbra` pour le type de serveur de destination.
     - **Server URL** : Renseignez l'adresse du serveur Zimbra <https://zimbra1.mail.ovh.net>.
-    - **Login** : Saisissez l'adresse e-mail complète du compte Zimbra de destination (exemple :`contact2@mydomain.ovh`).
+    - **Login** : Saisissez l'adresse e-mail complète du compte Zimbra de destination (exemple : `contact2@mydomain.ovh`).
     - **Password** : Renseignez le mot de passe de l'adresse e-mail du compte Zimbra de destination.
 
 **Options**

@@ -1,6 +1,6 @@
 ---
 title: 'Utilização das contas de recurso'
-excerpt: Insert Here A Short Desc
+excerpt: 'Saiba como criar e gerir contas de recurso com o Exchange'
 updated: 2025-04-28
 ---
 
@@ -56,7 +56,7 @@ Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". C
 
 > [!primary]
 >
-Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
+> Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
 Ligue-se à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
@@ -119,7 +119,7 @@ Depois de criar o evento (ao clicar em `Enviar`{.action} para a barra de menu su
 
 ![mensagem de recusa](images/exchange-resources-step8.png){.thumbnail}
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
 [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -92,7 +92,7 @@ Uzupełnij formularz zgodnie z informacjami zawartymi w poniższej tabeli:
 
 ### Zarządzanie opcjami listy mailingowej
 
-Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail. 
+Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -257,6 +257,6 @@ Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki 
 > Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres `nazwa_twojej_LM-edit.bottom@mydomain.ovh`. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
 >
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 Dołącz do [grona naszych użytkowników](/links/community).

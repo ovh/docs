@@ -65,7 +65,7 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 - L’editor supporta la formattazione HTML, gli hyperlinks, le immagini, ecc. Tuttavia, le firme non dovrebbero fare troppo affidamento su queste opzioni. I destinatari potrebbero utilizzare client di posta elettronica incompatibili con HTML e immagini incorporate, oppure la firma potrebbe apparire in modo diverso dal previsto. Attenzione: se un messaggio viene inviato come “Testo normale” da OWA, i tag HTML saranno completamente rimossi.
 - Il servizio non prende in considerazione le “iniziali”, pertanto aggiungere questa variabile potrebbe rivelarsi inutile.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

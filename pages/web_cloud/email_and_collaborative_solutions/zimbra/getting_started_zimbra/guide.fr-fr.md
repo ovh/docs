@@ -110,7 +110,7 @@ Le tableau des noms de domaine vous donne deux informations :
 
 > [!warning]
 >
-> Il est nécessaire de [créer une organisation](#organisations) pour pouvoir ajouter un nom de domaine à votre service Zimbra.
+> Il est nécessaire de [créer une organisation](#organizations) pour pouvoir ajouter un nom de domaine à votre service Zimbra.
 
 Pour ajouter un nom de domaine à votre service Zimbra, cliquez sur l'onglet `Domaine`{.action} puis cliquez sur `Ajouter un domaine`{.action}.
 
@@ -128,7 +128,7 @@ Sélectionnez l'onglet correspondant à votre choix :
 >>
 >> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-500 .h400}
 >>
->> Pour configurer votre zone DNS, sélectionnez l'une des deux options suivantes:
+>> Pour configurer votre zone DNS, sélectionnez l'une des deux options suivantes :
 >>
 >> - **Configuration recommandée** : votre zone DNS sera configurée automatiquement. Cette option convient si vous n'avez pas configuré d'offre e-mail sur votre nom de domaine.
 >> - **Configuration personnalisée** : si vous avez déjà configuré une offre e-mail sur votre nom de domaine, vous pouvez choisir les éléments qui vous intéressent.
@@ -222,11 +222,11 @@ Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Changer d'offre <a name="emails-offer"></a>
+#### Changer d'offre <a name="emails-offer"></a>
 
 Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offre supérieure ou inférieure.
 
-1. Cliquez sur l'onglet `Compte email`{.action}.
+1. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 1. À droite du compte e-mail pour lequel vous souhaitez basculer vers l'offre supérieure, cliquez sur `⁝`{.action}.
 1. Cliquez sur `Changer d'offre`{.action}.
 
@@ -236,7 +236,7 @@ Il est possible de changer l'offre de n'importe quel compte Zimbra pour une offr
 >
 > Avant de basculer vers une offre inférieure, assurez-vous des points suivants :
 >
-> - Aucun fichier n'est stocké sur votre volume de stockage « Malette » si vous changez vers l'offre Starter.
+> - Aucun fichier n'est stocké sur votre volume de stockage « Mallette » si vous changez vers l'offre Starter.
 > - Le contenu de votre compte e-mail doit être inférieur à 15 Go si vous basculez vers l'offre Starter.
 
 ### Consulter son compte e-mail <a name="emails-consult"></a>
@@ -287,9 +287,9 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 
 ### Alias <a name="alias"></a>
 
-Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
+Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur.
 
-La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager), Cliquez sur les étapes ci-dessous :
+La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager). Cliquez sur les étapes ci-dessous :
 
 > [!tabs]
 > **Etape 1**

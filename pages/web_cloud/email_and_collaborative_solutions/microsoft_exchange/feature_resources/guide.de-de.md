@@ -121,7 +121,7 @@ Nach Erstellung des Events (indem Sie auf `Senden`{.action} im oberen Menü klic
 
 ![Ablehnungsnachricht](images/exchange-resources-step8.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

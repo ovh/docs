@@ -21,7 +21,8 @@ Chcesz:
     - [**Exchange**](/links/web/emails-exchange).
     - [**E-mail Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Dostęp do danych adresów e-mail
+- Posiadanie statusu kontaktu administracyjnego danej usługi e-mail.
+- Dostęp do danych adresów e-mail.
 
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-zimbra -->

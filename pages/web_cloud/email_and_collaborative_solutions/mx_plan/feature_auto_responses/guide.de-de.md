@@ -45,8 +45,8 @@ Das Fenster "Eine Auto-Antwort hinzufügen" wird angezeigt. Füllen Sie das Form
 
 - `Art der Auto-Antwort`:
 
-**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.<br>
-**Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
+    - **An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.
+    - **Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
 
 - `Mailbox` oder `Name der Auto-Antwort`: Wählen Sie den vom Responder betroffenen E-Mail-Account oder geben Sie die Alias-Adresse ein.
 - `Dauer der automatischen Antwort`:
@@ -73,7 +73,7 @@ Nachdem Ihre automatische Antwort erstellt wurde, wird sie in der Tabelle im Ber
 
 ![Hosting](images/email_responder02.png){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [E-Mail FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

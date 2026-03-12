@@ -10,7 +10,7 @@ Vous souhaitez bénéficier d'une licence Outlook pour consulter et gérer vos e
 
 OVHcloud vous propose le client de messagerie Outlook au tarif de 2 euros HT par mois. Il sera associé à un compte Exchange OVHcloud dont vous avez la gestion.
 
-Après votre souscription, vous pouvez télécharger Outlook parmi l'une des 3 versions suivantes:
+Après votre souscription, vous pouvez télécharger Outlook parmi l'une des 3 versions suivantes :
 
 - Outlook pour Windows 32 bits.
 - Outlook pour Windows 64 bits.
@@ -45,7 +45,7 @@ Définissez la fréquence de renouvellement de votre licence Outlook et validez 
 
 Après le récapitulatif de votre commande, utilisez le bouton `Régler`{.action} afin de générer le bon de commande. Vous serez redirigé vers une nouvelle page qui vous permettra de régler votre commande via les moyens de paiement à votre disposition.
 
-Patientez quelques instants le temps de la mise à dispostion de votre licence Outlook dans votre espace client.
+Patientez quelques instants le temps de la mise à disposition de votre licence Outlook dans votre espace client.
 
 #### Pour un compte Private Exchange
 
@@ -57,7 +57,7 @@ Une fenêtre vous demande si vous souhaitez activer la licence Outlook sur votre
 
 ![Outlook](images/order-outlook04.png){.thumbnail}
 
-Patientez quelques instants le temps de la mise à dispostion de votre licence Outlook dans votre espace client.
+Patientez quelques instants le temps de la mise à disposition de votre licence Outlook dans votre espace client.
 
 > [!primary]
 >
@@ -68,9 +68,9 @@ Patientez quelques instants le temps de la mise à dispostion de votre licence O
 
 Il vous faut maintenant télécharger le fichier d'installation d'Outlook pour votre machine.
 
-Depuis l'interface de gestion de votre plateforme Exchange, cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Utiliser la licence Outlook`{.action}
+Depuis l'interface de gestion de votre plateforme Exchange, cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Utiliser la licence Outlook`{.action}.
 
-Choisissez la version dans le menu déroulant en fonction de votre système d'exploitation et la langue, puis cliquez sur `Suivant`{.action}
+Choisissez la version dans le menu déroulant en fonction de votre système d'exploitation et la langue, puis cliquez sur `Suivant`{.action}.
 
 ![Outlook](images/order-outlook05.png){.thumbnail}
 
@@ -78,16 +78,16 @@ Après quelques instants, un lien de téléchargement est généré, ainsi qu'un
 
 ![Outlook](images/order-outlook06.png){.thumbnail}
 
-Le fichier téléchargé est au format .ISO, c'est à dire une image disque. Lancez l'installation et saisissez la clé de licence lorsqu'elle vous sera demandée.
+Le fichier téléchargé est au format .ISO, c'est-à-dire une image disque. Lancez l'installation et saisissez la clé de licence lorsqu'elle vous sera demandée.
 
 ### Supprimer la licence Outlook de votre compte
 
-Cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Supprimer la licence Outlook`{.action}
+Cliquez sur l'icône `...`{.action} à droite du compte concerné, puis sur `Supprimer la licence Outlook`{.action}.
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
-Après validation, il vous est rappelé que la licence sera définitvement supprimée à sa date d'expiration
+Après validation, il vous est rappelé que la licence sera définitivement supprimée à sa date d'expiration.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

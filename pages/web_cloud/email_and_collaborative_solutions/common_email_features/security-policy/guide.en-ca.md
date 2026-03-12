@@ -43,9 +43,11 @@ The security policy management of your email service has four aspects:
 - strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
 - configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
 
+To access the security policy of your email service, follow the instructions below.
+
 |MX Plan|Exchange|
 |---|---|
-|Click on `MX Plan`{.action}, then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Microsoft`{.action}, then on `Exchange`{.action}, and select the solution you want to manage. Click on `Security`{.action}.|
+|Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Security`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

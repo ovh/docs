@@ -94,7 +94,7 @@ Następujące serwery MX są ważne w zależności od korzystania z usługi Exch
 
 > [!warning]
 > W przewodnikach wykorzystujemy jako nazwę serwera: na przykład ex<b>?</b>.mail.ovh.net. Chcesz zastąpić "?" przez numer odpowiadający serwerowi usługi Exchange.<br>
-> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 > [!primary]

@@ -86,7 +86,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
-When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) .
+When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 

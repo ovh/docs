@@ -29,16 +29,11 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
-
-Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist:
+### Schritt 1: Ihre Domain hinzufügen
 
 > [!primary]
 >
 > Der Name eines E-Mail Pro Dienstes in Ihrem OVHcloud Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten, etc.).
->
-
-### Schritt 2: Ihre Domain hinzufügen
 
 Wenn Sie Ihren E-Mail Pro Dienst gerade bestellt haben, erscheint automatisch ein Fenster mit der Aufforderung `Eine Domain hinzufügen`{.action}. Sollte das Fenster nicht angezeigt werden, gehen Sie in den Tab `Assoziierte Domains`{.action} und klicken Sie auf den Button `Eine Domain hinzufügen`{.action}.
 
@@ -94,7 +89,7 @@ Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
 Am Ende der Konfiguration überprüfen Sie die angezeigten Informationen. Klicken Sie danach auf `Bestätigen`{.action}, um die Domain hinzufügen.
 
-### Schritt 3: Ihre Domain konfigurieren
+### Schritt 2: Ihre Domain konfigurieren
 
 Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie in der angezeigten Tabelle, dass die Konfiguration korrekt ist.
 
@@ -111,7 +106,7 @@ In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
-### Schritt 4: E-Mail Pro Accounts konfigurieren
+### Schritt 3: E-Mail Pro Accounts konfigurieren
 
 Zur Konfiguration Ihrer E-Mail-Accounts gehen Sie in den Tab `E-Mail-Accounts`{.action}. Die Tabelle zeigt die bestellten Accounts als “*@configureme.me*” an.
 
@@ -152,7 +147,7 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 > Führen Sie diesen Schritt für alle zur Verfügung stehenden Accounts durch. Sie können weitere Accounts über den Button `Accounts bestellen`{.action} hinzufügen.
 >
 
-### Schritt 5: Ihre E-Mail-Adressen verwenden
+### Schritt 4: Ihre E-Mail-Adressen verwenden
 
 Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (*Web App*) zur Verfügung. Diese App ist über die Adresse [Webmail](/links/web/email) erreichbar. Geben Sie hier Ihre E-Mail-Adresse und das Passwort ein, um sich einzuloggen.
 
@@ -175,7 +170,7 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 >
 > In den Anleitungen verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} Ihres E-Mail Pro Dienstes angezeigt.
 >
 
 ## Weiterführende Informationen

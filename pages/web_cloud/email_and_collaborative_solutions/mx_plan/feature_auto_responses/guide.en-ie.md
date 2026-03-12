@@ -45,8 +45,8 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 
 - `Auto-replies type`:
 
-**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.<br>
-**Free**: To use in the case of an email alias address. It is not linked to an existing account.
+    - **Associated with an email inbox**: To use if it concerns an existing email account of your email solution.
+    - **Free**: To use in the case of an email alias address. It is not linked to an existing account.
 
 - `Mailbox` or `Auto-reply name`:  Select the email account or alias address concerned by the automatic reply.
 - `Auto-reply duration`:
@@ -73,7 +73,7 @@ Once your automatic reply has been created, it will appear in the table in the `
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

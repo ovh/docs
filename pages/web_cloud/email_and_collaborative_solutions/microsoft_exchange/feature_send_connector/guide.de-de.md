@@ -319,7 +319,7 @@ Im Bereich **PATH PARAMETERS**:
 
 Im Tab **EXAMPLE** im Bereich **REQUEST BODY**, editieren Sie die Werte in diesen beiden Feldern:
 
-- `sbrDefault `: Lassen Sie das Feld leer.
+- `sbrDefault`: Lassen Sie das Feld leer.
 - `sendConnectorIdDefault`: Geben Sie die ID des Send Connectors ein, die in [diesem Schritt](#idconnector) ermittelt wurde.
 
 Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.

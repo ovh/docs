@@ -45,8 +45,8 @@ Viene visualizzata la finestra Aggiungi. Per completarlo, segui le indicazioni r
 
 - `Tipo di risposta automatica`:
 
-**Associato a una casella email**: da utilizzare se si tratta di un indirizzo email esistente sul tuo servizio di posta elettronica.
-**Libero**: da utilizzare nel caso di un alias. e non è quindi associato a un indirizzo esistente.
+    - **Associato a una casella email**: da utilizzare se si tratta di un indirizzo email esistente sul tuo servizio di posta elettronica.
+    - **Libero**: da utilizzare nel caso di un alias. Non è quindi associato a un indirizzo esistente.
 
 - `Casella email` o `Nome della segreteria`: l’indirizzo email o l’alias su cui si basa la risposta automatica.
 - `Durata della risposta automatica`:
@@ -73,7 +73,7 @@ Una volta creata la risposta automatica, questa comparirà nella lista visualizz
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

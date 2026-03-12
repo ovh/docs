@@ -47,7 +47,7 @@ Suivez les étapes d'installation en cliquant successivement sur les 8 onglets c
 > **Etape 1**
 >>
 >> - Lancez le fichier téléchargé au format `.iso` pour monter le DVD virtuel.
->> - Ouvrez le DVD virtuel `Veeam Backup for Microsoft 365` monté sur votre ordinateur, puis exécutez le fichier d'installation `Veem.Setup.exe`.
+>> - Ouvrez le DVD virtuel `Veeam Backup for Microsoft 365` monté sur votre ordinateur, puis exécutez le fichier d'installation `Veeam.Setup.exe`.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup01-2.png){.thumbnail .h-600}
 >>
@@ -191,7 +191,7 @@ Suivez les étapes de configuration en cliquant successivement sur les 10 onglet
 >> Depuis l'interface Veeam Backup, saisissez les informations suivantes :
 >>
 >> - `Server name` : Nom d'hôte de la plateforme Exchange relevé à l'étape 8, renseignez-le sans le `https://`.
->> - `Username` : Nom d'utilisateur relevé à l'étape 7 correspondant a l'« Impersonate User ».
+>> - `Username` : Nom d'utilisateur relevé à l'étape 7 correspondant à l'« Impersonate User ».
 >> - `Password` : Mot de passe de l' « Impersonate User » défini à l'étape 6.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup16.png){.thumbnail .h-600}
@@ -251,7 +251,7 @@ Suivez les étapes de création en cliquant successivement sur les 9 onglets ci-
 >> ![veeam backup exchange](images/exchange_veeam_backup23.png){.thumbnail .h-600}
 >>
 > **Étape 7**
->> Depuis cette fenêtre, vous pouvez ajouter des règles d'exclusion avec le bouton `Add`{.action}. Celles-ci seront appliquées sur les comptes e-mail sélectionnez précédemment. Vous pouvez par exemple exclure un calendrier ou un dossier spécifique.
+>> Depuis cette fenêtre, vous pouvez ajouter des règles d'exclusion avec le bouton `Add`{.action}. Celles-ci seront appliquées sur les comptes e-mail sélectionnés précédemment. Vous pouvez par exemple exclure un calendrier ou un dossier spécifique.
 >>
 >> > [!warning]
 >> >
@@ -311,7 +311,7 @@ Suivez les étapes de lancement en cliquant successivement sur les 4 onglets ci-
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_veeam_backup)
+[Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

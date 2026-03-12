@@ -122,7 +122,7 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 > [!tabs]
 > **Roundcube**
 >>
->> Você deve obter uma interface semelhante à imagem abaixo com a menção «Rouncube» no canto superior esquerdo.
+>> Você deve obter uma interface semelhante à imagem abaixo com a menção «Roundcube» no canto superior esquerdo.
 >> Para descobrir a interface Roundcube e a sua utilização, consulte o guia «[Utilizar o seu endereço de e-mail a partir do webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)».
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
@@ -173,7 +173,7 @@ Aceda aos links dos manuais de configuração para o seu tipo de dispositivo:
 
 Se pretender obter os elementos necessários para configurar o seu endereço de e-mail, consulte as configurações que deverá utilizar a seguir.
 
-##### Configurações de receção IMAP e POP <a name="imap-pop"></a>
+#### Configurações de receção IMAP e POP <a name="imap-pop"></a>
 
 Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma utilização em **IMAP**. No entanto, pode selecionar **POP**.
 
@@ -202,7 +202,7 @@ Selecione o separador correspondente ao tipo de configuração:
 >> - **Port**: 995.
 >> - **Tipo de segurança**: SSL/TLS.
 
-##### Configurações de envio SMTP <a name="smtp"></a>
+#### Configurações de envio SMTP <a name="smtp"></a>
 
 Para o envio dos e-mails, encontre abaixo os parâmetros **SMTP** a utilizar:
 
@@ -281,8 +281,6 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  

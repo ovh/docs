@@ -157,7 +157,7 @@ Wybierz kartę:
 >> >
 >> > Po 48 godzinach, jeśli pole CNAME nie jest widoczne w strefie DNS, operacja jest anulowana. W takim przypadku konieczne będzie ponowne wykonanie operacji.
 
-### Zmiana nazwy domeny <a name="domains-modify"></a>
+#### Zmiana nazwy domeny <a name="domains-modify"></a>
 
 Możesz zmienić nazwę domeny, aby zmienić jej organizację, lub sprawdzić powiązane z nią rekordy DNS.
 
@@ -222,7 +222,7 @@ Kliknij na `Potwierdź`{.action}, aby rozpocząć zakładanie konta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Zmiana oferty <a name="emails-offer"></a>
+#### Zmiana oferty <a name="emails-offer"></a>
 
 Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 

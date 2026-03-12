@@ -24,7 +24,7 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 > Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots erfolgt die Filterverwaltung direkt über das OWA Webmail (**O**utlook **W**eb **A**pp). Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
 >
 
-MX Plan Legacy|MX Plan neuere Version|
+|MX Plan Legacy|MX Plan neuere Version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
 |Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
@@ -147,6 +147,6 @@ Im Kundencenter sieht diese Konfiguration so aus:
 
 ![E-Mails](images/img_3242.jpg){.thumbnail}
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 Treten Sie unserer [User Community](/links/community) bei.

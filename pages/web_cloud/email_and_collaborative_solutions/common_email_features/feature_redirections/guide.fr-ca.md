@@ -115,6 +115,8 @@ Actuellement, seules les offres **MX plan** et **Redirect** disposent d'une inte
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
+Depuis votre service MX Plan, sélectionnez le domaine concerné.
+
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, suivez les étapes ci-dessous.
 
 Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
@@ -211,7 +213,9 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 
 ##### MX Plan via espace client <a name="redirect-delete-mxplan"></a>
 
-Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service MX Plan :
+Depuis votre service MX Plan, sélectionnez le domaine concerné.
+
+Suivez les étapes ci-dessous pour supprimer une redirection :
 
 - Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan.
 - Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.

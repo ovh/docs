@@ -157,7 +157,7 @@ Szczegółowe informacje na temat konektora poczty wychodzącej można znaleźć
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-Nella sezione **PATH PARAMETERS**:
+W sekcji **PATH PARAMETERS**:
 
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `id` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim etapie.
@@ -193,7 +193,7 @@ Skorzystaj z wywołania API konfiguracji konta Exchange, aby dodać identyfikato
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-Nella sezione **PATH PARAMETERS**:
+W sekcji **PATH PARAMETERS**:
 
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
@@ -368,7 +368,7 @@ Otrzymasz następujący wynik:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Edycja strefy DNS OVH.](/pages/web_cloud/domains/dns_zone_edit)
 

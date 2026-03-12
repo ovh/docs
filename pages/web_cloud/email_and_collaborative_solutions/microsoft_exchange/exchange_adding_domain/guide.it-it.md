@@ -47,8 +47,6 @@ Aggiungere un dominio su Exchange è un’operazione fondamentale per utilizzare
 
 ## Procedura
 
-### Accedi alla gestione del tuo servizio
-
 ### Aggiungi un dominio
 
 1. Clicca sulla scheda `Domini associati`{.action} della tua piattaforma Exchange o Email Pro.

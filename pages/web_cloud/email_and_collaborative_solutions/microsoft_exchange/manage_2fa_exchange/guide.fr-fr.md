@@ -16,7 +16,7 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 - Avoir installé une application OTP sur un smartphone ou une tablette Android ou iOS.
 
 > [!primary]
->**Les applications mobiles OTP**
+> **Les applications mobiles OTP**
 >
 > De nombreuses applications OTP existent. En voici deux, gratuites :
 >
@@ -77,10 +77,10 @@ Sélectionnez l'option correspondante à votre besoin selon le tableau ci-dessou
 
 | N° | Fonction | Description
 |----------------------------------|------------------|------------------|
-| 1. | « Désactiver la double authentification » | Permet la suspension de la double authentification pendant une période définie en heures. Une fois le délai dépassé, la double authentification sera réactivée. <br> *Exemple : un utlisateur a oublié son smartphone et ne peut pas s'authentifier avec l'application OTP.*   |
+| 1. | « Désactiver la double authentification » | Permet la suspension de la double authentification pendant une période définie en heures. Une fois le délai dépassé, la double authentification sera réactivée. <br> *Exemple : un utilisateur a oublié son smartphone et ne peut pas s'authentifier avec l'application OTP.*   |
 | 2. | « Réinitialiser la double authentification » | Permet de réinitialiser le QR code demandé lors de votre première connexion au webmail.<br> *Exemple : un utilisateur a changé de smartphone et doit reconfigurer son application OTP.* |
 | 3. | « Supprimer la double authentification » | Supprime totalement la double authentification sur le compte. |
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

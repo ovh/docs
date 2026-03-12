@@ -94,7 +94,7 @@ Em função da utilização do seu serviço Exchange, os seguintes servidores MX
 
 > [!warning]
 > Nos nossos guias, utilizamos como nome de servidor: ex<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número correspondente ao servidor do seu serviço Exchange.<br>
-> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}. Abra `Microsoft`{.action}, depois `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
+> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}. Abra `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
 >
 
 > [!primary]

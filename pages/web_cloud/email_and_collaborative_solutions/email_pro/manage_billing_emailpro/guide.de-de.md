@@ -57,7 +57,7 @@ Klicken Sie auf `Weiter`{.action}, um die Zusammenfassung der Änderungen anzuze
 
 ### Konten entfernen
 
-Um einen Account von Ihrem E-Mail Pro Dienst zu löschen, müssen Sie diesen zuerst kündigen, indem Sie den Verlängerungszeitraum auf **Keine** ändern. Folgen Sie hierzu den Schritten uner ["Die Abrechnungsfrequenz Ihrer Accounts ändern"](#periodicity).
+Um einen Account von Ihrem E-Mail Pro Dienst zu löschen, müssen Sie diesen zuerst kündigen, indem Sie den Verlängerungszeitraum auf **Keine** ändern. Folgen Sie hierzu den Schritten unter ["Die Abrechnungsfrequenz Ihrer Accounts ändern"](#periodicity).
 
 Nach der Kündigung wird das Konto am Ablaufdatum gesperrt. Wenn Sie die vom Konto gehostete E-Mail-Adresse vor dem Ablaufdatum löschen möchten, setzen Sie den Account zurück.
 

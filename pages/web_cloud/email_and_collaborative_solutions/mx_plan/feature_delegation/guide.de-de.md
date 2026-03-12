@@ -78,7 +78,7 @@ Geben Sie die OVHcloud Kundenkennung an, die diese Delegation erhält, und best�
 
 Sie können mehrere Kundenkennung angeben, um einen E-Mail-Account zu verwalten.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

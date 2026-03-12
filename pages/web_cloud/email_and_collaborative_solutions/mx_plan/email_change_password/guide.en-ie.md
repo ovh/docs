@@ -68,6 +68,8 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identify the email technology for your MX Plan solution.**
@@ -133,7 +135,7 @@ Changing your password via webmail is available for OVHcloud email offers using 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button. 
+Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -170,7 +172,7 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 >
 > If you want to store a password, we recommend using a password manager, such as **KeePass**.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

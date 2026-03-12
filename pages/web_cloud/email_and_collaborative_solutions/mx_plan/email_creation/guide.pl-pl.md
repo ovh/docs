@@ -55,7 +55,7 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-400}
 
-## OWA i Zimbra
+### OWA i Zimbra
 
 W tej sekcji udokumentowano usługi MX Plan wykorzystujące technologię webmail **OWA** i **Zimbra**.
 
@@ -91,7 +91,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje:
 > - Maksymalnie 30 znaków
 > - Brak znaków akcentowanych
 
-Po uzupełnieniu pól kliknij przycisk `Dalej`{.action}. 
+Po uzupełnieniu pól kliknij przycisk `Dalej`{.action}.
 
 ![email](images/mxplan-creation-new-step3.png){.thumbnail .w-400}
 
@@ -108,7 +108,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 > [!tabs]
 > **Zimbra**
 >>
->> Po zalogowaniu do Zimbra Webmail otrzymasz poniższy interfejs. Więcej informacji na temat korzystania z webmaila Zimbra znajdziesz w naszym przewodniku "[Korzystanie z webmaila Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ".
+>> Po zalogowaniu do Zimbra Webmail otrzymasz poniższy interfejs. Więcej informacji na temat korzystania z webmaila Zimbra znajdziesz w naszym przewodniku "[Korzystanie z webmaila Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 >>
 >> ![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-400}
 >>
@@ -144,12 +144,12 @@ Aby uzyskać nowy adres e-mail, przejdź do zakładki `E-maile`{.action}. Tabela
 
 W oknie, które się wyświetla, wprowadź wymagane informacje:
 
-- **Nazwa konta**: Wpisz wybraną nazwę Twojego konta e-mail (np. Twoje imię.nazwisko). Nazwa wybranej domeny jest już dodana domyślnie.|  
-- **Opis konta**: Wpisz krótki opis umożliwiający rozpoznanie tego konta wśród innych kont wyświetlonych w Panelu klienta OVHcloud.|  
-- **Rozmiar konta**: Wybierz wielkość skrzynki pocztowej. Jest to przestrzeń przeznaczona na przechowywanie wiadomości.|  
-- **Hasło**: Wpisz hasło i je potwierdź. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Należy wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.|
+- **Nazwa konta**: Wpisz wybraną nazwę Twojego konta e-mail (np. Twoje imię.nazwisko). Nazwa wybranej domeny jest już dodana domyślnie.
+- **Opis konta**: Wpisz krótki opis umożliwiający rozpoznanie tego konta wśród innych kont wyświetlonych w Panelu klienta OVHcloud.
+- **Rozmiar konta**: Wybierz wielkość skrzynki pocztowej. Jest to przestrzeń przeznaczona na przechowywanie wiadomości.
+- **Hasło**: Wpisz hasło i je potwierdź. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Należy wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.
 
-Po uzupełnieniu pól kliknij przycisk `Dalej`{.action}. 
+Po uzupełnieniu pól kliknij przycisk `Dalej`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
@@ -157,7 +157,7 @@ Sprawdź informacje, które wyświetlają się w podsumowaniu. Jeśli są popraw
 
 Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
 
-#### Sprawdź e-maile 
+#### Sprawdź e-maile
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
@@ -165,7 +165,7 @@ Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak kor
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail .w-400}
 
-Aby sprawdzić wiadomości e-mail przy użyciu programu pocztowego, zapoznaj się z sekcją [Sprawdź konto e-mail za pomocą urządzenia](#configdevices)
+Aby sprawdzić wiadomości e-mail przy użyciu programu pocztowego, zapoznaj się z sekcją [Sprawdź konto e-mail za pomocą urządzenia](#configdevices).
 
 #### Usuń konto e-mail
 
@@ -173,7 +173,7 @@ Aby sprawdzić wiadomości e-mail przy użyciu programu pocztowego, zapoznaj si�
 >
 > Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
 
-W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz usunąć, a następnie kliknij `Usuń konto`{.action}
+W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz usunąć, a następnie kliknij `Usuń konto`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail .w-400}
 
@@ -219,18 +219,18 @@ Wybierz kartę odpowiadającą Twojemu typowi konfiguracji:
 > [!tabs]
 > **Konfiguracja IMAP**
 >>
->> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 >> - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
->> - **Serwer EUROPE (ruch przychodzący)**: imap.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serwer EUROPE (ruch przychodzący)**: imap.mail.ovh.net **lub** ssl0.ovh.net.
 >> - **Serwer USA/AZJA-PACYFIK (ruch przychodzący)**: imap.mail.ovh.ca.
 >> - **Port**: 993.
 >> - **Typ bezpieczeństwa**: SSL/TLS.
 >>
 > **Konfiguracja POP**
 >>
->> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 >> - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
->> - **Serwer EUROPE (ruch przychodzący)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
+>> - **Serwer EUROPE (ruch przychodzący)**: pop.mail.ovh.net **lub** ssl0.ovh.net.
 >> - **Serwer amerykański/AZJA-PACYFIK (ruch przychodzący)**: pop.mail.ovh.ca.
 >> - **Port**: 995.
 >> - **Typ bezpieczeństwa**: SSL/TLS.
@@ -241,19 +241,19 @@ Do wysyłki e-maili należy użyć następujących ustawień **SMTP**:
 
 **Konfiguracja SMTP**
 
-- **Nazwa użytkownika**: Wpisz pełny adres e-mail **complete**.
+- **Nazwa użytkownika**: Wpisz pełny adres e-mail **pełny**.
 - **Hasło**: Wpisz hasło wybrane dla tego konta e-mail.
-- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Serwer EUROPE (ruch wychodzący)**: smtp.mail.ovh.net **lub** ssl0.ovh.net.
 - **Serwer amerykański/AZJA-PACYFIK (ruch wychodzący)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Typ bezpieczeństwa**: SSL/TLS.
 
-## Przykłady zastosowania
+### Przykłady zastosowania
 
 **Czy wszystkie adresy e-mail zawarte w Twojej ofercie zostały wykorzystane?**
 
 - Sprawdź pytania dotyczące usługi [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Zapoznaj się z wszystkimi ofertami e-mail od OVH [Zimbra](/links/web/emails-zimbra) lub [Exchange](/links/web/email), aby uzupełnić ofertę MX Plan dla tej samej domeny.
+- Zapoznaj się z wszystkimi ofertami e-mail od OVH [Zimbra](/links/web/emails-zimbra) lub [Exchange](/links/web/emails-exchange), aby uzupełnić ofertę MX Plan dla tej samej domeny.
 
 ## Sprawdź również <a name="go-further"></a>
 

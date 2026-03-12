@@ -18,8 +18,8 @@ Ihre Microsoft 365 Lizenzen werden zu einer Gruppe zusammengefasst, auch "Servic
 
 Die Lizenzen gelten für folgende Software:
 
-- Apps for Business: Excel, Word, PowerPoint, Outlook, Note, Publisher.
-- Apps for Enterprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Apps for Business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Apps for Enterprise: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Diese Anleitung erklärt, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten.**
 
@@ -40,9 +40,6 @@ Die Lizenzen gelten für folgende Software:
 
 ### Lizenz bestellen
 
-    - Gehen Sie in den Bereich `Web Cloud`{.action}.
-    - Klicken Sie im Bereich `MICROSOFT` auf `Microsoft 365`{.action}.
-    - Klicken Sie auf `Bestellen`{.action}.
 1. Wählen Sie aus unseren verfügbaren Angeboten *Apps for Business* und *Apps for Enterprise*.
 1. Legen Sie das Erneuerungsintervall für Ihre Lizenzgruppe fest.
 1. Legen Sie die Anzahl der gewünschten Lizenzen fest und schließen Sie Ihre Bestellung ab.
@@ -111,7 +108,7 @@ So kündigen Sie Ihre Microsoft Office 365 CSP1-Lizenzgruppe:
 >
 > Der Verbrauch des laufenden Monats wird am Ende des laufenden Monats abgerechnet.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Remote Desktop mit Microsoft 365 Apps verwenden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

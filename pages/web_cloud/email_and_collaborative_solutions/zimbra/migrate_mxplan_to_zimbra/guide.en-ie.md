@@ -53,7 +53,7 @@ In the example below, we are migrating the address `contact@mydomain.ovh`. To do
 >
 > If you already have a Zimbra email address, go to [Migrate emails with OVHcloud Mail Migrator](#step12).
 
-First, create an email address with a temporary name. For example, you can create the address `contact2@mydomain.ovh`{.action} if you need to migrate the address `contact@mydomain.ovh`{.action}.
+First, create an email address with a temporary name. For example, you can create the address `contact2@mydomain.ovh` if you need to migrate the address `contact@mydomain.ovh`.
 
 To create a Zimbra email address, please read the “Create an email account” section of our guide [Getting started with the Zimbra solution](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 

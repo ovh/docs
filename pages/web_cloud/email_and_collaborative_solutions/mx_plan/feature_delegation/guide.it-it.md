@@ -78,7 +78,7 @@ Inserisci l'identificativo OVHcloud che usufruirà di questa delega e conferma l
 
 Per gestire ogni account email è possibile aggiungere diverse credenziali OVHcloud.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

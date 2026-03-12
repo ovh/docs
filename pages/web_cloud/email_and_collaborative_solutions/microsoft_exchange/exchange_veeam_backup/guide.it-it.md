@@ -47,7 +47,7 @@ Follow the installation steps by clicking on the 8 tabs below:
 > **Step 1**
 >>
 >> - Launch the downloaded file in `.iso` format to mount the virtual DVD.
->> - Open the virtual DVD `Veeam Backup for Microsoft 365` mounted on your computer and run the `Veem.Setup.exe` installation file.
+>> - Open the virtual DVD `Veeam Backup for Microsoft 365` mounted on your computer and run the `Veeam.Setup.exe` installation file.
 >>
 >> ![veeam backup exchange](images/exchange_veeam_backup01-2.png){.thumbnail .h-600}
 >>
@@ -311,7 +311,7 @@ Follow the launch steps by clicking on the 4 tabs below:
 
 ## Go further <a name="go-further"></a>
 
-[Getting started with the Private Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_veeam_backup)
+[Getting started with the Private Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

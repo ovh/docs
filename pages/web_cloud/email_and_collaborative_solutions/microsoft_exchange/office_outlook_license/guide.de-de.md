@@ -82,6 +82,6 @@ Die heruntergeladene Datei ist im Format .ISO, also ein Disk Image. Starten Sie 
 
 Nach der Bestätigung wird die Lizenz zum Ablaufdatum endgültig gelöscht.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
  
 Treten Sie unserer [User Community](/links/community) bei.

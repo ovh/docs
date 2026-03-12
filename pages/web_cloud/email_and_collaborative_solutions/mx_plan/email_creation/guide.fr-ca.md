@@ -51,7 +51,7 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Comptes
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-amil (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
+- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
 > [!warning]
 >
-> Le choix du mot de passe doit respecter les conditions suivantes:
+> Le choix du mot de passe doit respecter les conditions suivantes :
 >
 > - Minimum 9 caractères
 > - Maximum 30 caractères
@@ -91,7 +91,7 @@ Lors d'une première connexion au webmail, vous êtes invité à définir la lan
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
-Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
+Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous à la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
 
 #### Supprimer un compte e-mail
 
@@ -154,7 +154,7 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 - Consultez les questions de [notre FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 - Consultez notre offre e-mail [Exchange](/links/web/emails-exchange) pour compléter votre offre MX Plan sur le même nom de domaine.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

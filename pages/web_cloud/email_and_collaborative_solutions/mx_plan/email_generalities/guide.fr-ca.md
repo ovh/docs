@@ -119,7 +119,7 @@ Retrouvez ci-dessous les liens des guides de configuration selon votre type d'ap
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser.
 
-##### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
+#### Paramètres de réception IMAP et POP <a name="imap-pop"></a>
 
 Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**.
 
@@ -148,7 +148,7 @@ Sélectionnez l'onglet correspondant à votre type de configuration :
 >> - **Port** : 995.
 >> - **Type de sécurité** : SSL/TLS.
 
-##### Paramètres d'envoi SMTP <a name="smtp"></a>
+#### Paramètres d'envoi SMTP <a name="smtp"></a>
 
 Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utiliser :
 
@@ -183,15 +183,13 @@ Lorsque vous devez vous absenter, il est important de pouvoir mettre en place un
 
 La mise en place d'une réponse automatique se réalise directement en se connectant à l'adresse e-mail depuis le Webmail. Pour obtenir les détails, référez-vous à notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) », allez directement au chapitre « Ajouter la réponse automatique ».
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Créer une réponse automatique sur une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

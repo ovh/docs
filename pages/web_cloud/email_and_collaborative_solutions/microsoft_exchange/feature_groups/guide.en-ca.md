@@ -97,7 +97,7 @@ Additionally, the menu item `Manage delegations`{.action} will be displayed. Thi
 
 You can now test your mailing list via [OVHcloud webmail](/links/web/email) (OWA): simply send an email to the group address.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Delegating permissions on an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

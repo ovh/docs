@@ -26,4 +26,4 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 
 ## Instruções
 
-Siga o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam)  na rubrica "Soluções colaborativas Microsoft".
+Siga o nosso guia [Criar assinaturas automáticas](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers) na rubrica "Soluções colaborativas Microsoft".

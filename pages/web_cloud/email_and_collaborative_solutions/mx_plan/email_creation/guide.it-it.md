@@ -95,7 +95,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}.
 
 ![email](images/mxplan-creation-new-step3.png){.thumbnail .w-400}
 
-Verifica le informazioni inserite e, se sono corrette, clicca su `Conferma`{.action}. Il nuovo account comparirà nella tabella. Attendi qualche istante fino a quando l'account sarà disponibile.
+Verifica le informazioni inserite e, se sono corrette, clicca su `Conferma`{.action}. Il nuovo account comparirà nella tabella. Attendi qualche istante fino a quando L'account sarà disponibile.
 
 Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 
@@ -144,12 +144,12 @@ Per creare un indirizzo email clicca sulla scheda `Email`{.action}. Visualizzi u
 
 Nella nuova finestra inserisci le informazioni richieste:
 
-- **Nome dell'account**: Inserisci il nome che vuoi per il tuo indirizzo email (ad esempio nome.cognome). Il dominio in questione è già completato di default.|  
-- **Descrizione dell'account**: Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo Spazio Cliente OVHcloud.|  
-- **Dimensione dell'account**: Seleziona la dimensione del tuo account, cioè lo spazio a disposizione per archiviare i messaggi.  
-- **Password**: Crea una password e confermala. Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, evita le menzioni a tuo nome, cognome e data di nascita) e rinnovarla regolarmente.|
+- **Nome dell'account**: Inserisci il nome che vuoi per il tuo indirizzo email (ad esempio nome.cognome). Il dominio in questione è già completato di default.
+- **Descrizione dell'account**: Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo Spazio Cliente OVHcloud.
+- **Dimensione dell'account**: Seleziona la dimensione del tuo account, cioè lo spazio a disposizione per archiviare i messaggi.
+- **Password**: Crea una password e confermala. Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, evita le menzioni a tuo nome, cognome e data di nascita) e rinnovarla regolarmente.
 
-Dopo aver completato tutti i campi clicca su `Continua`{.action}. 
+Dopo aver completato tutti i campi clicca su `Continua`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
@@ -157,7 +157,7 @@ Verifica le informazioni inserite e, se sono corrette, clicca di nuovo su `Avant
 
 Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 
-#### Consultare le email 
+#### Consultare le email
 
 Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
@@ -165,7 +165,7 @@ Si apre di default la casella della posta in arrivo. Per maggiori informazioni c
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail .w-400}
 
-Per consultare le tue email da un client di posta, consulta la sezione [Consultare un account email da un dispositivo](#configdevices)
+Per consultare le tue email da un client di posta, consulta la sezione [Consultare un account email da un dispositivo](#configdevices).
 
 #### Elimina un account email
 
@@ -173,7 +173,7 @@ Per consultare le tue email da un client di posta, consulta la sezione [Consulta
 >
 > Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
 
-Dalla scheda `Account email`{.action}, clicca sui tre puntini `...`{.action} a destra dell'account da eliminare e poi clicca su `Elimina l'account`{.action}
+Dalla scheda `Account email`{.action}, clicca sui tre puntini `...`{.action} a destra dell'account da eliminare e poi clicca su `Elimina l'account`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail .w-400}
 
@@ -206,7 +206,7 @@ Configura l’account email sul tuo dispositivo (ad esempio, smartphone o tablet
 
 Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare.
 
-##### Parametri di ricezione IMAP e POP <a name="imap-pop"></a>
+#### Parametri di ricezione IMAP e POP <a name="imap-pop"></a>
 
 Per la ricezione delle email, durante la scelta del tipo di account, ti consigliamo di utilizzare il **IMAP**. Tuttavia, è possibile selezionare **POP**.
 
@@ -235,7 +235,7 @@ Seleziona la scheda corrispondente al tuo tipo di configurazione:
 >> - **Porta**: 995.
 >> - **Tipo di sicurezza**: SSL/TLS.
 
-##### Parametri di invio SMTP <a name="smtp"></a>
+#### Parametri di invio SMTP <a name="smtp"></a>
 
 Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle email:
 
@@ -243,7 +243,7 @@ Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle
 
 - **Nome utente**: Inserisci l'indirizzo email **completo**.
 - **Password**: Inserisci la password dell’indirizzo email.
-- **Server EUROPE (in uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
+- **Server EUROPA (in uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
 - **Server AMERICA/ASIA PACIFICA (in uscita)**: smtp.mail.ovh.ca.
 - **Porta**: 465.
 - **Tipo di sicurezza**: SSL/TLS.

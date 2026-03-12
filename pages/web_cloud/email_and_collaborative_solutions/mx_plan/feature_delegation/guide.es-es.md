@@ -17,7 +17,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 ## Requisitos
 
-- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](/links/web/hosting), un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado.
+- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](/links/web/hosting), un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado).
 
 > [!warning]
 >
@@ -65,7 +65,7 @@ Se abrirá una nueva ventana. Haga clic en el botón `+`{.action} situado al fin
 
 Puede delegar la gestión de su servicio MX Plan en varias claves de OVHcloud.
 
-### Designar una o más cuentas de correo tiene un identificador
+### Delegar una o más cuentas de correo a un identificador
 
 Esta delegación permite cambiar la contraseña de la cuenta de correo y gestionar los filtros.
 
@@ -79,7 +79,7 @@ Introduzca el usuario de OVHcloud que se beneficiará de esta delegación y acep
 
 Es posible añadir varias claves de OVHcloud para gestionar cada dirección de correo electrónico.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

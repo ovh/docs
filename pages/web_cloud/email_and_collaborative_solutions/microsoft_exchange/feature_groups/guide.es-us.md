@@ -4,6 +4,15 @@ excerpt: 'Aprenda a gestionar listas de correo en Exchange'
 updated: 2025-04-28
 ---
 
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
 ## Objetivo
 
 Los grupos de Exchange permiten que varios participantes puedan comunicarse a través del envío de emails a una única dirección del grupo. Con esta función colaborativa puede crear y gestionar listas de correo que incluyan tanto a usuarios Exchange como a contactos externos.
@@ -28,6 +37,8 @@ Los grupos de Exchange permiten que varios participantes puedan comunicarse a tr
 ## Procedimiento
 
 ### Crear un grupo nuevo
+
+Haga clic en la pestaña `Grupos`{.action} en el menú horizontal.
 
 ![contactgroups](images/exchange-groups-create01.png){.thumbnail .w-600 .h-600}
 
@@ -74,7 +85,7 @@ Para añadir `Contacts` a su grupo o definir los `Administradores`, haga clic en
 
 #### Administrar las delegaciones de un grupo
 
-Aparecerá la opción `Configurar delegaciones`{.action} del menú. Esta opción le permite delegar el acceso del mismo modo que se hace para una cuenta Exchange. Encontrar todos los detalles en [esta guía](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
+Aparecerá la opción `Configurar delegaciones`{.action} del menú. Esta opción le permite delegar el acceso del mismo modo que se hace para una cuenta Exchange. Encontrará todos los detalles en [esta guía](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation).
 
 ![contactgroups](images/exchange-groups-options-delegation01.png){.thumbnail .w-600 .h-600}
 
@@ -86,7 +97,7 @@ Aparecerá la opción `Configurar delegaciones`{.action} del menú. Esta opción
 
 Ahora puede probar su lista de correo a través del [webmail de OVHcloud](/links/web/email) (OWA) simplemente mandando un correo a la dirección del grupo.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Delegar permisos en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

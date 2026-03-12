@@ -111,11 +111,11 @@ Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le 
 
 #### Résilier le groupe de licences
 
-Pour résilier votre groupe de licence Microsoft Office 365 CSP1 :
+Pour résilier votre groupe de licences Microsoft Office 365 CSP1 :
 
 1. Cliquez sur votre nom en haut à droite de l'espace client OVHcloud.
 1. Cliquez sur `Mes offres et services`{.action}.
-1. Identifiez votre groupe de licence dans le tableau de vos services.
+1. Identifiez votre groupe de licences dans le tableau de vos services.
 1. Cliquez sur le bouton `...`{.action} à droite du groupe de licences que vous souhaitez résilier, puis sur `Résilier`{.action}.
 1. Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
@@ -123,7 +123,7 @@ Pour résilier votre groupe de licence Microsoft Office 365 CSP1 :
 >
 > Les consommations du mois en cours seront facturées à la fin de ce dernier.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le bureau à distance avec Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus).
 

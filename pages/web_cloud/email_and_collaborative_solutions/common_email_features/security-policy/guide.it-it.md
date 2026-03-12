@@ -50,9 +50,11 @@ Il servizio di posta permette di configurare la politica di sicurezza in modo da
 - rafforzare la verifica dei messaggi in entrata sui nostri server e destinati ai tuoi indirizzi email (esclusivamente per gli account [Exchange](/links/web/emails-hosted-exchange));
 - definire la modalità di visualizzazione dei messaggi indesiderati nei tuoi account di posta elettronica (esclusivamente per gli account [Exchange](/links/web/emails-hosted-exchange)).
 
+Per accedere alla politica di sicurezza del tuo servizio email, segui le indicazioni riportate di seguito.
+
 |MX Plan e Email Pro|Exchange|
 |---|---|
-|Clicca su `MX Plan`{.action} o `Email Pro`{.action} e seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona `Gestisci la politica di sicurezza`{.action}.|Clicca su `Microsoft`{.action} e poi su `Exchange`{.action}, quindi seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona`Gestisci la politica di sicurezza`{.action}.|
+|Clicca sulla scheda `Altre opzioni` e seleziona `Gestisci la politica di sicurezza`{.action}.|Clicca su `Sicurezza`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

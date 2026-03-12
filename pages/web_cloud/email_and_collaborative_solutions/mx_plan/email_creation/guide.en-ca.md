@@ -111,12 +111,12 @@ To create a new email address, go to the `Emails`{.action} tab. The table displa
 
 In the pop-up window, enter the following information:
 
-- **Account name**: Enter the name you want for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-- **Account description**: Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
-- **Account size**: Select the size of account you want. This is the available space for the account to store messages.|  
-- **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.|
+- **Account name**: Enter the name you want for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.
+- **Account description**: Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.
+- **Account size**: Select the size of account you want. This is the available space for the account to store messages.
+- **Password**: Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
-Once you have filled in all of the required fields, click `Next`{.action}. 
+Once you have filled in all of the required fields, click `Next`{.action}.
 
 ![email](images/mxplan-creation-legacy-step3.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Check that all the information displayed in the summary is correct; if it is, cl
 
 Repeat this step as necessary according to the number of accounts to create.
 
-#### View emails 
+#### View emails
 
 On the [Webmail login page](/links/web/email), enter your email address and password. Then click the `Login`{.action} button.
 
@@ -140,7 +140,7 @@ To view your emails using an email client, please refer to the section ["View an
 >
 > Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
-In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}
+In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}.
 
 ![email](images/mxplan-legacy-reset.png){.thumbnail}
 
@@ -213,6 +213,6 @@ If you just need the information required to configure your email address, the s
 > If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
-## Go further
-  
+## Go further <a name="go-further"></a>
+
 Join our [community of users](/links/community).

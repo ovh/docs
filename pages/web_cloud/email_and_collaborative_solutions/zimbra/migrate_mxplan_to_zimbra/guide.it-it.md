@@ -53,7 +53,7 @@ In questo esempio, migramo l’indirizzo `contact@mydomain.ovh`. Per farlo, cree
 >
 > Se disponi già di un indirizzo email Zimbra, accedi alla [Migrazione delle email con OVHcloud Mail Migrator](#step12).
 
-Per prima cosa è necessario creare un indirizzo email con un nome provvisorio. Ad esempio, è possibile creare l’indirizzo `contact2@mydomain.ovh`{.action} se è necessario migrare l’indirizzo `contact@mydomain.ovh`{.action}.
+Per prima cosa è necessario creare un indirizzo email con un nome provvisorio. Ad esempio, è possibile creare l’indirizzo `contact2@mydomain.ovh` se è necessario migrare l’indirizzo `contact@mydomain.ovh`.
 
 Per creare un indirizzo email Zimbra, consulta la sezione "Creare un account email" della nostra guida [Iniziare a utilizzare il servizio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
@@ -80,8 +80,8 @@ Nella pagina [OMM](/links/web/omm), nella scheda `Migration`{.action}, clicca su
     - **Password**: Inserisci la password dell’indirizzo email interessato.
 - **Destination Account**:
     - **Tipo di server**: Seleziona `Zimbra` per il tipo di server di destinazione.
-    -   **Server URL**: Inserisci l’indirizzo del server Zimbra <https://zimbra1.mail.ovh.net>.
-    - **Login**: Inserisci l'indirizzo email completo dell'account Zimbra di destinazione (esempio:`contact2@mydomain.ovh`).
+    - **Server URL**: Inserisci l’indirizzo del server Zimbra <https://zimbra1.mail.ovh.net>.
+    - **Login**: Inserisci l'indirizzo email completo dell'account Zimbra di destinazione (esempio: `contact2@mydomain.ovh`).
     - **Password**: Inserisci la password dell’indirizzo email dell’account Zimbra di destinazione.
 
 **Opzioni**
@@ -123,7 +123,7 @@ Per effettuare una migrazione per file o multipli, consulta le sezioni "Migrazio
 
 > [!warning]
 >
-> Prima di eliminare il tuo account MX Plan, effettua un backup delle tue email** per evitare qualsiasi perdita di dati.
+> Prima di eliminare il tuo account MX Plan, **effettua un backup delle tue email** per evitare qualsiasi perdita di dati.
 
 Utilizza le opzioni di esportazione del client di posta. Nella nostra guida "[Migrare manualmente un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)" troverai i dettagli dell’esportazione manuale di un indirizzo email da un client di posta.
 
@@ -135,7 +135,7 @@ Per eliminare l’indirizzo email MX Plan (esempio: `contact@mydomain.ovh`), con
 >
 > Se stai migrando da un account MX Plan che utilizza la Webmail Zimbra, attendi 5 minuti affinché l’eliminazione diventi effettiva prima di rinominare il secondo account email.
 
-#### 2.2 - Rinomina l’indirizzo email Zimbra <a name="step22"></a>
+### 2.2 - Rinomina l’indirizzo email Zimbra <a name="step22"></a>
 
 Dallo Spazio Cliente OVHcloud, accedi al servizio Zimbra Starter e rinomina l’indirizzo del tuo account email Zimbra con il nome dell’account email migrato (ad esempio: `contact2@mydomain.ovh` in `contact@mydomain.ovh`).
 

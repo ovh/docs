@@ -50,9 +50,11 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 - Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 - festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 
-|E-Mails und E-Mail Pro|Exchange|
+Um auf die Sicherheitseinstellungen Ihres E-Mail-Dienstes zuzugreifen, folgen Sie den nachstehenden Anweisungen.
+
+|MX Plan und E-Mail Pro|Exchange|
 |---|---|
-|Klicken Sie auf `MX Plan`{.action} bzw. `E-Mail Pro`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf den Tab `Mehr`, dann auf `Verwaltung der Sicherheitseinstellungen`{.action}.|Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf `Sicherheit`{.action}.|
+|Klicken Sie auf den Tab `Mehr`, dann auf `Sicherheitseinstellungen verwalten`{.action}.|Klicken Sie auf `Sicherheit`{.action}.|
 |![Exchange Sicherheit](images/manage-security01.png){.thumbnail}|![Exchange Sicherheit](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

@@ -319,7 +319,7 @@ En la sección **PATH PARAMETERS**:
 
 En la pestaña **EXAMPLE** de la sección **REQUEST BODY**, complete los campos con sus valores:
 
-- `sbrDefault `: Dejar en blanco.
+- `sbrDefault`: Dejar en blanco.
 - `sendConnectorIdDefault`: Introduzca el ID del conector de envío, que se obtiene como número en [este paso](#idconnector).
 
 Haga clic en `Execute`{.action} para iniciar la llamada a la API.
@@ -368,7 +368,7 @@ El resultado es el siguiente:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [«Editar una zona DNS de OVH»](/pages/web_cloud/domains/dns_zone_edit)
 

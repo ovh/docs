@@ -67,6 +67,8 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Identificar la tecnología de correo electrónico de su solución MX Plan.**
@@ -132,7 +134,7 @@ La modificación de su contraseña a través del webmail está disponible para l
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}.
 
 ![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
 

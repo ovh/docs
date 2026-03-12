@@ -86,8 +86,8 @@ Cette erreur indique que les e-mails ne peuvent pas être reçus et sera égalem
 
 En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants sont valides :
 
-- Exchange seul : mx0.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca et mx4.mail.ovh.ca
-- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx0.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca et mx4.mail.ovh.ca
+- Exchange seul : mx0.mail.ovh.ca, mx1.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca et mx4.mail.ovh.ca
+- Exchange + E-mail POP/IMAP hébergé par OVHcloud: mx0.mail.ovh.ca, mx1.mail.ovh.ca, mx2.mail.ovh.ca, mx3.mail.ovh.ca et mx4.mail.ovh.ca
 - Exchange + E-mail POP/IMAP non hébergé par OVHcloud: `ex.mail.ovh.ca`
 
 ### L'enregistrement SRV du domaine n'est pas valide

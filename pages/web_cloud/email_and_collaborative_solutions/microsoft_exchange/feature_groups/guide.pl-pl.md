@@ -4,6 +4,15 @@ excerpt: 'Dowiedz się, jak zarządzać listami wysyłkowymi w programie Exchang
 updated: 2025-04-28
 ---
 
+<style>
+.w-600 {
+  max-width:600px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
 ## Wprowadzenie
 
 Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz przez wysyłanie e-maili na unikatowy adres grupy. Dzięki tej funkcji współpracy można tworzyć listy wysyłkowe obejmujące nie tylko użytkowników programu Exchange, ale też kontakty zewnętrzne, a także zarządzać nimi.
@@ -88,7 +97,7 @@ Zostanie wyświetlona opcja `Skonfiguruj delegowanie`{.action} w menu. Opcja ta 
 
 Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud webmail](/links/web/email) (OWA): wystarczy wysłać e-mail na adres grupy.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Delegowanie uprawnień do konta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

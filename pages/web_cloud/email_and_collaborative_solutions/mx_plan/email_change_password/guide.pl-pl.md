@@ -67,6 +67,8 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 >
 > Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.
 
+<a name="whichmxplan"></a>
+
 > [!primary]
 >
 > **Sprawdzenie konfiguracji usługi MX Plan:**
@@ -132,7 +134,7 @@ Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-m
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Przejdź do strony "[Webmail](/links/web/email)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+Przejdź do strony "[Webmail](/links/web/email)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}.
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -169,7 +171,7 @@ Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** ha
 >
 > Jeśli chcesz zachować hasło, zalecane jest użycie menedżera haseł, takiego jak **Keepass**.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

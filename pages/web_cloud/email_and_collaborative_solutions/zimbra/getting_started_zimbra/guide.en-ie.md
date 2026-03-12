@@ -222,11 +222,11 @@ Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Change plan <a name="emails-offer"></a>
+#### Change plan <a name="emails-offer"></a>
 
 It is possible to upgrade or downgrade any Zimbra account.
 
-1. Click on the `Email account`{.action} tab.
+1. Click on the `Email accounts`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
 1. Click on `Change plan`{.action}.
 
