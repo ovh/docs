@@ -1,6 +1,6 @@
 ---
-title: 'Tout savoir sur les expéditeurs SMS'
-excerpt: Découvrez les différents expéditeurs utilisables avec nos solutions SMS
+title: "Tout savoir sur les expéditeurs SMS"
+excerpt: "Découvrez les différents expéditeurs utilisables avec nos solutions SMS"
 updated: 2025-10-28
 ---
 

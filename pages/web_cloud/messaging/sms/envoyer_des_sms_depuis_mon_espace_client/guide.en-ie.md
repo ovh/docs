@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
-excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
+excerpt: Find out how to send your first SMS messages step by step, configure senders and manage recipients from the OVHcloud Control Panel
 updated: 2026-01-07
 ---
 

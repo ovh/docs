@@ -1,6 +1,6 @@
 ---
 title: Launching your first SMS campaign
-excerpt: Find out how to launch an SMS campaign
+excerpt: Find out how to create and launch your first SMS campaign using the integrated tools available in the OVHcloud Control Panel
 updated: 2022-08-05
 ---
 

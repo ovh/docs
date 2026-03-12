@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages to the USA
-excerpt: Find out how to send SMS messages to the USA
+excerpt: Find out how to comply with the specific rules for sending SMS messages to the United States and apply them via the OVHcloud Control Panel
 updated: 2022-08-05
 ---
 
@@ -28,7 +28,7 @@ There are specific rules for sending SMS to the United States. The guide will ex
 
 ## Instructions
 
-### Step 1: understanding the restrictions
+### Step 1: Understanding the restrictions
 
 In accordance with the US SMS regulation authority (Neustar), a message template must be validated through our services before an SMS can be sent to this destination.
 Only alert and two-factor authentication messages are authorised, and advertising SMS templates are not accepted. Once you have set your templates, the SMS will be sent the same way as for other countries.
@@ -40,7 +40,7 @@ You can request the validation of multiple message templates.
 Setting message templates is free and is carried out by the OVHcloud teams within two working days.
 >
 
-### Step 2: adding a template
+### Step 2: Adding a template
 
 #### 2.1 Via the Control Panel
 
@@ -97,7 +97,7 @@ Your security code is: #CODE#. Have a good day!
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Step 3: analysing returns
+### Step 3: Analysing returns
 
 Once your message template has been created and validated, the outgoing SMS automatically compares your content with your templates. If the comparison is positive, the SMS is sent in the same way as one sent to another recipient.
 

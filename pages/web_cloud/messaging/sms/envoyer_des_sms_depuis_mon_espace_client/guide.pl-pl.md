@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
-excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
+excerpt: Dowiedz się, jak krok po kroku wysłać pierwsze wiadomości SMS, skonfigurować nadawców i zarządzać odbiorcami z poziomu Panelu klienta OVHcloud
 updated: 2026-01-07
 ---
 
@@ -31,7 +31,7 @@ Pole "Wyślij SMS" jest pierwszym dostępnym elementem na liście działań.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
 
-### Etap 1: konfigurowanie nadawcy i odbiorcy
+### Etap 1: Konfigurowanie nadawcy i odbiorcy
 
 > [!primary]
 > Aby uzyskać więcej informacji na temat tworzenia i korzystania z nadawcy, zapoznaj się z naszym przewodnikiem "[Wszystko, co musisz wiedzieć o nadawcach SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
@@ -52,7 +52,7 @@ Więcej informacji znajdziesz w [przewodniku dotyczącym list odbiorców wiadomo
 - Za pośrednictwem książki adresowej (3). Możesz ją utworzyć bezpośrednio w Panelu klienta lub zaimportować z pliku w formacie .csv lub .txt.
 Zapoznaj się z [przewodnikiem dotyczącym książek adresowych odbiorców wiadomości SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
 
-### Etap 2: tworzenie wiadomości SMS
+### Etap 2: Tworzenie wiadomości SMS
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
 title: 'Everything you need to know about SMS users'
-excerpt: 'Explore the features for API users to send SMS messages'
+excerpt: 'Find out how to create, configure and manage API users for sending SMS messages, including setting permissions and restrictions'
 updated: 2022-08-05
 ---
 
@@ -134,7 +134,7 @@ The table below provides a **non-exhaustive** list of the main ptt codes.
 
 |Code|Description|
 |---|---|
-|1|An intermediary status notification indicating that the message has not yet been delivered due to a phone-related problem, but delivery is being re-tried.|
+|1|An intermediary status indicating that the message is being retried due to a phone-related issue.|
 |2|Used to indicate that the message has not yet been delivered due to an operator-related problem, but delivery is being re-tried within the network.|
 |3|Used to indicate that the message has been accepted by the operator.|
 |4|The message has been delivered.|

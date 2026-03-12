@@ -1,6 +1,6 @@
 ---
 title: 'Lista de destinatarios de SMS'
-excerpt: 'Esta guía explica cómo crear una lista de destinatarios de SMS e importarla en el área de cliente de OVHcloud'
+excerpt: 'Descubra cómo crear una lista de destinatarios SMS con una hoja de cálculo o un editor de texto e importarla en el área de cliente de OVHcloud'
 updated: 2022-08-05
 ---
 

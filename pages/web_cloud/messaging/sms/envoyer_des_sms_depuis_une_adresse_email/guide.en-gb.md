@@ -1,6 +1,6 @@
 ---
 title: 'Sending SMS messages via an email address'
-excerpt: 'Find out how to send SMS messages via an email address'
+excerpt: 'Find out how to configure and send SMS messages directly from any email address using the OVHcloud email2sms gateway feature'
 updated: 2020-06-04
 ---
 

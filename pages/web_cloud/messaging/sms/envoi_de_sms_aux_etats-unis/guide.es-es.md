@@ -1,6 +1,6 @@
 ---
 title: 'Envío de SMS a Estados Unidos'
-excerpt: 'Cómo enviar SMS a Estados Unidos'
+excerpt: 'Descubra cómo cumplir con las normas específicas para el envío de SMS a Estados Unidos y aplicarlas desde el área de cliente de OVHcloud'
 updated: 2022-08-05
 ---
 

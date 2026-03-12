@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en PHP'
-excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en PHP'
+title: "Envoyer des SMS avec l’API OVHcloud en PHP"
+excerpt: "Découvrez comment configurer un environnement de développement PHP et envoyer votre premier SMS avec l’API RESTful OVHcloud pas à pas"
 updated: 2020-06-25
 ---
 
@@ -17,7 +17,7 @@ Les SMS sont largement utilisés pour diffuser des informations pratiques, suivr
 
 ## En pratique
 
-### Étape 1 : Récupération du Wrapper PHP for OVH APIs
+### Étape 1 : Récupération du Wrapper PHP for OVHcloud APIs
 
 Rendez vous sur le projet [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 
@@ -45,7 +45,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - GET /sms/*/jobs
 - POST /sms/*/jobs
 
-L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par « /sms/NOM-DU-COMPTE/ ».
 
 Vous récupérez vos identifiants pour votre script :
 
@@ -63,7 +63,7 @@ Pour plus de simplicité nous avons mis en place un SDK PHP que vous pouvez retr
 
 ### Étape 4 : Connexion basique à l'API
 
-Vous pouvez maintenant tester la bonne connexion à l’API en affichant les détails de chaque compte SMS:
+Vous pouvez maintenant tester la bonne connexion à l’API en affichant les détails de chaque compte SMS :
 
 ```
 <?php

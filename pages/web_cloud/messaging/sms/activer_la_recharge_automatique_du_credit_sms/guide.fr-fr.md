@@ -1,6 +1,6 @@
 ---
-title: 'Gérer les crédits SMS et activer la recharge automatique'
-excerpt: 'Apprenez comment gérer vos crédits SMS OVHcloud'
+title: "Gérer les crédits SMS et activer la recharge automatique"
+excerpt: "Découvrez comment gérer vos crédits SMS, activer la recharge automatique et transférer des crédits entre vos comptes SMS OVHcloud"
 updated: 2023-02-09
 ---
 
@@ -56,7 +56,7 @@ Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer
 >
 > L'option de recharge automatique ne peut être activée que si les conditions suivantes sont remplies :
 >
-> - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud;
+> - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud ;
 > - votre service SMS doit avoir au moins 2 mois d'ancienneté.
 
 Rendez-vous dans le menu `Options`{.action} (1) puis `Recharge automatique`{.action} (2).
@@ -69,9 +69,9 @@ Cliquez alors sur `Modifier`{.action} dans la rubrique « Gérer les options ».
 
 Enfin, remplissez les champs requis :
 
-* Seuil minimum (1) : lorsque ce seuil est atteint, la recharge automatique se déclenche.
-* Quantité à recharger (2) : définit la quantité de crédits à recharger sur votre compte SMS. Les choix possibles sont : 100, 200, 250, 500, 1000, 5000 et 10000.
-* Cliquez sur le bouton `Valider`{.action} pour appliquer le paramétrage.
+- Seuil minimum (1) : lorsque ce seuil est atteint, la recharge automatique se déclenche.
+- Quantité à recharger (2) : définit la quantité de crédits à recharger sur votre compte SMS. Les choix possibles sont : 100, 200, 250, 500, 1000, 5000 et 10000.
+- Cliquez sur le bouton `Valider`{.action} pour appliquer le paramétrage.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 

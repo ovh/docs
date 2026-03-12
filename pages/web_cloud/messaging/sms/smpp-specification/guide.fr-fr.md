@@ -1,6 +1,6 @@
 ---
-title: Spécifications techniques du SMPP
-excerpt: 'Découvrez les spécifications techniques du SMPP'
+title: "Spécifications techniques du SMPP"
+excerpt: "Découvrez les spécifications techniques du SMPP"
 updated: 2025-03-05
 ---
 
@@ -321,7 +321,7 @@ Une plage spécifique de statuts est réservé aux SMSC. Voici ceux utilisés pa
 
 Le data coding est utilisé par le `submit_sm` et le `deliver_sm` pour encoder le message.
 
-Liste des data coding supportés:
+Liste des data coding supportés :
 
 - GSM 03.38 (GSM 7 bits)*
 - UCS2
@@ -379,3 +379,5 @@ La version du protocole est le 3.4.
 [Documentation technique SMPP](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
 
 [Gestion d'un compte SMS SMPP](/pages/web_cloud/messaging/sms/smpp-control-panel)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

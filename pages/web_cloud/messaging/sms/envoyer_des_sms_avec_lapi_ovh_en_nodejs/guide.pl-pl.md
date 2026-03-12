@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w Node.js
-excerpt: Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w Node.js
+excerpt: Dowiedz się, jak skonfigurować środowisko Node.js i wysłać pierwszą wiadomość SMS krok po kroku za pomocą wrappera API RESTful OVHcloud
 updated: 2020-06-18
 ---
 
@@ -31,7 +31,7 @@ $ npm install ovh
 
 Należy przejść do katalogu ./node_modules/ovh/...
 
-### Etap 1: utworzenie identyfikatorów
+### Etap 1: Utworzenie identyfikatorów
 
 Identyfikatory są niezbędne do korzystania z interfejsu API SMS. Identyfikatory te tworzy się jednorazowo w celu określenia aplikacji, która będzie wysyłać wiadomości SMS. Czas ważności tych identyfikatorów można skonfigurować.
 
@@ -58,7 +58,7 @@ W ten sposób uzyskasz identyfikatory dla Twojego skryptu:
 
 Środowisko jest gotowe, identyfikatory zostały utworzone, a Ty możesz już tworzyć kod Twojego skryptu Node.js.
 
-### Etap 2: pozyskanie nazwy serviceName i wysyłka pierwszej wiadomości SMS
+### Etap 2: Pozyskanie nazwy serviceName i wysyłka pierwszej wiadomości SMS
 
 Teraz pozyskamy nazwę serviceName (posiadane przez Ciebie konto SMS; zakładamy, że posiadasz tylko jedno konto SMS, w przeciwnym razie należy zrealizować tę część). Następnie wyślemy wiadomość SMS przy użyciu pozyskanego konta przez pierwsze wywołanie WebService:
 

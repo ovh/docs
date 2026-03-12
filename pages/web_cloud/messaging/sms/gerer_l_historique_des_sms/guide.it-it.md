@@ -40,7 +40,7 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 > Per consultare SMS meno recenti (fino agli ultimi 12 mesi), è necessario scaricare la cronologia degli SMS in formato CSV. Consulta [lo Step 2 di questa guida](#csv).
 >
 
-### Step 1: consulta la cronologia dal tuo Spazio Cliente
+### Step 1: Consulta la cronologia dal tuo Spazio Cliente
 
 Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
 
@@ -64,7 +64,7 @@ Il pulsante `Filtra`{.action} consente di filtrare la ricerca in base al mittent
 
 ![sms-history](images/smshistory5.png){.thumbnail}
  
-### Step 2: scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
+### Step 2: Scarica la cronologia degli SMS in formato CSV <a name="csv"></a>
 
 Per scaricare la cronologia degli SMS inviati in formato “.csv”, clicca sul pulsante `Azioni`{.action} nell’angolo in alto a sinistra e poi clicca su `Scarica`{.action} 
  
