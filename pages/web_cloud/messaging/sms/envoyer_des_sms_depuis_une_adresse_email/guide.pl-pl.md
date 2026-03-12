@@ -75,7 +75,7 @@ Otrzymany rezultat powinien wyglądać jak poniżej. Domyślnie wiadomość SMS 
 > [!primary]
 >**Dotyczy tylko kont OVHcloud we Francji:**
 >
-> Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź senderForResponse=1.
+> Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź `senderForResponse=1`.
 >
 
 Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)

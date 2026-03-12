@@ -87,7 +87,7 @@ Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut
 > [!primary]
 >**Uniquement pour les comptes OVHcloud en France :**
 >
-> Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez « senderForResponse=1 » en tant qu'expéditeur.
+> Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez `senderForResponse=1` en tant qu'expéditeur.
 >
 
 Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)

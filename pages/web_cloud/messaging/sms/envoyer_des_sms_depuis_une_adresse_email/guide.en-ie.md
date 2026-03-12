@@ -75,7 +75,7 @@ You should see a result similar to the image below. By default, once you send yo
 > [!primary]
 >**For OVHcloud accounts in France only:**
 >
-> If you would like to use a short number that enables replies, enter senderForResponse=1 as a sender.
+> If you would like to use a short number that enables replies, enter `senderForResponse=1` as a sender.
 >
 
 You can refer to the following guide for any specifics about SMS users: [Everything you need to know about SMS users](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)

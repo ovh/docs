@@ -75,7 +75,7 @@ Deberá obtener un resultado similar al de la imagen siguiente. Por defecto, una
 > [!primary]
 >**Solo para las cuentas de OVHcloud Francia:**
 >
-> Si quiere utilizar un número corto que permita la respuesta, indique «senderForResponse=1» como remitente.
+> Si quiere utilizar un número corto que permita la respuesta, indique `senderForResponse=1` como remitente.
 >
 
 Para más información sobre los usuarios de SMS, consulte la siguiente guía: [Usuarios de SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)

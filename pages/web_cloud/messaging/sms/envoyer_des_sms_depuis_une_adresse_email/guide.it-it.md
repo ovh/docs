@@ -75,7 +75,7 @@ Il risultato dovrebbe essere simile a quello dell’immagine qui di seguito. Per
 > [!primary]
 >**Unicamente per gli account OVHcloud in Francia:**
 >
-> Se desideri utilizzare un numero breve che consenta la risposta, digita senderForResponse=1 come mittente.
+> Se desideri utilizzare un numero breve che consenta la risposta, digita `senderForResponse=1` come mittente.
 >
 
 Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
