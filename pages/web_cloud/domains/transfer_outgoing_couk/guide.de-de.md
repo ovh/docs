@@ -1,7 +1,7 @@
 ---
 title: "Einen .uk-Domainnamen zu einem anderen Registrar transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu einem anderen Provider transferieren"
-updated: 2026-02-10
+updated: 2026-03-12
 ---
 
 ## Ziel
@@ -60,27 +60,36 @@ Die betroffenen TLDs haben einen **TAG**, der stets einem Domainnamen-Registrar 
 
 Falls Sie den benötigten TAG noch nicht kennen, können Sie ihn bei Ihrem neuen Anbieter erfragen oder auf dieser [Nominet-Registrarliste](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/) nachsehen.
 
-### Schritt 1: Überprüfung der erforderlichen Informationen
+### 1 - Den TAG Ihrer Domain ändern, um den Transfer zu einem anderen Registrar einzuleiten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus.
+> [!primary]
+>
+> Sie müssen als [Administrator](/pages/account_and_service_management/account_information/managing_contacts) eingeloggt sein, um diese Aktionen durchzuführen.
 
-Denken Sie daran, dass Sie als Administrator-Kontakt eingeloggt sein müssen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
-Im Tab `Allgemeine Informationen`{.action} können Sie überprüfen, ob die Voraussetzungen für den Transfer erfüllt sind.
-
-### Schritt 2: Den TAG Ihrer Domain ändern
-
-Klicken Sie im Bereich **Sicherheit** auf `Ausgehender Transfer-TAG`{.action}.
-
-![ausgehender Transfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
-
-Geben Sie im neuen Fenster den TAG Ihres neuen Registrars ein und klicken Sie dann auf `Bestätigen`{.action}.
-
-![ausgehender Transfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie im Bereich **Konfiguration** auf den Link `Ausgehender Transfer-TAG`{.action}.
+>>
+>> ![ausgehender Transfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Geben Sie im neuen Fenster den TAG Ihres neuen Registrars ein und klicken Sie dann auf `Bestätigen`{.action}.
+>>
+>> ![ausgehender Transfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
 
 Falls es Ihnen nicht möglich ist, den TAG Ihres Domainnamens über Ihr Kundencenter zu ändern, können Sie dies auch direkt bei der Registrierungsstelle beantragen. Weitere Informationen finden Sie auf der offiziellen [Website von Nominet](https://www.nominet.uk/domain-support/).
 
-### Schritt 3: Den Transfer bei Ihrem neuen Registrar verfolgen
+### 2 - Den Transfer bei Ihrem neuen Registrar verfolgen
 
 Eine erfolgreiche Änderung des TAG startet den Transferprozess. Wenden Sie sich an Ihren neuen Anbieter, um Details und mögliche Folgefragen zu klären.
 

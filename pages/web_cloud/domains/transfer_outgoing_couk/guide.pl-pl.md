@@ -1,12 +1,12 @@
 ---
 title: "Transfer nazwy domeny .uk do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer nazwy domeny wychodzącej z nazwy domeny UK do innego operatora"
-updated: 2026-02-10
+updated: 2026-03-12
 ---
 
 ## Wprowadzenie
 
-Proces zmiany operatora nazwy domeny *najwyższego poziomu* (*top-level domain*, lub **TLD**) dla nazwy domeny najwyższego poziomu **UK** (**.uk**) różni się od tego wyszczególnionego w naszym [przewodniku transferu nazw domen globalnychKET](/pages/web_cloud/domains/transfer_outgoing_domain). Poniższe instrukcje dotyczą następujących rozszerzeń:
+Proces zmiany operatora nazwy domeny *najwyższego poziomu* (*top-level domain*, lub **TLD**) dla nazwy domeny najwyższego poziomu **UK** (**.uk**) różni się od tego wyszczególnionego w naszym [przewodniku transferu nazw domen globalnych](/pages/web_cloud/domains/transfer_outgoing_domain). Poniższe instrukcje dotyczą następujących rozszerzeń:
 
 - .uk
 - .co.uk
@@ -56,31 +56,40 @@ Proces zmiany operatora nazwy domeny *najwyższego poziomu* (*top-level domain*,
 
 ## W praktyce
 
-Każdy z tych TLD posiada *TAG* odpowiadający aktualnemu operatorowi nazw domen, takiemu jak OVHcloud. Transfer rozpoczyna się od zastąpienia APR identyfikatorem nowego operatora.
+Każdy z tych TLD posiada *TAG* odpowiadający aktualnemu operatorowi nazw domen, takiemu jak OVHcloud. Transfer rozpoczyna się od zastąpienia TAG identyfikatorem nowego operatora.
 
 Jeśli nie znasz jeszcze wymaganego wpisu TAG, możesz złożyć wniosek u nowego operatora lub sprawdzić [listę rejestratorów Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
-### Etap 1: sprawdzenie niezbędnych informacji
+### 1 - Zmień TAG Twojej nazwy domeny, aby zainicjować transfer do innego operatora
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
+> [!primary]
+>
+> Aby wykonać te czynności, musisz być zalogowany jako [administrator](/pages/account_and_service_management/account_information/managing_contacts).
 
-Pamiętaj, że musisz być zalogowany jako kontakt administracyjny.
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W zakładce `Informacje ogólne`{.action} możesz sprawdzić, czy spełnione są warunki niezbędne do przeprowadzenia procesu transferu.
-
-### Etap 2: zmień APR dla Twojej nazwy domeny
-
-Kliknij link `Tag transferu wychodzącego`{.action} w sekcji zatytułowanej **Bezpieczeństwo**.
-
-![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
-
-W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
-
-![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+> [!tabs]
+> **Krok 1**
+>>
+>> Kliknij [ten link](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Krok 2**
+>>
+>> W sekcji **Konfiguracja** kliknij link `Tag transferu wychodzącego`{.action}.
+>>
+>> ![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
+>>
+> **Krok 3**
+>>
+>> W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
+>>
+>> ![transfer wychodzący](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
 
 Jeśli nie możesz zmienić wpisu TAG Twojej nazwy domeny w Panelu klienta, możesz zlecić jego zmianę w rejestrze Nominet. Więcej informacji znajduje się na oficjalnej [stronie internetowej Nominet](https://www.nominet.uk/domain-support/).
 
-### Etap 3: sprawdź proces transferu u nowego operatora
+### 2 - Sprawdź proces transferu u nowego operatora
 
 Zmiana znacznika TAG aktywuje proces transferu.
 
@@ -92,4 +101,4 @@ Skontaktuj się z nowym dostawcą, aby uzyskać więcej informacji oraz wszelkie
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Dołącz do [grona naszych użytkowników](/links/community).
