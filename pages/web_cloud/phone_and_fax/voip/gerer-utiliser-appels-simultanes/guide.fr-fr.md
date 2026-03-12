@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre des appels. Dans le but de maximiser votre disponibilité lorsque vous êtes joint, vous pouvez être amené à devoir prendre plusieurs appels simultanés sur une même ligne téléphonique. Ceci peut vous permettre d'éviter de perdre des appels.
+Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre des appels. Pour maximiser votre disponibilité, vous pouvez prendre plusieurs appels simultanés sur une même ligne téléphonique. Ceci permet d'éviter de perdre des appels.
 
 **Apprenez à gérer et utiliser les appels simultanés avec une ligne téléphonique OVHcloud.**
 

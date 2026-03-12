@@ -1,14 +1,14 @@
 ---
 title: "Modifier le mot de passe d'une ligne SIP"
-excerpt: "Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
+excerpt: "Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depuis l'appareil de votre choix. Cet accès est possible grâce au mot de passe qui lui est associé. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier. 
+Votre ligne SIP OVHcloud permet d'émettre et de recevoir des appels depuis l'appareil de votre choix via un mot de passe dédié. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier.
 
-**Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
+**Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
 
 ## Prérequis
 

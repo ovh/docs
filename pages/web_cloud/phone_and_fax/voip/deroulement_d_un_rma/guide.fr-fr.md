@@ -300,7 +300,7 @@ L'e-mail ci-dessous concerne un RMA pour un téléphone. Cet e-mail est similair
 >
 > Nous avons réceptionné le matériel lié au RMA #RMA# correspondant à la référence #MODEL#, et nous vous en remercions.<br>
 > Tout est en ordre et la totalité de votre caution vous sera restituée dans les jours qui suivent.<br>
-> Elle sera créditée sur votre compte OVH, accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH.<br>
+> Elle sera créditée sur votre compte OVHcloud, accessible à partir de votre espace Client Télécom > Facturation > Mon Compte OVH.<br>
 > Vous pouvez à tout moment procéder à un transfert vers votre compte bancaire depuis votre espace client.
 >
 

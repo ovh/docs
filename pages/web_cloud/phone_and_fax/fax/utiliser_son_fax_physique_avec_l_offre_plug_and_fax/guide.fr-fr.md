@@ -1,6 +1,6 @@
 ---
-title: Utiliser son fax physique avec l’offre Plug & Fax
-excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique
+title: "Utiliser son fax physique avec l’offre Plug & Fax"
+excerpt: "Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique"
 updated: 2025-04-28
 ---
 
@@ -24,8 +24,6 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Plug & Fax.
 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne Plug & Fax concernée.
 
-## En pratique
-
 ### Branchement du fax sur le Cisco ATA 191
 
 Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votre adaptateur. Bien évidemment, l'adaptateur doit être raccordé au secteur et également être branché en **Ethernet** sur votre routeur.
@@ -46,7 +44,7 @@ Sur certains télécopieurs, la correction d'erreur peut être appelée **ECM** 
 
 L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 
-- uniquement sur le télécopieur;
+- uniquement sur le télécopieur ;
 - uniquement par e-mail ou via le logiciel Ecofax.
 
 La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
@@ -58,10 +56,10 @@ Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager
 
 #### Réception via le télécopieur
 
-Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonctionnel est raccordé à l'adaptateur Plug & Fax. Si votre télécopieur est débranché, éteint ou en panne, les renvois d'appels décrits ci-dessous permettent d'assurer une continuité de la réception des fax. En effet, vous recevrez ainsi toujours vos fax par e-mail ou via le logiciel Ecofax.
+Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonctionnel est raccordé à l'adaptateur Plug & Fax. Si votre télécopieur est débranché, éteint ou en panne, les renvois d'appels décrits ci-dessous permettent d'assurer une continuité de la réception des fax. Vous recevrez ainsi toujours vos fax par e-mail ou via le logiciel Ecofax.
 
 Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi quand il n'y a pas de réponse`{.action} et définissez le nombre de secondes à 45.
-<br>Ce renvoi laisse donc 45 secondes à votre télécopieur pour décrocher lors d'une réception de fax. Au delà de ce délai, le fax est renvoyé vers votre adresse e-mail ou vers le logiciel Ecofax. 
+<br>Ce renvoi laisse donc 45 secondes à votre télécopieur pour décrocher lors d'une réception de fax. Au-delà de ce délai, le fax est renvoyé vers votre adresse e-mail ou vers le logiciel Ecofax. 
 <br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
 
 De même, cochez la case devant `Renvoi quand la ligne est injoignable ou déconnectée`{.action}.
@@ -71,7 +69,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels](images/renvoi_dappel.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client).
+Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide [Configurer ma ligne Ecofax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client).
 
 #### Réception uniquement par e-mail ou Ecofax
 
@@ -86,7 +84,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client).
+Pour configurer les notifications par e-mail de votre ligne, reportez-vous au guide [Configurer ma ligne Ecofax Pro](/pages/web_cloud/phone_and_fax/fax/configuration_fax_espace_client).
 
 ### Configurer la présentation du numéro en appel sortant
 

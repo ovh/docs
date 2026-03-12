@@ -1,5 +1,5 @@
 ---
-title: 'Configurer un Serveur Vocal Interactif (SVI)'
+title: "Configurer un Serveur Vocal Interactif (SVI)"
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
 updated: 2026-01-22
 ---
@@ -65,7 +65,7 @@ Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.a
 
 #### Présentation de l'interface
 
-L'interface de configuration du SVI se présente sous la forme d'une arborescence au dessus de laquelle vous disposez de deux menus. Un menu supplémentaire est disponible sur chaque étape de l'arborescence.
+L'interface de configuration du SVI se présente sous la forme d'une arborescence surmontée de deux menus. Un menu supplémentaire est disponible sur chaque étape de l'arborescence.
 
 |Menu du numéro|Menu de la configuration|Menu d'étape|
 |---|---|---|
@@ -175,7 +175,7 @@ Selon vos besoins, répétez ces manipulations si vous souhaitez créer plusieur
 
 > [!primary]
 >
-> A des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies dans vos étapes. Cliquez sur `Options d'affichage`{.action} en haut à gauche de votre interface puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
+> À des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies dans vos étapes. Cliquez sur `Options d'affichage`{.action} en haut à gauche de votre interface puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
 >
 
 #### 4.3 Ajouter une condition à une étape

@@ -1,6 +1,6 @@
 ---
-title: 'Configurer et consulter le répondeur de sa ligne'
-excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
+title: "Configurer et consulter le répondeur de sa ligne"
+excerpt: "Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud"
 updated: 2026-01-20
 ---
 
@@ -40,7 +40,7 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 
 Les lignes OVHcloud disposent par défaut d'un répondeur que vous pouvez consulter et personnaliser à votre guise. Si vous venez d'obtenir votre ligne téléphonique OVHcloud ou si vous n'avez pas modifié la configuration initiale de cette dernière, le répondeur de votre ligne est activé par défaut et enregistre déjà les messages de vos correspondants. 
 
-Vous avez également la possibilité de modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
+Vous pouvez également modifier l'association d'une ligne à son répondeur. Ceci vous permet en l'occurrence d'associer plusieurs lignes à un seul répondeur.
 
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser avec votre répondeur.
 
@@ -150,7 +150,7 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) ».
 
-Vous pouvez notamment définir le délai (en secondes) au bout duquel un apppel sera renvoyé vers le répondeur.
+Vous pouvez notamment définir le délai (en secondes) au bout duquel un appel sera renvoyé vers le répondeur.
 
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 

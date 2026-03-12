@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous pouvez créer des numéros abrégés : ils associent les numéros longs (composés de dix chiffres) à des numéros courts (composés de trois à quatre chiffres, bien plus simples à mémoriser).
+Pour faciliter les interactions avec vos correspondants, vous pouvez créer des numéros abrégés : ils associent les numéros longs (composés de dix chiffres) à des numéros courts (composés de trois à quatre chiffres, bien plus simples à mémoriser).
 
 **Apprenez à créer des numéros abrégés pour vos lignes SIP OVHcloud.**
 

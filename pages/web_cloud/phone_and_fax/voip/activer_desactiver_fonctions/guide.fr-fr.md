@@ -1,5 +1,6 @@
 ---
-title: Activer ou désactiver des services depuis le téléphone
+title: "Activer ou désactiver des services depuis le téléphone"
+excerpt: "Découvrez comment activer ou désactiver des fonctions de votre ligne téléphonique OVHcloud directement depuis votre téléphone"
 updated: 2025-09-04
 ---
 
@@ -7,9 +8,11 @@ updated: 2025-09-04
 
 Vous pouvez, depuis votre téléphone, activer ou désactiver certaines fonctions qui étaient seulement disponibles auparavant depuis votre espace client.
 
+**Découvrez comment activer ou désactiver des fonctions de votre ligne téléphonique OVHcloud directement depuis votre téléphone.**
+
 ## Prérequis
 
-- Utiliser une [ligne téléphonique OVH](/links/telecom/telephonie).
+- Utiliser une [ligne téléphonique OVHcloud](/links/telecom/telephonie).
 
 ## En pratique
 
@@ -21,7 +24,7 @@ Vous devez taper le code correspondant sur votre téléphone, établir la commun
 
 > [!warning]
 >
-> Tous ces services doivent être activés uniquement depuis votre ligne téléphonique OVH.
+> Tous ces services doivent être activés uniquement depuis votre ligne téléphonique OVHcloud.
 > 
 
 |Fonctionnalité|Pour activer|Pour désactiver|Pour interroger|Pour permuter|

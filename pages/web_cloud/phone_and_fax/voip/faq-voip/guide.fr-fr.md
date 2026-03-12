@@ -1,5 +1,6 @@
 ---
-title: FAQ VoIP OVHcloud
+title: "FAQ VoIP OVHcloud"
+excerpt: "Retrouvez les réponses aux questions les plus fréquemment posées sur les services de téléphonie VoIP OVHcloud"
 updated: 2026-02-12
 ---
 

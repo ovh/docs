@@ -10,6 +10,8 @@ This guide details how to automatically deploy your 3CX instance on a Public Clo
 
 At the end of this guide, you will have the basics to manage the deployment of your instance and its configuration automatically.
 
+**This guide explains how to automatically deploy your 3CX IPBX on an OVHcloud Public Cloud instance using an XML template.**
+
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
@@ -649,7 +651,7 @@ curl -X POST "https://eu.api.ovh.com/v1/cloud/project/your_project_id/instance" 
  -H "accept: application/json"\
  -H "authorization: Bearer [Your_Token]"\
  -H "content-type: application/json" \
- -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Name-Of-The-Instance","region":"GRA7","sshKeyId":"Your-Ssh-Key-Id","userData":TheTemplateContent"}'
+ -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Name-Of-The-Instance","region":"GRA7","sshKeyId":"Your-Ssh-Key-Id","userData":"TheTemplateContent"}'
 ```
 
 In this JSON, insert the template into `userData`. Warning: line breaks must be escaped by `\n`.

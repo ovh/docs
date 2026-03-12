@@ -1,12 +1,12 @@
 ---
-title: '3CX - Configuration et utilisation'
+title: "3CX - Configuration et utilisation"
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
 updated: 2025-10-16
 ---
 
 ## Objectif
 
-Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward), nous allons suivre le sénario suivant : 
+Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **D**ialling **I**nward), nous allons suivre le scénario suivant : 
 
 >
 > - 1 SIP Trunk : XX XX XX XX 90
@@ -49,13 +49,13 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >>
 >> Connectez-vous à l'interface d'administration de 3CX.
 >> 
->> ![3CX Phone Systeme](images/3cx_phone_system-login.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-login.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Cliquez sur `Trunks SIP`{.action}, puis sur `Ajouter Trunk SIP`{.action}.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk01.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk01.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -66,13 +66,13 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> - Dans le champ **Numéro principal**, entrez le numéro de votre trunk (dans notre exemple : `0033XXXXXXX90`).
 >> - Vérifiez les informations et cliquez sur `OK`{.action}.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk02.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk02.png){.thumbnail}
 >>
 > **Étape 4**
 >>
 >> L'écran suivant affiche les informations de configuration du trunk (proxy, ports, etc.).
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk03.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk03.png){.thumbnail}
 >>
 >> > [!primary]
 >> > Pour retrouver vos informations de connexion :
@@ -84,7 +84,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> >
 >> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
 >>
->> Saississez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
+>> Saisissez les informations d'authentification du trunk dans le formulaire en complétant les champs suivants :
 >>
 >> - **Nom d'hôte** : Renseignez le **Domain** de votre trunk.
 >> - **Proxy sortant** : Renseignez le **Proxy sortant** de votre trunk.
@@ -98,7 +98,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >>
 >> Pour ce faire, nous sélectionnons l'option  `Messagerie vocale de l'extension` avec l'extension `1000...`, pendant et en dehors des heures de bureau.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk04.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk04.png){.thumbnail}
 >>
 > **Étape 6**
 >>
@@ -108,7 +108,7 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> - Entrez les DDI souhaités.
 >> - Cliquez sur `OK`{.action} en haut de la page pour sauvegarder la configuration.
 >>
->> ![3CX Phone Systeme](images/3cx_phone_system-trunk07.png){.thumbnail}
+>> ![3CX Phone System](images/3cx_phone_system-trunk07.png){.thumbnail}
 >>
 >> > [!success]
 >> > La création du trunk sur 3CX est maintenant terminée !
@@ -124,7 +124,7 @@ Configurez l’extension 1000 pour lui permettre de présenter le DDI XX XX XX X
 - Dans le champ **Numéro présenté**, saisissez le DDI à présenter. Dans notre cas : 0033XXXXXXX26.
 - Cliquez sur `OK`{.action} pour prendre en compte la modification.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk05.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk05.png){.thumbnail}
 
 Créez et configurez l'extension 1001 :
 
@@ -135,7 +135,7 @@ Créez et configurez l'extension 1001 :
 - Dans le champ **Identifiant d'appelant transmis**, saisissez le DDI à présenter. Dans l'exemple du guide, il s'agit du 0033XXXXXXX10.
 - Cliquez sur `Appliquer`{.action} pour prendre en compte la modification.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk06.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk06.png){.thumbnail}
 
 ### Création des règles entrantes pour les DDI.
 
@@ -148,7 +148,7 @@ Créez des règles d'appel entrant lorsque les DDI sont appelés.
 - Dans le champ **Extension**, choisissez la 1000.
 - Cliquez sur `OK`{.action} pour valider la configuration.
 
-![3CX Phone Systeme](images/3cx_phone_system-trunk08.png){.thumbnail}
+![3CX Phone System](images/3cx_phone_system-trunk08.png){.thumbnail}
 
 Pour configurer le second DDI il vous faut appliquer la même procédure, à la différence que vous devez changer le DDI présenté et l'extension cible de l'appel.
 
