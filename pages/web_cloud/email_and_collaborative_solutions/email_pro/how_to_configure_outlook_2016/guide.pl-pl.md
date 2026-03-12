@@ -36,6 +36,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Posiadanie [klasycznego programu Microsoft Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) lub późniejszego.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
@@ -62,11 +73,7 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 >
 > W naszym przykładzie używamy nazwy serwera: pro?.mail.ovh.net. Musisz zastąpić "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `E-mail Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 
 - **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
 
@@ -226,7 +233,7 @@ Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym inter
 >> >
 >> > W naszym przykładzie używana jest nazwa serwera "pro**?**.mail.ovh.net". Musisz zastąpić znak "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >> >
->> > Znajdź tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera znajduje się w ramce **Logowanie** na karcie `Informacje ogólne`{.action}.
+>> > Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

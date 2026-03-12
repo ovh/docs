@@ -23,6 +23,17 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## Instruções
 
 ### 1 - Adicionar a conta
@@ -31,12 +42,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o « ? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Clique em `Email Pro`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
->
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}. O nome do servidor é apresentado na zona **Ligação** do separador `Informações gerais`{.action}.
 
 No ecrã principal do seu dispositivo, aceda a `Regulações`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
 

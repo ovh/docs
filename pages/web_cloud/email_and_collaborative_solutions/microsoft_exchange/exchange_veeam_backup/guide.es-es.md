@@ -154,7 +154,7 @@ Follow the configuration steps by clicking on the 10 tabs below:
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/impersonatedUser
 >>
->> - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform, visible from your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action} section, by selecting the platform concerned.
+>> - In the `exchangeService` and `organizationName` boxes, enter the reference for your Exchange platform. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section, then select the platform concerned to find its reference.
 >>
 >> - Enter a password of at least 15 characters between the quotation marks, next to `"password": `.
 >>
@@ -180,7 +180,7 @@ Follow the configuration steps by clicking on the 10 tabs below:
 >>
 > **Step 8**
 >>
->> - Enter the host name of your Exchange platform. You can view it from your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} > `Microsoft`{.action} > `Exchange`{.action} section, by selecting the platform concerned.
+>> - Enter the host name of your Exchange platform. You can find it by clicking [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section, then selecting the platform concerned.
 >>
 >> - The host name corresponds to the value mentioned to access the webmail.
 >>

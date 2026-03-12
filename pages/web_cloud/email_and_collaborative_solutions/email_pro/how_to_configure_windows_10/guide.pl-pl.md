@@ -38,6 +38,17 @@ Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konf
 - Posiadanie [nowej aplikacji Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) na system Windows.
 - Posiadanie danych dostępowych do konfigurowanego adresu e-mail.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 OVHcloud udostępnia usługi, za których konfigurację, zarządzanie i działanie jesteś odpowiedzialny. Należy do Ciebie zapewnić ich poprawne funkcjonowanie.
@@ -64,11 +75,7 @@ Zapewniamy tę dokumentację, aby ułatwić Ci wykonywanie typowych zadań. W pr
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp "?" cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `Email Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}.
 >
 
 Aby skonfigurować adres e-mail, wykonaj poniższe kroki, klikając odpowiednie karty poniżej.

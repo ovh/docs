@@ -13,7 +13,17 @@ When your email address is blocked for spam, it means that suspicious activity h
 ## Requirements
 
 - An [OVHcloud email solution](/links/web/emails)
-- Access to the [OVHcloud Control Panel](/links/manager), `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -46,11 +56,6 @@ If the suspicious activity detected by the anti-spam system was not initiated by
 - Check the auto-replies configured on the email address blocked for spam, via an email client or webmail.
 
 ### Step 2: Check the status of the email address and access the associated support ticket
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Click the `Web Cloud`{.action} tab.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 
 Go to the `Email accounts`{.action} tab of your platform. If the "Status" column to the right of the email address concerned shows "Spam", click on it, then `Reply to the ticket`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
 Proceed to [step 3](#step3) of the guide.

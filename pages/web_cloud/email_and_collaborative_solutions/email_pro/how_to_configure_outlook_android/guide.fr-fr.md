@@ -31,6 +31,17 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 - Disposer de l'application Outlook sur votre appareil mobile [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=fr).
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## En pratique
 
 ### Ajouter le compte <a name="add-account"></a>
@@ -39,7 +50,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 >
 > Dans nos exemples, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations générales`{.action}.
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche, appuyez sur `Ajouter un compte`{.action}.
 

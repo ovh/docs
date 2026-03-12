@@ -24,7 +24,32 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 - Sie haben eine "**Quell-Plattform**" mit bereits eingerichteten [Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) oder [Zimbra](/links/web/zimbra) Accounts.
 - Sie verfügen über eine "**Ziel-Plattform**": [Exchange](/links/web/emails-hosted-exchange), [E-Mail Pro](/links/web/email-pro) oder MX Plan (über das MX Plan Angebot oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten). Diese Plattform muss unkonfigurierte oder verfügbare Accounts haben, um die zu migrierenden E-Mail-Accounts zu empfangen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direktlink:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**E-Mail Pro:**
+
+- **Direktlink:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direktlink:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung
 

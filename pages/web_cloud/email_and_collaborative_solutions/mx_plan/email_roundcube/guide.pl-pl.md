@@ -31,6 +31,17 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## W praktyce
 
 **Podsumowanie**

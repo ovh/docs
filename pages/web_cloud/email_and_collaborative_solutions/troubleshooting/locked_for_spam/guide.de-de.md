@@ -13,7 +13,33 @@ Wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt ist, bedeutet dies, dass be
 ## Voraussetzungen
 
 - Sie verfügen über eine [OVHcloud E-Mail-Lösung](/links/web/emails).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**MX Plan:**
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+**Email Pro:**
+
+- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -67,11 +93,6 @@ Wählen Sie den betroffenen E-Mail-Dienst in den folgenden Tabs aus:
 > [!tabs]
 > **Exchange**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie im Abschnitt `MICROSOFT` auf `Exchange`{.action}.
->> 1. Wählen Sie die betreffende Plattform aus.
->>
 >> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" der betroffenen E-Mail-Adresse "Gesperrt" angezeigt wird, klicken Sie auf `...`{.action} rechts neben dem Account und dann auf `Entsperren`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
@@ -79,22 +100,12 @@ Wählen Sie den betroffenen E-Mail-Dienst in den folgenden Tabs aus:
 >>
 > **Email Pro**
 >>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Klicken Sie auf den Tab `Web Cloud`{.action}.
->> 1. Klicken Sie auf `Email Pro`{.action}.
->> 1. Wählen Sie die betreffende Plattform aus.
->>
 >> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" rechts neben der betroffenen E-Mail-Adresse "Spam" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Ticket beantworten`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten. <br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
 >> ![Spalte "Status Spam" im Tab "E-Mail-Accounts" Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Klicken Sie auf den Tab `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
 >>
 >> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" rechts neben der betroffenen E-Mail-Adresse "Spam" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Ticket beantworten`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten.<br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
@@ -104,11 +115,6 @@ Wählen Sie den betroffenen E-Mail-Dienst in den folgenden Tabs aus:
 > **MX Plan - RoundCube**
 >>
 >> Wenn die Sperrung eine MX Plan E-Mail-Adresse mit dem Webmail **RoundCube** betrifft, gibt es kein Support-Ticket. Bitte lesen Sie [Schritt 1](#step1) dieser Anleitung, bevor Sie den folgenden Anweisungen folgen.
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Klicken Sie auf den Tab `Web Cloud`{.action}.
->> 1. Klicken Sie auf `MX Plan`{.action}.
->> 1. Wählen Sie die betreffende Domain aus.
 >>
 >> Gehen Sie zum Tab `E-Mails`{.action} Ihrer Plattform. Wenn in der Spalte "Blockiert wegen SPAM" der Wert "Ja" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Passwort ändern`{.action}. Ihre E-Mail-Adresse ist jetzt entsperrt, Sie müssen [Schritt 3](#step3) nicht ausführen.
 >>

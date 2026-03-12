@@ -24,6 +24,33 @@ updated: 2026-01-16
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Bezpośredni link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz swoją usługę MX Plan
+
+**Email Pro:**
+
+- **Bezpośredni link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz swoją platformę
+
+**Exchange:**
+
+- **Bezpośredni link:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz swoją platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## W praktyce
 
 > [!primary]

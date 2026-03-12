@@ -38,6 +38,17 @@ O **novo Outlook** substitui, a partir de 1 de janeiro de 2025, o aplicativo **E
 - Disponha do [novo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) para Windows.
 - Possua as credenciais do endereço de e-mail que deseja configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informações sobre o gerenciamento e configuração dos serviços da OVHcloud
 
 A OVHcloud fornece serviços que você é responsável por configurar, gerenciar e operar. Portanto, cabe a você garantir seu funcionamento adequado.
@@ -64,11 +75,7 @@ Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o "?" pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção `Web Cloud`{.action}.
-> 1. Clique em `Email Pro`{.action}.
-> 1. Selecione a plataforma em causa.
-> 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}.
 >
 
 Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.

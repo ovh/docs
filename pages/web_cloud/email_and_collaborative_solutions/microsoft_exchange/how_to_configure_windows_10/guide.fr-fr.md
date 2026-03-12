@@ -23,6 +23,17 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer de l'application Courrier installée sur votre appareil.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## En pratique
 
 ### Étape 1 : ajouter le compte
@@ -45,7 +56,7 @@ Renseignez à présent les informations demandées :
 |Mot de passe|Indiquez le mot de passe de l'adresse e-mail.|
 |Nom d’utilisateur|Renseignez l'adresse e-mail complète.|
 |Domaine|Ne rien renseigner.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Cliquez sur [ce lien](/links/control-panel/web-exchange) pour accéder à la section `Exchange`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.|
 |Le serveur requiert une connexion chiffrée (SSL)|Laissez impérativement cette case cochée.|
 |Nom du compte|Indiquez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
 

@@ -13,7 +13,33 @@ Quando il tuo indirizzo e-mail è bloccato per spam, significa che è stata rile
 ## Prerequisiti
 
 - Disporre di una [soluzione e-mail OVHcloud](/links/web/emails).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura <a name="instructions"></a>
 
@@ -67,11 +93,6 @@ Seleziona il servizio e-mail interessato nelle schede seguenti:
 > [!tabs]
 > **Exchange**
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
 >> Accedi alla scheda `Account email`{.action} della tua piattaforma. Se la colonna "stato" dell'indirizzo e-mail interessato indica "bloccato", clicca sui `...`{.action} a destra dell'account e poi su `Sblocca`{.action}. Lo sblocco dell'indirizzo e-mail non avviene automaticamente. Contatta il supporto tramite il ticket di assistenza rispondendo alle 3 domande poste.<br>
 >> Passa allo [step 3](#step3) della guida.
 >>
@@ -79,22 +100,12 @@ Seleziona il servizio e-mail interessato nelle schede seguenti:
 >>
 > **Email Pro**
 >>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `Email Pro`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
 >> Accedi alla scheda `Account email`{.action} della tua piattaforma. Se la colonna "stato" a destra dell'indirizzo e-mail interessato indica "Spam", clicca su questa voce e poi su `Rispondi al ticket`{.action}. Lo sblocco dell'indirizzo e-mail non avviene automaticamente. Contatta il supporto tramite il ticket di assistenza rispondendo alle 3 domande poste.<br>
 >> Passa allo [step 3](#step3) della guida.
 >>
 >> ![Colonna stato Spam nella scheda Account email Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `MX Plan`{.action}.
->> 1. Seleziona il dominio interessato.
 >>
 >> Accedi alla scheda `Account email`{.action} della tua piattaforma. Se la colonna "stato" a destra dell'indirizzo e-mail interessato indica "Spam", clicca su questa voce e poi su `Rispondi al ticket`{.action}. Lo sblocco dell'indirizzo e-mail non avviene automaticamente. Contatta il supporto tramite il ticket di assistenza rispondendo alle 3 domande poste.<br>
 >> Passa allo [step 3](#step3) della guida.
@@ -104,11 +115,6 @@ Seleziona il servizio e-mail interessato nelle schede seguenti:
 > **MX Plan - RoundCube**
 >>
 >> Se il blocco riguarda un indirizzo e-mail MX Plan con la webmail **RoundCube**, non è presente alcun ticket di assistenza. Assicurati di consultare lo [step 1](#step1) di questa guida prima di seguire le istruzioni seguenti.
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `MX Plan`{.action}.
->> 1. Seleziona il dominio interessato.
 >>
 >> Accedi alla scheda `Email`{.action} della tua piattaforma. Se la colonna "Bloccato per SPAM" indica "Sì", clicca su questa voce e poi su `Modifica la password`{.action}. Il tuo indirizzo e-mail è ora sbloccato, non è necessario seguire lo [step 3](#step3).
 >>

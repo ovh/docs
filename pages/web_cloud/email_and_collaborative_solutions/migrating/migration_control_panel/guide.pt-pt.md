@@ -20,7 +20,33 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 - Ter um endereço de e-mail MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)).
 - Dispor de um serviço [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) com pelo menos uma conta não configurada (que aparecerá na forma "@configureme.me") ou [Zimbra](/links/web/zimbra).
 - **Não ter configurado um reencaminhamento para o endereço de e-mail MX Plan que pretende migrar.**
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link direto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**Email Pro:**
+
+- **Link direto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Link direto:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 

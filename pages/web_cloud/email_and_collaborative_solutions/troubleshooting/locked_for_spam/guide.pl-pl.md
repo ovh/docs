@@ -13,7 +13,33 @@ Gdy Twój adres e-mail zostaje zablokowany z powodu spamu, oznacza to, że podcz
 ## Wymagania początkowe
 
 - Posiadanie [usługi e-mail OVHcloud](/links/web/emails).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**Email Pro:**
+
+- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce <a name="instructions"></a>
 
@@ -67,11 +93,6 @@ Wybierz odpowiednią usługę e-mail w poniższych zakładkach:
 > [!tabs]
 > **Exchange**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Przejdź do sekcji `Web Cloud`{.action}.
->> 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
->> 1. Wybierz odpowiednią platformę.
->>
 >> Przejdź do zakładki `Konta e-mail`{.action} Twojej platformy. Jeśli w kolumnie "status" danego adresu e-mail widnieje "zablokowany", kliknij `...`{.action} po prawej stronie konta, a następnie `Odblokuj`{.action}. Odblokowanie adresu e-mail nie odbywa się automatycznie. Skontaktuj się z pomocą techniczną za pośrednictwem zgłoszenia, odpowiadając na 3 zadane pytania.<br>
 >> Przejdź do [etapu 3](#step3) przewodnika.
 >>
@@ -79,22 +100,12 @@ Wybierz odpowiednią usługę e-mail w poniższych zakładkach:
 >>
 > **Email Pro**
 >>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
->> 1. Wybierz odpowiednią platformę.
->>
 >> Przejdź do zakładki `Konta e-mail`{.action} Twojej platformy. Jeśli w kolumnie "status" po prawej stronie danego adresu e-mail widnieje "Spam", kliknij tę pozycję, a następnie `Odpowiedz na zgłoszenie`{.action}. Odblokowanie adresu e-mail nie odbywa się automatycznie. Skontaktuj się z pomocą techniczną za pośrednictwem zgłoszenia, odpowiadając na 3 zadane pytania. <br>
 >> Przejdź do [etapu 3](#step3) przewodnika.
 >>
 >> ![Kolumna status Spam w zakładce Konta e-mail Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
->>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `MX Plan`{.action}.
->> 1. Wybierz odpowiednią domenę.
 >>
 >> Przejdź do zakładki `Konta e-mail`{.action} Twojej platformy. Jeśli w kolumnie "status" po prawej stronie danego adresu e-mail widnieje "Spam", kliknij tę pozycję, a następnie `Odpowiedz na zgłoszenie`{.action}. Odblokowanie adresu e-mail nie odbywa się automatycznie. Skontaktuj się z pomocą techniczną za pośrednictwem zgłoszenia, odpowiadając na 3 zadane pytania.<br>
 >> Przejdź do [etapu 3](#step3) przewodnika.
@@ -104,11 +115,6 @@ Wybierz odpowiednią usługę e-mail w poniższych zakładkach:
 > **MX Plan - RoundCube**
 >>
 >> Jeśli blokada dotyczy adresu e-mail MX Plan z pocztą webmail **RoundCube**, nie ma zgłoszenia do pomocy technicznej. Przed wykonaniem poniższych instrukcji zapoznaj się z [etapem 1](#step1) tego przewodnika.
->>
->> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
->> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `MX Plan`{.action}.
->> 1. Wybierz odpowiednią domenę.
 >>
 >> Przejdź do zakładki `E-maile`{.action} Twojej platformy. Jeśli w kolumnie "Zablokowane ze względu na SPAM" widnieje "Tak", kliknij tę pozycję, a następnie `Zmień hasło`{.action}. Twój adres e-mail jest teraz odblokowany i nie musisz wykonywać [etapu 3](#step3).
 >>
