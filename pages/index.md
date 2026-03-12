@@ -2018,7 +2018,6 @@
                     + [Activer et accéder à son adresse xDSL E-mail](web_cloud/internet/internet_access/comment_gerer_mes_adresses_e_mails)
                 + [Advanced setup](web-cloud-internet-internet-access-configuration-advanced-setup)
                     + [Comment activer le mode bridge sur un modem Zyxel](web_cloud/internet/internet_access/comment_activer_bridge_zyxel)
-                    + [Comment activer un lien de secours LTE](web_cloud/internet/internet_access/comment_activer_backup_LTE)
                     + [Comment réutiliser le WiFi d'un modem Zyxel avec OverTheBox](web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb)
                     + [Activer ou désactiver l'envoi d'e-mails depuis le SMTP OVHcloud](web_cloud/internet/internet_access/comment_activer_envoi_mail)
                     + [Gérer et configurer un bloc IP /29](web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29)
