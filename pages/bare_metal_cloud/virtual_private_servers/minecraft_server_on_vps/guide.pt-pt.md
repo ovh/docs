@@ -34,7 +34,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 ### Etapa 1: preparar o servidor
 
 O primeiro passo consiste em configurar o seu VPS para uma instalação de Minecraft.
-<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir da sua [Área de Cliente OVHcloud](/links/manager), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps), se necessário.
+<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir do seu [Área de Cliente OVHcloud](/links/manager), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps), se necessário.
 
 Depois de instalar o sistema operativo, ligue-se ao VPS em SSH, conforme descrito no manual "[VPS - primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
 
@@ -133,7 +133,7 @@ A janela ativa do seu terminal muda automaticamente para uma nova sessão `shell
 
 Para se desassociar do `shell` (e mantê-lo durante a execução), prima `Ctrl`{.action}, depois `a`{.action}, depois `d`{.action} no seu teclado.
 
-Para passar de um `shell` para outro, utilize o seguinte comando:
+Para passar de uma `nome_shell` chaminé para outra, utilize o seguinte comando:
 
 ```sh
 ~/server$ screen -x nome_shell
@@ -141,30 +141,30 @@ Para passar de um `shell` para outro, utilize o seguinte comando:
 
 Também pode pressionar o `Ctrl`{.action}, depois `a`{.action} e depois `n`{.action} no teclado.
 
-Na shell `minecraft1` anteriormente criada, lance o servidor Minecraft com o seguinte comando. (Utilize `ls` para verificar o nome do ficheiro caso este seja diferente).
+Na `shell` anteriormente criada "minecraft1", lançar o servidor Minecraft com o seguinte comando. (Utilize `ls` para verificar o nome do ficheiro caso este seja diferente). 
 
 ```sh
 ~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
 ```
 
-- `Xmx1024M`: Isto configura o servidor para iniciar com 1024 MB ou 1 GB de RAM. Este limite pode ser aumentado se quiser que o seu servidor inicie com mais RAM.
+- `Xmx1024M`: Isto configura o servidor para iniciar com 1024 MB ou 1 GB de RAM. Este limite pode ser aumentado se você quiser que seu servidor inicie com mais RAM.
 - `Xms1024M`: Isto permite que o servidor utilize um máximo de 1024M de RAM. Pode aumentar este limite se quiser que o seu servidor funcione com mais RAM, para acomodar mais jogadores ou se sentir que o seu servidor está a funcionar lentamente.
-- `jar`: Especifica o ficheiro jar do servidor a ser executado.
-- `nogui`: Indica ao servidor para não executar uma GUI.
+- `jar`: Especifica o arquivo jar do servidor a ser executado.
+- `nogui`: Diz para o servidor não rodar uma GUI.
 
-Também pode utilizar o comando abaixo:
+Você também pode usar o comando abaixo:
 
 ```sh
 ~/server$ java -jar server.jar
 ```
 
-Uma vez que o servidor estiver operacional, obtém o seguinte resultado:
+Uma vez que o servidor esteja funcionando, você terá o seguinte resultado:
 
 ```console
 [14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
-Para parar o seu servidor, insira o comando `stop`.
+Para parar o seu servidor, insira o comando de `stop`.
 
 ### Etapa 3: ligar-se ao servidor
 

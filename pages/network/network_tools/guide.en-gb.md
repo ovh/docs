@@ -48,9 +48,9 @@ The last tab, **Proofs**, allows you to select the data centre to test via a dro
 
 ### Smokeping <a name="smokeping"></a>
 
-[Smokeping](https://smokeping.ovh.net/smokeping) is a monitoring tool to check ICMP reachability, latency, and change in traffic path (traceroute) for external AS/Internal OVHcloud data centres, through FPing, using a sample IP/IPv6 address (added manually).
+[Smokeping](https://smokeping.ovh.net/smokeping) is a monitoring tool to check ICMP reachability, latency, and change in traffic path (traceroute) for external AS/Internal OVH data centres, through FPing, using a sample IP/IPv6 address (added manually).
 
-Smokeping Probe servers are installed in each OVHcloud data centre to collect logs.
+Smokeping Probe servers are installed in each OVH data centre to collect logs.
 
 Once you access the Smokeping tool, you will see a top navigation menu (where a data centre can be selected) and a side navigation menu with the following options:
 

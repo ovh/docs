@@ -17,9 +17,9 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 
 > [!warning]
-> Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e descrive le azioni da effettuare in un contesto specifico. Potrai adattare le istruzioni in base alla tua situazione.
+>Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e descrive le azioni da effettuare in un contesto specifico. Potrai adattare le istruzioni in base alla tua situazione.
 >
-> In caso di difficoltà nell'applicazione di queste istruzioni, ti consigliamo di rivolgerti a un professionista specializzato. Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
+>In caso di difficoltà nell'applicazione di queste istruzioni, ti consigliamo di rivolgerti a un professionista specializzato. Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
 >
 
 ## Prerequisiti
@@ -71,7 +71,7 @@ Per evitare di creare vulnerabilità nel tuo sistema, crea un utente chiamato "m
 $ sudo adduser minecraft --disabled-password
 ```
 
-Ti vengono richieste diverse informazioni; è sufficiente premere il tasto `Entrata`{.action} per confermarli.
+Ti vengono richieste diverse informazioni è sufficiente premere il tasto `Entrata`{.action} per confermarli.
 
 L'utente è stato creato. Ti ricordiamo che per questo utente non è stata specificata alcuna password. È normale perché l'account è accessibile solo quando è già connesso via SSH con il tuo account utente.
 
@@ -130,7 +130,7 @@ Per prima cosa, creeremo una nuova `shell` chiamata `minecraft1`:
 ~/server$ screen -S minecraft1
 ```
 
-La finestra attiva del tuo terminale cambia e passi automaticamente a una nuova sessione `shell`. Se necessario, è possibile creare altre `shell` e visualizzarle via questo comando:
+La finestra attiva del tuo terminale cambia automaticamente e trasferisci automaticamente su una nuova sessione `shell`. Se necessario, è possibile creare altre `shell` e visualizzarle via questo comando:
 
 ```sh
 ~/server$ screen -ls
@@ -146,7 +146,7 @@ Per passare da un `shell` a un altro, utilizza il seguente comando:
 
 Premi anche `Ctrl`{.action}, poi `a`{.action}, poi `n`{.action} sulla tastiera.
 
-Nella shell `minecraft1` creata precedentemente, avvia il server Minecraft con il comando seguente. (Utilizza `ls` per verificare il nome del file nel caso in cui fosse diverso).
+Nella shell `minecraft1` creata precedentemente, avvia il server Minecraft con il comando seguente. (Utilizza `ls` strumenti per verificare il nome del file nel caso in cui fosse diverso).
 
 ```sh
 ~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
@@ -173,7 +173,7 @@ Per arrestare il server, inserisci il comando `stop`.
 
 ### Step 3: connettersi al server
 
-L'istanza di server è attiva. Per giocare al gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/).
+L'istanza di server è attiva Per giocare a gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/).
 
 Installa e avvia il client per il tuo sistema operativo e collegati.
 
@@ -183,16 +183,16 @@ Nella schermata successiva inserisci il nome del server nel campo `Server Name` 
 
 ![Informazioni sul server](images/minecraft_server_login.png){.thumbnail}
 
-Nessuna porta da inserire di default.
+Nessuna porta da inserire di default
 
 ### Conclusione
 
 Il tuo server Vanilla Minecraft è installato sul tuo VPS.
 
-Questa guida è valida anche per un [server dedicato OVHcloud](/links/bare-metal/bare-metal) o un'istanza [Public Cloud](/links/public-cloud/compute). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
+Questa guida è valida anche per un [server dedicato OVHcloud](/links/bare-metal/bare-metal) o un'istanza [Public Cloud](/links/public-cloud/public-cloud). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
 
 ## Per saperne di più <a name="gofurther"></a>
 
 Per aggiungere add-ons, mods e configurare più finemente il tuo server Minecraft, consulta la documentazione ufficiale: <https://help.mojang.com/>.
 
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

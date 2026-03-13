@@ -6,7 +6,7 @@ updated: 2024-12-20
 
 ## Objectif
 
-Votre VPS est équipé d'un pare-feu. Les pare-feux créent une barrière entre un réseau de confiance et un réseau non fiable.
+Votre VPS est équipé d'un pare-feu. Les pare-feux créent une barrière entre un réseau de confiance et un réseau non fiable. 
 Les pare-feux fonctionnent en définissant des règles qui régissent le trafic autorisé et celui qui est bloqué. Le pare-feu utilitaire développé pour les systèmes Linux est Iptables.
 
 **Apprenez à sécuriser votre serveur grâce à Iptables.**
@@ -29,7 +29,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 >
 > Ce guide indique les commandes pour une distribution Ubuntu Server.
 >
-> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, consultez leur documentation officielle.
+> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.
 >
 > La plupart des règles décrites dans ce guide supposent que votre iptables est configuré par défaut pour DROP le trafic entrant, et que vous autorisez sélectivement le trafic entrant. Si vous avez l'intention de mettre en place un autre type de configuration, nous vous recommandons de consulter la documentation complémentaire.
 >
@@ -45,7 +45,7 @@ Consultez notre guide sur la [sécurisation d'un VPS](/pages/bare_metal_cloud/vi
 > [!primary]
 >
 > Il existe deux versions différentes d'iptables, pour IPv4 et IPv6. Les règles que nous couvrons dans ce tutoriel Linux Iptables concernent IPv4.
-> Pour configurer Iptables pour IPv6, vous devez utiliser l'utilitaire ip6tables. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment.
+> Pour configurer Iptables pour IPv6, vous devez utiliser l'utilitaire iptables6. Ces deux protocoles différents ne fonctionnent pas ensemble et doivent être configurés indépendamment.
 >
 
 Iptables est installé par défaut sur la plupart des systèmes Linux. Pour confirmer que Iptables est installé, utilisez la commande suivante :
@@ -101,7 +101,7 @@ Vous devez définir cette règle pour permettre aux applications de communiquer 
 
 ### Etape 5 : autoriser le trafic sur des ports spécifiques <a name="step5"></a>
 
-Ces règles autorisent le trafic sur les différents ports que vous spécifiez à l'aide des commandes répertoriées ci-dessous.
+Ces règles autorisent le trafic sur les différents ports que vous spécifiez à l'aide des commandes répertoriées ci-dessous. 
 Un port est un point de terminaison de communication spécifié pour un type spécifique de données.
 
 Pour autoriser le trafic Web HTTP, saisissez la commande suivante :
@@ -126,13 +126,13 @@ Les options fonctionnent ainsi :
 
 - -p : Vérifie le protocole spécifié (tcp).
 - --dport : Spécifie le port de destination.
-- -j jump : Effectue l'action.
+- -j jump : Effectue l'action 
 
 > [!warning]
 > En cas de perte d'accès à votre serveur, vous pouvez toujours utiliser l'outil KVM/IPMI pour y accéder à nouveau et modifier votre configuration ou supprimer vos règles.
 >
-> Pour plus d'informations sur l'accès à cet outil, consultez [ce guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
->
+> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).  
+> 
 
 ### Etape 6 : contrôler le trafic par adresse IP
 
@@ -144,7 +144,7 @@ sudo iptables -A INPUT -s votre_adresse_IP_à_autoriser -j ACCEPT
 
 Remplacez l'adresse IP dans la commande par l'adresse IP que vous souhaitez autoriser.
 
-Vous pouvez également bloquer le trafic à partir d'une adresse IP :
+Vous pouvez également bloquer le trafic à partir d'une adresse IP 
 
 ```bash
 sudo iptables -A INPUT -s votre_adresse_IP_à_bloquer -j DROP
@@ -176,7 +176,7 @@ L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par
 
 > [!warning]
 > 
->Attention, si vous tapez cette commande avant d'effectuer [l'étape 5](#step5), vous bloquerez tous les accès y compris celui en cours, l'accès SSH. Ceci est particulièrement problématique sur une machine sur laquelle vous accédez à distance.
+>Attention, si vous tapez cette commande avant d'effectuer [l'étape 5](#step5), vous bloquerez tous les accès y compris celui en cours, l'accès SSH. Ceci est particulièrement problématique sur une machine sur laquelle vous accédez à distance. 
 >
 
 ### Etape 8 : supprimer une règle
@@ -204,18 +204,18 @@ Remplacez `Number` par le numéro de ligne de règle que vous souhaitez supprime
 
 ### Etape 9 : enregistrer vos modifications
 
-Lors du redémarrage du système, Iptables ne conserve pas les règles que vous aviez créées.
+Lors du redémarrage du système, Iptables ne conserve pas les règles que vous aviez créées. 
 Chaque fois que vous configurez Iptables sous Linux, toutes les modifications que vous apportez s'appliquent uniquement jusqu'au prochain redémarrage.
 
 Pour enregistrer les règles dans les systèmes basés sur Ubuntu, saisissez :
-
+  
 ```bash
 sudo -s iptables-save -c
 ```
 
 Au prochain démarrage de votre système, Iptables rechargera automatiquement les règles du pare-feu.
 
-Vous pouvez dorénavant configurer des règles de pare-feu Iptables de base pour votre serveur Linux.
+Vous pouvez dorénavant configurer des règles de pare-feu Iptables de base pour votre serveur Linux. 
 N'hésitez pas à expérimenter car vous pouvez toujours supprimer les règles dont vous n'avez pas besoin, ou vider toutes les règles et recommencer.
 
 ## Aller plus loin

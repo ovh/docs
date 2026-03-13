@@ -1,5 +1,5 @@
 ---
-title: "Comment analyser votre réseau via les outils OVHcloud"
+title: " Comment analyser votre réseau via les outils OVHcloud"
 excerpt: "Découvrez comment utiliser les outils d'analyse de connectivité réseau disponibles pour les clients OVHcloud"
 updated: 2025-06-25
 ---
@@ -48,7 +48,7 @@ Le dernier onglet, **Proofs**, vous permet de choisir le datacentre à tester vi
 
 ### Smokeping <a name="smokeping"></a>
 
-[Smokeping](https://smokeping.ovh.net/smokeping) est un outil de surveillance permettant de vérifier la réponse aux requêtes ICMP (c'est-à-dire la réponse au ping), la latence et les changements de routage (traceroute) vers des datacentres externes (AS) ou internes à OVHcloud, à l'aide de FPing et d'une adresse IPv4 ou IPv6 ajoutée manuellement.
+[Smokeping](https://smokeping.ovh.net/smokeping) est un outil de surveillance permettant de vérifier la réponse aux requêtes ICMP (c'est à dire la réponse au ping), la latence et les changements de routage (traceroute) vers des datacentres externes (AS) ou internes à OVHcloud, à l'aide de FPing et d'une adresse IPv4 ou IPv6 ajoutée manuellement.
 
 Des serveurs Smokeping Probe sont installés dans chaque datacentre OVHcloud pour collecter les logs.
 
@@ -63,7 +63,7 @@ Depuis l'interface de Smokeping, vous pouvez sélectionner un datacentre à l’
 
 ![smokeping](images/networking_tools01_.png){.thumbnail}
 
-Pour afficher les résultats de la latence pour une région entière, cliquez sur la zone concernée, par exemple *3. EMEA*, puis sur le nom de la région. Vous pouvez afficher la perte de latence/ping pour l'ASN surveillé dans cette région spécifique.
+Pour afficher les résultats de la latence pour une région entière, cliquez sur la zone concercnée, par exemple *3. EMEA*, puis sur le nom de la région. Vous pouvez afficher la perte de latence/ping pour l'ASN surveillé dans cette région spécifique.
 
 ![Affichage latence](images/networking_tools02_.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la st
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
-Pour plus d'informations et de tutoriels, veuillez consulter nos autres [guides d’assistance sur la mise en réseau et la sécurité](/products/network) ou explorer les [guides des autres produits et services OVHcloud](/links/documentation).
+Pour plus d'informations et de tutoriels, veuillez consulter nos autres [guides d’assistance sur la mise en réseau et la sécurité](/products/network) ou explorer les [guides for other OVHcloud products and services](/links/documentation).
 
 ## Aller plus loin
 

@@ -34,7 +34,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 ### Paso 1: Preparar el servidor
 
 En primer lugar, configure su VPS para una instalación de Minecraft.
-<br>Se recomienda pedir un nuevo VPS o reinstalar uno existente desde su [área de cliente de OVHcloud](/links/manager), utilizando la última versión disponible de Ubuntu o Debian. Si es necesario, consulte nuestra guía "[Primeros pasos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)".
+<br>Se recomienda pedir un nuevo VPS o reinstalar uno existente desde su [Panel de configuración de OVHcloud](/links/manager), utilizando la última versión disponible de Ubuntu o Debian. Si es necesario, consulte nuestra guía "[Primeros pasos](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps)". 
 
 Una vez instalado el sistema operativo, conéctese al VPS por SSH como se describe en la guía "[Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)".
 
@@ -66,7 +66,7 @@ Para evitar crear vulnerabilidades en su sistema, cree un usuario llamado "minec
 $ sudo adduser minecraft --disabled-password
 ```
 
-Se le pedirá que facilite varios datos. solo tiene que pulsar la tecla `Entrar`{.action} para validarlas.
+Se le pedirá que facilite varios datos. sólo tiene que pulsar la tecla `Entrar`{.action} para validarlas.
 
 El usuario se creará ahora. Tenga en cuenta que no se ha especificado ninguna contraseña para este usuario. Esto es normal, ya que la cuenta solo está accesible cuando ya está conectada por SSH con su propia cuenta de usuario.
 
@@ -91,7 +91,7 @@ $ mkdir ~/server && cd ~/server
 
 > [!primary]
 >
-> Un servidor "Vanilla" es una instancia sin ningún tipo de complementos o plugins. Experimentará el juego tal y como lo crearon los desarrolladores.
+> Un servidor "Vanilla" es una instancia sin ningún tipo de complementos o plugins. Experimentarás el juego tal y como lo crearon los desarrolladores.
 >
 
 Primero deberá copiar y pegar el enlace de descarga para el programa servidor.
@@ -99,7 +99,7 @@ Primero deberá copiar y pegar el enlace de descarga para el programa servidor.
 
 ![Descarga del servidor](images/jar_file_download.png){.thumbnail}
 
-En su terminal de línea de comandos, compruebe que siga en la carpeta `server` y utilice `wget` para descargar el archivo.
+En su terminal de línea de comandos, compruebe que siga en la carpeta `servidor` y utilice `wget` para descargar el archivo.
 <br>Sustituya `el_enlace_de_descarga` por la URL real que haya copiado anteriormente.
 
 ```sh
@@ -141,18 +141,18 @@ Para pasar de un `shell` a otro, utilice el siguiente comando:
 
 También puede pulsar `Ctrl`{.action}, a continuación `a`{.action} y, a continuación, `n`{.action}, en su teclado.
 
-En el intérprete de órdenes `minecraft1` creado anteriormente, ejecute el servidor Minecraft con el siguiente comando. (Utilice `ls` para comprobar el nombre del archivo en caso de que sea diferente).
+En el intérprete de órdenes `minecraft1` creado anteriormente, ejecute el servidor Minecraft con el siguiente comando. (Utilice `ls` archivos para comprobar el nombre del archivo en caso de que sea diferente).
 
 ```sh
 ~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
 ```
 
 - `Xmx1024M`: Configura el servidor para que arranque con 1024 MB o 1 GB de RAM. Este límite puede aumentarse si se desea que el servidor arranque con más RAM.
-- `Xms1024M`: Esto permite al servidor utilizar un máximo de 1024M de RAM. Puede aumentar este límite si quiere que su servidor funcione con más RAM, para acomodar a más jugadores o si siente que su servidor funciona lentamente.
+- `Xms1024M`: Esto permite al servidor utilizar un máximo de 1024M de RAM. Puedes aumentar este límite si quieres que tu servidor funcione con más RAM, para acomodar a más jugadores o si sientes que tu servidor funciona lentamente.
 - `jar`: Especifica el archivo jar del servidor a ejecutar.
 - `nogui`: Indica al servidor que no ejecute una GUI.
 
-También puede usar el siguiente comando:
+También puedes usar el siguiente comando:
 
 ```sh
 ~/server$ java -jar server.jar
@@ -168,7 +168,7 @@ Para detener el servidor, introduzca el comando `stop`.
 
 ### Paso 3: Conectarse al servidor
 
-La instancia de servidor ya está operativa. Para jugar al juego, descargue el cliente Minecraft desde [el sitio web oficial](https://www.minecraft.net/).
+La instancia de servidor ya está operativa. Para jugar al juego, descargue al cliente Minecraft desde [el sitio web oficial](https://www.minecraft.net/).
 
 Instale y ejecute el cliente para su sistema operativo y conéctese.
 

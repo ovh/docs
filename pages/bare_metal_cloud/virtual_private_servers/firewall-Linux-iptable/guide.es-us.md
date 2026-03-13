@@ -29,7 +29,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 >
 > Esta guía explica los comandos para una distribución Ubuntu Server.
 >
-> Esta guía es genérica. Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.
+> Esta guía es genérica. Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
 >
 > La mayoría de las reglas descritas en esta guía asumen que su iptables está configurado por defecto para RECHAZAR (DROP) el tráfico entrante, y que usted permite selectivamente el tráfico entrante. Si tiene intención de establecer otro tipo de configuración, le recomendamos que consulte la documentación adicional.
 >
@@ -45,7 +45,7 @@ Para más información, consulte nuestra guía sobre la [seguridad de un VPS](/p
 > [!primary]
 >
 > Existen dos versiones diferentes de iptables para IPv4 e IPv6. Las reglas que cubrimos en este tutorial Linux iptables se refieren a IPv4.
-> Para configurar iptables para IPv6, debe utilizar la utilidad ip6tables. Estos dos protocolos diferentes no funcionan juntos y deben configurarse de forma independiente.
+> Para configurar iptables para IPv6, debe utilizar la utilidad iptables6. Estos dos protocolos diferentes no funcionan juntos y deben configurarse de forma independiente.
 >
 
 iptables instalados por defecto en la mayoría de sistemas Linux. Para confirmar que iptables está instalado, utilice el siguiente comando:
@@ -54,7 +54,7 @@ iptables instalados por defecto en la mayoría de sistemas Linux. Para confirmar
 sudo apt-get install iptables
 ```
 
-El ejemplo de salida en Ubuntu confirma que la última versión de iptables ya está presente:
+El ejemplo de salida en Ubuntu confirma que la última versión de iptables ya está presente :
 
 ![version-iptables](images/step2-version-iptables.PNG){.thumbnail}
 
@@ -64,14 +64,14 @@ Por lo general, el comando iptables es el siguiente:
 sudo iptables [option] CHAIN_rule [-j target]
 ```
 
-A continuación le ofrecemos una lista de algunas de las opciones de iptables habituales:
+A continuación le ofrecemos una lista de algunas de las opciones de iftables habituales:
 
 - -A --append: Añade una regla a una cadena (al final).
 - -C --check: Busca una regla que coincida con los requerimientos de la cadena.
 - -D --delete: Borra las reglas especificadas de una cadena.
 - -F --flush: Elimina todas las reglas.
 - -I --insert: Añade una regla a una cadena en una posición dada.
-- -L --list: Muestra todas las reglas de una cadena.
+- -L --list : Muestra todas las reglas de una cadena.
 - -N --new-chain: Crea una nueva cadena.
 - -v --verbose: Muestra más información cuando se usa una opción de lista.
 - -X --delete-chain: Elimina la cadena proporcionada.
@@ -127,13 +127,13 @@ Las opciones funcionan de la siguiente forma:
 
 - -p: Comprueba el protocolo especificado (tcp).
 - --dport: Especifica el puerto de destino.
-- -j jump: Realiza la acción.
+- -j jump: Realiza la acción 
 
 > [!warning]
 > En caso de perder el acceso a su servidor, puede seguir utilizando la herramienta KVM/IPMI para acceder a él de nuevo y modificar su configuración o eliminar las reglas.
 >
 > Para más información sobre el acceso a esta herramienta, consulte [esta guía](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
->
+> 
 
 ### 6. Controlar el tráfico por dirección IP
 
@@ -145,7 +145,7 @@ sudo iptables -A INPUT -s su_dirección_IP_a_autorizar -j ACCEPT
 
 Sustituya la dirección IP en el pedido por la dirección IP que quiera autorizar.
 
-También puede bloquear el tráfico desde una dirección IP:
+También puede bloquear el tráfico desde una dirección IP 
 
 ```bash
 sudo iptables -A INPUT -s su_dirección_IP_a_bloquear -j DROP
@@ -177,7 +177,7 @@ La opción -A añade una nueva regla a la cadena. Si una conexión pasa por puer
 
 > [!warning]
 > 
->Atención: Si introduce este comando antes de realizar [el paso 5](#step5), bloqueará todos los accesos, incluido el actual, el acceso SSH. Esto es especialmente problemático en una máquina a la que se accede a distancia.
+>Atención: Si introduce este comando antes de realizar [el paso 5](#step5), bloqueará todos los accesos, incluido el actual, el acceso SSH. Esto es especialmente problemático en una máquina a la que se accede a distancia. 
 >
 
 ### 8. Eliminar una regla
@@ -222,4 +222,4 @@ No dude en experimentar, ya que siempre puede borrar las reglas que no necesita,
 
 ## Más información
 
-Interactúe con [nuestra comunidad de usuarios](/links/community).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
