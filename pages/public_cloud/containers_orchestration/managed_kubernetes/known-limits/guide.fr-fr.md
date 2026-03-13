@@ -16,7 +16,7 @@ updated: 2026-03-13
    margin-bottom: 5px;
  }
  pre.console code {
-   b   font-family: monospace !important;
+   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -34,11 +34,11 @@ updated: 2026-03-13
 
 Nous avons testé nos plans du service OVHcloud Managed Kubernetes avec un nombre maximum de nœuds. Bien que des configurations plus élevées puissent fonctionner et qu'il n'y ait pas de limites strictes, nous recommandons de rester en dessous de ces limites pour une stabilité optimale.
 
-Gardez à l'esprit que l'impact sur le plan de contrôle n'est pas uniquement déterminé par le nombre de nœuds. Ce qui définit réellement un « grand cluster » dépend de la combinaison des ressources déployées, des pods, des ressources personnalisées et d'autres objets qui contribuent tous à la charge du plan de contrôle. Un cluster avec moins de nœuds mais une utilisation intensive des ressources peut stresser davantage le plan de contrôle qu'un cluster avec de nombreux nœuds exécutant des charges de travail minimales. Dans de telles configurations, il est recommandé de passer au plan Standard afin de bénéficier de ressources de plan de contrôle plus élevées et dédiées.
+Gardez à l'esprit que l'impact sur le plan de contrôle n'est pas uniquement déterminé par le nombre de nœuds. Ce qui définit réellement un « grand cluster » dépend de la combinaison des ressources déployées, des pods, des ressources personnalisées et d'autres objets qui contribuent tous à la charge du plan de contrôle. Un cluster avec moins de nœuds mais une utilisation intensive des ressources peut stresser davantage le plan de contrôle qu'un cluster avec de nombreux nœuds exécutant des charges de travail minimales. Dans de telles configurations, il est recommandé de passer au plan Standard pour bénéficier de ressources de plan de contrôle plus élevées et dédiées.
 
-Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, veuillez noter que l'équipe OVHcloud déploie certains composants de gestion sur les nœuds (CNI, agents, Konnectivity, ...), qui sont considérés comme « obligatoires » pour le cluster et affecteront la capacité du nombre de pods par nœud pour les charges de travail des utilisateurs. Pour la même raison, ces composants de gestion étant obligatoires et nécessitant une petite quantité de ressources de nœud, en cas de surcharge du nœud, vous pourriez retrouver certains de vos pods dans l'état `Terminated` avec `Reason: OOMKilled` et `Exit Code: 137`. C'est pourquoi il est important de gérer proprement les ressources de votre charge de travail afin d'éviter la surcharge des nœuds et les instabilités.
+Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, l'équipe OVHcloud déploie certains composants de gestion sur les nœuds (CNI, agents, Konnectivity, ...), qui sont considérés comme « obligatoires » pour le cluster et affecteront la capacité du nombre de pods par nœud pour les charges de travail des utilisateurs. Pour la même raison, ces composants de gestion étant obligatoires et nécessitant une petite quantité de ressources de nœud, en cas de surcharge du nœud, vous pourriez retrouver certains de vos pods dans l'état `Terminated` avec `Reason: OOMKilled` et `Exit Code: 137`. C'est pourquoi il est important de gérer proprement les ressources de votre charge de travail pour éviter la surcharge des nœuds et les instabilités.
 
-En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux nœuds. Toutes les mises à jour du système d'exploitation et des composants sont gérées par OVHcloud via des correctifs et des mises à jour mineures. Si vous avez besoin d'effectuer un **débogage au niveau du nœud**, vous pouvez utiliser les outils natifs Kubernetes avec [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node) pour inspecter ou diagnostiquer un nœud sans nécessiter d'accès SSH direct.
+En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux nœuds. Toutes les mises à jour du système d'exploitation et des composants sont gérées par OVHcloud via des correctifs et des mises à jour mineures. Pour effectuer un **débogage au niveau du nœud**, vous pouvez utiliser les outils natifs Kubernetes avec [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node) pour inspecter ou diagnostiquer un nœud sans nécessiter d'accès SSH direct.
 
 ## Disponibilité régionale par plan
 
@@ -62,12 +62,12 @@ Les nœuds de travail (ajoutés manuellement ou via le Cluster Autoscaler) sont 
 > Les nœuds de travail GPU (flavors t1 et t2) peuvent prendre plus d'une heure pour atteindre un état prêt.
 >
 
-Si un incident est détecté par le monitoring OVHcloud, dans le cadre de l'auto-réparation, les nœuds peuvent être entièrement réinstallés après avoir été dans un état 'NotReady' pendant plus de 10 minutes.
+Si un incident est détecté par le monitoring OVHcloud, dans le cadre de l'auto-réparation, les nœuds peuvent être entièrement réinstallés après avoir été dans un état `NotReady` pendant plus de 10 minutes.
 
-## Persistance des données & Volumes persistants
+## Persistance des données & volumes persistants
 
-Pour éviter la perte de données en cas de panne de nœud, de correctif ou de mise à jour, il est recommandé d'enregistrer vos données sur des Volumes persistants (PV) basés sur des classes de stockage persistant (comme Block ou File Storage), et non directement sur les nœuds (y compris les disques NVMe supplémentaires).
-Suivez notre [guide sur la configuration et la gestion des Volumes persistants sur OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) pour plus d'informations.
+Pour éviter la perte de données en cas de panne de nœud, de correctif ou de mise à jour, enregistrez vos données sur des volumes persistants (PV) basés sur des classes de stockage persistant (comme Block ou File Storage), et non directement sur les nœuds (y compris les disques NVMe supplémentaires).
+Suivez notre [guide sur la configuration et la gestion des volumes persistants sur OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume) pour plus d'informations.
 
 Par défaut, OVHcloud fournit des [classes de stockage](https://github.com/ovh/docs/blob/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume/guide.en-gb.md#storage-classes) basées sur la solution de stockage en bloc Cinder via Cinder CSI.
 Un nœud de travail peut avoir un maximum de 100 volumes persistants Cinder attachés, et un volume persistant Cinder ne peut être attaché qu'à un seul nœud de travail.
@@ -76,7 +76,7 @@ Vous pouvez manuellement [configurer des volumes persistants multi-attach avec N
 
 ### Déploiements sur plusieurs zones de disponibilité
 
-Les clusters MKS déployés sur des régions avec 3 zones de disponibilité peuvent utiliser des Volumes persistants Cinder provisionnés à l'aide de **classes de stockage spécifiques à la zone** :
+Les clusters MKS déployés sur des régions avec 3 zones de disponibilité peuvent utiliser des volumes persistants Cinder provisionnés à l'aide de **classes de stockage spécifiques à la zone** :
 
 - `csi-cinder-high-speed`
 - `csi-cinder-high-speed-gen2`
@@ -97,7 +97,7 @@ Si vous essayez de réduire la taille de stockage, vous obtiendrez un message du
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
 
-Pour plus de détails, veuillez consulter la [documentation sur le redimensionnement des volumes persistants](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
+Pour plus de détails, consultez la [documentation sur le redimensionnement des volumes persistants](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes).
 
 ### Volumes persistants chiffrés LUKS
 
@@ -130,7 +130,7 @@ Les ressources du service Kubernetes managé comprenant les nœuds, les volumes 
 
 Veuillez éviter de les manipuler « manuellement » (modifier les ports laissés ouverts, renommer, supprimer, redimensionner des volumes, etc.), car vous pourriez les endommager. Dans le cadre de notre processus d'auto-réparation, toute suppression ou modification peut entraîner la création ou la duplication d'une nouvelle ressource.
 
-Par défaut, il existe un quota de 20 clusters de plan 'Free' Managed Kubernetes par projet (également nommé 'tenant' OpenStack).
+Par défaut, il existe un quota de 20 clusters de plan `Free` Managed Kubernetes par projet (également nommé `tenant` OpenStack).
 
 Les quotas des clusters MKS reposent sur les quotas de votre projet. Si nécessaire, consultez [cette documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour augmenter votre quota.
 
@@ -184,7 +184,7 @@ Pour assurer le bon fonctionnement de votre cluster Kubernetes Managé OVHcloud,
 
 #### À propos des groupes de sécurité OpenStack
 
-Dans le cas où vous souhaitez appliquer des groupes de sécurité OpenStack à vos nœuds, il est obligatoire d'ajouter les ports ci-dessus dans un jeu de règles concernant le CIDR `0.0.0.0/0`.
+Si vous souhaitez appliquer des groupes de sécurité OpenStack à vos nœuds, il est obligatoire d'ajouter les ports ci-dessus dans un jeu de règles concernant le CIDR `0.0.0.0/0`.
 
 > [!warning]
 > Si vous supprimez les règles par défaut acceptant toutes les entrées et sorties lors de la création d'un nouveau groupe de sécurité, assurez-vous d'autoriser les ports nécessaires à votre application ainsi que les ports obligatoires mentionnés ci-dessus.
@@ -200,7 +200,7 @@ Dans le cas où vous souhaitez appliquer des groupes de sécurité OpenStack à 
 >
 > Cela vous permet de faire confiance au trafic interne entre les pods et les services au sein du cluster.
 
-Pour plus de détails, veuillez consulter la [documentation sur la création et la configuration d'un groupe de sécurité dans Horizon](/pages/public_cloud/compute/setup_security_group).
+Pour plus de détails, consultez la [documentation sur la création et la configuration d'un groupe de sécurité dans Horizon](/pages/public_cloud/compute/setup_security_group).
 
 ### Plan Standard
 
@@ -223,7 +223,7 @@ openstack security group rule list default
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
 ```
 
-Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leur configuration "par défaut" ou les nœuds pourraient être déconnectés du cluster.
+Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leur configuration « par défaut » ou les nœuds pourraient être déconnectés du cluster.
 
 ## Réseaux privés
 
@@ -252,7 +252,7 @@ Les sous-réseaux suivants peuvent générer certains comportements incohérents
 
 > [!primary]
 >
-> Ces sous-réseaux doivent être évités dans votre réseau privé afin d'éviter tout problème de mise en réseau.
+> Ces sous-réseaux doivent être évités dans votre réseau privé pour éviter tout problème de mise en réseau.
 >
 
 Pour éviter les conflits réseau, il est recommandé de **maintenir le service DHCP en fonctionnement** dans votre réseau privé.
@@ -289,4 +289,4 @@ La commande `kubectl get componentstatus` signale que le planificateur, le gesti
 
 - Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services de vous aider dans le cadre de votre projet spécifique.
 
-- Rejoignez notre [communauté d'utilisateurs](/links/community).
+- Échangez avec notre [communauté d'utilisateurs](/links/community).

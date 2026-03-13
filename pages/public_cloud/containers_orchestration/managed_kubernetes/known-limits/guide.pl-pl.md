@@ -16,7 +16,7 @@ updated: 2026-03-13
    margin-bottom: 5px;
  }
  pre.console code {
-   b   font-family: monospace !important;
+   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }

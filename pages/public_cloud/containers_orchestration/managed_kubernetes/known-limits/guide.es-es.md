@@ -16,7 +16,7 @@ updated: 2026-03-13
    margin-bottom: 5px;
  }
  pre.console code {
-   b   font-family: monospace !important;
+   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -24,7 +24,6 @@ updated: 2026-03-13
      font-size: 0.75em;
  }
 </style>
-
 ## Nodes, pods and etcd limits
 
 |Plan | Max nodes per cluster | Max Pods per node | Max nodes per anti-affinity group | etcd max size |
