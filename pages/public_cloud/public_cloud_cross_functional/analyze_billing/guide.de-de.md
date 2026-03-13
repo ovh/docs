@@ -1,7 +1,7 @@
 ---
 title: 'Informationen zu den Abrechnungsoptionen der Public Cloud'
 excerpt: 'Erfahren Sie mehr über die verschiedenen Abrechnungsoptionen für Public Cloud-Produkte'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Ziel
@@ -172,34 +172,17 @@ Snapshots und Images von Instanzen (mit Ausnahme der von OVHcloud bereitgestellt
 
 #### Object Storage
 
-Für Object Storage werden zwei Posten in Rechnung gestellt:
+Object Storage wird auf **Pay-as-you-go**-Basis nach dem durchschnittlich pro Stunde in jeder Speicherklasse gespeicherten Volumen (GiB-Stunden) abgerechnet, mit monatlicher Rechnungsstellung. Die Speicherung ist die Hauptabrechnungskomponente — eingehender Traffic, interner OVHcloud Traffic, API-Aufrufe und öffentlicher Egress sind inklusive.
 
-- Die Speicherung der Objekte selbst, d.h. das tatsächlich verwendete Volume nach GB.
-- Ausgehender Traffic, d.h. das vom Dienst gesendete Datenvolumen, das im HTTP Body enthalten ist.
-
-> [!primary]
->
-> Der ausgehende Traffic zwischen dem Object Storage Dienst und den Instanzen wird auf die gleiche Weise berechnet wie der ausgehende Traffic, der über das Internet versendet wird.
->
-
-> [!warning]
->
-> Die Anzeige der gespeicherten Objekte über das OVHcloud Kundencenter wird ebenfalls als ausgehender Traffic gezählt.
->
-
-#### Archive
-
-Für den Archive Storage werden drei Elemente in Rechnung gestellt:
-
-- Die Archivspeicherung selbst, d.h. das tatsächlich verwendete Volumen in GB
-- Eingehender Traffic, d.h. das an den Dienst gesendete Datenvolumen, das im HTTP Body enthalten ist.
-- Ausgehender Traffic, d.h. das vom Dienst gesendete Datenvolumen, das im HTTP Body enthalten ist.
+Um die Kosten an Ihre Datenzugriffsmuster anzupassen, bieten wir mehrere S3<sup>1</sup>-kompatible Object Storage Klassen an (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Weitere Informationen zu diesen Klassen, einschließlich Anwendungsfälle, Leistung und SLAs, finden Sie in der zugehörigen Anleitung: [Die richtige Object Storage Klasse wählen](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Der ausgehende Traffic zwischen dem Archivierungsdienst und den Instanzen wird auf die gleiche Weise berechnet wie der ausgehende Traffic, der über das Internet versendet wird.
+> Für die Klassen Infrequent Access, Active Archive und Cold Archive gelten eine Mindestspeicherdauer und Abrufgebühren.
 >
 
 ## Weiterführende Informationen
+
+<sup>1</sup>: S3 ist eine Marke von Amazon Technologies, Inc. Der OVHcloud Dienst wird nicht von Amazon Technologies, Inc. gesponsert, unterstützt oder ist anderweitig mit dieser verbunden.
 
 Treten Sie unserer [User Community](/links/community) bei.
