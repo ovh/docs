@@ -1,5 +1,6 @@
 ---
 title: FAQ solutions Internet OVHcloud
+excerpt: "Retrouvez les questions les plus fréquemment posées sur les solutions OVHcloud d'accès à Internet"
 updated: 2022-10-10
 ---
 
@@ -9,7 +10,7 @@ Retrouvez ici les questions les plus fréquemment posées sur les solutions OVHc
 
 ### Quelles sont les premières étapes de l'installation de mon modem xDSL ?
 
-Dès réception de votre modem, nous vous invitons à brancher le câble qui relie la prise téléphonique au port nommé DSL. Pour le reconnaître, l'indication "DSL" est inscrite sur le port du modem. Une fois cette opération réalisée, il ne vous reste plus qu'à mettre votre modem sous tension. 
+Dès réception de votre modem, nous vous invitons à brancher le câble qui relie la prise téléphonique au port nommé DSL. Pour le reconnaître, l'indication "DSL" est inscrite sur le port du modem. Une fois cette opération réalisée, il ne vous reste plus qu'à mettre votre modem sous tension.
 
 #### Trucs et astuces :
 
@@ -29,7 +30,7 @@ Dans le cas d'une installation de la fibre FTTH, un technicien se déplace chez 
 
 ### Comment puis-je activer mes services inclus ?
 
-Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou FTTH) est opérationnel, vous pouvez procéder à l'activation des services inclus dans votre pack via votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx).
+Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou FTTH) est opérationnel, vous pouvez activer les services inclus dans votre pack via votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx).
 
 Une fois connecté, rendez-vous dans l'univers `Telecom`{.action} puis `Accès Internet`{.action}. Vous y retrouverez votre offre.
 
@@ -41,7 +42,7 @@ Pour plus d'informations, consultez le guide [Comment activer mes lignes télép
 
 Une erreur d'authentification est généralement liée à la mauvaise saisie du couple « identifiant / mot de passe ». Ces derniers vous ont été envoyés par e-mail.
 
-Si vous utilisez un modem OVHcloud, sachez que ce dernier est configuré pour se connecter automatiquement. Il vous suffit alors de réaliser une réinitialisation de votre modem afin de générer de nouveaux identifiants qui seront automatiquement pris en compte par votre modem.
+Si vous utilisez un modem OVHcloud, sachez que ce dernier est configuré pour se connecter automatiquement. Il vous suffit alors de réinitialiser votre modem pour générer de nouveaux identifiants qui seront automatiquement pris en compte par votre modem.
 
 Vous trouverez de plus amples informations en vous rendant sur le guide [Rétablir son service suite à une coupure complète ou partielle](/pages/web_cloud/internet/internet_access/interruption_de_service).
 

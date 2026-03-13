@@ -77,7 +77,7 @@ Sélectionnez votre groupe de téléphonie dans le menu de gauche puis cliquez s
 
 ![couts SVA](images/couts01.png){.thumbnail}
 
-Sur cette page sont affichés les coûts SVA liés aux appels entrants du mois en cours sur les numéros verts de votre groupe de téléphonie.
+Cette page affiche les coûts SVA liés aux appels entrants du mois en cours sur les numéros verts de votre groupe de téléphonie.
 
 #### Historique des coûts SVA
 

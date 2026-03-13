@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie SMS-ów do Stanów Zjednoczonych
-excerpt: Odkryj w jaki sposób wysyłać wiadomości SMS do Stanów Zjednoczonych
+excerpt: Dowiedz się, jak przestrzegać szczególnych zasad wysyłania wiadomości SMS do Stanów Zjednoczonych i stosować je z poziomu Panelu klienta OVHcloud
 updated: 2022-08-05
 ---
 
@@ -32,7 +32,7 @@ Wysyłanie SMS-ów do Stanów Zjednoczonych podlega szczególnym zasadom. Celem 
 
 ## W praktyce
 
-### Etap 1: zapoznanie się z ograniczeniami
+### Etap 1: Zapoznanie się z ograniczeniami
 
 W porozumieniu z organem regulacyjnym działającym w Stanach Zjednoczonych (Neustar), wysyłanie SMS-ów do tego kraju wymaga uprzedniego zatwierdzenia modelu wiadomości przez nasz zespół.
 Autoryzowane są wyłącznie wiadomości z ostrzeżeniami oraz wiadomości związane z weryfikacją dwuetapową, OVHcloud nie zaakceptuje żadnych modeli SMS-ów reklamowych. Po zatwierdzeniu Twojego modelu, wysyłka wiadomości odbywa się w taki sam sposób, jak w przypadku innych krajów.
@@ -101,7 +101,7 @@ Your security code is #CODE#, have a good day
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Etap 3: analiza rezultatu
+### Etap 3: Analiza rezultatu
 
 Po utworzeniu i zatwierdzeniu Twojego modelu wiadomości, operacja wysyłania SMS-a generuje automatyczne porównanie jego treści z Twoimi modelami. Jeśli wynik tego porównania będzie pozytywny, SMS zostaje wysłany w taki sam sposób, jak ma to miejsce w przypadku wiadomości wysyłanej do innego kraju.
 

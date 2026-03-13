@@ -1,6 +1,6 @@
 ---
 title: 'Usuarios de la API'
-excerpt: 'Descubra las funcionalidades de los usuarios de la API de SMS'
+excerpt: 'Descubra cómo crear, configurar y gestionar usuarios de la API para el envío de SMS, incluyendo permisos y restricciones'
 updated: 2022-08-05
 ---
 

@@ -1,18 +1,18 @@
 ---
-title: 'Utiliser le Cisco 8851'
-excerpt: 'Découvrez comment utiliser votre téléphone Cisco 8851'
+title: "Utiliser le Cisco 8851"
+excerpt: "Découvrez comment utiliser votre téléphone Cisco 8851"
 flag: hidden
 updated: 2018-06-28
 ---
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVH.**
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVHcloud.**
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné et installé le téléphone Cisco 8851 fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Avoir réceptionné et installé le téléphone Cisco 8851 fourni par OVHcloud.
 
 ## En pratique
 
@@ -62,7 +62,7 @@ Dès lors, patientez le temps que le nouveau destinataire décroche, puis appuye
 
 ### Permuter
 
-Lorsque deux appels sont actifs, un en cours et l'autre en attente, vous avez la possibilité de permuter d'un appel à l'autre. Ceci vous permet, par exemple, de discuter en privé avec chaque interlocuteur avant de les mettre en relation grâce à un transfert.
+Lorsque deux appels sont actifs, un en cours et l'autre en attente, vous pouvez permuter d'un appel à l'autre. Ceci vous permet, par exemple, de discuter en privé avec chaque interlocuteur avant de les mettre en relation grâce à un transfert.
 
 Pour cela, repérez la mention « Permuter » dans l'écran rétroéclairé de votre téléphone, puis appuyez sur la touche en dessous de celle-ci.
 

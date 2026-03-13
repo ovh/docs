@@ -1,6 +1,6 @@
 ---
-title: Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM
-excerpt: Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM
+title: "Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM"
+excerpt: "Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM"
 updated: 2018-03-26
 flag: hidden
 ---
@@ -8,6 +8,8 @@ flag: hidden
 ## Objectif
 
 Ce guide montre un exemple de remontée de fiche avec le CRM [SugarCRM](http://www.sugarcrm.com/fr). Il peut servir d'exemple pour le couplage avec d'autres logiciels.
+
+**Ce guide vous montre comment intégrer la téléphonie OVHcloud avec le CRM SugarCRM pour réaliser une remontée de fiche automatique.**
 
 ## Définitions
 
@@ -28,7 +30,7 @@ Avec les fonctionnalités CTI d'OVHcloud, il est possible de coupler la téléph
 
 ## Descriptif technique du fonctionnement
 
-- Création d'un token pour récupérer tous les évenements d'une ligne téléphonique
+- Création d'un token pour récupérer tous les événements d'une ligne téléphonique
 - Réglage du poste informatique pour lier le token de la ligne et le CRM
 - Déclenchement d'un événement lors d'un appel sur la ligne
 - Ouverture d'une recherche dans le CRM pour tous les événements d'appels entrants

@@ -1,6 +1,6 @@
 ---
 title: 'Informacje o użytkownikach wiadomości SMS'
-excerpt: 'Poznaj funkcje umożliwiające użytkownikom API wysyłanie wiadomości SMS'
+excerpt: 'Dowiedz się, jak tworzyć, konfigurować i zarządzać użytkownikami API do wysyłania wiadomości SMS, w tym uprawnieniami i ograniczeniami'
 updated: 2022-08-05
 ---
 
@@ -50,7 +50,7 @@ Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczen
 
 - **Próg** to minimalna ilość zasileń SMS, jakie pozostały użytkownikowi API przed otrzymaniem alertu o konieczności doładowania tych zasileń.
 
-### Etap 1: utworzenie użytkownika API
+### Etap 1: Utworzenie użytkownika API
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
 
@@ -60,7 +60,7 @@ Teraz kliknij kartę `Użytkownicy API`{.action}. Aby dodać użytkownika, klikn
 
 Użytkownikowi API można nadać dowolną nazwę. Hasło użytkownika API musi składać się z 8 znaków alfanumerycznych.
 
-### Etap 2: przypisywanie limitu użytkownikowi API
+### Etap 2: Przypisywanie limitu użytkownikowi API
 
 Limitami możesz zarządzać z poziomu karty `Użytkownicy API`{.action}. Obok wybranego użytkownika kliknij pozycję `...`{.action}, a następnie `Limity`{.action}.
 
@@ -80,7 +80,7 @@ Teraz możesz wykonać dwa działania.
 > Przykład: na koncie SMS jest do dyspozycji 200 zasileń. Przydzielenie użytkownikowi API 150 zasileń spowoduje potrącenie tej liczby z konta SMS, na którym zostanie już tylko 50 zasileń.
 >
 
-### Etap 3: przypisywanie progu alertu użytkownikowi API
+### Etap 3: Przypisywanie progu alertu użytkownikowi API
 
 Konfigurację progu dla użytkownika przeprowadza się z tego samego menu, klikając pozycję `...`{.action}, a następnie `Próg`{.action}.
 
@@ -97,7 +97,7 @@ Dostępne są następujące parametry:
 > Wysłanie powiadomienia przez wiadomość SMS zostanie odliczone od Twojego stanu zasileń SMS.
 >
 
-### Etap 4: określanie ograniczenia funkcji http2sms dla adresu IP
+### Etap 4: Określanie ograniczenia funkcji http2sms dla adresu IP
 
 Funkcję http2sms możesz zabezpieczyć, nakładając ograniczenia dla adresu IP dla każdego użytkownika API.
 
@@ -109,7 +109,7 @@ Możesz wprowadzić do 5 różnych publicznych adresów IP dla wysyłania zapyta
 
 Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
-### Etap 5: określanie adresu URL wywołania zwrotnego
+### Etap 5: Określanie adresu URL wywołania zwrotnego
 
 Aby monitorować potwierdzenia odbioru wiadomości SMS (Delivery reporting lub DLR), można określić adres URL wywołania zwrotnego, po prawej stronie użytkownika klikając pozycję `...`{.action}, a następnie `Wywołanie zwrotne`{.action}.
 

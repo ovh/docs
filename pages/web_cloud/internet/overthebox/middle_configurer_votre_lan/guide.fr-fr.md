@@ -122,7 +122,7 @@ Découvrez comment configurer votre réseau local depuis l'interface de votre **
 
 > [!warning]
 >
-> L'adresse IP utilisée ne doit être unique pour chaque bail statique. Si deux équipements ont la même adresse, cela créera des conflits réseaux.
+> L'adresse IP utilisée doit être unique pour chaque bail statique. Si deux équipements ont la même adresse, cela créera des conflits réseaux.
 >
 
 - Modifiez le paramètre `Hostname`{.action} pour modifier le nom d'hôte, dans notre exemple l'équipement sera `Laptop`.

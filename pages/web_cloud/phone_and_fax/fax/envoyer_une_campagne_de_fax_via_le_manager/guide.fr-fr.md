@@ -1,6 +1,6 @@
 ---
 title: "Envoyer une campagne de fax depuis l'espace client OVHcloud"
-excerpt: 'Découvrez comment préparer et envoyer une campagne de fax depuis votre espace client OVHcloud'
+excerpt: "Découvrez comment préparer et envoyer une campagne de fax depuis votre espace client OVHcloud"
 updated: 2025-04-28
 ---
 
@@ -35,18 +35,18 @@ Cliquez sur le bouton `+ Nouvelle campagne`{.action} pour configurer votre campa
 
 Complétez alors les champs requis :
 
-* Nom de la campagne : définissez un nom qui vous permettra de retrouver facilement cette campagne dans votre historique.
-* Document à faxer (format pdf) : cliquez sur le bouton `Fichier`{.action} pour sélectionner le document à envoyer, celui-ci doit être au format **PDF**.
-* Qualité d'envoi : définissez une qualité d'envoi, entre `Normale`, `Haute` ou `Meilleure`, cette dernière étant préconisée pour faciliter les envois vers les numéros spéciaux ou étrangers.
-* Type d'envoi : choisissez entre `Programmé` (vous pourrez alors programmer la date et l'heure d'envoi) et `Manuel` (vous devrez déclencher ultérieurement l'envoi de la campagne).
-* Date d'envoi : la date de déclenchement de la campagne.
-* Heure d'envoi : l'heure de déclenchement de la campagne.
-* Destinataires : vous pouvez choisir de soit `Entrer les destinataires manuellement`{.action}, soit téléverser dans l'espace client un `Fichier de destinataires`{.action} au format **txt**. Dans ce dernier cas, cliquez sur le nouveau bouton `Fichier`{.action} pour ajouter votre liste de destinataires.
+- Nom de la campagne : définissez un nom qui vous permettra de retrouver facilement cette campagne dans votre historique.
+- Document à faxer (format pdf) : cliquez sur le bouton `Fichier`{.action} pour sélectionner le document à envoyer, celui-ci doit être au format **PDF**.
+- Qualité d'envoi : définissez une qualité d'envoi, entre `Normale`, `Haute` ou `Meilleure`, cette dernière étant préconisée pour faciliter les envois vers les numéros spéciaux ou étrangers.
+- Type d'envoi : choisissez entre `Programmé` (vous pourrez alors programmer la date et l'heure d'envoi) et `Manuel` (vous devrez déclencher ultérieurement l'envoi de la campagne).
+- Date d'envoi : la date de déclenchement de la campagne.
+- Heure d'envoi : l'heure de déclenchement de la campagne.
+- Destinataires : vous pouvez choisir de soit `Entrer les destinataires manuellement`{.action}, soit téléverser dans l'espace client un `Fichier de destinataires`{.action} au format **txt**. Dans ce dernier cas, cliquez sur le nouveau bouton `Fichier`{.action} pour ajouter votre liste de destinataires.
 
 > [!primary]
 > **Ajout d'un fichier de destinataires au format txt**
 >
-> Les numéros de destinataires doivent être séparée par une virgule, un point-virgule ou un retour à la ligne. Les numéros doivent contenir entre 6 et 17 chiffres, avec ou sans espaces et peuvent commencer par un +.
+> Les numéros de destinataires doivent être séparés par une virgule, un point-virgule ou un retour à la ligne. Les numéros doivent contenir entre 6 et 17 chiffres, avec ou sans espaces et peuvent commencer par un +.
 >
 
 Une fois tous les champs complétés, cliquez sur `Valider`{.action}.
@@ -57,19 +57,19 @@ Lorsqu'une campagne est créée, elle se retrouve dans le tableau afin de pouvoi
 
 Cliquez sur le bouton `...`{.action} à droite de la campagne pour avoir accès aux options de suivi :
 
-* `Détails`{.action} : permet d'afficher les détails d'une campagne (nom, référence, statu, état, planification, statut des envois).
-* `Lancer la campagne`{.action} : permet de lancer une campagne manuelle.
-* `Stopper la campagne`{.action} : permet de stopper une campagne en cours ou planifiée pour la lancer manuellement.
-* `Supprimer`{.action} : permet de supprimer une campagne de l'historique.
+- `Détails`{.action} : permet d'afficher les détails d'une campagne (nom, référence, statut, état, planification, statut des envois).
+- `Lancer la campagne`{.action} : permet de lancer une campagne manuelle.
+- `Stopper la campagne`{.action} : permet de stopper une campagne en cours ou planifiée pour la lancer manuellement.
+- `Supprimer`{.action} : permet de supprimer une campagne de l'historique.
 
 ![campagne fax](images/03campagne-fax.png){.thumbnail}
 
 Une campagne peut avoir plusieurs statuts :
 
-* **N/A** : pas de statut encore disponible. Cela s'applique généralement à une campagne en cours ou non envoyée.
-* **Succès** : la campagne s'est déroulée sans difficultés.
-* **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton `...`{.action} puis sur `Détails`{.action}
-* **En erreur** : la campagne n'a pas pu être réalisée. Cliquez sur `...`{.action} puis sur `Détails`{.action} pour obtenir des informations complémentaires.
+- **N/A** : pas de statut encore disponible. Cela s'applique généralement à une campagne en cours ou non envoyée.
+- **Succès** : la campagne s'est déroulée sans difficultés.
+- **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton `...`{.action} puis sur `Détails`{.action}
+- **En erreur** : la campagne n'a pas pu être réalisée. Cliquez sur `...`{.action} puis sur `Détails`{.action} pour obtenir des informations complémentaires.
 
 ## Aller plus loin
 

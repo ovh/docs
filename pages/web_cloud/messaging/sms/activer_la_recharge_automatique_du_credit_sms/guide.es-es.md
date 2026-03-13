@@ -1,6 +1,6 @@
 ---
 title: 'Crédito de SMS y recarga automática'
-excerpt: 'Cómo gestionar el crédito de SMS en OVHcloud'
+excerpt: 'Descubra cómo gestionar sus créditos SMS, configurar la recarga automática y transferir créditos entre cuentas SMS de OVHcloud'
 updated: 2023-02-09
 ---
 

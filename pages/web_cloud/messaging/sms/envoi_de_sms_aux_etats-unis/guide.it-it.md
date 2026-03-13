@@ -1,6 +1,6 @@
 ---
 title: Inviare SMS negli Stati Uniti
-excerpt: Come inviare SMS negli Stati Uniti
+excerpt: Scopri come rispettare le regole specifiche per inviare SMS negli Stati Uniti e applicarle dal tuo Spazio Cliente OVHcloud
 updated: 2022-08-05
 ---
 
@@ -32,7 +32,7 @@ L’invio di SMS negli Stati Uniti è sottoposto a regole specifiche. Questa gui
 
 ## Procedura
 
-### Step 1: leggi le restrizioni
+### Step 1: Leggi le restrizioni
 
 In accordo con l’autorità di regolamentazione degli Stati Uniti (Neustar), l’invio di SMS verso questa destinazione deve essere oggetto di una preventiva convalida, da parte dei nostri servizi, di un modello di messaggio.
 Sono autorizzati soltanto messaggi di alert e di doppia autenticazione. I modelli di SMS pubblicitari non saranno accettati. Una volta convalidato il modello, l’invio avverrà nello stesso modo in cui avviene per le altre destinazioni.
@@ -101,7 +101,7 @@ Your security code is: #CODE#. Have a good day!
 Our monitoring system detected your server #SERVER# doesn't respond to ping requests
 ```
 
-### Step 3: analizza i risultati
+### Step 3: Analizza i risultati
 
 Una volta creato e convalidato il proprio modello di messaggio, l’invio di un SMS genera un controllo automatico per garantire che il contenuto dell’SMS corrisponda al modello. Se il risultato è positivo, l’SMS viene inviato nello stesso modo in cui viene inviato verso gli altri Paesi.
 

@@ -1,12 +1,12 @@
 ---
-title: Configuration de votre ligne Fax
-excerpt: Découvrez comment configurer votre ligne Fax depuis votre espace client OVHcloud
+title: "Configuration de votre ligne Fax"
+excerpt: "Découvrez comment configurer votre ligne Fax depuis votre espace client OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcloud, afin d'optimiser la réception et l'envoi de vos fax sur votre télécopieur, préciser des adresses e-mail de notification ou d'envoi, ou encore appliquer des filtrages.
+Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcloud, pour optimiser la réception et l'envoi de vos fax sur votre télécopieur, préciser des adresses e-mail de notification ou d'envoi, ou encore appliquer des filtrages.
 
 **Découvrez les différentes options de configuration disponibles dans l'espace client OVHcloud.**
 
@@ -53,7 +53,7 @@ Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Con
 
 La qualité d'envoi de vos télécopies peut avoir un impact sur vos émissions de télécopies à destination de certains numéros spéciaux.
 
-Passez la en « Meilleure » pour faciliter des envois vers les numéros spéciaux ou étrangers.
+Passez-la en « Meilleure » pour faciliter des envois vers les numéros spéciaux ou étrangers.
 
 Vous pouvez aussi paramétrer le nombre de tentatives d'envoi maximum, dans le cas d'un échec de transmission lors de la première tentative.
 
@@ -61,7 +61,7 @@ Vous pouvez aussi paramétrer le nombre de tentatives d'envoi maximum, dans le c
 
 #### Entête des fax émis
 
-Vous avez la possibilité de personnaliser l'entête de vos télécopies selon la méthode ci-dessous.
+Vous pouvez personnaliser l'entête de vos télécopies selon la méthode ci-dessous.
 
 ![entete fax](images/entete_des_fax_emis.jpg){.thumbnail}
 
@@ -74,7 +74,7 @@ De %%l|%c|Page %%P sur %%T
 
 #### Options de notifications
 
-Personnalisez l'adresse e-mail et le nom de l'expéditeur des notifications que vous recevez. Cela permet notamment d'éviter les filtres automatiques (type spam webmail).
+Personnalisez l'adresse e-mail et le nom de l'expéditeur des notifications que vous recevez. Cela permet d'éviter les filtres automatiques (type spam webmail).
 
 Vous pouvez également définir le format Texte ou HTML de l'e-mail reçu.
 
@@ -96,7 +96,7 @@ Pour configurer ces filtrages, sélectionnez votre ligne FAX, cliquez sur l'ongl
 
 ![filtrage fax](images/filtrage_menu.png){.thumbnail}
 
-Vous pouvez configurer et activer soit une liste blanche, soit une liste noire de numéros à filtrer. Il est également possible de rejeter les télécopies anonymes.
+Vous pouvez configurer et activer soit une liste blanche, soit une liste noire de numéros à filtrer. Vous pouvez également rejeter les télécopies anonymes.
 
 ![filtrage fax](images/regles_filtrage.png){.thumbnail}
 

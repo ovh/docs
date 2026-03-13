@@ -1,6 +1,6 @@
 ---
 title: Tutto sugli utenti SMS
-excerpt: Funzionalità degli utenti API per inviare SMS
+excerpt: "Scopri come creare, configurare e gestire gli utenti API per l'invio di SMS, incluse le autorizzazioni e le restrizioni"
 updated: 2022-08-05
 ---
 
@@ -50,7 +50,7 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 
 - Il **limite** corrisponde alla soglia minima di crediti SMS che un utente API deve avere prima di ricevere un alert per ricaricare o meno il saldo dei crediti.
 
-### Step 1: crea un utente API
+### Step 1: Crea un utente API
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Poi clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
@@ -60,7 +60,7 @@ Infine clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clic
 
 Assegna un nome all’utente API. La password utente dell’utente API deve essere composta da 8 caratteri alfanumerici.
 
-### Step 2: attribuisci una quota a un utente API
+### Step 2: Attribuisci una quota a un utente API
 
 È possibile gestire le quote dalla scheda `Utente API`{.action}. Clicca sui tre puntini `...`{.action}in corrispondenza dell’utente API e seleziona`Quota`{.action}.
 
@@ -80,7 +80,7 @@ A questo punto, è possibile effettuare due operazioni:
 > Ad esempio: un account SMS dispone di un totale di 200 crediti. L’assegnazione di 150 crediti a un utente API andrà a dedurre 150 crediti dall’account SMS che, a quel punto disporrà, quindi di soli 50 crediti.
 >
 
-### Step 5: attribuisci un limite a un utente API
+### Step 3: Attribuisci un limite a un utente API
 
 Per configurare un limite a un utente clicca sui tre puntini `...`{.action} e poi su `Limite`{.action}.
 
@@ -97,7 +97,7 @@ A questo punto saranno disponibili le seguenti impostazioni:
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-### Step 4: definisci una restrizione IP per la funzione http2sms
+### Step 4: Definisci una restrizione IP per la funzione http2sms
 
 È possibile rendere sicura la funzione http2sms applicando alcune restrizioni IP per ciascun utente API.
 
@@ -109,7 +109,7 @@ Per l’invio delle richieste https, è possibile inserire fino a 5 diversi indi
 
 Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
-### Step 5: specifica un URL di Callback
+### Step 5: Specifica un URL di Callback
 
 Per realizzare un follow-up personalizzato degli avvisi di ricevimento via SMS (Delivery reporting o DLR), è possibile specificare un URL chiamato Callback. Per farlo, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell'utente e poi su `Callback`{.action}.
 

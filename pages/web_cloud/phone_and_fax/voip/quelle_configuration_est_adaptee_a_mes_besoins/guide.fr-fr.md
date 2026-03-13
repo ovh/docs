@@ -1,6 +1,6 @@
 ---
-title: 'Choisir et appliquer une configuration pour un numéro'
-excerpt: 'Découvrez comment choisir et appliquer une configuration sur votre numéro'
+title: "Choisir et appliquer une configuration pour un numéro"
+excerpt: "Découvrez comment choisir et appliquer une configuration sur votre numéro"
 updated: 2026-01-22
 ---
 
@@ -80,7 +80,7 @@ Reportez-vous aux instructions décrites dans notre documentation « [Créer et
 
 Le Serveur Vocal Interactif (SVI) vous propose une interface simple pour créer un menu interactif. L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVHcloud, de raccrocher ou de lire des sons.
 
-Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous désirez en apprendre plus.
 
 #### 2.5 SVI VXML <a name="svi-vxml"></a>
 
@@ -94,7 +94,7 @@ Via une interface unique, vous avez la possibilité de gérer une file d'appels,
 
 Des options supplémentaires sont également disponibles telles que l'enregistrement des appels entrants.
 
-Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous désirez en apprendre plus.
 
 ### Étape 3 : Appliquer la configuration souhaitée
 

@@ -1,5 +1,6 @@
 ---
-title: Dépannage SPA504G
+title: "Dépannage SPA504G"
+excerpt: "Découvrez comment résoudre les problèmes courants de votre téléphone Cisco SPA504G, comme les appels ou le DNS"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -12,11 +13,11 @@ updated: 2018-03-26
 
 ### Mon téléphone émet mais ne reçoit plus les appels {#mon-téléphone-émet-mais-ne-reçoit-plus-les-appels}
 
-Lorsque votre téléphone présente ce symptôme, c'est que la fonction **DND** (*Do Not Disturb*) ou **NPD** (Ne Pas Déranger) est activée.
+Lorsque votre téléphone présente ce symptôme, c'est que la fonction **DND** (*Do Not Disturb*) ou **NPD** (*Ne Pas Déranger*) est activée.
 
 Pour désactiver cette fonction, appuyez sur le bouton sur l'écran correspondant à cette fonction :
 
-![](images/Menu.png){.thumbnail}
+![Bouton DND sur l'écran du Cisco SPA504G](images/Menu.png){.thumbnail}
 
 ### Les touches de mon téléphone sont allumées en orange {#les-touches-de-mon-téléphone-sont-allumées-en-orange}
 
@@ -26,3 +27,7 @@ Si votre téléphone affiche les touches sur le côté de l'écran orange, c'est
 ### Mon téléphone affiche "Checking DNS" ou "Recherche DHCP" {#mon-téléphone-affiche-checking-dns-ou-recherche-dhcp}
 
 Généralement cette problématique est présente lorsque le téléphone ne se voit pas attribuer d'adresse IP par votre serveur DHCP. Vérifiez le bon raccordement de votre poste à votre réseau et vérifiez la configuration de votre routeur.
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
