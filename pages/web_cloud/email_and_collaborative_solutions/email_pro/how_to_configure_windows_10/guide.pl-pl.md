@@ -44,7 +44,7 @@ Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konf
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
 <!-- CP-NAV-END:web-email-pro -->

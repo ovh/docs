@@ -21,7 +21,7 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Exchange](/links/control-panel/web-exchange)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-exchange -->

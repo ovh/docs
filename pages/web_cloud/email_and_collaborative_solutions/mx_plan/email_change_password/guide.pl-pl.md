@@ -42,7 +42,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 **Email Pro:**
 
 - **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**
 
@@ -98,7 +98,7 @@ Postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 >>
 > **Email Pro**
 >>
->> Kliknij `Email Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
+>> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
 >> Kliknij przycisk, `...`{.action} a następnie `Zmień`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>

@@ -50,7 +50,7 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 **Email Pro:**
 
 - **Link direto:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
 
@@ -91,7 +91,7 @@ Eis como verificar que os seus serviços estão corretamente operacionais:
 >>
 > **E-mail Pro**
 >>
->> Aceda à secção `Web Cloud`{.action}, clique em `Email Pro`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+>> Aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 >>
 > **Exchange**
 >>
@@ -158,7 +158,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 >>
 > **E-mail Pro**
 >>
->> Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `Email Pro`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
+>> Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
 >>
 > **Exchange**
 >>

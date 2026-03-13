@@ -39,7 +39,7 @@ Konta E-mail Pro można skonfigurować w różnych kompatybilnych programach poc
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz platformę
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
 <!-- CP-NAV-END:web-email-pro -->

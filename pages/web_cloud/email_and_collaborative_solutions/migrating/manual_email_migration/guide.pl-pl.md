@@ -39,7 +39,7 @@ updated: 2026-01-16
 **Email Pro:**
 
 - **Bezpośredni link:** [Email Pro](/links/control-panel/web-email-pro)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz swoją platformę
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz swoją platformę
 
 **Exchange:**
 

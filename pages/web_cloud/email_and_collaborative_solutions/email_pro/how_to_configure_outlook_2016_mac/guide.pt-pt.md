@@ -26,7 +26,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 ### Acesso à Área de Cliente OVHcloud
 
 - **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
 <!-- CP-NAV-END:web-email-pro -->
@@ -44,7 +44,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o « ? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
 >
 
 Abra a aplicação Outlook no seu dispositivo. Existem duas formas de adicionar uma conta:

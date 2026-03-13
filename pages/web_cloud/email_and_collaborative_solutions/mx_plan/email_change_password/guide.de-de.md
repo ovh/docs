@@ -42,7 +42,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 **Email Pro:**
 
 - **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
-- **Navigationspfad:** `Web Cloud`{.action} > `Email Pro`{.action} > Wählen Sie Ihre Plattform aus
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
 

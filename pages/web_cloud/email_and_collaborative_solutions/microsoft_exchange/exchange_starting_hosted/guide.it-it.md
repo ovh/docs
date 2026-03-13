@@ -28,7 +28,7 @@ Con Hosted Exchange puoi usufruire di account email professionali che semplifica
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Exchange](/links/control-panel/web-exchange)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-exchange -->

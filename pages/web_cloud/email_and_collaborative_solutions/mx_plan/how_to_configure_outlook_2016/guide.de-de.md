@@ -258,7 +258,7 @@ Aus diesem Grund bitten wir Sie, den Abschnitt zu lesen, der der Benutzeroberfl�
 >> >
 >> > In unserem Beispiel wird der Servername "pro**?**.mail.ovh.net" verwendet. Sie müssen das Zeichen "?" durch die Zahl ersetzen, die dem Server Ihres E-Mail Pro-Dienstes entspricht.
 >> >
->> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
+>> > Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action} und anschließend `E-Mail Pro`{.action}. Der Servername ist im Feld **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>

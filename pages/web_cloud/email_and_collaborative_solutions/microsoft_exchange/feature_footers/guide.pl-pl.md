@@ -43,7 +43,7 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 > **Email Pro**
 >>
 >> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
+>> 1. Kliknij `E-mail Pro`{.action}.
 >> 1. Wybierz odpowiednią platformę.
 >>
 

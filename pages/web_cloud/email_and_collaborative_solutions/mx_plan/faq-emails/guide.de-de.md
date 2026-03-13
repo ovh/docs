@@ -42,7 +42,7 @@ details[open]>summary::before {
 **Email Pro:**
 
 - **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
-- **Navigationspfad:** `Web Cloud`{.action} > `Email Pro`{.action} > Wählen Sie Ihre Plattform aus
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
 

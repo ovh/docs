@@ -99,7 +99,7 @@ Suivez les instructions selon votre offre :
 >>
 > **Email Pro**
 >>
->> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br>
+>> Cliquez sur `Email Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br>
 >> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>

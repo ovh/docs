@@ -67,7 +67,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 > **Email Pro**
 >>
 >> 1. Kliknij zakładkę `Web Cloud`{.action}.
->> 1. Kliknij `Email Pro`{.action}.
+>> 1. Kliknij `E-mail Pro`{.action}.
 >> 1. Wybierz odpowiednią platformę.
 >>
 

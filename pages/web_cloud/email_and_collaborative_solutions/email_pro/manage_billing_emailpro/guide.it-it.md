@@ -20,7 +20,7 @@ L'offerta Email Pro dispone di una gestione flessibile riguardante la fatturazio
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-email-pro -->

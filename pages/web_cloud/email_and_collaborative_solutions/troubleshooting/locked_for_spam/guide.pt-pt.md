@@ -29,7 +29,7 @@ Quando o seu endereço de e-mail é bloqueado por spam, isto significa que foi d
 **Email Pro:**
 
 - **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
 

@@ -42,7 +42,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 ### Acesso à Área de Cliente OVHcloud
 
 - **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
 <!-- CP-NAV-END:web-email-pro -->
@@ -73,7 +73,7 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 >
 > No nosso exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
 
 - **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
 
@@ -233,7 +233,7 @@ Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibi
 >> >
 >> > No nosso exemplo, o nome do servidor utilizado é "pro**?**.mail.ovh.net". Terá de substituir o carácter "?" pelo número correspondente ao servidor do seu serviço E-mail Pro.
 >> >
->> > Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
+>> > Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

@@ -36,7 +36,7 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 **Email Pro:**
 
 - **Link direto:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
 

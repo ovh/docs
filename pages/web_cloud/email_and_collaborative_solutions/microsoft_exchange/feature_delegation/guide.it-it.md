@@ -30,12 +30,12 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 **Exchange:**
 
 - **Link diretto:** [Exchange](/links/control-panel/web-exchange)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
 
 **Email Pro:**
 
 - **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-email-pro -->

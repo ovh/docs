@@ -44,7 +44,7 @@ O **novo Outlook** substitui, a partir de 1 de janeiro de 2025, o aplicativo **E
 ### Acesso à Área de Cliente OVHcloud
 
 - **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
-- **Caminho de navegação:** `Web Cloud`{.action} > `Email Pro`{.action} > Selecione a sua plataforma
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
 <!-- CP-NAV-END:web-email-pro -->
@@ -75,7 +75,7 @@ Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 >
 > Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o "?" pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `Email Pro`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}.
 >
 
 Para configurar o seu endereço de e-mail, siga as etapas clicando nos separadores abaixo.

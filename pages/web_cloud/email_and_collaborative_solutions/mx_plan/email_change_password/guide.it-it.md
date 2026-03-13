@@ -32,7 +32,7 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 **MX Plan:**
 
 - **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
 
 **Zimbra:**
 

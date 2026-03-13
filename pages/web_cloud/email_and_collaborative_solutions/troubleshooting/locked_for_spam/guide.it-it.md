@@ -34,7 +34,7 @@ Quando il tuo indirizzo e-mail è bloccato per spam, significa che è stata rile
 **Exchange:**
 
 - **Link diretto:** [Exchange](/links/control-panel/web-exchange)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-exchange -->

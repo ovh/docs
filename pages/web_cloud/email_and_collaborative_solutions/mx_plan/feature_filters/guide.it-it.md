@@ -35,7 +35,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
 
 ---
 <!-- CP-NAV-END:web-mx-plan -->

@@ -34,7 +34,7 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 **Email Pro:**
 
 - **Bezpośredni link:** [Email Pro](/links/control-panel/web-email-pro)
-- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Email Pro`{.action} > Wybierz swoją platformę
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz swoją platformę
 
 **Exchange:**
 
@@ -89,7 +89,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 >>
 > **Email Pro**
 >>
->> Kliknij `Email Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
+>> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel02.png){.thumbnail}<br>
 >>
 > **Exchange**

@@ -35,7 +35,7 @@ Vuoi:
 **MX Plan:**
 
 - **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo MX Plan service
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
 
 **Zimbra:**
 
@@ -45,12 +45,12 @@ Vuoi:
 **Email Pro:**
 
 - **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
 
 **Exchange:**
 
 - **Link diretto:** [Exchange](/links/control-panel/web-exchange)
-- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua platform
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
 
 ---
 <!-- CP-NAV-END:web-exchange -->
