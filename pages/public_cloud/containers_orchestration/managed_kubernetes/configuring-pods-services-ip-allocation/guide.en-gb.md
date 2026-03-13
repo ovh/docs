@@ -34,8 +34,8 @@ Two parameters are available to control the IP allocation policy in your OVHclou
 
 Keep the following rules in mind for these parameters:
 
-- `podsIpv4Cidr` and `servicesIpv4Cidr` _must not_ collide with each other, nor with the OpenStack subnets on the same VLAN in your project
-- The subnets _must_ be chosen in the [private network blocks](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses)
+- `podsIpv4Cidr` and `servicesIpv4Cidr` **must not** collide with each other, nor with the OpenStack subnets on the same VLAN in your project
+- The subnets **must** be chosen in the [private network blocks](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses)
 - The minimal size allowed for the `podsIpv4Cidr` and the `servicesIpv4Cidr` subnets is `/16`
 
 Each node in the cluster is assigned a `/24` subnet inside `podsIpv4Cidr`; choosing a `/16` limits the cluster to 256 nodes.

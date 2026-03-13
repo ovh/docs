@@ -34,8 +34,8 @@ Deux paramètres permettent de contrôler la politique d'allocation IP dans votr
 
 Voici les règles à respecter pour ces paramètres :
 
-- `podsIpv4Cidr` et `servicesIpv4Cidr` _ne doivent pas_ entrer en conflit l'un avec l'autre, ni avec les sous-réseaux OpenStack du même VLAN dans votre projet
-- Les sous-réseaux _doivent_ être choisis dans les [blocs de réseau privé](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses)
+- `podsIpv4Cidr` et `servicesIpv4Cidr` **ne doivent pas** entrer en conflit l'un avec l'autre, ni avec les sous-réseaux OpenStack du même VLAN dans votre projet
+- Les sous-réseaux **doivent** être choisis dans les [blocs de réseau privé](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses)
 - La taille minimale autorisée pour les sous-réseaux `podsIpv4Cidr` et `servicesIpv4Cidr` est `/16`
 
 Chaque nœud du cluster se voit attribuer un sous-réseau `/24` dans le `podsIpv4Cidr` ; choisir un `/16` limite le cluster à 256 nœuds.
