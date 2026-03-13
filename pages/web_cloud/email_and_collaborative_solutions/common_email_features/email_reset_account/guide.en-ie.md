@@ -21,7 +21,7 @@ You want to:
     - [**Exchange**](/links/web/emails-exchange).
     - [**Email Pro**](/links/web/email-pro).
     - [**Zimbra**](/links/web/zimbra).
-- Being the Admin contact of the email service concerned
+- Be the Admin contact of the email service concerned
 - Access details for the email accounts concerned
 
 <!-- CP-NAV-START:web-mx-plan -->

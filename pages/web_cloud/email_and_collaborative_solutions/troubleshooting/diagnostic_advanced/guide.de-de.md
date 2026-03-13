@@ -40,7 +40,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 <!-- CP-NAV-START:web-exchange -->
 ---
 
-### Zugang zum OVHcloud Kundencenter
+### Zugriff auf das OVHcloud Kundencenter
 
 **MX Plan:**
 

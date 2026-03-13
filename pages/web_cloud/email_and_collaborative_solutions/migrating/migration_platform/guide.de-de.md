@@ -29,7 +29,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 <!-- CP-NAV-START:web-exchange -->
 ---
 
-### Zugang zum OVHcloud Kundencenter
+### Zugriff auf das OVHcloud Kundencenter
 
 **MX Plan:**
 

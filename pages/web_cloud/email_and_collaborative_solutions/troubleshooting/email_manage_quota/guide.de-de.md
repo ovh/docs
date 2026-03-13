@@ -24,7 +24,7 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 <!-- CP-NAV-START:web-exchange -->
 ---
 
-### Zugang zum OVHcloud Kundencenter
+### Zugriff auf das OVHcloud Kundencenter
 
 **MX Plan:**
 
