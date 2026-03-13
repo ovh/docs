@@ -1,7 +1,7 @@
 ---
 title: "Transferir um nome de domínio .uk para outro agente de registo"
 excerpt: "Saiba como transferir um nome de domínio UK para outro registar"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 ## Objetivo
@@ -49,9 +49,9 @@ O processo de mudança de agente de registo (*registar*) para os nomes de domín
 
 > [!primary]
 >
-> Se é o **titular** do nome de domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do nome de domínio, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts) antes de continuar.
+> Se o nome de domínio expirou há **menos de 90 dias**, pode ainda ser transferido. Contacte as nossas equipas de suporte criando um pedido de assistência na sua Área de Cliente OVHcloud para desbloquear o nome de domínio para a transferência.
 >
-> Se o nome de domínio expirou há **menos de 90 dias**, pode ainda ser transferido. Contacte as nossas equipas de suporte técnico criando um pedido de suporte no seu Área de Cliente OVHcloud para desbloquear o nome de domínio para a transferência.
+> Se é o **titular** do nome de domínio mas não consegue geri-lo na Área de Cliente OVHcloud, nem através do seu próprio acesso nem do contacto administrativo, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts) antes de continuar.
 >
 
 ## Instruções
@@ -98,5 +98,7 @@ Contacte o seu novo fornecedor para obter mais informações sobre a transferên
 ## Quer saber mais?
 
 [Transferir um nome de domínio para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

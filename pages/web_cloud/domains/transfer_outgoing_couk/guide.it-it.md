@@ -1,7 +1,7 @@
 ---
 title: "Trasferire un nome di dominio .uk verso un altro Registrar"
 excerpt: Come effettuare il trasferimento in uscita di un nome di dominio UK verso un altro registrar
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 ## Obiettivo
@@ -49,9 +49,9 @@ Il processo di modifica del Registrar (*registrar*) per i nomi di dominio di pri
 
 > [!primary]
 >
-> Se sei l'**intestatario** del nome di dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del nome di dominio, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts) prima di continuare.
+> Se il nome di dominio è scaduto da **meno di 90 giorni**, può ancora essere trasferito. Contatta i nostri team di supporto creando una richiesta di assistenza nel tuo Spazio Cliente OVHcloud per sbloccare il nome di dominio ai fini del trasferimento.
 >
-> Se il nome di dominio è scaduto da **meno di 90 giorni**, può sempre essere trasferito. Per sbloccare il nome di dominio per il trasferimento, contatta i nostri team di supporto tecnico creando una richiesta di supporto nel tuo Spazio Cliente OVHcloud.
+> Se sei l'**intestatario** del nome di dominio ma non puoi gestirlo nello Spazio Cliente OVHcloud, né tramite il tuo accesso né tramite il contatto amministrativo, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts) prima di continuare.
 >
 
 ## Procedura
@@ -91,7 +91,7 @@ Se non riesci a modificare il TAG del tuo nome di dominio dallo Spazio Cliente O
 
 ### 2 - Seguire il processo di trasferimento presso il tuo nuovo Registrar
 
-La modifica del tag TAG attiva il processo di trasferimento.
+La modifica del TAG attiva il processo di trasferimento.
 
 Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda relativa al seguito da dare al trasferimento.
 

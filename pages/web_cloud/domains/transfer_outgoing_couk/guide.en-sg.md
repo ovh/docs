@@ -1,7 +1,7 @@
 ---
 title: Transferring a .uk domain name to another registrar
 excerpt: Find out how to move UK domain names from OVHcloud to a provider of your choice
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 ## Objective
@@ -49,9 +49,9 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 
 > [!primary]
 >
-> If the domain expired **less than 90 days** ago, it can still be transferred. Please contact our support teams by creating a support request in your OVHcloud Control Panel to unlock the domain name for transfer.
+> If the domain expired **less than 90 days** ago, it can still be transferred. Contact our support teams by creating a support request in your OVHcloud Control Panel to unlock the domain name for transfer.
 >
-> If you are the domain's **holder** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](/pages/account_and_service_management/account_information/managing_contacts) first before proceeding.
+> If you are the domain's **holder** but cannot manage it in the OVHcloud Control Panel, neither via your own access nor via the administrative contact, consult [this guide](/pages/account_and_service_management/account_information/managing_contacts) before proceeding.
 >
 
 ## Instructions
@@ -91,7 +91,9 @@ If you are unable to modify your domain name's TAG in the OVHcloud Control Panel
 
 ### 2 - Follow up the transfer process with your new registrar
 
-Successfully changing the TAG initiates the transfer process. Contact your new provider for details as well as any follow-up questions.
+Successfully changing the TAG initiates the transfer process.
+
+Contact your new provider for details as well as any follow-up questions.
 
 ## Go further
 

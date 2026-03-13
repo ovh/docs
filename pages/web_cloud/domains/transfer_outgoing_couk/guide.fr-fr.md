@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine .uk vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert sortant d’un nom de domaine UK vers un autre registrar"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 ## Objectif
@@ -45,6 +45,14 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les nom
 
 ---
 <!-- CP-NAV-END:web-domains -->
+
+
+> [!primary]
+>
+> Si le nom de domaine a expiré depuis **moins de 90 jours**, il peut encore être transféré. Contactez nos équipes de support en créant une demande d'assistance depuis votre espace client OVHcloud pour débloquer le nom de domaine en vue du transfert.
+>
+> Si vous êtes le **titulaire** du nom de domaine mais ne pouvez pas le gérer dans l'espace client OVHcloud, ni via votre propre accès ni via le contact administrateur, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts) avant de poursuivre.
+>
 
 ## En pratique
 

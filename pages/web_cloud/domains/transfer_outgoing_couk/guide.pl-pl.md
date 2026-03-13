@@ -1,7 +1,7 @@
 ---
 title: "Transfer nazwy domeny .uk do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer nazwy domeny wychodzącej z nazwy domeny UK do innego operatora"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 ## Wprowadzenie
@@ -49,9 +49,9 @@ Proces zmiany operatora nazwy domeny *najwyższego poziomu* (*top-level domain*,
 
 > [!primary]
 >
-> Jeśli jesteś **abonentem** nazwy domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny nazwy domeny, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts).
+> Jeśli nazwa domeny wygasła **mniej niż 90 dni** temu, nadal może być przeniesiona. Skontaktuj się z naszym zespołem pomocy technicznej, tworząc wniosek o wsparcie w Panelu klienta OVHcloud, aby odblokować nazwę domeny do transferu.
 >
-> Jeśli nazwa domeny wygasła na **mniej niż 90 dni**, nadal może być przeniesiona. Prosimy o kontakt z naszym zespołem pomocy technicznej poprzez utworzenie wniosku o wsparcie w Panelu client OVHcloud, aby odblokować nazwę domeny do transferu.
+> Jeśli jesteś **abonentem** nazwy domeny, ale nie możesz nią zarządzać w Panelu klienta OVHcloud, ani poprzez własny dostęp, ani poprzez kontakt administracyjny, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts) przed kontynuowaniem.
 >
 
 ## W praktyce
