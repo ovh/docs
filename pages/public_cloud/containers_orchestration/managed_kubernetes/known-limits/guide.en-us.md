@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-02-23
+updated: 2026-03-13
 ---
 
 <style>
@@ -273,7 +273,7 @@ By default, the following ranges are used by the cluster, and should not be used
 10.3.0.0/16 # Subnet used by services
 ```
 
-However these ranges can be customized either when creating a cluster or when resetting an existing one by following this guide: [Configuring pods and services IP allocation on OVHcloud Managed Kubernetes (Standard plan only)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation/).
+However, these ranges can be customized either when creating a cluster or when resetting an existing one by following this guide: [Configuring pods and services IP allocation on OVHcloud Managed Kubernetes (Standard plan only)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
 
 
 > [!warning]

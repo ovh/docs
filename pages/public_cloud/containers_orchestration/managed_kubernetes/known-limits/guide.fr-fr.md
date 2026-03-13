@@ -1,7 +1,7 @@
 ---
 title: Limites connues
 excerpt: 'Exigences et limites à respecter'
-updated: 2026-02-03
+updated: 2026-03-13
 ---
 
 <style>
@@ -266,16 +266,19 @@ Pour éviter les conflits réseau, il est recommandé de **maintenir le service 
 
 #### Plages d'adresses IP réservées
 
-Les plages suivantes sont utilisées par le cluster et ne doivent pas être utilisées ailleurs sur le réseau privé connecté au cluster.
+Par défaut, les plages suivantes sont utilisées par le cluster et ne doivent pas être utilisées ailleurs sur le réseau privé connecté au cluster :
 
 ```bash
 10.240.0.0/13 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
 ```
 
+Ces plages peuvent toutefois être personnalisées lors de la création d'un cluster ou lors de la réinitialisation d'un cluster existant en suivant ce guide : [Configuration de l'allocation IP des pods et services sur OVHcloud Managed Kubernetes (offre Standard uniquement)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
+
+
 > [!warning]
 >
-> Ces plages sont fixes pour l'instant, mais seront configurables dans une prochaine version. Ne les utilisez pas ailleurs dans votre réseau privé.
+> Les plages de sous-réseaux ne peuvent pas être modifiées sur un cluster en cours d'exécution sans le réinitialiser et perdre toutes les données.
 >
 
 ## Santé du cluster
