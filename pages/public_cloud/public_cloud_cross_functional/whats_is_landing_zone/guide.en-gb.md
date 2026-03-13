@@ -125,6 +125,11 @@ A log’s lifecycle consists of 4 distinct phases:
 
 To create a landing zone that works well, it’s important to assess the components needed to build it. The ideal landing zone should be flexible enough to suit various needs, enabling the automated, agile, and simple deployment of the target architecture.
 
+### Prerequisites:
+
+- A payment method.
+- [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
@@ -135,11 +140,6 @@ To create a landing zone that works well, it’s important to assess the compone
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
-
-### Prerequisites:
-
-- A payment method.
-- [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 ### Instructions
 
