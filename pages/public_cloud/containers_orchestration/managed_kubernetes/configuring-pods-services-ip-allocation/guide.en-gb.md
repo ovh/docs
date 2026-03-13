@@ -14,7 +14,7 @@ updated: 2026-03-13
 
 ## Limits
 
-The customization of the pods and services IP allocation policy is not possible on clusters with the Free plan.
+The customisation of the pods and services IP allocation policy is not possible on clusters with the Free plan.
 
 You cannot modify the IP allocation policy of a running cluster. It must be set at cluster creation or when resetting the cluster, which erases all data.
 
@@ -34,9 +34,9 @@ Two parameters are available to control the IP allocation policy in your OVHclou
 
 Keep the following rules in mind for these parameters:
 
-- `podsIpv4Cidr` and `servicesIpv4Cidr` **must not** collide with each other, nor with the OpenStack subnets on the same VLAN in your project
-- The subnets **must** be chosen in the [private network blocks](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses)
-- The minimal size allowed for the `podsIpv4Cidr` and the `servicesIpv4Cidr` subnets is `/16`
+- `podsIpv4Cidr` and `servicesIpv4Cidr` **must not** collide with each other, nor with the OpenStack subnets on the same VLAN in your project.
+- The subnets **must** be chosen in the [private network blocks](https://en.wikipedia.org/wiki/List_of_reserved_IP_addresses).
+- The minimal size allowed for the `podsIpv4Cidr` and the `servicesIpv4Cidr` subnets is `/16`.
 
 Each node in the cluster is assigned a `/24` subnet inside `podsIpv4Cidr`; choosing a `/16` limits the cluster to 256 nodes.
 

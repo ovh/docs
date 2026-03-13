@@ -24,6 +24,7 @@ updated: 2026-03-13
      font-size: 0.75em;
  }
 </style>
+
 ## Nodes, pods and etcd limits
 
 |Plan | Max nodes per cluster | Max Pods per node | Max nodes per anti-affinity group | etcd max size |
