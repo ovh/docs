@@ -1,7 +1,7 @@
 ---
 title: "How to renew OVHcloud domain names"
 excerpt: "Find out why and how to renew your OVHcloud domain names"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 <style>

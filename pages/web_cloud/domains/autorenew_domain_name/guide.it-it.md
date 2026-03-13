@@ -1,7 +1,7 @@
 ---
 title: "Rinnovare i miei domini OVHcloud"
 excerpt: "Questa guida ti mostra perché e come rinnovare un dominio OVHcloud"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 <style>

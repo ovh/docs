@@ -1,7 +1,7 @@
 ---
 title: "Renovar os meus nomes de domínio OVHcloud"
 excerpt: "Saiba porquê e como renovar os seus nomes de domínio OVHcloud"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 <style>

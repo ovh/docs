@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud Domainnamen verlängern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre OVHcloud Domainnamen verlängern können"
-updated: 2026-03-12
+updated: 2026-03-13
 ---
 
 <style>
