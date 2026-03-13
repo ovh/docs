@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Technical Limitations
 excerpt: Find here the technical limits of the Object Storage offer
-updated: 2026-03-11
+updated: 2026-03-13
 ---
 
 ## Objective
