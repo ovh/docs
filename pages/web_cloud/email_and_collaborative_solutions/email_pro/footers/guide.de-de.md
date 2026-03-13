@@ -11,8 +11,18 @@ updated: 2020-03-26
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## In der praktischen Anwendung
 

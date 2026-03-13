@@ -18,17 +18,24 @@ After subscribing, you can download the Outlook client as one of the following 3
 
 **This guide explains how to order an Outlook licence from your OVHcloud Exchange platform and how to activate it.**
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 ## Instructions
 
 ### Ordering an Outlook licence
 
 #### For a Hosted Exchange account
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `...`{.action} icon to the right of the account concerned, then on `Order an Outlook`{.action} licence.
+Click on the `...`{.action} icon to the right of the account concerned, then on `Order an Outlook`{.action} licence.
 
 ![Outlook](images/order-outlook01.png){.thumbnail}
 
@@ -36,17 +43,13 @@ Set the renewal frequency for your Outlook licence, and confirm the conditions. 
 
 ![Outlook](images/order-outlook02.png){.thumbnail}
 
-Once you have verfied your order summary, use the `Pay`{.action} button to generate the purchase order. You will be redirected to a new page where you can pay for your order using the payment methods available to you.
+Once you have verified your order summary, use the `Pay`{.action} button to generate the purchase order. You will be redirected to a new page where you can pay for your order using the payment methods available to you.
 
 You will need to wait a few moments for your Outlook licence to become available in the OVHcloud Control Panel.
 
 #### For a Private Exchange account
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `...`{.action} icon to the right of the account concerned, then on `Activate Outlook licence`{.action}.
+Click on the `...`{.action} icon to the right of the account concerned, then on `Activate Outlook licence`{.action}.
 
 ![Outlook](images/order-outlook03.png){.thumbnail}
 
@@ -79,16 +82,12 @@ The downloaded file is in the .ISO format, i.e. a disk image. Start the installa
 
 ### Deleting the Outlook licence from your account
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
-1. Click on the `...`{.action} icon to the right of the account concerned, then on `Delete Outlook licence`{.action}.
+Click on the `...`{.action} icon to the right of the account concerned, then on `Delete Outlook licence`{.action}.
 
 ![Outlook](images/order-outlook07.png){.thumbnail}
 
 Once you have confirmed, you are reminded that the licence will be permanently deleted on its expiry date.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

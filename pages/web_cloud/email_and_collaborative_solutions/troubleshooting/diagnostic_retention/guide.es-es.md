@@ -5,7 +5,6 @@ updated: 2022-02-08
 ---
 
 
- 
 ## Objetivo
 
 Ha eliminado por error uno o varios elementos (correo electrónico, contacto, cita del calendario) y ha vaciado su papelera. Es posible restaurarlas hasta 14 días después de eliminarlas mediante el webmail OWA (Outlook Web App).

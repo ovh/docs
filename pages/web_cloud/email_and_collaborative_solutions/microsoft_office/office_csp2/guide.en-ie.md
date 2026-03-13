@@ -12,7 +12,7 @@ Office 365 for Resellers (CSP2) is a service that allows you to purchase differe
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud customer account](/links/create-ovhcloud-account)
 - An [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier)
 - Registration with the Microsoft Cloud Solution Provider (CSP) program as an "indirect reseller" in the region where you operate (for example: “EU” for Europe)
 
@@ -32,11 +32,20 @@ To register as an indirect reseller, please refer to the Microsoft documentation
 > With the MPN ID, you can receive a cash-back rebate for the subscriptions you order via the OVHcloud Control Panel. This cash-back process is subject to rules defined by Microsoft, depending on the volume of subscriptions you generate.
 >
 
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Navigation path:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
+
 ## Instructions
 
 ### Order an Office 365 Reseller service
-
-To order an Office 365 Resellers service, go to your [OVHcloud Control Panel](/links/manager). Once you have logged in, select `Sunrise`{.action} in the top menu, then click on `Office 365 Revendeurs`{.action}.
 
 - *Optional*: You can define a custom **subdomain** when you create a new platform by ticking the box provided for this purpose (subject to the available names).
 - Enter your previously created MPN ID from Microsoft.
@@ -56,9 +65,7 @@ To order an Office 365 Resellers service, go to your [OVHcloud Control Panel](/l
 
 ### Manage your Office 365 Reseller service
 
-Once the Office 365 service has been created, it will be available to manage in the [OVHcloud Control Panel](/links/manager).
-
-To do this, go to the `Sunrise`{.action} section. In the left-hand menu, choose `Office 365 Revendeurs`{.action}, then select the service.
+Once the Office 365 service has been created, it will be available to manage in the OVHcloud Control Panel. Select the service concerned.
 
 The following information appears:
 

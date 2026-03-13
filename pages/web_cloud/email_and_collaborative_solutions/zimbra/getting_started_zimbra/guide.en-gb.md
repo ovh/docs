@@ -22,13 +22,22 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 - An email account on our Zimbra OVHcloud email solution
 - An [OVHcloud domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Instructions
 
 **Summary**
 
-- [Access your service management](#zimbra-access)
 - [Configure your Zimbra service](#zimbra-conf)
 - [Organizations](#organizations)
     - [Create an organization](#organizations-create)
@@ -43,14 +52,6 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 - [Redirections](#redirections)
 - [Alias](#alias)
 - [Automatic Replies](#autoreply)
-
-### Access your service management <a name="zimbra-access"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Zimbra Mail`{.action}.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configure your Zimbra service <a name="zimbra-conf"></a>
 
@@ -221,14 +222,11 @@ Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Change plan <a name="emails-offer"></a>
+#### Change plan <a name="emails-offer"></a>
 
 It is possible to upgrade or downgrade any Zimbra account.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click on `Zimbra Mail`{.action}.
-1. Click on the `Email account`{.action} tab.
+1. Click on the `Email accounts`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
 1. Click on `Change plan`{.action}.
 
@@ -291,7 +289,7 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 
 Alias addresses for your email account allow you to keep your account's email address private. You can disclose alias addresses to your contacts and emails sent to these addresses will then be redirected to your email account.
 
-You can create an alias in the [OVHcloud Control Panel](/links/manager). Click on the steps below:
+Click on the steps below to create an alias:
 
 > [!tabs]
 > **Step 1**

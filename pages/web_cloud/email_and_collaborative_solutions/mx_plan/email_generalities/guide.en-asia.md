@@ -30,14 +30,20 @@ If you have just purchased an MX Plan solution, this means you have email addres
 ## Requirements
 
 - An MX plan solution, available with a [web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 
 **Contents**
 
@@ -184,8 +190,6 @@ You can set up an automatic reply directly by logging in to your email account v
 [Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

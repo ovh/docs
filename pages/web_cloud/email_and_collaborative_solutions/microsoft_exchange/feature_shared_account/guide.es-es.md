@@ -4,7 +4,6 @@ excerpt: Añadir y utilizar una cuenta compartida en su solución Exchange
 updated: 2025-04-28
 ---
  
-
 ## Objetivo
 
 Una **cuenta compartida** es una cuenta de correo compartida entre varias cuentas Exchange y accesible a través de ellas. Una cuenta compartida no tiene contraseña, por lo que es necesario delegar el acceso a una o varias cuentas de la plataforma Exchange.
@@ -14,17 +13,22 @@ Una **cuenta compartida** es una cuenta de correo compartida entre varias cuenta
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber contratado una solución [Exchange de OVHcloud](/links/web/emails-hosted-exchange).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Añadir una cuenta compartida
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 Seleccione la pestaña `Cuentas compartidas`{.action} en el menú horizontal y haga clic en `Añadir cuenta compartida`{.action}.
 
@@ -104,7 +108,7 @@ Desde Outlook, encontrará su cuenta compartida en la columna de la izquierda, d
 
 ![correo electrónico](images/exchange-shared_accounts10.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Consultar una cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

@@ -1,12 +1,12 @@
 ---
 title: "Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre"
-excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pro, MX Plan ou Zimbra"
+excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou Email Pro vers une autre plateforme Exchange, Email Pro, MX Plan ou Zimbra"
 updated: 2026-01-16
 ---
 
 ## Objectif
 
-Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange, E-mail Pro ou MX Plan. Vous trouverez dans ce guide un processus de migration en deux phases :
+Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange ou Email Pro vers une autre plateforme Exchange, Email Pro ou MX Plan. Vous trouverez dans ce guide un processus de migration en deux phases :
 
 1. **Configurer la plateforme de destination**.
 2. **Migrer les comptes e-mail** de votre plateforme actuelle vers la nouvelle.
@@ -15,16 +15,41 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 > [!primary]
 >
-> Pour migrer une solution MX Plan vers une plateforme Exchange ou E-mail Pro, nous vous invitons à suivre notre guide [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+> Pour migrer une solution MX Plan vers une plateforme Exchange ou Email Pro, nous vous invitons à suivre notre guide [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 >
 
-**Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou E-mail Pro vers une autre plateforme Exchange ou E-mail Pro.**
+**Découvrez comment migrer les adresses e-mail d'une plateforme Exchange ou Email Pro vers une autre plateforme Exchange ou Email Pro.**
 
 ## Prérequis
 
-- Disposer d'une plateforme **«source»** avec des comptes [Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) configurés ou [Zimbra](/links/web/zimbra).
-- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une plateforme **«source»** avec des comptes [Exchange](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro) configurés ou [Zimbra](/links/web/zimbra).
+- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -38,7 +63,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [le guide Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ou [le guide Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), [le guide Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ou [le guide Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### Migrer les comptes e-mail <a name="accountsmigration"></a>
 
@@ -50,8 +75,8 @@ La migration de vos comptes e-mail se fera en 3 grandes étapes, **Renommer** le
 >
 > Cas particulier:
 >
-> - Si vous devez migrer **un compte Exchange ou Zimbra PRO** vers un compte **E-mail Pro** ou **Zimbra STARTER**, vous devez vous assurer que vos comptes e-mail n'excèdent pas les 10 Go (E-mail Pro) ou 15 Go (Zimbra STARTER). Les fonctions collaboratives, la synchronisation des calendriers et contacts ne sont pas présentes sur E-mail Pro ou Zimbra STARTER et ne peuvent pas être migrées.
-> - Si vous devez migrer **un compte Exchange, E-mail Pro ou Zimbra** vers un compte **MX Plan**, vous devez vous assurer que votre compte e-mail n'excède pas les 5 Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange ou Zimbra PRO** vers un compte **Email Pro** ou **Zimbra STARTER**, vous devez vous assurer que vos comptes e-mail n'excèdent pas les 10 Go (Email Pro) ou 15 Go (Zimbra STARTER). Les fonctions collaboratives, la synchronisation des calendriers et contacts ne sont pas présentes sur Email Pro ou Zimbra STARTER et ne peuvent pas être migrées.
+> - Si vous devez migrer **un compte Exchange, Email Pro ou Zimbra** vers un compte **MX Plan**, vous devez vous assurer que votre compte e-mail n'excède pas les 5 Go. Les fonctions collaboratives, la synchronisation des calendriers et contacts  ne sont pas présentes sur MX Plan et ne peuvent pas être migrées.
 
 #### Renommer
 
@@ -63,7 +88,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme e-mail, cliquez sur 
 
 #### Créer
 
-Créez votre adresse e-mail sur le nouveau compte de votre plateforme E-mail Pro, Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
+Créez votre adresse e-mail sur le nouveau compte de votre plateforme Email Pro, Exchange ou MX Plan ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action}, à droite du compte e-mail de destination, puis sur `Modifier`{.action}.
 
@@ -99,7 +124,7 @@ Si vous souhaitez le supprimer, dirigez-vous dans l'onglet `Comptes e-mail`{.act
 
 À cette étape, vos adresses e-mail doivent déjà être migrées et fonctionnelles. Par sécurité, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
 
-Pour cela, sélectionnez le service E-mail Pro, Exchange ou Zimbra concerné, puis rendez-vous sur l'onglet `Domaines associés`{.action} ou `Domaine`{.action} sur votre plateforme. Vérifiez la rubrique ou la colonne `Diagnostic`{.action}.
+Pour cela, sélectionnez le service Email Pro, Exchange ou Zimbra concerné, puis rendez-vous sur l'onglet `Domaines associés`{.action} ou `Domaine`{.action} sur votre plateforme. Vérifiez la rubrique ou la colonne `Diagnostic`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
@@ -123,7 +148,7 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
-[Premiers pas avec l'offre E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Premiers pas avec l'offre Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
 
 [Premiers pas avec l'offre Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
 

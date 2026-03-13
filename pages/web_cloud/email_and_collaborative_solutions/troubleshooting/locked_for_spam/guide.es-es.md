@@ -13,7 +13,33 @@ Cuando su dirección de correo electrónico está bloqueada por spam, significa 
 ## Requisitos
 
 - Disponer de un [plan de correo en OVHcloud](/links/web/emails).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**MX Plan:**
+
+- **Enlace directo:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ruta de navegación:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleccione su servicio MX Plan
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedimiento <a name="instructions"></a>
 
@@ -67,11 +93,6 @@ Seleccione el plan de correo electrónico en las siguientes pestañas:
 > [!tabs]
 > **Exchange**
 >>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Acceda a la sección `Web Cloud`{.action}.
->> 1. En el apartado `MICROSOFT`, haga clic en `Exchange`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
 >> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna "estado" de la dirección de correo electrónico correspondiente indica "bloqueado", haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Contacte con el soporte a través del tíquet de asistencia respondiendo a las 3 preguntas formuladas.<br>
 >> Continúe con la [etapa 3](#step3) de la guía.
 >>
@@ -79,22 +100,12 @@ Seleccione el plan de correo electrónico en las siguientes pestañas:
 >>
 > **Email Pro**
 >>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Haga clic en la pestaña `Web Cloud`{.action}.
->> 1. Haga clic en `Email Pro`{.action}.
->> 1. Seleccione la plataforma correspondiente.
->>
 >> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna "estado" a la derecha de la dirección de correo electrónico correspondiente indica "Spam", haga clic en esta mención y, seguidamente, en `Responder al tíquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Contacte con el soporte a través del tíquet de asistencia respondiendo a las 3 preguntas formuladas. <br>
 >> Continúe con la [etapa 3](#step3) de la guía.
 >>
 >> ![Columna estado Spam en la pestaña Cuentas de correo Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
->>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Haga clic en la pestaña `Web Cloud`{.action}.
->> 1. Haga clic en `MX Plan`{.action}.
->> 1. Seleccione el dominio correspondiente.
 >>
 >> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna "estado" a la derecha de la dirección de correo electrónico correspondiente indica "Spam", haga clic en esta mención y, seguidamente, en `Responder al tíquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Contacte con el soporte a través del tíquet de asistencia respondiendo a las 3 preguntas formuladas.<br>
 >> Continúe con la [etapa 3](#step3) de la guía.
@@ -104,11 +115,6 @@ Seleccione el plan de correo electrónico en las siguientes pestañas:
 > **MX Plan - RoundCube**
 >>
 >> Si el bloqueo afecta a una dirección de correo electrónico MX Plan con el webmail **RoundCube**, no hay tíquet de asistencia. Asegúrese de consultar la [etapa 1](#step1) de esta guía antes de seguir las instrucciones a continuación.
->>
->> 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
->> 1. Haga clic en la pestaña `Web Cloud`{.action}.
->> 1. Haga clic en `MX Plan`{.action}.
->> 1. Seleccione el dominio correspondiente.
 >>
 >> Acceda a la pestaña `Emails`{.action} de su plataforma. Si la columna "Bloqueado por SPAM" indica "Sí", haga clic en esta mención y, seguidamente, en `Cambiar la contraseña`{.action}. Su dirección de correo electrónico se ha desbloqueado. No necesita seguir la [etapa 3](#step3).
 >>

@@ -16,7 +16,7 @@ Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esva
 - Ter uma solução de e-mail OVHcloud:
     - **MX Plan** ([nova versão apenas](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proposto entre as nossas [ofertas de alojamento web](/links/web/hosting), incluído num [Alojamento gratuito 100M](/links/web/domains-free-hosting) 
     - ou [**Hosted Exchange**](/links/web/emails-hosted-exchange)
-    - ou [**Email Pro**](/links/web/email-pro)
+    - ou [**E-mail Pro**](/links/web/email-pro)
 - Conhecer os dados de acesso do endereço de e-mail em questão
 
 ## Instruções

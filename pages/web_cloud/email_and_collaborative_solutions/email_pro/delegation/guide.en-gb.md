@@ -13,8 +13,18 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 - an [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
 - at least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
-- access to the [OVHcloud Control Panel](/links/manager)
 - credentials for the email account that will be delegated new permissions
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 

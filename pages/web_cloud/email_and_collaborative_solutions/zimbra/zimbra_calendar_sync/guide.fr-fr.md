@@ -103,7 +103,7 @@ Suivez les étapes suivantes pour partager un calendrier avec un ou plusieurs co
 
 > [!primary]
 >
-> Si vous partagez votre calendrier avec un compte e-mail du même nom de domaine utilisant le webmail Roundcube (offre MX Plan) ou OWA (offres E-mail Pro et Exchange), l’adresse e-mail destinataire reçoit un lien d’accès au webmail Zimbra, permettant de créer un compte « invité » pour consulter le calendrier.
+> Si vous partagez votre calendrier avec un compte e-mail du même nom de domaine utilisant le webmail Roundcube (offre MX Plan) ou OWA (offres Email Pro et Exchange), l’adresse e-mail destinataire reçoit un lien d’accès au webmail Zimbra, permettant de créer un compte « invité » pour consulter le calendrier.
 >
 > ![zimbra_app](images/zimbra-calendar-webmail-07.png){.thumbnail .w-600 .h-600}
 
