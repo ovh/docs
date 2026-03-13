@@ -12,9 +12,19 @@ Si vous configurez votre serveur dédié en tant que serveur DNS, vous pouvez ut
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié](/links/bare-metal/bare-metal).
-* Disposer d'un [nom de domaine](/links/web/domains) dont vous avez la gestion administrative ou technique.
-* Être connecté à l’[espace client OVHcloud](/links/manager).
+* Disposer d’un [serveur dédié](/links/bare-metal/bare-metal).
+* Disposer d’un [nom de domaine](/links/web/domains) dont vous avez la gestion administrative ou technique.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -27,9 +37,7 @@ Si vous configurez votre serveur dédié en tant que serveur DNS, vous pouvez ut
 
 ### Ajout d'un domaine <a name="addingdomain"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur sous `Serveurs Dédiés`{.action}.
-
-Cliquez ensuite sur  l'onglet `DNS secondaire`{.action} puis sur le bouton `Ajouter un domaine`{.action}.
+Cliquez sur l'onglet `DNS secondaire`{.action} puis sur le bouton `Ajouter un domaine`{.action}.
 
 ![DNS secondaire](images/cp-01.png){.thumbnail}
 
