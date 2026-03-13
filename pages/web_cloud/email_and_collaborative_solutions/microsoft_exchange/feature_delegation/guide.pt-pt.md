@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais, que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
+Os serviços Exchange e E-mail Pro permitem beneficiar de endereços de e-mail profissionais, que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
 
 **Saiba como delegar os direitos da sua conta noutro agente.**
 
@@ -16,7 +16,7 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 > [!warning]
 >
-> **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
+> **Para a oferta [E-mail Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
 
 - Dispor dos identificadores relativos à conta que beneficiará dos novos direitos delegados.
 
@@ -31,9 +31,9 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 - **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

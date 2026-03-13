@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configurer son adresse e-mail sur Thunderbird pour Windows'
-excerpt: 'Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
+title: 'Email Pro - Configurer son adresse e-mail sur Thunderbird pour Windows'
+excerpt: 'Découvrez comment configurer votre adresse Email Pro sur Thunderbird pour Windows'
 updated: 2025-09-19
 ---
 
@@ -23,13 +23,13 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Thunderbird est un client de messagerie libre et gratuit.
 
-**Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows.**
+**Découvrez comment configurer votre adresse Email Pro sur Thunderbird pour Windows.**
 
 ## Prérequis
 
-- Disposer d’une adresse [E-mail Pro](/links/web/email-pro).
+- Disposer d’une adresse [Email Pro](/links/web/email-pro).
 - Disposer du logiciel Thunderbird installé sur votre votre appareil sous Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -56,7 +56,7 @@ Si vous éprouvez des difficultés à effectuer ces opérations, nous vous recom
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
 > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations générales`{.action}.
 
@@ -177,7 +177,7 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 >
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Thunderbird, consultez [le centre d'aide de Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Premiers pas avec la solution Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

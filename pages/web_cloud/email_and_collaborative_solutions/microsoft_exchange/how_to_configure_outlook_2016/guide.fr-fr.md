@@ -171,6 +171,6 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurer son compte Email Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

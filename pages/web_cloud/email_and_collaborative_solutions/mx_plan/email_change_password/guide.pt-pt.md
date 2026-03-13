@@ -18,7 +18,7 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
-    - [Email Pro](/links/web/email-pro).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -39,9 +39,9 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 - **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Selecione o seu serviço Zimbra
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
@@ -96,7 +96,7 @@ Siga as instruções indicadas na oferta:
 >> Clique no botão `...`{.action} e depois em `Alterar`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.<br>
 >> Clique no botão `...`{.action} e, a seguir, em `Alterar`{.action}.<br><br>
@@ -120,7 +120,7 @@ Siga as instruções indicadas na oferta:
 A modificação da sua palavra-passe através do webmail está disponível para as ofertas de e-mail OVHcloud que utilizam **OWA** (**O**utlook **W**eb **A**pp):
 
 - MX Plan OWA
-- Email Pro
+- E-mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter / Pro

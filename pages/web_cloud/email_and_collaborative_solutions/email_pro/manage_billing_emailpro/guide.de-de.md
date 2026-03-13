@@ -19,7 +19,7 @@ Die Dienstleistung E-Mail Pro verfügt über eine flexible Verwaltung für die A
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---

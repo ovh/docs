@@ -1,6 +1,6 @@
 ---
 title: Ajouter et gérer un nom de domaine sur une plateforme e-mail
-excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro
+excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou Email Pro
 updated: 2025-04-28
 ---
 
@@ -15,9 +15,9 @@ updated: 2025-04-28
 
 ## Objectif
 
-Ajouter un nom de domaine sur un service Exchange ou E-mail Pro est indispensable pour utiliser vos comptes inclus dans ce dernier. Il est possible d'ajouter plusieurs noms de domaine à un service Exchange ou E-mail Pro.
+Ajouter un nom de domaine sur un service Exchange ou Email Pro est indispensable pour utiliser vos comptes inclus dans ce dernier. Il est possible d'ajouter plusieurs noms de domaine à un service Exchange ou Email Pro.
 
-**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro.**
+**Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou Email Pro.**
 
 ## Prérequis
 
@@ -49,7 +49,7 @@ Ajouter un nom de domaine sur un service Exchange ou E-mail Pro est indispensabl
 
 ### Ajouter un nom de domaine
 
-1. Cliquez sur l'onglet `Domaine associés`{.action} de votre plateforme Exchange ou E-mail Pro.
+1. Cliquez sur l'onglet `Domaine associés`{.action} de votre plateforme Exchange ou Email Pro.
 1. Le tableau qui s'affiche vous indique les noms de domaine actuellement associés à votre service.
 1. Cliquez sur le bouton `Ajouter un domaine`{.action}.
 
@@ -143,13 +143,13 @@ Pour rappel, toutes les adresses créées sur votre service seront en mesure de 
 
 Une fois les comptes totalement configurés, vous pouvez commencer à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail**, accessible [ici](/links/web/email). Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa compatibilité avec le service.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](/links/web/emails-exchange) et [E-mail Pro](/links/web/email-pro).
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](/links/web/emails-exchange) et [Email Pro](/links/web/email-pro).
 
 Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](/links/manager) et des licences Office 365 sur la page [Microsoft 365](/links/web/ms365). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 ### Supprimer un nom de domaine d'une plateforme
 
-Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou E-mail Pro, vous devez vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressources, comptes partagés (uniquement sur Exchange), groupes, contacts externes ou pieds de page toujours configurés. Dans ce cas, il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
+Si vous souhaitez retirer un nom de domaine attaché à votre service Exchange ou Email Pro, vous devez vérifier que celui-ci n'est pas lié à des comptes e-mail, alias, ressources, comptes partagés (uniquement sur Exchange), groupes, contacts externes ou pieds de page toujours configurés. Dans ce cas, il sera nécessaire d'**attacher ces comptes à un autre nom de domaine** sur votre plateforme ou de les **supprimer**.
 
 > [!warning]
 >

@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
+title: 'E-mail Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu Mac'
 updated: 2025-04-28
 ---
@@ -28,7 +28,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---

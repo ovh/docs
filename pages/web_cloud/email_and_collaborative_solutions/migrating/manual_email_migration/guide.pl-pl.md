@@ -36,9 +36,9 @@ updated: 2026-01-16
 - **Bezpośredni link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz swoją usługę MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Bezpośredni link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Bezpośredni link:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz swoją platformę
 
 **Exchange:**

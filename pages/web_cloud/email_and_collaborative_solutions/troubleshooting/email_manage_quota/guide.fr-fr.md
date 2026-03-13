@@ -189,7 +189,7 @@ En effet, le logiciel de messagerie aura pour rôle de convertir vos e-mails en 
 
 Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant:
 
-- le protocole IMAP sur les offres **MXplan** et **E-mail Pro** ;
+- le protocole IMAP sur les offres **MXplan** et **Email Pro** ;
 - le protocole MAPI sur l'offre **Exchange** pour Outlook Windows ;
 - le protocole EWS sur l'offre **Exchange** pour Outlook macOS.
 
@@ -205,13 +205,13 @@ Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration p
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
-> **E-mail Pro**
+> **Email Pro**
 >>
->> Configuration d'un compte E-mail Pro sur **Windows** :<br><br>
+>> Configuration d'un compte Email Pro sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (inclus avec Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird) (gratuit)<br><br>
->> Configuration d'un compte E-mail Pro sur **macOS** :<br><br>
+>> Configuration d'un compte Email Pro sur **macOS** :<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos) (inclus avec macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird_mac) (gratuit)<br>
@@ -263,7 +263,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **MX Plan**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
 >>
 > **Email Pro**
 >>
@@ -282,7 +282,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 ## Aller plus loin
 
-[Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
+[Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 
 [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 

@@ -47,9 +47,9 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 - **Link direto:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link direto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link direto:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**

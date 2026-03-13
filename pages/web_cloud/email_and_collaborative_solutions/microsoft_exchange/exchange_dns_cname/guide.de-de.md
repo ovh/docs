@@ -31,9 +31,9 @@ Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie mögli
 - **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
 - **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -46,9 +46,9 @@ Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie mögli
 
 Der CNAME-Eintrag wird hier als Alias verwendet. Er verweist auf ein Ziel, das wiederum auf eine IP-Adresse verweist. Dieser Eintrag ist also nicht direkt mit einem E-Mail-Dienst verbunden.
 
-Der CNAME-Eintrag dient als Validierungscode (Token) für unsere Lösungen [**Hosted Exchange**](/links/web/emails-hosted-exchange) und [**Email Pro**](/links/web/email-pro). Er wird zur DNS-Zone des Domainnamens hinzugefügt, die Sie für die Verwendung mit Ihren E-Mails nutzen möchten. Damit soll überprüft werden, ob der Benutzer des E-Mail-Dienstes berechtigt ist, den hinzuzufügenden Domainnamen zu verwenden.
+Der CNAME-Eintrag dient als Validierungscode (Token) für unsere Lösungen [**Hosted Exchange**](/links/web/emails-hosted-exchange) und [**E-Mail Pro**](/links/web/email-pro). Er wird zur DNS-Zone des Domainnamens hinzugefügt, die Sie für die Verwendung mit Ihren E-Mails nutzen möchten. Damit soll überprüft werden, ob der Benutzer des E-Mail-Dienstes berechtigt ist, den hinzuzufügenden Domainnamen zu verwenden.
 
-In der folgenden Abbildung wird Ihr E-Mail-Dienst ([Exchange](/links/web/emails-exchange) oder [Email Pro](/links/web/email-pro)) als 
+In der folgenden Abbildung wird Ihr E-Mail-Dienst ([Exchange](/links/web/emails-exchange) oder [E-Mail Pro](/links/web/email-pro)) als 
 grün umrahmtes Feld dargestellt.<br>
 Sie haben Accounts hinzugefügt (**contact**, **john.smith**, **mary.johnson** in diesem Beispiel), für die E-Mail-Adressen erstellt werden sollen.<br>
 Der Domainname **mydomain.ovh** wurde zum E-Mail-Dienst hinzugefügt (siehe Anleitung „[Domainnamen zu Ihrem Exchange Dienst hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)“).<br>

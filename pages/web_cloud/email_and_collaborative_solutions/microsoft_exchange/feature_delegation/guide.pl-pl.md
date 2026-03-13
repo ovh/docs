@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Wprowadzenie
 
-Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na delegowanie określonych praw (takich jak prawo do wysyłki lub dostępu) między różnymi kontami e-mail.
+Usługi Exchange i E-mail Pro umożliwiają korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na delegowanie określonych praw (takich jak prawo do wysyłki lub dostępu) między różnymi kontami e-mail.
 
 **Dowiedz się, jak przydzielać uprawnienia do konta e-mail.**
 
@@ -16,7 +16,7 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 > [!warning]
 >
-> **W przypadku oferty [Email Pro](/links/web/email-pro)** Funkcje delegacji opisane w tym przewodniku są dostępne tylko w interfejsie [Webmail](/links/web/email). Protokoły umożliwiające korzystanie z nich za pośrednictwem programu pocztowego wymagają posiadania konta [Exchange](/links/web/emails-hosted-exchange).
+> **W przypadku oferty [E-mail Pro](/links/web/email-pro)** Funkcje delegacji opisane w tym przewodniku są dostępne tylko w interfejsie [Webmail](/links/web/email). Protokoły umożliwiające korzystanie z nich za pośrednictwem programu pocztowego wymagają posiadania konta [Exchange](/links/web/emails-hosted-exchange).
 
 - Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
 - Posiadanie danych dostępowych do konta e-mail, dla którego przydzielone zostaną nowe prawa
@@ -32,9 +32,9 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 - **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -64,7 +64,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 > **Exchange**
 >>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> 1. Kliknij zakładkę `Web Cloud`{.action}.
 >> 1. Kliknij `E-mail Pro`{.action}.

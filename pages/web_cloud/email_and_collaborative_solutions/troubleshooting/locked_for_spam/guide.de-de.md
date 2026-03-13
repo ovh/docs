@@ -26,9 +26,9 @@ Wenn Ihre E-Mail-Adresse wegen Spamversands gesperrt ist, bedeutet dies, dass be
 - **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -98,12 +98,12 @@ Wählen Sie den betroffenen E-Mail-Dienst in den folgenden Tabs aus:
 >>
 >> ![Spalte "Status gesperrt" im Tab "E-Mail-Accounts" Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
-> **Email Pro**
+> **E-Mail Pro**
 >>
 >> Gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Plattform. Wenn in der Spalte "Status" rechts neben der betroffenen E-Mail-Adresse "Spam" angezeigt wird, klicken Sie auf diesen Hinweis und dann auf `Ticket beantworten`{.action}. Die E-Mail-Adresse wird nicht automatisch entsperrt. Kontaktieren Sie den Support über das Support-Ticket, indem Sie die 3 gestellten Fragen beantworten. <br>
 >> Fahren Sie mit [Schritt 3](#step3) der Anleitung fort.
 >>
->> ![Spalte "Status Spam" im Tab "E-Mail-Accounts" Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>> ![Spalte "Status Spam" im Tab "E-Mail-Accounts" E-Mail Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
 >>

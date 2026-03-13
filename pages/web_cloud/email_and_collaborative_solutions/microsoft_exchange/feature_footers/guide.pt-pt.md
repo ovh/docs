@@ -25,9 +25,9 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 - **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

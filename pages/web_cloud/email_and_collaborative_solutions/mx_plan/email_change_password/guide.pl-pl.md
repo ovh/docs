@@ -18,7 +18,7 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 - Posiadanie skonfigurowanego wcześniej rozwiązania e-mail OVHcloud, spośród następujących:
     - **MX Plan** w ofercie [pakietów hostingowych](/links/web/hosting) lub zawarta w ofercie [darmowy hosting 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
-    - [Email Pro](/links/web/email-pro).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -39,9 +39,9 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 - **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wybierz usługę Zimbra
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**
@@ -96,7 +96,7 @@ Postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 >> Kliknij przycisk, po czym `...`{.action} kliknij `Zmień`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
 >> Kliknij przycisk, `...`{.action} a następnie `Zmień`{.action}.<br><br>
@@ -120,7 +120,7 @@ Postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pp):
 
 - MX Plan OWA
-- Email Pro
+- E-mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter / Pro

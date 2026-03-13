@@ -36,9 +36,9 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 - **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
 - **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -57,7 +57,7 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 > [!warning]
 >
-> Standardmäßig sind alle E-Mail-Accounts eines Dienstes miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain einen weiteren [Exchange oder Email Pro](/links/web/emails) Dienst zu bestellen.
+> Standardmäßig sind alle E-Mail-Accounts eines Dienstes miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain einen weiteren [Exchange oder E-Mail Pro](/links/web/emails) Dienst zu bestellen.
 >
 
 Im Fenster zum Hinzufügen einer Domain:

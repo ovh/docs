@@ -1,14 +1,14 @@
 ---
-title: 'E-mail Pro - Configurer son compte e-mail sur Mail pour macOS'
-excerpt: 'Apprenez à configurer votre compte E-mail Pro sur Mail de macOS'
+title: 'Email Pro - Configurer son compte e-mail sur Mail pour macOS'
+excerpt: 'Apprenez à configurer votre compte Email Pro sur Mail de macOS'
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tous les Mac.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tous les Mac.
 
-**Découvrez comment configurer votre adresse E-mail Pro sur Mail de macOS.**
+**Découvrez comment configurer votre adresse Email Pro sur Mail de macOS.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d’une adresse [E-mail Pro](/links/web/email-pro).
+- Disposer d’une adresse [Email Pro](/links/web/email-pro).
 - Disposer du logiciel Mail installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -38,7 +38,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
 > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 

@@ -114,7 +114,7 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-[Configurer votre compte E-mail Pro sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
+[Configurer votre compte Email Pro sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configurer votre compte e-mail MX plan sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 

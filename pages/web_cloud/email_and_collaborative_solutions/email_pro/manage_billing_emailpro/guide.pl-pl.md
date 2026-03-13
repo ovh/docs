@@ -19,7 +19,7 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -47,7 +47,7 @@ Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta.
 
 > [!primary]
 >
-> W przypadku uproszczonego zarządzania, fakturowanie każdego konta Email Pro jest automatycznie ustawione na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę subskrypcji, otrzymasz proporcjonalną fakturę z konta Email Pro.
+> W przypadku uproszczonego zarządzania, fakturowanie każdego konta E-mail Pro jest automatycznie ustawione na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę subskrypcji, otrzymasz proporcjonalną fakturę z konta E-mail Pro.
 >
 > **Przykład**: Następne zamówienie złożone w dniu 08 stycznia wraz z abonamentem miesięcznym wiąże się z opłaceniem w dniu 08 lutego. Poniższa faktura będzie dotyczyć okresu od 08 lutego do 1 marca.
 

@@ -82,6 +82,6 @@ OVHcloud propose également une application web disposant de [fonctions collabor
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 
-[Configurer son compte E-mail Pro sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+[Configurer son compte Email Pro sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

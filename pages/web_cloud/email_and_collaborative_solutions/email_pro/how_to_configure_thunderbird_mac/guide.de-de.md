@@ -38,7 +38,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Programmen eing
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---

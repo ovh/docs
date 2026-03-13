@@ -1,6 +1,6 @@
 ---
-title: "E-Mail Pro - Konfiguracja konta E-Mail Pro w nowej aplikacji Outlook na Windows"
-excerpt: "Dowiedz się, jak skonfigurować swoją adres E-Mail Pro w nowej aplikacji Outlook na Windows"
+title: "E-mail Pro - Konfiguracja konta E-mail Pro w nowej aplikacji Outlook na Windows"
+excerpt: "Dowiedz się, jak skonfigurować swoją adres E-mail Pro w nowej aplikacji Outlook na Windows"
 updated: 2026-01-09
 ---
 
@@ -26,15 +26,15 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konfigurowane na kompatybilnym kliencie pocztowym. Umożliwia to wysyłanie i odbieranie wiadomości z wybranej aplikacji.
+Adresy e-mail w ramach oferty [E-mail Pro](/links/web/email-pro) mogą być konfigurowane na kompatybilnym kliencie pocztowym. Umożliwia to wysyłanie i odbieranie wiadomości z wybranej aplikacji.
 
 **Nowa aplikacja Outlook** zastępuje od dnia 1 stycznia 2025 roku aplikację **Poczta** w systemie Windows. Więcej informacji na ten temat można znaleźć na oficjalnej stronie Microsoft "[Outlook dla systemu Windows: przyszłość poczty, kalendarza i Osoby na Windows 11](https://support.microsoft.com/pl-pl/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
-**Dowiedz się, jak skonfigurować swoją adresę E-Mail Pro w nowej aplikacji Outlook na Windows.**
+**Dowiedz się, jak skonfigurować swoją adresę E-mail Pro w nowej aplikacji Outlook na Windows.**
 
 ## Wymagania początkowe
 
-- Posiadanie adresu [E-Mail Pro](/links/web/email-pro).
+- Posiadanie adresu [E-mail Pro](/links/web/email-pro).
 - Posiadanie [nowej aplikacji Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) na system Windows.
 - Posiadanie danych dostępowych do konfigurowanego adresu e-mail.
 
@@ -43,7 +43,7 @@ Adresy e-mail w ramach oferty [E-Mail Pro](/links/web/email-pro) mogą być konf
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -176,7 +176,7 @@ Do wysyłania e-maili użyj następujących parametrów **SMTP**:
 >
 > Więcej informacji na temat konfiguracji adresu e-mail w nowej aplikacji Outlook na Windows można znaleźć w [centrum pomocy Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Podstawowe informacje o rozwiązaniu E-Mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Podstawowe informacje o rozwiązaniu E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

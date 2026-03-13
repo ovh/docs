@@ -42,9 +42,9 @@ Chcesz:
 - **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**
@@ -100,7 +100,7 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 >> ![e-mail](images/email-mxplan-new-reset.png){.thumbnail}
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> 1. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.
 >> 1. Kliknij na przycisk `...` po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.

@@ -95,7 +95,7 @@ Pour retirer le filtre, cliquez simplement sur la croix du filtre.
 
 > [!warning]
 >
-> Pour un fonctionnement optimal lorsque vous utilisez le même nom de domaine entre les offres OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) et Zimbra, il est nécessaire de configurer le nom de domaine en `non-authoritatif`. Pour savoir comment configurer un nom de domaine en non-authoritatif sur une plateforme Exchange ou E-mail Pro, consultez notre guide [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Pour un fonctionnement optimal lorsque vous utilisez le même nom de domaine entre les offres OVHcloud [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) et Zimbra, il est nécessaire de configurer le nom de domaine en `non-authoritatif`. Pour savoir comment configurer un nom de domaine en non-authoritatif sur une plateforme Exchange ou Email Pro, consultez notre guide [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 Vous retrouvez dans cet onglet l'ensemble des noms de domaine ajoutés à votre service Zimbra. Ils doivent être gérés depuis votre espace client OVHcloud pour être ajoutés.
 

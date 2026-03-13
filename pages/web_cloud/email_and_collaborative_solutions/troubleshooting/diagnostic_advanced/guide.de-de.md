@@ -47,7 +47,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 - **Direktlink:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
 - **Direktlink:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus

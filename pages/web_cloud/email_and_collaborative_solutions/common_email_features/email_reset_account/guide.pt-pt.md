@@ -42,9 +42,9 @@ Deseja:
 - **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
@@ -100,7 +100,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 >> ![e-mail](images/email-mxplan-new-reset.png){.thumbnail}
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
 >> 1. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.

@@ -1,14 +1,14 @@
 ---
-title: "E-mail Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad"
-excerpt: "Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail"
+title: "Email Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad"
+excerpt: "Apprenez à configurer un compte Email Pro sur un iPhone ou un iPad, via l'application Mail"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d'utiliser votre adresse e-mail depuis l'appareil de votre choix.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d'utiliser votre adresse e-mail depuis l'appareil de votre choix.
 
-**Apprenez à configurer votre compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail.**
+**Apprenez à configurer votre compte Email Pro sur un iPhone ou un iPad, via l'application Mail.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d'un [compte E-mail Pro](/links/web/email-pro).
+- Disposer d'un [compte Email Pro](/links/web/email-pro).
 - Disposer de l’application Mail installée sur votre appareil iOS.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -40,7 +40,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
 > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 
@@ -56,13 +56,13 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action} (
 |---|---|
 |![exchange](images/configuration-mail-ios-step01.gif){.thumbnail}|1. Dans  `Réglages`, allez sur `Mail`. <br><br> 2. Appuyez sur `Comptes`.<br><br> 3. Appuyez sur `Ajouter un compte`.<br><br> 4. Choisissez `Autre` tout en bas.|
 |5. Appuyez sur `Ajouter un compte Mail`.<br><br>6. Saisissez votre **nom**, votre adresse **e-mail**, votre **mot de passe** et une **description** de votre compte.<br><br>7. Appuyez sur `Suivant`.|![exchange](images/configuration-mailpro-ios-step02.png){.thumbnail}|
-|![exchange](images/configuration-mailpro-ios-step03.png){.thumbnail}|8. Sélectionnez le type de serveur de réception `IMAP`(recommandé) ou `POP`.<br><br>Dans les sections `SERVEUR DE RECEPTION` et `SERVEUR D'ENVOI`, malgré la mention « facultatif », saisissez: <br>- le nom d'hôte **pro?.mail.ovh.net** ( remplacez le **?** par le numéro de serveur de votre E-mail Pro) <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
+|![exchange](images/configuration-mailpro-ios-step03.png){.thumbnail}|8. Sélectionnez le type de serveur de réception `IMAP`(recommandé) ou `POP`.<br><br>Dans les sections `SERVEUR DE RECEPTION` et `SERVEUR D'ENVOI`, malgré la mention « facultatif », saisissez: <br>- le nom d'hôte **pro?.mail.ovh.net** ( remplacez le **?** par le numéro de serveur de votre Email Pro) <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
 
 En fin de configuration, assurez-vous de bien laisser `Mail`{.action} coché afin que l'application puisse utiliser ce compte, puis cliquez sur `Sauvegarder`{.action}.
 
 Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
 
-Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro.
+Si vous êtes amené à renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre Email Pro.
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|

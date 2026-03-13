@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
+title: 'E-mail Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w interfejsie online programu pocztowego Gmail'
 updated: 2025-12-31
 ---
@@ -36,7 +36,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---

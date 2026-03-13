@@ -75,7 +75,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 - Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
     - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails-exchange).
-    - [Email Pro](/links/web/email-pro).
+    - [E-mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -96,9 +96,9 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 - **Ligação direta:** [Zimbra](/links/control-panel/web-zimbra)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
@@ -120,7 +120,7 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 - **MX Plan Zimbra**: Corresponde à oferta MX Plan que utiliza o webmail Zimbra.
 - **MX Plan OWA**: Corresponde à oferta MX Plan utilizando o webmail Outlook Web App (OWA).
 - **Exchange**: Aplicável às ofertas **Hosted**, **Private** e **Dedicated*** Exchange que utilizam o webmail Outlook Web App (OWA).
-- **Email Pro**: Oferta de e-mail baseado em Exchange que utiliza o webmail Outlook Web App (OWA).
+- **E-mail Pro**: Oferta de e-mail baseado em Exchange que utiliza o webmail Outlook Web App (OWA).
 - **Zimbra**: Oferta dedicada que utiliza o webmail Zimbra.
 - **Redirect**: Esta oferta gratuita está automaticamente disponível se dispuser de um domínio na Área de Cliente sem que tenha recebido uma oferta por e-mail. Permite criar reencaminhamentos de e-mail.
 

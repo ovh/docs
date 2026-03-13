@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configure your email account on Thunderbird for macOS'
-excerpt: 'Find out how to configure your E-mail Pro address on Thunderbird for macOS'
+title: 'Email Pro - Configure your email account on Thunderbird for macOS'
+excerpt: 'Find out how to configure your Email Pro address on Thunderbird for macOS'
 updated: 2025-09-19
 ---
 
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Email Pro accounts can be configured on different compatible email clients. This allows you to use your email address from the device of your choice. Thunderbird is a free and open-source email client.
 
-**This guide explains how to configure your E-mail Pro address on Thunderbird for macOS.**
+**This guide explains how to configure your Email Pro address on Thunderbird for macOS.**
 
 ## Requirements
 

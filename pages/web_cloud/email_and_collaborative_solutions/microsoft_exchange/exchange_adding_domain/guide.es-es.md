@@ -143,7 +143,7 @@ Le recordamos que todas las direcciones creadas en el servicio podrán ver en el
 
 Una vez que haya configurado las cuentas, ya puede empezar a utilizarlas. Para ello, OVHcloud pone a su disposición el **webmail**, disponible [aquí](/links/web/email). Para un uso óptimo de su dirección en un programa, asegúrese de que es compatible con el servicio.
 
-Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails-exchange) y [E-mail Pro](/links/web/email-pro).
+Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails-exchange) y [Email Pro](/links/web/email-pro).
 
 Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](/links/manager) y licencias Office 365 en la página [Microsoft 365](/links/web/ms365). Le recomendamos una de estas soluciones si desea disfrutar del cliente de correo Outlook o de más programas de la suite Office, según sus necesidades.
 

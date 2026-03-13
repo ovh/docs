@@ -5,7 +5,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-As contas Email Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A aplicação Mail no macOS está disponível gratuitamente em todos os Mac.
+As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A aplicação Mail no macOS está disponível gratuitamente em todos os Mac.
 
 **Saiba como configurar o seu endereço de E-mail Pro no Mail do macOS.**
 
@@ -27,7 +27,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

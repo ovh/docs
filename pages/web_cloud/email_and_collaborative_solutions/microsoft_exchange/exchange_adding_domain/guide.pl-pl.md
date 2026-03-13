@@ -21,7 +21,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Exchange](/links/web/emails-exchange) lub [Email Pro](/links/web/email-pro).
+- Posiadanie rozwiązania [Exchange](/links/web/emails-exchange) lub [E-mail Pro](/links/web/email-pro).
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
 
@@ -36,9 +36,9 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 - **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -57,7 +57,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 > [!warning]
 >
-> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub Email Pro](/links/web/emails) dla danej domeny lub domen.
+> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub E-mail Pro](/links/web/emails) dla danej domeny lub domen.
 >
 
 W oknie dodawania domeny:

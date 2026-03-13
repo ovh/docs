@@ -18,7 +18,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
     - [Exchange](/links/web/emails-exchange).
-    - [Email Pro](/links/web/email-pro).
+    - [E-Mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -39,9 +39,9 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
 - **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wählen Sie Ihren Zimbra Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -120,7 +120,7 @@ Folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pp) verfügbar:
 
 - MX Plan OWA
-- Email Pro
+- E-Mail Pro
 - Exchange
 - MX Plan Zimbra
 - Zimbra Starter et Pro

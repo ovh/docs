@@ -85,7 +85,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >> ![Email Pro](images/emailpro01_fr.png){.thumbnail .w-500}
 >>
 >> 1. Offre e-mail basée sur la technologie Exchange, offrant des fonctionnalités essentielles avec un espace de stockage de 10 Go.
->> 2. Vous pouvez commander un compte E-mail Pro via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
+>> 2. Vous pouvez commander un compte Email Pro via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
 >> 3. Cette offre utilise l'interface webmail **OWA** (Outlook Web Access).
 >>
 > **Exchange**
@@ -323,7 +323,7 @@ Si vous avez souscrit à l'une de nos [offres e-mail OVHcloud](/links/web/emails
 
 Vous souhaitez changer d'[offre e-mail](/links/web/emails) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante ? Pour cela nous vous invitons à suivre le guide de migration correspondant à votre besoin :
 
-- [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Migrer une adresse e-mail MX Plan vers un compte Email Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 - [Migrer des comptes e-mail via OVHcloud Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).

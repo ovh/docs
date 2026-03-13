@@ -80,7 +80,7 @@ OVHcloud propose également une application web disposant des [fonctions collabo
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
 
-[Configurer son compte E-mail Pro sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).
+[Configurer son compte Email Pro sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

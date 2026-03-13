@@ -5,7 +5,7 @@ updated: 2020-10-24
 
 ## Wprowadzenie
 
-Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na delegowanie określonych praw (takich jak prawo do wysyłki lub dostępu) między różnymi kontami e-mail.
+Usługi Exchange i E-mail Pro umożliwiają korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Jedna z nich pozwala na delegowanie określonych praw (takich jak prawo do wysyłki lub dostępu) między różnymi kontami e-mail.
 
 **Dowiedz się, jak przydzielać uprawnienia do konta e-mail.**
 
@@ -20,7 +20,7 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---

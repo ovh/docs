@@ -38,7 +38,7 @@ As contas E-mail Pro podem ser configuradas em diferentes softwares de e-mail co
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

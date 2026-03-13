@@ -5,7 +5,7 @@ updated: 2020-10-24
 
 ## Objetivo
 
-Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
+Os serviços Exchange e E-mail Pro permitem beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo graças a diferentes funcionalidades. Uma delas permite delegar direitos específicos (como o de envio ou de acesso) entre diferentes contas de e-mail.
 
 **Saiba como delegar os direitos da sua conta de e-mail noutro utilizador.**
 
@@ -20,7 +20,7 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

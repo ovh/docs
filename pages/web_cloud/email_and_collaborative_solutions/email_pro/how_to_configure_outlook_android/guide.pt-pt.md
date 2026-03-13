@@ -1,6 +1,6 @@
 ---
 title: "E-mail Pro - Configurar um endereço de e-mail no Outlook para Android"
-excerpt: "Saiba como configurar uma conta Email Pro no Adroid com a aplicação Microsoft Outlook"
+excerpt: "Saiba como configurar uma conta E-mail Pro no Adroid com a aplicação Microsoft Outlook"
 updated: 2025-08-18
 ---
 
@@ -30,7 +30,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---

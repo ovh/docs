@@ -1,12 +1,12 @@
 ---
 title: "Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren"
-excerpt: "Erfahren Sie, wie Sie E-Mail-Adressen von einer Exchange- oder E-mail Pro-Plattform zu einer anderen Exchange-, E-mail Pro-, MX Plan- oder Zimbra-Plattform migrieren können"
+excerpt: "Erfahren Sie, wie Sie E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform zu einer anderen Exchange-, E-Mail Pro-, MX Plan- oder Zimbra-Plattform migrieren können"
 updated: 2026-01-16
 ---
 
 ## Ziel
 
-Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform auf eine andere Exchange-, E-mail Pro-, MX Plan- oder Zimbra-Plattform migrieren. In dieser Anleitung wird ein  zweistufiger Migrationsprozess beschrieben:
+Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform auf eine andere Exchange-, E-Mail Pro-, MX Plan- oder Zimbra-Plattform migrieren. In dieser Anleitung wird ein  zweistufiger Migrationsprozess beschrieben:
 
 1. **Konfigurieren der Zielplattform**
 2. **Migration der E-Mail-Accounts** von der bestehenden Plattform auf die neue
@@ -36,7 +36,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 - **Direktlink:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
 - **Direktlink:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
@@ -63,7 +63,7 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 >
 > ![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie im [E-mail Pro-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), im [Exchange-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) oder im [Zimbra-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie im [E-Mail Pro-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config), im [Exchange-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) oder im [Zimbra-Leitfaden](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### E-Mail Accounts migrieren <a name="accountsmigration"></a>
 
@@ -75,8 +75,8 @@ Die Migration Ihrer E-Mail-Accounts erfolgt in 3 großen Schritten: **Umbenennen
 >
 > Sonderfälle:
 >
-> - Wenn Sie **ein Exchange- oder Zimbra PRO-Konto** zu einem **E-mail Pro-** oder **Zimbra STARTER-Konto** migrieren, müssen Sie sicherstellen, dass Ihre E-Mail-Konten nicht mehr als 10 GB (E-mail Pro) oder 15 GB (Zimbra STARTER) enthalten. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei E-mail Pro oder Zimbra STARTER nicht vorhanden und können nicht migriert werden.
-> - Wenn Sie **ein Exchange-, E-mail Pro- oder Zimbra-Konto** zu einem **MX Plan-Konto** migrieren, müssen Sie sicherstellen, dass Ihr E-Mail-Konto nicht mehr als 5 GB enthält. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei MX Plan nicht vorhanden und können nicht migriert werden.
+> - Wenn Sie **ein Exchange- oder Zimbra PRO-Konto** zu einem **E-Mail Pro-** oder **Zimbra STARTER-Konto** migrieren, müssen Sie sicherstellen, dass Ihre E-Mail-Konten nicht mehr als 10 GB (E-Mail Pro) oder 15 GB (Zimbra STARTER) enthalten. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei E-Mail Pro oder Zimbra STARTER nicht vorhanden und können nicht migriert werden.
+> - Wenn Sie **ein Exchange-, E-Mail Pro- oder Zimbra-Konto** zu einem **MX Plan-Konto** migrieren, müssen Sie sicherstellen, dass Ihr E-Mail-Konto nicht mehr als 5 GB enthält. Die Funktionen zur Zusammenarbeit, die Synchronisierung von Kalendern und Kontakten sind bei MX Plan nicht vorhanden und können nicht migriert werden.
 
 #### Umbenennen
 
@@ -124,7 +124,7 @@ Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Pla
 
 Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie den betreffenden E-mail Pro-, Exchange- oder Zimbra-Service aus und gehen Sie zum Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
+Wählen Sie den betreffenden E-Mail Pro-, Exchange- oder Zimbra-Service aus und gehen Sie zum Tab `Zugeordnete Domains`{.action} oder `Domain`{.action} auf Ihrer Plattform. Überprüfen Sie den Abschnitt oder die Spalte `Diagnose`{.action}.
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
@@ -152,7 +152,7 @@ Wenn Sie einen der migrierten Accounts auf einem lokalen E-Mail-Client eingerich
 
 [Verwaltung der Kontakte Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts)
 
-[Erste Schritte mit dem E-mail Pro-Angebot](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
+[Erste Schritte mit dem E-Mail Pro-Angebot](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config).
 
 [Erste Schritte mit dem Exchange-Angebot](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted).
 

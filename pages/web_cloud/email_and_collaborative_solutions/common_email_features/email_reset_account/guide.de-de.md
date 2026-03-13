@@ -42,9 +42,9 @@ Sie möchten:
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
 - **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**

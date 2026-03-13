@@ -1,6 +1,6 @@
 ---
-title: "Email Pro - Konfigurieren Ihres Email Pro Accounts im neuen Outlook für Windows"
-excerpt: "Erfahren Sie, wie Sie Ihre Email Pro Adresse im neuen Outlook für Windows konfigurieren"
+title: "E-Mail Pro - Konfigurieren Ihres E-Mail Pro Accounts im neuen Outlook für Windows"
+excerpt: "Erfahren Sie, wie Sie Ihre E-Mail Pro Adresse im neuen Outlook für Windows konfigurieren"
 updated: 2026-01-09
 ---
 
@@ -26,15 +26,15 @@ details[open]>summary::before {
 
 ## Ziel
 
-Die E-Mail-Accounts des [Email Pro](/links/web/email-pro) Angebots können in einem kompatiblen E-Mail-Client konfiguriert werden. Dies ermöglicht es Ihnen, Nachrichten von der Anwendung Ihrer Wahl zu senden und zu empfangen.
+Die E-Mail-Accounts des [E-Mail Pro](/links/web/email-pro) Angebots können in einem kompatiblen E-Mail-Client konfiguriert werden. Dies ermöglicht es Ihnen, Nachrichten von der Anwendung Ihrer Wahl zu senden und zu empfangen.
 
 Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite [Outlook für Windows: Die Zukunft von Mail, Kalender und Personen auf Windows 11](https://support.microsoft.com/de-de/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
-**Diese Anleitung erklärt, wie Sie Ihren Email Pro Account im neuen Outlook für Windows konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Ihren E-Mail Pro Account im neuen Outlook für Windows konfigurieren.**
 
 ## Voraussetzungen
 
-- Sie haben einen [Email Pro](/links/web/email-pro) E-Mail-Account.
+- Sie haben einen [E-Mail Pro](/links/web/email-pro) E-Mail-Account.
 - Das [neue Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) für Windows besitzen.
 - Sie haben Zugangsdaten für den zu konfigurierenden E-Mail-Account.
 
@@ -43,7 +43,7 @@ Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Janua
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -176,7 +176,7 @@ Für das Senden von E-Mails finden Sie unten die **SMTP**-Einstellungen:
 >
 > Weitere Informationen zur Konfiguration von Accounts im neuen Outlook Client für Windows finden Sie im [Help Center von Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Erste Schritte mit der Email Pro Lösung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Erste Schritte mit der E-Mail Pro Lösung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

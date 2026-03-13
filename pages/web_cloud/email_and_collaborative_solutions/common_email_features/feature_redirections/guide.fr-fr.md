@@ -146,11 +146,11 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
     - [Outlook Web App (OWA)](#redirect-delete-owa)
     - [Zimbra](#redirect-delete-zimbra)
 - [Créer un alias](#alias)
-    - [Exchange / E-mail Pro / MX Plan](#alias-exchange-emp-mxplan)
+    - [Exchange / Email Pro / MX Plan](#alias-exchange-emp-mxplan)
     - [MX Plan Roundcube](#alias-mxplan-roundcube)
     - [Zimbra](#alias-mxplan-roundcube)
 - [Supprimer un alias](#alias-delete)
-    - [Exchange / E-mail Pro / MX Plan](#alias-delete-exchange-emp-mxplan)
+    - [Exchange / Email Pro / MX Plan](#alias-delete-exchange-emp-mxplan)
     - [MX Plan Roundcube](#alias-delete-mxplan-roundcube)
     - [Zimbra](#alias-delete-zimbra)
 
@@ -235,10 +235,10 @@ La création d'une redirection se fait par le biais de règles de boîte de réc
 >
 > - **MX Plan OWA**.
 > - **Exchange**.
-> - **E-mail Pro**.
+> - **Email Pro**.
 >
 
-Outlook Web App est une interface utilisée pour nos offres **Exchange**, **E-mail Pro** et une partie des comptes **MX Plan**.
+Outlook Web App est une interface utilisée pour nos offres **Exchange**, **Email Pro** et une partie des comptes **MX Plan**.
 
 Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outlook Web App :
 
@@ -423,9 +423,9 @@ Rendez-vous sur le [webmail](/links/web/email). Saisissez **l'adresse e-mail** e
 
 Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
 
-#### Exchange / E-mail Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
+#### Exchange / Email Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
 
-Depuis votre service e-mail (Exchange, E-mail Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange, Email Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -485,9 +485,9 @@ Depuis votre service Zimbra, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 ### Supprimer un alias <a name="alias-delete"></a>
 
-#### Exchange / E-mail Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
+#### Exchange / Email Pro / MX Plan <a name="alias-delete-exchange-emp-mxplan"></a>
 
-Depuis votre service e-mail (Exchange, E-mail Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
+Depuis votre service e-mail (Exchange, Email Pro ou MX Plan), cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 
@@ -543,7 +543,7 @@ Depuis votre service Zimbra, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 [Premiers pas avec le service Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
-[Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Premiers pas avec la solution Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 

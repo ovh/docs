@@ -16,7 +16,7 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 > [!warning]
 >
-> **Für [Email Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](/links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](/links/web/emails-hosted-exchange).
+> **Für [E-Mail Pro](/links/web/email-pro)** können die in dieser Anleitung beschriebenen Delegierungsfunktionen nur über [Webmail](/links/web/email) verwendet werden. Die Protokolle, die ihre Verwendung über einen E-Mail-Client ermöglichen, erfordern einen [Exchange-Account](/links/web/emails-hosted-exchange).
 
 - Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
 - Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
@@ -32,9 +32,9 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 - **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
 - **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---

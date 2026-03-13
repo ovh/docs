@@ -1,12 +1,12 @@
 ---
-title: 'Email Pro - Configure sua conta de e-mail no Outlook para macOS'
-excerpt: 'Saiba como configurar uma conta Email Pro no Outlook para Mac'
+title: 'E-mail Pro - Configure sua conta de e-mail no Outlook para macOS'
+excerpt: 'Saiba como configurar uma conta E-mail Pro no Outlook para Mac'
 updated: 2025-04-28
 ---
 
 ## Sumário
 
-As contas Email Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
+As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
 
 > [!warning]
 >
@@ -16,7 +16,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter o serviço [Email Pro](/links/web/email-pro).
+- Ter o serviço [E-mail Pro](/links/web/email-pro).
 - Ter a aplicação Microsoft Outlook instalada no seu dispositivo Mac.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -25,7 +25,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
@@ -74,7 +74,7 @@ Se quiser, pode efetuar um teste de envio para verificar se a conta está corret
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos nas preferências da conta, estes são os valores que deve utilizar para a solução Email Pro.
+Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos nas preferências da conta, estes são os valores que deve utilizar para a solução E-mail Pro.
 
 |Tipo de servidor|Nome do servidor|SSL|Porta|
 |---|---|---|---|

@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
+title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
 excerpt: 'So konfigurieren Sie Ihren E-Mail Pro Account auf Outlook für Mac'
 updated: 2025-04-28
 ---
@@ -27,7 +27,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -44,7 +44,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
 > Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um zum Bereich `E-Mail Pro`{.action} zu gelangen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >

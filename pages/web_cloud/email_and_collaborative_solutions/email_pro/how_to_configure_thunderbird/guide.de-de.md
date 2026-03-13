@@ -38,7 +38,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 > [!warning]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
 > Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um zum Bereich `E-Mail Pro`{.action} zu gelangen. Der Servername ist im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} sichtbar.
 

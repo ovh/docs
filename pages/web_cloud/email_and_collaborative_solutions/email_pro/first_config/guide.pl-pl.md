@@ -21,7 +21,7 @@ Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjo
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -58,8 +58,8 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 
 > **Rozumienie trybów autorytatywnych i nieautorytatywnych**
 >
-> - Gdy wiadomość e-mail jest przesyłana do platformy E-mail Pro (*Inbound mail server Email Pro*) w trybie **autorytatywnym**, wszystkie adresy e-mail przypisane do Twojej domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro "*Inbound mail server Email Pro*" zwróci nadawcy wiadomość o niepowodzeniu, ponieważ ten adres nie istnieje na serwerze E-mail Pro "*Inbound mail server Email Pro*".
-> - Gdy wiadomość e-mail jest wysyłana do platformy e-mail E-mail Pro (*Inbound mail server Email Pro*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej domeny są rozdzielone między Twoją główną platformę e-mail (*Inbound mail server Email Pro*) i inną usługę e-mail (*Inbound mail server MX Plan*). <br> <br> Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro *Inbound mail server Email Pro* prześle wiadomość e-mail do serwera MX Plan "*Inbound mail server MX Plan*", aby serwer mógł ją dostarczyć.
+> - Gdy wiadomość e-mail jest przesyłana do platformy E-mail Pro (*Inbound mail server E-mail Pro*) w trybie **autorytatywnym**, wszystkie adresy e-mail przypisane do Twojej domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro "*Inbound mail server E-mail Pro*" zwróci nadawcy wiadomość o niepowodzeniu, ponieważ ten adres nie istnieje na serwerze E-mail Pro "*Inbound mail server E-mail Pro*".
+> - Gdy wiadomość e-mail jest wysyłana do platformy e-mail E-mail Pro (*Inbound mail server E-mail Pro*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej domeny są rozdzielone między Twoją główną platformę e-mail (*Inbound mail server E-mail Pro*) i inną usługę e-mail (*Inbound mail server MX Plan*). <br> <br> Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro *Inbound mail server E-mail Pro* prześle wiadomość e-mail do serwera MX Plan "*Inbound mail server MX Plan*", aby serwer mógł ją dostarczyć.
 >
 > ![Dodaj Domenę](images/authoritative-mode.png){.thumbnail}
 >

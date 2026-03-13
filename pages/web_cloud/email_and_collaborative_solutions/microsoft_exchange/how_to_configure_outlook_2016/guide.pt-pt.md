@@ -171,6 +171,6 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 [Configurar um endereço de e-mail no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
-[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurar uma conta E-mail Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Fale com nossa [comunidade de utilizadores](/links/community).

@@ -41,7 +41,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -59,7 +59,7 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!warning]
 >
-> Diese Dokumentation gilt ausschließlich für **Klassisches Outlook**, der in der Microsoft 365-Suite erhältlich ist. Wenn Sie die neue Outlook-Version verwenden, konsultieren Sie unsere Anleitung "[Email Pro - Konfigurieren Ihres Email Pro Accounts im neuen Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Diese Dokumentation gilt ausschließlich für **Klassisches Outlook**, der in der Microsoft 365-Suite erhältlich ist. Wenn Sie die neue Outlook-Version verwenden, konsultieren Sie unsere Anleitung "[E-Mail Pro - Konfigurieren Ihres E-Mail Pro Accounts im neuen Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Um Klassisches Outlook auf Ihrem Windows-Computer zu installieren, laden Sie es von der Microsoft-Seite "[Installieren oder Erneutes Installieren des klassischen Outlook auf einem Windows-PC](https://support.microsoft.com/de-de/office/outlook-classic-installieren-oder-neu-installieren-5c94902b-31a5-4274-abb0-b07f4661edf5)" herunter und installieren Sie es.
 >
@@ -71,7 +71,7 @@ Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten D
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
 > Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um auf den Bereich `E-Mail Pro`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.
 

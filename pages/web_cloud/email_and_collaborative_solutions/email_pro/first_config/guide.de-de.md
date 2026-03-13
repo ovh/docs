@@ -21,7 +21,7 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 ---
@@ -58,8 +58,8 @@ Das Fenster zeigt dann die Informationen zur Konfiguration eines Modus an.
 
 > **Autoritativer Modus und nicht-autoritativer Modus**
 >
-> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) übermittelt wird, werden alle E-Mail-Adressen Ihres Domainnamens ausschließlich auf dieser Plattform gehostet. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der E-Mail Pro Server *Inbound mail server Email Pro* eine Fehlermeldung an den Absender, da diese Adresse auf dem E-Mail Pro Server *Inbound mail server Email Pro* nicht existiert.
-> - Wenn eine E-Mail im **nicht-autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) gesendet wird, werden die E-Mail-Adressen Ihrer Domain zwischen Ihrer Haupt-E-Mail-Plattform (*Inbound Mail Server Email Pro*) und einem anderen E-Mail-Dienst (*Inbound Mail Server MX Plan*) aufgeteilt. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, wird die E-Mail vom E-Mail Pro *Inbound Mail Server Email Pro* an den MX Plan Server *Inbound mail server MX Plan* weitergeleitet, damit dieser die E-Mail bereitstellen kann.
+> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server E-Mail Pro*) übermittelt wird, werden alle E-Mail-Adressen Ihres Domainnamens ausschließlich auf dieser Plattform gehostet. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der E-Mail Pro Server *Inbound mail server E-Mail Pro* eine Fehlermeldung an den Absender, da diese Adresse auf dem E-Mail Pro Server *Inbound mail server E-Mail Pro* nicht existiert.
+> - Wenn eine E-Mail im **nicht-autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server E-Mail Pro*) gesendet wird, werden die E-Mail-Adressen Ihrer Domain zwischen Ihrer Haupt-E-Mail-Plattform (*Inbound Mail Server E-Mail Pro*) und einem anderen E-Mail-Dienst (*Inbound Mail Server MX Plan*) aufgeteilt. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, wird die E-Mail vom E-Mail Pro *Inbound Mail Server E-Mail Pro* an den MX Plan Server *Inbound mail server MX Plan* weitergeleitet, damit dieser die E-Mail bereitstellen kann.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -168,7 +168,7 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 > [!primary]
 >
-> In den Anleitungen verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In den Anleitungen verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 > 
 > Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} Ihres E-Mail Pro Dienstes angezeigt.
 >

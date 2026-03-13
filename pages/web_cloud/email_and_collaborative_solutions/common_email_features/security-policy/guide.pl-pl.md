@@ -26,9 +26,9 @@ Usługi e-mail OVHcloud umożliwiają korzystanie z profesjonalnych kont e-mail.
 - **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 **Exchange:**

@@ -256,7 +256,7 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 >>
 >> > [!primary]
 >> >
->> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service E-mail Pro.
+>> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service Email Pro.
 >> >
 >> > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >>
@@ -351,7 +351,7 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 >
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur macOS, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/ajouter-un-compte-de-courrier-dans-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
-[Configurer son compte E-mail Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Configurer son compte Email Pro sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 [Configurer son compte Exchange sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

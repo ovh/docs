@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
-excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook classique pour Windows'
+title: 'Email Pro - Configurer un compte e-mail sur Outlook classique pour Windows'
+excerpt: 'Découvrez comment configurer votre compte Email Pro sur Outlook classique pour Windows'
 updated: 2026-01-30
 ---
 
@@ -26,13 +26,13 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
+Les comptes Email Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix.
 
-**Découvrez comment configurer votre adresse e-mail E-mail Pro sur Outlook ou ultérieur pour Windows.**
+**Découvrez comment configurer votre adresse e-mail Email Pro sur Outlook ou ultérieur pour Windows.**
 
 ## Prérequis
 
-- Disposer d’un compte e-mail [E-mail Pro](/links/web/email-pro).
+- Disposer d’un compte e-mail [Email Pro](/links/web/email-pro).
 - Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -59,7 +59,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide « [E-mail Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) ».
+> Cette documentation s’applique uniquement à **Outlook classique** disponible dans la suite Microsoft 365. Si vous utilisez le nouvel Outlook, consultez notre guide « [Email Pro - Ajouter un compte e-mail sur le nouvel Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) ».
 >
 > Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » et installez-le.
 >
@@ -71,7 +71,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Email Pro.
 >
 > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 
@@ -231,7 +231,7 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 >>
 >> > [!primary]
 >> >
->> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service E-mail Pro.
+>> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service Email Pro.
 >> >
 >> > Cliquez sur [ce lien](/links/control-panel/web-email-pro) pour accéder à la section `Email Pro`{.action}. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 >>

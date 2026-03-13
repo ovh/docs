@@ -21,7 +21,7 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
@@ -58,8 +58,8 @@ A nova janela apresenta informações relativas à configuração dos modos.
 
 > **Compreender os modos autoritário e não autoritário**
 >
-> - Quando um e-mail é transmitido para a sua plataforma E-mail Pro (*Inbound mail server Email Pro*) em modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão unicamente alojados nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro "*Inbound mail server Email Pro*" devolve uma mensagem de falha ao remetente, pois esse endereço não existe no servidor E-mail Pro "*Inbound mail server Email Pro*".
-> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server Email Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server Email Pro*) e outro serviço de e-mail (*Inbound mail server MX Plan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server Email Pro* transmitirá o e-mail ao servidor MX Plan "*Inbound mail server MX Plan*" para que este último o possa entregar.
+> - Quando um e-mail é transmitido para a sua plataforma E-mail Pro (*Inbound mail server E-mail Pro*) em modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão unicamente alojados nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro "*Inbound mail server E-mail Pro*" devolve uma mensagem de falha ao remetente, pois esse endereço não existe no servidor E-mail Pro "*Inbound mail server E-mail Pro*".
+> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server E-mail Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server E-mail Pro*) e outro serviço de e-mail (*Inbound mail server MX Plan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server E-mail Pro* transmitirá o e-mail ao servidor MX Plan "*Inbound mail server MX Plan*" para que este último o possa entregar.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >

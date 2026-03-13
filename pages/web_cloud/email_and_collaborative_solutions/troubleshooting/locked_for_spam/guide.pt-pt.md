@@ -26,9 +26,9 @@ Quando o seu endereço de e-mail é bloqueado por spam, isto significa que foi d
 - **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
@@ -98,12 +98,12 @@ Selecione a oferta de e-mail correspondente nos seguintes separadores:
 >>
 >> ![Coluna Estado bloqueado no separador Contas de e-mail Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
-> **Email Pro**
+> **E-mail Pro**
 >>
 >> Dirija-se ao separador `Contas de e-mail`{.action} da sua plataforma. Se a coluna "Estado" à direita do endereço de e-mail em questão mencionar "Spam", clique sobre esta indicação e depois em `Responder ao ticket`{.action}. O desbloqueio do endereço de e-mail não se faz automaticamente. Contacte o suporte através do ticket de assistência, respondendo às 3 questões colocadas. <br>
 >> Passe à [etapa 3](#step3) do guia.
 >>
->> ![Coluna Estado Spam no separador Contas de e-mail Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>> ![Coluna Estado Spam no separador Contas de e-mail E-mail Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
 >>

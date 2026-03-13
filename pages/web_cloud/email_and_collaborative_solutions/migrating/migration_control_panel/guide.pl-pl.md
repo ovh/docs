@@ -33,9 +33,9 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 - **Bezpośredni link:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz swoją usługę MX Plan
 
-**Email Pro:**
+**E-mail Pro:**
 
-- **Bezpośredni link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Bezpośredni link:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz swoją platformę
 
 **Exchange:**
@@ -91,7 +91,7 @@ Przed rozpoczęciem migracji określ wersję programu MX Plan, z której chcesz 
 >
 > Ta sekcja dotyczy wszystkich usług MX Plan korzystających z technologii webmaila Rouncube, Zimbra lub OWA.
 >
-> Jednak jeśli chcesz przenieść usługę MX Plan korzystającą z webmaila Roundcube do platformy Email Pro lub Exchange OVHcloud, przejdź do sekcji "[Automatyczna migracja oferty MX Plan Roundcube do Exchange lub Email Pro](#roundcube-mxplan)" tego przewodnika.
+> Jednak jeśli chcesz przenieść usługę MX Plan korzystającą z webmaila Roundcube do platformy E-mail Pro lub Exchange OVHcloud, przejdź do sekcji "[Automatyczna migracja oferty MX Plan Roundcube do Exchange lub E-mail Pro](#roundcube-mxplan)" tego przewodnika.
 
 > [!warning]
 >
@@ -137,7 +137,7 @@ Po przeprowadzeniu migracji możesz zachować lub usunąć konto źródłowe, u�
 
 Jeśli chcesz go usunąć, przejdź do zakładki `Konta e-mail`{.action} MX Plan, kliknij przycisk `...`{.action}, a następnie  `Zresetuj to konto`{.action}.
 
-#### 3.2 Automatyczna migracja oferty MX Plan Roundcube do Exchange lub Email Pro <a name="roundcube-mxplan"></a>
+#### 3.2 Automatyczna migracja oferty MX Plan Roundcube do Exchange lub E-mail Pro <a name="roundcube-mxplan"></a>
 
 > [!warning]
 >

@@ -75,7 +75,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
     - [Exchange](/links/web/emails-exchange).
-    - [Email Pro](/links/web/email-pro).
+    - [E-Mail Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 <!-- CP-NAV-START:web-mx-plan -->
@@ -96,9 +96,9 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
 - **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > `Zimbra Mail`{.action}
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -120,7 +120,7 @@ Diese Anleitung gilt für alle unsere E-Mail-Angebote. Je nach Angebot können S
 - **MX Plan Zimbra**: entspricht dem MX Plan Angebot mit Zimbra Webmail.
 - **MX Plan OWA**: Entspricht dem MX Plan Angebot, das Outlook Web App (OWA) Webmail verwendet.
 - **Exchange**: Gilt für Angebote **Hosted**, **Private** und **Dedicated** Exchange, die Outlook Web App (OWA) Webmail verwenden.
-- **Email Pro**: Exchange-basiertes E-Mail-Angebot mit Outlook Web App (OWA) Webmail.
+- **E-Mail Pro**: Exchange-basiertes E-Mail-Angebot mit Outlook Web App (OWA) Webmail.
 - **Zimbra**: Dediziertes Angebot mit Zimbra Webmail.
 - **Redirect**: Dieses kostenlose Angebot ist automatisch verfügbar, wenn Sie einen Domainnamen in Ihrem Kundencenter haben und kein E-Mail-Angebot dazugehört. Sie erlaubt die Erstellung von E-Mail-Weiterleitungen.
 

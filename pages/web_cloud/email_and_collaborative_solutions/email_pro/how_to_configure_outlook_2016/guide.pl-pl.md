@@ -41,7 +41,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Email Pro](/links/control-panel/web-email-pro)
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
 
 ---
@@ -59,7 +59,7 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 
 > [!warning]
 >
-> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Konfiguracja konta E-Mail Pro w nowej aplikacji Outlook na Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Konfiguracja konta E-mail Pro w nowej aplikacji Outlook na Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Aby zainstalować klasyczny Outlook na swoim komputerze z Windows, pobierz go ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego Outlooka na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" i zainstaluj.
 >

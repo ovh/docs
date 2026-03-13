@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Configurar uma conta de e-mail no Outlook clássico para Windows'
+title: 'E-mail Pro - Configurar uma conta de e-mail no Outlook clássico para Windows'
 excerpt: 'Saiba como configurar a sua conta E-mail Pro no Outlook clássico para Windows'
 updated: 2026-01-30
 ---
@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-As contas Email Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
+As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
 
 **Saiba como configurar um endereço de e-mail Pro no Outlook ou em versões posteriores do Windows.**
 
@@ -41,7 +41,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 ---
@@ -59,7 +59,7 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 
 > [!warning]
 >
-> Esta documentação aplica-se apenas ao **Outlook clássico** disponível na suite Microsoft 365. Se estiver a utilizar o novo Outlook, consulte o nosso guia "[E-mail Pro - Configurar sua conta de E-Mail Pro no novo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Esta documentação aplica-se apenas ao **Outlook clássico** disponível na suite Microsoft 365. Se estiver a utilizar o novo Outlook, consulte o nosso guia "[E-mail Pro - Configurar sua conta de E-mail Pro no novo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Para instalar o Outlook clássico no seu computador Windows, descarregue-o a partir da página Microsoft "[Instalar ou reinstalar o Outlook clássico num PC Windows](https://support.microsoft.com/pt-pt/office/instalar-ou-reinstalar-o-outlook-cl%C3%A1ssico-num-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instale-o.
 >

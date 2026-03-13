@@ -33,7 +33,7 @@ Il vous est impossible de recevoir ou d'envoyer vos e-mails depuis votre logicie
 
 ## Prérequis
 
-- Posséder une offre **MX Plan**, **E-mail Pro**, **Exchange** ou **Zimbra**.
+- Posséder une offre **MX Plan**, **Email Pro**, **Exchange** ou **Zimbra**.
 
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-email-pro -->
@@ -89,7 +89,7 @@ Voici comment vérifier que vos services sont bien opérationnels :
 >>
 >> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Emails`{.action} (ou `MX Plan`{.action} selon votre offre), puis sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Emails`{.action}. Vérifiez le statut du compte e-mail dans la colonne `Bloqué pour SPAM`.
 >>
-> **E-mail Pro**
+> **Email Pro**
 >>
 >> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Email Pro`{.action}, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 >>
@@ -115,9 +115,9 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 >>
 >> Pour une offre **MX Plan**, rendez-vous sur [la page de nos guides MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
-> **E-mail Pro**
+> **Email Pro**
 >>
->> Pour une offre **E-mail Pro**, rendez-vous sur [la page de nos guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
+>> Pour une offre **Email Pro**, rendez-vous sur [la page de nos guides Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) et vérifiez la configuration de votre logiciel de messagerie à l'aide des guides disponibles dans la section `Configuration d'une application e-mail sur votre ordinateur` ou `Configurer une application e-mail sur votre smartphone ou tablette`, selon l'appareil utilisé.
 >>
 > **Exchange**
 >>
@@ -156,9 +156,9 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 >>
 >> Pour une offre **MX Plan**, consultez notre guide « [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) ».
 >>
-> **E-mail Pro**
+> **Email Pro**
 >>
->> Pour une offre **E-mail Pro**, accédez à la section `Web Cloud`{.action}, cliquez sur `Email Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
+>> Pour une offre **Email Pro**, accédez à la section `Web Cloud`{.action}, cliquez sur `Email Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 >>
 > **Exchange**
 >>
@@ -175,7 +175,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <https://web-cloud.status-ovhcloud.com/>.
 
 - Pour **MX Plan**, vérifiez dans la section `E-mails`
-- Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`
+- Pour **Email Pro**, dirigez-vous dans la section `Microsoft`
 - Pour **Exchange**, dirigez-vous dans la section `Hosted Microsoft`, `Private Microsoft` et `Trusted Microsoft` en fonction de votre offre.
 - Pour **Zimbra**, dirigez-vous dans la section `Zimbra`
 

@@ -39,9 +39,9 @@ details[open]>summary::before {
 - **Direkter Link:** [Zimbra](/links/control-panel/web-zimbra)
 - **Navigationspfad:** `Web Cloud`{.action} > `Zimbra Mail`{.action} > Wählen Sie Ihren Zimbra Dienst aus
 
-**Email Pro:**
+**E-Mail Pro:**
 
-- **Direkter Link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
 - **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
 
 **Exchange:**
@@ -81,7 +81,7 @@ OVHcloud bietet derzeit 4 E-Mail-Angebote an. Um mehr über die Eigenschaften zu
 >>
 > **E-Mails Pro**
 >>
->> ![Email Pro](images/emailpro01.png){.thumbnail .w-500}
+>> ![E-Mail Pro](images/emailpro01.png){.thumbnail .w-500}
 >>
 >> 1. E-Mail-Angebot auf Basis von Exchange mit grundlegenden Funktionen und 10 GB Speicherplatz.
 >> 2. Sie können einen E-Mail Pro Account über das [OVHcloud Kundencenter](/links/manager) oder direkt über [ovhcloud.com](/links/web/email) bestellen.
