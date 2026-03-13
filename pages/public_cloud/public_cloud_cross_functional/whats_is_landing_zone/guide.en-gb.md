@@ -133,7 +133,7 @@ To create a landing zone that works well, it’s important to assess the compone
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### OVHcloud Control Panel Access
+#### OVHcloud Control Panel Access
 
 - **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
 - **Navigation path:** `Public Cloud`{.action} > Select your project
