@@ -84,7 +84,7 @@ Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.
 
 Une fois le modem à jour avec le firmware « 17.1.7960.01 », il faut modifier les DNS du serveur DHCP du modem.
 
-Dans le cas où la configuration à distance est activée, vous pouvez effectuer la modification depuis la section `DHCP` dans le cadre « Configuration réseau ». Il faut remplacer le champ DNS primaire par « 192.168.1.1 »  et supprimer le DNS secondaire.
+Dans le cas où la configuration à distance est activée, vous pouvez effectuer la modification depuis la section `DHCP` dans le cadre « Configuration réseau ». Il faut remplacer le champs DNS primaire par « 192.168.1.1 »  et supprimer le DNS secondaire.
 
 ![LTE](images/lte-step2b-2.png){.thumbnail}
 
