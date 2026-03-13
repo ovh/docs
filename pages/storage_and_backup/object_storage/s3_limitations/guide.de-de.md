@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Technical Limitations
+title: Object Storage - Technische Grenzen (EN)
 excerpt: Find here the technical limits of the Object Storage offer
 updated: 2026-03-13
 ---
