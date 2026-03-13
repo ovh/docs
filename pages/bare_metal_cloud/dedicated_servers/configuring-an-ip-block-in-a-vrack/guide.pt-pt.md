@@ -1,7 +1,7 @@
 ---
 title: 'Configurar um bloco de Additional IP num vRack'
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos num vRack.'
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un blocco Additional IP in un vRack'
 excerpt: 'Scopri come configurare un blocco di indirizzi IP pubblici nel vRack.'
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>

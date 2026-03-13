@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IPv6 block in a vRack
 excerpt: Find out how to configure a block of public IPv6 addresses for use with an OVHcloud vRack network
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>

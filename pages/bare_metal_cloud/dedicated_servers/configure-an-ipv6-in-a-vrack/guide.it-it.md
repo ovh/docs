@@ -1,7 +1,7 @@
 ---
 title: Configurare un blocco Additional IPv6 in un vRack
 excerpt: "Scopri come configurare un blocco di indirizzi IPv6 pubblici da utilizzare in un vRack"
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>

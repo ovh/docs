@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja bloku Additional IPv6 w sieci vRack
 excerpt: Dowiedz się, jak skonfigurować blok publicznych adresów IPv6 do użytku w sieci vRack OVHcloud
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>

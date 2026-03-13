@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja bloku Additional IP w sieci vRack'
 excerpt: 'Ten przewodnik pokazuje, jak skonfigurować blok publicznych adresów IP do użytku z siecią vRack.'
-updated: 2026-03-16
+updated: 2026-03-13
 ---
 
 <style>
