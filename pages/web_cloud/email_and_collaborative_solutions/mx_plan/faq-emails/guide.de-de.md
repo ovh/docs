@@ -298,7 +298,7 @@ Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein P
 /// details | Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren?
 
 Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.  
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `MX Plan`{.action}. Wählen Sie die betreffende Domain aus und klicken Sie dann auf den Tab `E-Mails`{.action}. In der Spalte `Filter` klicken Sie auf das Icon „Verwaltung der Filter des Accounts“.
+Klicken Sie dann auf den Tab `E-Mails`{.action}. In der Spalte `Filter` klicken Sie auf das Icon „Verwaltung der Filter des Accounts”.
 
 Wird in Ihrem Kundencenter keine `Filter`-Spalte angezeigt, müssen zunächst im [Webmail](/links/web/email) über die Verwaltungsregeln des Posteingangs Filter erstellt werden. Lesen Sie die folgende Anleitung für mehr Informationen: [Posteingangsregeln in OWA erstellen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
 

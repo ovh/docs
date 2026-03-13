@@ -289,7 +289,7 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía �
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección «máscara» a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación:
+Haga clic en los pasos a continuación para crear un alias:
 
 > [!tabs]
 > **Paso 1**

@@ -43,7 +43,7 @@ ID MPN pozwoli Ci uzyskać zwroty pieniężne z subskrypcji, które zamawiasz w 
 
 ### Zamów usługę Office 365 Reseller
 
-Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu wybierz `Sunrise`{.action} na górnym pasku, a następnie kliknij `Office 365 Reseller`{.action}.
+Aby zamówić usługę Office 365 Reseller:
 
 - *Nieobowiązkowo*: możesz zdefiniować **subdomenę** podczas tworzenia nowej platformy, zaznaczając odpowiednie pole (pod warunkiem podania dostępnych nazw).
 - Wpisz wcześniej utworzony adres MPN ID firmy Microsoft.
@@ -65,9 +65,7 @@ Aby zamówić usługę Office 365 Reseller, przejdź do [Panelu klienta OVHcloud
 
 ### Zarządzaj usługą Office 365 Reseller
 
-Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta OVHcloud](/links/manager).
-
-W tym celu przejdź do sekcji `Sunrise`{.action}. W menu po lewej stronie wybierz `Office 365 Reseller`{.action} i wybierz usługę.
+Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać. Wybierz usługę.
 
 Pojawiają się następujące informacje:
 

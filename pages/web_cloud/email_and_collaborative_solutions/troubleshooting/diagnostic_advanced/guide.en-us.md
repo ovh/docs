@@ -82,7 +82,6 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 1. From an Internet browser, log in to the [webmail](/links/web/email) using the email address concerned.
 2. Go to [the MX Plan guides page](/products/web-cloud-email-collaborative-solutions-mx-plan) and check your email client configuration using the guides available in the `Setting up an email application on your computer` or `Setting up an email application on your mobile device` section, depending on the device you are using.
 
-
 ///
 
 /// details | I can't receive emails because my email address is full, I don't have any more space. What can I do?
@@ -106,7 +105,6 @@ From your computer browser or smartphone, go to the address [Webmail](/links/web
 Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](/links/web/emails-hosted-exchange) only).
 
 To change the password for an email address, please refer to our guide "[Changing a password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
-
 
 ///
 

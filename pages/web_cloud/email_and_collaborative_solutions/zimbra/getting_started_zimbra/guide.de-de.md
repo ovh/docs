@@ -289,7 +289,7 @@ Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer An
 
 Mit Alias-Adressen für Ihren E-Mail-Account können Sie Ihre Account-E-Mail-Adresse privat halten. Sie können die Alias-Adressen an Ihre Kontakte weitergeben und an diese Adressen gesendete E-Mails werden dann an Ihren E-Mail-Account weitergeleitet.
 
-Die Erstellung eines Alias erfolgt über das [OVHcloud Kundencenter](/links/manager). Klicken Sie auf die Tabs um die Schritte anzuzeigen:
+Klicken Sie auf die folgenden Tabs, um einen Alias zu erstellen:
 
 > [!tabs]
 > **Schritt 1**

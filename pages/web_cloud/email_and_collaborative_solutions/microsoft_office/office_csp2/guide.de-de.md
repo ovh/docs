@@ -64,9 +64,7 @@ Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumen
 
 ### Office 365 Reseller Dienste verwalten
 
-Sobald der Office 365 Dienst verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten.
-
-Gehen Sie hierzu in den Bereich `Sunrise`{.action}. Im Menü auf der linken Seite wählen Sie `Office 365 Revendeurs`{.action}, und dann den Dienst aus.
+Sobald der Office 365 Dienst verfügbar ist, können Sie ihn verwalten. Wählen Sie den Dienst aus.
 
 Folgende Angaben werden angezeigt:
 

@@ -40,10 +40,7 @@ Oto lista programów zawartych w pakiecie:
 
 ### Zamów licencję
 
-1. Przejdź do strony biznesowej [Microsoft 365 OVHcloud](/links/web/ms365) lub panelu [Panel klienta OVHcloud](/links/manager):
-    - Przejdź do sekcji `Web Cloud`{.action}.
-    - W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-    - Kliknij na `Zamów`{.action}.
+1. Przejdź do strony biznesowej [Microsoft 365 OVHcloud](/links/web/ms365) lub kliknij `Zamów`{.action}.
 1. Wybierz spośród naszych dostępnych ofert: "Apps for Business" i "Apps for Enterprise".
 1. Określ częstotliwość odnawiania grupy licencji.
 1. Określ liczbę potrzebnych licencji i sfinalizuj zamówienie.

@@ -63,9 +63,7 @@ O MPN ID permite-lhe obter um backup das subscrições que encomendará através
 
 ### Gerir o serviço Office 365 Revendedor
 
-Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](/links/manager).
-
-Para isso, aceda à secção `Sunrise`{.action}. No menu à esquerda, escolha o `Office 365 Revendedores`{.action} e selecione o serviço.
+Depois de criado e disponível o serviço Office 365, poderá geri-lo. Selecione o serviço.
 
 Surgem as seguintes informações:
 

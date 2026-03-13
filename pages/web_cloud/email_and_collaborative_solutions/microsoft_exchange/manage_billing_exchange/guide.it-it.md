@@ -41,7 +41,7 @@ Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `A
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
-Accedi allo Spazio Cliente, clicca sul tuo nome utente in alto a destra e seleziona “I tuoi servizi”. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
+Verrai reindirizzato alla sezione “I tuoi servizi” dello Spazio Cliente OVHcloud. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
 
 Clicca sui tre puntini `...`{.action} a destra della piattaforma Exchange e poi su `Modifica la fatturazione`{.action}.
 

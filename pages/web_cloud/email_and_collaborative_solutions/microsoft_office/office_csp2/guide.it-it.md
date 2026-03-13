@@ -67,9 +67,7 @@ Il MPN ID ti permetterà di ottenere un cashback sugli abbonamenti che ordinerai
 
 ### Gestisci il tuo servizio Office 365 Reseller
 
-Una volta creato e reso disponibile il servizio Office 365, è possibile gestirlo dallo [Spazio Cliente OVHcloud](/links/manager).
-
-Per effettuare questa operazione accedi alla sezione `Sunrise`{.action}. Nel menu a sinistra, seleziona `Office 365 Reseller`{.action} e poi seleziona il servizio.
+Una volta creato e reso disponibile il servizio Office 365, è possibile gestirlo. Seleziona il servizio.
 
 Le seguenti informazioni sono fornite:
 

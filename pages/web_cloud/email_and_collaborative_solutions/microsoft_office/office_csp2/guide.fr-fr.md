@@ -44,8 +44,6 @@ Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous comm
 
 ### Commander un service Office 365 Revendeurs
 
-Pour commander un service Office 365 Revendeurs, rendez-vous dans la section Microsoft 365 de votre espace client OVHcloud.
-
 - *Facultatif* : vous pouvez définir un **sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la case prévue à cet effet (sous réserve des noms disponibles).
 - Saisissez votre MPN ID préalablement créé auprès de Microsoft.
 - Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (*Tenant*) que vous allez créer.

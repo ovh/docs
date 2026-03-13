@@ -4,7 +4,6 @@ excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una direcc
 updated: 2025-04-28
 ---
 
-
 ## Objetivo
 
 Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedicado. Gestionar bien el espacio de almacenamiento permite evitar la saturación, también llamada "overquota". Por defecto, los mensajes que usted reciba y envíe se almacenan en el servidor de su cuenta de correo. También es posible almacenar los mensajes de correo en local en su ordenador a través de un cliente de correo electrónico (Outlook, Mail de macOS, Thunderbird, etc.).

@@ -47,8 +47,6 @@ To register as an indirect reseller, please refer to the Microsoft documentation
 
 ### Order an Office 365 Reseller service
 
-To order an Office 365 Resellers service, go to the Microsoft 365 section of your OVHcloud Control Panel.
-
 - *Optional*: You can define a custom **subdomain** when you create a new platform by ticking the box provided for this purpose (subject to the available names).
 - Enter your previously created MPN ID from Microsoft.
 - Fill in the contact information for the end customer, and they are requested to define the manager of the licence group (*Tenant*) you are going to create.

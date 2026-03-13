@@ -289,7 +289,7 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 
 Alias addresses for your email account allow you to keep your account's email address private. You can disclose alias addresses to your contacts and emails sent to these addresses will then be redirected to your email account.
 
-You can create an alias in the [OVHcloud Control Panel](/links/manager). Click on the steps below:
+Click on the steps below to create an alias:
 
 > [!tabs]
 > **Step 1**

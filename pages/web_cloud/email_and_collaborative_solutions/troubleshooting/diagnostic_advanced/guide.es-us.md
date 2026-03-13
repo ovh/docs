@@ -137,7 +137,6 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 >>
 >> Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Exchange`{.action} en la sección **Microsoft** y seleccione su plataforma. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Editar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía "[Configurar la doble autenticación en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_2fa_exchange)".
 
-
 ///
 
 /// details | ¿Hay algún incidente o mantenimiento en curso en mi servicio? (**envío** y/o **recepción**)

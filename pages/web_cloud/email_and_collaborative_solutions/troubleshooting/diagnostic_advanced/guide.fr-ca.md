@@ -86,7 +86,6 @@ Voici comment vérifier que vos services sont bien opérationnels :
 >>
 >> Rendez-vous dans la section `Web Cloud`{.action}, cliquez sur `Exchange`{.action} dans la rubrique **Microsoft** et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 
-
 ///
 
 /// details | Je ne parviens pas à envoyer et/ou recevoir d'e-mails depuis mon logiciel de messagerie (**envoi** et/ou **réception**)

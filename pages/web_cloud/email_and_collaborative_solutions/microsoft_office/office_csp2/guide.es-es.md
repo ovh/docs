@@ -63,9 +63,7 @@ El ID del MPN le permitirá obtener un descuento en las suscripciones que contra
 
 ### Gestionar el servicio Office 365 Reseller
 
-Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager).
-
-Para ello, acceda al apartado `Sunrise`{.action}. En el menú de la izquierda, seleccione `Office 365 Reseller`{.action} y seleccione el servicio.
+Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo. Seleccione el servicio.
 
 Aparecerá la siguiente información:
 
