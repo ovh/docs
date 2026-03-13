@@ -35,13 +35,13 @@ Discover how to maximize your performance with [this guide](/pages/storage_and_b
 | **Maximum number of objects in a bucket** | unlimited | - |
 | **Part size** | From 5 MiB to 5 GiB | - |
 | **Maximum parts per MPU** | 10,000 | - |
-| **Maximum Object size** | 48 TiB | This maximum can be achieved using Multi-Part Upload (MPU), via single PUT request, the maximum object size is 5GiB |
+| **Maximum Object size** | 48 TiB | This maximum can be achieved using Multi-Part Upload (MPU), via a single PUT request, the maximum object size is 5 GiB |
 | **Maximum number of users per project** | 1,000 | - |
-| **Maximum lifecycle rules** | 1,000 | Understanding [lifecycle rules](pages/storage_and_backup/object_storage/s3_bucket_lifecycle) |
-| **Maximum replication rules** | 1,000 | Understanding [bucket replication](pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
+| **Maximum lifecycle rules** | 1,000 | Understanding [lifecycle rules](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle) |
+| **Maximum replication rules** | 1,000 | Understanding [bucket replication](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
 | **Maximum bucket tags** | 50 | - |
 | **Maximum object tags** | 10 | - |
-| **Maximum number of versions per object** | 100,000 | Beyond this value, a 403 error is returned with MaxVersionsReached code. Understanding [object versioning](pages/storage_and_backup/object_storage/s3_versioning) |
+| **Maximum number of versions per object** | 100,000 | Beyond this value, a 403 error is returned with MaxVersionsReached code. Understanding [object versioning](/pages/storage_and_backup/object_storage/s3_versioning) |
 
 
 ### Bucket and object name assignment
@@ -50,7 +50,7 @@ Discover how to maximize your performance with [this guide](/pages/storage_and_b
 - Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
 - Must be unique within OVHcloud.
 - May contain the following punctuation marks: `.` and `-`.
-- Must not contain multiple punctuation marks in a row  (e.g. `..` or `-.` or `.-` or `--`).
+- Must not contain multiple punctuation marks in a row (e.g. `..` or `-.` or `.-` or `--`).
 - Must not look like an IP address (192.168.1.1).
 
 ### Features availability

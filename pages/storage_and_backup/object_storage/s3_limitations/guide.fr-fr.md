@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Limites techniques
 excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage"
-updated: 2026-02-18
+updated: 2026-03-13
 ---
 
 ## Objectif
@@ -37,11 +37,11 @@ Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and
 | **Nombre maximum de *part* par MPU** | 10 000 | - |
 | **Taille maximale d'objet** | 48 TiB | Ce maximum peut être atteint en utilisant du Multi-Part Upload (MPU). Via une seule requête PUT, la taille maximale de l'objet est de 5 GiB |
 | **Nombre maximum d'utilisateurs par projet** | 1 000 | - |
-| **Nombre maximum de règles de *lifecycle*** | 1 000 | Comprendre les [règles de *lifecycle*](pages/storage_and_backup/object_storage/s3_bucket_lifecycle) |
-| **Nombre maximum de règles de réplication** | 1 000 | Comprendre la [réplication de buckets](pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
+| **Nombre maximum de règles de *lifecycle*** | 1 000 | Comprendre les [règles de *lifecycle*](/pages/storage_and_backup/object_storage/s3_bucket_lifecycle) |
+| **Nombre maximum de règles de réplication** | 1 000 | Comprendre la [réplication de buckets](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
 | **Nombre maximum de tags de bucket** | 50 | - |
 | **Nombre maximum de tags d'objet** | 10 | - |
-| **Nombre maximum de versions par objet** | 100 000 | Au-delà de cette valeur, une erreur 403 est renvoyée avec le code MaxVersionsReached. Comprendre la [*versioning* des objets](pages/storage_and_backup/object_storage/s3_versioning) |
+| **Nombre maximum de versions par objet** | 100 000 | Au-delà de cette valeur, une erreur 403 est renvoyée avec le code MaxVersionsReached. Comprendre la [*versioning* des objets](/pages/storage_and_backup/object_storage/s3_versioning) |
 
 ### Attribution des noms de buckets et d'objets
 

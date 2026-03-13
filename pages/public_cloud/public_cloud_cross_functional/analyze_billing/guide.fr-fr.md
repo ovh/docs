@@ -177,13 +177,15 @@ Les snapshots d'instances comme les images (hors catalogue d'images fourni par O
 
 Object Storage est facturé en **paiement à l'usage** en fonction du volume moyen stocké par heure dans chaque classe de stockage (Gio-heures), avec une facturation en fin de mois. Le stockage est le principal élément de facturation ; le trafic entrant, le trafic interne OVHcloud, les appels API et le trafic sortant public sont inclus sans frais supplémentaires.
 
-Pour adapter les coûts à vos modèles d'accès aux données, nous proposons plusieurs classes Object Storage compatibles S3 (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Pour une présentation détaillée de ces classes, incluant cas d'usage, performances et SLA, consultez le guide dédié : [Choisir la bonne classe Object Storage](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)
+Pour adapter les coûts à vos modèles d'accès aux données, nous proposons plusieurs classes Object Storage compatibles S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Pour en savoir plus sur ces classes (cas d'usage, performances, SLA), consultez le guide dédié : [Choisir la bonne classe Object Storage](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Pour les classes Infrequent Access, Active Archive et Cold Archive, une durée minimale de stockage et des frais de restauration sont appliqués
+> Pour les classes Infrequent Access, Active Archive et Cold Archive, une durée minimale de stockage et des frais de restauration sont appliqués.
 >
 
 ## Aller plus loin
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

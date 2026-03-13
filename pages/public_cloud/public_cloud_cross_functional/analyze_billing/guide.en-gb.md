@@ -179,15 +179,17 @@ Both snapshots and images of instances (excluding the catalogue of images suppli
 
 #### Object Storage
 
-Object Storage is billed on a **pay-as-you-go** basis according to the average volume stored per hour in each storage class (GiB-hours), with invoicing at the end of the month. Storage is the main billing component; incoming traffic, internal OVHcloud traffic, API calls and public egress are included at no extra cost.
+Object Storage is billed on a **pay-as-you-go** basis according to the average volume stored per hour in each storage class (GiB-hours), with invoicing at the end of the month. Storage is the main billing component — incoming traffic, internal OVHcloud traffic, API calls and public egress are included.
 
-To align cost with your data access patterns, we offer several S3-compatible Object Storage classes (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). For a detailed explanation of these classes, including use cases, performance and SLAs, please refer to the dedicated guide: [Choosing the right Object Storage class](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)
+To align cost with your data access patterns, we offer several S3<sup>1</sup>-compatible Object Storage classes (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). For details on these classes, including use cases, performance and SLAs, see the dedicated guide: [Choosing the right Object Storage class](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> For Infrequent Access, Active Archive and Cold Archive classes, a minimum storage duration and retrieval fees are applied
+> For Infrequent Access, Active Archive and Cold Archive classes, a minimum storage duration and retrieval fees are applied.
 >
 
 ## Go further
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud's service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
 
 Join our [community of users](/links/community).
