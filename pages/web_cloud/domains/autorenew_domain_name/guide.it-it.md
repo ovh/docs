@@ -133,7 +133,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **3** passaggi.
 >>
 >> Clicca a destra della linea sul pulsante `...`{.action}, poi su `Anticipa il pagamento`{.action}.
 >>
->> ![Le mie offerte e servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Opzione Anticipa il pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Passaggio 3**
 >>
@@ -155,7 +155,7 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 >>
 >> Clicca su [questo link](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -251,7 +251,7 @@ Per verificare lo stato del rinnovo del dominio, clicca sulle schede qui sotto p
 >>
 >> Clicca su [questo link](/links/control-panel/web-domains), poi seleziona il dominio interessato.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domini](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>

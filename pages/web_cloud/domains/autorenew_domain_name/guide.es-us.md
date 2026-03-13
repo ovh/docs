@@ -133,7 +133,7 @@ Haga clic en las pestañas de abajo para visualizar cada uno de los **3** pasos.
 >>
 >> Haga clic a la derecha de la línea en el botón `...`{.action} y luego en `Adelantar el pago`{.action}.
 >>
->> ![Mis soluciones y servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Opción Adelantar el pago](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Paso 3**
 >>
@@ -155,7 +155,7 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 >>
 >> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Paso 2**
 >>
@@ -251,7 +251,7 @@ Para comprobar el estado de la renovación del dominio, haga clic en las pestañ
 >>
 >> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio en cuestión.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Dominios](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Paso 2**
 >>

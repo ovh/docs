@@ -133,7 +133,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> Cliquez à droite de la ligne sur le bouton `...`{.action}, puis sur `Anticiper le paiement`{.action}.
 >>
->> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Option Anticiper le paiement](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Étape 3**
 >>
@@ -155,7 +155,7 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>
@@ -184,7 +184,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 >
 > La résiliation du nom de domaine prendra fin à l'expiration de celui-ci.
 
-Retrouvez plus d'informations dans notre guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
+Pour plus d'informations, consultez notre guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 
 ### Régler la facture de renouvellement d'un nom de domaine
 
@@ -238,9 +238,9 @@ Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant l
 
 Une fois le règlement des frais de renouvellement effectué, nous transmettons la demande auprès du registre approprié.
 
-Votre nom de domaine passe alors dans un statut de **renouvellement en cours**.
+Votre nom de domaine passe alors au statut **renouvellement en cours**.
 
-Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), votre nom de domaine repassera dans un statut indiquant qu'il est de nouveau **enregistré**.
+Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), votre nom de domaine repassera au statut **enregistré**.
 
 Les données du WHOIS se mettront ensuite à jour.
 
@@ -251,7 +251,7 @@ Pour vérifier le statut du renouvellement de votre nom de domaine, cliquez sur 
 >>
 >> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Étape 2**
 >>

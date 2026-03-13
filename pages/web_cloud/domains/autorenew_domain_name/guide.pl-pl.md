@@ -133,7 +133,7 @@ Kliknij zakładki poniżej, aby wyświetlić każdy z **3** kroków.
 >>
 >> Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie kliknij `Prognoza płatności`{.action}.
 >>
->> ![Moje rozwiązania i usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Opcja Prognoza płatności](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Krok 3**
 >>
@@ -155,7 +155,7 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 >>
 >> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>
@@ -251,7 +251,7 @@ Aby sprawdzić status odnowienia domeny, kliknij zakładki poniżej, aby wyświe
 >>
 >> Kliknij [ten link](/links/control-panel/web-domains), a następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>

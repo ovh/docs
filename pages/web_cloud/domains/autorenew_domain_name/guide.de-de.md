@@ -133,7 +133,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Klicken Sie rechts in der Zeile auf `...`{.action} und dann auf `Vorauszahlen`{.action}.
 >>
->> ![Meine Angebote und Dienste](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Option Vorauszahlen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -155,7 +155,7 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 >>
 >> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den betreffenden Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
@@ -251,7 +251,7 @@ Um den Verlängerungsstatus Ihrer Domain zu überprüfen, klicken Sie auf die Ta
 >>
 >> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den betreffenden Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Schritt 2**
 >>

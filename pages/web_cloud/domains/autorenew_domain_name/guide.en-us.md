@@ -133,7 +133,7 @@ Click the tabs below to view each of the **3** steps.
 >>
 >> Click the `...`{.action} button to the right of the line, then click `Bring forward payment`{.action}.
 >>
->> ![My offers and services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Bring forward payment option](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Step 3**
 >>
@@ -238,9 +238,9 @@ You can be automatically refunded up to 10 days before the effective renewal dat
 
 Once the renewal fee has been paid, we will send the request to the appropriate registry.
 
-Your domain name will then move to a **renewal in progress** status.
+Your domain name's status will then change to **renewal in progress**.
 
-Once the registry has renewed your domain name (approximately one month after the renewal fees have been paid), your domain name will return to a status indicating it is **registered** again.
+Once the registry has renewed your domain name (approximately one month after the renewal fees have been paid), your domain name's status will change back to **registered**.
 
 WHOIS data will then be updated.
 

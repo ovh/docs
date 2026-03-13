@@ -133,7 +133,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Clique à direita da linha no botão `...`{.action} e depois em `Antecipar o pagamento`{.action}.
 >>
->> ![As minhas ofertas e serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
+>> ![Opção Antecipar o pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -155,7 +155,7 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 >>
 >> Clique [neste link](/links/control-panel/web-domains) e selecione o domínio em questão.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
@@ -251,7 +251,7 @@ Para verificar o estado da renovação do seu domínio, clique nos separadores a
 >>
 >> Clique [neste link](/links/control-panel/web-domains) e selecione o domínio em questão.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
