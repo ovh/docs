@@ -25,18 +25,18 @@ updated: 2026-03-13
  }
 </style>
 
-## Nœuds, pods et limites d'etcd
+## Limites de nœuds, de pods et d'etcd
 
-|Plan | Nombre maximum de nœuds par cluster |  Nombre maximum de pods par nœud |  Nombre maximum de nœuds par groupe d'anti-affinité | Taille maximale d'etcd |
+|Plan | Nombre maximum de nœuds par cluster | Nombre maximum de pods par nœud | Nombre maximum de nœuds par groupe d'anti-affinité | Taille maximale d'etcd |
 |---------|---|---|---|---|
-| Free    |100|110|5|400Mo|
-| Standard|500|110|5|8Go|
+| Free    |100|110|5|400 Mo|
+| Standard|500|110|5|8 Go|
 
 Nous avons testé nos plans du service OVHcloud Managed Kubernetes avec un nombre maximum de nœuds. Bien que des configurations plus élevées puissent fonctionner et qu'il n'y ait pas de limites strictes, nous recommandons de rester en dessous de ces limites pour une stabilité optimale.
 
-Gardez à l'esprit que l'impact sur le plan de contrôle n'est pas uniquement déterminé par le nombre de nœuds. Ce qui définit réellement un « grand cluster » dépend de la combinaison des ressources déployées, des pods, des ressources personnalisées et d'autres objets qui contribuent tous à la charge du plan de contrôle. Un cluster avec moins de nœuds mais une utilisation intensive des ressources peut stresser davantage le plan de contrôle qu'un cluster avec de nombreux nœuds exécutant des charges de travail minimales. Dans de telles configurations, il est recommandé de passer au plan Standard pour bénéficier de ressources de plan de contrôle plus élevées et dédiées.
+Gardez à l'esprit que l'impact sur le plan de contrôle n'est pas uniquement déterminé par le nombre de nœuds. Ce qui définit réellement un « grand cluster » dépend de la combinaison des ressources déployées, des pods, des ressources personnalisées et d'autres objets qui contribuent tous à la charge du plan de contrôle. Un cluster avec moins de nœuds mais une utilisation intensive des ressources peut solliciter davantage le plan de contrôle qu'un cluster avec de nombreux nœuds exécutant des charges de travail minimales. Dans de telles configurations, il est recommandé de passer au plan Standard pour bénéficier de ressources de plan de contrôle plus élevées et dédiées.
 
-Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, l'équipe OVHcloud déploie certains composants de gestion sur les nœuds (CNI, agents, Konnectivity, ...), qui sont considérés comme « obligatoires » pour le cluster et affecteront la capacité du nombre de pods par nœud pour les charges de travail des utilisateurs. Pour la même raison, ces composants de gestion étant obligatoires et nécessitant une petite quantité de ressources de nœud, en cas de surcharge du nœud, vous pourriez retrouver certains de vos pods dans l'état `Terminated` avec `Reason: OOMKilled` et `Exit Code: 137`. C'est pourquoi il est important de gérer proprement les ressources de votre charge de travail pour éviter la surcharge des nœuds et les instabilités.
+Bien que 110 pods par nœud soit la valeur par défaut définie par Kubernetes, l'équipe OVHcloud déploie certains composants de gestion sur les nœuds (CNI, agents, Konnectivity, etc.), qui sont considérés comme « obligatoires » pour le cluster et affecteront la capacité du nombre de pods par nœud pour les charges de travail des utilisateurs. Pour la même raison, ces composants de gestion étant obligatoires et nécessitant une petite quantité de ressources de nœud, en cas de surcharge du nœud, vous pourriez retrouver certains de vos pods dans l'état `Terminated` avec `Reason: OOMKilled` et `Exit Code: 137`. C'est pourquoi il est important de gérer proprement les ressources de votre charge de travail pour éviter la surcharge des nœuds et les instabilités.
 
 En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux nœuds. Toutes les mises à jour du système d'exploitation et des composants sont gérées par OVHcloud via des correctifs et des mises à jour mineures. Pour effectuer un **débogage au niveau du nœud**, vous pouvez utiliser les outils natifs Kubernetes avec [kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/#debugging-a-node-using-kubectl-debug-node) pour inspecter ou diagnostiquer un nœud sans nécessiter d'accès SSH direct.
 
@@ -44,12 +44,12 @@ En tant que service entièrement géré, vous **n'aurez pas d'accès SSH** aux n
 
 La disponibilité d'OVHcloud Managed Kubernetes Service varie selon le plan choisi (Free ou Standard). Chaque plan prend en charge différentes régions et architectures de déploiement (mono ou multi zones de disponibilité).
 
-Pour des informations détaillées sur la disponibilité régionale, l'architecture de déploiement (1-AZ vs 3-AZ) et les fonctionnalités spécifiques au plan, consultez le guide « [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors) ».
+Pour des informations détaillées sur la disponibilité régionale, l'architecture de déploiement (1-AZ vs 3-AZ) et les fonctionnalités spécifiques au plan, consultez le guide suivant : [Datacenters, nœuds et storage flavors - Disponibilité régionale par plan MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/datacenters-nodes-storage-flavors).
 
 > [!primary]
 > **Fonctionnalités exclusives du plan Standard :**
 >
-> Le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free, telles que les Floating IP par nœud, la résilience cross-AZ, un SLA de niveau production (99,9% pour 1-AZ, 99,99% pour 3-AZ), un stockage etcd dédié et la prise en charge de jusqu'à 500 nœuds. Pour plus d'informations, consultez le guide [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
+> Le plan Standard inclut des fonctionnalités avancées non disponibles sur le plan Free, telles que les Floating IP par nœud, la résilience cross-AZ, un SLA de niveau production (99,9 % pour 1-AZ, 99,99 % pour 3-AZ), un stockage etcd dédié et la prise en charge de jusqu'à 500 nœuds. Pour plus d'informations, consultez le guide [Comparaison des plans MKS](/pages/public_cloud/containers_orchestration/managed_kubernetes/mks_plans).
 
 ## Considérations sur les correctifs, mises à niveau et maintenances
 
@@ -89,7 +89,7 @@ Les clusters MKS déployés sur des régions avec 3 zones de disponibilité peuv
 
 ### Redimensionnement des volumes
 
-Le redimensionnement des `Persistent Volume Claims` Kubernetes ne permet que d'étendre les volumes, pas de réduire ceux-ci.  
+Le redimensionnement des `Persistent Volume Claims` Kubernetes ne permet que d'étendre les volumes, pas de les réduire.
 
 Si vous essayez de réduire la taille de stockage, vous obtiendrez un message du type :
 
@@ -120,27 +120,27 @@ Pour plus d'informations :
 ## LoadBalancer
 
 La création d'un service Kubernetes de type LoadBalancer déclenche la création d'un Load Balancer Public Cloud basé sur OpenStack Octavia.
-La durée de vie du Load Balancer externe (et de l'adresse IP associée, si elle n'est pas explicitement spécifiée pour la conserver) est liée à la durée de vie de la ressource Kubernetes.
+La durée de vie du Load Balancer externe (et de l'adresse IP associée, si elle n'est pas explicitement spécifiée pour être conservée) est liée à la durée de vie de la ressource Kubernetes.
 
 Pour plus d'informations, consultez notre guide pour [exposer des services via un LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
 ## Ressources & quotas
 
-Les ressources du service Kubernetes managé comprenant les nœuds, les volumes persistants et les répartiteurs de charge sont basés sur des ressources Public Cloud standard déployées dans le projet utilisateur. Vous pouvez donc les voir dans l'[espace client Public Cloud d'OVHcloud](/links/manager) ou via les API. Cependant, cela ne signifie pas que vous pouvez interagir directement avec ces ressources de la même manière que vous le feriez avec d'autres instances Public Cloud. La partie *gérée* du service MKS d'OVHcloud signifie que nous avons configuré ces ressources pour qu'elles fassent partie de notre Kubernetes managé.
+Les ressources du service Managed Kubernetes, comprenant les nœuds, les volumes persistants et les répartiteurs de charge, sont basées sur des ressources Public Cloud standard déployées dans le projet utilisateur. Vous pouvez donc les voir dans l'[espace client Public Cloud OVHcloud](/links/manager) ou via les API. Cependant, cela ne signifie pas que vous pouvez interagir directement avec ces ressources de la même manière que vous le feriez avec d'autres instances Public Cloud. La partie *gérée* du service MKS d'OVHcloud signifie que nous avons configuré ces ressources pour qu'elles fassent partie de notre Kubernetes managé.
 
 Veuillez éviter de les manipuler « manuellement » (modifier les ports laissés ouverts, renommer, supprimer, redimensionner des volumes, etc.), car vous pourriez les endommager. Dans le cadre de notre processus d'auto-réparation, toute suppression ou modification peut entraîner la création ou la duplication d'une nouvelle ressource.
 
-Par défaut, il existe un quota de 20 clusters de plan `Free` Managed Kubernetes par projet (également nommé `tenant` OpenStack).
+Par défaut, il existe un quota de 20 clusters de plan Free Managed Kubernetes par projet (également nommé `tenant` OpenStack).
 
 Les quotas des clusters MKS reposent sur les quotas de votre projet. Si nécessaire, consultez [cette documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour augmenter votre quota.
 
 ### Nommage des nœuds
 
-En raison des limitations connues actuellement présentes dans le service `Kubelet`, faites attention à attribuer __un nom unique__ à toutes vos instances OpenStack exécutées dans votre projet **y compris** vos nœuds « Managed Kubernetes Service » et les instances que vous démarrez directement sur OpenStack via l'espace client OVHcloud ou l'API.
+En raison des limitations connues actuellement présentes dans le service `Kubelet`, faites attention à attribuer __un nom unique__ à toutes vos instances OpenStack exécutées dans votre projet, **y compris** vos nœuds « Managed Kubernetes Service » et les instances que vous démarrez directement sur OpenStack via l'espace client OVHcloud ou l'API.
 
 ## Ports
 
-Pour assurer le bon fonctionnement de votre cluster Kubernetes Managé OVHcloud, certains ports doivent rester ouverts.
+Pour assurer le bon fonctionnement de votre cluster OVHcloud Managed Kubernetes, certains ports doivent rester ouverts.
 
 ### Plan Free
 
@@ -161,7 +161,7 @@ Pour assurer le bon fonctionnement de votre cluster Kubernetes Managé OVHcloud,
 | 25000–31999             | TCP      | Tunnel TLS entre les pods et le serveur API Kubernetes    |
 | 8090                    | TCP      | Service interne (gestion des nœuds OVHcloud)          |
 | 123                     | UDP      | Synchronisation des serveurs NTP (systemd-timesync)       |
-| 53                      | TCP/UDP  | Autoriser la résolution des noms de domaine (systemd-resolve)       |
+| 53                      | TCP/UDP  | Résolution des noms de domaine (systemd-resolve)       |
 | 111                     | TCP      | rpcbind (uniquement si vous utilisez le client NFS)                   |
 | 4443                    | TCP      | Communication du serveur de métriques                         |
 
@@ -179,7 +179,7 @@ Pour assurer le bon fonctionnement de votre cluster Kubernetes Managé OVHcloud,
 >
 > Pour les clusters du plan Standard, les mêmes règles s'appliquent.
 >
-> Conservez le groupe de sécurité OpenStack par défaut inchangé pour éviter de déconnecter les nœuds ; ajoutez uniquement des règles spécifiques à l'application avec soin.
+> Conservez le groupe de sécurité OpenStack par défaut inchangé pour éviter de déconnecter les nœuds ; ajoutez uniquement des règles spécifiques à l'application avec précaution.
 >
 
 #### À propos des groupes de sécurité OpenStack
@@ -191,7 +191,7 @@ Si vous souhaitez appliquer des groupes de sécurité OpenStack à vos nœuds, i
 >
 
 > [!primary]
-> Pour simplifier votre stratégie, vous pouvez ajouter ces règles qui ne spécifient aucun port et autoriseront tout le trafic interne entre les pods et les services au sein du cluster :
+> Pour simplifier votre politique, vous pouvez ajouter ces règles qui ne spécifient aucun port et autoriseront tout le trafic interne entre les pods et les services au sein du cluster :
 >
 > | Direction | Ether Type | IP Protocol | Port Range | Remote IP Prefix | Description |
 > |---|---|---|---|---|---|
@@ -223,7 +223,7 @@ openstack security group rule list default
 +--------------------------------------+-------------+-----------+-----------+------------+-----------+-----------------------+----------------------+
 ```
 
-Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leur configuration « par défaut » ou les nœuds pourraient être déconnectés du cluster.
+Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leur configuration « par défaut », sinon les nœuds pourraient être déconnectés du cluster.
 
 ## Réseaux privés
 
@@ -235,24 +235,24 @@ Pour l'instant, il est recommandé de laisser ces règles de sécurité dans leu
 >
 > Modifier le nom du réseau ou du sous-réseau peut empêcher le déploiement correct des nouveaux nœuds. Les nœuds auront un taint `"uninitialized=true:NoSchedule"`, ce qui empêchera le kube-scheduler de déployer des pods sur ces nœuds.
 >
-> Les nœuds affectés de cette manière n'auront également pas d'External-IP.
+> Les nœuds affectés de cette manière n'auront pas non plus d'External-IP.
 >
 
 ### Plan Free
 
 ### Plages d'adresses IP non conformes connues
 
-Les sous-réseaux suivants peuvent générer certains comportements incohérents avec nos réseaux overlay utilisés :
+Les sous-réseaux suivants peuvent générer des comportements incohérents avec nos réseaux overlay utilisés :
 
 ```bash
-10.2.0.0/16 # Subnet used by pods
-10.3.0.0/16 # Subnet used by services
-172.17.0.0/16 # Subnet used by the Docker daemon
+10.2.0.0/16 # Sous-réseau utilisé par les pods
+10.3.0.0/16 # Sous-réseau utilisé par les services
+172.17.0.0/16 # Sous-réseau utilisé par le daemon Docker
 ```
 
 > [!primary]
 >
-> Ces sous-réseaux doivent être évités dans votre réseau privé pour éviter tout problème de mise en réseau.
+> Ces sous-réseaux doivent être évités dans votre réseau privé pour prévenir tout problème réseau.
 >
 
 Pour éviter les conflits réseau, il est recommandé de **maintenir le service DHCP en fonctionnement** dans votre réseau privé.
@@ -269,12 +269,11 @@ Pour éviter les conflits réseau, il est recommandé de **maintenir le service 
 Par défaut, les plages suivantes sont utilisées par le cluster et ne doivent pas être utilisées ailleurs sur le réseau privé connecté au cluster :
 
 ```bash
-10.240.0.0/13 # Subnet used by pods
-10.3.0.0/16 # Subnet used by services
+10.240.0.0/13 # Sous-réseau utilisé par les pods
+10.3.0.0/16 # Sous-réseau utilisé par les services
 ```
 
 Ces plages peuvent toutefois être personnalisées lors de la création d'un cluster ou lors de la réinitialisation d'un cluster existant en suivant ce guide : [Configuration de l'allocation IP des pods et services sur OVHcloud Managed Kubernetes (offre Standard uniquement)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
-
 
 > [!warning]
 >
@@ -287,6 +286,6 @@ La commande `kubectl get componentstatus` signale que le planificateur, le gesti
 
 ## Aller plus loin
 
-- Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services de vous aider dans le cadre de votre projet spécifique.
+- Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une assistance auprès de nos experts Professional Services.
 
 - Échangez avec notre [communauté d'utilisateurs](/links/community).
