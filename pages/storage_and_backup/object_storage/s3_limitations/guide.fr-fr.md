@@ -27,8 +27,6 @@ Il est important de rappeler que ces valeurs maximales sont des *"soft limits"* 
 
 Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
-Voici la traduction en français du contenu markdown que vous avez fourni :
-
 ## Quotas et limitations par défaut du service
 
 | Ressource | Quota par défaut | Détails supplémentaires |
