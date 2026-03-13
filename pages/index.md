@@ -989,7 +989,7 @@
                     + [Add IP restrictions on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/add-ip-restrictions)
                     + [Changing the security update policy on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/change-security-update)
                     + [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/configuring-oidc-provider-config)
-                    + [Customising IP allocation on OVHcloud Managed Kubernetes (Standard plan only)](public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation)
+                    + [Customising IP allocation on an OVHcloud Managed Kubernetes cluster (Standard plan only)](public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation)
                 + [Nodepools & Nodes](public-cloud-containers-orchestration-managed-kubernetes-k8s-configuration-nodepools-and-nodes)
                     + [How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/managing-nodes)
                     + [Dynamically resizing a cluster with the cluster autoscaler](public_cloud/containers_orchestration/managed_kubernetes/using-cluster-autoscaler)

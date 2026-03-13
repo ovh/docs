@@ -1,5 +1,5 @@
 ---
-title: Customising IP allocation on OVHcloud Managed Kubernetes (Standard plan only)
+title: Customising IP allocation on an OVHcloud Managed Kubernetes cluster (Standard plan only)
 excerpt: "Find out how to configure the IP allocation policy for your pods and services on an OVHcloud Managed Kubernetes cluster with Standard plan"
 updated: 2026-03-13
 ---
