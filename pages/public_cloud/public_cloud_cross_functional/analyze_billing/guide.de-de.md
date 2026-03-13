@@ -20,7 +20,17 @@ Dieses System ähnelt dem einiger Telefonieanbieter, wobei am Monatsende die Anz
 
 - Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Profitieren Sie von reduzierten Preisen, indem Sie sich für einen Zeitraum von 1 bis 36 Monaten für Ihre Public Cloud-Ressourcen verpflichten. Weitere Informationen finden Sie auf unserer Seite zu [Savings Plans](/links/public-cloud/savings-plan).

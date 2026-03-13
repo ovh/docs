@@ -14,10 +14,20 @@ Il comprend également des conseils sur le choix de l'infrastructure, l'IAM, les
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](/links/manager).
 - [Avoir configuré les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 - Être familier de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), si vous avez l'intention de l'utiliser.
 - Compréhension de base des [concepts de réseau cloud](/links/public-cloud/network) (par exemple, sous-réseaux, gateways, adresses Floating IP).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 

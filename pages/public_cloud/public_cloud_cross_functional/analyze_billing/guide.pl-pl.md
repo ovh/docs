@@ -20,7 +20,17 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 
 * [projekt Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 * [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Skorzystaj z obniżonych cen, zobowiązując się do korzystania z zasobów Public Cloud przez okres od 1 do 36 miesięcy. Więcej informacji na stronie [Savings Plans](/links/public-cloud/savings-plan).

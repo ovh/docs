@@ -20,7 +20,17 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 
 * Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 * Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* Être connecté à l'[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
