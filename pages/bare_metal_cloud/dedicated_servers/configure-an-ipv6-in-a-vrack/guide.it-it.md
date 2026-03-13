@@ -1,7 +1,7 @@
 ---
 title: Configurare un blocco Additional IPv6 in un vRack
 excerpt: "Scopri come configurare un blocco di indirizzi IPv6 pubblici da utilizzare in un vRack"
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -240,6 +240,7 @@ Per accedere all'interfaccia di gestione:
 - Nella colonna "IP pubblico e larghezza di banda", clicca sul pulsante `Gestisci`{.action} corrispondente al vRack desiderato.
 
 L'interfaccia di gestione è suddivisa in due schede:
+
 - **Tutti i servizi associati**: Al momento reindirizza alla pagina di gestione classica del vRack. Prossimamente, questa scheda elencherà in modo ottimizzato tutti i prodotti (server, progetti Cloud, ecc.) collegati al vRack.
 - **Connettività IP pubblica**: Consente di gestire le opzioni di routing pubblico del tuo vRack, inclusa la larghezza di banda.
 

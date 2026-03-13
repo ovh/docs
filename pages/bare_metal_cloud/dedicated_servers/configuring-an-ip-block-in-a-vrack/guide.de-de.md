@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration eines Additional IP-Blocks in einem vRack'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie einen Block öffentlicher IP-Adressen für die Verwendung mit dem vRack konfigurieren.'
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -117,6 +117,7 @@ So greifen Sie auf die Verwaltungsoberfläche zu:
 - Klicken Sie in der Spalte "Public IP & bandwidth" auf die Schaltfläche `Verwalten`{.action} für das entsprechende vRack.
 
 Die Verwaltungsseite ist in zwei Tabs unterteilt:
+
 - **All attached services**: Derzeit leitet es zur klassischen vRack-Verwaltungsseite weiter. In Kürze werden dort alle Produkte (Server, Cloud-Projekte usw.), die derzeit mit dem vRack verknüpft sind, auf neue Weise aufgelistet.
 - **Public IP Routing**: Verwaltet die öffentlichen IP-Routing-Optionen Ihres vRack, einschließlich der öffentlichen Bandbreite.
 

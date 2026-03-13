@@ -1,7 +1,7 @@
 ---
 title: Einen Additional-IPv6-Block in einem vRack konfigurieren
 excerpt: "Erfahren Sie, wie Sie einen Block öffentlicher IPv6-Adressen für die Verwendung in einem OVHcloud vRack-Netzwerk konfigurieren"
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -241,6 +241,7 @@ Um auf die Verwaltungsoberfläche zuzugreifen:
 - Klicken Sie in der Spalte "Öffentliche IP und Bandbreite" auf die Schaltfläche `Verwalten`{.action} für das entsprechende vRack.
 
 Die Verwaltungsseite ist in zwei Registerkarten unterteilt:
+
 - **Alle verbundenen Dienste**: Leitet derzeit auf die klassische vRack-Verwaltungsseite weiter. Demnächst werden hier alle mit dem vRack verbundenen Produkte (Server, Cloud-Projekte usw.) übersichtlich aufgelistet.
 - **Öffentliches IP-Routing**: Verwaltet die öffentlichen IP-Routing-Optionen Ihres vRack, einschließlich der Bandbreite.
 

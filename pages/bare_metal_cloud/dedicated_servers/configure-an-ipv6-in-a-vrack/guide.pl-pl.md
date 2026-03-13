@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja bloku Additional IPv6 w sieci vRack
 excerpt: Dowiedz się, jak skonfigurować blok publicznych adresów IPv6 do użytku w sieci vRack OVHcloud
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -242,6 +242,7 @@ Aby uzyskać dostęp do interfejsu zarządzania:
 - W kolumnie "Publiczne IP i przepustowość" kliknij przycisk `Zarządzaj`{.action} przy odpowiedniej sieci vRack.
 
 Strona zarządzania podzielona jest na dwie zakładki:
+
 - **Wszystkie podłączone usługi**: Na razie przekierowuje do klasycznej strony zarządzania siecią vRack. Wkrótce wyświetli wszystkie produkty (serwery, projekty Cloud itp.) aktualnie powiązane z siecią vRack w nowy sposób.
 - **Publiczny routing IP**: Zarządza opcjami routingu publicznego IP sieci vRack, w tym przepustowością publiczną.
 

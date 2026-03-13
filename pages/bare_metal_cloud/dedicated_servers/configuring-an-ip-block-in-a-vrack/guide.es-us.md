@@ -1,7 +1,7 @@
 ---
 title: 'Configurar un bloque de Additional IP en un vRack'
 excerpt: 'Descubra cómo configurar un bloque de direcciones IP públicas en el vRack.'
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -117,6 +117,7 @@ Para acceder a la interfaz de gestión:
 - En la columna "Dirección IP pública y ancho de banda", haga clic en el botón `Gestionar`{.action} correspondiente al vRack deseado.
 
 La interfaz de gestión se divide en dos pestañas:
+
 - **All attached services**: Actualmente redirige a la página de gestión clásica del vRack. Próximamente, esta pestaña listará de forma optimizada todos los productos (servidores, proyectos Cloud, etc.) vinculados al vRack.
 - **Conectividad IP pública**: Permite gestionar las opciones de enrutamiento público de su vRack, incluido el ancho de banda.
 

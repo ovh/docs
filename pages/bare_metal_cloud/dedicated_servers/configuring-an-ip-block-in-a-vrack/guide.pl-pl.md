@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja bloku Additional IP w sieci vRack'
 excerpt: 'Ten przewodnik pokazuje, jak skonfigurować blok publicznych adresów IP do użytku z siecią vRack.'
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -117,6 +117,7 @@ Aby uzyskać dostęp do interfejsu zarządzania:
 - W kolumnie "Public IP & bandwidth" kliknij przycisk `Zarządzaj`{.action} dla odpowiedniego vRack.
 
 Strona zarządzania jest podzielona na dwie zakładki:
+
 - **All attached services**: Na razie przekierowuje do klasycznej strony zarządzania vRack. Wkrótce będzie wyświetlać wszystkie produkty (Serwery, Projekty Cloud itp.) aktualnie powiązane z vRack w nowy sposób.
 - **Publiczny routing IP**: Zarządza opcjami publicznego routingu IP Twojego vRack, w tym publiczną przepustowością.
 

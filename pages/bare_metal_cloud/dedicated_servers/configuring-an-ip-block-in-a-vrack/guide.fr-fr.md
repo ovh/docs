@@ -1,7 +1,7 @@
 ---
 title: "Configurer un bloc Additional IP dans le vRack"
 excerpt: "Découvrez comment configurer un bloc d'adresses IP publiques dans le vRack"
-updated: 2026-03-11
+updated: 2026-03-16
 ---
 
 <style>
@@ -117,6 +117,7 @@ Pour accéder à l'interface de gestion :
 - Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
 
 L'interface de gestion se divise en deux onglets :
+
 - **Tous les services attachés** : Redirige actuellement vers la page de gestion classique du vRack. Prochainement, cet onglet listera de façon optimisée tous les produits (serveurs, projets Cloud, etc.) liés au vRack.
 - **Connectivité IP publique** : Permet de gérer les options de routage public de votre vRack, y compris la bande passante.
 
