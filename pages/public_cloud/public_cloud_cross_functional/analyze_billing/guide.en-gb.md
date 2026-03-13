@@ -1,7 +1,7 @@
 ---
 title: 'Information regarding Public Cloud billing options'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-updated: 2025-04-28
+updated: 2026-03-12
 ---
 
 ## Objective
@@ -176,37 +176,16 @@ Snapshots of additional volumes are billed the same way as the volumes themselve
 
 Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](/links/public-cloud/prices) to view prices.
 
-#### Object storage
 
-Two elements are billed for object storage:
+#### Object Storage
 
-- The storage of the objects themselves, i.e. the volume actually used in GB.
-- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
+Object Storage is billed on a **pay-as-you-go** basis according to the average volume stored per hour in each storage class (GiB-hours), with invoicing at the end of the month. Storage is the main billing component; incoming traffic, internal OVHcloud traffic, API calls and public egress are included at no extra cost.
 
-> [!primary]
->
-> Outgoing traffic between the object storage service and the instances is
-> billed the same way as outgoing traffic sent via the internet.
->
-
-> [!warning]
->
-> Viewing objects via the OVHcloud Control Panel is also considered
-> to be outgoing traffic.
->
-
-#### Archives
-
-Three elements are billed for archive storage:
-
-- The storage of the archives themselves, i.e. the volume actually used in GB.
-- Incoming traffic, i.e. the volume of data sent to the service, contained in HTTP body.
-- Outgoing traffic, i.e. the volume of data sent from the service, contained in HTTP body.
+To align cost with your data access patterns, we offer several S3-compatible Object Storage classes (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). For a detailed explanation of these classes, including use cases, performance and SLAs, please refer to the dedicated guide: [Choosing the right Object Storage class](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs)
 
 > [!primary]
 >
-> Outgoing traffic between the archive service and the instances is
-> billed the same way as outgoing traffic sent via the internet.
+> For Infrequent Access, Active Archive and Cold Archive classes, a minimum storage duration and retrieval fees are applied
 >
 
 ## Go further
