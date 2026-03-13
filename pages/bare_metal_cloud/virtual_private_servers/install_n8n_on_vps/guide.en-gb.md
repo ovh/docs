@@ -1,5 +1,5 @@
 ---
-title: "How to install n8n on an OVHcloud VPS"
+title: "Install N8N on an OVHcloud VPS"
 excerpt: "Find out how to host the n8n automation platform on an OVHcloud VPS using Docker and Traefik"
 updated: 2025-09-23
 ---

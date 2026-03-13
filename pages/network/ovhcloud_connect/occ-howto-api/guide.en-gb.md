@@ -1,5 +1,5 @@
 ---
-title: Configuration of OVHcloud Connect using OVHcloud APIv6
+title: "Configure OVHcloud Connect using OVHcloud APIv6"
 excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
 updated: 2020-09-14
 ---

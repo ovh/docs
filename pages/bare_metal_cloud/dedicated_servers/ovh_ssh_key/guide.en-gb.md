@@ -1,5 +1,5 @@
 ---
-title: 'Installing an OVHcloud SSH key'
+title: 'Install an OVHcloud SSH key'
 excerpt: 'This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes'
 updated: 2018-02-12
 ---

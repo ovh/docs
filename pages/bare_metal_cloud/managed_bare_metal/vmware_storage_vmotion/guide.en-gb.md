@@ -1,5 +1,5 @@
 ---
-title: VMware Storage vMotion
+title: "Configure VMware Storage vMotion"
 excerpt: Find out how to move your virtual machine to a different datastore (hot migration)
 updated: 2020-11-18
 ---

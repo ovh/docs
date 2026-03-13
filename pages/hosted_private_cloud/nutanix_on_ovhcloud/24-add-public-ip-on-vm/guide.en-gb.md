@@ -1,5 +1,5 @@
 ---
-title: Adding a public IP address to a new VM
+title: "Add a public IP address to a new VM"
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
 updated: 2022-01-11
 ---

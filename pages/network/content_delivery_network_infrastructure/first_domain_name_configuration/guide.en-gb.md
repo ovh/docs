@@ -1,5 +1,5 @@
 ---
-title: 'Configuring a domain name for the first time'
+title: 'Configure a domain name for the first time'
 excerpt: 'Find out how to properly configure a domain on the OVH CDN'
 updated: 2018-02-21
 ---

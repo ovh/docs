@@ -1,5 +1,5 @@
 ---
-title: "Configuration of an OVHcloud Load Balancer service - HTTP headers"
+title: "Configure HTTP headers on your OVHcloud Load Balancer"
 excerpt: Integrate your web services behind a Load Balancer with HTTP headers
 updated: 2025-11-12
 ---

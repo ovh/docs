@@ -1,5 +1,5 @@
 ---
-title: "How to troubleshoot your network using OVHcloud tools"
+title: "Troubleshoot your network using OVHcloud tools"
 excerpt: "Find out how to use the networking tools available to OVHcloud customers"
 updated: 2025-06-25
 ---

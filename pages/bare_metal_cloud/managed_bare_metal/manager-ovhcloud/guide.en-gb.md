@@ -1,5 +1,5 @@
 ---
-title: Introduction to the Managed Bare Metal Control Panel
+title: "Get started with the Managed Bare Metal Control Panel"
 excerpt: Find out how to use the OVHcloud Managed Bare Metal Control Panel
 updated: 2020-11-18
 ---

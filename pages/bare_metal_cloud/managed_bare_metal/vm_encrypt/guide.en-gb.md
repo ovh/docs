@@ -1,5 +1,5 @@
 ---
-title: 'Enabling Virtual Machine Encryption (VM Encrypt)'
+title: 'Enable Virtual Machine Encryption (VM Encrypt)'
 excerpt: 'Learn how to enable VM encryption'
 updated: 2020-11-18
 ---

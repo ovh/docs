@@ -1,5 +1,5 @@
 ---
-title: "How to use SFTP to transfer files"
+title: "Use SFTP to transfer files"
 excerpt: "Find out how to connect to your server with FileZilla to upload and download files"
 updated: 2025-02-21
 ---

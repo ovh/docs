@@ -1,5 +1,5 @@
 ---
-title: "Configuration of probes on an OVHcloud Load Balancer service"
+title: "Configure probes on your OVHcloud Load Balancer"
 excerpt: "Discover the general principles and use cases for probes"
 updated: 2025-11-12
 ---

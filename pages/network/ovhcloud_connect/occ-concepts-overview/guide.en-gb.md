@@ -1,5 +1,5 @@
 ---
-title: Concepts overview
+title: "OVHcloud Connect - Concepts overview"
 excerpt: 'Concepts overview - OVHcloud Connect'
 updated: 2025-10-29
 ---

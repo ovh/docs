@@ -1,5 +1,5 @@
 ---
-title: Installing VMware tools
+title: "Install VMware tools"
 excerpt: 'Find out how to install VMware tools on Linux or Windows'
 updated: 2020-11-18
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Automating the deployment of your website on your VPS via GitHub Actions"
+title: "Automate the deployment of your website on your VPS via GitHub Actions"
 excerpt: 'Find out how to deploy and automate your website’s code via GitHub Actions on an OVHcloud VPS'
 updated: 2025-01-21
 ---

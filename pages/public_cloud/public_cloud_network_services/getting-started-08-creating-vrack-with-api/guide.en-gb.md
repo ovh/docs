@@ -1,5 +1,5 @@
 ---
-title: 'Configuring vRack for Public Cloud using OVHcloud APIv6'
+title: 'Configure vRack for Public Cloud using OVHcloud APIv6'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances with the OVHcloud APIv6'
 updated: 2022-11-02
 ---

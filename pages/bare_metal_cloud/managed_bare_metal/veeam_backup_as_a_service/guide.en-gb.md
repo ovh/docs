@@ -1,5 +1,5 @@
 ---
-title: Activating and using Veeam Managed Backup
+title: "Activate and use Veeam Managed Backup"
 excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
 updated: 2020-11-18
 ---

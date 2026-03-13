@@ -1,5 +1,5 @@
 ---
-title: Cloning a VM
+title: "Clone a VM"
 excerpt: Learn how to clone an existing virtual machine in vSphere
 updated: 2020-11-18
 ---

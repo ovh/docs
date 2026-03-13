@@ -1,5 +1,5 @@
 ---
-title: Load balancing methods
+title: "Change the load balancing method of your OVHcloud Load Balancer"
 excerpt: Discover the various load balancing algorithms available with the OVHcloud Load Balancer
 updated: 2025-10-24
 ---

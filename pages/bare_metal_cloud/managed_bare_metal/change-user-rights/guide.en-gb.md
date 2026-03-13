@@ -1,5 +1,5 @@
 ---
-title: Changing user rights
+title: "Change user rights"
 excerpt: Find out how to manage user permissions for the vSphere client
 updated: 2020-11-18
 ---

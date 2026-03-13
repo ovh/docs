@@ -1,5 +1,5 @@
 ---
-title: Repartitioning a VPS after a storage upgrade
+title: "Reartition a VPS after a storage upgrade"
 excerpt: Find out how to increase the usable disk space following an upgrade
 updated: 2025-11-05
 ---

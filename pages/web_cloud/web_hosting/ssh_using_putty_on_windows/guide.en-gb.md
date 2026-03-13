@@ -1,5 +1,5 @@
 ---
-title: How to use PuTTY for SSH connections and authentication
+title: "Use PuTTY for SSH connections and authentication"
 excerpt: Find out how to access your cloud server or web hosting and manage SSH keys with the PuTTY SSH client software
 updated: 2024-11-11
 ---

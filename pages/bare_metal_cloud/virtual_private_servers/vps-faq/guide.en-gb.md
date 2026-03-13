@@ -1,5 +1,5 @@
 ---
-title: "OVHcloud VPS FAQ"
+title: "VPS - FAQ"
 excerpt: "Find the answers to the most frequently asked questions about our VPS offers"
 updated: 2025-10-30
 ---

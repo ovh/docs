@@ -1,5 +1,5 @@
 ---
-title: Migrating an infrastructure to a new vDC
+title: "Migrate an infrastructure to a new vDC"
 excerpt: Find out how to manage all aspects of migrating an infrastructure to a vDC
 hidden: true
 updated: 2020-12-16

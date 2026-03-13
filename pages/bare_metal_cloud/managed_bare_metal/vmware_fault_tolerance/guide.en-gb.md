@@ -1,5 +1,5 @@
 ---
-title: VMware Fault Tolerance
+title: "Configure VMware Fault Tolerance"
 excerpt: Find out how to assure continuous availability of your virtual machine by using Fault Tolerance
 updated: 2020-11-18
 ---

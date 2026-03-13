@@ -1,5 +1,5 @@
 ---
-title: "List of IP addresses to authorize for your CDN Infrastructure"
+title: "CDN Infrastructure - Required IP addresses"
 excerpt: "Discover all the IP addresses to authorize for your CDN Infrastructure"
 updated: 2024-06-20
 ---

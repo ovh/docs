@@ -1,5 +1,5 @@
 ---
-title: FAQ SecNumCloud Connectivity
+title: "SecNumCloud - FAQ"
 updated: 2022-10-13
 ---
 

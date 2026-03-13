@@ -1,5 +1,5 @@
 ---
-title: "How to activate and use Windows rescue mode"
+title: "Activate and use Windows rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue system for Windows to troubleshoot your dedicated server"
 updated: 2025-01-28
 ---

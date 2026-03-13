@@ -1,5 +1,5 @@
 ---
-title: Configuring a software mirror (RAID) on Windows
+title: "Configure a Software RAID on Windows"
 excerpt: "Find out how to rebuild your server’s drive configuration after a disk replacement"
 updated: 2023-03-28
 ---

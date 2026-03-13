@@ -1,5 +1,5 @@
 ---
-title: 'Setting up a VPN for OVHcloud Zerto DRP'
+title: 'Configure a VPN for OVHcloud Zerto DRP'
 excerpt: 'Learn how to setup a VPN tunnel to connect your on-premises plaftorm to your OVHcloud Managed Bare Metal'
 updated: 2020-11-18
 ---

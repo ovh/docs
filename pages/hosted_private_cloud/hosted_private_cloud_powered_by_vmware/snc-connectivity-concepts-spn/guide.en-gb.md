@@ -1,5 +1,5 @@
 ---
-title: SPN Concept
+title: "Understand the SPN concept"
 excerpt: 'SNC Connectivity - SPN Concept'
 updated: 2022-10-10
 ---

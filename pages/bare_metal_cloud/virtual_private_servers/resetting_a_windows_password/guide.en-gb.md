@@ -1,5 +1,5 @@
 ---
-title: Changing the admin password on a Windows server 
+title: "Change the admin password on a Windows server"
 excerpt: Find out how to reset your Windows Administrator account password on a VPS or a Public Cloud instance using the OVHcloud rescue mode
 updated: 2023-10-12
 ---

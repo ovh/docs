@@ -1,5 +1,5 @@
 ---
-title: VMware DRS (Distributed Resource Scheduler)
+title: "Configure VMware DRS (Distributed Resource Scheduler)"
 excerpt: Find out how to manage load balancing with DRS
 updated: 2020-11-18
 ---

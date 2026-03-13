@@ -1,5 +1,5 @@
 ---
-title: "How to perform server hardware diagnostics in rescue mode"
+title: "Perform server hardware diagnostics in rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode and diagnostic tools to identify hardware failures on your dedicated server"
 updated: 2025-10-16
 ---

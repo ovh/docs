@@ -1,5 +1,5 @@
 ---
-title: How to use the backup storage on a dedicated server
+title: "Use backup storage on a dedicated server"
 excerpt: 'Find out how to enable and access your additional storage space'
 updated: 2025-10-09
 ---

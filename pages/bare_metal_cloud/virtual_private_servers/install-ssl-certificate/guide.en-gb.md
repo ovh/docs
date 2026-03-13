@@ -1,5 +1,5 @@
 ---
-title: 'How to install an SSL certificate on a VPS'
+title: 'Install an SSL certificate on a VPS'
 excerpt: 'Find out how to install an SSL certificate on an OVHcloud VPS'
 updated: 2025-01-24
 ---

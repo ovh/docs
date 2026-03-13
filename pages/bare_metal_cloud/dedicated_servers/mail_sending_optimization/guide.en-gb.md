@@ -1,5 +1,5 @@
 ---
-title: How to prevent your emails from being marked as spam
+title: "Prevent your emails from being marked as spam"
 excerpt: Find out how to apply best practices for email sending in order to limit the risk of legitimate emails being blocked by spam protection
 updated: 2024-09-24
 ---

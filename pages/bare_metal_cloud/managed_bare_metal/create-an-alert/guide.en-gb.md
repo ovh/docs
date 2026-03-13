@@ -1,5 +1,5 @@
 ---
-title: Creating an alert
+title: "Create an alert"
 excerpt: Find out how to set up alerts on your vSphere client
 updated: 2020-11-18
 ---

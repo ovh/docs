@@ -1,5 +1,5 @@
 ---
-title: Modifying virtual machine resources
+title: "Modify virtual machine resources"
 excerpt: Find out how to scale your virtual machine
 updated: 2020-11-18
 ---

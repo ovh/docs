@@ -1,5 +1,5 @@
 ---
-title: 'Removing a datastore'
+title: 'Remove a datastore'
 excerpt: 'Find out how to remove a datastore from your Managed Bare Metal'
 updated: 2020-11-18
 ---

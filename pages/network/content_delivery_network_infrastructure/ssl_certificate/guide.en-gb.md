@@ -1,5 +1,5 @@
 ---
-title: 'Adding an SSL certificate on the CDN'
+title: 'Add an SSL certificate on the CDN'
 excerpt: 'Find out how to add an SSL certificate on the CDN'
 updated: 2018-02-22
 ---

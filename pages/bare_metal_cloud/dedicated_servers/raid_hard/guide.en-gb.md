@@ -1,5 +1,5 @@
 ---
-title: Managing hardware RAID
+title: "Manage hardware RAID"
 excerpt: Find out how to verify the state of your hardware RAID and the health of your hard drives
 updated: 2025-03-19
 ---

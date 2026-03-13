@@ -1,5 +1,5 @@
 ---
-title: Associating an email with a vSphere user
+title: "Associate an email with a vSphere user"
 excerpt: Learn how to associate an email address with your vSphere user
 updated: 2020-11-18
 ---

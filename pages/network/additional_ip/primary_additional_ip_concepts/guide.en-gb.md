@@ -1,5 +1,5 @@
 ---
-title: Concepts - Primary IP and Additional IP
+title: "Concepts - Primary and Additional IP"
 excerpt: Understand the differences between Primary IP and Additional IP addresses, and learn about their use cases
 updated: 2025-09-22
 ---

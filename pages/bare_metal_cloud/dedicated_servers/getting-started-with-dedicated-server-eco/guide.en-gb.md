@@ -1,5 +1,5 @@
 ---
-title: "How to get started with a Kimsufi, So You Start or Rise dedicated server"
+title: "Configure a Kimsufi, So You Start or Rise dedicated server"
 excerpt: "Find out how to manage a Kimsufi, So You Start or Rise in the OVHcloud Control Panel and how to start with configuring and securing a server"
 updated: 2025-04-29
 ---

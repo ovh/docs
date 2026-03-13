@@ -1,5 +1,5 @@
 ---
-title: "How to secure a dedicated server"
+title: "Secure a dedicated server"
 excerpt: "Find out how to apply basic security measures to protect your dedicated server against attacks and unauthorised access"
 updated: 2024-02-20
 ---

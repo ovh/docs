@@ -1,5 +1,5 @@
 ---
-title: Improving Network Resilience on Bare Metal servers
+title: "Improve Network Resilience on Baremetal Servers"
 excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare Metal servers with the new network aggregation architecture
 updated: 2025-10-28
 ---

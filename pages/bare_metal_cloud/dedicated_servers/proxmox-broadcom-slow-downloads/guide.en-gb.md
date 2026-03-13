@@ -1,5 +1,5 @@
 ---
-title: 'Network - Fixing slow downloads problems inside containers and VMs running on Proxmox VE servers with Broadcom BCM57502 NICs'
+title: 'Fix slow downloads problems inside containers and VMs running on Proxmox VE servers with Broadcom BCM57502 NICs'
 excerpt: 'Find out how to fix slow downloads problems inside containers and virtual machines running on Proxmox VE servers with a Broadcom BCM57502 network interface controller by disabling the generic-receive-offload parameter'
 updated: 2025-01-16
 ---

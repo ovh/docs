@@ -1,5 +1,5 @@
 ---
-title: "Configuring an IPv6 address on a virtual machine"
+title: "Configure an IPv6 address on a virtual machine"
 excerpt: "Find out how to configure an IPv6 address on a virtual machine for Proxmox VE or Microsoft Hyper-V Server on an OVHcloud Dedicated Server"
 updated: 2024-10-18
 ---

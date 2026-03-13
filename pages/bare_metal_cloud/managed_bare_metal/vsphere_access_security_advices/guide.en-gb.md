@@ -1,5 +1,5 @@
 ---
-title: Keeping your vSphere web client secure
+title: "Keep your vSphere web client secure"
 excerpt: Find out how to optimise security for your vSphere web client
 updated: 2020-11-18
 ---

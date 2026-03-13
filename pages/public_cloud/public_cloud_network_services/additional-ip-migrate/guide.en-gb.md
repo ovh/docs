@@ -1,5 +1,5 @@
 ---
-title: Migrating an Additional IP
+title: "Migrate an Additional IP"
 excerpt: "Find out how to migrate an Additional IP address to another instance"
 updated: 2025-04-28
 ---

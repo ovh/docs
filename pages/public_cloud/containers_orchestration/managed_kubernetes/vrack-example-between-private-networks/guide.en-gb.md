@@ -1,5 +1,5 @@
 ---
-title: Working with vRack example - Communicating between different private networks
+title: "Work with vRack - Communicating between different private networks"
 updated: 2021-07-31
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Configuring MegaRAID for RAID Level 0
+title: "Configure MegaRAID for RAID level 0"
 excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
 updated: 2025-04-29
 ---

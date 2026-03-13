@@ -1,5 +1,5 @@
 ---
-title: 'Securing a server with a Memcached service'
+title: 'Secure a server with a Memcached service'
 excerpt: 'Find out how to secure your Memcached service'
 updated: 2018-03-02
 ---

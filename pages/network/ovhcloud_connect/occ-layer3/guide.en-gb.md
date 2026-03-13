@@ -1,5 +1,5 @@
 ---
-title: Layer 3 mode
+title: "OVHcloud Connect - Layer 3 mode"
 excerpt: 'Details about using Layer 3 (L3) with OVHcloud Connect'
 updated: 2020-09-14
 ---

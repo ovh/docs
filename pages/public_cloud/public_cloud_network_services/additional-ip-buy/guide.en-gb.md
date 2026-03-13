@@ -1,5 +1,5 @@
 ---
-title: Buying an Additional IP
+title: "Buy an Additional IP"
 excerpt: "Find out how to order Additional IP addresses for your instances"
 updated: 2025-04-28
 ---

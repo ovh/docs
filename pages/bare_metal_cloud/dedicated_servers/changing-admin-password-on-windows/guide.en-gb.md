@@ -1,5 +1,5 @@
 ---
-title: Changing the admin password on a Windows dedicated server
+title: "Change the admin password on a Windows dedicated server"
 excerpt: Find out how to use the OVHcloud rescue mode to reset the password of the Administrator account on a Windows dedicated server
 updated: 2024-06-26
 flag: hidden

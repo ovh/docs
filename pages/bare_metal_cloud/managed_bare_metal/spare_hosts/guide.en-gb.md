@@ -1,5 +1,5 @@
 ---
-title: Spare host delivery and return
+title: "Manage spare host delivery and return"
 excerpt: Find out how the replacement of a host works
 updated: 2020-11-18
 ---

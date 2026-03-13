@@ -1,5 +1,5 @@
 ---
-title: Backing up a Bare Metal Linux Server with Veeam Enterprise
+title: "Back up a Bare Metal Linux Server with Veeam Enterprise"
 excerpt: Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)
 updated: 2024-04-05
 ---

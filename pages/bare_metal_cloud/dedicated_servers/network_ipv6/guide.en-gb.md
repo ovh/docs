@@ -1,5 +1,5 @@
 ---
-title: 'Configuring IPv6 on dedicated servers'
+title: 'Configure IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 updated: 2025-12-09
 ---

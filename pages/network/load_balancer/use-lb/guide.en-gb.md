@@ -1,5 +1,5 @@
 ---
-title: Managing your Load Balancer service via the Control Panel
+title: "Manage your Load Balancer service via the Control Panel"
 excerpt: An overview of the main features, and how to get started using the Load Balancer service from the Control Panel
 updated: 2025-07-30
 ---

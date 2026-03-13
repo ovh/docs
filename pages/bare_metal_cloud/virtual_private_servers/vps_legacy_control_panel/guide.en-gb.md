@@ -1,5 +1,5 @@
 ---
-title: "Managing a legacy VPS"
+title: "Manage a legacy VPS"
 excerpt: "Find out how to manage a VPS of a discontinued range in the OVHcloud Control Panel"
 updated: 2024-01-22
 ---

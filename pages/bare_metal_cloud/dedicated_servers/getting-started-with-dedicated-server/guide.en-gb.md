@@ -1,5 +1,5 @@
 ---
-title: "How to get started with a dedicated server"
+title: "Configure a dedicated server for the first time"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
 updated: 2025-04-29
 ---

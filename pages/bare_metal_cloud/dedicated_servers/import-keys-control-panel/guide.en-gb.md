@@ -1,5 +1,5 @@
 ---
-title: How to store public authentication keys in the OVHcloud Control Panel
+title: "Store public authentication keys in the OVHcloud Control Panel"
 excerpt: Find out how to import public SSH keys into your OVHcloud Control Panel
 updated: 2024-12-04
 ---

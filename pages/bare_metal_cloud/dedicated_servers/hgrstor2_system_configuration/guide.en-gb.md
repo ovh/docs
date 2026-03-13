@@ -1,5 +1,5 @@
 ---
-title: Configuring the storage on a HGR-STOR-2 server
+title: "Configure the storage on a HGR-STOR-2 server"
 excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
 updated: 2022-08-25
 ---

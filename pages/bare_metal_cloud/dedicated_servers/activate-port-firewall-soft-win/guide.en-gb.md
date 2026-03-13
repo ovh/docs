@@ -1,5 +1,5 @@
 ---
-title: Configuring the firewall on Windows
+title: "Configure the firewall on Windows on a dedicated server"
 excerpt: Find out how to configure your firewall on Windows
 updated: 2022-01-31
 ---

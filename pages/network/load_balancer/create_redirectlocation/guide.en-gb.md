@@ -1,5 +1,5 @@
 ---
-title: "Configuring an OVHcloud Load Balancer service with redirects"
+title: "Configure HTTP redirections on your OVHcloud Load Balancer"
 excerpt: Integrate your web services behind a Load Balancer with redirects
 updated: 2025-11-27
 ---

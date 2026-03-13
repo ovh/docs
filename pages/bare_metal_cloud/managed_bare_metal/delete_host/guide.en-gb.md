@@ -1,5 +1,5 @@
 ---
-title: 'Removing a host server'
+title: 'Remove a host server'
 excerpt: 'Find out how to remove a host server from a Managed Bare Metal infrastructure'
 updated: 2021-03-19
 ---

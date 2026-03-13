@@ -1,5 +1,5 @@
 ---
-title: Configuring the vRack on the load balancer
+title: "Configure the vRack on your OVHcloud Load Balancer"
 excerpt: How to configure vRack on a Load Balancer
 updated: 2025-09-02
 ---

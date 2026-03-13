@@ -1,5 +1,5 @@
 ---
-title: Replacing a defective disk
+title: "Replace a defective disk"
 excerpt: Find out how to identify a defective disk, and request a replacement
 updated: 2018-06-21
 ---

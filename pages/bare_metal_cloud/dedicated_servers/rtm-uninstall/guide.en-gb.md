@@ -1,5 +1,5 @@
 ---
-title: Uninstalling the RTM v2 monitoring system
+title: "Uninstall the RTM v2 monitoring system"
 excerpt: Find out how to uninstall the RTM monitoring system on your service(s)
 updated: 2023-06-20
 ---

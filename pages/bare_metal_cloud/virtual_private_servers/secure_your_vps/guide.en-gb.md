@@ -1,5 +1,5 @@
 ---
-title: "How to secure a VPS"
+title: "Secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
 updated: 2025-11-04
 ---

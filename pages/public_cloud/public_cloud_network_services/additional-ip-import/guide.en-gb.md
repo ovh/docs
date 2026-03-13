@@ -1,5 +1,5 @@
 ---
-title: Importing an Additional IP
+title: "Import an Additional IP"
 excerpt: "Find out how to import an Additional IP address into your Public Cloud project"
 updated: 2025-04-28
 ---

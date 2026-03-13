@@ -1,5 +1,5 @@
 ---
-title: "vRack Services - Exposing a Managed Service on your vRack"
+title: "Expose a Managed Service on your vRack"
 excerpt: "Discover how to expose your managed service on the vRack using the vRack Services product and the Service Endpoint feature."
 updated: 2025-10-21
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Configuring IP aliasing'
+title: 'Configure IP aliasing on a dedicated server'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
 updated: 2025-12-04
 ---

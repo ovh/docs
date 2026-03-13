@@ -1,5 +1,5 @@
 ---
-title: Configuring the firewall on Windows
+title: "Configure the firewall on Windows on a VPS"
 excerpt: Find out how to configure your firewall on Windows
 updated: 2023-02-17
 ---

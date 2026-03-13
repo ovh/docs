@@ -1,5 +1,5 @@
 ---
-title: Creating a snapshot
+title: "Create a snapshot"
 excerpt: Find out how to return to a previous status of your VM using snapshots
 updated: 2020-11-18
 ---

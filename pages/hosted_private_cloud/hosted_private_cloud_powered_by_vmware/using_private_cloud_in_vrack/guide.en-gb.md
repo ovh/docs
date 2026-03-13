@@ -1,5 +1,5 @@
 ---
-title: Using Private Cloud within a vRack
+title: "Use Private Cloud within a vRack"
 excerpt: Find out how to use vRack with an SDDC solution
 updated: 2022-03-28
 ---

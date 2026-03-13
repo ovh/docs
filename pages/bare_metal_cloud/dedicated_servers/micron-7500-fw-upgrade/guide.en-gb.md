@@ -1,5 +1,5 @@
 ---
-title: Dedicated Servers - Upgrading your Micron 7500 PRO firmware
+title: "Upgrade Micron 7500 PRO firmware on Dedicated Servers"
 excerpt: Learn how to upgrade your Micron 7500 PRO firmware for Linux, ESXi and Windows Dedicated Servers
 updated: 2025-09-25
 ---

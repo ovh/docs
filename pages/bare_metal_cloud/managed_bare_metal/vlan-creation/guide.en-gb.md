@@ -1,5 +1,5 @@
 ---
-title: VLAN creation
+title: "Create a VLAN"
 excerpt: Find out how to create VLANs (vRack)
 updated: 2020-11-18
 ---

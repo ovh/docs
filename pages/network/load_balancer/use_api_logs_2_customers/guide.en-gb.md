@@ -1,5 +1,5 @@
 ---
-title: OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding
+title: "Forward OVHcloud Load Balancer TCP / HTTP / HTTPS Logs"
 excerpt: Find out how to forward your logs from an OVHcloud Load Balancer to Logs Data Platform
 updated: 2025-06-16
 ---

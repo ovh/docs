@@ -1,5 +1,5 @@
 ---
-title: Checking the file system on a VPS
+title: "Check the file system on a VPS"
 excerpt: Find out how to check a file system for errors in rescue mode
 updated: 2023-09-20
 ---

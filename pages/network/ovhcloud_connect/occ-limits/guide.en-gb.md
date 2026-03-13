@@ -1,5 +1,5 @@
 ---
-title: Technical capabilities and limitations
+title: "OVHcloud Connect - Technical capabilities and limitations"
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
 updated: 2025-10-03
 ---

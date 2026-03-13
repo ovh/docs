@@ -1,5 +1,5 @@
 ---
-title: "Dedicated Server Security Specifications"
+title: "Dedicated Servers service Security Specifications"
 updated: 2024-06-30
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "How to increase the size of an additional disk"
+title: "Increase the size of an additional disk on a VPS"
 excerpt: "Find out how to increase the size of an additional volume and enlarge its main partition"
 updated: 2025-07-24
 ---

@@ -1,5 +1,5 @@
 ---
-title: High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware
+title: "Upgrade SSD SAS Western Digital SS530 firmware on High Grade Dedicated Servers"
 excerpt: Learn how to upgrade your SSD SAS Western Digital SS530 firmware for Linux, ESXi and Windows Dedicated Servers
 updated: 2024-08-06
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud API and Storage'
+title: 'Manage storage with the OVHcloud API'
 excerpt: 'Find out what the OVHcloud API provides in order to customize the disks, hardware/software RAID and partitioning configuration during the server OS reinstallation'
 updated: 2025-06-04
 ---

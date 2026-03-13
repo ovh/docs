@@ -1,5 +1,5 @@
 ---
-title: "Configuring an OVHcloud Load Balancer with ProxyProtocol"
+title: "Configure ProxyProtocol on your OVHcloud Load Balancer"
 excerpt: Integrate your TCP services behind a Load Balancer with ProxyProtocol
 updated: 2025-07-30
 ---

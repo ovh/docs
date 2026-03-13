@@ -1,5 +1,5 @@
 ---
-title: Changing the vRack of a Nutanix cluster
+title: "Change the vRack of a Nutanix cluster after installation"
 excerpt: Find out how to change the Nutanix cluster vRack
 updated: 2022-01-11
 ---

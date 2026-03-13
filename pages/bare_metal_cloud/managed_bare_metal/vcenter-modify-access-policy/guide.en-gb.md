@@ -1,5 +1,5 @@
 ---
-title: 'Modifying the vCenter access policy'
+title: 'Modify the vCenter access policy'
 excerpt: 'Find out how to change the access policy for vCenter'
 updated: 2020-11-18
 ---

@@ -1,5 +1,5 @@
 ---
-title: OVHcloud Connect Logs Forwarding
+title: "Forward OVHcloud Connect Logs"
 excerpt: Find out how to forward your logs from an OCC service to Logs Data Platform
 updated: 2025-08-28
 ---

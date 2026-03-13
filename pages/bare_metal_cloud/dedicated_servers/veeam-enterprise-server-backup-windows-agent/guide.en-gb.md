@@ -1,5 +1,5 @@
 ---
-title: Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows
+title: "Back up a Bare Metal Windows Server Using Veeam Agent for Windows"
 excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server
 updated: 2024-04-05
 ---

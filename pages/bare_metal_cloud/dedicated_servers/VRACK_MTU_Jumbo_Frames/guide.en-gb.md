@@ -1,5 +1,5 @@
 ---
-title: Configuring Jumbo Frames in vRack
+title: "Configure Jumbo Frames in vRack"
 excerpt: Learn how to configure Jumbo frames in vRack
 updated: 2020-08-17
 ---

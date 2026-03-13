@@ -1,5 +1,5 @@
 ---
-title: "Automate SMS sending with n8n via the OVHcloud API"
+title: "Send SMS from n8n using the OVHcloud API"
 excerpt: "Find out how to send SMS from n8n using the OVHcloud API"
 updated: 2025-12-02
 ---

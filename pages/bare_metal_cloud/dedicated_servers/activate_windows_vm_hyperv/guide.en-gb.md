@@ -1,5 +1,5 @@
 ---
-title: 'Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server'
+title: 'Activate Windows Machines using Hyper-V on an OVHcloud licensed Windows Server'
 excerpt: 'Find out how to create and activate a VM using Hyper-V on a Windows Server licensed by OVHcloud'
 updated: 2024-10-30
 ---

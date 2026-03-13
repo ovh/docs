@@ -1,5 +1,5 @@
 ---
-title: How to configure user accounts and root access on a server
+title: "Configure user accounts and root access on a server"
 excerpt: Find out how to get started with the administration of user accounts on a GNU/Linux operating system
 updated: 2024-02-19
 ---

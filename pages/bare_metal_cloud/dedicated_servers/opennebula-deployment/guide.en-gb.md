@@ -1,5 +1,5 @@
 ---
-title: How to deploy and verify an OpenNebula Hosted Cloud on Bare Metal servers
+title: "Deploy and verify an OpenNebula Hosted Cloud on Bare Metal servers"
 excerpt: Deploy a certified OpenNebula Hosted Cloud using OVHcloud Bare Metal servers and Ansible playbooks.
 updated: 2025-12-09
 ---

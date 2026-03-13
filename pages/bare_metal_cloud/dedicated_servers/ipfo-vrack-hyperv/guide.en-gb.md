@@ -1,5 +1,5 @@
 ---
-title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
+title: "Set up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
 excerpt: "How to use Hyper-V with Additional IPs over a vRack"
 updated: 2025-07-22
 ---

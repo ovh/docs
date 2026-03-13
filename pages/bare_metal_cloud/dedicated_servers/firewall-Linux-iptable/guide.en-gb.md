@@ -1,5 +1,5 @@
 ---
-title: Configuring the firewall on Linux with iptables
+title: "Configure the firewall on Linux with iptables on a dedicated server"
 excerpt: Find out how to secure a server with iptables
 updated: 2024-12-20
 ---

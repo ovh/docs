@@ -1,5 +1,5 @@
 ---
-title: 'How to route an Additional IP'
+title: 'Add an Additional IP to your OVHcloud Load Balancer'
 excerpt: 'Find out how to route an Additional IP and link it to the OVHcloud Load Balancer'
 updated: 2025-11-27
 ---

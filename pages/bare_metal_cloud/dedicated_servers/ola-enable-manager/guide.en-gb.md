@@ -1,5 +1,5 @@
 ---
-title: 'Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel'
+title: 'Configure OVHcloud Link Aggregation in the OVHcloud Control Panel'
 excerpt: 'Find out how to enable OVHcloud Link Aggregation in the OVHcloud Control Panel'
 updated: 2022-05-18
 ---

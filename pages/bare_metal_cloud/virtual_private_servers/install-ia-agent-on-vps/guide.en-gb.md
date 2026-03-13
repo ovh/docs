@@ -1,5 +1,5 @@
 ---
-title: 'How to install an AI agent on an OVHcloud VPS'
+title: 'Install an AI agent on an OVHcloud VPS'
 excerpt: 'Find out how to deploy an AI agent like Open Interpreter or GPT4All on an OVHcloud VPS'
 updated: 2025-08-18
 ---

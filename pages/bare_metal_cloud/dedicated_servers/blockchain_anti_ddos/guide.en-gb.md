@@ -1,5 +1,5 @@
 ---
-title: "How to configure the Anti-DDos Infrastructure for Solana"
+title: "Configure the Anti-DDoS Infrastructure for Solana"
 excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes without harming their functionality"
 updated: 2025-10-13
 ---

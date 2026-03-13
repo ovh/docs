@@ -1,5 +1,5 @@
 ---
-title: How to get started with SSH connections
+title: "Configure SSH connections on a dedicated server"
 excerpt: Find out how you can use SSH to access your OVHcloud server from most desktop clients
 updated: 2024-12-03
 ---

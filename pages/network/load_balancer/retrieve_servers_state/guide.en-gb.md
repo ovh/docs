@@ -1,5 +1,5 @@
 ---
-title: "Retrieving server health status"
+title: "Retrieve server health status"
 excerpt: Find out how to retrieve a server health status
 updated: 2025-11-27
 ---

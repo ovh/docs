@@ -1,5 +1,5 @@
 ---
-title: 'How to configure SMTP on a Load Balancer service'
+title: 'Configure SMTP on a Load Balancer service'
 excerpt: 'Find out how to use SMTP with the OVHcloud Load Balancer'
 updated: 2025-10-24
 ---

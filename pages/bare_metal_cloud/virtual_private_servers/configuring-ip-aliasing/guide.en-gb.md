@@ -1,5 +1,5 @@
 ---
-title: How to configure IP aliasing
+title: "Configure IP aliasing on a VPS"
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
 updated: 2025-11-12
 ---

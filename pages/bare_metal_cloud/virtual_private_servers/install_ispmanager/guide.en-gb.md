@@ -1,5 +1,5 @@
 ---
-title: 'How to install ISPmanager on a VPS or Dedicated Server'
+title: 'Install ISPmanager on a VPS or a dedicated server'
 excerpt: 'Discover how to install ISPmanager on your OVHcloud VPS or Dedicated Server and manage your websites, databases, and associated services'
 updated: 2025-10-27
 ---

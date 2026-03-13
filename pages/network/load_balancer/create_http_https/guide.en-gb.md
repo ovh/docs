@@ -1,5 +1,5 @@
 ---
-title: "Configuration of an OVHcloud Load Balancer service with HTTP/HTTPS"
+title: "Configure an HTTP/HTTPS OVHcloud Load Balancer service"
 excerpt: "Configure your OVHcloud Load Balancer to distribute HTTP traffic and secure your connections with HTTPS"
 updated: 2025-11-12
 ---

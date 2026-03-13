@@ -1,5 +1,5 @@
 ---
-title: Installation of OVHcloud Connect Provider from the OVHcloud Control Panel
+title: "Install OVHcloud Connect Provider from the OVHcloud Control Panel"
 excerpt: Find out how to set up your OVHcloud Connect Provider solution via the OVHcloud Control Panel
 updated: 2025-07-15
 ---

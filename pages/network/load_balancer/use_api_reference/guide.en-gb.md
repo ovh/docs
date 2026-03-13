@@ -1,5 +1,5 @@
 ---
-title: Load Balancer API Quick Reference
+title: "Load Balancer - API Quick Reference"
 excerpt: Quick description of the different API functions used to manage the Load Balancer
 updated: 2025-09-26
 ---

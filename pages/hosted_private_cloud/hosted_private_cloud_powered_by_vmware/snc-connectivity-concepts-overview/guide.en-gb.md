@@ -1,5 +1,5 @@
 ---
-title: Concepts overview
+title: "SecNumCloud connectivity concepts overview"
 excerpt: 'SecNumCloud Connectivity - Concepts overview'
 updated: 2021-11-18
 ---

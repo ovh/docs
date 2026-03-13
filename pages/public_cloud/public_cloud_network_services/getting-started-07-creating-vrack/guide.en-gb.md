@@ -1,5 +1,5 @@
 ---
-title: 'Configuring vRack for Public Cloud'
+title: 'Configure vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
 updated: 2025-04-28
 ---

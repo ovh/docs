@@ -1,5 +1,5 @@
 ---
-title: Cancelling an Additional IP service
+title: "Cancel an Additional IP service"
 excerpt: Find out how to cancel an Additional IP service via the OVHcloud API
 updated: 2022-12-22
 ---

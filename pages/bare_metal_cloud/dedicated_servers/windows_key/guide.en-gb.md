@@ -1,5 +1,5 @@
 ---
-title: 'Changing a Windows Server product key'
+title: 'Change a Windows Server product key'
 excerpt: 'Find out how to modify your Windows Server product key'
 updated: 2022-07-07
 ---

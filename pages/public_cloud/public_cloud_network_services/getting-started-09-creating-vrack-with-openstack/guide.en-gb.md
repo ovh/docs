@@ -1,5 +1,5 @@
 ---
-title: 'Configuring vRack for Public Cloud using OpenStack CLI'
+title: 'Configure vRack for Public Cloud using OpenStack CLI'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances with the OpenStack CLI'
 updated: 2025-01-13
 ---

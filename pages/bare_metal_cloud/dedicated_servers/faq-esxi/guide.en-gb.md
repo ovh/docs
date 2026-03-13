@@ -1,5 +1,5 @@
 ---
-title: "ESXi Dedicated Servers - FAQ"
+title: "ESXi Dedicated Servers - Security - FAQ"
 excerpt: "Find the most frequently asked questions about the wave of attacks targeting ESXi servers"
 updated: 2024-09-13
 ---

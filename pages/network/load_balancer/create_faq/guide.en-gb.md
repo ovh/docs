@@ -1,5 +1,5 @@
 ---
-title: 'OVHcloud Load Balancer FAQ'
+title: 'Load Balancer - FAQ'
 excerpt: 'Frequently Asked Questions on the OVHcloud Load Balancer'
 updated: 2025-11-12
 ---

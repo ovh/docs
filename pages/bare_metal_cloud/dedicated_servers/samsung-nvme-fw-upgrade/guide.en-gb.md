@@ -1,5 +1,5 @@
 ---
-title: Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware
+title: "Upgrade Samsung NVMe PM9A1 firmware on Advance Dedicated Servers"
 excerpt: Learn how to upgrade your Samsung NVMe PM9A1 firmware for Linux, ESXi and Windows Dedicated Servers
 updated: 2023-10-18
 ---

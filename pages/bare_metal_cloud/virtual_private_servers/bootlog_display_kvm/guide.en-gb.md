@@ -1,5 +1,5 @@
 ---
-title: Displaying boot logs in the KVM
+title: "Display boot logs in the KVM"
 excerpt: Find out how to diagnose a VPS by checking the boot log
 updated: 2021-07-05
 ---

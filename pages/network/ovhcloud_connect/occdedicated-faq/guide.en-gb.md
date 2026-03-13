@@ -1,5 +1,5 @@
 ---
-title: FAQ OVHcloud Connect
+title: "OVHcloud Connect - FAQ"
 updated: 2020-09-14
 ---
 

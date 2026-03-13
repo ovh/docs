@@ -1,5 +1,5 @@
 ---
-title: Using the vSphere SDK
+title: "Use the vSphere SDK"
 excerpt: Find out how to implement and use the vSphere SDK
 updated: 2020-11-18
 ---

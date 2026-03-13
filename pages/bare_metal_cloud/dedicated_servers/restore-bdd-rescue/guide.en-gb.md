@@ -1,5 +1,5 @@
 ---
-title: "How to retrieve databases in rescue mode"
+title: "Retrieve databases in rescue mode"
 excerpt: "Find out how to access and save your databases using rescue mode"
 updated: 2023-04-13
 ---

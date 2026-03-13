@@ -1,5 +1,5 @@
 ---
-title: Choosing a disk type
+title: "Choose a disk type"
 excerpt: Find out how to choose between the VMware disk types
 updated: 2020-11-18
 ---

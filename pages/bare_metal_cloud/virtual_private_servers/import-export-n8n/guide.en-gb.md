@@ -1,5 +1,5 @@
 ---
-title: "How to migrate an n8n configuration between two VPS"
+title: "Migrate an n8n configuration between two VPS"
 excerpt: "Find out how to export and import a complete n8n configuration (workflows and credentials) from an external VPS to an OVHcloud VPS, and vice versa."
 updated: 2025-09-23
 ---

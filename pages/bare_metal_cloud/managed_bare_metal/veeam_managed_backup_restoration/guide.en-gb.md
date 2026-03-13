@@ -1,5 +1,5 @@
 ---
-title: Restoring backups via the OVHcloud API
+title: "Restore backups via the OVHcloud API"
 excerpt: Find out how to restore Veeam Managed Backup backups via the OVHcloud API
 updated: 2021-03-29
 ---

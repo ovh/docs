@@ -1,5 +1,5 @@
 ---
-title: Migrating an infrastructure to a Managed Bare Metal solution
+title: "Migrate an infrastructure to a Managed Bare Metal solution"
 excerpt: Find out how to manage all aspects of migrating an infrastructure to Managed Bare Metal
 updated: 2020-11-23
 ---

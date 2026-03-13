@@ -1,5 +1,5 @@
 ---
-title: Deploying a virtual machine
+title: "Deploy a virtual machine"
 excerpt: Find out how to deploy a virtual machine in the vSphere interface
 updated: 2020-11-18
 ---

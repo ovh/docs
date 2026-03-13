@@ -1,5 +1,5 @@
 ---
-title: How to replace an SSH key pair
+title: "Replace an SSH key pair"
 excerpt: Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost
 updated: 2024-04-04
 ---

@@ -1,5 +1,5 @@
 ---
-title: Hot Swap - Software RAID
+title: "Perform hot swap with Software RAID"
 excerpt: Find out how to hot-swap a disk on a server with a software RAID configuration
 updated: 2023-08-21
 ---

@@ -1,5 +1,5 @@
 ---
-title: Using vRack Private Network
+title: "Use vRack Private Network"
 excerpt: ''
 updated: 2023-12-11
 ---

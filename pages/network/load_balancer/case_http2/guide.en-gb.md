@@ -1,5 +1,5 @@
 ---
-title: Configuring HTTP/2 on an OVH Load Balancer service
+title: "Configure HTTP/2 on an OVHcloud Load Balancer service"
 excerpt: Configuring HTTP/2 on an OVH Load Balancer service
 updated: 2025-07-04
 ---

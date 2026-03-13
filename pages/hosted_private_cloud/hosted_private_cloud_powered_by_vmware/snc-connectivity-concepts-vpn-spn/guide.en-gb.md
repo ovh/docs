@@ -1,5 +1,5 @@
 ---
-title: VPN-SPN Concept
+title: "Understand the VPN-SPN concept"
 excerpt: 'SNC Connectivity - VPN-SPN'
 updated: 2025-12-15
 ---

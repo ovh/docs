@@ -1,5 +1,5 @@
 ---
-title: 'Authorising IP addresses for vCenter access'
+title: 'Authorise IP addresses for vCenter access'
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
 updated: 2020-11-18
 ---

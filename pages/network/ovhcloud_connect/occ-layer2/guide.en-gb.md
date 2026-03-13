@@ -1,5 +1,5 @@
 ---
-title: Layer 2 mode
+title: "OVHcloud Connect - Layer 2 mode"
 excerpt: 'Details about using Layer 2 (L2) with OVHcloud Connect'
 updated: 2020-09-14
 ---

@@ -1,5 +1,5 @@
 ---
-title: Assigning a Virtual MAC to an Additional IP
+title: "Assign a Virtual MAC to a Failover IP"
 excerpt: Find out how to create a virtual MAC address and assign it to an Additional IP address
 updated: 2025-05-16
 ---

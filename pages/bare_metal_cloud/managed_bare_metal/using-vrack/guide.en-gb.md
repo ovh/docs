@@ -1,5 +1,5 @@
 ---
-title: Using Managed Bare Metal within a vRack
+title: "Use Managed Bare Metal within a vRack"
 excerpt: Find out how to use vRack with a Managed Bare Metal solution
 updated: 2020-11-23
 ---

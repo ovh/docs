@@ -1,5 +1,5 @@
 ---
-title: 'Adding hourly resources'
+title: 'Add hourly resources'
 excerpt: 'Find out how to add resources that are billed on an hourly basis'
 updated: 2020-12-15
 ---

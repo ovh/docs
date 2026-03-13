@@ -1,5 +1,5 @@
 ---
-title: Finding the serial number of a hard disk
+title: "Find the serial number of a hard disk"
 excerpt: This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.
 updated: 2018-08-21
 ---

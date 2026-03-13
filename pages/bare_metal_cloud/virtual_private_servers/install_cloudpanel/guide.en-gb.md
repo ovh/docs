@@ -1,5 +1,5 @@
 ---
-title: 'How to install CloudPanel on a VPS or a Dedicated Server'
+title: 'Install CloudPanel on a VPS or a Dedicated Server'
 excerpt: "Find out how to install the CloudPanel administration interface on a VPS or a Dedicated Server"
 updated: 2025-12-03
 ---

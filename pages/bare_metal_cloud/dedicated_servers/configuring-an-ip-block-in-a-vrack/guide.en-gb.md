@@ -1,5 +1,5 @@
 ---
-title: 'Configuring an Additional IP block in a vRack'
+title: 'Configure an IP block in a vRack'
 excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
 updated: 2025-06-04
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to cancel your Managed Bare Metal offer 
+title: "Cancel your Managed Bare Metal offer"
 excerpt: Learn how to request the termination of a Managed Bare Metal infrastructure
 updated: 2020-11-18
 ---

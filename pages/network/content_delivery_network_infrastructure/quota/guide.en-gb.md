@@ -1,5 +1,5 @@
 ---
-title: 'Understanding quota on the CDN'
+title: 'CDN Infrastructure - Understanding quota'
 excerpt: 'Find out how quota works on the CDN'
 updated: 2018-02-22
 ---

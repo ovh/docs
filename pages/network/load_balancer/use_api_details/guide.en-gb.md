@@ -1,5 +1,5 @@
 ---
-title: Details of API functions
+title: "Load Balancer - Details of API functions"
 excerpt: Details of API functionalities
 updated: 2025-09-29
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Configuring pfSense network bridge'
+title: 'Configure pfSense network bridge'
 excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual machine'
 updated: 2025-04-28
 ---

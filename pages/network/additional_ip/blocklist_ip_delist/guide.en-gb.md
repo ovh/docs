@@ -1,5 +1,5 @@
 ---
-title: How to delist blocklisted IP addresses
+title: "Delist blocklisted IP addresses"
 excerpt: Find out how to request the removal of an IP address from a blocklist if your services are impaired by anti-spam providers
 updated: 2024-10-24
 ---

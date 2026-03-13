@@ -1,5 +1,5 @@
 ---
-title: OVHcloud hourly snapshots
+title: "Use OVHcloud hourly snapshots"
 excerpt: Find out how OVHcloud hourly snapshots work
 updated: 2020-11-30
 ---

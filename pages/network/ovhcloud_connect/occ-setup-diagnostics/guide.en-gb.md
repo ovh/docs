@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting common errors setting up OVHcloud Connect
+title: "Troubleshoot common errors setting up OVHcloud Connect"
 excerpt: Find out how to resolve the most common errors associated with setting up OVHcloud Connect
 updated: 2021-09-02
 ---

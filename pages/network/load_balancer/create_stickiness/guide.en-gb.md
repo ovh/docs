@@ -1,5 +1,5 @@
 ---
-title: 'Tracking connections on the OVHcloud Load Balancer'
+title: 'Track connections on your OVHcloud Load Balancer'
 excerpt: 'This guide explores the methods available for tracking connections on the OVHcloud Load Balancer.'
 updated: 2025-11-27
 ---

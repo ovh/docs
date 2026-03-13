@@ -1,5 +1,5 @@
 ---
-title: VMware vMotion
+title: "Configure VMware vMotion"
 excerpt: Find out how to move your virtual machine to a different host (hot migration)
 updated: 2020-11-18
 ---

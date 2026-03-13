@@ -1,5 +1,5 @@
 ---
-title: 'Backing up data and databases on a Storage Server'
+title: 'Back up data and databases on a Storage Server'
 excerpt: 'Find out how to secure your data in five steps'
 updated: 2018-09-12
 ---

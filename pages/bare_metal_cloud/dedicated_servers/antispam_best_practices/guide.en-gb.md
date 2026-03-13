@@ -1,5 +1,5 @@
 ---
-title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
+title: "Apply OVHcloud Antispam best practices and unblock an IP"
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
 updated: 2025-04-28
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'First steps with pre-installed applications'
+title: 'Deploy pre-installed applications on a VPS'
 excerpt: Find out how to deploy pre-installed applications on your VPS
 updated: 2022-08-25
 ---

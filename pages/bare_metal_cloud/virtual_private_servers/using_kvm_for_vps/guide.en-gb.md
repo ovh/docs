@@ -1,5 +1,5 @@
 ---
-title: How to use the KVM console to access a VPS
+title: "Use the KVM console to access a VPS"
 excerpt: Find out how to log on to your VPS via web browser with the KVM functionality
 updated: 2025-02-07
 ---

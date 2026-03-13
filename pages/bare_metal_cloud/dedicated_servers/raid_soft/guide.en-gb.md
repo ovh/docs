@@ -1,5 +1,5 @@
 ---
-title: Managing and rebuilding software RAID on servers using legacy boot (BIOS) mode
+title: "Configure and rebuild software RAID"
 excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode
 updated: 2025-12-11
 ---

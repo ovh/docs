@@ -1,5 +1,5 @@
 ---
-title: VMware HA (High Availability)
+title: "Configure VMware HA (High Availability)"
 excerpt: Manage restart policy with HA function
 updated: 2020-11-18
 ---

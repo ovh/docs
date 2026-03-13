@@ -1,5 +1,5 @@
 ---
-title: Avoiding the read-only switch of your VM disk on Linux
+title: "Avoid the read-only switch of your VM disk on Linux"
 excerpt: Find out how to avoid read-only switching on your Linux VM disk
 updated: 2020-11-18
 ---
