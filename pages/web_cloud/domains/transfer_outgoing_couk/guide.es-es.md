@@ -49,7 +49,7 @@ El proceso de cambio de agente registrador (*registrador*) para los nombres de d
 
 > [!primary]
 >
-> Si el nombre de dominio ha expirado hace **menos de 90 días**, aún puede transferirse. Por favor, contacte con nuestro equipo de soporte técnico creando una solicitud de soporte en su Panel de control de OVHcloud para desbloquear el nombre de dominio para la transferencia.
+> Si el nombre de dominio ha expirado hace **menos de 90 días**, aún puede transferirse. Contacte con nuestro equipo de soporte técnico creando una solicitud de soporte en su Panel de control de OVHcloud para desbloquear el nombre de dominio para la transferencia.
 >
 > Si usted es el **titular** del nombre de dominio pero no puede gestionarlo en el área de cliente de OVHcloud, ni a través de su propio acceso ni del contacto administrativo, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts) antes de continuar.
 >
@@ -73,7 +73,7 @@ Haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 >>
 >> Haga clic en [este enlace](/links/control-panel/web-domains) y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Panel de control de OVHcloud - lista de nombres de dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
 >>

@@ -73,7 +73,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 >> Kliknij [ten link](/links/control-panel/web-domains), następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Panel klienta OVHcloud - lista nazw domen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Krok 2**
 >>

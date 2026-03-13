@@ -73,7 +73,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 >> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il dominio interessato.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Spazio Cliente OVHcloud - lista dei nomi di dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Passaggio 2**
 >>
@@ -89,7 +89,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 
 Se non riesci a modificare il TAG del tuo nome di dominio dallo Spazio Cliente OVHcloud, puoi richiederne la modifica al Registry Nominet. Per maggiori informazioni, consulta il [sito ufficiale Nominet](https://www.nominet.uk/domain-support/).
 
-### 2 - Seguire il processo di trasferimento presso il tuo nuovo Registrar
+### 2 - Segui il processo di trasferimento presso il tuo nuovo Registrar
 
 La modifica del TAG attiva il processo di trasferimento.
 

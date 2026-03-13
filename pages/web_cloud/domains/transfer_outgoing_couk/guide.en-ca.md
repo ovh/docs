@@ -66,14 +66,14 @@ In case you do not know the required TAG yet, you can request it at your new pro
 >
 > You must be logged in as the [administrator](/pages/account_and_service_management/account_information/managing_contacts) to perform these actions.
 
-Click on the tabs below to view each of the **3** steps.
+Click the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
 >> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![OVHcloud Control Panel - domain name list](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Step 2**
 >>

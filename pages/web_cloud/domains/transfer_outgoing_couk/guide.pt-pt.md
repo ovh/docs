@@ -73,7 +73,7 @@ Clique nos separadores abaixo para visualizar cada uma das **3** etapas.
 >>
 >> Clique [nesta ligação](/links/control-panel/web-domains) e escolha o domínio em causa.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![Área de Cliente OVHcloud - lista de nomes de domínio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
 > **Etapa 2**
 >>
