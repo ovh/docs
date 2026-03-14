@@ -52,9 +52,9 @@ To install your cPanel server, order a VPS with the cPanel distribution.
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:
 
 ```
- |    Your application(s):
+ |    Your applications:
  |    Application: cpanel
- |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
+ |    - URL https://<vps_server_name>:2087/<session_parameters>
 ```
 
 ### First login

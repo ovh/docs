@@ -54,7 +54,7 @@ Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al serv
 
 ```
  |    Le tue applicazioni:
- |    Application: cpanel
+ |    Applicazione: cpanel
  |    Puoi accedere a cPanel da https://<ip>:2087/<session_parameters>
 ```
 

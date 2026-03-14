@@ -55,7 +55,7 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
 ```
  |    Vos application(s):
  |    Application: cpanel
- |    Vous pouvez vous connecter à cpanel depuis https://<nomduserveur>:2087/<session_parameters>
+ |    Vous pouvez vous connecter à cpanel depuis https://<nom_du_serveur_vps>:2087/<session_parameters>
 ```
 
 ### Première connexion

@@ -53,9 +53,9 @@ Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania do serwera cPanel:
 
 ```
- |    Twoje aplikacje:
- |    aplikacja: cpanel
- |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
+ |    Aplikacja(e):
+ |    Aplikacja: cpanel
+ |    Możesz zalogować się do cpanel ze strony https://<nazwa_serwera_vps>:2087/<session_parameters>
 ```
 
 ### Pierwsze logowanie

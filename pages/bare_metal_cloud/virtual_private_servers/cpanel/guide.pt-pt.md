@@ -54,8 +54,8 @@ Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de a
 
 ```
  |    As suas aplicações:
- |    Application: cpanel
- |    Pode conectar-se ao cPanel a partir de https://<ip>:2087/<session_parameters>
+ |    Aplicação: cpanel
+ |    Pode conectar-se ao cPanel a partir de https://<nome_do_servidor_vps>:2087/<session_parameters>
 ```
 
 ### Primeira ligação

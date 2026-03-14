@@ -53,9 +53,9 @@ Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acceso para conectarse a su servidor cPanel:
 
 ```
- |    Sus aplicaciones:
- |    Application: cpanel
- |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
+ |    Aplicaciones instaladas:
+ |    Aplicación: cpanel
+ |    Puede conectarse a cpanel desde https://<nombre_del_servidor_vps>:2087/<session_parameters>
 ```
 
 ### Primera conexión
