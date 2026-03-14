@@ -8,11 +8,11 @@ updated: 2025-01-12
 
 El modo de rescate (*rescue*) es una herramienta proporcionada por OVHcloud para arrancar su VPS en un sistema operativo temporal. A continuación, puede acceder al sistema para realizar tareas de diagnóstico y solucionar problemas como los siguientes:
 
-- [Restablecimiento de la contraseña del usuario para recuperar el acceso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnóstico de problemas de red
+- [Restablecer la contraseña del usuario para recuperar el acceso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Diagnosticar problemas de red
 - Reparar un sistema operativo defectuoso
-- Reparar un firewall de software mal configurado
-- Prueba de rendimiento del disco
+- Reparar un cortafuegos de software mal configurado
+- Probar el rendimiento del disco
 
 Si experimenta algún problema con el sistema, la realización de comprobaciones en modo de rescate le permitirá determinar si está relacionado con un programa instalado en el VPS o si existe una causa más profunda. Antes de ponerse en contacto con nuestro equipo de soporte, le recomendamos que utilice el modo de rescate para recopilar los resultados de las pruebas y excluir los errores de software.
 
@@ -48,7 +48,7 @@ Si experimenta algún problema con el sistema, la realización de comprobaciones
 
 ### Activación del modo de rescate
 
-En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto al botón derecho en la zona **Su VPS**.
+En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto a « Boot » en la zona **Su VPS**.
 
 ![Rescue](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_rescue.png){.thumbnail}
 
@@ -168,4 +168,4 @@ Si se produce un error al reiniciar un VPS, siga estos pasos:
 
 [Comprobar el sistema de archivos en un VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).
