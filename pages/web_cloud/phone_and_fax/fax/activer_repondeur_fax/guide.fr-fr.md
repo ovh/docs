@@ -17,13 +17,21 @@ Vous pouvez configurer votre ligne fax en tant que messagerie vocale directement
 ## Prérequis
 
 - Disposer d’une [ligne Fax OVHcloud](/links/telecom/fax).
-- Être connecté à votre [espace client OVHcloud](/links/manager-telecom)
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Fax.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne Fax concernée.
+Sélectionnez l’onglet `Services`{.action} puis la ligne Fax concernée.
 
 ![gestion répondeur](images/gestion-repondeur.png){.thumbnail}
 

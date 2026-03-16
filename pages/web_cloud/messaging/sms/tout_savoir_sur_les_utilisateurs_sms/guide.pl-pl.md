@@ -52,9 +52,7 @@ Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczen
 
 ### Etap 1: Utworzenie użytkownika API
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
-
-Teraz kliknij kartę `Użytkownicy API`{.action}. Aby dodać użytkownika, kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action}.
+Kliknij kartę `Użytkownicy API`{.action}. Aby dodać użytkownika, kliknij przycisk `Działania`{.action}, a następnie `Dodaj`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

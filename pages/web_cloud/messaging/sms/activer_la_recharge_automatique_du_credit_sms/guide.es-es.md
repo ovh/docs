@@ -63,8 +63,6 @@ Para garantizar que su cuenta de SMS dispone siempre de crédito, puede activar 
 > - una forma de pago de tipo SEPA está presente y validada en su cuenta de OVHcloud.
 > - su servicio SMS debe tener al menos 2 meses de antigüedad.
 
-Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action}. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
-
 Acceda al menú `Opciones`{.action} (1) y seleccione la opción `Recarga automática`{.action} (2).
 
 ![Crédito de SMS](images/smscredit01.png){.thumbnail}
@@ -88,7 +86,7 @@ Por último, configure los siguientes campos:
 > Solo es posible transferir créditos entre cuentas de SMS de un mismo ID de cliente de OVHcloud. No es posible transferir créditos entre dos ID de cliente de OVHcloud diferentes.
 >
 
-En el área de cliente de OVHcloud, seleccione una de sus cuentas de SMS y haga clic en `Transferir crédito`{.action} en la pestaña `Inicio`{.action}.
+Haga clic en `Transferir crédito`{.action} en la pestaña `Inicio`{.action}.
 
 ![transferencia de créditos de SMS](images/credit-transfer01.png){.thumbnail}
 

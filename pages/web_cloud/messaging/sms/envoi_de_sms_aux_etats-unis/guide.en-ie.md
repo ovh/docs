@@ -44,7 +44,7 @@ Setting message templates is free and is carried out by the OVHcloud teams withi
 
 #### 2.1 Via the Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account. Click on the `Message and campaign`{.action} tab then click `SMS management`{.action}.
+Click on the `Message and campaign`{.action} tab and click `SMS management`{.action}.
 
 Finally, click `Manage templates`{.action}.
 

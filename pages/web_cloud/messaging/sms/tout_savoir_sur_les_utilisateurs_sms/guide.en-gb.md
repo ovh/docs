@@ -48,9 +48,7 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 ### Step 1: Create an API user.
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
-
-Then click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
+Click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

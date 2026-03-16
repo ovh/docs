@@ -77,7 +77,7 @@ Nous proposerons prochainement ce service à tous les clients possédant un [com
 >
 > Les crédits SMS existants peuvent être utilisés sur Time2Chat.
 >
-> Vous pouvez également acheter un pack de crédits SMS depuis votre [espace client OVHcloud](/links/manager-telecom), rubrique `Télécom`{.action} puis section `SMS`{.action}. Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
+> Vous pouvez également acheter un pack de crédits SMS depuis la [section SMS de votre espace client](/links/control-panel/telecom-sms). Cliquez sur votre compte SMS puis sur `Créditer mon compte`{.action} depuis l'onglet `Accueil`{.action}.
 
 ### Commander un numéro Time2Chat
 

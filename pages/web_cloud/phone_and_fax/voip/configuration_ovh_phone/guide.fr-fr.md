@@ -14,16 +14,22 @@ Les touches programmables (aussi appelées touches de fonction) permettent de li
 
 - Posséder un téléphone fourni par OVHcloud avec des touches de fonction (cette information est disponible sur [notre site](/links/telecom/telephonie-comparatif-telephones)).
 - Détenir une offre VoIP compatible (voir « Fonctionnalités du téléphone » sur [notre site](/links/telecom/telephonie-services-inclus)).
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
 ### Configurer des touches programmables via votre espace client
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Cliquez ensuite sur l'onglet `Téléphone`{.action} puis sur `Touches programmables`{.action}.
+Sélectionnez le groupe de facturation contenant votre ligne SIP. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée. Cliquez ensuite sur l'onglet `Téléphone`{.action} puis sur `Touches programmables`{.action}.
 
 ![Touches programmables](images/touches_programmables.png){.thumbnail}
 
@@ -101,7 +107,7 @@ Il s'agit des fonctions associées à un alias configuré en file d'appels.
 > Pour savoir si votre poste est compatible avec un module d'extension de touches, rendez-vous sur [notre site](/links/telecom/telephonie-comparatif-telephones).
 > 
 
-Pour bénéficier de cette option, vous devez posséder un module d’extension de touches compatible avec votre poste téléphonique. Pour utiliser ce module, vous devez d'abord l'activer en vous connectant à votre [espace client OVHcloud](/links/manager). Toujours dans l'onglet `Téléphone`{.action}, choisissez cette fois `Paramètres Plug & Phone personnalisés`{.action}.
+Pour bénéficier de cette option, vous devez posséder un module d’extension de touches compatible avec votre poste téléphonique. Pour utiliser ce module, vous devez d’abord l’activer. Toujours dans l’onglet `Téléphone`{.action}, choisissez cette fois `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Paramètres Plug & Phone](images/parametre_plug_play.png){.thumbnail}
 
