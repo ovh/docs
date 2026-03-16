@@ -48,7 +48,7 @@ Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatne przez zespoły OVH
 
 #### 2.1 Za pośrednictwem Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Telefonia`{.action}. Następnie kliknij `SMS`{.action} i wybierz Twoje konto SMS. Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
+Kliknij kartę `Wiadomość SMS i kampania`{.action}, a następnie `Zarządzanie SMS-ami`{.action}.
 
 Następnie kliknij polecenie `Zarządzanie modelami`{.action}.
 

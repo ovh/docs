@@ -44,7 +44,7 @@ Vous pouvez demander la validation de plusieurs modèles de messages.
 
 #### 2.1 Depuis l'espace client
 
-Cliquez sur l'onglet `Message et campagne`{.action} (3) puis sur `Gestion des SMS`{.action}.
+Cliquez sur l'onglet `Message et campagne`{.action} puis sur `Gestion des SMS`{.action}.
 
 Enfin, cliquez sur `Gérer les modèles`{.action}.
 

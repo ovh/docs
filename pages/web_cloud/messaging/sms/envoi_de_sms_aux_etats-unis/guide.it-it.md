@@ -48,7 +48,7 @@ La convalida dei modelli di messaggi è gratuita e viene effettuata dai team di 
 
 #### 2.1 Dallo Spazio Cliente OVHcloud
 
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Télécom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS. Clicca sulla scheda `Messagio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
+Clicca sulla scheda `Messagio e campagna`{.action} e poi su `Gestisci gli SMS`{.action}.
 
 Clicca su `Gestisci i modelli`{.action}.
 

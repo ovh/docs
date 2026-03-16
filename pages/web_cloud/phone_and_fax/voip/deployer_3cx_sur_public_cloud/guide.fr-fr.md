@@ -15,7 +15,18 @@ Ce guide explique comment déployer automatiquement votre instance 3CX sur une i
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) ».
-- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>. 
+- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -603,9 +614,7 @@ Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le menu `Public Cloud`{.action}.
-
-Sélectionnez votre projet Public Cloud.
+Cliquez sur [ce lien](/links/control-panel/publiccloud-projects) pour accéder à la section `Public Cloud`{.action}, puis sélectionnez votre projet.
 
 Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. Sélectionnez votre modèle d'instance et la région désirée.
 

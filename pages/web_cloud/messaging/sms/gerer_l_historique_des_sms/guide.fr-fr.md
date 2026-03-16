@@ -38,7 +38,7 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 ### Étape 1 : Consulter l'historique dans votre espace client
 
-Dans la barre d'onglets, cliquez sur `SMS`{.action} puis sur `Gestions des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestions des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
+Dans la barre d'onglets, cliquez sur `Message et campagne`{.action} puis sur `Gestion des SMS`{.action} pour accéder à l'historique de vos SMS unitaires ou sur `Gestion des campagnes`{.action} pour accéder à l'historique de vos campagnes de SMS.
 
 Selon votre choix, cliquez ensuite sur `Historique des envois`{.action} ou `Statistiques et historique`{.action}.
 

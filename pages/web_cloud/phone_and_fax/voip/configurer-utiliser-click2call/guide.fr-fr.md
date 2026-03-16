@@ -40,7 +40,7 @@ Ce guide explique comment créer et gérer un identifiant Click2Call et présent
 
 ### Créer et gérer un identifiant Click2Call
 
-Vous pouvez créer et gérer vos identifiants Click2Call depuis votre [espace client OVHcloud](/links/manager) ou depuis les [API OVHcloud](/links/console).
+Vous pouvez créer et gérer vos identifiants Click2Call depuis votre espace client OVHcloud ou depuis les [API OVHcloud](/links/console).
 
 > [!tabs]
 > Depuis l'espace client OVHcloud

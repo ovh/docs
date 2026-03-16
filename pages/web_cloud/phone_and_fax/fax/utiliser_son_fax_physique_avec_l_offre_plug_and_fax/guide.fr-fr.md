@@ -14,15 +14,21 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 
 - Disposer d’une ligne [Plug & Fax OVHcloud](/links/telecom/fax-plug-and-fax)
 - Disposer d'un télécopieur
-- Être connecté à votre [espace client OVHcloud](/links/manager-telecom)
 
-![espace client Telecom Fax](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne Plug & Fax.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne Plug & Fax concernée.
+Sélectionnez l'onglet `Services`{.action} puis la ligne Plug & Fax concernée.
 
 ### Branchement du fax sur le Cisco ATA 191
 
@@ -48,9 +54,7 @@ L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 - uniquement par e-mail ou via le logiciel Ecofax.
 
 La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
-Pour y accéder, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. 
-<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
-<br>Cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}
+Pour y accéder, cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}.
 
 ![Gestion des appels](images/gestion_des_appels.png){.thumbnail}
 
@@ -90,10 +94,7 @@ Pour configurer les notifications par e-mail de votre ligne, reportez-vous au gu
 
 Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager-telecom) puis sélectionnez `Télécom`{.action}. 
-<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
-
-<br>Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}
+Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}.
 
 ![présentation numéro](images/pres-numero1.png){.thumbnail}
 

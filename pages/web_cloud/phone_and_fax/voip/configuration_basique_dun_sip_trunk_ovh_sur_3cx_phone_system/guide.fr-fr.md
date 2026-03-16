@@ -30,10 +30,21 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 
 Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx-ip/).
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 > [!warning]
-> 
+>
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
@@ -75,12 +86,9 @@ Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx
 >> ![3CX Phone System](images/3cx_phone_system-trunk03.png){.thumbnail}
 >>
 >> > [!primary]
->> > Pour retrouver vos informations de connexion :
+>> > Pour retrouver vos informations de connexion depuis votre espace client :
 >> >
->> > 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Telecom`{.action}.
->> > 1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP Trunk.
->> > 1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée.
->> > 1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
+>> > Cliquez sur [ce lien](/links/control-panel/telecom-voip-fax) pour accéder à la section `VoIP & Fax`{.action}, puis cliquez sur le groupe de facturation contenant votre ligne SIP Trunk. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP Trunk concernée. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 >> >
 >> > Vous retrouvez alors, dans la partie « Informations SIP », le **Login**, **Domain** et **Proxy sortant** de votre ligne SIP Trunk.
 >>

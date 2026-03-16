@@ -82,7 +82,7 @@ Enfin, remplissez les champs requis :
 > Le transfert de crédits n'est possible qu'entre les comptes SMS d'un seul et même compte client OVHcloud. Le transfert de crédits entre deux comptes clients OVHcloud est impossible.
 >
 
-Dans votre espace client OVHcloud, choisissez l'un de vos comptes SMS puis cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
+Cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
 
 ![transfert de crédits SMS](images/credit-transfer01.png){.thumbnail}
 

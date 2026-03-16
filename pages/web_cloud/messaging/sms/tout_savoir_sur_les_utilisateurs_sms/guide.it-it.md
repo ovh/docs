@@ -52,9 +52,7 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 
 ### Step 1: Crea un utente API
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Telecom`{.action}. Poi clicca su `SMS`{.action} e seleziona il tuo account SMS.
-
-Infine clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
+Clicca sulla scheda `Utenti API`{.action}. Per aggiungere un utente, clicca sul pulsante `Azioni`{.action} e poi su `Aggiungi`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 

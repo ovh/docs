@@ -17,6 +17,17 @@ At the end of this guide, you will have the basics to manage the deployment of y
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - The 3CX IPBX requires a valid license to be used. Ensure that you have a valid license during deployment. You can find all the information on <https://www.3cx.com/>.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 > [!warning]
@@ -603,9 +614,7 @@ For our guide, we will use a **Discovery D2-4** instance.
 
 #### Deployment via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager) and click on the `Public Cloud`{.action} menu.
-
-Select your Public Cloud project.
+Click [this link](/links/control-panel/publiccloud-projects) to access the `Public Cloud`{.action} section, then select your project.
 
 On the homepage, click `Create an instance`{.action}. Select your instance flavor and the region you want.
 

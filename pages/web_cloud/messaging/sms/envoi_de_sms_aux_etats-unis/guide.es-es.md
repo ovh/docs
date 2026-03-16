@@ -48,7 +48,7 @@ La validación de las plantillas de mensajes, realizada por el equipo de OVHclou
 
 #### 2.1. Desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Telecom`{.action}. Haga clic en `SMS`{.action} y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
+Haga clic en la pestaña `Mensaje y campaña`{.action} y, seguidamente, en `Gestión de SMS`{.action}.
 
 Por último, haga clic en `Gestionar las plantillas`{.action}.
 
