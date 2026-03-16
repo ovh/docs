@@ -178,7 +178,7 @@ Pour identifier la cause de cette erreur, nous vous conseillons de réaliser un 
 
 /// details | Pourquoi mon numéro de téléphone abrégé dysfonctionne ?
 
-Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le bouton `Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne.
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud et sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le bouton `Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne.
 
 > [!success]
 >

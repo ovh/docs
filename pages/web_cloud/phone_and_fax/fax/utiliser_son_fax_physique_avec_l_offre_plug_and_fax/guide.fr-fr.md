@@ -54,6 +54,7 @@ L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 - uniquement par e-mail ou via le logiciel Ecofax.
 
 La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
+
 Pour y accéder, cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}.
 
 ![Gestion des appels](images/gestion_des_appels.png){.thumbnail}
