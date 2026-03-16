@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2026-02-10
+updated: 2026-03-16
 ---
 
 ## Objectif
@@ -92,7 +92,7 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
     "imageCheckSumType": "sha512",
-    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUFiY0QgbXlzZWxmQG15ZG9tYWluLm5ldAoKdXNlcnM6CiAgLSBuYW1lOiBwYXRpZW50MAogICAgc3VkbzogQUxMPShBTEwpIE5PUEFTU1dEOkFMTAogICAgZ3JvdXBzOiB1c2Vycywgc3VkbwogICAgc2hlbGw6IC9iaW4vYmFzaAogICAgbG9ja19wYXNzd2Q6IGZhbHNlCiAgICBzc2hfYXV0aG9yaXplZF9rZXlzOgogICAgICAtIHNzaC1lZDI1NTE5IEFBQUFDM056YUMxbFpESTFOVEU1QUFBQUlBYmNEIG15c2VsZkBteWRvbWFpbi5uZXQKZGlzYWJsZV9yb290OiBmYWxzZQpwYWNrYWdlczoKICAtIHZpbQogIC0gdHJlZQpydW5jbWQ6CiAgLSBlY2hvICJjb3Vjb3UgcnVuY21kIiA+IC9vcHQvY291Y291CiAgLSBjYXQgL2V0Yy9tYWNoaW5lLWlkID4+IC9vcHQvY291Y291CiAgLSBkYXRlICIrJVktJW0tJWQgJUg6JU06JVMiIC0tdXRjID4+IC9vcHQvY291Y291CmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
   }
 }
 ```
@@ -113,7 +113,7 @@ Voici le configDrive user data en clair avec l'exemple ci-dessus :
 ```yaml
 #cloud-config
 ssh_authorized_keys:
-  - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 
 users:
   - name: patient0
@@ -122,11 +122,15 @@ users:
     shell: /bin/bash
     lock_passwd: false
     ssh_authorized_keys:
-      - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 disable_root: false
 packages:
   - vim
   - tree
+runcmd:
+  - echo "coucou runcmd" > /opt/coucou
+  - cat /etc/machine-id >> /opt/coucou
+  - date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
 final_message: The system is finally up, after $UPTIME seconds
 ```
 
@@ -169,6 +173,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 > [!primary]
 >
 > La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
+>
+
+> [!warning]
+>
+> Contrairement aux templates OS standard OVHcloud (par exemple Debian 12, Windows Server), BYOLinux ne prend pas en charge l'option `postInstallationScript`. Pour exécuter des commandes ou des scripts après l'installation, utilisez `configDriveUserData` avec une directive cloud-init [`runcmd`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd) comme dans l'exemple ci-dessus.
 >
 
 #### Les erreurs clients fréquentes <a name="errors"></a>

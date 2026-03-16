@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2026-02-10
+updated: 2026-03-16
 ---
 
 ## Objective
@@ -92,14 +92,14 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
     "imageCheckSumType": "sha512",
-    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUFiY0QgbXlzZWxmQG15ZG9tYWluLm5ldAoKdXNlcnM6CiAgLSBuYW1lOiBwYXRpZW50MAogICAgc3VkbzogQUxMPShBTEwpIE5PUEFTU1dEOkFMTAogICAgZ3JvdXBzOiB1c2Vycywgc3VkbwogICAgc2hlbGw6IC9iaW4vYmFzaAogICAgbG9ja19wYXNzd2Q6IGZhbHNlCiAgICBzc2hfYXV0aG9yaXplZF9rZXlzOgogICAgICAtIHNzaC1lZDI1NTE5IEFBQUFDM056YUMxbFpESTFOVEU1QUFBQUlBYmNEIG15c2VsZkBteWRvbWFpbi5uZXQKZGlzYWJsZV9yb290OiBmYWxzZQpwYWNrYWdlczoKICAtIHZpbQogIC0gdHJlZQpydW5jbWQ6CiAgLSBlY2hvICJjb3Vjb3UgcnVuY21kIiA+IC9vcHQvY291Y291CiAgLSBjYXQgL2V0Yy9tYWNoaW5lLWlkID4+IC9vcHQvY291Y291CiAgLSBkYXRlICIrJVktJW0tJWQgJUg6JU06JVMiIC0tdXRjID4+IC9vcHQvY291Y291CmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
   }
 }
 ```
 
 > [!warning]
 >
-> In the example above, the `imageCheckSum` value has been obfuscated because it changes regularly whenever the target image is rebuilt.
+> In the example above, the `imageCheckSum` value has been masked because it changes regularly whenever the target image is rebuilt.
 >
 
 Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
@@ -113,7 +113,7 @@ Here is the clear-text configDrive user data from the example above:
 ```yaml
 #cloud-config
 ssh_authorized_keys:
-  - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 
 users:
   - name: patient0
@@ -122,11 +122,15 @@ users:
     shell: /bin/bash
     lock_passwd: false
     ssh_authorized_keys:
-      - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAbcD myself@mydomain.net
 disable_root: false
 packages:
   - vim
   - tree
+runcmd:
+  - echo "coucou runcmd" > /opt/coucou
+  - cat /etc/machine-id >> /opt/coucou
+  - date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
 final_message: The system is finally up, after $UPTIME seconds
 ```
 
@@ -169,6 +173,11 @@ Once you have filled in the fields, start the deployment by clicking `Execute`{.
 > [!primary]
 >
 > The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
+>
+
+> [!warning]
+>
+> Unlike standard OVHcloud OS templates (e.g. Debian 12, Windows Server), BYOLinux does not support the `postInstallationScript` customization option. To run commands or scripts after installation, use `configDriveUserData` with a cloud-init [`runcmd`](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd) directive instead, as in the above example.
 >
 
 #### Common customer errors <a name="errors"></a>
