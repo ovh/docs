@@ -43,13 +43,21 @@ Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
 
 Aby korzystać z trybu ratunkowego, należy zmienić ustawienie `Netboot` serwera. Następnie należy zrestartować serwer.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), otwórz sekcję `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}.
 
 Kliknij nazwę serwera, aby otworzyć zakładkę `Informacje ogólne`{.action}.
 

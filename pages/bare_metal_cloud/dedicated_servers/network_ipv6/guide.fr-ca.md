@@ -44,6 +44,17 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 - Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle...).
 - Avoir des connaissances de base en [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) et en réseau.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPv6 (/128). IPv6 sera configuré automatiquement à l’installation du système d’exploitation.
 >

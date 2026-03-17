@@ -26,7 +26,6 @@ No obstante, podrá conectarse al servidor utilizando el [modo de rescate de OVH
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento
 

@@ -13,7 +13,17 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 ## Prerequisiti
 
 - [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

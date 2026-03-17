@@ -11,7 +11,17 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 ## Prérequis
 
 - Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instance Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Pour accéder à vos services :** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## En pratique
 
@@ -43,7 +53,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
+Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
 
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
@@ -64,8 +74,6 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 - La colonne **Alertes** peut indiquer un centre de nettoyage actif avec une icône d'avertissement et un conseil approprié.
 
 ### Network Security Dashboard
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Network Security Dashboard`{.action}.
 
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 

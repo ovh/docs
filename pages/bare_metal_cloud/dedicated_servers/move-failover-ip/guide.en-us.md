@@ -33,7 +33,17 @@ With this technology, you can switch IP addresses from one solution to another i
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - An [Additional IP address](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).

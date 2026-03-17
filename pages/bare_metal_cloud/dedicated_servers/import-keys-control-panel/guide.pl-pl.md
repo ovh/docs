@@ -13,7 +13,6 @@ Pary kluczy służą do uwierzytelniania połączeń SSH między hostami, na prz
 ## Wymagania początkowe
 
 - [Serwer dedykowany](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]
 >
@@ -21,14 +20,23 @@ Pary kluczy służą do uwierzytelniania połączeń SSH między hostami, na prz
 >
 > [Jak tworzyć klucze SSH za pomocą OpenSSH dla instancji Public Cloud](/pages/public_cloud/compute/creating-ssh-keys-pci)
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [My services](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## W praktyce
 
 Jeśli jeszcze nie utworzyłeś pary kluczy SSH, zapoznaj się z naszymi przewodnikami:
 
 - [Tworzenie i używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 - [Tutorial - Jak używać PuTTY do połączeń SSH i uwierzytelniania](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij nazwę konta w prawym górnym rogu i otwórz `Moje rozwiązania i usługi`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

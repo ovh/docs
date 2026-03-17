@@ -59,7 +59,17 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 - A [vRack](/links/network/vrack) service activated in your account
 - A [vRack compatible server](/links/network/vrack) attached to your vRack network
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).

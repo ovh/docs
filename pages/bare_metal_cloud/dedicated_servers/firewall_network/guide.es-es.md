@@ -22,7 +22,17 @@ Para proteger los servicios de los clientes expuestos en direcciones IP pública
 ## Requisitos
 
 - Un servicio de OVHcloud expuesto y que utilice una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancia de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -50,8 +60,6 @@ El Edge Network Firewall puede ser activado o desactivado por el usuario en cual
 >
 > El Edge Network Firewall protege una IP específica asociada a un servidor (o servicio). Por lo tanto, si tiene un servidor con varias direcciones IP, debe configurar cada IP por separado.
 >
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en la barra lateral izquierda y seleccione `Direcciones IP públicas`{.action}.
 
 Puede utilizar el menú desplegable situado debajo de **Mis direcciones IP públicas y servicios asociados** para filtrar sus servicios por categoría, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 

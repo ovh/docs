@@ -49,7 +49,17 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -161,7 +171,7 @@ For vRack purposes, the first, penultimate, and last addresses in any given IP b
 46.105.135.111  Reserved: Network broadcast
 ```
 
-To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of *255.255.255.240*.
+To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.240**.
 
 > [!primary]
 >

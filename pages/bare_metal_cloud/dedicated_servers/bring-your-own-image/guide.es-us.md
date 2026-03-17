@@ -18,9 +18,19 @@ In addition to the requirements and limitations mentioned below, you must ensure
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the server RAM minus 3GiB
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -51,8 +61,6 @@ There are some technical limitations linked to the use of physical products such
 - [Deployment via API](#viaapi): you can use the OVHcloud API to integrate images into your own scripts to automate deployments.
 
 ### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
-
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
 
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 

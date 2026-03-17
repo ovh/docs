@@ -14,7 +14,7 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 - a [Dedicated Server](/links/bare-metal/bare-metal) with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
-- access to the [OVHcloud Control Panel](/links/manager)
+
 
 ## Instructions
 

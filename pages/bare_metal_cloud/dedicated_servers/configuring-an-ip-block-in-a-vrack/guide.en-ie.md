@@ -49,7 +49,17 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).

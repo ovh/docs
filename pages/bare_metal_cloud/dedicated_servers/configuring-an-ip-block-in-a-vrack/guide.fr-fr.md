@@ -49,7 +49,17 @@ En plus de l'adressage IP privé, le [vRack](/links/network/vrack) vous permet d
 - Préparer votre plage d'adresses IP privées choisies.
 - Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal).
 - Activer un service [vRack](/links/network/vrack).
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).

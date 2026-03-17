@@ -11,7 +11,17 @@ In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem er
 ## Voraussetzungen 
 
 - Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud Instanz](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Navigationspfad:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## In der praktischen Anwendung
 
@@ -64,8 +74,6 @@ Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowi
 - Die Spalte **Alerts** kann ein aktives Scrubbing Center mit einem Warnsymbol und einem entsprechenden Hinweis anzeigen.
 
 ### Dashboard Netzwerksicherheit
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Network Security Dashboard`{.action}.
 
 Auf **Scrubbing Center-Protokoll** können Sie alle Informationen zu Angriffen abrufen, die in der Vergangenheit entdeckt wurden (oder zurzeit aktiv sind).
 

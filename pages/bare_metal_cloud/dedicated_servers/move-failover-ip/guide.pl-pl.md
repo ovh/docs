@@ -33,7 +33,17 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) w Panelu klienta
 - Posiadanie [adresu Additional IP](/links/network/additional-ip)
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).

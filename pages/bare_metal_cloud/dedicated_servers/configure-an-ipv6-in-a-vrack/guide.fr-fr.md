@@ -59,7 +59,17 @@ En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuv
 
 - Un service [vRack](/links/network/vrack) actif sur votre compte
 - Un [serveur compatible vRack](/links/network/vrack) connecté à votre réseau vRack
-- Un accès à [l'espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](/links/bare-metal/eco-about).

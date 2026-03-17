@@ -10,7 +10,16 @@ With the IPMI (Intelligent Platform Management Interface) console, you can acces
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -37,7 +46,7 @@ You can access the IPMI using several different methods¹. SSH keys stored on th
 ⁵ If the OS you want to install is not in the list of [operating systems available with OVHcloud Bare Metal servers](/links/bare-metal/os), please note that you can also use a custom image: See [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) for more details.<br />
 ⁶ SoL = Serial over Lan
 
-To enable one of these methods, log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI/KVM`{.action} tab.
+To enable one of these methods, click on the `IPMI/KVM`{.action} tab.
 
 ### Open KVM via Java applet <a name="applet-java"></a>
 

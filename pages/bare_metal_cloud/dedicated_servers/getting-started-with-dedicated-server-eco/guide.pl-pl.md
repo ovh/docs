@@ -14,7 +14,17 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) z oferty Kimsufi, So You Start lub Rise na Twoim koncie OVHcloud.
 - Połączenie przez SSH z systemem Linux lub jako administrator z systemem Windows.
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
 

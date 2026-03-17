@@ -34,7 +34,17 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre espace client OVHcloud.
 - Disposer d'une [adresse Additional IP](/links/network/additional-ip).
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).

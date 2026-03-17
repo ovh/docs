@@ -44,6 +44,17 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
 - Una conoscenza basilare di reti e [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPv6 (/128). L'IPv6 sarà configurato automaticamente al momento dell'installazione del sistema operativo.
 >

@@ -25,7 +25,6 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

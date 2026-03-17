@@ -34,7 +34,17 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](/links/network/additional-ip).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
