@@ -9,7 +9,7 @@ updated: 2026-01-21
 Los registros de inicio de Windows permiten identificar los controladores y servicios cargados durante el inicio del sistema.  
 Son especialmente útiles para el **diagnóstico de problemas de inicio**, de **pantallas azules** o de **bloqueos del sistema**.
 
-Este tutorial le explica cómo **activar los registros de inicio en un servidor Windows** para facilitar el análisis y la resolución de problemas de su VPS.
+**Este tutorial le explica cómo activar los registros de inicio en un servidor Windows para facilitar el análisis y la resolución de problemas de su VPS.**
 
 ## Requisitos
 
@@ -34,9 +34,9 @@ Para activarlos, siga los pasos que se indican a continuación navegando por las
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Abrir "msconfig"**
+> 3. **Abrir `msconfig`**
 >>
->> Escriba "msconfig" y haga clic en `Aceptar`{.action}.
+>> Escriba `msconfig` y haga clic en `Aceptar`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,7 +44,7 @@ Para activarlos, siga los pasos que se indican a continuación navegando por las
 >>
 >> En la nueva ventana, active la opción de registros junto a `Boot log`. A continuación, haga clic en `Aceptar`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 Al siguiente inicio de su servidor, los registros se guardarán en un archivo `.txt`. La ruta de acceso al archivo es: `C:\Windows\ntbtlog.txt`.

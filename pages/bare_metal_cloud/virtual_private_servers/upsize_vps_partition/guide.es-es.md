@@ -40,9 +40,9 @@ A continuación, compruebe la configuración de los discos:
 lsblk
 ```
 
-La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/` .A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
+La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/`. A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
 
-por ejemplo:
+Por ejemplo:
 
 ```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -56,7 +56,7 @@ Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` es
 
 Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
 
-por ejemplo:
+Por ejemplo:
 
 ```console
 sdb 254:16 0 25G 0 disk

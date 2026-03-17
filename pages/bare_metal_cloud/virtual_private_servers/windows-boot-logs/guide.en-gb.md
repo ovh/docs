@@ -9,7 +9,7 @@ updated: 2026-01-21
 Windows boot logs allow you to identify the drivers and services loaded during system startup.  
 They are particularly useful for **diagnosing boot issues**, **blue screens**, or **system freezes**.
 
-This guide explains how to **enable Windows boot logs on a server** to help with the analysis and troubleshooting of your VPS.
+**This guide explains how to enable Windows boot logs on a server to help diagnose and troubleshoot VPS issues.**
 
 ## Requirements
 
@@ -19,9 +19,7 @@ This guide explains how to **enable Windows boot logs on a server** to help with
 
 ### Enabling Windows boot logs
 
-Windows boot logs can be useful for server error diagnostics.
-
-To enable them, follow the steps below by navigating through the tabs:
+To enable boot logs, follow the steps below:
 
 > [!tabs]
 > 1. **Connect to the server**
@@ -34,9 +32,9 @@ To enable them, follow the steps below by navigating through the tabs:
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Open "msconfig"**
+> 3. **Open `msconfig`**
 >>
->> Type "msconfig" and click `OK`{.action}.
+>> Type `msconfig` and click `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,7 +42,7 @@ To enable them, follow the steps below by navigating through the tabs:
 >>
 >> In the new window, enable the log option next to `Boot log`. Then click `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 At the next server startup, the logs will be saved in a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.

@@ -73,7 +73,7 @@ Si votre site web utilise une base de données, sauvegardez-la en utilisant les 
 > **PostgreSQL**
 >> Pour exporter votre base de données, référez-vous à la [documentation officielle de PostgreSQL](https://www.postgresql.org/docs/)
 >>
-> MongoDB
+> **MongoDB**
 >> Pour exporter votre base de données, référez-vous à la [documentation officielle de MongoDB](https://docs.mongodb.com/manual/)
 >>
 > **Redis® open source**
@@ -325,7 +325,7 @@ Après avoir configuré le serveur web, il est important de mettre à jour les f
 >>
 >> Pour éviter tout problème de sécurité, consultez la documentation officielle sur les [permissions de fichiers pour Drupal](https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-file-permissions-and-ownership).
 >>
-> Sans CMS
+> **Sans CMS**
 >>
 >> **1. Mettre à jour les informations de connexion à la base de données** 
 >>

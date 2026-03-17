@@ -9,7 +9,7 @@ updated: 2026-01-21
 Les logs de démarrage Windows permettent d'identifier les pilotes et services chargés lors du démarrage du système.  
 Ils sont particulièrement utiles pour le **diagnostic des problèmes de démarrage**, des **écrans bleus** ou des **blocages système**.
 
-Ce guide vous explique comment **activer les logs de démarrage sur un serveur Windows** afin de faciliter l'analyse et le dépannage de votre VPS.
+**Ce guide vous explique comment activer les logs de démarrage sur un serveur Windows pour diagnostiquer et dépanner votre VPS.**
 
 ## Prérequis
 
@@ -19,9 +19,7 @@ Ce guide vous explique comment **activer les logs de démarrage sur un serveur W
 
 ### Activation des logs de démarrage Windows
 
-Les logs de démarrage de Windows peuvent être utiles pour les diagnostics d'erreur de serveur.
-
-Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
+Pour activer les logs de démarrage, suivez les étapes ci-dessous :
 
 > [!tabs]
 > 1. **Se connecter au serveur**
@@ -34,9 +32,9 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Ouvrir « msconfig »**
+> 3. **Ouvrir `msconfig`**
 >>
->> Entrez « msconfig » et cliquez sur `OK`{.action}.
+>> Entrez `msconfig` et cliquez sur `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,14 +42,14 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 >>
 >> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez ensuite sur `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.
 
 Pour accéder au fichier journal en mode rescue, suivez les instructions du guide « [Activer et utiliser le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue) ».
 
-## Allez plus loin
+## Aller plus loin
 
 [Changer le mot de passe administrateur sur un serveur Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
 

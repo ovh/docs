@@ -76,7 +76,7 @@ Die URL für den Zugang wird im Bereich `RESPONSE` angezeigt.
 
 ### Verwendung der KVM-Konsole
 
-Wenn Sie über Ihr Kundencenter auf die KVM-Konsole zugreifen, wird ein Popup-Fenster geöffnet. Um den Vollbildmodus zu verwenden, klicken Sie unten rechts auf den Link `In einem neuem Fenster öffnen`{.action}. Hierdurch wird in der Regel ein neuer Browser-Tab geöffnet.
+Wenn Sie über Ihr Kundencenter auf die KVM-Konsole zugreifen, wird ein Popup-Fenster geöffnet. Um den Vollbildmodus zu verwenden, klicken Sie unten rechts auf den Link `In einem neuen Fenster öffnen`{.action}. Hierdurch wird in der Regel ein neuer Browser-Tab geöffnet.
 
 ![KVM-Verbindung](images/kvm_screen.png){.thumbnail}
 

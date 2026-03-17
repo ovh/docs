@@ -22,7 +22,7 @@ Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repart
 
 ## En pratique
 
-Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces  deux ressources sont automatiquement ajustées sur votre VPS, contrairement à l'espace disque lors de l'upgrade de stockage de votre VPS.
+Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces deux ressources sont automatiquement ajustées sur votre VPS, contrairement à l'espace disque lors de l'upgrade de stockage de votre VPS.
 
 ### Linux
 

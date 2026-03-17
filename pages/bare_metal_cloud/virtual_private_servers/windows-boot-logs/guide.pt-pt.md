@@ -9,7 +9,7 @@ updated: 2026-01-21
 Os registos de arranque do Windows permitem identificar os controladores e serviços carregados durante o arranque do sistema.  
 São particularmente úteis para o **diagnóstico de problemas de arranque**, **ecrãs azuis** ou **bloqueios do sistema**.
 
-Este guia explica como **ativar os registos de arranque num servidor Windows** para facilitar a análise e a resolução de problemas do seu VPS.
+**Este guia explica como ativar os registos de arranque num servidor Windows para facilitar a análise e a resolução de problemas do seu VPS.**
 
 ## Requisitos
 
@@ -34,9 +34,9 @@ Para os ativar, siga os passos abaixo, navegando pelos separadores:
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Abrir "msconfig"**
+> 3. **Abrir `msconfig`**
 >>
->> Introduza "msconfig" e clique em `OK`{.action}.
+>> Introduza `msconfig` e clique em `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,7 +44,7 @@ Para os ativar, siga os passos abaixo, navegando pelos separadores:
 >>
 >> Na nova janela, ative a opção de registos ao lado de `Boot log`. Clique depois em `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 No próximo arranque do seu servidor, os registos serão guardados num ficheiro `.txt`. O caminho de acesso ao ficheiro é: `C:\Windows\ntbtlog.txt`.

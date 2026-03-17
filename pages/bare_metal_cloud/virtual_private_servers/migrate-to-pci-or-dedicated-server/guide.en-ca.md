@@ -242,7 +242,7 @@ To associate your website with its domain or subdomain, configure a virtual host
 >>   server_name your_domain.com;
 >>   root /var/www/html;
 >>
->>   rental / {
+>>   location / {
 >>       index.html index.php;
 >>       try_files $uri $uri/ =404;
 >>   }

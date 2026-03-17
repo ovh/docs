@@ -118,9 +118,9 @@ Sì, un VPS può essere configurato per ospitare più siti web o progetti. Puoi 
 
 ///
 
-/// details | Riceverò un nome di dominio e un servizio email incluso con il mio VPS?
+/// details | Riceverò un nome di dominio e un servizio e-mail incluso con il mio VPS?
 
-No, le nostre soluzioni VPS non includono un nome di dominio o un servizio email. Questi servizi possono essere ordinati separatamente nel pannello di controllo OVHcloud.
+No, le nostre soluzioni VPS non includono un nome di dominio o un servizio e-mail. Questi servizi possono essere ordinati separatamente nel pannello di controllo OVHcloud.
 
 ///
 
@@ -128,7 +128,7 @@ No, le nostre soluzioni VPS non includono un nome di dominio o un servizio email
 
 **Piano di hosting web**
 
-- Deale per esigenze di hosting di base con una configurazione predefinita.
+- Ideale per esigenze di hosting di base con una configurazione predefinita.
 
 **VPS**
 
@@ -198,7 +198,7 @@ No, non puoi migrare direttamente i servizi. Dovrai sottoscrivere il VPS scelto,
 I server privati virtuali senza protezione Anti-DDoS sono esposti automaticamente agli attacchi distribuiti di negazione del servizio (DDoS), potenzialmente causando interruzioni del servizio e gravi violazioni della sicurezza.
 
 - Esposizione diretta: se il tuo server è bersaglio di un attacco DDoS, l'afflusso di richieste maliziose potrebbe sopraffarlo, rendendo i tuoi siti e applicazioni inaccessibili.
-- Nessun mitigazione automatica: per proteggere il tuo server, dovrai difenderlo utilizzando software di sicurezza di terze parti o configurazioni specifiche.
+- Nessuna mitigazione automatica: per proteggere il tuo server, dovrai difenderlo utilizzando software di sicurezza di terze parti o configurazioni specifiche.
 - Ulteriore carico di gestione: la mancanza di una sicurezza robusta e integrata presenta un rischio significativo, evidenziando la necessità di un monitoraggio vigile e strategie proattive, in particolare per progetti ad alto traffico.
 
 Se la resilienza agli attacchi DDoS è un fattore critico per il tuo progetto, ti consigliamo di optare per un VPS OVHcloud ospitato in uno dei nostri data center, che include una protezione integrata.
@@ -453,6 +453,6 @@ Il vantaggio di un VPS rispetto a un server dedicato è la possibilità di scala
 
 ## Per saperne di più
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

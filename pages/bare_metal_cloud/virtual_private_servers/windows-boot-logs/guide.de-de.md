@@ -7,9 +7,9 @@ updated: 2026-01-21
 ## Ziel
 
 Windows-Startprotokolle ermöglichen es Ihnen, die während des Systemstarts geladenen Treiber und Dienste zu identifizieren.  
-Sie sind besonders nützlich für die **Diagnose von Startproblemen**, **Blauen Bildschirme** oder **Systemabstürze**.
+Sie sind besonders nützlich für die **Diagnose von Startproblemen**, **blaue Bildschirme** oder **Systemabstürze**.
 
-Dieses Handbuch erklärt, wie Sie **Windows-Startprotokolle auf einem Server** aktivieren, um die Analyse und Fehlerbehebung Ihres VPS zu unterstützen.
+**Dieses Handbuch erklärt, wie Sie Windows-Startprotokolle auf einem Server aktivieren, um die Analyse und Fehlerbehebung Ihres VPS zu unterstützen.**
 
 ## Voraussetzungen
 
@@ -34,9 +34,9 @@ Um sie zu aktivieren, gehen Sie wie folgt vor, indem Sie durch die Registerkarte
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **"msconfig" öffnen**
+> 3. **`msconfig` öffnen**
 >>
->> Geben Sie "msconfig" ein und klicken Sie auf `OK`{.action}.
+>> Geben Sie `msconfig` ein und klicken Sie auf `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,7 +44,7 @@ Um sie zu aktivieren, gehen Sie wie folgt vor, indem Sie durch die Registerkarte
 >>
 >> Im neuen Fenster aktivieren Sie die Protokolloption neben `Boot log`. Klicken Sie anschließend auf `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 Beim nächsten Serverstart werden die Protokolle in einer `.txt`-Datei gespeichert. Der Dateipfad lautet: `C:\Windows\ntbtlog.txt`.

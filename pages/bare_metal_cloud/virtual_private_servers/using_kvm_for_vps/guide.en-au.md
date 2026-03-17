@@ -101,7 +101,7 @@ A graphical menu will open in which you can select a keyboard model.
 
 ![KVM](images/kvm_vps01.png){.thumbnail}
 
-Use the arrow keys to navigate to the option that comes closest to your hardware, then press press `Enter`{.action}.
+Use the arrow keys to navigate to the option that comes closest to your hardware, then press `Enter`{.action}.
 
 In the next menu, choose your country.
 

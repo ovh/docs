@@ -9,7 +9,7 @@ updated: 2026-01-21
 I log di avvio Windows permettono di identificare i driver e i servizi caricati durante l'avvio del sistema.  
 Sono particolarmente utili per la **diagnosi dei problemi di avvio**, degli **schermi blu** o dei **bloccaggi del sistema**.
 
-Questo manuale ti spiega come **attivare i log di avvio su un server Windows** per facilitare l'analisi e la risoluzione dei problemi del tuo VPS.
+**Questo manuale ti spiega come attivare i log di avvio su un server Windows per facilitare l'analisi e la risoluzione dei problemi del tuo VPS.**
 
 ## Prerequisiti
 
@@ -34,9 +34,9 @@ Per attivarli, segui le seguenti fasi scorrendo le schede:
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}
 >>
-> 3. **Aprire "msconfig"**
+> 3. **Aprire `msconfig`**
 >>
->> Digita "msconfig" e clicca su `OK`{.action}.
+>> Digita `msconfig` e clicca su `OK`{.action}.
 >>
 >> ![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}
 >>
@@ -44,12 +44,12 @@ Per attivarli, segui le seguenti fasi scorrendo le schede:
 >>
 >> Nella nuova finestra, attiva l'opzione log accanto a `Boot log`. Clicca quindi su `OK`{.action}.
 >>
->> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
+>> ![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}
 >>
 
 Al prossimo avvio del tuo server, i log saranno registrati in un file `.txt`. Il percorso del file è: `C:\Windows\ntbtlog.txt`.
 
-Per accedere al file di log in modalità rescue, segui le istruzioni del manuale "[Ativar e utilizar o modo rescue num VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)".
+Per accedere al file di log in modalità rescue, segui le istruzioni del manuale "[Attivare e utilizzare la modalità rescue su un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)".
 
 ## Per saperne di più
 

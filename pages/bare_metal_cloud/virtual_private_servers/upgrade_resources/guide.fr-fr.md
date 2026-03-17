@@ -8,7 +8,7 @@ updated: 2025-09-08
 
 ## Objectif
 
-Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [espace client OVHcloud](/links/manager).
+Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans l'[espace client OVHcloud](/links/manager).
 
 **Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.**
 

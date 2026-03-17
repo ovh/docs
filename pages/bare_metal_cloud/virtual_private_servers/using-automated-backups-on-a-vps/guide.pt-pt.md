@@ -60,7 +60,7 @@ A opção de Backup automatizado para VPS oferece uma forma prática de ter back
 - [Boas práticas para a utilização do Backup automatizado](#bestpractice)
     - [Configuração do agente QEMU num VPS](#qemu)
         - [Distribuições Debian](#deb)
-        - [Distributions Redhat](#red)
+        - [Distribuições Redhat](#red)
         - [Windows](#win)
 
 
@@ -207,7 +207,7 @@ O disco aparecerá como `Offline`, faça um clique direito no disco e selecione 
 
 A seguir, o seu backup será acessível ao `Explorador de ficheiros`.
 
-![fila exploradora](images/windowsbackup4.png){.thumbnail}
+![file explorer](images/windowsbackup4.png){.thumbnail}
 
 Não se esqueça de desmontar a cópia de segurança automática depois de utilizar a cópia de segurança. Clique no botão `Remover o backup`{.action} no separador `Backup automatizado`{.action} e valide na janela que é apresentada.
 
@@ -229,7 +229,7 @@ A funcionalidade de backup automático é baseada nas snapshots VPS. Recomendamo
 
 As snapshots são imagens instantâneas do seu sistema em execução (“live snapshots”). Para garantir a disponibilidade do seu sistema aquando da criação da snapshot, o agente QEMU é utilizado para preparar o sistema de ficheiros ao processo.
 
-O agente "**wemu-guest-agent**" não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por consequente, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
+O agente "**qemu-guest-agent**" não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por conseguinte, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
 
 <a name="deb"></a>
 
@@ -247,7 +247,7 @@ O resultado esperado é:
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Se o resultado for diferente, como por exemplo "No such file or diretory", instale a versão mais recente do pacote:
+Se o resultado for diferente, como por exemplo "No such file or directory", instale a versão mais recente do pacote:
 
 ```bash
 sudo apt-get update
@@ -282,7 +282,7 @@ O resultado esperado é:
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Se o resultado for diferente, como por exemplo "No such file or diretory", instale e ative o agente:
+Se o resultado for diferente, como por exemplo "No such file or directory", instale e ative o agente:
 
 ```bash
 sudo yum install qemu-guest-agent
@@ -308,7 +308,7 @@ sudo service qemu-guest-agent status
 
 Pode instalar o agente através de um ficheiro MSI, disponível no site do projeto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Verifique que o serviço está a ser executado graças ao seguinte comando powershell:
+Verifique que o serviço está a ser executado graças ao seguinte comando PowerShell:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA

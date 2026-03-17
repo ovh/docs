@@ -75,7 +75,7 @@ Wenn Sie Ressourcen benötigen, aber nicht mit der Server-Administration umgehen
 
 /// details | Kann ich meinen VPS einfach in eine höhere Leistungsklasse aufrüsten oder in eine geringere Konfiguration herunterskalieren?
 
-Ja, Sie können Ihre Konfiguration über das OVHcloud Kundencenter aufrüsten, ohne Ihre Daten zu migrieren. Die verfügbaren Ugrade-Optionen hängen von der Reihe und dem Modell des VPS ab.
+Ja, Sie können Ihre Konfiguration über das OVHcloud Kundencenter aufrüsten, ohne Ihre Daten zu migrieren. Die verfügbaren Upgrade-Optionen hängen von der Reihe und dem Modell des VPS ab.
 
 Um Ihre Konfiguration herunterstufen zu können, müssen Sie jedoch einen neuen Dienst abonnieren, Ihre Daten übertragen und anschließend Ihren alten Dienst stornieren. Unser Support-Team steht Ihnen bei Bedarf zur Verfügung.
 
@@ -184,7 +184,7 @@ Mit einem Local Zone VPS können Sie die Zugriffszeiten auf Ihre Webseiten und A
 
 Beachten Sie, dass ein Local Zone VPS im Gegensatz zu einem regulären VPS keine Sicherheitsfunktionen wie Anti-DDoS oder erweiterte Optionen wie Additional IP und Load Balancer enthält.
 
-Ein Local Zone VPS erfüllt auch die Anforderungen von Projekten mit Datenresidenz- und Souveränitätsbedürfnissen. Durch das Hosten Ihrer Dienste in einer bestimmten Region können Sie lokale Vorschriften zum Datenverarbeitungs- und -speicherung leicht erfüllen, wie z. B. die europäische DSGVO.
+Ein Local Zone VPS erfüllt auch die Anforderungen von Projekten mit Datenresidenz- und Souveränitätsbedürfnissen. Durch das Hosten Ihrer Dienste in einer bestimmten Region können Sie lokale Vorschriften zur Datenverarbeitung und -speicherung leicht erfüllen, wie z. B. die europäische DSGVO.
 
 ///
 
@@ -200,7 +200,7 @@ VPS ohne Anti-DDoS-Schutz sind automatischen Angriffen durch Distributed Denial-
 
 - Direkte Exposition: Wenn Ihr Server Ziel eines DDoS-Angriffs wird, kann der Ansturm an schädlichen Anfragen ihn überlasten, wodurch Ihre Webseiten und Anwendungen nicht mehr zugänglich sind.
 - Keine automatische Abwehr: Um Ihren Server zu schützen, müssen Sie Angriffe mithilfe von Drittanbieter-Sicherheitssoftware oder spezifischen Konfigurationen abwehren.
-- Zusätzliche Verwaltungsaufwand: Das Fehlen robuster, eingebauter Sicherheitsfunktionen stellt ein großes Risiko dar und unterstreicht die Notwendigkeit einer sorgfältigen Überwachung und proaktiver Strategien, insbesondere für Projekte mit hohem Datenverkehr.
+- Zusätzlicher Verwaltungsaufwand: Das Fehlen robuster, eingebauter Sicherheitsfunktionen stellt ein großes Risiko dar und unterstreicht die Notwendigkeit einer sorgfältigen Überwachung und proaktiver Strategien, insbesondere für Projekte mit hohem Datenverkehr.
 
 Wenn die Resilienz gegenüber DDoS-Angriffen für Ihr Projekt von entscheidender Bedeutung ist, empfehlen wir Ihnen, einen OVHcloud VPS in einem unserer Rechenzentren zu wählen, der mit eingebauter Schutzfunktion ausgestattet ist.
 
@@ -273,7 +273,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Sie [alle noch benötigten Daten 
 
 ///
 
-/// details | Kann ich meinen VPS in einen anderen OVHcloud Rechenzentrum in einem anderen Land verschieben?
+/// details | Kann ich meinen VPS in ein anderes OVHcloud Rechenzentrum in einem anderen Land verschieben?
 
 Eine Migration eines VPS in ein anderes Rechenzentrum ist nicht möglich. Um dies zu erreichen, können Sie eine [manuelle Migration](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another) durchführen:
 
@@ -357,7 +357,7 @@ Wenn die Ziel-IP mit Ihrer Lizenz kompatibel ist (`true`), können Sie den entsp
 /// details | Wie sichere ich meinen VPS?
 
 Standardmäßig wird der VPS nur mit dem ausgewählten Betriebssystem ausgeliefert. Der VPS-Administrator ist für die Anwendung einer geeigneten Sicherheitskonfiguration nach der Auslieferung des VPS verantwortlich.  
-Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+Beachten Sie auch unserer Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -389,7 +389,7 @@ Für weitergehende Unterstützung können Sie sich an einen unserer [Partner](/l
 Der Zugriff auf den Backup-Speicherplatz Ihres VPS (FTP-Speicherplatz) kann auf IP-Adressen beschränkt sein, die mit einem Dienst in Ihrem OVHcloud Kundencenter verknüpft sind.
 
 Um weitere IP-Adressen hinzuzufügen, von denen aus Sie zugreifen können, können Sie die OVHcloud API verwenden.  
-Dies ermöglicht es Ihnen, Ihre Backup-Daten über verschiedene Protokolle (FTP, NFS, CIFS) von einem anderen aus Dienst abzurufen.
+Dies ermöglicht es Ihnen, Ihre Backup-Daten über verschiedene Protokolle (FTP, NFS, CIFS) von einem anderen Dienst aus abzurufen.
 
 > [!warning]
 > Nur OVHcloud IP-Adressen können autorisiert werden.
