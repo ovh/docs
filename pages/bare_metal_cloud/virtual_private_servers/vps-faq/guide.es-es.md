@@ -213,7 +213,7 @@ Si la resiliencia frente a ataques DDoS es un factor crítico para su proyecto, 
 Puede iniciar sesión en su VPS de forma remota, utilizando las credenciales proporcionadas por correo electrónico tras la entrega del servicio.  
 El método de conexión depende de los sistemas operativos que se utilicen.
 
-Todos los detalles se detallan en nuestra guía sobre [cómo empezar con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+Encontrará todos los detalles en nuestra guía sobre [cómo empezar con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 ///
 
@@ -445,7 +445,7 @@ OVHcloud ofrece varias características de seguridad para proteger tu VPS contra
 
 ///
 
-/// details | Quiero usar un VPS como servidor de juego, ¿beneficiará del mismo firewall que protege los servidores dedicados de juego?
+/// details | Quiero usar un VPS como servidor de juego, ¿se beneficiará del mismo firewall que protege los servidores dedicados de juego?
 
 La protección contra DDoS de OVHcloud para juegos solo está disponible para nuestros servidores dedicados de juego. Si contrata un VPS para alojamiento de juegos, deberá configurar directamente el firewall en su sistema, adaptado al juego deseado. Puede encontrar más información en nuestra guía sobre [cómo configurar el firewall en Linux con iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
 
@@ -456,6 +456,6 @@ La ventaja de un VPS frente a un servidor dedicado es la posibilidad de escalar 
 
 ## Más información
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
