@@ -89,7 +89,7 @@ Cliquez sur le lien `Commander un backup premium`{.action} (services commandés 
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-Lors de l'étape suivante, Prenez note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
+Lors de l'étape suivante, prenez note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
 
 <a name="time"></a>
 
