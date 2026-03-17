@@ -214,8 +214,6 @@ Denken Sie daran, das automatische Backup auszuhängen, sobald Sie damit fertig 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 > [!warning]
-> 
->
 > Beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
 >
 
