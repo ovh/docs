@@ -63,7 +63,7 @@ This guide will help you to:
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](/links/manager): Click on your name in the top right-hand corner of your screen, then `My offers and services`{.action}, then the `Contracts`{.action} tab.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts on the [Contract list](/links/control-panel/billing-contracts) page.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

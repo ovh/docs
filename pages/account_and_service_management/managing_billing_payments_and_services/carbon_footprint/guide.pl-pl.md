@@ -93,7 +93,7 @@ Udostępniamy domyślnie API OVHcloud, które umożliwiają programistom lub int
 
 - Po prawej stronie wyświetli się API z ramką do uzupełnienia.
 - Kliknij przycisk znajdujący się w prawym górnym rogu o nazwie `Authenticate`{.action}, a następnie przycisk `Login with OVHcloud SSO`{.action}.
-- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/manager).
+- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/control-panel/account-dashboard).
 - Zaloguj się za pomocą identyfikatora klienta, następnie kliknij `Authorize`{.action}, aby korzystać z API OVHcloud w połączeniu z Twoimi usługami.
 - Zostaniesz automatycznie przekierowany do poprzedniej strony API **POST /me/carbonCalculator/task**.
 

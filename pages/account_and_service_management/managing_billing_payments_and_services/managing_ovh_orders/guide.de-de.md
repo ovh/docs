@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Ziel
 
-Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundencenter](/links/manager) verfolgen und sie bearbeiten.
+Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundencenter](/links/control-panel/billing-orders) verfolgen und sie bearbeiten.
 
 **Diese Anleitung erklärt, wie Sie Ihre Bestellungen über Ihr OVHcloud Kundencenter verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbaren OVHcloud Verträge (klicken Sie rechts oben auf Ihren Namen und dann im Kontextmenü auf `Meine Angebote und Dienste`{.action}. Klicken Sie abschließend auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die auf der Seite [Meine Verträge](/links/control-panel/billing-contracts) verfügbaren OVHcloud Verträge.
 
 ## Voraussetzungen
 
@@ -23,8 +23,8 @@ Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundenc
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Bestellungen](/links/control-panel/billing-orders)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Bestellungen anzeigen`{.action}
+- **Direkter Link:** [Meine Bestellungen](/links/control-panel/billing-orders)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Bestellungen`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -44,11 +44,11 @@ Der Bestellschein wird erstellt, sobald Sie Ihre Bestellung aufgeben. Darin werd
 |3|In Ihrem Kundenkonto gespeicherte Zahlungsmethoden. Weitere Informationen finden Sie in der Anleitung [Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Verfügbare Zahlungsmethoden. Ihnen werden nur die im Heimatland des Accounts autorisierten Zahlungsmethoden oder die mit der Art des registrierten Accounts verbundenen Zahlungsmethoden angeboten.|
 
-Sie können Ihren Bestellschein jederzeit auf der Seite [Bestellungen](/links/control-panel/billing-orders) einsehen, wie unten erläutert.
+Sie können Ihren Bestellschein jederzeit auf der Seite [Meine Bestellungen](/links/control-panel/billing-orders) einsehen, wie unten erläutert.
 
 ### Auf die Bestellscheine im OVHcloud Kundencenter zugreifen
 
-Öffnen Sie die Seite [Bestellungen](/links/control-panel/billing-orders).
+Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 ![Kundencenter](images/huborders.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Sie können das Bestellformular auch im HTML-Format anzeigen, indem Sie rechts n
 
 ### Bestellung verfolgen
 
-Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über die Seite [Bestellungen](/links/control-panel/billing-orders) verfolgen:
+Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) verfolgen:
 
 - Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Bestellungnachverfolgung`{.action}. Die Nachverfolgung der Bestellung kann auch angezeigt werden, indem in der Spalte Status einer Bestellung auf den `Status` geklickt wird.
@@ -107,7 +107,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 > Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](/links/web/domains) und [Sectigo SSL-Zertifikate](/links/web/hosting-options-ssl).
 >
 
-Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über die Seite [Bestellungen](/links/control-panel/billing-orders) ausgeübt werden:
+Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über die Seite [Meine Bestellungen](/links/control-panel/billing-orders) ausgeübt werden:
 
 - Klicken Sie auf den Button `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Die Bestellung stornieren`{.action}.

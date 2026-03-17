@@ -10,7 +10,7 @@ Here are the most frequently asked questions about billing and payment for your 
 
 ### What is my billing account?
 
-The list of contacts for your services is available on the [Manage contacts](/links/control-panel/account-contacts) page.
+The list of contacts for your services is available on the [My contacts](/links/control-panel/account-contacts) page.
 
 #### Tips and tricks
 
@@ -18,7 +18,7 @@ For further information about contact management, please read this detailed guid
 
 ### How do I change my billing details?
 
-Your billing details are those of your NIC handle. For your next bills, simply update this information on the [User profile](/links/control-panel/account-profile) page.
+Your billing details are those of your NIC handle. For your next bills, simply update this information on the [My profile](/links/control-panel/account-profile) page.
 
 For legal reasons, you cannot change an invoice that has already been issued. If, however, your request is linked to an error on our side, please contact us by creating a support ticket.
 
@@ -58,11 +58,11 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I add a payment method?
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, click `Add a payment method`{.action}.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, click `Add a payment method`{.action}.
 
 ### How do I update my payment method?
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, you can add or delete a payment method (bank card, PayPal or SEPA direct debit).
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can add or delete a payment method (bank card, PayPal or SEPA direct debit).
 
 If you request a SEPA direct debit, you will receive an email within 24 to 48 hours via the email address on your OVHcloud account, with a link for the electronic signature of your direct debit mandate. Warning: the owner of the bank account must be the same as the owner of the OVHcloud account.
 
@@ -74,7 +74,7 @@ To ensure that your services are renewed properly, you will need to set at least
 
 ### How do I delete a payment method?
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, identify the payment method you wish to delete and click on the trashcan icon.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, identify the payment method you wish to delete and click on the trashcan icon.
 
 #### Tips and tricks
 
@@ -111,11 +111,11 @@ If your pre-paid OVHcloud account contains credit, it will always be used by def
 
 ### Where do I find my bills?
 
-Open the [Invoices](/links/control-panel/billing-invoices) page.
+Open the [My bills](/links/control-panel/billing-invoices) page.
 
 #### Tips and tricks
 
-If there are no invoices listed in the OVHcloud Control Panel, you may not be the billing contact for the service concerned. To see who is the billing contact and modify it if necessary, open the [Manage contacts](/links/control-panel/account-contacts) page.
+If there are no invoices listed in the OVHcloud Control Panel, you may not be the billing contact for the service concerned. To see who is the billing contact and modify it if necessary, open the [My contacts](/links/control-panel/account-contacts) page.
 
 ### How do I pay my balance?
 
@@ -136,7 +136,7 @@ Pending payments are listed in the dashboard of the OVHcloud Control Panel. You 
 
 #### Tips and tricks
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
 
 ### What do my payments correspond to?
 
@@ -172,7 +172,7 @@ The accounts ledger is only issued by the requesting party’s accounts departme
 
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
-To download the file, open the [Invoices](/links/control-panel/billing-invoices) page. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+To download the file, open the [My bills](/links/control-panel/billing-invoices) page. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
 
 ## Go further
   

@@ -14,11 +14,11 @@ Vous ne pouvez régler votre commande qu’une fois identifié à l’aide de vo
 
 #### Trucs et astuces
 
-Vous avez quitté la page de votre commande ? Rendez-vous sur la page [Commandes](/links/control-panel/billing-orders). Vous pourrez alors visualiser votre commande et la régler.
+Vous avez quitté la page de votre commande ? Rendez-vous sur la page [Mes commandes](/links/control-panel/billing-orders). Vous pourrez alors visualiser votre commande et la régler.
 
 ### Comment consulter le statut de mon paiement ?
 
-Ouvrez la page [Factures](/links/control-panel/billing-invoices). Si une facture est en attente de paiement, il vous sera proposé d'en régler le solde.
+Ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Si une facture est en attente de paiement, il vous sera proposé d'en régler le solde.
 
 #### Trucs et astuces
 
@@ -26,7 +26,7 @@ Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), 
 
 ### Comment suivre l'état de ma commande ?
 
-Ouvrez la page [Commandes](/links/control-panel/billing-orders).
+Ouvrez la page [Mes commandes](/links/control-panel/billing-orders).
 
 #### Trucs et astuces
 

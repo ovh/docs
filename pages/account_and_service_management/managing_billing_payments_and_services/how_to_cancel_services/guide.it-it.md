@@ -87,8 +87,8 @@ Questo implica che, prima di disattivarsi, devi essere **certo**:
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [My services](/links/control-panel/billing-services)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Products and services`{.action}
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

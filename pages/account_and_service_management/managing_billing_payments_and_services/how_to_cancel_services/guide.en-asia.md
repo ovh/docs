@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Objective
 
-You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [OVHcloud Control Panel](/links/manager).
+You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [My offers and services](/links/control-panel/billing-services) page.
 
 -First read the section "[What happens when an OVHcloud service is cancelled?](#consequences)".
 -Follow the steps described in the section "[How do I cancel my subscription?](#terminate)".

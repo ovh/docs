@@ -63,7 +63,7 @@ Ce guide vous permettra de :
 
 > [!primary]
 >
-> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Pour toute information, consultez vos contrats OVHcloud depuis votre [espace client](/links/manager) : cliquez sur votre nom en haut à droite de votre écran, sur `Mes offres & services`{.action} puis sur l'onglet `Contrats`{.action}.
+> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Pour toute information, consultez vos contrats OVHcloud sur la page [Liste des contrats](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -81,8 +81,8 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

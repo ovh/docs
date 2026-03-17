@@ -14,6 +14,17 @@ Ce guide contient les éléments indispensables à une bonne gestion de votre co
 
 - Disposer d'un ou plusieurs services OVHcloud actifs.
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## En pratique
 
 ### Paramètres du compte
@@ -30,7 +41,7 @@ Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adress
 
 Vos informations personnelles (adresse postale, e-mail, etc.) doivent être à jour sur votre compte client afin de garantir la sécurité et le bon fonctionnement de vos services.
 
-Vérifiez vos informations personnelles sur la page [Profil utilisateur](/links/control-panel/account-profile).<br>
+Vérifiez vos informations personnelles sur la page [Mon profil](/links/control-panel/account-profile).<br>
 Dans la section `Mon profil`{.action}, cliquez sur `...`{.action}, puis sur `Modifier mon profil`{.action}.
 
 ![myprofile](images/myprofile.png){.thumbnail}
@@ -69,7 +80,7 @@ Si vous décidez de ne pas activer le renouvellement automatique, vous recevrez 
 
 ### Suivi de vos commandes
 
-Saviez-vous que vous pouviez [suivre vos commandes](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) depuis la page [Commandes](/links/control-panel/billing-orders) ?
+Saviez-vous que vous pouviez [suivre vos commandes](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) depuis la page [Mes commandes](/links/control-panel/billing-orders) ?
 
 Vous serez informé des étapes de la livraison et vous saurez si des actions sont nécessaires de votre côté.
 

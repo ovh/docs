@@ -93,7 +93,7 @@ By default, OVHcloud APIs are made available to developers or integrators to ass
 
 - On the right-hand side of the page, you will then see the API with its fields to complete.
 - Click the button in the top right-hand corner labeled `Authenticate`{.action}, then the `Login with OVHcloud SSO`{.action} button.
-- The interface for connecting to your [OVHcloud Control Panel](/links/manager) will open.
+- The [OVHcloud Control Panel](/links/control-panel/account-dashboard) login page will open.
 - Log in with your customer credentials, then click `Authorize`{.action} to use the OVHcloud APIs with your services.
 - You will then be automatically redirected to the previous page of the **POST /me/carbonCalculator/task** API.
 

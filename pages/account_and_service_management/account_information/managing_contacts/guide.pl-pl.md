@@ -40,8 +40,8 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Manage contacts](/links/control-panel/account-contacts)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Contact management`{.action}
+- **Link bezpośredni:** [Zarządzanie kontaktami](/links/control-panel/account-contacts)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje kontakty`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

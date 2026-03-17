@@ -96,8 +96,8 @@ Weitere Informationen finden Sie in den [FAQ](/pages/account_and_service_managem
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Meine Dienste](/links/control-panel/billing-services)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Produkte und Dienstleistungen`{.action}
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

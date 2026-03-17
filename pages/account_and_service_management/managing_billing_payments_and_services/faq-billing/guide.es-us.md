@@ -18,7 +18,7 @@ Si desea más información sobre la gestión de los contactos, consulte nuestra 
 
 ### ¿Cómo modificar los datos de facturación?
 
-Los datos de facturación son los que haya indicado en su cuenta de cliente. Para sus próximas facturas, solo tiene que actualizar esta información en la página [Perfil de usuario](/links/control-panel/account-profile).
+Los datos de facturación son los que haya indicado en su cuenta de cliente. Para sus próximas facturas, solo tiene que actualizar esta información en la página [Mi perfil](/links/control-panel/account-profile).
 
 Por motivos legales, no es posible modificar una factura ya emitida. No obstante, si su solicitud se debe a un error nuestro, contacte con nosotros mediante un tíquet de soporte.
 
@@ -111,7 +111,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Dónde consultar las facturas?
 
-Abra la página [Facturas](/links/control-panel/billing-invoices).
+Abra la página [Mis facturas](/links/control-panel/billing-invoices).
 
 #### Ideas y consejos
 
@@ -172,7 +172,7 @@ Para consultar el libro mayor, acuda a su propio departamento de contabilidad.
 
 No obstante, OVHcloud pone a su disposición todas sus facturas a través de un archivo de Excel en formato CSV.
 
-Para descargarlo, abra la página [Facturas](/links/control-panel/billing-invoices). Haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
+Para descargarlo, abra la página [Mis facturas](/links/control-panel/billing-invoices). Haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
 
 ## Más información
   

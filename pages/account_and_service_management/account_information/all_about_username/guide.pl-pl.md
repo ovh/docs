@@ -22,8 +22,8 @@ Panel klienta OVHcloud pozwala również na zarządzanie danymi osobowymi i na d
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [User profile](/links/control-panel/account-profile)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `My account`{.action}
+- **Link bezpośredni:** [Mój profil](/links/control-panel/account-profile)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Edytuj mój profil`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/
 W przypadku problemów z dostępem do Twojego głównego konta e-mail, zapasowy adres e-mail umożliwia zachowanie dostępu do Twojego konta, a tym samym zarządzanie usługami.
 <br>Ten drugi adres **musi być inny** niż pierwszy, w szczególności w celu ułatwienia wykonania kroków w przypadku odzyskania hasła.
 
-Aby wprowadzić ten adres zapasowy, przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile) i kliknij `Edytuj moj profil`{.action} w sekcji `Mój profil`.
+Aby wprowadzić ten adres zapasowy, przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
 > [!warning]
 > Przypominamy, że **ważne** jest, aby zapasowy adres e-mail był **inny** niż główny adres e-mail przypisany do konta.
@@ -84,7 +84,7 @@ Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie ko
 
 #### Zmiana danych osobowych
 
-Możesz zmienić informacje o swoim koncie. Przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile) i kliknij `Edytuj moj profil`{.action} w sekcji `Mój profil`.
+Możesz zmienić informacje o swoim koncie. Przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
 Zmień dane, a następnie kliknij przycisk `Potwierdź`{.action}.
 

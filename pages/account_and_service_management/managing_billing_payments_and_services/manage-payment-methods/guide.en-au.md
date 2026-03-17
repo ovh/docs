@@ -17,15 +17,15 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Payment methods](/links/control-panel/billing-payment-methods)
-- **Navigation path:** Click your name in the top right > `Payment method`{.action}
+- **Direct link:** [My payment methods](/links/control-panel/billing-payment-methods)
+- **Navigation path:** Click your name in the top right > `My payment methods`{.action}
 
 ---
 <!-- CP-NAV-END:billing-payment-methods -->
 
 ## Instructions <a name="payment_methods"></a>
 
-Open the [Payment methods](/links/control-panel/billing-payment-methods) page.
+Open the [My payment methods](/links/control-panel/billing-payment-methods) page.
 
 ![hubpayment](/pages/assets/screens/control_panel/product-selection/right-menu/my-payment-methods.png){.thumbnail}
 
@@ -119,14 +119,14 @@ Then delete the payment method using the ID you obtained in the previous step:
 >
 > For more information, please refer to our guide [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
-> If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](/links/manager).
+> If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [My payment methods](/links/control-panel/billing-payment-methods) page.
 >
 
 ### Prepaid account
 
 #### What is the prepaid account?
 
-The *prepaid account* is added to your [OVHcloud Control Panel](/links/manager) as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
+The *prepaid account* is added to the [My payment methods](/links/control-panel/billing-payment-methods) page as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
 
 By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#automatic-renewal).
 

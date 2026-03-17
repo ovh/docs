@@ -40,8 +40,8 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Manage contacts](/links/control-panel/account-contacts)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Contact management`{.action}
+- **Link diretto:** [Gestione dei contatti](/links/control-panel/account-contacts)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `I miei contatti`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

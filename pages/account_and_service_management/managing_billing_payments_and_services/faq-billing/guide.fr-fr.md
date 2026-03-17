@@ -18,7 +18,7 @@ Si vous souhaitez en savoir plus sur la gestion des contacts, vous pouvez consul
 
 ### Comment modifier mes coordonnées de facturation ?
 
-Vos coordonnées de facturation sont celles de votre identifiant client. Pour vos prochaines factures, il vous suffit de mettre à jour ces informations sur la page [Profil utilisateur](/links/control-panel/account-profile).
+Vos coordonnées de facturation sont celles de votre identifiant client. Pour vos prochaines factures, il vous suffit de mettre à jour ces informations sur la page [Mon profil](/links/control-panel/account-profile).
 
 Pour des raisons légales, il est impossible de modifier une facture déjà éditée. Toutefois, si votre demande est liée à une erreur de nos services, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
@@ -112,7 +112,7 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment retrouver mes factures ?
 
-Ouvrez la page [Factures](/links/control-panel/billing-invoices).
+Ouvrez la page [Mes factures](/links/control-panel/billing-invoices).
 
 #### Trucs et astuces
 
@@ -180,7 +180,7 @@ Le grand livre des comptes est fourni uniquement par le service comptabilité du
 
 OVHcloud vous donne cependant accès à l'ensemble de vos factures, via un fichier Excel (.csv).
 
-Pour le télécharger, ouvrez la page [Factures](/links/control-panel/billing-invoices). Cliquez ensuite sur le bouton `Actions`{.action}, puis sélectionnez « Exporter en CSV ».
+Pour le télécharger, ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Cliquez ensuite sur le bouton `Actions`{.action}, puis sélectionnez « Exporter en CSV ».
 
 ## Aller plus loin
 

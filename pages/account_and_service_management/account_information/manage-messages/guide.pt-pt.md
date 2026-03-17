@@ -17,8 +17,8 @@ Ao criar a sua conta OVHcloud, especificou um endereço de correio eletrónico d
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Messages](/links/control-panel/account-messages)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Service emails`{.action}
+- **Ligação direta:** [As minhas comunicações](/links/control-panel/account-messages)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas comunicações`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

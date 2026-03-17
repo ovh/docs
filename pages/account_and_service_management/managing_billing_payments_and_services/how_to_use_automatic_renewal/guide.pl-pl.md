@@ -63,7 +63,7 @@ Z tego przewodnika dowiesz się:
 
 > [!primary]
 >
-> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](/links/manager): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Moje rozwiązania i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach na stronie [Lista umów](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,8 +79,8 @@ Z tego przewodnika dowiesz się:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [My services](/links/control-panel/billing-services)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Products and services`{.action}
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

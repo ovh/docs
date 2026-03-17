@@ -18,7 +18,7 @@ Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausf�
 
 ### Wie kann ich meine Zahlungsdaten ändern?
 
-Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben auf der Seite [Benutzerprofil](/links/control-panel/account-profile) zu aktualisieren.
+Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben auf der Seite [Mein Profil](/links/control-panel/account-profile) zu aktualisieren.
 
 Aus rechtlichen Gründen können Sie die Daten für bereits erstellte Rechnungen nicht mehr ändern. Sollte Ihre Anfrage auf einen Fehler unserer Dienste zurückgehen, kontaktieren Sie uns bitte über ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
@@ -111,7 +111,7 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wo kann ich meine Rechnungen einsehen?
 
-Öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices).
+Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices).
 
 #### Tipps und Tricks
 
@@ -172,7 +172,7 @@ Das gesamte Rechnungsbuch wird ausschließlich von der Buchhaltung des Antragste
 
 OVHcloud stellt Ihnen dennoch eine Exceldatei (.csv) zur Verfügung, in der Ihnen alle Ihre Rechnungen aufgelistet werden.
 
-Um die Datei herunterzuladen, öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
+Um die Datei herunterzuladen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
 
 ## Weiterführende Informationen
  

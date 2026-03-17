@@ -12,7 +12,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](/links/manager) (kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym kliknij pozycję `Moje rozwiązania i usługi`{.action}. Następnie kliknij zakładkę `Regulaminy`{.action}).
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych na stronie [Lista umów](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -24,10 +24,10 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 <!-- CP-NAV-START:billing-invoices -->
 ---
 
-### OVHcloud Control Panel Access
+### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Invoices](/links/control-panel/billing-invoices)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Invoices`{.action}
+- **Link bezpośredni:** [Faktury](/links/control-panel/billing-invoices)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Faktury`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -36,7 +36,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 > [!primary]
 >
-> Każda faktura jest wysyłana e-mailem. Jest ona dostępna pod linkiem. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), uwierzytelniając Twój adres. Wszystkie faktury są również dostępne na stronie głównej Panelu klienta.
+> Każda faktura jest wysyłana e-mailem. Jest ona dostępna pod linkiem na stronie [Moje faktury](/links/control-panel/billing-invoices). Wszystkie faktury są również dostępne na stronie głównej Panelu klienta.
 >
 
 ### Informacje na Twojej fakturze
@@ -129,7 +129,7 @@ Zostanie wówczas [utworzone zamówienie](/pages/account_and_service_management/
 > Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Jeśli otrzymałeś fakturę, której nie uważasz za uzasadnioną i chcesz zażądać jej zwrotu lub dochodzić [prawa do odstąpienia od umowy](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](/links/manager), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
+Jeśli otrzymałeś fakturę, której nie uważasz za uzasadnioną i chcesz zażądać jej zwrotu lub dochodzić [prawa do odstąpienia od umowy](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w Panelu klienta OVHcloud, z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
 <br> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
 ### Monitoruj płatności

@@ -20,8 +20,8 @@ A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Account security](/links/control-panel/account-security)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `My account`{.action} > `Security`{.action}
+- **Ligação direta:** [Segurança](/links/control-panel/account-security)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Segurança`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

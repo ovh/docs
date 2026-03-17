@@ -57,11 +57,11 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como adicionar um método de pagamento?
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), clique em `Adicionar um método de pagamento`{.action}.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), clique em `Adicionar um método de pagamento`{.action}.
 
 ### Como atualizar um método de pagamento?
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), poderá adicionar ou eliminar um método de pagamento (cartão de pagamento, PayPal ou débito direto SEPA).
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá adicionar ou eliminar um método de pagamento (cartão de pagamento, PayPal ou débito direto SEPA).
 
 Em caso de pedido de débito direto SEPA, receberá no prazo de 24 a 48 horas, no endereço de e-mail da sua conta OVHcloud, um e-mail com uma ligação para assinar com assinatura eletrónica à sua ordem de débito direto. Tenha em conta que o proprietário da conta bancária deve ser idêntico ao proprietário da conta OVHcloud.
 
@@ -73,7 +73,7 @@ Deve ter configurado, pelo menos, um método de pagamento na Área de Cliente, p
 
 ### Como eliminar um método de pagamento?
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), identifique o método de pagamento a eliminar e clique no ícone do caixote de lixo.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), identifique o método de pagamento a eliminar e clique no ícone do caixote de lixo.
 
 #### Truques e dicas
 
@@ -110,7 +110,7 @@ Se à sua conta pré-paga da OVHcloud dispuser de crédito, esta será sempre ut
 
 ### Como encontrar as minhas faturas?
 
-Abra a página [Faturas](/links/control-panel/billing-invoices).
+Abra a página [As minhas faturas](/links/control-panel/billing-invoices).
 
 #### Truques e dicas
 
@@ -135,7 +135,7 @@ O painel de controlo da sua Área de Cliente OVHcloud apresenta os seus pagament
 
 #### Truques e dicas
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ### A que se referem os meus pagamentos?
 
@@ -171,7 +171,7 @@ O livro razão é fornecido exclusivamente pelo serviço de contabilidade do req
 
 No entanto, a OVHcloud dá-lhe acesso ao conjunto das suas faturas através de um ficheiro Excel (.csv).
 
-Para o descarregar, abra a página [Faturas](/links/control-panel/billing-invoices). A seguir, clique no botão `Ações`{.action} e selecione a opção `Exportar em CSV`{.action}.
+Para o descarregar, abra a página [As minhas faturas](/links/control-panel/billing-invoices). A seguir, clique no botão `Ações`{.action} e selecione a opção `Exportar em CSV`{.action}.
 
 ## Quer saber mais?
  

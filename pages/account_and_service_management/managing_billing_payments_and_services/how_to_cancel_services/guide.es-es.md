@@ -87,8 +87,8 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [My services](/links/control-panel/billing-services)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Products and services`{.action}
+- **Enlace directo:** [Mis soluciones y servicios](/links/control-panel/billing-services)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis soluciones y servicios`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

@@ -14,6 +14,17 @@ Este guia contém os elementos indispensáveis a uma boa gestão da sua conta e 
 
 - Dispor de um ou vários serviços ativos da OVHcloud
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## Instruções
 
 ### Parâmetros da conta

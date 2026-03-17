@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Objectif
 
-Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis l'espace client OVHcloud.
+Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis la page [Mes offres et services](/links/control-panel/billing-services).
 
 - Tout d'abord, prenez connaissance de la partie « Que se passe-t-il lorsqu'un service OVHcloud est résilié ? » ci-dessous.
 - Choisissez ensuite le produit concerné dans la partie « [Comment résilier votre abonnement ?](#terminate) ».
@@ -87,8 +87,8 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Produits et services`{.action}
+- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

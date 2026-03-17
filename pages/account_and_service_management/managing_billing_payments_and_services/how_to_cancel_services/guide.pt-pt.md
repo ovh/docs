@@ -87,8 +87,8 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [My services](/links/control-panel/billing-services)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Products and services`{.action}
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

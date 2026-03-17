@@ -12,7 +12,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbaren OVHcloud Verträge (klicken Sie rechts oben auf Ihren Namen und dann im Kontextmenü auf `Meine Angebote und Dienste`{.action}. Klicken Sie abschließend auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die auf der Seite [Meine Verträge](/links/control-panel/billing-contracts) verfügbaren OVHcloud Verträge.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,8 +26,8 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Rechnungen](/links/control-panel/billing-invoices)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Rechnungen`{.action}
+- **Direkter Link:** [Meine Rechnungen](/links/control-panel/billing-invoices)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Rechnungen`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -36,7 +36,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 > [!primary]
 >
-> Jede Rechnung wird Ihnen per E-Mail in Form eines klickbaren Links gesendet, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) authentifizieren. Alle Rechnungen sind auch weiterhin über die Startseite Ihres Kundencenters verfügbar.
+> Jede Rechnung wird Ihnen per E-Mail in Form eines klickbaren Links gesendet, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem [OVHcloud Kundencenter](/links/control-panel/billing-invoices) authentifizieren. Alle Rechnungen sind auch weiterhin über die Startseite Ihres Kundencenters verfügbar.
 >
 
 ### Aufbau Ihrer Rechnung
@@ -59,7 +59,7 @@ Die Rechnung zu Ihrer OVHcloud Dienstleistung wird Ihnen nach einer Bezahlung od
 
 #### Rechnungen einsehen und verwalten
 
-Um Ihre Rechnungen einzusehen, öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices).
+Um Ihre Rechnungen einzusehen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices).
 
 ![Rechnungsstellung](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 

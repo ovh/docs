@@ -29,7 +29,7 @@ By setting this option and securing your account with [two-factor authentication
 ### OVHcloud Control Panel Access
 
 - **Direct link:** [Account security](/links/control-panel/account-security)
-- **Navigation path:** Click your name in the top right > `My account`{.action} > `Security`{.action}
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Security`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

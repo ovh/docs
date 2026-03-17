@@ -87,8 +87,8 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [My services](/links/control-panel/billing-services)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Products and services`{.action}
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

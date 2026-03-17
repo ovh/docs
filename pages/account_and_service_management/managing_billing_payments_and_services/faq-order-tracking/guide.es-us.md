@@ -14,11 +14,11 @@ Para abonar un pedido deberá identificarse utilizando su cuenta de cliente. A c
 
 #### Ideas y consejos
 
-¿Ha cerrado la página de la orden de pedido? Acceda a la página [Pedidos](/links/control-panel/billing-orders). A continuación, podrá ver el pedido y abonarlo.
+¿Ha cerrado la página de la orden de pedido? Acceda a la página [Mis pedidos](/links/control-panel/billing-orders). A continuación, podrá ver el pedido y abonarlo.
 
 ### ¿Cómo consultar el estado de un pago?
 
-Abra la página [Facturas](/links/control-panel/billing-invoices). Si una factura está pendiente de pago, se le propondrá abonar el saldo.
+Abra la página [Mis facturas](/links/control-panel/billing-invoices). Si una factura está pendiente de pago, se le propondrá abonar el saldo.
 
 #### Ideas y consejos
 
@@ -26,7 +26,7 @@ En la página [Formas de pago](/links/control-panel/billing-payment-methods), pu
 
 ### ¿Cómo realizar el seguimiento de un pedido?
 
-Abra la página [Pedidos](/links/control-panel/billing-orders).
+Abra la página [Mis pedidos](/links/control-panel/billing-orders).
 
 #### Ideas y consejos
 

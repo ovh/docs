@@ -18,7 +18,7 @@ Per maggiori informazione sulla gestione dei contatti, consulta la guida [Gestir
 
 ### Come modificare i dati di fatturazione?
 
-I dati di fatturazione sono quelli del tuo identificativo cliente. Per le prossime fatture, è sufficiente aggiornare queste informazioni dalla pagina [Profilo utente](/links/control-panel/account-profile).
+I dati di fatturazione sono quelli del tuo identificativo cliente. Per le prossime fatture, è sufficiente aggiornare queste informazioni dalla pagina [Il mio profilo](/links/control-panel/account-profile).
 
 Ti ricordiamo che in generale non è possibile modificare una fattura già emessa. In caso di errore da parte dei nostri sistemi, contattaci tramite un **ticket di assistenza**.
 
@@ -55,11 +55,11 @@ Per maggiori informazioni, consulta la guida Gestire il rinnovo dei servizi.
 
 ### Come aggiungere un metodo di pagamento?
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), clicca su `Aggiungi un metodo di pagamento`{.action}.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), clicca su `Aggiungi un metodo di pagamento`{.action}.
 
 ### Come aggiornare un metodo di pagamento?
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), è possibile aggiungere o eliminare un metodo di pagamento (carta bancaria, Paypal o addebito SEPA).
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), è possibile aggiungere o eliminare un metodo di pagamento (carta bancaria, Paypal o addebito SEPA).
 
 In caso di richiesta di addebito SEPA, entro 24-48 ore riceverai all'indirizzo di posta associato all’account OVHcloud un'email con il link per la firma elettronica del mandato di addebito. Attenzione: il titolare del conto bancario deve essere identico al proprietario dell'account OVHcloud.
 
@@ -71,7 +71,7 @@ Per il corretto rinnovo dei servizi è necessario registrare almeno un metodo di
 
 ### Come eliminare un metodo di pagamento?
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), seleziona il metodo di pagamento da eliminare e clicca sull’icona a forma di cestino.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), seleziona il metodo di pagamento da eliminare e clicca sull’icona a forma di cestino.
 
 #### Consigli e suggerimenti
 
@@ -107,7 +107,7 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come recuperare le fatture?
 
-Apri la pagina [Fatture](/links/control-panel/billing-invoices).
+Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices).
 
 #### Consigli e suggerimenti
 
@@ -132,7 +132,7 @@ L’interfaccia principale dello Spazio Cliente mostra i pagamenti in attesa. É
 
 #### Consigli e suggerimenti
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ### A cosa corrispondono i pagamenti effettuati?
 
@@ -168,7 +168,7 @@ Questo documento è in genere disponibile presso il dipartimento di contabilità
 
 OVHcloud mette comunque a disposizione tutte le fatture tramite un file Excel in formato CSV.
 
-Per scaricarlo, apri la pagina [Fatture](/links/control-panel/billing-invoices). Clicca su `Azioni`{.action} > `Esporta in CSV`{.action}.
+Per scaricarlo, apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Clicca su `Azioni`{.action} > `Esporta in CSV`{.action}.
 
 ## Per saperne di più
   

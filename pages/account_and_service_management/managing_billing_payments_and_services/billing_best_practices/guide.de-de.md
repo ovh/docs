@@ -14,6 +14,17 @@ Diese Anleitung enthält die wichtigsten Punkte, die für eine ordnungsgemäße 
 
 - Sie haben aktive OVHcloud Dienste.
 
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
+
 ## In der praktischen Anwendung
 
 ### Account-Einstellungen
@@ -30,7 +41,7 @@ Damit die Sicherheitsmaßnahmen greifen, überprüfen Sie, ob Ihre E-Mail-Adress
 
 Die persönlichen Angaben (Postanschrift, E-Mail etc.) Ihres Kunden-Accounts müssen auf dem aktuellen Stand sein, um die Sicherheit und das reibungslose Funktionieren Ihrer Dienstleistungen zu gewährleisten.
 
-Überprüfen Sie Ihre persönlichen Informationen auf der Seite [Benutzerprofil](/links/control-panel/account-profile).<br>
+Überprüfen Sie Ihre persönlichen Informationen auf der Seite [Mein Profil](/links/control-panel/account-profile).<br>
 Im Bereich `Mein Profil`{.action} klicken Sie auf `...`{.action} und dann auf `Mein Profil bearbeiten`{.action}.
 
 ![Myprofil](images/myprofile.png){.thumbnail}
@@ -66,7 +77,7 @@ Wenn Sie sich entscheiden, die automatische Verlängerung nicht zu aktivieren, e
 
 ### Übersicht Ihrer Bestellungen
 
-Wussten Sie, dass Sie [Ihre Bestellungen](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) auf der Seite [Bestellungen](/links/control-panel/billing-orders) nachverfolgen können?
+Wussten Sie, dass Sie [Ihre Bestellungen](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) auf der Seite [Meine Bestellungen](/links/control-panel/billing-orders) nachverfolgen können?
 
 Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ihrer Seite Aktionen notwendig sind.
 

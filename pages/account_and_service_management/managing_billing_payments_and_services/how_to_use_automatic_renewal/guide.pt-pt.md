@@ -63,7 +63,7 @@ Este manual permitir-lhe-á:
 
 > [!primary]
 >
-> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud a partir da sua [Área de Cliente](/links/manager): clique no seu nome no canto superior direito do seu ecrã, na `As minhas ofertas e serviços`{.action} e, a seguir, no separador `Contratos`{.action}.
+> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud na página [Lista de contratos](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,8 +79,8 @@ Este manual permitir-lhe-á:
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [My services](/links/control-panel/billing-services)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Products and services`{.action}
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->

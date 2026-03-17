@@ -33,7 +33,7 @@ W praktyce polega to najczęściej na wysłaniu wiadomości e-mail z prośbą o 
 
 #### Rozpoznawanie phishingowej wiadomości e-mail
 
-Najpierw sprawdź, czy otrzymana wiadomość e-mail jest również widoczna w Twoim [Panelu klienta OVHcloud](/links/manager). Zaloguj się, kliknij swoje imię w prawym górnym rogu, a następnie `E-maile od OVHcloud`{.action} (lub `Połączenia`{.action}). Znajdziesz tam kopie wszystkich oficjalnych wiadomości wysłanych przez OVHcloud.
+Najpierw sprawdź, czy otrzymana wiadomość e-mail jest również widoczna na stronie [Moje wiadomości](/links/control-panel/account-messages). Znajdziesz tam kopie wszystkich oficjalnych wiadomości wysłanych przez OVHcloud.
 
 Oto kilka wskazówek, które pomogą Ci wizualnie odróżnić autentyczną wiadomość e-mail od OVHcloud od próby phishingu.
 
@@ -244,7 +244,7 @@ Jedyną rzeczą, którą możesz zrobić, jest jak najszybszy kontakt z bankiem 
 
 /// details | **Jeśli podałeś(-aś) swoje hasło OVHcloud na fałszywej stronie internetowej**
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager) i zmień hasło.
+Przejdź na stronę [Bezpieczeństwo](/links/control-panel/account-security) i zmień hasło.
 
 W naszym przewodniku [Zmiana hasła do konta](/pages/account_and_service_management/account_information/manage-ovh-password) znajdziesz instrukcje zmiany hasła za pomocą Panelu klienta OVHcloud, a także nasze zalecenia dotyczące generowania silnego hasła i zapisywania go w menedżerze haseł.
 
