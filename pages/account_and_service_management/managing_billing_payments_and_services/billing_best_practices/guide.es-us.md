@@ -41,10 +41,7 @@ Para que las medidas de seguridad sean eficaces, asegúrese de que sus direccion
 
 Sus datos personales (dirección postal, correo electrónico, etc.) deben estar actualizados en su cuenta de cliente para garantizar la seguridad y el buen funcionamiento de sus servicios.
 
-Para consultar sus datos personales, acceda a la página [Mi perfil](/links/control-panel/account-profile).<br>
-En la sección `Mi perfil`{.action} a la derecha de su pantalla (haga clic de nuevo en su nombre para borrar el menú de la izquierda), haga clic en `...`{.action} y luego en `Editar mi perfil`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Para consultar sus datos personales, acceda a la página [Mi perfil](/links/control-panel/account-profile).
 
 Para más información, consulte la guía [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account_and_service_management/account_information/all_about_username#editar-mis-datos-personales).
 
@@ -83,9 +80,7 @@ Le informaremos de las etapas de la entrega y sabrá si es necesario realizar al
 
 ### Baja de servicios
 
-Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde la página [Mis servicios](/links/control-panel/billing-services).
-
-Abra la página [Mis servicios](/links/control-panel/billing-services). Haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
+Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde la página [Mis soluciones y servicios](/links/control-panel/billing-services). Haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
 
 - `Configurar la renovación`{.action}: en la siguiente pantalla, podrá pasar el `Modo de renovación` del servicio a `Manual`. Haga clic en `Siguiente`{.action} y `Confirmar`{.action}. Antes de la fecha de expiración del servicio, recibirá varias notificaciones por correo electrónico. Si no renueva el servicio, se eliminará **definitivamente**.
 - `Dar de baja mi servicio`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.

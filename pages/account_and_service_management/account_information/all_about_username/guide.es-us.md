@@ -86,7 +86,7 @@ Para más información, consulte nuestra guía [Proteger su cuenta de OVHcloud c
 
 Puede modificar la información de su cuenta. Acceda a su [perfil de usuario](/links/control-panel/account-profile).
 
-Modifique sus datos y haga clic en el botón `«Aceptar»`{.action}.
+Modifique sus datos y haga clic en el botón `Guardar los cambios`{.action}.
 
 > [!warning]
 >

@@ -31,13 +31,13 @@ Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, 
 
 #### Wskazówki i porady
 
-Aby sprawdzić status Twoich usług, otwórz stronę [Moje usługi](/links/control-panel/billing-services).
+Aby sprawdzić status Twoich usług, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 Zaloguj się i odnawiaj ręcznie swoje usługi na stronie lien <https://eu.ovh.com/pl/cgi-bin/order/renew.cgi>
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### W jaki sposób włączyć automatyczne odnawianie usług?
 
-Na stronie [Moje usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
 
 #### Wskazówki i porady
 
@@ -46,7 +46,7 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób wyłączyć automatyczne odnawianie?
 
-Na stronie [Moje usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
 
 Aby zrezygnować z usługi, sprawdź [W jaki sposób zrezygnować z usługi?](#cancelservice)
 
@@ -91,13 +91,13 @@ Jeśli Twoje konto prepaid OVHcloud ma saldo dodatnie, będzie ono używane domy
 
 ### Jaka jest data kolejnej płatności?
 
-Daty odnowienia usług znajdziesz na stronie [Moje usługi](/links/control-panel/billing-services).
+Daty odnowienia usług znajdziesz na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane pierwszego dnia miesiąca. Niemniej jednak, częstotliwość ich odnawiania może być różna w zależności od Twoich usług.
 
 #### Wskazówki i porady
 
-Na stronie [Moje usługi](/links/control-panel/billing-services) będziesz mógł zmienić częstotliwość odnawiania Twoich rozwiązań.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services) będziesz mógł zmienić częstotliwość odnawiania Twoich rozwiązań.
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Który z moich sposobów płatności zostanie obciążony?
@@ -143,7 +143,7 @@ Płatności, których dokonujesz na naszej stronie, jak również automatyczne p
 
 ### W jaki sposób zrezygnować z usługi? <a name="cancelservice"></a>
 
-Na stronie [Moje usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
 
 Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usługi lub umowy. Możesz złożyć dyspozycję lub ją anulować do 24 godzin przed datą wygaśnięcia.
 

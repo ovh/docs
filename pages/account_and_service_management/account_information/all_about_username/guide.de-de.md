@@ -86,7 +86,7 @@ Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHc
 
 Sie können die Daten Ihres Kunden-Accounts ändern. Gehen Sie zu Ihrem [Mein Profil](/links/control-panel/account-profile).
 
-Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Bestätigen`{.action}.
+Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Änderungen speichern`{.action}.
 
 > [!warning]
 >

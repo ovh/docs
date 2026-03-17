@@ -101,7 +101,7 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, abra la página [Mis servicios](/links/control-panel/billing-services).
+Para cancelar la suscripción al servicio, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -155,7 +155,7 @@ También puede [consultar su consumo actual](/pages/public_cloud/public_cloud_cr
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
-Para anular una solicitud de baja, abra la página [Mis servicios](/links/control-panel/billing-services).
+Para anular una solicitud de baja, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action}.
 

@@ -31,13 +31,13 @@ Se não renovar o serviço antes dessa data, este será simplesmente suspenso e 
 
 #### Conselhos e dicas
 
-Para consultar o estado dos seus serviços, abra a página [Os meus serviços](/links/control-panel/billing-services).
+Para consultar o estado dos seus serviços, abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 Faça login e renove manualmente os seus serviços na página <https://eu.ovh.com/pt/cgi-bin/order/renew.cgi>
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Como ativar a renovação automática?
 
-Na página [Os meus serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
+Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
 
 #### Truques e dicas
 
@@ -46,7 +46,7 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como desativar a renovação automática?
 
-Na página [Os meus serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
+Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
 
 Para rescindir um serviço, consulte a página [Como rescindir um serviço?](#cancelservice)
 
@@ -91,13 +91,13 @@ Se à sua conta pré-paga da OVHcloud dispuser de crédito, esta será sempre ut
 
 ### Qual é a data do próximo pagamento?
 
-Consulte todas as datas de renovação na secção `As minhas ofertas e serviços`{.action}, acessível diretamente na página [Os meus serviços](/links/control-panel/billing-services).
+Consulte todas as datas de renovação na secção `As minhas ofertas e serviços`{.action}, acessível diretamente na página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 As soluções que beneficiam de renovação automática são renovadas no primeiro dia do mês. No entanto, a frequência pode variar em função dos serviços subscritos.
 
 #### Truques e dicas
 
-Na página [Os meus serviços](/links/control-panel/billing-services), poderá alterar a frequência de renovação das suas soluções.
+Na página [As minhas ofertas e serviços](/links/control-panel/billing-services), poderá alterar a frequência de renovação das suas soluções.
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Que método de pagamento é utilizado para pagar o serviço?
@@ -143,7 +143,7 @@ Os pagamentos que realizou no nosso site, bem como todos os débitos diretos, es
 
 ### Como rescindir um serviço? <a name="cancelservice"></a>
 
-Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à página [Os meus serviços](/links/control-panel/billing-services). Identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
+Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à página [As minhas ofertas e serviços](/links/control-panel/billing-services). Identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
 
 A rescisão ficará efetiva quando o período de validade ou de compromisso do serviço tiver chegado ao fim. Pode realizar este pedido ou anulá-lo até 24 horas antes da data de expiração.
 

@@ -41,10 +41,7 @@ Per garantire l'efficacia delle misure di sicurezza, assicurati che i tuoi indir
 
 Le tue informazioni personali (indirizzo postale, email, ecc...) devono essere aggiornate sul tuo account cliente per garantire la sicurezza e il corretto funzionamento dei tuoi servizi.
 
-Verifica le tue informazioni personali nella pagina [Il mio profilo](/links/control-panel/account-profile).<br>
-Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo sul tuo nome per eliminare il menu a sinistra), clicca su `...`{.action} e poi su `Modifica il tuo profilo`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Verifica le tue informazioni personali nella pagina [Il mio profilo](/links/control-panel/account-profile).
 
 Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account_and_service_management/account_information/all_about_username#come-gestire-le-tue-informazioni-personali).
 
@@ -83,9 +80,7 @@ Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuar
 
 ### Disattivare il serviziozione dei servizi
 
-Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dalla pagina [I miei servizi](/links/control-panel/billing-services).
-
-Nella pagina [I miei servizi](/links/control-panel/billing-services), clicca sui tre puntini `...`{.action} in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
+Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dalla pagina [Le mie offerte e servizi](/links/control-panel/billing-services). Clicca sui tre puntini `...`{.action} in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 
 - `Configura il rinnovo`{.action}: sullo schermo successivo, potrai passare il `Tipo di rinnovo` del tuo servizio a `Manuale`. Clicca su `Continua`{.action} e `Conferma`{.action}. Prima della data di scadenza del tuo servizio, riceverai diverse notifiche via email. Se non rinnovi il tuo servizio, verrà eliminato **definitivamente**.
 - `Disattivare il servizio`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.

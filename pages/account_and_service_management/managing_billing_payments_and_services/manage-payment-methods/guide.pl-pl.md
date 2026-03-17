@@ -17,7 +17,7 @@ W Panelu klienta OVHcloud możesz dodać różne sposoby płatności i zarządza
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Moje sposoby płatności](/links/control-panel/billing-payment-methods)
+- **Link bezpośredni:** [Sposoby płatności](/links/control-panel/billing-payment-methods)
 - **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje sposoby płatności`{.action}
 
 ---

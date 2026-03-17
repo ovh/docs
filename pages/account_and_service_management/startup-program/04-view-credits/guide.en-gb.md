@@ -21,7 +21,7 @@ As a member of the OVHcloud Startup Program, you receive free credits to support
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My payment methods](/links/control-panel/billing-payment-methods)
+- **Direct link:** [Payment method](/links/control-panel/billing-payment-methods)
 - **Navigation path:** Click your name in the top right > `My payment methods`{.action}
 
 ---

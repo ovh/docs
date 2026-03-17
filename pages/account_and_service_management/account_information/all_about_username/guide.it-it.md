@@ -86,7 +86,7 @@ Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcl
 
 È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
-Modifica le informazioni e clicca su `Conferma`{.action}.
+Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
 
 > [!warning]
 >

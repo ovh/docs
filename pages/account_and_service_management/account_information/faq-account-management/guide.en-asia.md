@@ -212,7 +212,7 @@ For more information, please contact our support team by creating a [support tic
 
 Closing your OVHcloud customer account and deleting your personal data is only possible if:
 
-1. You no longer have any services listed in the [My services](https://www.ca.ovh.com/manager/dedicated/#/billing/autoRenew) section. Otherwise, you will need to request their termination and wait for their deletion.
+1. You no longer have any services listed in the [My offers and services](https://www.ca.ovh.com/manager/dedicated/#/billing/autoRenew) section. Otherwise, you will need to request their termination and wait for their deletion.
 2. You do not have any invoices awaiting payment. Otherwise, you will need to pay for them by clicking the `Pay immediately`{.action} button in the bulk actions section of the [My bills](https://www.ca.ovh.com/manager/#/dedicated/billing/history) page.
 3. You have no pending orders. Check it on [this page](https://www.ca.ovh.com/manager/#/dedicated/billing/orders/orders).
 4. Your prepaid account has no credit balance. Check it on [this page](https://www.ca.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

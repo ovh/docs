@@ -39,7 +39,7 @@ Ad esempio, possiamo creare una politica per dare ad un utente di nome John, per
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [IAM Policies](/links/control-panel/iam-policies)
-- **Percorso di navigazione:** `Identity, Security & Operations`{.action} > `Policy`{.action}
+- **Percorso di navigazione:** `Identità, sicurezza e operazioni`{.action} > `Policy`{.action}
 
 ---
 <!-- CP-NAV-END:iam-policies -->

@@ -40,13 +40,13 @@ Si vous ne renouvelez pas votre service avant cette date, il sera simplement sus
 
 #### Trucs et astuces
 
-Pour consulter l'état de vos services, ouvrez la page [Mes services](/links/control-panel/billing-services).
+Pour consulter l'état de vos services, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 Identifiez-vous et renouvelez manuellement vos services sur la page <https://eu.ovh.com/fr/cgi-bin/order/renew.cgi>
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Comment activer le renouvellement automatique ?
 
-Sur la page [Mes services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
 
 #### Trucs et astuces
 
@@ -55,7 +55,7 @@ Pour plus d'informations, consultez ce guide détaillé : [Gérer mes moyens de 
 
 ### Comment désactiver le renouvellement automatique ?
 
-Sur la page [Mes services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
 
 Pour résilier un service, consultez [Comment résilier un service](#cancelservice)
 
@@ -101,13 +101,13 @@ Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par
 
 ### Quelle est la date de mon prochain paiement ?
 
-Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres & services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
+Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres et services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
 
 À noter que les solutions bénéficiant du renouvellement automatique sont renouvelées le premier jour du mois. La fréquence peut cependant être différente selon vos services.
 
 #### Trucs et astuces
 
-Sur la page [Mes services](/links/control-panel/billing-services), vous pourrez modifier la fréquence de renouvellement de vos solutions.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), vous pourrez modifier la fréquence de renouvellement de vos solutions.
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Comment retrouver mes factures ?
@@ -153,7 +153,7 @@ Dans ce cas, nous vous conseillons de contacter votre banque afin d’être info
 
 ### Comment résilier un service ? <a name="cancelservice"></a>
 
-Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous sur la page [Mes services](/links/control-panel/billing-services). Identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
+Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous sur la page [Mes offres et services](/links/control-panel/billing-services). Identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
 
 La résiliation sera effective lorsque la période de validité ou d'engagement de votre service sera terminée. Vous pouvez effectuer cette demande ou l'annuler jusqu'à 24 heures avant la date d'échéance.
 

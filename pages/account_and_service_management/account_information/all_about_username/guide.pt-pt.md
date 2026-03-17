@@ -65,8 +65,6 @@ Em caso de dificuldade de acesso ao seu endereço de e-mail principal, um endere
 
 Para introduzir este endereço de e-mail de SOS, aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
-![endereço de e-mail de recurso](images/edit-profile.png){.thumbnail}
-
 > [!warning]
 > Relembramos que é **primordial** que o endereço de e-mail de SOS seja **diferente** do endereço de e-mail principal da conta.
 >
@@ -88,7 +86,7 @@ Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua con
 
 Pode alterar as informações da sua conta. Aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
-Altere os seus dados e clique no botão `Validar`{.action}.
+Altere os seus dados e clique no botão `Registar as modificações`{.action}.
 
 > [!warning]
 >

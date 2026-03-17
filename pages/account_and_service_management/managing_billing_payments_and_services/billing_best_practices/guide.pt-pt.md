@@ -41,10 +41,7 @@ Para que as medidas de segurança sejam eficazes, certifique-se de que os seus e
 
 As suas informações pessoais (endereço postal, e-mail, etc.) devem estar atualizadas na sua conta de cliente para garantir a segurança e o bom funcionamento dos seus serviços.
 
-Verifique as suas informações pessoais na página [Perfil do utilizador](/links/control-panel/account-profile).<br>
-Na secção `O meu perfil`{.action}, clique em `...`{.action} e, a seguir, em `Editar o meu perfil`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Verifique as suas informações pessoais na página [Perfil do utilizador](/links/control-panel/account-profile).
 
 Para mais informações consulte o guia [Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](/pages/account_and_service_management/account_information/all_about_username#como-gerir-os-meus-dados-pessoais).
 
@@ -83,9 +80,7 @@ Será informado das etapas da entrega e saberá se são necessárias ações.
 
 ### Rescisão de serviços
 
-Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da página [Os meus serviços](/links/control-panel/billing-services).
-
-Na página [Os meus serviços](/links/control-panel/billing-services), clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
+Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da página [As minhas ofertas e serviços](/links/control-panel/billing-services). Clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
 
 - `Configurar a renovação`{.action}: no ecrã seguinte, poderá passar o `Tipo de renovação` do seu serviço para `Manual`. A seguir, clique em `Seguinte`{.action} e em `Confirmar`{.action}. Antes da data de expiração do serviço, receberá várias notificações por e-mail. Se não renovar o serviço, este será eliminado **definitivamente**.
 - `Rescindir o meu serviço`{.action}: no ecrã seguinte, indique as razões do seu pedido de rescisão e clique em `Validar`{.action}. Na data de expiração do seu serviço, ele será eliminado **definitivamente**.

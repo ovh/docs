@@ -19,8 +19,8 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Account dashboard`{.action}
+- **Link diretto:** [Il mio account](/links/control-panel/account-dashboard)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->

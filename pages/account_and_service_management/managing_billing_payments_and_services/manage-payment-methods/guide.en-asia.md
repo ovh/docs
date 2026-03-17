@@ -17,7 +17,7 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My payment methods](/links/control-panel/billing-payment-methods)
+- **Direct link:** [Payment method](/links/control-panel/billing-payment-methods)
 - **Navigation path:** Click your name in the top right > `My payment methods`{.action}
 
 ---

@@ -50,7 +50,7 @@ details > :not(summary) {
 
 ## Objectif
 
-Le menu **Mes offres & services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
+Le menu **Mes offres et services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
 
 Ce guide vous permettra de :
 
@@ -81,8 +81,8 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -125,7 +125,7 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 
 ## En pratique
 
-Ouvrez la page [Mes services](/links/control-panel/billing-services).
+Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

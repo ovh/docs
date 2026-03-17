@@ -34,15 +34,15 @@ Dans le cadre du Règlement Général sur la Protection des Données (RGPD), vou
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
 
 ## En pratique
 
-Pour lister vos services, ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+Pour lister vos services, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 > [!alert]
 >
@@ -58,7 +58,7 @@ Pour lister vos services, ouvrez la page [Mes offres & services](/links/control-
 
 /// details | Nom de domaine
 
-1. Ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Résilier mon service`{.action}. Sélectionnez `Résilier le service immédiatement`{.action} et validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -73,7 +73,7 @@ Un délai de 45 à 60 jours, selon l'extension du domaine, peut être observé a
 > La suppression d'un hébergement entraîne l'effacement définitif de toutes ses données.
 >
 
-1. Ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement l'hébergement`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -89,7 +89,7 @@ Un délai de 45 jours peut être observé avant la suppression effective du serv
 
 Si votre service e-mail MX Plan est lié à un hébergement web, procédez à la suppression de celui-ci (voir ci-dessus).
 
-1. Ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer immédiatement le MX Plan`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 
@@ -107,7 +107,7 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 1. Ouvrez [Zimbra](/links/control-panel/web-zimbra) dans l'espace client OVHcloud.
 1. Cliquez sur l'onglet `Compte email`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque compte e-mail à supprimer puis sur `Supprimer`{.action}.
 1. Une fois tous les comptes e-mail supprimés, cliquez sur l'onglet `Domaine`{.action}. Cliquez sur le bouton `⋮`{.action} à droite de chaque domaine puis sur `Supprimer`{.action}.
-1. Lorsque les domaines associés ont été supprimés, ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Lorsque les domaines associés ont été supprimés, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
     1. Utilisez l'outil `Filtrer`{.action} sur la droite pour lister uniquement les services `Compte Email Zimbra`. Cliquez sur `Ajouter`{.action} pour valider le filtre.
     1. Sélectionnez tous les comptes Zimbra puis cliquez successivement sur le bouton `Actions`{.action} et `Désactiver le paiement automatique`{.action}.
 1. Une fois ces actions réalisées, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander une application accélérée de la suppression du service.
@@ -144,7 +144,7 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 
 /// details | Zone DNS
 
-1. Ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite de la zone DNS concernée, puis sur `Résilier mon service`{.action}.
 1. Une fois la résiliation demandée, vous pouvez créer un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander son application immédiate.
 
@@ -158,9 +158,9 @@ Un délai de 14 jours peut être observé avant la suppression effective du serv
 
 > [!primary]
 >
-> Utilisez l'outil `Filtrer`{.action} dans `Mes offres & services`{.action} pour retrouver les services Web Cloud Databases qui sont nommés « Hébergement base SQL privée ».
+> Utilisez l'outil `Filtrer`{.action} dans `Mes offres et services`{.action} pour retrouver les services Web Cloud Databases qui sont nommés « Hébergement base SQL privée ».
 
-1. Ouvrez la page [Mes offres & services](/links/control-panel/billing-services).
+1. Ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 1. Cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer mon hébergement SQL privé`{.action}. Validez en cliquant sur `Oui, résilier`{.action}.
 1. Un e-mail de confirmation est alors automatiquement envoyé à l'adresse e-mail principale du compte OVHcloud, cliquez sur le lien dans cet e-mail pour confirmer la suppression immédiate.
 

@@ -79,8 +79,8 @@ This guide will help you to:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My services](/links/control-panel/billing-services)
-- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -122,7 +122,7 @@ This guide will help you to:
 
 ## Instructions
 
-Open the [My services](/links/control-panel/billing-services) page.
+Open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

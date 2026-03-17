@@ -19,8 +19,8 @@ No âmbito das suas atividades profissionais ou por interesse no assumpto, poder
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Account dashboard`{.action}
+- **Ligação direta:** [A minha conta](/links/control-panel/account-dashboard)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->

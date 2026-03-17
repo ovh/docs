@@ -41,10 +41,7 @@ For the security measures to be efficient, make sure your email addresses (main 
 
 Your personal information (postal address, email address, etc.) must be up-to-date in your customer account to guarantee the security and proper functioning of your services.
 
-Verify your personal information on the [My profile](/links/control-panel/account-profile) page.<br>
-In the `My profile`{.action} section, click on `...`{.action}, then on `Edit my profile`{.action}.
-
-![myprofile](images/myprofile.png){.thumbnail}
+Verify your personal information on the [My profile](/links/control-panel/account-profile) page.
 
 For more information, read the guide [Securing my OVHcloud account and managing my personal information](/pages/account_and_service_management/account_information/all_about_username#how-to-manage-your-personal-details).
 
@@ -83,9 +80,7 @@ You will find out the steps of delivery and you will know if actions are require
 
 ### Service termination
 
-If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately from the [My services](/links/control-panel/billing-services) page.
-
-On the [My services](/links/control-panel/billing-services) page, click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
+If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately from the [My offers and services](/links/control-panel/billing-services) page. Click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
 
 - `Configure renewal`{.action}: On the following screen, you'll be able to switch the `Renewal type` of your service to `Manual`. Then click on `Next`{.action} and `Confirm`{.action}. Before the expiration date of your service, you will receive several notifications by email. If you don't renew your service, it will be **permanently** deleted.
 - `Cancel my subscription`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.

@@ -41,10 +41,7 @@ Damit die Sicherheitsmaßnahmen greifen, überprüfen Sie, ob Ihre E-Mail-Adress
 
 Die persönlichen Angaben (Postanschrift, E-Mail etc.) Ihres Kunden-Accounts müssen auf dem aktuellen Stand sein, um die Sicherheit und das reibungslose Funktionieren Ihrer Dienstleistungen zu gewährleisten.
 
-Überprüfen Sie Ihre persönlichen Informationen auf der Seite [Mein Profil](/links/control-panel/account-profile).<br>
-Im Bereich `Mein Profil`{.action} klicken Sie auf `...`{.action} und dann auf `Mein Profil bearbeiten`{.action}.
-
-![Myprofil](images/myprofile.png){.thumbnail}
+Überprüfen Sie Ihre persönlichen Informationen auf der Seite [Mein Profil](/links/control-panel/account-profile).
 
 Weitere Informationen finden Sie in der Anleitung [OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account_and_service_management/account_information/all_about_username#meine-personlichen-angaben-andern).
 
@@ -83,9 +80,7 @@ Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ih
 
 ### Kündigung von Dienstleistungen
 
-Wenn Sie einen Ihrer Dienste nicht mehr nutzen möchten, können Sie ihn kündigen, die Verlängerung auf den manuellen Modus umstellen oder ihn sofort von der Seite [Meine Dienste](/links/control-panel/billing-services) aus löschen.
-
-Klicken Sie auf der Seite [Meine Dienste](/links/control-panel/billing-services) auf den Button `...`{.action}, der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
+Wenn Sie einen Ihrer Dienste nicht mehr nutzen möchten, können Sie ihn kündigen, die Verlängerung auf den manuellen Modus umstellen oder ihn sofort von der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) aus löschen. Klicken Sie auf den Button `...`{.action}, der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
 
 - `Verlängerung konfigurieren`{.action}: Auf dem folgenden Bildschirm können Sie den `Verlängerungsart` Ihrer Dienstleistung auf `Manuell` umstellen. Klicken Sie anschließend auf `Weiter`{.action} und `Bestätigen`{.action}. Vor Ablauf Ihrer Dienstleistung erhalten Sie mehrere Benachrichtigungen per E-Mail. Wenn Sie Ihren Dienst nicht verlängern, wird er **endgültig** gelöscht.
 - `Meinen Dienst kündigen`{.action}: Geben Sie im folgenden Fenster die Gründe für Ihre Kündigungsanfrage ein und klicken Sie dann auf `Bestätigen`{.action}. Am Ablaufdatum Ihrer Dienstleistung wird diese **endgültig** gelöscht.

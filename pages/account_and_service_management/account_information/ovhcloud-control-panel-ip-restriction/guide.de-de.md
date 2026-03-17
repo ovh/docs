@@ -27,7 +27,7 @@ Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Konto-Sicherheit](/links/control-panel/account-security)
+- **Direkter Link:** [Sicherheit](/links/control-panel/account-security)
 - **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Sicherheit`{.action}
 
 ---

@@ -86,7 +86,7 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 You can change your account information. Go to your [user profile](/links/control-panel/account-profile).
 
-Edit your details, then click `Confirm`{.action}.
+Edit your details, then click `Save changes`{.action}.
 
 > [!warning]
 >

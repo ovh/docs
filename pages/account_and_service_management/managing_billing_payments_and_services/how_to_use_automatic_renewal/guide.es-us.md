@@ -124,7 +124,7 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 
 ## Procedimiento
 
-Abra la página [Mis servicios](/links/control-panel/billing-services).
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

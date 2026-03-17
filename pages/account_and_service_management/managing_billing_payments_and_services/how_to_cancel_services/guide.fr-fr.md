@@ -87,8 +87,8 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -101,7 +101,7 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
-Pour résilier l'abonnement à votre service, ouvrez la page [Mes services](/links/control-panel/billing-services).
+Pour résilier l'abonnement à votre service, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 ![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -206,7 +206,7 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
-Pour annuler une demande de résiliation, ouvrez la page [Mes services](/links/control-panel/billing-services).
+Pour annuler une demande de résiliation, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
@@ -241,7 +241,7 @@ Vous devez effectuer la procédure de résiliation pour chaque service de façon
 
 La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
 
-1. Vous n'avez plus de services visibles dans la section « [Mes offres & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+1. Vous n'avez plus de services visibles dans la section « [Mes offres et services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
 2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
 3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

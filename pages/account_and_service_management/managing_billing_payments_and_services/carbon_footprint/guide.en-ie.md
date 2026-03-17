@@ -19,8 +19,8 @@ As part of your professional activities or out of interest on the subject, you m
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Navigation path:** Click your name in the top right > `Account dashboard`{.action}
+- **Direct link:** [My account](/links/control-panel/account-dashboard)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -66,7 +66,7 @@ Please note the following information:
 
 ### Retrieving the monthly carbon footprint report for the previous month via the OVHcloud Control Panel
 
-1. On the [Account dashboard](/links/control-panel/account-dashboard), scroll down to the **Useful links** section in the left-hand column, then click on the `My carbon footprint`{.action} tab.
+1. On the [My account](/links/control-panel/account-dashboard), scroll down to the **Useful links** section in the left-hand column, then click on the `My carbon footprint`{.action} tab.
 1. On the new page that appears, click `Download my [Month] [Year] footprint`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

@@ -86,7 +86,7 @@ Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie ko
 
 Możesz zmienić informacje o swoim koncie. Przejdź do swojego [profilu użytkownika](/links/control-panel/account-profile).
 
-Zmień dane, a następnie kliknij przycisk `Potwierdź`{.action}.
+Zmień dane, a następnie kliknij przycisk `Zapisz zmiany`{.action}.
 
 > [!warning]
 >

@@ -19,8 +19,8 @@ Im Rahmen Ihrer beruflichen Tätigkeit oder aus Interesse an dem Thema müssen S
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Konto-Dashboard](/links/control-panel/account-dashboard)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Konto-Dashboard`{.action}
+- **Direkter Link:** [Mein Account](/links/control-panel/account-dashboard)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -67,7 +67,7 @@ Dabei sind mehrere Punkte zu beachten:
 
 ### Abrufen der monatlichen Bilanz des Vormonats über das OVHcloud Kundencenter
 
-1. Auf dem [Konto-Dashboard](/links/control-panel/account-dashboard) gehen Sie in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
+1. Auf dem [Mein Account](/links/control-panel/account-dashboard) gehen Sie in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
 1. Klicken Sie auf der neu geöffneten Seite auf `Meinen CO2-Fußabdruck von [Monat] [Jahr] herunterladen`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

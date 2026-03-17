@@ -90,9 +90,7 @@ Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser s
 
 Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
-![identifiant client](images/edit-profile.png){.thumbnail}
-
-Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
+Modifiez vos informations, puis cliquez sur le bouton `Enregistrer les modifications`{.action}.
 
 > [!warning]
 >

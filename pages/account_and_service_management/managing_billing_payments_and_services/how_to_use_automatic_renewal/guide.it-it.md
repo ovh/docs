@@ -122,7 +122,7 @@ Questa guida ti mostra come:
 
 ## Procedura
 
-Apri la pagina [I miei servizi](/links/control-panel/billing-services).
+Apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

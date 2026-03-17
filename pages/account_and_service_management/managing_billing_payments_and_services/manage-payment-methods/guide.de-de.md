@@ -17,7 +17,7 @@ Ihr OVHcloud Kunden-Account ermöglicht Ihnen, verschiedene Zahlungsarten zu hin
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Meine Zahlungsarten](/links/control-panel/billing-payment-methods)
+- **Direkter Link:** [Zahlungsarten](/links/control-panel/billing-payment-methods)
 - **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Zahlungsarten`{.action}
 
 ---

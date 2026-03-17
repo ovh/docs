@@ -32,13 +32,13 @@ Si no renueva el servicio antes de la fecha de expiración, este se suspenderá 
 
 #### Ideas y consejos
 
-Para consultar el estado de sus servicios, abra la página [Mis servicios](/links/control-panel/billing-services).
+Para consultar el estado de sus servicios, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 Para renovar sus servicios manualmente, acceda a la página <https://www.ovh.es/cgi-bin/order/renew.cgi>.
 Para más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Cómo activar la renovación automática?
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
 
 #### Ideas y consejos
 
@@ -47,7 +47,7 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo desactivar la renovación automática?
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio que desee configurar, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque está opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que desee configurar, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque está opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
 
 Para dar de baja un servicio, consulte la página [¿Cómo dar de baja un servicio?](#cancelservice)
 
@@ -92,13 +92,13 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Cuál es la fecha del próximo pago?
 
-Para consultar todas las fechas de renovación, abra la página [Mis servicios](/links/control-panel/billing-services).
+Para consultar todas las fechas de renovación, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 
 Las soluciones que tengan activada la renovación automática se renovarán el primer día del mes. La frecuencia puede variar según el servicio.
 
 #### Ideas y consejos
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones.
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones.
 Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
@@ -144,7 +144,7 @@ Tanto los pagos realizados a través de nuestro sitio web como las renovaciones 
 
 ### ¿Cómo dar de baja un servicio? <a name="cancelservice"></a>
 
-Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
+Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
 
 La baja será efectiva una vez finalizado el período de validez o de compromiso del servicio. Puede realizar la solicitud o cancelarla hasta 24 horas antes de la fecha de expiración.
 

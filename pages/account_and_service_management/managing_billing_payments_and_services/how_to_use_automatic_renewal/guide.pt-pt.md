@@ -122,7 +122,7 @@ Este manual permitir-lhe-á:
 
 ## Instruções
 
-Abra a página [Os meus serviços](/links/control-panel/billing-services).
+Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

@@ -27,7 +27,7 @@ OVHcloud ti offre la possibilità di creare utenti locali che possano eseguire o
 ### Accesso allo Spazio Cliente OVHcloud
 
 - **Link diretto:** [IAM Identities](/links/control-panel/iam-identities)
-- **Percorso di navigazione:** `Identity, Security & Operations`{.action} > `Identità`{.action}
+- **Percorso di navigazione:** `Identità, sicurezza e operazioni`{.action} > `Identità`{.action}
 
 ---
 <!-- CP-NAV-END:iam-identities -->

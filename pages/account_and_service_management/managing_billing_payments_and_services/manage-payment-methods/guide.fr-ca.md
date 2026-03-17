@@ -19,7 +19,7 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Mes moyens de paiement](/links/control-panel/billing-payment-methods)
+- **Lien direct :** [Moyens de paiement](/links/control-panel/billing-payment-methods)
 - **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes moyens de paiement`{.action}
 
 ---

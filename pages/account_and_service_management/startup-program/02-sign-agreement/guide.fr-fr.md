@@ -19,8 +19,8 @@ Pour participer au Startup Program d'OVHcloud, la signature du contrat est une �
 
 ### Accès à l’espace client OVHcloud
 
-- **Lien direct :** [Mes offres & services](/links/control-panel/billing-services)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres & services`{.action}
+- **Lien direct :** [Mes offres et services](/links/control-panel/billing-services)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes offres et services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -31,7 +31,7 @@ Pour participer au Startup Program d'OVHcloud, la signature du contrat est une �
 
 Vous devez accéder au contrat directement dans votre espace client.
 
-Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Dans [Mes offres & services](/links/control-panel/billing-services), sélectionnez l’onglet `Contrats`{.action}.
+Assurez-vous de vous connecter avec le compte que vous avez utilisé pour l’inscription au Startup Program. Dans [Mes offres et services](/links/control-panel/billing-services), sélectionnez l’onglet `Contrats`{.action}.
 
 ![mes services - contrats](images/02-services-contracts.png){.thumbnail}
 

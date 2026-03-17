@@ -19,8 +19,8 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Tableau de bord du compte](/links/control-panel/account-dashboard)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Tableau de bord`{.action}
+- **Lien direct :** [Mon compte](/links/control-panel/account-dashboard)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -66,7 +66,7 @@ Plusieurs points sont à prendre en compte :
 
 ### Récupérer le bilan mensuel du mois précédent via l'espace client OVHcloud
 
-1. Sur le [Tableau de bord du compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
+1. Sur le [Mon compte](/links/control-panel/account-dashboard), dans la colonne de gauche, descendez jusqu'à la section contenant les **Liens utiles**, puis cliquez sur l'onglet `Mon bilan carbone`{.action}.
 1. Sur la nouvelle page qui apparaît, cliquez sur `Télécharger mon empreinte de [Mois] [Année]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}

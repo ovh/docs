@@ -17,7 +17,7 @@ A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de paga
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods)
+- **Ligação direta:** [Métodos de pagamento](/links/control-panel/billing-payment-methods)
 - **Caminho de navegação:** Clique no seu nome no canto superior direito > `Os meus métodos de pagamento`{.action}
 
 ---

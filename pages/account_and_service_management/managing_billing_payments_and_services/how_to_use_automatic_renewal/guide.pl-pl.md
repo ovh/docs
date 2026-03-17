@@ -122,7 +122,7 @@ Z tego przewodnika dowiesz się:
 
 ## W praktyce
 
-Otwórz stronę [Moje usługi](/links/control-panel/billing-services).
+Otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

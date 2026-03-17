@@ -101,7 +101,7 @@ Esistono tuttavia **casi particolari**, descritti in dettaglio [più in basso](#
 
 ### Come disattivare l’abbonamento <a name="terminate"></a>
 
-Per disattivare l’abbonamento al servizio, apri la pagina [I miei servizi](/links/control-panel/billing-services).
+Per disattivare l’abbonamento al servizio, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -185,7 +185,7 @@ Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pa
 > Puoi annullare una richiesta di disattivazione del servizio fino a 24 ore prima della data di scadenza dell'abbonamento.
 >
 
-Per annullare una richiesta di disattivazione, apri la pagina [I miei servizi](/links/control-panel/billing-services).
+Per annullare una richiesta di disattivazione, apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio richiesto e seleziona `Annulla la disattivazione del servizio`{.action} 
 

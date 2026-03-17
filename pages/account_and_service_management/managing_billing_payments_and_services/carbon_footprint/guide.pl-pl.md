@@ -19,8 +19,8 @@ W związku z Twoją działalnością lub zainteresowaniem tym tematem może być
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Account dashboard`{.action}
+- **Link bezpośredni:** [Moje konto](/links/control-panel/account-dashboard)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->

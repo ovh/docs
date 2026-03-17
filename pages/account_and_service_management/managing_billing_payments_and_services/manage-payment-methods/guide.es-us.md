@@ -17,7 +17,7 @@ En el área de cliente de OVHcloud, puede registrar y gestionar diferentes forma
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Mis formas de pago](/links/control-panel/billing-payment-methods)
+- **Enlace directo:** [Formas de pago](/links/control-panel/billing-payment-methods)
 - **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis formas de pago`{.action}
 
 ---

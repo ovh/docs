@@ -87,8 +87,8 @@ Before cancelling a service, you must be **certain**:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My services](/links/control-panel/billing-services)
-- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -101,7 +101,7 @@ However, there are **special cases** that are detailed [below](#specific-cases) 
 
 ### How do I cancel my subscription? <a name="terminate"></a>
 
-To cancel your service subscription, open the [My services](/links/control-panel/billing-services) page.
+To cancel your service subscription, open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -159,7 +159,7 @@ You can also [view your current resource usage](/pages/public_cloud/public_cloud
 > You can revoke a cancellation request up to 24 hours before the subscription end date.
 >
 
-To abort a cancellation request, open the [My services](/links/control-panel/billing-services) page.
+To abort a cancellation request, open the [My offers and services](/links/control-panel/billing-services) page.
 
 Next, click the `...`{.action} button to the right of the service for which a cancellation request is being made, then `Stop cancellation of service`{.action}
 

@@ -122,7 +122,7 @@ Folgende Themen werden erläutert:
 
 ## In der praktischen Anwendung
 
-Öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
+Öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
