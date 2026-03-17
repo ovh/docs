@@ -154,7 +154,10 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Dans la nouvelle page qui s'ouvre et si vous disposez de plusieurs solutions Logs Data Platform dans votre [espace client OVHcloud](/links/manager), sélectionnez, dans la liste déroulante située juste en dessous du bouton intitulé `Ajouter un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
+>> Dans la nouvelle page qui s'ouvre :
+>>
+>> - Sélectionnez également le **Type de logs** que vous souhaitez abonner.
+>> - Si vous disposez de plusieurs solutions Logs Data Platform dans votre espace client OVHcloud, sélectionnez, dans la liste déroulante située juste au dessus du bouton intitulé `Créer un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
 >>
 >> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/data-stream.png){.thumbnail}
 >>
@@ -192,13 +195,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Étape 4**
 >>
->> Dans la nouvelle page qui s'ouvre et si vous disposez de plusieurs solutions Logs Data Platform dans votre [espace client OVHcloud](/links/manager), sélectionnez, dans la liste déroulante située juste en dessous du bouton intitulé `Ajouter un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
+>> Dans la nouvelle page qui s'ouvre :
+>>
+>> - Sélectionnez également le **Type de logs** que vous souhaitez abonner.
+>> - Si vous disposez de plusieurs solutions Logs Data Platform dans votre espace client OVHcloud, sélectionnez, dans la liste déroulante située juste au dessus du bouton intitulé `Créer un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
 >>
 >> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/data-stream.png){.thumbnail}
 >>
 > **Étape 5**
 >>
->> Si le flux concerné n'existe pas encore, cliquez sur le bouton `Ajouter un flux de données`{.action}.
+>> Si le flux concerné n'existe pas encore, cliquez sur le bouton `Créer un flux de données`{.action}.
 >> Une nouvelle page s'ouvre pour créer un flux de données sur votre solution Logs Data Platform.
 >>
 >> ![Log Data Platform](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png){.thumbnail}
