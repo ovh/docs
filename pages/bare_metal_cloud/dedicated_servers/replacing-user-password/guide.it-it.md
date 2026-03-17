@@ -20,7 +20,7 @@ In questo caso, è possibile accedere al server tramite la modalità Rescue di O
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
-
+
 
 > [!primary]
 >
