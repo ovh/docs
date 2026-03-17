@@ -83,8 +83,6 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section. Next, open the `vRack`{.action} menu.
-
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -103,7 +101,6 @@ The default public bandwidth can be changed when ordering a new Additional IP bl
 
 To order a new Additional IP block:
 
-- Log in to the [OVHcloud Control Panel](/links/manager).
 - Open the `Network`{.action} section in the left-hand sidebar.
 - Select `Public IP addresses`{.action}.
 - Click on the `Order IPs`{.action} button, near the top of the page.
@@ -122,8 +119,6 @@ For Additional IP blocks already attached to a vRack, bandwidth can be managed d
 
 To access the management interface:
 
-- Open `Network`{.action} in the left-hand sidebar of your Control Panel.
-- Select `vRack private network`{.action}.
 - In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
 
 The management page is organized into two tabs:

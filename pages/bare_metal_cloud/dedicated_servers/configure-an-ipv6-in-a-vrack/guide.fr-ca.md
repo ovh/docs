@@ -60,16 +60,16 @@ En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuv
 - Un service [vRack](/links/network/vrack) actif sur votre compte
 - Un [serveur compatible vRack](/links/network/vrack) connecté à votre réseau vRack
 
-<!-- CP-NAV-START:baremetal-dedicated-servers -->
+<!-- CP-NAV-START:network-vrack -->
 ---
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
-- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
 
 ---
-<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](/links/bare-metal/eco-about).
@@ -105,10 +105,6 @@ L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack config
 La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridgé) est la première adresse du bloc /56. Dans cet exemple, la passerelle est `2001:41d0:abcd:ef00::1`. Celle-ci est distribuée via SLAAC, mais doit être configurée manuellement (en tant que route par défaut) si le SLAAC est désactivé (voir la section **Configuration IP statique** ci-dessous).
 
 /// details | Via l'espace client OVHcloud
-
-- Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
-- Cliquez sur `Réseau Privé vRack`{.action}.
-- Sélectionnez le vRack concerné.
 
 ![vrack management](images/700.png){.thumbnail}
 

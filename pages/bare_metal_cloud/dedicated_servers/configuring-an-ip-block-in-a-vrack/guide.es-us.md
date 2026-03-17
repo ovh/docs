@@ -49,7 +49,17 @@ Además del direccionamiento IP privado, el [vRack](/links/network/vrack) tambi�
 - Su rango de direcciones IP privadas elegido
 - Un [servidor compatible con vRack](/links/bare-metal/bare-metal)
 - Un servicio [vRack](/links/network/vrack) activado en su cuenta
-- Acceso al [área de cliente de OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [vRack](/links/control-panel/network-vrack)
+- **Ruta de navegación:** `Network`{.action} > `Red privada vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Es posible que esta funcionalidad no esté disponible o esté limitada en los [servidores dedicados de la línea de productos **Eco**](/links/bare-metal/eco-about).
@@ -73,8 +83,6 @@ Además del direccionamiento IP privado, el [vRack](/links/network/vrack) tambi�
 > Esta configuración le permite configurar IPs del mismo bloque en varios servidores, siempre que todos estos servidores estén en el mismo vRack que el bloque de IP. El bloque de IP debe tener al menos 2 IPs utilizables o más para que esto sea posible.
 >
 
-En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Network`{.action}. A continuación, abra el menú `vRack`{.action}.
-
 Seleccione su vRack de la lista para mostrar la lista de servicios elegibles. Haga clic en el bloque de IP que desea añadir al vRack y luego haga clic en el botón `Añadir`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -93,7 +101,6 @@ Puede modificar el ancho de banda predeterminado al pedir un nuevo bloque de Add
 
 Para pedir un nuevo bloque de Additional IP:
 
-- Inicie sesión en el [área de cliente de OVHcloud](/links/manager).
 - En la barra lateral izquierda, acceda a la sección `Network`{.action}.
 - Seleccione `Direcciones IP públicas`{.action}.
 - Haga clic en el botón `Pedir IPs`{.action} en la parte superior de la página.
@@ -112,8 +119,6 @@ Para los bloques de Additional IP ya asociados a un vRack, el ancho de banda se 
 
 Para acceder a la interfaz de gestión:
 
-- En la barra lateral izquierda del Panel de control, abra `Network`{.action}.
-- Seleccione `Red privada vRack`{.action}.
 - En la columna "Dirección IP pública y ancho de banda", haga clic en el botón `Gestionar`{.action} correspondiente al vRack deseado.
 
 La interfaz de gestión se divide en dos pestañas:

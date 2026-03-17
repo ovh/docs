@@ -83,8 +83,6 @@ En plus de l'adressage IP privé, le [vRack](/links/network/vrack) vous permet d
 > Cette configuration permet de configurer des IP d'un même bloc sur plusieurs serveurs, à condition que ces serveurs soient tous dans le même vRack que le bloc IP. Le bloc IP doit avoir au moins 2 adresses IPs utilisables ou plus pour que cela soit possible.
 >
 
-Dans votre [espace client OVHcloud](/links/manager), allez dans la section `Network`{.action}. Ensuite, ouvrez le menu `vRack`{.action}.
-
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc IP que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -103,7 +101,6 @@ Vous pouvez modifier la bande passante par défaut au moment de commander un nou
 
 Pour commander un nouveau bloc d'Additional IP :
 
-- Connectez-vous à [l'espace client OVHcloud](/links/manager).
 - Dans la barre latérale gauche, accédez à la section `Network`{.action}.
 - Sélectionnez `Adresses IP Publiques`{.action}.
 - Cliquez sur le bouton `Commander des IPs`{.action} en haut de la page.
@@ -122,8 +119,6 @@ Pour les blocs d'Additional IP déjà rattachés à un vRack, la bande passante 
 
 Pour accéder à l'interface de gestion :
 
-- Dans la barre latérale gauche du Tableau de bord, ouvrez `Network`{.action}.
-- Sélectionnez `Réseau Privé vRack`{.action}.
 - Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
 
 L'interface de gestion se divise en deux onglets :
