@@ -1,7 +1,7 @@
 ---
 title: Limites connues
 excerpt: 'Exigences et limites à respecter'
-updated: 2026-03-16
+updated: 2026-03-17
 ---
 
 <style>
@@ -273,7 +273,7 @@ Par défaut, les plages suivantes sont utilisées par le cluster et ne doivent p
 10.3.0.0/16 # Sous-réseau utilisé par les services
 ```
 
-Ces plages peuvent toutefois être personnalisées lors de la création d'un cluster ou lors de la réinitialisation d'un cluster existant en suivant ce guide : [Configuration de l'allocation IP des pods et services sur OVHcloud Managed Kubernetes (offre Standard uniquement)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
+Ces plages peuvent toutefois être personnalisées lors de la création d'un cluster ou lors de la réinitialisation d'un cluster existant en suivant ce guide : [Personnaliser l'allocation IP sur un cluster OVHcloud Managed Kubernetes (plan Standard uniquement)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
 
 > [!warning]
 >
