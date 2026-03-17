@@ -11,8 +11,18 @@ OVHcloud Public Cloud Databases offer different generations to meet varying need
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 - An existing Gen 2 database service deployed
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Why migrate to Gen 3?
 
@@ -31,7 +41,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To move a database service from Gen 2 to Gen 3, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
+>> Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
 >>
 >> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png){.thumbnail}
 >>

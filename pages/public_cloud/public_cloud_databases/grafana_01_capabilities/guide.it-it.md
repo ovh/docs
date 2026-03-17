@@ -10,6 +10,19 @@ This page provides the technical capabilities and limitations of the Public Clou
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
+## Requirements
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Capabilities and limitations
 
 ### Supported regions and multi-AZ
@@ -37,7 +50,6 @@ The Public Cloud Databases offer supports the following Dashboards versions:
 - Grafana® open source 11.2
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana® Release Cycle on their official page: <https://grafana.com/>.
-
 
 ### Dashboards clients
 

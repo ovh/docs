@@ -16,6 +16,19 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 - Access to the [OVHcloud API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
+
 ## Instructions
 
 ### Step 1: Gather the OVHcloud required parameters

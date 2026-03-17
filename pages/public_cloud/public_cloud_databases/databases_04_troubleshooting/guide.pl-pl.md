@@ -11,6 +11,21 @@ Each service is powered by third-party databases management systems (DBMS), main
 
 **This guide explains how to troubleshoot common issues.**
 
+## Requirements
+
+- A [Public Cloud database service](/links/public-cloud/databases) up and running
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### I can't connect to Public Cloud Databases
 
 If you are unable to connect to Public Cloud Databases, please ensure the following:

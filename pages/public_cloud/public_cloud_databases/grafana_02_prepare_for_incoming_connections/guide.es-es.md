@@ -13,8 +13,18 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Dashboards service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -22,7 +32,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Before making a connection, we need to verify that our Dashboards instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Data Anlaysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
+Click on `Data Anlaysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -53,7 +63,7 @@ You can edit and retract database access via the `...`{.action} button in the IP
 
 ### Connect to your Dashboards Instance
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance, to collect the URI in the `Login informations` section of the `General information`{.action} tab.
+Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance, to collect the URI in the `Login informations` section of the `General information`{.action} tab.
 
 ![Login information tab](images/grafana_02_prepare_for_incoming_connections-20220530065929522.png){.thumbnail}
 

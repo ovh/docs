@@ -8,6 +8,19 @@ updated: 2026-02-17
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for MongoDB offer.
 
+## Requirements
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Capabilities and limitations
 
 ### Supported regions
