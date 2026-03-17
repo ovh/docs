@@ -1,8 +1,22 @@
 ---
 title: 'Hébergement web - Comment activer et gérer les logs ?'
 excerpt: 'Découvrez comment activer et gérer les logs de vos sites web ou vos applications présentes sur votre hébergement web'
-updated: 2026-02-02
+updated: 2026-03-17
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -18,12 +32,12 @@ Par exemple, un log peut enregistrer et contenir un ou plusieurs des éléments 
 La plupart du temps, les logs sont générés directement par les systèmes informatiques où les événements se réalisent.
 Ils sont stockés et historisés dans des fichiers textes également appelés fichiers de logs.
 
-De ce fait, les fichiers de logs permettent d'effectuer les actions suivantes :
+De ce fait, les fichiers de logs permettent de :
 
 - Analyser le comportement du système informatique générant les logs.
 - Identifier les erreurs survenues sur le système informatique.
 - Résoudre les erreurs rencontrées sur le système informatique.
-- Optimiser et améliorer les performances du système informatique.
+- Optimiser les performances du système informatique.
 
 Votre offre [d'hébergement web](/links/web/hosting) génère donc ses propres logs.
 
@@ -41,29 +55,44 @@ Dans certaines situations, vous pouvez être amené à consulter / récupérer l
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
 ### Visualiser les logs en temps réel de votre hébergement web
 
-Pour accéder aux logs en temps réel de votre hébergement web, effectuez les actions suivantes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur l'onglet `Web Cloud`{.action}.
-3. Dans la colonne de gauche, cliquez sur le menu `Hébergements`{.action}.
-4. Sélectionnez l'hébergement web concerné.
-5. Sur la page qui s'affiche, cliquez sur l'onglet `Logs`{.action}.
-
-![Web hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab.png){.thumbnail}
-
-C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre offre d'hébergement web.
-
-> [!primary]
->
-> Comme précisé ci-dessus, les logs ne sont disponibles ici qu'en temps réel. Cela signifie que ces logs n'apparaîtront que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}.
->
-> Si vous quittez l'onglet `Logs`{.action} puis revenez dessus ultérieurement, l'historique qui s'affichait auparavant aura disparu.
+> [!tabs]
+> **Étape 1**
+>>
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Logs`{.action}.
+>>
+>> ![Logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab.png){.thumbnail}
+>>
+>> Cette console intégrée affiche les logs en temps réel de votre offre d'hébergement web.
+>>
+>> > [!primary]
+>> >
+>> > Les logs ne sont disponibles qu'en temps réel. Ils n'apparaissent que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}.
+>> >
+>> > Si vous quittez l'onglet `Logs`{.action} puis revenez dessus ultérieurement, l'historique précédent aura disparu.
 
 ### Abonner les logs de votre offre d'hébergement web à Logs Data Platform <a name="webhosting-ldp"></a>
 
@@ -80,56 +109,113 @@ Pour plus de détails sur Logs Data Platform, consultez notre guide d'[introduct
 
 Du fait que les offres [d'hébergement web](/links/web/hosting) peuvent être utilisées avec de nombreux services (bases de données, etc.), celles-ci peuvent, en complément des logs en temps réel déjà disponibles, être abonnées par flux de données à Logs Data Platform.
 
-Avec les offres d'hébergement web, vous disposez gratuitement de **1 Go** de rétention de logs. Pour en bénéficier, vous devrez [activer votre compte Log Data Platform gratuitement](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) et abonner votre hébergement web à un flux de données.
+Avec un compte Logs Data Platform, vous disposez gratuitement de **1 Go** de rétention de logs. Pour en bénéficier, vous devez [activer gratuitement votre compte Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) et abonner votre hébergement web à un flux de données.
 
 > [!alert]
 >
-> En fonction des logs générés par votre hébergement web, les **1 Go** de données peuvent être consommés plus ou moins rapidement.
+> En fonction :
+>
+> - Des logs générés par votre hébergement web
+> - Du nombre d'hébergements web abonnés à votre compte Log Data Platform
+>
+> les **1 Go** de données peuvent être consommés plus ou moins rapidement.
 >
 > En effet et en fonction de vos usages, cette consommation de données peut représenter un volume de logs pouvant aller de quelques jours jusqu'à quelques mois voire années.
 >
-> Si vous souhaitez disposer d'un volume supérieur à **1 Go** pour la rétention de vos logs, vous pourrez souscrire à une offre payante complémentaire.
+> Si vous souhaitez disposer d'un volume supérieur à **1 Go** pour la rétention de vos logs, vous pouvez souscrire à une offre payante complémentaire.
 
-Pour abonner votre offre d'hébergement web à un flux de données sur Logs Data Platform, effectuez les actions suivantes :
+Pour abonner votre offre d'hébergement web à un flux de données sur Logs Data Platform, 2 cas de figure peuvent se présenter :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Cliquez sur l'onglet `Web Cloud`{.action}.
-3. Dans la colonne de gauche, cliquez sur le menu `Hébergements`{.action}.
-4. Sélectionnez l'hébergement web concerné.
-5. Sur la page qui s'affiche, cliquez sur l'onglet `Logs`{.action}.
-6. Sur la droite de l'encadré où s'affichent vos logs en temps réel, cliquez sur le bouton `S'abonner`{.action}.
+**Cliquez sur l'un des 2 cas ci-dessous pour afficher le contenu**
 
-![Log Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab-subscribe.png){.thumbnail}
+<a name="webhosting-ldp-case1"></a>
+/// details | Cas n°1 - S'abonner à un flux déjà existant sur votre solution Logs Data Platform
 
-Dans la nouvelle page qui s'ouvre et si vous disposez de plusieurs solutions Logs Data Platform dans votre [espace client OVHcloud](/links/manager), sélectionnez, dans la liste déroulante située juste en dessous du bouton intitulé `Ajouter un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-![Log Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/data-stream.png){.thumbnail}
+> [!tabs]
+> **Étape 1**
+>>
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Logs`{.action}.
+>>
+>> ![Logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la droite de l'encadré où s'affichent vos logs en temps réel, cliquez sur le bouton `S'abonner`{.action}.
+>>
+>> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab-subscribe.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans la nouvelle page qui s'ouvre et si vous disposez de plusieurs solutions Logs Data Platform dans votre [espace client OVHcloud](/links/manager), sélectionnez, dans la liste déroulante située juste en dessous du bouton intitulé `Ajouter un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
+>>
+>> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/data-stream.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Si le flux concerné existe déjà, celui-ci apparaît sous la forme d'une ligne dans le tableau situé en bas de page.
+>> Dans ce cas précis et pour abonner votre offre d'hébergement web à ce flux existant, il vous suffit de cliquer sur le bouton `S'abonner`{.action} situé à droite de la ligne correspondant au flux concerné.
+>>
+>> Au bout de quelques secondes et si vous restez sur la même page, un message confirmera la création de l'abonnement.
 
-Deux cas de figure se présentent alors pour abonner votre offre d'hébergement web.
+///
 
-#### Cas n°1 - S'abonner à un flux déjà existant sur votre solution Logs Data Platform <a name="webhosting-ldp-case1"></a>
+/// details | Cas n°2 - S'abonner à un nouveau flux de données sur votre solution Logs Data Platform
 
-Si le flux concerné existe déjà, celui-ci apparaît sous la forme d'une ligne dans le tableau situé en bas de page.
-Dans ce cas précis et pour abonner votre offre d'hébergement web à ce flux existant, il vous suffit de cliquer sur le bouton `S'abonner`{.action} situé à droite de la ligne correspondant au flux concerné.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes.
 
-Au bout de quelques secondes et si vous restez sur la même page, un message apparaîtra dans votre espace client pour vous indiquer que l'abonnement a été créé avec succès.
+> [!tabs]
+> **Étape 1**
+>>
+>> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur l'onglet `Logs`{.action}.
+>>
+>> ![Logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sur la droite de l'encadré où s'affichent vos logs en temps réel, cliquez sur le bouton `S'abonner`{.action}.
+>>
+>> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/tab-subscribe.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Dans la nouvelle page qui s'ouvre et si vous disposez de plusieurs solutions Logs Data Platform dans votre [espace client OVHcloud](/links/manager), sélectionnez, dans la liste déroulante située juste en dessous du bouton intitulé `Ajouter un flux de données`, la référence de la Logs Data Platform avec laquelle vous souhaitez vous abonner.
+>>
+>> ![Logs Data Platform](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/logs/data-stream.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Si le flux concerné n'existe pas encore, cliquez sur le bouton `Ajouter un flux de données`{.action}.
+>> Une nouvelle page s'ouvre pour créer un flux de données sur votre solution Logs Data Platform.
+>>
+>> ![Log Data Platform](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png){.thumbnail}
+>>
+>> Si besoin, consultez nos guides « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) » (EN) et « [Démarrer rapidement avec Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN) pour réaliser ces actions.
+>>
+> **Étape 6**
+>>
+>> Une fois les formulaires renseignés, cliquez sur le bouton `Sauvegarder`{.action}.
+>>
+>> Vous serez ensuite redirigé vers l'onglet `Flux de données` de votre solution Logs Data Platform.
+>>
+>> Il ne vous reste plus qu'à abonner votre hébergement web à votre flux nouvellement créé sur votre solution Logs Data Platform.
+>>
+>> Pour effectuer cela et, comme expliqué [précédemment](#webhosting-ldp), retournez dans l'onglet `Logs`{.action} de votre offre d'hébergement web pour vous abonner à ce nouveau flux de données, puis suivez cette fois-ci le [Cas n°1](#webhosting-ldp-case1) décrit plus haut.
 
-#### Cas n°2 - S'abonner à un nouveau flux de données sur votre solution Logs Data Platform
-
-Si le flux concerné n'existe pas encore, cliquez sur le bouton `Ajouter un flux de données`{.action}.
-Vous serez alors redirigé vers une nouvelle page de votre espace client OVHcloud qui vous permettra de créer et d'ajouter un nouveau flux de données sur votre solution Logs Data Platform.
-
-![Log Data Platform](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/logs-data-platform/data-stream/add-data-stream.png){.thumbnail}
-
-Si besoin, consultez nos guides « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) » (EN) et « [Démarrer rapidement avec Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN) pour réaliser ces actions.
-
-Une fois les différents formulaires et informations renseignés, cliquez sur le bouton `Sauvegarder`{.action}.
-
-Vous serez ensuite redirigé vers l'onglet `Flux de données` de votre solution Logs Data Platform.
-
-Il ne vous reste plus qu'à abonner votre hébergement web à votre flux nouvellement créé sur votre solution Logs Data Platform.
-
-Pour effectuer cela et, comme expliqué [précédemment](#webhosting-ldp), retournez dans l'onglet `Logs`{.action} de votre offre d'hébergement web pour vous abonner à ce nouveau flux de données, puis suivez cette fois-ci le [Cas n°1](#webhosting-ldp-case1) décrit plus haut.
+///
 
 ## Aller plus loin <a name="go-further"></a>
 
