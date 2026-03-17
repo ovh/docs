@@ -70,7 +70,7 @@ To configure the Game Firewall for your Bare Metal Game server, log in to the OV
 >> - Open the `Bare Metal Cloud`{.action} section in the left-hand sidebar.
 >> - Select `Dedicated servers`{.action}.
 >> - Click on the Game server you wish to configure to open its management page.
->> - In the `Network` section of the `General information` tab, find the "Game Anti-DDoS protection" section.
+>> - In the `Network` section of the `General information` tab, find the "Game DDoS protection" section.
 >> - Click the `⁝`{.action} button and select `Configure Game Protection`. You will be taken to the list of IP addresses assigned to your server.
 > From the **Public IP Addresses** page
 >> - Open the `Network`{.action} section in the left-hand sidebar.
