@@ -12,8 +12,18 @@ With OVHcloud email services, you can set up professional email addresses. To ma
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting))
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 
@@ -22,13 +32,17 @@ The security policy management of your E-mail service has 2 aspects:
 - enhancing E-mail account security when users try to log in
 - adding complexity to the security of your E-mail service account passwords
 
-Click on `MX Plan`{.action} , then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.
+To access the security policy of your email service, follow the instructions below.
 
-On the page that appears, click on the `Security`{.action} tab.
+Click on the `More` tab, then on `Manage security policy`{.action}.
 
-![email security](images/manage-security01.png)
+![email security](images/manage-security01.png){.thumbnail}
 
-![email security](images/manage-security02.png)
+> [!primary]
+>
+> If you do not see the `More`{.action} tab appear in the control panel of your `MX Plan`{.action} service, this means that you are on a legacy MX Plan offer. There is no security policy management on the legacy MX Plan solution.
+
+Continue to the aspect(s) you want to modify.
 
 - [Enhance connection security](#enhanced-security): Define whether accounts should lock after a number of unsuccessful log-in attempts.
 - [Add complexity to the security of passwords](#password-complexity): Define a complexity requirement, as well as rules for changing passwords.

@@ -1,6 +1,6 @@
 ---
 title: "Valider votre identité pour l'utilisation des services VoIP"
-excerpt: 'Découvrez comment valider votre compte OVHcloud suite à votre première commande de services VoIP'
+excerpt: "Découvrez comment valider votre compte OVHcloud suite à votre première commande de services VoIP"
 updated: 2026-01-20
 ---
 
@@ -16,10 +16,22 @@ updated: 2026-01-20
 Lorsque vous réalisez votre première commande ou que vous souhaitez [changer le contact de facturation](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip) pour vos services de VoIP, une procédure de validation du compte OVHcloud est à réaliser.
 Cette procédure vous permet de valider l'identifiant client sur lequel OVHcloud va réaliser la facturation de vos services VoIP.
 
+**Découvrez comment valider votre compte OVHcloud suite à votre première commande de services VoIP.**
+
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif.
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
@@ -33,11 +45,11 @@ L'objet de l'e-mail reçu est :
 >[**OVH - IMPORTANT**] Nous attendons votre procédure VoIP pour finaliser votre commande.
 >
 
-Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes communications`{.action}.
+Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, cliquez sur votre nom en haut à droite puis sur `Mes communications`{.action}.
 
 ![Mes communications](/pages/assets/screens/control_panel/product-selection/telecom/mes-communications.png){.thumbnail}
 
-Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, connectez-vous à votre [espace client OVHcloud](/links/manager) puis cliquez sur `Télécom`{.action}.
+Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, cliquez sur `Télécom`{.action}.
 
 Un message d'information vous invitera à cliquer sur le lien du formulaire de validation.
 
@@ -53,7 +65,7 @@ Une fois le formulaire validé, son téléchargement au format PDF vous sera pro
 
 ### Réaliser la procédure
 
-La procédure pour les clients français est à renvoyer par **voie postale** obligatoirement avec les **justificatifs demandés**. Dans le cadre de la procédure, les justificatifs demandés sont les suivants:
+La procédure pour les clients français est à renvoyer par **voie postale** obligatoirement avec les **justificatifs demandés**. Dans le cadre de la procédure, les justificatifs demandés sont les suivants :
 
 - **Client particulier :**
     - Dater et signer l'autorisation de prélèvement.
@@ -96,7 +108,7 @@ Les justificatifs à fournir sont :
     - Copie de la publication au Journal Officiel des statuts de l'association.
     - Attestation du président de l'association indiquant que la personne dépositaire du dossier est habilitée à agir au nom de l'association.
 
-### Je n'arrive pas à ouvrir la procédure 
+### Je n'arrive pas à ouvrir la procédure
 
 La procédure est générée au format **PDF**, il vous faut donc utiliser un lecteur de fichiers PDF pour l'ouvrir. Nous vous recommandons d'utiliser **Adobe Acrobat Reader** qui est gratuit et disponible sur Windows, macOS et Linux.
 

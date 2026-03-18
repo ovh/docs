@@ -11,7 +11,17 @@ Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci
 ## Wymagania początkowe
 
 - Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip) itd.)
-- Dostęp do [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Ścieżka nawigacji:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## W praktyce
 
@@ -64,8 +74,6 @@ Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Netw
 - Kolumna **Alerty** może wskazywać aktywne centrum oczyszczania z ikoną ostrzeżenia i odpowiednią wskazówką.
 
 ### Pulpit nawigacyjny zabezpieczeń sieciowych
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Network Security Dashboard`{.action}.
 
 Karta **dziennik centrum oczyszczania** umożliwia pobranie wszystkich informacji o atakach wykrytych w przeszłości (lub w toku).
 

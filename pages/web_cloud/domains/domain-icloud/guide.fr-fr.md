@@ -1,7 +1,7 @@
 ---
-title: 'Comment utiliser un domaine OVHcloud avec iCloud Mail'
+title: 'Comment utiliser un nom de domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
-updated: 2025-08-27
+updated: 2026-02-10
 ---
 
 > [!warning]
@@ -18,9 +18,18 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
 - Un identifiant Apple avec un abonnement **iCloud+**.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -62,7 +71,7 @@ Une fois les enregistrements DNS (MX, CNAME, TXT, DMARC) correctement ajoutés d
 
 Suivez les instructions de la page « Add a domain you own to iCloud Mail on iCloud.com » de la [documentation officielle Apple](https://support.apple.com/guide/icloud/add-a-domain-you-own-mma473945269/icloud). Concentrez-vous sur la section « Step 4: Finish setting up the domain ».
 
-Une fois cette étape terminée, votre domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
+Une fois cette étape terminée, votre nom de domaine personnalisé est pleinement activé et vous pouvez créer jusqu’à 3 adresses par personne, dans le cadre familial.
 
 > [!warning]
 >
@@ -85,7 +94,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### DKIM incomplet
 
-- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS. 
+- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS.
 
 #### Délai de propagation
 

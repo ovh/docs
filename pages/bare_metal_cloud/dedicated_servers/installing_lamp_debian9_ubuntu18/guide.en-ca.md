@@ -13,8 +13,18 @@ Setting up a web server and related software enables your cloud server to host d
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal), a [VPS](/links/bare-metal/vps) or a [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to your service via SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.

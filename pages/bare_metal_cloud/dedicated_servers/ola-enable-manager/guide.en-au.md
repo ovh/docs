@@ -14,8 +14,18 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) from the Advance, Scale, or High Grade ranges in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
@@ -28,7 +38,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ### Configuring OLA in the OVHcloud Control Panel
 
-To start configuring OLA, log in to the [OVHcloud Control Panel](/links/manager) and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} and select your server from the list.
+Click on `Dedicated Servers`{.action} and select your server from the list.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

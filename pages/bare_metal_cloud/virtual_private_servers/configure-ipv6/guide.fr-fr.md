@@ -38,7 +38,18 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 - Disposer d'un [serveur VPS OVHcloud](/links/bare-metal/vps).
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api).
+- Accès à l'[API OVHcloud](/links/api) (facultatif).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## En pratique
 
@@ -51,7 +62,7 @@ Les sections suivantes contiennent des configurations pour les distributions que
 
 La configuration de l'IPv6 sur votre serveur VPS s'effectue en plusieurs étapes. Vous serez régulièrement invité à utiliser des commandes ou à personnaliser la configuration de votre serveur.
 
-Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
+Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, consultez le tableau ci-dessous, qui regroupe les termes utilisés dans cette documentation :
 
 |Terme|Description|Exemple|
 |---|---|---|
@@ -61,12 +72,10 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 
 ### Étape 1 : obtenir les informations réseau nécessaires
 
-La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 assignées à votre serveur. 
+La première étape consiste à récupérer l’adresse IPv6 et la gateway IPv6 assignées à votre serveur. 
 
 > [!tabs]
 > **Via votre espace client**
->>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 >>
 >> L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 >>
@@ -136,7 +145,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l'original en cas de problème.
 >
 
-Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
+Deux méthodes existent pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
 - **pour Debian 11** : utilisez la méthode basée sur le fichier *interfaces* ;
 
@@ -291,7 +300,7 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 
 #### Application persistante sur Red Hat et ses dérivés (CentOS, Rocky Linux & AlmaLinux, etc.) <a name="persistentredhat"></a>
 
-Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
+Deux méthodes existent pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
 - **pour CentOS 7, Rocky Linux & AlmaLinux (8/9)** : Utilisez la méthode basée sur les fichiers *network-scripts* ;
 
@@ -353,7 +362,7 @@ Deux méthodes existente pour configurer votre réseau selon le système d'explo
 >> default via 2607:5300:201:abcd::1
 >> ```
 >>
->> Enfin, redémarrez votre service réseau pour permettre au système d'appliquer la nouvelle configuration à l'aide de l'une des commandes suivantes:
+>> Enfin, redémarrez votre service réseau pour permettre au système d'appliquer la nouvelle configuration à l'aide de l'une des commandes suivantes :
 >>
 >> ```bash
 >> sudo service networking restart
@@ -444,9 +453,9 @@ Sélectionnez `Protocol Internet version 6 (TCP/IPv6)`{.action}, puis cliquez su
 
 ![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
 
-Dans la fenêtre Propriétés IPv6, sélectionnez `Utiliser l'adresse IPv6 suivante`. Entrez les adresses IP que vous avez récupérées à la première étape.
+Dans la fenêtre Propriétés IPv6, sélectionnez `Utiliser l'adresse IPv6 suivante`{.action}. Entrez les adresses IP que vous avez récupérées à la première étape.
 
-Vous avez également la possibilité d'entrer les résolutions DNS IPv6 de votre choix sous `Utiliser l'adresse de serveur DNS suivante`. Cela n'est pas obligatoire si les résolveurs DNS de la configuration IPv4 sont déjà fonctionnels.
+Vous avez également la possibilité d'entrer les résolutions DNS IPv6 de votre choix sous `Utiliser l'adresse de serveur DNS suivante`{.action}. Cela n'est pas obligatoire si les résolveurs DNS de la configuration IPv4 sont déjà fonctionnels.
 
 Enfin, cochez la case `Valider les paramètres en quittant` et cliquez sur le bouton `OK`{.action} pour valider vos modifications. Un message d'erreur peut s'afficher si la passerelle spécifiée ne se trouve pas sur le même sous-réseau IPv6 (/128 et /64, par exemple). Vous pouvez ignorer ce message et passer à l'étape suivante.
 
@@ -501,7 +510,7 @@ Ethernet adapter Ethernet:
                                        51.xxx.xxx.y
 ```
 
-Pour tester la connexion, vous pouvez utiliser la commande suivante:
+Pour tester la connexion, vous pouvez utiliser la commande suivante :
 
 ```powershell
 ping -6 proof.ovh.net
@@ -511,7 +520,7 @@ Vous pouvez également tester la connexion à un autre serveur distant. Cependan
 
 > [!primary]
 >
-> Si, malgré ces modifications, IPv6 ne semble pas fonctionner sur votre serveur, il est possible (dans de rares cas) que vous deviez effectuer des modifications supplémentaires. Dans ce cas, effectuez les opérations suivantes:
+> Si, malgré ces modifications, IPv6 ne semble pas fonctionner sur votre serveur, vous devrez peut-être effectuer des modifications supplémentaires (dans de rares cas). Dans ce cas, effectuez les opérations suivantes :
 >
 > - En fonction du système d'exploitation, tentez de remplacer le préfixe (ou *netmask*) de votre adresse IP par /128 et /64. Cela inclura la passerelle IPv6 dans votre sous-réseau.
 >
@@ -547,6 +556,6 @@ Pour revenir à une gestion automatique de votre réseau par Cloud-init, supprim
 
 ///
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

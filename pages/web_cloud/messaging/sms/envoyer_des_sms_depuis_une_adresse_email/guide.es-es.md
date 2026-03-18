@@ -1,6 +1,6 @@
 ---
 title: 'Enviar SMS desde el correo electrónico'
-excerpt: 'Cómo enviar SMS desde una dirección de correo electrónico'
+excerpt: 'Descubra cómo configurar y enviar SMS directamente desde cualquier dirección de correo electrónico utilizando la pasarela email2sms de OVHcloud'
 updated: 2020-06-04
 ---
 
@@ -33,8 +33,8 @@ Asegúrese de que dispone del crédito suficiente de SMS antes de realizar en en
 
 > [!primary]
 >
-Tenga en cuenta que, si el texto contiene 2 saltos de línea (doble /n) o si escribe el parámetro «--end», todo lo que añada a continuación no se incluirá en el envío.
-Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de cliente o a través de las API.
+> Tenga en cuenta que, si el texto contiene 2 saltos de línea (doble /n) o si escribe el parámetro «--end», todo lo que añada a continuación no se incluirá en el envío.
+> Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de cliente o a través de las API.
 >
 
 Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_adresse_email#anexo) que encontrará al final de esta guía.
@@ -75,7 +75,7 @@ Deberá obtener un resultado similar al de la imagen siguiente. Por defecto, una
 > [!primary]
 >**Solo para las cuentas de OVHcloud Francia:**
 >
-Si quiere utilizar un número corto que permita la respuesta, indique «senderForResponse=1» como remitente.
+> Si quiere utilizar un número corto que permita la respuesta, indique `senderForResponse=1` como remitente.
 >
 
 Para más información sobre los usuarios de SMS, consulte la siguiente guía: [Usuarios de SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)

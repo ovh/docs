@@ -21,21 +21,22 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](/links/web/emails).
+- An [Exchange](/links/web/emails-exchange).
 - One or more domain names.
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit)).
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
-
-### Access your service management
-
-**Exchange**
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 ### Add a domain name
 
@@ -47,7 +48,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 > [!warning]
 >
-> By default, all email accounts on a service are interconnected. All of the addresses created on your email service will be able to view all of the service’s addresses in the directory, including those with a different domain name. To unlink the display of domains, you need to order another [Exchange](/links/web/emails) service for the domain name(s) concerned.
+> By default, all email accounts on a service are interconnected. All of the addresses created on your email service will be able to view all of the service’s addresses in the directory, including those with a different domain name. To unlink the display of domains, you need to order another [Exchange](/links/web/emails-exchange) service for the domain name(s) concerned.
 >
 
 In the window for adding a domain:
@@ -133,7 +134,7 @@ As a reminder, all of the addresses created on your service will be able to view
 
 Once the accounts are fully configured, you can start using them. To do this, OVHcloud offers **webmail**, accessible [here](/links/web/email). To optimize the use of your email accounts on a software application, ensure that it is compatible with the service.
 
-If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails) pages.
+If you would like to configure your email accounts on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails-exchange) pages.
 
 You can purchase Outlook licenses in the [OVHcloud Control Panel](/links/manager). We recommend using one of these solutions if you would like to use Outlook email software, or more software from the Office suite, depending on your needs.
 
@@ -152,7 +153,7 @@ If you have email accounts attached to the domain name you want to detach, you h
 **Attach accounts to another domain name**:
 
 1. Go to the `Email accounts`{.action} tab.
-1 To the right of the accounts you want to modify, click the `...`{.action} button.
+1. To the right of the accounts you want to modify, click the `...`{.action} button.
 1. Click `Modify`{.action}.
 
 ![exchange](images/add_domain_exchange_step8.png){.thumbnail .w-600}

@@ -28,7 +28,6 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 - Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do[Panelu klienta OVHcloud](/links/manager)
   
 ## W praktyce
 

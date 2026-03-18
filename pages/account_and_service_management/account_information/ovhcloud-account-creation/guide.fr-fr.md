@@ -1,13 +1,13 @@
 ---
 title: 'Créer un compte OVHcloud'
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-updated: 2026-01-16
+updated: 2026-02-26
 ---
 
 ## Objectif
 
 Pour utiliser les services OVHcloud, vous devez d'abord créer votre compte.
-La création d'un compte peut s'effectuer avant ou pendant la commande de votre premier service OVHcloud.
+Vous pouvez créer un compte avant ou pendant la commande de votre premier service OVHcloud.
 
 **Découvrez comment vous créer un compte OVHcloud.**
 
@@ -41,12 +41,21 @@ Une fois ce premier formulaire complété, un code à usage unique vous sera env
 > [!primary]
 > Si vous n'avez pas reçu l'e-mail contenant le code, vérifiez les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
 >
-> Vous pouvez déclencher l'envoi d'un nouveau code en cliquant sur le lien prévu à cet effet en bas de cette page.
+> Vous pouvez déclencher l'envoi d'un nouveau code en cliquant sur le lien en bas de cette page.
 >
 > Si l'adresse e-mail que vous avez renseignée n'est pas valide ou disponible, cliquez sur le bouton `Changer l'adresse e-mail`{.action}.
 >
 
-Une fois le code saisi et validé, complétez la suite du formulaire. Veillez notamment à bien définir le **type de compte** parmi les choix proposés.
+Une fois le code saisi et validé, vous devez définir le **type de compte** parmi les choix proposés :
+
+- **Association** : Le compte « Association » doit être créé uniquement par les associations et autres organismes à but non lucratif tels que les fondations, syndicats professionnels ou congrégations religieuses.
+- **Administration publique** : Le compte « Administration publique » doit être créé uniquement par les administrations d'État, les administrations territoriales ou les établissements publics.
+- **Entreprise** : Le compte « Entreprise » doit être créé par toutes les personnes morales (hors administrations publiques et associations) et toutes les personnes physiques (entrepreneurs individuels) achetant des produits OVHcloud dans le cadre de leur activité professionnelle.
+- **Particulier** : Le compte « Particulier » doit être créé uniquement par les personnes physiques achetant des produits OVHcloud pour leurs besoins privés, hors cadre d'une activité professionnelle.
+
+![choix du type de compte](images/account-type-2025.png){.thumbnail}
+
+Vous serez ensuite invité à renseigner vos coordonnées. Assurez-vous que les informations que vous avez entrées sont correctes.
 
 Une fois votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelée « Tableau de bord », de votre compte.
 
@@ -63,8 +72,15 @@ Cet identifiant client vous permet :
 - de vous connecter à votre espace client pour gérer l'ensemble de vos services ;
 - de vous identifier lors de votre prise de contact avec le support OVHcloud et ainsi faciliter le traitement de vos questions.
 
-> [!warning]
+> [!success]
 > Prenez bien note de votre identifiant car vous en aurez besoin pour chaque connexion à votre compte.
+>
+> **Astuce : Utilisez un gestionnaire de mots de passe**
+>
+> Des logiciels spécifiques permettent de sauvegarder et sécuriser vos identifiants d'accès (identifiant et mot de passe) au compte OVHcloud.<br>
+> Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **KeePass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).<br>
+> Son principe est simple : un mot de passe maître – qui doit être suffisamment complexe, mais que vous devez mémoriser – permet d'accéder à une base de données regroupant tous vos identifiants et mots de passe. Ces derniers peuvent être très complexes, car le logiciel pourra les retenir.<br>
+> Ce logiciel permet également de générer des mots de passe complexes aléatoires qu'il sauvegardera pour chacun de vos sites ou applications.
 
 ## Aller plus loin
 

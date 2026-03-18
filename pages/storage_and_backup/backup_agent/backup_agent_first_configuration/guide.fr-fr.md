@@ -1,12 +1,14 @@
 ---
 title: "Backup Agent - Comment configurer votre première sauvegarde"
-excerpt: "Comment configurer votre première sauvegarde sur votre serveur Bare Metal avec le produit Backup Agent"
-updated: 2026-02-03
+excerpt: "Découvrez comment configurer votre première sauvegarde sur votre serveur Bare Metal avec le produit Backup Agent depuis l'espace client OVHcloud"
+updated: 2026-03-05
 ---
 
 ## Objectif
 
 Vous venez de commander votre offre Backup Agent pour votre serveur Bare Metal, découvrez comment mettre en place vos premières sauvegardes.
+
+**Ce guide explique comment configurer votre première sauvegarde avec Backup Agent sur un serveur Bare Metal.**
 
 > [!primary]
 > 
@@ -14,19 +16,31 @@ Vous venez de commander votre offre Backup Agent pour votre serveur Bare Metal, 
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](/links/manager).
-- Avoir commandé  un service Backup Agent au moment de la commande de votre serveur Bare Metal ou ultérieurement via le menu `Backup Agent`{.action} de votre espace client.
-- Avoir démarré et configuré un système d'exploitation sur votre serveur Bare Metal.
+- Avoir commandé un service Backup Agent au moment de la commande de votre serveur Bare Metal ou ultérieurement via le menu `Backup Agent`{.action} de votre espace client.
+- Avoir démarré et configuré un système d’exploitation sur votre serveur Bare Metal.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 > [!warning]
 >
 > Vous devez vous assurer de pouvoir rendre votre serveur joignable par notre infrastructure Veeam.
+> Vous recevrez les informations exactes dans votre e-mail de livraison.
+>
 > Voici les informations à autoriser sur votre serveur Bare Metal :
 >
-> - IP/DNS du serveur: `vspc-cgw1.stg01.eu-west-rbx.backup.ovh.net`
+> - IP/DNS du serveur: `vspc-cgw1.prod01.eu-west-rbx.backup.ovh.net` ou `vspc-cgw21.prod01.eu-west-rbx.backup.ovh.net`
 > - Port: 6180
 >
-> Nous vous conseillons également vivement de laisser votre serveur en capacité de joindre d'autres adresses vers l'extérieur afin de pouvoir envoyer vos données vers le Vault. Il n'y pas besoin d'autoriser un flux entrant dans ce cadre.
+> Nous vous recommandons également de permettre à votre serveur de joindre des adresses externes pour envoyer vos données vers le Vault. Il n'y a pas besoin d'autoriser un flux entrant dans ce cadre.
 
 ## En pratique
 
@@ -38,15 +52,11 @@ Les étapes pour créer une sauvegarde pour votre serveur sont les suivantes :
 
 Une fois l'agent installé, celui-ci recevra la politique de sauvegarde et permettra d'opérer les sauvegardes.
 
-Une fois que toutes ces étapes sont effectuées, votre première sauvegarde sera réalisée.
+Une fois ces étapes terminées, votre première sauvegarde sera lancée.
 
-## Ajouter votre serveur dans votre Backup Agent
+### Ajouter votre serveur dans votre Backup Agent
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la partie `Backup Agent`{.action}.
-
-![Backup Agent Menu](images/01-backup-agent-step15.png){.thumbnail}
-
-Cliquez sur votre vspc-tenant, dans la partie `Services`{.action}.
+Cliquez sur [ce lien](/links/control-panel/baremetal-backup-agent) pour accéder à la section `Backup Agent`{.action}, puis cliquez sur votre vspc-tenant dans la partie `Services`{.action}.
 
 ![Backup Agent Services](images/01-backup-agent-services.png){.thumbnail}
 
@@ -84,13 +94,13 @@ Pour installer votre agent sur votre serveur Bare Metal, cliquez sur l'onglet co
 >>
 >> ![Backup Agent Step 05](images/01-backup-agent-step05.png){.thumbnail}
 >>
->> Une fois installé, vous pourrez voir votre agent se connecter à notre infrastructure afin de redescendre votre politique de sauvegarde :
+>> Une fois installé, votre agent se connecte à notre infrastructure pour récupérer votre politique de sauvegarde :
 >>
 >> ![Backup Agent Step 06](images/01-backup-agent-step06.png){.thumbnail}
 >>
 >> ![Backup Agent Step 07](images/01-backup-agent-step07.png){.thumbnail}
 >>
->> Enfin, une fois la politique de sauvegarde prise en compte, vous pourrez voir votre agent de sauvegarde configuré et présent sur votre serveur Baremetal :
+>> Enfin, une fois la politique de sauvegarde prise en compte, vous pourrez voir votre agent de sauvegarde configuré et présent sur votre serveur Bare Metal :
 >>
 >> ![Backup Agent Step 08](images/01-backup-agent-step08.png){.thumbnail}
 >>

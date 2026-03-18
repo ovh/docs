@@ -18,7 +18,17 @@ A diferencia de un alojamiento web gestionado, usted es responsable de los sigui
 ## Requisitos
 
 - Tener una oferta [VPS](/links/bare-metal/vps) activa en su área de cliente de OVHcloud.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores privados virtuales`{.action} > Seleccione su VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Procedimiento
 
@@ -71,11 +81,7 @@ Una vez instalado el sistema operativo Windows, recibirá un correo electrónico
 
 A continuación, deberá terminar el proceso de instalación de Windows estableciendo su idioma de visualización, su disposición del teclado y su contraseña de administrador.
 
-Esto se realiza en la consola VPS KVM:
-
-1. Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y vaya a la sección `Bare Metal Cloud`{.action}.
-1. Haga clic en `Servidores privados virtuales`{.action} y seleccione su servidor.
-1. En la pestaña `Inicio`{.action}, haga clic en el botón `...`{.action} junto al nombre de su VPS en la sección **Su VPS** y elija `KVM`{.action}.
+Esto se realiza en la consola VPS KVM: en la pestaña `Inicio`{.action}, haga clic en el botón `...`{.action} junto al nombre de su VPS en la sección **Su VPS** y elija `KVM`{.action}.
 
 Encuentre más información sobre esta herramienta en nuestro "[guía KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)".
 

@@ -1,31 +1,41 @@
 ---
-title: "Reencaminhar um domínio gerido pela OVHcloud"
-excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud"
-updated: 2025-04-28
+title: "Reencaminhar um nome de domínio gerido pela OVHcloud"
+excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um nome de domínio gerido pela OVHcloud"
+updated: 2026-02-10
 ---
 
 ## Objetivo
 
-O reencaminhamento de um domínio consiste em reencaminhá-lo para um novo destino. Existem diferentes tipos de reencaminhamentos, cada um deles respondendo a uma necessidade específica.
+O reencaminhamento de um nome de domínio consiste em reencaminhá-lo para um novo destino. Existem diferentes tipos de reencaminhamentos, cada um deles respondendo a uma necessidade específica.
 
-**Descubra diferentes formas de reencaminhar o seu domínio**
+**Descubra diferentes formas de reencaminhar o seu nome de domínio**
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](/links/web/domains)
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
-- Estar conectado ao seu alojamento web (para um reencaminhamento através de um ficheiro [.htaccess](#htaccess_rewrite).
+- Dispor de um [nome de domínio](/links/web/domains).
+- Estar conectado ao seu alojamento web (para um reencaminhamento através de um ficheiro [.htaccess](#htaccess_rewrite)).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Nomes de domínio](/links/control-panel/web-domains)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Nomes de domínio`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Instruções
 
-#### Compreender o reencaminhamento de um domínio
+#### Compreender o reencaminhamento de um nome de domínio
 
-Esta funcionalidade permite reencaminhar um domínio/subdomínio para:
+Esta funcionalidade permite reencaminhar um nome de domínio/subdomínio para:
 
-- outro domínio/subdomínio já existente:
+- outro nome de domínio/subdomínio já existente:
     - **Exemplo**: `domain.tld`
 - um URL (Uniform Resource Locator) de site Internet:
-    - **Exemplos**: `http://www.domain.tld/welcome/` ou `https://www.domain.tld/welcome/` (se o domínio-alvo dispuser de um certificado SSL compatível).
+    - **Exemplos**: `http://www.domain.tld/welcome/` ou `https://www.domain.tld/welcome/` (se o nome de domínio-alvo dispuser de um certificado SSL compatível).
 
 Estas ações podem ser realizadas de várias formas:
 
@@ -37,14 +47,14 @@ Estas ações podem ser realizadas de várias formas:
 > O reencaminhamento pode afetar o referenciamento do seu website. 
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](/links/partner) no referenciamento, se necessário.
 >
-> Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](/links/manager) não permite reencaminhar um URL em `https://` para outro domínio ou URL. 
+> Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](/links/manager) não permite reencaminhar um URL em `https://` para outro nome de domínio ou URL. 
 > Para criar este tipo de reencaminhamento, deverá obrigatoriamente passar por [uma re-escritura de URL](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) através de um ficheiro ".htaccess", por exemplo.
 
-### Reencaminhar um domínio a partir da Área de Cliente
+### Reencaminhar um nome de domínio a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa. Clique no separador `Redirecção`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa. Clique no separador `Redirecção`{.action}.
 
-A tabela apresenta os reencaminhamentos ativos para o seu domínio. Pode gerir os seus reencaminhamentos existentes utilizando o botão `...`{.action} à direita de cada linha.
+A tabela apresenta os reencaminhamentos ativos para o seu nome de domínio. Pode gerir os seus reencaminhamentos existentes utilizando o botão `...`{.action} à direita de cada linha.
 
 Clique no botão `Para Adicionar um reencaminhamento`{.action}.
 
@@ -52,7 +62,7 @@ Clique no botão `Para Adicionar um reencaminhamento`{.action}.
 
 Estão disponíveis três opções de reencaminhamento a partir da[Área de Cliente OVHcloud](/links/manager) e cada uma delas é composta por **5 etapas** sucessivas. 
 
-> O separador `Reencaminhamento`{.action} apresenta uma quarta opção que permite apontar rapidamente o seu domínio para as entradas DNS A, AAAA e CNAME.<br>
+> O separador `Reencaminhamento`{.action} apresenta uma quarta opção que permite apontar rapidamente o seu nome de domínio para as entradas DNS A, AAAA e CNAME.<br>
 > Uma vez que não se trata propriamente de um "reencaminhamento", esta opção não será detalhada neste guia.
 >
 > Para mais informações sobre as entradas DNS, consulte o nosso manual sobre [registos DNS](/pages/web_cloud/domains/dns_zone_records).
@@ -67,7 +77,7 @@ Encontre aqui os três tipos de reencaminhamentos detalhados etapa a etapa.
 
 #### Opção 1: reencaminhamento visível permanente para um endereço web
 
-Esta opção permite, após a introdução do domínio reencaminhado, apresentar o domínio alvo na barra de endereços do seu browser em vez do domínio reencaminhado.
+Esta opção permite, após a introdução do nome de domínio reencaminhado, apresentar o nome de domínio alvo na barra de endereços do seu browser em vez do nome de domínio reencaminhado.
 
 - **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é que está a apontar para a barra de endereços no seu browser.
 
@@ -81,9 +91,9 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 > [!tabs]
 > **Etapa 1**
 >>
->> Na janela, o domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
+>> Na janela, o nome de domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
 >>
->> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu domínio/subdomínio.
+>> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu nome de domínio/subdomínio.
 >>
 >> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -107,7 +117,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 >>
 > **Etapa 4**
 >>
->> Selecione `Permanente (301)`{.action} entre as duas opções indicadas e introduza o domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
+>> Selecione `Permanente (301)`{.action} entre as duas opções indicadas e introduza o nome de domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
 >>
 >> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
@@ -123,7 +133,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 >> 
 >> > [!primary]
 >> >
->> > Se a mensagem "*Existem reencaminhamentos a partir dos domínios que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
+>> > Se a mensagem "*Existem reencaminhamentos a partir dos nomes de domínio que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
 >> >
 >> > Atenção, a configuração anterior será então desativada e eliminada.
 >> >
@@ -131,7 +141,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 
 #### Opção 2: reencaminhamento visível temporário para um endereço web
 
-Tal como para a opção 1, esta opção permite apresentar, após a introdução do domínio reencaminhado, o domínio alvo na barra de endereços do seu browser em vez do domínio reencaminhado.
+Tal como para a opção 1, esta opção permite apresentar, após a introdução do nome de domínio reencaminhado, o nome de domínio alvo na barra de endereços do seu browser em vez do nome de domínio reencaminhado.
 
 No entanto, esta deve ser utilizada de forma pontual, por exemplo para acontecimentos efémeros.<br>
 De facto, o posicionamento nos motores de busca é menos eficiente do que com um reencaminhamento **visível permanente** do tipo 301 (código HTTP).
@@ -148,9 +158,9 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 > [!tabs]
 > **Etapa 1**
 >>
->> Na janela, o domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
+>> Na janela, o nome de domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
 >>
->> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu domínio/subdomínio.
+>> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu nome de domínio/subdomínio.
 >>
 >>![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -174,7 +184,7 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 >>
 > **Etapa 4**
 >>
->> Selecione `Temporário (302)`{.action} de entre as duas opções indicadas e introduza o domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que aparecerá.
+>> Selecione `Temporário (302)`{.action} de entre as duas opções indicadas e introduza o nome de domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que aparecerá.
 >>
 >> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
@@ -190,7 +200,7 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 >> 
 >> > [!primary]
 >> >
->> > Se a mensagem "*Existem reencaminhamentos a partir dos domínios que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
+>> > Se a mensagem "*Existem reencaminhamentos a partir dos nomes de domínio que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
 >> >
 >> > Atenção, a configuração anterior será então desativada e eliminada.
 >> >
@@ -198,16 +208,16 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 
 #### Opção 3: reencaminhamento invisível para um endereço web
 
-Este reencaminhamento permite, após a introdução do domínio reencaminhado, deixá-lo afixado na barra de endereços do seu browser, em vez de o substituir pelo domínio-alvo.<br>
+Este reencaminhamento permite, após a introdução do nome de domínio reencaminhado, deixá-lo afixado na barra de endereços do seu browser, em vez de o substituir pelo nome de domínio-alvo.<br>
 **Atenção, esta ação não é compatível com todos os sites e afeta o referenciamento do seu site.**.
 
-- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é que aponte para o domínio `domain1.tld` que está no seu browser.
+- **Exemplo**: se reencaminhar `domain1.tld` para `domain2.tld`, é que aponte para o nome de domínio `domain1.tld` que está no seu browser.
 
 ![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
-O reencaminhamento invisível funciona com um identificador HTML *iFrame*. que permite ao seu domínio reencaminhado integrar na sua própria página HTML o conteúdo da outra página correspondente ao domínio alvo.
+O reencaminhamento invisível funciona com um identificador HTML *iFrame*. que permite ao seu nome de domínio reencaminhado integrar na sua própria página HTML o conteúdo da outra página correspondente ao nome de domínio alvo.
 
-Esta encapsulação permite impedir os visitantes do seu site de visualizar o domínio alvo
+Esta encapsulação permite impedir os visitantes do seu site de visualizar o nome de domínio alvo
 
 > Esta opção devolverá um código HTTP 200.
 
@@ -223,9 +233,9 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 > [!tabs]
 > **Etapa 1**
 >>
->> Na janela, o domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
+>> Na janela, o nome de domínio a reencaminhar já aparece. Introduza o formulário **unicamente** se deseja reencaminhar um *subdomínio*.
 >>
->> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu domínio/subdomínio.
+>> A casa `Reencaminhamento também`{.action} pode ser selecionada para reencaminhar o seu subdomínio para `www` para o mesmo destino que escolher para o seu nome de domínio/subdomínio.
 >>
 >>![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
@@ -249,7 +259,7 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 >>
 > **Etapa 4**
 >>
->> Selecione `Temporário (iframe)`{.action} de entre as duas opções indicadas e introduza o domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
+>> Selecione `Temporário (iframe)`{.action} de entre as duas opções indicadas e introduza o nome de domínio ou o URL alvo do seu reencaminhamento no formulário `Endereço web`{.action} que é apresentado.
 >>
 >>![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
@@ -271,7 +281,7 @@ Esta encapsulação permite impedir os visitantes do seu site de visualizar o do
 >> 
 >> > [!primary]
 >> >
->> > Se a mensagem "*Existem reencaminhamentos a partir dos domínios que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
+>> > Se a mensagem "*Existem reencaminhamentos a partir dos nomes de domínio que deseja reencaminhar que entram em conflito com os reencaminhamentos que deseja adicionar*" aparece, pode selecionar a casa `Confirmar o esmagamento do reencaminhamento existente`{.action} para forçar a aplicação do seu reencaminhamento.
 >> >
 >> > Atenção, a configuração anterior será então desativada e eliminada.
 >> >
@@ -380,15 +390,15 @@ Esta variável pode ser utilizada quando transfere temporariamente os ficheiros 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Bloquear o acesso ao meu website para alguns endereços IP através de um ficheiro ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
+[Bloquear o acesso ao meu website para alguns endereços IP através de um ficheiro ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteger a interface de administração do seu site através do ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+[Proteger a interface de administração do seu site através do ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 
-[Reescrever as URLs graças ao "mod_rewrite"](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite).
+[Reescrever as URLs graças ao "mod_rewrite"](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 [Como editar a minha zona DNS?](/pages/web_cloud/domains/dns_zone_edit)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

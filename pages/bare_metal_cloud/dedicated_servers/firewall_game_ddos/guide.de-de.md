@@ -35,7 +35,17 @@ Unsere Bare Metal Game Dedicated Server sind mit einem zusätzlichen Schutz vor 
 ## Voraussetzungen
 
 - Sie haben einen [OVHcloud **Game** Dedicated Server](/links/bare-metal/game).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -60,7 +70,7 @@ Die Hauptvorteile:
 > Die *Game Firewall* schützt die einem Server zugeordnete IP-Adresse. Wenn Sie einen Server mit mehreren IP-Adressen ([Additional IPs](/links/network/additional-ip)) einsetzen, müssen diese separat konfiguriert werden.
 >
 
-Melden Sie sich im OVHcloud Kundencenter an und befolgen Sie die folgenden Schritte, um die Spielschutzregeln für Ihren Game Dedicated Server zu konfigurieren:
+Befolgen Sie die folgenden Schritte, um die Spielschutzregeln für Ihren Game Dedicated Server zu konfigurieren:
 
 - Klicken Sie im Menü links auf `Network`{.action}.
 - Klicken Sie auf `Öffentliche IP-Adressen`{.action}.

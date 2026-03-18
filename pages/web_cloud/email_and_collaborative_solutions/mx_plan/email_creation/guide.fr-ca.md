@@ -21,7 +21,6 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
     - Une offre d’[hébergement web](/links/web/hosting).
     - Une offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -30,12 +29,19 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 > - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](/links/manager), en vous positionnant sur le nom de domaine concerné.
 > - Dans le cadre d'un [hébergement web](/links/web/hosting), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
 ## En pratique <a name="instructions"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
 
 #### Créer un compte e-mail
 
@@ -45,7 +51,7 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Comptes
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-amil (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
+- **Compte e-mail** : Un nom temporaire est déjà prérempli dans la zone de texte. Remplacez-le par celui que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
 
 > [!warning]
 >
@@ -63,7 +69,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
 > [!warning]
 >
-> Le choix du mot de passe doit respecter les conditions suivantes:
+> Le choix du mot de passe doit respecter les conditions suivantes :
 >
 > - Minimum 9 caractères
 > - Maximum 30 caractères
@@ -85,7 +91,7 @@ Lors d'une première connexion au webmail, vous êtes invité à définir la lan
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
-Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
+Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous à la rubrique « [Consulter un compte e-mail depuis un appareil](#configdevices) ».
 
 #### Supprimer un compte e-mail
 
@@ -146,9 +152,9 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 **Vous avez utilisé toutes les adresses comprises dans votre offre ?**
 
 - Consultez les questions de [notre FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Consultez notre offre e-mail [Exchange](/links/web/emails) pour compléter votre offre MX Plan sur le même nom de domaine.
+- Consultez notre offre e-mail [Exchange](/links/web/emails-exchange) pour compléter votre offre MX Plan sur le même nom de domaine.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 

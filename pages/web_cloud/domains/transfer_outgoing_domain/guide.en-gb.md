@@ -1,35 +1,46 @@
 ---
 title: "Transferring a domain name to another registrar"
 excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
-updated: 2025-07-31
+updated: 2026-02-10
 ---
 
 ## Objective
 
-A **domain transfer** refers to the process of moving a domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer must be initiated by the new registrar.
+A **domain name transfer** refers to the process of moving a domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain name transfer must be initiated by the new registrar.
 
-In order to prevent unauthorised domain transfers, domain names are usually locked, indicated by the status *clientTransferProhibited*. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
+In order to prevent unauthorised domain name transfers, domain names are usually locked, indicated by the status *clientTransferProhibited*. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
 
 **This guide explains how to prepare your domain name for an outgoing transfer.**
 
 > [!warning]
 >
-> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
+> If the domain name in question should stay registered at OVHcloud but modified in terms of its management or holder information, an outgoing domain name transfer is not the appropriate procedure.
 >
 > To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web_cloud/domains/trade_domain) instructions.
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [instructions for changing the holder of a domain name](/pages/web_cloud/domains/trade_domain).
 >
 
 ## Requirements
 
 - A [domain name](/links/web/domains) registered with OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the domain name (domain administrator)
-- The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
+- The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of holder) during the last 60 days
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
-> If you are the domain name's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain name's administrative contact, please consult [this guide](/pages/account_and_service_management/account_information/managing_contacts#special-case-of-a-domain-owner) first before proceeding.
+> If you are the domain name's **holder** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain name's administrative contact, please consult [this guide](/pages/account_and_service_management/account_information/managing_contacts#special-case-of-a-domain-holder) first before proceeding.
 >
 
 ## Instructions
@@ -38,7 +49,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 >
 > The following instructions describe the most common way to transfer a domain name, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
 >
-> The exact procedure for domain transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk, .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
+> The exact procedure for domain name transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk, .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
 >
 > We recommend to consult the following resources in case of any doubt:
 >
@@ -79,7 +90,7 @@ Click on the slider and confirm in the popup window that you want to remove this
 
 > [!primary]
 >
-> Once the protection is lifted, the domain name will remain unlocked for seven days. After this period, the protection will be automatically reactivated. If you do not request a domain transfer to your new registrar during this time, it will be necessary to remove the protection again.
+> Once the protection is lifted, the domain name will remain unlocked for seven days. After this period, the protection will be automatically reactivated. If you do not request a domain name transfer to your new registrar during this time, it will be necessary to remove the protection again.
 >
 
 ### Step 2: Retrieve the transfer code
@@ -97,7 +108,7 @@ The code will be requested by your new registrar to complete the transfer proces
 
 Make sure to copy and paste the code as opposed to typing it by hand, since some characters are easily confused.
 
-Once the transfer code has been retrieved, **do not lock your domain again unless you no longer wish to transfer it**.
+Once the transfer code has been retrieved, **do not lock your domain name again unless you no longer wish to transfer it**.
 
 ### Step 3: Launch the transfer at your new registrar
 

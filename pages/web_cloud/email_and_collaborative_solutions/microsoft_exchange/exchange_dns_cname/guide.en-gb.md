@@ -16,10 +16,29 @@ When you add a domain name to your email service, you may be asked to configure 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
+- An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - A domain name linked to your email service, see [Adding a domain name to an email service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - Administrative rights to [configure the DNS zone](/pages/web_cloud/domains/dns_zone_edit) for the domain name concerned (in the OVHcloud Control Panel or an external management interface)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
@@ -29,7 +48,7 @@ The CNAME record is used here as an alias, it points to a target that itself poi
 
 The CNAME record is used as a validation code (token) for our [**Hosted Exchange**](/links/web/emails-hosted-exchange) and [**Email Pro**](/links/web/email-pro) solutions. It is added to the DNS zone of the domain name you want to validate for use with your emails. The purpose is to check that the user of the email service is authorised to use the domain name they are adding.
 
-In the diagram below, the email service ([Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro)) is represented by the contents of the green frame.<br>
+In the diagram below, the email service ([Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro)) is represented by the contents of the green frame.<br>
 You have created accounts (**contact**, **john.smith** and **mary.johnson** in this example) that will have email addresses associated with them.<br>
 The domain name **mydomain.ovh** has been added to the email service (please refer to the guide on [Adding a domain name to your email service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)).<br>
 The email service generates a unique validation code (“**abcd1-check**” in our example).<br>

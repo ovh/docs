@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2025-06-26
+updated: 2026-03-05
 ---
 
 <style>
@@ -30,15 +30,21 @@ If you have just purchased an MX Plan solution, this means you have email addres
 ## Requirements
 
 - An MX plan solution, available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
-1. **Continue with the email technology used by your MX Plan service**.
+**Continue with the email technology used by your MX Plan service**.
 
 > [!primary]
 >
@@ -46,9 +52,9 @@ If you have just purchased an MX Plan solution, this means you have email addres
 >
 > Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
 >
-> - In the `General information`{.action} tab, note the technology used under the **** comment in the `Subscription`{.action} or `Connection`{.action} box.
+> - In the `General information`{.action} tab, note the technology used under the **Webmail** mention in the `Subscription`{.action} or `Connection`{.action} box.
 >
-> ![mx plan](images/technology-email.png){.thumbnail .w-500}Webmail
+> ![mx plan](images/technology-email.png){.thumbnail .w-500}
 
 **Contents**
 
@@ -98,7 +104,7 @@ To find out how to create an email address, click on the tab corresponding to th
 >> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
 >> - **Quota**: Determine the size you would like to assign to the email account.
 >>
->> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
+>> Once you have filled in the fields, click `Next`{.action}, then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
 >>
 >> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
 >>
@@ -117,14 +123,14 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 > **Roundcube**
 >>
 >> You should see an interface similar to the image below with the word "Roundcube" in the top left.  
->> To find out how to use the Roundcube interface, please read our guide on [Using an email address via the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) .
+>> To find out how to use the Roundcube interface, please read our guide on [Using an email address via the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
 >>
 > **Zimbra**
 >>
 >> As shown in the image below, a window will appear with the word "Zimbra" in the top left-hand corner.  
->> To find out how to use your email address via Zimbra webmail, please refer to our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+>> To find out how to use your email address via Zimbra webmail, please refer to our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 >>
 >> ![email](images/mxplan-webmail-zimbra01.png){.thumbnail .w-500}
 >>
@@ -275,8 +281,6 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 [Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 [MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
-
-[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

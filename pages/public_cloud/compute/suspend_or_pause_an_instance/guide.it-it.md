@@ -1,6 +1,7 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2025-10-30
+excerpt: Scopri come sospendere, mettere in pausa o arrestare un’istanza Public Cloud per liberare temporaneamente le risorse conservando il tuo indirizzo IP, nonché l’impatto sulla fatturazione di ciascuna opzione
+updated: 2026-02-27
 ---
 
 ## Obiettivo
@@ -16,16 +17,29 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 ## Prerequisiti
 
 - un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con la fatturazione **oraria**
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
-- Conoscenza dell'[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+- Avere accesso all’[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Conoscenza dell’[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
-> [!alert]
+> [!warning]
 >
-> Questa guida si applica solo alle istanze con **fatturazione oraria**. Se le tue istanze hanno una **fatturazione mensile**, la fatturazione classica continuerà a essere applicata indipendentemente dallo stato del servizio.
+> **Ambito:** Questa guida si applica a tutte le istanze Public Cloud, indipendentemente dal loro modello di fatturazione (oraria o mensile).
 >
-> Queste manipolazioni comportano sempre la fatturazione dell'istanza finché non viene **eliminata**.
+> **Fatturazione mensile:** Un'istanza che rimane sospesa per l'intero mese non verrà fatturata. Non appena l'istanza viene riattivata, anche brevemente, si applica la fatturazione completa del mese.
+>
+> **Nota:** Finché l'istanza non viene eliminata, qualsiasi operazione continuerà a generare addebiti per l'istanza.
 >
 
 La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle tue istanze. Prosegui nella lettura di questa guida cliccando sull'opzione che preferisci. Abbiamo messo tra parentesi la terminologia utilizzata nell'interfaccia di Horizon.
@@ -84,7 +98,7 @@ Nella finestra contestuale, annota il messaggio e clicca su `Confermare`{.action
 
 Durante l'operazione viene visualizzato un messaggio:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Una volta completata la procedura, l'istanza si presenta come *Sospesa*.
 
@@ -100,7 +114,7 @@ Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} de
 
 Per utilizzare questo metodo, è necessario [connettersi all’interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Per accedere con l’autenticazione unica OVHcloud, clicca sul link `Horizon`{.action} nel menu di sinistra sotto "Management Interfaces" dopo aver aperto il progetto `Public Cloud`{.action} nello [Spazio Cliente OVHcloud](/links/manager).
+- Per accedere con il Single Sign-On OVHcloud: utilizza il link `Horizon`{.action} nel menu a sinistra sotto "Management Interfaces" dopo aver aperto il tuo progetto `Public Cloud`{.action} nello [Spazio Cliente OVHcloud](/links/manager).
 
 - Per accedere con un utente OpenStack specifico: apri la pagina di accesso a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e inserisci le [credenziali OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) precedentemente create, poi clicca su `Connect`{.action}.
 
@@ -294,6 +308,6 @@ Per **riattivare** l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentazione OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Contatta la nostra [Community di utenti](/links/community).

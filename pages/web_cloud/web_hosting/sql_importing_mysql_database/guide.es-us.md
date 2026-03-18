@@ -15,7 +15,18 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Disponer de una base de datos creada en un [alojamiento web de OVHcloud](/links/web/hosting).
 - Tener la copia de seguridad que quiera importar en la base de datos.
-- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o disponer de las claves necesarias para conectarse a la base de datos.
+- Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el área de cliente de OVHcloud o disponer de las claves necesarias para conectarse a la base de datos.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

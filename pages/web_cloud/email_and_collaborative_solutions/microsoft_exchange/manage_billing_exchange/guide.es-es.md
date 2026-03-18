@@ -12,15 +12,20 @@ Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un plan [Exchange](/links/web/emails-hosted-exchange).
 
-## Procedimiento
+<!-- CP-NAV-START:web-exchange -->
+---
 
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
+## Procedimiento
 
 ### Hosted Exchange
 

@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
-excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
+excerpt: Find out how to send your first SMS messages step by step, configure senders and manage recipients from the OVHcloud Control Panel
 updated: 2026-01-07
 ---
 
@@ -11,13 +11,21 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS management](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
-
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and your SMS account.
 
 The "Send an SMS" field is the first item available in the list of actions.
 
@@ -28,7 +36,7 @@ The "Send an SMS" field is the first item available in the list of actions.
 > [!primary]
 > For more information on creating and using a sender, refer to our guide "[Everything you need to know about SMS senders](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
-Once you have landed on the sending page for SMS messages, you will have different settings to enter, in order to adapt your SMS sending to suit your needs. 
+Once you have landed on the sending page for SMS messages, you will have different settings to enter, to adapt your SMS sending to suit your needs. 
 
 ![send sms control panel](images/sms-send-control-panel02E.png){.thumbnail}
 

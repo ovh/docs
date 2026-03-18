@@ -10,9 +10,19 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
-- Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- Avoir préparé l’environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -20,8 +30,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 Afin de récupérer vos variables d'environnement, vous pouvez télécharger le fichier OpenRC de votre utilisateur OpenStack créé au préalable.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
-<br> Dans le menu de gauche, sous la rubrique **Paramètres**, cliquez sur `Utilisateurs & Rôles`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
+Dans le menu de gauche, sous la rubrique **Paramètres**, cliquez sur `Utilisateurs & Rôles`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
 
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
 

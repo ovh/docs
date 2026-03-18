@@ -1,6 +1,7 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2025-10-30
+excerpt: Dowiedz się, jak wstrzymać, uśpić lub zawiesić instancję Public Cloud, aby tymczasowo zwolnić zasoby zachowując adres IP, oraz poznaj wpływ każdej opcji na rozliczenia
+updated: 2026-02-27
 ---
 
 ## Wprowadzenie
@@ -16,16 +17,29 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) w abonamencie **godzina**
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Dostęp do [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Znajomość [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
-> [!alert]
+> [!warning]
 >
-> Niniejszy przewodnik dotyczy tylko instancji z płatnością **godzinową**. Jeśli w Twoich instancjach stosowana jest opłata **miesięczna**, płatność będzie kontynuowana niezależnie od statusu usługi.
+> **Zakres:** Niniejszy przewodnik dotyczy wszystkich instancji Public Cloud, niezależnie od ich modelu rozliczeniowego (godzinowego lub miesięcznego).
 >
-> Te czynności zawsze powodują **naliczenie opłaty za instancję**, dopóki nie zostanie ona **usunięta**.
+> **Rozliczenie miesięczne:** Instancja, która pozostaje zawieszona przez cały miesiąc, nie będzie rozliczana. Gdy tylko instancja zostanie reaktywowana, nawet na chwilę, stosowane jest pełne rozliczenie miesięczne.
+>
+> **Uwaga:** Dopóki instancja nie zostanie usunięta, każda operacja będzie nadal generować opłaty za instancję.
 >
 
 Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Kontynuuj lekturę przewodnika, klikając wybraną opcję. W nawiasach umieszczamy terminologię używaną w interfejsie Horizon.
@@ -82,7 +96,7 @@ W oknie, które się wyświetla, zapoznaj się z komunikatem i kliknij przycisk 
 
 Podczas operacji wyświetla się komunikat:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Zawieszona*.
 
@@ -98,7 +112,7 @@ Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu **
 
 Aby skorzystać z tej metody, należy [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Aby zalogować się przy użyciu logowania jednokrotnego OVHcloud: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Interfejsy zarządzania" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager).
+- Aby zalogować się za pomocą OVHcloud SSO: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Management Interfaces" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager).
 
 - Aby zalogować się za pomocą określonego użytkownika OpenStack: otwórz stronę logowania w witrynie [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone dane [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user), a następnie kliknij przycisk `Connect`{.action}.
 
@@ -292,6 +306,6 @@ Aby **restartować** instancję, wpisz w wierszu polecenia:
 
 ## Sprawdź również
 
-[Dokumentacja OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Dokumentacja OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Dołącz do [grona naszych użytkowników](/links/community).

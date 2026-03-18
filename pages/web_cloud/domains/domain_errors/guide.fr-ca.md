@@ -1,19 +1,29 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-La création d'un nom de domaine, son transfert, son changement de propriétaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
+La création d'un nom de domaine, son transfert, son changement de titulaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
 
 **Découvrez comment agir lorsqu'une erreur survient sur un nom de domaine.**
 
 ## Prérequis
 
-- Posséder un ou plusieurs noms de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Être titulaire d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 

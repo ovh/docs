@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Configurar uma conta de e-mail no Outlook clássico para Windows'
+title: 'E-mail Pro - Configurar uma conta de e-mail no Outlook clássico para Windows'
 excerpt: 'Saiba como configurar a sua conta E-mail Pro no Outlook clássico para Windows'
 updated: 2026-01-30
 ---
@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-As contas Email Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
+As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir.
 
 **Saiba como configurar um endereço de e-mail Pro no Outlook ou em versões posteriores do Windows.**
 
@@ -35,6 +35,17 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 - Ter uma conta de e-mail [E-mail Pro](/links/web/email-pro).
 - Ter a aplicação [Outlook clássico](https://support.microsoft.com/pt-pt/office/instalar-ou-reinstalar-o-outlook-cl%C3%A1ssico-num-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) no Windows.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 /// details | Informações relativas à gestão e configuração dos serviços OVHcloud
 
@@ -48,7 +59,7 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 
 > [!warning]
 >
-> Esta documentação aplica-se apenas ao **Outlook clássico** disponível na suite Microsoft 365. Se estiver a utilizar o novo Outlook, consulte o nosso guia "[E-mail Pro - Configurar sua conta de E-Mail Pro no novo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Esta documentação aplica-se apenas ao **Outlook clássico** disponível na suite Microsoft 365. Se estiver a utilizar o novo Outlook, consulte o nosso guia "[E-mail Pro - Configurar sua conta de E-mail Pro no novo Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Para instalar o Outlook clássico no seu computador Windows, descarregue-o a partir da página Microsoft "[Instalar ou reinstalar o Outlook clássico num PC Windows](https://support.microsoft.com/pt-pt/office/instalar-ou-reinstalar-o-outlook-cl%C3%A1ssico-num-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" e instale-o.
 >
@@ -62,11 +73,7 @@ Este manual fornece as instruções necessárias para realizar as operações ma
 >
 > No nosso exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> 1. Inicie sessão no seu [Área de Cliente OVHcloud](/links/manager).
-> 1. Dirija-se à parte `Web Cloud`{.action}.
-> 1. Clique em `Email Pro`{.action}.
-> 1. Selecione a plataforma em questão.
-> 1. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
+> Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
 
 - **Se for a primeira vez que utiliza a aplicação**, aparecerá um assistente de configuração que lhe irá solicitar o seu endereço de e-mail.
 
@@ -226,7 +233,7 @@ Por isso, convidamo-lo a consultar o capítulo correspondente à interface exibi
 >> >
 >> > No nosso exemplo, o nome do servidor utilizado é "pro**?**.mail.ovh.net". Terá de substituir o carácter "?" pelo número correspondente ao servidor do seu serviço E-mail Pro.
 >> >
->> > Encontre este número no seu [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} depois `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Conexão** do separador `Informações gerais`{.action}.
+>> > Clique [neste link](/links/control-panel/web-email-pro) para aceder à secção `E-mail Pro`{.action}. O nome do servidor está visível no quadro **Ligação** do separador `Informações gerais`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

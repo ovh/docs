@@ -17,8 +17,18 @@ La creación de un servidor web y los programas asociados permiten que su servid
 ## Requisitos
 
 - Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o una instancia de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 - Acceso administrativo al servicio por SSH
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.

@@ -127,9 +127,19 @@ To create a landing zone that works well, it’s important to assess the compone
 
 ### Prerequisites:
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A payment method.
 - [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+#### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Instructions
 

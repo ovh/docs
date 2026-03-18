@@ -28,6 +28,17 @@ As an example, this video shows how to easily scale the number of instances whil
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!primary]
 >
 > This tutorial is compatible with Terraform version 0.14.0 and later.
@@ -238,7 +249,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+Click on `Instances`{.action}.
 As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]

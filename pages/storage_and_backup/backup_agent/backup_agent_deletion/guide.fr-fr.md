@@ -10,8 +10,18 @@ Ce guide vous explique comment supprimer différents éléments de votre service
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager) dans la section `Backup Agent`{.action}.
 - Avoir un service Backup Agent actif.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## En pratique
 

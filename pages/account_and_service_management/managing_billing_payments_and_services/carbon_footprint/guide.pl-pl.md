@@ -1,7 +1,7 @@
 ---
 title: "Jak uzyskać ślad węglowy Twoich usług OVHcloud"
 excerpt: "Dowiedz się, jak odzyskać miesięczny ślad węglowy usług OVHcloud za pomocą naszego kalkulatora emisji dwutlenku węgla"
-updated: 2025-06-17
+updated: 2026-02-11
 ---
 
 ## Wprowadzenie
@@ -14,14 +14,30 @@ W związku z Twoją działalnością lub zainteresowaniem tym tematem może być
 
 - Posiadanie statusu kontaktu "Płatności" za usługi, w przypadku których chcesz uzyskać ślad węglowy. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](/pages/account_and_service_management/account_information/managing_contacts).
 
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Moje konto](/links/control-panel/account-dashboard)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
+
 **Obliczanie śladu węglowego jest dostępne dla następujących usług:**
 
 - [Serwer dedykowany](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage)
 - [Serwer dedykowany Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start)
 - [VMware on OVHcloud](/links/hosted-private-cloud/vmware)
-- [Instancje Public Cloud (Compute)](/links/public-cloud/compute)
+- [Public Cloud](/links/public-cloud/public-cloud)
 
 ## W praktyce
+
+> [!primary]
+>
+> Dane dotyczące śladu węglowego nie są jeszcze dostępne dla architektur 3AZ i stref lokalnych.
+>
 
 Należy wziąć pod uwagę kilka kwestii:
 
@@ -30,17 +46,27 @@ Należy wziąć pod uwagę kilka kwestii:
 - Bilans nie może być generowany dłużej niż ostatnie 24 miesiące.
 - Brak bilansu za okres przed datą wdrożenia funkcji dla każdej usługi OVHcloud (patrz tabela poniżej).
 
-| Usługa | Data uruchomienia kalkulatora śladu węglowego |
-|---|---|
-| Serwer Dedykowany | 2023/05/01 |
-| Serwer Dedykowany Eco | 2023/05/01 |
-| VMware on OVHcloud | 2023/08/01 |
-| Instancje Public Cloud | 2025/01/01 |
+**Dostępność danych o śladzie węglowym:**
+
+| Usługi OVHcloud      | Produkt                            | Status      | Data uruchomienia kalkulatora śladu węglowego |
+| -------------------- | ---------------------------------- | ----------  | --------------------------------------------- |
+| Serwery dedykowane   | Serwery dedykowane                 | Dostępne    | 2023/05/01 |
+|                      | Serwery dedykowane Eco             | Dostępne    | 2023/05/01 |
+| Hosted Private Cloud | VMware na OVHcloud                 | Dostępne    | 2023/08/01 |
+| Public Cloud         | Instancje Public Cloud             | Dostępne    | 2025/01/01 |
+|                      | Block Storage                      | Dostępne    | 2025/12/01 |
+|                      | Object Storage S3                  | Wkrótce     |            |
+|                      | File Storage                       | Wkrótce     |            |
+|                      | Sieć                               | Wkrótce     |            |
+|                      | Kubernetes zarządzane              | Wkrótce     |            |
+|                      | Bazy danych/Analiza Public Cloud   | Wkrótce     |            |
+|                      | Platforma danych                   | Wkrótce     |            |
+|                      | AI                                 | Wkrótce     |            |
+|                      | Kwantowe                           | Wkrótce     |            |
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Na stronie, która się wyświetli i w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
+1. Na [Panelu klienta](/links/control-panel/account-dashboard), w kolumnie po lewej stronie przejdź do sekcji **Przydatne linki**, następnie kliknij zakładkę `Mój ślad węglowy`{.action}.
 1. Na nowej stronie, która się wyświetli, kliknij `Pobierz dane dot. śladu węglowego z m-ca: [Miesiąc] [Rok]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
@@ -67,7 +93,7 @@ Udostępniamy domyślnie API OVHcloud, które umożliwiają programistom lub int
 
 - Po prawej stronie wyświetli się API z ramką do uzupełnienia.
 - Kliknij przycisk znajdujący się w prawym górnym rogu o nazwie `Authenticate`{.action}, a następnie przycisk `Login with OVHcloud SSO`{.action}.
-- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/manager).
+- Otworzy się interfejs logowania do [Panelu klienta OVHcloud](/links/control-panel/account-dashboard).
 - Zaloguj się za pomocą identyfikatora klienta, następnie kliknij `Authorize`{.action}, aby korzystać z API OVHcloud w połączeniu z Twoimi usługami.
 - Zostaniesz automatycznie przekierowany do poprzedniej strony API **POST /me/carbonCalculator/task**.
 

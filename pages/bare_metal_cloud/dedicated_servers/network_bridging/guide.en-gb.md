@@ -34,7 +34,17 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 - A dedicated server with a hypervisor installed (e.g. Citrix Xen Server, Proxmox, etc.)
 - At least one [Additional IP address](/links/network/additional-ip) routed to the server.
-- Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -66,9 +76,7 @@ Code samples in the following instructions have to be replaced with your own val
 > [!warning]
 > In the case of a block of IPs, virtual MAC addresses are created on each individual IP in the block.
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
-
-Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
+You can use the drop-down menu underneath **My public IP addresses and associated services** and select **All Additional IPs** to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
@@ -90,8 +98,6 @@ You can retrieve the gateway address via [your customer area](#viacontrolpanel) 
 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
->>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
 >>
 >> The IPv4 gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied it, continue with applying the configuration.
 >>

@@ -12,10 +12,19 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 ## Prérequis
 
-- Posséder [un serveur dédié](/links/bare-metal/bare-metal).
-- Disposer d'une [adresse Additional IP](/links/network/additional-ip) ou un bloc d’Additional IP (RIPE).
-- Être connecté à l'[espace client OVHcloud](/links/manager) ou à [l'API OVHcloud](/links/api).
-- Votre serveur doit supporter les MAC virtuelles. Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) afin de le déterminer.
+- Posséder [un serveur dédié](/links/bare-metal/bare-metal) qui supporte les MAC virtuelles. Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) afin de le déterminer.
+- Disposer d’une [adresse Additional IP](/links/network/additional-ip) ou un bloc d’Additional IP (RIPE).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about). Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
@@ -37,8 +46,6 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 >
 
 #### Via l'espace client OVHcloud
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
@@ -100,7 +107,7 @@ Utilisez l'appel API suivant :
 
 Le bloc ne sera pas déplacé.
 
-Exemple : si vous tentez de déplacer un bloc de 4 IPs avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
+Exemple : si vous tentez de déplacer un bloc de 4 IP avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées.
 
 ## Aller plus loin
 

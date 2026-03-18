@@ -28,13 +28,23 @@ O [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) é um 
 
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) instalado no seu equipamento local
 - Conhecimentos de base do [protocolo SSH e da sua utilização](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
 > A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. Este tutorial explica como utilizar as soluções da OVHcloud com ferramentas externas. Poderá ser necessário adaptar algumas instruções específicas ao sistema operativo da estação de trabalho local ou do servidor.
 >
 > Recomendamos que entre em contacto com um [fornecedor de serviços especializado](/links/partner) ou [nossa comunidade](/links/community) se encontrar dificuldades.
 >
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

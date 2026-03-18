@@ -21,18 +21,23 @@ El servicio Hosted Exchange le permite disfrutar de direcciones de correo electr
 - Tener contratado un plan [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Haber recibido el email de confirmación de la instalación de la solución Hosted Exchange.
 - Tener un dominio.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
 ### Acceder a la gestión del servicio
 
 Una vez que el servicio Hosted Exchange haya sido creado y esté disponible :
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 > [!primary]
 >
@@ -53,9 +58,9 @@ Seleccione uno de sus dominios de la lista o marque la casilla `Mi dominio no ap
 
 ![Correo electrónico](images/exchange-wizard01.png){.thumbnail}
 
-#### ¿Solo va a utilizar el servicio Exchange de OVH con este dominio?
+#### ¿Solo va a utilizar el servicio Exchange de OVHcloud con este dominio?
 
-La pregunta "¿**Va a utilizar únicamente la solución Exchange de OVH con este dominio?** " determinará el tipo de configuración del dominio. 
+La pregunta "¿**Va a utilizar únicamente la solución Exchange de OVHcloud con este dominio?** " determinará el tipo de configuración del dominio. 
 
 - Si utiliza un servicio Exchange solo o con otros servicios de **correo de OVHcloud**, podrá configurarlo automáticamente o manualmente solo utilizando los servidores de correo de OVHcloud.
 - Si utiliza su servicio Exchange como complemento de un servicio de correo **externo a los productos de correo de OVHcloud**, deberá introducir, bajo la mención `Servidor de relay (SMTP)`, la URL del servidor de recepción de su servicio de correo externo.
@@ -113,22 +118,22 @@ Para más información, consulte la guía [Añadir un dominio a un servicio Exch
 > Si es necesario realizar alguna acción concreta para configurar el dominio, se mostrará una etiqueta roja en la columna `Diagnóstico`{.action}. Al hacer clic, se mostrarán las operaciones necesarias. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
 >
 
-![Añadir un dominio](images/first-steps-hosted-exchange-add-domain.png)
+![Añadir un dominio](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Configurar cuentas Exchange adicionales (opcional)
 
 Puede configurar cuentas adicionales si lo desea y si no lo ha hecho ya a través del asistente.
 
-Para ello, acceda al servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](/links/manager) y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con las cuentas de correo ya configuradas o que estén siendo configuradas en el servicio.
+Para ello, haga clic en el servicio Hosted Exchange correspondiente en su [área de cliente de OVHcloud](/links/manager) y luego en la pestaña `Cuentas de correo`{.action}. La tabla mostrará las cuentas actualmente configuradas o pendientes de configuración en su servicio.
 
-La tabla mostrará las cuentas pendientes de configurar con el formato *@configureme.me*. Para configurarlas, haga clic en el icono con forma de lápiz y siga los pasos que se le indican.
+Las cuentas pendientes de configurar con el formato *@configureme.me*. Para configurarlas, haga clic en el icono con forma de lápiz y siga los pasos que se le indican.
 
 > [!primary]
 >
 > Repita esta operación para cada cuenta que tenga. Puede contratar nuevas contrataciones haciendo clic en el botón `Acciones`{.action} y seleccionando `Contratar cuentas`{.action}.
 >
 
-![Añadir una cuenta de correo](images/first-steps-hosted-exchange-add-account.png)
+![Añadir una cuenta de correo](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Utilizar las direcciones de correo
 
@@ -162,9 +167,9 @@ Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo,
 
 Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](/links/manager) y abra la pestaña correspondiente a la acción que quiera realizar.
 
-Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Para más información sobre estas funciones, consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Crear un grupo de contactos](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

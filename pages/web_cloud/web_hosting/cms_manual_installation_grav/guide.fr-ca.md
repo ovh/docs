@@ -14,7 +14,6 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Grav permet de développer ra
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'un [nom de domaine](/links/web/domains).
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

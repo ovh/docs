@@ -14,7 +14,17 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 
 - Un nom de domaine auquel vous avez accès en tant qu’administrateur
 - Un serveur [VPS](/links/bare-metal/vps) dans votre espace client OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Gestion VPS](/links/control-panel/baremetal-vps)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs Privés Virtuels`{.action} > Sélectionnez votre VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
@@ -25,8 +35,6 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 ## En pratique
 
 ### Étape 1 : récupération du code de validation <a name="retrievecode"></a>
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 Basculez sur l'onglet `DNS Secondaire`{.action} et cliquez sur le bouton `Ajouter un domaine`{.action}.
 

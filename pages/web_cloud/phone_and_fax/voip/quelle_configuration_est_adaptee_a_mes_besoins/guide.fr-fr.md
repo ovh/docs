@@ -1,6 +1,6 @@
 ---
-title: 'Choisir et appliquer une configuration pour un numéro'
-excerpt: 'Découvrez comment choisir et appliquer une configuration sur votre numéro'
+title: "Choisir et appliquer une configuration pour un numéro"
+excerpt: "Découvrez comment choisir et appliquer une configuration sur votre numéro"
 updated: 2026-01-22
 ---
 
@@ -18,17 +18,23 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 ## Prérequis
 
 - Disposer d'un [numéro alias fourni par OVHcloud](/links/telecom/telephonie-numeros) ou d'un [numéro porté](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
 ### Étape 1 : Accéder à la gestion de votre numéro
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
 
 Dès lors, deux possibilités existent selon le numéro concerné :
 
@@ -74,7 +80,7 @@ Reportez-vous aux instructions décrites dans notre documentation « [Créer et
 
 Le Serveur Vocal Interactif (SVI) vous propose une interface simple pour créer un menu interactif. L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVHcloud, de raccrocher ou de lire des sons.
 
-Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Serveur Vocal Interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif) » si vous désirez en apprendre plus.
 
 #### 2.5 SVI VXML <a name="svi-vxml"></a>
 
@@ -82,13 +88,13 @@ Le Serveur Vocal Interactif en VXML permet, via une configuration VXML 2.1, d’
 
 #### 2.6 Contact Center Solution <a name="ccs"></a>
 
-En cours de développement chez OVHcloud, le Contact Center Solution (ou CCS) est une évolution de la file d'appels. Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
+Le Contact Center Solution (ou CCS) est une évolution de la file d'appels. Il permet de gérer les flux d'appels entrants et sortants et d'en obtenir des statistiques détaillées. Étape par étape, vous pouvez définir votre stratégie afin de décrocher les appels comme bon vous semble.
 
 Via une interface unique, vous avez la possibilité de gérer une file d'appels, de définir des services (par exemple : service commercial, technique, production, etc.), de personnaliser vos sons (musique d'attente, musique de prédécroché), mais aussi de mettre en place une supervision de l’ensemble de vos postes téléphoniques.
 
 Des options supplémentaires sont également disponibles telles que l'enregistrement des appels entrants.
 
-Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous en désirez en apprendre plus.
+Consultez notre guide « [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) » si vous désirez en apprendre plus.
 
 ### Étape 3 : Appliquer la configuration souhaitée
 

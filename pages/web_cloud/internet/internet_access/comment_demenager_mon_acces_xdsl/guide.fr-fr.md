@@ -16,9 +16,16 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet �
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) actif.
 - Disposer d'une offre xDSL ou Fibre récente (offres Pro, Connect, Express, Entreprise, Serenity).
 - La nouvelle adresse doit être différente de l'ancienne.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 > [!primary]
 >
@@ -29,12 +36,7 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet �
 
 ### Réaliser une demande de déménagement 
 
-Pour réaliser une demande de déménagement, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Cliquez ensuite sur `Déménager`{.action} dans le cadre « Informations Générales ».
+Pour réaliser une demande de déménagement, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite. Sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Déménager`{.action} dans le cadre « Informations Générales ».
 
 ![accès déménagement](images/move01-edit-2022.png){.thumbnail}
 
@@ -67,7 +69,7 @@ Cochez la case « Testez avec la nouvelle adresse » puis renseignez les champs 
 
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
 
-Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
+Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponibles à cette adresse.
 
 <br>À l'aide des initiales des personnes rattachées à ces lignes, sélectionnez la ligne qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
 <br>Si aucun des choix proposés ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}

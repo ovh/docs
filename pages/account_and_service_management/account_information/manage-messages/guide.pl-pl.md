@@ -12,14 +12,18 @@ Podczas zakładania konta OVHcloud podałeś adres e-mail kontaktowy. Jeśli chc
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+<!-- CP-NAV-START:account-messages -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Połączenia](/links/control-panel/account-messages)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Połączenia`{.action}
+
+---
+<!-- CP-NAV-END:account-messages -->
 
 ## W praktyce
-
-Aby uzyskać dostęp do zarządzania komunikacją na Twoim koncie OVHcloud:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Kliknij swój nick w prawym górnym rogu, a następnie wybierz `Połączenia`{.action}.
 
 ### Wiadomości
 

@@ -12,21 +12,29 @@ Utworzenie migawki jest szybkim i prostym sposobem na zabezpieczenie działania 
 
 > [!primary]
 >
-Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
+> Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
 >
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## W praktyce
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## W praktyce
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
@@ -55,14 +63,14 @@ Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stan
 
 > [!alert]
 >
-> Pamiętaj, że przywrócenie systemu ze snapshota spowoduje usunięcie samego shapshota. Jeśli chcesz zachować tę samą migawkę, musisz wykonać nową przed wprowadzeniem zmian w przywróconym systemie.
+> Pamiętaj, że przywrócenie systemu ze snapshota spowoduje usunięcie samego snapshota. Jeśli chcesz zachować tę samą migawkę, musisz wykonać nową przed wprowadzeniem zmian w przywróconym systemie.
 >
 > Jeśli funkcja snapshot jest zbyt ograniczona dla Twojego projektu, opcja [automatyczne kopie zapasowe](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) jest alternatywna.
 >
 
 ### Pobierz snapshot
 
-Trwa zapisywanie snapshota można pobrać za pomocą linka do pobrania. Kliknij przycisk `...`{.action} obok opcji `Snapshot` i wybierz opcję `Pobierz Snapshot`{.action} z menu kontekstowego.
+Bieżący snapshot można pobrać za pomocą linku do pobrania. Kliknij przycisk `...`{.action} obok opcji `Snapshot` i wybierz opcję `Pobierz Snapshot`{.action} z menu kontekstowego.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
 
@@ -114,9 +122,9 @@ Migawki to kopie systemu tworzone w ściśle określonym momencie (“live snaps
 
 W większości dystrybucji wymagany *qemu-guest-agent* nie jest zainstalowany domyślnie. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
 
-##### **Distributions Debian (Debian, Ubuntu)**
+##### **Dystrybucje Debian (Debian, Ubuntu)**
 
-Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenia migawek:
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
@@ -136,9 +144,9 @@ Uruchom usługę, aby upewnić się, że działa:
 sudo service qemu-guest-agent start
 ```
 
-##### **Distributions Redhat (CentOS, Fedora)**
+##### **Dystrybucje Redhat (CentOS, Fedora)**
 
-Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
+Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenia migawek:
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
@@ -177,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

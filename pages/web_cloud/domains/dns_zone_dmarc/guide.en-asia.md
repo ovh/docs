@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with a DMARC record
 excerpt: Find out how DMARC works, and how to set it up for your email service
-updated: 2023-12-13
+updated: 2026-02-10
 ---
 
 ## Objective
@@ -20,8 +20,18 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 
 ## Requirements
 
-- Access to manage your domain name (attached to your email solution) from the [OVHcloud Control Panel](/links/manager).
 - One of the authentication mechanisms, [SPF](/pages/web_cloud/domains/dns_zone_spf) and/or [DKIM](/pages/web_cloud/domains/dns_zone_dkim) must be configured in the DNS zone of the email solution domain name.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instructions
 
@@ -67,8 +77,8 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 - **Version (v=)**: Mandatory field determining the version of the DMARC protocol.
 
-- **Domain rule (p=)**: Policy to be adopted by the recipient at the request of the owner of the sending domain. The policy applies to the queried domain and subdomains unless the **sp=** subdomain tag specifies different instructions. Possible values are:
-    - *none*: The domain owner does not request any specific action regarding message delivery.
+- **Domain rule (p=)**: Policy to be adopted by the recipient at the request of the holder of the sending domain. The policy applies to the queried domain and subdomains unless the **sp=** subdomain tag specifies different instructions. Possible values are:
+    - *none*: The domain holder does not request any specific action regarding message delivery.
     - *quarantine*: If the DMARC verification fails, the recipients must treat the emails as suspicious. Depending on the capabilities of the recipient server, this may mean "put in the spam folder" and/or "report as suspicious".
     - *reject*: Rejects emails that fail the DMARC verification.
 
@@ -76,7 +86,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 >
 > Configuring the `p=` parameter can have a significant impact on the deliverability of your domain name’s emails. It is recommended that you configure `p=none` and perform a failure report analysis for several weeks, in order to resolve any anomalies. Switching to `p=quarantine` or `p=reject` requires full control of the email security settings, concerning [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim). The use of the `pct=` factor, shown below, allows for a gradual transition.
 
-- **Percentage of messages filtered (pct=)** (value between 0 and 100, default is 100): The percentage of the message flow to which the DMARC policy should be applied. The purpose of the "pct" tag is to enable domain owners to adopt a slow implementation of the DMARC mechanism.
+- **Percentage of messages filtered (pct=)** (value between 0 and 100, default is 100): The percentage of the message flow to which the DMARC policy should be applied. The purpose of the "pct" tag is to enable domain name holders to adopt a slow implementation of the DMARC mechanism.
 
 - **Global Reporting URI (rua=)**: Addresses to which reports should be sent (comma separated plain text list). Any valid URI can be specified. The "mailto:" comment must precede the email recipient (e.g. `mailto:address@example.com`).
 
@@ -100,7 +110,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 #### TXT record <a name="txt-record"></a>
 
-You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links/manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](/links/manager). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS zones`{.action} tab.
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 
@@ -112,7 +122,7 @@ The following is a list of tags used to create a **TXT record** with DMARC setti
     - `r` for relaxed mode: Emails that fail DKIM authentication are marked as "unwanted" by the recipient server.
     - `s` for strict mode: Emails that fail DKIM authentication are rejected by the recipient server.
 
-- **ruf** (a comma-separated list in plain text): Addresses to which message-specific failure information should be reported. If this tag is present, the owner of the sending domain will ask recipients to send detailed failure reports about emails that specifically fail the DMARC assessment (see `fo` tag below). The format of the message to be generated must follow the format specified for the `rf` tag. The "mailto:" comment must precede the email recipient (e.g. `mailto:address@example.com`).
+- **ruf** (a comma-separated list in plain text): Addresses to which message-specific failure information should be reported. If this tag is present, the holder of the sending domain will ask recipients to send detailed failure reports about emails that specifically fail the DMARC assessment (see `fo` tag below). The format of the message to be generated must follow the format specified for the `rf` tag. The "mailto:" comment must precede the email recipient (e.g. `mailto:address@example.com`).
 
 - **fo** (Plain text, default is `0`): Detailed failure report options. Report generators can choose to comply with the requested options. The contents of this tag should be ignored if a `ruf` tag (above) is not also specified. The value of this tag is a colon-separated (`:`) list of characters that indicate the following failure report options:
      - **0**: Generates a DMARC failure report if all authentication mechanisms (DKIM **AND** SPF) fail to produce an aligned pass result.
@@ -164,17 +174,17 @@ The result is:
 
 - **p=quarantine**: Emails that do not pass the DMARC tests are treated as “suspicious”.
 
-- **pct=100**: The DMARC policy applies to 100% of the emails sent from the domain owner’s email stream.
+- **pct=100**: The DMARC policy applies to 100% of the emails sent from the domain holder’s email stream.
 
 - **ruf=mailto:report@mydomain.ovh**: Email address to which detailed failure reports should be sent via the "mailto" argument.
 
 - **fo=0**: Options for generating failure reports. A "0" value indicates that DMARC failure reports should be generated only if the SPF and DKIM authentication mechanisms fail to produce a pass-aligned result.
 
-- **adkim=r**: The DKIM ID alignment mode required by the domain owner is "relaxed" (flexible mode). In this mode, DKIM must provide a valid signature and the identifier of the "From" header can be partially aligned.
+- **adkim=r**: The DKIM ID alignment mode required by the domain holder is "relaxed" (flexible mode). In this mode, DKIM must provide a valid signature and the identifier of the "From" header can be partially aligned.
 
 - **aspf=s**: The SPF identifier alignment mode required is "strict". This means that the SPF identifier of the aligned domain must exactly match the sending IP address of the message.
 
-- **adkim=r**: The DKIM ID alignment mode required by the domain owner is "relaxed". In this mode, DKIM must provide a valid signature and the "From" header identifier can be partially aligned.
+- **adkim=r**: The DKIM ID alignment mode required by the domain holder is "relaxed". In this mode, DKIM must provide a valid signature and the "From" header identifier can be partially aligned.
 
 - **ri=86400**: Sets the requested interval between aggregated reports, in seconds. In this case, an aggregated report must be generated at least once every 86400 seconds (i.e. once per day).
 

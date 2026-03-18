@@ -20,6 +20,17 @@ Gli hosting Web OVHcloud mettono a disposizione uno spazio di storage per la ges
 - Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Installare [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sul computer
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
  
 > [!warning]

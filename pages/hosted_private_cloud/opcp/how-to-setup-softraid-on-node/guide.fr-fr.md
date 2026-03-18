@@ -1,7 +1,7 @@
 ---
 title: "OPCP - Comment configurer un RAID logiciel sur un nœud"
 excerpt: "Apprenez à configurer et gérer un RAID logiciel sur un nœud OpenStack Ironic dans OPCP"
-updated: 2026-02-06
+updated: 2026-03-09
 ---
 
 ## Objectif
@@ -31,7 +31,7 @@ Avant de commencer, assurez-vous de disposer des éléments suivants :
 - Un accès **[OpenStack CLI configuré](/pages/hosted_private_cloud/opcp/how-to-use-api-and-get-credentials)** avec les droits nécessaires (`clouds.yaml` ou variables d'environnement).
 - Le rôle **admin** et/ou les nœuds transférés dans votre projet.
 - Un nœud disponible (statut `available`) ou en mode maintenance.
-- Une image système **Linux** (type GNU/Linux) est requise pour l'instance. Cette image doit inclure le paquet `mdadm` ou permettre son installation. Les appliances VMware et les systèmes d'exploitation Windows par exemple ne sont pas compatibles avec cette procédure.
+- Une image système **Linux** (type GNU/Linux) est requise pour l'instance. Cette image doit inclure le paquet `mdadm` ou permettre son installation. Les appliances VMware et les systèmes d'exploitation Windows, par exemple, ne sont pas compatibles avec cette procédure.
 - Connaissances de base sur OpenStack Ironic et la gestion des nœuds baremetal.
 
 ## Pourquoi utiliser un RAID logiciel ?
@@ -80,7 +80,7 @@ Ironic supporte plusieurs niveaux de RAID logiciel. Les valeurs suivantes sont a
 > 
 > **Contrainte importante** : Le premier disque logique avec `is_root_volume: true` **doit obligatoirement être en RAID 1**. Les autres niveaux RAID (RAID 0, 5, 6, 10, etc.) ne sont pas autorisés pour le volume racine.
 
-Il est donc possible de faire uniquement du RAID 1 pour le déploiement de l'instance.
+Seul le RAID 1 est donc utilisable pour le déploiement de l'instance.
 
 ### 4. Configurer le RAID logiciel
 
@@ -193,6 +193,29 @@ unused devices: <none>
 mdadm --detail /dev/md0
 ```
 
+## Désactivation du RAID
+
+Dans certains cas, vous pouvez avoir besoin de désactiver le RAID sur un nœud. Pour cela, définissez l'interface RAID sur `no-raid` et effacez la configuration RAID cible.
+
+### 1. Désactiver l'interface RAID
+
+Définissez l'interface RAID sur `no-raid` :
+
+```bash
+openstack baremetal node set <node-id> --raid-interface=no-raid
+```
+
+### 2. Effacer la configuration RAID cible
+
+Effacez la configuration RAID cible :
+
+```bash
+openstack baremetal node set <node-id> --target-raid-config "{}"
+```
+
+> [!warning]
+> La désactivation du RAID effacera toutes les données présentes sur les disques utilisés pour la configuration RAID. Assurez-vous d'avoir sauvegardé toutes les données importantes avant de procéder.
+
 ## Résumé des commandes principales
 
 | Action | Commande |
@@ -206,6 +229,8 @@ mdadm --detail /dev/md0
 | Désactiver le mode maintenance | `openstack baremetal node maintenance unset <node-id>` |
 | Déployer une instance | `openstack server create --image <image-name> --flavor <flavor-id> --key-name <keypair-name> --nic net-id=<network-id> --availability-zone "nova::<node-id>" <instance-name>` |
 | Vérifier l'état RAID (depuis l'instance) | `cat /proc/mdstat` |
+| Désactiver l'interface RAID | `openstack baremetal node set <node-id> --raid-interface=no-raid` |
+| Effacer la configuration RAID cible | `openstack baremetal node set <node-id> --target-raid-config "{}"` |
 
 ## Bonnes pratiques
 

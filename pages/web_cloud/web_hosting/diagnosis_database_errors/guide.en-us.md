@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common database errors"
 excerpt: "Find out how to diagnose the most common cases of database errors"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Objective
@@ -19,8 +19,18 @@ Your database usage may result in anomalies on your website or error messages in
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
-- access to the [OVHcloud Control Panel](/links/manager)
 - an OVHcloud database service: [Start SQL](/links/web/hosting-options-startsql) or [Web Cloud Databases](/links/web/databases)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 
@@ -30,16 +40,16 @@ Your database usage may result in anomalies on your website or error messages in
 
 #### Check ongoing incidents
 
-First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or Web Cloud Databases server is affected by an incident on the OVHcloud infrastructure.
+First, check on the [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) page whether your datacentre, your web hosting cluster, your Web Cloud Databases server, or your database is not affected by an incident on the OVHcloud infrastructure.
 
 > [!primary]
 >
 > You can find these details in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section:
 >
-> - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
-> - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
+> - To find your Web Hosting plan's data centre, select `Hosting plans`{.action}, then the relevant web hosting. You will find this information in the `General Information`{.action} tab.
+> - To find the **cluster** of servers and **filer** (file server) of your web hosting, refer to [this guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - To retrieve the name of your **Web Cloud Databases** server, click on `Web Cloud Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
->
+> - To find the server on which your included or additional database ordered via your [web hosting](/links/web/hosting) is located, refer to [this guide](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Verify login credentials for your database <a name="config_file"></a>
 

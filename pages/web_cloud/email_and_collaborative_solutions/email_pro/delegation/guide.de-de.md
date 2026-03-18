@@ -13,8 +13,18 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 - Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
 - Sie verfügen über mindestens zwei aktive E-Mail Account, die auf derselben OVHcloud E-Mail Plattform eingerichtet sind.
-- Sie sind im [OVHcloud Kundencenter](/links/manager) eingeloggt.
 - Sie verfügen über die Login-Informationen für den E-Mail Account, dem Sie neue Berechtigungen zuweisen möchten.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## In der praktischen Anwendung
 

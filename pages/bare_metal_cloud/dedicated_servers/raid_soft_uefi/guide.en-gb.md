@@ -49,14 +49,14 @@ Throughout this guide, we use the terms **primary disk** and **secondary disk**.
 
 ## Instructions
 
-When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure in order to understand the RAID rebuild process.
+When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure to understand the RAID rebuild process.
 
 ### Content overview
 
 - [Basic Information](#basicinformation)
-- [Understanding the EFI System Partition (ESP)](#efisystemparition)
+- [Understanding the EFI System Partition (ESP)](#efisystempartition)
 - [Simulating a disk failure](#diskfailure)
-    - [Removing the failed disk](#diskremove)
+    - [Removing the failed disk](#removedisk)
 - [Rebuilding the RAID (with non mirrored ESP)](#raidrebuildnonmirrored)
     - [Rebuilding the RAID after the primary disk is replaced (rescue mode)](#nonmirroredrescuemode)
     - [Recreating the EFI System Partition](#recreateesp)
@@ -175,7 +175,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 This command can also be used to identify the partition type.
 
 For **GPT** partitions, line 6 shows: `Disklabel type: gpt`.
-This information can only been seen when the server is in normal mode.
+This information can only be seen when the server is in normal mode.
 
 Still going by the results, we see that `/dev/md2` consists of 1022 MiB and `/dev/md3` contains 474.81 GiB. If we were to run the `mount` command we can also find out the layout of the disk.
 ///
@@ -228,12 +228,13 @@ Note the devices, partitions, and mount points, as this is important, especially
 
 In our example, we have:
 
-- Two RAID arrays: `/dev/md2` and `/dev/md3`.
-- Partitions part of the RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** and **nvme0n1p3** with the mount points `/boot` and `/`.
-- Partitions not part of the RAID: **nvem0n1p1**, **nvme0n1p4** and **nvme1n1p4** with mount points `/boot/efi` and [SWAP].
-- One partition does not have a mount point: **nvme1n1p1**.
+- Partitions part of md2 (`/boot`): **nvme0n1p2** and **nvme1n1p2**.
+- Partitions part of md3 (`/`): **nvme0n1p3** and **nvme1n1p3**.
+- Swap partitions: **nvme0n1p4** and **nvme1n1p4**.
+- Mounted ESP (`/boot/efi`): **nvme0n1p1**.
+- Unmounted ESP: **nvme1n1p1**.
 
-The `nvme0n1p5` partition is a configuration partition, i.e. a read-only volume connected to the server that provides it with the initial configuration data.
+The `nvme0n1p5` partition is a [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), i.e. a read-only volume that provides the server with its initial configuration data. It is only read once during initial boot and can be removed afterwards.
 
 <a name="efisystempartition"></a>
 
@@ -313,7 +314,7 @@ You can use the `lsblk` command to confirm whether your partition is part of a R
 
 ***Does the content of the EFI System Partition change regularly?***
 
-In general, the contents of this partition do not change much, its content should only change on bootloader (e.g. GRUB) updates.
+In general, the contents of this partition do not change much and should only change on bootloader (e.g. GRUB) updates.
 
 However, if your EFI partition is not mirrored, we recommend running an automatic or manual script to synchronise all ESPs, so that they all contain the same up-to-date files. This way, if the drive on which this partition is mounted fails, the server will be able to restart on the ESP of one of the other drives.
 
@@ -330,12 +331,12 @@ If your ESP is not mirrored, you may experience the following:
 - The server is able to boot in normal mode and you can proceed with the RAID rebuild.
 - The server is unable to boot in normal mode, use the rescue mode environment to rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case Study 2** – There have been major system updates (e.g., GRUB), and the ESPs are synchronized.
+**Case Study 2** – There have been major system updates (e.g., GRUB), and the ESPs are synchronised.
 
 - The server is able to boot in normal mode because all ESPs are up-to-date, and the RAID rebuild can be performed in normal mode.
 - The server is unable to boot in normal mode, use the rescue mode environment to rebuild the RAID and recreate the EFI partition on the new disk.
 
-**Case Study 3** – There have been major system updates (e.g GRUB) to the OS and the ESPs partitions have not been synchronised.
+**Case Study 3** – There have been major system updates (e.g. GRUB) to the OS and the ESP partitions have not been synchronised.
 
 - The server is unable to boot in normal mode, use the rescue mode environment to rebuild the RAID, recreate the EFI System Partition on the new disk, and reinstall the bootloader (e.g., GRUB).
 - The server can boot in normal mode (for example, when the OS is upgraded but the GRUB version remains unchanged), allowing you to proceed with the RAID rebuild.
@@ -347,13 +348,13 @@ In some cases, booting from an out-of-date ESP may fail; for example, a major GR
 If your ESP is not mirrored, consider the following:
 
 > [!primary]
-> Please note that depending on your operating system, the process might differ. For example, Ubuntu can keep multiple EFI System Partitions synchronized with every GRUB update, but it is the only OS that does so. We recommend consulting the official documentation of your OS to understand how to manage ESPs.
+> Please note that depending on your operating system, the process might differ. For example, Ubuntu can keep multiple EFI System Partitions synchronised with every GRUB update, but it is the only OS that does so. We recommend consulting the official documentation of your OS to understand how to manage ESPs.
 >
 > In this guide, the operating system used is Debian.
 
-We recommend synchronizing your ESPs regularly or after each major system update. By default, all EFI System partitions contain the same files after installation. However, after a major system update, synchronizing the ESPs is necessary to ensure the content remains up-to-date.
+We recommend synchronising your ESPs regularly or after each major system update. By default, all EFI System partitions contain the same files after installation. However, after a major system update, synchronising the ESPs is necessary to ensure the content remains up-to-date.
 
-Running a script is an effective way to keep your partitions regularly synchronized. Below is a script you can use to manually sync your ESPs. Alternatively, you can set up an automated script to sync them daily or whenever the system boots.
+Running a script is an effective way to keep your partitions regularly synchronised. Below is a script you can use to manually sync your ESPs. Alternatively, you can set up an automated script to sync them daily or whenever the system boots.
 
 Before executing the script, ensure that `rsync` is installed on your system:
 
@@ -369,7 +370,7 @@ sudo apt install rsync
 sudo yum install rsync
 ```
 
-To execute a script in linux, you need an executable file:
+To execute a script in Linux, you need an executable file:
 
 - Start by creating a .sh file in the directory of your choice, replacing `script-name` with the name of your choice:
 
@@ -608,9 +609,9 @@ We can now proceed with the disk replacement and RAID rebuild.
 ### Rebuilding the RAID (with non mirrored ESP)
 
 > [!primary]
-> This process might be different depending on the operating system you have installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
+> This process may differ depending on the operating system installed on your server. We recommend that you consult the official documentation of your operating system to have access to the proper commands.
 > 
-> If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#mirrored-esp-normal) if your EFI system partition is mirrored.
+> If your server is able to boot in normal mode after the disk replacement, simply proceed with the steps from [this section](#nonmirrorednormalmode) if your EFI system partition is not mirrored or [this section](#raidrebuildmirrored) if your EFI system partition is mirrored.
 >
 
 #### Rebuilding the RAID after the primary disk is replaced (rescue mode) <a name="nonmirroredrescuemode"></a>
@@ -647,7 +648,7 @@ nvme0n1     259:5    0 476.9G  0 disk
 └─nvme0n1p4 259:13   0   512M  0 part
 ```
 
-Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Next, randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
@@ -661,7 +662,7 @@ The new table will be used at the next reboot or after you run partprobe(8) or k
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command.
+Run the `partprobe` command.
 
 Next, we rebuild the RAID array. The following code snippet shows how to add the new partitions (`nvme0n1p2` and `nvme0n1p3`) back into the RAID array.
 
@@ -799,7 +800,7 @@ mount --bind /run /mnt/run
 mount --make-slave /mnt/run
 ```
 
-Next, use the `chroot` command to access the mount point and verify that the new ESP has been properly created and that the system recognizes both ESPs:
+Next, use the `chroot` command to access the mount point and verify that the new ESP has been properly created and that the system recognises both ESPs:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # chroot /mnt
@@ -835,7 +836,7 @@ If the primary disk is replaced while it contains EFI system partitions that hav
 
 In this case, along with rebuilding the RAID and recreating the EFI system partition in rescue mode, you must also reinstall GRUB on it.
 
-Once the ESP has been created (as explained above) and the system recognises both partitions, still in the `choot` environment, create the `/boot/efi` folder to mount the new EFI system partition **nvme0n1p1**:
+Once the ESP has been created (as explained above) and the system recognises both partitions, still in the `chroot` environment, create the `/boot/efi` folder to mount the new EFI system partition **nvme0n1p1**:
 
 ```sh
 root@rescue12-customer-eu:/# mount /boot
@@ -882,7 +883,7 @@ sudo sgdisk -R /dev/nvme0n1 /dev/nvme1n1
 
 The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
 
-Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Next, randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 sudo sgdisk -G /dev/nvme0n1
@@ -897,7 +898,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Simply run the `partprobe` command. If you still cannot see the newly-created partitions (by running `lsblk`), you need to reboot the server before continuing.
+Run the `partprobe` command. If you still cannot see the newly-created partitions (by running `lsblk`), you need to reboot the server before continuing.
 
 Next, add the partitions to the RAID:
 
@@ -945,9 +946,9 @@ Once the rebuild is done, recreate the EFI System Partition on the new disk.
 [user@server_ip ~]# sudo fatlabel /dev/nvme0n1p1 EFI_SYSPART
 ```
 
-Once done, synchronize both partitions using the script provided in this guide.
+Once done, synchronise both partitions using the script provided in this guide.
 
-- Verify that the new EFI System Partition has been properly created and the system recongnises it:
+- Verify that the new EFI System Partition has been properly created and the system recognises it:
 
 ```sh
 [user@server_ip ~]# sudo blkid -t LABEL=EFI_SYSPART
@@ -1020,7 +1021,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> └─nvme0n1p4 259:13   0   512M  0 part
 >> ```
 >>
->> Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+>> Next, randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
@@ -1034,7 +1035,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> The operation has completed successfully.
 >> ```
 >>
->> Simply run the `partprobe` command.
+>> Run the `partprobe` command.
 >>
 >> We can now rebuild the RAID array. The following code snippet shows how to add the new partitions (nvme0n1p1, nvme0n1p2 and nvme0n1p3) back in the RAID array.
 >>
@@ -1091,7 +1092,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> └─nvme0n1p5 iso9660           Joliet Extension config-2       2025-12-16-15-40-00-00
 >> ```
 >>
->> Once done, consult [this section](#swap-partition) to reacreate the SWAP partition (if applicable).
+>> Once done, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 >>
 > **In normal mode**
 >>
@@ -1120,7 +1121,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >>
 >> The command should be in this format: `sgdisk -R /dev/new disk /dev/healthy disk`.
 >>
->> Next, randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+>> Next, randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 >>
 >> ```sh
 >> sudo sgdisk -G /dev/nvme0n1
@@ -1135,7 +1136,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> The operation has completed successfully.
 >> ```
 >>
->> Simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+>> Run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
 >>
 >> Next, add the partitions to the RAID:
 >>
@@ -1156,7 +1157,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> [user@server_ip ~]# cat /proc/mdstat
 >> ```
 >>
->> Once the raid rebuild is complete, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
+>> Once the RAID rebuild is complete, consult [this section](#swap-partition) to recreate the SWAP partition (if applicable).
 >>
 
 ///
@@ -1261,7 +1262,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 >> ```
 >>
->> Umount all the disks:
+>> Unmount all the disks:
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -Rl /mnt
@@ -1328,7 +1329,7 @@ Next, consult [this section](#swap-partition) to recreate the SWAP partition (if
 
 ///
 
-## Go Further
+## Go further
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
@@ -1342,6 +1343,6 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts to assist with your specific use case.
 
 Join our [community of users](/links/community).

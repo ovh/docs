@@ -36,7 +36,17 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 ## Wymagania początkowe
 
 - Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](/links/web/hosting)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

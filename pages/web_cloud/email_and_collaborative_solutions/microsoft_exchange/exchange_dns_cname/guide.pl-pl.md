@@ -16,10 +16,29 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
-- Posiadanie usługi [Exchange](/links/web/emails) lub [Email Pro](/links/web/email-pro).
+- Posiadanie usługi [Exchange](/links/web/emails-exchange) lub [E-mail Pro](/links/web/email-pro).
 - Dodanie domeny do platformy e-mail. W razie potrzeby skorzystaj z przewodnika "[Dodawanie domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 - Posiadanie możliwości [skonfigurowania strefy DNS](/pages/web_cloud/domains/dns_zone_edit) danej domeny w Panelu klienta OVHcloud lub z poziomu interfejsu zarządzania, w którym jest ona zarejestrowana.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
@@ -27,9 +46,9 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 
 Rekord CNAME jest tu używany jako alias, ale wskazuje na adres docelowy, który z kolei odsyła do adresu IP. Nie jest to zatem, z natury, rekord powiązany z usługą e-mail.
 
-W ramach usług [**Hosted Exchange**](/links/web/emails-hosted-exchange) i [**Email Pro**](/links/web/email-pro), wpis CNAME jest używany jako kod potwierdzający (token), który będzie widoczny w strefie DNS domeny, którą chcesz zatwierdzić. Celem jest sprawdzenie, czy użytkownik platformy e-mail jest menedżerem nazwy domeny, którą dodaje.
+W ramach usług [**Hosted Exchange**](/links/web/emails-hosted-exchange) i [**E-mail Pro**](/links/web/email-pro), wpis CNAME jest używany jako kod potwierdzający (token), który będzie widoczny w strefie DNS domeny, którą chcesz zatwierdzić. Celem jest sprawdzenie, czy użytkownik platformy e-mail jest menedżerem nazwy domeny, którą dodaje.
 
-Na poniższym schemacie platforma e-mail ([Exchange](/links/web/emails-hosted-exchange) lub [Email Pro](/links/web/email-pro)) jest reprezentowana przez zieloną ramkę.<br>
+Na poniższym schemacie platforma e-mail ([Exchange](/links/web/emails-hosted-exchange) lub [E-mail Pro](/links/web/email-pro)) jest reprezentowana przez zieloną ramkę.<br>
 Aby utworzyć adresy e-mail, dodajesz konta (w tym przypadku oznaczone jako "**kontakt**", "**john.smith**" i "**mary.johnson**").<br>
 Domena **mydomena.ovh** została dodana do platformy e-mail (zapoznaj się z przewodnikiem "[Dodawanie domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)").<br>
 Kod potwierdzający jest generowany przez platformę (w naszym przykładzie w postaci "**abcd1-check**").<br>

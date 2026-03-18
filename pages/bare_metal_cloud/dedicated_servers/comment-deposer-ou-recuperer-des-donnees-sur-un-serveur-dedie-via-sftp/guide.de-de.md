@@ -35,6 +35,17 @@ Es gibt verschiedene Optionen zum Übertragen von Dateien zwischen einem lokalen
 - Sie haben einen FTP-Client installiert, der SFTP-Verbindungen unterstützt (zum Beispiel [FileZilla](https://filezilla-project.org/)).
 - Sie haben administrativen Zugriff über SSH auf Ihren Server.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## In der praktischen Anwendung
 
 Sie benötigen die IP-Adresse Ihres Servers, die Sie in Ihrem [OVHcloud Kundencenter](/links/manager) finden, sowie den Namen des für die SSH-Verbindung zu verwendenden Benutzer-Accounts. Weitere Informationen zu diesem Thema finden Sie in unseren Anleitungen:

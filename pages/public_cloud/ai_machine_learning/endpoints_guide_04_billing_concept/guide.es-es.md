@@ -11,11 +11,11 @@ updated: 2026-02-06
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
 ## Objective
 
-This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including model decommissioning and redirecting, ensuring that you have all the necessary information to effectively manage your AI Endpoints.
+This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](/links/public-cloud/ai-endpoints). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including model decommissioning and redirecting, ensuring that you have all the necessary information to effectively manage your AI Endpoints.
 
 ## AI Endpoints model lifecycle
 
@@ -32,7 +32,7 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 >
 > Our email communications are sent to the billing contact related to your OVHcloud account. If your team is using a different OVHcloud account than the billing one, they might not receive our communications. To ensure every collaborator receives these notifications, follow the steps from [this guide](/pages/account_and_service_management/account_information/manage-messages):
 >
-> - Log in to the [OVHcloud Control Panel](/links/) using your billing OVHcloud account, click on your name in the top right corner, then click on `My messages`{.action}. Add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
+> - Log in to the [OVHcloud Control Panel](/links/manager) using your billing OVHcloud account, click on your name in the top right corner, then click on `My messages`{.action}. Add the emails of persons who should receive these communications (or a global mailing list). This allows adding them as contact points. This will send them an email and they will need to click a link in that email to accept your mailing invitation.
 >
 > - Once the email addresses are added, go to the `Delivery settings`{.action} tab and configure a new rule (category: `Product` and priority: `Medium`). You can add a new condition to your delivery rule for each colleague that should receive the notification, following the same process.
 

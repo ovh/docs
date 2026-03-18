@@ -1,7 +1,7 @@
 ---
 title: Deleting an email account
 excerpt: Find out how to delete or reset an email account of your email solution
-updated: 2025-04-28
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -17,7 +17,26 @@ You want to:
 ## Requirements
 
 - A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange) or **MX Plan** (available with a [web hosting plan](/links/web/hosting))
-- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -33,10 +52,6 @@ Select the tab corresponding to your email solution:
 > [!tabs]
 > **MX Plan**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
 >> 1. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.
 >>
@@ -44,10 +59,6 @@ Select the tab corresponding to your email solution:
 >>
 > **Exchange**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Open the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the service concerned.
 >> 1. Go to the `Email accounts`{.action} tab.
 >> 1. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset`{.action}.
 >>

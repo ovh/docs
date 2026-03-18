@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć subdomenę?"
 excerpt: "Dowiedz się, jak zdefiniować subdomenę i jak ją utworzyć w OVHcloud"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -20,28 +20,38 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-Podczas korzystania z domeny konieczne będzie utworzenie i skonfigurowanie **subdomen**. Subdomeny odpowiadają trzeciemu poziomowi (*Third Level Domain*) danej domeny. Najbardziej znaną subdomeną internautów jest obecnie subdomena **W**orld **W**ide **W**eb (**www**). Wiele stron WWW wciąż używa tej subdomeny do wyszukiwania w Internecie.
+Podczas korzystania z nazwy domeny konieczne będzie utworzenie i skonfigurowanie **subdomen**. Subdomeny odpowiadają trzeciemu poziomowi (*Third Level Domain*) danej nazwy domeny. Najbardziej znaną subdomeną internautów jest obecnie subdomena **W**orld **W**ide **W**eb (**www**). Wiele stron WWW wciąż używa tej subdomeny do wyszukiwania w Internecie.
 
-Na przykład *www.ovhcloud.com* jest subdomeną domeny *ovhcloud.com*.
+Na przykład *www.ovhcloud.com* jest subdomeną nazwy domeny *ovhcloud.com*.
 
-Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
+Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej nazwy domeny.
   
 **Poznaj subdomeny i dowiedz się, jak je utworzyć w OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie co najmniej jednej [domeny](/links/web/domains);
-- Dysponowanie aktywną strefą DNS dla Twojej domeny. W razie potrzeby sprawdź przewodnik "[Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Dostęp do [panelu klienta OVHcloud](/links/manager);
+- Posiadanie co najmniej jednej [nazwy domeny](/links/web/domains);
+- Dysponowanie aktywną strefą DNS dla Twojej nazwy domeny. W razie potrzeby sprawdź przewodnik "[Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
 - Wystarczające uprawnienia dotyczące wszystkich usług. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## W praktyce
 
 **Podsumowanie**
 
 - [Preambuła](#introduction)
 - [Jak utworzyć subdomenę?](#subdomain-creation)
-    - [1 - Identyfikacja lokalizacji aktywnej strefy DNS Twojej domeny](#identification)
+    - [1 - Identyfikacja lokalizacji aktywnej strefy DNS Twojej nazwy domeny](#identification)
     - [2 - Tworzenie rekordów DNS dla subdomen](#dns-records-creation)
 - [Powiązanie, autoryzacja i konfiguracja Twojej subdomeny z usługą OVHcloud](#link-subdomain)
     - [Przypadek 1: Wyświetl stronę WWW z subdomeną na moim hostingu OVHcloud](#link-subdomain-case-1)
@@ -58,15 +68,15 @@ Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
 
 **Nazwa domeny** składa się z poziomów. Poziomy te są zazwyczaj oddzielone znakiem `.` (z wyjątkiem niektórych **rozszerzeń** od *pierwszego poziomu*, takich jak *.co.uk*, *.gouv.fr* i *.notaires.fr*):
 
-- **T**op **L**evel **D**omain (**TLD**): reprezentuje domeny *pierwszego poziomu*. Najczęściej nazywamy je **rozszerzeniami**. Obecnie istnieją 4 typy domen najwyższego poziomu: 
+- **T**op **L**evel **D**omain (**TLD**): reprezentuje nazwy domen *pierwszego poziomu*. Najczęściej nazywamy je **rozszerzeniami**. Obecnie istnieją 4 typy nazw domen najwyższego poziomu: 
 
     - **c**ountry **c**ode **T**op **L**evel **D**omains (**ccTLDs**): składają się z dwóch znaków, odpowiadają różnym krajom na świecie. Na przykład rozszerzenia *.pl*, *.es*, *.it* lub *.fr* są rozszerzeniami ccTLD;
     - **g**eneric **T**op **L**evel **D**omains (**gTLDs**): składają się z minimum trzech znaków i reprezentują bardziej ogólne tematy lub sektory działalności. Na przykład rozszerzenia *.com*, *.net*, *.org* lub *.info* są rozszerzeniami gTLD;
     - **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**):
-    Nowe rozszerzenia utworzone w 2012 r. przez firmę **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) w odpowiedzi na gwałtowny wzrost liczby zgłoszeń dotyczących rejestracji domen. Mogą odnosić się do tematów ogólnych, marek, regionów lub miast. Na przykład rozszerzenia *.love*, *.ovh* lub *.paris* to nowe rozszerzenia gTLD;
+    Nowe rozszerzenia utworzone w 2012 r. przez firmę **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) w odpowiedzi na gwałtowny wzrost liczby zgłoszeń dotyczących rejestracji nazw domen. Mogą odnosić się do tematów ogólnych, marek, regionów lub miast. Na przykład rozszerzenia *.love*, *.ovh* lub *.paris* to nowe rozszerzenia gTLD;
     - **Corp**oration **T**op **L**evel **D**omains (**CorpTLDs**): jest to w rzeczywistości podkategoria nowej GTLD. Na prośbę organizacji **ICANN**, firmy lub organizacje mogą zamówić własny TLD. Na przykład, rozszerzenie *.ovh* to CorpTLD utworzone przez OVHcloud kilka lat temu.
 
-- **S**econd **L**evel **D**omain (**SLD**): reprezentuje domeny *drugiego poziomu*. Najczęściej nazywamy je **labels**. W przypadku zamówienia domeny możesz dowolnie zdefiniować **label** (pod warunkiem, że nie została ona wcześniej zarejestrowana przez innego użytkownika dla tego samego rozszerzenia i z ograniczeniem do 63 znaków). Na przykład *ovhcloud* to etykieta domeny *ovhcloud.com*.
+- **S**econd **L**evel **D**omain (**SLD**): reprezentuje nazwy domen *drugiego poziomu*. Najczęściej nazywamy je **labels**. W przypadku zamówienia nazwy domeny możesz dowolnie zdefiniować **label** (pod warunkiem, że nie została ona wcześniej zarejestrowana przez innego użytkownika dla tego samego rozszerzenia i z ograniczeniem do 63 znaków). Na przykład *ovhcloud* to etykieta nazwy domeny *ovhcloud.com*.
 
 - Third Level Domain (**subdomain**): Od tego trzeciego poziomu mówimy o **subdomenie**. W tym przewodniku wyjaśnimy szczegółowo jego definicję i wyjaśnimy, jak wdrożyć je w ramach Twoich różnych usług.
 
@@ -75,21 +85,21 @@ Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
 
 /// details | Co to jest subdomena?
 
-[Domena](/links/web/domains) może być powiązana z kilkoma rodzajami usług (e-mail, strona internetowa, etc.).
+[Nazwa domeny](/links/web/domains) może być powiązana z kilkoma rodzajami usług (e-mail, strona internetowa, etc.).
 
-Jednocześnie domena może być przypisana tylko do jednej strony WWW.
+Jednocześnie nazwa domeny może być przypisana tylko do jednej strony WWW.
 
 Jednak niektórzy użytkownicy lub organizacje muszą podzielić swoje strony WWW lub usługi e-mail, zachowując jednocześnie tę samą nazwę domeny.
 
-Subdomeny (czasami nazywane **prefiksami**) odpowiadają na potrzebę segmentowania domeny. Dają one właścicielowi możliwość tworzenia kilku podkategorii dla usług www przypisanych do jego domeny, bez konieczności rejestracji nowej domeny.
+Subdomeny (czasami nazywane **prefiksami**) odpowiadają na potrzebę segmentowania nazwy domeny. Dają one abonentowi możliwość tworzenia kilku podkategorii dla usług www przypisanych do jego nazwy domeny, bez konieczności rejestracji nowej nazwy domeny.
 
-Innymi słowy, subdomeny pozwalają na proste strukturyzowanie wszystkich usług www (serwerów DNS, stron www, intranetu, e-maili, itp.) przypisanych do tej samej domeny.
+Innymi słowy, subdomeny pozwalają na proste strukturyzowanie wszystkich usług www (serwerów DNS, stron www, intranetu, e-maili, itp.) przypisanych do tej samej nazwy domeny.
 
-Jak wspomniano powyżej, subdomeny odpowiadają trzeciemu poziomowi (*Third Level Domain*) danej domeny. Najbardziej znaną subdomeną internautów jest obecnie subdomena **W**orld **W**ide **W**eb (**www**). Wiele stron WWW wciąż używa tej subdomeny do wyszukiwania w Internecie.
+Jak wspomniano powyżej, subdomeny odpowiadają trzeciemu poziomowi (*Third Level Domain*) danej nazwy domeny. Najbardziej znaną subdomeną internautów jest obecnie subdomena **W**orld **W**ide **W**eb (**www**). Wiele stron WWW wciąż używa tej subdomeny do wyszukiwania w Internecie.
 
-*www.ovhcloud.com* jest subdomeną domeny *ovhcloud.com*.
+*www.ovhcloud.com* jest subdomeną nazwy domeny *ovhcloud.com*.
 
-Jeśli na przykład dysponujesz domeną *example.com*, możesz utworzyć następujące subdomeny:
+Jeśli na przykład dysponujesz nazwą domeny *example.com*, możesz utworzyć następujące subdomeny:
 
 - *dns1.example.com* i *dns2.example.com* do personalizacji serwerów DNS za pomocą [GLUE records](/pages/web_cloud/domains/glue_registry);
 - *www.example.com*, aby wyświetlić Twoją stronę WWW;
@@ -101,47 +111,47 @@ Jeśli na przykład dysponujesz domeną *example.com*, możesz utworzyć następ
 - *sav.example.com*, *sales.example.com*, *legal.example.com*, aby umożliwić Twoim klientom kontakt z różnymi strukturami wewnętrznymi Twojej firmy lub aby nadać priorytet Twoim pracownikom w zależności od wewnętrznych usług, do których należą;
 - itp.
 
-Poza trzecim poziomem domeny, jest on również uważany za **subdomenę**. Aby przytoczyć jeden z powyższych przykładów, możesz utworzyć subdomenę *preprod.app.example.com* w celu przetestowania nowej wersji aplikacji www. Nie powoduje to zablokowania dostępu do aktualnej wersji aplikacji na *app.example.com*.
+Poza trzecim poziomem nazwy domeny, jest on również uważany za **subdomenę**. Aby przytoczyć jeden z powyższych przykładów, możesz utworzyć subdomenę *preprod.app.example.com* w celu przetestowania nowej wersji aplikacji www. Nie powoduje to zablokowania dostępu do aktualnej wersji aplikacji na *app.example.com*.
 
 ///
 
 ### Jak utworzyć subdomenę? <a name="subdomain-creation"></a>
 
-Wszystkie [domeny](/links/web/domains) potrzebują do działania **strefy DNS**. Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Jest, w pewnym sensie, centrum ruchu wskazówek.
+Wszystkie [nazwy domen](/links/web/domains) potrzebują do działania **strefy DNS**. Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Jest, w pewnym sensie, centrum ruchu wskazówek.
 
 Więcej informacji o strefach DNS znajdziesz w przewodniku "[Tworzenie strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)" i "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-**Wszystkie subdomeny są konfigurowane w aktywnej strefie DNS domeny. Można to zrobić, dodając rekordy DNS**
+**Wszystkie subdomeny są konfigurowane w aktywnej strefie DNS nazwy domeny. Można to zrobić, dodając rekordy DNS**
 
-#### 1 - Identyfikacja lokalizacji aktywnej strefy DNS Twojej domeny <a name="identification"></a>
+#### 1 - Identyfikacja lokalizacji aktywnej strefy DNS Twojej nazwy domeny <a name="identification"></a>
 
 Możliwe są dwa przypadki:
 
-- Aktywna strefa DNS Twojej domeny jest obecna w OVHcloud;
-- Aktywna strefa DNS Twojej domeny jest zainstalowana gdzie indziej.
+- Aktywna strefa DNS Twojej nazwy domeny jest obecna w OVHcloud;
+- Aktywna strefa DNS Twojej nazwy domeny jest zainstalowana gdzie indziej.
 
 > [!warning]
 >
-> Aktywna strefa DNS Twojej domeny nie musi być zarządzana u tego samego dostawcy, co Twoja domena.
+> Aktywna strefa DNS Twojej nazwy domeny nie musi być zarządzana u tego samego dostawcy, co Twoja nazwa domeny.
 >
-> 1 : Aby ustalić, gdzie znajduje się aktywna strefa DNS domeny zarejestrowanej w OVHcloud, skorzystaj z naszego przewodnika "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
+> 1 : Aby ustalić, gdzie znajduje się aktywna strefa DNS nazwy domeny zarejestrowanej w OVHcloud, skorzystaj z naszego przewodnika "[Modyfikacja serwerów DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
-> 2: Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, skontaktuj się z *aktualnym operatorem* Twojej domeny, aby dowiedzieć się, gdzie hostowana jest aktywna strefa DNS. Aby wykonać transfer domeny do OVHcloud, zapoznaj się z naszym [przewodnikiem](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> 2: Jeśli Twoja nazwa domeny nie jest zarejestrowana w OVHcloud, skontaktuj się z *aktualnym operatorem* Twojej nazwy domeny, aby dowiedzieć się, gdzie hostowana jest aktywna strefa DNS. Aby wykonać transfer nazwy domeny do OVHcloud, zapoznaj się z naszym [przewodnikiem](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 >
 
-Jeśli serwery DNS zadeklarowane dla Twojej domeny mają jedną z dwóch form:
+Jeśli serwery DNS zadeklarowane dla Twojej nazwy domeny mają jedną z dwóch form:
 
 - `dnsXX.ovh.net` i `nsXX.ovh.net` (gdzie każdy z "X" odpowiada cyfrze);
 - `dnsXX.ovh.ca` i `nsXX.ovh.ca` (gdzie każdy z "X" odpowiada cyfrze);
 - `dns200.anycast.me` i `ns200.anycast.me`.
 
-Oznacza to, że aktywna strefa DNS Twojej domeny jest aktywna w OVHcloud.
+Oznacza to, że aktywna strefa DNS Twojej nazwy domeny jest aktywna w OVHcloud.
 
 W przeciwnym razie skontaktuj się z dostawcą DNS, aby utworzyć subdomeny z nazwą domeny.
 
 #### 2 - Tworzenie rekordów DNS dla subdomen <a name="dns-records-creation"></a>
 
-Aby dodać subdomeny do aktywnej strefy DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+Aby dodać subdomeny do aktywnej strefy DNS Twojej nazwy domeny, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 Możesz na przykład dodać:
 
@@ -151,7 +161,7 @@ Możesz na przykład dodać:
 
 > [!primary]
 >
-> Modyfikacja strefy DNS powiązanej z domeną spowoduje opóźnienie propagacji w przedziale od **4** do **24** godzin, co jest maksymalnym czasem propagacji.
+> Modyfikacja strefy DNS powiązanej z nazwą domeny spowoduje opóźnienie propagacji w przedziale od **4** do **24** godzin, co jest maksymalnym czasem propagacji.
 >
 > Ponadto, podobnie jak w przypadku nazwy domeny jako takiej, samo utworzenie rekordu DNS dla subdomeny zazwyczaj nie wystarczy, aby działała ona z "docelową" usługą, którą zdefiniowałeś dla niej w rekordzie DNS. 
 >
@@ -169,7 +179,7 @@ W dalszej części dowiesz się, jak autoryzować subdomenę, aby miała dostęp
 
 Z subdomeną można korzystać z kilku usług z zakresu "Web cloud". Procedury asocjacyjne są podobne do tych, które powinieneś przeprowadzać z nazwą domeny. Przedstawimy tylko najczęstsze przypadki.
 
-W przypadku usług, które nie zostały wymienione, zapoznaj się z dokumentacją dotyczącą danej usługi. Pozwala to na określenie, czy subdomena może być używana z tą domeną.
+W przypadku usług, które nie zostały wymienione, zapoznaj się z dokumentacją dotyczącą danej usługi. Pozwala to na określenie, czy subdomena może być używana z tą nazwą domeny.
 
 #### Przypadek 1: Wyświetl stronę WWW z subdomeną na moim hostingu OVHcloud <a name="link-subdomain-case-1"></a>
 
@@ -177,12 +187,12 @@ Podobnie jak w przypadku nazwy domeny i aby subdomena mogła wyświetlać zawart
 
 To tutaj zezwalasz na dostęp Twojej subdomeny do hostingu, na którym znajduje się Twoja strona WWW.
 
-Więcej informacji na temat konfigurowania domeny lub subdomeny na hostingu znajdziesz w przewodniku "[Udostępnianie hostingu dla kilku stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Bez względu na to, czy jest to domena czy subdomena, procedura jest taka sama.
+Więcej informacji na temat konfigurowania nazwy domeny lub subdomeny na hostingu znajdziesz w przewodniku "[Udostępnianie hostingu dla kilku stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)". Bez względu na to, czy jest to nazwa domeny czy subdomena, procedura jest taka sama.
 
 > [!warning]
 >
 > Dodanie nazwy domeny lub poddomeny na jednym z witryn internetowych Twojej oferty hostingu WWW może wymagać ustawienia **tokena weryfikacyjnego**.
-> W przypadku subdomeny ten sam token nie jest brany pod uwagę i musi zostać dodany nie dla subdomeny, ale dla nazwy domeny. W tym przypadku dodaj dodatkowo token w postaci rekordu DNS typu TXT dla nazwy domeny w aktywnej strefie DNS Twojej domeny.
+> W przypadku subdomeny ten sam token nie jest brany pod uwagę i musi zostać dodany nie dla subdomeny, ale dla nazwy domeny. W tym przypadku dodaj dodatkowo token w postaci rekordu DNS typu TXT dla nazwy domeny w aktywnej strefie DNS Twojej nazwy domeny.
 
 #### Przypadek 2 - Tworzenie kont e-mail Exchange z subdomeną <a name="link-subdomain-case-2"></a>
 
@@ -205,8 +215,8 @@ Dzięki temu będziesz mógł zadeklarować subdomenę na platformie E-mail Pro.
 Aby uzyskać więcej informacji na temat konfiguracji platformy E-mail Pro, zapoznaj się z następującymi przewodnikami:
 
 - [Pierwsze kroki z usługą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
-- [Dodaj domenę do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
-- [Dodaj rekord CNAME, aby zweryfikować domenę w usłudze e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+- [Dodaj nazwę domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+- [Dodaj rekord CNAME, aby zweryfikować nazwę domeny w usłudze e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -214,7 +224,7 @@ Aby uzyskać więcej informacji na temat konfiguracji platformy E-mail Pro, zapo
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Modyfikacja serwerów DNS nazwy domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Instalacja kilku stron WWW na hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
@@ -222,9 +232,9 @@ Aby uzyskać więcej informacji na temat konfiguracji platformy E-mail Pro, zapo
 
 [Pierwsze kroki z usługą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Dodaj domenę do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+[Dodaj nazwę domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-[Dodaj rekord CNAME, aby potwierdzić domenę w usłudze e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+[Dodaj rekord CNAME, aby potwierdzić nazwę domeny w usłudze e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

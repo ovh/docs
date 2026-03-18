@@ -18,7 +18,17 @@ Wenn Sie Ihren VPS als DNS-Server konfigurieren, können Sie einen OVHcloud DNS-
 
 - Sie haben adminstrativen Zugriff auf einen Domainnamen.
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 >
@@ -30,8 +40,6 @@ Wenn Sie Ihren VPS als DNS-Server konfigurieren, können Sie einen OVHcloud DNS-
 ## In der praktischen Anwendung
 
 ### Schritt 1: Abruf des Validierungscodes <a name="retrievecode"></a>
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter **Virtual Private Server** aus.
 
 Gehen Sie zum Tab `Sekundärer DNS`{.action} und klicken Sie auf den Button `Domain hinzufügen`{.action}.
 

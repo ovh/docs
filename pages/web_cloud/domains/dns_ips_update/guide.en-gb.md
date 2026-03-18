@@ -12,7 +12,6 @@ This guide explains the IP addresses changes affecting part of our DNS servers h
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](/links/manager) to manage the domain name concerned.
 
 ## Instructions
 

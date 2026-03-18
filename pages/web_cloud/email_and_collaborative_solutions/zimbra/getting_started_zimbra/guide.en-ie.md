@@ -22,13 +22,22 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 
 - An email account on our Zimbra OVHcloud email solution
 - An [OVHcloud domain name](/links/web/domains)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Zimbra](/links/control-panel/web-zimbra)
+- **Navigation path:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Instructions
 
 **Summary**
 
-- [Access your service management](#zimbra-access)
 - [Configure your Zimbra service](#zimbra-conf)
 - [Organizations](#organizations)
     - [Create an organization](#organizations-create)
@@ -43,14 +52,6 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 - [Redirections](#redirections)
 - [Alias](#alias)
 - [Automatic Replies](#autoreply)
-
-### Access your service management <a name="zimbra-access"></a>
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `Zimbra Mail`{.action}.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configure your Zimbra service <a name="zimbra-conf"></a>
 
@@ -133,7 +134,7 @@ Select the tab that corresponds to your choice:
 >> - **Custom configuration**: If you have already configured an email solution on your domain name, you can choose the elements that interest you.
 >>    - *Configure the MX record automatically*: This allows you to enter the OVHcloud incoming servers automatically (applies to all OVHcloud email solutions).
 >>    - *Configure the SPF record automatically*: This allows you to enter the record automatically, authorizing the OVHcloud sending email servers to send your emails. This registration is valid for all OVHcloud email solutions.
->>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending
+>>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending.
 >>    - *Automatically configure the SRV record*: it allows the automatic configuration of the parameters of an email account when you add it to an email software (Outlook, Mail for Mac, Thunderbird, etc.).
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
@@ -221,14 +222,11 @@ Click `Confirm`{.action} to start creating the account.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Change plan <a name="emails-offer"></a>
+#### Change plan <a name="emails-offer"></a>
 
 It is possible to upgrade or downgrade any Zimbra account.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Web Cloud`{.action} section.
-1. Click on `Zimbra Mail`{.action}.
-1. Click on the `Email account`{.action} tab.
+1. Click on the `Email accounts`{.action} tab.
 1. To the right of the email account for which you want to switch to a higher plan, click on `⁝`{.action}.
 1. Click on `Change plan`{.action}.
 
@@ -291,7 +289,7 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 
 Alias addresses for your email account allow you to keep your account's email address private. You can disclose alias addresses to your contacts and emails sent to these addresses will then be redirected to your email account.
 
-You can create an alias in the [OVHcloud Control Panel](/links/manager). Click on the steps below:
+Click on the steps below to create an alias:
 
 > [!tabs]
 > **Step 1**

@@ -32,7 +32,7 @@ updated: 2026-01-23
 
 - Un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Une ou plusieurs adresses [Additional IP](/links/network/additional-ip)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
 
 > [!warning]
 >
@@ -190,6 +190,8 @@ systemctl restart networking.service
 
 
 #### Exemple de configuration VM cliente
+
+La VM doit être attachée au bridge `vmbr0`.
 
 > [!tabs]
 > Debian (ifupdown)

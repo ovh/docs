@@ -1,29 +1,64 @@
 ---
 title: 'Que faire en cas de compte bloqué pour spam ?'
 excerpt: 'Découvrez comment réagir lorsque votre adresse a été bloquée pour spam'
-updated: 2025-04-28
+updated: 2026-03-05
 ---
 
 ## Objectif
 
-Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activité suspecte a été détectée au niveau de l'envoi des e-mails depuis cette adresse. Dans cette situation, vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail. Vous devez alors comprendre pourquoi une activité suspecte a été détectée et réaliser des actions afin d'éviter que cette situation ne se reproduise.
+Lorsque votre adresse e-mail est bloquée pour spam, cela signifie qu'une activité suspecte a été détectée lors de l'envoi d'e-mails depuis cette adresse. Dans cette situation, vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail. Vous devez alors comprendre pourquoi une activité suspecte a été détectée et agir pour éviter que cette situation ne se reproduise.
 
-**Découvrez comment réagir lorsque votre adresse est bloquée pour SPAM.**
+**Découvrez comment réagir lorsque votre adresse est bloquée pour spam.**
 
 ## Prérequis
 
 - Disposer d'une [offre e-mail OVHcloud](/links/web/emails).
-- Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique <a name="instructions"></a>
 
-Avant de poursuivre et si le blocage concerne une adresse e-mail de type MX Plan, identifiez la version que vous possédez pour suivre le bon processus de déblocage. Vérifiez, à l'aide du tableau ci-dessous, comment distinguer les deux versions.
+Avant de poursuivre et si le blocage concerne une adresse e-mail de type MX Plan, identifiez la technologie e-mail utilisée par votre offre pour suivre le bon processus de déblocage.
 
-|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
+> [!primary]
+>
+> **Identifier la technologie e-mail de votre offre MX Plan.**
+>
+> En fonction de la date d'activation de votre offre MX Plan ou d'une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
+>
+> - Depuis l'onglet `Informations générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action}.
+>
+> ![Identifier la technologie e-mail dans l'espace client MX Plan](images/technology-email.png){.thumbnail .w-500}
+>
+> - Si la technologie affichée est **RoundCube**, suivez les instructions de l'onglet **MX Plan - RoundCube**.
+> - Si la technologie affichée est **OWA** ou **Zimbra**, suivez les instructions de l'onglet **MX Plan - OWA / Zimbra**.
 
-### Étape 1 : pourquoi votre adresse e-mail est bloquée pour SPAM ? <a name="step1"></a>
+### Étape 1 : pourquoi votre adresse e-mail est bloquée pour spam ? <a name="step1"></a>
 
 Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation, vous ne pouvez plus envoyer d'e-mails depuis cette adresse e-mail.
 
@@ -31,73 +66,59 @@ Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l
 >
 > Une « activité suspecte » signifie que :
 >
-> - Le serveur anti-spam, qui scanne les e-mails à l'envoi, a constaté qu'un ou plusieurs éléments de l'e-mail sont considérés comme suspects et peuvent constituer un e-mail SPAM.
+> - Le serveur anti-spam, qui scanne les e-mails à l'envoi, a constaté qu'un ou plusieurs éléments de l'e-mail sont considérés comme suspects et peuvent constituer un e-mail spam.
 > - La fréquence d'envoi et le nombre de destinataires sont trop importants et contribuent à considérer l'envoi comme du spamming. En effet, pour réaliser des envois massifs, il est nécessaire d'utiliser un service de mailing list et non une adresse e-mail standard.
 >
-> Les raisons précises d'un blocage ne peuvent pas être divulguées pour éviter toute tentative de contournement du système de détection des SPAM. Pour tester le contenu d'un e-mail, vous pouvez utiliser un outil externe à OVHcloud tel que [Mailtester](https://www.mail-tester.com/).
+> Les raisons précises d'un blocage ne peuvent pas être divulguées pour éviter toute tentative de contournement du système de détection des spam. Pour tester le contenu d'un e-mail, vous pouvez utiliser un outil externe à OVHcloud tel que [Mailtester](https://www.mail-tester.com/).
 >
 
-Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement à l'origine du blocage, suite à une utilisation inhabituelle de l'adresse e-mail (par exemple, suite à la réalisation d'envois massifs d'e-mails). Si c'est le cas, vous devez corriger la situation avant de débloquer l'adresse.
+Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement à l'origine du blocage, suite à une utilisation inhabituelle de l'adresse e-mail (par exemple, suite à des envois massifs d'e-mails). Si c'est le cas, vous devez corriger la situation avant de débloquer l'adresse.
 
-Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prenez les mesures nécessaires et détaillées ci-dessous :
+Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prenez les mesures suivantes :
 
-- Effectuez une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour SPAM et appliquez un correctif si ces derniers sont infectés.
+- Effectuez une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquez un correctif si ces derniers sont infectés.
 
-- Vérifiez tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour SPAM (par exemple : télécopieur, logiciel métier, logiciel de messagerie).
+- Vérifiez tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour spam (par exemple : télécopieur, logiciel métier, logiciel de messagerie).
+
+- Vérifiez les redirections appliquées sur l'adresse e-mail bloquée pour spam.
+
+- Vérifiez les filtres appliqués sur l'adresse e-mail bloquée pour spam, via un logiciel de messagerie ou le webmail.
+
+- Vérifiez les réponses automatiques configurées sur l'adresse e-mail bloquée pour spam, via un logiciel de messagerie ou le webmail.
 
 ### Étape 2 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
-Sélectionnez l'offre e-mail concernée dans les onglets suivants:
+Sélectionnez l'offre e-mail concernée dans les onglets suivants :
 
 > [!tabs]
 > **Exchange**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
->> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.<br>
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. L'adresse e-mail ne se débloque pas automatiquement. Contactez le support via le ticket d'assistance en répondant aux 3 questions posées.<br>
 >> Passez à [l'étape 3](#step3) du guide.
 >>
->> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+>> ![Colonne statut bloqué dans l'onglet Comptes e-mail Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `Email Pro`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
->> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées. <br>
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. L'adresse e-mail ne se débloque pas automatiquement. Contactez le support via le ticket d'assistance en répondant aux 3 questions posées. <br>
 >> Passez à [l'étape 3](#step3) du guide.
 >>
->> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>> ![Colonne statut Spam dans l'onglet Comptes e-mail Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
-> **MX plan - Nouvelle version**
+> **MX Plan - OWA / Zimbra**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `MX Plan`{.action}.
->> 1. Sélectionnez le domaine concerné.
->>
->> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.<br>
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. L'adresse e-mail ne se débloque pas automatiquement. Contactez le support via le ticket d'assistance en répondant aux 3 questions posées.<br>
 >> Passez à [l'étape 3](#step3) du guide.
 >>
->> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+>> ![Colonne statut Spam dans l'onglet Comptes e-mail MX Plan](images/blocked-for-SPAM-01-03.png){.thumbnail}
 >>
-> **MX plan - Historique**
+> **MX Plan - RoundCube**
 >>
->> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas de ticket d'assistance. Veillez bien à consulter [l'étape 1](#step1) de ce guide avant de suivre les instructions suivante.
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `MX Plan`{.action}.
->> 1. Sélectionnez le domaine concerné.
+>> Si le blocage concerne une adresse e-mail MX Plan avec le webmail **RoundCube**, il n'y a pas de ticket d'assistance. Veillez bien à consulter [l'étape 1](#step1) de ce guide avant de suivre les instructions suivantes.
 >>
 >> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Votre adresse e-mail est maintenant débloquée, vous n'avez pas besoin de suivre l'[étape 3](#step3).
 >>
->> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
+>> ![Colonne Bloqué pour SPAM dans l'onglet Emails MX Plan Roundcube](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -105,13 +126,13 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 
 ### Étape 3 : accéder au ticket d'assistance <a name="step3"></a>
 
-Suite à l'étape 2, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur le bouton `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.» puis cliquez sur `Voir le détail`{.action}.
+Suite à l'étape 2, vous êtes alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur le bouton `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam. » puis cliquez sur `Voir le détail`{.action}.
 
-![spam](images/blocked-for-SPAM-02.png){.thumbnail}
+![Fenêtre Mes demandes d'assistance avec le ticket de blocage spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
-Vous retrouverez ainsi l'e-mail qui vous a été transmis, celui-ci génère un ticket d'assistance auprès du support.
+Vous retrouvez ainsi l'e-mail qui vous a été transmis, celui-ci génère un ticket d'assistance auprès du support.
 
-Le ticket d'assistance qui a été créé se présente comme ci-dessous :
+Le ticket d'assistance se présente comme suit :
 
 >
 > Cher Client,
@@ -141,13 +162,13 @@ Ces en-têtes permettent de déterminer le cheminement et l'origine des e-mails 
 
 > [!primary]
 >
-> Une fois que votre ticket a été traité par le support client et que votre adresse e-mail a été débloquée, modifiez le mot de passe de l'adresse e-mail, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
+> Une fois que votre ticket a été traité par le support client et que votre adresse e-mail a été débloquée, modifiez le mot de passe de l'adresse e-mail, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL. Vous pouvez également consulter [Les conseils de la CNIL pour un bon mot de passe](https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-un-bon-mot-de-passe)
 
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+Pour une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 

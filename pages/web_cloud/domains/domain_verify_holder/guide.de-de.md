@@ -24,11 +24,21 @@ In diesem Fall kann OVHcloud keine Rückerstattung anbieten.
 ## Voraussetzungen
 
 - Sie haben eine bei OVHcloud registrierten [Domainnamen](/links/web/domains).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine E-Mail von OVHcloud erhalten, die besagt, dass bezüglich der Kontaktdaten Ihres Domaininhabers eine Aktion erforderlich ist.
 - Überprüfen Sie die folgenden Punkte, um sicherzustellen, dass es sich nicht um eine betrügerische E-Mail handelt:
     - Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (Beispiel: `domain.tld`).
     - Die in der E-Mail angegebene URL beginnt mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## In der praktischen Anwendung
 
@@ -48,22 +58,16 @@ Falls diese Methode nicht funktioniert, kann der Inhaber die E-Mail-Adresse manu
 
 ### 2 - Korrigieren oder vervollständigen Sie die Kontaktdaten des Domaininhabers als Administrator
 
-Klicken Sie auf die Tabs unten, um jeden der **5** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Schritt 2**
->>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf [diesen Link](/links/control-panel/web-domains) und wählen Sie den Domainnamen aus.
 >>
 >> ![Domainnamen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Schritt 3**
+> **Schritt 2**
 >>
 >> Auf der angezeigten Seite prüfen Sie, ob Ihre Domain von diesem Verfahren abgedeckt wird, da ein Banner (gelb oder rot) die durchzuführende Aktion anzeigt.
 >>
@@ -71,13 +75,13 @@ Klicken Sie auf die Tabs unten, um jeden der **5** Schritte anzuzeigen.
 >>
 >> ![Inhaber ändern](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
-> **Schritt 4**
+> **Schritt 3**
 >>
 >> Auf der neuen Seite klicken Sie auf den Button `Ändern`{.action} im Bereich **Inhaber**. 
 >>
 >> ![Kontakte und Inhaber verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Schritt 5**
+> **Schritt 4**
 >>
 >> > [!warning]
 >> >
@@ -131,7 +135,7 @@ Für bestimmte Erweiterungen (z. B.: .fr, .it, .es) kann der Domainadministrator
 > Falls die Korrekturen im ersten Teil dieser Anleitung den Start eines Wechsels des Inhabers für die Domain erfordern, vollenden Sie den Wechsel des Inhabers **vor** der Fortsetzung der in dieser Anleitung beschriebenen Aktionen.
 >
 
-Klicken Sie auf die Tabs unten, um jeden der **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -174,4 +178,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/links/community) bei.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -13,7 +13,17 @@ With rescue mode, you can always access your data, even if the server's OS or th
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal), a [VPS](/links/bare-metal/vps) or a [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.

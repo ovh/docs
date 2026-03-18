@@ -51,7 +51,7 @@ When you request an LLM generation through our unified endpoint, you can provide
 
 These queries are divided into three parts: tag, ranker, and condition:
 
-- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.). You can find the possible values on [our catalog](https://endpoints.ai.cloud.ovh.net/catalog).
+- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.). You can find the possible values on [our catalog](/links/public-cloud/ai-endpoints-catalog).
 - **Ranker**: The ranker defines a model's capability compared to other models. We currently support the following rankers: fastest, cheapest, biggest, latest and smallest.
 - **Condition**: The condition allows you to filter models based on strict requirements on some of the model specifications. Currently supported specs are context_size, max_tokens, input_cost, params (number of parameters) and endpoint_publication_date (Date we made the model available on AI Endpoints). These conditions support basic operators (<, >, =).
 
@@ -64,7 +64,7 @@ Below are some example queries and the models they currently resolve to. Please 
 | mistral@latest?context_size > 100000 | **Example:** Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
 | llama@biggest?input_cost<0.5 | **Example:** Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
 
-You can visit our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) to learn more about the different model specifications.
+You can visit our [catalog](/links/public-cloud/ai-endpoints-catalog) to learn more about the different model specifications.
 
 ### Example Usage
 

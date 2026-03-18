@@ -1,23 +1,24 @@
 ---
-title: Statistiques sur la QoS des appels
-excerpt: Statistiques sur la QoS des appels
+title: "Statistiques sur la QoS des appels"
+excerpt: "Découvrez comment exploiter les statistiques de qualité de service (QoS) de vos appels VoIP via l'API OVHcloud"
 updated: 2018-03-26
 flag: hidden
 ---
 
-## 
-Pour connaitre les bases de notre API :
+## Prérequis
 
-[Bases de l'API](/pages/manage_and_operate/api/first-steps)
+- Connaître les [bases de l'API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-## 
+## Endpoint API
+
 L'ensemble des points relatifs aux derniers appels selon le choix de la métrique :
 
 ```
 /telephony/{billingAccount}/line/{serviceName}/statistics
 ```
 
-## 
+## Métriques disponibles
+
 Vous pouvez récuperer l'ensemble des points relatifs aux derniers appels via la méthode REST :
 
 ```
@@ -33,7 +34,8 @@ Vous pouvez récuperer l'ensemble des points relatifs aux derniers appels via la
 
 ![](images/img_2547.jpg){.thumbnail}
 
-## 
+## Exploitation des données
+
 Cette section porte sur l'exploitation des données pour en faire un graphique. Dans notre exemple, 
 nous allons utiliser la librairie highcharts en javascript.
 
@@ -213,3 +215,6 @@ Bien sûr, les valeurs AKCODE, ASCODE et CKCODE sont à remplacer par les identi
 
 ![](images/img_2546.jpg){.thumbnail}
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mbyfj1JyK7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -22,7 +22,7 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
+> Si vous devez également changer le **titulaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de titulaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
 > Si, en plus du transfert de votre nom de domaine, vous souhaitez migrer les services qui lui sont associés (site web, e-mail, etc.), consultez d'abord notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » avant de poursuivre.
 > Ce guide explique en détails comment migrer l'ensemble de vos services sans coupures.
@@ -35,33 +35,44 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 
 - Le nom de domaine est enregistré auprès d'un autre bureau d'enregistrement.
 - Le nom de domaine existe depuis plus de 60 jours.
-- Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
+- Le nom de domaine n'a pas été transféré ou n'a pas changé de titulaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
 - Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
-- Avoir prévenu le propriétaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
+- Avoir prévenu le titulaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
 > [!success]
 >
-> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](/links/web/domains-tld) puis suivez les étapes de ce guide.
-> 
+> Pour connaître les conditions tarifaires pour le transfert d'un nom de domaine en fonction de son extension, renseignez le nom de domaine que vous souhaitez transférer sur notre page [www.ovhcloud.com/fr/domains/tld/](/links/web/domains-tld) puis suivez les étapes de ce guide.
+>
 
 La procédure de transfert comporte plusieurs étapes, impliquant la prise de contact avec votre registre actuel et OVHcloud. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
 
 |Étapes|Description|Qui est impliqué ?|Où ?|Temps requis|
 |---|---|---|---|---|
-|[1](#step1)|[Vérification des informations associées au nom de domaine](#step1)|L'administrateur du domaine|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
-|[2](#step2)|[Déverrouillage du domaine et récupération du code de transfert](#step2)|L'administrateur du domaine, avec l'autorisation du propriétaire|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
-|[3](#step3)|[Demande de transfert de nom de domaine](#step3)|Toute personne possédant le code de transfert, également avec la permission du propriétaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
+|[1](#step1)|[Vérification des informations associées au nom de domaine](#step1)|L'administrateur du nom de domaine|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
+|[2](#step2)|[Déverrouillage du nom de domaine et récupération du code de transfert](#step2)|L'administrateur du nom de domaine, avec l'autorisation du titulaire|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
+|[3](#step3)|[Demande de transfert de nom de domaine](#step3)|Toute personne possédant le code de transfert, également avec la permission du titulaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
 |[4](#step4)|[Validation du transfert](#step4)|Le bureau d'enregistrement actuel|À la demande de l'organisation gérant l'extension de nom de domaine|Cinq jours maximum|
 
 > [!warning]
 >
-> La procédure exacte de transfert de domaine peut varier, en particulier dans le cas de certains **TLD** de code de pays (**ccTLD**, tels que .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) et de quelques **TLD** spéciaux (.am, .fm, etc.). Selon l'extension de votre nom de domaine, des prérequis supplémentaires peuvent être nécessaires. Nous vous recommandons de vérifier d'abord les informations affichées pour l'extension concernée, sur notre site Web: <https://www.ovhcloud.com/fr/domains/tld/>.
+> La procédure exacte de transfert de nom de domaine peut varier, en particulier dans le cas de certains **TLD** de code de pays (**ccTLD**, tels que .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) et de quelques **TLD** spéciaux (.am, .fm, etc.). Selon l'extension de votre nom de domaine, des prérequis supplémentaires peuvent être nécessaires. Nous vous recommandons de vérifier d'abord les informations affichées pour l'extension concernée, sur notre site Web: <https://www.ovhcloud.com/fr/domains/tld/>.
 >
 
 ### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
@@ -106,18 +117,18 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 >
 > Tout au long du processus de commande, nous vous conseillons de prendre en compte les points suivants :
 >
-> - **données sur le propriétaire du nom de domaine.** Particulièrement depuis l'entrée en vigueur du RGPD, il est essentiel de vous assurer que les informations sur le propriétaire du nom de domaine correspondent à celles stockées par votre bureau d'enregistrement actuel. Cela vous évitera d'être soupçonné de vol de nom de domaine ;
+> - **données sur le titulaire du nom de domaine.** Particulièrement depuis l'entrée en vigueur du RGPD, il est essentiel de vous assurer que les informations sur le titulaire du nom de domaine correspondent à celles stockées par votre bureau d'enregistrement actuel. Cela vous évitera d'être soupçonné de vol de nom de domaine ;
 >
 > - **saisie des serveurs DNS pour votre nom de domaine.** Si vous utilisez actuellement votre nom de domaine pour maintenir un site internet ou un service de messagerie en ligne, vous devrez spécifier leurs serveurs DNS afin d'éviter toute interruption de service.
 >
 
-#### Gestion du propriétaire et détails des serveurs DNS
+#### Gestion du titulaire et détails des serveurs DNS
 
 - En cliquant sur `Modifier la configuration`{.action} dans cette étape, vous pouvez entrer les noms des serveurs DNS que le nom de domaine utilise actuellement. De cette manière, le nom de domaine sera déjà associé à ces serveurs DNS dans la configuration OVHcloud.
 
 - Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut alors devenir nécessaire.
 
-- Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
+- Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le titulaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le titulaire`{.action}.
 
 ![domaine](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
@@ -145,7 +156,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 
 > [!primary]
 >
-> Le transfert d'un domaine avec l'extension ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre nom de domaine et récupérer son code de transfert auprès du bureau d'enregistrement actuel.
+> Le transfert d'un nom de domaine avec l'extension ".fr" diffère légèrement du processus décrit ci-dessus. Vous devez déverrouiller votre nom de domaine et récupérer son code de transfert auprès du bureau d'enregistrement actuel.
 > Initiez la commande du transfert et renseignez le code de transfert comme décrit précédemment.
 >
 > Une fois le transfert initié, le délai total du **transfert d'un nom de domaine en ".fr" prend minimum 8 jours incompressibles.**
@@ -167,7 +178,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 >
 > Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
 >
-> En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du domaine sera peut être nécessaire juste après le transfert.
+> En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du nom de domaine sera peut être nécessaire juste après le transfert.
 >
 
 ## Aller plus loin

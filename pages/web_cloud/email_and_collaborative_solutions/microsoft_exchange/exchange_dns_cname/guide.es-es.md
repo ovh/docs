@@ -16,10 +16,29 @@ Al añadir un dominio a su plataforma de correo, es posible que se le pida que c
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
-- Disponer de una solución [Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
+- Disponer de una solución [Exchange](/links/web/emails-exchange) o [Email Pro](/links/web/email-pro).
 - Haber añadido un dominio a su plataforma de correo. Si lo necesita, puede consultar la guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 - Estar en condiciones de [configurar la zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio en cuestión, desde el área de cliente de OVHcloud o desde la interfaz de gestión en la que esté registrado.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+**Exchange:**
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+**Email Pro:**
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
@@ -29,7 +48,7 @@ Aquí se utiliza el registro CNAME como alias, que apunta a un destino que, a su
 
 En el marco de nuestras ofertas [**Hosted Exchange**](/links/web/emails-hosted-exchange) y [**Email Pro**](/links/web/email-pro), este registro CNAME se utiliza como código de validación (token) que será visible en la zona DNS del dominio que se quiera validar. El objetivo es comprobar que el usuario de la plataforma de correo es el gestor del dominio que añade.
 
-En el diagrama siguiente, la plataforma de correo electrónico ([Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro)) se representa mediante el marco verde.<br>
+En el diagrama siguiente, la plataforma de correo electrónico ([Exchange](/links/web/emails-exchange) o [Email Pro](/links/web/email-pro)) se representa mediante el marco verde.<br>
 Para formar las direcciones de correo electrónico, añada cuentas (representadas en este caso por "**contacto**", "**john.smith**" y "**mary.johnson**").<br>
 El dominio **mydomain.ovh** se ha añadido a la plataforma de correo (consultar la guía "[Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ").<br>
 La plataforma genera un código de validación (en nuestro ejemplo, "**abcd1-check**").<br>

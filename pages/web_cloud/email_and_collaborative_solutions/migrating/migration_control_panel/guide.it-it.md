@@ -20,7 +20,33 @@ OVHcloud propone diverse soluzioni email: MX Plan (venduto da solo o incluso in 
 - Disporre di un account email MX Plan (incluso in una soluzione di [hosting Web OVHcloud](/links/web/hosting)).
 - Disporre di un servizio [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) con almeno un account non configurato (che apparirà nel formato "@configureme.me").
 - **Non aver configurato un reindirizzamento sull'indirizzo email MX Plan che vuoi migrare**.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**MX Plan:**
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 

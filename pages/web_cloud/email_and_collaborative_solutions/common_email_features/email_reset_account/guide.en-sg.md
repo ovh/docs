@@ -1,7 +1,7 @@
 ---
 title: Deleting an email account
 excerpt: Find out how to delete or reset an email account of your email solution
-updated: 2025-04-28
+updated: 2026-02-19
 ---
 
 ## Objective
@@ -17,16 +17,22 @@ You want to:
 ## Requirements
 
 - A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting))
-- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
 To check if your MX Plan solution is a legacy version, please refer to the table in the “[Identifying your MX Plan solution](#whichmxplan)” section of this guide.
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. Click `MX Plan`{.action}.
-1. Select the domain concerned.
 1. Go to the `Email accounts`{.action} tab.
 1. The window that appears will display the existing email accounts. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.
 

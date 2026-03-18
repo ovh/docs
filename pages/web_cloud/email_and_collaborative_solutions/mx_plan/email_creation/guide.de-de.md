@@ -22,7 +22,6 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
     - Ein [Webhosting](/links/web/hosting).
     - Ein aktiviertes [Kostenloses Hosting 100M](/links/web/domains-free-hosting), inklusive mit einem Domainnamen.
     - Ein separat bestelltes MX Plan Angebot.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -31,13 +30,20 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 > - Hinweis zu Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/pages/web_cloud/web_hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](/links/manager) durchführen, indem Sie die betreffende Domain auswählen.
 > - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](/links/web/hosting), bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web_cloud/web_hosting/activate-email-hosting).
 
-## ## In der praktischen Anwendung <a name="instructions"></a>
+<!-- CP-NAV-START:web-mx-plan -->
+---
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `MX Plan`{.action}.
-1. Wählen Sie die betreffende Domain aus.
-1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigationspfad:** `Web Cloud`{.action} > `MX Plan`{.action} > Wählen Sie Ihren MX Plan Dienst aus
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
+
+## In der praktischen Anwendung <a name="instructions"></a>
+
+**Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
 
 > [!primary]
 >
@@ -140,10 +146,10 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein.
 
 - **Name des Accounts**: Fügen Sie hier Ihre gewünschte E-Mail-Adresse ein (zum Beispiel vorname.name). Die betreffende Domain ist bereits standardmäßig angegeben.
 - **Kontobeschreibung**: Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.
-- **Account-Größe**: Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz, den Ihr Account zum Speichern von Nachrichten nutzen kann. 
+- **Account-Größe**: Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz, den Ihr Account zum Speichern von Nachrichten nutzen kann.
 - **Passwort**: Wählen Sie ein Passwort und bestätigen Sie es. Aus Sicherheitsgründen empfehlen wir Ihnen, Passwörter nicht mehrfach zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (beispielsweise Namen, Vornamen oder Ihr Geburtsdatum). Es wird empfohlen, das Passwort regelmäßig zu ändern.
 
-Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.action}. 
+Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.action}.
 
 ![E-Mail](images/mxplan-creation-legacy-step3.png){.thumbnail .w-400}
 
@@ -151,7 +157,7 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Weiter`{.acti
 
 Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
-#### E-Mails einsehen 
+#### E-Mails einsehen
 
 Gehen Sie auf die [Webmail Loginseite](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
@@ -247,7 +253,7 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
 **Sie benötigen mehr E-Mail-Adressen?**
 
 - Fragen in [unseren E-Mail FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- Sehen Sie sich alle unsere E-Mail-Angebote [Zimbra](/links/web/emails-zimbra) oder [Exchange](/links/web/emails) an, um Ihr MX Plan Angebot für dieselbe Domain zu vervollständigen.
+- Sehen Sie sich alle unsere E-Mail-Angebote [Zimbra](/links/web/emails-zimbra) oder [Exchange](/links/web/emails-exchange) an, um Ihr MX Plan Angebot für dieselbe Domain zu vervollständigen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

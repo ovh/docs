@@ -1,6 +1,6 @@
 ---
 title: 'Lista de destinatarios de SMS'
-excerpt: 'Esta guía explica cómo crear una lista de destinatarios de SMS e importarla en el área de cliente de OVHcloud'
+excerpt: 'Descubra cómo crear una lista de destinatarios SMS con una hoja de cálculo o un editor de texto e importarla en el área de cliente de OVHcloud'
 updated: 2022-08-05
 ---
 
@@ -18,7 +18,17 @@ Para enviar una campaña de SMS a múltiples contactos, puede importar una o má
 
 - Disponer de una cuenta de SMS en OVHcloud.
 - Tener un programa de hojas de cálculo o un editor de texto.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -68,9 +78,7 @@ El resultado debería ser como el siguiente:
 
 ### 2. Importar la lista en el área de cliente de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y haga clic en la sección `Telecom`{.action}. A continuación, haga clic en `SMS`{.action}.
-
-Seleccione su cuenta de SMS y haga clic en la pestaña `Contactos`{.action} y en `Crear una lista de contactos`{.action}.
+Haga clic en la pestaña `Contactos`{.action} y en `Crear una lista de contactos`{.action}.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
 

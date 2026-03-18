@@ -24,7 +24,7 @@ Un Redundant Array of Independent Disks (RAID) es una tecnología que atenúa la
 
 El nivel RAID predeterminado para las instalaciones de servidores de OVHcloud es el RAID 1, que duplica el espacio ocupado por sus datos, reduciendo así el espacio de disco utilizable a la mitad.
 
-**Este guía explica cómo gestionar y reconstruir un RAID software después de un reemplazo de disco en su servidor en modo UEFI.**
+**Esta guía explica cómo gestionar y reconstruir un RAID software después de un reemplazo de disco en su servidor en modo UEFI.**
 
 Antes de comenzar, tenga en cuenta que este tutorial se centra en los servidores dedicados que utilizan el modo UEFI como modo de arranque. Este es el caso de las placas base modernas. Si su servidor utiliza el modo de arranque legacy (BIOS), consulte este tutorial: [Gestión y reconstrucción de un RAID software en servidores en modo de arranque legacy (BIOS)](/pages/bare_metal_cloud/dedicated_servers/raid_soft).
 
@@ -42,10 +42,10 @@ Para obtener más información sobre UEFI, consulte el siguiente artículo: [htt
 - Acceso administrativo (sudo) al servidor a través de SSH
 - Comprensión del RAID, las particiones y GRUB
 
-Durante este guía, utilizamos los términos **disco principal** y **disco secundario**. En este contexto:
+Durante esta guía, utilizamos los términos **disco principal** y **disco secundario**. En este contexto:
 
 - El disco principal es el disco cuya ESP (partición del sistema EFI) está montada por Linux.
-El disco o discos secundarios son todos los demás discos del RAID.
+- El disco o discos secundarios son todos los demás discos del RAID.
 
 ## Instrucciones
 
@@ -54,7 +54,7 @@ Cuando adquiere un nuevo servidor, puede sentir la necesidad de realizar una ser
 ### Vista previa del contenido
 
 - [Información básica](#basicinformation)
-- [Comprensión de la partición del sistema EFI (ESP)](#efisystemparition)
+- [Comprensión de la partición del sistema EFI (ESP)](#efisystempartition)
 - [Simulación de una falla de disco](#diskfailure)
     - [Retiro del disco defectuoso](#removedisk)
 - [Reconstrucción del RAID (con ESP no espejadas)](#raidrebuildnonmirrored)
@@ -231,7 +231,7 @@ En nuestro ejemplo, tenemos:
 
 - Dos matrices RAID: `/dev/md2` y `/dev/md3`.
 - Particiones que forman parte del RAID: **nvme0n1p2**, **nvme0n1p3**, **nvme1n1p2** y **nvme0n1p3** con los puntos de montaje `/boot` y `/`.
-- Particiones que no forman parte del RAID: **nvem0n1p1**, **nvme0n1p4** y **nvme1n1p4** con los puntos de montaje `/boot/efi` y [SWAP].
+- Particiones que no forman parte del RAID: **nvme0n1p1**, **nvme0n1p4** y **nvme1n1p4** con los puntos de montaje `/boot/efi` y [SWAP].
 - Una partición no tiene punto de montaje: **nvme1n1p1**.
 
 La partición `nvme0n1p5` es una partición de configuración, es decir, un volumen de solo lectura conectado al servidor que le proporciona los datos de configuración inicial.
@@ -256,7 +256,7 @@ A partir de diciembre de 2025, solo las siguientes versiones del sistema operati
 * AlmaLinux y Rocky Linux 10
 * Fedora 43
 
-Para versiones anteriores de estos sistemas operativos, la partición EFI no se espeja en RAID ; se crean varias ESP, una por disco. Sin embargo, solo se monta una ESP a la vez, y todas las ESP contienen los mismos archivos. La partición del sistema EFI se monta en `/boot/efi`, y el disco en el que se monta se selecciona por Linux al arrancar.
+Para versiones anteriores de estos sistemas operativos, la partición EFI no se espeja en RAID; se crean varias ESP, una por disco. Sin embargo, solo se monta una ESP a la vez, y todas las ESP contienen los mismos archivos. La partición del sistema EFI se monta en `/boot/efi`, y el disco en el que se monta se selecciona por Linux al arrancar.
 
 Puede usar el comando `lsblk` para verificar si su partición forma parte de una configuración RAID.
 
@@ -337,10 +337,10 @@ Si su ESP no está espejada, puede encontrar las siguientes dificultades:
 
 **Estudio de caso 3** - Se han realizado actualizaciones importantes del sistema (por ejemplo, GRUB) en el sistema operativo y las particiones ESP no se han sincronizado.
 
-- El servidor no puede arrancar en modo normal, utilice el entorno del modo rescue para reconstruir el RAID, recrear la partición del sistema EFI en el nuevo disco y reinstalar el bootloader (por ejemplo, GRUB).
+- El servidor no puede arrancar en modo normal. Utilice el entorno del modo rescue para reconstruir el RAID, recrear la partición del sistema EFI en el nuevo disco y reinstalar el cargador de arranque (*bootloader*) (por ejemplo, GRUB).
 - El servidor puede arrancar en modo normal (esto podría ocurrir en el caso de que un sistema operativo se actualice pero la versión de GRUB permanezca sin cambios), lo que permite proceder a la reconstrucción del RAID.
 
-En algunos casos, el arranque desde una ESP obsoleta puede fallar ; por ejemplo, una actualización importante de GRUB puede hacer que el binario GRUB en la ESP sea incompatible con los nuevos módulos GRUB en la partición `/boot`.
+En algunos casos, el arranque desde una ESP obsoleta puede fallar; por ejemplo, una actualización importante de GRUB puede hacer que el binario GRUB en la ESP sea incompatible con los nuevos módulos GRUB en la partición `/boot`.
 
 ***¿Cómo puedo sincronizar mis particiones del sistema EFI, y con qué frecuencia debo sincronizarlas?***
 
@@ -349,7 +349,7 @@ Si su partición del sistema EFI no está espejada, tenga en cuenta los siguient
 > [!primary]
 > Tenga en cuenta que el proceso puede variar según su sistema operativo. Por ejemplo, Ubuntu puede sincronizar varias particiones del sistema EFI con cada actualización de GRUB, pero es el único sistema operativo que lo hace. Le recomendamos consultar la documentación oficial de su sistema operativo para entender cómo gestionar las ESP.
 >
-> En este guía, el sistema operativo utilizado es Debian.
+> En esta guía, el sistema operativo utilizado es Debian.
 
 Le recomendamos sincronizar sus ESP regularmente o después de cada actualización importante del sistema. Por defecto, todas las particiones del sistema EFI contienen los mismos archivos después de la instalación. Sin embargo, si se implica una actualización importante del sistema, la sincronización de las ESP es esencial para mantener el contenido actualizado.
 
@@ -564,7 +564,7 @@ Partition Table: unknown
 Disk Flags:
 ```
 
-Para obtener más información sobre la preparación y la solicitud de reemplazo de un disco, consulte este [guía](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
+Para obtener más información sobre la preparación y la solicitud de reemplazo de un disco, consulte esta [guía](/pages/bare_metal_cloud/dedicated_servers/disk_replacement).
 
 Además, si ejecuta el siguiente comando, obtendrá más detalles sobre las matrices RAID:
 
@@ -610,7 +610,7 @@ Ahora podemos proceder al reemplazo del disco y a la reconstrucción del RAID.
 > [!primary]
 > Este proceso puede variar según el sistema operativo instalado en su servidor. Le recomendamos consultar la documentación oficial de su sistema operativo para obtener los comandos adecuados.
 >
-> Si su servidor puede arrancar en modo normal después del reemplazo del disco, simplemente siga los pasos descritos en [esta sección](#nonmirrorednormalmode) si su partición EFI no está espejada o [esta sección](#mirrored-esp-normal) si su partición EFI está espejada.
+> Si su servidor puede arrancar en modo normal después del reemplazo del disco, simplemente siga los pasos descritos en [esta sección](#nonmirrorednormalmode) si su partición EFI no está espejada o [esta sección](#raidrebuildmirrored) si su partición EFI está espejada.
 >
 
 #### Reconstrucción del RAID después del reemplazo del disco principal (modo rescue) <a name="nonmirroredrescuemode"></a>
@@ -1289,7 +1289,7 @@ A continuación, consulte [esta sección](#swap-partition) para recrear la parti
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> Reemplace el antiguo UUID de la partición SWAP (**nvme0n1p4)** por el nuevo en `/etc/fstab`:
+>> Reemplace el antiguo UUID de la partición SWAP (**nvme0n1p4**) por el nuevo en `/etc/fstab`:
 >>
 >> ```sh
 >> [user@server_ip ~]# sudo nano /etc/fstab
@@ -1330,6 +1330,8 @@ A continuación, consulte [esta sección](#swap-partition) para recrear la parti
 >>
 
 ///
+
+<a name="go-further"></a>
 
 ## Más información
 

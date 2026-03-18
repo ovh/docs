@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec Terraform pour les bases de données Public Cloud (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using Terraform
-updated: 2022-10-19
+updated: 2026-03-04
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- [Terraform >= 0.17.1](https://www.terraform.io/) installed
+- [Terraform](https://www.terraform.io/) installed. *This guide was tested with version v1.14.6.*
 - Access to the [OVHcloud API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
@@ -32,13 +32,22 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
+To retrieve this information, follow our [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
 
-Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
+Specifically, you have to generate these credentials via the OVHcloud token generation page with the following rights:
 
-![OVHcloud API rights](images/api-rights.png){.thumbnail}
+- **GET** `/cloud/project/*/database/*`
+- **POST** `/cloud/project/*/database/*`
+- **PUT** `/cloud/project/*/database/*`
+- **DELETE** `/cloud/project/*/database/*`
 
-When you have successfully generated your OVHcloud tokens, please save them as you will have to use them very soon.
+> [!tabs]
+> EU region
+>> [Generate OVHcloud API tokens (EU)](https://auth.eu.ovhcloud.com/api/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+> CA region
+>> [Generate OVHcloud API tokens (CA)](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*)
+
+Once you have generated your tokens, save them — you will need them shortly.
 
 The last needed information is the `service_name`: it is the ID of your Public Cloud project.
 
@@ -46,33 +55,30 @@ The last needed information is the `service_name`: it is the ID of your Public C
 
 In the Public Cloud section, you can retrieve your service name ID thanks to the `Copy to clipboard`{.action} button.
 
-![Copy paste service name](images/get-service-name.png){.thumbnail}
-
 You will also use this information in Terraform resources definition files.
 
 ### Step 2: Gather the set of required parameters
 
-In order to create a new MongoDB cluster, you will need to specify at least:
+To create a new MongoDB cluster, specify at least:
 
-- the _version_ (e.g. "5.0")
-- the _region_ (e.g. "DE")
-- the _plan_ (e.g. "business")
-- the _flavor_ of the cluster (e.g. "db1-7")
+- the _engine_ (e.g. "mongodb")
+- the _version_ (e.g. "8.2")
+- the _region_ (e.g. "EU-WEST-PAR")
+- the _plan_ (e.g. "production")
+- the _flavor_ of the cluster (e.g. "b3-8")
 
 ### Step 3: Create Terraform files
 
-First, create a `main.tf` file defining the resources that will be created
+First, create a `main.tf` file defining the resources that will be created.
 
 ```bash
 terraform {
   required_providers {
     ovh = {
       source  = "ovh/ovh"
-      version = "0.22"
+      version = ">= 2.11.0"
     }
   }
-
-  required_version = ">= 0.17.1"
 }
 
 provider "ovh" {
@@ -85,26 +91,28 @@ provider "ovh" {
 resource "ovh_cloud_project_database" "service" {
   service_name = var.product.project_id
   description  = var.product.name
-  engine       = "mongodb"
+  engine       = var.product.engine
   version      = var.product.version
   plan         = var.product.plan
   nodes {
     region = var.product.region
   }
+  nodes {
+    region = var.product.region
+  }
+  nodes {
+    region = var.product.region
+  }
   flavor = var.product.flavor
+  ip_restrictions {
+    ip = var.product.ip
+  }
 }
 
 resource "ovh_cloud_project_database_mongodb_user" "dbuser" {
   service_name = ovh_cloud_project_database.service.service_name
   cluster_id   = ovh_cloud_project_database.service.id
   name         = var.access.name
-}
-
-resource "ovh_cloud_project_database_ip_restriction" "iprestriction" {
-  service_name = ovh_cloud_project_database.service.service_name
-  engine       = ovh_cloud_project_database.service.engine
-  cluster_id   = ovh_cloud_project_database.service.id
-  ip           = var.access.ip
 }
 ```
 
@@ -124,12 +132,14 @@ variable "ovh" {
 variable "product" {
   type = map(string)
   default = {
-    name       = "mongodb-terraform"
     project_id = ""
-    region     = "DE"
-    plan       = "business"
-    flavor     = "db1-7"
-    version    = "5.0"
+    name       = ""
+    engine     = ""
+    region     = "EU-WEST-PAR"
+    plan       = "production"
+    flavor     = "b3-8"
+    version    = ""
+    ip         = "0.0.0.0/32"
   }
 }
 
@@ -137,15 +147,14 @@ variable "access" {
   type = map(string)
   default = {
     name = "johndoe"
-    ip = "xx.xx.xx.xx/32"
   }
 }
 ```
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API. Other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-ca` for OVHcloud North-America API
 
 Then, create a `secrets.tfvars` file containing the required variables values:
 
@@ -160,15 +169,16 @@ ovh = {
 product = {
   project_id = "<service_name>"
   name       = "mongodb-terraform"
-  region     = "DE"
-  plan       = "business"
-  flavor     = "db1-7"
-  version    = "5.0"
+  engine     = "mongodb"
+  region     = "EU-WEST-PAR"
+  plan       = "production"
+  flavor     = "b3-8"
+  version    = "8.2"
+  ip         = "<ip_range>"
 }
 
 access = {
   name = "johndoe"
-  ip = "<ip_range>"
 }
 ```
 
@@ -198,12 +208,12 @@ output "user_password" {
 Now we need to initialise Terraform, generate a plan, and apply it.
 
 ```bash
-$ terraform init
+terraform init
 ```
 
 The [init](https://www.terraform.io/cli/commands/init) command will initialize your working directory which contains `.tf` configuration files.
 
-It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
+Run it first for any new configuration, or after checking out a configuration from a git repository.
 
 The `init` command will:
 
@@ -214,7 +224,7 @@ The `init` command will:
 Now, we can generate our plan:
 
 ```bash
-$ terraform plan -var-file=secrets.tfvars
+terraform plan -var-file=secrets.tfvars
 ```
 
 Thanks to the [plan](https://www.terraform.io/cli/commands/plan) command, we can check what Terraform wants to create, modify or remove.
@@ -222,10 +232,10 @@ Thanks to the [plan](https://www.terraform.io/cli/commands/plan) command, we can
 The plan is OK for us, so let's [apply](https://www.terraform.io/cli/commands/apply) it:
 
 ```bash
-$ terraform apply -var-file=secrets.tfvars -auto-approve
+terraform apply -var-file=secrets.tfvars -auto-approve
 ```
 
-Finally export the user credentials and the URI
+Finally export the user credentials and the URI:
 
 ```bash
 export PASSWORD=$(terraform output -raw user_password)
@@ -237,7 +247,7 @@ And, voilà, the MongoDB cluster is created.
 
 ## How to deploy with other engines
 
-In this guide, we explained how to deploy a MongoDB service but you can find example for other database engine here and tweak them according to your needs :
+This guide covered deploying a MongoDB service. You can find examples for other engines here:
 
 > [!tabs]
 > MySQL

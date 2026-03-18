@@ -12,6 +12,17 @@ If an IP is reported to organisations such as Spamhaus and SpamCop, which work t
 
 It is therefore important that OVHcloud takes care of the reputation, quality and security of the network, which also forms an important part of your service.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### How does the protection system work?
 
 Our system is based on the Vade Secure anti-spam technology.
@@ -61,8 +72,6 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 ### Unblock your IP
 
 #### Unblocking your IP from the OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 You can use the drop-down menu underneath **My public IP addresses and associated services** to filter your services according to category, or directly type the desired IP address in the search bar.
 

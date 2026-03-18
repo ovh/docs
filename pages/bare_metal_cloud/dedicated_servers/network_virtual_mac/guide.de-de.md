@@ -12,10 +12,19 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account. Ihr Server muss virtuelle MAC-Adressen unterstützen. Überprüfen Sie dies mithilfe [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - Sie verfügen über eine [Additional IP](/links/network/additional-ip).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](/links/api).
-- Ihr Server muss virtuelle MAC-Adressen unterstützen. Überprüfen Sie dies mithilfe [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird. Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
@@ -37,8 +46,6 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 >
 
 #### Über das OVHcloud Kundencenter
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}.
 
 Klicken Sie auf den Tab `Additional IP`{.action}.
 

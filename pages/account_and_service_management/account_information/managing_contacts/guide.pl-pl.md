@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Wprowadzenie
@@ -18,7 +18,7 @@ Większość usług tworzonych w OVHcloud jest zarządzana przez wiele kontaktó
 
 Istnieją trzy rodzaje kontaktów:
 
-- **Kontakt administracyjny** zarządza kwestiami administracyjnymi i technicznymi usługi. Ma uprawnienia do modyfikowania wszystkich kontaktów i może wprowadzać zmiany w informacjach właściciela usługi, takich jak nazwy domeny.
+- **Kontakt administracyjny** zarządza kwestiami administracyjnymi i technicznymi usługi. Ma uprawnienia do modyfikowania wszystkich kontaktów i może wprowadzać zmiany w informacjach abonenta usługi, takich jak nazwy nazwy domeny.
 - **Kontakt techniczny** zarządza wyłącznie kwestiami technicznymi usługi.
 - **Kontakt księgowy** zarządza wyłącznie płatnościami usługi, w tym przelewami. Kontakt ten otrzymuje zwłaszcza powiadomienia o odnowieniu. 
 
@@ -28,12 +28,23 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Dostęp do adresu e-mail podanego w profilu.
 - Wystarczające uprawnienia dotyczące danej usługi.
 - Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
 - Nowy kontakt musi mieć dostęp do adresu e-mail podanego w jego profilu.
 - Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
+- Nowy kontakt księgowy musi dysponować ważnym sposobem płatności na swoim koncie OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Zarządzanie kontaktami](/links/control-panel/account-contacts)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje kontakty`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## W praktyce
 
@@ -43,7 +54,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}.
+Otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -84,7 +95,7 @@ Możesz wyznaczyć wyłącznie inny kontakt księgowy na swoje miejsce. Konieczn
 
 ### Zatwierdzenie, odrzucenie lub śledzenie zmiany kontaktu
 
-Aby śledzić bieżące wnioski i zarządzać nimi, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}. Kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
+Aby śledzić bieżące wnioski i zarządzać nimi, kliknij kartę `Moje wnioski`{.action}. Tutaj możesz zaakceptować lub odrzucić wniosek.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 
@@ -107,28 +118,28 @@ Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez ob
 
 ### Przykład: zarządzanie stroną www na webmasterze
 
-Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
+Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](/links/web/hosting-ecommerce-website). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
 
 > [!warning]
 >
 > Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](/links/manager).
 >
 
-W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
+W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie nazwy domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
 
-Jeśli Twoja domena nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit) domeny.
+Jeśli Twoja nazwa domeny nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit) nazwy domeny.
 
-Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie domeny](/pages/web_cloud/domains/transfer_outgoing_domain) z innego dostawcy lub na [zmianę właściciela](/pages/web_cloud/domains/trade_domain).
+Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie nazwy domeny](/pages/web_cloud/domains/transfer_outgoing_domain) z innego dostawcy lub na [zmianę abonenta](/pages/web_cloud/domains/trade_domain).
 
 Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momencie pobrać "[kontakt techniczny](#technique)" Twojej usługi.
 
-### Przypadek właściciela domeny
+### Przypadek abonenta nazwy domeny
 
-Podczas zamawiania usługi OVHcloud zdefiniowałeś dla niej właściciela. Właściciel może, jeśli nie ma dostępu do kont OVHcloud powiązanych z usługą, którą chce odzyskać, przekazać własność domeny innej osobie lub odzyskać administrację domeny, stosując następujące procedury:
+Podczas zamawiania usługi OVHcloud zdefiniowałeś dla niej abonenta. Abonent może, jeśli nie ma dostępu do kont OVHcloud powiązanych z usługą, którą chce odzyskać, przekazać abonenta nazwy domeny innej osobie lub odzyskać administrację nazwy domeny, stosując następujące procedury:
 
-[Zmiana właściciela usługi](https://www.ovh.com/cgi-bin/pl/procedure/procedureChangeOwner.cgi)
+[Zmiana abonenta usługi](/links/transversal/procedure-change-owner)
 
-[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa domeny](https://www.ovh.com/fr/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa nazwy domeny](/links/transversal/procedure-contact-change)
 
 Każda procedura jest monitorowana za pomocą wiadomości e-mail i konieczna będzie weryfikacja tożsamości. Szczegółowe instrukcje będą udzielane przez cały czas trwania procedury.
 

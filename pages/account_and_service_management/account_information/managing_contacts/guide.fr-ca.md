@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -18,7 +18,7 @@ La plupart des services créés chez OVHcloud sont gérés par plusieurs contact
 
 Trois types de contacts existent:
 
-- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple .
+- **Le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du titulaire d'un service, comme les noms de domaine par exemple .
 - **Le contact technique** gère uniquement les aspects techniques d'un service .
 - **Le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
@@ -26,12 +26,23 @@ Trois types de contacts existent:
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer de droits suffisants  sur le service concerné.
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre compte OVHcloud.
 - Connaître l'adresse e-mail principale renseignée dans le compte OVHcloud du nouveau contact (pour qui vous réalisez la modification).
 - Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail principale renseignée dans son compte OVHcloud.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
+- Le nouveau contact de facturation doit disposer d'un moyen de paiement valide dans son compte OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion des contacts](/links/control-panel/account-contacts)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes contacts`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## En pratique
 
@@ -41,7 +52,7 @@ Trois types de contacts existent:
 
 ### Accéder à la gestion des contacts
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -82,7 +93,7 @@ Vous pouvez uniquement désigner un autre contact facturation pour vous remplace
 
 ### Valider, refuser ou suivre un changement de contact
 
-Pour suivre et gérer les demandes en cours, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}. Cliquez ensuite sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
+Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 

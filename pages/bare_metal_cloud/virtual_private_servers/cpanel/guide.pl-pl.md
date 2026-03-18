@@ -6,9 +6,9 @@ updated: 2025-09-11
 
 ## Wprowadzenie
 
-cPanel to panel konfiguracyjny ułatwiający zarządzanie hostingiem WWW. Ułatwia dostęp do złożonych zadań, również nowym użytkownikom. Posiada wiele funkcji, takich jak na przykład zarządzanie: 
+cPanel to panel konfiguracyjny ułatwiający zarządzanie hostingiem WWW. Ułatwia dostęp do złożonych zadań, również nowym użytkownikom. Posiada wiele funkcji, takich jak na przykład zarządzanie:
 
-- kont email
+- kont e-mail
 - domeny
 - bazy danych
 - bezpieczeństwa
@@ -21,7 +21,17 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 ## Wymagania początkowe
 
 - Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
-- zalogowanie do [Panelu client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
@@ -34,7 +44,7 @@ Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz w
 > [!warning]
 >
 > Jeśli ponownie zainstalujesz serwer VPS, wszystkie dane przechowywane na serwerze VPS zostaną utracone.
-> 
+>
 
 Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 
@@ -43,9 +53,9 @@ Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania do serwera cPanel:
 
 ```
- |    Twoje aplikacje:
- |    aplikacja: cpanel
- |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
+ |    Aplikacja(e):
+ |    Aplikacja: cpanel
+ |    Możesz zalogować się do cpanel ze strony https://<nazwa_serwera_vps>:2087/<session_parameters>
 ```
 
 ### Pierwsze logowanie
@@ -96,8 +106,8 @@ Teraz możesz korzystać z cPanel. Więcej informacji na temat cPanel można zna
 >
 > W pasku nawigacyjnym przeglądarki wprowadź następujące adresy URL, aby się zalogować:
 >
-> - cPanel : https&#58;//&#60;IP_V4&#62;:2083/ (wykorzystaj dane logowania, które zostały niedawno utworzone w interfejsie WHM)
-> - WHM : https&#58;//&#60;IP_V4&#62;:2087/ (użyj nazwy użytkownika "root" oraz hasła otrzymanego w e-mailu dotyczącym zakupu usługi lub hasła SSH, które zostało zmienione w interfejsie WHM)
+> - cPanel: https&#58;//&#60;IP_V4&#62;:2083/ (wykorzystaj dane logowania, które zostały niedawno utworzone w interfejsie WHM)
+> - WHM: https&#58;//&#60;IP_V4&#62;:2087/ (użyj nazwy użytkownika "root" oraz hasła otrzymanego w e-mailu dotyczącym zakupu usługi lub hasła SSH, które zostało zmienione w interfejsie WHM)
 >
 > Adres IPv4 znajdziesz w e-mailu, który otrzymałeś po złożeniu zamówienia na VPS z dystrybucją cPanel.
 >

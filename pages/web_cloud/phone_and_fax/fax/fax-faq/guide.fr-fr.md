@@ -1,6 +1,6 @@
 ---
-title: FAQ sur la solution Fax OVHcloud
-excerpt: Retrouvez les questions les plus fréquemment posées sur le service Fax OVHcloud
+title: "FAQ sur la solution Fax OVHcloud"
+excerpt: "Retrouvez les questions les plus fréquemment posées sur le service Fax OVHcloud"
 updated: 2024-01-03
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email service
-updated: 2025-11-28
+updated: 2026-02-10
 ---
 
 <style>
@@ -55,17 +55,26 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have signed up to one of these email offers:
     - OVHcloud MX Plan Email, available with a [web hosting plan](/links/web/hosting)
     - An email solution outside of OVHcloud with DKIM support
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). To do this, go to the `DNS zones`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -116,15 +125,15 @@ The hash function is useful when you want to check the integrity of a message. D
 
 The purpose of **encryption**, as its name suggests, is to encrypt the data it is given. It is **asymmetric** because the encryption key is not the same as the decryption, unlike symmetric encryption, which uses the same key to encrypt and decrypt.
 
-Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all.
+Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the holder and is not visible to all.
 
 There are two uses for asymmetric encryption:
 
-- **The input data is encrypted with the public key and decrypted by the owner of the private key**. For example, you want a third party to send you data securely. You transmit your public key without worrying about someone getting it. This third party will encrypt their data with your public key. Encrypted data can only be decrypted by the private key owner.
+- **The input data is encrypted with the public key and decrypted by the holder of the private key**. For example, you want a third party to send you data securely. You transmit your public key without worrying about someone getting it. This third party will encrypt their data with your public key. Encrypted data can only be decrypted by the private key holder.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
-- **The input data is encrypted by the private key owner and decrypted by the public key**. This use applies to authenticate a data exchange. For example, your recipients want to ensure that you are the author of the message you send them. In this case, you will encrypt your message with your private key. This message can only be decrypted by the public key that you have transmitted to everyone, which guarantees your recipients the authenticity of your message. A message decrypted by the public key can only come from the owner of the private key.
+- **The input data is encrypted by the private key holder and decrypted by the public key**. This use applies to authenticate a data exchange. For example, your recipients want to ensure that you are the author of the message you send them. In this case, you will encrypt your message with your private key. This message can only be decrypted by the public key that you have transmitted to everyone, which guarantees your recipients the authenticity of your message. A message decrypted by the public key can only come from the holder of the private key.
 
 ![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
@@ -342,7 +351,7 @@ Follow the **5 steps** by clicking on each of the 5 tabs below:
 >>
 > **4. Configure the DNS record**
 >> From the [OVHcloud Control Panel](/links/manager) where your email service’s domain name is hosted, in the `Web Cloud`{.action} tab, click `Domain names`{.action} in the left-hand column, and select the domain name concerned.<br>
->> Go to the `DNS Zone`{.action} tab, then click `Add record`{.action} in the window that pops up. Choose `CNAME`, then enter the information according to the values you have entered.
+>> Go to the `DNS zones`{.action} tab, then click `Add record`{.action} in the window that pops up. Choose `CNAME`, then enter the information according to the values you have entered.
 >>
 >> If you break down the values in the example in step "**3. Retrieve the DNS record**":
 >>
@@ -434,7 +443,6 @@ At the level of the selectors you also have 3 possible states:
 - `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
 - `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails MX Plan](#confemail).
 
-
 #### API - Enable or change the DKIM selector <a name="enable-switch"></a>
 
 > [!warning]
@@ -446,7 +454,6 @@ To enable DKIM, use the following API call:
 > [!api]
 >
 > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
-
 
 - `domain`: Enter the domain name attached to your email service on which the DKIM must be present. 
 
@@ -492,7 +499,7 @@ If you would like to configure your DNS zone to add a DKIM record to it for your
 
 Log in to the [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
 
-Click on the `DNS Zone`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
+Click on the `DNS zones`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
 
 - [DKIM record](#dkim-record): A configuration that allows you to view all settings for a DKIM record.
 - [TXT record](#txt-record): The record to use when all DKIM parameters have been provided to you.
@@ -539,7 +546,7 @@ The recipient should ignore this record if the appropriate service type is not l
 The "s=" tag is intended to restrict the use of keys for other purposes, in case the use of DKIM is defined for other services in the future.
 The service types currently defined are "email" and "*" (all service types).
 
-- **Test mode (t=y)**: Allows domain name owners to test a DKIM setup without the risk of having messages rejected or marked as spam if DKIM signature verification fails.
+- **Test mode (t=y)**: Allows domain name holders to test a DKIM setup without the risk of having messages rejected or marked as spam if DKIM signature verification fails.
 When the "t=y" flag is used, the recipient should not treat test signed messages differently than unsigned messages. However, the recipient can follow the test result to help the signatories.
 
 - **Sub-domains (t=s)**: Allows the use of the DKIM signature to be restricted to the domain name only (for example: @mydomain.ovh) or allow sending from the domain name and its subdomains (e.g.: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).

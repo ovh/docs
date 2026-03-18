@@ -24,16 +24,24 @@ Il est possible d’importer une adresse Additional IP liée à un autre service
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir [une Additional IP](/links/bare-metal/ip).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!warning]
-> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+> Cette fonctionnalité n’est actuellement pas disponible pour les instances Metal.
 >
 
 ## En pratique
-
-Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 Dans le menu de gauche, ouvrez `IP Publiques`{.action} dans **Network**.
 

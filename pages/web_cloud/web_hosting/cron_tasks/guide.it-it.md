@@ -43,7 +43,16 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -108,26 +117,20 @@ L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni
 
 ### Modificare o eliminare un'operazione pianificata
 
-Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 2**
 >>
 >> Clicca sulla scheda `Più`{.action} e seleziona `Cron`{.action}.
 >>
-> **Step 4**
+> **Passaggio 3**
 >>
 >> Nella tabella che appare, clicca sul pulsante `...`{.action} a destra dell’operazione pianificata in questione.
 >>

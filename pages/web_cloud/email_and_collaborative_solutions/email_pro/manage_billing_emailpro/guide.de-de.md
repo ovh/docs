@@ -12,17 +12,22 @@ Die Dienstleistung E-Mail Pro verfügt über eine flexible Verwaltung für die A
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über einen [E-Mail Pro](/links/web/email-pro) Dienst in Ihrem Kunden-Account.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## In der praktischen Anwendung
 
 ### Zusätzliche Konten bestellen
-
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-1. Klicken Sie auf `E-Mail Pro`{.action}.
-1. Wählen Sie den gewünschten Dienst aus.
 
 Gehen Sie in den Tab `E-Mail-Accounts`{.action} und klicken Sie auf oben rechts `Accounts bestellen`{.action}.
 
@@ -52,7 +57,7 @@ Klicken Sie auf `Weiter`{.action}, um die Zusammenfassung der Änderungen anzuze
 
 ### Konten entfernen
 
-Um einen Account von Ihrem E-Mail Pro Dienst zu löschen, müssen Sie diesen zuerst kündigen, indem Sie den Verlängerungszeitraum auf **Keine** ändern. Folgen Sie hierzu den Schritten uner ["Die Abrechnungsfrequenz Ihrer Accounts ändern"](#periodicity).
+Um einen Account von Ihrem E-Mail Pro Dienst zu löschen, müssen Sie diesen zuerst kündigen, indem Sie den Verlängerungszeitraum auf **Keine** ändern. Folgen Sie hierzu den Schritten unter ["Die Abrechnungsfrequenz Ihrer Accounts ändern"](#periodicity).
 
 Nach der Kündigung wird das Konto am Ablaufdatum gesperrt. Wenn Sie die vom Konto gehostete E-Mail-Adresse vor dem Ablaufdatum löschen möchten, setzen Sie den Account zurück.
 

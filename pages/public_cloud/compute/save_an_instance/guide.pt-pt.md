@@ -27,8 +27,18 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 ## Requisitos
 
 - Ter uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - CLI OpenStack. Consulte nosso guia "[Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)". (opcional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -53,7 +63,6 @@ Pode criar um backup único de uma instância ou configurar um planeamento para 
 > [!tabs]
 > Através do área de cliente OVHcloud
 >>
->> Faça login no [área de cliente OVHcloud](/links/manager), acesse a seção `Public Cloud`{.action} e selecione o projeto Public Cloud desejado.<br>
 >> Clique em `Instâncias`{.action} no menu à esquerda.<br>
 >> Na página das instâncias, clique no botão `...`{.action} à direita da instância e selecione `Criar um backup`{.action}.
 >>

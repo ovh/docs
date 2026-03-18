@@ -1,7 +1,7 @@
 ---
 title: Managing and rebuilding software RAID on servers using legacy boot (BIOS) mode
-excerpt: Find out how to manage and rebuild software RAID after a disk replacement on your server in legacy boot (BIOS) mode
-updated: 2026-02-02
+excerpt: Learn how to manage and rebuild software RAID after a disk replacement on a dedicated server running in legacy boot (BIOS) mode.
+updated: 2026-03-02
 ---
 
 <style>
@@ -42,7 +42,7 @@ To check whether a server runs on legacy BIOS or UEFI mode, run the following co
 
 ## Instructions
 
-When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure in order to understand the RAID rebuild process and prepare yourself in case it ever happens.
+When you purchase a new server, you may feel the need to perform a series of tests and actions. One such test could be to simulate a disk failure to understand the RAID rebuild process and prepare yourself in case it ever happens.
 
 ### Content overview
 
@@ -140,9 +140,9 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
+The `fdisk -l` command also allows you to identify your partition type. This is important information when rebuilding your RAID after a disk failure.
 
-For **GPT** partitions, line 6 will display: `Disklabel type: gpt`. This information can only been seen when the server is in normal mode.
+For **GPT** partitions, line 6 will display: `Disklabel type: gpt`. This information can only be seen when the server is in normal mode.
 
 Still going by the results of `fdisk -l`, we can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB.
 
@@ -169,16 +169,22 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-We take note of the devices, partitions and their mount points. From the above commands and results, we have:
+Note the devices, partitions, and mount points, as this is important, especially after replacing a disk. This will allow you to verify that the partitions are correctly mounted on their respective mount points on the new disk.
 
-- Two RAID arrays: `/dev/md2` and `/dev/md4`.
-- Four partitions are part of the RAID with the mount points: `/` and `/home`.
+In our example, we have:
+
+- Partitions part of md2 (`/`): **sda2** and **sdb2**.
+- Partitions part of md4 (`/home`): **sda4** and **sdb4**.
+- Swap partitions: **sda3** and **sdb3**.
+- BIOS boot partitions: **sda1** and **sdb1**.
+
+The `sda5` partition is a [config drive](https://cloudinit.readthedocs.io/en/latest/reference/datasources/configdrive.html), i.e. a read-only volume that provides the server with its initial configuration data. It is only read once during initial boot and can be removed afterwards.
 
 <a name="diskfailure"></a>
 
 ### Simulating a disk failure
 
-Now that we have all the necessary information, we can now simulate a disk. In this example, we will fail the disk `sda`.
+We now have all the necessary information to simulate a disk failure. In this example, we will fail the disk `sda`.
 
 The preferred way to do this is via the OVHcloud rescue mode environment.
 
@@ -249,7 +255,7 @@ root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --manage /dev/
 # mdadm: hot removed /dev/sda4 from /dev/md4
 ```
 
-To make sure that we get a disk that is similar to an empty disk, we use the following command. Replace **sda** with your own values:
+To simulate a clean disk, run the following command. Replace **sda** with your own values:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ #
@@ -385,7 +391,7 @@ Once the replacement is done, the next step is to copy the partition table from 
 >> The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 >>
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Once this is done, the next step is to randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 sudo sgdisk -G /dev/sdX
@@ -400,7 +406,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-You can simply run the `partprobe` command. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
+Run `partprobe`. If you still cannot see the newly-created partitions (e.g. with `lsblk`), you need to reboot the server before continuing.
 
 Next, we add the partitions to the RAID:
 
@@ -431,7 +437,7 @@ unused devices: <none>
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable).
 
-To add a label the SWAP partition:
+To add a label to the SWAP partition:
 
 ```sh
 [user@server_ip ~]# sudo mkswap /dev/sda4 -L swap-sda4
@@ -442,7 +448,7 @@ Next, retrieve the UUIDs of both SWAP partitions:
 ```sh
 [user@server_ip ~]# sudo blkid -s UUID /dev/sda4
 /dev/sda4: UUID="b3c9e03a-52f5-4683-81b6-cc10091fcd15"
-[user@server_ip ~]# sudo blkid -S UUID /dev/sdb4
+[user@server_ip ~]# sudo blkid -s UUID /dev/sdb4
 /dev/sdb4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 ```
 
@@ -451,7 +457,7 @@ We replace the old UUID of the SWAP partition (**sda4**) with the new one in the
 Example:
 
 ```sh
-[user@server_ip ~]# sudo nano etc/fstab
+[user@server_ip ~]# sudo nano /etc/fstab
 
 UUID=6abfaa3b-e630-457a-bbe0-e00e5b4b59e5       /       ext4    defaults       0       1
 UUID=f925a033-0087-40ec-817e-44efab0351ac       /boot   ext4    defaults       0       0
@@ -486,13 +492,13 @@ Then reload the system with the following command:
 [user@server_ip ~]# sudo systemctl daemon-reload
 ```
 
-We have now successfully completed the RAID rebuild.
+The RAID rebuild is complete.
 
 <a name="rescuemode"></a>
 
 /// details | **Rebuilding the RAID in rescue mode**
 
-If you server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode by our datacentre team.
+If your server is unable to reboot in normal mode after a disk replacement, it will be rebooted in rescue mode by our datacentre team.
 
 In this example, we have replaced the disk `sdb`.
 
@@ -524,16 +530,16 @@ Once the disk has been replaced, we need to copy the partition table from the he
 >> Example:
 >>
 >> ```sh
->> sudo sfdisk -d /dev/sda /dev/sdb
+>> sudo sfdisk -d /dev/sda | sfdisk /dev/sdb
 >> ```
 
-Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
+Once this is done, the next step is to randomise the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
 sudo sgdisk -G /dev/sdb
 ```
 
-If you the following message:
+If you receive the following message:
  
 ```console
 Warning: The kernel is still using the old partition table.
@@ -544,7 +550,7 @@ The operation has completed successfully.
 
 You can simply run the `partprobe` command.
 
-We can now rebuild the RAID array. The following code snippet shows how we can add the new partitions (sdb2 and sdb4) back in the RAID array.
+We can now rebuild the RAID array by adding the new partitions (sdb2 and sdb4) back:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sudo mdadm --add /dev/md2 /dev/sdb2
@@ -573,10 +579,10 @@ unused devices: <none>
 
 Lastly, we add a label and mount the [SWAP] partition (if applicable).
 
-Once the RAID rebuild is complete, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is `md4`.
+Once the RAID rebuild is complete, we mount the partition containing the root of our operating system on `/mnt`. In our example, that partition is `md2`.
 
 ```sh
-root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md4 /mnt
+root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # mount /dev/md2 /mnt
 ```
 
 We add the label to our SWAP partition with the command:
@@ -626,7 +632,7 @@ blkid /dev/sdb4
 Next, we replace the old UUID of the swap partition (**sdb4**) with the new one in `/etc/fstab`:
 
 ```sh
-root@rescue12-customer-eu:/# nano etc/fstab
+root@rescue12-customer-eu:/# nano /etc/fstab
 ```
 
 Example:
@@ -652,7 +658,7 @@ swap                     : ignored
 swap                     : ignored
 ```
 
-Enable the SWAP partition the following command:
+Enable the SWAP partition with the following command:
 
 ```sh
 root@rescue12-customer-eu:/# swapon -av
@@ -665,23 +671,23 @@ swapon: /dev/sdb4: pagesize=4096, swapsize=536870912, devsize=536870912
 swapon /dev/sdb4
 ```
 
-We exit the `chroot` environment with exit and reload the system:
+We exit the `chroot` environment with `exit` and reload the system:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # systemctl daemon-reload
 ```
 
-We umount all the disks:
+We unmount all the disks:
 
 ```sh
 root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # umount -R /mnt
 ```
 
-We have now successfully completed the RAID rebuild on the server and we can now reboot it in normal mode.
+The RAID rebuild is complete. Reboot the server in normal mode.
 
 ///
 
-## Go Further
+## Go further
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
@@ -695,6 +701,6 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts to assist with your specific use case.
 
 Join our [community of users](/links/community).

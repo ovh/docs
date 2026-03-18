@@ -4,6 +4,50 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Dienstleistungen und deren Verlängerun
 updated: 2025-01-28
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Ziel
 
 Das Menü **Meine Angebote und Dienste** in Ihrem OVHcloud Kundencenter ermöglicht es Ihnen, den Status Ihrer Dienstleistungen zu überprüfen, diese zu verlängern, den Verlängerungstyp zu ändern, Rechnungen zu begleichen oder deren Zahlung im Voraus zu planen.
@@ -19,17 +63,27 @@ Folgende Themen werden erläutert:
 
 > [!primary]
 >
-> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](/links/manager) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Meine Angebote und Dienste`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
+> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge auf der Seite [Meine Verträge](/links/control-panel/billing-contracts) überprüfen.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über aktive OVHcloud Dienste.
 - Sie sind [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts#definition) Ihrer OVHcloud Dienste.
 - Sie verfügen über ein gültiges Zahlungsmittel in Ihrem OVHcloud Account, siehe auch unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”.
+
+<!-- CP-NAV-START:billing-services -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
+
+---
+<!-- CP-NAV-END:billing-services -->
 
 <a name="auto-vs-manual"></a>
 
@@ -68,8 +122,7 @@ Folgende Themen werden erläutert:
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).<br>
-Klicken Sie oben rechts auf Ihren Namen und wählen Sie `Meine Angebote und Dienste`{.action}.
+Öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -193,33 +246,74 @@ In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 
 ## FAQ
 
-> [!faq]
->
-> Ich muss eine Kundenkennung und ein Passwort einzugeben, wenn ich die Bezahlung meines Dienstes vorziehen möchte. Was ist die Kundenkennung?
->> Die Kundenkennung (*NIC handle*, *Account ID*) ist Ihr OVHcloud Benutzername und hat das Format **xx11111-ovh**. Das angeforderte Passwort ist das Passwort für den Zugriff auf Ihren OVHcloud Kunden-Account. Wenn Sie es nicht mehr wissen, ändern Sie es mithilfe von [diesen Anweisungen](/pages/account_and_service_management/account_information/manage-ovh-password).
-> Wo finde ich meine OVHcloud Kundenkennung (Benutzername)?
->> Sie wird in Ihrem Kundencenter angezeigt, indem Sie oben rechts auf Ihren Account-Namen klicken. Sie erscheint auch rechts oben auf allen Ihren Rechnungen. Sie finden diese Informationen auch in der E-Mail zur Account-Erstellung, in den Mails zur Bestellungbestätigung und Verlängerung sowie in den Login-Benachrichtigungen zu Ihrem Account.
-> Ich kann mich nicht bei meinem OVHcloud Kunden-Account anmelden, um meine Dienste zu verlängern. Was kann ich tun?
->> Lesen Sie den Abschnitt „[Was, wenn ich mich nicht einloggen kann?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)“ unserer Anleitung „[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)“.
-> Ich möchte die automatische Verlängerung aktivieren, erhalte aber eine Fehlermeldung. Was soll ich tun?
->> Damit die automatische Verlängerung für Ihre Dienste aktiviert werden kann, muss Ihrem OVHcloud Kunden-Account ein gültiges Zahlungsmittel hinzugefügt worden sein. Ist das nicht der Fall oder ist das Zahlungsmittel abgelaufen, erscheint beim Versuch, die automatische Verlängerung zu aktivieren, eine Fehlermeldung im Kundencenter. Lesen Sie unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”, um eine Zahlungsart zu überprüfen oder hinzuzufügen.
-> Meine Zahlungsart ist nicht mehr gültig. Wie füge ich eine neue Zahlungsart hinzu?
->> Lesen Sie unsere Anleitung “[Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”. Bevor Sie ein veraltetes Zahlungsmittel löschen können, müssen Sie ein neues gültiges Zahlungsmittel zu Ihrem OVHcloud Kunden-Account hinzufügen.
-> Ich habe eine Frage zur Verlängerung meiner Domain
->> Lesen Sie unsere Anleitung “[Meine OVHcloud Domainnamen verlängern](/pages/web_cloud/domains/autorenew_domain_name)”.
-> Ich möchte keine weiteren automatischen Zahlungen mehr, aber meine Dienstleistung nicht kündigen. Was soll ich tun?
->> Wenn Ihr Dienst dies erlaubt, können Sie die Aktion [Verlängerung konfigurieren](#actions) verwenden und so eine manuelle Verlängerung auswählen.
-> Ich habe meine Dienstleistung für 12 Monate verlängert. Kann ich meine Auswahl ändern?
->> Nach der Verlängerung einer Dienstleistung kann diese nicht mehr storniert werden. Sie können dennoch eine andere Art der Verlängerung wählen oder den Dienst kündigen, aber diese beiden Optionen können erst nach Ablauf des laufenden Abonnements, d.h. nach Ablauf der 12 Monate, in Anspruch genommen werden.
-> Meine Website wurde gesperrt, da ich meine Dienste nicht rechtzeitig verlängert habe. Ich habe gerade meine Dienste verlängert. Wie lange muss ich warten, bis meine Website wieder verfügbar ist?
->> Die Zeit bis zur Wiederherstellung variiert je nach den betroffenen Diensten.
->> Wenn nur Ihr Webhosting gesperrt und dann verlängert wurde, dauert es durchschnittlich 2 Stunden, bis Ihre Website wieder verfügbar ist.
->> Wenn Ihr Domainname ebenfalls gesperrt und dann verlängert wurde, kann die Frist bis zu 48 Stunden betragen, entsprechend der möglichen Propagationszeit für DNS.
->> Um Ihre kritischen Dienste vor Unerreichbarkeit zu schützen, empfehlen wir, die automatische Verlängerung zu verwenden und [regelmäßig sicherzustellen, dass Ihre Zahlungsarten gültig sind](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
-> Das Abonnement meiner Dienstleistung läuft im Juli 2024 ab. Es ist Januar 2024 und ich möchte es für ein Jahr verlängern. Wird das Abonnement dann im Juli 2025 oder im Januar 2025 ablaufen?
->> Wenn Sie die Verlängerung eines Dienstes verlängern (um ein Jahr oder einen kürzeren Zeitraum), wird dieser Zeitraum zum nächsten in der Tabelle „Verwaltung meiner Angebote und Dienste“ sichtbaren Gültigkeitsdatum hinzugefügt. In Ihrem Fall wird Ihr Dienst bis Juli 2025 verlängert.
-> Das Abonnement meiner Dienstleistung ist am 1. Januar 2024 abgelaufen und ich habe vergessen, es zu verlängern. Ich habe es soeben am 16. Januar 2024 für 6 Monate verlängert, aber ich stelle fest, dass es am 1. Juli 2024 und nicht am 16. Juli 2024 ausläuft. Ist das normal?
->> Ja, dies ist normal, die Verlängerung beginnt zum Ablaufdatum des Abonnements.
+/// details | Ich muss eine Kundenkennung und ein Passwort einzugeben, wenn ich die Bezahlung meines Dienstes vorziehen möchte. Was ist die Kundenkennung?
+
+Die Kundenkennung (*NIC handle*, *Account ID*) ist Ihr OVHcloud Benutzername und hat das Format **xx11111-ovh**. Das angeforderte Passwort ist das Passwort für den Zugriff auf Ihren OVHcloud Kunden-Account. Wenn Sie es nicht mehr wissen, ändern Sie es mithilfe von [diesen Anweisungen](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+///
+
+/// details | Wo finde ich meine OVHcloud Kundenkennung (Benutzername)?
+
+Sie wird in Ihrem Kundencenter angezeigt, indem Sie oben rechts auf Ihren Account-Namen klicken. Sie erscheint auch rechts oben auf allen Ihren Rechnungen. Sie finden diese Informationen auch in der E-Mail zur Account-Erstellung, in den Mails zur Bestellungbestätigung und Verlängerung sowie in den Login-Benachrichtigungen zu Ihrem Account.
+
+///
+
+/// details | Ich kann mich nicht bei meinem OVHcloud Kunden-Account anmelden, um meine Dienste zu verlängern. Was kann ich tun?
+
+Lesen Sie den Abschnitt „[Was, wenn ich mich nicht einloggen kann?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)“ unserer Anleitung „[In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)“.
+
+///
+
+/// details | Ich möchte die automatische Verlängerung aktivieren, erhalte aber eine Fehlermeldung. Was soll ich tun?
+
+Damit die automatische Verlängerung für Ihre Dienste aktiviert werden kann, muss Ihrem OVHcloud Kunden-Account ein gültiges Zahlungsmittel hinzugefügt worden sein. Ist das nicht der Fall oder ist das Zahlungsmittel abgelaufen, erscheint beim Versuch, die automatische Verlängerung zu aktivieren, eine Fehlermeldung im Kundencenter. Lesen Sie unsere Anleitung “[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”, um eine Zahlungsart zu überprüfen oder hinzuzufügen.
+
+///
+
+/// details | Meine Zahlungsart ist nicht mehr gültig. Wie füge ich eine neue Zahlungsart hinzu?
+
+Lesen Sie unsere Anleitung “[Meine Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)”. Bevor Sie ein veraltetes Zahlungsmittel löschen können, müssen Sie ein neues gültiges Zahlungsmittel zu Ihrem OVHcloud Kunden-Account hinzufügen.
+
+///
+
+/// details | Ich habe eine Frage zur Verlängerung meiner Domain
+
+Lesen Sie unsere Anleitung “[Meine OVHcloud Domainnamen verlängern](/pages/web_cloud/domains/autorenew_domain_name)”.
+
+///
+
+/// details | Ich möchte keine weiteren automatischen Zahlungen mehr, aber meine Dienstleistung nicht kündigen. Was soll ich tun?
+
+Wenn Ihr Dienst dies erlaubt, können Sie die Aktion [Verlängerung konfigurieren](#actions) verwenden und so eine manuelle Verlängerung auswählen.
+
+///
+
+/// details | Ich habe meine Dienstleistung für 12 Monate verlängert. Kann ich meine Auswahl ändern?
+
+Nach der Verlängerung einer Dienstleistung kann diese nicht mehr storniert werden. Sie können dennoch eine andere Art der Verlängerung wählen oder den Dienst kündigen, aber diese beiden Optionen können erst nach Ablauf des laufenden Abonnements, d.h. nach Ablauf der 12 Monate, in Anspruch genommen werden.
+
+///
+
+/// details | Meine Website wurde gesperrt, da ich meine Dienste nicht rechtzeitig verlängert habe. Ich habe gerade meine Dienste verlängert. Wie lange muss ich warten, bis meine Website wieder verfügbar ist?
+
+Die Zeit bis zur Wiederherstellung variiert je nach den betroffenen Diensten.
+Wenn nur Ihr Webhosting gesperrt und dann verlängert wurde, dauert es durchschnittlich 2 Stunden, bis Ihre Website wieder verfügbar ist.
+Wenn Ihr Domainname ebenfalls gesperrt und dann verlängert wurde, kann die Frist bis zu 48 Stunden betragen, entsprechend der möglichen Propagationszeit für DNS.
+Um Ihre kritischen Dienste vor Unerreichbarkeit zu schützen, empfehlen wir, die automatische Verlängerung zu verwenden und [regelmäßig sicherzustellen, dass Ihre Zahlungsarten gültig sind](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+
+///
+
+/// details | Das Abonnement meiner Dienstleistung läuft im Juli 2024 ab. Es ist Januar 2024 und ich möchte es für ein Jahr verlängern. Wird das Abonnement dann im Juli 2025 oder im Januar 2025 ablaufen?
+
+Wenn Sie die Verlängerung eines Dienstes verlängern (um ein Jahr oder einen kürzeren Zeitraum), wird dieser Zeitraum zum nächsten in der Tabelle „Verwaltung meiner Angebote und Dienste“ sichtbaren Gültigkeitsdatum hinzugefügt. In Ihrem Fall wird Ihr Dienst bis Juli 2025 verlängert.
+
+///
+
+/// details | Das Abonnement meiner Dienstleistung ist am 1. Januar 2024 abgelaufen und ich habe vergessen, es zu verlängern. Ich habe es soeben am 16. Januar 2024 für 6 Monate verlängert, aber ich stelle fest, dass es am 1. Juli 2024 und nicht am 16. Juli 2024 ausläuft. Ist das normal?
+
+Ja, dies ist normal, die Verlängerung beginnt zum Ablaufdatum des Abonnements.
+
+///
 
 ## Weiterführende Informationen
 

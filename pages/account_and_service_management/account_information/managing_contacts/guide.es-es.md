@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar los contactos de los servicios'
 excerpt: 'Cómo gestionar los distintos contactos de los servicios de OVHcloud'
-updated: 2025-08-27
+updated: 2026-02-11
 ---
 
 ## Objetivo
@@ -18,7 +18,7 @@ La mayoría de servicios creados en OVHcloud los gestionan varios contactos. Cad
 
 Existen tres tipos de contactos:
 
-- **El contacto administrador** se encarga de los aspectos administrativos y técnicos del servicio. Tiene permisos para modificar el resto de contactos y puede realizar cambios en los datos del propietario de servicios como, por ejemplo, los dominios.
+- **El contacto administrador** se encarga de los aspectos administrativos y técnicos del servicio. Tiene permisos para modificar el resto de contactos y puede realizar cambios en los datos del titular de servicios como, por ejemplo, los nombres de dominio.
 - **El contacto técnico** solo se encarga de los aspectos técnicos del servicio.
 - **El contacto de facturación** solo se encarga de los aspectos relativos a la facturación del servicio. En concreto, es el que recibe las notificaciones referentes a las renovaciones. 
 
@@ -28,12 +28,23 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
 - Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
 - El nuevo contacto debe tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
+- El nuevo contacto de facturación debe disponer de una forma de pago válida en su cuenta de OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Gestión de contactos](/links/control-panel/account-contacts)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis contactos`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## Procedimiento
 
@@ -43,7 +54,7 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ### Acceder a la gestión de los contactos <a name="gestion_des_contacts"></a>
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione en `Mis contactos`{.action}.
+Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 
 ![Gestión de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -58,7 +69,7 @@ Se mostrará una tabla con todos los servicios en los que su identificador de cl
 
 ### Cambiar los contactos de un servicio
 
-Una vez haya accedido a la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servidor que quiere modificar, y a continuación haga clic en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
+Una vez haya accedido a la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar, y a continuación haga clic en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
 
 ![Gestión de contactos](images/managing_contacts_03.png){.thumbnail}
 
@@ -84,7 +95,7 @@ Como contacto de facturación, solo puede designar a otro contacto de facturaci�
 
 ### Validar, rechazar o realizar el seguimiento de un cambio de contacto
 
-Para gestionar y realizar el seguimiento de las solicitudes en curso, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione en `Mis contactos`{.action} > `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
+Para gestionar y realizar el seguimiento de las solicitudes en curso, haga clic en la pestaña `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
 
 ![Gestión de contactos](images/managing_contacts_05.png){.thumbnail}
 
@@ -107,7 +118,7 @@ El cambio de contacto será efectivo unos minutos después de que los dos contac
 
 ### Ejemplo: dar la gestión técnica de su sitio web a su webmaster
 
-Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](https://www.ovhcloud.com/es-es/web-hosting/ecommerce-website/). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
+Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propia [tienda online](/links/web/hosting-ecommerce-website). Para empezar a crear su sitio web, usted ha contactado con uno de nuestros [partners](/links/partner) y le solicita los permisos de acceso a sus servicios de OVHcloud.
 
 > [!warning]
 >
@@ -116,19 +127,19 @@ Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propi
 
 En ese caso, conceda a su proveedor el derecho de "[contacto técnico](#gestion_des_contacts)" en su alojamiento de OVHcloud. Este acceso le permitirá realizar las manipulaciones necesarias para la puesta en línea de su sitio web (adición de un dominio o subdominio en el multisitio, instalación de un módulo en 1 clic, modificación de la contraseña FTP o de la base de datos, creación de un certificado SSL, etc.).
 
-Si su dominio no está asociado a su alojamiento y quiere transferir las operaciones necesarias a su webmaster, dígale también el permiso de "[contacto técnico](#gestion_des_contacts)" en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su dominio.
+Si su dominio no está asociado a su alojamiento y quiere transferir las operaciones necesarias a su webmaster, dígale también el permiso de "[contacto técnico](#gestion_des_contacts)" en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su nombre de dominio.
 
-El derecho "[contacto técnico](#gestion_des_contacts)" no permite modificar los contactos administrador o la facturación de un servicio. No dará a su webmaster el acceso a sus facturas o pedidos, a la renovación de sus servicios o a sus formas de pago. Tampoco le permitirá realizar la [transferencia de la gestión de su dominio](/pages/web_cloud/domains/transfer_outgoing_domain) a otro proveedor de alojamiento o [cambiar su propietario](/pages/web_cloud/domains/trade_domain).
+El derecho "[contacto técnico](#gestion_des_contacts)" no permite modificar los contactos administrador o la facturación de un servicio. No dará a su webmaster el acceso a sus facturas o pedidos, a la renovación de sus servicios o a sus formas de pago. Tampoco le permitirá realizar la [transferencia de la gestión de su nombre de dominio](/pages/web_cloud/domains/transfer_outgoing_domain) a otro proveedor de alojamiento o [cambiar su titular](/pages/web_cloud/domains/trade_domain).
 
 En cualquier momento, como [contacto administrador](#administrateur), podrá obtener el "[contacto técnico](#technique)" de su servicio.
 
-### Caso particular de un propietario de dominio
+### Caso particular de un titular de nombre de dominio
 
-Al contratar un servicio de OVHcloud, ha establecido un propietario para este. Si el propietario no tiene acceso a la(s) cuenta(s) de OVHcloud asociadas al servicio que quiere recuperar, podrá ceder la propiedad de un dominio a un tercero o recuperar la administración del dominio mediante los siguientes procedimientos:
+Al contratar un servicio de OVHcloud, ha establecido un titular para este. Si el titular no tiene acceso a la(s) cuenta(s) de OVHcloud asociadas al servicio que quiere recuperar, podrá ceder la titularidad de un nombre de dominio a un tercero o recuperar la administración del nombre de dominio mediante los siguientes procedimientos:
 
-[Cambiar el propietario de un servicio](https://www.ovh.com/cgi-bin/es/procedure/procedureChangeOwner.cgi)
+[Cambiar el titular de un servicio](/links/transversal/procedure-change-owner)
 
-[Cambiar los contactos administrativo, de facturación y técnico de un dominio](https://www.ovh.com/fr/cgi-bin/es/procedure/procedureChangeContacts.cgi)
+[Cambiar los contactos administrativo, de facturación y técnico de un nombre de dominio](/links/transversal/procedure-contact-change)
 
 El seguimiento de cada procedimiento se efectúa por e-mail y será necesaria una verificación de identidad. A lo largo de cada procedimiento recibirá instrucciones detalladas.
 

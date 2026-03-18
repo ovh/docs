@@ -1,7 +1,7 @@
 ---
 title: "Como adicionar um registo DNS de tipo CNAME para um subdomínio"
-excerpt: "Saiba como adicionar um registo DNS do tipo CNAME numa zona DNS gerida na OVHcloud para o subdomínio de um domínio"
-updated: 2025-06-25
+excerpt: "Saiba como adicionar um registo DNS do tipo CNAME numa zona DNS gerida na OVHcloud para o subdomínio de um nome de domínio"
+updated: 2026-02-10
 ---
 
 <style>
@@ -33,8 +33,19 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 ## Requisitos
 
 - Ter um [nome de domínio](/links/web/domains).
-- Ter uma zona DNS associada a este domínio na OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+- Ter uma zona DNS associada a este nome de domínio na OVHcloud.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Selecione o seu nome de domínio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >
@@ -43,9 +54,9 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 
 ## Instruções
 
-### Adicionar um registo DNS do tipo CNAME para o subdomínio de um domínio
+### Adicionar um registo DNS do tipo CNAME para o subdomínio de um nome de domínio
 
-1. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
+1. Clique no menu `Zonas DNS`{.action} e escolha o nome de domínio em causa.
 2. Na página que se abrir, clique no botão `Adicionar uma entrada`{.action}.
 3. Na janela que aparecer, selecione o campo de apontamento do tipo `CNAME`{.action}.
 4. De seguida, introduza no campo `Subdomínio` o subdomínio em causa (por exemplo: `www` para o subdomínio `www.domain.tld`) e, no campo `Alvo *`, o nome de domínio ou subdomínio (por exemplo: `domain.tld`) que pretende visar através do registo do tipo CNAME. Por fim, clique em `Seguinte`{.action}.
@@ -80,9 +91,9 @@ Um pedido DNS para *www.domain.tld* retornará o destino do registo CNAME ou o v
 
 ///
 
-/// details | CNAME num domínio na sua própria zona DNS
+/// details | CNAME num nome de domínio na sua própria zona DNS
 
-Por convenção, **os registos do tipo CNAME não podem ser utilizados num nome de domínio na sua própria zona DNS**. De facto, o domínio deve obrigatoriamente apontar diretamente para um endereço IP com um registo do tipo [A](/pages/web_cloud/domains/dns_zone_a_record_creation) para um IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) para um IPv6.
+Por convenção, **os registos do tipo CNAME não podem ser utilizados num nome de domínio na sua própria zona DNS**. De facto, o nome de domínio deve obrigatoriamente apontar diretamente para um endereço IP com um registo do tipo [A](/pages/web_cloud/domains/dns_zone_a_record_creation) para um IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) para um IPv6.
 
 Como tal, e tomando como exemplo o exemplo acima, não poderá criar um registo do tipo CNAME para o nome de domínio *domain.tld* na zona DNS que criou para esse nome.
 No entanto, pode criar registos do tipo CNAME para todos os subdomínios (por exemplo: *subdomain.domain.tld* ou *www.domain.tld*) do nome de domínio *domain.tld* na zona DNS criada para *domain.tld*.
@@ -95,4 +106,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community). 

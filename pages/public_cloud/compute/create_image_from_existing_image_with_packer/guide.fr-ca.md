@@ -13,6 +13,17 @@ updated: 2024-11-12
 - Un projet [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Un terminal
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## En pratique
 
 ### Installer Packer

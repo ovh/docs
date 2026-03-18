@@ -17,9 +17,36 @@ You can [migrate an email address automatically](/pages/web_cloud/email_and_coll
 
 ## Requirements
 
-- An email service with OVHcloud, such as an [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](/links/web/hosting))
+- An email service with OVHcloud, such as an [Exchange](/links/web/emails-exchange), [Email Pro](/links/web/email-pro), [Zimbra](/links/web/zimbra) or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](/links/web/hosting))
 - Access to the email accounts you want to migrate (the source accounts)
 - Access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions
 

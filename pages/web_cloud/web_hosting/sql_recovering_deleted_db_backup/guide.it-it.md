@@ -22,6 +22,17 @@ La maggior parte delle nostre soluzioni di [hosting Web](/links/web/hosting) inc
 - Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting) attiva che include uno o più database condivisi associati a OVHcloud.
 - L'eliminazione del database deve risalire a meno di 30 giorni prima.
 
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
+
 ## Procedura
 
 Le API OVHcloud sono messe a disposizione per permettere agli sviluppatori o agli integratori di associare funzionalità presenti o meno nello Spazio Cliente OVHcloud direttamente alle proprie applicazioni o soluzioni.

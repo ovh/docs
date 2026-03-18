@@ -1,7 +1,7 @@
 ---
-title: 'Installer Veeam Backup & Replication'
-excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
-updated: 2024-12-19
+title: "Installer Veeam Backup & Replication"
+excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
+updated: 2026-03-10
 ---
 
 ## Objectif
@@ -9,6 +9,15 @@ updated: 2024-12-19
 Veeam Backup & Replication est un logiciel de protection des données. Il offre diverses possibilités de sauvegarde, de réplication et de restauration.
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
+
+> [!warning]
+>
+> Si une machine virtuelle est protégée par plusieurs méthodes de sauvegarde (par exemple **VMware backup** et **Veeam Agent for Linux**), chaque méthode consomme une licence distincte.
+>
+> Par conséquent, la même machine virtuelle peut être **facturée deux fois au cours du même mois**.
+>
+> Pour éviter des frais supplémentaires, protégez chaque machine virtuelle en utilisant **une seule méthode de sauvegarde**.
+>
 
 ## Prérequis
 
@@ -252,7 +261,7 @@ Allez dans le menu, puis cliquez sur `Licence`{.action}.
 
 Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
 
-Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
+Si l'enregistrement a réussi, vous devriez voir apparaître `Edition : Enterprise Plus`.
 
 > [!primary]
 > Vous pouvez maintenant désactiver l'utilisateur que vous avez créé pour créer l'enregistrement.
@@ -263,4 +272,4 @@ Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs(/links/community), ou sur le channel dédié [Discord](https://discord.gg/ovhcloud).
+Échangez avec notre [communauté d'utilisateurs](/links/community), ou sur le channel dédié [Discord](https://discord.gg/ovhcloud).

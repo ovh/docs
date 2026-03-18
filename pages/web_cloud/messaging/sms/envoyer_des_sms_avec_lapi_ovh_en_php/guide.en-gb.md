@@ -1,6 +1,6 @@
 ---
 title: Sending SMS messages with the OVHcloud API in PHP
-excerpt: Find out how to send SMS messages with the OVHcloud RESTful API in PHP
+excerpt: Find out how to set up a PHP development environment and send your first SMS message step by step using the OVHcloud RESTful API
 updated: 2020-06-25
 ---
 

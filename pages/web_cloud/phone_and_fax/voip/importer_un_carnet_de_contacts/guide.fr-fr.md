@@ -1,19 +1,29 @@
 ---
-title: 'Gérer un carnet de contacts sur une ligne SIP'
-excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
+title: "Gérer un carnet de contacts sur une ligne SIP"
+excerpt: "Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud"
 updated: 2025-12-30
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afin de rendre les interactions avec vos correspondants plus faciles, vous avez la possibilité de créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
+Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Pour faciliter les interactions avec vos correspondants, vous pouvez créer un carnet de contacts permettant de retrouver ou d'identifier ceux-ci directement depuis vos téléphones, dans le répertoire ou lors d'un appel entrant.
 
 **Apprenez à gérer le carnet de contacts et les numéros abrégés de vos lignes SIP OVHcloud.**
 
 ## Prérequis
 
 - Disposer au moins d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} :
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -21,7 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels. Afi
 
 ### Étape 1 : accéder à la gestion du carnet de contacts
 
-Vous avez la possibilité de gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
+Vous pouvez gérer le carnet de contacts d'une seule ligne ou d'un groupe de lignes, permettant ainsi à toutes les lignes rattachées à ce groupe d'en bénéficier.
 
 > [!success]
 > L'avantage de l'ajout d'un carnet de contacts sur un **groupe de lignes** est qu'il permet d'avoir un carnet **commun** pour toutes les lignes du groupe.
@@ -30,18 +40,13 @@ Pour bénéficier d'un carnet de contacts sur une seule ligne SIP, celle-ci doit
 
 - **Pour accéder à la gestion du carnet de contacts d'une seule ligne** :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée. 
-1. Cliquez sur l'onglet `Téléphone`{.action} puis sur `Carnets de contacts`{.action}.
- 
+Cliquez sur l'onglet `Téléphone`{.action} puis sur `Carnets de contacts`{.action}.
+
 ![carnet de contacts](images/carnetligne.png){.thumbnail}
 
 - **Pour accéder à la gestion du carnet de contacts d'un groupe de lignes** :
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation souhaité.
-1. Cliquez alors sur l'onglet `Carnet de contacts`{.action}.
+Cliquez sur l'onglet `Carnet de contacts`{.action}.
 
 ![carnet de contacts](images/carnetgroupe.png){.thumbnail}
 
@@ -55,7 +60,7 @@ Pour créer un carnet de contacts, renseignez le nom du carnet dans la zone de t
 
 ![carnet de contacts](images/creercarnet.png){.thumbnail}
 
-#### Ajouter ou modifier un contacts
+#### Ajouter ou modifier un contact
 
 Pour ajouter un nouveau contact, cliquez sur le bouton `Actions`{.action}, puis sur `Ajouter`{.action}. Pour modifier un contact existant, cliquez sur le bouton représentant trois points à droite du contact concerné, puis sur `Éditer`{.action}.
 

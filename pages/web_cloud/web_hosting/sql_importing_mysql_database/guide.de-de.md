@@ -15,7 +15,18 @@ Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
 - Ihr [OVHcloud Webhosting](/links/web/hosting) Angebot beinhaltet eine Datenbank.
 - Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
-- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](/links/manager), oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
+- Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das OVHcloud Kundencenter, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Webhosting](/links/control-panel/web-hosting)
+- **Navigationspfad:** `Web Cloud`{.action} > `Hosting-Pakete`{.action} > Wählen Sie Ihr Webhosting aus
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Beschreibung
 

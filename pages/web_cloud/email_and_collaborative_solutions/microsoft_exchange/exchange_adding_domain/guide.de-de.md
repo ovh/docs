@@ -24,27 +24,28 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 - Sie verfügen über einen [Exchange Dienst](/links/web/emails-hosted-exchange) oder [E-Mail Pro Dienst](/links/web/email-pro).
 - Sie verfügen über einen oder mehrere Domainnamen.
 - Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+**Exchange:**
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+**E-Mail Pro:**
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## In der praktischen Anwendung
-
-### Zugang zur Verwaltung Ihrer Dienstleistung
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. In der Rubrik `MICROSOFT`{.action}, klicken Sie auf `Exchange`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
-> **Email Pro**
->>
->> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
->> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
->> 1. Klicken Sie auf `E-Mail Pro`{.action}.
->> 1. Wählen Sie den gewünschten Dienst aus.
->>
 
 ### Eine Domain hinzufügen
 
@@ -56,7 +57,7 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 > [!warning]
 >
-> Standardmäßig sind alle E-Mail-Accounts eines Dienstes miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain einen weiteren [Exchange oder Email Pro](/links/web/emails) Dienst zu bestellen.
+> Standardmäßig sind alle E-Mail-Accounts eines Dienstes miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain einen weiteren [Exchange oder E-Mail Pro](/links/web/emails) Dienst zu bestellen.
 >
 
 Im Fenster zum Hinzufügen einer Domain:
@@ -142,7 +143,7 @@ Zur Erinnerung: Alle für einen Dienst erstellten Adressen können im Adressbuch
 
 Sobald die Accounts vollständig eingerichtet sind, können Sie mit deren Verwendung beginnen. Hierzu stellt Ihnen OVHcloud einen Zugang über **Webmail** zur Verfügung, auf den Sie [hier](/links/web/email) zugreifen können. Um Ihren Account mit einer E-Mail-Software zu verwenden, muss diese mit dem Dienst kompatibel sein.
 
-Wenn Sie E-Mail-Accounts auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation für [Exchange](/links/web/emails) oder [E-Mail Pro](/links/web/email-pro).
+Wenn Sie E-Mail-Accounts auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation für [Exchange](/links/web/emails-exchange) oder [E-Mail Pro](/links/web/email-pro).
 
 Sie können Outlook-Lizenzen im [OVHcloud Kundencenter](/links/manager) und Office 365-Lizenzen auf der Seite zu [Microsoft 365](/links/web/ms365) erwerben. Wir empfehlen Ihnen eine dieser Lösungen, wenn Sie Outlook E-Mail-Software oder weitere Software der Office Suite nutzen möchten.
 

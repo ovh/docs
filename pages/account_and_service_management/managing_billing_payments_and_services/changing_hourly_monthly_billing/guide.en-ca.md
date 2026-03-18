@@ -26,7 +26,17 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -36,7 +46,7 @@ If you initially selected hourly billing, you can switch to monthly billing at a
 > The following procedure does not work for third-generation instances (example: B3-32). To be billed monthly for this type of instance, you must create a [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/savings_plans) for this instance model.
 >
 
-In the [OVHcloud Control Panel](/links/manager), choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
+Choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 

@@ -6,19 +6,29 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Área de Cliente OVHcloud](/links/manager).
+Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da Área de Cliente OVHcloud.
 
 **Saiba como gerir as suas encomendas a partir da Área de Cliente OVHcloud.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na página [Lista de contratos](/links/control-panel/billing-contracts).
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Ter realizado, pelo menos, uma encomenda na OVHcloud.
+- Ter realizado, pelo menos, uma encomenda na OVHcloud
+
+<!-- CP-NAV-START:billing-orders -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Encomendas](/links/control-panel/billing-orders)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Encomendas`{.action}
+
+---
+<!-- CP-NAV-END:billing-orders -->
 
 ## Instruções
 
@@ -35,11 +45,11 @@ A nota de encomenda é criada quando efetua a encomenda. Indica os produtos enco
 |3|Métodos de pagamento registados na sua conta de cliente. Para mais informações, consulte o guia [Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os relacionados com o tipo de conta registada.|
 
-Pode consultar à sua nota de encomenda a qualquer momento a partir da [Área de Cliente OVHcloud](/links/manager) conforme explicado abaixo.
+Pode consultar à sua nota de encomenda a qualquer momento na página [Encomendas](/links/control-panel/billing-orders), conforme explicado abaixo.
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão das encomendas, aceda à sua [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action}.
+Abra a página [Encomendas](/links/control-panel/billing-orders).
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
 
@@ -69,9 +79,9 @@ Poderá igualmente visualizar a nota de encomenda em formato HTML, clicando em `
 
 ### Seguir à sua encomenda
 
-Depois de gerar à sua nota de encomenda, pode seguir à sua encomenda a partir da [Área de Cliente OVHcloud](/links/manager):
+Depois de gerar à sua nota de encomenda, pode seguir à sua encomenda a partir da página [Encomendas](/links/control-panel/billing-orders):
 
-* Aceda à [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action} e, em seguida, clique no botão `...`{.action} junto da sua encomenda.
+* Clique no botão `...`{.action} junto da sua encomenda.
 * Selecione `Seguir encomenda`{.action}. O acompanhamento da encomenda pode igualmente ser apresentado clicando no estado de uma encomenda na coluna `Estado`.
 
 ![Acompanhamento de encomendas](images/order05b.png){.thumbnail}
@@ -96,9 +106,9 @@ O artigo 12.4 das [Condições Gerais de Serviço](/links/terms-conditions-contr
 > Por último, não se aplica a determinados serviços (nomeadamente os [nomes de domínio](/links/web/domains) e os [certificados SSL Sectigo](/links/web/hosting-options-ssl)). Ao encomendar estes produtos, é-lhe pedido que renuncie expressamente ao seu direito de arrependimento, em conformidade com o artigo L.221-28 do Código do Consumidor.
 >
 
-Se os critérios de elegibilidade para o direito de arrependimento estiverem preenchidos, pode ser implementado diretamente a partir da [Área de Cliente OVHcloud](/links/manager):
+Se os critérios de elegibilidade para o direito de arrependimento estiverem preenchidos, pode ser implementado diretamente a partir da página [Encomendas](/links/control-panel/billing-orders):
 
-* Aceda à [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action} e, em seguida, clique no botão `...`{.action} junto da sua encomenda.
+* Clique no botão `...`{.action} junto da sua encomenda.
 * Selecione `Anular a encomenda`{.action}.
 
 ![Anular uma encomenda](images/cancelorder1.png){.thumbnail}

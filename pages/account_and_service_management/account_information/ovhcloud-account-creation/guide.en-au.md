@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2026-01-16
+updated: 2026-02-26
 ---
 
 ## Objective
@@ -46,7 +46,16 @@ Once you have completed this first form, a one-time code will be sent to the ema
 > If the email address you have entered is not valid or available, click `Change email address`{.action}.
 >
 
-Once you have entered and validated the code, fill in the rest of the form. Please ensure that you have set the **account type** among the choices offered.
+Once you have entered and validated the code, you have to define the **type of account** among the choices offered:
+
+- **Non-profit**: The "Non-Profit" account should only be created by non-profits and other not-for-profit organisations such as foundations, trade unions or religious congregations.
+- **Public administration**: The "Public administration" account should only be created by central government bodies, regional and local authorities, or public sector bodies.
+- **Company**: The "Company" account is intended and should be created by all legal persons (excluding public sector bodies and non-profit entities) and all natural persons (sole traders) purchasing OVHcloud products as part of their professional activity.
+- **Private individual**: The "Individual" account should only be created by natural persons purchasing OVHcloud products for their private needs, outside the scope of a professional activity.
+
+![account type choice](images/account-type-2025.png){.thumbnail}
+
+You will then be asked to enter your details. Make sure the information you have entered is correct.
 
 Once you have created your account, you will automatically be logged in to your account’s dashboard.
 

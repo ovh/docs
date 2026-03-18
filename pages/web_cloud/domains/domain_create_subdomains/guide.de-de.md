@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -32,16 +32,26 @@ Sie können für einen Domainnamen eine unbegrenzte Anzahl an Subdomains erstell
 
 - Sie verwalten mindestens einen [Domainnamen](/links/web/domains).
 - Sie verfügen über eine aktive DNS-Zone für Ihren Domainnamen. Bei Bedarf lesen Sie unsere Anleitung [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ausreichende Rechte zur Verwaltung aller betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung zur [Verwaltung der Kontakte Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## In der praktischen Anwendung
 
 **Inhaltsübersicht**
 
 - [Einleitung](#introduction)
 - [Wie erstelle ich eine Subdomain?](#subdomain-creation)
-    - [1 - Identifizieren der aktiven DNS-Zone Ihrer Domain](#identification)
+    - [1 - Identifizieren der aktiven DNS-Zone Ihrer Domainname](#identification)
     - [2 - DNS-Einträge für Ihre Subdomains erstellen](#dns-records-creation)
 - [Ihre Subdomain mit einem OVHcloud Dienst verbinden, autorisieren und konfigurieren](#link-subdomain)
     - [Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen](#link-subdomain-case-1)
@@ -110,37 +120,37 @@ Alle [Domainnamen](/links/web/domains) benötigen eine **DNS-Zone**. Die DNS-Zon
 
 Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 
-**Alle Subdomains werden in der aktiven DNS-Zone der Domain konfiguriert. Dazu werden DNS-Einträge hinzugefügt.**
+**Alle Subdomains werden in der aktiven DNS-Zone der Domainname konfiguriert. Dazu werden DNS-Einträge hinzugefügt.**
 
-#### 1 - Identifizieren der aktiven DNS-Zone Ihrer Domain <a name="identification"></a>
+#### 1 - Identifizieren der aktiven DNS-Zone Ihrer Domainname <a name="identification"></a>
 
 Es gibt zwei mögliche Szenarien:
 
-- Die aktive DNS-Zone Ihrer Domain ist bei OVHcloud vorhanden.
-- Die aktive DNS-Zone Ihrer Domain wird an einem anderen Ort gehostet.
+- Die aktive DNS-Zone Ihrer Domainname ist bei OVHcloud vorhanden.
+- Die aktive DNS-Zone Ihrer Domainname wird an einem anderen Ort gehostet.
 
 > [!warning]
 >
-> Die aktive DNS-Zone Ihrer Domain wird nicht zwingend bei demselben Anbieter verwaltet wie Ihre Domain.
+> Die aktive DNS-Zone Ihrer Domainname wird nicht zwingend bei demselben Anbieter verwaltet wie Ihre Domainname.
 >
-> 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
+> 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domainname befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domainname bearbeiten](/pages/web_cloud/domains/dns_server_edit)“.
 >
-> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist. Beachten Sie, dass Sie unsere Anleitung „[Domain zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ verwenden können, um diese Aktion durchzuführen.
+> 2: Wenn Ihre Domainname nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domainname, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist. Beachten Sie, dass Sie unsere Anleitung „[Domainname zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ verwenden können, um diese Aktion durchzuführen.
 >
 
-Wenn die für Ihre Domain deklarierten DNS-Server eine der folgenden Formen haben:
+Wenn die für Ihre Domainname deklarierten DNS-Server eine der folgenden Formen haben:
 
 - `dnsXX.ovh.net` und `nsXX.ovh.net` (wobei jedes „X“ eine Ziffer darstellt).
 - `dnsXX.ovh.ca` und `nsXX.ovh.ca` (wobei jedes „X“ eine Ziffer darstellt).
 - `dns200.anycast.me` und `ns200.anycast.me`.
 
-Das bedeutet, dass die aktive DNS-Zone Ihrer Domain bei OVHcloud ist.
+Das bedeutet, dass die aktive DNS-Zone Ihrer Domainname bei OVHcloud ist.
 
 Wenden Sie sich andernfalls an Ihren DNS-Anbieter, um Subdomains mit Ihrem Domainnamen zu erstellen.
 
 #### 2 - DNS-Einträge für Ihre Subdomains erstellen <a name="dns-records-creation"></a>
 
-Um Ihre Subdomains zur aktiven DNS-Zone Ihrer Domain hinzuzufügen, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
+Um Ihre Subdomains zur aktiven DNS-Zone Ihrer Domainname hinzuzufügen, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 
 Sie können beispielsweise Folgendes hinzufügen:
 
@@ -166,7 +176,7 @@ Im nächsten Teil erfahren Sie, wie Sie einer Subdomain den Zugriff auf die vers
 
 ### Ihre Subdomain mit einem OVHcloud Dienst verbinden, autorisieren und konfigurieren <a name="link-subdomain"></a>
 
-Mehrere Dienste aus dem Universum Web Cloud können mit einer Subdomain verwendet werden. Die Zuordnungsprozeduren ähneln denen, die Sie mit einem Domänennamen ausführen sollten. Wir werden Ihnen nur die häufigsten Fälle zeigen.
+Mehrere Dienste aus dem Universum Web Cloud können mit einer Subdomain verwendet werden. Die Zuordnungsprozeduren ähneln denen, die Sie mit einem Domainnamen ausführen sollten. Wir werden Ihnen nur die häufigsten Fälle zeigen.
 
 Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. So können Sie erkennen, ob diese mit einer Subdomain genutzt werden kann.
 
@@ -176,12 +186,12 @@ Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines "Ziel"-Ordners
 
 Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
 
-Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting finden Sie in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Egal ob es sich um eine Domain oder eine Subdomain handelt, die Vorgehensweise ist die gleiche.
+Weitere Informationen zur Konfiguration einer Domainname oder Subdomain auf einem Webhosting finden Sie in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Egal ob es sich um eine Domainname oder eine Subdomain handelt, die Vorgehensweise ist die gleiche.
 
 > [!warning]
 >
 > Das Hinzufügen eines Domainnamens oder Subdomain zu einem der Webseiten Ihres Webhostings kann die Einrichtung eines **Validierungstokens** erfordern.  
-> Bei einer Subdomain wird das gleiche Token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das Token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
+> Bei einer Subdomain wird das gleiche Token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das Token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domainname hinzu.
 
 #### Fall 2: Exchange E-Mail-Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-2"></a>
 

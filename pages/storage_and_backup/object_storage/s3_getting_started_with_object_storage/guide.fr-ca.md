@@ -1,7 +1,7 @@
 ---
-title: Object Storage - Premiers pas avec Object Storage
-excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2026-01-27
+title: Object Storage - Premiers pas
+excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos buckets/objets.
+updated: 2026-03-06
 ---
 
 <style>
@@ -20,13 +20,13 @@ details[open]>summary::before {
 
 ## Objectif
 
-Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/objets.
+Ce guide vous aide à gérer vos buckets et objets.
 
 **Découvrez comment créer et gérer un bucket Object Storage.**
 
 > [!primary]
 >
-> Si vous utilisez l'ancien système de stockage d'objets SWIFT :
+> Si vous utilisez l'ancien système de stockage d'objets Swift :
 >
 > - pour la classe de stockage **Standard object storage - SWIFT API**, suivez [ce guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - pour la classe de stockage **Cloud Archive - SWIFT API**, suivez [ce guide](/pages/storage_and_backup/object_storage/pca_create_container).
@@ -51,12 +51,12 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 
 /// details | Pour utiliser l'AWS CLI
 
-Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de consulter [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
+Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de lire [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Vérifier l'installation**
 
 ```bash
-user@host:~$ aws --version
+aws --version
 ```
 
 > [!primary]
@@ -67,7 +67,7 @@ user@host:~$ aws --version
 #### Collecter les informations d'identification
 
 - Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs Object Storage`{.action} dans votre espace client OVHcloud.
-- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs`{.action} puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_location).
+- Vous aurez également besoin de votre *endpoint_url*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs`{.action} puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Où trouver l'endpoint d'un bucket ?
 
@@ -87,25 +87,33 @@ Vous pouvez utiliser la configuration interactive pour générer les fichiers de
 > 
 > Ou cette commande :
 > 
-> `aws configure --profile PROFILE_NAME`
+> `aws configure --profile <profile_name>`
 
 Le format du fichier de configuration dans le client AWS est le suivant :
 
 ```bash
-user@host:~$ cat ~/.aws/credentials
+cat ~/.aws/credentials
+```
+
+```text
 
 [default]
 aws_access_key_id = <access_key>
 aws_secret_access_key = <secret_key>
+```
 
-user@host:~$ cat ~/.aws/config
+```bash
+cat ~/.aws/config
+```
+
+```text
 
 [default]
 region = <region_in_lowercase>
-endpoint_url = <url_endpoint>
+endpoint_url = <endpoint_url>
 services = ovh-rbx-archive
 
-[profile PROFILE_NAME]
+[profile <profile_name>]
 region = rbx
 output = json
 services = ovh-rbx
@@ -116,7 +124,7 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx-archive.io.cloud.ovh.net/
 
 [services ovh-rbx]
 s3 =
@@ -124,7 +132,7 @@ s3 =
   signature_version = s3v4
 
 s3api =
-endpoint_url = https://s3.rbx.io.cloud.ovh.net/
+  endpoint_url = https://s3.rbx.io.cloud.ovh.net/
 ```
 
 Voici les valeurs de configuration que vous pouvez définir spécifiquement :
@@ -134,7 +142,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement :
 | max_concurrent_requests | Integer | **Défaut :** 10 | Le nombre maximum de requêtes simultanées. |
 | max_queue_size | Integer | **Défaut :** 1000 | Le nombre maximal de tâches dans la file d'attente des tâches. |
 | multipart_threshold | Integer<br>String | **Défaut :** 8MB | Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
-| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB | Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB | Lors de l'utilisation de transferts multipart, il s'agit de la taille en octets que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
 | verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
@@ -144,7 +152,7 @@ Pour connaître la liste des endpoints par région et par classe de stockage, vo
 
 > [!primary]
 >
-> Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
+> Si vous avez défini plusieurs profils, ajoutez `--profile <profile_name>` à la ligne de commande.
 >
 
 ///
@@ -170,7 +178,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> /// details | **Avec AWS S3api**
 >>
 >> ```bash
->> aws s3api list-buckets --query "Buckets[].Name" // retirez --query pour avoir plus d'info que le name.
+>> aws s3api list-buckets --query "Buckets[].Name" # Retirez --query pour afficher la sortie complète.
 >> ```
 >>
 >> ///
@@ -187,7 +195,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> ```bash
 >> aws s3 mb s3://<bucket_name>
->> aws --profile default s3 mb s3://<bucket_name>
+>> aws --profile <profile_name> s3 mb s3://<bucket_name>
 >> ```
 >>
 >> ///
@@ -196,7 +204,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> ```bash
 >> aws s3api create-bucket --bucket <bucket_name>
->> aws s3api create-bucket --bucket <bucket_name> --profile default
+>> aws --profile <profile_name> s3api create-bucket --bucket <bucket_name>
 >> ```
 >>
 >> ///
@@ -256,7 +264,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
 
-Lors du téléchargement des objets dans un bucket Object Storage, les utilisateurs peuvent choisir la classe de stockage, ce qui leur permet de contrôler la disponibilité, la redondance et le coût associés. Pour vous aider à choisir la classe de stockage la plus adaptée à vos besoins, consultez la documentation [ici](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
+Lors du téléversement d'objets, vous pouvez sélectionner une classe de stockage pour contrôler la disponibilité, la redondance et le coût. Pour vous aider à choisir la classe de stockage la plus adaptée à vos besoins, consultez la documentation [ici](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
@@ -266,7 +274,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >>
 >> ```bash
->> aws s3 cp /datas/<object_name> s3://<bucket_name>
+>> aws s3 cp /data/<object_name> s3://<bucket_name>
 >> ```
 >>
 >> **Par défaut, les objets sont nommés d'après des fichiers, mais ils peuvent être renommés.**
@@ -317,7 +325,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> **Téléchargement d'un objet d'un bucket vers un autre bucket :**
 >>
 >> ```bash
->> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2
+>> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2>/<object_name>
 >> ```
 >>
 >> **Télécharger ou uploader un bucket entier sur l'hôte/bucket :**

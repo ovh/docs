@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,6 +41,17 @@ Wenn Sie Ihren Domainname transferieren, ändern Sie dessen **Registrar**. Sie k
 - Der Domainname ist zum Transfer entsperrt und Sie haben bereits den Transfer-Code oder können ihn anfordern.
 - Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamens zu veranlassen.
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Domainnamen](/links/control-panel/web-domains)
+- **Navigationspfad:** `Web Cloud`{.action} > `Domainnamen`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## In der praktischen Anwendung
 

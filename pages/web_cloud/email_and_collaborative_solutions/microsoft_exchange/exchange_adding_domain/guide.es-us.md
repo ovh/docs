@@ -24,18 +24,19 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 - Tener una [solución Exchange](/links/web/emails).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
-
-### Acceder a la gestión del servicio
-
-**Exchange**
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 ### Añadir un dominio
 
@@ -47,7 +48,7 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 > [!warning]
 >
-> Por defecto, todas las cuentas de correo de una plataforma están interconectadas. Todas las direcciones creadas en el servicio de correo podrán ver todas las direcciones de ese servicio en el directorio, incluidas las que tengan un nombre de dominio diferente. Para disociar la visualización de los dominios, es necesario contratar otra plataforma [Exchange](/links/web/emails) para el dominio o dominios en cuestión.
+> Por defecto, todas las cuentas de correo de una plataforma están interconectadas. Todas las direcciones creadas en el servicio de correo podrán ver todas las direcciones de ese servicio en el directorio, incluidas las que tengan un nombre de dominio diferente. Para disociar la visualización de los dominios, es necesario contratar otra plataforma [Exchange](/links/web/emails-exchange) para el dominio o dominios en cuestión.
 >
 
 En la ventana de adición de dominio:
@@ -133,7 +134,7 @@ Le recordamos que todas las direcciones creadas en el servicio podrán ver en el
 
 Una vez que haya configurado las cuentas, ya puede empezar a utilizarlas. Para ello, OVHcloud pone a su disposición el **webmail**, disponible [aquí](/links/web/email). Para un uso óptimo de su dirección en un programa, asegúrese de que es compatible con el servicio.
 
-Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails).
+Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo periférico, como un smartphone o una tablet, u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte nuestras guías, que encontrará en las páginas [Exchange](/links/web/emails-exchange).
 
 Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](/links/manager). Le recomendamos una de estas soluciones si desea disfrutar del cliente de correo Outlook o de más programas de la suite Office, según sus necesidades.
 

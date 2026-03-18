@@ -21,30 +21,31 @@ Aggiungere un dominio su Exchange è un’operazione fondamentale per utilizzare
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
+- Disporre di una soluzione [Exchange](/links/web/emails-exchange) o [Email Pro](/links/web/email-pro).
 - Aver registrato uno o più domini.
 - Poter modificare la configurazione del dominio ([zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
-
-### Accedi alla gestione del tuo servizio
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
-> **Email Pro**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `Email Pro`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
 
 ### Aggiungi un dominio
 
@@ -142,7 +143,7 @@ Ti ricordiamo che tutti gli indirizzi creati sul tuo servizio saranno in grado d
 
 Una volta completata la configurazione degli account, è possibile iniziare a utilizzarli. OVHcloud mette a disposizione il servizio **webmail**, accessibile [qui](/links/web/email). Per un utilizzo ottimale del tuo indirizzo su un client, assicurati che sia compatibile con il servizio.
 
-Per configurare l’indirizzo email su un client di posta o un dispositivo come smartphone o tablet o se hai bisogno di assistenza sulle funzionalità del tuo servizio di posta, consulta le nostre guide relative alle funzionalità del servizio di posta elettronica [Exchange](/links/web/emails) e [Email Pro](/links/web/email-pro).
+Per configurare l’indirizzo email su un client di posta o un dispositivo come smartphone o tablet o se hai bisogno di assistenza sulle funzionalità del tuo servizio di posta, consulta le nostre guide relative alle funzionalità del servizio di posta elettronica [Exchange](/links/web/emails-exchange) e [Email Pro](/links/web/email-pro).
 
 È possibile acquistare licenze Outlook nello [Spazio Cliente OVHcloud](/links/manager) e licenze Office 365 nella pagina [Microsoft 365](/links/web/ms365). Per utilizzare un client di posta Outlook o più programmi della suite Office, ti consigliamo una di queste soluzioni.
 

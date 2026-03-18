@@ -1,7 +1,7 @@
 ---
 title: "Comment ajouter un enregistrement DNS de type CNAME pour un sous-domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type CNAME dans une zone DNS gérée chez OVHcloud pour le sous-domaine d'un nom de domaine"
-updated: 2025-06-25
+updated: 2026-02-10
 ---
 
 <style>
@@ -34,7 +34,18 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 - Disposer d'un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Zones DNS](/links/control-panel/web-dns-zone)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Zones DNS`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >
@@ -80,7 +91,7 @@ Une requête DNS pour *www.domain.tld* retournera soit la cible de l'enregistrem
 
 ///
 
-/// details | Enregistrement CNAME sur un domaine dans sa propre zone DNS
+/// details | Enregistrement CNAME sur un nom de domaine dans sa propre zone DNS
 
 Par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
 
@@ -92,7 +103,7 @@ Vous pourrez cependant créer des enregistrements de type CNAME pour tous les so
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

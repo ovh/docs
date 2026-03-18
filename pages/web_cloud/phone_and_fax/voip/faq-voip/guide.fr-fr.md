@@ -1,6 +1,7 @@
 ---
-title: FAQ VoIP OVHcloud
-updated: 2025-08-27
+title: "FAQ VoIP OVHcloud"
+excerpt: "Retrouvez les réponses aux questions les plus fréquemment posées sur les services de téléphonie VoIP OVHcloud"
+updated: 2026-02-12
 ---
 
 <style>
@@ -19,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud
+Retrouvez ici les questions les plus fréquemment posées sur les services VoIP OVHcloud.
 
 <a name="ligne-ou-numero"></a>
 
@@ -29,7 +30,7 @@ Retrouvez ici les questions les plus fréquemment posées sur les services VoIP 
 
 Une ligne SIP et un numéro alias sont deux services de téléphonie distincts. Bien que complémentaires, ils n'ont pas la même fonction.
 
-Une ligne SIP est une ligne téléphonique utilisant le protocope SIP (*Session Initation Protocol*). Elle est enregistrée sur un seul téléphone SIP, qui peut être [fourni sous caution par OVHcloud](/links/telecom/telephonie-comparatif-telephones), ou sur un logiciel de type « *softphone* ». OVHcloud propose également un softphone, découvrez son utilisation dans notre guide « [Installer et configurer Softcall](/pages/web_cloud/phone_and_fax/voip/installer_configurer_softcall) ».
+Une ligne SIP est une ligne téléphonique utilisant le protocole SIP (*Session Initiation Protocol*). Elle est enregistrée sur un seul téléphone SIP, qui peut être [fourni sous caution par OVHcloud](/links/telecom/telephonie-comparatif-telephones), ou sur un logiciel de type « *softphone* ». OVHcloud propose également un softphone, découvrez son utilisation dans notre guide « [Installer et configurer Softcall](/pages/web_cloud/phone_and_fax/voip/installer_configurer_softcall) ».
 <br>La ligne SIP est liée à un [forfait VoIP](/links/telecom/telephonie-voip) facturé mensuellement. Il convient généralement d'avoir **une ligne SIP par personne devant disposer d'une ligne téléphonique directe** dans votre entreprise.
 
 Un [numéro](/links/telecom/telephonie-numeros), souvent appelé « numéro alias », ne peut pas être enregistré sur un téléphone. Suivant votre besoin, il peut rediriger les appels vers **une ou plusieurs** lignes SIP ou peut servir à héberger une [conférence téléphonique OVHcloud](/pages/web_cloud/phone_and_fax/voip/conference).
@@ -43,7 +44,7 @@ Dans une entreprise, le schéma classique est d'avoir, au minimum, un numéro al
 - Vous pouvez même envisager de combiner ces fonctionnalités en utilisant la configuration « [Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution) ».
 
 Pour déterminer quelle configuration de numéro alias est la plus adaptée à votre entreprise, consultez notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins) ».
-<br> Un guide par configuration est également disponible dans la [rubrique « Numéros ou alias » de nos guides](/products/web-cloud-phone-and-fax-voip).
+<br>Un guide par configuration est également disponible dans la [rubrique « Numéros ou alias » de nos guides](/products/web-cloud-phone-and-fax-voip).
 
 ///
 
@@ -55,7 +56,7 @@ Pour consulter le répondeur d'une ligne téléphonique OVHcloud, le plus simple
 >
 > **Trucs et astuces**
 >
-> Le répondeur de votre ligne téléphonique est également consultable depuis votre [espace client OVHcloud](/links/manager), rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur l'onglet `Services`{.action}, sélectionnez la ligne souhaitée puis cliquez sur `Répondeur`{.action}.
+> Le répondeur de votre ligne téléphonique est également consultable depuis votre espace client OVHcloud. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) et choisissez le groupe de facturation contenant votre ligne. Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique souhaitée puis cliquez sur `Répondeur`{.action}.
 
 ///
 
@@ -64,7 +65,7 @@ Pour consulter le répondeur d'une ligne téléphonique OVHcloud, le plus simple
 Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions s'offrent à vous : 
 
 - Composez  * 21 * (NUMÉRO)# sur le clavier de votre téléphone pour activer le renvoi vers le numéro de votre choix et #21# pour désactiver ce renvoi.
-- Depuis votre [espace client OVHcloud](/links/manager), au sein de la rubrique `Télécom`{.action} > `VoIP & Fax`{.action}. Cliquez sur le groupe de facturation contenant votre ligne. Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique souhaitée puis cliquez sur `Gestion des appels`{.action} et enfin sur `Renvoi d'appel`{.action}.
+- [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud et choisissez le groupe de facturation contenant votre ligne. Dans l'onglet `Services`{.action}, sélectionnez la ligne téléphonique souhaitée puis cliquez sur `Gestion des appels`{.action} et enfin sur `Renvoi d'appel`{.action}.
 
 > [!success]
 >
@@ -76,7 +77,7 @@ Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions 
 
 /// details | Comment associer un autre numéro à ma ligne téléphonique ?
 
-Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, connectez-vous sur votre [espace client OVHcloud](/links/manager), sélectionnez la rubrique `Télécom`{.action} puis cliquez sur `VoIP & Fax`{.action}. Cliquez sur le groupe de facturation souhaité puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
+Cette opération consiste à effectuer une demande de numéro alias. Pour ce faire, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation souhaité puis cliquez sur `Commander un numéro`{.action} dans l'onglet `Tableau de bord`{.action}.
 
 > [!success]
 >
@@ -88,15 +89,15 @@ Cette opération consiste à effectuer une demande de numéro alias. Pour ce fai
 
 /// details | Comment suivre ma demande de portabilité ?
 
-Vous pouvez retrouver le suivi de votre demande de portabilité en vous rendant sur votre [espace client OVHcloud](/links/manager), dans l'univers `Télécom`{.action}. Rendez-vous ensuite sur `VoIP & Fax`{.action} puis cliquez sur le groupe de facturation dans lequel a été demandée la portabilité.
+Vous pouvez retrouver le suivi de votre demande de portabilité depuis votre espace client OVHcloud. [Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) et choisissez le groupe de facturation dans lequel a été demandée la portabilité.
 
 Vous retrouverez alors, dans l'onglet `Tableau de bord`{.action}, un lien vous permettant de « consulter vos portabilités en cours ».
 
 ///
 
-/// details | Pourquoi ai-je reçu un sms m'indiquant une erreur sur ma portabilité ?
+/// details | Pourquoi ai-je reçu un SMS m'indiquant une erreur sur ma portabilité ?
 
-Lorsque vous réalisez une demande de portabilité et que nous ne sommes pas capable de la traiter, nous vous informons de la situation par SMS. En complément, vous recevez également un e-mail vous précisant la raison de cette impossibilité ainsi que la procédure à suivre.
+Lorsque vous réalisez une demande de portabilité et que nous ne sommes pas capables de la traiter, nous vous informons de la situation par SMS. En complément, vous recevez également un e-mail vous précisant la raison de cette impossibilité ainsi que la procédure à suivre.
 
 > [!success]
 >
@@ -106,7 +107,7 @@ Lorsque vous réalisez une demande de portabilité et que nous ne sommes pas cap
 
 ///
 
-/// details | Comment configurer mes numéro alias ?
+/// details | Comment configurer mes numéros alias ?
 
 Il existe plusieurs configurations pouvant être appliquées à vos numéros alias, vous pouvez retrouver celles-ci sur le guide [Choisir et appliquer une configuration pour un numéro](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
 
@@ -114,7 +115,7 @@ Il existe plusieurs configurations pouvant être appliquées à vos numéros ali
 
 /// details | Comment supprimer la redirection de mon numéro alias vers ma ligne ?
 
-Pour supprimer la redirection d'un numéro alias vers votre ligne téléphonique, connectez-vous tout d'abord à votre [espace client OVHcloud](/links/manager). Sélectionnez l'onglet `Télécom`{.action} puis `VoIP & Fax`{.action}. Choisissez alors le groupe de facturation puis le numéro concerné dans l'onglet `Services`{.action}. Pour finir, vous pouvez cliquer sur `Supprimer la configuration`{.action}. 
+Pour supprimer la redirection d'un numéro alias vers votre ligne téléphonique, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation puis le numéro concerné dans l'onglet `Services`{.action}. Pour finir, vous pouvez cliquer sur `Supprimer la configuration`{.action}.
 
 > [!success]
 >
@@ -126,7 +127,7 @@ Pour supprimer la redirection d'un numéro alias vers votre ligne téléphonique
 
 /// details | Comment enregistrer mes appels ?
 
-La fonctionnalité d'enregistrement des appels nécessite de réaliser au préalable une configuration sur le numéro de téléphone concerné. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez l'onglet `Télécom`{.action} puis `VoIP & Fax`{.action}. Choisissez alors le groupe de facturation puis le numéro concerné dans l'onglet `Services`{.action}. Cliquez sur `Configuration du numéro`{.action}. Votre numéro doit être configuré en « Contact Center Solution ». 
+La fonctionnalité d'enregistrement des appels nécessite de réaliser au préalable une configuration sur le numéro de téléphone concerné. Pour cela, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation puis le numéro concerné dans l'onglet `Services`{.action}. Cliquez sur `Configuration du numéro`{.action}. Votre numéro doit être configuré en « Contact Center Solution ».
 
 > [!success]
 >
@@ -138,7 +139,7 @@ La fonctionnalité d'enregistrement des appels nécessite de réaliser au préal
 
 /// details | Pourquoi l'enregistrement de mes appels dysfonctionne ?
 
-Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez l'onglet `Télécom`{.action} puis `VoIP & Fax`{.action}. Choisissez alors le groupe de facturation puis le numéro configuré en « Contact Center Solution » depuis l'onglet `Services`{.action}. Au sein de cette configuration, cliquez sur le menu « Consulter les enregistrements ». Vérifiez que la case « Enregistrement des appels » est bien cochée. Retrouvez plus de détails dans le guide [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution#consulter-les-enregistrements).
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation puis le numéro configuré en « Contact Center Solution » depuis l'onglet `Services`{.action}. Au sein de cette configuration, cliquez sur le menu « Consulter les enregistrements ». Vérifiez que la case « Enregistrement des appels » est bien cochée. Retrouvez plus de détails dans le guide [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution#consulter-les-enregistrements).
 
 > [!success]
 >
@@ -150,22 +151,22 @@ Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifi
 
 /// details | Que faire si mon téléphone ne sonne plus ?
 
-Si vous rencontrez un dysfonctionnement sur votre téléphone, commencez par le débrancher puis le rebrancher. Si le phénomène persiste, nous vous invitons à réaliser quelques vérifications en suivant les instructions de « Dépannage Plug & Phone », disponibles depuis votre [espace client OVHcloud](/links/manager).
+Si vous rencontrez un dysfonctionnement sur votre téléphone, commencez par le débrancher puis le rebrancher. Si le phénomène persiste, nous vous invitons à réaliser quelques vérifications en suivant les instructions de « Dépannage Plug & Phone », disponibles depuis votre espace client OVHcloud.
 
-Pour cela, connectez-vous à l'aide de vos identifiants et dirigez-vous vers la rubrique `Télécom`{.action} puis `VoIP & Fax`{.action}. Sélectionnez votre groupe de facturation puis votre ligne SIP depuis l'onglet `Services`{.action}. Cliquez sur l'onglet `Assistance`{.action} puis sur `Dépannage Plug & Phone`{.action}.
+Pour cela, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax), choisissez votre groupe de facturation puis votre ligne SIP depuis l'onglet `Services`{.action}. Cliquez sur l'onglet `Assistance`{.action} puis sur `Dépannage Plug & Phone`{.action}.
 <br>Vous trouverez plus de détails dans le guide [Dépanner son téléphone Plug and Phone](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel).
 
 > [!success]
 >
 > **Trucs et astuces**
 >
-> Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./##comment-configurer-un-renvoi-dappel)
+> Si vous avez récemment activé la fonctionnalité de renvoi d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie **Comment configurer un renvoi d'appel ?**
 
 ///
 
 /// details | Un message d'erreur apparait sur mon téléphone, que faire ?
 
-Pour identifier la cause de cette erreur, nous vous conseillons de réaliser un diagnostic de votre téléphone. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), sélectionnez la rubrique `Télécom`{.action} puis `VoIP & Fax`{.action} et cliquez sur la ligne SIP concernée depuis l'onglet `Services`{.action}. Cliquez sur l'onglet `Assistance`{.action} puis sur `Dépannage Plug & Phone`{.action}.
+Pour identifier la cause de cette erreur, nous vous conseillons de réaliser un diagnostic de votre téléphone. Pour cela, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation puis la ligne SIP concernée dans l'onglet `Services`{.action}. Cliquez sur l'onglet `Assistance`{.action} puis sur `Dépannage Plug & Phone`{.action}.
 
 > [!success]
 >
@@ -177,7 +178,7 @@ Pour identifier la cause de cette erreur, nous vous conseillons de réaliser un 
 
 /// details | Pourquoi mon numéro de téléphone abrégé dysfonctionne ?
 
-Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous tout d'abord à votre [espace client OVHcloud](/links/manager), sélectionnez l'onglet `Télécom`{.action} puis `VoIP & Fax`{.action} à gauche et sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le bouton `Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne. 
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud et sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le bouton `Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne.
 
 > [!success]
 >
@@ -189,7 +190,7 @@ Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifi
 
 /// details | Comment retrouver le relevé des consommations de mes lignes téléphoniques ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur l'onglet `Télécom`{.action} puis `VoIP & Fax`{.action} et cliquez sur votre groupe de facturation.
+[Accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud puis cliquez sur votre groupe de facturation.
 
 Vous retrouvez alors, dans l'onglet `Tableau de bord`{.action}, un lien vous permettant de `Voir mes relevés de consommation`{.action}.
 
@@ -200,6 +201,27 @@ Les relevés de consommation des mois précédents vous sont alors proposés. Cl
 > **Trucs et astuces**
 >
 > Vous pouvez également consulter, pour chaque ligne SIP, les appels émis et reçus du mois en cours en la sélectionnant depuis l'onglet `Services`{.action} puis en vous rendant dans l'onglet `Consommation`{.action}.
+
+///
+
+/// details | Comment retrouver le RIO de mes services de téléphonie ou Fax ?
+
+Tout numéro associé à un service VoIP ou à une ligne Fax est portable grâce à son **RIO** (**R**elevé d'**I**dentité **O**pérateur).
+
+Pour récupérer le RIO, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation souhaité puis le service VoIP ou Fax concerné dans l'onglet `Services`{.action}.<br>Le RIO est affiché dans la rubrique `Informations générales`{.action}.
+
+![rio manager](images/rio.png){.thumbnail}
+
+**La portabilité d'un numéro OVHcloud vers un autre opérateur entraîne sa résiliation technique et commerciale chez OVHcloud à la date effective de la portabilité.**
+
+> [!success]
+>
+> Autres méthodes pour obtenir le RIO :
+>
+> - Depuis la ligne SIP concernée : composez le **3179**.
+> - Depuis une autre ligne : composez le **0805 69 3179**, puis renseignez le numéro OVHcloud concerné.
+>
+> Le RIO sera envoyé par e-mail au contact détenteur du service.
 
 ///
 

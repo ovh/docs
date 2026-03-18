@@ -12,9 +12,20 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Exchange](/links/web/emails) Angebot.
+- Sie besitzen ein [Exchange](/links/web/emails-exchange) Angebot.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigationspfad:** `Web Cloud`{.action} > `Exchange`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Beschreibung
 
@@ -38,7 +49,7 @@ Geben Sie nun folgende Informationen ein:
 |Kennwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |Benutzername|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Domain|Nichts eingeben.|
-|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Angaben zum Server im [OVHcloud Kundencenter](/links/manager), indem Sie den entsprechenden Exchange Dienst auswählen, auf den Tab `Allgemeine Informationen`{.action} klicken und dort in den Bereich `Verbindung`{.action} gehen.|
+|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Klicken Sie auf [diesen Link](/links/control-panel/web-exchange), um auf den Bereich `Exchange`{.action} zuzugreifen. Der Servername wird im Bereich **Verbindung** des Tabs `Allgemeine Informationen`{.action} angezeigt.|
 |Server erfordert eine verschlüsselte Verbindung (SSL)|Lassen Sie diesen Haken gesetzt.|
 |Kontoname|Geben Sie einen Namen für diesen Account ein, damit Sie ihn später von anderen Accounts in Ihrer Mail App unterscheiden können.|
 

@@ -11,7 +11,7 @@ updated: 2022-12-22
 
 ## Objective
 
-As any other OVHcloud service, an Additional IP service can be cancelled at any time.
+Like any other OVHcloud service, an Additional IP service can be cancelled at any time.
 
 > [!primary]
 > At the moment, an Additional IP service cannot be cancelled from the OVHcloud Control Panel. This feature will be rolled out soon.
@@ -31,7 +31,7 @@ As any other OVHcloud service, an Additional IP service can be cancelled at any 
 
 Log in to the OVHcloud [API web page](/links/api).
 
-You first need to find out the name of the service you need to cancel. Use the following call:
+First, find out the name of the service to cancel. Use the following call:
 
 > [!api]
 >
@@ -45,10 +45,10 @@ To cancel the service, use the following API call:
 > @api {v1} /ip POST /ip/service/{serviceName}/terminate
 >
 
-- `serviceName` : name of the Additional IP service obtained with the previous call.
+- `serviceName`: name of the Additional IP service obtained with the previous call.
 
 You will then receive an email asking you to confirm the cancellation. After confirmation, the cancellation will be effective.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -15,7 +15,17 @@ A nossa oferta de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer) com
 - Ter um serviço de [alojamento Cloud Web](/links/web/hosting-cloud-web-offer).
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
 - Ter um [domínio](/links/web/domains) (endereço que permite identificar e aceder ao seu site).
-- Aceder à [Área de Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

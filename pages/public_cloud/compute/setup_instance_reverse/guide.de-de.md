@@ -16,11 +16,21 @@ Die Konfiguration der umgekehrten DNS-Auflösung für eine Public Cloud Instanz 
 
 - Sie haben eine [Public Cloud Instanz](/links/public-cloud/public-cloud) in Ihrem Kunden-Account.
 - Sie verfügen über einen Domainnamen, dessen `A`-Eintrag die Instanz als Ziel hat.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Network`{.action} und klicken Sie dann auf `Öffentlichen IP-Adressen`{.action}.
+Wechseln Sie zum Bereich `Network`{.action} und klicken Sie dann auf `Öffentlichen IP-Adressen`{.action}.
 
 Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** können Sie Ihre Dienste nach Kategorie filtern. Sie können auch in der Suchleiste links neben dem Dropdown-Menü nach einer bestimmten IP-Adresse suchen. 
 

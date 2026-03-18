@@ -27,7 +27,7 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](/links/web/emails).
+- Disposer d'une offre [Exchange](/links/web/emails-exchange).
 - Disposer de l'application Gmail sur votre appareil. Vous pouvez installer cette dernière depuis le Google Play Store.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -94,8 +94,6 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Gmail sur Android, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Cajouter-un-compte).
 
 [MX Plan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
-
-[E-mail Pro - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

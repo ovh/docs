@@ -22,13 +22,22 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 
 - Tener una cuenta de correo en nuestra solución de correo Zimbra OVHcloud.
 - Tener un [dominio de OVHcloud](/links/web/domains).
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## Procedimiento
 
 **Contenido**
 
-- [Acceder a la gestión de su servicio](#zimbra-access)
 - [Configurar el servicio Zimbra](#zimbra-conf)
 - [Organizaciones](#organizations)
     - [Crear organización](#organizations-create)
@@ -43,14 +52,6 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 - [Redirecciones](#redirections)
 - [Alias](#alias)
 - [Respuestas automáticas](#autoreply)
-
-### Acceder a la gestión de su servicio <a name="zimbra-access"></a>
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. Haga clic en `Zimbra Mail`{.action}.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configurar su servicio Zimbra <a name="zimbra-conf"></a>
 
@@ -94,7 +95,7 @@ Para retirar el filtro, simplemente haga clic en la cruz del filtro.
 
 > [!warning]
 >
-> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en «no autoritativo». Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en «no autoritativo». Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 En esta pestaña podrá consultar todos los dominios añadidos al servicio Zimbra. Es necesario gestionarlos desde el área de cliente de OVHcloud para poder añadirlos.
 
@@ -173,7 +174,7 @@ En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
-### Cuentas de correo <a name="email"></a>
+### Cuentas de correo <a name="emails"></a>
 
 La gestión de las direcciones de correo de su servicio Zimbra se realiza desde la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas de correo que tiene en el servicio, así como 3 datos para cada una de ellas:
 
@@ -221,15 +222,12 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Cambiar de plan <a name="emails-offer"></a>
+#### Cambiar de plan <a name="emails-offer"></a>
 
 Es posible cambiar el plan de cualquier cuenta Zimbra por un plan superior o inferior.
 
-1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-1. Vaya a la sección `Web Cloud`{.action}.
-1. Haga clic en `Zimbra Mail`{.action}.
-1. Haga clic en la pestaña `Cuenta de correo`{.action}.
-1. A la derecha de la cuenta de correo para la que desea cambiar a un plan superior, haga clic en `⁝`{.action}.
+1. Haga clic en la pestaña `Cuentas de correo`{.action}.
+1. A la derecha de la cuenta de correo para la que desea cambiar de plan, haga clic en `⁝`{.action}.
 1. Haga clic en `Cambiar de plan`{.action}.
 
 ![Zimbra](images/zimbra-change-offer.png){.thumbnail .w-500}
@@ -291,7 +289,7 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía �
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección «máscara» a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación:
+Haga clic en los pasos a continuación para crear un alias:
 
 > [!tabs]
 > **Paso 1**

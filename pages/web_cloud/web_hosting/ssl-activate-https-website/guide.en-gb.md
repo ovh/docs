@@ -14,11 +14,10 @@ With an OVHcloud Web Hosting plan, you can get an [SSL certificate](/links/web/h
 
 - An [SSL certificate](/links/web/hosting-options-ssl) set up on your [OVHcloud Web Hosting plan](/links/web/hosting)
 - At least one website set up and accessible via your OVHcloud Web Hosting plan
-- Access to the [OVHcloud Control Panel](/links/manager), part `Web Cloud`{.action}
 
 ## Instructions
 
-Security is becoming increasingly important on the internet. You will certainly pay special attention to the confidentiality of your data, and the way it passes through the web. In general, internet users trust websites that allow secure exchanges, especially when the data exchanged is sensitive. 
+Security is becoming increasingly important on the Internet. You will certainly pay special attention to the confidentiality of your data, and the way it passes through the web. In general, Internet users trust websites that allow secure exchanges, especially when the data exchanged is sensitive. 
 
 When you visit a website with a secure connection, your web browser will show this in its address bar (URL) in several ways, such as: 
 

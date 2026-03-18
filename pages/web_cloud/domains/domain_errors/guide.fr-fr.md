@@ -1,19 +1,29 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2025-04-28
+updated: 2026-02-10
 ---
 
 ## Objectif
 
-La création d'un nom de domaine, son transfert, son changement de propriétaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
+La création d'un nom de domaine, son transfert, son changement de titulaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
 
 **Découvrez comment agir lorsqu'une erreur survient sur un nom de domaine.**
 
 ## Prérequis
 
-- Posséder un ou plusieurs noms de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Être titulaire d'un ou plusieurs [noms de domaine](/links/web/domains).
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -71,7 +81,7 @@ La fenêtre ci-dessous apparait, complétez les champs avec les informations du 
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
-#### Code de transfert erroné 
+#### Code de transfert erroné
 
 Lorsque vous transférez votre nom de domaine vers OVHcloud, vous devez saisir un code de transfert (**authInfo**) lors de la commande. Si ce code est incorrect, l'opération est suspendue mais vous pouvez la relancer en renseignant le bon code.
 
@@ -89,7 +99,7 @@ Dans l'exemple ci-dessous, l'adresse IP du serveur DNS ne répond pas.
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné puis cliquez sur l'onglet `Serveurs DNS`{.action}. Depuis cet onglet, [modifiez vos serveurs DNS](/pages/web_cloud/domains/dns_server_edit). 
+Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné puis cliquez sur l'onglet `Serveurs DNS`{.action}. Depuis cet onglet, [modifiez vos serveurs DNS](/pages/web_cloud/domains/dns_server_edit).
 
 #### Erreur sur un nom de domaine en **.ie**, **.de** ou **.it** après une mise à jour DNS
 
@@ -110,7 +120,7 @@ Pour vérifier votre nom de domaine, nous vous conseillons d'utiliser l'outil de
 
 > [!primary]
 >
-> Si votre registre ne fournit pas d'outil de vérification de serveurs DNS, il est possible d'interroger vos nouveaux serveurs DNS via la commande `nslookup`sur une « invite de commande » Windows ou via la commande `dig` sur un « terminal » Linux ou macOS. 
+> Si votre registre ne fournit pas d'outil de vérification de serveurs DNS, il est possible d'interroger vos nouveaux serveurs DNS via la commande `nslookup`sur une « invite de commande » Windows ou via la commande `dig` sur un « terminal » Linux ou macOS.
 >
 > Si vos serveurs DNS sont joignables, l'outil vous retourne une adresse IP.
 >
@@ -121,7 +131,7 @@ Lorsque vous avez identifié l'origine de l'erreur et que vous l'avez corrigée,
 #### Erreur interne OVHcloud
 
 Vous pouvez rencontrer une erreur ayant pour détails « erreur interne ». Cette erreur ne permet pas d'actions de votre part.<br>
-Vérifiez tout d'abord que votre nom de domaine et les serveurs DNS sont bien actifs. 
+Vérifiez tout d'abord que votre nom de domaine et les serveurs DNS sont bien actifs.
 
 Si vous constatez une anomalie qui n'est pas liée à la configuration des serveurs DNS ou de la zone DNS, nous vous invitons à ouvrir un ticket d'assistance auprès du support OVHcloud afin d'identifier l'origine du dysfonctionnement.
 
@@ -134,7 +144,7 @@ Si vous constatez une anomalie qui n'est pas liée à la configuration des serve
 [Transférer un nom de domaine vers un autre bureau d’enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain)
 
 [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit)
- 
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).

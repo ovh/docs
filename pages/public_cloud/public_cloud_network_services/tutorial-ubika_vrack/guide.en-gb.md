@@ -22,7 +22,6 @@ This guide provides step-by-step instructions for deploying and configuring Ubik
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - A Ubika account on the [Ubika website](https://my.ubikasec.com/)
@@ -30,6 +29,17 @@ This guide provides step-by-step instructions for deploying and configuring Ubik
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure
 - [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup
 - Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/). You will need to provide it during the installation and configuration process
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

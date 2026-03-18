@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux bases de données"
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Objectif
@@ -19,9 +19,19 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting).
 - Utiliser l'une de nos offres de bases de données [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Hébergement web](/links/control-panel/web-hosting)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Hébergements`{.action} > Sélectionnez votre hébergement web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## En pratique
 
@@ -31,16 +41,16 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 #### Vérifier les incidents en cours
 
-Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement, votre serveur Web Cloud Databases ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
+Vérifiez tout d'abord sur la page [Web Cloud Status](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement web, votre serveur Web Cloud Databases ou votre base de données ne sont pas concernés par un incident sur l'infrastructure OVHcloud.
 
 > [!primary]
 >
 > Pour retrouver ces informations, connectez-vous à votre [espace client OVHcloud](/links/manager), dans la partie `Web Cloud`{.action} :
 >
-> - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action}, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
-> - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
+> - Pour retrouver le `Datacentre` de votre hébergement web, choisissez `Hébergements`{.action}, puis l'hébergement web concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
+> - Pour retrouver le **cluster** de serveurs et le **filer** (serveur de fichier) de votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Pour retrouver le nom de votre serveur **Web Cloud Databases**, cliquez sur `Web Cloud Databases`{.action} puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
->
+> - Pour retrouver le serveur sur lequel se trouve votre base de données incluse ou commandée en complément via votre [hébergement web](/links/web/hosting), consultez [ce guide](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
 
@@ -190,9 +200,9 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 Contactez si besoin notre [communauté d'utilisateurs](/links/community) ou un [prestataire spécialisé](/links/partner) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
-> [!faq]
+> [!primary]
 >
-> Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?
+> **Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?**
 
 Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

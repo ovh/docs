@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un sous-domaine ?"
 excerpt: "Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud"
-updated: 2025-10-27
+updated: 2026-02-10
 ---
 
 <style>
@@ -32,8 +32,18 @@ Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de dom
 
 - Disposer d'au moins un [nom de domaine](/links/web/domains).
 - Disposer d'une zone DNS active pour votre nom de domaine. Si besoin, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des droits suffisants sur l’ensemble des services concernés. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -57,13 +67,13 @@ Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de dom
 
 Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes généralement séparés par un point `.` (à l'exception de certaines **extensions** du premier niveau comme *.co.uk*, *.gouv.fr* ou encore *.notaires.fr*):
 
-- **T**op **L**evel **D**omain (**TLD**) représente les domaines de premier niveau. Nous les appelons plus communément les **extensions**. Il existe actuellement 4 types de domaine de premier niveau :
+- **T**op **L**evel **D**omain (**TLD**) représente les noms de domaine de premier niveau. Nous les appelons plus communément les **extensions**. Il existe actuellement 4 types de domaines de premier niveau :
     - Les **c**ountry **c**ode **T**op **L**evel **D**omains (**ccTLDs**), composés de deux caractères. Ils correspondent aux différents pays du globe. Par exemple, les extensions *.fr*, *.es*, *.it* ou encore *.pl* sont des ccTLDs.
     - Les **g**eneric **T**op **L**evel **D**omains (**gTLDs**), composés d'au moins trois caractères. Ils représentent des thèmes ou des secteurs d'activité plus généraux. Par exemple, les extensions *.com*, *.net*, *.org* ou encore *.info* sont des gTLDs.
     - Les **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**), nouvelles extensions créées à partir de 2012 par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin de répondre à la forte hausse des demandes de création de noms de domaine. Elles peuvent correspondre à des thèmes génériques, des marques, des régions ou des villes. Par exemple, les extensions *.love*, *.ovh* ou encore *.paris* sont des new gTLDs.
     - Les **Corp**oration **T**op **L**evel **D**omains (**CorpTLDs**). Il s'agit en réalité d'une sous catégorie des new GTLDs. Sur demande auprès de l'ICANN, les entreprises ou organisations peuvent demander la création de leur propre TLD. Par exemple, l'extension *.ovh* est une CorpTLD créée par OVHcloud il y a quelques années.
 
-- **S**econd **L**evel **D**omain (**SLD**) représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le label que vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
+- **S**econd **L**evel **D**omain (**SLD**) représente les noms de domaine de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le label que vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
 
 - Third Level Domain (**subdomain**). C'est à partir de ce troisième niveau que l'on parle de **sous-domaine**. Nous allons détailler sa définition dans ce guide et vous expliquer comment le mettre en place avec vos différents services.
 
@@ -76,7 +86,7 @@ Un [nom de domaine](/links/web/domains) peut être associé à plusieurs types d
 
 Certains utilisateurs ou organisations ont cependant besoin de segmenter leurs sites web ou leurs services e-mail tout en gardant le même nom de domaine.
 
-Les sous-domaines (parfois appelés **préfixes**) répondent au besoin de segmenter un nom de domaine. Ils offrent la possibilité au propriétaire de décliner, en plusieurs sous-catégories, les services web associés à son nom de domaine, sans devoir souscrire à un nouveau nom de domaine.
+Les sous-domaines (parfois appelés **préfixes**) répondent au besoin de segmenter un nom de domaine. Ils offrent la possibilité au titulaire de décliner, en plusieurs sous-catégories, les services web associés à son nom de domaine, sans devoir souscrire à un nouveau nom de domaine.
 
 En d'autres termes, les sous-domaines permettent de structurer facilement l'ensemble des services web (serveurs DNS, site web, intranet, e-mail, etc.) associés à un même nom de domaine.
 
@@ -189,7 +199,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 - [Premiers pas avec le service Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 - [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
-- [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+- [Ajouter un enregistrement CNAME pour valider votre nom de domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -205,7 +215,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-[Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+[Ajouter un enregistrement CNAME pour valider votre nom de domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

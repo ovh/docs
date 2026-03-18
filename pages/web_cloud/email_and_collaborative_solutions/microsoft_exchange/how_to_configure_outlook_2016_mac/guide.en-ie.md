@@ -10,9 +10,20 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](/links/web/emails) solution.
+- You must have an [Exchange](/links/web/emails-exchange) solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 > [!primary]
 >
@@ -39,7 +50,7 @@ Enter your email address, then click `Continue`{.action}. If you are asked to ch
 |Mail address|Enter a name that will distinguish this account from any other accounts added in Outlook.|
 |DOMAIN\username or email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVHcloud Control Panel](/links/manager) by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. Click [this link](/links/control-panel/web-exchange) to access the `Exchange`{.action} section. The server name is displayed in the **Connection** section of the `General information`{.action} tab.|
 
 Once you have entered this information, click `Add account`{.action}. If the information is correct, Outlook will successfully connect to the account.
 

@@ -52,7 +52,7 @@ details > :not(summary) {
 
 /// details | O que é um VPS e para que serve?
 
-Um servidor virtual privado (VPS) é usado para hospedar sites (comércio eletrônico, conteúdo, mídia visual) e aplicações de software (portais, extranets, soluções colaborativas, wikis, CRM). Ao contrário do hospedagem compartilhada, um VPS oferece um ambiente isolado, dedicado ao cliente. Nossas soluções de VPS preenchem a lacuna entre a hospedagem web compartilhada e os servidores dedicados, combinando desempenho e confiabilidade sem a carga de gerenciamento de hardware. Você também pode atualizar facilmente sua configuração sem trocar de servidores.
+Um servidor virtual privado (VPS) é usado para hospedar sites (comércio eletrônico, conteúdo, mídia visual) e aplicações de software (portais, extranets, soluções colaborativas, wikis, CRM). Ao contrário da hospedagem compartilhada, um VPS oferece um ambiente isolado, dedicado ao cliente. Nossas soluções de VPS preenchem a lacuna entre a hospedagem web compartilhada e os servidores dedicados, combinando desempenho e confiabilidade sem a carga de gerenciamento de hardware. Você também pode atualizar facilmente sua configuração sem trocar de servidores.
 
 ///
 
@@ -128,7 +128,7 @@ Não, nossas soluções de VPS não incluem um nome de domínio ou serviço de e
 
 **Plano de alojamento web**
 
-- Iideal para necessidades básicas de alojamento com uma configuração pré-configurada.
+- Ideal para necessidades básicas de alojamento com uma configuração pré-configurada.
 
 **VPS**
 
@@ -281,7 +281,7 @@ Não é possível migrar um VPS para outro centro de dados. Para isso, você pod
 - Faça o download dos seus dados do VPS atual.
 - Compre um novo VPS.
 - Faça o upload dos seus dados para o novo VPS.
-- [Cancela o VPS antigo](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+- [Cancele o VPS antigo](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 
 ///
 

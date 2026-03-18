@@ -14,7 +14,16 @@ A consola IPMI (Intelligent Platform Management Interface) permite estabelecer u
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -41,7 +50,7 @@ A ligação ao IPMI pode ser efetuada através de vários métodos¹. As chaves 
 ⁵ Se o SO que deseja instalar não estiver disponível no [catálogo de sistemas operativos disponíveis nos servidores dedicados OVHcloud](/links/bare-metal/os), tenha em conta que também pode utilizar uma imagem personalizada: consulte [Comparação entre Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux) para mais pormenores.<br />
 ⁶ SoL = Serial over Lan
 
-Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](/links/manager). Na parte `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor, em seguida, clique no separador `IPMI/KVM`{.action}.
+Para ativar um destes métodos, clique no separador `IPMI/KVM`{.action}.
 
 ### Abrir um KVM através de applet Java <a name="applet-java"></a>
 

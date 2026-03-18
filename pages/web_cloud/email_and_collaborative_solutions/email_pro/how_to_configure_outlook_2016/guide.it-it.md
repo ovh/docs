@@ -36,6 +36,17 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 - Disporre dell'applicazione [Outlook classico](https://support.microsoft.com/it-it/office/installare-o-reinstallare-la-versione-classica-di-outlook-in-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) su Windows.
 - Disporre delle credenziali associate all’indirizzo email da configurare.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informazioni relative alla gestione e alla configurazione dei servizi OVHcloud
 
 OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
@@ -62,11 +73,7 @@ Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione de
 >
 > Nel nostro esempio, utilizziamo la dicitura server: pro?.mail.ovh.net. Dovrai sostituire il "?" con il numero che indica il server del tuo servizio Email Pro.
 >
-> 1. Accedi al tuo [Spazio Cliente OVHcloud](/links/manager).
-> 1. Vai alla sezione `Web Cloud`{.action}.
-> 1. Clicca su `Email Pro`{.action}.
-> 1. Seleziona la piattaforma interessata.
-> 1. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> Clicca su [questo link](/links/control-panel/web-email-pro) per accedere alla sezione `Email Pro`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.
 
 - **All'avvio iniziale dell'applicazione**: un assistente di configurazione appare e ti invita a inserire il tuo indirizzo e-mail. Passa direttamente all'etapa 1 più in basso su questa pagina.
 
@@ -226,7 +233,7 @@ Per questo motivo, vi invitiamo a consultare il capitolo corrispondente all'inte
 >> >
 >> > Nel nostro esempio, il nome del server utilizzato è "pro**?**.mail.ovh.net". Dovrete sostituire il carattere "?" con il numero corrispondente al server del vostro servizio Email Pro.
 >> >
->> > Trovate questo numero nel vostro [Spazio Cliente OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} quindi `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** del tab `Informazioni generali`{.action}.
+>> > Clicca su [questo link](/links/control-panel/web-email-pro) per accedere alla sezione `Email Pro`{.action}. Il nome del server viene visualizzato nella zona **Connessione** della scheda `Informazioni generali`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

@@ -22,28 +22,31 @@ DNS management is now easier thanks to the history of your DNS zones.
 
 ## Requirements
 
-- A DNS zone for your domain name in your [OVHcloud Control Panel](/links/manager)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - Sufficient rights to manage the domain name
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## Instructions
 
-To access this feature, click on the tabs below to view each of the **4** steps.
+To access this feature, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-dns-zone), then choose the domain name concerned.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> The table that appears will show your domain name’s DNS zone. There, you will find the list of DNS records that it contains. On the right of the table, there are several buttons you can use to perform actions on your DNS zone. 
 >>
@@ -51,7 +54,7 @@ To access this feature, click on the tabs below to view each of the **4** steps.
 >>
 >> Click `View your DNS zone history`{.action}. 
 >>
-> **Step 4** 
+> **Step 3** 
 >>
 >> On the new page, a table displays the backup history for your DNS zone, ordered from the most recent date to the oldest. At the top of this table is the current version of your DNS zone. On this page, you can:
 >>
@@ -139,4 +142,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

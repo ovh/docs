@@ -11,15 +11,15 @@ updated: 2026-01-30
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
 
 With no extensive AI expertise required, AI Endpoints is an ideal choice for developers seeking a convenient and secure way to integrate AI into their applications.
 
 ## Objective
 
-The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](/links/public-cloud/ai-endpoints).
 
-It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
+It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](/links/public-cloud/ai-endpoints) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
 
 ## Requirements
 
@@ -30,7 +30,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 ### Generating your first API access key
 
-Getting an API key enables you to use the models available in our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
+Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
 **1\. Access the AI Endpoints section**
 
@@ -70,7 +70,7 @@ With your access API key in hand, you are now ready to access the AI models and 
 
 ### Accessing AI models
 
-Once your API key has been generated, you can navigate to the [Catalog page](https://endpoints.ai.cloud.ovh.net/catalog) to choose the AI model you want to interact with.
+Once your API key has been generated, you can navigate to the [Catalog page](/links/public-cloud/ai-endpoints-catalog) to choose the AI model you want to interact with.
 
 AI Endpoints offers a variety of world-renowned AI models to choose from, including:
 

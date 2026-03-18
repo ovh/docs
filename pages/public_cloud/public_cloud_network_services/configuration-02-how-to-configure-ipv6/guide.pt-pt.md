@@ -42,7 +42,16 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 * Uma instância Public Cloud (qualquer modelo).
 * Dispor de um acesso administrativo (sudo) via SSH ou ambiente de trabalho remoto (Windows) ao seu servidor.
 * Ter conhecimentos básicos de rede.
-* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
@@ -65,7 +74,7 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 
 ### Obter as informações de rede
 
-Aceda à Área de Cliente, clique no menu da secção `Public Cloud`{.action}, selecione o seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspendente e clique em `Detalhes da instância`{.action}.
+No seu projeto Public Cloud, clique em `Instâncias`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspondente e clique em `Detalhes da instância`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
@@ -107,7 +116,7 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >>
 >> Isto permite-lhe separar a configuração IPv6 e voltar facilmente às alterações em caso de erro.
 >>
->> Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
+>> Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -118,7 +127,6 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >> pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 >> pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 >> ```
->> 
 >> /// details | **Exemplo de configuração**
 >>
 >> ```console
@@ -154,7 +162,7 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >>
 >> Isto permite-lhe separar a configuração IPv6 e voltar facilmente às alterações em caso de erro.
 >>
->> Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
+>> Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
 >>
 >> ```bash
 >> sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -229,7 +237,7 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >> sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 >> ```
 >>
->> A seguir, editamos o ficheiro `ifcfg-eth0`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
+>> A seguir, editamos o ficheiro `ifcfg-eth0`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) pelos seus valores específicos.
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -270,7 +278,7 @@ Todas as informações necessárias serão visíveis na secção **Redes**.
 >> sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 >> ```
 >>
->> A seguir, editamos o ficheiro `cloud-init-eth0.nmconnection`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
+>> A seguir, editamos o ficheiro `cloud-init-eth0.nmconnection`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (`YOUR_IPV6`, `IPV6_PREFIX` e `IPV6_GATEWAY`) pelos seus valores específicos.
 >>
 >> ```console
 >> [ipv6]
@@ -350,6 +358,6 @@ De qualquer forma, não hesite em contactar o suporte com os elementos testados 
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com nossa [comunidade de utilizadores](/links/community).

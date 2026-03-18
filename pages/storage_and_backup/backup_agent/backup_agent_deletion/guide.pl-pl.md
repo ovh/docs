@@ -10,8 +10,18 @@ W tym przewodniku wyjaśniono, jak usunąć różne elementy Twojej usługi Back
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) w sekcji `Backup Agent`{.action}.
 - Aktywna usługa Backup Agent.
+
+<!-- CP-NAV-START:baremetal-backup-agent -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Backup Agent](/links/control-panel/baremetal-backup-agent)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Backup Agent`{.action}
+
+---
+<!-- CP-NAV-END:baremetal-backup-agent -->
 
 ## W praktyce
 

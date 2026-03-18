@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen eines CNAME DNS-Eintrags für eine Subdomain"
-excerpt: "Erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain einer Domain hinzufügen"
-updated: 2025-06-25
+excerpt: "Erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain einer Domainnamen hinzufügen"
+updated: 2026-02-10
 ---
 
 <style>
@@ -34,7 +34,18 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 - Sie haben einen [Domainnamen](/links/web/domains).
 - Sie nutzen eine diesem Domainnamen zugeordnete DNS-Zone bei OVHcloud.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >
@@ -43,7 +54,7 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 ## In der praktischen Anwendung
 
-### Einen CNAME DNS-Eintrag für die Subdomain einer Domain hinzufügen
+### Einen CNAME DNS-Eintrag für die Subdomain einer Domainnamen hinzufügen
 
 1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
@@ -80,12 +91,12 @@ Eine DNS-Abfrage für *www.domain.tld* gibt entweder das Ziel des CNAME-Eintrags
 
 ///
 
-/// details | CNAME auf einer Domain in ihrer eigenen DNS-Zone
+/// details | CNAME auf einer Domainnamen in ihrer eigenen DNS-Zone
 
 Gemäß der Konvention **können CNAME Einträge nicht für einen Domainnamen in seiner eigenen DNS-Zone verwendet werden**. Der Domainname muss nämlich direkt auf eine IP-Adresse mit einem Eintrag vom Typ [A](/pages/web_cloud/domains/dns_zone_a_record_creation) für eine IPv4 oder [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) für eine IPv6 verweisen.
 
-Wie bereits erwähnt, können Sie in der DNS-Zone, die Sie für die Domain *domain.tld* erstellt haben, keinen CNAME-Eintrag für diese Domain erstellen.  
-Sie können jedoch CNAME-Einträge für alle Subdomains (zum Beispiel: *subdomain.domain.tld* oder *www.domain.tld*) der Domain *domain.tld* in der für *domain.tld* erstellten DNS-Zone erstellen.
+Wie bereits erwähnt, können Sie in der DNS-Zone, die Sie für die Domainnamen *domain.tld* erstellt haben, keinen CNAME-Eintrag für diese Domainnamen erstellen.  
+Sie können jedoch CNAME-Einträge für alle Subdomains (zum Beispiel: *subdomain.domain.tld* oder *www.domain.tld*) der Domainnamen *domain.tld* in der für *domain.tld* erstellten DNS-Zone erstellen.
 
 ///
 

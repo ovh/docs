@@ -21,7 +21,6 @@ However, you can still connect to your server via the OVHcloud rescue mode, whic
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](/links/bare-metal/vps) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

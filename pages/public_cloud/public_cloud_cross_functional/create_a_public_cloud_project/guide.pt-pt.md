@@ -16,11 +16,18 @@ A criação de um projeto é a primeira etapa na implantação de [instâncias P
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
-
-Primeiro, inicie sessão na [Área de Cliente OVHcloud](/links/manager) e clique no menu `Public Cloud`{.action}.
 
 Após ter tomado conhecimento, valide os termos dos contratos selecionando a casa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
 

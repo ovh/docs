@@ -18,10 +18,20 @@ In diesem Fall müssen Sie die Lizenz manuell aktivieren, um Zugriff auf alle Wi
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 Wir empfehlen, die [Einführung in das Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) zu lesen, um sich mit Horizon vertraut zu machen.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 

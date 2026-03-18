@@ -13,12 +13,21 @@ Le offerte di hosting Web OVHcloud danno accesso a uno spazio di storage FTP che
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}
-
 > [!primary]
 > Solo gli hosting Web **Pro** o **Performance** permettono l'attivazione di più utenti FTP e dispongono di connessioni in SSH.
 >
 > Per gli hosting Web, non è più possibile connettersi allo spazio di storage FTP tramite lo strumento online FTP Explorer/Net2FTP. Per continuare a connettersi in FTP al tuo hosting Web, utilizza i software [Filezilla](https://filezilla-project.org/download.php) o [Cyberduck](https://cyberduck.io/).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -37,28 +46,22 @@ Per accedere allo spazio di storage FTP, recupera questi elementi:
 >
 > **Se disponi già di questi elementi**, prosegui direttamente alla parte 2 "[Accedi al tuo spazio di storage](#ftp_storage_access)" di questa guida.
 
-Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Se non disponi di questi elementi, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
 > **Passaggio 1**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Passaggio 2**
->>
->> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca su [questo link](/links/control-panel/web-hosting) e seleziona l'hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Passaggio 3**
+> **Passaggio 2**
 >>
 >> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
 >>
 >> ![FTP -SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh.png){.thumbnail}
 >>
-> **Passaggio 4**
+> **Passaggio 3**
 >>
 >> Visualizzi una tabella con tutti gli utenti FTP e SSH creati sul tuo hosting Web, con tutte le informazioni relative al tuo spazio di storage.
 >>
