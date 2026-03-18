@@ -23,10 +23,10 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Accès à l'espace client OVHcloud
+### OVHcloud Control Panel Access
 
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
