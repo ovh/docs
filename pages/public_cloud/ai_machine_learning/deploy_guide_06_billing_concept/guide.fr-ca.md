@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Facturation et cycle de vie (EN)
 excerpt: Découvrez comment la solution AI Deploy est facturée
-updated: 2026-02-17
+updated: 2026-03-18
 ---
 
 > [!primary]

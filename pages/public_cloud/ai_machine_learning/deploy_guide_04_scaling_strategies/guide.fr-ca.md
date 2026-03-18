@@ -1,7 +1,7 @@
 ---
 title: "AI Deploy - Stratégies de mise à l'échelle (EN)"
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy and learn how to use them
-updated: 2026-02-17
+updated: 2026-03-18
 ---
 
 > [!primary]

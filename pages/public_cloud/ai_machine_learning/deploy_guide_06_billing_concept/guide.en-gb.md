@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Billing and lifecycle
 excerpt: Learn how we bill AI Deploy
-updated: 2026-02-17
+updated: 2026-03-18
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Premiers pas (EN)
 excerpt: Découvrez AI Deploy et lancez votre première application
-updated: 2026-02-17
+updated: 2026-03-18
 ---
 
 > [!primary]
