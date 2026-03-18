@@ -33,6 +33,18 @@ This tutorial will explore how AI APIs can be connected to create an advanced vi
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 ### Set up the environment

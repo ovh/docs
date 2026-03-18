@@ -12,10 +12,21 @@ We will use the famous open source framework [Rasa](https://rasa.community/) to 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - A [user for AI Notebooks](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 
 ## Instructions
 

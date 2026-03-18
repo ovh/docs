@@ -17,13 +17,24 @@ Both of the frameworks are Python packages.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer
 - A [Docker Hub account](https://hub.docker.com/)
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 
 ## Instructions
 

@@ -21,6 +21,18 @@ This tutorial presents two examples of using Weights & Biases. In the first note
 - a Public Cloud user with the ability to start AI Notebooks;
 - a Weights & Biases account, you can create it on their [website](https://wandb.ai/site). It's Free for individuals.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 ### Launch and access a Jupyter notebook

@@ -44,6 +44,18 @@ We will also use a model to classify the Tweets according to their topic: a *Zer
 - A Public Cloud user with the ability to start AI Notebooks;
 - A Hugging Face account (if you want!).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 > [!primary]

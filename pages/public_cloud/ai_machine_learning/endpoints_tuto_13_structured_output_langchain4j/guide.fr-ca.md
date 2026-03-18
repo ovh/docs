@@ -31,6 +31,18 @@ Combined with OVHcloud **[AI Endpoints](/links/public-cloud/ai-endpoints)** whic
 - An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 - This code example uses JBang, a Java-based tool for creating and running Java programs as scripts. For more information on JBang, please refer to the [JBang documentation](https://www.jbang.dev/documentation/guide/latest/installation.html).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 Here is an excerpt of code that shows how to define a structured output format for the responses of the language model:

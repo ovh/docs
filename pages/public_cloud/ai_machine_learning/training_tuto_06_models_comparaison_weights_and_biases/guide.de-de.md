@@ -62,6 +62,18 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - A Weights & Biases account, you can create it on their [website](https://wandb.ai/site). *It’s Free for individuals.*
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 You will follow different steps to process your data and train your two models.

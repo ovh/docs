@@ -59,6 +59,18 @@ The examples provided during this guide can be used with one of the following en
 >> A standard terminal, with [cURL](https://curl.se/) installed on the system.
 >>
 
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Authentication & Rate Limiting
 
 Most examples provided in this guide are authenticated and expect the `AI_ENDPOINT_API_KEY` to be set in order to avoid rate limiting issues.

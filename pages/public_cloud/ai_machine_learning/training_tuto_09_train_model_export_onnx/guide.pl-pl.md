@@ -21,6 +21,18 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 - An OCI / Docker image registry. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor. To make your registry compatible with AI Solutions usage, follow the [Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) guide.
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Instructions
 
 ### Create Object Storage bucket for you ONNX model

@@ -18,12 +18,23 @@ You can see the Notebook step in the tutorial: [Audio analysis and classificatio
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
 - An OCI / Docker image registry. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor. To make your registry compatible with AI Solutions usage, follow the [Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) guide.
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 
 ## Instructions
 

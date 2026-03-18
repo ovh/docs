@@ -12,6 +12,18 @@ This guide shows how to share [**notebooks**](/pages/public_cloud/ai_machine_lea
 
 -   a working `ovhai` CLI ([how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+
 ## Share a notebook with people in your Public Cloud project
 
 When you access it from your browser, you will be required to log in using your credentials.
