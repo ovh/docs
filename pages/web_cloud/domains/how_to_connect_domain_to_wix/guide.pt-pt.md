@@ -45,7 +45,7 @@ Antes de seguir as etapas deste guia, aconselhamos que consulte o nosso guia "[E
 
 ### 1. Configurar o seu alojamento Wix
 
-Prepare primeiro o seu alojamento Wix seguindo as instruções **da etapa 1** a partir de [**esta página da documentação Wix**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
+Prepare primeiro o seu alojamento Wix seguindo as instruções **da etapa 1** a partir de [**esta página da documentação Wix**](https://support.wix.com/pt/article/conectando-um-dom%C3%ADnio-ao-wix-usando-o-m%C3%A9todo-de-apontamento).
 
 ### 2. Configurar os registos DNS na sua conta OVHcloud
 
@@ -54,8 +54,8 @@ Prepare primeiro o seu alojamento Wix seguindo as instruções **da etapa 1** a 
 > Antes de avançar:
 >
 > - Abra um separador em paralelo no seu browser.
-> - Abra [**esta página da documentação Wix**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
-> - Posicione-se na secção "**Etapa 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine**" da documentação Wix.<br>
+> - Abra [**esta página da documentação Wix**](https://support.wix.com/pt/article/conectando-um-dom%C3%ADnio-ao-wix-usando-o-m%C3%A9todo-de-apontamento).
+> - Posicione-se na secção "**Etapa 2 | Atualize os registros DNS na sua conta de host de domínio**" da documentação Wix.<br>
 > As instruções seguintes ajudá-lo-ão a configurar com maior facilidade a sua zona DNS OVHcloud.
 
 Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** etapas.

@@ -45,7 +45,7 @@ Prima di seguire i passaggi di questa guida, ti consigliamo di consultare la nos
 
 ### 1. Configura il tuo hosting Wix
 
-Prepara il tuo hosting Wix seguendo le istruzioni del **passaggio 1** da [**questa pagina della documentazione Wix**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
+Prepara il tuo hosting Wix seguendo le istruzioni del **passaggio 1** da [**questa pagina della documentazione Wix**](https://support.wix.com/it/article/collegare-un-dominio-utilizzando-il-metodo-puntamento).
 
 ### 2. Configura i tuoi record DNS sul tuo account OVHcloud
 
@@ -54,7 +54,7 @@ Prepara il tuo hosting Wix seguendo le istruzioni del **passaggio 1** da [**ques
 > Prima di proseguire:
 >
 > - Apri una scheda in parallelo sul tuo browser internet.
-> - Apri [**questa pagina della documentazione Wix**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
+> - Apri [**questa pagina della documentazione Wix**](https://support.wix.com/it/article/collegare-un-dominio-utilizzando-il-metodo-puntamento).
 > - Posizionati sulla sezione "**Passaggio 2 | Aggiorna i record DNS nell'account del tuo hosting di dominio**" della documentazione Wix.<br>
 > Le istruzioni seguenti ti aiuteranno a configurare più facilmente la tua zona DNS OVHcloud.
 

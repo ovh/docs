@@ -45,7 +45,7 @@ Before following the steps in this guide, we recommend reading our guide on [Edi
 
 ### 1. Configure your Wix hosting plan
 
-First, prepare your Wix hosting plan by following the instructions in **step 1** from [**this page of the Wix documentation**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
+First, prepare your Wix hosting plan by following the instructions in **step 1** from [**this page of the Wix documentation**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-the-pointing-method).
 
 ### 2. Configure your DNS records on your OVHcloud account
 
@@ -54,7 +54,7 @@ First, prepare your Wix hosting plan by following the instructions in **step 1**
 > Before you continue:
 >
 > - Open a tab in your web browser.
-> - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-pointing-5727882).
+> - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connecting-a-domain-to-wix-using-the-pointing-method).
 > - Go to the "**Step 2 | Update the DNS records in your domain host's account**" section of the Wix documentation.<br>
 > The following instructions will help you configure your OVHcloud DNS zone more easily.
 
