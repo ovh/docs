@@ -26,10 +26,10 @@ Public cloud database engines are managed services, which means that they are no
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acceso al área de cliente de OVHcloud
+### OVHcloud Control Panel Access
 
-- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

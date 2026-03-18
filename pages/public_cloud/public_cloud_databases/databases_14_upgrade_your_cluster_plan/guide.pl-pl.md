@@ -19,10 +19,10 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Dostęp do Panelu klienta OVHcloud
+### OVHcloud Control Panel Access
 
-- **Bezpośredni link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

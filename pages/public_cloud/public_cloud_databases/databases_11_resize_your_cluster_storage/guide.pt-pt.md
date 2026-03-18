@@ -29,10 +29,10 @@ You can increase or decrease the storage of your service at any time using eithe
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acesso à Área de Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link direto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->
