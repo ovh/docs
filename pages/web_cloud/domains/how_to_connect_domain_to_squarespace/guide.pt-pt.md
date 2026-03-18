@@ -136,17 +136,17 @@ As operações seguintes devem ser realizadas a partir do espaço de gestão Squ
 > [!primary]
 >
 > - Pode ligar o seu nome de domínio a um site SquareSpace de teste ou pago. Não pode ligá-lo a um site expirado.
-> - Se tiver uma conta de e-mail associada ao seu nome de domínio, pode continuar a utilizá-la depois de o nome de domínio ser ligado ao SquareSpace. Antes de ligar o seu nome de domínio, recomendamos que consulte este [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Utiliser-avec-Squarespace-une-adresse-e-mail-de-domaine-personnalis%C3%A9-que-vous-poss%C3%A9dez-d%C3%A9j%C3%A0).
+> - Se tiver uma conta de e-mail associada ao seu nome de domínio, pode continuar a utilizá-la depois de o nome de domínio ser ligado ao SquareSpace. Antes de ligar o seu nome de domínio, recomendamos que consulte este [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/217601877-Usando-um-e-mail-de-dom%C3%ADnio-personalizado-que-voc%C3%AA-j%C3%A1-possui-com-o-Squarespace).
 > - Pode utilizar vários nomes de domínio personalizados para o seu website. Pode ligar ou registar tantos quantos desejar.
 > - Não é possível ligar um nome de domínio personalizado ao SquareSpace se o nome de domínio incluir a palavra "squarespace" ou "sqsp".
 
-Para começar, siga as etapas de ligação descritas na etapa 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Connecter-un-domaine-OVHcloud-%C3%A0-votre-site-Squarespace).
+Para começar, siga as etapas de ligação descritas na etapa 1 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 > [!warning]
 >
 > Se receber o alerta "This domain is already connected to another Squarespace site" (Este domínio já está ligado a outro site Squarespace), verifique os seus outros sites Squarespace para determinar a que site o nome de domínio está ligado. De seguida, desligue-o desse website.
 
-Prossiga para a etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Connecter-un-domaine-OVHcloud-%C3%A0-votre-site-Squarespace).
+Prossiga para a etapa 2 deste [guia SquareSpace](https://support.squarespace.com/hc/pt/articles/12880712406797-Como-conectar-um-dom%C3%ADnio-OVHcloud-ao-seu-site-do-Squarespace).
 
 Se utiliza uma oferta de e-mail OVHcloud ou pretende subscrever uma das [nossas ofertas de e-mail](/links/web/emails), prepare a sua zona DNS em conformidade. Consulte o nosso guia sobre a "[Configuração de um registo MX](/pages/web_cloud/domains/dns_zone_mx)".
 

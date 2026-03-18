@@ -136,17 +136,17 @@ Die folgenden Schritte müssen im Verwaltungsbereich von SquareSpace ausgeführt
 > [!primary]
 >
 > - Sie können Ihren Domainnamen mit einer Test- oder kostenpflichtigen SquareSpace-Website verbinden. Eine Verbindung mit einer abgelaufenen Website ist nicht möglich.
-> - Wenn Sie über einen E-Mail-Account verfügen, der mit Ihrem Domainnamen verbunden ist, können Sie diesen nach der Verbindung der Domain mit SquareSpace weiterhin verwenden. Bevor Sie Ihren Domainnamen verbinden, empfehlen wir Ihnen, diese [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/217601877-Using-a-custom-domain-email-you-already-own-with-Squarespace) zu lesen.
+> - Wenn Sie über einen E-Mail-Account verfügen, der mit Ihrem Domainnamen verbunden ist, können Sie diesen nach der Verbindung der Domain mit SquareSpace weiterhin verwenden. Bevor Sie Ihren Domainnamen verbinden, empfehlen wir Ihnen, diese [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/217601877-Eine-E-Mail-Adresse-einer-eigenen-Domain-die-Sie-bereits-besitzen-mit-Squarespace-nutzen) zu lesen.
 > - Sie können mehrere benutzerdefinierte Domainnamen für Ihre Website verwenden. Sie können beliebig viele verbinden oder registrieren.
 > - Sie können keinen benutzerdefinierten Domainnamen mit SquareSpace verbinden, wenn der Domainname das Wort "squarespace" oder "sqsp" enthält.
 
-Befolgen Sie zunächst die Verbindungsschritte in Schritt 1 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site).
+Befolgen Sie zunächst die Verbindungsschritte in Schritt 1 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/12880712406797-Eine-OVHcloud-Domain-mit-deiner-Squarespace-Website-verbinden).
 
 > [!warning]
 >
 > Wenn Sie die Warnmeldung "This domain is already connected to another Squarespace site" erhalten, überprüfen Sie Ihre anderen SquareSpace-Websites, um festzustellen, mit welcher Website der Domainname verbunden ist. Trennen Sie dann die Verbindung zu dieser Website.
 
-Fahren Sie mit Schritt 2 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/12880712406797-Connecting-an-OVHcloud-domain-to-your-Squarespace-site) fort.
+Fahren Sie mit Schritt 2 dieser [SquareSpace-Anleitung](https://support.squarespace.com/hc/de/articles/12880712406797-Eine-OVHcloud-Domain-mit-deiner-Squarespace-Website-verbinden) fort.
 
 Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 
