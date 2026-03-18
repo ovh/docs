@@ -20,7 +20,7 @@ Durante a utilização do produto, pode ser levado a modificar os direitos de um
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ligação direta:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Selecione o seu serviço de base de dados
 
 ---

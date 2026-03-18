@@ -13,12 +13,13 @@ Les serveurs de bases de données Web Cloud Databases vous donnent la possibilit
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Lien direct :** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Sélectionnez votre service de base de données
 
 ---

@@ -13,12 +13,13 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 ## Requirements
 
 - You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
 
 ---

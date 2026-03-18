@@ -13,12 +13,13 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](/links/web/databases) (incluída numa oferta de [alojamento web Performance](/links/web/hosting).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ligação direta:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Selecione o seu serviço de base de dados
 
 ---

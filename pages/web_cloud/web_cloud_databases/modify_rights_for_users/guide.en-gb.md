@@ -20,7 +20,7 @@ While using the product, you may need to modify a user’s permissions on your [
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
 
 ---

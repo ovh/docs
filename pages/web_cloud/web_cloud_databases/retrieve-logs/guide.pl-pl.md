@@ -43,7 +43,7 @@ W niektórych sytuacjach możesz sprawdzić/pobrać logi:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Link bezpośredni:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Ścieżka nawigacji:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wybierz usługę bazy danych
 
 ---

@@ -37,12 +37,13 @@ Em certas situações, poderá ter de consultar / recuperar os logs:
 ## Requisitos
 
 - Ter uma solução [Web Cloud Databases](/links/web/databases).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Ligação direta:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Selecione o seu serviço de base de dados
 
 ---

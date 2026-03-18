@@ -13,12 +13,13 @@ You can access your database’s content via an interface. There are several way
 ## Requirements
 
 - A [Web Cloud Databases instance](/links/web/databases) (included in a [Performance web hosting plan](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
 
 ---

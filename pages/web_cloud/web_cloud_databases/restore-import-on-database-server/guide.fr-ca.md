@@ -13,12 +13,13 @@ updated: 2023-10-26
 ## Prérequis
 
 - Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Lien direct :** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Pour accéder à vos services :** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Sélectionnez votre service de base de données
 
 ---

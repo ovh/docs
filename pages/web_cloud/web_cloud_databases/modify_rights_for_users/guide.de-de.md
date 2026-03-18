@@ -20,7 +20,7 @@ Bei der Verwendung des Produkts können Sie die Rechte eines Benutzers auf Ihrer
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direkter Link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
 
 ---

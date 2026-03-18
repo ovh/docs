@@ -13,12 +13,13 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 ## Voraussetzungen
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten)
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direkter Link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
 
 ---

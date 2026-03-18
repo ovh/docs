@@ -13,12 +13,13 @@ Un database («DB») permette di conservare elementi cosiddetti dinamici quali, 
 ## Prerequisiti
 
 - Disporre di una [istanza Web Cloud Databases](/links/web/databases) (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Link diretto:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Percorso di navigazione:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleziona il tuo database service
 
 ---

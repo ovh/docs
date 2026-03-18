@@ -35,12 +35,13 @@ Need to change these permissions/restrictions?
 
 - A [Web Cloud Databases](/links/web/databases) solution
 - The IP address (or IP address range) to authorize on your solution
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direct link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
 
 ---

@@ -13,12 +13,13 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 ## Requisitos
 
 - Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting)).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Enlace directo:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Ruta de navegación:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Seleccione su servicio de base de datos
 
 ---

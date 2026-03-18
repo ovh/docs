@@ -34,12 +34,13 @@ In manchen Situationen kann es notwendig sein, Logs Ihres Web Cloud Databases Se
 ## Voraussetzungen
 
 - Sie nutzen den Dienst [Web Cloud Databases](/links/web/databases).
+
 <!-- CP-NAV-START:web-cloud-databases -->
 ---
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Direkter Link:** [Web Cloud Databases](/links/control-panel/web-cloud-databases)
 - **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
 
 ---
