@@ -87,8 +87,8 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [My services](/links/control-panel/billing-services)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Products and services`{.action}
+- **Link bezpośredni:** [Moje rozwiązania i usługi](/links/control-panel/billing-services)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje rozwiązania i usługi`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -101,7 +101,7 @@ Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#speci
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-Aby zrezygnować z abonamentu, otwórz stronę [Moje usługi](/links/control-panel/billing-services).
+Aby zrezygnować z abonamentu, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -185,7 +185,7 @@ Możesz również [sprawdzić aktualne](/pages/public_cloud/public_cloud_cross_f
 > Możesz anulować zlecenie rezygnacji z usługi do 24 godzin przed datą wygaśnięcia abonamentu.
 >
 
-Aby anulować zlecenie rezygnacji z usługi, otwórz stronę [Moje usługi](/links/control-panel/billing-services).
+Aby anulować zlecenie rezygnacji z usługi, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
 

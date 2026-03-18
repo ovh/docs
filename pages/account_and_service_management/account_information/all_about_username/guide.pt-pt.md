@@ -22,8 +22,8 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [User profile](/links/control-panel/account-profile)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `My account`{.action}
+- **Ligação direta:** [O meu perfil](/links/control-panel/account-profile)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Editar o meu perfil`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,9 +63,7 @@ Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/
 Em caso de dificuldade de acesso ao seu endereço de e-mail principal, um endereço de e-mail de SOS permite conservar o acesso à sua conta e, portanto, à gestão dos seus serviços.
 <br>Este segundo endereço **deve ser diferente** do primeiro, nomeadamente para facilitar as suas diligências em caso de recuperação de password.
 
-Para introduzir este endereço de e-mail de SOS, aceda ao seu [perfil de utilizador](/links/control-panel/account-profile) e clique em `Editar o meu perfil`{.action} na secção `O meu perfil`.
-
-![endereço de e-mail de recurso](images/edit-profile.png){.thumbnail}
+Para introduzir este endereço de e-mail de SOS, aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
 > [!warning]
 > Relembramos que é **primordial** que o endereço de e-mail de SOS seja **diferente** do endereço de e-mail principal da conta.
@@ -86,9 +84,9 @@ Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua con
 
 #### Modificar as minhas informações pessoais
 
-Pode alterar as informações da sua conta. Aceda ao seu [perfil de utilizador](/links/control-panel/account-profile) e clique em `Editar o meu perfil`{.action} na secção `O meu perfil`.
+Pode alterar as informações da sua conta. Aceda ao seu [perfil de utilizador](/links/control-panel/account-profile).
 
-Altere os seus dados e clique no botão `Validar`{.action}.
+Altere os seus dados e clique no botão `Registar as modificações`{.action}.
 
 > [!warning]
 >

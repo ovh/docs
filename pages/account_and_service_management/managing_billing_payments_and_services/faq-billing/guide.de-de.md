@@ -18,7 +18,7 @@ Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausf�
 
 ### Wie kann ich meine Zahlungsdaten ändern?
 
-Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben auf der Seite [Benutzerprofil](/links/control-panel/account-profile) zu aktualisieren.
+Ihre Abrechnungsdaten sind Ihre Kundenkennung. Für Ihre nächsten Rechnungen genügt es daher, diese Angaben auf der Seite [Mein Profil](/links/control-panel/account-profile) zu aktualisieren.
 
 Aus rechtlichen Gründen können Sie die Daten für bereits erstellte Rechnungen nicht mehr ändern. Sollte Ihre Anfrage auf einen Fehler unserer Dienste zurückgehen, kontaktieren Sie uns bitte über ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
@@ -31,14 +31,14 @@ Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nac
 
 #### Gut zu wissen:
 
-Um den Status Ihrer Dienste einzusehen, öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
+Um den Status Ihrer Dienste einzusehen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 Auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich Ihre Dienste manuell verlängern.
 
 Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
-Auf der Seite [Meine Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
 
 #### Tipps und Tricks
 
@@ -47,7 +47,7 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich die automatische Verlängerung deaktivieren?
 
-Auf der Seite [Meine Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
 
 Um einen Dienst zu kündigen, informieren Sie sich bitte hier [Wie kann ich einen Dienst kündigen?](#cancelservice)
 
@@ -98,7 +98,7 @@ Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten 
 
 #### Tipps und Tricks
 
-Auf der Seite [Meine Dienste](/links/control-panel/billing-services) können Sie die Häufigkeit der Verlängerung Ihrer Lösungen ändern.
+Auf der Seite [Meine Angebote und Dienste](/links/control-panel/billing-services) können Sie die Häufigkeit der Verlängerung Ihrer Lösungen ändern.
 Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Welches meiner Zahlungsmittel wird belastet?
@@ -111,7 +111,7 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wo kann ich meine Rechnungen einsehen?
 
-Öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices).
+Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices).
 
 #### Tipps und Tricks
 
@@ -144,7 +144,7 @@ Die Zahlungen, die Sie über unsere Seite vornehmen, sowie automatische Abrechnu
 
 ### Wie kann ich einen Dienst kündigen? <a name="cancelservice"></a>
 
-Für Lösungen wie Domainnamen, Webhostings, Dedicated Server und VPS öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services). Wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
+Für Lösungen wie Domainnamen, Webhostings, Dedicated Server und VPS öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services). Wählen Sie den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
 
 Die Kündigung wird mit dem Ablauf der Geltungsdauer oder der Vertragslaufzeit des Dienstes wirksam. Sie können Ihren Dienst bis 24 Stunden vor Ablauf kündigen oder aber die Kündigung stornieren.
 
@@ -172,7 +172,7 @@ Das gesamte Rechnungsbuch wird ausschließlich von der Buchhaltung des Antragste
 
 OVHcloud stellt Ihnen dennoch eine Exceldatei (.csv) zur Verfügung, in der Ihnen alle Ihre Rechnungen aufgelistet werden.
 
-Um die Datei herunterzuladen, öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
+Um die Datei herunterzuladen, öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
 
 ## Weiterführende Informationen
  

@@ -20,8 +20,8 @@ Das Passwort Ihres [OVHcloud Kundencenters](/links/manager) ist der ZugangsschlÃ
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Konto-Sicherheit](/links/control-panel/account-security)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Mein Konto`{.action} > `Sicherheit`{.action}
+- **Direkter Link:** [Sicherheit](/links/control-panel/account-security)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Sicherheit`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

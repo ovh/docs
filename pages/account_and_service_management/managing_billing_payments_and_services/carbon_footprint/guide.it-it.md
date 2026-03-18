@@ -19,8 +19,8 @@ Nell’ambito della propria attività professionale o per interesse personale, p
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Account dashboard`{.action}
+- **Link diretto:** [Il mio account](/links/control-panel/account-dashboard)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -93,7 +93,7 @@ Di default, le API OVHcloud sono messe a disposizione per permettere agli svilup
 
 - Sul lato destro della pagina compare l’API con il riquadro da completare.
 - Clicca sul pulsante in alto a destra intitolato `Authenticate`{.action} e poi sul pulsante `Login with OVHcloud SSO`{.action}.
-- Si apre l’interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/manager).
+- Si apre l’interfaccia di connessione al tuo [Spazio Cliente OVHcloud](/links/control-panel/account-dashboard).
 - Accedi con il tuo identificativo cliente e clicca su `Authorize`{.action} per utilizzare le API OVHcloud con i tuoi servizi.
 - Verrai reindirizzato automaticamente alla pagina precedente dell’API **POST /me/carbonCalculator/task**.
 

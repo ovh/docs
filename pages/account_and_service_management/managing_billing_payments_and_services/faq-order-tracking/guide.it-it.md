@@ -14,19 +14,19 @@ Il pagamento dell'ordine può essere effettuato solo dopo l'identificazione tram
 
 #### Consigli e suggerimenti
 
-Sei uscito dalla pagina dell’ordine? Apri la pagina [Ordini](/links/control-panel/billing-orders). A questo punto è possibile visualizzare l’ordine e saldarlo.
+Sei uscito dalla pagina dell’ordine? Apri la pagina [I miei ordini](/links/control-panel/billing-orders). A questo punto è possibile visualizzare l’ordine e saldarlo.
 
 ### Come verificare lo stato di un pagamento?
 
-Apri la pagina [Fatture](/links/control-panel/billing-invoices). Se una fattura è in attesa di pagamento, ti verrà proposto di saldare il saldo.
+Apri la pagina [Le mie fatture](/links/control-panel/billing-invoices). Se una fattura è in attesa di pagamento, ti verrà proposto di saldare il saldo.
 
 #### Consigli e suggerimenti
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ### Come verificare lo stato di un ordine?
 
-Apri la pagina [Ordini](/links/control-panel/billing-orders).
+Apri la pagina [I miei ordini](/links/control-panel/billing-orders).
 
 #### Consigli e suggerimenti
 
@@ -60,7 +60,7 @@ Un’altra possibile causa potrebbe essere il mancato pagamento di una fattura. 
 
 #### Consigli e suggerimenti
 
-Nella pagina [Metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
+Nella pagina [I miei metodi di pagamento](/links/control-panel/billing-payment-methods), potrete registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ## Per saperne di più
 

@@ -43,8 +43,8 @@ Esta guía explica cómo:
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Account security](/links/control-panel/account-security)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `My account`{.action} > `Security`{.action}
+- **Enlace directo:** [Seguridad](/links/control-panel/account-security)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action} > `Seguridad`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

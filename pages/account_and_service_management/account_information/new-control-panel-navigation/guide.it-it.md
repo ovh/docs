@@ -26,7 +26,18 @@ Da aprile 2025, i team OVHcloud hanno introdotto una nuova navigazione nello Spa
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Disporre di un account OVHcloud attivo
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Il mio account](/links/control-panel/account-dashboard)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## Procedura
 

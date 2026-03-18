@@ -27,7 +27,7 @@ OVHcloud le ofrece la posibilidad de crear usuarios locales con permisos de lect
 ### Acceso al área de cliente de OVHcloud
 
 - **Enlace directo:** [IAM Identities](/links/control-panel/iam-identities)
-- **Ruta de navegación:** `Identity, Security & Operations`{.action} > `Identidades`{.action}
+- **Ruta de navegación:** `Identidad, seguridad y operaciones`{.action} > `Identidades`{.action}
 
 ---
 <!-- CP-NAV-END:iam-identities -->

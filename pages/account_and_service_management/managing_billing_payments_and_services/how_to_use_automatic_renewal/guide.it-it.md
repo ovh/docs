@@ -63,7 +63,7 @@ Questa guida ti mostra come:
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud dallo [Spazio Cliente](/links/manager) : clicca sul tuo nome in alto a destra, sulla `Le mie offerte e servizi`{.action} e poi sulla scheda `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud nella pagina [Lista dei contratti](/links/control-panel/billing-contracts).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,8 +79,8 @@ Questa guida ti mostra come:
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [My services](/links/control-panel/billing-services)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Products and services`{.action}
+- **Link diretto:** [Le mie offerte e servizi](/links/control-panel/billing-services)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie offerte e servizi`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -122,7 +122,7 @@ Questa guida ti mostra come:
 
 ## Procedura
 
-Apri la pagina [I miei servizi](/links/control-panel/billing-services).
+Apri la pagina [Le mie offerte e servizi](/links/control-panel/billing-services).
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

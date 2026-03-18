@@ -21,7 +21,7 @@ Możesz użyć uwierzytelnienia SSO (*Single Sign-On*), aby zalogować się do T
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [SAML SSO](/links/control-panel/iam-saml-sso)
-- **Ścieżka nawigacji:** `Identity, Security & Operations`{.action} > `Users`{.action} > `SSO connection`{.action}
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Users`{.action} > `SSO connection`{.action}
 
 ---
 <!-- CP-NAV-END:iam-saml-sso -->

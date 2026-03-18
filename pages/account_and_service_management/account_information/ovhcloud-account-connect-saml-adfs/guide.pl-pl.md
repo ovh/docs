@@ -21,7 +21,7 @@ Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelni
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [SAML SSO](/links/control-panel/iam-saml-sso)
-- **Ścieżka nawigacji:** `Identity, Security & Operations`{.action} > `Users`{.action} > `SSO connection`{.action}
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Users`{.action} > `SSO connection`{.action}
 
 ---
 <!-- CP-NAV-END:iam-saml-sso -->

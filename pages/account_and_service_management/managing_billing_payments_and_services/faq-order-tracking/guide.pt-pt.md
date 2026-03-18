@@ -18,11 +18,11 @@ Saiu da página da encomenda? Abra a página [Encomendas](/links/control-panel/b
 
 ### Como consultar o estado do pagamento?
 
-Abra a página [Faturas](/links/control-panel/billing-invoices). Se uma fatura está a aguardar pagamento, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
+Abra a página [As minhas faturas](/links/control-panel/billing-invoices). Se uma fatura está a aguardar pagamento, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
 
 #### Truques e dicas
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ### Como acompanhar o estado da encomenda?
 
@@ -60,7 +60,7 @@ Uma fatura com pagamento pendente também pode causar este atraso. Se for o seu 
 
 #### Truques e dicas:
 
-Na página [Métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
+Na página [Os meus métodos de pagamento](/links/control-panel/billing-payment-methods), poderá registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ## Quer saber mais?
 

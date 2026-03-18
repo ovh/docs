@@ -63,7 +63,7 @@ This guide will help you to:
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](/links/manager): Click on your name in the top right-hand corner of your screen, then `My offers and services`{.action}, then the `Contracts`{.action} tab.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts on the [Contract list](/links/control-panel/billing-contracts) page.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,8 +79,8 @@ This guide will help you to:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [My services](/links/control-panel/billing-services)
-- **Navigation path:** Click your name in the top right > `Products and services`{.action}
+- **Direct link:** [My offers and services](/links/control-panel/billing-services)
+- **Navigation path:** Click your name in the top right > `My offers and services`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -122,7 +122,7 @@ This guide will help you to:
 
 ## Instructions
 
-Open the [My services](/links/control-panel/billing-services) page.
+Open the [My offers and services](/links/control-panel/billing-services) page.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

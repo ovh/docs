@@ -17,8 +17,8 @@ Al crear su cuenta de OVHcloud, especificó una dirección de correo electrónic
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Messages](/links/control-panel/account-messages)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Service emails`{.action}
+- **Enlace directo:** [Mis mensajes](/links/control-panel/account-messages)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis mensajes`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

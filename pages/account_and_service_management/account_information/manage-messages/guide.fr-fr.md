@@ -17,8 +17,8 @@ Lors de la création de votre compte OVHcloud, vous avez spécifié une adresse 
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Messages](/links/control-panel/account-messages)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `E-mails de service`{.action}
+- **Lien direct :** [Mes communications](/links/control-panel/account-messages)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes communications`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

@@ -19,8 +19,8 @@ En el marco de sus actividades profesionales o por interés sobre el tema, es po
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Account dashboard](/links/control-panel/account-dashboard)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Account dashboard`{.action}
+- **Enlace directo:** [Mi cuenta](/links/control-panel/account-dashboard)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action}
 
 ---
 <!-- CP-NAV-END:account-dashboard -->
@@ -93,7 +93,7 @@ Por defecto, las API de OVHcloud están disponibles para que los desarrolladores
 
 - En la parte derecha de la página aparece la API con su recuadro a completar.
 - Haga clic en el botón situado en la esquina superior derecha, titulado `Authenticate`{.action}, y luego en el botón `Login with OVHcloud SSO`{.action}.
-- Se abrirá la interfaz de conexión a su [área de cliente de OVHcloud](/links/manager).
+- Se abrirá la interfaz de conexión a su [área de cliente de OVHcloud](/links/control-panel/account-dashboard).
 - Conéctese con su ID de cliente y haga clic en `Authorize`{.action} para utilizar las API de OVHcloud con sus servicios.
 - A continuación, el sistema le redirigirá automáticamente a la página anterior de la API **POST /me/carbonCalculator/task**.
 

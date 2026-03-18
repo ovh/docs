@@ -17,8 +17,8 @@ Al momento della creazione del tuo account OVHcloud, hai specificato un indirizz
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Messages](/links/control-panel/account-messages)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Service emails`{.action}
+- **Link diretto:** [Le mie comunicazioni](/links/control-panel/account-messages)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Le mie comunicazioni`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->
