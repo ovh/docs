@@ -1,7 +1,7 @@
 ---
 title: "Verbinden eines OVHcloud Domainnamens mit einer Google Site"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einer Google Site zu verwenden"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Ziel
@@ -27,8 +27,8 @@ Sie sind Inhaber eines Domainnamens bei OVHcloud und möchten diesen mit einer G
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [DNS-Zonen](/links/control-panel/web-dns-zone)
-- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zonen`{.action} > Wählen Sie Ihren Domainnamen aus
+- **Direkter Link:** [DNS-Zone](/links/control-panel/web-dns-zone)
+- **Navigationspfad:** `Web Cloud`{.action} > `DNS-Zone`{.action} > Wählen Sie Ihren Domainnamen aus
 
 ---
 <!-- CP-NAV-END:web-dns-zone -->
@@ -45,7 +45,7 @@ Bevor Sie die Schritte dieser Anleitung durchführen, empfehlen wir Ihnen, unser
 
 > [!warning]
 >
-> Nur der Inhaber einer Google Site kann diese mit einem Domainnamen verbinden. Falls nötig, erfahren Sie hier, wie Sie den [Inhaber der Google Site ändern](https://support.google.com/sites/answer/97934).
+> Nur der Inhaber einer Google Site kann diese mit einem Domainnamen verbinden. Falls nötig, erfahren Sie hier, wie Sie den [Inhaber der Google Site ändern](https://support.google.com/sites/answer/97934?hl=de).
 
 Bereiten Sie zunächst Ihre Google Site vor, indem Sie den Anweisungen im Abschnitt **Configure a custom domain** auf [**dieser Seite des Google-Supports**](https://support.google.com/sites/answer/9068867?hl=de#zippy=) folgen.
 
@@ -58,7 +58,7 @@ Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuz
 >>
 >> Klicken Sie auf [diesen Link](/links/control-panel/web-dns-zone) und wählen Sie den betreffenden Domainnamen aus.
 >>
->> ![DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
+>> ![DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 >> Die angezeigte Tabelle listet alle DNS-Einträge des ausgewählten Domainnamens auf.
 >>
@@ -135,7 +135,7 @@ Klicken Sie auf die nachstehenden Tabs, um die **5** Schritte nacheinander anzuz
 >>
 >> Wenn kein "CNAME"-Eintrag für die Subdomain "www" vorhanden ist, klicken Sie oben rechts auf `Eintrag hinzufügen`{.action}, wählen Sie den Eintragstyp `CNAME`{.action}, geben Sie `www` im Feld **Subdomain** und `ghs.googlehosted.com.` im Feld **Ziel** ein. Klicken Sie auf `Weiter`{.action} und bestätigen Sie.
 >>
->> Da sich diese Werte ändern können, überprüfen Sie sie auf der Seite "[CNAME record values](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" der offiziellen Dokumentation.
+>> Da sich diese Werte ändern können, überprüfen Sie sie auf der Seite "[CNAME record values](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=de)" der offiziellen Dokumentation.
 
 Die DNS-Zone ist nun so konfiguriert, dass sie auf Ihre Google Site verweist.
 

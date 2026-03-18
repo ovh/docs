@@ -1,7 +1,7 @@
 ---
 title: "How to connect an OVHcloud domain name to a Wix hosting plan"
 excerpt: "Prepare and configure your OVHcloud domain name's DNS zone to connect to a Wix hosting plan"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objective
@@ -81,7 +81,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** Delete all existing "A" records for the "www" subdomain. If multiple "A" records exist for the domain name alone, delete all but one, which you will modify in the next sub-step. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** If an "A" record exists for the domain name alone, click the `...`{.action} button, then click `Edit record`{.action}. Leave the **Subdomain** field blank and replace the target with the IPv4 address from your Wix interface. Click `Next`{.action} and confirm.
+>> **3 - Modification:** If an "A" record exists for the domain name alone, click the `...`{.action} button, then click `Modify record`{.action}. Leave the **Subdomain** field blank and replace the target with the IPv4 address from your Wix interface. Click `Next`{.action} and confirm.
 >>
 >> If no "A" record exists, click `Add an entry`{.action} at the top right, select the `A`{.action} pointer record, leave the **Subdomain** field blank and enter the IPv4 address from your Wix interface in the **Target** field. Click `Next`{.action} and confirm.
 >>
@@ -127,7 +127,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** If multiple "CNAME" records exist for the "www" subdomain, delete all but one. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Edit record`{.action}. Replace only the **Target** with the value from your Wix interface. Click `Next`{.action} and confirm.
+>> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with the value from your Wix interface. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and the value from your Wix interface in the **Target** field. Click `Next`{.action} and confirm.
 

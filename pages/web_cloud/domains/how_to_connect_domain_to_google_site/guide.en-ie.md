@@ -1,7 +1,7 @@
 ---
 title: "How to connect an OVHcloud domain name to a Google Site"
 excerpt: "Prepare and configure your OVHcloud domain name's DNS zone to connect to a Google Site"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objective
@@ -74,7 +74,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** Delete all existing "A" records for the "www" subdomain. If more than 4 "A" records exist for the domain name alone, delete the excess records to keep only 4. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** Modify each remaining "A" record for the domain name alone by clicking the `...`{.action} button, then clicking `Edit record`{.action}. Replace the target with one of the 4 Google Site IPv4 addresses (a different address per record):
+>> **3 - Modification:** Modify each remaining "A" record for the domain name alone by clicking the `...`{.action} button, then clicking `Modify record`{.action}. Replace the target with one of the 4 Google Site IPv4 addresses (a different address per record):
 >>
 >> - `216.239.32.21`
 >> - `216.239.34.21`
@@ -131,11 +131,11 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** If multiple "CNAME" records exist for the "www" subdomain, delete all but one. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Edit record`{.action}. Replace only the **Target** with `ghs.googlehosted.com.`. Click `Next`{.action} and confirm.
+>> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with `ghs.googlehosted.com.`. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and `ghs.googlehosted.com.` in the **Target** field. Click `Next`{.action} and confirm.
 >>
->> As these values may change, check them on the "[CNAME record values](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" page of the official documentation.
+>> As these values may change, check them on the "[CNAME record values](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=en)" page of the official documentation.
 
 The DNS zone is now configured to point to your Google Site.
 

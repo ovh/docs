@@ -1,7 +1,7 @@
 ---
 title: "Ligar um nome de domínio OVHcloud a um Google Site"
 excerpt: "Prepare e configure a zona DNS do seu nome de domínio OVHcloud para o ligar a um Google Site"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objetivo
@@ -135,7 +135,7 @@ Clique nos separadores abaixo para visualizar sucessivamente cada uma das **5** 
 >>
 >> Se não existir nenhum registo "CNAME" para o subdomínio "www", clique em `Adicionar uma entrada`{.action} no canto superior direito, selecione o campo de apontamento `CNAME`{.action}, introduza `www` no campo **Subdomínio** e `ghs.googlehosted.com.` no campo **Destino**. Clique em `Seguinte`{.action} e valide.
 >>
->> Estes valores são suscetíveis de alteração; verifique-os na página "[Valores dos registos CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" da documentação oficial.
+>> Estes valores são suscetíveis de alteração; verifique-os na página "[Valores dos registos CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=pt-PT)" da documentação oficial.
 
 A zona DNS está agora configurada para apontar para o seu Google Site.
 

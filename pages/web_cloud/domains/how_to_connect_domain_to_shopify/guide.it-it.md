@@ -1,7 +1,7 @@
 ---
 title: "Connettere un nome di dominio OVHcloud a Shopify"
 excerpt: Prepara e configura la zona DNS del tuo nome di dominio OVHcloud per connetterla a un hosting Shopify
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Obiettivo
@@ -68,9 +68,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** elimina tutti i record "A" esistenti per il sottodominio "www". Se esistono più record "A" per il nome di dominio, eliminali tutti tranne uno, che modificherai nel passaggio successivo. Per ogni record da eliminare, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Modifica:** se esiste un record "A" per il nome di dominio, clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Lascia il campo **Sottodominio** vuoto e sostituisci la destinazione con l'indirizzo IPv4 di Shopify: `23.227.38.65`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Modifica:** se esiste un record "A" per il nome di dominio, clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Lascia il campo **Sottodominio** vuoto e sostituisci la destinazione con l'indirizzo IPv4 di Shopify: `23.227.38.65`. Clicca su `Continua`{.action} e conferma.
 >>
->> Se non esiste alcun record "A", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci `23.227.38.65` nel campo **Destinazione**. Clicca su `Avanti`{.action} e conferma.
+>> Se non esiste alcun record "A", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci `23.227.38.65` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 >>
 >> Passa quindi al passaggio 3.
 >>
@@ -86,9 +86,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** elimina tutti i record "AAAA" esistenti per il sottodominio "www". Se esistono più record "AAAA" per il nome di dominio, eliminali tutti tranne uno, che modificherai nel passaggio successivo. Per ogni record da eliminare, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Modifica:** se esiste un record "AAAA" per il nome di dominio, clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Lascia il campo **Sottodominio** vuoto e sostituisci la destinazione con l'indirizzo IPv6 di Shopify: `2620:0127:f00f:5::`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Modifica:** se esiste un record "AAAA" per il nome di dominio, clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Lascia il campo **Sottodominio** vuoto e sostituisci la destinazione con l'indirizzo IPv6 di Shopify: `2620:0127:f00f:5::`. Clicca su `Continua`{.action} e conferma.
 >>
->> Se non esiste alcun record "AAAA", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `AAAA`{.action}, lascia il campo **Sottodominio** vuoto e inserisci `2620:0127:f00f:5::` nel campo **Destinazione**. Clicca su `Avanti`{.action} e conferma.
+>> Se non esiste alcun record "AAAA", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `AAAA`{.action}, lascia il campo **Sottodominio** vuoto e inserisci `2620:0127:f00f:5::` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 >>
 >> Passa quindi al passaggio 4.
 >>
@@ -118,9 +118,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** se esistono più record "CNAME" per il sottodominio "www", eliminali tutti tranne uno. Per ogni record da eliminare, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `shops.myshopify.com.`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `shops.myshopify.com.`. Clicca su `Continua`{.action} e conferma.
 >>
->> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `shops.myshopify.com.` nel campo **Destinazione**. Clicca su `Avanti`{.action} e conferma.
+>> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `shops.myshopify.com.` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 
 La zona DNS è ora configurata per puntare verso il tuo hosting Shopify.
 

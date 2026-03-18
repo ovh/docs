@@ -1,7 +1,7 @@
 ---
 title: "Jak powiązać nazwę domeny OVHcloud z hostingiem Shopify"
 excerpt: "Przygotuj i skonfiguruj strefę DNS Twojej nazwy domeny OVHcloud, aby połączyć ją z hostingiem Shopify"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Wprowadzenie

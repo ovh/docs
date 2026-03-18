@@ -1,7 +1,7 @@
 ---
 title: "Jak powiązać nazwę domeny OVHcloud z hostingiem GoDaddy"
 excerpt: "Przygotuj i skonfiguruj strefę DNS Twojej nazwy domeny OVHcloud, aby połączyć ją z hostingiem GoDaddy"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Wprowadzenie
@@ -43,7 +43,7 @@ Przed przystąpieniem do wykonywania kolejnych kroków tego przewodnika zalecamy
 
 ### 1. Skonfiguruj hosting GoDaddy
 
-Najpierw przygotuj hosting GoDaddy, postępując zgodnie z instrukcjami z [**tej strony dokumentacji GoDaddy**](https://www.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+Najpierw przygotuj hosting GoDaddy, postępując zgodnie z instrukcjami z [**tej strony dokumentacji GoDaddy**](https://www.godaddy.com/pl-pl/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
 
 ### 2. Konfiguracja rekordów DNS na koncie OVHcloud
 
@@ -52,7 +52,7 @@ Najpierw przygotuj hosting GoDaddy, postępując zgodnie z instrukcjami z [**tej
 > Zanim przejdziesz dalej:
 >
 > - Otwórz kartę w przeglądarce internetowej.
-> - Otwórz [**tę stronę dokumentacji GoDaddy**](https://www.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+> - Otwórz [**tę stronę dokumentacji GoDaddy**](https://www.godaddy.com/pl-pl/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
 > - Postępuj zgodnie z instrukcjami aż do kroku 10 i pobierz informacje dotyczące Twojej strony WWW, aby móc później zmodyfikować rekordy DNS OVHcloud.<br>
 > Poniższe instrukcje pomogą Ci łatwiej skonfigurować strefę DNS OVHcloud.
 

@@ -1,7 +1,7 @@
 ---
 title: "Jak powiązać nazwę domeny OVHcloud z Google Site"
 excerpt: "Przygotuj i skonfiguruj strefę DNS Twojej nazwy domeny OVHcloud, aby połączyć ją z Google Site"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Wprowadzenie
@@ -45,7 +45,7 @@ Przed przystąpieniem do wykonywania kolejnych kroków tego przewodnika zalecamy
 
 > [!warning]
 >
-> Tylko właściciel witryny Google Site może ją połączyć z nazwą domeny. W razie potrzeby sprawdź, jak [zmienić właściciela witryny Google Site](https://support.google.com/sites/answer/97934).
+> Tylko właściciel witryny Google Site może ją połączyć z nazwą domeny. W razie potrzeby sprawdź, jak [zmienić właściciela witryny Google Site](https://support.google.com/sites/answer/97934?hl=pl).
 
 Najpierw przygotuj witrynę Google Site, postępując zgodnie z instrukcjami zawartymi w sekcji **Configure a custom domain** z [**tej strony pomocy Google**](https://support.google.com/sites/answer/9068867?hl=pl#zippy=).
 
@@ -135,7 +135,7 @@ Kliknij poniższe karty, aby wyświetlić kolejno każdy z **5** kroków.
 >>
 >> Jeśli nie istnieje żaden rekord "CNAME" dla subdomeny "www", kliknij `Dodaj wpis`{.action} w prawym górnym rogu, wybierz typ rekordu `CNAME`{.action}, wprowadź `www` w polu **Subdomena** i `ghs.googlehosted.com.` w polu **Cel**. Kliknij `Dalej`{.action} i zatwierdź.
 >>
->> Ponieważ te wartości mogą ulec zmianie, sprawdź je na stronie "[Wartości rekordów CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" w oficjalnej dokumentacji.
+>> Ponieważ te wartości mogą ulec zmianie, sprawdź je na stronie "[Wartości rekordów CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=pl)" w oficjalnej dokumentacji.
 
 Strefa DNS jest teraz skonfigurowana tak, aby wskazywała na Twoją witrynę Google Site.
 

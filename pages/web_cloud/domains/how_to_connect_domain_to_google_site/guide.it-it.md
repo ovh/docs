@@ -1,7 +1,7 @@
 ---
 title: "Connettere un nome di dominio OVHcloud a un Google Site"
 excerpt: "Prepara e configura la zona DNS del tuo nome di dominio OVHcloud per connetterla a un Google Site"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Obiettivo
@@ -45,7 +45,7 @@ Prima di seguire i passaggi di questa guida, ti consigliamo di consultare la nos
 
 > [!warning]
 >
-> Solo il proprietario di un Google Site può collegarlo a un nome di dominio. Se necessario, scopri come [modificare il proprietario del Google Site](https://support.google.com/sites/answer/97934).
+> Solo il proprietario di un Google Site può collegarlo a un nome di dominio. Se necessario, scopri come [modificare il proprietario del Google Site](https://support.google.com/sites/answer/97934?hl=it).
 
 Prepara il tuo Google Site seguendo le istruzioni della sezione **Configurer un nom de domaine personnalisé** da [**questa pagina del supporto Google**](https://support.google.com/sites/answer/9068867?hl=it#zippy=).
 
@@ -81,9 +81,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >> - `216.239.36.21`
 >> - `216.239.38.21`
 >>
->> Clicca su `Avanti`{.action} e conferma.
+>> Clicca su `Continua`{.action} e conferma.
 >>
->> **4 - Aggiunta:** se esistevano meno di 4 record "A", crea i record mancanti. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci nel campo **Destinazione** ogni indirizzo IPv4 non ancora assegnato. Clicca su `Avanti`{.action} e conferma.
+>> **4 - Aggiunta:** se esistevano meno di 4 record "A", crea i record mancanti. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci nel campo **Destinazione** ogni indirizzo IPv4 non ancora assegnato. Clicca su `Continua`{.action} e conferma.
 >>
 >> Poiché i valori di questi indirizzi IP sono soggetti a modifiche, verificali nella documentazione ufficiale alla pagina [valori dei record A](https://support.google.com/a/answer/2579934?hl=it&ref_topic=2721296&sjid=10373374977980680534-EU).
 >>
@@ -115,7 +115,7 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** elimina tutti i record "TXT" identificati (nome di dominio e sottodominio "www") per evitare un conflitto con i nuovi record DNS. Per ogni record, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Aggiunta:** crea un record TXT di verifica. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `TXT`{.action}. Completa i campi **Sottodominio** e **Destinazione** con le informazioni presenti nella pagina "[Valori dei record TXT](https://support.google.com/a/answer/2716802?hl=it&ref_topic=2716886&sjid=3052810298579211755-EU)" della documentazione ufficiale. In genere, il campo **Sottodominio** è vuoto e il campo **Destinazione** è di tipo `google-site-verification=XXXXXXXXXXXX`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Aggiunta:** crea un record TXT di verifica. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `TXT`{.action}. Completa i campi **Sottodominio** e **Destinazione** con le informazioni presenti nella pagina "[Valori dei record TXT](https://support.google.com/a/answer/2716802?hl=it&ref_topic=2716886&sjid=3052810298579211755-EU)" della documentazione ufficiale. In genere, il campo **Sottodominio** è vuoto e il campo **Destinazione** è di tipo `google-site-verification=XXXXXXXXXXXX`. Clicca su `Continua`{.action} e conferma.
 >>
 >> Passa quindi al passaggio 5.
 >>
@@ -131,11 +131,11 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** se esistono più record "CNAME" per il sottodominio "www", eliminali tutti tranne uno. Per ogni record da eliminare, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `ghs.googlehosted.com.`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `ghs.googlehosted.com.`. Clicca su `Continua`{.action} e conferma.
 >>
->> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `ghs.googlehosted.com.` nel campo **Destinazione**. Clicca su `Avanti`{.action} e conferma.
+>> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `ghs.googlehosted.com.` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 >>
->> Poiché questi valori sono soggetti a modifiche, verificali nella pagina "[Valori dei record CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" della documentazione ufficiale.
+>> Poiché questi valori sono soggetti a modifiche, verificali nella pagina "[Valori dei record CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=it)" della documentazione ufficiale.
 
 La zona DNS è ora configurata per puntare verso il tuo Google Site.
 

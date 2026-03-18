@@ -1,7 +1,7 @@
 ---
 title: "Conectar un nombre de dominio de OVHcloud a GoDaddy"
 excerpt: Prepare y configure la zona DNS de su nombre de dominio OVHcloud para conectarla a un alojamiento GoDaddy
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objetivo
@@ -43,7 +43,7 @@ Antes de seguir los pasos de esta guía, le recomendamos que consulte nuestra gu
 
 ### 1. Configurar su alojamiento GoDaddy
 
-Prepare primero su alojamiento GoDaddy siguiendo las instrucciones de [**esta página de la documentación de GoDaddy**](https://www.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+Prepare primero su alojamiento GoDaddy siguiendo las instrucciones de [**esta página de la documentación de GoDaddy**](https://www.godaddy.com/es-es/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
 
 ### 2. Configurar sus registros DNS en su cuenta de OVHcloud
 
@@ -52,7 +52,7 @@ Prepare primero su alojamiento GoDaddy siguiendo las instrucciones de [**esta p�
 > Antes de continuar:
 >
 > - Abra una pestaña en paralelo en su navegador de internet.
-> - Abra [**esta página de la documentación de GoDaddy**](https://www.godaddy.com/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
+> - Abra [**esta página de la documentación de GoDaddy**](https://www.godaddy.com/es-es/help/connect-my-websites-marketing-site-to-a-domain-registered-elsewhere-40612).
 > - Siga las instrucciones hasta el paso 10 y obtenga la información específica de su sitio web para poder modificar posteriormente sus registros DNS de OVHcloud.<br>
 > Las siguientes instrucciones le ayudarán a configurar más fácilmente su zona DNS de OVHcloud.
 

@@ -1,7 +1,7 @@
 ---
 title: "Connettere un nome di dominio OVHcloud a Webflow"
 excerpt: Prepara e configura la zona DNS del tuo nome di dominio OVHcloud per connetterla a un hosting Webflow
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Obiettivo
@@ -85,9 +85,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >> - `75.2.70.75`
 >> - `99.83.190.102`
 >>
->> Clicca su `Avanti`{.action} e conferma.
+>> Clicca su `Continua`{.action} e conferma.
 >>
->> **4 - Aggiunta:** se esistevano meno di 2 record "A", crea i record mancanti. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci nel campo **Destinazione** ogni indirizzo IPv4 non ancora assegnato. Clicca su `Avanti`{.action} e conferma.
+>> **4 - Aggiunta:** se esistevano meno di 2 record "A", crea i record mancanti. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `A`{.action}, lascia il campo **Sottodominio** vuoto e inserisci nel campo **Destinazione** ogni indirizzo IPv4 non ancora assegnato. Clicca su `Continua`{.action} e conferma.
 >>
 >> Passa quindi al passaggio 3.
 >>
@@ -117,7 +117,7 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** elimina tutti i record "TXT" identificati (nome di dominio e sottodominio "www") per evitare un conflitto con i nuovi record DNS. Per ogni record, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Aggiunta:** crea un record TXT di verifica. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `TXT`{.action}, inserisci `_webflow` nel campo **Sottodominio** e nel campo **Destinazione** il valore di tipo `one-time-verification=XXXXXXXX` presente nella sezione `Site settings > Publishing tab > Production`{.action} del tuo account Webflow. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Aggiunta:** crea un record TXT di verifica. Clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `TXT`{.action}, inserisci `_webflow` nel campo **Sottodominio** e nel campo **Destinazione** il valore di tipo `one-time-verification=XXXXXXXX` presente nella sezione `Site settings > Publishing tab > Production`{.action} del tuo account Webflow. Clicca su `Continua`{.action} e conferma.
 >>
 >> Passa quindi al passaggio 5.
 >>
@@ -133,9 +133,9 @@ Clicca sulle schede qui di seguito per visualizzare in successione ciascuno dei 
 >>
 >> **2 - Eliminazione:** se esistono più record "CNAME" per il sottodominio "www", eliminali tutti tranne uno. Per ogni record da eliminare, clicca sul pulsante `...`{.action} a destra della riga corrispondente, quindi su `Elimina il record`{.action}.
 >>
->> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `proxy-ssl.webflow.com.`. Clicca su `Avanti`{.action} e conferma.
+>> **3 - Modifica:** se esiste un record "CNAME" per il sottodominio "www", clicca sul pulsante `...`{.action} e poi su `Modifica il record`{.action}. Sostituisci unicamente la **Destinazione** con `proxy-ssl.webflow.com.`. Clicca su `Continua`{.action} e conferma.
 >>
->> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `proxy-ssl.webflow.com.` nel campo **Destinazione**. Clicca su `Avanti`{.action} e conferma.
+>> Se non esiste alcun record "CNAME" per il sottodominio "www", clicca su `Aggiungi un record`{.action} in alto a destra, seleziona il campo di puntamento `CNAME`{.action}, inserisci `www` nel campo **Sottodominio** e `proxy-ssl.webflow.com.` nel campo **Destinazione**. Clicca su `Continua`{.action} e conferma.
 
 La zona DNS è ora configurata per puntare verso il tuo hosting Webflow.
 

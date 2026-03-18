@@ -1,7 +1,7 @@
 ---
 title: "Conectar un nombre de dominio de OVHcloud a un Google Site"
 excerpt: "Prepare y configure la zona DNS de su nombre de dominio OVHcloud para conectarla a un Google Site"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objetivo
@@ -45,7 +45,7 @@ Antes de seguir los pasos de esta guía, le recomendamos que consulte nuestra gu
 
 > [!warning]
 >
-> Solo el propietario de un Google Site puede conectarlo a un nombre de dominio. Si lo necesita, consulte cómo [cambiar el propietario del Google Site](https://support.google.com/sites/answer/97934).
+> Solo el propietario de un Google Site puede conectarlo a un nombre de dominio. Si lo necesita, consulte cómo [cambiar el propietario del Google Site](https://support.google.com/sites/answer/97934?hl=es).
 
 Prepare primero su Google Site siguiendo las instrucciones de la sección **Configurar un nombre de dominio personalizado** desde [**esta página del soporte de Google**](https://support.google.com/sites/answer/9068867?hl=es#zippy=).
 
@@ -135,7 +135,7 @@ Haga clic en las pestañas siguientes para visualizar sucesivamente cada uno de 
 >>
 >> Si no existe ningún registro "CNAME" para el subdominio "www", haga clic en `Añadir un registro`{.action} en la parte superior derecha, seleccione el campo de apuntado `CNAME`{.action}, introduzca `www` en el campo **Subdominio** y `ghs.googlehosted.com.` en el campo **Destino**. Haga clic en `Siguiente`{.action} y confirme.
 >>
->> Dado que estos valores pueden cambiar, compruébelos en la página "[Valores de los registros CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" de la documentación oficial.
+>> Dado que estos valores pueden cambiar, compruébelos en la página "[Valores de los registros CNAME](https://knowledge.workspace.google.com/admin/support/troubleshooting/cname-record-values?hl=es)" de la documentación oficial.
 
 La zona DNS ya está configurada para apuntar a su Google Site.
 

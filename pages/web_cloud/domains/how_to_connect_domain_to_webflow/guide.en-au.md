@@ -1,7 +1,7 @@
 ---
 title: "How to connect an OVHcloud domain name to a Webflow hosting plan"
 excerpt: "Prepare and configure your OVHcloud domain name's DNS zone to connect to a Webflow hosting plan"
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objective
@@ -80,7 +80,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** Delete all existing "A" records for the "www" subdomain. If more than 2 "A" records exist for the domain name alone, delete the excess records to keep only 2. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** Modify each remaining "A" record for the domain name alone by clicking the `...`{.action} button, then clicking `Edit record`{.action}. Replace the target with one of the 2 Webflow IPv4 addresses (a different address per record):
+>> **3 - Modification:** Modify each remaining "A" record for the domain name alone by clicking the `...`{.action} button, then clicking `Modify record`{.action}. Replace the target with one of the 2 Webflow IPv4 addresses (a different address per record):
 >>
 >> - `75.2.70.75`
 >> - `99.83.190.102`
@@ -133,7 +133,7 @@ Click the tabs below to view each of the **5** steps in sequence.
 >>
 >> **2 - Deletion:** If multiple "CNAME" records exist for the "www" subdomain, delete all but one. For each record to delete, click the `...`{.action} button to the right of the corresponding row, then click `Delete record`{.action}.
 >>
->> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Edit record`{.action}. Replace only the **Target** with `proxy-ssl.webflow.com.`. Click `Next`{.action} and confirm.
+>> **3 - Modification:** If a "CNAME" record exists for the "www" subdomain, click the `...`{.action} button, then click `Modify record`{.action}. Replace only the **Target** with `proxy-ssl.webflow.com.`. Click `Next`{.action} and confirm.
 >>
 >> If no "CNAME" record exists for the "www" subdomain, click `Add an entry`{.action} at the top right, select the `CNAME`{.action} pointer record, enter `www` in the **Subdomain** field and `proxy-ssl.webflow.com.` in the **Target** field. Click `Next`{.action} and confirm.
 

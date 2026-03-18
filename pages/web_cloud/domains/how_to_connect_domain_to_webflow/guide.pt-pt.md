@@ -1,7 +1,7 @@
 ---
 title: "Ligar um nome de domínio OVHcloud ao Webflow"
 excerpt: Prepare e configure a zona DNS do seu nome de domínio OVHcloud para a ligar a um alojamento Webflow
-updated: 2026-03-17
+updated: 2026-03-18
 ---
 
 ## Objetivo
