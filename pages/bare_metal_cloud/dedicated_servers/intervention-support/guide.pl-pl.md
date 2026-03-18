@@ -1,7 +1,7 @@
 ---
 title: 'Zakończenie interwencji konserwacyjnej na serwerze dedykowanym (EN)'
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
-updated: 2024-08-27
+updated: 2026-03-18
 ---
 
 ## Objective
@@ -26,13 +26,13 @@ Its goal is to support you and ensure that there is as little impact as possible
 Continue reading this guide by clicking on the link for your installation:
 
 - Operating system
-    - [Ubuntu](#ubuntu)
+    - [Ubuntu/Debian 12+](#ubuntu)
     - [CentOS/Alma Linux](#centos-almalinux)
     - [SmartOS](#smartos)
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox/Debian](#proxmox)
+    - - [Proxmox/Debian (excluding Debian 12+)](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -44,7 +44,7 @@ Continue reading this guide by clicking on the link for your installation:
 
 <a name="ubuntu"></a>
 
-### Ubuntu
+### Ubuntu/Debian 12+
 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
@@ -464,7 +464,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox/Debian
+### Proxmox/Debian (excluding Debian 12+)
 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), this may be related to an error during system startup caused by the old MAC address value still present:
 

@@ -1,7 +1,7 @@
 ---
 title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
-updated: 2024-08-27
+updated: 2026-03-18
 ---
 
 ## Objectif
@@ -25,13 +25,13 @@ Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins 
 Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre installation :
 
 - Système d'exploitation
-    - [Ubuntu](#ubuntu)
+    - [Ubuntu / Debian 12+](#ubuntu)
     - [CentOS / Alma Linux](#centos-almalinux)
     - [SmartOS](#smartos)
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox / Debian](#proxmox)
+    - [Proxmox / Debian (hors Debian 12 et versions ultérieures)](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -43,7 +43,7 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 
 <a name="ubuntu"></a>
 
-### Ubuntu
+### Ubuntu / Debian 12+
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
@@ -462,7 +462,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox / Debian
+### Proxmox / Debian (hors Debian 12 et versions ultérieures)
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), cela peut être lié à une erreur lors du démarrage du système, erreur causée par l'ancienne valeur d'adresse MAC toujours présente :
 
