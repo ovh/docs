@@ -53,9 +53,11 @@ For more details on support purposes, please refer to the official documentation
 
 #### 1. Check your current system
 
+<!-- CP-STEPS-START:check-current-system -->
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 
 In the `Home`{.action} tab, find the details of your operating system in the `OS/Distribution` section in the `Your VPS` box.
+<!-- CP-STEPS-END:check-current-system -->
 
 #### 2. Identify a compatible OS
 

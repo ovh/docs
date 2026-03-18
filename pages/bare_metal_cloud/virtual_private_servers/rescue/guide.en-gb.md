@@ -48,20 +48,24 @@ If you are facing a problem with your system, performing checks in rescue mode h
 
 ### Activating rescue mode
 
+<!-- CP-STEPS-START:activate-rescue -->
 On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the section **Your VPS**.
 
 ![Rescue](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_rescue.png){.thumbnail}
 
 Select `Reboot in rescue mode`{.action} from the menu and click `Confirm`{.action} in the popup window.
+<!-- CP-STEPS-END:activate-rescue -->
 
 ### Using rescue mode
 
 After initiating the reboot, a progress bar will indicate the duration of the task. Note that this can take several minutes.
 
+<!-- CP-STEPS-START:service-emails-notification -->
 > [!primary]
 >
 > You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](/links/manager): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 >
+<!-- CP-STEPS-END:service-emails-notification -->
 
 > [!warning]
 > Please note that if you are no longer the technical contact of the server, you will not receive the email. For more information, refer to our guide on [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
@@ -143,9 +147,11 @@ chroot /mnt
 
 You can now apply changes to your system, for example [reset user passwords and SSH keys](#gofurther).
 
+<!-- CP-STEPS-START:exit-rescue -->
 Once you have completed your actions in rescue mode, reboot the VPS again in the regular mode from the OVHcloud Control Panel.
 
 ![rescue mode control panel](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
+<!-- CP-STEPS-END:exit-rescue -->
 
 ### Troubleshooting boot issues
 

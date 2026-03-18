@@ -30,6 +30,7 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 
 ## Instructions
 
+<!-- CP-STEPS-START:configure-reverse-dns -->
 The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
@@ -61,6 +62,7 @@ You can also edit the reverse path directly via the `pencil`{.action} icon in th
 >
 > If the domain name is managed by OVHcloud as its registrar **and it uses OVHcloud DNS servers**, you can refer to [this guide](/pages/web_cloud/domains/dns_zone_edit).
 >
+<!-- CP-STEPS-END:configure-reverse-dns -->
 
 ## Go further
 

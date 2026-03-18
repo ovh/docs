@@ -38,6 +38,7 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 ## Instructions
 
+<!-- CP-STEPS-START:reinstall-vps-from-cp -->
 If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](/links/bare-metal/vps-os).
 
 > [!warning]
@@ -48,6 +49,7 @@ If you already have a VPS and want to have cPanel on it, you can reinstall the V
 To install your cPanel server, order a VPS with the cPanel distribution.
 
 ![horizon](images/cpanel-order.png){.thumbnail}
+<!-- CP-STEPS-END:reinstall-vps-from-cp -->
 
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:
 

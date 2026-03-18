@@ -37,6 +37,7 @@ The following steps presume that you have configured an additional disk accordin
 
 ### Modifying the size of the disk <a name="extend"></a>
 
+<!-- CP-STEPS-START:modifying-disk-size -->
 In the `Home`{.action} tab, go to the section labelled **Your configuration**. Click on `...`{.action} next to the option `Additional disks` and in the context menu click on `Increase the disk size`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
@@ -52,6 +53,7 @@ A message will appear to confirm your request. Click on the link inside the mess
 After the payment is confirmed, the disk upgrade will take a few minutes. You can check the progress in the tab `Additional disks`{.action}: If your chosen new size is displayed, the disk is ready.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
+<!-- CP-STEPS-END:modifying-disk-size -->
 
 > [!warning]
 >

@@ -47,6 +47,8 @@ This guide helps you **understand the VPS management interface in the OVHcloud C
 
 ### Dashboard <a name="controlpanel"></a>
 
+<!-- CP-STEPS-START:dashboard-overview -->
+
 The `Home`{.action} tab is the **main dashboard** of your VPS.
 
 It centralises **key information about the service** and provides access to **essential management actions**.
@@ -149,6 +151,8 @@ Find all information on the backup solutions available for your service on the [
 
 This section presents the most important information regarding the billing of your service. Find all information on this subject in [our respective guides](/products/account-and-service-management-managing-billing-payments-and-services).
 
+<!-- CP-STEPS-END:dashboard-overview -->
+
 <a name="hometab"></a>
 
 ### VPS functions available in the "Home" tab
@@ -168,11 +172,17 @@ A reboot may be necessary to apply configuration updates or to resolve a malfunc
 sudo reboot
 ```
 
+<!-- CP-STEPS-START:reboot-vps -->
+
 However, you can perform a forced reboot at any time in your [OVHcloud Control Panel](/links/manager). From the `Home`{.action} tab, click on the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that appears.
 
 ![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/cp_reboot.png){.thumbnail}
 
+<!-- CP-STEPS-END:reboot-vps -->
+
 #### Reinstall your VPS <a name="reinstallvps"></a>
+
+<!-- CP-STEPS-START:reinstall-vps -->
 
 The reinstallation of your VPS can be done from your Control Panel. This operation is generally used in case of system problems, environment change or to start with a clean installation.
 
@@ -211,6 +221,8 @@ If you have selected an SSH key and do not need a password to connect, enable th
 >
 
 The reinstallation process can take a few minutes.
+
+<!-- CP-STEPS-END:reinstall-vps -->
 
 ## Go further
 
