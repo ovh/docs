@@ -84,8 +84,6 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 > [!tabs]
 > **Via votre espace client**
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs dédiés`{.action}.
->>
 >> La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copiés, poursuivez vers l'application de la configuration IPv6.
 >>
 >> ![configureipv6](images/ipv6_information.png){.thumbnail}

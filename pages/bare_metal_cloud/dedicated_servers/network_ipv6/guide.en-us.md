@@ -84,8 +84,6 @@ The first step is to identify the IPv6 block and gateway assigned to your server
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
->>
 >> The IPv6 block and gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied them, continue with applying the IPv6 configuration.
 >>
 >> ![configureipv6](images/ipv6_information.png){.thumbnail}

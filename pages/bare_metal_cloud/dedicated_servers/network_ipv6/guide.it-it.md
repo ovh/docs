@@ -84,8 +84,6 @@ Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server.
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
 >>
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
->>
 >> Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta copiata, proseguire con l'applicazione di configurazione IPv6.
 >>
 >> ![configureipv6](images/ipv6_information.png){.thumbnail}

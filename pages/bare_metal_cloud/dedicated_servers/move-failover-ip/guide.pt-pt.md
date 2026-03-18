@@ -35,16 +35,16 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal) na Área de Cliente OVHcloud.
 - Dispor de um [endereço Additional IP](/links/network/additional-ip).
 
-<!-- CP-NAV-START:baremetal-dedicated-servers -->
+<!-- CP-NAV-START:network-public-ip -->
 ---
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
-- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Selecione o seu servidor
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
 
 ---
-<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -79,8 +79,6 @@ Se encomendar um bloco adicional IP num servidor, mas escolher uma localização
 > [!warning]
 > Apenas um único bloco de tamanho (/32) poderá ser movido de um servidor dedicado para um VPS.
 >
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}.
 
 Pode utilizar o menu suspenso em **Os meus endereços IP públicos e serviços associados** e selecionar `Todos os Additional IP`{.action} para filtrar os seus serviços, ou digitar diretamente o endereço IP desejado na barra de pesquisa.
 

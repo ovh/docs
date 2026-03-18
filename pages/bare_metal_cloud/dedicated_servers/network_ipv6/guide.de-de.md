@@ -84,8 +84,6 @@ Der erste Schritt besteht darin, das Ihrem Server zugewiesene IPv6-Gateway abzur
 > [!tabs]
 > **Über Ihr Kundencenter**
 >>
->> Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Dedicated Server`{.action} aus.
->>
 >> Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nach dem Kopieren fahren Sie mit der Anwendung der IPv6-Konfiguration fort.
 >>
 >> ![configureIPv6](images/ipv6_information.png){.thumbnail}

@@ -34,16 +34,16 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) nello Spazio Cliente OVHcloud
 - Disporre di un [indirizzo Additional IP](/links/network/additional-ip)
 
-<!-- CP-NAV-START:baremetal-dedicated-servers -->
+<!-- CP-NAV-START:network-public-ip -->
 ---
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
-- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+- **Link diretto:** [Public IP](/links/control-panel/network-public-ip)
+- **Percorso di navigazione:** `Network`{.action} > `Indirizzi IP pubblici`{.action}
 
 ---
-<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
@@ -78,8 +78,6 @@ Se ordini un blocco Additional IP su un server ma scegli una localizzazione dive
 > [!warning]
 > Solo un blocco di dimensioni singole (/32) potrà essere spostato da un server dedicato a un VPS.
 >
-
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} nel menu a sinistra dello schermo e poi su `Indirizzi IP Pubblici`{.action}.
 
 È possibile utilizzare il menu a tendina sotto **I tuoi indirizzi IP pubblici e servizi associati** e selezionare `Tutti gli Additional IP`{.action} per filtrare i servizi, oppure digitare direttamente l'indirizzo IP desiderato nella barra di ricerca.
 

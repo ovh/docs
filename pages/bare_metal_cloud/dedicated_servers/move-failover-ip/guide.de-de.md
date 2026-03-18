@@ -34,16 +34,16 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie verfügen über eine [Additional IP](/links/network/additional-ip).
 
-<!-- CP-NAV-START:baremetal-dedicated-servers -->
+<!-- CP-NAV-START:network-public-ip -->
 ---
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
-- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+- **Direkter Link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigationspfad:** `Network`{.action} > `Öffentliche IP`{.action}
 
 ---
-<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -80,9 +80,7 @@ Beispielsweise kann ein in Polen geolokalisierter Additional IP Block (eu-centra
 > Nur ein Block mit einer einzigen Adresse (/32) kann von einem dedizierten Server auf einen VPS verschoben werden.
 >
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie im Menü links auf `Network`{.action} und dann auf `Öffentliche IP-Adressen`{.action}.
-
-Anschließend können Sie das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden und `Alle Additional IP`{.action} auswählen, um Ihre Dienste entsprechend zu filtern, oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben.
+Sie können das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und dazugehörigen Dienste** verwenden und `Alle Additional IP`{.action} auswählen, um Ihre Dienste entsprechend zu filtern, oder die gewünschte IP-Adresse direkt in die Suchleiste eingeben.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 

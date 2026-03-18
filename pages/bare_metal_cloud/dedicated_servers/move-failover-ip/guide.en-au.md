@@ -34,16 +34,16 @@ With this technology, you can switch IP addresses from one solution to another i
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - An [Additional IP address](/links/network/additional-ip)
 
-<!-- CP-NAV-START:baremetal-dedicated-servers -->
+<!-- CP-NAV-START:network-public-ip -->
 ---
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
-- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
 
 ---
-<!-- CP-NAV-END:baremetal-dedicated-servers -->
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -78,9 +78,7 @@ If you order an additional IP block on a server but choose a different location 
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
-
-Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select `All Additional IPs`{.action} to filter your services accordingly, or directly type the desired IP address in the search bar.
+You can use the drop-down menu underneath **My public IP addresses and associated services** and select `All Additional IPs`{.action} to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
