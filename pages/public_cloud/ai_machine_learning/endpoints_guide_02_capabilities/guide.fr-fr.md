@@ -17,6 +17,17 @@ updated: 2026-02-03
 
 This page provides the technical features, capabilities and limitations of [AI Endpoints](/links/public-cloud/ai-endpoints).
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Features
 
 ### Available features

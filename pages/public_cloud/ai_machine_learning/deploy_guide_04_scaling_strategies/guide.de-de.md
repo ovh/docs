@@ -14,8 +14,18 @@ This guide provides a comprehensive understanding of the different scaling strat
 ## Requirements
 
 - An active **Public Cloud** project.
-- Access to the [OVHcloud Control Panel](/links/manager).
 - The **OVHcloud AI CLI** (`ovhai`) installed. For installation instructions, see [how to install ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Scaling principles
 

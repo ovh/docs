@@ -15,11 +15,21 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A **Public Cloud** project
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on a personal computer or a virtual machine
 - Knowledge about building a Docker image (see the [official Getting Started guide](https://docs.docker.com/get-started/))
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Quick overview
 

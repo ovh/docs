@@ -14,6 +14,17 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 -   **AI Training activated** for your account, see [how to submit a job Step 2](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job)
 -   a user for AI Tools, see [how to create a user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
 ### Step 1: Installing the CLI

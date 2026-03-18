@@ -29,12 +29,22 @@ Here is a schema to explain how it works:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 - [Docker](https://www.docker.com/get-started) installed on your local computer
 - A [Docker Hub account](https://hub.docker.com/)
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

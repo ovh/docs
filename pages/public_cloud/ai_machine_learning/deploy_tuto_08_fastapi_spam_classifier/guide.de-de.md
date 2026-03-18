@@ -23,12 +23,22 @@ In order to do this, we will use [FastAPI](https://streamlit.io/), a web framewo
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager);
 - An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - You also should have followed the tutorial [AI Notebooks - Tutorial - Build your spam classifier](/pages/public_cloud/ai_machine_learning/notebook_tuto_09_spam_classifier). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

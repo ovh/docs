@@ -20,10 +20,20 @@ In this tutorial, we will use one of them and interpret the results.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An app with an API running in AI Deploy on your Public Cloud project.
 - A python environment, with enough CPU and RAM and internet access (a virtual machine is recommended).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ### Selecting the right load testing tool for your needs
 

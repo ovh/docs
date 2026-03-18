@@ -13,6 +13,17 @@ updated: 2023-11-21
 
 This page provides the technical capabilities and limitations of the Public Cloud AI Deploy offer.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Features
 
 ### Available features

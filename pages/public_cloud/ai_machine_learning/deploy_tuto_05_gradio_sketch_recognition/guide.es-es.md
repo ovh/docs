@@ -23,12 +23,22 @@ Overview of the app:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 - You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

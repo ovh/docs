@@ -74,6 +74,17 @@ Voxist gives you the possibility to have a real time transcription. Indeed, the 
 > To learn more about **Voxist ASR service**, please refer to this [website](https://www.voxist.com/voice-ai/).
 >
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Voxist quick start
 
 To be able to query the Voxist Service, you must first deploy one of the Voxist images with AI Deploy.

@@ -10,8 +10,18 @@ This page gives you a few hints on how to debug your apps if you encounter some 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [**Public Cloud** project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

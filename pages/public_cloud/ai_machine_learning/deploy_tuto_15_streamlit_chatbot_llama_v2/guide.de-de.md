@@ -22,7 +22,6 @@ Here is an overview of our image segmentation app:
 
 To deploy your app, you need:
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
@@ -33,7 +32,18 @@ To deploy your app, you need:
     - Fill Meta's form to [request access to the next version of Llama](https://ai.meta.com/resources/models-and-libraries/llama-downloads/). Indeed, the use of Llama 2 is governed by the Meta license, that you must accept in order to download the model weights and tokenizer.
     - Have a [Hugging Face](https://huggingface.co/) account (with the same email address you entered in Meta's form).
     - Have a [Hugging Face token](https://huggingface.co/settings/tokens).
-    - Visit the page of one of the LLaMA 2 available models (version [7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) or [70B](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)), and accept Hugging Face's license terms and acceptable use policy. Once you have accepted this, you will get the following message: *Your request to access this repo has been successfully submitted, and is pending a review from the repo's authors*, which a few hours later should change to: *You have been granted access to this model*. 
+    - Visit the page of one of the LLaMA 2 available models (version [7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) or [70B](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)), and accept Hugging Face's license terms and acceptable use policy. Once you have accepted this, you will get the following message: *Your request to access this repo has been successfully submitted, and is pending a review from the repo's authors*, which a few hours later should change to: *You have been granted access to this model*.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
