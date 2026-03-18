@@ -54,13 +54,23 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager);
 - An AI Training project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - A Weights & Biases account, you can create it on their [website](https://wandb.ai/site). *It’s Free for individuals.*
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

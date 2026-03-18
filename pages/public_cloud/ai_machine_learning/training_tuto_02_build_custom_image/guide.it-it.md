@@ -10,11 +10,21 @@ This tutorial covers the process of **building your own job image** for specific
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A **Public Cloud** project
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
 - Knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Quick overview
 

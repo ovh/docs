@@ -14,12 +14,22 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A Public Cloud project created.
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
 - An OCI / Docker image registry. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor. To make your registry compatible with AI Solutions usage, follow the [Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) guide.
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -30,8 +40,6 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 #### Create your bucket via UI (Control Panel)
 
 If you do not feel comfortable with commands, this method may be more intuitive.
-
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](/links/manager).
 
 Then, select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
@@ -337,8 +345,6 @@ You can launch the training job using the UI or the CLI.
 #### Create your training job via UI (Control Panel)
 
 If you do not feel comfortable with commands, this method may be more intuitive.
-
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](/links/manager).
 
 Then, select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
 
