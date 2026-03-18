@@ -11,8 +11,6 @@ Nos interventions de maintenance se limitent uniquement à l'aspect matériel de
 Cette documentation, basée sur de nombreux retours d'expérience et cas d'usages rencontrés par nos équipes, liste les actions à entreprendre en fonction de vos installations : systèmes d'exploitation, hyperviseur, etc.
 Elle a pour objectif de vous accompagner et limiter autant que possible l'impact dans le cycle de vie de vos environnements.
 
-**Ce guide explique les actions post-maintenance à effectuer sur votre serveur en fonction de votre système d'exploitation ou de votre hyperviseur.**
-
 ## Prérequis
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal).

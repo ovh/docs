@@ -12,8 +12,6 @@ This guide, which is based on feedback received from our teams and use cases, li
 
 Its goal is to support you and ensure that there is as little impact as possible in the lifecycle of your environments.
 
-**This guide explains the post-maintenance actions to perform on your server, depending on your operating system or hypervisor.**
-
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
