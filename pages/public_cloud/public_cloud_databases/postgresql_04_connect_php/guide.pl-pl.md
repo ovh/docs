@@ -14,11 +14,21 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager);
-- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your PostgreSQL instance](/pages/public_cloud/public_cloud_databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 8.0.8.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concept
 

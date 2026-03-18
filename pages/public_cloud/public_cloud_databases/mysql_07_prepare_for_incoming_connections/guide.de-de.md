@@ -13,8 +13,20 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -22,7 +34,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Before making a connection, we need to verify that our MySQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your MySQL instance.
+Click on `Databases`{.action} in the left-hand navigation bar and select your MySQL instance.
 
 #### Step 1: Verify your user roles and password
 

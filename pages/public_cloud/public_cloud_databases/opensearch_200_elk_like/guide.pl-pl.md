@@ -15,10 +15,20 @@ You can upload a file easily, but for real-time data such as metrics and logs, c
 
 This tutorial requires:
 
-- An access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account, running at least:
     - one Public Cloud Database for OpenSearch service running;
     - one or more additional compute instance running Linux, acting as a data injector. It can also be your computer, a Kubernetes cluster, etc.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Make sure that you have a user account with enough privileges to write to the OpenSearch database, and that the IP addresses that you will use to run your agents (Logstash and Fluent Bit) are part of the authorized list. Check our [Getting Started guide](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started) for more information.

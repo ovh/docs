@@ -14,11 +14,21 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your PostgreSQL instance](/pages/public_cloud/public_cloud_databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.13.5.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concept
 

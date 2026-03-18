@@ -14,7 +14,17 @@ updated: 2022-03-16
 - A PostgreSQL database running on-premises (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 These guides can help you to meet these requirements:
 
