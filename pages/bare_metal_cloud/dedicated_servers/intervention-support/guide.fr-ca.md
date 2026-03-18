@@ -8,8 +8,10 @@ updated: 2026-03-18
 
 Nos interventions de maintenance se limitent uniquement à l'aspect matériel de votre serveur. Suite à une intervention de maintenance, des actions de votre part peuvent s'avérer nécessaires sur la partie logicielle de votre serveur.
 
-Cette documentation, basée sur de nombreux retours d'expériences et cas d'usages rencontrés par nos équipes, liste les actions à entreprendre en fonction de vos installations : systèmes d'exploitation, hyperviseur, etc...
-Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins d'impact possible dans le cycle de vie de vos environnements.
+Cette documentation, basée sur de nombreux retours d'expérience et cas d'usages rencontrés par nos équipes, liste les actions à entreprendre en fonction de vos installations : systèmes d'exploitation, hyperviseur, etc.
+Elle a pour objectif de vous accompagner et limiter autant que possible l'impact dans le cycle de vie de vos environnements.
+
+**Ce guide explique les actions post-maintenance à effectuer sur votre serveur en fonction de votre système d'exploitation ou de votre hyperviseur.**
 
 ## Prérequis
 
@@ -125,7 +127,7 @@ root@rescue:~#
 
 #### Cas particuliers
 
-Dans certain cas, il est nécessaire de propager la nouvelle adresse MAC dans les fichiers suivants :
+Dans certains cas, il est nécessaire de propager la nouvelle adresse MAC dans les fichiers suivants :
 
 - `/mnt/etc/netplan/01-netcfg.yaml`
 - `/mnt/etc/netplan/50-cloud-init.yaml`
@@ -225,7 +227,7 @@ root@rescue-bsd:~ # gpart show
  3905980416 1048689 4 freebsd-swap (512M)
 ```
 
-4\. Montez la partition qui vous intéresse, vous pourrez ainsi modifier l'interface via le fichier `/etc/rc.conf` :
+4\. Montez la partition qui vous intéresse, vous pouvez ainsi modifier l'interface via le fichier `/etc/rc.conf` :
 
 ```bash
 root@rescue-bsd:~ # zpool import
@@ -348,7 +350,7 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-Suite au remplacement de la carte mère, il est impossible de modifier les nouvelles adresses MAC à travers l'OS via le mode rescue.
+Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers l'OS en mode rescue.
 
 1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) et repérez la partition `/` :
 
@@ -602,13 +604,13 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 
 ### ESXi
 
-Suite au remplacement de la carte mère, il est impossible de modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` via les outils intégrés au mode rescue.
+Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` via les outils intégrés au mode rescue.
 Il sera donc nécessaire d'intervenir manuellement.
 
 #### Version 7.0 ou supérieure
 
 La procédure décrite ci-dessous ne concerne que les **versions 7.0 ou supérieures**. A partir de cette version, le fichier state.tgz est crypté.
-Il vous faudra réaliser une réinitialisation du réseau depuis le menu Direct Console via votre KVM ou IPMI.
+Réinitialisez le réseau depuis le menu Direct Console via votre KVM ou IPMI.
 
 Référez-vous à la capture d'écran ci-dessous :
 
@@ -618,7 +620,7 @@ Référez-vous à la capture d'écran ci-dessous :
 
 La procédure décrite ci-dessous ne concerne que les **versions 6.7 ou inférieures**.
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) afin de monter la partition `/` :
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) pour monter la partition `/` :
 
 ```bash
 root@rescue:~# mount /dev/sdaX /mnt/
@@ -640,20 +642,20 @@ root@rescue:~# cd $WORKINGDIR
 ```
 
 4\. Effectuez une extraction du contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`.<br>
-5\. Editez le fichier `esx.conf` obtenu :
+5\. Éditez le fichier `esx.conf` obtenu :
 
 ```bash
 root@rescue:/home/ovh/esxi# tar xf /mnt/state.tgz -C $WORKINGDIR
 root@rescue:/home/ovh/esxi# tar xf /home/ovh/esxi/local.tgz -C $WORKINGDIR
 root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 ```
-6\. Repérez et modifiez l'addresse MAC pour `vmkernelnic` :
+6\. Repérez et modifiez l'adresse MAC pour `vmkernelnic` :
 
 ```bash
 /net/vmkernelnic/child[0000]/mac = "XX:XX:XX:XX:XX:XX"
 ```
 
-7\. Identifez sur quelle interface l'adresse IP principale est utilisée :
+7\. Identifiez sur quelle interface l'adresse IP principale est utilisée :
 
 ```bash
 /net/vswitch/child[0000]/uplinks/child[0000]/pnic = "vmnicX"
@@ -675,7 +677,7 @@ root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 > S'il y a une interface vRack, n'oubliez pas de modifier également son adresse MAC.
 >
 
-9\. Effectuez une sauvegarde puis démontez la partition `/` :
+9\. Sauvegardez puis démontez la partition `/` :
 
 ```bash
 root@rescue:/home/ovh/esxi# tar -czf $WORKINGDIR/local.tgz etc/
@@ -763,7 +765,7 @@ ipconfig /all
 
 ![win_regedit_3](images/win_regedit_3_edited.png){.thumbnail}
 
-10\. Il sera nécessaire de décharger le registre pour appliquer les changements récents. Cliquez sur OVH_TEST (créé précédemment) puis cliquez sur `File`{.action} (en haut à gauche) et selectionnez `Unload hive...`{.action}.
+10\. Il sera nécessaire de décharger le registre pour appliquer les changements récents. Cliquez sur OVH_TEST (créé précédemment) puis cliquez sur `File`{.action} (en haut à gauche) et sélectionnez `Unload hive...`{.action}.
 
 <a name="network-interface"></a>
 
@@ -794,8 +796,8 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:x
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="private"
 ```
 
-4\. Allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.
-5\. Editez le fichier `/etc/default/grub` et modifiez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
+4\. Allez dans le répertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.
+5\. Éditez le fichier `/etc/default/grub` et modifiez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
 
 ```bash
 GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
@@ -822,7 +824,7 @@ root@rescue:~# umount /mnt
 ### Problèmes liés à votre partition EFI
 
 Les étapes suivantes sont indiquées si vous rencontrez un souci de démarrage (boot) lié aux partitions présentes sur vos disques.<br>
-Il existe 2 méthodes, via le mode rescue ou via le BIOS
+Il existe 2 méthodes, via le mode rescue ou via le BIOS.
 
 #### Via le mode rescue
 
@@ -877,9 +879,9 @@ Boot0000* proxmox2    HD(1,22,100000,0df658ff-5461-470a-9d92-5d95208d5c0f)File(\
 
 - Cas d'usage : le système installé (ici CentOS 6) n'est plus bootable après le remplacement du disque (aucune entrée EFI n'est visible à travers le BIOS).
 
-1\. Rédemarrez le serveur afin d'entrer dans le menu BIOS.
+1\. Redémarrez le serveur pour entrer dans le menu BIOS.
 
-La *1ère séquence* consiste à régénérer les fichiers nécessaires afin de rendre votre partition de nouveau opérationelle :
+La *1ère séquence* consiste à régénérer les fichiers nécessaires afin de rendre votre partition de nouveau opérationnelle :
 
 - Rendez-vous dans le menu `boot` de votre BIOS :
     - Choisissez `Add New Boot Option`{.action}.
@@ -890,7 +892,7 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 
 ![generate_efi](images/generate_efi-v2.gif){.thumbnail}
 
-la *2ème séquence* consiste à rendre active la partition sélectionnée lors de la séquence précédente.
+La *2ème séquence* consiste à rendre active la partition sélectionnée lors de la séquence précédente.
 
 - Toujours dans le menu `boot` de votre BIOS : 
     - Choisissez `UEFI Hard Disk BBS Priorities`{.action}.

@@ -8,9 +8,11 @@ updated: 2026-03-18
 
 Our maintenance interventions are limited to the hardware aspect of your server. Following a maintenance intervention, actions may be required on your server’s software section.
 
-This guide, which is based on a number of feedback received from our teams and use cases, lists the actions that need to be taken, depending on your installation: operating systems, hypervisor, etc.
+This guide, which is based on feedback received from our teams and use cases, lists the actions that need to be taken, depending on your installation: operating systems, hypervisor, etc.
 
 Its goal is to support you and ensure that there is as little impact as possible in the lifecycle of your environments.
+
+**This guide explains the post-maintenance actions to perform on your server, depending on your operating system or hypervisor.**
 
 ## Requirements
 
@@ -123,7 +125,7 @@ MACAddress=xx:xx:xx:xx:xx:xx
 root@rescue:~#
 ```
 
-4\. Please remember to unmount the partition `/` before rebooting the server.
+4\. Unmount the partition `/` before rebooting the server.
 
 #### Special cases
 
@@ -157,7 +159,7 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 
 5\. Enter the new MAC address in the line `HWADDR=xx:xx:xx:xx:xx:xx`.
 
-6\. Please remember to unmount the partition `/` before rebooting the server.
+6\. Unmount the partition `/` before rebooting the server.
 
 <a name="smartos"></a>
 
@@ -350,7 +352,7 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-After a motherboard has been replaced, it is not possible to modify the new MAC addresses through the OS via rescue mode.
+After a motherboard has been replaced, you cannot modify the new MAC addresses through the OS via rescue mode.
 
 1\. Reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) and locate the partition `/`:
 
@@ -604,7 +606,7 @@ You need to check and adapt the following files:
 
 ### ESXi
 
-After a motherboard has been replaced, it is not possible to modify the new MAC addresses through the `esxi.conf` file via the tools integrated in rescue mode.
+After a motherboard has been replaced, you cannot modify the new MAC addresses through the `esxi.conf` file via the tools integrated in rescue mode.
 This will require manual intervention.
 
 #### Version 7.0 or newer
@@ -620,7 +622,7 @@ Please refer to the screenshot below:
 
 The procedure described below applies only to **versions 6.7 and earlier**.
 
-1\. Restart the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) in order to mount the partition `/`:
+1\. Restart the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) to mount the partition `/`:
 
 ```bash
 root@rescue:~# mount /dev/sdaX /mnt/
