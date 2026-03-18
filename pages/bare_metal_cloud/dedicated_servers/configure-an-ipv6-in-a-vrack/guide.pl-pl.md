@@ -59,7 +59,17 @@ Dzięki wykorzystaniu IPv6 w sieci vRack użytkownicy OVHcloud mogą cieszyć si
 
 - Usługa [vRack](/links/network/vrack) aktywowana na Twoim koncie
 - Serwer [kompatybilny z vRack](/links/network/vrack) podłączony do sieci vRack
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [vRack](/links/control-panel/network-vrack)
+- **Ścieżka nawigacji:** `Network`{.action} > `Prywatna sieć vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Ta funkcja może być niedostępna lub ograniczona na serwerach z [linii produktów **Eco**](/links/bare-metal/eco-about).
@@ -95,10 +105,6 @@ Powyższy przykład przedstawia dwa hosty z interfejsami po stronie vRack skonfi
 Domyślna brama dla pierwszej podsieci /64 (mostkowanej) to pierwszy adres bloku /56. W tym przykładzie jest to `2001:41d0:abcd:ef00::1`. Jest ona dystrybuowana przez SLAAC, ale musi być skonfigurowana ręcznie (jako trasa domyślna), jeśli SLAAC jest wyłączone. Zobacz sekcję **Statyczna konfiguracja IP** poniżej.
 
 /// details | Przez Panel klienta OVHcloud
-
-- Otwórz `Sieć`{.action} na lewym pasku bocznym.
-- Otwórz `Prywatna sieć vRack`{.action}.
-- Wybierz odpowiednią sieć vRack.
 
 ![zarządzanie vRack](images/700.png){.thumbnail}
 

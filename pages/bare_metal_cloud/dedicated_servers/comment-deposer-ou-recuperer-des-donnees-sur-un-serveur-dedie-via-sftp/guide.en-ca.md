@@ -36,6 +36,17 @@ There a various options to transfer files between a local device and a remote ho
 - An FTP client that supports SFTP connections (for example [FileZilla](https://filezilla-project.org/)) installed on your local device
 - Administrative access via SSH to your server
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Instructions
 
 You will need the IP address of your server which you can find in the [OVHcloud Control Panel](/links/manager) and the name of the user account to use for the SSH connection. Consult our "Getting started" guides if you require further details on this topic:

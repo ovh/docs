@@ -33,7 +33,6 @@ updated: 2026-01-23
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - One or more [Additional IP addresses](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >

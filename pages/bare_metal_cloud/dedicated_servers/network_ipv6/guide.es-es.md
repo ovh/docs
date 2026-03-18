@@ -45,6 +45,17 @@ Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se
 - Tener toda la información relativa a su IPv6 (prefijo, puerta de enlace, etc.)
 - Tener conocimientos básicos de redes y de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 > [!warning]
 > Tenga en cuenta que los servidores Kimsufi se entregan con un único bloque IPv6 (/128). IPv6 se configurará automáticamente al instalar el sistema operativo.
 >
@@ -73,8 +84,6 @@ El primer paso consiste en recuperar la pasarela (Gateway) IPv6 asignada al serv
 
 > [!tabs]
 > **Desde el área de cliente**
->>
->> Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la sección `Servidores dedicados`{.action}.
 >>
 >> La pasarela IPv6 asignada a su servidor se muestra en la sección `Red` de la pestaña `Información general`{.action}. Una vez copiado, continúe con la aplicación de configuración IPv6.
 >>

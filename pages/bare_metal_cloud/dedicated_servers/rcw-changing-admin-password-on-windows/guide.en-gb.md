@@ -12,7 +12,17 @@ This guide will help you to reset your `Administrator` account password with the
 
 - Microsoft Windows Server 2016 or greater installed on your [dedicated server](/links/bare-metal/bare-metal)
 - At least 16 GB of RAM installed on the server
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

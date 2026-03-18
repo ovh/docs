@@ -14,8 +14,18 @@ Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) der Advance, Scale oder High Grade Reihe.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verwenden ein Betriebssystem / einen Hypervisor mit Unterstützung für das Aggregationsprotokoll 802.3ad (LACP).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugang zum OVHcloud Kundencenter
+
+- **Direktlink:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
@@ -28,7 +38,7 @@ Die Aggregation basiert auf dem Standard IEEE 802.3ad, Link Aggregation Control 
 
 ### OLA in Ihrem OVHcloud Kundencenter konfigurieren
 
-Um OLA zu konfigurieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
+Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

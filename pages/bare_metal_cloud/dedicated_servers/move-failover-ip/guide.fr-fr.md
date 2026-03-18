@@ -34,7 +34,17 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) dans votre espace client OVHcloud.
 - Disposer d'une [adresse Additional IP](/links/network/additional-ip).
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
@@ -69,8 +79,6 @@ Si vous commandez un bloc Additional IP sur un serveur mais que vous choisissez 
 > [!warning]
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
 >
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
 Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et sélectionner `Toutes les Additional IP`{.action} pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 

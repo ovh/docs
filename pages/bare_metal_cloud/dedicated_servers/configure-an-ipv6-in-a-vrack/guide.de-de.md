@@ -58,7 +58,17 @@ Durch die Nutzung von IPv6 innerhalb des vRack können OVHcloud-Nutzer eine sich
 
 - Sie verfügen über einen aktiven [vRack](/links/network/vrack)-Dienst in Ihrem Account.
 - Sie verfügen über einen [vRack-kompatiblen Server](/links/network/vrack), der mit Ihrem vRack-Netzwerk verbunden ist.
-- Sie haben Zugang zum [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [vRack](/links/control-panel/network-vrack)
+- **Navigationspfad:** `Network`{.action} > `Privates vRack Netzwerk`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Diese Funktion kann auf Servern der [**Eco**-Produktlinie](/links/bare-metal/eco-about) eingeschränkt oder nicht verfügbar sein.
@@ -94,10 +104,6 @@ Das obige Beispiel zeigt zwei Hosts, deren vRack-seitige Interfaces mit öffentl
 Das Standard-Gateway für das erste /64-Subnetz (das gebrückte) ist die erste Adresse aus dem /56-Block. In diesem Beispiel ist es `2001:41d0:abcd:ef00::1`. Dies wird über SLAAC verteilt, muss aber manuell konfiguriert werden (als Standard-Route), wenn SLAAC deaktiviert ist. Weitere Informationen finden Sie im Abschnitt **Statische IP-Konfiguration** weiter unten.
 
 /// details | Über das OVHcloud Kundencenter
-
-- Öffnen Sie `Network`{.action} in der linken Seitenleiste.
-- Öffnen Sie `Privates vRack-Netzwerk`{.action}.
-- Wählen Sie das betreffende vRack aus.
 
 ![vRack-Verwaltung](images/700.png){.thumbnail}
 

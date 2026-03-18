@@ -39,7 +39,18 @@ OVHcloud's global presence includes several regions across the world, such as Eu
 
 For optimal performance, a region should be selected closest to its users. For global availability, services should be spread across multiple regions. The 3-AZ Region is ideal for customers seeking the highest resilience and should be used to build multi-AZ application designs.
 
-In the [OVHcloud Control Panel](/links/manager), you can see your clusters in the list of `Dedicated servers`{.action} of the `Bare Metal Cloud`{.action} menu by switching to the tab `3-AZ clusters`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
+Switch to the tab `3-AZ clusters`{.action}.
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 

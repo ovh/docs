@@ -49,7 +49,17 @@ Oprócz prywatnego adresowania IP, sieć [vRack](/links/network/vrack) umożliwi
 - Wybrany zakres prywatnych adresów IP
 - [Serwer kompatybilny z vRack](/links/bare-metal/bare-metal)
 - Usługa [vRack](/links/network/vrack) aktywowana na koncie
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [vRack](/links/control-panel/network-vrack)
+- **Ścieżka nawigacji:** `Network`{.action} > `Prywatna sieć vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Ta funkcja może być niedostępna lub ograniczona na [serwerach dedykowanych z linii produktów **Eco**](/links/bare-metal/eco-about).
@@ -73,8 +83,6 @@ Oprócz prywatnego adresowania IP, sieć [vRack](/links/network/vrack) umożliwi
 > Ta konfiguracja umożliwia skonfigurowanie adresów IP z tego samego bloku na wielu serwerach, pod warunkiem, że wszystkie te serwery znajdują się w tej samej sieci vRack co blok IP. Blok IP musi mieć co najmniej 2 lub więcej użytecznych adresów IP, aby było to możliwe.
 >
 
-W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Sieć`{.action}. Następnie otwórz menu `vRack`{.action}.
-
 Wybierz swój vRack z listy, aby wyświetlić listę kwalifikujących się usług. Kliknij blok IP, który chcesz dodać do sieci vRack, a następnie kliknij przycisk `Dodaj`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -93,7 +101,6 @@ Domyślną publiczną przepustowość można zmienić podczas zamawiania nowego 
 
 Aby zamówić nowy blok Additional IP:
 
-- Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 - Otwórz sekcję `Sieć`{.action} na lewym pasku bocznym.
 - Wybierz `Publiczne adresy IP`{.action}.
 - Kliknij przycisk `Zamów IP`{.action} w pobliżu górnej części strony.
@@ -112,8 +119,6 @@ W przypadku bloków Additional IP już przypisanych do sieci vRack przepustowoś
 
 Aby uzyskać dostęp do interfejsu zarządzania:
 
-- Otwórz `Sieć`{.action} na lewym pasku bocznym Panelu klienta.
-- Wybierz `Prywatna sieć vRack`{.action}.
 - W kolumnie "Public IP & bandwidth" kliknij przycisk `Zarządzaj`{.action} dla odpowiedniego vRack.
 
 Strona zarządzania jest podzielona na dwie zakładki:

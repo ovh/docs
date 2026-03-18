@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Einleitung
+## Ziel
 
 Neben der privaten IP-Adressierung ermöglicht das [vRack](/links/network/vrack) auch die Weiterleitung von öffentlichem IP-Verkehr über den vRack-Port Ihres Servers mithilfe eines öffentlichen IP-Adressblocks.
 
@@ -49,7 +49,17 @@ Neben der privaten IP-Adressierung ermöglicht das [vRack](/links/network/vrack)
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
 - Sie verfügen über einen [vRack-kompatiblen Server](/links/bare-metal/bare-metal).
 - Sie haben den [vRack](/links/network/vrack)-Dienst in Ihrem Account aktiviert.
-- Sie haben Zugang zum [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [vRack](/links/control-panel/network-vrack)
+- **Navigationspfad:** `Network`{.action} > `Privates vRack Netzwerk`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Diese Funktion kann auf Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) nicht verfügbar oder eingeschränkt sein.
@@ -73,8 +83,6 @@ Neben der privaten IP-Adressierung ermöglicht das [vRack](/links/network/vrack)
 > Dieses Setup ermöglicht es Ihnen, IPs desselben Blocks auf mehreren Servern zu konfigurieren, vorausgesetzt, dass sich alle Server im selben vRack wie der IP-Block befinden. Der IP-Block muss mindestens 2 nutzbare IPs oder mehr haben, damit dies möglich ist.
 >
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zum Bereich `Network`{.action}. Öffnen Sie anschließend das Menü `vRack`{.action}.
-
 Wählen Sie Ihr vRack aus der Liste aus, um die Liste der berechtigten Dienste anzuzeigen. Klicken Sie auf den IP-Block, den Sie zum vRack hinzufügen möchten, und klicken Sie auf die Schaltfläche `Hinzufügen`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -93,7 +101,6 @@ Die Standard-Öffentlichbandbreite kann geändert werden, wenn Sie einen neuen A
 
 So bestellen Sie einen neuen Additional IP-Block:
 
-- Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an.
 - Öffnen Sie den Bereich `Network`{.action} in der linken Seitenleiste.
 - Wählen Sie `Öffentliche IP-Adressen`{.action}.
 - Klicken Sie auf die Schaltfläche `IPs bestellen`{.action} nahe der Oberseite der Seite.
@@ -112,8 +119,6 @@ Für Additional IP-Blöcke, die bereits an ein vRack angehängt sind, kann die B
 
 So greifen Sie auf die Verwaltungsoberfläche zu:
 
-- Öffnen Sie `Network`{.action} in der linken Seitenleiste Ihres Kundencenters.
-- Wählen Sie `Das private Netzwerk vRack`{.action}.
 - Klicken Sie in der Spalte "Public IP & bandwidth" auf die Schaltfläche `Verwalten`{.action} für das entsprechende vRack.
 
 Die Verwaltungsseite ist in zwei Tabs unterteilt:

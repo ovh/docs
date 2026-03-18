@@ -26,7 +26,6 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](/links/bare-metal/vps) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

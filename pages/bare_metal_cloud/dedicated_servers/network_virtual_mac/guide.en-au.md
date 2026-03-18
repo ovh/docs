@@ -14,7 +14,17 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 - A [dedicated server](/links/bare-metal/bare-metal) that supports virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - An [Additional IP address](/links/network/additional-ip) or an Additional IP block (RIPE).
-- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > - This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about). Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
@@ -37,8 +47,6 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 >
 
 #### Via the OVHcloud Control Panel
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click the `Additional IP`{.action} tab.
 

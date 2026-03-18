@@ -49,7 +49,17 @@ Oltre all'indirizzamento IP privato, il [vRack](/links/network/vrack) consente a
 - L'intervallo di indirizzi IP privati scelto
 - Un [server compatibile con vRack](/links/bare-metal/bare-metal)
 - Un servizio [vRack](/links/network/vrack) attivato nel proprio account
-- Accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [vRack](/links/control-panel/network-vrack)
+- **Percorso di navigazione:** `Network`{.action} > `Rete privata vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Questa funzionalità potrebbe non essere disponibile o potrebbe essere limitata sui [server dedicati della linea di prodotti **Eco**](/links/bare-metal/eco-about).
@@ -73,8 +83,6 @@ Oltre all'indirizzamento IP privato, il [vRack](/links/network/vrack) consente a
 > Questa configurazione consente di configurare gli IP dello stesso blocco su più server, a condizione che tutti questi server si trovino nello stesso vRack del blocco IP. Il blocco IP deve avere almeno 2 IP utilizzabili o più affinché ciò sia possibile.
 >
 
-Nello [Spazio Cliente OVHcloud](/links/manager), accedere alla sezione `Network`{.action}. Aprire quindi il menu `vRack`{.action}.
-
 Selezionare il proprio vRack dall'elenco per visualizzare l'elenco dei servizi idonei. Cliccare sul blocco IP da aggiungere al vRack e poi sul pulsante `Aggiungi`{.action}.
 
 ![vrack](images/addIPblock.png){.thumbnail}
@@ -93,7 +101,6 @@ Per rispondere alle crescenti esigenze delle infrastrutture e ai requisiti dei s
 
 Per ordinare un nuovo blocco Additional IP:
 
-- Accedere allo [Spazio Cliente OVHcloud](/links/manager).
 - Nella barra laterale sinistra, accedere alla sezione `Network`{.action}.
 - Selezionare `Indirizzi IP pubblici`{.action}.
 - Cliccare sul pulsante `Ordina IP`{.action} in cima alla pagina.
@@ -112,8 +119,6 @@ Per i blocchi Additional IP già collegati a un vRack, la larghezza di banda vie
 
 Per accedere all'interfaccia di gestione:
 
-- Nella barra laterale sinistra del Pannello di controllo, aprire `Network`{.action}.
-- Selezionare `Rete privata vRack`{.action}.
 - Nella colonna "Indirizzo IP pubblico e larghezza di banda", cliccare sul pulsante `Gestisci`{.action} corrispondente al vRack desiderato.
 
 L'interfaccia di gestione si divide in due schede:
