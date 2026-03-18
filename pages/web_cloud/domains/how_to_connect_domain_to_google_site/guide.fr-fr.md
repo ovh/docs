@@ -1,12 +1,12 @@
 ---
-title: "Connecter un domaine OVHcloud à un Google Site"
+title: "Connecter un nom de domaine OVHcloud à un Google Site"
 excerpt: "Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour le connecter à un Google Site"
 updated: 2026-03-17
 ---
 
 ## Objectif
 
-Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Ce guide vous explique comment préparer et configurer votre zone DNS OVHcloud pour votre Google Site.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Ce guide explique comment préparer et configurer votre zone DNS OVHcloud pour votre Google Site.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un Google Site.**
 
@@ -72,9 +72,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « A » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plus de 4 enregistrements « A » existent pour le domaine seul, supprimez les enregistrements excédentaires pour n'en conserver que 4. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plus de 4 enregistrements « A » existent pour le nom de domaine seul, supprimez les enregistrements excédentaires pour n'en conserver que 4. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
->> **3 - Modification :** modifiez chaque enregistrement « A » conservé pour le domaine seul en cliquant sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Remplacez la cible par l'une des 4 adresses IPv4 de Google Site (une adresse différente par enregistrement) :
+>> **3 - Modification :** modifiez chaque enregistrement « A » conservé pour le nom de domaine seul en cliquant sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Remplacez la cible par l'une des 4 adresses IPv4 de Google Site (une adresse différente par enregistrement) :
 >>
 >> - `216.239.32.21`
 >> - `216.239.34.21`
@@ -99,7 +99,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « AAAA » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> Si aucun enregistrement « AAAA » n'existe, passez à l'étape 4.
 >>
@@ -113,7 +113,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « TXT » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> **3 - Ajout :** créez un enregistrement TXT de vérification. Cliquez sur `Ajouter une entrée`{.action} en haut à droite, sélectionnez le champ de pointage `TXT`{.action}. Complétez les champs **Sous-domaine** et **Cible** avec les informations présentes sur la page « [Valeurs des enregistrements TXT](https://support.google.com/a/answer/2716802?hl=fr&ref_topic=2716886&sjid=3052810298579211755-EU) » de la documentation officielle. Généralement, le champ **Sous-domaine** est vide et le champ **Cible** est de type `google-site-verification=XXXXXXXXXXXX`. Cliquez sur `Suivant`{.action} et validez.
 >>

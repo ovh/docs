@@ -1,12 +1,12 @@
 ---
-title: "Connecter un domaine OVHcloud à Wix"
+title: "Connecter un nom de domaine OVHcloud à Wix"
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Wix
 updated: 2026-03-17
 ---
 
 ## Objectif
 
-Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Ce guide vous explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Wix.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Wix. Ce guide explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Wix.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Wix**
 
@@ -79,9 +79,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « A » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plusieurs enregistrements « A » existent pour le domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plusieurs enregistrements « A » existent pour le nom de domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
->> **3 - Modification :** si un enregistrement « A » existe pour le domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv4 relevée depuis votre interface Wix. Cliquez sur `Suivant`{.action} et validez.
+>> **3 - Modification :** si un enregistrement « A » existe pour le nom de domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv4 relevée depuis votre interface Wix. Cliquez sur `Suivant`{.action} et validez.
 >>
 >> Si aucun enregistrement « A » n'existe, cliquez sur `Ajouter une entrée`{.action} en haut à droite, sélectionnez le champ de pointage `A`{.action}, laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 relevée depuis votre interface Wix dans le champ **Cible**. Cliquez sur `Suivant`{.action} et validez.
 >>
@@ -97,7 +97,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « AAAA » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> Si aucun enregistrement « AAAA » n'existe, passez à l'étape 4.
 >>
@@ -111,7 +111,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « TXT » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> Si aucun enregistrement « TXT » n'existe, passez à l'étape 5.
 >>

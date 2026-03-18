@@ -1,12 +1,12 @@
 ---
-title: "Connecter un domaine OVHcloud à Shopify"
+title: "Connecter un nom de domaine OVHcloud à Shopify"
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Shopify
 updated: 2026-03-17
 ---
 
 ## Objectif
 
-Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Shopify. Ce guide vous explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Shopify.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Shopify. Ce guide explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Shopify.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Shopify**
 
@@ -66,9 +66,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « A » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plusieurs enregistrements « A » existent pour le domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plusieurs enregistrements « A » existent pour le nom de domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
->> **3 - Modification :** si un enregistrement « A » existe pour le domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv4 de Shopify : `23.227.38.65`. Cliquez sur `Suivant`{.action} et validez.
+>> **3 - Modification :** si un enregistrement « A » existe pour le nom de domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv4 de Shopify : `23.227.38.65`. Cliquez sur `Suivant`{.action} et validez.
 >>
 >> Si aucun enregistrement « A » n'existe, cliquez sur `Ajouter une entrée`{.action} en haut à droite, sélectionnez le champ de pointage `A`{.action}, laissez le champ **Sous-domaine** vide et saisissez `23.227.38.65` dans le champ **Cible**. Cliquez sur `Suivant`{.action} et validez.
 >>
@@ -84,9 +84,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « AAAA » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « AAAA » existants pour le sous-domaine « www ». Si plusieurs enregistrements « AAAA » existent pour le domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « AAAA » existants pour le sous-domaine « www ». Si plusieurs enregistrements « AAAA » existent pour le nom de domaine seul, supprimez-les tous sauf un, que vous modifierez à la sous-étape suivante. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
->> **3 - Modification :** si un enregistrement « AAAA » existe pour le domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv6 de Shopify : `2620:0127:f00f:5::`. Cliquez sur `Suivant`{.action} et validez.
+>> **3 - Modification :** si un enregistrement « AAAA » existe pour le nom de domaine seul, cliquez sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Laissez le champ **Sous-domaine** vide et remplacez la cible par l'adresse IPv6 de Shopify : `2620:0127:f00f:5::`. Cliquez sur `Suivant`{.action} et validez.
 >>
 >> Si aucun enregistrement « AAAA » n'existe, cliquez sur `Ajouter une entrée`{.action} en haut à droite, sélectionnez le champ de pointage `AAAA`{.action}, laissez le champ **Sous-domaine** vide et saisissez `2620:0127:f00f:5::` dans le champ **Cible**. Cliquez sur `Suivant`{.action} et validez.
 >>
@@ -102,7 +102,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « TXT » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> Si aucun enregistrement « TXT » n'existe, passez à l'étape 5.
 >>

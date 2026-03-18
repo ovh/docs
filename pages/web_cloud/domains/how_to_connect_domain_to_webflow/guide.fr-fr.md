@@ -1,12 +1,12 @@
 ---
-title: "Connecter un domaine OVHcloud à Webflow"
+title: "Connecter un nom de domaine OVHcloud à Webflow"
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Webflow
 updated: 2026-03-17
 ---
 
 ## Objectif
 
-Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Webflow. Ce guide vous explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Webflow.
+Vous êtes titulaire d'un nom de domaine chez OVHcloud et vous souhaitez le connecter à un hébergement Webflow. Ce guide explique comment préparer et configurer votre zone DNS OVHcloud pour votre hébergement Webflow.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Webflow**
 
@@ -78,9 +78,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « A » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plus de 2 enregistrements « A » existent pour le domaine seul, supprimez les enregistrements excédentaires pour n'en conserver que 2. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « A » existants pour le sous-domaine « www ». Si plus de 2 enregistrements « A » existent pour le nom de domaine seul, supprimez les enregistrements excédentaires pour n'en conserver que 2. Pour chaque enregistrement à supprimer, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
->> **3 - Modification :** modifiez chaque enregistrement « A » conservé pour le domaine seul en cliquant sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Remplacez la cible par l'une des 2 adresses IPv4 de Webflow (une adresse différente par enregistrement) :
+>> **3 - Modification :** modifiez chaque enregistrement « A » conservé pour le nom de domaine seul en cliquant sur le bouton `...`{.action} puis sur `Modifier l'entrée`{.action}. Remplacez la cible par l'une des 2 adresses IPv4 de Webflow (une adresse différente par enregistrement) :
 >>
 >> - `75.2.70.75`
 >> - `99.83.190.102`
@@ -101,7 +101,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « AAAA » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « AAAA » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> Si aucun enregistrement « AAAA » n'existe, passez à l'étape 4.
 >>
@@ -115,7 +115,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Repérez les enregistrements « TXT » existants pour votre nom de domaine seul (exemple : `mydomain.ovh.`) et pour le sous-domaine « www » (exemple : `www.mydomain.ovh.`).
 >>
->> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS que l'on configure. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
+>> **2 - Suppression :** supprimez tous les enregistrements « TXT » identifiés (nom de domaine seul et sous-domaine « www ») pour éviter un conflit avec les nouveaux enregistrements DNS. Pour chaque enregistrement, cliquez sur le bouton `...`{.action} à droite de la ligne correspondante, puis sur `Supprimer l'entrée`{.action}.
 >>
 >> **3 - Ajout :** créez un enregistrement TXT de vérification. Cliquez sur `Ajouter une entrée`{.action} en haut à droite, sélectionnez le champ de pointage `TXT`{.action}, saisissez `_webflow` dans le champ **Sous-domaine** et dans le champ **Cible** la valeur de type `one-time-verification=XXXXXXXX` présente dans la section `Site settings > Publishing tab > Production`{.action} de votre compte Webflow. Cliquez sur `Suivant`{.action} et validez.
 >>
