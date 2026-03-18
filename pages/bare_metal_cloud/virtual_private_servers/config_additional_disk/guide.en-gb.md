@@ -35,11 +35,9 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 ### Subscribing to the additional disk option
 
 <!-- CP-STEPS-START:subscribe-additional-disk -->
-After selecting your VPS, click on the `Additional disk`{.action} tab in the horizontal menu. Click on `Order an additional disk`{.action} and choose a disk size from the selection that appears.
+Click the **Additional disk** tab. Click the `Order additional disk`{.action} button (shown when no disk is attached). You will be redirected to the order tunnel to choose a disk size and complete the order process. You will receive a confirmation email once the disk has been installed.
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
-
-Take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email as soon as the disk is installed.
 <!-- CP-STEPS-END:subscribe-additional-disk -->
 
 ### Mounting the new storage space
@@ -308,9 +306,10 @@ In the last window, click `Finish`{.action} to format the disk. It will be avail
 ### How to cancel the additional disk option
 
 <!-- CP-STEPS-START:cancel-additional-disk -->
-In the `Home`{.action} tab, in the **Your configuration** section, click `...`{.action} next to the `Additional disks` option, then click `Close`{.action}.
+Click the **Additional disk** tab. On the disk row, click the `Delete`{.action} action button. In the confirmation dialog, confirm the deletion.
 
-![canceldiskvps](images/disk_vps02.png){.thumbnail}
+> [!warning]
+> ⚠️ **To document**: The `Delete` action button label and the confirmation dialog text could not be verified on screen (no VPS with an attached additional disk was available in the test environment). The navigation pattern (Additional disk tab → Delete action → confirmation dialog) is consistent with the NM source file mapping.
 <!-- CP-STEPS-END:cancel-additional-disk -->
 
 ## Go further

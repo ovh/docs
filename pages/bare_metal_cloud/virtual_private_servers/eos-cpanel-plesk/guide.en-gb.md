@@ -54,9 +54,11 @@ For more details on support purposes, please refer to the official documentation
 #### 1. Check your current system
 
 <!-- CP-STEPS-START:check-current-system -->
+
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 
-In the `Home`{.action} tab, find the details of your operating system in the `OS/Distribution` section in the `Your VPS` box.
+In the [OVHcloud Control Panel](/links/manager), click **Bare Metal Cloud** in the sidebar, then click **VPS**. Select your VPS from the list. On the **Dashboard** tab (the default landing view), locate the **System** card and read the **Operating System** field to identify the currently installed distribution.
+
 <!-- CP-STEPS-END:check-current-system -->
 
 #### 2. Identify a compatible OS

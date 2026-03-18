@@ -39,16 +39,25 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 ## Instructions
 
 <!-- CP-STEPS-START:reinstall-vps-from-cp -->
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](/links/bare-metal/vps-os).
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from the [OVHcloud Control Panel](/links/manager) via a [cPanel-compatible OS](/links/bare-metal/vps-os).
 
 > [!warning]
 >
 > If you reinstall a VPS, all data stored on the VPS will be lost.
 >
 
-To install your cPanel server, order a VPS with the cPanel distribution.
+To reinstall your VPS with a cPanel-compatible OS via the New Manager:
 
-![horizon](images/cpanel-order.png){.thumbnail}
+1. In the sidebar, click **Bare Metal Cloud**, then click **VPS**.
+2. Select your VPS from the list.
+3. On the **Dashboard** tab, locate the **Quick Actions** card.
+4. Click `Reinstall`{.action}.
+
+![VPS Dashboard — Quick Actions card](images/cpanel-order.png){.thumbnail}
+
+5. In the **Reinstall VPS** modal, select a cPanel-compatible OS from the **Operating System** dropdown.
+6. Optionally, select an SSH key.
+7. Type `REINSTALL` in the confirmation field, then click `Reinstall VPS`{.action}.
 <!-- CP-STEPS-END:reinstall-vps-from-cp -->
 
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:

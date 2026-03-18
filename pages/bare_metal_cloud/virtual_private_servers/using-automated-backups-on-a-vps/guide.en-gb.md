@@ -79,16 +79,18 @@ The Premium Automated Backup option creates a backup of your VPS every 24 hours 
 You will have access to all daily backups of the last 7 days. Once 7 backups are created, each new backup will replace the oldest one.
 
 <!-- CP-STEPS-START:block-subscribe-premium-backup -->
-Click the `Automated backup`{.action} tab in the horizontal menu.
 
-Click the link `Order a premium backup`{.action} (for services ordered from 7 AUG, 2025) or the button `Enable Automated backup`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the **Bare Metal Cloud** section and click on **Virtual private servers** in the left-hand sidebar. Select your VPS from the list.
 
-<div class="grid-gallery">
-  <img src="images/backup_vps2025.png" alt="autobackup vps2025">
-  <img src="images/backup_vps_leg.png" alt="autobackup vps">
-</div>
+Click the `Automated backup`{.action} tab.
 
-In the next step, note the pricing information, then click `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+Click the `Enable`{.action} button in the **Backup Status** card.
+
+> [!warning]
+>
+> **To document**: The **Automated backup** tab is implemented in the New Manager but is not yet visible in the tab bar. Navigation to this tab and the exact button labels could not be confirmed at the time of writing. Screenshots will be added once the feature is fully surfaced in the interface.
+>
+
 <!-- CP-STEPS-END:block-subscribe-premium-backup -->
 
 <a name="time"></a>
@@ -119,12 +121,20 @@ In the window that appears, edit the time of day (24-hour UTC time standard). Cl
 ### How to restore a backup from the OVHcloud Control Panel
 
 <!-- CP-STEPS-START:block-restore-backup -->
-After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
-Click the button `...`{.action} next to the backup you would like to restore and select `Restoration`{.action}.
 
-![autobackupvps](images/backup_vps_step1.png){.thumbnail}
+Log in to the [OVHcloud Control Panel](/links/manager), go to the **Bare Metal Cloud** section and click on **Virtual private servers** in the left-hand sidebar. Select your VPS from the list.
 
-If you recently changed your root password, make sure to tick the option "Modify the root password on restoration" in the popup window to preserve your current root password and click on `Confirm`{.action}. You will receive an email as soon as the task is complete. The restoration might take a while, depending on the disk space used.
+Click the `Automated backup`{.action} tab.
+
+In the **Restore Points** table, click the `Restore`{.action} button on the desired backup entry.
+
+If you recently changed your root password, make sure to tick the option "Modify the root password on restoration" in the popup window to preserve your current root password. You will receive an email as soon as the task is complete. The restoration might take a while, depending on the disk space used.
+
+> [!warning]
+>
+> **To document**: The **Automated backup** tab is implemented in the New Manager but is not yet visible in the tab bar. Navigation to this tab and the restore flow could not be confirmed at the time of writing. Screenshots will be added once the feature is fully surfaced in the interface.
+>
+
 <!-- CP-STEPS-END:block-restore-backup -->
 
 > [!alert]

@@ -31,23 +31,21 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 ## Instructions
 
 <!-- CP-STEPS-START:configure-reverse-dns -->
-The drop-down menu underneath **My public IP addresses and associated services** allows you to filter your services according to category. You can also search for a specific IP in the search bar left of the drop-down menu.
+In the **Network** universe, click **IP** in the sidebar. Select the IP block associated with your VPS from the list, then click the **IP Actions** tab in the right panel.
+
+In the **Quick Actions** section, the `Reverse DNS`{.action} card is directly visible.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip_new.png){.thumbnail}
 
-Click the `⁝`{.action} button in the row of the IP address concerned and select `Configure the reverse DNS`{.action}.
+Click the `Reverse DNS`{.action} card (or its **Configure** button) to open the **Configure Reverse DNS** modal. Enter your reverse path (FQDN) in the **Reverse DNS hostname** field and click `Save`{.action}.
 
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse_new.png){.thumbnail}
 
-In the new window, enter your reverse path and click on `Confirm`{.action}.
-
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse_new.png){.thumbnail}
-
-You can also edit the reverse path directly via the `pencil`{.action} icon in the **Reverse DNS** column of the table.
+If a reverse DNS record already exists, the hostname field will be pre-filled with the current value. A **Delete** button is also available in the modal to remove an existing entry.
 
 > [!warning]
 > When you enter your domain name in the reverse, it immediately double-checks whether the `A` / `AAAA` record refers back to the same IP. This is used in anti-spam procedures, so your DNS record must be valid and propagated. There are certain rules to follow while entering the reverse:
-> 
+>
 >  - It cannot start with a `-`.
 >  - It cannot be longer than 63 characters.
 >  - It cannot contain uppercase characters.

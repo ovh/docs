@@ -37,19 +37,17 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 ### Step 1: Retrieving the validation code <a name="retrievecode"></a>
 
 <!-- CP-STEPS-START:step1-secondary-dns-tab -->
-Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
+Click the **Secondary DNS** tab and click `Add domain`{.action}.
 
 ![Secondary DNS](images/sec-01.png){.thumbnail}
 
-Enter the domain name you want to add, then click `Confirm`{.action}.
-
-![Secondary DNS](images/sec-02.png){.thumbnail}
+Enter the domain name you want to add, then click `Add`{.action}.
 
 A message will be displayed in your Control Panel regarding the verification process.
 
-![Secondary DNS](images/sec-03.png){.thumbnail}
-
 It is necessary to confirm your authorisation to manage the domain name before it can be added to OVHcloud Secondary DNS. This is achieved via an automated DNS lookup on the subdomain *ownercheck.yourdomainname*. An individual string of characters is generated for this purpose and displayed inside the red notification box. Copy this validation code for use in the next step.
+
+> ⚠️ **To document**: Confirm the exact label of the modal confirm button (observed as `Add`{.action} in the NM source, but the modal could not be opened during screenshotting due to an API 403 error on /vps/{serviceName}/status). Verify the button label when the modal is accessible.
 <!-- CP-STEPS-END:step1-secondary-dns-tab -->
 
 ### Step 2: Verifying authorisation for the domain name <a name="verifyingdomain"></a>
@@ -69,13 +67,13 @@ The required action is different, depending on where the DNS of your domain name
 As soon as the TXT record is present in the domain name's DNS zone, repeat the [steps described in the first part of this guide](#retrievecode) to add the domain name to the OVHcloud Secondary DNS server.
 
 <!-- CP-STEPS-START:step3-confirm-and-manage-domains -->
-Clicking on `Confirm`{.action} will trigger the automatic owner verification by querying the TXT record. A message in your Control Panel will confirm the successful DNS check. You can now delete the TXT record.
+Clicking on `Add`{.action} will trigger the automatic owner verification by querying the TXT record. A message in your Control Panel will confirm the successful DNS check. You can now delete the TXT record.
 
 Added domain names will be listed in this tab with the corresponding **name of the secondary DNS server**. (Refresh the page in your browser after adding a domain name.)
 
-![Secondary DNS](images/sec-05.png){.thumbnail}
+Domain names can be removed by clicking the delete (trash) icon button in the corresponding row.
 
-Domain names can be removed by clicking on the `...`{.action} button in the table.
+> ⚠️ **To document**: Confirm the exact label of the modal confirm button (mapped as `Add`{.action} from NM source — modal.confirm = "Add"). The modal could not be opened during screenshotting; verify this label when accessible.
 <!-- CP-STEPS-END:step3-confirm-and-manage-domains -->
 
 > [!primary]

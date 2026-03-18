@@ -78,7 +78,9 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
+>> Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the **Bare Metal Cloud** section. Click **Virtual private servers** in the sections tab bar, then select your VPS from the list on the left.
+>>
+>> The **Network** card is immediately visible on the Dashboard and displays your IPv4 address, IPv6 address, gateway, and datacenter. Copy the IPv6 address and gateway, then continue with [applying the IPv6 configuration](#applyipv6).
 >>
 >> ![configureipv6](images/vps_ipv6_information.png){.thumbnail}
 >>
