@@ -40,10 +40,10 @@ This guide lists all the supported advanced parameters that allow you to configu
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acesso à Área de Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

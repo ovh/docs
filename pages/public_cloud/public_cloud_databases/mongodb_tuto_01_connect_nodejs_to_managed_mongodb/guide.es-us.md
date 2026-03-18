@@ -25,10 +25,10 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Acceso al área de cliente de OVHcloud
+### OVHcloud Control Panel Access
 
-- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

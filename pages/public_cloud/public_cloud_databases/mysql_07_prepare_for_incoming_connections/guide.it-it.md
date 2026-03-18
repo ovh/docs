@@ -16,16 +16,14 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 <!-- CP-NAV-START:publiccloud-projects -->
-
 ---
 
-### Accesso allo Spazio Cliente OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
-
 <!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions

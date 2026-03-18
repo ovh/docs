@@ -18,10 +18,10 @@ Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not sto
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Zugriff auf das OVHcloud Kundencenter
+### OVHcloud Control Panel Access
 
-- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
-- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

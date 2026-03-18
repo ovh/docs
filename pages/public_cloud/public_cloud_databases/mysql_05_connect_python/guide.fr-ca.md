@@ -20,16 +20,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 <!-- CP-NAV-START:publiccloud-projects -->
-
 ---
 
-### Accès à l'espace client OVHcloud
+### OVHcloud Control Panel Access
 
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
-
 <!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concept

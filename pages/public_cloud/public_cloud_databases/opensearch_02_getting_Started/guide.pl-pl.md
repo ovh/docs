@@ -17,10 +17,10 @@ This guide explains how to successfully configure a Public Cloud Databases for a
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
 
-### Dostęp do Panelu klienta OVHcloud
+### OVHcloud Control Panel Access
 
-- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
 <!-- CP-NAV-END:publiccloud-projects -->

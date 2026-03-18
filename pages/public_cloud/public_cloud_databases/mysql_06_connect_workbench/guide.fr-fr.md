@@ -18,16 +18,14 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - A MySQL Workbench stable version installed and public network connectivity (Internet). *This guide was made with MySQL Workbench version 8.0.28*.
 
 <!-- CP-NAV-START:publiccloud-projects -->
-
 ---
 
-### Accès à l'espace client OVHcloud
+### OVHcloud Control Panel Access
 
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** {.action} > Select your project
 
 ---
-
 <!-- CP-NAV-END:publiccloud-projects -->
 
 ## Concept
