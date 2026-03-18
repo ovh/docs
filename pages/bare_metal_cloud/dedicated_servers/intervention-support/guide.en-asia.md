@@ -32,7 +32,7 @@ Continue reading this guide by clicking on the link for your installation:
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox/Debian (excluding Debian 12+)](#proxmox)
+    - - [Proxmox/Debian (excluding Debian 12+)](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -44,7 +44,7 @@ Continue reading this guide by clicking on the link for your installation:
 
 <a name="ubuntu"></a>
 
-### Ubuntu/Debian 12+/Debian 12+
+### Ubuntu/Debian 12+
 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
