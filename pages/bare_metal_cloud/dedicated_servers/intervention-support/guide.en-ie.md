@@ -32,7 +32,7 @@ Continue reading this guide by clicking on the link for your installation:
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - - [Proxmox/Debian (excluding Debian 12+)](#proxmox)
+    - [Proxmox/Debian (excluding Debian 12+)](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
