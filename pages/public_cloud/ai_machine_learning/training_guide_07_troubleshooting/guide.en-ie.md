@@ -13,18 +13,6 @@ This tutorial gives you some hints on how to debug your jobs if things go wrong.
 -   An **AI Training Job** you would like to start
 -   The [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ## Instructions
 
 ### What is an AI Training job and how to run one?

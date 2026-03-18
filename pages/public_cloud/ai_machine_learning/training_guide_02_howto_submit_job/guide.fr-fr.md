@@ -12,17 +12,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 -   a **Public cloud** project
 -   optionally container objects to attach data to the **job** at step 6, see our [create data container](/pages/storage_and_backup/object_storage/pcs_create_container) guide.
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
+-   access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

@@ -34,18 +34,6 @@ Make sure you have a [Python](https://www.python.org/) environment configured, a
 pip install openai
 ```
 
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Function Calling overview
 
 The workflow to use function calling is described below:

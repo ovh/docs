@@ -12,18 +12,6 @@ This guide covers the usage of the **ovhai** CLI.
 
 -   a working `ovhai` CLI [how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ## Instructions
 
 ### Run a job

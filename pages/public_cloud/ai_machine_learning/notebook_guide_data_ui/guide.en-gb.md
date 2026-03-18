@@ -11,19 +11,8 @@ This guide shows how to access Object Storage data from your [**notebooks**](/pa
 ## Requirements
 
 - a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- access to the [OVHcloud Control Panel](/links/manager)
 - a Public Cloud user with `Administrator` or `AI Training operator` role, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 
 ## Upload data to your Object Storage
 

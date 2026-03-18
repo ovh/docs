@@ -46,18 +46,6 @@ Before getting started, make sure you have:
 4. Python 3.8 or higher (for Python usage) or Node.js (for JavaScript/TypeScript usage).
 5. Optionally, an OVHcloud AI Endpoints API key for Bring Your Own Key (BYOK) billing.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ![Generate an API key](images/generate_an_api_key.png){.thumbnail}
 
 ## Instructions

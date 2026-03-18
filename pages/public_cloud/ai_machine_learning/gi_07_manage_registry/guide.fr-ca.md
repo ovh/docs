@@ -11,17 +11,7 @@ This guide is intended to help you to **use and manage your public and private r
 ## Requirements
 
 - A **Public Cloud** project
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

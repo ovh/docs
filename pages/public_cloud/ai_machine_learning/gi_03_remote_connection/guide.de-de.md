@@ -10,21 +10,10 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 
 ## Requirements
 
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebook or AI Training Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [AI user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 
 ## Instructions
 

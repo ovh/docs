@@ -28,18 +28,6 @@ To follow this guide, ensure you meet the following requirements:
 - A user account created on this Public Cloud project, with the **AI** and **Object Storage** roles assigned. For more information on how to create such a user, please consult the [Manage AI users and roles](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) documentation.
 - The `ovhai` CLI installed. Please refer to our guide on [how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) for assistance.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ## Instructions
 
 ### Create an S3 compatible bucket

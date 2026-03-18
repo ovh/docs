@@ -14,18 +14,6 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 - an [Object Storage Container](/pages/storage_and_backup/object_storage/pcs_create_container) in your OVHcloud account
 - a Public Cloud user with the **Administrator** or **AI Training Operator** role
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ## Instructions
 
 ### What is an AI Notebook and how to launch one?

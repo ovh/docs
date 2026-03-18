@@ -12,18 +12,6 @@ This guide shows how to access Object Storage data from your [**notebooks**](/pa
 
 - a working `ovhai` CLI ([how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
-
 ## Upload data to your Object Storage
 
 First, we need to push some data to the Object Storage before accessing it from the notebook.
