@@ -135,7 +135,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-ongoing-operations) und wählen Sie den betreffenden Domainnamen in der angezeigten Liste aus.
+>> Rufen Sie die Seite [Laufende Vorgänge](/links/control-panel/web-ongoing-operations) auf und wählen Sie den betreffenden Domainnamen in der angezeigten Liste aus.
 >>
 >> ![Laufende Operationen](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>

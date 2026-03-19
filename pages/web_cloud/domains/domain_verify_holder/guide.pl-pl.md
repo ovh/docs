@@ -135,7 +135,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
+>> Przejdź do strony [Operacje w Toku](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
 >>
 >> ![Trwające operacje](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>

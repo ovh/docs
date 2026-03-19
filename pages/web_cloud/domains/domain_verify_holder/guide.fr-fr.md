@@ -135,7 +135,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-ongoing-operations), puis retrouvez le nom de domaine concerné dans la liste qui s'affiche.
+>> Accédez à la page [Opérations en cours](/links/control-panel/web-ongoing-operations), puis retrouvez le nom de domaine concerné.
 >>
 >> ![Opérations en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>

@@ -135,7 +135,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/web-ongoing-operations) e localize o nome de domínio na lista apresentada.
+>> Aceda à página [Operações em curso](/links/control-panel/web-ongoing-operations) e localize o nome de domínio na lista apresentada.
 >>
 >> ![Operações em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>

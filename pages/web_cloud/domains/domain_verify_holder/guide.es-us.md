@@ -127,37 +127,37 @@ Para ciertas extensiones (por ejemplo: .fr, .it, .es), el administrador del domi
 
 > [!warning]
 >
-> Si las correcciones realizadas siguiendo la primera parte de este guía han requerido la inicialización de un cambio de titular para el nombre de dominio, finalice primero el cambio de titular **antes** de continuar con las acciones descritas a continuación.
+> Si las correcciones realizadas siguiendo la primera parte de esta guía han requerido la inicialización de un cambio de titular para el nombre de dominio, finalice primero el cambio de titular **antes** de continuar con las acciones descritas a continuación.
 >
 
 Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-ongoing-operations) y localice el nombre de dominio en la lista que aparece.
+>> Acceda a la página [Operaciones en curso](/links/control-panel/web-ongoing-operations) y localice el nombre de dominio en la lista que aparece.
 >>
 >> ![Operaciones en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Haga clic en el botón `⁝`{.action} situado a la derecha y seleccione `Modificar la operación`{.action}.
 >>
 >> ![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> En la ventana que se abre, seleccione la opción `Reanudar la operación`{.action} y haga clic en `Confirmar`{.action}.
 >>
 >> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
 >>
-> **Paso 4**
+> **Etapa 4**
 >>
 >> Se necesitan unos minutos para finalizar la operación. Actualice la página `Operaciones en mis Dominios` donde se encontraba la operación de corrección del contacto para su nombre de dominio.
 >>
 >> Si la operación se ha terminado con éxito, la línea relativa a la operación tratada ya no aparece.
 >>
->> En caso contrario, esto significa que aún se necesita una corrección en las coordenadas del titular del nombre de dominio. En este caso, reinicie este guía desde el principio para corregir la situación.
+>> En caso contrario, esto significa que aún se necesita una corrección en las coordenadas del titular del nombre de dominio. En este caso, reinicie esta guía desde el principio para corregir la situación.
 
 ## Más información
 

@@ -135,7 +135,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 > [!tabs]
 > **Passaggio 1**
 >>
->> Clicca su [questo link](/links/control-panel/web-ongoing-operations), poi individua il dominio nella lista visualizzata.
+>> Accedi alla pagina [Operazioni in corso](/links/control-panel/web-ongoing-operations), poi individua il dominio nella lista visualizzata.
 >>
 >> ![Operazioni in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
@@ -151,7 +151,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> ![Dati dell'operazione sul dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
 >>
-> **Passo 4**
+> **Passaggio 4**
 >>
 >> Sono necessari alcuni minuti per completare l'operazione. Aggiorna la pagina `Operazioni sui miei domini` dove si trovava l'operazione di correzione del contatto per il tuo nome di dominio.
 >>
