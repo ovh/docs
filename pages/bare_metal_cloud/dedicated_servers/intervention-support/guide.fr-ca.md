@@ -602,7 +602,7 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 
 ### ESXi
 
-Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` via les outils intégrés au mode rescue.
+Suite au remplacement de la carte mère, vous ne pouvez pas modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` à l'aide des outils intégrés au mode rescue.
 Il sera donc nécessaire d'intervenir manuellement.
 
 #### Version 7.0 ou supérieure
