@@ -33,7 +33,7 @@ Pour accéder à OMM, rendez-vous sur l'adresse <https://omm.ovhcloud.com/>.
 
 ### Créer un projet de migration <a name="create-project"></a>
 
-Avant de lancer une migration, il est nécessaire de créer un projet. Ce projet vous permettra de lancer une ou plusieurs migrations et des les suivre.
+Avant de lancer une migration, il est nécessaire de créer un projet. Ce projet vous permettra de lancer une ou plusieurs migrations et de les suivre.
 
 Cliquez sur `Nouvelle migration`{.action} pour débuter la création de votre projet.
 
@@ -69,7 +69,7 @@ Vous êtes maintenant sur la page d'accueil du projet qui vous permettra de lanc
 
 Sur la nouvelle page qui s’affiche, renseignez les informations de connexion du compte source et du compte de destination afin de planifier la migration ou de la lancer immédiatement. Pour rappel, le contenu du **compte source** sera migré vers le **compte de destination**.
 
-Avant de commencer votre migration, il est important de bien connaître les 3 types de comptes que l'on peut migrer et vers lesquels vous pouvez migrer:
+Avant de commencer votre migration, il est important de bien connaître les 3 types de comptes que l'on peut migrer et vers lesquels vous pouvez migrer :
 
 - **OVHcloud** : L'`Autodétection` est conseillée si vous devez migrer un compte hébergé sur l'une des offres e-mail OVHcloud. Si vous possédez un grand nombre de comptes e-mail OVHcloud, sélectionnez l'une des offres suivantes : `MX plan`, `Email Pro`, `Exchange` ou `Zimbra`. Il vous sera demandé de vous connecter au compte OVHcloud associé à l'offre concernée par la migration. Pour plus d'informations, consultez la rubrique « [Migrer via une connexion au compte client OVHcloud](#sso-migration) ».
 - **Autres** : Il s'agit de services e-mail souscrits hors OVHcloud. Une liste non exhaustive de services e-mail pris en charge par OMM est disponible. Si le type de service de votre compte e-mail n'y figure pas, utilisez les protocoles `IMAP` ou `POP`, compatibles avec la plupart des serveurs e-mail.
@@ -82,7 +82,7 @@ Complétez les informations selon le type de compte :
 - **Compte source**
     - **Type de compte** : Sélectionnez le type de compte source.
     - **E-mail** : Saisissez l'adresse e-mail du compte source.
-    - **Mot de passe** : Saisissez le mot de passe au compte source.
+    - **Mot de passe** : Saisissez le mot de passe du compte source.
     - **URL du serveur** / **Domaine du serveur** *(selon le type)* : Renseignez le nom d'hôte du serveur e-mail associé au compte e-mail que vous souhaitez migrer.
     - **Identifiant OVHcloud** *(selon le type)* : Ce champ est automatiquement rempli lorsque vous êtes connecté à un compte OVHcloud. Pour plus d'informations, consultez la rubrique « [Migrer via une connexion au compte client OVHcloud](#sso-migration) ».
     - **Organization** *(selon le type)* : Sélectionnez l'organisation associée au compte e-mail source.
@@ -108,7 +108,7 @@ Complétez les informations selon le type de compte :
 
 > [!warning]
 >
-> Si vous migrez un compte disposant de fonctionnalités que le compte destination ne possède pas, **il vous sera nécessaire de sauvegarder par vos moyens les éléments qui ne pourront pas être migrés par OMM**. Pour vous aider, Référez-vous à notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ».
+> Si vous migrez un compte disposant de fonctionnalités que le compte destination ne possède pas, **il vous sera nécessaire de sauvegarder par vos moyens les éléments qui ne pourront pas être migrés par OMM**. Pour vous aider, référez-vous à notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ».
 
 Une fois les paramètres des comptes source et destination complétés, cliquez sur :
 
@@ -145,7 +145,7 @@ Lorsque vous sélectionnez l'une de ces offres, suivez les étapes ci-dessous :
 >>
 > **Étape 3**
 >>
->> - Une nouvelle fenêtre s'affiche. Elle vous permet d'autoriser OMM à accéder aux fonctions de votre espace client, et de lister les offres et comptes e-mail présents. Par défaut, la validité (Validity) de ces droits est de 24 heures (1 day). Définissez la durée de validité qui vous convient, puis cliquez sur `Authorize`{.action}.
+>> - Une nouvelle fenêtre s'affiche. Elle vous permet d'autoriser OMM à accéder aux fonctions de votre espace client, et de lister les offres et comptes e-mail présents. Par défaut, la validité de ces droits est de 24 heures. Définissez la durée de validité qui vous convient, puis cliquez sur `Authorize`{.action}.
 >>
 >> ![omm](images/omm-migration-sso-03.png){.thumbnail .w-600}
 >>
