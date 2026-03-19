@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie kontaktem właściciela nazwy domeny"
 excerpt: "Dowiedz się, jak zweryfikować, poprawić lub uzupełnić dane kontaktowe właściciela nazwy domeny po otrzymaniu wiadomości e-mail z alertem od OVHcloud"
-updated: 2026-01-16
+updated: 2026-03-19
 ---
 
 ## Wprowadzenie
@@ -27,7 +27,6 @@ W takim przypadku OVHcloud nie będzie mógł zaoferować żadnego zwrotu pieni�
 - Otrzymałeś wiadomość e-mail od OVHcloud informującą, że wymagana jest akcja dotycząca danych kontaktowych właściciela Twojej nazwy domeny.
 - Sprawdź poniższe punkty, aby upewnić się, że nie jest to wiadomość oszukańcza:
     - Temat wiadomości zawiera Twój NIC handle (np.: `aa00000-ovh`) i Twoją nazwę domeny (np.: `domain.tld`).
-    - Adres URL w wiadomości zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 <!-- CP-NAV-START:web-domains -->
 ---
@@ -49,10 +48,6 @@ Po dokonaniu zamówienia, właściciel nazwy domeny otrzyma wiadomość e-mail o
 ![Weryfikacja adresu e-mail](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/email-address-verification-for-one-of-your-domain-names.png){.thumbnail}
 
 Kliknięcie w `Potwierdź swój adres e-mail`{.action} spowoduje otwarcie nowej strony z linkiem bezpośrednio weryfikującym adres e-mail właściciela.
-
-Jeśli ten sposób nie zadziała, właściciel może ręcznie zweryfikować swój adres e-mail, korzystając z jednorazowego kodu dostępowego podanego w wiadomości i klikając w `Formularz weryfikacji e-maila`{.action}.
-
-![Weryfikacja e-maila kontaktu właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/holder-contact-email-validation_cgi.png){.thumbnail}
 
 ![Weryfikacja e-maila CGI](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/validation-email-CGI.png){.thumbnail}
 
@@ -140,33 +135,29 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 > [!tabs]
 > **Krok 1**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Krok 2**
->>
->> Kliknij menu `Operacje w Toku`{.action}, a następnie znajdź nazwę domeny w liście, która się pojawi.
+>> Kliknij [ten link](/links/control-panel/web-ongoing-operations), a następnie znajdź odpowiednią nazwę domeny na wyświetlonej liście.
 >>
 >> ![Trwające operacje](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Krok 3**
+> **Krok 2**
 >>
 >> Kliknij przycisk `⁝`{.action} po prawej stronie, a następnie `Zmień operację`{.action}.
 >>
 >> ![Operacja nazwy domeny](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Krok 4**
+> **Krok 3**
 >>
 >> W wyświetlonym oknie zaznacz opcję `Wznów operację`{.action}, następnie kliknij `Zatwierdź`{.action}.
 >>
 >> ![Dane operacji na domenie](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
-
-Operacja zajmie kilka minut, aby zostać ukończona. Odśwież stronę `Operacje na nazwach domen`, gdzie znajdowała się operacja korekty kontaktu dla Twojej nazwy domeny.
-
-Jeśli operacja została ukończona pomyślnie, wiersz dla przetworzonej operacji nie pojawia się już.
-
-Jeśli nie jest to prawdą, wymagana jest korekta danych kontaktowych właściciela nazwy domeny. W takim przypadku, proszę postępować zgodnie z tym przewodnikiem od początku, aby rozwiązać problem.
+>>
+> **Krok 4**
+>>
+>> Operacja zajmie kilka minut, aby zostać ukończona. Odśwież stronę `Operacje na nazwach domen`, gdzie znajdowała się operacja korekty kontaktu dla Twojej nazwy domeny.
+>>
+>> Jeśli operacja została ukończona pomyślnie, wiersz dla przetworzonej operacji nie pojawia się już.
+>>
+>> Jeśli nie jest to prawdą, wymagana jest korekta danych kontaktowych właściciela nazwy domeny. W takim przypadku, proszę postępować zgodnie z tym przewodnikiem od początku, aby rozwiązać problem.
 
 ## Sprawdź również
 
@@ -178,4 +169,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).
