@@ -52,19 +52,17 @@ Once you have filled in the required information, click the `Create`{.action} bu
 >
 > **Regarding shared projects**
 >
-> Due to current limitations in the IAM (Identity and Access Management) system, the ability to create and manage API keys for AI Endpoints may vary depending on how your project is shared.
->
-> Specifically:
+> Due to current IAM (Identity and Access Management) limitations, the ability to create and manage API keys for AI Endpoints varies depending on how your project is shared.
 >
 > - **If your project is shared with an existing OVHcloud NIC (with Read & Write permissions):**
 >   - Added team members **can** create API keys for AI Endpoints.
 >   - However, **project administrators cannot see or manage keys created by these users**.
->   - As a result, **admins cannot revoke or audit tokens created by team members**. The only way to remove such tokens is to remove the NIC’s access to the project.
+>   - As a result, **admins cannot revoke or audit tokens created by team members**. The only way to revoke such tokens is to remove the NIC’s access to the project.
 >
-> - **If your project is accessed via IAM based sharing (`NIC/newuser`):**
->   - Added team members **cannot create** new API keys unless they are granted admin level IAM permissions. 
+> - **If your project is accessed via IAM-based sharing (`NIC/newuser`):**
+>   - Added team members **cannot create** new API keys unless they are granted admin-level IAM permissions.
 >
-> We are continuously improving our platform to provide a smoother and more consistent experience across all services. In the meantime, **please contact your project administrator** to create the key for you.
+> The platform is continuously being improved to provide a smoother and more consistent experience across all services. In the meantime, **please contact your project administrator** to create the key for you.
 >
 
 **3\. Store the created API access key**
