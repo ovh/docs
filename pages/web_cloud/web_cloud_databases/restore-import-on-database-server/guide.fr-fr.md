@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 <style>
@@ -132,7 +132,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Importer une base de données hors espace client
 
-Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l’import souhaité en dehors de l’espace client. Si tel est le cas, nous vous recommandons d’utiliser l’outil OVHcloud dans l’espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l’espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client) de cette documentation.
+Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l’import souhaité en dehors de l’espace client. Si tel est le cas, nous vous recommandons d’utiliser l’outil OVHcloud dans l’espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l’espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) de cette documentation.
 
 **Cliquez sur la méthode d'importation de votre choix pour afficher le contenu.**
 
@@ -148,8 +148,8 @@ Sélectionnez votre fichier de sauvegarde en cliquant sur `Parcourir`{.action} (
 
 > [!primary]
 >
-> Nous vous conseillons de fractionner votre base de données en plusieurs fichiers lorsqu’elle excède les 100 Mo et effectuer plusieurs importations depuis phpMyAdmin.
-> L’importation de fichier dépassant les 100 Mo peut se faire depuis l’espace client en suivant l’étape [« Sauvegarder, restaurer et importer une base de données depuis l’espace client »](./#sauvegarder-restaurer-et-importer-une-base-de-donnees-depuis-lespace-client)
+> Nous vous conseillons de fractionner votre base de données en plusieurs fichiers lorsqu’elle excède les 100 Mo et d’effectuer plusieurs importations depuis phpMyAdmin.
+> L’importation de fichier dépassant les 100 Mo peut se faire depuis l’espace client en suivant l’étape [« Restaurer et importer une base de données depuis l’espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client).
 
 Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l’importation.
 
@@ -173,7 +173,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 1. <?php
 2. echo "Votre base est en cours de restauration.......<br>";
 3. system("cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base");
-4. echo "C’est fini. Votre base est en place sur cet hébergement.";
+4. echo "C'est fini. Votre base est en place sur cet hébergement.";
 5. ?>
 ```
 
@@ -200,7 +200,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 1. <?php
 2. echo "Votre base est en cours de restauration.......<br>";
 3. system("PGPASSWORD=mot_de_passe psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base < nom_de_la_base.sql");
-4. echo "C’est fini. Votre base est en place sur cet hébergement.";
+4. echo "C'est fini. Votre base est en place sur cet hébergement.";
 5. ?>
 ```
 

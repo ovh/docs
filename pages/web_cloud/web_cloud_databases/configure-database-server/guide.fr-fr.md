@@ -1,7 +1,7 @@
 ---
 title: "Configurer votre serveur de bases de données"
 excerpt: "Découvrez comment configurer et optimiser votre serveur de base de données"
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 <style>
@@ -303,7 +303,7 @@ select version();
 
 /// details | Comment connaître la version exacte de MySQL ou MariaDB que j'utilise ?
 
-Entrez cette commande dans phpMyAdmin, rubrique **« SQL »**, puis cliquer sur `Exécuter`{.action} :
+Entrez cette commande dans phpMyAdmin, rubrique **« SQL »**, puis cliquez sur `Exécuter`{.action} :
 
 ```sql
 show variables like "version";

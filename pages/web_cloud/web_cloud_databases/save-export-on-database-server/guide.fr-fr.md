@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 <style>
@@ -139,7 +139,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 ```php
 1. <?php echo "Votre base est en cours de sauvegarde.......";
 2. system("mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql");
-3. echo "C’est fini. Vous pouvez récupérer la base par FTP";
+3. echo "C'est fini. Vous pouvez récupérer la base par FTP";
 4. ?>
 ```
 
@@ -163,7 +163,7 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 ```php
 1. <?php echo "Votre base est en cours de sauvegarde.......";
 2. system("PGPASSWORD=mot_de_passe pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base > nom_de_la_base.sql");
-3. echo "C’est fini. Vous pouvez récupérer la base par FTP";
+3. echo "C'est fini. Vous pouvez récupérer la base par FTP";
 4. ?>
 ```
 

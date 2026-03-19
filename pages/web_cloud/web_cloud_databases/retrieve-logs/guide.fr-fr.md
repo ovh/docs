@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Comment gérer les logs ?'
 excerpt: 'Découvrez comment gérer les logs de vos bases de données hébergées sur votre serveur Web Cloud Databases'
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 <style>
@@ -164,7 +164,7 @@ Du fait que les solutions [Web Cloud Databases](/links/web/databases) peuvent ê
 
 Pour abonner votre solution Web Cloud Databases à un flux de données sur Logs Data Platform, 2 cas de figure peuvent se présenter.
 
-**Cliquez sur les 2 cas pour afficher le contenu.**
+**Cliquez sur chaque cas pour afficher le contenu.**
 
 <a name="wcdb-ldp-case1"></a>
 

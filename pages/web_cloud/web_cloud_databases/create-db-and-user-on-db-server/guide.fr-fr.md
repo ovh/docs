@@ -1,7 +1,7 @@
 ---
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 ## Objectif
@@ -122,13 +122,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> 3 types de droits sont proposés :
 >>
 >> - `Administrateur` : autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**.
->> - `Lecture / Ecriture` : autorisation des requêtes de type **Select / Insert / Update / Delete**.
+>> - `Lecture / Écriture` : autorisation des requêtes de type **Select / Insert / Update / Delete**.
 >> - `Lecture` : autorisation des requêtes de type **Select**.
 >> - `Aucun` : aucun droit sur la base.
 >>
 >> > [!primary]
 >> >
->> > La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DDL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture/Ecriture` ne fera que du **DML** (Data Manipulation Language)
+>> > La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DDL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture / Écriture` ne fera que du **DML** (Data Manipulation Language).
 >>
 >> ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 

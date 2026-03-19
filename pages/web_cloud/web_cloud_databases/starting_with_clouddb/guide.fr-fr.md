@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-updated: 2026-03-18
+updated: 2026-03-19
 ---
 
 ## Objectif
@@ -115,7 +115,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **« Créer un utilisateur »** :
+>> Renseignez les champs en respectant les critères indiqués. Vous pouvez créer directement un utilisateur en cochant la case **« Créer un utilisateur »** :
 >>
 >> - **Nom de la base** (obligatoire) : il s'agit du nom de votre future base de données.
 >> - **Nom d'utilisateur** (seulement si la case `Créer un utilisateur` est cochée) : il s'agit de l'utilisateur qui pourra se connecter à votre base de données et y effectuer des requêtes.
@@ -188,13 +188,13 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `IPs autorisées`{.action}.
 >>
->> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
+>> ![IPs autorisées](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
 > **Étape 3**
 >>
 >> Sur la page qui apparaît, cliquez sur le bouton `Ajouter une adresse IP / masque`{.action} situé au-dessus du tableau.
 >>
->> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
+>> ![Interface des IPs autorisées](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
 >>
 >> > [!success]
 >> >
@@ -204,7 +204,7 @@ Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacu
 >>
 >> Dans la fenêtre qui s'ouvre, plusieurs champs sont à compléter :
 >>
->> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
+>> ![Ajouter une adresse IP ou un masque](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
 >> - `IP / masque *`{.action} : Saisissez ici l'adresse IP (par exemple : `203.0.113.44`) ou la plage d'adresses IP (par exemple : `203.0.113.0/24` représentant toutes les adresses IP de `203.0.113.0` à `203.0.113.255`) que vous souhaitez autoriser sur votre solution Web Cloud Databases.
 >> - `Description`{.action} (facultatif) : Vous pouvez, par exemple, y ajouter des informations sur le rôle de l'adresse IP ou de la plage d'adresses IP concernée.
@@ -236,7 +236,7 @@ Pour cela, vous devez disposer des 5 informations suivantes :
 |Nom de la base de données|Il s'agit du nom que vous avez défini lors de la création de la base de données.|
 |Nom d'utilisateur|Il s'agit du nom d'utilisateur que vous avez défini lors de la création de la base de données ou d'un éventuel utilisateur additionnel que vous auriez ajouté.|
 |Mot de passe de l'utilisateur|Il s'agit du mot de passe, lié à l'utilisateur, que vous avez défini lors des manipulations précédentes.|
-|Nom d'hôte du serveur|Il s'agit du serveur à renseigner afin que votre site web puisse se connecter à votre base de données.|
+|Nom d'hôte du serveur|Il s'agit du serveur à renseigner pour que votre site web puisse se connecter à votre base de données.|
 |Port du serveur|Il s'agit du port de connexion à votre instance Web Cloud Databases pour que votre site puisse se connecter à votre base de données. |
 
 Pour les retrouver, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2** étapes.
