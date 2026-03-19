@@ -1,13 +1,13 @@
 ---
-title: 'Restreindre sa ligne SIP OVHcloud par IP'
-excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP'
+title: "Restreindre sa ligne SIP OVHcloud par IP"
+excerpt: "Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
 La téléphonie sur IP utilise le web pour transmettre des communications. Elle capte des conversations voix, les transforme en données, pour finalement les transmettre à un interlocuteur. Du fait de son côté connecté, il est fortement conseillé de sécuriser votre téléphonie sur IP, surtout si celle-ci fait partie intégrante de votre activité d'entreprise.
- 
+
 **Découvrez comment sécuriser l’accès à vos lignes SIP grâce à une restriction par IP et apprenez à récupérer les logs d'erreurs qui vous permettent de vérifier les tentatives d'authentification.**
 
 ## Prérequis
@@ -30,7 +30,7 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 
 ## En pratique
 
-Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre son utilisation à une ou plusieurs adresses IP publiques. Ceci vous permet par exemple de limiter l'utilisation de vos lignes uniquement à des adresses IP utilisées dans votre entreprise. Vous interdirez ainsi que vos lignes soient utilisables à partir d'autres adresses IP que celles autorisées.
+Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre son utilisation à une ou plusieurs adresses IP publiques. Seules les adresses IP autorisées pourront alors utiliser vos lignes.
 
 ### Étape 1 : configurer la restriction par IP
 
@@ -92,7 +92,7 @@ Dans l'exemple ci-dessous, vous retrouverez un message indiquant une erreur d'au
 
 ![securiser-sip](images/secure-sip-part5.png){.thumbnail}
 
-Afin d'être plus réactif, nous vous conseillons d'activer les paramètres de notification par e-mail afin d'être averti lorsqu'une erreur d'authentification se produit. 
+Pour être averti lors d'une erreur d'authentification, activez les notifications par e-mail. 
 
 Pour cela, toujours sur la page `Consultation et gestion des notifications`, dans la section `Paramètres de notifications`, cliquez sur le bouton `Modifier les paramètres de notifications`{.action}. Complétez ensuite les informations demandées :
 

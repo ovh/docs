@@ -1,14 +1,28 @@
 ---
 title: 'Configuring an Additional IP block in a vRack'
 excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
-updated: 2025-06-04
+updated: 2026-03-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-As well as private IP addressing, the [vRack](/links/network/vrack) also allows you to route public IP traffic through your server's [vRack](/links/network/vrack) port using a public IP address block.
+As well as private IP addressing, the [vRack](/links/network/vrack) also allows you to route public IP traffic through your server's vRack port using a public IP address block.
 
-**This guide will show you how to configure a block of public IP addresses for use with the [vRack](/links/network/vrack).**
+**This guide will show you how to configure a block of public IP addresses for use with the vRack.**
 
 > [!primary]
 >
@@ -35,7 +49,17 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [vRack](/links/control-panel/network-vrack)
+- **Navigation path:** `Network`{.action} > `vRack private network`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -46,7 +70,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 
 > [!primary]
 >
-> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](/links/network/vrack).
+> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the vRack.
 > 
 > Also for example purposes, the network configuration file we refer to is located in `/etc/network/interfaces`. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
 
@@ -59,15 +83,69 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
-
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
 
 ![vrack](images/addIPblock.png){.thumbnail}
 
+### Managing public IP bandwidth on vRack
+
+By default, Additional IP blocks routed via a vRack benefit from a standard public bandwidth of 5 Gbps in Europe/Canada/US and 100 Mbps in APAC regions. For a detailed overview of availability, please refer to public routing options on our [vRack product page](/links/network/vrack). 
+
+As infrastructure requirements scale, users may require broader bandwidth to support high-traffic public-oriented services, for which OVHcloud provides paid bandwidth options. It is important to note that bandwidth options are applied **per-vRack and per-region**. Since Additional IP addresses are tied to a region, any bandwidth modification will affect all IP addresses (both IPv4 and IPv6) routed to the specific vRack within that particular region.
+
+/// details | During the Additional IP ordering process
+
+#### Choosing public bandwidth during an Additional IP order
+
+The default public bandwidth can be changed when ordering a new Additional IP block with a vRack network as the backend.
+
+To order a new Additional IP block:
+
+- Open the `Network`{.action} section in the left-hand sidebar.
+- Select `Public IP addresses`{.action}.
+- Click on the `Order IPs`{.action} button, near the top of the page.
+- Select the IP version, then the vRack you want to attach your Additional IP to.
+- Select the region you want your Additional IP to be in.
+- Choose the public bandwidth you want to apply to your vRack for that specific region.
+- Fill in the other options as necessary, then proceed with your order.
+
+///
+
+/// details | From the vRack management page
+
+#### Modifying vRack public bandwidth on management page
+
+For Additional IP blocks already attached to a vRack, bandwidth can be managed directly through the service configuration page.
+
+To access the management interface:
+
+- In the "Public IP & bandwidth" column, click the `Manage`{.action} button for the corresponding vRack.
+
+The management page is organized into two tabs:
+
+- **All attached services**: For the time being, it redirects to the classic vRack management page. Soon, it will list all the products (Servers, Cloud Projects, etc.) currently linked to the vRack, in a new way.
+- **Public IP routing**: Manages the public IP routing options of your vRack, including public bandwidth.
+
+To modify the public bandwidth:
+
+- Navigate to the `Public IP routing`{.action} tab.
+- The interface displays individual management windows for each region (e.g., `eu-west-par`) associated with the vRack, listing all IP addresses attached to that specific region.
+- Within the window for the relevant region, click the `Modify bandwidth`{.action} button.
+- Select the desired bandwidth option in the panel that appears on the right-hand side, then click `Proceed to order`{.action} to validate the order.
+- Once paid, the selected bandwidth should be available to your vRack in the chosen region after a few minutes.
+
+> [!primary]
+>
+> Charges for the initial month are pro-rated based on the remaining days, with the full rate effective the next billing cycle.
+>
+
+The selected bandwidth upgrade will apply to all IP addresses in that region for the chosen vRack.
+
+///
+
 ### Configure a usable IP address
 
-For [vRack](/links/network/vrack) purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
+For vRack purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
 
 ```sh
 46.105.135.96   Reserved: Network address
@@ -88,14 +166,14 @@ For [vRack](/links/network/vrack) purposes, the first, penultimate, and last add
 46.105.135.111  Reserved: Network broadcast
 ```
 
-To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of *255.255.255.240*.
+To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.240**.
 
 > [!primary]
 >
-The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
+> The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
 >
 
-###Debian/Ubuntu
+### Debian/Ubuntu
 
 ```sh
 /etc/network/interfaces
@@ -116,7 +194,7 @@ Establish an SSH connection to your server and run the following command from th
 # apt-get install iproute2
 ```
 
-Next, we need to create a new IP route for the [vRack](/links/network/vrack). We'll be adding a new traffic rule by amending the file, as shown below:
+Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
 /etc/iproute2/rt_tables
@@ -139,10 +217,10 @@ Next, we need to create a new IP route for the [vRack](/links/network/vrack). We
 
 > [!primary]
 >
-For example purposes, the network configuration file we refer to is located in /etc/network/interfaces. The equivalent file on your server may be located somewhere else, depending on your operating system.
+> For example purposes, the network configuration file we refer to is located in /etc/network/interfaces. The equivalent file on your server may be located somewhere else, depending on your operating system.
 >
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack) traffic through the network gateway address of **46.105.135.110**.
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **46.105.135.110**.
 
 ```sh
 /etc/network/interfaces
@@ -196,7 +274,7 @@ ARP=yes
 
 ### Create a new IP routing table
 
-Next, we need to create a new IP route for the [vRack](/links/network/vrack). We'll be adding a new traffic rule by amending the file, as shown below:
+Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
 /etc/iproute2/rt_tables
@@ -229,7 +307,7 @@ to 46.105.135.96/28 table vrack
 
 ### Amend the network configuration file
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the [vRack](/links/network/vrack) traffic through the network gateway address of **46.105.135.110**.
+Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **46.105.135.110**.
 
 We can achieve it by editing the following file in order to add persistent and static routes:
 
@@ -266,7 +344,7 @@ Then we must check the properties:
 
 #### Step 2: IP Configuration
 
-We must select the ```Use the following IP address``` option:
+We must select the `Use the following IP address`{.action} option:
 
 ![ip configuration](images/win-ip-vrack-4.png){.thumbnail}
 
@@ -288,11 +366,11 @@ Then we do the enabling process
 
 If you are unable to establish a connection from your VM or server to the private network, please send us a ticket from your control panel with the following :
 
-* IP source and IP destination
-* Ifconfig -a or ipconfig /all from both servers or VMs (setup network configuration interface)
-* ping in both ways
-* arp -a
-* Routing table
+- IP source and IP destination
+- Ifconfig -a or ipconfig /all from both servers or VMs (setup network configuration interface)
+- Ping in both ways
+- Arp -a
+- Routing table
 
 Please, include the results from above into your ticket.
 

@@ -1,6 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w PHP
-excerpt: Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w PHP
+excerpt: Dowiedz się, jak skonfigurować środowisko PHP i wysłać pierwszą wiadomość SMS krok po kroku za pomocą interfejsu API RESTful OVHcloud
 updated: 2020-06-25
 ---
 
@@ -17,7 +17,7 @@ Wiadomości SMS są szeroko wykorzystywane do rozpowszechniania praktycznych inf
 
 ## W praktyce
 
-### Etap 1: pobranie wrappera PHP do API OVH
+### Etap 1: Pobranie wrappera PHP do API OVHcloud
 
 Przejdź na stronę projektu [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 
@@ -30,7 +30,7 @@ Twój projekt, a także plik autoload.php umożliwiający zarządzanie wszystkim
 
 ![Twój projekt utworzony za pomocą narzędzia Composer](images/img_2450.jpg){.thumbnail}
 
-### Etap 2: utworzenie identyfikatorów
+### Etap 2: Utworzenie identyfikatorów
 
 Identyfikatory są niezbędne do korzystania z interfejsu API SMS. Identyfikatory te tworzy się jednorazowo w celu określenia aplikacji, która będzie wysyłać wiadomości SMS. Czas ważności tych identyfikatorów można skonfigurować.
 
@@ -57,11 +57,11 @@ W ten sposób uzyskasz identyfikatory dla Twojego skryptu:
 
 Środowisko jest gotowe, identyfikatory zostały utworzone, a Ty możesz już tworzyć kod Twojego skryptu PHP.
 
-### Etap 3: wdrożenie SDK PHP
+### Etap 3: Wdrożenie SDK PHP
 
 Dla większej prostoty utworzyliśmy zestaw PHP SDK, który znajdziesz [tutaj](https://github.com/ovh/php-ovh-sms).
 
-### Etap 4: podstawowe połączenie z API
+### Etap 4: Podstawowe połączenie z API
 
 Teraz możesz przetestować połączenie z API, wyświetlając szczegóły każdego konta SMS:
 
@@ -102,7 +102,7 @@ foreach ($smsServices as $smsService) {
 
 Po uruchomieniu tego skryptu uzyskasz listę Twoich kont SMS.
 
-### Etap 5: wysłanie pierwszej wiadomości SMS
+### Etap 5: Wysłanie pierwszej wiadomości SMS
 
 Aby wysłać wiadomość SMS, wykorzystaj metodę POST jobs: [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
 

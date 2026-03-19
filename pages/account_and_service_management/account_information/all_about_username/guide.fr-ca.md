@@ -24,8 +24,8 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 
 ### Accès à l'espace client OVHcloud
 
-- **Lien direct :** [Profil utilisateur](/links/control-panel/account-profile)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action}
+- **Lien direct :** [Mon profil](/links/control-panel/account-profile)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Éditer mon profil`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -65,7 +65,7 @@ Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gesti
 En cas de difficulté d'accès à votre adresse e-mail principale, une adresse e-mail de secours permet de conserver l'accès à votre compte et donc à la gestion de vos services.
 <br>Cette seconde adresse **doit être différente** de la première, notamment pour faciliter vos démarches en cas de récupération de mot de passe.
 
-Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile) et cliquez sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
+Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
 Faites défiler l'écran jusqu'à la rubrique `Vos informations de contact` pour trouver le champ `E-mail de secours`, en-dessous du champ dédié à l'adresse e-mail principale.
 
@@ -88,11 +88,9 @@ Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser s
 
 #### Modifier mes informations personnelles
 
-Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile) et cliquez sur le bouton `...`{.action} dans le cadre `Mon profil`, puis sur `Éditer mon profil`{.action}.
+Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
-![identifiant client](images/edit-profile.png){.thumbnail}
-
-Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
+Modifiez vos informations, puis cliquez sur le bouton `Enregistrer les modifications`{.action}.
 
 > [!warning]
 >

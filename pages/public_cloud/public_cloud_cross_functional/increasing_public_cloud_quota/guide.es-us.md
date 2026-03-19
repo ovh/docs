@@ -14,8 +14,18 @@ Si desea crear más, será necesario aumentar la cuota.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - [Disponer de una forma de pago válida](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) en el área de cliente de OVHcloud.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedimiento
 
@@ -33,8 +43,6 @@ Esta opción le permite solicitar un aumento automático y progresivo de su cuot
 >
 > **Nota**: Este proceso no es adecuado para aumentos rápidos de cuota.
 >
-
-Inicie sesión en su [área de cliente de OVHcloud](/links/manager), vaya a la sección `Public Cloud`{.action} y seleccione su proyecto Public Cloud.
 
 En el menú de la izquierda, haga clic en `Cuotas y regiones`{.action} bajo **Ajustes**.
 
@@ -59,8 +67,6 @@ Una vez activado, el auto-scaling aumentará progresivamente la cuota de su proy
 Este procedimiento permite un aumento rápido y significativo de sus cuotas (por ejemplo: escalado rápido, instancias GPU, etc.). Este método se basa en la compra inmediata de un crédito, del que se deducirán automáticamente todas las consumiciones en la nube.
 
 Puede comprar diferentes créditos.
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud.
 
 En el menú de la izquierda, haga clic en `Cuotas y regiones`{.action} bajo **Ajustes**.
 

@@ -14,11 +14,11 @@ Sie können Ihre Bestellung erst bezahlen, wenn Sie sich über Ihren Kunden-Acco
 
 #### Tipps und Tricks
 
-Sie haben die Seite Ihrer Bestellung geschlossen? Öffnen Sie die Seite [Bestellungen](/links/control-panel/billing-orders). Dort können Sie Ihre Bestellung einsehen und begleichen.
+Sie haben die Seite Ihrer Bestellung geschlossen? Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders). Dort können Sie Ihre Bestellung einsehen und begleichen.
 
 ### Wie kann ich meinen Zahlungsstatus einsehen?
 
-Öffnen Sie die Seite [Rechnungen](/links/control-panel/billing-invoices). Wenn eine ausstehende Rechnung vorhanden ist, können Sie den Restbetrag begleichen.
+Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Wenn eine ausstehende Rechnung vorhanden ist, können Sie den Restbetrag begleichen.
 
 #### Tipps und Tricks
 
@@ -26,7 +26,7 @@ Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) kön
 
 ### Wie kann ich den Status meiner Bestellung nachverfolgen?
 
-Öffnen Sie die Seite [Bestellungen](/links/control-panel/billing-orders).
+Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 #### Tipps und Tricks
 

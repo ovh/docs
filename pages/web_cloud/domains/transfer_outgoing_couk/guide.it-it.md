@@ -1,7 +1,7 @@
 ---
-title: "Trasferire un nome di dominio.uk verso un altro Registrar"
+title: "Trasferire un nome di dominio .uk verso un altro Registrar"
 excerpt: Come effettuare il trasferimento in uscita di un nome di dominio UK verso un altro registrar
-updated: 2026-02-10
+updated: 2026-03-13
 ---
 
 ## Obiettivo
@@ -31,7 +31,7 @@ Il processo di modifica del Registrar (*registrar*) per i nomi di dominio di pri
 
 ## Prerequisiti
 
-- Disporre di un [nome di dominio.uk](/links/web/domains) registrato in OVHcloud
+- Disporre di un [nome di dominio .uk](/links/web/domains) registrato in OVHcloud
 - Il nome di dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
 - Il nome di dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)
 
@@ -49,9 +49,9 @@ Il processo di modifica del Registrar (*registrar*) per i nomi di dominio di pri
 
 > [!primary]
 >
-> Se sei l'**intestatario** del nome di dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del nome di dominio, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts) prima di continuare.
+> Se il nome di dominio è scaduto da **meno di 90 giorni**, può ancora essere trasferito. Contatta i nostri team di supporto creando una richiesta di assistenza nel tuo Spazio Cliente OVHcloud per sbloccare il nome di dominio ai fini del trasferimento.
 >
-> Se il nome di dominio è scaduto da **meno di 90 giorni**, può sempre essere trasferito. Per sbloccare il nome di dominio per il trasferimento, contatta i nostri team di supporto tecnico creando una richiesta di supporto nel tuo Spazio Cliente OVHcloud.
+> Se sei l'**intestatario** del nome di dominio ma non puoi gestirlo nello Spazio Cliente OVHcloud, né tramite il tuo accesso né tramite il contatto amministrativo, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts) prima di continuare.
 >
 
 ## Procedura
@@ -60,29 +60,38 @@ I TLD interessati dispongono di un tag (*TAG*) che corrisponde al loro attuale R
 
 Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo provider o consultare la [lista degli Uffici di Registrazione Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/).
 
-### Step 1: verificare le informazioni necessarie
+### 1 - Modifica il TAG del tuo nome di dominio per avviare il trasferimento verso un altro Registrar
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il nome di dominio interessato.
+> [!primary]
+>
+> Per effettuare queste operazioni è necessario essere connesso come [amministratore](/pages/account_and_service_management/account_information/managing_contacts).
 
-Ricordati di essere connesso come contatto amministratore.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
-Nella scheda `Informazioni generali`{.action} è possibile verificare il rispetto delle condizioni richieste per la procedura di trasferimento.
-
-### Step 2: modifica il TAG del tuo nome di dominio
-
-Clicca sul link `Tag per il trasferimento in uscita`{.action} nella sezione intitolata **Sicurezza**.
-
-![trasferimento in uscita](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
-
-Nella nuova finestra, inserisci il TAG del tuo nuovo Registrar e poi clicca su `Conferma`{.action}.
-
-![trasferimento in uscita](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
+> [!tabs]
+> **Passaggio 1**
+>>
+>> Clicca su [questo link](/links/control-panel/web-domains) e seleziona il dominio interessato.
+>>
+>> ![Spazio Cliente OVHcloud - lista dei nomi di dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Passaggio 2**
+>>
+>> Nella sezione **Configurazione**, clicca sul link `Tag per il trasferimento in uscita`{.action}.
+>>
+>> ![trasferimento in uscita](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.png){.thumbnail}
+>>
+> **Passaggio 3**
+>>
+>> Nella nuova finestra, inserisci il TAG del tuo nuovo Registrar e poi clicca su `Conferma`{.action}.
+>>
+>> ![trasferimento in uscita](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.png){.thumbnail}
 
 Se non riesci a modificare il TAG del tuo nome di dominio dallo Spazio Cliente OVHcloud, puoi richiederne la modifica al Registry Nominet. Per maggiori informazioni, consulta il [sito ufficiale Nominet](https://www.nominet.uk/domain-support/).
 
-### Step 3: seguire il processo di trasferimento presso il tuo nuovo Registrar
+### 2 - Segui il processo di trasferimento presso il tuo nuovo Registrar
 
-La modifica del tag TAG attiva il processo di trasferimento.
+La modifica del TAG attiva il processo di trasferimento.
 
 Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda relativa al seguito da dare al trasferimento.
 

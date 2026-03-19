@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Objetivo
 
-Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Área de Cliente OVHcloud](/links/manager).
+Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da Área de Cliente OVHcloud.
 
 **Saiba como gerir as suas encomendas a partir da Área de Cliente OVHcloud.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na página [Lista de contratos](/links/control-panel/billing-contracts).
 >
 
 ## Requisitos
@@ -24,8 +24,8 @@ Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Ár
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Orders](/links/control-panel/billing-orders)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `View my orders`{.action}
+- **Ligação direta:** [Encomendas](/links/control-panel/billing-orders)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Encomendas`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->

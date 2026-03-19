@@ -19,7 +19,17 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -30,7 +40,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ### Backup Storage aktivieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup aktivieren`{.action}.
 
 ![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
 
@@ -46,7 +56,7 @@ Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffsko
 
 #### Zugang zum Backup Storage hinzufügen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
 ![Zugang zum Backup-Speicher hinzufügen](images/backup-storage03.png){.thumbnail}
 
@@ -110,20 +120,19 @@ Verwenden Sie den folgenden Aufruf, um zu überprüfen, ob Ihre IP-Adresse autor
 
 ### Passwort zurücksetzen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
 
 Nachdem Sie im angezeigten Fenster auf `Bestätigen`{.action} geklickt haben, wird eine E-Mail an die für Ihren Administrator-Kontakt eingetragene E-Mail-Adresse versandt. Folgen Sie den darin enthaltenen Anweisungen, um Ihr Passwort zurückzusetzen.
 
 ### Backup Storage löschen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
-ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
 Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr Backup Storage wird nach einigen Minuten abgeschaltet. Alle Daten des Speicherplatzes werden gelöscht.
 
 ### Zusätzlichen Speicherplatz bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
+Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
 
 ![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
 

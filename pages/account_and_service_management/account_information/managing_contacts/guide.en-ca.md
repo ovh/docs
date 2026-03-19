@@ -37,8 +37,8 @@ There are three different contact types:
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Manage contacts](/links/control-panel/account-contacts)
-- **Navigation path:** Click your name in the top right > `Contact management`{.action}
+- **Direct link:** [Contact management](/links/control-panel/account-contacts)
+- **Navigation path:** Click your name in the top right > `My contacts`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->
@@ -51,7 +51,7 @@ There are three different contact types:
 
 ### Access contact management
 
-Open the [Manage contacts](/links/control-panel/account-contacts) page.
+Open the [My contacts](/links/control-panel/account-contacts) page.
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 

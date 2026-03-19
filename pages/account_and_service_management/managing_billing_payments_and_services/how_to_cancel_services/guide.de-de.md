@@ -96,8 +96,8 @@ Weitere Informationen finden Sie in den [FAQ](/pages/account_and_service_managem
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Meine Dienste](/links/control-panel/billing-services)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Produkte und Dienstleistungen`{.action}
+- **Direkter Link:** [Meine Angebote und Dienste](/links/control-panel/billing-services)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Angebote und Dienste`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -110,7 +110,7 @@ Es gibt jedoch auch **Sonderfälle**, die [weiter unten](#specific-cases) in die
 
 ## Wie kann ich ein Abonnement kündigen? <a name="terminate"></a>
 
-Um das Abonnement Ihres Dienstes zu kündigen, öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
+Um das Abonnement Ihres Dienstes zu kündigen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -188,7 +188,7 @@ Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/public_cloud_cross_f
 > Sie können eine Kündigungsanfrage nur bis zu 24 Stunden vor dem Kündigungsdatum stornieren.
 >
 
-Um eine Kündigungsanfrage zurückzunehmen, öffnen Sie die Seite [Meine Dienste](/links/control-panel/billing-services).
+Um eine Kündigungsanfrage zurückzunehmen, öffnen Sie die Seite [Meine Angebote und Dienste](/links/control-panel/billing-services).
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action}
 

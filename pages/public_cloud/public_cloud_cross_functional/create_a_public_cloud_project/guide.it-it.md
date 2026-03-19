@@ -16,11 +16,18 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
-
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) poi clica sul menu `Public Cloud`{.action}.
 
 Leggi le condizioni contrattuali selezionando la casella corrispondente e clicca su `Scopri l’universo Public Cloud`{.action}.
 

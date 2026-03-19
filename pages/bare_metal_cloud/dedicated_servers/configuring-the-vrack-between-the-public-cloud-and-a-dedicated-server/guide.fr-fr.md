@@ -29,9 +29,19 @@ Le [vRack](/links/network/vrack) OVHcloud est un réseau privé qui vous permet 
 * Avoir créé une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Avoir activé un service [vRack](/links/network/vrack)
 * Posséder un [serveur dédié](/links/bare-metal/bare-metal) compatible avec le vRack
-* Être connecté à l'[espace client OVHcloud](/links/manager)
 * Une plage d'adresses IP privées de votre choix
 * Les deux services doivent se trouver dans le même vRack.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).

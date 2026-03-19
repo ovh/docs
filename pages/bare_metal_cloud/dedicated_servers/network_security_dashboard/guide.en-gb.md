@@ -11,7 +11,17 @@ This guide explains the Network Security Dashboard and provides an overview of c
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-security-dashboard -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Security Dashboard](/links/control-panel/network-security-dashboard)
+- **Navigation path:** `Network`{.action} > `Network Security Dashboard`{.action}
+
+---
+<!-- CP-NAV-END:network-security-dashboard -->
 
 ## Instructions
 
@@ -43,7 +53,7 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
+Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
 
 The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the Edge Network **Firewall** and **GAME firewall** features availability and their statuses.
 
@@ -64,8 +74,6 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
 - The **Alerts** column may indicate an active scrubbing centre with a warning icon and appropriate hint.
 
 ### Network Security Dashboard
-
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Network Security Dashboard`{.action}. 
 
 In the **scrubbing centre log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 

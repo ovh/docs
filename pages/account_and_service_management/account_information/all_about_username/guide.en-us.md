@@ -22,8 +22,8 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [User profile](/links/control-panel/account-profile)
-- **Navigation path:** Click your name in the top right > `My account`{.action}
+- **Direct link:** [My profile](/links/control-panel/account-profile)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action} > `Edit my profile`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ If you have not already done so, save your password in a [password manager](/pag
 If you experience any issues accessing your primary email address, a backup email address will help you retain access to your account, and manage your services as a result.
 <br>This second address **must be different** from the first, in particular to facilitate your procedures in case of password recovery.
 
-To enter this backup email address, go to your [user profile](/links/control-panel/account-profile) and click on `Edit my profile`{.action} in the `My profile` box.
+To enter this backup email address, go to your [user profile](/links/control-panel/account-profile).
 
 > [!warning]
 > As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
@@ -84,9 +84,9 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 ### Changing your personal details
 
-You can change your account information. Go to your [user profile](/links/control-panel/account-profile) and click on `Edit my profile`{.action} in the `My profile` box.
+You can change your account information. Go to your [user profile](/links/control-panel/account-profile).
 
-Edit your details, then click `Confirm`{.action} .
+Edit your details, then click `Save changes`{.action}.
 
 > [!warning]
 >

@@ -33,7 +33,17 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) w Panelu klienta
 - Posiadanie [adresu Additional IP](/links/network/additional-ip)
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public IP](/links/control-panel/network-public-ip)
+- **Ścieżka nawigacji:** `Network`{.action} > `Publiczne adresy IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](/links/bare-metal/eco-about).
@@ -68,9 +78,7 @@ Jeśli zamówisz dodatkowy blok adresów IP na serwerze, ale wybierzesz inną lo
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
-
-Następnie możesz użyć menu rozwijanego pod opcją **Moje publiczne adresy IP i usługi powiązane** i wybrać opcję `Wszystkie adresy Additional IP`{.action}, aby odpowiednio filtrować usługi, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
+Możesz użyć menu rozwijanego pod opcją **Moje publiczne adresy IP i usługi powiązane** i wybrać opcję `Wszystkie adresy Additional IP`{.action}, aby odpowiednio filtrować usługi, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 

@@ -30,7 +30,16 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-///
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `MX Plan`{.action} > Seleziona il tuo servizio MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Procedura
 

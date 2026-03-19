@@ -25,6 +25,17 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 - You must have all the information related to your IPv6 (prefix, gateway, etc.).
 - Basic knowledge of SSH and networking.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Instructions
 
 The following sections contain the configurations of the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to connect to your server via SSH or via a GUI (RDP for a Windows server) connection session.
@@ -49,8 +60,6 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 - Get network information via the APIs
 
 #### Via the OVHcloud Control Panel
-
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Dedicated servers`{.action} section.
 
 The IPv6 gateway assigned to your server is displayed in the `Network` section of the `General information`{.action} tab.
 

@@ -12,6 +12,17 @@ Si una dirección IP está asociada a organizaciones como Spamhaus, SpamCop, etc
 
 Por lo tanto, es importante que OVHcloud se ocupe de la reputación, la calidad y la seguridad de la red, que constituye también una parte importante del servicio.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### ¿Cómo funciona el sistema de protección?
 
 Nuestro sistema está basado en la tecnología antispam de Vade Secure.
@@ -60,8 +71,6 @@ Una vez resuelto el problema, puede desbloquear la dirección IP realizando las 
 ### Desbloquear la dirección IP
 
 #### Desbloquear la dirección IP desde el área de cliente
-
-Conéctese al [área de cliente de OVHcloud](/links/manager), abra el menú `Network`{.action} en la columna izquierda y haga clic en `Direcciones IP públicas`{.action}.
 
 Puede utilizar el menú desplegable bajo **Mis direcciones IP públicas y servicios asociados** para filtrar sus servicios por categoría, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 

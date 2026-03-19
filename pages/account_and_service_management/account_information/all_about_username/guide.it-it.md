@@ -22,8 +22,8 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [User profile](/links/control-panel/account-profile)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `My account`{.action}
+- **Link diretto:** [Il mio profilo](/links/control-panel/account-profile)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Modifica il tuo profilo`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/
 In caso di difficoltà di accesso al tuo indirizzo email principale, un indirizzo email di recupero permette di mantenere l'accesso al tuo account e quindi alla gestione dei tuoi servizi.
 <br>Questo secondo indirizzo **deve essere diverso** dal primo, in particolare per facilitare le operazioni in caso di recupero della password.
 
-Per inserire questo indirizzo email di recupero, accedi al tuo [profilo utente](/links/control-panel/account-profile) e clicca su `Modifica il tuo profilo`{.action} nella sezione `Il tuo profilo`.
+Per inserire questo indirizzo email di recupero, accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
 > [!warning]
 > Ti ricordiamo che è **fondamentale** che l'indirizzo email di recupero sia **diverso** dall'indirizzo email principale dell'account.
@@ -84,9 +84,9 @@ Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcl
 
 #### Modifica le tue informazioni personali
 
-È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile) e clicca su `Modifica il tuo profilo`{.action} nella sezione `Il tuo profilo`.
+È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
-Modifica le informazioni e clicca su `Conferma`{.action}.
+Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
 
 > [!warning]
 >

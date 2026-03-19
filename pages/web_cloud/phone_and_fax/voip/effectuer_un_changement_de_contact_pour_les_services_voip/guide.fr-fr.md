@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-OVHcloud vous permet de différencier la gestion administrative, technique et de facturation d'un service pour la confier à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services de téléphonie est partiellement différente de la [gestion de contacts des autres services OVHcloud](/pages/account_and_service_management/account_information/managing_contacts). En effet, la gestion de contacts VoIP peut être réalisée sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias).
+OVHcloud vous permet de confier la gestion administrative, technique et de facturation d'un service à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services de téléphonie est partiellement différente de la [gestion de contacts des autres services OVHcloud](/pages/account_and_service_management/account_information/managing_contacts). En effet, la gestion de contacts VoIP peut être réalisée sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias).
 
 **Découvrez comment modifier les contacts d'un groupe de téléphonie.**
 

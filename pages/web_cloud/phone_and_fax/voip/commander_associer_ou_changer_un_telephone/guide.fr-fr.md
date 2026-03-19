@@ -31,7 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 >
 > Nos téléphones sont fournis en l'échange d'une caution (restituée en fin de contrat). Retrouvez l'ensemble des téléphones proposés par OVHcloud sur [cette page](/links/telecom/telephonie-comparatif-telephones).
 
-Votre ligne SIP peut être associée à un téléphone OVHcloud. Cela vous permet ainsi de gérer ce dernier depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
+Votre ligne SIP peut être associée à un téléphone OVHcloud. Vous pouvez ainsi le gérer depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
 - [Commander un téléphone OVHcloud](#obtenir-telephone) : vous permet de commander un nouveau téléphone OVHcloud sur une ligne existante dans votre compte.
 - [Changer ou renvoyer le téléphone de votre ligne](#changer-telephone) : vous permet de changer le téléphone OVHcloud actuellement associé à votre ligne SIP ou de le renvoyer si vous n'en avez plus l'utilité.

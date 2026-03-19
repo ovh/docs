@@ -36,6 +36,17 @@ Existem várias opções para transferir ficheiros entre um dispositivo local e 
 - Um cliente FTP que suporte as ligações SFTP (por exemplo, [FileZilla](https://filezilla-project.org/)) instalado na estação de trabalho local
 - Um acesso administrador em SSH ao seu servidor
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Link direto:** [Servidores Dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Dedicados`{.action} > Selecione o seu servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Instruções
 
 Vai precisar do endereço IP do seu servidor que pode encontrar na sua [Área de Cliente OVHcloud](/links/manager), assim como do nome da conta de utilizador a utilizar para a ligação SSH. Não hesite em consultar os nossos manuais "Primeiros passos" se deseja obter mais pormenores sobre este assumpto:

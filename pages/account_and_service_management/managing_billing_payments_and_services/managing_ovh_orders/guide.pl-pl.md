@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Wprowadzenie
 
-Składając zamówienie możesz śledzić zamówienie i zarządzać nim w [Panelu klienta OVHcloud](/links/manager).
+Składając zamówienie możesz śledzić zamówienie i zarządzać nim w Panelu klienta OVHcloud.
 
 **Dowiedz się, jak zarządzać zamówieniami w Panelu klienta OVHcloud.**
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](/links/manager) (kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym kliknij pozycję `Moje rozwiązania i usługi`{.action}. Następnie kliknij zakładkę `Regulaminy`{.action}).
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych na stronie [Lista umów](/links/control-panel/billing-contracts).
 >
 
 ## Wymagania początkowe
@@ -24,8 +24,8 @@ Składając zamówienie możesz śledzić zamówienie i zarządzać nim w [Panel
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Orders](/links/control-panel/billing-orders)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `View my orders`{.action}
+- **Link bezpośredni:** [Moje zamówienia](/links/control-panel/billing-orders)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Moje zamówienia`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -45,11 +45,11 @@ Zamówienie zostało utworzone w momencie składania zamówienia. Zawiera listę
 |3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Dostępne metody płatności Zaproponowane są wyłącznie metody płatności akceptowane w kraju, w którym znajduje się konto, lub metody związane z typem zarejestrowanego konta.|
 
-Możesz w każdym momencie odnaleźć Twoje zamówienie na stronie [Zamówienia](/links/control-panel/billing-orders), jak wyjaśniono poniżej.
+Możesz w każdym momencie odnaleźć Twoje zamówienie na stronie [Moje zamówienia](/links/control-panel/billing-orders), jak wyjaśniono poniżej.
 
 ### Dostęp do zamówień w Panelu klienta OVHcloud
 
-Otwórz stronę [Zamówienia](/links/control-panel/billing-orders).
+Otwórz stronę [Moje zamówienia](/links/control-panel/billing-orders).
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Możesz również wyświetlić zamówienie w formacie HTML, klikając `...`{.act
 
 ### Sprawdzanie statusu zamówienia
 
-Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie na stronie [Zamówienia](/links/control-panel/billing-orders):
+Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie na stronie [Moje zamówienia](/links/control-panel/billing-orders):
 
 * Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz `Informacje o zamówieniu`{.action}. Informacje o zamówieniu można również wyświetlić, klikając status zamówienia w kolumnie `Status`.
@@ -108,7 +108,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Nie dotyczy on również niektórych usług (w szczególności [domen](/links/web/domains) i [certyfikatów SSL Sectigo](/links/web/hosting-options-ssl)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
 >
 
-Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio na stronie [Zamówienia](/links/control-panel/billing-orders):
+Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio na stronie [Moje zamówienia](/links/control-panel/billing-orders):
 
 * Kliknij przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz opcję `Anuluj zamówienie`{.action}.

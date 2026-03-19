@@ -43,8 +43,8 @@ Questa guida ti mostra come:
 
 ### Accesso allo Spazio Cliente OVHcloud
 
-- **Link diretto:** [Account security](/links/control-panel/account-security)
-- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `My account`{.action} > `Security`{.action}
+- **Link diretto:** [Sicurezza](/links/control-panel/account-security)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Sicurezza`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

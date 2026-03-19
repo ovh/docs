@@ -12,6 +12,17 @@ Jeśli IP zostanie zgłoszona do organizacji takich jak Spamhaus i SpamCop, któ
 
 Dlatego ważne jest, aby OVHcloud dbał o reputację, jakość i bezpieczeństwo sieci, co stanowi również ważną część Twojej usługi.
 
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public IP](/links/control-panel/network-public-ip)
+- **Ścieżka nawigacji:** `Network`{.action} > `Publiczne adresy IP`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
+
 ### Jak działa system ochrony?
 
 Nasz system opiera się na technologii antyspamowej Vade Secure.
@@ -61,8 +72,6 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 ### Odblokuj swoje IP
 
 #### Odblokowanie IP z Panelu klienta OVHcloud
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Możesz użyć menu rozwijanego pod **Moje publiczne adresy IP i usługi powiązane**, aby filtrować swoje usługi według kategorii, lub bezpośrednio wpisać żądany adres IP w pasku wyszukiwania.
 

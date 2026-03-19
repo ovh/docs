@@ -39,8 +39,8 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Manage contacts](/links/control-panel/account-contacts)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Contact management`{.action}
+- **Ligação direta:** [Gestão dos contactos](/links/control-panel/account-contacts)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Contactos`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

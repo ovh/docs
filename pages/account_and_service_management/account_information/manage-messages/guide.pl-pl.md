@@ -17,8 +17,8 @@ Podczas zakładania konta OVHcloud podałeś adres e-mail kontaktowy. Jeśli chc
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Messages](/links/control-panel/account-messages)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Service emails`{.action}
+- **Link bezpośredni:** [Połączenia](/links/control-panel/account-messages)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Połączenia`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

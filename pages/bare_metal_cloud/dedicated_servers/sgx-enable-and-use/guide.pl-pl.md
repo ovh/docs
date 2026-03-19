@@ -12,10 +12,21 @@ Włączenie Intel Software Guard Extensions (SGX) na Twoim serwerze umożliwia u
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub do [API OVHcloud](/links/api)
+- Dostęp do [API OVHcloud](/links/api) (opcjonalnie)
 - Serwer dedykowany kompatybilny z [opcją SGX](/links/bare-metal/sgx) w Twoim koncie OVHcloud
 - Dane logowania otrzymane e-mailem po instalacji
 - Na serwerze zainstalowany jest Ubuntu 24.04 lub równoważny system
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## W praktyce
 
@@ -28,7 +39,7 @@ Aktywacja SGX jest możliwa za pośrednictwem Panelu Klienta OVHcloud, API OVHcl
 >>
 >> **1 - Logowanie do Panelu klienta OVHcloud**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Serwery dedykowane`{.action}. Następnie wybierz serwer, na którym chcesz włączyć SGX.
+>> Wybierz serwer, na którym chcesz włączyć SGX.
 >>
 >> **2 - Włączenie SGX**
 >>
@@ -111,7 +122,7 @@ Aktywacja SGX jest możliwa za pośrednictwem Panelu Klienta OVHcloud, API OVHcl
 >>
 >> **1 - Uruchom sesję Remote KVM**
 >>
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Serwery dedykowane`{.action}. Następnie wybierz serwer, na którym chcesz włączyć SGX.
+>> Wybierz serwer, na którym chcesz włączyć SGX.
 >>
 >> W zakładce `IPMI / KMV`{.action} uruchom sesję Remote KVM:
 >>

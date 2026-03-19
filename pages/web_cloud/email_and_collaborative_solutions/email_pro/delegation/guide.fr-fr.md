@@ -13,8 +13,18 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 
 - Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro)
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer des identifiants relatifs au compte e-mail qui bénéficiera des nouveaux droits délégués.
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## En pratique
 

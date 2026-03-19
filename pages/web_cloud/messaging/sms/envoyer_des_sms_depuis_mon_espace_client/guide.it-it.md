@@ -1,6 +1,6 @@
 ---
 title: Inviare SMS dallo Spazio Cliente
-excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
+excerpt: Scopri come inviare i tuoi primi SMS passo dopo passo, configurare i mittenti e gestire i destinatari dal tuo Spazio Cliente OVHcloud
 updated: 2026-01-07
 ---
 
@@ -52,7 +52,7 @@ Per maggiori informazioni, consulta la nostra [guida sulle liste di destinatari 
 - Tramite una rubrica indirizzi (3), che può essere creata dallo Spazio Cliente o importata tramite une file .csv o .txt.
 Per maggiori informazioni consulta la [guida sulle rubriche SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
 
-### Step 2: digita il tuo SMS
+### Step 2: Digita il tuo SMS
 
 > [!primary]
 >

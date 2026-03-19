@@ -24,7 +24,7 @@ The Automated backup option for VPS offers a convenient way to have complete sys
 **This guide explains the Automated backup option for your OVHcloud VPS.**
 
 > [!primary]
-> Before applying a backup strategy, we recommend to consult the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
+> Before applying a backup strategy, we recommend consulting the [product pages and FAQ](/links/bare-metal/vps-options) for pricing comparisons and further details.
 >
 
 ## Requirements
@@ -69,7 +69,7 @@ When you order a VPS, a single daily Automated backup is included as a free serv
 - Mount and restore the daily backup.
 - Set the time of day this backup will be created.
 
-For more flexiblity with your backups, you can activate the Premium Automated Backup option.
+For more flexibility with your backups, you can activate the Premium Automated Backup option.
 
 <a name="premium"></a>
 
@@ -87,7 +87,7 @@ Click the link `Order a premium backup`{.action} (for services ordered from 7 AU
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
+In the next step, note the pricing information, then click `Order`{.action}. You will be guided through the order process and receive a confirmation email.
 
 <a name="time"></a>
 
@@ -107,7 +107,7 @@ In the window that appears, edit the time of day (24-hour UTC time standard). Cl
 
 > [!primary]
 >
-Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
+> Once confirmed in the Control Panel, the change will come into effect after 24 to 48 hours.
 >
 
 <a name="restore"></a>
@@ -223,7 +223,7 @@ Remember to unmount the backup once you have finished using it. Click on the but
 
 ### Best practice for using Automated backups
 
-The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.
+The Automated Backup functionality is based on VPS snapshots. We recommend following the steps below to prevent any issues before using this option.
 
 <a name="qemu"></a>
 
@@ -231,7 +231,7 @@ The Automated Backup functionality is based on VPS snapshots. We recommend to fo
 
 Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
 
-The "**qemu-guest-agent**" agent is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent in case it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
+The "**qemu-guest-agent**" agent is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent if it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
 
 <a name="deb"></a>
 
@@ -310,7 +310,7 @@ sudo service qemu-guest-agent status
 
 You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
-Verify that the service is running by using this powershell command:
+Verify that the service is running by using this PowerShell command:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA

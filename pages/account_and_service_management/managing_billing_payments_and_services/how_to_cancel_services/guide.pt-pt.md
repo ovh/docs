@@ -87,8 +87,8 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [My services](/links/control-panel/billing-services)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Products and services`{.action}
+- **Ligação direta:** [As minhas ofertas e serviços](/links/control-panel/billing-services)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `As minhas ofertas e serviços`{.action}
 
 ---
 <!-- CP-NAV-END:billing-services -->
@@ -101,7 +101,7 @@ No entanto, existem **casos especiais** que são detalhados [mais abaixo](#speci
 
 ### Como cancelar a subscrição <a name="terminate"></a>
 
-Abra a página [Os meus serviços](/links/control-panel/billing-services).
+Abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -179,7 +179,7 @@ Também pode [consultar o seu consumo atual](/pages/public_cloud/public_cloud_cr
 > Pode anular um pedido de rescisão até 24 horas antes do fim da subscrição.
 >
 
-Para anular um pedido de rescisão, abra a página [Os meus serviços](/links/control-panel/billing-services).
+Para anular um pedido de rescisão, abra a página [As minhas ofertas e serviços](/links/control-panel/billing-services).
 
 A seguir, clique no botão `...`{.action} à direita do serviço que é objeto de um pedido de rescisão e, a seguir, em `Anular a rescisão do serviço`{.action}.
 

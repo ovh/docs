@@ -28,6 +28,17 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 * [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
 * [Le provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 > [!primary]
 >
 > Ce tutoriel est compatible avec les versions 0.14.0 et suivantes de Terraform.
@@ -239,7 +250,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Connectez-vous maintenant à votre [espace client OVHcloud](/links/manager), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
+Cliquez sur `Instances`{.action}.
 Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en train de se créer.
 
 > [!primary]

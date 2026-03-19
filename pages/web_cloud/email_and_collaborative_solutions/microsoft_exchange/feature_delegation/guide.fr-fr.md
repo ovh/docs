@@ -19,8 +19,27 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 > **Pour l'offre [Email Pro](/links/web/email-pro)** les fonctionnalités de délégations décrites dans ce guide s'utilisent uniquement au travers du [Webmail](/links/web/email). Les protocoles permettant leur utilisation via un logiciel de messagerie nécessitent de disposer d'un compte [Exchange](/links/web/emails-hosted-exchange).
 
 - Disposer au minimum de deux comptes e-mail actifs et configurés sur la même plateforme e-mail OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer des identifiants relatifs au compte e-mail qui bénéficiera des nouveaux droits délégués.
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## En pratique
 
@@ -39,22 +58,6 @@ Avant de débuter, définissez le ou les droits que vous allez déléguer. Pour 
 Lorsque vous avez identifié le compte concerné par la délégation, déterminé les droits que vous allez déléguer, ainsi qu'identifié le ou les comptes qui bénéficieront de ces droits supplémentaires, poursuivez vers la première étape.
 
 ### Étape 1 : mettre en place la délégation
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
-> **Email Pro**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `Email Pro`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
 
 Dirigez-vous vers l'onglet `Comptes e-mail`{.action}.
 

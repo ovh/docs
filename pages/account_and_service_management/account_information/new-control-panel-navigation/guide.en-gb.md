@@ -26,7 +26,18 @@ Since April 2025, OVHcloud teams have introduced a new navigation in your Contro
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An active OVHcloud account
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [My account](/links/control-panel/account-dashboard)
+- **Navigation path:** Click your name in the top right > `Access my account`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## Instructions
 

@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Objectif
 
-Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec elle depuis votre [espace client OVHcloud](/links/manager).
+Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec elle depuis la page [Mes commandes](/links/control-panel/billing-orders).
 
 **Découvrez comment gérer vos commandes depuis votre espace client OVHcloud.**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Mes offres & services`{.action}. Enfin, cliquez sur l'onglet `Contrats`{.action}).
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud (disponibles sur la page [Liste des contrats](/links/control-panel/billing-contracts)).
 >
 
 ## Prérequis
@@ -24,8 +24,8 @@ Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec ell
 
 ### Accès à l’espace client OVHcloud
 
-- **Lien direct :** [Commandes](/links/control-panel/billing-orders)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Voir mes commandes`{.action}
+- **Lien direct :** [Mes commandes](/links/control-panel/billing-orders)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes commandes`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -45,11 +45,11 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
-Vous pouvez à tout moment retrouver votre bon de commande sur la page [Commandes](/links/control-panel/billing-orders), comme expliqué ci-dessous.
+Vous pouvez à tout moment retrouver votre bon de commande sur la page [Mes commandes](/links/control-panel/billing-orders), comme expliqué ci-dessous.
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Ouvrez la page [Commandes](/links/control-panel/billing-orders).
+Ouvrez la page [Mes commandes](/links/control-panel/billing-orders).
 
 ![Espace client](images/huborders.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 ### Suivre votre commande
 
-Après génération de votre bon de commande, vous pouvez le suivre depuis la page [Commandes](/links/control-panel/billing-orders) :
+Après génération de votre bon de commande, vous pouvez le suivre depuis la page [Mes commandes](/links/control-panel/billing-orders) :
 
 * Cliquez sur le bouton `...`{.action} devant votre commande.
 * Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne `État`.
@@ -108,7 +108,7 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 > Enfin, il ne s'applique pas à certains services (notamment les [noms de domaines](/links/web/domains) et les [certificats SSL Sectigo](/links/web/hosting-options-ssl)). Lors de la commande de ces produits, il vous est de ce fait demandé de renoncer expressément à votre droit de rétractation, conformément à l'article L.221-28 du code de la consommation.
 >
 
-Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis la page [Commandes](/links/control-panel/billing-orders) :
+Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis la page [Mes commandes](/links/control-panel/billing-orders) :
 
 * Cliquez sur le bouton `...`{.action} devant votre commande.
 * Sélectionnez `Annuler la commande`{.action}.

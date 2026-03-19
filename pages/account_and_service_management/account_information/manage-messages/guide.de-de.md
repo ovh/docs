@@ -17,8 +17,8 @@ Beim Anlegen Ihres OVHcloud Kunden-Accounts haben Sie eine E-Mail-Adresse als Ko
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Nachrichten](/links/control-panel/account-messages)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Dienst-E-Mails`{.action}
+- **Direkter Link:** [Meine Kommunikation](/links/control-panel/account-messages)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Kommunikation`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

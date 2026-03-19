@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2026-02-03
+updated: 2026-03-17
 ---
 
 <style>
@@ -16,7 +16,7 @@ updated: 2026-02-03
    margin-bottom: 5px;
  }
  pre.console code {
-   b   font-family: monospace !important;
+   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -266,16 +266,18 @@ To prevent network conflicts, it is recommended to **keep the DHCP service runni
 
 #### Reserved IP ranges
 
-The following ranges are used by the cluster, and should not be used elsewhere on the private network attached to the cluster:
+By default, the following ranges are used by the cluster, and should not be used elsewhere on the private network attached to the cluster:
 
 ```bash
 10.240.0.0/13 # Subnet used by pods
 10.3.0.0/16 # Subnet used by services
 ```
 
+However, these ranges can be customised either when creating a cluster or when resetting an existing one by following this guide: [Customising IP allocation on an OVHcloud Managed Kubernetes cluster (Standard plan only)](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-pods-services-ip-allocation).
+
 > [!warning]
 >
-> These ranges are fixed for now but will be configurable in a future release. Do not use them elsewhere in your private network.
+> The subnet ranges cannot be modified on a running cluster without resetting it and losing all data.
 >
 
 ## Cluster health

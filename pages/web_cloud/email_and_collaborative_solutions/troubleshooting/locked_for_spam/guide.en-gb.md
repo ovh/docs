@@ -13,7 +13,33 @@ When your email address is blocked for spam, it means that suspicious activity h
 ## Requirements
 
 - An [OVHcloud email solution](/links/web/emails)
-- Access to the [OVHcloud Control Panel](/links/manager), `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+**MX Plan:**
+
+- **Direct link:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Navigation path:** `Web Cloud`{.action} > `MX Plan`{.action} > Select your MX Plan service
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instructions <a name="instructions"></a>
 
@@ -67,11 +93,6 @@ Select the relevant email solution in the following tabs:
 > [!tabs]
 > **Exchange**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Go to the `Web Cloud`{.action} section.
->> 1. In the `MICROSOFT` section, click `Exchange`{.action}.
->> 1. Select the platform concerned.
->>
 >> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column for the email address concerned shows "Blocked", click `...`{.action} to the right of the account, then `Unblock`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
 >> Proceed to [step 3](#step3) of the guide.
 >>
@@ -79,22 +100,12 @@ Select the relevant email solution in the following tabs:
 >>
 > **Email Pro**
 >>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Click the `Web Cloud`{.action} tab.
->> 1. Click `Email Pro`{.action}.
->> 1. Select the platform concerned.
->>
 >> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column to the right of the email address concerned shows "Spam", click on it, then `Reply to the ticket`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
 >> Proceed to [step 3](#step3) of the guide.
 >>
 >> ![Status column Spam in the Email accounts tab Email Pro](images/blocked-for-SPAM-01-02.png){.thumbnail}
 >>
 > **MX Plan - OWA / Zimbra**
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Click the `Web Cloud`{.action} tab.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
 >>
 >> Go to the `Email accounts`{.action} tab of your platform. If the "Status" column to the right of the email address concerned shows "Spam", click on it, then `Reply to the ticket`{.action}. The email address is not unblocked automatically. Contact the support team via the support ticket by answering the 3 questions asked.<br>
 >> Proceed to [step 3](#step3) of the guide.
@@ -104,11 +115,6 @@ Select the relevant email solution in the following tabs:
 > **MX Plan - RoundCube**
 >>
 >> If the block concerns an MX Plan email address with **RoundCube** webmail, there is no support ticket. Please ensure you read [step 1](#step1) of this guide before following the instructions below.
->>
->> 1. Log in to your [OVHcloud Control Panel](/links/manager).
->> 1. Click the `Web Cloud`{.action} tab.
->> 1. Click `MX Plan`{.action}.
->> 1. Select the domain concerned.
 >>
 >> Go to the `Emails`{.action} tab of your platform. If the "Blocked for SPAM" column shows "Yes", click on it, then `Change password`{.action}. Your email address is now unblocked, you do not need to follow [step 3](#step3).
 >>

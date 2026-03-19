@@ -75,13 +75,21 @@ Voici un schéma (logique) de démarrage Netboot :
 > Cet article est destiné aux utilisateurs expérimentés qui ont un minimum de connaissances concernant le monde open source, ainsi que des notions d'administration système et réseau.
 > 
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 - Posséder au moins un [serveur dédié](/links/bare-metal/bare-metal) ayant un système d'exploitation **déjà installé**.
 - Un serveur dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir un accès au réseau public et privé. Ce serveur hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 - Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
->
-> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 >
 > Sélectionnez votre serveur et vérifiez son éligibilité à `OLA: OVHcloud Link Aggregation` dans l'onglet `Interfaces réseau`{.action}.
 >

@@ -44,7 +44,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 ### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [Gestion des contacts](/links/control-panel/account-contacts)
-- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Gestion des contacts`{.action}
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes contacts`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

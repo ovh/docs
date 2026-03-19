@@ -61,8 +61,8 @@ L'option Backup Automatisé pour les VPS offre un moyen pratique de disposer de 
     - [Sous Windows](#windows)
 - [Bonnes pratiques pour l'utilisation du Backup automatisé](#bestpractice)
     - [Configuration de l'agent QEMU sur un VPS](#qemu)
-        - [Distributions Redhat](#deb)
-        - [Distributions Debian](#red)
+        - [Distributions Debian](#deb)
+        - [Distributions Redhat](#red)
         - [Windows](#win)
 
 
@@ -89,7 +89,7 @@ Cliquez sur le lien `Commander un backup premium`{.action} (services commandés 
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-Lors de l'étape suivante, veuillez prendre note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
+Lors de l'étape suivante, prenez note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé tout au long du processus de commande et recevrez un e-mail de confirmation.
 
 <a name="time"></a>
 
@@ -233,7 +233,7 @@ La fonctionnalité de Backup automatisé est basée sur les snapshots VPS. Nous 
 
 Les snapshots sont des images instantanées de votre système en cours d'exécution (« live snapshots »). Pour garantir la disponibilité de votre système lors de la création du snapshot, l'agent QEMU est utilisé pour préparer le système de fichiers au processus.
 
-L'agent « **qemu-guest-agent** » n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer cet agent au cas où il ne serait pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
+L'agent « **qemu-guest-agent** » n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer cet agent s'il n'est pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
 
 <a name="deb"></a>
 
@@ -312,7 +312,7 @@ sudo service qemu-guest-agent status
 
 Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora : <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
-Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
+Vérifiez que le service est en cours d'exécution à l'aide de la commande PowerShell suivante :
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA

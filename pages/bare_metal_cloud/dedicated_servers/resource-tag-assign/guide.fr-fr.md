@@ -19,20 +19,23 @@ Par exemple, vous pouvez catégoriser vos ressources par site, par service, ou e
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal).
-- Être connecté à l’[espace client OVHcloud](/links/manager).
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
 ### Attribuer un tag à un serveur dédié depuis l’espace client
 
-Pour attribuer un tag à un serveur :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la section `Bare Metal Cloud`{.action}.
-1. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
-
-Par défaut, vous êtes redirigé vers l'onglet `Informations générales`{.action}.
 
 ![Informations générales](images/general_information.png){.thumbnail}
 

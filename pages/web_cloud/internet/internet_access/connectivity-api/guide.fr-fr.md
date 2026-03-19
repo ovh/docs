@@ -28,9 +28,9 @@ Les offres sont visibles [ici](/links/telecom/offre-internet).
 
 Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
 
-* `/pack/xdsl` : Gérer les packages d'offres Internet;
-* `/xdsl` : Gérer les accès Internet, les sous-services et les options;
-* `/connectivity` : va remplacer `/xdsl`. Pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.
+- `/pack/xdsl` : Gérer les packages d'offres Internet ;
+- `/xdsl` : Gérer les accès Internet, les sous-services et les options ;
+- `/connectivity` : va remplacer `/xdsl`. Pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.
 
 ### Éligibilité
 
@@ -325,9 +325,9 @@ Nous avons trouvé un seul bâtiment qui est une maison.
 
 Les cas possibles sont :
 
-* [Je connais le numéro de ligne, je vais l'utiliser pour l'éligibilité](#eligibleTestLine)
-* [Je ne connais pas le numéro de ligne, je vais d'abord devoir le chercher](#eligibleSearchLines)
-* [Je n'ai pas de numéro de ligne, je vais devoir demander une création de ligne à partir d'une ligne voisine](#eligibleTestAddress)
+- [Je connais le numéro de ligne, je vais l'utiliser pour l'éligibilité](#eligibleTestLine)
+- [Je ne connais pas le numéro de ligne, je vais d'abord devoir le chercher](#eligibleSearchLines)
+- [Je n'ai pas de numéro de ligne, je vais devoir demander une création de ligne à partir d'une ligne voisine](#eligibleTestAddress)
 
 ##### **Faire une éligibilité sur une ligne** <a name="eligibleTestLine"></a>
 
@@ -531,10 +531,10 @@ Voici un retour partiel pour l'exemple :
 
 ```
 
-La réponse est composée de :
+La réponse est composée :
 
-* un tableau *result.offers* listant toutes les offres et indiquant si la ligne donnée est éligible ou non;
-* une structure *result.endpoint* qui donne des informations sur la ligne : adresse et caractéristiques.
+- d'un tableau *result.offers* listant toutes les offres et indiquant si la ligne donnée est éligible ou non ;
+- d'une structure *result.endpoint* qui donne des informations sur la ligne : adresse et caractéristiques.
 
 Voici une description des codes d'offre:
 
@@ -747,8 +747,8 @@ La réponse :
 
 Pour une éligibilité fibre, nous avons deux cas de figure :
 
-* J'ai un identifiant fibre OTP (Optical Termination Point), que je vais utiliser pour tester l'éligibilité;
-* Je n'ai pas d'identifiant OTP fibre et utiliserai un identifiant * bâtiment * pour vérifier l'admissibilité.
+- J'ai un identifiant fibre OTP (Optical Termination Point), que je vais utiliser pour tester l'éligibilité ;
+- Je n'ai pas d'identifiant OTP fibre et utiliserai un identifiant *bâtiment* pour vérifier l'admissibilité.
 
 Un *building* peut être une maison ou un immeuble à logements multiples. Le *building* peut être trouvé à partir d'une adresse ou d'une ligne de cuivre existante.
 

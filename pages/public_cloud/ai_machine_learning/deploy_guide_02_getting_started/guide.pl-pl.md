@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2025-12-17
+updated: 2026-03-18
 ---
 
 > [!primary]
@@ -101,7 +101,7 @@ Then you can modify the **Number of replicas** on which your AI Deploy app will 
 
 The **static scaling** strategy allows you to choose a fixed number of replicas on which the app will be deployed. For this method, the minimum number of replicas is **1** and the maximum is **10**. This strategy is useful when your consumption or inference load is fixed. Moreover, it allows you to have fixed costs.
 
-With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
+With the **autoscaling strategy**, it is possible to choose both the minimum number of replicas (1 by default) and the maximum number of replicas. **High availability** will measure the average resource usage across its replicas and add instances if this average exceeds the specified average usage percentage threshold. Conversely, it will remove instances when this average resource utilisation falls below the threshold. You can even downscale to 0 if you have no usage, thereby limiting costs. The monitored metric can either be `CPU` or `RAM`, or a custom metric. This solution might be better if you have irregular or sawtooth inference loads.
 
 For more detailed information about scaling strategies, please refer to our dedicated guide: [AI Deploy - Scaling strategies](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies).
 

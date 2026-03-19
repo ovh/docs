@@ -17,10 +17,10 @@ Dans ce guide, vous verrez comment tirer parti de l'interface du modem Zyxel pou
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) et d'un modem Zyxel fourni par OVHcloud.
-- Disposer d'un [service et d'un boitier OverTheBox](https://www.ovhcloud.com/fr/internet/overthebox/).
+- Disposer d'un [service et d'un boîtier OverTheBox](https://www.ovhcloud.com/fr/internet/overthebox/).
 - La configuration à distance du modem doit être [désactivée](#desactiver-configuration-distance).
-- Une OverTheBox Plus ou une OverTheBox IT v2 (boitier bleu avec 4 ports), ces modèles fonctionnant sans nécessité de modifier le DHCP des modems.
-- Deux câbles Ethernet RJ45. Le premier servira à brancher le port LAN1 du modem vers un des ports WAN de l'OverTheBox. Le second pour brancher le port LAN4 du modem vers un des port LAN de l'OverTheBox.
+- Une OverTheBox Plus ou une OverTheBox IT v2 (boîtier bleu avec 4 ports), ces modèles fonctionnant sans nécessité de modifier le DHCP des modems.
+- Deux câbles Ethernet RJ45. Le premier servira à brancher le port LAN1 du modem vers un des ports WAN de l'OverTheBox. Le second pour brancher le port LAN4 du modem vers un des ports LAN de l'OverTheBox.
 
 <!-- CP-NAV-START:telecom-xdsl-fttx -->
 ---
@@ -86,7 +86,7 @@ Donnez un nouveau nom au groupe (`OverTheBox` dans cet exemple). Sélectionnez l
 
 Dans la dernière partie apparaissent deux listes, `Available LAN Interfaces` et `Selected LAN Interfaces`.
 <br>Vous devez déplacer vers la droite les interfaces que vous souhaitez ajouter au LAN de votre OverTheBox. Dans le cadre de ce guide, il vous faut déplacer vers la droite au moins un port LAN, ainsi que les réseaux WiFi présents sur le modem.
-<br>Si vous le souhaitez, vous pouvez également déplacer les port LAN2 et LAN3 afin qu'ils soient également présents dans le LAN de votre OverTheBox.
+<br>Si vous le souhaitez, vous pouvez également déplacer les ports LAN2 et LAN3 afin qu'ils soient également présents dans le LAN de votre OverTheBox.
 
 Une fois les interfaces souhaitées déplacées dans la section `Selected LAN Interfaces`, cliquez sur `OK`{.action} pour valider votre choix. Le modem va alors déplacer les interfaces dans le groupe `OverTheBox`. Un délai peut être nécessaire avant que ne s'affichent les deux groupes d'interfaces `Default` et `OverTheBox`.
 
@@ -108,7 +108,7 @@ Une fois les modifications effectuées, cliquez sur le bouton `Apply`{.action} p
 
 ### Étape 5 : relier physiquement le groupe OverTheBox au LAN de votre boîtier OverTheBox
 
-Pour que le groupe `OverTheBox` configuré sur votre modem Zyxel soit inclus dans le LAN de votre boîtier OverTheBox, il faut les relier physiquement à l'aide du cable Ethernet RJ45.
+Pour que le groupe `OverTheBox` configuré sur votre modem Zyxel soit inclus dans le LAN de votre boîtier OverTheBox, il faut les relier physiquement à l'aide du câble Ethernet RJ45.
 
 Branchez la première extrémité du câble dans le port LAN4 du modem Zyxel, la seconde extrémité dans le port LAN1 de votre boîtier OverTheBox.
 <br>Vous pouvez également vous brancher sur un switch derrière votre boîtier OverTheBox, l'important est que le port LAN4 du modem Zyxel soit bien branché dans le LAN de votre OverTheBox.
@@ -119,7 +119,7 @@ Branchez la première extrémité du câble dans le port LAN4 du modem Zyxel, la
 
 Si vous avez besoin d'aide pour configurer le réseau WiFi de votre modem Zyxel, vous pouvez consulter le [guide utilisateur Zyxel (en anglais)](http://files.isp.ovhcloud.com/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf).
 
-Une fois votre appareil connecté au WiFi, vérifiez que votre adresse IP correspond au DHCP de l'OverTheBox. Dans l'image ci-dessous, sur un téléphone Android, l'adresse IP 192.168.100.189 est bien incluse dans la plage d'adresses du DHCP de l'OverTheBox (192.168.100.0/24). L'IP de la passerelle, 192.168.100.1, correspond bien à l'IP du boitier OverTheBox au sein du LAN.
+Une fois votre appareil connecté au WiFi, vérifiez que votre adresse IP correspond au DHCP de l'OverTheBox. Dans l'image ci-dessous, sur un téléphone Android, l'adresse IP 192.168.100.189 est bien incluse dans la plage d'adresses du DHCP de l'OverTheBox (192.168.100.0/24). L'IP de la passerelle, 192.168.100.1, correspond bien à l'IP du boîtier OverTheBox au sein du LAN.
 
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step6-1.png){.thumbnail}
 

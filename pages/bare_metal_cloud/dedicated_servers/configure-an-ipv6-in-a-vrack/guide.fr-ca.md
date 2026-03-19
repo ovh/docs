@@ -1,7 +1,7 @@
 ---
-title: Configurer un bloc IPv6 dans un vRack
+title: Configurer un bloc Additional IPv6 dans un vRack
 excerpt: "Découvrez comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
-updated: 2025-06-04
+updated: 2026-03-13
 ---
 
 <style>
@@ -59,7 +59,17 @@ En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuv
 
 - Un service [vRack](/links/network/vrack) actif sur votre compte
 - Un [serveur compatible vRack](/links/network/vrack) connecté à votre réseau vRack
-- Un accès à [l'espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-vrack -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [vRack](/links/control-panel/network-vrack)
+- **Pour accéder à vos services :** `Network`{.action} > `Réseau Privé vRack`{.action}
+
+---
+<!-- CP-NAV-END:network-vrack -->
 
 > [!warning]
 > Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](/links/bare-metal/eco-about).
@@ -95,10 +105,6 @@ L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack config
 La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridgé) est la première adresse du bloc /56. Dans cet exemple, la passerelle est `2001:41d0:abcd:ef00::1`. Celle-ci est distribuée via SLAAC, mais doit être configurée manuellement (en tant que route par défaut) si le SLAAC est désactivé (voir la section **Configuration IP statique** ci-dessous).
 
 /// details | Via l'espace client OVHcloud
-
-- Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
-- Cliquez sur `réseau Privé vRack`{.action}.
-- Sélectionnez le vRack concerné.
 
 ![vrack management](images/700.png){.thumbnail}
 
@@ -199,6 +205,65 @@ Comme dans l'exemple ci-dessous :
 ![API call POST enable SLAAC](images/20240418-07.png){.thumbnail}
 
 N'oubliez pas de configurer SLAAC sur votre machine hôte.
+
+///
+
+### Gérer la bande passante des IP publiques sur le vRack
+
+Par défaut, les blocs d'Additional IP routés via un vRack bénéficient d'une bande passante publique standard de 5 Gbps en Europe et en Amérique du Nord, ou de 100 Mbps dans les régions APAC. Pour plus de détails sur les offres disponibles, consultez les options de routage public sur notre [page produit vRack](/links/network/vrack).
+
+Pour répondre à la montée en charge des infrastructures et aux besoins des services à fort trafic, OVHcloud propose des options de bande passante payantes. Notez que ces options s'appliquent **par vRack et par région**. Comme les Additional IP sont liées à une région précise, toute modification de la bande passante impactera l'ensemble des adresses (IPv4 et IPv6) routées vers ce vRack dans la région concernée.
+
+/// details | Lors de la commande d'une Additional IP
+
+#### Choisir la bande passante publique lors de la commande
+
+Vous pouvez modifier la bande passante par défaut au moment de commander un nouveau bloc d'Additional IP, dès lors qu'un réseau vRack est sélectionné comme service backend.
+
+Pour commander un nouveau bloc d'Additional IPv6 :
+
+- Connectez-vous à [l'espace client OVHcloud](/links/manager).
+- Dans la barre latérale gauche, accédez à la section `Network`{.action}.
+- Sélectionnez `Adresses IP Publiques`{.action}.
+- Cliquez sur le bouton `Commander des IPs`{.action} en haut de la page.
+- Choisissez la version de l'IP, puis le vRack auquel l'Additional IP sera rattachée.
+- Sélectionnez la région de votre Additional IP.
+- Choisissez la bande passante publique à appliquer à votre vRack pour cette région.
+- Configurez les autres options selon vos besoins, puis finalisez la commande.
+
+///
+
+/// details | Depuis la page de gestion du vRack
+
+#### Modifier la bande passante publique depuis la page de gestion
+
+Pour les blocs d'Additional IP déjà rattachés à un vRack, la bande passante se gère directement depuis la page de configuration du service.
+
+Pour accéder à l'interface de gestion :
+
+- Dans la barre latérale gauche du Tableau de bord, ouvrez `Network`{.action}.
+- Sélectionnez `Réseau Privé vRack`{.action}.
+- Dans la colonne « Adresse IP publique et bande passante », cliquez sur le bouton `Gérer`{.action} correspondant au vRack souhaité.
+
+L'interface de gestion se divise en deux onglets :
+
+- **Tous les services attachés** : Redirige actuellement vers la page de gestion classique du vRack. Prochainement, cet onglet listera de façon optimisée tous les produits (serveurs, projets Cloud, etc.) liés au vRack.
+- **Connectivité IP publique** : Permet de gérer les options de routage public de votre vRack, y compris la bande passante.
+
+Pour modifier la bande passante :
+
+- Allez dans l'onglet `Connectivité IP publique`{.action}.
+- L'interface affiche des fenêtres de gestion par région (ex : `eu-west-par`) associées au vRack, avec la liste des IP rattachées.
+- Dans l'encadré de la région concernée, cliquez sur `Modifier la bande passante`{.action}.
+- Sélectionnez l'option souhaitée dans le panneau de droite, puis cliquez sur `Commander`{.action} pour valider.
+- Une fois le paiement effectué, la nouvelle bande passante sera effective sur votre vRack dans la région choisie après quelques minutes.
+
+> [!primary]
+>
+> Le premier mois souscrit est facturé au prorata des jours restants. Le tarif complet s'appliquera lors du cycle de facturation suivant.
+>
+
+L'augmentation de bande passante s'appliquera à toutes les adresses IP de cette région pour le vRack sélectionné.
 
 ///
 

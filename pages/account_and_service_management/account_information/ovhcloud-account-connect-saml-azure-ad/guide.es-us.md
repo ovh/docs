@@ -21,7 +21,7 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 ### Acceso al área de cliente de OVHcloud
 
 - **Enlace directo:** [SAML SSO](/links/control-panel/iam-saml-sso)
-- **Ruta de navegación:** `Identity, Security & Operations`{.action} > `Users`{.action} > `SSO connection`{.action}
+- **Ruta de navegación:** `Identidad, seguridad y operaciones`{.action} > `Users`{.action} > `SSO connection`{.action}
 
 ---
 <!-- CP-NAV-END:iam-saml-sso -->

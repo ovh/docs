@@ -36,7 +36,17 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 
 * Posséder un serveur dédié avec un hyperviseur installé (Citrix Xen Server, Proxmox, par exemple).
 * Bénéficier d'au moins une adresse [Additional IP](/links/network/additional-ip) routée vers le serveur.
-* Être connecté à votre [espace client OVHcloud](/links/manager) ou à l['API OVHcloud](/pages/manage_and_operate/api/first-steps).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [IP publiques](/links/control-panel/network-public-ip)
+- **Pour accéder à vos services :** `Network`{.action} > `Adresses IP Publiques`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
@@ -66,8 +76,6 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 > [!warning]
 > Dans le cas d'un bloc d'IP, les adresses MAC virtuelles se créent sur chaque IP individuelle dans le bloc.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
-
 Vous pouvez utiliser le menu déroulant sous **Mes adresses IP publiques et services associés** et séléctionner **Toutes les Additional IP** pour filtrer vos services, ou taper directement l'adresse IP désirée dans la barre de recherche.
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
@@ -90,8 +98,6 @@ Vous pouvez récupérer l'adresse de la passerelle via [votre espace client](#vi
 
 > [!tabs]
 > **Via votre espace client**
->>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédies`{.action}.
 >>
 >> La gateway IPv4 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copié, poursuivez l'application de la configuration.
 >>

@@ -18,11 +18,21 @@ Para isso, pode delegar noutras contas de cliente da OVHcloud direitos de leitur
 ## Requisitos
 
 - Ter uma instância [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
-## Instruções 
+## Instruções
 
-Ligue-se à sua  [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. Clique em `Contactos e direitos`{.action} na secção **Parâmetros**.
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
+Clique em `Contactos e direitos`{.action} na secção **Parâmetros**.
 
 Esta página permite-lhe ver os contactos associados ao seu projeto.
 

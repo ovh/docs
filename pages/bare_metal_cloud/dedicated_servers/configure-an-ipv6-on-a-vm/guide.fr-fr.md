@@ -20,10 +20,21 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d’un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
+- Avoir installé un système d’exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
 - Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle, etc.).
 - Avoir des connaissances de base en SSH et en réseau.
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
@@ -49,8 +60,6 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 - Obtenir les informations réseau via les API
 
 #### Via votre espace client
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs dédiés`{.action}.
 
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}.
 

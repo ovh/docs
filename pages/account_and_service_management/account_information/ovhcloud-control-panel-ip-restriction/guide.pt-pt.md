@@ -27,8 +27,8 @@ A implementação desta opção, associada à proteção da sua conta com uma [d
 
 ### Acesso à Área de Cliente OVHcloud
 
-- **Ligação direta:** [Account security](/links/control-panel/account-security)
-- **Caminho de navegação:** Clique no seu nome no canto superior direito > `My account`{.action} > `Security`{.action}
+- **Ligação direta:** [Segurança](/links/control-panel/account-security)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Aceder à minha conta`{.action} > `Segurança`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

@@ -44,7 +44,7 @@ La manipulation est différente selon le modèle de votre box. Rapprochez-vous d
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG788vn et TG788vn V2](images/tg788_power.png){.thumbnail}
@@ -53,7 +53,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG789vn](images/tg789n_power.png){.thumbnail}
@@ -62,7 +62,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG789vn](images/tg799_power.png){.thumbnail}
@@ -71,7 +71,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel DX3301-T0](images/zyxeldx3301t0-reboot.png){.thumbnail}
@@ -80,7 +80,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8924-B10D](images/zyxelb10d_power.jpg){.thumbnail}
@@ -89,7 +89,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8823-B50B](images/zyxelb50b_power.jpg){.thumbnail}
@@ -98,7 +98,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8825-T50](images/zyxelVMG8825T50_power.jpg){.thumbnail}
@@ -107,7 +107,7 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 
 Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
 
-- Débrancher puis rebrancher électriquement la box;
+- Débrancher puis rebrancher électriquement la box ;
 - Actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage Zyxel VMG8623-T50B](images/zyxelVMG8623T50B_power.jpg){.thumbnail}

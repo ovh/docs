@@ -20,19 +20,23 @@ For example, you can categorize your resources by site, service, or even securit
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Dedicated Servers](/links/control-panel/baremetal-dedicated-servers)
+- **Navigation path:** `Bare Metal Cloud`{.action} > `Dedicated servers`{.action} > Select your server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Instructions
 
 ### Assign a tag to a dedicated server via the OVHcloud Control Panel
 
-To tag a server:
 
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Go to the `Bare Metal Cloud`{.action} section.
-1. Click `Dedicated servers`{.action} and select your server from the list.
-
-By default, you are redirected to the `General information`{.action} tab.
 
 ![General information](images/general_information.png){.thumbnail}
 

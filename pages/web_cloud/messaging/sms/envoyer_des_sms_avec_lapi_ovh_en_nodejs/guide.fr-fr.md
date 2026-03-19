@@ -1,6 +1,6 @@
 ---
-title: 'Envoyer des SMS avec l’API OVHcloud en Node.js'
-excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en Node.js'
+title: "Envoyer des SMS avec l’API OVHcloud en Node.js"
+excerpt: "Découvrez comment configurer un environnement Node.js et envoyer votre premier SMS pas à pas avec le wrapper de l’API RESTful OVHcloud"
 updated: 2020-06-18
 ---
 
@@ -46,7 +46,7 @@ Dans cet exemple simple, nous récupérons les droits pour avoir accès aux info
 - GET/sms/\*/jobs/
 - POST /sms/\*/jobs/
 
-L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par «/sms/NOM-DU-COMPTE/».
+L’étoile (\*) active les appels à ces méthodes pour tous vos comptes SMS. Vous pouvez également restreindre les appels à un seul compte, si vous gérez plusieurs comptes SMS sur votre compte OVHcloud, en remplaçant « /sms » par « /sms/NOM-DU-COMPTE » et « /sms/\*/ » par « /sms/NOM-DU-COMPTE/ ».
 
 Vous récupérez vos identifiants pour votre script :
 

@@ -13,7 +13,26 @@ Lorsque votre adresse e-mail est bloquée pour spam, cela signifie qu'une activi
 ## Prérequis
 
 - Disposer d'une [offre e-mail OVHcloud](/links/web/emails).
-- Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique <a name="instructions"></a>
 
@@ -52,22 +71,12 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants :
 > [!tabs]
 > **Exchange**
 >>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
->> 1. Dans la rubrique `MICROSOFT`, cliquez sur `Exchange`{.action}.
->> 1. Sélectionnez la plateforme concernée.
->>
 >> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. L'adresse e-mail ne se débloque pas automatiquement. Contactez le support via le ticket d'assistance en répondant aux 3 questions posées.<br>
 >> Passez à [l'étape 3](#step3) du guide.
 >>
 >> ![Colonne statut bloqué dans l'onglet Comptes e-mail Exchange](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
 > **MX Plan**
->>
->> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
->> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
->> 1. Cliquez sur `MX Plan`{.action}.
->> 1. Sélectionnez le domaine concerné.
 >>
 >> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. L'adresse e-mail ne se débloque pas automatiquement. Contactez le support via le ticket d'assistance en répondant aux 3 questions posées.<br>
 >> Passez à [l'étape 3](#step3) du guide.

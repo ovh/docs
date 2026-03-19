@@ -17,8 +17,8 @@ When you created your OVHcloud account, you specified a contact email address. I
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Messages](/links/control-panel/account-messages)
-- **Navigation path:** Click your name in the top right > `Service emails`{.action}
+- **Direct link:** [My messages](/links/control-panel/account-messages)
+- **Navigation path:** Click your name in the top right > `My messages`{.action}
 
 ---
 <!-- CP-NAV-END:account-messages -->

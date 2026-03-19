@@ -6,13 +6,13 @@ updated: 2025-04-28
 
 ## Objective
 
-When you place an order, you can track and interact with it from your [OVHcloud Control Panel](/links/manager).
+When you place an order, you can track and interact with it from the [My orders](/links/control-panel/billing-orders) page.
 
 **This guide explains how to manage orders via the OVHcloud Control Panel.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts (available on the [Contract list](/links/control-panel/billing-contracts) page).
 >
 
 ## Requirements
@@ -24,8 +24,8 @@ When you place an order, you can track and interact with it from your [OVHcloud 
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Orders](/links/control-panel/billing-orders)
-- **Navigation path:** Click your name in the top right > `View my orders`{.action}
+- **Direct link:** [My orders](/links/control-panel/billing-orders)
+- **Navigation path:** Click your name in the top right > `My orders`{.action}
 
 ---
 <!-- CP-NAV-END:billing-orders -->
@@ -45,11 +45,11 @@ The purchase order is created when you place your order. It lists the products o
 |3|Payment methods saved to your customer account. For more information, please refer to our guide [Managing payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Payment methods available. You will only be offered payment methods that are authorised in the account’s country of origin, or those linked to the account type you have registered.|
 
-You can view your purchase order at any time on the [Orders](/links/control-panel/billing-orders) page, as explained below.
+You can view your purchase order at any time on the [My orders](/links/control-panel/billing-orders) page, as explained below.
 
 ### Access purchase orders via the OVHcloud Control Panel
 
-Open the [Orders](/links/control-panel/billing-orders) page.
+Open the [My orders](/links/control-panel/billing-orders) page.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 
@@ -79,7 +79,7 @@ You can also view the purchase order in HTML format by clicking on `...`{.action
 
 ### Track your order
 
-After generating your purchase order, you can track your order from the [Orders](/links/control-panel/billing-orders) page:
+After generating your purchase order, you can track your order from the [My orders](/links/control-panel/billing-orders) page:
 
 - Click the `...`{.action} button in front of your order.
 - Select `Order tracking`{.action}. Order tracking can also be displayed by clicking the status of an order in the `Status` column.
@@ -108,7 +108,7 @@ The terms and conditions for the right of withdrawal can be found in the remaind
 > Finally, it does not apply to certain services (notably [domain names](/links/web/domains) and [Sectigo SSL certificates](/links/web/hosting-options-ssl)). When you order these products, you are therefore asked to expressly waive your right of withdrawal, in accordance with article L.221-28 of the French Consumer Code.
 >
 
-If the eligibility criteria for the right of withdrawal are met, it can be applied directly from the [Orders](/links/control-panel/billing-orders) page:
+If the eligibility criteria for the right of withdrawal are met, it can be applied directly from the [My orders](/links/control-panel/billing-orders) page:
 
 - Click the `...`{.action} button in front of your order.
 - Select `Cancel the order`{.action}.

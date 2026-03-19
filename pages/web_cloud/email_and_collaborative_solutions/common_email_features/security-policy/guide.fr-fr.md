@@ -13,7 +13,33 @@ Les services e-mail d'OVHcloud permettent de bénéficier d’adresses e-mail pr
 ## Prérequis
 
 - Disposer d'une [offre e-mail OVHcloud](/links/web/emails).
-- Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Accès à l'espace client OVHcloud
+
+**MX Plan :**
+
+- **Lien direct :** [MX Plan](/links/control-panel/web-mx-plan)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `MX Plan`{.action} > Sélectionnez votre service MX Plan
+
+**Email Pro :**
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+**Exchange :**
+
+- **Lien direct :** [Exchange](/links/control-panel/web-exchange)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Exchange`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## En pratique
 
@@ -24,11 +50,11 @@ La gestion de la politique de sécurité de votre service e-mail peut interagir 
 - renforcer la vérification des messages entrants sur nos serveurs et à destination de vos adresses e-mail (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange));
 - définir comment les messages dits « indésirables » s'afficheront dans vos boites aux lettres (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange)).
 
-Pour accéder à la politique de sécurité de votre service e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) et assurez-vous de vous situer dans la section `Web Cloud`{.action}.
+Pour accéder à la politique de sécurité de votre service e-mail, suivez les indications ci-dessous.
 
-|MX Plan et E-mail Pro|Exchange|
+|MX Plan et Email Pro|Exchange|
 |---|---|
-|Cliquez sur `MX Plan`{.action} ou `E-mail Pro`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}|Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Sécurité`{.action}|
+|Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}.|Cliquez sur l'onglet `Sécurité`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]
@@ -52,7 +78,7 @@ Pour cela, complétez les informations mentionnées ci-dessous :
 - **Délai de réinitialisation**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai nécessaire en minutes pour que le compteur de tentatives de connexion infructueuses se remette à zéro.
 - **Durée de verrouillage**: Ce champ apparaît uniquement si un seuil de verrouillage a été défini. Précisez le délai en minutes durant lequel le compte e-mail restera verrouillé si le seuil de verrouillage a été atteint.
 
-Une fois ces informations complétées, validez ces changements en cliquant sur `Suivant`{.action}, puis sur `Valider`{.action} pour les offres « MX Plan » et « E-mail Pro ». Cliquez sur `Enregistrer les modifications`{.action} pour l'offre Exchange.
+Une fois ces informations complétées, validez ces changements en cliquant sur `Suivant`{.action}, puis sur `Valider`{.action} pour les offres « MX Plan » et « Email Pro ». Cliquez sur `Enregistrer les modifications`{.action} pour l'offre Exchange.
 
 ### Complexifier la sécurité des mots de passe <a name="password-complexity"></a>
 
@@ -66,7 +92,7 @@ Pour cela, complétez les informations mentionnées ci-dessous :
 - **Conserver l'historique du mot de passe (Exchange uniquement)**: Ce champ apparaît uniquement si une durée de vie maximale a été définie. Précisez la durée de vie, en jours, des précédents mots de passe qui peuvent être de nouveau utilisés.
 - **Longueur minimale du mot de passe**: Permet d'imposer une taille minimale concernant la longueur des mots de passe lorsqu'un utilisateur souhaite le modifier.
 
-Une fois ces informations complétées, validez ces changements en cliquant sur `Suivant`{.action}, puis sur `Valider`{.action} pour les offres « MX Plan » et « E-mail Pro ». Cliquez sur `Enregistrer les modifications`{.action} pour l'offre Exchange.
+Une fois ces informations complétées, validez ces changements en cliquant sur `Suivant`{.action}, puis sur `Valider`{.action} pour les offres « MX Plan » et « Email Pro ». Cliquez sur `Enregistrer les modifications`{.action} pour l'offre Exchange.
 
 ### Renforcer la vérification des messages entrants (Exchange uniquement) <a name="incoming-messages-verification"></a>
 

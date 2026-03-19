@@ -35,7 +35,17 @@ Esquema dos serviços de infraestrutura e de proteção dos jogos anti-DDoS na O
 ## Requisitos
 
 - Um [servidor dedicado **Game** da OVHcloud](/links/bare-metal/game)
-- Acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public IP](/links/control-panel/network-public-ip)
+- **Caminho de navegação:** `Network`{.action} > `Endereços IP Públicos`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos servidores da [**gama Eco**](/links/bare-metal/eco-about).
@@ -59,7 +69,7 @@ A infraestrutura anti-DDoS, associada à firewall Edge Network, protege a rede c
 > O *Firewall Game* protege o IP associado a um servidor. Por conseguinte, se possui um servidor com vários endereços IP (ex: [endereços Additional IPs](/links/network/additional-ip)), deve configurar cada um separadamente.
 >
 
-Para configurar as regras de proteção de jogos do seu servidor Bare Metal Game, aceda à Área de Cliente OVHcloud e siga estas etapas:
+Para configurar as regras de proteção de jogos do seu servidor Bare Metal Game, siga estas etapas:
 
 - Clique em `Network`{.action} no menu à esquerda do ecrã.
 - Clique em `Endereços IP Públicos`{.action}.

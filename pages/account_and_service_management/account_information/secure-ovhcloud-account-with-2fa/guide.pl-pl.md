@@ -43,8 +43,8 @@ Z tego przewodnika dowiesz się:
 
 ### Dostęp do Panelu klienta OVHcloud
 
-- **Link bezpośredni:** [Account security](/links/control-panel/account-security)
-- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `My account`{.action} > `Security`{.action}
+- **Link bezpośredni:** [Bezpieczeństwo](/links/control-panel/account-security)
+- **Ścieżka nawigacji:** Kliknij swoją nazwę w prawym górnym rogu > `Dostęp do konta`{.action} > `Bezpieczeństwo`{.action}
 
 ---
 <!-- CP-NAV-END:account-security -->

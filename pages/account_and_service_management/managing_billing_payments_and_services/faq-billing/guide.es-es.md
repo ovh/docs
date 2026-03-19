@@ -18,7 +18,7 @@ Si desea más información sobre la gestión de los contactos, consulte nuestra 
 
 ### ¿Cómo modificar los datos de facturación?
 
-Los datos de facturación son los que haya indicado en su cuenta de cliente. Para sus próximas facturas, solo tiene que actualizar esta información en la página [Perfil de usuario](/links/control-panel/account-profile).
+Los datos de facturación son los que haya indicado en su cuenta de cliente. Para sus próximas facturas, solo tiene que actualizar esta información en la página [Mi perfil](/links/control-panel/account-profile).
 
 Por motivos legales, no es posible modificar una factura ya emitida. No obstante, si su solicitud se debe a un error nuestro, contacte con nosotros mediante un tíquet de soporte.
 
@@ -32,13 +32,13 @@ Si no renueva el servicio antes de la fecha de expiración, este se suspenderá 
 
 #### Ideas y consejos
 
-Para consultar el estado de sus servicios, abra la página [Mis servicios](/links/control-panel/billing-services).
+Para consultar el estado de sus servicios, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services).
 Para renovar sus servicios manualmente, acceda a la página <https://www.ovh.es/cgi-bin/order/renew.cgi>.
 Para más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Cómo activar la renovación automática?
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
 
 #### Ideas y consejos
 
@@ -47,7 +47,7 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo desactivar la renovación automática?
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio que desee configurar, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque esta opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que desee configurar, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque esta opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
 
 Para dar de baja un servicio, consulte la página [¿Cómo dar de baja un servicio?](#cancelservice)
 
@@ -98,7 +98,7 @@ Las soluciones que tengan activada la renovación automática se renovarán el p
 
 #### Ideas y consejos
 
-Abra la página [Mis servicios](/links/control-panel/billing-services). Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones.
+Abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones.
 Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
@@ -111,7 +111,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Dónde consultar las facturas?
 
-Abra la página [Facturas](/links/control-panel/billing-invoices).
+Abra la página [Mis facturas](/links/control-panel/billing-invoices).
 
 #### Ideas y consejos
 
@@ -144,7 +144,7 @@ Tanto los pagos realizados a través de nuestro sitio web como las renovaciones 
 
 ### ¿Cómo dar de baja un servicio? <a name="cancelservice"></a>
 
-Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, abra la página [Mis servicios](/links/control-panel/billing-services). Localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
+Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, abra la página [Mis soluciones y servicios](/links/control-panel/billing-services). Localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
 
 La baja será efectiva una vez finalizado el período de validez o de compromiso del servicio. Puede realizar la solicitud o cancelarla hasta 24 horas antes de la fecha de expiración.
 
@@ -172,7 +172,7 @@ Para consultar el libro mayor, acuda a su propio departamento de contabilidad.
 
 No obstante, OVHcloud pone a su disposición todas sus facturas a través de un archivo de Excel en formato CSV.
 
-Para descargarlo, abra la página [Facturas](/links/control-panel/billing-invoices). Haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
+Para descargarlo, abra la página [Mis facturas](/links/control-panel/billing-invoices). Haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
 
 ## Más información
   

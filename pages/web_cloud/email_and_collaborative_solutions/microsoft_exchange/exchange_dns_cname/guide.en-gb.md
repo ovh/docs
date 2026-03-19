@@ -16,10 +16,29 @@ When you add a domain name to your email service, you may be asked to configure 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Exchange](/links/web/emails-exchange) or [Email Pro](/links/web/email-pro) solution
 - A domain name linked to your email service, see [Adding a domain name to an email service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - Administrative rights to [configure the DNS zone](/pages/web_cloud/domains/dns_zone_edit) for the domain name concerned (in the OVHcloud Control Panel or an external management interface)
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+**Exchange:**
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+**Email Pro:**
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 

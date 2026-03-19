@@ -12,7 +12,7 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts (available on the [Contract list](/links/control-panel/billing-contracts) page).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,8 +26,8 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 ### OVHcloud Control Panel Access
 
-- **Direct link:** [Invoices](/links/control-panel/billing-invoices)
-- **Navigation path:** Click your name in the top right > `Invoices`{.action}
+- **Direct link:** [My bills](/links/control-panel/billing-invoices)
+- **Navigation path:** Click your name in the top right > `My bills`{.action}
 
 ---
 <!-- CP-NAV-END:billing-invoices -->
@@ -36,7 +36,7 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 > [!primary]
 >
-> Each invoice is sent to you by email and accessible via a clickable link. You can then access it by logging in to your [OVHcloud Control Panel](/links/manager). All invoices are also available from the homepage of your Control Panel.
+> Each invoice is sent to you by email and accessible via a clickable link. You can then access it on the [My bills](/links/control-panel/billing-invoices) page. All invoices are also available from the homepage of your Control Panel.
 >
 
 ### Understanding your bill
@@ -59,7 +59,7 @@ Your OVHcloud service bill is sent to you following the payment of an order or a
 
 #### View and manage bills
 
-To view your invoices, open the [Invoices](/links/control-panel/billing-invoices) page.
+To view your invoices, open the [My bills](/links/control-panel/billing-invoices) page.
 
 ![Billing](/pages/assets/screens/control_panel/product-selection/right-menu/my-bills.png){.thumbnail}
 

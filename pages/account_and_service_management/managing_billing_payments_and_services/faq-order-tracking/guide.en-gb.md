@@ -14,19 +14,19 @@ You can only pay for your order once you have logged in to your customer account
 
 #### Tips and tricks
 
-Have you left the order page? Go to the [Orders](/links/control-panel/billing-orders) page. You can then view and pay for your order.
+Have you left the order page? Go to the [My orders](/links/control-panel/billing-orders) page. You can then view and pay for your order.
 
 ### How do I check my payment status?
 
-Open the [Invoices](/links/control-panel/billing-invoices) page. If a bill is pending payment, you will be asked to pay the balance.
+Open the [My bills](/links/control-panel/billing-invoices) page. If a bill is pending payment, you will be asked to pay the balance.
 
 #### Tips and tricks
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
 
 ### How do I track the status of my order?
 
-Open the [Orders](/links/control-panel/billing-orders) page.
+Open the [My orders](/links/control-panel/billing-orders) page.
 
 #### Tips and tricks
 
@@ -62,7 +62,7 @@ Another potential reason may be that you have a bill pending payment. If this is
 
 #### Tips and tricks
 
-On the [Payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
+On the [My payment methods](/links/control-panel/billing-payment-methods) page, you can save your payment method. This way, your bills will be automatically settled.
 
 ## Go further
 

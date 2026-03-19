@@ -40,8 +40,8 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Manage contacts](/links/control-panel/account-contacts)
-- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Contact management`{.action}
+- **Enlace directo:** [Gestión de contactos](/links/control-panel/account-contacts)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis contactos`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

@@ -1,5 +1,6 @@
 ---
-title: Fonctionalités SPA504G
+title: "Fonctionalités SPA504G"
+excerpt: "Découvrez les fonctionnalités de votre téléphone Cisco SPA504G : transfert d'appel, conférence et carnet de contacts"
 flag: hidden
 updated: 2018-03-26
 ---
@@ -50,3 +51,6 @@ Le carnet de contacts est automatiquement mis à jour sur le téléphone lors de
 
 Le translation du nom du carnet poussé par le Manager lors d'un appel entrant n'est pas disponible. Il faut pour cela insérer les contacts dans le répertoire du téléphone directement.
 
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

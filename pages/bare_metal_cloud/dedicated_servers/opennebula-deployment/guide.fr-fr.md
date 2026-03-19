@@ -30,7 +30,17 @@ En suivant ce guide, vous serez en mesure de :
 - **Deux** [serveurs dédiés](/links/bare-metal/bare-metal) des gammes Scale ou High Grade
 - Un service [vRack](/links/network/vrack) actif
 - Un bloc public d'adresses [Additional IP](/links/network/additional-ip), dimensionné selon vos besoins
-- Un accès à [l'espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!primary]
 >
@@ -97,7 +107,7 @@ Le **lien (*bond*) réseau privé** fournit un réseau aux serveurs virtuels, en
 
 #### Paramètres réseau Bare Metal <a name="bare_metal_network_settings"></a>
 
-Depuis votre espace client OVHcloud, accédez à `Bare Metal Cloud`{.action}, puis sélectionnez `Serveurs dédiés`{.action}. Ouvrez les pages de gestion des deux serveurs dédiés et recueillez les paramètres mis en évidence :
+Ouvrez les pages de gestion des deux serveurs dédiés et recueillez les paramètres mis en évidence :
 
 ![page d'administration des serveurs dédiés](images/bare_metal_network.png){.thumbnail}
 

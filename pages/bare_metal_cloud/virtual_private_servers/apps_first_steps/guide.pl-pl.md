@@ -77,7 +77,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 
 > [!primary]
 >
-> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie « sudo whmlogin », aby wygenerować nowy link.
+> Jeśli link już wygasł, połącz się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie `sudo whmlogin`, aby wygenerować nowy link.
 >
 
 <ol start="3">
@@ -142,7 +142,7 @@ Licencję Plesk możesz zamówić dla serwera VPS w [Panelu klienta OVHcloud](ht
 Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalowanego obrazu Docker.
 
 1. Połącz się z serwerem za pomocą SSH za pomocą nazwy użytkownika i hasła dostępnych w wiadomości e-mail.
-2. Sprawdź, czy Docker działa za pomocą polecenia "docker run hello-world".
+2. Sprawdź, czy Docker działa za pomocą polecenia `docker run hello-world`.
 
 Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigurację tej aplikacji.
 
@@ -155,7 +155,7 @@ Ta sekcja ma zastosowanie wyłącznie do instalacji WordPress, Drupal, Joomla! i
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem.](/pages/web_cloud/domains/dns_zone_edit)
+Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).
 <br>Jeśli Twoja domena jest zarejestrowana w innej firmie, skontaktuj się z nią, aby uzyskać pomoc w konfiguracji rekordów `A`.
 
 <ol start="2">
@@ -166,7 +166,7 @@ Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie
 
 > [!warning]
 >
-> Zastąp personaldomain.ovh Twoją własną domeną w następujących zamówieniach.
+> Zastąp personaldomain.ovh Twoją własną domeną w następujących poleceniach.
 >
 
 ```sh
@@ -178,11 +178,11 @@ systemctl restart httpd
 ```
 
 <ol start="4">
-  <li> Generuj certyfikat SSL za pomocą certyfikatu Certbot (postępuj zgodnie z instrukcjami na ekranie).</li>
+  <li> Generuj certyfikat SSL za pomocą Certbot (postępuj zgodnie z instrukcjami na ekranie).</li>
 </ol>
 
 ```sh
-certbot certonly -d personaldomain.ovh —webroot
+certbot certonly -d personaldomain.ovh --webroot
 ```
 
 Gdy zostaniesz poproszony o wprowadzenie "Input the webroot", wpisz zmienną typu "/var/www/wordpress". Jeśli zainstalujesz Joomla!, musisz zastąpić "wordpress" nazwą "joomla".
@@ -198,17 +198,17 @@ Gdy zostaniesz poproszony o udzielenie odpowiedzi na pierwsze pytanie, napisane 
 Otrzymasz następujący wynik, jeśli Twój certyfikat SSL został wygenerowany:
 
 ```sh
-WAŻNE UWAGI:
- - Pogawędki! Your certificate and chain have been saved at:
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
    /etc/letsencrypt/live/personaldomain.ovh/fullchain.pem
    Your key file has been saved at:
    /etc/letsencrypt/live/personaldomain.ovh/privkey.pem
-   Your cert will wygasa 2020-11-12. To obtain a new or tweaked
+   Your cert will expire on 2020-11-12. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot again
-   with the "certonly" opcja. To non-interactively renew *all* of
+   with the "certonly" option. To non-interactively renew *all* of
    your certificates, run "certbot renew"
 ```
 
 ## Idź dalej
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie [community.ovh.com](/links/community).

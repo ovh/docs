@@ -89,7 +89,7 @@ OVHcloud met à votre disposition sur le site <http://proof.ovh.net/> un outil p
 
 Afin que celui-ci puisse s'effectuer dans les meilleures conditions, nous vous recommandons au préalable de :
 
-- Limiter au maximum (voire intégralement) l'utilisation de votre connexion Internet;
+- Limiter au maximum (voire intégralement) l'utilisation de votre connexion Internet ;
 - Réaliser la vérification sur un équipement relié via un câble Ethernet à votre modem.
 
 Une fois prêt, cliquez sur `Lancer le test`{.action} puis patientez. Dès que le résultat s'affiche, vérifiez que le débit descendant (dit « download » pour les données reçues) et montant (dit « upload » pour les données envoyées) correspondent à ce que votre ligne peut livrer. Nous vous recommandons ici de réaliser plusieurs tests et d'en dégager une tendance globale. 

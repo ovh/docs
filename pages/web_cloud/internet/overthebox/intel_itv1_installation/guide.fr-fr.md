@@ -92,7 +92,7 @@ Dans le cas d'une OverTheBox IT v1 :
 >
 
 **Cas d'un modem Technicolor TG788 ou TG789 fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG788 ou TG789 est 192.168.**1**.254.
-**Cas d'un modem Technicolor TGTG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
+**Cas d'un modem Technicolor TG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
 
 Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24. Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems.
 
@@ -169,7 +169,7 @@ Lors de votre première connexion, un assistant d'installation se lance. **Nous 
 > L'enregistrement est terminé, patientez quelques minutes avant de passer à l'étape suivante.
 >
 
-#### Etape 4 : activation et configuration de l’OverTheBox sur la connexion principale
+#### Étape 4 : activation et configuration de l’OverTheBox sur la connexion principale
 
 > [!warning]
 >
@@ -231,7 +231,7 @@ Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **
 >
 
 **Cas d'un modem Technicolor TG788 ou TG789 fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG788 ou TG789 est 192.168.**1**.254.
-**Cas d'un modem Technicolor TGTG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
+**Cas d'un modem Technicolor TG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
 
 Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24. Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems.
 

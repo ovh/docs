@@ -38,8 +38,8 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Kontakte verwalten](/links/control-panel/account-contacts)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Kontaktverwaltung`{.action}
+- **Direkter Link:** [Verwaltung der Kontakte](/links/control-panel/account-contacts)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Meine Kontakte`{.action}
 
 ---
 <!-- CP-NAV-END:account-contacts -->

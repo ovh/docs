@@ -25,6 +25,17 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 - Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle, etc.).
 - Avoir des connaissances de base en SSH et en réseau.
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## En pratique
 
 Les sections suivantes contiennent les configurations des distributions que nous proposons actuellement et les distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou via une session de connexion GUI (RDP pour un serveur Windows).
@@ -49,8 +60,6 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 - Obtenir les informations réseau via les API
 
 #### Via votre espace client
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs dédiés`{.action}.
 
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}.
 

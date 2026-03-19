@@ -20,7 +20,7 @@ This guide explains how to provide a user with the minimum rights to allow them 
 ### Dostęp do Panelu klienta OVHcloud
 
 - **Link bezpośredni:** [IAM Policies](/links/control-panel/iam-policies)
-- **Ścieżka nawigacji:** `Identity, Security & Operations`{.action} > `Polityki`{.action}
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Polityki`{.action}
 
 ---
 <!-- CP-NAV-END:iam-policies -->

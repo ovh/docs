@@ -1,6 +1,6 @@
 ---
-title: Envoyer des Fax via l’imprimante virtuelle EcoFax - Windows
-excerpt: Comment envoyer des Fax depuis Ecofax en utilisant l'imprimante virtuelle - Version Windows
+title: "Envoyer des Fax via l’imprimante virtuelle EcoFax - Windows"
+excerpt: "Découvrez comment envoyer des Fax depuis Ecofax en utilisant l’imprimante virtuelle - Version Windows"
 updated: 2022-06-24
 ---
 

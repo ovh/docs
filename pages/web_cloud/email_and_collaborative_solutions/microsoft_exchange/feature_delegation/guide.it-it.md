@@ -19,8 +19,27 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 > **Per l'offerta [Email Pro](/links/web/email-pro)** le funzionalità di delega descritte in questa guida possono essere utilizzate esclusivamente tramite [Webmail](/links/web/email). Per utilizzare i protocolli tramite un client di posta elettronica è necessario disporre di un account [Exchange](/links/web/emails-hosted-exchange).
 
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma email OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre delle credenziali dell’account email a cui verranno delegati i diritti
+
+<!-- CP-NAV-START:web-exchange -->
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+**Exchange:**
+
+- **Link diretto:** [Exchange](/links/control-panel/web-exchange)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Exchange`{.action} > Seleziona la tua piattaforma
+
+**Email Pro:**
+
+- **Link diretto:** [Email Pro](/links/control-panel/web-email-pro)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleziona la tua piattaforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedura
 
@@ -39,22 +58,6 @@ Prima di iniziare è necessario definire i diritti da delegare. Ti ricordiamo ch
 Una volta individuato l’account per cui vuoi delegare i diritti, definito i permessi da assegnare e gli account che ne usufruiranno, prosegui con il primo step.
 
 ### Step 1: crea la delega
-
-> [!tabs]
-> **Exchange**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Accedi alla sezione `Web Cloud`{.action}.
->> 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
-> **Email Pro**
->>
->> 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
->> 1. Clicca sulla scheda `Web Cloud`{.action}.
->> 1. Clicca su `Email Pro`{.action}.
->> 1. Seleziona la piattaforma interessata.
->>
 
 Clicca sui tre puntini in corrispondenza dell’account in questione e seleziona `Gestisci le tue deleghe`{.action}.
 

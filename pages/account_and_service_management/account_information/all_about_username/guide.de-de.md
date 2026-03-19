@@ -22,8 +22,8 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 
 ### Zugriff auf das OVHcloud Kundencenter
 
-- **Direkter Link:** [Benutzerprofil](/links/control-panel/account-profile)
-- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Mein Konto`{.action}
+- **Direkter Link:** [Mein Profil](/links/control-panel/account-profile)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Zu meinem Account`{.action} > `Mein Profil bearbeiten`{.action}
 
 ---
 <!-- CP-NAV-END:account-profile -->
@@ -63,7 +63,7 @@ Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwo
 Bei Schwierigkeiten beim Zugriff auf Ihre Haupt-E-Mail-Adresse können Sie über eine Backup-E-Mail-Adresse den Zugang zu Ihrem Account und damit zur Verwaltung Ihrer Dienstleistungen behalten.
 <br>Diese zweite Adresse **muss sich von der ersten unterscheiden**, insbesondere zur Erleichterung der Prozedur im Falle einer Passwortwiederherstellung.
 
-Um diese Backup-E-Mail-Adresse zu hinterlegen, gehen Sie zu Ihrem [Benutzerprofil](/links/control-panel/account-profile) und klicken Sie im Bereich `Mein Profil` auf `Mein Profil bearbeiten`{.action}.
+Um diese Backup-E-Mail-Adresse zu hinterlegen, gehen Sie zu Ihrem [Mein Profil](/links/control-panel/account-profile).
 
 > [!warning]
 > Zur Erinnerung: Es ist sehr wichtig, dass sich die **Backup-E-Mail-Adresse** von der **Haupt-E-Mail-Adresse** des Accounts **unterscheidet**.
@@ -84,9 +84,9 @@ Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHc
 
 #### Meine persönlichen Angaben ändern
 
-Sie können die Daten Ihres Kunden-Accounts ändern. Gehen Sie zu Ihrem [Benutzerprofil](/links/control-panel/account-profile) und klicken Sie im Bereich `Mein Profil` auf `Mein Profil bearbeiten`{.action}.
+Sie können die Daten Ihres Kunden-Accounts ändern. Gehen Sie zu Ihrem [Mein Profil](/links/control-panel/account-profile).
 
-Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Bestätigen`{.action}.
+Bearbeiten Sie Ihre Angaben und klicken sie danach auf den Button `Änderungen speichern`{.action}.
 
 > [!warning]
 >

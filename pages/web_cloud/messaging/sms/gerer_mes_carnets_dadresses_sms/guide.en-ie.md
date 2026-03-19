@@ -1,6 +1,6 @@
 ---
 title: 'Managing SMS address books'
-excerpt: 'Find out how to create an SMS address book in your OVHcloud account'
+excerpt: 'Find out how to create, import and manage SMS address books for your OVHcloud account using the Control Panel and spreadsheet files'
 updated: 2022-08-05
 ---
 
