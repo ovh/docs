@@ -42,15 +42,23 @@ In the OVHcloud Manager, click **Bare Metal Cloud** in the left-hand sidebar, th
 ### 1. To add **vCores**
 
 <!-- CP-STEPS-START:add-vcores -->
-Click the **Upgrade** tab. A 3-step wizard is displayed: **Select model**, **Conditions**, and **Summary**.
+Under the **Home** tab in the **Your configuration** panel, click `Add vCores by upgrading to the higher range`{.action}.
 
-Select a higher-range model using the radio card selector, then click `Next`{.action}.
+Choose a new model and click `Next`{.action}.
 
-Accept the terms and conditions, then click `Next`{.action}.
+![Upgrade resources](images/vps_upgrade02.png){.thumbnail}
 
-Review your changes and click `Validate upgrade`{.action}.
+Choose your memory and storage options and click `Next`{.action}.
 
-> ⚠️ **To document**: The upgrade model selection cards (steps 2–3 of the wizard: Conditions and Summary) could not be captured because the `/availableUpgrade` API returned an error for the test VPS (already at maximum configuration). Screenshots of the model selection cards, the Conditions step, and the Summary/confirmation step with the `Validate upgrade` button are needed from a VPS that has available upgrades.
+![Upgrade resources](images/vps_upgrade03.png){.thumbnail}
+
+Accept (`☑`{.action}) the **Terms & conditions** and click `Next`{.action}.
+
+![Upgrade resources](images/vps_upgrade04.png){.thumbnail}
+
+Review your changes and click `Order`{.action}.
+
+![Upgrade resources](images/vps_upgrade05.png){.thumbnail}
 <!-- CP-STEPS-END:add-vcores -->
 
 ### 2. To upgrade **Memory**
@@ -68,11 +76,11 @@ Click `Validate`{.action} to confirm the upscale operation.
 ### 3. To upgrade **Storage**
 
 <!-- CP-STEPS-START:upgrade-storage -->
-Click the **Upscale** tab. The current storage configuration is displayed in the **Current Configuration** card.
+Under the **Home** tab in the **Your configuration** panel, click on the amount of storage you want. The options available depend on the VPS range you currently have.
 
-Select the desired configuration, then click `Validate`{.action} to confirm the operation.
+In the pop‑up window, click `Confirm and pay`{.action} to finalize your order.
 
-> ⚠️ **To document**: The storage upgrade flow could not be fully captured. The Upscale tab displays storage as a fixed value (no independent storage upgrade control was observed). It is unclear whether storage can be independently upgraded via the Upscale tab or whether it requires a full model upgrade via the Upgrade tab. A screenshot showing storage upgrade options is needed from a VPS that supports storage upscaling.
+![Upgrade resources](images/vps_upgrade07.png){.thumbnail}
 <!-- CP-STEPS-END:upgrade-storage -->
 
 See our dedicated guide for the next steps: [How to repartition a VPS after a storage upgrade](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition)

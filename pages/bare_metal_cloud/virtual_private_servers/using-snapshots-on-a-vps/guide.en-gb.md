@@ -51,48 +51,48 @@ You will be guided through the subscription process and receive a confirmation e
 ### Step 2: Taking a snapshot
 
 <!-- CP-STEPS-START:take-snapshot -->
-In your OVHcloud Control Panel, go to the **Bare Metal Cloud** section, then click **VPS** in the sections bar. Select your VPS from the list on the left, then navigate to the **Snapshot** tab.
-
-Once the option is enabled, click `Create snapshot`{.action}. You can optionally enter a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation.
-
-> [!primary]
->
-> The **Snapshot** tab is accessible at the URL `/bare-metal/vps/{serviceName}/snapshot` in the New Manager. If the tab is not yet visible in the navigation bar, it can be reached directly via this URL.
->
-
-> ⚠️ **To document**: Capture a screenshot of the Snapshot tab showing the `Create snapshot` button and, if possible, the `TakeSnapshotModal` with the description field and confirm button. The Snapshot tab did not render during automated capture because the snapshot option was not subscribed on the test VPS.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Backup** box.
 <!-- CP-STEPS-END:take-snapshot -->
 
 ### Step 3: Deleting or restoring a snapshot
 
 <!-- CP-STEPS-START:delete-restore-snapshot -->
-In your OVHcloud Control Panel, go to the **Bare Metal Cloud** section, then click **VPS** in the sections bar. Select your VPS from the list on the left, then navigate to the **Snapshot** tab.
+Since you can only have one snapshot activated at a time, the existing snapshot has to be deleted before creating a new one. Simply choose `Delete the snapshot`{.action} from the context menu.
 
-Since you can only have one snapshot activated at a time, the existing snapshot must be deleted before creating a new one. Click `Delete`{.action} (displayed in red) and confirm the deletion in the popup window.
+![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
-If you want to reset your VPS to the status of the snapshot, click `Restore`{.action} and confirm the restoration task in the popup window.
+If you are sure that you would like to reset your VPS to the status of the snapshot, click `Restore the snapshot`{.action} and confirm the restoration task in the popup window.
 
 > [!alert]
 >
 > Please note that when you restore a VPS from a snapshot, the snapshot will be deleted. If you wish to keep the same snapshot, you should take a new one before making changes to the restored system.
 >
 > If the snapshot function is too limited for your project, consider switching to the option [Automated Backups](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps).
-
-> ⚠️ **To document**: Capture a screenshot of the Snapshot tab showing a snapshot present, with the `Restore`, `Download`, and `Delete` action buttons visible. The Snapshot tab did not render during automated capture because the snapshot option was not subscribed on the test VPS.
 <!-- CP-STEPS-END:delete-restore-snapshot -->
 
 ### Downloading a snapshot
 
 <!-- CP-STEPS-START:download-snapshot -->
-In your OVHcloud Control Panel, go to the **Bare Metal Cloud** section, then click **VPS** in the sections bar. Select your VPS from the list on the left, then navigate to the **Snapshot** tab.
+The current snapshot can be retrieved via download link. Click on `...`{.action} next to the option "Snapshot" and choose `Download the snapshot`{.action} from the context menu.
 
-Click `Download`{.action} next to your snapshot. A modal window opens and automatically generates the download link — no additional button click is required. Once the link is ready, click `Download`{.action} in the modal to open the snapshot download link in a new browser tab.
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](/links/manager).
+>
+
+In the popup window, click on `Generate download link`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+After a few seconds, a success message appears. Below it, you can copy the complete download command with one click.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
 
 The size of the snapshot and the expiration date of the link will also be displayed.
 
 Note that the download link will expire after **24 hours**.
-
-> ⚠️ **To document**: Capture screenshots of (1) the Snapshot tab with the `Download` button visible, (2) the `DownloadSnapshotModal` while loading, and (3) the modal with the download link ready showing the expiry date. The Snapshot tab did not render during automated capture because the snapshot option was not subscribed on the test VPS.
 <!-- CP-STEPS-END:download-snapshot -->
 
 The download command uses `curl`, in the following format:

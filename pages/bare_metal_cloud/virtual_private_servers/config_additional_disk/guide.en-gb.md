@@ -306,10 +306,9 @@ In the last window, click `Finish`{.action} to format the disk. It will be avail
 ### How to cancel the additional disk option
 
 <!-- CP-STEPS-START:cancel-additional-disk -->
-Click the **Additional disk** tab. On the disk row, click the `Delete`{.action} action button. In the confirmation dialog, confirm the deletion.
+In the `Home`{.action} tab, in the **Your configuration** section, click `...`{.action} next to the `Additional disks` option, then click `Close`{.action}.
 
-> [!warning]
-> ⚠️ **To document**: The `Delete` action button label and the confirmation dialog text could not be verified on screen (no VPS with an attached additional disk was available in the test environment). The navigation pattern (Additional disk tab → Delete action → confirmation dialog) is consistent with the NM source file mapping.
+![canceldiskvps](images/disk_vps02.png){.thumbnail}
 <!-- CP-STEPS-END:cancel-additional-disk -->
 
 ## Go further
