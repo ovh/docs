@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-À la suite d'une erreur sur votre base de données, vous devez pouvoir restaurer une sauvegarde ou importer une base de données locale. 
+En cas d'erreur sur votre base de données, vous devez pouvoir restaurer une sauvegarde ou importer une base locale. 
 
 **Découvrez comment restaurer et importer votre base de données sur votre serveur de bases de données.**
 
@@ -57,7 +57,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -88,7 +88,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>

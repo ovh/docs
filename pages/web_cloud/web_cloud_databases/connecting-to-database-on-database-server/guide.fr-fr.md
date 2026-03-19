@@ -63,7 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -117,7 +117,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -193,7 +193,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>

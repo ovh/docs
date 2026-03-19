@@ -48,7 +48,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -75,24 +75,24 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 
 Votre Web Cloud Databases est accessible depuis vos hébergements web OVHcloud ou/et depuis le réseau public.
 
-**Cliquez sur les titres ci-dessous pour afficher le contenu.**
+**Cliquez sur chaque titre pour afficher son contenu.**
 
 /// details | Autoriser une adresse IP
 
-Afin que l’accès à votre instance Web Cloud Databases fonctionne, il est obligatoire d’indiquer les adresses IP ou plages d’IP pouvant se connecter à vos bases de données.
+Pour accéder à votre instance Web Cloud Databases, vous devez indiquer les adresses IP ou plages d’IP autorisées à se connecter à vos bases de données.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Cliquez sur l’onglet `IP autorisées`{.action} puis sur le bouton `Ajouter une adresse IP/masque`{.action}.
+>> Cliquez sur l’onglet `IPs autorisées`{.action} puis sur le bouton `Ajouter une adresse IP / masque`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 >>
@@ -111,13 +111,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Cliquez sur l’onglet `IP autorisées`{.action}.
+>> Cliquez sur l’onglet `IPs autorisées`{.action}.
 >>
 > **Étape 3**
 >>
@@ -143,7 +143,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -169,7 +169,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 ### Modifier la configuration de mon serveur de bases de données
 
-**Cliquez sur les titres ci-dessous pour afficher le contenu.**
+**Cliquez sur chaque titre pour afficher son contenu.**
 
 /// details | Instance MySQL et MariaDB
 
@@ -178,7 +178,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -239,7 +239,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -277,7 +277,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -325,7 +325,7 @@ show variables like "version";
 
 ### Logs et Métriques
 
-**Cliquez sur les titres ci-dessous pour afficher le contenu.**
+**Cliquez sur chaque titre pour afficher son contenu.**
 
 /// details | Accès aux logs
 
@@ -340,7 +340,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -361,7 +361,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-cloud-databases), puis choisissez la solution Web Cloud Databases concernée.
+>> Accédez à la page [Web Cloud Databases](/links/control-panel/web-cloud-databases), puis choisissez la solution concernée.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -375,9 +375,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 
 ### Optimiser vos bases de données
 
-Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Une base performante retourne rapidement les informations au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
+Entretenez votre base de données pour qu'elle reste performante et retourne rapidement les informations aux scripts. Pour cela, il faut une base de données structurée et optimisée.
 
-**Cliquez sur les titres ci-dessous pour afficher le contenu.**
+**Cliquez sur chaque titre pour afficher son contenu.**
 
 /// details | Indexer la base de données
 
