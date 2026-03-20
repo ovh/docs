@@ -84,7 +84,7 @@ You can filter IP addresses by using the `All service types`{.action} drop-down 
 > From the **Dedicated Servers** page
 >> - Open the `Bare Metal Cloud`{.action} section in the left-hand sidebar.
 >> - Select `Dedicated servers`{.action}.
->> - Click on the Game server you wish to configure to open its management page.
+>> - Click on the Game server you wish to configure.
 >> - In the `Network` section of the `General information` tab, find the "Game DDoS protection" section.
 >> - Click the `...`{.action} button and select `Configure Game Protection`. You will be taken to the list of IP addresses assigned to your server.
 > From the **Public IP Addresses** page
