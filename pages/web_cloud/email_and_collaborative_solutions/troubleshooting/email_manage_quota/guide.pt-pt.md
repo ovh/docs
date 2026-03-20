@@ -120,7 +120,7 @@ Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduz
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Quando estiver ligado ao webmail Zimbra, clique na roda dentada `&#9881;` no canto superior direito da sua interface e, a seguir, clique em `Configurações`{.action}. No separador `Geral`{.action}, o limite utilizado é visível sob a menção «Espaço de armazenamento».<br><br>
+>> Quando estiver ligado ao webmail Zimbra, clique na roda dentada ( &#9881;) no canto superior direito da sua interface e, a seguir, clique em `Configurações`{.action}. No separador `Geral`{.action}, o limite utilizado é visível sob a menção «Espaço de armazenamento».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

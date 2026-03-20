@@ -120,8 +120,8 @@ Go to the page [Webmail](/links/web/email) and enter the login information for y
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;` in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.<br><br>
->>![email](images/email-quota-webmail03.png){.thumbnail}<br>When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;' in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.
+>> When you are logged in to the Zimbra webmail, click on the cogwheel (&#9881;) in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}
 >>
 
 ### 2. **Optimise** your email account <a name="optimise"></a>

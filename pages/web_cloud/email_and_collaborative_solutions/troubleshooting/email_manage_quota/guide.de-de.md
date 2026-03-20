@@ -120,7 +120,7 @@ Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/ema
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
+>> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad ( &#9881;) oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
 >> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
