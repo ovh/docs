@@ -120,7 +120,7 @@ Para conectarse al webmail, acceda a la página [Webmail](/links/web/email) e in
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>>
->> Cuando se conecte al webmail Zimbra, haga clic en la rueda dentada `&#9881;` en la parte superior derecha de su interfaz y, a continuación, haga clic en `Parámetros`{.action}. En la pestaña `General`{.action} de la columna izquierda, haga clic en  para consultar el "Almacenamiento".<br><br>
+>> Cuando se conecte al webmail Zimbra, haga clic en la rueda dentada ( &#9881;) en la parte superior derecha de su interfaz y, a continuación, haga clic en `Parámetros`{.action}. En la pestaña `General`{.action} de la columna izquierda, haga clic en  para consultar el "Almacenamiento".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

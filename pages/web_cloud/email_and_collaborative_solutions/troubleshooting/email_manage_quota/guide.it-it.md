@@ -120,7 +120,7 @@ Accedi alla Webmail, clicca sulla pagina [Webmail](/links/web/email)e inserisci 
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Una volta connesso alla Webmail Zimbra, clicca sull’icona a forma di ingranaggio `&#9881;` in alto a destra e poi clicca su `Impostazioni`{.action}. Dalla scheda `Generale`{.action} la quota utilizzata è visibile sotto la voce "Spazio di archiviazione".<br><br>
+>> Una volta connesso alla Webmail Zimbra, clicca sull’icona a forma di ingranaggio ( &#9881;) in alto a destra e poi clicca su `Impostazioni`{.action}. Dalla scheda `Generale`{.action} la quota utilizzata è visibile sotto la voce "Spazio di archiviazione".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

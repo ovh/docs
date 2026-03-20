@@ -120,7 +120,7 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/w
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Po zalogowaniu do Zimbra Webmail kliknij na symbol koła zębatego`&#9881;` w prawym górnym rogu interfejsu, a następnie kliknij `Parametry`{.action}. W zakładce `Ogólne`{.action} wyświetla się wykorzystany limit pod napisem "Przestrzeń dyskowa".<br><br>
+>> Po zalogowaniu do Zimbra Webmail kliknij na symbol koła zębatego( &#9881;) w prawym górnym rogu interfejsu, a następnie kliknij `Parametry`{.action}. W zakładce `Ogólne`{.action} wyświetla się wykorzystany limit pod napisem "Przestrzeń dyskowa".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
