@@ -1,6 +1,6 @@
 ---
-title: "Monitoring DDoS attacks with the Network Security Dashboard"
-excerpt: "Learn how to navigate through the Network Security Dashboard"
+title: "Network Security Dashboard for Dedicated Servers"
+excerpt: "Monitor DDoS attack activity and traffic patterns on your dedicated server using the OVHcloud Network Security Dashboard."
 updated: 2025-10-31
 ---
 
@@ -37,7 +37,7 @@ Every time an attack is detected towards any IP of your service, you are notifie
 
 During an attack, an active mitigation action will be indicated by a warning icon on the IP listing page (in the `Manage IPs`{.action} section of your Control Panel).
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![Active mitigation warning icon on the IP listing page](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,7 +51,7 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ### Network security notifications
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
+![Network security notifications with Anti-DDoS status columns](images/nsd_04_blur.PNG){.thumbnail}
 
 Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
 
@@ -77,7 +77,7 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
 
 In the **scrubbing centre log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 
-![red-line-attack](images/nsd_main_blur.png)
+![Scrubbing centre log showing detected attacks and timestamps](images/nsd_main_blur.png)
 
 In the table, the following columns are present: 
 
@@ -95,7 +95,7 @@ In the table, the following columns are present:
 
 In the **Traffic chart** tab, you can see a graph showing traffic to your IP address (bps or pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![Traffic chart showing dropped malicious and clean traffic](images/nsd_graph_tab_blur.png)
 
 It presents malicious traffic that was dropped (**in red**) and clean traffic delivered to your IP address (**in green**). There are also basic mitigation statistics displayed, i.e.: how many attacks were detected for a selected IP, how much traffic (or packets) was cleaned during attacks or how many times scrubbing centres took an action to inspect your traffic (number of events) in a selected period of time.
 

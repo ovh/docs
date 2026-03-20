@@ -1,6 +1,6 @@
 ---
-title: "How to manage Intel SGX on a dedicated server"
-excerpt: "Find out how to enable the SGX option on your dedicated server and install the SGX software stack for Linux"
+title: "How to manage Intel SGX on a Dedicated Server"
+excerpt: "Enable Intel SGX on your OVHcloud dedicated server and install the Linux software stack for secure enclave applications."
 updated: 2025-11-20
 ---
 
@@ -45,11 +45,11 @@ The activation of SGX is possible from the OVHcloud Control Panel, the OVHcloud 
 >>
 >> From the `General Information`{.action} tab, in the **Advanced Features** box, click on `...`{.action} next to the **Security - Intel SGX (Software Guard Extensions)** entry and select `Enable SGX`{.action} from the dropdown menu.
 >>
->> ![Enable SGX](images/enable_sgx.png){.thumbnail}
+>> ![SGX option in the Advanced Features box of General Information](images/enable_sgx.png){.thumbnail}
 >>
 >> On the next screen, click on the `Enable`{.action} button.
 >>
->> ![Enable SGX](images/enable_sgx2.png){.thumbnail}
+>> ![SGX activation screen with Enable button](images/enable_sgx2.png){.thumbnail}
 >>
 >> You can choose to enable SGX with a specific amount of reserved memory or allow your application to automatically reserve the memory it needs. Once your choice is made, click on `Confirm`{.action}.
 >>
@@ -57,7 +57,7 @@ The activation of SGX is possible from the OVHcloud Control Panel, the OVHcloud 
 >>
 >> A confirmation window will appear. Please confirm that you understand that enabling Intel SGX technology will result in a server reboot.
 >>
->> ![Enable SGX](images/confirmation-popup_sgx.png){.thumbnail}
+>> ![Confirmation popup warning about server reboot for SGX](images/confirmation-popup_sgx.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -136,7 +136,7 @@ The activation of SGX is possible from the OVHcloud Control Panel, the OVHcloud 
 >>
 >> Enable the TME and SGX options and configure the desired PRMRR size:
 >>
->> ![Enable SGX](images/sgx_bios.png){.thumbnail}
+>> ![BIOS Processor Configuration with TME and SGX enabled](images/sgx_bios.png){.thumbnail}
 >>
 >> Save the changes by pressing the `F10`{.action} key. A confirmation window will appear, please confirm with the `Yes` option.
 >>
@@ -249,3 +249,7 @@ To go further (develop your own application, register for remote attestation, et
 - [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services)
 - [Intel SGX linux-2.26 documentation](https://download.01.org/intel-sgx/sgx-linux/2.26/docs/)
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx)
+
+[Enabling AMD SME/SEV on a Dedicated Server (Ubuntu)](/pages/bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
+
+[How to secure a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)

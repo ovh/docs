@@ -1,5 +1,5 @@
 ---
-title: How to configure your NIC for OVHcloud Link Aggregation in Debian 9 to 11
+title: "Dedicated Server - OVHcloud Link Aggregation on Debian"
 excerpt: "Enable OVHcloud Link Aggregation in your Debian server (from Debian 9 to Debian 11)"
 updated: 2026-01-09
 ---
