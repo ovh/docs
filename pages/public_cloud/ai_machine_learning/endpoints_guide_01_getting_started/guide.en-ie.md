@@ -34,7 +34,7 @@ Getting an API key enables you to use the models available in our [catalog](/lin
 
 **1\. Access the AI Endpoints section**
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
 
 ![AI Endpoints section](images/api-access-key-creation-1.png){.thumbnail}
 
@@ -143,7 +143,7 @@ This will take you to a dedicated page with several options for interacting with
 
 To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
-To revoke one of your API access keys, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on then `API key`{.action} management section.
+To revoke one of your API access keys, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on the `API key`{.action} management section.
 
 On the **AI key management** page, you will see a table listing all your generated API access keys, including their **name**, **description**, and **expiry date**. Find the key you want to revoke and click the three dots `...`{.action} button next to its details. This will open a menu where you can select `Delete`{.action}. Confirm this action to complete the revocation.
 
@@ -168,7 +168,7 @@ If you require higher usage, please **[get in touch with us](/links/support-cont
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
 
-For your convenience, you can monitor your estimated consumption and model usage through the [OVHcloud Control Panel](/links/manager). To do so, navigate to the `AI Endpoints`{.action} section of the `AI & Machine Learning` category, in the left-hand vertical menu.
+For your convenience, you can monitor your estimated consumption and model usage in the `AI Endpoints`{.action} section of the `AI & Machine Learning` category in your [Public Cloud project](/links/control-panel/publiccloud-projects) left-hand vertical menu.
 
 ![AI Endpoints usage monitoring](images/ai-endpoints-usage-monitoring.png){.thumbnail}
 
