@@ -133,7 +133,7 @@ You can upload your data to the cloud either by using the [OVHcloud Control Pane
 
 If you do not feel comfortable with commands, this method will be more intuitive.
 
-Select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 
 Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you.
 

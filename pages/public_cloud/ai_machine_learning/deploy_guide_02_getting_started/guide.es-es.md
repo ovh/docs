@@ -34,7 +34,7 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 
 ### Subscribe to AI Deploy
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Deploy`{.action}.
 
 Click on the `Deploy an app`{.action} button and accept the terms and conditions if any.
 
@@ -300,11 +300,7 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
->>
->> Then, select the `AI Deploy`{.action} section, which allows you to manage and access all your created apps.
->> 
->> Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `AI Deploy`{.action} section. Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
 >>
 >> ![image](images/step-11-stop-app.png){.thumbnail}
 >>
