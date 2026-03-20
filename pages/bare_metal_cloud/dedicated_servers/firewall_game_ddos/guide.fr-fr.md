@@ -1,7 +1,7 @@
 ---
 title: "Protéger un serveur Game avec le firewall applicatif"
 excerpt: "Découvrez comment configurer le OVHcloud Game DDoS Protection firewall"
-updated: 2026-03-17
+updated: 2026-03-20
 ---
 
 <style>
@@ -87,26 +87,26 @@ Vous pouvez filtrer les adresses IP en utilisant le menu déroulant `Tous les ty
 >> - Sélectionnez `Serveurs dédiés`{.action}.
 >> - Cliquez sur le serveur Game que vous souhaitez configurer.
 >> - Dans la section `Réseau` de l’onglet `Informations générales`, cherchez la section « Game DDoS Protection ».
->> - Cliquez sur le bouton `⁝`{.action} et sélectionnez `Configurer la protection Game`. Vous serez dirigé vers la liste des adresses IP attribuées à votre serveur.
+>> - Cliquez sur le bouton `...`{.action} et sélectionnez `Configurer Game Protection`. Vous serez dirigé vers la liste des adresses IP attribuées à votre serveur.
 > Depuis la page **Adresses IP publiques**
 >> - Ouvrez la section `Network`{.action} dans la barre latérale gauche.
 >> - Sélectionnez `Adresses IP Publiques`{.action}.
->> - Dans le menu déroulant `Tous les types de services`{.action}, recherchez et sélectionnez le serveur Bare Metal Game que vous souhaitez configurer.
+>> - Dans le menu déroulant `Tous les types de service`{.action}, recherchez et sélectionnez le serveur Bare Metal Game que vous souhaitez configurer.
 >> - Une liste des adresses IP attribuées à votre serveur apparaîtra.
 
 #### Activer et configurer les règles du Game Firewall
 
 Pour chaque adresse attachée à votre serveur nécessitant une protection, définissez le statut du *Game Firewall* de `Inactive`{.action} à `Available`{.action}.
 
-Une fois que toutes les adresses pertinentes sont configurées pour utiliser le Game Firewall, vous devez configurer les règles séparément pour chaque adresse.
+Une fois toutes les adresses pertinentes configurées pour le Game Firewall, configurez les règles séparément pour chaque adresse.
 
-- Cliquez sur le bouton `⁝`{.action} à droite du tableau et sélectionnez `Configurer le Game Firewall`{.action}.
+- Cliquez sur le bouton `⁝`{.action} à droite du tableau et sélectionnez `Configurer le Game firewall`{.action}.
 - Ajoutez des règles en spécifiant le protocole et la plage de ports pour chaque application de jeu qui sera accessible sur l’adresse IP sélectionnée. Veuillez consulter la section [Mentions spécifiques pour certains jeux](#game_specific) pour plus d’informations.
 - Pour des raisons de sécurité, nous vous recommandons fortement d’activer l’option `Appliquer la stratégie « Refus par défaut »`{.action}, en haut à droite du tableau de règles. Cette option bloque tout le trafic qui ne correspond pas aux règles que vous avez définies pour le Game Firewall, c’est-à-dire que toutes les applications de jeu répertoriées seront protégées et qu’aucune autre connexion ne pourra atteindre votre serveur. Cette option réduit considérablement la surface d’attaque exposée aux acteurs malveillants potentiels.
 
 La protection anti-DDoS Game vous permet de configurer jusqu’à **100 règles par adresse IP** qui pointent vers un serveur Bare Metal Game des gammes GAME-1 et GAME-2 (à partir de 2024), ou jusqu’à **30 règles par adresse IP** pour les anciennes gammes de jeux Bare Metal (généralement identifiées comme RISE-GAME ou SYS-GAME).
 
-Veuillez noter que les protocoles de jeux pris en charge (titres et versions de jeux pouvant être protégés) peuvent changer au fil du temps. De plus, ils peuvent être différents entre les anciennes gammes de serveurs Bare Metal Game et les plus récentes. La liste la plus récente des profils de jeux pris en charge est disponible [ici](/links/security/ddos).
+Veuillez noter que les protocoles de jeux pris en charge (titres et versions de jeux pouvant être protégés) peuvent changer au fil du temps. De plus, ils peuvent être différents entre les anciennes gammes de serveurs Bare Metal Game et les plus récentes. La liste la plus récente des profils de jeux pris en charge est disponible sur la [page Game DDoS Protection](/links/security/ddos).
 
 Les règles de protection du *Game Firewall* ne doivent comporter aucun chevauchement de ports ou de plages de ports.
 
@@ -120,7 +120,7 @@ Quelques minutes après avoir terminé la configuration du Game Firewall pour un
 
 #### Vérifier votre configuration
 
-Une fois la configuration terminée, vous pouvez vous assurer que votre serveur est protégé par le Game Firewall en vérifiant deux points de contrôle différents :
+Une fois la configuration terminée, vérifiez que votre serveur est protégé par le Game Firewall en contrôlant ces 2 points :
 
 - Sur la page **Adresses IP publiques**, chaque adresse IP attachée à votre serveur Bare Metal Game et nécessitant une protection doit avoir son statut de Game Firewall défini sur `Configuré`.
 - Sur la page de gestion de votre serveur Bare Metal Game, dans la section `Réseau` de l’onglet `Informations générales`, le statut de la Protection anti-DDoS Game doit être soit `Toutes les adresses IP sont protégées`, soit `Certaines adresses IP sont protégées`. Dans ce dernier cas, veuillez vous assurer que vous avez configuré toutes les adresses IP pertinentes.
