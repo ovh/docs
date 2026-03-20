@@ -21,7 +21,7 @@ updated: 2025-11-25
 
 ## Wymagania początkowe
 
-- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [E-mail Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
+- Posiadaj zewnętrzny serwis poczty e-mail lub jeden z oferowanych przez OVHcloud, takich jak [Zimbra](/links/web/zimbra), [Exchange](/links/web/emails-exchange), [Email Pro](/links/web/email-pro) lub MX Plan (za pośrednictwem oferty MX Plan lub uwzględniony w ofercie [OVHcloud Hosting](/links/web/hosting)).
 - Posiadaj dane logowania do kont e-mailowych, które chcesz przenieść (konta źródłowe).
 - Posiadaj dane logowania do kont e-mailowych docelowych.
 
@@ -71,7 +71,7 @@ Na nowej stronie, która się pojawi, wprowadź dane logowania konta źródłowe
 
 Przed rozpoczęciem migracji ważne jest, aby wiedzieć o trzech typach kont, które można przenieść i gdzie można je przenieść:
 
-- **OVHcloud**: Opcja `Autodetect` jest zalecana, jeśli musisz przenieść konto hostowane na jednej z ofert poczty e-mail OVHcloud. Jeśli masz dużą liczbę kont poczty e-mail OVHcloud, wybierz jedną z poniższych ofert: `MX plan`, `E-mail Pro`, `Exchange` lub `Zimbra`. Będziesz musiał zalogować się do konta OVHcloud powiązanego z ofertą dotyczącą migracji. Aby uzyskać więcej informacji, zobacz sekcję "[Migrowanie za pomocą połączenia z kontem klienta OVHcloud](#sso-migration)".
+- **OVHcloud**: Opcja `Autodetect` jest zalecana, jeśli musisz przenieść konto hostowane na jednej z ofert poczty e-mail OVHcloud. Jeśli masz dużą liczbę kont poczty e-mail OVHcloud, wybierz jedną z poniższych ofert: `MX plan`, `Email Pro`, `Exchange` lub `Zimbra`. Będziesz musiał zalogować się do konta OVHcloud powiązanego z ofertą dotyczącą migracji. Aby uzyskać więcej informacji, zobacz sekcję "[Migrowanie za pomocą połączenia z kontem klienta OVHcloud](#sso-migration)".
 - **Others**: Są to usługi poczty e-mail subskrybowane poza OVHcloud. Dostępna jest niekompletna lista usług poczty e-mail obsługiwanych przez OMM. Jeśli typ usługi Twojego konta e-mail nie znajduje się na liście, użyj protokołów `IMAP` lub `POP`, kompatybilnych z większością serwerów poczty e-mail.
 - **Importing files**: Możliwe jest przeniesienie zawartości plików PST, ICS, CSV i XML Rules przez OMM do konta poczty e-mail docelowego. Gdy ta funkcja zostanie wybrana, po prostu przeciągnij i upuść swój dokument do wyznaczonej strefy lub przejdź do terminala za pomocą przycisku `Browse your files`{.action}.
 
@@ -117,7 +117,7 @@ Po uzupełnieniu ustawień konta źródłowego i docelowego kliknij:
 
 ### Migrowanie za pomocą połączenia z kontem klienta OVHcloud <a name="sso-migration"></a>
 
-Przy migracji do lub z konta OVHcloud możesz wybrać jedną z naszych ofert `MX plan`, `E-mail Pro`, `Exchange` lub `Zimbra`.
+Przy migracji do lub z konta OVHcloud możesz wybrać jedną z naszych ofert `MX plan`, `Email Pro`, `Exchange` lub `Zimbra`.
 
 ![omm](images/omm-migration-sso-00.png){.thumbnail .w-300}
 

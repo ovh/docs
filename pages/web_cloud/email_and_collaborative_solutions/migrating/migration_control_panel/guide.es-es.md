@@ -8,7 +8,7 @@ updated: 2026-01-16
 
 OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo o incluido en un plan de hosting), Zimbra, Email Pro y Exchange. Estas disfrutan de funcionalidades propias y pueden adaptarse a varios usos. ¿Sus necesidades evolucionan? OVHcloud pone a su disposición una herramienta de migración que le permitirá cambiar de una solución a otra.
 
-**Esta guía explica cómo migrar una cuenta MX Plan a una cuenta Email Pro o Exchange.**
+**Esta guía explica cómo migrar una cuenta MX Plan a una cuenta Email Pro, Exchange o Zimbra.**
 
 > [!warning]
 >
@@ -60,7 +60,7 @@ Por lo tanto, es importante conocer a qué solución quiere migrar sus direccion
 
 Este paso es opcional si ya tiene un servicio Exchange o Email Pro al que quiere realizar la migración.
 
-En caso contrario, conéctese al [área de cliente de OVHcloud](/links/manager) y contrate el servicio Email Pro o Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, contrate el servicio Email Pro o Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -75,10 +75,6 @@ Antes de realizar la migración, deberá identificar la versión del MX Plan des
 >
 > La tecnología de correo de su oferta MX Plan puede variar según la fecha de activación de su oferta o si ha tenido lugar recientemente una migración. Esta tecnología se distingue especialmente por la interfaz de su webmail. Para identificarla desde su área de cliente, siga estos pasos:
 >
-> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
-> 1. Vaya a la sección `Web Cloud`{.action}.
-> 1. Haga clic en `MX Plan`{.action}.
-> 1. Seleccione el dominio correspondiente.
 > 1. El apartado `Información general`{.action} se selecciona por defecto.
 > 1. Anote la tecnología utilizada bajo la mención **Webmail** en el recuadro `Suscripción`.
 >
@@ -89,7 +85,7 @@ Antes de realizar la migración, deberá identificar la versión del MX Plan des
 
 > [!warning]
 >
-> Esta sección se aplica a todos los servicios MX Plan que utilizan la tecnología de webmail Rouncube, Zimbra u OWA.
+> Esta sección se aplica a todos los servicios MX Plan que utilizan la tecnología de webmail Roundcube, Zimbra u OWA.
 >
 > Sin embargo, si desea migrar un servicio MX Plan que utilice el webmail Roundcube a una plataforma Email Pro o Exchange OVHcloud, siga la sección "[Migración automática de una oferta MX Plan Roundcube a Exchange o Email Pro](#roundcube-mxplan)" de esta guía.
 
@@ -141,7 +137,7 @@ Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su MX Pla
 
 > [!warning]
 >
-> Esta sección se aplica únicamente a los servicios MX Plan que utilizan la tecnología de webmail Rouncube.
+> Esta sección se aplica únicamente a los servicios MX Plan que utilizan la tecnología de webmail Roundcube.
 
 > [!primary]
 >
@@ -170,7 +166,7 @@ Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el t
 
 ##### **Migración desde el asistente de configuración de Exchange**
 
-Para ello, seleccione el servicio en el [área de cliente de OVHcloud](/links/manager) El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
+El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
 
 Si no aparece el asistente de configuración, la información general del servicio Exchange se mostrará en su lugar. En ese caso, deberá realizar la migración de sus cuentas a través de la interfaz MX Plan.
 

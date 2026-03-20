@@ -25,6 +25,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 - Tener una plataforma **"source"** con cuentas [Exchange](/links/web/emails-hosted-exchange)  configuradas.
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-exchange -->
 ---

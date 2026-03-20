@@ -24,6 +24,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 - a "**source**" platform with configured [Exchange](/links/web/emails-hosted-exchange) accounts
 - a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-exchange -->
 ---

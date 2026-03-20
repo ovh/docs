@@ -24,6 +24,7 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 - Dispor de uma plataforma **"fonte"** com contas configuradas [Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) ou [Zimbra](/links/web/zimbra).
 - Ter uma plataforma de **"destino"** com contas [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVHcloud](/links/web/hosting)). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-email-pro -->
 <!-- CP-NAV-START:web-exchange -->
@@ -33,17 +34,17 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 **MX Plan:**
 
-- **Link direto:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
 - **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
 
 **E-mail Pro:**
 
-- **Link direto:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
 - **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
 
 **Exchange:**
 
-- **Link direto:** [Exchange](/links/control-panel/web-exchange)
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
 - **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
 
 ---

@@ -24,6 +24,7 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 - Disposer d'une plateforme **«source»** avec des comptes [Exchange](/links/web/emails-hosted-exchange)  configurés.
 - Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](/links/web/emails-hosted-exchange) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
+
 <!-- CP-NAV-START:web-mx-plan -->
 <!-- CP-NAV-START:web-exchange -->
 ---
