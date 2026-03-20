@@ -16,13 +16,19 @@ Nos serveurs High Grade et Scale vous proposent une option évolutive qui vous p
 ## Prérequis
 
 - Un serveur [High Grade](https://www.ovhcloud.com/fr/bare-metal/high-grade/) ou [SCALE](https://www.ovhcloud.com/fr/bare-metal/scale/)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager).
-
-Dans la section `Bare Metal Cloud`{.action}, sélectionnez votre serveur parmi les **Serveurs dédiés**. 
 
 ### Augmenter la RAM
 

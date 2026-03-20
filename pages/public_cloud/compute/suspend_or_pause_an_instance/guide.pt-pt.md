@@ -1,6 +1,7 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-updated: 2025-10-30
+excerpt: Saiba como suspender ou colocar em pausa uma instância Public Cloud para libertar temporariamente recursos mantendo o seu endereço IP, bem como o impacto na faturação de cada opção
+updated: 2026-02-27
 ---
 
 ## Objetivo
@@ -16,16 +17,29 @@ No âmbito da configuração de uma infraestrutura de alta disponibilidade, é p
 ## Requisitos
 
 - uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre faturação à **hora**
-- acesso à [Área de Cliente OVHcloud](/links/manager) o à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- acesso à [interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 - Conhecimento da [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e das [variáveis OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-> [!alert]
+> [!warning]
 >
-> Este guia só se aplica às instâncias com uma **faturação à hora**. Se as suas instâncias tiverem uma **faturação mensal**, a faturação clássica continuará a ser aplicada independentemente do estado do serviço.
+> **Âmbito:** Este guia aplica-se a todas as instâncias de Public Cloud, independentemente do modelo de faturação (à hora ou mensal).
 >
-> Estas manipulações não interrompem a faturação da instância, ela será faturada até que a **eliminada**.
+> **Faturação mensal:** Uma instância que permaneça suspensa durante todo o mês não será faturada. Assim que a instância for reativada, mesmo que brevemente, aplica-se a faturação completa do mês.
+>
+> **Nota:** Enquanto a instância não for eliminada, qualquer operação continuará a gerar encargos de instância.
 >
 
 A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâncias. Consulte este manual clicando na opção que preferir. Colocámos entre parênteses a terminologia utilizada na interface Horizon.
@@ -82,7 +96,7 @@ Na janela contextual, tome nota da mensagem e clique em `Confirmar`{.action}.
 
 Uma mensagem é exibida durante a operação:
 
-![](images/suspension_message_2025.png){.thumbnail}
+![Operation in progress](images/suspension_message_2025.png){.thumbnail}
 
 Uma vez terminado o processo, a instância parece *Suspensa*.
 
@@ -98,7 +112,7 @@ O snapshot estará então disponível na secção `Instance Backup`{.action} do 
 
 Para utilizar este método, é necessário [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/):
 
-- Para se ligar com a autenticação única OVHcloud: utilize o link `Horizon`{.action} no menu à esquerda, sob « Management Interfaces » depois de ter aberto o seu projeto `Public Cloud`{.action} na sua [Área de Cliente OVHcloud](/links/manager).
+- Para iniciar sessão com o SSO da OVHcloud: utilize o link `Horizon`{.action} no menu à esquerda em "Management Interfaces" após abrir o seu projeto `Public Cloud`{.action} na [Área de Cliente OVHcloud](/links/manager).
 
 - Para se ligar a um utilizador OpenStack específico: abra a página de ligação ao [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduza os [identificadores OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previamente criados, depois clique em `Connect`{.action}.
 
@@ -292,6 +306,6 @@ Para **reactivar** a instância, utilize o seguinte comando:
 
 ## Quer saber mais?
 
-[Documentação OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html).
+[Documentação OpenStack](https://docs.openstack.org/ocata/user-guide/cli-stop-and-start-an-instance.html).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

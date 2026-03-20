@@ -35,9 +35,19 @@ Esta guía explica cómo:
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de un móvil (para el método por SMS), un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
 - Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password).
+
+<!-- CP-NAV-START:account-security -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Seguridad](/links/control-panel/account-security)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Acceder a mi cuenta`{.action} > `Seguridad`{.action}
+
+---
+<!-- CP-NAV-END:account-security -->
 
 ## Procedimiento <a name="instructions"></a>
 
@@ -78,9 +88,7 @@ Le proponemos tres métodos diferentes (haga clic en las fichas siguientes para 
 
 ### Etapa 1 - Activar su primer método de doble autenticación <a name="enabling-2fa"></a>
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
-
-Luego, haga clic en `Seguridad`{.action} y, en `Activar la doble autenticación`{.action}.
+En la página [Seguridad de la cuenta](/links/control-panel/account-security), haga clic en `Activar la doble autenticación`{.action}.
 
 **Haga clic en la ficha correspondiente al método que desee:**
 
@@ -178,9 +186,7 @@ Si el dispositivo (teléfono móvil, smartphone o llave de seguridad) se pierde,
 > - Códigos de seguridad válidos.
 > 
 
-Para eliminar un dispositivo, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
-
-A continuación, haga clic en `Seguridad`{.action}, luego en los `...`{.action} a la derecha de su dispositivo que quiera eliminar y, por último, en `Eliminar`{.action}.
+Para eliminar un dispositivo, acceda a la página [Seguridad de la cuenta](/links/control-panel/account-security) y haga clic en los `...`{.action} a la derecha de su dispositivo que quiera eliminar y, por último, en `Eliminar`{.action}.
 
 ![2FA](images/2024-006-delete-device.png){.thumbnail}
 

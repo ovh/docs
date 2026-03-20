@@ -17,7 +17,17 @@ El modo de rescate permite acceder a sus datos de forma permanente, aunque el si
 ## Requisitos
 
 - Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](/links/bare-metal/vps) o una instancia de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Servidores dedicados](/links/control-panel/baremetal-dedicated-servers)
+- **Ruta de navegación:** `Bare Metal Cloud`{.action} > `Servidores dedicados`{.action} > Seleccione su servidor
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

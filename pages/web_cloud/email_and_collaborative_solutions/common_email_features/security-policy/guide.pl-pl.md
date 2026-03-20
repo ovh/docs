@@ -13,7 +13,33 @@ Usługi e-mail OVHcloud umożliwiają korzystanie z profesjonalnych kont e-mail.
 ## Wymagania początkowe
 
 - Posiadanie usługi [e-mail OVHcloud](/links/web/emails)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+**MX Plan:**
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+**E-mail Pro:**
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+**Exchange:**
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -24,11 +50,11 @@ Zarządzanie polityką bezpieczeństwa usługi e-mail może wiązać się z czt
 - wzmocnienie weryfikacji wiadomości przychodzących na serwery OVHcloud i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](/links/web/emails-hosted-exchange));
 - zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](/links/web/emails-hosted-exchange)).
 
-Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. 
+Aby przejść do polityki bezpieczeństwa usługi e-mail, postępuj zgodnie z poniższymi instrukcjami.
 
 |MX Plan i E-mail Pro|Exchange|
 |---|---|
-|kliknij pozycję `MX Plan`{.action} lub `Email Pro`{.action} i wybierz odpowiednią ofertę. Kliknij kartę `Plus`, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.|kliknij pozycję `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią ofertę. Kliknij kartę `Plus`, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.|
+|Kliknij kartę `Więcej`, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.|Kliknij `Bezpieczeństwo`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]
@@ -38,9 +64,9 @@ Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Pane
 Następnie przejdź do aspektów, które chcesz zmodyfikować.
 
 - [Wzmocnienie bezpieczeństwa danych](#enhanced-security): Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.
-- [Ustanowienie bardziej złożonego hasła](#password-complexity):Ustaw wymaganie złożoności oraz reguły zmiany hasła.
-- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange)Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).
-- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange)Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.
+- [Ustanowienie bardziej złożonego hasła](#password-complexity): Ustaw wymaganie złożoności oraz reguły zmiany hasła.
+- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](#incoming-messages-verification): Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).
+- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](#unwanted-messages-management): Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.
 
 ### Wzmocnienie bezpieczeństwa danych <a name="enhanced-security"></a>
 
@@ -64,7 +90,7 @@ Aby to zrobić, wypełnij poniższe informacje:
 - **Blokada zmiany hasła**: Umożliwia ustawienie minimalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli odczekać określoną liczbę dni, zanim zmienią hasło.
 - **Maksymalny czas ważności hasła**: Umożliwia ustawienie maksymalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli zmienić hasło po upływie określonego terminu.
 - **Zachowanie historii hasła (dotyczy wyłącznie usługi Exchange)**: Pole to pojawia się tylko wtedy, gdy określony został maksymalny czas ważności hasła. Określ okres, wyrażony w dniach, po upływie którego można ponownie użyć poprzednich haseł.
-- **Minimalna długość hasłaUmożliwia ustawienie minimalnej długości haseł, jeśli użytkownik chce je zmieniać.
+- **Minimalna długość hasła**: Umożliwia ustawienie minimalnej długości haseł, jeśli użytkownik chce je zmieniać.
 
 Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action} w przypadku ofert „MX Plan” i „E-mail Pro”. W przypadku oferty Exchange kliknij `Zapisz zmiany`{.action}.
 

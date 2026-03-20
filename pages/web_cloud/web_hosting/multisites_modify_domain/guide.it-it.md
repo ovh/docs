@@ -17,10 +17,20 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione [hosting Web OVHcloud](/links/web/hosting).
 - Disporre di uno o più [domini](/links/web/domains).
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

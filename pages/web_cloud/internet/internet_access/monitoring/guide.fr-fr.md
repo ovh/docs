@@ -11,21 +11,25 @@ Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire
 
 **Découvrez comment activer des alertes de monitoring sur un accès à Internet OVHcloud.**
 
-### Prérequis
+## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet) qui répond aux requêtes ICMP (c'est le cas par défaut sur les modems distribués par OVHcloud).
 - Disposer d'une adresse e-mail pour recevoir les notifications.
 - Détenir un [compte SMS crédité](https://www.ovhcloud.com/fr/sms/) si vous souhaitez recevoir les SMS de notifications sur votre mobile.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
-Pour pouvoir gérer vos alertes, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
-1. Dans l'onglet `Mon accès`{.action}, cliquez sur `Afficher les alertes`{.action} dans le cadre `Informations générales`.
+Depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite, puis positionnez-vous sur l'onglet `Mon accès`{.action} et cliquez sur `Afficher les alertes`{.action} dans le cadre `Informations générales`.
 
 ![espace client](images/espace-client-2022.png){.thumbnail}
 

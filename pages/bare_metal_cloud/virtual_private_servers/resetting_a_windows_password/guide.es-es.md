@@ -6,7 +6,7 @@ updated: 2023-10-12
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 ## Objetivo
 
@@ -19,7 +19,6 @@ Si ha perdido su contraseña de administrador, puede restablecerla utilizando el
 ## Requisitos
 
 - Tener un [VPS](/links/bare-metal/vps) o una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -99,7 +98,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Escriba "1" y presione "Entrar". (Use primero la opción 2 si hay una "X" junto a "Deshabilitado".)
+Escriba "1" y presione "Entrar". (Use primero la opción 2 si hay una "X" junto a "Disabled".)
 
 ```text
 Select: [q] > 1
@@ -146,4 +145,4 @@ Ahora puede iniciar sesión como «Administrator» con la nueva contraseña.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

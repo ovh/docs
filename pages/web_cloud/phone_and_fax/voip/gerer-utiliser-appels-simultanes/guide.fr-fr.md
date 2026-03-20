@@ -6,7 +6,7 @@ updated: 2025-04-28
 
 ## Objectif
 
-Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre des appels. Dans le but de maximiser votre disponibilité lorsque vous êtes joint, vous pouvez être amené à devoir prendre plusieurs appels simultanés sur une même ligne téléphonique. Ceci peut vous permettre d'éviter de perdre des appels.
+Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre des appels. Pour maximiser votre disponibilité, vous pouvez prendre plusieurs appels simultanés sur une même ligne téléphonique. Ceci permet d'éviter de perdre des appels.
 
 **Apprenez à gérer et utiliser les appels simultanés avec une ligne téléphonique OVHcloud.**
 
@@ -14,7 +14,17 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 - Disposer d'une ligne téléphonique possédant un [forfait compatible](/links/telecom/telephonie-services-inclus) avec la fonctionnalité « appels simultanés ».
 - Posséder et avoir installé un téléphone Plug & Phone.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -22,10 +32,7 @@ Votre ligne téléphonique chez OVHcloud vous permet de recevoir et d'émettre d
 
 ### Gérer les appels simultanés
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous sur l'onglet `Gestion des appels`{.action} puis cliquez sur `Appels simultanés`{.action}.
+Dans l'onglet `Gestion des appels`{.action}, cliquez sur `Appels simultanés`{.action}.
 
 ![appels-simultanes](images/simultaneous-call-step1.png){.thumbnail}
 

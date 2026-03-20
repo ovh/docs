@@ -19,6 +19,17 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 - Un prodotto OVHcloud su cui hai installato un Firewall.
 - Avere accesso alle regole del Firewall
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## Procedura
 
 ### Indirizzi IP da autorizzare

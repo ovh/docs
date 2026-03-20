@@ -17,9 +17,16 @@ Vous pouvez faire évoluer votre offre xDSL/Fibre afin de pouvoir accéder à de
 
 - Disposer d'un accès xDSL/Fibre actif.
 - Disposer d'une offre éligible au changement d'offre.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 > [!primary]
 > Le changement d'offre n'est pas disponible sur les offres SDSL.
@@ -46,11 +53,7 @@ Lors d'un changement d'offre vers les nouvelles offres Fibre Pro et xDSL Pro, vo
 
 ### Changer d’offre
 
-Pour changer d'offre, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
+Pour changer d'offre, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 
 ![changement d'offre](images/changement-offre.png){.thumbnail}
 

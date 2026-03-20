@@ -28,7 +28,6 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) avec votre site Web hébergé dessus.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

@@ -21,18 +21,23 @@ With the Hosted Exchange service, you can get professional email accounts to use
 - You need to have a subscription to a [Hosted Exchange](/links/web/emails-hosted-exchange) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Access your service management
 
-Once your Hosted Exchange service has been created and is available:
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
+Once your Hosted Exchange service has been created and is available, select it in the OVHcloud Control Panel.
 
 > [!primary]
 >
@@ -55,7 +60,7 @@ Choose one of your domain names from the list, or select the check box `My domai
 
 #### Are you going to only use the OVHcloud Exchange solution with this domain name?
 
-The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name. 
+The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name.
 
 - If you use an Exchange offer alone or with other **OVHcloud email offers**, the configuration can be done automatically, or manually using only OVHcloud email servers.
 - If you are using your Exchange solution as a complement to an **external email service to the OVHcloud email offers**, you will be asked to enter the URL of your external email service’s incoming server under the heading `(SMTP) server`.
@@ -77,18 +82,18 @@ Determine the name of your Exchange email addresses, and add additional informat
 
 #### **Special case**
 
-- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window :
+- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window:<br>
 
-![email](images/exchange-wizard05.png){.thumbnail .w-640}
+![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
 
-This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.
+This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.<br>
 
 > [!warning]
 > Without this validation by CNAME record, you cannot use the platform with this domain name.
 
-- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, that is managed with another domain name provider, or if you have chosen to manually configure your domain name, the following window will appear :
+- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, that is managed with another domain name provider, or if you have chosen to manually configure your domain name, the following window will appear:<br>
 
-![email](images/exchange-wizard06.png){.thumbnail .w-640}
+![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 
 Here, you will find the values to enter into your DNS zone. The **MX records** correspond to the receiving servers of your emails. The **SRV field** corresponds to the automatic configuration of your email addresses.
 
@@ -109,10 +114,10 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 > [!primary]
 >
-> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration. 
+> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration.
 >
 
-![Add a domain](images/first-steps-hosted-exchange-add-domain.png)
+![Add a domain](images/first-steps-hosted-exchange-add-domain.png){.thumbnail}
 
 ### Configure additional Exchange accounts (optional)
 
@@ -127,7 +132,7 @@ The accounts that have not yet been configured configuration will appear in the 
 > Repeat this step as required, depending on the number of accounts you have. You can order new ones by clicking on the `Actions`{.action} button, then `Order accounts`{.action}.
 >
 
-![Add an account](images/first-steps-hosted-exchange-add-account.png)
+![Add an account](images/first-steps-hosted-exchange-add-account.png){.thumbnail}
 
 ### Use your email addresses
 
@@ -145,7 +150,7 @@ If you would like to configure your email address on an email client or mobile d
 
 OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](/links/manager).
 
-To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license). 
+To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license).
 
 You can also get [Office 365 licences](/links/web/ms365). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
@@ -163,7 +168,7 @@ To enable these features, select the Hosted Exchange service concerned in your [
 
 For assistance with these features, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Creating contact groups](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 

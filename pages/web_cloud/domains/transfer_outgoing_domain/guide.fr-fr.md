@@ -25,8 +25,19 @@ Afin d'empêcher les transferts de noms de domaine non autorisés, les noms de d
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le titulaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de titulaire durant cette période.
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

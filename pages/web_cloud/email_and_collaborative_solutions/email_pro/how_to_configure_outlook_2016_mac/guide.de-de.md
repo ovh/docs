@@ -1,5 +1,5 @@
 ---
-title: 'Email Pro - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
+title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto in Outlook für macOS'
 excerpt: 'So konfigurieren Sie Ihren E-Mail Pro Account auf Outlook für Mac'
 updated: 2025-04-28
 ---
@@ -22,6 +22,17 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 - Die Microsoft Outlook-Anwendung ist auf Ihrem Mac installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 > [!primary]
 >
 > Sie verwenden Outlook für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
@@ -33,13 +44,9 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro?.mail.ovh.net. Das „?” muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden E-Mail Pro Dienst ersetzt werden.
 >
-> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
-> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
-> 1. Klicken Sie auf `E-Mail Pro`{.action}.
-> 1. Wählen Sie den gewünschten Dienst aus.
-> 1. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um zum Bereich `E-Mail Pro`{.action} zu gelangen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
 Nachdem Sie die Outlook-Anwendung auf Ihrem Gerät gestartet haben, können Sie einen Account auf zwei Arten hinzufügen:

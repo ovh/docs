@@ -6,14 +6,27 @@ updated: 2023-07-28
 
 ## Objectif
 
-Ce guide vous détaille comment déployer automatiquement votre instance 3CX sur une instance Public Cloud. 
+Ce guide explique comment déployer automatiquement votre instance 3CX sur une instance Public Cloud. 
 
-A la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre instance et sa configuration automatiquement.
+À la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre instance et sa configuration automatiquement.
+
+**Découvrez comment déployer automatiquement votre IPBX 3CX sur une instance Public Cloud OVHcloud via un template XML.**
 
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) ».
-- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>. 
+- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
@@ -31,7 +44,7 @@ Il peut aussi être très complet pour vous permettre non seulement d'installer 
 
 Dans ce guide, nous allons utiliser un template XML très simple. Pour un template plus complet, nous vous invitons à consulter la [documentation de 3CX](https://www.3cx.com/docs/configure-pbx-automatically/).
 
-### Etape 1 : compléter le template 
+### Étape 1 : Compléter le template 
 
 Nous allons joindre à l'instance un *user-data*. Lors du démarrage de l'instance, ce fichier permettra à l'outil cloud-init de : 
 
@@ -593,7 +606,7 @@ Dans ce template, il y a deux éléments à modifier pour un premier test de dé
 
 Une fois votre template terminé, vous pouvez le déployer grâce aux instructions de l'étape 2.
 
-### Etape 2 : déployer l'instance avec le template 
+### Étape 2 : Déployer l'instance avec le template 
 
 Selon la version et le dimensionnement de votre instance 3CX, le modèle d'instance (*flavor*) à utiliser sera différent. Référez vous au lien suivant pour choisir la bonne instance : <https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/>
 
@@ -601,15 +614,13 @@ Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le menu `Public Cloud`{.action}.
-
-Sélectionnez votre projet Public Cloud.
+Cliquez sur [ce lien](/links/control-panel/publiccloud-projects) pour accéder à la section `Public Cloud`{.action}, puis sélectionnez votre projet.
 
 Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. Sélectionnez votre modèle d'instance et la région désirée.
 
 ![choix d'une flavor](images/flavor.png){.thumbnail}
 
-Sélectionnez ensuite le système d'exploitation. A ce jour, 3CX utilise Debian 10.
+Sélectionnez ensuite le système d'exploitation. À ce jour, 3CX utilise Debian 10.
 
 ![choix de l'OS](images/os.png){.thumbnail}
 
@@ -652,7 +663,7 @@ curl -X POST "https://eu.api.ovh.com/v1/cloud/project/votre_id_projet/instance" 
  -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Nom-De-L-Instance","region":"GRA7","sshKeyId":"Id-De-Votre-Cle-Ssh","userData":"LeContenuDuTemplate"}'
 ```
 
-Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lignes doivent êtres échappés par `\n`.
+Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lignes doivent être échappés par `\n`.
 
 ## Aller plus loin <a name="gofurther"></a>
 

@@ -29,6 +29,7 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 **Diese Anleitung erklärt, wie Sie IPv6 auf Ihrem OVHcloud VPS über mehrere Methoden konfigurieren.**
 
 > [!warning]
+>
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
 > Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
@@ -39,7 +40,18 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 - Sie verfügen über einen [OVHcloud VPS](/links/bare-metal/vps).
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](/links/api).
+- Sie haben Zugriff auf die [OVHcloud API](/links/api) (optional).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## In der praktischen Anwendung
 
@@ -66,8 +78,6 @@ Der erste Schritt besteht darin, die Ihrem Server zugewiesene IPv6-Adresse sowie
 
 > [!tabs]
 > **Über Ihr Kundencenter**
->>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Virtual Private Server`{.action} aus.
 >>
 >> Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway werden im Tab `Start`{.action} unter `IP` angezeigt. Kopieren Sie diese und fahren Sie fort mit Schritt 2, [IPv6-Konfiguration anwenden](#applyipv6).
 >>
@@ -109,7 +119,7 @@ Es gibt mehrere Vorgehensweisen, um die IPv6-Konfiguration anzuwenden. Folgen Si
 - [Nonpersistente Anwendung](#nonpersistent)
 - [Persistente Anwendung auf Debian und Derivaten (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
 - [Persistente Anwendung auf Red Hat und Derivaten (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat)
-- [Persistente Anwendung auf Fedora und höher](#persistentfedora)
+- [Persistente Anwendung auf Fedora 42 und höher](#persistentfedora)
 - [Persistente Anwendung auf Windows Server](#persistentwindows)
 
 #### Nonpersistente Anwendung <a name="nonpersistent"></a>
@@ -202,7 +212,7 @@ Beachten Sie auch, dass die exakten Dateinamen variieren können.
 >> Je nach Generation des auf dem Server installierten Betriebssystems können Sie die oben angegebene Konfiguration auch zu einer der folgenden Dateien hinzufügen (mit *sudo*-Berechtigungen):
 >>
 >> - Datei `/etc/network/interfaces`
->> - Datei `/etc/network/interfaces.d/50-Cloud-init.cfg`
+>> - Datei `/etc/network/interfaces.d/50-cloud-init.cfg`
 >>
 >> Wir empfehlen Ihnen, die relevante Konfigurationsdatei zu sichern. Verwenden Sie zum Beispiel folgenden Befehl:
 >>
@@ -288,7 +298,7 @@ Beachten Sie auch, dass die exakten Dateinamen variieren können.
 >> ```
 >>
 
-#### Persistente Anwendung auf RedHat und dessen Derivaten (CentOS, Rocky Linux, AlmaLinux, etc.) <a name="persistentredhat"></a>
+#### Persistente Anwendung auf Red Hat und dessen Derivaten (CentOS, Rocky Linux, AlmaLinux, etc.) <a name="persistentredhat"></a>
 
 Es gibt zwei Methoden, um Ihr Netzwerk entsprechend dem auf Ihrem Server installierten Betriebssystem zu konfigurieren:
 
@@ -447,11 +457,11 @@ Wählen Sie nun `Use the following IPv6 address`{.action} und geben Sie die IP-A
 
 Sie können auch die DNS-Resolver Ihrer Wahl eintragen, unter `Use the following DNS server addresses`{.action}. Dies ist nicht erforderlich, wenn die DNS-Resolver der IPv4-Konfiguration bereits funktional sind.
 
-Setzen Sie schließlich einen Haken bei `Validate settings upon exit` und klicken Sie auf den Button `OK`{.action}, um die Änderungen zu bestätigen. Es kann eine Fehlermeldung angezeigt werden, wenn sich das angegebene Gateway nicht im gleichen IPv6-Subnetz befindet (/128 und /64, zum Beispiel). Sie können diese Nachricht ignorieren und zum nächsten Schritt übergehen.
+Setzen Sie schließlich einen Haken bei `Validate settings upon exit`{.action} und klicken Sie auf den Button `OK`{.action}, um die Änderungen zu bestätigen. Es kann eine Fehlermeldung angezeigt werden, wenn sich das angegebene Gateway nicht im gleichen IPv6-Subnetz befindet (/128 und /64, zum Beispiel). Sie können diese Nachricht ignorieren und zum nächsten Schritt übergehen.
 
 ![ipv6 konfigurieren](images/configure-ipv6-step4.png){.thumbnail}
 
-### Schritt 3: Konfiguration überprüfen und die Verbindung testen.
+### Schritt 3: Konfiguration überprüfen und die Verbindung testen
 
 Je nach Betriebssystem gibt es mehrere mögliche Befehle, um die Konfiguration zu überprüfen.
 
@@ -512,7 +522,7 @@ Sie können auch die Verbindung zu einem anderen Remote-Server testen. IPv6 muss
 >
 > Wenn IPv6 trotz dieser Änderungen anscheinend nicht auf Ihrem Server funktioniert, kann es (in seltenen Fällen) sein, dass weitere Änderungen erforderlich sind. Führen Sie in diesem Fall folgende Operationen durch:
 >
-> - Je nach Betriebssystem versuchen Sie, das Präfix (*netmask*) der IP-Adresse mit /64 zu ersetzen. Dies schließt das IPv6 Gateway in Ihr Subnetz ein.
+> - Je nach Betriebssystem versuchen Sie, das Präfix (*netmask*) der IP-Adresse mit /128 und /64 zu ersetzen. Dies schließt das IPv6-Gateway in Ihr Subnetz ein.
 >
 > - Zusätzlich zum Neustart des Netzwerkdienstes muss Ihr Server möglicherweise neu gestartet werden, um die Übernahme Ihrer IPv6-Konfiguration abzuschließen.
 > 

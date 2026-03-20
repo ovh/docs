@@ -39,10 +39,20 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine Public Cloud Instanz, wobei das Modell keine Rolle spielt.
 - Sie haben Kenntnisse zu SSH.
 - Sie haben Grundkenntnisse zu Netzwerken.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
@@ -51,6 +61,7 @@ Die folgenden Abschnitte enthalten die Konfigurationen der derzeit von uns angeb
 > [!warning]
 >
 > Beachten Sie, dass die IPv6-Adresse auf unseren Public Cloud Instanzen standardmäßig konfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei des Betriebssystems, bevor Sie Änderungen vornehmen.
+>
 
 ### Glossar
 
@@ -64,7 +75,7 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 
 ### Netzwerk-Informationen abrufen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Wählen Sie das Menü `Instanzen`{.action} und klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
+Klicken Sie in Ihrem Public Cloud Projekt auf `Instanzen`{.action} im linken Menü. Klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
 
 ![Public-Cloud-IPv6](images/pci2022.png){.thumbnail}
 
@@ -106,7 +117,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >>
 >> Dies ermöglicht es Ihnen, die IPv6-Konfiguration zu trennen und im Falle eines Fehlers einfach auf die Änderungen zurückzugreifen.
 >>
->> Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
+>> Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (`YOUR_IPV6`, `IPV6_PREFIX` und `IPV6_GATEWAY`) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
 >>
 >> ```console
 >> iface eth0 inet6 static
@@ -153,7 +164,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >>
 >> Dies ermöglicht es Ihnen, die IPv6-Konfiguration zu trennen und im Falle eines Fehlers einfach auf die Änderungen zurückzugreifen.
 >>
->> Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
+>> Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (`YOUR_IPV6`, `IPV6_PREFIX` und `IPV6_GATEWAY`) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
 >>
 >> ```bash
 >> sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -228,7 +239,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 >> ```
 >>
->> Anschließend bearbeiten wir die Datei `ifcfg-eth0` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) nach Ihren spezifischen Werten.
+>> Anschließend bearbeiten wir die Datei `ifcfg-eth0` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (`YOUR_IPV6`, `IPV6_PREFIX` und `IPV6_GATEWAY`) nach Ihren spezifischen Werten.
 >>
 >> ```console
 >> IPV6INIT=yes
@@ -269,7 +280,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 >> ```
 >>
->> Anschließend bearbeiten wir die Datei `cloud-init-eth0.nmconnection` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) mit Ihren spezifischen Werten.
+>> Anschließend bearbeiten wir die Datei `cloud-init-eth0.nmconnection` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (`YOUR_IPV6`, `IPV6_PREFIX` und `IPV6_GATEWAY`) mit Ihren spezifischen Werten.
 >>
 >> ```console
 >> [ipv6]
@@ -292,7 +303,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >> ```
 >> ///
 >>
->> Starten Sie die den Dienst mit folgendem Befehl neu:
+>> Starten Sie den Dienst mit folgendem Befehl neu:
 >>
 >> ```bash
 >> sudo systemctl restart NetworkManager
@@ -323,7 +334,7 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 
 ### Diagnose
 
-Sie haben IPv6 konfiguriert, aber es funktioniert dennoch nicht? 
+Sie haben IPv6 konfiguriert, aber es funktioniert dennoch nicht?
 
 Mit einem einfachen Mittel lässt sich herausfinden, ob der Fehler in der durchgeführten Konfigurierung oder im Netzwerk von OVHcloud liegt.
 

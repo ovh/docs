@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2025-04-28
+updated: 2026-02-20
 ---
 
 ## Objectif
@@ -17,7 +17,6 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 - Un service [vRack](/links/network/vrack) activé dans votre compte
 - Plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) (compatibles vRack)
 - Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
 > [!warning]
@@ -29,7 +28,7 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 ### Étape 1 : commander le vRack
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
+Cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu situé à gauche de l'écran. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
 
 ![Commander vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
@@ -79,7 +78,7 @@ link ether f0:00:00:ef:0e:f0
 #### Configurations GNU/Linux
 
 > [!tabs]
-> **Debian (hors Debian 12)**
+> **Debian 11**
 >>
 >> Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 >>
@@ -110,7 +109,7 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **Ubuntu et  Debian 12**
+> **Ubuntu et Debian 12+**
 >>
 >> A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
 >>
@@ -147,12 +146,26 @@ link ether f0:00:00:ef:0e:f0
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **CentOS, AlmaLinux et RockyLinux**
+> **AlmaLinux et Rocky Linux (8/9)**
 >>
->> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+>> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. 
+>>
+>> Remplacez `NETWORK_INTERFACE` par votre propre valeur.
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> ```
+>>
+>> Par exemple, si l'interface privée est nommée `eth1`, nous avons ce qui suit :
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>>
+>> Ensuite, utilisez l'éditeur de texte de votre choix pour modifier ce fichier.
+>>
+>> ```bash
+>> sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 >> ```
 >>
 >> Ajoutez ces lignes, en remplaçant `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
@@ -175,18 +188,12 @@ link ether f0:00:00:ef:0e:f0
 >> Redémarrez le service réseau pour appliquer les modifications :
 >>
 >> ```bash
->> sudo systemctl restart networking
->> ```
->>
->> Sous **CentOS 8, AlmaLinux et RockyLinux**, utilisez cette commande :
->>
->> ```bash
 >> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
 >>
-> **Fedora**
+> **Fedora 42+, AlmaLinux et Rocky Linux (10)**
 >>
 >> Une fois que vous avez identifié le nom de votre interface privée (comme expliqué [ici](#vrack-interface)), lancez la commande suivante pour vérifiez qu'elle est bien connectée. Dans notre exemple, notre interface est appelée `eno2` :
 >>
@@ -289,15 +296,15 @@ Connectez-vous à votre serveur Windows via le bureau à distance et allez dans 
 
 ![Windows Control Panel](images/windows_control_panel.png){.thumbnail}
 
-Cliquez sur `Network and Internet`{.action}.
+Cliquez sur `Réseau et Internet`{.action}.
 
 ![Réseau et Internet](images/windows_network_and_internet.png){.thumbnail}
 
-Ouvrez `Network and Sharing Center`{.action}.
+Ouvrez `Centre Réseau et partage`{.action}.
 
 ![Network and Sharing Center](images/windows_network_and_sharing_centre.png){.thumbnail}
 
-Cliquez sur `Change Adapter Settings`{.action}.
+Cliquez sur  `Modifier les paramètres de la carte`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
@@ -311,7 +318,7 @@ Double-cliquez sur `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Internet Protocol Version 4 (TCP/IP/IPv4)](images/windows_ipv4.png){.thumbnail}
 
-Cliquez sur **Utiliser l'adresse IP suivante**. Entrez n'importe quelle adresse **IP** de votre plage privée et le **masque** de sous-réseau approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
+Cliquez sur `Utiliser l'adresse IP suivante`{.action}. Entrez n'importe quelle **Address IP** de votre plage privée et le **Masque de sous-réseau** approprié (`255.255.0.0` dans cet exemple) dans le champ correspondant.
 
 ![Utiliser l'adresse IP suivante](images/windows_use_following_ip_address.png){.thumbnail}
 

@@ -37,7 +37,17 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 
@@ -45,7 +55,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei CMS citati precedentemente.
 
-##### WordPress
+#### WordPress
 
 **WordPress** è generalmente utilizzato per creare un sito Web o un blog. È basato sulla tecnologia PHP e comporta una gamma di strumenti come un correttore ortografico e plugin per l'e-commerce, la SEO e la sicurezza del tuo sito Web.
 

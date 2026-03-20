@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Premiers pas avec la gestion de versions"
 excerpt: "Découvrez comment activer et gérer la gestion de versions pour vos buckets de stockage d'objets OVHcloud en utilisant les API"
-updated: 2025-07-07
+updated: 2026-03-06
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ updated: 2025-07-07
 
 ### Concept
 
-La gestion de versions dans le stockage d'objets vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité aide à préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets, facilitant ainsi la récupération en cas d'actions involontaires des utilisateurs ou de défaillances des applications. Par défaut, la gestion de versions est désactivée sur les buckets, et vous devez l'activer explicitement.
+La gestion de versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité aide à préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets, facilitant ainsi la récupération en cas d'actions involontaires des utilisateurs ou de défaillances des applications. Par défaut, la gestion de versions est désactivée sur les buckets, et vous devez l'activer explicitement.
 
 ### Informations générales
 
@@ -160,7 +160,7 @@ Lorsque le versioning est activé :
 
 > [!primary]
 >
-> Si le versioning est activé sur votre bucket S3, la suppression d’un objet ajoute un Delete Marker : l’objet disparaît de la vue par défaut, mais reste visible via l’option `Voir les versions`{.action}.
+> Si le versioning est activé sur votre bucket Object Storage, la suppression d’un objet ajoute un Delete Marker : l’objet disparaît de la vue par défaut, mais reste visible via l’option `Voir les versions`{.action}.
 >
 > Cette protection permet de restaurer un objet supprimé par erreur.
 >
@@ -179,38 +179,37 @@ Lorsque le versioning est activé :
 >> Pour supprimer un objet, utilisez la commande suivante :
 >>
 >> ```bash
->> aws s3api delete-object --bucket <bucket> --key <objet>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key>
 >> ```
 >>
 >> Si vous souhaitez voir les différentes versions d'un objet, utilisez la commande suivante :
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key>
 >> ```
 >>
 >> Pour supprimer une version spécifique d'un objet :
 >>
 >> ```bash
->> aws s3api delete-object --bucket <bucket> --key <object> --version-id <version-id>
+>> aws s3api delete-object --bucket <bucket_name> --key <object_key> --version-id <version_id>
 >> ```
 >>
->> Si vous souhaitez supprimer une étiquette `delete marker` pour récuperer votre version d'objet, procédez comme suit :
+>> Si vous souhaitez supprimer un delete marker pour récupérer votre version d'objet, procédez comme suit :
 >>
->> - Listez les delete markers et identifiez le version-id du delete marker :
->>
+>> - Listez les delete markers et identifiez l'identifiant de version du delete marker :
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket my-bucket --prefix my-object.txt \
->>  --query "DeleteMarkers" --output json
+>> aws s3api list-object-versions --bucket <bucket_name> --prefix <object_key> \
+>>   --query "DeleteMarkers" --output json
 >> ```
 >>
 >> - Supprimez ce delete marker :
 >>
 >> ```bash
 >> aws s3api delete-object \
->>  --bucket my-bucket \
->>  --key my-object.txt \
->>  --version-id <delete-marker-version-id>
+>>   --bucket <bucket_name> \
+>>   --key <object_key> \
+>>   --version-id <delete_marker_version_id>
 >> ```
 >>
 >> l’objet sera de nouveau accessible comme s’il n’avait jamais été supprimé.

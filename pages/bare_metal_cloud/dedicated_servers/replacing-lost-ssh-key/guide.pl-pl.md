@@ -26,7 +26,6 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 

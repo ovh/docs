@@ -21,7 +21,6 @@ W tym tutorialu znajdziesz przykłady sytuacji dotyczących zabezpieczenia Twoje
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting).
 - Zarejestrowanie co najmniej jednej [domeny](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja "Web cloud".
 
 ## W praktyce
 

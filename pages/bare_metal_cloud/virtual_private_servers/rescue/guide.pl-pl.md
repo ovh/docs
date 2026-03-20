@@ -8,11 +8,11 @@ updated: 2025-01-12
 
 Tryb awaryjny (*rescue*) to dostarczone przez OVHcloud narzędzie do uruchamiania Twojego serwera VPS w tymczasowym systemie operacyjnym. Po wykonaniu tych czynności można zalogować się do systemu w celu wykonania zadań diagnostycznych i rozwiązania problemów, na przykład:
 
-- [Reset hasła użytkownika w celu odzyskania dostępu](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
-- Diagnostyka problemów z siecią
-- Naprawa uszkodzonego systemu operacyjnego
-- Napraw nieprawidłowo skonfigurowany firewall programowy
-- Test wydajności dysku
+- [Zresetować hasło użytkownika w celu odzyskania dostępu](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- Zdiagnozować problemy z siecią
+- Naprawić uszkodzony system operacyjny
+- Naprawić nieprawidłowo skonfigurowany firewall programowy
+- Przetestować wydajność dysku
 
 W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Rescue, aby określić, czy problem jest związany z oprogramowaniem zainstalowanym na serwerze VPS, czy też jest to głębsza przyczyna. Przed skontaktowaniem się z naszymi zespołami pomocy zalecamy użycie trybu Rescue w celu zebrania wyników testów i wykluczenia błędów w oprogramowaniu.
 
@@ -25,20 +25,28 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie już skonfigurowanego [VPS OVHcloud](/links/bare-metal/vps)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [VPS management](/links/control-panel/baremetal-vps)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Prywatne serwery wirtualne`{.action} > Wybierz VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Do Twoich obowiązków należy zatem upewnienie się, że działają one prawidłowo.
 >
-> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy kontakt z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](https://community.ovh.com/en/).
+> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy kontakt z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](/links/community).
 >
 
 ## W praktyce
 
 ### Aktywacja trybu Rescue
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
 W zakładce `Strona główna`{.action} kliknij `...`{.action} obok "Boot" w strefie **Twój VPS**.
 
@@ -145,7 +153,7 @@ Po zakończeniu operacji w trybie Rescue zrestartuj VPS do trybu normalnego w Pa
 Jeśli podczas restartu serwera VPS wystąpi błąd, wykonaj następujące kroki:
 
 - Sprawdź KVM w Panelu klienta, aby otrzymać informacje dotyczące powodów, dla których nie można uruchomić serwera VPS. Zapoznaj się z [przewodnikiem KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps), aby uzyskać więcej informacji na temat tej funkcji.
-- Jeśli KVM wskazuje, że serwer VPS jest zablokowany podczas uruchamiania lub nie może odnaleźć dysku, upewnij się, że [logi początkowe są włączone](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Prześlij logi do naszych zespołów pomocy technicznej, aby uzyskać więcej informacji [dodaj zgłoszenie](https://help.ovhcloud.com/csm?id=csm_get_help).
+- Jeśli KVM wskazuje, że serwer VPS jest zablokowany podczas uruchamiania lub nie może odnaleźć dysku, upewnij się, że [logi początkowe są włączone](/pages/bare_metal_cloud/virtual_private_servers/bootlog_display_kvm). Prześlij logi do naszych zespołów pomocy technicznej, aby uzyskać więcej informacji, [tworząc zgłoszenie](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 <a name="gofurther"></a>
 
@@ -159,4 +167,4 @@ Jeśli podczas restartu serwera VPS wystąpi błąd, wykonaj następujące kroki
 
 [Sprawdź system plików na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do [społeczności naszych użytkowników](/links/community).

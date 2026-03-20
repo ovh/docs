@@ -14,7 +14,7 @@ updated: 2026-01-21
 
 ## Objective
 
-Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
+Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation and SEO, and improve the continuity of service for your applications and systems.
 
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
@@ -33,7 +33,17 @@ With this technology, you can switch IP addresses from one solution to another i
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - An [Additional IP address](/links/network/additional-ip)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -68,9 +78,7 @@ If you order an additional IP block on a server but choose a different location 
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
-
-Then, you can use the drop-down menu underneath **My public IP addresses and associated services** and select `All Additional IPs`{.action} to filter your services accordingly, or directly type the desired IP address in the search bar.
+You can use the drop-down menu underneath **My public IP addresses and associated services** and select `All Additional IPs`{.action} to filter your services accordingly, or directly type the desired IP address in the search bar.
 
 ![manage IPs](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/manage_additional_ips_new.png){.thumbnail}
 
@@ -94,7 +102,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 
 Log in to the OVHcloud [API webpage](/links/api).
 
-First, it is best to check if the IP address can be moved.
+First, check if the IP address can be moved.
 <br>To check if the IP can be moved to one of your dedicated servers, use the following call:
 
 > [!api]
@@ -135,11 +143,11 @@ Click on the cogwheel next to the corresponding IP and select `Move the failover
 
 ![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
 
-Select `Move to an OVH service`, enter your OVHcloud NIC handle and click on `Next`{.action}.
+Select `Move to an OVH service`{.action}, enter your OVHcloud NIC handle and click on `Next`{.action}.
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-This will generate a code (token), save it.
+This will generate a code (token). Save it.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 
@@ -149,7 +157,7 @@ Click on the cogwheel on the right side and select `Import IP addresses from SyS
 
 ![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
 
-A pop up window will appear, enter the Additional IP (or block) and the token (retrieved in the So you Start account). Then, click on `Next`{.action}.
+In the pop-up window, enter the Additional IP (or block) and the token retrieved from the So you Start account, then click `Next`{.action}.
 
 ![soyoustart to ovh](images/Step-1.png){.thumbnail}
 
@@ -160,7 +168,7 @@ Click on `Next`{.action}.
 ![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
 ![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
 
-In the next window, the duration is automatically selected and the fee is displayed, click on `Next`{.action} to proceed.
+In the next window, the duration is automatically selected and the fee is displayed. Click `Next`{.action} to proceed.
 
 ![soyoustart to ovh](images/Step-3.png){.thumbnail}
 
@@ -174,7 +182,7 @@ Take note of the order summary and click on `Confirm`{.action} to confirm it.
 
 You will be redirected to a new page to make the payment.
 
-Once the payment is done, your Addtional IP will be transferred to your OVHcloud account and linked to the selected server. This process can take some time.
+Once the payment is done, your Additional IP will be transferred to your OVHcloud account and linked to the selected server. This process can take some time.
 
 ### Limitations <a name="limitations"></a>
 

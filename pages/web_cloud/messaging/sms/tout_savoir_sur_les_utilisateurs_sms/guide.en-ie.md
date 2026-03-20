@@ -1,6 +1,6 @@
 ---
 title: 'Everything you need to know about SMS users'
-excerpt: 'Explore the features for API users to send SMS messages'
+excerpt: 'Find out how to create, configure and manage API users for sending SMS messages, including setting permissions and restrictions'
 updated: 2022-08-05
 ---
 
@@ -11,7 +11,17 @@ This guide will explain how to create and manage API users.
 ## Requirements
 
 - an active OVHcloud SMS account
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [SMS](/links/control-panel/telecom-sms)
+- **Navigation path:** `Telecom`{.action} > `SMS`{.action} > Select your SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -38,9 +48,7 @@ To better manage credit for your SMS accounts, you can set a limit and quota for
 
 ### Step 1: Create an API user
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and select your SMS account.
-
-Then click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
+Click on the `API users`{.action} tab. To add a user, click `Actions`{.action}, then `Add`{.action}.
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
@@ -124,7 +132,7 @@ The table below provides a **non-exhaustive** list of the main ptt codes.
 
 |Code|Description|
 |---|---|
-|1|An intermediary status notification indicating that the message has not yet been delivered due to a phone-related problem, but delivery is being re-tried.|
+|1|An intermediary status indicating that the message is being retried due to a phone-related issue.|
 |2|Used to indicate that the message has not yet been delivered due to an operator-related problem, but delivery is being re-tried within the network.|
 |3|Used to indicate that the message has been accepted by the operator.|
 |4|The message has been delivered.|

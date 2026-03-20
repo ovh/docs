@@ -1,6 +1,6 @@
 ---
 title: "Envoyer des SMS depuis l'espace client OVHcloud"
-excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
+excerpt: "Découvrez comment envoyer vos premiers SMS étape par étape, configurer les expéditeurs et gérer les destinataires depuis votre espace client"
 updated: 2026-01-07
 ---
 
@@ -10,20 +10,28 @@ Vous pouvez envoyer des SMS directement via votre espace client OVHcloud. Ce gui
 
 ## Prérequis
 
-- Disposer d’un compte SMS OVHcloud avec des crédits SMS.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un compte SMS OVHcloud avec des crédits SMS.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et sur votre compte SMS.
-
 Le champ « Envoyer un SMS » est le premier élément disponible dans la liste des actions.
 
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
-### Étape 1 : configurer l’expéditeur et le destinataire
+### Étape 1 : Configurer l’expéditeur et le destinataire
 
 > [!primary]
 > Pour plus de renseignements sur la création et l'utilisation d'un expéditeur, reportez-vous à notre guide « [Tout savoir sur les expéditeurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms) ».
@@ -32,22 +40,22 @@ Une fois sur la page d'envoi de SMS, vous disposez de différents paramètres à
 
 ![envoi sms manager](images/sms-send-control-panel02E.png){.thumbnail}
 
-Pour l’expéditeur du SMS (1) , vous avez la possibilité de sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique.
+Pour l’expéditeur du SMS (1) , vous pouvez sélectionner soit un numéro court permettant la réponse (uniquement pour les comptes OVHcloud en France), soit un expéditeur alphanumérique.
 
 > [!primary]
 > Pour plus de renseignements sur les SMS permettant la réponse, référez-vous à notre guide « [Envoyer des SMS permettant la réponse](/pages/web_cloud/messaging/sms/gerer_les_sms_avec_reponse) ».
 
-Renseignez ensuite  le numéro du destinataire (2) au format international (+336xxxxxxxx).
+Renseignez ensuite le numéro du destinataire (2) au format international (+336xxxxxxxx).
 
 Vous pouvez également envoyer des SMS à plusieurs destinataires. Deux méthodes sont disponibles pour y parvenir :
 
-- Par le biais d'une liste de destinataires au format .csv via le bouton "Gérer les destinataires".
+- Par le biais d'une liste de destinataires au format .csv via le bouton « Gérer les destinataires ».
 Pour plus d'informations, vous pouvez consulter notre [guide sur les listes de destinataires SMS](/pages/web_cloud/messaging/sms/liste_de_destinataire_sms).
 
-- Par le biais d'un carnet d'adresses (3) . Celui-ci peut être créé directement via votre espace client, ou être importé via un fichier .csv ou .txt. 
+- Par le biais d'un carnet d'adresses (3). Celui-ci peut être créé directement via votre espace client, ou être importé via un fichier .csv ou .txt. 
 N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](/pages/web_cloud/messaging/sms/gerer_mes_carnets_dadresses_sms).
 
-### Étape 2 : composer votre SMS
+### Étape 2 : Composer votre SMS
 
 > [!primary]
 >

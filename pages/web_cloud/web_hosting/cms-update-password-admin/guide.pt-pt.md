@@ -14,7 +14,17 @@ Perdeu o acesso à sua interface de administração WordPress, PrestaShop, Jooml
 
 - Ter um [plano de alojamento web](/links/web/hosting) que permite a instalação de um módulo em 1 clique.
 - Ter criado um módulo 1 clique no seu alojamento web (se ainda não realizou esta instalação, siga as instruções deste [guia](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) (apenas para a parte associada ao phpMyAdmin).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Web hosting](/links/control-panel/web-hosting)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Alojamentos`{.action} > Selecione o seu alojamento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instruções
 

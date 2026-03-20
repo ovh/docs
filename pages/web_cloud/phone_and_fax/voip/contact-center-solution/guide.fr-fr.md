@@ -6,7 +6,7 @@ updated: 2026-01-22
 
 ## Objectif
 
-Le Contact Center Solution (CCS) est la configuration la plus complète applicable à un numéro alias. Elle permet notamment de combiner les configurations avancées que sont la [file d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels) et le [serveur vocal interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
+Le Contact Center Solution (CCS) est la configuration la plus complète pour un numéro alias. Elle combine la [file d'appels](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels) et le [serveur vocal interactif (SVI)](/pages/web_cloud/phone_and_fax/voip/svi_serveur_vocal_interactif).
 
 Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
 
@@ -15,7 +15,17 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 ## Prérequis
 
 - Disposer d'un [numéro alias](/links/telecom/telephonie-numeros).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -29,12 +39,6 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 |TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous définissez dans l'espace client OVHcloud.|
 
 ## En pratique
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
-
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ### Étape 1 : Appliquer la configuration « Contact Center Solution » <a name="appliquer-CCS"></a>
 
@@ -56,7 +60,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ### Étape 2 : Accéder à la configuration du Contact Center Solution
 
-Une fois la configuration de Contact Center Solution appliquée, la page de configuration du CCS vous est présentée.
+Une fois la configuration de Contact Center Solution appliquée, la page de configuration du CCS s'affiche.
 
 ![contact-center-solution](images/2026-VoIP-CCS-01.png){.thumbnail}
 
@@ -87,7 +91,7 @@ Il peut être intéressant de créer ou téléverser ces fichiers-sons dès le d
 
 #### Gérer les sons <a name="gerer-sons"></a>
 
-Si vous disposez déjà de vos fichiers-sons, vous pouvez les enregistrer dans votre configuration. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants lorsque vos lignes sont occupées.
+Si vous disposez déjà de vos fichiers-sons, enregistrez-les dans votre configuration. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants lorsque vos lignes sont occupées.
 
 Ouvrez le `Menu Numéro`{.action} puis cliquez sur `Gérer les sons`{.action}.
 
@@ -218,7 +222,7 @@ Les mêmes choix vous sont proposés pour définir un son ou un TTS en cas d'act
 
 Une fois ces informations définies, cliquez sur `Créer`{.action}. Vous pouvez maintenant créer les entrées du menu interactif, c'est à dire les choix de touches proposés à vos appelants et les actions qui y sont liées.
 
-Cliquez sur le bouton `+`{.action} en bas de du menu pour ajouter votre première entrée.
+Cliquez sur le bouton `+`{.action} en bas du menu pour ajouter votre première entrée.
 
 ![contact-center-solution](images/ccs-step4-1-3.png){.thumbnail}
 
@@ -241,7 +245,7 @@ Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs m
 ### Étape 5 : Configurer votre CCS <a name="configurer-CCS"></a>
 
 Une fois vos files et menus interactifs créés, il faut maintenant les articuler dans le CCS.
-<br>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créés.
+<br>Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créées.
 
 Voici un exemple de configuration d'un CCS :
 
@@ -258,7 +262,7 @@ Pour ajouter une étape, cliquez sur le bouton `+ Ajouter une étape`{.action} (
 
 #### Afficher ou masquer les actions
 
-A des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies. Cliquez sur `Options d'affichage`{.action} puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
+À des fins de lisibilité, vous pouvez choisir à tout moment d'afficher ou masquer toutes les actions définies. Cliquez sur `Options d'affichage`{.action} puis sur `Afficher toutes les actions`{.action} ou `Masquer toutes les actions`{.action}.
 
 ![contact-center-solution](images/gerer-etapes-actions2021c.png){.thumbnail}
 
@@ -317,7 +321,7 @@ Après avoir cliqué sur `Plages horaires génériques`{.action} depuis le menu 
 
 Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour cela, sélectionnez les jours concernés puis renseignez les horaires dans les cases prévues à cet effet. Cliquez sur le bouton `V`{.action} à droite pour enregistrer la plage.
 
-Une fois toutes vos plages horaires déifinies, cliquez sur le bouton `Modifier`{.action} pour les valider.
+Une fois toutes vos plages horaires définies, cliquez sur le bouton `Modifier`{.action} pour les valider.
 
 ![contact-center-solution](images/plageshoraires2021.gif){.thumbnail}
 
@@ -359,14 +363,14 @@ Les options disponibles dans ce menu vous permettent de :
 - modifier le nom du CCS.
 - gérer le timeout de transfert d'appel vers une ligne externe (ici exprimé en secondes). Lorsque votre configuration comporte un transfert vers une ligne externe, si cette ligne ne décroche pas avant la durée définie dans ce champ, l'appel passera à l'étape suivante de la configuration.
 - gérer la présentation du numéro de vos appelants.
-- accepter ou refus les appels masqués (anonymes).
+- accepter ou refuser les appels masqués (anonymes).
 
 ![Optionsccs](images/optionsccs.png){.thumbnail}
 
 Trois options de présentation du numéro, sur le téléphone qui reçoit l'appel, sont possibles :
 
-- présenter le numéro de l'appelant;
-- présenter le numéro du CCS, c'est à dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés;
+- présenter le numéro de l'appelant ;
+- présenter le numéro du CCS, c'est à dire le numéro alias qui a été composé par l'appelant, ce qui peut être utile si vous possédez plusieurs numéros alias configurés ;
 - présenter les deux numéros, celui de l'appelant et celui du CCS.
 
 ![Optionsccs](images/numeropres2.png){.thumbnail}

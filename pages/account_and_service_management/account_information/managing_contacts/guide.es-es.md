@@ -28,13 +28,23 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
 - Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
 - El nuevo contacto debe tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
 - El nuevo contacto de facturación debe disponer de una forma de pago válida en su cuenta de OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Gestión de contactos](/links/control-panel/account-contacts)
+- **Ruta de navegación:** Haga clic en su nombre en la parte superior derecha > `Mis contactos`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## Procedimiento
 
@@ -44,7 +54,7 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ### Acceder a la gestión de los contactos <a name="gestion_des_contacts"></a>
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione en `Mis contactos`{.action}.
+Abra la página [Gestión de contactos](/links/control-panel/account-contacts).
 
 ![Gestión de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -85,7 +95,7 @@ Como contacto de facturación, solo puede designar a otro contacto de facturaci�
 
 ### Validar, rechazar o realizar el seguimiento de un cambio de contacto
 
-Para gestionar y realizar el seguimiento de las solicitudes en curso, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione en `Mis contactos`{.action} > `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
+Para gestionar y realizar el seguimiento de las solicitudes en curso, haga clic en la pestaña `Mis solicitudes`{.action}. Ahí es donde puede aceptar o rechazar una solicitud.
 
 ![Gestión de contactos](images/managing_contacts_05.png){.thumbnail}
 

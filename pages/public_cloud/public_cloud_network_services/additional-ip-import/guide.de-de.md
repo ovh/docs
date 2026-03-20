@@ -24,16 +24,24 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine [Additional IP-Adresse](/links/bare-metal/ip).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 > Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
 >
 
 ## In der praktischen Anwendung
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
 Öffnen Sie im linken Menü `Öffentliche IPs`{.action} unter **Network**.
 

@@ -14,10 +14,20 @@ It also includes guidance on infrastructure choices, IAM, backups, logging, priv
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), if you intend using it.
 - Basic understanding of [cloud networking concepts](/links/public-cloud/network) (e.g., subnets, gateways, Floating IPs).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

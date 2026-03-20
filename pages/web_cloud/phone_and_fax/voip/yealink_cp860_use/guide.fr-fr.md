@@ -1,18 +1,18 @@
 ---
-title: 'Utiliser le Yealink CP860'
-excerpt: 'Découvrez comment utiliser votre téléphone Yealink CP860'
+title: "Utiliser le téléphone Yealink CP860"
+excerpt: "Découvrez comment utiliser votre téléphone Yealink CP860"
 flag: hidden
 updated: 2018-07-03
 ---
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVH.**
-http://docs.uxci.ovh/admin/git
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone fourni par OVHcloud.**
+
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné et installé le téléphone Yealink CP860 fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Avoir réceptionné et installé le téléphone Yealink CP860 fourni par OVHcloud.
 
 ## En pratique
 

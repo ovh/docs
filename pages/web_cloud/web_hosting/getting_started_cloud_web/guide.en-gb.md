@@ -15,7 +15,17 @@ For our new [Cloud Web](/links/web/hosting-cloud-web-offer) solution, we have co
 - a [Cloud Web hosting plan](/links/web/hosting-cloud-web-offer)
 - an email confirming that your hosting plan has been set up
 - a [domain name](/links/web/domains) for your website
-- access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Web hosting](/links/control-panel/web-hosting)
+- **Navigation path:** `Web Cloud`{.action} > `Hosting plans`{.action} > Select your web hosting plan
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Instructions
 

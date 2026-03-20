@@ -12,29 +12,35 @@ updated: 2025-05-22
 
 ## Wprowadzenie
 
-Oferty OVHcloud **Microsoft 365 apps for business** lub **Microsoft 365 apps for entreprise** mają kilka zalet. Płatności są wykonywane co miesiąc i możesz zainstalować licencję na 5 PC/Mac, 5 tabletach i 5 smartfonach.
+Oferty OVHcloud **Microsoft 365 apps for business** lub **Microsoft 365 apps for Enterprise** mają kilka zalet. Płatności są wykonywane co miesiąc i możesz zainstalować licencję na 5 PC/Mac, 5 tabletach i 5 smartfonach.
 
 Licencje Microsoft 365 są pogrupowane w grupę zwaną również "Usługą". Grupa licencji Apps for business może zawierać maksymalnie 300 licencji, nieograniczona jest grupa licencji Apps dla firm.
 
 Oto lista programów zawartych w pakiecie:
 
-- Licencje Apps for business: Excel, Word, PowerPoint, Outlook, Notatka, Publisher.
-- Licencje Apps for entreprise: Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
+- Licencje Apps for business: Excel, Word, PowerPoint, Outlook, OneNote, Publisher.
+- Licencje Apps for Enterprise: Excel, Word, PowerPoint, Outlook, OneNote, Publisher, Access.
 
 **Dowiedz się, jak zamówić licencję Microsoft 365 i zarządzać nią w Panelu klienta OVHcloud**
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+<!-- CP-NAV-START:web-microsoft-365 -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Microsoft 365](/links/control-panel/web-microsoft-365)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Microsoft 365`{.action}
+
+---
+<!-- CP-NAV-END:web-microsoft-365 -->
 
 ## W praktyce
 
 ### Zamów licencję
 
-1. Przejdź do strony biznesowej [Microsoft 365 OVHcloud](/links/web/ms365) lub panelu [Panel klienta OVHcloud](/links/manager):
-    - Przejdź do sekcji `Web Cloud`{.action}.
-    - W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-    - Kliknij na `Zamów`{.action}.
+1. Przejdź do strony biznesowej [Microsoft 365 OVHcloud](/links/web/ms365) lub kliknij `Zamów`{.action}.
 1. Wybierz spośród naszych dostępnych ofert: "Apps for Business" i "Apps for Enterprise".
 1. Określ częstotliwość odnawiania grupy licencji.
 1. Określ liczbę potrzebnych licencji i sfinalizuj zamówienie.
@@ -43,10 +49,6 @@ Oto lista programów zawartych w pakiecie:
 
 Aby aktywować zamówioną licencję:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `⁝`{.action} w linii licencji, której dotyczy aktywacja, następnie `Edytuj konto`{.action}.
 
@@ -76,10 +78,6 @@ Aby zainstalować licencję na kilku maszynach, należy wykonać reprodukcję [p
 
 Jeśli chcesz samodzielnie zdefiniować hasło do licencji:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `⁝`{.action} po prawej stronie wybranej licencji, a następnie `Zmień hasło`{.action}.
 
@@ -89,19 +87,15 @@ Jeśli chcesz samodzielnie zdefiniować hasło do licencji:
 
 Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Microsoft 365`{.action}.
-1. Wybierz odpowiednią usługę Microsoft 365.
 1. Kliknij zakładkę `Licencje`{.action}.
 1. Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie.
-1. Wybierz **nombre** i **type de licence**, które chcesz zamówić, następnie kliknij `Zatwierdź`{.action}.
+1. Wybierz **liczbę** i **typ licencji**, które chcesz zamówić, następnie kliknij `Zatwierdź`{.action}.
 
 ![emaile](images/Outlook-cps1-05.png){.thumbnail .w-500}
 
-### Zarządzaj subskrypcjami <a name="managessubscriptions"></a>
+### Zarządzaj subskrypcjami <a name="managesubscriptions"></a>
 
-### Usuń licencję z grupy licencji
+#### Usuń licencję z grupy licencji
 
 W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `⁝`{.action} po prawej stronie licencji, którą chcesz anulować, po czym kliknij `Usuń konto`{.action}.
 
@@ -111,7 +105,7 @@ W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `⁝`{.action} p
 >
 > Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
 
-### Rezygnacja z grupy licencji
+#### Rezygnacja z grupy licencji
 
 Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1:
 
@@ -125,7 +119,7 @@ Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1:
 >
 > Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 

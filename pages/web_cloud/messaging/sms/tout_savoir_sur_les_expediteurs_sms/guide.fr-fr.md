@@ -1,6 +1,6 @@
 ---
-title: 'Tout savoir sur les expéditeurs SMS'
-excerpt: Découvrez les différents expéditeurs utilisables avec nos solutions SMS
+title: "Tout savoir sur les expéditeurs SMS"
+excerpt: "Découvrez les différents expéditeurs utilisables avec nos solutions SMS"
 updated: 2025-10-28
 ---
 
@@ -10,18 +10,24 @@ Ce guide vous explique comment créer et utiliser des expéditeurs pour l’envo
 
 ## Prérequis
 
-- Disposer d’un [compte SMS OVHcloud](/links/telecom/sms).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action} puis `SMS`{.action}.
+- Disposer d'un [compte SMS OVHcloud](/links/telecom/sms).
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Télécom`{.action}.
-
-Cliquez ensuite sur `SMS`{.action} puis sur votre compte SMS.
-
-### Types d’expéditeurs disponibles
+### Types d'expéditeurs disponibles
 
 OVHcloud vous offre la possibilité de choisir un type d’expéditeur pour envoyer vos SMS.
 
@@ -43,11 +49,11 @@ Il permet de recevoir une réponse via l’onglet SMS reçus.
 
 #### Expéditeur alphanumérique
 
-Vous pouvez personnaliser votre expéditeur. Il n’est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez l’onglet `Expéditeurs`{.action}(1) lorsque vous êtes sur le compte SMS concerné.
+Vous pouvez personnaliser votre expéditeur. Il n'est alors plus possible de recevoir une réponse de la part du destinataire de votre SMS. Pour accéder à la gestion des expéditeurs SMS, sélectionnez l'onglet `Expéditeurs`{.action} (1) lorsque vous êtes sur le compte SMS concerné.
 
 ![envoi sms manager](images/sms-send-control-panel04E.png){.thumbnail}
 
-Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bouton `Actions`{.action} au centre puis sur `Ajouter`{.action}(2).
+Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bouton `Actions`{.action} au centre puis sur `Ajouter`{.action} (2).
 
 ![envoi sms manager](images/sms-send-control-panel05E.png){.thumbnail}
 
@@ -55,7 +61,7 @@ Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer
 
 - **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). Une pièce justificative est également nécessaire.
 
-**Exemple** : si vous souhaitez envoyer votre sms avec le nom de votre societé comme expéditeur, un justificatif de la societé vous sera demandé.
+**Exemple** : si vous souhaitez envoyer votre SMS avec le nom de votre société comme expéditeur, un justificatif de la société vous sera demandé.
 
 La validation d'un expéditeur alphanumérique est effectuée en moyenne dans les 72 heures après sa création.
 

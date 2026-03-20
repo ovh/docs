@@ -35,7 +35,16 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 
 ## Prérequis
 
-- Ëtre connecté à l’[espace client OVHcloud](/links/manager)
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accès à l’espace client OVHcloud
+
+- **Lien direct :** [Serveurs dédiés](/links/control-panel/baremetal-dedicated-servers)
+- **Pour accéder à vos services :** `Bare Metal Cloud`{.action} > `Serveurs dédiés`{.action} > Sélectionnez votre serveur
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## En pratique
 
@@ -44,8 +53,6 @@ La technologie LACP (Link Aggregation Control Protocol) est conçue pour augment
 >
 
 ### Récupération des adresses MAC
-
-Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les **Serveurs dédiés**.
 
 Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 

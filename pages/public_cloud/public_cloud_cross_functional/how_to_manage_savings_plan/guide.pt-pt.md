@@ -37,13 +37,24 @@ This guide aims at providing a clear and detailed method for creating and updati
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api) (create your credentials using [this guide](/pages/manage_and_operate/api/first-steps))
+- Access to the [OVHcloud API](/links/api) (create your credentials using [this guide](/pages/manage_and_operate/api/first-steps))
 - Being familiar with [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) if you intend using it.
 - Being familiar with the principles of [Savings Plans](/links/public-cloud/savings-plan)
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section. Once you have selected your Public Cloud project, click on `Savings Plans`{.action} in the left-hand navigation bar under **Parâmetros**.
+Click on `Savings Plans`{.action} in the left-hand navigation bar under **Parâmetros**.
 
 ### Create a Savings Plan
 

@@ -14,19 +14,19 @@ Para abonar un pedido deberá identificarse utilizando su cuenta de cliente. A c
 
 #### Ideas y consejos
 
-¿Ha cerrado la página de la orden de pedido? Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis pedidos`{.action}. A continuación, podrá ver el pedido y abonarlo.
+¿Ha cerrado la página de la orden de pedido? Acceda a la página [Mis pedidos](/links/control-panel/billing-orders). A continuación, podrá ver el pedido y abonarlo.
 
 ### ¿Cómo consultar el estado de un pago?
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis facturas`{.action}. Si una factura está pendiente de pago, directamente en su panel de control, se le propondrá abonar el saldo.
+Abra la página [Mis facturas](/links/control-panel/billing-invoices). Si una factura está pendiente de pago, se le propondrá abonar el saldo.
 
 #### Ideas y consejos
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis formas de pago`{.action}. A continuación, puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
+En la página [Formas de pago](/links/control-panel/billing-payment-methods), puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
 
 ### ¿Cómo realizar el seguimiento de un pedido?
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y haga clic en `Ver mis pedidos`{.action}.
+Abra la página [Mis pedidos](/links/control-panel/billing-orders).
 
 #### Ideas y consejos
 
@@ -62,7 +62,7 @@ Otra posible causa del retraso puede ser que la factura se encuentre pendiente d
 
 #### Ideas y consejos
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis formas de pago`{.action}. A continuación, puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
+En la página [Formas de pago](/links/control-panel/billing-payment-methods), puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
 
 ## Más información
 

@@ -141,7 +141,7 @@ Puis suivez toutes les étapes suivantes :
 
 ### Étape 4 : vérifier le bon fonctionnement de votre service
 
-Le service OverTheBox est actif et opérationnel, vous pouvez consultez l'**IP publique** de votre service sur l'interface **TUN**.
+Le service OverTheBox est actif et opérationnel, vous pouvez consulter l'**IP publique** de votre service sur l'interface **TUN**.
 
 ![overthebox](images/install-step4-1-serviceok-2024.png){.thumbnail}
 
@@ -158,7 +158,7 @@ Le service OverTheBox est actif et opérationnel, vous pouvez consultez l'**IP p
 
 ### Ajouter une interface 4G
 
-Si vous souhaitez configurer l'interface 4G de votre **OTB V3 LTE** ou ajouter une interface 4G par clé USB sur un autre modèle, consultez le guide « [Comment configurer un lien 4G sur OverTheBox?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+Si vous souhaitez configurer l'interface 4G de votre **OTB V3 LTE** ou ajouter une interface 4G par clé USB sur un autre modèle, consultez le guide « [Comment configurer un lien 4G sur OverTheBox ?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
 
 ### Ajouter une connexion supplémentaire
 
@@ -170,8 +170,8 @@ Si vous utilisez la télévision par Internet via l'un de vos fournisseurs d'acc
 
 ### Ajouter un réseau WiFi
 
-Les modems sont isolés dans leurs propre VLAN. Le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ».
+Les modems sont isolés dans leur propre VLAN. Le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ».
 
 Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront ni de l'agrégation, ni du tunnel chiffré.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community)..
+Échangez avec notre [communauté d'utilisateurs](/links/community).

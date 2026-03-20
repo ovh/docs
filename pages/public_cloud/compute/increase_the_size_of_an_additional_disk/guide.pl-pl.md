@@ -1,7 +1,7 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać prz
 
 - Instancja [Public Cloud](/links/public-cloud/compute) w Twoim projekcie Public Cloud
 - [Dodatkowy dysk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 
@@ -110,8 +120,6 @@ Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego wolumenu i wybie
 W oknie, które się wyświetli wskaż nowy rozmiar wolumenu i kliknij `Zmień wolumen`{.action}.
 
 ![dashboard](images/increase-disk-03.png){.thumbnail}
-
-Zanim przejdziesz dalej, upewnij się, że wolumen jest przypisany do Twojej instancji. Jeśli tak nie jest, w wierszu wolumenu kliknij `...`{.action} i wybierz `Przypisz do instancji`{.action}.
 
 ### Rozszerzenie partycji (instancja Linux)
 
@@ -201,7 +209,11 @@ tmpfs 982M 0 982M 0% /sys/fs/group
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Po wykonaniu tych czynności odłącz wolumin od instancji i ponownie dołącz go, aby upewnić się, że zaktualizowane ustawienia QoS (IOPS i przepustowość) zostały poprawnie zastosowane.
+
 ### Rozszerzenie partycji (instancja Windows)
+
+Przed kontynuowaniem dołącz wolumin do instancji. Kliknij `...`{.action} w wierszu woluminu i wybierz `Połącz do instancji`{.action}.
 
 Utwórz połączenie RDP (Remote Desktop) dla Twojej instancji Windows.
 
@@ -230,6 +242,8 @@ Kliknij przycisk `Zakończ`{.action}, aby zakończyć proces.
 Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dyskową.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Po wykonaniu tych czynności odłącz wolumin od instancji i ponownie dołącz go, aby upewnić się, że zaktualizowane ustawienia QoS (IOPS i przepustowość) zostały poprawnie zastosowane.
 
 ## Sprawdź również
 

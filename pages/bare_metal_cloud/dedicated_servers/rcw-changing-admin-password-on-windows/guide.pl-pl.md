@@ -13,7 +13,17 @@ Niniejszy przewodnik wyjaśnia, jak zresetować hasło `Administrator` przy uży
 
 - Microsoft Windows Server 2016 lub nowszy zainstalowany na Twoim [serwerze dedykowanym](/links/bare-metal/bare-metal)
 - Co najmniej 16 GB RAM zainstalowanych na serwerze
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >

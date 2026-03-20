@@ -32,7 +32,17 @@ Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny
 
 - Posiadanie [domeny](/links/web/domains).
 - Posiadanie strefy DNS powiązanej z tą domeną w OVHcloud.
-- Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Strefy DNS`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 ## W praktyce
 

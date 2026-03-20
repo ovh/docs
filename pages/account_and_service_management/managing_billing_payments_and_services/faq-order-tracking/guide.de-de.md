@@ -14,19 +14,19 @@ Sie können Ihre Bestellung erst bezahlen, wenn Sie sich über Ihren Kunden-Acco
 
 #### Tipps und Tricks
 
-Sie haben die Seite Ihrer Bestellung geschlossen? Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Bestellungen`{.action}. Anschließend können Sie Ihre Bestellung einsehen und begleichen.
+Sie haben die Seite Ihrer Bestellung geschlossen? Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders). Dort können Sie Ihre Bestellung einsehen und begleichen.
 
 ### Wie kann ich meinen Zahlungsstatus einsehen?
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Rechnungen`{.action}. Wenn eine ausstehende Rechnung direkt über Ihr Dashboard beglichen wird, können Sie den Restbetrag begleichen.
+Öffnen Sie die Seite [Meine Rechnungen](/links/control-panel/billing-invoices). Wenn eine ausstehende Rechnung vorhanden ist, können Sie den Restbetrag begleichen.
 
 #### Tipps und Tricks
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager)ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Dort können Sie dann Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
 
 ### Wie kann ich den Status meiner Bestellung nachverfolgen?
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und klicken Sie auf `Meine Bestellungen anzeigen`{.action}.
+Öffnen Sie die Seite [Meine Bestellungen](/links/control-panel/billing-orders).
 
 #### Tipps und Tricks
 
@@ -60,7 +60,7 @@ Eine ausstehende Rechnung kann ebenfalls der Grund für die verspätete Bereitst
 
 #### Tipps und Tricks
 
-Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager)ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Dort können Sie dann Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
+Auf der Seite [Zahlungsarten](/links/control-panel/billing-payment-methods) können Sie Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
 
 ## Weiterführende Informationen
 

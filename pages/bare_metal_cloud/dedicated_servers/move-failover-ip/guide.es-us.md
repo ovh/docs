@@ -34,7 +34,17 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](/links/network/additional-ip).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Public IP](/links/control-panel/network-public-ip)
+- **Ruta de navegación:** `Network`{.action} > `IP pública`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -69,8 +79,6 @@ Si contrata un bloque de IP adicional en un servidor, pero elige una localizaci�
 > [!warning]
 > Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
 >
-
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
 Puede utilizar el menú desplegable en **Mis direcciones IP públicas y servicios asociados** y seleccionar `Todas las Additional IP`{.action} para filtrar sus servicios, o escribir directamente la dirección IP deseada en la barra de búsqueda.
 
@@ -123,7 +131,7 @@ Para mover la dirección IP, utilice la siguiente llamada:
 > Antes de comenzar, debe recuperar su identificador de cliente OVHcloud único. Encontrará esta información en los correos electrónicos enviados por OVHcloud (correo electrónico de confirmación de la creación de la cuenta, así como en los correos electrónicos de confirmación o renovación de pedidos). Tiene el siguiente formato: "aa00000-ovh" (las primeras letras suelen ser las iniciales de la persona que ha creado la cuenta).
 >
 
-Para mover una Additional  IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
+Para mover una Additional IP de una cuenta SYS a una cuenta OVHcloud, debe tener en cuenta varios aspectos:
 
 - El movimiento de una Additional IP conlleva gastos de instalación. La dirección IP no se moverá si la factura sigue pendiente de pago.
 - No es posible mover una Additional IP de una cuenta OVHcloud a una cuenta So you Start.
@@ -141,7 +149,7 @@ Seleccione `Mover a un servicio OVH`{.action}, introduzca su identificador de cl
 
 ![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
 
-Esto generará un código (token), guárdelo.
+Esto generará un código (token). Guárdelo.
 
 ![soyoustart to ovh](images/token-id.png){.thumbnail}
 

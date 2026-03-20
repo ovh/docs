@@ -10,7 +10,7 @@ Znajdziesz tutaj najczęściej zadawane pytania dotyczące fakturowania i płatn
 
 ### Kto jest kontaktem księgowym przypisanym do usługi?
 
-Lista kontaktów dla Twoich usług jest dostępna bezpośrednio w [Panelu klienta OVHcloud](/links/manager). Kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
+Lista kontaktów dla Twoich usług jest dostępna bezpośrednio na stronie [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 #### Wskazówki i porady
 
@@ -18,7 +18,7 @@ Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z przewodn
 
 ### Jak zmienić moje dane do faktury?
 
-Twoje dane do faktury to dane przypisane do Twojego identyfikatora klienta. Aby zostały one zaktualizowane na kolejnych fakturach, wystarczy, że zmienisz swoje dane. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Dostęp do konta`{.action}.
+Twoje dane do faktury to dane przypisane do Twojego identyfikatora klienta. Aby zostały one zaktualizowane na kolejnych fakturach, wystarczy, że zmienisz swoje dane na stronie [Mój profil](/links/control-panel/account-profile).
 
 Ze względów prawnych nie ma natomiast możliwości zmiany już wystawionej faktury. Niemniej jednak, jeśli Twoja prośba o zmianę związana jest z błędem po stronie któregoś z naszych działów, skontaktuj się z nami poprzez otwarcie zgłoszenia.
 
@@ -31,13 +31,13 @@ Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, 
 
 #### Wskazówki i porady
 
-Aby sprawdzić status Twoich usług, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}.
+Aby sprawdzić status Twoich usług, otwórz stronę [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 Zaloguj się i odnawiaj ręcznie swoje usługi na stronie lien <https://eu.ovh.com/pl/cgi-bin/order/renew.cgi>
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### W jaki sposób włączyć automatyczne odnawianie usług?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
 
 #### Wskazówki i porady
 
@@ -46,7 +46,7 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób wyłączyć automatyczne odnawianie?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
 
 Aby zrezygnować z usługi, sprawdź [W jaki sposób zrezygnować z usługi?](#cancelservice)
 
@@ -57,11 +57,11 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### Jak mogę dodać sposób płatności?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje sposoby płatności`{.action} i `Dodaj sposób płatności`{.action}.
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) kliknij `Dodaj sposób płatności`{.action}.
 
 ### W jaki sposób zaktualizować sposób płatności?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje sposoby płatności`{.action} na pulpicie nawigacyjnym.Możesz dodać lub usunąć dany sposób płatności (karta płatnicza, PayPal lub przelew SEPA).
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) możesz dodać lub usunąć dany sposób płatności (karta płatnicza, PayPal lub przelew SEPA).
 
 W przypadku dyspozycji przelewu SEPA, na adres e-mail przypisany do Twojego konta OVHcloud, otrzymasz w ciągu 24 - 48 godzin wiadomość z linkiem do elektronicznego podpisu zatwierdzającego przelew. Uwaga: właściciel konta bankowego musi być identyczny z właścicielem konta OVHcloud.
 
@@ -73,7 +73,7 @@ Aby Twoje usługi były sprawnie i we właściwy sposób odnawiane, musisz mieć
 
 ### Jak usunąć sposób płatności?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje sposoby płatności`{.action}. Wyszukaj sposób płatności, który chcesz usunąć i kliknij ikonę kosza.
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) wyszukaj sposób płatności, który chcesz usunąć i kliknij ikonę kosza.
 
 #### Wskazówki i porady
 
@@ -91,13 +91,13 @@ Jeśli Twoje konto prepaid OVHcloud ma saldo dodatnie, będzie ono używane domy
 
 ### Jaka jest data kolejnej płatności?
 
-Daty odnowienia usług znajdziesz w sekcji `Moje rozwiązania i usługi`{.action} dostępnej na dashboardzie w Panelu klienta.
+Daty odnowienia usług znajdziesz na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services).
 
 Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane pierwszego dnia miesiąca. Niemniej jednak, częstotliwość ich odnawiania może być różna w zależności od Twoich usług.
 
 #### Wskazówki i porady
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Będziesz mógł zmienić częstotliwość odnawiania Twoich rozwiązań.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services) będziesz mógł zmienić częstotliwość odnawiania Twoich rozwiązań.
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Który z moich sposobów płatności zostanie obciążony?
@@ -110,11 +110,11 @@ Jeśli Twoje konto prepaid OVHcloud ma saldo dodatnie, będzie ono używane domy
 
 ### Gdzie mogę znaleźć moje faktury?
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij pozycję `Faktury`{.action}.
+Otwórz stronę [Faktury](/links/control-panel/billing-invoices).
 
 #### Wskazówki i porady
 
-Jeżeli faktura nie widnieje w Panelu klienta, możliwe, że Twoje dane nie pokrywają się z danymi kontaktu księgowego dla powiązanej z fakturą usługi. Aby sprawdzić kontakt księgowy i ewentualnie zmodyfikować jego dane, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie wybierz `Moje kontakty`{.action}.
+Jeżeli faktura nie widnieje w Panelu klienta, możliwe, że Twoje dane nie pokrywają się z danymi kontaktu księgowego dla powiązanej z fakturą usługi. Aby sprawdzić kontakt księgowy i ewentualnie zmodyfikować jego dane, otwórz stronę [Zarządzanie kontaktami](/links/control-panel/account-contacts).
 
 ### Jak uregulować moje saldo?
 
@@ -135,9 +135,7 @@ Należności oczekujące na płatność wyświetlają się na dashboardzie w Pa
 
 #### Wskazówki i porady
 
-Możesz zapisać Twój sposób płatności w sekcji `Sposoby płatności`{.action}. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
-
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje sposoby płatności`{.action}. i dodaj sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
+Na stronie [Moje sposoby płatności](/links/control-panel/billing-payment-methods) możesz zapisać Twój sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
 
 ### Jakim usługom i fakturom odpowiadają moje płatności?
 
@@ -145,7 +143,7 @@ Płatności, których dokonujesz na naszej stronie, jak również automatyczne p
 
 ### W jaki sposób zrezygnować z usługi? <a name="cancelservice"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
+Na stronie [Moje rozwiązania i usługi](/links/control-panel/billing-services), po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
 
 Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usługi lub umowy. Możesz złożyć dyspozycję lub ją anulować do 24 godzin przed datą wygaśnięcia.
 
@@ -173,7 +171,7 @@ Księgę rachunkową może udostępnić wyłącznie dział księgowości wnio
 
 OVHcloud zapewnia dostęp do wszystkich faktur za pośrednictwem pliku Excel (.csv).
 
-Aby pobrać fakturę, Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij pozycję `Faktury`{.action}. Następnie kliknij przycisk `Operacje`{.action} i wybierz `Eksport CSV`{.action}.
+Aby pobrać fakturę, otwórz stronę [Faktury](/links/control-panel/billing-invoices). Następnie kliknij przycisk `Operacje`{.action} i wybierz `Eksport CSV`{.action}.
 
 ## Sprawdź również
  

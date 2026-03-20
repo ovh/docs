@@ -1,7 +1,7 @@
 ---
 title: 'Cómo verificar la versión del firmware BMC en un servidor dedicado'
 excerpt: "Descubra cómo verificar la versión del firmware BMC en un servidor dedicado."
-updated: 2026-02-12
+updated: 2026-02-25
 ---
 
 ## Objetivo
@@ -15,6 +15,10 @@ Un controlador de administración de placa base (BMC) es responsable de la admin
 - Un [servidor dedicado](/links/bare-metal/bare-metal) en su cuenta de OVHcloud.
 - Derechos de administrador (sudo).
 - Su servidor dedicado debe estar conectado a Internet (solo si la herramienta `ipmitool` no está ya instalada).
+
+> [!primary]
+> Debido a la configuración específica de nuestros servicios, la actualización del BMC se realiza exclusivamente a través de la automatización de OVHcloud, bajo la supervisión de nuestros técnicos. No se ofrece ningún paquete ni mecanismo de actualización autónomo.
+>
 
 ### En un Servidor Linux
 

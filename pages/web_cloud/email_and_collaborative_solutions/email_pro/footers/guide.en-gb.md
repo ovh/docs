@@ -11,8 +11,18 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
 - an [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Email Pro](/links/control-panel/web-email-pro)
+- **Navigation path:** `Web Cloud`{.action} > `Email Pro`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instructions
 

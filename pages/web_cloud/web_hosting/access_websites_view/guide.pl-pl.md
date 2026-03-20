@@ -12,8 +12,18 @@ Widok `Strony WWW` pozwala na scentralizowane wyświetlanie wszystkich stron nie
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panel klienta OVHcloud](/links/manager).
 - Usługa [Hosting WWW OVHcloud](/links/web/hosting).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 

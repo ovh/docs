@@ -19,8 +19,18 @@ El registro **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 
 ## Requisitos
 
-- Tener acceso a la gestión del nombre de dominio (asociado a la solución de correo) desde el [área de cliente de OVHcloud](/links/manager).
 - Uno de los mecanismos de autenticación, [SPF](/pages/web_cloud/domains/dns_zone_spf) y/o [DKIM](/pages/web_cloud/domains/dns_zone_dkim), debe configurarse en la zona DNS del nombre de dominio de la solución de correo.
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Zonas DNS`{.action} > Seleccione su nombre de dominio
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 Here is the complete guide with the target words replaced:
 

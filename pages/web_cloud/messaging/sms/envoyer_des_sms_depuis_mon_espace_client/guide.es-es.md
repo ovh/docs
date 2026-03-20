@@ -1,6 +1,6 @@
 ---
 title: Enviar SMS desde el área de cliente
-excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
+excerpt: Descubra cómo enviar sus primeros SMS paso a paso, configurar remitentes y gestionar destinatarios desde el área de cliente de OVHcloud
 updated: 2026-01-07
 ---
 
@@ -13,13 +13,21 @@ Es posible enviar SMS directamente desde el área de cliente de OVHcloud.
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action} > `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Gestión de SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta de SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
-
-Conéctese al [área de cliente de OVHcloud](/links/manager) y haga clic en `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
 En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} del apartado **Quiero...**.
 

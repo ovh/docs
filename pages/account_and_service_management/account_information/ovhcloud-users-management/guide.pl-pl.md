@@ -20,7 +20,17 @@ OVHcloud umożliwia tworzenie użytkowników lokalnych, którzy mogą działać 
 ## Wymagania początkowe
 
 - Posiadanie aktywnego konta OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:iam-identities -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [IAM Identities](/links/control-panel/iam-identities)
+- **Ścieżka nawigacji:** `Tożsamość, bezpieczeństwo i operacje`{.action} > `Tożsamości`{.action}
+
+---
+<!-- CP-NAV-END:iam-identities -->
 
 ## W praktyce
 
@@ -32,11 +42,7 @@ Użytkownicy lokalni to jeden z typów tożsamości, które można skonfigurowa�
 
 #### Dodaj użytkownika
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na pasku bocznym kliknij na `Tożsamość, bezpieczeństwo i operacje`{.action} i na `Tożsamości`{.action}.
-
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
-
-Następnie możesz kliknąć na `Dodaj użytkownika`{.action}.
+Na stronie [Tożsamości IAM](/links/control-panel/iam-identities) kliknij na `Dodaj użytkownika`{.action}.
 
 Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk `Zatwierdź`{.action}, aby utworzyć użytkownika.
 
@@ -82,7 +88,7 @@ Edycja użytkownika pozwala na aktualizację jego adresu e-mail, uprawnień oraz
 
 #### Dodaj grupę
 
-Aby dodać grupę, przejdź do sekcji `Tożsamości`{.action} i do zakładki `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action}.
+Aby dodać grupę, przejdź do zakładki `Grupy użytkowników`{.action} i kliknij przycisk `Zadeklaruj grupę`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

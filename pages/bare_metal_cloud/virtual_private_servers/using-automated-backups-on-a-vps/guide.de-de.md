@@ -25,14 +25,24 @@ Die Option für automatische Backups bietet eine komfortable Möglichkeit, volls
 
 > [!primary]
 >
-Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/links/bare-metal/vps-options) zu Preisvergleichen und weiteren Details zu konsultieren.
+> Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](/links/bare-metal/vps-options) zu Preisvergleichen und weiteren Details zu konsultieren.
 >
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
 - Administratorzugang (sudo) über SSH auf Ihren VPS (optional)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [VPS-Verwaltung](/links/control-panel/baremetal-vps)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Virtual Private Server`{.action} > Wählen Sie Ihren VPS aus
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 > [!warning]
 > Diese Funktion ist derzeit nicht verfügbar für VPS in [Local Zones](/links/bare-metal/vps-lz).
@@ -69,9 +79,7 @@ Für mehr Flexibilität bei Ihren Backups können Sie die Option "Automatisches 
 Die Option Automatisches Backup Premium erzeugt alle 24 Stunden zum ausgewählten Zeitpunkt ein Backup Ihres VPS.  
 Sie haben Zugriff auf alle täglichen Backups der letzten 7 Tage. Sobald 7 Backups erstellt wurden, ersetzt jedes neue Backup das älteste.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, wählen Sie `Virtual Private Server`{.action} aus und klicken Sie auf Ihren VPS-Namen.
-
-Nach der Auswahl Ihres VPS klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
+Klicken Sie im horizontalen Menü auf den Tab `Automatisches Backup`{.action}.
 
 Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die seit dem 07.08.25 bestellt wurden) oder den Button `Automatisches Backup aktivieren`{.action}.
 
@@ -80,7 +88,7 @@ Klicken Sie auf den Link `Premium Backup bestellen`{.action} (für Dienste, die 
   <img src="images/backup_vps_leg.png" alt="autobackup vps">
 </div>
 
-Beachten Sie im nächsten Schritt die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozesses geführt und erhalten eine E-Mail zur Bestätigung.
+Beachten Sie im nächsten Schritt die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozess geführt und erhalten eine E-Mail zur Bestätigung.
 
 <a name="time"></a>
 
@@ -116,20 +124,20 @@ Wenn Sie kürzlich Ihr Root-Passwort geändert haben, aktivieren Sie im Popup-Fe
 
 > [!alert]
 >
-Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Disks umfassen.
+> Bitte beachten Sie, dass die automatisierten Backups nicht Ihre zusätzlichen Disks umfassen.
 >
 
 <a name="mount"></a>
 
 ### Ein Backup mounten und darauf zugreifen
 
-Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vollständig zu überschreiben. Mit der Option "Mounten" können Sie auf direkt auf das Backup zugreifen, um Ihre Dateien abzurufen.
+Es ist nicht erforderlich, Ihren laufenden Dienst mit einer Wiederherstellung vollständig zu überschreiben. Mit der Option "Mounten" können Sie direkt auf das Backup zugreifen, um Ihre Dateien abzurufen.
 
 > [!warning]
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der [OVHcloud Community](/links/community). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
 Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen möchten, und wählen Sie `Mounten`{.action}.
@@ -206,9 +214,7 @@ Denken Sie daran, das automatische Backup auszuhängen, sobald Sie damit fertig 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 > [!warning]
-> 
->
-Beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
+> Beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
 >
 
 <a name="bestpractice"></a>
@@ -291,7 +297,7 @@ sudo service qemu-guest-agent status
 
 Sie können den QEMU Guest Agent über eine MSI-Datei installieren. Diese ist auf der Webseite des *Fedora project* verfügbar: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
-Überprüfen Sie, ob der Dienst ausgeführt wird. Verwenden Sie dazu folgenden Powershell-Befehl:
+Überprüfen Sie, ob der Dienst ausgeführt wird. Verwenden Sie dazu folgenden PowerShell-Befehl:
 
 ```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
@@ -305,4 +311,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Snapshots auf einem VPS verwenden](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -1,28 +1,33 @@
 ---
-title: 'Gérer la facturation de vos comptes E-mail Pro'
-excerpt: 'Découvrez comment gérer la facturation de votre service E-mail Pro'
+title: 'Gérer la facturation de vos comptes Email Pro'
+excerpt: 'Découvrez comment gérer la facturation de votre service Email Pro'
 updated: 2025-09-22
 ---
 
 ## Objectif
 
-L'offre E-mail Pro dispose d'une gestion flexible de la facturation des comptes.
+L'offre Email Pro dispose d'une gestion flexible de la facturation des comptes.
 
-**Découvrez comment gérer les abonnements de vos comptes E-mail Pro.**
+**Découvrez comment gérer les abonnements de vos comptes Email Pro.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un [compte E-mail Pro](/links/web/email-pro).
+- Disposer d'un [compte Email Pro](/links/web/email-pro).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Email Pro](/links/control-panel/web-email-pro)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Email Pro`{.action} > Sélectionnez votre plateforme
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## En pratique
 
 ### Commander des comptes supplémentaires
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Cliquez sur l'onglet `Web Cloud`{.action}.
-1. Cliquez sur `Email Pro`{.action}.
-1. Sélectionnez la plateforme concernée.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Commander des comptes`{.action} en haut à droite.
 
@@ -30,7 +35,7 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Commander des 
 
 ### Modifier la périodicité de vos comptes <a name="periodicity"></a>
 
-Depuis la fenêtre de gestion de votre plateforme E-mail Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Mode de facturation`{.action}.
+Depuis la fenêtre de gestion de votre plateforme Email Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Mode de facturation`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-02.png){.thumbnail}
 
@@ -53,7 +58,7 @@ Cliquer sur `Suivant`{.action} pour accéder au résumé des changements qui ont
 
 ### Supprimer un compte <a name="deletion"></a>
 
-Pour supprimer un compte de votre plateforme E-mail Pro, il faut d'abord le résilier en passant la configuration de son renouvellement sur **Aucune**. Pour cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
+Pour supprimer un compte de votre plateforme Email Pro, il faut d'abord le résilier en passant la configuration de son renouvellement sur **Aucune**. Pour cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, vous pouvez réinitialiser le compte.
 
@@ -63,17 +68,17 @@ Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bo
 
 ### Résilier la plateforme
 
-Après avoir supprimé les comptes e-mail, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme E-mail Pro avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} sur la ligne du nom de domaine à supprimer, puis cliquez sur `Supprimer ce domaine`{.action}.
+Après avoir supprimé les comptes e-mail, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme Email Pro avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines associés`{.action}. Cliquez sur le bouton `...`{.action} sur la ligne du nom de domaine à supprimer, puis cliquez sur `Supprimer ce domaine`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
-Depuis la fenêtre de gestion de votre plateforme E-mail Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Résilier`{.action}.
+Depuis la fenêtre de gestion de votre plateforme Email Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Résilier`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >
-> Cette action entraine la suspension puis la suppression de l'ensemble des comptes de la plateforme E-mail Pro à leur date d'expiration.
+> Cette action entraine la suspension puis la suppression de l'ensemble des comptes de la plateforme Email Pro à leur date d'expiration.
 
 ## Aller plus loin
 

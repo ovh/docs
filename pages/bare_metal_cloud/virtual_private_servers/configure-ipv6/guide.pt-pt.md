@@ -37,8 +37,19 @@ O IPv6 é a versão mais recente do *Internet Protocol* (IP). Cada servidor VPS 
 
 - Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps).
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
-- Ter conhecimentos básciso de rede.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [API OVHcloud](/links/api).
+- Ter conhecimentos básicos de rede.
+- Acesso à [API OVHcloud](/links/api) (opcional).
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instruções
 
@@ -46,10 +57,10 @@ As secções seguintes contêm configurações para as distribuições que dispo
 
 > [!warning]
 >
-> Tenha em conta que nos sistemas operativos Linux recentes que disponibilizamos para VPS, o endereço IPv6 está configurado por predefinição. Neste caso, não é necessário configurar o. Verifique o ficheiro de configuração do sistema operativo antes de realizar qualquer alteração.
+> Tenha em conta que nos sistemas operativos Linux recentes que disponibilizamos para VPS, o endereço IPv6 está configurado por predefinição. Neste caso, não é necessário configurá-lo. Verifique o ficheiro de configuração do sistema operativo antes de realizar qualquer alteração.
 >
 
-A configuração do IPv6 no servidor VPS é realizada em várias etapas Será regularmente convidado a utilizar comandos ou a personalizar a configuração do seu servidor. 
+A configuração do IPv6 no servidor VPS é realizada em várias etapas. Será regularmente convidado a utilizar comandos ou a personalizar a configuração do seu servidor. 
 
 Antes de começar, e com o objetivo de utilizar a mesma terminologia durante as operações, consulte a tabela abaixo. Estes são os termos que iremos utilizar ao longo deste manual:
 
@@ -61,12 +72,10 @@ Antes de começar, e com o objetivo de utilizar a mesma terminologia durante as 
 
 ### Etapa 1: Obter as informações de rede necessárias
 
-A primeira etapa consiste em recuperar o endereço IPV6 e a gateway IPv6 associados ao servidor.
+A primeira etapa consiste em recuperar o endereço IPv6 e a gateway IPv6 associados ao servidor.
 
 > [!tabs]
 > **Através da Área de Cliente** 
->>
->> Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 >>
 >> O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa n.º 2 “[Aplicar a configuração IPv6](#applyipv6)”.
 >>
@@ -106,7 +115,7 @@ Existem vários métodos para aplicar a configuração IPv6. Escolha a que prete
 
 - [Aplicação não persistente](#nonpersistent).
 - [Aplicação persistente em Debian e derivados (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian).
-- [Aplicação persistente em Redhat e derivados (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat).
+- [Aplicação persistente em Red Hat e derivados (CentOS, Rocky Linux, AlmaLinux, etc.)](#persistentredhat).
 - [Aplicação persistente em Fedora 42 e versões posteriores](#persistentfedora).
 - [Aplicação persistente em Windows Server](#persistentwindows).
 
@@ -301,7 +310,7 @@ Existem dois métodos para configurar a sua rede de acordo com o sistema operati
 > [!tabs]
 > **Configuração dos ficheiros *network-scripts***
 >> 
->> Os ficheiros de configuração de rede encontram-se no diretório `/etc/sysconfig/network-scripts/`. Recomendamos que comece por realizar uma cópia de segurança do ficheiro de configuração adequado. Por exemplo, copie o ficheiro `ifcfg-eth0` utilizando os seguintes comandos: Não se esqueça de substituir **eth0** pela sua interface real, caso seja necessário.
+>> Os ficheiros de configuração de rede encontram-se no diretório `/etc/sysconfig/network-scripts/`. Recomendamos que comece por realizar uma cópia de segurança do ficheiro de configuração adequado. Por exemplo, copie o ficheiro `ifcfg-eth0` utilizando os seguintes comandos. Não se esqueça de substituir **eth0** pela sua interface real, caso seja necessário.
 >>
 >> ```bash
 >> cd /etc/sysconfig/network-scripts/
@@ -445,15 +454,15 @@ Selecione `Protocol Internet version 6 (TCP/IPv6)`{.action} e clique no botão `
 
 ![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
 
-Na janela Propriedades IPv6, selecione `Utilizar o seguinte` endereço IPv6. Introduza os endereços IP que recuperou na primeira etapa.
+Na janela Propriedades IPv6, selecione `Utilizar o seguinte endereço IPv6`{.action}. Introduza os endereços IP que recuperou na primeira etapa.
 
-Também pode introduzir as resoluções DNS IPv6 à sua escolha `Utilizar o seguinte` endereço de servidor DNS. Isto não é obrigatório se os resolvers DNS da configuração IPv4 já estiverem funcionais.
+Também pode introduzir as resoluções DNS IPv6 à sua escolha. Selecione `Utilizar o seguinte endereço de servidor DNS`{.action}. Isto não é obrigatório se os resolvers DNS da configuração IPv4 já estiverem funcionais.
 
-Finalmente, selecione a opção `Validar os parâmetros ao sair` e clique no botão `OK`{.action} para validar as suas modificações. Pode surgir uma mensagem de erro se a gateway especificada não estiver na mesma sub-rede IPv6 (/128 e /64, por exemplo). Pode ignorar esta mensagem e passar à etapa seguinte.
+Finalmente, selecione a opção `Validar os parâmetros ao sair`{.action} e clique no botão `OK`{.action} para validar as suas modificações. Pode surgir uma mensagem de erro se a gateway especificada não estiver na mesma sub-rede IPv6 (/128 e /64, por exemplo). Pode ignorar esta mensagem e passar à etapa seguinte.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
 
-### Etapa 3: Verificar a configuração e testar a ligação.
+### Etapa 3: Verificar a configuração e testar a ligação
 
 Para verificar se a configuração está funcional, existem vários comandos possíveis, consoante o sistema operativo.
 
@@ -544,10 +553,10 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 > Reinicie o seu servidor para que a operação seja tomada em conta. 
 >
 
-Para que o cloud-init volte a gerir a rede de forma automática, elimine o ficheiro recentemente criado e mova-o para outro diretório.
+Para que o cloud-init volte a gerir a rede de forma automática, elimine o ficheiro recentemente criado ou mova-o para outro diretório.
 
 ///
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

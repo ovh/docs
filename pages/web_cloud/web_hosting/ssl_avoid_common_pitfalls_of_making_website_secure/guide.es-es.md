@@ -21,7 +21,6 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 
 - Tener un [alojamiento web de OVHcloud](/links/web/hosting).
 - Haber registrado al menos un [dominio](/links/web/domains).
-- Tener acceso al [área de cliente de OVHcloud](/links/manager), parte "Web cloud".
 
 ## Procedimiento
 

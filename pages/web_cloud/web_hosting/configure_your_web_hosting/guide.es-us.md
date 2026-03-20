@@ -45,7 +45,17 @@ En resumen, modificar la configuración de un alojamiento web desde el [área de
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting), a excepción de [un plan de hosting Cloud Web](/links/web/hosting-cloud-web-offer).
-- Tener acceso a su plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o conocer la información necesaria para conectarse al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Web hosting](/links/control-panel/web-hosting)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Alojamientos`{.action} > Seleccione su alojamiento web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedimiento
 

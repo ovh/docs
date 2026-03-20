@@ -28,12 +28,22 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter as permissões de acesso necessárias para este tipo de operação.
 - Ter acesso ao Identificador de Cliente (ID de Cliente) do utilizador que irá ser definido como contacto.
 - Todos os utilizadores envolvidos na alteração de um contacto devem ter acesso à conta de e-mail associada aos seus perfis.
 - O antigo e o novo contacto faturação devem ter os pagamentos em dia.
 - O novo contacto de faturação deve dispor de um método de pagamento válido na sua conta OVHcloud.
+
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Gestão dos contactos](/links/control-panel/account-contacts)
+- **Caminho de navegação:** Clique no seu nome no canto superior direito > `Contactos`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
 
 ## Instruções
 
@@ -43,7 +53,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ### Aceder à área de gestão dos contactos <a name="gestion_des_contacts"></a>
 
-Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Contactos`{.action}.
+Abra a página [Gestão dos contactos](/links/control-panel/account-contacts).
 
 ![Gestão de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -84,7 +94,7 @@ Este acesso só permite alterar o utilizador definido como contacto de faturaç�
 
 ### Gerir pedidos em curso: confirmar, recusar ou consultar uma alteração de contacto
 
-Área de Cliente: para gerir os pedidos em curso, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Contactos`{.action}. Clique no separador `Os meus pedidos`{.action}. Aqui pode aceitar ou recusar um pedido.
+Para gerir os pedidos em curso, clique no separador `Os meus pedidos`{.action}. Aqui pode aceitar ou recusar um pedido.
 
 ![Gestão de contactos](images/managing_contacts_05.png){.thumbnail}
 

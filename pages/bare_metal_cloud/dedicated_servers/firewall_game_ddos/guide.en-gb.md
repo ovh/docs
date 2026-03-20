@@ -35,7 +35,17 @@ Our dedicated Bare Metal gaming servers include an additional network attack pro
 ## Requirements
 
 - An [OVHcloud **Game** dedicated server](/links/bare-metal/game)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:network-public-ip -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public IP](/links/control-panel/network-public-ip)
+- **Navigation path:** `Network`{.action} > `Public IP Addresses`{.action}
+
+---
+<!-- CP-NAV-END:network-public-ip -->
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
@@ -61,7 +71,12 @@ The Anti-DDoS Infrastructure, together with the Edge Network firewall, keeps the
 > Each of the addresses you wish to protect with the Game Firewall **must have** their Game Firewall status set as `Configured` for the rules to apply.
 >
 
-To configure the Game Firewall for your Bare Metal Game server, log in to the OVHcloud Control Panel and follow these steps:
+To configure game protection rules for your Bare Metal Game server, follow these steps:
+
+- Open `Network`{.action} in the left-hand sidebar.
+- Open `Public IP Addresses`{.action}.
+
+You can filter IP addresses by using the `All service types`{.action} drop-down menu, or directly enter the desired IP address in the search bar. Enter the name or category of the corresponding server:
 
 #### List the IP addresses attached to your Game Server
 

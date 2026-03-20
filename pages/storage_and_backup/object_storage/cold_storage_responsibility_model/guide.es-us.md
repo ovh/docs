@@ -1,10 +1,10 @@
 ---
-title: "Cold Storage - Shared Responsibility for archive and restoration services (EN)"
-excerpt: "Shared responsibilities between OVHcloud and the customer on Cold Storage for archive and retoration services"
+title: "Cold Storage - Shared Responsibility for archive and restoration services"
+excerpt: "Shared responsibilities between OVHcloud and the customer on Cold Storage for archive and restoration services"
 updated: 2024-02-26
 ---
 
-## Objectif
+## Objective
 
 The RACI below details shared responsibilities between OVHcloud and the customer on Cold Storage for archive and restoration services delivered.
 

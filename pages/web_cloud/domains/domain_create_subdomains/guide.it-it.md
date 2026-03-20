@@ -32,9 +32,19 @@ Ad esempio, *www.ovhcloud.com* è un sottodominio del dominio *ovhcloud.com*.
 
 - Disporre di almeno un [nome di dominio](/links/web/domains);
 - Disporre di una zona DNS attiva per il nome di dominio. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager);
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
   
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 ## Procedura
 
 **Riepilogo**

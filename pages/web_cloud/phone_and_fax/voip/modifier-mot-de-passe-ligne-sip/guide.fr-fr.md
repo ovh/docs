@@ -1,19 +1,29 @@
 ---
 title: "Modifier le mot de passe d'une ligne SIP"
-excerpt: "Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
+excerpt: "Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
 updated: 2025-04-28
 ---
 
 ## Objectif
 
-Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depuis l'appareil de votre choix. Cet accès est possible grâce au mot de passe qui lui est associé. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier. 
+Votre ligne SIP OVHcloud permet d'émettre et de recevoir des appels depuis l'appareil de votre choix via un mot de passe dédié. Si toutefois vous disposez d'un téléphone Plug & Phone OVHcloud avec votre ligne SIP, ce mot de passe est automatiquement configuré sur ce dernier.
 
-**Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
+**Découvrez comment changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
+
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -21,10 +31,7 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 ### Étape 1 : accéder à la gestion du mot de passe de la ligne SIP
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
-1. Positionnez-vous ensuite sur l'onglet `Gestion`{.action}, puis cliquez sur le bouton `Mot de passe SIP`{.action}.
+Dans l'onglet `Gestion`{.action}, cliquez sur le bouton `Mot de passe SIP`{.action}.
 
 > [!primary]
 >

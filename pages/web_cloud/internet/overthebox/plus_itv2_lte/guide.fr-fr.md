@@ -1,6 +1,6 @@
 ---
-title: 'Comment configurer un lien 4G sur OverTheBox?'
-excerpt: "Découvrez comment ajouter un lien 4G afin d'améliorer la performances de votre OverTheBox"
+title: 'Comment configurer un lien 4G sur OverTheBox ?'
+excerpt: "Découvrez comment ajouter un lien 4G afin d'améliorer les performances de votre OverTheBox"
 updated: 2024-10-11
 ---
 
@@ -30,7 +30,7 @@ Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
 > Avant de réaliser ces manipulations, vous devez :
 >
 > - Vous décharger en touchant un objet métallique relié à la terre afin de limiter les risques de décharge électrostatique ([plus d'informations](https://fr.wikihow.com/%C3%A9viter-d%27endommager-un-ordinateur-par-une-d%C3%A9charge-%C3%A9lectrostatique)).
-> - Vérifier que le boitier est éteint et que son alimentation est **débranchée**.
+> - Vérifier que le boîtier est éteint et que son alimentation est **débranchée**.
 > - Vous munir d'un tournevis cruciforme.
 >
 
@@ -39,7 +39,7 @@ Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
 > [!tabs]
 > Étape 1
 >>
->> Ouvrez le boitier en retirant les 6 vis au dos.
+>> Ouvrez le boîtier en retirant les 6 vis au dos.
 >>
 >> ![overthebox](images/v3lte-step1-1-backcover-2024.png){.thumbnail}
 >>
@@ -56,18 +56,18 @@ Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
 >> ![overthebox](images/v3lte-step1-3-simInsert-2024.png){.thumbnail}
 >>
 
-Une fois la carte SIM insérée, vous devez refermer le boitier en répétant les mêmes étapes dans l'ordre inverse et veiller à ce que toutes les vis soit utilisées, sans trop les serrer.
+Une fois la carte SIM insérée, vous devez refermer le boîtier en répétant les mêmes étapes dans l'ordre inverse et veiller à ce que toutes les vis soient utilisées, sans trop les serrer.
 
-- Rebranchez la carte 4G en alignant ses encoches avec les crans du connecteur PCIe, puis insérez-la dans le connecteur en observant un angle de 30 degrés. Ne forcez pas pour reinsérer le carte 4G.  Insérez la vis dans le support prévu dans la carte mère pour sécuriser la carte 4G. Ne serrez pas trop la vis.
+- Rebranchez la carte 4G en alignant ses encoches avec les crans du connecteur PCIe, puis insérez-la dans le connecteur en observant un angle de 30 degrés. Ne forcez pas pour réinsérer la carte 4G. Insérez la vis dans le support prévu dans la carte mère pour sécuriser la carte 4G. Ne serrez pas trop la vis.
 - Remettez en place la façade extérieure et sécurisez-la avec les **6 vis** précédemment retirées.
 
 #### Étape 2 : Installer les antennes
 
-Installez les deux antennes 4G présentes dans la boite du boîtier en les vissant sur les pas de vis du boîtier.
+Installez les deux antennes 4G présentes dans la boîte du boîtier en les vissant sur les pas de vis du boîtier.
 
 ![overthebox](images/v3lte-step2-antenna-2024.png){.thumbnail}
 
-Une fois les antennes installées, branchez l'alimentation du boitier et allumez le. Attendez environ une minute après le bip sonore.
+Une fois les antennes installées, branchez l'alimentation du boîtier et allumez-le. Attendez environ une minute après le bip sonore.
 
 #### Étape 3 : Configurer l'interface réseau 4G
 
@@ -131,7 +131,7 @@ Validez les modifications en cliquant sur le bouton `Save & Apply`{.action}.
 > La configuration est terminée, vérifiez le bon fonctionnement de votre lien en suivant la section « [Vérifier le fonctionnement du lien 4G](#aller-plus-loin) » de ce guide.
 >
 
-### Configurer un autre modèle de boitier OverTheBox
+### Configurer un autre modèle de boîtier OverTheBox
 
 Si votre boîtier ne possède pas de module 4G intégré, il est tout de même possible d'ajouter un lien LTE à l'aide de l'interface USB du boîtier.
 
@@ -213,7 +213,7 @@ Pour limiter l'utilisation du lien, vous devez activer l'option **Backup** dans 
 
 Depuis le menu déroulant sélectionnez `Network`{.action} > `Interfaces`{.action}.<br>
 Puis sélectionnez le bouton `Edit`{.action} de l'interface en 4G.<br>
-Dans l'onglet `Avanced Settings`{.action}, modifiez le paramètre `Multipath TCP`{.action}.
+Dans l'onglet `Advanced Settings`{.action}, modifiez le paramètre `Multipath TCP`{.action}.
 
 Plusieurs options sont possibles :
 

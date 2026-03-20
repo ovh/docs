@@ -13,8 +13,18 @@ La redirection d'un nom de domaine consiste à rediriger celui-ci vers une nouve
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains)
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à votre hébergement web (pour une redirection via un fichier [.htaccess](#htaccess_rewrite)).
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Noms de domaine](/links/control-panel/web-domains)
+- **Pour accéder à vos services :** `Web Cloud`{.action} > `Noms de domaine`{.action} > Sélectionnez votre nom de domaine
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## En pratique
 
@@ -80,7 +90,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 > Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
@@ -90,7 +100,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Sélectionnez `Vers une adresse Web`{.action}.
 >>
@@ -98,7 +108,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
 >>
@@ -106,7 +116,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Sélectionnez `Permanente (301)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
 >>
@@ -114,7 +124,7 @@ Cette option permet, après la saisie du nom de domaine redirigé, d'afficher le
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
 >>
-> **Etape 5**
+> **Étape 5**
 >>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
@@ -147,7 +157,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 > Cliquez sur les onglets ci-dessous pour afficher successivement chacune des 5 étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
@@ -157,7 +167,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Sélectionnez `Vers une adresse Web`{.action}.
 >>
@@ -165,7 +175,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez `Avec une redirection visible`{.action} parmi les deux choix indiqués.
 >>
@@ -173,7 +183,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Sélectionnez `Temporaire (302)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
 >>
@@ -181,7 +191,7 @@ En effet, le positionnement sur les moteurs de recherche est moins performant qu
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
 >>
-> **Etape 5**
+> **Étape 5**
 >>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>
@@ -222,7 +232,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Dans la fenêtre, votre nom de domaine à rediriger apparaît déjà. Renseignez le formulaire **uniquement** si vous souhaitez rediriger un *sous-domaine*.
 >>
@@ -232,7 +242,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Sélectionnez `Vers une adresse Web`{.action}.
 >>
@@ -240,7 +250,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 3.
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sélectionnez `Avec une redirection invisible`{.action} parmi les deux choix indiqués.
 >>
@@ -248,7 +258,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 4.
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Sélectionnez `Temporaire (iframe)`{.action} parmi les deux choix indiqués puis saisissez le nom de domaine ou l'URL cible de votre redirection dans le formulaire `Adresse web`{.action} qui s'affiche.
 >>
@@ -262,7 +272,7 @@ Cette encapsulation permet d'empêcher les visiteurs de votre site de visualiser
 >>
 >> Cliquez sur `Suivant`{.action} pour passer à l'étape 5.
 >>
-> **Etape 5**
+> **Étape 5**
 >>
 >> Dans cette dernière étape, assurez-vous que les informations affichées sont bien correctes.
 >>

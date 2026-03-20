@@ -1,6 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS z adresu e-mail'
-excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS z adresu e-mail'
+excerpt: 'Dowiedz się, jak skonfigurować i wysyłać wiadomości SMS bezpośrednio z dowolnego adresu e-mail za pomocą bramki email2sms OVHcloud'
 updated: 2020-06-04
 ---
 
@@ -33,8 +33,8 @@ Przed wysyłką upewnij się, że masz do dyspozycji wystarczającą ilość zas
 
 > [!primary]
 >
-Jeśli tekst zawiera 2 przejścia do nowego wiersza (podwójne /n) lub jeśli wpisujesz parametr „--end”, wszystko, co znajduje się dalej, nie zostanie uwzględnione przy wysyłce.
-Aby wysłać wiadomość SMS zawierającą te elementy, musisz to zrobić w Panelu klienta lub przez interfejs API.
+> Jeśli tekst zawiera 2 przejścia do nowego wiersza (podwójne /n) lub jeśli wpisujesz parametr „--end”, wszystko, co znajduje się dalej, nie zostanie uwzględnione przy wysyłce.
+> Aby wysłać wiadomość SMS zawierającą te elementy, musisz to zrobić w Panelu klienta lub przez interfejs API.
 >
 
 Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [załącznik](./#zalacznik) na dole tego przewodnika.
@@ -46,7 +46,7 @@ Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [za
 >  ![email2sms](images/plaintext01.png){.thumbnail}
 >
 
-### Etap 1: uzupełnianie obowiązkowych pól w wiadomości e-mail
+### Etap 1: Uzupełnianie obowiązkowych pól w wiadomości e-mail
 
 Otwórz pocztę w przeglądarce lub program pocztowy i utwórz wiadomość e-mail. 
 
@@ -75,12 +75,12 @@ Otrzymany rezultat powinien wyglądać jak poniżej. Domyślnie wiadomość SMS 
 > [!primary]
 >**Dotyczy tylko kont OVHcloud we Francji:**
 >
-Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź senderForResponse=1.
+> Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź `senderForResponse=1`.
 >
 
 Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 
-### Etap 2: dodawanie pól opcjonalnych
+### Etap 2: Dodawanie pól opcjonalnych
 
 W temacie możesz dodać pola opcjonalne, takie jak:
 
@@ -131,7 +131,7 @@ Poszczególne elementy składowe tytułu można określać na dwa sposoby:
 >Jeśli zmienisz kodowanie na Unicode, Twoja wiadomość SMS będzie mogła zawierać maksymalnie 70 znaków (160 w przypadku kodowania 7-bitowego).
 >
 
-### Etap 3: zarządzanie odbiorcami wiadomości SMS
+### Etap 3: Zarządzanie odbiorcami wiadomości SMS
 
 Odbiorcami wiadomości można zarządzać na kilka sposobów:
 
@@ -139,7 +139,7 @@ Odbiorcami wiadomości można zarządzać na kilka sposobów:
 
 - dodając do wiadomości (jako załącznik) plik tekstowy w formacie .txt o nazwie „contact”, który będzie zawierał numery telefonów odbiorców w formacie międzynarodowym (np. we Francji: +33xxxxxxxxx), zapisane w pliku po jednym numerze na wiersz.
 
-### Etap 4: analiza raportu z wysyłki
+### Etap 4: Analiza raportu z wysyłki
 
 Po wysłaniu wiadomości otrzymasz na e-mail raport z wysyłki. Poniższy raport informuje, że wysyłka przebiegła pomyślnie:
 

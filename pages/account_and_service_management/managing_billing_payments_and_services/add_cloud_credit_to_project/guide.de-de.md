@@ -14,11 +14,21 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Public Cloud Projekte](/links/control-panel/publiccloud-projects)
+- **Navigationspfad:** `Public Cloud`{.action} > Wählen Sie Ihr Projekt aus
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Guthaben & Gutscheine`{.action} im linken Menü unter **Einstellungen**.
+Öffnen Sie `Guthaben & Gutscheine`{.action} im linken Menü unter **Einstellungen**.
 
 > [!warning]
 >

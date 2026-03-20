@@ -14,9 +14,16 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 
 - Disposer d'un [pack ADSL/VDSL/FTTH](/links/telecom/offre-internet) actif.
 - Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
-- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
+<!-- CP-NAV-START:telecom-xdsl-fttx -->
+---
 
-![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Accès Internet](/links/control-panel/telecom-xdsl-fttx)
+- **Pour accéder à vos services :** `Télécom`{.action} > `Offres Internet`{.action} > Sélectionnez votre accès
+
+---
+<!-- CP-NAV-END:telecom-xdsl-fttx -->
 
 ## En pratique
 
@@ -25,10 +32,7 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
 Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
-Pour connaître le nombre d'emplacements libres restants, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
+Pour connaître le nombre d'emplacements libres restants, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné.
 
 Vous obtenez alors une vue globale des services associés à ce dernier. Vous pourrez alors retrouver le nombre d'emplacements encore disponibles.
 
@@ -45,11 +49,7 @@ Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique 
 
 S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléphoniques/FAX. 
 
-Pour cela, suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie »
+Pour cela, depuis votre [espace client OVHcloud](/links/control-panel/telecom-xdsl-fttx), sélectionnez le *Pack* contenant l'accès à Internet concerné, puis cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie ».
 
 ![activer une ligne](images/Activation02-edit.png){.thumbnail}
 

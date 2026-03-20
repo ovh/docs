@@ -4,6 +4,50 @@ excerpt: Découvrez comment déployer des applications préinstallées sur votre
 updated: 2022-08-25
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Objectif
 
 OVHcloud offre aux clients VPS des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics.
@@ -33,7 +77,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « sudo whmlogin » pour générer un nouveau lien. 
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
 >
 
 <ol start="3">
@@ -46,14 +90,23 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-> [!faq]
->
-> Puis-je utiliser mes propres serveurs DNS ?
->> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](/pages/web_cloud/domains/glue_registry#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
-> Pourquoi définir le mot de passe root?
->> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
-> Où est ma licence pour cPanel?
->> Vous pouvez commander votre licence cPanel pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Puis-je utiliser mes propres serveurs DNS ?
+
+Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](/pages/web_cloud/domains/glue_registry#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
+
+///
+
+/// details | Pourquoi définir le mot de passe root ?
+
+WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
+
+///
+
+/// details | Où est ma licence pour cPanel ?
+
+Vous pouvez commander votre licence cPanel pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Plesk
 
@@ -66,7 +119,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 1. Ouvrez l'e-mail que vous avez reçu contenant les identifiants de connexion à l'application.
 2. Cliquez sur l'URL de Plesk dans cet e-mail.
 3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
-4. Une fois connecté, Plesk vous demandera:   
+4. Une fois connecté, Plesk vous demandera :
     a) Vos coordonnées.  
     b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.  
     c) Des informations sur la licence.*  
@@ -74,10 +127,11 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
-> [!faq]
->
-> Où est ma licence Plesk?
->> Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Où est ma licence Plesk ?
+
+Vous pouvez commander votre licence Plesk pour votre VPS depuis [l'espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Docker
 
@@ -88,7 +142,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image préinstallée de Docker.
 
 1. Connectez-vous en SSH sur le serveur à l'aide du nom d'utilisateur et du mot de passe présents dans l'e-mail.
-2. Vérifiez que Docker fonctionne à l'aide de la commande « docker run hello-world ».
+2. Vérifiez que Docker fonctionne à l'aide de la commande `docker run hello-world`.
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -96,7 +150,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 
 Cette section s'applique uniquement aux installations de WordPress, Drupal, Joomla! et PrestaShop. Elle ne s'applique pas pour les autres installations.
 
-1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
+1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A` qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
 
    - personaldomain.ovh <br>
    - www.personaldomain.ovh <br>  

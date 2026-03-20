@@ -1,6 +1,6 @@
 ---
-title: Inviare SMS con l’API OVHcloud in PHP
-excerpt: Come inviare SMS con l’API OVHcloud RESTful in PHP
+title: "Inviare SMS con l’API OVHcloud in PHP"
+excerpt: "Scopri come configurare un ambiente di sviluppo PHP e inviare il tuo primo SMS passo dopo passo utilizzando l’API RESTful OVHcloud"
 updated: 2020-06-25
 ---
 
@@ -17,7 +17,7 @@ Gli SMS sono ampiamente utilizzati per inviare informazioni pratiche, per seguir
 
 ## Procedura
 
-### Step 1: Recupero del Wrapper PHP per le OVH API
+### Step 1: Recupero del Wrapper PHP per le OVHcloud API
 
 Collegati al progetto [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 

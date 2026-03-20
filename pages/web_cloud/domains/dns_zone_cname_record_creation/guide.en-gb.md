@@ -34,7 +34,18 @@ CNAME records are useful for avoiding changing IP addresses for your subdomains.
 
 - A [domain name](/links/web/domains)
 - A DNS zone associated with this domain name at OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
+
 
 > [!warning]
 >

@@ -7,12 +7,12 @@ updated: 2018-07-03
 
 ## Objectif
 
-**Ce guide vous présente les différentes fonctionnalités de votre téléphone Gigaset C530IP fourni par OVH.**
+**Ce guide vous présente les différentes fonctionnalités de votre téléphone Gigaset C530IP fourni par OVHcloud.**
 
 ## Prérequis
 
-- Posséder [une ligne téléphonique OVH](/links/telecom/telephonie).
-- Avoir réceptionné et installé le téléphone Gigaset C530IP fourni par OVH.
+- Posséder [une ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Avoir réceptionné et installé le téléphone Gigaset C530IP fourni par OVHcloud.
 
 ## En pratique
 

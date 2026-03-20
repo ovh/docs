@@ -12,8 +12,18 @@ Właśnie utworzyłeś Twój projekt Public Cloud i chcesz dowiedzieć się wię
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Utworzenie [pierwszego projekt Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## W praktyce
 

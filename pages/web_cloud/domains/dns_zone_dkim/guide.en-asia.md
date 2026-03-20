@@ -55,17 +55,26 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- You can manage the domain name concerned in the [OVHcloud Control Panel](/links/manager), or via your DNS service provider if it is registered outside of OVHcloud.
-- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have signed up to one of these email offers:
     - OVHcloud MX Plan Email, available with a [web hosting plan](/links/web/hosting)
     - An email solution outside of OVHcloud with DKIM support
+
+<!-- CP-NAV-START:web-dns-zone -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [DNS zones](/links/control-panel/web-dns-zone)
+- **Navigation path:** `Web Cloud`{.action} > `DNS zones`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-dns-zone -->
 
 > [!warning]
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](/links/manager). To do this, go to the `DNS zones`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -342,7 +351,7 @@ Follow the **5 steps** by clicking on each of the 5 tabs below:
 >>
 > **4. Configure the DNS record**
 >> From the [OVHcloud Control Panel](/links/manager) where your email service’s domain name is hosted, in the `Web Cloud`{.action} tab, click `Domain names`{.action} in the left-hand column, and select the domain name concerned.<br>
->> Go to the `DNS Zone`{.action} tab, then click `Add record`{.action} in the window that pops up. Choose `CNAME`, then enter the information according to the values you have entered.
+>> Go to the `DNS zones`{.action} tab, then click `Add record`{.action} in the window that pops up. Choose `CNAME`, then enter the information according to the values you have entered.
 >>
 >> If you break down the values in the example in step "**3. Retrieve the DNS record**":
 >>
@@ -434,7 +443,6 @@ At the level of the selectors you also have 3 possible states:
 - `toSet`: The selector is not configured in the DNS zone of the domain name. See [Step 4 in "Configuring the DKIM in full" for MX Plan](#confemail).
 - `toFix`: The selector has been configured in the domain name’s DNS zone, but the values are incorrect. See [Step 4 in "Configuring the DKIM in full" for Emails MX Plan](#confemail).
 
-
 #### API - Enable or change the DKIM selector <a name="enable-switch"></a>
 
 > [!warning]
@@ -446,7 +454,6 @@ To enable DKIM, use the following API call:
 > [!api]
 >
 > @api {v1} /email/domain/ PUT /email/domain/{domain}/dkim/enable
-
 
 - `domain`: Enter the domain name attached to your email service on which the DKIM must be present. 
 
@@ -492,7 +499,7 @@ If you would like to configure your DNS zone to add a DKIM record to it for your
 
 Log in to the [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
 
-Click on the `DNS Zone`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
+Click on the `DNS zones`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
 
 - [DKIM record](#dkim-record): A configuration that allows you to view all settings for a DKIM record.
 - [TXT record](#txt-record): The record to use when all DKIM parameters have been provided to you.

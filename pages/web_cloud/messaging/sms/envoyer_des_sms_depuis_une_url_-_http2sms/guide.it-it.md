@@ -1,6 +1,6 @@
 ---
 title: Inviare SMS da un URL - http2sms
-excerpt: Scopri come inviare SMS da un indirizzo http
+excerpt: Scopri come inviare SMS tramite richieste HTTP utilizzando lo strumento Wget direttamente dalla barra degli indirizzi del tuo browser web
 updated: 2020-05-20
 ---
 
@@ -11,6 +11,7 @@ Per inviare SMS esistono metodi diversi. Tra questi, vi è l’utilizzo dello st
 **Come inviare SMS mediante lo strumento Wget.**
 
 ## Prerequisiti
+
 - Creare un utente SMS attraverso lo Spazio Cliente OVHcloud o direttamente attraverso le API. A questo proposito, è possibile consultare la guida che segue: [Tutte le informazioni sugli utenti SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 - Disporre di un account SMS OVHcloud con saldo SMS
 
@@ -41,7 +42,7 @@ I parametri che seguono devono essere separati da &. Sostituisci le X con le inf
 
 Per default, il messaggio viene inviato immediatamente.
 
-### Step 2: aggiungere campi facoltativi
+### Step 2: Aggiungere campi facoltativi
 
 Puoi aggiungere campi supplementari nell’oggetto, quali:
 
@@ -115,7 +116,7 @@ In caso di fallimento, la causa è specificata;
 <?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388</message></response>
 ```
 
-#### json
+#### JSON
 
 - In caso di riuscita:
 

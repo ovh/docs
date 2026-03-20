@@ -1,6 +1,6 @@
 ---
 title: Gestire i crediti SMS e attivare la ricarica automatica
-excerpt: Come gestire i tuoi crediti SMS OVHcloud
+excerpt: Scopri come gestire i crediti SMS, attivare la ricarica automatica e trasferire crediti tra i tuoi account SMS OVHcloud
 updated: 2023-02-09
 ---
 
@@ -16,7 +16,17 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 - Disporre di un account SMS OVHcloud attivo
 - Avere accesso alle [API OVHcloud](/links/api)(soltanto per trasferire i crediti)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [SMS](/links/control-panel/telecom-sms)
+- **Percorso di navigazione:** `Telecom`{.action} > `SMS`{.action} > Seleziona il tuo SMS account
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -53,8 +63,6 @@ Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e a
 > - sul tuo account OVHcloud è presente e validato un metodo di pagamento di tipo SEPA.
 > - il tuo servizio SMS deve avere almeno 2 mesi di anzianità.
 
-Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `ADSL e telefono`{.action} e poi sulla sezione `SMS`{.action}. Seleziona l’account SMS su cui attivare la ricarica automatica.
-
 Clicca sul menu `Opzioni`{.action} (1) e poi su `Ricarica automatica`{.action} (2).
 
 ![credit sms](images/smscredit01.png){.thumbnail}
@@ -78,7 +86,7 @@ Infine, compila i campi richiesti:
 > È possibile trasferire i crediti soltanto tra gli account SMS di uno stesso identificativo cliente OVHcloud. Il trasferimento dei crediti tra due diversi identificativi OVHcloud non è consentito.
 >
 
-Nello Spazio Cliente OVHcloud seleziona uno dei tuoi account SMS e clicca su `Trasferire crediti`{.action} dalla scheda `Home page`{.action}.
+Clicca su `Trasferire crediti`{.action} dalla scheda `Home page`{.action}.
 
 ![trasferimento di crediti SMS](images/credit-transfer01.png){.thumbnail}
 

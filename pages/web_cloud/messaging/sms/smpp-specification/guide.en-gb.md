@@ -379,3 +379,5 @@ The protocol version is 3.4.
 [SMPP Technical Documentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
 
 [Managing an SMS SMPP account](/pages/web_cloud/messaging/sms/smpp-control-panel)
+
+Join our [community of users](/links/community).

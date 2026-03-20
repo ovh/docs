@@ -1,7 +1,7 @@
 ---
 title: Aumenta la dimensione di un disco aggiuntivo
 excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale
-updated: 2025-04-28
+updated: 2026-02-26
 ---
 
 <style>
@@ -28,8 +28,18 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 
 - Aver creato un’istanza [Public Cloud](/links/public-cloud/compute) nel tuo progetto Public Cloud.
 - Disporre di un [disco aggiuntivo](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso amministrativo (sudo) alla tua istanza via SSH (Linux) o RDP (Windows).
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -110,8 +120,6 @@ Clicca sui tre puntini `...`{.action} in corrispondenza del volume interessato e
 Nella nuova finestra, indica la nuova dimensione del volume e clicca su `Modifica il volume`{.action}.
 
 ![dashboard](images/increase-disk-03.png){.thumbnail}
-
-Prima di continuare, assicurati che il volume sia associato all'istanza. In caso contrario, clicca sui tre puntini `...`{.action} nella riga del volume e seleziona `Associa all'istanza`{.action}.
 
 ### Estendi la partizione (istanza Linux)
 
@@ -201,7 +209,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+Una volta completata questa operazione, scollegate il volume dall'istanza e ricollegatelo per verificare che le impostazioni QoS aggiornate (IOPS e larghezza di banda) vengano applicate correttamente.
+
 ### Estendi la partizione (istanza Windows)
+
+Prima di procedere, ricollegate il volume all'istanza. Cliccate su `...`{.action} nella riga del volume e selezionate `Associa all'istanza`{.action}.
 
 Installa una connessione RDP (Remote Desktop) sulla tua istanza Windows.
 
@@ -230,6 +242,8 @@ Clicca su `Terminare`{.action} per completare il processo.
 Il volume ridimensionato include lo spazio disco aggiuntivo.
 
 ![windows](images/resize-win-05.png){.thumbnail}
+
+Una volta completata questa operazione, scollegate il volume dall'istanza e ricollegatelo per verificare che le impostazioni QoS aggiornate (IOPS e larghezza di banda) vengano applicate correttamente.
 
 ## Per saperne di più
 

@@ -20,15 +20,21 @@ Beispielsweise können Sie Ihre Ressourcen nach Standort, Dienst oder nach Siche
 ## Voraussetzungen
 
 - Ein [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Dedicated Server](/links/control-panel/baremetal-dedicated-servers)
+- **Navigationspfad:** `Bare Metal Cloud`{.action} > `Dedicated Server`{.action} > Wählen Sie Ihren Server aus
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## In der praktischen Anwendung
 
 ### Zuweisen von Tags im OVHcloud Kundencenter
-
-1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an.
-2. Gehen Sie in den Bereich `Bare Metal Cloud`{.action}.
-3. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
 
 ![Allgemeine Informationen](images/general_information.png){.thumbnail}
 

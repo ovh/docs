@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Compatibilidade (EN)
-excerpt: "Discover our S3* compatible Object Storage features list"
+title: Object Storage - Compliance
+excerpt: "Discover the list of features supported by our S3-compatible Object Storage."
 updated: 2025-06-27
 ---
 
@@ -12,7 +12,7 @@ td:nth-of-type(2) {
 
 ## Objective
 
-This guide lists the features supported by Object Storage.
+This guide lists the features supported by OVHcloud Object Storage.
 
 ## Instructions
 
@@ -526,7 +526,7 @@ This guide lists the features supported by Object Storage.
     </tr>
     <tr>
         <td>Data analytics</td>
-        <td>S3 Select</td>
+        <td>S3<sup>1</sup> Select</td>
         <td>select object content</td>
         <td>no</td>
         <td>no</td>
@@ -541,4 +541,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
