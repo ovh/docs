@@ -81,9 +81,7 @@ Pour configurer le Game Firewall de votre serveur Bare Metal Game, connectez-vou
 
 #### Activer et configurer les règles du Game Firewall
 
-Pour chaque adresse attachée à votre serveur nécessitant une protection, définissez le statut du *Game Firewall* de `Inactive`{.action} à `Available`{.action}.
-
-Une fois que toutes les adresses pertinentes sont configurées pour utiliser le Game Firewall, vous devez configurer les règles séparément pour chaque adresse.
+Pour chaque adresse attachée à votre serveur nécessitant une protection, vérifiez que le statut du *Game Firewall* est `Disponible`{.action}. Vous devrez configurer les règles du *Game Firewall* individuellement pour chacune d'entre elles.
 
 - Cliquez sur le bouton `⁝`{.action} à droite du tableau et sélectionnez `Configurer le Game Firewall`{.action}.
 - Ajoutez des règles en spécifiant le protocole et la plage de ports pour chaque application de jeu qui sera accessible sur l’adresse IP sélectionnée. Veuillez consulter la section [Mentions spécifiques pour certains jeux](#game_specific) pour plus d’informations.

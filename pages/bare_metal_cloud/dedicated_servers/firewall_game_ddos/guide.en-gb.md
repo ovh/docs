@@ -80,9 +80,7 @@ To configure the Game Firewall for your Bare Metal Game server, log in to the OV
 
 #### Enable and configure the Game Firewall rules
 
-For each address attached to your server that requires protection, set the *Game Firewall* status from `Inactive`{.action} to `Available`{.action}.
-
-Once all relevant addresses are configured to leverage the Game Firewall, you have to configure the rules separately for each address.
+For each address attached to your server that requires protection, verify that the *Game Firewall* status is set to `Available`{.action}. You will have to configure the *Game Firewall* rules separately for each.
 
 - Click the `⁝`{.action} button to the right of the table and select `Configure Game Firewall`{.action}.
 - Add rules specifying the protocol and port range for each gaming application that will be accessible on the selected IP address. Please refer to the [Game-specific notices](#game_specific) section for additional information.
