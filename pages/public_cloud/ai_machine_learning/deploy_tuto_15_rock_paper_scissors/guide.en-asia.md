@@ -18,23 +18,13 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 - You have knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 - You have weights obtained from training the YOLOv8 model on the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw). You can use the tutorial [Train YOLOv8 to play rock paper scissors](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors) to generate these weights.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.
 
 - More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/).
 - All [source files](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/rock-paper-scissors-yolov8) can be found on GitHub.
+
 
 ### Write the Streamlit application
 

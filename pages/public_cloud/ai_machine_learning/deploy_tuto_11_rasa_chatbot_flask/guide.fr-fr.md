@@ -35,17 +35,6 @@ Here is a schema to explain how it works:
 - A [Docker Hub account](https://hub.docker.com/)
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 We will create two AI apps to deploy the Rasa model. First, you will have to create two environment variables for the Flask app.

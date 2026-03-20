@@ -24,17 +24,6 @@ Here is an overview of the Sign Language recognition app:
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - Your weights obtained from training YOLOv7 model on the [ASL letters dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1) (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv7](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.

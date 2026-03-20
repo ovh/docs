@@ -29,17 +29,6 @@ Overview of the app:
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 - You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases).
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your **Gradio** application.

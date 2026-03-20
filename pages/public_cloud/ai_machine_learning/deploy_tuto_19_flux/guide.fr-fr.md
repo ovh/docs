@@ -50,17 +50,6 @@ Before proceeding, ensure you have the following:
 - A Hugging Face account, with access to the FLUX model. You need to accept usage terms on the model Hugging Face page.
 - A Hugging Face access token (generate one under your Hugging Face account → Access Tokens). This one will be used to authenticate and download the model weights.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ### Downloading model weights in OVHcloud Object Storage
 
 To run inference on AI Deploy, you will first need to download the model weights from Hugging Face and upload them to an OVHcloud Object Storage bucket. This bucket will later be mounted into your AI Deploy app at runtime, allowing you to access the downloaded model.

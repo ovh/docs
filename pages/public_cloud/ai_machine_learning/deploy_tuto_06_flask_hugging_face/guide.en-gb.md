@@ -29,17 +29,6 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 
 We also suggest you do some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/text-classification/hugging-face/sentiment-analysis-twitter).
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 First, the tree structure of your folder should be as follows:

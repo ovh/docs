@@ -32,18 +32,7 @@ To deploy your app, you need:
     - Fill Meta's form to [request access to the next version of Llama](https://ai.meta.com/resources/models-and-libraries/llama-downloads/). Indeed, the use of Llama 2 is governed by the Meta license, that you must accept in order to download the model weights and tokenizer.
     - Have a [Hugging Face](https://huggingface.co/) account (with the same email address you entered in Meta's form).
     - Have a [Hugging Face token](https://huggingface.co/settings/tokens).
-    - Visit the page of one of the LLaMA 2 available models (version [7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) or [70B](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)), and accept Hugging Face's license terms and acceptable use policy. Once you have accepted this, you will get the following message: *Your request to access this repo has been successfully submitted, and is pending a review from the repo's authors*, which a few hours later should change to: *You have been granted access to this model*.
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
+    - Visit the page of one of the LLaMA 2 available models (version [7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) or [70B](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf)), and accept Hugging Face's license terms and acceptable use policy. Once you have accepted this, you will get the following message: *Your request to access this repo has been successfully submitted, and is pending a review from the repo's authors*, which a few hours later should change to: *You have been granted access to this model*. 
 
 ## Instructions
 

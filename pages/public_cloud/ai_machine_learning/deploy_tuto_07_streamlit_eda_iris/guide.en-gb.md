@@ -33,17 +33,6 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - You also should have followed the **Step 6** of the *Classification of iris varieties within the same species* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/notebook_classification_iris.ipynb). You will be able to save your PyTorch model `model_iris_classification.pth`.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.

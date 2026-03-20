@@ -120,17 +120,6 @@ Output example:
 > To learn more about **Lettria's NER model**, please refer to this [documentation](https://doc.lettria.com/api-reference/comprehension/2.0/schemas/sentence/ml-ner).
 >
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Lettria quick start
 
 To be able to query the Lettria models, you must first deploy one of the Lettria images with AI Deploy.

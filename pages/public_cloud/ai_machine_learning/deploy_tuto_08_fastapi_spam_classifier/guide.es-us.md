@@ -29,17 +29,6 @@ In order to do this, we will use [FastAPI](https://streamlit.io/), a web framewo
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - You also should have followed the tutorial [AI Notebooks - Tutorial - Build your spam classifier](/pages/public_cloud/ai_machine_learning/notebook_tuto_09_spam_classifier). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your **FastAPI** app.

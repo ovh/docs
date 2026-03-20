@@ -25,17 +25,6 @@ Here is an overview of the **image classification** API:
 - Some knowledge about building images and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - Your weights obtained from fine-tuning **DenseNet model** on the **CIFAR-10 dataset** (refer to the *"Export ONNX model for inference"* part of the [notebook about DenseNet fine-tuning](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb))
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 You are going to follow different steps to build your FastAPI app.

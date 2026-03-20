@@ -12,17 +12,6 @@ This page gives you a few hints on how to debug your apps if you encounter some 
 
 - A [**Public Cloud** project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 ### How to start an AI Deploy app?
