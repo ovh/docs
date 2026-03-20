@@ -1,7 +1,7 @@
 ---
 title: 'Abschließen eines Wartungseingriffs an Ihrem dedizierten Server (EN)'
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
-updated: 2026-03-18
+updated: 2026-03-20
 ---
 
 ## Objective

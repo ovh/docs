@@ -1,7 +1,7 @@
 ---
 title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
-updated: 2026-03-18
+updated: 2026-03-20
 ---
 
 ## Objectif
