@@ -26,7 +26,6 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](/links/bare-metal/vps) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 

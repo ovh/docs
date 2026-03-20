@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2026-01-16
+updated: 2026-02-26
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Konto może zostać utworzone przed lub podczas składania zamówienia na pierws
 
 ### Jak założyć konto OVHcloud?
 
-Aby utworzyć konto OVHcloud, przejdź do [this page](/links/manager) i kliknij `Utwórz konto`{.action}.
+Aby utworzyć konto OVHcloud, przejdź do [tej strony](/links/manager) i kliknij `Utwórz konto`{.action}.
 
 ![Załóż konto](images/account-creation-EN-01.png){.thumbnail}
 
@@ -43,10 +43,19 @@ Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres 
 >
 > Możesz aktywować wysyłkę nowego kodu, klikając na link podany w tym celu na dole strony.
 >
-> Jeśli podany przez Ciebie adres e-mail jest nieprawidłowy lub dostępny, kliknij przycisk `Zmień adres e-mail`{.action}.
+> Jeśli podany przez Ciebie adres e-mail jest nieprawidłowy lub niedostępny, kliknij przycisk `Zmień adres e-mail`{.action}.
 >
 
-Po wpisaniu i zatwierdzeniu kodu uzupełnij formularz. W szczególności należy dokładnie zdefiniować **rodzaj konta** spośród proponowanych opcji.
+Po wpisaniu i potwierdzeniu kodu należy zdefiniować **typ konta** jako jeden z dostępnych modeli:
+
+- **Stowarzyszenie**: Konto "Stowarzyszenie" powinny tworzyć wyłącznie stowarzyszenia i inne podmioty niekomercyjne, takie jak fundacje, związki zawodowe lub zgromadzenia wyznaniowe.
+- **Administracja publiczna**: Konto "Administracja publiczna" powinny tworzyć wyłącznie jednostki administracji państwowej, terytorialnej oraz inne jednostki sektora publicznego.
+- **Firma**: Konto "Firma" powinny tworzyć osoby prawne (z wyłączeniem podmiotów administracji publicznej i stowarzyszeń) oraz osoby fizyczne (przedsiębiorcy indywidualni), które kupują produkty OVHcloud w ramach działalności gospodarczej.
+- **Osoba fizyczna**: Konto "Prywatne" powinny tworzyć wyłącznie osoby fizyczne kupujące produkty OVHcloud na własne potrzeby, niezwiązane z działalnością gospodarczą.
+
+![wybór typu konta](images/account-type-2025.png){.thumbnail}
+
+Następnie zostaniesz poproszony o podanie swoich danych. Upewnij się, że wprowadzone informacje są poprawne.
 
 Twoje konto zostało utworzone, po zalogowaniu się do strony głównej konta, zwanego "Dashboardem".
 
@@ -63,8 +72,15 @@ Ten identyfikator klienta pozwala na:
 - zalogować się do panelu klienta, aby zarządzać wszystkimi Twoimi usługami;
 - zalogować się podczas kontaktu z zespołem obsługi klienta OVHcloud, co ułatwia rozpatrywanie pytań.
 
-> [!warning]
+> [!success]
 > Zapisz się na swój identyfikator klienta, ponieważ będziesz potrzebował go przy każdym logowaniu do konta.
+>
+> **Porada: Użyj managera haseł**
+>
+> Specjalne oprogramowanie do zapisywania i zabezpieczania danych dostępowych do konta OVHcloud (login i hasło).<br>
+> Można na przykład użyć managera haseł **KeePass**. Jest to bezpłatne i otwarte oprogramowanie rekomendowane przez francuską Agencją ds. Cyberbezpieczeństwa (ANSSI).<br>
+> Jego zasada jest prosta: hasło główne - które musi być silne, ale które powinieneś zapamiętać - umożliwia dostęp do bazy danych zawierającej wszystkie identyfikatory i hasła. Identyfikatory i hasła mogą być bardzo złożone, ponieważ zostaną one zapisane w oprogramowaniu.<br>
+> Oprogramowanie to pozwala również na generowanie złożonych, losowych haseł, które zostaną zapisane dla każdej z Twoich stron WWW lub aplikacji.
 
 ## Sprawdź również
 

@@ -46,7 +46,7 @@ A 1-AZ Region consists of a **single availability zone covering multiple data ce
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
 | **Redundancy Type**   | 2N+1 across multiple data centers                                         |
-| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk .           |
+| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk.            |
 | **Use Case Examples** | General-purpose applications, backups                                    |
 
 <a name="3azregion"></a>
@@ -111,8 +111,10 @@ Local Zones are designed to bring OVHcloud services closer to end-users, minimiz
 | **Ideal Use Cases**        | General-purpose applications, backups | Mission-critical and availability-sensitive applications | Latency-sensitive, regional applications |
 | **Cost**                   | Lower                               | Higher due to increased redundancy | Dependent on the specific local zone and required latency performance |
 
-## Go Further
+## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case.
 
-Join our [community of users](/links/community) and visit our [Discord channel](https://discord.gg/ovhcloud).
+Visit our [Discord channel](https://discord.gg/ovhcloud).
+
+Join our [community of users](/links/community).

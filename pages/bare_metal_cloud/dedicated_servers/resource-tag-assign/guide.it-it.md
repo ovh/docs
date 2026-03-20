@@ -20,19 +20,21 @@ Ogni tag è composto da due parti:
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal).
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Procedura
 
 ### Assegnare un tag a un server dedicato dallo Spazio Cliente
-
-Per assegnare un tag a un server:
-
-1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-1. Accedi alla sezione `Bare Metal Cloud`{.action}.
-1. Clicca su `Server dedicati`{.action} e seleziona il tuo server dalla lista.
-
-Di default, verrai reindirizzato alla scheda `Informazioni generali`{.action}.
 
 ![Informazioni generali](images/general_information.png){.thumbnail}
 

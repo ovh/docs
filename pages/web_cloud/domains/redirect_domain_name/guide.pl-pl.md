@@ -13,8 +13,18 @@ Przekierowanie nazwy domeny polega na przekierowaniu jej na nową docelową stro
 ## Wymagania początkowe
 
 - Posiadanie [nazwy domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Domeny](/links/control-panel/web-domains)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Domeny`{.action} > Wybierz nazwę domeny
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## W praktyce
 
@@ -79,7 +89,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 > Kliknij na poniższe zakładki, aby kolejno wyświetlić każdy z 5 etapów.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
@@ -89,7 +99,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
@@ -97,7 +107,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
 >>
@@ -105,7 +115,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Wybierz `Permanente (301)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
@@ -113,7 +123,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej nazwy domeny, na wyświetlenie nazw
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>
@@ -146,7 +156,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 > Kliknij na poniższe zakładki, aby kolejno wyświetlić każdy z 5 etapów.
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
@@ -156,7 +166,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
@@ -164,7 +174,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
 >>
@@ -172,7 +182,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Wybierz `Tymczasowe (302)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
@@ -180,7 +190,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>
@@ -221,7 +231,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >
 
 > [!tabs]
-> **Etap 1**
+> **Krok 1**
 >>
 >> W oknie pojawi się Twoja nazwa domeny do przekierowania. Wpisz formularz **tylko**, jeśli chcesz przekierować *subdomenę*.
 >>
@@ -231,7 +241,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
-> **Etap 2**
+> **Krok 2**
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
@@ -239,7 +249,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
-> **Etap 3**
+> **Krok 3**
 >>
 >> Wybierz `Z niewidocznym przekierowaniem`{.action} spośród dwóch wskazanych opcji.
 >>
@@ -247,7 +257,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
-> **Etap 4**
+> **Krok 4**
 >>
 >> Wybierz `Tymczasowe (iframe)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową nazwę domeny lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
@@ -261,7 +271,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
 >>
-> **Etap 5**
+> **Krok 5**
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>

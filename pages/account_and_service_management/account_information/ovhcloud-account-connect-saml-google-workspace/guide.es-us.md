@@ -14,7 +14,17 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 
 - Ser administrador de un servicio Google Workspace
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:iam-saml-sso -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [SAML SSO](/links/control-panel/iam-saml-sso)
+- **Ruta de navegación:** `Identidad, seguridad y operaciones`{.action} > `Users`{.action} > `SSO connection`{.action}
+
+---
+<!-- CP-NAV-END:iam-saml-sso -->
 
 ## Procedimiento
 
@@ -79,13 +89,7 @@ El servicio Google Workspace ya confía en OVHcloud como proveedor de servicios.
 
 ### Configurar la confianza de la cuenta de OVHcloud y configurar la conexión
 
-El Google workspace se añadirá como proveedor de identidad de confianza al [Panel de configuración de OVHcloud](/links/manager), donde podrá proporcionar los metadatos del proveedor de identidad.
-
-En la barra lateral, haga clic en `Identidad, Seguridad y Operaciones`{.action} y luego en `Identidades`{.action}.
-
-![Acceso al menú IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-A continuación, abra la pestaña `SSO`{.action} y haga clic en el botón `Conexión SSO`{.action}.
+Para añadir Google Workspace como proveedor de identidad de confianza, debe proporcionar los metadatos del proveedor de identidad en su área de cliente de OVHcloud. [Acceda a la página SAML SSO](/links/control-panel/iam-saml-sso) y haga clic en el botón `Conexión SSO`{.action}.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -137,7 +141,7 @@ A continuación, asigne **funciones** a estos grupos de usuarios en OVHcloud. En
 
 ![Configuración de los grupos de usuarios](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-Para añadir un grupo desde su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Identidades`{.action} y abra la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action} y complete los campos :
+En su área de cliente de OVHcloud, acceda a la sección `Identidades`{.action} y abra la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action} y complete los campos :
 
 - **Nombre de grupo** : Nombre del grupo en Google Workspace
 - **Privilegio** : Nivel de derecho concedido a este grupo

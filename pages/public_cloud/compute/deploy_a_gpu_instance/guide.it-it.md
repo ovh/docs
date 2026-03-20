@@ -24,6 +24,17 @@ Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017 ma dispong
 - Aver creato un progetto Public Cloud con accesso alle Region in cui è disponibile la maggior parte delle GPU (GRA7, GRA9, GRA11 e BHS5).
 - [Una chiave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) creata per implementare un’istanza GPU Linux.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Procedura
 
 Di seguito troverai le informazioni necessarie per creare un’istanza GPU utilizzando Linux o Windows.
@@ -38,7 +49,7 @@ Tutte le immagini proposte da OVHcloud sono compatibili con le istanze GPU.
 > Se preferisci non compilare manualmente il modulo del kernel, ti consigliamo di utilizzare una distribuzione ufficialmente supportata da Nvidia e per la quale esistono dei driver *pronti all’uso*: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `Public Cloud`{.action}. Seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
+Clicca su `Istanze`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -108,7 +119,7 @@ OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permet
 > Offriamo la possibilità di installare le immagini speciali su alcuni modelli selezionati (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Inoltre, a seconda della regione selezionata, queste immagini speciali potrebbero non essere disponibili.
 >
 
-Una volta connesso al [tuo Spazio Cliente OVHcloud](/links/manager), accedi al tuo progetto Public Cloud e clicca su `Istanze`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
+Clicca su `Istanze`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

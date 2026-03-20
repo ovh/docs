@@ -1,7 +1,7 @@
 ---
-title: AI Endpoints - Premiers pas (EN)
-excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2026-01-30
+title: AI Endpoints - Getting started
+excerpt: Discover AI Endpoints, the secure serverless platform by OVHcloud for developers to access top AI models with easy-to-use APIs. No AI expertise needed.
+updated: 2026-03-19
 ---
 
 > [!primary]
@@ -11,15 +11,15 @@ updated: 2026-01-30
 
 ## Introduction
 
-[AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
+[AI Endpoints](/links/public-cloud/ai-endpoints) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, with **data privacy as a top priority**. Indeed, we do not store user data, making it an ideal solution for developers who want to enhance their applications with AI capabilities while keeping data private and secure. 
 
 With no extensive AI expertise required, AI Endpoints is an ideal choice for developers seeking a convenient and secure way to integrate AI into their applications.
 
 ## Objective
 
-The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+The objective of this guide is to help developers interested in AI quickly and easily get started with [AI Endpoints](/links/public-cloud/ai-endpoints).
 
-It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
+It explains how to obtain an access key, access AI models, and interact with AI APIs on the [AI Endpoints](/links/public-cloud/ai-endpoints) platform. By following this guide, you will learn how to integrate AI capabilities into your applications with ease.
 
 ## Requirements
 
@@ -30,7 +30,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 
 ### Generating your first API access key
 
-Getting an API key enables you to use the models available in our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
+Getting an API key enables you to use the models available in our [catalog](/links/public-cloud/ai-endpoints-catalog) and test their integration into your solutions. To obtain an API access key, please follow the steps below:
 
 **1\. Access the AI Endpoints section**
 
@@ -48,10 +48,22 @@ Once you have filled in the required information, click the `Create`{.action} bu
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
 
-> [!primary]
+> [!warning]
 >
-> **Only project administrators can create keys.**
-> 
+> **Regarding shared projects**
+>
+> Due to current IAM (Identity and Access Management) limitations, the ability to create and manage API keys for AI Endpoints varies depending on how your project is shared.
+>
+> - **If your project is shared with an existing OVHcloud NIC (with Read & Write permissions):**
+>   - Added team members **can** create API keys for AI Endpoints.
+>   - However, **project administrators cannot see or manage keys created by these users**.
+>   - As a result, **admins cannot revoke or audit tokens created by team members**. The only way to revoke such tokens is to remove the NIC’s access to the project.
+>
+> - **If your project is accessed via IAM-based sharing (`NIC/newuser`):**
+>   - Added team members **cannot create** new API keys unless they are granted admin-level IAM permissions.
+>
+> The platform is continuously being improved to provide a smoother and more consistent experience across all services. In the meantime, **please contact your project administrator** to create the key for you.
+>
 
 **3\. Store the created API access key**
 
@@ -70,7 +82,7 @@ With your access API key in hand, you are now ready to access the AI models and 
 
 ### Accessing AI models
 
-Once your API key has been generated, you can navigate to the [Catalog page](https://endpoints.ai.cloud.ovh.net/catalog) to choose the AI model you want to interact with.
+Once your API key has been generated, you can navigate to the [Catalog page](/links/public-cloud/ai-endpoints-catalog) to choose the AI model you want to interact with.
 
 AI Endpoints offers a variety of world-renowned AI models to choose from, including:
 

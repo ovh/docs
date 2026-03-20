@@ -26,7 +26,7 @@ Il est également possible de mettre en place cette configuration sur chacun des
 
 * Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 * Disposer d'une adresse [Additional IP](/links/network/additional-ip)
-* Être connecté à votre [espace client OVHcloud](/links/manager)
+
 
 > [!warning]
 >
@@ -250,7 +250,6 @@ network:
 - Préparer votre plage d'adresses IP privées choisies.
 - Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal).
 - Activer un service [vRack](/links/network/vrack).
-- Être connecté à l'[espace client OVHcloud](/links/manager).
 
 #### Explications
 

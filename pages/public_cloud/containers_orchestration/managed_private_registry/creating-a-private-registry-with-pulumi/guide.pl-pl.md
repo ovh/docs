@@ -1,7 +1,7 @@
 ---
 title: Creating a private registry with Pulumi
 excerpt: 'Create an OVHcloud Managed Private Registry (MPR) with Pulumi'
-updated: 2025-03-13
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -341,7 +341,7 @@ Outputs:
     registryPassword: [secret]
     registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
     registryUser    : "myuser"
-    registryVersion : "2.12.2"
+    registryVersion : "2.14.2"
 
 Resources:
     + 5 created
@@ -439,7 +439,7 @@ Outputs:
   - registryPassword: [secret]
   - registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
   - registryUser    : "myuser"
-  - registryVersion : "2.12.2"
+  - registryVersion : "2.14.2"
 
 Resources:
     - 5 to delete
@@ -464,7 +464,7 @@ Outputs:
   - registryPassword: [secret]
   - registryURL     : "https://034nl9k0.c1.gra9.container-registry.ovh.net"
   - registryUser    : "myuser"
-  - registryVersion : "2.12.2"
+  - registryVersion : "2.14.2"
 
 Resources:
     - 5 deleted

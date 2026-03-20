@@ -31,6 +31,17 @@ Las cuentas Email Pro pueden configurarse en distintos programas de correo compa
 - Tener la aplicación Outlook en su dispositivo móvil [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Disponer del nombre de usuario y la contraseña de la dirección de correo electrónico que quiera configurar.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Email Pro](/links/control-panel/web-email-pro)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Email Pro`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## Procedimiento
 
 ### Añadir la cuenta <a name="add-account"></a>
@@ -39,7 +50,7 @@ Las cuentas Email Pro pueden configurarse en distintos programas de correo compa
 >
 > En nuestros ejemplos, utilizamos la mención servidor: pro?.mail.ovh.net. Deberá sustituir el "?" por el número que designa el servidor del servicio Email Pro.
 >
-> Encontrará esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}, y en la columna izquierda, `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información general`{.action}.
+> Haga clic en [este enlace](/links/control-panel/web-email-pro) para acceder a la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información general`{.action}.
 >
 
 - **Cuando inicie la aplicación por primera vez**, aparecerá un asistente de configuración y pulse `Añadir cuenta`{.action}.

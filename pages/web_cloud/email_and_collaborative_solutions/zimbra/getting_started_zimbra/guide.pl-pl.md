@@ -22,13 +22,22 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 - Zakup konta e-mail w ramach naszego rozwiązania e-mail Zimbra OVHcloud.
 - Posiadanie [domeny OVHcloud](/links/web/domains).
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:web-zimbra -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Zimbra](/links/control-panel/web-zimbra)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Zimbra Mail`{.action}
+
+---
+<!-- CP-NAV-END:web-zimbra -->
 
 ## W praktyce
 
 **Podsumowanie**
 
-- [Dostęp do interfejsu zarządzania usługą](#zimbra-access)
 - [Skonfiguruj usługę Zimbra](#zimbra-conf)
 - [Organizacje](#organizations)
     - [Utwórz organizację](#organizations-create)
@@ -43,14 +52,6 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 - [Przekierowania](#redirections)
 - [Alias](#alias)
 - [Odpowiedzi automatyczne](#autoreply)
-
-### Dostęp do interfejsu zarządzania usługą <a name="zimbra-access"></a>
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `Zimbra Mail`{.action}.
-
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Skonfiguruj usługę Zimbra <a name="zimbra-conf"></a>
 
@@ -156,7 +157,7 @@ Wybierz kartę:
 >> >
 >> > Po 48 godzinach, jeśli pole CNAME nie jest widoczne w strefie DNS, operacja jest anulowana. W takim przypadku konieczne będzie ponowne wykonanie operacji.
 
-### Zmiana nazwy domeny <a name="domains-modify"></a>
+#### Zmiana nazwy domeny <a name="domains-modify"></a>
 
 Możesz zmienić nazwę domeny, aby zmienić jej organizację, lub sprawdzić powiązane z nią rekordy DNS.
 
@@ -221,13 +222,10 @@ Kliknij na `Potwierdź`{.action}, aby rozpocząć zakładanie konta.
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### Zmiana oferty <a name="emails-offer"></a>
+#### Zmiana oferty <a name="emails-offer"></a>
 
 Można zmienić ofertę dowolnego konta Zimbra na wyższą lub niższą ofertę.
 
-1. Zaloguj się do [panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `Zimbra Mail`{.action}.
 1. Kliknij zakładkę `Konto e-mail`{.action}.
 1. Po prawej stronie konta e-mail, dla którego chcesz przejść na wyższą ofertę, kliknij `⁝`{.action}.
 1. Kliknij `Zmień ofertę`{.action}.
@@ -291,7 +289,7 @@ Więcej informacji na temat korzystania z webmaila Zimbra znajdziesz w naszym pr
 
 Utworzenie aliasu dla Twojego konta e-mail umożliwia podanie "maskowanego" adresu e-mail Twoim kontaktom bez konieczności podawania nadawcy Twojego osobistego adresu e-mail.
 
-Alias można utworzyć w panelu klienta [OVHcloud](/links/manager). Kliknij poniższe etapy:
+Kliknij poniższe etapy, aby utworzyć alias:
 
 > [!tabs]
 > **Etap 1**

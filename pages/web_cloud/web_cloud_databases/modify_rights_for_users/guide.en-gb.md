@@ -13,8 +13,18 @@ While using the product, you may need to modify a user’s permissions on your [
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Web Cloud Databases](/links/web/databases) solution and one or more users
+
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Instructions
 

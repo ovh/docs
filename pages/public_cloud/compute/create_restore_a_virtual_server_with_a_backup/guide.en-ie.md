@@ -17,7 +17,17 @@ You can make use of these instance backups for two basic purposes:
 ## Requirements
 
 - A backup of a [Public Cloud instance](/links/public-cloud/instance-backup)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -37,7 +47,6 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
 >> Then click `Instance backup`{.action} in the left-hand navigation bar under **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
@@ -137,7 +146,6 @@ You can make use of these instance backups for two basic purposes:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.<br>
 >> Then click `Instances`{.action} in the left-hand navigation bar under **Compute**.
 >>
 >> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}

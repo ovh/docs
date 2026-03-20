@@ -19,7 +19,6 @@ In caso di perdita della password amministratore, è possibile ripristinarla tra
 ## Prerequisiti
 
 - Disporre di un [VPS](/links/bare-metal/vps) o di un’[istanza Public Cloud](/links/public-cloud/public-cloud) OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -51,7 +50,6 @@ mount -t ntfs-3g /dev/sdb2 /mnt
 ### Step 3: cancella la password corrente
 
 In questo passaggio, il file *SAM* viene modificato con uno strumento in modalità Rescue. Elenca gli utenti Windows con questo comando:
-
 
 ```bash
 chntpw -l /mnt/Windows/System32/config/SAM
@@ -100,16 +98,14 @@ Total  login count: 5
 Select: [q] >
 ```
 
-
-
-Digitare 1 e premere Invio. (Utilizzare l'opzione 2 se accanto a "Disattivato" è presente una "X".)
+Digitare 1 e premere Invio. (Utilizzare l'opzione 2 se accanto a "Disabled" è presente una "X".)
 
 ```text
 Select: [q] > 1
 Password cleared!
 ```
 
-Digitare q e premere Invio per uscire dallo strumento. Digitare y quando richiesto e premere INVIO.
+Digitare q e premere Invio per uscire dallo strumento. Digitare y quando richiesto e premere Invio.
 
 ```text
 Select: [q] > q
@@ -121,7 +117,7 @@ Write hive files? (y/n) [n] : y
  0  </mnt/Windows/System32/config/SAM> - OK
 ```
 
-### 4\. Riavviare il server
+### Step 4: Riavviare il server
 
 A questo punto, esci dalla modalità Rescue e riavvia il server. In caso di necessità, consulta la guida relativa al tuo servizio:
 
@@ -149,4 +145,4 @@ A questo punto puoi accedere come "Administrator" con la nuova password.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [comunità di utenti](/links/community).

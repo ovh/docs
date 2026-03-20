@@ -14,11 +14,21 @@ Isto significa que este crédito cloud é debitado em primeiro lugar e que qualq
 ## Requisitos
 
 - Um projeto [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda a secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. Abra `Créditos e Vouchers`{.action} no menu à esquerda, em **Parâmetros**
+Abra `Créditos e Vouchers`{.action} no menu à esquerda, em **Parâmetros**
 
 > [!warning]
 >

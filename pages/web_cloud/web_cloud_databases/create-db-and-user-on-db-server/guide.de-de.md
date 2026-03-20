@@ -13,7 +13,16 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 ## Voraussetzungen
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases) (auch in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigationspfad:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Wählen Sie Ihren Datenbankdienst aus
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## In der praktischen Anwendung
 

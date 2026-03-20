@@ -15,11 +15,19 @@ Os nossos serviços VPS oferecem flexibilidade, fiabilidade e desempenho para um
 ## Requisitos
 
 - Ter um [VPS](/links/bare-metal/vps) na Área de Cliente OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-vps -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
 
 ## Instruções
-
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na parte `Servidor privado virtual`{.action}.
 
 > [!primary]
 >

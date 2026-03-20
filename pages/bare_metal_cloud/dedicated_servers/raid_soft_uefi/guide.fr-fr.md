@@ -49,14 +49,14 @@ Au cours de ce guide, nous utilisons les termes **disque principal** et **disque
 
 ## En pratique
 
-Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effectuer une série de tests et d'actions. Un tel test pourrait être de simuler une panne de disque afin de comprendre le processus de reconstruction du RAID.
+Lorsque vous achetez un nouveau serveur, vous pouvez ressentir le besoin d'effectuer une série de tests et d'actions. Un tel test pourrait être de simuler une panne de disque pour comprendre le processus de reconstruction du RAID.
 
 ### Aperçu du contenu
 
 - [Informations de base](#basicinformation)
 - [Compréhension de la partition système EFI (ESP)](#efisystempartition)
 - [Simulation d'une panne de disque](#diskfailure)
-    - [Retirer le disque défectueux](#diskremove)
+    - [Retirer le disque défectueux](#removedisk)
 - [Reconstruction du RAID (avec des ESP non mises en miroir)](#raidrebuildnonmirrored)
     - [Reconstruction du RAID après le remplacement du disque principal (mode rescue)](#nonmirroredrescuemode)
     - [Recréation de la partition système EFI](#recreateesp)
@@ -314,7 +314,7 @@ Vous pouvez utiliser la commande `lsblk` pour vérifier si votre partition fait 
 
 ***Le contenu de la partition système EFI change-t-il régulièrement ?***
 
-En général, le contenu de cette partition ne change pas beaucoup, son contenu ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*) (par exemple GRUB).
+En général, le contenu de cette partition ne change pas beaucoup et ne devrait changer que lors des mises à jour du chargeur d'amorçage (*bootloader*) (par exemple GRUB).
 
 Cependant, si votre partition EFI n'est pas en miroir, nous vous recommandons d'exécuter un script automatique ou manuel pour synchroniser toutes les ESP, afin qu'elles contiennent toutes les mêmes fichiers à jour. Ainsi, si le disque sur lequel cette partition est montée tombe en panne, le serveur pourra redémarrer sur l'ESP de l'un des autres disques.
 
@@ -338,7 +338,7 @@ Si votre ESP n'est pas en miroir, vous pouvez rencontrer les difficultés suivan
 
 **Étude de cas 3** - Des mises à jour majeures du système (par exemple, GRUB) ont été effectuées sur le système d'exploitation et les partitions ESP n'ont pas été synchronisées.
 
-- Le serveur ne parvient pas à démarrer en mode normal, Utilisez l'environnement du mode rescue pour reconstruire le RAID, recréer la partition système EFI sur le nouveau disque et réinstaller le bootloader (par exemple, GRUB).
+- Le serveur ne parvient pas à démarrer en mode normal. Utilisez l'environnement du mode rescue pour reconstruire le RAID, recréer la partition système EFI sur le nouveau disque et réinstaller le chargeur de démarrage (*bootloader*) (par exemple, GRUB).
 - Le serveur est capable de démarrer en mode normal (cela pourrait arriver dans le cas où un système d'exploitation est mis à niveau mais que la version de GRUB reste inchangée), ce qui permet de procéder à la reconstruction du RAID.
 
 Dans certains cas, le démarrage à partir d'une ESP obsolète peut échouer ; par exemple, une mise à jour majeure de GRUB peut rendre le binaire GRUB dans l'ESP incompatible avec les nouveaux modules GRUB dans la partition `/boot`.
@@ -354,7 +354,7 @@ Si votre partition système EFI n'est pas mise en miroir, tenez compte des élé
 
 Nous vous recommandons de synchroniser vos ESP régulièrement ou après chaque mise à jour majeure du système. Par défaut, toutes les partitions système EFI contiennent les mêmes fichiers après l'installation. Cependant, si une mise à jour majeure du système est impliquée, la synchronisation des ESP est essentielle pour garder le contenu à jour.
 
-L'exécution d'un script est un moyen efficace de synchroniser régulièrement vos partitions. Vous trouverez ci-dessous un script que vous pouvez utiliser pour synchroniser manuellement vos ESP. Vous pouvez également configurer un script automatisé pour les synchroniser quotidiennement ou à chaque démarrage du système.
+L'exécution d'un script est un moyen efficace de synchroniser régulièrement vos partitions. Voici un script pour synchroniser manuellement vos ESP. Vous pouvez également configurer un script automatisé pour les synchroniser quotidiennement ou à chaque démarrage du système.
 
 Avant d'exécuter le script, assurez-vous que `rsync` est installé sur votre système :
 
@@ -611,7 +611,7 @@ Nous pouvons maintenant procéder au remplacement du disque et à la reconstruct
 > [!primary]
 > Ce processus peut varier selon le système d'exploitation installé sur votre serveur. Nous vous recommandons de consulter la documentation officielle de votre système d'exploitation pour obtenir les commandes appropriées.
 >
-> Si votre serveur peut démarrer en mode normal après le remplacement du disque, procédez simplement en suivant les étapes décrites dans [cette section](#nonmirrorednormalmode) si votre partition EFI n'est pas en miroir ou [cette section](#mirrored-esp-normal) si votre partition EFI est en miroir.
+> Si votre serveur peut démarrer en mode normal après le remplacement du disque, procédez simplement en suivant les étapes décrites dans [cette section](#nonmirrorednormalmode) si votre partition EFI n'est pas en miroir ou [cette section](#raidrebuildmirrored) si votre partition EFI est en miroir.
 >
 
 #### Reconstruction du RAID après le remplacement du disque principal (mode rescue) <a name="nonmirroredrescuemode"></a>
@@ -898,7 +898,7 @@ run partprobe(8) or kpartx(8)
 The operation has completed successfully.
 ```
 
-Exécutez simplement la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (avec la commande `lsblk`), vous devez redémarrer le serveur avant de continuer.
+Exécutez la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (avec la commande `lsblk`), vous devez redémarrer le serveur avant de continuer.
 
 Ensuite, ajoutez les partitions au RAID :
 
@@ -1017,7 +1017,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> └─nvme0n1p4 259:13   0   512M  0 part
 >> ```
 >>
->> l'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
+>> L'étape suivante consiste à attribuer un GUID aléatoire au nouveau disque pour éviter les conflits de GUID avec d'autres disques :
 >>
 >> ```sh
 >> root@rescue12-customer-eu (nsxxxxx.ip-xx-xx-xx.eu) ~ # sgdisk -G /dev/nvme0n1
@@ -1132,7 +1132,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> The operation has completed successfully.
 >> ```
 >>
->> Exécutez simplement la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (ex. avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
+>> Exécutez la commande `partprobe`. Si vous ne voyez toujours pas les nouvelles partitions créées (ex. avec `lsblk`), vous devez redémarrer le serveur avant de continuer.
 >>
 >> Ensuite, ajoutez les partitions au RAID :
 >>
@@ -1210,7 +1210,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> Ensuite, remplaçez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
+>> Ensuite, remplacez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans le fichier `/etc/fstab` :
 >>
 >> ```sh
 >> root@rescue12-customer-eu:/# nano /etc/fstab
@@ -1285,7 +1285,7 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 >> /dev/nvme1n1p4: UUID="d6af33cf-fc15-4060-a43c-cb3b5537f58a"
 >> ```
 >>
->> - Remplaçez l'ancien UUID de la partition SWAP (**nvme0n1p4)** par le nouveau dans `/etc/fstab` :
+>> - Remplacez l'ancien UUID de la partition SWAP (**nvme0n1p4**) par le nouveau dans `/etc/fstab` :
 >>
 >> ```sh
 >> [user@server_ip ~]# sudo nano /etc/fstab
@@ -1327,6 +1327,8 @@ Ensuite, consultez [cette section](#swap-partition) pour recréer la partition S
 
 ///
 
+<a name="go-further"></a>
+
 ## Aller plus loin
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
@@ -1343,4 +1345,4 @@ Si vous avez besoin d'une assistance pour utiliser et configurer vos solutions O
 
 Si vous avez besoin de formation ou d'une assistance technique pour mettre en place nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts de l'équipe Professional Services d'intervenir sur votre cas d'utilisation spécifique.
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

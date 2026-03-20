@@ -16,14 +16,24 @@ La liste des produits OVHcloud certifiés est disponible sur la page « [OVHclou
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit au [niveau de support Business ou Enterprise](/links/support) pour votre compte OVHcloud.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## En pratique
 
 ### Activer l'option HDS lors de la création d'un nouveau projet Public Cloud
 
-Depuis votre [espace client OVHcloud](/links/manager), créez un nouveau projet Public Cloud.
+Créez un nouveau projet Public Cloud.
 
 Si vous avez souscrit au niveau de support Business ou Enterprise, vous pourrez alors cocher la case `Hébergement de données de santé et certification HDS pour ce projet`.
 
@@ -33,7 +43,7 @@ Vous aurez alors accès aux conditions particulières relatives à l'hébergemen
 
 ### Activer l'option HDS sur un projet Public Cloud existant
 
-Depuis votre [espace client OVHcloud](/links/manager), sélectionnez le projet Public Cloud pour lequel vous souhaitez que les services soient certifiés HDS.
+Sélectionnez le projet Public Cloud pour lequel vous souhaitez que les services soient certifiés HDS.
 
 Cliquez sur `Settings`{.action}. Si vous avez souscrit au niveau de support Business ou Enterprise, vous pourrez alors cocher la case `Hébergement de données de santé et certification HDS pour ce projet`.
 

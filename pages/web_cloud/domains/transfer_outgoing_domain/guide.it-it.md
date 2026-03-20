@@ -25,8 +25,19 @@ Per impedire trasferimenti di nomi di dominio non autorizzati, i nomi di dominio
 
 - Disporre di un [nome di dominio](/links/web/domains) registrato in OVHcloud
 - Avere l’autorizzazione per richiedere il trasferimento di un nome di dominio: l'intestatario e/o gli amministratori devono essere informati della richiesta di trasferimento
-- Avere accesso alla gestione del nome di dominio dallo [Spazio Cliente OVHcloud](/links/manager)
 - La registrazione del nome di dominio in questione risale ad almeno 60 giorni fa **e** non è stata trasferita o scambiata (ovvero la modifica dell'intestatario) negli ultimi 60 giorni
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >

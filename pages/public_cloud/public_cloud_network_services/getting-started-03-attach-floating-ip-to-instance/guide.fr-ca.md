@@ -48,6 +48,17 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 
 ## En pratique
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ### Attacher une Floating IP à une instance
 
 #### Depuis l’espace client OVHcloud
@@ -62,18 +73,16 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Si vous souhaitez associer une Floating IP à une instance existante, passez à **l'Option 2** (deuxième onglet ci-dessus).
 >>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
->> 
 >> Avant de créer votre instance, assurez-vous d'avoir créé un [réseau privé avec Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
 >> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps). 
 >>
 >>
 >> > [!warning]
->> > A ce jour, toutes les régions ne sont pas compatibles avec cette fonctionnalité. Veillez à créer une instance dans une région qui le permet. Pour plus d'informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](/links/public-cloud/regions-pci).
+>> > À ce jour, toutes les régions ne sont pas compatibles avec cette fonctionnalité. Veillez à créer une instance dans une région qui le permet. Pour plus d'informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](/links/public-cloud/regions-pci).
 >> >
 >>
->> À l'étape 5 de la création d'une instance, vous est proposé le choix du « mode public » ou « mode privé » pour la mise en réseau de votre instance. 
+>> À l'étape 5 de la création d'une instance, vous pouvez choisir le « mode public » ou « mode privé » pour le réseau de votre instance.
 >>
 >> Par défaut, le mode public est sélectionné. Cependant, comme nous créons une instance à laquelle nous allons attacher une Floating IP, nous devons créer une instance avec un réseau privé **UNIQUEMENT**.
 >>
@@ -87,13 +96,13 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 >>
->> En cas de doute sur la durée d’utilisation, nous vous recommandons de choisir la facturation à l’heure, car il n’est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer en abonnement mensuel dès que l'instance sera disponible sur la page « Instances ».
+>> En cas de doute sur la durée d’utilisation, choisissez la facturation à l’heure, car vous ne pourrez plus y passer après la livraison. Vous aurez la possibilité de passer en abonnement mensuel dès que l’instance sera disponible sur la page « Instances ».
 >>
 >> > [!warning]
 >> > Si vous choisissez d’être facturé à l’heure, vous continuerez à être facturé tant que l’instance n’est pas supprimée, même si l’instance n’est pas utilisée.
 >> >
 >>
->> Après vérification de votre configuration, cliquez sur `Créer une instance`{.action} pour terminer la création de votre nouvelle instance. L’opération peut prendre quelques minutes jusqu’à la livraison de votre service.
+>> Vérifiez votre configuration, puis cliquez sur `Créer une instance`{.action}. L’opération peut prendre quelques minutes jusqu’à la livraison de votre service.
 >> 
 >>
 > **Option 2** 
@@ -102,13 +111,13 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Veuillez noter que le réseau privé doit être relié à une Gateway. Pour plus d'informations, consultez ce guide : [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> Depuis l'onglet `Public Cloud`{.action}, cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
+>> Cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 >>
 >> Cliquez sur `Floating IPs`{.action} puis sur `Ajouter une nouvelle IP`{.action}.
 >>
 >> ![add a new ip](images/addfloatingip.png){.thumbnail}
 >>
->> Sous la rubrique « Sélectionnez votre usage public », choississez `Floating IPs (Public Cloud)`{.action}.
+>> Sous la rubrique « Sélectionnez votre usage public », choisissez `Floating IPs (Public Cloud)`{.action}.
 >> 
 >> ![select floating ip](images/selectfip.png){.thumbnail}
 >>
@@ -135,17 +144,18 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 
 #### Détacher une Floating IP
 
-Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenStack](#detachip).
+Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenStack](#detachip) et [l'interface Horizon](#disassociateip).
 
 #### Supprimer une Floating IP
 
-Depuis l'onglet `Public Cloud`{.action}, cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
+Cliquez sur `IP Publiques`{.action} dans le menu de gauche sous **Network**.
 
 Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à côté de l'IP correspondante et sélectionnez `Supprimer`{.action}.
 
 ![delete floating ip](images/deletefip.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération peut prendre quelques minutes.
+
 
 #### Depuis l'API OpenStack
 
@@ -192,7 +202,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Le service **DHCP** doit être activé sur le sous-réseau et une **gateway ip** doit être configurée.
 >>
 >> ```bash
->> $ openstack subnet create —subnet-range 192.168.0.1/24 —network test-network —dhcp —gateway 192.168.0.1 test-subnet
+>> $ openstack subnet create --subnet-range 192.168.0.1/24 --network test-network --dhcp --gateway 192.168.0.1 test-subnet
 >> $ openstack subnet show test-subnet -c id -c gateway_ip -c enable_dhcp -c name
 >> +-------------+--------------------------------------+
 >> | Field       | Value                                |
@@ -224,7 +234,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Ajoutez une gateway au **router1** à partir du réseau partagé public **Ext-Net**.
 >> 
 >> ```bash
->> $ openstack router set —external-gateway Ext-Net router1
+>> $ openstack router set --external-gateway Ext-Net router1
 >> $ openstack router show router1 -c external_gateway_info -c name
 >> +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 >> | Field                 | Value                                                                                                                                                                                                                                                                                    |
@@ -239,7 +249,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Créez une clé SSH **test-keypair** pour la connexion SSH à votre VM (n'oubliez pas de limiter les accès au fichier de clé privée à l'aide de la commande chmod).
 >>
 >> ```bash
->> $ openstack keypair create —private-key ./test-key.rsa test-key
+>> $ openstack keypair create --private-key ./test-key.rsa test-key
 >> +-------------+-------------------------------------------------+
 >> | Field       | Value                                           |
 >> +-------------+-------------------------------------------------+
@@ -255,7 +265,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Générez une VM avec l'interface **test-network** uniquement.
 >>
 >> ```bash
->> $ openstack server create —image 'Ubuntu 22.04' —flavor s1-8 —key-name test-key —net test-network vm4fip
+>> $ openstack server create --image 'Ubuntu 22.04' --flavor s1-8 --key-name test-key --net test-network vm4fip
 >> $ openstack server show vm4fip -c name -c status
 >> +--------+--------+
 >> | Field  | Value  |
@@ -352,7 +362,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 > [!primary]
 > Cette manipulation doit être effectuée **après** avoir suivi les 9 étapes ci-dessus.
 
-Pour ajouter un DNS à une adresse floating IP, exécutez la commande suivante à partir de la ligne de commande:
+Pour ajouter un DNS à une adresse Floating IP, exécutez la commande suivante à partir de la ligne de commande :
 
 ```bash
 $ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
@@ -418,7 +428,7 @@ Les étapes suivantes décrivent comment attacher une Floating IP à une instanc
 >>
 >> ![associer](images/associate_floating_ip.png){.thumbnail}
 >>
->> Une fenêtre pop-up s'affiche. Cliquez sur la flèche déroulante en dessous de « Port to be assiociated » et sélectionner le port/l'instance auquel attacher l'adresse Floating IP.
+>> Une fenêtre pop-up s'affiche. Cliquez sur la flèche déroulante en dessous de « Port to be associated » et sélectionnez le port/l'instance auquel attacher l'adresse Floating IP.
 >>
 >> ![associer](images/select_port.png){.thumbnail}
 >>
@@ -463,7 +473,7 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 > [!tabs]
 > **Étape 1**
 >> 
->> Pour commencer, récupérez toutes les informations dont vous aurez besoin.
+>> Récupérez les informations nécessaires.
 >>
 >> Pour l'identifiant du projet (project ID), les appels ci-dessous vous permettent de le récupérer.
 >>
@@ -480,8 +490,8 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >> >@api {v1} /cloud GET /cloud/project/{serviceName}
 >>
 >> > [!primary]
->> > Cet appel identifie le projet via le champ "description".
->> 
+>> > Cet appel identifie le projet via le champ `description`.
+>>
 > **Étape 2**
 >> 
 >> Pour l'identifiant de l'instance, l'appel ci-dessous vous permet de le récupérer.
@@ -497,10 +507,9 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >> >
 >> > **region** : vous pouvez spécifier la région pour des résultats plus rapides
 >>
->> La création va prendre quelques instants.
 >>
 > **Étape 3**
->> Une fois que vous avez rassemblé toutes les informations, vous pouvez créer une Floating IP et l'associer à une instance en utilisant l'appel suivant.
+>> Créez une Floating IP et associez-la à une instance avec l'appel suivant.
 >> 
 >> > [!api]
 >> >
@@ -513,17 +522,17 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >> |serviceName|Identifiant du projet|
 >> |regionName|Nom de la région dans laquelle se trouve l'instance|
 >> |instanceid|Identifiant de l'instance|
->> |ip|l'IP privée de l'instance|
+>> |ip|L'IP privée de l'instance|
 >>
 >> > [!primary]
->> > Pour le champ de propriété « Gateway », veuillez choisir l'option « Empty ». Cela est dû au fait que nous attachons une Floating IP à une instance créée au départ avec un réseau privé **uniquement** et qui est déjà rattachée à une gateway. Veuillez noter que, pour le moment, il ne sera pas possible de créer une Floating IP si l'instance est liée à un réseau privé qui n'est pas rattaché à une gateway.
+>> > Pour le champ de propriété « Gateway », veuillez choisir l'option `Empty`. Cela est dû au fait que nous attachons une Floating IP à une instance créée au départ avec un réseau privé **uniquement** et qui est déjà rattachée à une gateway. Veuillez noter que, pour le moment, il ne sera pas possible de créer une Floating IP si l'instance est liée à un réseau privé qui n'est pas rattaché à une gateway.
 >> >
 >> La création va prendre quelques instants.
 >>
 
 #### Détacher une Floating IP
 
-Cette fonctionnalité est actuellement uniquement disponible via [l'API OpenStack](#detachip).
+Cette fonctionnalité est actuellement disponible uniquement via [l’API OpenStack](#detachip) et [l'interface Horizon](#disassociateip).
 
 #### Supprimer une Floating IP
 

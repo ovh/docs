@@ -17,13 +17,23 @@ Using the Horizon interface, you can also set passwords for each individual user
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
 ### Creating an OpenStack user
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Users & Roles`{.action} the left-hand menu under **Settings**. 
+Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 Click on the button `Create User`{.action}.
 
@@ -79,7 +89,7 @@ Please note that when you change your user password, your previous password is i
 
 ### Deleting an OpenStack user
 
-You can remove an OpenStack user in the [OVHcloud Control Panel](/links/manager). Click on `Users & Roles`{.action} the left-hand menu under **Settings**. 
+Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 ![public-cloud](images/delete.png){.thumbnail}
 

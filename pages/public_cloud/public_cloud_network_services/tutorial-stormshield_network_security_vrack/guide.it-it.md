@@ -21,13 +21,24 @@ Questa guida ti mostra come installare e configurare SNS EVA sul Public Cloud OV
 ## Prerequisiti
 
 - Un [progetto Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) nel tuo account OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Un [utente OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (facoltativo).
 - Conoscenze di base di rete.
 - Un account Stormshield creato tramite il [sito Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm).
 - Garantire che la vRack sia attiva e configurata per permettere una comunicazione sicura tra i componenti dell’infrastruttura.
 - un blocco di indirizzi [Additional IP](/links/network/additional-ip) (/29) per permettere il failover e la configurazione dell'alta disponibilità.
 - Una licenza Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence), ottenuta presso [partner o rivenditori terzi](https://www.stormshield.com/partner/partner-finder/), che sarà necessario fornire in fase di installazione e configurazione.
+
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Percorso di navigazione:** `Public Cloud`{.action} > Seleziona il tuo project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Procedura
 
@@ -129,7 +140,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Configura le istanze SNS EVA
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Nel menu a sinistra, clicca su `Istanze`{.action} nella scheda **Compute**, poi trovi le tue due istanze SNS EVA.
+Nella sezione `Public Cloud`{.action}, seleziona il tuo progetto. Nel menu a sinistra, clicca su `Istanze`{.action} nella scheda **Compute**, poi trovi le tue due istanze SNS EVA.
 
 Accedere alla console VNC per le due istanze SNS EVA e configurare il layout di tastiera e la password.
 

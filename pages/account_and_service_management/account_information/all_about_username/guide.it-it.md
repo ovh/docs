@@ -16,7 +16,17 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 ## Prerequisiti
 
 - Aver creato [il tuo account OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Il mio profilo](/links/control-panel/account-profile)
+- **Percorso di navigazione:** Clicca sul tuo nome in alto a destra > `Accedere al mio account`{.action} > `Modifica il tuo profilo`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](/pages/account_and_service_management/account_information/all_about_username#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login).
@@ -53,9 +63,7 @@ Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/
 In caso di difficoltà di accesso al tuo indirizzo email principale, un indirizzo email di recupero permette di mantenere l'accesso al tuo account e quindi alla gestione dei tuoi servizi.
 <br>Questo secondo indirizzo **deve essere diverso** dal primo, in particolare per facilitare le operazioni in caso di recupero della password.
 
-Per inserire questo indirizzo email di recupero, clicca sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Accedere al mio account`{.action}.
-
-Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo sul tuo nome per eliminare il menu a sinistra), clicca su `Modifica il tuo profilo`{.action}.
+Per inserire questo indirizzo email di recupero, accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
 > [!warning]
 > Ti ricordiamo che è **fondamentale** che l'indirizzo email di recupero sia **diverso** dall'indirizzo email principale dell'account.
@@ -76,11 +84,9 @@ Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcl
 
 #### Modifica le tue informazioni personali
 
-È possibile modificare le informazioni del tuo account dallo [Spazio Cliente OVHcloud](/links/manager). Clicca sul tuo nome in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Accedere al mio account`{.action}.
+È possibile modificare le informazioni del tuo account. Accedi al tuo [profilo utente](/links/control-panel/account-profile).
 
-Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo sul tuo nome per eliminare il menu a sinistra), clicca su `Modifica il tuo profilo`{.action}
-
-Modifica le informazioni e clicca su `Conferma`{.action}.
+Modifica le informazioni e clicca su `Salva le modifiche`{.action}.
 
 > [!warning]
 >

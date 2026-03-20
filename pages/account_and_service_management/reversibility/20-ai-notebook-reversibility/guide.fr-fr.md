@@ -1,5 +1,5 @@
 ---
-title: "Politique de réversibilité du produit Notebook Interface"
+title: "AI Notebooks - Politique de réversibilité du produit Notebook Interface"
 updated: 2025-07-10
 ---
 

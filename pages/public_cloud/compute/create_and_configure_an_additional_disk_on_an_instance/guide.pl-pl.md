@@ -32,10 +32,17 @@ Może to być przydatne w następujących przypadkach:
 
 ## Wymagania początkowe początkowe
 
-- Dostęp do [Panelu client OVHcloud](/links/manager)
 - Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
 - Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+### Dostęp do Panelu klienta OVHcloud
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!warning]
 >
@@ -91,7 +98,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage & backup**.
+>> Otwórz `Block Storage`{.action} w menu po lewej stronie, pod **Storage & backup**.
 >>
 >> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
 >>

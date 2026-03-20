@@ -20,19 +20,21 @@ Możesz na przykład podzielić Twoje zasoby na kategorie według witryny, usłu
 ## Wymagania początkowe
 
 - [Serwer dedykowany](/links/bare-metal/bare-metal) z poziomu Twojego konta OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 ## Wskazówki
 
 ### Przypisz tag do serwera dedykowanego w Panelu klienta OVHcloud
-
-Aby oznaczyć serwer:
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Bare Metal Cloud`{.action}.
-1. Kliknij na `Serwery dedykowane`{.action} i wybierz serwer z listy.
-
-Domyślnie jesteś przekierowany do zakładki `Informacje ogólne`{.action}.
 
 ![Informacje ogólne](images/general_information.png){.thumbnail}
 

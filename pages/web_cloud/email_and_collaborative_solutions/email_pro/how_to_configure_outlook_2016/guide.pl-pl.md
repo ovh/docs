@@ -36,6 +36,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Posiadanie [klasycznego programu Microsoft Outlook](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) lub późniejszego.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
@@ -48,7 +59,7 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 
 > [!warning]
 >
-> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Konfiguracja konta E-Mail Pro w nowej aplikacji Outlook na Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
+> Ta dokumentacja dotyczy wyłącznie **klasycznego Outlooka** dostępnego w pakiecie Microsoft 365. Jeśli korzystasz z nowego Outlooka, zapoznaj się z naszym przewodnikiem "[E-mail Pro - Konfiguracja konta E-mail Pro w nowej aplikacji Outlook na Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)".
 >
 > Aby zainstalować klasyczny Outlook na swoim komputerze z Windows, pobierz go ze strony Microsofta "[Instalowanie lub ponowne instalowanie klasycznego Outlooka na komputerze z systemem Windows](https://support.microsoft.com/pl-pl/office/instalowanie-lub-ponowne-instalowanie-klasycznego-programu-outlook-na-komputerze-z-systemem-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" i zainstaluj.
 >
@@ -62,11 +73,7 @@ Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonyw
 >
 > W naszym przykładzie używamy nazwy serwera: pro?.mail.ovh.net. Musisz zastąpić "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >
-> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-> 1. Przejdź do sekcji `Web Cloud`{.action}.
-> 1. Kliknij `E-mail Pro`{.action}.
-> 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
+> Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 
 - **Podczas pierwszego uruchomienia aplikacji**: wyświetli się asystent konfiguracji i poprosi o wpisanie adresu e-mail.
 
@@ -226,7 +233,7 @@ Dlatego zalecamy, aby zapoznać się z odpowiednim rozdziałem dotyczącym inter
 >> >
 >> > W naszym przykładzie używana jest nazwa serwera "pro**?**.mail.ovh.net". Musisz zastąpić znak "?", cyfrą odpowiadającą serwerowi Twojego konta E-mail Pro.
 >> >
->> > Znajdź tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie `E-mail Pro`{.action}. Nazwa serwera znajduje się w ramce **Logowanie** na karcie `Informacje ogólne`{.action}.
+>> > Kliknij [ten link](/links/control-panel/web-email-pro), aby uzyskać dostęp do sekcji `E-mail Pro`{.action}. Nazwa serwera jest widoczna w sekcji **Logowanie** na karcie `Informacje ogólne`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-emailpro08.png){.thumbnail}
 >>

@@ -20,7 +20,6 @@ updated: 2023-02-24
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web](/links/web/hosting) con accesso SSH
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

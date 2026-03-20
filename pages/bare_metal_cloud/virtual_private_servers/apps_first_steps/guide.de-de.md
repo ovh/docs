@@ -4,9 +4,53 @@ excerpt: Erfahren Sie hier, wie Sie auf Ihrem VPS vorinstallierte Anwendungen ei
 updated: 2022-08-25
 ---
 
+<style>
+/* ---FAQ only--- */
+details {
+    margin: 0.1rem 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #ffffffff;
+}
+details > summary {
+    padding: 0.1rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
+}
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details:hover {
+    border: 1px solid #147DE8;
+    border-radius: 4px;
+    transition: border-color 0.5s ease;
+}
+details[open] > summary {
+    background: #ffffffff;
+}
+details > :not(summary) {
+    padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
+    list-style-position: inside;
+}
+.smallish-gap {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+</style>
+
 ## Ziel
 
-OVHcloud bietet VPS-Nutzern vorinstallierte Images verschiedener Anwendungen für eine schnelle und einfache Inbetriebnahme mit nur wenigen Klicks. 
+OVHcloud bietet VPS-Nutzern vorinstallierte Images verschiedener Anwendungen für eine schnelle und einfache Inbetriebnahme mit nur wenigen Klicks.
 
 **Diese Anleitung erklärt die Ersteinrichtung vorinstallierter Anwendungen auf Ihrem VPS.**
 
@@ -33,7 +77,7 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 > [!primary]
 >
-> Wenn der Link bereits abgelaufen ist, loggen Sie sich mit dem CentOS-Benutzer über SSH auf Ihrem VPS ein und führen Sie den Befehl "sudo whmlogin" aus, um einen neuen Link zu erzeugen.
+> Wenn der Link bereits abgelaufen ist, loggen Sie sich mit dem CentOS-Benutzer über SSH auf Ihrem VPS ein und führen Sie den Befehl `sudo whmlogin` aus, um einen neuen Link zu erzeugen.
 >
 
 <ol start="3">
@@ -46,14 +90,23 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
-> [!faq]
->
-> Kann ich meine eigenen DNS Server verwenden?
->> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
-> Warum sollte ich das Root-Passwort festlegen?
->> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
-> Wo ist meine Lizenz für cPanel?
->> Sie können Ihre cPanel Lizenz für Ihren VPS über das [OVHcloud Kundencenter bestellen](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Kann ich meine eigenen DNS Server verwenden?
+
+Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
+
+///
+
+/// details | Warum sollte ich das Root-Passwort festlegen?
+
+WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
+
+///
+
+/// details | Wo ist meine Lizenz für cPanel?
+
+Sie können Ihre cPanel Lizenz für Ihren VPS über das [OVHcloud Kundencenter bestellen](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Plesk
 
@@ -74,10 +127,11 @@ Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstalliert
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
-> [!faq]
->
-> Wo ist meine Plesk-Lizenz?
->> Sie können Ihre Plesk Lizenz für Ihren VPS über das [OVHcloud Kundencenter bestellen](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+/// details | Wo ist meine Plesk-Lizenz?
+
+Sie können Ihre Plesk Lizenz für Ihren VPS über das [OVHcloud Kundencenter bestellen](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+
+///
 
 #### Docker
 
@@ -88,7 +142,7 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 Nachfolgend finden Sie die ersten Schritte zur Inbetriebnahme des vorinstallierten Docker.
 
 1. Verbinden Sie sich via SSH mit dem Benutzernamen und dem Passwort aus der E-Mail mit dem Server.
-2. Überprüfen Sie, dass Docker funktioniert, mit dem Befehl "docker run hello-world".
+2. Überprüfen Sie, dass Docker funktioniert, mit dem Befehl `docker run hello-world`.
 
 Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anwendung abzuschließen.
 
@@ -157,4 +211,4 @@ IMPORTANT NOTES:
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

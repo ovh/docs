@@ -1,94 +1,142 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
-updated: 2025-04-28
+updated: 2026-02-24
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
 Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente OVHcloud](/links/manager).
 
-**Este guia explica em pormenor as ações disponíveis na Área de Cliente OVHcloud para uma instância Public Cloud.**
+**Este guia descreve as ações disponíveis na Área de Cliente OVHcloud para uma instância Public Cloud.**
 
 ## Requisitos
 
 - Um [projeto Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 - Uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) no seu projeto
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
-
 ### Utilizar a interface de gestão das instâncias
 
-Clique em `Instâncias`{.action} no menu à esquerda. 
-
-![public-cloud](images/compute-2025.png){.thumbnail}
+Clique em `Instâncias`{.action} no menu à esquerda.
 
 Esta página lista o conjunto das suas instâncias Public Cloud e algumas das suas propriedades:
 
-- ID da instância, necessária para determinadas chamadas API;
+- o ID da instância, necessário para determinadas chamadas API;
 - a localização do datacenter, ou seja, a região da instância;
-- O modelo da instância;
-- imagem, ou seja, o SO instalado na instância;
+- o modelo da instância;
+- a imagem, ou seja, o SO instalado na instância;
 - o endereço IPv4 da instância;
-- o endereço privado atualmente ligado à instância;
+- o endereço privado atualmente associado à instância;
 - os volumes (discos) adicionais atualmente associados à instância;
 - o estado da instância, indicando se está no estado `Ativado`.
 
 ### Opções de gestão no painel de controlo da instância
 
-Na página de gestão das instâncias, clique no nome de uma instância.
+Na página de gestão das instâncias, clique no nome da instância em causa.
 
-Selecione a opção desejada no quadro da esquerda "Gestão".
+Acederá à página `Informações gerais`, que centraliza os principais detalhes e o estado de funcionamento da sua instância (estado, recursos, rede, acesso e metadados).
 
-![public-cloud](images/management.png){.thumbnail}
-
-Estas ações também estão disponíveis na página de gestão das instâncias, se clicar no botão `...`{.action} na tabela.
+Algumas destas operações também estão disponíveis na página de gestão das instâncias, através do botão `...`{.action} na tabela.
 
 #### Editar a configuração de uma instância
 
-Clique em `Editar`{.action}.
+Clique em `Alterar a imagem`{.action} ou `Alterar o modelo`{.action}.
 
-A nova página que aparece apresenta uma versão modificada das opções [de criação de instância](/pages/public_cloud/compute/public-cloud-first-steps), na qual pode modificar os seguintes elementos:
+Também pode abrir `Ações suplementares`{.action} e selecionar `Editar`{.action}.
 
-- **Modificar o nome**: pode atribuir um nome à instância para uma maior facilidade de identificação.
-- **Modificar a imagem**: pode escolher outro sistema operativo para a instância (tenha em atenção que a reinstalação de uma instância eliminará todos os dados que contém).
-- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](/pages/public_cloud/compute/public-cloud-first-steps#model).
-- **Alterar o período de faturação**: pode alterar o período de faturação da instância de uma faturação à hora para uma faturação mensal. Para mais informações, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+A nova página apresenta uma versão modificada das opções [de criação de instância](/pages/public_cloud/compute/public-cloud-first-steps), na qual pode modificar os seguintes elementos:
+
+- **Modificar o nome**: pode atribuir um nome à instância para facilitar a sua identificação.
+- **Modificar a imagem**: pode escolher outro sistema operativo para a instância (tenha em conta que a reinstalação de uma instância eliminará todos os dados que contém).
+- **Modificar o modelo**: pode alterar o modelo de instância. Consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#model) para mais informações sobre as opções.
+- **Modificar o período de faturação**: pode alterar o período de faturação da instância de uma faturação à hora para uma faturação mensal. Consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) para mais informações.
 
 #### Criar um backup de uma instância
 
 Clique em `Criar um backup`{.action}.
 
-Para mais informações, consulte o manual "[Guardar uma instância](/pages/public_cloud/compute/save_an_instance)". 
+Consulte o guia [Guardar uma instância](/pages/public_cloud/compute/save_an_instance) para mais informações.
 
-#### Criar um backup automático de uma instância
+#### Eliminar uma instância
+
+Clique em `Eliminar`{.action}.
+
+Esta ação eliminará definitivamente a instância e todos os seus dados.
+
+Confirme o pedido de eliminação na janela que aparece.
+
+> [!warning]
+> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...). Certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
+>
+
+#### Associar um volume
+
+Clique em `Associar um volume`{.action}.
+
+Selecione o volume a associar à instância e clique em `Confirmar`{.action}. Uma vez associado, o volume fica imediatamente disponível e pode ser montado a partir do sistema operativo da instância.
+
+#### Alterar a reverse DNS
+
+Clique em `⋮`{.action} e depois em `Alterar a reverse DNS`{.action}.
+
+Consulte o guia [Configurar o DNS inverso de uma instância Public Cloud](/pages/public_cloud/compute/setup_instance_reverse) para mais informações.
+
+#### Configurar a firewall
+
+Clique em `⋮`{.action} e depois em `Configurar a firewall`{.action}.
+
+Consulte o guia [Ativar e configurar o Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) para mais informações.
+
+#### Gerir as redes privadas
+
+Clique em `⋮`{.action} e depois em `Gerir as redes privadas`{.action}.
+
+Consulte o guia [Criar uma rede privada com Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) para mais informações.
+
+#### Associar uma rede
+
+Clique em `⋮`{.action} e depois em `Associar uma rede`{.action}.
+
+Selecione a rede desejada na lista pendente e clique em `Confirmar`{.action}.
+
+#### Ações suplementares
+
+Clique em `Ações suplementares`{.action}
+
+##### Criar um backup automático de uma instância
 
 Clique em `Criar um backup automatizado`{.action}.
 
-Para mais informações, consulte o manual "[Guardar uma instância](/pages/public_cloud/compute/save_an_instance#criar-um-backup-automatizado-de-uma-instancia)".
+Consulte o guia [Guardar uma instância](/pages/public_cloud/compute/save_an_instance#criar-um-backup-automatizado-de-uma-instancia) para mais informações.
 
-#### Parar uma Instância
+##### Parar uma instância
 
 Clique em `Parar`{.action}.
 
-Isto colocará a instância no estado `Apagada`, mas continuará a ser-lhe cobrado o mesmo preço pela sua instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#parar-suspend-uma-instancia)".
+Isto colocará a instância no estado `Apagada`, mas continuará a ser-lhe cobrado o mesmo preço pela sua instância. Consulte o nosso guia [Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#parar-suspend-uma-instancia) para mais informações.
 
 Clique em `Iniciar`{.action} para reativar a instância.
 
-#### Utilizar o modo rescue
+##### Utilizar o modo rescue
 
-Clique em `Reiniciar em modo de rescue`{.action}.
+Clique em `Reiniciar em modo Rescue`{.action}.
 
-Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Como ativar o modo rescue numa instância Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) para obter informações detalhadas.
+Isto irá ativar o modo rescue da instância. Consulte o nosso guia [Como ativar o modo rescue numa instância Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) para obter informações detalhadas.
 
-#### Reiniciar uma instância
+##### Reiniciar uma instância
 
 > [!warning]
 > A opção de reboot a quente (soft) não está atualmente disponível para as instâncias Metal.
@@ -97,47 +145,35 @@ Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Como a
 - Clique em `Reboot a quente (soft)`{.action} para efetuar um reboot ao nível de software.
 - Clique em `Reboot a frio (hard)`{.action} para lançar um reboot ao nível material.
 
-Confirme o pedido de reboot na janela que aparecer.
+Confirme o pedido de reboot na janela que aparece.
 
-#### Suspender (*shelve*) uma instância
+##### Suspender (*shelve*) uma instância
 
 Clique em `Suspender`{.action}.
 
-Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspensa`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
+Isto colocará a instância no estado « *shelved* », apresentado aqui como `Suspensa`. Consulte o nosso guia [Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-uma-instancia) para mais informações sobre os diferentes estados de suspensão de uma instância.
 
 Clique em `Reativar`{.action} para restaurar o estado `Ativada` da instância.
 
-#### Reinstalar uma instância
+##### Reinstalar uma instância
 
 Clique em `Reinstalar`{.action}.
 
-Esta ação reinstalará a instância com o mesmo sistema operativo, desde que a imagem seja sempre tomada a cargo.
+Esta ação reinstalará a instância com o mesmo sistema operativo, desde que a imagem seja ainda suportada.
 
 Tenha em atenção que a reinstalação **elimina todos os dados** atualmente armazenados na sua instância.
 
-#### Eliminar uma instância
-
-Clique em `Eliminar`{.action}.
-
-Esta ação terá por efeito eliminar definitivamente a instância, bem como todos os seus dados.
-
-Confirme o pedido de eliminação na janela que aparecer.
-
-> [!warning]
-> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
->
-
 ### Aceder à consola VNC <a name="accessvnc"></a>
 
-Clique em `Instâncias`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
+Clique em `Instâncias`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância na tabela.
 
-A seguir, clique no separador `Console VNC`{.action}.
+Clique no separador `Consola VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-A consola VNC fornece um acesso direto à sua instância. Para que este acesso funcione, primeiro tem de configurar um nome de utilizador e uma palavra-passe na instância. 
+A consola VNC fornece um acesso direto à sua instância. Para que este acesso funcione, primeiro deve configurar um nome de utilizador e uma palavra-passe na instância.
 
-Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console)".
+Consulte o nosso guia [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) para mais informações.
 
 ## Quer saber mais?
 
@@ -145,6 +181,6 @@ Para mais informações, consulte o nosso manual "[Criação e conexão a uma pr
 
 [Apresentação do Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projeto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

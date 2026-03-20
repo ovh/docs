@@ -1,6 +1,6 @@
 ---
-title: 'Tout savoir sur les utilisateurs SMS'
-excerpt: 'Découvrez les fonctionnalités des utilisateurs API pour envoyer des SMS'
+title: "Tout savoir sur les utilisateurs SMS"
+excerpt: "Découvrez comment créer, configurer et gérer les utilisateurs API pour l'envoi de SMS, y compris les permissions et restrictions"
 updated: 2022-08-05
 ---
 
@@ -11,7 +11,17 @@ Ce guide vous explique comment créer et gérer des utilisateurs API.
 ## Prérequis
 
 - Disposer d'un compte SMS OVHcloud
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -30,15 +40,13 @@ Un utilisateur API qui envoie des SMS de manière abusive peut de suite être d�
 - Un utilisateur API peut être soumis à des restrictions (quotas) dans ses crédits SMS.
 Ainsi il est possible pour le propriétaire du compte SMS de diviser ses crédits sur ses différents comptes utilisateurs API.
 
-Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer une limite et un quota à vos utilisateurs API.
+Afin de gérer au mieux le crédit de votre compte SMS, vous pouvez fixer une limite et un quota à vos utilisateurs API.
 
 - Le **quota** est la quantité de crédits SMS disponibles pour l’utilisateur API.
 
 - La **limite** correspond au seuil minimum de crédits SMS qu'un utilisateur API doit avoir avant de recevoir une alerte pour recharger ou non le solde de ces crédits.
 
-### Étape 1 : créer un utilisateur API
-
-Connectez-vous à votre [espace client](/links/manager), puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
+### Étape 1 : Créer un utilisateur API
 
 Cliquez sur l'onglet `Utilisateurs API`{.action}. Pour ajouter un utilisateur, cliquez sur le bouton `Actions`{.action} puis sur `Ajouter`{.action}.
 
@@ -46,7 +54,7 @@ Cliquez sur l'onglet `Utilisateurs API`{.action}. Pour ajouter un utilisateur, c
 
 La définition du nom de l'utilisateur API est libre. Le mot de passe d'un utilisateur API doit être composé de 8 caractères alphanumériques.
 
-### Étape 2 : attribuer un quota à un utilisateur API
+### Étape 2 : Attribuer un quota à un utilisateur API
 
 La gestion du quota s'effectue depuis l'onglet `Utilisateurs API`{.action}. En face de l'utilisateur choisi, cliquez sur les `...`{.action} puis sur `Quota`{.action}.
 
@@ -66,7 +74,7 @@ Vous pourrez alors effectuer deux actions.
 > Exemple : un compte SMS dispose au total de 200 crédits. L'affectation de 150 crédits à un utilisateur API va défalquer 150 crédits du compte SMS qui ne disposera alors plus que de 50 crédits.
 >
 
-### Étape 3 : attribuer une limite à un utilisateur API
+### Étape 3 : Attribuer une limite à un utilisateur API
 
 La configuration d'une limite pour un utilisateur s'effectue depuis le même menu, en cliquant sur les `...`{.action} puis sur `Limite`{.action}.
 
@@ -83,7 +91,7 @@ Les paramètres suivants sont alors disponibles :
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-### Étape 4 : définir une restriction par IP pour la fonction http2sms
+### Étape 4 : Définir une restriction par IP pour la fonction http2sms
 
 Vous pouvez sécuriser la fonction http2sms en appliquant des restrictions par IP pour chaque utilisateur API.
 
@@ -95,9 +103,9 @@ Vous pouvez renseigner jusqu'à 5 adresses IP publiques différentes pour les en
 
 Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer des SMS depuis une URL](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
-### Étape 5 : spécifier une URL de Callback
+### Étape 5 : Spécifier une URL de Callback
 
-Pour un suivi personnalisé des accusés de réception SMS (Delivery reporting ou DLR), il est possible de spécifier une URL dite de Callback en cliquant sur les `...`{.action} à droite de l'utilisateur puis sur `Callback`{.action}.
+Pour un suivi personnalisé des accusés de réception SMS (Delivery reporting ou DLR), vous pouvez spécifier une URL dite de Callback en cliquant sur les `...`{.action} à droite de l'utilisateur puis sur `Callback`{.action}.
 
 ![sms-users](images/smsusers07-2021.png){.thumbnail}
 

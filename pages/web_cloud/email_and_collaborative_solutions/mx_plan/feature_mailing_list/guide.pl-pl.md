@@ -35,7 +35,17 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 ## Wymagania początkowe
 
 - Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](/links/web/hosting) obsługującego listy mailingowe.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-mx-plan -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `MX Plan`{.action} > Wybierz usługę MX Plan
+
+---
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## W praktyce
 
@@ -47,11 +57,7 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 Aby utworzyć listę mailingową:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. Kliknij `MX Plan`{.action}.
-1. Wybierz odpowiednią domenę.
-1. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
+Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -86,7 +92,7 @@ Uzupełnij formularz zgodnie z informacjami zawartymi w poniższej tabeli:
 
 ### Zarządzanie opcjami listy mailingowej
 
-Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail. 
+Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail.
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
 
@@ -251,6 +257,6 @@ Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki 
 > Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres `nazwa_twojej_LM-edit.bottom@mydomain.ovh`. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
 >
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 Dołącz do [grona naszych użytkowników](/links/community).

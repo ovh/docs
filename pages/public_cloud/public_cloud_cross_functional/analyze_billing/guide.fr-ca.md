@@ -1,7 +1,7 @@
 ---
 title: 'Informations concernant le mode de facturation Public Cloud'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-updated: 2025-04-28
+updated: 2026-03-13
 ---
 
 ## Objectif
@@ -20,7 +20,17 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 
 * Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 * Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* Être connecté à l'[espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 > [!success]
 > Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
@@ -163,39 +173,19 @@ Les snapshots de volumes additionnels sont facturés de la même manière que le
 
 Les snapshots d'instances comme les images (hors catalogue d'images fourni par OVH) sont facturés à un prix fixe au Go par mois, quel que soit l'instance d'origine ou le type d'image. Rendez-vous sur la [page tarifs](/links/public-cloud/prices) pour connaitre le tarif.
 
-### Object Storage
+#### Object Storage
 
-Deux éléments sont facturés pour ce qui concerne l'Object Storage :
+Object Storage est facturé en **paiement à l'usage** en fonction du volume moyen stocké par heure dans chaque classe de stockage (Gio-heures), avec une facturation en fin de mois. Le stockage est le principal élément de facturation ; le trafic entrant, le trafic interne OVHcloud, les appels API et le trafic sortant public sont inclus sans frais supplémentaires.
 
-* le stockage des objets en lui-même, c'est à dire le volume en Go réellement consommé
-* le trafic sortant, c'est à dire la quantité de données sortantes du service comprise dans le corps des requêtes (le body HTTP)
-
-> [!primary]
->
-> Le trafic sortant entre le service de stockage d'objet et les instances est
-> facturé de la même manière que si la destination était Internet.
->
-
-> [!alert]
->
-> La consultation des objets depuis votre espace client OVHcloud est considérée, de
-> la même manière, comme du trafic sortant.
->
-
-### Archives
-
-Trois éléments sont facturés pour ce qui concerne le stockage d'archives :
-
-* le stockage des archives en lui-même, c'est à dire le volume en Go réellement consommé
-* le trafic entrant, c'est à dire la quantité de données entrantes dans le service comprise dans le corps des requêtes (le body HTTP)
-* le trafic sortant, c'est à dire la quantité de données sortantes du service comprise dans le corps des requêtes (le body HTTP)
+Pour adapter les coûts à vos modèles d'accès aux données, nous proposons plusieurs classes Object Storage compatibles S3<sup>1</sup> (Standard, High Performance, Infrequent Access, Active Archive, Cold Archive). Pour en savoir plus sur ces classes (cas d'usage, performances, SLA), consultez le guide dédié : [Choisir la bonne classe Object Storage](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!primary]
 >
-> Le trafic sortant entre le service d'archivage et les instances est facturé
-> de la même manière que si la destination était internet.
+> Pour les classes Infrequent Access, Active Archive et Cold Archive, une durée minimale de stockage et des frais de restauration sont appliqués.
 >
 
 ## Aller plus loin
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

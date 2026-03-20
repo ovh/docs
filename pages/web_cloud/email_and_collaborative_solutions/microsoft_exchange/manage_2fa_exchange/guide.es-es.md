@@ -13,11 +13,21 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 ## Requisitos
 
 - Tener un plan [Exchange de OVHcloud](/links/web/emails).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber instalado una aplicación OTP en un teléfono inteligente o en una tableta con sistema operativo Android o iOS.
 
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+
 > [!primary]
->**Las aplicaciones móviles OTP**
+> **Las aplicaciones móviles OTP**
 >
 > Existen numerosas aplicaciones OTP. Dos de estas aplicaciones son gratuitas:
 > 
@@ -33,10 +43,6 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 
 Al momento de realizar la primera configuración, es necesario activar la doble autenticación en la plataforma antes de activarla en una cuenta.
 
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 1. Acceda a la pestaña `Seguridad`{.action} de la plataforma.
 1. Debajo de la opción "Doble autenticación", haga clic en `Activar`{.action}.
 1. Para terminar, desplácese hasta el final de la página y haga clic en `Guardar los cambios`{.action}.
@@ -63,12 +69,6 @@ Las próximas veces que se conecte, solo se le solicitará el código que gener�
 
 La doble autenticación de su cuenta puede desactivarse de tres maneras diferentes.
 
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
-1. En la pestaña `Cuentas de correo`{.action} de su plataforma Exchange, haga clic en `...`{.action} a la derecha de la cuenta en la que ya haya activado la doble autenticación.
-
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 
 Seleccione la opción que corresponde a sus necesidades según la siguiente tabla:
@@ -79,6 +79,6 @@ Seleccione la opción que corresponde a sus necesidades según la siguiente tabl
 | 2. | «Restablecer la doble autenticación» | Permite restablecer el código QR solicitado al conectarse por primera vez al correo electrónico basado en la web.<br> *Ejemplo: un usuario ha cambiado de teléfono inteligente y debe volver a configurar su aplicación OTP.* |
 | 3. | «Eliminar la doble autenticación» | Elimina por completo la doble autenticación de la cuenta. | 
 
-## Más información
+## Más información <a name="go-further"></a>
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

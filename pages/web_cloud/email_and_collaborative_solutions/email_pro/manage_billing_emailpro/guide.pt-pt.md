@@ -12,17 +12,22 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma [conta E-mail Pro](/links/web/email-pro).
+
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-email-pro -->
 
 ## Instruções
 
 ### Encomendar contas suplementares
-
-1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Clique no separador `Web Cloud`{.action}.
-1. Clique em `Email Pro`{.action}.
-1. Selecione a plataforma em causa.
 
 Aceda ao separador `Contas de e-mail`{.action} e clique no botão `Encomendar contas`{.action} no canto superior direito.
 
@@ -42,7 +47,7 @@ Aparecerá uma janela, a tabela permite-lhe gerir o período de renovação de c
 
 > [!primary]
 >
-> Para uma gestão simplificada, a faturação de cada conta Email Pro é automaticamente alinhada no início do mês. Para proceder a este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura da sua conta Email Pro numa base pro rata temporis.
+> Para uma gestão simplificada, a faturação de cada conta E-mail Pro é automaticamente alinhada no início do mês. Para proceder a este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura da sua conta E-mail Pro numa base pro rata temporis.
 >
 > **Exemplo**: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
 

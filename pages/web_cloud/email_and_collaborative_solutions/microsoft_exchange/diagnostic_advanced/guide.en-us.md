@@ -14,17 +14,22 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 - an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
 - credentials for the Exchange account to be checked
-- access to the [OVHcloud Control Panel](/links/manager)
 - being up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) for this service and the related domain name.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Exchange](/links/control-panel/web-exchange)
+- **Navigation path:** `Web Cloud`{.action} > `Exchange`{.action} > Select your platform
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Instructions
 
 ### Running the diagnostic
-
-1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Open the `Web Cloud`{.action} section.
-1. In the `MICROSOFT` section, click `Exchange`{.action}.
-1. Select the service concerned.
 
 ![Exchange Diagnostic](images/img_4450.png){.thumbnail}
 
@@ -99,7 +104,7 @@ Sub-domain   | _autodiscover._tcp
 Priority     | 0
 Weight       | 0
 Port         | 443
-Target       | ex.mail.ovh.ca)
+Target       | ex.mail.ovh.ca
 
 ### The test email could not be sent from this account 
 

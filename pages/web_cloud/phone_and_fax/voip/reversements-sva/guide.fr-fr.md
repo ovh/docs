@@ -7,7 +7,7 @@ updated: 2025-04-28
 ## Objectif
 
 Les numéros spéciaux SVA surtaxés génèrent des rémunérations à chaque appel passé par vos appelants.
-A l'inverse, un numéro vert entraîne un coût pour chaque appel reçu.
+À l'inverse, un numéro vert entraîne un coût pour chaque appel reçu.
 L'espace client OVHcloud vous permet de consulter et modifier votre palier tarifaire, de retrouver l'historique des coûts et reversements liés à vos numéros et, le cas échéant, de récupérer les reversements disponibles.
 
 **Découvrez comment gérer les reversements et les coûts de vos numéros spéciaux SVA depuis l'espace client OVHcloud.**
@@ -15,15 +15,21 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 ## Prérequis
 
 - Posséder au moins un [numéro spécial](/links/telecom/telephonie-numeros-speciaux-francais) dans votre compte OVHcloud.
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom` :
 
-![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre numéro Alias.
-1. Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
+Cliquez sur l'onglet `Services`{.action} puis sur le numéro alias concerné.
 
 > [!success]
 > Pour plus d'informations sur les groupes de téléphonie, consultez notre guide « [Gérer vos groupes de téléphonie](/pages/web_cloud/phone_and_fax/voip/regrouper_services_telephonie) ».
@@ -53,11 +59,7 @@ Validez ensuite votre choix en cliquant sur `Confirmer`{.action}.
 
 ### Reversements des numéros surtaxés
 
-Pour consulter vos reversements, effectuez ces actions :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `VoIP & Fax`{.action}.
-1. Cliquez sur le bouton `Actions`{.action} puis sur `Gérer mes reversements`{.action}.
+Pour consulter vos reversements, cliquez sur le bouton `Actions`{.action} puis sur `Gérer mes reversements`{.action}.
 
 ![reversements](images/gerer-reversements.png){.thumbnail}
 
@@ -75,7 +77,7 @@ Sélectionnez votre groupe de téléphonie dans le menu de gauche puis cliquez s
 
 ![couts SVA](images/couts01.png){.thumbnail}
 
-Sur cette page sont affichés les coûts SVA liés aux appels entrants du mois en cours sur les numéros verts de votre groupe de téléphonie.
+Cette page affiche les coûts SVA liés aux appels entrants du mois en cours sur les numéros verts de votre groupe de téléphonie.
 
 #### Historique des coûts SVA
 

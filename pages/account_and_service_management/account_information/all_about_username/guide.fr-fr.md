@@ -18,7 +18,17 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 ## Prérequis
 
 - Avoir créé [votre compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:account-profile -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Mon profil](/links/control-panel/account-profile)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mon compte`{.action} > `Éditer mon profil`{.action}
+
+---
+<!-- CP-NAV-END:account-profile -->
 
 > [!primary]
 > En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)».
@@ -55,11 +65,9 @@ Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gesti
 En cas de difficulté d'accès à votre adresse e-mail principale, une adresse e-mail de secours permet de conserver l'accès à votre compte et donc à la gestion de vos services.
 <br>Cette seconde adresse **doit être différente** de la première, notamment pour faciliter vos démarches en cas de récupération de mot de passe.
 
-Pour renseigner cette adresse e-mail de secours, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
+Pour renseigner cette adresse e-mail de secours, rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
-Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
-
-Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Vos informations de contact` pour trouver le champ `E-mail de secours`, en-dessous du champ dédié à l'adresse e-mail principale. 
+Faites défiler l'écran jusqu'à la rubrique `Vos informations de contact` pour trouver le champ `E-mail de secours`, en-dessous du champ dédié à l'adresse e-mail principale.
 
 > [!warning]
 > Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
@@ -80,11 +88,9 @@ Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser s
 
 #### Modifier mes informations personnelles
 
-Vous pouvez modifier les informations de votre compte depuis votre [espace client OVHcloud](/links/manager). Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
+Vous pouvez modifier les informations de votre compte. Rendez-vous sur votre [profil utilisateur](/links/control-panel/account-profile).
 
-Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
-
-Modifiez vos informations, puis cliquez sur le bouton `Valider`{.action} .
+Modifiez vos informations, puis cliquez sur le bouton `Enregistrer les modifications`{.action}.
 
 > [!warning]
 >

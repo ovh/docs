@@ -10,7 +10,7 @@ Retrouvez ici les questions les plus fréquemment posées sur la facturation et 
 
 ### Quel est mon compte de facturation ?
 
-La liste des contacts de vos services est disponible directement depuis votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+La liste des contacts de vos services est disponible sur la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 #### Trucs et astuces
 
@@ -18,9 +18,9 @@ Si vous souhaitez en savoir plus sur la gestion des contacts, vous pouvez consul
 
 ### Comment modifier mes coordonnées de facturation ?
 
-Vos coordonnées de facturation sont celles de votre identifiant client. Pour vos prochaines factures, il vous suffit donc de mettre à jour ces informations. Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
+Vos coordonnées de facturation sont celles de votre identifiant client. Pour vos prochaines factures, il vous suffit de mettre à jour ces informations sur la page [Mon profil](/links/control-panel/account-profile).
 
-Pour des raisons légales, il est impossible de modifier une facture déjà éditée. Toutefois, si votre demande est liée à une erreur de nos services, nous vous invitons à nous contacter en créant un ticket d'assistance.
+Pour des raisons légales, il est impossible de modifier une facture déjà éditée. Toutefois, si votre demande est liée à une erreur de nos services, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Quels sont les différents moyens de paiement disponibles pour régler mon service ?
 
@@ -40,13 +40,13 @@ Si vous ne renouvelez pas votre service avant cette date, il sera simplement sus
 
 #### Trucs et astuces
 
-Pour consulter l'état de vos services, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes offres & services`{.action}.
+Pour consulter l'état de vos services, ouvrez la page [Mes offres et services](/links/control-panel/billing-services).
 Identifiez-vous et renouvelez manuellement vos services sur la page <https://eu.ovh.com/fr/cgi-bin/order/renew.cgi>
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Comment activer le renouvellement automatique ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes offres & services`{.action}. Identifiez alors le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
 
 #### Trucs et astuces
 
@@ -55,7 +55,7 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment désactiver le renouvellement automatique ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes offres & services`{.action}. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), identifiez le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
 
 Pour résilier un service, consultez [Comment résilier un service](#cancelservice)
 
@@ -66,11 +66,11 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment ajouter un moyen de paiement ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, cliquez sur `Mes moyens de paiement`{.action}, puis sur `Ajouter un moyen de paiement`{.action}.
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), cliquez sur `Ajouter un moyen de paiement`{.action}.
 
 ### Comment mettre à jour mon moyen de paiement ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes moyens de paiement`{.action}. Vous pourrez y ajouter ou supprimer un moyen de paiement (Carte bancaire, Paypal ou prélèvement SEPA).
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pourrez ajouter ou supprimer un moyen de paiement (Carte bancaire, Paypal ou prélèvement SEPA).
 
 En cas de demande de prélèvement SEPA, vous recevrez dans les 24 à 48h sur l’adresse e-mail de votre compte OVHcloud, un e-mail comportant un lien de signature électronique de votre mandat de prélèvement. Attention, le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
 
@@ -78,11 +78,11 @@ Une fois réceptionné par nos services, si votre mandat est approuvé, vous pou
 
 #### Trucs et astuces
 
-Au moins un moyen de paiement doit être enregistré dans votre espace client, afin que vos services soient correctement renouvelés. Si vous n'avez plus aucune solution active, nous vous invitons à nous contacter en créant un ticket d'assistance.
+Au moins un moyen de paiement doit être enregistré dans votre espace client, afin que vos services soient correctement renouvelés. Si vous n'avez plus aucune solution active, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Comment supprimer un moyen de paiement ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes moyens de paiement`{.action}. Identifiez alors le moyen de paiement à supprimer, puis cliquez sur l'icône en forme de corbeille.
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), identifiez le moyen de paiement à supprimer, puis cliquez sur l'icône en forme de corbeille.
 
 #### Trucs et astuces
 
@@ -100,13 +100,13 @@ Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par
 
 ### Quelle est la date de mon prochain paiement ?
 
-Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres & services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
+Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres et services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
 
 À noter que les solutions bénéficiant du renouvellement automatique sont renouvelées le premier jour du mois. La fréquence peut cependant être différente selon vos services.
 
 #### Trucs et astuces
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes offres & services`{.action}. Vous pourrez y modifier la fréquence de renouvellement de vos solutions.
+Sur la page [Mes offres et services](/links/control-panel/billing-services), vous pourrez modifier la fréquence de renouvellement de vos solutions.
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Lequel de mes moyens de paiement sera débité ?
@@ -119,11 +119,11 @@ Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par
 
 ### Comment retrouver mes factures ?
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis cliquez sur `Mes factures`{.action}.
+Ouvrez la page [Mes factures](/links/control-panel/billing-invoices).
 
 #### Trucs et astuces
 
-Si une facture n'apparaît pas dans votre espace client, il est possible que vous ne soyez pas le contact de facturation du service concerné. Pour le connaître et éventuellement le modifier, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Si une facture n'apparaît pas dans votre espace client, il est possible que vous ne soyez pas le contact de facturation du service concerné. Pour le connaître et éventuellement le modifier, ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 ### Comment payer ma facture ?
 
@@ -144,7 +144,7 @@ Le tableau de bord de votre espace client OVHcloud affiche vos règlements en at
 
 #### Trucs et astuces
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes moyens de paiement`{.action}. Vous pourrez y enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
+Sur la page [Moyens de paiement](/links/control-panel/billing-payment-methods), vous pourrez enregistrer votre moyen de paiement. Vos factures seront ainsi automatiquement régularisées.
 
 ### À quoi correspondent mes paiements ?
 
@@ -160,7 +160,7 @@ Dans ce cas, nous vous conseillons de contacter votre banque afin d’être info
 
 ### Comment résilier un service ? <a name="cancelservice"></a>
 
-Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes offres & services`{.action}. Identifiez alors le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
+Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous sur la page [Mes offres et services](/links/control-panel/billing-services). Identifiez le service concerné, cliquez sur le bouton `...`{.action}, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
 
 La résiliation sera effective lorsque la période de validité ou d'engagement de votre service sera terminée. Vous pouvez effectuer cette demande ou l'annuler jusqu'à 24 heures avant la date d'échéance.
 
@@ -188,7 +188,7 @@ Le grand livre des comptes est fourni uniquement par le service comptabilité du
 
 OVHcloud vous donne cependant accès à l'ensemble de vos factures, via un fichier Excel (.csv).
 
-Pour le télécharger, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes factures`{.action}. Cliquez ensuite sur le bouton `Actions`{.action}, puis sélectionnez « Exporter en CSV ».
+Pour le télécharger, ouvrez la page [Mes factures](/links/control-panel/billing-invoices). Cliquez ensuite sur le bouton `Actions`{.action}, puis sélectionnez « Exporter en CSV ».
 
 ## Aller plus loin
 

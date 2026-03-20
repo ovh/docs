@@ -1,18 +1,28 @@
 ---
-title: 'Gérer les crédits SMS et activer la recharge automatique'
-excerpt: 'Apprenez comment gérer vos crédits SMS OVHcloud'
+title: "Gérer les crédits SMS et activer la recharge automatique"
+excerpt: "Découvrez comment gérer vos crédits SMS, activer la recharge automatique et transférer des crédits entre vos comptes SMS OVHcloud"
 updated: 2023-02-09
 ---
 
 ## Objectif
 
-Ce guide à pour objectif de vous expliquer ce que sont les crédit SMS, comment les recharger automatiquement et comment les transférer entre vos comptes SMS.
+Ce guide a pour objectif de vous expliquer ce que sont les crédits SMS, comment les recharger automatiquement et comment les transférer entre vos comptes SMS.
 
 ## Prérequis
 
 - Disposer d'un compte SMS OVHcloud.
 - Être connecté aux [API OVHcloud](/links/api) (uniquement pour les transferts de crédits).
-- Être connecté à l'[espace client OVHcloud](/links/manager-telecom), partie `Télécom`{.action} puis `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [SMS](/links/control-panel/telecom-sms)
+- **Pour accéder à vos services :** `Télécom`{.action} > `SMS`{.action} > Sélectionnez votre compte SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![espace client Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
@@ -46,10 +56,8 @@ Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer
 >
 > L'option de recharge automatique ne peut être activée que si les conditions suivantes sont remplies :
 >
-> - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud;
+> - un moyen de paiement de type Prélèvement SEPA est présent et validé sur votre compte OVHcloud ;
 > - votre service SMS doit avoir au moins 2 mois d'ancienneté.
-
-Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action}. Choisissez le compte SMS sur lequel activer la recharge automatique.
 
 Rendez-vous dans le menu `Options`{.action} (1) puis `Recharge automatique`{.action} (2).
 
@@ -61,20 +69,20 @@ Cliquez alors sur `Modifier`{.action} dans la rubrique « Gérer les options ».
 
 Enfin, remplissez les champs requis :
 
-* Seuil minimum (1) : lorsque ce seuil est atteint, la recharge automatique se déclenche.
-* Quantité à recharger (2) : définit la quantité de crédits à recharger sur votre compte SMS. Les choix possibles sont : 100, 200, 250, 500, 1000, 5000 et 10000.
-* Cliquez sur le bouton `Valider`{.action} pour appliquer le paramétrage.
+- Seuil minimum (1) : lorsque ce seuil est atteint, la recharge automatique se déclenche.
+- Quantité à recharger (2) : définit la quantité de crédits à recharger sur votre compte SMS. Les choix possibles sont : 100, 200, 250, 500, 1000, 5000 et 10000.
+- Cliquez sur le bouton `Valider`{.action} pour appliquer le paramétrage.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 
-### Tranférer des crédits SMS
+### Transférer des crédits SMS
 
 > [!primary]
 >
 > Le transfert de crédits n'est possible qu'entre les comptes SMS d'un seul et même compte client OVHcloud. Le transfert de crédits entre deux comptes clients OVHcloud est impossible.
 >
 
-Dans votre espace client OVHcloud, choisissez l'un de vos comptes SMS puis cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
+Cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
 
 ![transfert de crédits SMS](images/credit-transfer01.png){.thumbnail}
 

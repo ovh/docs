@@ -25,8 +25,8 @@ It is also possible to set up such configuration (one interface on private netwo
 ## Requirements
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An [Additional IP](/links/network/additional-ip)
+
 
 > [!warning]
 >
@@ -250,7 +250,6 @@ network:
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Explanations
 

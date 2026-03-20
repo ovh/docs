@@ -27,8 +27,18 @@ You can create a single backup of an instance or configure a schedule in order t
 ## Requirements
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api). (optional)
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
@@ -53,7 +63,7 @@ You can create a single backup of an instance or configure a schedule in order t
 > [!tabs]
 > Via the OVHcloud Control Panel
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
+>> Click on `Instances`{.action} in the left-hand menu.
 >>
 >> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
 >>

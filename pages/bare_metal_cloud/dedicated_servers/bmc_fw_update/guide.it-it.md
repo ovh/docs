@@ -1,7 +1,7 @@
 ---
 title: 'Come verificare la versione del firmware BMC su un server dedicato'
 excerpt: "Scopri come verificare la versione del firmware BMC su un server dedicato."
-updated: 2026-02-12
+updated: 2026-02-25
 ---
 
 ## Obiettivo
@@ -15,6 +15,10 @@ Un BMC (Baseboard Management Controller) è responsabile della gestione remota e
 - Un [server dedicato](/links/bare-metal/bare-metal) nel vostro account OVHcloud.
 - Diritti di amministratore (sudo).
 - Il tuo server dedicato deve essere connesso a Internet (solo se lo strumento `ipmitool` non è già installato).
+
+> [!primary]
+> A causa della configurazione specifica dei nostri servizi, l'aggiornamento del BMC viene effettuato esclusivamente tramite l'automazione OVHcloud, sotto la supervisione dei nostri tecnici. Nessun pacchetto né meccanismo di aggiornamento autonomo è disponibile.
+>
 
 ### Su un Server Linux
 

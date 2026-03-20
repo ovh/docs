@@ -18,7 +18,18 @@ Refer to our guides “[Everything you need to know about DNS servers](/pages/we
 
 - You are the holder of a [domain name](/links/web/domains) registered with OVHcloud
 - The [appropriate permissions to manage](/pages/account_and_service_management/account_information/managing_contacts) the domain name in your [OVHcloud Control Panel](/links/manager)
-- Access to the [OVHcloud Control Panel](/links/manager)
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Domain names](/links/control-panel/web-domains)
+- **Navigation path:** `Web Cloud`{.action} > `Domain names`{.action} > Select your domain name
+
+---
+<!-- CP-NAV-END:web-domains -->
+
 
 > [!primary]
 >
@@ -45,26 +56,20 @@ However, it is essential to consider the following points:
 
 ### 1 - Access OVHcloud DNS server management <a name="access-dns-servers"></a>
 
-To do this, click on the tabs below to view each of the **4** steps.
+To do this, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click the `Domain names`{.action} menu, then choose the domain name concerned.
+>> Click [this link](/links/control-panel/web-domains), then choose the domain name concerned.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 2** 
 >>
 >> Select the `DNS servers`{.action} tab once you have clicked on the domain concerned.
 >>
-> **Step 4** 
+> **Step 3** 
 >>
 >> The table that opens will contain the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 >>
@@ -231,4 +236,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our [community of users](/links/community).
+Join our [community of users](/links/community).

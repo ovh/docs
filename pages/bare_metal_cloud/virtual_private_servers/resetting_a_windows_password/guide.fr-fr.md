@@ -15,13 +15,12 @@ Si vous avez perdu votre mot de passe administrateur, vous pouvez le réinitiali
 ## Prérequis
 
 - Disposer d'un [VPS](/links/bare-metal/vps) ou d'une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
 ### Étape 1 : redémarrer le serveur en mode rescue
 
-Le mode rescue doit être activé pour que le mot de passe admininistrateur puisse être modifié.
+Le mode rescue doit être activé pour que le mot de passe administrateur puisse être modifié.
 
 Consultez le guide correspondant à votre service pour le redémarrer en mode rescue :
 
@@ -95,7 +94,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Tapez « 1 » et appuyez sur « Entrée ». (Utilisez d'abord l'option 2 s'il y a un « X » à côté de « Désactivé ».)
+Tapez « 1 » et appuyez sur « Entrée ». (Utilisez d'abord l'option 2 s'il y a un « X » à côté de « Disabled ».)
 
 ```text
 Select: [q] > 1

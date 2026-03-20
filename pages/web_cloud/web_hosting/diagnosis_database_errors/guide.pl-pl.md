@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z bazami danych"
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2024-09-26
+updated: 2026-02-11
 ---
 
 ## Wprowadzenie 
@@ -19,9 +19,19 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](/links/web/hosting) OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [hostingu www OVHcloud](/links/web/hosting).
 - Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](/links/web/databases)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Web hosting](/links/control-panel/web-hosting)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Hosting`{.action} > Wybierz hosting WWW
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## W praktyce
 
@@ -31,16 +41,16 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 #### Zweryfikuj zdarzenia w trakcie
 
-Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój Web Cloud Databases lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
+Sprawdź najpierw na stronie [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), czy Twój datacenter, klaster hostingu sieciowego, serwer Web Cloud Databases lub baza danych nie są dotknięte awarią infrastruktury OVHcloud.
 
 > [!primary]
 >
 > Aby odnaleźć te informacje, zaloguj się do [Panelu klienta OVHcloud](/links/manager), w części `Web Cloud`{.action} :
 >
-> - Aby znaleźć `Datacenter` Twojego hostingu, wraz z `Filer` (serwer plików), wybierz `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Informacje te można znaleźć w zakładce `Informacje ogólne`{.action}.
-> - Aby odnaleźć **cluster** serwerów, na których hostowany jest Twój hosting, kliknij zakładkę `FTP-SSH`{.action}. Informacja ta pojawi się w nazwie Twojego `Serwer FTP`.
+> - Aby znaleźć `Data center` dla Twojego hostingu sieciowego, wybierz `Hosting`{.action}, a następnie odpowiedni hosting sieciowy. Te informacje znajdziesz na karcie `Informacje ogólne`{.action}.
+> - Aby znaleźć **klaster** serwerów i **filer** (serwer plików) dla Twojego hostingu sieciowego, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer).
 > - Aby odnaleźć nazwę serwera **Web Cloud Databases**, kliknij przycisk `Web Cloud Databases`{.action}, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
->
+> - Aby znaleźć serwer, na którym znajduje się Twoja baza danych włączona lub zamówiona jako dodatek do Twojego [hostingu sieciowego](/links/web/hosting), zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/sql_find_server).
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>
 
@@ -188,9 +198,9 @@ Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action}
 
 Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](/links/community) lub [wyspecjalizowanym dostawcą](/links/partner). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
-> [!faq]
+> [!primary]
 >
-> Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?
+> **Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?**
 
 Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

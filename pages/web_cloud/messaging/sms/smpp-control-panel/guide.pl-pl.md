@@ -21,7 +21,17 @@ W Panelu klienta OVHcloud możesz odnaleźć dane do logowania SMPP, zmienić ha
 ## Wymagania początkowe
 
 - Posiadanie [konta SMS SMPP OVHcloud](https://www.ovhcloud.com/pl/sms/api-sms/)
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager) w części `Telecom`{.action} następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ## W praktyce
 
@@ -29,7 +39,7 @@ Wybierz konto SMPP. Nazwa serwera różni się od innych kont SMS OVHcloud. Zacz
 
 ![SMPP account](images/smpp-account.png){.thumbnail}
 
-## Dane identyfikacyjne
+### Dane identyfikacyjne
 
 Ramka `Informacje ogólne` pozwala na odnalezienie danych identyfikacyjnych niezbędnych do korzystania z usługi. Skopiuj zawartość przycisku z prawej strony każdego pola.
 

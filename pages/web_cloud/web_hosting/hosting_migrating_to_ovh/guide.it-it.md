@@ -21,7 +21,17 @@ Questa guida ti mostra le operazioni da effettuare per migrare in OVHcloud siti 
 - Avere accesso alla zona DNS (Domain Name System) attiva del dominio
 - Avere accesso ai file e al database del tuo sito Web presso il tuo attuale provider
 - Disporre delle credenziali (utente, password, server) dei tuoi indirizzi email correnti
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:web-hosting -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Web hosting](/links/control-panel/web-hosting)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Hosting`{.action} > Seleziona il tuo hosting web
+
+---
+<!-- CP-NAV-END:web-hosting -->
 
 ## Procedura
 

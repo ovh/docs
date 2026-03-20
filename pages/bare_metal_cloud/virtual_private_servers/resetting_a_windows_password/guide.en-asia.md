@@ -1,5 +1,5 @@
 ---
-title: Changing the admin password on a Windows server 
+title: Changing the admin password on a Windows server
 excerpt: Find out how to reset your Windows Administrator account password on a VPS or a Public Cloud instance using the OVHcloud rescue mode
 updated: 2023-10-12
 ---
@@ -15,7 +15,6 @@ If you have lost your Administrator password, you can reset it via the OVHcloud 
 ## Requirements
 
 - A [VPS](/links/bare-metal/vps) or a [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -35,7 +34,7 @@ Connect to your server via SSH. (Consult the [SSH introduction guide](/pages/bar
 Alternatively, you can open a server connection by using [KVM (VPS)](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) or the [VNC console (Public Cloud instance)](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#accessvnc).
 
 Type the following commands to mount the Windows file system:
- 
+
 ```bash
 ntfsfix /dev/sdb2
 ```

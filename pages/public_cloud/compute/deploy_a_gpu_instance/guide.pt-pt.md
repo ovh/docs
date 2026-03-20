@@ -24,6 +24,17 @@ As instâncias GPU são tecnicamente semelhantes às instâncias da gama 2017, m
 - Um projeto Public Cloud com acesso às regiões onde a maior parte das GPU estão disponíveis (GRA7, GRA9, GRA11 e BHS5).
 - [Uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) criada para criar uma instância GPU Linux.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Instruções
 
 Encontrará a informação necessária para criar uma instância GPU em Linux ou Windows abaixo.
@@ -38,7 +49,7 @@ Todas as imagens que disponibilizamos são compatíveis com uma instância GPU.
 > Se não se sentir à vontade para compilar manualmente um módulo do kernel, recomendamos que utilize uma distribuição oficialmente suportada pela Nvidia e para a qual a Nvidia forneça drivers *prontos a usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Depois de aceder à [Área de Cliente OVHcloud](/links/manager), clique no separador `Public Cloud`{.action}. Selecione o seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar instância`{.action} e escolha uma instância GPU compatível:
+Clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar instância`{.action} e escolha uma instância GPU compatível:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -108,7 +119,7 @@ Por isso, oferecemos imagens especiais, baseadas numa BIOS virtual UEFI e que pe
 > Oferecemos a possibilidade de instalar imagens especiais em alguns modelos selecionados (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Além disso, dependendo da região selecionada, estas imagens especiais podem não estar disponíveis.
 >
 
-Depois de aceder à [Área de Cliente OVHcloud](/links/manager), aceda ao seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar uma instância`{.action} e escolha uma instância GPU compatível:
+Clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar uma instância`{.action} e escolha uma instância GPU compatível:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

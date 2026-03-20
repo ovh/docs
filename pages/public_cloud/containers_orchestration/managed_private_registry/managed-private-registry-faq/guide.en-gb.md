@@ -1,6 +1,6 @@
 ---
 title: 'FAQ Managed Private Registry (MPR)'
-updated: 2026-01-20
+updated: 2026-02-25
 ---
 
 ## Objective
@@ -54,7 +54,7 @@ Find below the exact locations of the dependencies:
 
 ### What version of Harbor is offered?
 
-All new Private Registry services expose Harbor **2.12.2**. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
+All new Private Registry services expose Harbor **2.14.2**. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
 
 #### Tips and Tricks
 

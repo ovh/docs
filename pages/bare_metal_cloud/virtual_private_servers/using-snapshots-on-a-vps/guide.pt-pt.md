@@ -4,7 +4,7 @@ excerpt: "Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OV
 updated: 2025-10-17
 ---
 
-## Sumário
+## Objetivo
 
 Criar um snapshot é uma forma simples e rápida de garantir o funcionamento de um sistema antes de proceder a alterações que podem ter consequências indesejadas e imprevisíveis como, por exemplo, testar uma nova configuração ou software. Não constitui, no entanto, uma estratégia completa de backup do sistema.
 
@@ -12,21 +12,29 @@ Criar um snapshot é uma forma simples e rápida de garantir o funcionamento de 
 
 > [!primary]
 >
-Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](/links/bare-metal/vps-options) para obter uma comparação de preços e outras informações.
+> Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](/links/bare-metal/vps-options) para obter uma comparação de preços e outras informações.
 >
 
 ## Requisitos
 
-- acesso à [Área de Cliente OVHcloud](/links/manager)
 - um [serviço VPS](/links/bare-metal/vps) OVHcloud já instalado
 
 > [!warning]
 > Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
 >
 
-## Instruções
+<!-- CP-NAV-START:baremetal-vps -->
+---
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
+### Acesso à Área de Cliente OVHcloud
+
+- **Ligação direta:** [VPS management](/links/control-panel/baremetal-vps)
+- **Caminho de navegação:** `Bare Metal Cloud`{.action} > `Servidores Privados Virtuais`{.action} > Selecione o seu VPS
+
+---
+<!-- CP-NAV-END:baremetal-vps -->
+
+## Instruções
 
 ### Passo 1: Subscrever a opção snapshot
 
@@ -112,7 +120,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 
 As snapshots são imagens instantâneas do seu sistema em execução (“live snapshots”). Para garantir a disponibilidade do seu sistema aquando da criação da snapshot, o agente QEMU é utilizado para preparar o sistema de ficheiros ao processo.
 
-O *qemu-guest-agent* necessário não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por consequente, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
+O *qemu-guest-agent* necessário não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por conseguinte, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
 
 ##### **Distribuições Debian (Debian, Ubuntu)**
 
@@ -177,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Utilizar backups automáticos num alojamento VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

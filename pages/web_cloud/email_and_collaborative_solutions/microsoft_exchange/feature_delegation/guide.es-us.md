@@ -12,10 +12,20 @@ Los servicios Exchange permiten disfrutar de direcciones de correo profesionales
 
 ## Requisitos
 
-- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configuradas.
+- Tener una solución [Exchange](/links/web/emails-hosted-exchange) ya configurada.
 - Tener al menos dos cuentas de correo activas configuradas en una misma plataforma de correo de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Tener las claves de la cuenta de correo que disfrutará de los nuevos permisos delegados.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## Procedimiento
 
@@ -35,11 +45,6 @@ Antes de empezar, debe decidir qué permisos quiere delegar. Le recordamos que u
 Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya decidido qué permisos concretos quiere otorgar y a qué cuentas quiere hacerlo, puede continuar en el primer paso de esta guía.
 
 ### 1. Activar la delegación
-
-1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. Acceda al apartado `Web Cloud`{.action}.
-1. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
-1. Seleccione la plataforma correspondiente.
 
 A continuación, abra la pestaña `Cuentas de correo`{.action}.
 

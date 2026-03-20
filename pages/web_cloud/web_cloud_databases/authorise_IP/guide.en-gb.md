@@ -35,7 +35,16 @@ Need to change these permissions/restrictions?
 
 - A [Web Cloud Databases](/links/web/databases) solution
 - The IP address (or IP address range) to authorize on your solution
-- Access to the [OVHcloud Control Panel](/links/manager)
+<!-- CP-NAV-START:web-cloud-databases -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Cloud Databases](/links/control-panel/web-cloud-databases)
+- **Navigation path:** `Web Cloud`{.action} > `Web Cloud Databases`{.action} > Select your database service
+
+---
+<!-- CP-NAV-END:web-cloud-databases -->
 
 ## Instructions
 
@@ -45,28 +54,22 @@ Need to change these permissions/restrictions?
 >
 > As a reminder, if you have just activated your [Web Cloud Databases](/links/web/databases) solution, and you only want to use its databases for an [OVHcloud web hosting](/links/web/hosting) solution, the IP addresses of these solutions are already authorized by default.
 
-Click on the tabs below to view each of the **5** steps.
+Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `Web Cloud Databases`{.action} menu, then choose the Web Cloud Databases solution concerned.
+>> Click [this link](/links/control-panel/web-cloud-databases), then select the Web Cloud Databases solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that opens, click on the `Authorised IPs`{.action} tab.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the page that appears, click the `Add an IP address/mask`{.action} button above the table.
 >>
@@ -76,7 +79,7 @@ Click on the tabs below to view each of the **5** steps.
 >> >
 >> > If you want to modify an IP address or an IP address range that is already authorized, click the `...`{.action} button in the line corresponding to the IP address or IP address range you want to modify, then click `Edit the whitelist`{.action}.
 >>
-> **Step 5**
+> **Step 4**
 >>
 >> In the window that opens, you will need to enter the following information:
 >>
@@ -118,28 +121,22 @@ Effectively, this would allow all existing IPv4 addresses to have access to your
 
 When you activate your Web Cloud Databases solution, authorization to access OVHcloud web hosting plans is activated by default.
 
-If you would like to disable this authorization because you are not using a web hosting plan with your Web Cloud Databases solution, follow the **4** steps below:
+If you would like to disable this authorization because you are not using a web hosting plan with your Web Cloud Databases solution, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Step 2**
->>
->> Click on the `Web Cloud Databases`{.action} menu, then choose the Web Cloud Databases solution concerned.
+>> Click [this link](/links/control-panel/web-cloud-databases), then select the Web Cloud Databases solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
-> **Step 3**
+> **Step 2**
 >>
 >> On the page that pops up, click on the `Authorised IPs`{.action} tab.
 >>
 >> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
-> **Step 4**
+> **Step 3**
 >>
 >> On the page that appears, untick the box `Authorise OVHcloud web hosting plans to access the database`{.action}.
 >>

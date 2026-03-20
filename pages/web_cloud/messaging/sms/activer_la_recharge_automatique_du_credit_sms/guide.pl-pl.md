@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie zasileniami SMS i aktywowanie automatycznego doładowania
-excerpt: Dowiedz się, jak zarządzać zasileniami SMS OVHcloud
+excerpt: Dowiedz się, jak zarządzać zasileniami SMS, aktywować automatyczne doładowanie i przenosić zasilenia między kontami SMS OVHcloud
 updated: 2023-02-09
 ---
 
@@ -16,7 +16,17 @@ Z tego przewodnika dowiesz się, czym są zasilenia SMS, jak je automatycznie do
 
 - Posiadanie aktywnego konta SMS OVHcloud
 - Zalogowanie do [API OVHcloud](/links/api) (tylko na potrzeby przenoszenia zasileń)
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+
+<!-- CP-NAV-START:telecom-sms -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [SMS](/links/control-panel/telecom-sms)
+- **Ścieżka nawigacji:** `Telecom`{.action} > `SMS`{.action} > Wybierz konto SMS
+
+---
+<!-- CP-NAV-END:telecom-sms -->
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -53,8 +63,6 @@ Aby nigdy nie zabrakło Ci zasileń na koncie, możesz aktywować automatyczne d
 > - na Twoim koncie OVHcloud dostępny jest sposób płatności SEPA.
 > - Twoja usługa SMS musi mieć przynajmniej 2 miesięcy stażu pracy.
 
-Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do karty `Telefonia`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
-
 Przejdź do menu `Opcje`{.action} (1), a następnie `Automatyczne ładowanie`{.action} (2).
 
 ![zasilenie sms](images/smscredit01.png){.thumbnail}
@@ -78,7 +86,7 @@ Wypełnij wymagane pola:
 > Zasilenia można przenosić wyłącznie między kontami SMS należącymi do jednego identyfikatora OVHcloud. Przenoszenie zasileń między dwoma identyfikatorami OVHcloud jest niemożliwe.
 >
 
-W Panelu klienta OVHcloud wybierz jedno z Twoich kont SMS i kliknij polecenie `Przeniesienie zasileń`{.action} z zakładki `Strona główna`{.action}.
+Kliknij polecenie `Przeniesienie zasileń`{.action} z zakładki `Strona główna`{.action}.
 
 ![transfer zasileń SMS](images/credit-transfer01.png){.thumbnail}
 

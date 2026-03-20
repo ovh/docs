@@ -16,11 +16,18 @@ Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud]
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Wskazówki
-
-Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager), i kliknij menu `Public Cloud`{.action}.
 
 Zapoznaj się z nimi i zaakceptuj warunki umów, zaznaczając odpowiednie pole, następnie kliknij `Poznaj naszą ofertę Public Cloud`{.action}.
 

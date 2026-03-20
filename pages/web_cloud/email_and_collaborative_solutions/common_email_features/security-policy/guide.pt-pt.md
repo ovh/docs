@@ -13,7 +13,33 @@ Os serviços de e-mail da OVHcloud disponibilizam endereços de e-mail profissio
 ## Requisitos
 
 - Ter uma [solução de e-mail na OVHcloud](/links/web/emails).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
+
+<!-- CP-NAV-START:web-mx-plan -->
+<!-- CP-NAV-START:web-email-pro -->
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acesso à Área de Cliente OVHcloud
+
+**MX Plan:**
+
+- **Ligação direta:** [MX Plan](/links/control-panel/web-mx-plan)
+- **Caminho de navegação:** `Web Cloud`{.action} > `MX Plan`{.action} > Selecione o seu serviço MX Plan
+
+**E-mail Pro:**
+
+- **Ligação direta:** [E-mail Pro](/links/control-panel/web-email-pro)
+- **Caminho de navegação:** `Web Cloud`{.action} > `E-mail Pro`{.action} > Selecione a sua plataforma
+
+**Exchange:**
+
+- **Ligação direta:** [Exchange](/links/control-panel/web-exchange)
+- **Caminho de navegação:** `Web Cloud`{.action} > `Exchange`{.action} > Selecione a sua plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
+<!-- CP-NAV-END:web-email-pro -->
+<!-- CP-NAV-END:web-mx-plan -->
 
 ## Instruções
 
@@ -24,11 +50,11 @@ A gestão da política de segurança do seu serviço de e-mail pode interagir co
 - reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange));
 - definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange)).
 
-Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente OVHcloud](/links/manager) e certifique-se de que está na secção `Web Cloud`{.action}. 
+Para aceder à política de segurança do seu serviço de e-mail, siga as indicações abaixo.
 
 |MX Plan e E-mail Pro|Exchange|
 |---|---|
-|Clique em `MX Plan`{.action} ou `Email Pro`{.action}, e selecione o serviço em causa. Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|Clique em `Microsoft`{.action}, depois em `Exchange`{.action}, e selecione o serviço em causa. Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|
+|Clique no separador `Mais` e selecione `Gerir a política de segurança`{.action}.|Clique em `Segurança`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 > [!primary]

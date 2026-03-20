@@ -26,7 +26,18 @@ Seit April 2025 haben die Teams von OVHcloud eine neue Navigation in Ihrem Kunde
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Ein aktives OVHcloud Konto
+
+<!-- CP-NAV-START:account-dashboard -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [Mein Account](/links/control-panel/account-dashboard)
+- **Navigationspfad:** Klicken Sie oben rechts auf Ihren Namen > `Mein Account`{.action}
+
+---
+<!-- CP-NAV-END:account-dashboard -->
 
 ## In der praktischen Anwendung
 

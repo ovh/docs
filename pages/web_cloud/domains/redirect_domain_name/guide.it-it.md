@@ -13,8 +13,18 @@ Il reindirizzamento di un nome di dominio consiste nel reindirizzarlo verso una 
 ## Prerequisiti
 
 - Disporre di [un nome di dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere connesso al tuo hosting Web (per un reindirizzamento tramite un file [.htaccess](#htaccess_rewrite))
+
+<!-- CP-NAV-START:web-domains -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Domini](/links/control-panel/web-domains)
+- **Percorso di navigazione:** `Web Cloud`{.action} > `Domini`{.action} > Seleziona il tuo nome di dominio
+
+---
+<!-- CP-NAV-END:web-domains -->
 
 ## Procedura
 
@@ -79,7 +89,7 @@ Questa opzione permette, dopo l'inserimento del nome di dominio reindirizzato, d
 > Clicca sulle schede qui sotto per visualizzare ognuno dei 5 step successivi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Nella finestra, il tuo nome di dominio da reindirizzare appare già. Inserisci il form **solo** se vuoi reindirizzare un *sottodominio*.
 >>
@@ -89,7 +99,7 @@ Questa opzione permette, dopo l'inserimento del nome di dominio reindirizzato, d
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
@@ -97,7 +107,7 @@ Questa opzione permette, dopo l'inserimento del nome di dominio reindirizzato, d
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Seleziona `Con reindirizzamento visibile`{.action} e scegli tra le due opzioni indicate.
 >>
@@ -105,7 +115,7 @@ Questa opzione permette, dopo l'inserimento del nome di dominio reindirizzato, d
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Seleziona `Permanente (301)`{.action} tra le due opzioni indicate e inserisci il nome di dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
@@ -113,7 +123,7 @@ Questa opzione permette, dopo l'inserimento del nome di dominio reindirizzato, d
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 5.
 >>
-> **Step 5**
+> **Passaggio 5**
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>
@@ -146,7 +156,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 > Clicca sulle schede qui sotto per visualizzare ognuno dei 5 step successivi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Nella finestra, il tuo nome di dominio da reindirizzare appare già. Inserisci il form **solo** se vuoi reindirizzare un *sottodominio*.
 >>
@@ -156,7 +166,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
@@ -164,7 +174,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Seleziona `Con reindirizzamento visibile`{.action} e scegli tra le due opzioni indicate.
 >>
@@ -172,7 +182,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Seleziona `Temporaneo (302)`{.action} tra le due opzioni indicate e inserisci il nome di dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
@@ -180,7 +190,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 5.
 >>
-> **Step 5**
+> **Passaggio 5**
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>
@@ -221,7 +231,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Nella finestra, il tuo nome di dominio da reindirizzare appare già. Inserisci il form **solo** se vuoi reindirizzare un *sottodominio*.
 >>
@@ -231,7 +241,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
@@ -239,7 +249,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
 >> Seleziona `Con un reindirizzamento invisibile`{.action} tra le due opzioni indicate.
 >>
@@ -247,7 +257,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
-> **Step 4**
+> **Passaggio 4**
 >>
 >> Seleziona `Temporary (iframe)`{.action} e inserisci il nome di dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
@@ -261,7 +271,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 5.
 >>
-> **Step 5**
+> **Passaggio 5**
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>

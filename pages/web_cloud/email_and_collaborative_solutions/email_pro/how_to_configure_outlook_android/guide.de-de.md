@@ -31,15 +31,26 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 - Outlook-App auf Ihrem mobilen Gerät [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=de).
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
+<!-- CP-NAV-START:web-email-pro -->
+---
+
+### Zugriff auf das OVHcloud Kundencenter
+
+- **Direkter Link:** [E-Mail Pro](/links/control-panel/web-email-pro)
+- **Navigationspfad:** `Web Cloud`{.action} > `E-Mail Pro`{.action} > Wählen Sie Ihre Plattform aus
+
+---
+<!-- CP-NAV-END:web-email-pro -->
+
 ## In der praktischen Anwendung
 
-### Konto hinzufügen <a name="add-account"></a>
+### Konto hinzufügen <a name=”add-account”></a>
 
 > [!warning]
 >
-> In unseren Beispielen verwenden wir den Servernamen: pro?.mail.ovh.net. Ersetzen Sie “?“ durch die Zahl des Servers Ihres E-Mail Pro Dienstes.
+> In unseren Beispielen verwenden wir den Servernamen: pro?.mail.ovh.net. Ersetzen Sie “?” durch die Zahl des Servers Ihres E-Mail Pro Dienstes.
 >
-> Diese Zahl finden Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in der Rubrik `Web Cloud`{.action} und `E-Mail Pro`{.action}. Der Servername wird im Feld **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
+> Klicken Sie auf [diesen Link](/links/control-panel/web-email-pro), um zum Bereich `E-Mail Pro`{.action} zu gelangen. Der Servername wird im Feld **Verbindung** im Tab `Allgemeine Informationen`{.action} angezeigt.
 
 - **Wenn die Anwendung zum ersten Mal gestartet wird**: Ein Konfigurationsassistent wird angezeigt. Tippen Sie auf `Account hinzufügen`{.action}.
 

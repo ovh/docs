@@ -10,15 +10,15 @@ updated: 2022-05-04
 À la différence des modèles de téléphones historiques fonctionnant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
 Pour fonctionner correctement, à l'instar de votre ordinateur, un téléphone OVHcloud a donc besoin :
 
-- d'être alimenté électriquement;
+- d'être alimenté électriquement ;
 - d'être raccordé à votre réseau local et de communiquer sur Internet.
 
 Les causes d'un dysfonctionnement d'un téléphone VoIP sont variées :
 
-- un défaut d'alimentation électrique;
+- un défaut d'alimentation électrique ;
 - une problématique réseau telle que :
-    - une connectivité limitée ou inexistante;
-    - un défaut de distribution d'adresses IP (DHCP) sur votre réseau local;
+    - une connectivité limitée ou inexistante ;
+    - un défaut de distribution d'adresses IP (DHCP) sur votre réseau local ;
 - un défaut temporaire de configuration du téléphone.
  
 **Découvrez comment effectuer des vérifications de base sur votre réseau local pour favoriser le fonctionnement de la téléphonie VoIP OVHcloud.**
@@ -28,6 +28,17 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont variées :
 - Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie-voip).
 - Disposer d'un [téléphone fourni par OVHcloud](/links/telecom/telephonie-comparatif-telephones) et l'avoir installé.
 
+<!-- CP-NAV-START:telecom-voip-fax -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
+- **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
+
+---
+<!-- CP-NAV-END:telecom-voip-fax -->
+
 ## En pratique
 
 > [!warning]
@@ -36,7 +47,7 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont variées :
 > En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](/links/partner) ou à vous faire aider par la communauté des utilisateurs OVHcloud. Pour plus d'informations, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide
 >
 
-Ce tutoriel vous détaille les causes principales, liées au réseau local, d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
+Ce tutoriel détaille les causes principales, liées au réseau local, d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
 Nous vous conseillons donc de **suivre l'ordre des étapes de vérification** ci-dessous afin de dépanner votre téléphone.<br>
 Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce tutoriel, il n'est pas indispensable d'en poursuivre la lecture.
  
@@ -58,8 +69,8 @@ Si votre téléphone affiche en continu un message inhabituel à l'écran, tel q
 
 Il convient donc alors de vérifier, dans l'ordre :
 
-- le **raccordement au réseau local**; 
-- l'état de votre **connexion à Internet**;
+- le **raccordement au réseau local** ;
+- l'état de votre **connexion à Internet** ;
 - la distribution fonctionnelle des **adresses IP** sur votre réseau local.
 
 > [!primary]
@@ -80,10 +91,10 @@ Il convient donc alors de vérifier, dans l'ordre :
 Comme indiqué précédemment, chaque téléphone VoIP doit être raccordé à votre réseau local.<br> 
 Vérifiez donc qu'un **câble réseau Ethernet RJ45** est bien branché :
 
-1. d'une part sur votre téléphone;
+1. d'une part sur votre téléphone ;
 2. d'autre part sur votre routeur / modem / Box Internet.
 
-Sur le téléphone, le port à raccorder est souvent nommé « **SW** » (pour *switch*) ou « **INT**» (pour *Internet*). Un symbole « *réseau* » est fréquemment gravé à côté du port concerné, comme dans l'image ci-dessous.
+Sur le téléphone, le port à raccorder est souvent nommé « **SW** » (pour *switch*) ou « **INT** » (pour *Internet*). Un symbole « *réseau* » est fréquemment gravé à côté du port concerné, comme dans l'image ci-dessous.
 
 ![port sur téléphone](images/phone-port.png){.thumbnail}
 

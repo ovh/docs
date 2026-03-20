@@ -39,7 +39,7 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 - Posiadanie podstawowej wiedzy na temat sieci i zarządzania nimi
 
 > [!warning]
-> Adresy Additional IP aktualnie niedostępne dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+> Adresy Additional IP są aktualnie niedostępne dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
 >
 
 ## W praktyce
@@ -48,7 +48,7 @@ Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemó
 
 > [!primary]
 >
-Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmodyfikować odpowiednią procedurę konfiguracji Twojego interfejsu sieciowego oraz nazw plików. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego.
+> Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmodyfikować odpowiednią procedurę konfiguracji Twojego interfejsu sieciowego oraz nazw plików. W przypadku trudności zalecamy zapoznanie się z dokumentacją dotyczącą systemu operacyjnego.
 >
 
 **Należy wziąć pod uwagę następującą terminologię, która zostanie użyta w przykładach kodu i instrukcjach zawartych w tym przewodniku:**
@@ -85,9 +85,9 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> Utworzenie tego pliku konfiguracyjnego zapobiega automatycznemu wprowadzaniu zmian w konfiguracji Twojej sieci.
 >>
->> **Etap 2: zmień plik konfiguracyjny sieci**
+>> **Etap 2: utwórz kopię zapasową**
 >>
->> Domyślnie plik konfiguracyjny znajduje się w ścieżce `etc/network/interfaces.d`.
+>> Domyślnie plik konfiguracyjny znajduje się w ścieżce `/etc/network/interfaces.d`.
 >>
 >> W naszym przykładzie nasz plik nosi nazwę `50-cloud-init`, dlatego wykonujemy kopię pliku `50-cloud-init`, używając następującego polecenia:
 >>
@@ -162,7 +162,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w celu zdefiniowania adresów Additional IP. W przypadku błędu można łatwo przywrócić modyfikacje.
 >>
->> **Etap 1: utworzenie pliku konfiguracji sieci**
+>> **Etap 1: utwórz plik konfiguracji sieci**
 >>
 >> W naszym przykładzie nasz plik nosi nazwę `51-cloud-init.yaml`:
 >>
@@ -170,7 +170,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> sudo touch /etc/netplan/51-cloud-init.yaml
 >> ```
 >>
->> **Etap 2: modyfikować plik konfiguracji**
+>> **Etap 2: zmodyfikuj plik konfiguracji**
 >>
 >> Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
 >>
@@ -229,7 +229,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> Zapisz i zamknij plik.
 >>
->> **Etap 3: zastosować nową konfigurację sieci**
+>> **Etap 3: zastosuj nową konfigurację sieci**
 >>
 >> Możesz przetestować konfigurację za pomocą polecenia:
 >>
@@ -250,7 +250,7 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> Dla każdego adresu Additional IP, który chcesz skonfigurować, utwórz osobny plik konfiguracyjny z następującymi parametrami: `ifcfg-NETWORK_INTERFACE:ID`. Gdzie `NETWORK_INTERFACE` reprezentuje interfejs fizyczny, a `ID` reprezentuje wirtualny interfejs sieciowy lub alias ethernetowy rozpoczynający się od wartości 0. Na przykład w przypadku interfejsu o nazwie `eth0` pierwszy alias to `eth0:0`, drugi alias to `eth0:1`, etc.
 >>
->> **Etap 1: zmień plik konfiguracyjny sieci**
+>> **Etap 1: określ interfejs sieciowy**
 >>
 >> Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
 >>
@@ -405,9 +405,9 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >>
 >> W panelu sterowania Plesk wybierz `Tools & Settings`{.action} na pasku bocznym po lewej stronie.
 >>
->> ![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+>> ![dostęp do zarządzania adresami IP](images/pleskip1.png){.thumbnail}
 >>
->> Kliknij przycisk `IP Addresses`{.action} w obszarze **Tools & Settings**.
+>> Kliknij `IP Addresses`{.action} w sekcji **Tools & Resources**.
 >>
 >> **Etap 2: dodawanie informacji o adresach Additional IP**
 >>
@@ -467,11 +467,11 @@ W poniższych przykładach będziemy używać edytora tekstu `nano`. W niektóry
 >> > Uwaga: jeśli wprowadzisz niepoprawne informacje, serwer nie będzie dostępny. Będziesz więc musiał wprowadzić poprawki za pośrednictwem KVM.
 >> >
 >>
->> **Etap 3: dodać adres Additional IP do zaawansowanych ustawień TCP/IP**
+>> **Etap 3: dodaj adres Additional IP do zaawansowanych ustawień TCP/IP**
 >>
 >> W nowym oknie kliknij `Add...`{.action} pod "IP addresses". Wpisz adres Additional IP i maskę podsieci (255.255.255.255).
 >>
->> ![Advance Configuration section](images/configure-additional-ip.png){.thumbnail}
+>> ![sekcja zaawansowanych ustawień TCP/IP](images/configure-additional-ip.png){.thumbnail}
 >>
 >> Potwierdź klikając `Add`{.action}.
 >>

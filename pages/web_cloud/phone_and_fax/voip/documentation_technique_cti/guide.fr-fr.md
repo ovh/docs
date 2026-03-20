@@ -19,24 +19,24 @@ flag: hidden
 
 ## Contexte
 
-Les outils CTI d'OVH permettent de recevoir des évenements en continue sur l'état des lignes et des files d'appels OVH.
+Les outils CTI d'OVHcloud permettent de recevoir des évenements en continue sur l'état des lignes et des files d'appels OVHcloud.
 
 ## Champ d'action
 
-Les évenements sont remontés pour le protocole *SIP* (sipCirpack) et les files d'appels OVH (easyHunting et cloudHunting). 
+Les évenements sont remontés pour le protocole *SIP* (sipCirpack) et les files d'appels OVHcloud (easyHunting et cloudHunting). 
 Cela fonctionne pour quelques postes MGCP excepté dans les cas suivants : 
 
 - Transferts d'appels
 - Appels en attente
 - Appels en absence
 
-## Pré-requis
+## Prérequis
 
 Cela nécessite d'effectuer en continue des requêtes (http) curl de long-polling du côté client. Aucune requête serveur n'est executée.
 
 ## Principe
 
-OVH fournit des évenements pour les lignes SIP/MGCP et files d'appels.
+OVHcloud fournit des évenements pour les lignes SIP/MGCP et files d'appels.
 
 **Pour une ligne :**
 
@@ -148,6 +148,6 @@ while (1)
 ## Aller plus loin
 
 - [Projet communautaire](/pages/web_cloud/phone_and_fax/voip/projet_communautaire_cti)
-- [Intégration CTI de la téléphonie OVH aux CRM et ERP](/pages/web_cloud/phone_and_fax/voip/cti_crm_erp_sugarcrm)
+- [Intégration CTI de la téléphonie OVHcloud aux CRM et ERP](/pages/web_cloud/phone_and_fax/voip/cti_crm_erp_sugarcrm)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

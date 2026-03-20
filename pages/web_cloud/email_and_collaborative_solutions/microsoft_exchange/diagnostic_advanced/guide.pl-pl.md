@@ -4,7 +4,6 @@ excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów 
 updated: 2025-04-28
 ---
 
-
 ## Wprowadzenie
 
 Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diagnostyka funkcji konta pozwala zmniejszyć liczbę przyczyn. Testy te będą również przydatne w przypadku prośby o wsparcie w przypadku usługi Exchange.
@@ -15,17 +14,22 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 - Posiadanie [rozwiązania Exchange OVHcloud](/links/web/emails-hosted-exchange)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) tej usługi i powiązanej domeny
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Link bezpośredni:** [Exchange](/links/control-panel/web-exchange)
+- **Ścieżka nawigacji:** `Web Cloud`{.action} > `Exchange`{.action} > Wybierz platformę
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 ## W praktyce
 
 ### Wykonaj diagnostykę
-
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-1. Przejdź do sekcji `Web Cloud`{.action}.
-1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
-1. Wybierz odpowiednią platformę.
 
 ![Diagnostyka Exchange](images/img_4450.png){.thumbnail}
 
@@ -90,7 +94,7 @@ Następujące serwery MX są ważne w zależności od korzystania z usługi Exch
 
 > [!warning]
 > W przewodnikach wykorzystujemy jako nazwę serwera: na przykład ex<b>?</b>.mail.ovh.net. Chcesz zastąpić "?" przez numer odpowiadający serwerowi usługi Exchange.<br>
-> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 > [!primary]

@@ -28,7 +28,6 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
@@ -39,6 +38,17 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 > [!warning]
 > Si vous souhaitez effectuer un changement de contacts pour vos services de téléphonie OVHcloud, veuillez suivre [notre guide dédié](/pages/web_cloud/phone_and_fax/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
 
+<!-- CP-NAV-START:account-contacts -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Gestion des contacts](/links/control-panel/account-contacts)
+- **Pour y accéder :** Cliquez sur votre nom en haut à droite > `Mes contacts`{.action}
+
+---
+<!-- CP-NAV-END:account-contacts -->
+
 ## En pratique
 
 > [!primary]
@@ -47,7 +57,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Ouvrez la page [Gestion des contacts](/links/control-panel/account-contacts).
 
 ![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
@@ -88,7 +98,7 @@ Vous pouvez uniquement désigner un autre contact facturation pour vous remplace
 
 ### Valider, refuser ou suivre un changement de contact <a name="validation"></a>
 
-Pour suivre et gérer les demandes en cours, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}. Cliquez ensuite sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
+Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
 
 ![Contact management](images/managing_contacts_05.png){.thumbnail}
 

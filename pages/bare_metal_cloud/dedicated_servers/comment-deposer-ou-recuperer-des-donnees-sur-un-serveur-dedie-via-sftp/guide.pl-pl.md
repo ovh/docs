@@ -36,6 +36,17 @@ Istnieją różne opcje transferu plików między urządzeniem lokalnym a hostem
 - Klient FTP obsługujący połączenia SFTP (na przykład [FileZilla](https://filezilla-project.org/)) zainstalowany na Twojej lokalnej stacji roboczej
 - Dostęp administratora przez SSH do serwera
 
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Dostęp do Panelu klienta OVHcloud
+
+- **Bezpośredni link:** [Serwery dedykowane](/links/control-panel/baremetal-dedicated-servers)
+- **Ścieżka nawigacji:** `Bare Metal Cloud`{.action} > `Serwery dedykowane`{.action} > Wybierz swój serwer
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
+
 ## W praktyce
 
 Będziesz potrzebował adresu IP Twojego serwera, który odnajdziesz w [Panelu klienta OVHcloud](/links/manager), oraz nazwy konta użytkownika, którego będziesz używał do logowania SSH. Zapoznaj się z naszymi przewodnikami "Pierwsze kroki", jeśli chcesz otrzymać więcej informacji:

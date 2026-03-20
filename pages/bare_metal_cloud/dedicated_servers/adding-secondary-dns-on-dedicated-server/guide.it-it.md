@@ -18,7 +18,17 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal)
 - Disporre di un [dominio](/links/web/domains) di gestione amministrativa o tecnica
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+<!-- CP-NAV-START:baremetal-dedicated-servers -->
+---
+
+### Accesso allo Spazio Cliente OVHcloud
+
+- **Link diretto:** [Server dedicati](/links/control-panel/baremetal-dedicated-servers)
+- **Percorso di navigazione:** `Bare Metal Cloud`{.action} > `Server dedicati`{.action} > Seleziona il tuo server
+
+---
+<!-- CP-NAV-END:baremetal-dedicated-servers -->
 
 > [!warning]
 >
@@ -30,8 +40,6 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 ## Procedura
 
 ### Aggiungi un dominio <a name="addingdomain"></a>
-
-Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server da `Server dedicati`{.action}.
 
 Clicca sulla scheda `DNS secondaria`{.action} e poi sul pulsante `Aggiungi un dominio`{.action}.
 
