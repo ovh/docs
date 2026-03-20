@@ -28,7 +28,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ### Step 1 - Going to the AI Training menu
 
-Go to the `AI Training`{.action} section, located under `AI & Machine Learning`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Training`{.action} section, located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 

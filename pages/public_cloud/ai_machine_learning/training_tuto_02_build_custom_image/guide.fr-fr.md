@@ -15,17 +15,6 @@ This tutorial covers the process of **building your own job image** for specific
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
 - Knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Quick overview
 
 AI Training allows you to train your models easily, with just a few clicks or commands. This solution runs your training job on compute resources such as CPUs or GPUs. As soon as your training job is finished, the billing will be stopped immediately. Thus, you will save time and increase the productivity of your team, while respecting the integrity of your sensitive data (GDPR).

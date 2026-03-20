@@ -42,7 +42,7 @@ To follow this guide, ensure you meet the following requirements:
 
 ### Create an S3 compatible bucket
 
-To create your first **S3 compatible Object Storage bucket**, click the `Object Storage`{.action} button in the left-hand side bar, in the `Storage`{.action} section:
+To create your first **S3 compatible Object Storage bucket**, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click the `Object Storage`{.action} button in the left-hand side bar, in the `Storage`{.action} section:
 
 ![S3 compatible bucket creation](images/s3-bucket-object-storage.png)
 

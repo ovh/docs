@@ -55,7 +55,7 @@ Here is how to add your SSH key to your AI Solution if you are using the [OVHclo
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
->> Go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
 >>
 >> From there, click on the `+ Create a notebook`{.action} or `+ Launch a job`{.action} button to configure and create your AI Solution.
 >>

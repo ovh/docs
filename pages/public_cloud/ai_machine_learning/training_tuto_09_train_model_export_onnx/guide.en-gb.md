@@ -41,7 +41,7 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-Select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 You can create the bucket that will store your ONNX model at the end of the training. Select the container *type* and the *region* that match your needs.
 
@@ -346,7 +346,7 @@ You can launch the training job using the UI or the CLI.
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-Select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
 
 You can create the job that will train your model and export it to ONNX model. Select the *region* and add your *custom docker image* (`<shared-registry-address>/train-cnn-model-export-onnx:latest`).
 

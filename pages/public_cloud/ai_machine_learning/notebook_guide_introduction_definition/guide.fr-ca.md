@@ -54,7 +54,7 @@ Each method offers its distinct advantages, depending on your expertise and pref
 >>
 >> However, if this is the first time you are using the AI Products on your Public Cloud project, you will need to complete an authorization process before using the AI API, ovhai CLI, or Python SDK. To do so, please follow these steps:
 >>
->> Click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> From there, click the `Create a Notebook`{.action} button. The authorization process will take place silently in the background.
 >>
@@ -71,7 +71,7 @@ To create an AI Notebook, follow these steps:
 >>
 >> The manager is the more intuitive way to launch an AI Notebook. To get started, follow these steps:
 >>
->> Click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then click on the `AI & Machine Learning`{.action} category in the left-hand vertical menu to access the `AI Notebooks`{.action} section.
 >>
 >> Once there, you can create your first Notebook by clicking the `Create a Notebook`{.action} button.
 >>

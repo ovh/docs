@@ -48,7 +48,7 @@ This is why it can be interesting to add and manage other registries. We can eit
 
 ### Manage existing registries through UI
 
-Go to the `AI Training` section, which is located under `AI & Machine Learning`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Training` section, which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
 
@@ -139,7 +139,7 @@ During this step, you will be asked your user's credentials (user ID and passwor
 > [!tabs]
 > Using the Control Panel (UI)
 >>
->> To add your private registry via UI, go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> To add your private registry via UI, click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
 >> ![image](images/training_menu.png){.thumbnail}
 >> 
@@ -228,7 +228,7 @@ During this step, you will be asked your Docker credentials.
 
 ##### Using UI
 
-Go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 
 ![image](images/training_menu.png){.thumbnail}
 
@@ -282,7 +282,7 @@ You will be asked your GitHub credentials.
 > [!tabs]
 > Using the Control Panel (UI)
 >>
->> Go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
+>> Click [this link](/links/control-panel/publiccloud-projects) to access your Public Cloud project, then go to the `AI Dashboard` section which is located under `AI & Machine Learning`.
 >> 
 >> ![image](images/training_menu.png){.thumbnail}
 >> 
