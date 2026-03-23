@@ -1,7 +1,7 @@
 ---
 title: "Ajouter un enregistrement DNS de type A pour un nom de domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine"
-updated: 2026-03-20
+updated: 2026-03-23
 ---
 
 <style>
@@ -57,7 +57,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
@@ -96,7 +96,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Zones DNS](/links/control-panel/web-dns-zone), puis choisissez le nom de domaine concerné.
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>

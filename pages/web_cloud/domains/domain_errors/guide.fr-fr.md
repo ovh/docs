@@ -1,6 +1,6 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -142,7 +142,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 /// details | Code de transfert erroné
 
-Lorsque vous transférez votre nom de domaine vers OVHcloud, vous devez saisir un code de transfert (**authInfo** / **Auth0** / **AuthCode**) lors de la commande. Si ce code est incorrect, l'opération est suspendue mais vous pouvez la relancer en renseignant le bon code.
+Lorsque vous transférez votre nom de domaine vers OVHcloud, vous devez saisir un code de transfert (**authInfo** / **AuthCode**) lors de la commande. Si ce code est incorrect, l'opération est suspendue. Vous pouvez la relancer avec le bon code.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -163,7 +163,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> La fenêtre ci-dessous apparaît. Renseignez le code de transfert (**authInfo** / **Auth0** / **AuthCode**) et relancez l'opération.
+>> La fenêtre ci-dessous apparaît. Renseignez le code de transfert (**authInfo** / **AuthCode**) et relancez l'opération.
 >>
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
@@ -256,7 +256,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
 >>
-> > **Étape 3**
+> **Étape 3**
 >>
 >> Cette erreur ne permet pas d'action de votre part depuis l'espace client OVHcloud.
 >>

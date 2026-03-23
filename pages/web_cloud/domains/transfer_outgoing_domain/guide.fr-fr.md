@@ -69,7 +69,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
 >>
@@ -118,7 +118,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
+>> Accédez à la page [Noms de domaine](/links/control-panel/web-domains), puis choisissez le nom de domaine concerné.
 >>
 >> ![Noms de domaine](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns.png){.thumbnail}
 >>
