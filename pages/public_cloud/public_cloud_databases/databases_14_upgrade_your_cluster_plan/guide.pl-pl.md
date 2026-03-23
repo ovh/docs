@@ -15,7 +15,7 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

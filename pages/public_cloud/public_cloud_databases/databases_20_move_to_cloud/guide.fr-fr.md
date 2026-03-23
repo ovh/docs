@@ -11,7 +11,7 @@ Ce guide vous fournit des instructions étape par étape pour migrer vos bases d
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Accès à l'[API OVHcloud](/links/api)
+- Accès à l'[API OVHcloud](/links/api) (facultatif)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

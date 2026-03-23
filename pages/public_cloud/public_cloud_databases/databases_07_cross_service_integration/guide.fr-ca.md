@@ -22,7 +22,7 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- Access to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

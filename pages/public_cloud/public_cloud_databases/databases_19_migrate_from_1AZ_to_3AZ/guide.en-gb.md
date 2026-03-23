@@ -13,7 +13,7 @@ OVHcloud Public Cloud Databases can be deployed with different architectures to 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An existing database service deployed in a single availability zone (1-AZ)
 - A 3-AZ region activated within your Public Cloud project
-- Access to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

@@ -12,7 +12,7 @@ OVHcloud Public Cloud Databases offer different generations to meet varying need
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An existing Gen 2 database service deployed
-- Access to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---

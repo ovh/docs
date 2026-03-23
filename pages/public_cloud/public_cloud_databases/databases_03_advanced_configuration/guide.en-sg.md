@@ -21,7 +21,7 @@ Public cloud database engines are managed services, which means that they are no
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- Access to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api) (optional)
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
