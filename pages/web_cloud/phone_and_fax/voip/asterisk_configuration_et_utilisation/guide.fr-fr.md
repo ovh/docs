@@ -147,7 +147,7 @@ siptrunk.ovh.net:5060   N       003397232069    1785    Registered  Tue, 24 Mar 
 1 SIP registrations.
 ```
 
--   Vous pouvez vérifiez également dans le Manager :
+-   Vous pouvez vérifier également dans le Manager :
     -   Connectez-vous à votre espace client OVHcloud : <https://www.ovhtelecom.fr/espaceclient/>
     -   Cliquez sur le lien "**Accéder à l'ancienne interface**".
     -   Cliquez sur l'icône "**Téléphonie**".

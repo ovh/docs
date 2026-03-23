@@ -83,7 +83,7 @@ Cette opération consiste à effectuer une demande de numéro alias. Pour ce fai
 >
 > **Trucs et astuces**
 >
-> Vous avez la possibilité de commander jusqu'à 100 numéros pour 1€ HT/mois/numéro.
+> Vous pouvez commander jusqu'à 100 numéros pour 1€ HT/mois/numéro.
 
 ///
 
@@ -145,7 +145,7 @@ Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifi
 >
 > **Trucs et astuces**
 >
-> Si vous rencontrez une erreur lors de la consultation d'un enregistrement, n'hésitez pas à essayer de consulter celui-ci depuis un autre navigateur internet.
+> Si vous rencontrez une erreur lors de la consultation d'un enregistrement, n'hésitez pas à essayer de consulter celui-ci depuis un autre navigateur Internet.
 
 ///
 
@@ -164,7 +164,7 @@ Pour cela, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip
 
 ///
 
-/// details | Un message d'erreur apparait sur mon téléphone, que faire ?
+/// details | Un message d'erreur apparaît sur mon téléphone, que faire ?
 
 Pour identifier la cause de cette erreur, nous vous conseillons de réaliser un diagnostic de votre téléphone. Pour cela, [accédez à la section VoIP & Fax](/links/control-panel/telecom-voip-fax) de votre espace client OVHcloud, choisissez le groupe de facturation puis la ligne SIP concernée dans l'onglet `Services`{.action}. Cliquez sur l'onglet `Assistance`{.action} puis sur `Dépannage Plug & Phone`{.action}.
 

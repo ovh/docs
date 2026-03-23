@@ -85,7 +85,7 @@ Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut
 ![email2sms](images/send-sms-through-email1.png){.thumbnail}
 
 > [!primary]
->**Uniquement pour les comptes OVHcloud en France :**
+> **Uniquement pour les comptes OVHcloud en France :**
 >
 > Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez `senderForResponse=1` en tant qu'expéditeur.
 >
@@ -147,7 +147,7 @@ Il est possible de déclarer les différents éléments constituant le sujet de 
 
 Le(s) destinataire(s) du message peut/peuvent être géré(s) de plusieurs manières.
 
-- Soit comme vu précédemment, en le(s) écrivant au format international dans le sujet de l'email envoyé.
+- Soit comme vu précédemment, en le(s) écrivant au format international dans le sujet de l'e-mail envoyé.
 
 - Soit en ajoutant à l'e-mail, en tant que pièce jointe, un fichier texte (format txt) nommé "contact" qui contiendra le(s) numéro(s) de téléphone destinataire(s), au format international (exemple en France : +33xxxxxxxxx), à raison d'un numéro par ligne dans le fichier.
 
@@ -157,7 +157,7 @@ Une fois votre envoi effectué, vous recevrez par e-mail un rapport d'envoi. Le 
 
 ![email2sms](images/send-sms-through-email4.png){.thumbnail}
 
-Si vous avez rencontrez une erreur lors de l'envoi, cette dernière sera notifiée dans le rapport, comme dans l'exemple ci-dessous :
+Si vous avez rencontré une erreur lors de l'envoi, cette dernière sera notifiée dans le rapport, comme dans l'exemple ci-dessous :
 
 ![email2sms](images/send-sms-through-email5.png){.thumbnail}
 

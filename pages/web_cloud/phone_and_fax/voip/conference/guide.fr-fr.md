@@ -94,7 +94,7 @@ Dans la partie « Administration », définissez également vos paramètres.
 |Paramètres|Description|
 |---|---|
 |Rapport de la conférence|Permet de définir si vous souhaitez recevoir un rapport concernant l'activité de la conférence ; et si oui, l'adresse e-mail sur laquelle le recevoir.|
-|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Regénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
+|Suivi et contrôle de la conférence|Permet d'activer des liens pour suivre et contrôler la conférence. Pour les activer, cliquez sur `Générer les URL`{.action}. Un bouton à droite de chaque URL vous permet de la copier.<br><br> Si des URL sont déjà générées, vous avez la possibilité de :<br><br> - **Régénérer les URL** : permet de remplacer les URL existantes par d'autres ;<br> - **Supprimer les URL** : permet de désactiver le suivi et le contrôle de la conférence.|
 
 Cliquez enfin sur le bouton `Valider`{.action} pour confirmer les changements.
 

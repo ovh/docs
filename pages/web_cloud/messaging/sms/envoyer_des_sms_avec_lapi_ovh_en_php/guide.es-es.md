@@ -58,7 +58,7 @@ Una vez que el entorno esté listo y haya generado las claves, ya puede escribir
 
 ### 3. Utilizar un SDK para PHP
 
-Para simplificarle la tarea, hemos creado un SDK para PHP, que puede encontrar [aquí](https://github.com/ovh/php-ovh-sms).
+Para simplificarle la tarea, hemos creado un SDK para PHP, que puede encontrar en el [repositorio GitHub php-ovh-sms](https://github.com/ovh/php-ovh-sms).
 
 ### 4. Conectarse a la API
 
@@ -203,6 +203,6 @@ En la respuesta anterior se indica la cuenta de SMS (ServiceName) y el crédito 
 
 ## Más información
 
-En la consola de la API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) podrá descubrir otras llamadas que le permitirán integrar servicios de SMS, tales como permitir la respuesta a los SMS (solo para las cuentas de OVHcloud Francia), envío masivo con un archivo CSV, envío de publicidad, seguimiento de los acuses de recibo...
+En la [consola de la API](/links/console) podrá descubrir otras llamadas que le permitirán integrar servicios de SMS, tales como permitir la respuesta a los SMS (solo para las cuentas de OVHcloud Francia), envío masivo con un archivo CSV, envío de publicidad, seguimiento de los acuses de recibo...
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

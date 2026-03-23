@@ -19,8 +19,8 @@ Es posible enviar SMS directamente desde el área de cliente de OVHcloud.
 
 ### Acceso al área de cliente de OVHcloud
 
-- **Enlace directo:** [Gestión de SMS](/links/control-panel/telecom-sms)
-- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta de SMS
+- **Enlace directo:** [SMS](/links/control-panel/telecom-sms)
+- **Ruta de navegación:** `Telecom`{.action} > `SMS`{.action} > Seleccione su cuenta SMS
 
 ---
 <!-- CP-NAV-END:telecom-sms -->
@@ -36,13 +36,13 @@ En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} del a
 ### 1. Configurar el remitente y el destinatario
 
 > [!primary]
-> Para obtener más información sobre la creación y el uso de un remitente, consulte nuestro guía "[Todo sobre los remitentes SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
+> Para obtener más información sobre la creación y el uso de un remitente, consulte nuestra guía "[Todo sobre los remitentes SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_expediteurs_sms)".
 
 Una vez en la página de envío de los SMS, podrá configurar distintos parámetros para adaptar el envío de SMS a sus necesidades.
 
 ![configurar remitente y destinatario](images/sms-send-control-panel02E.png){.thumbnail}
 
-En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico. Para más información sobre cómo crear un remitente, consulte el apartado [3. Elegir el remitente de SMS](#3-elegir-el-remitente-del-sms) de esta guía.
+En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico.
 
 Introduzca a continuación el número del destinatario (2) en formato internacional (+346XXXXXXXX). También es posible enviar SMS a varios destinatarios. Puede hacerlo de dos formas diferentes:
 
@@ -70,7 +70,7 @@ Introduzca su mensaje en el área de texto (1). En la esquina inferior derecha p
 
 Las tablas que ofrecemos a continuación recogen los caracteres autorizados con codificación de 7 bits. Los caracteres de la tabla "**Extensiones**" cuentan por dos.
 
-La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (norma GMS 03.38).
+La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (norma GSM 03.38).
 
  Si utiliza caracteres que no figuran en estas tablas, la codificación pasará a Unicode y la longitud máxima del SMS se reducirá a 70 caracteres.
 
@@ -78,7 +78,7 @@ La longitud máxima de un SMS es de 160 caracteres con codificación de 7 bits (
 
 **Opciones avanzadas**
 
-![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
+![opciones avanzadas de envío de SMS](images/sms-send-control-panel-advanced.png){.thumbnail}
 
 Desplegando estas opciones, puede realizar un envío de SMS en diferido (1). Por defecto, el envío será inmediato.
 

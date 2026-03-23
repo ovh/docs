@@ -6,7 +6,7 @@ updated: 2022-08-05
 
 ## Objectif
 
-Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importer une ou plusieurs listes de destinataires dans votre espace client OVHcloud.
+Pour envoyer une campagne de SMS à de multiples contacts, vous pouvez importer une ou plusieurs listes de destinataires dans votre espace client OVHcloud.
 
 **Découvrez comment créer une liste de destinataires SMS, via un tableur ou un éditeur de texte, et l'importer dans votre espace client OVHcloud.**
 
@@ -56,14 +56,14 @@ Une fois votre fichier sauvegardé au format .csv, si vous l'ouvrez avec un bloc
 
 Les points suivants sont indispensables pour que votre liste de destinataires soit prise en compte sur votre espace client OVHcloud :
 
-- Tous vos contacts devront être sur la même feuille de votre tableur dans une colonne number.
+- Tous vos contacts devront être sur la même feuille de votre tableur dans une colonne `number`.
 - Les caractères spéciaux comme les accents doivent être supprimés car ils ne seront pas acceptés lors de l’import du fichier .csv sur l'espace client.
 - Respectez le format international pour vos numéros (exemple pour un numéro français : +33612345678).
 - Enregistrez votre fichier au format .csv (séparateur : point-virgule).
 
 #### Créer votre liste via un éditeur de texte
 
-Une méthode alternative consiste à créer simplement un fichier .txt depuis un éditeur de texte ou ou bloc-notes.
+Une méthode alternative consiste à créer simplement un fichier .txt depuis un éditeur de texte ou bloc-notes.
 
 - Saisissez `number` en première ligne.
 - Renseignez vos numéros au format international (+33612345678) avec un seul numéro par ligne.
@@ -78,9 +78,9 @@ Cliquez sur l'onglet `Contacts`{.action} et sur `Créer une liste de contacts`{.
 
 ![recipients](images/sms-recipientlist-3b.png){.thumbnail}
 
-Vous avez la possibilité de créer jusqu’à 9 listes de contacts.
+Vous pouvez créer jusqu’à 9 listes de contacts.
 
-Il vous suffit pour cela de cliquer sur `Actions`{.action} puis de cliquer sur `Ajouter`{.action}.
+Cliquez sur `Actions`{.action} puis sur `Ajouter`{.action}.
 
 ![recipients](images/sms-recipientlist-5b.png){.thumbnail}
 
