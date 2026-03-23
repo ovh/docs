@@ -16,7 +16,6 @@ However, if you would like to know how to do the same with Terraform, but over a
 
 - **OVHcloud requirements**
     - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-    - Access to the [OVHcloud Control Panel](/links/manager)
     - A private vRack network that can be accessed from your Public Cloud project (if you don’t have one, please refer to our guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)).
     - An OpenStack user account in your Public Cloud project (if you don’t have one, please refer to the following guide: [Managing OpenStack users](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user/)).
 - **Terraform requirements**
@@ -282,7 +281,6 @@ Using MongoDB:		6.0.12
 Using Mongosh:		1.6.1
 
 For mongosh info see: https://docs.mongodb.com/mongodb-shell/
-
 
 To improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
 You can opt out by running the disableTelemetry() command.
