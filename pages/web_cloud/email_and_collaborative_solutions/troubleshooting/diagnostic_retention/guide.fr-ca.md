@@ -42,10 +42,6 @@ La récupération des éléments supprimés peut être réalisée depuis le webm
 
 Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : [Webmail](/links/web/email).
 
-> [!primary]
->
-> Pour les offres de type **Private Exchange**, le lien de connexion au webmail se situe dans le cadre **Connexion** de l'onglet `Information générales`{.action} sur votre plateforme.
-
 Une fois connecté, cliquez sur `Éléments supprimés`{.action} dans la colonne de gauche, puis sur `Récupérer les éléments supprimés`{.action} dans la partie supérieure de la colonne centrale.
 
 ![emails](images/3582.png){.thumbnail}

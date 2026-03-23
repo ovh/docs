@@ -42,10 +42,6 @@ Deleted items can be recovered from webmail (OWA) and the Outlook email software
 
 Log in to your email account via webmail (OWA): [Webmail](/links/web/email).
 
-> [!primary]
->
-> For a **Private Exchange** service, the link to log in to webmail can be found under **Connection** in the `General information`{.action} tab of your platform.
-
 Once connected, click `Deleted Items`{.action} in the left column, and then click `Recover deleted items`{.action} at the top of the middle column.
 
 ![emails](images/3582.png){.thumbnail}

@@ -12,7 +12,7 @@ With OVHcloud email solutions you can send and receive your emails using a devic
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting), or [**Hosted Exchange**](/links/web/emails-hosted-exchange))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting) or [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - login credentials for the email address you want to configure
 
 ## Instructions
@@ -22,6 +22,7 @@ This guide will give you a better understanding of the usual email account tasks
 > [!primary]
 >
 > After the first two steps, the instructions don't have to be considered in a particular order.
+>
 
 ### 1. Accessing OWA webmail
 
@@ -92,7 +93,7 @@ OWA provides several ways to organise your inbox. You can
 
 #### Creating a folder
 
-To create a new folder, right-click on the name of your email address in the folder tree and then choose `Create new folder`{.action}. You can create a subfolder in existing folders in the same way (`Create new subfolder`{.action}). 
+To create a new folder, right-click on the name of your email address in the folder tree and then choose `Create new folder`{.action}. You can create a subfolder in existing folders in the same way (`Create new subfolder`{.action}).
 
 ![useowa](images/use-owa-step10.png){.thumbnail}
 

@@ -42,10 +42,6 @@ La recuperación de los elementos eliminados puede realizarse desde el webmail (
 
 Conéctese a la dirección de correo electrónico correspondiente a través del webmail (OWA): [Webmail](/links/web/email).
 
-> [!primary]
->
-> Para los productos de tipo **Private Exchange**, el enlace de conexión al webmail se sitúa en el recuadro **Conexión** de la pestaña `Información general`{.action} de su plataforma.
-
 Una vez que se haya conectado, haga clic en `Elementos eliminados`{.action} en la columna de la izquierda y seleccione `Obtener elementos eliminados`{.action} en la parte superior de la columna central.
 
 ![correo electrónico](images/3582.png){.thumbnail}

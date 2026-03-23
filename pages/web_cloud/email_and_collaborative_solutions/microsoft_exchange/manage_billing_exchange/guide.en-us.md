@@ -6,7 +6,7 @@ updated: 2025-09-22
 
 ## Objective
 
-The Hosted Exchange and Private Exchange services offer flexible management for account billing. This guide details how to configure it.
+The Hosted Exchange service offers flexible management for account billing. This guide details how to configure it.
 
 **This guide explains how to manage subscriptions for your Exchange accounts.**
 
@@ -64,28 +64,6 @@ To delete an account on your Hosted Exchange platform, you will need to cancel i
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
 
 Go to the `Email accounts`{.action} tab for your platform, then click `...`{.action} next to the account concerned. Finally, click `Reset`{.action}. Once you have reset the account, it will remain empty until its expiry date.
-
-### Private Exchange
-
-> [!primary]
->
-> On a Private Exchange platform, only monthly renewal is available for accounts. You cannot configure any other renewal frequencies.
-
-#### Ordering additional accounts
-
-Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} button in the top left-hand corner. Next, click `Add an account`{.action}. The account will be billed for the current month.
-
-![billing_exchange](images/billing-exchange-06.png){.thumbnail}
-
-#### Deleting accounts
-
-> [!warning]
->
-> To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
-
-In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
-
-![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
 ### Cancel the platform
 

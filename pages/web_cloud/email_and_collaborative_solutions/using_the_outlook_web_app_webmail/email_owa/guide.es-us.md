@@ -6,7 +6,7 @@ updated: 2024-09-03
 
 ## Objetivo
 
-Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](/links/web/email) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](/links/web/email) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 

@@ -252,12 +252,6 @@ Por eso, le invitamos a consultar el capítulo correspondiente a la interfaz que
 >>
 >> La ventana se divide en dos partes, **Correo entrante** y **Correo saliente**. Haga clic en la parte que desee modificar.
 >>
->> > [!primary]
->> >
->> > En nuestro ejemplo, el nombre del servidor utilizado es "pro**?**.mail.ovh.net". Deberá reemplazar el carácter "?" por el número correspondiente al servidor de su servicio Email Pro.
->> >
->> > Encuentre este número en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `Email Pro`{.action}. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
->>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>
 > **Interfaz 2**

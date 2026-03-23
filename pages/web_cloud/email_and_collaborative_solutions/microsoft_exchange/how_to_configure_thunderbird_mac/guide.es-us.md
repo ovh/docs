@@ -29,9 +29,20 @@ Las cuentas de Exchange pueden configurarse en diferentes clientes de correo com
 
 ## Requisitos
 
-- Tener una dirección de correo electrónico [Hosted Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-private-exchange).
+- Tener una dirección de correo electrónico [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Tener instalado el software Thunderbird en su dispositivo bajo Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
+
+<!-- CP-NAV-START:web-exchange -->
+---
+
+### Acceso al área de cliente de OVHcloud
+
+- **Enlace directo:** [Exchange](/links/control-panel/web-exchange)
+- **Ruta de navegación:** `Web Cloud`{.action} > `Exchange`{.action} > Seleccione su plataforma
+
+---
+<!-- CP-NAV-END:web-exchange -->
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
@@ -161,8 +172,6 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 > Para más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo Thunderbird, consulte [el centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
 
 [Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
-
-[Primeros pasos con el servidor Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
