@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - ¿Cómo autorizar una dirección IP?"
 excerpt: "Descubra cómo autorizar a una o varias direcciones IP a acceder a su solución Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-23
 ---
 
 <style>
@@ -60,7 +60,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-cloud-databases) y seleccione la solución Web Cloud Databases correspondiente.
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -117,7 +117,6 @@ De hecho, esto permitiría autorizar el acceso a sus bases de datos a todas las 
 
 ///
 
-
 /// details | Autorización de acceso a los alojamientos web de OVHcloud
 
 Al activar la solución Web Cloud Databases, la autorización de acceso a los alojamientos web de OVHcloud se activa por defecto.
@@ -127,7 +126,7 @@ Si quiere desactivar esta autorización porque no utiliza un alojamiento web con
 > [!tabs]
 > **Etapa 1**
 >>
->> Haga clic en [este enlace](/links/control-panel/web-cloud-databases) y seleccione la solución Web Cloud Databases correspondiente.
+>> Acceda a la página [Web Cloud Databases](/links/control-panel/web-cloud-databases) y seleccione la solución correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -148,7 +147,7 @@ Si quiere desactivar esta autorización porque no utiliza un alojamiento web con
 ## Más información
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
- 
+
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
+
 Interactúe con nuestra [comunidad de usuarios](/links/community).

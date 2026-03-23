@@ -1,7 +1,7 @@
 ---
 title: "Configurer votre serveur de bases de données"
 excerpt: "Découvrez comment configurer et optimiser votre serveur de base de données"
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -188,7 +188,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Vous trouverez dans le cadre **« Configuration générale de MySql »** la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
+>> Vous trouverez dans le cadre **« Configuration générale de MySQL »** la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 >>
@@ -197,7 +197,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >> - **AutoCommit** : Définit si les requêtes sont automatiquement validées (committed) ou non.
 >> - **Interactive_timeout** : Temps en secondes pendant lequel le serveur attend l’activité sur une connexion interactive avant de la fermer.
 >> - **InnodbBufferPoolSize** : Choix de la taille de la mémoire tampon.
->> - **MaxConnexions :** Nombre de connexions simultanées autorisées sur le serveur de bases de données.
+>> - **MaxConnections :** Nombre de connexions simultanées autorisées sur le serveur de bases de données.
 >> - **Wait_timeout** : Temps en secondes pendant lequel le serveur attend l’activité sur une connexion non interactive avant de la fermer.
 >> - **Event_scheduler** : Permet de déclencher l’exécution de requêtes programmées directement dans le serveur MySQL.
 >> - **sql_mode** : L’option **sql_mode** affecte la syntaxe SQL prise en charge et les vérifications de validation des données effectuées par MySQL/MariaDB.

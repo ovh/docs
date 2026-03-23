@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -47,7 +47,7 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 >
 > - Il n'y a pas d'accès super utilisateur « root ».
 > - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
-> 
+>
 
 ### Sauvegarder et exporter une base de données depuis l'espace client
 

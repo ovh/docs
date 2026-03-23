@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 ## Objectif
@@ -88,7 +88,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!primary]
 >
 > Cette étape ne s'applique pas au système de bases de données Redis.
->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -131,7 +130,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!primary]
 >
 > Cette étape ne s'applique pas au système de bases de données Redis.
->
 
 Si vous avez créé l'utilisateur en même temps que votre base de données lors de la manipulation précédente, cette étape est facultative. Cependant, un projet peut nécessiter plusieurs utilisateurs avec des droits différents (par exemple, lecture/écriture pour l'un et lecture seule pour l'autre).
 

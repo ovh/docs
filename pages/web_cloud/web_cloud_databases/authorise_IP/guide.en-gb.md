@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - How to authorize an IP address?"
 excerpt: "Find out how to authorize one or more IP addresses to access your Web Cloud Databases solution"
-updated: 2025-07-10
+updated: 2026-03-23
 ---
 
 <style>
@@ -60,7 +60,7 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-cloud-databases), then select the Web Cloud Databases solution concerned.
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -117,7 +117,6 @@ Effectively, this would allow all existing IPv4 addresses to have access to your
 
 ///
 
-
 /// details | Authorizing access to OVHcloud web hosting plans
 
 When you activate your Web Cloud Databases solution, authorization to access OVHcloud web hosting plans is activated by default.
@@ -127,7 +126,7 @@ If you would like to disable this authorization because you are not using a web 
 > [!tabs]
 > **Step 1**
 >>
->> Click [this link](/links/control-panel/web-cloud-databases), then select the Web Cloud Databases solution concerned.
+>> Go to the [Web Cloud Databases](/links/control-panel/web-cloud-databases) page, then select the solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -146,9 +145,9 @@ If you would like to disable this authorization because you are not using a web 
 ///
 
 ## Go further
- 
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
- 
+
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
- 
+
 Join our [community of users](/links/community).

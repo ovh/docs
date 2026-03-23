@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Comment gérer les logs ?'
 excerpt: 'Découvrez comment gérer les logs de vos bases de données hébergées sur votre serveur Web Cloud Databases'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -21,7 +21,7 @@ details[open]>summary::before {
 ## Objectif
 
 Un log correspond à un événement survenu sur un système informatique (serveur, ordinateur, application, site web, base de données, réseau informatique, etc.).
-Par exemple, un log peut enregistrer et contenir un ou plusieurs des éléments suivants : 
+Par exemple, un log peut enregistrer et contenir un ou plusieurs des éléments suivants :
 
 - L'horodatage (date, heure, minute, seconde, etc.) de l'événement.
 - La nature de l'événement (connexion, déconnexion, erreur, download, upload, alerte, etc.).
@@ -140,16 +140,16 @@ Téléchargez-le sur votre poste pour le consulter.
 > [!primary]
 >
 > Un fichier supplémentaire de logs intitulé `slow-query.log` peut apparaître à la racine SFTP de votre serveur Web Cloud Databases.
-> Ce fichier contient l'historique des requêtes lentes qui se sont exécutées sur votre serveur Web Cloud Databases. 
-> 
+> Ce fichier contient l'historique des requêtes lentes qui se sont exécutées sur votre serveur Web Cloud Databases.
+>
 > Par défaut, la valeur est définie à 1 seconde sur les solutions Web Cloud Databases dans la variable **long_query_time**.
-> 
+>
 > Grâce à ce fichier, vous pourrez optimiser vos scripts et le contenu de votre (vos) base(s) de données afin d'améliorer les performances de vos différents services associés.
 >
 
 ### Abonner les logs de votre solution Web Cloud Databases à Logs Data Platform <a name="wcdb-ldp"></a>
 
-[Logs Data Platform](/links/manage-operate/ldp) est une plateforme permettant de gérer vos logs. Elle facilite l'agrégation et la gestion des logs, notamment pour les infrastructures générant un volume important de logs. 
+[Logs Data Platform](/links/manage-operate/ldp) est une plateforme permettant de gérer vos logs. Elle facilite l'agrégation et la gestion des logs, notamment pour les infrastructures générant un volume important de logs.
 
 Elle fonctionne en récupérant les logs générés par votre infrastructure / vos sites web ou encore vos applications pour, par exemple :
 

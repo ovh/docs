@@ -1,7 +1,7 @@
 ---
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 ## Objectif
@@ -140,7 +140,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > vérification sur le contenu de la base. Celle-ci sera donc supprimée même si
 > des données y sont encore enregistrées, il est donc recommandé de réaliser
 > une sauvegarde et de la télécharger de votre côté avant toute suppression.
-> 
+>
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 

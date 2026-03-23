@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Comment autoriser une adresse IP ?"
 excerpt: "Découvrez comment autoriser une ou plusieurs adresses IP à accéder à votre solution Web Cloud Databases"
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -24,7 +24,7 @@ Les solutions [Web Cloud Databases](/links/web/databases) peuvent être utilisé
 
 Par défaut et pour des raisons de sécurité, sur ces solutions :
 
-- Seules les adresses IP liées à notre infrastructure d'hébergements mutualisés sont autorisées à accéder au contenu des bases de données. 
+- Seules les adresses IP liées à notre infrastructure d'hébergements mutualisés sont autorisées à accéder au contenu des bases de données.
 - L'accès aux logs de la solution n'est pas restreint en fonction des adresses IP. Cela permet d'y accéder via un ordinateur par exemple.
 
 Vous avez besoin de modifier ces autorisations/restrictions ?
@@ -107,7 +107,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 Lors de l'activation de votre solution Web Cloud Databases, une ligne pour la plage d'adresses IP `0.0.0.0/0` est déjà présente par défaut pour autoriser l'accès en **SFTP** à la solution.
 
-Cette autorisation est volontairement mise en place pour vous permettre d'accéder aux fichiers de logs de votre solution Web Cloud Databases sans avoir à déclarer l'adresse IP de votre point d'accès à Internet. 
+Cette autorisation est volontairement mise en place pour vous permettre d'accéder aux fichiers de logs de votre solution Web Cloud Databases sans avoir à déclarer l'adresse IP de votre point d'accès à Internet.
 
 En effet, cette adresse IP peut changer régulièrement en fonction des fournisseurs d'accès à Internet.
 
@@ -116,7 +116,6 @@ De plus, nous vous recommandons de **ne pas** modifier cette autorisation et de 
 Effectivement, cela permettrait d'autoriser l'accès à vos bases de données à l'ensemble des adresses IPv4 existantes, ce qui représente un risque pour la sécurité de vos données.
 
 ///
-
 
 /// details | L'autorisation d'accès aux hébergements web OVHcloud
 
@@ -148,7 +147,7 @@ Si vous souhaitez désactiver cette autorisation car vous n'utilisez pas d'hébe
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

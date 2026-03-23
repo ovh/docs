@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Modifier les droits d'un utilisateur"
 excerpt: "Découvrez comment modifier les droits d'un utilisateur sur votre solution Web Cloud Databases"
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 ## Objectif
@@ -115,7 +115,7 @@ Retrouvez ci-dessous un tableau récapitulatif des types de requêtes possibles 
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

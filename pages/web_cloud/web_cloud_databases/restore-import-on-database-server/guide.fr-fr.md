@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2026-03-19
+updated: 2026-03-23
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-En cas d'erreur sur votre base de données, vous devez pouvoir restaurer une sauvegarde ou importer une base locale. 
+En cas d'erreur sur votre base de données, vous devez pouvoir restaurer une sauvegarde ou importer une base locale.
 
 **Découvrez comment restaurer et importer votre base de données sur votre serveur de bases de données.**
 
@@ -63,7 +63,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 2**
 >>
->> Cliquez sur l'onglet `Bases de données`{.action}. 
+>> Cliquez sur l'onglet `Bases de données`{.action}.
 >>
 >> Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre de sauvegardes disponibles pour votre base de données.
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Wie autorisiere ich eine IP-Adresse?"
 excerpt: "Erfahren Sie, wie Sie einer oder mehreren IP-Adressen den Zugriff auf Ihre Web Cloud Databases Lösung erlauben"
-updated: 2025-07-10
+updated: 2026-03-23
 ---
 
 <style>
@@ -60,7 +60,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-cloud-databases) und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -117,7 +117,6 @@ Damit würde Zugriff auf die Datenbanken für alle IPv4-Adressen ermöglicht, wa
 
 ///
 
-
 /// details | Autorisierung des Datenbank-Zugriffs für OVHcloud Webhostings
 
 Bei der Aktivierung Ihrer Web Cloud Databases Lösung ist die Autorisierung für den Zugriff auf die OVHcloud Webhostings standardmäßig aktiviert.
@@ -127,7 +126,7 @@ Wenn Sie diese Berechtigung deaktivieren möchten, da Sie kein Webhosting mit Ih
 > [!tabs]
 > **Schritt 1**
 >>
->> Klicken Sie auf [diesen Link](/links/control-panel/web-cloud-databases) und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>> Gehen Sie auf die Seite [Web Cloud Databases](/links/control-panel/web-cloud-databases), und wählen Sie die betreffende Lösung aus.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -146,9 +145,9 @@ Wenn Sie diese Berechtigung deaktivieren möchten, da Sie kein Webhosting mit Ih
 ///
 
 ## Weiterführende Informationen
- 
+
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
- 
+
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
- 
+
 Treten Sie unserer [User Community](/links/community) bei.

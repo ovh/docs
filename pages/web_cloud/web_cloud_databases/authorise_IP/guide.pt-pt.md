@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Como autorizar um endereço IP?"
 excerpt: "Saiba como autorizar um ou vários endereços IP a aceder à sua solução Web Cloud Databases"
-updated: 2025-07-10
+updated: 2026-03-23
 ---
 
 <style>
@@ -60,7 +60,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/web-cloud-databases) e escolha a solução Web Cloud Databases correspondente.
+>> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -117,7 +117,6 @@ Efetivamente, isto permitiria autorizar o acesso às suas bases de dados a todos
 
 ///
 
-
 /// details | A autorização de acesso aos alojamentos web da OVHcloud
 
 Aquando da ativação da sua solução Web Cloud Databases, a autorização de acesso aos alojamentos web da OVHcloud é ativada por predefinição.
@@ -127,7 +126,7 @@ Se deseja desativar esta autorização pois não utiliza um alojamento web com a
 > [!tabs]
 > **Etapa 1**
 >>
->> Clique [neste link](/links/control-panel/web-cloud-databases) e escolha a solução Web Cloud Databases correspondente.
+>> Aceda à página [Web Cloud Databases](/links/control-panel/web-cloud-databases) e escolha a solução correspondente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
@@ -148,7 +147,7 @@ Se deseja desativar esta autorização pois não utiliza um alojamento web com a
 ## Quer saber mais?
  
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
- 
+
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
+
 Fale com a nossa [comunidade de utilizadores](/links/community).
