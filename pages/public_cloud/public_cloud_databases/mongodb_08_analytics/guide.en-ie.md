@@ -8,23 +8,11 @@ updated: 2025-07-31
 
 This guide shows how to configure a node in your cluster dedicated to analytics-type queries in a Public Cloud Databases for MongoDB Advanced cluster. This allows you to run such queries, or [BI (Business Intelligence)](https://en.wikipedia.org/wiki/Business_intelligence) tools - including [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector) in a way that doesn't degrade the operational performance of the cluster.
 
-
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A multi-node capable (so, either *Production* or *Advanced* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
-
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
 
 ## What purpose does an Analytics node serve?
 

@@ -13,17 +13,6 @@ This guide lists all the supported advanced parameters that allow you to configu
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account   
 - An analytics service running on your OVHcloud Public Cloud project ([this guide](/pages/public_cloud/data_analytics/analytics/analytics_getting_started) can help you to meet this requirement)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 > [!warning]

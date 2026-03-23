@@ -16,17 +16,6 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.

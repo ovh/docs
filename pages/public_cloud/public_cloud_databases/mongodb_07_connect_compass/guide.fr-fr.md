@@ -17,17 +17,6 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A MongoDB Compass stable version installed and public network connectivity (Internet). This guide was made in MongoDB Compass version 1.30.1.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.

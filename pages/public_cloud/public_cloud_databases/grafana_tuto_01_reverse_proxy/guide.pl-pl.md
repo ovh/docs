@@ -26,17 +26,6 @@ Schema concept:
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A Dashboards running on your OVHcloud Public Cloud project. ([This guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to create a managed Dashboards. If you need more details on the private network configuration use [this guide](/pages/public_cloud/public_cloud_databases/databases_08_vrack))
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 ### Create a new instance in your vRack

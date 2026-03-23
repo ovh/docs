@@ -24,17 +24,6 @@ You will end up with all the basics to develop your own solution using Kafka.
     - the user access key as `service.key`
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.12.2.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 > [!primary]
@@ -142,7 +131,6 @@ def delivery_callback(err, msg):
         print(f"Message failed delivery: {err}")
     else:
         print(f"Published event to topic {msg.topic()} ")
-
 
 # example data to send as a message
 jsonValue = """{

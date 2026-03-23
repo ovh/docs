@@ -16,17 +16,6 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Concept
 
 Public Cloud Databases perform automatic daily backups of your databases. However, you might need to perform manual backup and restore operations to double-ensure data safety on your end, or for example in order to export and import data across database instances.

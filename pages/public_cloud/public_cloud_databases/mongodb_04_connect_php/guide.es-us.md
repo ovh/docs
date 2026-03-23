@@ -19,17 +19,6 @@ You can find an example on the [Github examples repository](https://github.com/o
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acceso al área de cliente de OVHcloud
-
-- **Enlace directo:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ruta de navegación:** `Public Cloud`{.action} > Seleccione su proyecto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.

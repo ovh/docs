@@ -22,17 +22,6 @@ However, if you would like to know how to do the same with Terraform, but over a
     - You must have downloaded the `openrc.sh` file for interaction with the OpenStack platform. If not already downloaded, please refer to the following guide: [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
     - You must have created a token to log in to the OVHcloud API. If it's not already created, please refer to the following guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Acesso à Área de Cliente OVHcloud
-
-- **Ligação direta:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Caminho de navegação:** `Public Cloud`{.action} > Selecione o seu projeto
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 ### How to deploy the MongoDB database on a private network
@@ -292,7 +281,6 @@ Using MongoDB:		6.0.12
 Using Mongosh:		1.6.1
 
 For mongosh info see: https://docs.mongodb.com/mongodb-shell/
-
 
 To improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
 You can opt out by running the disableTelemetry() command.

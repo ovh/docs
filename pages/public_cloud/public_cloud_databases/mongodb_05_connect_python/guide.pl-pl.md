@@ -19,17 +19,6 @@ You can find an example on the [Github examples repository](https://github.com/o
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Dostęp do Panelu klienta OVHcloud
-
-- **Link bezpośredni:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Ścieżka nawigacji:** `Public Cloud`{.action} > Wybierz projekt
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
