@@ -156,4 +156,8 @@ Wed Nov 1 09:14:38 2017
 ```
 ## Aller plus loin
 
+[Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: 'Modificare i blocchi IP annunciati nella vRack'
-excerpt: 'Come cambiare l’annuncio di un blocco IP nella rete privata vRack'
+title: "Server dedicato - Modificare l’annuncio di un blocco IP nella vRack"
+excerpt: "Modifica la zona di annuncio geografica di un blocco IP nella tua vRack OVHcloud per un routing ottimizzato"
 updated: 2025-05-14
 ---
 
@@ -91,4 +91,4 @@ In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come 
 
 [Configurare un blocco di indirizzi IP nella vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

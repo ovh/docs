@@ -1,6 +1,6 @@
 ---
-title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
-excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
+title: "Network Security Dashboard para servidores dedicados"
+excerpt: "Supervise la actividad DDoS y los flujos de tráfico en su servidor dedicado con el Network Security Dashboard de OVHcloud"
 updated: 2025-10-31
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation"
-excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
+title: "Gérer le reboot d'un serveur dédié avec Link Aggregation"
+excerpt: "Redémarrez votre serveur dédié OVHcloud sur un réseau entièrement privé grâce à OVHcloud Link Aggregation"
 updated: 2026-01-27
 ---
 
@@ -107,7 +107,7 @@ Voici un schéma (logique) de démarrage Netboot :
 
 Ci-dessous un exemple d'infrastructure privée basique (schéma layer 2) :
 
-![Schema](images/schema_basic_en.png)
+![Schema Layer 2 d'une infrastructure privee de basé](images/schema_basic_en.png)
 
 **Exemple :**
 
@@ -339,5 +339,9 @@ Il est fortement conseillé d'utiliser un service NTP, surtout si votre infrastr
 [Comprendre et/ou personnaliser votre service rEFInd](https://fr.wikipedia.org/wiki/REFInd).<br>
 [Comprendre ou découvrir NTP](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
 [Comprendre ou découvrir Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
+
+[Comprendre le processus de démarrage des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/boot-process)
+
+[Configurer un script iPXE personnalisé pour démarrer votre serveur via l'API OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ipxe-scripts)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

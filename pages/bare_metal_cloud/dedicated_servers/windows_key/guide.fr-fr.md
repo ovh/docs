@@ -1,6 +1,6 @@
 ---
-title: "Comment corriger la clé d’activation Windows Server"
-excerpt: "Découvrez comment modifier la clé d'activation de votre Windows Server"
+title: "Modifier la clé produit Windows Server (Dédié)"
+excerpt: "Modifiez ou activez la clé produit Windows Server sur votre serveur dédié OVHcloud après installation ou réinstallation"
 updated: 2025-01-06
 ---
 
@@ -24,7 +24,7 @@ Lorsque votre système est en version d'essai, une clé par défaut est enregist
 
 ![Activation de l'utilitaire Exécuter](images/executer.png){.thumbnail}
 
-![Exécuter](images/executer2.png){.thumbnail}
+![Boite de dialogue Executer de Windows pour les commandes de cle produit](images/executer2.png){.thumbnail}
 
 Dans cet utilitaire, renseignez la commande suivante :
 
@@ -69,5 +69,9 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
 ## Aller plus loin
+
+[Modifier le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+
+[Activer des Machines Windows utilisant Hyper-V sur un Windows Server sous licence OVHcloud](/pages/bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja OVHcloud Link Aggregation w Panelu klienta'
-excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation w Panelu klienta'
+title: "Jak skonfigurować OVHcloud Link Aggregation w Panelu klienta"
+excerpt: "Włącz OVHcloud Link Aggregation (OLA) na serwerze dedykowanym za pomocą Panelu klienta OVHcloud."
 updated: 2022-05-18
 ---
 
@@ -40,7 +40,7 @@ Aggregacja oparta jest na technologii IEEE 802.3ad lub Link Aggregation Control 
 
 Kliknij `Serwery Dedykowane`{.action} i wybierz Twój serwer z listy.
 
-![network interfaces](images/network_interfaces2022.png){.thumbnail}
+![Zakładka interfejsów sieciowych z konfiguracją OLA](images/network_interfaces2022.png){.thumbnail}
 
 W zakładce `Interfejsy sieciowe`{.action} (1) kliknij przycisk `...`{.action} (2) po prawej stronie "Tryb" w ramach **OLA: OVHcloud Link Aggregation**. Następnie kliknij `Skonfiguruj agregację prywatną`{.action} (2).
 
@@ -62,7 +62,7 @@ Zakończenie operacji może potrwać kilka minut. Kolejny krok to powiązanie in
 
 Aby przywrócić OLA do wartości domyślnych, kliknij przycisk `...`{.action} po prawej stronie "Tryb" w ramce **OLA: OVHcloud Link Aggregation**. Następnie kliknij `Dekonfiguruj agregację prywatną`{.action}. Kliknij `Potwierdź`{.action} w menu kontekstowym.
 
-![network interfaces](images/default_settings2021.png){.thumbnail}
+![Opcja dekonfiguracji prywatnej agregacji w sekcji OLA](images/default_settings2021.png){.thumbnail}
 
 Operacja może zająć kilka minut.
 

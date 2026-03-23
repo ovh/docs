@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie i odbudowa oprogramowania RAID na serwerach w trybie UEFI
-excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie uruchamiania UEFI
+title: "Konfiguracja RAID programowego UEFI na serwerze dedykowanym"
+excerpt: "Skonfiguruj RAID programowy na serwerze dedykowanym OVHcloud z trybem rozruchowym UEFI."
 updated: 2026-01-26
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9 bis 11'
+title: Dedicated Server - OVHcloud Link Aggregation unter Debian
 excerpt: 'Aktivieren Sie OVHcloud Link Aggregation auf Ihrem Debian (Versionen 9 bis 11)'
 updated: 2026-01-09
 ---

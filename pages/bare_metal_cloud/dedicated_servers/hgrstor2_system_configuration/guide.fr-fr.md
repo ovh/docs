@@ -1,6 +1,6 @@
 ---
-title: "Configuration du stockage d'un serveur HGR-STOR-2"
-excerpt: "Mise en place et configuration du multipath dans le cadre de l'utilisation d'un serveur HGR-STOR-2"
+title: "Configurer le stockage sur un serveur dédié HGR-STOR-2"
+excerpt: "Mettez en place et configurez le multipath dans le cadre de l'utilisation d'un serveur dédié HGR-STOR-2"
 updated: 2022-08-25
 ---
 
@@ -733,5 +733,9 @@ Number Friendly Name            Serial Number            HealthStatus         Op
 ```  
 
 ## Aller plus loin
+
+[Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage)
+
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

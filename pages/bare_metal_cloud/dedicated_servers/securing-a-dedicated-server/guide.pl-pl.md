@@ -1,6 +1,6 @@
 ---
-title: "Zabezpieczanie serwera dedykowanego"
-excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić serwer dedykowany przed atakami i nieautoryzowanym dostępem"
+title: "Jak zabezpieczyć serwer dedykowany"
+excerpt: "Zastosuj najlepsze praktyki bezpieczeństwa na serwerze dedykowanym OVHcloud: aktualizacje, zapora, SSH i monitorowanie."
 updated: 2024-02-20
 ---
 
@@ -17,6 +17,10 @@ Kiedy zamawiasz serwer dedykowany, możesz wybrać dystrybucję lub system opera
 > [!warning]
 > OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
+
+- [Instalacja LAMP na serwerze dedykowanym (Debian/Ubuntu)](LAMP)
+- [Jak zabezpieczyć Memcached na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/memcache_secure)
+
 >Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
 >
 

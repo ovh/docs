@@ -1,6 +1,6 @@
 ---
 title: "Come gestire Intel SGX su un server dedicato"
-excerpt: "Scopri come attivare l'opzione SGX sul tuo server dedicato e installare la pila software SGX per Linux"
+excerpt: "Attiva Intel SGX sul tuo server dedicato OVHcloud e installa lo stack software Linux per le applicazioni con enclave sicure"
 updated: 2025-11-20
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019'
+title: Dedicated Server - OVHcloud Link Aggregation unter Windows
 excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
 updated: 2021-03-25
 ---
@@ -63,7 +63,7 @@ Klicken Sie anschließend mit der rechten Maustaste auf Ihr NIC-Team und wählen
 
 Doppelklicken Sie im folgenden Popup-Fenster auf die Schaltfläche **Internetprotokoll Version 4 (TCP/IPv4)**.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Eigenschaften von Internetprotokoll Version 4 (TCP/IPv4)](images/ipv4.png){.thumbnail}
 
 Klicken Sie auf "Diese IP-Adresse verwenden" und fügen Sie Ihre gewählte private IP und das Subnetz hinzu. Klicken Sie auf die Schaltfläche **OK**, sobald Sie die Richtigkeit Ihrer Einstellungen bestätigt haben.
 

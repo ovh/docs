@@ -1,6 +1,6 @@
 ---
-title: API OVHcloud et Stockage
-excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration des disques, RAID matériels/logiciels et du partitionnement lors de la réinstallation de l'OS sur votre serveur"
+title: "Personnaliser le partitionnement via l'API OVHcloud (Dédié)"
+excerpt: "Utilisez l'API OVHcloud pour personnaliser les partitions, le RAID matériel et les systèmes de fichiers sur votre serveur dédié"
 updated: 2026-02-18
 ---
 

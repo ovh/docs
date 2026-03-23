@@ -1,6 +1,6 @@
 ---
 title: "Installer VMware ESXi 8 sur un serveur dédié"
-excerpt: "Découvrez comment installer et configurer VMware ESXi 8 sur un serveur dédié en utilisant un template fourni par OVHcloud"
+excerpt: "Installez et configurez VMware ESXi 8 sur un serveur dédié OVHcloud avec un partitionnement personnalisé et un datastore"
 updated: 2025-10-03
 ---
 

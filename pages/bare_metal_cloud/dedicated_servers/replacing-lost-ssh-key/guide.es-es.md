@@ -1,6 +1,6 @@
 ---
-title: "Sustitución del par de claves SSH"
-excerpt: "Cómo restaurar el acceso al servidor en caso de pérdida de la clave privada generando un nuevo par de claves SSH"
+title: "Sustituir una clave SSH perdida en un servidor dedicado"
+excerpt: "Restaure el acceso SSH a su servidor dedicado generando y desplegando un nuevo par de claves en modo rescue"
 updated: 2024-04-04
 ---
 

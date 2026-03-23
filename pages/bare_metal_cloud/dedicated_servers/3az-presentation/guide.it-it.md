@@ -52,15 +52,15 @@ Per ottenere prestazioni ottimali, è necessario che una regione sia selezionata
 
 Clicca sulla scheda `3-AZ Clusters`{.action}.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![Scheda cluster 3-AZ con elenco dei cluster disponibili](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Fare clic sul nome del cluster nella tabella per visualizzare i dettagli.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Pagina dettagli del cluster con informazioni sulle zone di disponibilità](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Clicca sulla scheda `Nodi`{.action} per aprire la lista dei server del cluster.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Scheda Nodi con elenco dei server del cluster](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Cliccando sul nome di un server/nodo in questa lista si apre la scheda `Informazioni generali`{.action} del server. Per maggiori informazioni, consulta la nostra guida:
 
@@ -68,4 +68,4 @@ Cliccando sul nome di un server/nodo in questa lista si apre la scheda `Informaz
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

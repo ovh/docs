@@ -52,20 +52,22 @@ Aby zapewnić optymalną wydajność, region musi być wybrany jak najbliżej u�
 
 Przejdź do zakładki `3-AZ Clusters`{.action}.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
+![Zakładka klastrów 3-AZ z listą dostępnych klastrów](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
 Kliknij nazwę klastra w tabeli, aby wyświetlić szczegóły.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
+![Strona szczegółów klastra z informacjami o strefach dostępności](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
 Kliknij zakładkę `Węzły`{.action}, aby otworzyć listę serwerów klastra.
 
-![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
+![Zakładka węzłów pokazująca listę serwerów w klastrze](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
 Kliknięcie nazwy serwera/węzła na tej liście spowoduje otwarcie zakładki `Informacje ogólne`{.action} serwera. Więcej informacji znajduje się w tym Panelu klienta w naszym przewodniku:
 
 [Jak rozpocząć pracę z serwerem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 ## Sprawdź również <a name="go-further"></a>
+
+- [Konfiguracja vRack na serwerach dedykowanych](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

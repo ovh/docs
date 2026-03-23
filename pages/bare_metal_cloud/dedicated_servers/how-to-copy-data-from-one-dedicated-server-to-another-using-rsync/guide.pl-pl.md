@@ -1,5 +1,5 @@
 ---
-title: "Kopiowanie danych z serwera na inny serwer za pomocą\_rsync"
+title: "Jak skopiować dane między serwerami dedykowanymi za pomocą rsync"
 excerpt: "Dowiedz się, jak w prosty sposób kopiować dane z serwera na inny serwer za pomocą\_rsync"
 updated: 2022-02-16
 ---
@@ -105,4 +105,9 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 
 Teraz już wiesz, jak w prosty sposób kopiować dane z serwera na inny serwer za pomocą rsync.
 
-Aby dowiedzieć się więcej, przyłącz się do społeczności naszych użytkowników <https://community.ovh.com/en/>.
+## Sprawdź również
+
+- [Jak przesyłać i pobierać dane przez SFTP na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+- [Jak zmigrować dane na nowy serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

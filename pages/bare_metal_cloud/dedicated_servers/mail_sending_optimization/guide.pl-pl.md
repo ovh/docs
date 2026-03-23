@@ -1,6 +1,6 @@
 ---
-title: Jak zapobiec sytuacjom, w których Twoje e-maile są oznaczone jako spam
-excerpt: "Dowiedz się, jak zastosować dobre praktyki wysyłania wiadomości e-mail, aby ograniczyć ryzyko blokowania wiadomości uzasadnionych ochroną przed spamem"
+title: "Optymalizacja wysyłki e-maili na serwerze dedykowanym"
+excerpt: "Skonfiguruj odwrotny DNS, SPF i DKIM na serwerze dedykowanym OVHcloud, aby poprawić dostarczalność e-maili."
 updated: 2024-01-24
 ---
 
@@ -133,4 +133,6 @@ Może być interesujące, aby korzystać ze strony jak [Mail Tester](http://www.
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
+- [OVHcloud AntySpam - Dobre praktyki i odblokowanie adresu IP](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices)
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 Dołącz do [grona naszych użytkowników](/links/community).

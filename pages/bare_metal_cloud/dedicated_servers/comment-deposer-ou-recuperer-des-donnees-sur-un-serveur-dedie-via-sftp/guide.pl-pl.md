@@ -1,6 +1,6 @@
 ---
-title: "Jak używać SFTP do przesyłania plików"
-excerpt: "Dowiedz się, jak łączyć się z serwerem za pomocą FileZilla, aby wgrywać i pobierać pliki"
+title: "Jak przesyłać i pobierać dane przez SFTP na serwerze dedykowanym"
+excerpt: "Przesyłaj i pobieraj pliki na serwerze dedykowanym OVHcloud za pomocą SFTP w trybie rescue."
 updated: 2024-02-23
 ---
 

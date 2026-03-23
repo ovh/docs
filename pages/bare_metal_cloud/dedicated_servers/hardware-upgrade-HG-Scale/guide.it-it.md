@@ -1,6 +1,6 @@
 ---
 title: "Aggiornamento dell'hardware su un server dedicato High Grade o Scale"
-excerpt: "Scopri come richiedere un aggiornamento dell'hardware per le gamme High Grade e SCALE dal tuo Spazio Cliente"
+excerpt: "Richiedi un aggiornamento hardware (RAM, disco, NIC) sul tuo server dedicato High Grade o SCALE tramite lo Spazio Cliente OVHcloud"
 updated: 2024-01-04
 ---
 
@@ -90,4 +90,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

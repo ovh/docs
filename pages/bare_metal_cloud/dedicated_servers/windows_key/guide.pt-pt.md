@@ -1,6 +1,6 @@
 ---
-title: 'Como alterar a chave de produto do Windows Server'
-excerpt: 'Saiba como alterar o código de ativação do Windows Server'
+title: "Modificar a chave de produto Windows Server (Dedicado)"
+excerpt: "Modifique ou ative a chave de produto Windows Server no seu servidor dedicado OVHcloud após instalação ou reinstalação"
 updated: 2026-01-06
 ---
 

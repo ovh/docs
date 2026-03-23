@@ -1,6 +1,6 @@
 ---
-title: 'Cómo cambiar la clave de activación de Windows Server'
-excerpt: 'Cómo cambiar la clave de activación de Windows Server'
+title: "Modificar la clave de producto de Windows Server (Dedicado)"
+excerpt: "Modifique o active la clave de producto de Windows Server en su servidor dedicado OVHcloud tras la instalación o reinstalación"
 updated: 2026-01-06
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configurar un bloque de Additional IP en un vRack'
-excerpt: 'Descubra cómo configurar un bloque de direcciones IP públicas en el vRack.'
+title: "Servidor dedicado - Configurar un bloque IP en el vRack"
+excerpt: "Configure un bloque de direcciones IP públicas para la red privada vRack de OVHcloud entre sus servidores dedicados"
 updated: 2026-03-13
 ---
 

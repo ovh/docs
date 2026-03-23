@@ -1,6 +1,6 @@
 ---
-title: Zarządzanie i odbudowanie oprogramowania RAID na serwerach w trybie rozruchu legacy (BIOS)
-excerpt: Dowiedz się, jak zarządzać i odbudować oprogramowanie RAID po wymianie dysku na serwerze w trybie rozruchu legacy (BIOS)
+title: "Konfiguracja RAID programowego na serwerze dedykowanym"
+excerpt: "Skonfiguruj RAID programowy (mdadm) na serwerze dedykowanym OVHcloud z systemem Linux."
 updated: 2026-03-02
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: 'Configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Windows Server 2019'
-excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur « Windows Server 2019 »'
+title: 'Serveur dédié - OVHcloud Link Aggregation sur Windows'
+excerpt: 'Activez OVHcloud Link Aggregation sur votre serveur dédié Windows Server 2019'
 updated: 2021-03-25
 ---
 
@@ -62,7 +62,7 @@ Faites ensuite un clic droit sur votre équipe NIC et sélectionnez `Propriété
 
 Dans la fenêtre qui s’ouvre, faites un double clic sur `Protocole Internet Version 4 (TCP/IPv4)`{.action}.
 
-![ipv4](images/ipv4.png){.thumbnail}
+![Proprietes du protocole Internet version 4 TCP/IPv4](images/ipv4.png){.thumbnail}
 
 Cliquez sur le bouton à côté de « Utiliser l’adresse IP suivante » et ajoutez l’IP et le sous-réseau privés que vous avez choisis. Cliquez sur le bouton `OK`{.action} après avoir vérifié que vos paramètres sont corrects.
 

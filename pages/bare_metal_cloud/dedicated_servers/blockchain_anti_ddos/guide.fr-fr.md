@@ -1,6 +1,6 @@
 ---
-title: "Comment configurer l'infrastructure Anti-DDoS pour Solana"
-excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour protéger vos nœuds Solana sans nuire à leur fonctionnalité"
+title: "Configurer l'Anti-DDoS pour Solana sur un serveur dédié"
+excerpt: "Utilisez l'infrastructure Anti-DDoS OVHcloud pour protéger vos nœuds Solana sur un serveur dédié sans nuire à leur fonctionnalité"
 updated: 2025-10-13
 ---
 
@@ -60,5 +60,9 @@ Les nœuds Solana utilisent les protocoles réseau et les ports suivants :
 Vous pouvez trouver les exigences matérielles pour les nœuds Solana Validator et RPC dans [la documentation officielle d'Anza](https://docs.anza.xyz/operations/requirements).
 
 ## Aller plus loin
+
+[Activer et configurer le Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
+
+[Monitoring des attaques DDoS avec le Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

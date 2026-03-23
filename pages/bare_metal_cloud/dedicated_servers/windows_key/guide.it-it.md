@@ -1,6 +1,6 @@
 ---
-title: 'Come cambiare la Product Key di Windows Server'
-excerpt: 'Scopri come modificare il codice Product Key di Windows Server'
+title: "Modificare la chiave prodotto Windows Server (Dedicato)"
+excerpt: "Modifica o attiva la chiave prodotto Windows Server sul tuo server dedicato OVHcloud dopo l'installazione o la reinstallazione"
 updated: 2026-01-06
 ---
 

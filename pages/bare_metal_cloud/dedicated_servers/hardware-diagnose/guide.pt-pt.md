@@ -1,6 +1,6 @@
 ---
-title: "Diagnosticar avarias materiais num servidor dedicado"
-excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
+title: "Servidor dedicado - Diagnóstico de hardware em modo rescue"
+excerpt: "Execute diagnósticos de hardware no seu servidor dedicado OVHcloud em modo rescue para identificar avarias de disco, RAM ou CPU"
 updated: 2025-10-16
 ---
 

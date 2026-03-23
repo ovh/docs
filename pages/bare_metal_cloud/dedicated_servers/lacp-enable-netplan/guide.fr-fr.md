@@ -1,6 +1,6 @@
 ---
-title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
-excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
+title: "Serveur dédié - Agrégation LACP sur Debian/Ubuntu"
+excerpt: "Configurez l'agrégation de liens LACP sur un serveur dédié Debian 12 ou Ubuntu 24.04 avec Netplan pour la bande passante et la redondance"
 updated: 2026-01-09
 ---
 
@@ -243,5 +243,9 @@ sudo netplan apply
 Un intervalle de quelques secondes peut être observé avant que les agrégats soient opérationnels.
 
 ## Aller plus loin
+
+[Configurer l’agrégation de liens OLA dans votre espace client](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+
+[Amélioration de la résilience réseau sur les serveurs Bare Metal](/pages/bare_metal_cloud/dedicated_servers/lacp-resilience-scale-hg)
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).

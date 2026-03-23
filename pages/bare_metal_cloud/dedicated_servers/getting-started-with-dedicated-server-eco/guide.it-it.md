@@ -1,6 +1,6 @@
 ---
 title: "Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise"
-excerpt: "Come gestire un server dedicato Kimsufi, So You Start o Rise nello Spazio Cliente e come iniziare a utilizzare la configurazione e la protezione di un server"
+excerpt: "Gestisci il tuo server Kimsufi, So You Start o Rise dallo Spazio Cliente OVHcloud: installa un OS, configura SSH e metti in sicurezza il tuo servizio"
 updated: 2025-04-29
 ---
 
@@ -74,14 +74,14 @@ Una volta terminati gli adeguamenti, clicca su `Seguente`{.action} per accedere 
 
 In particolare, sono disponibili domande complementari specifiche per il sistema operativo selezionato.
 
-![server options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-05.png){.thumbnail}
+![Opzioni del server](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-05.png){.thumbnail}
 
 Se è stato selezionato un sistema operativo compatibile, è possibile fornire una **chiave pubblica** da installare automaticamente. Le opzioni disponibili sono due:
 
 - Copia manualmente la stringa di chiave e incollala nel campo `La tua chiave SSH pubblica`.
 - [Se in precedenza hai salvato](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel) una chiave pubblica nel tuo [Spazio Cliente OVHcloud](/links/manager), seleziona la chiave desiderata nel menu a tendina `Chiavi SSH da preinstallare`.
 
-![add key](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/sshkeyds.png){.thumbnail}
+![Aggiungi chiave](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/sshkeyds.png){.thumbnail}
 
 Per saperne di più, consulta le nostre guide:
 
@@ -228,7 +228,7 @@ Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/d
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](/links/manager). L'opzione si trova nella sezione `Stato dei servizi`.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
+![Stato del monitoring nella sezione Stato dei servizi](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server.png){.thumbnail}
 
 Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni per il tuo comportamento di sorveglianza:
 
@@ -236,7 +236,7 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 - **Attivato con intervento proattivo**: Se il server non risponde più, riceverai un'email di alert e il server sarà verificato da un tecnico.
 - **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario creare una richiesta di assistenza.
 
-![Monitoring](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
+![Popup di configurazione del monitoring con tre opzioni](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/monitoring-your-server2.png){.thumbnail}
 
 Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
@@ -311,7 +311,9 @@ Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pag
 
 [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
+[API OVHcloud e installazione di un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
+[Clienti Kimsufi e So you Start - Familiarizzarsi con lo Spazio Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

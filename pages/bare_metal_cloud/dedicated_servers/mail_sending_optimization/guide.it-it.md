@@ -1,6 +1,6 @@
 ---
-title: Come evitare che le tue email siano contrassegnate come Spam
-excerpt: "Scopri come applicare le best practice per l’invio di email al fine di limitare i rischi di blocco delle email legittime da parte della protezione contro gli spam"
+title: "Ottimizzare l’invio di email su un server dedicato"
+excerpt: "Applica le buone pratiche di invio email sul tuo server dedicato per evitare che i tuoi messaggi legittimi vengano contrassegnati come spam"
 updated: 2024-01-24
 ---
 

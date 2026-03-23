@@ -1,6 +1,6 @@
 ---
-title: "Odzyskiwanie baz danych w trybie Rescue"
-excerpt: "Dowiedz się, jak uzyskać dostęp do baz danych i zapisać je w trybie rescue"
+title: "Jak przywrócić bazę danych w trybie rescue"
+excerpt: "Przywróć bazę danych MySQL/MariaDB na serwerze dedykowanym OVHcloud za pomocą trybu rescue."
 updated: 2023-04-13
 ---
 
@@ -33,6 +33,9 @@ Tryb Rescue pozwala na stały dostęp do Twoich danych, nawet jeśli system oper
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
+
+- [Serwer dedykowany - Diagnostyka sprzętowa](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
+
 > Celem tego tutoriala jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](/links/partner) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 

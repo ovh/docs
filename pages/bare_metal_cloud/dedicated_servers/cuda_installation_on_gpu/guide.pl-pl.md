@@ -1,5 +1,5 @@
 ---
-title: Instalacja CUDA na serwerze dedykowanym GPU
+title: "Instalacja NVIDIA CUDA na serwerze dedykowanym GPU"
 updated: 2017-12-14
 ---
 
@@ -175,5 +175,8 @@ Wed Nov 1 09:14:38 2017
 ```
 
 ## Sprawdź również
+
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+- [OVHcloud API and OS Installation (EN)](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

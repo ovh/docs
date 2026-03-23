@@ -1,6 +1,6 @@
 ---
-title: Zabezpieczenie serwera z zainstalowaną usługą Memcached
-excerpt: Dowiedz się, jak zabezpieczyć serwer z zainstalowanym Memcached
+title: "Jak zabezpieczyć Memcached na serwerze dedykowanym"
+excerpt: "Zabezpiecz usługę Memcached na serwerze dedykowanym OVHcloud, aby zapobiec nadużyciom i atakom DDoS."
 updated: 2018-03-02
 ---
 
@@ -116,5 +116,8 @@ sudo systemctl force-reload memcached
 ```
 
 ## Sprawdź również
+
+- [Jak zabezpieczyć serwer dedykowany](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+- [Konfiguracja zapory iptables na serwerze dedykowanym z systemem Linux](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

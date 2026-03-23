@@ -1,6 +1,6 @@
 ---
-title: 'Configurer l’agrégation de liens OLA dans votre espace client'
-excerpt: 'Découvrez comment activer l’agrégation de liens OVHcloud dans votre espace client.'
+title: "OVHcloud Link Aggregation via l’espace client (Dédié)"
+excerpt: "Activez OVHcloud Link Aggregation (OLA) sur votre serveur dédié directement depuis l’espace client OVHcloud"
 updated: 2023-03-07
 ---
 
@@ -40,7 +40,7 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 
 Pour commencer à configurer OLA, ouvrez l'onglet `Interfaces réseau`{.action} sur la page de gestion de votre serveur.
 
-![network interfaces](images/network_interfaces2022.png){.thumbnail}
+![Onglet interfaces réseau affichant la configuration OLA](images/network_interfaces2022.png){.thumbnail}
 
 Dans l'onglet `Interfaces réseau`{.action} (1), cliquez sur le bouton `...`{.action} (2) à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Configurer l'agrégation privée`{.action} (2).
 
@@ -62,7 +62,7 @@ L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étap
 
 Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `...`{.action} à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Déconfigurer l'agrégation privée`{.action}. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
 
-![network interfaces](images/default_settings2021.png){.thumbnail}
+![Option Deconfigurer l'agregation privee dans le cadre OLA](images/default_settings2021.png){.thumbnail}
 
 L'opération peut prendre quelques minutes.
 

@@ -1,6 +1,6 @@
 ---
-title: "Come salvare le chiavi SSH nello Spazio Cliente"
-excerpt: "Scopri come importare chiavi SSH pubbliche nello Spazio Cliente OVHcloud"
+title: "Salvare le chiavi SSH di un server dedicato nello Spazio Cliente"
+excerpt: "Importa e gestisci le tue chiavi SSH pubbliche nello Spazio Cliente OVHcloud per un deploy rapido sui tuoi server dedicati"
 updated: 2024-12-04
 ---
 

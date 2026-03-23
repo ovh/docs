@@ -1,6 +1,6 @@
 ---
-title: Migracja danych z jednego serwera dedykowanego na drugi
-excerpt: Dowiedz się, jak migrować dane z serwera dedykowanego na inny serwer
+title: "Jak zmigrować dane na nowy serwer dedykowany"
+excerpt: "Przenieś dane i konfigurację ze starego serwera dedykowanego OVHcloud na nowy za pomocą rsync."
 updated: 2021-09-16
 ---
 
@@ -94,5 +94,8 @@ Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](/
 Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [nasza sieć partnerów](/links/partner).
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+- [Wprowadzenie do SSH dla serwerów dedykowanych](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+- [Pierwsze kroki z serwerem dedykowanym OVHcloud](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
 
 Dołącz do społeczności naszych użytkowników na stronie: <https://community.ovh.com/en/>.

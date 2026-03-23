@@ -1,6 +1,6 @@
 ---
-title: 'Configurar os Additional IP em modo bridge nas suas máquinas virtuais'
-excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
+title: 'Servidor dedicado - Configurar Additional IP em modo bridge'
+excerpt: 'Configure as suas máquinas virtuais num servidor dedicado para um acesso Internet público através do modo bridge de rede'
 updated: 2026-01-06
 ---
 

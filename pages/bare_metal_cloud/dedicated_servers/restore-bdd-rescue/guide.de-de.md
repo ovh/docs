@@ -1,6 +1,6 @@
 ---
-title: "Sicherung Ihrer Datenbanken im Rescue-Modus"
-excerpt: "Erfahren Sie hier, wie Sie im Rescue-Modus Ihre Datenbanken abrufen und sichern"
+title: Dedicated Server - Datenbanken im Rescue-Modus abrufen
+excerpt: Greifen Sie auf Ihre Datenbanken auf einem Dedicated Server im Rescue-Modus zu und exportieren Sie diese, um Daten nach einem Vorfall wiederherzustellen.
 updated: 2023-04-13
 ---
 
@@ -273,5 +273,7 @@ root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
 ## Weiterführende Informationen
+
+- [Dedicated Server - Hardwarediagnose im Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

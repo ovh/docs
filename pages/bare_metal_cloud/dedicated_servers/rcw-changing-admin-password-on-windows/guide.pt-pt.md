@@ -1,6 +1,6 @@
 ---
-title: "Como redefinir a palavra-passe de administrador com o Rescue-Customer-Windows"
-excerpt: "Como redefinir a palavra-passe de administrador com o Rescue-Customer-Windows"
+title: "Reinicializar a palavra-passe Windows num servidor dedicado"
+excerpt: "Reinicialize a palavra-passe de administrador Windows num servidor dedicado através do sistema rescue Windows OVHcloud"
 updated: 2025-10-22
 ---
 

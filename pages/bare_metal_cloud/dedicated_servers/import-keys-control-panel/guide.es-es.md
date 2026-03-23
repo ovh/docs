@@ -1,6 +1,6 @@
 ---
-title: "Cómo almacenar las llaves SSH en su área de cliente"
-excerpt: "Cómo importar llaves SSH públicas en el área de cliente de OVHcloud"
+title: "Almacenar claves SSH de servidor dedicado en el área de cliente"
+excerpt: "Importe y gestione sus claves SSH públicas en el área de cliente de OVHcloud para un despliegue rápido en sus servidores dedicados"
 updated: 2024-12-04
 ---
 

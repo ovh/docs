@@ -1,6 +1,6 @@
 ---
-title: "Konfigurieren von personalisierten iPXE Skripten über die OVHcloud API"
-excerpt: "Erfahren Sie hier, wie Sie mit der OVHcloud API ein personalisiertes PXE Startskript konfigurieren können, um Ihren Server zu booten"
+title: Dedicated Server - Benutzerdefiniertes iPXE Boot-Skript
+excerpt: Konfigurieren Sie ein benutzerdefiniertes iPXE-Skript über die OVHcloud API, um den Netzwerk-Boot-Prozess Ihres Dedicated Servers zu steuern.
 updated: 2024-02-27
 ---
 

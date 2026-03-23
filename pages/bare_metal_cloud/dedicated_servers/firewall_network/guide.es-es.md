@@ -1,6 +1,6 @@
 ---
-title: 'Activar y configurar el Edge Network Firewall'
-excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
+title: 'Edge Network Firewall para servidores dedicados'
+excerpt: 'Active y configure el Edge Network Firewall para filtrar el tráfico entrante hacia su servidor dedicado OVHcloud'
 updated: 2026-03-10
 ---
 

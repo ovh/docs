@@ -1,6 +1,6 @@
 ---
-title: 'Modificar el anuncio de un bloque de IP en el vRack'
-excerpt: 'Cómo modificar el anuncio de un bloque de IP en el vRack'
+title: "Servidor dedicado - Modificar el anuncio de un bloque IP en el vRack"
+excerpt: "Modifique la zona de anuncio geográfico de un bloque IP en su vRack de OVHcloud para un enrutamiento optimizado"
 updated: 2025-05-14
 ---
 

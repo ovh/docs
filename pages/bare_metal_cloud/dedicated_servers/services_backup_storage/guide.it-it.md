@@ -1,6 +1,6 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
-excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
+excerpt: "Attiva e accedi allo spazio di backup incluso con il tuo server dedicato OVHcloud per i tuoi salvataggi di file"
 updated: 2025-10-09
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Przenieś Additional IP
-excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprzez API OVHcloud
+title: "Jak przenieść Additional IP na inny serwer"
+excerpt: "Przenieś adres Additional IP między serwerami dedykowanymi lub instancjami OVHcloud za pomocą Panelu klienta lub API."
 updated: 2026-01-21
 ---
 
@@ -84,11 +84,11 @@ Możesz użyć menu rozwijanego pod opcją **Moje publiczne adresy IP i usługi 
 
 Następnie kliknij przycisk `⁝`{.action} po prawej stronie Additional IP lub bloku adresów IP, który chcesz przenieść, i wybierz `Przenieś Additional IP`{.action}.
 
-![move Additional](images/move_ip_1_new.png){.thumbnail}
+![Menu kontekstowe przeniesienia Additional IP](images/move_ip_1_new.png){.thumbnail}
 
 W wyskakującym okienku wybierz z menu usługę, do której chcesz przenieść adres IP.
 
-![move Additional](images/move_ip_2_new.png){.thumbnail}
+![Wybór usługi docelowej dla Additional IP](images/move_ip_2_new.png){.thumbnail}
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -133,48 +133,48 @@ Aby przenieść dodatkowy adres IP z konta SYS na konto OVHcloud, należy wzią�
 
 Aby rozpocząć, zaloguj się na swoje konto So you Start i kliknij `IP`{.action} na głównym pulpicie nawigacyjnym.
 
-![soyoustart to ovh](images/sys-ip-section.png){.thumbnail}
+![Sekcja IP w panelu So you Start](images/sys-ip-section.png){.thumbnail}
 
 Kliknij koło zębate obok odpowiedniego adresu IP i wybierz `Przenieś IP FO`{.action}.
 
-![soyoustart to ovh](images/move-ip-sys.png){.thumbnail}
+![Opcja przeniesienia failover IP w menu So you Start](images/move-ip-sys.png){.thumbnail}
 
 Wybierz opcję `Przeniesienia na usługę OVH`{.action}, wprowadź identyfikator klienta OVHcloud i kliknij `Dalej`{.action}.
 
-![soyoustart to ovh](images/move-to-ovh.png){.thumbnail}
+![Wybór przeniesienia do usługi OVH i wprowadzenie identyfikatora NIC](images/move-to-ovh.png){.thumbnail}
 
 Spowoduje to wygenerowanie kodu (tokenu), który należy zapisać.
 
-![soyoustart to ovh](images/token-id.png){.thumbnail}
+![Wygenerowany kod tokena do transferu IP](images/token-id.png){.thumbnail}
 
 Następnie [zaloguj się na swoje konto OVHcloud](/links/manager), kliknij `Sieć`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Kliknij na koło zębate po prawej stronie i wybierz `Importuj adresy IP SYS do OVHcloud`{.action}.
 
-![soyoustart to ovh](images/import-ip-to-ovh.png){.thumbnail}
+![Opcja importu adresów IP z SyS do OVHcloud](images/import-ip-to-ovh.png){.thumbnail}
 
 Pojawi się okno pop-up, wprowadź dodatkowy adres IP (lub blok) oraz identyfikator tokenu (uzyskany na koncie So you Start). Następnie kliknij `Dalej`{.action}.
 
-![soyoustart to ovh](images/Step-1.png){.thumbnail}
+![Wprowadzenie Additional IP i tokena do importu](images/Step-1.png){.thumbnail}
 
 Wybierz serwer docelowy i kliknij `Dalej`{.action}. Jeśli serwer dedykowany jest zgodny z adresem IP, pojawi się zielony komunikat. Jeśli nie jest zgodny, pojawi się komunikat o błędzie.
 
 Kliknij `Dalej`{.action}.
 
-![soyoustart to ovh](images/Step-2.png){.thumbnail}<br>
-![soyoustart to ovh](images/Step-2.1.png){.thumbnail}
+![Wybór serwera docelowego ze sprawdzeniem kompatybilności](images/Step-2.png){.thumbnail}<br>
+![Komunikat potwierdzenia kompatybilności serwera](images/Step-2.1.png){.thumbnail}
 
 W następnym oknie czas trwania zostanie wybrany automatycznie, a opłata zostanie wyświetlona. Kliknij `Dalej`{.action}, aby kontynuować.
 
-![soyoustart to ovh](images/Step-3.png){.thumbnail}
+![Podsumowanie czasu trwania i opłat za transfer IP](images/Step-3.png){.thumbnail}
 
 Zaznacz pole `Akceptuję umowy`{.action}, aby wyrazić zgodę na warunki świadczenia usług po ich przeczytaniu. Następnie kliknij `Dalej`{.action}.
 
-![soyoustart to ovh](images/Step-4.png){.thumbnail}
+![Akceptacja regulaminu transferu IP](images/Step-4.png){.thumbnail}
 
 Zapoznaj się z podsumowaniem zamówienia i kliknij `Potwierdź`{.action}, aby je potwierdzić.
 
-![soyoustart to ovh](images/Step-5.png){.thumbnail}
+![Podsumowanie i potwierdzenie zamówienia transferu IP](images/Step-5.png){.thumbnail}
 
 Zostaniesz przekierowany na nową stronę, aby dokonać płatności.
 
@@ -202,4 +202,6 @@ Więcej informacji znajdziesz na naszej liście [dostępnych regionów](/links/n
 
 ## Sprawdź również
 
+- [Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+- [Serwer dedykowany - Konfiguracja network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 Dołącz do [grona naszych użytkowników](/links/community).

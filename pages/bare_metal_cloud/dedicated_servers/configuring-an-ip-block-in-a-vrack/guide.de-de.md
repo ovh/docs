@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration eines Additional IP-Blocks in einem vRack'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie einen Block öffentlicher IP-Adressen für die Verwendung mit dem vRack konfigurieren.'
+title: Dedicated Server - IP-Block in einem vRack konfigurieren
+excerpt: Konfigurieren Sie einen öffentlichen IP-Adressblock für die Nutzung mit dem privaten OVHcloud vRack-Netzwerk auf Dedicated Servern.
 updated: 2026-03-13
 ---
 
@@ -338,19 +338,19 @@ Zunächst müssen wir auf die Informationen der neuen Netzwerkschnittstelle zugr
 
 Anschließend müssen wir die Eigenschaften prüfen:
 
-![Eigenschaften der zweiten Netzwerkschnittstelle](images/win-ip-vrack-2.png){.thumbnail}
+![Netzwerkadapter-Eigenschaften für das vRack-Interface](images/win-ip-vrack-2.png){.thumbnail}
 
-![Eigenschaften der zweiten Netzwerkschnittstelle](images/win-ip-vrack-3.png){.thumbnail}
+![IPv4-Eigenschaften des vRack-Netzwerkadapters](images/win-ip-vrack-3.png){.thumbnail}
 
 #### Schritt 2: IP-Konfiguration
 
 Wir müssen die Option ```Use the following IP address``` auswählen:
 
-![IP-Konfiguration](images/win-ip-vrack-4.png){.thumbnail}
+![Option „Folgende IP-Adresse verwenden“ auswählen](images/win-ip-vrack-4.png){.thumbnail}
 
 Und wir können schließlich die IP-Informationen festlegen:
 
-![IP-Konfiguration](images/win-ip-vrack-5b.png){.thumbnail}
+![IP-Adresse und Subnetzmaske für vRack ausgefüllt](images/win-ip-vrack-5b.png){.thumbnail}
 
 #### Schritt 3: Neustart der Netzwerkschnittstelle
 
@@ -381,5 +381,7 @@ Bitte fügen Sie die Ergebnisse der oben genannten Punkte in Ihr Ticket ein.
 [Mehrere VLANs in einem vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 [Das vRack zwischen der Public Cloud und einem dedizierten Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
+
+- [Dedicated Server - IP-Block-Ankündigung im vRack ändern](/pages/bare_metal_cloud/dedicated_servers/vrack_change_zone_announce)
 
 Treten Sie unserer [User Community](/links/community) bei.

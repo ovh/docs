@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja adresu Additional IP jako aliasu'
-excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
+title: "Konfiguracja Additional IP jako aliasu IP na serwerze dedykowanym"
+excerpt: "Skonfiguruj Additional IP jako alias na serwerze dedykowanym OVHcloud z systemem Linux, Windows lub Plesk."
 updated: 2025-12-04
 ---
 
@@ -598,4 +598,5 @@ Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to dzi
 
 [Tryb bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
+- [Jak przenieść Additional IP na inny serwer](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip)
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: "Proteger um servidor dedicado"
-excerpt: "Saiba como implementar medidas básicas de segurança para proteger o seu servidor dedicado de ataques e acessos não autorizados"
+excerpt: "Aplique as medidas de segurança essenciais no seu servidor dedicado: reforço SSH, configuração da firewall e monitorização"
 updated: 2024-02-20
 ---
 

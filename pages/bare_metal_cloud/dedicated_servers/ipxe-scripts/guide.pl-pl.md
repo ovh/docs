@@ -1,6 +1,6 @@
 ---
-title: "Skonfiguruj spersonalizowany skrypt iPXE, aby uruchomić serwer przez API OVHcloud"
-excerpt: "Dowiedz się, jak API OVHcloud pozwala na skonfigurowanie spersonalizowanego skryptu PXE do uruchamiania serwera"
+title: "Jak uruchomić serwer dedykowany za pomocą skryptów iPXE"
+excerpt: "Skonfiguruj skrypty iPXE, aby niestandardowo uruchamiać serwer dedykowany OVHcloud za pomocą iPXE API."
 updated: 2024-02-27
 ---
 

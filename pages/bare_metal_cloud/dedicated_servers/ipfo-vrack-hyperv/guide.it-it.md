@@ -1,6 +1,6 @@
 ---
-title: "Utilizza Hyper-V con indirizzi Additional IP su una vRack"
-excerpt: "Scopri come configurare una macchina virtuale con Additional IP e Hyper-V su una vRack"
+title: "VM Hyper-V con Additional IP nella vRack (Dedicato)"
+excerpt: "Scopri come utilizzare Hyper-V con Additional IP tramite una vRack su un server dedicato"
 updated: 2025-07-22
 ---
 
@@ -155,4 +155,4 @@ L'esempio che segue mostra come visualizzare il file `ifcfg-eth0`.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,6 +1,6 @@
 ---
-title: Gestione e ricostruzione del RAID software sui server in modalità legacy boot (BIOS)
-excerpt: "Scopri come gestire e ricostruire il RAID software dopo la sostituzione di un disco su un server in modalità legacy boot (BIOS)"
+title: Gestire il RAID software (BIOS) su un server dedicato
+excerpt: "Gestisci e ricostruisci le matrici RAID software dopo la sostituzione di un disco su un server dedicato in modalità boot BIOS"
 updated: 2026-03-02
 ---
 
