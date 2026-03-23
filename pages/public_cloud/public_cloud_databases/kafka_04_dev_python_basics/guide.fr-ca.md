@@ -16,7 +16,6 @@ You will end up with all the basics to develop your own solution using Kafka.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account.
 - A Public Cloud Databases for Kafka service running and configured. [This guide](/pages/public_cloud/public_cloud_databases/kafka_02_getting_started) can help you to meet this requirement.
 - Following the [Getting Started guide](/pages/public_cloud/public_cloud_databases/kafka_02_getting_started), save all certificates in a dedicated folder: 
@@ -24,6 +23,17 @@ You will end up with all the basics to develop your own solution using Kafka.
     - the user certificate as `service.cert`
     - the user access key as `service.key`
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.12.2.
+
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
+- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 
