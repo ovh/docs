@@ -172,7 +172,7 @@ Jeśli asystent konfiguracji nie wyświetla się, wyświetlą się ogólne infor
 
 ##### **Migracja z poziomu interfejsu MX Plan**
 
-Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji `E-maile`{.action} Panelu klienta OVHcloud. Wybierz usługę noszącą nazwę domeny Twoich kont e-mail. Kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Przeprowadź migrację konta`{.action}.
+Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji `E-maile`{.action} Panelu klienta OVHcloud. Wybierz usługę noszącą nazwę domeny Twoich kont e-mail. Kliknij kartę `E-maile`{.action}. Kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Przeprowadź migrację konta`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 

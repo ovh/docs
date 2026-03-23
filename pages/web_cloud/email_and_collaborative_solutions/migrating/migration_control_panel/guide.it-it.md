@@ -172,7 +172,7 @@ Se l'assistente di configurazione non compare, visualizzi le informazioni genera
 
 ##### **Migrazione dall'interfaccia MX Plan**
 
-Per effettuare la migrazione da questa interfaccia, accedi alla sezione `Email`{.action} del tuo Spazio Cliente OVHcloud. A questo punto scegli il servizio con il dominio dei tuoi indirizzi email. Clicca su `...`{.action} sulla riga dell'account email interessato (chiamato anche account sorgente) e poi su `Migra l'account`{.action}.
+Per effettuare la migrazione da questa interfaccia, accedi alla sezione `Email`{.action} del tuo Spazio Cliente OVHcloud. A questo punto scegli il servizio con il dominio dei tuoi indirizzi email. Clicca sulla scheda `Email`{.action}. Clicca su `...`{.action} sulla riga dell'account email interessato (chiamato anche account sorgente) e poi su `Migra l'account`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail}
 

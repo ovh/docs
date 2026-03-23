@@ -172,7 +172,7 @@ Si no aparece el asistente de configuración, la información general del servic
 
 ##### **Migración desde la interfaz MX Plan**
 
-Para realizar la migración desde esta interfaz, acceda a la sección `Correo electrónico`{.action} del área de cliente de OVHcloud. Seleccione el servicio con el nombre de dominio de sus direcciones de correo. Haga clic en `...`{.action} en la línea de la cuenta de correo correspondiente (también llamada cuenta de origen) y seleccione `Migrar la cuenta`{.action}.
+Para realizar la migración desde esta interfaz, acceda a la sección `Correo electrónico`{.action} del área de cliente de OVHcloud. Seleccione el servicio con el nombre de dominio de sus direcciones de correo. Haga clic en la pestaña `Emails`{.action}. Haga clic en `...`{.action} en la línea de la cuenta de correo correspondiente (también llamada cuenta de origen) y seleccione `Migrar la cuenta`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail}
 

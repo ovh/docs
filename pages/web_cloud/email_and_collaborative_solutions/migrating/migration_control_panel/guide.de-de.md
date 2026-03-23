@@ -171,7 +171,7 @@ Wenn der Konfigurationsassistent nicht startet, werden stattdessen die allgemein
 
 ##### **Migration über das MX Plan Interface**
 
-Um die Migration über dieses Interface durchzuführen, gehen Sie im Bereich `E-Mails`{.action} zum Tab "E-Mails". Wählen Sie dann den Dienst mit dem Domainnamen Ihrer E-Mail-Adressen aus. Klicken Sie auf `...`{.action} in der Zeile des betreffenden E-Mail-Accounts (auch als Quell-Account bezeichnet) und dann auf `Account überführen`{.action}.
+Um die Migration über dieses Interface durchzuführen, gehen Sie im Bereich `E-Mails`{.action} Ihres OVHcloud Kundencenters. Wählen Sie dann den Dienst mit dem Domainnamen Ihrer E-Mail-Adressen aus. Klicken Sie auf den Tab `E-Mails`{.action}. Klicken Sie auf `...`{.action} in der Zeile des betreffenden E-Mail-Accounts (auch als Quell-Account bezeichnet) und dann auf `Account überführen`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 

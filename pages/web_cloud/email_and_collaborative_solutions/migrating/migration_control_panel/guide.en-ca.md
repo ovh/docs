@@ -100,7 +100,7 @@ If the configuration wizard does not appear, the general information for the Exc
 
 ##### **Migration from the MX Plan interface**
 
-To migrate from this interface, go to the `Emails`{.action} section of the OVHcloud Control Panel. Then choose the service with the domain name of your email addresses. Click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
+To migrate from this interface, go to the `Emails`{.action} section of the OVHcloud Control Panel. Then choose the service with the domain name of your email addresses. Click on the `Emails`{.action} tab. Click on `...`{.action} next to the relevant email account (also called the source account), then `Migrate account`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 
