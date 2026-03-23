@@ -6,14 +6,14 @@ updated: 2025-04-28
 
 ## Objectif
 
-Vous avez la possibilité de bénéficier d'adresses e-mail avec nos offres FTTH/xDSL OVHcloud. Ces adresses permettent d'envoyer et de recevoir vos messages depuis l'appareil de votre choix.
+Vous pouvez bénéficier d'adresses e-mail avec nos offres FTTH/xDSL OVHcloud. Ces adresses permettent d'envoyer et de recevoir vos messages depuis l'appareil de votre choix.
 
-**Découvrez comment activer  les adresses e-mail incluses dans votre offre FTTH/xDSL et comment y accéder.**
+**Découvrez comment activer les adresses e-mail incluses dans votre offre FTTH/xDSL et comment y accéder.**
 
 ## Prérequis
 
 - Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
-- Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
+- Pouvoir encore créer des adresses e-mail dans le cadre de votre offre.
 <!-- CP-NAV-START:telecom-xdsl-fttx -->
 ---
 
@@ -59,7 +59,7 @@ Cliquez sur `Valider`{.action} pour lancer la création de l'adresse e-mail. Ré
 
 ### Étape 2 : Utiliser votre adresse e-mail
 
-Vous pouvez à présent utiliser votre adresse e-mail. Pour cela, OVHcloud met à disposition une application en ligne (webmail), accessible [ici](/links/web/email). Vous devrez y renseigner les identifiants relatifs à votre adresse e-mail nouvellement créée.
+Vous pouvez à présent utiliser votre adresse e-mail. Connectez-vous au [webmail OVHcloud](/links/web/email) avec les identifiants de votre nouvelle adresse.
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos tutoriels dédiés sur [cette page](/products/web-cloud-email-collaborative-solutions-email-pro).
 

@@ -41,7 +41,7 @@ Możesz poprosić o zatwierdzenie kilku modeli wiadomości.
 
 > [!primary]
 >
-Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatne przez zespoły OVHcloud w ciągu jednego do dwóch dni roboczych.
+> Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatnie przez zespoły OVHcloud w ciągu jednego do dwóch dni roboczych.
 >
 
 ### Etap 2: Dodawanie modelu
@@ -83,7 +83,7 @@ Zaloguj się na [api.ovh.com/](/links/api) i użyj następującego interfejsu AP
 
 ![Wiadomości SMS do Stanów Zjednoczonych](images/smstousa4.png){.thumbnail}
 
-Wypełnij wymagane pola i kliknij `Execute`{.action}
+Wypełnij wymagane pola i kliknij `Execute`{.action}.
 
 #### Przykłady modeli
 

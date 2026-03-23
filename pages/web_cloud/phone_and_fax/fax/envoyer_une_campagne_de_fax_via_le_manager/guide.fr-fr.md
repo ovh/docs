@@ -17,7 +17,7 @@ Vous pouvez envoyer une campagne de fax depuis votre espace client OVHcloud. Cel
 <!-- CP-NAV-START:telecom-voip-fax -->
 ---
 
-### Accès à l’espace client OVHcloud
+### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
 - **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
@@ -74,7 +74,7 @@ Une campagne peut avoir plusieurs statuts :
 
 - **N/A** : pas de statut encore disponible. Cela s'applique généralement à une campagne en cours ou non envoyée.
 - **Succès** : la campagne s'est déroulée sans difficultés.
-- **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton `...`{.action} puis sur `Détails`{.action}
+- **Succès partiel** : la campagne s'est déroulée mais certains numéros sont probablement invalides. Vous pouvez avoir le détail de la campagne en cliquant sur le bouton `...`{.action} puis sur `Détails`{.action}.
 - **En erreur** : la campagne n'a pas pu être réalisée. Cliquez sur `...`{.action} puis sur `Détails`{.action} pour obtenir des informations complémentaires.
 
 ## Aller plus loin

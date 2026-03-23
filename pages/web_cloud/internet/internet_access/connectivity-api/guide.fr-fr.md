@@ -1,12 +1,8 @@
 ---
-title: "Utiliser l'API Connectivity"
-excerpt: 'Développez en utilisant notre API connectivity'
+title: "Premiers pas avec l'API Connectivity OVHcloud"
+excerpt: "Utilisez l'API Connectivity OVHcloud pour vérifier l'éligibilité cuivre et fibre et gérer vos accès Internet"
 updated: 2023-04-03
 ---
-
-> [!primary]
-> Une version en langue anglaise de ce guide est disponible [ici](/pages/web_cloud/internet/internet_access/connectivity-api)
->
 
 ## Objectif
 
@@ -24,7 +20,7 @@ Cette documentation a pour objectif d'aider les développeurs à utiliser nos AP
 
 OVHcloud propose différentes offres d'accès à Internet par le biais de packages contenant au moins un accès Internet mais aussi des lignes VoIP, des e-mails, des noms de domaine.
 
-Les offres sont visibles [ici](/links/telecom/offre-internet).
+Consultez les [offres d'accès Internet OVHcloud](/links/telecom/offre-internet).
 
 Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
 
@@ -265,7 +261,8 @@ avec les données suivantes :
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "status": "ok",
@@ -536,7 +533,7 @@ La réponse est composée :
 - d'un tableau *result.offers* listant toutes les offres et indiquant si la ligne donnée est éligible ou non ;
 - d'une structure *result.endpoint* qui donne des informations sur la ligne : adresse et caractéristiques.
 
-Voici une description des codes d'offre:
+Voici une description des codes d'offre :
 
 | code              | type  | description                           |
 |-------------------|-------|---------------------------------------|

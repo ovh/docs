@@ -27,12 +27,12 @@ Vous n'avez actuellement pas accès à Internet ou rencontrez une dégradation d
 
 > [!primary]
 >
-> Ce guide s'adresse uniquement aux clients disposant d'un [accès Internet FTTH, FTTE ou FTTO OVHcloud](/links/telecom/offre-internet). Si vous disposez d'un accès Internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes accessibles depuis [ce lien](/products/web-cloud-internet-internet-access).
+> Ce guide s'adresse uniquement aux clients disposant d'un [accès Internet FTTH, FTTE ou FTTO OVHcloud](/links/telecom/offre-internet). Si vous disposez d'un accès Internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes accessibles depuis la [page des guides Accès Internet](/products/web-cloud-internet-internet-access).
 >
 
 ## En pratique
 
-Afin de déterminer la cause précise du dysfonctionnement affectant votre accès Internet fibre, il est nécessaire de procéder étape par étape. Suivez ainsi les indications ci-dessous, dans l'ordre, jusqu'au rétablissement de votre accès.
+Pour déterminer la cause du dysfonctionnement affectant votre accès Internet fibre, procédez étape par étape. Suivez ainsi les indications ci-dessous, dans l'ordre, jusqu'au rétablissement de votre accès.
 
 ### Étape 1 : vérifier l'existence d'un incident déclaré (**uniquement pour les accès FTTH**)
 
@@ -87,8 +87,8 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 >>
->> ![diagnosticfibre](images/acces-internet-ont-huawei.jpg)
->> 
+>> ![diagnosticfibre](images/acces-internet-ont-huawei.jpg){.thumbnail}
+>>
 >> **ONT Nokia**
 >>
 >> Commencez en relevant l'état des quatre voyants mentionnés ci-dessous sur l'appareil :
@@ -110,7 +110,7 @@ Cliquez sur l'onglet correspondant à votre offre pour réaliser les vérificati
 >>
 >> - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](#check-box) ».
 >>
->> ![diagnosticfibre](images/acces-internet-ont-nokia.jpg)
+>> ![diagnosticfibre](images/acces-internet-ont-nokia.jpg){.thumbnail}
 >>
 > **FTTE et FTTO** - Vérifications jusqu'au RAD
 >>

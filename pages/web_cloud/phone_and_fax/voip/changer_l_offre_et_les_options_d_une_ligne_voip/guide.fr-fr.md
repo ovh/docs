@@ -63,7 +63,7 @@ Ainsi, un changement d'offre VoIP sollicité entre le 1er et le 31 janvier serai
 
 #### Annuler un changement d'offre VoIP
 
-Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace-client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
+Le changement d'offre peut être annulé à tout moment, avant son application lors du prochain renouvellement de la ligne. Pour annuler un changement d'offre, sélectionnez votre ligne VoIP dans l'espace client OVHcloud puis cliquez successivement sur `Gestion`{.action} et sur `Changer d'offre`{.action}. Cliquez enfin sur `Annuler le changement d'offre`{.action}.
 
 ![changement-d-offre-voip](images/sip_change_offer_5.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Prenez connaissance des informations liées à cette conversion et confirmez-la.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissances des [configurations possibles sur un numéro alias](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
+Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissance des [configurations possibles sur un numéro alias](/pages/web_cloud/phone_and_fax/voip/quelle_configuration_est_adaptee_a_mes_besoins).
 
 > [!warning]
 > 
@@ -141,11 +141,11 @@ Depuis votre espace client OVHcloud, sélectionnez votre numéro alias. Dans l'o
 
 ![conversion alias-sip](images/convert-alias-sip.png){.thumbnail}
 
-Vous devez alors:
+Vous devez alors :
 
-- prendre connaissance des informations liées à la conversion;
-- choisir un forfait VoIP parmi ceux proposés dans le menu déroulant;
-- prendre connaissance des conditions des contrats liés et les accepter en cochant la case prévue à cet effet;
+- prendre connaissance des informations liées à la conversion ;
+- choisir un forfait VoIP parmi ceux proposés dans le menu déroulant ;
+- prendre connaissance des conditions des contrats liés et les accepter en cochant la case prévue à cet effet ;
 - enfin, valider la conversion en cliquant sur `Convertir le numéro`{.action}.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.

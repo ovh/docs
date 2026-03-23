@@ -6,7 +6,7 @@ updated: 2023-02-09
 
 ## Objectif
 
-Ce guide a pour objectif de vous expliquer ce que sont les crédits SMS, comment les recharger automatiquement et comment les transférer entre vos comptes SMS.
+Ce guide vous explique ce que sont les crédits SMS, comment les recharger automatiquement et comment les transférer entre vos comptes SMS.
 
 ## Prérequis
 
@@ -32,14 +32,14 @@ Ce guide a pour objectif de vous expliquer ce que sont les crédits SMS, comment
 
 1 crédit SMS correspond au coût pour l'envoi de 1 SMS en France métropolitaine, le tarif étant dégressif en fonction du nombre de crédits SMS que vous achetez en une fois. 
 
-Vous trouverez la liste des packs SMS en suivant [ce lien](/links/telecom/sms).
+Vous trouverez la liste des packs SMS sur la [page des packs SMS](/links/telecom/sms).
 
 **Exemple pour l'achat d'un pack de 100 crédits SMS, chaque crédit coûtant donc 0,06 € HT :**
 
 L'envoi de 1 SMS en France métropolitaine coûte 1 crédit. Avec ce pack, vous pourrez envoyer 100 SMS en France métropolitaine.
 L'envoi de 1 SMS en Inde coûte 0,4 crédit. Avec ce pack, vous pourrez envoyer 250 SMS en Inde.
 
-[Cette page](/links/telecom/sms-prices) vous permettra de retrouver le coût d'envoi, en crédits, de vos SMS en fonction de leur destination.
+Consultez la [grille tarifaire SMS](/links/telecom/sms-prices) pour connaître le coût d'envoi, en crédits, de vos SMS en fonction de leur destination.
 
 > [!primary]
 >
@@ -50,7 +50,7 @@ L'envoi de 1 SMS en Inde coûte 0,4 crédit. Avec ce pack, vous pourrez envoyer 
 
 ### La recharge automatique
 
-Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer la recharge automatique. Dès qu'un seuil minimum de crédits restants est atteint, une nouvelle quantité de crédits est automatiquement ajoutée sur votre compte SMS.
+Pour ne jamais être à court de crédit sur votre compte, vous pouvez activer la recharge automatique. Dès qu'un seuil minimum de crédits restants est atteint, une nouvelle quantité de crédits est automatiquement ajoutée sur votre compte SMS.
 
 > [!warning]
 >

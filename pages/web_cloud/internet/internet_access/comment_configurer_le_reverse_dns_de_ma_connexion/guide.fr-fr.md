@@ -139,7 +139,7 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IPv4 pub
 >> >
 >> > **Vérifiez vos paramètres de sécurité IPv6**
 >> >
->> > En IPv6, c'est votre machine qui est exposée directement sur Internet. De ce fait, il est indispensable de vous assurer que tous les moyens de sécurité disponibles (pare-feu routeur et machine, iptable, ouverture de port, etc...) sont activés et parfaitement configurés.
+>> > En IPv6, c'est votre machine qui est exposée directement sur Internet. De ce fait, il est indispensable de vous assurer que tous les moyens de sécurité disponibles (pare-feu routeur et machine, iptable, ouverture de port, etc.) sont activés et parfaitement configurés.
 >>
 >> - En IPv6 vous devez saisir l'adresse IPv6 de la machine qui va exploiter votre nom de domaine. Votre IPv6 doit contenir le même préfixe que votre connexion Internet.
 >> - Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
@@ -222,7 +222,7 @@ Cliquez sur les onglets ci-dessous pour afficher les détails selon le type d'IP
 >> ```
 >>
 
-Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](http://ovhtelecom.fr).
+Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](https://ovhtelecom.fr).
 
 Votre Reverse DNS est à présent configuré.
 

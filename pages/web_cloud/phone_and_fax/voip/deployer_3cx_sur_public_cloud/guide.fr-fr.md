@@ -15,7 +15,7 @@ Ce guide explique comment déployer automatiquement votre instance 3CX sur une i
 ## Prérequis
 
 - Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) ».
-- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>.
+- L'IPBX 3CX requiert une licence valide pour être utilisé. Assurez-vous d'avoir une licence valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>.
 
 <!-- CP-NAV-START:publiccloud-projects -->
 ---
@@ -34,13 +34,13 @@ Ce guide explique comment déployer automatiquement votre instance 3CX sur une i
 > 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Nous allons utiliser un template au format XML afin de pouvoir configurer automatiquement l'instance 3CX. 
 
-Ce fichier XML peut être très simple, pour simplement installer 3CX et votre license.<br>
-Il peut aussi être très complet pour vous permettre non seulement d'installer la license mais aussi de créer vos utilisateurs, vos trunks et les autres fonctions de 3CX.
+Ce fichier XML peut être très simple, pour simplement installer 3CX et votre licence.<br>
+Il peut aussi être très complet pour vous permettre non seulement d'installer la licence mais aussi de créer vos utilisateurs, vos trunks et les autres fonctions de 3CX.
 
 Dans ce guide, nous allons utiliser un template XML très simple. Pour un template plus complet, nous vous invitons à consulter la [documentation de 3CX](https://www.3cx.com/docs/configure-pbx-automatically/).
 
@@ -585,7 +585,7 @@ apt-get -y install 3cxpbx
 
 Dans ce template, il y a deux éléments à modifier pour un premier test de déploiement :
 
-- Remplacez `YourLicenseKey` par votre clé de license 3CX.
+- Remplacez `YourLicenseKey` par votre clé de licence 3CX.
 
 ```xml
     <option>
@@ -608,13 +608,13 @@ Une fois votre template terminé, vous pouvez le déployer grâce aux instructio
 
 ### Étape 2 : Déployer l'instance avec le template 
 
-Selon la version et le dimensionnement de votre instance 3CX, le modèle d'instance (*flavor*) à utiliser sera différent. Référez vous au lien suivant pour choisir la bonne instance : <https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/>
+Selon la version et le dimensionnement de votre instance 3CX, le modèle d'instance (*flavor*) à utiliser sera différent. Référez-vous au lien suivant pour choisir la bonne instance : <https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/>
 
 Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
 
 #### Déploiement via l'espace client OVHcloud
 
-Cliquez sur [ce lien](/links/control-panel/publiccloud-projects) pour accéder à la section `Public Cloud`{.action}, puis sélectionnez votre projet.
+Accédez à la section [Public Cloud](/links/control-panel/publiccloud-projects), puis sélectionnez votre projet.
 
 Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. Sélectionnez votre modèle d'instance et la région désirée.
 
@@ -628,7 +628,7 @@ C'est à l'étape suivante, appelée « Configurez votre instance » que vous al
 
 Nommez votre instance, puis cliquez sur `Ajouter`{.action} dans l'encadré `Script de post-installation`.
 
-Dans la boite de texte qui s'affiche, collez le script d'installation généré précédemment.
+Dans la boîte de texte qui s'affiche, collez le script d'installation généré précédemment.
 
 ![ajout du script](images/scriptPostInstall.png){.thumbnail}
 
@@ -642,7 +642,7 @@ Vous pouvez vous connecter à la machine pour vérifier le bon déroulement avec
 tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
 ```
 
-Une fois le déploiement terminé, l'interface d'administration sera accessible via le FQDN donné lors de la souscription à votre license 3CX ou via l'adresse IP de votre instance : `https://ip_publique_instance:5001/`
+Une fois le déploiement terminé, l'interface d'administration sera accessible via le FQDN donné lors de la souscription à votre licence 3CX ou via l'adresse IP de votre instance : `https://ip_publique_instance:5001/`
 
 #### Déploiement via API
 
@@ -665,7 +665,7 @@ curl -X POST "https://eu.api.ovh.com/v1/cloud/project/votre_id_projet/instance" 
 
 Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lignes doivent être échappés par `\n`.
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [L'essentiel pour commencer avec Public Cloud](/pages/public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud)
 
@@ -675,7 +675,7 @@ Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lign
 
 [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

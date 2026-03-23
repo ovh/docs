@@ -19,7 +19,7 @@ Les SMS sont largement utilisés pour diffuser des informations pratiques, suivr
 
 ### Étape 1 : Récupération du Wrapper PHP for OVHcloud APIs
 
-Rendez vous sur le projet [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
+Rendez-vous sur le projet [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 
 Vous allez pouvoir intégrer le wrapper PHP rapidement grâce à composer : [https://getcomposer.org/](https://getcomposer.org/)
 
@@ -59,7 +59,7 @@ L'environnement est prêt, les identifiants sont créés, vous êtes prêt pour 
 
 ### Étape 3 : Mise en place d'un SDK PHP
 
-Pour plus de simplicité nous avons mis en place un SDK PHP que vous pouvez retrouver [ici](https://github.com/ovh/php-ovh-sms).
+Pour plus de simplicité nous avons mis en place un SDK PHP que vous pouvez retrouver sur le [dépôt GitHub php-ovh-sms](https://github.com/ovh/php-ovh-sms).
 
 ### Étape 4 : Connexion basique à l'API
 
@@ -195,7 +195,7 @@ Array
 )
 ```
 
-Vous récupérez bien le compte SMS (ServiceName). Vous obtenez une réponse avec 1 crédit consommé pour un numéro valide. Enfin, vous constatez qu'il n’y pas de SMS en attente d’envoi.
+Vous récupérez bien le compte SMS (ServiceName). Vous obtenez une réponse avec 1 crédit consommé pour un numéro valide. Enfin, vous constatez qu’il n’y a pas de SMS en attente d’envoi.
 
 #### Taille des SMS à caractère commercial
 

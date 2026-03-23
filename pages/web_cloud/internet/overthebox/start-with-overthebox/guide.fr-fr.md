@@ -22,7 +22,7 @@ Que vous soyez à la recherche d'une solution pour une entreprise, d'une configu
 
 - Disposer d'un service [OverTheBox](/links/telecom/overthebox)
 - Au moins un accès à Internet, fourni par [OVHcloud](/links/telecom/offre-internet) ou un autre fournisseur d'accès
-- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source (consultez le guide « [Installer l'image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »)
 
 ## En pratique
 
@@ -50,7 +50,7 @@ Outre les cas d'usage classiques tels que l'amélioration du débit et de la fia
 
 - [Configurer son réseau local (LAN)](/pages/web_cloud/internet/overthebox/middle_configurer_votre_lan) : vous pouvez modifier les paramètres du réseau local, du serveur DHCP ou les DNS.
 - [Comment configurer le pare-feu (firewall) sur OverTheBox ?](/pages/web_cloud/internet/overthebox/middle_redirection_de_port) : pour des raisons de sécurité, vous pouvez configurer votre matériel pour bloquer ou ouvrir certains réseaux.
-- [Modifier les interfaces réseaux](/pages/web_cloud/internet/overthebox/advanced_creer_une_interface_modem_manuellement) : vous pouvez modifier la configuration des interfaces réseaux ou utiliser un autre protocole que le DHCP pour vos interfaces internet.
+- [Modifier les interfaces réseaux](/pages/web_cloud/internet/overthebox/advanced_creer_une_interface_modem_manuellement) : vous pouvez modifier la configuration des interfaces réseaux ou utiliser un autre protocole que le DHCP pour vos interfaces Internet.
 - [Ajouter un accès à distance sur OverTheBox](/pages/web_cloud/internet/overthebox/middle_acces_a_distance) : pour diverses raisons, vous pourriez avoir besoin de vous connecter à votre OverTheBox à distance.
 - [Mettre à jour OverTheBox](/pages/web_cloud/internet/overthebox/config_upgrade) : régulièrement, de nouvelles améliorations sont apportées à OverTheBox. Il est donc important de savoir mettre à jour votre matériel.
 - [Réinitialiser la configuration d'OverTheBox](/pages/web_cloud/internet/overthebox/config_reset) : si vous souhaitez revenir à la configuration par défaut, vous pouvez réinitialiser votre matériel.

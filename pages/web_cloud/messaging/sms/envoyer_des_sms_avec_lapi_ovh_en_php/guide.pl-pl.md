@@ -34,7 +34,7 @@ Twój projekt, a także plik autoload.php umożliwiający zarządzanie wszystkim
 
 Identyfikatory są niezbędne do korzystania z interfejsu API SMS. Identyfikatory te tworzy się jednorazowo w celu określenia aplikacji, która będzie wysyłać wiadomości SMS. Czas ważności tych identyfikatorów można skonfigurować.
 
-Utwórz identyfikatory skryptu (all keys at once) na tej stronie:
+Utwórz identyfikatory skryptu (wszystkie klucze naraz) na tej stronie:
 [https://api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (ten adres URL automatycznie zapewni Ci odpowiednie uprawnienia na potrzeby kroków opisanych w tym przewodniku).
 
 ![tworzenie tokenów](images/img_2451.jpg){.thumbnail}
@@ -59,7 +59,7 @@ W ten sposób uzyskasz identyfikatory dla Twojego skryptu:
 
 ### Etap 3: Wdrożenie SDK PHP
 
-Dla większej prostoty utworzyliśmy zestaw PHP SDK, który znajdziesz [tutaj](https://github.com/ovh/php-ovh-sms).
+Dla większej prostoty utworzyliśmy zestaw PHP SDK, który znajdziesz w [repozytorium GitHub php-ovh-sms](https://github.com/ovh/php-ovh-sms).
 
 ### Etap 4: Podstawowe połączenie z API
 
@@ -200,6 +200,6 @@ Uzyskujesz konto SMS (ServiceName). Otrzymujesz jedną odpowiedź, która zużyw
 
 ## Sprawdź również
 
-W konsoli API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) możesz odkryć inne metody ułatwiające integrację usług SMS, takie jak: wiadomości SMS pozwalające na odpowiedź (dotyczy wyłącznie kont OVHcloud we Francji), masowa wysyłka przy użyciu pliku CSV, wysyłki reklamowe, monitorowanie potwierdzeń odbioru itd.
+W [konsoli API](/links/console) możesz odkryć inne metody ułatwiające integrację usług SMS, takie jak: wiadomości SMS pozwalające na odpowiedź (dotyczy wyłącznie kont OVHcloud we Francji), masowa wysyłka przy użyciu pliku CSV, wysyłki reklamowe, monitorowanie potwierdzeń odbioru itd.
 
 Dołącz do [grona naszych użytkowników](/links/community).

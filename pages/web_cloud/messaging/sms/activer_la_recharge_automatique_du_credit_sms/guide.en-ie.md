@@ -32,18 +32,18 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 0.8 SMS credit is the cost for sending 1 SMS message in Ireland. The price is degressive depending on the number of SMS credits you buy at once. 
 
-You can view the list of SMS packs [here](/links/telecom/sms).
+You can view the list of SMS packs on the [SMS packs page](/links/telecom/sms).
 
 **E.g. to purchase a pack of 100 SMS credits, each credit costs 0.048 €**
 
 Sending 1 SMS message in Ireland costs 0.8 credit. With this pack, you can send 125 SMS messages in Ireland.<br>
 Sending 1 SMS message in India costs 0.4 credit. With this pack, you can send 250 SMS messages in India.
 
-On [this webpage](/links/telecom/sms-prices), you can view the price in credits for sending SMS messages, depending on their destination.
+On the [SMS pricing page](/links/telecom/sms-prices), you can view the price in credits for sending SMS messages, depending on their destination.
 
 > [!primary]
 >
-> An SMS message can only contain a limited number of characters, depending on its encoding. The details on encoding and valid characters is available in the following guide:
+> An SMS message can only contain a limited number of characters, depending on its encoding. The details on encoding and valid characters are available in the following guide:
 > 
 > [Sending SMS messages via the OVHcloud Control Panel](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-2-compose-your-sms-message)
 >
@@ -70,7 +70,7 @@ Then click `Edit`{.action} in the “Manage options” section.
 Finally, fill in the required fields.
 
 - Minimum threshold (1): When this threshold is reached, automatic re-crediting is triggered.
-- Amount to top-up (2): Defines the number of credits to re-credit on to your SMS account. There are 7 possible choices: 100, 200, 250, 500, 1000, 5000 and 10000.
+- Amount to top-up (2): Defines the number of credits to re-credit onto your SMS account. There are 7 possible choices: 100, 200, 250, 500, 1000, 5000 and 10000.
 - Click `Confirm`{.action} to apply the settings.
 
 ![credit sms](images/smscredit03.png){.thumbnail}

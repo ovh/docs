@@ -41,7 +41,7 @@ Es posible solicitar la validación de varias plantillas de mensajes.
 
 > [!primary]
 >
-La validación de las plantillas de mensajes, realizada por el equipo de OVHcloud, es gratuita y puede durar entre uno y dos días laborables.
+> La validación de las plantillas de mensajes, realizada por el equipo de OVHcloud, es gratuita y puede durar entre uno y dos días laborables.
 >
 
 ### 2. Añadir un modelo
@@ -58,7 +58,7 @@ Haga clic en el botón `Acción`{.action} y, a continuación, seleccione `Añadi
 
 ![SMS a Estados Unidos](images/smstousa2.png){.thumbnail}
 
-Rellene los campos en la ventaja emergente que aparece.
+Rellene los campos en la ventana emergente que aparece.
 
 ![SMS a Estados Unidos](images/smstousa3.png){.thumbnail}
 
@@ -105,9 +105,9 @@ Our monitoring system detected your server #SERVER# doesn't respond to ping requ
 
 Una vez que haya creado y validado su plantilla, OVHcloud realiza una comprobación automática para garantizar que el contenido del SMS se corresponde con la plantilla. Si el resultado es positivo, el SMS se envía de la misma forma que para los demás países.
 
-Si envía un SMS a Estados Unidos sin haber creado y validado previamente una plantilla, el SMS será rechazado y recibirá un Premium Tracking Transaction Code (PTT code) 1999. Este código corresponde al mensaje de error «No templates available».
+Si envía un SMS a Estados Unidos sin haber creado y validado previamente una plantilla, el SMS será rechazado y recibirá un Premium Tracking Transaction Code (PTT code) 1999. Este código corresponde al mensaje de error "No templates available".
 
-Puede consultar el resto de códigos PTT en la siguiente [guía](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms).
+Puede consultar el resto de códigos PTT en la guía "[Todo sobre los usuarios de SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)".
 
 ## Más información
 

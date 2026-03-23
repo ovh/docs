@@ -614,7 +614,7 @@ For our guide, we will use a **Discovery D2-4** instance.
 
 #### Deployment via the OVHcloud Control Panel
 
-Click [this link](/links/control-panel/publiccloud-projects) to access the `Public Cloud`{.action} section, then select your project.
+Go to the [Public Cloud](/links/control-panel/publiccloud-projects) section, then select your project.
 
 On the homepage, click `Create an instance`{.action}. Select your instance flavor and the region you want.
 
@@ -665,7 +665,7 @@ curl -X POST "https://eu.api.ovh.com/v1/cloud/project/your_project_id/instance" 
 
 In this JSON, insert the template into `userData`. Warning: line breaks must be escaped by `\n`.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [All you need to know to get started with Public Cloud](/pages/public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud)
 

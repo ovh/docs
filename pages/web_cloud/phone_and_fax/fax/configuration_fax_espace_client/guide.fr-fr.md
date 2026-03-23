@@ -17,7 +17,7 @@ Vous pouvez configurer votre ligne Fax directement via votre espace client OVHcl
 <!-- CP-NAV-START:telecom-voip-fax -->
 ---
 
-### Accès à l’espace client OVHcloud
+### Accès à l'espace client OVHcloud
 
 - **Lien direct :** [VoIP & Fax](/links/control-panel/telecom-voip-fax)
 - **Pour accéder à vos services :** `Télécom`{.action} > `VoIP & Fax`{.action} > Sélectionnez votre groupe de téléphonie
@@ -31,7 +31,7 @@ Sélectionnez l’onglet `Services`{.action} puis la ligne Fax concernée.
 
 ### Mot de passe fax
 
-L'envoi de télécopies par e-mail ou via le logiciel Ecofax nécessite de définir un mot de passe fax.
+L'envoi de télécopies par e-mail ou via le logiciel EcoFax nécessite de définir un mot de passe fax.
 
 Pour le définir, sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Mot de passe fax`{.action}.
 
@@ -41,7 +41,7 @@ Le mot de passe doit contenir au moins 6 caractères.
 
 > [!primary]
 >
-> Dans le cas d'une ancienne offre de type « Ecofax Perso », la modification du mot de passe s'effectue depuis l'onglet `Configuration du fax`{.action} puis en cliquant sur `Générer`{.action}.
+> Dans le cas d'une ancienne offre de type « EcoFax Perso », la modification du mot de passe s'effectue depuis l'onglet `Configuration du fax`{.action} puis en cliquant sur `Générer`{.action}.
 >
 
 ### Options de configuration
@@ -52,7 +52,7 @@ Sélectionnez votre ligne FAX, cliquez sur l'onglet `Fax`{.action} puis sur `Con
 
 > [!primary]
 >
-> Dans le cas d'une ancienne offre de type « Ecofax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
+> Dans le cas d'une ancienne offre de type « EcoFax Perso », l'envoi des fax est possible si le nombre de fax restant est positif. Dans le cas contraire, vous pouvez commander des fax via l'onglet situé juste en dessous.
 >
 
 #### Options générales
@@ -65,14 +65,14 @@ Vous pouvez aussi paramétrer le nombre de tentatives d'envoi maximum, dans le c
 
 ![options envoi](images/options_generales.jpg){.thumbnail}
 
-#### Entête des fax émis
+#### En-tête des fax émis
 
-Vous pouvez personnaliser l'entête de vos télécopies selon la méthode ci-dessous.
+Vous pouvez personnaliser l'en-tête de vos télécopies selon la méthode ci-dessous.
 
 ![entete fax](images/entete_des_fax_emis.jpg){.thumbnail}
 
-Une personnalisation défectueuse de l'entête peut être à l'origine de difficultés d'envoi de télécopies.
-<br>Dans ce cas, vous pouvez rétablir l'entête par défaut en copiant la valeur ci-dessous :
+Une personnalisation défectueuse de l'en-tête peut être à l'origine de difficultés d'envoi de télécopies.
+<br>Dans ce cas, vous pouvez rétablir l'en-tête par défaut en copiant la valeur ci-dessous :
 
 ```console
 De %%l|%c|Page %%P sur %%T
