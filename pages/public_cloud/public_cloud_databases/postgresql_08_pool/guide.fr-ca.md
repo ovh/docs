@@ -55,7 +55,7 @@ It makes sense to have enough connections so that each CPU core on the server ha
 
 ### Create a connection pool
 
-Select your PostgreSQL instance, then select the `Pools`{.action} tab.
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance, then select the `Pools`{.action} tab.
 Click on `Add a pool`{.action}, and fill the form.
 
 The settings available are:

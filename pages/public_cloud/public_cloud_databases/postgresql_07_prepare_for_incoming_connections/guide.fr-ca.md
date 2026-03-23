@@ -34,6 +34,8 @@ Before making a connection, we need to verify that our PostgreSQL instance is co
 
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+
 #### Step 1: Verify your user roles and password
 
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.

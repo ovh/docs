@@ -19,6 +19,17 @@ You can find an example on the [Github examples repository](https://github.com/o
 - [Configure your MySQL instance](/pages/public_cloud/public_cloud_databases/mysql_07_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). *This guide was made in PHP 8.0.8*.
 
+<!-- CP-NAV-START:publiccloud-projects -->
+---
+
+### OVHcloud Control Panel Access
+
+- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
+- **Navigation path:** `Public Cloud`{.action} > Select your project
+
+---
+<!-- CP-NAV-END:publiccloud-projects -->
+
 ## Concept
 
 A MySQL instance can be managed through multiple ways.
@@ -86,6 +97,7 @@ array(2) {
 
 #### Using PDO
 
+Click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.  
 Select the `General Information`{.action} tab. In the **Login Informations** section, download the CA certificate.
 
 ```php

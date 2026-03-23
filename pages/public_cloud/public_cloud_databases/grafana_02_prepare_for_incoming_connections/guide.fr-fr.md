@@ -31,6 +31,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ### Configure your Dashboards instance to accept incoming connections
 
 Before making a connection, we need to verify that our Dashboards instance is correctly configured.
+Click on `Data Analysis`{.action} in the left-hand navigation bar and select your Dashboards instance.
 
 #### Step 1: Verify your user roles and password
 

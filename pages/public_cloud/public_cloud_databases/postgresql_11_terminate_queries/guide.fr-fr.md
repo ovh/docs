@@ -30,6 +30,8 @@ Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not sto
 
 ### Terminate long-running queries with OVHcloud Control Panel
 
+Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+
 Click the `Queries in progress`{.action} tab.
 This table is regrouping ongoing queries with some filtering options, such as showing idle or active connections.
 
