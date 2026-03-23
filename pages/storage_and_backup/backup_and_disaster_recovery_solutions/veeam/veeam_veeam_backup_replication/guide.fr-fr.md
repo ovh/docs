@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2026-03-10
+updated: 2026-03-23
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 > [!warning]
 >
-> Si une machine virtuelle est protégée à l'aide de plusieurs méthodes de sauvegarde (par exemple [Sauvegarde VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html? ver=13){.external} et [la sauvegarde par Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13){.external}), chaque méthode consomme une licence distincte et est facturée indépendamment.
+> Si une machine virtuelle est protégée à l'aide de plusieurs méthodes de sauvegarde (par exemple [VM backup](https://helpcenter.veeam.com/docs/vbr/qsg/vm_backup.html?ver=13) et [Agent backup](https://helpcenter.veeam.com/docs/vbr/userguide/protect_comp.html?ver=13)), chaque méthode consomme une licence distincte et est facturée indépendamment.
 >
 > Pour éviter des frais supplémentaires, protégez chaque machine virtuelle en utilisant **une seule méthode de sauvegarde**.
 >
