@@ -1,7 +1,7 @@
 ---
 title: "How to protect a Game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud Game DDoS Protection firewall"
-updated: 2026-03-20
+updated: 2026-03-23
 ---
 
 <style>
@@ -86,7 +86,7 @@ You can filter IP addresses by using the `All service types`{.action} drop-down 
 >> - Select `Dedicated servers`{.action}.
 >> - Click on the Game server you wish to configure.
 >> - In the `Network` section of the `General information` tab, find the "Game DDoS protection" section.
->> - Click the `...`{.action} button and select `Configure Game Protection`. You will be taken to the list of IP addresses assigned to your server.
+>> - Click the `...`{.action} button and select `Configure Game Protection`{.action}. You will be taken to the list of IP addresses assigned to your server.
 > From the **Public IP Addresses** page
 >> - Open the `Network`{.action} section in the left-hand sidebar.
 >> - Select `Public IP Addresses`{.action}.
