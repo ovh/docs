@@ -14,17 +14,6 @@ This tutorial explains how to configure Grafana® to use the API and how make ca
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A Dashboards service running on your OVHcloud Public Cloud project (see [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a managed Dashboards service)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 ### Create a Grafana® service account
