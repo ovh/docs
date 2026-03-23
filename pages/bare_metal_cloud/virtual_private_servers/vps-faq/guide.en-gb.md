@@ -229,6 +229,19 @@ However, for specific software configuration assistance, we recommend reaching o
 
 ///
 
+/// details | What are the best practices for sending emails from a VPS?
+
+To prevent your emails from being marked as spam, you need to configure your server correctly.
+
+This includes:
+- email authentication (SPF, DKIM, DMARC),
+- reverse DNS (PTR) configuration,
+- following email providers’ best practices.
+
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
+
+///
+
 /// details | Can I install more than one operating system on my VPS?
 
 OVHcloud installation templates only allow for one operating system.  

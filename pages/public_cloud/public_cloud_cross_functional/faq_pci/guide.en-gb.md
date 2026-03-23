@@ -153,6 +153,19 @@ You can also find all the details in the [OpenStack documentation](https://docs.
 
 ///
 
+/// details | What are the best practices for sending emails from a public cloud instance?
+
+To prevent your emails from being marked as spam, you need to configure your infrastructure correctly.
+
+This includes, in particular:
+- email authentication (SPF, DKIM, DMARC),
+- reverse DNS (PTR) configuration,
+- adherence to email providers’ best practices.
+
+For more details, see our dedicated guide: [How to prevent your emails from being marked as spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
+
+///
+
 ### Security
 
 /// details | How are my servers secured?

@@ -230,6 +230,19 @@ Toutefois, pour obtenir une assistance spécifique en matière de configuration 
 
 ///
 
+/// details | Quelles sont les bonnes pratiques pour l’envoi d’emails depuis un VPS ?
+
+Pour éviter que vos emails soient considérés comme du spam, il est nécessaire de configurer correctement votre serveur.
+
+Cela inclut notamment :
+- l’authentification des emails (SPF, DKIM, DMARC),
+- la configuration du reverse DNS (PTR),
+- le respect des bonnes pratiques des fournisseurs de messagerie.
+
+Pour plus de détails, consultez notre guide dédié : [Comment éviter que vos e-mails ne soient marqués comme spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
+
+///
+
 /// details | Puis-je installer plus d’un système d’exploitation sur mon VPS ?
 
 Les modèles d'installation d'OVHcloud ne permettent qu'un seul système d'exploitation.  
