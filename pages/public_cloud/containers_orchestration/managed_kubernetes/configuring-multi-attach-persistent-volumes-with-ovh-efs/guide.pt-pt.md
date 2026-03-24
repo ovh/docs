@@ -38,16 +38,6 @@ It also assumes you have an OVHcloud Enterprise File Storage already available. 
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

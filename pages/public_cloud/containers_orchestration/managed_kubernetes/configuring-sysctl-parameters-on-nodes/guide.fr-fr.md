@@ -19,17 +19,6 @@ But for some specific usecases, you may have to customize nodes parameters.
 - You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed
 - Your Kubeconfig is exported into your terminal following this guide : [Configuring Kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### Accès à l'espace client OVHcloud
-
-- **Lien direct :** [Projets Public Cloud](/links/control-panel/publiccloud-projects)
-- **Pour accéder à vos services :** `Public Cloud`{.action} > Sélectionnez votre projet
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 ### Step 1: Create a privileged DaemonSet and define the value to modify

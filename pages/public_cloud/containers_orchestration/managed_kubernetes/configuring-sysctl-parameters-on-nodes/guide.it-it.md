@@ -19,16 +19,6 @@ But for some specific usecases, you may have to customize nodes parameters.
 - You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line tool installed
 - Your Kubeconfig is exported into your terminal following this guide : [Configuring Kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

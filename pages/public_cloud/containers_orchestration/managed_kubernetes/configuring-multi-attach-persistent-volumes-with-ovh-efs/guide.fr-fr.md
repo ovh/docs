@@ -38,16 +38,6 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 It also assumes you have an OVHcloud Enterprise File Storage already available. If you don't, you can [order one in the OVHcloud Control Panel](/links/manager).
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
 
 ## Instructions
 

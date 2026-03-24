@@ -17,17 +17,6 @@ It also assumes you have an OVHcloud Cloud Disk Array already available. If you 
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
-<!-- CP-NAV-START:publiccloud-projects -->
----
-
-### OVHcloud Control Panel Access
-
-- **Direct link:** [Public Cloud Projects](/links/control-panel/publiccloud-projects)
-- **Navigation path:** `Public Cloud`{.action} > Select your project
-
----
-<!-- CP-NAV-END:publiccloud-projects -->
-
 ## Instructions
 
 To configure OVHcloud Cloud Disk Array, you need to use the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
@@ -93,7 +82,9 @@ Because your nodes are configured to be routed by the private network gateway, y
 
 By using Public Cloud Gateway through our Managed Kubernetes Service, Public IPs on nodes are only for management purposes: [MKS Known Limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits)
 
-You can get your OVHcloud Internet Gateway's Public IP by navigating to `Network / Gateway`{.action} > `Public IP`{.action} in the left-hand menu.
+You can get your OVHcloud Internet Gateway's Public IP by navigating through the [OVHcloud Control Panel](/links/manager):
+
+`Public Cloud`{.action} > Select your tenant > `Network / Gateway`{.action} > `Public IP`{.action}
 
 You can also use the following API endpoint to retrieve your OVHcloud Internet Gateway's Public IP:
 
