@@ -1,12 +1,12 @@
 ---
 title: 'Gestionar la facturación de sus cuentas Exchange'
 excerpt: 'Cómo gestionar la facturación de un servicio Exchange'
-updated: 2025-09-22
+updated: 2026-03-24
 ---
 
 ## Objetivo
 
-Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible de la facturación de las cuentas. Esta guía explica cómo configurarla.
+El servicio Hosted Exchange permite una gestión flexible de la facturación de las cuentas. Esta guía explica cómo configurarla.
 
 **Descubra cómo gestionar las suscripciones de sus cuentas Exchange.**
 
@@ -43,7 +43,7 @@ En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acc
 
 Acceda a la sección «Mis servicios» del área de cliente. Comprobará que se ha aplicado un filtro que solo muestra la plataforma Exchange que se va a modificar.
 
-Haga clic en `...`{.action} en la parte superior derecha de la plataforma Exchange y luego en `«Modificar la facturación`{.action}.
+Haga clic en `...`{.action} en la parte superior derecha de la plataforma Exchange y luego en `Modificar la facturación`{.action}.
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
@@ -64,28 +64,6 @@ Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja es
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
 
 Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el botón `...`{.action} delante de la cuenta correspondiente y luego en `Reiniciar`{.action}. Una vez reiniciada, la cuenta permanecerá en blanco hasta su expiración.
-
-### Private Exchange
-
-> [!primary]
->
-> En una plataforma Private Exchange, las cuentas solo admiten la renovación mensual. No se puede configurar la periodicidad.
-
-#### Contratar cuentas adicionales
-
-Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Acciones`{.action} en la parte superior derecha y luego en `Añadir una cuenta`{.action} La cuenta se facturará para el mes en curso.
-
-![billing_exchange](images/billing-exchange-06.png){.thumbnail}
-
-#### Eliminar cuentas
-
-> [!warning]
->
-> Para poder eliminar una cuenta de correo en una plataforma Private Exchange, **es necesario que esta haya sido creada** (asociada al dominio de su plataforma Exchange). No se puede eliminar una cuenta no configurada.
-
-En la pestaña `Cuentas de correo`{.action}, haga clic en `...`{.action} a la derecha de la cuenta correspondiente y luego en `Eliminar`{.action}. La cuenta se eliminará de la plataforma de inmediato, por lo que no será necesario darla de baja.
-
-![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
 ### Dar de baja la plataforma
 

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurer son adresse e-mail sur Outlook classique pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook classique pour Windows"
-updated: 2026-01-30
+updated: 2026-03-24
 ---
 
 <style>
@@ -251,12 +251,6 @@ C’est pourquoi nous vous invitons à consulter le chapitre correspondant à l�
 >> ![Outlook](images/config-outlook-legacy-mxplan07.png){.thumbnail}
 >>
 >> La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sortant**. Cliquez sur la partie que vous souhaitez modifier.
->>
->> > [!primary]
->> >
->> > Dans notre exemple, le nom de serveur utilisé est « pro**?**.mail.ovh.net ». Vous devrez remplacer le caractère « ? » par le chiffre correspondant au serveur de votre service Email Pro.
->> >
->> > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Email Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >>
 >> ![Outlook](images/config-outlook-legacy-mxplan08.png){.thumbnail}
 >>

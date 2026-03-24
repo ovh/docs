@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
 excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>

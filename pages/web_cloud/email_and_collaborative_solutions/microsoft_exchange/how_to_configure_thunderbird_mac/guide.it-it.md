@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurare l'indirizzo e-mail su Thunderbird per macOS"
 excerpt: 'Scopri come configurare il tuo indirizzo e-mail Exchange su Thunderbird per macOS'
-updated: 2025-09-19
+updated: 2026-03-24
 ---
 
 <style>
