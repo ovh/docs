@@ -1,7 +1,7 @@
 ---
 title: 'Backup e exportação de uma base de dados no servidor de bases de dados'
-excerpt: 'Saiba como fazer o backup e a exportação de uma base de dados'
-updated: 2026-03-23
+excerpt: 'Saiba como fazer o backup e a exportação de uma base de dados no servidor Web Cloud Databases a partir da Área de Cliente OVHcloud ou do phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,13 +110,13 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 
 ### Salvaguardar e exportar uma base de dados fora da Área de Cliente
 
-Se a RAM disponível no servidor não permitir realizar a exportação desejada, utilize a ferramenta OVHcloud na Área de Cliente, que utiliza recursos externos à sua solução. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente) deste guia.
+Se a RAM disponível no servidor não permitir realizar a exportação desejada, utilize a ferramenta OVHcloud na Área de Cliente, que utiliza recursos externos à sua solução. Consulte a secção "[Salvaguardar e exportar uma base de dados a partir da Área de Cliente](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente)" deste guia.
 
 **Clique no método de exportação pretendido para visualizar o conteúdo.**
 
 /// details | Exportar uma base de dados MySQL ou MariaDB a partir do phpMyAdmin OVHcloud
 
-Para exportar a sua base de dados diretamente a partir do phpMyAdmin, é necessário conectar-se primeiro. Para tal, consulte o guia [«Conexão a uma base de dados»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Para exportar a sua base de dados diretamente a partir do phpMyAdmin, é necessário conectar-se primeiro. Para tal, consulte o guia "[Conexão a uma base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja exportar e, a seguir, no separador `Exportar`{.action} no topo.
 

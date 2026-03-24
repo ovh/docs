@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your database server'
 excerpt: 'Find out how to configure and optimise your database server'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>
@@ -98,7 +98,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 3**
 >>
->> In the window that appears, enter the IP address or mask you wish to authorise in `IP/mask`{.action}, then add a description if you wish. Then decide whether you want to grant access to databases only, or to SFTP as well. Finally, click `Confirm`{.action}.
+>> Enter the IP address or mask to authorise in `IP/mask`{.action} and optionally add a description. Choose whether to grant access to databases only or also to SFTP, then click `Confirm`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 

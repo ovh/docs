@@ -1,7 +1,7 @@
 ---
 title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
-excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
-updated: 2026-03-23
+excerpt: 'Cómo realizar el backup y la exportación de una base de datos en su servidor Web Cloud Databases desde el área de cliente de OVHcloud o a través de phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,13 +110,13 @@ Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
 
 ### Copia de seguridad y exportación de una base de datos fuera del área de cliente
 
-Si la RAM disponible en su servidor no permite realizar la exportación deseada, utilice la herramienta OVHcloud en el área de cliente, que utiliza recursos externos a su solución. Consulte el apartado [«Guardar y exportar una base de datos desde el área de cliente»](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
+Si la RAM disponible en su servidor no permite realizar la exportación deseada, utilice la herramienta OVHcloud en el área de cliente, que utiliza recursos externos a su solución. Consulte el apartado "[Guardar y exportar una base de datos desde el área de cliente](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente)" de esta guía.
 
 **Haga clic en el método de exportación que desee para ver el contenido.**
 
 /// details | Exportar una base de datos MySQL o MariaDB desde phpMyAdmin OVHcloud
 
-Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía [«Conectarse a una base de datos»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía "[Conectarse a una base de datos](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que quiera exportar y, a continuación, en la pestaña `Exportar`{.action} en la parte superior.
 

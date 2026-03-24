@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Jak autoryzować adres IP?"
 excerpt: "Dowiedz się, jak autoryzować jeden lub więcej adresów IP, aby uzyskać dostęp do rozwiązania Web Cloud Databases"
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

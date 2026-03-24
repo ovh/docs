@@ -1,7 +1,7 @@
 ---
 title: 'Salvare ed esportare un database sul server di database'
-excerpt: 'Scopri come salvare ed esportare il tuo database'
-updated: 2026-03-23
+excerpt: 'Scopri come salvare ed esportare un database dal tuo server Web Cloud Databases dallo Spazio Cliente OVHcloud o tramite phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,13 +110,13 @@ Clicca sulle schede qui di seguito per visualizzare ciascuno dei **4** passaggi.
 
 ### Salvare ed esportare un database al di fuori dello Spazio Cliente
 
-Se la RAM disponibile sul server non consente di effettuare l'esportazione desiderata, utilizza lo strumento OVHcloud nello Spazio Cliente, che utilizza risorse esterne alla tua soluzione. Consulta la sezione [«Salvare ed esportare un database dallo Spazio Cliente»](./#salvare-ed-esportare-un-database-dallo-spazio-cliente) di questa guida.
+Se la RAM disponibile sul server non consente di effettuare l'esportazione desiderata, utilizza lo strumento OVHcloud nello Spazio Cliente, che utilizza risorse esterne alla tua soluzione. Consulta la sezione "[Salvare ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)" di questa guida.
 
 **Clicca sul metodo di esportazione che preferisci per visualizzare il contenuto.**
 
 /// details | Esportare un database MySQL o MariaDB da phpMyAdmin OVHcloud
 
-Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare prima l'accesso. Per farlo, consulta la guida [«Connettersi a un database»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare prima l'accesso. Per farlo, consulta la guida "[Connettersi a un database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi sulla scheda `Esporta`{.action} in alto.
 

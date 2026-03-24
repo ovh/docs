@@ -1,7 +1,7 @@
 ---
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 ## Ziel

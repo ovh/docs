@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
-excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2026-03-23
+excerpt: "Découvrez comment restaurer et importer une base de données sur votre serveur Web Cloud Databases depuis l'espace client OVHcloud ou via phpMyAdmin"
+updated: 2026-03-24
 ---
 
 <style>
@@ -132,26 +132,26 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Importer une base de données hors espace client
 
-Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) de cette documentation.
+Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l’import souhaité en dehors de l’espace client. Si tel est le cas, nous vous recommandons d’utiliser l’outil OVHcloud dans l’espace client. Reportez-vous à la section « [Restaurer et importer une base de données depuis l’espace client](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) » de cette documentation.
 
 **Cliquez sur la méthode d'importation de votre choix pour afficher le contenu.**
 
 /// details | Importer une base MySQL ou MariaDB depuis phpMyAdmin
 
-Pour importer votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du paragraphe [« Se connecter à une base de données MySQL ou MariaDB »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb).
+Pour importer votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du paragraphe « [Se connecter à une base de données MySQL ou MariaDB](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb) ».
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
-Cliquez ensuite sur l'onglet `Importer`{.action}.
+Cliquez ensuite sur l’onglet `Importer`{.action}.
 
 Sélectionnez votre fichier de sauvegarde en cliquant sur `Parcourir`{.action} (attention, le fichier ne peut pas dépasser 100 Mo).
 
 > [!primary]
 >
-> Nous vous conseillons de fractionner votre base de données en plusieurs fichiers lorsqu'elle excède les 100 Mo et d'effectuer plusieurs importations depuis phpMyAdmin.
-> L'importation de fichier dépassant les 100 Mo peut se faire depuis l'espace client en suivant l'étape [« Restaurer et importer une base de données depuis l'espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client).
+> Nous vous conseillons de fractionner votre base de données en plusieurs fichiers lorsqu’elle excède les 100 Mo et d’effectuer plusieurs importations depuis phpMyAdmin.
+> L’importation de fichier dépassant les 100 Mo peut se faire depuis l’espace client en suivant l’étape « [Restaurer et importer une base de données depuis l’espace client](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) ».
 
-Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l'importation.
+Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l’importation.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
@@ -179,7 +179,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l'accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - Afin d’éviter que quelqu’un accède à ce fichier comportant des données sensibles, pensez à sécuriser l’accès à celui-ci en vous aidant du guide : [Comment protéger l’accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 
 ///
@@ -206,7 +206,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide [Comment protéger l'accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - Afin d’éviter que quelqu’un accède à ce fichier comportant des données sensibles, pensez à sécuriser l’accès à celui-ci en vous aidant du guide [Comment protéger l’accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 
 ///

@@ -1,7 +1,7 @@
 ---
 title: 'Przywracanie i importowanie bazy danych na serwer baz danych'
-excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-updated: 2026-03-23
+excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych na serwerze Web Cloud Databases z poziomu Panelu klienta OVHcloud lub przez phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>

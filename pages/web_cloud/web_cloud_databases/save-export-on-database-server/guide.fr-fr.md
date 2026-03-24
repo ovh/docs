@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
-excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2026-03-23
+excerpt: "Découvrez comment sauvegarder et exporter une base de données sur votre serveur Web Cloud Databases depuis l'espace client OVHcloud ou via phpMyAdmin"
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,13 +110,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Sauvegarder et exporter une base de données hors espace client
 
-Si la RAM disponible sur votre serveur ne permet pas de réaliser l'export souhaité, utilisez l'outil OVHcloud dans l'espace client, qui utilise des ressources externes à votre offre. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) de cette documentation.
+Si la RAM disponible sur votre serveur ne permet pas de réaliser l'export souhaité, utilisez l'outil OVHcloud dans l'espace client, qui utilise des ressources externes à votre offre. Reportez-vous à la section « [Sauvegarder et exporter une base de données depuis l'espace client](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) » de cette documentation.
 
 **Cliquez sur la méthode d’exportation de votre choix pour afficher le contenu.**
 
 /// details | Exporter une base MySQL ou MariaDB depuis phpMyAdmin OVHcloud
 
-Pour exporter votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du guide [« Se connecter à une base de données »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Pour exporter votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du guide « [Se connecter à une base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) ».
 
 Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que vous souhaitez exporter et ensuite sur l’onglet `Exporter`{.action} en haut.
 

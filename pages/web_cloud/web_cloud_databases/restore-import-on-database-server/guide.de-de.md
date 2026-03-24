@@ -1,7 +1,7 @@
 ---
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
-excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-updated: 2026-03-23
+excerpt: 'Erfahren Sie, wie Sie eine Datenbank auf Ihrem Web Cloud Databases Server über das OVHcloud Kundencenter oder phpMyAdmin wiederherstellen und importieren'
+updated: 2026-03-24
 ---
 
 <style>
@@ -132,13 +132,13 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 
 ### Datenbank außerhalb des Kundencenters importieren
 
-In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglicherweise nicht für den gewünschten Import außerhalb des Kundencenters aus. In diesem Fall empfehlen wir, das OVHcloud Tool im Kundencenter zu verwenden. Lesen Sie dazu den Abschnitt ["Datenbank über das Kundencenter wiederherstellen und importieren"](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren) dieser Anleitung.
+In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglicherweise nicht für den gewünschten Import außerhalb des Kundencenters aus. In diesem Fall empfehlen wir, das OVHcloud Tool im Kundencenter zu verwenden. Lesen Sie dazu den Abschnitt "[Datenbank über das Kundencenter wiederherstellen und importieren](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren)" dieser Anleitung.
 
 **Klicken Sie auf die Importmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
 
 /// details | MySQL oder MariaDB Datenbank über phpMyAdmin importieren
 
-Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst einloggen. Folgen Sie hierzu dem Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
+Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst einloggen. Folgen Sie hierzu dem Abschnitt "[Mit einer MySQL oder MariaDB Datenbank verbinden](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden)".
 
 Wenn Sie in phpMyAdmin eingeloggt sind, wählen Sie die Datenbank aus, indem Sie auf ihren Namen klicken.
 
@@ -149,7 +149,7 @@ Wählen Sie Ihre Backup-Datei aus, indem Sie auf `Durchsuchen`{.action} klicken 
 > [!primary]
 >
 > Wir empfehlen Ihnen, Ihre Datenbank in mehrere Dateien aufzuteilen, wenn sie mehr als 100 MB groß ist, und mehrere Importe über phpMyAdmin durchzuführen.
-> Der Import von Dateien über 100 MB kann über das Kundencenter erfolgen, indem Sie dem Abschnitt ["Datenbank über das Kundencenter wiederherstellen und importieren"](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren) folgen.
+> Der Import von Dateien über 100 MB kann über das Kundencenter erfolgen, indem Sie dem Abschnitt "[Datenbank über das Kundencenter wiederherstellen und importieren](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren)" folgen.
 
 Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.action}, um den Import zu starten.
 

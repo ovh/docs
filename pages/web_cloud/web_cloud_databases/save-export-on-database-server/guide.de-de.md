@@ -1,7 +1,7 @@
 ---
 title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
-excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank sichern und exportieren'
-updated: 2026-03-23
+excerpt: 'Erfahren Sie, wie Sie eine Datenbank auf Ihrem Web Cloud Databases Server über das OVHcloud Kundencenter oder phpMyAdmin sichern und exportieren'
+updated: 2026-03-24
 ---
 
 <style>
@@ -109,13 +109,13 @@ Klicken Sie auf die unten stehenden Tabs, um die **4** Schritte nacheinander anz
 
 ### Datenbank außerhalb des Kundencenters sichern und exportieren
 
-Wenn der verfügbare RAM auf Ihrem Server den gewünschten Export nicht ermöglicht, verwenden Sie das OVHcloud-Tool im Kundencenter, das Ressourcen außerhalb Ihres Angebots nutzt. Weitere Informationen finden Sie im Abschnitt ["Datenbank über das Kundencenter sichern und exportieren"](./#datenbank-uber-das-kundencenter-sichern-und-exportieren) dieser Anleitung.
+Wenn der verfügbare RAM auf Ihrem Server den gewünschten Export nicht ermöglicht, verwenden Sie das OVHcloud-Tool im Kundencenter, das Ressourcen außerhalb Ihres Angebots nutzt. Weitere Informationen finden Sie im Abschnitt "[Datenbank über das Kundencenter sichern und exportieren](./#datenbank-uber-das-kundencenter-sichern-und-exportieren)" dieser Anleitung.
 
 **Klicken Sie auf die Exportmethode Ihrer Wahl, um den Inhalt anzuzeigen.**
 
 /// details | MySQL- oder MariaDB-Datenbank über OVHcloud phpMyAdmin exportieren
 
-Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst einloggen. Folgen Sie dazu der Anleitung ["Mit einer Datenbank verbinden"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst einloggen. Folgen Sie dazu der Anleitung "[Mit einer Datenbank verbinden](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank, die Sie exportieren möchten, und anschließend auf den Tab `Exportieren`{.action} oben.
 

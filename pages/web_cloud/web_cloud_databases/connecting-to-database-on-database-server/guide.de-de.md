@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Verbindung mit einer Datenbank herstellen"
 excerpt: "Erfahren Sie hier, wie Sie sich mit einer Datenbank auf Ihrer Web Cloud Databases Lösung verbinden"
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

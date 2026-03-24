@@ -1,7 +1,7 @@
 ---
 title: 'Restoring and importing a database to your database server'
-excerpt: 'Find out how to restore and import your database'
-updated: 2026-03-23
+excerpt: 'Find out how to restore and import a database on your Web Cloud Databases server from the OVHcloud Control Panel or via phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -132,13 +132,13 @@ Click on the tabs below to view each of the **4** steps.
 
 ### Importing a database outside the Control Panel
 
-In some cases, the RAM available on your database server may not be sufficient to perform the desired import outside the Control Panel. If so, we recommend using the OVHcloud tool in the Control Panel. Refer to the section ["Restoring and importing a database from the Control Panel"](./#restoring-and-importing-a-database-from-the-control-panel) of this guide.
+In some cases, the RAM available on your database server may not be sufficient to perform the desired import outside the Control Panel. If so, we recommend using the OVHcloud tool in the Control Panel. Refer to the section "[Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel)" of this guide.
 
 **Click on the import method of your choice to view the content.**
 
 /// details | Importing a MySQL or MariaDB database from phpMyAdmin
 
-To import your database directly from phpMyAdmin, you must first log in by following the section ["Connecting to a MySQL or MariaDB database"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connecting-to-a-mysql-or-mariadb-database).
+To import your database directly from phpMyAdmin, you must first log in by following the section "[Connecting to a MySQL or MariaDB database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connecting-to-a-mysql-or-mariadb-database)".
 
 Once logged in to phpMyAdmin, select your database by clicking on its name.
 
@@ -149,7 +149,7 @@ Select your backup file by clicking `Browse`{.action} (the file cannot exceed 10
 > [!primary]
 >
 > We recommend splitting your database into several files if it exceeds 100 MB, and performing multiple imports from phpMyAdmin.
-> You can import files larger than 100 MB from the Control Panel by following the step ["Restoring and importing a database from the Control Panel"](./#restoring-and-importing-a-database-from-the-control-panel).
+> You can import files larger than 100 MB from the Control Panel by following the step "[Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel)".
 
 Leave the default options and click `Run`{.action} to start the import.
 

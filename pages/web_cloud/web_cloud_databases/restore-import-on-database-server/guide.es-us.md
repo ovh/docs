@@ -1,7 +1,7 @@
 ---
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
-excerpt: 'Cómo restaurar e importar la base de datos'
-updated: 2026-03-23
+excerpt: 'Cómo restaurar e importar una base de datos en su servidor Web Cloud Databases desde el área de cliente de OVHcloud o a través de phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -45,7 +45,7 @@ Si se produce un error en la base de datos, es necesario poder restaurar una cop
 >
 > Las soluciones [Web Cloud Databases](/links/web/databases) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 >
-> - No hay acceso de superusuario «root».
+> - No hay acceso de superusuario "root".
 > - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQuirreL SQL o Adminer es totalmente compatible.
 
 ### Restaurar e importar una base de datos desde el área de cliente
@@ -65,7 +65,7 @@ Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
 >>
 >> Haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> En la columna **«Copias de seguridad»**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
+>> En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 >>
 > **Paso 3**
 >>
@@ -108,37 +108,37 @@ Haga clic en las pestañas siguientes para ver cada uno de los **4** pasos.
 >>
 >> **1 - Importar un nuevo archivo**
 >>
->> Haga clic en **«Importar un nuevo archivo»** y luego en `Siguiente`{.action}.
+>> Haga clic en **"Importar un nuevo archivo"** y luego en `Siguiente`{.action}.
 >>
 >> Escriba un nombre para el archivo importado, haga clic en `Navegar`{.action} para seleccionarlo, luego en `Enviar`{.action} y por último en `Siguiente`{.action}.
 >>
 >> > [!warning]
 >> >
->> > El archivo debe tener el formato «.sql», «.txt» o «.gz».
+>> > El archivo debe tener el formato ".sql", ".txt" o ".gz".
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 >>
->> Si lo desea, marque **«Vaciar la base de datos actual»** antes de la importación y **«Enviar un email al final de la importación»** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud, y haga clic en `Aceptar`{.action}.
+>> Si lo desea, marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud, y haga clic en `Aceptar`{.action}.
 >>
 >> **2 - Utilizar un archivo existente**
 >>
->> Si ya había importado un archivo anteriormente, puede seleccionar la opción **«Importar un archivo existente»**.
+>> Si ya había importado un archivo anteriormente, puede seleccionar la opción **"Importar un archivo existente"**.
 >>
 >> Seleccione el archivo en el menú desplegable y haga clic en `Siguiente`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
->> Si lo desea, marque **«Vaciar la base de datos actual»** antes de la importación y **«Enviar un email al final de la importación»** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud, y haga clic en `Aceptar`{.action}.
+>> Si lo desea, marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud, y haga clic en `Aceptar`{.action}.
 
 ### Importar una base de datos fuera del área de cliente
 
-En algunos casos, la RAM disponible en su servidor de bases de datos no permite realizar la importación deseada fuera del área de cliente. En ese caso, le recomendamos que utilice la herramienta de OVHcloud en el área de cliente. Consulte la sección [«Restaurar e importar una base de datos desde el área de cliente»](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
+En algunos casos, la RAM disponible en su servidor de bases de datos no permite realizar la importación deseada fuera del área de cliente. En ese caso, le recomendamos que utilice la herramienta de OVHcloud en el área de cliente. Consulte la sección "[Restaurar e importar una base de datos desde el área de cliente](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente)" de esta guía.
 
 **Haga clic en el método de importación que prefiera para ver el contenido.**
 
 /// details | Importar una base MySQL o MariaDB desde phpMyAdmin
 
-Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte el apartado [«Conectarse a una base de datos MySQL o MariaDB»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#conectarse-a-una-base-de-datos-mysql-o-mariadb).
+Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte el apartado "[Conectarse a una base de datos MySQL o MariaDB](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#conectarse-a-una-base-de-datos-mysql-o-mariadb)".
 
 Una vez conectado a phpMyAdmin, seleccione la base de datos haciendo clic en su nombre.
 
@@ -149,7 +149,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (el archivo 
 > [!primary]
 >
 > Le recomendamos que fraccione su base de datos en varios archivos cuando supere los 100 MB y realice varias importaciones desde phpMyAdmin.
-> La importación de archivos que superen los 100 MB puede realizarse desde el área de cliente siguiendo el paso [«Restaurar e importar una base de datos desde el área de cliente»](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente).
+> La importación de archivos que superen los 100 MB puede realizarse desde el área de cliente siguiendo el paso "[Restaurar e importar una base de datos desde el área de cliente](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente)".
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
 

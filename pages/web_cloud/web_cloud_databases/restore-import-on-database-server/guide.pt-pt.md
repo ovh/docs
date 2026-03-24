@@ -1,7 +1,7 @@
 ---
 title: 'Restaurar e importar uma base de dados no servidor de bases de dados'
-excerpt: 'Saiba como restaurar e importar uma base de dados'
-updated: 2026-03-23
+excerpt: 'Saiba como restaurar e importar uma base de dados no servidor Web Cloud Databases a partir da Área de Cliente OVHcloud ou do phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -45,7 +45,7 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 >
 > As soluções [Web Cloud Databases](/links/web/databases) não dão acesso ao sistema de gestão de bases de dados, mas sim às bases de dados alojadas nele.
 >
-> - Não há acesso de superutilizador «root».
+> - Não há acesso de superutilizador "root".
 > - Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL ou Adminer são plenamente compatíveis.
 
 ### Restaurar e importar uma base de dados a partir da Área de Cliente
@@ -65,7 +65,7 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> Clique no separador `Bases de dados`{.action}.
 >>
->> Na coluna **«Backups»**, o algarismo corresponde ao número de backups disponíveis para a sua base de dados.
+>> Na coluna **"Backups"**, o algarismo corresponde ao número de backups disponíveis para a sua base de dados.
 >>
 > **Etapa 3**
 >>
@@ -108,37 +108,37 @@ Clique nos separadores abaixo para visualizar cada uma das **4** etapas.
 >>
 >> **1 - Importar um novo ficheiro**
 >>
->> Clique em **«Importar um novo ficheiro»** e em `Seguinte`{.action}.
+>> Clique em **"Importar um novo ficheiro"** e em `Seguinte`{.action}.
 >>
 >> Introduza um nome para o ficheiro importado, clique em `Percorrer`{.action} para o selecionar, depois em `Enviar`{.action} e, por fim, em `Seguinte`{.action}.
 >>
 >> > [!warning]
 >> >
->> > O ficheiro deve estar no formato «.sql», «.txt» ou «.gz».
+>> > O ficheiro deve estar no formato ".sql", ".txt" ou ".gz".
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 >>
->> Se desejar, selecione **«Limpar a base de dados atual»** antes da importação e **«Enviar um e-mail no fim da importação»** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
+>> Se desejar, selecione **"Limpar a base de dados atual"** antes da importação e **"Enviar um e-mail no fim da importação"** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
 >>
 >> **2 - Utilizar um ficheiro existente**
 >>
->> Se já importou um ficheiro anteriormente, poderá escolher a opção **«Importar um ficheiro existente»**.
+>> Se já importou um ficheiro anteriormente, poderá escolher a opção **"Importar um ficheiro existente"**.
 >>
 >> Selecione o ficheiro no menu suspenso e clique em `Seguinte`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
->> Se desejar, selecione **«Limpar a base de dados atual»** antes da importação e **«Enviar um e-mail no fim da importação»** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
+>> Se desejar, selecione **"Limpar a base de dados atual"** antes da importação e **"Enviar um e-mail no fim da importação"** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
 
 ### Importar uma base de dados fora da Área de Cliente
 
-Em certos casos, a RAM disponível no seu servidor de bases de dados não permite realizar a importação desejada fora da Área de Cliente. Nesse caso, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Consulte a secção [«Restaurar e importar uma base de dados a partir da Área de Cliente»](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente) deste guia.
+Em certos casos, a RAM disponível no seu servidor de bases de dados não permite realizar a importação desejada fora da Área de Cliente. Nesse caso, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Consulte a secção "[Restaurar e importar uma base de dados a partir da Área de Cliente](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente)" deste guia.
 
 **Clique no método de importação pretendido para visualizar o conteúdo.**
 
 /// details | Importar uma base MySQL ou MariaDB a partir do phpMyAdmin
 
-Para importar a base de dados diretamente a partir do phpMyAdmin, é necessário primeiro conectar-se. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#conexao-a-uma-base-de-dados-mysql-ou-mariadb).
+Para importar a base de dados diretamente a partir do phpMyAdmin, é necessário primeiro conectar-se. Consulte a secção "[Conexão a uma base de dados MySQL ou MariaDB](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#conexao-a-uma-base-de-dados-mysql-ou-mariadb)".
 
 Depois de se ter conectado ao phpMyAdmin, selecione a base de dados clicando no seu nome.
 
@@ -149,7 +149,7 @@ Selecione o ficheiro de backup clicando em `Percorrer`{.action} (o ficheiro não
 > [!primary]
 >
 > Caso exceda os 100 MB, recomendamos que fraccione a base de dados em vários ficheiros e que efetue várias importações a partir do phpMyAdmin.
-> A importação de ficheiros que ultrapassem os 100 MB pode ser feita a partir da Área de Cliente seguindo o passo [«Restaurar e importar uma base de dados a partir da Área de Cliente»](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente).
+> A importação de ficheiros que ultrapassem os 100 MB pode ser feita a partir da Área de Cliente seguindo o passo "[Restaurar e importar uma base de dados a partir da Área de Cliente](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente)".
 
 Deixe as opções predefinidas e clique em `Executar`{.action} para lançar a importação.
 

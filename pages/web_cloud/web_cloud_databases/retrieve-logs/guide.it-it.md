@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Come gestire i log?'
 excerpt: 'Questa guida ti mostra come gestire i log dei database ospitati sul tuo server Web Cloud Databases'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

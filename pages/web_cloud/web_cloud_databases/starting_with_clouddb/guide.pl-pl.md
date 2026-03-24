@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą Web Cloud Databases'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 ## Wprowadzenie
@@ -35,7 +35,7 @@ Jeśli Twoja oferta hostingu obejmuje opcję Web Cloud Databases, kliknij poniż
 > [!tabs]
 > **Krok 1**
 >>
->> Kliknij [ten link](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting WWW.
+>> Przejdź na stronę [Hosting](/links/control-panel/web-hosting), następnie wybierz odpowiedni hosting WWW.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>

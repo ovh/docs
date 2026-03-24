@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the Web Cloud Databases service'
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 ## Objective
@@ -35,19 +35,19 @@ If your hosting plan includes the Web Cloud Databases option, click on the tabs 
 > [!tabs]
 > **Step 1**
 >>
->> Click on [this link](/links/control-panel/web-hosting), then select the web hosting plan concerned.
+>> Go to the [Hosting plans](/links/control-panel/web-hosting) page, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Step 2**
 >>
->> From the `General information` tab, in the `Configuration` section, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
+>> In the `General information` tab, under `Configuration`, click `...`{.action} next to **Web Cloud Databases**, then click `Enable`{.action}.
 >>
 >> ![General information](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
 >>
 > **Step 3**
 >>
->> Follow the instructions provided to determine the type and version of your Web Cloud Databases server. It will then be accessible from the left-hand column under `Web Cloud Databases`{.action}.
+>> Follow the instructions to choose the type and version. Your server will then appear in the left-hand column under `Web Cloud Databases`{.action}.
 
 ### Viewing the general information of the instance
 

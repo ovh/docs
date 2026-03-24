@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
 excerpt: 'Erfahren Sie, wie Sie Ihren Datenbankserver konfigurieren und optimieren'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

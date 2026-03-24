@@ -1,7 +1,7 @@
 ---
 title: 'Backing up and exporting a database on your database server'
-excerpt: 'Find out how to back up and export your database'
-updated: 2026-03-23
+excerpt: 'Find out how to back up and export a database from your Web Cloud Databases server using the OVHcloud Control Panel or phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -107,13 +107,13 @@ Click on the tabs below to view each of the **4** steps.
 
 ### Backing up and exporting a database outside the Control Panel
 
-If the available RAM on your server does not allow the desired export, use the OVHcloud tool in the Control Panel, which uses resources external to your plan. Refer to the section ["Backing up and exporting a database from the Control Panel"](./#backing-up-and-exporting-a-database-from-the-control-panel) of this documentation.
+If the available RAM on your server does not allow the desired export, use the OVHcloud tool in the Control Panel, which uses resources external to your plan. Refer to the section "[Backing up and exporting a database from the Control Panel](./#backing-up-and-exporting-a-database-from-the-control-panel)" of this documentation.
 
 **Click on the export method of your choice to view the content.**
 
 /// details | Export a MySQL or MariaDB database from OVHcloud phpMyAdmin
 
-To export your database directly from phpMyAdmin, first log in using the guide ["Connecting to a database"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+To export your database directly from phpMyAdmin, first log in using the guide "[Connecting to a database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Once logged in to phpMyAdmin, click on the name of the database you want to export, then on the `Export`{.action} tab at the top.
 

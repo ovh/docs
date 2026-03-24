@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - ¿Cómo autorizar una dirección IP?"
 excerpt: "Descubra cómo autorizar a una o varias direcciones IP a acceder a su solución Web Cloud Databases"
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 <style>

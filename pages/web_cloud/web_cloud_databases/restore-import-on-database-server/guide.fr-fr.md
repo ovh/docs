@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
-excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2026-03-23
+excerpt: "Découvrez comment restaurer et importer une base de données sur votre serveur Web Cloud Databases depuis l'espace client OVHcloud ou via phpMyAdmin"
+updated: 2026-03-24
 ---
 
 <style>
@@ -132,13 +132,13 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Importer une base de données hors espace client
 
-Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l’import souhaité en dehors de l’espace client. Si tel est le cas, nous vous recommandons d’utiliser l’outil OVHcloud dans l’espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l’espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) de cette documentation.
+Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l’import souhaité en dehors de l’espace client. Si tel est le cas, nous vous recommandons d’utiliser l’outil OVHcloud dans l’espace client. Reportez-vous à la section « [Restaurer et importer une base de données depuis l’espace client](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) » de cette documentation.
 
 **Cliquez sur la méthode d'importation de votre choix pour afficher le contenu.**
 
 /// details | Importer une base MySQL ou MariaDB depuis phpMyAdmin
 
-Pour importer votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du paragraphe [« Se connecter à une base de données MySQL ou MariaDB »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb).
+Pour importer votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du paragraphe « [Se connecter à une base de données MySQL ou MariaDB](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb) ».
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
@@ -149,7 +149,7 @@ Sélectionnez votre fichier de sauvegarde en cliquant sur `Parcourir`{.action} (
 > [!primary]
 >
 > Nous vous conseillons de fractionner votre base de données en plusieurs fichiers lorsqu’elle excède les 100 Mo et d’effectuer plusieurs importations depuis phpMyAdmin.
-> L’importation de fichier dépassant les 100 Mo peut se faire depuis l’espace client en suivant l’étape [« Restaurer et importer une base de données depuis l’espace client »](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client).
+> L’importation de fichier dépassant les 100 Mo peut se faire depuis l’espace client en suivant l’étape « [Restaurer et importer une base de données depuis l’espace client](./#restaurer-et-importer-une-base-de-donnees-depuis-lespace-client) ».
 
 Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l’importation.
 

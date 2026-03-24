@@ -1,12 +1,12 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 ## Objectif
 
-La solution Web Cloud Databases permet de bénéficier d'une instance de bases de données dont les ressources sont dédiées et garanties, vous offrant performances et flexibilité.
+La solution Web Cloud Databases permet de bénéficier d’une instance de bases de données dont les ressources sont dédiées et garanties, vous offrant performances et flexibilité.
 Par défaut, votre solution Web Cloud Databases est liée au réseau d'hébergements web OVHcloud. Vous pouvez aussi la lier à n'importe quel autre réseau, via une liste d'adresses IP autorisées.
 
 **Découvrez comment bien débuter avec la solution Web Cloud Databases.**
@@ -35,7 +35,7 @@ Si votre offre d'hébergement inclut l'option Web Cloud Databases, cliquez sur l
 > [!tabs]
 > **Étape 1**
 >>
->> Cliquez sur [ce lien](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
+>> Accédez à la page [Hébergements](/links/control-panel/web-hosting), puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
@@ -88,7 +88,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **2*
 > [!primary]
 >
 > Cette étape ne s'applique pas au système de bases de données Redis.
->
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -131,7 +130,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > [!primary]
 >
 > Cette étape ne s'applique pas au système de bases de données Redis.
->
 
 Si vous avez créé l'utilisateur en même temps que votre base de données lors de la manipulation précédente, cette étape est facultative. Cependant, un projet peut nécessiter plusieurs utilisateurs avec des droits différents (par exemple, lecture/écriture pour l'un et lecture seule pour l'autre).
 
@@ -173,7 +171,7 @@ Plusieurs méthodes d'importation y sont présentées.
 
 ### Autoriser une adresse IP
 
-Afin que l'accès à votre instance Web Cloud Databases fonctionne, il est obligatoire d'indiquer les IP ou plages d'IP pouvant se connecter à vos bases de données.
+Afin que l’accès à votre instance Web Cloud Databases fonctionne, il est obligatoire d’indiquer les IP ou plages d’IP pouvant se connecter à vos bases de données.
 
 Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -272,15 +270,15 @@ Pour accéder aux logs de votre solution Web Cloud Databases, consultez notre gu
 
 ## Aller plus loin
 
-[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
+[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
 
-[Se connecter à la base de données de votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
+[Se connecter à la base de données de votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
 
-[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
 
-[Restaurer et importer une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+[Restaurer et importer une base de données sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-[Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server)
+[Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

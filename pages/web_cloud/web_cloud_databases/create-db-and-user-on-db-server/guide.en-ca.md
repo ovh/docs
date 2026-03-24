@@ -1,7 +1,7 @@
 ---
 title: 'Creating databases and users on your database server'
 excerpt: 'Find out how to create a database on your database server.'
-updated: 2026-03-23
+updated: 2026-03-24
 ---
 
 ## Objective

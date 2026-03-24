@@ -1,7 +1,7 @@
 ---
 title: 'Ripristinare e importare un database sul tuo server di database'
-excerpt: 'Come ripristinare e importare il database'
-updated: 2026-03-23
+excerpt: 'Scopri come ripristinare e importare un database sul tuo server Web Cloud Databases dallo Spazio Cliente OVHcloud o tramite phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -118,7 +118,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-new-file-step-2.png){.thumbnail}
 >>
->> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo email di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
+>> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
 >>
 >> **2 - Utilizzare un file esistente**
 >>
@@ -128,17 +128,17 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **4** passaggi.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/database-import-existing-file-step-2.png){.thumbnail}
 >>
->> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo email di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
+>> Se lo desideri, seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato del completamento dell'operazione sull'indirizzo e-mail di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
 
 ### Importare un database al di fuori dello Spazio Cliente
 
-In alcuni casi, la RAM disponibile sul tuo server di database potrebbe non essere sufficiente per effettuare l'importazione desiderata al di fuori dello Spazio Cliente. In questo caso, ti consigliamo di utilizzare lo strumento OVHcloud nello Spazio Cliente. Consulta la sezione ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristinare-e-importare-un-database-dallo-spazio-cliente) di questa guida.
+In alcuni casi, la RAM disponibile sul tuo server di database potrebbe non essere sufficiente per effettuare l'importazione desiderata al di fuori dello Spazio Cliente. In questo caso, ti consigliamo di utilizzare lo strumento OVHcloud nello Spazio Cliente. Consulta la sezione "[Ripristinare e importare un database dallo Spazio Cliente](./#ripristinare-e-importare-un-database-dallo-spazio-cliente)" di questa guida.
 
 **Clicca sul metodo di importazione che preferisci per visualizzare il contenuto.**
 
 /// details | Importare un database MySQL o MariaDB da phpMyAdmin
 
-Per importare il database direttamente da phpMyAdmin, è necessario prima effettuare l'accesso seguendo la sezione ["Connettersi a un database MySQL o MariaDB"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connettersi-a-un-database-mysql-o-mariadb).
+Per importare il database direttamente da phpMyAdmin, è necessario prima effettuare l'accesso seguendo la sezione "[Connettersi a un database MySQL o MariaDB](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connettersi-a-un-database-mysql-o-mariadb)".
 
 Una volta connesso a phpMyAdmin, seleziona il database cliccando sul suo nome.
 
@@ -149,7 +149,7 @@ Seleziona il file di backup cliccando su `Sfoglia`{.action} (il file non può su
 > [!primary]
 >
 > Ti consigliamo di frazionare il database in più file quando supera i 100 MB ed effettuare diverse importazioni da phpMyAdmin.
-> L'importazione di file superiori a 100 MB può essere effettuata dallo Spazio Cliente seguendo il passaggio ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristinare-e-importare-un-database-dallo-spazio-cliente).
+> L'importazione di file superiori a 100 MB può essere effettuata dallo Spazio Cliente seguendo il passaggio "[Ripristinare e importare un database dallo Spazio Cliente](./#ripristinare-e-importare-un-database-dallo-spazio-cliente)".
 
 Lascia le opzioni predefinite e clicca su `Esegui`{.action} per avviare l'importazione.
 

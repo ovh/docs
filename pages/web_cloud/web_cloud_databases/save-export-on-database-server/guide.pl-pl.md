@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie i eksportowanie kopii zapasowej bazy danych na serwerze baz danych'
-excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
-updated: 2026-03-23
+excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych na serwerze Web Cloud Databases z poziomu Panelu klienta OVHcloud lub przez phpMyAdmin'
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,13 +110,13 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno każdy z **4** kroków.
 
 ### Tworzenie kopii zapasowych i eksportowanie bazy danych poza Panelem klienta
 
-Jeśli dostępna pamięć RAM na serwerze nie pozwala na przeprowadzenie pożądanego eksportu, skorzystaj z narzędzia OVHcloud dostępnego w Panelu klienta, które wykorzystuje zasoby zewnętrzne. Zapoznaj się z sekcją [«Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta»](./#tworzenie-kopii-zapasowych-i-eksportowanie-bazy-danych-w-panelu-klienta) niniejszego przewodnika.
+Jeśli dostępna pamięć RAM na serwerze nie pozwala na przeprowadzenie pożądanego eksportu, skorzystaj z narzędzia OVHcloud dostępnego w Panelu klienta, które wykorzystuje zasoby zewnętrzne. Zapoznaj się z sekcją "[Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta](./#tworzenie-kopii-zapasowych-i-eksportowanie-bazy-danych-w-panelu-klienta)" niniejszego przewodnika.
 
 **Kliknij wybraną metodę eksportu, aby wyświetlić jej zawartość.**
 
 /// details | Eksport bazy MySQL lub MariaDB z poziomu phpMyAdmin OVHcloud
 
-Aby wyeksportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się zalogować. W tym celu zapoznaj się z przewodnikiem [«Łączenie się z bazą danych»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Aby wyeksportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się zalogować. W tym celu zapoznaj się z przewodnikiem "[Łączenie się z bazą danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)".
 
 Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wyeksportować, a następnie zakładkę `Eksportuj`{.action} u góry.
 

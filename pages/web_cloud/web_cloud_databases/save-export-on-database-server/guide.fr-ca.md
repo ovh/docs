@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
-excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2026-03-23
+excerpt: "Découvrez comment sauvegarder et exporter une base de données sur votre serveur Web Cloud Databases depuis l'espace client OVHcloud ou via phpMyAdmin"
+updated: 2026-03-24
 ---
 
 <style>
@@ -110,17 +110,17 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Sauvegarder et exporter une base de données hors espace client
 
-Si la RAM disponible sur votre serveur ne permet pas de réaliser l'export souhaité, utilisez l'outil OVHcloud dans l'espace client, qui utilise des ressources externes à votre offre. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) de cette documentation.
+Si la RAM disponible sur votre serveur ne permet pas de réaliser l'export souhaité, utilisez l'outil OVHcloud dans l'espace client, qui utilise des ressources externes à votre offre. Reportez-vous à la section « [Sauvegarder et exporter une base de données depuis l'espace client](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client) » de cette documentation.
 
-**Cliquez sur la méthode d'exportation de votre choix pour afficher le contenu.**
+**Cliquez sur la méthode d’exportation de votre choix pour afficher le contenu.**
 
 /// details | Exporter une base MySQL ou MariaDB depuis phpMyAdmin OVHcloud
 
-Pour exporter votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du guide [« Se connecter à une base de données »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Pour exporter votre base de données directement depuis phpMyAdmin, connectez-vous au préalable en vous aidant du guide « [Se connecter à une base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) ».
 
-Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que vous souhaitez exporter et ensuite sur l'onglet `Exporter`{.action} en haut.
+Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que vous souhaitez exporter et ensuite sur l’onglet `Exporter`{.action} en haut.
 
-Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
+Vous avez deux modes d’exportation possibles. Si vous n’avez pas de besoin spécifique, nous vous conseillons d’utiliser le mode **rapide** au format **SQL**.
 
 ![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
@@ -145,7 +145,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l'accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - Afin d’éviter qu’un tiers n’accède à ce fichier comportant des données sensibles, pensez à sécuriser l’accès à celui-ci en vous aidant du guide : [Comment protéger l’accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 
 ///
@@ -169,7 +169,7 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l'accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+> - Afin d’éviter qu’un tiers n’accède à ce fichier comportant des données sensibles, pensez à sécuriser l’accès à celui-ci en vous aidant du guide : [Comment protéger l’accès à un répertoire par une authentification ?](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 
 ///
