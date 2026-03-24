@@ -233,7 +233,7 @@ Per visualizzare e rimuovere le chiavi è possibile utilizzare il [portale API](
 >>
 > Dallo Spazio Cliente OVHcloud
 >>
->> Accedi al menu `Identità, Sicurezza & Operazioni`{.action} e poi `Chiavi API`{.action}.
+>> Accedi alla pagina [Chiavi API](/links/control-panel/iam-api-keys).
 >>
 >> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>

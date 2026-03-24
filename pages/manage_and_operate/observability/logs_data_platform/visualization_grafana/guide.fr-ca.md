@@ -14,6 +14,17 @@ This is what you need to know to get you started:
 - you are already sending logs on a stream you own [see the quick start tutorial](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - you have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster)
 
+<!-- CP-NAV-START:logs-data-platform -->
+---
+
+### Accès à l'espace client OVHcloud
+
+- **Lien direct :** [Logs Data Platform](/links/control-panel/logs-data-platform)
+- **Pour accéder à vos services :** `Identité, Sécurité & Opérations`{.action} > `Logs Data Platform`{.action} > Sélectionnez la plateforme concernée.
+
+---
+<!-- CP-NAV-END:logs-data-platform -->
+
 After some training you will be able to create this kind of dashboard:
 
 ![Grafana Dashboard](images/grafana.png)
@@ -24,13 +35,12 @@ After some training you will be able to create this kind of dashboard:
 
 To access your logs from Grafana, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go again :
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. In the Alias panel, click on the `Add an alias`{.action} button
-3. Choose a name and define a description for your alias
-4. Save the entry by clicking the `Save`{.action} button
-5. Once the alias has been created. Use the **...** menu at the right and select `Attach content to the alias`{.action} option.
-6. Define there the graylog streams you want to associate to your alias
-7. That's it.
+1. In the `Alias`{.action} tab, click on the `Add an alias`{.action} button
+2. Choose a name and define a description for your alias
+3. Save the entry by clicking the `Save`{.action} button
+4. Once the alias has been created. Use the **...** menu at the right and select `Attach content to the alias`{.action} option.
+5. Define there the graylog streams you want to associate to your alias
+6. That's it.
 
 ![Alias creation](images/alias.png){.thumbnail}
 

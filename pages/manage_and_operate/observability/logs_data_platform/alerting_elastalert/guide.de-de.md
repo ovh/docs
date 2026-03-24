@@ -21,7 +21,7 @@ Note that in order to complete this tutorial, you should have at least:
 In order to deploy ElastAlert, it is important that you have data for which you can see alerts. If you only have Graylog stream, you can use aliases to enable the OpenSearch API on your stream data. Here is how:
 
 1. Go to the Logs Data Platform manager.
-2. In the Alias panel, click the `Add an alias`{.action} button.
+2. In the `Alias`{.action} tab, click the `Add an alias`{.action} button.
 3. Choose a name and define a description for your alias.
 4. Save the entry by clicking the `Save`{.action} button.
 5. Once the alias has been created. Use the **...** menu on the right side and select the `Attach content to the alias`{.action} option.
