@@ -71,7 +71,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** step.
 >>
 > **Step 4**
 >>
->> Inserisci l’indirizzo IP (ad esempio, `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e clicca su `Seguente`{.action}.
+>> Inserisci l’indirizzo IP (ad esempio, `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e clicca su `Continua`{.action}.
 >>
 > **Step 5**
 >>
@@ -110,7 +110,7 @@ Clicca sulle schede qui sotto per visualizzare ciascuno dei **5** step.
 >>
 > **Step 4**
 >>
->> Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Clicca su `Seguente`{.action}.
+>> Inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `2001:db8:1:1b00:203:0:113:0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Clicca su `Continua`{.action}.
 >>
 > **Step 5**
 >>
